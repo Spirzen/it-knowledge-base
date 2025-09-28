@@ -5,8 +5,8 @@ module.exports = {
   tagline: 'Единый и ультимативный гайд по IT',
   favicon: 'img/favicon.ico',
 
-  url: 'https://spirzen.github.io', // твой GitHub Pages
-  baseUrl: '/it-knowledge-base/', // имя репозитория
+  url: 'https://spirzen.github.io',
+  baseUrl: '/it-knowledge-base/',
 
   organizationName: 'spirzen',
   projectName: 'it-knowledge-base',
@@ -17,9 +17,9 @@ module.exports = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/spirzen/it-knowledge-base/edit/main/', // ссылка "Edit this page"
+          editUrl: 'https://github.com/spirzen/it-knowledge-base/edit/main/',
         },
-        blog: false, // отключаем блог
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
