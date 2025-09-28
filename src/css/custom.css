@@ -1,0 +1,33 @@
+/**
+ * Кастомные цвета для "Вселенной IT"
+ */
+
+:root {
+  --ifm-color-primary: #9370DB;
+  --ifm-color-primary-dark: #7B68EE;
+  --ifm-color-primary-darker: #6A5ACD;
+  --ifm-color-primary-darkest: #5D4EBA;
+  --ifm-color-primary-light: #B19CD9;
+  --ifm-color-primary-lighter: #CBB8E8;
+  --ifm-color-primary-lightest: #E0D6F7;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(147, 112, 219, 0.15);
+  --ifm-background-color: #F8F5FF;
+  --ifm-navbar-background-color: #FFFFFF;
+  --ifm-footer-background-color: #9370DB;
+}
+
+/* Для тёмной темы — мягкие приглушённые тона */
+[data-theme='dark'] {
+  --ifm-color-primary: #B19CD9;
+  --ifm-color-primary-dark: #9370DB;
+  --ifm-color-primary-darker: #7B68EE;
+  --ifm-color-primary-darkest: #6A5ACD;
+  --ifm-color-primary-light: #CBB8E8;
+  --ifm-color-primary-lighter: #DAD2F0;
+  --ifm-color-primary-lightest: #EAE6FA;
+  --docusaurus-highlighted-code-line-bg: rgba(147, 112, 219, 0.25);
+  --ifm-background-color: #1c142c;
+  --ifm-navbar-background-color: #1a122a;
+  --ifm-footer-background-color: #2d1f40;
+}
