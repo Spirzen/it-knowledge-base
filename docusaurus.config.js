@@ -33,7 +33,7 @@ module.exports = {
         title: 'Вселенная IT',
         logo: {
           alt: 'IT Logo',
-          src: 'img/logo.svg', // можно поменять на своё
+          src: 'img/docusaurus.png', 
         },
         items: [
           {
