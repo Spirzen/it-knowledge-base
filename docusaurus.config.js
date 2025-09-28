@@ -27,36 +27,36 @@ module.exports = {
     ],
   ],
 
-  themeConfig:
-    ({
-      navbar: {
-        title: 'Вселенная IT',
-        logo: {
-          alt: 'IT Logo',
-          src: 'img/docusaurus.png', 
+  themeConfig: {
+    navbar: {
+      title: 'Вселенная IT',
+      logo: {
+        alt: 'IT Logo',
+        src: 'img/docusaurus.png',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'docsSidebar',
+          position: 'left',
+          label: 'Книга',
         },
-        items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'docsSidebar',
-            position: 'left',
-            label: 'Книга',
-          },
-          {to: '/docs/toc', label: 'Содержание', position: 'left'},
-          {to: '/docs/about/contact', label: 'Контакты', position: 'left'},
-          {
-            href: 'https://github.com/spirzen/it-knowledge-base',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Тагиров Тимур Владиславович. Все права защищены.`,
-      },
-    }),
-    markdown: {
+        { to: '/docs/toc', label: 'Содержание', position: 'left' },
+        { to: '/docs/about/contact', label: 'Контакты', position: 'left' },
+        {
+          href: 'https://github.com/spirzen/it-knowledge-base',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} Тагиров Тимур Владиславович. Все права защищены.`,
+    },
+  },
+
+  markdown: {
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
