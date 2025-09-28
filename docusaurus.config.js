@@ -11,6 +11,8 @@ module.exports = {
   organizationName: 'spirzen',
   projectName: 'it-knowledge-base',
 
+  onBrokenLinks: 'warn',
+
   presets: [
     [
       'classic',
