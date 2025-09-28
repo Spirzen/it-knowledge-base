@@ -1,41 +1,49 @@
-# Website
+# Вселенная IT
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+📘 Единый и ультимативный гайд по IT — от основ до продвинутых тем.  
+Этот сайт — моя личная база знаний, которую я веду сам. Здесь можно изучить всё: от того, как работает компьютер, до DevOps, ИБ, языков программирования и искусственного интеллекта.
 
-## Installation
+🔗 **Онлайн-версия**: [https://spirzen.github.io/it-knowledge-base](https://spirzen.github.io/it-knowledge-base)
 
-```bash
-yarn
-```
+---
 
-## Local Development
+## 📚 О чём этот проект?
 
-```bash
-yarn start
-```
+- Полное погружение в мир IT.
+- Структурированные знания — как большая книга.
+- Никакой воды — только суть.
+- Обучение с нуля до профессионального уровня.
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### 🧩 Разделы:
+- Основы
+- Система и сеть
+- Данные и разметка
+- Код и разработка
+- Языки
+- Проект
+- Инфраструктура и безопасность
+- Спин-офф
 
-## Build
+---
 
-```bash
-yarn build
-```
+## 🛠 Технологии
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- [Docusaurus](https://docusaurus.io) — статический генератор сайтов.
+- Markdown — простота написания.
+- GitHub Pages — бесплатный хостинг.
+- Автоматическая сборка через GitHub Actions.
 
-## Deployment
+---
 
-Using SSH:
+## 📄 Лицензия
 
-```bash
-USE_SSH=true yarn deploy
-```
+Контент защищён авторским правом.  
+Использование разрешено только с указанием авторства и в некоммерческих целях.
 
-Not using SSH:
+📜 **Лицензия**: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
+👤 **Автор**: Тагиров Тимур Владиславович  
+📧 **Почта**: [tim.tagirov@mail.ru](mailto:tim.tagirov@mail.ru)
 
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
+> ❌ Копирование без согласия запрещено.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+---

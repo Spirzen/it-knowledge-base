@@ -17,6 +17,9 @@ function HomepageHeader() {
         <p className={styles.author}>
           Автор — Тагиров Тимур Владиславович
         </p>
+        <p className={styles.author}>
+          На текущий момент проект находится в разработке.
+        </p>
       </div>
     </header>
   );
