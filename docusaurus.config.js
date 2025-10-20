@@ -13,13 +13,28 @@ module.exports = {
 
   onBrokenLinks: 'warn',
 
+  // Русская локализация (временно отключаем en до полной настройки)
+  i18n: {
+    defaultLocale: 'ru',
+    locales: ['ru'],
+    localeConfigs: {
+      ru: {
+        label: 'Русский',
+        direction: 'ltr',
+      },
+    },
+  },
+
   presets: [
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/spirzen/it-knowledge-base/edit/main/',
+          // Отключаем редактирование для пользователей
+          editUrl: undefined,
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
         },
         blog: false,
         theme: {
@@ -29,7 +44,31 @@ module.exports = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['ru'],
+        indexDocs: true,
+        indexPages: false,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
+      },
+    ],
+  ],
+
   themeConfig: {
+    // Настройки поиска (требует настройки Algolia)
+    // algolia: {
+    //   appId: 'YOUR_APP_ID',
+    //   apiKey: 'YOUR_SEARCH_API_KEY',
+    //   indexName: 'it-knowledge-base',
+    //   contextualSearch: true,
+    //   searchParameters: {},
+    //   searchPagePath: 'search',
+    // },
+
     navbar: {
       title: 'Вселенная IT',
       logo: {
@@ -41,10 +80,11 @@ module.exports = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: 'Книга',
+          label: '📚 База знаний',
         },
-        { to: '/docs/toc', label: 'Содержание', position: 'left' },
-        { to: '/docs/about/contact', label: 'Контакты', position: 'left' },
+        { to: '/docs/toc', label: '📋 Содержание', position: 'left' },
+        { to: '/docs/about/project', label: 'ℹ️ О проекте', position: 'left' },
+        { to: '/docs/about/author', label: '👨‍💻 Об авторе', position: 'left' },
         {
           href: 'https://github.com/spirzen/it-knowledge-base',
           label: 'GitHub',
@@ -54,6 +94,45 @@ module.exports = {
     },
     footer: {
       style: 'dark',
+      links: [
+        {
+          title: 'База знаний',
+          items: [
+            { label: 'Основы', to: '/docs/section/basics' },
+            { label: 'Система и сеть', to: '/docs/section/system-network' },
+            { label: 'Данные и разметка', to: '/docs/section/data-markup' },
+          ],
+        },
+        {
+          title: 'Разработка',
+          items: [
+            { label: 'Код и разработка', to: '/docs/section/code-dev' },
+            { label: 'Языки программирования', to: '/docs/section/languages' },
+            { label: 'Проект', to: '/docs/section/project' },
+          ],
+        },
+        {
+          title: 'Дополнительно',
+          items: [
+            { label: 'Инфраструктура и безопасность', to: '/docs/section/infra-security' },
+            { label: 'Спин-офф', to: '/docs/section/spinoff' },
+            { label: 'О проекте', to: '/docs/about/project' },
+          ],
+        },
+        {
+          title: 'Контакты',
+          items: [
+            {
+              label: 'Об авторе',
+              to: '/docs/about/author',
+            },
+            {
+              label: 'GitHub',
+              href: 'https://github.com/spirzen/it-knowledge-base',
+            },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} Тагиров Тимур Владиславович. Все права защищены.`,
     },
   },

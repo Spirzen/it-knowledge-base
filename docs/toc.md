@@ -536,6 +536,6 @@ sidebar_label: Содержание
 ### about
 
 ### 🧩 О проекте
-- [Контакты](./about/contact.md)
-- [Лицензия](./about/license.md)
+- [Об авторе](./about/author)
+- [Лицензия](./about/license)
 
