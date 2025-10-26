@@ -8,8 +8,9 @@ module.exports = {
   url: 'https://spirzen.github.io',
   baseUrl: '/it-knowledge-base/',
 
-  organizationName: 'spirzen',
+  organizationName: 'Spirzen',
   projectName: 'it-knowledge-base',
+  trailingSlash: false,
 
   onBrokenLinks: 'warn',
 
