@@ -16,6 +16,7 @@ jobs:
         with:
           node-version: '20'
       - run: npm ci
+      - run: rm -rf .docusaurus .cache build
       - run: npm run build
       - uses: peaceiris/actions-gh-pages@v4
         with:
