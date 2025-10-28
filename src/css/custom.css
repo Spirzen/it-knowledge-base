@@ -246,3 +246,12 @@
     padding: 1.5rem;
   }
 }
+
+.markdown {
+  font-feature-settings: "liga" 1;
+  hyphens: auto;
+}
+
+.markdown p + p {
+  margin-top: 1em;
+}
