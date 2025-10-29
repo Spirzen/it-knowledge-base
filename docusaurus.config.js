@@ -60,6 +60,29 @@ module.exports = {
   ],
 
   themeConfig: {
+    prism: {
+      additionalLanguages: [
+        'csharp',
+        'cpp',
+        'java',
+        'sql',
+        'kotlin',
+        'rust',
+        'go',
+        'fsharp',
+        'scala',
+        'clojure',
+        'lua',
+        'lisp',
+        'perl',
+        'bash',
+        'cobol',
+        'fortran',
+        'latex',
+        'graphql',
+        'http'
+      ],
+    },
     // Настройки поиска (требует настройки Algolia)
     // algolia: {
     //   appId: 'YOUR_APP_ID',
