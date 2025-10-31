@@ -57,6 +57,15 @@ module.exports = {
         explicitSearchResultPath: true,
       },
     ],
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 85,
+        maxWidth: 1200,
+        sizes: [320, 640, 960, 1280, 1920],
+        disableInDev: false,
+      },
+    ],
   ],
 
   themeConfig: {
