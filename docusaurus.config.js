@@ -6,7 +6,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
 
   url: 'https://spirzen.github.io',
-  baseUrl: '/it-knowledge-base/',
+  baseUrl: '/',
 
   organizationName: 'Spirzen',
   projectName: 'it-knowledge-base',
