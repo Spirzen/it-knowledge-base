@@ -10,7 +10,7 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          <Link to="/about/project"><img src="/it-knowledge-base/img/logoITU.png" alt="Вселенная IT"/></Link>
+          <Link to="/about/project"><img src="/img/logoITU.png" alt="Вселенная IT"/></Link>
         </Heading>
         <p className="hero__subtitle">
           🌌 "Вселенная IT" - единый и ультимативный гайд, который позволит изучить сферу IT в максимально полном объёме. 
