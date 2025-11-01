@@ -14,7 +14,6 @@ module.exports = {
 
   onBrokenLinks: 'warn',
 
-  // Русская локализация (временно отключаем en до полной настройки)
   i18n: {
     defaultLocale: 'ru',
     locales: ['ru'],
@@ -36,6 +35,7 @@ module.exports = {
           editUrl: undefined,
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
+          routeBasePath: '/',
         },
         blog: false,
         theme: {
@@ -113,11 +113,11 @@ module.exports = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: '📚 База знаний',
+          label: '📖 База знаний',
         },
-        { to: '/docs/toc', label: '📋 Содержание', position: 'left' },
-        { to: '/docs/about/project', label: 'ℹ️ О проекте', position: 'left' },
-        { to: '/docs/about/author', label: '👨‍💻 Об авторе', position: 'left' },
+        { to: '/toc', label: '📋 Содержание', position: 'left' },
+        { to: '/about/project', label: 'ℹ️ О проекте', position: 'left' },
+        { to: '/about/author', label: '👨‍💻 Об авторе', position: 'left' },
         {
           href: 'https://github.com/spirzen/it-knowledge-base',
           label: 'GitHub',
@@ -131,25 +131,25 @@ module.exports = {
         {
           title: 'База знаний',
           items: [
-            { label: 'Основы', to: '/docs/section/basics' },
-            { label: 'Система и сеть', to: '/docs/section/system-network' },
-            { label: 'Данные и разметка', to: '/docs/section/data-markup' },
+            { label: 'Основы', to: '/section/basics' },
+            { label: 'Система и сеть', to: '/section/system-network' },
+            { label: 'Данные и разметка', to: '/section/data-markup' },
           ],
         },
         {
           title: 'Разработка',
           items: [
-            { label: 'Код и разработка', to: '/docs/section/code-dev' },
-            { label: 'Языки программирования', to: '/docs/section/languages' },
-            { label: 'Проект', to: '/docs/section/project' },
+            { label: 'Код и разработка', to: '/section/code-dev' },
+            { label: 'Языки программирования', to: '/section/languages' },
+            { label: 'Проект', to: '/section/project' },
           ],
         },
         {
           title: 'Дополнительно',
           items: [
-            { label: 'Инфраструктура и безопасность', to: '/docs/section/infra-security' },
-            { label: 'Спин-офф', to: '/docs/section/spinoff' },
-            { label: 'О проекте', to: '/docs/about/project' },
+            { label: 'Инфраструктура и безопасность', to: '/section/infra-security' },
+            { label: 'Спин-офф', to: '/section/spinoff' },
+            { label: 'О проекте', to: '/about/project' },
           ],
         },
         {
@@ -157,7 +157,7 @@ module.exports = {
           items: [
             {
               label: 'Об авторе',
-              to: '/docs/about/author',
+              to: '/about/author',
             },
             {
               label: 'GitHub',

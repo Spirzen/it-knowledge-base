@@ -10,34 +10,34 @@ function HomepageHeader() {
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          <a href="/it-knowledge-base/docs/about/project"><img src="/it-knowledge-base/img/logoITU.png" alt="Вселенная IT"/></a>
+          <Link to="/about/project"><img src="/it-knowledge-base/img/logoITU.png" alt="Вселенная IT"/></Link>
         </Heading>
         <p className="hero__subtitle">
           🌌 "Вселенная IT" - единый и ультимативный гайд, который позволит изучить сферу IT в максимально полном объёме. 
-          Здесь вы научитесь всем аспектам компьютеров, приложений и технологий, читать и писать <a href="/it-knowledge-base/docs/section/code-dev">код </a> 
-          на нескольких <a href="/it-knowledge-base/docs/section/languages">языках</a>, <a href="/it-knowledge-base/docs/Проект/6.07.%20Аналитика/1">анализу</a>, 
-          <a href="/it-knowledge-base/docs/Проект/6.08.%20Тестирование/1"> тестированию</a> и даже <a href="/it-knowledge-base/docs/section/infra-security">информационной безопасности</a>.
+          Здесь вы научитесь всем аспектам компьютеров, приложений и технологий, читать и писать <Link to="/section/code-dev">код </Link> 
+          на нескольких <Link to="/section/languages">языках</Link>, <Link to="/encyclopedia/Проект/6.07.%20Аналитика/1">анализу</Link>, 
+          <Link to="/encyclopedia/Проект/6.08.%20Тестирование/1"> тестированию</Link> и даже <Link to="/section/infra-security">информационной безопасности</Link>.
         Можно назвать это систематизированным курсом, открытой базой знаний и даже энциклопедией.
         </p>
         <p className="hero__subtitle">
-          Это бесплатный и открытый <a href="/it-knowledge-base/docs/about/project">проект</a>, который я веду в одиночку, на чистом энтузиазме.
+          Это бесплатный и открытый <Link to="/about/project">проект</Link>, который я веду в одиночку, на чистом энтузиазме.
           Надеюсь, вам будет интересно!
         </p>
         <div className={styles.buttons}>
           <Link
             className="button button--primary button--lg"
-            to="/docs/section/basics">
-            🚀 Начать изучение
+            to="/section/basics">
+            🔎 Начать изучение
           </Link>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/toc">
+            to="/toc">
             📋 Содержание
           </Link>
         </div>
         <div className={styles.author}>
-          <p>👨‍💻 Автор — <strong><a href="/it-knowledge-base/docs/about/author">Тагиров Тимур Владиславович</a></strong></p>
-          <p>📚 Открытая база знаний по информационным технологиям</p>
+          <p>👨‍💻 Автор — <strong><Link to="/about/author">Тагиров Тимур Владиславович</Link></strong></p>
+          <p>📒 Открытая база знаний по информационным технологиям</p>
         </div>
       </div>
     </header>
@@ -47,44 +47,34 @@ function HomepageHeader() {
 function HomepageFeatures() {
   const features = [
     {
-      title: '🧩 Основы',
-      description: 'Фундаментальные знания о компьютерах, программном обеспечении и IT-сфере в целом.',
-      link: '/docs/section/basics',
+      title: '📚 Энциклопедия',
+      description: 'Систематизированный справочник по всем аспектам информационных технологий.',
+      link: '/encyclopedia/intro',
     },
     {
-      title: '⚙️ Система и сеть',
-      description: 'Операционные системы, сетевые технологии, администрирование и безопасность.',
-      link: '/docs/section/system-network',
+      title: '🛠️ Инструменты',
+      description: 'Обзоры, гайды и практические рекомендации по использованию технологий и ПО.',
+      link: '/tools/intro',
     },
     {
-      title: '📊 Данные и разметка',
-      description: 'Работа с данными, базы данных, HTML, CSS и анализ информации.',
-      link: '/docs/section/data-markup',
+      title: '📜 Глоссарий',
+      description: 'Алфавитный справочник терминов, понятий и аббревиатур в области IT.',
+      link: '/glossary/intro',
     },
     {
-      title: '💻 Код и разработка',
-      description: 'Программирование, алгоритмы, архитектура и инструменты разработки.',
-      link: '/docs/section/code-dev',
+      title: '🔬 Лаборатория',
+      description: 'Практические задания, упражнения и примеры кода для закрепления навыков.',
+      link: '/lab/intro',
     },
     {
-      title: '🔤 Языки программирования',
-      description: 'Изучение различных языков программирования от основ до продвинутого уровня.',
-      link: '/docs/section/languages',
+      title: '🌍 Контекст',
+      description: 'Погружение в отрасли: финансы, здравоохранение, образование, игры и др.',
+      link: '/context/intro',
     },
     {
-      title: '📋 Управление проектами',
-      description: 'Методологии разработки, команды, тестирование и бизнес-аспекты.',
-      link: '/docs/section/project',
-    },
-    {
-      title: '🛡️ Инфраструктура и безопасность',
-      description: 'DevOps, облачные технологии, кибербезопасность и мониторинг.',
-      link: '/docs/section/infra-security',
-    },
-    {
-      title: '🎯 Дополнительные темы',
-      description: 'Специализированные области, тренды и дополнительные материалы.',
-      link: '/docs/section/spinoff',
+      title: '🧠 Философия',
+      description: 'Размышления о культуре разработки, этике, подходах и будущем технологий.',
+      link: '/philosophy/intro',
     },
   ];
 
@@ -94,7 +84,7 @@ function HomepageFeatures() {
         <div className="row">
           <div className="col col--12">
             <Heading as="h2" className={styles.featuresTitle}>
-              📚 Разделы базы знаний
+              📑 Разделы базы знаний
             </Heading>
             <p className={styles.featuresSubtitle}>
               Восемь основных разделов покрывают все аспекты IT-сферы
