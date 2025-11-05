@@ -35,6 +35,11 @@ function HomepageHeader() {
             to="/toc">
             📋 Содержание
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/about/manifest">
+            📜 Манифест и Правила
+          </Link>
         </div>
         <div className={styles.author}>
           <p>👨‍💻 Автор — <strong><Link to="/about/author">Тагиров Тимур Владиславович</Link></strong></p>
@@ -88,7 +93,7 @@ function HomepageFeatures() {
               📑 Разделы базы знаний
             </Heading>
             <p className={styles.featuresSubtitle}>
-              Восемь основных разделов покрывают все аспекты IT-сферы
+              Шесть основных разделов покрывают все аспекты IT-сферы
             </p>
           </div>
         </div>
@@ -114,10 +119,10 @@ function HomepageFeatures() {
 
 function HomepageStats() {
   const stats = [
-    { number: '8', label: 'Основных разделов' },
-    { number: '300+', label: 'Статей' },
-    { number: '15+', label: 'Языков программирования' },
-    { number: '100%', label: 'Бесплатно' },
+    { number: '∞', label: 'Срок актуальности фундамента' },
+    { number: '0', label: 'Коммерческих партнёров' },
+    { number: '500+', label: 'статей и материалов' },
+    { number: '1', label: 'Автор и куратор' },
   ];
 
   return (

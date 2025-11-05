@@ -118,6 +118,7 @@ module.exports = {
         { to: '/toc', label: '📋 Содержание', position: 'left' },
         { to: '/about/project', label: 'ℹ️ О проекте', position: 'left' },
         { to: '/about/author', label: '👨‍💻 Об авторе', position: 'left' },
+        { to: '/about/manifest', label: '📜 Манифест и Правила', position: 'left' },
         {
           href: 'https://github.com/spirzen/it-knowledge-base',
           label: 'GitHub',
@@ -129,7 +130,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'База знаний',
+          title: '📚 Энциклопедия',
           items: [
             { label: 'Основы', to: '/section/basics' },
             { label: 'Система и сеть', to: '/section/system-network' },
@@ -137,32 +138,27 @@ module.exports = {
           ],
         },
         {
-          title: 'Разработка',
+          title: '🛠️ Инструменты и практика',
           items: [
             { label: 'Код и разработка', to: '/section/code-dev' },
-            { label: 'Языки программирования', to: '/section/languages' },
-            { label: 'Проект', to: '/section/project' },
-          ],
-        },
-        {
-          title: 'Дополнительно',
-          items: [
             { label: 'Инфраструктура и безопасность', to: '/section/infra-security' },
-            { label: 'Спин-офф', to: '/section/spinoff' },
-            { label: 'О проекте', to: '/about/project' },
+            { label: 'Лаборатория', to: '/lab/intro' },
           ],
         },
         {
-          title: 'Контакты',
+          title: '🧠 Контекст и рефлексия',
           items: [
-            {
-              label: 'Об авторе',
-              to: '/about/author',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/spirzen/it-knowledge-base',
-            },
+            { label: 'Контекст', to: '/context/intro' },
+            { label: 'Философия', to: '/philosophy/intro' },
+            { label: 'Глоссарий', to: '/glossary/intro' },
+          ],
+        },
+        {
+          title: 'ℹ️ О проекте',
+          items: [
+            { label: 'Манифест и Правила', to: '/about/manifest' },
+            { label: 'Об авторе', to: '/about/author' },
+            { label: 'GitHub', href: 'https://github.com/spirzen/it-knowledge-base' },
           ],
         },
       ],

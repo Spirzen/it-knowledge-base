@@ -8,6 +8,7 @@ const sidebars = {
         'about/project',
         'about/author',
         'about/license',
+        'about/manifest',
       ],
     },
     {
