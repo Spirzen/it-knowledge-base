@@ -113,3 +113,16 @@
     padding: 2rem 0;
   }
 }
+
+.mindmapContainer {
+  margin: 3rem 0;
+  overflow: auto;
+  text-align: center;
+}
+
+.mindmapContainer img {
+  display: block;
+  width: 100%; /* или width: 100%; max-width: none; */
+  height: auto;
+  margin: 0 auto;
+}
