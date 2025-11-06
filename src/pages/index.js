@@ -13,16 +13,13 @@ function HomepageHeader() {
           <Link to="/about/project"><img src="/img/logoITU.png" alt="Вселенная IT"/></Link>
         </Heading>
         <p className="hero__subtitle">
-          🌌 "Вселенная IT" - единый и ультимативный гайд, который позволит изучить сферу IT в максимально полном объёме. 
+          <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> "Вселенная IT" - единый и ультимативный гайд, который позволит изучить сферу IT в максимально полном объёме. 
           Здесь вы научитесь всем аспектам компьютеров, приложений и технологий, читать и писать <Link to="/section/code-dev">код </Link> 
           на нескольких <Link to="/section/languages">языках</Link>, <Link to="/encyclopedia/Проект/6.07.%20Аналитика/1">анализу</Link>, 
           <Link to="/encyclopedia/Проект/6.08.%20Тестирование/1"> тестированию</Link> и даже <Link to="/section/infra-security">информационной безопасности</Link>.
         Можно назвать это систематизированным курсом, открытой базой знаний и даже энциклопедией. Сейчас "Вселенная IT" находится на стадии экспертизы и редактуры -
          это самый долгий этап, когда нужно всё подправить, привести в порядок.
         </p>
-        <div className={styles.mindmapContainer}>
-          <img src="/img/mindmap.png" alt="Структура Вселенной IT" />
-        </div>
         <p className="hero__subtitle">
           Это бесплатный и открытый <Link to="/about/project">проект</Link>, который я веду в одиночку, на чистом энтузиазме.
           Надеюсь, вам будет интересно!
@@ -41,12 +38,12 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/about/manifest">
-            📜 Манифест и Правила
+            <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> Манифест и Правила
           </Link>
         </div>
         <div className={styles.author}>
           <p>👨‍💻 Автор — <strong><Link to="/about/author">Тагиров Тимур Владиславович</Link></strong></p>
-          <p>📒 Открытая база знаний по информационным технологиям</p>
+          <p><img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> Открытая база знаний по информационным технологиям</p>
         </div>
       </div>
     </header>
@@ -93,7 +90,7 @@ function HomepageFeatures() {
         <div className="row">
           <div className="col col--12">
             <Heading as="h2" className={styles.featuresTitle}>
-              📑 Разделы базы знаний
+              🟣 Разделы базы знаний 🟣
             </Heading>
             <p className={styles.featuresSubtitle}>
               Шесть основных разделов покрывают все аспекты IT-сферы
@@ -122,10 +119,10 @@ function HomepageFeatures() {
 
 function HomepageStats() {
   const stats = [
-    { number: '∞', label: 'Срок актуальности фундамента' },
-    { number: '0', label: 'Коммерческих партнёров' },
-    { number: '500+', label: 'статей и материалов' },
-    { number: '1', label: 'Автор и куратор' },
+    { number: '∞', label: 'срок актуальности фундамента' },
+    { number: '0', label: 'коммерческих партнёров' },
+    { number: '1000+', label: 'статей и материалов' },
+    { number: '1', label: 'автор и куратор' },
   ];
 
   return (
