@@ -63,6 +63,8 @@
 - **GitHub**: [https://github.com/spirzen](https://github.com/spirzen)
 - **Telegram**: [https://t.me/spirzenverse](https://t.me/spirzenverse)
 
+![QR.png](QR.png)
+
 ## 🙏 Благодарности
 
 Спасибо всем, кто поддерживает этот проект! Ваша обратная связь и поддержка помогают мне делать "Вселенную IT" еще лучше.

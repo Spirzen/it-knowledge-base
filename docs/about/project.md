@@ -132,8 +132,10 @@ AI/ML, блокчейн, IoT, мобильная разработка, игро�
 ### Обратная связь
 Ваше мнение важно для развития проекта! Свяжитесь с автором через:
 - GitHub Issues
-- Email
-- Социальные сети
+- Email: tim.tagirov@mail.ru
+- Социальные сети: [https://t.me/spirzenverse](https://t.me/spirzenverse)
+
+![QR.png](QR.png)
 
 ## Планы
 
