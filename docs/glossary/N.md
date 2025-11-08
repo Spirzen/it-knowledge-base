@@ -2,6 +2,12 @@
 title: "N"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## N-API
 
 N-API — стабильный API для создания нативных аддонов к Node.js на C/C++. Обеспечивает бинарную совместимость между версиями Node.js без перекомпиляции, в отличие от устаревшего Nan.

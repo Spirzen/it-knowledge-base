@@ -2,6 +2,12 @@
 title: "P"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## Package Manager
 
 Package Manager — инструмент автоматизации установки, обновления, настройки и удаления программных пакетов и их зависимостей. Примеры: npm (JavaScript), pip (Python), NuGet (.NET), apt (Debian/Ubuntu), Homebrew (macOS).

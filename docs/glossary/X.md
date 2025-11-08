@@ -1,6 +1,11 @@
 ﻿---
 title: "X"
 ---
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
 
 ## XAML
 

@@ -2,6 +2,12 @@
 title: "J"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## JAR
 
 JAR (Java Archive) — формат архива, используемый в платформе Java для упаковки байт-кода (`.class`), метаданных, ресурсов и манифеста в один файл. Основан на ZIP и применяется для распространения библиотек и исполняемых приложений. Запускается с помощью `java -jar`.

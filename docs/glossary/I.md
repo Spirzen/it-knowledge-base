@@ -2,6 +2,12 @@
 title: "I"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## IaaS
 
 IaaS (Infrastructure as a Service) — модель облачных вычислений, при которой пользователь получает виртуализированные вычислительные ресурсы (серверы, хранилища, сети) по запросу через интернет. Провайдер управляет физической инфраструктурой, клиент — операционными системами и приложениями. Примеры: Amazon EC2, Microsoft Azure Virtual Machines, Google Compute Engine.

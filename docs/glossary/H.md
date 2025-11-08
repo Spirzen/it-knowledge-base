@@ -2,6 +2,12 @@
 title: "H"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## Hack and Slash
 
 Hack and Slash — поджанр экшен-игр, характеризующийся боевой системой, основанной на интенсивном использовании оружия ближнего боя (мечи, топоры) и уничтожении большого количества противников. Часто включает элементы комбо, уклонения и стилевой оценки. Примеры: Devil May Cry, God of War, Bayonetta.

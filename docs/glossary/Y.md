@@ -2,6 +2,12 @@
 title: "Y"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## Yacc
 
 Yet Another Compiler-Compiler: генератор синтаксических анализаторов для языков программирования, разработанный в Bell Labs в 1970-х годах. Принимает грамматику в форме контекстно-свободных правил (в нотации Бэкуса–Наура) и генерирует LALR(1)-парсер на языке C. Широко использовался в Unix-средах; современные аналоги — Bison (GNU Yacc), ANTLR, PEG-парсеры.

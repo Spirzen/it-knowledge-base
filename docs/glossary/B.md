@@ -2,6 +2,12 @@
 title: "B"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## Backend
 
 Серверная часть программного обеспечения, отвечающая за реализацию бизнес-логики, обработку данных, взаимодействие с базами данных, внешними API и другими сервисами. Обычно скрыта от конечного пользователя и взаимодействует с frontend через сетевые протоколы (например, HTTP/REST, WebSocket, gRPC).

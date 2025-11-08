@@ -2,6 +2,12 @@
 title: "G"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## GaaS
 
 GaaS (Games as a Service) — бизнес-модель разработки и поддержки видеоигр, при которой игра постоянно обновляется новым контентом, событиями и микротранзакциями после релиза. Цель — удержание аудитории и монетизация на длительный срок. Примеры: Fortnite, Destiny 2.

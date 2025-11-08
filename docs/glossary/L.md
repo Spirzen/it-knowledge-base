@@ -2,6 +2,12 @@
 title: "L"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## LAMP
 
 LAMP — стек программного обеспечения с открытым исходным кодом для веб-разработки, состоящий из:

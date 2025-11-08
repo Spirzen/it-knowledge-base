@@ -2,6 +2,12 @@
 title: "O"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## OAuth
 
 OAuth — открытый стандарт авторизации (RFC 6749), позволяющий приложениям получать ограниченный доступ к пользовательским данным без передачи логина и пароля. Широко используется для делегированного доступа (например, «Войти через Google»). Версии: OAuth 1.0, OAuth 2.0.

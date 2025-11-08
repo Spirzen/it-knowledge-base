@@ -2,6 +2,12 @@
 title: "S"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## Sacred
 
 Sacred: серия action/RPG-игр, разработанная компаниями Ascaron и later by RuneSoft, впервые выпущенная в 2004 году. Отличается открытым миром, системой классов персонажей с уникальными способностями, динамическим генератором квестов и акцентом на кооперативном геймплее. Известна своим нелинейным подходом к исследованию игрового мира.

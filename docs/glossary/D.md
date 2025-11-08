@@ -2,6 +2,12 @@
 title: "D"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## D3.js
 
 D3.js (Data-Driven Documents) — JavaScript-библиотека с открытым исходным кодом, предназначенная для визуализации данных на веб-страницах с использованием веб-стандартов HTML, SVG и CSS. Обеспечивает гибкое связывание данных с DOM и поддерживает интерактивные переходы, анимации и масштабируемые графики.

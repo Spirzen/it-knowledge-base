@@ -2,6 +2,12 @@
 title: "M"
 ---
 
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+  <span class="tag tag-advanced">ГЛОССАРИЙ</span>
+  <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
 ## MAC Address
 
 MAC Address (Media Access Control Address) — уникальный аппаратный идентификатор сетевого интерфейса, присваиваемый производителем. Используется на канальном уровне (L2) модели OSI для доставки кадров внутри одного сегмента сети. Представлен в виде шестнадцатеричной строки (например, `00:1A:2B:3C:4D:5E`).
