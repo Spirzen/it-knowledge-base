@@ -5,7 +5,7 @@ module.exports = {
   tagline: 'Единый и ультимативный гайд по IT',
   favicon: 'img/favicon.ico',
 
-  url: 'https://spirzen.github.io',
+  url: 'https://spirzen.ru',
   baseUrl: '/',
 
   organizationName: 'Spirzen',
@@ -31,7 +31,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-          // Отключаем редактирование для пользователей
           editUrl: undefined,
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
@@ -169,5 +168,8 @@ module.exports = {
   markdown: {
     mermaid: true,
   },
-  themes: ['@docusaurus/theme-mermaid'],
+  themes: [
+    '@docusaurus/theme-mermaid',
+    '@docusaurus/theme-live-codeblock',
+  ],
 };

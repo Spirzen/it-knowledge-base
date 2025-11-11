@@ -1,10 +1,8 @@
 /**
  * Кастомные стили для "Вселенной IT"
- * Нежные цвета: белый фон, темный шрифт, MediumSlateBlue кнопки
  */
 
 :root {
-  /* Основные цвета */
   --ifm-color-primary: #7B68EE; /* MediumSlateBlue */
   --ifm-color-primary-dark: #6A5ACD; /* SlateBlue */
   --ifm-color-primary-darker: #5D4EBA;
@@ -13,48 +11,39 @@
   --ifm-color-primary-lighter: #B19CD9;
   --ifm-color-primary-lightest: #D8BFD8; /* Thistle */
   
-  /* Фон и текст */
   --ifm-background-color: #FFFFFF;
   --ifm-background-surface-color: #FAFAFA;
   --ifm-color-content: #2C3E50;
   --ifm-color-content-secondary: #5A6C7D;
   
-  /* Навигация */
   --ifm-navbar-background-color: #FFFFFF;
   --ifm-navbar-link-color: #2C3E50;
   --ifm-navbar-link-hover-color: #7B68EE;
   
-  /* Сайдбар */
   --ifm-sidebar-background-color: #F8F9FA;
   --ifm-menu-color: #2C3E50;
   --ifm-menu-color-active: #7B68EE;
   --ifm-menu-color-background-active: #F0F0FF;
   
-  /* Код */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(123, 104, 238, 0.15);
   
-  /* Футер */
   --ifm-footer-background-color: #2C3E50;
   --ifm-footer-color: #FFFFFF;
   --ifm-footer-link-color: #B0C4DE;
   
-  /* Кнопки и ссылки */
   --ifm-link-color: #7B68EE;
   --ifm-link-hover-color: #6A5ACD;
   --ifm-button-background-color: #7B68EE;
   --ifm-button-color: #FFFFFF;
   
-  /* Карточки */
   --ifm-card-background-color: #FFFFFF;
   --ifm-card-border-radius: 12px;
   
-  /* Тени */
   --ifm-global-shadow-lw: 0 2px 8px rgba(123, 104, 238, 0.1);
   --ifm-global-shadow-md: 0 4px 16px rgba(123, 104, 238, 0.15);
 }
 
-/* Для тёмной темы */
 [data-theme='dark'] {
   --ifm-color-primary: #9370DB;
   --ifm-color-primary-dark: #7B68EE;
@@ -92,7 +81,6 @@
   --ifm-card-background-color: #2A2A2A;
 }
 
-/* Кастомные стили для главной страницы */
 .hero {
   background: linear-gradient(135deg, #F8F9FA 0%, #FFFFFF 100%);
   padding: 4rem 0;
@@ -113,7 +101,6 @@
   line-height: 1.6;
 }
 
-/* Стили для карточек разделов */
 .feature-card {
   background: #FFFFFF;
   border-radius: 12px;
@@ -139,7 +126,6 @@
   line-height: 1.6;
 }
 
-/* Стили для кнопок */
 .button--primary {
   background-color: #7B68EE;
   border-color: #7B68EE;
@@ -157,7 +143,6 @@
   box-shadow: 0 4px 12px rgba(123, 104, 238, 0.3);
 }
 
-/* Стили для навигации */
 .navbar {
   box-shadow: 0 2px 8px rgba(123, 104, 238, 0.1);
   border-bottom: 1px solid #F0F0FF;
@@ -172,7 +157,6 @@
   color: #7B68EE;
 }
 
-/* Стили для сайдбара */
 .menu__link {
   border-radius: 6px;
   margin: 2px 0;
@@ -190,7 +174,6 @@
   font-weight: 600;
 }
 
-/* Стили для футера */
 .footer {
   background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
 }
@@ -209,7 +192,6 @@
   color: #FFFFFF;
 }
 
-/* Стили для поиска */
 .DocSearch-Button {
   background-color: #F8F9FA;
   border: 1px solid #E9ECEF;
@@ -222,7 +204,6 @@
   border-color: #7B68EE;
 }
 
-/* Адаптивность */
 @media (max-width: 996px) {
   .hero__title {
     font-size: 2.5rem;
@@ -342,7 +323,6 @@
   color: #2C3E50;
 }
 
-/* Убираем визуальные пробелы в XML и HTML */
 .language-xml .token.punctuation,
 .language-html .token.punctuation,
 .language-xml .token.tag,
@@ -359,13 +339,11 @@
   display: inline !important;
 }
 
-/* Токены без фона и с естественным цветом (чтобы не «разрывались» в темной теме) */
 [data-theme='dark'] .language-xml .token,
 [data-theme='dark'] .language-html .token {
   background: transparent !important;
 }
 
-/* Опционально: принудительно задать цвет тегов и пунктуации в темной теме */
 [data-theme='dark'] .language-xml .token.punctuation,
 [data-theme='dark'] .language-html .token.punctuation,
 [data-theme='dark'] .language-xml .token.tag,
@@ -373,46 +351,28 @@
   color: #ffffff !important;
 }
 
-/* ==========================================================================
-   ✨ ОБНОВЛЁННАЯ ТЕМА PRISM В СТИЛЕ «ВСЕЛЕННОЙ IT»
-   - Фон тёмный всегда (для кода)
-   - Рамка: 1px solid #3a3f4b
-   - Углы: скруглённые, без артефактов
-   - Комментарии: мягкий зелёный (#8ea17d)
-   ========================================================================== */
-
-/* Общий стиль для всех блоков кода — тёмный фон везде */
 .prism-code,
 pre[class*='language-'] {
-  /* Фон — тёмный всегда, даже в светлой теме */
-  background-color: #282c34 !important; /* oneDark, комфортный */
-  /* или: background-color: #2A2A2A !important; ← ваш --ifm-background-surface-color для dark */
+  background-color: #282c34 !important;
   
-  /* Рамка */
   border: 5px solid #5d4eba !important;
   
-  /* Углы — чёткие, без "чёрных треугольников" */
   border-radius: 8px !important;
-  overflow: hidden !important; /* ← критично для скругления углов! */
+  overflow: hidden !important;
 
-  /* Тень */
   box-shadow: 0 4px 16px rgba(123, 104, 238, 0.15) !important;
 
-  /* Текст */
   color: #abb2bf !important;
   
-  /* Шрифт */
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
   font-size: var(--ifm-code-font-size) !important;
   line-height: 1.5 !important;
   tab-size: 2 !important;
   
-  /* Отступы */
   padding: 1rem !important;
   margin: 1.25rem 0 !important;
 }
 
-/* Убираем внутренние артефакты */
 .prism-code .token {
   display: inline !important;
   margin: 0 !important;
@@ -421,13 +381,11 @@ pre[class*='language-'] {
   background: transparent !important;
 }
 
-/* 🔑 Цвета токенов — единые для всех тем (фон тёмный → цвета как в dark) */
-
 .prism-code .token.comment,
 .prism-code .token.prolog,
 .prism-code .token.doctype,
 .prism-code .token.cdata {
-  color: #8ea17d !important; /* 🌿 мягкий зелёный (не #98C379 — слишком кислотный) */
+  color: #8ea17d !important;
   font-style: italic;
 }
 
@@ -454,10 +412,9 @@ pre[class*='language-'] {
 .prism-code .token.control,
 .prism-code .token.directive,
 .prism-code .token.unit {
-  color: #c678dd !important; /* фиолетовый — стандарт oneDark */
+  color: #c678dd !important;
 }
 
-/* 🔑 ОСНОВНОЙ АКЦЕНТ: ваш #7B68EE */
 .prism-code .token.property,
 .prism-code .token.tag,
 .prism-code .token.boolean,
@@ -471,7 +428,7 @@ pre[class*='language-'] {
 .prism-code .token.string,
 .prism-code .token.bullet,
 .prism-code .token.inserted {
-  color: var(--ifm-color-primary) !important; /* #7B68EE */
+  color: var(--ifm-color-primary) !important;
 }
 
 .prism-code .token.function,
@@ -480,7 +437,6 @@ pre[class*='language-'] {
   color: #61afef !important;
 }
 
-/* Языковые уточнения */
 .prism-code.language-csharp .token.preprocessor,
 .prism-code.language-csharp .token.keyword.control-flow.null,
 .prism-code.language-csharp .token.keyword.control-flow.boolean {
@@ -501,15 +457,13 @@ pre[class*='language-'] {
   color: #e06c75 !important;
 }
 
-/* Подсветка строки */
 .prism-code .highlighted-code-line {
-  background-color: rgba(123, 104, 238, 0.2) !important; /* чуть насыщеннее */
+  background-color: rgba(123, 104, 238, 0.2) !important;
 }
 
-/* Включаем перенос строк в блоках кода */
 .prism-code,
 pre[class*='language-'] {
-  white-space: pre-wrap !important;     /* ← позволяет переносить */
-  word-break: break-word !important;    /* ← ломает длинные слова (URL, пути) */
-  overflow-wrap: break-word !important; /* ← альтернатива для старых браузеров */
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+  overflow-wrap: break-word !important;
 }
