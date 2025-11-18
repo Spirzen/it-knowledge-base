@@ -353,7 +353,7 @@ pre[class*='language-'] {
   border: 5px solid #5d4eba !important;
   
   border-radius: 8px !important;
-  overflow: hidden !important;
+  overflow: auto;
 
   box-shadow: 0 4px 16px rgba(123, 104, 238, 0.15) !important;
 
@@ -460,7 +460,7 @@ pre[class*='language-'] {
 pre[class*='language-'] {
   white-space: pre;
   overflow-x: auto;
-  overflow-wrap: normal;
+  overflow-wrap: anywhere;
   word-break: normal;
   tab-size: 2;
 }

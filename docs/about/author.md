@@ -56,6 +56,7 @@
 ### 💰 Финансовая поддержка
 
 - **ЮMoney**: 4100119386983244
+- **Карта**: 5469060010806112
 - **Через Telegram**: [https://t.me/spirzenverse](https://t.me/spirzenverse)
 - **Через Дзен**: [https://dzen.ru/itus](https://dzen.ru/itus)
 

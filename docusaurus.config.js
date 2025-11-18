@@ -117,10 +117,10 @@ module.exports = {
         { to: '/toc', label: '📋 Содержание', position: 'left' },
         { to: '/about/project', label: 'ℹ️ О проекте', position: 'left' },
         { to: '/about/author', label: '👨‍💻 Об авторе', position: 'left' },
-        { to: '/about/manifest', label: '📜 Манифест и Правила', position: 'left' },
+        { to: '/about/manifest', label: '📜 Манифест', position: 'left' },
         {
-          href: 'https://github.com/spirzen/it-knowledge-base',
-          label: 'GitHub',
+          href: '/about/author',
+          label: 'Поддержать',
           position: 'right',
         },
       ],
