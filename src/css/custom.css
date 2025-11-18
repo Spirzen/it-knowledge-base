@@ -1,7 +1,3 @@
-/**
- * Кастомные стили для "Вселенной IT"
- */
-
 :root {
   --ifm-color-primary: #7B68EE; /* MediumSlateBlue */
   --ifm-color-primary-dark: #6A5ACD; /* SlateBlue */
@@ -82,7 +78,6 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, #F8F9FA 0%, #FFFFFF 100%);
   padding: 4rem 0;
 }
 
@@ -463,7 +458,106 @@ pre[class*='language-'] {
 
 .prism-code,
 pre[class*='language-'] {
-  white-space: pre-wrap !important;
-  word-break: break-word !important;
-  overflow-wrap: break-word !important;
+  white-space: pre;
+  overflow-x: auto;
+  overflow-wrap: normal;
+  word-break: normal;
+  tab-size: 2;
+}
+
+.markdown {
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.docMainContainer,
+.theme-doc-markdown,
+.theme-doc-sidebar-container,
+.theme-doc-sidebar-menu,
+.theme-doc-sidebar-item-link,
+.theme-doc-breadcrumb,
+.row,
+.col {
+  background: transparent !important;
+}
+
+.theme-doc-sidebar-container,
+.theme-doc-markdown,
+.theme-doc-sidebar-menu,
+.theme-doc-sidebar-item-category > div,
+.theme-doc-sidebar-item-link,
+.theme-doc-breadcrumb,
+.theme-doc-toc-desktop,
+.theme-doc-toc-mobile {
+  background: var(--ifm-sidebar-background-color) !important;
+}
+
+.theme-doc-markdown > article {
+  background: var(--ifm-card-background-color) !important;
+  border-radius: 12px;
+  padding: 2rem !important;
+  box-shadow: var(--ifm-global-shadow-md) !important;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.theme-admonition,
+details,
+.theme-doc-footer,
+.theme-last-updated {
+  background: var(--ifm-card-background-color) !important;
+}
+
+.hero {
+  background: transparent !important;
+}
+
+code {
+  background-color: rgba(123, 104, 238, 0.12);
+  color: #6A5ACD;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 85%;
+  white-space: nowrap;
+}
+
+code.language-plaintext,
+code[class=""] {
+  background-color: rgba(123, 104, 238, 0.12);
+  color: #6A5ACD;
+}
+
+code:hover {
+  background-color: rgba(123, 104, 238, 0.2);
+}
+
+[data-theme='dark'] code {
+  background-color: rgba(147, 112, 219, 0.15);
+  color: #B19CD9;
+}
+
+[class*='codeBlockLines_'] {
+  text-align: start !important;
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  -moz-hyphens: none !important;
+  white-space: pre !important;
+  tab-size: 2 !important;
+  -moz-tab-size: 2 !important;
+}
+
+[class*='codeBlockLines_'] > code {
+  text-align: start !important;
+  white-space: inherit !important;
+  display: block !important;
+  unicode-bidi: embed !important;
+}
+
+
+[data-theme='dark'] [class*='codeBlockLines_'] {
+  text-align: start !important;
+  hyphens: none !important;
 }

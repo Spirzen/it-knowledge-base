@@ -91,7 +91,7 @@ module.exports = {
         'http'
       ],
     },
-    // Настройки поиска (требует настройки Algolia)
+    // Настройки поиска (требует настройки Algolia, но увы - она недоступна в моей стране!)
     // algolia: {
     //   appId: 'YOUR_APP_ID',
     //   apiKey: 'YOUR_SEARCH_API_KEY',

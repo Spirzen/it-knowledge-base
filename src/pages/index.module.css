@@ -1,13 +1,8 @@
-/**
- * CSS модули для главной страницы "Вселенная IT"
- */
-
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #F8F9FA 0%, #FFFFFF 100%);
 }
 
 @media screen and (max-width: 996px) {
@@ -38,7 +33,6 @@
 
 .features {
   padding: 4rem 0;
-  background-color: #FAFAFA;
 }
 
 .featuresTitle {

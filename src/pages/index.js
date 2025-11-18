@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
+import AnimatedBackground from '@site/src/components/AnimatedBackground';
 
 import styles from './index.module.css';
 
@@ -265,6 +266,7 @@ export default function Home() {
       title="Вселенная IT"
       description="Единый и ультимативный гайд по IT - открытая база знаний для всех"
     >
+      <AnimatedBackground />
       <HomepageHeader />
       <main>
         <HomepageFeatures />
