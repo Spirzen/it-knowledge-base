@@ -119,7 +119,7 @@ module.exports = {
         { to: '/about/author', label: '👨‍💻 Об авторе', position: 'left' },
         { to: '/about/manifest', label: '📜 Манифест', position: 'left' },
         {
-          href: '/about/author',
+          href: '/about/author#support',
           label: 'Поддержать',
           position: 'right',
         },
