@@ -6,4 +6,10 @@
   height: 100%;
   z-index: -10;
   pointer-events: none;
+  /* Оптимизация производительности */
+  will-change: transform;
+  transform: translateZ(0);
+  /* Отключение сглаживания для лучшей производительности на мобильных */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }

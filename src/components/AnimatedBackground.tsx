@@ -1,85 +1,173 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useCallback } from 'react';
 import clsx from 'clsx';
 import styles from './AnimatedBackground.module.css';
 
+interface Particle {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+}
+
+interface AnimatedBackgroundProps {
+  className?: string;
+  particleCount?: number;
+  connectionDistance?: number;
+}
+
 export default function AnimatedBackground({
   className,
-}: {
-  className?: string;
-}) {
+  particleCount = 80,
+  connectionDistance = 150,
+}: AnimatedBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animationFrameIdRef = useRef<number | null>(null);
+  const colorsRef = useRef<{ lineColor: string; dotColor: string } | null>(null);
+  const resizeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const resizeCanvas = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-
-    const particles: { x: number; y: number; vx: number; vy: number }[] = [];
-    const particleCount = 80;
-    const maxRadius = 4;
-    const connectionDistance = 150;
-
-    for (let i = 0; i < particleCount; i++) {
-      particles.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-      });
+  // Кэширование цветов из CSS переменных
+  const getColors = useCallback((): { lineColor: string; dotColor: string } => {
+    if (colorsRef.current) {
+      return colorsRef.current;
     }
 
     const getComputedStyleVar = (name: string): string => {
+      if (typeof document === 'undefined') return '';
       return getComputedStyle(document.documentElement)
         .getPropertyValue(name)
         .trim();
     };
 
-    let animationFrameId: number;
+    const colors = {
+      lineColor: getComputedStyleVar('--ifm-color-primary-lightest') || '#D8BFD8',
+      dotColor: getComputedStyleVar('--ifm-color-primary') || '#7B68EE',
+    };
+
+    colorsRef.current = colors;
+    return colors;
+  }, []);
+
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    // Проверка поддержки canvas API
+    if (!canvas.getContext) {
+      console.warn('Canvas API не поддерживается в этом браузере');
+      return;
+    }
+
+    const ctx = canvas.getContext('2d', { alpha: false });
+    if (!ctx) {
+      console.warn('Не удалось получить контекст 2D canvas');
+      return;
+    }
+
+    const particles: Particle[] = [];
+    const maxRadius = 4;
+    const connectionDistanceSquared = connectionDistance * connectionDistance;
+
+    const resizeCanvas = () => {
+      if (resizeTimeoutRef.current) {
+        clearTimeout(resizeTimeoutRef.current);
+      }
+
+      resizeTimeoutRef.current = setTimeout(() => {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        
+        // Сохраняем текущие позиции частиц относительно размеров
+        const oldWidth = canvas.width || width;
+        const oldHeight = canvas.height || height;
+        const scaleX = oldWidth > 0 ? width / oldWidth : 1;
+        const scaleY = oldHeight > 0 ? height / oldHeight : 1;
+
+        canvas.width = width;
+        canvas.height = height;
+
+        // Масштабируем позиции частиц при изменении размера
+        if (particles.length > 0) {
+          particles.forEach((p) => {
+            p.x *= scaleX;
+            p.y *= scaleY;
+          });
+        }
+
+        // Сбрасываем кэш цветов при изменении темы (если нужно)
+        colorsRef.current = null;
+      }, 150); // Throttling: 150ms
+    };
+
+    window.addEventListener('resize', resizeCanvas, { passive: true });
+
+    // Инициализация частиц
+    const initParticles = () => {
+      particles.length = 0;
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * canvas.width,
+          y: Math.random() * canvas.height,
+          vx: (Math.random() - 0.5) * 0.5,
+          vy: (Math.random() - 0.5) * 0.5,
+        });
+      }
+    };
+
+    resizeCanvas();
+    initParticles();
+
+    const colors = getColors();
+    ctx.strokeStyle = colors.lineColor;
+    ctx.fillStyle = colors.dotColor;
+
+    let isRunning = true;
 
     const render = () => {
+      if (!isRunning) return;
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      const lineColor = getComputedStyleVar('--ifm-color-primary-lightest') || '#D8BFD8';
-      const dotColor = getComputedStyleVar('--ifm-color-primary') || '#7B68EE';
-      ctx.strokeStyle = lineColor;
-      ctx.fillStyle = dotColor;
+      // Обновляем цвета только если они изменились (при переключении темы)
+      const currentColors = getColors();
+      if (currentColors.lineColor !== ctx.strokeStyle || currentColors.dotColor !== ctx.fillStyle) {
+        ctx.strokeStyle = currentColors.lineColor;
+        ctx.fillStyle = currentColors.dotColor;
+      }
 
+      // Обновление и отрисовка частиц
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
         p.x += p.vx;
         p.y += p.vy;
 
-        if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
-        if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
+        // Отражение от границ
+        if (p.x < 0 || p.x > canvas.width) {
+          p.vx *= -1;
+          p.x = Math.max(0, Math.min(canvas.width, p.x));
+        }
+        if (p.y < 0 || p.y > canvas.height) {
+          p.vy *= -1;
+          p.y = Math.max(0, Math.min(canvas.height, p.y));
+        }
 
-        p.x = Math.max(0, Math.min(canvas.width, p.x));
-        p.y = Math.max(0, Math.min(canvas.height, p.y));
-
+        // Отрисовка частицы
         ctx.beginPath();
         ctx.arc(p.x, p.y, maxRadius * 0.7, 0, Math.PI * 2);
         ctx.fill();
 
+        // Оптимизированное соединение частиц (O(n²) но с ранним выходом)
         for (let j = i + 1; j < particles.length; j++) {
           const q = particles[j];
           const dx = p.x - q.x;
           const dy = p.y - q.y;
-          const dist = Math.sqrt(dx * dx + dy * dy);
+          const distSquared = dx * dx + dy * dy;
 
-          if (dist < connectionDistance) {
-            const alpha = 1 - dist / connectionDistance;
+          if (distSquared < connectionDistanceSquared) {
+            const dist = Math.sqrt(distSquared);
+            const alpha = (1 - dist / connectionDistance) * 0.6;
             ctx.beginPath();
-            ctx.strokeStyle = lineColor;
-            ctx.globalAlpha = alpha * 0.6;
+            ctx.globalAlpha = alpha;
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(q.x, q.y);
             ctx.stroke();
@@ -88,16 +176,22 @@ export default function AnimatedBackground({
       }
 
       ctx.globalAlpha = 1;
-      animationFrameId = requestAnimationFrame(render);
+      animationFrameIdRef.current = requestAnimationFrame(render);
     };
 
     render();
 
     return () => {
+      isRunning = false;
       window.removeEventListener('resize', resizeCanvas);
-      cancelAnimationFrame(animationFrameId);
+      if (resizeTimeoutRef.current) {
+        clearTimeout(resizeTimeoutRef.current);
+      }
+      if (animationFrameIdRef.current !== null) {
+        cancelAnimationFrame(animationFrameIdRef.current);
+      }
     };
-  }, []);
+  }, [particleCount, connectionDistance, getColors]);
 
   return (
     <canvas

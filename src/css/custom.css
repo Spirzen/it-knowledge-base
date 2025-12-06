@@ -561,3 +561,31 @@ code:hover {
   text-align: start !important;
   hyphens: none !important;
 }
+
+/* Оптимизации производительности */
+* {
+  /* Улучшение рендеринга */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Оптимизация анимаций */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Оптимизация изображений */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  /* Ленивая загрузка по умолчанию */
+  loading: lazy;
+}
+
+/* Оптимизация шрифтов - font-display: swap применяется через Docusaurus конфигурацию */

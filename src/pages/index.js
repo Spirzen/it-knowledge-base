@@ -56,7 +56,7 @@ function HomepageHeader() {
 function HomepageTabs() {
   return (
     <section className="margin-vert--xl container">
-      <Heading as="h2">🗂 Состав энциклопедии</Heading>
+      <Heading as="h2" className={styles.featuresTitle}>🗂 Состав энциклопедии</Heading>
 
       {/* Спойлер: Детям */}
       <details>

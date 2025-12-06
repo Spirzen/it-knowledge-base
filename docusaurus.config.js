@@ -40,6 +40,8 @@ module.exports = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        // Оптимизация сборки
+        gtag: undefined, // Отключено, если не используется
       },
     ],
   ],
@@ -54,6 +56,9 @@ module.exports = {
         indexPages: false,
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        // Оптимизация индексации
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 50,
       },
     ],
     [
@@ -63,6 +68,8 @@ module.exports = {
         maxWidth: 1200,
         sizes: [320, 640, 960, 1280, 1920],
         disableInDev: false,
+        // Оптимизация загрузки изображений
+        disable: false,
       },
     ],
   ],
@@ -172,4 +179,13 @@ module.exports = {
     '@docusaurus/theme-mermaid',
     '@docusaurus/theme-live-codeblock',
   ],
+
+  // Настройки для улучшения производительности
+  staticDirectories: ['static'],
+  
+  // Примечание: experimental_faster требует флаги v4, поэтому отключен
+  // Если нужны экспериментальные оптимизации, можно включить:
+  // future: {
+  //   v4: true, // Включает все флаги v4 включая experimental_faster
+  // },
 };
