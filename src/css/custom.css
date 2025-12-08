@@ -249,9 +249,9 @@
 }
 
 .tag-required {
-  background-color: #e3f2fd;
-  color: #1976d2;
-  border: 1px solid #90caf9;
+  background-color: #ffebee;
+  color: #c62828;
+  border: 1px solid #ef9a9a;
 }
 
 .tag-inprogress {
@@ -261,21 +261,21 @@
 }
 
 .tag-advanced {
-  background-color: #ffebee;
-  color: #c62828;
-  border: 1px solid #ef9a9a;
+  background-color: #e3f2fd;
+  color: #000000;
+  border: 1px solid #90caf9;
 }
 
 .tag-beginner {
-  background-color: #f3e5f5;
-  color: #7b1fa2;
-  border: 1px solid #ce93d8;
+  background-color: #e3f2fd;
+  color: #000000;
+  border: 1px solid #90caf9;
 }
 
 .tag-notrequired {
-  background-color: #c5fcf7;
+  background-color: #e3f2fd;
   color: #000000;
-  border: 1px solid #ce93d8;
+  border: 1px solid #90caf9;
 }
 
 .complexity-badge {
