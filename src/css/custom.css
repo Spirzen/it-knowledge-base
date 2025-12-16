@@ -500,7 +500,15 @@ pre[class*='language-'] {
   padding: 2rem !important;
   box-shadow: var(--ifm-global-shadow-md) !important;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: min(100% - 2rem, 900px);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 997px) {
+  .theme-doc-markdown > article {
+    padding: 2rem !important;
+  }
 }
 
 .theme-admonition,
