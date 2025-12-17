@@ -145,3 +145,5 @@ docs/find_replacements.py
 find_replacements.py
 result_replacements.txt
 OPTIMIZATIONS.md
+find_replacements2.py
+result_replacements2.txt
