@@ -173,11 +173,13 @@ function HomepageFeatures() {
       title: '📚 Энциклопедия',
       description: 'Систематизированный справочник по всем аспектам информационных технологий.',
       link: '/encyclopedia/intro',
+      isWide: true,
     },
     {
       title: '🛠️ Инструменты',
       description: 'Обзоры, гайды и практические рекомендации по использованию технологий и ПО.',
       link: '/tools/intro',
+      isWide: true,
     },
     {
       title: '📜 Глоссарий',
@@ -214,20 +216,28 @@ function HomepageFeatures() {
             </p>
           </div>
         </div>
-        <div className="row">
-          {features.map((feature, idx) => (
-            <div key={idx} className="col col--6 col--3">
-              <div className="feature-card">
+
+        <div className={styles.featuresSection}>
+          <div className={styles['cards-grid']}>
+            {features.map((feature, idx) => (
+              <div
+                key={idx}
+                className={clsx(
+                  styles['feature-card'],
+                  feature.isWide && styles['feature-card--wide']
+                )}
+              >
                 <Heading as="h3">{feature.title}</Heading>
                 <p>{feature.description}</p>
                 <Link
-                  className="button button--outline button--primary"
-                  to={feature.link}>
+                  className={`button button--outline button--primary ${styles['feature-cta']}`}
+                  to={feature.link}
+                >
                   Изучить раздел
                 </Link>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -273,6 +283,46 @@ export default function Home() {
         <HomepageTabs />
         <HomepageStats />
       </main>
+      <script
+      dangerouslySetInnerHTML={{
+        __html: `
+          document.addEventListener('DOMContentLoaded', function() {
+            const cardsWrapper = document.querySelector('.cardsWrapper');
+            const overlay = cardsWrapper?.querySelector('.overlay');
+            if (!cardsWrapper || !overlay) return;
+
+            // Clone featureCard into overlay
+            const originalCards = cardsWrapper.querySelectorAll('.featureCard');
+            originalCards.forEach(card => {
+              const clone = card.cloneNode(true);
+              clone.setAttribute('aria-hidden', 'true');
+              clone.style.position = 'absolute';
+              clone.style.top = '0';
+              clone.style.left = '0';
+              clone.style.width = '100%';
+              clone.style.height = '100%';
+              clone.style.pointerEvents = 'none';
+              const cta = clone.querySelector('.featureCta');
+              if (cta) cta.style.display = 'none';
+              overlay.appendChild(clone);
+            });
+
+            cardsWrapper.addEventListener('mousemove', e => {
+              const rect = cardsWrapper.getBoundingClientRect();
+              const x = e.clientX - rect.left;
+              const y = e.clientY - rect.top;
+              overlay.style.setProperty('--x', \`\${x}px\`);
+              overlay.style.setProperty('--y', \`\${y}px\`);
+              overlay.style.setProperty('--opacity', '1');
+            });
+
+            cardsWrapper.addEventListener('mouseleave', () => {
+              overlay.style.setProperty('--opacity', '0');
+            });
+          });
+        `,
+      }}
+    />
     </Layout>
   );
 }
