@@ -570,14 +570,11 @@ code:hover {
   hyphens: none !important;
 }
 
-/* Оптимизации производительности */
 * {
-  /* Улучшение рендеринга */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Оптимизация анимаций */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -588,12 +585,51 @@ code:hover {
   }
 }
 
-/* Оптимизация изображений */
 img {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
-  /* Ленивая загрузка по умолчанию */
   loading: lazy;
 }
 
 /* Оптимизация шрифтов - font-display: swap применяется через Docusaurus конфигурацию */
+
+details summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+details summary::marker,
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "🔷";
+  display: inline-block;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.details_lb9f > summary::before,
+.details_b_Ee > summary::before {
+  content: "🔷" !important;
+  position: static !important;
+  border: none !important;
+  margin-right: 0.5rem !important;
+  display: inline-block !important;
+  flex-shrink: 0 !important;
+  transform: none !important;
+  transition: transform 0.2s !important;
+  vertical-align: middle !important;
+}
+
+.details_lb9f[open] > summary::before,
+.details_b_Ee[open] > summary::before {
+  transform: rotate(90deg) !important;
+}

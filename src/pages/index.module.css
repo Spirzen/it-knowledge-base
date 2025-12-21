@@ -152,6 +152,7 @@ details summary::before {
   display: inline-block;
   transition: transform 0.2s;
   margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 details[open] summary::before {
