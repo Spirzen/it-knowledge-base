@@ -119,11 +119,9 @@ module.exports = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: '📖 База знаний',
+          label: '📖 Энциклопедия',
         },
-        { to: '/toc', label: '📋 Содержание', position: 'left' },
         { to: '/about/project', label: 'ℹ️ О проекте', position: 'left' },
-        { to: '/about/author', label: '👨‍💻 Об авторе', position: 'left' },
         { to: '/about/manifest', label: '📜 Манифест', position: 'left' },
         {
           href: '/about/author#support',
