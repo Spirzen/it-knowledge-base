@@ -3,7 +3,7 @@ const sidebars = {
   docsSidebar: [
     {
       type: 'category',
-      label: 'ℹ️ О проекте',
+      label: 'О проекте',
       link: { type: 'doc', id: 'about/project' },
       items: [
         'about/project',
@@ -14,7 +14,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '📚 Энциклопедия',
+      label: 'Энциклопедия',
       link: { type: 'doc', id: 'encyclopedia/intro' },
       items: [
         {
@@ -25,7 +25,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🛠️ Инструменты',
+      label: 'Инструменты',
       link: { type: 'doc', id: 'tools/intro' },
       items: [
         {
@@ -36,7 +36,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '📖 Глоссарий',
+      label: 'Глоссарий',
       link: { type: 'doc', id: 'glossary/intro' },
       items: [
         {
@@ -47,7 +47,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🔬 Лаборатория',
+      label: 'Лаборатория',
       link: { type: 'doc', id: 'lab/intro' },
       items: [
         {
@@ -58,7 +58,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🌍 Контекст',
+      label: 'Контекст',
       link: { type: 'doc', id: 'context/intro' },
       items: [
         {
@@ -69,7 +69,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '🧠 Философия',
+      label: 'Философия',
       link: { type: 'doc', id: 'philosophy/intro' },
       items: [
         {
@@ -81,7 +81,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'toc',
-      label: '📋 Общее содержание',
+      label: 'Общее содержание',
     },
   ],
 };

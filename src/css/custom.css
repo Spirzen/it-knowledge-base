@@ -633,3 +633,23 @@ details[open] summary::before {
 .details_b_Ee[open] > summary::before {
   transform: rotate(90deg) !important;
 }
+
+.callout,
+.callout p,
+.callout li,
+.callout span,
+.callout div:not(.callout-title) {
+  color: #2C3E50 !important;
+}
+
+.menu__list > .menu__list-item:first-of-type {
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  margin-top: 12px;
+  padding-top: 10px;
+}
+
+.menu__list > .menu__list-item:last-of-type {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+}

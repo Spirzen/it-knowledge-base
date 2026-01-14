@@ -119,10 +119,10 @@ module.exports = {
           type: 'docSidebar',
           sidebarId: 'docsSidebar',
           position: 'left',
-          label: '📖 Энциклопедия',
+          label: 'Энциклопедия',
         },
-        { to: '/about/project', label: 'ℹ️ О проекте', position: 'left' },
-        { to: '/about/manifest', label: '📜 Манифест', position: 'left' },
+        { to: '/about/project', label: 'О проекте', position: 'left' },
+        { to: '/about/manifest', label: 'Манифест', position: 'left' },
         {
           href: '/about/author#support',
           label: 'Поддержать',
@@ -134,7 +134,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: '📚 Энциклопедия',
+          title: 'Энциклопедия',
           items: [
             { label: 'Основы', to: '/section/basics' },
             { label: 'Система и сеть', to: '/section/system-network' },
@@ -142,7 +142,7 @@ module.exports = {
           ],
         },
         {
-          title: '🛠️ Инструменты и практика',
+          title: 'Инструменты и практика',
           items: [
             { label: 'Код и разработка', to: '/section/code-dev' },
             { label: 'Инфраструктура и безопасность', to: '/section/infra-security' },
@@ -150,7 +150,7 @@ module.exports = {
           ],
         },
         {
-          title: '🧠 Контекст и рефлексия',
+          title: 'Контекст и рефлексия',
           items: [
             { label: 'Контекст', to: '/context/intro' },
             { label: 'Философия', to: '/philosophy/intro' },
@@ -158,7 +158,7 @@ module.exports = {
           ],
         },
         {
-          title: 'ℹ️ О проекте',
+          title: 'О проекте',
           items: [
             { label: 'Манифест и Правила', to: '/about/manifest' },
             { label: 'Об авторе', to: '/about/author' },
