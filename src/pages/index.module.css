@@ -13,10 +13,11 @@
 
 .buttons {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
   margin: 2rem 0;
 }
 
@@ -275,4 +276,52 @@ details > :not(summary) {
 
 .feature-card--wide .feature-cta:hover {
   background: rgba(255, 255, 255, 0.25);
+}
+
+.sectionsGrid {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .sectionsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 996px) {
+  .sectionsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sectionCard {
+  padding: 1.5rem;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  transition: box-shadow 0.2s ease;
+}
+
+.sectionCard:hover {
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.sectionCard h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  color: var(--ifm-color-content);
+}
+
+.sectionCard p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--ifm-color-content-secondary);
+}
+
+.section-cta {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
 }
