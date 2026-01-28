@@ -84,7 +84,7 @@ function HomepageTabs() {
   ];
 
   return (
-    <section className="margin-vert--xl container">
+    <section className="margin-top--md container">
       <Heading as="h2" className={styles.featuresTitle}>
         Состав энциклопедии
       </Heading>
@@ -188,6 +188,8 @@ export default function Home() {
     <Layout
       title="Вселенная IT"
       description="Открытая энциклопедия по информационным технологиям"
+      paddingTop={false}
+      paddingBottom={false}
     >
       <HomepageHeader />
       <main>

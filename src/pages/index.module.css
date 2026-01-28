@@ -1,5 +1,5 @@
 .heroBanner {
-  padding: 4rem 0;
+  padding: 4rem 0 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -166,8 +166,8 @@ details > :not(summary) {
 }
 
 .heroCard {
-  background: #fff;
-  border: 1px solid #ccc;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -301,6 +301,7 @@ details > :not(summary) {
   background: var(--ifm-card-background-color);
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: var(--ifm-global-radius);
+  border-left: 4px solid var(--ifm-color-primary);
   transition: box-shadow 0.2s ease;
 }
 
@@ -325,3 +326,59 @@ details > :not(summary) {
   font-size: 0.9rem;
   padding: 0.4rem 1rem;
 }
+
+/* Светлая тема */
+:root {
+  --section-1-bg: #f8f9ff;
+  --section-2-bg: #f9f8fb;
+  --section-3-bg: #f6fcf8;
+  --section-4-bg: #fff7f5;
+  --section-5-bg: #f5f9ff;
+  --section-6-bg: #fdf8f0;
+  --section-7-bg: #f7f5fa;
+  --section-8-bg: #f0f9f4;
+  --section-9-bg: #fff2f8;
+
+  --section-1-border: #4a6cf7;
+  --section-2-border: #7b61ff;
+  --section-3-border: #2e8b57;
+  --section-4-border: #d2691e;
+  --section-5-border: #1e90ff;
+  --section-6-border: #d2b48c;
+  --section-7-border: #9370db;
+  --section-8-border: #32cd32;
+  --section-9-border: #ff69b4;
+}
+
+/* Тёмная тема */
+html[data-theme='dark'] {
+  --section-1-bg: #1a1d2e;
+  --section-2-bg: #1d1c24;
+  --section-3-bg: #1a221f;
+  --section-4-bg: #241e1c;
+  --section-5-bg: #1a1f2e;
+  --section-6-bg: #221f18;
+  --section-7-bg: #1f1d23;
+  --section-8-bg: #18221d;
+  --section-9-bg: #241a20;
+
+  --section-1-border: #6a8cff;
+  --section-2-border: #9b81ff;
+  --section-3-border: #4ecb8d;
+  --section-4-border: #e68a4e;
+  --section-5-border: #4eb3ff;
+  --section-6-border: #e6c99c;
+  --section-7-border: #b390ff;
+  --section-8-border: #5ae65a;
+  --section-9-border: #ff8ac4;
+}
+
+.sectionCard:nth-child(1) { background-color: var(--section-1-bg); border-left-color: var(--section-1-border); }
+.sectionCard:nth-child(2) { background-color: var(--section-2-bg); border-left-color: var(--section-2-border); }
+.sectionCard:nth-child(3) { background-color: var(--section-3-bg); border-left-color: var(--section-3-border); }
+.sectionCard:nth-child(4) { background-color: var(--section-4-bg); border-left-color: var(--section-4-border); }
+.sectionCard:nth-child(5) { background-color: var(--section-5-bg); border-left-color: var(--section-5-border); }
+.sectionCard:nth-child(6) { background-color: var(--section-6-bg); border-left-color: var(--section-6-border); }
+.sectionCard:nth-child(7) { background-color: var(--section-7-bg); border-left-color: var(--section-7-border); }
+.sectionCard:nth-child(8) { background-color: var(--section-8-bg); border-left-color: var(--section-8-border); }
+.sectionCard:nth-child(9) { background-color: var(--section-9-bg); border-left-color: var(--section-9-border); }
