@@ -653,3 +653,63 @@ details[open] summary::before {
   margin-bottom: 16px;
   padding-bottom: 10px;
 }
+
+/* Разрешаем перенос кода внутри таблиц */
+table code,
+.table code {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Оптимизация ячеек таблиц для переноса содержимого */
+table td,
+table th,
+.table td,
+.table th {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  vertical-align: top;
+}
+
+/* Разрешаем таблицам гибко распределять ширину столбцов */
+table,
+.table {
+  table-layout: auto;
+  width: 100%;
+}
+
+/* Дополнительные улучшения для читаемости кода в таблицах */
+table code,
+.table code {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.5;
+}
+
+/* Сохраняем текущий стиль кода, но разрешаем перенос в таблицах */
+table code,
+.table code {
+  background-color: rgba(123, 104, 238, 0.12);
+  color: #6A5ACD;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 85%;
+}
+
+/* Темная тема для кода в таблицах */
+[data-theme='dark'] table code,
+[data-theme='dark'] .table code {
+  background-color: rgba(147, 112, 219, 0.15);
+  color: #B19CD9;
+}
+
+/* Улучшение переноса для длинных строк кода */
+table pre code,
+.table pre code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
