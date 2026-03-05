@@ -62,6 +62,11 @@ function HomepageTabs() {
       link: '/section/languages',
     },
     {
+      title: 'Искусственный интеллект',
+      description: 'Нейросети, машинное обучение, AI.',
+      link: '/section/ai',
+    },
+    {
       title: 'Проект',
       description: 'Команда и управление, методологии, документирование, бизнес-логика, аналитика, проектирование и архитектура.',
       link: '/section/project',
@@ -75,12 +80,7 @@ function HomepageTabs() {
       title: 'Спин-офф',
       description: 'Игры, ИИ, блокчейн, биографии, этика, отраслевое ПО, интернет-культура, графика.',
       link: '/section/spinoff',
-    },
-    {
-      title: 'Детям',
-      description: 'Раздел, предназначенный для простого обучения компьютерной грамотности и программированию детей 6-12 лет.',
-      link: '/section/forkids',
-    },
+    }
   ];
 
   return (
