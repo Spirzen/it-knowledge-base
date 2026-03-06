@@ -1,0 +1,62 @@
+/**
+ * Базовые стили Content из стандартной темы Docusaurus + расширения.
+ */
+
+@media (min-width: 997px) {
+  .menu {
+    flex-grow: 1;
+    padding: 0.5rem;
+  }
+  @supports (scrollbar-gutter: stable) {
+    .menu {
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      scrollbar-gutter: stable;
+    }
+  }
+
+  .menuWithAnnouncementBar {
+    margin-bottom: var(--docusaurus-announcement-bar-height);
+  }
+}
+
+.sidebarSearchWrapper {
+  padding: 0.25rem 0.5rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.sidebarSearchInput {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.85rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.sidebarSearchInput:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 1px;
+}
+
+.sidebarQuickFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+.sidebarQuickFilter {
+  border: none;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-content-secondary);
+}
+
+.sidebarQuickFilterActive {
+  background: var(--ifm-color-primary);
+  color: #fff;
+}
+

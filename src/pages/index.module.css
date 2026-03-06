@@ -327,7 +327,7 @@ details > :not(summary) {
   padding: 0.4rem 1rem;
 }
 
-/* Светлая тема */
+/* Светлая тема: цветовые переменные для карточек разделов на главной */
 :root {
   --section-1-bg: #f8f9ff;
   --section-2-bg: #f9f8fb;

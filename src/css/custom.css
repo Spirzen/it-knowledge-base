@@ -77,6 +77,8 @@
   --ifm-card-background-color: #2A2A2A;
 }
 
+/* Главная страница и общие элементы навигации
+   (поддерживающие стили, без конфликтов с модульными стилями index.module.css) */
 .hero {
   padding: 4rem 0;
 }
@@ -93,31 +95,6 @@
   color: #5A6C7D;
   max-width: 800px;
   margin: 0 auto 2rem;
-  line-height: 1.6;
-}
-
-.feature-card {
-  background: #FFFFFF;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 16px rgba(123, 104, 238, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid #F0F0FF;
-}
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(123, 104, 238, 0.2);
-}
-
-.feature-card h3 {
-  color: #7B68EE;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.feature-card p {
-  color: #5A6C7D;
   line-height: 1.6;
 }
 
@@ -223,9 +200,14 @@
   }
 }
 
+/* Текст и разметка статьи */
 .markdown {
   font-feature-settings: "liga" 1;
   hyphens: auto;
+  background: var(--ifm-card-background-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--ifm-global-shadow-md);
 }
 
 .markdown p + p {
@@ -346,26 +328,25 @@
   color: #ffffff !important;
 }
 
+/* Подсветка кода */
 .prism-code,
 pre[class*='language-'] {
   background-color: #282c34 !important;
-  
   border: 5px solid #5d4eba !important;
-  
   border-radius: 8px !important;
   overflow: auto;
-
   box-shadow: 0 4px 16px rgba(123, 104, 238, 0.15) !important;
-
   color: #abb2bf !important;
-  
   font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
   font-size: var(--ifm-code-font-size) !important;
   line-height: 1.5 !important;
   tab-size: 2 !important;
-  
   padding: 1rem !important;
   margin: 1.25rem 0 !important;
+  white-space: pre;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .prism-code .token {
@@ -454,22 +435,6 @@ pre[class*='language-'] {
 
 .prism-code .highlighted-code-line {
   background-color: rgba(123, 104, 238, 0.2) !important;
-}
-
-.prism-code,
-pre[class*='language-'] {
-  white-space: pre;
-  overflow-x: auto;
-  overflow-wrap: anywhere;
-  word-break: normal;
-  tab-size: 2;
-}
-
-.markdown {
-  background: var(--ifm-card-background-color);
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: var(--ifm-global-shadow-md);
 }
 
 .docMainContainer,
