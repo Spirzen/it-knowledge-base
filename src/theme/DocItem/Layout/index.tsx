@@ -1,19 +1,34 @@
-import React, {useEffect, useState, type ReactNode} from 'react';
+import React, {useEffect, useState, type ReactElement, type ReactNode} from 'react';
 import clsx from 'clsx';
 import {useWindowSize} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
-import DocItemPaginator from '@theme/DocItem/Paginator';
-import DocVersionBanner from '@theme/DocVersionBanner';
-import DocVersionBadge from '@theme/DocVersionBadge';
-import DocItemFooter from '@theme/DocItem/Footer';
-import DocItemTOCMobile from '@theme/DocItem/TOC/Mobile';
-import DocItemTOCDesktop from '@theme/DocItem/TOC/Desktop';
-import DocItemContent from '@theme/DocItem/Content';
-import DocBreadcrumbs from '@theme/DocBreadcrumbs';
-import ContentVisibility from '@theme/ContentVisibility';
-import type {Props} from '@theme/DocItem/Layout';
 
 import styles from './styles.module.css';
+
+// Docusaurus theme aliases (`@theme/*`) резолвятся на этапе сборки.
+// Для TypeScript-линта в IDE используем `require`, чтобы не зависеть от type-aliases.
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocItemPaginator = require('@theme/DocItem/Paginator').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocVersionBanner = require('@theme/DocVersionBanner').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocVersionBadge = require('@theme/DocVersionBadge').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocItemFooter = require('@theme/DocItem/Footer').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocItemTOCMobile = require('@theme/DocItem/TOC/Mobile').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocItemTOCDesktop = require('@theme/DocItem/TOC/Desktop').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocItemContent = require('@theme/DocItem/Content').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocBreadcrumbs = require('@theme/DocBreadcrumbs').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const ContentVisibility = require('@theme/ContentVisibility').default;
+
+type DocItemLayoutProps = {
+  children: ReactNode;
+};
 
 /**
  * Решение, нужно ли отображать оглавление
@@ -46,7 +61,7 @@ function clamp(value: number, min: number, max: number): number {
 /**
  * Прогресс-бар освоения текущей главы (страницы документации)
  */
-function ChapterProgress(): JSX.Element | null {
+function ChapterProgress(): ReactElement | null {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -104,13 +119,47 @@ function ChapterProgress(): JSX.Element | null {
 }
 
 /**
- * Делает систему тегов кликабельной:
- * - .article-tags .tag -> поиск по CSS-классу (tag-required и т.п.)
- * - .complexity-badge -> поиск по тексту бейджа (\"Разработчику\" и др.)
+ * Делает систему тегов кликабельной и быстрой:
+ * - Для .article-tags .tag ищем по ВИДИМОМУ ТЕКСТУ (\"ДЛЯ НОВИЧКОВ\" и т.п.).
+ *   Локальный поиск индексирует текст страницы, а не CSS-классы, поэтому запрос
+ *   по `tag-beginner` может быть очень медленным/бесполезным на больших индексах.
+ * - Для .complexity-badge также ищем по тексту бейджа (\"Разработчику\" и др.).
  */
 function useClickableArticleTags() {
   useEffect(() => {
     const root = document;
+
+    const getSearchContextFromPathname = (pathname: string): string => {
+      const clean = pathname.replace(/^\//, '').replace(/\/$/, '');
+      const parts = clean.split('/').filter(Boolean);
+      if (parts.length === 0) {
+        return '';
+      }
+
+      const top = parts[0];
+
+      // Энциклопедия индексируется по верхнему разделу: encyclopedia/<Раздел>
+      if (top === 'encyclopedia') {
+        const second = parts[1];
+        if (!second) return 'encyclopedia/intro';
+        if (second === 'intro') return 'encyclopedia/intro';
+        return `encyclopedia/${second}`;
+      }
+
+      if (
+        top === 'about' ||
+        top === 'tools' ||
+        top === 'glossary' ||
+        top === 'lab' ||
+        top === 'context' ||
+        top === 'philosophy' ||
+        top === 'section'
+      ) {
+        return top;
+      }
+
+      return '';
+    };
 
     const makeInteractive = (
       elements: NodeListOf<HTMLElement>,
@@ -133,7 +182,9 @@ function useClickableArticleTags() {
 
         const navigate = () => {
           const query = encodeURIComponent(queryValue);
-          window.location.href = `/search?q=${query}`;
+          const ctx = getSearchContextFromPathname(window.location.pathname);
+          const ctxPart = ctx ? `&ctx=${encodeURIComponent(ctx)}` : '';
+          window.location.href = `/search?q=${query}${ctxPart}`;
         };
 
         const keyHandler = (event: KeyboardEvent) => {
@@ -148,13 +199,10 @@ function useClickableArticleTags() {
       });
     };
 
-    // Обычные статусы (ОБЯЗАТЕЛЬНО, ДЛЯ НОВИЧКОВ, и т.п.) — ищем по CSS-классу tag-*
+    // Обычные статусы (ОБЯЗАТЕЛЬНО, ДЛЯ НОВИЧКОВ, и т.п.) — ищем по видимому тексту
     const statusTags = root.querySelectorAll<HTMLElement>('.article-tags .tag');
     makeInteractive(statusTags, (el) => {
-      const tagClass = Array.from(el.classList).find((cls) =>
-        cls.startsWith('tag-'),
-      );
-      return tagClass ?? null;
+      return el.textContent?.trim() || null;
     });
 
     // Complexity-бейджи (Разработчику, Аналитику, ...) — ищем по видимому тексту
@@ -164,7 +212,7 @@ function useClickableArticleTags() {
   }, []);
 }
 
-export default function DocItemLayout({children}: Props): ReactNode {
+export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode {
   const docTOC = useDocTOC();
   const {metadata} = useDoc();
 

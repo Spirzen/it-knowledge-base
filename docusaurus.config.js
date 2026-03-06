@@ -50,12 +50,52 @@ module.exports = {
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
-        hashed: true,
+        // filename-хеш лучше кэшируется (особенно на CDN), чем query string
+        hashed: 'filename',
         language: ['ru'],
         indexDocs: true,
         indexPages: false,
+        // У нас docs-only mode (routeBasePath: '/')
+        docsRouteBasePath: '/',
+        // Разбиваем индекс на несколько файлов, чтобы не упираться в лимит GitHub (100MB/файл)
+        // и ускорить загрузку/поиск на больших базах.
+        searchContextByPaths: [
+          { label: 'О проекте', path: 'about' },
+
+          // Энциклопедия: дробим ещё на под-разделы, чтобы каждый index-файл был <100MB
+          { label: 'Энциклопедия — Введение', path: 'encyclopedia/intro' },
+          { label: 'Энциклопедия — Категории', path: 'encyclopedia/Категории' },
+          { label: 'Энциклопедия — Основы', path: 'encyclopedia/Основы' },
+          { label: 'Энциклопедия — Система и сеть', path: 'encyclopedia/Система и сеть' },
+          { label: 'Энциклопедия — Данные и разметка', path: 'encyclopedia/Данные и разметка' },
+          { label: 'Энциклопедия — Код и разработка', path: 'encyclopedia/Код и разработка' },
+          { label: 'Энциклопедия — Языки', path: 'encyclopedia/Языки' },
+          { label: 'Энциклопедия — Искусственный интеллект', path: 'encyclopedia/Искусственный интеллект' },
+          { label: 'Энциклопедия — Проект', path: 'encyclopedia/Проект' },
+          { label: 'Энциклопедия — Инфраструктура и безопасность', path: 'encyclopedia/Инфраструктура и безопасность' },
+          { label: 'Энциклопедия — Спин-офф', path: 'encyclopedia/Спин-офф' },
+
+          { label: 'Инструменты', path: 'tools' },
+          { label: 'Глоссарий', path: 'glossary' },
+          { label: 'Лаборатория', path: 'lab' },
+          { label: 'Контекст', path: 'context' },
+          { label: 'Философия', path: 'philosophy' },
+          { label: 'Разделы', path: 'section' },
+        ],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        // Ускоряем загрузку и поиск на больших базах:
+        // исключаем повторяющиеся элементы интерфейса из индекса (сайдбар, navbar, footer, TOC).
+        ignoreCssSelectors: [
+          '.theme-doc-sidebar-container',
+          '.theme-doc-sidebar-menu',
+          '.theme-doc-toc-desktop',
+          '.theme-doc-toc-mobile',
+          'nav.navbar',
+          'footer.footer',
+          '.navbar',
+          '.footer',
+        ],
         // Оптимизация индексации
         searchResultLimits: 8,
         searchResultContextMaxLength: 50,
