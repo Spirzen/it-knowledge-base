@@ -82,10 +82,13 @@ export default function DocSidebarDesktopContent({
   );
 
   const quickFilters = [
-    {label: 'Новичкам', query: 'нович'},
-    {label: 'Базы знаний', query: 'база зн'},
-    {label: 'Языки', query: 'языки'},
+    {label: 'Языки', query: 'язык'},
     {label: 'Проект', query: 'проект'},
+    {label: 'Аналитику', query: 'аналитик'},
+    {label: 'Тестировщику', query: 'тестиров'},
+    {label: 'Инженеру', query: 'инженер'},
+    {label: 'Архитектору', query: 'архитект'},
+    {label: 'Сеть', query: 'сет'},
   ];
 
   const activeQuick = quickFilters.find((f) => f.query === search.trim());
@@ -107,7 +110,7 @@ export default function DocSidebarDesktopContent({
         <input
           type="search"
           className={styles.sidebarSearchInput}
-          placeholder="Фильтр по разделам..."
+          placeholder="Фильтр по категориям..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
