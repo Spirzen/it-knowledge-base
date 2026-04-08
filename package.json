@@ -14,12 +14,13 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.9.2",
-    "@docusaurus/plugin-ideal-image": "^3.9.2",
-    "@docusaurus/preset-classic": "^3.9.2",
-    "@docusaurus/theme-live-codeblock": "^3.9.2",
-    "@docusaurus/theme-mermaid": "^3.9.2",
-    "@docusaurus/theme-search-algolia": "^3.9.2",
+    "@docusaurus/core": "^3.10.0",
+    "@docusaurus/faster": "^3.10.0",
+    "@docusaurus/plugin-ideal-image": "^3.10.0",
+    "@docusaurus/preset-classic": "^3.10.0",
+    "@docusaurus/theme-live-codeblock": "^3.10.0",
+    "@docusaurus/theme-mermaid": "^3.10.0",
+    "@docusaurus/theme-search-algolia": "^3.10.0",
     "@easyops-cn/docusaurus-search-local": "^0.52.1",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
@@ -28,8 +29,8 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "^3.9.2",
-    "@docusaurus/types": "^3.9.2",
+    "@docusaurus/module-type-aliases": "^3.10.0",
+    "@docusaurus/types": "^3.10.0",
     "@types/node": "^25.3.5",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",

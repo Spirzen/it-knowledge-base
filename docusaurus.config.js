@@ -135,7 +135,12 @@ module.exports = {
         'fortran',
         'latex',
         'graphql',
-        'http'
+        'http',
+        'markup',
+        'php',
+        'ini',
+        'git',
+        'docker'
       ],
     },
     // Настройки поиска (требует настройки Algolia, но увы - она недоступна в моей стране!)
@@ -220,10 +225,11 @@ module.exports = {
 
   // Настройки для улучшения производительности
   staticDirectories: ['static'],
+  future: {
+    v4: true,
+    faster: true,
+  },
   
   // Примечание: experimental_faster требует флаги v4, поэтому отключен
   // Если нужны экспериментальные оптимизации, можно включить:
-  // future: {
-  //   v4: true, // Включает все флаги v4 включая experimental_faster
-  // },
 };
