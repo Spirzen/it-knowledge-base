@@ -138,6 +138,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+.continue/
+
+
 Обновление.txt
 static/yandex_507ba83977a96ef7.html
 zen_5Dpza0TtuRNaknqdiI81nrLZIx63booZgDlmeUYYDpXcVkfkyHcwmpcNf9pbFL45.html
