@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const initialData = [
   { id: 1, name: 'Иван', age: 25, city: 'Москва', salary: 50000 },
@@ -424,13 +425,13 @@ const SqlDeleteTrainer = () => {
           <div>
             <button 
               onClick={confirmDelete}
-              style={{ ...styles.confirmButton, ...styles.confirmYes }}
+              style={{ ...styles.confirmButton, backgroundColor: '#ef4444', color: '#fff' }}
             >
               ✅ Да, удалить
             </button>
             <button 
               onClick={cancelDelete}
-              style={{ ...styles.confirmButton, ...styles.confirmNo }}
+              style={{ ...styles.confirmButton, backgroundColor: '#6b7280', color: '#fff' }}
             >
               ❌ Отмена
             </button>
@@ -533,4 +534,10 @@ const SqlDeleteTrainer = () => {
   );
 };
 
-export default SqlDeleteTrainer;
+export default function SqlDeleteTrainerWrapper() {
+  return (
+    <BrowserOnly>
+      {() => <SqlDeleteTrainer />}
+    </BrowserOnly>
+  );
+}

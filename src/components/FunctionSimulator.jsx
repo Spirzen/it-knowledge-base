@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const FunctionSimulator = () => {
   const [step, setStep] = useState(0);
@@ -101,7 +102,7 @@ const FunctionSimulator = () => {
     return { ...baseStyle, backgroundColor: '#1e1e1e' };
   };
 
-  return (
+  const renderContent = () => (
     <div style={{
       backgroundColor: '#1e1e1e',
       borderRadius: 'clamp(8px, 4vw, 12px)',
@@ -136,7 +137,6 @@ const FunctionSimulator = () => {
         </p>
       </div>
 
-      {/* Код с подсветкой */}
       <div style={{
         backgroundColor: '#252526',
         borderRadius: '8px',
@@ -174,7 +174,6 @@ const FunctionSimulator = () => {
         </div>
       </div>
 
-      {/* Визуализация стека вызовов */}
       <div style={{
         backgroundColor: '#2d2d2d',
         borderRadius: '8px',
@@ -214,7 +213,6 @@ const FunctionSimulator = () => {
         </div>
       </div>
 
-      {/* Анимация передачи значения */}
       {(currentStep.currentValue || currentStep.showReturn) && (
         <div style={{
           backgroundColor: '#2d2d2d',
@@ -291,7 +289,6 @@ const FunctionSimulator = () => {
         </div>
       )}
 
-      {/* Статус выполнения */}
       <div style={{
         backgroundColor: '#252526',
         borderRadius: '8px',
@@ -334,7 +331,6 @@ const FunctionSimulator = () => {
         </div>
       </div>
 
-      {/* Прогресс-бар */}
       <div style={{ marginBottom: 'clamp(10px, 3vw, 15px)' }}>
         <div style={{
           height: '4px',
@@ -351,7 +347,6 @@ const FunctionSimulator = () => {
         </div>
       </div>
 
-      {/* Кнопки управления */}
       <div style={{ 
         display: 'flex', 
         gap: 'clamp(8px, 3vw, 10px)', 
@@ -441,6 +436,12 @@ const FunctionSimulator = () => {
         `}
       </style>
     </div>
+  );
+
+  return (
+    <BrowserOnly fallback={<div style={{padding: '20px', color: '#fff'}}>Загрузка...</div>}>
+      {() => renderContent()}
+    </BrowserOnly>
   );
 };
 

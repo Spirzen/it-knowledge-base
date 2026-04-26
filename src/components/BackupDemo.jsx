@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
-const BackupDemo = () => {
+const BackupDemoContent = () => {
   const [activeTab, setActiveTab] = useState('backup');
   const [backupHistory, setBackupHistory] = useState([]);
   const [selectedBackup, setSelectedBackup] = useState(null);
@@ -292,7 +293,7 @@ const BackupDemo = () => {
       overflowX: 'auto',
       paddingBottom: '2px',
       scrollbarWidth: 'none',
-      '-ms-overflow-style': 'none'
+      msOverflowStyle: 'none'
     },
     tab: {
       padding: '10px 20px',
@@ -847,6 +848,14 @@ async function restoreBackup(backupFile, targetDir) {
         </div>
       )}
     </div>
+  );
+};
+
+const BackupDemo = () => {
+  return (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+      {() => <BackupDemoContent />}
+    </BrowserOnly>
   );
 };
 

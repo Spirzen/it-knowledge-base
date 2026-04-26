@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useRef, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const ProcessThreadVisualizer = () => {
   const [isRunning, setIsRunning] = useState(false);
@@ -324,192 +325,196 @@ const ProcessThreadVisualizer = () => {
     return titles[threadId] || threadId;
   };
 
-  return (
-    <div style={styles.container}>
-      <div style={styles.header}>
-        <h2 style={styles.title}>Визуализатор процессов и потоков</h2>
-        <p style={styles.subtitle}>
-          {isMobile ? 'Демонстрация однопоточной и многопоточной обработки' : 'Интерактивная демонстрация разницы между однопоточной и многопоточной обработкой данных'}
-        </p>
-      </div>
-
-      <div style={styles.modeSelector}>
-        <button
-          style={{
-            ...styles.modeButton,
-            ...(mode === 'single' ? styles.modeButtonActive : styles.modeButtonInactive)
-          }}
-          onClick={() => changeMode('single')}
-          disabled={isRunning}
-        >
-          Однопоточный режим
-        </button>
-        <button
-          style={{
-            ...styles.modeButton,
-            ...(mode === 'multi' ? styles.modeButtonActive : styles.modeButtonInactive)
-          }}
-          onClick={() => changeMode('multi')}
-          disabled={isRunning}
-        >
-          Многопоточный режим (3 потока)
-        </button>
-      </div>
-
-      <div style={styles.visualizer}>
-        {/* Однопоточная визуализация */}
-        <div style={styles.card}>
-          <div style={styles.cardTitle}>
-            <span>Однопоточная обработка</span>
-            <span style={{...styles.badge, backgroundColor: '#3498db', color: 'white'}}>
-              Последовательно
-            </span>
-          </div>
-          <div style={styles.threadContainer}>
-            <div
-              style={{
-                ...styles.threadItem,
-                borderLeftColor: getThreadColor('main'),
-                backgroundColor: activeThread === 'main' ? '#e3f2fd' : '#f8f9fa'
-              }}
-            >
-              <div style={styles.threadHeader}>
-                <span style={styles.threadName}>{getThreadTitle('main')}</span>
-                {activeThread === 'main' && (
-                  <span style={styles.activeBadge}>⚡ Выполняется...</span>
-                )}
-              </div>
-              <div style={styles.progressBar}>
-                <div
-                  style={{
-                    ...styles.progressFill,
-                    width: `${(singleProgress / totalTasks) * 100}%`,
-                    backgroundColor: getThreadColor('main')
-                  }}
-                >
-                  {!isMobile && `${Math.round((singleProgress / totalTasks) * 100)}%`}
-                  {isMobile && singleProgress > 0 && `${Math.round((singleProgress / totalTasks) * 100)}%`}
-                </div>
-              </div>
-              <div style={styles.progressText}>
-                Задач выполнено: {singleProgress} / {totalTasks}
-              </div>
-            </div>
-          </div>
-          
-          {singleResult && (
-            <div style={styles.stats}>
-              <strong>Результат:</strong><br />
-              Время выполнения: {singleResult.time} секунд<br />
-              Обработано задач: {singleResult.tasks}<br />
-              Тип обработки: последовательная
-            </div>
-          )}
+  const InnerComponent = () => {
+    return (
+      <div style={styles.container}>
+        <div style={styles.header}>
+          <h2 style={styles.title}>Визуализатор процессов и потоков</h2>
+          <p style={styles.subtitle}>
+            {isMobile ? 'Демонстрация однопоточной и многопоточной обработки' : 'Интерактивная демонстрация разницы между однопоточной и многопоточной обработкой данных'}
+          </p>
         </div>
 
-        {/* Многопоточная визуализация */}
-        <div style={styles.card}>
-          <div style={styles.cardTitle}>
-            <span>Многопоточная обработка</span>
-            <span style={{...styles.badge, backgroundColor: '#27ae60', color: 'white'}}>
-              Параллельно
-            </span>
-          </div>
-          <div style={styles.threadContainer}>
-            {['thread1', 'thread2', 'thread3'].map((thread) => (
+        <div style={styles.modeSelector}>
+          <button
+            style={{
+              ...styles.modeButton,
+              ...(mode === 'single' ? styles.modeButtonActive : styles.modeButtonInactive)
+            }}
+            onClick={() => changeMode('single')}
+            disabled={isRunning}
+          >
+            Однопоточный режим
+          </button>
+          <button
+            style={{
+              ...styles.modeButton,
+              ...(mode === 'multi' ? styles.modeButtonActive : styles.modeButtonInactive)
+            }}
+            onClick={() => changeMode('multi')}
+            disabled={isRunning}
+          >
+            Многопоточный режим (3 потока)
+          </button>
+        </div>
+
+        <div style={styles.visualizer}>
+          {/* Однопоточная визуализация */}
+          <div style={styles.card}>
+            <div style={styles.cardTitle}>
+              <span>Однопоточная обработка</span>
+              <span style={{...styles.badge, backgroundColor: '#3498db', color: 'white'}}>
+                Последовательно
+              </span>
+            </div>
+            <div style={styles.threadContainer}>
               <div
-                key={thread}
                 style={{
                   ...styles.threadItem,
-                  borderLeftColor: getThreadColor(thread),
-                  backgroundColor: activeThread === thread ? '#e8f8f5' : '#f8f9fa'
+                  borderLeftColor: getThreadColor('main'),
+                  backgroundColor: activeThread === 'main' ? '#e3f2fd' : '#f8f9fa'
                 }}
               >
                 <div style={styles.threadHeader}>
-                  <span style={styles.threadName}>{getThreadTitle(thread)}</span>
-                  {activeThread === thread && (
-                    <span style={styles.activeBadge}>🟢 Активен</span>
+                  <span style={styles.threadName}>{getThreadTitle('main')}</span>
+                  {activeThread === 'main' && (
+                    <span style={styles.activeBadge}>⚡ Выполняется...</span>
                   )}
                 </div>
                 <div style={styles.progressBar}>
                   <div
                     style={{
                       ...styles.progressFill,
-                      width: `${(multiProgress[thread] / Math.ceil(totalTasks / 3)) * 100}%`,
-                      backgroundColor: getThreadColor(thread)
+                      width: `${(singleProgress / totalTasks) * 100}%`,
+                      backgroundColor: getThreadColor('main')
                     }}
                   >
-                    {!isMobile && `${Math.round((multiProgress[thread] / Math.ceil(totalTasks / 3)) * 100)}%`}
-                    {isMobile && multiProgress[thread] > 0 && `${Math.round((multiProgress[thread] / Math.ceil(totalTasks / 3)) * 100)}%`}
+                    {!isMobile && `${Math.round((singleProgress / totalTasks) * 100)}%`}
+                    {isMobile && singleProgress > 0 && `${Math.round((singleProgress / totalTasks) * 100)}%`}
                   </div>
                 </div>
                 <div style={styles.progressText}>
-                  Задач выполнено: {multiProgress[thread]} / {Math.ceil(totalTasks / 3)}
+                  Задач выполнено: {singleProgress} / {totalTasks}
                 </div>
               </div>
-            ))}
-          </div>
-          
-          {multiResult && (
-            <div style={styles.stats}>
-              <strong>🚀 Результат:</strong><br />
-              Время выполнения: {multiResult.time} секунд<br />
-              Обработано задач: {multiResult.tasks}<br />
-              Количество потоков: {multiResult.threads}<br />
-              {singleResult && (
-                <>Ускорение: ~{(singleResult.time / multiResult.time).toFixed(2)}x</>
-              )}
             </div>
+            
+            {singleResult && (
+              <div style={styles.stats}>
+                <strong>Результат:</strong><br />
+                Время выполнения: {singleResult.time} секунд<br />
+                Обработано задач: {singleResult.tasks}<br />
+                Тип обработки: последовательная
+              </div>
+            )}
+          </div>
+
+          {/* Многопоточная визуализация */}
+          <div style={styles.card}>
+            <div style={styles.cardTitle}>
+              <span>Многопоточная обработка</span>
+              <span style={{...styles.badge, backgroundColor: '#27ae60', color: 'white'}}>
+                Параллельно
+              </span>
+            </div>
+            <div style={styles.threadContainer}>
+              {['thread1', 'thread2', 'thread3'].map((thread) => (
+                <div
+                  key={thread}
+                  style={{
+                    ...styles.threadItem,
+                    borderLeftColor: getThreadColor(thread),
+                    backgroundColor: activeThread === thread ? '#e8f8f5' : '#f8f9fa'
+                  }}
+                >
+                  <div style={styles.threadHeader}>
+                    <span style={styles.threadName}>{getThreadTitle(thread)}</span>
+                    {activeThread === thread && (
+                      <span style={styles.activeBadge}>🟢 Активен</span>
+                    )}
+                  </div>
+                  <div style={styles.progressBar}>
+                    <div
+                      style={{
+                        ...styles.progressFill,
+                        width: `${(multiProgress[thread] / Math.ceil(totalTasks / 3)) * 100}%`,
+                        backgroundColor: getThreadColor(thread)
+                      }}
+                    >
+                      {!isMobile && `${Math.round((multiProgress[thread] / Math.ceil(totalTasks / 3)) * 100)}%`}
+                      {isMobile && multiProgress[thread] > 0 && `${Math.round((multiProgress[thread] / Math.ceil(totalTasks / 3)) * 100)}%`}
+                    </div>
+                  </div>
+                  <div style={styles.progressText}>
+                    Задач выполнено: {multiProgress[thread]} / {Math.ceil(totalTasks / 3)}
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            {multiResult && (
+              <div style={styles.stats}>
+                <strong>🚀 Результат:</strong><br />
+                Время выполнения: {multiResult.time} секунд<br />
+                Обработано задач: {multiResult.tasks}<br />
+                Количество потоков: {multiResult.threads}<br />
+                {singleResult && (
+                  <>Ускорение: ~{(singleResult.time / multiResult.time).toFixed(2)}x</>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+
+        <div style={styles.controlButtons}>
+          <button
+            style={{
+              ...styles.button,
+              ...styles.buttonPrimary,
+              ...(isRunning ? styles.buttonDisabled : {})
+            }}
+            onClick={startSimulation}
+            disabled={isRunning}
+          >
+            {isMobile ? '▶ Запуск' : `Запустить обработку ${mode === 'single' ? 'однопоточно' : 'многопоточно'}`}
+          </button>
+          <button
+            style={{
+              ...styles.button,
+              ...styles.buttonSecondary,
+              ...(!isRunning && singleProgress === 0 && multiProgress.thread1 === 0 ? styles.buttonDisabled : {})
+            }}
+            onClick={resetSimulation}
+            disabled={(!isRunning && singleProgress === 0 && multiProgress.thread1 === 0)}
+          >
+            {isMobile ? '⟳ Сброс' : 'Сбросить'}
+          </button>
+        </div>
+
+        {multiResult && singleResult && (
+          <div style={styles.efficiencyNote}>
+            <strong>Анализ эффективности:</strong><br />
+            Многопоточная обработка завершилась в {multiResult.time} секунд, что в {(singleResult.time / multiResult.time).toFixed(2)} раза быстрее однопоточной ({singleResult.time} секунд).<br />
+            {!isMobile && "Это демонстрирует преимущество параллельного выполнения задач на нескольких потоках."}
+          </div>
+        )}
+
+        <div style={{...styles.efficiencyNote, backgroundColor: '#fef9e7', borderLeftColor: '#f39c12'}}>
+          <strong>💡 Как это работает?</strong><br />
+          • <strong>Однопоточный режим:</strong> Все {totalTasks} задач выполняются последовательно в одном потоке.<br />
+          • <strong>Многопоточный режим:</strong> {totalTasks} задач распределяются между 3 потоками, которые работают параллельно.<br />
+          {!isMobile && (
+            <>
+              • Потоки разделяют общую память и координируют выполнение, что позволяет быстрее обрабатывать данные.<br />
+              • В реальных приложениях многопоточность особенно эффективна для IO-операций и CPU-интенсивных задач.
+            </>
           )}
         </div>
       </div>
+    );
+  };
 
-      <div style={styles.controlButtons}>
-        <button
-          style={{
-            ...styles.button,
-            ...styles.buttonPrimary,
-            ...(isRunning ? styles.buttonDisabled : {})
-          }}
-          onClick={startSimulation}
-          disabled={isRunning}
-        >
-          {isMobile ? '▶ Запуск' : `Запустить обработку ${mode === 'single' ? 'однопоточно' : 'многопоточно'}`}
-        </button>
-        <button
-          style={{
-            ...styles.button,
-            ...styles.buttonSecondary,
-            ...(!isRunning && singleProgress === 0 && multiProgress.thread1 === 0 ? styles.buttonDisabled : {})
-          }}
-          onClick={resetSimulation}
-          disabled={(!isRunning && singleProgress === 0 && multiProgress.thread1 === 0)}
-        >
-          {isMobile ? '⟳ Сброс' : 'Сбросить'}
-        </button>
-      </div>
-
-      {multiResult && singleResult && (
-        <div style={styles.efficiencyNote}>
-          <strong>Анализ эффективности:</strong><br />
-          Многопоточная обработка завершилась в {multiResult.time} секунд, что в {(singleResult.time / multiResult.time).toFixed(2)} раза быстрее однопоточной ({singleResult.time} секунд).<br />
-          {!isMobile && "Это демонстрирует преимущество параллельного выполнения задач на нескольких потоках."}
-        </div>
-      )}
-
-      <div style={{...styles.efficiencyNote, backgroundColor: '#fef9e7', borderLeftColor: '#f39c12'}}>
-        <strong>💡 Как это работает?</strong><br />
-        • <strong>Однопоточный режим:</strong> Все {totalTasks} задач выполняются последовательно в одном потоке.<br />
-        • <strong>Многопоточный режим:</strong> {totalTasks} задач распределяются между 3 потоками, которые работают параллельно.<br />
-        {!isMobile && (
-          <>
-            • Потоки разделяют общую память и координируют выполнение, что позволяет быстрее обрабатывать данные.<br />
-            • В реальных приложениях многопоточность особенно эффективна для IO-операций и CPU-интенсивных задач.
-          </>
-        )}
-      </div>
-    </div>
-  );
+  return <BrowserOnly>{() => <InnerComponent />}</BrowserOnly>;
 };
 
 export default ProcessThreadVisualizer;

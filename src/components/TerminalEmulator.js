@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const TerminalEmulator = () => {
   const [history, setHistory] = useState([
@@ -210,91 +211,97 @@ const TerminalEmulator = () => {
     },
   };
 
-  useEffect(() => {
-    const styleSheet = document.createElement("style");
-    styleSheet.textContent = `
-      @media (max-width: 768px) {
-        .terminal-container {
-          margin: 0.5rem auto !important;
+  const renderContent = () => {
+    useEffect(() => {
+      const styleSheet = document.createElement("style");
+      styleSheet.textContent = `
+        @media (max-width: 768px) {
+          .terminal-container {
+            margin: 0.5rem auto !important;
+          }
+          .terminal-body {
+            padding: 12px !important;
+          }
+          .terminal-input {
+            font-size: 14px !important;
+          }
         }
-        .terminal-body {
-          padding: 12px !important;
+        
+        @media (max-width: 480px) {
+          .terminal-body {
+            padding: 8px !important;
+          }
+          .terminal-prompt {
+            font-size: 12px !important;
+          }
         }
-        .terminal-input {
-          font-size: 14px !important;
+        
+        @media (hover: hover) and (pointer: fine) {
+          .terminal-input:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+          }
         }
-      }
-      
-      @media (max-width: 480px) {
-        .terminal-body {
-          padding: 8px !important;
+        
+        @media (pointer: coarse) {
+          .terminal-input {
+            font-size: 16px !important;
+            padding: 8px 4px !important;
+          }
         }
-        .terminal-prompt {
-          font-size: 12px !important;
+        
+        @media (max-width: 768px) and (orientation: landscape) {
+          .terminal-body {
+            max-height: 70vh !important;
+          }
         }
-      }
-      
-      @media (hover: hover) and (pointer: fine) {
-        .terminal-input:hover {
-          background-color: rgba(255, 255, 255, 0.05);
-        }
-      }
-      
-      /* Для touch устройств увеличиваем область касания */
-      @media (pointer: coarse) {
-        .terminal-input {
-          font-size: 16px !important;
-          padding: 8px 4px !important;
-        }
-      }
-      
-      /* Адаптация под альбомную ориентацию на мобильных */
-      @media (max-width: 768px) and (orientation: landscape) {
-        .terminal-body {
-          max-height: 70vh !important;
-        }
-      }
-    `;
-    document.head.appendChild(styleSheet);
-    return () => {
-      document.head.removeChild(styleSheet);
-    };
-  }, []);
+      `;
+      document.head.appendChild(styleSheet);
+      return () => {
+        document.head.removeChild(styleSheet);
+      };
+    }, []);
+
+    return (
+      <div style={styles.container} className="terminal-container">
+        <div style={styles.header}>
+          <div style={styles.buttons}>
+            <span style={{ ...styles.button, ...styles.buttonRed }}></span>
+            <span style={{ ...styles.button, ...styles.buttonYellow }}></span>
+            <span style={{ ...styles.button, ...styles.buttonGreen }}></span>
+          </div>
+          <div style={styles.title}>bash — 80x24</div>
+        </div>
+        <div style={styles.body} className="terminal-body">
+          {history.map((item, index) => (
+            <div key={index} style={styles.line}>
+              {item.text}
+            </div>
+          ))}
+          <div style={styles.inputLine}>
+            <span style={styles.prompt} className="terminal-prompt">guest@universe-it:~$</span>
+            <input
+              ref={inputRef}
+              type="text"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              onKeyDown={handleKeyDown}
+              style={styles.input}
+              className="terminal-input"
+              autoFocus
+              autoComplete="off"
+              spellCheck="false"
+            />
+          </div>
+          <div ref={endOfListRef} />
+        </div>
+      </div>
+    );
+  };
 
   return (
-    <div style={styles.container} className="terminal-container">
-      <div style={styles.header}>
-        <div style={styles.buttons}>
-          <span style={{ ...styles.button, ...styles.buttonRed }}></span>
-          <span style={{ ...styles.button, ...styles.buttonYellow }}></span>
-          <span style={{ ...styles.button, ...styles.buttonGreen }}></span>
-        </div>
-        <div style={styles.title}>bash — 80x24</div>
-      </div>
-      <div style={styles.body} className="terminal-body">
-        {history.map((item, index) => (
-          <div key={index} style={styles.line}>
-            {item.text}
-          </div>
-        ))}
-        <div style={styles.inputLine}>
-          <span style={styles.prompt} className="terminal-prompt">guest@universe-it:~$</span>
-          <input
-            ref={inputRef}
-            type="text"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            onKeyDown={handleKeyDown}
-            style={styles.input}
-            className="terminal-input"
-            autoFocus
-            autoComplete="off"
-            spellCheck="false"
-          />
-        </div>
-        <div ref={endOfListRef} />
-      </div>
-    </div>
+    <BrowserOnly>
+      {renderContent()}
+    </BrowserOnly>
   );
 };
 

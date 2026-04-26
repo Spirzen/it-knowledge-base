@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const RabbitMQSimulation = () => {
   const [status, setStatus] = useState('idle');
@@ -6,9 +7,10 @@ const RabbitMQSimulation = () => {
   const [logs, setLogs] = useState([]);
   const [activeConsumer, setActiveConsumer] = useState(null);
   const [isSubscribed, setIsSubscribed] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
+    setWindowWidth(window.innerWidth);
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -272,193 +274,186 @@ const RabbitMQSimulation = () => {
   });
 
   return (
-    <div style={containerStyle}>
-      <style>
-        {`
-          @keyframes slidePacket {
-            0% { left: 100%; opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
-            10% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-            90% { opacity: 1; }
-            100% { left: 0%; opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
-          }
-          @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-5px); }
-            to { opacity: 1; transform: translateY(0); }
-          }
-          
-          @media (max-width: 768px) {
-            .log-entry {
-              font-size: 11px;
-            }
-          }
-          
-          @media (max-width: 480px) {
-            .message-content {
-              font-size: 10px;
-            }
-          }
-        `}
-      </style>
+    <BrowserOnly>
+      {() => (
+        <div style={containerStyle}>
+          <style>
+            {`
+              @keyframes slidePacket {
+                0% { left: 100%; opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+                10% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+                90% { opacity: 1; }
+                100% { left: 0%; opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+              }
+              @keyframes fadeIn {
+                from { opacity: 0; transform: translateY(-5px); }
+                to { opacity: 1; transform: translateY(0); }
+              }
+              
+              @media (max-width: 768px) {
+                .log-entry {
+                  font-size: 11px;
+                }
+              }
+              
+              @media (max-width: 480px) {
+                .message-content {
+                  font-size: 10px;
+                }
+              }
+            `}
+          </style>
 
-      <h2 style={headerStyle}>
-        <span style={{ fontSize: isMobile ? '1.1rem' : '1.5rem' }}>Схема работы RabbitMQ</span>
-        <span style={{ fontSize: isMobile ? '0.75rem' : '0.9rem', fontWeight: 'normal', opacity: 0.8 }}>
-          {status === 'idle' && !isSubscribed ? 'Нажмите "Старт"' : `Статус: ${status}`}
-        </span>
-      </h2>
+          <h2 style={headerStyle}>
+            <span style={{ fontSize: isMobile ? '1.1rem' : '1.5rem' }}>Схема работы RabbitMQ</span>
+            <span style={{ fontSize: isMobile ? '0.75rem' : '0.9rem', fontWeight: 'normal', opacity: 0.8 }}>
+              {status === 'idle' && !isSubscribed ? 'Нажмите "Старт"' : `Статус: ${status}`}
+            </span>
+          </h2>
 
-      <div style={gridStyle}>
-        <div style={topRowStyle}>
-          {/* Продюсер */}
-          <div style={{ ...nodeCardStyle(colors.producer, false, false), transform: status === 'publishing' ? 'scale(1.05)' : 'scale(1)' }}>
-            <strong>Продюсер</strong>
-            <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>Отправитель</small>
+          <div style={gridStyle}>
+            <div style={topRowStyle}>
+              <div style={{ ...nodeCardStyle(colors.producer, false, false), transform: status === 'publishing' ? 'scale(1.05)' : 'scale(1)' }}>
+                <strong>Продюсер</strong>
+                <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>Отправитель</small>
+              </div>
+
+              <div style={{ ...nodeCardStyle(colors.broker, false, false), transform: (status === 'publishing' || status === 'queued' || status === 'consuming') ? 'scale(1.05)' : 'scale(1)' }}>
+                <strong>RabbitMQ</strong>
+                <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>Брокер</small>
+              </div>
+
+              {!isMobile && (
+                <div style={{ ...nodeCardStyle(colors.queue, false, false), backgroundColor: colors.queue }}>
+                  <strong>Очередь</strong>
+                  <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>Queue</small>
+                </div>
+              )}
+            </div>
+
+            {isMobile && (
+              <div style={queueContainerStyle}>
+                <div style={{ fontSize: '0.8rem', fontWeight: 'bold', color: colors.queue, marginBottom: '5px' }}>
+                  📋 Очередь сообщений ({queueItems.length})
+                </div>
+                {queueItems.length === 0 ? (
+                  <div style={{ fontStyle: 'italic', color: '#7f8c8d', textAlign: 'center', fontSize: '0.8rem' }}>
+                    Очередь пуста
+                  </div>
+                ) : (
+                  queueItems.map((item) => (
+                    <div key={item.id} style={queueItemStyle(item)}>
+                      <span className="message-content">{item.content}</span>
+                      {item.status === 'processing' && (
+                        <span style={{ fontSize: '0.7rem', opacity: 0.9, marginLeft: '8px' }}>
+                          {item.consumerId === 'consumer1' ? '🟢 P1' : '🔴 P2'}
+                        </span>
+                      )}
+                    </div>
+                  ))
+                )}
+              </div>
+            )}
+
+            {!isMobile && (
+              <div style={queueContainerStyle}>
+                <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: colors.queue, marginBottom: '5px' }}>
+                  📋 Очередь сообщений ({queueItems.length})
+                </div>
+                {queueItems.length === 0 ? (
+                  <div style={{ fontStyle: 'italic', color: '#7f8c8d', textAlign: 'center' }}>Очередь пуста</div>
+                ) : (
+                  queueItems.map((item) => (
+                    <div key={item.id} style={queueItemStyle(item)}>
+                      <span>{item.content}</span>
+                      {item.status === 'processing' && (
+                        <span style={{ fontSize: '0.8rem', opacity: 0.9 }}>
+                          {item.consumerId === 'consumer1' ? '🟢 P1' : '🔴 P2'}
+                        </span>
+                      )}
+                    </div>
+                  ))
+                )}
+              </div>
+            )}
+
+            <div style={consumersContainerStyle}>
+              <div style={{ ...consumerCardStyle(colors.consumer1, activeConsumer === 'consumer1', isSubscribed ? 1 : 0.5) }}>
+                <strong>Потребитель 1</strong>
+                <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>
+                  {isSubscribed ? (activeConsumer === 'consumer1' ? '⏳ Обработка...' : '⏸ Ожидание') : '🔴 Не подписан'}
+                </small>
+                {status === 'consuming' && activeConsumer === 'consumer1' && (
+                  <span style={{ display: 'inline-block', marginTop: '5px', fontSize: '1.2rem' }}>📦</span>
+                )}
+              </div>
+
+              <div style={{ ...consumerCardStyle(colors.consumer2, activeConsumer === 'consumer2', isSubscribed ? 1 : 0.5) }}>
+                <strong>Потребитель 2</strong>
+                <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>
+                  {isSubscribed ? (activeConsumer === 'consumer2' ? '⏳ Обработка...' : '⏸ Ожидание') : '🔴 Не подписан'}
+                </small>
+                {status === 'consuming' && activeConsumer === 'consumer2' && (
+                  <span style={{ display: 'inline-block', marginTop: '5px', fontSize: '1.2rem' }}>📦</span>
+                )}
+              </div>
+            </div>
           </div>
 
-          {/* Брокер (RabbitMQ) */}
-          <div style={{ ...nodeCardStyle(colors.broker, false, false), transform: (status === 'publishing' || status === 'queued' || status === 'consuming') ? 'scale(1.05)' : 'scale(1)' }}>
-            <strong>RabbitMQ</strong>
-            <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>Брокер</small>
+          <div style={logPanelStyle}>
+            <div style={{ fontWeight: 'bold', marginBottom: '10px', borderBottom: '1px solid #ccc', paddingBottom: '5px', fontSize: isMobile ? '0.85rem' : '1rem' }}>
+              📝 Журнал событий:
+            </div>
+            {logs.length === 0 ? (
+              <div style={{ color: '#95a5a6', fontSize: isMobile ? '0.8rem' : '0.9rem' }}>Нет событий...</div>
+            ) : (
+              logs.map(log => (
+                <div key={log.id} className="log-entry" style={{ 
+                  marginBottom: '5px', 
+                  color: log.type === 'error' ? '#c0392b' : log.type === 'success' ? '#27ae60' : log.type === 'warning' ? '#f39c12' : '#2c3e50',
+                  fontSize: isMobile ? '0.7rem' : '0.85rem',
+                  lineHeight: '1.4'
+                }}>
+                  <span style={{ opacity: 0.6, fontSize: isMobile ? '0.65rem' : '0.75rem' }}>[{log.timestamp}]</span> {log.message}
+                </div>
+              ))
+            )}
           </div>
 
-          {/* Очередь - на мобильных показываем отдельно */}
-          {!isMobile && (
-            <div style={{ ...nodeCardStyle(colors.queue, false, false), backgroundColor: colors.queue }}>
-              <strong>Очередь</strong>
-              <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>Queue</small>
+          <div style={buttonGroupStyle}>
+            <button 
+              onClick={handleStart} 
+              disabled={status !== 'idle'}
+              style={buttonStyle(status === 'idle')}
+            >
+              ▶ Старт симуляции
+            </button>
+            
+            <button 
+              onClick={resetSimulation} 
+              disabled={false}
+              style={buttonStyle(true)}
+            >
+              🔄 Сброс
+            </button>
+          </div>
+
+          {isMobile && (
+            <div style={{ 
+              marginTop: '15px', 
+              padding: '10px', 
+              backgroundColor: '#f0f0f0', 
+              borderRadius: '6px',
+              fontSize: '0.75rem',
+              textAlign: 'center',
+              color: '#666'
+            }}>
+              💡 Сообщения распределяются по очереди между потребителями (Round-Robin)
             </div>
           )}
         </div>
-
-        {/* Очередь для мобильных устройств */}
-        {isMobile && (
-          <div style={queueContainerStyle}>
-            <div style={{ fontSize: '0.8rem', fontWeight: 'bold', color: colors.queue, marginBottom: '5px' }}>
-              📋 Очередь сообщений ({queueItems.length})
-            </div>
-            {queueItems.length === 0 ? (
-              <div style={{ fontStyle: 'italic', color: '#7f8c8d', textAlign: 'center', fontSize: '0.8rem' }}>
-                Очередь пуста
-              </div>
-            ) : (
-              queueItems.map((item) => (
-                <div key={item.id} style={queueItemStyle(item)}>
-                  <span className="message-content">{item.content}</span>
-                  {item.status === 'processing' && (
-                    <span style={{ fontSize: '0.7rem', opacity: 0.9, marginLeft: '8px' }}>
-                      {item.consumerId === 'consumer1' ? '🟢 P1' : '🔴 P2'}
-                    </span>
-                  )}
-                </div>
-              ))
-            )}
-          </div>
-        )}
-
-        {/* Не мобильные: очередь отдельно */}
-        {!isMobile && (
-          <div style={queueContainerStyle}>
-            <div style={{ fontSize: '0.9rem', fontWeight: 'bold', color: colors.queue, marginBottom: '5px' }}>
-              📋 Очередь сообщений ({queueItems.length})
-            </div>
-            {queueItems.length === 0 ? (
-              <div style={{ fontStyle: 'italic', color: '#7f8c8d', textAlign: 'center' }}>Очередь пуста</div>
-            ) : (
-              queueItems.map((item) => (
-                <div key={item.id} style={queueItemStyle(item)}>
-                  <span>{item.content}</span>
-                  {item.status === 'processing' && (
-                    <span style={{ fontSize: '0.8rem', opacity: 0.9 }}>
-                      {item.consumerId === 'consumer1' ? '🟢 P1' : '🔴 P2'}
-                    </span>
-                  )}
-                </div>
-              ))
-            )}
-          </div>
-        )}
-
-        {/* Потребители */}
-        <div style={consumersContainerStyle}>
-          {/* Потребитель 1 */}
-          <div style={{ ...consumerCardStyle(colors.consumer1, activeConsumer === 'consumer1', isSubscribed ? 1 : 0.5) }}>
-            <strong>Потребитель 1</strong>
-            <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>
-              {isSubscribed ? (activeConsumer === 'consumer1' ? '⏳ Обработка...' : '⏸ Ожидание') : '🔴 Не подписан'}
-            </small>
-            {status === 'consuming' && activeConsumer === 'consumer1' && (
-              <span style={{ display: 'inline-block', marginTop: '5px', fontSize: '1.2rem' }}>📦</span>
-            )}
-          </div>
-
-          {/* Потребитель 2 */}
-          <div style={{ ...consumerCardStyle(colors.consumer2, activeConsumer === 'consumer2', isSubscribed ? 1 : 0.5) }}>
-            <strong>Потребитель 2</strong>
-            <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem' }}>
-              {isSubscribed ? (activeConsumer === 'consumer2' ? '⏳ Обработка...' : '⏸ Ожидание') : '🔴 Не подписан'}
-            </small>
-            {status === 'consuming' && activeConsumer === 'consumer2' && (
-              <span style={{ display: 'inline-block', marginTop: '5px', fontSize: '1.2rem' }}>📦</span>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {/* Панель логов */}
-      <div style={logPanelStyle}>
-        <div style={{ fontWeight: 'bold', marginBottom: '10px', borderBottom: '1px solid #ccc', paddingBottom: '5px', fontSize: isMobile ? '0.85rem' : '1rem' }}>
-          📝 Журнал событий:
-        </div>
-        {logs.length === 0 ? (
-          <div style={{ color: '#95a5a6', fontSize: isMobile ? '0.8rem' : '0.9rem' }}>Нет событий...</div>
-        ) : (
-          logs.map(log => (
-            <div key={log.id} className="log-entry" style={{ 
-              marginBottom: '5px', 
-              color: log.type === 'error' ? '#c0392b' : log.type === 'success' ? '#27ae60' : log.type === 'warning' ? '#f39c12' : '#2c3e50',
-              fontSize: isMobile ? '0.7rem' : '0.85rem',
-              lineHeight: '1.4'
-            }}>
-              <span style={{ opacity: 0.6, fontSize: isMobile ? '0.65rem' : '0.75rem' }}>[{log.timestamp}]</span> {log.message}
-            </div>
-          ))
-        )}
-      </div>
-
-      {/* Кнопки управления */}
-      <div style={buttonGroupStyle}>
-        <button 
-          onClick={handleStart} 
-          disabled={status !== 'idle'}
-          style={buttonStyle(status === 'idle')}
-        >
-          ▶ Старт симуляции
-        </button>
-        
-        <button 
-          onClick={resetSimulation} 
-          disabled={false}
-          style={buttonStyle(true)}
-        >
-          🔄 Сброс
-        </button>
-      </div>
-
-      {/* Информация о текущем состоянии для мобильных */}
-      {isMobile && (
-        <div style={{ 
-          marginTop: '15px', 
-          padding: '10px', 
-          backgroundColor: '#f0f0f0', 
-          borderRadius: '6px',
-          fontSize: '0.75rem',
-          textAlign: 'center',
-          color: '#666'
-        }}>
-          💡 Сообщения распределяются по очереди между потребителями (Round-Robin)
-        </div>
       )}
-    </div>
+    </BrowserOnly>
   );
 };
 

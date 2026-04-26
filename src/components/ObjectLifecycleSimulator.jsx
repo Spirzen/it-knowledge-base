@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const ObjectLifecycleSimulator = () => {
   const [step, setStep] = useState(0);
@@ -307,110 +308,108 @@ const ObjectLifecycleSimulator = () => {
   const responsiveStyles = getResponsiveStyles();
 
   return (
-    <div style={responsiveStyles.container}>
-      <h3 style={responsiveStyles.header}>Визуализатор Жизненного Цикла Объекта</h3>
-      
-      {/* Индикатор прогресса */}
-      <div style={responsiveStyles.progressLine}>
-        <div style={{...responsiveStyles.progressBar, width: `${(step / 32) * 100}%`}}></div>
-      </div>
-      <div style={responsiveStyles.stepInfo}>
-        Шаг {step} из 32
-      </div>
-
-      <div style={responsiveStyles.stageArea}>
-        {/* Стек */}
-        <div style={{...responsiveStyles.memoryBlock, ...responsiveStyles.stackBlock}}>
-          <div style={responsiveStyles.blockTitle}>Стек (Stack)</div>
-          <div style={{fontSize: isMobile ? '10px' : '12px', color: '#555'}}>
-            Хранит ссылки и локальные переменные.
-          </div>
-          <hr style={{border: '0', borderTop: '1px solid #bbdefb', margin: '8px 0'}} />
+    <BrowserOnly>
+      {() => (
+        <div style={responsiveStyles.container}>
+          <h3 style={responsiveStyles.header}>Визуализатор Жизненного Цикла Объекта</h3>
           
-          {stackFrame.variableName ? (
-            <div style={{
-              background: '#fff', 
-              padding: isMobile ? '6px' : '8px', 
-              borderRadius: '4px', 
-              border: '1px solid #2196F3',
-              boxShadow: '0 2px 4px rgba(33,150,243,0.2)'
-            }}>
-              <div style={{fontWeight: 'bold', color: '#1565C0', fontSize: isMobile ? '12px' : '14px'}}>{stackFrame.variableName}</div>
-              <div style={{fontSize: isMobile ? '9px' : '11px', color: '#555'}}>Тип: {stackFrame.type}</div>
-              <div style={{fontSize: isMobile ? '9px' : '11px', color: '#555'}}>Значение: <code>{stackFrame.value}</code></div>
+          <div style={responsiveStyles.progressLine}>
+            <div style={{...responsiveStyles.progressBar, width: `${(step / 32) * 100}%`}}></div>
+          </div>
+          <div style={responsiveStyles.stepInfo}>
+            Шаг {step} из 32
+          </div>
+
+          <div style={responsiveStyles.stageArea}>
+            <div style={{...responsiveStyles.memoryBlock, ...responsiveStyles.stackBlock}}>
+              <div style={responsiveStyles.blockTitle}>Стек (Stack)</div>
+              <div style={{fontSize: isMobile ? '10px' : '12px', color: '#555'}}>
+                Хранит ссылки и локальные переменные.
+              </div>
+              <hr style={{border: '0', borderTop: '1px solid #bbdefb', margin: '8px 0'}} />
+              
+              {stackFrame.variableName ? (
+                <div style={{
+                  background: '#fff', 
+                  padding: isMobile ? '6px' : '8px', 
+                  borderRadius: '4px', 
+                  border: '1px solid #2196F3',
+                  boxShadow: '0 2px 4px rgba(33,150,243,0.2)'
+                }}>
+                  <div style={{fontWeight: 'bold', color: '#1565C0', fontSize: isMobile ? '12px' : '14px'}}>{stackFrame.variableName}</div>
+                  <div style={{fontSize: isMobile ? '9px' : '11px', color: '#555'}}>Тип: {stackFrame.type}</div>
+                  <div style={{fontSize: isMobile ? '9px' : '11px', color: '#555'}}>Значение: <code>{stackFrame.value}</code></div>
+                </div>
+              ) : (
+                <div style={{color: '#90caf9', fontStyle: 'italic', fontSize: isMobile ? '10px' : '12px'}}>Ссылка не объявлена</div>
+              )}
             </div>
-          ) : (
-            <div style={{color: '#90caf9', fontStyle: 'italic', fontSize: isMobile ? '10px' : '12px'}}>Ссылка не объявлена</div>
-          )}
-        </div>
 
-        {/* Куча */}
-        <div style={{...responsiveStyles.memoryBlock, ...responsiveStyles.heapBlock}}>
-          <div style={responsiveStyles.blockTitle}>Куча (Heap)</div>
-          <div style={{fontSize: isMobile ? '10px' : '12px', color: '#555'}}>
-            Хранит сами объекты. Управление сборщиком мусора.
-          </div>
-          <hr style={{border: '0', borderTop: '1px solid #ffe0b2', margin: '8px 0'}} />
-          
-          <div style={responsiveStyles.heapContent}>
-            {renderHeapObjects()}
-          </div>
-          
-          {gcPhase !== 'idle' && (
-            <div style={{
-              marginTop: '8px', 
-              padding: isMobile ? '4px' : '5px', 
-              background: '#fff8e1', 
-              borderRadius: '4px', 
-              fontSize: isMobile ? '9px' : '11px',
-              color: '#f57f17',
-              textAlign: 'center',
-              border: '1px solid #ffe0b2'
-            }}>
-              ⚙️ GC работает: {gcPhase === 'marking' ? 'Пометка живых' : 'Очистка мертвых'}
+            <div style={{...responsiveStyles.memoryBlock, ...responsiveStyles.heapBlock}}>
+              <div style={responsiveStyles.blockTitle}>Куча (Heap)</div>
+              <div style={{fontSize: isMobile ? '10px' : '12px', color: '#555'}}>
+                Хранит сами объекты. Управление сборщиком мусора.
+              </div>
+              <hr style={{border: '0', borderTop: '1px solid #ffe0b2', margin: '8px 0'}} />
+              
+              <div style={responsiveStyles.heapContent}>
+                {renderHeapObjects()}
+              </div>
+              
+              {gcPhase !== 'idle' && (
+                <div style={{
+                  marginTop: '8px', 
+                  padding: isMobile ? '4px' : '5px', 
+                  background: '#fff8e1', 
+                  borderRadius: '4px', 
+                  fontSize: isMobile ? '9px' : '11px',
+                  color: '#f57f17',
+                  textAlign: 'center',
+                  border: '1px solid #ffe0b2'
+                }}>
+                  ⚙️ GC работает: {gcPhase === 'marking' ? 'Пометка живых' : 'Очистка мертвых'}
+                </div>
+              )}
             </div>
-          )}
+          </div>
+
+          <div style={responsiveStyles.controls}>
+            <button 
+              style={responsiveStyles.button} 
+              onClick={handleNext} 
+              disabled={step >= 32 || isAnimating}
+            >
+              {step >= 32 ? 'Завершено' : 'Следующий этап'}
+            </button>
+            
+            <button 
+              style={{...responsiveStyles.button, ...responsiveStyles.resetButton}} 
+              onClick={resetSimulation}
+              disabled={isAnimating}
+            >
+              Сброс
+            </button>
+          </div>
+
+          <div style={responsiveStyles.descriptionBlock}>
+            <strong style={{color: '#333', fontSize: isMobile ? '14px' : '16px'}}>{currentStepData.title}</strong>
+            <p style={{margin: '5px 0 0 0', color: '#666', lineHeight: '1.5', fontSize: isMobile ? '12px' : '14px'}}>
+              {currentStepData.desc}
+            </p>
+          </div>
+
+          <div style={responsiveStyles.logArea}>
+            {logs.map((log, idx) => (
+              <div key={idx}>{log}</div>
+            ))}
+          </div>
+          
+          <div style={{fontSize: isMobile ? '9px' : '11px', color: '#999', textAlign: 'center', marginTop: '10px'}}>
+            Нажмите «Следующий этап», чтобы пройти путь от проектирования до очистки памяти.
+          </div>
         </div>
-      </div>
-
-      {/* Панель управления */}
-      <div style={responsiveStyles.controls}>
-        <button 
-          style={responsiveStyles.button} 
-          onClick={handleNext} 
-          disabled={step >= 32 || isAnimating}
-        >
-          {step >= 32 ? 'Завершено' : 'Следующий этап'}
-        </button>
-        
-        <button 
-          style={{...responsiveStyles.button, ...responsiveStyles.resetButton}} 
-          onClick={resetSimulation}
-          disabled={isAnimating}
-        >
-          Сброс
-        </button>
-      </div>
-
-      {/* Описание текущего этапа */}
-      <div style={responsiveStyles.descriptionBlock}>
-        <strong style={{color: '#333', fontSize: isMobile ? '14px' : '16px'}}>{currentStepData.title}</strong>
-        <p style={{margin: '5px 0 0 0', color: '#666', lineHeight: '1.5', fontSize: isMobile ? '12px' : '14px'}}>
-          {currentStepData.desc}
-        </p>
-      </div>
-
-      {/* Логи */}
-      <div style={responsiveStyles.logArea}>
-        {logs.map((log, idx) => (
-          <div key={idx}>{log}</div>
-        ))}
-      </div>
-      
-      <div style={{fontSize: isMobile ? '9px' : '11px', color: '#999', textAlign: 'center', marginTop: '10px'}}>
-        Нажмите «Следующий этап», чтобы пройти путь от проектирования до очистки памяти.
-      </div>
-    </div>
+      )}
+    </BrowserOnly>
   );
 };
 

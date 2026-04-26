@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const DebuggerEmulator = () => {
   const initialCode = `1  function calculateSum(a, b) {
@@ -619,146 +620,150 @@ const DebuggerEmulator = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.toolbar}>
-        <button 
-          onClick={startDebug} 
-          style={{ ...styles.button, ...styles.buttonPrimary }}
-          onTouchStart={(e) => e.preventDefault()}
-        >
-          ▶ Start
-        </button>
-        <button 
-          onClick={() => step('into')} 
-          disabled={!isPaused && isRunning} 
-          style={{ ...styles.button, ...styles.buttonSecondary }}
-        >
-          ⬇ Step
-        </button>
-        <button 
-          onClick={() => step('over')} 
-          disabled={!isPaused && isRunning} 
-          style={{ ...styles.button, ...styles.buttonSecondary }}
-        >
-          ➡ Over
-        </button>
-        <button 
-          onClick={() => step('out')} 
-          disabled={!isPaused && isRunning} 
-          style={{ ...styles.button, ...styles.buttonSecondary }}
-        >
-          ⬆ Out
-        </button>
-        <button 
-          onClick={continueExecution} 
-          disabled={!isPaused && isRunning} 
-          style={{ ...styles.button, ...styles.buttonSuccess }}
-        >
-          ▶ Cont
-        </button>
-        <button 
-          onClick={restartDebug} 
-          style={{ ...styles.button, ...styles.buttonWarning }}
-        >
-          🔄 Restart
-        </button>
-      </div>
-      
-      <div style={styles.mainLayout}>
-        <div style={styles.codeArea}>
-          <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
-            {codeLines.map((line, index) => {
-              const lineNumber = index + 1;
-              const hasBreakpoint = breakpoints.has(lineNumber);
-              const isCurrentLine = currentLine === lineNumber;
-              
-              return (
-                <div
-                  key={lineNumber}
-                  style={{
-                    ...styles.codeLine,
-                    ...(isCurrentLine ? styles.currentLineIndicator : {}),
-                  }}
-                  onClick={() => toggleBreakpoint(lineNumber)}
-                  onTouchEnd={() => toggleBreakpoint(lineNumber)}
-                >
-                  {hasBreakpoint && <span style={styles.breakpoint}>🔴</span>}
-                  <span style={{ color: '#858585', userSelect: 'none' }}>{lineNumber.toString().padStart(3, ' ')} </span>
-                  <span style={{ color: '#d4d4d4' }}>{line}</span>
-                </div>
-              );
-            })}
+    <BrowserOnly>
+      {() => (
+        <div style={styles.container}>
+          <div style={styles.toolbar}>
+            <button 
+              onClick={startDebug} 
+              style={{ ...styles.button, ...styles.buttonPrimary }}
+              onTouchStart={(e) => e.preventDefault()}
+            >
+              ▶ Start
+            </button>
+            <button 
+              onClick={() => step('into')} 
+              disabled={!isPaused && isRunning} 
+              style={{ ...styles.button, ...styles.buttonSecondary }}
+            >
+              ⬇ Step
+            </button>
+            <button 
+              onClick={() => step('over')} 
+              disabled={!isPaused && isRunning} 
+              style={{ ...styles.button, ...styles.buttonSecondary }}
+            >
+              ➡ Over
+            </button>
+            <button 
+              onClick={() => step('out')} 
+              disabled={!isPaused && isRunning} 
+              style={{ ...styles.button, ...styles.buttonSecondary }}
+            >
+              ⬆ Out
+            </button>
+            <button 
+              onClick={continueExecution} 
+              disabled={!isPaused && isRunning} 
+              style={{ ...styles.button, ...styles.buttonSuccess }}
+            >
+              ▶ Cont
+            </button>
+            <button 
+              onClick={restartDebug} 
+              style={{ ...styles.button, ...styles.buttonWarning }}
+            >
+              🔄 Restart
+            </button>
           </div>
-        </div>
-        
-        <div style={styles.sidebar}>
-          <button 
-            style={styles.mobileMenuButton}
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? '▼ Скрыть информацию' : '▲ Показать информацию'}
-          </button>
           
-          <div style={styles.sidebarContent}>
-            <div style={styles.section}>
-              <div style={styles.sectionTitle}>🔧 Переменные</div>
-              {Object.keys(variables).length === 0 ? (
-                <div style={{ color: '#858585', fontSize: '11px' }}>Нет активных переменных</div>
-              ) : (
-                Object.entries(variables).map(([name, value]) => (
-                  <div key={name} style={styles.variableItem}>
-                    <span style={styles.variableName}>{name}</span> = <span style={styles.variableValue}>{JSON.stringify(value)}</span>
-                  </div>
-                ))
-              )}
-            </div>
-            
-            <div style={styles.section}>
-              <div style={styles.sectionTitle}>📞 Стек вызовов</div>
-              {callStack.length === 0 ? (
-                <div style={{ color: '#858585', fontSize: '11px' }}>Стек пуст</div>
-              ) : (
-                callStack.map((frame, idx) => (
-                  <div key={idx} style={{ ...styles.callStackItem, ...(idx === callStack.length - 1 ? { color: '#4ec9b0', fontWeight: 'bold' } : {}) }}>
-                    {frame.function} {idx === callStack.length - 1 && '◀'}
-                  </div>
-                ))
-              )}
-            </div>
-            
-            <div style={styles.section}>
-              <div style={styles.sectionTitle}>Статус</div>
-              <div style={{ fontSize: '11px', color: isPaused ? '#4ec9b0' : '#858585' }}>
-                {isRunning ? (isPaused ? '⏸ Приостановлено' : '▶ Выполняется') : '⏹ Остановлено'}
+          <div style={styles.mainLayout}>
+            <div style={styles.codeArea}>
+              <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+                {codeLines.map((line, index) => {
+                  const lineNumber = index + 1;
+                  const hasBreakpoint = breakpoints.has(lineNumber);
+                  const isCurrentLine = currentLine === lineNumber;
+                  
+                  return (
+                    <div
+                      key={lineNumber}
+                      style={{
+                        ...styles.codeLine,
+                        ...(isCurrentLine ? styles.currentLineIndicator : {}),
+                      }}
+                      onClick={() => toggleBreakpoint(lineNumber)}
+                      onTouchEnd={() => toggleBreakpoint(lineNumber)}
+                    >
+                      {hasBreakpoint && <span style={styles.breakpoint}>🔴</span>}
+                      <span style={{ color: '#858585', userSelect: 'none' }}>{lineNumber.toString().padStart(3, ' ')} </span>
+                      <span style={{ color: '#d4d4d4' }}>{line}</span>
+                    </div>
+                  );
+                })}
               </div>
-              {currentLine && (
-                <div style={{ fontSize: '10px', color: '#858585', marginTop: '6px' }}>
-                  Строка: {currentLine}
+            </div>
+            
+            <div style={styles.sidebar}>
+              <button 
+                style={styles.mobileMenuButton}
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                {mobileMenuOpen ? '▼ Скрыть информацию' : '▲ Показать информацию'}
+              </button>
+              
+              <div style={styles.sidebarContent}>
+                <div style={styles.section}>
+                  <div style={styles.sectionTitle}>🔧 Переменные</div>
+                  {Object.keys(variables).length === 0 ? (
+                    <div style={{ color: '#858585', fontSize: '11px' }}>Нет активных переменных</div>
+                  ) : (
+                    Object.entries(variables).map(([name, value]) => (
+                      <div key={name} style={styles.variableItem}>
+                        <span style={styles.variableName}>{name}</span> = <span style={styles.variableValue}>{JSON.stringify(value)}</span>
+                      </div>
+                    ))
+                  )}
                 </div>
-              )}
+                
+                <div style={styles.section}>
+                  <div style={styles.sectionTitle}>📞 Стек вызовов</div>
+                  {callStack.length === 0 ? (
+                    <div style={{ color: '#858585', fontSize: '11px' }}>Стек пуст</div>
+                  ) : (
+                    callStack.map((frame, idx) => (
+                      <div key={idx} style={{ ...styles.callStackItem, ...(idx === callStack.length - 1 ? { color: '#4ec9b0', fontWeight: 'bold' } : {}) }}>
+                        {frame.function} {idx === callStack.length - 1 && '◀'}
+                      </div>
+                    ))
+                  )}
+                </div>
+                
+                <div style={styles.section}>
+                  <div style={styles.sectionTitle}>Статус</div>
+                  <div style={{ fontSize: '11px', color: isPaused ? '#4ec9b0' : '#858585' }}>
+                    {isRunning ? (isPaused ? '⏸ Приостановлено' : '▶ Выполняется') : '⏹ Остановлено'}
+                  </div>
+                  {currentLine && (
+                    <div style={{ fontSize: '10px', color: '#858585', marginTop: '6px' }}>
+                      Строка: {currentLine}
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
           </div>
+          
+          <div style={styles.outputArea}>
+            <div style={styles.sectionTitle}>Вывод программы</div>
+            {output.length === 0 ? (
+              <div style={{ color: '#858585', fontSize: '11px' }}>Нажмите Start для начала отладки</div>
+            ) : (
+              output.map((item, idx) => (
+                <div key={idx} style={{ ...styles.outputLine, color: getOutputColor(item.type) }}>
+                  [{item.timestamp}] {item.text}
+                </div>
+              ))
+            )}
+          </div>
+          
+          <div style={styles.tip}>
+            💡 <strong>Подсказка:</strong> Кликните по номеру строки, чтобы установить/снять точку останова (🔴). 
+            Точки останова уже установлены на строках 14, 15, 16 для демонстрации.
+          </div>
         </div>
-      </div>
-      
-      <div style={styles.outputArea}>
-        <div style={styles.sectionTitle}>Вывод программы</div>
-        {output.length === 0 ? (
-          <div style={{ color: '#858585', fontSize: '11px' }}>Нажмите Start для начала отладки</div>
-        ) : (
-          output.map((item, idx) => (
-            <div key={idx} style={{ ...styles.outputLine, color: getOutputColor(item.type) }}>
-              [{item.timestamp}] {item.text}
-            </div>
-          ))
-        )}
-      </div>
-      
-      <div style={styles.tip}>
-        💡 <strong>Подсказка:</strong> Кликните по номеру строки, чтобы установить/снять точку останова (🔴). 
-        Точки останова уже установлены на строках 14, 15, 16 для демонстрации.
-      </div>
-    </div>
+      )}
+    </BrowserOnly>
   );
 };
 

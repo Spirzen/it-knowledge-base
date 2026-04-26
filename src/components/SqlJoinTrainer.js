@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const usersData = [
   { id: 1, name: 'Иван', age: 25, city_id: 1, salary: 50000 },
@@ -34,12 +35,13 @@ const SqlJoinTrainer = () => {
   const [error, setError] = useState(null);
   const [executedQuery, setExecutedQuery] = useState(null);
   const [activeTab, setActiveTab] = useState('result');
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   React.useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
+    handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -147,8 +149,6 @@ const SqlJoinTrainer = () => {
         const isMainLeft = leftAlias === mainAlias;
         const mainKey = isMainLeft ? leftColumn : rightColumn;
         const joinKey = isMainLeft ? rightColumn : leftColumn;
-        const mainKeyAlias = mainAlias;
-        const joinKeyAlias = joinAlias;
         
         if (joinType === 'INNER JOIN') {
           joinedData = mainData
@@ -355,9 +355,6 @@ const SqlJoinTrainer = () => {
       border: '1px solid #e5e7eb',
       maxWidth: '100%',
       margin: '0 auto',
-      '@media (minWidth: 768px)': {
-        padding: '20px',
-      },
     },
     header: {
       fontSize: '20px',
@@ -366,10 +363,6 @@ const SqlJoinTrainer = () => {
       color: '#111827',
       borderBottom: '2px solid #8b5cf6',
       paddingBottom: '10px',
-      '@media (minWidth: 768px)': {
-        fontSize: '24px',
-        marginBottom: '20px',
-      },
     },
     tabs: {
       display: 'flex',
@@ -378,10 +371,6 @@ const SqlJoinTrainer = () => {
       borderBottom: '1px solid #e5e7eb',
       paddingBottom: '10px',
       flexWrap: 'wrap',
-      '@media (minWidth: 768px)': {
-        gap: '10px',
-        marginBottom: '20px',
-      },
     },
     tab: {
       padding: '6px 12px',
@@ -391,10 +380,6 @@ const SqlJoinTrainer = () => {
       borderRadius: '6px',
       transition: 'all 0.2s',
       border: 'none',
-      '@media (minWidth: 768px)': {
-        padding: '8px 16px',
-        fontSize: '14px',
-      },
     },
     activeTab: {
       backgroundColor: '#8b5cf6',
@@ -409,9 +394,6 @@ const SqlJoinTrainer = () => {
       flexDirection: 'column',
       gap: '10px',
       marginBottom: '20px',
-      '@media (minWidth: 640px)': {
-        flexDirection: 'row',
-      },
     },
     input: {
       flex: '1',
@@ -422,10 +404,6 @@ const SqlJoinTrainer = () => {
       border: '1px solid #d1d5db',
       borderRadius: '6px',
       outline: 'none',
-      '@media (minWidth: 768px)': {
-        padding: '12px',
-        fontSize: '16px',
-      },
     },
     button: {
       width: '100%',
@@ -438,11 +416,6 @@ const SqlJoinTrainer = () => {
       borderRadius: '6px',
       cursor: 'pointer',
       transition: 'background-color 0.2s',
-      '@media (minWidth: 640px)': {
-        width: 'auto',
-        padding: '12px 24px',
-        fontSize: '16px',
-      },
     },
     errorBox: {
       padding: '12px',
@@ -453,11 +426,6 @@ const SqlJoinTrainer = () => {
       marginBottom: '16px',
       fontFamily: 'monospace',
       fontSize: '13px',
-      '@media (minWidth: 768px)': {
-        padding: '15px',
-        marginBottom: '20px',
-        fontSize: '14px',
-      },
     },
     infoBox: {
       padding: '12px',
@@ -467,18 +435,10 @@ const SqlJoinTrainer = () => {
       border: '1px solid #d8b4fe',
       marginBottom: '16px',
       fontSize: '13px',
-      '@media (minWidth: 768px)': {
-        padding: '15px',
-        marginBottom: '20px',
-        fontSize: '14px',
-      },
     },
     tableContainer: {
       overflowX: 'auto',
       marginTop: '16px',
-      '@media (minWidth: 768px)': {
-        marginTop: '20px',
-      },
     },
     tableWrapper: {
       marginBottom: '20px',
@@ -490,9 +450,6 @@ const SqlJoinTrainer = () => {
       marginBottom: '10px',
       paddingLeft: '10px',
       borderLeft: '4px solid #8b5cf6',
-      '@media (minWidth: 768px)': {
-        fontSize: '18px',
-      },
     },
     tableScrollWrapper: {
       overflowX: 'auto',
@@ -514,20 +471,12 @@ const SqlJoinTrainer = () => {
       fontWeight: '600',
       color: '#374151',
       fontSize: '13px',
-      '@media (minWidth: 768px)': {
-        padding: '12px 15px',
-        fontSize: '14px',
-      },
     },
     td: {
       padding: '10px 12px',
       borderBottom: '1px solid #e5e7eb',
       color: '#4b5563',
       fontSize: '13px',
-      '@media (minWidth: 768px)': {
-        padding: '12px 15px',
-        fontSize: '14px',
-      },
     },
     nullValue: {
       color: '#f59e0b',
@@ -544,21 +493,12 @@ const SqlJoinTrainer = () => {
       backgroundColor: '#e5e7eb',
       borderRadius: '6px',
       gap: '10px',
-      '@media (minWidth: 640px)': {
-        flexDirection: 'row',
-        alignItems: 'center',
-        marginBottom: '20px',
-      },
     },
     statsText: {
       fontSize: '13px',
       color: '#374151',
       fontWeight: '500',
       textAlign: 'center',
-      '@media (minWidth: 768px)': {
-        fontSize: '14px',
-        textAlign: 'left',
-      },
     },
     examples: {
       display: 'flex',
@@ -577,10 +517,6 @@ const SqlJoinTrainer = () => {
       borderRadius: '4px',
       cursor: 'pointer',
       transition: 'background-color 0.2s',
-      '@media (minWidth: 768px)': {
-        flex: '0 1 auto',
-        padding: '6px 12px',
-      },
     },
     schema: {
       backgroundColor: '#f3f4f6',
@@ -590,19 +526,11 @@ const SqlJoinTrainer = () => {
       fontSize: '12px',
       fontFamily: 'monospace',
       overflowX: 'auto',
-      '@media (minWidth: 768px)': {
-        padding: '15px',
-        marginTop: '20px',
-        fontSize: '13px',
-      },
     },
     cardGrid: {
       display: 'grid',
       gridTemplateColumns: '1fr',
       gap: '12px',
-      '@media (minWidth: 480px)': {
-        gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-      },
     },
     card: {
       backgroundColor: '#ffffff',
@@ -616,9 +544,6 @@ const SqlJoinTrainer = () => {
       justifyContent: 'space-between',
       padding: '8px 0',
       borderBottom: '1px solid #f3f4f6',
-      ':last-child': {
-        borderBottom: 'none',
-      },
     },
     cardLabel: {
       fontWeight: '600',
@@ -633,223 +558,222 @@ const SqlJoinTrainer = () => {
     },
   };
 
-  const containerStyle = {
-    ...styles.container,
-    '@media (min-width: 768px)': styles.container['@media (minWidth: 768px)'],
-  };
-
   return (
-    <div style={styles.container}>
-      <div style={styles.header}>Тренажёр SQL: JOIN (Объединение таблиц)</div>
-      
-      <div style={styles.statsBar}>
-        <span style={styles.statsText}>
-          Таблицы: users (7 записей), cities (5 записей), orders (7 записей)
-        </span>
-        {result && (
-          <span style={styles.statsText}>
-            Результат: {result.rowCount} записей
-          </span>
-        )}
-      </div>
-      
-      <p style={{ marginBottom: '15px', lineHeight: '1.6', fontSize: isMobile ? '13px' : '16px' }}>
-        Тренажёр поддерживает различные типы JOIN: INNER, LEFT, RIGHT, FULL OUTER и CROSS JOIN.
-      </p>
+    <BrowserOnly>
+      {() => (
+        <div style={styles.container}>
+          <div style={styles.header}>Тренажёр SQL: JOIN (Объединение таблиц)</div>
+          
+          <div style={styles.statsBar}>
+            <span style={styles.statsText}>
+              Таблицы: users (7 записей), cities (5 записей), orders (7 записей)
+            </span>
+            {result && (
+              <span style={styles.statsText}>
+                Результат: {result.rowCount} записей
+              </span>
+            )}
+          </div>
+          
+          <p style={{ marginBottom: '15px', lineHeight: '1.6', fontSize: isMobile ? '13px' : '16px' }}>
+            Тренажёр поддерживает различные типы JOIN: INNER, LEFT, RIGHT, FULL OUTER и CROSS JOIN.
+          </p>
 
-      <div style={styles.tabs}>
-        <button 
-          onClick={() => setActiveTab('result')}
-          style={{ ...styles.tab, ...(activeTab === 'result' ? styles.activeTab : styles.inactiveTab) }}
-        >
-          Результат
-        </button>
-        <button 
-          onClick={() => setActiveTab('users')}
-          style={{ ...styles.tab, ...(activeTab === 'users' ? styles.activeTab : styles.inactiveTab) }}
-        >
-          users
-        </button>
-        <button 
-          onClick={() => setActiveTab('cities')}
-          style={{ ...styles.tab, ...(activeTab === 'cities' ? styles.activeTab : styles.inactiveTab) }}
-        >
-          cities
-        </button>
-        <button 
-          onClick={() => setActiveTab('orders')}
-          style={{ ...styles.tab, ...(activeTab === 'orders' ? styles.activeTab : styles.inactiveTab) }}
-        >
-          orders
-        </button>
-      </div>
-
-      {activeTab === 'result' && (
-        <>
-          <div style={styles.inputGroup}>
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              style={styles.input}
-              placeholder="SELECT u.name, c.name as city FROM users u INNER JOIN cities c ON u.city_id = c.id"
-            />
-            <button onClick={executeQuery} style={styles.button}>
-              Выполнить JOIN
+          <div style={styles.tabs}>
+            <button 
+              onClick={() => setActiveTab('result')}
+              style={{ ...styles.tab, ...(activeTab === 'result' ? styles.activeTab : styles.inactiveTab) }}
+            >
+              Результат
+            </button>
+            <button 
+              onClick={() => setActiveTab('users')}
+              style={{ ...styles.tab, ...(activeTab === 'users' ? styles.activeTab : styles.inactiveTab) }}
+            >
+              users
+            </button>
+            <button 
+              onClick={() => setActiveTab('cities')}
+              style={{ ...styles.tab, ...(activeTab === 'cities' ? styles.activeTab : styles.inactiveTab) }}
+            >
+              cities
+            </button>
+            <button 
+              onClick={() => setActiveTab('orders')}
+              style={{ ...styles.tab, ...(activeTab === 'orders' ? styles.activeTab : styles.inactiveTab) }}
+            >
+              orders
             </button>
           </div>
 
-          {executedQuery && (
-            <div style={styles.infoBox}>
-              <strong>Выполнен {executedQuery.type}</strong><br />
-              Таблицы: {executedQuery.mainTable} ({executedQuery.mainAlias}) ⟷ {executedQuery.joinTable} ({executedQuery.joinAlias})
-            </div>
-          )}
+          {activeTab === 'result' && (
+            <>
+              <div style={styles.inputGroup}>
+                <input
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  style={styles.input}
+                  placeholder="SELECT u.name, c.name as city FROM users u INNER JOIN cities c ON u.city_id = c.id"
+                />
+                <button onClick={executeQuery} style={styles.button}>
+                  Выполнить JOIN
+                </button>
+              </div>
 
-          {error && (
-            <div style={styles.errorBox}>
-              <strong>❌ Ошибка:</strong> {error}
-            </div>
-          )}
+              {executedQuery && (
+                <div style={styles.infoBox}>
+                  <strong>Выполнен {executedQuery.type}</strong><br />
+                  Таблицы: {executedQuery.mainTable} ({executedQuery.mainAlias}) ⟷ {executedQuery.joinTable} ({executedQuery.joinAlias})
+                </div>
+              )}
 
-          <div style={styles.tableContainer}>
-            <h3 style={{ marginBottom: '10px', fontSize: isMobile ? '16px' : '18px', color: '#374151' }}>
-              Результат запроса:
-            </h3>
-            {result && result.rows.length > 0 ? (
-              isMobile ? (
-                <div style={styles.cardGrid}>
-                  {result.rows.map((row, idx) => (
-                    <div key={idx} style={styles.card}>
-                      {result.columns.map((col) => (
-                        <div key={col} style={styles.cardRow}>
-                          <span style={styles.cardLabel}>{col}:</span>
-                          <span style={styles.cardValue}>
-                            {row[col] !== null && row[col] !== undefined ? (
-                              String(row[col])
-                            ) : (
-                              <span style={styles.nullValue}>NULL</span>
-                            )}
-                          </span>
+              {error && (
+                <div style={styles.errorBox}>
+                  <strong>❌ Ошибка:</strong> {error}
+                </div>
+              )}
+
+              <div style={styles.tableContainer}>
+                <h3 style={{ marginBottom: '10px', fontSize: isMobile ? '16px' : '18px', color: '#374151' }}>
+                  Результат запроса:
+                </h3>
+                {result && result.rows.length > 0 ? (
+                  isMobile ? (
+                    <div style={styles.cardGrid}>
+                      {result.rows.map((row, idx) => (
+                        <div key={idx} style={styles.card}>
+                          {result.columns.map((col) => (
+                            <div key={col} style={styles.cardRow}>
+                              <span style={styles.cardLabel}>{col}:</span>
+                              <span style={styles.cardValue}>
+                                {row[col] !== null && row[col] !== undefined ? (
+                                  String(row[col])
+                                ) : (
+                                  <span style={styles.nullValue}>NULL</span>
+                                )}
+                              </span>
+                            </div>
+                          ))}
                         </div>
                       ))}
                     </div>
-                  ))}
-                </div>
-              ) : (
-                <div style={styles.tableScrollWrapper}>
-                  <table style={styles.table}>
-                    <thead>
-                      <tr>
-                        {result.columns.map((col, idx) => (
-                          <th key={idx} style={styles.th}>{col}</th>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {result.rows.map((row, idx) => (
-                        <tr key={idx}>
-                          {result.columns.map((col, colIdx) => (
-                            <td key={colIdx} style={styles.td}>
-                              {row[col] !== null && row[col] !== undefined ? (
-                                String(row[col])
-                              ) : (
-                                <span style={styles.nullValue}>NULL</span>
-                              )}
-                            </td>
+                  ) : (
+                    <div style={styles.tableScrollWrapper}>
+                      <table style={styles.table}>
+                        <thead>
+                          <tr>
+                            {result.columns.map((col, idx) => (
+                              <th key={idx} style={styles.th}>{col}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {result.rows.map((row, idx) => (
+                            <tr key={idx}>
+                              {result.columns.map((col, colIdx) => (
+                                <td key={colIdx} style={styles.td}>
+                                  {row[col] !== null && row[col] !== undefined ? (
+                                    String(row[col])
+                                  ) : (
+                                    <span style={styles.nullValue}>NULL</span>
+                                  )}
+                                </td>
+                              ))}
+                            </tr>
                           ))}
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              )
-            ) : result && result.rows.length === 0 ? (
-              <div style={{ textAlign: 'center', padding: '40px', color: '#6b7280' }}>
-                Запрос не вернул ни одной записи.
+                        </tbody>
+                      </table>
+                    </div>
+                  )
+                ) : result && result.rows.length === 0 ? (
+                  <div style={{ textAlign: 'center', padding: '40px', color: '#6b7280' }}>
+                    Запрос не вернул ни одной записи.
+                  </div>
+                ) : (
+                  <div style={{ textAlign: 'center', padding: '40px', color: '#6b7280' }}>
+                    Введите запрос и нажмите "Выполнить JOIN"
+                  </div>
+                )}
               </div>
-            ) : (
-              <div style={{ textAlign: 'center', padding: '40px', color: '#6b7280' }}>
-                Введите запрос и нажмите "Выполнить JOIN"
-              </div>
-            )}
+            </>
+          )}
+
+          {activeTab === 'users' && renderTable(
+            usersData, 
+            'Таблица users - информация о пользователях', 
+            ['id', 'name', 'age', 'city_id', 'salary'],
+            '💡 Обратите внимание: у Ольги (id=6) city_id = NULL (она не указала город)'
+          )}
+
+          {activeTab === 'cities' && renderTable(
+            citiesData, 
+            'Таблица cities - информация о городах', 
+            ['id', 'name', 'population', 'region'],
+            '💡 Обратите внимание: у Казани (id=5) нет пользователей'
+          )}
+
+          {activeTab === 'orders' && renderTable(
+            ordersData, 
+            'Таблица orders - заказы пользователей', 
+            ['id', 'user_id', 'product', 'amount', 'date'],
+            '💡 user_id ссылается на id в таблице users'
+          )}
+
+          <div style={{ marginTop: '20px' }}>
+            <strong>Быстрые примеры:</strong>
+            <div style={styles.examples}>
+              <button 
+                onClick={() => loadExample("SELECT u.name, c.name as city FROM users u INNER JOIN cities c ON u.city_id = c.id")}
+                style={styles.exampleButton}
+              >
+                INNER
+              </button>
+              <button 
+                onClick={() => loadExample("SELECT u.name, c.name as city FROM users u LEFT JOIN cities c ON u.city_id = c.id")}
+                style={styles.exampleButton}
+              >
+                LEFT
+              </button>
+              <button 
+                onClick={() => loadExample("SELECT u.name, c.name as city FROM users u RIGHT JOIN cities c ON u.city_id = c.id")}
+                style={styles.exampleButton}
+              >
+                RIGHT
+              </button>
+              <button 
+                onClick={() => loadExample("SELECT u.name, c.name as city FROM users u FULL OUTER JOIN cities c ON u.city_id = c.id")}
+                style={styles.exampleButton}
+              >
+                FULL
+              </button>
+              <button 
+                onClick={() => loadExample("SELECT u.name, c.name as city FROM users u CROSS JOIN cities c")}
+                style={styles.exampleButton}
+              >
+                CROSS
+              </button>
+              <button 
+                onClick={() => loadExample("SELECT u.name, o.product, o.amount FROM users u INNER JOIN orders o ON u.id = o.user_id")}
+                style={styles.exampleButton}
+              >
+                +orders
+              </button>
+            </div>
           </div>
-        </>
-      )}
 
-      {activeTab === 'users' && renderTable(
-        usersData, 
-        'Таблица users - информация о пользователях', 
-        ['id', 'name', 'age', 'city_id', 'salary'],
-        '💡 Обратите внимание: у Ольги (id=6) city_id = NULL (она не указала город)'
-      )}
-
-      {activeTab === 'cities' && renderTable(
-        citiesData, 
-        'Таблица cities - информация о городах', 
-        ['id', 'name', 'population', 'region'],
-        '💡 Обратите внимание: у Казани (id=5) нет пользователей'
-      )}
-
-      {activeTab === 'orders' && renderTable(
-        ordersData, 
-        'Таблица orders - заказы пользователей', 
-        ['id', 'user_id', 'product', 'amount', 'date'],
-        '💡 user_id ссылается на id в таблице users'
-      )}
-
-      <div style={{ marginTop: '20px' }}>
-        <strong>Быстрые примеры:</strong>
-        <div style={styles.examples}>
-          <button 
-            onClick={() => loadExample("SELECT u.name, c.name as city FROM users u INNER JOIN cities c ON u.city_id = c.id")}
-            style={styles.exampleButton}
-          >
-            INNER
-          </button>
-          <button 
-            onClick={() => loadExample("SELECT u.name, c.name as city FROM users u LEFT JOIN cities c ON u.city_id = c.id")}
-            style={styles.exampleButton}
-          >
-            LEFT
-          </button>
-          <button 
-            onClick={() => loadExample("SELECT u.name, c.name as city FROM users u RIGHT JOIN cities c ON u.city_id = c.id")}
-            style={styles.exampleButton}
-          >
-            RIGHT
-          </button>
-          <button 
-            onClick={() => loadExample("SELECT u.name, c.name as city FROM users u FULL OUTER JOIN cities c ON u.city_id = c.id")}
-            style={styles.exampleButton}
-          >
-            FULL
-          </button>
-          <button 
-            onClick={() => loadExample("SELECT u.name, c.name as city FROM users u CROSS JOIN cities c")}
-            style={styles.exampleButton}
-          >
-            CROSS
-          </button>
-          <button 
-            onClick={() => loadExample("SELECT u.name, o.product, o.amount FROM users u INNER JOIN orders o ON u.id = o.user_id")}
-            style={styles.exampleButton}
-          >
-            +orders
-          </button>
+          <div style={styles.schema}>
+            <strong>Что вернут разные JOIN (users + cities):</strong><br />
+            <br />
+            <strong>INNER JOIN</strong> → только пользователи с city_id (6 записей: все, кроме Ольги)<br />
+            <strong>LEFT JOIN</strong> → все пользователи (7 записей: у Ольги city = NULL)<br />
+            <strong>RIGHT JOIN</strong> → все города (5 записей: у Казани user = NULL)<br />
+            <strong>FULL OUTER JOIN</strong> → 8 записей (7 users + 1 city без user - Казань)<br />
+            <strong>CROSS JOIN</strong> → 7 × 5 = 35 записей (каждый пользователь с каждым городом)<br />
+          </div>
         </div>
-      </div>
-
-      <div style={styles.schema}>
-        <strong>Что вернут разные JOIN (users + cities):</strong><br />
-        <br />
-        <strong>INNER JOIN</strong> → только пользователи с city_id (6 записей: все, кроме Ольги)<br />
-        <strong>LEFT JOIN</strong> → все пользователи (7 записей: у Ольги city = NULL)<br />
-        <strong>RIGHT JOIN</strong> → все города (5 записей: у Казани user = NULL)<br />
-        <strong>FULL OUTER JOIN</strong> → 8 записей (7 users + 1 city без user - Казань)<br />
-        <strong>CROSS JOIN</strong> → 7 × 5 = 35 записей (каждый пользователь с каждым городом)<br />
-      </div>
-    </div>
+      )}
+    </BrowserOnly>
   );
 };
 

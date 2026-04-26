@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const KafkaSimulation = () => {
   const [status, setStatus] = useState('idle');
   const [logs, setLogs] = useState([]);
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [windowWidth, setWindowWidth] = useState(1200);
   
   const brokersCount = 3;
   const partitionsCount = 3;
@@ -343,191 +344,197 @@ const KafkaSimulation = () => {
     return '#' + color.replace(/^#/, '').replace(/../g, color => ('0'+Math.min(255, Math.max(0, parseInt(color, 16) + amount)).toString(16)).substr(-2));
   }
 
-  return (
-    <div style={containerStyle}>
-      <style>{`
-        @keyframes slidePacket {
-          0% { transform: translateX(0) scale(0.5); opacity: 0; }
-          10% { transform: translateX(0) scale(1); opacity: 1; }
-          90% { transform: translateX(100%) scale(1); opacity: 1; }
-          100% { transform: translateX(100%) scale(0.5); opacity: 0; }
-        }
-        
-        @keyframes slideRight {
-          0% { transform: translateX(0) scale(0.5); opacity: 0; }
-          10% { transform: translateX(0) scale(1); opacity: 1; }
-          90% { transform: translateX(100%) scale(1); opacity: 1; }
-          100% { transform: translateX(100%) scale(0.5); opacity: 0; }
-        }
-        
-        @keyframes pulse {
-          0%, 100% { transform: scale(1); }
-          50% { transform: scale(1.05); }
-        }
-        
-        @media (max-width: 768px) {
-          .animated-packet {
-            animation-duration: 1s !important;
+  const SimulationContent = () => {
+    const isMobile = windowWidth <= 768;
+    const isTablet = windowWidth > 768 && windowWidth <= 1024;
+
+    return (
+      <div style={containerStyle}>
+        <style>{`
+          @keyframes slidePacket {
+            0% { transform: translateX(0) scale(0.5); opacity: 0; }
+            10% { transform: translateX(0) scale(1); opacity: 1; }
+            90% { transform: translateX(100%) scale(1); opacity: 1; }
+            100% { transform: translateX(100%) scale(0.5); opacity: 0; }
           }
-        }
-        
-        ::-webkit-scrollbar {
-          width: 8px;
-          height: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-          background: #f1f1f1;
-          border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-          background: #888;
-          border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-          background: #555;
-        }
-      `}</style>
-
-      <h2 style={headerStyle}>
-        <span>Архитектура Apache Kafka</span>
-        <span style={{ fontSize: isMobile ? '0.8rem' : '0.9rem', fontWeight: 'normal', opacity: 0.8 }}>
-          {status === 'idle' ? '✅ Готов к работе' : `🔄 Статус: ${status}`}
-        </span>
-      </h2>
-
-      <div style={gridStyle}>
-        {/* Producer and Brokers Row */}
-        <div style={producerConsumerRowStyle}>
-          <div style={nodeCardStyle(colors.producer, status === 'publishing', isMobile)}>
-            <strong>Продюсер</strong>
-            {!isMobile && <small>Producer</small>}
-          </div>
-
-          <div style={brokersRowStyle}>
-            {Array.from({ length: brokersCount }).map((_, i) => (
-              <div key={i} style={nodeCardStyle(colors.broker, false, true)}>
-                <strong>B-{i+1}</strong>
-                {!isMobile && <small>Брокер</small>}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Partitions */}
-        <div style={partitionContainerStyle}>
-          <div style={{ fontSize: isMobile ? '0.85rem' : '0.9rem', fontWeight: 'bold', color: colors.topic, marginBottom: '5px' }}>
-            Топик: "orders"
-          </div>
           
-          {partitions.map((p, idx) => {
-            const hasMessage = p.messages.length > 0;
-            const isProcessing = hasMessage && p.messages.some(m => m.status === 'processing');
-            const activeConsumerForThis = isProcessing ? p.messages.find(m => m.status === 'processing')?.consumerId : null;
-            
-            return (
-              <div key={idx} style={{ 
-                ...getPartitionStyle(p), 
-                padding: isMobile ? '8px' : '10px', 
-                borderRadius: '6px', 
-                display: 'flex', 
-                justifyContent: 'space-between', 
-                alignItems: 'center',
-                color: 'white',
-                opacity: 0.9,
-                borderLeft: `4px solid ${isProcessing ? '#fff' : '#ccc'}`,
-                fontSize: isMobile ? '0.85rem' : '0.9rem'
-              }}>
-                <div>
-                  <strong>📋 Партиция #{idx}</strong>
-                  {!isMobile && <span style={{fontSize: '0.8rem', opacity: 0.8}}> → Брокер {p.leaderBrokerId}</span>}
-                  {isMobile && p.leaderBrokerId && <div style={{fontSize: '0.7rem', opacity: 0.8}}>Брокер {p.leaderBrokerId}</div>}
-                </div>
-                <span style={{ fontSize: isMobile ? '0.75rem' : '0.8rem' }}>
-                  {hasMessage ? (
-                    <span>
-                      {isProcessing ? `🔄 ${activeConsumerForThis}` : `📬 ${p.messages.length} в очереди`}
-                    </span>
-                  ) : (
-                    <span>Пусто</span>
-                  )}
-                </span>
-              </div>
-            );
-          })}
-        </div>
+          @keyframes slideRight {
+            0% { transform: translateX(0) scale(0.5); opacity: 0; }
+            10% { transform: translateX(0) scale(1); opacity: 1; }
+            90% { transform: translateX(100%) scale(1); opacity: 1; }
+            100% { transform: translateX(100%) scale(0.5); opacity: 0; }
+          }
+          
+          @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+          }
+          
+          @media (max-width: 768px) {
+            .animated-packet {
+              animation-duration: 1s !important;
+            }
+          }
+          
+          ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+          }
+          
+          ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+          }
+          
+          ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+          }
+          
+          ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+          }
+        `}</style>
 
-        {/* Consumers */}
-        <div style={{ marginTop: '10px' }}>
-          <div style={{ fontSize: isMobile ? '0.85rem' : '0.9rem', fontWeight: 'bold', marginBottom: '10px' }}>
-            Потребители
+        <h2 style={headerStyle}>
+          <span>Архитектура Apache Kafka</span>
+          <span style={{ fontSize: isMobile ? '0.8rem' : '0.9rem', fontWeight: 'normal', opacity: 0.8 }}>
+            {status === 'idle' ? '✅ Готов к работе' : `🔄 Статус: ${status}`}
+          </span>
+        </h2>
+
+        <div style={gridStyle}>
+          <div style={producerConsumerRowStyle}>
+            <div style={nodeCardStyle(colors.producer, status === 'publishing', isMobile)}>
+              <strong>Продюсер</strong>
+              {!isMobile && <small>Producer</small>}
+            </div>
+
+            <div style={brokersRowStyle}>
+              {Array.from({ length: brokersCount }).map((_, i) => (
+                <div key={i} style={nodeCardStyle(colors.broker, false, true)}>
+                  <strong>B-{i+1}</strong>
+                  {!isMobile && <small>Брокер</small>}
+                </div>
+              ))}
+            </div>
           </div>
-          <div style={consumersListStyle}>
-            {consumers.map((c, idx) => {
-              const assignedPartition = c.assignedPartitionId;
-              const isProcessing = c.status === 'processing';
+
+          <div style={partitionContainerStyle}>
+            <div style={{ fontSize: isMobile ? '0.85rem' : '0.9rem', fontWeight: 'bold', color: colors.topic, marginBottom: '5px' }}>
+              Топик: "orders"
+            </div>
+            
+            {partitions.map((p, idx) => {
+              const hasMessage = p.messages.length > 0;
+              const isProcessing = hasMessage && p.messages.some(m => m.status === 'processing');
+              const activeConsumerForThis = isProcessing ? p.messages.find(m => m.status === 'processing')?.consumerId : null;
               
               return (
-                <div key={c.id} style={consumerItemStyle}>
-                  <div style={{ 
-                    ...nodeCardStyle(c.color, isProcessing, true), 
-                    flex: 1,
-                    border: isProcessing ? `2px solid #fff` : '2px solid transparent',
-                    animation: isProcessing ? 'pulse 1s ease-in-out infinite' : 'none'
-                  }}>
-                    <strong>👤 {c.id}</strong>
-                    <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem', display: 'block' }}>
-                      {isProcessing ? '🔄 Обработка...' : (assignedPartition !== null ? `P#${assignedPartition}` : '⏳ Ожидание')}
-                    </small>
+                <div key={idx} style={{ 
+                  ...getPartitionStyle(p), 
+                  padding: isMobile ? '8px' : '10px', 
+                  borderRadius: '6px', 
+                  display: 'flex', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center',
+                  color: 'white',
+                  opacity: 0.9,
+                  borderLeft: `4px solid ${isProcessing ? '#fff' : '#ccc'}`,
+                  fontSize: isMobile ? '0.85rem' : '0.9rem'
+                }}>
+                  <div>
+                    <strong>📋 Партиция #{idx}</strong>
+                    {!isMobile && <span style={{fontSize: '0.8rem', opacity: 0.8}}> → Брокер {p.leaderBrokerId}</span>}
+                    {isMobile && p.leaderBrokerId && <div style={{fontSize: '0.7rem', opacity: 0.8}}>Брокер {p.leaderBrokerId}</div>}
                   </div>
+                  <span style={{ fontSize: isMobile ? '0.75rem' : '0.8rem' }}>
+                    {hasMessage ? (
+                      <span>
+                        {isProcessing ? `🔄 ${activeConsumerForThis}` : `📬 ${p.messages.length} в очереди`}
+                      </span>
+                    ) : (
+                      <span>Пусто</span>
+                    )}
+                  </span>
                 </div>
               );
             })}
           </div>
-        </div>
-      </div>
 
-      {/* Logs Panel */}
-      <div style={logPanelStyle}>
-        <div style={{ fontWeight: 'bold', marginBottom: '10px', borderBottom: '1px solid #ccc', paddingBottom: '5px' }}>
-          Журнал событий:
-        </div>
-        {logs.length === 0 ? (
-          <div style={{ color: '#95a5a6' }}>Нет событий...</div>
-        ) : (
-          logs.map(log => (
-            <div key={log.id} style={{ 
-              marginBottom: '5px', 
-              color: log.type === 'error' ? '#c0392b' : log.type === 'success' ? '#27ae60' : log.type === 'warning' ? '#f39c12' : '#2c3e50',
-              fontSize: isMobile ? '0.75rem' : '0.85rem',
-              wordBreak: 'break-word'
-            }}>
-              <span style={{ opacity: 0.6 }}>[{log.timestamp}]</span> {log.message}
+          <div style={{ marginTop: '10px' }}>
+            <div style={{ fontSize: isMobile ? '0.85rem' : '0.9rem', fontWeight: 'bold', marginBottom: '10px' }}>
+              Потребители
             </div>
-          ))
-        )}
-      </div>
+            <div style={consumersListStyle}>
+              {consumers.map((c, idx) => {
+                const assignedPartition = c.assignedPartitionId;
+                const isProcessing = c.status === 'processing';
+                
+                return (
+                  <div key={c.id} style={consumerItemStyle}>
+                    <div style={{ 
+                      ...nodeCardStyle(c.color, isProcessing, true), 
+                      flex: 1,
+                      border: isProcessing ? `2px solid #fff` : '2px solid transparent',
+                      animation: isProcessing ? 'pulse 1s ease-in-out infinite' : 'none'
+                    }}>
+                      <strong>👤 {c.id}</strong>
+                      <small style={{ fontSize: isMobile ? '0.7rem' : '0.8rem', display: 'block' }}>
+                        {isProcessing ? '🔄 Обработка...' : (assignedPartition !== null ? `P#${assignedPartition}` : '⏳ Ожидание')}
+                      </small>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
 
-      {/* Control Buttons */}
-      <div style={buttonGroupStyle}>
-        <button 
-          onClick={handlePublish} 
-          disabled={status !== 'idle'}
-          style={buttonStyle(status === 'idle')}
-        >
-          Отправить сообщение
-        </button>
-        
-        <button 
-          onClick={resetSimulation} 
-          style={buttonStyle(true)}
-        >
-          🔄 Перезапустить
-        </button>
+        <div style={logPanelStyle}>
+          <div style={{ fontWeight: 'bold', marginBottom: '10px', borderBottom: '1px solid #ccc', paddingBottom: '5px' }}>
+            Журнал событий:
+          </div>
+          {logs.length === 0 ? (
+            <div style={{ color: '#95a5a6' }}>Нет событий...</div>
+          ) : (
+            logs.map(log => (
+              <div key={log.id} style={{ 
+                marginBottom: '5px', 
+                color: log.type === 'error' ? '#c0392b' : log.type === 'success' ? '#27ae60' : log.type === 'warning' ? '#f39c12' : '#2c3e50',
+                fontSize: isMobile ? '0.75rem' : '0.85rem',
+                wordBreak: 'break-word'
+              }}>
+                <span style={{ opacity: 0.6 }}>[{log.timestamp}]</span> {log.message}
+              </div>
+            ))
+          )}
+        </div>
+
+        <div style={buttonGroupStyle}>
+          <button 
+            onClick={handlePublish} 
+            disabled={status !== 'idle'}
+            style={buttonStyle(status === 'idle')}
+          >
+            Отправить сообщение
+          </button>
+          
+          <button 
+            onClick={resetSimulation} 
+            style={buttonStyle(true)}
+          >
+            🔄 Перезапустить
+          </button>
+        </div>
       </div>
-    </div>
+    );
+  };
+
+  return (
+    <BrowserOnly fallback={<div style={{ padding: '20px', textAlign: 'center' }}>Загрузка симуляции...</div>}>
+      {() => <SimulationContent />}
+    </BrowserOnly>
   );
 };
 

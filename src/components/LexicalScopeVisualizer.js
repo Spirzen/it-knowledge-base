@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const styles = {
   container: {
@@ -184,125 +185,6 @@ const styles = {
   },
 };
 
-const styleSheet = document.createElement("style");
-styleSheet.innerText = `
-  @keyframes pulse {
-    0% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4); }
-    70% { box-shadow: 0 0 0 10px rgba(255, 193, 7, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(255, 193, 7, 0); }
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Адаптивные медиа-запросы */
-  @media (max-width: 768px) {
-    .lexical-scope-container {
-      padding: 12px !important;
-      margin: 10px 0 !important;
-    }
-    
-    .scope-box {
-      width: 260px !important;
-      min-width: auto !important;
-    }
-    
-    .variable-list li {
-      font-size: 0.85rem !important;
-    }
-    
-    .arrow-container {
-      height: 20px !important;
-      font-size: 1.2rem !important;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .lexical-scope-container {
-      padding: 10px !important;
-    }
-    
-    .scope-box {
-      width: 100% !important;
-      max-width: 260px !important;
-      padding: 10px !important;
-    }
-    
-    .variable-list li {
-      font-size: 0.8rem !important;
-    }
-    
-    .status-message {
-      font-size: 0.8rem !important;
-      padding: 8px 12px !important;
-    }
-    
-    .btn-search {
-      padding: 10px 16px !important;
-      font-size: 0.9rem !important;
-    }
-    
-    .scope-title {
-      font-size: 0.75rem !important;
-    }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .scope-box {
-      width: 240px !important;
-      max-width: 240px !important;
-    }
-  }
-  
-  @media (min-width: 1025px) {
-    .scope-box {
-      width: 280px !important;
-    }
-  }
-  
-  /* Для тач-устройств */
-  @media (hover: none) and (pointer: coarse) {
-    button {
-      cursor: default !important;
-    }
-    
-    .btn-search:active {
-      transform: scale(0.97);
-    }
-  }
-  
-  /* Для ретина-экранов */
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .scope-box {
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-  }
-  
-  /* Альбомная ориентация на мобильных */
-  @media (max-width: 768px) and (orientation: landscape) {
-    .visual-panel {
-      min-height: auto !important;
-    }
-    
-    .scope-box {
-      padding: 8px !important;
-    }
-    
-    .variable-list li {
-      padding: 2px 0 !important;
-    }
-  }
-`;
-document.head.appendChild(styleSheet);
-
 const LexicalScopeVisualizer = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [status, setStatus] = useState(null);
@@ -436,117 +318,113 @@ const LexicalScopeVisualizer = () => {
   };
 
   return (
-    <div style={styles.container} className="lexical-scope-container">
-      <div style={styles.header}>Живая цепочка окружений</div>
-      <p style={styles.description}>
-        Введите имя переменной (например, <code>x</code>, <code>y</code> или <code>z</code>) и нажмите кнопку "Найти переменную". 
-        Система покажет путь поиска от внутренней функции к глобальной области видимости.
-      </p>
+    <BrowserOnly>
+      {() => (
+        <div style={styles.container} className="lexical-scope-container">
+          <div style={styles.header}>Живая цепочка окружений</div>
+          <p style={styles.description}>
+            Введите имя переменной (например, <code>x</code>, <code>y</code> или <code>z</code>) и нажмите кнопку "Найти переменную". 
+            Система покажет путь поиска от внутренней функции к глобальной области видимости.
+          </p>
 
-      <div style={styles.mainWrapper}>
-        {/* Панель ввода */}
-        <div style={styles.codePanel}>
-          <div style={styles.inputGroup}>
-            <label style={styles.label}>Имя переменной:</label>
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="x, y, z..."
-              style={styles.input}
-              onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-            />
-          </div>
-          <button 
-            onClick={handleSearch} 
-            style={getButtonStyles()}
-            className="btn-search"
-            onMouseEnter={() => setIsButtonHovered(true)}
-            onMouseLeave={() => {
-              setIsButtonHovered(false);
-              setIsButtonPressed(false);
-            }}
-            onMouseDown={() => setIsButtonPressed(true)}
-            onMouseUp={() => setIsButtonPressed(false)}
-            onTouchStart={() => setIsButtonPressed(true)}
-            onTouchEnd={() => setIsButtonPressed(false)}
-          >
-            Найти переменную
-          </button>
-          
-          <div style={styles.dataHint}>
-            <strong>Схема данных:</strong><br/>
-            • Inner: z=30<br/>
-            • Outer: y=20, x=10<br/>
-            • Global: x=10
+          <div style={styles.mainWrapper}>
+            <div style={styles.codePanel}>
+              <div style={styles.inputGroup}>
+                <label style={styles.label}>Имя переменной:</label>
+                <input
+                  type="text"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  placeholder="x, y, z..."
+                  style={styles.input}
+                  onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                />
+              </div>
+              <button 
+                onClick={handleSearch} 
+                style={getButtonStyles()}
+                className="btn-search"
+                onMouseEnter={() => setIsButtonHovered(true)}
+                onMouseLeave={() => {
+                  setIsButtonHovered(false);
+                  setIsButtonPressed(false);
+                }}
+                onMouseDown={() => setIsButtonPressed(true)}
+                onMouseUp={() => setIsButtonPressed(false)}
+                onTouchStart={() => setIsButtonPressed(true)}
+                onTouchEnd={() => setIsButtonPressed(false)}
+              >
+                Найти переменную
+              </button>
+              
+              <div style={styles.dataHint}>
+                <strong>Схема данных:</strong><br/>
+                • Inner: z=30<br/>
+                • Outer: y=20, x=10<br/>
+                • Global: x=10
+              </div>
+            </div>
+
+            <div style={styles.visualPanel} className="visual-panel">
+              <div style={getScopeStyles('inner')} className="scope-box">
+                <div style={styles.scopeTitle}>Inner Function</div>
+                <ul style={styles.variableList} className="variable-list">
+                  {Object.entries(environmentData.inner.variables).map(([k, v]) => (
+                    <li key={k} style={styles.listItem}>
+                      <span>{k}</span>
+                      <span>= {v}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div style={{fontSize: 'clamp(0.7rem, 2.5vw, 0.8rem)', color: '#888', marginTop: '5px'}}>
+                  Ссылка: Outer
+                </div>
+              </div>
+
+              <div style={styles.arrowContainer} className="arrow-container">↓</div>
+
+              <div style={getScopeStyles('outer')} className="scope-box">
+                <div style={styles.scopeTitle}>Outer Function</div>
+                <ul style={styles.variableList} className="variable-list">
+                  {Object.entries(environmentData.outer.variables).map(([k, v]) => (
+                    <li key={k} style={styles.listItem}>
+                      <span>{k}</span>
+                      <span>= {v}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div style={{fontSize: 'clamp(0.7rem, 2.5vw, 0.8rem)', color: '#888', marginTop: '5px'}}>
+                  Ссылка: Global
+                </div>
+              </div>
+
+              <div style={styles.arrowContainer} className="arrow-container">↓</div>
+
+              <div style={getScopeStyles('global')} className="scope-box">
+                <div style={styles.scopeTitle}>Global Scope</div>
+                <ul style={styles.variableList} className="variable-list">
+                  {Object.entries(environmentData.global.variables).map(([k, v]) => (
+                    <li key={k} style={styles.listItem}>
+                      <span>{k}</span>
+                      <span>= {v === undefined ? 'undefined' : v}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div style={{fontSize: 'clamp(0.7rem, 2.5vw, 0.8rem)', color: '#888', marginTop: '5px'}}>
+                  Корневое окружение
+                </div>
+              </div>
+
+              <div style={getStatusStyles()} className="status-message">
+                {status === 'found' && `Переменная "${searchTerm}" найдена! Значение: ${resultValue}`}
+                {status === 'not-found' && `Переменная "${searchTerm}" не найдена ни в одном из окружений.`}
+                {status === 'searching' && 'Поиск...'}
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Визуализация */}
-        <div style={styles.visualPanel} className="visual-panel">
-          {/* Inner Scope */}
-          <div style={getScopeStyles('inner')} className="scope-box">
-            <div style={styles.scopeTitle}>Inner Function</div>
-            <ul style={styles.variableList} className="variable-list">
-              {Object.entries(environmentData.inner.variables).map(([k, v]) => (
-                <li key={k} style={styles.listItem}>
-                  <span>{k}</span>
-                  <span>= {v}</span>
-                </li>
-              ))}
-            </ul>
-            <div style={{fontSize: 'clamp(0.7rem, 2.5vw, 0.8rem)', color: '#888', marginTop: '5px'}}>
-              Ссылка: Outer
-            </div>
-          </div>
-
-          {/* Arrow Down */}
-          <div style={styles.arrowContainer} className="arrow-container">↓</div>
-
-          {/* Outer Scope */}
-          <div style={getScopeStyles('outer')} className="scope-box">
-            <div style={styles.scopeTitle}>Outer Function</div>
-            <ul style={styles.variableList} className="variable-list">
-              {Object.entries(environmentData.outer.variables).map(([k, v]) => (
-                <li key={k} style={styles.listItem}>
-                  <span>{k}</span>
-                  <span>= {v}</span>
-                </li>
-              ))}
-            </ul>
-            <div style={{fontSize: 'clamp(0.7rem, 2.5vw, 0.8rem)', color: '#888', marginTop: '5px'}}>
-              Ссылка: Global
-            </div>
-          </div>
-
-          {/* Arrow Down */}
-          <div style={styles.arrowContainer} className="arrow-container">↓</div>
-
-          {/* Global Scope */}
-          <div style={getScopeStyles('global')} className="scope-box">
-            <div style={styles.scopeTitle}>Global Scope</div>
-            <ul style={styles.variableList} className="variable-list">
-              {Object.entries(environmentData.global.variables).map(([k, v]) => (
-                <li key={k} style={styles.listItem}>
-                  <span>{k}</span>
-                  <span>= {v === undefined ? 'undefined' : v}</span>
-                </li>
-              ))}
-            </ul>
-            <div style={{fontSize: 'clamp(0.7rem, 2.5vw, 0.8rem)', color: '#888', marginTop: '5px'}}>
-              Корневое окружение
-            </div>
-          </div>
-
-          {/* Результат */}
-          <div style={getStatusStyles()} className="status-message">
-            {status === 'found' && `Переменная "${searchTerm}" найдена! Значение: ${resultValue}`}
-            {status === 'not-found' && `Переменная "${searchTerm}" не найдена ни в одном из окружений.`}
-            {status === 'searching' && 'Поиск...'}
-          </div>
-        </div>
-      </div>
-    </div>
+      )}
+    </BrowserOnly>
   );
 };
 

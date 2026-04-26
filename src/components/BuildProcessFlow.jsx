@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
-const BuildProcessFlow = () => {
+const BuildProcessFlowContent = () => {
   const [step, setStep] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -683,32 +684,12 @@ const styles = {
   },
 };
 
-const mobileStyles = {
-  '@media (max-width: 768px)': {
-    actionsRow: {
-      flexDirection: 'column',
-    },
-    buildTypeRow: {
-      flexDirection: 'column',
-    },
-    controls: {
-      flexDirection: 'column',
-    },
-    buttonPrimary: {
-      whiteSpace: 'normal',
-      width: '100%',
-    },
-    buttonSecondary: {
-      whiteSpace: 'normal',
-      width: '100%',
-    },
-  },
+const BuildProcessFlow = () => {
+  return (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+      {() => <BuildProcessFlowContent />}
+    </BrowserOnly>
+  );
 };
-
-Object.assign(styles.actionItem, {
-  '@media (max-width: 640px)': {
-    minWidth: '100%',
-  },
-});
 
 export default BuildProcessFlow;

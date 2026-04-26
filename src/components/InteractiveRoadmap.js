@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const roadmapData = [
   {
@@ -242,439 +243,382 @@ const roadmapData = [
 ];
 
 export default function InteractiveRoadmap() {
-  const [expandedId, setExpandedId] = useState(null);
-  const [selectedTopic, setSelectedTopic] = useState(null);
-  const [savedTopics, setSavedTopics] = useState([]);
-
-  React.useEffect(() => {
-    try {
-      const saved = localStorage.getItem('it-universe-saved-topics');
-      if (saved) {
-        setSavedTopics(JSON.parse(saved));
-      }
-    } catch (e) {
-      console.error('Ошибка загрузки сохраненных тем:', e);
-      setSavedTopics([]);
-    }
-  }, []);
-
-  const toggleExpand = (id) => {
-    setExpandedId(expandedId === id ? null : id);
-  };
-
-  const handleTopicClick = (topic) => {
-    setSelectedTopic(topic);
-  };
-
-  const toggleSave = (topicId) => {
-    let newSaved;
-    if (savedTopics.includes(topicId)) {
-      newSaved = savedTopics.filter(id => id !== topicId);
-    } else {
-      newSaved = [...savedTopics, topicId];
-    }
-    setSavedTopics(newSaved);
-    try {
-      localStorage.setItem('it-universe-saved-topics', JSON.stringify(newSaved));
-    } catch (e) {
-      console.error('Ошибка сохранения тем:', e);
-    }
-  };
-
   return (
-    <div style={{ 
-      backgroundColor: '#f8fafc', 
-      padding: '1rem', 
-      borderRadius: '12px', 
-      border: '1px solid #e2e8f0',
-      marginTop: '1rem',
-      marginBottom: '1rem',
-      '@media (min-width: 768px)': {
-        padding: '2rem',
-        marginTop: '2rem',
-        marginBottom: '2rem'
-      }
-    }}>
-      <style jsx>{`
-        @media (min-width: 768px) {
-          .roadmap-container {
-            padding: 2rem;
+    <BrowserOnly fallback={<div>Загрузка...</div>}>
+      {() => {
+        const [expandedId, setExpandedId] = useState(null);
+        const [selectedTopic, setSelectedTopic] = useState(null);
+        const [savedTopics, setSavedTopics] = useState([]);
+
+        React.useEffect(() => {
+          try {
+            const saved = localStorage.getItem('it-universe-saved-topics');
+            if (saved) {
+              setSavedTopics(JSON.parse(saved));
+            }
+          } catch (e) {
+            console.error('Ошибка загрузки сохраненных тем:', e);
+            setSavedTopics([]);
           }
-        }
-      `}</style>
-      
-      <h3 style={{ 
-        color: '#1e293b', 
-        marginBottom: '1rem',
-        fontSize: '1.25rem',
-        '@media (min-width: 768px)': {
-          fontSize: '1.5rem',
-          marginBottom: '1.5rem'
-        }
-      }}>Интерактивная дорожная карта</h3>
-      
-      <p style={{ 
-        color: '#64748b', 
-        marginBottom: '1rem',
-        fontSize: '0.875rem',
-        lineHeight: '1.5',
-        '@media (min-width: 768px)': {
-          fontSize: '1rem',
-          marginBottom: '1.5rem'
-        }
-      }}>
-        Выберите область знаний, чтобы увидеть ключевые темы и добавить их в свой план обучения.
-      </p>
+        }, []);
 
-      <div style={{ 
-        display: 'grid', 
-        gridTemplateColumns: '1fr',
-        gap: '1rem',
-        '@media (min-width: 640px)': {
-          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-          gap: '1.5rem'
-        }
-      }}>
-        {roadmapData.map((category) => (
-          <div key={category.id} style={{ 
-            backgroundColor: 'white', 
-            borderRadius: '8px', 
-            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
-            overflow: 'hidden',
-            transition: 'transform 0.2s'
-          }}
-          onMouseEnter={(e) => {
-            if (window.innerWidth >= 768) {
-              e.currentTarget.style.transform = 'translateY(-4px)';
-            }
-          }}
-          onMouseLeave={(e) => {
-            if (window.innerWidth >= 768) {
-              e.currentTarget.style.transform = 'translateY(0)';
-            }
-          }}
-          >
-            <div 
-              style={{ 
-                padding: '0.875rem 1rem', 
-                borderBottom: '1px solid #f1f5f9',
-                cursor: 'pointer',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                backgroundColor: expandedId === category.id ? '#eff6ff' : 'white',
-                fontWeight: 'bold',
-                color: '#334155',
-                fontSize: '0.95rem',
-                '@media (min-width: 768px)': {
-                  padding: '1rem',
-                  fontSize: '1rem'
+        const toggleExpand = (id) => {
+          setExpandedId(expandedId === id ? null : id);
+        };
+
+        const handleTopicClick = (topic) => {
+          setSelectedTopic(topic);
+        };
+
+        const toggleSave = (topicId) => {
+          let newSaved;
+          if (savedTopics.includes(topicId)) {
+            newSaved = savedTopics.filter(id => id !== topicId);
+          } else {
+            newSaved = [...savedTopics, topicId];
+          }
+          setSavedTopics(newSaved);
+          try {
+            localStorage.setItem('it-universe-saved-topics', JSON.stringify(newSaved));
+          } catch (e) {
+            console.error('Ошибка сохранения тем:', e);
+          }
+        };
+
+        return (
+          <div style={{ 
+            backgroundColor: '#f8fafc', 
+            padding: '1rem', 
+            borderRadius: '12px', 
+            border: '1px solid #e2e8f0',
+            marginTop: '1rem',
+            marginBottom: '1rem'
+          }}>
+            <style>{`
+              @media (min-width: 768px) {
+                .roadmap-container {
+                  padding: 2rem;
                 }
-              }}
-              onClick={() => toggleExpand(category.id)}
-            >
-              <span style={{ flex: 1 }}>{category.title}</span>
-              <span style={{ 
-                fontSize: '1.2rem', 
-                color: '#64748b',
-                marginLeft: '0.5rem',
-                minWidth: '24px',
-                textAlign: 'center'
-              }}>
-                {expandedId === category.id ? '−' : '+'}
-              </span>
-            </div>
-
-            {expandedId === category.id && (
-              <div style={{ 
-                padding: '0.75rem', 
-                maxHeight: '400px', 
-                overflowY: 'auto', 
-                backgroundColor: '#ffffff',
-                '@media (min-width: 768px)': {
-                  padding: '1rem'
-                }
-              }}>
-                <p style={{ 
-                  fontSize: '0.8rem', 
-                  color: '#64748b', 
-                  marginBottom: '0.75rem', 
-                  fontStyle: 'italic',
-                  lineHeight: '1.4',
-                  '@media (min-width: 768px)': {
-                    fontSize: '0.85rem',
-                    marginBottom: '1rem'
-                  }
-                }}>
-                  {category.description}
-                </p>
-                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                  {category.children.map((child) => (
-                    <li key={child.id} style={{ marginBottom: '0.5rem' }}>
-                      <button 
-                        onClick={() => handleTopicClick(child)}
-                        style={{
-                          width: '100%',
-                          textAlign: 'left',
-                          padding: '0.5rem 0.625rem',
-                          backgroundColor: 'transparent',
-                          border: '1px solid #e2e8f0',
-                          borderRadius: '6px',
-                          cursor: 'pointer',
-                          color: '#3b82f6',
-                          fontSize: '0.85rem',
-                          transition: 'all 0.2s',
-                          whiteSpace: 'normal',
-                          wordWrap: 'break-word',
-                          lineHeight: '1.4'
-                        }}
-                        onMouseEnter={(e) => {
-                          e.target.style.backgroundColor = '#eff6ff';
-                          e.target.style.borderColor = '#bfdbfe';
-                        }}
-                        onMouseLeave={(e) => {
-                          e.target.style.backgroundColor = 'transparent';
-                          e.target.style.borderColor = '#e2e8f0';
-                        }}
-                      >
-                        {child.title}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {/* Модальное окно выбора темы */}
-      {selectedTopic && (
-        <div style={{ 
-          position: 'fixed', 
-          top: 0, left: 0, right: 0, bottom: 0, 
-          backgroundColor: 'rgba(0,0,0,0.5)', 
-          display: 'flex', 
-          justifyContent: 'center', 
-          alignItems: 'center',
-          zIndex: 1000,
-          backdropFilter: 'blur(2px)',
-          padding: '1rem'
-        }}
-        onClick={() => setSelectedTopic(null)}
-        >
-          <div 
-            style={{ 
-              backgroundColor: 'white', 
-              padding: '1.5rem', 
-              borderRadius: '12px', 
-              maxWidth: '500px', 
-              width: '90%',
-              maxHeight: '90vh',
-              overflowY: 'auto',
-              boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
-              animation: 'fadeIn 0.3s ease-out',
-              '@media (min-width: 768px)': {
-                padding: '2rem'
               }
-            }}
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h4 style={{ 
-              marginTop: 0, 
+            `}</style>
+            
+            <h3 style={{ 
               color: '#1e293b', 
-              fontSize: '1.125rem',
-              marginBottom: '0.75rem',
-              '@media (min-width: 768px)': {
-                fontSize: '1.25rem',
-                marginBottom: '1rem'
-              }
-            }}>Тема: {selectedTopic.title}</h4>
+              marginBottom: '1rem',
+              fontSize: '1.25rem'
+            }}>Интерактивная дорожная карта</h3>
+            
             <p style={{ 
               color: '#64748b', 
-              marginBottom: '1.25rem', 
-              lineHeight: '1.5',
-              fontSize: '0.875rem',
-              '@media (min-width: 768px)': {
-                fontSize: '1rem',
-                marginBottom: '1.5rem'
-              }
+              marginBottom: '1rem', 
+              fontSize: '0.875rem', 
+              lineHeight: '1.5'
             }}>
-              Нажмите кнопку ниже, чтобы добавить эту тему в ваш личный план обучения. Вы можете вернуться к ней позже через панель внизу страницы.
+              Выберите область знаний, чтобы увидеть ключевые темы и добавить их в свой план обучения.
             </p>
-            
+
             <div style={{ 
-              display: 'flex', 
-              gap: '0.75rem', 
-              justifyContent: 'flex-end',
-              flexDirection: 'row',
-              '@media (max-width: 480px)': {
-                flexDirection: 'column-reverse'
-              }
+              display: 'grid', 
+              gridTemplateColumns: '1fr',
+              gap: '1rem'
             }}>
-              <button 
-                onClick={() => setSelectedTopic(null)}
-                style={{
-                  padding: '0.75rem 1.5rem',
-                  backgroundColor: '#f1f5f9',
-                  color: '#475569',
-                  border: 'none',
-                  borderRadius: '6px',
-                  cursor: 'pointer',
-                  fontWeight: '600',
-                  fontSize: '0.875rem',
-                  transition: 'background-color 0.2s',
-                  '@media (max-width: 480px)': {
-                    padding: '0.625rem 1.25rem'
+              {roadmapData.map((category) => (
+                <div key={category.id} style={{ 
+                  backgroundColor: 'white', 
+                  borderRadius: '8px', 
+                  boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                  overflow: 'hidden',
+                  transition: 'transform 0.2s'
+                }}
+                onMouseEnter={(e) => {
+                  if (window.innerWidth >= 768) {
+                    e.currentTarget.style.transform = 'translateY(-4px)';
                   }
                 }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = '#e2e8f0'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = '#f1f5f9'}
-              >
-                Отмена
-              </button>
-              <button 
-                onClick={() => {
-                  toggleSave(selectedTopic.id);
-                  setSelectedTopic(null);
-                }}
-                style={{
-                  padding: '0.75rem 1.5rem',
-                  backgroundColor: selectedTopic.id.startsWith('5.') || selectedTopic.id.startsWith('4.') ? '#2563eb' : '#16a34a',
-                  color: 'white',
-                  border: 'none',
-                  borderRadius: '6px',
-                  cursor: 'pointer',
-                  fontWeight: '600',
-                  fontSize: '0.875rem',
-                  transition: 'opacity 0.2s',
-                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                  '@media (max-width: 480px)': {
-                    padding: '0.625rem 1.25rem'
+                onMouseLeave={(e) => {
+                  if (window.innerWidth >= 768) {
+                    e.currentTarget.style.transform = 'translateY(0)';
                   }
                 }}
-                onMouseEnter={(e) => e.target.style.opacity = '0.9'}
-                onMouseLeave={(e) => e.target.style.opacity = '1'}
-              >
-                {savedTopics.includes(selectedTopic.id) ? 'Убрать из плана' : 'Добавить в план'}
-              </button>
+                >
+                  <div 
+                    style={{ 
+                      padding: '0.875rem 1rem', 
+                      borderBottom: '1px solid #f1f5f9',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      backgroundColor: expandedId === category.id ? '#eff6ff' : 'white',
+                      fontWeight: 'bold',
+                      color: '#334155',
+                      fontSize: '0.95rem'
+                    }}
+                    onClick={() => toggleExpand(category.id)}
+                  >
+                    <span style={{ flex: 1 }}>{category.title}</span>
+                    <span style={{ 
+                      fontSize: '1.2rem', 
+                      color: '#64748b',
+                      marginLeft: '0.5rem',
+                      minWidth: '24px',
+                      textAlign: 'center'
+                    }}>
+                      {expandedId === category.id ? '−' : '+'}
+                    </span>
+                  </div>
+
+                  {expandedId === category.id && (
+                    <div style={{ 
+                      padding: '0.75rem', 
+                      maxHeight: '400px', 
+                      overflowY: 'auto', 
+                      backgroundColor: '#ffffff'
+                    }}>
+                      <p style={{ 
+                        fontSize: '0.8rem', 
+                        color: '#64748b', 
+                        marginBottom: '0.75rem', 
+                        fontStyle: 'italic',
+                        lineHeight: '1.4'
+                      }}>
+                        {category.description}
+                      </p>
+                      <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                        {category.children.map((child) => (
+                          <li key={child.id} style={{ marginBottom: '0.5rem' }}>
+                            <button 
+                              onClick={() => handleTopicClick(child)}
+                              style={{
+                                width: '100%',
+                                textAlign: 'left',
+                                padding: '0.5rem 0.625rem',
+                                backgroundColor: 'transparent',
+                                border: '1px solid #e2e8f0',
+                                borderRadius: '6px',
+                                cursor: 'pointer',
+                                color: '#3b82f6',
+                                fontSize: '0.85rem',
+                                transition: 'all 0.2s',
+                                whiteSpace: 'normal',
+                                wordWrap: 'break-word',
+                                lineHeight: '1.4'
+                              }}
+                              onMouseEnter={(e) => {
+                                e.target.style.backgroundColor = '#eff6ff';
+                                e.target.style.borderColor = '#bfdbfe';
+                              }}
+                              onMouseLeave={(e) => {
+                                e.target.style.backgroundColor = 'transparent';
+                                e.target.style.borderColor = '#e2e8f0';
+                              }}
+                            >
+                              {child.title}
+                            </button>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              ))}
             </div>
-          </div>
-        </div>
-      )}
 
-      {/* Панель сохраненных тем */}
-      {savedTopics.length > 0 && (
-        <div style={{ 
-          marginTop: '1.5rem', 
-          padding: '1rem', 
-          backgroundColor: '#fffbeb', 
-          border: '1px solid #fcd34d', 
-          borderRadius: '8px',
-          boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)',
-          '@media (min-width: 768px)': {
-            marginTop: '2rem',
-            padding: '1.5rem'
-          }
-        }}>
-          <div style={{ 
-            display: 'flex', 
-            justifyContent: 'space-between', 
-            alignItems: 'center', 
-            marginBottom: '1rem',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
-          }}>
-            <h4 style={{ 
-              color: '#92400e', 
-              margin: 0, 
-              fontSize: '1rem',
-              '@media (min-width: 768px)': {
-                fontSize: '1.1rem'
-              }
-            }}>Ваш план обучения (Тем: {savedTopics.length})</h4>
-            <button 
-              onClick={() => {
-                if (window.confirm('Вы уверены, что хотите очистить весь план обучения?')) {
-                  setSavedTopics([]);
-                  localStorage.removeItem('it-universe-saved-topics');
-                }
+            {/* Модальное окно выбора темы */}
+            {selectedTopic && (
+              <div style={{ 
+                position: 'fixed', 
+                top: 0, left: 0, right: 0, bottom: 0, 
+                backgroundColor: 'rgba(0,0,0,0.5)', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                alignItems: 'center',
+                zIndex: 1000,
+                backdropFilter: 'blur(2px)',
+                padding: '1rem'
               }}
-              style={{
-                padding: '0.4rem 0.8rem',
-                backgroundColor: 'transparent',
-                border: '1px solid #92400e',
-                color: '#92400e',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                fontSize: '0.8rem',
-                fontWeight: '600',
-                transition: 'all 0.2s',
-                '@media (min-width: 768px)': {
-                  fontSize: '0.85rem',
-                  padding: '0.4rem 0.8rem'
-                }
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = '#fef3c7';
-                e.target.style.color = '#b45309';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = 'transparent';
-                e.target.style.color = '#92400e';
-              }}
-            >
-              Очистить план
-            </button>
-          </div>
-          
-          <div style={{ 
-            maxHeight: '200px', 
-            overflowY: 'auto', 
-            paddingRight: '0.5rem'
-          }}>
-            <ul style={{ 
-              paddingLeft: '1.25rem', 
-              color: '#78350f', 
-              margin: 0, 
-              lineHeight: '1.6',
-              fontSize: '0.875rem',
-              '@media (min-width: 768px)': {
-                fontSize: '1rem',
-                paddingLeft: '1.5rem'
-              }
-            }}>
-              {savedTopics.map(id => {
-                const topic = roadmapData.flatMap(c => c.children).find(t => t.id === id);
-                return (
-                  <li key={id} style={{ marginBottom: '0.25rem' }}>
-                    {topic?.title || id}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-      )}
+              onClick={() => setSelectedTopic(null)}
+              >
+                <div 
+                  style={{ 
+                    backgroundColor: 'white', 
+                    padding: '1.5rem', 
+                    borderRadius: '12px', 
+                    maxWidth: '500px', 
+                    width: '90%',
+                    maxHeight: '90vh',
+                    overflowY: 'auto',
+                    boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)',
+                    animation: 'fadeIn 0.3s ease-out'
+                  }}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <h4 style={{ 
+                    marginTop: 0, 
+                    color: '#1e293b', 
+                    fontSize: '1.125rem',
+                    marginBottom: '0.75rem'
+                  }}>Тема: {selectedTopic.title}</h4>
+                  <p style={{ 
+                    color: '#64748b', 
+                    marginBottom: '1.25rem', 
+                    lineHeight: '1.5',
+                    fontSize: '0.875rem'
+                  }}>
+                    Нажмите кнопку ниже, чтобы добавить эту тему в ваш личный план обучения. Вы можете вернуться к ней позже через панель внизу страницы.
+                  </p>
+                  
+                  <div style={{ 
+                    display: 'flex', 
+                    gap: '0.75rem', 
+                    justifyContent: 'flex-end',
+                    flexDirection: 'row'
+                  }}>
+                    <button 
+                      onClick={() => setSelectedTopic(null)}
+                      style={{
+                        padding: '0.75rem 1.5rem',
+                        backgroundColor: '#f1f5f9',
+                        color: '#475569',
+                        border: 'none',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontWeight: '600',
+                        fontSize: '0.875rem',
+                        transition: 'background-color 0.2s'
+                      }}
+                      onMouseEnter={(e) => e.target.style.backgroundColor = '#e2e8f0'}
+                      onMouseLeave={(e) => e.target.style.backgroundColor = '#f1f5f9'}
+                    >
+                      Отмена
+                    </button>
+                    <button 
+                      onClick={() => {
+                        toggleSave(selectedTopic.id);
+                        setSelectedTopic(null);
+                      }}
+                      style={{
+                        padding: '0.75rem 1.5rem',
+                        backgroundColor: selectedTopic.id.startsWith('5.') || selectedTopic.id.startsWith('4.') ? '#2563eb' : '#16a34a',
+                        color: 'white',
+                        border: 'none',
+                        borderRadius: '6px',
+                        cursor: 'pointer',
+                        fontWeight: '600',
+                        fontSize: '0.875rem',
+                        transition: 'opacity 0.2s',
+                        boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
+                      }}
+                      onMouseEnter={(e) => e.target.style.opacity = '0.9'}
+                      onMouseLeave={(e) => e.target.style.opacity = '1'}
+                    >
+                      {savedTopics.includes(selectedTopic.id) ? 'Убрать из плана' : 'Добавить в план'}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
 
-      <style jsx global>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: scale(0.95);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
-        }
-        
-        @media (max-width: 640px) {
-          .custom-scroll::-webkit-scrollbar {
-            width: 4px;
-          }
-        }
-      `}</style>
-    </div>
+            {/* Панель сохраненных тем */}
+            {savedTopics.length > 0 && (
+              <div style={{ 
+                marginTop: '1.5rem', 
+                padding: '1rem', 
+                backgroundColor: '#fffbeb', 
+                border: '1px solid #fcd34d', 
+                borderRadius: '8px',
+                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.05)'
+              }}>
+                <div style={{ 
+                  display: 'flex', 
+                  justifyContent: 'space-between', 
+                  alignItems: 'center', 
+                  marginBottom: '1rem',
+                  flexWrap: 'wrap',
+                  gap: '0.75rem'
+                }}>
+                  <h4 style={{ 
+                    color: '#92400e', 
+                    margin: 0, 
+                    fontSize: '1rem'
+                  }}>Ваш план обучения (Тем: {savedTopics.length})</h4>
+                  <button 
+                    onClick={() => {
+                      if (window.confirm('Вы уверены, что хотите очистить весь план обучения?')) {
+                        setSavedTopics([]);
+                        localStorage.removeItem('it-universe-saved-topics');
+                      }
+                    }}
+                    style={{
+                      padding: '0.4rem 0.8rem',
+                      backgroundColor: 'transparent',
+                      border: '1px solid #92400e',
+                      color: '#92400e',
+                      borderRadius: '4px',
+                      cursor: 'pointer',
+                      fontSize: '0.8rem',
+                      fontWeight: '600',
+                      transition: 'all 0.2s'
+                    }}
+                    onMouseEnter={(e) => {
+                      e.target.style.backgroundColor = '#fef3c7';
+                      e.target.style.color = '#b45309';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.target.style.backgroundColor = 'transparent';
+                      e.target.style.color = '#92400e';
+                    }}
+                  >
+                    Очистить план
+                  </button>
+                </div>
+                
+                <div style={{ 
+                  maxHeight: '200px', 
+                  overflowY: 'auto', 
+                  paddingRight: '0.5rem'
+                }}>
+                  <ul style={{ 
+                    paddingLeft: '1.25rem', 
+                    color: '#78350f', 
+                    margin: 0, 
+                    lineHeight: '1.6',
+                    fontSize: '0.875rem'
+                  }}>
+                    {savedTopics.map(id => {
+                      const topic = roadmapData.flatMap(c => c.children).find(t => t.id === id);
+                      return (
+                        <li key={id} style={{ marginBottom: '0.25rem' }}>
+                          {topic?.title || id}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
+            )}
+
+            <style global>{`
+              @keyframes fadeIn {
+                from {
+                  opacity: 0;
+                  transform: scale(0.95);
+                }
+                to {
+                  opacity: 1;
+                  transform: scale(1);
+                }
+              }
+              
+              @media (max-width: 640px) {
+                .custom-scroll::-webkit-scrollbar {
+                  width: 4px;
+                }
+              }
+            `}</style>
+          </div>
+        );
+      }}
+    </BrowserOnly>
   );
 }

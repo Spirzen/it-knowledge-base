@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
-const ModuleDependencyGraph = () => {
+const ModuleDependencyGraph = () => (
+  <BrowserOnly>
+    {() => (
+      <ModuleComponent />
+    )}
+  </BrowserOnly>
+);
+
+const ModuleComponent = () => {
   const [mode, setMode] = useState('monolith');
   const [activeNode, setActiveNode] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -76,7 +85,6 @@ const ModuleDependencyGraph = () => {
   const handleModuleClick = (moduleId) => {
     setActiveNode(activeNode === moduleId ? null : moduleId);
     
-    // На мобильных устройствах скроллим к информационной панели
     if (isMobile && activeNode !== moduleId) {
       setTimeout(() => {
         const infoPanel = document.getElementById('info-panel');
@@ -112,7 +120,6 @@ const ModuleDependencyGraph = () => {
       padding: isMobile ? '10px' : '20px',
       fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
     }}>
-      {/* Заголовок */}
       <div style={{
         textAlign: 'center',
         marginBottom: isMobile ? '20px' : '30px',
@@ -137,7 +144,6 @@ const ModuleDependencyGraph = () => {
         </p>
       </div>
 
-      {/* Переключатель режимов */}
       <div style={{
         display: 'flex',
         justifyContent: 'center',
@@ -183,7 +189,6 @@ const ModuleDependencyGraph = () => {
         </button>
       </div>
 
-      {/* Сетка модулей */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: isMobile 
@@ -216,7 +221,6 @@ const ModuleDependencyGraph = () => {
                 WebkitTapHighlightColor: 'transparent'
               }}
             >
-              {/* Иконка и тип */}
               <div style={{
                 display: 'flex',
                 alignItems: 'center',
@@ -242,7 +246,6 @@ const ModuleDependencyGraph = () => {
                 </span>
               </div>
               
-              {/* Название */}
               <h3 style={{ 
                 margin: '0 0 8px', 
                 color: colors.text, 
@@ -252,7 +255,6 @@ const ModuleDependencyGraph = () => {
                 {module.name}
               </h3>
               
-              {/* Описание */}
               <p style={{ 
                 margin: '0 0 15px', 
                 fontSize: isMobile ? '12px' : '13px', 
@@ -263,7 +265,6 @@ const ModuleDependencyGraph = () => {
                 {module.description}
               </p>
               
-              {/* Зависимости */}
               <div style={{
                 borderTop: `1px solid ${colors.border}30`,
                 paddingTop: '12px',
@@ -299,7 +300,6 @@ const ModuleDependencyGraph = () => {
                 )}
               </div>
 
-              {/* Кем используется */}
               {module.usedBy.length > 0 && (
                 <div style={{ marginTop: '10px' }}>
                   <div style={{ fontSize: isMobile ? '10px' : '11px', fontWeight: 'bold', marginBottom: '8px', color: colors.text }}>
@@ -328,7 +328,6 @@ const ModuleDependencyGraph = () => {
         })}
       </div>
 
-      {/* Информационная панель при клике */}
       {activeNode && (
         <div id="info-panel" style={{
           background: 'white',
@@ -414,7 +413,6 @@ const ModuleDependencyGraph = () => {
         </div>
       )}
 
-      {/* Дополнительная информация */}
       <div style={{
         marginTop: '30px',
         padding: isMobile ? '12px' : '15px',
@@ -428,7 +426,6 @@ const ModuleDependencyGraph = () => {
         {!isMobile && ' Переключайте режимы, чтобы сравнить монолитную и слабосвязанную архитектуру.'}
       </div>
 
-      {/* Добавляем CSS-анимацию */}
       <style>{`
         @keyframes slideUp {
           from {

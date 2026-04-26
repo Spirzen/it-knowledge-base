@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const CompilerSimulator = () => {
   const [code, setCode] = useState(`let name = "Мир"
@@ -804,4 +805,9 @@ print("Произведение: " + product)`
   );
 };
 
-export default CompilerSimulator;
+// Оборачиваем компонент в BrowserOnly для предотвращения ошибок SSR, сохраняя исходное имя
+export default () => (
+  <BrowserOnly>
+    {() => <CompilerSimulator />}
+  </BrowserOnly>
+);

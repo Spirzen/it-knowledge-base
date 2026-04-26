@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const ScalingDemo = () => {
   const [activeTab, setActiveTab] = useState('demo');
@@ -234,7 +235,7 @@ const ScalingDemo = () => {
           <p style={styles.subtitle}>Вертикальное и Горизонтальное масштабирование</p>
         </div>
         
-        <div style={{...styles.tabs, flexDirection: window.innerWidth < 768 ? 'column' : 'row'}}>
+        <div style={{...styles.tabs, flexDirection: 'row'}}>
           <button
             style={{ ...styles.tab, ...(activeTab === 'demo' ? styles.activeTab : {}) }}
             onClick={() => setActiveTab('demo')}
@@ -257,7 +258,7 @@ const ScalingDemo = () => {
         
         {activeTab === 'demo' && (
           <>
-            <div style={{...styles.scalingSelector, flexDirection: window.innerWidth < 768 ? 'column' : 'row'}}>
+            <div style={{...styles.scalingSelector, flexDirection: 'row'}}>
               <div
                 style={{
                   ...styles.scalingCard,
@@ -394,7 +395,7 @@ const ScalingDemo = () => {
                   </>
                 )}
                 
-                <div className="load-control-mobile" style={{...styles.loadControl, flexDirection: window.innerWidth < 768 ? 'column' : 'row', alignItems: 'flex-start'}}>
+                <div className="load-control-mobile" style={{...styles.loadControl, flexDirection: 'row', alignItems: 'flex-start'}}>
                   <div style={styles.resourceLabel}>
                     <span>Текущая нагрузка: {Math.round(load)}%</span>
                     <span>{load < 40 ? '🟢 Низкая' : load < 70 ? '🟡 Средняя' : '🔴 Высокая'}</span>
@@ -442,7 +443,7 @@ const ScalingDemo = () => {
               <div style={styles.panel}>
                 <div style={styles.panelTitle}>Метрики производительности</div>
                 
-                <div className="metrics-grid-mobile" style={{display: 'grid', gridTemplateColumns: window.innerWidth < 768 ? 'repeat(2, 1fr)' : 'repeat(2, 1fr)', gap: '10px', marginTop: '15px'}}>
+                <div className="metrics-grid-mobile" style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px', marginTop: '15px'}}>
                   <div style={styles.metricCard}>
                     <div style={styles.metricValue}>{metrics.responseTime} ms</div>
                     <div style={styles.metricLabel}>Время ответа</div>
@@ -601,10 +602,11 @@ const ScalingDemo = () => {
               <div style={styles.tableWrapper}>
                 <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                   <thead>
-                    <tr><th style={styles.comparisonCell}>Характеристика</th>
+                    <tr>
+                      <th style={styles.comparisonCell}>Характеристика</th>
                       <th style={styles.comparisonCell}>Вертикальное</th>
                       <th style={styles.comparisonCell}>Горизонтальное</th>
-                     </tr>
+                    </tr>
                   </thead>
                   <tbody>
                     <tr><td style={styles.comparisonCell}>Макс. масштаб</td><td style={styles.comparisonCell}>~32 ядра, 512GB RAM</td><td style={styles.comparisonCell}>1000+ узлов</td></tr>
@@ -753,4 +755,9 @@ console.log(dockerCompose);`}
   );
 };
 
-export default ScalingDemo;
+// Оборачиваем компонент в BrowserOnly для предотвращения ошибок SSR, сохраняя исходное имя
+export default () => (
+  <BrowserOnly>
+    {() => <ScalingDemo />}
+  </BrowserOnly>
+);

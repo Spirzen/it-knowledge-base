@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const AuthenticationFlow = () => {
   const [step, setStep] = useState(0);
@@ -205,75 +206,79 @@ const AuthenticationFlow = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <h2 style={styles.header}>🔐 Путь пользователя</h2>
-      
-      <FlowDiagram />
-
-      <div style={styles.infoPanel}>
-        <div style={styles.stepBadge}>
-          Этап {step + 1} из {stepsData.length}
-        </div>
-        
-        <h3 style={styles.stageTitle}>{currentStepData.title}</h3>
-        <p style={styles.stageSubtitle}>{currentStepData.subtitle}</p>
-        
-        <div style={styles.descriptionBox}>
-          <strong>Что происходит:</strong><br />
-          {currentStepData.description}
-        </div>
-
-        <div style={styles.actionsRow}>
-          <div style={styles.actionItem}>
-            <strong>Действие пользователя:</strong><br />
-            {currentStepData.userAction}
-          </div>
-          <div style={styles.actionItem}>
-            <strong>Действие сервера:</strong><br />
-            {currentStepData.serverAction}
-          </div>
-        </div>
-
-        <div style={styles.controls}>
-          {canReset && (
-            <button 
-              onClick={handleReset} 
-              style={styles.buttonSecondary}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = '#f3f4f6';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = '#ffffff';
-              }}
-            >
-              🔄 Начать заново
-            </button>
-          )}
+    <BrowserOnly>
+      {() => (
+        <div style={styles.container}>
+          <h2 style={styles.header}>🔐 Путь пользователя</h2>
           
-          <button 
-            onClick={handleNext} 
-            disabled={!canNext}
-            style={{
-              ...styles.buttonPrimary,
-              opacity: canNext ? 1 : 0.5,
-              cursor: canNext ? 'pointer' : 'default'
-            }}
-            onMouseEnter={(e) => {
-              if (canNext) {
-                e.currentTarget.style.backgroundColor = '#1d4ed8';
-              }
-            }}
-            onMouseLeave={(e) => {
-              if (canNext) {
-                e.currentTarget.style.backgroundColor = '#2563eb';
-              }
-            }}
-          >
-            {canNext ? "➡️ Перейти к следующему этапу" : "✅ Завершить"}
-          </button>
+          <FlowDiagram />
+
+          <div style={styles.infoPanel}>
+            <div style={styles.stepBadge}>
+              Этап {step + 1} из {stepsData.length}
+            </div>
+            
+            <h3 style={styles.stageTitle}>{currentStepData.title}</h3>
+            <p style={styles.stageSubtitle}>{currentStepData.subtitle}</p>
+            
+            <div style={styles.descriptionBox}>
+              <strong>Что происходит:</strong><br />
+              {currentStepData.description}
+            </div>
+
+            <div style={styles.actionsRow}>
+              <div style={styles.actionItem}>
+                <strong>Действие пользователя:</strong><br />
+                {currentStepData.userAction}
+              </div>
+              <div style={styles.actionItem}>
+                <strong>Действие сервера:</strong><br />
+                {currentStepData.serverAction}
+              </div>
+            </div>
+
+            <div style={styles.controls}>
+              {canReset && (
+                <button 
+                  onClick={handleReset} 
+                  style={styles.buttonSecondary}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = '#f3f4f6';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = '#ffffff';
+                  }}
+                >
+                  🔄 Начать заново
+                </button>
+              )}
+              
+              <button 
+                onClick={handleNext} 
+                disabled={!canNext}
+                style={{
+                  ...styles.buttonPrimary,
+                  opacity: canNext ? 1 : 0.5,
+                  cursor: canNext ? 'pointer' : 'default'
+                }}
+                onMouseEnter={(e) => {
+                  if (canNext) {
+                    e.currentTarget.style.backgroundColor = '#1d4ed8';
+                  }
+                }}
+                onMouseLeave={(e) => {
+                  if (canNext) {
+                    e.currentTarget.style.backgroundColor = '#2563eb';
+                  }
+                }}
+              >
+                {canNext ? "➡️ Перейти к следующему этапу" : "✅ Завершить"}
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </BrowserOnly>
   );
 };
 
@@ -564,21 +569,7 @@ const styles = {
   }
 };
 
-const styleSheet = document.createElement("style");
-styleSheet.textContent = `
-  @media (max-width: 768px) {
-    .button-primary, .button-secondary {
-      width: 100%;
-      white-space: normal !important;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .action-item {
-      min-width: 100% !important;
-    }
-  }
-`;
-document.head.appendChild(styleSheet);
+// Убираем динамическое добавление стилей в head, так как это может вызвать проблемы с SSR
+// Вместо этого добавляем медиа-запросы непосредственно в компонент через style тег внутри BrowserOnly
 
 export default AuthenticationFlow;

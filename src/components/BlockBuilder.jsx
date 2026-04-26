@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
-const BlockBuilder = () => {
+const BlockBuilderContent = () => {
   const [blocks, setBlocks] = useState([]);
   const [currentLevel, setCurrentLevel] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
@@ -240,6 +241,14 @@ const BlockBuilder = () => {
         </div>
       )}
     </div>
+  );
+};
+
+const BlockBuilder = () => {
+  return (
+    <BrowserOnly fallback={<div>Loading...</div>}>
+      {() => <BlockBuilderContent />}
+    </BrowserOnly>
   );
 };
 

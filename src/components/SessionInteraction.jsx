@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const COLORS = {
   primary: '#007bff',
@@ -51,7 +52,7 @@ const STAGES = [
   },
 ];
 
-const SessionInteraction = () => {
+const SessionInteractionContent = () => {
   const [currentStageIndex, setCurrentStageIndex] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -449,6 +450,14 @@ const SessionInteraction = () => {
         }
       `}</style>
     </div>
+  );
+};
+
+const SessionInteraction = () => {
+  return (
+    <BrowserOnly fallback={<div style={{padding: '20px', textAlign: 'center'}}>Загрузка интерактива...</div>}>
+      {() => <SessionInteractionContent />}
+    </BrowserOnly>
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const RequirementsAnalysisDemo = () => {
   const [activeSection, setActiveSection] = useState(null);
@@ -123,7 +124,7 @@ const RequirementsAnalysisDemo = () => {
     { id: 'traceability', name: 'Трассировка' }
   ];
 
-  return (
+  const renderContent = () => (
     <div style={{
       fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
       maxWidth: '1400px',
@@ -851,6 +852,12 @@ const RequirementsAnalysisDemo = () => {
         }
       `}</style>
     </div>
+  );
+
+  return (
+    <BrowserOnly>
+      {() => renderContent()}
+    </BrowserOnly>
   );
 };
 

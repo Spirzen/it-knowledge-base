@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const CodeTransformationDemo = () => {
   const [selectedExample, setSelectedExample] = useState('java');
@@ -524,4 +525,5 @@ Frame size 8
   );
 };
 
+// Экспортируем компонент с тем же именем, чтобы старые импорты работали
 export default CodeTransformationDemo;

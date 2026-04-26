@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const COLORS = {
   primary: '#007bff',
@@ -214,118 +215,112 @@ const SynchronousInteraction = () => {
   });
 
   return (
-    <div style={getContainerStyle()}>
-      <h2 style={getTitleStyle()}>
-        Синхронное взаимодействие системы
-      </h2>
+    <BrowserOnly>
+      {() => (
+        <div style={getContainerStyle()}>
+          <h2 style={getTitleStyle()}>
+            Синхронное взаимодействие системы
+          </h2>
 
-      {/* Блок Клиента (Инициатор) */}
-      <div style={getStatusRowStyle(currentStageIndex >= 0 && currentStageIndex < STAGES.length, 'client')}>
-        <span style={getIconStyle(COLORS.primary, currentStageIndex === 0)}>▶</span>
-        <span style={getTextStyle(currentStageIndex === 0, COLORS.primary)}>Клиент (Инициатор)</span>
-        <span style={getArrowStyle(currentStageIndex === 0, 'right')}>➜</span>
-      </div>
-
-      {/* Линия соединения (визуальная) */}
-      <div style={getLineStyle()} />
-
-      {/* Блок Удаленной Системы */}
-      <div style={getStatusRowStyle(currentStageIndex >= 1 && currentStageIndex < STAGES.length, 'server')}>
-        <span style={getIconStyle(currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral, currentStageIndex >= 1)}>☁</span>
-        <span style={getTextStyle(currentStageIndex >= 1, currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral)}>Удаленная Система</span>
-        <span style={getArrowStyle(currentStageIndex === 2, 'left')}>➤</span>
-      </div>
-
-      {/* Индикатор текущего этапа */}
-      <div style={{ marginTop: 'clamp(20px, 5vw, 30px)', textAlign: 'center', width: '100%' }}>
-        <p style={getStatusLabelStyle()}>Текущее состояние:</p>
-        {STAGES[currentStageIndex] ? (
-          <div style={getStatusBadgeStyle(STAGES[currentStageIndex])}>
-            {STAGES[currentStageIndex].label}
+          <div style={getStatusRowStyle(currentStageIndex >= 0 && currentStageIndex < STAGES.length, 'client')}>
+            <span style={getIconStyle(COLORS.primary, currentStageIndex === 0)}>▶</span>
+            <span style={getTextStyle(currentStageIndex === 0, COLORS.primary)}>Клиент (Инициатор)</span>
+            <span style={getArrowStyle(currentStageIndex === 0, 'right')}>➜</span>
           </div>
-        ) : (
-          <div style={{ ...getStatusBadgeStyle({color: COLORS.text}), animation: 'none' }}>
-            Готов к запуску
-          </div>
-        )}
-      </div>
 
-      {/* Кнопка управления */}
-      {!isAnimating && !isCompleted ? (
-        <button 
-          onClick={startAnimation}
-          style={getButtonStyle()}
-          onTouchStart={(e) => {
-            if (!isAnimating) {
-              e.currentTarget.style.backgroundColor = COLORS.buttonHover;
+          <div style={getLineStyle()} />
+
+          <div style={getStatusRowStyle(currentStageIndex >= 1 && currentStageIndex < STAGES.length, 'server')}>
+            <span style={getIconStyle(currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral, currentStageIndex >= 1)}>☁</span>
+            <span style={getTextStyle(currentStageIndex >= 1, currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral)}>Удаленная Система</span>
+            <span style={getArrowStyle(currentStageIndex === 2, 'left')}>➤</span>
+          </div>
+
+          <div style={{ marginTop: 'clamp(20px, 5vw, 30px)', textAlign: 'center', width: '100%' }}>
+            <p style={getStatusLabelStyle()}>Текущее состояние:</p>
+            {STAGES[currentStageIndex] ? (
+              <div style={getStatusBadgeStyle(STAGES[currentStageIndex])}>
+                {STAGES[currentStageIndex].label}
+              </div>
+            ) : (
+              <div style={{ ...getStatusBadgeStyle({color: COLORS.text}), animation: 'none' }}>
+                Готов к запуску
+              </div>
+            )}
+          </div>
+
+          {!isAnimating && !isCompleted ? (
+            <button 
+              onClick={startAnimation}
+              style={getButtonStyle()}
+              onTouchStart={(e) => {
+                if (!isAnimating) {
+                  e.currentTarget.style.backgroundColor = COLORS.buttonHover;
+                }
+              }}
+              onTouchEnd={(e) => {
+                if (!isAnimating) {
+                  e.currentTarget.style.backgroundColor = COLORS.buttonBg;
+                }
+              }}
+              onMouseEnter={(e) => {
+                if (!isAnimating) {
+                  e.currentTarget.style.backgroundColor = COLORS.buttonHover;
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (!isAnimating) {
+                  e.currentTarget.style.backgroundColor = COLORS.buttonBg;
+                }
+              }}
+            >
+              Отправить запрос
+            </button>
+          ) : isCompleted ? (
+            <button 
+              onClick={resetAnimation}
+              style={getButtonStyle()}
+              onTouchStart={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonHover}
+              onTouchEnd={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonBg}
+              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonHover}
+              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonBg}
+            >
+              Повторить эксперимент
+            </button>
+          ) : (
+            <div style={{ marginTop: 'clamp(20px, 5vw, 30px)', color: COLORS.neutral, fontSize: 'clamp(12px, 3vw, 14px)' }}>
+              Обработка...
+            </div>
+          )}
+
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+
+          <style>{`
+            @keyframes pulse {
+              0% { box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.primary}40; }
+              70% { box-shadow: 0 0 0 10px ${STAGES[currentStageIndex]?.color || COLORS.primary}00; }
+              100% { box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.primary}00; }
             }
-          }}
-          onTouchEnd={(e) => {
-            if (!isAnimating) {
-              e.currentTarget.style.backgroundColor = COLORS.buttonBg;
+            
+            @media (max-width: 480px) {
+              .status-row {
+                flex-direction: column;
+                text-align: center;
+              }
             }
-          }}
-          onMouseEnter={(e) => {
-            if (!isAnimating) {
-              e.currentTarget.style.backgroundColor = COLORS.buttonHover;
+            
+            button {
+              touch-action: manipulation;
+              -webkit-tap-highlight-color: transparent;
             }
-          }}
-          onMouseLeave={(e) => {
-            if (!isAnimating) {
-              e.currentTarget.style.backgroundColor = COLORS.buttonBg;
+            
+            html {
+              scroll-behavior: smooth;
             }
-          }}
-        >
-          Отправить запрос
-        </button>
-      ) : isCompleted ? (
-        <button 
-          onClick={resetAnimation}
-          style={getButtonStyle()}
-          onTouchStart={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonHover}
-          onTouchEnd={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonBg}
-          onMouseEnter={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonHover}
-          onMouseLeave={(e) => e.currentTarget.style.backgroundColor = COLORS.buttonBg}
-        >
-          Повторить эксперимент
-        </button>
-      ) : (
-        <div style={{ marginTop: 'clamp(20px, 5vw, 30px)', color: COLORS.neutral, fontSize: 'clamp(12px, 3vw, 14px)' }}>
-          Обработка...
+          `}</style>
         </div>
       )}
-
-      {/* Мета-тег для адаптивности на мобильных устройствах */}
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-
-      {/* Вставка стилей анимации */}
-      <style>{`
-        @keyframes pulse {
-          0% { box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.primary}40; }
-          70% { box-shadow: 0 0 0 10px ${STAGES[currentStageIndex]?.color || COLORS.primary}00; }
-          100% { box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.primary}00; }
-        }
-        
-        /* Дополнительные адаптивные стили */
-        @media (max-width: 480px) {
-          .status-row {
-            flex-direction: column;
-            text-align: center;
-          }
-        }
-        
-        /* Улучшение touch targets для мобильных устройств */
-        button {
-          touch-action: manipulation;
-          -webkit-tap-highlight-color: transparent;
-        }
-        
-        /* Плавная прокрутка для мобильных */
-        html {
-          scroll-behavior: smooth;
-        }
-      `}</style>
-    </div>
+    </BrowserOnly>
   );
 };
 

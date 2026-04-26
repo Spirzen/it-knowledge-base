@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
-const isBrowser = typeof window !== 'undefined';
+import BrowserOnly from './BrowserOnly';
 
 const EnglishWordRandomizer = () => {
-  const [items, setItems] = useState([]);
-  const [isReady, setIsReady] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(isBrowser ? window.innerWidth : 768);
+  const isBrowser = typeof window !== 'undefined';
 
   const extractDataFromPage = () => {
     if (!isBrowser) return { data: [], cols: 0 };
@@ -245,4 +242,10 @@ const EnglishWordRandomizer = () => {
   );
 };
 
-export default EnglishWordRandomizer;
+export default function WrappedEnglishWordRandomizer() {
+  return (
+    <BrowserOnly fallback={<div />}>
+      {() => <EnglishWordRandomizer />}
+    </BrowserOnly>
+  );
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const ORMDemo = () => {
   const [activeTab, setActiveTab] = useState('visual');
@@ -338,88 +339,90 @@ await userRepository.save(user);`
   };
 
   return (
-    <div style={styles.container}>
-      <div>
-        <h3 style={styles.header}>
-          <span>🗺️</span> ORM (Object-Relational Mapping)
-        </h3>
-        <p style={styles.subtitle}>
-          Преобразование между реляционной БД и объектно-ориентированными классами
-        </p>
-      </div>
-
-      <div style={styles.tabs}>
-        <button style={styles.tab(activeTab === 'visual')} onClick={() => setActiveTab('visual')}>Визуальное отображение</button>
-        <button style={styles.tab(activeTab === 'code')} onClick={() => setActiveTab('code')}>Примеры кода</button>
-        <button style={styles.tab(activeTab === 'relations')} onClick={() => setActiveTab('relations')}>Связи</button>
-      </div>
-
-      {activeTab === 'visual' && (
-        <div>
-          <div style={styles.entitySelector}>
-            {Object.keys(entities).map(key => (
-              <button 
-                key={key} 
-                style={styles.entityButton(selectedEntity === key)} 
-                onClick={() => setSelectedEntity(key)}
-              >
-                {entities[key].name}
-              </button>
-            ))}
+    <BrowserOnly>
+      {() => (
+        <div style={styles.container}>
+          <div>
+            <h3 style={styles.header}>
+              <span>🗺️</span> ORM (Object-Relational Mapping)
+            </h3>
+            <p style={styles.subtitle}>
+              Преобразование между реляционной БД и объектно-ориентированными классами
+            </p>
           </div>
 
-          <div style={styles.mappingRow}>
-            <div style={styles.halfPanel}>
-              <div style={styles.panelTitle}>
-                <span>🗄️ SQL: {currentEntity.table}</span>
-                <span style={styles.ormBadge}>📦 → 🗄️</span>
-              </div>
-              <div style={styles.tableVisual}>
-                <div style={styles.tableHeader}>
-                  <span>COLUMN</span>
-                  <span>TYPE</span>
-                  <span>PK/FK</span>
-                </div>
-                {currentEntity.fields.map(field => (
-                  <div key={field.name} style={styles.tableRow}>
-                    <span>{field.name}</span>
-                    <span style={{color: '#e8bf6a'}}>{field.type}</span>
-                    <span>{field.pk ? '🔑 PK' : field.fk ? '🔗 FK' : '-'}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div style={styles.halfPanel}>
-              <div style={styles.panelTitle}>
-                <span>📦 ORM: {currentEntity.name}</span>
-                <span style={styles.ormBadge}>🗄️ → 📦</span>
-              </div>
-              <div style={styles.classVisual}>
-                <div style={styles.className}>
-                  <span style={{fontSize: 'clamp(0.6rem, 2vw, 0.7rem)'}}>@Entity()</span><br/>
-                  <strong>class {currentEntity.name}</strong>
-                </div>
-                {currentEntity.fields.map(field => (
-                  <div key={field.name} style={styles.fieldRow}>
-                    <span><span style={styles.annotationBadge}>@Column</span></span>
-                    <span style={{color: '#8ec07c'}}>{field.name}</span>
-                    <span style={{color: '#e8bf6a'}}>{field.ormType}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+          <div style={styles.tabs}>
+            <button style={styles.tab(activeTab === 'visual')} onClick={() => setActiveTab('visual')}>Визуальное отображение</button>
+            <button style={styles.tab(activeTab === 'code')} onClick={() => setActiveTab('code')}>Примеры кода</button>
+            <button style={styles.tab(activeTab === 'relations')} onClick={() => setActiveTab('relations')}>Связи</button>
           </div>
-        </div>
-      )}
 
-      {activeTab === 'code' && (
-        <div style={styles.mappingRow}>
-          <div style={styles.halfPanel}>
-            <div style={styles.panelTitle}>
-              <span>📝 Сущность (TypeORM)</span>
+          {activeTab === 'visual' && (
+            <div>
+              <div style={styles.entitySelector}>
+                {Object.keys(entities).map(key => (
+                  <button 
+                    key={key} 
+                    style={styles.entityButton(selectedEntity === key)} 
+                    onClick={() => setSelectedEntity(key)}
+                  >
+                    {entities[key].name}
+                  </button>
+                ))}
+              </div>
+
+              <div style={styles.mappingRow}>
+                <div style={styles.halfPanel}>
+                  <div style={styles.panelTitle}>
+                    <span>🗄️ SQL: {currentEntity.table}</span>
+                    <span style={styles.ormBadge}>📦 → 🗄️</span>
+                  </div>
+                  <div style={styles.tableVisual}>
+                    <div style={styles.tableHeader}>
+                      <span>COLUMN</span>
+                      <span>TYPE</span>
+                      <span>PK/FK</span>
+                    </div>
+                    {currentEntity.fields.map(field => (
+                      <div key={field.name} style={styles.tableRow}>
+                        <span>{field.name}</span>
+                        <span style={{color: '#e8bf6a'}}>{field.type}</span>
+                        <span>{field.pk ? '🔑 PK' : field.fk ? '🔗 FK' : '-'}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div style={styles.halfPanel}>
+                  <div style={styles.panelTitle}>
+                    <span>📦 ORM: {currentEntity.name}</span>
+                    <span style={styles.ormBadge}>🗄️ → 📦</span>
+                  </div>
+                  <div style={styles.classVisual}>
+                    <div style={styles.className}>
+                      <span style={{fontSize: 'clamp(0.6rem, 2vw, 0.7rem)'}}>@Entity()</span><br/>
+                      <strong>class {currentEntity.name}</strong>
+                    </div>
+                    {currentEntity.fields.map(field => (
+                      <div key={field.name} style={styles.fieldRow}>
+                        <span><span style={styles.annotationBadge}>@Column</span></span>
+                        <span style={{color: '#8ec07c'}}>{field.name}</span>
+                        <span style={{color: '#e8bf6a'}}>{field.ormType}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
             </div>
-            <pre style={styles.codeBlock}>
+          )}
+
+          {activeTab === 'code' && (
+            <div style={styles.mappingRow}>
+              <div style={styles.halfPanel}>
+                <div style={styles.panelTitle}>
+                  <span>📝 Сущность (TypeORM)</span>
+                </div>
+                <pre style={styles.codeBlock}>
 {`@Entity('users')
 export class User {
   @PrimaryGeneratedColumn()
@@ -437,89 +440,89 @@ export class User {
   @OneToMany(() => Post, post => post.author)
   posts: Post[];
 }`}
-            </pre>
-          </div>
-
-          <div style={styles.halfPanel}>
-            <div style={styles.panelTitle}>
-              <span>ORM Запросы</span>
-              <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.3rem'}}>
-                {['find', 'create', 'update'].map(type => (
-                  <button key={type} style={styles.queryButton} onClick={() => handleExecuteQuery(type)}>
-                    ▶️ {type}
-                  </button>
-                ))}
+                </pre>
               </div>
-            </div>
-            <div style={styles.entitySelector}>
-              {Object.keys(ormQueries).map(key => (
-                <button 
-                  key={key} 
-                  style={styles.entityButton(selectedEntity === key)} 
-                  onClick={() => setSelectedEntity(key)}
-                >
-                  {entities[key].name}
-                </button>
-              ))}
-            </div>
-            <pre style={styles.codeBlock}>
-              {ormQueries[selectedEntity].find}
-            </pre>
-            {showQuery && queryResult && (
-              <div style={styles.queryResult}>
-                {queryResult.message}
-              </div>
-            )}
-            <details>
-              <summary style={styles.detailsSummary}>
-                Другие операции
-              </summary>
-              <pre style={{...styles.codeBlock, marginTop: '0.3rem'}}>{ormQueries[selectedEntity].create}</pre>
-              <pre style={{...styles.codeBlock, marginTop: '0.3rem'}}>{ormQueries[selectedEntity].update}</pre>
-            </details>
-          </div>
-        </div>
-      )}
 
-      {activeTab === 'relations' && (
-        <div style={styles.mappingRow}>
-          <div style={styles.halfPanel}>
-            <div style={styles.panelTitle}>
-              <span>🔗 ER-диаграмма</span>
-            </div>
-            <div style={{...styles.tableVisual, padding: 'clamp(0.6rem, 2.5vw, 0.8rem)'}}>
-              <div style={styles.relationContainer}>
-                <div style={styles.relationItem('rgba(102, 126, 234, 0.1)')}>
-                  <strong>users</strong>
-                  <div style={styles.relationText}>id (PK) | username | email</div>
-                  <div style={styles.relationBadgeContainer}>
-                    <span style={styles.ormBadge}>↓ OneToMany → posts</span>
-                    <span style={{...styles.ormBadge}}>↔ ManyToMany → roles</span>
+              <div style={styles.halfPanel}>
+                <div style={styles.panelTitle}>
+                  <span>ORM Запросы</span>
+                  <div style={{display: 'flex', flexWrap: 'wrap', gap: '0.3rem'}}>
+                    {['find', 'create', 'update'].map(type => (
+                      <button key={type} style={styles.queryButton} onClick={() => handleExecuteQuery(type)}>
+                        ▶️ {type}
+                      </button>
+                    ))}
                   </div>
                 </div>
-                <div style={{...styles.relationItem('rgba(142, 192, 124, 0.1)'), marginLeft: 'clamp(0.5rem, 3vw, 1rem)'}}>
-                  <strong>posts</strong>
-                  <div style={styles.relationText}>id (PK) | title | author_id (FK → users)</div>
-                  <div style={styles.relationBadgeContainer}>
-                    <span style={styles.ormBadge}>↑ ManyToOne → users</span>
-                  </div>
+                <div style={styles.entitySelector}>
+                  {Object.keys(ormQueries).map(key => (
+                    <button 
+                      key={key} 
+                      style={styles.entityButton(selectedEntity === key)} 
+                      onClick={() => setSelectedEntity(key)}
+                    >
+                      {entities[key].name}
+                    </button>
+                  ))}
                 </div>
-                <div style={styles.relationItem('rgba(232, 191, 106, 0.1)')}>
-                  <strong>roles</strong>
-                  <div style={styles.relationText}>id (PK) | name</div>
-                  <div style={styles.relationBadgeContainer}>
-                    <span style={styles.ormBadge}>↔ ManyToMany → users (через user_roles)</span>
+                <pre style={styles.codeBlock}>
+                  {ormQueries[selectedEntity].find}
+                </pre>
+                {showQuery && queryResult && (
+                  <div style={styles.queryResult}>
+                    {queryResult.message}
+                  </div>
+                )}
+                <details>
+                  <summary style={styles.detailsSummary}>
+                    Другие операции
+                  </summary>
+                  <pre style={{...styles.codeBlock, marginTop: '0.3rem'}}>{ormQueries[selectedEntity].create}</pre>
+                  <pre style={{...styles.codeBlock, marginTop: '0.3rem'}}>{ormQueries[selectedEntity].update}</pre>
+                </details>
+              </div>
+            </div>
+          )}
+
+          {activeTab === 'relations' && (
+            <div style={styles.mappingRow}>
+              <div style={styles.halfPanel}>
+                <div style={styles.panelTitle}>
+                  <span>🔗 ER-диаграмма</span>
+                </div>
+                <div style={{...styles.tableVisual, padding: 'clamp(0.6rem, 2.5vw, 0.8rem)'}}>
+                  <div style={styles.relationContainer}>
+                    <div style={styles.relationItem('rgba(102, 126, 234, 0.1)')}>
+                      <strong>users</strong>
+                      <div style={styles.relationText}>id (PK) | username | email</div>
+                      <div style={styles.relationBadgeContainer}>
+                        <span style={styles.ormBadge}>↓ OneToMany → posts</span>
+                        <span style={{...styles.ormBadge}}>↔ ManyToMany → roles</span>
+                      </div>
+                    </div>
+                    <div style={{...styles.relationItem('rgba(142, 192, 124, 0.1)'), marginLeft: 'clamp(0.5rem, 3vw, 1rem)'}}>
+                      <strong>posts</strong>
+                      <div style={styles.relationText}>id (PK) | title | author_id (FK → users)</div>
+                      <div style={styles.relationBadgeContainer}>
+                        <span style={styles.ormBadge}>↑ ManyToOne → users</span>
+                      </div>
+                    </div>
+                    <div style={styles.relationItem('rgba(232, 191, 106, 0.1)')}>
+                      <strong>roles</strong>
+                      <div style={styles.relationText}>id (PK) | name</div>
+                      <div style={styles.relationBadgeContainer}>
+                        <span style={styles.ormBadge}>↔ ManyToMany → users (через user_roles)</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div style={styles.halfPanel}>
-            <div style={styles.panelTitle}>
-              <span>📦 Код связей</span>
-            </div>
-            <pre style={styles.codeBlock}>
+              <div style={styles.halfPanel}>
+                <div style={styles.panelTitle}>
+                  <span>📦 Код связей</span>
+                </div>
+                <pre style={styles.codeBlock}>
 {`// User ↔ Post (OneToMany)
 @OneToMany(() => Post, post => post.author)
 posts: Post[];
@@ -533,11 +536,13 @@ author: User;
 @ManyToMany(() => Role)
 @JoinTable({ name: 'user_roles' })
 roles: Role[];`}
-            </pre>
-          </div>
+                </pre>
+              </div>
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </BrowserOnly>
   );
 };
 

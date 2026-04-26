@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const COLORS = {
   event: '#ffc107',
@@ -28,7 +29,7 @@ const STAGES = [
   },
 ];
 
-const ReactiveInteraction = () => {
+const ReactiveInteractionContent = () => {
   const [currentStageIndex, setCurrentStageIndex] = useState(0);
   const [isCompleted, setIsCompleted] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -172,10 +173,6 @@ const ReactiveInteraction = () => {
       animation: 'pulse 1.5s infinite',
       textAlign: 'center',
       whiteSpace: 'nowrap',
-      '@media (max-width: 480px)': {
-        whiteSpace: 'normal',
-        wordBreak: 'break-word',
-      },
     };
   };
 
@@ -203,9 +200,6 @@ const ReactiveInteraction = () => {
     width: '100%',
     justifyContent: 'center',
     flexDirection: 'row',
-    '@media (max-width: 640px)': {
-      flexDirection: 'column',
-    },
   });
 
   const getTitleStyle = () => ({
@@ -238,7 +232,7 @@ const ReactiveInteraction = () => {
   
   const getSubscriberStyle = (index, isActive, type) => {
     const baseStyle = getStatusRowStyle(isActive, type);
-    if (isMobile || (typeof window !== 'undefined' && window.innerWidth <= 640)) {
+    if (isMobile) {
       return {
         ...baseStyle,
         flexDirection: 'row',
@@ -391,6 +385,14 @@ const ReactiveInteraction = () => {
         </div>
       )}
     </div>
+  );
+};
+
+const ReactiveInteraction = () => {
+  return (
+    <BrowserOnly fallback={<div>Загрузка...</div>}>
+      {() => <ReactiveInteractionContent />}
+    </BrowserOnly>
   );
 };
 

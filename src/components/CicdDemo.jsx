@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
-const CicdDemo = () => {
+// Внутренний компонент с логикой (не рендерится на сервере)
+const CicdDemoContent = () => {
   const [activeTab, setActiveTab] = useState('pipeline');
   const [pipelineStatus, setPipelineStatus] = useState('idle');
   const [currentStep, setCurrentStep] = useState(null);
@@ -861,4 +863,11 @@ jobs:
   );
 };
 
-export default CicdDemo;
+// Обертка BrowserOnly, которая экспортирует компонент с правильным именем
+export default function CicdDemo() {
+  return (
+    <BrowserOnly>
+      {() => <CicdDemoContent />}
+    </BrowserOnly>
+  );
+}

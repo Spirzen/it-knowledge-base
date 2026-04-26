@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const DataStructureLinear = () => {
   const [activeTab, setActiveTab] = useState('js');
   const [structureType, setStructureType] = useState('linked');
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [windowWidth, setWindowWidth] = useState(0); 
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
+    
+    setWindowWidth(window.innerWidth);
+    
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -482,6 +486,7 @@ head.Next = newNode;`
           </button>
         </pre>
         
+        {/* Обертка BrowserOnly для визуализации */}
         <div style={{
           padding: isMobile ? '16px' : '20px',
           borderTop: '1px solid #e0e0e0',
@@ -494,7 +499,9 @@ head.Next = newNode;`
           gap: '20px',
           overflowX: 'auto',
         }}>
-          {renderVisualization()}
+          <BrowserOnly>
+            {renderVisualization()}
+          </BrowserOnly>
         </div>
 
         <div style={{

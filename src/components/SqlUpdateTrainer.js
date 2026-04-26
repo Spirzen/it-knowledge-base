@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const initialData = [
   { id: 1, name: 'Иван', age: 25, city: 'Москва', salary: 50000 },
@@ -544,4 +545,10 @@ const SqlUpdateTrainer = () => {
   );
 };
 
-export default SqlUpdateTrainer;
+const SqlUpdateTrainerWrapper = () => (
+  <BrowserOnly>
+    {() => <SqlUpdateTrainer />}
+  </BrowserOnly>
+);
+
+export default SqlUpdateTrainerWrapper;

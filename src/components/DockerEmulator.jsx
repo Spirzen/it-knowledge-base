@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const DockerEmulator = () => {
   const [images, setImages] = useState([
@@ -283,694 +284,683 @@ const DockerEmulator = () => {
   };
 
   return (
-    <div style={{
-      fontFamily: 'system-ui, -apple-system, "Segoe UI", monospace',
-      maxWidth: '1400px',
-      margin: '0 auto',
-      padding: 'clamp(10px, 3vw, 20px)',
-      backgroundColor: '#1e1e1e',
-      borderRadius: '12px',
-      color: '#d4d4d4',
-      minHeight: '100vh'
-    }}>
-      <style>{`
-        @keyframes blink {
-          0%, 50% { opacity: 1; }
-          51%, 100% { opacity: 0; }
-        }
-        .cursor-blink {
-          animation: blink 1s step-end infinite;
-        }
-        .log-enter {
-          animation: slideIn 0.2s ease-out;
-        }
-        @keyframes slideIn {
-          from {
-            opacity: 0;
-            transform: translateX(-20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-        button:active {
-          transform: scale(0.98);
-        }
-        
-        /* Responsive styles */
-        @media (max-width: 768px) {
-          .command-panel {
-            grid-template-columns: 1fr !important;
-          }
-          .containers-grid {
-            grid-template-columns: 1fr !important;
-          }
-          .image-item, .container-item {
-            flex-direction: column;
-            align-items: flex-start !important;
-          }
-          .action-buttons {
-            margin-top: 10px;
-            width: 100%;
-            justify-content: flex-start !important;
-          }
-          .table-header {
-            display: none !important;
-          }
-          .card-view {
-            display: block !important;
-          }
-        }
-        
-        @media (max-width: 480px) {
-          .command-input-group {
-            flex-direction: column;
-          }
-          .command-input-group input,
-          .command-input-group select,
-          .command-input-group button {
-            width: 100%;
-            margin-bottom: 8px;
-          }
-          button {
-            width: 100%;
-          }
-          .terminal-input {
-            font-size: 10px;
-          }
-        }
-        
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-          width: 8px;
-          height: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-          background: #252526;
-          border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-          background: #0e639c;
-          border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-          background: #1177bb;
-        }
-        
-        .card-view {
-          display: none;
-        }
-        
-        @media (max-width: 768px) {
-          .card-view {
-            display: block;
-          }
-          .table-view {
-            display: none;
-          }
-        }
-      `}</style>
-
-      {/* Header */}
-      <div style={{
-        borderBottom: '2px solid #0e639c',
-        paddingBottom: 'clamp(10px, 2vw, 15px)',
-        marginBottom: 'clamp(15px, 3vw, 20px)',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-        gap: '10px'
-      }}>
-        <div>
-          <h1 style={{ 
-            margin: 0, 
-            color: '#0e639c', 
-            fontSize: 'clamp(20px, 5vw, 28px)' 
-          }}>
-            Docker Emulator CLI
-          </h1>
-          <p style={{ 
-            margin: '5px 0 0', 
-            color: '#858585', 
-            fontSize: 'clamp(11px, 3vw, 14px)' 
-          }}>
-            Интерактивный эмулятор Docker командной строки
-          </p>
-        </div>
-        
-        {/* Mobile Menu Toggle */}
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          style={{
-            display: 'none',
-            padding: '10px',
-            backgroundColor: '#0e639c',
-            border: 'none',
-            borderRadius: '4px',
-            color: 'white',
-            cursor: 'pointer',
-            '@media (max-width: 768px)': {
-              display: 'block'
+    <BrowserOnly>
+      {() => (
+        <div style={{
+          fontFamily: 'system-ui, -apple-system, "Segoe UI", monospace',
+          maxWidth: '1400px',
+          margin: '0 auto',
+          padding: 'clamp(10px, 3vw, 20px)',
+          backgroundColor: '#1e1e1e',
+          borderRadius: '12px',
+          color: '#d4d4d4',
+          minHeight: '100vh'
+        }}>
+          <style>{`
+            @keyframes blink {
+              0%, 50% { opacity: 1; }
+              51%, 100% { opacity: 0; }
             }
-          }}
-          className="mobile-menu-toggle"
-        >
-          {isMobileMenuOpen ? '✕' : '☰'} Меню
-        </button>
-      </div>
+            .cursor-blink {
+              animation: blink 1s step-end infinite;
+            }
+            .log-enter {
+              animation: slideIn 0.2s ease-out;
+            }
+            @keyframes slideIn {
+              from {
+                opacity: 0;
+                transform: translateX(-20px);
+              }
+              to {
+                opacity: 1;
+                transform: translateX(0);
+              }
+            }
+            button:active {
+              transform: scale(0.98);
+            }
+            
+            @media (max-width: 768px) {
+              .command-panel {
+                grid-template-columns: 1fr !important;
+              }
+              .containers-grid {
+                grid-template-columns: 1fr !important;
+              }
+              .image-item, .container-item {
+                flex-direction: column;
+                align-items: flex-start !important;
+              }
+              .action-buttons {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: flex-start !important;
+              }
+              .table-header {
+                display: none !important;
+              }
+              .card-view {
+                display: block !important;
+              }
+            }
+            
+            @media (max-width: 480px) {
+              .command-input-group {
+                flex-direction: column;
+              }
+              .command-input-group input,
+              .command-input-group select,
+              .command-input-group button {
+                width: 100%;
+                margin-bottom: 8px;
+              }
+              button {
+                width: 100%;
+              }
+              .terminal-input {
+                font-size: 10px;
+              }
+            }
+            
+            ::-webkit-scrollbar {
+              width: 8px;
+              height: 8px;
+            }
+            
+            ::-webkit-scrollbar-track {
+              background: #252526;
+              border-radius: 4px;
+            }
+            
+            ::-webkit-scrollbar-thumb {
+              background: #0e639c;
+              border-radius: 4px;
+            }
+            
+            ::-webkit-scrollbar-thumb:hover {
+              background: #1177bb;
+            }
+            
+            .card-view {
+              display: none;
+            }
+            
+            @media (max-width: 768px) {
+              .card-view {
+                display: block;
+              }
+              .table-view {
+                display: none;
+              }
+            }
+          `}</style>
 
-      {/* Docker Commands Panel */}
-      <div className="command-panel" style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-        gap: 'clamp(10px, 2vw, 15px)',
-        marginBottom: 'clamp(15px, 3vw, 20px)'
-      }}>
-        {/* Pull */}
-        <div style={{
-          backgroundColor: '#252526',
-          padding: 'clamp(10px, 2vw, 15px)',
-          borderRadius: '8px',
-          borderLeft: `3px solid ${isLoading ? '#ff9800' : '#4caf50'}`
-        }}>
-          <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker pull</h3>
-          <div className="command-input-group" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            <input
-              type="text"
-              value={pullImageName}
-              onChange={(e) => setPullImageName(e.target.value)}
-              placeholder="ubuntu:22.04"
-              disabled={isLoading}
-              style={{
-                flex: 1,
-                minWidth: '150px',
-                padding: 'clamp(6px, 2vw, 8px)',
-                backgroundColor: '#3c3c3c',
-                border: '1px solid #0e639c',
-                borderRadius: '4px',
-                color: '#d4d4d4',
-                fontFamily: 'monospace',
-                fontSize: 'clamp(11px, 2.5vw, 13px)'
-              }}
-            />
-            <button
-              onClick={dockerPull}
-              disabled={isLoading}
-              style={{
-                padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
-                backgroundColor: '#0e639c',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: isLoading ? 'not-allowed' : 'pointer',
-                opacity: isLoading ? 0.6 : 1,
-                fontSize: 'clamp(12px, 2.5vw, 14px)'
-              }}
-            >
-              Pull
-            </button>
-          </div>
-        </div>
-
-        {/* Build */}
-        <div style={{
-          backgroundColor: '#252526',
-          padding: 'clamp(10px, 2vw, 15px)',
-          borderRadius: '8px',
-          borderLeft: '3px solid #2196f3'
-        }}>
-          <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker build</h3>
-          <div className="command-input-group" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            <input
-              type="text"
-              value={buildContext}
-              onChange={(e) => setBuildContext(e.target.value)}
-              placeholder="./path/to/Dockerfile"
-              disabled={isLoading}
-              style={{
-                flex: 1,
-                minWidth: '150px',
-                padding: 'clamp(6px, 2vw, 8px)',
-                backgroundColor: '#3c3c3c',
-                border: '1px solid #2196f3',
-                borderRadius: '4px',
-                color: '#d4d4d4',
-                fontFamily: 'monospace',
-                fontSize: 'clamp(11px, 2.5vw, 13px)'
-              }}
-            />
-            <button
-              onClick={dockerBuild}
-              disabled={isLoading}
-              style={{
-                padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
-                backgroundColor: '#2196f3',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: isLoading ? 'not-allowed' : 'pointer',
-                fontSize: 'clamp(12px, 2.5vw, 14px)'
-              }}
-            >
-              Build
-            </button>
-          </div>
-        </div>
-
-        {/* Run */}
-        <div style={{
-          backgroundColor: '#252526',
-          padding: 'clamp(10px, 2vw, 15px)',
-          borderRadius: '8px',
-          borderLeft: '3px solid #ff9800'
-        }}>
-          <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker run</h3>
-          <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
-            <select
-              value={selectedImage}
-              onChange={(e) => setSelectedImage(e.target.value)}
-              disabled={isLoading}
-              style={{
-                padding: 'clamp(6px, 2vw, 8px)',
-                backgroundColor: '#3c3c3c',
-                border: '1px solid #ff9800',
-                borderRadius: '4px',
-                color: '#d4d4d4',
-                fontSize: 'clamp(11px, 2.5vw, 13px)'
-              }}
-            >
-              <option value="">Выберите образ</option>
-              {images.map(img => (
-                <option key={img.id} value={`${img.repository}:${img.tag}`}>
-                  {img.repository}:{img.tag}
-                </option>
-              ))}
-            </select>
-            <input
-              type="text"
-              value={newContainerName}
-              onChange={(e) => setNewContainerName(e.target.value)}
-              placeholder="container-name"
-              disabled={isLoading}
-              style={{
-                padding: 'clamp(6px, 2vw, 8px)',
-                backgroundColor: '#3c3c3c',
-                border: '1px solid #ff9800',
-                borderRadius: '4px',
-                color: '#d4d4d4',
-                fontSize: 'clamp(11px, 2.5vw, 13px)'
-              }}
-            />
-            <button
-              onClick={dockerRun}
-              disabled={isLoading || !selectedImage || !newContainerName}
-              style={{
-                padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
-                backgroundColor: '#ff9800',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: (isLoading || !selectedImage || !newContainerName) ? 'not-allowed' : 'pointer',
-                fontSize: 'clamp(12px, 2.5vw, 14px)'
-              }}
-            >
-              Run
-            </button>
-          </div>
-        </div>
-
-        {/* Push */}
-        <div style={{
-          backgroundColor: '#252526',
-          padding: 'clamp(10px, 2vw, 15px)',
-          borderRadius: '8px',
-          borderLeft: '3px solid #9c27b0'
-        }}>
-          <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker push</h3>
-          <div className="command-input-group" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            <input
-              type="text"
-              value={pushImageName}
-              onChange={(e) => setPushImageName(e.target.value)}
-              placeholder="username/repo:tag"
-              disabled={isLoading}
-              style={{
-                flex: 1,
-                minWidth: '150px',
-                padding: 'clamp(6px, 2vw, 8px)',
-                backgroundColor: '#3c3c3c',
-                border: '1px solid #9c27b0',
-                borderRadius: '4px',
-                color: '#d4d4d4',
-                fontSize: 'clamp(11px, 2.5vw, 13px)'
-              }}
-            />
-            <button
-              onClick={dockerPush}
-              disabled={isLoading}
-              style={{
-                padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
-                backgroundColor: '#9c27b0',
-                color: 'white',
-                border: 'none',
-                borderRadius: '4px',
-                cursor: isLoading ? 'not-allowed' : 'pointer',
-                fontSize: 'clamp(12px, 2.5vw, 14px)'
-              }}
-            >
-              Push
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Images and Containers */}
-      <div className="containers-grid" style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-        gap: 'clamp(15px, 3vw, 20px)',
-        marginBottom: 'clamp(15px, 3vw, 20px)'
-      }}>
-        {/* Images List */}
-        <div style={{
-          backgroundColor: '#252526',
-          borderRadius: '8px',
-          padding: 'clamp(10px, 2vw, 15px)'
-        }}>
-          <h3 style={{ 
-            margin: '0 0 10px 0', 
-            fontSize: 'clamp(14px, 3vw, 16px)',
+          <div style={{
+            borderBottom: '2px solid #0e639c',
+            paddingBottom: 'clamp(10px, 2vw, 15px)',
+            marginBottom: 'clamp(15px, 3vw, 20px)',
             display: 'flex',
             justifyContent: 'space-between',
             alignItems: 'center',
             flexWrap: 'wrap',
             gap: '10px'
           }}>
-            <span>Local Images ({images.length})</span>
+            <div>
+              <h1 style={{ 
+                margin: 0, 
+                color: '#0e639c', 
+                fontSize: 'clamp(20px, 5vw, 28px)' 
+              }}>
+                Docker Emulator CLI
+              </h1>
+              <p style={{ 
+                margin: '5px 0 0', 
+                color: '#858585', 
+                fontSize: 'clamp(11px, 3vw, 14px)' 
+              }}>
+                Интерактивный эмулятор Docker командной строки
+              </p>
+            </div>
+            
             <button
-              onClick={dockerImages}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               style={{
-                padding: '4px 8px',
-                fontSize: 'clamp(10px, 2vw, 11px)',
+                display: 'none',
+                padding: '10px',
                 backgroundColor: '#0e639c',
                 border: 'none',
                 borderRadius: '4px',
                 color: 'white',
-                cursor: 'pointer'
+                cursor: 'pointer',
+                '@media (max-width: 768px)': {
+                  display: 'block'
+                }
               }}
+              className="mobile-menu-toggle"
             >
-              docker images
+              {isMobileMenuOpen ? '✕' : '☰'} Меню
             </button>
-          </h3>
-          
-          {/* Table View (Desktop) */}
-          <div className="table-view" style={{ maxHeight: '400px', overflowY: 'auto', fontSize: 'clamp(10px, 2.5vw, 12px)' }}>
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'minmax(120px, 3fr) minmax(80px, 2fr) minmax(60px, 1fr) minmax(60px, 1fr)', 
-              gap: '8px', 
-              padding: '8px 0', 
-              borderBottom: '1px solid #3c3c3c', 
-              fontWeight: 'bold' 
+          </div>
+
+          <div className="command-panel" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: 'clamp(10px, 2vw, 15px)',
+            marginBottom: 'clamp(15px, 3vw, 20px)'
+          }}>
+            <div style={{
+              backgroundColor: '#252526',
+              padding: 'clamp(10px, 2vw, 15px)',
+              borderRadius: '8px',
+              borderLeft: `3px solid ${isLoading ? '#ff9800' : '#4caf50'}`
             }}>
-              <span>REPOSITORY:TAG</span>
-              <span>IMAGE ID</span>
-              <span>SIZE</span>
-              <span>ACTIONS</span>
-            </div>
-            {images.map(img => (
-              <div key={img.id} style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'minmax(120px, 3fr) minmax(80px, 2fr) minmax(60px, 1fr) minmax(60px, 1fr)', 
-                gap: '8px', 
-                padding: '8px 0', 
-                borderBottom: '1px solid #3c3c3c',
-                alignItems: 'center'
-              }}>
-                <span style={{ wordBreak: 'break-word' }}>{img.repository}:{img.tag}</span>
-                <span style={{ fontFamily: 'monospace', fontSize: 'clamp(9px, 2vw, 11px)', wordBreak: 'break-word' }}>{img.id.substring(0, 12)}</span>
-                <span>{img.size}</span>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker pull</h3>
+              <div className="command-input-group" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <input
+                  type="text"
+                  value={pullImageName}
+                  onChange={(e) => setPullImageName(e.target.value)}
+                  placeholder="ubuntu:22.04"
+                  disabled={isLoading}
+                  style={{
+                    flex: 1,
+                    minWidth: '150px',
+                    padding: 'clamp(6px, 2vw, 8px)',
+                    backgroundColor: '#3c3c3c',
+                    border: '1px solid #0e639c',
+                    borderRadius: '4px',
+                    color: '#d4d4d4',
+                    fontFamily: 'monospace',
+                    fontSize: 'clamp(11px, 2.5vw, 13px)'
+                  }}
+                />
                 <button
-                  onClick={() => dockerRmi(img.id)}
+                  onClick={dockerPull}
+                  disabled={isLoading}
+                  style={{
+                    padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
+                    backgroundColor: '#0e639c',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '4px',
+                    cursor: isLoading ? 'not-allowed' : 'pointer',
+                    opacity: isLoading ? 0.6 : 1,
+                    fontSize: 'clamp(12px, 2.5vw, 14px)'
+                  }}
+                >
+                  Pull
+                </button>
+              </div>
+            </div>
+
+            <div style={{
+              backgroundColor: '#252526',
+              padding: 'clamp(10px, 2vw, 15px)',
+              borderRadius: '8px',
+              borderLeft: '3px solid #2196f3'
+            }}>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker build</h3>
+              <div className="command-input-group" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <input
+                  type="text"
+                  value={buildContext}
+                  onChange={(e) => setBuildContext(e.target.value)}
+                  placeholder="./path/to/Dockerfile"
+                  disabled={isLoading}
+                  style={{
+                    flex: 1,
+                    minWidth: '150px',
+                    padding: 'clamp(6px, 2vw, 8px)',
+                    backgroundColor: '#3c3c3c',
+                    border: '1px solid #2196f3',
+                    borderRadius: '4px',
+                    color: '#d4d4d4',
+                    fontFamily: 'monospace',
+                    fontSize: 'clamp(11px, 2.5vw, 13px)'
+                  }}
+                />
+                <button
+                  onClick={dockerBuild}
+                  disabled={isLoading}
+                  style={{
+                    padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
+                    backgroundColor: '#2196f3',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '4px',
+                    cursor: isLoading ? 'not-allowed' : 'pointer',
+                    fontSize: 'clamp(12px, 2.5vw, 14px)'
+                  }}
+                >
+                  Build
+                </button>
+              </div>
+            </div>
+
+            <div style={{
+              backgroundColor: '#252526',
+              padding: 'clamp(10px, 2vw, 15px)',
+              borderRadius: '8px',
+              borderLeft: '3px solid #ff9800'
+            }}>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker run</h3>
+              <div style={{ display: 'flex', gap: '8px', flexDirection: 'column' }}>
+                <select
+                  value={selectedImage}
+                  onChange={(e) => setSelectedImage(e.target.value)}
+                  disabled={isLoading}
+                  style={{
+                    padding: 'clamp(6px, 2vw, 8px)',
+                    backgroundColor: '#3c3c3c',
+                    border: '1px solid #ff9800',
+                    borderRadius: '4px',
+                    color: '#d4d4d4',
+                    fontSize: 'clamp(11px, 2.5vw, 13px)'
+                  }}
+                >
+                  <option value="">Выберите образ</option>
+                  {images.map(img => (
+                    <option key={img.id} value={`${img.repository}:${img.tag}`}>
+                      {img.repository}:{img.tag}
+                    </option>
+                  ))}
+                </select>
+                <input
+                  type="text"
+                  value={newContainerName}
+                  onChange={(e) => setNewContainerName(e.target.value)}
+                  placeholder="container-name"
+                  disabled={isLoading}
+                  style={{
+                    padding: 'clamp(6px, 2vw, 8px)',
+                    backgroundColor: '#3c3c3c',
+                    border: '1px solid #ff9800',
+                    borderRadius: '4px',
+                    color: '#d4d4d4',
+                    fontSize: 'clamp(11px, 2.5vw, 13px)'
+                  }}
+                />
+                <button
+                  onClick={dockerRun}
+                  disabled={isLoading || !selectedImage || !newContainerName}
+                  style={{
+                    padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
+                    backgroundColor: '#ff9800',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '4px',
+                    cursor: (isLoading || !selectedImage || !newContainerName) ? 'not-allowed' : 'pointer',
+                    fontSize: 'clamp(12px, 2.5vw, 14px)'
+                  }}
+                >
+                  Run
+                </button>
+              </div>
+            </div>
+
+            <div style={{
+              backgroundColor: '#252526',
+              padding: 'clamp(10px, 2vw, 15px)',
+              borderRadius: '8px',
+              borderLeft: '3px solid #9c27b0'
+            }}>
+              <h3 style={{ margin: '0 0 10px 0', fontSize: 'clamp(14px, 3vw, 16px)' }}>docker push</h3>
+              <div className="command-input-group" style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                <input
+                  type="text"
+                  value={pushImageName}
+                  onChange={(e) => setPushImageName(e.target.value)}
+                  placeholder="username/repo:tag"
+                  disabled={isLoading}
+                  style={{
+                    flex: 1,
+                    minWidth: '150px',
+                    padding: 'clamp(6px, 2vw, 8px)',
+                    backgroundColor: '#3c3c3c',
+                    border: '1px solid #9c27b0',
+                    borderRadius: '4px',
+                    color: '#d4d4d4',
+                    fontSize: 'clamp(11px, 2.5vw, 13px)'
+                  }}
+                />
+                <button
+                  onClick={dockerPush}
+                  disabled={isLoading}
+                  style={{
+                    padding: 'clamp(6px, 2vw, 8px) clamp(12px, 3vw, 16px)',
+                    backgroundColor: '#9c27b0',
+                    color: 'white',
+                    border: 'none',
+                    borderRadius: '4px',
+                    cursor: isLoading ? 'not-allowed' : 'pointer',
+                    fontSize: 'clamp(12px, 2.5vw, 14px)'
+                  }}
+                >
+                  Push
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="containers-grid" style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: 'clamp(15px, 3vw, 20px)',
+            marginBottom: 'clamp(15px, 3vw, 20px)'
+          }}>
+            <div style={{
+              backgroundColor: '#252526',
+              borderRadius: '8px',
+              padding: 'clamp(10px, 2vw, 15px)'
+            }}>
+              <h3 style={{ 
+                margin: '0 0 10px 0', 
+                fontSize: 'clamp(14px, 3vw, 16px)',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '10px'
+              }}>
+                <span>Local Images ({images.length})</span>
+                <button
+                  onClick={dockerImages}
                   style={{
                     padding: '4px 8px',
                     fontSize: 'clamp(10px, 2vw, 11px)',
-                    backgroundColor: '#f44336',
+                    backgroundColor: '#0e639c',
                     border: 'none',
                     borderRadius: '4px',
                     color: 'white',
-                    cursor: 'pointer',
-                    width: 'fit-content'
+                    cursor: 'pointer'
                   }}
                 >
-                  rmi
+                  docker images
                 </button>
-              </div>
-            ))}
-          </div>
-          
-          {/* Card View (Mobile) */}
-          <div className="card-view" style={{ maxHeight: '400px', overflowY: 'auto' }}>
-            {images.map(img => (
-              <div key={img.id} style={{
-                backgroundColor: '#2d2d2d',
-                padding: '10px',
-                marginBottom: '8px',
-                borderRadius: '6px',
-                borderLeft: '3px solid #4caf50'
-              }}>
-                <div style={{ fontWeight: 'bold', marginBottom: '5px' }}>
-                  {img.repository}:{img.tag}
-                </div>
-                <div style={{ fontSize: '11px', color: '#858585', marginBottom: '5px' }}>
-                  ID: {img.id.substring(0, 12)} | Size: {img.size}
-                </div>
-                <button
-                  onClick={() => dockerRmi(img.id)}
-                  style={{
-                    padding: '4px 12px',
-                    fontSize: '11px',
-                    backgroundColor: '#f44336',
-                    border: 'none',
-                    borderRadius: '4px',
-                    color: 'white',
-                    cursor: 'pointer',
-                    width: '100%'
-                  }}
-                >
-                  Remove Image
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Containers List */}
-        <div style={{
-          backgroundColor: '#252526',
-          borderRadius: '8px',
-          padding: 'clamp(10px, 2vw, 15px)'
-        }}>
-          <h3 style={{ 
-            margin: '0 0 10px 0', 
-            fontSize: 'clamp(14px, 3vw, 16px)',
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: '10px'
-          }}>
-            <span>Containers ({containers.length})</span>
-            <button
-              onClick={dockerPs}
-              style={{
-                padding: '4px 8px',
-                fontSize: 'clamp(10px, 2vw, 11px)',
-                backgroundColor: '#0e639c',
-                border: 'none',
-                borderRadius: '4px',
-                color: 'white',
-                cursor: 'pointer'
-              }}
-            >
-              docker ps
-            </button>
-          </h3>
-          <div style={{ maxHeight: '400px', overflowY: 'auto' }}>
-            {containers.map(c => (
-              <div key={c.id} style={{
-                borderLeft: `3px solid ${c.status === 'running' ? '#4caf50' : '#f44336'}`,
-                padding: 'clamp(8px, 2vw, 10px)',
-                marginBottom: '10px',
-                backgroundColor: '#2d2d2d',
-                borderRadius: '4px'
-              }}>
+              </h3>
+              
+              <div className="table-view" style={{ maxHeight: '400px', overflowY: 'auto', fontSize: 'clamp(10px, 2.5vw, 12px)' }}>
                 <div style={{ 
-                  display: 'flex', 
-                  justifyContent: 'space-between', 
-                  alignItems: 'flex-start',
-                  flexWrap: 'wrap',
-                  gap: '10px'
+                  display: 'grid', 
+                  gridTemplateColumns: 'minmax(120px, 3fr) minmax(80px, 2fr) minmax(60px, 1fr) minmax(60px, 1fr)', 
+                  gap: '8px', 
+                  padding: '8px 0', 
+                  borderBottom: '1px solid #3c3c3c', 
+                  fontWeight: 'bold' 
                 }}>
-                  <div style={{ flex: 1, minWidth: '150px' }}>
-                    <strong style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>{c.name}</strong>
-                    <span style={{ color: '#858585', fontSize: 'clamp(9px, 2vw, 10px)', marginLeft: '8px', display: 'inline-block' }}>
-                      {c.id}
-                    </span>
-                    <div style={{ fontSize: 'clamp(10px, 2.5vw, 11px)', color: '#858585', marginTop: '4px' }}>
-                      {c.image} | {c.ports}
-                    </div>
-                  </div>
-                  <div className="action-buttons" style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
-                    {c.status === 'exited' && (
-                      <button onClick={() => dockerStart(c.id)} style={{ 
-                        padding: '4px 8px', 
-                        fontSize: 'clamp(10px, 2vw, 11px)', 
-                        backgroundColor: '#4caf50', 
-                        border: 'none', 
-                        borderRadius: '4px', 
-                        color: 'white', 
-                        cursor: 'pointer' 
-                      }}>
-                        start
-                      </button>
-                    )}
-                    {c.status === 'running' && (
-                      <button onClick={() => dockerStop(c.id)} style={{ 
-                        padding: '4px 8px', 
-                        fontSize: 'clamp(10px, 2vw, 11px)', 
-                        backgroundColor: '#ff9800', 
-                        border: 'none', 
-                        borderRadius: '4px', 
-                        color: 'white', 
-                        cursor: 'pointer' 
-                      }}>
-                        stop
-                      </button>
-                    )}
-                    <button onClick={() => dockerRm(c.id)} style={{ 
-                      padding: '4px 8px', 
-                      fontSize: 'clamp(10px, 2vw, 11px)', 
-                      backgroundColor: '#f44336', 
-                      border: 'none', 
-                      borderRadius: '4px', 
-                      color: 'white', 
-                      cursor: 'pointer' 
-                    }}>
-                      rm
+                  <span>REPOSITORY:TAG</span>
+                  <span>IMAGE ID</span>
+                  <span>SIZE</span>
+                  <span>ACTIONS</span>
+                </div>
+                {images.map(img => (
+                  <div key={img.id} style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: 'minmax(120px, 3fr) minmax(80px, 2fr) minmax(60px, 1fr) minmax(60px, 1fr)', 
+                    gap: '8px', 
+                    padding: '8px 0', 
+                    borderBottom: '1px solid #3c3c3c',
+                    alignItems: 'center'
+                  }}>
+                    <span style={{ wordBreak: 'break-word' }}>{img.repository}:{img.tag}</span>
+                    <span style={{ fontFamily: 'monospace', fontSize: 'clamp(9px, 2vw, 11px)', wordBreak: 'break-word' }}>{img.id.substring(0, 12)}</span>
+                    <span>{img.size}</span>
+                    <button
+                      onClick={() => dockerRmi(img.id)}
+                      style={{
+                        padding: '4px 8px',
+                        fontSize: 'clamp(10px, 2vw, 11px)',
+                        backgroundColor: '#f44336',
+                        border: 'none',
+                        borderRadius: '4px',
+                        color: 'white',
+                        cursor: 'pointer',
+                        width: 'fit-content'
+                      }}
+                    >
+                      rmi
                     </button>
                   </div>
-                </div>
-                <div style={{ fontSize: 'clamp(9px, 2vw, 10px)', color: '#858585', marginTop: '8px' }}>
-                  Status: {c.status} | Created: {c.created}
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Terminal */}
-      <div style={{
-        backgroundColor: '#1e1e1e',
-        border: '1px solid #0e639c',
-        borderRadius: '8px',
-        overflow: 'hidden'
-      }}>
-        <div style={{
-          backgroundColor: '#252526',
-          padding: 'clamp(8px, 2vw, 10px)',
-          borderBottom: '1px solid #0e639c',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '10px'
-        }}>
-          <span style={{ fontSize: 'clamp(12px, 3vw, 14px)', fontWeight: 'bold' }}>Terminal</span>
-          <button onClick={clearLogs} style={{ 
-            padding: '4px 12px', 
-            fontSize: 'clamp(10px, 2vw, 11px)', 
-            backgroundColor: '#0e639c', 
-            border: 'none', 
-            borderRadius: '4px', 
-            color: 'white', 
-            cursor: 'pointer' 
-          }}>
-            clear
-          </button>
-        </div>
-        
-        <div style={{
-          height: 'clamp(250px, 40vh, 300px)',
-          overflowY: 'auto',
-          padding: 'clamp(8px, 2vw, 10px)',
-          fontFamily: 'monospace',
-          fontSize: 'clamp(10px, 2.5vw, 12px)',
-          backgroundColor: '#1e1e1e'
-        }}>
-          {logs.map((log, idx) => (
-            <div key={idx} className="log-enter" style={{
-              marginBottom: '4px',
-              color: log.type === 'error' ? '#f44336' : 
-                     log.type === 'success' ? '#4caf50' : 
-                     log.type === 'warning' ? '#ff9800' : '#d4d4d4',
-              wordBreak: 'break-word'
-            }}>
-              <span style={{ color: '#858585' }}>[{log.time}]</span>
-              {log.command !== 'system' && <span style={{ color: '#0e639c' }}> [{log.command}]</span>}
-              <span> {log.message}</span>
+              
+              <div className="card-view" style={{ maxHeight: '400px', overflowY: 'auto' }}>
+                {images.map(img => (
+                  <div key={img.id} style={{
+                    backgroundColor: '#2d2d2d',
+                    padding: '10px',
+                    marginBottom: '8px',
+                    borderRadius: '6px',
+                    borderLeft: '3px solid #4caf50'
+                  }}>
+                    <div style={{ fontWeight: 'bold', marginBottom: '5px' }}>
+                      {img.repository}:{img.tag}
+                    </div>
+                    <div style={{ fontSize: '11px', color: '#858585', marginBottom: '5px' }}>
+                      ID: {img.id.substring(0, 12)} | Size: {img.size}
+                    </div>
+                    <button
+                      onClick={() => dockerRmi(img.id)}
+                      style={{
+                        padding: '4px 12px',
+                        fontSize: '11px',
+                        backgroundColor: '#f44336',
+                        border: 'none',
+                        borderRadius: '4px',
+                        color: 'white',
+                        cursor: 'pointer',
+                        width: '100%'
+                      }}
+                    >
+                      Remove Image
+                    </button>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
-          <div style={{ display: 'flex', alignItems: 'center', marginTop: '8px', flexWrap: 'wrap' }}>
-            <span style={{ color: '#0e639c' }}>$ </span>
-            <input
-              type="text"
-              value={currentCommand}
-              onChange={(e) => setCurrentCommand(e.target.value)}
-              onKeyPress={(e) => e.key === 'Enter' && executeCommand(currentCommand)}
-              placeholder="Введите Docker команду..."
-              className="terminal-input"
-              style={{
-                flex: 1,
-                minWidth: '150px',
-                backgroundColor: 'transparent',
-                border: 'none',
-                color: '#d4d4d4',
-                fontFamily: 'monospace',
-                fontSize: 'clamp(10px, 2.5vw, 12px)',
-                outline: 'none',
-                marginLeft: '5px'
-              }}
-            />
-            <span className="cursor-blink" style={{ width: '8px', height: '14px', backgroundColor: '#d4d4d4' }}></span>
-          </div>
-        </div>
-      </div>
 
-      {isLoading && (
-        <div style={{
-          position: 'fixed',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          backgroundColor: 'rgba(0,0,0,0.9)',
-          padding: 'clamp(15px, 4vw, 20px)',
-          borderRadius: '8px',
-          color: 'white',
-          zIndex: 1000,
-          textAlign: 'center',
-          minWidth: 'clamp(200px, 50vw, 300px)'
-        }}>
-          Выполнение Docker операции...
+            <div style={{
+              backgroundColor: '#252526',
+              borderRadius: '8px',
+              padding: 'clamp(10px, 2vw, 15px)'
+            }}>
+              <h3 style={{ 
+                margin: '0 0 10px 0', 
+                fontSize: 'clamp(14px, 3vw, 16px)',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '10px'
+              }}>
+                <span>Containers ({containers.length})</span>
+                <button
+                  onClick={dockerPs}
+                  style={{
+                    padding: '4px 8px',
+                    fontSize: 'clamp(10px, 2vw, 11px)',
+                    backgroundColor: '#0e639c',
+                    border: 'none',
+                    borderRadius: '4px',
+                    color: 'white',
+                    cursor: 'pointer'
+                  }}
+                >
+                  docker ps
+                </button>
+              </h3>
+              <div style={{ maxHeight: '400px', overflowY: 'auto' }}>
+                {containers.map(c => (
+                  <div key={c.id} style={{
+                    borderLeft: `3px solid ${c.status === 'running' ? '#4caf50' : '#f44336'}`,
+                    padding: 'clamp(8px, 2vw, 10px)',
+                    marginBottom: '10px',
+                    backgroundColor: '#2d2d2d',
+                    borderRadius: '4px'
+                  }}>
+                    <div style={{ 
+                      display: 'flex', 
+                      justifyContent: 'space-between', 
+                      alignItems: 'flex-start',
+                      flexWrap: 'wrap',
+                      gap: '10px'
+                    }}>
+                      <div style={{ flex: 1, minWidth: '150px' }}>
+                        <strong style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>{c.name}</strong>
+                        <span style={{ color: '#858585', fontSize: 'clamp(9px, 2vw, 10px)', marginLeft: '8px', display: 'inline-block' }}>
+                          {c.id}
+                        </span>
+                        <div style={{ fontSize: 'clamp(10px, 2.5vw, 11px)', color: '#858585', marginTop: '4px' }}>
+                          {c.image} | {c.ports}
+                        </div>
+                      </div>
+                      <div className="action-buttons" style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                        {c.status === 'exited' && (
+                          <button onClick={() => dockerStart(c.id)} style={{ 
+                            padding: '4px 8px', 
+                            fontSize: 'clamp(10px, 2vw, 11px)', 
+                            backgroundColor: '#4caf50', 
+                            border: 'none', 
+                            borderRadius: '4px', 
+                            color: 'white', 
+                            cursor: 'pointer' 
+                          }}>
+                            start
+                          </button>
+                        )}
+                        {c.status === 'running' && (
+                          <button onClick={() => dockerStop(c.id)} style={{ 
+                            padding: '4px 8px', 
+                            fontSize: 'clamp(10px, 2vw, 11px)', 
+                            backgroundColor: '#ff9800', 
+                            border: 'none', 
+                            borderRadius: '4px', 
+                            color: 'white', 
+                            cursor: 'pointer' 
+                          }}>
+                            stop
+                          </button>
+                        )}
+                        <button onClick={() => dockerRm(c.id)} style={{ 
+                          padding: '4px 8px', 
+                          fontSize: 'clamp(10px, 2vw, 11px)', 
+                          backgroundColor: '#f44336', 
+                          border: 'none', 
+                          borderRadius: '4px', 
+                          color: 'white', 
+                          cursor: 'pointer' 
+                        }}>
+                          rm
+                        </button>
+                      </div>
+                    </div>
+                    <div style={{ fontSize: 'clamp(9px, 2vw, 10px)', color: '#858585', marginTop: '8px' }}>
+                      Status: {c.status} | Created: {c.created}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div style={{
+            backgroundColor: '#1e1e1e',
+            border: '1px solid #0e639c',
+            borderRadius: '8px',
+            overflow: 'hidden'
+          }}>
+            <div style={{
+              backgroundColor: '#252526',
+              padding: 'clamp(8px, 2vw, 10px)',
+              borderBottom: '1px solid #0e639c',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '10px'
+            }}>
+              <span style={{ fontSize: 'clamp(12px, 3vw, 14px)', fontWeight: 'bold' }}>Terminal</span>
+              <button onClick={clearLogs} style={{ 
+                padding: '4px 12px', 
+                fontSize: 'clamp(10px, 2vw, 11px)', 
+                backgroundColor: '#0e639c', 
+                border: 'none', 
+                borderRadius: '4px', 
+                color: 'white', 
+                cursor: 'pointer' 
+              }}>
+                clear
+              </button>
+            </div>
+            
+            <div style={{
+              height: 'clamp(250px, 40vh, 300px)',
+              overflowY: 'auto',
+              padding: 'clamp(8px, 2vw, 10px)',
+              fontFamily: 'monospace',
+              fontSize: 'clamp(10px, 2.5vw, 12px)',
+              backgroundColor: '#1e1e1e'
+            }}>
+              {logs.map((log, idx) => (
+                <div key={idx} className="log-enter" style={{
+                  marginBottom: '4px',
+                  color: log.type === 'error' ? '#f44336' : 
+                         log.type === 'success' ? '#4caf50' : 
+                         log.type === 'warning' ? '#ff9800' : '#d4d4d4',
+                  wordBreak: 'break-word'
+                }}>
+                  <span style={{ color: '#858585' }}>[{log.time}]</span>
+                  {log.command !== 'system' && <span style={{ color: '#0e639c' }}> [{log.command}]</span>}
+                  <span> {log.message}</span>
+                </div>
+              ))}
+              <div style={{ display: 'flex', alignItems: 'center', marginTop: '8px', flexWrap: 'wrap' }}>
+                <span style={{ color: '#0e639c' }}>$ </span>
+                <input
+                  type="text"
+                  value={currentCommand}
+                  onChange={(e) => setCurrentCommand(e.target.value)}
+                  onKeyPress={(e) => e.key === 'Enter' && executeCommand(currentCommand)}
+                  placeholder="Введите Docker команду..."
+                  className="terminal-input"
+                  style={{
+                    flex: 1,
+                    minWidth: '150px',
+                    backgroundColor: 'transparent',
+                    border: 'none',
+                    color: '#d4d4d4',
+                    fontFamily: 'monospace',
+                    fontSize: 'clamp(10px, 2.5vw, 12px)',
+                    outline: 'none',
+                    marginLeft: '5px'
+                  }}
+                />
+                <span className="cursor-blink" style={{ width: '8px', height: '14px', backgroundColor: '#d4d4d4' }}></span>
+              </div>
+            </div>
+          </div>
+
+          {isLoading && (
+            <div style={{
+              position: 'fixed',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              backgroundColor: 'rgba(0,0,0,0.9)',
+              padding: 'clamp(15px, 4vw, 20px)',
+              borderRadius: '8px',
+              color: 'white',
+              zIndex: 1000,
+              textAlign: 'center',
+              minWidth: 'clamp(200px, 50vw, 300px)'
+            }}>
+              Выполнение Docker операции...
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </BrowserOnly>
   );
 };
 

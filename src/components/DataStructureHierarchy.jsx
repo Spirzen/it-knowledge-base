@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
-const DataStructureHierarchy = () => {
+// Основной компонент с логикой
+const DataStructureHierarchyLogic = () => {
   const [activeTab, setActiveTab] = useState('xml');
 
   const content = {
@@ -114,7 +116,6 @@ const DataStructureHierarchy = () => {
     }
   };
 
-  // Адаптивные стили
   const styles = {
     container: {
       fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
@@ -124,37 +125,27 @@ const DataStructureHierarchy = () => {
       backgroundColor: '#ffffff',
       overflow: 'hidden',
       margin: '16px',
-      '@media (minWidth: 768px)': {
-        margin: '20px 0',
-      },
+      '@media (minWidth: 768px)': { margin: '20px 0' },
     },
     header: {
       backgroundColor: '#f5f7fa',
       padding: '16px',
       borderBottom: '1px solid #e0e0e0',
-      '@media (minWidth: 768px)': {
-        padding: '16px 20px',
-      },
+      '@media (minWidth: 768px)': { padding: '16px 20px' },
     },
     title: {
       fontSize: '18px',
       fontWeight: '600',
       color: '#1a1a1a',
       margin: 0,
-      '@media (maxWidth: 480px)': {
-        fontSize: '16px',
-      },
+      '@media (maxWidth: 480px)': { fontSize: '16px' },
     },
     description: {
       fontSize: '13px',
       color: '#555',
       marginTop: '6px',
       lineHeight: '1.4',
-      '@media (minWidth: 768px)': {
-        fontSize: '14px',
-        marginTop: '8px',
-        lineHeight: '1.5',
-      },
+      '@media (minWidth: 768px)': { fontSize: '14px', marginTop: '8px', lineHeight: '1.5' },
     },
     tabs: {
       display: 'flex',
@@ -175,25 +166,15 @@ const DataStructureHierarchy = () => {
       borderBottom: '2px solid transparent',
       textAlign: 'center',
       whiteSpace: 'nowrap',
-      '@media (maxWidth: 480px)': {
-        padding: '8px 12px',
-        fontSize: '12px',
-        whiteSpace: 'normal',
-        wordBreak: 'keep-all',
-      },
-      '@media (minWidth: 768px)': {
-        padding: '12px 24px',
-        fontSize: '14px',
-      },
+      '@media (maxWidth: 480px)': { padding: '8px 12px', fontSize: '12px', whiteSpace: 'normal', wordBreak: 'keep-all' },
+      '@media (minWidth: 768px)': { padding: '12px 24px', fontSize: '14px' },
     },
     activeTab: {
       color: '#2563eb',
       borderBottomColor: '#2563eb',
       backgroundColor: '#fff',
     },
-    content: {
-      position: 'relative',
-    },
+    content: { position: 'relative' },
     codeBlock: {
       backgroundColor: '#1e1e1e',
       color: '#d4d4d4',
@@ -207,13 +188,7 @@ const DataStructureHierarchy = () => {
       wordBreak: 'break-word',
       maxHeight: '300px',
       overflowY: 'auto',
-      '@media (minWidth: 768px)': {
-        padding: '20px',
-        fontSize: '13px',
-        lineHeight: '1.6',
-        maxHeight: 'none',
-        overflowY: 'visible',
-      },
+      '@media (minWidth: 768px)': { padding: '20px', fontSize: '13px', lineHeight: '1.6', maxHeight: 'none', overflowY: 'visible' },
     },
     copyButton: {
       position: 'fixed',
@@ -230,49 +205,31 @@ const DataStructureHierarchy = () => {
       transition: 'all 0.2s',
       zIndex: 10,
       boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
-      '@media (minWidth: 768px)': {
-        position: 'absolute',
-        top: '10px',
-        right: '10px',
-        bottom: 'auto',
-        borderRadius: '4px',
-        padding: '6px 12px',
-        boxShadow: 'none',
-      },
+      '@media (minWidth: 768px)': { position: 'absolute', top: '10px', right: '10px', bottom: 'auto', borderRadius: '4px', padding: '6px 12px', boxShadow: 'none' },
     },
     hierarchyPreview: {
       padding: '16px',
       borderTop: '1px solid #e0e0e0',
       backgroundColor: '#fcfcfc',
       minHeight: '250px',
-      '@media (minWidth: 768px)': {
-        padding: '20px',
-        minHeight: '300px',
-      },
+      '@media (minWidth: 768px)': { padding: '20px', minHeight: '300px' },
     },
     previewTitle: {
       fontSize: '13px',
       fontWeight: '600',
       color: '#333',
       marginBottom: '12px',
-      '@media (minWidth: 768px)': {
-        fontSize: '14px',
-        marginBottom: '15px',
-      },
+      '@media (minWidth: 768px)': { fontSize: '14px', marginBottom: '15px' },
     },
     treeContainer: {
       paddingLeft: '12px',
       overflowX: 'auto',
-      '@media (minWidth: 768px)': {
-        paddingLeft: '20px',
-      },
+      '@media (minWidth: 768px)': { paddingLeft: '20px' },
     },
     treeNode: {
       marginBottom: '6px',
       position: 'relative',
-      '@media (minWidth: 768px)': {
-        marginBottom: '4px',
-      },
+      '@media (minWidth: 768px)': { marginBottom: '4px' },
     },
     nodeLabel: {
       display: 'inline-block',
@@ -286,12 +243,7 @@ const DataStructureHierarchy = () => {
       verticalAlign: 'middle',
       wordBreak: 'break-word',
       maxWidth: 'calc(100% - 80px)',
-      '@media (minWidth: 768px)': {
-        fontSize: '13px',
-        padding: '2px 8px',
-        marginRight: '10px',
-        maxWidth: 'none',
-      },
+      '@media (minWidth: 768px)': { fontSize: '13px', padding: '2px 8px', marginRight: '10px', maxWidth: 'none' },
     },
     nodeValue: {
       display: 'inline-block',
@@ -303,20 +255,14 @@ const DataStructureHierarchy = () => {
       color: '#2e7d32',
       fontStyle: 'italic',
       wordBreak: 'break-word',
-      '@media (minWidth: 768px)': {
-        fontSize: '12px',
-        padding: '2px 6px',
-      },
+      '@media (minWidth: 768px)': { fontSize: '12px', padding: '2px 6px' },
     },
     footnote: {
       fontSize: '11px',
       color: '#888',
       marginTop: '12px',
       lineHeight: '1.4',
-      '@media (minWidth: 768px)': {
-        fontSize: '12px',
-        marginTop: '15px',
-      },
+      '@media (minWidth: 768px)': { fontSize: '12px', marginTop: '15px' },
     },
   };
 
@@ -394,4 +340,11 @@ const DataStructureHierarchy = () => {
   );
 };
 
-export default DataStructureHierarchy;
+// Экспорт компонента, обернутого в BrowserOnly
+export default function DataStructureHierarchy() {
+  return (
+    <BrowserOnly fallback={<div>Загрузка интерфейса структуры данных...</div>}>
+      {() => <DataStructureHierarchyLogic />}
+    </BrowserOnly>
+  );
+}

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const DataStructureTable = () => {
   const [activeTab, setActiveTab] = useState('js');
   const [copied, setCopied] = useState(false);
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+  const [windowWidth, setWindowWidth] = useState(1200);
 
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
@@ -53,7 +54,7 @@ var table = new List<List<object>>
 string roleName = table[1][2].ToString(); // "Разработчик"
 
 // Добавление новой строки
-table.Add(new List<object> { 4, "Елена", "Дизайнер" });`
+table.Add(new List<object> { 4, 'Елена', 'Дизайнер' });`
   };
 
   const dataRows = [
@@ -159,9 +160,6 @@ table.Add(new List<object> { 4, "Елена", "Дизайнер" });`
       cursor: 'pointer',
       transition: 'all 0.2s',
       marginBottom: '10px',
-      '&:hover': {
-        backgroundColor: copied ? '#059669' : '#444',
-      }
     },
     interactivePreview: {
       padding: isMobile ? '16px' : '20px',
@@ -219,10 +217,6 @@ table.Add(new List<object> { 4, "Елена", "Дизайнер" });`
       padding: '12px',
       transition: 'transform 0.2s, box-shadow 0.2s',
       cursor: 'pointer',
-      '&:hover': {
-        transform: 'translateY(-2px)',
-        boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-      }
     },
     cardField: {
       display: 'flex',
@@ -255,14 +249,12 @@ table.Add(new List<object> { 4, "Елена", "Дизайнер" });`
   const renderTableView = () => (
     <div style={styles.tableWrapper}>
       <div style={styles.grid}>
-        {/* Header row */}
         <div style={styles.row}>
           <div style={{...styles.cell, ...styles.headerCell}}>ID</div>
           <div style={{...styles.cell, ...styles.headerCell}}>Имя</div>
           <div style={{...styles.cell, ...styles.headerCell}}>Роль</div>
         </div>
         
-        {/* Data rows */}
         {dataRows.map((row, index) => (
           <div style={styles.row} key={index}>
             <div style={styles.cell}>{row.id}</div>
@@ -361,4 +353,10 @@ table.Add(new List<object> { 4, "Елена", "Дизайнер" });`
   );
 };
 
-export default DataStructureTable;
+export default function WrappedDataStructureTable() {
+  return (
+    <BrowserOnly>
+      {() => <DataStructureTable />}
+    </BrowserOnly>
+  );
+}

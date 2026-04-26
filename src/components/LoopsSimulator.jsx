@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const LoopsSimulator = () => {
   const [activeLoop, setActiveLoop] = useState('for');
@@ -93,7 +94,7 @@ for (const num of numbers) {
     }
   }, [isRunning, currentStep, currentData, activeLoop]);
 
-  return (
+  const renderContent = () => (
     <div style={{
       backgroundColor: '#1e1e1e',
       borderRadius: '12px',
@@ -488,6 +489,12 @@ for (const num of numbers) {
         </div>
       )}
     </div>
+  );
+
+  return (
+    <BrowserOnly fallback={<div style={{ padding: '20px', color: '#d4d4d4' }}>Загрузка симулятора...</div>}>
+      {() => renderContent()}
+    </BrowserOnly>
   );
 };
 

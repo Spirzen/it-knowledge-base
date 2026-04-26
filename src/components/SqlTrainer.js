@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const initialData = [
   { id: 1, name: 'Иван', age: 25, city: 'Москва', salary: 50000 },
@@ -448,4 +449,10 @@ const SqlTrainer = () => {
   );
 };
 
-export default SqlTrainer;
+export default function SqlTrainerWrapper() {
+  return (
+    <BrowserOnly>
+      {() => <SqlTrainer />}
+    </BrowserOnly>
+  );
+}

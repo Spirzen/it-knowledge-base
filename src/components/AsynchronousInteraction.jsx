@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const COLORS = {
   primary: '#007bff',
@@ -280,93 +281,97 @@ const AsynchronousInteraction = () => {
   `;
 
   return (
-    <div style={getContainerStyle()}>
-      <style>{mediaStyles}</style>
-      
-      <h2 style={getTitleStyle()}>
-        Асинхронное взаимодействие системы
-      </h2>
+    <BrowserOnly>
+      {() => (
+        <div style={getContainerStyle()}>
+          <style>{mediaStyles}</style>
+          
+          <h2 style={getTitleStyle()}>
+            Асинхронное взаимодействие системы
+          </h2>
 
-      {/* Блок Клиента (Инициатор) */}
-      <div 
-        className="status-row"
-        style={getStatusRowStyle(currentStageIndex >= 0 && currentStageIndex < STAGES.length, 'client')}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
-          <span style={getIconStyle(COLORS.primary, currentStageIndex === 0)}>▶</span>
-          <span style={getTextStyle(currentStageIndex === 0, COLORS.primary)}>Клиент (Инициатор)</span>
-        </div>
-        <span className="arrow" style={getArrowStyle(currentStageIndex === 0, 'right')}>➜</span>
-      </div>
-
-      {/* Линия соединения (визуальная) */}
-      <div style={getLineStyle()} />
-
-      {/* Блок Удаленной Системы */}
-      <div 
-        className="status-row"
-        style={getStatusRowStyle(currentStageIndex >= 1 && currentStageIndex < STAGES.length, 'server')}
-      >
-        <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
-          <span style={getIconStyle(currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral, currentStageIndex >= 1)}>☁</span>
-          <span style={getTextStyle(currentStageIndex >= 1, currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral)}>Удаленная Система</span>
-        </div>
-        <span className="arrow" style={getArrowStyle(currentStageIndex === 2, 'left')}>➤</span>
-      </div>
-
-      {/* Индикатор текущего этапа */}
-      <div style={{ width: '100%', textAlign: 'center' }}>
-        <p style={getStageLabelStyle()}>Текущее состояние:</p>
-        {STAGES[currentStageIndex] ? (
-          <div style={getStatusBadgeStyle(STAGES[currentStageIndex])}>
-            {STAGES[currentStageIndex].label}
+          {/* Блок Клиента (Инициатор) */}
+          <div 
+            className="status-row"
+            style={getStatusRowStyle(currentStageIndex >= 0 && currentStageIndex < STAGES.length, 'client')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
+              <span style={getIconStyle(COLORS.primary, currentStageIndex === 0)}>▶</span>
+              <span style={getTextStyle(currentStageIndex === 0, COLORS.primary)}>Клиент (Инициатор)</span>
+            </div>
+            <span className="arrow" style={getArrowStyle(currentStageIndex === 0, 'right')}>➜</span>
           </div>
-        ) : (
-          <div style={{ ...getStatusBadgeStyle({color: COLORS.text}), animation: 'none' }}>
-            Готов к запуску
-          </div>
-        )}
-      </div>
 
-      {/* Кнопка управления */}
-      {!isAnimating && !isCompleted ? (
-        <button 
-          onClick={startAnimation}
-          style={getButtonStyle()}
-          onMouseEnter={(e) => {
-            if (!isAnimating) {
-              e.target.style.backgroundColor = COLORS.buttonHover;
-              e.target.style.transform = 'scale(1.05)';
-            }
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.backgroundColor = COLORS.buttonBg;
-            e.target.style.transform = 'scale(1)';
-          }}
-        >
-          Отправить запрос
-        </button>
-      ) : isCompleted ? (
-        <button 
-          onClick={resetAnimation}
-          style={getButtonStyle()}
-          onMouseEnter={(e) => {
-            e.target.style.backgroundColor = COLORS.buttonHover;
-            e.target.style.transform = 'scale(1.05)';
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.backgroundColor = COLORS.buttonBg;
-            e.target.style.transform = 'scale(1)';
-          }}
-        >
-          Повторить эксперимент
-        </button>
-      ) : (
-        <div style={getLoadingTextStyle()}>
-          Обработка...
+          {/* Линия соединения (визуальная) */}
+          <div style={getLineStyle()} />
+
+          {/* Блок Удаленной Системы */}
+          <div 
+            className="status-row"
+            style={getStatusRowStyle(currentStageIndex >= 1 && currentStageIndex < STAGES.length, 'server')}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
+              <span style={getIconStyle(currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral, currentStageIndex >= 1)}>☁</span>
+              <span style={getTextStyle(currentStageIndex >= 1, currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral)}>Удаленная Система</span>
+            </div>
+            <span className="arrow" style={getArrowStyle(currentStageIndex === 2, 'left')}>➤</span>
+          </div>
+
+          {/* Индикатор текущего этапа */}
+          <div style={{ width: '100%', textAlign: 'center' }}>
+            <p style={getStageLabelStyle()}>Текущее состояние:</p>
+            {STAGES[currentStageIndex] ? (
+              <div style={getStatusBadgeStyle(STAGES[currentStageIndex])}>
+                {STAGES[currentStageIndex].label}
+              </div>
+            ) : (
+              <div style={{ ...getStatusBadgeStyle({color: COLORS.text}), animation: 'none' }}>
+                Готов к запуску
+              </div>
+            )}
+          </div>
+
+          {/* Кнопка управления */}
+          {!isAnimating && !isCompleted ? (
+            <button 
+              onClick={startAnimation}
+              style={getButtonStyle()}
+              onMouseEnter={(e) => {
+                if (!isAnimating) {
+                  e.target.style.backgroundColor = COLORS.buttonHover;
+                  e.target.style.transform = 'scale(1.05)';
+                }
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = COLORS.buttonBg;
+                e.target.style.transform = 'scale(1)';
+              }}
+            >
+              Отправить запрос
+            </button>
+          ) : isCompleted ? (
+            <button 
+              onClick={resetAnimation}
+              style={getButtonStyle()}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = COLORS.buttonHover;
+                e.target.style.transform = 'scale(1.05)';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = COLORS.buttonBg;
+                e.target.style.transform = 'scale(1)';
+              }}
+            >
+              Повторить эксперимент
+            </button>
+          ) : (
+            <div style={getLoadingTextStyle()}>
+              Обработка...
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </BrowserOnly>
   );
 };
 

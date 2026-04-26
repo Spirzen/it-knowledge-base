@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const DIDemo = () => {
   const [injectionType, setInjectionType] = useState('constructor');
@@ -265,7 +266,6 @@ const DIDemo = () => {
     }
   };
 
-  // Адаптивные стили с медиа-запросами
   const styles = {
     container: {
       background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
@@ -463,7 +463,7 @@ const DIDemo = () => {
     { id: 'method', name: 'Method', desc: 'Через метод', antiPattern: false, recommended: false }
   ];
 
-  return (
+  const InnerComponent = () => (
     <div style={styles.container}>
       <div>
         <h3 style={styles.header}>
@@ -679,6 +679,8 @@ UserService userService = container.resolve<UserService>();`}
       </div>
     </div>
   );
+
+  return <BrowserOnly>{() => <InnerComponent />}</BrowserOnly>;
 };
 
 export default DIDemo;

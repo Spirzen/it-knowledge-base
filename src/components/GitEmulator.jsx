@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const GitEmulator = () => {
   const [files, setFiles] = useState({
@@ -595,4 +596,10 @@ const GitEmulator = () => {
   );
 };
 
-export default GitEmulator;
+export default function GitEmulatorWrapper() {
+  return (
+    <BrowserOnly>
+      {() => <GitEmulator />}
+    </BrowserOnly>
+  );
+}

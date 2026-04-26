@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const DomainLevelAnalyzer = () => {
   const [inputUrl, setInputUrl] = useState('');
@@ -274,90 +275,94 @@ const DomainLevelAnalyzer = () => {
   `;
 
   return (
-    <>
-      <style>{mediaStyles}</style>
-      <div style={styles.container}>
-        <h3 style={styles.heading}>Анализатор структуры домена</h3>
-        <p style={styles.description}>
-          Введите адрес сайта (URL) ниже. Система разберет ссылку на составляющие уровни доменной зоны и покажет их значение.
-        </p>
+    <BrowserOnly>
+      {() => (
+        <>
+          <style>{mediaStyles}</style>
+          <div style={styles.container}>
+            <h3 style={styles.heading}>Анализатор структуры домена</h3>
+            <p style={styles.description}>
+              Введите адрес сайта (URL) ниже. Система разберет ссылку на составляющие уровни доменной зоны и покажет их значение.
+            </p>
 
-        <div className="input-group" style={styles.inputGroup}>
-          <div style={{ flex: 1, minWidth: '200px', width: '100%' }}>
-            <label htmlFor="domain-input" style={styles.label}>Введите URL:</label>
-            <textarea
-              id="domain-input"
-              value={inputUrl}
-              onChange={(e) => setInputUrl(e.target.value)}
-              placeholder="Например: https://mail.google.com/mail/"
-              style={styles.textarea}
-              rows={2}
-            />
-          </div>
-          <button onClick={analyzeDomain} className="analyze-button" style={styles.button}>
-            Проанализировать
-          </button>
-        </div>
-
-        {error && (
-          <div style={styles.errorBox}>
-            ⚠️ {error}
-          </div>
-        )}
-
-        {analysisResult && (
-          <div style={styles.resultContainer}>
-            <div className="domain-tree-item" style={{...styles.treeItem, borderBottom: '2px solid #007bff', backgroundColor: '#f0f7ff'}}>
-              <span className="domain-level-indicator" style={styles.levelIndicator}>Исходные данные</span>
-              <span className="domain-value" style={styles.domainValue}>{analysisResult.original}</span>
-              <span className="domain-desc" style={styles.descText}>Полный адрес без протокола</span>
-            </div>
-
-            {analysisResult.levels.map((level, index) => (
-              <div key={index} className="domain-tree-item" style={styles.treeItem}>
-                <span className="domain-level-indicator" style={styles.levelIndicator}>
-                  {level.name}
-                </span>
-                <span className="domain-value" style={styles.domainValue}>{level.fullName}</span>
-                <span className="domain-desc" style={styles.descText}>{level.description}</span>
+            <div className="input-group" style={styles.inputGroup}>
+              <div style={{ flex: 1, minWidth: '200px', width: '100%' }}>
+                <label htmlFor="domain-input" style={styles.label}>Введите URL:</label>
+                <textarea
+                  id="domain-input"
+                  value={inputUrl}
+                  onChange={(e) => setInputUrl(e.target.value)}
+                  placeholder="Например: https://mail.google.com/mail/"
+                  style={styles.textarea}
+                  rows={2}
+                />
               </div>
-            ))}
+              <button onClick={analyzeDomain} className="analyze-button" style={styles.button}>
+                Проанализировать
+              </button>
+            </div>
 
-            <div className="domain-tree-item" style={{...styles.treeItem, backgroundColor: '#f8f9fa'}}>
-              <span className="domain-level-indicator" style={styles.levelIndicator}>Путь к ресурсу</span>
-              <span className="domain-value" style={styles.domainValue}>{analysisResult.path}</span>
-              <span className="domain-desc" style={styles.descText}>Расположение файла или страницы внутри сайта.</span>
+            {error && (
+              <div style={styles.errorBox}>
+                ⚠️ {error}
+              </div>
+            )}
+
+            {analysisResult && (
+              <div style={styles.resultContainer}>
+                <div className="domain-tree-item" style={{...styles.treeItem, borderBottom: '2px solid #007bff', backgroundColor: '#f0f7ff'}}>
+                  <span className="domain-level-indicator" style={styles.levelIndicator}>Исходные данные</span>
+                  <span className="domain-value" style={styles.domainValue}>{analysisResult.original}</span>
+                  <span className="domain-desc" style={styles.descText}>Полный адрес без протокола</span>
+                </div>
+
+                {analysisResult.levels.map((level, index) => (
+                  <div key={index} className="domain-tree-item" style={styles.treeItem}>
+                    <span className="domain-level-indicator" style={styles.levelIndicator}>
+                      {level.name}
+                    </span>
+                    <span className="domain-value" style={styles.domainValue}>{level.fullName}</span>
+                    <span className="domain-desc" style={styles.descText}>{level.description}</span>
+                  </div>
+                ))}
+
+                <div className="domain-tree-item" style={{...styles.treeItem, backgroundColor: '#f8f9fa'}}>
+                  <span className="domain-level-indicator" style={styles.levelIndicator}>Путь к ресурсу</span>
+                  <span className="domain-value" style={styles.domainValue}>{analysisResult.path}</span>
+                  <span className="domain-desc" style={styles.descText}>Расположение файла или страницы внутри сайта.</span>
+                </div>
+              </div>
+            )}
+
+            <div style={styles.infoBox}>
+              <strong>Как устроена иерархия:</strong>
+              <ul style={styles.exampleList}>
+                <li style={styles.exampleItem}>
+                  <strong>TLD (Top Level Domain):</strong> Самая высокая часть 
+                  (например, <code style={styles.code}>.ru</code>, <code style={styles.code}>.com</code>)
+                </li>
+                <li style={styles.exampleItem}>
+                  <strong>SLD (Second Level Domain):</strong> Основное имя, которое вы покупаете 
+                  (например, <code style={styles.code}>yandex</code> в <code style={styles.code}>yandex.ru</code>)
+                </li>
+                <li style={styles.exampleItem}>
+                  <strong>Поддомены:</strong> Дополнительные части слева от основного имени 
+                  (например, <code style={styles.code}>mail</code> в <code style={styles.code}>mail.yandex.ru</code>)
+                </li>
+              </ul>
+            </div>
+            
+            <div style={styles.examplesBlock}>
+              <strong>💡 Примеры для проверки:</strong><br/>
+              • Основной сайт: <code style={styles.code}>example.com</code><br/>
+              • С поддоменом: <code style={styles.code}>shop.amazon.co.uk</code><br/>
+              • Со сложным путем: <code style={styles.code}>docs.python.org/3/library</code><br/>
+              • Много поддоменов: <code style={styles.code}>a.b.c.d.e.example.org</code>
             </div>
           </div>
-        )}
-
-        <div style={styles.infoBox}>
-          <strong>Как устроена иерархия:</strong>
-          <ul style={styles.exampleList}>
-            <li style={styles.exampleItem}>
-              <strong>TLD (Top Level Domain):</strong> Самая высокая часть 
-              (например, <code style={styles.code}>.ru</code>, <code style={styles.code}>.com</code>)
-            </li>
-            <li style={styles.exampleItem}>
-              <strong>SLD (Second Level Domain):</strong> Основное имя, которое вы покупаете 
-              (например, <code style={styles.code}>yandex</code> в <code style={styles.code}>yandex.ru</code>)
-            </li>
-            <li style={styles.exampleItem}>
-              <strong>Поддомены:</strong> Дополнительные части слева от основного имени 
-              (например, <code style={styles.code}>mail</code> в <code style={styles.code}>mail.yandex.ru</code>)
-            </li>
-          </ul>
-        </div>
-        
-        <div style={styles.examplesBlock}>
-          <strong>💡 Примеры для проверки:</strong><br/>
-          • Основной сайт: <code style={styles.code}>example.com</code><br/>
-          • С поддоменом: <code style={styles.code}>shop.amazon.co.uk</code><br/>
-          • Со сложным путем: <code style={styles.code}>docs.python.org/3/library</code><br/>
-          • Много поддоменов: <code style={styles.code}>a.b.c.d.e.example.org</code>
-        </div>
-      </div>
-    </>
+        </>
+      )}
+    </BrowserOnly>
   );
 };
 

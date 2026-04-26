@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const initialData = [
   { id: 1, name: 'Иван', age: 25, city: 'Москва', salary: 50000 },
@@ -352,119 +353,123 @@ const SqlInsertTrainer = () => {
   `;
 
   return (
-    <>
-      <style>{mediaStyles}</style>
-      <div style={styles.container} className="container">
-        <div style={styles.header}>📝 Тренажёр SQL: Команда INSERT</div>
-        
-        <div style={styles.statsBar} className="stats-bar">
-          <span style={styles.statsText}>
-            Всего записей: {data.length}
-          </span>
-          {lastInsertId && (
-            <span style={{ ...styles.statsText, color: '#10b981' }}>
-              Последний ID: {lastInsertId}
-            </span>
-          )}
-          <button 
-            onClick={resetData}
-            style={{ ...styles.button, ...styles.resetButton, padding: 'clamp(6px, 2vw, 8px) clamp(12px, 4vw, 16px)', fontSize: 'clamp(12px, 3vw, 14px)' }}
-            className="reset-button"
-          >
-            🔄 Сбросить данные
-          </button>
-        </div>
-        
-        <div style={styles.description}>
-          💡 Введите SQL-запрос INSERT для добавления новой записи в таблицу <strong>users</strong>.<br/>
-          ID генерируется автоматически. Обязательные поля: <strong>name, age, city, salary</strong>.
-        </div>
+    <BrowserOnly>
+      {() => (
+        <>
+          <style>{mediaStyles}</style>
+          <div style={styles.container} className="container">
+            <div style={styles.header}>📝 Тренажёр SQL: Команда INSERT</div>
+            
+            <div style={styles.statsBar} className="stats-bar">
+              <span style={styles.statsText}>
+                Всего записей: {data.length}
+              </span>
+              {lastInsertId && (
+                <span style={{ ...styles.statsText, color: '#10b981' }}>
+                  Последний ID: {lastInsertId}
+                </span>
+              )}
+              <button 
+                onClick={resetData}
+                style={{ ...styles.button, ...styles.resetButton, padding: 'clamp(6px, 2vw, 8px) clamp(12px, 4vw, 16px)', fontSize: 'clamp(12px, 3vw, 14px)' }}
+                className="reset-button"
+              >
+                🔄 Сбросить данные
+              </button>
+            </div>
+            
+            <div style={styles.description}>
+              💡 Введите SQL-запрос INSERT для добавления новой записи в таблицу <strong>users</strong>.<br/>
+              ID генерируется автоматически. Обязательные поля: <strong>name, age, city, salary</strong>.
+            </div>
 
-        <div style={styles.inputGroup} className="input-group">
-          <div style={styles.inputWrapper}>
-            <input
-              type="text"
-              value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              style={styles.input}
-              placeholder="INSERT INTO users (name, age, city, salary) VALUES ('Анна', 27, 'Казань', 48000)"
-              onKeyPress={(e) => {
-                if (e.key === 'Enter') executeInsert();
-              }}
-            />
-          </div>
-          <button 
-            onClick={executeInsert} 
-            style={styles.button}
-            className="execute-button"
-          >
-            Выполнить INSERT
-          </button>
-        </div>
+            <div style={styles.inputGroup} className="input-group">
+              <div style={styles.inputWrapper}>
+                <input
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  style={styles.input}
+                  placeholder="INSERT INTO users (name, age, city, salary) VALUES ('Анна', 27, 'Казань', 48000)"
+                  onKeyPress={(e) => {
+                    if (e.key === 'Enter') executeInsert();
+                  }}
+                />
+              </div>
+              <button 
+                onClick={executeInsert} 
+                style={styles.button}
+                className="execute-button"
+              >
+                Выполнить INSERT
+              </button>
+            </div>
 
-        {error && (
-          <div style={styles.errorBox}>
-            <strong>❌ Ошибка:</strong> {error}
-          </div>
-        )}
+            {error && (
+              <div style={styles.errorBox}>
+                <strong>❌ Ошибка:</strong> {error}
+              </div>
+            )}
 
-        {result && (
-          <div style={styles.successBox}>
-            <strong>✅ {result.message}</strong>
-            <div style={styles.jsonPreview}>
-              Добавленная запись:<br/>
-              {JSON.stringify(result.insertedRow, null, 2)}
+            {result && (
+              <div style={styles.successBox}>
+                <strong>✅ {result.message}</strong>
+                <div style={styles.jsonPreview}>
+                  Добавленная запись:<br/>
+                  {JSON.stringify(result.insertedRow, null, 2)}
+                </div>
+              </div>
+            )}
+
+            <div style={styles.tableContainer} className="table-container">
+              <h3 style={{ marginBottom: '10px', fontSize: 'clamp(16px, 4vw, 18px)', color: '#374151' }}>
+                Таблица users:
+              </h3>
+              {data.length > 0 ? (
+                <div style={{ overflowX: 'auto' }}>
+                  <table style={styles.table}>
+                    <thead>
+                      <tr>
+                        <th style={styles.th}>id</th>
+                        <th style={styles.th}>name</th>
+                        <th style={styles.th}>age</th>
+                        <th style={styles.th}>city</th>
+                        <th style={styles.th}>salary</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data.map((row) => (
+                        <tr key={row.id}>
+                          <td style={styles.td}>{row.id}</td>
+                          <td style={styles.td}>{row.name}</td>
+                          <td style={styles.td}>{row.age}</td>
+                          <td style={styles.td}>{row.city}</td>
+                          <td style={styles.td}>{row.salary.toLocaleString()} ₽</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <div style={styles.emptyState}>
+                  Таблица пуста. Добавьте первую запись с помощью INSERT!
+                </div>
+              )}
+            </div>
+            
+            <div style={styles.infoBox}>
+              <strong>Примеры INSERT запросов:</strong><br/>
+              INSERT INTO users (name, age, city, salary) VALUES ('Анна', 27, 'Казань', 48000)<br/>
+              INSERT INTO users (name, age, city, salary) VALUES ('Олег', 32, 'Сочи', 52000)<br/>
+              INSERT INTO users (name, age, city, salary) VALUES ('Татьяна', 29, 'Нижний Новгород', 61000)<br/>
+              <br/>
+              <strong>⚠️ Важно:</strong> ID назначается автоматически. Поле id не нужно указывать в запросе.<br/>
+              <strong>💡 Совет:</strong> Нажмите Enter для быстрого выполнения запроса!
             </div>
           </div>
-        )}
-
-        <div style={styles.tableContainer} className="table-container">
-          <h3 style={{ marginBottom: '10px', fontSize: 'clamp(16px, 4vw, 18px)', color: '#374151' }}>
-            Таблица users:
-          </h3>
-          {data.length > 0 ? (
-            <div style={{ overflowX: 'auto' }}>
-              <table style={styles.table}>
-                <thead>
-                  <tr>
-                    <th style={styles.th}>id</th>
-                    <th style={styles.th}>name</th>
-                    <th style={styles.th}>age</th>
-                    <th style={styles.th}>city</th>
-                    <th style={styles.th}>salary</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.map((row) => (
-                    <tr key={row.id}>
-                      <td style={styles.td}>{row.id}</td>
-                      <td style={styles.td}>{row.name}</td>
-                      <td style={styles.td}>{row.age}</td>
-                      <td style={styles.td}>{row.city}</td>
-                      <td style={styles.td}>{row.salary.toLocaleString()} ₽</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          ) : (
-            <div style={styles.emptyState}>
-              Таблица пуста. Добавьте первую запись с помощью INSERT!
-            </div>
-          )}
-        </div>
-        
-        <div style={styles.infoBox}>
-          <strong>Примеры INSERT запросов:</strong><br/>
-          INSERT INTO users (name, age, city, salary) VALUES ('Анна', 27, 'Казань', 48000)<br/>
-          INSERT INTO users (name, age, city, salary) VALUES ('Олег', 32, 'Сочи', 52000)<br/>
-          INSERT INTO users (name, age, city, salary) VALUES ('Татьяна', 29, 'Нижний Новгород', 61000)<br/>
-          <br/>
-          <strong>⚠️ Важно:</strong> ID назначается автоматически. Поле id не нужно указывать в запросе.<br/>
-          <strong>💡 Совет:</strong> Нажмите Enter для быстрого выполнения запроса!
-        </div>
-      </div>
-    </>
+        </>
+      )}
+    </BrowserOnly>
   );
 };
 

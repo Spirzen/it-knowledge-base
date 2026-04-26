@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const SoftwareLifecycleDemo = () => {
   const [activePhase, setActivePhase] = useState(null);
@@ -82,7 +83,7 @@ const SoftwareLifecycleDemo = () => {
       shortName: 'Разработка',
       icon: '💻',
       color: '#10b981',
-      duration: '8-24 недель',
+      duration: '8-24 недели',
       team: 'Devs, QA (preparation)',
       deliverables: 'Source Code, Unit Tests, API',
       activities: [
@@ -232,7 +233,7 @@ const SoftwareLifecycleDemo = () => {
     setPhaseDetails({});
   };
 
-  return (
+  const renderContent = () => (
     <div style={{
       fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
       maxWidth: '1400px',
@@ -668,6 +669,12 @@ const SoftwareLifecycleDemo = () => {
         }
       `}</style>
     </div>
+  );
+
+  return (
+    <BrowserOnly fallback={<div style={{padding: '20px', textAlign: 'center'}}>Загрузка интерактивного компонента...</div>}>
+      {() => renderContent()}
+    </BrowserOnly>
   );
 };
 

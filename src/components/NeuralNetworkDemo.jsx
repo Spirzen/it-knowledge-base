@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import BrowserOnly from './BrowserOnly';
 
 const NeuralNetworkDemo = () => {
   const [inputValues, setInputValues] = useState([0.5, 0.3, 0.8]);
@@ -162,7 +163,7 @@ const NeuralNetworkDemo = () => {
     });
   };
   
-  return (
+  const renderContent = () => (
     <div style={{
       fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
       maxWidth: '1400px',
@@ -624,6 +625,12 @@ const NeuralNetworkDemo = () => {
         }
       `}</style>
     </div>
+  );
+
+  return (
+    <BrowserOnly fallback={<div style={{ padding: '20px', textAlign: 'center', color: '#aaa' }}>Загрузка интерактивного компонента...</div>}>
+      {() => renderContent()}
+    </BrowserOnly>
   );
 };
 
