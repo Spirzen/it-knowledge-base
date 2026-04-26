@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-const DataStructureLinear = () => {
+// Вся логика компонента с хуками
+const DataStructureLinearLogic = () => {
   const [activeTab, setActiveTab] = useState('js');
   const [structureType, setStructureType] = useState('linked');
-  const [windowWidth, setWindowWidth] = useState(0); 
+  const [windowWidth, setWindowWidth] = useState(0);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
@@ -139,10 +140,14 @@ head.Next = newNode;`
     }
   };
 
-  const handleCopy = (text) => {
-    navigator.clipboard.writeText(text);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleCopy = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Ошибка копирования:', err);
+    }
   };
 
   const renderVisualization = () => {
@@ -338,8 +343,8 @@ head.Next = newNode;`
     }
   };
 
-  return (
-    <div style={{
+  const styles = {
+    container: {
       fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
       border: '1px solid #e0e0e0',
       borderRadius: '8px',
@@ -347,53 +352,149 @@ head.Next = newNode;`
       backgroundColor: '#ffffff',
       overflow: 'hidden',
       margin: isMobile ? '12px 0' : '20px 0',
-    }}>
-      <div style={{
-        backgroundColor: '#f5f7fa',
-        padding: isMobile ? '12px 16px' : '16px 20px',
-        borderBottom: '1px solid #e0e0e0',
-      }}>
-        <h3 style={{
-          fontSize: isMobile ? '16px' : '18px',
-          fontWeight: '600',
-          color: '#1a1a1a',
-          margin: 0,
-        }}>
-          Линейные структуры данных
-        </h3>
-        <p style={{
-          fontSize: isMobile ? '12px' : '14px',
-          color: '#555',
-          marginTop: isMobile ? '6px' : '8px',
-          lineHeight: isMobile ? '1.4' : '1.5',
-        }}>
+    },
+    header: {
+      backgroundColor: '#f5f7fa',
+      padding: isMobile ? '12px 16px' : '16px 20px',
+      borderBottom: '1px solid #e0e0e0',
+    },
+    title: {
+      fontSize: isMobile ? '16px' : '18px',
+      fontWeight: '600',
+      color: '#1a1a1a',
+      margin: 0,
+    },
+    description: {
+      fontSize: isMobile ? '12px' : '14px',
+      color: '#555',
+      marginTop: isMobile ? '6px' : '8px',
+      lineHeight: isMobile ? '1.4' : '1.5',
+    },
+    typeSelector: {
+      display: 'flex',
+      borderBottom: '1px solid #e0e0e0',
+      backgroundColor: '#fafafa',
+      padding: isMobile ? '8px 12px' : '10px 20px',
+      gap: isMobile ? '8px' : '10px',
+      flexWrap: 'wrap',
+    },
+    typeBtn: {
+      padding: isMobile ? '6px 12px' : '8px 16px',
+      cursor: 'pointer',
+      fontSize: isMobile ? '12px' : '13px',
+      fontWeight: '500',
+      color: structureType === 'array' ? '#fff' : '#666',
+      border: '1px solid #ccc',
+      borderRadius: '4px',
+      background: structureType === 'array' ? '#2563eb' : '#fff',
+      transition: 'all 0.2s ease',
+      flex: isMobile ? '1' : 'auto',
+      whiteSpace: 'nowrap',
+    },
+    tabs: {
+      display: 'flex',
+      borderBottom: '1px solid #e0e0e0',
+      backgroundColor: '#fafafa',
+      overflowX: 'auto',
+      WebkitOverflowScrolling: 'touch',
+    },
+    tab: {
+      padding: isMobile ? '10px 16px' : '12px 24px',
+      cursor: 'pointer',
+      fontSize: isMobile ? '13px' : '14px',
+      fontWeight: '500',
+      color: activeTab === 'js' ? '#2563eb' : '#666',
+      border: 'none',
+      background: 'transparent',
+      transition: 'all 0.2s ease',
+      borderBottom: activeTab === 'js' ? '2px solid #2563eb' : '2px solid transparent',
+      whiteSpace: 'nowrap',
+    },
+    content: {
+      padding: 0,
+      position: 'relative',
+    },
+    codeBlock: {
+      backgroundColor: '#1e1e1e',
+      color: '#d4d4d4',
+      padding: isMobile ? '16px' : '20px',
+      margin: 0,
+      overflowX: 'auto',
+      fontSize: isMobile ? '11px' : '13px',
+      lineHeight: isMobile ? '1.5' : '1.6',
+      fontFamily: '"Fira Code", "Consolas", "Monaco", monospace',
+      whiteSpace: 'pre-wrap',
+      wordBreak: 'break-word',
+      position: 'relative',
+    },
+    copyButton: {
+      position: 'absolute',
+      top: '10px',
+      right: '10px',
+      backgroundColor: copied ? '#10b981' : '#333',
+      color: '#fff',
+      border: 'none',
+      borderRadius: '4px',
+      padding: isMobile ? '4px 10px' : '6px 12px',
+      fontSize: isMobile ? '11px' : '12px',
+      cursor: 'pointer',
+      opacity: 0.9,
+      transition: 'all 0.2s',
+      zIndex: 10,
+    },
+    visualContainer: {
+      padding: isMobile ? '16px' : '20px',
+      borderTop: '1px solid #e0e0e0',
+      backgroundColor: '#fcfcfc',
+      minHeight: isMobile ? '200px' : '250px',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexWrap: 'wrap',
+      gap: '20px',
+      overflowX: 'auto',
+    },
+    infoBox: {
+      padding: isMobile ? '12px 16px' : '15px 20px',
+      backgroundColor: '#e8f5e9',
+      borderLeft: '4px solid #2e7d32',
+      margin: isMobile ? '12px' : '10px 20px',
+      borderRadius: '0 4px 4px 0',
+    },
+    infoTitle: {
+      fontSize: isMobile ? '12px' : '13px',
+      fontWeight: 'bold',
+      color: '#1b5e20',
+      marginBottom: '5px',
+    },
+    infoText: {
+      fontSize: isMobile ? '11px' : '12px',
+      color: '#2e7d32',
+      lineHeight: isMobile ? '1.4' : '1.5',
+      whiteSpace: 'pre-line',
+    },
+  };
+
+  return (
+    <div style={styles.container}>
+      <div style={styles.header}>
+        <h3 style={styles.title}>Линейные структуры данных</h3>
+        <p style={styles.description}>
           {isMobile 
             ? "Элементы расположены последовательно. Каждый элемент имеет предыдущий и следующий."
             : "Структуры данных, где элементы расположены последовательно друг за другом. Каждый элемент имеет только одного предшественника и одного последователя, кроме первого и последнего."}
         </p>
       </div>
       
-      <div style={{
-        display: 'flex',
-        borderBottom: '1px solid #e0e0e0',
-        backgroundColor: '#fafafa',
-        padding: isMobile ? '8px 12px' : '10px 20px',
-        gap: isMobile ? '8px' : '10px',
-        flexWrap: 'wrap',
-      }}>
+      <div style={styles.typeSelector}>
         <button 
           style={{
-            padding: isMobile ? '6px 12px' : '8px 16px',
-            cursor: 'pointer',
-            fontSize: isMobile ? '12px' : '13px',
-            fontWeight: '500',
-            color: structureType === 'array' ? '#fff' : '#666',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            background: structureType === 'array' ? '#2563eb' : '#fff',
-            transition: 'all 0.2s ease',
-            flex: isMobile ? '1' : 'auto',
-            whiteSpace: 'nowrap',
+            ...styles.typeBtn,
+            ...(structureType === 'array' ? {
+              color: '#fff',
+              backgroundColor: '#2563eb',
+              borderColor: '#2563eb'
+            } : {})
           }}
           onClick={() => setStructureType('array')}
         >
@@ -401,17 +502,12 @@ head.Next = newNode;`
         </button>
         <button 
           style={{
-            padding: isMobile ? '6px 12px' : '8px 16px',
-            cursor: 'pointer',
-            fontSize: isMobile ? '12px' : '13px',
-            fontWeight: '500',
-            color: structureType === 'linked' ? '#fff' : '#666',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            background: structureType === 'linked' ? '#2563eb' : '#fff',
-            transition: 'all 0.2s ease',
-            flex: isMobile ? '1' : 'auto',
-            whiteSpace: 'nowrap',
+            ...styles.typeBtn,
+            ...(structureType === 'linked' ? {
+              color: '#fff',
+              backgroundColor: '#2563eb',
+              borderColor: '#2563eb'
+            } : {})
           }}
           onClick={() => setStructureType('linked')}
         >
@@ -419,66 +515,50 @@ head.Next = newNode;`
         </button>
       </div>
 
-      <div style={{
-        display: 'flex',
-        borderBottom: '1px solid #e0e0e0',
-        backgroundColor: '#fafafa',
-        overflowX: 'auto',
-        WebkitOverflowScrolling: 'touch',
-      }}>
-        {['js', 'py', 'cs'].map((lang) => (
-          <button 
-            key={lang}
-            style={{
-              padding: isMobile ? '10px 16px' : '12px 24px',
-              cursor: 'pointer',
-              fontSize: isMobile ? '13px' : '14px',
-              fontWeight: '500',
-              color: activeTab === lang ? '#2563eb' : '#666',
-              border: 'none',
-              background: 'transparent',
-              transition: 'all 0.2s ease',
-              borderBottom: activeTab === lang ? '2px solid #2563eb' : '2px solid transparent',
-              whiteSpace: 'nowrap',
-            }}
-            onClick={() => setActiveTab(lang)}
-          >
-            {lang === 'js' ? 'JavaScript' : lang === 'py' ? 'Python' : 'C#'}
-          </button>
-        ))}
+      <div style={styles.tabs}>
+        <button 
+          style={{
+            ...styles.tab,
+            ...(activeTab === 'js' ? {
+              color: '#2563eb',
+              borderBottomColor: '#2563eb'
+            } : {})
+          }}
+          onClick={() => setActiveTab('js')}
+        >
+          JavaScript
+        </button>
+        <button 
+          style={{
+            ...styles.tab,
+            ...(activeTab === 'py' ? {
+              color: '#2563eb',
+              borderBottomColor: '#2563eb'
+            } : {})
+          }}
+          onClick={() => setActiveTab('py')}
+        >
+          Python
+        </button>
+        <button 
+          style={{
+            ...styles.tab,
+            ...(activeTab === 'cs' ? {
+              color: '#2563eb',
+              borderBottomColor: '#2563eb'
+            } : {})
+          }}
+          onClick={() => setActiveTab('cs')}
+        >
+          C#
+        </button>
       </div>
 
-      <div style={{ position: 'relative' }}>
-        <pre style={{
-          backgroundColor: '#1e1e1e',
-          color: '#d4d4d4',
-          padding: isMobile ? '16px' : '20px',
-          margin: 0,
-          overflowX: 'auto',
-          fontSize: isMobile ? '11px' : '13px',
-          lineHeight: isMobile ? '1.5' : '1.6',
-          fontFamily: '"Fira Code", "Consolas", "Monaco", monospace',
-          whiteSpace: 'pre-wrap',
-          wordBreak: 'break-word',
-          position: 'relative',
-        }}>
+      <div style={styles.content}>
+        <pre style={styles.codeBlock}>
           <code>{codeExamples[activeTab][structureType]}</code>
           <button 
-            style={{
-              position: 'absolute',
-              top: '10px',
-              right: '10px',
-              backgroundColor: copied ? '#2e7d32' : '#333',
-              color: '#fff',
-              border: 'none',
-              borderRadius: '4px',
-              padding: isMobile ? '4px 10px' : '6px 12px',
-              fontSize: isMobile ? '11px' : '12px',
-              cursor: 'pointer',
-              opacity: 0.9,
-              transition: 'all 0.2s',
-              zIndex: 10,
-            }}
+            style={styles.copyButton}
             onClick={() => handleCopy(codeExamples[activeTab][structureType])}
             title="Копировать код"
           >
@@ -486,45 +566,15 @@ head.Next = newNode;`
           </button>
         </pre>
         
-        {/* Обертка BrowserOnly для визуализации */}
-        <div style={{
-          padding: isMobile ? '16px' : '20px',
-          borderTop: '1px solid #e0e0e0',
-          backgroundColor: '#fcfcfc',
-          minHeight: isMobile ? '200px' : '250px',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexWrap: 'wrap',
-          gap: '20px',
-          overflowX: 'auto',
-        }}>
-          <BrowserOnly>
-            {renderVisualization()}
-          </BrowserOnly>
+        <div style={styles.visualContainer}>
+          {renderVisualization()}
         </div>
 
-        <div style={{
-          padding: isMobile ? '12px 16px' : '15px 20px',
-          backgroundColor: '#e8f5e9',
-          borderLeft: '4px solid #2e7d32',
-          margin: isMobile ? '12px' : '10px 20px',
-          borderRadius: '0 4px 4px 0',
-        }}>
-          <div style={{
-            fontSize: isMobile ? '12px' : '13px',
-            fontWeight: 'bold',
-            color: '#1b5e20',
-            marginBottom: '5px',
-          }}>
+        <div style={styles.infoBox}>
+          <div style={styles.infoTitle}>
             {structureType === 'array' ? 'Преимущества массива:' : 'Особенности связного списка:'}
           </div>
-          <div style={{
-            fontSize: isMobile ? '11px' : '12px',
-            color: '#2e7d32',
-            lineHeight: isMobile ? '1.4' : '1.5',
-            whiteSpace: 'pre-line',
-          }}>
+          <div style={styles.infoText}>
             {structureType === 'array' 
               ? "Мгновенный доступ по индексу O(1)\nЭкономия памяти\nХорошая локальность данных\nМедленная вставка/удаление O(n)\nФиксированный размер (в статическом массиве)"
               : "Быстрая вставка/удаление O(1) в начале\nДинамический размер\nЭффективное использование памяти\nНет прямого доступа по индексу O(n)\nДополнительная память на указатели"}
@@ -535,4 +585,11 @@ head.Next = newNode;`
   );
 };
 
-export default DataStructureLinear;
+// Экспорт компонента, обернутого в BrowserOnly
+export default function DataStructureLinear() {
+  return (
+    <BrowserOnly fallback={<div>Загрузка компонента "Линейные структуры данных"...</div>}>
+      {() => <DataStructureLinearLogic />}
+    </BrowserOnly>
+  );
+}

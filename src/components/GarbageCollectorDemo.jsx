@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const GarbageCollectorDemo = () => {
   return (

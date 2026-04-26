@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const ORMDemo = () => {
   const [activeTab, setActiveTab] = useState('visual');

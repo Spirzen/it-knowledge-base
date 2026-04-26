@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 // Внутренний компонент с логикой (не рендерится на сервере)
 const CicdDemoContent = () => {

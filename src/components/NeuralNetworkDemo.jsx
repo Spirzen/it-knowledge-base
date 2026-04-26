@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const NeuralNetworkDemo = () => {
   const [inputValues, setInputValues] = useState([0.5, 0.3, 0.8]);

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function RandomGameGenerator() {
   return (

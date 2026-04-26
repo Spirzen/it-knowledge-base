@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const usersData = [
   { id: 1, name: 'Иван', age: 25, city_id: 1, salary: 50000 },

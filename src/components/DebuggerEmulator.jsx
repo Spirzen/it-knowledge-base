@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const DebuggerEmulator = () => {
   const initialCode = `1  function calculateSum(a, b) {

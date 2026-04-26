@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 export default function RandomQuestionFromArticle() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const RequestResponseModel = () => {
   return (

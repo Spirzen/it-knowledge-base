@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const CompilerSimulator = () => {
   const [code, setCode] = useState(`let name = "Мир"

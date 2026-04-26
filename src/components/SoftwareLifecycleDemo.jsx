@@ -1,5 +1,5 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const SoftwareLifecycleDemo = () => {
   const [activePhase, setActivePhase] = useState(null);

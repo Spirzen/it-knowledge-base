@@ -1,10 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import BrowserOnly from './BrowserOnly';
+import React, { useState, useEffect, useCallback } from 'react';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
-const EnglishWordRandomizer = () => {
+// Вся логика компонента с хуками
+const EnglishWordRandomizerLogic = () => {
+  const [items, setItems] = useState([]);
+  const [isReady, setIsReady] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(0);
+  
   const isBrowser = typeof window !== 'undefined';
 
-  const extractDataFromPage = () => {
+  const extractDataFromPage = useCallback(() => {
     if (!isBrowser) return { data: [], cols: 0 };
     
     const tableRows = document.querySelectorAll('table tbody tr');
@@ -47,9 +52,9 @@ const EnglishWordRandomizer = () => {
     });
 
     return { data: extractedData, cols: detectedCols };
-  };
+  }, [isBrowser]);
 
-  const getRandomItems = React.useCallback(() => {
+  const getRandomItems = useCallback(() => {
     if (!isBrowser) return;
     
     const result = extractDataFromPage();
@@ -64,8 +69,9 @@ const EnglishWordRandomizer = () => {
     
     setItems(selected);
     setIsReady(true);
-  }, []);
+  }, [isBrowser, extractDataFromPage]);
 
+  // Инициализация данных
   useEffect(() => {
     if (!isBrowser) return;
     
@@ -79,16 +85,21 @@ const EnglishWordRandomizer = () => {
     }, 100);
 
     return () => clearTimeout(timer);
-  }, [getRandomItems]);
+  }, [isBrowser, extractDataFromPage, getRandomItems]);
 
+  // Отслеживание ширины окна
   useEffect(() => {
     if (!isBrowser) return;
     
     const handleResize = () => setWindowWidth(window.innerWidth);
+    
+    setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
+    
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [isBrowser]);
 
+  // Добавление глобальных стилей
   useEffect(() => {
     if (!isBrowser) return;
     
@@ -127,8 +138,9 @@ const EnglishWordRandomizer = () => {
       `;
       document.head.appendChild(styleSheet);
     }
-  }, []);
+  }, [isBrowser]);
 
+  // Пока не готово - ничего не показываем
   if (!isBrowser || (!isReady && items.length === 0)) {
     return null;
   }
@@ -242,10 +254,11 @@ const EnglishWordRandomizer = () => {
   );
 };
 
-export default function WrappedEnglishWordRandomizer() {
+// Экспорт компонента, обернутого в BrowserOnly
+export default function EnglishWordRandomizer() {
   return (
-    <BrowserOnly fallback={<div />}>
-      {() => <EnglishWordRandomizer />}
+    <BrowserOnly fallback={<div>Загрузка генератора слов...</div>}>
+      {() => <EnglishWordRandomizerLogic />}
     </BrowserOnly>
   );
 }

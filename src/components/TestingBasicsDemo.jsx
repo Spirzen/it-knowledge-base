@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import BrowserOnly from './BrowserOnly';
+import BrowserOnly from '@docusaurus/BrowserOnly';
 
 const TestingBasicsDemo = () => {
   return (
