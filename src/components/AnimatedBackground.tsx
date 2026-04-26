@@ -25,7 +25,6 @@ export default function AnimatedBackground({
   const colorsRef = useRef<{ lineColor: string; dotColor: string } | null>(null);
   const resizeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Кэширование цветов из CSS переменных
   const getColors = useCallback((): { lineColor: string; dotColor: string } => {
     if (colorsRef.current) {
       return colorsRef.current;
@@ -52,7 +51,6 @@ export default function AnimatedBackground({
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    // Проверка поддержки canvas API
     if (!canvas.getContext) {
       console.warn('Canvas API не поддерживается в этом браузере');
       return;
@@ -77,7 +75,6 @@ export default function AnimatedBackground({
         const width = window.innerWidth;
         const height = window.innerHeight;
         
-        // Сохраняем текущие позиции частиц относительно размеров
         const oldWidth = canvas.width || width;
         const oldHeight = canvas.height || height;
         const scaleX = oldWidth > 0 ? width / oldWidth : 1;
@@ -86,7 +83,6 @@ export default function AnimatedBackground({
         canvas.width = width;
         canvas.height = height;
 
-        // Масштабируем позиции частиц при изменении размера
         if (particles.length > 0) {
           particles.forEach((p) => {
             p.x *= scaleX;
@@ -94,14 +90,12 @@ export default function AnimatedBackground({
           });
         }
 
-        // Сбрасываем кэш цветов при изменении темы (если нужно)
         colorsRef.current = null;
-      }, 150); // Throttling: 150ms
+      }, 150);
     };
 
     window.addEventListener('resize', resizeCanvas, { passive: true });
 
-    // Инициализация частиц
     const initParticles = () => {
       particles.length = 0;
       for (let i = 0; i < particleCount; i++) {
@@ -128,20 +122,17 @@ export default function AnimatedBackground({
 
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Обновляем цвета только если они изменились (при переключении темы)
       const currentColors = getColors();
       if (currentColors.lineColor !== ctx.strokeStyle || currentColors.dotColor !== ctx.fillStyle) {
         ctx.strokeStyle = currentColors.lineColor;
         ctx.fillStyle = currentColors.dotColor;
       }
 
-      // Обновление и отрисовка частиц
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
         p.x += p.vx;
         p.y += p.vy;
 
-        // Отражение от границ
         if (p.x < 0 || p.x > canvas.width) {
           p.vx *= -1;
           p.x = Math.max(0, Math.min(canvas.width, p.x));
@@ -151,12 +142,10 @@ export default function AnimatedBackground({
           p.y = Math.max(0, Math.min(canvas.height, p.y));
         }
 
-        // Отрисовка частицы
         ctx.beginPath();
         ctx.arc(p.x, p.y, maxRadius * 0.7, 0, Math.PI * 2);
         ctx.fill();
 
-        // Оптимизированное соединение частиц (O(n²) но с ранним выходом)
         for (let j = i + 1; j < particles.length; j++) {
           const q = particles[j];
           const dx = p.x - q.x;
