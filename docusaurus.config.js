@@ -40,8 +40,7 @@ module.exports = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        // Оптимизация сборки
-        gtag: undefined, // Отключено, если не используется
+        gtag: undefined,
       },
     ],
   ],
@@ -50,21 +49,14 @@ module.exports = {
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
-        // filename-хеш лучше кэшируется (особенно на CDN), чем query string
         hashed: 'filename',
         language: ['ru'],
         indexDocs: true,
         indexPages: false,
-        // У нас docs-only mode (routeBasePath: '/')
         docsRouteBasePath: '/',
-        // Разбиваем индекс на несколько файлов, чтобы не упираться в лимит GitHub (100MB/файл)
-        // и ускорить загрузку/поиск на больших базах.
         searchContextByPaths: [
           { label: 'О проекте', path: 'about' },
-
-          // Энциклопедия: дробим ещё на под-разделы, чтобы каждый index-файл был <100MB
           { label: 'Энциклопедия — Введение', path: 'encyclopedia/intro' },
-          { label: 'Энциклопедия — Категории', path: 'encyclopedia/Категории' },
           { label: 'Энциклопедия — Основы', path: 'encyclopedia/Основы' },
           { label: 'Энциклопедия — Система и сеть', path: 'encyclopedia/Система и сеть' },
           { label: 'Энциклопедия — Данные и разметка', path: 'encyclopedia/Данные и разметка' },
@@ -84,8 +76,6 @@ module.exports = {
         ],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        // Ускоряем загрузку и поиск на больших базах:
-        // исключаем повторяющиеся элементы интерфейса из индекса (сайдбар, navbar, footer, TOC).
         ignoreCssSelectors: [
           '.theme-doc-sidebar-container',
           '.theme-doc-sidebar-menu',
@@ -96,7 +86,6 @@ module.exports = {
           '.navbar',
           '.footer',
         ],
-        // Оптимизация индексации
         searchResultLimits: 8,
         searchResultContextMaxLength: 50,
       },
@@ -108,7 +97,6 @@ module.exports = {
         maxWidth: 1200,
         sizes: [320, 640, 960, 1280, 1920],
         disableInDev: false,
-        // Оптимизация загрузки изображений
         disable: false,
       },
     ],
@@ -223,13 +211,9 @@ module.exports = {
     '@docusaurus/theme-live-codeblock',
   ],
 
-  // Настройки для улучшения производительности
   staticDirectories: ['static'],
   future: {
     v4: true,
     faster: true,
   },
-  
-  // Примечание: experimental_faster требует флаги v4, поэтому отключен
-  // Если нужны экспериментальные оптимизации, можно включить:
 };

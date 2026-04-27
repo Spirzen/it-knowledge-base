@@ -1,3 +1,7 @@
 {
-    "label":  "Программы"
+    "label":  "Программы",
+    "link": {
+    "type": "generated-index",
+    "title": "Программы"
+  }
 }

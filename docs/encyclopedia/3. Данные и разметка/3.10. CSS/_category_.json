@@ -1,3 +1,7 @@
 {
-    "label":  "CSS"
+    "label":  "CSS",
+    "link": {
+    "type": "generated-index",
+    "title": "CSS"
+  }
 }

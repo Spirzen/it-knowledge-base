@@ -3,7 +3,11 @@ title: Содержание
 sidebar_label: Содержание
 ---
 
+import DocCardList from '@theme/DocCardList';
+
 # Содержание
+
+<DocCardList />
 
 ## Общая структура проекта
 

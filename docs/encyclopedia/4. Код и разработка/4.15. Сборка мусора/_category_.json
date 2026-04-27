@@ -1,3 +1,7 @@
 {
-    "label":  "Сборка мусора"
+    "label":  "Сборка мусора",
+    "link": {
+    "type": "generated-index",
+    "title": "Сборка мусора"
+  }
 }

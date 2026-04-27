@@ -152,3 +152,5 @@ find_replacements2.py
 result_replacements2.txt
 docs/full_path.txt
 docs/scan_directory.py
+docs/generate_toc.py
+generated_structure.md

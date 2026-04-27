@@ -1,3 +1,7 @@
 {
-    "label":  "Smalltalk"
+    "label":  "Smalltalk",
+    "link": {
+    "type": "generated-index",
+    "title": "Smalltalk"
+  }
 }

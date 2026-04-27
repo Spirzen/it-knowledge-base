@@ -1,3 +1,7 @@
 {
-    "label":  "Платформы"
+    "label":  "Платформы",
+    "link": {
+    "type": "generated-index",
+    "title": "Платформы"
+  }
 }

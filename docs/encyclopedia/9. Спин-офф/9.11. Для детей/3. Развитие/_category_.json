@@ -1,3 +1,7 @@
 {
-    "label":  "Развитие"
+    "label":  "Развитие",
+    "link": {
+    "type": "generated-index",
+    "title": "Развитие"
+  }
 }

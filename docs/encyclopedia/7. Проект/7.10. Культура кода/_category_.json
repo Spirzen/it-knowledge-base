@@ -1,3 +1,7 @@
 {
-    "label":  "Культура кода"
+    "label":  "Культура кода",
+    "link": {
+    "type": "generated-index",
+    "title": "Культура кода"
+  }
 }

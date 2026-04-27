@@ -1,3 +1,7 @@
 {
-    "label":  "Groovy"
+    "label":  "Groovy",
+    "link": {
+    "type": "generated-index",
+    "title": "Groovy"
+  }
 }

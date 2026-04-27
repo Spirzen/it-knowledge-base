@@ -1,3 +1,7 @@
 {
-    "label":  "Сленг"
+    "label":  "Сленг",
+    "link": {
+    "type": "generated-index",
+    "title": "Сленг"
+  }
 }

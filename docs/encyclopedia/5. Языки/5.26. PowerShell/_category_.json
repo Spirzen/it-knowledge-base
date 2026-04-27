@@ -1,3 +1,7 @@
 {
-    "label":  "PowerShell"
+    "label":  "PowerShell",
+    "link": {
+    "type": "generated-index",
+    "title": "PowerShell"
+  }
 }

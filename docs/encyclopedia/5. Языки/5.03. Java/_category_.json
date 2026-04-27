@@ -1,3 +1,7 @@
 {
-    "label":  "Java"
+    "label":  "Java",
+    "link": {
+    "type": "generated-index",
+    "title": "Java"
+  }
 }

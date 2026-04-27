@@ -1,3 +1,7 @@
 {
-    "label":  "Elixir"
+    "label":  "Elixir",
+    "link": {
+    "type": "generated-index",
+    "title": "Elixir"
+  }
 }

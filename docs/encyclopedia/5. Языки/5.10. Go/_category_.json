@@ -1,3 +1,7 @@
 {
-    "label":  "Go"
+    "label":  "Go",
+    "link": {
+    "type": "generated-index",
+    "title": "Go"
+  }
 }

@@ -1,4 +1,8 @@
+import DocCardList from '@theme/DocCardList';
+
 # О проекте
+
+<DocCardList />
 
 ## Вселенная IT
 

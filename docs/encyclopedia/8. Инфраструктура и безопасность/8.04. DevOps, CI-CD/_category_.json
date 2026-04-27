@@ -1,3 +1,7 @@
 {
-    "label":  "DevOps, CI-CD"
+    "label":  "DevOps, CI-CD",
+    "link": {
+    "type": "generated-index",
+    "title": "DevOps, CI-CD"
+  }
 }

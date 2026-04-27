@@ -1,3 +1,7 @@
 {
-    "label":  "JavaScript"
+    "label":  "JavaScript",
+    "link": {
+    "type": "generated-index",
+    "title": "JavaScript"
+  }
 }

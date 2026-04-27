@@ -1,3 +1,7 @@
 {
-    "label":  "Bash"
+    "label":  "Bash",
+    "link": {
+    "type": "generated-index",
+    "title": "Bash"
+  }
 }

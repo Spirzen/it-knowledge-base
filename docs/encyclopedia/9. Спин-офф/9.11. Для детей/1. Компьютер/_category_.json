@@ -1,3 +1,7 @@
 {
-    "label":  "Компьютер"
+    "label":  "Компьютер",
+    "link": {
+    "type": "generated-index",
+    "title": "Компьютер"
+  }
 }

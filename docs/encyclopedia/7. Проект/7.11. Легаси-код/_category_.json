@@ -1,3 +1,7 @@
 {
-    "label":  "Легаси-код"
+    "label":  "Легаси-код",
+    "link": {
+    "type": "generated-index",
+    "title": "Легаси-код"
+  }
 }

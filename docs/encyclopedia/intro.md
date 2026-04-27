@@ -2,7 +2,11 @@
 title: Энциклопедия
 ---
 
+import DocCardList from '@theme/DocCardList';
+
 ## Энциклопедия
+
+<DocCardList />
 
 ### Общая аннотация к разделу
 

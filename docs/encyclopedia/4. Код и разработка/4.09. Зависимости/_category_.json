@@ -1,3 +1,7 @@
 {
-    "label":  "Зависимости"
+    "label":  "Зависимости",
+    "link": {
+    "type": "generated-index",
+    "title": "Зависимости"
+  }
 }

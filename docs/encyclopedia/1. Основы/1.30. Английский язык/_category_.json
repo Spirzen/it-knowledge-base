@@ -1,3 +1,7 @@
 {
-    "label":  "Английский язык в IT"
+    "label":  "Английский язык в IT",
+    "link": {
+    "type": "generated-index",
+    "title": "Английский язык в IT"
+  }
 }

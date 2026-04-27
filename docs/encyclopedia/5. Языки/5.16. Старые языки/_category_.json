@@ -1,3 +1,7 @@
 {
-    "label":  "Старые языки"
+    "label":  "Старые языки",
+    "link": {
+    "type": "generated-index",
+    "title": "Старые языки"
+  }
 }

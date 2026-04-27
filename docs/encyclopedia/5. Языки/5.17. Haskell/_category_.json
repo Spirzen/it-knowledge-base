@@ -1,3 +1,7 @@
 {
-    "label":  "Haskell"
+    "label":  "Haskell",
+    "link": {
+    "type": "generated-index",
+    "title": "Haskell"
+  }
 }

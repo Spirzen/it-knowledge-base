@@ -1,3 +1,7 @@
 {
-    "label":  "Dart"
+    "label":  "Dart",
+    "link": {
+    "type": "generated-index",
+    "title": "Dart"
+  }
 }

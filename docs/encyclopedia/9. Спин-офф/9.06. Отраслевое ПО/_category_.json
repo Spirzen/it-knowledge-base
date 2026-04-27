@@ -1,3 +1,7 @@
 {
-    "label":  "Отраслевое ПО"
+    "label":  "Отраслевое ПО",
+    "link": {
+    "type": "generated-index",
+    "title": "Отраслевое ПО"
+  }
 }
