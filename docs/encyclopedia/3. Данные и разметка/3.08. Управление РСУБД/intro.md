@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Управление РСУБД"
 ---
 
 import DocCardList from '@theme/DocCardList';

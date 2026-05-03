@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Ассемблер"
 ---
 
 import DocCardList from '@theme/DocCardList';

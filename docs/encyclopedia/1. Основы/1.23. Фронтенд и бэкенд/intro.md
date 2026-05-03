@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Фронтенд и бэкенд"
 ---
 
 import DocCardList from '@theme/DocCardList';

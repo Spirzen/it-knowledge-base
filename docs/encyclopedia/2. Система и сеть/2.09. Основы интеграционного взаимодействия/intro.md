@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Основы интеграционного взаимодействия"
 ---
 
 import DocCardList from '@theme/DocCardList';

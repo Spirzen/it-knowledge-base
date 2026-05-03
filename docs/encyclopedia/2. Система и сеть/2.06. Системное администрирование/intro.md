@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Системное администрирование"
 ---
 
 import DocCardList from '@theme/DocCardList';

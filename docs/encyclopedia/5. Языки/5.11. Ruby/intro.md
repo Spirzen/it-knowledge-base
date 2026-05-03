@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Ruby"
 ---
 
 import DocCardList from '@theme/DocCardList';

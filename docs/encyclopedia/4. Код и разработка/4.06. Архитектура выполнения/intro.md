@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Архитектура выполнения"
 ---
 
 import DocCardList from '@theme/DocCardList';

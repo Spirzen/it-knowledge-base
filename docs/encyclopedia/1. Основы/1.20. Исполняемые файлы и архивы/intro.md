@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Исполняемые файлы и архивы"
 ---
 
 import DocCardList from '@theme/DocCardList';

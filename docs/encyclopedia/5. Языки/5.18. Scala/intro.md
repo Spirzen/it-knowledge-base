@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Scala"
 ---
 
 import DocCardList from '@theme/DocCardList';

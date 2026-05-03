@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Парадигмы и уровни абстракции"
 ---
 
 import DocCardList from '@theme/DocCardList';

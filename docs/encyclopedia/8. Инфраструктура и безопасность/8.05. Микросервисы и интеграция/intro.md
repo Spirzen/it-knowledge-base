@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Микросервисы и интеграция"
 ---
 
 import DocCardList from '@theme/DocCardList';

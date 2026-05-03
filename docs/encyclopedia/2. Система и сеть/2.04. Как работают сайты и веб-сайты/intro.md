@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Как работают сайты и веб-сайты"
 ---
 
 import DocCardList from '@theme/DocCardList';

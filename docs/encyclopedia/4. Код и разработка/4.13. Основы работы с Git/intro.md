@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Основы работы с Git"
 ---
 
 import DocCardList from '@theme/DocCardList';

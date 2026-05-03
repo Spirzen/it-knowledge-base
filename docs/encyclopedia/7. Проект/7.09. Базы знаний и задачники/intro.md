@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Базы знаний и задачники"
 ---
 
 import DocCardList from '@theme/DocCardList';

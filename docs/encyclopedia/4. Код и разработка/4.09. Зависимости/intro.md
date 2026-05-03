@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Зависимости"
 ---
 
 import DocCardList from '@theme/DocCardList';

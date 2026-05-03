@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Блокчейн, крипта и NFT"
 ---
 
 import DocCardList from '@theme/DocCardList';

@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Интернет-культура"
 ---
 
 import DocCardList from '@theme/DocCardList';

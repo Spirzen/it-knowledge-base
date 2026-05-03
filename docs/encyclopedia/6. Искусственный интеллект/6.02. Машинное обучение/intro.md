@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Машинное обучение"
 ---
 
 import DocCardList from '@theme/DocCardList';

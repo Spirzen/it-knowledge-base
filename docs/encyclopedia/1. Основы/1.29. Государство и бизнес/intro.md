@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Государство и бизнес"
 ---
 
 import DocCardList from '@theme/DocCardList';

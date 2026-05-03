@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Маркетинг и распространение"
 ---
 
 import DocCardList from '@theme/DocCardList';

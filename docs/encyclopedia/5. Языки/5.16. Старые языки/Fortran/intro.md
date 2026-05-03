@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Fortran"
 ---
 
 import DocCardList from '@theme/DocCardList';

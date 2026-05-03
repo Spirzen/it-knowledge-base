@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Алгоритмы"
 ---
 
 import DocCardList from '@theme/DocCardList';

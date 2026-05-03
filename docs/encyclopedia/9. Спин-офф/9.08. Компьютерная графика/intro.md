@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Компьютерная графика"
 ---
 
 import DocCardList from '@theme/DocCardList';

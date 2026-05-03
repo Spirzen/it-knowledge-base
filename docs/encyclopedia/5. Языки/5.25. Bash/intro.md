@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Bash"
 ---
 
 import DocCardList from '@theme/DocCardList';

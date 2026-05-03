@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Платформы"
 ---
 
 import DocCardList from '@theme/DocCardList';

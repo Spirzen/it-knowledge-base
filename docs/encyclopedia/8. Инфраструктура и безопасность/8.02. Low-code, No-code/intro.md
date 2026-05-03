@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Low-code, No-code"
 ---
 
 import DocCardList from '@theme/DocCardList';

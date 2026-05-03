@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Python"
 ---
 
 import DocCardList from '@theme/DocCardList';

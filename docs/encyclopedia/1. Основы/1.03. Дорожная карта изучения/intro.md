@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Дорожная карта изучения"
 ---
 
 import DocCardList from '@theme/DocCardList';

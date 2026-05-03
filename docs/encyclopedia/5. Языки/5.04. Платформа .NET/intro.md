@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Платформа .NET"
 ---
 
 import DocCardList from '@theme/DocCardList';

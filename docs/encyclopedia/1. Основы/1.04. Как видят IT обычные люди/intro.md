@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Как видят IT обычные люди"
 ---
 
 import DocCardList from '@theme/DocCardList';

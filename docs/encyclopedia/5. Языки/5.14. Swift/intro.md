@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Swift"
 ---
 
 import DocCardList from '@theme/DocCardList';

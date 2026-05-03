@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Основы баз данных"
 ---
 
 import DocCardList from '@theme/DocCardList';

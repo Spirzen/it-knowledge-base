@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Мобильные приложения"
 ---
 
 import DocCardList from '@theme/DocCardList';

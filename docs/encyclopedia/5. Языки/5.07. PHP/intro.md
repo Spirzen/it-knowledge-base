@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "PHP"
 ---
 
 import DocCardList from '@theme/DocCardList';

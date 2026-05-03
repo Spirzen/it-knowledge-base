@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Облачные технологии"
 ---
 
 import DocCardList from '@theme/DocCardList';

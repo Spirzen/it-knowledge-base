@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Конфигурация и данные"
 ---
 
 import DocCardList from '@theme/DocCardList';

@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "C#"
 ---
 
 import DocCardList from '@theme/DocCardList';

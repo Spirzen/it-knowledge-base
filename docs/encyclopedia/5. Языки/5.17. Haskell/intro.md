@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Haskell"
 ---
 
 import DocCardList from '@theme/DocCardList';

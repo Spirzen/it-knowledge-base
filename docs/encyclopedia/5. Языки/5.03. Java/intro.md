@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Java"
 ---
 
 import DocCardList from '@theme/DocCardList';

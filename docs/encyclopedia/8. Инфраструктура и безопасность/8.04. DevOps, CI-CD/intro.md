@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Devops, CI-CD"
 ---
 
 import DocCardList from '@theme/DocCardList';

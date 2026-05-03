@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Модели и инструменты"
 ---
 
 import DocCardList from '@theme/DocCardList';

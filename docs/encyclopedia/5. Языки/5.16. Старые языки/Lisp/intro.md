@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Lisp"
 ---
 
 import DocCardList from '@theme/DocCardList';

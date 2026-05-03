@@ -1,5 +1,5 @@
 ﻿---
-title: О разделе
+title: Раздел "Легаси-код"
 ---
 
 import DocCardList from '@theme/DocCardList';
