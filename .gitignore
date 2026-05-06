@@ -154,3 +154,5 @@ docs/full_path.txt
 docs/scan_directory.py
 docs/generate_toc.py
 generated_structure.md
+launch.bat
+launch.py
