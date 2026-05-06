@@ -641,6 +641,7 @@ pre[class*='language-'] {
   word-wrap: break-word;
   overflow-wrap: break-word;
   max-width: 100%;
+  max-height: none
 }
 
 .card__title:hover {
@@ -695,6 +696,19 @@ pre[class*='language-'] {
   gap: 1.5rem;
   width: 100%;
 }
+
+.card .card__body .text--truncate,
+.card__header .text--truncate,
+.card .text--truncate {
+  overflow: visible !important;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  text-overflow: clip !important;
+  display: block !important;
+}
+
+
 
 .row > .col {
   display: flex;
