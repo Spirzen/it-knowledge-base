@@ -156,3 +156,4 @@ docs/generate_toc.py
 generated_structure.md
 launch.bat
 launch.py
+.mailmap
