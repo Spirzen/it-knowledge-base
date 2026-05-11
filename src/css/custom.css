@@ -500,6 +500,49 @@ details[open] summary::before {
   transform: rotate(90deg) !important;
 }
 
+/* Разделительная линия между всеми ссылками */
+.theme-doc-sidebar-item-link,
+.theme-doc-sidebar-item-category > div {
+  border-bottom: 1px solid rgba(123, 104, 238, 0.1);
+}
+
+/* Удаление линии у последнего элемента каждой группы */
+.theme-doc-sidebar-item-last > *,
+.theme-doc-sidebar-item-category > div:last-child {
+  border-bottom: none !important;
+}
+
+/* Стили для активного пункта — без нижней границы */
+.menu__link--active {
+  border-bottom: none !important;
+  background-color: rgba(123, 104, 238, 0.1) !important;
+  border-radius: 6px !important;
+}
+
+/* Основной список */
+.theme-doc-sidebar-menu .menu__list {
+  background: linear-gradient(to right, rgba(123, 104, 238, 0.02), transparent 2px);
+  padding-left: 1rem !important;
+}
+
+/* Вложенный список второго уровня */
+.theme-doc-sidebar-menu .menu__list .menu__list {
+  background: linear-gradient(to right, rgba(123, 104, 238, 0.06), transparent 2px);
+  padding-left: 1.5rem !important;
+}
+
+/* Вложенный список третьего уровня */
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__list {
+  background: linear-gradient(to right, rgba(123, 104, 238, 0.1), transparent 2px);
+  padding-left: 2rem !important;
+}
+
+/* Акцент на последней вложенности */
+.theme-doc-sidebar-menu .menu__list .menu__list .menu__list .menu__list {
+  background: linear-gradient(to right, rgba(123, 104, 238, 0.15), transparent 2px);
+  padding-left: 2.5rem !important;
+}
+
 /* ============================================================================
    6. ТАБЛИЦЫ
    ============================================================================ */
