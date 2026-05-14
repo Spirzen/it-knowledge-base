@@ -35,6 +35,7 @@ module.exports = {
           showLastUpdateAuthor: false,
           showLastUpdateTime: false,
           routeBasePath: '/',
+		  tags: false,
         },
         blog: false,
         theme: {
