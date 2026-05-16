@@ -180,12 +180,12 @@ const DataStructureHierarchyLogic = () => {
       color: '#d4d4d4',
       padding: '16px',
       margin: 0,
-      overflowX: 'auto',
+      overflowX: 'auto', // Горизонтальная прокрутка
       fontSize: '11px',
       lineHeight: '1.5',
       fontFamily: '"Fira Code", "Consolas", "Monaco", monospace',
-      whiteSpace: 'pre-wrap',
-      wordBreak: 'break-word',
+      whiteSpace: 'pre', // Сохраняем пробелы и переносы строк, но НЕ переносим по словам
+      wordBreak: 'normal', // Отключаем перенос слов
       maxHeight: '300px',
       overflowY: 'auto',
       '@media (minWidth: 768px)': { padding: '20px', fontSize: '13px', lineHeight: '1.6', maxHeight: 'none', overflowY: 'visible' },

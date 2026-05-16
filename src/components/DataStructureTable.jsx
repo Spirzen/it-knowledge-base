@@ -140,13 +140,12 @@ table.Add(new List<object> { 4, 'Елена', 'Дизайнер' });`
       color: '#d4d4d4',
       padding: isMobile ? '16px' : '20px',
       margin: 0,
-      overflowX: 'auto',
+      overflowX: 'auto',        // ← горизонтальная прокрутка
       fontSize: isMobile ? '12px' : '13px',
       lineHeight: '1.6',
       fontFamily: '"Fira Code", "Consolas", "Monaco", monospace',
-      whiteSpace: 'pre-wrap',
-      wordBreak: 'break-word',
-      position: 'relative',
+      whiteSpace: 'pre',        // ← сохранение форматирования (без переносов)
+      tabSize: 2,
     },
     copyButton: {
       position: 'sticky',
@@ -160,6 +159,7 @@ table.Add(new List<object> { 4, 'Елена', 'Дизайнер' });`
       cursor: 'pointer',
       transition: 'all 0.2s',
       marginBottom: '10px',
+      zIndex: 10,
     },
     interactivePreview: {
       padding: isMobile ? '16px' : '20px',

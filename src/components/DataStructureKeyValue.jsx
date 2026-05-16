@@ -193,8 +193,8 @@ Console.WriteLine($"Хеш-код ключа: {hashCode}");`
       fontSize: isMobile ? '11px' : '13px',
       lineHeight: '1.6',
       fontFamily: '"Fira Code", "Consolas", "Monaco", monospace',
-      whiteSpace: 'pre-wrap',
-      wordBreak: 'break-word',
+      whiteSpace: 'pre-wrap',     // Сохраняет пробелы и переносит строки
+      wordBreak: 'break-word',    // Переносит длинные строки
       position: 'relative',
     },
     copyButton: {

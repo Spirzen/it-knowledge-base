@@ -382,7 +382,7 @@ string currentHead = queue.Peek();`
 
       <div style={styles.content}>
         <pre style={styles.codeBlock}>
-          <code>{codeExamples[activeTab].queue}</code>
+          <code style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>{codeExamples[activeTab].queue}</code>
           <button 
             style={styles.copyButton}
             onClick={() => handleCopy(codeExamples[activeTab].queue)}

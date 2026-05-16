@@ -423,8 +423,9 @@ head.Next = newNode;`
       fontSize: isMobile ? '11px' : '13px',
       lineHeight: isMobile ? '1.5' : '1.6',
       fontFamily: '"Fira Code", "Consolas", "Monaco", monospace',
-      whiteSpace: 'pre-wrap',
-      wordBreak: 'break-word',
+      whiteSpace: 'pre-wrap',     // <-- изменено с pre-wrap (оставляем pre-wrap)
+      wordBreak: 'break-word',    // <-- добавлено для принудительного переноса
+      overflowWrap: 'break-word', // <-- дополнительное свойство для переноса
       position: 'relative',
     },
     copyButton: {

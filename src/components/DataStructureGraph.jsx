@@ -6,6 +6,7 @@ const DataStructureGraphLogic = () => {
   const [activeTab, setActiveTab] = useState('js');
   const [graphType, setGraphType] = useState('directed');
   const [isMobile, setIsMobile] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -288,8 +289,9 @@ var graph = new Dictionary<string, Dictionary<string, int>>
       fontSize: isMobile ? '11px' : '13px',
       lineHeight: '1.6',
       fontFamily: '"Fira Code", "Consolas", "Monaco", monospace',
-      whiteSpace: 'pre-wrap',
-      wordBreak: 'break-word',
+      whiteSpace: 'pre-wrap',      // Включаем перенос строк
+      wordBreak: 'break-word',      // Перенос длинных слов
+      wordWrap: 'break-word',       // Дополнительный перенос
       position: 'relative',
     },
     copyButton: {
@@ -404,8 +406,14 @@ var graph = new Dictionary<string, Dictionary<string, int>>
     }
   };
 
-  const handleCopy = (text) => {
-    navigator.clipboard.writeText(text);
+  const handleCopy = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error('Ошибка копирования:', err);
+    }
   };
 
   const renderGraph = () => {
@@ -549,16 +557,20 @@ var graph = new Dictionary<string, Dictionary<string, int>>
       </div>
 
       <div style={styles.content}>
-        <pre style={styles.codeBlock}>
-          <code>{codeExamples[activeTab][graphType]}</code>
+        <div style={{position: 'relative'}}>
+          <pre style={styles.codeBlock}>
+            <code style={{whiteSpace: 'pre-wrap', wordBreak: 'break-word'}}>
+              {codeExamples[activeTab][graphType]}
+            </code>
+          </pre>
           <button 
             style={styles.copyButton}
             onClick={() => handleCopy(codeExamples[activeTab][graphType])}
             title="Копировать код"
           >
-            {isMobile ? '📋' : 'Копировать'}
+            {copied ? (isMobile ? '✅' : 'Скопировано!') : (isMobile ? '📋' : 'Копировать')}
           </button>
-        </pre>
+        </div>
         
         <div style={styles.graphContainer}>
           {renderGraph()}
@@ -583,4 +595,4 @@ export default function DataStructureGraph() {
       {() => <DataStructureGraphLogic />}
     </BrowserOnly>
   );
-}
+};
