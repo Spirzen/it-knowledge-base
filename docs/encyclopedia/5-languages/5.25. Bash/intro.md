@@ -1,7 +1,7 @@
 ---
 title: Bash — о разделе
+description: Подборка материалов раздела Bash в энциклопедии Вселенная IT
 sidebar_label: Bash — о разделе
-description: Материалы раздела «Bash».
 ---
 import DocCardList from '@theme/DocCardList';
 

@@ -1,11 +1,11 @@
 ---
 id: project
 title: 7. Проект - о разделе
+description: Как мы уже выяснили, разработка в IT - процесс широкий и комплексный, и он охватывает множество направлений, включая как разработку, аналитику и тестирование, так и проектирование, маркетинг и…
 sidebar_label: 7. Проект - о разделе
 slug: /section/project
-
-
----<div class="article-tags">
+---
+<div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>
@@ -353,5 +353,4 @@ slug: /section/project
   </ul>
   </li>
 </ul>
-
 ---

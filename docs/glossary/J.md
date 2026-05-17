@@ -1,7 +1,7 @@
-﻿---
-title: "J"
 ---
-
+title: "J"
+description: J2EE — Java 2 Platform, Enterprise Edition, предшественник Jakarta EE. Выпущен Sun Microsystems в 1999 г. как набор спецификаций для enterprise-приложений — Servlets, JSP, EJB, JMS, JDBC, JTA, JNDI.
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

@@ -1,6 +1,6 @@
 ---
 title: Аналитика — о разделе
-description: Материалы раздела «Аналитика».
+description: Подборка материалов раздела Аналитика в энциклопедии Вселенная IT
 sidebar_label: Аналитика — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,6 +1,6 @@
 ---
 title: Поиск информации — о разделе
-description: Материалы раздела «Поиск информации».
+description: Подборка материалов раздела Поиск информации в энциклопедии Вселенная IT
 sidebar_label: Поиск информации — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

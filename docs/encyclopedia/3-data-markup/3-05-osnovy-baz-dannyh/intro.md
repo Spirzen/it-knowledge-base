@@ -1,6 +1,6 @@
 ---
 title: Основы баз данных — о разделе
-description: Материалы раздела «Основы баз данных».
+description: Подборка материалов раздела Основы баз данных в энциклопедии Вселенная IT
 sidebar_label: Основы баз данных — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

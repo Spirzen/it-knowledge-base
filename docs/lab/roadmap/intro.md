@@ -1,6 +1,6 @@
 ---
 title: Планы развития — о разделе
-description: Материалы раздела «Планы развития».
+description: Подборка материалов раздела Планы развития в энциклопедии Вселенная IT
 sidebar_label: Планы развития — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,6 +1,6 @@
 ---
 title: Английский язык в IT — о разделе
-description: Материалы раздела «Английский язык в IT».
+description: Подборка материалов раздела Английский язык в IT в энциклопедии Вселенная IT
 sidebar_label: Английский язык в IT — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

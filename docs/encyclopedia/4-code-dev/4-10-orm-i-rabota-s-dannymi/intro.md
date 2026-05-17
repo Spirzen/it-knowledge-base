@@ -1,6 +1,6 @@
 ---
 title: ORM и работа с данными — о разделе
-description: Материалы раздела «ORM и работа с данными».
+description: Подборка материалов раздела ORM и работа с данными в энциклопедии Вселенная IT
 sidebar_label: ORM и работа с данными — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

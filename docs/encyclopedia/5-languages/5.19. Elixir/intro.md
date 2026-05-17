@@ -1,7 +1,7 @@
 ---
 title: Elixir — о разделе
+description: Подборка материалов раздела Elixir в энциклопедии Вселенная IT
 sidebar_label: Elixir — о разделе
-description: Материалы раздела «Elixir».
 ---
 import DocCardList from '@theme/DocCardList';
 

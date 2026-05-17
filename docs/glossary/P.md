@@ -1,7 +1,7 @@
-﻿---
-title: "P"
 ---
-
+title: "P"
+description: PaaS — Platform as a Service, платформа как услуга. Облачная модель, при которой провайдер предоставляет платформу для разработки, тестирования, развёртывания и управления приложениями — runtime,…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

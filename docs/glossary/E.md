@@ -1,7 +1,7 @@
-﻿---
-title: "E"
 ---
-
+title: "E"
+description: E2E — End-to-End, от конца до конца. В тестировании — проверка полного пользовательского сценария через все слои системы (фронтенд → бэкенд → БД → интеграции). Пример — пользователь заходит на сайт →…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

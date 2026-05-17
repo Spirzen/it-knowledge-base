@@ -1,6 +1,6 @@
 ---
 title: Строительство — о разделе
-description: Материалы раздела «Строительство».
+description: Подборка материалов раздела Строительство в энциклопедии Вселенная IT
 sidebar_label: Строительство — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,6 +1,6 @@
 ---
 title: Безопасность — о разделе
-description: Материалы раздела «Безопасность».
+description: Подборка материалов раздела Безопасность в энциклопедии Вселенная IT
 sidebar_label: Безопасность — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

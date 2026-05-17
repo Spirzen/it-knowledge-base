@@ -1,7 +1,7 @@
 ---
 title: Отраслевое ПО — о разделе
+description: Подборка материалов раздела Отраслевое ПО в энциклопедии Вселенная IT
 sidebar_label: Отраслевое ПО — о разделе
-description: Материалы раздела «Отраслевое ПО».
 ---
 import DocCardList from '@theme/DocCardList';
 

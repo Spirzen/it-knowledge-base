@@ -1,7 +1,7 @@
-﻿---
-title: "L"
 ---
-
+title: "L"
+description: Level 1 Instruction Cache — кэш первого уровня для инструкций.
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

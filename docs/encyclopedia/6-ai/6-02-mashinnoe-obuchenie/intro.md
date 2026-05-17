@@ -1,6 +1,6 @@
 ---
 title: Машинное обучение — о разделе
-description: Материалы раздела «Машинное обучение».
+description: Подборка материалов раздела Машинное обучение в энциклопедии Вселенная IT
 sidebar_label: Машинное обучение — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

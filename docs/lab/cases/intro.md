@@ -1,6 +1,6 @@
 ---
 title: Кейсы — о разделе
-description: Материалы раздела «Кейсы».
+description: Подборка материалов раздела Кейсы в энциклопедии Вселенная IT
 sidebar_label: Кейсы — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,5 +1,6 @@
-﻿---
+---
 title: "X"
+description: Extensible Application Markup Language (XAML) — декларативный язык разметки на основе XML, разработанный Microsoft для описания пользовательских интерфейсов в .NET-приложениях. Используется в…
 ---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>

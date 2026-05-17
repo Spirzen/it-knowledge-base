@@ -1,7 +1,7 @@
-﻿---
-title: "Q"
 ---
-
+title: "Q"
+description: Функция, реализованная в BIOS некоторых материнских плат (Gigabyte), позволяющая обновить микропрограмму BIOS без загрузки операционной системы — прямо из UEFI Setup или даже при отсутствии CPU/RAM…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

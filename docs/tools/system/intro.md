@@ -1,6 +1,6 @@
 ---
 title: Система — о разделе
-description: Материалы раздела «Система».
+description: Подборка материалов раздела Система в энциклопедии Вселенная IT
 sidebar_label: Система — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

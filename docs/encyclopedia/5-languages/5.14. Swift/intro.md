@@ -1,7 +1,7 @@
 ---
 title: Swift — о разделе
+description: Подборка материалов раздела Swift в энциклопедии Вселенная IT
 sidebar_label: Swift — о разделе
-description: Материалы раздела «Swift».
 ---
 import DocCardList from '@theme/DocCardList';
 

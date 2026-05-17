@@ -1,8 +1,8 @@
 ---
 title: Энциклопедия — о разделе
+description: Подборка материалов раздела Энциклопедия в энциклопедии Вселенная IT
 slug: /encyclopedia/intro
 sidebar_label: Энциклопедия — о разделе
-description: Материалы раздела «Энциклопедия».
 ---
 import DocCardList from '@theme/DocCardList';
 

@@ -1,7 +1,7 @@
 ---
 title: Глоссарий — о разделе
+description: Подборка материалов раздела Глоссарий в энциклопедии Вселенная IT
 sidebar_label: Глоссарий — о разделе
-description: Материалы раздела «Глоссарий».
 ---
 import DocCardList from '@theme/DocCardList';
 

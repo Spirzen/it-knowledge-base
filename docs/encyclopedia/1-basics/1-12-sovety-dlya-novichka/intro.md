@@ -1,6 +1,6 @@
 ---
 title: Советы для новичка — о разделе
-description: Материалы раздела «Советы для новичка».
+description: Подборка материалов раздела Советы для новичка в энциклопедии Вселенная IT
 sidebar_label: Советы для новичка — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

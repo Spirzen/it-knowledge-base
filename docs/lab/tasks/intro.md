@@ -1,6 +1,6 @@
 ---
 title: Задачи — о разделе
-description: Материалы раздела «Задачи».
+description: Подборка материалов раздела Задачи в энциклопедии Вселенная IT
 sidebar_label: Задачи — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

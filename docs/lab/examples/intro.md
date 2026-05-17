@@ -1,6 +1,6 @@
 ---
 title: Примеры — о разделе
-description: Материалы раздела «Примеры».
+description: Подборка материалов раздела Примеры в энциклопедии Вселенная IT
 sidebar_label: Примеры — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,11 +1,13 @@
 ---
+title: О разделе
+description: id — languages title — 5. Языки - о разделе sidebar_label — 5. Языки - о разделе - о разделе slug — /encyclopedia/Языки/languages
+------
 id: languages
 title: 5. Языки - о разделе
 sidebar_label: 5. Языки - о разделе - о разделе
 slug: /encyclopedia/Языки/languages
-
-
----<div class="article-tags">
+---
+<div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>

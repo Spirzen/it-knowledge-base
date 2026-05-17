@@ -1,6 +1,6 @@
 ---
 title: Знакомство с Вселенной IT — о разделе
-description: Материалы раздела «Знакомство с Вселенной IT».
+description: Подборка материалов раздела Знакомство с Вселенной IT в энциклопедии Вселенная IT
 sidebar_label: Знакомство с Вселенной IT — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,7 +1,7 @@
-﻿---
-title: "U"
 ---
-
+title: "U"
+description: User Acceptance Testing (приёмочное тестирование пользователями) — финальный этап тестирования программного обеспечения, проводимый конечными пользователями или заказчиком в условиях, приближённых к…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

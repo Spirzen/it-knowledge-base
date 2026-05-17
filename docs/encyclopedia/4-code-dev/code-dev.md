@@ -1,11 +1,13 @@
 ---
+title: О разделе
+description: id — code-dev title — 4. Код и разработка - о разделе sidebar_label — 4. Код и разработка - о разделе slug — /encyclopedia/Код и разработка/code-dev
+------
 id: code-dev
 title: 4. Код и разработка - о разделе
 sidebar_label: 4. Код и разработка - о разделе
 slug: /encyclopedia/Код и разработка/code-dev
-
-
----<div class="article-tags">
+---
+<div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>

@@ -1,6 +1,6 @@
 ---
 title: Аудио и видео — о разделе
-description: Материалы раздела «Аудио и видео».
+description: Подборка материалов раздела Аудио и видео в энциклопедии Вселенная IT
 sidebar_label: Аудио и видео — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,11 +1,13 @@
 ---
+title: О разделе
+description: id — ai title — 6. Искусственный интеллект - о разделе sidebar_label — 6. Искусственный интеллект - о разделе slug — /section/ai
+------
 id: ai
 title: 6. Искусственный интеллект - о разделе
 sidebar_label: 6. Искусственный интеллект - о разделе
 slug: /section/ai
-
-
----<div class="article-tags">
+---
+<div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>

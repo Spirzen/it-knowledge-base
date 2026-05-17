@@ -1,6 +1,6 @@
 ---
 title: Документация — о разделе
-description: Материалы раздела «Документация».
+description: Подборка материалов раздела Документация в энциклопедии Вселенная IT
 sidebar_label: Документация — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

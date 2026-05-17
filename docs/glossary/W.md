@@ -1,7 +1,7 @@
-﻿---
-title: "W"
 ---
-
+title: "W"
+description: Write-After-Read hazard (опасность запись после чтения) — тип зависимости данных в конвейерных и параллельных вычислениях, возникающий, когда инструкция пытается записать значение в регистр или…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

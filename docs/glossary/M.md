@@ -1,7 +1,7 @@
-﻿---
-title: "M"
 ---
-
+title: "M"
+description: MAC Address (Media Access Control Address) — уникальный аппаратный идентификатор сетевого интерфейса, присваиваемый производителем. Используется на канальном уровне (L2) модели OSI для доставки…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

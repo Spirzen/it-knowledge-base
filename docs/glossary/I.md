@@ -1,7 +1,7 @@
-﻿---
-title: "I"
 ---
-
+title: "I"
+description: I-кадр (от англ. Intra-coded frame — внутренне кодированный кадр) — тип видеокадра, который сжимается независимо от других кадров, без использования временного предсказания. I-кадр содержит полную…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

@@ -1,8 +1,8 @@
 ---
 title: Лаборатория — о разделе
+description: Подборка материалов раздела Лаборатория в энциклопедии Вселенная IT
 slug: /lab/intro
 sidebar_label: Лаборатория — о разделе
-description: Материалы раздела «Лаборатория».
 ---
 import DocCardList from '@theme/DocCardList';
 

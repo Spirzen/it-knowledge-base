@@ -1,6 +1,6 @@
 ---
 title: Графика — о разделе
-description: Материалы раздела «Графика».
+description: Подборка материалов раздела Графика в энциклопедии Вселенная IT
 sidebar_label: Графика — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

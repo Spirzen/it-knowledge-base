@@ -1,7 +1,7 @@
-﻿---
-title: "H"
 ---
-
+title: "H"
+description: H.264 (также известен как AVC — Advanced Video Coding, MPEG-4 Part 10) — один из самых распространённых видеокодеков, стандартизированный в 2003 году совместно ITU-T и ISO/IEC. H.264 обеспечивает…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

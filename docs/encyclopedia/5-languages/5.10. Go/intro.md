@@ -1,7 +1,7 @@
 ---
 title: Go — о разделе
+description: Подборка материалов раздела Go в энциклопедии Вселенная IT
 sidebar_label: Go — о разделе
-description: Материалы раздела «Go».
 ---
 import DocCardList from '@theme/DocCardList';
 

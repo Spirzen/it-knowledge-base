@@ -1,11 +1,13 @@
 ---
+title: О разделе
+description: id — infra-Безопасность title — 8. Инфраструктура и безопасность - о разделе sidebar_label — 8. Инфраструктура и безопасность - о разделе slug — /encyclopedia/Инфраструктура и…
+------
 id: infra-Безопасность
 title: 8. Инфраструктура и безопасность - о разделе
 sidebar_label: 8. Инфраструктура и безопасность - о разделе
 slug: /encyclopedia/Инфраструктура и безопасность/infra-Безопасность
-
-
----<div class="article-tags">
+---
+<div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>

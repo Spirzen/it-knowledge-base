@@ -1,7 +1,7 @@
-﻿---
-title: "V"
 ---
-
+title: "V"
+description: V8 — высокопроизводительный движок JavaScript и WebAssembly, разработанный Google для Chrome и Node.js.
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

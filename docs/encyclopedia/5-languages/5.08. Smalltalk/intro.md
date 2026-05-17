@@ -1,7 +1,7 @@
 ---
 title: Smalltalk — о разделе
+description: Подборка материалов раздела Smalltalk в энциклопедии Вселенная IT
 sidebar_label: Smalltalk — о разделе
-description: Материалы раздела «Smalltalk».
 ---
 import DocCardList from '@theme/DocCardList';
 

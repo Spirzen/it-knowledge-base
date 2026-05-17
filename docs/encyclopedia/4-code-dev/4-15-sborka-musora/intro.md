@@ -1,6 +1,6 @@
 ---
 title: Сборка мусора — о разделе
-description: Материалы раздела «Сборка мусора».
+description: Подборка материалов раздела Сборка мусора в энциклопедии Вселенная IT
 sidebar_label: Сборка мусора — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

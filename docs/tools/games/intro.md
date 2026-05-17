@@ -1,6 +1,6 @@
 ---
 title: Игры — о разделе
-description: Материалы раздела «Игры».
+description: Подборка материалов раздела Игры в энциклопедии Вселенная IT
 sidebar_label: Игры — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

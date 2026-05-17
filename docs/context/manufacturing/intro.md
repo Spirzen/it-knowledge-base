@@ -1,6 +1,6 @@
 ---
 title: Производство — о разделе
-description: Материалы раздела «Производство».
+description: Подборка материалов раздела Производство в энциклопедии Вселенная IT
 sidebar_label: Производство — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

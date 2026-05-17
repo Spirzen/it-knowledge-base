@@ -1,7 +1,7 @@
 ---
 title: Великие люди — о разделе
+description: Подборка материалов раздела Великие люди в энциклопедии Вселенная IT
 sidebar_label: Великие люди — о разделе
-description: Материалы раздела «Великие люди».
 ---
 import DocCardList from '@theme/DocCardList';
 

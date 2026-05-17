@@ -1,6 +1,6 @@
 ---
 title: Тренажеры — о разделе
-description: Материалы раздела «Тренажеры».
+description: Подборка материалов раздела Тренажеры в энциклопедии Вселенная IT
 sidebar_label: Тренажеры — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

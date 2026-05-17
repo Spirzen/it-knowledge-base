@@ -1,7 +1,7 @@
 ---
 title: R — о разделе
+description: Подборка материалов раздела R в энциклопедии Вселенная IT
 sidebar_label: R — о разделе
-description: Материалы раздела «R».
 ---
 import DocCardList from '@theme/DocCardList';
 

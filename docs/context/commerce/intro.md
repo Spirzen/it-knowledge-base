@@ -1,6 +1,6 @@
 ---
 title: Торговля — о разделе
-description: Материалы раздела «Торговля».
+description: Подборка материалов раздела Торговля в энциклопедии Вселенная IT
 sidebar_label: Торговля — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

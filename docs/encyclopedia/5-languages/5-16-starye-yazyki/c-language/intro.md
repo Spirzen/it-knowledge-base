@@ -1,6 +1,6 @@
 ---
 title: Си — о разделе
-description: Материалы раздела «Си».
+description: Подборка материалов раздела Си в энциклопедии Вселенная IT
 sidebar_label: Си — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

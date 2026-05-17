@@ -1,6 +1,6 @@
 ---
 title: Код — о разделе
-description: Материалы раздела «Код».
+description: Подборка материалов раздела Код в энциклопедии Вселенная IT
 sidebar_label: Код — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

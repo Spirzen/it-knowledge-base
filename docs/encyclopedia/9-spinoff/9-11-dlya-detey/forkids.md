@@ -1,11 +1,13 @@
 ---
+title: О разделе
+description: id — forkids title — Для детей - о разделе sidebar_label — Для детей - о разделе slug — /encyclopedia/Спин-офф/9.11. Для детей/forkids
+------
 id: forkids
 title: Для детей - о разделе
 sidebar_label: Для детей - о разделе
 slug: /encyclopedia/Спин-офф/9.11. Для детей/forkids
-
-
----<div class="article-tags">
+---
+<div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>

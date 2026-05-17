@@ -1,7 +1,7 @@
-﻿---
-title: "S"
 ---
-
+title: "S"
+description: S3 (Simple Storage Service) — сервис объектного хранения от Amazon Web Services, запущенный в 2006 г. и ставший де-факто стандартом для облачных хранилищ.
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

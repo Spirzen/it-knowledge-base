@@ -1,7 +1,7 @@
 ---
 title: C++ — о разделе
+description: Подборка материалов раздела C++ в энциклопедии Вселенная IT
 sidebar_label: C++ — о разделе
-description: Материалы раздела «C++».
 ---
 import DocCardList from '@theme/DocCardList';
 

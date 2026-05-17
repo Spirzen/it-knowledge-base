@@ -1,6 +1,6 @@
 ---
 title: Основы — о разделе
-description: Материалы раздела «Основы».
+description: Подборка материалов раздела Основы в энциклопедии Вселенная IT
 sidebar_label: Основы — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

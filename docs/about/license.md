@@ -1,9 +1,9 @@
 ---
 title: Лицензия
+description: Проект Вселенная IT распространяется под Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
 sidebar_label: Лицензия
 slug: /about/license
 ---
-
 # Лицензия
 
 ## Открытая лицензия "Вселенная IT"

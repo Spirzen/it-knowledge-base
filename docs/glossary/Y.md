@@ -1,7 +1,7 @@
-﻿---
-title: "Y"
 ---
-
+title: "Y"
+description: Yet Another Compiler-Compiler — генератор синтаксических анализаторов для языков программирования, разработанный в Bell Labs в 1970-х годах. Принимает грамматику в форме контекстно-свободных правил…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

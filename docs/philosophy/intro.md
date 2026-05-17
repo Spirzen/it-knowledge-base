@@ -1,8 +1,8 @@
 ---
 title: Философия — о разделе
+description: Подборка материалов раздела Философия в энциклопедии Вселенная IT
 slug: /philosophy/intro
 sidebar_label: Философия — о разделе
-description: Материалы раздела «Философия».
 ---
 import DocCardList from '@theme/DocCardList';
 

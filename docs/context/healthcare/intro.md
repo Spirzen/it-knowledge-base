@@ -1,6 +1,6 @@
 ---
 title: Здравоохранение — о разделе
-description: Материалы раздела «Здравоохранение».
+description: Подборка материалов раздела Здравоохранение в энциклопедии Вселенная IT
 sidebar_label: Здравоохранение — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

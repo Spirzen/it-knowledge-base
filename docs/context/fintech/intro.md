@@ -1,6 +1,6 @@
 ---
 title: Финтех — о разделе
-description: Материалы раздела «Финтех».
+description: Подборка материалов раздела Финтех в энциклопедии Вселенная IT
 sidebar_label: Финтех — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

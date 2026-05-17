@@ -1,6 +1,6 @@
 ---
 title: Компьютер — о разделе
-description: Материалы раздела «Компьютер».
+description: Подборка материалов раздела Компьютер в энциклопедии Вселенная IT
 sidebar_label: Компьютер — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

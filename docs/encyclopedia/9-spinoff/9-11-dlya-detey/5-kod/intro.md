@@ -1,7 +1,7 @@
 ---
 title: Программирование — о разделе
+description: Подборка материалов раздела Программирование в энциклопедии Вселенная IT
 sidebar_label: Программирование — о разделе
-description: Материалы раздела «Программирование».
 ---
 import DocCardList from '@theme/DocCardList';
 

@@ -1,8 +1,8 @@
 ---
 title: Контекст — о разделе
+description: Подборка материалов раздела Контекст в энциклопедии Вселенная IT
 slug: /context/intro
 sidebar_label: Контекст — о разделе
-description: Материалы раздела «Контекст».
 ---
 import DocCardList from '@theme/DocCardList';
 

@@ -1,6 +1,6 @@
 ---
 title: Введение в ИИ — о разделе
-description: Материалы раздела «Введение в ИИ».
+description: Подборка материалов раздела Введение в ИИ в энциклопедии Вселенная IT
 sidebar_label: Введение в ИИ — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

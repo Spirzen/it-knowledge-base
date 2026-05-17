@@ -1,7 +1,7 @@
 ---
 title: Kotlin — о разделе
+description: Подборка материалов раздела Kotlin в энциклопедии Вселенная IT
 sidebar_label: Kotlin — о разделе
-description: Материалы раздела «Kotlin».
 ---
 import DocCardList from '@theme/DocCardList';
 

@@ -1,6 +1,6 @@
 ---
 title: Вопросы — о разделе
-description: Материалы раздела «Вопросы».
+description: Подборка материалов раздела Вопросы в энциклопедии Вселенная IT
 sidebar_label: Вопросы — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

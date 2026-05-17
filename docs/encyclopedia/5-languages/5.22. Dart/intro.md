@@ -1,7 +1,7 @@
 ---
 title: Dart — о разделе
+description: Подборка материалов раздела Dart в энциклопедии Вселенная IT
 sidebar_label: Dart — о разделе
-description: Материалы раздела «Dart».
 ---
 import DocCardList from '@theme/DocCardList';
 

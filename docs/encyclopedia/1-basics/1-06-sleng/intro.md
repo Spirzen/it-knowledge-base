@@ -1,6 +1,6 @@
 ---
 title: Сленг — о разделе
-description: Материалы раздела «Сленг».
+description: Подборка материалов раздела Сленг в энциклопедии Вселенная IT
 sidebar_label: Сленг — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

@@ -1,7 +1,7 @@
-﻿---
-title: "R"
 ---
-
+title: "R"
+description: RabbitMQ — программный брокер сообщений с открытым исходным кодом, реализующий протокол AMQP (Advanced Message Queuing Protocol). Предназначен для организации надёжного асинхронного взаимодействия…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

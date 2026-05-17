@@ -1,6 +1,6 @@
 ---
 title: Платформы — о разделе
-description: Материалы раздела «Платформы».
+description: Подборка материалов раздела Платформы в энциклопедии Вселенная IT
 sidebar_label: Платформы — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

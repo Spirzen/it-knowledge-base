@@ -1,7 +1,7 @@
-﻿---
-title: "K"
 ---
-
+title: "K"
+description: Apache Kafka — распределённая потоковая платформа с открытым исходным кодом, предназначенная для построения реального времени потоковой передачи данных и обработки событий. Используется как брокер…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

@@ -1,6 +1,6 @@
 ---
 title: CSS — о разделе
-description: Материалы раздела «CSS».
+description: Подборка материалов раздела CSS в энциклопедии Вселенная IT
 sidebar_label: CSS — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

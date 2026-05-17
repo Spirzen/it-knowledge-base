@@ -1,6 +1,6 @@
 ---
 title: Государство — о разделе
-description: Материалы раздела «Государство».
+description: Подборка материалов раздела Государство в энциклопедии Вселенная IT
 sidebar_label: Государство — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

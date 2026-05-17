@@ -1,7 +1,7 @@
 ---
 title: IoT — о разделе
+description: Подборка материалов раздела IoT в энциклопедии Вселенная IT
 sidebar_label: IoT — о разделе
-description: Материалы раздела «IoT».
 ---
 import DocCardList from '@theme/DocCardList';
 

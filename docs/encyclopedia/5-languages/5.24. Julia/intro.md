@@ -1,7 +1,7 @@
 ---
 title: Julia — о разделе
+description: Подборка материалов раздела Julia в энциклопедии Вселенная IT
 sidebar_label: Julia — о разделе
-description: Материалы раздела «Julia».
 ---
 import DocCardList from '@theme/DocCardList';
 

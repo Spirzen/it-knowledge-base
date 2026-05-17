@@ -1,7 +1,7 @@
-﻿---
-title: "T"
 ---
-
+title: "T"
+description: Тег — 1) В разметке (HTML, XML) — синтаксическая конструкция, обозначающая начало или конец элемента, атрибуты или содержимое. 2) В системах управления версиями (например, Git) — метка, присваиваемая…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

@@ -1,11 +1,11 @@
 ---
 id: Основы
 title: 1. Основы - о разделе
+description: mindmap root((Основы)) Введение 1.01 Давайте познакомимся 1.02 Введение 1.03 Дорожная карта 1.04 Восприятие IT 1.05 Предупреждение 1.06 Сленг 1.07 Немного о прошлом Компьютер и данные 1.08 Как…
 sidebar_label: 1. Основы - о разделе
 slug: /section/Основы
-
-
----<div class="article-tags">
+---
+<div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>
@@ -637,5 +637,4 @@ mindmap
   </ul>
   </li>
 </ul>
-
 ---

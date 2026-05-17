@@ -1,7 +1,7 @@
 ---
 title: Игровая индустрия — о разделе
+description: Подборка материалов раздела Игровая индустрия в энциклопедии Вселенная IT
 sidebar_label: Игровая индустрия — о разделе
-description: Материалы раздела «Игровая индустрия».
 ---
 import DocCardList from '@theme/DocCardList';
 

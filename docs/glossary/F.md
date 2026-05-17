@@ -1,7 +1,7 @@
-﻿---
-title: "F"
 ---
-
+title: "F"
+description: F — функционально-ориентированный язык программирования, входящий в экосистему .NET. Разработан Доном Симардом в Microsoft Research (2005), вдохновлён OCaml.
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

@@ -1,7 +1,7 @@
 ---
 title: Rust — о разделе
+description: Подборка материалов раздела Rust в энциклопедии Вселенная IT
 sidebar_label: Rust — о разделе
-description: Материалы раздела «Rust».
 ---
 import DocCardList from '@theme/DocCardList';
 

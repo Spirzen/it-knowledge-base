@@ -1,7 +1,7 @@
 ---
 title: Lua и Luau — о разделе
+description: Подборка материалов раздела Lua и Luau в энциклопедии Вселенная IT
 sidebar_label: Lua и Luau — о разделе
-description: Материалы раздела «Lua и Luau».
 ---
 import DocCardList from '@theme/DocCardList';
 

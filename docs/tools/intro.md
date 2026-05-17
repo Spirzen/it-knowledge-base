@@ -1,8 +1,8 @@
 ---
 title: Инструменты — о разделе
+description: Подборка материалов раздела Инструменты в энциклопедии Вселенная IT
 slug: /tools/intro
 sidebar_label: Инструменты — о разделе
-description: Материалы раздела «Инструменты».
 ---
 import DocCardList from '@theme/DocCardList';
 

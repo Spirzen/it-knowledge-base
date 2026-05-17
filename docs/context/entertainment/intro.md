@@ -1,6 +1,6 @@
 ---
 title: Развлечения — о разделе
-description: Материалы раздела «Развлечения».
+description: Подборка материалов раздела Развлечения в энциклопедии Вселенная IT
 sidebar_label: Развлечения — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

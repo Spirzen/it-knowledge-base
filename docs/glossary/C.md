@@ -1,7 +1,7 @@
-﻿---
-title: "C"
 ---
-
+title: "C"
+description: Высокоуровневый процедурный язык программирования, разработанный Деннисом Ритчи в начале 1970-х годов в Bell Labs. Служит основой для многих операционных систем (включая UNIX и его производные),…
+---
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-advanced">ГЛОССАРИЙ</span>

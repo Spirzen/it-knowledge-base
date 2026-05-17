@@ -1,6 +1,6 @@
 ---
 title: Нейросети — о разделе
-description: Материалы раздела «Нейросети».
+description: Подборка материалов раздела Нейросети в энциклопедии Вселенная IT
 sidebar_label: Нейросети — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

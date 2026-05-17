@@ -1,7 +1,7 @@
 ---
 title: Ruby — о разделе
+description: Подборка материалов раздела Ruby в энциклопедии Вселенная IT
 sidebar_label: Ruby — о разделе
-description: Материалы раздела «Ruby».
 ---
 import DocCardList from '@theme/DocCardList';
 

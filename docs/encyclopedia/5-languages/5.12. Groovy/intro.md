@@ -1,7 +1,7 @@
 ---
 title: Groovy — о разделе
+description: Подборка материалов раздела Groovy в энциклопедии Вселенная IT
 sidebar_label: Groovy — о разделе
-description: Материалы раздела «Groovy».
 ---
 import DocCardList from '@theme/DocCardList';
 

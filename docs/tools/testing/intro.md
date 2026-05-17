@@ -1,6 +1,6 @@
 ---
 title: Тестирование — о разделе
-description: Материалы раздела «Тестирование».
+description: Подборка материалов раздела Тестирование в энциклопедии Вселенная IT
 sidebar_label: Тестирование — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

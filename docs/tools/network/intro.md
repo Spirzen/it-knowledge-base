@@ -1,6 +1,6 @@
 ---
 title: Сеть — о разделе
-description: Материалы раздела «Сеть».
+description: Подборка материалов раздела Сеть в энциклопедии Вселенная IT
 sidebar_label: Сеть — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

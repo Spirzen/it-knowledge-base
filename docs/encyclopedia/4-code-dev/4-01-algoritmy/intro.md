@@ -1,6 +1,6 @@
 ---
 title: Алгоритмы — о разделе
-description: Материалы раздела «Алгоритмы».
+description: Подборка материалов раздела Алгоритмы в энциклопедии Вселенная IT
 sidebar_label: Алгоритмы — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

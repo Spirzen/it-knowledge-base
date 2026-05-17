@@ -1,6 +1,6 @@
 ---
 title: Программа — о разделе
-description: Материалы раздела «Программа».
+description: Подборка материалов раздела Программа в энциклопедии Вселенная IT
 sidebar_label: Программа — о разделе
 ---
 import DocCardList from '@theme/DocCardList';

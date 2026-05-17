@@ -1,7 +1,7 @@
 ---
 title: Старые языки — о разделе
+description: Подборка материалов раздела Старые языки в энциклопедии Вселенная IT
 sidebar_label: Старые языки — о разделе
-description: Материалы раздела «Старые языки».
 ---
 import DocCardList from '@theme/DocCardList';
 

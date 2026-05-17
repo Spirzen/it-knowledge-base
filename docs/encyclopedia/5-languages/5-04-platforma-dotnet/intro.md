@@ -1,7 +1,7 @@
 ---
 title: Платформа .NET — о разделе
+description: Подборка материалов раздела Платформа .NET в энциклопедии Вселенная IT
 sidebar_label: Платформа .NET — о разделе
-description: Материалы раздела «Платформа .NET».
 ---
 import DocCardList from '@theme/DocCardList';
 

@@ -1,6 +1,6 @@
 ---
 title: NoSQL — о разделе
-description: Материалы раздела «NoSQL».
+description: Подборка материалов раздела NoSQL в энциклопедии Вселенная IT
 sidebar_label: NoSQL — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
