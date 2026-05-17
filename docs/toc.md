@@ -2801,7 +2801,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/21">8.04. Pulumi</a></li>
   <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/211">8.04. Аутентификация и авторизация</a></li>
   <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/212">8.04. Webhooks</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/213">8.04. Data Warehouse</a></li>
+  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/213">8.04. Данные Warehouse</a></li>
   <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/214">8.04. Deb-пакеты</a></li>
   <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/215">8.04. Инфраструктура как код (IaC)</a></li>
   <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/216">8.04. Ansible</a></li>

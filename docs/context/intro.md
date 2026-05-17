@@ -1,7 +1,9 @@
 ---
-title: Контекст
+title: Контекст — о разделе
+slug: /context/intro
+sidebar_label: Контекст — о разделе
+description: Материалы раздела «Контекст».
 ---
-
 import DocCardList from '@theme/DocCardList';
 
 ## Контекст

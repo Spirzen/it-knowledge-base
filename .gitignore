@@ -143,16 +143,27 @@ dist
 
 Обновление.txt
 zen_5Dpza0TtuRNaknqdiI81nrLZIx63booZgDlmeUYYDpXcVkfkyHcwmpcNf9pbFL45.html
-docs/find_replacements.py
-find_replacements.py
 result_replacements.txt
 OPTIMIZATIONS.md
-find_replacements2.py
 result_replacements2.txt
 docs/full_path.txt
-docs/scan_directory.py
-docs/generate_toc.py
 generated_structure.md
 launch.bat
-launch.py
 .mailmap
+
+# Служебные Python-утилиты (не входят в сборку Docusaurus)
+/*.py
+/docs/*.py
+
+# Служебные скрипты в scripts/ (миграция, починка, LLM-скан и т.п.)
+/scripts/*.py
+/scripts/_*
+/scripts/segment-map-ru-en.json
+/scripts/path-migration-map.json
+/scripts/*.mjs
+!scripts/generate-demo-registry.mjs
+
+# Артефакты служебных скриптов
+/scripts/_*.txt
+/scripts/_*.json
+info/llm-phrases-scan.csv

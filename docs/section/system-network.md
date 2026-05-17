@@ -1,8 +1,8 @@
 ---
-id: system-network
+id: Система-Сеть
 title: 2. Система и сеть - о разделе
 sidebar_label: 2. Система и сеть - о разделе
-slug: /section/system-network
+slug: /section/Система-Сеть
 ---
 
 ## О разделе

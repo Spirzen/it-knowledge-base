@@ -1,8 +1,8 @@
 ---
-id: basics
+id: Основы
 title: 1. Основы - о разделе
 sidebar_label: 1. Основы - о разделе
-slug: /section/basics
+slug: /section/Основы
 ---
 
 ## О разделе

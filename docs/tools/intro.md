@@ -1,7 +1,9 @@
 ---
-title: Инструменты
+title: Инструменты — о разделе
+slug: /tools/intro
+sidebar_label: Инструменты — о разделе
+description: Материалы раздела «Инструменты».
 ---
-
 import DocCardList from '@theme/DocCardList';
 
 ## Инструменты

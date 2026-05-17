@@ -33,9 +33,9 @@ module.exports = {
           sidebarPath: './sidebars.js',
           editUrl: undefined,
           showLastUpdateAuthor: false,
-          showLastUpdateTime: false,
+          showLastUpdateTime: true,
           routeBasePath: '/',
-		  tags: false,
+          numberPrefixParser: false,
         },
         blog: false,
         theme: {
@@ -47,45 +47,58 @@ module.exports = {
   ],
 
   plugins: [
-    [
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 80,
-        maxWidth: 1200,
-        sizes: [640, 1200],
-        disableInDev: false,
-        disable: false,
+    () => ({
+      name: 'demo-chunk-splitting',
+      configureWebpack(_config, isServer) {
+        if (isServer) {
+          return {};
+        }
+        return {
+          optimization: {
+            splitChunks: {
+              cacheGroups: {
+                demoWidgets: {
+                  test: /[\\/]src[\\/]components[\\/]/,
+                  name: 'demo-widgets',
+                  chunks: 'all',
+                  minSize: 20000,
+                  priority: 25,
+                  reuseExistingChunk: true,
+                },
+              },
+            },
+          },
+        };
       },
-    ],
+    }),
   ],
 
   themeConfig: {
     prism: {
       additionalLanguages: [
-        'csharp',
-        'cpp',
-        'java',
-        'sql',
-        'kotlin',
-        'rust',
-        'go',
-        'fsharp',
-        'scala',
-        'clojure',
-        'lua',
-        'lisp',
-        'perl',
         'bash',
         'cobol',
+        'cpp',
+        'csharp',
+        'docker',
         'fortran',
-        'latex',
+        'fsharp',
+        'git',
+        'go',
         'graphql',
         'http',
-        'markup',
-        'php',
         'ini',
-        'git',
-        'docker'
+        'java',
+        'kotlin',
+        'latex',
+        'lisp',
+        'lua',
+        'markup',
+        'perl',
+        'php',
+        'rust',
+        'scala',
+        'sql',
       ],
     },
     // Настройки поиска (требует настройки Algolia, но увы - она недоступна в моей стране!)

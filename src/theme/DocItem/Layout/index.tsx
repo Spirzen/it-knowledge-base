@@ -1,5 +1,6 @@
 import React, {useEffect, useState, type ReactElement, type ReactNode} from 'react';
 import clsx from 'clsx';
+import {useHistory} from '@docusaurus/router';
 import {useWindowSize} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 
@@ -25,6 +26,10 @@ const DocItemContent = require('@theme/DocItem/Content').default;
 const DocBreadcrumbs = require('@theme/DocBreadcrumbs').default;
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const ContentVisibility = require('@theme/ContentVisibility').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const ArticlePdfExport = require('@site/src/components/ArticlePdfExport').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const ArticleSeeAlso = require('@site/src/components/ArticleSeeAlso').default;
 
 type DocItemLayoutProps = {
   children: ReactNode;
@@ -118,73 +123,80 @@ function ChapterProgress(): ReactElement | null {
   );
 }
 
+const TAG_CLASS_TO_SLUG: Record<string, string> = {
+  'tag-required': 'required',
+  'tag-notrequired': 'notrequired',
+  'tag-human': 'beginner',
+  'tag-beginner': 'beginner',
+  'tag-advanced': 'advanced',
+};
+
+const COMPLEXITY_LABEL_TO_SLUG: Record<string, string> = {
+  'Аналитику': 'analytic',
+  'Тестировщику': 'tester',
+  'Архитектору': 'architector',
+  'Разработчику': 'developer',
+  'Руководителю': 'manager',
+  'Инженеру': 'engineer',
+  'Всем': 'all',
+};
+
+function getArticleTagSlug(el: HTMLElement): string | null {
+  if (el.classList.contains('tag-inprogress')) {
+    return null;
+  }
+
+  for (const [className, slug] of Object.entries(TAG_CLASS_TO_SLUG)) {
+    if (el.classList.contains(className)) {
+      return slug;
+    }
+  }
+
+  return null;
+}
+
+function getComplexityBadgeSlug(el: HTMLElement): string | null {
+  const label = el.textContent?.trim();
+  if (!label) {
+    return null;
+  }
+
+  return COMPLEXITY_LABEL_TO_SLUG[label] ?? null;
+}
+
 /**
- * Делает систему тегов кликабельной и быстрой:
- * - Для .article-tags .tag ищем по ВИДИМОМУ ТЕКСТУ (\"ДЛЯ НОВИЧКОВ\" и т.п.).
- *   Локальный поиск индексирует текст страницы, а не CSS-классы, поэтому запрос
- *   по `tag-beginner` может быть очень медленным/бесполезным на больших индексах.
- * - Для .complexity-badge также ищем по тексту бейджа (\"Разработчику\" и др.).
+ * Делает HTML-теги кликабельными и ведёт на страницы /tags/*,
+ * как теги из frontmatter Docusaurus.
  */
 function useClickableArticleTags() {
+  const history = useHistory();
+
   useEffect(() => {
-    const root = document;
-
-    const getSearchContextFromPathname = (pathname: string): string => {
-      const clean = pathname.replace(/^\//, '').replace(/\/$/, '');
-      const parts = clean.split('/').filter(Boolean);
-      if (parts.length === 0) {
-        return '';
-      }
-
-      const top = parts[0];
-
-      // Энциклопедия индексируется по верхнему разделу: encyclopedia/<Раздел>
-      if (top === 'encyclopedia') {
-        const second = parts[1];
-        if (!second) return 'encyclopedia/intro';
-        if (second === 'intro') return 'encyclopedia/intro';
-        return `encyclopedia/${second}`;
-      }
-
-      if (
-        top === 'about' ||
-        top === 'tools' ||
-        top === 'glossary' ||
-        top === 'lab' ||
-        top === 'context' ||
-        top === 'philosophy' ||
-        top === 'section'
-      ) {
-        return top;
-      }
-
-      return '';
+    const navigateToTag = (slug: string) => {
+      history.push(`/tags/${slug}`);
     };
 
     const makeInteractive = (
       elements: NodeListOf<HTMLElement>,
-      getQuery: (el: HTMLElement) => string | null,
+      getSlug: (el: HTMLElement) => string | null,
     ) => {
       elements.forEach((el) => {
         if (el.dataset.enhanced === 'true') {
           return;
         }
 
-        const queryValue = getQuery(el);
-        if (!queryValue) {
+        const slug = getSlug(el);
+        if (!slug) {
           return;
         }
 
         el.dataset.enhanced = 'true';
         el.classList.add(styles.clickableTag);
-        el.setAttribute('role', 'button');
+        el.setAttribute('role', 'link');
         el.setAttribute('tabindex', '0');
 
         const navigate = () => {
-          const query = encodeURIComponent(queryValue);
-          const ctx = getSearchContextFromPathname(window.location.pathname);
-          const ctxPart = ctx ? `&ctx=${encodeURIComponent(ctx)}` : '';
-          window.location.href = `/search?q=${query}${ctxPart}`;
+          navigateToTag(slug);
         };
 
         const keyHandler = (event: KeyboardEvent) => {
@@ -199,17 +211,15 @@ function useClickableArticleTags() {
       });
     };
 
-    // Обычные статусы (ОБЯЗАТЕЛЬНО, ДЛЯ НОВИЧКОВ, и т.п.) — ищем по видимому тексту
-    const statusTags = root.querySelectorAll<HTMLElement>('.article-tags .tag');
-    makeInteractive(statusTags, (el) => {
-      return el.textContent?.trim() || null;
-    });
+    const statusTags = document.querySelectorAll<HTMLElement>(
+      '.article-tags .tag:not(.tag-inprogress)',
+    );
+    makeInteractive(statusTags, getArticleTagSlug);
 
-    // Complexity-бейджи (Разработчику, Аналитику, ...) — ищем по видимому тексту
     const complexityBadges =
-      root.querySelectorAll<HTMLElement>('.complexity-badge');
-    makeInteractive(complexityBadges, (el) => el.textContent?.trim() || null);
-  }, []);
+      document.querySelectorAll<HTMLElement>('.complexity-badge');
+    makeInteractive(complexityBadges, getComplexityBadgeSlug);
+  }, [history]);
 }
 
 export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode {
@@ -226,9 +236,11 @@ export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode
         <div className={styles.docItemContainer}>
           <article>
             <DocBreadcrumbs />
+            <ArticlePdfExport />
             <DocVersionBadge />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
+            <ArticleSeeAlso />
             <DocItemFooter />
           </article>
           <DocItemPaginator />

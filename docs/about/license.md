@@ -1,6 +1,7 @@
 ---
 title: Лицензия
 sidebar_label: Лицензия
+slug: /about/license
 ---
 
 # Лицензия

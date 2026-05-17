@@ -1,7 +1,9 @@
 ---
-title: Философия
+title: Философия — о разделе
+slug: /philosophy/intro
+sidebar_label: Философия — о разделе
+description: Материалы раздела «Философия».
 ---
-
 import DocCardList from '@theme/DocCardList';
 
 ## Философия

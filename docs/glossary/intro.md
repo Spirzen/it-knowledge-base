@@ -1,7 +1,8 @@
 ---
-title: О разделе "Глоссарий"
+title: Глоссарий — о разделе
+sidebar_label: Глоссарий — о разделе
+description: Материалы раздела «Глоссарий».
 ---
-
 import DocCardList from '@theme/DocCardList';
 
 <div class="article-tags">

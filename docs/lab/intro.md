@@ -1,7 +1,9 @@
 ---
-title: Лаборатория
+title: Лаборатория — о разделе
+slug: /lab/intro
+sidebar_label: Лаборатория — о разделе
+description: Материалы раздела «Лаборатория».
 ---
-
 import DocCardList from '@theme/DocCardList';
 
 ## Лаборатория
