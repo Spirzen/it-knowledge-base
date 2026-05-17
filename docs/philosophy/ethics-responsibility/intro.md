@@ -8,3 +8,5 @@ import DocCardList from '@theme/DocCardList';
 # Этика и ответственность — о разделе
 
 <DocCardList />
+
+---

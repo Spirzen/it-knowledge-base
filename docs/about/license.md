@@ -106,3 +106,5 @@ URL: https://spirzen.github.io/it-knowledge-base/
 ---
 
 *Последнее обновление: 2026*
+
+---

@@ -167,3 +167,5 @@ Windows Subsystem for Linux: см. отдельную статью.
 ## WWW
 
 World Wide Web (всемирная паутина): см. статью «Web».
+
+---

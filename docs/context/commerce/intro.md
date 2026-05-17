@@ -8,3 +8,5 @@ import DocCardList from '@theme/DocCardList';
 # Торговля — о разделе
 
 <DocCardList />
+
+---

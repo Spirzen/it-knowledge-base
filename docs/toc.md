@@ -3149,3 +3149,4 @@ import DocCardList from '@theme/DocCardList';
 - [Об авторе](./about/author)
 - [Лицензия](./about/license)
 
+---

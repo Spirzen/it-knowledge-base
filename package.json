@@ -12,7 +12,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "docs:demo-registry": "node scripts/generate-demo-registry.mjs"
+    "docs:demo-registry": "node scripts/generate-demo-registry.mjs",
+    "docs:trailing-hr": "node scripts/ensure-article-trailing-hr.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.0",

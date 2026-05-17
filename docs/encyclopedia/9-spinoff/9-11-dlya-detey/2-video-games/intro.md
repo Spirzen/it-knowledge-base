@@ -8,3 +8,5 @@ import DocCardList from '@theme/DocCardList';
 # Видеоигры и компьютерные игры — о разделе
 
 <DocCardList />
+
+---

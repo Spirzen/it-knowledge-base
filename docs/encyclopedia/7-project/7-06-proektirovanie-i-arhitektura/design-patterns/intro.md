@@ -8,3 +8,5 @@ import DocCardList from '@theme/DocCardList';
 # Паттерны проектирования — о разделе
 
 <DocCardList />
+
+---
