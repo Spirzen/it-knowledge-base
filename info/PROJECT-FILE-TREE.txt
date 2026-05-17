@@ -1,0 +1,3604 @@
+.gitattributes
+.github/
+.github\workflows/
+.github\workflows\deploy.yml
+.gitignore
+.vscode/
+.vscode\settings.json
+Обновление.txt
+deploy.bat
+docs/
+docs\about/
+docs\about\author.md
+docs\about\license.md
+docs\about\manifest.md
+docs\about\project.md
+docs\about\QR.png
+docs\about\tags.md
+docs\context/
+docs\context\_category_.json
+docs\context\commerce/
+docs\context\commerce\_category_.json
+docs\context\commerce\1.md
+docs\context\commerce\2.md
+docs\context\commerce\3.md
+docs\context\commerce\intro.md
+docs\context\construction/
+docs\context\construction\_category_.json
+docs\context\construction\1.md
+docs\context\construction\2.md
+docs\context\construction\3.md
+docs\context\construction\4.md
+docs\context\construction\5.md
+docs\context\construction\6.md
+docs\context\construction\7.md
+docs\context\construction\intro.md
+docs\context\education/
+docs\context\education\_category_.json
+docs\context\education\1.md
+docs\context\education\2.md
+docs\context\education\3.md
+docs\context\education\4.md
+docs\context\education\5.md
+docs\context\education\6.md
+docs\context\education\intro.md
+docs\context\energy/
+docs\context\energy\_category_.json
+docs\context\energy\1.md
+docs\context\energy\2.md
+docs\context\energy\3.md
+docs\context\energy\intro.md
+docs\context\entertainment/
+docs\context\entertainment\_category_.json
+docs\context\entertainment\1.md
+docs\context\entertainment\2.md
+docs\context\entertainment\3.md
+docs\context\entertainment\intro.md
+docs\context\fintech/
+docs\context\fintech\_category_.json
+docs\context\fintech\1.md
+docs\context\fintech\2.md
+docs\context\fintech\3.md
+docs\context\fintech\4.md
+docs\context\fintech\5.md
+docs\context\fintech\6.md
+docs\context\fintech\7.md
+docs\context\fintech\8.md
+docs\context\fintech\9.md
+docs\context\fintech\intro.md
+docs\context\government/
+docs\context\government\_category_.json
+docs\context\government\1.md
+docs\context\government\2.md
+docs\context\government\3.md
+docs\context\government\4.md
+docs\context\government\5.md
+docs\context\government\6.md
+docs\context\government\7.md
+docs\context\government\intro.md
+docs\context\healthcare/
+docs\context\healthcare\_category_.json
+docs\context\healthcare\1.md
+docs\context\healthcare\2.md
+docs\context\healthcare\3.md
+docs\context\healthcare\4.md
+docs\context\healthcare\5.md
+docs\context\healthcare\6.md
+docs\context\healthcare\7.md
+docs\context\healthcare\intro.md
+docs\context\intro.md
+docs\context\IoT/
+docs\context\IoT\_category_.json
+docs\context\IoT\1.md
+docs\context\IoT\2.md
+docs\context\IoT\3.md
+docs\context\IoT\intro.md
+docs\context\logistics/
+docs\context\logistics\_category_.json
+docs\context\logistics\1.md
+docs\context\logistics\2.md
+docs\context\logistics\3.md
+docs\context\logistics\4.md
+docs\context\logistics\5.md
+docs\context\logistics\intro.md
+docs\context\manufacturing/
+docs\context\manufacturing\_category_.json
+docs\context\manufacturing\1.md
+docs\context\manufacturing\2.md
+docs\context\manufacturing\3.md
+docs\context\manufacturing\4.md
+docs\context\manufacturing\intro.md
+docs\context\science/
+docs\context\science\_category_.json
+docs\context\science\1.md
+docs\context\science\2.md
+docs\context\science\3.md
+docs\context\science\4.md
+docs\context\science\5.md
+docs\context\science\6.md
+docs\context\science\intro.md
+docs\context\video-games/
+docs\context\video-games\_category_.json
+docs\context\video-games\1.md
+docs\context\video-games\10.md
+docs\context\video-games\11.md
+docs\context\video-games\12.md
+docs\context\video-games\13.md
+docs\context\video-games\2.md
+docs\context\video-games\3.md
+docs\context\video-games\4.md
+docs\context\video-games\5.md
+docs\context\video-games\6.md
+docs\context\video-games\7.md
+docs\context\video-games\8.md
+docs\context\video-games\9.md
+docs\context\video-games\image.png
+docs\context\video-games\intro.md
+docs\encyclopedia/
+docs\encyclopedia\_category_.json
+docs\encyclopedia\1-basics/
+docs\encyclopedia\1-basics\_category_.json
+docs\encyclopedia\1-basics\1-01-davayte-poznakomimsya/
+docs\encyclopedia\1-basics\1-01-davayte-poznakomimsya\_category_.json
+docs\encyclopedia\1-basics\1-01-davayte-poznakomimsya\1.md
+docs\encyclopedia\1-basics\1-01-davayte-poznakomimsya\intro.md
+docs\encyclopedia\1-basics\1-02-vvedenie/
+docs\encyclopedia\1-basics\1-02-vvedenie\_category_.json
+docs\encyclopedia\1-basics\1-02-vvedenie\1.md
+docs\encyclopedia\1-basics\1-02-vvedenie\2.md
+docs\encyclopedia\1-basics\1-02-vvedenie\intro.md
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya/
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya\_category_.json
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya\1.md
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya\2.md
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya\211.md
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya\212.md
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya\213.md
+docs\encyclopedia\1-basics\1-03-dorozhnaya-karta-izucheniya\intro.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi/
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\_category_.json
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\1.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\2.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\3.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\4.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\5.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\6.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\7.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\711.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\98.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\99.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\image-1.png
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\image-2.png
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\image-3.png
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\image.png
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\intro.md
+docs\encyclopedia\1-basics\1-04-kak-vidyat-it-obychnye-lyudi\MESM.jpg
+docs\encyclopedia\1-basics\1-05-preduprezhdenie/
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\_category_.json
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\1.md
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\2.md
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\3.md
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\4.md
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\image-1.png
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\image.png
+docs\encyclopedia\1-basics\1-05-preduprezhdenie\intro.md
+docs\encyclopedia\1-basics\1-06-sleng/
+docs\encyclopedia\1-basics\1-06-sleng\_category_.json
+docs\encyclopedia\1-basics\1-06-sleng\1.md
+docs\encyclopedia\1-basics\1-06-sleng\intro.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom/
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\_category_.json
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\1.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\11.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\2.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\3.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\4.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\5.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\6.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\98.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\99.md
+docs\encyclopedia\1-basics\1-07-nemnogo-o-proshlom\intro.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter/
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\_category_.json
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\1.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\2.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\3.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\4.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\5.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\6.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\7.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\711.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\712.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\713.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\714.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\715.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\716.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\8.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\81.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\9.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\9111.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\98.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\99.md
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-1.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-10.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-11.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-12.jpg
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-2.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-3.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-4.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-5.jpg
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-6.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-7.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-8.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image-9.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\image.png
+docs\encyclopedia\1-basics\1-08-kak-rabotaet-kompyuter\intro.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya/
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\_category_.json
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\1.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\2.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\3.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\4.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\5.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\98.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\99.md
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\image-1.png
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\image-2.png
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\image-3.png
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\image.png
+docs\encyclopedia\1-basics\1-09-dannye-i-informatsiya\intro.md
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi/
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\_category_.json
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\1.md
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\2.md
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\3.md
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\4.md
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\98.md
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\99.md
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\image.png
+docs\encyclopedia\1-basics\1-10-bazovye-operatsii-s-dannymi\intro.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya/
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\_category_.json
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\1.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\2.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\3.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\4.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\5.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\51.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\6.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\7.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\98.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\99.md
+docs\encyclopedia\1-basics\1-11-soft-ryadovogo-polzovatelya\intro.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka/
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\_category_.json
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\1.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\11.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\111.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\1111.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\1112.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\2.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\3.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\31.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\311.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\312.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\4.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\5.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\6.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\98.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\99.md
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-1.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-10.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-11.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-12.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-13.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-14.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-15.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-16.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-17.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-18.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-19.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-2.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-20.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-21.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-22.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-23.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-3.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-4.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-5.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-6.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-7.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-8.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image-9.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image.jpg
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\image.png
+docs\encyclopedia\1-basics\1-12-sovety-dlya-novichka\intro.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya/
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\_category_.json
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\1.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\2.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\3.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\4.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\5.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\6.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\7.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\8.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\9.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\98.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\99.md
+docs\encyclopedia\1-basics\1-13-soft-prodvinutogo-polzovatelya\intro.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo/
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\_category_.json
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\1.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\2.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\3.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\4.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\5.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\6.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\7.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\98.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\99.md
+docs\encyclopedia\1-basics\1-14-sovety-dlya-prodvinutogo\intro.md
+docs\encyclopedia\1-basics\1-15-tekst/
+docs\encyclopedia\1-basics\1-15-tekst\_category_.json
+docs\encyclopedia\1-basics\1-15-tekst\1.md
+docs\encyclopedia\1-basics\1-15-tekst\11.md
+docs\encyclopedia\1-basics\1-15-tekst\2.md
+docs\encyclopedia\1-basics\1-15-tekst\211.md
+docs\encyclopedia\1-basics\1-15-tekst\3.md
+docs\encyclopedia\1-basics\1-15-tekst\4.md
+docs\encyclopedia\1-basics\1-15-tekst\41.md
+docs\encyclopedia\1-basics\1-15-tekst\5.md
+docs\encyclopedia\1-basics\1-15-tekst\6.md
+docs\encyclopedia\1-basics\1-15-tekst\7.md
+docs\encyclopedia\1-basics\1-15-tekst\98.md
+docs\encyclopedia\1-basics\1-15-tekst\99.md
+docs\encyclopedia\1-basics\1-15-tekst\intro.md
+docs\encyclopedia\1-basics\1-16-grafika/
+docs\encyclopedia\1-basics\1-16-grafika\_category_.json
+docs\encyclopedia\1-basics\1-16-grafika\1.md
+docs\encyclopedia\1-basics\1-16-grafika\2.md
+docs\encyclopedia\1-basics\1-16-grafika\3.md
+docs\encyclopedia\1-basics\1-16-grafika\4.md
+docs\encyclopedia\1-basics\1-16-grafika\5.md
+docs\encyclopedia\1-basics\1-16-grafika\6.md
+docs\encyclopedia\1-basics\1-16-grafika\98.md
+docs\encyclopedia\1-basics\1-16-grafika\99.md
+docs\encyclopedia\1-basics\1-16-grafika\intro.md
+docs\encyclopedia\1-basics\1-17-audio-i-video/
+docs\encyclopedia\1-basics\1-17-audio-i-video\_category_.json
+docs\encyclopedia\1-basics\1-17-audio-i-video\1.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\2.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\3.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\4.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\5.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\6.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\98.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\99.md
+docs\encyclopedia\1-basics\1-17-audio-i-video\intro.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry/
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\_category_.json
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\1.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\2.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\3.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\4.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\5.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\6.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\98.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\99.md
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\image-1.png
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\image.png
+docs\encyclopedia\1-basics\1-18-kompyuternye-igry\intro.md
+docs\encyclopedia\1-basics\1-19-programma/
+docs\encyclopedia\1-basics\1-19-programma\_category_.json
+docs\encyclopedia\1-basics\1-19-programma\1.md
+docs\encyclopedia\1-basics\1-19-programma\111.md
+docs\encyclopedia\1-basics\1-19-programma\112.md
+docs\encyclopedia\1-basics\1-19-programma\113.md
+docs\encyclopedia\1-basics\1-19-programma\114.md
+docs\encyclopedia\1-basics\1-19-programma\115.md
+docs\encyclopedia\1-basics\1-19-programma\2.md
+docs\encyclopedia\1-basics\1-19-programma\3.md
+docs\encyclopedia\1-basics\1-19-programma\98.md
+docs\encyclopedia\1-basics\1-19-programma\99.md
+docs\encyclopedia\1-basics\1-19-programma\image-1.png
+docs\encyclopedia\1-basics\1-19-programma\image-2.png
+docs\encyclopedia\1-basics\1-19-programma\image-3.png
+docs\encyclopedia\1-basics\1-19-programma\image-4.png
+docs\encyclopedia\1-basics\1-19-programma\image-5.png
+docs\encyclopedia\1-basics\1-19-programma\image.png
+docs\encyclopedia\1-basics\1-19-programma\intro.md
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy/
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\_category_.json
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\1.md
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\2.md
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\3.md
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\4.md
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\98.md
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\99.md
+docs\encyclopedia\1-basics\1-20-ispolnyaemye-fayly-i-arhivy\intro.md
+docs\encyclopedia\1-basics\1-21-poisk-informatsii/
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\_category_.json
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\1.md
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\2.md
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\3.md
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\4.md
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\98.md
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\99.md
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\image-1.png
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\image-2.png
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\image-3.png
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\image-4.png
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\image.png
+docs\encyclopedia\1-basics\1-21-poisk-informatsii\intro.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie/
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\_category_.json
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\1.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\2.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\3.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\4.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\5.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\6.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\98.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\99.md
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\image-1.png
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\image.png
+docs\encyclopedia\1-basics\1-22-kommunikatsiya-i-obschenie\intro.md
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend/
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend\_category_.json
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend\1.md
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend\2.md
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend\3.md
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend\98.md
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend\99.md
+docs\encyclopedia\1-basics\1-23-frontend-i-bekend\intro.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki/
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\_category_.json
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\1.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\2.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\3.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\4.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\5.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\6.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\7.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\98.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\99.md
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-1.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-2.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-3.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-4.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-5.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-6.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-7.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image-8.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\image.png
+docs\encyclopedia\1-basics\1-24-osnovnye-yazyki\intro.md
+docs\encyclopedia\1-basics\1-25-interfeys/
+docs\encyclopedia\1-basics\1-25-interfeys\_category_.json
+docs\encyclopedia\1-basics\1-25-interfeys\1.md
+docs\encyclopedia\1-basics\1-25-interfeys\2.md
+docs\encyclopedia\1-basics\1-25-interfeys\3.md
+docs\encyclopedia\1-basics\1-25-interfeys\4.md
+docs\encyclopedia\1-basics\1-25-interfeys\5.md
+docs\encyclopedia\1-basics\1-25-interfeys\6.md
+docs\encyclopedia\1-basics\1-25-interfeys\98.md
+docs\encyclopedia\1-basics\1-25-interfeys\99.md
+docs\encyclopedia\1-basics\1-25-interfeys\image-1.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-10.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-11.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-12.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-13.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-14.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-15.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-16.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-17.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-18.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-19.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-2.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-20.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-21.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-3.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-4.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-5.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-6.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-7.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-8.png
+docs\encyclopedia\1-basics\1-25-interfeys\image-9.png
+docs\encyclopedia\1-basics\1-25-interfeys\image.png
+docs\encyclopedia\1-basics\1-25-interfeys\intro.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify/
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\_category_.json
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\1.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\2.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\3.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\4.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\5.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\6.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\61.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\7.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\8.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\9.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\91.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\911.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\92.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\98.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\99.md
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\image-1.png
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\image.png
+docs\encyclopedia\1-basics\1-26-karera-v-it-i-mify\intro.md
+docs\encyclopedia\1-basics\1-27-udalennaya-rabota/
+docs\encyclopedia\1-basics\1-27-udalennaya-rabota\_category_.json
+docs\encyclopedia\1-basics\1-27-udalennaya-rabota\1.md
+docs\encyclopedia\1-basics\1-27-udalennaya-rabota\2.md
+docs\encyclopedia\1-basics\1-27-udalennaya-rabota\3.md
+docs\encyclopedia\1-basics\1-27-udalennaya-rabota\intro.md
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie/
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie\_category_.json
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie\1.md
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie\2.md
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie\3.md
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie\998.md
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie\999.md
+docs\encyclopedia\1-basics\1-28-marketing-i-rasprostranenie\intro.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes/
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\_category_.json
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\1.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\111.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\112.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\113.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\2.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\3.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\4.md
+docs\encyclopedia\1-basics\1-29-gosudarstvo-i-biznes\intro.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk/
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\_category_.json
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\1.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\2.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\3.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\4.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\41.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\998.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\999.md
+docs\encyclopedia\1-basics\1-30-angliyskiy-yazyk\intro.md
+docs\encyclopedia\1-basics\basics.md
+docs\encyclopedia\2-system-network/
+docs\encyclopedia\2-system-network\_category_.json
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema/
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\_category_.json
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\1.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\2.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\211.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\3.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\4.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\41.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\411.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\4111.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\412.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\413.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\5.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\51.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\5111.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\5112.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\5113.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\5114.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\5115.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\5116.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\6.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\7.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\71.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\8.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\81.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\98.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\99.md
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-1.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-10.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-11.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-12.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-13.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-14.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-15.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-16.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-17.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-18.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-19.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-2.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-20.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-3.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-4.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-5.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-6.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-7.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-8.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image-9.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\image.png
+docs\encyclopedia\2-system-network\2-01-operatsionnaya-sistema\intro.md
+docs\encyclopedia\2-system-network\2-02-platformy/
+docs\encyclopedia\2-system-network\2-02-platformy\_category_.json
+docs\encyclopedia\2-system-network\2-02-platformy\1.md
+docs\encyclopedia\2-system-network\2-02-platformy\111.md
+docs\encyclopedia\2-system-network\2-02-platformy\2.md
+docs\encyclopedia\2-system-network\2-02-platformy\3.md
+docs\encyclopedia\2-system-network\2-02-platformy\3001.md
+docs\encyclopedia\2-system-network\2-02-platformy\3002.md
+docs\encyclopedia\2-system-network\2-02-platformy\311.md
+docs\encyclopedia\2-system-network\2-02-platformy\312.md
+docs\encyclopedia\2-system-network\2-02-platformy\98.md
+docs\encyclopedia\2-system-network\2-02-platformy\99.md
+docs\encyclopedia\2-system-network\2-02-platformy\image-1.png
+docs\encyclopedia\2-system-network\2-02-platformy\image-2.png
+docs\encyclopedia\2-system-network\2-02-platformy\image-3.png
+docs\encyclopedia\2-system-network\2-02-platformy\image-4.png
+docs\encyclopedia\2-system-network\2-02-platformy\image.png
+docs\encyclopedia\2-system-network\2-02-platformy\intro.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet/
+docs\encyclopedia\2-system-network\2-03-set-i-internet\_category_.json
+docs\encyclopedia\2-system-network\2-03-set-i-internet\1.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\11.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\2.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\21.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\211.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\2111.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\212.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\3.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\4.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\41.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\411.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\5.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\511.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\6.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\61.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\611.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\612.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\613.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\614.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\615.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\616.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\617.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\7.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\71.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\8.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\91.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\98.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\99.md
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-1.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-10.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-2.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-3.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-4.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-5.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-6.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-7.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-8.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image-9.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\image.png
+docs\encyclopedia\2-system-network\2-03-set-i-internet\intro.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty/
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\_category_.json
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\1.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\11.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\111.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\1111.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\1112.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\112.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\113.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\114.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\115.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\116.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\117.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\118.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\119.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\2.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\3.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\998.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\999.md
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\image-1.png
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\image-2.png
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\image.png
+docs\encyclopedia\2-system-network\2-04-kak-rabotayut-sayty-i-veb-sayty\intro.md
+docs\encyclopedia\2-system-network\2-05-terminal/
+docs\encyclopedia\2-system-network\2-05-terminal\_category_.json
+docs\encyclopedia\2-system-network\2-05-terminal\1.md
+docs\encyclopedia\2-system-network\2-05-terminal\101.md
+docs\encyclopedia\2-system-network\2-05-terminal\102.md
+docs\encyclopedia\2-system-network\2-05-terminal\103.md
+docs\encyclopedia\2-system-network\2-05-terminal\11.md
+docs\encyclopedia\2-system-network\2-05-terminal\111.md
+docs\encyclopedia\2-system-network\2-05-terminal\112.md
+docs\encyclopedia\2-system-network\2-05-terminal\1131.md
+docs\encyclopedia\2-system-network\2-05-terminal\1132.md
+docs\encyclopedia\2-system-network\2-05-terminal\2.md
+docs\encyclopedia\2-system-network\2-05-terminal\3.md
+docs\encyclopedia\2-system-network\2-05-terminal\image-1.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-10.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-2.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-3.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-4.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-5.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-6.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-7.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-8.png
+docs\encyclopedia\2-system-network\2-05-terminal\image-9.png
+docs\encyclopedia\2-system-network\2-05-terminal\image.png
+docs\encyclopedia\2-system-network\2-05-terminal\intro.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie/
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\_category_.json
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\1.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\2.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\3.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\4.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\411.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\5.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\6.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\61.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\7.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\8.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\9.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\91.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\92.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\93.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\98.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\99.md
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\image-1.png
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\image-2.png
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\image-3.png
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\image-4.png
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\image-5.png
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\image.png
+docs\encyclopedia\2-system-network\2-06-sistemnoe-administrirovanie\intro.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka/
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\_category_.json
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\1.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\111.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\112.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\113.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\114.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\115.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\116.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\117.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\118.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\119.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\998.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\999.md
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\image.png
+docs\encyclopedia\2-system-network\2-07-tehnicheskaya-podderzhka\intro.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti/
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\_category_.json
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\1.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\111.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\112.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\113.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\114.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\115.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\116.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\2.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\3.md
+docs\encyclopedia\2-system-network\2-08-osnovy-informatsionnoy-bezopasnosti\intro.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya/
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\_category_.json
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\1.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\111.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\112.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\1121.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\113.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\114.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\115.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\116.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\117.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\118.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\119.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\120.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\121.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\122.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\123.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\124.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\125.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\126.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\127.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\2.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\998.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\999.md
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-1.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-10.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-11.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-12.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-13.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-14.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-15.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-16.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-17.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-18.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-19.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-2.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-20.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-21.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-22.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-23.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-24.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-25.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-26.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-27.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-28.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-29.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-3.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-30.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-31.jpg
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-4.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-5.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-6.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-7.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-8.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image-9.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\image.png
+docs\encyclopedia\2-system-network\2-09-osnovy-integratsionnogo-vzaimodeystviya\intro.md
+docs\encyclopedia\2-system-network\2-10-zhelezo/
+docs\encyclopedia\2-system-network\2-10-zhelezo\_category_.json
+docs\encyclopedia\2-system-network\2-10-zhelezo\1.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\101.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\1011.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\1012.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\11.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\111.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\112.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\113.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\114.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\115.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\116.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\117.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\118.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\119.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\120.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\2.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\3.md
+docs\encyclopedia\2-system-network\2-10-zhelezo\image.png
+docs\encyclopedia\2-system-network\2-10-zhelezo\intro.md
+docs\encyclopedia\2-system-network\system-network.md
+docs\encyclopedia\3-data-markup/
+docs\encyclopedia\3-data-markup\_category_.json
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi/
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\_category_.json
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\1.md
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\111.md
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\112.md
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\113.md
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\998.md
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\999.md
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\image-1.png
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\image-2.png
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\image.png
+docs\encyclopedia\3-data-markup\3-01-prodvinutye-operatsii-s-dannymi\intro.md
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh/
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\_category_.json
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\1.md
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\11.md
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\12.md
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\2.md
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\3.md
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\4.md
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\image-1.png
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\image-2.png
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\image-3.png
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\image-4.png
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\image.png
+docs\encyclopedia\3-data-markup\3-02-struktury-dannyh\intro.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza/
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\_category_.json
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\1.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\2.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\21.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\22.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\3.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\4.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\5.md
+docs\encyclopedia\3-data-markup\3-03-myslitelnaya-baza\intro.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye/
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\_category_.json
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\1.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\111.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\112.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\113.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\2.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\211.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\212.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\3.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\4.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\5.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\6.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\98.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\99.md
+docs\encyclopedia\3-data-markup\3-04-konfiguratsii-i-dannye\intro.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh/
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\_category_.json
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\1.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\11.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\111.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\2.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\3.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\4.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\98.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\99.md
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\image-1.png
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\image.png
+docs\encyclopedia\3-data-markup\3-05-osnovy-baz-dannyh\intro.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd/
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\_category_.json
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\1.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\2.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\211.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\212.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\213.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\998.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\999.md
+docs\encyclopedia\3-data-markup\3-08-upravlenie-rsubd\intro.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh/
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\_category_.json
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\1.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\11.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\12.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\2.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\3.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\4.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\41.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\42.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\421.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\422.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\423.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\424.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\425.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\998.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\999.md
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\image-1.png
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\image.png
+docs\encyclopedia\3-data-markup\3-11-analiz-dannyh\intro.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL/
+docs\encyclopedia\3-data-markup\3.06. NoSQL\_category_.json
+docs\encyclopedia\3-data-markup\3.06. NoSQL\1.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\2.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\3.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\4.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\41.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\411.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\5.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\51.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\511.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\6.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\61.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\611.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\7.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\71.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\8.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\81.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\811.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\8111.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\812.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\98.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\99.md
+docs\encyclopedia\3-data-markup\3.06. NoSQL\image.png
+docs\encyclopedia\3-data-markup\3.06. NoSQL\intro.md
+docs\encyclopedia\3-data-markup\3.07. SQL/
+docs\encyclopedia\3-data-markup\3.07. SQL\_category_.json
+docs\encyclopedia\3-data-markup\3.07. SQL\1.md
+docs\encyclopedia\3-data-markup\3.07. SQL\101.md
+docs\encyclopedia\3-data-markup\3.07. SQL\2.md
+docs\encyclopedia\3-data-markup\3.07. SQL\21.md
+docs\encyclopedia\3-data-markup\3.07. SQL\22.md
+docs\encyclopedia\3-data-markup\3.07. SQL\3.md
+docs\encyclopedia\3-data-markup\3.07. SQL\33.md
+docs\encyclopedia\3-data-markup\3.07. SQL\4.md
+docs\encyclopedia\3-data-markup\3.07. SQL\44.md
+docs\encyclopedia\3-data-markup\3.07. SQL\444.md
+docs\encyclopedia\3-data-markup\3.07. SQL\5.md
+docs\encyclopedia\3-data-markup\3.07. SQL\55.md
+docs\encyclopedia\3-data-markup\3.07. SQL\551.md
+docs\encyclopedia\3-data-markup\3.07. SQL\6.md
+docs\encyclopedia\3-data-markup\3.07. SQL\66.md
+docs\encyclopedia\3-data-markup\3.07. SQL\7.md
+docs\encyclopedia\3-data-markup\3.07. SQL\77.md
+docs\encyclopedia\3-data-markup\3.07. SQL\8.md
+docs\encyclopedia\3-data-markup\3.07. SQL\88.md
+docs\encyclopedia\3-data-markup\3.07. SQL\881.md
+docs\encyclopedia\3-data-markup\3.07. SQL\882.md
+docs\encyclopedia\3-data-markup\3.07. SQL\8821.md
+docs\encyclopedia\3-data-markup\3.07. SQL\883.md
+docs\encyclopedia\3-data-markup\3.07. SQL\884.md
+docs\encyclopedia\3-data-markup\3.07. SQL\885.md
+docs\encyclopedia\3-data-markup\3.07. SQL\998.md
+docs\encyclopedia\3-data-markup\3.07. SQL\999.md
+docs\encyclopedia\3-data-markup\3.07. SQL\image-1.png
+docs\encyclopedia\3-data-markup\3.07. SQL\image-2.png
+docs\encyclopedia\3-data-markup\3.07. SQL\image-3.png
+docs\encyclopedia\3-data-markup\3.07. SQL\image-4.png
+docs\encyclopedia\3-data-markup\3.07. SQL\image-5.png
+docs\encyclopedia\3-data-markup\3.07. SQL\image-6.png
+docs\encyclopedia\3-data-markup\3.07. SQL\image-7.png
+docs\encyclopedia\3-data-markup\3.07. SQL\image.png
+docs\encyclopedia\3-data-markup\3.07. SQL\intro.md
+docs\encyclopedia\3-data-markup\3.09. HTML/
+docs\encyclopedia\3-data-markup\3.09. HTML\_category_.json
+docs\encyclopedia\3-data-markup\3.09. HTML\1.md
+docs\encyclopedia\3-data-markup\3.09. HTML\2.md
+docs\encyclopedia\3-data-markup\3.09. HTML\21.md
+docs\encyclopedia\3-data-markup\3.09. HTML\22.md
+docs\encyclopedia\3-data-markup\3.09. HTML\3.md
+docs\encyclopedia\3-data-markup\3.09. HTML\998.md
+docs\encyclopedia\3-data-markup\3.09. HTML\999.md
+docs\encyclopedia\3-data-markup\3.09. HTML\image-1.png
+docs\encyclopedia\3-data-markup\3.09. HTML\image-2.png
+docs\encyclopedia\3-data-markup\3.09. HTML\image-3.png
+docs\encyclopedia\3-data-markup\3.09. HTML\image.png
+docs\encyclopedia\3-data-markup\3.09. HTML\intro.md
+docs\encyclopedia\3-data-markup\3.10. CSS/
+docs\encyclopedia\3-data-markup\3.10. CSS\_category_.json
+docs\encyclopedia\3-data-markup\3.10. CSS\1.md
+docs\encyclopedia\3-data-markup\3.10. CSS\111.md
+docs\encyclopedia\3-data-markup\3.10. CSS\1111.md
+docs\encyclopedia\3-data-markup\3.10. CSS\112.md
+docs\encyclopedia\3-data-markup\3.10. CSS\113.md
+docs\encyclopedia\3-data-markup\3.10. CSS\2.md
+docs\encyclopedia\3-data-markup\3.10. CSS\3.md
+docs\encyclopedia\3-data-markup\3.10. CSS\4.md
+docs\encyclopedia\3-data-markup\3.10. CSS\5.md
+docs\encyclopedia\3-data-markup\3.10. CSS\6.md
+docs\encyclopedia\3-data-markup\3.10. CSS\7.md
+docs\encyclopedia\3-data-markup\3.10. CSS\71.md
+docs\encyclopedia\3-data-markup\3.10. CSS\8.md
+docs\encyclopedia\3-data-markup\3.10. CSS\998.md
+docs\encyclopedia\3-data-markup\3.10. CSS\999.md
+docs\encyclopedia\3-data-markup\3.10. CSS\image-1.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-10.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-11.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-12.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-13.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-14.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-15.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-16.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-17.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-18.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-19.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-2.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-20.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-21.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-3.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-4.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-5.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-6.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-7.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-8.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image-9.png
+docs\encyclopedia\3-data-markup\3.10. CSS\image.png
+docs\encyclopedia\3-data-markup\3.10. CSS\intro.md
+docs\encyclopedia\3-data-markup\data-markup.md
+docs\encyclopedia\4-code-dev/
+docs\encyclopedia\4-code-dev\_category_.json
+docs\encyclopedia\4-code-dev\4-01-algoritmy/
+docs\encyclopedia\4-code-dev\4-01-algoritmy\_category_.json
+docs\encyclopedia\4-code-dev\4-01-algoritmy\1.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\11.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\111.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\112.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\2.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\3.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\311.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\312.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\313.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\998.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\999.md
+docs\encyclopedia\4-code-dev\4-01-algoritmy\image.png
+docs\encyclopedia\4-code-dev\4-01-algoritmy\intro.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet/
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\_category_.json
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\1.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\2.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\3.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\33.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\4.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\44.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\5.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\55.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\56.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\6.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\611.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\612.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\613.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\998.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\999.md
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image-1.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image-2.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image-3.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image-4.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image-5.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image-6.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image-7.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\image.png
+docs\encyclopedia\4-code-dev\4-02-chto-takoe-kod-i-kak-on-rabotaet\intro.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda/
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\_category_.json
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\1.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\111.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\112.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\113.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\114.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\115.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\2.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\211.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\3.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\311.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\312.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\313.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\314.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\315.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\98.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\99.md
+docs\encyclopedia\4-code-dev\4-03-vypolnenie-koda\intro.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki/
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\_category_.json
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\1.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\10.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\101.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\102.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\11.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\111.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\112.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\2.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\3.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\998.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\999.md
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-1.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-2.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-3.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-4.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-5.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-6.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-7.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image-8.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\image.png
+docs\encyclopedia\4-code-dev\4-04-proekt-i-freymvorki\intro.md
+docs\encyclopedia\4-code-dev\4-05-asinhronnost/
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\_category_.json
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\1.md
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\11.md
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\12.md
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\13.md
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\998.md
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\999.md
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-1.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-2.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-3.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-4.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-5.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-6.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-7.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image-8.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\image.png
+docs\encyclopedia\4-code-dev\4-05-asinhronnost\intro.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya/
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\_category_.json
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\1.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\111.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\112.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\113.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\114.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\115.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\116.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\2.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\3.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\4.md
+docs\encyclopedia\4-code-dev\4-06-arhitektura-vypolneniya\intro.md
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii/
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\_category_.json
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\1.md
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\111.md
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\112.md
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\113.md
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\998.md
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\999.md
+docs\encyclopedia\4-code-dev\4-07-paradigmy-i-urovni-abstraktsii\intro.md
+docs\encyclopedia\4-code-dev\4-08-oop/
+docs\encyclopedia\4-code-dev\4-08-oop\_category_.json
+docs\encyclopedia\4-code-dev\4-08-oop\1.md
+docs\encyclopedia\4-code-dev\4-08-oop\2.md
+docs\encyclopedia\4-code-dev\4-08-oop\3.md
+docs\encyclopedia\4-code-dev\4-08-oop\4.md
+docs\encyclopedia\4-code-dev\4-08-oop\5.md
+docs\encyclopedia\4-code-dev\4-08-oop\6.md
+docs\encyclopedia\4-code-dev\4-08-oop\98.md
+docs\encyclopedia\4-code-dev\4-08-oop\99.md
+docs\encyclopedia\4-code-dev\4-08-oop\image-1.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-10.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-11.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-2.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-3.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-4.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-5.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-6.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-7.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-8.png
+docs\encyclopedia\4-code-dev\4-08-oop\image-9.png
+docs\encyclopedia\4-code-dev\4-08-oop\image.png
+docs\encyclopedia\4-code-dev\4-08-oop\intro.md
+docs\encyclopedia\4-code-dev\4-09-zavisimosti/
+docs\encyclopedia\4-code-dev\4-09-zavisimosti\_category_.json
+docs\encyclopedia\4-code-dev\4-09-zavisimosti\1.md
+docs\encyclopedia\4-code-dev\4-09-zavisimosti\11.md
+docs\encyclopedia\4-code-dev\4-09-zavisimosti\12.md
+docs\encyclopedia\4-code-dev\4-09-zavisimosti\998.md
+docs\encyclopedia\4-code-dev\4-09-zavisimosti\999.md
+docs\encyclopedia\4-code-dev\4-09-zavisimosti\intro.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi/
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\_category_.json
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\1.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\111.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\1111.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\112.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\113.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\114.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\115.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\116.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\117.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\118.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\998.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\999.md
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image-1.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image-2.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image-3.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image-4.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image-5.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image-6.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image-7.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\image.png
+docs\encyclopedia\4-code-dev\4-10-orm-i-rabota-s-dannymi\intro.md
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya/
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\_category_.json
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\1.md
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\111.md
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\112.md
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\2.md
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\998.md
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\999.md
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-1.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-10.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-11.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-12.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-13.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-14.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-15.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-16.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-17.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-18.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-19.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-2.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-20.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-21.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-3.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-4.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-5.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-6.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-7.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-8.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\image-9.png
+docs\encyclopedia\4-code-dev\4-11-desktopnye-prilozheniya\intro.md
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya/
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\_category_.json
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\1.md
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\111.md
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\112.md
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\113.md
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\2.md
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\3.md
+docs\encyclopedia\4-code-dev\4-12-mobilnye-prilozheniya\intro.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git/
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\_category_.json
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\1.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\111.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\112.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\113.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\114.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\115.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\2.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\3.md
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-1.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-10.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-11.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-12.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-13.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-14.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-15.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-16.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-17.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-18.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-19.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-2.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-20.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-21.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-22.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-3.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-4.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-5.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-6.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-7.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-8.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image-9.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\image.png
+docs\encyclopedia\4-code-dev\4-13-osnovy-raboty-s-git\intro.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka/
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\_category_.json
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\1.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\11.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\111.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\1111.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\1112.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\1113.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\112.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\113.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\1131.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\114.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\115.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\116.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\119.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\2.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\3.md
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-1.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-10.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-11.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-12.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-13.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-14.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-15.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-16.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-17.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-18.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-19.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-2.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-20.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-21.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-22.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-23.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-24.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-25.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-3.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-4.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-5.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-6.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-7.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-8.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image-9.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\image.png
+docs\encyclopedia\4-code-dev\4-14-razrabotka-i-otladka\intro.md
+docs\encyclopedia\4-code-dev\4-15-sborka-musora/
+docs\encyclopedia\4-code-dev\4-15-sborka-musora\_category_.json
+docs\encyclopedia\4-code-dev\4-15-sborka-musora\1.md
+docs\encyclopedia\4-code-dev\4-15-sborka-musora\2.md
+docs\encyclopedia\4-code-dev\4-15-sborka-musora\3.md
+docs\encyclopedia\4-code-dev\4-15-sborka-musora\intro.md
+docs\encyclopedia\4-code-dev\code-dev.md
+docs\encyclopedia\5-languages/
+docs\encyclopedia\5-languages\_category_.json
+docs\encyclopedia\5-languages\5-04-platforma-dotnet/
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\_category_.json
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\1.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\11.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\12.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\13.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\14.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\15.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\16.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\17.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\171.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\172.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\173.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\18.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\181.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\182.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\2.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\998.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\999.md
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\image-1.png
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\image.png
+docs\encyclopedia\5-languages\5-04-platforma-dotnet\intro.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau/
+docs\encyclopedia\5-languages\5-15-lua-i-luau\_category_.json
+docs\encyclopedia\5-languages\5-15-lua-i-luau\1.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\101.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\11.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\12.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\13.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\14.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\141.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\142.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\15.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\16.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\17.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\171.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\172.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\173.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\18.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\19.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\20.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\21.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\22.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\23.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\3.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\998.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\999.md
+docs\encyclopedia\5-languages\5-15-lua-i-luau\image-1.png
+docs\encyclopedia\5-languages\5-15-lua-i-luau\image-2.png
+docs\encyclopedia\5-languages\5-15-lua-i-luau\image-3.png
+docs\encyclopedia\5-languages\5-15-lua-i-luau\image-4.png
+docs\encyclopedia\5-languages\5-15-lua-i-luau\image.png
+docs\encyclopedia\5-languages\5-15-lua-i-luau\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\998.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\999.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\2.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\3.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\4.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\5.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\6.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\61.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\7.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\711.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\assembler\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\2.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\211.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\212.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\213.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\3.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\311.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\4.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\411.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\5.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\6.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\7.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\711.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\712.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\8.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\c-language\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\2.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\3.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\4.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\5.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\6.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\7.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\711.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Cobol\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\2.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\3.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\4.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\5.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\6.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\7.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\8.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\811.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Fortran\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\2.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\3.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\4.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\5.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\6.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\7.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\8.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\811.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Lisp\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\2.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\3.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\4.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\5.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\6.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\7.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\711.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Pascal\intro.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic/
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\_category_.json
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\1.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\2.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\3.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\4.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\5.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\6.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\7.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\711.md
+docs\encyclopedia\5-languages\5-16-starye-yazyki\Visual Basic\intro.md
+docs\encyclopedia\5-languages\5-27-1s/
+docs\encyclopedia\5-languages\5-27-1s\_category_.json
+docs\encyclopedia\5-languages\5-27-1s\1.md
+docs\encyclopedia\5-languages\5-27-1s\11.md
+docs\encyclopedia\5-languages\5-27-1s\111.md
+docs\encyclopedia\5-languages\5-27-1s\112.md
+docs\encyclopedia\5-languages\5-27-1s\113.md
+docs\encyclopedia\5-languages\5-27-1s\114.md
+docs\encyclopedia\5-languages\5-27-1s\115.md
+docs\encyclopedia\5-languages\5-27-1s\116.md
+docs\encyclopedia\5-languages\5-27-1s\117.md
+docs\encyclopedia\5-languages\5-27-1s\118.md
+docs\encyclopedia\5-languages\5-27-1s\119.md
+docs\encyclopedia\5-languages\5-27-1s\120.md
+docs\encyclopedia\5-languages\5-27-1s\121.md
+docs\encyclopedia\5-languages\5-27-1s\intro.md
+docs\encyclopedia\5-languages\5.01. JavaScript/
+docs\encyclopedia\5-languages\5.01. JavaScript\_category_.json
+docs\encyclopedia\5-languages\5.01. JavaScript\1.md
+docs\encyclopedia\5-languages\5.01. JavaScript\1001.md
+docs\encyclopedia\5-languages\5.01. JavaScript\101.md
+docs\encyclopedia\5-languages\5.01. JavaScript\102.md
+docs\encyclopedia\5-languages\5.01. JavaScript\103.md
+docs\encyclopedia\5-languages\5.01. JavaScript\11.md
+docs\encyclopedia\5-languages\5.01. JavaScript\12.md
+docs\encyclopedia\5-languages\5.01. JavaScript\121.md
+docs\encyclopedia\5-languages\5.01. JavaScript\122.md
+docs\encyclopedia\5-languages\5.01. JavaScript\13.md
+docs\encyclopedia\5-languages\5.01. JavaScript\14.md
+docs\encyclopedia\5-languages\5.01. JavaScript\15.md
+docs\encyclopedia\5-languages\5.01. JavaScript\16.md
+docs\encyclopedia\5-languages\5.01. JavaScript\17.md
+docs\encyclopedia\5-languages\5.01. JavaScript\18.md
+docs\encyclopedia\5-languages\5.01. JavaScript\19.md
+docs\encyclopedia\5-languages\5.01. JavaScript\20.md
+docs\encyclopedia\5-languages\5.01. JavaScript\21.md
+docs\encyclopedia\5-languages\5.01. JavaScript\211.md
+docs\encyclopedia\5-languages\5.01. JavaScript\22.md
+docs\encyclopedia\5-languages\5.01. JavaScript\23.md
+docs\encyclopedia\5-languages\5.01. JavaScript\24.md
+docs\encyclopedia\5-languages\5.01. JavaScript\241.md
+docs\encyclopedia\5-languages\5.01. JavaScript\25.md
+docs\encyclopedia\5-languages\5.01. JavaScript\251.md
+docs\encyclopedia\5-languages\5.01. JavaScript\26.md
+docs\encyclopedia\5-languages\5.01. JavaScript\261.md
+docs\encyclopedia\5-languages\5.01. JavaScript\27.md
+docs\encyclopedia\5-languages\5.01. JavaScript\271.md
+docs\encyclopedia\5-languages\5.01. JavaScript\272.md
+docs\encyclopedia\5-languages\5.01. JavaScript\28.md
+docs\encyclopedia\5-languages\5.01. JavaScript\281.md
+docs\encyclopedia\5-languages\5.01. JavaScript\282.md
+docs\encyclopedia\5-languages\5.01. JavaScript\29.md
+docs\encyclopedia\5-languages\5.01. JavaScript\291.md
+docs\encyclopedia\5-languages\5.01. JavaScript\292.md
+docs\encyclopedia\5-languages\5.01. JavaScript\30.md
+docs\encyclopedia\5-languages\5.01. JavaScript\301.md
+docs\encyclopedia\5-languages\5.01. JavaScript\31.md
+docs\encyclopedia\5-languages\5.01. JavaScript\311.md
+docs\encyclopedia\5-languages\5.01. JavaScript\32.md
+docs\encyclopedia\5-languages\5.01. JavaScript\998.md
+docs\encyclopedia\5-languages\5.01. JavaScript\999.md
+docs\encyclopedia\5-languages\5.01. JavaScript\image-1.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-10.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-11.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-12.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-13.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-14.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-15.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-16.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-17.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-2.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-3.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-4.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-5.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-6.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-7.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-8.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image-9.png
+docs\encyclopedia\5-languages\5.01. JavaScript\image.png
+docs\encyclopedia\5-languages\5.01. JavaScript\intro.md
+docs\encyclopedia\5-languages\5.02. Python/
+docs\encyclopedia\5-languages\5.02. Python\_category_.json
+docs\encyclopedia\5-languages\5.02. Python\1.md
+docs\encyclopedia\5-languages\5.02. Python\1001.md
+docs\encyclopedia\5-languages\5.02. Python\101.md
+docs\encyclopedia\5-languages\5.02. Python\102.md
+docs\encyclopedia\5-languages\5.02. Python\103.md
+docs\encyclopedia\5-languages\5.02. Python\11.md
+docs\encyclopedia\5-languages\5.02. Python\12.md
+docs\encyclopedia\5-languages\5.02. Python\121.md
+docs\encyclopedia\5-languages\5.02. Python\122.md
+docs\encyclopedia\5-languages\5.02. Python\13.md
+docs\encyclopedia\5-languages\5.02. Python\14.md
+docs\encyclopedia\5-languages\5.02. Python\15.md
+docs\encyclopedia\5-languages\5.02. Python\16.md
+docs\encyclopedia\5-languages\5.02. Python\17.md
+docs\encyclopedia\5-languages\5.02. Python\171.md
+docs\encyclopedia\5-languages\5.02. Python\172.md
+docs\encyclopedia\5-languages\5.02. Python\173.md
+docs\encyclopedia\5-languages\5.02. Python\18.md
+docs\encyclopedia\5-languages\5.02. Python\19.md
+docs\encyclopedia\5-languages\5.02. Python\20.md
+docs\encyclopedia\5-languages\5.02. Python\21.md
+docs\encyclopedia\5-languages\5.02. Python\22.md
+docs\encyclopedia\5-languages\5.02. Python\23.md
+docs\encyclopedia\5-languages\5.02. Python\24.md
+docs\encyclopedia\5-languages\5.02. Python\25.md
+docs\encyclopedia\5-languages\5.02. Python\26.md
+docs\encyclopedia\5-languages\5.02. Python\27.md
+docs\encyclopedia\5-languages\5.02. Python\28.md
+docs\encyclopedia\5-languages\5.02. Python\281.md
+docs\encyclopedia\5-languages\5.02. Python\29.md
+docs\encyclopedia\5-languages\5.02. Python\30.md
+docs\encyclopedia\5-languages\5.02. Python\301.md
+docs\encyclopedia\5-languages\5.02. Python\3011.md
+docs\encyclopedia\5-languages\5.02. Python\31.md
+docs\encyclopedia\5-languages\5.02. Python\311.md
+docs\encyclopedia\5-languages\5.02. Python\312.md
+docs\encyclopedia\5-languages\5.02. Python\32.md
+docs\encyclopedia\5-languages\5.02. Python\321.md
+docs\encyclopedia\5-languages\5.02. Python\33.md
+docs\encyclopedia\5-languages\5.02. Python\34.md
+docs\encyclopedia\5-languages\5.02. Python\341.md
+docs\encyclopedia\5-languages\5.02. Python\342.md
+docs\encyclopedia\5-languages\5.02. Python\343.md
+docs\encyclopedia\5-languages\5.02. Python\35.md
+docs\encyclopedia\5-languages\5.02. Python\36.md
+docs\encyclopedia\5-languages\5.02. Python\998.md
+docs\encyclopedia\5-languages\5.02. Python\999.md
+docs\encyclopedia\5-languages\5.02. Python\image-1.png
+docs\encyclopedia\5-languages\5.02. Python\image-2.png
+docs\encyclopedia\5-languages\5.02. Python\image.png
+docs\encyclopedia\5-languages\5.02. Python\intro.md
+docs\encyclopedia\5-languages\5.03. Java/
+docs\encyclopedia\5-languages\5.03. Java\_category_.json
+docs\encyclopedia\5-languages\5.03. Java\1.md
+docs\encyclopedia\5-languages\5.03. Java\1001.md
+docs\encyclopedia\5-languages\5.03. Java\101.md
+docs\encyclopedia\5-languages\5.03. Java\11.md
+docs\encyclopedia\5-languages\5.03. Java\110.md
+docs\encyclopedia\5-languages\5.03. Java\12.md
+docs\encyclopedia\5-languages\5.03. Java\121.md
+docs\encyclopedia\5-languages\5.03. Java\13.md
+docs\encyclopedia\5-languages\5.03. Java\131.md
+docs\encyclopedia\5-languages\5.03. Java\14.md
+docs\encyclopedia\5-languages\5.03. Java\141.md
+docs\encyclopedia\5-languages\5.03. Java\142.md
+docs\encyclopedia\5-languages\5.03. Java\15.md
+docs\encyclopedia\5-languages\5.03. Java\16.md
+docs\encyclopedia\5-languages\5.03. Java\17.md
+docs\encyclopedia\5-languages\5.03. Java\18.md
+docs\encyclopedia\5-languages\5.03. Java\19.md
+docs\encyclopedia\5-languages\5.03. Java\20.md
+docs\encyclopedia\5-languages\5.03. Java\21.md
+docs\encyclopedia\5-languages\5.03. Java\211.md
+docs\encyclopedia\5-languages\5.03. Java\22.md
+docs\encyclopedia\5-languages\5.03. Java\23.md
+docs\encyclopedia\5-languages\5.03. Java\231.md
+docs\encyclopedia\5-languages\5.03. Java\24.md
+docs\encyclopedia\5-languages\5.03. Java\25.md
+docs\encyclopedia\5-languages\5.03. Java\251.md
+docs\encyclopedia\5-languages\5.03. Java\26.md
+docs\encyclopedia\5-languages\5.03. Java\261.md
+docs\encyclopedia\5-languages\5.03. Java\27.md
+docs\encyclopedia\5-languages\5.03. Java\271.md
+docs\encyclopedia\5-languages\5.03. Java\28.md
+docs\encyclopedia\5-languages\5.03. Java\3.md
+docs\encyclopedia\5-languages\5.03. Java\998.md
+docs\encyclopedia\5-languages\5.03. Java\999.md
+docs\encyclopedia\5-languages\5.03. Java\image-1.png
+docs\encyclopedia\5-languages\5.03. Java\image-10.png
+docs\encyclopedia\5-languages\5.03. Java\image-11.png
+docs\encyclopedia\5-languages\5.03. Java\image-12.png
+docs\encyclopedia\5-languages\5.03. Java\image-13.png
+docs\encyclopedia\5-languages\5.03. Java\image-14.png
+docs\encyclopedia\5-languages\5.03. Java\image-15.png
+docs\encyclopedia\5-languages\5.03. Java\image-16.png
+docs\encyclopedia\5-languages\5.03. Java\image-17.png
+docs\encyclopedia\5-languages\5.03. Java\image-18.png
+docs\encyclopedia\5-languages\5.03. Java\image-19.png
+docs\encyclopedia\5-languages\5.03. Java\image-2.png
+docs\encyclopedia\5-languages\5.03. Java\image-20.png
+docs\encyclopedia\5-languages\5.03. Java\image-21.png
+docs\encyclopedia\5-languages\5.03. Java\image-3.png
+docs\encyclopedia\5-languages\5.03. Java\image-4.png
+docs\encyclopedia\5-languages\5.03. Java\image-5.png
+docs\encyclopedia\5-languages\5.03. Java\image-6.png
+docs\encyclopedia\5-languages\5.03. Java\image-7.png
+docs\encyclopedia\5-languages\5.03. Java\image-8.png
+docs\encyclopedia\5-languages\5.03. Java\image-9.png
+docs\encyclopedia\5-languages\5.03. Java\image.png
+docs\encyclopedia\5-languages\5.03. Java\intro.md
+docs\encyclopedia\5-languages\5.05. CSharp/
+docs\encyclopedia\5-languages\5.05. CSharp\_category_.json
+docs\encyclopedia\5-languages\5.05. CSharp\1.md
+docs\encyclopedia\5-languages\5.05. CSharp\1001.md
+docs\encyclopedia\5-languages\5.05. CSharp\101.md
+docs\encyclopedia\5-languages\5.05. CSharp\102.md
+docs\encyclopedia\5-languages\5.05. CSharp\11.md
+docs\encyclopedia\5-languages\5.05. CSharp\111.md
+docs\encyclopedia\5-languages\5.05. CSharp\112.md
+docs\encyclopedia\5-languages\5.05. CSharp\12.md
+docs\encyclopedia\5-languages\5.05. CSharp\13.md
+docs\encyclopedia\5-languages\5.05. CSharp\14.md
+docs\encyclopedia\5-languages\5.05. CSharp\15.md
+docs\encyclopedia\5-languages\5.05. CSharp\151.md
+docs\encyclopedia\5-languages\5.05. CSharp\16.md
+docs\encyclopedia\5-languages\5.05. CSharp\161.md
+docs\encyclopedia\5-languages\5.05. CSharp\17.md
+docs\encyclopedia\5-languages\5.05. CSharp\18.md
+docs\encyclopedia\5-languages\5.05. CSharp\19.md
+docs\encyclopedia\5-languages\5.05. CSharp\20.md
+docs\encyclopedia\5-languages\5.05. CSharp\21.md
+docs\encyclopedia\5-languages\5.05. CSharp\22.md
+docs\encyclopedia\5-languages\5.05. CSharp\23.md
+docs\encyclopedia\5-languages\5.05. CSharp\24.md
+docs\encyclopedia\5-languages\5.05. CSharp\25.md
+docs\encyclopedia\5-languages\5.05. CSharp\26.md
+docs\encyclopedia\5-languages\5.05. CSharp\27.md
+docs\encyclopedia\5-languages\5.05. CSharp\28.md
+docs\encyclopedia\5-languages\5.05. CSharp\29.md
+docs\encyclopedia\5-languages\5.05. CSharp\291.md
+docs\encyclopedia\5-languages\5.05. CSharp\30.md
+docs\encyclopedia\5-languages\5.05. CSharp\31.md
+docs\encyclopedia\5-languages\5.05. CSharp\32.md
+docs\encyclopedia\5-languages\5.05. CSharp\33.md
+docs\encyclopedia\5-languages\5.05. CSharp\34.md
+docs\encyclopedia\5-languages\5.05. CSharp\35.md
+docs\encyclopedia\5-languages\5.05. CSharp\36.md
+docs\encyclopedia\5-languages\5.05. CSharp\37.md
+docs\encyclopedia\5-languages\5.05. CSharp\38.md
+docs\encyclopedia\5-languages\5.05. CSharp\39.md
+docs\encyclopedia\5-languages\5.05. CSharp\40.md
+docs\encyclopedia\5-languages\5.05. CSharp\41.md
+docs\encyclopedia\5-languages\5.05. CSharp\42.md
+docs\encyclopedia\5-languages\5.05. CSharp\43.md
+docs\encyclopedia\5-languages\5.05. CSharp\44.md
+docs\encyclopedia\5-languages\5.05. CSharp\45.md
+docs\encyclopedia\5-languages\5.05. CSharp\451.md
+docs\encyclopedia\5-languages\5.05. CSharp\452.md
+docs\encyclopedia\5-languages\5.05. CSharp\453.md
+docs\encyclopedia\5-languages\5.05. CSharp\46.md
+docs\encyclopedia\5-languages\5.05. CSharp\47.md
+docs\encyclopedia\5-languages\5.05. CSharp\471.md
+docs\encyclopedia\5-languages\5.05. CSharp\998.md
+docs\encyclopedia\5-languages\5.05. CSharp\999.md
+docs\encyclopedia\5-languages\5.05. CSharp\image-1.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-10.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-11.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-12.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-13.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-14.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-15.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-16.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-17.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-2.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-3.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-4.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-5.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-6.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-7.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-8.png
+docs\encyclopedia\5-languages\5.05. CSharp\image-9.png
+docs\encyclopedia\5-languages\5.05. CSharp\image.png
+docs\encyclopedia\5-languages\5.05. CSharp\intro.md
+docs\encyclopedia\5-languages\5.06. C++/
+docs\encyclopedia\5-languages\5.06. C++\_category_.json
+docs\encyclopedia\5-languages\5.06. C++\1.md
+docs\encyclopedia\5-languages\5.06. C++\10.md
+docs\encyclopedia\5-languages\5.06. C++\1001.md
+docs\encyclopedia\5-languages\5.06. C++\1002.md
+docs\encyclopedia\5-languages\5.06. C++\1003.md
+docs\encyclopedia\5-languages\5.06. C++\1004.md
+docs\encyclopedia\5-languages\5.06. C++\1005.md
+docs\encyclopedia\5-languages\5.06. C++\101.md
+docs\encyclopedia\5-languages\5.06. C++\11.md
+docs\encyclopedia\5-languages\5.06. C++\12.md
+docs\encyclopedia\5-languages\5.06. C++\13.md
+docs\encyclopedia\5-languages\5.06. C++\14.md
+docs\encyclopedia\5-languages\5.06. C++\15.md
+docs\encyclopedia\5-languages\5.06. C++\151.md
+docs\encyclopedia\5-languages\5.06. C++\152.md
+docs\encyclopedia\5-languages\5.06. C++\16.md
+docs\encyclopedia\5-languages\5.06. C++\17.md
+docs\encyclopedia\5-languages\5.06. C++\18.md
+docs\encyclopedia\5-languages\5.06. C++\19.md
+docs\encyclopedia\5-languages\5.06. C++\191.md
+docs\encyclopedia\5-languages\5.06. C++\20.md
+docs\encyclopedia\5-languages\5.06. C++\21.md
+docs\encyclopedia\5-languages\5.06. C++\22.md
+docs\encyclopedia\5-languages\5.06. C++\23.md
+docs\encyclopedia\5-languages\5.06. C++\24.md
+docs\encyclopedia\5-languages\5.06. C++\25.md
+docs\encyclopedia\5-languages\5.06. C++\26.md
+docs\encyclopedia\5-languages\5.06. C++\27.md
+docs\encyclopedia\5-languages\5.06. C++\3.md
+docs\encyclopedia\5-languages\5.06. C++\998.md
+docs\encyclopedia\5-languages\5.06. C++\999.md
+docs\encyclopedia\5-languages\5.06. C++\image-1.png
+docs\encyclopedia\5-languages\5.06. C++\image-2.png
+docs\encyclopedia\5-languages\5.06. C++\image-3.png
+docs\encyclopedia\5-languages\5.06. C++\image-4.png
+docs\encyclopedia\5-languages\5.06. C++\image-5.png
+docs\encyclopedia\5-languages\5.06. C++\image-6.png
+docs\encyclopedia\5-languages\5.06. C++\image-7.png
+docs\encyclopedia\5-languages\5.06. C++\image-8.png
+docs\encyclopedia\5-languages\5.06. C++\image.png
+docs\encyclopedia\5-languages\5.06. C++\intro.md
+docs\encyclopedia\5-languages\5.07. PHP/
+docs\encyclopedia\5-languages\5.07. PHP\_category_.json
+docs\encyclopedia\5-languages\5.07. PHP\1.md
+docs\encyclopedia\5-languages\5.07. PHP\10.md
+docs\encyclopedia\5-languages\5.07. PHP\1001.md
+docs\encyclopedia\5-languages\5.07. PHP\101.md
+docs\encyclopedia\5-languages\5.07. PHP\11.md
+docs\encyclopedia\5-languages\5.07. PHP\111.md
+docs\encyclopedia\5-languages\5.07. PHP\112.md
+docs\encyclopedia\5-languages\5.07. PHP\113.md
+docs\encyclopedia\5-languages\5.07. PHP\114.md
+docs\encyclopedia\5-languages\5.07. PHP\12.md
+docs\encyclopedia\5-languages\5.07. PHP\13.md
+docs\encyclopedia\5-languages\5.07. PHP\131.md
+docs\encyclopedia\5-languages\5.07. PHP\14.md
+docs\encyclopedia\5-languages\5.07. PHP\141.md
+docs\encyclopedia\5-languages\5.07. PHP\142.md
+docs\encyclopedia\5-languages\5.07. PHP\143.md
+docs\encyclopedia\5-languages\5.07. PHP\1431.md
+docs\encyclopedia\5-languages\5.07. PHP\15.md
+docs\encyclopedia\5-languages\5.07. PHP\151.md
+docs\encyclopedia\5-languages\5.07. PHP\152.md
+docs\encyclopedia\5-languages\5.07. PHP\153.md
+docs\encyclopedia\5-languages\5.07. PHP\154.md
+docs\encyclopedia\5-languages\5.07. PHP\155.md
+docs\encyclopedia\5-languages\5.07. PHP\156.md
+docs\encyclopedia\5-languages\5.07. PHP\16.md
+docs\encyclopedia\5-languages\5.07. PHP\17.md
+docs\encyclopedia\5-languages\5.07. PHP\18.md
+docs\encyclopedia\5-languages\5.07. PHP\181.md
+docs\encyclopedia\5-languages\5.07. PHP\19.md
+docs\encyclopedia\5-languages\5.07. PHP\20.md
+docs\encyclopedia\5-languages\5.07. PHP\21.md
+docs\encyclopedia\5-languages\5.07. PHP\211.md
+docs\encyclopedia\5-languages\5.07. PHP\998.md
+docs\encyclopedia\5-languages\5.07. PHP\999.md
+docs\encyclopedia\5-languages\5.07. PHP\image-1.png
+docs\encyclopedia\5-languages\5.07. PHP\image-10.png
+docs\encyclopedia\5-languages\5.07. PHP\image-11.png
+docs\encyclopedia\5-languages\5.07. PHP\image-12.png
+docs\encyclopedia\5-languages\5.07. PHP\image-13.png
+docs\encyclopedia\5-languages\5.07. PHP\image-14.png
+docs\encyclopedia\5-languages\5.07. PHP\image-2.png
+docs\encyclopedia\5-languages\5.07. PHP\image-3.png
+docs\encyclopedia\5-languages\5.07. PHP\image-4.png
+docs\encyclopedia\5-languages\5.07. PHP\image-5.png
+docs\encyclopedia\5-languages\5.07. PHP\image-6.png
+docs\encyclopedia\5-languages\5.07. PHP\image-7.png
+docs\encyclopedia\5-languages\5.07. PHP\image-8.png
+docs\encyclopedia\5-languages\5.07. PHP\image-9.png
+docs\encyclopedia\5-languages\5.07. PHP\image.png
+docs\encyclopedia\5-languages\5.07. PHP\intro.md
+docs\encyclopedia\5-languages\5.08. Smalltalk/
+docs\encyclopedia\5-languages\5.08. Smalltalk\_category_.json
+docs\encyclopedia\5-languages\5.08. Smalltalk\1.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\101.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\11.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\2.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\22.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\3.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\33.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\4.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\5.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\998.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\999.md
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-1.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-10.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-11.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-12.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-13.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-2.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-3.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-4.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-5.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-6.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-7.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-8.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image-9.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\image.png
+docs\encyclopedia\5-languages\5.08. Smalltalk\intro.md
+docs\encyclopedia\5-languages\5.09. Kotlin/
+docs\encyclopedia\5-languages\5.09. Kotlin\_category_.json
+docs\encyclopedia\5-languages\5.09. Kotlin\1.md
+docs\encyclopedia\5-languages\5.09. Kotlin\10.md
+docs\encyclopedia\5-languages\5.09. Kotlin\1001.md
+docs\encyclopedia\5-languages\5.09. Kotlin\101.md
+docs\encyclopedia\5-languages\5.09. Kotlin\11.md
+docs\encyclopedia\5-languages\5.09. Kotlin\12.md
+docs\encyclopedia\5-languages\5.09. Kotlin\13.md
+docs\encyclopedia\5-languages\5.09. Kotlin\14.md
+docs\encyclopedia\5-languages\5.09. Kotlin\15.md
+docs\encyclopedia\5-languages\5.09. Kotlin\16.md
+docs\encyclopedia\5-languages\5.09. Kotlin\161.md
+docs\encyclopedia\5-languages\5.09. Kotlin\162.md
+docs\encyclopedia\5-languages\5.09. Kotlin\17.md
+docs\encyclopedia\5-languages\5.09. Kotlin\171.md
+docs\encyclopedia\5-languages\5.09. Kotlin\18.md
+docs\encyclopedia\5-languages\5.09. Kotlin\19.md
+docs\encyclopedia\5-languages\5.09. Kotlin\2.md
+docs\encyclopedia\5-languages\5.09. Kotlin\21.md
+docs\encyclopedia\5-languages\5.09. Kotlin\3.md
+docs\encyclopedia\5-languages\5.09. Kotlin\998.md
+docs\encyclopedia\5-languages\5.09. Kotlin\999.md
+docs\encyclopedia\5-languages\5.09. Kotlin\image-1.png
+docs\encyclopedia\5-languages\5.09. Kotlin\image.png
+docs\encyclopedia\5-languages\5.09. Kotlin\intro.md
+docs\encyclopedia\5-languages\5.10. Go/
+docs\encyclopedia\5-languages\5.10. Go\_category_.json
+docs\encyclopedia\5-languages\5.10. Go\1.md
+docs\encyclopedia\5-languages\5.10. Go\1001.md
+docs\encyclopedia\5-languages\5.10. Go\101.md
+docs\encyclopedia\5-languages\5.10. Go\11.md
+docs\encyclopedia\5-languages\5.10. Go\111.md
+docs\encyclopedia\5-languages\5.10. Go\12.md
+docs\encyclopedia\5-languages\5.10. Go\121.md
+docs\encyclopedia\5-languages\5.10. Go\122.md
+docs\encyclopedia\5-languages\5.10. Go\13.md
+docs\encyclopedia\5-languages\5.10. Go\14.md
+docs\encyclopedia\5-languages\5.10. Go\15.md
+docs\encyclopedia\5-languages\5.10. Go\16.md
+docs\encyclopedia\5-languages\5.10. Go\17.md
+docs\encyclopedia\5-languages\5.10. Go\18.md
+docs\encyclopedia\5-languages\5.10. Go\19.md
+docs\encyclopedia\5-languages\5.10. Go\191.md
+docs\encyclopedia\5-languages\5.10. Go\20.md
+docs\encyclopedia\5-languages\5.10. Go\21.md
+docs\encyclopedia\5-languages\5.10. Go\22.md
+docs\encyclopedia\5-languages\5.10. Go\23.md
+docs\encyclopedia\5-languages\5.10. Go\24.md
+docs\encyclopedia\5-languages\5.10. Go\241.md
+docs\encyclopedia\5-languages\5.10. Go\2411.md
+docs\encyclopedia\5-languages\5.10. Go\3.md
+docs\encyclopedia\5-languages\5.10. Go\998.md
+docs\encyclopedia\5-languages\5.10. Go\999.md
+docs\encyclopedia\5-languages\5.10. Go\intro.md
+docs\encyclopedia\5-languages\5.11. Ruby/
+docs\encyclopedia\5-languages\5.11. Ruby\_category_.json
+docs\encyclopedia\5-languages\5.11. Ruby\1.md
+docs\encyclopedia\5-languages\5.11. Ruby\1001.md
+docs\encyclopedia\5-languages\5.11. Ruby\101.md
+docs\encyclopedia\5-languages\5.11. Ruby\102.md
+docs\encyclopedia\5-languages\5.11. Ruby\11.md
+docs\encyclopedia\5-languages\5.11. Ruby\12.md
+docs\encyclopedia\5-languages\5.11. Ruby\121.md
+docs\encyclopedia\5-languages\5.11. Ruby\122.md
+docs\encyclopedia\5-languages\5.11. Ruby\13.md
+docs\encyclopedia\5-languages\5.11. Ruby\14.md
+docs\encyclopedia\5-languages\5.11. Ruby\15.md
+docs\encyclopedia\5-languages\5.11. Ruby\16.md
+docs\encyclopedia\5-languages\5.11. Ruby\17.md
+docs\encyclopedia\5-languages\5.11. Ruby\171.md
+docs\encyclopedia\5-languages\5.11. Ruby\18.md
+docs\encyclopedia\5-languages\5.11. Ruby\19.md
+docs\encyclopedia\5-languages\5.11. Ruby\20.md
+docs\encyclopedia\5-languages\5.11. Ruby\21.md
+docs\encyclopedia\5-languages\5.11. Ruby\3.md
+docs\encyclopedia\5-languages\5.11. Ruby\998.md
+docs\encyclopedia\5-languages\5.11. Ruby\999.md
+docs\encyclopedia\5-languages\5.11. Ruby\intro.md
+docs\encyclopedia\5-languages\5.12. Groovy/
+docs\encyclopedia\5-languages\5.12. Groovy\_category_.json
+docs\encyclopedia\5-languages\5.12. Groovy\1.md
+docs\encyclopedia\5-languages\5.12. Groovy\1001.md
+docs\encyclopedia\5-languages\5.12. Groovy\101.md
+docs\encyclopedia\5-languages\5.12. Groovy\11.md
+docs\encyclopedia\5-languages\5.12. Groovy\12.md
+docs\encyclopedia\5-languages\5.12. Groovy\13.md
+docs\encyclopedia\5-languages\5.12. Groovy\14.md
+docs\encyclopedia\5-languages\5.12. Groovy\15.md
+docs\encyclopedia\5-languages\5.12. Groovy\151.md
+docs\encyclopedia\5-languages\5.12. Groovy\16.md
+docs\encyclopedia\5-languages\5.12. Groovy\17.md
+docs\encyclopedia\5-languages\5.12. Groovy\171.md
+docs\encyclopedia\5-languages\5.12. Groovy\172.md
+docs\encyclopedia\5-languages\5.12. Groovy\18.md
+docs\encyclopedia\5-languages\5.12. Groovy\19.md
+docs\encyclopedia\5-languages\5.12. Groovy\2.md
+docs\encyclopedia\5-languages\5.12. Groovy\3.md
+docs\encyclopedia\5-languages\5.12. Groovy\998.md
+docs\encyclopedia\5-languages\5.12. Groovy\999.md
+docs\encyclopedia\5-languages\5.12. Groovy\image.png
+docs\encyclopedia\5-languages\5.12. Groovy\intro.md
+docs\encyclopedia\5-languages\5.13. Rust/
+docs\encyclopedia\5-languages\5.13. Rust\_category_.json
+docs\encyclopedia\5-languages\5.13. Rust\1.md
+docs\encyclopedia\5-languages\5.13. Rust\1001.md
+docs\encyclopedia\5-languages\5.13. Rust\101.md
+docs\encyclopedia\5-languages\5.13. Rust\102.md
+docs\encyclopedia\5-languages\5.13. Rust\11.md
+docs\encyclopedia\5-languages\5.13. Rust\110.md
+docs\encyclopedia\5-languages\5.13. Rust\111.md
+docs\encyclopedia\5-languages\5.13. Rust\12.md
+docs\encyclopedia\5-languages\5.13. Rust\121.md
+docs\encyclopedia\5-languages\5.13. Rust\122.md
+docs\encyclopedia\5-languages\5.13. Rust\13.md
+docs\encyclopedia\5-languages\5.13. Rust\14.md
+docs\encyclopedia\5-languages\5.13. Rust\141.md
+docs\encyclopedia\5-languages\5.13. Rust\15.md
+docs\encyclopedia\5-languages\5.13. Rust\16.md
+docs\encyclopedia\5-languages\5.13. Rust\17.md
+docs\encyclopedia\5-languages\5.13. Rust\171.md
+docs\encyclopedia\5-languages\5.13. Rust\18.md
+docs\encyclopedia\5-languages\5.13. Rust\19.md
+docs\encyclopedia\5-languages\5.13. Rust\20.md
+docs\encyclopedia\5-languages\5.13. Rust\3.md
+docs\encyclopedia\5-languages\5.13. Rust\998.md
+docs\encyclopedia\5-languages\5.13. Rust\999.md
+docs\encyclopedia\5-languages\5.13. Rust\intro.md
+docs\encyclopedia\5-languages\5.14. Swift/
+docs\encyclopedia\5-languages\5.14. Swift\_category_.json
+docs\encyclopedia\5-languages\5.14. Swift\1.md
+docs\encyclopedia\5-languages\5.14. Swift\10.md
+docs\encyclopedia\5-languages\5.14. Swift\1001.md
+docs\encyclopedia\5-languages\5.14. Swift\101.md
+docs\encyclopedia\5-languages\5.14. Swift\102.md
+docs\encyclopedia\5-languages\5.14. Swift\11.md
+docs\encyclopedia\5-languages\5.14. Swift\12.md
+docs\encyclopedia\5-languages\5.14. Swift\121.md
+docs\encyclopedia\5-languages\5.14. Swift\122.md
+docs\encyclopedia\5-languages\5.14. Swift\13.md
+docs\encyclopedia\5-languages\5.14. Swift\14.md
+docs\encyclopedia\5-languages\5.14. Swift\15.md
+docs\encyclopedia\5-languages\5.14. Swift\16.md
+docs\encyclopedia\5-languages\5.14. Swift\17.md
+docs\encyclopedia\5-languages\5.14. Swift\171.md
+docs\encyclopedia\5-languages\5.14. Swift\18.md
+docs\encyclopedia\5-languages\5.14. Swift\19.md
+docs\encyclopedia\5-languages\5.14. Swift\20.md
+docs\encyclopedia\5-languages\5.14. Swift\21.md
+docs\encyclopedia\5-languages\5.14. Swift\3.md
+docs\encyclopedia\5-languages\5.14. Swift\998.md
+docs\encyclopedia\5-languages\5.14. Swift\999.md
+docs\encyclopedia\5-languages\5.14. Swift\intro.md
+docs\encyclopedia\5-languages\5.17. Haskell/
+docs\encyclopedia\5-languages\5.17. Haskell\_category_.json
+docs\encyclopedia\5-languages\5.17. Haskell\1.md
+docs\encyclopedia\5-languages\5.17. Haskell\2.md
+docs\encyclopedia\5-languages\5.17. Haskell\3.md
+docs\encyclopedia\5-languages\5.17. Haskell\4.md
+docs\encyclopedia\5-languages\5.17. Haskell\5.md
+docs\encyclopedia\5-languages\5.17. Haskell\6.md
+docs\encyclopedia\5-languages\5.17. Haskell\7.md
+docs\encyclopedia\5-languages\5.17. Haskell\intro.md
+docs\encyclopedia\5-languages\5.18. Scala/
+docs\encyclopedia\5-languages\5.18. Scala\_category_.json
+docs\encyclopedia\5-languages\5.18. Scala\1.md
+docs\encyclopedia\5-languages\5.18. Scala\2.md
+docs\encyclopedia\5-languages\5.18. Scala\3.md
+docs\encyclopedia\5-languages\5.18. Scala\4.md
+docs\encyclopedia\5-languages\5.18. Scala\5.md
+docs\encyclopedia\5-languages\5.18. Scala\6.md
+docs\encyclopedia\5-languages\5.18. Scala\7.md
+docs\encyclopedia\5-languages\5.18. Scala\intro.md
+docs\encyclopedia\5-languages\5.19. Elixir/
+docs\encyclopedia\5-languages\5.19. Elixir\_category_.json
+docs\encyclopedia\5-languages\5.19. Elixir\1.md
+docs\encyclopedia\5-languages\5.19. Elixir\2.md
+docs\encyclopedia\5-languages\5.19. Elixir\3.md
+docs\encyclopedia\5-languages\5.19. Elixir\4.md
+docs\encyclopedia\5-languages\5.19. Elixir\5.md
+docs\encyclopedia\5-languages\5.19. Elixir\6.md
+docs\encyclopedia\5-languages\5.19. Elixir\7.md
+docs\encyclopedia\5-languages\5.19. Elixir\intro.md
+docs\encyclopedia\5-languages\5.20. Zig/
+docs\encyclopedia\5-languages\5.20. Zig\_category_.json
+docs\encyclopedia\5-languages\5.20. Zig\1.md
+docs\encyclopedia\5-languages\5.20. Zig\2.md
+docs\encyclopedia\5-languages\5.20. Zig\3.md
+docs\encyclopedia\5-languages\5.20. Zig\4.md
+docs\encyclopedia\5-languages\5.20. Zig\5.md
+docs\encyclopedia\5-languages\5.20. Zig\6.md
+docs\encyclopedia\5-languages\5.20. Zig\7.md
+docs\encyclopedia\5-languages\5.20. Zig\intro.md
+docs\encyclopedia\5-languages\5.21. Nim/
+docs\encyclopedia\5-languages\5.21. Nim\_category_.json
+docs\encyclopedia\5-languages\5.21. Nim\1.md
+docs\encyclopedia\5-languages\5.21. Nim\2.md
+docs\encyclopedia\5-languages\5.21. Nim\3.md
+docs\encyclopedia\5-languages\5.21. Nim\4.md
+docs\encyclopedia\5-languages\5.21. Nim\5.md
+docs\encyclopedia\5-languages\5.21. Nim\6.md
+docs\encyclopedia\5-languages\5.21. Nim\7.md
+docs\encyclopedia\5-languages\5.21. Nim\intro.md
+docs\encyclopedia\5-languages\5.22. Dart/
+docs\encyclopedia\5-languages\5.22. Dart\_category_.json
+docs\encyclopedia\5-languages\5.22. Dart\1.md
+docs\encyclopedia\5-languages\5.22. Dart\2.md
+docs\encyclopedia\5-languages\5.22. Dart\3.md
+docs\encyclopedia\5-languages\5.22. Dart\311.md
+docs\encyclopedia\5-languages\5.22. Dart\4.md
+docs\encyclopedia\5-languages\5.22. Dart\5.md
+docs\encyclopedia\5-languages\5.22. Dart\6.md
+docs\encyclopedia\5-languages\5.22. Dart\7.md
+docs\encyclopedia\5-languages\5.22. Dart\intro.md
+docs\encyclopedia\5-languages\5.23. R/
+docs\encyclopedia\5-languages\5.23. R\_category_.json
+docs\encyclopedia\5-languages\5.23. R\1.md
+docs\encyclopedia\5-languages\5.23. R\2.md
+docs\encyclopedia\5-languages\5.23. R\3.md
+docs\encyclopedia\5-languages\5.23. R\4.md
+docs\encyclopedia\5-languages\5.23. R\5.md
+docs\encyclopedia\5-languages\5.23. R\6.md
+docs\encyclopedia\5-languages\5.23. R\7.md
+docs\encyclopedia\5-languages\5.23. R\intro.md
+docs\encyclopedia\5-languages\5.24. Julia/
+docs\encyclopedia\5-languages\5.24. Julia\_category_.json
+docs\encyclopedia\5-languages\5.24. Julia\1.md
+docs\encyclopedia\5-languages\5.24. Julia\2.md
+docs\encyclopedia\5-languages\5.24. Julia\3.md
+docs\encyclopedia\5-languages\5.24. Julia\4.md
+docs\encyclopedia\5-languages\5.24. Julia\5.md
+docs\encyclopedia\5-languages\5.24. Julia\6.md
+docs\encyclopedia\5-languages\5.24. Julia\7.md
+docs\encyclopedia\5-languages\5.24. Julia\intro.md
+docs\encyclopedia\5-languages\5.25. Bash/
+docs\encyclopedia\5-languages\5.25. Bash\_category_.json
+docs\encyclopedia\5-languages\5.25. Bash\1.md
+docs\encyclopedia\5-languages\5.25. Bash\11.md
+docs\encyclopedia\5-languages\5.25. Bash\112.md
+docs\encyclopedia\5-languages\5.25. Bash\113.md
+docs\encyclopedia\5-languages\5.25. Bash\114.md
+docs\encyclopedia\5-languages\5.25. Bash\115.md
+docs\encyclopedia\5-languages\5.25. Bash\116.md
+docs\encyclopedia\5-languages\5.25. Bash\117.md
+docs\encyclopedia\5-languages\5.25. Bash\118.md
+docs\encyclopedia\5-languages\5.25. Bash\119.md
+docs\encyclopedia\5-languages\5.25. Bash\12.md
+docs\encyclopedia\5-languages\5.25. Bash\121.md
+docs\encyclopedia\5-languages\5.25. Bash\122.md
+docs\encyclopedia\5-languages\5.25. Bash\123.md
+docs\encyclopedia\5-languages\5.25. Bash\intro.md
+docs\encyclopedia\5-languages\5.26. PowerShell/
+docs\encyclopedia\5-languages\5.26. PowerShell\_category_.json
+docs\encyclopedia\5-languages\5.26. PowerShell\1.md
+docs\encyclopedia\5-languages\5.26. PowerShell\11.md
+docs\encyclopedia\5-languages\5.26. PowerShell\111.md
+docs\encyclopedia\5-languages\5.26. PowerShell\112.md
+docs\encyclopedia\5-languages\5.26. PowerShell\113.md
+docs\encyclopedia\5-languages\5.26. PowerShell\114.md
+docs\encyclopedia\5-languages\5.26. PowerShell\115.md
+docs\encyclopedia\5-languages\5.26. PowerShell\116.md
+docs\encyclopedia\5-languages\5.26. PowerShell\117.md
+docs\encyclopedia\5-languages\5.26. PowerShell\118.md
+docs\encyclopedia\5-languages\5.26. PowerShell\119.md
+docs\encyclopedia\5-languages\5.26. PowerShell\12.md
+docs\encyclopedia\5-languages\5.26. PowerShell\121.md
+docs\encyclopedia\5-languages\5.26. PowerShell\122.md
+docs\encyclopedia\5-languages\5.26. PowerShell\123.md
+docs\encyclopedia\5-languages\5.26. PowerShell\intro.md
+docs\encyclopedia\5-languages\languages.md
+docs\encyclopedia\6-ai/
+docs\encyclopedia\6-ai\_category_.json
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii/
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\_category_.json
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\1.md
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\11.md
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\112.md
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\113.md
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\999.md
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image-1.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image-2.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image-3.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image-4.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image-5.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image-6.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image-7.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\image.png
+docs\encyclopedia\6-ai\6-01-vvedenie-v-ii\intro.md
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie/
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie\_category_.json
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie\1.md
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie\2.md
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie\21.md
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie\999.md
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie\image-18.png
+docs\encyclopedia\6-ai\6-02-mashinnoe-obuchenie\intro.md
+docs\encyclopedia\6-ai\6-03-neyroseti/
+docs\encyclopedia\6-ai\6-03-neyroseti\_category_.json
+docs\encyclopedia\6-ai\6-03-neyroseti\1.md
+docs\encyclopedia\6-ai\6-03-neyroseti\111.md
+docs\encyclopedia\6-ai\6-03-neyroseti\112.md
+docs\encyclopedia\6-ai\6-03-neyroseti\113.md
+docs\encyclopedia\6-ai\6-03-neyroseti\999.md
+docs\encyclopedia\6-ai\6-03-neyroseti\image-10.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-11.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-12.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-13.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-14.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-15.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-16.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-17.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-8.png
+docs\encyclopedia\6-ai\6-03-neyroseti\image-9.png
+docs\encyclopedia\6-ai\6-03-neyroseti\intro.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty/
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\_category_.json
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\1.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\111.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\112.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\113.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\114.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\115.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\999.md
+docs\encyclopedia\6-ai\6-04-modeli-i-instrumenty\intro.md
+docs\encyclopedia\6-ai\6-05-razrabotka-ii/
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\_category_.json
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\1.md
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\111.md
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\112.md
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\113.md
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\1131.md
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\999.md
+docs\encyclopedia\6-ai\6-05-razrabotka-ii\intro.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii/
+docs\encyclopedia\6-ai\6-06-primenenie-ii\_category_.json
+docs\encyclopedia\6-ai\6-06-primenenie-ii\1.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii\111.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii\112.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii\113.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii\114.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii\2.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii\999.md
+docs\encyclopedia\6-ai\6-06-primenenie-ii\intro.md
+docs\encyclopedia\6-ai\ai.md
+docs\encyclopedia\7-project/
+docs\encyclopedia\7-project\_category_.json
+docs\encyclopedia\7-project\7-01-obschee-o-biznese/
+docs\encyclopedia\7-project\7-01-obschee-o-biznese\_category_.json
+docs\encyclopedia\7-project\7-01-obschee-o-biznese\1.md
+docs\encyclopedia\7-project\7-01-obschee-o-biznese\111.md
+docs\encyclopedia\7-project\7-01-obschee-o-biznese\112.md
+docs\encyclopedia\7-project\7-01-obschee-o-biznese\998.md
+docs\encyclopedia\7-project\7-01-obschee-o-biznese\999.md
+docs\encyclopedia\7-project\7-01-obschee-o-biznese\intro.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie/
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\_category_.json
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\1.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\11.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\111.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\112.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\113.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\12.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\13.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\2.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\3.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\998.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\999.md
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\image-1.png
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\image.png
+docs\encyclopedia\7-project\7-02-komanda-i-upravlenie\intro.md
+docs\encyclopedia\7-project\7-03-metodologiya-i-zhiznennyy-tsikl-po/
+docs\encyclopedia\7-project\7-03-metodologiya-i-zhiznennyy-tsikl-po\_category_.json
+docs\encyclopedia\7-project\7-03-metodologiya-i-zhiznennyy-tsikl-po\1.md
+docs\encyclopedia\7-project\7-03-metodologiya-i-zhiznennyy-tsikl-po\2.md
+docs\encyclopedia\7-project\7-03-metodologiya-i-zhiznennyy-tsikl-po\998.md
+docs\encyclopedia\7-project\7-03-metodologiya-i-zhiznennyy-tsikl-po\999.md
+docs\encyclopedia\7-project\7-03-metodologiya-i-zhiznennyy-tsikl-po\intro.md
+docs\encyclopedia\7-project\7-04-analitika/
+docs\encyclopedia\7-project\7-04-analitika\_category_.json
+docs\encyclopedia\7-project\7-04-analitika\1.md
+docs\encyclopedia\7-project\7-04-analitika\111.md
+docs\encyclopedia\7-project\7-04-analitika\112.md
+docs\encyclopedia\7-project\7-04-analitika\1121.md
+docs\encyclopedia\7-project\7-04-analitika\1122.md
+docs\encyclopedia\7-project\7-04-analitika\1123.md
+docs\encyclopedia\7-project\7-04-analitika\113.md
+docs\encyclopedia\7-project\7-04-analitika\114.md
+docs\encyclopedia\7-project\7-04-analitika\115.md
+docs\encyclopedia\7-project\7-04-analitika\116.md
+docs\encyclopedia\7-project\7-04-analitika\117.md
+docs\encyclopedia\7-project\7-04-analitika\118.md
+docs\encyclopedia\7-project\7-04-analitika\119.md
+docs\encyclopedia\7-project\7-04-analitika\120.md
+docs\encyclopedia\7-project\7-04-analitika\121.md
+docs\encyclopedia\7-project\7-04-analitika\122.md
+docs\encyclopedia\7-project\7-04-analitika\123.md
+docs\encyclopedia\7-project\7-04-analitika\124.md
+docs\encyclopedia\7-project\7-04-analitika\125.md
+docs\encyclopedia\7-project\7-04-analitika\126.md
+docs\encyclopedia\7-project\7-04-analitika\127.md
+docs\encyclopedia\7-project\7-04-analitika\128.md
+docs\encyclopedia\7-project\7-04-analitika\129.md
+docs\encyclopedia\7-project\7-04-analitika\998.md
+docs\encyclopedia\7-project\7-04-analitika\999.md
+docs\encyclopedia\7-project\7-04-analitika\image-1.png
+docs\encyclopedia\7-project\7-04-analitika\image-2.png
+docs\encyclopedia\7-project\7-04-analitika\image-3.png
+docs\encyclopedia\7-project\7-04-analitika\image-4.png
+docs\encyclopedia\7-project\7-04-analitika\image-5.png
+docs\encyclopedia\7-project\7-04-analitika\image-6.png
+docs\encyclopedia\7-project\7-04-analitika\image-7.png
+docs\encyclopedia\7-project\7-04-analitika\image.png
+docs\encyclopedia\7-project\7-04-analitika\intro.md
+docs\encyclopedia\7-project\7-05-testirovanie/
+docs\encyclopedia\7-project\7-05-testirovanie\_category_.json
+docs\encyclopedia\7-project\7-05-testirovanie\1.md
+docs\encyclopedia\7-project\7-05-testirovanie\1011.md
+docs\encyclopedia\7-project\7-05-testirovanie\1012.md
+docs\encyclopedia\7-project\7-05-testirovanie\1013.md
+docs\encyclopedia\7-project\7-05-testirovanie\1014.md
+docs\encyclopedia\7-project\7-05-testirovanie\111.md
+docs\encyclopedia\7-project\7-05-testirovanie\112.md
+docs\encyclopedia\7-project\7-05-testirovanie\113.md
+docs\encyclopedia\7-project\7-05-testirovanie\114.md
+docs\encyclopedia\7-project\7-05-testirovanie\115.md
+docs\encyclopedia\7-project\7-05-testirovanie\116.md
+docs\encyclopedia\7-project\7-05-testirovanie\117.md
+docs\encyclopedia\7-project\7-05-testirovanie\118.md
+docs\encyclopedia\7-project\7-05-testirovanie\1181.md
+docs\encyclopedia\7-project\7-05-testirovanie\119.md
+docs\encyclopedia\7-project\7-05-testirovanie\120.md
+docs\encyclopedia\7-project\7-05-testirovanie\121.md
+docs\encyclopedia\7-project\7-05-testirovanie\122.md
+docs\encyclopedia\7-project\7-05-testirovanie\123.md
+docs\encyclopedia\7-project\7-05-testirovanie\124.md
+docs\encyclopedia\7-project\7-05-testirovanie\125.md
+docs\encyclopedia\7-project\7-05-testirovanie\126.md
+docs\encyclopedia\7-project\7-05-testirovanie\127.md
+docs\encyclopedia\7-project\7-05-testirovanie\1271.md
+docs\encyclopedia\7-project\7-05-testirovanie\1272.md
+docs\encyclopedia\7-project\7-05-testirovanie\1273.md
+docs\encyclopedia\7-project\7-05-testirovanie\2.md
+docs\encyclopedia\7-project\7-05-testirovanie\998.md
+docs\encyclopedia\7-project\7-05-testirovanie\999.md
+docs\encyclopedia\7-project\7-05-testirovanie\intro.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura/
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\_category_.json
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\1.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\101.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\102.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\103.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\104.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\105.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\112.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\113.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\114.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\115.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\116.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\2.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\3.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\998.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\999.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design/
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\_category_.json
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\1.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\1111.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\1112.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\1113.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\1114.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\1116.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\1117.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\116.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\117.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\118.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\119.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\21.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\211.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2111.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2112.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2113.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2114.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2115.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2116.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2117.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2118.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2119.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\212.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2120.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2121.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2122.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2123.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2124.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2125.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2126.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2127.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2128.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2129.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\213.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2130.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2131.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2132.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2133.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2134.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2135.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2136.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2137.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\2138.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\image-15.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\image-16.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\image-17.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\image-18.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\image-19.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\image-20.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\image-21.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design\intro.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns/
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\_category_.json
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\1.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\111.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\112.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\113.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\114.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\115.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\116.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\design-patterns\intro.md
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-1.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-10.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-11.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-12.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-13.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-14.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-2.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-3.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-4.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-5.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-6.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-7.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-8.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image-9.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\image.png
+docs\encyclopedia\7-project\7-06-proektirovanie-i-arhitektura\intro.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava/
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\_category_.json
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\1.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\111.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\112.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\113.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\114.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\1141.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\115.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\998.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\999.md
+docs\encyclopedia\7-project\7-07-intellektualnye-prava\intro.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo/
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\_category_.json
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\1.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\1001.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\1002.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\1003.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\1004.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\1005.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\1006.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\11.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\12.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\13.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\14.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\15.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\16.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\17.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\18.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\19.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\20.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\21.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\3.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\998.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\999.md
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\image-1.png
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\image-2.png
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\image-3.png
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\image-4.png
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\image-5.png
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\image.png
+docs\encyclopedia\7-project\7-08-tehnicheskoe-pismo\intro.md
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki/
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\_category_.json
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\1.md
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\11.md
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\111.md
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\2.md
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\998.md
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\999.md
+docs\encyclopedia\7-project\7-09-bazy-znaniy-i-zadachniki\intro.md
+docs\encyclopedia\7-project\7-10-kultura-koda/
+docs\encyclopedia\7-project\7-10-kultura-koda\_category_.json
+docs\encyclopedia\7-project\7-10-kultura-koda\1.md
+docs\encyclopedia\7-project\7-10-kultura-koda\2.md
+docs\encyclopedia\7-project\7-10-kultura-koda\3.md
+docs\encyclopedia\7-project\7-10-kultura-koda\4.md
+docs\encyclopedia\7-project\7-10-kultura-koda\image.png
+docs\encyclopedia\7-project\7-10-kultura-koda\intro.md
+docs\encyclopedia\7-project\7-11-legasi-kod/
+docs\encyclopedia\7-project\7-11-legasi-kod\_category_.json
+docs\encyclopedia\7-project\7-11-legasi-kod\1.md
+docs\encyclopedia\7-project\7-11-legasi-kod\2.md
+docs\encyclopedia\7-project\7-11-legasi-kod\3.md
+docs\encyclopedia\7-project\7-11-legasi-kod\intro.md
+docs\encyclopedia\7-project\project.md
+docs\encyclopedia\8-infra-security/
+docs\encyclopedia\8-infra-security\_category_.json
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii/
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\_category_.json
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\1.md
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\11.md
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\2.md
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\3.md
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\image-1.png
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\image-2.png
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\image-3.png
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\image.png
+docs\encyclopedia\8-infra-security\8-01-oblachnye-tehnologii\intro.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh/
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\_category_.json
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\1.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\11.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\111.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\1111.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\112.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\113.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\114.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\115.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\116.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\117.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\1181.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\1182.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\1183.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\998.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\999.md
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-1.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-10.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-11.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-12.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-13.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-14.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-15.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-2.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-3.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-4.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-5.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-6.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-7.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-8.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image-9.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\image.png
+docs\encyclopedia\8-infra-security\8-03-zabota-o-kode-i-dannyh\intro.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya/
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\_category_.json
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\1.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\101.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\102.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\111.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\112.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\113.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\114.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\115.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\1151.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\116.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\117.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\118.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\119.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\1191.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\120.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\1201.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\1202.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\1203.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\121.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\122.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\2.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\998.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\999.md
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-1.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-10.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-11.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-12.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-13.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-14.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-15.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-16.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-17.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-18.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-19.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-2.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-20.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-21.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-22.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-23.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-3.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-4.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-5.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-6.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-7.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-8.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image-9.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\image.png
+docs\encyclopedia\8-infra-security\8-05-mikroservisy-i-integratsiya\intro.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya/
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\_category_.json
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\1.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\111.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\1111.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\112.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\113.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\114.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\115.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\116.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\117.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\1171.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\1172.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\118.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\2.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\211.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\998.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\999.md
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-1.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-10.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-11.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-2.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-3.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-4.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-5.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-6.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-7.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-8.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image-9.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\image.png
+docs\encyclopedia\8-infra-security\8-06-konteynerizatsiya-i-orkestratsiya\intro.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost/
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\_category_.json
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\1.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\111.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\1111.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\1112.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\112.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\113.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\1131.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\1132.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\114.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\115.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\1151.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\1152.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\116.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\117.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\118.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\119.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\120.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\121.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\122.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\123.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\124.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\125.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\126.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\127.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\2.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\998.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\999.md
+docs\encyclopedia\8-infra-security\8-07-informatsionnaya-bezopasnost\intro.md
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code/
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code\_category_.json
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code\1.md
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code\11.md
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code\111.md
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code\2.md
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code\3.md
+docs\encyclopedia\8-infra-security\8.02. Low-code, No-code\intro.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD/
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\_category_.json
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\1.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\11.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\111.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\12.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\13.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\14.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\15.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\16.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\17.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\18.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\19.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\2.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\21.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\211.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\2111.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\2112.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\2113.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\212.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\213.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\214.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\215.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\216.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\217.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\218.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3111.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3112.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3113.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3114.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3115.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3116.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3117.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3118.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3119.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3120.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3121.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3122.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3123.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\3124.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\998.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\999.md
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\image-1.png
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\image.png
+docs\encyclopedia\8-infra-security\8.04. DevOps, CI-CD\intro.md
+docs\encyclopedia\8-infra-security\infra-security.md
+docs\encyclopedia\9-spinoff/
+docs\encyclopedia\9-spinoff\_category_.json
+docs\encyclopedia\9-spinoff\9-01-velikie-lyudi/
+docs\encyclopedia\9-spinoff\9-01-velikie-lyudi\_category_.json
+docs\encyclopedia\9-spinoff\9-01-velikie-lyudi\1.md
+docs\encyclopedia\9-spinoff\9-01-velikie-lyudi\2.md
+docs\encyclopedia\9-spinoff\9-01-velikie-lyudi\3.md
+docs\encyclopedia\9-spinoff\9-01-velikie-lyudi\intro.md
+docs\encyclopedia\9-spinoff\9-02-kak-ponyat-chto-pora-menyat-rabotu/
+docs\encyclopedia\9-spinoff\9-02-kak-ponyat-chto-pora-menyat-rabotu\_category_.json
+docs\encyclopedia\9-spinoff\9-02-kak-ponyat-chto-pora-menyat-rabotu\1.md
+docs\encyclopedia\9-spinoff\9-02-kak-ponyat-chto-pora-menyat-rabotu\2.md
+docs\encyclopedia\9-spinoff\9-02-kak-ponyat-chto-pora-menyat-rabotu\3.md
+docs\encyclopedia\9-spinoff\9-02-kak-ponyat-chto-pora-menyat-rabotu\intro.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya/
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\_category_.json
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\1.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\11.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\111.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\112.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\113.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\114.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\1141.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\1142.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\1143.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\11431.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\11432.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\11433.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\11434.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\1144.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\115.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\116.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\117.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\118.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\119.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\120.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\121.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\122.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\123.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\998.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\999.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies/
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\_category_.json
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\1.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\101.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\11.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\111.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\112.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\113.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\114.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\115.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\116.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\117.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\118.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\119.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\12.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\120.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\121.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\122.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\123.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\124.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\125.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\126.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\13.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\14.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\15.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\16.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\17.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\game-studies\intro.md
+docs\encyclopedia\9-spinoff\9-03-igrovaya-industriya\intro.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr/
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\_category_.json
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\1.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\11.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\111.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\112.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\113.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\114.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\115.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\116.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\117.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\118.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\119.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\120.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\121.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\122.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\123.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\124.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\2.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\201.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\21.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\3.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\301.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\31.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\32.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\4.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\998.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\999.md
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\image.png
+docs\encyclopedia\9-spinoff\9-04-razrabotka-igr\intro.md
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft/
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\_category_.json
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\1.md
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\11.md
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\2.md
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\3.md
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\image-1.png
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\image-2.png
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\image-3.png
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\image-4.png
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\image-5.png
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\image.png
+docs\encyclopedia\9-spinoff\9-05-blokcheyn-kripta-i-nft\intro.md
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po/
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po\_category_.json
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po\1.md
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po\11.md
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po\111.md
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po\2.md
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po\3.md
+docs\encyclopedia\9-spinoff\9-06-otraslevoe-po\intro.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika/
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\_category_.json
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\1.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\11.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\12.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\13.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\131.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\14.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\2.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\3.md
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\image.png
+docs\encyclopedia\9-spinoff\9-08-kompyuternaya-grafika\intro.md
+docs\encyclopedia\9-spinoff\9-09-media-kontent/
+docs\encyclopedia\9-spinoff\9-09-media-kontent\_category_.json
+docs\encyclopedia\9-spinoff\9-09-media-kontent\1.md
+docs\encyclopedia\9-spinoff\9-09-media-kontent\11.md
+docs\encyclopedia\9-spinoff\9-09-media-kontent\12.md
+docs\encyclopedia\9-spinoff\9-09-media-kontent\13.md
+docs\encyclopedia\9-spinoff\9-09-media-kontent\2.md
+docs\encyclopedia\9-spinoff\9-09-media-kontent\3.md
+docs\encyclopedia\9-spinoff\9-09-media-kontent\intro.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura/
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\_category_.json
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\1.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\11.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\111.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\112.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\113.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\114.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\115.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\116.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\117.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\118.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\998.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\999.md
+docs\encyclopedia\9-spinoff\9-10-internet-kultura\intro.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey/
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\_category_.json
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer/
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\_category_.json
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\1.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\11.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\12.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\13.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\14.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\15.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\16.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-1.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-2.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-3.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-4.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-5.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-6.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-7.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-8.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image-9.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\image.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\1-computer\intro.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games/
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\_category_.json
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\1.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\11.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\12.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\13.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\14.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\15.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\16.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\17.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\18.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\19.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\20.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\21.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\22.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\23.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\24.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\25.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\26.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\image-1.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\image-2.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\image-3.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\image-4.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\image.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\2-video-games\intro.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development/
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\_category_.json
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\1.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\11.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\12.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\13.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\14.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\15.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\16.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\3-development\intro.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy/
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\_category_.json
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\1.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\2.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\3.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\4.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\5.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\6.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\4-programmy\intro.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod/
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\_category_.json
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\1.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\2.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\3.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\4.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\5.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\6.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\7.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-1.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-10.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-11.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-12.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-13.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-14.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-15.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-16.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-17.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-18.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-19.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-2.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-20.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-21.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-22.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-23.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-24.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-25.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-26.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-27.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-28.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-29.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-3.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-30.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-31.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-32.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-33.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-34.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-35.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-36.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-37.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-38.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-39.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-4.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-5.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-6.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-7.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-8.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\image-9.png
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\5-kod\intro.md
+docs\encyclopedia\9-spinoff\9-11-dlya-detey\forkids.md
+docs\encyclopedia\9-spinoff\spinoff.md
+docs\encyclopedia\intro.md
+docs\glossary/
+docs\glossary\_category_.json
+docs\glossary\0.md
+docs\glossary\1.md
+docs\glossary\2.md
+docs\glossary\3.md
+docs\glossary\4.md
+docs\glossary\5.md
+docs\glossary\6.md
+docs\glossary\7.md
+docs\glossary\8.md
+docs\glossary\9.md
+docs\glossary\А.md
+docs\glossary\Б.md
+docs\glossary\В.md
+docs\glossary\Г.md
+docs\glossary\Д.md
+docs\glossary\Е.md
+docs\glossary\Ж.md
+docs\glossary\З.md
+docs\glossary\И.md
+docs\glossary\Й.md
+docs\glossary\К.md
+docs\glossary\Л.md
+docs\glossary\М.md
+docs\glossary\Н.md
+docs\glossary\О.md
+docs\glossary\П.md
+docs\glossary\Р.md
+docs\glossary\С.md
+docs\glossary\Т.md
+docs\glossary\У.md
+docs\glossary\Ф.md
+docs\glossary\Х.md
+docs\glossary\Ц.md
+docs\glossary\Ч.md
+docs\glossary\Ш.md
+docs\glossary\Щ.md
+docs\glossary\Ъ.md
+docs\glossary\Ы.md
+docs\glossary\Ь.md
+docs\glossary\Э.md
+docs\glossary\Ю.md
+docs\glossary\Я.md
+docs\glossary\A.md
+docs\glossary\B.md
+docs\glossary\C.md
+docs\glossary\D.md
+docs\glossary\E.md
+docs\glossary\F.md
+docs\glossary\G.md
+docs\glossary\H.md
+docs\glossary\I.md
+docs\glossary\intro.md
+docs\glossary\J.md
+docs\glossary\K.md
+docs\glossary\L.md
+docs\glossary\M.md
+docs\glossary\N.md
+docs\glossary\O.md
+docs\glossary\P.md
+docs\glossary\Q.md
+docs\glossary\R.md
+docs\glossary\S.md
+docs\glossary\T.md
+docs\glossary\U.md
+docs\glossary\V.md
+docs\glossary\W.md
+docs\glossary\X.md
+docs\glossary\Y.md
+docs\glossary\Z.md
+docs\lab/
+docs\lab\_category_.json
+docs\lab\cases/
+docs\lab\cases\_category_.json
+docs\lab\cases\1.md
+docs\lab\cases\11.md
+docs\lab\cases\1111.md
+docs\lab\cases\1112.md
+docs\lab\cases\2.md
+docs\lab\cases\3.md
+docs\lab\cases\4.md
+docs\lab\cases\5.md
+docs\lab\cases\6.md
+docs\lab\cases\7.md
+docs\lab\cases\intro.md
+docs\lab\examples/
+docs\lab\examples\_category_.json
+docs\lab\examples\1.md
+docs\lab\examples\11.md
+docs\lab\examples\111.md
+docs\lab\examples\112.md
+docs\lab\examples\113.md
+docs\lab\examples\114.md
+docs\lab\examples\115.md
+docs\lab\examples\116.md
+docs\lab\examples\117.md
+docs\lab\examples\118.md
+docs\lab\examples\119.md
+docs\lab\examples\12.md
+docs\lab\examples\120.md
+docs\lab\examples\121.md
+docs\lab\examples\122.md
+docs\lab\examples\13.md
+docs\lab\examples\14.md
+docs\lab\examples\15.md
+docs\lab\examples\16.md
+docs\lab\examples\17.md
+docs\lab\examples\2.md
+docs\lab\examples\211.md
+docs\lab\examples\212.md
+docs\lab\examples\3.md
+docs\lab\examples\4.md
+docs\lab\examples\image-1.png
+docs\lab\examples\image-10.png
+docs\lab\examples\image-11.png
+docs\lab\examples\image-12.png
+docs\lab\examples\image-13.png
+docs\lab\examples\image-14.png
+docs\lab\examples\image-15.png
+docs\lab\examples\image-16.png
+docs\lab\examples\image-17.png
+docs\lab\examples\image-18.png
+docs\lab\examples\image-19.png
+docs\lab\examples\image-2.png
+docs\lab\examples\image-20.png
+docs\lab\examples\image-21.png
+docs\lab\examples\image-3.png
+docs\lab\examples\image-4.png
+docs\lab\examples\image-5.png
+docs\lab\examples\image-6.png
+docs\lab\examples\image-7.png
+docs\lab\examples\image-8.png
+docs\lab\examples\image-9.png
+docs\lab\examples\image.png
+docs\lab\examples\intro.md
+docs\lab\exams/
+docs\lab\exams\_category_.json
+docs\lab\exams\1.md
+docs\lab\exams\2.md
+docs\lab\exams\3.md
+docs\lab\exams\intro.md
+docs\lab\experiments/
+docs\lab\experiments\_category_.json
+docs\lab\experiments\1.md
+docs\lab\experiments\2.md
+docs\lab\experiments\3.md
+docs\lab\experiments\4.md
+docs\lab\experiments\5.md
+docs\lab\experiments\6.md
+docs\lab\experiments\intro.md
+docs\lab\intro.md
+docs\lab\questions/
+docs\lab\questions\_category_.json
+docs\lab\questions\1.mdx
+docs\lab\questions\11.md
+docs\lab\questions\111.md
+docs\lab\questions\112.md
+docs\lab\questions\113.md
+docs\lab\questions\114.md
+docs\lab\questions\115.md
+docs\lab\questions\116.md
+docs\lab\questions\117.md
+docs\lab\questions\118.md
+docs\lab\questions\119.md
+docs\lab\questions\120.md
+docs\lab\questions\121.md
+docs\lab\questions\122.md
+docs\lab\questions\123.md
+docs\lab\questions\124.md
+docs\lab\questions\125.md
+docs\lab\questions\126.md
+docs\lab\questions\127.md
+docs\lab\questions\128.md
+docs\lab\questions\129.md
+docs\lab\questions\130.md
+docs\lab\questions\131.md
+docs\lab\questions\132.md
+docs\lab\questions\133.md
+docs\lab\questions\134.md
+docs\lab\questions\135.md
+docs\lab\questions\136.md
+docs\lab\questions\138.md
+docs\lab\questions\139.md
+docs\lab\questions\140.md
+docs\lab\questions\141.md
+docs\lab\questions\142.md
+docs\lab\questions\143.md
+docs\lab\questions\144.md
+docs\lab\questions\145.md
+docs\lab\questions\146.md
+docs\lab\questions\147.md
+docs\lab\questions\148.md
+docs\lab\questions\149.md
+docs\lab\questions\150.md
+docs\lab\questions\151.md
+docs\lab\questions\152.md
+docs\lab\questions\153.md
+docs\lab\questions\154.md
+docs\lab\questions\155.md
+docs\lab\questions\156.md
+docs\lab\questions\157.md
+docs\lab\questions\158.md
+docs\lab\questions\159.md
+docs\lab\questions\160.md
+docs\lab\questions\intro.md
+docs\lab\roadmap/
+docs\lab\roadmap\_category_.json
+docs\lab\roadmap\1.md
+docs\lab\roadmap\11.md
+docs\lab\roadmap\2.md
+docs\lab\roadmap\22.md
+docs\lab\roadmap\3.md
+docs\lab\roadmap\33.md
+docs\lab\roadmap\4.md
+docs\lab\roadmap\44.md
+docs\lab\roadmap\5.md
+docs\lab\roadmap\6.md
+docs\lab\roadmap\intro.md
+docs\lab\tasks/
+docs\lab\tasks\_category_.json
+docs\lab\tasks\1.md
+docs\lab\tasks\11.md
+docs\lab\tasks\12.md
+docs\lab\tasks\2.md
+docs\lab\tasks\3.md
+docs\lab\tasks\intro.md
+docs\lab\trainers/
+docs\lab\trainers\_category_.json
+docs\lab\trainers\1.md
+docs\lab\trainers\2.md
+docs\lab\trainers\3.md
+docs\lab\trainers\4.md
+docs\lab\trainers\intro.md
+docs\philosophy/
+docs\philosophy\_category_.json
+docs\philosophy\basics/
+docs\philosophy\basics\_category_.json
+docs\philosophy\basics\1.md
+docs\philosophy\basics\2.md
+docs\philosophy\basics\3.md
+docs\philosophy\basics\4.md
+docs\philosophy\basics\5.md
+docs\philosophy\basics\501.md
+docs\philosophy\basics\intro.md
+docs\philosophy\cognition/
+docs\philosophy\cognition\_category_.json
+docs\philosophy\cognition\1.md
+docs\philosophy\cognition\2.md
+docs\philosophy\cognition\3.md
+docs\philosophy\cognition\4.md
+docs\philosophy\cognition\5.md
+docs\philosophy\cognition\6.md
+docs\philosophy\cognition\intro.md
+docs\philosophy\culture/
+docs\philosophy\culture\_category_.json
+docs\philosophy\culture\1.md
+docs\philosophy\culture\2.md
+docs\philosophy\culture\3.md
+docs\philosophy\culture\4.md
+docs\philosophy\culture\5.md
+docs\philosophy\culture\6.md
+docs\philosophy\culture\7.md
+docs\philosophy\culture\8.md
+docs\philosophy\culture\intro.md
+docs\philosophy\ethics-responsibility/
+docs\philosophy\ethics-responsibility\_category_.json
+docs\philosophy\ethics-responsibility\1.md
+docs\philosophy\ethics-responsibility\10.md
+docs\philosophy\ethics-responsibility\111.md
+docs\philosophy\ethics-responsibility\2.md
+docs\philosophy\ethics-responsibility\3.md
+docs\philosophy\ethics-responsibility\4.md
+docs\philosophy\ethics-responsibility\5.md
+docs\philosophy\ethics-responsibility\6.md
+docs\philosophy\ethics-responsibility\7.md
+docs\philosophy\ethics-responsibility\8.md
+docs\philosophy\ethics-responsibility\9.md
+docs\philosophy\ethics-responsibility\intro.md
+docs\philosophy\intro.md
+docs\philosophy\methodology/
+docs\philosophy\methodology\_category_.json
+docs\philosophy\methodology\1.md
+docs\philosophy\methodology\2.md
+docs\philosophy\methodology\3.md
+docs\philosophy\methodology\4.md
+docs\philosophy\methodology\5.md
+docs\philosophy\methodology\intro.md
+docs\philosophy\reflections/
+docs\philosophy\reflections\_category_.json
+docs\philosophy\reflections\1.md
+docs\philosophy\reflections\11.md
+docs\philosophy\reflections\2.md
+docs\philosophy\reflections\3.md
+docs\philosophy\reflections\4.md
+docs\philosophy\reflections\5.md
+docs\philosophy\reflections\6.md
+docs\philosophy\reflections\7.md
+docs\philosophy\reflections\image.png
+docs\philosophy\reflections\intro.md
+docs\section/
+docs\section\ai.md
+docs\section\basics.md
+docs\section\cat/
+docs\section\cat\0001.md
+docs\section\cat\0002.md
+docs\section\cat\0003.md
+docs\section\cat\0004.md
+docs\section\cat\0005.md
+docs\section\cat\0006.md
+docs\section\cat\0007.md
+docs\section\cat\0008.md
+docs\section\cat\0009.md
+docs\section\cat\0010.md
+docs\section\cat\0011.md
+docs\section\cat\0012.md
+docs\section\cat\0013.md
+docs\section\cat\0014.md
+docs\section\cat\0015.md
+docs\section\cat\0016.md
+docs\section\cat\0017.md
+docs\section\cat\0018.md
+docs\section\cat\0019.md
+docs\section\cat\0020.md
+docs\section\cat\0021.md
+docs\section\cat\0022.md
+docs\section\cat\0023.md
+docs\section\cat\0024.md
+docs\section\cat\0025.md
+docs\section\cat\0026.md
+docs\section\cat\0027.md
+docs\section\code-dev.md
+docs\section\data-markup.md
+docs\section\forkids.md
+docs\section\infra-security.md
+docs\section\languages.md
+docs\section\project.md
+docs\section\spinoff.md
+docs\section\system-network.md
+docs\toc.md
+docs\tools/
+docs\tools\_category_.json
+docs\tools\automation/
+docs\tools\automation\_category_.json
+docs\tools\automation\1.md
+docs\tools\automation\2.md
+docs\tools\automation\3.md
+docs\tools\automation\intro.md
+docs\tools\data/
+docs\tools\data\_category_.json
+docs\tools\data\1.md
+docs\tools\data\2.md
+docs\tools\data\3.md
+docs\tools\data\4.md
+docs\tools\data\5.md
+docs\tools\data\6.md
+docs\tools\data\intro.md
+docs\tools\development/
+docs\tools\development\_category_.json
+docs\tools\development\1.md
+docs\tools\development\2.md
+docs\tools\development\3.md
+docs\tools\development\4.md
+docs\tools\development\intro.md
+docs\tools\documentation/
+docs\tools\documentation\_category_.json
+docs\tools\documentation\1.md
+docs\tools\documentation\2.md
+docs\tools\documentation\3.md
+docs\tools\documentation\4.md
+docs\tools\documentation\5.md
+docs\tools\documentation\intro.md
+docs\tools\games/
+docs\tools\games\_category_.json
+docs\tools\games\1.md
+docs\tools\games\1111.md
+docs\tools\games\2.md
+docs\tools\games\3.md
+docs\tools\games\4.mdx
+docs\tools\games\intro.md
+docs\tools\intro.md
+docs\tools\misc/
+docs\tools\misc\_category_.json
+docs\tools\misc\1.md
+docs\tools\misc\2.md
+docs\tools\misc\3.md
+docs\tools\misc\4.md
+docs\tools\misc\5.md
+docs\tools\misc\6.md
+docs\tools\misc\intro.md
+docs\tools\multimedia/
+docs\tools\multimedia\_category_.json
+docs\tools\multimedia\1.md
+docs\tools\multimedia\2.md
+docs\tools\multimedia\3.md
+docs\tools\multimedia\4.md
+docs\tools\multimedia\5.md
+docs\tools\multimedia\intro.md
+docs\tools\network/
+docs\tools\network\_category_.json
+docs\tools\network\1.md
+docs\tools\network\2.md
+docs\tools\network\3.md
+docs\tools\network\4.md
+docs\tools\network\intro.md
+docs\tools\security/
+docs\tools\security\_category_.json
+docs\tools\security\1.md
+docs\tools\security\2.md
+docs\tools\security\3.md
+docs\tools\security\4.md
+docs\tools\security\intro.md
+docs\tools\system/
+docs\tools\system\_category_.json
+docs\tools\system\1.md
+docs\tools\system\2.md
+docs\tools\system\3.md
+docs\tools\system\4.md
+docs\tools\system\5.md
+docs\tools\system\intro.md
+docs\tools\testing/
+docs\tools\testing\_category_.json
+docs\tools\testing\1.md
+docs\tools\testing\2.md
+docs\tools\testing\3.md
+docs\tools\testing\intro.md
+docusaurus.config.js
+find_replacements.py
+find_replacements2.py
+generated_structure.md
+info/
+info\demo-registry.md
+info\llm-phrases-scan.csv
+info\README.md
+launch.bat
+launch.py
+LICENSE
+package-lock.json
+package.json
+README.md
+result_replacements.txt
+result_replacements2.txt
+scripts/
+scripts\__pycache__/
+scripts\__pycache__\normalize-references.cpython-313.pyc
+scripts\add-article-descriptions.mjs
+scripts\add-legacy-slugs.mjs
+scripts\append-article-footer.mjs
+scripts\audit-migration-artifacts.mjs
+scripts\build-segment-map-from-git.mjs
+scripts\cleanup-reference-artifacts.mjs
+scripts\dedupe-reference-toc.mjs
+scripts\dedupe-slugs.mjs
+scripts\fix-cat-link-targets.mjs
+scripts\fix-english-technical-terms.mjs
+scripts\fix-intro-dedupe-slug.mjs
+scripts\fix-legacy-encyclopedia-links.mjs
+scripts\fix-reference-tables.mjs
+scripts\fix-remaining-doc-ids.mjs
+scripts\fix-ru-locale-artifacts.mjs
+scripts\fix-section-cat-links.mjs
+scripts\fix-segment-prefix-damage.mjs
+scripts\fix-sidebars-doc-ids.mjs
+scripts\fix-ui-labels-and-glossary.mjs
+scripts\generate-demo-registry.mjs
+scripts\migrate-docs-paths.mjs
+scripts\normalize-article-tags.mjs
+scripts\normalize-demo-components.mjs
+scripts\normalize-glossary.mjs
+scripts\normalize-references.mjs
+scripts\normalize-references.py
+scripts\path-migration-map.json
+scripts\reference-paths.mjs
+scripts\reference-quick-starts.mjs
+scripts\restore-all-docs-from-git.mjs
+scripts\restore-category-json-from-git.mjs
+scripts\restore-doc-content.mjs
+scripts\restore-references-from-main.mjs
+scripts\restore-references.py
+scripts\restore-src-components-from-git.mjs
+scripts\scan-llm-phrases.mjs
+scripts\scan-reference-shrink.mjs
+scripts\segment-map-ru-en.json
+scripts\undo-glossary-damage.mjs
+scripts\validate-frontmatter.mjs
+sidebars.js
+src/
+src\components/
+src\components\AlgoCodeVisualizer.jsx
+src\components\AnimatedBackground.module.css
+src\components\AnimatedBackground.tsx
+src\components\ArticlePdfExport.jsx
+src\components\ArticlePdfExport.module.css
+src\components\ArticleSeeAlso.jsx
+src\components\ArticleSeeAlso.module.css
+src\components\articleSeeAlsoUtils.js
+src\components\AsynchronousInteraction.jsx
+src\components\AuthenticationFlow.js
+src\components\BackupDemo.jsx
+src\components\BIOSemulator.js
+src\components\BlockBuilder.jsx
+src\components\BuildProcessFlow.jsx
+src\components\CicdDemo.jsx
+src\components\CodeTransformationDemo.jsx
+src\components\CompilerSimulator.jsx
+src\components\ComputerBootSequence.jsx
+src\components\ContainerOrchestrator.jsx
+src\components\DataStructureGraph.jsx
+src\components\DataStructureHierarchy.jsx
+src\components\DataStructureKeyValue.jsx
+src\components\DataStructureLinear.jsx
+src\components\DataStructureQueue.jsx
+src\components\DataStructureStack.jsx
+src\components\DataStructureTable.jsx
+src\components\DebuggerEmulator.jsx
+src\components\DIDemo.jsx
+src\components\DIPDemo.jsx
+src\components\DockerEmulator.jsx
+src\components\DockerfileBuilder.jsx
+src\components\DomainLevelAnalyzer.js
+src\components\EnglishWordRandomizer.js
+src\components\FunctionSimulator.jsx
+src\components\GarbageCollectorDemo.jsx
+src\components\GitEmulator.jsx
+src\components\HTMLPlayground.js
+src\components\HttpRequestAnalyzer.js
+src\components\InteractiveRoadmap.js
+src\components\IpAddressAnalyzer.js
+src\components\KafkaSimulation.js
+src\components\LexicalScopeVisualizer.js
+src\components\LoopsSimulator.jsx
+src\components\LowNoCodeDemo.jsx
+src\components\MethodCallSimulator.jsx
+src\components\MobileAppEmulator.jsx
+src\components\ModuleDependencyGraph.jsx
+src\components\NeuralNetworkDemo.jsx
+src\components\ObjectLifecycleSimulator.jsx
+src\components\ORMDemo.jsx
+src\components\ProcessThreadVisualizer.jsx
+src\components\RabbitMQSimulation.js
+src\components\RaceConditionDemo.jsx
+src\components\RandomChecklistItem.js
+src\components\RandomGameGenerator.js
+src\components\RandomQuestionFromArticle.js
+src\components\ReactiveInteraction.jsx
+src\components\RequestResponseModel.js
+src\components\RequirementsAnalysisDemo.jsx
+src\components\ScalingDemo.jsx
+src\components\SessionInteraction.jsx
+src\components\shared/
+src\components\shared\demoFallback.jsx
+src\components\shared\DemoShell.jsx
+src\components\shared\lazyDemo.js
+src\components\shared\styleTokens.js
+src\components\shared\useBreakpoint.js
+src\components\shared\withBrowserOnly.jsx
+src\components\SOAPTrainer.js
+src\components\SoftwareLifecycleDemo.jsx
+src\components\SqlDeleteTrainer.js
+src\components\SqlInsertTrainer.js
+src\components\SqlJoinTrainer.js
+src\components\SqlTrainer.js
+src\components\SqlUpdateTrainer.js
+src\components\SynchronousInteraction.jsx
+src\components\TerminalEmulator.js
+src\components\TestingBasicsDemo.jsx
+src\components\TextEncoderConverter.js
+src\components\Timer.jsx
+src\components\UrlUriRnConverter.js
+src\css/
+src\css\custom.css
+src\css\demo-widgets.css
+src\docusaurus-shims.d.ts
+src\pages/
+src\pages\index.js
+src\pages\index.module.css
+src\theme/
+src\theme\DocItem/
+src\theme\DocItem\Layout/
+src\theme\DocItem\Layout\index.tsx
+src\theme\DocItem\Layout\styles.module.css
+src\theme\DocSidebar/
+src\theme\DocSidebar\Desktop/
+src\theme\DocSidebar\Desktop\Content/
+src\theme\DocSidebar\Desktop\Content\index.tsx
+src\theme\DocSidebar\Desktop\Content\styles.module.css
+src\types.d.ts
+src\utils/
+src\utils\exportArticlePdf.js
+start.bat
+static/
+static\.nojekyll
+static\CNAME
+static\favicon.ico
+static\img/
+static\img\docusaurus.png
+static\img\favicon.ico
+static\img\logoITU.png
+static\robots.txt
+static\yandex_507ba83977a96ef7.html
+tsconfig.json
