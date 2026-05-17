@@ -3,7 +3,12 @@ id: code-dev
 title: 4. Код и разработка - о разделе
 sidebar_label: 4. Код и разработка - о разделе
 slug: /section/code-dev
----
+
+
+---<div class="article-tags">
+  <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+  <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+</div>
 
 ## О разделе
 

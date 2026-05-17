@@ -3,7 +3,12 @@ id: infra-Безопасность
 title: 8. Инфраструктура и безопасность - о разделе
 sidebar_label: 8. Инфраструктура и безопасность - о разделе
 slug: /section/infra-Безопасность
----
+
+
+---<div class="article-tags">
+  <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+  <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+</div>
 
 ## О разделе
 

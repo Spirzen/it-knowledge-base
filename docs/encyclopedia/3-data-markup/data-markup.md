@@ -3,7 +3,13 @@ id: Данные-markup
 title: 3. Данные и разметка - о разделе
 sidebar_label: 3. Данные и разметка - о разделе
 slug: /encyclopedia/Данные и разметка/Данные-markup
----
+
+
+---<div class="article-tags">
+  <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+  <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+</div>
 
 import DocCardList from '@theme/DocCardList';
 

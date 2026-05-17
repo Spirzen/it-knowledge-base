@@ -3,7 +3,12 @@ id: Основы
 title: 1. Основы - о разделе
 sidebar_label: 1. Основы - о разделе
 slug: /section/Основы
----
+
+
+---<div class="article-tags">
+  <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+  <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+</div>
 
 ## О разделе
 

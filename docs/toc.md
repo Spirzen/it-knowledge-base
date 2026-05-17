@@ -1,11 +1,19 @@
-﻿---
+---
 title: Содержание
 sidebar_label: Содержание
+
+
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # Содержание
+
+
+<div class="article-tags">
+  <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+  <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+</div>
 
 <DocCardList />
 

@@ -32,21 +32,29 @@ import DocCardList from '@theme/DocCardList';
 </div>
 
 
+На реальной статье в каждой паре указывается **один** тег (обязательность, уровень, статус). Ниже — как они выглядят по отдельности:
+
 <div class="article-tags">
-  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+</div>
+
+<div class="article-tags">
   <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
+</div>
+
+<div class="article-tags">
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+</div>
+
+<div class="article-tags">
   <span class="tag tag-advanced">НЕ ДЛЯ НОВИЧКОВ</span>
 </div>
-<span class="complexity-badge">Разработчику</span>
-<span class="complexity-badge">Аналитику</span>
-<span class="complexity-badge">Тестировщику</span>  
-<span class="complexity-badge">Архитектору</span>
-<span class="complexity-badge">Инженеру</span>
-<span class="complexity-badge">Руководителю</span>
-<span class="complexity-badge">Родителям и детям</span>
-<span class="complexity-badge">Всем</span>
+
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+</div>
+
+Роль читателя (обычно одна–две на статью): <span class="complexity-badge">Разработчику</span>, <span class="complexity-badge">Аналитику</span>, <span class="complexity-badge">Всем</span> и другие — см. [систему тегов](/about/tags).
 
 ```
 Я стараюсь всегда приводить примеры кода. Можете копировать через кнопку справа в таких блоках. -->

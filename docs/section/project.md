@@ -3,7 +3,12 @@ id: project
 title: 7. Проект - о разделе
 sidebar_label: 7. Проект - о разделе
 slug: /section/project
----
+
+
+---<div class="article-tags">
+  <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+  <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+</div>
 
 ## О разделе
 

@@ -3,7 +3,13 @@ id: Основы
 title: 1. Основы - о разделе
 sidebar_label: 1. Основы - о разделе
 slug: /encyclopedia/Основы/Основы
----
+
+
+---<div class="article-tags">
+  <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
+  <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+</div>
 
 import DocCardList from '@theme/DocCardList';
 
