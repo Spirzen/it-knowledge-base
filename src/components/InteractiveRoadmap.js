@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
 
 const roadmapData = [
   {
@@ -244,7 +246,7 @@ const roadmapData = [
 
 export default function InteractiveRoadmap() {
   return (
-    <BrowserOnly fallback={<div>Загрузка...</div>}>
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка дорожной карты…')}>
       {() => {
         const [expandedId, setExpandedId] = useState(null);
         const [selectedTopic, setSelectedTopic] = useState(null);
@@ -286,14 +288,9 @@ export default function InteractiveRoadmap() {
         };
 
         return (
-          <div style={{ 
-            backgroundColor: '#f8fafc', 
-            padding: '1rem', 
-            borderRadius: '12px', 
-            border: '1px solid #e2e8f0',
-            marginTop: '1rem',
-            marginBottom: '1rem'
-          }}>
+          <DemoShell>
+          <DemoCard title="Интерактивная дорожная карта" subtitle="Выберите область знаний и соберите личный план обучения.">
+          <div>
             <style>{`
               @media (min-width: 768px) {
                 .roadmap-container {
@@ -302,21 +299,6 @@ export default function InteractiveRoadmap() {
               }
             `}</style>
             
-            <h3 style={{ 
-              color: '#1e293b', 
-              marginBottom: '1rem',
-              fontSize: '1.25rem'
-            }}>Интерактивная дорожная карта</h3>
-            
-            <p style={{ 
-              color: '#64748b', 
-              marginBottom: '1rem', 
-              fontSize: '0.875rem', 
-              lineHeight: '1.5'
-            }}>
-              Выберите область знаний, чтобы увидеть ключевые темы и добавить их в свой план обучения.
-            </p>
-
             <div style={{ 
               display: 'grid', 
               gridTemplateColumns: '1fr',
@@ -617,6 +599,8 @@ export default function InteractiveRoadmap() {
               }
             `}</style>
           </div>
+          </DemoCard>
+          </DemoShell>
         );
       }}
     </BrowserOnly>

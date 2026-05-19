@@ -1,296 +1,209 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import clsx from 'clsx';
+import DemoShell from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import {
+  DEFAULT_TODOS,
+  LEARN_CARDS,
+  TABS,
+  loadStored,
+  saveStored,
+} from './shared/mobileAppEngine';
+import styles from './MobileAppEmulator.module.css';
 
-const MobileAppEmulator = () => {
+const STORAGE_COUNT = 'it-demo-mobile-count';
+const STORAGE_TODOS = 'it-demo-mobile-todos';
+const STORAGE_DARK = 'it-demo-mobile-dark';
+
+function MobileAppEmulatorInner() {
+  const [activeTab, setActiveTab] = useState('home');
+  const [count, setCount] = useState(0);
+  const [todos, setTodos] = useState(DEFAULT_TODOS);
+  const [newTodo, setNewTodo] = useState('');
+  const [dark, setDark] = useState(false);
+  const [time, setTime] = useState('');
+
+  useEffect(() => {
+    setCount(loadStored(STORAGE_COUNT, 0));
+    setTodos(loadStored(STORAGE_TODOS, DEFAULT_TODOS));
+    setDark(loadStored(STORAGE_DARK, false));
+  }, []);
+
+  useEffect(() => {
+    saveStored(STORAGE_COUNT, count);
+  }, [count]);
+
+  useEffect(() => {
+    saveStored(STORAGE_TODOS, todos);
+  }, [todos]);
+
+  useEffect(() => {
+    saveStored(STORAGE_DARK, dark);
+  }, [dark]);
+
+  useEffect(() => {
+    const tick = () =>
+      setTime(new Date().toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}));
+    tick();
+    const id = setInterval(tick, 30_000);
+    return () => clearInterval(id);
+  }, []);
+
+  const addTodo = () => {
+    const text = newTodo.trim();
+    if (!text) return;
+    setTodos((list) => [...list, {id: String(Date.now()), text, done: false}]);
+    setNewTodo('');
+  };
+
+  const toggleTodo = (id) => {
+    setTodos((list) => list.map((t) => (t.id === id ? {...t, done: !t.done} : t)));
+  };
+
+  const removeTodo = (id) => {
+    setTodos((list) => list.filter((t) => t.id !== id));
+  };
+
+  const titles = {
+    home: 'Счётчик',
+    tasks: 'Задачи',
+    learn: 'Концепции',
+    about: 'О приложении',
+  };
+
   return (
-    <BrowserOnly>
-      {() => {
-        const [count, setCount] = useState(0);
-        const [activeTab, setActiveTab] = useState('home');
-        const [isMobile, setIsMobile] = useState(false);
+    <DemoShell className={styles.wrap}>
+      <div className={styles.toolbar}>
+        <button
+          type="button"
+          className="it-demo__btn it-demo__btn--sm"
+          onClick={() => setDark((d) => !d)}
+        >
+          {dark ? '☀️ Светлая' : '🌙 Тёмная'}
+        </button>
+        <button type="button" className="it-demo__btn it-demo__btn--sm it-demo__btn--secondary" onClick={() => setCount(0)}>
+          Сброс счётчика
+        </button>
+      </div>
 
-        useEffect(() => {
-          const checkMobile = () => {
-            setIsMobile(window.innerWidth <= 768);
-          };
-          
-          checkMobile();
-          window.addEventListener('resize', checkMobile);
-          return () => window.removeEventListener('resize', checkMobile);
-        }, []);
-
-        const styles = {
-          container: {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            minHeight: '100vh',
-            margin: 0,
-            padding: isMobile ? '1rem' : '2rem 1rem',
-            backgroundColor: '#e5e5ea',
-            boxSizing: 'border-box',
-          },
-          phone: {
-            width: isMobile ? '100%' : '320px',
-            maxWidth: '500px',
-            height: isMobile ? 'calc(100vh - 2rem)' : '600px',
-            maxHeight: isMobile ? 'calc(100vh - 2rem)' : '800px',
-            minHeight: isMobile ? '500px' : 'auto',
-            backgroundColor: '#1c1c1e',
-            borderRadius: isMobile ? '30px' : '40px',
-            boxShadow: isMobile 
-              ? '0 10px 30px rgba(0,0,0,0.2)' 
-              : '0 25px 40px rgba(0,0,0,0.3), 0 0 0 8px #3a3a3c, 0 0 0 12px #1c1c1e',
-            overflow: 'hidden',
-            position: 'relative',
-            fontFamily: 'system-ui, -apple-system, sans-serif',
-            transition: 'all 0.3s ease',
-          },
-          screen: {
-            width: '100%',
-            height: '100%',
-            backgroundColor: '#f9f9fb',
-            display: 'flex',
-            flexDirection: 'column',
-            overflowY: 'auto',
-            overflowX: 'hidden',
-            scrollbarWidth: 'thin',
-            WebkitOverflowScrolling: 'touch',
-          },
-          statusBar: {
-            padding: isMobile ? '10px 16px 6px' : '12px 20px 6px',
-            backgroundColor: '#f9f9fb',
-            fontSize: isMobile ? '12px' : '14px',
-            fontWeight: '600',
-            display: 'flex',
-            justifyContent: 'space-between',
-            borderBottom: '1px solid #e5e5ea',
-            flexShrink: 0,
-          },
-          time: {
-            color: '#1c1c1e',
-          },
-          battery: {
-            color: '#1c1c1e',
-          },
-          header: {
-            padding: isMobile ? '10px 16px' : '12px 20px',
-            backgroundColor: '#ffffff',
-            borderBottom: '1px solid #e5e5ea',
-            flexShrink: 0,
-          },
-          title: {
-            margin: 0,
-            fontSize: isMobile ? '20px' : '22px',
-            fontWeight: '600',
-            color: '#007aff',
-          },
-          content: {
-            flex: 1,
-            padding: isMobile ? '16px' : '20px',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            overflowY: 'auto',
-          },
-          counterDisplay: {
-            fontSize: isMobile ? '48px' : '64px',
-            fontWeight: '700',
-            color: '#007aff',
-            margin: '20px 0',
-          },
-          buttonGroup: {
-            display: 'flex',
-            gap: '10px',
-            marginTop: '20px',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            width: '100%',
-          },
-          button: {
-            padding: isMobile ? '10px 20px' : '12px 24px',
-            fontSize: isMobile ? '16px' : '18px',
-            fontWeight: '600',
-            border: 'none',
-            borderRadius: '30px',
-            cursor: 'pointer',
-            transition: 'transform 0.1s ease, opacity 0.2s',
-            flex: isMobile ? '0 1 auto' : 'auto',
-            minWidth: isMobile ? '80px' : 'auto',
-            touchAction: 'manipulation',
-          },
-          increment: {
-            backgroundColor: '#007aff',
-            color: 'white',
-          },
-          decrement: {
-            backgroundColor: '#ff3b30',
-            color: 'white',
-          },
-          reset: {
-            backgroundColor: '#e5e5ea',
-            color: '#1c1c1e',
-          },
-          tabs: {
-            display: 'flex',
-            borderTop: '1px solid #e5e5ea',
-            backgroundColor: '#ffffff',
-            flexShrink: 0,
-          },
-          tab: {
-            flex: 1,
-            padding: isMobile ? '10px 8px' : '12px',
-            textAlign: 'center',
-            fontSize: isMobile ? '12px' : '14px',
-            fontWeight: '500',
-            cursor: 'pointer',
-            transition: 'background 0.2s, color 0.2s',
-            color: '#8e8e93',
-            touchAction: 'manipulation',
-            whiteSpace: 'nowrap',
-          },
-          activeTab: {
-            color: '#007aff',
-            borderTop: '2px solid #007aff',
-          },
-          aboutText: {
-            textAlign: 'center',
-            color: '#3a3a3c',
-            lineHeight: 1.5,
-            fontSize: isMobile ? '14px' : '16px',
-            width: '100%',
-          },
-          aboutList: {
-            textAlign: 'left',
-            paddingLeft: '20px',
-            marginTop: '10px',
-          },
-          aboutListItem: {
-            marginBottom: '8px',
-          },
-        };
-
-        const now = new Date();
-        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-        const handleButtonClick = (action) => {
-          if (action === 'increment') setCount(c => c + 1);
-          if (action === 'decrement') setCount(c => c - 1);
-          if (action === 'reset') setCount(0);
-        };
-
-        return (
-          <div style={styles.container}>
-            <div style={styles.phone}>
-              <div style={styles.screen}>
-                <div style={styles.statusBar}>
-                  <span style={styles.time}>{timeString}</span>
-                  <span style={styles.battery}>🔋 98%</span>
-                </div>
-
-                {activeTab === 'home' && (
-                  <>
-                    <div style={styles.header}>
-                      <h2 style={styles.title}>Моё приложение</h2>
-                    </div>
-                    <div style={styles.content}>
-                      <div style={styles.counterDisplay}>{count}</div>
-                      <div style={styles.buttonGroup}>
-                        <button
-                          style={{ ...styles.button, ...styles.increment }}
-                          onClick={() => handleButtonClick('increment')}
-                          onTouchStart={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-                          onTouchEnd={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                          onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-                          onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                        >
-                          +1
-                        </button>
-                        <button
-                          style={{ ...styles.button, ...styles.decrement }}
-                          onClick={() => handleButtonClick('decrement')}
-                          onTouchStart={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-                          onTouchEnd={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                          onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-                          onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                        >
-                          -1
-                        </button>
-                        <button
-                          style={{ ...styles.button, ...styles.reset }}
-                          onClick={() => handleButtonClick('reset')}
-                          onTouchStart={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-                          onTouchEnd={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                          onMouseDown={(e) => e.currentTarget.style.transform = 'scale(0.95)'}
-                          onMouseUp={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                          onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
-                        >
-                          Сброс
-                        </button>
-                      </div>
-                    </div>
-                  </>
-                )}
-
-                {activeTab === 'about' && (
-                  <>
-                    <div style={styles.header}>
-                      <h2 style={styles.title}>О приложении</h2>
-                    </div>
-                    <div style={styles.content}>
-                      <div style={styles.aboutText}>
-                        <p>📱 Эмулятор мобильного приложения</p>
-                        <p>✨ Простое приложение-счётчик</p>
-                        <p>💡 Демонстрирует:</p>
-                        <ul style={styles.aboutList}>
-                          <li style={styles.aboutListItem}>Интерфейс псевдосмартфона</li>
-                          <li style={styles.aboutListItem}>Работу состояния (state)</li>
-                          <li style={styles.aboutListItem}>Вкладки навигации</li>
-                          <li style={styles.aboutListItem}>Адаптивный дизайн</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </>
-                )}
-
-                <div style={styles.tabs}>
-                  <div
-                    style={{
-                      ...styles.tab,
-                      ...(activeTab === 'home' ? styles.activeTab : {}),
-                    }}
-                    onClick={() => setActiveTab('home')}
-                    onTouchStart={(e) => e.currentTarget.style.opacity = '0.7'}
-                    onTouchEnd={(e) => e.currentTarget.style.opacity = '1'}
-                    onMouseDown={(e) => e.currentTarget.style.opacity = '0.7'}
-                    onMouseUp={(e) => e.currentTarget.style.opacity = '1'}
-                  >
-                    🏠 Главная
-                  </div>
-                  <div
-                    style={{
-                      ...styles.tab,
-                      ...(activeTab === 'about' ? styles.activeTab : {}),
-                    }}
-                    onClick={() => setActiveTab('about')}
-                    onTouchStart={(e) => e.currentTarget.style.opacity = '0.7'}
-                    onTouchEnd={(e) => e.currentTarget.style.opacity = '1'}
-                    onMouseDown={(e) => e.currentTarget.style.opacity = '0.7'}
-                    onMouseUp={(e) => e.currentTarget.style.opacity = '1'}
-                  >
-                    ℹ️ О программе
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className={styles.phone}>
+        <div className={styles.notch} aria-hidden />
+        <div className={clsx(styles.screen, dark && styles.screenDark)}>
+          <div className={styles.statusBar}>
+            <span>{time || '12:00'}</span>
+            <span>📶 🔋 98%</span>
           </div>
-        );
-      }}
+
+          <header className={styles.appHeader}>
+            <h2 className={styles.appTitle}>{titles[activeTab]}</h2>
+          </header>
+
+          <main className={styles.content}>
+            {activeTab === 'home' && (
+              <section className={styles.counter}>
+                <div className={styles.counterValue}>{count}</div>
+                <p className={styles.counterHint}>Значение сохраняется в localStorage</p>
+                <div className={styles.btnRow}>
+                  <button type="button" className={styles.btnPrimary} onClick={() => setCount((c) => c + 1)}>
+                    +1
+                  </button>
+                  <button type="button" className={styles.btnDanger} onClick={() => setCount((c) => c - 1)}>
+                    −1
+                  </button>
+                  <button type="button" className={styles.btnGhost} onClick={() => setCount(0)}>
+                    Сброс
+                  </button>
+                </div>
+              </section>
+            )}
+
+            {activeTab === 'tasks' && (
+              <>
+                <ul className={styles.todoList}>
+                  {todos.map((t) => (
+                    <li key={t.id} className={styles.todoItem}>
+                      <input
+                        type="checkbox"
+                        className={styles.todoCheck}
+                        checked={t.done}
+                        onChange={() => toggleTodo(t.id)}
+                        aria-label={`Отметить: ${t.text}`}
+                      />
+                      <span className={clsx(styles.todoText, t.done && styles.todoDone)}>{t.text}</span>
+                      <button type="button" className={styles.todoDel} onClick={() => removeTodo(t.id)} aria-label="Удалить">
+                        ×
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+                <div className={styles.addRow}>
+                  <input
+                    className={styles.addInput}
+                    value={newTodo}
+                    onChange={(e) => setNewTodo(e.target.value)}
+                    onKeyDown={(e) => e.key === 'Enter' && addTodo()}
+                    placeholder="Новая задача…"
+                  />
+                  <button type="button" className={styles.btnPrimary} onClick={addTodo}>
+                    +
+                  </button>
+                </div>
+              </>
+            )}
+
+            {activeTab === 'learn' &&
+              LEARN_CARDS.map((card) => (
+                <article key={card.title} className={styles.learnCard}>
+                  <h4>{card.title}</h4>
+                  <p>{card.body}</p>
+                </article>
+              ))}
+
+            {activeTab === 'about' && (
+              <div className={styles.aboutText}>
+                <p>Эмулятор экрана смартфона в статье энциклопедии.</p>
+                <ul>
+                  <li>Навигация по вкладкам (как TabBar в React Native)</li>
+                  <li>Локальное состояние и персистентность</li>
+                  <li>Светлая и тёмная тема внутри «приложения»</li>
+                  <li>Адаптивная вёрстка без полноэкранного 100vh</li>
+                </ul>
+              </div>
+            )}
+          </main>
+
+          <nav className={styles.tabBar} aria-label="Навигация приложения">
+            {TABS.map((tab) => (
+              <button
+                key={tab.id}
+                type="button"
+                className={clsx(styles.tab, activeTab === tab.id && styles.tabActive)}
+                onClick={() => setActiveTab(tab.id)}
+              >
+                <span className={styles.tabIcon} aria-hidden>
+                  {tab.icon}
+                </span>
+                {tab.label}
+              </button>
+            ))}
+          </nav>
+          <div className={styles.homeIndicator} aria-hidden />
+        </div>
+      </div>
+
+      <p className={styles.hint}>
+        Попробуйте переключить тему, изменить счётчик и обновить страницу — данные останутся в браузере, как в
+        настоящем мобильном приложении с локальным хранилищем.
+      </p>
+    </DemoShell>
+  );
+}
+
+export default function MobileAppEmulator() {
+  return (
+    <BrowserOnly fallback={demoLoadingFallback()}>
+      {() => <MobileAppEmulatorInner />}
     </BrowserOnly>
   );
-};
-
-export default MobileAppEmulator;
+}

@@ -1,437 +1,361 @@
-import React, { useState } from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import clsx from 'clsx';
+import DemoShell from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import styles from './ComputerBootSequence.module.css';
 
-const ComputerBootSequenceCore = () => {
+const NODES = [
+  {id: 'psu', label: 'БП', icon: '⚡'},
+  {id: 'bios', label: 'BIOS', icon: '💾'},
+  {id: 'disk', label: 'Диск', icon: '💿'},
+  {id: 'ram', label: 'ОЗУ', icon: '🔋'},
+  {id: 'cpu', label: 'ЦП', icon: '🧠'},
+];
+
+const BOOT_STEPS = [
+  {id: 'psu', label: 'Питание'},
+  {id: 'bios', label: 'POST'},
+  {id: 'disk', label: 'Загрузчик'},
+  {id: 'ram', label: 'ОЗУ'},
+];
+
+/** SVG-координаты центров узлов (viewBox 0 0 300 200) */
+const NODE_POS = {
+  psu: {x: 50, y: 40},
+  bios: {x: 150, y: 40},
+  disk: {x: 250, y: 40},
+  ram: {x: 50, y: 150},
+  cpu: {x: 150, y: 150},
+};
+
+const EDGES = [
+  ['psu', 'bios'],
+  ['bios', 'disk'],
+  ['disk', 'ram'],
+  ['ram', 'cpu'],
+];
+
+const STATUS_TEXT = {
+  off: 'Компьютер выключен. Включите питание, чтобы начать загрузку.',
+  booting: 'Идёт загрузка: питание → POST → чтение с диска → инициализация ОЗУ.',
+  running: 'Система работает. Откройте файл, чтобы увидеть путь данных.',
+  closing: 'Завершение работы: сброс кэша ЦП → очистка ОЗУ → отключение.',
+};
+
+function edgeKey(a, b) {
+  return `${a}-${b}`;
+}
+
+function ComputerBootSequenceInner() {
   const [status, setStatus] = useState('off');
   const [activePath, setActivePath] = useState([]);
   const [fileLocation, setFileLocation] = useState('disk');
+  const [bootPhase, setBootPhase] = useState(-1);
+  const [log, setLog] = useState([]);
+  const [packet, setPacket] = useState(null);
+  const timers = useRef([]);
+
+  const pushLog = useCallback((msg) => {
+    setLog((prev) => [...prev.slice(-5), msg]);
+  }, []);
+
+  const clearTimers = useCallback(() => {
+    timers.current.forEach(clearTimeout);
+    timers.current = [];
+  }, []);
+
+  const schedule = useCallback((fn, ms) => {
+    const id = setTimeout(fn, ms);
+    timers.current.push(id);
+    return id;
+  }, []);
+
+  useEffect(() => () => clearTimers(), [clearTimers]);
+
+  const animatePath = useCallback(
+    (path, onDone) => {
+      if (path.length < 2) {
+        onDone?.();
+        return;
+      }
+      let i = 0;
+      const step = () => {
+        const from = path[i];
+        const to = path[i + 1];
+        setActivePath([from, to]);
+        setPacket({from: NODE_POS[from], to: NODE_POS[to], t: 0});
+        const start = performance.now();
+        const duration = 520;
+
+        const tick = (now) => {
+          const t = Math.min(1, (now - start) / duration);
+          setPacket({from: NODE_POS[from], to: NODE_POS[to], t});
+          if (t < 1) {
+            requestAnimationFrame(tick);
+          } else {
+            i += 1;
+            if (i < path.length - 1) step();
+            else {
+              setActivePath([]);
+              setPacket(null);
+              onDone?.();
+            }
+          }
+        };
+        requestAnimationFrame(tick);
+      };
+      step();
+    },
+    [],
+  );
 
   const handlePowerOn = () => {
     if (status === 'booting' || status === 'running') return;
-    
+    clearTimers();
     setStatus('booting');
-    setActivePath(['psu', 'bios', 'disk', 'ram']);
-    
-    setTimeout(() => {
-      setStatus('running');
-      setActivePath([]); 
-      setFileLocation('disk'); 
-    }, 2000);
+    setBootPhase(0);
+    setLog([]);
+    pushLog('Нажата кнопка питания');
+
+    const path = ['psu', 'bios', 'disk', 'ram'];
+    let phase = 0;
+    const runPhase = () => {
+      if (phase >= path.length - 1) {
+        schedule(() => {
+          setStatus('running');
+          setBootPhase(-1);
+          setFileLocation('disk');
+          pushLog('ОС готова — файл на диске');
+        }, 300);
+        return;
+      }
+      setBootPhase(phase);
+      const seg = [path[phase], path[phase + 1]];
+      pushLog(
+        phase === 0
+          ? 'БП подаёт напряжение на плату'
+          : phase === 1
+            ? 'BIOS выполняет POST'
+            : phase === 2
+              ? 'Загрузчик читает ядро с диска'
+              : 'Копирование в ОЗУ',
+      );
+      animatePath(seg, () => {
+        phase += 1;
+        schedule(runPhase, 120);
+      });
+    };
+    schedule(runPhase, 200);
   };
 
   const handleOpenFile = () => {
-    if (status !== 'running') return;
-    
+    if (status !== 'running' || fileLocation === 'cpu') return;
     if (fileLocation === 'disk') {
-      setActivePath(['disk', 'ram']);
-      setTimeout(() => {
+      pushLog('Открытие: диск → ОЗУ → ЦП');
+      animatePath(['disk', 'ram'], () => {
         setFileLocation('ram');
-        setActivePath([]);
-        
-        setActivePath(['ram', 'cpu']);
-        setTimeout(() => {
-          setFileLocation('cpu');
-          setActivePath([]);
-        }, 800);
-      }, 600);
+        schedule(() => animatePath(['ram', 'cpu'], () => setFileLocation('cpu')), 200);
+      });
     } else if (fileLocation === 'ram') {
-       setActivePath(['ram', 'cpu']);
-       setTimeout(() => {
-         setFileLocation('cpu');
-         setActivePath([]);
-       }, 800);
+      pushLog('Обработка в ЦП');
+      animatePath(['ram', 'cpu'], () => setFileLocation('cpu'));
     }
   };
 
   const handleCloseFile = () => {
-    if (status !== 'running') return;
-
+    if (status !== 'running' || fileLocation === 'disk') return;
     if (fileLocation === 'cpu') {
-      setActivePath(['cpu', 'ram']);
-      setTimeout(() => {
+      pushLog('Закрытие: ЦП → ОЗУ');
+      animatePath(['cpu', 'ram'], () => {
         setFileLocation('ram');
-        setActivePath([]);
-      }, 600);
+        schedule(() => {
+          pushLog('Сброс на диск');
+          animatePath(['ram', 'disk'], () => setFileLocation('disk'));
+        }, 200);
+      });
     } else if (fileLocation === 'ram') {
-      setActivePath(['ram', 'disk']);
-      setTimeout(() => {
-        setFileLocation('disk');
-        setActivePath([]);
-      }, 800);
+      animatePath(['ram', 'disk'], () => setFileLocation('disk'));
     }
   };
 
   const handlePowerOff = () => {
     if (status === 'off' || status === 'booting') return;
-
+    clearTimers();
     setStatus('closing');
-    setActivePath(['cpu', 'ram']);
-    setTimeout(() => {
-      setFileLocation('disk');
-      setActivePath(['ram', 'psu']);
-    }, 1000);
-
-    setTimeout(() => {
-      setStatus('off');
-      setActivePath([]);
-      setFileLocation('disk');
-    }, 2000);
+    pushLog('Завершение работы…');
+    animatePath(['cpu', 'ram'], () => {
+      schedule(() => {
+        animatePath(['ram', 'psu'], () => {
+          schedule(() => {
+            setStatus('off');
+            setFileLocation('disk');
+            setLog([]);
+            pushLog('Питание отключено');
+          }, 400);
+        });
+      }, 300);
+    });
   };
 
-  const getComponentStyle = (componentId) => {
-    const baseStyle = {
-      width: '100%',
-      aspectRatio: '1 / 1',
-      borderRadius: '8px',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      flexDirection: 'column',
-      fontSize: 'clamp(10px, 3vw, 11px)',
-      fontWeight: 'bold',
-      color: '#fff',
-      border: '2px solid #ccc',
-      transition: 'all 0.3s ease',
-      position: 'relative',
-      zIndex: 2,
-      backgroundColor: '#333',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
-      cursor: 'default',
-      padding: '4px',
-    };
+  const isEdgeActive = (a, b) => activePath[0] === a && activePath[1] === b;
 
-    const activeStyle = {
-      borderColor: '#4caf50',
-      boxShadow: '0 0 15px #4caf50',
-      transform: 'scale(1.05)',
-      backgroundColor: '#2e7d32',
-    };
-
-    const processingStyle = {
-      borderColor: '#ff9800',
-      boxShadow: '0 0 15px #ff9800',
-      transform: 'scale(1.05)',
-      backgroundColor: '#ef6c00',
-    };
-
-    const poweredOffStyle = {
-      borderColor: '#555',
-      backgroundColor: '#222',
-      opacity: 0.4,
-      transform: 'scale(0.95)',
-    };
-
-    let currentStyle = { ...baseStyle };
-
-    if (status === 'off') {
-      currentStyle = { ...currentStyle, ...poweredOffStyle };
-    } else if (activePath.includes(componentId)) {
-      if (componentId === 'cpu' && fileLocation === 'cpu') {
-         currentStyle = { ...currentStyle, ...processingStyle };
-      } else {
-         currentStyle = { ...currentStyle, ...activeStyle };
-      }
-    } else if (status === 'running') {
-       currentStyle = { ...currentStyle, borderColor: '#4caf50', backgroundColor: '#1b5e20' };
+  const getNodeClass = (id) => {
+    if (status === 'off') return styles.nodeOff;
+    if (activePath.includes(id)) {
+      if (id === 'cpu' && fileLocation === 'cpu') return styles.nodeProcessing;
+      return styles.nodeActive;
     }
-
-    return currentStyle;
+    if (status === 'running') return styles.nodeRunning;
+    return undefined;
   };
 
-  const getResponsiveStyles = () => ({
-    container: {
-      fontFamily: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif',
-      padding: 'clamp(8px, 4vw, 20px)',
-      backgroundColor: '#f9f9f9',
-      borderRadius: 'clamp(8px, 3vw, 16px)',
-      border: '1px solid #e0e0e0',
-      textAlign: 'center',
-      maxWidth: 'min(95%, 500px)',
-      margin: '0 auto',
-      width: '100%',
-      boxSizing: 'border-box',
-    },
-    title: {
-      marginBottom: 'clamp(8px, 3vw, 16px)',
-      color: '#333',
-      fontSize: 'clamp(16px, 5vw, 20px)',
-      fontWeight: '600',
-    },
-    buttonContainer: {
-      marginBottom: 'clamp(12px, 4vw, 20px)',
-      display: 'flex',
-      gap: 'clamp(4px, 2vw, 8px)',
-      justifyContent: 'center',
-      flexWrap: 'wrap',
-    },
-    button: {
-      padding: 'clamp(5px, 2vw, 8px) clamp(12px, 3vw, 18px)',
-      fontSize: 'clamp(12px, 3.5vw, 14px)',
-      fontWeight: 'bold',
-      borderRadius: '6px',
-      border: 'none',
-      cursor: 'pointer',
-      transition: 'all 0.2s ease',
-      whiteSpace: 'nowrap',
-    },
-    statusText: {
-      marginBottom: 'clamp(12px, 4vw, 20px)',
-      minHeight: 'clamp(36px, 6vw, 44px)',
-      color: '#666',
-      fontStyle: 'italic',
-      fontSize: 'clamp(11px, 3vw, 13px)',
-      textAlign: 'center',
-      padding: '0 8px',
-      wordBreak: 'break-word',
-    },
-    gridContainer: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, 1fr)',
-      gap: 'clamp(10px, 3vw, 20px)',
-      maxWidth: 'min(100%, 400px)',
-      margin: '0 auto',
-      position: 'relative',
-    },
-    footer: {
-      marginTop: 'clamp(12px, 4vw, 20px)',
-      fontSize: 'clamp(10px, 2.5vw, 11px)',
-      color: '#888',
-      padding: '0 8px',
-    },
-  });
+  const fileLabel =
+    fileLocation === 'cpu'
+      ? {text: 'Обработка в ЦП', color: '#e65100'}
+      : fileLocation === 'ram'
+        ? {text: 'Файл в ОЗУ', color: '#2e7d32'}
+        : {text: 'Файл на диске', color: '#757575'};
 
-  const styles = getResponsiveStyles();
+  let packetCircle = null;
+  if (packet) {
+    const x = packet.from.x + (packet.to.x - packet.from.x) * packet.t;
+    const y = packet.from.y + (packet.to.y - packet.from.y) * packet.t;
+    packetCircle = <circle className={styles.packet} cx={x} cy={y} r={6} />;
+  }
 
   return (
-    <div style={styles.container}>
-      <h3 style={styles.title}>Жизненный цикл данных</h3>
-      
-      <div style={styles.buttonContainer}>
+    <DemoShell className={styles.root}>
+      <div className={styles.header}>
+        <h4 className={styles.title}>Жизненный цикл данных</h4>
+        <p className={styles.subtitle}>Питание, загрузка и путь файла: диск → ОЗУ → ЦП</p>
+      </div>
+
+      <div className={styles.toolbar}>
         {status === 'off' && (
-          <button 
-            onClick={handlePowerOn} 
-            style={{
-              ...styles.button,
-              backgroundColor: '#4caf50',
-              color: 'white',
-              cursor: 'pointer',
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#45a049'}
-            onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#4caf50'}
-          >
-            🔌 Включить компьютер
+          <button type="button" className="it-demo__btn it-demo__btn--primary" onClick={handlePowerOn}>
+            Включить
           </button>
         )}
-        
         {status === 'running' && (
           <>
-            <button 
-              onClick={handleOpenFile} 
-              disabled={fileLocation === 'cpu'} 
-              style={{
-                ...styles.button,
-                backgroundColor: '#2196f3',
-                color: 'white',
-                cursor: fileLocation === 'cpu' ? 'not-allowed' : 'pointer',
-                opacity: fileLocation === 'cpu' ? 0.6 : 1,
-              }}
-              onMouseEnter={(e) => {
-                if (fileLocation !== 'cpu')
-                  e.currentTarget.style.backgroundColor = '#0b7dda';
-              }}
-              onMouseLeave={(e) => {
-                if (fileLocation !== 'cpu')
-                  e.currentTarget.style.backgroundColor = '#2196f3';
-              }}
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--primary"
+              onClick={handleOpenFile}
+              disabled={fileLocation === 'cpu'}
             >
-              📂 Открыть файл
+              Открыть файл
             </button>
-            <button 
-              onClick={handleCloseFile} 
-              disabled={fileLocation === 'disk'} 
-              style={{
-                ...styles.button,
-                backgroundColor: '#ff9800',
-                color: 'white',
-                cursor: fileLocation === 'disk' ? 'not-allowed' : 'pointer',
-                opacity: fileLocation === 'disk' ? 0.6 : 1,
-              }}
-              onMouseEnter={(e) => {
-                if (fileLocation !== 'disk')
-                  e.currentTarget.style.backgroundColor = '#e68900';
-              }}
-              onMouseLeave={(e) => {
-                if (fileLocation !== 'disk')
-                  e.currentTarget.style.backgroundColor = '#ff9800';
-              }}
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--secondary"
+              onClick={handleCloseFile}
+              disabled={fileLocation === 'disk'}
             >
-              ❌ Закрыть файл
+              Закрыть файл
             </button>
-            <button 
-              onClick={handlePowerOff} 
-              style={{
-                ...styles.button,
-                backgroundColor: '#f44336',
-                color: 'white',
-                cursor: 'pointer',
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.backgroundColor = '#da190b'}
-              onMouseLeave={(e) => e.currentTarget.style.backgroundColor = '#f44336'}
-            >
-              🔴 Выключить компьютер
+            <button type="button" className="it-demo__btn it-demo__btn--danger" onClick={handlePowerOff}>
+              Выключить
             </button>
           </>
         )}
-        
         {(status === 'booting' || status === 'closing') && (
-          <button disabled style={{
-            ...styles.button,
-            cursor: 'not-allowed',
-            opacity: 0.6,
-            backgroundColor: '#ddd',
-            color: '#666',
-          }}>
-            ⏳ Работа...
+          <button type="button" className="it-demo__btn" disabled>
+            …
           </button>
         )}
       </div>
 
-      <div style={styles.statusText}>
-        {status === 'off' && "💤 Компьютер выключен"}
-        {status === 'booting' && "⚙️ Загрузка системы..."}
+      {status === 'booting' && (
+        <div className={styles.bootSteps}>
+          {BOOT_STEPS.map((s, i) => (
+            <span
+              key={s.id}
+              className={clsx(
+                styles.step,
+                i < bootPhase && styles.stepDone,
+                i === bootPhase && styles.stepActive,
+              )}
+            >
+              {s.label}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <div className={styles.statusPanel}>
+        {STATUS_TEXT[status]}
         {status === 'running' && (
           <>
-            📄 Статус файла:&nbsp;
-            <span style={{ 
-              color: fileLocation === 'cpu' ? '#ff9800' : (fileLocation === 'ram' ? '#4caf50' : '#9e9e9e'), 
-              fontWeight: 'bold',
-              display: 'inline-block',
-            }}>
-              {fileLocation === 'cpu' ? '🔄 Обработка в ЦП' : (fileLocation === 'ram' ? '💾 В ОЗУ' : '💿 На диске')}
+            <br />
+            <span className={styles.statusHighlight} style={{color: fileLabel.color}}>
+              {fileLabel.text}
             </span>
           </>
         )}
-        {status === 'closing' && "🧹 Очистка памяти..."}
       </div>
 
-      <div style={styles.gridContainer}>
-        <div id="psu" style={getComponentStyle('psu')}>
-          <span style={{ fontSize: 'clamp(18px, 5vw, 24px)' }}>⚡</span>
-          <span>БП</span>
-        </div>
-        
-        <div id="bios" style={getComponentStyle('bios')}>
-          <span style={{ fontSize: 'clamp(18px, 5vw, 24px)' }}>💾</span>
-          <span>BIOS</span>
-        </div>
-        
-        <div id="disk" style={getComponentStyle('disk')}>
-          <span style={{ fontSize: 'clamp(18px, 5vw, 24px)' }}>💿</span>
-          <span>Диск</span>
-          {fileLocation === 'disk' && (
-            <div style={{
-              position: 'absolute',
-              top: '-6px',
-              right: '-6px',
-              fontSize: 'clamp(12px, 3.5vw, 14px)',
-              backgroundColor: '#ff9800',
-              borderRadius: '50%',
-              padding: '2px',
-              width: 'clamp(16px, 4vw, 20px)',
-              height: 'clamp(16px, 4vw, 20px)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-              📄
+      <div className={styles.diagram}>
+        <svg className={styles.svgLayer} viewBox="0 0 300 200" aria-hidden>
+          {EDGES.map(([a, b]) => (
+            <line
+              key={edgeKey(a, b)}
+              x1={NODE_POS[a].x}
+              y1={NODE_POS[a].y}
+              x2={NODE_POS[b].x}
+              y2={NODE_POS[b].y}
+              className={clsx(styles.flowPath, isEdgeActive(a, b) && styles.flowActive)}
+            />
+          ))}
+          {packetCircle}
+        </svg>
+        <div className={styles.grid}>
+          {NODES.map((n) => (
+            <div
+              key={n.id}
+              id={n.id}
+              className={clsx(styles.node, getNodeClass(n.id))}
+            >
+              <span className={styles.nodeIcon}>{n.icon}</span>
+              <span>{n.label}</span>
+              {status === 'running' && fileLocation === n.id && (
+                <span
+                  className={clsx(
+                    styles.fileBadge,
+                    n.id === 'disk' && styles.fileDisk,
+                    n.id === 'ram' && styles.fileRam,
+                    n.id === 'cpu' && styles.fileCpu,
+                  )}
+                >
+                  📄
+                </span>
+              )}
             </div>
-          )}
+          ))}
+          <div className={clsx(styles.node, styles.nodeHidden)} aria-hidden />
         </div>
-
-        <div id="ram" style={getComponentStyle('ram')}>
-          <span style={{ fontSize: 'clamp(18px, 5vw, 24px)' }}>🔋</span>
-          <span>ОЗУ</span>
-          {fileLocation === 'ram' && (
-            <div style={{
-              position: 'absolute',
-              top: '-6px',
-              right: '-6px',
-              fontSize: 'clamp(12px, 3.5vw, 14px)',
-              backgroundColor: '#4caf50',
-              borderRadius: '50%',
-              padding: '2px',
-              width: 'clamp(16px, 4vw, 20px)',
-              height: 'clamp(16px, 4vw, 20px)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}>
-              📄
-            </div>
-          )}
-        </div>
-
-        <div id="cpu" style={getComponentStyle('cpu')}>
-          <span style={{ fontSize: 'clamp(18px, 5vw, 24px)' }}>🧠</span>
-          <span>ЦП</span>
-          {fileLocation === 'cpu' && (
-            <div style={{
-              position: 'absolute',
-              top: '-6px',
-              right: '-6px',
-              fontSize: 'clamp(12px, 3.5vw, 14px)',
-              backgroundColor: '#ff9800',
-              borderRadius: '50%',
-              padding: '2px',
-              width: 'clamp(16px, 4vw, 20px)',
-              height: 'clamp(16px, 4vw, 20px)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              animation: 'pulse 1s infinite',
-            }}>
-              📄
-            </div>
-          )}
-        </div>
-        
-        <div style={{ visibility: 'hidden' }}></div>
       </div>
 
-      <div style={styles.footer}>
-        Анимация показывает путь прохождения сигнала и перемещения данных
-      </div>
+      {log.length > 0 && (
+        <div className={styles.log} role="log" aria-live="polite">
+          {log.map((line, i) => (
+            <div key={`${i}-${line}`} className={styles.logLine}>
+              › {line}
+            </div>
+          ))}
+        </div>
+      )}
 
-      <style>
-        {`
-          @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.1); opacity: 0.8; }
-          }
-          
-          @media (max-width: 480px) {
-            button {
-              white-space: normal !important;
-              word-break: keep-all;
-            }
-          }
-          
-          @media (hover: hover) {
-            button:hover {
-              transform: translateY(-1px);
-              filter: brightness(1.05);
-            }
-          }
-        `}
-      </style>
-    </div>
+      <p className={styles.footer}>Анимированные связи показывают направление сигнала и перемещение данных</p>
+    </DemoShell>
   );
-};
+}
 
-const ComputerBootSequence = () => (
-  <BrowserOnly fallback={<div>Загрузка...</div>}>
-    {() => <ComputerBootSequenceCore />}
-  </BrowserOnly>
-);
-
-export default ComputerBootSequence;
+export default function ComputerBootSequence() {
+  return (
+    <BrowserOnly fallback={demoLoadingFallback()}>
+      {() => <ComputerBootSequenceInner />}
+    </BrowserOnly>
+  );
+}

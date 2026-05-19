@@ -12,9 +12,9 @@
 | **AlgoCodeVisualizer** | `src/components/AlgoCodeVisualizer.jsx` | 1 | [1](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) |
 | **articleSeeAlsoUtils** | `src/components/articleSeeAlsoUtils.js` | 0 | — |
 | **AsynchronousInteraction** | `src/components/AsynchronousInteraction.jsx` | 2 | [111](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [114](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114) |
-| **AuthenticationFlow** | `src/components/AuthenticationFlow.js` | 2 | [111](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [116](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/116) |
+| **AuthenticationFlow** | `src/components/AuthenticationFlow.jsx` | 2 | [111](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [116](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/116) |
 | **BackupDemo** | `src/components/BackupDemo.jsx` | 2 | [91](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91), [117](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117) |
-| **BIOSemulator** | `src/components/BIOSemulator.js` | 3 | [6](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/6), [1](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1), [2](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2) |
+| **BIOSemulator** | `src/components/BIOSemulator.jsx` | 3 | [6](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/6), [1](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1), [2](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2) |
 | **BlockBuilder** | `src/components/BlockBuilder.jsx` | 1 | [1](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) |
 | **BuildProcessFlow** | `src/components/BuildProcessFlow.jsx` | 1 | [102](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/102) |
 | **CicdDemo** | `src/components/CicdDemo.jsx` | 2 | [1](/encyclopedia/8-infra-security/8.04. DevOps, CI-CD/1), [11](/encyclopedia/8-infra-security/8.04. DevOps, CI-CD/11) |
@@ -44,7 +44,7 @@
 | **InteractiveRoadmap** | `src/components/InteractiveRoadmap.js` | 2 | [1](/encyclopedia/1-basics/1-02-vvedenie/1), [1](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) |
 | **IpAddressAnalyzer** | `src/components/IpAddressAnalyzer.js` | 1 | [41](/encyclopedia/2-system-network/2-03-set-i-internet/41) |
 | **KafkaSimulation** | `src/components/KafkaSimulation.js` | 2 | [123](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123), [119](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119) |
-| **LexicalScopeVisualizer** | `src/components/LexicalScopeVisualizer.js` | 1 | [16](/encyclopedia/5-languages/5.01. JavaScript/16) |
+| **LexicalScopeVisualizer** | `src/components/LexicalScopeVisualizer.jsx` | 1 | [16](/encyclopedia/5-languages/5.01. JavaScript/16) |
 | **LoopsSimulator** | `src/components/LoopsSimulator.jsx` | 2 | [5](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/5), [20](/encyclopedia/5-languages/5.01. JavaScript/20) |
 | **LowNoCodeDemo** | `src/components/LowNoCodeDemo.jsx` | 1 | [1](/encyclopedia/8-infra-security/8.02. Low-code, No-code/1) |
 | **MethodCallSimulator** | `src/components/MethodCallSimulator.jsx` | 1 | [2](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2) |
@@ -60,7 +60,7 @@
 | **RandomGameGenerator** | `src/components/RandomGameGenerator.js` | 1 | [4](/tools/games/4) |
 | **RandomQuestionFromArticle** | `src/components/RandomQuestionFromArticle.js` | 51 | [1](/lab/questions/1), [11](/lab/questions/11), [111](/lab/questions/111), [112](/lab/questions/112), [113](/lab/questions/113), …ещё 46 |
 | **ReactiveInteraction** | `src/components/ReactiveInteraction.jsx` | 2 | [111](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [116](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) |
-| **RequestResponseModel** | `src/components/RequestResponseModel.js` | 1 | [116](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/116) |
+| **RequestResponseModel** | `src/components/RequestResponseModel.jsx` | 1 | [116](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/116) |
 | **RequirementsAnalysisDemo** | `src/components/RequirementsAnalysisDemo.jsx` | 1 | [111](/encyclopedia/7-project/7-04-analitika/111) |
 | **ScalingDemo** | `src/components/ScalingDemo.jsx` | 1 | [1](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1) |
 | **SessionInteraction** | `src/components/SessionInteraction.jsx` | 1 | [113](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/113) |

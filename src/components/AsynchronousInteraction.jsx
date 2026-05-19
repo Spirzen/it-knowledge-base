@@ -1,378 +1,375 @@
-import React, { useState, useRef } from 'react';
+import React, {useState, useRef, useEffect, useCallback, useMemo} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-
-const COLORS = {
-  primary: '#007bff',
-  secondary: '#6f42c1',
-  success: '#28a745',
-  neutral: '#6c757d',
-  bg: '#f8f9fa',
-  text: '#343a40',
-  border: '#dee2e6',
-  buttonBg: '#007bff',
-  buttonHover: '#0056b3',
-};
+import clsx from 'clsx';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import styles from './AsynchronousInteraction.module.css';
 
 const STAGES = [
-  { id: 'initiate', label: 'ОТПРАВКА ЗАПРОСА', color: COLORS.primary, duration: 1000 },
-  { 
-    id: 'async_wait', 
-    label: 'ОБРАБОТКА НА СЕРВЕРЕ (НЕ БЛОКИРУЕТ РАБОТУ)', 
-    color: COLORS.secondary, 
-    duration: 3500 
+  {
+    id: 'initiate',
+    label: 'Отправка запроса',
+    duration: 1200,
+    desc: 'Клиент помещает сообщение в очередь и сразу освобождает поток — не ждёт ответа.',
+    packetTrack: 0,
+    log: '→ Очередь: POST /orders (correlation-id: a7f2)',
+    activeNodes: ['client', 'queue'],
   },
-  { id: 'notify', label: 'ПОЛУЧЕНИЕ ОТВЕТА', color: COLORS.success, duration: 1000 },
+  {
+    id: 'async_wait',
+    label: 'Обработка на сервере',
+    duration: 3800,
+    desc: 'Сервер забирает задачу из очереди. Клиент в это время продолжает свою работу.',
+    packetTrack: 1,
+    log: '⚙ Worker-3: обработка заказа #1042…',
+    activeNodes: ['queue', 'server'],
+    clientFree: true,
+  },
+  {
+    id: 'notify',
+    label: 'Получение ответа',
+    duration: 1200,
+    desc: 'Результат доставляется клиенту через callback, webhook или polling.',
+    packetTrack: 1,
+    packetReverse: true,
+    log: '← Callback: заказ #1042 — статус «выполнен»',
+    activeNodes: ['server', 'client'],
+  },
 ];
 
-const AsynchronousInteraction = () => {
-  const [currentStageIndex, setCurrentStageIndex] = useState(0);
-  const [isCompleted, setIsCompleted] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-  
-  const timerRef = useRef(null);
+const CLIENT_TASKS = [
+  'Рендер списка заказов',
+  'Валидация полей формы',
+  'Подгрузка превью изображений',
+  'Автосохранение черновика',
+  'Обновление счётчика уведомлений',
+];
 
-  const clearTimer = () => {
+const TOTAL_DURATION = STAGES.reduce((sum, s) => sum + s.duration, 0);
+
+function formatTime(date) {
+  return date.toLocaleTimeString('ru-RU', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    fractionalSecondDigits: 3,
+  });
+}
+
+function Track({active, reverse, packetTick, durationMs, color}) {
+  return (
+    <div className={styles.track}>
+      <div className={styles.trackInner}>
+        <div className={clsx(styles.trackLine, {[styles.trackLineActive]: active})}>
+          {active && (
+            <span
+              key={packetTick}
+              className={clsx(
+                styles.packet,
+                styles.packetVisible,
+                reverse && styles.packetReverse,
+              )}
+              style={{
+                background: color,
+                '--packet-duration': `${durationMs}ms`,
+              }}
+              aria-hidden
+            />
+          )}
+        </div>
+        <span className={styles.trackArrow} aria-hidden>
+          {reverse ? '←' : '→'}
+        </span>
+      </div>
+    </div>
+  );
+}
+
+function Diagram({nodeClass, currentStage, packetTick, isRunning}) {
+  const stage = currentStage;
+  const track0Active = isRunning && stage?.packetTrack === 0 && !stage?.packetReverse;
+  const track1Active = isRunning && stage?.packetTrack === 1 && !stage?.packetReverse;
+  const track1Reverse = isRunning && stage?.packetTrack === 1 && stage?.packetReverse;
+
+  return (
+    <div className={styles.diagram}>
+      <div className={nodeClass('client')}>
+        <div className={styles.nodeIcon} aria-hidden>
+          💻
+        </div>
+        <p className={styles.nodeTitle}>Клиент</p>
+        <p className={styles.nodeHint}>Инициатор запроса</p>
+      </div>
+
+      <Track
+        active={track0Active}
+        packetTick={packetTick}
+        durationMs={STAGES[0].duration}
+        color="var(--ifm-color-primary)"
+      />
+
+      <div className={nodeClass('queue')}>
+        <div className={styles.nodeIcon} aria-hidden>
+          📬
+        </div>
+        <p className={styles.nodeTitle}>Очередь</p>
+        <p className={styles.nodeHint}>RabbitMQ, Kafka, SQS…</p>
+      </div>
+
+      <Track
+        active={track1Active || track1Reverse}
+        reverse={track1Reverse}
+        packetTick={packetTick}
+        durationMs={STAGES[2].duration}
+        color="#00897b"
+      />
+
+      <div className={nodeClass('server')}>
+        <div className={styles.nodeIcon} aria-hidden>
+          ☁️
+        </div>
+        <p className={styles.nodeTitle}>Сервер</p>
+        <p className={styles.nodeHint}>Обработчик сообщений</p>
+      </div>
+
+      {stage?.id === 'notify' && (
+        <p className={styles.returnHint}>
+          ↩ ответ возвращается по обратному пути (callback / webhook)
+        </p>
+      )}
+    </div>
+  );
+}
+
+function AsynchronousInteractionInner() {
+  const [phase, setPhase] = useState('idle');
+  const [stageIndex, setStageIndex] = useState(-1);
+  const [progress, setProgress] = useState(0);
+  const [logEntries, setLogEntries] = useState([]);
+  const [clientTaskIndex, setClientTaskIndex] = useState(0);
+  const [clientActions, setClientActions] = useState(0);
+  const [packetTick, setPacketTick] = useState(0);
+
+  const timerRef = useRef(null);
+  const progressRef = useRef(null);
+  const startTimeRef = useRef(0);
+
+  const clearTimer = useCallback(() => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
     }
-  };
+    if (progressRef.current) {
+      clearInterval(progressRef.current);
+      progressRef.current = null;
+    }
+  }, []);
 
-  const startAnimation = () => {
-    if (isAnimating || isCompleted) return;
+  const appendLog = useCallback((message) => {
+    setLogEntries((prev) => [
+      {id: `${Date.now()}-${prev.length}`, time: formatTime(new Date()), message},
+      ...prev,
+    ].slice(0, 8));
+  }, []);
 
-    setIsAnimating(true);
-    setIsCompleted(false);
-    setCurrentStageIndex(0);
+  const reset = useCallback(() => {
+    clearTimer();
+    setPhase('idle');
+    setStageIndex(-1);
+    setProgress(0);
+    setLogEntries([]);
+    setClientTaskIndex(0);
+    setClientActions(0);
+    setPacketTick(0);
+  }, [clearTimer]);
+
+  const startAnimation = useCallback(() => {
+    if (phase === 'running') return;
+
+    clearTimer();
+    setPhase('running');
+    setStageIndex(0);
+    setProgress(0);
+    setLogEntries([]);
+    setClientTaskIndex(0);
+    setClientActions(0);
+    setPacketTick((t) => t + 1);
+    startTimeRef.current = Date.now();
+    appendLog('Демо запущено');
 
     let currentIndex = 0;
 
-    const runNextStep = () => {
+    const runStage = () => {
       if (currentIndex >= STAGES.length) {
-        setIsAnimating(false);
-        setIsCompleted(true);
+        clearTimer();
+        setPhase('done');
+        setStageIndex(STAGES.length - 1);
+        setProgress(100);
+        appendLog('✓ Цикл завершён — клиент получил результат');
         return;
       }
 
       const stage = STAGES[currentIndex];
-      
-      setCurrentStageIndex(currentIndex);
+      setStageIndex(currentIndex);
+      setPacketTick((t) => t + 1);
+      appendLog(stage.log);
 
-      const nextTimer = setTimeout(() => {
+      timerRef.current = setTimeout(() => {
         currentIndex += 1;
-        runNextStep();
+        runStage();
       }, stage.duration);
-
-      timerRef.current = nextTimer;
     };
 
-    runNextStep();
-  };
+    progressRef.current = setInterval(() => {
+      const elapsed = Date.now() - startTimeRef.current;
+      setProgress(Math.min(100, Math.round((elapsed / TOTAL_DURATION) * 100)));
+    }, 80);
 
-  const resetAnimation = () => {
-    clearTimer();
-    setIsAnimating(false);
-    setIsCompleted(false);
-    setCurrentStageIndex(0);
-  };
+    runStage();
+  }, [phase, clearTimer, appendLog]);
 
-  React.useEffect(() => {
-    return () => {
-      clearTimer();
-    };
-  }, []);
+  useEffect(() => () => clearTimer(), [clearTimer]);
 
-  const getContainerStyle = () => ({
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 'clamp(20px, 5vw, 40px)',
-    backgroundColor: COLORS.bg,
-    borderRadius: '12px',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-    maxWidth: 'min(90%, 800px)',
-    margin: 'clamp(10px, 3vw, 20px) auto',
-    border: `1px solid ${COLORS.border}`,
-    width: '100%',
-    boxSizing: 'border-box',
-  });
+  const currentStage = stageIndex >= 0 ? STAGES[stageIndex] : null;
+  const isRunning = phase === 'running';
+  const showClientPanel = isRunning && currentStage?.clientFree;
 
-  const getStatusRowStyle = (isActive, type) => ({
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    width: '100%',
-    marginBottom: 'clamp(15px, 4vw, 20px)',
-    padding: 'clamp(10px, 3vw, 15px)',
-    borderRadius: '8px',
-    backgroundColor: isActive ? (type === 'client' ? '#e7f1ff' : '#e8f5e9') : '#ffffff',
-    border: `1px solid ${isActive ? (type === 'client' ? COLORS.primary : COLORS.secondary) : COLORS.border}`,
-    transition: 'all 0.3s ease',
-    opacity: isActive ? 1 : 0.7,
-    transform: isActive ? 'scale(1.02)' : 'scale(1)',
-    boxSizing: 'border-box',
-    flexWrap: 'wrap',
-    gap: '10px',
-  });
+  useEffect(() => {
+    if (!showClientPanel) return undefined;
 
-  const getIconStyle = (color, isActive) => ({
-    width: 'clamp(20px, 6vw, 24px)',
-    height: 'clamp(20px, 6vw, 24px)',
-    marginRight: 'clamp(8px, 2vw, 12px)',
-    fontWeight: 'bold',
-    color: isActive ? color : COLORS.neutral,
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: '50%',
-    backgroundColor: isActive ? `${color}20` : '#e9ecef',
-    fontSize: 'clamp(12px, 3.5vw, 14px)',
-    transition: 'all 0.3s ease',
-    flexShrink: 0,
-  });
+    const taskInterval = setInterval(() => {
+      setClientTaskIndex((i) => (i + 1) % CLIENT_TASKS.length);
+      setClientActions((n) => n + 1);
+    }, 700);
 
-  const getTextStyle = (isActive, color) => ({
-    flex: 1,
-    textAlign: 'left',
-    fontWeight: isActive ? 'bold' : 'normal',
-    color: isActive ? color : COLORS.text,
-    fontSize: 'clamp(14px, 4vw, 16px)',
-    letterSpacing: '0.5px',
-    transition: 'color 0.3s ease',
-    wordBreak: 'break-word',
-  });
+    return () => clearInterval(taskInterval);
+  }, [showClientPanel]);
 
-  const getArrowStyle = (isActive, direction) => ({
-    marginLeft: 'clamp(10px, 3vw, 20px)',
-    marginRight: 'clamp(10px, 3vw, 20px)',
-    color: isActive ? COLORS.primary : COLORS.neutral,
-    fontSize: 'clamp(16px, 5vw, 20px)',
-    transition: 'all 0.3s ease',
-    transform: direction === 'right' && isActive ? 'translateX(5px)' : 'none',
-    flexShrink: 0,
-  });
+  const activeNodes = useMemo(() => {
+    if (!currentStage) return new Set();
+    return new Set(currentStage.activeNodes);
+  }, [currentStage]);
 
-  const getStatusBadgeStyle = (stageData) => {
-    if (!stageData) return {};
-    
-    return {
-      marginTop: 'clamp(20px, 5vw, 30px)',
-      padding: 'clamp(10px, 3vw, 12px) clamp(16px, 5vw, 24px)',
-      borderRadius: '20px',
-      backgroundColor: `${stageData.color}20`,
-      color: stageData.color,
-      fontWeight: 'bold',
-      fontSize: 'clamp(14px, 4vw, 16px)',
-      border: `1px solid ${stageData.color}`,
-      animation: 'pulse 1.5s infinite',
-      textAlign: 'center',
-      wordBreak: 'break-word',
-      maxWidth: '100%',
-    };
-  };
+  const stepClass = (index) =>
+    clsx('it-demo__step', {
+      'it-demo__step--active': isRunning && stageIndex === index,
+      'it-demo__step--done':
+        (isRunning && stageIndex > index) || (phase === 'done' && index < STAGES.length),
+    });
 
-  const getButtonStyle = () => ({
-    marginTop: 'clamp(20px, 5vw, 30px)',
-    padding: 'clamp(10px, 3vw, 12px) clamp(20px, 6vw, 24px)',
-    backgroundColor: isAnimating ? COLORS.neutral : COLORS.buttonBg,
-    color: 'white',
-    border: 'none',
-    borderRadius: '6px',
-    cursor: isAnimating ? 'not-allowed' : 'pointer',
-    fontSize: 'clamp(14px, 4vw, 16px)',
-    fontWeight: 'bold',
-    transition: 'all 0.2s ease',
-    outline: 'none',
-    opacity: isAnimating ? 0.7 : 1,
-    pointerEvents: isAnimating ? 'none' : 'auto',
-    width: 'auto',
-    minWidth: 'clamp(160px, 40vw, 200px)',
-    '@media (max-width: 480px)': {
-      width: '100%',
-    },
-  });
-
-  const getTitleStyle = () => ({
-    marginBottom: 'clamp(20px, 5vw, 30px)',
-    color: COLORS.text,
-    textAlign: 'center',
-    fontSize: 'clamp(18px, 5vw, 24px)',
-    wordBreak: 'break-word',
-    padding: '0 10px',
-  });
-
-  const getLineStyle = () => ({
-    width: 'min(80%, 300px)',
-    height: '2px',
-    backgroundColor: currentStageIndex === 0 ? COLORS.primary : (currentStageIndex === 1 ? COLORS.secondary : (currentStageIndex === 2 ? COLORS.success : COLORS.border)),
-    margin: '0 auto clamp(15px, 4vw, 20px) auto',
-    transition: 'background-color 0.5s ease',
-    position: 'relative',
-    animation: currentStageIndex === 1 ? 'linePulse 1s infinite alternate' : 'none',
-  });
-
-  const getLoadingTextStyle = () => ({
-    marginTop: 'clamp(20px, 5vw, 30px)',
-    color: COLORS.neutral,
-    fontSize: 'clamp(12px, 3.5vw, 14px)',
-    textAlign: 'center',
-  });
-
-  const getStageLabelStyle = () => ({
-    marginBottom: 'clamp(8px, 2vw, 10px)',
-    color: COLORS.neutral,
-    fontSize: 'clamp(12px, 3.5vw, 14px)',
-    textAlign: 'center',
-  });
-
-  const mediaStyles = `
-    @media (max-width: 768px) {
-      .status-row {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .status-row {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .status-row span:first-child {
-        margin-bottom: 8px;
-      }
-      
-      .arrow {
-        display: none;
-      }
-      
-      .status-row {
-        opacity: 1 !important;
-      }
-    }
-    
-    @keyframes pulse {
-      0% { 
-        box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.primary}40; 
-      }
-      70% { 
-        box-shadow: 0 0 0 10px ${STAGES[currentStageIndex]?.color || COLORS.primary}00; 
-      }
-      100% { 
-        box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.primary}00; 
-      }
-    }
-    
-    @keyframes linePulse {
-      0% { opacity: 0.3; }
-      100% { opacity: 1; }
-    }
-    
-    @media (prefers-reduced-motion: reduce) {
-      * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-      }
-    }
-  `;
+  const nodeClass = (type) =>
+    clsx(styles.node, {
+      [styles.nodeIdle]: phase === 'idle',
+      [styles.nodeActiveClient]: activeNodes.has('client') && type === 'client',
+      [styles.nodeActiveQueue]: activeNodes.has('queue') && type === 'queue',
+      [styles.nodeActiveServer]: activeNodes.has('server') && type === 'server',
+    });
 
   return (
-    <BrowserOnly>
-      {() => (
-        <div style={getContainerStyle()}>
-          <style>{mediaStyles}</style>
-          
-          <h2 style={getTitleStyle()}>
-            Асинхронное взаимодействие системы
-          </h2>
+    <DemoShell className={styles.root}>
+      <DemoCard
+        title="Асинхронное взаимодействие"
+        subtitle="Инициатор не блокируется: сообщение уходит в очередь, обработка и ответ происходят независимо по времени."
+      >
+        <Diagram
+          nodeClass={nodeClass}
+          currentStage={currentStage}
+          packetTick={packetTick}
+          isRunning={isRunning}
+        />
 
-          {/* Блок Клиента (Инициатор) */}
-          <div 
-            className="status-row"
-            style={getStatusRowStyle(currentStageIndex >= 0 && currentStageIndex < STAGES.length, 'client')}
-          >
-            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
-              <span style={getIconStyle(COLORS.primary, currentStageIndex === 0)}>▶</span>
-              <span style={getTextStyle(currentStageIndex === 0, COLORS.primary)}>Клиент (Инициатор)</span>
+        {showClientPanel && (
+          <div className={styles.clientPanel} role="status" aria-live="polite">
+            <p className={styles.clientPanelTitle}>Клиент не заблокирован</p>
+            <p className={styles.clientTask}>▸ {CLIENT_TASKS[clientTaskIndex]}</p>
+            <p className={styles.clientStats}>
+              Параллельных действий за время ожидания: <strong>{clientActions}</strong>
+            </p>
+          </div>
+        )}
+
+        {currentStage && <p className={styles.stageDesc}>{currentStage.desc}</p>}
+
+        <div className="it-demo__steps" style={{marginTop: '1rem'}} aria-label="Этапы взаимодействия">
+          {STAGES.map((stage, index) => (
+            <div key={stage.id} className={stepClass(index)}>
+              <div style={{fontWeight: 700, marginBottom: '0.2rem'}}>{index + 1}</div>
+              {stage.label}
             </div>
-            <span className="arrow" style={getArrowStyle(currentStageIndex === 0, 'right')}>➜</span>
-          </div>
+          ))}
+        </div>
 
-          {/* Линия соединения (визуальная) */}
-          <div style={getLineStyle()} />
-
-          {/* Блок Удаленной Системы */}
-          <div 
-            className="status-row"
-            style={getStatusRowStyle(currentStageIndex >= 1 && currentStageIndex < STAGES.length, 'server')}
+        <div style={{marginTop: '1rem'}}>
+          <div
+            className="it-demo__row"
+            style={{justifyContent: 'space-between', marginBottom: '0.35rem'}}
           >
-            <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
-              <span style={getIconStyle(currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral, currentStageIndex >= 1)}>☁</span>
-              <span style={getTextStyle(currentStageIndex >= 1, currentStageIndex >= 1 ? COLORS.secondary : COLORS.neutral)}>Удаленная Система</span>
-            </div>
-            <span className="arrow" style={getArrowStyle(currentStageIndex === 2, 'left')}>➤</span>
+            <span style={{fontSize: '0.8rem', color: 'var(--demo-muted)'}}>Прогресс цикла</span>
+            <span style={{fontSize: '0.8rem', fontWeight: 600}}>{progress}%</span>
           </div>
-
-          {/* Индикатор текущего этапа */}
-          <div style={{ width: '100%', textAlign: 'center' }}>
-            <p style={getStageLabelStyle()}>Текущее состояние:</p>
-            {STAGES[currentStageIndex] ? (
-              <div style={getStatusBadgeStyle(STAGES[currentStageIndex])}>
-                {STAGES[currentStageIndex].label}
-              </div>
-            ) : (
-              <div style={{ ...getStatusBadgeStyle({color: COLORS.text}), animation: 'none' }}>
-                Готов к запуску
-              </div>
-            )}
+          <div className="it-demo__progress">
+            <div className="it-demo__progress-bar" style={{width: `${progress}%`}} />
           </div>
+        </div>
 
-          {/* Кнопка управления */}
-          {!isAnimating && !isCompleted ? (
-            <button 
-              onClick={startAnimation}
-              style={getButtonStyle()}
-              onMouseEnter={(e) => {
-                if (!isAnimating) {
-                  e.target.style.backgroundColor = COLORS.buttonHover;
-                  e.target.style.transform = 'scale(1.05)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = COLORS.buttonBg;
-                e.target.style.transform = 'scale(1)';
+        {logEntries.length > 0 && (
+          <div style={{marginTop: '1rem'}}>
+            <p
+              style={{
+                margin: '0 0 0.35rem',
+                fontSize: '0.8rem',
+                fontWeight: 600,
+                color: 'var(--demo-muted)',
               }}
             >
-              Отправить запрос
-            </button>
-          ) : isCompleted ? (
-            <button 
-              onClick={resetAnimation}
-              style={getButtonStyle()}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = COLORS.buttonHover;
-                e.target.style.transform = 'scale(1.05)';
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = COLORS.buttonBg;
-                e.target.style.transform = 'scale(1)';
-              }}
-            >
-              Повторить эксперимент
-            </button>
-          ) : (
-            <div style={getLoadingTextStyle()}>
-              Обработка...
+              Журнал событий
+            </p>
+            <div className="it-demo__log" role="log" aria-live="polite">
+              {logEntries.map((entry) => (
+                <div key={entry.id} className="it-demo__log-entry">
+                  <span style={{color: 'var(--demo-muted)', marginRight: '0.5rem'}}>
+                    [{entry.time}]
+                  </span>
+                  {entry.message}
+                </div>
+              ))}
             </div>
+          </div>
+        )}
+
+        <div className={clsx('it-demo__row', styles.controls)}>
+          {phase !== 'running' && (
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--primary"
+              onClick={phase === 'done' ? reset : startAnimation}
+            >
+              {phase === 'done' ? 'Повторить эксперимент' : 'Отправить запрос'}
+            </button>
+          )}
+          {phase === 'running' && (
+            <span className="it-demo__badge it-demo__badge--active">Выполняется…</span>
+          )}
+          {phase === 'done' && (
+            <span className="it-demo__badge it-demo__badge--active">Завершено</span>
           )}
         </div>
-      )}
+
+        {phase === 'idle' && (
+          <div className="it-demo__alert it-demo__alert--info" style={{marginTop: '1rem'}}>
+            Сравните с синхронным демо выше: здесь клиент не «замирает», пока сервер обрабатывает
+            запрос.
+          </div>
+        )}
+      </DemoCard>
+    </DemoShell>
+  );
+}
+
+export default function AsynchronousInteraction() {
+  return (
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо асинхронного взаимодействия…')}>
+      {() => <AsynchronousInteractionInner />}
     </BrowserOnly>
   );
-};
-
-export default AsynchronousInteraction;
+}

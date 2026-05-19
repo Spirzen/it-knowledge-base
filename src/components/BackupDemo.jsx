@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
 
 const BackupDemoContent = () => {
   const [activeTab, setActiveTab] = useState('backup');
@@ -487,6 +489,8 @@ const BackupDemoContent = () => {
   };
 
   return (
+    <DemoShell>
+    <DemoCard title="Резервное копирование и восстановление" subtitle="Создайте снимок данных приложения и откатитесь при ошибке.">
     <div style={styles.container}>
       <style>
         {`
@@ -848,12 +852,14 @@ async function restoreBackup(backupFile, targetDir) {
         </div>
       )}
     </div>
+    </DemoCard>
+    </DemoShell>
   );
 };
 
 const BackupDemo = () => {
   return (
-    <BrowserOnly fallback={<div>Loading...</div>}>
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо бэкапов…')}>
       {() => <BackupDemoContent />}
     </BrowserOnly>
   );

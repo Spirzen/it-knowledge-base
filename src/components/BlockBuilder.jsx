@@ -1,255 +1,189 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useCallback} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import clsx from 'clsx';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import useCopyToClipboard from './shared/useCopyToClipboard';
+import styles from './BlockBuilder.module.css';
 
-const BlockBuilderContent = () => {
+const TEMPLATES = {
+  ifElse: {
+    label: 'if / else',
+    lines: ['if (condition) {', '\tinstruction_1;', '} else {', '\tinstruction_2;', '}'],
+    levels: [0, 1, 0, 1, 0],
+  },
+  loop: {
+    label: 'Цикл',
+    lines: ['while (running) {', '\tinstruction_1;', '\tinstruction_2;', '}'],
+    levels: [0, 1, 1, 0],
+  },
+  func: {
+    label: 'Функция',
+    lines: ['function task() {', '\tinstruction_1;', '\treturn result;', '}'],
+    levels: [0, 1, 1, 0],
+  },
+};
+
+function BlockBuilderInner() {
   const [blocks, setBlocks] = useState([]);
-  const [currentLevel, setCurrentLevel] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
+  const [history, setHistory] = useState([]);
+  const [instrCount, setInstrCount] = useState(0);
+  const {copy, isCopied} = useCopyToClipboard();
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
+  const openDepth =
+    blocks.filter((b) => b.type === 'open').length - blocks.filter((b) => b.type === 'close').length;
 
-  const getIndent = (level) => {
-    if (isMobile && level > 0) {
-      return Array(level).fill('  ').join('');
-    }
-    return Array(level).fill('\t').join('');
-  };
+  const pushHistory = useCallback((next) => {
+    setHistory((h) => [...h.slice(-24), blocks]);
+    setBlocks(next);
+  }, [blocks]);
 
   const addInstruction = () => {
-    const indent = getIndent(currentLevel);
-    const newLine = `${indent}instruction_${blocks.length + 1}`;
-    setBlocks([...blocks, newLine]);
+    const n = instrCount + 1;
+    setInstrCount(n);
+    const tabs = '\t'.repeat(openDepth);
+    pushHistory([...blocks, {text: `${tabs}instruction_${n};`, level: openDepth, type: 'instr'}]);
   };
 
   const openBlock = () => {
-    const indent = getIndent(currentLevel);
-    setBlocks([...blocks, `${indent}{`]);
-    setCurrentLevel(prev => prev + 1);
+    const tabs = '\t'.repeat(openDepth);
+    pushHistory([...blocks, {text: `${tabs}{`, level: openDepth, type: 'open'}]);
   };
 
   const closeBlock = () => {
-    if (currentLevel > 0) {
-      const newLevel = currentLevel - 1;
-      const indent = getIndent(newLevel);
-      setBlocks([...blocks, `${indent}}`]);
-      setCurrentLevel(newLevel);
-    }
+    if (openDepth <= 0) return;
+    const tabs = '\t'.repeat(openDepth - 1);
+    pushHistory([...blocks, {text: `${tabs}}`, level: openDepth - 1, type: 'close'}]);
   };
 
-  const clearBlocks = () => {
-    if (window.confirm('Очистить все блоки?')) {
-      setBlocks([]);
-      setCurrentLevel(0);
-    }
+  const undo = () => {
+    if (!history.length) return;
+    const prev = history[history.length - 1];
+    setHistory((h) => h.slice(0, -1));
+    setBlocks(prev);
   };
+
+  const clearAll = () => {
+    setHistory([]);
+    setBlocks([]);
+    setInstrCount(0);
+  };
+
+  const applyTemplate = (key) => {
+    const t = TEMPLATES[key];
+    setBlocks(
+      t.lines.map((text, i) => {
+        const trimmed = text.trim();
+        const type = trimmed === '{' ? 'open' : trimmed === '}' ? 'close' : 'instr';
+        return {text, level: t.levels[i], type};
+      }),
+    );
+    setHistory([]);
+    setInstrCount(2);
+  };
+
+  const sourceText = blocks.map((b) => b.text).join('\n');
 
   return (
-    <div style={{ 
-      fontFamily: 'monospace', 
-      border: '1px solid #e0e0e0', 
-      padding: isMobile ? '12px' : '15px', 
-      borderRadius: '12px',
-      backgroundColor: '#ffffff',
-      maxWidth: '1200px',
-      margin: '0 auto',
-      boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-      transition: 'all 0.3s ease'
-    }}>
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-        gap: '10px',
-        marginBottom: '15px'
-      }}>
-        <h4 style={{ margin: 0, fontSize: isMobile ? '16px' : '18px' }}>
-          Конструктор блоков
-        </h4>
-        <div style={{
-          padding: '4px 12px',
-          backgroundColor: '#e3f2fd',
-          borderRadius: '20px',
-          fontSize: isMobile ? '12px' : '14px'
-        }}>
-          Уровень: <strong>{currentLevel}</strong>
-        </div>
-      </div>
-      
-      <div style={{ 
-        marginBottom: '20px', 
-        display: 'flex', 
-        gap: '10px', 
-        flexWrap: 'wrap',
-        justifyContent: isMobile ? 'center' : 'flex-start'
-      }}>
-        <button 
-          onClick={addInstruction} 
-          style={{ 
-            cursor: 'pointer', 
-            padding: isMobile ? '10px 16px' : '8px 16px',
-            fontSize: isMobile ? '14px' : '13px',
-            fontWeight: '500',
-            border: '1px solid #1976d2',
-            backgroundColor: '#1976d2',
-            color: 'white',
-            borderRadius: '8px',
-            transition: 'all 0.2s',
-            flex: isMobile ? '1' : 'auto',
-            minWidth: isMobile ? '100px' : 'auto'
-          }}
-          onMouseEnter={(e) => e.target.style.backgroundColor = '#1565c0'}
-          onMouseLeave={(e) => e.target.style.backgroundColor = '#1976d2'}
-        >
-          ➕ Добавить строку
-        </button>
-        
-        <button 
-          onClick={openBlock} 
-          style={{ 
-            cursor: 'pointer', 
-            padding: isMobile ? '10px 16px' : '8px 16px',
-            fontSize: isMobile ? '14px' : '13px',
-            fontWeight: '500',
-            border: '1px solid #2e7d32',
-            backgroundColor: '#2e7d32',
-            color: 'white',
-            borderRadius: '8px',
-            transition: 'all 0.2s',
-            flex: isMobile ? '1' : 'auto',
-            minWidth: isMobile ? '100px' : 'auto'
-          }}
-          onMouseEnter={(e) => e.target.style.backgroundColor = '#1b5e20'}
-          onMouseLeave={(e) => e.target.style.backgroundColor = '#2e7d32'}
-        >
-          Открыть блок {'{'}
-        </button>
-        
-        <button 
-          onClick={closeBlock} 
-          disabled={currentLevel === 0}
-          style={{ 
-            cursor: currentLevel === 0 ? 'not-allowed' : 'pointer', 
-            padding: isMobile ? '10px 16px' : '8px 16px',
-            fontSize: isMobile ? '14px' : '13px',
-            fontWeight: '500',
-            border: '1px solid #c62828',
-            backgroundColor: currentLevel === 0 ? '#e0e0e0' : '#c62828',
-            color: currentLevel === 0 ? '#999' : 'white',
-            borderRadius: '8px',
-            transition: 'all 0.2s',
-            flex: isMobile ? '1' : 'auto',
-            minWidth: isMobile ? '100px' : 'auto'
-          }}
-        >
-          Закрыть блок {'}'}
-        </button>
-
-        {blocks.length > 0 && (
-          <button 
-            onClick={clearBlocks}
-            style={{ 
-              cursor: 'pointer', 
-              padding: isMobile ? '10px 16px' : '8px 16px',
-              fontSize: isMobile ? '14px' : '13px',
-              fontWeight: '500',
-              border: '1px solid #ff6f00',
-              backgroundColor: '#ff6f00',
-              color: 'white',
-              borderRadius: '8px',
-              transition: 'all 0.2s',
-              flex: isMobile ? '1' : 'auto',
-              minWidth: isMobile ? '80px' : 'auto'
-            }}
-            onMouseEnter={(e) => e.target.style.backgroundColor = '#e65100'}
-            onMouseLeave={(e) => e.target.style.backgroundColor = '#ff6f00'}
-          >
-            Очистить
+    <DemoShell>
+      <DemoCard
+        title="Конструктор блоков"
+        subtitle="Соберите вложенную структуру — как блоки кода в программе"
+      >
+        <div className={styles.toolbar}>
+          <button type="button" className="it-demo__btn it-demo__btn--primary it-demo__btn--sm" onClick={addInstruction}>
+            + Строка
           </button>
-        )}
-      </div>
-
-      <div style={{
-        backgroundColor: '#f8f9fa',
-        borderRadius: '8px',
-        border: '1px solid #dee2e6',
-        overflowX: 'auto',
-        WebkitOverflowScrolling: 'touch'
-      }}>
-        <pre style={{ 
-          whiteSpace: 'pre-wrap', 
-          margin: 0, 
-          fontSize: isMobile ? '13px' : '14px',
-          lineHeight: '1.6',
-          padding: isMobile ? '12px' : '15px',
-          minHeight: isMobile ? '300px' : '400px',
-          maxHeight: isMobile ? '400px' : '500px',
-          overflowY: 'auto'
-        }}>
-          {blocks.length === 0 ? (
-            <div style={{ 
-              color: '#adb5bd', 
-              textAlign: 'center', 
-              padding: '40px 20px',
-              fontStyle: 'italic'
-            }}>
-              Нажмите "Добавить строку" или "Открыть блок" чтобы начать
-            </div>
-          ) : (
-            blocks.map((line, i) => {
-              const isBrace = line.trim() === '{' || line.trim() === '}';
-              const color = isBrace ? (line.trim() === '{' ? '#2e7d32' : '#c62828') : '#212529';
-              
-              return (
-                <div 
-                  key={i} 
-                  style={{ 
-                    color: color,
-                    wordBreak: 'break-word',
-                    whiteSpace: 'pre-wrap',
-                    padding: '2px 0'
-                  }}
-                >
-                  {line}
-                </div>
-              );
-            })
+          <button type="button" className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm" onClick={openBlock}>
+            {'{'} Открыть
+          </button>
+          <button
+            type="button"
+            className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm"
+            onClick={closeBlock}
+            disabled={openDepth <= 0}
+          >
+            {'}'} Закрыть
+          </button>
+          <button
+            type="button"
+            className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm"
+            onClick={undo}
+            disabled={!history.length}
+          >
+            ↩ Отмена
+          </button>
+          {blocks.length > 0 && (
+            <button type="button" className="it-demo__btn it-demo__btn--danger it-demo__btn--sm" onClick={clearAll}>
+              Очистить
+            </button>
           )}
-        </pre>
-      </div>
-
-      {/* Инструкция для мобильных устройств */}
-      {isMobile && (
-        <div style={{
-          marginTop: '15px',
-          padding: '10px',
-          backgroundColor: '#fff3e0',
-          borderRadius: '8px',
-          fontSize: '12px',
-          color: '#e65100',
-          textAlign: 'center'
-        }}>
-          💡 Подсказка: Используйте горизонтальную прокрутку для просмотра длинных строк
+          <span className={styles.levelBadge}>Вложенность: {openDepth}</span>
         </div>
-      )}
-    </div>
-  );
-};
 
-const BlockBuilder = () => {
+        <div className="it-demo__row" style={{marginBottom: '0.75rem'}}>
+          {Object.entries(TEMPLATES).map(([key, t]) => (
+            <button
+              key={key}
+              type="button"
+              className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm"
+              onClick={() => applyTemplate(key)}
+            >
+              {t.label}
+            </button>
+          ))}
+          {sourceText && (
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm"
+              onClick={() => copy(sourceText, 'src')}
+            >
+              {isCopied('src') ? '✓ Скопировано' : 'Копировать'}
+            </button>
+          )}
+        </div>
+
+        <div className={styles.editor} aria-label="Редактор блоков">
+          {blocks.length === 0 ? (
+            <p className={styles.empty}>Добавьте строку, откройте блок или выберите шаблон</p>
+          ) : (
+            blocks.map((line, i) => (
+              <div key={i} className={styles.lineRow}>
+                <div className={styles.lineGutter}>
+                  {Array.from({length: line.level}).map((_, d) => (
+                    <span key={d} className={styles.indentGuide} />
+                  ))}
+                  <span className={styles.lineNum}>{i + 1}</span>
+                </div>
+                <span
+                  className={clsx(
+                    styles.lineContent,
+                    line.type === 'open' && styles.braceOpen,
+                    line.type === 'close' && styles.braceClose,
+                    line.type === 'instr' && styles.instruction,
+                  )}
+                >
+                  {line.text.trim()}
+                </span>
+              </div>
+            ))
+          )}
+        </div>
+
+        {openDepth > 0 && (
+          <p className={styles.tip}>
+            Незакрытых блоков: {openDepth}. Добавьте <code>{'}'}</code>, чтобы сбалансировать структуру.
+          </p>
+        )}
+      </DemoCard>
+    </DemoShell>
+  );
+}
+
+export default function BlockBuilder() {
   return (
-    <BrowserOnly fallback={<div>Loading...</div>}>
-      {() => <BlockBuilderContent />}
+    <BrowserOnly fallback={demoLoadingFallback()}>
+      {() => <BlockBuilderInner />}
     </BrowserOnly>
   );
-};
-
-export default BlockBuilder;
+}

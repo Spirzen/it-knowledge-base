@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
 
 const ScalingDemo = () => {
   return (
-    <BrowserOnly>
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо масштабирования…')}>
       {() => {
         const [activeTab, setActiveTab] = useState('demo');
         const [scalingType, setScalingType] = useState('vertical');
@@ -446,12 +448,12 @@ const ScalingDemo = () => {
         };
 
         return (
-          <div style={styles.container}>
-            <div style={styles.header}>
-              <h1 style={styles.title}>Масштабирование систем</h1>
-              <p style={styles.subtitle}>Вертикальное и Горизонтальное масштабирование</p>
-            </div>
-            
+          <DemoShell>
+          <DemoCard
+            title="Масштабирование систем"
+            subtitle="Вертикальное и горизонтальное масштабирование под нагрузкой"
+          >
+          <div style={{maxWidth: '100%'}}>
             <div style={styles.tabs}>
               <button
                 style={{ ...styles.tab, ...(activeTab === 'demo' ? styles.activeTab : {}) }}
@@ -964,6 +966,8 @@ console.log(dockerCompose);`}
               </>
             )}
           </div>
+          </DemoCard>
+          </DemoShell>
         );
       }}
     </BrowserOnly>

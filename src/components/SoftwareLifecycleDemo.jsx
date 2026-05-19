@@ -1,681 +1,799 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, {useState, useCallback, useEffect, useRef, useMemo} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import clsx from 'clsx';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import styles from './SoftwareLifecycleDemo.module.css';
 
-const SoftwareLifecycleDemo = () => {
-  const [activePhase, setActivePhase] = useState(null);
-  const [currentPhase, setCurrentPhase] = useState(null);
-  const [projectProgress, setProjectProgress] = useState(0);
-  const [phaseDetails, setPhaseDetails] = useState({});
-  const [showMetrics, setShowMetrics] = useState(true);
-  const [selectedModel, setSelectedModel] = useState('waterfall');
-  const [isMobile, setIsMobile] = useState(false);
+const PHASES = [
+  {
+    id: 'plan',
+    name: 'Планирование и инициация',
+    shortName: 'Планирование',
+    icon: '📋',
+    color: 'var(--sdlc-plan)',
+    duration: '2–4 недели',
+    team: 'PM, Sponsor, Stakeholders',
+    deliverables: 'Устав проекта, Business Case, Plan',
+    activities: [
+      'Определение целей и scope проекта',
+      'Оценка ресурсов и бюджета',
+      'Формирование команды',
+      'Создание roadmap',
+    ],
+    tools: 'Jira, MS Project, Trello, Miro',
+    risk: 'low',
+    costPct: 8,
+    sprint: 1,
+    vSide: 'left',
+    log: '📋 Charter утверждён, бюджет согласован',
+  },
+  {
+    id: 'analyze',
+    name: 'Анализ и сбор требований',
+    shortName: 'Анализ',
+    icon: '🔍',
+    color: 'var(--sdlc-analyze)',
+    duration: '3–6 недель',
+    team: 'BA, Product Owner, Stakeholders',
+    deliverables: 'SRS, User Stories, Use Cases',
+    activities: [
+      'Интервью с заказчиком',
+      'Создание user stories',
+      'Прототипирование интерфейсов',
+      'Согласование требований',
+    ],
+    tools: 'Confluence, Jira, Figma, Draw.io',
+    risk: 'mid',
+    costPct: 12,
+    sprint: 1,
+    vSide: 'left',
+    log: '🔍 SRS v1.2 — 47 user stories в backlog',
+  },
+  {
+    id: 'design',
+    name: 'Проектирование архитектуры',
+    shortName: 'Архитектура',
+    icon: '🏗️',
+    color: 'var(--sdlc-design)',
+    duration: '4–8 недель',
+    team: 'Architect, Tech Lead, Senior Devs',
+    deliverables: 'Architecture Design, UML, ERD',
+    activities: [
+      'Выбор технологического стека',
+      'Проектирование БД',
+      'Создание API-спецификаций',
+      'Определение паттернов',
+    ],
+    tools: 'Draw.io, Lucidchart, PlantUML, Swagger',
+    risk: 'high',
+    costPct: 12,
+    sprint: 2,
+    vSide: 'left',
+    log: '🏗️ Архитектура: микросервисы + PostgreSQL',
+  },
+  {
+    id: 'dev',
+    name: 'Реализация (разработка)',
+    shortName: 'Разработка',
+    icon: '💻',
+    color: 'var(--sdlc-dev)',
+    duration: '8–24 недели',
+    team: 'Devs, QA (подготовка)',
+    deliverables: 'Source Code, Unit Tests, API',
+    activities: [
+      'Написание кода',
+      'Code review',
+      'Unit-тестирование',
+      'Интеграция компонентов',
+    ],
+    tools: 'VS Code, Git, Docker, Jira, CI/CD',
+    risk: 'high',
+    costPct: 45,
+    sprint: 2,
+    vSide: 'left',
+    log: '💻 Sprint merge: +2 340 LOC, coverage 72%',
+  },
+  {
+    id: 'test',
+    name: 'Тестирование и верификация',
+    shortName: 'Тестирование',
+    icon: '🧪',
+    color: 'var(--sdlc-test)',
+    duration: '4–8 недель',
+    team: 'QA, Devs (fixes)',
+    deliverables: 'Test Reports, Bug Reports',
+    activities: [
+      'Функциональное тестирование',
+      'Нагрузочное тестирование',
+      'Тестирование безопасности',
+      'Regression testing',
+    ],
+    tools: 'Jest, Selenium, Postman, JMeter',
+    risk: 'mid',
+    costPct: 17,
+    sprint: 3,
+    vSide: 'bottom',
+    log: '🧪 QA: 12 критических багов закрыто, regression green',
+  },
+  {
+    id: 'deploy',
+    name: 'Внедрение (деплой)',
+    shortName: 'Деплой',
+    icon: '🚀',
+    color: 'var(--sdlc-deploy)',
+    duration: '1–2 недели',
+    team: 'DevOps, Devs, QA',
+    deliverables: 'Deployed App, Migration Scripts',
+    activities: [
+      'Подготовка production-окружения',
+      'Миграция данных',
+      'Deployment приложения',
+      'Rollback-план',
+    ],
+    tools: 'K8s, Docker, Jenkins, Terraform',
+    risk: 'critical',
+    costPct: 7,
+    sprint: 3,
+    vSide: 'right',
+    log: '🚀 Blue-green deploy в production — OK',
+  },
+  {
+    id: 'ops',
+    name: 'Эксплуатация и поддержка',
+    shortName: 'Поддержка',
+    icon: '🔄',
+    color: 'var(--sdlc-ops)',
+    duration: 'месяцы–годы',
+    team: 'Support, DevOps, Devs (on-call)',
+    deliverables: 'SLA, Monitoring, Patches',
+    activities: [
+      '24/7 мониторинг',
+      'Исправление багов',
+      'Performance optimization',
+      'Customer support',
+    ],
+    tools: 'Grafana, Sentry, PagerDuty, Zendesk',
+    risk: 'low',
+    costPct: 12,
+    sprint: 4,
+    vSide: 'right',
+    log: '🔄 SLA 99.9%, MTTR 18 мин за квартал',
+  },
+  {
+    id: 'retire',
+    name: 'Модернизация / вывод из эксплуатации',
+    shortName: 'Модернизация',
+    icon: '♻️',
+    color: 'var(--sdlc-retire)',
+    duration: '4–12 недель',
+    team: 'Architect, PM, DBA',
+    deliverables: 'Migration Plan, Archive, Documentation',
+    activities: [
+      'Анализ устаревших компонентов',
+      'Миграция на новую версию',
+      'Архивация данных',
+      'Отключение сервисов',
+    ],
+    tools: 'Migration tools, Backup solutions',
+    risk: 'high',
+    costPct: 7,
+    sprint: 4,
+    vSide: 'right',
+    log: '♻️ Legacy v2 выведен, данные архивированы',
+  },
+];
 
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  const phases = [
-    {
-      id: 1,
-      name: 'Планирование и инициация',
-      shortName: 'Планирование',
-      icon: '📋',
-      color: '#3b82f6',
-      duration: '2-4 недели',
-      team: 'PM, Sponsor, Stakeholders',
-      deliverables: 'Устав проекта, Business Case, Plan',
-      activities: [
-        'Определение целей и scope проекта',
-        'Оценка ресурсов и бюджета',
-        'Формирование команды',
-        'Создание roadmap'
-      ],
-      tools: 'Jira, MS Project, Trello, Miro',
-      risk: 'Низкий',
-      cost: '5-10% от бюджета'
-    },
-    {
-      id: 2,
-      name: 'Анализ и сбор требований',
-      shortName: 'Анализ',
-      icon: '🔍',
-      color: '#8b5cf6',
-      duration: '3-6 недель',
-      team: 'BA, Product Owner, Stakeholders',
-      deliverables: 'SRS, User Stories, Use Cases',
-      activities: [
-        'Интервью с заказчиком',
-        'Создание user stories',
-        'Прототипирование интерфейсов',
-        'Согласование требований'
-      ],
-      tools: 'Confluence, Jira, Figma, Draw.io',
-      risk: 'Средний',
-      cost: '10-15% от бюджета'
-    },
-    {
-      id: 3,
-      name: 'Проектирование архитектуры',
-      shortName: 'Архитектура',
-      icon: '🏗️',
-      color: '#ec489a',
-      duration: '4-8 недель',
-      team: 'Architect, Tech Lead, Senior Devs',
-      deliverables: 'Architecture Design, UML, ERD',
-      activities: [
-        'Выбор технологического стека',
-        'Проектирование БД',
-        'Создание API спецификаций',
-        'Определение паттернов'
-      ],
-      tools: 'Draw.io, Lucidchart, PlantUML, Swagger',
-      risk: 'Высокий',
-      cost: '10-15% от бюджета'
-    },
-    {
-      id: 4,
-      name: 'Реализация (разработка)',
-      shortName: 'Разработка',
-      icon: '💻',
-      color: '#10b981',
-      duration: '8-24 недели',
-      team: 'Devs, QA (preparation)',
-      deliverables: 'Source Code, Unit Tests, API',
-      activities: [
-        'Написание кода',
-        'Code review',
-        'Unit тестирование',
-        'Интеграция компонентов'
-      ],
-      tools: 'VS Code, Git, Docker, Jira, CI/CD',
-      risk: 'Высокий',
-      cost: '40-50% от бюджета'
-    },
-    {
-      id: 5,
-      name: 'Тестирование и верификация',
-      shortName: 'Тестирование',
-      icon: '🧪',
-      color: '#f59e0b',
-      duration: '4-8 недель',
-      team: 'QA, Devs (fixes)',
-      deliverables: 'Test Reports, Bug Reports',
-      activities: [
-        'Функциональное тестирование',
-        'Нагрузочное тестирование',
-        'Тестирование безопасности',
-        'Regression testing'
-      ],
-      tools: 'Jest, Selenium, Postman, JMeter',
-      risk: 'Средний',
-      cost: '15-20% от бюджета'
-    },
-    {
-      id: 6,
-      name: 'Внедрение (деплой)',
-      shortName: 'Деплой',
-      icon: '🚀',
-      color: '#ef4444',
-      duration: '1-2 недели',
-      team: 'DevOps, Devs, QA',
-      deliverables: 'Deployed App, Migration Scripts',
-      activities: [
-        'Подготовка production окружения',
-        'Миграция данных',
-        'Deployment приложения',
-        'Rollback план'
-      ],
-      tools: 'K8s, Docker, Jenkins, Terraform',
-      risk: 'Очень высокий',
-      cost: '5-10% от бюджета'
-    },
-    {
-      id: 7,
-      name: 'Эксплуатация и поддержка',
-      shortName: 'Поддержка',
-      icon: '🔄',
-      color: '#06b6d4',
-      duration: 'months-years',
-      team: 'Support, DevOps, Devs (on-call)',
-      deliverables: 'SLA, Monitoring, Patches',
-      activities: [
-        '7/7 мониторинг',
-        'Исправление багов',
-        'Performance optimization',
-        'Customer support'
-      ],
-      tools: 'Grafana, Sentry, PagerDuty, Zendesk',
-      risk: 'Низкий',
-      cost: '10-15% годовых'
-    },
-    {
-      id: 8,
-      name: 'Модернизация/Вывод из эксплуатации',
-      shortName: 'Модернизация',
-      icon: '♻️',
-      color: '#6b7280',
-      duration: '4-12 недель',
-      team: 'Architect, PM, DBA',
-      deliverables: 'Migration Plan, Archive, Documentation',
-      activities: [
-        'Анализ устаревших компонентов',
-        'Миграция на новую версию',
-        'Архивация данных',
-        'Отключение сервисов'
-      ],
-      tools: 'Migration tools, Backup solutions',
-      risk: 'Высокий',
-      cost: '5-10% от бюджета'
-    }
-  ];
-
-  const models = {
-    waterfall: {
-      name: 'Waterfall (Каскадная)',
-      description: 'Последовательное выполнение фаз, каждая следующая начинается после завершения предыдущей',
-      pros: ['Простота управления', 'Четкие этапы', 'Хорошая документация'],
-      cons: ['Сложно вносить изменения', 'Позднее тестирование', 'Долгий цикл']
-    },
-    agile: {
-      name: 'Agile (Гибкая)',
-      description: 'Итеративная разработка с постоянной обратной связью и адаптацией',
-      pros: ['Быстрая реакция на изменения', 'Постоянная обратная связь', 'Ранний релиз MVP'],
-      cons: ['Меньше документации', 'Требует дисциплины', 'Сложность в оценке']
-    },
-    vmodel: {
-      name: 'V-Model',
-      description: 'Расширение waterfall с акцентом на верификацию и валидацию на каждом этапе',
-      pros: ['Высокое качество', 'Раннее тестирование', 'Четкие критерии'],
-      cons: ['Дорого', 'Негибкий', 'Подходит не для всех проектов']
-    }
-  };
-
-  const simulateProject = useCallback(() => {
-    let progress = 0;
-    const totalPhases = phases.length;
-    
-    const interval = setInterval(() => {
-      if (progress < totalPhases) {
-        setCurrentPhase(progress);
-        setActivePhase(progress);
-        setProjectProgress(((progress + 1) / totalPhases) * 100);
-        
-        const phase = phases[progress];
-        setPhaseDetails(prev => ({
-          ...prev,
-          [progress]: {
-            startDate: new Date().toLocaleDateString(),
-            status: 'completed',
-            completionTime: `${Math.floor(Math.random() * 10) + 1} дней`
-          }
-        }));
-        
-        progress++;
-      } else {
-        clearInterval(interval);
-        setCurrentPhase(null);
-        setActivePhase(null);
-      }
-    }, 1500);
-    
-    return () => clearInterval(interval);
-  }, [phases]);
-
-  const resetProject = () => {
-    setCurrentPhase(null);
-    setActivePhase(null);
-    setProjectProgress(0);
-    setPhaseDetails({});
-  };
-
-  const renderContent = () => (
-    <div style={{
-      fontFamily: 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif',
-      maxWidth: '1400px',
-      margin: '1rem auto',
-      background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-      borderRadius: '24px',
-      padding: 'clamp(16px, 4vw, 24px)',
-      boxShadow: '0 25px 50px rgba(0,0,0,0.3)',
-      color: '#e2e8f0'
-    }}>
-      
-      {/* Заголовок */}
-      <div style={{ textAlign: 'center', marginBottom: 'clamp(24px, 5vw, 32px)' }}>
-        <h1 style={{ 
-          fontSize: 'clamp(1.5rem, 5vw, 2.5rem)', 
-          margin: 0,
-          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text'
-        }}>
-          SDLC: Жизненный цикл ПО
-        </h1>
-        <p style={{ color: '#94a3b8', marginTop: '8px', fontSize: 'clamp(12px, 4vw, 16px)' }}>
-          Software Development Life Cycle - от идеи до вывода из эксплуатации
-        </p>
-      </div>
-
-      {/* Модели разработки */}
-      <div style={{
-        display: 'flex',
-        gap: 'clamp(8px, 2vw, 12px)',
-        marginBottom: '24px',
-        justifyContent: 'center',
-        flexWrap: 'wrap'
-      }}>
-        {Object.entries(models).map(([key, model]) => (
-          <button
-            key={key}
-            onClick={() => setSelectedModel(key)}
-            style={{
-              padding: 'clamp(8px, 2vw, 10px) clamp(12px, 3vw, 20px)',
-              background: selectedModel === key 
-                ? 'linear-gradient(135deg, #667eea, #764ba2)'
-                : 'rgba(255,255,255,0.1)',
-              border: `1px solid ${selectedModel === key ? '#667eea' : 'rgba(255,255,255,0.2)'}`,
-              borderRadius: '12px',
-              color: 'white',
-              fontFamily: 'inherit',
-              fontSize: 'clamp(11px, 3vw, 14px)',
-              fontWeight: selectedModel === key ? 'bold' : 'normal',
-              cursor: 'pointer',
-              transition: 'all 0.3s',
-              whiteSpace: 'nowrap'
-            }}
-          >
-            {isMobile && key !== selectedModel ? model.name.split(' ')[0] : model.name}
-          </button>
-        ))}
-        
-        <button
-          onClick={simulateProject}
-          disabled={currentPhase !== null}
-          style={{
-            padding: 'clamp(8px, 2vw, 10px) clamp(16px, 4vw, 24px)',
-            background: 'linear-gradient(135deg, #10b981, #059669)',
-            border: 'none',
-            borderRadius: '12px',
-            color: 'white',
-            fontFamily: 'inherit',
-            fontSize: 'clamp(12px, 3vw, 14px)',
-            fontWeight: 'bold',
-            cursor: currentPhase !== null ? 'not-allowed' : 'pointer',
-            opacity: currentPhase !== null ? 0.5 : 1,
-            whiteSpace: 'nowrap'
-          }}
-        >
-          {isMobile ? 'Симуляция' : 'Симулировать проект'}
-        </button>
-        
-        <button
-          onClick={resetProject}
-          style={{
-            padding: 'clamp(8px, 2vw, 10px) clamp(16px, 4vw, 24px)',
-            background: 'rgba(239,68,68,0.2)',
-            border: '1px solid #ef4444',
-            borderRadius: '12px',
-            color: '#f87171',
-            fontFamily: 'inherit',
-            fontSize: 'clamp(12px, 3vw, 14px)',
-            fontWeight: 'bold',
-            cursor: 'pointer',
-            whiteSpace: 'nowrap'
-          }}
-        >
-          {isMobile ? '🔄 Сброс' : '🔄 Сброс'}
-        </button>
-      </div>
-
-      {/* Прогресс проекта */}
-      {projectProgress > 0 && (
-        <div style={{
-          marginBottom: '32px',
-          background: 'rgba(0,0,0,0.3)',
-          borderRadius: '12px',
-          padding: 'clamp(12px, 3vw, 16px)'
-        }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', flexWrap: 'wrap', gap: '8px' }}>
-            <span style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>Прогресс проекта</span>
-            <span style={{ fontSize: 'clamp(12px, 3vw, 14px)', fontWeight: 'bold', color: '#10b981' }}>
-              {Math.floor(projectProgress)}%
-            </span>
-          </div>
-          <div style={{
-            width: '100%',
-            height: '8px',
-            background: 'rgba(255,255,255,0.1)',
-            borderRadius: '4px',
-            overflow: 'hidden'
-          }}>
-            <div style={{
-              width: `${projectProgress}%`,
-              height: '100%',
-              background: 'linear-gradient(90deg, #3b82f6, #10b981)',
-              transition: 'width 0.5s ease'
-            }} />
-          </div>
-        </div>
-      )}
-
-      {/* Модель описания */}
-      <div style={{
-        background: 'rgba(102,126,234,0.1)',
-        borderRadius: '16px',
-        padding: 'clamp(12px, 3vw, 16px)',
-        marginBottom: '32px',
-        borderLeft: `4px solid #667eea`
-      }}>
-        <div style={{ fontWeight: 'bold', marginBottom: '8px', fontSize: 'clamp(14px, 4vw, 16px)' }}>
-          {models[selectedModel].name}
-        </div>
-        <div style={{ fontSize: 'clamp(12px, 3vw, 14px)', marginBottom: '12px', color: '#cbd5e1' }}>
-          {models[selectedModel].description}
-        </div>
-        <div style={{ 
-          display: 'flex', 
-          flexDirection: isMobile ? 'column' : 'row', 
-          gap: isMobile ? '12px' : '20px', 
-          fontSize: 'clamp(11px, 3vw, 12px)' 
-        }}>
-          <div>
-            <span style={{ color: '#10b981' }}>✓ Плюсы: </span>
-            {models[selectedModel].pros.join(', ')}
-          </div>
-          <div>
-            <span style={{ color: '#ef4444' }}>✗ Минусы: </span>
-            {models[selectedModel].cons.join(', ')}
-          </div>
-        </div>
-      </div>
-
-      {/* Timeline фаз */}
-      <div style={{
-        display: 'flex',
-        overflowX: 'auto',
-        gap: 'clamp(8px, 2vw, 16px)',
-        padding: 'clamp(12px, 3vw, 20px)',
-        marginBottom: '32px',
-        background: 'rgba(0,0,0,0.2)',
-        borderRadius: '20px',
-        WebkitOverflowScrolling: 'touch',
-        scrollbarWidth: 'thin'
-      }}>
-        {phases.map((phase, idx) => (
-          <div
-            key={phase.id}
-            onClick={() => setActivePhase(activePhase === idx ? null : idx)}
-            style={{
-              minWidth: isMobile ? '80px' : '120px',
-              textAlign: 'center',
-              cursor: 'pointer',
-              transition: 'all 0.3s',
-              opacity: currentPhase !== null && idx > currentPhase ? 0.5 : 1,
-              flexShrink: 0
-            }}
-          >
-            <div style={{
-              width: isMobile ? '60px' : '80px',
-              height: isMobile ? '60px' : '80px',
-              margin: '0 auto 12px',
-              background: activePhase === idx 
-                ? `linear-gradient(135deg, ${phase.color}, ${phase.color}dd)`
-                : `rgba(255,255,255,0.1)`,
-              borderRadius: '50%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: isMobile ? '28px' : '36px',
-              border: activePhase === idx ? `3px solid ${phase.color}` : 'none',
-              transform: activePhase === idx ? 'scale(1.1)' : 'scale(1)',
-              transition: 'all 0.3s',
-              boxShadow: activePhase === idx ? `0 0 20px ${phase.color}` : 'none'
-            }}>
-              {phase.icon}
-            </div>
-            <div style={{ 
-              fontSize: isMobile ? '10px' : '12px', 
-              fontWeight: activePhase === idx ? 'bold' : 'normal',
-              color: activePhase === idx ? phase.color : '#94a3b8'
-            }}>
-              {isMobile ? phase.shortName : phase.name.split(' ')[0]}
-            </div>
-            {phaseDetails[idx] && (
-              <div style={{
-                fontSize: '10px',
-                color: '#10b981',
-                marginTop: '4px'
-              }}>
-                ✓
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
-
-      {/* Детальная информация о фазе */}
-      {activePhase !== null && (
-        <div style={{
-          background: 'rgba(0,0,0,0.4)',
-          borderRadius: '20px',
-          padding: 'clamp(16px, 4vw, 24px)',
-          marginBottom: '32px',
-          animation: 'fadeIn 0.5s ease'
-        }}>
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: 'clamp(8px, 3vw, 12px)',
-            marginBottom: '20px',
-            flexWrap: 'wrap'
-          }}>
-            <div style={{
-              fontSize: isMobile ? '36px' : '48px',
-              background: `linear-gradient(135deg, ${phases[activePhase].color}, ${phases[activePhase].color}dd)`,
-              borderRadius: '50%',
-              width: isMobile ? '50px' : '70px',
-              height: isMobile ? '50px' : '70px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}>
-              {phases[activePhase].icon}
-            </div>
-            <div>
-              <h2 style={{ margin: 0, fontSize: 'clamp(18px, 5vw, 24px)' }}>
-                {phases[activePhase].name}
-              </h2>
-              <div style={{ color: '#94a3b8', fontSize: 'clamp(12px, 3vw, 14px)' }}>
-                Фаза {activePhase + 1} из {phases.length}
-              </div>
-            </div>
-          </div>
-
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(300px, 1fr))',
-            gap: '20px'
-          }}>
-            <div>
-              <div style={{ fontWeight: 'bold', color: '#667eea', marginBottom: '8px' }}>
-                Длительность
-              </div>
-              <div style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>{phases[activePhase].duration}</div>
-              
-              <div style={{ fontWeight: 'bold', color: '#667eea', marginTop: '16px', marginBottom: '8px' }}>
-                Команда
-              </div>
-              <div style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>{phases[activePhase].team}</div>
-              
-              <div style={{ fontWeight: 'bold', color: '#667eea', marginTop: '16px', marginBottom: '8px' }}>
-                Результаты
-              </div>
-              <div style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>{phases[activePhase].deliverables}</div>
-            </div>
-
-            <div>
-              <div style={{ fontWeight: 'bold', color: '#667eea', marginBottom: '8px' }}>
-                Инструменты
-              </div>
-              <div style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>{phases[activePhase].tools}</div>
-              
-              <div style={{ fontWeight: 'bold', color: '#667eea', marginTop: '16px', marginBottom: '8px' }}>
-                Риск
-              </div>
-              <div style={{ 
-                fontSize: 'clamp(12px, 3vw, 14px)',
-                color: phases[activePhase].risk === 'Высокий' ? '#f87171' : 
-                       phases[activePhase].risk === 'Средний' ? '#fbbf24' : '#10b981'
-              }}>
-                {phases[activePhase].risk}
-              </div>
-              
-              <div style={{ fontWeight: 'bold', color: '#667eea', marginTop: '16px', marginBottom: '8px' }}>
-                Затраты
-              </div>
-              <div style={{ fontSize: 'clamp(12px, 3vw, 14px)' }}>{phases[activePhase].cost}</div>
-            </div>
-
-            <div>
-              <div style={{ fontWeight: 'bold', color: '#667eea', marginBottom: '8px' }}>
-                Ключевые активности
-              </div>
-              <ul style={{ margin: 0, paddingLeft: '20px' }}>
-                {phases[activePhase].activities.map((activity, idx) => (
-                  <li key={idx} style={{ fontSize: 'clamp(12px, 3vw, 14px)', marginBottom: '4px' }}>{activity}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {phaseDetails[activePhase] && (
-            <div style={{
-              marginTop: '20px',
-              padding: '12px',
-              background: 'rgba(16,185,129,0.1)',
-              borderRadius: '12px',
-              fontSize: 'clamp(11px, 3vw, 12px)'
-            }}>
-              Фаза завершена за {phaseDetails[activePhase].completionTime}
-            </div>
-          )}
-        </div>
-      )}
-
-      {/* Метрики и KPI */}
-      {showMetrics && (
-        <div style={{
-          background: 'rgba(0,0,0,0.3)',
-          borderRadius: '16px',
-          padding: 'clamp(16px, 4vw, 20px)',
-          marginBottom: '24px'
-        }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            marginBottom: '16px',
-            flexWrap: 'wrap',
-            gap: '8px'
-          }}>
-            <div style={{ fontWeight: 'bold', color: '#667eea', fontSize: 'clamp(14px, 4vw, 16px)' }}>
-              Метрики эффективности
-            </div>
-            <button
-              onClick={() => setShowMetrics(false)}
-              style={{
-                background: 'none',
-                border: 'none',
-                color: '#94a3b8',
-                cursor: 'pointer',
-                fontSize: 'clamp(11px, 3vw, 12px)'
-              }}
-            >
-              Скрыть
-            </button>
-          </div>
-          
-          <div style={{
-            display: 'grid',
-            gridTemplateColumns: isMobile ? '1fr 1fr' : 'repeat(auto-fit, minmax(200px, 1fr))',
-            gap: 'clamp(12px, 3vw, 16px)'
-          }}>
-            <div>
-              <div style={{ fontSize: 'clamp(11px, 3vw, 12px)', color: '#94a3b8' }}>CPI</div>
-              <div style={{ fontSize: 'clamp(20px, 5vw, 24px)', fontWeight: 'bold', color: '#10b981' }}>1.02</div>
-            </div>
-            <div>
-              <div style={{ fontSize: 'clamp(11px, 3vw, 12px)', color: '#94a3b8' }}>SPI</div>
-              <div style={{ fontSize: 'clamp(20px, 5vw, 24px)', fontWeight: 'bold', color: '#fbbf24' }}>0.95</div>
-            </div>
-            <div>
-              <div style={{ fontSize: 'clamp(11px, 3vw, 12px)', color: '#94a3b8' }}>Defect Density</div>
-              <div style={{ fontSize: 'clamp(20px, 5vw, 24px)', fontWeight: 'bold', color: '#f87171' }}>2.3/KLOC</div>
-            </div>
-            <div>
-              <div style={{ fontSize: 'clamp(11px, 3vw, 12px)', color: '#94a3b8' }}>Code Coverage</div>
-              <div style={{ fontSize: 'clamp(20px, 5vw, 24px)', fontWeight: 'bold', color: '#8b5cf6' }}>87%</div>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Best practices */}
-      <div style={{
-        background: 'linear-gradient(135deg, rgba(102,126,234,0.1), rgba(118,75,162,0.1))',
-        borderRadius: '16px',
-        padding: 'clamp(16px, 4vw, 20px)',
-        fontSize: 'clamp(12px, 3vw, 14px)'
-      }}>
-        <div style={{ fontWeight: 'bold', marginBottom: '12px', color: '#667eea', fontSize: 'clamp(14px, 4vw, 16px)' }}>
-          Лучшие практики для успешного проекта:
-        </div>
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: isMobile ? '1fr' : 'repeat(auto-fit, minmax(250px, 1fr))', 
-          gap: 'clamp(8px, 2vw, 12px)' 
-        }}>
-          <div>✓ Четкое определение требований на старте</div>
-          <div>✓ Регулярные встречи с командой (Daily stand-ups)</div>
-          <div>✓ Автоматизация CI/CD pipelines</div>
-          <div>✓ Непрерывное тестирование (Shift-left testing)</div>
-          <div>✓ Ведение технической документации</div>
-          <div>✓ Пост-мортем анализ после инцидентов</div>
-        </div>
-      </div>
-
-      <style>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
-        @media (max-width: 480px) {
-          div {
-            word-break: break-word;
-          }
-        }
-      `}</style>
-    </div>
-  );
-
-  return (
-    <BrowserOnly fallback={<div style={{padding: '20px', textAlign: 'center'}}>Загрузка интерактивного компонента...</div>}>
-      {() => renderContent()}
-    </BrowserOnly>
-  );
+const MODELS = {
+  waterfall: {
+    name: 'Waterfall (каскадная)',
+    description:
+      'Последовательное выполнение фаз: каждая следующая начинается после завершения предыдущей.',
+    pros: ['Простота управления', 'Чёткие этапы', 'Хорошая документация'],
+    cons: ['Сложно вносить изменения', 'Позднее тестирование', 'Долгий цикл'],
+    phaseMs: 1400,
+  },
+  agile: {
+    name: 'Agile (гибкая)',
+    description:
+      'Итеративная разработка: короткие спринты, постоянная обратная связь и адаптация требований.',
+    pros: ['Быстрая реакция на изменения', 'Ранний MVP', 'Постоянная обратная связь'],
+    cons: ['Меньше документации', 'Требует дисциплины', 'Сложность в оценке сроков'],
+    phaseMs: 1000,
+  },
+  vmodel: {
+    name: 'V-Model',
+    description:
+      'Каждой фазе проектирования соответствует уровень тестирования — верификация «слева направо».',
+    pros: ['Высокое качество', 'Раннее тестирование', 'Чёткие критерии приёмки'],
+    cons: ['Дорого', 'Негибкий', 'Не для всех типов проектов'],
+    phaseMs: 1300,
+  },
 };
 
-export default SoftwareLifecycleDemo;
+const SPRINTS = [
+  {id: 1, label: 'Спринт 1', phaseIds: ['plan', 'analyze']},
+  {id: 2, label: 'Спринт 2', phaseIds: ['design', 'dev']},
+  {id: 3, label: 'Спринт 3', phaseIds: ['test', 'deploy']},
+  {id: 4, label: 'Спринт 4', phaseIds: ['ops', 'retire']},
+];
+
+const RISK_LABEL = {low: 'Низкий', mid: 'Средний', high: 'Высокий', critical: 'Очень высокий'};
+
+const BEST_PRACTICES = [
+  'Чёткое определение требований на старте',
+  'Регулярные встречи с командой (Daily stand-ups)',
+  'Автоматизация CI/CD pipelines',
+  'Непрерывное тестирование (Shift-left)',
+  'Актуальная техническая документация',
+  'Post-mortem после инцидентов',
+];
+
+function formatTime(date) {
+  return date.toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit', second: '2-digit'});
+}
+
+function riskClass(risk) {
+  if (risk === 'low') return styles.riskLow;
+  if (risk === 'mid') return styles.riskMid;
+  return styles.riskHigh;
+}
+
+function computeMetrics(completedCount, phaseIndex) {
+  const progress = completedCount / PHASES.length;
+  const inTestOrLater = phaseIndex >= 4;
+  return {
+    cpi: (0.92 + progress * 0.12).toFixed(2),
+    spi: (0.88 + progress * 0.1).toFixed(2),
+    defect: inTestOrLater ? (3.1 - progress * 1.4).toFixed(1) : (4.2 - progress * 0.5).toFixed(1),
+    coverage: Math.min(92, Math.round(62 + progress * 32)),
+  };
+}
+
+function WaterfallViz({activeIndex, doneSet}) {
+  return (
+    <div className={styles.waterfallFlow}>
+      {PHASES.map((phase, idx) => (
+        <React.Fragment key={phase.id}>
+          {idx > 0 && (
+            <span
+              className={clsx(styles.waterfallArrow, {
+                [styles.waterfallArrowLit]: doneSet.has(idx - 1) || activeIndex >= idx,
+              })}
+            >
+              →
+            </span>
+          )}
+          <span
+            className={clsx(styles.waterfallBlock, {
+              [styles.waterfallBlockActive]: activeIndex === idx,
+              [styles.waterfallBlockDone]: doneSet.has(idx),
+            })}
+            style={{'--phase-color': phase.color}}
+          >
+            {phase.shortName}
+          </span>
+        </React.Fragment>
+      ))}
+    </div>
+  );
+}
+
+function AgileViz({activeIndex, doneSet}) {
+  const activeSprint = activeIndex >= 0 ? PHASES[activeIndex].sprint : null;
+  return (
+    <div className={styles.agileGrid}>
+      {SPRINTS.map((sprint) => (
+        <div
+          key={sprint.id}
+          className={clsx(styles.sprintCard, {[styles.sprintCardActive]: activeSprint === sprint.id})}
+        >
+          <p className={styles.sprintTitle}>{sprint.label}</p>
+          <ul className={styles.sprintPhases}>
+            {sprint.phaseIds.map((pid) => {
+              const phase = PHASES.find((p) => p.id === pid);
+              const idx = PHASES.findIndex((p) => p.id === pid);
+              return (
+                <li
+                  key={pid}
+                  className={clsx({
+                    [styles.sprintPhasesLiActive]: activeIndex === idx || doneSet.has(idx),
+                  })}
+                >
+                  {phase?.icon} {phase?.shortName}
+                  {doneSet.has(idx) ? ' ✓' : ''}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function VModelViz({activeIndex, doneSet}) {
+  const left = PHASES.filter((p) => p.vSide === 'left');
+  const right = [...PHASES.filter((p) => p.vSide === 'right')].reverse();
+  const bottom = PHASES.find((p) => p.vSide === 'bottom');
+  const bottomIdx = PHASES.findIndex((p) => p.id === bottom?.id);
+
+  const nodeState = (phase) => {
+    const idx = PHASES.findIndex((p) => p.id === phase.id);
+    return clsx(styles.vNode, {
+      [styles.vNodeActive]: activeIndex === idx,
+      [styles.vNodeDone]: doneSet.has(idx),
+    });
+  };
+
+  return (
+    <div className={styles.vDiagram}>
+      <div className={styles.vColumn}>
+        {left.map((phase) => (
+          <div key={phase.id} className={nodeState(phase)} style={{'--phase-color': phase.color}}>
+            {phase.icon} {phase.shortName}
+          </div>
+        ))}
+      </div>
+
+      <div className={styles.vCenter}>
+        <div
+          className={clsx(styles.vArm, {[styles.vArmLit]: activeIndex >= 0 && activeIndex <= 3})}
+          style={{'--v-dir': '180deg'}}
+        />
+        {bottom && (
+          <div
+            className={clsx(styles.vBottom, {
+              [styles.vBottomActive]: activeIndex === bottomIdx,
+              [styles.vNodeDone]: doneSet.has(bottomIdx),
+            })}
+          >
+            {bottom.icon} {bottom.shortName}
+          </div>
+        )}
+        <div
+          className={clsx(styles.vArm, {[styles.vArmLit]: activeIndex >= 5})}
+          style={{'--v-dir': '0deg'}}
+        />
+      </div>
+
+      <div className={styles.vColumn}>
+        {right.map((phase) => (
+          <div key={phase.id} className={nodeState(phase)} style={{'--phase-color': phase.color}}>
+            {phase.icon} {phase.shortName}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ModelViz({modelKey, activeIndex, doneSet}) {
+  const labels = {
+    waterfall: 'Каскадный поток',
+    agile: 'Спринты Agile',
+    vmodel: 'V-образная верификация',
+  };
+  return (
+    <div className={styles.modelViz}>
+      <p className={styles.modelVizLabel}>{labels[modelKey]}</p>
+      {modelKey === 'waterfall' && <WaterfallViz activeIndex={activeIndex} doneSet={doneSet} />}
+      {modelKey === 'agile' && <AgileViz activeIndex={activeIndex} doneSet={doneSet} />}
+      {modelKey === 'vmodel' && <VModelViz activeIndex={activeIndex} doneSet={doneSet} />}
+    </div>
+  );
+}
+
+function PhaseDetail({phase, completionNote}) {
+  return (
+    <div className={clsx('it-demo__panel', styles.detail)}>
+      <div className={styles.detailHeader}>
+        <div className={styles.detailIcon} style={{background: `color-mix(in srgb, ${phase.color} 22%, transparent)`}}>
+          {phase.icon}
+        </div>
+        <div>
+          <h3 className={styles.detailTitle}>{phase.name}</h3>
+          <p className={styles.detailMeta}>
+            Фаза {PHASES.findIndex((p) => p.id === phase.id) + 1} из {PHASES.length}
+            {phase.sprint && (
+              <span className={styles.sprintBadge}>Спринт {phase.sprint}</span>
+            )}
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.detailGrid}>
+        <div className={styles.detailBlock}>
+          <h5>Длительность</h5>
+          <p>{phase.duration}</p>
+          <h5 style={{marginTop: '0.85rem'}}>Команда</h5>
+          <p>{phase.team}</p>
+          <h5 style={{marginTop: '0.85rem'}}>Результаты</h5>
+          <p>{phase.deliverables}</p>
+        </div>
+        <div className={styles.detailBlock}>
+          <h5>Инструменты</h5>
+          <p>{phase.tools}</p>
+          <h5 style={{marginTop: '0.85rem'}}>Риск</h5>
+          <p className={riskClass(phase.risk)}>{RISK_LABEL[phase.risk]}</p>
+          <h5 style={{marginTop: '0.85rem'}}>Доля бюджета</h5>
+          <p>~{phase.costPct}%</p>
+        </div>
+        <div className={styles.detailBlock}>
+          <h5>Ключевые активности</h5>
+          <ul>
+            {phase.activities.map((a) => (
+              <li key={a}>{a}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {completionNote && <p className={styles.simNote}>{completionNote}</p>}
+    </div>
+  );
+}
+
+function CostBar({highlightIndex, doneSet}) {
+  return (
+    <div className={styles.costSection}>
+      <p className={styles.costTitle}>Распределение бюджета по фазам</p>
+      <div className={styles.costBar} role="img" aria-label="Диаграмма бюджета по фазам SDLC">
+        {PHASES.map((phase, idx) => (
+          <div
+            key={phase.id}
+            className={clsx(styles.costSegment, {
+              [styles.costSegmentDim]:
+                highlightIndex >= 0 && highlightIndex !== idx && !doneSet.has(idx),
+            })}
+            style={{
+              width: `${phase.costPct}%`,
+              background: phase.color,
+            }}
+            title={`${phase.shortName}: ${phase.costPct}%`}
+          />
+        ))}
+      </div>
+      <div className={styles.costLegend}>
+        {PHASES.map((phase) => (
+          <span key={phase.id} className={styles.costLegendItem}>
+            <span className={styles.costDot} style={{background: phase.color}} />
+            {phase.shortName} ({phase.costPct}%)
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SoftwareLifecycleDemoInner() {
+  const [selectedModel, setSelectedModel] = useState('waterfall');
+  const [selectedPhase, setSelectedPhase] = useState(0);
+  const [simPhase, setSimPhase] = useState(-1);
+  const [simStatus, setSimStatus] = useState('idle');
+  const [progress, setProgress] = useState(0);
+  const [doneSet, setDoneSet] = useState(() => new Set());
+  const [logEntries, setLogEntries] = useState([]);
+  const [completionNotes, setCompletionNotes] = useState({});
+
+  const timerRef = useRef(null);
+
+  const clearTimer = useCallback(() => {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+      timerRef.current = null;
+    }
+  }, []);
+
+  const appendLog = useCallback((message) => {
+    setLogEntries((prev) =>
+      [{id: `${Date.now()}-${prev.length}`, time: formatTime(new Date()), message}, ...prev].slice(
+        0,
+        10,
+      ),
+    );
+  }, []);
+
+  const reset = useCallback(() => {
+    clearTimer();
+    setSimStatus('idle');
+    setSimPhase(-1);
+    setProgress(0);
+    setDoneSet(new Set());
+    setLogEntries([]);
+    setCompletionNotes({});
+  }, [clearTimer]);
+
+  useEffect(() => () => clearTimer(), [clearTimer]);
+
+  useEffect(() => {
+    clearTimer();
+    setSimStatus('idle');
+    setSimPhase(-1);
+    setProgress(0);
+    setDoneSet(new Set());
+    setLogEntries([]);
+    setCompletionNotes({});
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- сброс симуляции при смене модели
+  }, [selectedModel]);
+
+  const startSimulation = useCallback(() => {
+    if (simStatus === 'running') return;
+
+    clearTimer();
+    setSimStatus('running');
+    setSimPhase(0);
+    setProgress(0);
+    setDoneSet(new Set());
+    setLogEntries([]);
+    setCompletionNotes({});
+    setSelectedPhase(0);
+    appendLog(`Старт симуляции — модель ${MODELS[selectedModel].name}`);
+
+    const phaseMs = MODELS[selectedModel].phaseMs;
+    let index = 0;
+
+    const runPhase = () => {
+      if (index >= PHASES.length) {
+        clearTimer();
+        setSimStatus('done');
+        setSimPhase(-1);
+        setProgress(100);
+        appendLog('✓ Проект завершён — все фазы пройдены');
+        return;
+      }
+
+      const phase = PHASES[index];
+      setSimPhase(index);
+      setSelectedPhase(index);
+      setProgress(Math.round(((index + 1) / PHASES.length) * 100));
+      appendLog(phase.log);
+
+      timerRef.current = setTimeout(() => {
+        setDoneSet((prev) => new Set([...prev, index]));
+        setCompletionNotes((prev) => ({
+          ...prev,
+          [index]: `Фаза завершена за ${Math.floor(Math.random() * 8) + 2} дн.`,
+        }));
+        index += 1;
+        runPhase();
+      }, phaseMs);
+    };
+
+    runPhase();
+  }, [simStatus, selectedModel, clearTimer, appendLog]);
+
+  const isRunning = simStatus === 'running';
+  const displayActive = isRunning ? simPhase : selectedPhase;
+  const vizActiveIndex = isRunning ? simPhase : selectedPhase;
+
+  const metrics = useMemo(
+    () => computeMetrics(doneSet.size, simPhase >= 0 ? simPhase : selectedPhase),
+    [doneSet.size, simPhase, selectedPhase],
+  );
+
+  const model = MODELS[selectedModel];
+  const currentPhase = PHASES[displayActive];
+
+  const phaseBtnClass = (idx) =>
+    clsx(styles.phaseBtn, {
+      [styles.phaseBtnPending]: isRunning && simPhase >= 0 && idx > simPhase,
+    });
+
+  const phaseOrbClass = (idx) =>
+    clsx(styles.phaseOrb, {
+      [styles.phaseOrbActive]: displayActive === idx,
+      [styles.phaseOrbDone]: doneSet.has(idx),
+      [styles.phaseOrbRunning]: isRunning && simPhase === idx,
+    });
+
+  return (
+    <DemoShell className={styles.root}>
+      <DemoCard
+        title="SDLC: жизненный цикл ПО"
+        subtitle="От идеи до вывода из эксплуатации — интерактивная карта фаз, моделей и метрик проекта."
+      >
+        <div className={styles.toolbar} role="tablist" aria-label="Модель разработки">
+          {Object.entries(MODELS).map(([key, m]) => (
+            <button
+              key={key}
+              type="button"
+              role="tab"
+              aria-selected={selectedModel === key}
+              className={clsx('it-demo__tab', {'it-demo__tab--active': selectedModel === key})}
+              onClick={() => setSelectedModel(key)}
+              disabled={isRunning}
+            >
+              {m.name.split(' ')[0]}
+            </button>
+          ))}
+        </div>
+
+        <div className={styles.modelPanel}>
+          <p className={styles.modelName}>{model.name}</p>
+          <p className={styles.modelDesc}>{model.description}</p>
+          <div className={styles.prosCons}>
+            <span className={styles.pros}>✓ {model.pros.join(' · ')}</span>
+            <span className={styles.cons}>✗ {model.cons.join(' · ')}</span>
+          </div>
+        </div>
+
+        <ModelViz modelKey={selectedModel} activeIndex={vizActiveIndex} doneSet={doneSet} />
+
+        {(progress > 0 || isRunning) && (
+          <div style={{marginBottom: '1rem'}}>
+            <div
+              className="it-demo__row"
+              style={{justifyContent: 'space-between', marginBottom: '0.35rem'}}
+            >
+              <span style={{fontSize: '0.8rem', color: 'var(--demo-muted)'}}>Прогресс проекта</span>
+              <span style={{fontSize: '0.8rem', fontWeight: 600}}>{progress}%</span>
+            </div>
+            <div className="it-demo__progress">
+              <div className="it-demo__progress-bar" style={{width: `${progress}%`}} />
+            </div>
+          </div>
+        )}
+
+        <div className={styles.timelineWrap}>
+          <div className={styles.timelineTrack} aria-hidden>
+            <div
+              className={styles.timelineFill}
+              style={{
+                width: `${(doneSet.size / PHASES.length) * 100}%`,
+              }}
+            />
+          </div>
+          <div className={styles.timeline} role="list" aria-label="Фазы SDLC">
+            {PHASES.map((phase, idx) => (
+              <button
+                key={phase.id}
+                type="button"
+                role="listitem"
+                className={phaseBtnClass(idx)}
+                style={{'--phase-color': phase.color}}
+                onClick={() => !isRunning && setSelectedPhase(idx)}
+                disabled={isRunning}
+                aria-current={displayActive === idx ? 'step' : undefined}
+                aria-label={`${phase.name}${doneSet.has(idx) ? ', завершена' : ''}`}
+              >
+                <div className={phaseOrbClass(idx)}>
+                  {phase.icon}
+                </div>
+                <span
+                  className={clsx(styles.phaseLabel, {
+                    [styles.phaseLabelActive]: displayActive === idx,
+                  })}
+                >
+                  {phase.shortName}
+                </span>
+                {doneSet.has(idx) && <span className={styles.phaseCheck}>✓</span>}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {currentPhase && (
+          <PhaseDetail
+            phase={currentPhase}
+            completionNote={completionNotes[displayActive]}
+          />
+        )}
+
+        <CostBar highlightIndex={displayActive} doneSet={doneSet} />
+
+        <div style={{marginTop: '1rem'}}>
+          <p style={{margin: '0 0 0.5rem', fontSize: '0.8rem', fontWeight: 600, color: 'var(--demo-muted)'}}>
+            Метрики эффективности
+            {isRunning && ' (обновляются в реальном времени)'}
+          </p>
+          <div className={styles.metricsGrid}>
+            <div className={styles.metricCard}>
+              <div className={styles.metricLabel}>CPI (стоимость)</div>
+              <div
+                className={clsx(styles.metricValue, {
+                  [styles.metricGood]: Number(metrics.cpi) >= 1,
+                  [styles.metricWarn]: Number(metrics.cpi) < 1,
+                })}
+              >
+                {metrics.cpi}
+              </div>
+            </div>
+            <div className={styles.metricCard}>
+              <div className={styles.metricLabel}>SPI (сроки)</div>
+              <div
+                className={clsx(styles.metricValue, {
+                  [styles.metricGood]: Number(metrics.spi) >= 1,
+                  [styles.metricWarn]: Number(metrics.spi) < 1,
+                })}
+              >
+                {metrics.spi}
+              </div>
+            </div>
+            <div className={styles.metricCard}>
+              <div className={styles.metricLabel}>Defect density</div>
+              <div
+                className={clsx(styles.metricValue, {
+                  [styles.metricBad]: Number(metrics.defect) > 2.5,
+                  [styles.metricWarn]: Number(metrics.defect) > 1.5 && Number(metrics.defect) <= 2.5,
+                  [styles.metricGood]: Number(metrics.defect) <= 1.5,
+                })}
+              >
+                {metrics.defect}/KLOC
+              </div>
+            </div>
+            <div className={styles.metricCard}>
+              <div className={styles.metricLabel}>Code coverage</div>
+              <div className={clsx(styles.metricValue, styles.metricInfo)}>
+                {metrics.coverage}%
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {logEntries.length > 0 && (
+          <div style={{marginTop: '1rem'}}>
+            <p style={{margin: '0 0 0.35rem', fontSize: '0.8rem', fontWeight: 600, color: 'var(--demo-muted)'}}>
+              Журнал проекта
+            </p>
+            <div className="it-demo__log" role="log" aria-live="polite">
+              {logEntries.map((entry) => (
+                <div key={entry.id} className="it-demo__log-entry">
+                  <span style={{color: 'var(--demo-muted)', marginRight: '0.5rem'}}>[{entry.time}]</span>
+                  {entry.message}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <div className={clsx('it-demo__row', styles.controls)}>
+          {simStatus !== 'running' && (
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--primary"
+              onClick={simStatus === 'done' ? reset : startSimulation}
+            >
+              {simStatus === 'done' ? 'Повторить симуляцию' : 'Симулировать проект'}
+            </button>
+          )}
+          {simStatus === 'running' && (
+            <span className="it-demo__badge it-demo__badge--active">Выполняется…</span>
+          )}
+          {simStatus === 'done' && (
+            <span className="it-demo__badge it-demo__badge--active">Проект завершён</span>
+          )}
+          {(simStatus === 'running' || simStatus === 'done' || doneSet.size > 0) && (
+            <button type="button" className="it-demo__btn it-demo__btn--secondary" onClick={reset}>
+              Сброс
+            </button>
+          )}
+        </div>
+
+        {simStatus === 'idle' && doneSet.size === 0 && (
+          <div className="it-demo__alert it-demo__alert--info" style={{marginTop: '1rem'}}>
+            Выберите модель, кликните фазу на таймлайне или запустите симуляцию — журнал и метрики
+            обновятся по ходу «проекта».
+          </div>
+        )}
+
+        <div className={styles.bestPractices}>
+          <p className={styles.bestTitle}>Лучшие практики успешного проекта</p>
+          <ul className={styles.bestList}>
+            {BEST_PRACTICES.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      </DemoCard>
+    </DemoShell>
+  );
+}
+
+export default function SoftwareLifecycleDemo() {
+  return (
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо жизненного цикла ПО…')}>
+      {() => <SoftwareLifecycleDemoInner />}
+    </BrowserOnly>
+  );
+}

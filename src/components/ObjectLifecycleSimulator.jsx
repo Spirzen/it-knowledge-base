@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
 
 const ObjectLifecycleSimulator = () => {
   const [step, setStep] = useState(0);
@@ -308,10 +310,11 @@ const ObjectLifecycleSimulator = () => {
   const responsiveStyles = getResponsiveStyles();
 
   return (
-    <BrowserOnly>
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка симулятора жизненного цикла…')}>
       {() => (
+        <DemoShell>
+        <DemoCard title="Жизненный цикл объекта" subtitle="От объявления ссылки в стеке до сборки мусора в куче.">
         <div style={responsiveStyles.container}>
-          <h3 style={responsiveStyles.header}>Визуализатор Жизненного Цикла Объекта</h3>
           
           <div style={responsiveStyles.progressLine}>
             <div style={{...responsiveStyles.progressBar, width: `${(step / 32) * 100}%`}}></div>
@@ -408,6 +411,8 @@ const ObjectLifecycleSimulator = () => {
             Нажмите «Следующий этап», чтобы пройти путь от проектирования до очистки памяти.
           </div>
         </div>
+        </DemoCard>
+        </DemoShell>
       )}
     </BrowserOnly>
   );

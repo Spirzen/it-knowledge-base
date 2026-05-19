@@ -1,399 +1,283 @@
-import React, { useState, useRef } from 'react';
+import React, {useState, useRef, useEffect, useCallback, useMemo} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-
-const COLORS = {
-  event: '#ffc107',
-  subscriber1: '#0d6efd',
-  subscriber2: '#198754',
-  bg: '#f8f9fa',
-  text: '#343a40',
-  border: '#dee2e6',
-  buttonBg: '#ffc107',
-  buttonHover: '#ffdb4d',
-};
+import clsx from 'clsx';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import flowStyles from './shared/interactionDemo.module.css';
 
 const STAGES = [
-  { id: 'trigger', label: 'ГЕНЕРАЦИЯ СОБЫТИЯ', color: COLORS.event, duration: 800 },
-  { id: 'publish', label: 'ОТПРАВКА В ШИНУ', color: COLORS.event, duration: 1000 },
-  { 
-    id: 'react_1', 
-    label: 'РЕАКЦИЯ СИСТЕМЫ А', 
-    color: COLORS.subscriber1, 
-    duration: 1500 
+  {
+    id: 'trigger',
+    label: 'Событие',
+    duration: 900,
+    desc: 'Источник генерирует доменное событие — например, «Заказ создан».',
+    log: '⚡ OrderCreated { id: 1042, total: 4990 }',
+    active: ['source'],
   },
-  { 
-    id: 'react_2', 
-    label: 'РЕАКЦИЯ СИСТЕМЫ Б', 
-    color: COLORS.subscriber2, 
-    duration: 1500 
+  {
+    id: 'publish',
+    label: 'Публикация',
+    duration: 1100,
+    desc: 'Событие попадает в шину (Kafka, RabbitMQ, EventBridge) — издатель не знает подписчиков.',
+    log: '→ topic: orders.events — partition 3',
+    active: ['source', 'bus'],
+  },
+  {
+    id: 'react_a',
+    label: 'Подписчик А',
+    duration: 1600,
+    desc: 'Сервис склада реагирует независимо: резервирует товар.',
+    log: '◀ Warehouse: reserveStock(1042)',
+    active: ['bus', 'subA'],
+  },
+  {
+    id: 'react_b',
+    label: 'Подписчик Б',
+    duration: 1600,
+    desc: 'Сервис уведомлений тоже получил событие — отправляет email.',
+    log: '◀ Notify: sendEmail(user@example.com)',
+    active: ['bus', 'subB'],
   },
 ];
 
-const ReactiveInteractionContent = () => {
-  const [currentStageIndex, setCurrentStageIndex] = useState(0);
-  const [isCompleted, setIsCompleted] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-  
-  const timerRef = useRef(null);
+const TOTAL_DURATION = STAGES.reduce((sum, s) => sum + s.duration, 0);
 
-  const clearTimer = () => {
+function formatTime(date) {
+  return date.toLocaleTimeString('ru-RU', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    fractionalSecondDigits: 3,
+  });
+}
+
+function ReactiveInteractionInner() {
+  const [phase, setPhase] = useState('idle');
+  const [stageIndex, setStageIndex] = useState(-1);
+  const [progress, setProgress] = useState(0);
+  const [logEntries, setLogEntries] = useState([]);
+
+  const timerRef = useRef(null);
+  const progressRef = useRef(null);
+  const startTimeRef = useRef(0);
+
+  const clearTimer = useCallback(() => {
     if (timerRef.current) {
       clearTimeout(timerRef.current);
       timerRef.current = null;
     }
-  };
+    if (progressRef.current) {
+      clearInterval(progressRef.current);
+      progressRef.current = null;
+    }
+  }, []);
 
-  const startAnimation = () => {
-    if (isAnimating || isCompleted) return;
+  const appendLog = useCallback((message) => {
+    setLogEntries((prev) => [
+      {id: `${Date.now()}-${prev.length}`, time: formatTime(new Date()), message},
+      ...prev,
+    ].slice(0, 8));
+  }, []);
 
-    setIsAnimating(true);
-    setIsCompleted(false);
-    setCurrentStageIndex(0);
+  const reset = useCallback(() => {
+    clearTimer();
+    setPhase('idle');
+    setStageIndex(-1);
+    setProgress(0);
+    setLogEntries([]);
+  }, [clearTimer]);
+
+  const startAnimation = useCallback(() => {
+    if (phase === 'running') return;
+
+    clearTimer();
+    setPhase('running');
+    setStageIndex(0);
+    setProgress(0);
+    setLogEntries([]);
+    startTimeRef.current = Date.now();
+    appendLog('Генерация события');
 
     let currentIndex = 0;
 
-    const runNextStep = () => {
+    const runStage = () => {
       if (currentIndex >= STAGES.length) {
-        setIsAnimating(false);
-        setIsCompleted(true);
+        clearTimer();
+        setPhase('done');
+        setStageIndex(STAGES.length - 1);
+        setProgress(100);
+        appendLog('✓ Все подписчики обработали событие');
         return;
       }
 
       const stage = STAGES[currentIndex];
-      
-      setCurrentStageIndex(currentIndex);
+      setStageIndex(currentIndex);
+      appendLog(stage.log);
 
-      const nextTimer = setTimeout(() => {
+      timerRef.current = setTimeout(() => {
         currentIndex += 1;
-        runNextStep();
+        runStage();
       }, stage.duration);
-
-      timerRef.current = nextTimer;
     };
 
-    runNextStep();
-  };
+    progressRef.current = setInterval(() => {
+      const elapsed = Date.now() - startTimeRef.current;
+      setProgress(Math.min(100, Math.round((elapsed / TOTAL_DURATION) * 100)));
+    }, 80);
 
-  const resetAnimation = () => {
-    clearTimer();
-    setIsAnimating(false);
-    setIsCompleted(false);
-    setCurrentStageIndex(0);
-  };
+    runStage();
+  }, [phase, clearTimer, appendLog]);
 
-  React.useEffect(() => {
-    return () => {
-      clearTimer();
-    };
-  }, []);
+  useEffect(() => () => clearTimer(), [clearTimer]);
 
-  const getContainerStyle = () => ({
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: 'clamp(16px, 5vw, 40px)',
-    backgroundColor: COLORS.bg,
-    borderRadius: 'clamp(8px, 3vw, 12px)',
-    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-    fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
-    maxWidth: 'min(90%, 800px)',
-    margin: 'clamp(10px, 3vw, 20px) auto',
-    border: `1px solid ${COLORS.border}`,
-    width: '100%',
-    boxSizing: 'border-box',
-  });
+  const currentStage = stageIndex >= 0 ? STAGES[stageIndex] : null;
+  const isRunning = phase === 'running';
 
-  const getStatusRowStyle = (isActive, type) => ({
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    width: '100%',
-    marginBottom: 'clamp(12px, 3vw, 20px)',
-    padding: 'clamp(10px, 2.5vw, 15px)',
-    borderRadius: 'clamp(6px, 2vw, 8px)',
-    backgroundColor: isActive ? (type === 'event' ? '#fff3cd' : (type === 'sub1' ? '#cfe2ff' : '#d1e7dd')) : '#ffffff',
-    border: `1px solid ${isActive ? (type === 'event' ? COLORS.event : (type === 'sub1' ? COLORS.subscriber1 : COLORS.subscriber2)) : COLORS.border}`,
-    transition: 'all 0.3s ease',
-    opacity: isActive ? 1 : 0.7,
-    transform: isActive ? 'scale(1.02)' : 'scale(1)',
-    boxSizing: 'border-box',
-    gap: 'clamp(8px, 2vw, 12px)',
-  });
+  const activeSet = useMemo(() => {
+    if (!currentStage) return new Set();
+    return new Set(currentStage.active);
+  }, [currentStage]);
 
-  const getIconStyle = (color, isActive) => ({
-    width: 'clamp(20px, 5vw, 24px)',
-    height: 'clamp(20px, 5vw, 24px)',
-    marginRight: 'clamp(6px, 1.5vw, 12px)',
-    fontWeight: 'bold',
-    color: isActive ? color : COLORS.text,
-    display: 'inline-flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: '50%',
-    backgroundColor: isActive ? `${color}20` : '#e9ecef',
-    fontSize: 'clamp(12px, 3vw, 14px)',
-    transition: 'all 0.3s ease',
-    flexShrink: 0,
-  });
-
-  const getTextStyle = (isActive, color) => ({
-    flex: 1,
-    textAlign: 'left',
-    fontWeight: isActive ? 'bold' : 'normal',
-    color: isActive ? color : COLORS.text,
-    fontSize: 'clamp(12px, 3.5vw, 16px)',
-    letterSpacing: '0.5px',
-    transition: 'color 0.3s ease',
-    wordBreak: 'break-word',
-  });
-
-  const getArrowStyle = (isActive, direction) => ({
-    marginLeft: 'clamp(8px, 2vw, 20px)',
-    marginRight: 'clamp(8px, 2vw, 20px)',
-    color: isActive ? COLORS.event : COLORS.text,
-    fontSize: 'clamp(16px, 4vw, 20px)',
-    transition: 'all 0.3s ease',
-    transform: direction === 'right' && isActive ? 'translateX(5px)' : 'none',
-    flexShrink: 0,
-  });
-
-  const getStatusBadgeStyle = (stageData) => {
-    if (!stageData) return {};
-    
-    return {
-      marginTop: 'clamp(20px, 5vw, 30px)',
-      padding: 'clamp(8px, 2vw, 12px) clamp(16px, 4vw, 24px)',
-      borderRadius: '20px',
-      backgroundColor: `${stageData.color}20`,
-      color: stageData.color,
-      fontWeight: 'bold',
-      fontSize: 'clamp(12px, 3vw, 16px)',
-      border: `1px solid ${stageData.color}`,
-      animation: 'pulse 1.5s infinite',
-      textAlign: 'center',
-      whiteSpace: 'nowrap',
-    };
-  };
-
-  const getButtonStyle = (isResetting) => ({
-    marginTop: 'clamp(20px, 5vw, 30px)',
-    padding: 'clamp(10px, 2.5vw, 12px) clamp(16px, 4vw, 24px)',
-    backgroundColor: isAnimating ? COLORS.text : COLORS.buttonBg,
-    color: 'white',
-    border: 'none',
-    borderRadius: '6px',
-    cursor: isAnimating ? 'not-allowed' : 'pointer',
-    fontSize: 'clamp(14px, 3.5vw, 16px)',
-    fontWeight: 'bold',
-    transition: 'transform 0.2s, background-color 0.2s',
-    outline: 'none',
-    opacity: isAnimating ? 0.7 : 1,
-    pointerEvents: isAnimating ? 'none' : 'auto',
-    width: 'auto',
-    minWidth: 'clamp(160px, 30vw, 200px)',
-  });
-
-  const getSubscribersContainerStyle = () => ({
-    display: 'flex',
-    gap: 'clamp(12px, 3vw, 20px)',
-    width: '100%',
-    justifyContent: 'center',
-    flexDirection: 'row',
-  });
-
-  const getTitleStyle = () => ({
-    marginBottom: 'clamp(20px, 5vw, 30px)',
-    color: COLORS.text,
-    textAlign: 'center',
-    fontSize: 'clamp(18px, 4.5vw, 24px)',
-    fontWeight: '600',
-    padding: '0 10px',
-  });
-
-  const getDescriptionStyle = () => ({
-    marginBottom: 'clamp(10px, 2vw, 15px)',
-    color: COLORS.text,
-    fontSize: 'clamp(11px, 3vw, 14px)',
-    textAlign: 'center',
-  });
-
-  const getLineStyle = () => ({
-    width: '80%',
-    height: '2px',
-    backgroundColor: currentStageIndex === 1 ? COLORS.event : COLORS.border,
-    margin: '0 auto clamp(15px, 4vw, 20px) auto',
-    transition: 'background-color 0.5s ease',
-    position: 'relative',
-    animation: currentStageIndex === 1 ? 'linePulse 1s infinite alternate' : 'none',
-  });
-
-  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 640;
-  
-  const getSubscriberStyle = (index, isActive, type) => {
-    const baseStyle = getStatusRowStyle(isActive, type);
-    if (isMobile) {
-      return {
-        ...baseStyle,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        width: '100%',
-      };
-    }
-    return {
-      ...baseStyle,
-      flex: 1,
-      minWidth: '0',
-    };
-  };
+  const stepClass = (index) =>
+    clsx('it-demo__step', {
+      'it-demo__step--active': isRunning && stageIndex === index,
+      'it-demo__step--done':
+        (isRunning && stageIndex > index) || (phase === 'done' && index < STAGES.length),
+    });
 
   return (
-    <div style={getContainerStyle()}>
-      <style>{`
-        @keyframes pulse {
-          0% { box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.event}40; }
-          70% { box-shadow: 0 0 0 10px ${STAGES[currentStageIndex]?.color || COLORS.event}00; }
-          100% { box-shadow: 0 0 0 0 ${STAGES[currentStageIndex]?.color || COLORS.event}00; }
-        }
-        @keyframes linePulse {
-          0% { opacity: 0.3; }
-          100% { opacity: 1; }
-        }
-        
-        @media (max-width: 640px) {
-          .subscribers-container {
-            flex-direction: column !important;
-          }
-          .status-badge {
-            white-space: normal !important;
-            word-break: break-word !important;
-          }
-        }
-        
-        @media (max-width: 480px) {
-          .status-badge {
-            font-size: 11px !important;
-            padding: 8px 12px !important;
-          }
-        }
-        
-        @media (hover: hover) {
-          button:hover {
-            transform: translateY(-2px);
-          }
-        }
-        
-        @media (hover: none) {
-          button:active {
-            transform: scale(0.98);
-          }
-        }
-      `}</style>
-
-      <h2 style={getTitleStyle()}>
-        Реактивное взаимодействие
-      </h2>
-      <p style={getDescriptionStyle()}>
-        Event-Driven Architecture
-      </p>
-
-      {/* Инициатор события */}
-      <div style={getStatusRowStyle(currentStageIndex >= 0 && currentStageIndex <= 1, 'event')}>
-        <span style={getIconStyle(COLORS.event, currentStageIndex === 0)}>⚡</span>
-        <span style={getTextStyle(currentStageIndex === 0, COLORS.event)}>Источник События</span>
-        <span style={getArrowStyle(currentStageIndex === 0, 'right')}>➜</span>
-      </div>
-
-      {/* Шина событий */}
-      <div style={getLineStyle()} />
-
-      {/* Подписчики */}
-      <div className="subscribers-container" style={getSubscribersContainerStyle()}>
-        {/* Система А */}
-        <div 
-          className="subscriber-a"
-          style={getSubscriberStyle(2, currentStageIndex === 2, 'sub1')}
+    <DemoShell className={flowStyles.root}>
+      <DemoCard
+        title="Реактивное взаимодействие"
+        subtitle="Event-Driven: издатель публикует событие, подписчики реагируют независимо."
+      >
+        <div
+          className={clsx(flowStyles.node, flowStyles.nodeActiveEvent, {
+            [flowStyles.nodeIdle]: phase === 'idle',
+            [flowStyles.nodeActiveEvent]: activeSet.has('source'),
+          })}
+          style={{marginBottom: '0.5rem'}}
         >
-          <span style={getIconStyle(COLORS.subscriber1, currentStageIndex === 2)}>🔄</span>
-          <span style={getTextStyle(currentStageIndex === 2, COLORS.subscriber1)}>
-            Система А
-          </span>
-          <span style={getArrowStyle(currentStageIndex === 2, 'left')}>◀</span>
-        </div>
-
-        {/* Система Б */}
-        <div 
-          className="subscriber-b"
-          style={getSubscriberStyle(3, currentStageIndex === 3, 'sub2')}
-        >
-          <span style={getArrowStyle(currentStageIndex === 3, 'right')}>▶</span>
-          <span style={getTextStyle(currentStageIndex === 3, COLORS.subscriber2)}>
-            Система Б
-          </span>
-          <span style={getIconStyle(COLORS.subscriber2, currentStageIndex === 3)}>🔄</span>
-        </div>
-      </div>
-
-      {/* Индикатор текущего этапа */}
-      <div style={{ marginTop: 'clamp(20px, 5vw, 30px)', textAlign: 'center', width: '100%' }}>
-        <p style={getDescriptionStyle()}>Текущее состояние:</p>
-        {STAGES[currentStageIndex] ? (
-          <div className="status-badge" style={getStatusBadgeStyle(STAGES[currentStageIndex])}>
-            {STAGES[currentStageIndex].label}
+          <div className={flowStyles.nodeIcon} aria-hidden>
+            ⚡
           </div>
-        ) : (
-          <div className="status-badge" style={{ ...getStatusBadgeStyle({color: COLORS.text}), animation: 'none' }}>
-            Готов к запуску
+          <p className={flowStyles.nodeTitle}>Источник события</p>
+          <p className={flowStyles.nodeHint}>Order Service</p>
+        </div>
+
+        <div
+          className={clsx(flowStyles.eventHub, {
+            [flowStyles.eventHubActive]: activeSet.has('bus'),
+          })}
+        >
+          📡 Шина событий (Event Bus)
+        </div>
+
+        <div className={flowStyles.busRow}>
+          <div
+            className={clsx(flowStyles.subscriber, {
+              [flowStyles.subscriberActive]: activeSet.has('subA'),
+            })}
+          >
+            <div className={flowStyles.nodeIcon} aria-hidden>
+              📦
+            </div>
+            <p className={flowStyles.nodeTitle}>Система А</p>
+            <p className={flowStyles.nodeHint}>Склад</p>
+          </div>
+          <div
+            className={clsx(flowStyles.subscriber, {
+              [flowStyles.subscriberActiveGreen]: activeSet.has('subB'),
+            })}
+          >
+            <div className={flowStyles.nodeIcon} aria-hidden>
+              ✉️
+            </div>
+            <p className={flowStyles.nodeTitle}>Система Б</p>
+            <p className={flowStyles.nodeHint}>Уведомления</p>
+          </div>
+        </div>
+
+        {currentStage && <p className={flowStyles.stageDesc}>{currentStage.desc}</p>}
+
+        <div className="it-demo__steps" style={{marginTop: '1rem'}} aria-label="Этапы">
+          {STAGES.map((stage, index) => (
+            <div key={stage.id} className={stepClass(index)}>
+              <div style={{fontWeight: 700, marginBottom: '0.2rem'}}>{index + 1}</div>
+              {stage.label}
+            </div>
+          ))}
+        </div>
+
+        <div style={{marginTop: '1rem'}}>
+          <div
+            className="it-demo__row"
+            style={{justifyContent: 'space-between', marginBottom: '0.35rem'}}
+          >
+            <span style={{fontSize: '0.8rem', color: 'var(--demo-muted)'}}>Прогресс</span>
+            <span style={{fontSize: '0.8rem', fontWeight: 600}}>{progress}%</span>
+          </div>
+          <div className="it-demo__progress">
+            <div className="it-demo__progress-bar" style={{width: `${progress}%`}} />
+          </div>
+        </div>
+
+        {logEntries.length > 0 && (
+          <div style={{marginTop: '1rem'}}>
+            <p
+              style={{
+                margin: '0 0 0.35rem',
+                fontSize: '0.8rem',
+                fontWeight: 600,
+                color: 'var(--demo-muted)',
+              }}
+            >
+              Журнал событий
+            </p>
+            <div className="it-demo__log" role="log" aria-live="polite">
+              {logEntries.map((entry) => (
+                <div key={entry.id} className="it-demo__log-entry">
+                  <span style={{color: 'var(--demo-muted)', marginRight: '0.5rem'}}>
+                    [{entry.time}]
+                  </span>
+                  {entry.message}
+                </div>
+              ))}
+            </div>
           </div>
         )}
-      </div>
 
-      {/* Кнопка управления */}
-      {!isAnimating && !isCompleted ? (
-        <button 
-          onClick={startAnimation}
-          style={getButtonStyle(false)}
-          onMouseEnter={(e) => e.target.style.backgroundColor = COLORS.buttonHover}
-          onMouseLeave={(e) => e.target.style.backgroundColor = COLORS.buttonBg}
-          onTouchStart={(e) => {
-            if (!isAnimating) {
-              e.target.style.backgroundColor = COLORS.buttonHover;
-            }
-          }}
-          onTouchEnd={(e) => {
-            if (!isAnimating) {
-              e.target.style.backgroundColor = COLORS.buttonBg;
-            }
-          }}
-        >
-          Генерировать событие
-        </button>
-      ) : isCompleted ? (
-        <button 
-          onClick={resetAnimation}
-          style={getButtonStyle(false)}
-          onMouseEnter={(e) => e.target.style.backgroundColor = COLORS.buttonHover}
-          onMouseLeave={(e) => e.target.style.backgroundColor = COLORS.buttonBg}
-          onTouchStart={(e) => e.target.style.backgroundColor = COLORS.buttonHover}
-          onTouchEnd={(e) => e.target.style.backgroundColor = COLORS.buttonBg}
-        >
-          Повторить эксперимент
-        </button>
-      ) : (
-        <div style={{ marginTop: 'clamp(20px, 5vw, 30px)', color: COLORS.text, fontSize: 'clamp(12px, 3vw, 14px)' }}>
-          Обработка...
+        <div className={clsx('it-demo__row', flowStyles.controls)}>
+          {phase !== 'running' && (
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--primary"
+              onClick={phase === 'done' ? reset : startAnimation}
+            >
+              {phase === 'done' ? 'Повторить' : 'Сгенерировать событие'}
+            </button>
+          )}
+          {phase === 'running' && (
+            <span className="it-demo__badge it-demo__badge--active">Обработка…</span>
+          )}
+          {phase === 'done' && (
+            <span className="it-demo__badge it-demo__badge--active">Завершено</span>
+          )}
         </div>
-      )}
-    </div>
-  );
-};
 
-const ReactiveInteraction = () => {
+        <div className="it-demo__alert it-demo__alert--info" style={{marginTop: '1rem'}}>
+          В отличие от запрос–ответ, издатель не ждёт ответа от подписчиков — связь слабая и
+          асинхронная.
+        </div>
+      </DemoCard>
+    </DemoShell>
+  );
+}
+
+export default function ReactiveInteraction() {
   return (
-    <BrowserOnly fallback={<div>Загрузка...</div>}>
-      {() => <ReactiveInteractionContent />}
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо реактивного взаимодействия…')}>
+      {() => <ReactiveInteractionInner />}
     </BrowserOnly>
   );
-};
-
-export default ReactiveInteraction;
+}

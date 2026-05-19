@@ -1,0 +1,206 @@
+.root {
+  --build-code: #3b82f6;
+  --build-start: #8b5cf6;
+  --build-pre: #10b981;
+  --build-compile: #f59e0b;
+  --build-link: #ef4444;
+  --build-ship: #06b6d4;
+}
+
+.flowDiagram {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  -webkit-overflow-scrolling: touch;
+}
+
+.node {
+  flex-shrink: 0;
+  width: 5.5rem;
+  min-height: 4.5rem;
+  padding: 0.4rem 0.25rem;
+  border-radius: 10px;
+  border: 2px solid var(--demo-border);
+  text-align: center;
+  font-size: 0.62rem;
+  font-weight: 600;
+  line-height: 1.25;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+  background: var(--ifm-background-color);
+  color: var(--ifm-color-content);
+}
+
+.nodeEmoji {
+  font-size: 1.35rem;
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.nodeSub {
+  font-size: 0.55rem;
+  font-weight: 400;
+  color: var(--demo-muted);
+  margin-top: 0.15rem;
+}
+
+.nodeActive {
+  transform: scale(1.06);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--node-color) 35%, transparent);
+}
+
+.nodeDone {
+  border-color: var(--node-color);
+  background: color-mix(in srgb, var(--node-color) 12%, var(--ifm-background-color));
+}
+
+.arrow {
+  flex-shrink: 0;
+  color: var(--demo-muted);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.mobileHero {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+}
+
+.mobileIcon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--node-color);
+  background: color-mix(in srgb, var(--node-color) 12%, transparent);
+  flex-shrink: 0;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.dot {
+  height: 0.45rem;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: width 0.25s ease, background 0.25s ease;
+}
+
+.stepList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 16rem;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.stepListItem {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 8px;
+  border: none;
+  border-left: 3px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  width: 100%;
+  transition: background 0.2s ease;
+}
+
+.stepListItemActive {
+  border-left-color: var(--node-color);
+  background: color-mix(in srgb, var(--node-color) 10%, var(--ifm-background-color));
+}
+
+.artifact {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.25rem 0.5rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  border-radius: 6px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.detailGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.65rem;
+  margin: 1rem 0;
+}
+
+.detailCard {
+  padding: 0.65rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-surface-color);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.buildTypes {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #fef08a;
+  background: color-mix(in srgb, #fef08a 25%, var(--ifm-background-surface-color));
+}
+
+.buildTypeRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.78rem;
+}
+
+.buildDebug {
+  border-left: 3px solid var(--demo-error);
+  padding-left: 0.5rem;
+}
+
+.buildRelease {
+  border-left: 3px solid var(--demo-success);
+  padding-left: 0.5rem;
+}
+
+@media (min-width: 997px) {
+  .mobileOnly {
+    display: none;
+  }
+}
+
+@media (max-width: 996px) {
+  .desktopOnly {
+    display: none;
+  }
+}

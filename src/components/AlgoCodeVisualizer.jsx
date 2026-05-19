@@ -1,158 +1,182 @@
-import React, { useState } from 'react';
+import React, {useState, useCallback, useEffect} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import clsx from 'clsx';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import styles from './AlgoCodeVisualizer.module.css';
 
-const AlgoCodeVisualizer = () => {
-  const [step, setStep] = useState(0);
-
-  const data = [
-    { algo: "ПРОСНУТЬСЯ()", code: "wakeUp();" },
-    { algo: "СОБРАТЬ ВЕЩИ()", code: "packBag();" },
-    { algo: "ЕСЛИ ПОГОДА == 'ДОЖДЬ'", code: "if (weather === 'rain') {" },
-    { algo: "ТО ОСТАТЬСЯ()", code: "  stayHome();" },
-    { algo: "ИНАЧЕ ГУЛЯТЬ()", code: "} else { walk();" }
-  ];
-
-  return (
-    <BrowserOnly>
-      {() => (
-        <div style={{ 
-          border: '1px solid #ccc', 
-          padding: '20px', 
-          borderRadius: '8px',
-          maxWidth: '1200px',
-          margin: '0 auto',
-          backgroundColor: '#fff'
-        }}>
-          <h3 style={{ margin: '0 0 20px 0', fontSize: 'clamp(1.2rem, 4vw, 1.5rem)' }}>
-            Алгоритм и Код
-          </h3>
-          
-          <div style={{ 
-            display: 'flex', 
-            flexDirection: 'column',
-            gap: '20px',
-            '@media (min-width: 768px)': {
-              flexDirection: 'row'
-            }
-          }}>
-            {/* Блок Алгоритма */}
-            <div style={{ 
-              flex: 1, 
-              backgroundColor: '#f9f9f9', 
-              padding: 'clamp(10px, 3vw, 20px)', 
-              borderRadius: '8px',
-              overflowX: 'auto'
-            }}>
-              <strong style={{ fontSize: 'clamp(14px, 3.5vw, 16px)', display: 'block', marginBottom: '10px' }}>
-                Алгоритм (Мыслительный процесс)
-              </strong>
-              <ul style={{ 
-                margin: 0, 
-                paddingLeft: 'clamp(20px, 5vw, 30px)',
-                listStyleType: 'none'
-              }}>
-                {data.map((item, idx) => (
-                  <li key={idx} style={{ 
-                    color: idx === step ? '#0066cc' : '#333', 
-                    fontWeight: idx === step ? 'bold' : 'normal',
-                    fontSize: 'clamp(14px, 3.5vw, 16px)',
-                    padding: '8px 0',
-                    borderBottom: idx !== data.length - 1 ? '1px solid #e0e0e0' : 'none',
-                    transition: 'all 0.3s ease',
-                    wordBreak: 'break-word'
-                  }}>
-                    {idx === step && '👉 '}
-                    {item.algo}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Блок Кода */}
-            <div style={{ 
-              flex: 1, 
-              backgroundColor: '#2d2d2d', 
-              color: '#fff', 
-              padding: 'clamp(10px, 3vw, 20px)', 
-              borderRadius: '8px',
-              fontFamily: 'monospace',
-              overflowX: 'auto'
-            }}>
-              <strong style={{ 
-                fontSize: 'clamp(14px, 3.5vw, 16px)', 
-                display: 'block', 
-                marginBottom: '10px',
-                color: '#fff'
-              }}>
-                Код (Инструкции машине)
-              </strong>
-              <ul style={{ 
-                margin: 0, 
-                paddingLeft: 'clamp(20px, 5vw, 30px)',
-                listStyleType: 'none'
-              }}>
-                {data.map((item, idx) => (
-                  <li key={idx} style={{ 
-                    color: idx === step ? '#4caf50' : '#ccc', 
-                    fontWeight: idx === step ? 'bold' : 'normal',
-                    fontSize: 'clamp(12px, 3vw, 14px)',
-                    padding: '8px 0',
-                    borderBottom: idx !== data.length - 1 ? '1px solid #444' : 'none',
-                    transition: 'all 0.3s ease',
-                    fontFamily: "'Courier New', 'Monaco', monospace",
-                    wordBreak: 'break-word',
-                    whiteSpace: 'pre-wrap'
-                  }}>
-                    {idx === step && '> '}
-                    {item.code}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Кнопка управления */}
-          <div style={{ 
-            marginTop: '20px', 
-            display: 'flex', 
-            justifyContent: 'center',
-            gap: '10px'
-          }}>
-            <button 
-              onClick={() => setStep(prev => prev < data.length - 1 ? prev + 1 : 0)} 
-              style={{ 
-                cursor: 'pointer',
-                padding: 'clamp(8px, 3vw, 12px) clamp(16px, 5vw, 24px)',
-                fontSize: 'clamp(14px, 3.5vw, 16px)',
-                backgroundColor: '#007bff',
-                color: 'white',
-                border: 'none',
-                borderRadius: '6px',
-                transition: 'all 0.3s ease',
-                fontWeight: 'bold',
-                width: 'auto',
-                minWidth: '160px'
-              }}
-              onMouseEnter={(e) => e.target.style.backgroundColor = '#0056b3'}
-              onMouseLeave={(e) => e.target.style.backgroundColor = '#007bff'}
-            >
-              {step === data.length - 1 ? '🔄 Начать сначала' : '➡️ Следующий шаг'}
-            </button>
-          </div>
-
-          {/* Индикатор прогресса для мобильных устройств */}
-          <div style={{ 
-            marginTop: '15px',
-            textAlign: 'center',
-            fontSize: 'clamp(12px, 3vw, 14px)',
-            color: '#666'
-          }}>
-            Шаг {step + 1} из {data.length}
-          </div>
-        </div>
-      )}
-    </BrowserOnly>
-  );
+const SCENARIOS = {
+  morning: {
+    label: 'Утро',
+    hint: 'Алгоритм — это план на человеческом языке; код — те же шаги в синтаксисе языка программирования.',
+    steps: [
+      {algo: 'ПРОСНУТЬСЯ()', code: 'wakeUp();'},
+      {algo: 'СОБРАТЬ ВЕЩИ()', code: 'packBag();'},
+      {algo: "ЕСЛИ ПОГОДА == 'ДОЖДЬ'", code: "if (weather === 'rain') {"},
+      {algo: '  ТО ОСТАТЬСЯ()', code: '  stayHome();'},
+      {algo: '  ИНАЧЕ ГУЛЯТЬ()', code: '} else {\n  walk();\n}'},
+    ],
+  },
+  sort: {
+    label: 'Сортировка',
+    hint: 'Один и тот же алгоритм можно записать по-разному — важна последовательность действий.',
+    steps: [
+      {algo: 'ВЗЯТЬ массив A', code: 'const arr = [3, 1, 4];'},
+      {algo: 'ДЛЯ каждого i', code: 'for (let i = 0; i < arr.length; i++) {'},
+      {algo: '  НАЙТИ минимум справа', code: '  let minIdx = findMin(arr, i);'},
+      {algo: '  ПОМЕНЯТЬ A[i] и A[min]', code: '  swap(arr, i, minIdx);'},
+      {algo: 'КОНЕЦ', code: '}'},
+    ],
+  },
+  login: {
+    label: 'Вход',
+    hint: 'Ветвления в алгоритме становятся if/else в коде.',
+    steps: [
+      {algo: 'ВВОД логина и пароля', code: 'const creds = readInput();'},
+      {algo: 'ПРОВЕРИТЬ в базе', code: 'const ok = db.verify(creds);'},
+      {algo: 'ЕСЛИ ok', code: 'if (ok) {'},
+      {algo: '  ОТКРЫТЬ сессию', code: '  openSession(user);'},
+      {algo: 'ИНАЧЕ показать ошибку', code: '} else {\n  showError();\n}'},
+    ],
+  },
 };
 
-export default AlgoCodeVisualizer;
+function AlgoCodeVisualizerInner() {
+  const [scenarioKey, setScenarioKey] = useState('morning');
+  const [step, setStep] = useState(0);
+  const [autoPlay, setAutoPlay] = useState(false);
+
+  const scenario = SCENARIOS[scenarioKey];
+  const steps = scenario.steps;
+  const last = steps.length - 1;
+
+  const goNext = useCallback(() => {
+    setStep((s) => (s < last ? s + 1 : 0));
+  }, [last]);
+
+  const goPrev = useCallback(() => {
+    setStep((s) => (s > 0 ? s - 1 : last));
+  }, [last]);
+
+  useEffect(() => {
+    setStep(0);
+    setAutoPlay(false);
+  }, [scenarioKey]);
+
+  useEffect(() => {
+    if (!autoPlay) return undefined;
+    const id = window.setInterval(goNext, 1800);
+    return () => window.clearInterval(id);
+  }, [autoPlay, goNext]);
+
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'ArrowRight') goNext();
+      if (e.key === 'ArrowLeft') goPrev();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [goNext, goPrev]);
+
+  return (
+    <DemoShell>
+      <DemoCard
+        title="Алгоритм и код"
+        subtitle="Сопоставьте шаги «человеческого» алгоритма с инструкциями для машины"
+      >
+        <div className={styles.scenarioBar}>
+          {Object.entries(SCENARIOS).map(([key, s]) => (
+            <button
+              key={key}
+              type="button"
+              className={clsx('it-demo__btn it-demo__btn--sm', scenarioKey !== key && 'it-demo__btn--secondary')}
+              onClick={() => setScenarioKey(key)}
+            >
+              {s.label}
+            </button>
+          ))}
+        </div>
+
+        <div className={styles.panels}>
+          <div className={clsx(styles.panel, styles.panelAlgo)}>
+            <div className={styles.panelHead}>Алгоритм (мысли)</div>
+            <div className={styles.panelBody}>
+              {steps.map((item, idx) => (
+                <div
+                  key={idx}
+                  className={clsx(
+                    styles.stepLine,
+                    idx === step && styles.stepLineActive,
+                    idx < step && styles.stepLineDone,
+                  )}
+                >
+                  <span className={styles.stepNum}>{idx < step ? '✓' : idx + 1}</span>
+                  <span>{item.algo}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.connector} aria-hidden>
+            <span className={clsx(autoPlay && styles.connectorPulse)}>⟷</span>
+          </div>
+
+          <div className={clsx(styles.panel, styles.panelCode)}>
+            <div className={styles.panelHead}>Код (машина)</div>
+            <div className={styles.panelBody}>
+              {steps.map((item, idx) => (
+                <div
+                  key={idx}
+                  className={clsx(
+                    styles.codeLine,
+                    idx === step && styles.codeLineActive,
+                    idx < step && styles.codeLineDone,
+                  )}
+                >
+                  {item.code}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.controls}>
+          <button type="button" className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm" onClick={goPrev}>
+            ← Назад
+          </button>
+          <button type="button" className="it-demo__btn it-demo__btn--primary it-demo__btn--sm" onClick={goNext}>
+            {step === last ? 'Сначала' : 'Далее →'}
+          </button>
+          <button
+            type="button"
+            className={clsx('it-demo__btn it-demo__btn--sm', autoPlay ? 'it-demo__btn--primary' : 'it-demo__btn--secondary')}
+            onClick={() => setAutoPlay((v) => !v)}
+          >
+            {autoPlay ? '⏸ Пауза' : '▶ Авто'}
+          </button>
+          <div className={styles.progressWrap}>
+            <div className="it-demo__progress">
+              <div
+                className="it-demo__progress-bar"
+                style={{width: `${((step + 1) / steps.length) * 100}%`}}
+              />
+            </div>
+            <div style={{fontSize: '0.75rem', color: 'var(--demo-muted)', marginTop: '0.25rem', textAlign: 'center'}}>
+              {step + 1} / {steps.length}
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.hint}>{scenario.hint}</div>
+      </DemoCard>
+    </DemoShell>
+  );
+}
+
+export default function AlgoCodeVisualizer() {
+  return (
+    <BrowserOnly fallback={demoLoadingFallback()}>
+      {() => <AlgoCodeVisualizerInner />}
+    </BrowserOnly>
+  );
+}

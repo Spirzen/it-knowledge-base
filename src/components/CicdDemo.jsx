@@ -1,873 +1,488 @@
-import React, { useState } from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import clsx from 'clsx';
+import DemoShell from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import {
+  BUILD_SUBSTEPS,
+  DEMO_COMMITS,
+  DEPLOY_SUBSTEPS,
+  ENV_LABELS,
+  INITIAL_ENVIRONMENTS,
+  PIPELINE_STEPS,
+  applyDeploymentToEnvironments,
+  createDeployment,
+  createLog,
+  delay,
+  envStatusLabel,
+  generateTestSuite,
+} from './shared/cicdEngine';
+import styles from './CicdDemo.module.css';
 
-// Внутренний компонент с логикой (не рендерится на сервере)
-const CicdDemoContent = () => {
-  const [activeTab, setActiveTab] = useState('pipeline');
-  const [pipelineStatus, setPipelineStatus] = useState('idle');
-  const [currentStep, setCurrentStep] = useState(null);
-  const [logMessages, setLogMessages] = useState([]);
-  const [deployments, setDeployments] = useState([]);
-  const [testResults, setTestResults] = useState({ passed: 0, failed: 0, total: 0 });
-  const [buildNumber, setBuildNumber] = useState(1);
-  const [selectedEnv, setSelectedEnv] = useState('staging');
-  const [autoDeploy, setAutoDeploy] = useState(false);
-  
-  const [environments, setEnvironments] = useState({
-    development: {
-      version: 'v1.0.0',
-      status: 'stable',
-      lastDeploy: '2024-01-15 10:30:00',
-      url: 'dev.myapp.com'
-    },
-    staging: {
-      version: 'v1.1.0-beta',
-      status: 'testing',
-      lastDeploy: '2024-01-20 14:20:00',
-      url: 'staging.myapp.com'
-    },
-    production: {
-      version: 'v1.0.5',
-      status: 'live',
-      lastDeploy: '2024-01-18 09:15:00',
-      url: 'myapp.com'
-    }
-  });
-
-  const runTests = async () => {
-    addLogMessage('🧪 Запуск тестов...', 'info');
-    await delay(800);
-    
-    const tests = [
-      { name: 'Unit тесты', passed: Math.random() > 0.2, time: '0.5s' },
-      { name: 'Интеграционные тесты', passed: Math.random() > 0.3, time: '1.2s' },
-      { name: 'E2E тесты', passed: Math.random() > 0.1, time: '3.5s' },
-      { name: 'Тесты производительности', passed: Math.random() > 0.4, time: '2.1s' },
-      { name: 'Тесты безопасности', passed: Math.random() > 0.15, time: '1.8s' }
-    ];
-    
-    const passed = tests.filter(t => t.passed).length;
-    const failed = tests.length - passed;
-    
-    setTestResults({ passed, failed, total: tests.length });
-    
-    tests.forEach(test => {
-      addLogMessage(
-        `${test.passed ? '✅' : '❌'} ${test.name} - ${test.passed ? 'Пройден' : 'Провален'} (${test.time})`,
-        test.passed ? 'success' : 'error'
-      );
-    });
-    
-    addLogMessage(`Результаты: ${passed} пройдено, ${failed} провалено из ${tests.length}`, 
-                  failed === 0 ? 'success' : 'warning');
-    
-    return failed === 0;
-  };
-
-  const runBuild = async () => {
-    addLogMessage('Начало сборки проекта...', 'info');
-    await delay(500);
-    
-    const steps = [
-      'Установка зависимостей (npm install)',
-      'Линтинг кода (ESLint)',
-      'Транспиляция TypeScript',
-      'Минификация кода (Webpack)',
-      'Оптимизация ассетов',
-      'Генерация source maps',
-      'Создание Docker образа'
-    ];
-    
-    for (let step of steps) {
-      addLogMessage(`  → ${step}...`, 'info');
-      await delay(300);
-      addLogMessage(`  ✓ ${step} завершен`, 'success');
-    }
-    
-    const newBuildNumber = buildNumber + 1;
-    setBuildNumber(newBuildNumber);
-    addLogMessage(`✅ Сборка #${newBuildNumber} успешно завершена!`, 'success');
-    return true;
-  };
-
-  const deployToEnvironment = async (environment) => {
-    addLogMessage(`Начало деплоя на ${environment.toUpperCase()}...`, 'info');
-    await delay(400);
-    
-    const deploySteps = [
-      `Подключение к ${environment} серверу`,
-      'Загрузка артефактов',
-      'Остановка текущего сервиса',
-      'Распаковка архива',
-      'Применение миграций БД',
-      'Обновление конфигураций',
-      'Запуск сервиса',
-      'Проверка health-check'
-    ];
-    
-    for (let step of deploySteps) {
-      addLogMessage(`  → ${step}...`, 'info');
-      await delay(250);
-      addLogMessage(`  ✓ ${step}`, 'success');
-    }
-    
-    const now = new Date().toLocaleString('ru-RU');
-    const newDeployment = {
-      id: Date.now(),
-      environment,
-      version: `v${buildNumber}.${Date.now() % 1000}`,
-      timestamp: now,
-      status: 'success',
-      buildNumber
-    };
-    
-    setDeployments(prev => [newDeployment, ...prev]);
-    
-    setEnvironments(prev => ({
-      ...prev,
-      [environment]: {
-        ...prev[environment],
-        version: newDeployment.version,
-        lastDeploy: now,
-        status: environment === 'production' ? 'live' : 'deployed'
-      }
-    }));
-    
-    addLogMessage(`✅ Деплой на ${environment.toUpperCase()} успешно завершен! Версия: ${newDeployment.version}`, 'success');
-    return true;
-  };
-
-  const runFullPipeline = async () => {
-    if (pipelineStatus === 'running') return;
-    
-    setPipelineStatus('running');
-    setLogMessages([]);
-    addLogMessage('ЗАПУСК CI/CD ПАЙПЛАЙНА', 'info');
-    addLogMessage('═'.repeat(50), 'info');
-    
-    addLogMessage('Step 1: Checkout кода из репозитория', 'info');
-    await delay(500);
-    addLogMessage('  → Клонирование репозитория...', 'info');
-    await delay(300);
-    addLogMessage('  ✓ Ветка: main, коммит: a7f3e8d', 'success');
-    
-    addLogMessage('Step 2: Установка зависимостей', 'info');
-    await delay(600);
-    addLogMessage('  → npm ci', 'info');
-    await delay(300);
-    addLogMessage('  ✓ Установлено 847 пакетов за 12.3s', 'success');
-    
-    addLogMessage('Step 3: Линтинг кода', 'info');
-    await delay(400);
-    addLogMessage('  → ESLint проверка...', 'info');
-    await delay(300);
-    addLogMessage('  ✓ 0 errors, 2 warnings', 'success');
-    
-    addLogMessage('Step 4: Запуск тестов', 'info');
-    const testsPassed = await runTests();
-    
-    if (!testsPassed) {
-      addLogMessage('❌ ПАЙПЛАЙН ОСТАНОВЛЕН: Тесты не пройдены!', 'error');
-      setPipelineStatus('failed');
-      return;
-    }
-    
-    addLogMessage('Step 5: Сборка приложения', 'info');
-    const buildSuccess = await runBuild();
-    
-    if (!buildSuccess) {
-      addLogMessage('❌ ПАЙПЛАЙН ОСТАНОВЛЕН: Ошибка сборки!', 'error');
-      setPipelineStatus('failed');
-      return;
-    }
-    
-    addLogMessage('Step 6: Сканирование безопасности', 'info');
-    await delay(600);
-    addLogMessage('  → Snyk security scan', 'info');
-    await delay(400);
-    addLogMessage('  ✓ Уязвимостей не найдено', 'success');
-    
-    addLogMessage('Step 7: Деплой на STAGING', 'info');
-    await deployToEnvironment('staging');
-    
-    addLogMessage('Step 8: Smoke-тесты на staging', 'info');
-    await delay(800);
-    addLogMessage('  → Проверка доступности сервиса...', 'info');
-    await delay(300);
-    addLogMessage('  → Проверка API эндпоинтов...', 'info');
-    await delay(300);
-    addLogMessage('  ✓ Все smoke-тесты пройдены', 'success');
-    
-    if (autoDeploy) {
-      addLogMessage('Step 9: Деплой на PRODUCTION (автоматический)', 'info');
-      await delay(500);
-      await deployToEnvironment('production');
-    } else {
-      addLogMessage('⏸️ Остановлено перед продакшеном (ручное подтверждение)', 'warning');
-    }
-    
-    addLogMessage('═'.repeat(50), 'info');
-    addLogMessage('CI/CD ПАЙПЛАЙН УСПЕШНО ЗАВЕРШЕН!', 'success');
-    setPipelineStatus('success');
-  };
-
-  const addLogMessage = (message, type = 'info') => {
-    const timestamp = new Date().toLocaleTimeString();
-    setLogMessages(prev => [...prev, { timestamp, message, type }]);
-  };
-  
-  const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-  
-  const clearLogs = () => {
-    setLogMessages([]);
-    addLogMessage('Логи очищены', 'info');
-  };
-  
-  const demoCommits = [
-    { hash: 'a7f3e8d', message: 'Fix: исправление бага с авторизацией', author: 'ivanov', time: '5 мин назад' },
-    { hash: 'b9c2d4f', message: 'Feat: добавлен новый API эндпоинт', author: 'petrov', time: '2 часа назад' },
-    { hash: 'e5f6g7h', message: 'Docs: обновление документации', author: 'sidorov', time: 'вчера' },
-    { hash: 'i8j9k0l', message: 'Test: добавлены unit-тесты', author: 'ivanov', time: '2 дня назад' }
-  ];
-
-  const styles = {
-    container: {
-      maxWidth: '1400px',
-      margin: '0 auto',
-      padding: '20px',
-      fontFamily: 'Arial, sans-serif',
-      boxSizing: 'border-box'
-    },
-    header: {
-      textAlign: 'center',
-      marginBottom: '30px'
-    },
-    title: {
-      color: '#2c3e50',
-      fontSize: 'clamp(24px, 5vw, 28px)',
-      marginBottom: '10px'
-    },
-    subtitle: {
-      color: '#7f8c8d',
-      fontSize: 'clamp(14px, 3vw, 16px)'
-    },
-    pipelineStatus: {
-      display: 'inline-block',
-      padding: '5px 15px',
-      borderRadius: '20px',
-      fontSize: 'clamp(12px, 3vw, 14px)',
-      fontWeight: 'bold',
-      marginTop: '10px'
-    },
-    statusIdle: { backgroundColor: '#95a5a6', color: 'white' },
-    statusRunning: { backgroundColor: '#f39c12', color: 'white', animation: 'pulse 1s infinite' },
-    statusSuccess: { backgroundColor: '#27ae60', color: 'white' },
-    statusFailed: { backgroundColor: '#e74c3c', color: 'white' },
-    tabs: {
-      display: 'flex',
-      gap: '10px',
-      marginBottom: '20px',
-      borderBottom: '2px solid #ecf0f1',
-      flexWrap: 'wrap'
-    },
-    tab: {
-      padding: '10px 20px',
-      cursor: 'pointer',
-      border: 'none',
-      background: 'none',
-      fontSize: 'clamp(14px, 4vw, 16px)',
-      fontWeight: 'bold',
-      transition: 'all 0.3s',
-      whiteSpace: 'nowrap'
-    },
-    activeTab: {
-      color: '#3498db',
-      borderBottom: '2px solid #3498db'
-    },
-    mainContent: {
-      display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-      gap: '20px',
-      marginBottom: '20px'
-    },
-    panel: {
-      backgroundColor: '#f8f9fa',
-      borderRadius: '8px',
-      padding: '20px',
-      boxShadow: '0 2px 4px rgba(0,0,0,0.05)'
-    },
-    panelTitle: {
-      fontSize: 'clamp(16px, 4vw, 18px)',
-      fontWeight: 'bold',
-      marginBottom: '15px',
-      color: '#2c3e50',
-      borderBottom: '2px solid #ecf0f1',
-      paddingBottom: '8px'
-    },
-    controls: {
-      display: 'flex',
-      gap: '10px',
-      marginBottom: '20px',
-      flexWrap: 'wrap'
-    },
-    button: {
-      padding: '10px 20px',
-      backgroundColor: '#3498db',
-      color: 'white',
-      border: 'none',
-      borderRadius: '4px',
-      cursor: 'pointer',
-      fontSize: 'clamp(12px, 3vw, 14px)',
-      transition: 'background 0.2s',
-      whiteSpace: 'nowrap'
-    },
-    buttonSuccess: { backgroundColor: '#27ae60' },
-    buttonDanger: { backgroundColor: '#e74c3c' },
-    buttonWarning: { backgroundColor: '#f39c12' },
-    buttonSecondary: { backgroundColor: '#95a5a6' },
-    logsContainer: {
-      backgroundColor: '#2c3e50',
-      color: '#ecf0f1',
-      padding: '15px',
-      borderRadius: '8px',
-      height: '400px',
-      maxHeight: '60vh',
-      overflowY: 'auto',
-      fontFamily: 'monospace',
-      fontSize: 'clamp(10px, 2.5vw, 12px)',
-      lineHeight: '1.4'
-    },
-    logEntry: {
-      marginBottom: '4px',
-      padding: '2px 0'
-    },
-    logInfo: { color: '#ecf0f1' },
-    logSuccess: { color: '#27ae60' },
-    logError: { color: '#e74c3c' },
-    logWarning: { color: '#f39c12' },
-    timestamp: {
-      color: '#7f8c8d',
-      marginRight: '10px',
-      fontSize: '0.9em'
-    },
-    pipelineSteps: {
-      marginTop: '20px'
-    },
-    stepItem: {
-      padding: '10px',
-      marginBottom: '10px',
-      backgroundColor: 'white',
-      borderRadius: '6px',
-      borderLeft: '4px solid #bdc3c7',
-      transition: 'all 0.3s',
-      fontSize: 'clamp(13px, 3vw, 14px)'
-    },
-    stepActive: {
-      borderLeftColor: '#f39c12',
-      backgroundColor: '#fffef5'
-    },
-    stepCompleted: {
-      borderLeftColor: '#27ae60'
-    },
-    deploymentsList: {
-      maxHeight: '300px',
-      overflowY: 'auto'
-    },
-    deploymentItem: {
-      padding: '10px',
-      backgroundColor: 'white',
-      marginBottom: '10px',
-      borderRadius: '6px',
-      fontSize: '13px'
-    },
-    environmentBadge: {
-      display: 'inline-block',
-      padding: '2px 8px',
-      borderRadius: '4px',
-      fontSize: 'clamp(9px, 2.5vw, 11px)',
-      fontWeight: 'bold',
-      marginRight: '10px'
-    },
-    envDev: { backgroundColor: '#3498db', color: 'white' },
-    envStaging: { backgroundColor: '#f39c12', color: 'white' },
-    envProd: { backgroundColor: '#e74c3c', color: 'white' },
-    testResults: {
-      display: 'flex',
-      justifyContent: 'space-around',
-      marginTop: '15px',
-      padding: '15px',
-      backgroundColor: 'white',
-      borderRadius: '8px',
-      flexWrap: 'wrap'
-    },
-    testStat: {
-      textAlign: 'center',
-      minWidth: '80px'
-    },
-    testValue: {
-      fontSize: 'clamp(18px, 5vw, 24px)',
-      fontWeight: 'bold'
-    },
-    testPassed: { color: '#27ae60' },
-    testFailed: { color: '#e74c3c' },
-    environmentInfo: {
-      display: 'grid',
-      gap: '10px',
-      marginTop: '15px'
-    },
-    envCard: {
-      padding: '15px',
-      backgroundColor: 'white',
-      borderRadius: '8px',
-      border: '1px solid #ddd'
-    },
-    envHeader: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      marginBottom: '10px',
-      flexWrap: 'wrap',
-      gap: '5px'
-    },
-    envVersion: {
-      fontFamily: 'monospace',
-      fontWeight: 'bold',
-      color: '#3498db',
-      wordBreak: 'break-all'
-    },
-    infoBox: {
-      marginTop: '20px',
-      padding: '15px',
-      backgroundColor: '#e8f4f8',
-      borderRadius: '8px',
-      borderLeft: '4px solid #3498db',
-      fontSize: 'clamp(13px, 3vw, 14px)'
-    },
-    codeBlock: {
-      backgroundColor: '#f4f4f4',
-      padding: '15px',
-      borderRadius: '8px',
-      overflowX: 'auto',
-      fontSize: 'clamp(11px, 2.5vw, 13px)',
-      fontFamily: 'monospace',
-      whiteSpace: 'pre'
-    }
-  };
-
-  return (
-    <div style={styles.container}>
-      <style>
-        {`
-          @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.6; }
-          }
-          
-          /* Адаптивность для очень маленьких экранов */
-          @media (max-width: 480px) {
-            .panel { padding: 15px; }
-            .controls { flex-direction: column; }
-            .button { width: 100%; text-align: center; }
-            .envCard { padding: 10px; }
-          }
-        `}
-      </style>
-
-      <div style={styles.header}>
-        <h1 style={styles.title}>🔄 CI/CD Pipeline</h1>
-        <p style={styles.subtitle}>Continuous Integration & Continuous Deployment демонстрация</p>
-        <div style={{
-          ...styles.pipelineStatus,
-          ...(pipelineStatus === 'idle' ? styles.statusIdle :
-             pipelineStatus === 'running' ? styles.statusRunning :
-             pipelineStatus === 'success' ? styles.statusSuccess : styles.statusFailed)
-        }}>
-          {pipelineStatus === 'idle' ? '⏸️ Готов к запуску' :
-           pipelineStatus === 'running' ? '🔄 Выполняется...' :
-           pipelineStatus === 'success' ? '✅ Успешно' : '❌ Ошибка'}
-        </div>
-      </div>
-
-      <div style={styles.tabs}>
-        <button
-          style={{ ...styles.tab, ...(activeTab === 'pipeline' ? styles.activeTab : {}) }}
-          onClick={() => setActiveTab('pipeline')}
-        >
-          CI/CD Pipeline
-        </button>
-        <button
-          style={{ ...styles.tab, ...(activeTab === 'environments' ? styles.activeTab : {}) }}
-          onClick={() => setActiveTab('environments')}
-        >
-          Deployments & Environments
-        </button>
-        <button
-          style={{ ...styles.tab, ...(activeTab === 'guide' ? styles.activeTab : {}) }}
-          onClick={() => setActiveTab('guide')}
-        >
-          Guide & Best Practices
-        </button>
-      </div>
-
-      {activeTab === 'pipeline' && (
-        <>
-          <div style={styles.mainContent}>
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>Управление пайплайном</div>
-              <div style={styles.controls}>
-                <button
-                  style={{ ...styles.button, ...styles.buttonSuccess }}
-                  onClick={runFullPipeline}
-                  disabled={pipelineStatus === 'running'}
-                >
-                  Запустить полный пайплайн
-                </button>
-                <button
-                  style={{ ...styles.button, ...styles.buttonSecondary }}
-                  onClick={clearLogs}
-                >
-                  Очистить логи
-                </button>
-              </div>
-              
-              <label style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '15px', fontSize: 'clamp(13px, 3vw, 14px)' }}>
-                <input
-                  type="checkbox"
-                  checked={autoDeploy}
-                  onChange={(e) => setAutoDeploy(e.target.checked)}
-                />
-                Автоматический деплой на production после успешного тестирования
-              </label>
-
-              <div style={styles.pipelineSteps}>
-                <div style={styles.panelTitle}>📋 Шаги пайплайна</div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>1. Checkout</strong> - Получение кода из репозитория
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>2. Install Dependencies</strong> - Установка зависимостей
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>3. Lint</strong> - Проверка качества кода
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>4. Test</strong> - Запуск всех видов тестов
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>5. Build</strong> - Сборка приложения
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>6. Security Scan</strong> - Сканирование уязвимостей
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>7. Deploy to Staging</strong> - Деплой на тестовое окружение
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>8. Smoke Tests</strong> - Быстрая проверка работоспособности
-                </div>
-                <div style={{ ...styles.stepItem, ...(pipelineStatus === 'running' ? styles.stepActive : {}) }}>
-                  <strong>9. Deploy to Production</strong> - Деплой на продакшен
-                </div>
-              </div>
-            </div>
-
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>📝 Логи выполнения</div>
-              <div style={styles.logsContainer}>
-                {logMessages.map((log, idx) => (
-                  <div key={idx} style={styles.logEntry}>
-                    <span style={styles.timestamp}>[{log.timestamp}]</span>
-                    <span style={{
-                      ...styles.logInfo,
-                      ...(log.type === 'success' ? styles.logSuccess : {}),
-                      ...(log.type === 'error' ? styles.logError : {}),
-                      ...(log.type === 'warning' ? styles.logWarning : {})
-                    }}>
-                      {log.message}
-                    </span>
-                  </div>
-                ))}
-                {logMessages.length === 0 && (
-                  <div style={{ color: '#7f8c8d', textAlign: 'center', padding: '20px' }}>
-                    Нажмите "Запустить пайплайн" для начала
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          <div style={styles.mainContent}>
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>Последние коммиты</div>
-              {demoCommits.map(commit => (
-                <div key={commit.hash} style={{ padding: '8px', borderBottom: '1px solid #ddd' }}>
-                  <span style={{ fontFamily: 'monospace', fontWeight: 'bold', fontSize: '12px' }}>{commit.hash.substring(0, 7)}</span>
-                  <span style={{ marginLeft: '10px', fontSize: '13px' }}>{commit.message}</span>
-                  <div style={{ fontSize: '11px', color: '#7f8c8d', marginTop: '4px' }}>
-                    {commit.author} • {commit.time}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>Последние результаты тестов</div>
-              <div style={styles.testResults}>
-                <div style={styles.testStat}>
-                  <div style={{ ...styles.testValue, ...styles.testPassed }}>{testResults.passed}</div>
-                  <div>Пройдено</div>
-                </div>
-                <div style={styles.testStat}>
-                  <div style={{ ...styles.testValue, ...styles.testFailed }}>{testResults.failed}</div>
-                  <div>Провалено</div>
-                </div>
-                <div style={styles.testStat}>
-                  <div style={styles.testValue}>{testResults.total}</div>
-                  <div>Всего</div>
-                </div>
-              </div>
-              <div style={{ fontSize: 'clamp(11px, 3vw, 13px)', marginTop: '10px', color: '#7f8c8d', textAlign: 'center' }}>
-                {testResults.total > 0 && 
-                  `Успешность: ${Math.round((testResults.passed / testResults.total) * 100)}%`}
-              </div>
-            </div>
-          </div>
-        </>
-      )}
-
-      {activeTab === 'environments' && (
-        <>
-          <div style={styles.mainContent}>
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>Окружения</div>
-              <div style={styles.environmentInfo}>
-                {Object.entries(environments).map(([env, data]) => (
-                  <div key={env} style={styles.envCard}>
-                    <div style={styles.envHeader}>
-                      <strong style={{ fontSize: 'clamp(14px, 4vw, 16px)' }}>
-                        {env === 'development' ? 'Development' :
-                         env === 'staging' ? 'Staging' : 'Production'}
-                      </strong>
-                      <span style={{
-                        ...styles.environmentBadge,
-                        ...(env === 'development' ? styles.envDev :
-                           env === 'staging' ? styles.envStaging : styles.envProd)
-                      }}>
-                        {env}
-                      </span>
-                    </div>
-                    <div>Версия: <span style={styles.envVersion}>{data.version}</span></div>
-                    <div>Статус: {data.status === 'live' ? '🟢 Live' : 
-                                 data.status === 'testing' ? '🟡 Тестирование' : '🔵 Стабильно'}</div>
-                    <div>Последний деплой: {data.lastDeploy}</div>
-                    <div>URL: <a href={`https://${data.url}`} target="_blank" rel="noreferrer">{data.url}</a></div>
-                    <button
-                      style={{ ...styles.button, marginTop: '10px', ...styles.buttonWarning, fontSize: 'clamp(10px, 3vw, 12px)' }}
-                      onClick={() => {
-                        if (window.confirm(`Деплоить на ${env}?`)) {
-                          deployToEnvironment(env);
-                        }
-                      }}
-                    >
-                      Деплой на {env}
-                    </button>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>История деплоев</div>
-              <div style={styles.deploymentsList}>
-                {deployments.length === 0 ? (
-                  <div style={{ textAlign: 'center', padding: '20px', color: '#7f8c8d' }}>
-                    Пока нет деплоев. Запустите CI/CD пайплайн!
-                  </div>
-                ) : (
-                  deployments.map(deploy => (
-                    <div key={deploy.id} style={styles.deploymentItem}>
-                      <div>
-                        <span style={{
-                          ...styles.environmentBadge,
-                          ...(deploy.environment === 'development' ? styles.envDev :
-                             deploy.environment === 'staging' ? styles.envStaging : styles.envProd)
-                        }}>
-                          {deploy.environment}
-                        </span>
-                        <strong>{deploy.version}</strong>
-                        <span style={{ marginLeft: '10px', fontSize: '12px', color: '#7f8c8d' }}>
-                          Build #{deploy.buildNumber}
-                        </span>
-                      </div>
-                      <div style={{ fontSize: '12px', marginTop: '5px' }}>
-                        {deploy.timestamp}
-                      </div>
-                      <div style={{ fontSize: '12px', color: '#27ae60', marginTop: '5px' }}>
-                        Статус: {deploy.status}
-                      </div>
-                    </div>
-                  ))
-                )}
-              </div>
-            </div>
-          </div>
-
-          <div style={styles.infoBox}>
-            <strong>Что такое окружения?</strong><br/>
-            • <strong>Development</strong> — для разработки и локального тестирования<br/>
-            • <strong>Staging</strong> — тестовое окружение, идентичное продакшену<br/>
-            • <strong>Production</strong> — живое окружение с реальными пользователями<br/>
-            <br/>
-            <strong>Best Practice:</strong> Всегда сначала деплойте на Staging, проводите тестирование, и только потом на Production!
-          </div>
-        </>
-      )}
-
-      {activeTab === 'guide' && (
-        <>
-          <div style={styles.mainContent}>
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>Что такое CI/CD?</div>
-              <p style={{ fontSize: 'clamp(13px, 3vw, 14px)'}}>
-                <strong>Continuous Integration (CI)</strong> — практика регулярного объединения изменений кода в общий репозиторий с автоматической сборкой и тестированием.
-              </p>
-              <p style={{ fontSize: 'clamp(13px, 3vw, 14px)'}}>
-                <strong>Continuous Delivery (CD)</strong> — расширение CI, автоматически подготавливающее код к релизу в production.
-              </p>
-              <p style={{ fontSize: 'clamp(13px, 3vw, 14px)'}}>
-                <strong>Continuous Deployment</strong> — каждый успешный коммит автоматически деплоится на production.
-              </p>
-              
-              <div style={{ marginTop: '20px' }}>
-                <strong>Преимущества CI/CD:</strong>
-                <ul style={{ paddingLeft: '20px', fontSize: 'clamp(13px, 3vw, 14px)' }}>
-                  <li>Быстрая обратная связь об ошибках</li>
-                  <li>Раннее обнаружение багов интеграции</li>
-                  <li>Автоматизированные релизы</li>
-                  <li>Повышение качества кода через автотесты</li>
-                  <li>Сокращение time-to-market</li>
-                </ul>
-              </div>
-            </div>
-
-            <div style={styles.panel}>
-              <div style={styles.panelTitle}>Популярные инструменты</div>
-              <ul style={{ paddingLeft: '20px', fontSize: 'clamp(13px, 3vw, 14px)' }}>
-                <li><strong>Jenkins</strong> — самый популярный CI/CD сервер</li>
-                <li><strong>GitLab CI/CD</strong> — встроенный CI/CD в GitLab</li>
-                <li><strong>GitHub Actions</strong> — CI/CD от GitHub</li>
-                <li><strong>CircleCI</strong> — облачный CI/CD сервис</li>
-                <li><strong>Travis CI</strong> — простой в настройке</li>
-                <li><strong>Azure DevOps</strong> — от Microsoft</li>
-              </ul>
-            </div>
-          </div>
-
-          <div style={styles.panel}>
-            <div style={styles.panelTitle}>Пример .gitlab-ci.yml</div>
-            <div style={styles.codeBlock}>
-              {`# .gitlab-ci.yml
+const GITLAB_YAML = `# .gitlab-ci.yml
 stages:
   - build
   - test
   - deploy
 
-variables:
-  NODE_VERSION: "18"
-
-before_script:
-  - apt-get update -qq
-  - npm ci
-
 build:
   stage: build
   script:
     - npm run build
-  artifacts:
-    paths:
-      - dist/
 
 test:
   stage: test
   script:
-    - npm run test:unit
-    - npm run test:e2e
-
-deploy_staging:
-  stage: deploy
-  script:
-    - npm run deploy:staging
-  only:
-    - develop
+    - npm test
 
 deploy_production:
   stage: deploy
   script:
-    - npm run deploy:production
+    - npm run deploy:prod
   only:
     - main
-  when: manual`}
-            </div>
-          </div>
+  when: manual`;
 
-          <div style={styles.panel}>
-            <div style={styles.panelTitle}>GitHub Actions Пример</div>
-            <div style={styles.codeBlock}>
-              {`# .github/workflows/ci.yml
-name: CI/CD Pipeline
-
+const GITHUB_YAML = `# .github/workflows/ci.yml
+name: CI/CD
 on:
   push:
-    branches: [ main, develop ]
-  pull_request:
-    branches: [ main ]
-
+    branches: [main, develop]
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-    - run: npm ci
-    - run: npm test
-    - run: npm run build
-
+      - uses: actions/checkout@v4
+      - run: npm ci && npm test
   deploy:
     needs: test
-    runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
     steps:
-    - name: Deploy to Production
-      run: |
-        npm run deploy:prod`}
+      - run: npm run deploy:prod`;
+
+function stepState(stepIndex, currentIndex, status) {
+  if (status === 'failed' && stepIndex === currentIndex) return 'failed';
+  if (stepIndex < currentIndex) return 'done';
+  if (stepIndex === currentIndex && status === 'running') return 'active';
+  if (stepIndex === currentIndex && status === 'success') return 'done';
+  return 'pending';
+}
+
+function CicdDemoInner() {
+  const [activeTab, setActiveTab] = useState('pipeline');
+  const [pipelineStatus, setPipelineStatus] = useState('idle');
+  const [stepIndex, setStepIndex] = useState(-1);
+  const [logs, setLogs] = useState([]);
+  const [deployments, setDeployments] = useState([]);
+  const [testResults, setTestResults] = useState({passed: 0, failed: 0, total: 0});
+  const [buildNumber, setBuildNumber] = useState(1);
+  const [autoDeploy, setAutoDeploy] = useState(false);
+  const [environments, setEnvironments] = useState(INITIAL_ENVIRONMENTS);
+
+  const logEndRef = useRef(null);
+  const runningRef = useRef(false);
+
+  const pushLog = useCallback((message, type = 'info') => {
+    setLogs((prev) => [...prev, createLog(message, type)]);
+  }, []);
+
+  useEffect(() => {
+    logEndRef.current?.scrollIntoView({behavior: 'smooth'});
+  }, [logs]);
+
+  const runTests = useCallback(async () => {
+    pushLog('Запуск тестов…', 'info');
+    await delay(600);
+    const tests = generateTestSuite();
+    const passed = tests.filter((t) => t.passed).length;
+    const failed = tests.length - passed;
+    setTestResults({passed, failed, total: tests.length});
+    tests.forEach((t) => {
+      pushLog(
+        `${t.passed ? '✓' : '✗'} ${t.name} (${t.time})`,
+        t.passed ? 'success' : 'error',
+      );
+    });
+    pushLog(`Итого: ${passed}/${tests.length} пройдено`, failed === 0 ? 'success' : 'warning');
+    return failed === 0;
+  }, [pushLog]);
+
+  const runBuild = useCallback(async () => {
+    pushLog('Сборка приложения…', 'info');
+    for (const step of BUILD_SUBSTEPS) {
+      pushLog(`  → ${step}`, 'info');
+      await delay(220);
+      pushLog(`  ✓ ${step}`, 'success');
+    }
+    const next = buildNumber + 1;
+    setBuildNumber(next);
+    pushLog(`Сборка #${next} завершена`, 'success');
+    return true;
+  }, [buildNumber, pushLog]);
+
+  const deployToEnvironment = useCallback(
+    async (environment) => {
+      pushLog(`Деплой на ${environment.toUpperCase()}…`, 'info');
+      for (const step of DEPLOY_SUBSTEPS(environment)) {
+        pushLog(`  → ${step}`, 'info');
+        await delay(200);
+        pushLog(`  ✓ ${step}`, 'success');
+      }
+      const deployment = createDeployment(environment, buildNumber);
+      setDeployments((prev) => [deployment, ...prev]);
+      setEnvironments((prev) => applyDeploymentToEnvironments(prev, deployment));
+      pushLog(`Деплой ${deployment.version} на ${environment} — OK`, 'success');
+      return true;
+    },
+    [buildNumber, pushLog],
+  );
+
+  const runFullPipeline = useCallback(async () => {
+    if (runningRef.current) return;
+    runningRef.current = true;
+    setPipelineStatus('running');
+    setLogs([]);
+    setStepIndex(0);
+
+    const advance = async (idx) => {
+      setStepIndex(idx);
+      await delay(80);
+    };
+
+    try {
+      pushLog('═══ CI/CD PIPELINE START ═══', 'info');
+      await advance(0);
+      pushLog('Checkout: main @ a7f3e8d', 'success');
+
+      await advance(1);
+      pushLog('npm ci — 847 packages', 'success');
+
+      await advance(2);
+      pushLog('ESLint: 0 errors, 2 warnings', 'success');
+
+      await advance(3);
+      const testsOk = await runTests();
+      if (!testsOk) {
+        setPipelineStatus('failed');
+        pushLog('Пайплайн остановлен: тесты не пройдены', 'error');
+        return;
+      }
+
+      await advance(4);
+      await runBuild();
+
+      await advance(5);
+      pushLog('Snyk scan — уязвимостей нет', 'success');
+
+      await advance(6);
+      await deployToEnvironment('staging');
+
+      await advance(7);
+      pushLog('Smoke-тесты staging — OK', 'success');
+
+      await advance(8);
+      if (autoDeploy) {
+        await deployToEnvironment('production');
+      } else {
+        pushLog('Production: ожидает ручного подтверждения', 'warning');
+      }
+
+      setStepIndex(PIPELINE_STEPS.length);
+      setPipelineStatus('success');
+      pushLog('═══ PIPELINE SUCCESS ═══', 'success');
+    } finally {
+      runningRef.current = false;
+    }
+  }, [autoDeploy, deployToEnvironment, pushLog, runBuild, runTests]);
+
+  const badgeClass = {
+    idle: styles.badgeIdle,
+    running: styles.badgeRunning,
+    success: styles.badgeSuccess,
+    failed: styles.badgeFailed,
+  };
+
+  const badgeLabel = {
+    idle: 'Готов к запуску',
+    running: 'Выполняется…',
+    success: 'Успешно',
+    failed: 'Ошибка',
+  };
+
+  const logClass = {
+    success: styles.logSuccess,
+    error: styles.logError,
+    warning: styles.logWarning,
+  };
+
+  return (
+    <DemoShell>
+      <div className={styles.root}>
+        <header className={styles.hero}>
+          <h1 className={styles.title}>CI/CD Pipeline</h1>
+          <p className={styles.subtitle}>
+            Continuous Integration & Continuous Deployment — интерактивная демонстрация
+          </p>
+          <span className={clsx(styles.badge, badgeClass[pipelineStatus])}>
+            {pipelineStatus === 'running' && '◉ '}
+            {badgeLabel[pipelineStatus]}
+          </span>
+        </header>
+
+        <div className={styles.tabs}>
+          {[
+            ['pipeline', 'Pipeline'],
+            ['environments', 'Окружения'],
+            ['guide', 'Справка'],
+          ].map(([id, label]) => (
+            <button
+              key={id}
+              type="button"
+              className={clsx(styles.tab, activeTab === id && styles.tabActive)}
+              onClick={() => setActiveTab(id)}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
+
+        {activeTab === 'pipeline' && (
+          <>
+            <div className={styles.pipelineTrack} aria-label="Шаги пайплайна">
+              {PIPELINE_STEPS.map((step, i) => {
+                const state = stepState(i, stepIndex, pipelineStatus);
+                return (
+                  <div
+                    key={step.id}
+                    className={clsx(
+                      styles.pipelineStep,
+                      state === 'active' && styles.stepActive,
+                      state === 'done' && styles.stepDone,
+                      state === 'failed' && styles.stepFailed,
+                      state === 'pending' && styles.stepPending,
+                    )}
+                  >
+                    <div className={styles.stepDot}>{state === 'done' ? '✓' : i + 1}</div>
+                    <span className={styles.stepLabel}>{step.short}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Управление</h3>
+                <div className={styles.controls}>
+                  <button
+                    type="button"
+                    className="it-demo__btn it-demo__btn--primary"
+                    onClick={runFullPipeline}
+                    disabled={pipelineStatus === 'running'}
+                  >
+                    Запустить пайплайн
+                  </button>
+                  <button
+                    type="button"
+                    className="it-demo__btn it-demo__btn--secondary"
+                    onClick={() => setLogs([])}
+                  >
+                    Очистить логи
+                  </button>
+                </div>
+                <label className={styles.checkRow}>
+                  <input
+                    type="checkbox"
+                    checked={autoDeploy}
+                    onChange={(e) => setAutoDeploy(e.target.checked)}
+                  />
+                  Автодеплой на production после staging
+                </label>
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Логи</h3>
+                <div className={styles.logs}>
+                  {logs.length === 0 ? (
+                    <div className={styles.logEmpty}>Нажмите «Запустить пайплайн»</div>
+                  ) : (
+                    logs.map((log) => (
+                      <div key={log.id} className={styles.logLine}>
+                        <span className={styles.logTs}>[{log.timestamp}]</span>
+                        <span className={logClass[log.type]}>{log.message}</span>
+                      </div>
+                    ))
+                  )}
+                  <div ref={logEndRef} />
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Последние коммиты</h3>
+                {DEMO_COMMITS.map((c) => (
+                  <div key={c.hash} className={styles.commitRow}>
+                    <span className={styles.commitHash}>{c.hash.slice(0, 7)}</span> {c.message}
+                    <div className={styles.commitMeta}>
+                      {c.author} · {c.time}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Тесты</h3>
+                <div className={styles.testStats}>
+                  <div className={styles.testStat}>
+                    <div className={clsx(styles.testValue, styles.testPassed)}>
+                      {testResults.passed}
+                    </div>
+                    <div>Пройдено</div>
+                  </div>
+                  <div className={styles.testStat}>
+                    <div className={clsx(styles.testValue, styles.testFailed)}>
+                      {testResults.failed}
+                    </div>
+                    <div>Провалено</div>
+                  </div>
+                  <div className={styles.testStat}>
+                    <div className={styles.testValue}>{testResults.total}</div>
+                    <div>Всего</div>
+                  </div>
+                </div>
+                {testResults.total > 0 && (
+                  <p style={{textAlign: 'center', fontSize: '0.85rem', marginTop: '0.5rem'}}>
+                    Успешность: {Math.round((testResults.passed / testResults.total) * 100)}%
+                  </p>
+                )}
+              </div>
+            </div>
+          </>
+        )}
+
+        {activeTab === 'environments' && (
+          <div className={styles.grid}>
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>Окружения</h3>
+              {Object.entries(environments).map(([env, data]) => (
+                <div key={env} className={styles.envCard}>
+                  <div className={styles.envHead}>
+                    <strong>{ENV_LABELS[env]}</strong>
+                    <span
+                      className={clsx(
+                        styles.envBadge,
+                        env === 'development' && styles.envDev,
+                        env === 'staging' && styles.envStaging,
+                        env === 'production' && styles.envProd,
+                      )}
+                    >
+                      {env}
+                    </span>
+                  </div>
+                  <div>
+                    Версия: <span className={styles.envVersion}>{data.version}</span>
+                  </div>
+                  <div>Статус: {envStatusLabel(data.status)}</div>
+                  <div>Деплой: {data.lastDeploy}</div>
+                  <div>
+                    URL:{' '}
+                    <a href={`https://${data.url}`} target="_blank" rel="noreferrer">
+                      {data.url}
+                    </a>
+                  </div>
+                  <button
+                    type="button"
+                    className="it-demo__btn it-demo__btn--primary it-demo__btn--sm"
+                    style={{marginTop: '0.5rem'}}
+                    disabled={pipelineStatus === 'running'}
+                    onClick={() => {
+                      if (window.confirm(`Деплоить на ${env}?`)) {
+                        deployToEnvironment(env);
+                      }
+                    }}
+                  >
+                    Деплой на {env}
+                  </button>
+                </div>
+              ))}
+            </div>
+
+            <div className={styles.card}>
+              <h3 className={styles.cardTitle}>История деплоев</h3>
+              {deployments.length === 0 ? (
+                <p className={styles.logEmpty}>Запустите пайплайн или деплой вручную</p>
+              ) : (
+                deployments.map((d) => (
+                  <div key={d.id} className={styles.deployItem}>
+                    <span
+                      className={clsx(
+                        styles.envBadge,
+                        d.environment === 'development' && styles.envDev,
+                        d.environment === 'staging' && styles.envStaging,
+                        d.environment === 'production' && styles.envProd,
+                      )}
+                    >
+                      {d.environment}
+                    </span>{' '}
+                    <strong>{d.version}</strong> · build #{d.buildNumber}
+                    <div style={{fontSize: '0.8rem', marginTop: '0.25rem'}}>{d.timestamp}</div>
+                  </div>
+                ))
+              )}
             </div>
           </div>
+        )}
 
-          <div style={styles.infoBox}>
-            <strong>Метрики CI/CD:</strong><br/>
-            • <strong>Lead Time</strong> — время от коммита до деплоя в прод<br/>
-            • <strong>Deployment Frequency</strong> — частота деплоев<br/>
-            • <strong>Mean Time to Recovery (MTTR)</strong> — среднее время восстановления<br/>
-            • <strong>Change Failure Rate</strong> — процент неудачных деплоев<br/>
-            <br/>
-            <strong>DORA метрики elite компаний:</strong><br/>
-            • Множество деплоев в день<br/>
-            • Время восстановления &lt; 1 часа<br/>
-            • Процент неудач &lt; 15%
-          </div>
-        </>
-      )}
-    </div>
+        {activeTab === 'guide' && (
+          <>
+            <div className={styles.grid}>
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Что такое CI/CD?</h3>
+                <p>
+                  <strong>CI</strong> — частые слияния в общую ветку с автосборкой и тестами.
+                </p>
+                <p>
+                  <strong>CD</strong> — автоматическая подготовка и выкладка релиза на окружения.
+                </p>
+                <ul>
+                  <li>Быстрая обратная связь</li>
+                  <li>Меньше «интеграционного ада»</li>
+                  <li>Предсказуемые релизы</li>
+                </ul>
+              </div>
+              <div className={styles.card}>
+                <h3 className={styles.cardTitle}>Инструменты</h3>
+                <ul>
+                  <li>GitHub Actions, GitLab CI</li>
+                  <li>Jenkins, CircleCI</li>
+                  <li>Azure DevOps</li>
+                </ul>
+              </div>
+            </div>
+            <div className={styles.card} style={{marginTop: '1rem'}}>
+              <h3 className={styles.cardTitle}>.gitlab-ci.yml</h3>
+              <pre className={styles.codeBlock}>{GITLAB_YAML}</pre>
+            </div>
+            <div className={styles.card} style={{marginTop: '1rem'}}>
+              <h3 className={styles.cardTitle}>GitHub Actions</h3>
+              <pre className={styles.codeBlock}>{GITHUB_YAML}</pre>
+            </div>
+            <div className={styles.infoBox}>
+              <strong>DORA-метрики:</strong> частота деплоев, lead time, MTTR, change failure rate.
+              Elite-команды деплоят многократно в день и восстанавливаются менее чем за час.
+            </div>
+          </>
+        )}
+      </div>
+    </DemoShell>
   );
-};
+}
 
-// Обертка BrowserOnly, которая экспортирует компонент с правильным именем
 export default function CicdDemo() {
   return (
-    <BrowserOnly>
-      {() => <CicdDemoContent />}
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка CI/CD демо…')}>
+      {() => <CicdDemoInner />}
     </BrowserOnly>
   );
 }

@@ -1,770 +1,496 @@
-import React, { useState, useRef } from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import clsx from 'clsx';
+import DemoShell, {DemoCard} from './shared/DemoShell';
+import {demoLoadingFallback} from './shared/demoFallback';
+import {
+  DEBUGGER_CODE,
+  DEFAULT_BREAKPOINTS,
+  OUTPUT_COLORS,
+  TOKEN_CLASS,
+  cloneContext,
+  createInitialDebugContext,
+  executeSingleLine,
+  functionAtLine,
+  tokenizeLine,
+} from './shared/debuggerEngine';
+import styles from './DebuggerEmulator.module.css';
 
-const DebuggerEmulator = () => {
-  const initialCode = `1  function calculateSum(a, b) {
-2    let result = a + b;
-3    console.log("Сумма:", result);
-4    return result;
-5  }
-6  
-7  function multiplyByTwo(x) {
-8    let multiplied = x * 2;
-9    console.log("Умножено:", multiplied);
-10   return multiplied;
-11 }
-12 
-13 function main() {
-14   let number = 5;
-15   let sum = calculateSum(number, 3);
-16   let final = multiplyByTwo(sum);
-17   console.log("Финальный результат:", final);
-18   return final;
-19 }
-20 
-21 // Запуск программы
-22 let output = main();
-23 console.log("Программа завершена");`;
+const TOKEN_CSS = {
+  [TOKEN_CLASS.kw]: styles.tokenKw,
+  [TOKEN_CLASS.fn]: styles.tokenFn,
+  [TOKEN_CLASS.v]: styles.tokenV,
+  [TOKEN_CLASS.str]: styles.tokenStr,
+  [TOKEN_CLASS.num]: styles.tokenNum,
+  [TOKEN_CLASS.comment]: styles.tokenComment,
+  [TOKEN_CLASS.p]: styles.tokenP,
+};
 
-  const codeLines = initialCode.split('\n');
-  
-  const [breakpoints, setBreakpoints] = useState(new Set([14, 15, 16]));
+function timeNow() {
+  return new Date().toLocaleTimeString('ru-RU', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+}
+
+function DebuggerEmulatorInner() {
+  const codeLines = useRef(DEBUGGER_CODE.split('\n')).current;
+
+  const [breakpoints, setBreakpoints] = useState(() => new Set(DEFAULT_BREAKPOINTS));
   const [currentLine, setCurrentLine] = useState(null);
   const [isRunning, setIsRunning] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [variables, setVariables] = useState({});
   const [output, setOutput] = useState([]);
   const [callStack, setCallStack] = useState([]);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [sidebarTab, setSidebarTab] = useState('vars');
 
-  const executionStateRef = useRef({
-    programCounter: 13,
-    callStack: [],
-    localVars: {},
-    isProgramFinished: false
-  });
+  const executionStateRef = useRef(createInitialDebugContext(codeLines));
 
-  const addOutput = (text, type = 'info') => {
-    setOutput(prev => [...prev, { 
-      text, 
-      timestamp: new Date().toLocaleTimeString(),
-      type 
-    }]);
-  };
+  const addOutput = useCallback((text, type = 'info') => {
+    setOutput((prev) =>
+      [{text, type, timestamp: timeNow()}, ...prev].slice(0, 50),
+    );
+  }, []);
 
-  const executeSingleLine = (line, context) => {
-    const lineContent = codeLines[line - 1]?.trim();
-    const result = { nextLine: null, shouldStop: false, updateVars: null, updateStack: null };
+  const updateUI = useCallback(
+    (context) => {
+      setCurrentLine(context.programCounter);
+      setVariables({...context.localVars});
+      setCallStack([
+        ...context.callStack.map((cs) => ({
+          function: cs.functionName,
+          line: cs.returnLine,
+        })),
+        {
+          function: context.currentFunction || 'global',
+          line: context.programCounter,
+        },
+      ]);
+    },
+    [],
+  );
 
-    if (lineContent.includes('function calculateSum') || 
-        lineContent.includes('function multiplyByTwo') ||
-        lineContent.includes('function main')) {
-      result.nextLine = line + 1;
-      return result;
-    }
+  const runLine = useCallback(
+    (line, ctx) =>
+      executeSingleLine(line, ctx, codeLines, (entry) =>
+        addOutput(entry.text, entry.type),
+      ),
+    [codeLines, addOutput],
+  );
 
-    if (lineContent.includes('let number = 5')) {
-      context.localVars['number'] = 5;
-      addOutput(`→ number = 5`, 'exec');
-      result.nextLine = line + 1;
-      return result;
-    }
+  const runSilent = useCallback(
+    (line, ctx) => executeSingleLine(line, ctx, codeLines),
+    [codeLines],
+  );
 
-    if (lineContent.includes('let sum = calculateSum(number, 3)')) {
-      context.callStack.push({
-        functionName: 'main',
-        returnLine: line + 1,
-        vars: { ...context.localVars }
-      });
-      
-      const calculateSumStart = codeLines.findIndex(l => l.includes('function calculateSum')) + 2;
-      context.localVars = { a: context.localVars['number'], b: 3 };
-      context.currentFunction = 'calculateSum';
-      
-      addOutput(`→ вызов calculateSum(${context.localVars['a']}, ${context.localVars['b']})`, 'call');
-      result.nextLine = calculateSumStart;
-      return result;
-    }
-    
-    if (lineContent.includes('let result = a + b')) {
-      const sum = (context.localVars['a'] || 0) + (context.localVars['b'] || 0);
-      context.localVars['result'] = sum;
-      addOutput(`→ result = ${sum}`, 'exec');
-      result.nextLine = line + 1;
-      return result;
-    }
+  const startDebug = useCallback(() => {
+    const ctx = createInitialDebugContext(codeLines);
+    executionStateRef.current = ctx;
+    setCurrentLine(ctx.programCounter);
+    setVariables({});
+    setCallStack([{function: 'main', line: ctx.programCounter}]);
+    setOutput([]);
+    setIsRunning(true);
+    setIsPaused(true);
+    addOutput('Отладка запущена — entry point main()', 'start');
+    addOutput('F10 — шаг, F5 — продолжить, клик по точке в gutter — breakpoint', 'info');
+  }, [codeLines, addOutput]);
 
-    if (lineContent.includes('console.log("Сумма:")')) {
-      const sum = context.localVars['result'];
-      addOutput(`📝 Сумма: ${sum}`, 'output');
-      result.nextLine = line + 1;
-      return result;
-    }
+  const finishProgram = useCallback(() => {
+    executionStateRef.current.isProgramFinished = true;
+    setIsRunning(false);
+    setIsPaused(false);
+    setCurrentLine(null);
+    addOutput('Выполнение программы завершено', 'success');
+  }, [addOutput]);
 
-    if (lineContent.includes('return result') && context.currentFunction === 'calculateSum') {
-      const returnValue = context.localVars['result'];
-      const returnContext = context.callStack.pop();
-      if (returnContext) {
-        context.localVars = returnContext.vars;
-        context.localVars['sum'] = returnValue;
-        context.currentFunction = 'main';
-        addOutput(`← calculateSum вернула ${returnValue}`, 'return');
-        result.nextLine = returnContext.returnLine;
+  const step = useCallback(
+    (stepType = 'into') => {
+      if (!isPaused && !isRunning) {
+        startDebug();
+        return;
       }
-      return result;
-    }
-    
-    if (lineContent.includes('let final = multiplyByTwo(sum)')) {
-      context.callStack.push({
-        functionName: 'main',
-        returnLine: line + 1,
-        vars: { ...context.localVars }
-      });
-      
-      const multiplyStart = codeLines.findIndex(l => l.includes('function multiplyByTwo')) + 2;
-      context.localVars = { x: context.localVars['sum'] };
-      context.currentFunction = 'multiplyByTwo';
-      
-      addOutput(`→ вызов multiplyByTwo(${context.localVars['x']})`, 'call');
-      result.nextLine = multiplyStart;
-      return result;
-    }
-    
-    if (lineContent.includes('let multiplied = x * 2')) {
-      const multiplied = (context.localVars['x'] || 0) * 2;
-      context.localVars['multiplied'] = multiplied;
-      addOutput(`→ multiplied = ${multiplied}`, 'exec');
-      result.nextLine = line + 1;
-      return result;
-    }
-    
-    if (lineContent.includes('console.log("Умножено:")')) {
-      const multiplied = context.localVars['multiplied'];
-      addOutput(`Умножено: ${multiplied}`, 'output');
-      result.nextLine = line + 1;
-      return result;
-    }
-    
-    if (lineContent.includes('return multiplied') && context.currentFunction === 'multiplyByTwo') {
-      const returnValue = context.localVars['multiplied'];
-      const returnContext = context.callStack.pop();
-      if (returnContext) {
-        context.localVars = returnContext.vars;
-        context.localVars['final'] = returnValue;
-        context.currentFunction = 'main';
-        addOutput(`← multiplyByTwo вернула ${returnValue}`, 'return');
-        result.nextLine = returnContext.returnLine;
-      }
-      return result;
-    }
-    
-    if (lineContent.includes('console.log("Финальный результат:")')) {
-      const final = context.localVars['final'];
-      addOutput(`Финальный результат: ${final}`, 'output');
-      result.nextLine = line + 1;
-      return result;
-    }
-    
-    if (lineContent.includes('return final')) {
-      const final = context.localVars['final'];
-      addOutput(`→ main вернула ${final}`, 'return');
-      result.nextLine = line + 1;
-      return result;
-    }
-    
-    if (lineContent.includes('let output = main()')) {
-      result.nextLine = line + 1;
-      return result;
-    }
-    
-    if (lineContent.includes('console.log("Программа завершена")')) {
-      addOutput(`✅ Программа завершена`, 'success');
-      result.shouldStop = true;
-      result.nextLine = null;
-      return result;
-    }
-    
-    result.nextLine = line + 1;
-    return result;
-  };
+      if (!isPaused) return;
 
-  const updateUI = (context) => {
-    setCurrentLine(context.programCounter);
-    setVariables({ ...context.localVars });
-    setCallStack([...context.callStack.map(cs => ({ 
-      function: cs.functionName, 
-      line: cs.returnLine - 1 
-    })), { 
-      function: context.currentFunction || 'global', 
-      line: context.programCounter 
-    }]);
-  };
-
-  const step = (stepType = 'into') => {
-    if (!isPaused && !isRunning) {
-      startDebug();
-      return;
-    }
-    
-    if (!isPaused) return;
-    
-    const context = executionStateRef.current;
-    
-    if (context.isProgramFinished) {
-      addOutput('Программа уже завершена. Нажмите Restart', 'warning');
-      return;
-    }
-    
-    const result = executeSingleLine(context.programCounter, context);
-    
-    if (result.nextLine) {
-      context.programCounter = result.nextLine;
-      
-      if (breakpoints.has(context.programCounter) && stepType !== 'special') {
-        setIsPaused(true);
-        updateUI(context);
-        addOutput(`⏸ Остановлено на строке ${context.programCounter} (точка останова)`, 'breakpoint');
+      const context = executionStateRef.current;
+      if (context.isProgramFinished) {
+        addOutput('Программа завершена — нажмите Restart', 'warning');
         return;
       }
 
       if (stepType === 'over' && context.callStack.length > 0) {
-        const currentDepth = context.callStack.length;
-        let tempPC = context.programCounter;
-        let tempContext = JSON.parse(JSON.stringify(context));
-        
-        while (tempPC && tempContext.callStack.length >= currentDepth) {
-          const tempResult = executeSingleLine(tempPC, tempContext);
-          if (!tempResult.nextLine) break;
-          tempPC = tempResult.nextLine;
+        const depth = context.callStack.length;
+        const temp = cloneContext(context);
+        let pc = context.programCounter;
+        const res = runSilent(pc, temp);
+        if (!res.nextLine) {
+          finishProgram();
+          return;
         }
-        
-        context.programCounter = tempPC;
-        context.callStack = tempContext.callStack;
-        context.localVars = tempContext.localVars;
-        context.currentFunction = tempContext.currentFunction;
-        
+        pc = res.nextLine;
+        while (pc && temp.callStack.length >= depth && !temp.isProgramFinished) {
+          const r = runSilent(pc, temp);
+          if (!r.nextLine) break;
+          pc = r.nextLine;
+        }
+        context.programCounter = pc;
+        context.callStack = temp.callStack;
+        context.localVars = temp.localVars;
+        context.currentFunction = temp.currentFunction;
         updateUI(context);
         setIsPaused(true);
-        addOutput(`⏸ Step Over - остановлено на строке ${context.programCounter}`, 'step');
-      } 
-      else if (stepType === 'out' && context.callStack.length > 0) {
-        const targetDepth = context.callStack.length - 1;
-        let tempPC = context.programCounter;
-        let tempContext = JSON.parse(JSON.stringify(context));
-        
-        while (tempPC && tempContext.callStack.length > targetDepth) {
-          const tempResult = executeSingleLine(tempPC, tempContext);
-          if (!tempResult.nextLine) break;
-          tempPC = tempResult.nextLine;
-        }
-        
-        context.programCounter = tempPC;
-        context.callStack = tempContext.callStack;
-        context.localVars = tempContext.localVars;
-        context.currentFunction = tempContext.currentFunction;
-        
-        updateUI(context);
-        setIsPaused(true);
-        addOutput(`⏸ Step Out - остановлено на строке ${context.programCounter}`, 'step');
-      }
-      else {
-        updateUI(context);
-
-        if (context.programCounter > codeLines.length || !context.programCounter) {
-          context.isProgramFinished = true;
-          setIsRunning(false);
-          setIsPaused(false);
-          addOutput('🏁 Выполнение программы завершено', 'success');
-        } else {
-          setIsPaused(true);
-        }
-      }
-    } else {
-      context.isProgramFinished = true;
-      setIsRunning(false);
-      setIsPaused(false);
-      setCurrentLine(null);
-      addOutput('🏁 Выполнение программы завершено', 'success');
-    }
-  };
-
-  const startDebug = () => {
-    executionStateRef.current = {
-      programCounter: 13,
-      callStack: [],
-      localVars: {},
-      currentFunction: 'main',
-      isProgramFinished: false
-    };
-    
-    setCurrentLine(13);
-    setVariables({});
-    setCallStack([{ function: 'main', line: 13 }]);
-    setOutput([]);
-    setIsRunning(true);
-    setIsPaused(true);
-    
-    addOutput('Отладка запущена. Остановлено на entry point (строка 13)', 'start');
-    addOutput('💡 Используйте Step Into/F10 для пошагового выполнения', 'info');
-  };
-
-  const continueExecution = () => {
-    if (!isPaused) return;
-    
-    const context = executionStateRef.current;
-    let tempPC = context.programCounter;
-    let tempContext = JSON.parse(JSON.stringify(context));
-    
-    while (tempPC && !tempContext.isProgramFinished) {
-      if (breakpoints.has(tempPC) && tempPC !== context.programCounter) {
-        context.programCounter = tempPC;
-        context.callStack = tempContext.callStack;
-        context.localVars = tempContext.localVars;
-        context.currentFunction = tempContext.currentFunction;
-        updateUI(context);
-        addOutput(`⏸ Остановлено на строке ${tempPC} (точка останова)`, 'breakpoint');
+        addOutput(`Step Over — строка ${pc}`, 'step');
         return;
       }
-      
-      const result = executeSingleLine(tempPC, tempContext);
-      
-      if (!result.nextLine || result.shouldStop) {
-        if (result.shouldStop) {
-          tempContext.isProgramFinished = true;
+
+      if (stepType === 'out' && context.callStack.length > 0) {
+        const targetDepth = context.callStack.length - 1;
+        const temp = cloneContext(context);
+        let pc = context.programCounter;
+        while (pc && temp.callStack.length > targetDepth && !temp.isProgramFinished) {
+          const r = runSilent(pc, temp);
+          if (!r.nextLine) break;
+          pc = r.nextLine;
         }
+        context.programCounter = pc;
+        context.callStack = temp.callStack;
+        context.localVars = temp.localVars;
+        context.currentFunction = temp.currentFunction;
+        updateUI(context);
+        setIsPaused(true);
+        addOutput(`Step Out — строка ${pc}`, 'step');
+        return;
+      }
+
+      const result = runLine(context.programCounter, context);
+      if (!result.nextLine) {
+        finishProgram();
+        return;
+      }
+
+      context.programCounter = result.nextLine;
+      if (breakpoints.has(context.programCounter)) {
+        updateUI(context);
+        setIsPaused(true);
+        addOutput(`Breakpoint на строке ${context.programCounter}`, 'breakpoint');
+        return;
+      }
+
+      updateUI(context);
+      if (context.programCounter > codeLines.length) {
+        finishProgram();
+      } else {
+        setIsPaused(true);
+      }
+    },
+    [
+      isPaused,
+      isRunning,
+      breakpoints,
+      codeLines.length,
+      startDebug,
+      runLine,
+      runSilent,
+      updateUI,
+      addOutput,
+      finishProgram,
+    ],
+  );
+
+  const continueExecution = useCallback(() => {
+    if (!isPaused) return;
+    const context = executionStateRef.current;
+    let pc = context.programCounter;
+    const temp = cloneContext(context);
+
+    while (pc && !temp.isProgramFinished) {
+      if (breakpoints.has(pc) && pc !== context.programCounter) {
+        context.programCounter = pc;
+        context.callStack = temp.callStack;
+        context.localVars = temp.localVars;
+        context.currentFunction = temp.currentFunction;
+        updateUI(context);
+        addOutput(`Breakpoint на строке ${pc}`, 'breakpoint');
+        setIsPaused(true);
+        return;
+      }
+      const res = runSilent(pc, temp);
+      if (!res.nextLine || res.shouldStop) {
+        if (res.shouldStop) temp.isProgramFinished = true;
         break;
       }
-      
-      tempPC = result.nextLine;
+      pc = res.nextLine;
     }
-    
-    if (tempContext.isProgramFinished) {
-      context.isProgramFinished = true;
-      setIsRunning(false);
-      setIsPaused(false);
-      setCurrentLine(null);
-      addOutput('🏁 Выполнение программы завершено', 'success');
+
+    if (temp.isProgramFinished) {
+      finishProgram();
     } else {
-      context.programCounter = tempPC;
-      context.callStack = tempContext.callStack;
-      context.localVars = tempContext.localVars;
-      context.currentFunction = tempContext.currentFunction;
+      context.programCounter = pc;
+      context.callStack = temp.callStack;
+      context.localVars = temp.localVars;
+      context.currentFunction = temp.currentFunction;
       updateUI(context);
       setIsPaused(true);
-      addOutput(`⏸ Продолжение выполнения - остановлено на строке ${context.programCounter}`, 'step');
+      addOutput(`Continue — строка ${pc}`, 'step');
     }
+  }, [isPaused, breakpoints, runSilent, updateUI, addOutput, finishProgram]);
+
+  const toggleBreakpoint = (lineNumber, e) => {
+    e?.stopPropagation?.();
+    setBreakpoints((prev) => {
+      const next = new Set(prev);
+      if (next.has(lineNumber)) {
+        next.delete(lineNumber);
+        addOutput(`Breakpoint снят: строка ${lineNumber}`, 'breakpoint');
+      } else {
+        next.add(lineNumber);
+        addOutput(`Breakpoint: строка ${lineNumber}`, 'breakpoint');
+      }
+      return next;
+    });
   };
 
-  const restartDebug = () => {
-    startDebug();
-  };
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.target.matches('input, textarea')) return;
+      if (e.key === 'F5') {
+        e.preventDefault();
+        if (isPaused) continueExecution();
+        else startDebug();
+      }
+      if (e.key === 'F10') {
+        e.preventDefault();
+        step('into');
+      }
+      if (e.key === 'F11') {
+        e.preventDefault();
+        step('over');
+      }
+      if (e.key === 'Shift+F11') {
+        e.preventDefault();
+        step('out');
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [isPaused, continueExecution, startDebug, step]);
 
-  const toggleBreakpoint = (lineNumber) => {
-    const newBreakpoints = new Set(breakpoints);
-    if (newBreakpoints.has(lineNumber)) {
-      newBreakpoints.delete(lineNumber);
-      addOutput(`🔴 Точка останова убрана со строки ${lineNumber}`, 'breakpoint');
-    } else {
-      newBreakpoints.add(lineNumber);
-      addOutput(`🔴 Точка останова установлена на строке ${lineNumber}`, 'breakpoint');
-    }
-    setBreakpoints(newBreakpoints);
-  };
-
-  const styles = {
-    container: {
-      margin: '1rem',
-      backgroundColor: '#1e1e1e',
-      borderRadius: '12px',
-      overflow: 'hidden',
-      fontFamily: 'Consolas, Monaco, "Courier New", monospace',
-      boxShadow: '0 8px 16px rgba(0,0,0,0.3)',
-      maxWidth: '100%',
-      '@media (minWidth: 768px)': {
-        margin: '2rem 0',
-      },
-    },
-    toolbar: {
-      backgroundColor: '#2d2d2d',
-      padding: '8px 12px',
-      display: 'flex',
-      gap: '6px',
-      borderBottom: '1px solid #3e3e3e',
-      flexWrap: 'wrap',
-      justifyContent: 'center',
-      '@media (minWidth: 640px)': {
-        padding: '12px 16px',
-        gap: '8px',
-        justifyContent: 'flex-start',
-      },
-    },
-    button: {
-      padding: '6px 10px',
-      fontSize: '11px',
-      fontWeight: '500',
-      border: 'none',
-      borderRadius: '6px',
-      cursor: 'pointer',
-      transition: 'all 0.2s',
-      fontFamily: 'system-ui, sans-serif',
-      whiteSpace: 'nowrap',
-      '@media (minWidth: 640px)': {
-        padding: '6px 14px',
-        fontSize: '13px',
-      },
-    },
-    buttonPrimary: {
-      backgroundColor: '#0e639c',
-      color: 'white',
-    },
-    buttonSuccess: {
-      backgroundColor: '#2ea043',
-      color: 'white',
-    },
-    buttonWarning: {
-      backgroundColor: '#d29922',
-      color: 'white',
-    },
-    buttonDanger: {
-      backgroundColor: '#da3633',
-      color: 'white',
-    },
-    buttonSecondary: {
-      backgroundColor: '#3e3e3e',
-      color: 'white',
-    },
-    mainLayout: {
-      display: 'flex',
-      flexDirection: 'column',
-      minHeight: '500px',
-      '@media (minWidth: 768px)': {
-        display: 'grid',
-        gridTemplateColumns: '1fr 300px',
-        flexDirection: 'row',
-      },
-    },
-    codeArea: {
-      backgroundColor: '#1e1e1e',
-      padding: '12px',
-      overflowX: 'auto',
-      flex: '1',
-      '@media (minWidth: 768px)': {
-        padding: '16px',
-      },
-    },
-    codeLine: {
-      fontFamily: 'Consolas, Monaco, monospace',
-      fontSize: '11px',
-      lineHeight: '1.5',
-      whiteSpace: 'pre',
-      padding: '2px 4px',
-      margin: '0',
-      cursor: 'pointer',
-      position: 'relative',
-      '@media (minWidth: 640px)': {
-        fontSize: '13px',
-        lineHeight: '1.6',
-        padding: '2px 8px',
-      },
-    },
-    sidebar: {
-      backgroundColor: '#252526',
-      borderLeft: 'none',
-      borderTop: '1px solid #3e3e3e',
-      padding: '12px',
-      '@media (minWidth: 768px)': {
-        borderLeft: '1px solid #3e3e3e',
-        borderTop: 'none',
-        padding: '16px',
-      },
-    },
-    section: {
-      marginBottom: '16px',
-      '@media (minWidth: 768px)': {
-        marginBottom: '20px',
-      },
-    },
-    sectionTitle: {
-      color: '#cccccc',
-      fontSize: '11px',
-      fontWeight: '600',
-      textTransform: 'uppercase',
-      letterSpacing: '1px',
-      marginBottom: '8px',
-      borderBottom: '1px solid #3e3e3e',
-      paddingBottom: '4px',
-      '@media (minWidth: 768px)': {
-        fontSize: '12px',
-        marginBottom: '12px',
-        paddingBottom: '6px',
-      },
-    },
-    variableItem: {
-      fontSize: '11px',
-      padding: '3px 0',
-      color: '#9cdcfe',
-      fontFamily: 'monospace',
-      '@media (minWidth: 768px)': {
-        fontSize: '12px',
-        padding: '4px 0',
-      },
-    },
-    variableName: {
-      color: '#9cdcfe',
-    },
-    variableValue: {
-      color: '#ce9178',
-    },
-    callStackItem: {
-      fontSize: '11px',
-      padding: '4px 0',
-      color: '#d4d4d4',
-      fontFamily: 'monospace',
-      borderBottom: '1px solid #3e3e3e',
-      '@media (minWidth: 768px)': {
-        fontSize: '12px',
-        padding: '6px 0',
-      },
-    },
-    outputArea: {
-      backgroundColor: '#1e1e1e',
-      borderTop: '1px solid #3e3e3e',
-      padding: '8px 12px',
-      maxHeight: '120px',
-      overflowY: 'auto',
-      '@media (minWidth: 768px)': {
-        padding: '12px 16px',
-        maxHeight: '150px',
-      },
-    },
-    outputLine: {
-      fontSize: '11px',
-      fontFamily: 'monospace',
-      padding: '2px 0',
-      wordBreak: 'break-word',
-      '@media (minWidth: 768px)': {
-        fontSize: '12px',
-      },
-    },
-    breakpoint: {
-      position: 'absolute',
-      left: '-16px',
-      top: '2px',
-      color: '#f48771',
-      fontSize: '12px',
-      '@media (minWidth: 640px)': {
-        left: '-20px',
-        fontSize: '14px',
-      },
-    },
-    currentLineIndicator: {
-      backgroundColor: '#264f78',
-      margin: '0 -4px',
-      padding: '0 4px',
-      borderRadius: '4px',
-      '@media (minWidth: 768px)': {
-        margin: '0 -8px',
-        padding: '0 8px',
-      },
-    },
-    mobileMenuButton: {
-      display: 'block',
-      backgroundColor: '#0e639c',
-      color: 'white',
-      border: 'none',
-      borderRadius: '6px',
-      padding: '8px 12px',
-      fontSize: '12px',
-      cursor: 'pointer',
-      width: '100%',
-      marginBottom: '12px',
-      '@media (minWidth: 768px)': {
-        display: 'none',
-      },
-    },
-    sidebarContent: {
-      display: 'block',
-      '@media (maxWidth: 767px)': {
-        display: mobileMenuOpen ? 'block' : 'none',
-      },
-    },
-    tip: {
-      padding: '10px 12px',
-      backgroundColor: '#2d2d2d',
-      borderTop: '1px solid #3e3e3e',
-      fontSize: '10px',
-      color: '#b5cea8',
-      '@media (minWidth: 768px)': {
-        padding: '12px 16px',
-        fontSize: '12px',
-      },
-    },
-  };
-
-  const getOutputColor = (type) => {
-    switch(type) {
-      case 'error': return '#f48771';
-      case 'success': return '#6a9955';
-      case 'warning': return '#dcdcaa';
-      case 'call': return '#9cdcfe';
-      case 'return': return '#ce9178';
-      case 'breakpoint': return '#f48771';
-      case 'step': return '#4ec9b0';
-      case 'start': return '#6a9955';
-      default: return '#d4d4d4';
-    }
-  };
-
-  const applyMediaStyles = (baseStyles, mediaStyles) => {
-    return baseStyles;
-  };
+  const currentFn =
+    currentLine != null ? functionAtLine(currentLine, codeLines) : null;
 
   return (
-    <BrowserOnly>
-      {() => (
-        <div style={styles.container}>
-          <div style={styles.toolbar}>
-            <button 
-              onClick={startDebug} 
-              style={{ ...styles.button, ...styles.buttonPrimary }}
-              onTouchStart={(e) => e.preventDefault()}
+    <DemoShell>
+      <DemoCard
+        title="Эмулятор отладчика IDE"
+        subtitle="Breakpoints, пошаговое выполнение, переменные и стек вызовов"
+      >
+        <div className={styles.ide}>
+          <div className={styles.toolbar}>
+            <button
+              type="button"
+              className={clsx(styles.toolBtn, styles.toolPrimary)}
+              onClick={startDebug}
             >
               ▶ Start
             </button>
-            <button 
-              onClick={() => step('into')} 
-              disabled={!isPaused && isRunning} 
-              style={{ ...styles.button, ...styles.buttonSecondary }}
+            <button
+              type="button"
+              className={clsx(styles.toolBtn, styles.toolSecondary)}
+              onClick={() => step('into')}
+              disabled={!isPaused && isRunning}
+              title="F10"
             >
-              ⬇ Step
+              ↓ Step
             </button>
-            <button 
-              onClick={() => step('over')} 
-              disabled={!isPaused && isRunning} 
-              style={{ ...styles.button, ...styles.buttonSecondary }}
+            <button
+              type="button"
+              className={clsx(styles.toolBtn, styles.toolSecondary)}
+              onClick={() => step('over')}
+              disabled={!isPaused && isRunning}
+              title="F11"
             >
-              ➡ Over
+              ⤵ Over
             </button>
-            <button 
-              onClick={() => step('out')} 
-              disabled={!isPaused && isRunning} 
-              style={{ ...styles.button, ...styles.buttonSecondary }}
+            <button
+              type="button"
+              className={clsx(styles.toolBtn, styles.toolSecondary)}
+              onClick={() => step('out')}
+              disabled={!isPaused && isRunning}
+              title="Shift+F11"
             >
-              ⬆ Out
+              ⤴ Out
             </button>
-            <button 
-              onClick={continueExecution} 
-              disabled={!isPaused && isRunning} 
-              style={{ ...styles.button, ...styles.buttonSuccess }}
+            <span className={styles.toolSep} aria-hidden />
+            <button
+              type="button"
+              className={clsx(styles.toolBtn, styles.toolSuccess)}
+              onClick={continueExecution}
+              disabled={!isPaused}
+              title="F5"
             >
-              ▶ Cont
+              ▶ Continue
             </button>
-            <button 
-              onClick={restartDebug} 
-              style={{ ...styles.button, ...styles.buttonWarning }}
+            <button
+              type="button"
+              className={clsx(styles.toolBtn, styles.toolWarning)}
+              onClick={startDebug}
             >
-              🔄 Restart
+              ↺ Restart
             </button>
+            <span
+              className={clsx(
+                styles.statusPill,
+                isPaused && styles.statusPaused,
+              )}
+            >
+              {isRunning ? (isPaused ? '⏸ Paused' : '▶ Running') : '⏹ Stopped'}
+              {currentFn && (
+                <span className={styles.functionBadge}>{currentFn}()</span>
+              )}
+            </span>
           </div>
-          
-          <div style={styles.mainLayout}>
-            <div style={styles.codeArea}>
-              <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
-                {codeLines.map((line, index) => {
-                  const lineNumber = index + 1;
-                  const hasBreakpoint = breakpoints.has(lineNumber);
-                  const isCurrentLine = currentLine === lineNumber;
-                  
-                  return (
-                    <div
-                      key={lineNumber}
-                      style={{
-                        ...styles.codeLine,
-                        ...(isCurrentLine ? styles.currentLineIndicator : {}),
-                      }}
-                      onClick={() => toggleBreakpoint(lineNumber)}
-                      onTouchEnd={() => toggleBreakpoint(lineNumber)}
-                    >
-                      {hasBreakpoint && <span style={styles.breakpoint}>🔴</span>}
-                      <span style={{ color: '#858585', userSelect: 'none' }}>{lineNumber.toString().padStart(3, ' ')} </span>
-                      <span style={{ color: '#d4d4d4' }}>{line}</span>
+
+          <div className={styles.main}>
+            <div className={styles.editor}>
+              {codeLines.map((line, index) => {
+                const lineNumber = index + 1;
+                const hasBp = breakpoints.has(lineNumber);
+                const isCurrent = currentLine === lineNumber;
+                const tokens = tokenizeLine(line);
+
+                return (
+                  <div
+                    key={lineNumber}
+                    className={clsx(
+                      styles.codeRow,
+                      isCurrent && styles.codeRowCurrent,
+                    )}
+                  >
+                    <div className={styles.gutter}>
+                      <button
+                        type="button"
+                        className={clsx(styles.bpDot, hasBp && styles.bpDotOn)}
+                        onClick={(e) => toggleBreakpoint(lineNumber, e)}
+                        aria-label={
+                          hasBp
+                            ? `Снять breakpoint на строке ${lineNumber}`
+                            : `Breakpoint на строке ${lineNumber}`
+                        }
+                      />
+                      <span className={styles.lineNum}>{lineNumber}</span>
                     </div>
-                  );
-                })}
-              </div>
+                    <code className={styles.codeContent}>
+                      {tokens.map((tok, i) => (
+                        <span key={i} className={TOKEN_CSS[tok.t]}>
+                          {tok.v}
+                        </span>
+                      ))}
+                    </code>
+                  </div>
+                );
+              })}
             </div>
-            
-            <div style={styles.sidebar}>
-              <button 
-                style={styles.mobileMenuButton}
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                {mobileMenuOpen ? '▼ Скрыть информацию' : '▲ Показать информацию'}
-              </button>
-              
-              <div style={styles.sidebarContent}>
-                <div style={styles.section}>
-                  <div style={styles.sectionTitle}>🔧 Переменные</div>
-                  {Object.keys(variables).length === 0 ? (
-                    <div style={{ color: '#858585', fontSize: '11px' }}>Нет активных переменных</div>
+
+            <aside className={styles.sidebar}>
+              <div className={styles.tabs}>
+                {[
+                  {id: 'vars', label: 'Variables'},
+                  {id: 'stack', label: 'Call Stack'},
+                ].map((t) => (
+                  <button
+                    key={t.id}
+                    type="button"
+                    className={clsx(
+                      styles.tab,
+                      sidebarTab === t.id && styles.tabActive,
+                    )}
+                    onClick={() => setSidebarTab(t.id)}
+                  >
+                    {t.label}
+                  </button>
+                ))}
+              </div>
+              <div className={styles.panelBody}>
+                {sidebarTab === 'vars' &&
+                  (Object.keys(variables).length === 0 ? (
+                    <p className={styles.panelEmpty}>Нет локальных переменных</p>
                   ) : (
                     Object.entries(variables).map(([name, value]) => (
-                      <div key={name} style={styles.variableItem}>
-                        <span style={styles.variableName}>{name}</span> = <span style={styles.variableValue}>{JSON.stringify(value)}</span>
+                      <div key={name} className={styles.varRow}>
+                        <span className={styles.varName}>{name}</span>
+                        {' = '}
+                        <span className={styles.varVal}>
+                          {JSON.stringify(value)}
+                        </span>
                       </div>
                     ))
-                  )}
-                </div>
-                
-                <div style={styles.section}>
-                  <div style={styles.sectionTitle}>📞 Стек вызовов</div>
-                  {callStack.length === 0 ? (
-                    <div style={{ color: '#858585', fontSize: '11px' }}>Стек пуст</div>
+                  ))}
+                {sidebarTab === 'stack' &&
+                  (callStack.length === 0 ? (
+                    <p className={styles.panelEmpty}>Стек пуст</p>
                   ) : (
                     callStack.map((frame, idx) => (
-                      <div key={idx} style={{ ...styles.callStackItem, ...(idx === callStack.length - 1 ? { color: '#4ec9b0', fontWeight: 'bold' } : {}) }}>
-                        {frame.function} {idx === callStack.length - 1 && '◀'}
+                      <div
+                        key={`${frame.function}-${idx}`}
+                        className={clsx(
+                          styles.stackFrame,
+                          idx === callStack.length - 1 && styles.stackFrameActive,
+                        )}
+                      >
+                        {frame.function}
+                        {idx === callStack.length - 1 && ' ◀'}
+                        <div style={{fontSize: '0.65rem', color: '#858585'}}>
+                          line {frame.line}
+                        </div>
                       </div>
                     ))
-                  )}
-                </div>
-                
-                <div style={styles.section}>
-                  <div style={styles.sectionTitle}>Статус</div>
-                  <div style={{ fontSize: '11px', color: isPaused ? '#4ec9b0' : '#858585' }}>
-                    {isRunning ? (isPaused ? '⏸ Приостановлено' : '▶ Выполняется') : '⏹ Остановлено'}
-                  </div>
-                  {currentLine && (
-                    <div style={{ fontSize: '10px', color: '#858585', marginTop: '6px' }}>
-                      Строка: {currentLine}
-                    </div>
-                  )}
-                </div>
+                  ))}
               </div>
-            </div>
+            </aside>
           </div>
-          
-          <div style={styles.outputArea}>
-            <div style={styles.sectionTitle}>Вывод программы</div>
+
+          <div className={styles.console}>
+            <div className={styles.consoleHead}>
+              <span className={styles.consoleTitle}>Debug Console</span>
+              <button
+                type="button"
+                className={styles.consoleClear}
+                onClick={() => setOutput([])}
+              >
+                Очистить
+              </button>
+            </div>
             {output.length === 0 ? (
-              <div style={{ color: '#858585', fontSize: '11px' }}>Нажмите Start для начала отладки</div>
+              <p className={styles.panelEmpty}>Нажмите Start (F5) для начала</p>
             ) : (
               output.map((item, idx) => (
-                <div key={idx} style={{ ...styles.outputLine, color: getOutputColor(item.type) }}>
+                <div
+                  key={idx}
+                  className={styles.logLine}
+                  style={{color: OUTPUT_COLORS[item.type] ?? OUTPUT_COLORS.info}}
+                >
                   [{item.timestamp}] {item.text}
                 </div>
               ))
             )}
           </div>
-          
-          <div style={styles.tip}>
-            💡 <strong>Подсказка:</strong> Кликните по номеру строки, чтобы установить/снять точку останова (🔴). 
-            Точки останова уже установлены на строках 14, 15, 16 для демонстрации.
-          </div>
+
+          <p className={styles.tip}>
+            Клик по красной точке в gutter — breakpoint. Горячие клавиши: F5 Continue,
+            F10 Step, F11 Over, Shift+F11 Out. Breakpoints на 14–16 для демо main().
+          </p>
         </div>
-      )}
+      </DemoCard>
+    </DemoShell>
+  );
+}
+
+export default function DebuggerEmulator() {
+  return (
+    <BrowserOnly fallback={demoLoadingFallback()}>
+      {() => <DebuggerEmulatorInner />}
     </BrowserOnly>
   );
-};
-
-export default DebuggerEmulator;
+}
