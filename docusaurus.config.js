@@ -1,5 +1,53 @@
 // docusaurus.config.js
 
+/** Old slug segment -> new folder name (encyclopedia subsection). */
+const ENCYCLOPEDIA_FOLDER_RENAMES = [
+  ['5-languages/5-04-platforma-dotnet', '5-languages/5.04. Platforma .NET'],
+  ['5-languages/5-15-lua-i-luau', '5-languages/5.15. Lua и Luau'],
+  ['5-languages/5-16-starye-yazyki', '5-languages/5.16. Старые языки'],
+  ['5-languages/5-27-1s', '5-languages/5.27. 1С'],
+  ['8-infra-security/8-01-oblachnye-tehnologii', '8-infra-security/8.01. Облачные технологии'],
+  ['8-infra-security/8-03-zabota-o-kode-i-dannyh', '8-infra-security/8.03. Забота о коде и данных'],
+  [
+    '8-infra-security/8-05-mikroservisy-i-integratsiya',
+    '8-infra-security/8.05. Микросервисы и интеграция',
+  ],
+  [
+    '8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya',
+    '8-infra-security/8.06. Контейнеризация и оркестрация',
+  ],
+  [
+    '8-infra-security/8-07-informatsionnaya-bezopasnost',
+    '8-infra-security/8.07. Информационная безопасность',
+  ],
+  [
+    '3-data-markup/3-01-prodvinutye-operatsii-s-dannymi',
+    '3-data-markup/3.01. Продвинутые операции с данными',
+  ],
+  ['3-data-markup/3-02-struktury-dannyh', '3-data-markup/3.02. Структуры данных'],
+  ['3-data-markup/3-03-myslitelnaya-baza', '3-data-markup/3.03. Мыслительная база'],
+  ['3-data-markup/3-04-konfiguratsii-i-dannye', '3-data-markup/3.04. Конфигурации и данные'],
+  ['3-data-markup/3-05-osnovy-baz-dannyh', '3-data-markup/3.05. Основы баз данных'],
+  ['3-data-markup/3-08-upravlenie-rsubd', '3-data-markup/3.08. Управление реляционными СУБД'],
+  ['3-data-markup/3-11-analiz-dannyh', '3-data-markup/3.11. Анализ данных'],
+];
+
+function createEncyclopediaFolderRedirects(existingPath) {
+  const redirects = [];
+  for (const [oldSegment, newSegment] of ENCYCLOPEDIA_FOLDER_RENAMES) {
+    const newPrefix = `/encyclopedia/${newSegment}/`;
+    const newExact = `/encyclopedia/${newSegment}`;
+    if (existingPath.includes(newPrefix)) {
+      redirects.push(
+        existingPath.replace(`/encyclopedia/${newSegment}/`, `/encyclopedia/${oldSegment}/`),
+      );
+    } else if (existingPath === newExact || existingPath.endsWith(newExact)) {
+      redirects.push(existingPath.replace(newExact, `/encyclopedia/${oldSegment}`));
+    }
+  }
+  return redirects.length > 0 ? redirects : undefined;
+}
+
 module.exports = {
   title: 'Вселенная IT',
   tagline: 'Единый и ультимативный гайд по IT',
@@ -47,6 +95,12 @@ module.exports = {
   ],
 
   plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        createRedirects: createEncyclopediaFolderRedirects,
+      },
+    ],
     () => ({
       name: 'demo-chunk-splitting',
       configureWebpack(_config, isServer) {
