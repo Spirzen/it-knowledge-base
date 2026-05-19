@@ -202,7 +202,7 @@ function LowNoCodeDemoInner() {
     setIsDragging(false);
     const type = e.dataTransfer.getData('type');
     const label = e.dataTransfer.getData('label');
-    if (!type) return;
+    if (!type || !canvasRef.current) return;
     const rect = canvasRef.current.getBoundingClientRect();
     addComponent(type, label, e.clientX - rect.left - 40, e.clientY - rect.top - 16);
   };
@@ -210,6 +210,7 @@ function LowNoCodeDemoInner() {
   const startDragItem = (e, comp) => {
     e.preventDefault();
     e.stopPropagation();
+    if (!canvasRef.current) return;
     setSelectedId(comp.id);
     const rect = canvasRef.current.getBoundingClientRect();
     dragRef.current = {
@@ -221,17 +222,19 @@ function LowNoCodeDemoInner() {
 
   useEffect(() => {
     const onMove = (e) => {
-      if (!dragRef.current || !canvasRef.current) return;
-      const rect = canvasRef.current.getBoundingClientRect();
+      const drag = dragRef.current;
+      const canvas = canvasRef.current;
+      if (!drag || !canvas) return;
+
+      const rect = canvas.getBoundingClientRect();
       const {x, y} = clamp(
-        e.clientX - rect.left - dragRef.current.offsetX,
-        e.clientY - rect.top - dragRef.current.offsetY,
+        e.clientX - rect.left - drag.offsetX,
+        e.clientY - rect.top - drag.offsetY,
         rect.width,
         rect.height,
       );
-      setComponents((list) =>
-        list.map((c) => (c.id === dragRef.current.id ? {...c, x, y} : c)),
-      );
+      const dragId = drag.id;
+      setComponents((list) => list.map((c) => (c.id === dragId ? {...c, x, y} : c)));
     };
     const onUp = () => {
       dragRef.current = null;
@@ -417,10 +420,26 @@ function LowNoCodeDemoInner() {
           )}
 
           <div className={styles.canvasActions}>
-            <button type="button" className="it-demo__btn it-demo__btn--danger" onClick={() => setComponents([])}>
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--danger"
+              onClick={() => {
+                dragRef.current = null;
+                setSelectedId(null);
+                setComponents([]);
+              }}
+            >
               Очистить
             </button>
-            <button type="button" className="it-demo__btn it-demo__btn--secondary" onClick={() => setComponents(DEFAULT_CANVAS)}>
+            <button
+              type="button"
+              className="it-demo__btn it-demo__btn--secondary"
+              onClick={() => {
+                dragRef.current = null;
+                setSelectedId(null);
+                setComponents(DEFAULT_CANVAS.map((c) => ({...c})));
+              }}
+            >
               Пример
             </button>
             <button type="button" className="it-demo__btn" onClick={copyExport}>

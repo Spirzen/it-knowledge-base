@@ -121,11 +121,15 @@ export function SqlQueryEditor({
 export function SqlToolbar({onExecute, executeLabel, onReset, resetLabel = 'Сбросить данные', extra}) {
   return (
     <div className={styles.toolbar}>
-      <button type="button" className="it-demo__btn it-demo__btn--primary" onClick={onExecute}>
+      <button
+        type="button"
+        className="it-demo__btn it-demo__btn--primary"
+        onClick={() => onExecute?.()}
+      >
         {executeLabel}
       </button>
       {onReset && (
-        <button type="button" className="it-demo__btn it-demo__btn--secondary" onClick={onReset}>
+        <button type="button" className="it-demo__btn it-demo__btn--secondary" onClick={() => onReset?.()}>
           {resetLabel}
         </button>
       )}

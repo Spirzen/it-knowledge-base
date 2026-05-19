@@ -157,6 +157,9 @@ export function validateUserField(col, value) {
 }
 
 export function executeSelect(sql, data = INITIAL_USERS) {
+  if (typeof sql !== 'string') {
+    throw new Error('Ожидается текст SQL-запроса.');
+  }
   const originalSql = sql.trim();
   const sqlUpper = originalSql.toUpperCase();
 
@@ -228,6 +231,9 @@ const JOIN_TABLES = {
 };
 
 export function executeJoin(sql) {
+  if (typeof sql !== 'string') {
+    throw new Error('Ожидается текст SQL-запроса.');
+  }
   const trimmed = sql.trim();
 
   if (!trimmed.toUpperCase().startsWith('SELECT')) {
