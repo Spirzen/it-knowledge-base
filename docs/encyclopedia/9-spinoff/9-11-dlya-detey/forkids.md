@@ -1,9 +1,7 @@
 ---
-title: О разделе
-description: id — forkids title — Для детей - о разделе sidebar_label — Для детей - о разделе slug — /encyclopedia/Спин-офф/9.11. Для детей/forkids
-------
 id: forkids
 title: Для детей - о разделе
+description: Пошаговый путь для детей 8–16 лет — от компьютерной грамотности и сети к логике, цифровой гигиене и первому коду, с практикой и заданиями по темам.
 sidebar_label: Для детей - о разделе
 slug: /encyclopedia/Спин-офф/9.11. Для детей/forkids
 ---

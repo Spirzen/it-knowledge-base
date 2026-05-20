@@ -1,9 +1,7 @@
 ---
-title: О разделе
-description: id — project title — 7. Проект - о разделе sidebar_label — 7. Проект - о разделе slug — /encyclopedia/Проект/project
-------
 id: project
 title: 7. Проект - о разделе
+description: IT-проект целиком — роли, командный конвейер, договор и сдача результата - не только код, но и координация аналитики, архитектуры и сопутствующих функций.
 sidebar_label: 7. Проект - о разделе
 slug: /encyclopedia/Проект/project
 ---
@@ -18,5 +16,3 @@ import DocCardList from '@theme/DocCardList';
 ## О разделе
 
 <DocCardList />
-
----
