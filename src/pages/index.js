@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 
+import UniverseMap from '@site/src/components/UniverseMap';
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -31,78 +32,6 @@ function HomepageHeader() {
         </div>
       </div>
     </header>
-  );
-}
-
-function HomepageTabs() {
-  const sections = [
-    {
-      title: 'Основы',
-      description: 'Компьютерная и цифровая грамотность, информация, программа, интерфейс, карьера.',
-      link: '/section/basics',
-    },
-    {
-      title: 'Система и сеть',
-      description: 'Операционная система, платформы, терминал, сеть, железо, администрирование, техподдержка.',
-      link: '/section/system-network',
-    },
-    {
-      title: 'Данные и разметка',
-      description: 'Структуры данных, SQL/NoSQL, HTML, CSS, XML, JSON, анализ и хранение.',
-      link: '/section/data-markup',
-    },
-    {
-      title: 'Код и разработка',
-      description: 'Алгоритмы, код, мышление, парадигмы, отладка, архитектура выполнения, Git, асинхронность.',
-      link: '/section/code-dev',
-    },
-    {
-      title: 'Программирование',
-      description: 'JavaScript, Python, Java, .NET, C#, C++, PHP, Smalltalk, Kotlin, Go, Ruby, Rust, Groovy, Swift, Lua, и прочие.',
-      link: '/section/languages',
-    },
-    {
-      title: 'Искусственный интеллект',
-      description: 'Нейросети, машинное обучение, AI.',
-      link: '/section/ai',
-    },
-    {
-      title: 'Проект',
-      description: 'Команда и управление, методологии, документирование, бизнес-логика, аналитика, проектирование и архитектура.',
-      link: '/section/project',
-    },
-    {
-      title: 'Инфраструктура и безопасность',
-      description: 'Облачные технологии, DevOps, микросервисы, интеграция, Docker, Kubernetes, информационная безопасность.',
-      link: '/section/infra-security',
-    },
-    {
-      title: 'Спин-офф',
-      description: 'Игры, ИИ, блокчейн, биографии, этика, отраслевое ПО, интернет-культура, графика.',
-      link: '/section/spinoff',
-    }
-  ];
-
-  return (
-    <section className="margin-top--md container">
-      <Heading as="h2" className={styles.featuresTitle}>
-        Состав энциклопедии
-      </Heading>
-      <div className={styles.sectionsGrid}>
-        {sections.map((section, idx) => (
-          <div key={idx} className={styles.sectionCard}>
-            <Heading as="h3">{section.title}</Heading>
-            <p>{section.description}</p>
-            <Link
-              className={`button button--outline button--secondary ${styles['section-cta']}`}
-              to={section.link}
-            >
-              Перейти
-            </Link>
-          </div>
-        ))}
-      </div>
-    </section>
   );
 }
 
@@ -193,7 +122,7 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-        <HomepageTabs />
+        <UniverseMap />
         <HomepageFeatures />
       </main>
       <script

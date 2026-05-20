@@ -1,0 +1,493 @@
+/* Цвета разделов (дублируют index.module.css для автономности карты) */
+:root {
+  --section-1-bg: #f8f9ff;
+  --section-2-bg: #f9f8fb;
+  --section-3-bg: #f6fcf8;
+  --section-4-bg: #fff7f5;
+  --section-5-bg: #f5f9ff;
+  --section-6-bg: #fdf8f0;
+  --section-7-bg: #f7f5fa;
+  --section-8-bg: #f0f9f4;
+  --section-9-bg: #fff2f8;
+  --section-1-border: #4a6cf7;
+  --section-2-border: #7b61ff;
+  --section-3-border: #2e8b57;
+  --section-4-border: #d2691e;
+  --section-5-border: #1e90ff;
+  --section-6-border: #d2b48c;
+  --section-7-border: #9370db;
+  --section-8-border: #32cd32;
+  --section-9-border: #ff69b4;
+}
+
+html[data-theme='dark'] {
+  --section-1-bg: #1a1d2e;
+  --section-2-bg: #1d1c24;
+  --section-3-bg: #1a221f;
+  --section-4-bg: #241e1c;
+  --section-5-bg: #1a1f2e;
+  --section-6-bg: #221f18;
+  --section-7-bg: #1f1d23;
+  --section-8-bg: #18221d;
+  --section-9-bg: #241a20;
+  --section-1-border: #6a8cff;
+  --section-2-border: #9b81ff;
+  --section-3-border: #4ecb8d;
+  --section-4-border: #e68a4e;
+  --section-5-border: #4eb3ff;
+  --section-6-border: #e6c99c;
+  --section-7-border: #b390ff;
+  --section-8-border: #5ae65a;
+  --section-9-border: #ff8ac4;
+}
+
+.universeMap {
+  padding: 3rem 0 4rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-color)) 0%,
+    var(--ifm-background-color) 45%
+  );
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-content);
+}
+
+.subtitle {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--ifm-color-content-secondary);
+}
+
+.layout {
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media screen and (min-width: 996px) {
+  .layout {
+    grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+    gap: 2.5rem;
+  }
+
+  .mapPanel {
+    position: sticky;
+    top: calc(var(--ifm-navbar-height, 60px) + 1rem);
+    align-self: start;
+  }
+}
+
+.mapPanel {
+  min-width: 0;
+}
+
+.mapCanvas {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  aspect-ratio: 1;
+  contain: layout style paint;
+}
+
+.mapSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.orbitRing {
+  fill: none;
+  stroke: var(--ifm-color-emphasis-300);
+  stroke-width: 0.35;
+  stroke-dasharray: 1.2 1.8;
+  opacity: 0.85;
+}
+
+.orbitPath {
+  fill: none;
+  stroke: var(--ifm-color-emphasis-400);
+  stroke-width: 0.25;
+  stroke-dasharray: 0.8 1.2;
+  opacity: 0.5;
+}
+
+.spoke {
+  stroke: var(--ifm-color-emphasis-300);
+  stroke-width: 0.2;
+  opacity: 0.35;
+  transition: opacity 0.2s ease, stroke-width 0.2s ease;
+}
+
+.spoke[data-active='true'] {
+  stroke: var(--ifm-color-primary);
+  stroke-width: 0.45;
+  opacity: 0.75;
+}
+
+.hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(
+    145deg,
+    var(--ifm-color-primary) 0%,
+    var(--ifm-color-primary-dark) 100%
+  );
+  box-shadow:
+    0 0 0 4px color-mix(in srgb, var(--ifm-color-primary) 25%, transparent),
+    0 8px 24px color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hub:hover {
+  transform: translate3d(-50%, -50%, 0) scale(1.06);
+  color: #fff;
+  text-decoration: none;
+  box-shadow:
+    0 0 0 6px color-mix(in srgb, var(--ifm-color-primary) 30%, transparent),
+    0 12px 28px color-mix(in srgb, var(--ifm-color-primary) 40%, transparent);
+}
+
+.hubLabel {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.hubSub {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  opacity: 0.9;
+  margin-top: 0.15rem;
+}
+
+.node {
+  position: absolute;
+  left: calc(50% + var(--orbit-x));
+  top: calc(50% + var(--orbit-y));
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 4.25rem;
+  max-width: 5.5rem;
+  padding: 0.45rem 0.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid var(--node-border, var(--ifm-color-emphasis-400));
+  background: var(--node-bg, var(--ifm-card-background-color));
+  color: var(--ifm-color-content);
+  box-shadow: var(--ifm-global-shadow-md);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.node:hover {
+  transform: translate3d(-50%, -50%, 0);
+  text-decoration: none;
+  color: var(--ifm-color-content);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.node:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.nodeActive {
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 4;
+  border-color: var(--node-border, var(--ifm-color-primary));
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--node-border, var(--ifm-color-primary)) 30%, transparent),
+    var(--ifm-global-shadow-md);
+}
+
+.nodeNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--node-border, var(--ifm-color-primary));
+  margin-bottom: 0.2rem;
+}
+
+.nodeTitle {
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.mapHint {
+  margin: 1rem 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.roadmapLink {
+  margin: 0.75rem 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.roadmapLink a {
+  font-weight: 600;
+}
+
+.detailPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.detailCard {
+  padding: 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 5px solid var(--node-border, var(--ifm-color-primary));
+  background: var(--node-bg, var(--ifm-card-background-color));
+  box-shadow: var(--ifm-global-shadow-md);
+  min-height: 15.5rem;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.detailBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--node-border, var(--ifm-color-primary));
+  margin-bottom: 0.5rem;
+}
+
+.detailTitle {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  min-height: 2.75rem;
+}
+
+.detailText {
+  margin: 0 0 1.25rem;
+  line-height: 1.55;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.95rem;
+  min-height: 4.65em;
+}
+
+.detailActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 2.35rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid transparent;
+  border-left-width: 3px;
+  border-radius: var(--ifm-global-radius);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: left;
+  color: var(--ifm-color-content);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.legendItem:hover,
+.legendItem:focus-visible {
+  background: var(--node-bg, var(--ifm-color-emphasis-100));
+  border-color: var(--ifm-color-emphasis-300);
+  border-left-color: var(--node-border, var(--ifm-color-emphasis-400));
+  outline: none;
+}
+
+.legendItemActive {
+  background: var(--node-bg, var(--ifm-color-emphasis-100));
+  border-color: var(--ifm-color-emphasis-300);
+  border-left-color: var(--node-border, var(--ifm-color-primary));
+}
+
+.legendNum {
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--node-border, var(--ifm-color-primary));
+}
+
+.legendLabel {
+  flex: 1;
+  min-width: 0;
+  line-height: 1.3;
+}
+
+/* Цвета разделов — совпадают с главной (index.module.css) */
+.node--1,
+.detailCard--1,
+.legendItem--1 {
+  --node-bg: var(--section-1-bg);
+  --node-border: var(--section-1-border);
+}
+.node--2,
+.detailCard--2,
+.legendItem--2 {
+  --node-bg: var(--section-2-bg);
+  --node-border: var(--section-2-border);
+}
+.node--3,
+.detailCard--3,
+.legendItem--3 {
+  --node-bg: var(--section-3-bg);
+  --node-border: var(--section-3-border);
+}
+.node--4,
+.detailCard--4,
+.legendItem--4 {
+  --node-bg: var(--section-4-bg);
+  --node-border: var(--section-4-border);
+}
+.node--5,
+.detailCard--5,
+.legendItem--5 {
+  --node-bg: var(--section-5-bg);
+  --node-border: var(--section-5-border);
+}
+.node--6,
+.detailCard--6,
+.legendItem--6 {
+  --node-bg: var(--section-6-bg);
+  --node-border: var(--section-6-border);
+}
+.node--7,
+.detailCard--7,
+.legendItem--7 {
+  --node-bg: var(--section-7-bg);
+  --node-border: var(--section-7-border);
+}
+.node--8,
+.detailCard--8,
+.legendItem--8 {
+  --node-bg: var(--section-8-bg);
+  --node-border: var(--section-8-border);
+}
+.node--9,
+.detailCard--9,
+.legendItem--9 {
+  --node-bg: var(--section-9-bg);
+  --node-border: var(--section-9-border);
+}
+
+@media screen and (max-width: 995px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .mapCanvas {
+    max-width: min(100%, 400px);
+  }
+
+  .node {
+    min-width: 3.6rem;
+    max-width: 4.5rem;
+    padding: 0.35rem;
+  }
+
+  .nodeTitle {
+    font-size: 0.65rem;
+  }
+
+  .hub {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  .legend {
+    max-height: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.35rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .universeMap {
+    padding: 2rem 0 3rem;
+  }
+
+  .legend {
+    grid-template-columns: 1fr;
+  }
+
+  .detailActions {
+    flex-direction: column;
+  }
+
+  .detailActions :global(.button) {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hub,
+  .node,
+  .spoke,
+  .legendItem {
+    transition: none;
+  }
+}
