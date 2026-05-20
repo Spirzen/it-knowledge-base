@@ -1,79 +1,88 @@
-import React, {useEffect, useState, useCallback} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
-import DemoShell from './shared/DemoShell';
+import clsx from 'clsx';
+import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
+import styles from './Timer.module.css';
 
-function TimerInner({seconds = 60, label = 'Таймер'}) {
-  const [remaining, setRemaining] = useState(seconds);
+function formatTime(totalSeconds) {
+  const s = Math.max(0, Math.floor(totalSeconds));
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  return `${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
+}
+
+function TimerInner({seconds: initialSeconds = 60}) {
+  const [seconds, setSeconds] = useState(initialSeconds);
   const [running, setRunning] = useState(false);
+  const intervalRef = useRef(null);
+
+  const clearTimer = useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+  }, []);
 
   useEffect(() => {
-    setRemaining(seconds);
-    setRunning(false);
-  }, [seconds]);
-
-  useEffect(() => {
-    if (!running || remaining <= 0) {
+    if (!running) {
+      clearTimer();
       return undefined;
     }
-    const id = window.setInterval(() => {
-      setRemaining((r) => {
-        if (r <= 1) {
+    intervalRef.current = setInterval(() => {
+      setSeconds((prev) => {
+        if (prev <= 1) {
           setRunning(false);
           return 0;
         }
-        return r - 1;
+        return prev - 1;
       });
     }, 1000);
-    return () => window.clearInterval(id);
-  }, [running, remaining]);
+    return () => clearTimer();
+  }, [running, clearTimer]);
 
-  const reset = useCallback(() => {
-    setRemaining(seconds);
+  const reset = () => {
     setRunning(false);
-  }, [seconds]);
+    setSeconds(initialSeconds);
+  };
 
-  const pct = seconds > 0 ? Math.round((remaining / seconds) * 100) : 0;
+  const done = seconds === 0 && !running;
 
   return (
     <DemoShell>
-      <div className="it-demo__card">
-        <div className="it-demo__header">
-          <h4 className="it-demo__title">{label}</h4>
-          <p className="it-demo__subtitle">
-            {remaining > 0 ? `Осталось: ${remaining} сек.` : 'Время вышло'}
-          </p>
+      <DemoCard
+        title="Таймер для практики"
+        subtitle="Компонент из MDX: обратный отсчёт, пауза и сброс">
+        <div
+          className={clsx(styles.display, done && styles.displayDone)}
+          role="timer"
+          aria-live="polite"
+          aria-label={`Осталось ${seconds} секунд`}>
+          {formatTime(seconds)}
         </div>
-        <div className="it-demo__body">
-          <div className="it-demo__progress" style={{marginBottom: '1rem'}}>
-            <div className="it-demo__progress-bar" style={{width: `${pct}%`}} />
-          </div>
-          <div className="it-demo__row">
-            <button
-              type="button"
-              className="it-demo__btn it-demo__btn--primary"
-              onClick={() => setRunning((v) => !v)}
-              disabled={remaining === 0}
-            >
-              {running ? 'Пауза' : 'Старт'}
-            </button>
-            <button
-              type="button"
-              className="it-demo__btn it-demo__btn--secondary"
-              onClick={reset}
-            >
-              Сброс
-            </button>
-          </div>
+        <div className={styles.controls}>
+          <button
+            type="button"
+            className={styles.btnPrimary}
+            onClick={() => setRunning((r) => !r)}
+            disabled={seconds === 0}>
+            {running ? 'Пауза' : seconds === 0 ? 'Готово' : 'Старт'}
+          </button>
+          <button type="button" className={styles.btnSecondary} onClick={reset}>
+            Сброс ({initialSeconds} с)
+          </button>
         </div>
-      </div>
+        {done && (
+          <p className={styles.hint}>Время вышло — можно перезапустить таймер.</p>
+        )}
+      </DemoCard>
     </DemoShell>
   );
 }
 
 export default function Timer(props) {
   return (
-    <BrowserOnly fallback={demoLoadingFallback()}>
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка таймера…')}>
       {() => <TimerInner {...props} />}
     </BrowserOnly>
   );

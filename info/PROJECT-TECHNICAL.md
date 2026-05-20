@@ -106,7 +106,7 @@ it-knowledge-base/
 ├── .github/workflows/deploy.yml
 ├── docs/                     # весь контент сайта (routeBasePath: '/')
 ├── src/                      # React: компоненты, theme swizzle, CSS
-├── static/                   # favicon, img, CNAME, robots.txt
+├── static/                   # favicon, img, downloads (APK), CNAME, robots.txt
 ├── scripts/                  # generate-demo-registry.mjs
 ├── info/                     # служебная документация (не в сборке)
 └── build/                    # артефакт npm run build (в .gitignore)
@@ -186,6 +186,13 @@ it-knowledge-base/
 | `static/robots.txt` | SEO |
 | `static/.nojekyll` | Отключение Jekyll на Pages |
 | `static/yandex_*.html` | Верификация Яндекса |
+| `static/downloads/it-universe.apk` | Сборка Android-приложения «Вселенная IT» для прямой загрузки |
+
+Файлы из `static/` копируются в корень сайта при сборке без изменения пути: APK доступен по URL `/downloads/it-universe.apk` (на проде — `https://spirzen.ru/downloads/it-universe.apk`).
+
+На главной (`src/pages/index.js`) под кнопками hero выводится ссылка **«Скачать APK»** (`useBaseUrl` + атрибут `download`). Стили блока — `src/pages/index.module.css` (классы `apkStrip`, `apkButton`).
+
+При обновлении приложения замените файл в `static/downloads/` (имя лучше оставлять постоянным, чтобы не менять ссылку в коде). Учитывайте размер в Git: крупные APK (&gt;50 МБ) лучше выкладывать через [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) и ставить внешнюю ссылку вместо хранения в репозитории.
 
 Изображения статей хранятся **рядом со статьями** в `docs/**` (не в `static/`).
 
@@ -369,7 +376,7 @@ MDX import
 | PDF | `ArticlePdfExport.jsx` + `utils/exportArticlePdf.js` | В Layout, ленивый импорт pdf-библиотек |
 | См. также | `ArticleSeeAlso.jsx` + `articleSeeAlsoUtils.js` | После контента, перед footer |
 | Sidebar filter | `theme/DocSidebar/Desktop/Content/index.tsx` | Поле фильтрации пунктов меню |
-| Главная | `pages/index.js` + `index.module.css` | Маршрут `/` |
+| Главная | `pages/index.js` + `index.module.css` | Маршрут `/`; кнопка скачивания APK → `/downloads/it-universe.apk` |
 | Фон | `AnimatedBackground.tsx` | Только главная (если подключён) |
 
 ### 7.4. Полный список демо-компонентов (`src/components/`)

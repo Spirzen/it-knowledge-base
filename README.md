@@ -5,7 +5,8 @@
 ### Варианты использования
 
 1. Готовый сайт проекта — [spirzen.ru](https://spirzen.ru/)
-2. Локальная (оффлайн) версия — `git clone`, `npm install`, `npm start`.
+2. Мобильное приложение для Android — APK на [главной](https://spirzen.ru/) (кнопка «Скачать APK») или напрямую: [spirzen.ru/downloads/it-universe.apk](https://spirzen.ru/downloads/it-universe.apk)
+3. Локальная (оффлайн) версия — `git clone`, `npm install`, `npm start`.
 
 Для офлайн-сборки желательно:
 
@@ -72,6 +73,7 @@ it-knowledge-base/
 │   └── utils/exportArticlePdf.js
 ├── docs/                    # статьи (энциклопедия, lab, about, …)
 ├── static/
+│   └── downloads/it-universe.apk   # Android-приложение (отдаётся как /downloads/…)
 └── package.json
 ```
 
@@ -111,6 +113,7 @@ npm run serve          # просмотр build/
 npm run clear          # сброс кэша Docusaurus
 
 npm run docs:demo-registry   # обновить info/demo-registry.md
+npm run docs:collection-titles  # заголовки статей для блока «С чего начать?» на главной
 ```
 
 Сборка создаёт каталог `build/` — полностью статический сайт без backend.
@@ -126,6 +129,10 @@ npm run docs:demo-registry   # обновить info/demo-registry.md
 - Альтернативы: Vercel, Netlify и любой статический хостинг (`npm run build`, каталог `build/`)
 
 Продакшен: [spirzen.ru](https://spirzen.ru/) (`baseUrl: '/'` в `docusaurus.config.js`).
+
+### Android-приложение (APK)
+
+Файл лежит в `static/downloads/it-universe.apk` и попадает в сборку как статический ресурс. После `npm run build` проверка: `build/downloads/it-universe.apk`. Ссылка на главной — в `src/pages/index.js`; подробности — в [`info/PROJECT-TECHNICAL.md`](info/PROJECT-TECHNICAL.md) (раздел про `static/`).
 
 ---
 

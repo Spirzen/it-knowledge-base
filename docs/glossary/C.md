@@ -136,7 +136,7 @@ CMYK (Cyan, Magenta, Yellow, Key/Black — голубой, пурпурный, �
 
 ## Common Language Runtime
 
-Common Language Runtime (англ. CLR — общеязыковая исполняющая среда) — исполняющая среда для байт-кода CIL (MSIL), в который компилируются программы, написанные на .NET-совместимых языках программирования (C#, Managed C++, Visual Basic .NET, F# и прочие). CLR является одним из основных компонентов пакета Microsoft .NET Framework.
+Common Language Runtime (англ. CLR — общеязыковая исполняющая среда) — исполняющая среда для байт-кода CIL (MSIL), в который компилируются программы, написанные на .NET-совместимых языках программирования (C#, Managed C++, visual-basic .NET, F# и прочие). CLR является одним из основных компонентов пакета Microsoft .NET Framework.
 
 ## Compiler
 

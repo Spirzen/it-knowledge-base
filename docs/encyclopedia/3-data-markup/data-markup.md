@@ -1,11 +1,11 @@
 ---
 title: О разделе
-description: id — Данные-markup title — 3. Данные и разметка - о разделе sidebar_label — 3. Данные и разметка - о разделе slug — /encyclopedia/Данные и разметка/Данные-markup
+description: id — Данные-markup title — 3. Данные и разметка - о разделе sidebar_label — 3. Данные и разметка - о разделе slug — /encyclopedia/3-data-markup/Данные-markup
 ------
 id: Данные-markup
 title: 3. Данные и разметка - о разделе
 sidebar_label: 3. Данные и разметка - о разделе
-slug: /encyclopedia/Данные и разметка/Данные-markup
+slug: /encyclopedia/3-data-markup/Данные-markup
 ---
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>

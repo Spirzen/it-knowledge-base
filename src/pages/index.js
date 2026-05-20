@@ -2,11 +2,17 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import UniverseMap from '@site/src/components/UniverseMap';
+import GettingStartedPaths from '@site/src/components/GettingStartedPaths';
 import styles from './index.module.css';
 
+const APK_DOWNLOAD_PATH = '/downloads/it-universe.apk';
+
 function HomepageHeader() {
+  const apkUrl = useBaseUrl(APK_DOWNLOAD_PATH);
+
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
@@ -17,17 +23,35 @@ function HomepageHeader() {
           <p className="hero__subtitle">
             <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> «Вселенная IT» — это открытая энциклопедия по информационным технологиям. Бесплатно, без рекламы, без партнёров — только систематизированные знания.
           </p>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--primary button--lg"
-              to="/section/basics">
-              🔎 Начать изучение
-            </Link>
-            <Link
-              className="button button--secondary button--lg"
-              to="/about/manifest">
-              <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> Манифест и Правила
-            </Link>
+          <div className={styles.heroActions}>
+            <div className={styles.buttons}>
+              <Link
+                className="button button--primary button--lg"
+                to="/section/basics">
+                🔎 Начать изучение
+              </Link>
+              <Link
+                className="button button--secondary button--lg"
+                to="/about/manifest">
+                <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> Манифест и Правила
+              </Link>
+            </div>
+            <div className={styles.apkStrip}>
+              <a
+                className={styles.apkButton}
+                href={apkUrl}
+                download="it-universe.apk">
+                <span className={styles.apkButtonIcon} aria-hidden="true">
+                  🤖
+                </span>
+                <span className={styles.apkButtonText}>
+                  <span className={styles.apkButtonLabel}>Скачать APK</span>
+                  <span className={styles.apkButtonHint}>
+                    Мобильное приложение для Android
+                  </span>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -123,6 +147,7 @@ export default function Home() {
       <HomepageHeader />
       <main>
         <UniverseMap />
+        <GettingStartedPaths />
         <HomepageFeatures />
       </main>
       <script

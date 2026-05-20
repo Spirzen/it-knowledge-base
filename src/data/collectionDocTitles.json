@@ -1,0 +1,848 @@
+{
+  "encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1": {
+    "title": "Восприятие IT в обществе"
+  },
+  "encyclopedia/1-basics/1-05-preduprezhdenie/intro": {
+    "title": "Предупреждения при изучении — о разделе"
+  },
+  "encyclopedia/1-basics/1-07-nemnogo-o-proshlom/4": {
+    "title": "История интернета"
+  },
+  "encyclopedia/1-basics/1-07-nemnogo-o-proshlom/6": {
+    "title": "Развитие методологий разработки ПО"
+  },
+  "encyclopedia/1-basics/1-07-nemnogo-o-proshlom/intro": {
+    "title": "История информационных технологий — о разделе"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1": {
+    "title": "Принцип работы компьютера"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7": {
+    "title": "Архитектура персонального компьютера"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/81": {
+    "title": "Справочник по характеристикам устройств"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro": {
+    "title": "Как работает компьютер — о разделе"
+  },
+  "encyclopedia/1-basics/1-09-dannye-i-informatsiya/1": {
+    "title": "Данные и информация"
+  },
+  "encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro": {
+    "title": "Данные и информация — о разделе"
+  },
+  "encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro": {
+    "title": "Базовые операции с данными — о разделе"
+  },
+  "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3": {
+    "title": "Веб-браузеры"
+  },
+  "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51": {
+    "title": "Офисные пакеты"
+  },
+  "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro": {
+    "title": "Софт рядового пользователя — о разделе"
+  },
+  "encyclopedia/1-basics/1-12-sovety-dlya-novichka/11": {
+    "title": "Настройка Windows"
+  },
+  "encyclopedia/1-basics/1-12-sovety-dlya-novichka/111": {
+    "title": "Родительский контроль"
+  },
+  "encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro": {
+    "title": "Советы для новичка — о разделе"
+  },
+  "encyclopedia/1-basics/1-15-tekst/41": {
+    "title": "Справочник по Microsoft Excel"
+  },
+  "encyclopedia/1-basics/1-15-tekst/intro": {
+    "title": "Текст — о разделе"
+  },
+  "encyclopedia/1-basics/1-18-kompyuternye-igry/intro": {
+    "title": "Компьютерные игры — о разделе"
+  },
+  "encyclopedia/1-basics/1-19-programma/3": {
+    "title": "Мобильные приложения"
+  },
+  "encyclopedia/1-basics/1-19-programma/intro": {
+    "title": "Программа — о разделе"
+  },
+  "encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro": {
+    "title": "Исполняемые файлы и архивы — о разделе"
+  },
+  "encyclopedia/1-basics/1-21-poisk-informatsii/1": {
+    "title": "Поисковые системы"
+  },
+  "encyclopedia/1-basics/1-21-poisk-informatsii/3": {
+    "title": "Эффективный поиск в интернете"
+  },
+  "encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/1": {
+    "title": "Цифровая коммуникация"
+  },
+  "encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3": {
+    "title": "Электронная почта"
+  },
+  "encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6": {
+    "title": "Цифровые формы и анкеты"
+  },
+  "encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro": {
+    "title": "Коммуникация и общение — о разделе"
+  },
+  "encyclopedia/1-basics/1-25-interfeys/intro": {
+    "title": "Интерфейс — о разделе"
+  },
+  "encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro": {
+    "title": "Карьера в IT и мифы — о разделе"
+  },
+  "encyclopedia/1-basics/1-27-udalennaya-rabota/intro": {
+    "title": "Удаленная работа — о разделе"
+  },
+  "encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/3": {
+    "title": "Потребительская грамотность в цифровой среде"
+  },
+  "encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/1": {
+    "title": "Государство и цифровая экономика"
+  },
+  "encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112": {
+    "title": "Основы бизнеса для IT-специалиста"
+  },
+  "encyclopedia/1-basics/1-30-angliyskiy-yazyk/intro": {
+    "title": "Английский язык в IT — о разделе"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1": {
+    "title": "Операционные системы"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/41": {
+    "title": "Справочник по Windows 11"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/51": {
+    "title": "Справочник по Linux"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/7": {
+    "title": "iOS"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/71": {
+    "title": "Справочник по iOS"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/8": {
+    "title": "Android"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/81": {
+    "title": "Справочник по Android"
+  },
+  "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro": {
+    "title": "Операционная система — о разделе"
+  },
+  "encyclopedia/2-system-network/2-02-platformy/1": {
+    "title": "Платформы в IT"
+  },
+  "encyclopedia/2-system-network/2-02-platformy/3": {
+    "title": "Программные платформы"
+  },
+  "encyclopedia/2-system-network/2-02-platformy/3001": {
+    "title": "Корпоративное ПО"
+  },
+  "encyclopedia/2-system-network/2-02-platformy/3002": {
+    "title": "Платформенные решения в бизнесе"
+  },
+  "encyclopedia/2-system-network/2-02-platformy/311": {
+    "title": "Социальные сети"
+  },
+  "encyclopedia/2-system-network/2-02-platformy/intro": {
+    "title": "Платформы — о разделе"
+  },
+  "encyclopedia/2-system-network/2-03-set-i-internet/1": {
+    "title": "Сеть и интернет - основы и принципы работы"
+  },
+  "encyclopedia/2-system-network/2-03-set-i-internet/2": {
+    "title": "История развития сетевых технологий"
+  },
+  "encyclopedia/2-system-network/2-03-set-i-internet/41": {
+    "title": "Основы IP-адресации"
+  },
+  "encyclopedia/2-system-network/2-03-set-i-internet/611": {
+    "title": "Справочник по HTTP-протоколу"
+  },
+  "encyclopedia/2-system-network/2-03-set-i-internet/91": {
+    "title": "Государственное регулирование интернета"
+  },
+  "encyclopedia/2-system-network/2-03-set-i-internet/intro": {
+    "title": "Сеть и интернет — о разделе"
+  },
+  "encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1": {
+    "title": "Сайты и веб-сайты"
+  },
+  "encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro": {
+    "title": "Веб-сайты и веб-приложения — о разделе"
+  },
+  "encyclopedia/2-system-network/2-05-terminal/101": {
+    "title": "Основные команды в Linux"
+  },
+  "encyclopedia/2-system-network/2-05-terminal/102": {
+    "title": "Основные команды Windows"
+  },
+  "encyclopedia/2-system-network/2-05-terminal/intro": {
+    "title": "Терминал — о разделе"
+  },
+  "encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61": {
+    "title": "Организация домашней сети"
+  },
+  "encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7": {
+    "title": "NAT и проброс портов"
+  },
+  "encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro": {
+    "title": "Системное администрирование — о разделе"
+  },
+  "encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111": {
+    "title": "Аутентификация и авторизация"
+  },
+  "encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/114": {
+    "title": "Устройство и надёжность паролей"
+  },
+  "encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro": {
+    "title": "Основы информационной безопасности — о разделе"
+  },
+  "encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/114": {
+    "title": "История развития интеграционных технологий"
+  },
+  "encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro": {
+    "title": "Основы интеграционного взаимодействия — о разделе"
+  },
+  "encyclopedia/2-system-network/2-10-zhelezo/1": {
+    "title": "Аппаратное обеспечение"
+  },
+  "encyclopedia/2-system-network/2-10-zhelezo/119": {
+    "title": "Беспроводные технологии - Bluetooth, Zigbee, NFC"
+  },
+  "encyclopedia/2-system-network/2-10-zhelezo/intro": {
+    "title": "Аппаратное обеспечение — о разделе"
+  },
+  "encyclopedia/3-data-markup/3-02-struktury-dannyh/11": {
+    "title": "История развития структур данных"
+  },
+  "encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/112": {
+    "title": "Справочник по эмодзи"
+  },
+  "encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/211": {
+    "title": "Справочник по XML"
+  },
+  "encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/212": {
+    "title": "Справочник по XSLT"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/1": {
+    "title": "История развития NoSQL-систем"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/41": {
+    "title": "Справочник по MongoDB"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/51": {
+    "title": "Справочник по Redis"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/61": {
+    "title": "Справочник по Cassandra"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/7": {
+    "title": "Графовые базы данных"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/71": {
+    "title": "Справочник по Cypher"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/81": {
+    "title": "Справочник по Memcached"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/812": {
+    "title": "Векторные базы данных"
+  },
+  "encyclopedia/3-data-markup/3-06-nosql/intro": {
+    "title": "NoSQL — о разделе"
+  },
+  "encyclopedia/3-data-markup/3-07-sql/883": {
+    "title": "Справочник по SQL"
+  },
+  "encyclopedia/3-data-markup/3-07-sql/intro": {
+    "title": "SQL — о разделе"
+  },
+  "encyclopedia/3-data-markup/3-09-html/21": {
+    "title": "Справочник по HTML"
+  },
+  "encyclopedia/3-data-markup/3-09-html/22": {
+    "title": "Веб-игры на HTML5 и Canvas"
+  },
+  "encyclopedia/3-data-markup/3-09-html/intro": {
+    "title": "HTML — о разделе"
+  },
+  "encyclopedia/3-data-markup/3-10-css/71": {
+    "title": "Справочник по CSS"
+  },
+  "encyclopedia/3-data-markup/3-10-css/intro": {
+    "title": "CSS — о разделе"
+  },
+  "encyclopedia/3-data-markup/3-11-analiz-dannyh/intro": {
+    "title": "Анализ данных — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-01-algoritmy/intro": {
+    "title": "Алгоритмы — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro": {
+    "title": "Код — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro": {
+    "title": "Выполнение кода — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112": {
+    "title": "Основы архитектуры"
+  },
+  "encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3": {
+    "title": "Оптимизация размера и производительности приложений"
+  },
+  "encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro": {
+    "title": "Проект, структура и фреймворки — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-05-asinhronnost/intro": {
+    "title": "Асинхронность — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro": {
+    "title": "Архитектура выполнения — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro": {
+    "title": "Парадигмы и уровни абстракции — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-08-oop/intro": {
+    "title": "Объектно-ориентированное программирование — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-09-zavisimosti/intro": {
+    "title": "Зависимости — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro": {
+    "title": "ORM и работа с данными — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1": {
+    "title": "Архитектура десктопных приложений"
+  },
+  "encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro": {
+    "title": "Десктопные приложения — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1": {
+    "title": "Мобильные приложения"
+  },
+  "encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/111": {
+    "title": "Компоненты пользовательского интерфейса на Android"
+  },
+  "encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/112": {
+    "title": "Сборка и развёртывание мобильных приложений"
+  },
+  "encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/113": {
+    "title": "Супераппы"
+  },
+  "encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115": {
+    "title": "Справочник-шпаргалка по Git"
+  },
+  "encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro": {
+    "title": "Основы работы с Git — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro": {
+    "title": "Разработка и отладка — о разделе"
+  },
+  "encyclopedia/4-code-dev/4-15-sborka-musora/1": {
+    "title": "Автоматическое управление памятью"
+  },
+  "encyclopedia/5-languages/5-01-javascript/11": {
+    "title": "История языка JavaScript"
+  },
+  "encyclopedia/5-languages/5-01-javascript/251": {
+    "title": "Справочник по JavaScript"
+  },
+  "encyclopedia/5-languages/5-01-javascript/261": {
+    "title": "Справочник по Node"
+  },
+  "encyclopedia/5-languages/5-01-javascript/271": {
+    "title": "Справочник по React"
+  },
+  "encyclopedia/5-languages/5-01-javascript/281": {
+    "title": "Справочник по Vue.js"
+  },
+  "encyclopedia/5-languages/5-01-javascript/291": {
+    "title": "Справочник по Angular"
+  },
+  "encyclopedia/5-languages/5-01-javascript/301": {
+    "title": "Справочник по TypeScript"
+  },
+  "encyclopedia/5-languages/5-01-javascript/311": {
+    "title": "Справочник по Ext JS"
+  },
+  "encyclopedia/5-languages/5-01-javascript/intro": {
+    "title": "JavaScript — о разделе"
+  },
+  "encyclopedia/5-languages/5-02-python/14": {
+    "title": "История языка Python"
+  },
+  "encyclopedia/5-languages/5-02-python/301": {
+    "title": "Справочник по Django"
+  },
+  "encyclopedia/5-languages/5-02-python/312": {
+    "title": "Разработка игр на Python"
+  },
+  "encyclopedia/5-languages/5-02-python/321": {
+    "title": "Справочник по модулю Turtle"
+  },
+  "encyclopedia/5-languages/5-02-python/34": {
+    "title": "Веб-разработка и REST API на Python"
+  },
+  "encyclopedia/5-languages/5-02-python/342": {
+    "title": "Справочник по Flask"
+  },
+  "encyclopedia/5-languages/5-02-python/36": {
+    "title": "Справочник по Python"
+  },
+  "encyclopedia/5-languages/5-02-python/intro": {
+    "title": "Python — о разделе"
+  },
+  "encyclopedia/5-languages/5-03-java/11": {
+    "title": "История языка Java"
+  },
+  "encyclopedia/5-languages/5-03-java/121": {
+    "title": "Справочник по конфигурациям в Java"
+  },
+  "encyclopedia/5-languages/5-03-java/3": {
+    "title": "Справочник по Java"
+  },
+  "encyclopedia/5-languages/5-03-java/intro": {
+    "title": "Java — о разделе"
+  },
+  "encyclopedia/5-languages/5-04-platforma-dotnet/11": {
+    "title": "История платформы .NET"
+  },
+  "encyclopedia/5-languages/5-04-platforma-dotnet/172": {
+    "title": "ASP.NET - веб-платформа Microsoft"
+  },
+  "encyclopedia/5-languages/5-04-platforma-dotnet/181": {
+    "title": "Справочник по F#"
+  },
+  "encyclopedia/5-languages/5-04-platforma-dotnet/intro": {
+    "title": "Платформа .NET — о разделе"
+  },
+  "encyclopedia/5-languages/5-05-csharp/101": {
+    "title": "Справочник по конфигурациям в C#"
+  },
+  "encyclopedia/5-languages/5-05-csharp/291": {
+    "title": "Справочник по LINQ"
+  },
+  "encyclopedia/5-languages/5-05-csharp/45": {
+    "title": "Веб-разработка и API на C#"
+  },
+  "encyclopedia/5-languages/5-05-csharp/451": {
+    "title": "ASP.NET - фреймворк для веб-приложений"
+  },
+  "encyclopedia/5-languages/5-05-csharp/452": {
+    "title": "Справочник по ASP.NET"
+  },
+  "encyclopedia/5-languages/5-05-csharp/453": {
+    "title": "Приложение с S3, PostgreSQL и ASP.NET Core Web API"
+  },
+  "encyclopedia/5-languages/5-05-csharp/471": {
+    "title": "Справочник по C#"
+  },
+  "encyclopedia/5-languages/5-05-csharp/intro": {
+    "title": "C# — о разделе"
+  },
+  "encyclopedia/5-languages/5-06-cpp/21": {
+    "title": "Системное программирование на C++"
+  },
+  "encyclopedia/5-languages/5-06-cpp/22": {
+    "title": "Разработка игр с использованием C++"
+  },
+  "encyclopedia/5-languages/5-06-cpp/3": {
+    "title": "Справочник по C++"
+  },
+  "encyclopedia/5-languages/5-06-cpp/intro": {
+    "title": "C++ — о разделе"
+  },
+  "encyclopedia/5-languages/5-07-php/11": {
+    "title": "История языка PHP"
+  },
+  "encyclopedia/5-languages/5-07-php/211": {
+    "title": "Справочник по PHP"
+  },
+  "encyclopedia/5-languages/5-07-php/intro": {
+    "title": "PHP — о разделе"
+  },
+  "encyclopedia/5-languages/5-08-smalltalk/2": {
+    "title": "История языка Smalltalk"
+  },
+  "encyclopedia/5-languages/5-08-smalltalk/5": {
+    "title": "Справочник по Smalltalk"
+  },
+  "encyclopedia/5-languages/5-08-smalltalk/intro": {
+    "title": "Smalltalk — о разделе"
+  },
+  "encyclopedia/5-languages/5-09-kotlin/1": {
+    "title": "История языка Kotlin"
+  },
+  "encyclopedia/5-languages/5-09-kotlin/3": {
+    "title": "Справочник по Kotlin"
+  },
+  "encyclopedia/5-languages/5-09-kotlin/intro": {
+    "title": "Kotlin — о разделе"
+  },
+  "encyclopedia/5-languages/5-10-go/11": {
+    "title": "История языка Go"
+  },
+  "encyclopedia/5-languages/5-10-go/3": {
+    "title": "Справочник по языку Go"
+  },
+  "encyclopedia/5-languages/5-10-go/intro": {
+    "title": "Go — о разделе"
+  },
+  "encyclopedia/5-languages/5-11-ruby/11": {
+    "title": "История языка Ruby"
+  },
+  "encyclopedia/5-languages/5-11-ruby/3": {
+    "title": "Справочник по языку Ruby"
+  },
+  "encyclopedia/5-languages/5-11-ruby/intro": {
+    "title": "Ruby — о разделе"
+  },
+  "encyclopedia/5-languages/5-12-groovy/1": {
+    "title": "История языка Groovy"
+  },
+  "encyclopedia/5-languages/5-12-groovy/3": {
+    "title": "Справочник по языку Groovy"
+  },
+  "encyclopedia/5-languages/5-12-groovy/intro": {
+    "title": "Groovy — о разделе"
+  },
+  "encyclopedia/5-languages/5-13-rust/1": {
+    "title": "История языка Rust"
+  },
+  "encyclopedia/5-languages/5-13-rust/3": {
+    "title": "Справочник по языку Rust"
+  },
+  "encyclopedia/5-languages/5-13-rust/intro": {
+    "title": "Rust — о разделе"
+  },
+  "encyclopedia/5-languages/5-14-swift/1": {
+    "title": "История языка Swift"
+  },
+  "encyclopedia/5-languages/5-14-swift/3": {
+    "title": "Справочник по языку Swift"
+  },
+  "encyclopedia/5-languages/5-14-swift/intro": {
+    "title": "Swift — о разделе"
+  },
+  "encyclopedia/5-languages/5-15-lua-i-luau/12": {
+    "title": "История языка Lua"
+  },
+  "encyclopedia/5-languages/5-15-lua-i-luau/3": {
+    "title": "Справочник по Lua"
+  },
+  "encyclopedia/5-languages/5-15-lua-i-luau/intro": {
+    "title": "Lua и Luau — о разделе"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Cobol/1": {
+    "title": "История языка COBOL"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Cobol/711": {
+    "title": "Справочник по COBOL"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro": {
+    "title": "Cobol — о разделе"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Fortran/1": {
+    "title": "История языка Fortran"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Fortran/811": {
+    "title": "Справочник по языку Fortran"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro": {
+    "title": "Fortran — о разделе"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Lisp/1": {
+    "title": "История языка Lisp"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Lisp/811": {
+    "title": "Справочник по Lisp"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro": {
+    "title": "Lisp — о разделе"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Pascal/1": {
+    "title": "История языка Pascal"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Pascal/711": {
+    "title": "Справочник по Pascal"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro": {
+    "title": "Pascal — о разделе"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/assembler/1": {
+    "title": "История ассемблерных языков"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/assembler/711": {
+    "title": "Справочник по ассемблеру"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro": {
+    "title": "Ассемблер — о разделе"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/c-language/1": {
+    "title": "История языка С"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/c-language/8": {
+    "title": "Справочник по языку С"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro": {
+    "title": "Си — о разделе"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/1": {
+    "title": "История языка visual-basic"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/711": {
+    "title": "Справочник по visual-basic"
+  },
+  "encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro": {
+    "title": "visual-basic — о разделе"
+  },
+  "encyclopedia/5-languages/5-17-haskell/intro": {
+    "title": "Haskell — о разделе"
+  },
+  "encyclopedia/5-languages/5-18-scala/intro": {
+    "title": "Scala — о разделе"
+  },
+  "encyclopedia/5-languages/5-19-elixir/intro": {
+    "title": "Elixir — о разделе"
+  },
+  "encyclopedia/5-languages/5-20-zig/intro": {
+    "title": "Zig — о разделе"
+  },
+  "encyclopedia/5-languages/5-21-nim/intro": {
+    "title": "Nim — о разделе"
+  },
+  "encyclopedia/5-languages/5-22-dart/intro": {
+    "title": "Dart — о разделе"
+  },
+  "encyclopedia/5-languages/5-23-r/intro": {
+    "title": "R — о разделе"
+  },
+  "encyclopedia/5-languages/5-24-julia/intro": {
+    "title": "Julia — о разделе"
+  },
+  "encyclopedia/5-languages/5-25-bash/intro": {
+    "title": "Bash — о разделе"
+  },
+  "encyclopedia/5-languages/5-26-powershell/intro": {
+    "title": "PowerShell — о разделе"
+  },
+  "encyclopedia/5-languages/5-27-1s/intro": {
+    "title": "1С — о разделе"
+  },
+  "encyclopedia/6-ai/6-01-vvedenie-v-ii/11": {
+    "title": "История развития искусственного интеллекта"
+  },
+  "encyclopedia/6-ai/6-01-vvedenie-v-ii/intro": {
+    "title": "Введение в ИИ — о разделе"
+  },
+  "encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro": {
+    "title": "Машинное обучение — о разделе"
+  },
+  "encyclopedia/6-ai/6-03-neyroseti/intro": {
+    "title": "Нейросети — о разделе"
+  },
+  "encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro": {
+    "title": "Модели и инструменты — о разделе"
+  },
+  "encyclopedia/6-ai/6-05-razrabotka-ii/intro": {
+    "title": "Разработка ИИ — о разделе"
+  },
+  "encyclopedia/6-ai/6-06-primenenie-ii/intro": {
+    "title": "Применение ИИ — о разделе"
+  },
+  "encyclopedia/7-project/7-04-analitika/1": {
+    "title": "История развития аналитики в IT"
+  },
+  "encyclopedia/7-project/7-04-analitika/111": {
+    "title": "Основы анализа требований"
+  },
+  "encyclopedia/7-project/7-04-analitika/127": {
+    "title": "Взаимодействие аналитика с командой"
+  },
+  "encyclopedia/7-project/7-04-analitika/129": {
+    "title": "Справочник по нотации BPMN 2.0"
+  },
+  "encyclopedia/7-project/7-04-analitika/intro": {
+    "title": "Аналитика — о разделе"
+  },
+  "encyclopedia/7-project/7-05-testirovanie/1014": {
+    "title": "Проверка надежности под нагрузкой"
+  },
+  "encyclopedia/7-project/7-05-testirovanie/115": {
+    "title": "Автоматизация тестирования"
+  },
+  "encyclopedia/7-project/7-05-testirovanie/123": {
+    "title": "Тестирование информационной безопасности"
+  },
+  "encyclopedia/7-project/7-05-testirovanie/124": {
+    "title": "Особенности тестирования мобильных приложений"
+  },
+  "encyclopedia/7-project/7-05-testirovanie/intro": {
+    "title": "Тестирование программного обеспечения — о разделе"
+  },
+  "encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro": {
+    "title": "Паттерны проектирования — о разделе"
+  },
+  "encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro": {
+    "title": "Проектирование — о разделе"
+  },
+  "encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro": {
+    "title": "Проектирование и архитектура — о разделе"
+  },
+  "encyclopedia/7-project/7-08-tehnicheskoe-pismo/1": {
+    "title": "Техническое письмо"
+  },
+  "encyclopedia/7-project/7-08-tehnicheskoe-pismo/1001": {
+    "title": "Документация"
+  },
+  "encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro": {
+    "title": "Техническое письмо — о разделе"
+  },
+  "encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1": {
+    "title": "Модели и сервисы облачных технологий"
+  },
+  "encyclopedia/8-infra-security/8-02-low-code-no-code/1": {
+    "title": "Low-code и No-code платформы"
+  },
+  "encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117": {
+    "title": "Методы защиты пользовательских и корпоративных данных"
+  },
+  "encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro": {
+    "title": "Забота о коде и данных — о разделе"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/1": {
+    "title": "Основы DevOps"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3": {
+    "title": "Справочник по Terraform"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3111": {
+    "title": "Справочник по Ansible"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3112": {
+    "title": "Справочник по Nginx"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3113": {
+    "title": "Справочник по GitHub Actions"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3114": {
+    "title": "Справочник по Jenkins"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3115": {
+    "title": "Справочник по Prometheus"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3116": {
+    "title": "Справочник по Grafana"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3117": {
+    "title": "Справочник по Elasticsearch"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3118": {
+    "title": "Справочник по AWS"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3119": {
+    "title": "Справочник по Logstash"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3120": {
+    "title": "Справочник по Kibana"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3121": {
+    "title": "Справочник по Loki"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3122": {
+    "title": "Справочник по Tempo"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3123": {
+    "title": "Справочник по Mimir"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/3124": {
+    "title": "Справочник по Azure Repos Git"
+  },
+  "encyclopedia/8-infra-security/8-04-devops-ci-cd/intro": {
+    "title": "DevOps, CI-CD — о разделе"
+  },
+  "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201": {
+    "title": "Справочник по SOAP"
+  },
+  "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1202": {
+    "title": "Справочник по gRPC"
+  },
+  "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203": {
+    "title": "Справочник по GraphQL"
+  },
+  "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro": {
+    "title": "Микросервисы и интеграция — о разделе"
+  },
+  "encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2": {
+    "title": "Справочник по Docker"
+  },
+  "encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211": {
+    "title": "Справочник по Kubernetes"
+  },
+  "encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro": {
+    "title": "Контейнеризация и оркестрация — о разделе"
+  },
+  "encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125": {
+    "title": "Безопасность в Docker"
+  },
+  "encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro": {
+    "title": "Информационная безопасность — о разделе"
+  },
+  "encyclopedia/9-spinoff/9-01-velikie-lyudi/1": {
+    "title": "Великие люди"
+  },
+  "encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/intro": {
+    "title": "Как понять, что пора менять работу — о разделе"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11431": {
+    "title": "Как устроен Xbox Series S и Series X"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11432": {
+    "title": "Как устроен Steam Deck и Steam Machine"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11433": {
+    "title": "Как устроена Nintendo Switch"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11434": {
+    "title": "Как устроена Playstation 5"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro": {
+    "title": "Игроведение — о разделе"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro": {
+    "title": "Игровая индустрия — о разделе"
+  },
+  "encyclopedia/9-spinoff/9-04-razrabotka-igr/122": {
+    "title": "Мобильные игры"
+  },
+  "encyclopedia/9-spinoff/9-04-razrabotka-igr/124": {
+    "title": "Тестирование игр"
+  },
+  "encyclopedia/9-spinoff/9-04-razrabotka-igr/201": {
+    "title": "Справочник по Roblox"
+  },
+  "encyclopedia/9-spinoff/9-04-razrabotka-igr/301": {
+    "title": "Справочник по Unity"
+  },
+  "encyclopedia/9-spinoff/9-04-razrabotka-igr/intro": {
+    "title": "Разработка игр — о разделе"
+  },
+  "encyclopedia/9-spinoff/9-06-otraslevoe-po/111": {
+    "title": "Справочник по Adobe Photoshop"
+  },
+  "encyclopedia/9-spinoff/9-10-internet-kultura/114": {
+    "title": "Экономические и организационные сообщества"
+  },
+  "encyclopedia/9-spinoff/9-10-internet-kultura/intro": {
+    "title": "Интернет-культура — о разделе"
+  },
+  "tools/games/4": {
+    "title": "Игры, которые должен попробовать каждый"
+  }
+}

@@ -5,7 +5,7 @@ description: id — infra-Безопасность title — 8. Инфрастр
 id: infra-Безопасность
 title: 8. Инфраструктура и безопасность - о разделе
 sidebar_label: 8. Инфраструктура и безопасность - о разделе
-slug: /encyclopedia/Инфраструктура и безопасность/infra-Безопасность
+slug: /encyclopedia/8-infra-security/infra-Безопасность
 ---
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>

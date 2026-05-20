@@ -42,12 +42,12 @@ mindmap
   <li>
   <ul>
   Продвинутые операции с данными
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/1">3.01. Продвинутые операции с данными</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/111">3.01. Маршалинг и анмаршалинг</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/112">3.01. Адрес в памяти</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/113">3.01. Виды битов</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/998">3.01. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/999">3.01. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/1">3-01-prodvinutye-operatsii-s-dannymi</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111">3.01. Маршалинг и анмаршалинг</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/112">3.01. Адрес в памяти</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/113">3.01. Виды битов</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/998">3.01. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/999">3.01. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -60,12 +60,12 @@ mindmap
   <li>
   <ul>
   Структуры данных
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/1">3.02. Структуры данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/11">3.02. История развития структур данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/12">3.02. Геометрические данные</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/2">3.02. Фундаментальные структуры данных и их реализация</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/3">3.02. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/4">3.02. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/1">3-02-struktury-dannyh</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/11">3.02. История развития структур данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/12">3.02. Геометрические данные</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/2">3.02. Фундаментальные структуры данных и их реализация</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/3">3.02. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/4">3.02. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -78,11 +78,11 @@ mindmap
   <li>
   <ul>
   Мыслительная база
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/1">3.03. Когнитивистика</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/2">3.03. Ментальные модели</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/3">3.03. Мыслительная база</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/4">3.03. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/5">3.03. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/1">3.03. Когнитивистика</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/2">3.03. Ментальные модели</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/3">3-03-myslitelnaya-baza</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/4">3.03. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/5">3.03. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -95,19 +95,19 @@ mindmap
   <li>
   <ul>
   Конфигурации и данные
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/1">3.04. Конфигурации и данные в тексте</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/111">3.04. Текстовые данные</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/112">3.04. Справочник по эмодзи</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/113">3.04. Шрифты</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/2">3.04. XML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/211">3.04. Справочник по XML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/212">3.04. Справочник по XSLT</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/3">3.04. JSON</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/4">3.04. YAML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/5">3.04. Markdown</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/6">3.04. XAML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/98">3.04. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/99">3.04. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1">3-04-konfiguratsii-i-dannye в тексте</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/111">3.04. Текстовые данные</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/112">3.04. Справочник по эмодзи</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/113">3.04. Шрифты</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2">3.04. XML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/211">3.04. Справочник по XML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/212">3.04. Справочник по XSLT</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3">3.04. JSON</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4">3.04. YAML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5">3.04. Markdown</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6">3.04. XAML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/98">3.04. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/99">3.04. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -120,13 +120,13 @@ mindmap
   <li>
   <ul>
   Основы баз данных
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/1">3.05. Основы баз данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/11">3.05. Entity Relationship</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/2">3.05. СУБД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/3">3.05. Как БД работает с данными</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/4">3.05. Теория данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/98">3.05. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/99">3.05. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1">3-05-osnovy-baz-dannyh</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11">3.05. Entity Relationship</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2">3.05. СУБД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3">3.05. Как БД работает с данными</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4">3.05. Теория данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/98">3.05. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/99">3.05. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -139,23 +139,23 @@ mindmap
   <li>
   <ul>
   NoSQL
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/1">3.06. История NoSQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/2">3.06. Основы NoSQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/3">3.06. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/4">3.06. MongoDB</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/41">3.06. Справочник по MongoDB</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/5">3.06. Redis</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/51">3.06. Справочник по Redis</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/6">3.06. Cassandra</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/61">3.06. Справочник по Cassandra</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/7">3.06. Графовые БД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/71">3.06. Справочник по Cypher</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/8">3.06. Memcached</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/81">3.06. Справочник по Memcached</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/811">3.06. NewSQL системы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/812">3.06. Векторные базы данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/98">3.06. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/99">3.06. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/1">3.06. История NoSQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/2">3.06. Основы NoSQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/3">3.06. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/4">3.06. MongoDB</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/41">3.06. Справочник по MongoDB</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/5">3.06. Redis</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/51">3.06. Справочник по Redis</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/6">3.06. Cassandra</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/61">3.06. Справочник по Cassandra</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/7">3.06. Графовые БД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/71">3.06. Справочник по Cypher</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/8">3.06. Memcached</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/81">3.06. Справочник по Memcached</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/811">3.06. NewSQL системы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/812">3.06. Векторные базы данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/98">3.06. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/99">3.06. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -168,32 +168,32 @@ mindmap
   <li>
   <ul>
   SQL
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/1">3.07. SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/2">3.07. Как работает SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/21">3.07. Как читать сложные SQL запросы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/22">3.07. Типы SQL команд</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/3">3.07. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/33">3.07. Типы данных в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/4">3.07. Работа с СУБД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/44">3.07. DDL в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/444">3.07. Ограничения в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/5">3.07. CRUD и DML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/55">3.07. Алиасы и объединения</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/551">3.07. Общие табличные выражения</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/6">3.07. Другие операции в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/66">3.07. Сложные типы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/7">3.07. Функции</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/77">3.07. Транзакции и блокировки</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/8">3.07. Представления SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/88">3.07. Процедуры SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/881">3.07. Оптимизация</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/882">3.07. Процедурные расширения</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/8821">3.07. Подсказки оптимизатора запросов</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/883">3.07. Справочник по SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/884">3.07. Сложные индексы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/885">3.07. Шпаргалка с типичными задачами по SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/998">3.07. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/999">3.07. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/1">3-07-sql</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/2">3.07. Как работает SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/21">3.07. Как читать сложные SQL запросы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/22">3.07. Типы SQL команд</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/3">3.07. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/33">3.07. Типы данных в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/4">3.07. Работа с СУБД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/44">3.07. DDL в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/444">3.07. Ограничения в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/5">3.07. CRUD и DML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/55">3.07. Алиасы и объединения</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/551">3.07. Общие табличные выражения</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/6">3.07. Другие операции в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/66">3.07. Сложные типы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/7">3.07. Функции</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/77">3.07. Транзакции и блокировки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/8">3.07. Представления SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/88">3.07. Процедуры SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/881">3.07. Оптимизация</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/882">3.07. Процедурные расширения</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/8821">3.07. Подсказки оптимизатора запросов</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/883">3.07. Справочник по SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/884">3.07. Сложные индексы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/885">3.07. Шпаргалка с типичными задачами по SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/998">3.07. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/999">3.07. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -206,13 +206,13 @@ mindmap
   <li>
   <ul>
   Управление РСУБД
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/1">3.08. Управление РСУБД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/2">3.08. Справочник по PostgreSQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/211">3.08. Справочник по MySQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/212">3.08. Справочник по Microsoft SQL Server</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/213">3.08. Справочник по Oracle DB</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/998">3.08. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/999">3.08. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1">3-08-upravlenie-rsubd</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2">3.08. Справочник по PostgreSQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/211">3.08. Справочник по MySQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212">3.08. Справочник по Microsoft SQL Server</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/213">3.08. Справочник по Oracle DB</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/998">3.08. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/999">3.08. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -225,13 +225,13 @@ mindmap
   <li>
   <ul>
   HTML
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/1">3.09. HTML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/2">3.09. Основные теги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/21">3.09. Справочник по HTML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/22">3.09. Игры на HTML5</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/3">3.09. Практика</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/998">3.09. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/999">3.09. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/1">3-09-html</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/2">3.09. Основные теги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/21">3.09. Справочник по HTML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/22">3.09. Игры на HTML5</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/3">3.09. Практика</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/998">3.09. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/999">3.09. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -244,19 +244,19 @@ mindmap
   <li>
   <ul>
   CSS
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/1">3.10. CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/111">3.10. Блочная модель и каскадность</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/112">3.10. Работа с CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/2">3.10. Flex и Grid</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/3">3.10. Адаптивность</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/4">3.10. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/5">3.10. Псевдо-селекторы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/6">3.10. Анимации и трансформации</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/7">3.10. Работа с CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/71">3.10. Справочник по CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/8">3.10. Практика</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/998">3.10. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/999">3.10. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/1">3-10-css</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/111">3.10. Блочная модель и каскадность</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/112">3.10. Работа с CSS</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/2">3.10. Flex и Grid</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/3">3.10. Адаптивность</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/4">3.10. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/5">3.10. Псевдо-селекторы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/6">3.10. Анимации и трансформации</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/7">3.10. Работа с CSS</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/71">3.10. Справочник по CSS</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/8">3.10. Практика</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/998">3.10. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/999">3.10. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -269,12 +269,12 @@ mindmap
   <li>
   <ul>
   Анализ данных
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/1">3.11. Анализ данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/11">3.11. Дата майнинг</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/12">3.11. Фиксация на цифрах и ложь в статистике</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/2">3.11. Основы статистики</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/41">3.11. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/42">3.11. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/1">3-11-analiz-dannyh</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/11">3.11. Дата майнинг</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/12">3.11. Фиксация на цифрах и ложь в статистике</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/2">3.11. Основы статистики</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/41">3.11. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/42">3.11. Чек-лист самопроверки</a></li>
   </ul>
   </li>
 </ul>

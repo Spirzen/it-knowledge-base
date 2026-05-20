@@ -5,7 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "set NODE_OPTIONS=--max-old-space-size=8192 && docusaurus build",
+    "build": "npm run docs:collection-titles && set NODE_OPTIONS=--max-old-space-size=8192 && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -13,6 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "docs:demo-registry": "node scripts/generate-demo-registry.mjs",
+    "docs:collection-titles": "node scripts/generate-collection-doc-titles.mjs",
     "docs:trailing-hr": "node scripts/ensure-article-trailing-hr.mjs",
     "docs:normalize-tags": "node scripts/normalize-article-tags.mjs",
     "docs:descriptions": "node scripts/ensure-article-descriptions.mjs",

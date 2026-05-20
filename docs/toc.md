@@ -899,12 +899,12 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Продвинутые операции с данными
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/1">3.01. Продвинутые операции с данными</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/111">3.01. Маршалинг и анмаршалинг</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/112">3.01. Адрес в памяти</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/113">3.01. Виды битов</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/998">3.01. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.01.%20Продвинутые%20операции%20с%20данными/999">3.01. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/1">3-01-prodvinutye-operatsii-s-dannymi</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111">3.01. Маршалинг и анмаршалинг</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/112">3.01. Адрес в памяти</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/113">3.01. Виды битов</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/998">3.01. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/999">3.01. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -917,12 +917,12 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Структуры данных
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/1">3.02. Структуры данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/11">3.02. История развития структур данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/12">3.02. Геометрические данные</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/2">3.02. Фундаментальные структуры данных и их реализация</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/3">3.02. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.02.%20Структуры%20данных/4">3.02. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/1">3-02-struktury-dannyh</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/11">3.02. История развития структур данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/12">3.02. Геометрические данные</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/2">3.02. Фундаментальные структуры данных и их реализация</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/3">3.02. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/4">3.02. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -935,11 +935,11 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Мыслительная база
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/1">3.03. Когнитивистика</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/2">3.03. Ментальные модели</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/3">3.03. Мыслительная база</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/4">3.03. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.03.%20Мыслительная%20база/5">3.03. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/1">3.03. Когнитивистика</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/2">3.03. Ментальные модели</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/3">3-03-myslitelnaya-baza</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/4">3.03. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/5">3.03. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -952,19 +952,19 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Конфигурации и данные
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/1">3.04. Конфигурации и данные в тексте</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/111">3.04. Текстовые данные</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/112">3.04. Справочник по эмодзи</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/113">3.04. Шрифты</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/2">3.04. XML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/211">3.04. Справочник по XML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/212">3.04. Справочник по XSLT</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/3">3.04. JSON</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/4">3.04. YAML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/5">3.04. Markdown</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/6">3.04. XAML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/98">3.04. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.04.%20Конфигурации%20и%20данные/99">3.04. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1">3-04-konfiguratsii-i-dannye в тексте</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/111">3.04. Текстовые данные</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/112">3.04. Справочник по эмодзи</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/113">3.04. Шрифты</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2">3.04. XML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/211">3.04. Справочник по XML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/212">3.04. Справочник по XSLT</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3">3.04. JSON</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4">3.04. YAML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5">3.04. Markdown</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6">3.04. XAML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/98">3.04. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/99">3.04. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -977,13 +977,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Основы баз данных
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/1">3.05. Основы баз данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/11">3.05. Entity Relationship</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/2">3.05. СУБД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/3">3.05. Как БД работает с данными</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/4">3.05. Теория данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/98">3.05. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.05.%20Основы%20баз%20данных/99">3.05. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1">3-05-osnovy-baz-dannyh</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11">3.05. Entity Relationship</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2">3.05. СУБД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3">3.05. Как БД работает с данными</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4">3.05. Теория данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/98">3.05. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/99">3.05. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -996,23 +996,23 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   NoSQL
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/1">3.06. История NoSQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/2">3.06. Основы NoSQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/3">3.06. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/4">3.06. MongoDB</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/41">3.06. Справочник по MongoDB</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/5">3.06. Redis</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/51">3.06. Справочник по Redis</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/6">3.06. Cassandra</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/61">3.06. Справочник по Cassandra</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/7">3.06. Графовые БД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/71">3.06. Справочник по Cypher</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/8">3.06. Memcached</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/81">3.06. Справочник по Memcached</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/811">3.06. NewSQL системы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/812">3.06. Векторные базы данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/98">3.06. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.06.%20NoSQL/99">3.06. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/1">3.06. История NoSQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/2">3.06. Основы NoSQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/3">3.06. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/4">3.06. MongoDB</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/41">3.06. Справочник по MongoDB</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/5">3.06. Redis</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/51">3.06. Справочник по Redis</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/6">3.06. Cassandra</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/61">3.06. Справочник по Cassandra</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/7">3.06. Графовые БД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/71">3.06. Справочник по Cypher</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/8">3.06. Memcached</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/81">3.06. Справочник по Memcached</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/811">3.06. NewSQL системы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/812">3.06. Векторные базы данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/98">3.06. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-06-nosql/99">3.06. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1025,32 +1025,32 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   SQL
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/1">3.07. SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/2">3.07. Как работает SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/21">3.07. Как читать сложные SQL запросы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/22">3.07. Типы SQL команд</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/3">3.07. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/33">3.07. Типы данных в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/4">3.07. Работа с СУБД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/44">3.07. DDL в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/444">3.07. Ограничения в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/5">3.07. CRUD и DML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/55">3.07. Алиасы и объединения</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/551">3.07. Общие табличные выражения</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/6">3.07. Другие операции в SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/66">3.07. Сложные типы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/7">3.07. Функции</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/77">3.07. Транзакции и блокировки</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/8">3.07. Представления SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/88">3.07. Процедуры SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/881">3.07. Оптимизация</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/882">3.07. Процедурные расширения</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/8821">3.07. Подсказки оптимизатора запросов</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/883">3.07. Справочник по SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/884">3.07. Сложные индексы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/885">3.07. Шпаргалка с типичными задачами по SQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/998">3.07. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.07.%20SQL/999">3.07. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/1">3-07-sql</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/2">3.07. Как работает SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/21">3.07. Как читать сложные SQL запросы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/22">3.07. Типы SQL команд</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/3">3.07. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/33">3.07. Типы данных в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/4">3.07. Работа с СУБД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/44">3.07. DDL в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/444">3.07. Ограничения в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/5">3.07. CRUD и DML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/55">3.07. Алиасы и объединения</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/551">3.07. Общие табличные выражения</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/6">3.07. Другие операции в SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/66">3.07. Сложные типы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/7">3.07. Функции</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/77">3.07. Транзакции и блокировки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/8">3.07. Представления SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/88">3.07. Процедуры SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/881">3.07. Оптимизация</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/882">3.07. Процедурные расширения</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/8821">3.07. Подсказки оптимизатора запросов</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/883">3.07. Справочник по SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/884">3.07. Сложные индексы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/885">3.07. Шпаргалка с типичными задачами по SQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/998">3.07. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-07-sql/999">3.07. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1063,13 +1063,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Управление РСУБД
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/1">3.08. Управление РСУБД</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/2">3.08. Справочник по PostgreSQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/211">3.08. Справочник по MySQL</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/212">3.08. Справочник по Microsoft SQL Server</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/213">3.08. Справочник по Oracle DB</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/998">3.08. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.08.%20Управление%20РСУБД/999">3.08. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1">3-08-upravlenie-rsubd</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2">3.08. Справочник по PostgreSQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/211">3.08. Справочник по MySQL</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212">3.08. Справочник по Microsoft SQL Server</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/213">3.08. Справочник по Oracle DB</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/998">3.08. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/999">3.08. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1082,13 +1082,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   HTML
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/1">3.09. HTML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/2">3.09. Основные теги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/21">3.09. Справочник по HTML</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/22">3.09. Игры на HTML5</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/3">3.09. Практика</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/998">3.09. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.09.%20HTML/999">3.09. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/1">3-09-html</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/2">3.09. Основные теги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/21">3.09. Справочник по HTML</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/22">3.09. Игры на HTML5</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/3">3.09. Практика</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/998">3.09. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-09-html/999">3.09. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1101,19 +1101,19 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   CSS
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/1">3.10. CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/111">3.10. Блочная модель и каскадность</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/112">3.10. Работа с CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/2">3.10. Flex и Grid</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/3">3.10. Адаптивность</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/4">3.10. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/5">3.10. Псевдо-селекторы</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/6">3.10. Анимации и трансформации</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/7">3.10. Работа с CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/71">3.10. Справочник по CSS</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/8">3.10. Практика</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/998">3.10. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.10.%20CSS/999">3.10. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/1">3-10-css</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/111">3.10. Блочная модель и каскадность</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/112">3.10. Работа с CSS</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/2">3.10. Flex и Grid</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/3">3.10. Адаптивность</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/4">3.10. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/5">3.10. Псевдо-селекторы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/6">3.10. Анимации и трансформации</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/7">3.10. Работа с CSS</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/71">3.10. Справочник по CSS</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/8">3.10. Практика</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/998">3.10. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/999">3.10. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1126,12 +1126,12 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Анализ данных
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/1">3.11. Анализ данных</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/11">3.11. Дата майнинг</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/12">3.11. Фиксация на цифрах и ложь в статистике</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/2">3.11. Основы статистики</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/41">3.11. Итоги</a></li>
-  <li><a href="/encyclopedia/Данные%20и%20разметка/3.11.%20Анализ%20данных/42">3.11. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/1">3-11-analiz-dannyh</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/11">3.11. Дата майнинг</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/12">3.11. Фиксация на цифрах и ложь в статистике</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/2">3.11. Основы статистики</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/41">3.11. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/42">3.11. Чек-лист самопроверки</a></li>
   </ul>
   </li>
 </ul>
@@ -1451,42 +1451,42 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   JavaScript
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/1">5.01. История JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/101">5.01. Рекомендации по разработке на JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/11">5.01. Основы JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/12">5.01. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/121">5.01. Ключевые слова в JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/122">5.01. Встроенные функции в JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/13">5.01. Подключение и структура кода</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/14">5.01. Работа и применение</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/15">5.01. Видимость в JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/16">5.01. Функции в JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/17">5.01. Переменные в JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/18">5.01. Типы данных в JS</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/19">5.01. Выражения и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/20">5.01. Циклы в JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/21">5.01. Асинхронность в JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/22">5.01. Работа с объектами</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/23">5.01. События</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/24">5.01. Консоль, отладка и боль</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/241">5.01. Встроенные типы ошибок</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/25">5.01. Инструменты и фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/251">5.01. Справочник по JavaScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/26">5.01. Node</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/261">5.01. Справочник по Node</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/27">5.01. React</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/271">5.01. Справочник по React</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/28">5.01. Vue</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/281">5.01. Справочник по Vue.js</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/29">5.01. Angular</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/291">5.01. Справочник по Angular</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/30">5.01. TypeScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/301">5.01. Справочник по TypeScript</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/31">5.01. Ext JS</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/311">5.01. Справочник по Ext JS</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/32">5.01. Практика</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/998">5.01. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.01.%20JavaScript/999">5.01. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/1">5.01. История JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/101">5.01. Рекомендации по разработке на JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/11">5.01. Основы JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/12">5.01. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/121">5.01. Ключевые слова в JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/122">5.01. Встроенные функции в JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/13">5.01. Подключение и структура кода</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/14">5.01. Работа и применение</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/15">5.01. Видимость в JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/16">5.01. Функции в JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/17">5.01. Переменные в JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/18">5.01. Типы данных в JS</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/19">5.01. Выражения и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/20">5.01. Циклы в JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/21">5.01. Асинхронность в JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/22">5.01. Работа с объектами</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/23">5.01. События</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/24">5.01. Консоль, отладка и боль</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/241">5.01. Встроенные типы ошибок</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/25">5.01. Инструменты и фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/251">5.01. Справочник по JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/26">5.01. Node</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/261">5.01. Справочник по Node</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/27">5.01. React</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/271">5.01. Справочник по React</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/28">5.01. Vue</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/281">5.01. Справочник по Vue.js</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/29">5.01. Angular</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/291">5.01. Справочник по Angular</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/30">5.01. TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/301">5.01. Справочник по TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/31">5.01. Ext JS</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/311">5.01. Справочник по Ext JS</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/32">5.01. Практика</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/998">5.01. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/999">5.01. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1499,46 +1499,46 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Python
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/1">5.02. Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/101">5.02. Рекомендации по разработке на Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/11">5.02. Архитектура Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/12">5.02. Фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/121">5.02. Экосистема Python-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/13">5.02. Окружения</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/14">5.02. История</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/15">5.02. Философия</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/16">5.02. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/17">5.02. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/171">5.02. Ключевые слова в Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/172">5.02. Встроенные функции в Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/173">5.02. Магические методы в Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/18">5.02. Алгоритмы и структуры</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/19">5.02. Типы данных в Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/20">5.02. Переменные в Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/21">5.02. Работа с типами</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/22">5.02. Коллекции</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/23">5.02. Управляющие конструкции</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/24">5.02. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/25">5.02. Итераторы, генераторы и контекстные менеджеры</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/26">5.02. ООП в Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/27">5.02. Архитектура выполнения и управление памятью</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/28">5.02. Исключения</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/281">5.02. Список ошибок и исключений</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/29">5.02. Асинхронность и многопоточность</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/30">5.02. Django</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/301">5.02. Справочник по Django</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/31">5.02. Работа с данными и внешним миром</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/32">5.02. Графика и игры</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/321">5.02. Справочник по модулю Turtle</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/33">5.02. Анализ данных и научные вычисления</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/34">5.02. Веб и API</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/341">5.02. Flask</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/342">5.02. Справочник по Flask</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/343">5.02. Разработка своего API</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/35">5.02. Автоматизация и DevOps</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/36">5.02. Справочник по Python</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/998">5.02. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.02.%20Python/999">5.02. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/1">5-02-python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/101">5.02. Рекомендации по разработке на Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/11">5.02. Архитектура Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/12">5.02. Фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/121">5.02. Экосистема Python-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/13">5.02. Окружения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/14">5.02. История</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/15">5.02. Философия</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/16">5.02. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/17">5.02. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/171">5.02. Ключевые слова в Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/172">5.02. Встроенные функции в Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/173">5.02. Магические методы в Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/18">5.02. Алгоритмы и структуры</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/19">5.02. Типы данных в Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/20">5.02. Переменные в Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/21">5.02. Работа с типами</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/22">5.02. Коллекции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/23">5.02. Управляющие конструкции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/24">5.02. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/25">5.02. Итераторы, генераторы и контекстные менеджеры</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/26">5.02. ООП в Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/27">5.02. Архитектура выполнения и управление памятью</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/28">5.02. Исключения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/281">5.02. Список ошибок и исключений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/29">5.02. Асинхронность и многопоточность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/30">5.02. Django</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/301">5.02. Справочник по Django</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/31">5.02. Работа с данными и внешним миром</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/32">5.02. Графика и игры</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/321">5.02. Справочник по модулю Turtle</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/33">5.02. Анализ данных и научные вычисления</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/34">5.02. Веб и API</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/341">5.02. Flask</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/342">5.02. Справочник по Flask</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/343">5.02. Разработка своего API</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/35">5.02. Автоматизация и DevOps</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/36">5.02. Справочник по Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/998">5.02. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/999">5.02. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1551,34 +1551,34 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Java
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/1">5.03. История Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/101">5.03. Рекомендации по разработке на Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/11">5.03. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/110">5.03. Экосистема Java-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/12">5.03. Структуры проекта</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/121">5.03. Справочник по конфигурациям в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/13">5.03. Первая программа на Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/14">5.03. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/141">5.03. Ключевые слова в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/142">5.03. Встроенные функции в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/15">5.03. Типы данных в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/16">5.03. Основные элементы Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/17">5.03. Операторы и циклы в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/18">5.03. ООП в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/19">5.03. Прочие особенности языка Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/20">5.03. Библиотеки и утилиты</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/21">5.03. Исключения</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/211">5.03. Иерархия исключений в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/22">5.03. Работа с БД</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/23">5.03. JVM, память и потоки</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/24">5.03. Коллекции в Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/25">5.03. JavaServer Faces</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/26">5.03. JavaBean</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/27">5.03. Spring</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/28">5.03. Ключевые классы и интерфейсы Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/3">5.03. Справочник по Java</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/998">5.03. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.03.%20Java/999">5.03. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/1">5.03. История Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/101">5.03. Рекомендации по разработке на Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/11">5.03. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/110">5.03. Экосистема Java-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/12">5.03. Структуры проекта</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/121">5.03. Справочник по конфигурациям в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/13">5.03. Первая программа на Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/14">5.03. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/141">5.03. Ключевые слова в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/142">5.03. Встроенные функции в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/15">5.03. Типы данных в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/16">5.03. Основные элементы Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/17">5.03. Операторы и циклы в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/18">5.03. ООП в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/19">5.03. Прочие особенности языка Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/20">5.03. Библиотеки и утилиты</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/21">5.03. Исключения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/211">5.03. Иерархия исключений в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/22">5.03. Работа с БД</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/23">5.03. JVM, память и потоки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/24">5.03. Коллекции в Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/25">5-03-javaServer Faces</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/26">5-03-javaBean</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/27">5.03. Spring</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/28">5.03. Ключевые классы и интерфейсы Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/3">5.03. Справочник по Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/998">5.03. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/999">5.03. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1591,22 +1591,22 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Платформа .NET
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/1">5.04. История .NET</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/11">5.04. Платформа .NET</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/12">5.04. Особенности архитектуры</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/13">5.04. Типы приложений в .NET</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/14">5.04. Сборка в .NET</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/15">5.04. Пакеты</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/16">5.04. Инструменты и среда разработки</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/17">5.04. NuGet и политика платформы</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/171">5.04. Microsoft ADO</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/172">5.04. Microsoft ASP</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/173">5.04. Экосистема .NET-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/18">5.04. F#</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/181">5.04. Справочник про F#</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/2">5.04. SignalR</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/998">5.04. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.04.%20Платформа%20.NET/999">5.04. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/1">5.04. История .NET</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/11">5-04-platforma-dotnet</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/12">5.04. Особенности архитектуры</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/13">5.04. Типы приложений в .NET</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/14">5.04. Сборка в .NET</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/15">5.04. Пакеты</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/16">5.04. Инструменты и среда разработки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/17">5.04. NuGet и политика платформы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/171">5.04. Microsoft ADO</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/172">5.04. Microsoft ASP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/173">5.04. Экосистема .NET-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/18">5.04. F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/181">5.04. Справочник про F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/2">5.04. SignalR</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/998">5.04. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/999">5.04. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1619,55 +1619,55 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   C#
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/1">5.05. C#</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/101">5.05. Справочник по конфигурациям в C#</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/102">5.05. Рекомендации по разработке на C#</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/11">5.05. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/111">5.05. Ключевые слова в C#</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/112">5.05. Встроенные функции в C#</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/12">5.05. Пространства имен</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/13">5.05. Управляющие конструкции и логика</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/14">5.05. Условные операции</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/15">5.05. Исключения</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/151">5.05. Иерархия исключений в C#</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/16">5.05. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/17">5.05. Переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/18">5.05. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/19">5.05. Стек и куча</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/20">5.05. Преобразование типов и типизация</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/21">5.05. Работа с типами</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/22">5.05. Обработка null</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/23">5.05. Массивы и диапазоны</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/24">5.05. Анонимные типы и кортежи</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/25">5.05. ООП</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/26">5.05. Обобщения</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/27">5.05. Ковариантность, контравариантность, инвариантность</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/28">5.05. Коллекции</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/29">5.05. LINQ</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/291">5.05. Справочник по LINQ</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/30">5.05. Итераторы и yield</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/31">5.05. Сериализация и парсинг</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/32">5.05. Служебные классы</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/33">5.05. Делегаты и события</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/34">5.05. Расширения и вложенные типы</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/35">5.05. Dependency Injection</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/36">5.05. Лямбды, делегаты и отложенная инициализация</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/37">5.05. Регулярные выражения</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/38">5.05. Синтаксический сахар и нововведения</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/39">5.05. Асинхронность, многопоточность и параллелизм</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/40">5.05. .NET инфраструктура и метаданные</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/41">5.05. Управление ресурсами и производительность</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/42">5.05. Работа с сетью</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/43">5.05. Безопасность</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/44">5.05. Работа с БД и ORM</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/45">5.05. Веб-разработка и интеграции</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/451">5.05. ASP.NET</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/452">5.05. Справочник по ASP.NET</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/46">5.05. Популярные библиотеки для разных задач</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/47">5.05. Пример работы бэкенда</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/471">5.05. Справочник по C#</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/998">5.05. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.05.%20CSharp/999">5.05. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/1">5.05. C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/101">5.05. Справочник по конфигурациям в C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/102">5.05. Рекомендации по разработке на C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/11">5.05. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/111">5.05. Ключевые слова в C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/112">5.05. Встроенные функции в C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/12">5.05. Пространства имен</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/13">5.05. Управляющие конструкции и логика</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/14">5.05. Условные операции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/15">5.05. Исключения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/151">5.05. Иерархия исключений в C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/16">5.05. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/17">5.05. Переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/18">5.05. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/19">5.05. Стек и куча</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/20">5.05. Преобразование типов и типизация</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/21">5.05. Работа с типами</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/22">5.05. Обработка null</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/23">5.05. Массивы и диапазоны</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/24">5.05. Анонимные типы и кортежи</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/25">5.05. ООП</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/26">5.05. Обобщения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/27">5.05. Ковариантность, контравариантность, инвариантность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/28">5.05. Коллекции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/29">5.05. LINQ</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/291">5.05. Справочник по LINQ</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/30">5.05. Итераторы и yield</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/31">5.05. Сериализация и парсинг</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/32">5.05. Служебные классы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/33">5.05. Делегаты и события</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/34">5.05. Расширения и вложенные типы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/35">5.05. Dependency Injection</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/36">5.05. Лямбды, делегаты и отложенная инициализация</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/37">5.05. Регулярные выражения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/38">5.05. Синтаксический сахар и нововведения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/39">5.05. Асинхронность, многопоточность и параллелизм</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/40">5.05. .NET инфраструктура и метаданные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/41">5.05. Управление ресурсами и производительность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/42">5.05. Работа с сетью</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/43">5.05. Безопасность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/44">5.05. Работа с БД и ORM</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/45">5.05. Веб-разработка и интеграции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/451">5.05. ASP.NET</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/452">5.05. Справочник по ASP.NET</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/46">5.05. Популярные библиотеки для разных задач</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/47">5.05. Пример работы бэкенда</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/471">5.05. Справочник по C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/998">5.05. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/999">5.05. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1680,32 +1680,32 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   C++
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/1">5.06. C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/10">5.06. Экосистема C++-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/101">5.06. Рекомендации по разработке на C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/11">5.06. Типы данных C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/12">5.06. Операторы C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/13">5.06. Циклы C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/14">5.06. ООП в C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/15">5.06. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/151">5.06. Ключевые слова в C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/152">5.06. Встроенные функции в C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/16">5.06. Переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/17">5.06. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/18">5.06. Библиотеки</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/19">5.06. Управление памятью в C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/191">5.06. Иерархия исключений стандартной библиотеки C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/20">5.06. Асинхронность и потоки</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/21">5.06. Как пишут системы на C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/22">5.06. Разработка игр с C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/23">5.06. Работа с типами</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/24">5.06. Работа с данными</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/25">5.06. Работа с сетью</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/26">5.06. Прочие особенности C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/27">5.06. Qt</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/3">5.06. Справочник по C++</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/998">5.06. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.06.%20C++/999">5.06. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/1">5-06-cpp</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/10">5.06. Экосистема C++-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/101">5.06. Рекомендации по разработке на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/11">5.06. Типы данных C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/12">5.06. Операторы C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/13">5.06. Циклы C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/14">5.06. ООП в C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/15">5.06. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/151">5.06. Ключевые слова в C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/152">5.06. Встроенные функции в C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/16">5.06. Переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/17">5.06. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/18">5.06. Библиотеки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/19">5.06. Управление памятью в C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/191">5.06. Иерархия исключений стандартной библиотеки C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/20">5.06. Асинхронность и потоки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/21">5.06. Как пишут системы на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/22">5.06. Разработка игр с C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/23">5.06. Работа с типами</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/24">5.06. Работа с данными</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/25">5.06. Работа с сетью</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/26">5.06. Прочие особенности C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/27">5.06. Qt</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/3">5.06. Справочник по C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/998">5.06. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/999">5.06. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1718,30 +1718,30 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   PHP
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/1">5.07. История PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/10">5.07. Экосистема PHP-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/101">5.07. Рекомендации по разработке на PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/11">5.07. PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/111">5.07. Composer</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/112">5.07. Конфигурация сервера для PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/113">5.07. Локальная среда разработки</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/12">5.07. Фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/13">5.07. Первая программа на PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/14">5.07. Знаки препинания, операторы и синтаксические символы в PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/141">5.07. Ключевые слова в PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/142">5.07. Встроенные функции в PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/15">5.07. Laravel и шаблоны проектирования</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/16">5.07. Переменные и типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/17">5.07. Операторы и циклы</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/18">5.07. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/181">5.07. ООП в PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/19">5.07. Иерархия исключений в PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/20">5.07. Важные классы</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/21">5.07. Работа с БД</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/211">5.07. Готовые функции и константы PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/998">5.07. Справочник по PHP</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/999">5.07. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.07.%20PHP/999">5.07. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/1">5.07. История PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/10">5.07. Экосистема PHP-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/101">5.07. Рекомендации по разработке на PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/11">5-07-php</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/111">5.07. Composer</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/112">5.07. Конфигурация сервера для PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/113">5.07. Локальная среда разработки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/12">5.07. Фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/13">5.07. Первая программа на PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/14">5.07. Знаки препинания, операторы и синтаксические символы в PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/141">5.07. Ключевые слова в PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/142">5.07. Встроенные функции в PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/15">5.07. Laravel и шаблоны проектирования</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/16">5.07. Переменные и типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/17">5.07. Операторы и циклы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/18">5.07. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/181">5.07. ООП в PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/19">5.07. Иерархия исключений в PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/20">5.07. Важные классы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/21">5.07. Работа с БД</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/211">5.07. Готовые функции и константы PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/998">5.07. Справочник по PHP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/999">5.07. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/999">5.07. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1754,17 +1754,17 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Smalltalk
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/1">5.08. Smalltalk</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/101">5.08. Рекомендации по разработке на Smalltalk</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/11">5.08. Первая программа на Smalltalk</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/2">5.08. История Smalltalk</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/22">5.08. Философия языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/3">5.08. Особенности синтаксиса</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/33">5.08. Типы данных и переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/4">5.08. ООП в Smalltalk</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/5">5.08. Справочник по Smalltalk</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/998">5.08. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.08.%20Smalltalk/999">5.08. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/1">5-08-smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/101">5.08. Рекомендации по разработке на Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/11">5.08. Первая программа на Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/2">5.08. История Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/22">5.08. Философия языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/3">5.08. Особенности синтаксиса</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/33">5.08. Типы данных и переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/4">5.08. ООП в Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/5">5.08. Справочник по Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/998">5.08. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/999">5.08. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1777,25 +1777,25 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Kotlin
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/1">5.09. История Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/10">5.09. Экосистема Kotlin-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/101">5.09. Рекомендации по разработке на Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/11">5.09. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/12">5.09. Типы данных и переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/13">5.09. Операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/14">5.09. Циклы</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/15">5.09. ООП в Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/16">5.09. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/161">5.09. Ключевые слова в Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/162">5.09. Встроенные функции в Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/17">5.09. Синтаксис Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/171">5.09. Иерархия исключений в Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/18">5.09. Работа с БД в Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/19">5.09. Важные классы и интерфейсы Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/2">5.09. Первая программа на Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/3">5.09. Справочник по Kotlin</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/998">5.09. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.09.%20Kotlin/999">5.09. Чек-лист разработки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/1">5.09. История Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/10">5.09. Экосистема Kotlin-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/101">5.09. Рекомендации по разработке на Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/11">5.09. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/12">5.09. Типы данных и переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/13">5.09. Операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/14">5.09. Циклы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/15">5.09. ООП в Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/16">5.09. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/161">5.09. Ключевые слова в Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/162">5.09. Встроенные функции в Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/17">5.09. Синтаксис Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/171">5.09. Иерархия исключений в Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/18">5.09. Работа с БД в Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/19">5.09. Важные классы и интерфейсы Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/2">5.09. Первая программа на Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/3">5.09. Справочник по Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/998">5.09. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/999">5.09. Чек-лист разработки</a></li>
   </ul>
   </li>
   
@@ -1808,29 +1808,29 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Go
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/1">5.10. Основы языка Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/101">5.10. Рекомендации по разработке на Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/11">5.10. История Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/111">5.10. Экосистема Go-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/12">5.10. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/121">5.10. Ключевые слова в Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/122">5.10. Встроенные функции в Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/13">5.10. Особенности языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/14">5.10. Синтаксис</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/15">5.10. Сфера применения</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/16">5.10. Типы данных и переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/17">5.10. Операторы и циклы</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/18">5.10. Функции и методы</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/19">5.10. Фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/191">5.10. Основные принципы обработки ошибок в Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/20">5.10. Работа с БД</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/21">5.10. Асинхронность</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/22">5.10. Популярные проекты на Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/23">5.10. Важные классы и интерфейсы</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/3">5.10. Первая программа на Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/998">5.10. Справочник по Go</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/999">5.10. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.10.%20Go/999">5.10. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/1">5.10. Основы языка Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/101">5.10. Рекомендации по разработке на Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/11">5.10. История Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/111">5.10. Экосистема Go-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/12">5.10. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/121">5.10. Ключевые слова в Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/122">5.10. Встроенные функции в Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/13">5.10. Особенности языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/14">5.10. Синтаксис</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/15">5.10. Сфера применения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/16">5.10. Типы данных и переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/17">5.10. Операторы и циклы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/18">5.10. Функции и методы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/19">5.10. Фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/191">5.10. Основные принципы обработки ошибок в Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/20">5.10. Работа с БД</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/21">5.10. Асинхронность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/22">5.10. Популярные проекты на Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/23">5.10. Важные классы и интерфейсы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/3">5.10. Первая программа на Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/998">5.10. Справочник по Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/999">5.10. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/999">5.10. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1843,26 +1843,26 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Ruby
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/1">5.11. Основы языка Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/101">5.11. Рекомендации по разработке на Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/11">5.11. ООП в Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/12">5.11. История Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/13">5.11. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/14">5.11. Ключевые слова в Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/15">5.11. Встроенные функции в Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/16">5.11. Типы данных в Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/17">5.11. Операторы и циклы в Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/18">5.11. Фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/19">5.11. Работа с БД в Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/20">5.11. Асинхронность</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/21">5.11. Иерархия исключений в Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/22">5.11. Важные классы и интерфейсы</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/23">5.11. Популярные проекты на Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/3">5.11. Первая программа на Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/4">5.11. Ruby on Rails</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/5">5.11. Справочник по Ruby</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/6">5.11. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.11.%20Ruby/7">5.11. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/1">5.11. Основы языка Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/101">5.11. Рекомендации по разработке на Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/11">5.11. ООП в Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/12">5.11. История Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/13">5.11. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/14">5.11. Ключевые слова в Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/15">5.11. Встроенные функции в Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/16">5.11. Типы данных в Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/17">5.11. Операторы и циклы в Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/18">5.11. Фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/19">5.11. Работа с БД в Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/20">5.11. Асинхронность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/21">5.11. Иерархия исключений в Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/22">5.11. Важные классы и интерфейсы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/23">5.11. Популярные проекты на Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/3">5.11. Первая программа на Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/4">5-11-ruby on Rails</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/5">5.11. Справочник по Ruby</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/6">5.11. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/7">5.11. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1875,24 +1875,24 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Groovy
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/1">5.12. История Groovy</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/101">5.12. Рекомендации по разработке на Groovy</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/11">5.12. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/12">5.12. Типы данных и переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/13">5.12. Операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/14">5.12. Циклы</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/15">5.12. ООП</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/151">5.12. Иерархия исключений в Groovy</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/16">5.12. Прочие особенности</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/17">5.12. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/171">5.12. Ключевые слова в Groovy</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/172">5.12. Встроенные функции в Groovy</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/18">5.12. Синтаксис</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/19">5.12. Работа с БД</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/2">5.12. Первая программа на Groovy</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/3">5.12. Справочник по Groovy</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/998">5.12. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.12.%20Groovy/999">5.12. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/1">5.12. История Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/101">5.12. Рекомендации по разработке на Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/11">5.12. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/12">5.12. Типы данных и переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/13">5.12. Операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/14">5.12. Циклы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/15">5.12. ООП</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/151">5.12. Иерархия исключений в Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/16">5.12. Прочие особенности</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/17">5.12. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/171">5.12. Ключевые слова в Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/172">5.12. Встроенные функции в Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/18">5.12. Синтаксис</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/19">5.12. Работа с БД</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/2">5.12. Первая программа на Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/3">5.12. Справочник по Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/998">5.12. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/999">5.12. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1905,27 +1905,27 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Rust
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/1">5.13. История Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/101">5.13. Рекомендации по разработке на Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/11">5.13. Основы Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/110">5.13. Экосистема Rust-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/111">5.13. Системное программирование на Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/12">5.13. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/121">5.13. Ключевые слова в Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/122">5.13. Встроенные функции в Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/13">5.13. Типы данных и переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/14">5.13. Операторы и циклы</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/15">5.13. ООП в Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/16">5.13. Фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/17">5.13. Работа с данными</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/18">5.13. Асинхронность</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/19">5.13. Основные принципы обработки ошибок в Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/20">5.13. Важные классы и интерфейсы</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/21">5.13. Популярные проекты на Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/3">5.13. Первая программа на Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/998">5.13. Справочник по Rust</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/999">5.13. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.13.%20Rust/999">5.13. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/1">5.13. История Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/101">5.13. Рекомендации по разработке на Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/11">5.13. Основы Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/110">5.13. Экосистема Rust-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/111">5.13. Системное программирование на Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/12">5.13. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/121">5.13. Ключевые слова в Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/122">5.13. Встроенные функции в Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/13">5.13. Типы данных и переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/14">5.13. Операторы и циклы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/15">5.13. ООП в Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/16">5.13. Фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/17">5.13. Работа с данными</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/18">5.13. Асинхронность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/19">5.13. Основные принципы обработки ошибок в Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/20">5.13. Важные классы и интерфейсы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/21">5.13. Популярные проекты на Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/3">5.13. Первая программа на Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/998">5.13. Справочник по Rust</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/999">5.13. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-13-rust/999">5.13. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1938,27 +1938,27 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Swift
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/1">5.14. История Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/10">5.14. Экосистема Swift-приложений</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/101">5.14. Рекомендации по разработке на Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/11">5.14. ООП в Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/12">5.14. Основы Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/13">5.14. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/14">5.14. Ключевые слова в Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/15">5.14. Встроенные функции в Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/16">5.14. Типы данных и переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/17">5.14. Операторы и циклы</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/18">5.14. Фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/19">5.14. Работа с данными</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/20">5.14. Асинхронность</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/21">5.14. Основные принципы обработки ошибок в Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/3">5.14. Важные классы и интерфейсы</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/4">5.14. Популярные проекты на Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/5">5.14. Первая программа на Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/6">5.14. Жизненный цикл Swift-приложения</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/7">5.14. Справочник по Swift</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/8">5.14. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.14.%20Swift/9">5.14. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/1">5.14. История Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/10">5.14. Экосистема Swift-приложений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/101">5.14. Рекомендации по разработке на Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/11">5.14. ООП в Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/12">5.14. Основы Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/13">5.14. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/14">5.14. Ключевые слова в Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/15">5.14. Встроенные функции в Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/16">5.14. Типы данных и переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/17">5.14. Операторы и циклы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/18">5.14. Фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/19">5.14. Работа с данными</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/20">5.14. Асинхронность</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/21">5.14. Основные принципы обработки ошибок в Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/3">5.14. Важные классы и интерфейсы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/4">5.14. Популярные проекты на Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/5">5.14. Первая программа на Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/6">5.14. Жизненный цикл Swift-приложения</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/7">5.14. Справочник по Swift</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/8">5.14. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/9">5.14. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -1971,26 +1971,26 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Lua и Luau
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/1">5.15. Lua и Luau</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/101">5.15. Рекомендации по разработке на Lua</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/11">5.15. Экосистема и фреймворки</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/12">5.15. История Lua</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/13">5.15. Первая программа на Lua</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/14">5.15. Знаки препинания</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/15">5.15. Ключевые слова в Lua</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/16">5.15. Встроенные функции в Lua</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/17">5.15. Типы данных и переменные</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/18">5.15. Управляющие конструкции</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/19">5.15. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/20">5.15. Метатаблицы и метаметоды</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/21">5.15. Модули и организация кода</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/22">5.15. Работа с памятью и сборка мусора</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/23">5.15. Асинхронность и сопрограммы</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/24">5.15. Архитектура выполнения и встраиваемость</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/3">5.15. Luau</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/4">5.15. Справочник по Lua</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/5">5.15. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.15.%20Lua%20и%20Luau/6">5.15. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/1">5-15-lua-i-luau</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/101">5.15. Рекомендации по разработке на Lua</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/11">5.15. Экосистема и фреймворки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/12">5.15. История Lua</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/13">5.15. Первая программа на Lua</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/14">5.15. Знаки препинания</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/15">5.15. Ключевые слова в Lua</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/16">5.15. Встроенные функции в Lua</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/17">5.15. Типы данных и переменные</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/18">5.15. Управляющие конструкции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/19">5.15. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/20">5.15. Метатаблицы и метаметоды</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/21">5.15. Модули и организация кода</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/22">5.15. Работа с памятью и сборка мусора</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/23">5.15. Асинхронность и сопрограммы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/24">5.15. Архитектура выполнения и встраиваемость</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/3">5.15. Luau</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/4">5.15. Справочник по Lua</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/5">5.15. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/6">5.15. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2003,9 +2003,9 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Старые языки
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/1">5.16. О старых языках</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/998">5.16. Итоги</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/999">5.16. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/1">5.16. О старых языках</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/998">5.16. Итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/999">5.16. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2018,14 +2018,14 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Cobol
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/1">5.16. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/2">5.16. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/3">5.16. Архитектура COBOL</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/4">5.16. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/5">5.16. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/6">5.16. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/7">5.16. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Cobol/711">5.16. Справочник по Cobol</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/1">5.16. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/2">5.16. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/3">5.16. Архитектура COBOL</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/4">5.16. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/5">5.16. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/6">5.16. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/711">5.16. Справочник по Cobol</a></li>
   </ul>
   </li>
   
@@ -2038,15 +2038,15 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Fortran
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/1">5.16. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/2">5.16. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/3">5.16. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/4">5.16. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/5">5.16. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/6">5.16. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/7">5.16. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/8">5.16. Особенности функционального программирования</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Fortran/811">5.16. Справочник по языку Fortran</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/1">5.16. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/2">5.16. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/3">5.16. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/4">5.16. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/5">5.16. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/6">5.16. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/8">5.16. Особенности функционального программирования</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/811">5.16. Справочник по языку Fortran</a></li>
   </ul>
   </li>
   
@@ -2059,15 +2059,15 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Lisp
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/1">5.16. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/2">5.16. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/3">5.16. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/4">5.16. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/5">5.16. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/6">5.16. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/7">5.16. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/8">5.16. Особенности функционального программирования в Lisp</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Lisp/811">5.16. Справочник по Lisp</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/1">5.16. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/2">5.16. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/3">5.16. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/4">5.16. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/5">5.16. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/6">5.16. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/8">5.16. Особенности функционального программирования в Lisp</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/811">5.16. Справочник по Lisp</a></li>
   </ul>
   </li>
   
@@ -2080,34 +2080,34 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Pascal
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/1">5.16. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/2">5.16. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/3">5.16. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/4">5.16. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/5">5.16. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/6">5.16. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/7">5.16. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Pascal/711">5.16. Справочник по Pascal</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/1">5.16. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/2">5.16. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/3">5.16. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/4">5.16. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/5">5.16. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/6">5.16. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/711">5.16. Справочник по Pascal</a></li>
   </ul>
   </li>
   
 </ul>
 
-### Visual Basic
+### visual-basic
 
 <ul>
   
   <li>
   <ul>
-  Visual Basic
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/1">5.16. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/2">5.16. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/3">5.16. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/4">5.16. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/5">5.16. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/6">5.16. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/7">5.16. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Visual%20Basic/711">5.16. Справочник по Visual Basic</a></li>
+  visual-basic
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/1">5.16. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/2">5.16. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/3">5.16. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/4">5.16. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/5">5.16. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/6">5.16. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/711">5.16. Справочник по visual-basic</a></li>
   </ul>
   </li>
   
@@ -2120,14 +2120,14 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Ассемблер
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/1">5.16. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/2">5.16. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/3">5.16. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/4">5.16. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/5">5.16. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/6">5.16. Функции и команды</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/7">5.16. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Ассемблер/711">5.16. Справочник по Ассемблеру</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/1">5.16. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/2">5.16. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/3">5.16. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/4">5.16. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/5">5.16. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/6">5.16. Функции и команды</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Ассемблер/711">5.16. Справочник по Ассемблеру</a></li>
   </ul>
   </li>
   
@@ -2140,21 +2140,21 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Си
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/1">5.16. История языка Си</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/2">5.16. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/211">5.16. Инструментальная цепочка</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/212">5.16. Преобразование кода в программу</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/213">5.16. Стандарты Си</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/3">5.16. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/311">5.16. Компиляторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/4">5.16. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/411">5.16. Структура</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/5">5.16. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/6">5.16. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/7">5.16. Первая программа</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/711">5.16. Примеры простых игр на Си</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/712">5.16. Системное программирование на Си</a></li>
-  <li><a href="/encyclopedia/Языки/5.16.%20Старые%20языки/Си/8">5.16. Справочник по Си</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/1">5.16. История языка Си</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/2">5.16. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/211">5.16. Инструментальная цепочка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/212">5.16. Преобразование кода в программу</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/213">5.16. Стандарты Си</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/3">5.16. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/311">5.16. Компиляторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/4">5.16. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/411">5.16. Структура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/5">5.16. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/6">5.16. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/711">5.16. Примеры простых игр на Си</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/712">5.16. Системное программирование на Си</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Си/8">5.16. Справочник по Си</a></li>
   </ul>
   </li>
   
@@ -2167,13 +2167,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Haskell
-  <li><a href="/encyclopedia/Языки/5.17.%20Haskell/1">5.17. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.17.%20Haskell/2">5.17. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.17.%20Haskell/3">5.17. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.17.%20Haskell/4">5.17. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.17.%20Haskell/5">5.17. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.17.%20Haskell/6">5.17. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.17.%20Haskell/7">5.17. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-17-haskell/1">5.17. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-17-haskell/2">5.17. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-17-haskell/3">5.17. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-17-haskell/4">5.17. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-17-haskell/5">5.17. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-17-haskell/6">5.17. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-17-haskell/7">5.17. Первая программа</a></li>
   </ul>
   </li>
   
@@ -2186,13 +2186,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Scala
-  <li><a href="/encyclopedia/Языки/5.18.%20Scala/1">5.18. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.18.%20Scala/2">5.18. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.18.%20Scala/3">5.18. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.18.%20Scala/4">5.18. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.18.%20Scala/5">5.18. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.18.%20Scala/6">5.18. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.18.%20Scala/7">5.18. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-18-scala/1">5.18. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-18-scala/2">5.18. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-18-scala/3">5.18. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-18-scala/4">5.18. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-18-scala/5">5.18. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-18-scala/6">5.18. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-18-scala/7">5.18. Первая программа</a></li>
   </ul>
   </li>
   
@@ -2205,13 +2205,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Elixir
-  <li><a href="/encyclopedia/Языки/5.19.%20Elixir/1">5.19. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.19.%20Elixir/2">5.19. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.19.%20Elixir/3">5.19. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.19.%20Elixir/4">5.19. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.19.%20Elixir/5">5.19. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.19.%20Elixir/6">5.19. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.19.%20Elixir/7">5.19. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-19-elixir/1">5.19. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-19-elixir/2">5.19. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-19-elixir/3">5.19. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-19-elixir/4">5.19. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-19-elixir/5">5.19. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-19-elixir/6">5.19. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-19-elixir/7">5.19. Первая программа</a></li>
   </ul>
   </li>
   
@@ -2224,13 +2224,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Zig
-  <li><a href="/encyclopedia/Языки/5.20.%20Zig/1">5.20. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.20.%20Zig/2">5.20. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.20.%20Zig/3">5.20. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.20.%20Zig/4">5.20. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.20.%20Zig/5">5.20. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.20.%20Zig/6">5.20. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.20.%20Zig/7">5.20. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-20-zig/1">5.20. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-20-zig/2">5.20. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-20-zig/3">5.20. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-20-zig/4">5.20. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-20-zig/5">5.20. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-20-zig/6">5.20. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-20-zig/7">5.20. Первая программа</a></li>
   </ul>
   </li>
   
@@ -2243,13 +2243,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Nim
-  <li><a href="/encyclopedia/Языки/5.21.%20Nim/1">5.21. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.21.%20Nim/2">5.21. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.21.%20Nim/3">5.21. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.21.%20Nim/4">5.21. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.21.%20Nim/5">5.21. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.21.%20Nim/6">5.21. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.21.%20Nim/7">5.21. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/1">5.21. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/2">5.21. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/3">5.21. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/4">5.21. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/5">5.21. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/6">5.21. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/7">5.21. Первая программа</a></li>
   </ul>
   </li>
   
@@ -2262,14 +2262,14 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Dart
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/1">5.22. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/2">5.22. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/3">5.22. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/311">5.22. Flutter</a></li>
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/4">5.22. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/5">5.22. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/6">5.22. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.22.%20Dart/7">5.22. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/1">5.22. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/2">5.22. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/3">5.22. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/311">5.22. Flutter</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/4">5.22. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/5">5.22. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/6">5.22. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/7">5.22. Первая программа</a></li>
   </ul>
   </li>
   
@@ -2282,13 +2282,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   R
-  <li><a href="/encyclopedia/Языки/5.23.%20R/1">5.23. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.23.%20R/2">5.23. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.23.%20R/3">5.23. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.23.%20R/4">5.23. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.23.%20R/5">5.23. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.23.%20R/6">5.23. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.23.%20R/7">5.23. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-23-r/1">5.23. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-23-r/2">5.23. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-23-r/3">5.23. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-23-r/4">5.23. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-23-r/5">5.23. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-23-r/6">5.23. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-23-r/7">5.23. Первая программа</a></li>
   </ul>
   </li>
   
@@ -2301,13 +2301,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Julia
-  <li><a href="/encyclopedia/Языки/5.24.%20Julia/1">5.24. История языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.24.%20Julia/2">5.24. Основы языка</a></li>
-  <li><a href="/encyclopedia/Языки/5.24.%20Julia/3">5.24. Архитектура</a></li>
-  <li><a href="/encyclopedia/Языки/5.24.%20Julia/4">5.24. Типы данных</a></li>
-  <li><a href="/encyclopedia/Языки/5.24.%20Julia/5">5.24. Управляющие конструкции и операторы</a></li>
-  <li><a href="/encyclopedia/Языки/5.24.%20Julia/6">5.24. Функции</a></li>
-  <li><a href="/encyclopedia/Языки/5.24.%20Julia/7">5.24. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/1">5.24. История языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/2">5.24. Основы языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/3">5.24. Архитектура</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/4">5.24. Типы данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/5">5.24. Управляющие конструкции и операторы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/6">5.24. Функции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/7">5.24. Первая программа</a></li>
   </ul>
   </li>
 </ul>
@@ -2738,9 +2738,9 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Облачные технологии
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.01.%20Облачные%20технологии/1">8.01. Облачные технологии</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.01.%20Облачные%20технологии/2">8.01. Итоги</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.01.%20Облачные%20технологии/3">8.01. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1">8-01-oblachnye-tehnologii</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/2">8.01. Итоги</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/3">8.01. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2753,9 +2753,9 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Low-code, No-code
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.02.%20Low-code,%20No-code/1">8.02. Low-code, No-code</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.02.%20Low-code,%20No-code/2">8.02. Итоги</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.02.%20Low-code,%20No-code/3">8.02. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/1">8-02-low-code-no-code</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/2">8.02. Итоги</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/3">8.02. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2768,18 +2768,18 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Забота о коде и данных
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/1">8.03. Безопасность кода</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/11">8.03. Защита кода от изменений</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/111">8.03. Как работает Git</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/1111">8.03. GitFlow</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/112">8.03. Внутренности Git</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/113">8.03. Особенности Git</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/114">8.03. Git команды</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/115">8.03. Параметры Git</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/116">8.03. Отличия SVN от Git</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/117">8.03. Защита данных</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/998">8.03. Итоги</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.03.%20Забота%20о%20коде%20и%20данных/999">8.03. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1">8.03. Безопасность кода</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/11">8.03. Защита кода от изменений</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/111">8.03. Как работает Git</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1111">8.03. GitFlow</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/112">8.03. Внутренности Git</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/113">8.03. Особенности Git</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/114">8.03. Git команды</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/115">8.03. Параметры Git</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/116">8.03. Отличия SVN от Git</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117">8.03. Защита данных</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/998">8.03. Итоги</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/999">8.03. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2792,44 +2792,44 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   DevOps, CI-CD
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/1">8.04. Основы DevOps</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/11">8.04. Как работает CI CD</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/111">8.04. Стратегии развертывания</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/12">8.04. GitFlow и Git в работе DevOps</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/13">8.04. Особенности работы с CI и CD</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/14">8.04. Процесс в CI CD</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/15">8.04. Azure Repos и TFS</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/16">8.04. Инструменты</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/17">8.04. Чем отличается DevOps от сисадмина</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/18">8.04. Автоматизация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/19">8.04. Логирование и мониторинг</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/2">8.04. Terraform</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/21">8.04. Pulumi</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/211">8.04. Аутентификация и авторизация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/212">8.04. Webhooks</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/213">8.04. Данные Warehouse</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/214">8.04. Deb-пакеты</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/215">8.04. Инфраструктура как код (IaC)</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/216">8.04. Ansible</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/217">8.04. Наблюдаемость и автоматизация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/218">8.04. Service Mesh</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3">8.04. Справочник по Terraform</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3111">8.04. Справочник по Ansible</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3112">8.04. Справочник по Nginx</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3113">8.04. Справочник по GitHub Actions</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3114">8.04. Справочник по Jenkins</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3115">8.04. Справочник по Prometheus</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3116">8.04. Справочник по Grafana</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3117">8.04. Справочник по Elasticsearch</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3118">8.04. Справочник по AWS</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3119">8.04. Справочник по Logstash</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3120">8.04. Справочник по Kibana</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3121">8.04. Справочник по Loki</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3122">8.04. Справочник по Tempo</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3123">8.04. Справочник по Mimir</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/3124">8.04. Справочник по Azure Repos Git</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/998">8.04. Итоги</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.04.%20DevOps,%20CI-CD/999">8.04. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/1">8.04. Основы DevOps</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/11">8.04. Как работает CI CD</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/111">8.04. Стратегии развертывания</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/12">8.04. GitFlow и Git в работе DevOps</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/13">8.04. Особенности работы с CI и CD</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/14">8.04. Процесс в CI CD</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/15">8.04. Azure Repos и TFS</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/16">8.04. Инструменты</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/17">8.04. Чем отличается DevOps от сисадмина</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/18">8.04. Автоматизация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/19">8.04. Логирование и мониторинг</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/2">8.04. Terraform</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/21">8.04. Pulumi</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/211">8.04. Аутентификация и авторизация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/212">8.04. Webhooks</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/213">8.04. Данные Warehouse</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/214">8.04. Deb-пакеты</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/215">8.04. Инфраструктура как код (IaC)</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/216">8.04. Ansible</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/217">8.04. Наблюдаемость и автоматизация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/218">8.04. Service Mesh</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3">8.04. Справочник по Terraform</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3111">8.04. Справочник по Ansible</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3112">8.04. Справочник по Nginx</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3113">8.04. Справочник по GitHub Actions</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114">8.04. Справочник по Jenkins</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115">8.04. Справочник по Prometheus</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116">8.04. Справочник по Grafana</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3117">8.04. Справочник по Elasticsearch</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3118">8.04. Справочник по AWS</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3119">8.04. Справочник по Logstash</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3120">8.04. Справочник по Kibana</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3121">8.04. Справочник по Loki</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3122">8.04. Справочник по Tempo</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3123">8.04. Справочник по Mimir</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3124">8.04. Справочник по Azure Repos Git</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/998">8.04. Итоги</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/999">8.04. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2842,25 +2842,25 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Микросервисы и интеграция
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/1">8.05. Масштабирование</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/111">8.05. Балансировка нагрузки</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/112">8.05. Распределение и MSA</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/113">8.05. Коммуникация и интеграция</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/114">8.05. Асинхронная коммуникация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/115">8.05. Синхронная коммуникация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/116">8.05. Реактивная коммуникация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/117">8.05. Брокеры сообщений</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/118">8.05. RabbitMQ</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/119">8.05. Kafka</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/120">8.05. Push, Pull, Webhooks</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/1201">8.05. Справочник по SOAP</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/1202">8.05. Справочник по gRPC</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/1203">8.05. Справочник по GraphQL</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/121">8.05. Реализация интеграции</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/122">8.05. Проектирование API</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/123">8.05. Транспортные механизмы</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/998">8.05. Итоги</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.05.%20Микросервисы%20и%20интеграция/999">8.05. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1">8.05. Масштабирование</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/111">8.05. Балансировка нагрузки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/112">8.05. Распределение и MSA</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113">8.05. Коммуникация и интеграция</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114">8.05. Асинхронная коммуникация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115">8.05. Синхронная коммуникация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116">8.05. Реактивная коммуникация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117">8.05. Брокеры сообщений</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118">8.05. RabbitMQ</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119">8.05. Kafka</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120">8.05. Push, Pull, Webhooks</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201">8.05. Справочник по SOAP</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1202">8.05. Справочник по gRPC</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203">8.05. Справочник по GraphQL</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121">8.05. Реализация интеграции</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122">8.05. Проектирование API</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/123">8.05. Транспортные механизмы</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/998">8.05. Итоги</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/999">8.05. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2873,19 +2873,19 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Контейнеризация и оркестрация
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/1">8.06. Контейнеризация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/111">8.06. Docker</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/112">8.06. Объекты Docker</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/113">8.06. DockerHub и реестры образов</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/114">8.06. Работа с Docker</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/115">8.06. Сеть в контейнерах</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/116">8.06. Dockerfile</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/117">8.06. Docker Swarm и Kubernetes</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/118">8.06. Универсальная шпаргалка</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/2">8.06. Справочник по Docker</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/211">8.06. Справочник по Kubernetes</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/998">8.06. Итоги</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.06.%20Контейнеризация%20и%20оркестрация/999">8.06. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1">8.06. Контейнеризация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111">8.06. Docker</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/112">8.06. Объекты Docker</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/113">8.06. DockerHub и реестры образов</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/114">8.06. Работа с Docker</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/115">8.06. Сеть в контейнерах</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/116">8.06. Dockerfile</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117">8.06. Docker Swarm и Kubernetes</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. Универсальная шпаргалка</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2">8.06. Справочник по Docker</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211">8.06. Справочник по Kubernetes</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/998">8.06. Итоги</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/999">8.06. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -2898,30 +2898,30 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Информационная безопасность
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/1">8.07. Информационная безопасность</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/111">8.07. Методы защиты информации</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/1111">8.07. Государственные требования к информационной безопасности</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/1112">8.07. Средства защиты информации</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/112">8.07. Сертификация и сертификаты</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/113">8.07. Безопасность приложений</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/1131">8.07. Анализ и тестирование безопасности</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/114">8.07. Контроль и отслеживание</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/115">8.07. Шифрование</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/116">8.07. Авторизация и аутентификация</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/117">8.07. Устаревшие подходы</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/118">8.07. Уровни доверия и SSL TLS</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/119">8.07. Вирусы и вредоносные программы</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/120">8.07. Антивирусы</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/121">8.07. Сливы и утечки данных</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/122">8.07. Легальный сбор информации</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/123">8.07. Инъекции</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/124">8.07. Аудит</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/125">8.07. Безопасность в Docker</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/126">8.07. Пессимистическая и оптимистическая блокировки в базах данных</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/127">8.07. Взаимоблокировка</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/2">8.07. Обеспечение безопасности</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/998">8.07. Итоги</a></li>
-  <li><a href="/encyclopedia/Инфраструктура%20и%20безопасность/8.07.%20Информационная%20безопасность/999">8.07. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1">8-07-informatsionnaya-bezopasnost</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/111">8.07. Методы защиты информации</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1111">8.07. Государственные требования к информационной безопасности</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112">8.07. Средства защиты информации</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112">8.07. Сертификация и сертификаты</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/113">8.07. Безопасность приложений</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1131">8.07. Анализ и тестирование безопасности</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/114">8.07. Контроль и отслеживание</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/115">8.07. Шифрование</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/116">8.07. Авторизация и аутентификация</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/117">8.07. Устаревшие подходы</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/118">8.07. Уровни доверия и SSL TLS</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/119">8.07. Вирусы и вредоносные программы</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/120">8.07. Антивирусы</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/121">8.07. Сливы и утечки данных</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/122">8.07. Легальный сбор информации</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/123">8.07. Инъекции</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/124">8.07. Аудит</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125">8.07. Безопасность в Docker</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/126">8.07. Пессимистическая и оптимистическая блокировки в базах данных</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/127">8.07. Взаимоблокировка</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/2">8.07. Обеспечение безопасности</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/998">8.07. Итоги</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/999">8.07. Чек-лист самопроверки</a></li>
   </ul>
   </li>
 </ul>

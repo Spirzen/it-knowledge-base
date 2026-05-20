@@ -29,7 +29,7 @@ export const ENCYCLOPEDIA_SECTIONS = [
       'Структуры данных, SQL/NoSQL, HTML, CSS, XML, JSON, анализ и хранение.',
     link: '/section/data-markup',
     encyclopediaLink:
-      '/encyclopedia/3-data-markup/3.01. Продвинутые операции с данными/intro',
+      '/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro',
   },
   {
     id: 'code-dev',
@@ -49,7 +49,7 @@ export const ENCYCLOPEDIA_SECTIONS = [
     description:
       'JavaScript, Python, Java, .NET, C#, C++, PHP, Kotlin, Go, Ruby, Rust, Swift, Lua и другие.',
     link: '/section/languages',
-    encyclopediaLink: '/encyclopedia/5-languages/5.01. JavaScript/intro',
+    encyclopediaLink: '/encyclopedia/5-languages/5-01-javascript/intro',
   },
   {
     id: 'ai',
@@ -79,7 +79,7 @@ export const ENCYCLOPEDIA_SECTIONS = [
       'Облака, DevOps, микросервисы, контейнеры, CI/CD, информационная безопасность.',
     link: '/section/infra-security',
     encyclopediaLink:
-      '/encyclopedia/8-infra-security/8.01. Облачные технологии/intro',
+      '/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/intro',
   },
   {
     id: 'spinoff',
