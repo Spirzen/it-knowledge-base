@@ -61,7 +61,7 @@ function applyMotion(state, dist) {
   const from = {x: state.x, y: state.y};
   const next = movePoint(state.x, state.y, state.heading, dist);
   let nextState = {...state, x: next.x, y: next.y};
-  nextState = pushSegment(nextState, from, to);
+  nextState = pushSegment(nextState, from, next);
   if (state.filling && state.fillPolygon) {
     nextState = {
       ...nextState,
