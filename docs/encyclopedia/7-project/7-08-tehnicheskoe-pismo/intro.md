@@ -4,8 +4,14 @@ description: Подборка материалов раздела Техниче
 sidebar_label: Техническое письмо — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import WordSimulator from '@site/src/components/WordSimulator.jsx';
+import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 # О разделе
+
+<WordSimulator />
+
+<ExcelSimulator />
 
 <DocCardList />
 

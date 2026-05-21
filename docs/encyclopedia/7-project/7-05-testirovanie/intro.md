@@ -4,8 +4,11 @@ description: Подборка материалов раздела Тестиро
 sidebar_label: Тестирование программного обеспечения — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 
 # О разделе
+
+<TestingSectionHub />
 
 <DocCardList />
 

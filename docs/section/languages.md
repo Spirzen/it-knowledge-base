@@ -2,7 +2,7 @@
 id: languages
 title: 5. Языки - о разделе
 description: Мы изучили, как пишут программы, теперь пора посмотреть, на чём пишут. Что используется для фронтенда, что для бэкенда - какие инструменты и технологии нужны в разных областях.
-sidebar_label: 5. Языки - о разделе - о разделе
+sidebar_label: 5. Языки - о разделе
 slug: /section/languages
 ---
 <div class="article-tags">
@@ -20,25 +20,50 @@ slug: /section/languages
 
 ```mermaid
 mindmap
-  root((Языки))
-    Веб и общего назначения
+  root((5. Языки))
+    Веб и backend
       5.01 JavaScript
-	  5.02 Python
+      5.02 Python
       5.03 Java
-	  5.07 PHP
-	  5.09 Kotlin
-	  5.10 Go
+      5.07 PHP
+      5.10 Go
       5.11 Ruby
       5.12 Groovy
-    .NET и C-подобные
+    Mobile
+      5.09 Kotlin
+      5.14 Swift
+      5.22 Dart
+    Системные и производительность
+      5.06 C++
+      5.13 Rust
+      5.20 Zig
+      5.21 Nim
+    Платформа .NET
       5.04 Платформа .NET
       5.05 C#
-      5.13 Rust
-      5.14 Swift
-    Функциональные и исторические
+    Скрипты и автоматизация
+      5.15 Lua и Luau
+      5.25 Bash
+      5.26 PowerShell
+    Функциональные и JVM-альтернативы
       5.08 Smalltalk
-	  5.15 Lua и Luau
+      5.17 Haskell
+      5.18 Scala
+      5.19 Elixir
+    Data science и аналитика
+      5.23 R
+      5.24 Julia
+    Legacy
       5.16 Старые языки
+        Си
+        Ассемблер
+        Pascal
+        Fortran
+        Cobol
+        Lisp
+        Visual Basic
+    Корпоративные и нишевые
+      5.27 1С
 ```
 
 Вообще, лучше воспользуйтесь содержанием или перейдите к Базе знаний. Но для удобства, я размещу здесь ссылки на основные главы раздела:

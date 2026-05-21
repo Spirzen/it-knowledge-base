@@ -4,8 +4,11 @@ description: Подборка материалов раздела Софт пр�
 sidebar_label: Софт продвинутого пользователя — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 
 # О разделе
+
+<EndUserSoftwareHub tier="all" defaultApp="archive" />
 
 <DocCardList />
 
