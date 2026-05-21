@@ -1,4 +1,4 @@
-import React, {useCallback, useMemo, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
@@ -9,6 +9,7 @@ import {
   BPMN_TEMPLATES,
   UML_TEMPLATES,
   C4_TEMPLATES,
+  FLOW_TEMPLATES,
   C4_LEVELS,
   UML_DIAGRAM_TYPES,
   getPalette,
@@ -115,7 +116,13 @@ function edgePath(from, to, nodes) {
   return `M ${x1} ${y1} C ${mx} ${y1}, ${mx} ${y2}, ${x2} ${y2}`;
 }
 
-function DiagramStudioInner({initialMode = 'bpmn', modes = ['bpmn', 'uml', 'c4'], title, subtitle}) {
+function DiagramStudioInner({
+  initialMode = 'bpmn',
+  modes = ['bpmn', 'uml', 'c4'],
+  title,
+  subtitle,
+  initialTemplate,
+}) {
   const allowed = modes.filter((m) => MODES[m]);
   const [mode, setMode] = useState(initialMode);
   const [subMode, setSubMode] = useState(getDefaultSubMode(initialMode));
@@ -142,8 +149,9 @@ function DiagramStudioInner({initialMode = 'bpmn', modes = ['bpmn', 'uml', 'c4']
   }, []);
 
   const applyTemplate = useCallback(
-    (key) => {
-      const tpl = loadTemplate(mode, key);
+    (key, modeOverride) => {
+      const activeMode = modeOverride || mode;
+      const tpl = loadTemplate(activeMode, key);
       setNodes(tpl.nodes);
       setEdges(tpl.edges);
       if (tpl.subMode) setSubMode(tpl.subMode);
@@ -152,6 +160,11 @@ function DiagramStudioInner({initialMode = 'bpmn', modes = ['bpmn', 'uml', 'c4']
     },
     [mode],
   );
+
+  useEffect(() => {
+    if (initialTemplate) applyTemplate(initialTemplate, initialMode);
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- mount preset only
+  }, []);
 
   const switchMode = (next) => {
     setMode(next);
@@ -212,7 +225,13 @@ function DiagramStudioInner({initialMode = 'bpmn', modes = ['bpmn', 'uml', 'c4']
   };
 
   const templates =
-    mode === 'bpmn' ? BPMN_TEMPLATES : mode === 'uml' ? UML_TEMPLATES : C4_TEMPLATES;
+    mode === 'flow'
+      ? FLOW_TEMPLATES
+      : mode === 'bpmn'
+        ? BPMN_TEMPLATES
+        : mode === 'uml'
+          ? UML_TEMPLATES
+          : C4_TEMPLATES;
 
   return (
     <DemoShell className={styles.root}>
