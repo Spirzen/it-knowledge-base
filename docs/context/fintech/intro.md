@@ -4,8 +4,11 @@ description: Подборка материалов раздела Финтех �
 sidebar_label: Финтех — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Финтех — о разделе
+
+<ContextDomainPlay domain="fintech" />
 
 <DocCardList />
 

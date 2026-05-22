@@ -1,12 +1,10 @@
-import React, {useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
 import {
   ARITY_TABS,
-  BINARY_OPS,
-  UNARY_OPS,
   buildPrioritySteps,
   evalBinary,
   evalTernary,
@@ -15,6 +13,7 @@ import {
   formatResult,
   PRIORITY_WRONG,
 } from './shared/operatorsEngine';
+import {resolveOperatorsPreset} from './shared/operatorsPresets';
 import styles from './OperatorsPlay.module.css';
 
 function OperandChip({value, expr}) {
@@ -47,12 +46,18 @@ function OperationChip({result}) {
   );
 }
 
-function BinaryDemo() {
+function BinaryDemo({binaryOps, languageLabel}) {
   const [a, setA] = useState(5);
   const [b, setB] = useState(3);
-  const [opId, setOpId] = useState('+');
+  const [opId, setOpId] = useState(binaryOps[0]?.id ?? '+');
 
-  const {op, result} = evalBinary(opId, a, b);
+  useEffect(() => {
+    if (!binaryOps.some((o) => o.id === opId)) {
+      setOpId(binaryOps[0]?.id ?? '+');
+    }
+  }, [binaryOps, opId]);
+
+  const {op, result} = evalBinary(opId, a, b, binaryOps);
   const expr = `${formatOperandValue(a)} ${op.symbol} ${formatOperandValue(b)}`;
 
   return (
@@ -78,7 +83,7 @@ function BinaryDemo() {
         <label className={styles.control}>
           <span className="it-demo__label">Оператор</span>
           <select className="it-demo__select" value={opId} onChange={(e) => setOpId(e.target.value)}>
-            {BINARY_OPS.map((o) => (
+            {binaryOps.map((o) => (
               <option key={o.id} value={o.id}>
                 {o.symbol} — {o.label}
               </option>
@@ -114,18 +119,25 @@ function BinaryDemo() {
 
       <p className="it-demo__alert it-demo__alert--info" style={{marginBottom: 0}}>
         Бинарный оператор связывает <strong>два операнда</strong>; результат вычисления —{' '}
-        <strong>операция</strong>. Запись <code>{expr}</code> — выражение; после вычисления
-        получаем <code>{formatResult(result)}</code>.
+        <strong>операция</strong>. Запись <code>{expr}</code>
+        {languageLabel ? ` (${languageLabel})` : ''} — выражение; после вычисления получаем{' '}
+        <code>{formatResult(result)}</code>.
       </p>
     </>
   );
 }
 
-function UnaryDemo() {
+function UnaryDemo({unaryOps, languageLabel}) {
   const [x, setX] = useState(7);
-  const [opId, setOpId] = useState('neg');
+  const [opId, setOpId] = useState(unaryOps[0]?.id ?? 'neg');
 
-  const {op, result} = evalUnary(opId, x);
+  useEffect(() => {
+    if (!unaryOps.some((o) => o.id === opId)) {
+      setOpId(unaryOps[0]?.id ?? 'neg');
+    }
+  }, [unaryOps, opId]);
+
+  const {op, result} = evalUnary(opId, x, unaryOps);
   const displayX = formatOperandValue(x);
   const expr = `${op.symbol}${displayX}`;
 
@@ -151,7 +163,7 @@ function UnaryDemo() {
         <label className={styles.control}>
           <span className="it-demo__label">Оператор</span>
           <select className="it-demo__select" value={opId} onChange={(e) => setOpId(e.target.value)}>
-            {UNARY_OPS.map((o) => (
+            {unaryOps.map((o) => (
               <option key={o.id} value={o.id}>
                 {o.symbol} — {o.label}
               </option>
@@ -169,14 +181,14 @@ function UnaryDemo() {
       </div>
 
       <p className="it-demo__alert it-demo__alert--info" style={{marginBottom: 0}}>
-        Унарный оператор действует на <strong>один операнд</strong>: <code>{expr}</code>. Арность
-        оператора — 1.
+        Унарный оператор действует на <strong>один операнд</strong>: <code>{expr}</code>
+        {languageLabel ? ` (${languageLabel})` : ''}. Арность оператора — 1.
       </p>
     </>
   );
 }
 
-function TernaryDemo() {
+function TernaryDemo({hint}) {
   const [condition, setCondition] = useState(true);
   const [whenTrue, setWhenTrue] = useState(100);
   const [whenFalse, setWhenFalse] = useState(0);
@@ -240,6 +252,7 @@ function TernaryDemo() {
       <p className="it-demo__alert it-demo__alert--info" style={{marginBottom: 0}}>
         Тернарный оператор <code>?:</code> принимает <strong>три операнда</strong>. Сейчас условие{' '}
         {condition ? 'истинно' : 'ложно'}, выбрана ветка <code>{formatResult(branch)}</code>.
+        {hint ? <> {hint}</> : null}
       </p>
     </>
   );
@@ -338,17 +351,30 @@ function PriorityDemo() {
   );
 }
 
-function OperatorsPlayInner() {
+function OperatorsPlayInner({language}) {
+  const preset = useMemo(() => resolveOperatorsPreset(language), [language]);
+  const tabs = useMemo(() => {
+    const list = ARITY_TABS.filter((t) => t.id !== 'ternary' || preset.showTernary !== false);
+    return list;
+  }, [preset.showTernary]);
+
   const [tab, setTab] = useState('binary');
+
+  useEffect(() => {
+    if (!tabs.some((t) => t.id === tab)) {
+      setTab(tabs[0]?.id ?? 'binary');
+    }
+  }, [tabs, tab]);
+
+  const subtitle = preset.label
+    ? `Интерактивно (${preset.label}): операнды, операторы и результат`
+    : 'Интерактивно: кто на кого действует и какой получается результат';
 
   return (
     <DemoShell className={styles.root}>
-      <DemoCard
-        title="Операнды, операторы и операции"
-        subtitle="Интерактивно: кто на кого действует и какой получается результат"
-      >
+      <DemoCard title="Операнды, операторы и операции" subtitle={subtitle}>
         <div className="it-demo__tabs" role="tablist">
-          {ARITY_TABS.map((t) => (
+          {tabs.map((t) => (
             <button
               key={t.id}
               type="button"
@@ -363,19 +389,29 @@ function OperatorsPlayInner() {
           ))}
         </div>
 
-        {tab === 'binary' && <BinaryDemo />}
-        {tab === 'unary' && <UnaryDemo />}
-        {tab === 'ternary' && <TernaryDemo />}
+        {tab === 'binary' && (
+          <BinaryDemo binaryOps={preset.binaryOps} languageLabel={preset.label} />
+        )}
+        {tab === 'unary' && <UnaryDemo unaryOps={preset.unaryOps} languageLabel={preset.label} />}
+        {tab === 'ternary' && preset.showTernary !== false && (
+          <TernaryDemo hint={preset.ternaryHint} />
+        )}
         {tab === 'priority' && <PriorityDemo />}
+
+        {preset.showTernary === false && preset.ternaryHint && tab !== 'ternary' && (
+          <p className="it-demo__alert it-demo__alert--info" style={{marginTop: '1rem', marginBottom: 0}}>
+            {preset.ternaryHint}
+          </p>
+        )}
       </DemoCard>
     </DemoShell>
   );
 }
 
-export default function OperatorsPlay() {
+export default function OperatorsPlay({language}) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка демо операторов…')}>
-      {() => <OperatorsPlayInner />}
+      {() => <OperatorsPlayInner language={language} />}
     </BrowserOnly>
   );
 }

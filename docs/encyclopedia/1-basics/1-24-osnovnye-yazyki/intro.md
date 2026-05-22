@@ -7,6 +7,12 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+<div class="callout callout--tip">
+  <div class="callout-title">Для преподавателя</div>
+  Интерактивный путеводитель по Scratch, Java, C#, Kotlin, Go, C++ и Rust:
+  <a href="/encyclopedia/1-basics/1-24-osnovnye-yazyki/9">открыть путеводитель</a>.
+</div>
+
 <DocCardList />
 
 ---

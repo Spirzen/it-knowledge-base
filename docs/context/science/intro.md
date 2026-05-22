@@ -4,8 +4,11 @@ description: Подборка материалов раздела Наука в 
 sidebar_label: Наука — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Наука — о разделе
+
+<ContextDomainPlay domain="science" />
 
 <DocCardList />
 

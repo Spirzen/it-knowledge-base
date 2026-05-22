@@ -61,8 +61,8 @@ function hashIndex(key, size = 8) {
   return Math.abs(h) % size;
 }
 
-function KeyValueLogic() {
-  const [activeTab, setActiveTab] = useState('js');
+function KeyValueLogic({defaultLang = 'js'}) {
+  const [activeTab, setActiveTab] = useState(defaultLang);
   const [storeType, setStoreType] = useState('dictionary');
   const [selected, setSelected] = useState(null);
   const {copied, copy} = useCopyToClipboard();
@@ -136,10 +136,10 @@ function KeyValueLogic() {
   );
 }
 
-export default function DataStructureKeyValue() {
+export default function DataStructureKeyValue({defaultLang = 'js'}) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка ключ–значение…')}>
-      {() => <KeyValueLogic />}
+      {() => <KeyValueLogic defaultLang={defaultLang} />}
     </BrowserOnly>
   );
 }

@@ -41,8 +41,8 @@ const ROWS = [
 
 const COLS = ['ID', 'Имя', 'Роль'];
 
-function TableLogic() {
-  const [activeTab, setActiveTab] = useState('js');
+function TableLogic({defaultLang = 'js'}) {
+  const [activeTab, setActiveTab] = useState(defaultLang);
   const [selected, setSelected] = useState({row: 1, col: 2});
   const isMobile = useIsMobile();
   const {copied, copy} = useCopyToClipboard();
@@ -126,10 +126,10 @@ function TableLogic() {
   );
 }
 
-export default function DataStructureTable() {
+export default function DataStructureTable({defaultLang = 'js'}) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка таблицы…')}>
-      {() => <TableLogic />}
+      {() => <TableLogic defaultLang={defaultLang} />}
     </BrowserOnly>
   );
 }

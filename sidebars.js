@@ -1,5 +1,8 @@
 // sidebars.js
-import {sidebarCollectionCategories} from './src/data/sidebarCollections.js';
+import {
+  sidebarCollectionCategories,
+  SIDEBAR_COLLECTION_CATEGORY_PROPS,
+} from './src/data/sidebarCollections.js';
 
 const sidebars = {
   docsSidebar: [
@@ -28,6 +31,8 @@ const sidebars = {
     {
       type: 'category',
       label: 'Подборки',
+      collapsed: true,
+      customProps: SIDEBAR_COLLECTION_CATEGORY_PROPS,
       items: sidebarCollectionCategories,
     },
     {

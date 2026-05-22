@@ -1,4 +1,5 @@
-import React, {type ReactNode, useState, useMemo} from 'react';
+import React, {type ReactNode, useState, useMemo, useRef} from 'react';
+import useSidebarAutoWidth from './useSidebarAutoWidth';
 import clsx from 'clsx';
 import {ThemeClassNames} from '@docusaurus/theme-common';
 import {
@@ -81,6 +82,9 @@ export default function DocSidebarDesktopContent({
     [sidebar, search],
   );
 
+  const navRef = useRef<HTMLElement>(null);
+  useSidebarAutoWidth(navRef, [filteredSidebar, search]);
+
   const quickFilters = [
     {label: 'Языки', query: 'язык'},
     {label: 'Проект', query: 'проект'},
@@ -95,6 +99,7 @@ export default function DocSidebarDesktopContent({
 
   return (
     <nav
+      ref={navRef}
       aria-label={translate({
         id: 'theme.docs.sidebar.navAriaLabel',
         message: 'Docs sidebar',

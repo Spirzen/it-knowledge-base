@@ -4,8 +4,11 @@ description: Подборка материалов раздела Логисти
 sidebar_label: Логистика — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Логистика — о разделе
+
+<ContextDomainPlay domain="logistics" />
 
 <DocCardList />
 

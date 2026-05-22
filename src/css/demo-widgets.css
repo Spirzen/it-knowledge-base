@@ -210,6 +210,18 @@
   line-height: 1.55;
   overflow-x: auto;
   max-width: 100%;
+  white-space: pre-wrap;
+}
+
+.it-demo__terminal code {
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
 }
 
 .it-demo__terminal pre {

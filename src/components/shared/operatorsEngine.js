@@ -43,13 +43,13 @@ export function formatResult(value) {
   return String(value);
 }
 
-export function evalBinary(opId, a, b) {
-  const op = BINARY_OPS.find((o) => o.id === opId) ?? BINARY_OPS[0];
+export function evalBinary(opId, a, b, pool = BINARY_OPS) {
+  const op = pool.find((o) => o.id === opId) ?? pool[0];
   return {op, result: op.fn(a, b)};
 }
 
-export function evalUnary(opId, x) {
-  const op = UNARY_OPS.find((o) => o.id === opId) ?? UNARY_OPS[0];
+export function evalUnary(opId, x, pool = UNARY_OPS) {
+  const op = pool.find((o) => o.id === opId) ?? pool[0];
   return {op, result: op.fn(x)};
 }
 

@@ -1,0 +1,106 @@
+.root {
+  margin: 0.5rem 0;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.scriptLabel {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.block {
+  margin-bottom: 0.2rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--block-color, #4c97ff);
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.15s, filter 0.15s;
+}
+
+.blockHat {
+  border-radius: 14px 14px 8px 8px;
+}
+
+.blockC {
+  padding-left: 1rem;
+  border-left: 3px solid rgba(0, 0, 0, 0.12);
+}
+
+.blockActive {
+  filter: brightness(1.08);
+  transform: scale(1.02);
+}
+
+.stageInner {
+  position: relative;
+  min-height: 5.5rem;
+  border-radius: 10px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  background: linear-gradient(180deg, #87ceeb 0%, #e8f4fc 100%);
+  overflow: hidden;
+}
+
+.sprite {
+  position: absolute;
+  left: 12%;
+  bottom: 18%;
+  font-size: 2rem;
+  transition: transform 0.35s ease-out;
+}
+
+.bubble {
+  position: absolute;
+  right: 12%;
+  top: 18%;
+  max-width: 45%;
+  padding: 0.35rem 0.5rem;
+  border-radius: 10px;
+  background: #fff;
+  border: 2px solid #9966ff;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.log {
+  margin: 0.5rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.logLine {
+  color: var(--ifm-color-emphasis-600);
+}
+
+.logLineDone {
+  color: var(--ifm-font-color-base);
+}
+
+.logLineActive {
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.78rem;
+  color: var(--ifm-color-emphasis-700);
+}

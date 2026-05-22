@@ -201,6 +201,16 @@
   height: auto;
 }
 
+.heroLogoTitle {
+  font-size: inherit;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.heroLogoTitle :global(a) {
+  color: inherit;
+}
+
 .emojiImage {
   width: 1em;
   height: 1em;

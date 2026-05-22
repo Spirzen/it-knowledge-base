@@ -232,33 +232,73 @@ img {
   border-color: var(--ifm-color-primary);
 }
 
+/* Документация: сайдбар и контент в одной flex-строке — без min-width: 0 статья наезжает на меню */
+.docRoot {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.docMainContainer {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 100%;
+}
+
 .theme-doc-sidebar-container {
-  min-width: 180px !important;
-  max-width: 180px !important;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 3;
+  width: auto;
+  min-width: clamp(
+    11rem,
+    calc(10rem + var(--doc-sidebar-nest-depth, 1) * 1.1rem),
+    20rem
+  ) !important;
+  max-width: min(26rem, 42vw) !important;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (min-width: 997px) and (max-width: 1199px) {
   .theme-doc-sidebar-container {
-    min-width: 160px !important;
-    max-width: 160px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .theme-doc-sidebar-container {
-    min-width: 140px !important;
-    max-width: 140px !important;
-  }
-  
-  .navbar-sidebar__backdrop {
-    display: none !important;
+    min-width: clamp(
+      12rem,
+      calc(11rem + var(--doc-sidebar-nest-depth, 1) * 1.25rem),
+      22rem
+    ) !important;
+    max-width: min(24rem, 44vw) !important;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .theme-doc-sidebar-container {
-    min-width: 300px !important;
-    max-width: 300px !important;
+    min-width: clamp(
+      14rem,
+      calc(12rem + var(--doc-sidebar-nest-depth, 1) * 1.15rem),
+      22rem
+    ) !important;
+    max-width: min(28rem, 32vw) !important;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .navbar-sidebar .menu__link {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: clip !important;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    height: auto !important;
+    line-height: 1.35 !important;
+  }
+
+  .navbar-sidebar .menu__list .menu__list {
+    padding-left: 0.65rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-sidebar__backdrop {
+    display: none !important;
   }
 }
 
@@ -273,7 +313,15 @@ img {
   padding-top: 0.1rem !important;
   padding-bottom: 0.1rem !important;
   font-size: 0.9rem !important;
-  line-height: 1.4 !important;
+  line-height: 1.35 !important;
+  height: auto !important;
+  min-height: 1.85rem;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .theme-doc-sidebar-menu.compact .menu__link {
@@ -285,9 +333,13 @@ img {
 }
 
 .menu__list .menu__list {
-  padding-left: 1.1rem !important;
+  padding-left: 0.75rem !important;
   margin-top: 0.2rem !important;
   margin-bottom: 0.2rem !important;
+}
+
+.theme-doc-sidebar-menu .menu__list .menu__list {
+  padding-left: 0.65rem !important;
 }
 
 .menu__list-item-collapsible {
@@ -332,19 +384,22 @@ img {
   outline-offset: 2px !important;
 }
 
-.theme-doc-sidebar-menu .menu__list {
-  border-left: 1px dashed var(--ifm-color-emphasis-300) !important;
-  padding-left: 1rem !important;
+/* Один компактный шаг отступа на каждый уровень вложенности (без накопления 1+1.5+2+2.5rem) */
+.theme-doc-sidebar-menu > .menu__list {
+  padding-left: 0.35rem !important;
+  border-left: none !important;
 }
 
 .theme-doc-sidebar-menu .menu__list .menu__list {
-  border-left: 1px dotted var(--ifm-color-emphasis-300) !important;
-  padding-left: 1rem !important;
-}
-
-.theme-doc-sidebar-menu .menu__list .menu__list .menu__list {
-  border-left: 2px solid var(--ifm-color-emphasis-300) !important;
-  padding-left: 1.2rem !important;
+  margin-top: 0.15rem !important;
+  margin-bottom: 0.15rem !important;
+  padding-left: 0.65rem !important;
+  border-left: 1px dashed var(--ifm-color-emphasis-300) !important;
+  background: linear-gradient(
+    to right,
+    rgba(123, 104, 238, 0.05),
+    transparent 2px
+  );
 }
 
 /* ============================================================================
@@ -357,7 +412,7 @@ img {
   padding: 2rem !important;
   box-shadow: var(--ifm-global-shadow-md) !important;
   margin: 0 auto;
-  max-width: min(100% - 2rem, 900px);
+  max-width: 100%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -522,30 +577,6 @@ details[open] summary::before {
   border-bottom: none !important;
   background-color: rgba(123, 104, 238, 0.1) !important;
   border-radius: 6px !important;
-}
-
-/* Основной список */
-.theme-doc-sidebar-menu .menu__list {
-  background: linear-gradient(to right, rgba(123, 104, 238, 0.02), transparent 2px);
-  padding-left: 1rem !important;
-}
-
-/* Вложенный список второго уровня */
-.theme-doc-sidebar-menu .menu__list .menu__list {
-  background: linear-gradient(to right, rgba(123, 104, 238, 0.06), transparent 2px);
-  padding-left: 1.5rem !important;
-}
-
-/* Вложенный список третьего уровня */
-.theme-doc-sidebar-menu .menu__list .menu__list .menu__list {
-  background: linear-gradient(to right, rgba(123, 104, 238, 0.1), transparent 2px);
-  padding-left: 2rem !important;
-}
-
-/* Акцент на последней вложенности */
-.theme-doc-sidebar-menu .menu__list .menu__list .menu__list .menu__list {
-  background: linear-gradient(to right, rgba(123, 104, 238, 0.15), transparent 2px);
-  padding-left: 2.5rem !important;
 }
 
 /* ============================================================================
@@ -967,6 +998,20 @@ pre[class*='language-']::after {
 .row > .col {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+}
+
+/* Колонки статьи и правого оглавления */
+.docItemCol,
+.docSidebarCol {
+  min-width: 0;
+}
+
+@media (min-width: 997px) {
+  .docSidebarCol {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
 }
 
 .col--span-3, .col--span-4, .col--span-6 {

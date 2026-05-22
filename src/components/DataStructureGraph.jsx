@@ -110,8 +110,8 @@ const TYPE_OPTIONS = [
   {id: 'weighted', label: 'Взвешенный'},
 ];
 
-function GraphLogic() {
-  const [activeTab, setActiveTab] = useState('js');
+function GraphLogic({defaultLang = 'js'}) {
+  const [activeTab, setActiveTab] = useState(defaultLang);
   const [graphType, setGraphType] = useState('directed');
   const [hoverNode, setHoverNode] = useState(null);
   const [visited, setVisited] = useState([]);
@@ -264,10 +264,10 @@ function GraphLogic() {
   );
 }
 
-export default function DataStructureGraph() {
+export default function DataStructureGraph({defaultLang = 'js'}) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка графа…')}>
-      {() => <GraphLogic />}
+      {() => <GraphLogic defaultLang={defaultLang} />}
     </BrowserOnly>
   );
 }

@@ -4,8 +4,11 @@ description: Подборка материалов раздела Здравоо
 sidebar_label: Здравоохранение — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Здравоохранение — о разделе
+
+<ContextDomainPlay domain="healthcare" />
 
 <DocCardList />
 

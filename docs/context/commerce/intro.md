@@ -4,8 +4,11 @@ description: Подборка материалов раздела Торговл
 sidebar_label: Торговля — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Торговля — о разделе
+
+<ContextDomainPlay domain="commerce" />
 
 <DocCardList />
 

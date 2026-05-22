@@ -54,8 +54,8 @@ const TYPE_OPTIONS = [
   {id: 'linked', label: 'Связный список'},
 ];
 
-function LinearLogic() {
-  const [activeTab, setActiveTab] = useState('js');
+function LinearLogic({defaultLang = 'js'}) {
+  const [activeTab, setActiveTab] = useState(defaultLang);
   const [structureType, setStructureType] = useState('array');
   const [highlightIdx, setHighlightIdx] = useState(2);
   const isMobile = useIsMobile();
@@ -203,10 +203,10 @@ function LinearLogic() {
   );
 }
 
-export default function DataStructureLinear() {
+export default function DataStructureLinear({defaultLang = 'js'}) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка линейных структур…')}>
-      {() => <LinearLogic />}
+      {() => <LinearLogic defaultLang={defaultLang} />}
     </BrowserOnly>
   );
 }

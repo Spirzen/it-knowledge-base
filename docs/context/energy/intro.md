@@ -4,8 +4,11 @@ description: Подборка материалов раздела Энергет
 sidebar_label: Энергетика — о разделе
 ---
 import DocCardList from '@theme/DocCardList';
+import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Энергетика — о разделе
+
+<ContextDomainPlay domain="energy" />
 
 <DocCardList />
 

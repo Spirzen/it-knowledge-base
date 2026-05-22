@@ -49,8 +49,8 @@ string topElement = stack.Pop();
 Console.WriteLine(stack.Peek()); // "Второй слой"`,
 };
 
-function StackLogic() {
-  const [activeTab, setActiveTab] = useState('js');
+function StackLogic({defaultLang = 'js'}) {
+  const [activeTab, setActiveTab] = useState(defaultLang);
   const [stack, setStack] = useState(['Базовый уровень', 'Второй слой', 'Верхний элемент']);
   const [tempValue, setTempValue] = useState('');
   const [anim, setAnim] = useState(null);
@@ -156,10 +156,10 @@ function StackLogic() {
   );
 }
 
-export default function DataStructureStack() {
+export default function DataStructureStack({defaultLang = 'js'}) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка стека…')}>
-      {() => <StackLogic />}
+      {() => <StackLogic defaultLang={defaultLang} />}
     </BrowserOnly>
   );
 }

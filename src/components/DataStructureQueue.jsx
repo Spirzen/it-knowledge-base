@@ -32,8 +32,8 @@ string first = queue.Dequeue();
 string head = queue.Peek();`,
 };
 
-function QueueLogic() {
-  const [activeTab, setActiveTab] = useState('js');
+function QueueLogic({defaultLang = 'js'}) {
+  const [activeTab, setActiveTab] = useState(defaultLang);
   const [queue, setQueue] = useState(['Заявка #1', 'Заявка #2', 'Заявка #3']);
   const [tempValue, setTempValue] = useState('');
   const [leaving, setLeaving] = useState(false);
@@ -131,10 +131,10 @@ function QueueLogic() {
   );
 }
 
-export default function DataStructureQueue() {
+export default function DataStructureQueue({defaultLang = 'js'}) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка очереди…')}>
-      {() => <QueueLogic />}
+      {() => <QueueLogic defaultLang={defaultLang} />}
     </BrowserOnly>
   );
 }

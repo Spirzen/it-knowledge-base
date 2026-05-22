@@ -558,11 +558,18 @@ export const COLLECTION_GROUPS = [
   {id: 'other', title: 'Темы и углубление'},
 ];
 
+/** customProps для категорий подборок — не раскрывать при открытой статье */
+export const SIDEBAR_COLLECTION_CATEGORY_PROPS = {
+  sidebarCollection: true,
+};
+
 /** Пункты для sidebars.js */
 export const sidebarCollectionCategories = SIDEBAR_COLLECTIONS.map(
   ({label, items}) => ({
     type: 'category',
     label,
+    collapsed: true,
+    customProps: SIDEBAR_COLLECTION_CATEGORY_PROPS,
     items,
   }),
 );
