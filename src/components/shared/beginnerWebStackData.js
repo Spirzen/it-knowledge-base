@@ -1,4 +1,4 @@
-/** Метаданные языков для учебного хаба (преподаватели, новички, дети). */
+/** Метаданные языков для учебного хаба веб-стека. */
 
 export const WEB_STACK_LANGUAGES = [
   {
@@ -50,7 +50,7 @@ export const WEB_STACK_LANGUAGES = [
     fileExt: '.js',
     pitfalls: [
       'JavaScript ≠ Java — разные языки, не сокращайте в разговоре с работодателем.',
-      'let/const вместо устаревшего var в современных уроках.',
+      'let/const вместо устаревшего var в современном коде.',
     ],
     articlePath: '/encyclopedia/5-languages/5-01-javascript/1',
     firstProgramLang: 'javascript',

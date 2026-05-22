@@ -3,6 +3,7 @@ title: Развитие — о разделе
 description: Алгоритмы, задачи, лексика и цифровая гигиена для детей.
 sidebar_label: Развитие — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import BlockBuilder from '@site/src/components/BlockBuilder';
 

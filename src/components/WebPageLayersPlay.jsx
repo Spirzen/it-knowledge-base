@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
@@ -29,7 +29,7 @@ function escapeHtml(s) {
 }
 
 function buildDocument(name, layers) {
-  const safeName = escapeHtml(name.trim() || 'Ученик');
+  const safeName = escapeHtml(name.trim() || 'Гость');
   const htmlPart = layers.html
     ? `<h1 id="title">Привет, ${safeName}!</h1>
 <p class="lead">Это учебная страница. Нажми кнопку — если включён JavaScript, счётчик заработает.</p>
@@ -60,7 +60,7 @@ function buildDocument(name, layers) {
 }
 
 function snippetHtml(name) {
-  const n = escapeHtml(name.trim() || 'Ученик');
+  const n = escapeHtml(name.trim() || 'Гость');
   return `<h1>Привет, ${n}!</h1>\n<p>…</p>\n<button id="btn">Счёт: 0</button>`;
 }
 
@@ -76,7 +76,6 @@ export function WebPageLayersPlayInner({compact = false, embedded = false}) {
   const [name, setName] = useState('Аня');
   const [layers, setLayers] = useState({html: true, css: true, js: true});
   const [lessonIdx, setLessonIdx] = useState(2);
-  const iframeRef = useRef(null);
 
   const applyLesson = (idx) => {
     const L = LESSONS[idx];
@@ -94,25 +93,7 @@ export function WebPageLayersPlayInner({compact = false, embedded = false}) {
     setLessonIdx(-1);
   };
 
-  const doc = useMemo(() => buildDocument(name, layers), [name, layers]);
-
-  const writePreview = useCallback(() => {
-    const iframe = iframeRef.current;
-    if (!iframe) return;
-    try {
-      const d = iframe.contentDocument || iframe.contentWindow?.document;
-      if (!d) return;
-      d.open();
-      d.write(doc);
-      d.close();
-    } catch {
-      /* sandbox */
-    }
-  }, [doc]);
-
-  useEffect(() => {
-    writePreview();
-  }, [writePreview]);
+  const previewDoc = useMemo(() => buildDocument(name, layers), [name, layers]);
 
   const activeHint =
     lessonIdx >= 0 ? LESSONS[lessonIdx]?.hint : 'Включайте и выключайте слои — смотрите, что меняется в коде и в превью.';
@@ -174,10 +155,10 @@ export function WebPageLayersPlayInner({compact = false, embedded = false}) {
           </div>
           <div className={styles.previewWrap}>
             <iframe
-              ref={iframeRef}
               className={styles.previewFrame}
               title="Превью учебной страницы"
-              sandbox="allow-scripts"
+              sandbox="allow-scripts allow-same-origin"
+              srcDoc={previewDoc}
             />
           </div>
         </div>
@@ -186,7 +167,7 @@ export function WebPageLayersPlayInner({compact = false, embedded = false}) {
 
         {!compact && (
           <div className={styles.lessonBar}>
-            <span className="it-demo__label">Урок по шагам:</span>
+            <span className="it-demo__label">По порядку:</span>
             {LESSONS.map((_, i) => (
               <button
                 key={i}
@@ -213,7 +194,7 @@ export function WebPageLayersPlayInner({compact = false, embedded = false}) {
     <DemoShell className={styles.root}>
       <DemoCard
         title={compact ? 'Слои веб-страницы' : 'HTML, CSS и JavaScript — три слоя одной страницы'}
-        subtitle="Структура → оформление → поведение. Удобно показывать на уроке по шагам."
+        subtitle="Структура → оформление → поведение"
       >
         {body}
       </DemoCard>

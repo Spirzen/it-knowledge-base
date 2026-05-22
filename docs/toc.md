@@ -3,6 +3,7 @@ title: Содержание
 description: Энциклопедия - это основной раздел Вселенной IT. Он регулярно обновляется, расширяется и изменяется, поэтому рекомендую использовать боковое меню (сайд-бар) для ориентира по разделу.
 sidebar_label: Содержание
 ---
+
 import DocCardList from '@theme/DocCardList';
 
 # Содержание
@@ -2807,7 +2808,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/21">8.04. Pulumi</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/211">8.04. Аутентификация и авторизация</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/212">8.04. Webhooks</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/213">8.04. Данные Warehouse</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/213">8.04. Data Warehouse</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/214">8.04. Deb-пакеты</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/215">8.04. Инфраструктура как код (IaC)</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/216">8.04. Ansible</a></li>

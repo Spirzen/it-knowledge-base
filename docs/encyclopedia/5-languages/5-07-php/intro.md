@@ -3,6 +3,7 @@ title: PHP — о разделе
 description: Подборка материалов раздела PHP в энциклопедии Вселенная IT
 sidebar_label: PHP — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 import CodeRunPlacePlay from '@site/src/components/CodeRunPlacePlay';

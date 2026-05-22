@@ -3,6 +3,7 @@ title: 200 вопросов по системному администриров
 description: Материал 200 вопросов по системному администрированию в лаборатории энциклопедии Вселенная IT
 slug: /lab/Вопросы/1
 ---
+
 import RandomQuestionFromArticle from '@site/src/components/RandomQuestionFromArticle';
 
 
@@ -983,7 +984,7 @@ Logrotate — утилита для автоматической ротации,
     compress
     delaycompress
     notifempty
-    create 0640 www-Данные adm
+    create 0640 www-Data adm
     sharedscripts
     postrotate
         systemctl reload nginx

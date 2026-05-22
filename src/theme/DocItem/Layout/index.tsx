@@ -30,6 +30,8 @@ const ContentVisibility = require('@theme/ContentVisibility').default;
 const ArticlePdfExport = require('@site/src/components/ArticlePdfExport').default;
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const ArticleSeeAlso = require('@site/src/components/ArticleSeeAlso').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const ArticleRelated = require('@site/src/components/ArticleRelated').default;
 
 type DocItemLayoutProps = {
   children: ReactNode;
@@ -240,6 +242,7 @@ export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode
             <DocVersionBadge />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
+            <ArticleRelated />
             <ArticleSeeAlso />
             <DocItemFooter />
           </article>

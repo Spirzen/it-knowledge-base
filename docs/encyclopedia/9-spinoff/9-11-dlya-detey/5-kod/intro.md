@@ -3,6 +3,7 @@ title: Программирование — о разделе
 description: Первый код для детей — Scratch, блоки, Python и JavaScript.
 sidebar_label: Код — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import BlockBuilder from '@site/src/components/BlockBuilder';
 import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
@@ -13,8 +14,7 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 
 <div class="callout callout--tip">
   <div class="callout-title">Путеводитель по языкам</div>
-  HTML, CSS, JavaScript, Python и PHP — <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/8">веб-стек</a>.
-  Java, C#, Scratch, Kotlin, Go, C++ и Rust — <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/9">учебные языки</a>.
+  HTML, CSS, JavaScript, Python и PHP — в одном интерактивном хабе: <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/8">открыть путеводитель</a>.
 </div>
 
 <BeginnerWebStackHub audience="kids" defaultTab="overview" />

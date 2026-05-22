@@ -4,6 +4,7 @@ description: Подборка материалов раздела Философ
 slug: /philosophy/intro
 sidebar_label: Философия — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 
 ## Философия

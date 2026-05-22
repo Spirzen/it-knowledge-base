@@ -3,7 +3,7 @@ id: Данные-markup
 title: 3. Данные и разметка - о разделе
 description: Типы данных и алгоритмы, базы и SQL, конфигурации и веб-разметка — как структурируют, хранят и показывают информацию в реальных системах.
 sidebar_label: 3. Данные и разметка - о разделе
-slug: /encyclopedia/3-data-markup/Данные-markup
+slug: /encyclopedia/3-data-markup/data-markup
 ---
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>

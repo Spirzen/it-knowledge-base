@@ -336,6 +336,13 @@ import TerminalEmulator from '@site/src/components/TerminalEmulator.js';
 
 Часто консолидируют `RandomChecklistItem` или другие виджеты для раздела; см. реестр демо.
 
+### 6.5. Перекрёстные ссылки
+
+- **Opt-in в тексте:** `[[термин]]`, `[[термин|подпись]]`, `[[/path]]` — remark-плагин `src/remark/wikiLink.js`; обычный текст не трогается.
+- **Индекс:** `npm run docs:wiki-links` → `src/data/wikiLinkIndex.json` (глоссарий + уникальные title + `encyclopediaTermLinks.json`).
+- **Front matter `related:`** — блок «Связанные темы» (`ArticleRelated`), без правки абзацев.
+- Инструкция для авторов: `docs/about/wiki-links.md`.
+
 ---
 
 ## 7. `src/` — компоненты и порядок подключения

@@ -660,6 +660,7 @@ code:hover {
 
 .prism-code,
 pre[class*='language-'] {
+  position: relative;
   background-color: #282c34 !important;
   border: 5px solid #5d4eba !important;
   border-radius: 8px !important;
@@ -864,14 +865,16 @@ pre[class*='language-'] {
   color: #c586c0 !important;
 }
 
-/* Линия под блоком кода */
-pre[class*='language-']::after {
+/* Линия под блоком кода (якорь — сам pre, иначе ::after уезжает на всю ширину layout) */
+pre[class*='language-']::after,
+.prism-code[class*='language-']::after {
   content: "";
   position: absolute;
   bottom: -6px;
   left: 0;
-  right: 0;
+  width: 100%;
   height: 3px;
+  pointer-events: none;
   background: linear-gradient(90deg, 
     transparent 0%, 
     var(--ifm-color-primary) 50%, 
@@ -1409,5 +1412,23 @@ body.pdf-export-busy::before {
   a[href^='#']::after {
     content: '';
   }
+}
+
+/* Перекрёстные ссылки [[термин]] в статьях */
+.theme-doc-markdown a.wiki-link {
+  text-decoration-style: dotted;
+  text-underline-offset: 0.15em;
+}
+
+.theme-doc-markdown a.wiki-link--glossary {
+  color: #2e7d6e;
+}
+
+.theme-doc-markdown a.wiki-link--encyclopedia {
+  color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .theme-doc-markdown a.wiki-link--glossary {
+  color: #6ecfba;
 }
 

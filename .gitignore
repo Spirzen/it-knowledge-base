@@ -162,6 +162,13 @@ launch.bat
 /scripts/path-migration-map.json
 /scripts/*.mjs
 !scripts/generate-demo-registry.mjs
+!scripts/build-wiki-link-index.mjs
+!scripts/fix-mdx-import-after-frontmatter.mjs
+!scripts/enrich-basics-crosslinks.mjs
+!scripts/revert-basics-wiki-markup.mjs
+
+# Индекс перекрёстных ссылок (генерируется npm run docs:wiki-links)
+src/data/wikiLinkIndex.json
 
 # Артефакты служебных скриптов
 /scripts/_*.txt

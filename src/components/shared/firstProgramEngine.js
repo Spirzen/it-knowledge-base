@@ -199,7 +199,7 @@ export const LANG_CONFIGS = {
       '</html>',
     ],
     runCmd: 'Открыть index.html в браузере',
-    setupLogs: ['Папка на рабочем столе', 'Нужен только браузер — Node.js на первом уроке не обязателен'],
+    setupLogs: ['Папка с файлами проекта', 'Достаточно браузера — Node.js для этой программы не нужен'],
     projectLogs: ['Сохраните index.html', 'Можно открыть двойным щелчком или через Live Server в VS Code'],
     buildLogs: null,
     runLogs: (msg) => ['Браузер выполнил скрипт на странице', msg],

@@ -3,6 +3,7 @@ title: Компьютер — о разделе
 description: Подборка материалов раздела «Компьютер» для детей — железо, файлы, безопасность, сеть.
 sidebar_label: Компьютер — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import LaptopExplorerPlay from '@site/src/components/LaptopExplorerPlay';
 

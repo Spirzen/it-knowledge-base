@@ -55,7 +55,7 @@ export function SyntaxComparePlayInner({compact = false, embedded = false}) {
     <DemoShell className={styles.root}>
       <DemoCard
         title={compact ? 'Синтаксис: JS / Python / PHP' : 'Одна идея — три синтаксиса'}
-        subtitle="Сравнение для урока: ученики видят, что логика общая, а запись разная"
+        subtitle="Одна и та же логика — разный синтаксис"
       >
         {body}
       </DemoCard>

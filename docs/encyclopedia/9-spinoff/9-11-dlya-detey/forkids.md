@@ -5,6 +5,7 @@ description: Путь для детей 8–16 лет — от компьюте�
 sidebar_label: Для детей — о разделе
 slug: /encyclopedia/Спин-офф/9.11. Для детей/forkids
 ---
+
 import DocCardList from '@theme/DocCardList';
 import ComputerArchitecturePlay from '@site/src/components/ComputerArchitecturePlay';
 

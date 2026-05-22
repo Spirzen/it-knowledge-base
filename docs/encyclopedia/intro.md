@@ -4,6 +4,7 @@ description: Подборка материалов раздела Энцикло
 slug: /encyclopedia/intro
 sidebar_label: Энциклопедия — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 
 ## Энциклопедия

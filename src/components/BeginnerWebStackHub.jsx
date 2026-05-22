@@ -79,8 +79,8 @@ function OverviewPanel({audience}) {
     <>
       <p className={styles.overviewIntro}>
         {audience === 'kids'
-          ? 'Веб-сайт — как слоёный пирог: сначала каркас (HTML), потом краска (CSS), потом «оживление» кнопок (JavaScript). Python и PHP обычно работают на сервере — ученик их не видит, только результат.'
-          : 'Для курса новичкам удобна последовательность: разметка → стили → клиентский JS → затем серверный Python или PHP. Ниже — сравнение и интерактивы для показа на проекторе.'}
+          ? 'Веб-сайт — как слоёный пирог: сначала каркас (HTML), потом краска (CSS), потом «оживление» кнопок (JavaScript). Python и PHP обычно работают на сервере — в браузер попадает только результат.'
+          : 'Последовательность изучения: разметка → стили → клиентский JS → серверный Python или PHP.'}
       </p>
 
       <div className={styles.path} aria-label="Рекомендуемый порядок">
@@ -99,7 +99,7 @@ function OverviewPanel({audience}) {
           <tr>
             <th>Язык</th>
             <th>Где выполняется</th>
-            <th>Ученик видит код?</th>
+            <th>Исходник в браузере</th>
           </tr>
         </thead>
         <tbody>
@@ -146,11 +146,7 @@ function BeginnerWebStackHubInner({
     <DemoShell>
       <DemoCard
         title="Языки для начинающих: HTML, CSS, JS, Python, PHP"
-        subtitle={
-          audience === 'kids'
-            ? 'Интерактивный путеводитель — можно проходить на уроке вместе'
-            : 'Сравнение ролей, типичных ошибок и демо для преподавателя'
-        }
+        subtitle="Роли языков, типичные ошибки и связанные демонстрации"
       >
         <div className={styles.tabs} role="tablist" aria-label="Языки">
           {TABS.map((t) => (
@@ -173,10 +169,6 @@ function BeginnerWebStackHubInner({
           <LanguagePanel lang={lang} showFirstProgram={showFirstProgram} />
         ) : null}
 
-        <p className={styles.hint}>
-          Совет преподавателю: на первом занятии покажите только вкладку «Обзор» и демо слоёв; на втором —
-          отдельный язык и «Первая программа» в статье раздела.
-        </p>
       </DemoCard>
     </DemoShell>
   );

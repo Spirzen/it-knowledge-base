@@ -3,6 +3,7 @@ title: HTML — о разделе
 description: Подборка материалов раздела HTML в энциклопедии Вселенная IT
 sidebar_label: HTML — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 import WebPageLayersPlay from '@site/src/components/WebPageLayersPlay';

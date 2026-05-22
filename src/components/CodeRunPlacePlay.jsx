@@ -157,7 +157,7 @@ export function CodeRunPlacePlayInner({embedded = false}) {
             aria-current={browserOn ? 'step' : undefined}
           >
             <div className={styles.zoneHead}>
-              <span aria-hidden>🌐</span> Браузер ученика
+              <span aria-hidden>🌐</span> Браузер
             </div>
             <ul className={styles.zoneList}>
               <li>HTML, CSS</li>
@@ -239,7 +239,7 @@ export function CodeRunPlacePlayInner({embedded = false}) {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Где выполняется код"
-        subtitle="Браузер vs сервер — наглядно для уроков по HTML, JS, PHP и Python"
+        subtitle="Браузер и сервер: HTML, JavaScript, PHP и Python"
       >
         {body}
       </DemoCard>

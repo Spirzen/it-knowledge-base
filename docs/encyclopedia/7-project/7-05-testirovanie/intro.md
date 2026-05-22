@@ -3,6 +3,7 @@ title: Тестирование программного обеспечения 
 description: Подборка материалов раздела Тестирование программного обеспечения в энциклопедии Вселенная IT
 sidebar_label: Тестирование программного обеспечения — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 

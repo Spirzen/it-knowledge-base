@@ -102,6 +102,7 @@ module.exports = {
           showLastUpdateTime: true,
           routeBasePath: '/',
           numberPrefixParser: false,
+          remarkPlugins: [require('./src/remark/wikiLink.js')],
         },
         blog: false,
         theme: {
@@ -116,7 +117,28 @@ module.exports = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        createRedirects: createEncyclopediaFolderRedirects,
+        createRedirects(existingPath) {
+          const fromEncyclopedia = createEncyclopediaFolderRedirects(existingPath);
+          const slugRedirects = {
+            '/tools/testing/1': ['/tools/Тестирование/1'],
+            '/tools/testing/2': ['/tools/Тестирование/2'],
+            '/tools/testing/3': ['/tools/Тестирование/3'],
+            '/tools/data/1': ['/tools/Данные/1'],
+            '/tools/data/2': ['/tools/Данные/2'],
+            '/tools/data/3': ['/tools/Данные/3'],
+            '/tools/data/4': ['/tools/Данные/4'],
+            '/tools/data/5': ['/tools/Данные/5'],
+            '/tools/data/6': ['/tools/Данные/6'],
+            '/encyclopedia/3-data-markup/data-markup': [
+              '/encyclopedia/3-data-markup/Данные-markup',
+            ],
+            '/section/data-markup': ['/section/Данные-markup'],
+          };
+          if (slugRedirects[existingPath]) {
+            return slugRedirects[existingPath];
+          }
+          return fromEncyclopedia;
+        },
       },
     ],
     () => ({

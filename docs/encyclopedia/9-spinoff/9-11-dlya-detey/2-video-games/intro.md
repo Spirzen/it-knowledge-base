@@ -3,6 +3,7 @@ title: Видеоигры и компьютерные игры — о разде
 description: Подборка про игры для детей — жанры, платформы, разработка, с мини-демо.
 sidebar_label: Видеоигры — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import GamepadPlay from '@site/src/components/GamepadPlay';
 

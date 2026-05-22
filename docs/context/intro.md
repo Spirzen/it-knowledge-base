@@ -4,6 +4,7 @@ description: Подборка материалов раздела Контекс
 slug: /context/intro
 sidebar_label: Контекст — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import ContextDomainsHub from '@site/src/components/context/ContextDomainsHub';
 

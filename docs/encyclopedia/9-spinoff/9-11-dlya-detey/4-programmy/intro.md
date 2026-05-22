@@ -3,6 +3,7 @@ title: Программы — о разделе
 description: Офисные и повседневные программы для детей — текст, таблицы, браузер, графика.
 sidebar_label: Программы — о разделе
 ---
+
 import DocCardList from '@theme/DocCardList';
 import DesktopWindowPlay from '@site/src/components/DesktopWindowPlay';
 
