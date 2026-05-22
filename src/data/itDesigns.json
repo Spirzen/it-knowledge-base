@@ -1,0 +1,127 @@
+[
+  {
+    "id": "design-universe-original",
+    "name": "Оригинал (Вселенная IT)",
+    "mode": "light"
+  },
+  {
+    "id": "design-cosmic-void",
+    "name": "Космическая пустота",
+    "mode": "dark"
+  },
+  {
+    "id": "design-solar-flare",
+    "name": "Солнечная вспышка",
+    "mode": "light"
+  },
+  {
+    "id": "design-arctic-frost",
+    "name": "Арктический мороз",
+    "mode": "light"
+  },
+  {
+    "id": "design-forest-terminal",
+    "name": "Лесной терминал",
+    "mode": "dark"
+  },
+  {
+    "id": "design-crimson-night",
+    "name": "Багровая ночь",
+    "mode": "dark"
+  },
+  {
+    "id": "design-neon-tokyo",
+    "name": "Неон Токио",
+    "mode": "dark"
+  },
+  {
+    "id": "design-paper-vintage",
+    "name": "Бумажный архив",
+    "mode": "light"
+  },
+  {
+    "id": "design-brutalist-swiss",
+    "name": "Брутализм Swiss",
+    "mode": "light"
+  },
+  {
+    "id": "design-glass-aurora",
+    "name": "Стекло и северное сияние",
+    "mode": "dark"
+  },
+  {
+    "id": "design-phosphor-green",
+    "name": "Фосфорный CRT",
+    "mode": "dark"
+  },
+  {
+    "id": "design-ocean-abyss",
+    "name": "Океанская бездна",
+    "mode": "dark"
+  },
+  {
+    "id": "design-sunset-warm",
+    "name": "Тёплый закат",
+    "mode": "light"
+  },
+  {
+    "id": "design-lavender-haze",
+    "name": "Лавандовая дымка",
+    "mode": "light"
+  },
+  {
+    "id": "design-carbon-github",
+    "name": "Carbon (dev)",
+    "mode": "dark"
+  },
+  {
+    "id": "design-gilded-scroll",
+    "name": "Золотой свиток",
+    "mode": "light"
+  },
+  {
+    "id": "design-cyber-grid",
+    "name": "Кибер-сетка",
+    "mode": "dark"
+  },
+  {
+    "id": "design-nordic-fjord",
+    "name": "Nordic Fjord",
+    "mode": "light"
+  },
+  {
+    "id": "design-sakura-spring",
+    "name": "Сакура",
+    "mode": "light"
+  },
+  {
+    "id": "design-mint-cool",
+    "name": "Мятная свежесть",
+    "mode": "light"
+  },
+  {
+    "id": "design-volcano-ember",
+    "name": "Вулканическое пламя",
+    "mode": "dark"
+  },
+  {
+    "id": "design-holo-prism",
+    "name": "Голографическая призма",
+    "mode": "dark"
+  },
+  {
+    "id": "design-blueprint-tech",
+    "name": "Технический чертёж",
+    "mode": "light"
+  },
+  {
+    "id": "design-matrix-code",
+    "name": "Матрица",
+    "mode": "dark"
+  },
+  {
+    "id": "design-ink-monochrome",
+    "name": "Монохромные чернила",
+    "mode": "light"
+  }
+]

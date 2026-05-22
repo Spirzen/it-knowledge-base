@@ -1,0 +1,103 @@
+/* Per-design accents (from it-universe-designs/effects.css, Docusaurus selectors) */
+
+html[data-design='design-cosmic-void'] .hero::before,
+html[data-design='design-neon-tokyo'] .hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  background-image:
+    radial-gradient(1px 1px at 20% 30%, #fff, transparent),
+    radial-gradient(1px 1px at 60% 70%, #fff, transparent),
+    radial-gradient(1px 1px at 80% 10%, #fff, transparent);
+  background-size: 200px 200px;
+}
+
+html[data-design='design-neon-tokyo'] .button--primary,
+html[data-design='design-neon-tokyo'] .feature-card--wide {
+  box-shadow: 0 0 20px color-mix(in srgb, var(--d-primary) 50%, transparent);
+}
+
+html[data-design='design-brutalist-swiss'] .hero-card,
+html[data-design='design-brutalist-swiss'] .feature-card,
+html[data-design='design-brutalist-swiss'] .button {
+  border-width: 3px;
+  border-radius: 0;
+  box-shadow: 6px 6px 0 var(--d-text);
+}
+
+html[data-design='design-brutalist-swiss'] .button--primary {
+  background: var(--d-accent2);
+  border-color: var(--d-text);
+  color: #fff;
+}
+
+html[data-design='design-glass-aurora'] .hero-card,
+html[data-design='design-glass-aurora'] .feature-card,
+html[data-design='design-glass-aurora'] .apk-strip {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+html[data-design='design-phosphor-green'] body,
+html[data-design='design-matrix-code'] body {
+  text-shadow: 0 0 8px color-mix(in srgb, var(--d-primary) 35%, transparent);
+}
+
+html[data-design='design-phosphor-green'] .hero::after,
+html[data-design='design-matrix-code'] .hero::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.04;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.3) 2px,
+    rgba(0, 0, 0, 0.3) 4px
+  );
+}
+
+html[data-design='design-cyber-grid'] .hero,
+html[data-design='design-blueprint-tech'] .hero {
+  background-size: var(--grid-size, 24px) var(--grid-size, 24px);
+}
+
+html[data-design='design-holo-prism'] .hero__title {
+  background: linear-gradient(90deg, var(--d-primary), var(--d-accent2), var(--d-primary));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: it-holo-shift 4s linear infinite;
+}
+
+@keyframes it-holo-shift {
+  to {
+    background-position: 200% center;
+  }
+}
+
+html[data-design='design-gilded-scroll'] .hero-card {
+  border: 2px solid var(--d-primary);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--d-primary) 30%, transparent);
+}
+
+html[data-design='design-paper-vintage'] .hero-card {
+  box-shadow: 2px 3px 12px rgba(62, 50, 38, 0.15);
+}
+
+html[data-design='design-ink-monochrome'] .feature-card--wide {
+  background: var(--d-text) !important;
+  color: var(--d-bg);
+}
+
+html[data-design='design-ink-monochrome'] .button--primary {
+  background: var(--d-text);
+  border-color: var(--d-text);
+}

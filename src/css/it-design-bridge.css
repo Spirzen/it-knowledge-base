@@ -1,0 +1,97 @@
+/**
+ * Maps IT Universe design tokens (--d-*) to Infima / Docusaurus (--ifm-*).
+ * Source palettes: it-universe-designs (25 themes).
+ */
+
+/* Non-original designs: full palette from data-design tokens */
+html[data-design]:not([data-design='design-universe-original']) {
+  --ifm-color-primary: var(--d-primary);
+  --ifm-color-primary-dark: var(--d-primary-dark);
+  --ifm-color-primary-darker: var(--d-primary-dark);
+  --ifm-color-primary-darkest: var(--d-primary-dark);
+  --ifm-color-primary-light: var(--d-accent2);
+  --ifm-color-primary-lighter: var(--d-accent2);
+  --ifm-color-primary-lightest: var(--d-accent2);
+
+  --ifm-background-color: var(--d-bg);
+  --ifm-background-surface-color: var(--d-surface);
+  --ifm-color-content: var(--d-text);
+  --ifm-color-content-secondary: var(--d-text-muted);
+
+  --ifm-navbar-background-color: var(--d-nav);
+  --ifm-navbar-link-color: var(--d-text);
+  --ifm-navbar-link-hover-color: var(--d-primary);
+
+  --ifm-sidebar-background-color: var(--d-surface);
+  --ifm-menu-color: var(--d-text);
+  --ifm-menu-color-active: var(--d-primary);
+  --ifm-menu-color-background-active: color-mix(in srgb, var(--d-primary) 18%, transparent);
+
+  --ifm-footer-background-color: var(--d-footer);
+  --ifm-footer-color: var(--d-footer-text);
+  --ifm-footer-link-color: var(--d-footer-link);
+  --ifm-footer-link-hover-color: var(--d-accent2);
+
+  --ifm-link-color: var(--d-primary);
+  --ifm-link-hover-color: var(--d-primary-dark);
+  --ifm-button-background-color: var(--d-primary);
+  --ifm-button-color: #ffffff;
+
+  --ifm-card-background-color: var(--d-surface);
+  --ifm-card-border-radius: var(--d-radius);
+  --ifm-global-radius: var(--d-radius);
+
+  --ifm-global-shadow-lw: var(--d-shadow-sm);
+  --ifm-global-shadow-md: var(--d-shadow);
+
+  --ifm-code-background: var(--d-code-bg);
+  --ifm-code-color: var(--d-code-fg);
+  --docusaurus-highlighted-code-line-bg: color-mix(in srgb, var(--d-primary) 22%, transparent);
+
+  --ifm-hr-background-color: var(--d-border);
+  --ifm-toc-border-color: var(--d-border);
+  --ifm-color-emphasis-200: var(--d-border);
+  --ifm-color-emphasis-300: var(--d-border);
+
+  font-family: var(--d-font);
+}
+
+html[data-design]:not([data-design='design-universe-original']) .main-wrapper,
+html[data-design]:not([data-design='design-universe-original']) body {
+  background-color: var(--d-bg);
+  color: var(--d-text);
+}
+
+html[data-design]:not([data-design='design-universe-original']) .hero.heroBanner,
+html[data-design]:not([data-design='design-universe-original']) header.hero {
+  background: var(--d-hero-bg) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .feature-card--wide {
+  background: var(--d-wide-gradient) !important;
+}
+
+/* Original (light): align with design tokens while keeping dark mode in custom.css */
+html[data-design='design-universe-original']:not([data-theme='dark']) {
+  --ifm-color-primary: var(--d-primary);
+  --ifm-color-primary-dark: var(--d-primary-dark);
+  --ifm-color-primary-darker: var(--d-primary-dark);
+  --ifm-color-primary-darkest: var(--d-primary-dark);
+  --ifm-color-primary-light: var(--d-accent2);
+  --ifm-color-primary-lighter: var(--d-accent2);
+  --ifm-color-primary-lightest: var(--d-accent2);
+  --ifm-background-color: var(--d-bg);
+  --ifm-background-surface-color: var(--d-surface);
+  --ifm-color-content: var(--d-text);
+  --ifm-color-content-secondary: var(--d-text-muted);
+  --ifm-navbar-background-color: var(--d-nav);
+  --ifm-footer-background-color: var(--d-footer);
+  --ifm-footer-color: var(--d-footer-text);
+  --ifm-footer-link-color: var(--d-footer-link);
+  --ifm-card-border-radius: var(--d-radius);
+}
+
+html[data-design='design-universe-original']:not([data-theme='dark']) .hero.heroBanner,
+html[data-design='design-universe-original']:not([data-theme='dark']) header.hero {
+  background: var(--d-hero-bg) !important;
+}

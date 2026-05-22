@@ -80,6 +80,10 @@ module.exports = {
 
   onBrokenLinks: 'warn',
 
+  clientModules: [
+    require.resolve('./src/clientModules/itDesignThemeInit.js'),
+  ],
+
   i18n: {
     defaultLocale: 'ru',
     locales: ['ru'],
@@ -141,6 +145,19 @@ module.exports = {
         },
       },
     ],
+    () => ({
+      name: 'it-design-theme-inject',
+      injectHtmlTags() {
+        return {
+          headTags: [
+            {
+              tagName: 'script',
+              innerHTML: `(function(){try{var k='it-universe-design';var id=localStorage.getItem(k)||'design-universe-original';document.documentElement.setAttribute('data-design',id);}catch(e){document.documentElement.setAttribute('data-design','design-universe-original');}})();`,
+            },
+          ],
+        };
+      },
+    }),
     () => ({
       name: 'demo-chunk-splitting',
       configureWebpack(_config, isServer) {

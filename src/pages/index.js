@@ -17,7 +17,7 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <div className={styles.heroCard}>
+        <div className={clsx('hero-card', styles.heroCard)}>
           <Heading as="h1" className={clsx('hero__title', styles.heroLogoTitle)}>
             <UniverseLogo />
           </Heading>
@@ -37,7 +37,7 @@ function HomepageHeader() {
                 <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> Манифест и Правила
               </Link>
             </div>
-            <div className={styles.apkStrip}>
+            <div className={clsx('apk-strip', styles.apkStrip)}>
               <a
                 className={styles.apkButton}
                 href={apkUrl}
@@ -116,7 +116,9 @@ function HomepageFeatures() {
               <div
                 key={idx}
                 className={clsx(
+                  'feature-card',
                   styles['feature-card'],
+                  feature.isWide && 'feature-card--wide',
                   feature.isWide && styles['feature-card--wide']
                 )}
               >

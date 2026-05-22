@@ -1,0 +1,675 @@
+/* AUTO-GENERATED — 25 IT Universe design themes. Do not edit by hand; run: node scripts/generate-themes.js */
+
+/* design-universe-original — Оригинал (Вселенная IT) */
+html[data-design="design-universe-original"] {
+  color-scheme: light;
+  --d-primary: #7B68EE;
+  --d-primary-dark: #6A5ACD;
+  --d-accent2: #9370DB;
+  --d-bg: #FFFFFF;
+  --d-surface: #FAFAFA;
+  --d-text: #2C3E50;
+  --d-text-muted: #5A6C7D;
+  --d-nav: #FFFFFF;
+  --d-footer: #2C3E50;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(180deg, #f8f7ff 0%, #ffffff 60%);
+  --d-radius: 12px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #2C3E50;
+  --d-wide-gradient: linear-gradient(135deg, #7B68EE 0%, #6A5ACD 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --card-shadow: 0 4px 16px rgba(123,104,238,0.15);
+}
+
+
+/* design-cosmic-void — Космическая пустота */
+html[data-design="design-cosmic-void"] {
+  color-scheme: dark;
+  --d-primary: #8B7CF6;
+  --d-primary-dark: #6D5CE8;
+  --d-accent2: #C4B5FD;
+  --d-bg: #0B0D14;
+  --d-surface: #141824;
+  --d-text: #E8EAFF;
+  --d-text-muted: #9AA3C7;
+  --d-nav: #0F1119;
+  --d-footer: #06070C;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: radial-gradient(ellipse at 50% 0%, #1a1540 0%, #0B0D14 55%);
+  --d-radius: 14px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #E8EAFF;
+  --d-wide-gradient: linear-gradient(135deg, #8B7CF6 0%, #6D5CE8 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --stars: 1;
+}
+
+
+/* design-solar-flare — Солнечная вспышка */
+html[data-design="design-solar-flare"] {
+  color-scheme: light;
+  --d-primary: #E85D04;
+  --d-primary-dark: #DC2F02;
+  --d-accent2: #F48C06;
+  --d-bg: #FFFBF5;
+  --d-surface: #FFF4E6;
+  --d-text: #3D2314;
+  --d-text-muted: #8B5E3C;
+  --d-nav: #FFF8ED;
+  --d-footer: #5C2E0A;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(135deg, #fff0d6 0%, #ffe4b5 50%, #fffbF5 100%);
+  --d-radius: 10px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #3D2314;
+  --d-wide-gradient: linear-gradient(135deg, #E85D04 0%, #DC2F02 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  
+}
+
+
+/* design-arctic-frost — Арктический мороз */
+html[data-design="design-arctic-frost"] {
+  color-scheme: light;
+  --d-primary: #0077B6;
+  --d-primary-dark: #023E8A;
+  --d-accent2: #00B4D8;
+  --d-bg: #F8FDFF;
+  --d-surface: #E8F4F8;
+  --d-text: #0A2540;
+  --d-text-muted: #4A6B82;
+  --d-nav: #FFFFFF;
+  --d-footer: #023E8A;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(180deg, #caf0f8 0%, #f8fdff 70%);
+  --d-radius: 8px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #0A2540;
+  --d-wide-gradient: linear-gradient(135deg, #0077B6 0%, #023E8A 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  
+}
+
+
+/* design-forest-terminal — Лесной терминал */
+html[data-design="design-forest-terminal"] {
+  color-scheme: dark;
+  --d-primary: #52B788;
+  --d-primary-dark: #40916C;
+  --d-accent2: #74C69D;
+  --d-bg: #0D1B12;
+  --d-surface: #1B2E22;
+  --d-text: #D8F3DC;
+  --d-text-muted: #95D5B2;
+  --d-nav: #142018;
+  --d-footer: #08140E;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(180deg, #1b4332 0%, #0D1B12 60%);
+  --d-radius: 6px;
+  --d-font: 'Consolas', 'Segoe UI', monospace;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #D8F3DC;
+  --d-wide-gradient: linear-gradient(135deg, #52B788 0%, #40916C 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --mono-accent: 1;
+}
+
+
+/* design-crimson-night — Багровая ночь */
+html[data-design="design-crimson-night"] {
+  color-scheme: dark;
+  --d-primary: #E63946;
+  --d-primary-dark: #C1121F;
+  --d-accent2: #FF6B6B;
+  --d-bg: #1A0A0C;
+  --d-surface: #2A1218;
+  --d-text: #FFE8EC;
+  --d-text-muted: #C9A0A8;
+  --d-nav: #220E12;
+  --d-footer: #0F0507;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(160deg, #4a0e14 0%, #1A0A0C 55%);
+  --d-radius: 12px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #FFE8EC;
+  --d-wide-gradient: linear-gradient(135deg, #E63946 0%, #C1121F 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  
+}
+
+
+/* design-neon-tokyo — Неон Токио */
+html[data-design="design-neon-tokyo"] {
+  color-scheme: dark;
+  --d-primary: #FF2E97;
+  --d-primary-dark: #E6007A;
+  --d-accent2: #00F5FF;
+  --d-bg: #0A0A12;
+  --d-surface: #14141F;
+  --d-text: #F0F0FF;
+  --d-text-muted: #A0A8C8;
+  --d-nav: #101018;
+  --d-footer: #050508;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(135deg, #1a0030 0%, #0a0a12 50%), linear-gradient(90deg, rgba(0,245,255,0.08) 0%, rgba(255,46,151,0.08) 100%);
+  --d-radius: 4px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #F0F0FF;
+  --d-wide-gradient: linear-gradient(135deg, #FF2E97 0%, #E6007A 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --neon-glow: 1;
+}
+
+
+/* design-paper-vintage — Бумажный архив */
+html[data-design="design-paper-vintage"] {
+  color-scheme: light;
+  --d-primary: #8B4513;
+  --d-primary-dark: #6B3410;
+  --d-accent2: #A0522D;
+  --d-bg: #F5F0E6;
+  --d-surface: #EDE6D6;
+  --d-text: #3E3226;
+  --d-text-muted: #6B5B4F;
+  --d-nav: #F0E9DC;
+  --d-footer: #4A3728;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: repeating-linear-gradient(0deg, transparent, transparent 28px, rgba(139,69,19,0.04) 28px, rgba(139,69,19,0.04) 29px), #F5F0E6;
+  --d-radius: 2px;
+  --d-font: 'Georgia', 'Times New Roman', serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #3E3226;
+  --d-wide-gradient: linear-gradient(135deg, #8B4513 0%, #6B3410 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --serif: 1;
+}
+
+
+/* design-brutalist-swiss — Брутализм Swiss */
+html[data-design="design-brutalist-swiss"] {
+  color-scheme: light;
+  --d-primary: #000000;
+  --d-primary-dark: #000000;
+  --d-accent2: #FF0000;
+  --d-bg: #FFFFFF;
+  --d-surface: #F0F0F0;
+  --d-text: #000000;
+  --d-text-muted: #444444;
+  --d-nav: #FFFFFF;
+  --d-footer: #000000;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: #FFFFFF;
+  --d-radius: 0px;
+  --d-font: 'Helvetica Neue', Arial, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #000000;
+  --d-wide-gradient: linear-gradient(135deg, #000000 0%, #000000 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --brutal: 1;
+}
+
+
+/* design-glass-aurora — Стекло и северное сияние */
+html[data-design="design-glass-aurora"] {
+  color-scheme: dark;
+  --d-primary: #7DD3FC;
+  --d-primary-dark: #38BDF8;
+  --d-accent2: #A78BFA;
+  --d-bg: #0F172A;
+  --d-surface: rgba(30, 41, 59, 0.65);
+  --d-text: #F1F5F9;
+  --d-text-muted: #94A3B8;
+  --d-nav: rgba(15, 23, 42, 0.75);
+  --d-footer: #020617;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(135deg, #064e3b 0%, #1e1b4b 35%, #0f172a 70%);
+  --d-radius: 20px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #F1F5F9;
+  --d-wide-gradient: linear-gradient(135deg, #7DD3FC 0%, #38BDF8 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --glass: 1;
+}
+
+
+/* design-phosphor-green — Фосфорный CRT */
+html[data-design="design-phosphor-green"] {
+  color-scheme: dark;
+  --d-primary: #33FF33;
+  --d-primary-dark: #22CC22;
+  --d-accent2: #66FF66;
+  --d-bg: #0A0F0A;
+  --d-surface: #0F180F;
+  --d-text: #33FF33;
+  --d-text-muted: #1F9920;
+  --d-nav: #0C120C;
+  --d-footer: #050805;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: #0A0F0A;
+  --d-radius: 0px;
+  --d-font: 'Courier New', Consolas, monospace;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #33FF33;
+  --d-wide-gradient: linear-gradient(135deg, #33FF33 0%, #22CC22 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --scanlines: 1;
+}
+
+
+/* design-ocean-abyss — Океанская бездна */
+html[data-design="design-ocean-abyss"] {
+  color-scheme: dark;
+  --d-primary: #20B2AA;
+  --d-primary-dark: #008B8B;
+  --d-accent2: #4DD0E1;
+  --d-bg: #031820;
+  --d-surface: #0A2830;
+  --d-text: #E0F7FA;
+  --d-text-muted: #80CBC4;
+  --d-nav: #052228;
+  --d-footer: #010C10;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(180deg, #004d5c 0%, #031820 65%);
+  --d-radius: 16px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #E0F7FA;
+  --d-wide-gradient: linear-gradient(135deg, #20B2AA 0%, #008B8B 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  
+}
+
+
+/* design-sunset-warm — Тёплый закат */
+html[data-design="design-sunset-warm"] {
+  color-scheme: light;
+  --d-primary: #FF6B6B;
+  --d-primary-dark: #EE5A5A;
+  --d-accent2: #FFB347;
+  --d-bg: #FFF5F0;
+  --d-surface: #FFE8E0;
+  --d-text: #4A2C2A;
+  --d-text-muted: #8B6B68;
+  --d-nav: #FFFAF8;
+  --d-footer: #6B3A35;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(135deg, #ffecd2 0%, #fcb69f 40%, #fff5f0 100%);
+  --d-radius: 18px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #4A2C2A;
+  --d-wide-gradient: linear-gradient(135deg, #FF6B6B 0%, #EE5A5A 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  
+}
+
+
+/* design-lavender-haze — Лавандовая дымка */
+html[data-design="design-lavender-haze"] {
+  color-scheme: light;
+  --d-primary: #B794F6;
+  --d-primary-dark: #9F7AEA;
+  --d-accent2: #D6BCFA;
+  --d-bg: #FAF8FF;
+  --d-surface: #F3EEFF;
+  --d-text: #44337A;
+  --d-text-muted: #7C6A9A;
+  --d-nav: #FFFFFF;
+  --d-footer: #553C9A;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(180deg, #ede9fe 0%, #faf8ff 70%);
+  --d-radius: 24px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #44337A;
+  --d-wide-gradient: linear-gradient(135deg, #B794F6 0%, #9F7AEA 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  
+}
+
+
+/* design-carbon-github — Carbon (dev) */
+html[data-design="design-carbon-github"] {
+  color-scheme: dark;
+  --d-primary: #58A6FF;
+  --d-primary-dark: #388BFD;
+  --d-accent2: #3FB950;
+  --d-bg: #0D1117;
+  --d-surface: #161B22;
+  --d-text: #C9D1D9;
+  --d-text-muted: #8B949E;
+  --d-nav: #010409;
+  --d-footer: #010409;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(180deg, #161B22 0%, #0D1117 100%);
+  --d-radius: 6px;
+  --d-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #C9D1D9;
+  --d-wide-gradient: linear-gradient(135deg, #58A6FF 0%, #388BFD 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  
+}
+
+
+/* design-gilded-scroll — Золотой свиток */
+html[data-design="design-gilded-scroll"] {
+  color-scheme: light;
+  --d-primary: #C9A227;
+  --d-primary-dark: #A67C00;
+  --d-accent2: #D4AF37;
+  --d-bg: #FFFDF7;
+  --d-surface: #FBF6E8;
+  --d-text: #2C2416;
+  --d-text-muted: #6B5D45;
+  --d-nav: #FFF9ED;
+  --d-footer: #3D3218;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(135deg, #f5e6c8 0%, #fffdf7 60%);
+  --d-radius: 8px;
+  --d-font: 'Palatino Linotype', 'Book Antiqua', serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #2C2416;
+  --d-wide-gradient: linear-gradient(135deg, #C9A227 0%, #A67C00 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --gold-border: 1;
+}
+
+
+/* design-cyber-grid — Кибер-сетка */
+html[data-design="design-cyber-grid"] {
+  color-scheme: dark;
+  --d-primary: #FCEE0A;
+  --d-primary-dark: #E6D800;
+  --d-accent2: #FF2A6D;
+  --d-bg: #0D0221;
+  --d-surface: #150734;
+  --d-text: #E0E0FF;
+  --d-text-muted: #9D8EC7;
+  --d-nav: #10052A;
+  --d-footer: #050110;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(90deg, rgba(252,238,10,0.05) 1px, transparent 1px), linear-gradient(rgba(252,238,10,0.05) 1px, transparent 1px), #0D0221;
+  --d-radius: 0px;
+  --d-font: 'Orbitron', 'Segoe UI', sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #E0E0FF;
+  --d-wide-gradient: linear-gradient(135deg, #FCEE0A 0%, #E6D800 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --grid-size: 24px; --cyber-grid: 1;
+}
+
+
+/* design-nordic-fjord — Nordic Fjord */
+html[data-design="design-nordic-fjord"] {
+  color-scheme: light;
+  --d-primary: #5E81AC;
+  --d-primary-dark: #4C6A8A;
+  --d-accent2: #88C0D0;
+  --d-bg: #ECEFF4;
+  --d-surface: #E5E9F0;
+  --d-text: #2E3440;
+  --d-text-muted: #4C566A;
+  --d-nav: #ECEFF4;
+  --d-footer: #3B4252;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(180deg, #d8dee9 0%, #eceff4 100%);
+  --d-radius: 10px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #2E3440;
+  --d-wide-gradient: linear-gradient(135deg, #5E81AC 0%, #4C6A8A 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  
+}
+
+
+/* design-sakura-spring — Сакура */
+html[data-design="design-sakura-spring"] {
+  color-scheme: light;
+  --d-primary: #E91E8C;
+  --d-primary-dark: #C2185B;
+  --d-accent2: #FFB7D5;
+  --d-bg: #FFF8FA;
+  --d-surface: #FFE4EC;
+  --d-text: #4A1942;
+  --d-text-muted: #8E5A7E;
+  --d-nav: #FFFFFF;
+  --d-footer: #6D1B4B;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: radial-gradient(circle at 80% 20%, rgba(255,183,213,0.4) 0%, transparent 50%), #FFF8FA;
+  --d-radius: 20px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #4A1942;
+  --d-wide-gradient: linear-gradient(135deg, #E91E8C 0%, #C2185B 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  
+}
+
+
+/* design-mint-cool — Мятная свежесть */
+html[data-design="design-mint-cool"] {
+  color-scheme: light;
+  --d-primary: #10B981;
+  --d-primary-dark: #059669;
+  --d-accent2: #34D399;
+  --d-bg: #F0FDF9;
+  --d-surface: #D1FAE5;
+  --d-text: #064E3B;
+  --d-text-muted: #047857;
+  --d-nav: #FFFFFF;
+  --d-footer: #065F46;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(180deg, #a7f3d0 0%, #f0fdf9 70%);
+  --d-radius: 14px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #064E3B;
+  --d-wide-gradient: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  
+}
+
+
+/* design-volcano-ember — Вулканическое пламя */
+html[data-design="design-volcano-ember"] {
+  color-scheme: dark;
+  --d-primary: #FF4500;
+  --d-primary-dark: #CC3700;
+  --d-accent2: #FF8C00;
+  --d-bg: #1A0F0A;
+  --d-surface: #2A1810;
+  --d-text: #FFE4D6;
+  --d-text-muted: #C9A090;
+  --d-nav: #221510;
+  --d-footer: #0D0805;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(180deg, #4a1a08 0%, #1A0F0A 55%);
+  --d-radius: 10px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #FFE4D6;
+  --d-wide-gradient: linear-gradient(135deg, #FF4500 0%, #CC3700 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  
+}
+
+
+/* design-holo-prism — Голографическая призма */
+html[data-design="design-holo-prism"] {
+  color-scheme: dark;
+  --d-primary: #A855F7;
+  --d-primary-dark: #9333EA;
+  --d-accent2: #22D3EE;
+  --d-bg: #12121A;
+  --d-surface: #1E1E2E;
+  --d-text: #F5F3FF;
+  --d-text-muted: #A8A8C8;
+  --d-nav: #181824;
+  --d-footer: #0A0A10;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: linear-gradient(135deg, #ff6b9d22, #c084fc33, #60a5fa22, #34d39922), #12121A;
+  --d-radius: 16px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #F5F3FF;
+  --d-wide-gradient: linear-gradient(135deg, #A855F7 0%, #9333EA 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --holo: 1;
+}
+
+
+/* design-blueprint-tech — Технический чертёж */
+html[data-design="design-blueprint-tech"] {
+  color-scheme: light;
+  --d-primary: #1E88E5;
+  --d-primary-dark: #1565C0;
+  --d-accent2: #42A5F5;
+  --d-bg: #E3F2FD;
+  --d-surface: #BBDEFB;
+  --d-text: #0D47A1;
+  --d-text-muted: #1976D2;
+  --d-nav: #E1F5FE;
+  --d-footer: #0D47A1;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: linear-gradient(90deg, rgba(30,136,229,0.12) 1px, transparent 1px), linear-gradient(rgba(30,136,229,0.12) 1px, transparent 1px), #E3F2FD;
+  --d-radius: 0px;
+  --d-font: 'Roboto Mono', Consolas, monospace;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #0D47A1;
+  --d-wide-gradient: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --grid-size: 20px; --blueprint: 1;
+}
+
+
+/* design-matrix-code — Матрица */
+html[data-design="design-matrix-code"] {
+  color-scheme: dark;
+  --d-primary: #00FF41;
+  --d-primary-dark: #00CC33;
+  --d-accent2: #39FF14;
+  --d-bg: #000000;
+  --d-surface: #0A140A;
+  --d-text: #00FF41;
+  --d-text-muted: #008F11;
+  --d-nav: #000800;
+  --d-footer: #000000;
+  --d-footer-text: #E8E8E8;
+  --d-footer-link: #B0C4DE;
+  --d-hero-bg: #000000;
+  --d-radius: 0px;
+  --d-font: 'Courier New', monospace;
+  --d-border: rgba(255,255,255,0.1);
+  --d-code-bg: #1a1a24;
+  --d-code-fg: #00FF41;
+  --d-wide-gradient: linear-gradient(135deg, #00FF41 0%, #00CC33 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.3);
+  --matrix: 1;
+}
+
+
+/* design-ink-monochrome — Монохромные чернила */
+html[data-design="design-ink-monochrome"] {
+  color-scheme: light;
+  --d-primary: #1A1A1A;
+  --d-primary-dark: #000000;
+  --d-accent2: #444444;
+  --d-bg: #FFFFFF;
+  --d-surface: #F5F5F5;
+  --d-text: #1A1A1A;
+  --d-text-muted: #666666;
+  --d-nav: #FFFFFF;
+  --d-footer: #1A1A1A;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255,255,255,0.85);
+  --d-hero-bg: #FFFFFF;
+  --d-radius: 4px;
+  --d-font: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  --d-border: rgba(0,0,0,0.08);
+  --d-code-bg: #f4f4f8;
+  --d-code-fg: #1A1A1A;
+  --d-wide-gradient: linear-gradient(135deg, #1A1A1A 0%, #000000 100%);
+  --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
+  --ink-only: 1;
+}

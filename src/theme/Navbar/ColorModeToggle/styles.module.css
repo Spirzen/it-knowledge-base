@@ -1,0 +1,9 @@
+.themeControls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.darkNavbarColorModeToggle:hover {
+  background: var(--ifm-color-gray-800);
+}
