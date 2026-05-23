@@ -1,6 +1,7 @@
 /**
  * Индекс перекрёстных ссылок: глоссарий (## заголовки) + уникальные title статей + ручной словарь.
  * Запуск: npm run docs:wiki-links
+ * См. info/wiki-links.md
  */
 import fs from 'node:fs';
 import path from 'node:path';

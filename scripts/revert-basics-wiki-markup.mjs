@@ -11,6 +11,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const basicsDir = path.join(__dirname, '..', 'docs', 'encyclopedia', '1-basics');
 
 const WIKI_RE = /\[\[([^\]|#]+)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]/g;
+/** Остаток после неполного снятия [[...]]: «термин|подпись]]» */
+const BROKEN_WIKI_RE = /([а-яёА-ЯЁa-zA-Z][а-яёА-ЯЁa-zA-Z0-9\s-]*)\|([^\]]+)\]\]/g;
 
 /** Порядок важен: сначала длинные фразы */
 const CORRUPTION_FIXES = [
@@ -37,7 +39,9 @@ function walk(dir, files = []) {
 }
 
 function unwrapWikiMarkup(text) {
-  return text.replace(WIKI_RE, (_, target, _hash, label) => (label ?? target).trim());
+  return text
+    .replace(WIKI_RE, (_, target, _hash, label) => (label ?? target).trim())
+    .replace(BROKEN_WIKI_RE, (_, _target, label) => label.trim());
 }
 
 function applyCorruptionFixes(text) {
@@ -55,9 +59,10 @@ for (const filePath of walk(basicsDir)) {
   const raw = fs.readFileSync(filePath, 'utf8');
   const parsed = matter(raw);
   const before = parsed.content;
-  if (!before.includes('[[')) {
+  if (!before.includes('[[') && !BROKEN_WIKI_RE.test(before)) {
     continue;
   }
+  BROKEN_WIKI_RE.lastIndex = 0;
 
   const wikiCount = (before.match(WIKI_RE) ?? []).length;
   let body = unwrapWikiMarkup(before);

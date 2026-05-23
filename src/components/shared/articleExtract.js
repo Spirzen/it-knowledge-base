@@ -18,7 +18,7 @@ export function pickRandom(items) {
   return items[Math.floor(Math.random() * items.length)];
 }
 
-export function pickRandomDifferent(items, current) {
+export function pickRandomDifferent(items, current, isSame = (a, b) => a === b) {
   if (!items?.length) {
     return null;
   }
@@ -27,7 +27,7 @@ export function pickRandomDifferent(items, current) {
   }
   let next = current;
   let guard = 0;
-  while (next === current && guard < 20) {
+  while (isSame(next, current) && guard < 20) {
     next = pickRandom(items);
     guard += 1;
   }
@@ -121,6 +121,95 @@ export function extractArticleQuestions(articleElement) {
   return [...new Set(found)];
 }
 
+/**
+ * Вопросы экзамена из нумерованных списков под заголовками «Раздел».
+ * @returns {{ sections: {id: string, title: string}[], questions: {id: string, number: number, text: string, sectionId: string, sectionTitle: string}[] }}
+ */
+export function extractExamQuestions(articleElement) {
+  if (!articleElement) {
+    return {sections: [], questions: []};
+  }
+
+  const root = articleElement.cloneNode(true);
+  root.querySelectorAll('.it-demo').forEach((el) => el.remove());
+
+  const sections = [];
+  const questions = [];
+  let currentSection = {id: 's0', title: 'Экзамен'};
+
+  const ensureSection = (title) => {
+    const normalized = title.trim();
+    const existing = sections.find((s) => s.title === normalized);
+    if (existing) {
+      currentSection = existing;
+      return;
+    }
+    const section = {id: `s${sections.length}`, title: normalized};
+    sections.push(section);
+    currentSection = section;
+  };
+
+  const parseList = (ol) => {
+    ol.querySelectorAll(':scope > li').forEach((li) => {
+      const raw = li.textContent.trim();
+      if (raw.length < 8) {
+        return;
+      }
+      const match = raw.match(/^(\d+)\.\s*(.+)$/s);
+      const number = match ? parseInt(match[1], 10) : questions.length + 1;
+      const text = match ? match[2].trim() : raw;
+      questions.push({
+        id: `q${number}`,
+        number,
+        text,
+        sectionId: currentSection.id,
+        sectionTitle: currentSection.title,
+      });
+    });
+  };
+
+  const visit = (node) => {
+    if (!node || node.nodeType !== 1) {
+      return;
+    }
+    const tag = node.tagName;
+    if (tag === 'H2') {
+      const title = node.textContent.trim();
+      if (title && !/^Экзамен для/i.test(title)) {
+        ensureSection(title);
+      }
+    } else if (tag === 'OL') {
+      parseList(node);
+    }
+    Array.from(node.children).forEach(visit);
+  };
+
+  visit(root);
+
+  if (questions.length === 0) {
+    root.querySelectorAll('ol').forEach((ol) => {
+      if (sections.length === 0) {
+        ensureSection('Вопросы');
+      }
+      parseList(ol);
+    });
+  }
+
+  const seen = new Set();
+  const unique = questions.filter((q) => {
+    const key = `${q.number}:${q.text}`;
+    if (seen.has(key)) {
+      return false;
+    }
+    seen.add(key);
+    return true;
+  });
+
+  unique.sort((a, b) => a.number - b.number);
+
+  return {sections, questions: unique};
+}
+
 const GAME_LINK_SELECTOR =
   'a[href*="store.steampowered.com"], a[href*="nintendo.com"], a[href*="animalcrossing.nintendo.com"]';
 
@@ -128,14 +217,23 @@ const SKIP_TITLE = /^(ссылка|перейти)$/i;
 
 /** Названия игр со страницы (магазины Steam / Nintendo). */
 export function extractGameTitles(root = document) {
-  const titles = [];
+  return extractGameEntries(root).map((e) => e.title);
+}
+
+/** Игры со страницы: название и ссылка на магазин. */
+export function extractGameEntries(root = document) {
+  const seen = new Set();
+  const entries = [];
   root.querySelectorAll(GAME_LINK_SELECTOR).forEach((link) => {
     const title = link.innerText.trim();
-    if (title && !SKIP_TITLE.test(title)) {
-      titles.push(title);
+    const href = link.getAttribute('href') || '';
+    if (!title || SKIP_TITLE.test(title) || !href || seen.has(href)) {
+      return;
     }
+    seen.add(href);
+    entries.push({title, href});
   });
-  return [...new Set(titles)];
+  return entries;
 }
 
 /** Термины из таблиц на странице (английский словарь). */

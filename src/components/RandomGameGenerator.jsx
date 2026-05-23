@@ -1,10 +1,10 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import clsx from 'clsx';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback, demoSkeletonFallback} from './shared/demoFallback';
 import {
-  extractGameTitles,
+  extractGameEntries,
   pickRandom,
   pickRandomDifferent,
 } from './shared/articleExtract';
@@ -12,31 +12,44 @@ import styles from './shared/articleWidgets.module.css';
 
 function RandomGameGeneratorInner() {
   const [games, setGames] = useState([]);
+  const [query, setQuery] = useState('');
   const [selected, setSelected] = useState(null);
   const [fading, setFading] = useState(false);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const timer = window.setTimeout(() => {
-      const titles = extractGameTitles();
-      setGames(titles);
+      setGames(extractGameEntries());
       setReady(true);
     }, 200);
     return () => window.clearTimeout(timer);
   }, []);
 
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return games;
+    return games.filter((g) => g.title.toLowerCase().includes(q));
+  }, [games, query]);
+
   const pickGame = useCallback(() => {
-    if (!games.length) {
+    const pool = filtered.length ? filtered : games;
+    if (!pool.length) {
       return;
     }
     setFading(true);
     window.setTimeout(() => {
       const next =
-        selected == null ? pickRandom(games) : pickRandomDifferent(games, selected);
+        selected == null
+          ? pickRandom(pool)
+          : pickRandomDifferent(
+              pool,
+              selected,
+              (a, b) => a?.href === b?.href && a?.title === b?.title,
+            );
       setSelected(next);
       setFading(false);
     }, 200);
-  }, [games, selected]);
+  }, [filtered, games, selected]);
 
   if (!ready) {
     return demoSkeletonFallback();
@@ -48,13 +61,26 @@ function RandomGameGeneratorInner() {
     <DemoShell>
       <DemoCard
         title="Генератор случайной игры"
-        subtitle="Случайная рекомендация из списка игр на этой странице (Steam, Nintendo)."
+        subtitle="Поиск и случайный выбор из списка на странице (Steam, Nintendo)"
       >
         {!empty && (
           <span className={styles.poolBadge}>
-            В базе: {games.length} {games.length === 1 ? 'игра' : games.length < 5 ? 'игры' : 'игр'}
+            В базе: {games.length}{' '}
+            {games.length === 1 ? 'игра' : games.length < 5 ? 'игры' : 'игр'}
+            {query.trim() ? ` · в фильтре: ${filtered.length}` : ''}
           </span>
         )}
+
+        <input
+          type="search"
+          className="it-demo__input"
+          style={{width: '100%', marginBottom: '0.65rem'}}
+          placeholder="Фильтр по названию…"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          disabled={empty}
+          aria-label="Фильтр игр"
+        />
 
         <div
           className={clsx(styles.gameResult, fading && styles.gameResultFading)}
@@ -65,7 +91,13 @@ function RandomGameGeneratorInner() {
               Список игр не найден — добавьте ссылки на магазины в статью.
             </span>
           ) : selected ? (
-            selected
+            selected.href ? (
+              <a href={selected.href} target="_blank" rel="noopener noreferrer">
+                {selected.title}
+              </a>
+            ) : (
+              selected.title
+            )
           ) : (
             <span className={styles.gamePlaceholder}>Нажмите кнопку, чтобы выбрать игру</span>
           )}
@@ -76,15 +108,26 @@ function RandomGameGeneratorInner() {
             type="button"
             className="it-demo__btn it-demo__btn--primary"
             onClick={pickGame}
-            disabled={empty}
+            disabled={empty || (query.trim() && !filtered.length)}
             aria-label="Случайная игра"
           >
             {selected ? 'Другая игра' : 'Случайная игра'}
           </button>
+          {selected?.href && (
+            <a
+              href={selected.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="it-demo__btn"
+              style={{textDecoration: 'none'}}
+            >
+              В магазин
+            </a>
+          )}
         </div>
 
         <p className={styles.footnote}>
-          * Выбор из ссылок Steam и Nintendo на странице
+          Ссылки берутся из markdown-списка на этой странице
         </p>
       </DemoCard>
     </DemoShell>

@@ -9,6 +9,7 @@ import {
   CodeBlock,
   VizSection,
   InfoNote,
+  resolveDataLang,
   useIsMobile,
   useCopyToClipboard,
 } from './shared/dataStructureDemo';
@@ -94,6 +95,21 @@ dfs('A')`,
     undirected: `graph = {'X': ['Y','Z'], 'Y': ['X','Z'], 'Z': ['X','Y']}`,
     weighted: `graph = {'P': {'Q': 5, 'R': 10}, 'Q': {'R': 3}}`,
   },
+  java: {
+    directed: `Map<String, List<String>> graph = Map.of(
+    "A", List.of("B", "C"),
+    "B", List.of("D"),
+    "C", List.of("D"),
+    "D", List.of("A")
+);
+// обход DFS — рекурсия или стек`,
+    undirected: `Map<String, Set<String>> graph = new HashMap<>();
+// addEdge(u,v) добавляет связь в обе стороны`,
+    weighted: `Map<String, Map<String, Integer>> graph = Map.of(
+    "P", Map.of("Q", 5, "R", 10),
+    "Q", Map.of("R", 3)
+);`,
+  },
   cs: {
     directed: `var graph = new Dictionary<string, List<string>> {
   ["A"] = new() { "B", "C" }, ["B"] = new() { "D" },
@@ -101,6 +117,58 @@ dfs('A')`,
 };`,
     undirected: `// Рёбра добавляются в обе стороны`,
     weighted: `// Dictionary<string, Dictionary<string, int>>`,
+  },
+  dart: {
+    directed: `final graph = <String, List<String>>{
+  'A': ['B', 'C'],
+  'B': ['D'],
+  'C': ['D'],
+  'D': ['A'],
+};`,
+    undirected: `// graph[u]!.add(v); graph[v]!.add(u);`,
+    weighted: `final weights = <String, Map<String, int>>{
+  'P': {'Q': 5, 'R': 10},
+  'Q': {'R': 3},
+};`,
+  },
+  r: {
+    directed: `graph <- list(
+  A = c("B", "C"), B = c("D"),
+  C = c("D"), D = c("A")
+)
+# DFS: обход соседей graph[[node]]`,
+    undirected: `graph <- list(X = c("Y","Z"), Y = c("X","Z"), Z = c("X","Y"))`,
+    weighted: `graph <- list(P = list(Q = 5, R = 10), Q = list(R = 3))`,
+  },
+  lua: {
+    directed: `local graph = {
+  A = {"B", "C"}, B = {"D"},
+  C = {"D"}, D = {"A"},
+}`,
+    undirected: `local graph = {X = {"Y","Z"}, Y = {"X","Z"}, Z = {"X","Y"}}`,
+    weighted: `local graph = {P = {Q = 5, R = 10}, Q = {R = 3}}`,
+  },
+  groovy: {
+    directed: `def graph = [
+  A: ['B','C'], B: ['D'],
+  C: ['D'], D: ['A'],
+]`,
+    undirected: `def graph = [X: ['Y','Z'], Y: ['X','Z'], Z: ['X','Y']]`,
+    weighted: `def graph = [P: [Q: 5, R: 10], Q: [R: 3]]`,
+  },
+  fortran: {
+    directed: `! список смежности: массив соседей для каждой вершины
+integer, allocatable :: adj(:,:)
+! или модуль с TYPE(Node) + POINTER`,
+    undirected: `! каждое ребро (u,v) дублируется как (v,u)`,
+    weighted: `real :: weight(n_edges)  ! веса рёбер отдельным массивом`,
+  },
+  bsl: {
+    directed: `Граф = Новый Соответствие;
+Граф.Вставить("A", Новый Массив("B", "C"));
+Граф.Вставить("B", Новый Массив("D"));`,
+    undirected: `// связь добавляется в обе стороны`,
+    weighted: `// вес ребра — отдельное поле структуры`,
   },
 };
 
@@ -111,7 +179,9 @@ const TYPE_OPTIONS = [
 ];
 
 function GraphLogic({defaultLang = 'js'}) {
-  const [activeTab, setActiveTab] = useState(defaultLang);
+  const [activeTab, setActiveTab] = useState(() =>
+    resolveDataLang(defaultLang, CODE, (id) => Boolean(CODE[id]?.directed)),
+  );
   const [graphType, setGraphType] = useState('directed');
   const [hoverNode, setHoverNode] = useState(null);
   const [visited, setVisited] = useState([]);
@@ -207,7 +277,11 @@ function GraphLogic({defaultLang = 'js'}) {
     <DataStructureLayout title={data.title} subtitle={data.desc}>
       <TypeChips options={TYPE_OPTIONS} value={graphType} onChange={setGraphType} />
       <LangTabs active={activeTab} onChange={setActiveTab} />
-      <CodeBlock code={CODE[activeTab][graphType]} copied={copied} onCopy={copy} />
+      <CodeBlock
+        code={(CODE[activeTab] ?? CODE.js)[graphType]}
+        copied={copied}
+        onCopy={copy}
+      />
 
       <VizSection label="Визуализация">
         <svg viewBox={`0 0 ${width} ${height}`} className={styles.graphSvg} role="img" aria-label="Граф">

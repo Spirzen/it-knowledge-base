@@ -8,6 +8,7 @@ import {
   CodeBlock,
   VizSection,
   InfoNote,
+  resolveDataLang,
   useIsMobile,
   useCopyToClipboard,
 } from './shared/dataStructureDemo';
@@ -26,11 +27,41 @@ table.push([3, 'Дмитрий', 'Менеджер']);`,
     [1, 'Алексей', 'Разработчик'],
 ]
 role = table[1][2]`,
+  java: `String[][] table = {
+    {"ID", "Имя", "Роль"},
+    {"1", "Алексей", "Разработчик"},
+};
+String role = table[1][2];`,
   cs: `var table = new List<List<object>> {
     new() { "ID", "Имя", "Роль" },
     new() { 1, "Алексей", "Разработчик" },
 };
 var role = table[1][2].ToString();`,
+  dart: `final table = [
+  ['ID', 'Имя', 'Роль'],
+  [1, 'Алексей', 'Разработчик'],
+];
+final role = table[1][2];`,
+  r: `table <- matrix(c("ID","Имя","Роль",1,"Алексей","Разработчик"),
+                  nrow=2, byrow=TRUE)
+role <- table[2, 3]`,
+  lua: `local table = {
+  {"ID", "Имя", "Роль"},
+  {1, "Алексей", "Разработчик"},
+}
+local role = table[2][3]`,
+  groovy: `def table = [
+  ['ID', 'Имя', 'Роль'],
+  [1, 'Алексей', 'Разработчик'],
+]
+def role = table[1][2]`,
+  fortran: `character(len=20), dimension(3,2) :: table
+table(1,1) = 'ID'; table(2,1) = '1'
+! table(столбец, строка) — column-major`,
+  bsl: `Таблица = Новый ТаблицаЗначений;
+Таблица.Колонки.Добавить("Роль");
+Таблица.Добавить();
+Таблица[0].Роль = "Разработчик";`,
 };
 
 const ROWS = [
@@ -42,7 +73,7 @@ const ROWS = [
 const COLS = ['ID', 'Имя', 'Роль'];
 
 function TableLogic({defaultLang = 'js'}) {
-  const [activeTab, setActiveTab] = useState(defaultLang);
+  const [activeTab, setActiveTab] = useState(() => resolveDataLang(defaultLang, CODE));
   const [selected, setSelected] = useState({row: 1, col: 2});
   const isMobile = useIsMobile();
   const {copied, copy} = useCopyToClipboard();
@@ -55,7 +86,7 @@ function TableLogic({defaultLang = 'js'}) {
       subtitle="Данные организованы в строки и столбцы. Каждая ячейка доступна по паре индексов [строка][столбец] — как в электронной таблице или SQL-результате."
     >
       <LangTabs active={activeTab} onChange={setActiveTab} />
-      <CodeBlock code={CODE[activeTab]} copied={copied} onCopy={copy} />
+      <CodeBlock code={CODE[activeTab] ?? CODE.js} copied={copied} onCopy={copy} />
 
       <VizSection label="Кликните ячейку">
         {isMobile ? (

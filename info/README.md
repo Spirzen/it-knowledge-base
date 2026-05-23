@@ -7,3 +7,4 @@
 | `PROJECT-TECHNICAL.md` | Полная техническая документация проекта (архитектура, конфиги, компоненты, стили) |
 | `PROJECT-FILE-TREE.txt` | Полный список путей репозитория (~3600 строк) |
 | `demo-registry.md` | Реестр React-демо и статей (`npm run docs:demo-registry`) |
+| `wiki-links.md` | Перекрёстные ссылки `[[...]]`, `related:` и индекс (`npm run docs:wiki-links`) |

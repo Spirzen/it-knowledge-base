@@ -7,8 +7,23 @@ import styles from './dataStructureDemo.module.css';
 export const LANG_TABS = [
   {id: 'js', label: 'JavaScript'},
   {id: 'py', label: 'Python'},
+  {id: 'java', label: 'Java'},
   {id: 'cs', label: 'C#'},
+  {id: 'dart', label: 'Dart'},
+  {id: 'r', label: 'R'},
+  {id: 'lua', label: 'Lua'},
+  {id: 'groovy', label: 'Groovy'},
+  {id: 'fortran', label: 'Fortran'},
+  {id: 'bsl', label: '1С'},
 ];
+
+/** Выбирает вкладку языка: defaultLang из MDX или js, если примеров нет. */
+export function resolveDataLang(requested, codeByLang, hasLang = (id) => Boolean(codeByLang[id])) {
+  if (requested && hasLang(requested)) return requested;
+  if (hasLang('js')) return 'js';
+  const first = LANG_TABS.find(({id}) => hasLang(id));
+  return first?.id ?? 'js';
+}
 
 export function useIsMobile(breakpoint = 768) {
   const [isMobile, setIsMobile] = useState(false);

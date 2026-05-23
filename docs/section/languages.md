@@ -512,6 +512,8 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-12-groovy/172">5.12. Встроенные функции в Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/18">5.12. Синтаксис</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/19">5.12. Работа с БД</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/20">5.12. Groovy и Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/1001">5.12. Что знать перед Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/2">5.12. Первая программа на Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/3">5.12. Справочник по Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/998">5.12. Итоги</a></li>

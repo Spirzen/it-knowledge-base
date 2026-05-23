@@ -199,6 +199,7 @@ export const OPERATORS_PRESETS = {
     binaryOps: R_BINARY,
     unaryOps: pickUnary(['neg', 'not']),
     showTernary: true,
+    ternaryHint: 'В R нет ? : ; для векторов — ifelse(), для скаляров — if (условие) значение',
   },
   julia: {
     label: 'Julia',

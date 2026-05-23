@@ -4,6 +4,9 @@ description: Проект Вселенная IT распространяется
 sidebar_label: Лицензия
 slug: /about/license
 ---
+
+import LicenseUsagePlay from '@site/src/components/LicenseUsagePlay.jsx';
+
 # Лицензия
 
 ## Открытая лицензия "Вселенная IT"
@@ -11,6 +14,8 @@ slug: /about/license
 Проект "Вселенная IT" распространяется под **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License** (CC BY-NC-SA 4.0).
 
 Ребята, я не какая-то коммерческая структура, не корпорация и не богач. В то же время у меня нет жадности, и поэтому нет цели "заработать" - я создал этот проект исключительно чтобы поделиться с миром интересной информацией.
+
+<LicenseUsagePlay />
 
 ---
 

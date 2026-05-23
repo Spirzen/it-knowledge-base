@@ -9,6 +9,7 @@ import {
   CodeBlock,
   VizSection,
   InfoNote,
+  resolveDataLang,
   useCopyToClipboard,
 } from './shared/dataStructureDemo';
 import styles from './shared/dataStructureDemo.module.css';
@@ -42,11 +43,74 @@ print(users["user_101"])`,
     hash: `def bucket_index(key, size=8):
     return sum(ord(c) for c in key) % size`,
   },
+  java: {
+    dictionary: `Map<String, Map<String, String>> userDB = Map.of(
+    "user_101", Map.of("name", "Алексей", "role", "Dev")
+);
+var user = userDB.get("user_101"); // O(1) в среднем`,
+    hash: `int bucketIndex(String key, int size) {
+    return Math.floorMod(key.hashCode(), size);
+}`,
+  },
   cs: {
     dictionary: `var userDB = new Dictionary<string, object> {
   ["user_101"] = new { Name = "Алексей" }
 };`,
     hash: `int index = Math.Abs(key.GetHashCode()) % 8;`,
+  },
+  dart: {
+    dictionary: `final userDB = <String, Map<String, String>>{
+  'user_101': {'name': 'Алексей', 'role': 'Dev'},
+  'user_102': {'name': 'Мария', 'role': 'QA'},
+};
+final user = userDB['user_101']; // O(1)`,
+    hash: `int bucketIndex(String key, int size) =>
+    key.hashCode.abs() % size;`,
+  },
+  r: {
+    dictionary: `users <- list(
+  user_101 = list(name = "Алексей", role = "Dev"),
+  user_102 = list(name = "Мария", role = "QA")
+)
+users$user_101  # O(1) по имени`,
+    hash: `# именованный список / environment;
+# хеш-таблица — внутренняя реализация`,
+  },
+  lua: {
+    dictionary: `local userDB = {
+  user_101 = {name = "Алексей", role = "Dev"},
+  user_102 = {name = "Мария", role = "QA"},
+}
+local user = userDB["user_101"] -- O(1)`,
+    hash: `local function bucket(key, size)
+  local h = 0
+  for i = 1, #key do h = h + string.byte(key, i) end
+  return h % size + 1
+end`,
+  },
+  groovy: {
+    dictionary: `def userDB = [
+  user_101: [name: 'Алексей', role: 'Dev'],
+  user_102: [name: 'Мария', role: 'QA'],
+]
+def user = userDB.user_101 // O(1)`,
+    hash: `int bucket = Math.abs(key.hashCode()) % 8`,
+  },
+  fortran: {
+    dictionary: `! ассоциативный массив (Fortran 2003+)
+type :: User
+  character(len=32) :: name
+  character(len=16) :: role
+end type
+! или параллельные массивы ключей и записей`,
+    hash: `! хеш-индекс задаётся вручную или через библиотеку`,
+  },
+  bsl: {
+    dictionary: `Пользователи = Новый Соответствие;
+Пользователи.Вставить("user_101",
+  Новый Структура("Имя, Роль", "Алексей", "Dev"));
+Пользователь = Пользователи["user_101"]; // O(1)`,
+    hash: `// внутри Соответствие — хеш-таблица платформы`,
   },
 };
 
@@ -62,7 +126,7 @@ function hashIndex(key, size = 8) {
 }
 
 function KeyValueLogic({defaultLang = 'js'}) {
-  const [activeTab, setActiveTab] = useState(defaultLang);
+  const [activeTab, setActiveTab] = useState(() => resolveDataLang(defaultLang, CODE));
   const [storeType, setStoreType] = useState('dictionary');
   const [selected, setSelected] = useState(null);
   const {copied, copy} = useCopyToClipboard();
@@ -86,7 +150,11 @@ function KeyValueLogic({defaultLang = 'js'}) {
     >
       <TypeChips options={STORE_OPTIONS} value={storeType} onChange={setStoreType} />
       <LangTabs active={activeTab} onChange={setActiveTab} />
-      <CodeBlock code={CODE[activeTab][storeType]} copied={copied} onCopy={copy} />
+      <CodeBlock
+        code={(CODE[activeTab] ?? CODE.js)[storeType]}
+        copied={copied}
+        onCopy={copy}
+      />
 
       <VizSection label={storeType === 'dictionary' ? 'Пары ключ → значение' : 'Buckets хеш-таблицы'}>
         {storeType === 'dictionary' ? (

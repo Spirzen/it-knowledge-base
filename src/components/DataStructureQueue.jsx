@@ -9,6 +9,7 @@ import {
   VizSection,
   InfoNote,
   ControlRow,
+  resolveDataLang,
   useCopyToClipboard,
 } from './shared/dataStructureDemo';
 import styles from './shared/dataStructureDemo.module.css';
@@ -25,15 +26,44 @@ my_queue = deque(['Заявка #1', 'Заявка #2'])
 my_queue.append('Новая заявка')
 first_item = my_queue.popleft()
 head = my_queue[0] if my_queue else None`,
-  cs: `var queue = new Queue<string> { "Заявка #1", "Заявка #2" };
+  java: `Queue<String> queue = new ArrayDeque<>();
+queue.offer("Заявка #1");
+queue.offer("Заявка #2");
 
+queue.offer("Новая заявка");  // ENQUEUE
+String first = queue.poll();    // DEQUEUE
+String head = queue.peek();     // PEEK`,
+  cs: `var queue = new Queue<string> { "Заявка #1", "Заявка #2" };
 queue.Enqueue("Новая заявка");
 string first = queue.Dequeue();
 string head = queue.Peek();`,
+  dart: `final queue = Queue<String>.from(['Заявка #1', 'Заявка #2']);
+queue.addLast('Новая заявка');
+final first = queue.removeFirst();
+final head = queue.first;`,
+  r: `queue <- c("Заявка #1", "Заявка #2")
+queue <- c(queue, "Новая заявка")
+first <- queue[1]; queue <- queue[-1]
+head <- if (length(queue)) queue[1] else NULL`,
+  lua: `local queue = {"Заявка #1", "Заявка #2"}
+table.insert(queue, "Новая заявка")
+local first = table.remove(queue, 1)
+local head = queue[1]`,
+  groovy: `def queue = ['Заявка #1', 'Заявка #2'] as Queue
+queue << 'Новая заявка'
+def first = queue.poll()
+def head = queue.peek()`,
+  fortran: `! очередь: head/tail по массиву или кольцевому буферу
+integer :: head = 1, tail = 0`,
+  bsl: `Очередь = Новый Массив;
+Очередь.Добавить("Заявка #1");
+Очередь.Добавить("Новая заявка");
+Первый = Очередь[0];
+Очередь.Удалить(0);`,
 };
 
 function QueueLogic({defaultLang = 'js'}) {
-  const [activeTab, setActiveTab] = useState(defaultLang);
+  const [activeTab, setActiveTab] = useState(() => resolveDataLang(defaultLang, CODE));
   const [queue, setQueue] = useState(['Заявка #1', 'Заявка #2', 'Заявка #3']);
   const [tempValue, setTempValue] = useState('');
   const [leaving, setLeaving] = useState(false);
@@ -67,7 +97,7 @@ function QueueLogic({defaultLang = 'js'}) {
       subtitle="Структура FIFO (First In, First Out): первым обслуживается тот, кто пришёл раньше. Добавление — в конец (enqueue), извлечение — из начала (dequeue)."
     >
       <LangTabs active={activeTab} onChange={setActiveTab} />
-      <CodeBlock code={CODE[activeTab]} copied={copied} onCopy={copy} />
+      <CodeBlock code={CODE[activeTab] ?? CODE.js} copied={copied} onCopy={copy} />
 
       <VizSection label="Очередь заявок">
         <div className={styles.queueTrack}>

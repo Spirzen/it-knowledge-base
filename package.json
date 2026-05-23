@@ -15,6 +15,7 @@
     "docs:demo-registry": "node scripts/generate-demo-registry.mjs",
     "docs:collection-titles": "node scripts/generate-collection-doc-titles.mjs",
     "docs:wiki-links": "node scripts/build-wiki-link-index.mjs",
+    "docs:toc": "node scripts/generate-toc.mjs",
     "docs:fix-mdx-imports": "node scripts/fix-mdx-import-after-frontmatter.mjs",
     "docs:basics-crosslinks": "node scripts/enrich-basics-crosslinks.mjs",
     "docs:revert-basics-wiki": "node scripts/revert-basics-wiki-markup.mjs",

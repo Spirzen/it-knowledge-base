@@ -214,3 +214,87 @@ function escapeHtml(text) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
 }
+
+export const XPATH_PRESETS = [
+  {
+    id: 'all-books',
+    label: 'Все книги',
+    query: '/library/book',
+    hint: 'Прямые потомки library — элементы book.',
+  },
+  {
+    id: 'first-title',
+    label: 'Заголовок 1-й книги',
+    query: '/library/book[1]/title',
+    hint: 'Первый book в документе, затем дочерний title.',
+  },
+  {
+    id: 'book-by-id',
+    label: 'Книга id=2',
+    query: "/library/book[@id='2']",
+    hint: 'Фильтр по атрибуту id.',
+  },
+  {
+    id: 'all-authors',
+    label: 'Все авторы',
+    query: '//author',
+    hint: 'author на любом уровне вложенности.',
+  },
+  {
+    id: 'tolstoy',
+    label: 'Толстой',
+    query: "//book[author = 'Лев Толстой']/title",
+    hint: 'Предикат по тексту дочернего author.',
+  },
+];
+
+/** Выполнение XPath 1.0 через DOM API (поддерживается в современных браузерах). */
+export function evaluateXPath(doc, expression) {
+  if (!doc?.documentElement) {
+    return {nodes: [], error: 'Документ пуст или не разобран.'};
+  }
+  try {
+    const snapshot = doc.evaluate(
+      expression,
+      doc,
+      null,
+      XPathResult.ORDERED_NODE_SNAPSHOT_TYPE,
+      null,
+    );
+    const nodes = [];
+    for (let i = 0; i < snapshot.snapshotLength; i += 1) {
+      nodes.push(snapshot.snapshotItem(i));
+    }
+    return {nodes, error: null};
+  } catch (err) {
+    return {nodes: [], error: err.message || 'Некорректное XPath-выражение.'};
+  }
+}
+
+export function formatXPathNode(node) {
+  if (!node) {
+    return '';
+  }
+  if (node.nodeType === Node.ATTRIBUTE_NODE) {
+    return `@${node.name}="${node.value}"`;
+  }
+  if (node.nodeType === Node.TEXT_NODE) {
+    return node.textContent?.trim() ?? '';
+  }
+  if (node.nodeType === Node.ELEMENT_NODE) {
+    const attrs = [...node.attributes]
+      .map((a) => `@${a.name}="${a.value}"`)
+      .join(' ');
+    const attrPart = attrs ? ` ${attrs}` : '';
+    const text = [...node.childNodes]
+      .filter((n) => n.nodeType === Node.TEXT_NODE)
+      .map((n) => n.textContent?.trim())
+      .filter(Boolean)
+      .join(' ');
+    if (text && node.children.length === 0) {
+      return `<${node.localName}${attrPart}>${text}</${node.localName}>`;
+    }
+    return `<${node.localName}${attrPart}>`;
+  }
+  return node.nodeName ?? String(node);
+}

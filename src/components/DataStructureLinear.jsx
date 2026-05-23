@@ -9,6 +9,7 @@ import {
   CodeBlock,
   VizSection,
   InfoNote,
+  resolveDataLang,
   useIsMobile,
   useCopyToClipboard,
 } from './shared/dataStructureDemo';
@@ -37,6 +38,17 @@ del my_list[1]`,
         self.value = value
         self.next = None`,
   },
+  java: {
+    array: `String[] arr = {"A", "B", "C", "D"};
+System.out.println(arr[2]); // O(1)
+// массив фиксированного размера; для роста — ArrayList`,
+    linked: `class Node {
+    String value;
+    Node next;
+    Node(String value) { this.value = value; }
+}
+// обход O(n)`,
+  },
   cs: {
     array: `var list = new List<string> { "A", "B", "C", "D" };
 Console.WriteLine(list[2]);
@@ -47,6 +59,67 @@ list.RemoveAt(1);`,
     public Node Next { get; set; }
 }`,
   },
+  dart: {
+    array: `final list = ['A', 'B', 'C', 'D'];
+print(list[2]); // O(1)
+list.add('E');
+list.removeAt(1); // O(n) — сдвиг элементов`,
+    linked: `class Node {
+  Node(this.value);
+  final String value;
+  Node? next;
+}
+final head = Node('A')..next = Node('B');`,
+  },
+  r: {
+    array: `vec <- c("A", "B", "C", "D")
+vec[3]           # O(1) — доступ по индексу
+vec <- c(vec, "E")
+vec <- vec[-2]   # удаление со сдвигом O(n)`,
+    linked: `lst <- list("A", list("B"))
+lst[[1]]
+lst[[2]][[1]]    # вложенный список — обход O(n)`,
+  },
+  lua: {
+    array: `local list = {"A", "B", "C", "D"}
+print(list[3])        -- O(1), индексация с 1
+table.insert(list, "E")
+table.remove(list, 2) -- O(n) — сдвиг в таблице`,
+    linked: `local function node(value, next)
+  return {value = value, next = next}
+end
+local head = node("A", node("B", nil))
+-- обход O(n)`,
+  },
+  groovy: {
+    array: `def list = ['A', 'B', 'C', 'D']
+println list[2]       // O(1)
+list << 'E'
+list.remove(1)      // O(n)`,
+    linked: `def head = [value: 'A', next: [value: 'B', next: null]]
+// обход O(n)`,
+  },
+  fortran: {
+    array: `character(len=1), dimension(4) :: arr
+arr = ['A', 'B', 'C', 'D']
+print *, arr(3)     ! O(1), индексация с 1`,
+    linked: `type :: Node
+  character(len=1) :: val
+  type(Node), pointer :: next
+end type
+! связный список — через POINTER, обход O(n)`,
+  },
+  bsl: {
+    array: `Массив = Новый Массив;
+Массив.Добавить("A");
+Массив.Добавить("B");
+Массив.Добавить("C");
+Значение = Массив[1]; // O(1), индекс с 0`,
+    linked: `// в 1С чаще Массив или СписокЗначений, не классический linked list
+Список = Новый СписокЗначений;
+Список.Добавить("A");
+Список.Добавить("B");`,
+  },
 };
 
 const TYPE_OPTIONS = [
@@ -55,7 +128,7 @@ const TYPE_OPTIONS = [
 ];
 
 function LinearLogic({defaultLang = 'js'}) {
-  const [activeTab, setActiveTab] = useState(defaultLang);
+  const [activeTab, setActiveTab] = useState(() => resolveDataLang(defaultLang, CODE));
   const [structureType, setStructureType] = useState('array');
   const [highlightIdx, setHighlightIdx] = useState(2);
   const isMobile = useIsMobile();
@@ -192,7 +265,11 @@ function LinearLogic({defaultLang = 'js'}) {
     >
       <TypeChips options={TYPE_OPTIONS} value={structureType} onChange={setStructureType} />
       <LangTabs active={activeTab} onChange={setActiveTab} />
-      <CodeBlock code={CODE[activeTab][structureType]} copied={copied} onCopy={copy} />
+      <CodeBlock
+        code={(CODE[activeTab] ?? CODE.js)[structureType]}
+        copied={copied}
+        onCopy={copy}
+      />
 
       <VizSection label="Схема в памяти">
         {structureType === 'array' ? renderArray() : renderLinked()}

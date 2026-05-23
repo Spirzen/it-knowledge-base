@@ -9,6 +9,7 @@ import {
   VizSection,
   InfoNote,
   ControlRow,
+  resolveDataLang,
   useCopyToClipboard,
 } from './shared/dataStructureDemo';
 import styles from './shared/dataStructureDemo.module.css';
@@ -39,18 +40,46 @@ print(top_element)  # "Новый элемент"
 
 if my_stack:
     print(my_stack[-1])  # "Второй слой"`,
-  cs: `// Стек в C#
-var stack = new Stack<string> { "Базовый уровень", "Второй слой" };
-
+  java: `Deque<String> stack = new ArrayDeque<>();
+stack.push("Базовый уровень");
+stack.push("Второй слой");
+stack.push("Новый элемент");
+String top = stack.peek();   // PEEK
+stack.pop();                 // POP`,
+  cs: `var stack = new Stack<string> { "Базовый уровень", "Второй слой" };
 stack.Push("Новый элемент");
-Console.WriteLine(stack.Peek()); // "Новый элемент"
-
+Console.WriteLine(stack.Peek());
 string topElement = stack.Pop();
-Console.WriteLine(stack.Peek()); // "Второй слой"`,
+Console.WriteLine(stack.Peek());`,
+  dart: `final stack = <String>['Базовый уровень', 'Второй слой'];
+stack.add('Новый элемент');
+print(stack.last); // PEEK
+stack.removeLast(); // POP`,
+  r: `stack <- c("Базовый уровень", "Второй слой")
+stack <- c(stack, "Новый элемент")
+tail(stack, 1)  # PEEK
+stack <- head(stack, -1)  # POP`,
+  lua: `local stack = {"Базовый уровень", "Второй слой"}
+table.insert(stack, "Новый элемент")
+local top = stack[#stack]  -- PEEK
+table.remove(stack)        -- POP`,
+  groovy: `def stack = ['Базовый уровень', 'Второй слой']
+stack << 'Новый элемент'
+println stack[-1]  // PEEK
+stack.pop()        // POP`,
+  fortran: `! стек часто моделируют массивом + счётчик top
+integer :: top = 0
+character(len=32), allocatable :: stack(:)
+! push: top = top + 1; pop: top = top - 1`,
+  bsl: `Стек = Новый Массив;
+Стек.Добавить("Базовый уровень");
+Стек.Добавить("Второй слой");
+Верх = Стек[Стек.ВГраница()]; // PEEK
+Стек.Удалить(Стек.ВГраница()); // POP`,
 };
 
 function StackLogic({defaultLang = 'js'}) {
-  const [activeTab, setActiveTab] = useState(defaultLang);
+  const [activeTab, setActiveTab] = useState(() => resolveDataLang(defaultLang, CODE));
   const [stack, setStack] = useState(['Базовый уровень', 'Второй слой', 'Верхний элемент']);
   const [tempValue, setTempValue] = useState('');
   const [anim, setAnim] = useState(null);
@@ -89,7 +118,7 @@ function StackLogic({defaultLang = 'js'}) {
       subtitle="Линейная структура LIFO (Last In, First Out): последний добавленный элемент извлекается первым. Операции выполняются только с вершиной стека."
     >
       <LangTabs active={activeTab} onChange={setActiveTab} />
-      <CodeBlock code={CODE[activeTab]} copied={copied} onCopy={copy} />
+      <CodeBlock code={CODE[activeTab] ?? CODE.js} copied={copied} onCopy={copy} />
 
       <VizSection label="Интерактивная модель">
         <div className={styles.stackCol}>

@@ -15,7 +15,6 @@ const sidebars = {
         'about/author',
         'about/license',
         'about/manifest',
-        'about/wiki-links',
       ],
     },
     {
