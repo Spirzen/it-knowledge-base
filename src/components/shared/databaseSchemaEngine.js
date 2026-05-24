@@ -457,8 +457,10 @@ export function getColumnRelations(tableName, foreignKeys) {
 /** Простая послойная раскладка таблиц для CSS-графа */
 export function computeTableLayout(tables, foreignKeys) {
   const names = tables.map((t) => t.name);
+  const maxLayer = Math.max(0, names.length - 1);
   const incoming = new Map(names.map((n) => [n, 0]));
   for (const fk of foreignKeys) {
+    if (fk.from_table === fk.to_table) continue;
     if (incoming.has(fk.to_table)) {
       incoming.set(fk.to_table, (incoming.get(fk.to_table) || 0) + 1);
     }
@@ -475,12 +477,13 @@ export function computeTableLayout(tables, foreignKeys) {
     qi += 1;
     const layer = layers.get(cur) ?? 0;
     for (const fk of foreignKeys) {
-      if (fk.from_table === cur && incoming.has(fk.to_table)) {
-        const nextLayer = layer + 1;
-        if (!layers.has(fk.to_table) || layers.get(fk.to_table) < nextLayer) {
-          layers.set(fk.to_table, nextLayer);
-          queue.push(fk.to_table);
-        }
+      if (fk.from_table !== cur || fk.from_table === fk.to_table) continue;
+      if (!incoming.has(fk.to_table)) continue;
+      const nextLayer = Math.min(layer + 1, maxLayer);
+      const prev = layers.get(fk.to_table);
+      if (prev === undefined || prev < nextLayer) {
+        layers.set(fk.to_table, nextLayer);
+        queue.push(fk.to_table);
       }
     }
   }
