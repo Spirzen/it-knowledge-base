@@ -5,8 +5,15 @@ sidebar_label: Паттерны проектирования — о раздел
 ---
 
 import DocCardList from '@theme/DocCardList';
+import ArchiStylerPlay from '@site/src/components/ArchiStylerPlay.jsx';
+import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
+
+
+<SchemaMakerPlay defaultDocName="GoF" title="Планировщик схем" subtitle="Свободный холст + шаблоны классов ArchiStyler ниже по статье" />
 
 # Паттерны проектирования — о разделе
+
+<ArchiStylerPlay defaultPattern="factory" title="Планировщик паттернов" subtitle="Соберите диаграмму классов по шаблону и переключайте язык генерации" />
 
 <DocCardList />
 

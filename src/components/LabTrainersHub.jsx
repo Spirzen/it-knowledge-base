@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useMemo, useState} from 'react';
+import React, {lazy, Suspense, useEffect, useMemo, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import Link from '@docusaurus/Link';
 import clsx from 'clsx';
@@ -155,7 +155,7 @@ const CATEGORIES = [
         id: 'english',
         label: 'IT-английский',
         article: '/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2',
-        load: () => import('./EnglishWordRandomizer'),
+        load: () => import('./EnglishVocabularyTrainer'),
       },
       {
         id: 'netiquette',
@@ -177,14 +177,60 @@ function getLazyTrainer(loadFn) {
   return LAZY_BY_ID.get(key);
 }
 
+function resolveHashSelection() {
+  if (typeof window === 'undefined') {
+    return null;
+  }
+  const raw = window.location.hash.replace(/^#/, '').trim();
+  if (!raw) {
+    return null;
+  }
+  const [categoryId, trainerId] = raw.split('/').map((part) => part.trim()).filter(Boolean);
+  if (!categoryId) {
+    return null;
+  }
+  const category = CATEGORIES.find((c) => c.id === categoryId);
+  if (!category) {
+    return null;
+  }
+  const trainer =
+    trainerId && category.trainers.some((t) => t.id === trainerId)
+      ? trainerId
+      : category.trainers[0]?.id;
+  return {categoryId, trainerId: trainer};
+}
+
 function LabTrainersHubInner({defaultCategory = 'sql', defaultTrainer}) {
-  const [categoryId, setCategoryId] = useState(defaultCategory);
-  const category = CATEGORIES.find((c) => c.id === categoryId) ?? CATEGORIES[0];
-  const [trainerId, setTrainerId] = useState(
-    defaultTrainer && category.trainers.some((t) => t.id === defaultTrainer)
-      ? defaultTrainer
-      : category.trainers[0]?.id,
+  const hashSelection = resolveHashSelection();
+  const [categoryId, setCategoryId] = useState(
+    hashSelection?.categoryId ?? defaultCategory,
   );
+  const category = CATEGORIES.find((c) => c.id === categoryId) ?? CATEGORIES[0];
+  const [trainerId, setTrainerId] = useState(() => {
+    const initialCategoryId = hashSelection?.categoryId ?? defaultCategory;
+    const initialCategory =
+      CATEGORIES.find((c) => c.id === initialCategoryId) ?? CATEGORIES[0];
+    if (hashSelection?.trainerId) {
+      return hashSelection.trainerId;
+    }
+    if (defaultTrainer && initialCategory.trainers.some((t) => t.id === defaultTrainer)) {
+      return defaultTrainer;
+    }
+    return initialCategory.trainers[0]?.id;
+  });
+
+  useEffect(() => {
+    const applyHash = () => {
+      const next = resolveHashSelection();
+      if (!next) {
+        return;
+      }
+      setCategoryId(next.categoryId);
+      setTrainerId(next.trainerId);
+    };
+    window.addEventListener('hashchange', applyHash);
+    return () => window.removeEventListener('hashchange', applyHash);
+  }, []);
 
   const trainer = useMemo(() => {
     const current = CATEGORIES.find((c) => c.id === categoryId) ?? CATEGORIES[0];
@@ -196,7 +242,18 @@ function LabTrainersHubInner({defaultCategory = 'sql', defaultTrainer}) {
   const onCategoryChange = (id) => {
     setCategoryId(id);
     const next = CATEGORIES.find((c) => c.id === id);
-    setTrainerId(next?.trainers[0]?.id);
+    const nextTrainerId = next?.trainers[0]?.id;
+    setTrainerId(nextTrainerId);
+    if (typeof window !== 'undefined' && nextTrainerId) {
+      window.history.replaceState(null, '', `#${id}/${nextTrainerId}`);
+    }
+  };
+
+  const onTrainerChange = (id) => {
+    setTrainerId(id);
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', `#${categoryId}/${id}`);
+    }
   };
 
   return (
@@ -224,7 +281,7 @@ function LabTrainersHubInner({defaultCategory = 'sql', defaultTrainer}) {
               key={t.id}
               type="button"
               className={clsx(styles.trainerBtn, trainerId === t.id && styles.trainerBtnActive)}
-              onClick={() => setTrainerId(t.id)}
+              onClick={() => onTrainerChange(t.id)}
             >
               {t.label}
             </button>

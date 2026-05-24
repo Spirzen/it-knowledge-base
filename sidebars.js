@@ -12,6 +12,7 @@ const sidebars = {
       link: { type: 'doc', id: 'about/project' },
       items: [
         'about/project',
+        'about/interactive',
         'about/author',
         'about/license',
         'about/manifest',

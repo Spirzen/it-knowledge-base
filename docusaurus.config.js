@@ -146,6 +146,18 @@ module.exports = {
       },
     ],
     () => ({
+      name: 'it-konva-canvas-fallback',
+      configureWebpack() {
+        return {
+          resolve: {
+            fallback: {
+              canvas: false,
+            },
+          },
+        };
+      },
+    }),
+    () => ({
       name: 'it-design-theme-inject',
       injectHtmlTags() {
         return {

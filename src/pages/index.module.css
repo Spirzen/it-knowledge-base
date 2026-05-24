@@ -102,6 +102,58 @@
   margin: 0.5rem 0;
 }
 
+.interactive {
+  padding: 3rem 0;
+  background: var(--ifm-background-surface-color);
+  border-top: 1px solid var(--ifm-toc-border-color);
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.interactiveTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--ifm-color-content);
+  margin-bottom: 1rem;
+}
+
+.interactiveText {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: var(--ifm-color-content-secondary);
+  max-width: 52rem;
+  margin: 0 auto 1.75rem;
+}
+
+.interactiveActions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 996px) {
+  .interactive {
+    padding: 2rem 0;
+  }
+
+  .interactiveTitle {
+    font-size: 1.65rem;
+  }
+
+  .interactiveText {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interactiveActions :global(.button) {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
+
 .features {
   padding: 4rem 0;
 }

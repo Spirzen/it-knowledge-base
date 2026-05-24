@@ -60,6 +60,41 @@ function HomepageHeader() {
   );
 }
 
+function HomepageInteractive() {
+  return (
+    <section className={styles.interactive}>
+      <div className="container">
+        <div className="row">
+          <div className="col col--12">
+            <Heading as="h2" className={styles.interactiveTitle}>
+              Интерактив в каждой теме
+            </Heading>
+            <p className={styles.interactiveText}>
+              Это не просто статьи: в энциклопедии встроены сотни кастомных компонентов —
+              тренажёры клавиатуры и Office, визуализаторы алгоритмов и нейросетей, схемы
+              сети и инфраструктуры, эмуляторы Git, SQL, Docker и многое другое. Нажимайте,
+              переключайте режимы и сразу видите, как устроена тема — без установки ПО и
+              без отрыва от текста.
+            </p>
+            <div className={styles.interactiveActions}>
+              <Link
+                className="button button--primary button--lg"
+                to="/about/interactive">
+                Витрина интерактива
+              </Link>
+              <Link
+                className="button button--outline button--primary button--lg"
+                to="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">
+                Дорожная карта →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function HomepageFeatures() {
   const features = [
     {
@@ -151,6 +186,7 @@ export default function Home() {
       <main>
         <UniverseMap />
         <GettingStartedPaths />
+        <HomepageInteractive />
         <HomepageFeatures />
       </main>
       <script

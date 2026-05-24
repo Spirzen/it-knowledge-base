@@ -1,14 +1,11 @@
 import React, {useCallback, useEffect, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
+import Link from '@docusaurus/Link';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoSkeletonFallback} from './shared/demoFallback';
 import {extractTableVocabulary} from './shared/articleExtract';
+import {mergeVocabulary, shuffleArray} from './shared/englishVocabulary';
 import styles from './shared/articleWidgets.module.css';
-
-function shuffleSlice(arr, count) {
-  const copy = [...arr].sort(() => Math.random() - 0.5);
-  return copy.slice(0, count);
-}
 
 function EnglishWordRandomizerInner() {
   const [pool, setPool] = useState([]);
@@ -16,20 +13,28 @@ function EnglishWordRandomizerInner() {
   const [cols, setCols] = useState(2);
   const [ready, setReady] = useState(false);
 
+  const pickItems = useCallback((data, columnCount) => {
+    const count = columnCount >= 3 ? 1 : 5;
+    return shuffleArray(data).slice(0, Math.min(count, data.length));
+  }, []);
+
   const refresh = useCallback(() => {
-    const {items: data, cols: columnCount} = extractTableVocabulary();
-    if (!data.length) {
+    const {items: tableItems, cols: columnCount} = extractTableVocabulary();
+    const merged = mergeVocabulary(
+      tableItems.map((i) => ({term: i.term, definition: i.definition})),
+    );
+    if (!merged.length) {
       setPool([]);
       setItems([]);
+      setCols(columnCount || 2);
       setReady(true);
       return;
     }
-    const count = columnCount >= 3 ? 1 : 5;
-    setPool(data);
-    setCols(columnCount);
-    setItems(shuffleSlice(data, Math.min(count, data.length)));
+    setPool(merged);
+    setCols(columnCount >= 3 ? 3 : 2);
+    setItems(pickItems(merged, columnCount));
     setReady(true);
-  }, []);
+  }, [pickItems]);
 
   useEffect(() => {
     const timer = window.setTimeout(refresh, 150);
@@ -41,7 +46,20 @@ function EnglishWordRandomizerInner() {
   }
 
   if (!pool.length) {
-    return null;
+    return (
+      <DemoShell>
+        <DemoCard title="Тренажёр терминов" subtitle="Словарь пока недоступен на этой странице.">
+          <p className={styles.emptyState}>
+            Откройте{' '}
+            <Link to="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2">
+              статью со словарём
+            </Link>{' '}
+            или полный тренажёр в{' '}
+            <Link to="/lab/Тренажеры/1#practice/english">лаборатории</Link>.
+          </p>
+        </DemoCard>
+      </DemoShell>
+    );
   }
 
   const countLabel = cols >= 3 ? '1 термин' : '5 терминов';
@@ -49,8 +67,8 @@ function EnglishWordRandomizerInner() {
   return (
     <DemoShell>
       <DemoCard
-        title="Тренажёр терминов"
-        subtitle="Случайные слова из таблицы на странице — откройте карточку, чтобы увидеть перевод."
+        title="Быстрый просмотр терминов"
+        subtitle="Случайная подборка из общего словаря — раскройте карточку, чтобы увидеть перевод."
       >
         <span className={styles.poolBadge}>
           В словаре: {pool.length} · показано: {items.length}
@@ -58,8 +76,7 @@ function EnglishWordRandomizerInner() {
 
         <button
           type="button"
-          className="it-demo__btn it-demo__btn--primary"
-          style={{width: '100%', marginBottom: '0.75rem'}}
+          className={`it-demo__btn it-demo__btn--primary ${styles.btnBlock}`}
           onClick={refresh}
         >
           Новый набор ({countLabel})
@@ -78,9 +95,9 @@ function EnglishWordRandomizerInner() {
             </details>
           ))}
         </div>
-
         <p className={styles.footnote}>
-          * Данные читаются из таблицы в статье автоматически
+          Полный тренажёр с карточками, викториной и прогрессом — ниже на странице или в{' '}
+          <Link to="/lab/Тренажеры/1#practice/english">лаборатории</Link>.
         </p>
       </DemoCard>
     </DemoShell>

@@ -174,3 +174,6 @@ src/data/wikiLinkIndex.json
 /scripts/_*.txt
 /scripts/_*.json
 info/llm-phrases-scan.csv
+
+# Локальная панель управления Docusaurus (admin/)
+/admin/
