@@ -167,20 +167,20 @@ slug: /section/project
   <li>
   <ul>
   Проектирование и архитектура
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/1">7.06. Общее о проектировании и архитектуре</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/101">7.06. Виды архитектур</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/102">7.06. Стили внутренней организации</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/103">7.06. Принципы компонентной архитектуры</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/104">7.06. Декомпозиция монолита</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/105">7.06. Инфраструктура как архитектурный фактор</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/112">7.06. Типы классов</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/113">7.06. Конструкция из классов</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/114">7.06. Доменная модель</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/115">7.06. Паттерны проектирования</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/2">7.06. Основы системного проектирования и масштабируемости параллелизма</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/3">7.06. Архитектурная практика</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/998">7.06. Итоги</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/999">7.06. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1">7.06. Общее о проектировании и архитектуре</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/101">7.06. Виды архитектур</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/102">7.06. Стили внутренней организации</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/103">7.06. Принципы компонентной архитектуры</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/104">7.06. Декомпозиция монолита</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/105">7.06. Инфраструктура как архитектурный фактор</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/112">7.06. Типы классов</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/113">7.06. Конструкция из классов</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114">7.06. Доменная модель</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/115">7.06. Паттерны проектирования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2">7.06. Основы системного проектирования и масштабируемости параллелизма</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3">7.06. Архитектурная практика</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998">7.06. Итоги</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/999">7.06. Чек-лист самопроверки</a></li>
   </ul>
   </li>
   
@@ -193,13 +193,13 @@ slug: /section/project
   <li>
   <ul>
   Паттерны проектирования
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Паттерны%20проектирования/1">7.06. Общее о паттернах проектирования</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Паттерны%20проектирования/111">7.06. Порождающие паттерны</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Паттерны%20проектирования/112">7.06. Структурные паттерны</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Паттерны%20проектирования/113">7.06. Поведенческие паттерны</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Паттерны%20проектирования/114">7.06. Архитектурные паттерны</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Паттерны%20проектирования/115">7.06. Паттерны интеграции</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Паттерны%20проектирования/116">7.06. Паттерны доменного моделирования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/1">7.06. Общее о паттернах проектирования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/111">7.06. Порождающие паттерны</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/112">7.06. Структурные паттерны</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/113">7.06. Поведенческие паттерны</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/114">7.06. Архитектурные паттерны</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115">7.06. Паттерны интеграции</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/116">7.06. Паттерны доменного моделирования</a></li>
   </ul>
   </li>
   
@@ -212,48 +212,48 @@ slug: /section/project
   <li>
   <ul>
   Проектирование
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/1">7.06. Проектирование</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/1111">7.06. Подходы к проектированию</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/1112">7.06. Принципы проектирования</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/1113">7.06. Проектирование сервисов и методов</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/1114">7.06. Проектирование функциональных UI</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/1116">7.06. Проектирование под нефункциональные требования</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/116">7.06. Документация как инструмент проектирования</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/117">7.06. Проектирование баз данных</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/118">7.06. Проектирование API и интеграций</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/119">7.06. Паттерны микросервисной архитектуры</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/21">7.06. Проектирование веб-разработки</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/211">7.06. Проектирование распределенных систем</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2111">7.06. Хранилища DWH и ETL-процессы</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2112">7.06. Лестница проектирования систем</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2113">7.06. Вертикальное масштабирование</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2114">7.06. Горизонтальное масштабирование</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2115">7.06. Горизонтальное дублирование</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2116">7.06. Competing Consumer Pattern</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2117">7.06. Read Replicas</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2118">7.06. Shared Nothing Architecture</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2119">7.06. Shared Storage Architecture</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/212">7.06. Single Node architecture</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2120">7.06. Уровни развития API и модель Ричардсона</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2121">7.06. Модельная архитектура микросервисов</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2122">7.06. Стратегии совместного использования кода в микросервисах</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2123">7.06. CQRS</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2124">7.06. Event Sourcing</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2125">7.06. Saga</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2126">7.06. Strangler Fig</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2127">7.06. Модульный монолит</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2128">7.06. Событийно-ориентированная архитектура</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2129">7.06. Сервисно-ориентированная архитектура</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/213">7.06. Пространственная архитектура</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2130">7.06. Методы и ключ идемпотентности</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2131">7.06. Архитектура конвейера</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2132">7.06. Одноранговая архитектура</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2133">7.06. Чистая архитектура</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2134">7.06. Многоуровневая архитектура</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2135">7.06. Надежность и доступность</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2136">7.06. Уровни SLA и реальное время простоя</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2137">7.06. Инженерия устойчивости</a></li>
-  <li><a href="/encyclopedia/Проект/7.06.%20Проектирование%20и%20архитектура/Проектирование/2138">7.06. Масштабирование чтения и записи в веб-приложении</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1">7.06. Проектирование</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1111">7.06. Подходы к проектированию</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1112">7.06. Принципы проектирования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1113">7.06. Проектирование сервисов и методов</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1114">7.06. Проектирование функциональных UI</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1116">7.06. Проектирование под нефункциональные требования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116">7.06. Документация как инструмент проектирования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117">7.06. Проектирование баз данных</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118">7.06. Проектирование API и интеграций</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/119">7.06. Паттерны микросервисной архитектуры</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/21">7.06. Проектирование веб-разработки</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/211">7.06. Проектирование распределенных систем</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2111">7.06. Хранилища DWH и ETL-процессы</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2112">7.06. Лестница проектирования систем</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2113">7.06. Вертикальное масштабирование</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2114">7.06. Горизонтальное масштабирование</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2115">7.06. Горизонтальное дублирование</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2116">7.06. Competing Consumer Pattern</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2117">7.06. Read Replicas</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2118">7.06. Shared Nothing Architecture</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2119">7.06. Shared Storage Architecture</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/212">7.06. Single Node architecture</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2120">7.06. Уровни развития API и модель Ричардсона</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2121">7.06. Модельная архитектура микросервисов</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2122">7.06. Стратегии совместного использования кода в микросервисах</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2123">7.06. CQRS</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2124">7.06. Event Sourcing</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2125">7.06. Saga</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2126">7.06. Strangler Fig</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2127">7.06. Модульный монолит</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2128">7.06. Событийно-ориентированная архитектура</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2129">7.06. Сервисно-ориентированная архитектура</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/213">7.06. Пространственная архитектура</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2130">7.06. Методы и ключ идемпотентности</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2131">7.06. Архитектура конвейера</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2132">7.06. Одноранговая архитектура</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133">7.06. Чистая архитектура</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2134">7.06. Многоуровневая архитектура</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2135">7.06. Надежность и доступность</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2136">7.06. Уровни SLA и реальное время простоя</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2137">7.06. Инженерия устойчивости</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2138">7.06. Масштабирование чтения и записи в веб-приложении</a></li>
   </ul>
   </li>
   

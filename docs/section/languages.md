@@ -151,6 +151,7 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-02-python/30">5.02. Django</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/301">5.02. Справочник по Django</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/31">5.02. Работа с данными и внешним миром</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/314">5.02. Базы данных в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/32">5.02. Графика и игры</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/321">5.02. Справочник по модулю Turtle</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/33">5.02. Анализ данных и научные вычисления</a></li>

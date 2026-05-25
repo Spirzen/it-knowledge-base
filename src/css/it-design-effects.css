@@ -41,9 +41,10 @@ html[data-design='design-glass-aurora'] .apk-strip {
   border-color: rgba(255, 255, 255, 0.15);
 }
 
-html[data-design='design-phosphor-green'] body,
-html[data-design='design-matrix-code'] body {
-  text-shadow: 0 0 8px color-mix(in srgb, var(--d-primary) 35%, transparent);
+html[data-design='design-phosphor-green'] .hero__title,
+html[data-design='design-matrix-code'] .hero__title {
+  text-shadow: 0 0 12px color-mix(in srgb, var(--d-primary) 40%, transparent);
+  color: var(--d-primary);
 }
 
 html[data-design='design-phosphor-green'] .hero::after,
@@ -100,4 +101,12 @@ html[data-design='design-ink-monochrome'] .feature-card--wide {
 html[data-design='design-ink-monochrome'] .button--primary {
   background: var(--d-text);
   border-color: var(--d-text);
+  color: var(--d-bg) !important;
+}
+
+html[data-design='design-sakura-spring'] .feature-card--wide h3,
+html[data-design='design-sakura-spring'] .feature-card--wide p,
+html[data-design='design-paper-vintage'] .feature-card--wide h3,
+html[data-design='design-paper-vintage'] .feature-card--wide p {
+  color: #ffffff;
 }

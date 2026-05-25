@@ -17,7 +17,7 @@ import DocCardList from '@theme/DocCardList';
 3. [Пространства имён](/encyclopedia/5-languages/5-05-csharp/12), [nullable](/encyclopedia/5-languages/5-05-csharp/22), [исключения](/encyclopedia/5-languages/5-05-csharp/15).
 4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29).
 
-Общие принципы (код, ООП, выполнение) — в разделах [Код и разработка](/encyclopedia/4-code-dev/) и [ООП](/encyclopedia/4-code-dev/4-08-oop/1); здесь — **особенности C# и .NET**.
+Общие принципы (код, ООП, выполнение) — в разделах [Код и разработка](/encyclopedia/4-code-dev/code-dev) и [ООП](/encyclopedia/4-code-dev/4-08-oop/1); здесь — **особенности C# и .NET**.
 
 ## Справочник и углубление
 

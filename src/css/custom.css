@@ -1,6 +1,7 @@
 @import './demo-widgets.css';
 @import './it-design-themes.css';
 @import './it-design-bridge.css';
+@import './it-design-compat.css';
 @import './it-design-effects.css';
 
 /* ============================================================================
@@ -1433,5 +1434,36 @@ body.pdf-export-busy::before {
 
 [data-theme='dark'] .theme-doc-markdown a.wiki-link--glossary {
   color: #6ecfba;
+}
+
+/* IT-темы: Prism/XML — поверх глобальных [data-theme='dark'] правил выше */
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token {
+  background: transparent !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.tag,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.tag,
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.attr-name,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.attr-name,
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.attr-value,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.attr-value,
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.punctuation,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.punctuation {
+  color: var(--d-code-syntax-string) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code,
+html[data-design]:not([data-design='design-universe-original']) pre[class*='language-'] {
+  background-color: var(--d-code-bg) !important;
+  color: var(--d-code-fg) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .language-csharp .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .language-python .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .language-java .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .language-javascript .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-sql .token.keyword {
+  color: var(--d-code-syntax-keyword) !important;
 }
 

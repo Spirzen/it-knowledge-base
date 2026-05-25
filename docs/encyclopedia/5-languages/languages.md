@@ -3,7 +3,7 @@ id: languages
 title: 5. Языки - о разделе
 description: Языки программирования и типичные стеки - что берут для фронтенда и бэкенда, как языки появляются под задачи и почему «лучший язык» зависит от контекста.
 sidebar_label: 5. Языки - о разделе
-slug: /encyclopedia/5-languages/languages
+slug: /encyclopedia/5-languages/intro
 ---
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>

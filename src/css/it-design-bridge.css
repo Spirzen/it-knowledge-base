@@ -35,7 +35,7 @@ html[data-design]:not([data-design='design-universe-original']) {
   --ifm-link-color: var(--d-primary);
   --ifm-link-hover-color: var(--d-primary-dark);
   --ifm-button-background-color: var(--d-primary);
-  --ifm-button-color: #ffffff;
+  --ifm-button-color: var(--d-on-primary, #ffffff);
 
   --ifm-card-background-color: var(--d-surface);
   --ifm-card-border-radius: var(--d-radius);

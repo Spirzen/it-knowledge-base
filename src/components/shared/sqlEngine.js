@@ -6,6 +6,7 @@ export const INITIAL_USERS = [
   { id: 3, name: 'Алексей', age: 22, city: 'Екатеринбург', salary: 45000 },
   { id: 4, name: 'Елена', age: 28, city: 'Москва', salary: 55000 },
   { id: 5, name: 'Дмитрий', age: 35, city: 'Новосибирск', salary: 70000 },
+  { id: 6, name: 'Ольга', age: 27, city: null, salary: 48000 },
 ];
 
 export const USER_COLUMNS = ['id', 'name', 'age', 'city', 'salary'];
@@ -59,72 +60,113 @@ export function parseSqlLiteral(valueRaw) {
   return parsedValue;
 }
 
-export function parseWhereClause(clause) {
-  const conditions = [];
-  if (!clause || clause.trim() === '') {
-    return conditions;
+function parseSingleCondition(trimmed) {
+  if (!trimmed) {
+    return null;
   }
 
-  const parts = clause.split(/\s+AND\s+/i);
-
-  for (const part of parts) {
-    const trimmed = part.trim();
-    if (!trimmed) {
-      continue;
-    }
-
-    const match = trimmed.match(/^(\w+)\s*(>=|<=|=|>|<|LIKE)\s*(.+)$/i);
-    if (match) {
-      const [, column, operator, valueRaw] = match;
-      conditions.push({
-        column: column.toLowerCase(),
-        operator: operator.toUpperCase(),
-        value: parseSqlLiteral(valueRaw),
-      });
-    }
+  const isNotNull = trimmed.match(/^(\w+)\s+IS\s+NOT\s+NULL$/i);
+  if (isNotNull) {
+    return { type: 'is_not_null', column: isNotNull[1].toLowerCase() };
   }
 
-  return conditions;
+  const isNull = trimmed.match(/^(\w+)\s+IS\s+NULL$/i);
+  if (isNull) {
+    return { type: 'is_null', column: isNull[1].toLowerCase() };
+  }
+
+  const betweenMatch = trimmed.match(/^(\w+)\s+BETWEEN\s+(.+?)\s+AND\s+(.+)$/i);
+  if (betweenMatch) {
+    return {
+      type: 'between',
+      column: betweenMatch[1].toLowerCase(),
+      low: parseSqlLiteral(betweenMatch[2]),
+      high: parseSqlLiteral(betweenMatch[3]),
+    };
+  }
+
+  const inMatch = trimmed.match(/^(\w+)\s+IN\s*\(([^)]+)\)$/i);
+  if (inMatch) {
+    const values = inMatch[2].split(',').map((v) => parseSqlLiteral(v.trim()));
+    return { type: 'in', column: inMatch[1].toLowerCase(), values };
+  }
+
+  const match = trimmed.match(/^(\w+)\s*(>=|<=|=|>|<|LIKE)\s*(.+)$/i);
+  if (match) {
+    const [, column, operator, valueRaw] = match;
+    return {
+      type: 'compare',
+      column: column.toLowerCase(),
+      operator: operator.toUpperCase(),
+      value: parseSqlLiteral(valueRaw),
+    };
+  }
+
+  return null;
 }
 
-export function matchesConditions(row, conditions) {
-  if (conditions.length === 0) {
+/** WHERE разбирается на OR-группы; внутри группы — AND условий */
+export function parseWhereClause(clause) {
+  if (!clause || clause.trim() === '') {
+    return [];
+  }
+
+  const orGroups = clause.split(/\s+OR\s+/i);
+  return orGroups
+    .map((group) => {
+      const andParts = group.split(/\s+AND\s+/i);
+      return andParts.map((p) => parseSingleCondition(p.trim())).filter(Boolean);
+    })
+    .filter((g) => g.length > 0);
+}
+
+function matchesSingleCondition(row, cond) {
+  const rowValue = row[cond.column];
+
+  if (cond.type === 'is_null') {
+    return rowValue === null || rowValue === undefined;
+  }
+  if (cond.type === 'is_not_null') {
+    return rowValue !== null && rowValue !== undefined;
+  }
+  if (cond.type === 'between') {
+    return rowValue >= cond.low && rowValue <= cond.high;
+  }
+  if (cond.type === 'in') {
+    return cond.values.includes(rowValue);
+  }
+
+  const targetValue = cond.value;
+  if (cond.operator === '=') {
+    return rowValue === targetValue;
+  }
+  if (cond.operator === '>') {
+    return rowValue > targetValue;
+  }
+  if (cond.operator === '<') {
+    return rowValue < targetValue;
+  }
+  if (cond.operator === '>=') {
+    return rowValue >= targetValue;
+  }
+  if (cond.operator === '<=') {
+    return rowValue <= targetValue;
+  }
+  if (cond.operator === 'LIKE') {
+    const pattern = String(targetValue).replace(/\*/g, '.*').replace(/%/g, '.*');
+    return new RegExp(pattern, 'i').test(String(rowValue ?? ''));
+  }
+  return true;
+}
+
+export function matchesConditions(row, orGroups) {
+  if (!orGroups || orGroups.length === 0) {
     return true;
   }
 
-  for (const cond of conditions) {
-    const rowValue = row[cond.column];
-    const targetValue = cond.value;
-
-    if (cond.operator === '=') {
-      if (rowValue !== targetValue) {
-        return false;
-      }
-    } else if (cond.operator === '>') {
-      if (!(rowValue > targetValue)) {
-        return false;
-      }
-    } else if (cond.operator === '<') {
-      if (!(rowValue < targetValue)) {
-        return false;
-      }
-    } else if (cond.operator === '>=') {
-      if (!(rowValue >= targetValue)) {
-        return false;
-      }
-    } else if (cond.operator === '<=') {
-      if (!(rowValue <= targetValue)) {
-        return false;
-      }
-    } else if (cond.operator === 'LIKE') {
-      const pattern = String(targetValue).replace(/\*/g, '.*').replace(/%/g, '.*');
-      if (!new RegExp(pattern, 'i').test(String(rowValue))) {
-        return false;
-      }
-    }
-  }
-
-  return true;
+  return orGroups.some((andGroup) =>
+    andGroup.every((cond) => matchesSingleCondition(row, cond)),
+  );
 }
 
 export function parseSetClause(setClause) {

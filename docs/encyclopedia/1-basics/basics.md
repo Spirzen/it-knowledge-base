@@ -5,7 +5,7 @@ description: >-
   Вводный раздел энциклопедии — компьютер, данные и программы, базовый сленг и
   цифровая культура перед более специализированными темами.
 sidebar_label: 1. Основы - о разделе
-slug: /encyclopedia/Основы/Основы
+slug: /encyclopedia/1-basics/basics
 ---
 
 <div class="article-tags">

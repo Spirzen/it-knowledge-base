@@ -1,6 +1,6 @@
 .compareRow {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 1rem;
   margin-bottom: 1rem;
 }
@@ -16,6 +16,7 @@
   border-radius: 10px;
   padding: 0.75rem;
   background: var(--ifm-background-surface-color);
+  min-width: 0;
 }
 
 .panelRaster {
@@ -40,25 +41,6 @@
 
 .panelVector .panelLabel {
   color: #1565c0;
-}
-
-.viewport {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 200px;
-  overflow: auto;
-  border-radius: 8px;
-  background: repeating-conic-gradient(
-      #e8e8e8 0% 25%,
-      #f5f5f5 0% 50%
-    )
-    50% / 16px 16px;
-  padding: 1rem;
-}
-
-[data-theme='dark'] .viewport {
-  background: repeating-conic-gradient(#2a2a2a 0% 25%, #1e1e1e 0% 50%) 50% / 16px 16px;
 }
 
 .rasterWrap {

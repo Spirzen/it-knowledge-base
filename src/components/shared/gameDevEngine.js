@@ -140,6 +140,7 @@ export const DEV_ROLES = [
 export const HUB_TOPICS = [
   {title: 'Процесс', doc: '/encyclopedia/9-spinoff/9-04-razrabotka-igr/1', icon: '📋'},
   {title: 'Roblox', doc: '/encyclopedia/9-spinoff/9-04-razrabotka-igr/2', icon: '🧱'},
+  {title: 'Roblox: экономика', doc: '/encyclopedia/9-spinoff/9-04-razrabotka-igr/202', icon: '💰'},
   {title: 'Unity', doc: '/encyclopedia/9-spinoff/9-04-razrabotka-igr/3', icon: '⚙'},
   {title: 'Unreal', doc: '/encyclopedia/9-spinoff/9-04-razrabotka-igr/4', icon: '🔥'},
   {title: 'Движки', doc: '/encyclopedia/9-spinoff/9-04-razrabotka-igr/113', icon: '🏗'},

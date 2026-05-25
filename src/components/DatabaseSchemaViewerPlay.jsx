@@ -235,6 +235,8 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
   const [selectedFk, setSelectedFk] = useState(null);
   const [highlightColumn, setHighlightColumn] = useState(null);
   const [edges, setEdges] = useState([]);
+  const [connOpen, setConnOpen] = useState(true);
+  const [detailsOpen, setDetailsOpen] = useState(true);
 
   const nodeRefs = useRef({});
   const canvasRef = useRef(null);
@@ -321,10 +323,27 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
   }, [schema, selectedTable, selectedFk]);
 
   useLayoutEffect(() => {
-    updateEdges();
-    const onResize = () => updateEdges();
+    let raf = 0;
+    const schedule = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(updateEdges);
+    };
+    schedule();
+    const onResize = () => schedule();
     window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
+    const canvas = canvasRef.current;
+    const ro =
+      canvas && typeof ResizeObserver !== 'undefined'
+        ? new ResizeObserver(() => schedule())
+        : null;
+    if (ro && canvas) {
+      ro.observe(canvas);
+    }
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener('resize', onResize);
+      ro?.disconnect();
+    };
   }, [updateEdges, schema, layers, search, selectedTable]);
 
   const applySchema = useCallback((data) => {
@@ -333,6 +352,8 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
     setSelectedTable(null);
     setSelectedFk(null);
     setHighlightColumn(null);
+    setConnOpen(false);
+    setDetailsOpen(false);
     setStatus(`✓ Схема: ${data.tables.length} таблиц, ${data.foreign_keys.length} связей`);
   }, []);
 
@@ -404,6 +425,8 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
     setSelectedFk(null);
     setHighlightColumn(null);
     setSearch('');
+    setConnOpen(true);
+    setDetailsOpen(true);
     setStatus('Отключено');
   };
 
@@ -427,13 +450,34 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
   return (
     <DemoShell>
       <DemoCard title={title} subtitle={subtitle}>
-        <div className={styles.shell}>
-          <aside className={styles.connPanel}>
-            <div className={styles.brand}>
-              <div className={styles.brandTitle}>Schema Viewer</div>
-              <p className={styles.brandSub}>Параметры подключения и ER-диаграмма (эмуляция)</p>
+        <div
+          className={clsx(
+            styles.shell,
+            !connOpen && styles.shellConnCollapsed,
+            connected && schema && !detailsOpen && styles.shellDetailsCollapsed,
+          )}
+        >
+          <aside className={clsx(styles.connPanel, !connOpen && styles.connPanelCollapsed)}>
+            <div className={styles.panelHead}>
+              <div className={styles.brand}>
+                <div className={styles.brandTitle}>Schema Viewer</div>
+                {connOpen && (
+                  <p className={styles.brandSub}>Параметры подключения и ER-диаграмма (эмуляция)</p>
+                )}
+              </div>
+              <button
+                type="button"
+                className={styles.panelToggle}
+                onClick={() => setConnOpen((v) => !v)}
+                aria-expanded={connOpen}
+                title={connOpen ? 'Свернуть параметры подключения' : 'Развернуть параметры подключения'}
+              >
+                {connOpen ? '◀' : '▶'}
+              </button>
             </div>
 
+            {connOpen && (
+              <>
             <div className={styles.field}>
               <label htmlFor="dsv-db-type">Тип СУБД</label>
               <select
@@ -618,6 +662,11 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
               Эмуляция: реального подключения нет. Пароль <code>fail</code> — ошибка входа. Схемы
               shop, blog, corp_demo зависят от имени базы.
             </p>
+              </>
+            )}
+            {!connOpen && (
+              <p className={styles.collapsedHint}>Подключение</p>
+            )}
           </aside>
 
           <div className={styles.workspace}>
@@ -636,7 +685,12 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
                     {schema.tables.length} табл. · {schema.foreign_keys.length} FK
                   </span>
                 </div>
-                <div className={styles.workspaceBody}>
+                <div
+                  className={clsx(
+                    styles.workspaceBody,
+                    !detailsOpen && styles.workspaceBodyGraphOnly,
+                  )}
+                >
                   <div className={styles.graphArea}>
                     {loading && <div className={styles.loadingOverlay}>{loadingHint}</div>}
                     <div className={styles.graphCanvas} ref={canvasRef}>
@@ -682,6 +736,7 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
                                     setSelectedTable(t);
                                     setSelectedFk(null);
                                     setHighlightColumn(null);
+                                    setDetailsOpen(true);
                                   }}
                                   nodeRef={(el) => {
                                     if (el) nodeRefs.current[name] = el;
@@ -700,18 +755,41 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
                       <span>Линии — внешние ключи</span>
                     </div>
                   </div>
-                  <DetailsPanel
-                    table={selectedTable}
-                    foreignKeys={schema.foreign_keys}
-                    highlightColumn={highlightColumn}
-                    onClose={() => {
-                      setSelectedTable(null);
-                      setSelectedFk(null);
-                      setHighlightColumn(null);
-                    }}
-                    onNavigateTable={navigateToTable}
-                    onNavigateFk={navigateToFk}
-                  />
+                  {detailsOpen ? (
+                    <div className={styles.detailsWrap}>
+                      <button
+                        type="button"
+                        className={styles.panelToggle}
+                        onClick={() => setDetailsOpen(false)}
+                        aria-expanded
+                        title="Свернуть сведения о таблице"
+                      >
+                        ▶
+                      </button>
+                      <DetailsPanel
+                        table={selectedTable}
+                        foreignKeys={schema.foreign_keys}
+                        highlightColumn={highlightColumn}
+                        onClose={() => {
+                          setSelectedTable(null);
+                          setSelectedFk(null);
+                          setHighlightColumn(null);
+                        }}
+                        onNavigateTable={navigateToTable}
+                        onNavigateFk={navigateToFk}
+                      />
+                    </div>
+                  ) : (
+                    <button
+                      type="button"
+                      className={styles.detailsExpand}
+                      onClick={() => setDetailsOpen(true)}
+                      aria-expanded={false}
+                      title="Развернуть сведения о таблице"
+                    >
+                      ◀ Таблица
+                    </button>
+                  )}
                 </div>
               </>
             ) : (

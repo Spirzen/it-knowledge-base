@@ -5,6 +5,48 @@
     "mode": "light"
   },
   {
+    "id": "design-matrix-code",
+    "name": "Матрица",
+    "mode": "dark",
+    "featured": true
+  },
+  {
+    "id": "design-paper-vintage",
+    "name": "Бумажный архив",
+    "mode": "light",
+    "featured": true
+  },
+  {
+    "id": "design-sakura-spring",
+    "name": "Сакура",
+    "mode": "light",
+    "featured": true
+  },
+  {
+    "id": "design-neon-tokyo",
+    "name": "Неон Токио",
+    "mode": "dark",
+    "featured": true
+  },
+  {
+    "id": "design-brutalist-swiss",
+    "name": "Брутализм Swiss",
+    "mode": "light",
+    "featured": true
+  },
+  {
+    "id": "design-phosphor-green",
+    "name": "Фосфорный CRT",
+    "mode": "dark",
+    "featured": true
+  },
+  {
+    "id": "design-ink-monochrome",
+    "name": "Монохромные чернила",
+    "mode": "light",
+    "featured": true
+  },
+  {
     "id": "design-cosmic-void",
     "name": "Космическая пустота",
     "mode": "dark"
@@ -30,28 +72,8 @@
     "mode": "dark"
   },
   {
-    "id": "design-neon-tokyo",
-    "name": "Неон Токио",
-    "mode": "dark"
-  },
-  {
-    "id": "design-paper-vintage",
-    "name": "Бумажный архив",
-    "mode": "light"
-  },
-  {
-    "id": "design-brutalist-swiss",
-    "name": "Брутализм Swiss",
-    "mode": "light"
-  },
-  {
     "id": "design-glass-aurora",
     "name": "Стекло и северное сияние",
-    "mode": "dark"
-  },
-  {
-    "id": "design-phosphor-green",
-    "name": "Фосфорный CRT",
     "mode": "dark"
   },
   {
@@ -90,11 +112,6 @@
     "mode": "light"
   },
   {
-    "id": "design-sakura-spring",
-    "name": "Сакура",
-    "mode": "light"
-  },
-  {
     "id": "design-mint-cool",
     "name": "Мятная свежесть",
     "mode": "light"
@@ -112,16 +129,6 @@
   {
     "id": "design-blueprint-tech",
     "name": "Технический чертёж",
-    "mode": "light"
-  },
-  {
-    "id": "design-matrix-code",
-    "name": "Матрица",
-    "mode": "dark"
-  },
-  {
-    "id": "design-ink-monochrome",
-    "name": "Монохромные чернила",
     "mode": "light"
   }
 ]

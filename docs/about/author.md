@@ -80,7 +80,7 @@ import AuthorProfilePlay from '@site/src/components/AuthorProfilePlay.jsx';
 ## Что вы найдете в базе знаний
 
 - **9 основных разделов** покрывающих все аспекты IT
-- **2000+ статей** с подробными объяснениями
+- **3000+ статей** с подробными объяснениями
 - **15+ языков программирования** от основ до продвинутого уровня
 - **Практические примеры** и упражнения
 - **Актуальную информацию** о современных технологиях
@@ -97,6 +97,8 @@ import AuthorProfilePlay from '@site/src/components/AuthorProfilePlay.jsx';
 - **Карта**: 5469060010806112
 - **Через Telegram**: [https://t.me/spirzenverse](https://t.me/spirzenverse)
 - **Через Дзен**: [https://dzen.ru/itus](https://dzen.ru/itus)
+- **Подарить мне игру в Steam** [сюда](https://steamcommunity.com/id/brutal_professor/)
+- **Поставить звезду на GitHub** [здесь](https://github.com/Spirzen/it-knowledge-base)
 
 ### Другие способы поддержки
 

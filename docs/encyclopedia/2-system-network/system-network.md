@@ -3,7 +3,7 @@ id: Система-Сеть
 title: 2. Система и сеть - о разделе
 description: После базовой грамотности — сети, сервисы и более специализированные темы - как устроены системы, с которыми вы работаете как пользователь и специалист.
 sidebar_label: 2. Система и сеть - о разделе
-slug: /encyclopedia/Система и сеть/Система-Сеть
+slug: /encyclopedia/2-system-network/system-network
 ---
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>

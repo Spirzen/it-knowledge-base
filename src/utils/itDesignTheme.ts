@@ -9,9 +9,17 @@ export interface ItDesign {
   id: string;
   name: string;
   mode: ItDesignMode;
+  featured?: boolean;
 }
 
 export const IT_DESIGNS: ItDesign[] = designs as ItDesign[];
+
+/** Популярные темы — в JSON идут сразу после оригинала; здесь для явной группировки в UI */
+export const IT_FEATURED_DESIGNS = IT_DESIGNS.filter((d) => d.featured);
+
+export const IT_OTHER_DESIGNS = IT_DESIGNS.filter(
+  (d) => d.id !== IT_DESIGN_DEFAULT_ID && !d.featured,
+);
 
 export function getItDesignById(id: string): ItDesign | undefined {
   return IT_DESIGNS.find((d) => d.id === id);

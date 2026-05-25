@@ -12,9 +12,9 @@ const CATEGORIES = [
     label: 'SQL',
     trainers: [
       {
-        id: 'sql-select',
-        label: 'SELECT',
-        article: '/encyclopedia/3-data-markup/3-07-sql/1',
+        id: 'sql-trainer',
+        label: 'SQL-тренажёр',
+        article: '/encyclopedia/3-data-markup/3-07-sql/111',
         load: () => import('./SqlTrainer'),
       },
       {

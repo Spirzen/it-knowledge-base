@@ -5,11 +5,25 @@ const KEYSPACE = {
   ],
 };
 
+function hasPartitionKeyInSelect(q) {
+  return /user_id\s*=\s*'[^']+'/i.test(q);
+}
+
 export function executeCql(line) {
   const q = line.trim().replace(/\s+/g, ' ');
   if (!q) return {lines: []};
 
   if (/^SELECT/i.test(q)) {
+    if (!hasPartitionKeyInSelect(q) && !/ALLOW\s+FILTERING/i.test(q)) {
+      return {
+        lines: [
+          {
+            type: 'error',
+            text: 'InvalidRequest: Cannot execute this query as it might involve data filtering and sorting. Укажите partition key: WHERE user_id = \'u-1\'',
+          },
+        ],
+      };
+    }
     const userMatch = q.match(/user_id\s*=\s*'([^']+)'/i);
     const rows = userMatch
       ? KEYSPACE.user_events.filter((r) => r.user_id === userMatch[1])

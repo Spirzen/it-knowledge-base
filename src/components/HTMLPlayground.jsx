@@ -175,7 +175,7 @@ function HTMLPlaygroundInner() {
     previewState === 'pending' ? 'обновление…' : previewState === 'live' ? 'live' : 'готов';
 
   return (
-    <DemoShell>
+    <DemoShell fullscreenable={false}>
       <div
         className={clsx(styles.shell, isFullscreen && styles.shellFullscreen)}
         role="region"

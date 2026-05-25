@@ -3,6 +3,9 @@ import {useColorMode} from '@docusaurus/theme-common';
 import {
   applyItDesign,
   IT_DESIGNS,
+  IT_FEATURED_DESIGNS,
+  IT_OTHER_DESIGNS,
+  IT_DESIGN_DEFAULT_ID,
   readStoredItDesignId,
 } from '@site/src/utils/itDesignTheme';
 import styles from './styles.module.css';
@@ -37,11 +40,25 @@ export default function DesignThemePicker(): React.ReactElement {
         value={designId}
         onChange={onChange}
         aria-label="Выбор темы оформления">
-        {IT_DESIGNS.map((design) => (
+        {IT_DESIGNS.filter((d) => d.id === IT_DESIGN_DEFAULT_ID).map((design) => (
           <option key={design.id} value={design.id}>
             {design.name}
           </option>
         ))}
+        <optgroup label="★ Популярные">
+          {IT_FEATURED_DESIGNS.map((design) => (
+            <option key={design.id} value={design.id}>
+              {design.name}
+            </option>
+          ))}
+        </optgroup>
+        <optgroup label="Все темы">
+          {IT_OTHER_DESIGNS.map((design) => (
+            <option key={design.id} value={design.id}>
+              {design.name}
+            </option>
+          ))}
+        </optgroup>
       </select>
     </label>
   );

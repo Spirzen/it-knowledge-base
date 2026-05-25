@@ -168,7 +168,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 ### Просмотр схемы БД
 
-Имитация подключения к СУБД и ER-диаграмма таблиц с внешними ключами — по мотивам Database Schema Viewer.
+Имитация подключения к СУБД и ER-диаграмма таблиц с внешними ключами — по мотивам Database Schema Viewer. Панели подключения и сведений о таблице можно свернуть, чтобы видеть схему целиком.
 
 Статья: [Основы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1)
 
@@ -204,9 +204,9 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 ### ArchiStyler — планировщик классов
 
-UML-диаграмма, шаблоны паттернов (MVP, Strategy, Repository, слои), роли классов и превью C# / Java.
+UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factory, Repository, слои), роли классов и превью C# / Java. Режим «во весь экран» — кнопка ⛶ у демо.
 
-Статья: [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112)
+Статьи: [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112), [Паттерны проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/1)
 
 <ArchiStylerPlay defaultPattern="mvp" />
 
@@ -261,14 +261,6 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Reposi
 Статья: [Аналитика](/encyclopedia/7-project/7-04-analitika/129)
 
 <BpmnReferencePlay />
-
-### ArchiStyler — классы и паттерны
-
-Сборка архитектуры из классов: связи, шаблоны GoF, генерация кода.
-
-Статья: [Паттерны проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/1)
-
-<ArchiStylerPlay defaultPattern="strategy" title="Паттерны на диаграмме" />
 
 ---
 

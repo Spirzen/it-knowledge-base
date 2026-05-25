@@ -3,7 +3,7 @@ id: code-dev
 title: 4. Код и разработка - о разделе
 description: От алгоритмов и синтаксиса до архитектуры, отладки и инженерных практик — что стоит за «магией» кода и почему разработка шире, чем набор команд.
 sidebar_label: 4. Код и разработка - о разделе
-slug: /encyclopedia/Код и разработка/code-dev
+slug: /encyclopedia/4-code-dev/code-dev
 ---
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>

@@ -242,7 +242,7 @@
 | **LiteratureShelfPlay** | `src/components/LiteratureShelfPlay.jsx` | 1 | [1](/tools/documentation/1) |
 | **LoadStressMetricsPlay** | `src/components/LoadStressMetricsPlay.jsx` | 3 | [122](/encyclopedia/7-project/7-05-testirovanie/122), [4](/tools/development/4), [1](/tools/testing/1) |
 | **LoadTestSimulatorPlay** | `src/components/LoadTestSimulatorPlay.jsx` | 1 | [1014](/encyclopedia/7-project/7-05-testirovanie/1014) |
-| **LogExplorerDemo** | `src/components/LogExplorerDemo.jsx` | 4 | [3](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3), [92](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92), [1111](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1111), [19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19) |
+| **LogExplorerDemo** | `src/components/LogExplorerDemo.jsx` | 4 | [6](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6), [92](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92), [1111](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1111), [19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19) |
 | **LogicTruthTableDemo** | `src/components/LogicTruthTableDemo.jsx` | 1 | [31](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/31) |
 | **LoopsSimulator** | `src/components/LoopsSimulator.jsx` | 34 | [5](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/5), [113](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/113), [20](/encyclopedia/5-languages/5-01-javascript/20), [23](/encyclopedia/5-languages/5-02-python/23), [17](/encyclopedia/5-languages/5-03-java/17), …ещё 29 |
 | **LowCodeRolloutPlay** | `src/components/LowCodeRolloutPlay.jsx` | 1 | [111](/encyclopedia/8-infra-security/8-02-low-code-no-code/111) |
@@ -284,7 +284,7 @@
 | **NoSqlModelsPlay** | `src/components/NoSqlModelsPlay.jsx` | 1 | [2](/tools/data/2) |
 | **NotesWorkflowPlay** | `src/components/NotesWorkflowPlay.jsx` | 1 | [3](/tools/misc/3) |
 | **ObjectLifecycleSimulator** | `src/components/ObjectLifecycleSimulator.jsx` | 1 | [1](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/1) |
-| **ObservabilityStackDemo** | `src/components/ObservabilityStackDemo.jsx` | 6 | [3](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3), [92](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92), [19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19), [217](/encyclopedia/8-infra-security/8-04-devops-ci-cd/217), [4](/tools/development/4), …ещё 1 |
+| **ObservabilityStackDemo** | `src/components/ObservabilityStackDemo.jsx` | 6 | [6](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6), [92](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92), [19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19), [217](/encyclopedia/8-infra-security/8-04-devops-ci-cd/217), [4](/tools/development/4), …ещё 1 |
 | **ObsStreamStudioPlay** | `src/components/ObsStreamStudioPlay.jsx` | 1 | [5](/tools/multimedia/5) |
 | **OfficeSuiteComparePlay** | `src/components/OfficeSuiteComparePlay.jsx` | 1 | [1](/tools/misc/1) |
 | **OneCPlatformEmulator** | `src/components/OneCPlatformEmulator.jsx` | 8 | [1](/encyclopedia/5-languages/5-27-1s/1), [111](/encyclopedia/5-languages/5-27-1s/111), [112](/encyclopedia/5-languages/5-27-1s/112), [113](/encyclopedia/5-languages/5-27-1s/113), [114](/encyclopedia/5-languages/5-27-1s/114), …ещё 3 |
@@ -329,7 +329,7 @@
 | **PseudoDocumentEditor** | `src/components/PseudoDocumentEditor.jsx` | 1 | [1005](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1005) |
 | **PulumiIacPlay** | `src/components/PulumiIacPlay.jsx` | 1 | [21](/encyclopedia/8-infra-security/8-04-devops-ci-cd/21) |
 | **PushNotificationPlay** | `src/components/PushNotificationPlay.jsx` | 2 | [117](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/117), [120](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120) |
-| **PythonDatabasePlay** | `src/components/PythonDatabasePlay.jsx` | 2 | [30](/encyclopedia/5-languages/5-02-python/30), [31](/encyclopedia/5-languages/5-02-python/31) |
+| **PythonDatabasePlay** | `src/components/PythonDatabasePlay.jsx` | 2 | [30](/encyclopedia/5-languages/5-02-python/30), [314](/encyclopedia/5-languages/5-02-python/314) |
 | **PythonDataStatsPlay** | `src/components/PythonDataStatsPlay.jsx` | 1 | [424](/encyclopedia/3-data-markup/3-11-analiz-dannyh/424) |
 | **QrCodeGenerator** | `src/components/QrCodeGenerator.jsx` | 1 | [2](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/2) |
 | **QueryLanguagesPlay** | `src/components/QueryLanguagesPlay.jsx` | 2 | [2](/encyclopedia/1-basics/1-21-poisk-informatsii/2), [13](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/13) |

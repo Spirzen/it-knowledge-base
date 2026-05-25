@@ -183,3 +183,40 @@
   text-align: right;
   word-break: break-word;
 }
+
+.schemaPanel {
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.schemaTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.schemaTab {
+  padding: 0.3rem 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: transparent;
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+}
+
+.schemaTab:hover {
+  border-color: var(--sql-accent, var(--ifm-color-primary));
+  color: var(--ifm-color-content);
+}
+
+.schemaTabActive {
+  border-color: var(--sql-accent, var(--ifm-color-primary));
+  background: color-mix(in srgb, var(--sql-accent, var(--ifm-color-primary)) 12%, transparent);
+  color: var(--sql-accent, var(--ifm-color-primary));
+}

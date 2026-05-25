@@ -9,6 +9,14 @@
   min-height: 420px;
 }
 
+.shellConnCollapsed {
+  grid-template-columns: 44px 1fr;
+}
+
+.shellDetailsCollapsed .workspaceBodyGraphOnly {
+  grid-template-columns: 1fr;
+}
+
 @media (max-width: 900px) {
   .shell {
     grid-template-columns: 1fr;
@@ -23,6 +31,48 @@
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
+  min-width: 0;
+}
+
+.connPanelCollapsed {
+  padding: 0.5rem 0.35rem;
+  align-items: center;
+}
+
+.panelHead {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.35rem;
+}
+
+.panelToggle {
+  flex-shrink: 0;
+  padding: 0.2rem 0.45rem;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  border-radius: 5px;
+  border: 1px solid var(--demo-border);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--demo-muted);
+}
+
+.panelToggle:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.collapsedHint {
+  margin: 0.5rem 0 0;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--demo-muted);
+  letter-spacing: 0.04em;
 }
 
 @media (max-width: 900px) {
@@ -212,6 +262,51 @@
   min-height: 300px;
 }
 
+.workspaceBodyGraphOnly {
+  grid-template-columns: 1fr;
+}
+
+.detailsWrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-left: 1px solid var(--demo-border);
+}
+
+.detailsWrap .panelToggle {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.35rem;
+  z-index: 2;
+}
+
+.detailsWrap .detailsPanel {
+  border-left: none;
+  padding-top: 2rem;
+}
+
+.detailsExpand {
+  align-self: stretch;
+  width: 2rem;
+  padding: 0.5rem 0.25rem;
+  border: none;
+  border-left: 1px solid var(--demo-border);
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-color));
+  cursor: pointer;
+  font-size: 0.68rem;
+  font-weight: 600;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  color: var(--ifm-color-primary);
+  font-family: inherit;
+}
+
+.detailsExpand:hover {
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-background-color));
+}
+
 @media (max-width: 768px) {
   .workspaceBody {
     grid-template-columns: 1fr;
@@ -225,6 +320,18 @@
   padding: 1rem;
   min-height: 280px;
   background: color-mix(in srgb, var(--ifm-color-emphasis-100) 40%, var(--ifm-background-color));
+}
+
+:global(.it-demo--fullscreen) .shell {
+  min-height: min(78vh, 820px);
+}
+
+:global(.it-demo--fullscreen) .graphArea {
+  min-height: min(68vh, 720px);
+}
+
+:global(.it-demo--fullscreen) .detailsPanel {
+  max-height: none;
 }
 
 .graphCanvas {

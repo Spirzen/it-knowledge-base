@@ -35,7 +35,47 @@
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 1rem;
-  background: var(--ifm-code-background);
+  background: var(--demo-code-bg, var(--ifm-code-background));
+  color: var(--demo-code-fg, var(--ifm-pre-color, var(--ifm-color-content)));
+}
+
+.codePanel code {
+  color: inherit;
+  background: transparent;
+  padding: 0;
+  white-space: pre;
+}
+
+.syntaxKw {
+  color: var(--demo-syntax-kw, var(--ifm-color-primary));
+}
+
+.syntaxType {
+  color: var(--demo-syntax-type, #2e7d32);
+}
+
+.syntaxFn {
+  color: var(--demo-syntax-fn, var(--ifm-color-primary-dark));
+}
+
+.syntaxStr {
+  color: var(--demo-syntax-str, #c45c26);
+}
+
+.syntaxAccess {
+  color: var(--demo-syntax-access, #1565c0);
+}
+
+.syntaxPlain {
+  color: var(--demo-syntax-plain, inherit);
+}
+
+.syntaxVar {
+  color: var(--demo-syntax-var, var(--demo-syntax-access, #1565c0));
+}
+
+.syntaxComment {
+  color: var(--demo-syntax-comment, var(--demo-muted, var(--ifm-color-content-secondary)));
 }
 
 .codeLine {

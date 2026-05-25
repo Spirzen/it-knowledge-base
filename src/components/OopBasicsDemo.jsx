@@ -15,11 +15,11 @@ import {
 import shared from './shared/runtimeDemo.module.css';
 import styles from './OopBasicsDemo.module.css';
 
-const TOKEN = {
-  kw: {color: '#c586c0'},
-  type: {color: '#4ec9b0'},
-  fn: {color: '#dcdcaa'},
-  p: {color: '#d4d4d4'},
+const SYNTAX_CLASS = {
+  kw: shared.syntaxKw,
+  type: shared.syntaxType,
+  fn: shared.syntaxFn,
+  p: shared.syntaxPlain,
 };
 
 function ClassBlueprint({highlight}) {
@@ -30,7 +30,7 @@ function ClassBlueprint({highlight}) {
       {CAT_CLASS.attributes.map((a) => (
         <div key={a.key} className={styles.fieldRow}>
           <span>
-            <span style={highlight === 'attributes' ? TOKEN.type : undefined}>{a.type}</span>{' '}
+            <span className={highlight === 'attributes' ? shared.syntaxType : undefined}>{a.type}</span>{' '}
             <strong>{a.key}</strong>
           </span>
           <span className={styles.emptyValue}>—</span>
@@ -39,7 +39,7 @@ function ClassBlueprint({highlight}) {
       <div className={styles.sectionLabel}>Методы</div>
       {CAT_CLASS.methods.map((m) => (
         <div key={m.key} className={styles.methodRow}>
-          <span style={highlight === 'methods' ? TOKEN.fn : undefined}>{m.key}()</span>
+          <span className={highlight === 'methods' ? shared.syntaxFn : undefined}>{m.key}()</span>
           <span className={styles.fieldType}>{m.returns}</span>
         </div>
       ))}
@@ -89,7 +89,7 @@ function CatCodeBlock({selected, callLine}) {
         >
           <code>
             {line.parts.map((p, i) => (
-              <span key={i} style={TOKEN[p.t]}>
+              <span key={i} className={SYNTAX_CLASS[p.t] ?? shared.syntaxPlain}>
                 {p.v}
               </span>
             ))}

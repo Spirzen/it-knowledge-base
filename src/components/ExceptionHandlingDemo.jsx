@@ -7,12 +7,12 @@ import {SCENARIO_IDS, getScenario} from './shared/exceptionDemoEngine';
 import shared from './shared/runtimeDemo.module.css';
 import styles from './ExceptionHandlingDemo.module.css';
 
-const TOKEN = {
-  comment: {color: 'var(--demo-muted)'},
-  kw: {color: '#c586c0'},
-  fn: {color: '#dcdcaa'},
-  v: {color: '#9cdcfe'},
-  p: {color: '#d4d4d4'},
+const SYNTAX_CLASS = {
+  comment: shared.syntaxComment,
+  kw: shared.syntaxKw,
+  fn: shared.syntaxFn,
+  v: shared.syntaxVar,
+  p: shared.syntaxPlain,
 };
 
 function StackPanel({frames}) {
@@ -214,7 +214,7 @@ function ExceptionHandlingDemoInner() {
                 <span className={shared.lineNum}>{line.num}</span>
                 <code>
                   {line.parts.map((p, i) => (
-                    <span key={i} style={TOKEN[p.t]}>
+                    <span key={i} className={SYNTAX_CLASS[p.t] ?? shared.syntaxPlain}>
                       {p.v}
                     </span>
                   ))}

@@ -23,12 +23,12 @@ import {
 import shared from './shared/runtimeDemo.module.css';
 import styles from './OopPolymorphismDemo.module.css';
 
-const TOKEN = {
-  kw: {color: '#c586c0'},
-  type: {color: '#4ec9b0'},
-  fn: {color: '#dcdcaa'},
-  str: {color: '#ce9178'},
-  p: {color: '#d4d4d4'},
+const SYNTAX_CLASS = {
+  kw: shared.syntaxKw,
+  type: shared.syntaxType,
+  fn: shared.syntaxFn,
+  str: shared.syntaxStr,
+  p: shared.syntaxPlain,
 };
 
 function CodeBlock({lines}) {
@@ -41,7 +41,7 @@ function CodeBlock({lines}) {
         >
           <code>
             {line.parts.map((p, i) => (
-              <span key={i} style={TOKEN[p.t] ?? TOKEN.p}>
+              <span key={i} className={SYNTAX_CLASS[p.t] ?? shared.syntaxPlain}>
                 {p.v}
               </span>
             ))}

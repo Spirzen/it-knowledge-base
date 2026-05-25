@@ -276,15 +276,15 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Софт продвинутого пользователя
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1">1.13. Программное обеспечение для продвинутых пользователей</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1">1.13. Софт продвинутого — обзор стека</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/2">1.13. Файловые менеджеры и системные утилиты</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/3">1.13. Инструменты разработки и программирования</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/3">1.13. Редакторы кода — VS Code, Vim, Notepad++</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4">1.13. Графика, дизайн и 3D-моделирование</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/5">1.13. Сетевые и системные диагностические утилиты</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/6">1.13. Автоматизация задач и бизнес-процессов</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/6">1.13. Автоматизация — AutoHotkey и PowerShell</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/7">1.13. Безопасность и системное администрирование</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8">1.13. Виртуализация и управление операционными системами</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/9">1.13. Дополнительные полезные инструменты</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/9">1.13. PowerToys и дополнительные утилиты</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/98">1.13. Итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/99">1.13. Чек-лист самопроверки</a></li>
   </ul>
@@ -298,13 +298,14 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Советы для продвинутого
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1">1.14. Советы для опытного пользователя</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/2">1.14. Продвинутая безопасность</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3">1.14. Мониторинг системы и анализ логов</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4">1.14. Резервное копирование</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5">1.14. Железо и производительность</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6">1.14. Уход за компьютерным оборудованием</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7">1.14. Диагностика троттлинга, тормозов и зависаний</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1">1.14. Путь продвинутого пользователя</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/2">1.14. Скрипты, макросы и автоматизация</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3">1.14. ВМ, Home Lab и Linux</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4">1.14. Приватность и self-hosting</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5">1.14. Рабочий процесс без мыши</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6">1.14. Процессы и чистка Windows</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7">1.14. Игры — FPS и латентность</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/8">1.14. Железо и диагностика</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/98">1.14. Итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/99">1.14. Чек-лист самопроверки</a></li>
   </ul>
@@ -1635,6 +1636,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/29">5.02. Асинхронность и многопоточность в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/30">5.02. Django</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/31">5.02. Работа с файлами, сетью и внешними API</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/314">5.02. Работа с базами данных в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/32">5.02. Turtle</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/33">5.02. Анализ данных - pandas, NumPy, SciPy</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/34">5.02. Веб-разработка и REST API на Python</a></li>
@@ -3348,6 +3350,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/124">9.04. Тестирование игр</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/201">9.04. Справочник по Roblox</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/301">9.04. Справочник по Unity</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/401">9.04. Справочник по Unreal Engine</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/998">9.04. Итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/999">9.04. Чек-лист самопроверки</a></li>
   </ul>

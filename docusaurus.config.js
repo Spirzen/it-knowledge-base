@@ -124,6 +124,14 @@ module.exports = {
         createRedirects(existingPath) {
           const fromEncyclopedia = createEncyclopediaFolderRedirects(existingPath);
           const slugRedirects = {
+            '/encyclopedia/1-basics/basics': ['/encyclopedia/Основы/Основы'],
+            '/encyclopedia/2-system-network/system-network': [
+              '/encyclopedia/Система и сеть/Система-Сеть',
+            ],
+            '/encyclopedia/4-code-dev/code-dev': [
+              '/encyclopedia/Код и разработка/code-dev',
+            ],
+            '/encyclopedia/5-languages/intro': ['/encyclopedia/5-languages/languages'],
             '/tools/testing/1': ['/tools/Тестирование/1'],
             '/tools/testing/2': ['/tools/Тестирование/2'],
             '/tools/testing/3': ['/tools/Тестирование/3'],
@@ -133,11 +141,65 @@ module.exports = {
             '/tools/data/4': ['/tools/Данные/4'],
             '/tools/data/5': ['/tools/Данные/5'],
             '/tools/data/6': ['/tools/Данные/6'],
+            '/tools/automation/1': ['/tools/Автоматизация/1'],
+            '/tools/automation/2': ['/tools/Автоматизация/2'],
+            '/tools/automation/3': ['/tools/Автоматизация/3'],
+            '/tools/games/1': ['/tools/Игры/1'],
+            '/tools/games/2': ['/tools/Игры/2'],
+            '/tools/games/3': ['/tools/Игры/3'],
+            '/tools/games/4': ['/tools/Игры/4'],
+            '/tools/games/1111': ['/tools/Игры/1111'],
+            '/tools/network/intro': ['/tools/Сеть/intro'],
+            '/tools/network/1': ['/tools/Сеть/1'],
+            '/tools/network/2': ['/tools/Сеть/2'],
+            '/tools/network/3': ['/tools/Сеть/3'],
+            '/tools/network/4': ['/tools/Сеть/4'],
+            '/tools/security/1': ['/tools/Безопасность/1'],
+            '/tools/security/2': ['/tools/Безопасность/2'],
+            '/tools/security/3': ['/tools/Безопасность/3'],
+            '/tools/security/4': ['/tools/Безопасность/4'],
+            '/tools/documentation/1': ['/tools/Документация/1'],
+            '/tools/documentation/2': ['/tools/Документация/2'],
+            '/tools/documentation/3': ['/tools/Документация/3'],
+            '/tools/documentation/4': ['/tools/Документация/4'],
+            '/tools/documentation/5': ['/tools/Документация/5'],
+            '/tools/development/1': ['/tools/Разработка/1'],
+            '/tools/development/2': ['/tools/Разработка/2'],
+            '/tools/development/3': ['/tools/Разработка/3'],
+            '/tools/development/4': ['/tools/Разработка/4'],
+            '/tools/misc/1': ['/tools/Прочее/1'],
+            '/tools/misc/2': ['/tools/Прочее/2'],
+            '/tools/misc/3': ['/tools/Прочее/3'],
+            '/tools/misc/4': ['/tools/Прочее/4'],
+            '/tools/misc/5': ['/tools/Прочее/5'],
+            '/tools/misc/6': ['/tools/Прочее/6'],
             '/encyclopedia/3-data-markup/data-markup': [
               '/encyclopedia/3-data-markup/Данные-markup',
             ],
             '/section/data-markup': ['/section/Данные-markup'],
           };
+          const cLanguageRedirects = {};
+          for (let n = 1; n <= 8; n += 1) {
+            cLanguageRedirects[`/encyclopedia/5-languages/5-16-starye-yazyki/c-language/${n}`] = [
+              `/encyclopedia/5-languages/5-16-starye-yazyki/С/${n}`,
+            ];
+          }
+          for (const id of [
+            '211', '212', '213', '311', '411', '711', '712',
+          ]) {
+            cLanguageRedirects[
+              `/encyclopedia/5-languages/5-16-starye-yazyki/c-language/${id}`
+            ] = [`/encyclopedia/5-languages/5-16-starye-yazyki/С/${id}`];
+          }
+          const designPatternRedirects = {};
+          for (const id of ['1', '111', '112', '113', '114', '115', '116']) {
+            designPatternRedirects[
+              `/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/${id}`
+            ] = [
+              `/encyclopedia/Проект/7.06. Проектирование и архитектура/паттерны проектирования/${id}`,
+            ];
+          }
+          Object.assign(slugRedirects, cLanguageRedirects, designPatternRedirects);
           if (slugRedirects[existingPath]) {
             return slugRedirects[existingPath];
           }

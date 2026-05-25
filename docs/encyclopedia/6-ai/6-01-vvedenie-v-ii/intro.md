@@ -8,6 +8,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Вводный блок: отличие ML от маркетингового «ИИ», история, типы моделей, контекст для LLM. Начните с [главной статьи раздела](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1).
+
 <DocCardList />
 
 ---

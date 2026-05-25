@@ -3,6 +3,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
+import ZoomPanViewport from './shared/ZoomPanViewport';
 import {
   describeRasterAtZoom,
   describeVectorAtZoom,
@@ -16,6 +17,8 @@ import toolStyles from './shared/toolDemo.module.css';
 
 function RasterVectorCompareDemoInner() {
   const canvasRef = useRef(null);
+  const rasterScrollerRef = useRef(null);
+  const vectorScrollerRef = useRef(null);
   const [zoom, setZoom] = useState(2);
 
   useEffect(() => {
@@ -32,7 +35,7 @@ function RasterVectorCompareDemoInner() {
     <DemoShell>
       <DemoCard
         title="Растр и вектор: масштабирование"
-        subtitle="Одна и та же сцена — слева фиксированная сетка пикселей, справа параметрическое SVG. Увеличьте масштаб и сравните края."
+        subtitle="Одна и та же сцена — слева фиксированная сетка пикселей, справа параметрическое SVG. Увеличьте масштаб, прокрутите или перетащите область просмотра и сравните края."
       >
         <div className={styles.zoomRow}>
           <span className="it-demo__label" style={{marginBottom: 0}}>
@@ -68,11 +71,14 @@ function RasterVectorCompareDemoInner() {
         <div className={styles.compareRow}>
           <div className={clsx(styles.panel, styles.panelRaster)}>
             <div className={styles.panelLabel}>Растр ({SCENE_SIZE}×{SCENE_SIZE} px)</div>
-            <div className={styles.viewport}>
-              <div
-                className={styles.rasterWrap}
-                style={{width: displaySize, height: displaySize}}
-              >
+            <ZoomPanViewport
+              contentWidth={displaySize}
+              contentHeight={displaySize}
+              scrollerRef={rasterScrollerRef}
+              syncRef={vectorScrollerRef}
+              ariaLabel="Область просмотра растрового изображения"
+            >
+              <div className={styles.rasterWrap}>
                 <canvas
                   ref={canvasRef}
                   className={styles.canvas}
@@ -82,13 +88,19 @@ function RasterVectorCompareDemoInner() {
                   aria-label="Растровое изображение фиксированного разрешения"
                 />
               </div>
-            </div>
+            </ZoomPanViewport>
             <p className={styles.hint}>{describeRasterAtZoom(zoom)}</p>
           </div>
 
           <div className={clsx(styles.panel, styles.panelVector)}>
             <div className={styles.panelLabel}>Вектор (SVG)</div>
-            <div className={styles.viewport}>
+            <ZoomPanViewport
+              contentWidth={displaySize}
+              contentHeight={displaySize}
+              scrollerRef={vectorScrollerRef}
+              syncRef={rasterScrollerRef}
+              ariaLabel="Область просмотра векторного SVG"
+            >
               <svg
                 className={styles.svgShape}
                 viewBox={`0 0 ${SCENE_SIZE} ${SCENE_SIZE}`}
@@ -100,7 +112,7 @@ function RasterVectorCompareDemoInner() {
                 <rect x="18" y="52" width="84" height="28" fill="#1976d2" stroke="#1a237e" strokeWidth="3" />
                 <circle cx="60" cy="42" r="22" fill="#ef6c00" />
               </svg>
-            </div>
+            </ZoomPanViewport>
             <p className={styles.hint}>{describeVectorAtZoom(zoom)}</p>
           </div>
         </div>
