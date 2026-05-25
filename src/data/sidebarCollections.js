@@ -114,6 +114,7 @@ export const SIDEBAR_COLLECTIONS = [
       'encyclopedia/5-languages/5-01-javascript/intro',
       'encyclopedia/5-languages/5-02-python/intro',
       'encyclopedia/5-languages/5-03-java/intro',
+      'encyclopedia/5-languages/5-03-java/294',
     ],
   },
   {
@@ -214,6 +215,7 @@ export const SIDEBAR_COLLECTIONS = [
       'encyclopedia/5-languages/5-05-csharp/intro',
       'encyclopedia/5-languages/5-05-csharp/45',
       'encyclopedia/5-languages/5-05-csharp/451',
+      'encyclopedia/5-languages/5-05-csharp/455',
       'encyclopedia/5-languages/5-05-csharp/453',
       'encyclopedia/5-languages/5-02-python/intro',
       'encyclopedia/5-languages/5-02-python/34',
@@ -389,6 +391,7 @@ export const SIDEBAR_COLLECTIONS = [
       'encyclopedia/5-languages/5-02-python/36',
       'encyclopedia/5-languages/5-03-java/121',
       'encyclopedia/5-languages/5-03-java/3',
+      'encyclopedia/5-languages/5-03-java/294',
       'encyclopedia/5-languages/5-04-platforma-dotnet/181',
       'encyclopedia/5-languages/5-05-csharp/101',
       'encyclopedia/5-languages/5-05-csharp/291',

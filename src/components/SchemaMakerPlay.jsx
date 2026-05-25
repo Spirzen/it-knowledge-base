@@ -3,6 +3,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
+import SpirzenOnlineToolLink from './SpirzenOnlineToolLink';
 import styles from './SchemaMakerPlay.module.css';
 
 const SchemaMakerEditor = lazy(() =>
@@ -16,6 +17,7 @@ function SchemaMakerPlayInner({
   initialDocument = null,
   height = 560,
   embedded = false,
+  showOnlineLink = true,
 }) {
   const editor = (
     <div className={styles.editorWrap}>
@@ -37,6 +39,7 @@ function SchemaMakerPlayInner({
     <DemoShell className={clsx(styles.root, 'schema-maker-play')}>
       <DemoCard title={title} subtitle={subtitle}>
         {editor}
+        {showOnlineLink && <SpirzenOnlineToolLink toolId="schemaMaker" />}
       </DemoCard>
     </DemoShell>
   );

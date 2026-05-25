@@ -404,6 +404,9 @@
   "encyclopedia/5-languages/5-03-java/121": {
     "title": "Справочник по конфигурациям в Java"
   },
+  "encyclopedia/5-languages/5-03-java/294": {
+    "title": "Документация и инструменты Java (Microsoft)"
+  },
   "encyclopedia/5-languages/5-03-java/3": {
     "title": "Справочник по Java"
   },
@@ -439,6 +442,9 @@
   },
   "encyclopedia/5-languages/5-05-csharp/453": {
     "title": "Приложение с S3, PostgreSQL и ASP.NET Core Web API"
+  },
+  "encyclopedia/5-languages/5-05-csharp/455": {
+    "title": "Документация и практика ASP.NET (Microsoft Learn)"
   },
   "encyclopedia/5-languages/5-05-csharp/471": {
     "title": "Справочник по C#"
@@ -759,7 +765,7 @@
     "title": "Справочник по Tempo"
   },
   "encyclopedia/8-infra-security/8-04-devops-ci-cd/3123": {
-    "title": "Справочник по Mimir"
+    "title": "E2E-тесты и CI с Playwright и GitHub Actions"
   },
   "encyclopedia/8-infra-security/8-04-devops-ci-cd/3124": {
     "title": "Справочник по Azure Repos Git"

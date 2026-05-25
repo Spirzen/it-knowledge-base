@@ -4,6 +4,7 @@ description: Вселенная IT — это мой личный проект, 
 ---
 
 import AuthorProfilePlay from '@site/src/components/AuthorProfilePlay.jsx';
+import SpirzenOnlineToolsPanel from '@site/src/components/SpirzenOnlineToolsPanel.jsx';
 
 # Об авторе
 
@@ -17,12 +18,16 @@ import AuthorProfilePlay from '@site/src/components/AuthorProfilePlay.jsx';
 
 Сайт-визитка: [spirzen.github.io](https://spirzen.github.io/)
 
+Помимо встроенных демо в энциклопедии, на GitHub Pages есть отдельные онлайн-инструменты: [Schema Maker](https://spirzen.github.io/SchemaMakerOnline/), [SQL Generator](https://spirzen.github.io/SQLGeneratorOnline/) и [ArchiStyler](https://spirzen.github.io/ArchiStylerOnline/) — ими можно пользоваться без входа на spirzen.ru.
+
 Я преподаватель, юрист и специалист с многолетним опытом в Fullstack-разработке, системном и бизнес-анализе, тестировании, интеграции и архитектуре корпоративных CRM, BPM, ERP-систем.
 
 Скептически отношусь к маркетинговым лозунгам. Верю в системный подход, фундаментальные знания и честный труд.
 Не одобряю поверхностность, но и не поддерживаю узконаправленность.
 
 <AuthorProfilePlay />
+
+<SpirzenOnlineToolsPanel />
 
 Если вам интересно - нет, я на текущий момент не зарабатываю на этом проекте, я не богат, не получаю огромных зарплат или выплат. Я простой работяга, с доходом ниже среднего, который предпочитает духовное развитие и верность сиюминутным финансовым выгодам. Я стремлюсь к передаче знаний и просвещению.
 

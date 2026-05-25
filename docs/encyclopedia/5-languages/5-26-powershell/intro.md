@@ -47,6 +47,22 @@ import DocCardList from '@theme/DocCardList';
 
 Интерактивные вставки в статьях (`PowerShellShellPlay`, демо операторов и ошибок) дополняют текст, но не заменяют пробу команд в своей среде.
 
+## Официальная документация Microsoft
+
+Теория в энциклопедии — на русском и с интерактивом. При споре о синтаксисе, установке, cmdlet или модулях опирайтесь на **документацию PowerShell на Microsoft Learn** (актуальная ветка — PowerShell 7.x). Тексты модулей Learn в статьи **не копируем** — только ссылки ([Catalog API FAQ](https://learn.microsoft.com/en-us/training/support/catalog-api-faq)).
+
+| Ресурс | Зачем открывать |
+|--------|-----------------|
+| [Документация PowerShell (хаб)](https://learn.microsoft.com/ru-ru/powershell/) | Точка входа: установка, примеры, ссылка на галерею, браузер модулей |
+| [Что такое PowerShell?](https://learn.microsoft.com/ru-ru/powershell/scripting/overview?view=powershell-7.6) | Оболочка, язык сценариев и платформа управления в одном обзоре |
+| [Установка PowerShell](https://learn.microsoft.com/ru-ru/powershell/scripting/install/install-powershell?view=powershell-7.6) | Windows, Linux, macOS; `pwsh` vs встроенный 5.1 |
+| [Примеры скриптов для администрирования](https://learn.microsoft.com/ru-ru/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.6) | Готовые сценарии: службы, события, реестр, сеть |
+| [Windows PowerShell ISE](https://learn.microsoft.com/ru-ru/powershell/scripting/windows-powershell/ise/introducing-the-windows-powershell-ise?view=powershell-7.6) | Legacy-среда под 5.1; для новых проектов — VS Code |
+| [PowerShell Gallery](https://www.powershellgallery.com/) | Публикация и установка модулей (`Install-Module`, `Find-Module`) |
+| [Браузер модулей](https://learn.microsoft.com/ru-ru/powershell/module/) | Справочник по cmdlet в установленных и сторонних модулях |
+
+См. также раздел [2.05 Терминал](/encyclopedia/2-system-network/2-05-terminal/intro) (CMD, Bash, [автоматизация в Windows](/encyclopedia/2-system-network/2-05-terminal/112)) и [подборку документации](/tools/documentation/2).
+
 <DocCardList />
 
 ---

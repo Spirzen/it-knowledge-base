@@ -16,6 +16,7 @@ import DocCardList from '@theme/DocCardList';
 | Практика (Docker Desktop, kubectl) | [Первые шаги](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1172) |
 | Прод-стек, Helm, HPA, Ingress | [Реализация Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1171) |
 | Справочник YAML и команд | [Справочник по Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211) |
+| Официальная документация kubernetes.io | [Навигатор Kubernetes](/tools/documentation/7) |
 
 <DocCardList />
 

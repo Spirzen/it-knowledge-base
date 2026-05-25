@@ -23,7 +23,8 @@
     "docs:trailing-hr": "node scripts/ensure-article-trailing-hr.mjs",
     "docs:normalize-tags": "node scripts/normalize-article-tags.mjs",
     "docs:descriptions": "node scripts/ensure-article-descriptions.mjs",
-    "docs:refine-descriptions": "node scripts/refine-article-descriptions.mjs"
+    "docs:refine-descriptions": "node scripts/refine-article-descriptions.mjs",
+    "docs:dotnet-catalog": "node scripts/generate-dotnet-reference-catalog.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.0",

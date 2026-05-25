@@ -227,7 +227,15 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/172">5.04. Microsoft ASP</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/173">5.04. Экосистема .NET-приложений</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/18">5.04. F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/182">5.04. Первая программа на F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/185">5.04. F# Interactive (FSI)</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/186">5.04. Сопоставление с образцом в F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/187">5.04. Императивные конструкции в F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/188">5.04. ООП в F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/189">5.04. Async, task и агенты в F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/190">5.04. Структура F#-проекта</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/181">5.04. Справочник про F#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/184">5.04. Справочник языка F# (Microsoft Learn)</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/2">5.04. SignalR</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/998">5.04. Итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/999">5.04. Чек-лист самопроверки</a></li>
@@ -287,6 +295,7 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-05-csharp/45">5.05. Веб-разработка и интеграции</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/451">5.05. ASP.NET</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/452">5.05. Справочник по ASP.NET</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/455">5.05. Документация ASP.NET (Microsoft Learn)</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/46">5.05. Популярные библиотеки для разных задач</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/47">5.05. Пример работы бэкенда</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/471">5.05. Справочник по C#</a></li>
@@ -327,6 +336,14 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-06-cpp/25">5.06. Работа с сетью</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/26">5.06. Прочие особенности C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/27">5.06. Qt</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/28">5.06. Углублённые темы C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/29">5.06. Vulkan на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/30">5.06. Идиомы C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/31">5.06. Диапазоны C++20</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2731">5.06. Qt — первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2732">5.06. Qt Quick (QML)</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/1006">5.06. CMake — первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/1008">5.06. Практические задания C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/3">5.06. Справочник по C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/998">5.06. Итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/999">5.06. Чек-лист самопроверки</a></li>
@@ -366,6 +383,11 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-07-php/998">5.07. Справочник по PHP</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/999">5.07. Итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/999">5.07. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/157">5.07. Пространства имён и автозагрузка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/158">5.07. Enum, readonly, атрибуты PHP 8</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/159">5.07. Исключения в прикладном коде</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/160">5.07. PDO — безопасные запросы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-07-php/161">5.07. Форма → запись в БД</a></li>
   </ul>
   </li>
   
@@ -418,6 +440,16 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/19">5.09. Важные классы и интерфейсы Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/2">5.09. Первая программа на Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/3">5.09. Справочник по Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/221">5.09. Ktor — первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/222">5.09. Корутины в Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/223">5.09. Тестирование на Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/224">5.09. Compose Multiplatform</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/225">5.09. Коллекции и Sequence</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/226">5.09. Flow в Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/227">5.09. Консольный ввод и вывод</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/228">5.09. Ktor Client</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/229">5.09. Jetpack Compose</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/230">5.09. DSL и функции с получателем</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/998">5.09. Итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/999">5.09. Чек-лист разработки</a></li>
   </ul>
@@ -733,6 +765,10 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/5">5.16. Управляющие конструкции и операторы</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/6">5.16. Функции</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/7">5.16. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/8">5.16. VBA в Excel</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/9">5.16. Типы и преобразования</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/10">5.16. Консоль, CLI, файлы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/11">5.16. Лямбды и LINQ</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/711">5.16. Справочник по visual-basic</a></li>
   </ul>
   </li>
@@ -896,6 +932,10 @@ mindmap
   <li><a href="/encyclopedia/5-languages/5-22-dart/5">5.22. Управляющие конструкции и операторы</a></li>
   <li><a href="/encyclopedia/5-languages/5-22-dart/6">5.22. Функции</a></li>
   <li><a href="/encyclopedia/5-languages/5-22-dart/7">5.22. Первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/8">5.22. Паттерны и switch</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/9">5.22. Консоль, файлы и HTTP</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/10">5.22. Классы и ООП</a></li>
+  <li><a href="/encyclopedia/5-languages/5-22-dart/999">5.22. Самопроверка</a></li>
   </ul>
   </li>
   

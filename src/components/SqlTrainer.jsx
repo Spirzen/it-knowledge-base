@@ -1,5 +1,6 @@
 import React, {useCallback, useMemo, useState} from 'react';
 import clsx from 'clsx';
+import SpirzenOnlineToolLink from './SpirzenOnlineToolLink';
 import {createShopDatabase, executeSql} from './shared/sqlTrainerEngine';
 import {TABLE_META} from './shared/sqlShopSchema';
 import {
@@ -222,6 +223,7 @@ function SqlTrainerInner() {
           Поддерживаются: <code>SELECT</code> (WHERE, JOIN, GROUP BY, HAVING, ORDER BY, LIMIT,
           DISTINCT, UNION), <code>INSERT</code>, <code>UPDATE</code>, <code>DELETE</code>.
           Синтаксис близок к PostgreSQL; выполнение локальное в браузере.
+          <SpirzenOnlineToolLink toolId="sqlGenerator" />
         </>
       }
     >

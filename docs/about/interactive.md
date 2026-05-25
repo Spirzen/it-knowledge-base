@@ -7,6 +7,7 @@ slug: /about/interactive
 ---
 
 import KeyboardPlay from '@site/src/components/KeyboardPlay';
+import TypingSpeedTrainerPlay from '@site/src/components/TypingSpeedTrainerPlay';
 import IoDevicesPlay from '@site/src/components/IoDevicesPlay';
 import DataTypesPlay from '@site/src/components/DataTypesPlay';
 import ComputerArchitecturePlay from '@site/src/components/ComputerArchitecturePlay';
@@ -53,6 +54,14 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Статья: [Советы для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
 
 <KeyboardPlay />
+
+### Скорость печати
+
+Замер знаков и слов в минуту с подсветкой ошибок — для самопроверки после карты клавиатуры.
+
+Статьи: [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
+
+<TypingSpeedTrainerPlay />
 
 ### Устройства ввода-вывода
 
@@ -142,7 +151,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Разбор заголовков, метода, тела и ответа сервера.
 
-Статья: [Как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/118)
+Статья: [HTTP как основа веб-интеграций](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118)
 
 <HttpRequestAnalyzer />
 
@@ -165,6 +174,12 @@ SQL, терминалы, Git, Docker и практика — переключе�
 Статья: [SQL](/encyclopedia/3-data-markup/3-07-sql/55)
 
 <SqlJoinTrainer />
+
+### SQL Generator Online
+
+Конструктор запросов: соберите SELECT/INSERT по правилам SQL; можно загрузить таблицу из Excel и получить INSERT для импорта в БД.
+
+Отдельное приложение: [SQL Generator Online](https://spirzen.github.io/SQLGeneratorOnline/) — в статьях раздела SQL ссылка также стоит под встроенным [SQL-тренажёром](/encyclopedia/3-data-markup/3-07-sql/1).
 
 ### Просмотр схемы БД
 
@@ -200,6 +215,8 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [Проектирование и архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1)
 
+Полная онлайн-версия (минималистичный холст, экспорт PNG в один клик): [Schema Maker Online](https://spirzen.github.io/SchemaMakerOnline/).
+
 <SchemaMakerPlay defaultDocName="Витрина" title="Schema Maker" />
 
 ### ArchiStyler — планировщик классов
@@ -207,6 +224,8 @@ SQL, терминалы, Git, Docker и практика — переключе�
 UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factory, Repository, слои), роли классов и превью C# / Java. Режим «во весь экран» — кнопка ⛶ у демо.
 
 Статьи: [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112), [Паттерны проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/1)
+
+Отдельное приложение для архитектурных схем и паттернов: [ArchiStyler Online](https://spirzen.github.io/ArchiStylerOnline/).
 
 <ArchiStylerPlay defaultPattern="mvp" />
 

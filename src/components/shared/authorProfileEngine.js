@@ -65,3 +65,5 @@ export const CONTACTS = [
   {label: 'GitHub', href: 'https://github.com/spirzen', text: 'spirzen'},
   {label: 'Сайт', href: 'https://spirzen.github.io/', text: 'spirzen.github.io'},
 ];
+
+export {SPIRZEN_ONLINE_TOOLS_LIST as AUTHOR_ONLINE_TOOLS} from './spirzenOnlineTools';

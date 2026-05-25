@@ -17,6 +17,8 @@ import DocCardList from '@theme/DocCardList';
 | [Статьи](/tools/documentation/3) | Блоги, эталонные материалы, дайджест |
 | [Swift на Android](/tools/documentation/4) | Новости кроссплатформы |
 | [Kotlin Multiplatform](/tools/documentation/5) | Курс Google и сравнение подходов |
+| [Microsoft Learn](/tools/documentation/6) | Навигатор схем и модулей с привязкой к энциклопедии |
+| [Kubernetes](/tools/documentation/7) | Навигатор официальной документации kubernetes.io |
 
 <DocCardList />
 

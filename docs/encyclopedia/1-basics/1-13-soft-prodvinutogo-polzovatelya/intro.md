@@ -35,6 +35,8 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 | [Безопасность](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/7) | Sysinternals, шифрование, админ-утилиты |
 | [Виртуализация](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8) | VirtualBox, Hyper-V, Docker |
 | [PowerToys и утилиты](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/9) | PowerToys, OBS, поиск, скриншоты |
+| [Draw.io и формат .drawio](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/10) | Архитектура diagrams.net, XML mxfile/mxCell/mxGeometry |
+| [Visual Studio Code](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/11) | Установка, интерфейс, IntelliSense, терминал, отладка (Microsoft Docs) |
 
 <DocCardList />
 

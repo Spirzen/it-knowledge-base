@@ -3,6 +3,7 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
+import SpirzenOnlineToolLink from './SpirzenOnlineToolLink';
 import useCopyToClipboard from './shared/useCopyToClipboard';
 import {
   PATTERNS,
@@ -113,6 +114,7 @@ function ArchiStylerPlayInner({
   defaultLanguage = 'csharp',
   defaultPattern = null,
   namespace = 'App.Demo',
+  showOnlineLink = true,
 }) {
   const initial = useMemo(() => {
     if (defaultPattern) {
@@ -515,6 +517,7 @@ function ArchiStylerPlayInner({
             Шаблон — в выпадающем списке. Namespace: <code>{namespace}</code>
           </p>
         )}
+        {showOnlineLink && <SpirzenOnlineToolLink toolId="archiStyler" />}
       </DemoCard>
     </DemoShell>
   );

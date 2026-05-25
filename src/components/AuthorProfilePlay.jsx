@@ -6,6 +6,7 @@ import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
 import {
   AUTHOR_ROLES,
+  AUTHOR_ONLINE_TOOLS,
   CONTACTS,
   INTERESTS,
   PROJECT_STATS,
@@ -169,6 +170,20 @@ function AuthorProfilePlayInner() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className={styles.onlineTools}>
+          <p className="it-demo__label">Онлайн-инструменты (spirzen.github.io)</p>
+          <ul className={styles.onlineToolsList}>
+            {AUTHOR_ONLINE_TOOLS.map((tool) => (
+              <li key={tool.id}>
+                <a href={tool.href} target="_blank" rel="noopener noreferrer">
+                  {tool.shortName}
+                </a>
+                <span className={styles.onlineToolsDesc}> — {tool.tagline}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className={styles.contacts}>

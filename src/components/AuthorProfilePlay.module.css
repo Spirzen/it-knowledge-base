@@ -176,6 +176,25 @@
   word-break: break-all;
 }
 
+.onlineTools {
+  margin-top: 0.75rem;
+}
+
+.onlineToolsList {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.onlineToolsList li {
+  margin-bottom: 0.45rem;
+}
+
+.onlineToolsDesc {
+  color: var(--ifm-color-content-secondary);
+}
+
 .contacts {
   display: flex;
   flex-wrap: wrap;

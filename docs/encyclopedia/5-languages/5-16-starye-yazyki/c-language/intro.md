@@ -17,9 +17,10 @@ import DocCardList from '@theme/DocCardList';
 5. [Функции и указатели](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/6) — прототипы, модули `.h`/`.c`, передача по указателю.
 6. [Архитектура программ](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/3) и [цепочка компиляции](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/211) — препроцессор, объектные файлы, линковка.
 7. [Стандарты C](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/213) — C89/C99/C11/C17/C23.
-8. [Справочник](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/8) — таблицы и быстрый поиск по API.
+8. [Память процесса](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/214) — сегменты, стек, куча, data и BSS.
+9. [Справочник](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/8) — таблицы и быстрый поиск по API.
 
-Углубление: [структуры и объединения](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/411), [компиляторы и IDE](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/311), [примеры](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/711), [системное программирование](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/712). Исторический контекст — [История языка С](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/1).
+Углубление: [структуры и объединения](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/411), [идиомы и ошибки](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/412), [хеш-таблица](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/413), [встраиваемая БД](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/414), [многопоточность](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/415), [файловый ввод-вывод](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/416), [компиляторы и IDE](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/311), [примеры](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/711), [системное программирование](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/712). Исторический контекст — [История языка С](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/1).
 
 <DocCardList />
 
