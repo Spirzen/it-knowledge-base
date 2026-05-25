@@ -3,6 +3,7 @@
 @import './it-design-bridge.css';
 @import './it-design-compat.css';
 @import './it-design-effects.css';
+@import './doc-search-theme.css';
 
 /* ============================================================================
    1. ПЕРЕМЕННЫЕ (CSS VARIABLES)
@@ -224,16 +225,13 @@ img {
   font-weight: 600;
 }
 
-.DocSearch-Button {
-  background-color: #F8F9FA;
-  border: 1px solid #E9ECEF;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+/* Локальный поиск (it-doc-search-trigger) — в духе прежнего DocSearch-Button */
+.it-doc-search-trigger {
+  transition: all 0.25s ease;
 }
 
-.DocSearch-Button:hover {
-  background-color: #F0F0FF;
-  border-color: var(--ifm-color-primary);
+[data-theme='dark'] .it-doc-search-trigger {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Документация: сайдбар и контент в одной flex-строке — без min-width: 0 статья наезжает на меню */
@@ -253,6 +251,7 @@ img {
   flex-shrink: 0;
   position: relative;
   z-index: 3;
+  overflow: visible;
   width: auto;
   min-width: clamp(
     11rem,
@@ -303,6 +302,24 @@ img {
 @media screen and (max-width: 768px) {
   .navbar-sidebar__backdrop {
     display: none !important;
+  }
+}
+
+/* Документация: бургер всегда на desktop — запасной доступ к меню, если левый сайдбар пропал */
+@media screen and (min-width: 997px) {
+  html.it-docs-page .navbar__toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  html.it-doc-mobile-sidebar-open .navbar-sidebar__backdrop {
+    display: block !important;
+  }
+
+  html.it-doc-mobile-sidebar-open.navbar-sidebar--show .navbar-sidebar,
+  html.it-doc-mobile-sidebar-open .navbar-sidebar {
+    visibility: visible;
   }
 }
 

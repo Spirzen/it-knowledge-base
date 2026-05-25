@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "npm run docs:wiki-links && docusaurus start",
-    "build": "npm run docs:collection-titles && npm run docs:wiki-links && set NODE_OPTIONS=--max-old-space-size=8192 && docusaurus build",
+    "start": "npm run docs:wiki-links && npm run docs:search-index && docusaurus start",
+    "build": "npm run docs:collection-titles && npm run docs:wiki-links && npm run docs:search-index && set NODE_OPTIONS=--max-old-space-size=8192 && docusaurus build",
+    "docs:search-index": "node scripts/build-doc-search-index.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

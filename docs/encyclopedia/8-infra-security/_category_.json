@@ -1,9 +1,7 @@
 {
   "label": "8. Инфраструктура и безопасность",
   "link": {
-    "type": "generated-index",
-    "title": "8. Инфраструктура и безопасность",
-    "description": "Оглавление раздела 8. Инфраструктура и безопасность",
-    "slug": "/section/infra-security"
+    "type": "doc",
+    "id": "section/infra-Безопасность"
   }
 }

@@ -131,6 +131,14 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+# Локальные настройки редактора
+.vscode/
+
+# Временные артефакты локальной разработки
+.tmp*
+.tmp-extracts/
+build-log.txt
+
 # yarn v2
 .yarn/cache
 .yarn/unplugged
@@ -176,6 +184,9 @@ src/data/wikiLinkIndex.json
 # Артефакты служебных скриптов
 /scripts/_*.txt
 /scripts/_*.json
+/scripts/fix-out.txt
+/scripts/fsharp-language-reference-index.json
+/scripts/generated/
 info/llm-phrases-scan.csv
 
 # Локальная панель управления Docusaurus (admin/)

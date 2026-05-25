@@ -1,9 +1,7 @@
 {
   "label": "Экспериментально - Для детей",
   "link": {
-    "type": "generated-index",
-    "title": "Экспериментально - Для детей",
-    "description": "IT для детей 8–16: компьютер, игры, логика и первый код — с мини-демо в каждой теме",
-    "slug": "/section/forkids"
+    "type": "doc",
+    "id": "section/forkids"
   }
 }

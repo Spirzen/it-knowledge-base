@@ -60,3 +60,24 @@
   color: #fff;
 }
 
+@media (min-width: 997px) {
+  .resizeHandle {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    width: 8px;
+    height: 100%;
+    cursor: col-resize;
+    z-index: 12;
+    touch-action: none;
+    border-radius: 4px;
+    background: transparent;
+    transition: background-color 0.15s ease;
+  }
+
+  .resizeHandle:hover,
+  .resizeHandleActive {
+    background: color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  }
+}
+

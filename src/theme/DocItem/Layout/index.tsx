@@ -253,7 +253,7 @@ export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode
         <div className={clsx('col col--3', styles.docSidebarCol)}>
           <div className={styles.docSidebarInner}>
             <ChapterProgress />
-            {docTOC.desktop}
+            <div className={styles.docTocScroll}>{docTOC.desktop}</div>
           </div>
         </div>
       )}

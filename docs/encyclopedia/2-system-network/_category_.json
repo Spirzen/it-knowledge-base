@@ -1,9 +1,7 @@
 {
   "label": "2. Система и сеть",
   "link": {
-    "type": "generated-index",
-    "title": "2. Система и сеть",
-    "description": "Оглавление раздела 2. Система и сеть",
-    "slug": "/section/system-network"
+    "type": "doc",
+    "id": "section/Система-Сеть"
   }
 }

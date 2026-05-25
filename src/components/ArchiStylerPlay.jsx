@@ -374,7 +374,8 @@ function ArchiStylerPlayInner({
         <div
           className={clsx(styles.canvasWrap, connectFrom && styles.canvasWrapConnect)}
           ref={canvasRef}
-          onClick={() => {
+          onClick={(e) => {
+            if (e.target.closest(`.${styles.classCard}`)) return;
             setSelectedId(null);
             setConnectFrom(null);
           }}

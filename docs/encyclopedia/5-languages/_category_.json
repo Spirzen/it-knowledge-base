@@ -1,9 +1,7 @@
 {
   "label": "5. Языки",
   "link": {
-    "type": "generated-index",
-    "title": "5. Языки",
-    "description": "Оглавление раздела 5. Языки",
-    "slug": "/section/languages"
+    "type": "doc",
+    "id": "section/languages"
   }
 }

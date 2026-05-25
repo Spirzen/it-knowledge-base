@@ -7,6 +7,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import UniverseMap from '@site/src/components/UniverseMap';
 import GettingStartedPaths from '@site/src/components/GettingStartedPaths';
 import UniverseLogo from '@site/src/components/UniverseLogo';
+import RandomArticle from '@site/src/components/RandomArticle';
 import styles from './index.module.css';
 
 const APK_DOWNLOAD_PATH = '/downloads/it-universe.apk';
@@ -24,6 +25,7 @@ function HomepageHeader() {
           <p className="hero__subtitle">
             <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> «Вселенная IT» — это открытая энциклопедия по информационным технологиям. Бесплатно, без рекламы, без партнёров — только систематизированные знания.
           </p>
+          <RandomArticle />
           <div className={styles.heroActions}>
             <div className={styles.buttons}>
               <Link

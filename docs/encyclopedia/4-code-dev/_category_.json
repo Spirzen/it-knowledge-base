@@ -1,9 +1,7 @@
 {
   "label": "4. Код и разработка",
   "link": {
-    "type": "generated-index",
-    "title": "4. Код и разработка",
-    "description": "Оглавление раздела 4. Код и разработка",
-    "slug": "/section/code-dev"
+    "type": "doc",
+    "id": "section/code-dev"
   }
 }

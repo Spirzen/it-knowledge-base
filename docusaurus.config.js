@@ -311,6 +311,7 @@ module.exports = {
         },
         { to: '/about/project', label: 'О проекте', position: 'left' },
         { to: '/about/manifest', label: 'Манифест', position: 'left' },
+        { type: 'custom-docSearch', position: 'right' },
         {
           href: '/about/author#support',
           label: 'Поддержать',

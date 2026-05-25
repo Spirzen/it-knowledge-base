@@ -1,4 +1,11 @@
 import {useEffect} from 'react';
+import {
+  applySidebarWidth,
+  clearAppliedSidebarWidth,
+  hasUserSidebarWidth,
+  readUserSidebarWidth,
+  RESET_WIDTH_EVENT,
+} from '@site/src/theme/docSidebarWidth';
 
 const SIDEBAR_PADDING_PX = 28;
 const MIN_WIDTH_PX = 168;
@@ -92,6 +99,16 @@ export default function useSidebarAutoWidth(navRef, deps = []) {
           return;
         }
 
+        const userWidth = readUserSidebarWidth();
+        if (userWidth) {
+          applySidebarWidth(sidebar, userWidth);
+          return;
+        }
+
+        if (hasUserSidebarWidth(sidebar)) {
+          clearAppliedSidebarWidth(sidebar);
+        }
+
         const result = measureRequiredSidebarWidth(nav);
         if (!result) {
           return;
@@ -116,13 +133,16 @@ export default function useSidebarAutoWidth(navRef, deps = []) {
     });
 
     const onResize = () => apply();
+    const onReset = () => apply();
     window.addEventListener('resize', onResize);
+    window.addEventListener(RESET_WIDTH_EVENT, onReset);
     mq.addEventListener('change', apply);
 
     return () => {
       cancelAnimationFrame(frame);
       observer.disconnect();
       window.removeEventListener('resize', onResize);
+      window.removeEventListener(RESET_WIDTH_EVENT, onReset);
       mq.removeEventListener('change', apply);
       const sidebar = nav.closest('.theme-doc-sidebar-container');
       sidebar?.style.removeProperty('width');

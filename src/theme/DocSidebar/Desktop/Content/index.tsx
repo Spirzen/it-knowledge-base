@@ -10,6 +10,7 @@ import {translate} from '@docusaurus/Translate';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import type {Props} from '@theme/DocSidebar/Desktop/Content';
 
+import SidebarResizeHandle from './SidebarResizeHandle';
 import styles from './styles.module.css';
 
 function useShowAnnouncementBar() {
@@ -140,6 +141,7 @@ export default function DocSidebarDesktopContent({
       <ul className={clsx(ThemeClassNames.docs.docSidebarMenu, 'menu__list')}>
         <DocSidebarItems items={filteredSidebar} activePath={path} level={1} />
       </ul>
+      <SidebarResizeHandle navRef={navRef} />
     </nav>
   );
 }

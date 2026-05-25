@@ -1,0 +1,111 @@
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  margin: 1.25rem auto 0;
+  padding: 0.65rem 0.85rem;
+  max-width: 42rem;
+  border-radius: var(--ifm-global-radius, 10px);
+  border: 1px dashed color-mix(in srgb, var(--ifm-color-primary) 35%, var(--ifm-color-emphasis-300));
+  background: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-background-surface-color));
+}
+
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ifm-color-content-secondary);
+  white-space: nowrap;
+}
+
+.link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  line-height: 1.35;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--ifm-color-primary-dark);
+  text-decoration: underline;
+}
+
+.section {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  color: var(--ifm-color-primary);
+  border: 1px solid color-mix(in srgb, var(--ifm-color-primary) 22%, transparent);
+  max-width: 12rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.loading,
+.muted,
+.error {
+  font-size: 0.9rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+.error {
+  color: var(--ifm-color-danger, #c62828);
+}
+
+.shuffle {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.15rem;
+  border: none;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 14%, transparent);
+  cursor: pointer;
+  font-size: 1.1rem;
+  line-height: 1;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.shuffle:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--ifm-color-primary) 24%, transparent);
+  transform: rotate(-12deg) scale(1.05);
+}
+
+.shuffle:disabled {
+  opacity: 0.45;
+  cursor: wait;
+}
+
+.shuffle:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+@media (max-width: 576px) {
+  .wrap {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.75rem;
+  }
+
+  .section {
+    max-width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .shuffle:hover:not(:disabled) {
+    transform: none;
+  }
+}

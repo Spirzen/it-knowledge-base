@@ -1,9 +1,7 @@
 {
   "label": "9. Спин-офф",
   "link": {
-    "type": "generated-index",
-    "title": "9. Спин-офф",
-    "description": "Оглавление раздела 9. Спин-офф",
-    "slug": "/section/spinoff"
+    "type": "doc",
+    "id": "section/spinoff"
   }
 }

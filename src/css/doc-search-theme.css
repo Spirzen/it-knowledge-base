@@ -1,0 +1,22 @@
+/**
+ * Глобальные правки поиска: navbar, тёмная тема, IT design tokens.
+ * Основные стили — src/components/DocSearch/styles.module.css
+ */
+
+.navbar__items--right > .navbar__item:has(.it-doc-search-trigger) {
+  display: flex;
+  align-items: center;
+}
+
+.it-doc-search-trigger {
+  font-family: inherit;
+}
+
+[data-theme='dark'] .it-doc-search {
+  background: rgba(6, 8, 14, 0.72);
+}
+
+html[data-design]:not([data-design='design-universe-original']) .it-doc-search-trigger:hover,
+html[data-design]:not([data-design='design-universe-original']) .it-doc-search-trigger:focus-visible {
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--d-primary) 30%, transparent);
+}
