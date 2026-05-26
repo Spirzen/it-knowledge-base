@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "npm run docs:wiki-links && npm run docs:search-index && docusaurus start",
-    "build": "npm run docs:collection-titles && npm run docs:wiki-links && npm run docs:search-index && set NODE_OPTIONS=--max-old-space-size=8192 && docusaurus build",
+    "start": "npm run docs:wiki-links && npm run docs:search-index && cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus start",
+    "build": "npm run docs:collection-titles && npm run docs:wiki-links && npm run docs:search-index && cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus build",
     "docs:search-index": "node scripts/build-doc-search-index.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
-    "serve": "docusaurus serve",
+    "serve": "cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "docs:demo-registry": "node scripts/generate-demo-registry.mjs",
@@ -53,6 +53,7 @@
     "@types/node": "^25.3.5",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "cross-env": "^10.1.0",
     "typescript": "^5.9.3"
   },
   "browserslist": {
