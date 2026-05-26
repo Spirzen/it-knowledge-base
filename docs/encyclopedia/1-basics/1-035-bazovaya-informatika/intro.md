@@ -1,4 +1,7 @@
 ---
+tags:
+  - inprogress
+
 title: Базовая информатика — о разделе
 description: >-
   Учебный маршрут по школьной и начальной информатике: кодирование, железо, ОС,
@@ -19,6 +22,10 @@ related:
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+<div class="article-tags">
+  <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
+</div>
 
 Это **учебный курс «Базовая информатика»** — **маршрут** по темам энциклопедии: что читать, в каком порядке и где углублаться. Подробные статьи уже есть в энциклопедии ([компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [данные](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [программы](/encyclopedia/1-basics/1-19-programma/intro), [сеть](/encyclopedia/2-system-network/2-03-set-i-internet/intro)); здесь они собраны в логику школьного и начального курса.
 
@@ -58,5 +65,4 @@ flowchart LR
 Главу **4** (алгоритмы и программирование) можно пройти раньше, если вы уже на уроках пишете код — она не зависит от интернета. Главы **7** и **8** удобны в любой момент после [1](/encyclopedia/1-basics/1-035-bazovaya-informatika/1).
 
 <DocCardList />
-
 ---
