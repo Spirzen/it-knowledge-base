@@ -36,6 +36,7 @@ import DocCardList from '@theme/DocCardList';
 3. [Синхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115), [асинхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114) и [реактивная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) коммуникация.
 4. [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [RabbitMQ](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118), [Kafka](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119), [реализация интеграции](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121).
 5. Компромиссы распределённых систем — [PACELC](./124.md) (связь с [CAP в основах NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2)).
+6. **Практикум** — [REST и WebSocket на Python и C#](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/intro): проектирование контракта, реализация двух сервисов, Postman.
 
 ---
 

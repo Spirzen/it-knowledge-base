@@ -3870,6 +3870,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/2">9.05. Итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/3">9.05. Чек-лист самопроверки</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/11">9.05. Криптовалюты</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1010">9.05. Практикум Ledger Lab</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1011">9.05. Практикум — цепочка блоков</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1012">9.05. Практикум — криптография</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1013">9.05. Практикум — ledger и переводы</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1014">9.05. Практикум — compliance и тесты</a></li>
   </ul>
   </li>
 

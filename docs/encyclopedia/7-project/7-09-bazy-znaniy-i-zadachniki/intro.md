@@ -9,6 +9,8 @@ related:
     doc: encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/intro
   - title: "Техническое письмо — о разделе"
     doc: encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro
+  - title: "Лаборатория — о разделе"
+    doc: lab/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

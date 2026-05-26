@@ -10,4 +10,10 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+## В энциклопедии
+
+- [Графика](/encyclopedia/1-basics/1-16-grafika/intro) · [Аудио и видео](/encyclopedia/1-basics/1-17-audio-i-video/intro) — основы медиа
+- [Компьютерная графика](/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/intro) — 3D и визуальные эффекты
+- [Медиа-контент](/encyclopedia/9-spinoff/9-09-media-kontent/intro) — стриминг и цифровая дистрибуция
+
 ---

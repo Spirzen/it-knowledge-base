@@ -14,6 +14,7 @@ related:
 ---
 
 import GameDevHub from '@site/src/components/GameDevHub.jsx';
+import {GameGenreToysHub} from '@site/src/components/GameGenreToysPlay';
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
@@ -49,6 +50,12 @@ import DocCardList from '@theme/DocCardList';
 6. [Итоги](/encyclopedia/9-spinoff/9-04-razrabotka-igr/998) и [чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
 
 Для карьеры и ролей в студии — отдельно [Дорожная карта геймдева](/encyclopedia/9-spinoff/9-04-razrabotka-igr/11) и [Команда разработки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/111).
+
+### Шесть жанров — мини-игры
+
+Перед Unity или Unreal полезно **пощупать жанр**: аркада, платформер, головоломка, пошаговая стратегия, RPG, roguelike. Ниже — оригинальные учебные игрушки с вкладками (подробнее в [классификации жанров](/encyclopedia/1-basics/1-18-kompyuternye-igry/2)).
+
+<GameGenreToysHub theme="javascript" showCode={false} />
 
 ---
 

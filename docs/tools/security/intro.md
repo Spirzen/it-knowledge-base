@@ -10,4 +10,9 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+## В энциклопедии
+
+- [Основы информационной безопасности](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro) — угрозы, контроли, аутентификация
+- [Информационная безопасность](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro) — практики в продакшене и комплаенс
+
 ---

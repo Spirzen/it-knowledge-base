@@ -10,4 +10,9 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+## В энциклопедии
+
+- [Софт рядового и продвинутого пользователя](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro) — повседневные программы в контексте IT
+- [Базы знаний](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro) — заметки, вики, онбординг
+
 ---

@@ -12,4 +12,10 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+## В энциклопедии
+
+- [Компьютерные игры](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro) — жанры, платформы, культура
+- [Игровая индустрия](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro) — рынок, издатели, монетизация
+- [Разработка игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro) — движки, пайплайн, open-source клоны
+
 ---

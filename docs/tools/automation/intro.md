@@ -12,4 +12,10 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+## В энциклопедии
+
+- [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro) — shell, скрипты, cron
+- [DevOps и CI/CD](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) — автоматизация сборки и деплоя
+- [Системное администрирование](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro) — планировщики на серверах
+
 ---

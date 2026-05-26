@@ -22,6 +22,7 @@
     "docs:fix-frontmatter-blank": "node scripts/fix-blank-after-frontmatter.mjs",
     "docs:fix-heading-separators": "node scripts/fix-heading-separators.mjs",
     "docs:basics-crosslinks": "node scripts/enrich-basics-crosslinks.mjs",
+    "docs:lab-crosslinks": "node scripts/enrich-lab-crosslinks.mjs",
     "docs:revert-basics-wiki": "node scripts/revert-basics-wiki-markup.mjs",
     "docs:fix-cyrillic-latin": "node scripts/fix-cyrillic-latin-corruption.mjs",
     "docs:trailing-hr": "node scripts/ensure-article-trailing-hr.mjs",

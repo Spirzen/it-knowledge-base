@@ -20,3 +20,9 @@ import DocCardList from '@theme/DocCardList';
 | [Визуализация](/tools/data/6) | Библиотеки и BI |
 
 <DocCardList />
+
+## В энциклопедии
+
+- [Основы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) — модели, транзакции, выбор СУБД
+- [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) · [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro) — теория запросов и распределённых хранилищ
+- [Анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro) — визуализация, BI, дашборды

@@ -2,6 +2,13 @@
 title: Кейсы — о разделе
 description: Подборка материалов раздела Кейсы в энциклопедии Вселенная IT
 sidebar_label: Кейсы — о разделе
+related:
+  - title: Разработка и отладка — о разделе
+    doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro
+  - title: Конструирование ПО — о разделе
+    doc: encyclopedia/7-project/7-12-konstruirovanie-po/intro
+  - title: Тестирование программного обеспечения — о разделе
+    doc: encyclopedia/7-project/7-05-testirovanie/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

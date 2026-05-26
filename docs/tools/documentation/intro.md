@@ -22,4 +22,10 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+## В энциклопедии
+
+- [Техническое письмо](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro) — как писать и структурировать документацию
+- [Дорожная карта изучения](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) — связь внешних курсов с разделами энциклопедии
+- [Документация как инструмент проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1117) — living docs и C4
+
 ---
