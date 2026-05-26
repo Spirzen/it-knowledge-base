@@ -17,13 +17,36 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про **способы хранения и доступа к данным в памяти**: массив, связный список, стек, очередь, дерево, хеш-таблица — когда что выбирать и какая сложность операций. Это опора для алгоритмов и для понимания коллекций в языках программирования.
 
+Идеи даются **сначала на русском псевдокоде** (`АЛГОРИТМ`, `для`, `вернуть`) — см. [алгоритмический справочник](./2.md#алгоритмический-справочник-псевдокод) в главе про реализацию; затем — синтаксис `List` / `dict` / `Map` в разделах языков.
+
 > **Сначала (общая база):** [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro) · [Алгоритмы](/encyclopedia/4-code-dev/4-01-algoritmy/intro)
 
 ## Рекомендуемый порядок
 
-1. Вводные статьи раздела (оглавление ниже) — от линейных структур к деревьям и хешам.
-2. Практика в коде — в разделах [языков](/encyclopedia/5-languages/) (коллекции, `Map`, `Set`).
-3. [Продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro) — когда базовые структуры уже знакомы.
+| Шаг | Статья | Зачем |
+|-----|--------|--------|
+| 1 | [Структуры данных](./1.md) | обзор, аналогии, таблицы |
+| 2 | [Реализация и O(·)](./2.md) | как устроены массив, список, стек, хеш |
+| 3 | [История](./11.md) · [Геометрия](./12.md) | по желанию |
+| 4 | [Итоги](./3.md) · [чек-лист](./4.md) | закрепление |
+
+Дальше — коллекции в [языках](/encyclopedia/5-languages/languages) (таблица ниже). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro).
+
+## Коллекции в разделах языков
+
+| Язык | Статья | Что внутри |
+|------|--------|------------|
+| Python | [Коллекции](/encyclopedia/5-languages/5-02-python/22) | `list`, `tuple`, `dict`, `set` |
+| Java | [Коллекции](/encyclopedia/5-languages/5-03-java/24) | `List`, `Set`, `Map`, `Queue` |
+| C# | [Коллекции](/encyclopedia/5-languages/5-05-csharp/28) | `List`, `Dictionary`, `HashSet` |
+| JavaScript | [Массивы](/encyclopedia/5-languages/5-01-javascript/211) | `Array`, `Map`, `Set` |
+| Kotlin | [Коллекции](/encyclopedia/5-languages/5-09-kotlin/225) | `List`, `Map`, `Sequence` |
+| Go | [Типы, slice и map](/encyclopedia/5-languages/5-10-go/16) | `slice`, `map` |
+| C++ | [Работа с данными](/encyclopedia/5-languages/5-06-cpp/24) | STL: `vector`, `map`, `unordered_map` |
+| Rust | [Типы и коллекции](/encyclopedia/5-languages/5-13-rust/13) | `Vec`, `HashMap` |
+| Swift | [Данные и коллекции](/encyclopedia/5-languages/5-14-swift/16) | `Array`, `Dictionary`, `Set` |
+| PHP | [Типы данных](/encyclopedia/5-languages/5-07-php/15) | `array` как список и словарь |
+| Ruby | [Типы](/encyclopedia/5-languages/5-11-ruby/13) | `Array`, `Hash` |
 
 <DocCardList />
 

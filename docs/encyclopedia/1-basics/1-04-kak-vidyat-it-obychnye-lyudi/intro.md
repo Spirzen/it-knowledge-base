@@ -24,6 +24,7 @@ import DocCardList from '@theme/DocCardList';
   <ul>
     <li><strong>Сначала</strong> — роли и технологии (<code>1</code>–<code>3</code>).</li>
     <li><strong>Затем</strong> — деньги и рынок (<code>4</code>–<code>5</code>).</li>
+    <li><strong>После рынка</strong> — навыки, обучение и «секрет» входа (<code>6</code>) — hard/soft skills и системный план.</li>
     <li><strong>По желанию</strong> — история и контекст России (<code>7</code>), обзор мировых компаний (<code>711</code>).</li>
   </ul>
   Цифры по вакансиям и зарплатам в материалах — <strong>ориентиры</strong>; перед поиском работы сверяйте их на HeadHunter и в [разделе про карьеру](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro).
