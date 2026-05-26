@@ -1,7 +1,22 @@
 ---
 title: Ассемблер — о разделе
-description: Подборка материалов раздела Ассемблер в энциклопедии Вселенная IT
+description: "Материалы про язык ассемблера (мнемоники, директивы, ABI) и про ассемблеры как программы (nasm, gas, ml64), которые переводят исходный текст в объектный код."
 sidebar_label: Ассемблер — о разделе
+related:
+  - title: "Rust — о разделе"
+    doc: encyclopedia/5-languages/5-13-rust/intro
+  - title: "Си — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro
+  - title: "C++ — о разделе"
+    doc: encyclopedia/5-languages/5-06-cpp/intro
+  - title: "Системное программирование на C++"
+    doc: encyclopedia/5-languages/5-06-cpp/21
+  - title: "Visual Basic — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro
+  - title: "Pascal — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro
+  - title: "Haskell — о разделе"
+    doc: encyclopedia/5-languages/5-17-haskell/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -9,6 +24,8 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Материалы про **язык ассемблера** (мнемоники, директивы, ABI) и про **ассемблеры** как программы (`nasm`, `gas`, `ml64`), которые переводят исходный текст в объектный код. Примеры в разделе в основном для **x86/x86-64**; синтаксис листингов — **Intel (NASM)**, если не указано иное.
+
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ## Рекомендуемый порядок
 
@@ -36,5 +53,16 @@ import DocCardList from '@theme/DocCardList';
 У каждого листинга смотрите подпись: **архитектура** (32/64 бит), **ОС** (Linux / Windows / DOS), **точка входа** (`_start` + `syscall` или WinAPI). Смешивать номера системных вызовов Linux i386 (`int 0x80`, `eax = 4`) и x86-64 (`syscall`, `rax = 1`) нельзя — это разные контракты.
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Системное программирование** — [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
+
+**Бэкенд и серверная разработка** — [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro).
+
+<!-- /sidebar-collections -->
 
 ---

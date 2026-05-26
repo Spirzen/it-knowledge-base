@@ -1,7 +1,16 @@
 ---
 title: Информационная безопасность — о разделе
-description: Подборка материалов раздела Информационная безопасность в энциклопедии Вселенная IT
+description: "Раздел для разработчиков и инженеров: от базовых понятий (CIA, риски, OWASP) до практики — защита приложений, криптография, PKI, мониторинг и реагирование на инциденты."
 sidebar_label: Информационная безопасность — о разделе
+related:
+  - title: "Контейнеризация и оркестрация — о разделе"
+    doc: encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro
+  - title: "Забота о коде и данных — о разделе"
+    doc: encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro
+  - title: "Тестирование информационной безопасности"
+    doc: encyclopedia/7-project/7-05-testirovanie/123
+  - title: "Основы интеграционного взаимодействия — о разделе"
+    doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -30,5 +39,14 @@ import DocCardList from '@theme/DocCardList';
 Базовые темы для новичков также есть в [Основы информационной безопасности](../../2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro.md) (блок «Система и сеть»). Здесь акцент на продакшен-практиках, коде и инфраструктуре.
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Инфобез** — [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Тестирование информационной безопасности](/encyclopedia/7-project/7-05-testirovanie/123), [Забота о коде и данных — о разделе](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro).
+
+<!-- /sidebar-collections -->
 
 ---

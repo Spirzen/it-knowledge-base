@@ -1,7 +1,16 @@
 ---
 title: PowerShell — о разделе
-description: Подборка материалов раздела PowerShell в энциклопедии Вселенная IT
+description: "Раздел посвящён PowerShell — оболочке и языку сценариев для автоматизации Windows, Linux и macOS."
 sidebar_label: PowerShell — о разделе
+related:
+  - title: "Bash — о разделе"
+    doc: encyclopedia/5-languages/5-25-bash/intro
+  - title: "1С — о разделе"
+    doc: encyclopedia/5-languages/5-27-1s/intro
+  - title: "Julia — о разделе"
+    doc: encyclopedia/5-languages/5-24-julia/intro
+  - title: "R — о разделе"
+    doc: encyclopedia/5-languages/5-23-r/intro
 ---
 
 import PowerShellShellPlay from '@site/src/components/PowerShellShellPlay';
@@ -9,6 +18,8 @@ import PowerShellShellPlay from '@site/src/components/PowerShellShellPlay';
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <PowerShellShellPlay lesson="intro" />
 
@@ -64,5 +75,14 @@ import DocCardList from '@theme/DocCardList';
 См. также раздел [2.05 Терминал](/encyclopedia/2-system-network/2-05-terminal/intro) (CMD, Bash, [автоматизация в Windows](/encyclopedia/2-system-network/2-05-terminal/112)) и [подборку документации](/tools/documentation/2).
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro).
+
+<!-- /sidebar-collections -->
 
 ---

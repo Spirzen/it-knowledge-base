@@ -75,6 +75,38 @@
     transform 0.25s ease;
 }
 
+.filterChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.65rem;
+}
+
+.filterChip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.28rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  cursor: pointer;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.filterChip:hover {
+  border-color: var(--ifm-color-primary);
+}
+
+.filterChipActive {
+  background: color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
 .gameResultFading {
   opacity: 0;
   transform: scale(0.98);

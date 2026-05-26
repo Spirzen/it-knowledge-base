@@ -1013,7 +1013,37 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/36">3.03. Моделирование систем</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/37">3.03. Численные методы</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/38">3.03. Формальные языки и автоматы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/40">3.03. Теория алгоритмов — формальные основы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/41">3.03. Рекурсивные и вычислимые функции</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/42">3.03. Машина Тьюринга</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/43">3.03. Формальные грамматики и разбор</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/44">3.03. Конечные автоматы и регулярные языки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/45">3.03. Магазинные автоматы, Мили и Мура</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/46">3.03. ТАФЯ — чек-лист самопроверки</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/39">3.03. Теория информации</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Математическое программирование
+
+<ul>
+  <li>
+  <ul>
+  Математическое программирование
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/intro">3.12. Математическое программирование — о разделе</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1">3.12. Введение и постановка задач</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/2">3.12. Выпуклость и графический метод</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/3">3.12. Метод Жордана–Гаусса</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/4">3.12. Симплекс-метод</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/5">3.12. M-метод и искусственный базис</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/6">3.12. Двойственность</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/7">3.12. Транспортная задача</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/8">3.12. Динамическое программирование (Беллман)</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/9">3.12. Решатели в коде</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/998">3.12. Итоги</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/999">3.12. Чек-лист самопроверки</a></li>
   </ul>
   </li>
 
@@ -1057,7 +1087,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2">3.05. Системы управления базами данных (СУБД)</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3">3.05. Внутреннее устройство баз данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4">3.05. Теоретические основы реляционных данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/5">3.05. Двенадцать правил Кодда</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6">3.05. Роль базы данных в организации</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11">3.05. Entity Relationship</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/7">3.05. Конкурентный доступ к данным</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8">3.05. Восстановление после сбоя</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/98">3.05. Итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/99">3.05. Чек-лист самопроверки</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/111">3.05. Управление данными - Data Governance</a></li>
@@ -1144,6 +1178,7 @@ import DocCardList from '@theme/DocCardList';
   <ul>
   Управление реляционными СУБД
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1">3.08. Управление реляционными СУБД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3">3.08. Администрирование БД в облаке</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2">3.08. Справочник по PostgreSQL</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/211">3.08. Справочник по MySQL</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212">3.08. Справочник по Microsoft SQL Server</a></li>
@@ -1192,6 +1227,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-10-css/117">3.10. Доступность и пользовательские настройки в CSS</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/6">3.10. Анимации, переходы и трансформации</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/7">3.10. Адаптивный и отзывчивый дизайн</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/118">3.10. Практические рекомендации по CSS</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/8">3.10. Практика</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/71">3.10. Справочник по CSS</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/111">3.10. Подключение и организация CSS-кода</a></li>
@@ -1566,6 +1602,30 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/1">4.15. Автоматическое управление памятью</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/2">4.15. Итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/3">4.15. Чек-лист самопроверки</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Параллельные вычисления
+
+<ul>
+  <li>
+  <ul>
+  Параллельные вычисления
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/1">4.16. Параллельные вычислительные процессы — введение</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/2">4.16. Классификация параллельных архитектур</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/3">4.16. Память, кластеры и GRID</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/4">4.16. Модели параллельных вычислений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/5">4.16. Граф алгоритма и матрица следования</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/6">4.16. Временной анализ параллельных алгорitмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/7">4.16. Законы производительности</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/8">4.16. Инженерия параллельных алгорitмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/9">4.16. Параллельное умножение матриц</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/10">4.16. Сети Петри и расписания</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/11">4.16. Практика — OpenMP, MPI и профилирование</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/998">4.16. Итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/999">4.16. Чек-лист самопроверки</a></li>
   </ul>
   </li>
 
@@ -2897,6 +2957,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/117">7.05. Объекты и уровни тестирования</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/118">7.05. Инструменты для ручного и автоматизированного тестирования</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/119">7.05. Документация тестировщика</a></li>
+  <li><a href="/encyclopedia/7-project/7-05-testirovanie/128">7.05. Ручное тестирование веб-приложений</a></li>
+  <li><a href="/encyclopedia/7-project/7-05-testirovanie/129">7.05. SQL для тестировщика</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/120">7.05. Юнит-тестирование</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/121">7.05. Интеграционное тестирование</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/122">7.05. Нагрузочное и стресс-тестирование производительности</a></li>
@@ -2912,6 +2974,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1013">7.05. Проверка пользовательского сценария</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1014">7.05. Проверка надежности под нагрузкой</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1181">7.05. Selenium</a></li>
+  <li><a href="/encyclopedia/7-project/7-05-testirovanie/1182">7.05. Playwright</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1271">7.05. Самовосстанавливающиеся тесты</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1272">7.05. Инструменты с низким кодом для тестирования</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1273">7.05. Тестирование нейроморфных систем</a></li>
@@ -2937,8 +3000,10 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/112">7.06. Классификация типов классов в объектно-ориентированном проектировании</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/113">7.06. Построение систем на основе классов и объектов</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114">7.06. Доменная модель</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141">7.06. Типы классов в DDD</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/115">7.06. Паттерны проектирования</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/116">7.06. Системный подход и системное мышление</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161">7.06. Имитационное моделирование</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998">7.06. Итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/999">7.06. Чек-лист самопроверки</a></li>
   </ul>
@@ -2989,6 +3054,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2130">7.06. Архитектура конвейера</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2131">7.06. Одноранговая архитектура</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2132">7.06. Чистая архитектура</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2143">7.06. Clean Architecture на ASP.NET Core</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133">7.06. Многоуровневая архитектура</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2134">7.06. Надежность и доступность</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2135">7.06. Уровни SLA и реальное время простоя</a></li>
@@ -3110,9 +3176,13 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Легаси-код
-  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/1">7.11. Работа с легаси-кодом</a></li>
-  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/2">7.11. Итоги</a></li>
-  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/3">7.11. Чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/intro">7.11. О разделе</a></li>
+  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/1">7.11. Что такое легаси</a></li>
+  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/2">7.11. Понимание системы</a></li>
+  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/3">7.11. Безопасные изменения</a></li>
+  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/4">7.11. Стратегии модернизации</a></li>
+  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/5">7.11. Итоги</a></li>
+  <li><a href="/encyclopedia/7-project/7-11-legasi-kod/6">7.11. Чек-лист</a></li>
   </ul>
   </li>
 
@@ -3219,6 +3289,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/216">8.04. Ansible</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/217">8.04. Наблюдаемость и автоматизация</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/218">8.04. Service Mesh</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/219">8.04. Корпоративный доступ, SSO и платформенные инструменты</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/998">8.04. Итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/999">8.04. Чек-лист самопроверки</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/2111">8.04. Инженерия надежности (SRE) для разработчиков</a></li>
@@ -3273,6 +3344,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201">8.05. Справочник по SOAP</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1202">8.05. Справочник по gRPC</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203">8.05. Справочник по GraphQL</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1204">8.05. Справочник по RabbitMQ</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1205">8.05. Справочник по Apache Kafka</a></li>
   </ul>
   </li>
 
@@ -3489,6 +3562,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/122">9.04. Мобильные игры</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/123">9.04. Оптимизация игр</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/124">9.04. Тестирование игр</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/125">9.04. Каталог open-source клонов игр</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/201">9.04. Справочник по Roblox</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/301">9.04. Справочник по Unity</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/401">9.04. Справочник по Unreal Engine</a></li>
@@ -3589,12 +3663,12 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
-### Экспериментально - Для детей
+### Для детей
 
 <ul>
   <li>
   <ul>
-  Экспериментально - Для детей
+  Для детей
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/forkids">9.11. Для детей — о разделе</a></li>
   </ul>
   </li>

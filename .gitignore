@@ -191,3 +191,5 @@ info/llm-phrases-scan.csv
 
 # Локальная панель управления Docusaurus (admin/)
 /admin/
+/.cursor
+zhelezo-scan.txt

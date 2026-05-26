@@ -433,6 +433,8 @@ export const SIDEBAR_COLLECTIONS = [
       'encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201',
       'encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1202',
       'encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203',
+      'encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1204',
+      'encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1205',
       'encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2',
       'encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211',
       'encyclopedia/9-spinoff/9-04-razrabotka-igr/201',

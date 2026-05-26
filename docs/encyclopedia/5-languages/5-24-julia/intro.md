@@ -1,7 +1,16 @@
 ---
 title: Julia — о разделе
-description: Подборка материалов раздела Julia в энциклопедии Вселенная IT
+description: "Раздел про Julia — язык для научных и технических вычислений: динамический синтаксис в REPL и скриптах, производительность за счёт JIT-компиляции и специализации по типам."
 sidebar_label: Julia — о разделе
+related:
+  - title: "R — о разделе"
+    doc: encyclopedia/5-languages/5-23-r/intro
+  - title: "Bash — о разделе"
+    doc: encyclopedia/5-languages/5-25-bash/intro
+  - title: "Dart — о разделе"
+    doc: encyclopedia/5-languages/5-22-dart/intro
+  - title: "PowerShell — о разделе"
+    doc: encyclopedia/5-languages/5-26-powershell/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -22,6 +31,17 @@ import DocCardList from '@theme/DocCardList';
 
 Для практики нужна установленная Julia ([julialang.org](https://julialang.org/downloads/)) и по желанию VS Code с расширением Julia или Jupyter + `IJulia`.
 
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [PowerShell — о разделе](/encyclopedia/5-languages/5-26-powershell/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro).
+
+<!-- /sidebar-collections -->
 
 ---

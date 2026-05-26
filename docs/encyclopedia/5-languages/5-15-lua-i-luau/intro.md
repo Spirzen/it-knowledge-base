@@ -1,7 +1,16 @@
 ---
 title: Lua и Luau — о разделе
-description: Подборка материалов раздела Lua и Luau в энциклопедии Вселенная IT
+description: "Раздел охватывает классический Lua (в материалах ориентир — Lua 5.4) и Luau (диалект Roblox на базе Lua 5.1)."
 sidebar_label: Lua и Luau — о разделе
+related:
+  - title: "Swift — о разделе"
+    doc: encyclopedia/5-languages/5-14-swift/intro
+  - title: "Cobol — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro
+  - title: "Rust — о разделе"
+    doc: encyclopedia/5-languages/5-13-rust/intro
+  - title: "Fortran — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -9,6 +18,8 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Раздел охватывает **классический Lua** (в материалах ориентир — **Lua 5.4**) и **Luau** (диалект Roblox на базе Lua 5.1). В разных главах могут упоминаться фичи конкретной версии — смотрите пометки в тексте.
+
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ## Две дорожки
 
@@ -28,5 +39,14 @@ import DocCardList from '@theme/DocCardList';
 **Справочник:** [3.md](/encyclopedia/5-languages/5-15-lua-i-luau/3) · **Самопроверка:** [999.md](/encyclopedia/5-languages/5-15-lua-i-luau/999)
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro).
+
+<!-- /sidebar-collections -->
 
 ---

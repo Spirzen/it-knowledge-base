@@ -11,6 +11,8 @@ import BlockBuilder from '@site/src/components/BlockBuilder';
 
 Это блок про **мышление**, а не про «ещё один софт». Как разбить задачу на шаги, как не сдаваться после ошибки, какие слова говорят программисты и как не устать от экрана.
 
+3D и VR на уроках: [Tinkercad](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/18), [CoSpaces Edu](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/17).
+
 <div class="callout callout--tip">
   <div class="callout-title">Собери алгоритм</div>
   Ниже — конструктор блоков, как в Scratch. Сложи пару команд и посмотри, что получится.

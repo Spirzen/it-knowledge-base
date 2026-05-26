@@ -1,7 +1,24 @@
 ---
 title: Python — о разделе
-description: Подборка материалов раздела Python в энциклопедии Вселенная IT
+description: "Python удобен для первого языка: читается почти как текст, много материалов для школ и курсов."
 sidebar_label: Python — о разделе
+related:
+  - title: "JavaScript — о разделе"
+    doc: encyclopedia/5-languages/5-01-javascript/intro
+  - title: "Java — о разделе"
+    doc: encyclopedia/5-languages/5-03-java/intro
+  - title: "Low-code и No-code платформы"
+    doc: encyclopedia/8-infra-security/8-02-low-code-no-code/1
+  - title: "Документация и инструменты Java (Microsoft)"
+    doc: encyclopedia/5-languages/5-03-java/294
+  - title: "Приложение с S3, PostgreSQL и ASP.NET Core Web API"
+    doc: encyclopedia/5-languages/5-05-csharp/453
+  - title: "Веб-разработка и REST API на Python"
+    doc: encyclopedia/5-languages/5-02-python/34
+  - title: "Документация и практика ASP.NET (Microsoft Learn)"
+    doc: encyclopedia/5-languages/5-05-csharp/455
+  - title: "Социальные сети"
+    doc: encyclopedia/2-system-network/2-02-platformy/311
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -13,6 +30,8 @@ import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 Python удобен для **первого языка**: читается почти как текст, много материалов для школ и курсов.
 
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
 <BeginnerWebStackHub defaultTab="python" />
 
 <FirstProgramPlay language="python" />
@@ -20,5 +39,18 @@ Python удобен для **первого языка**: читается по�
 <SyntaxComparePlay />
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**База программиста** — [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
+
+**Веб-разработка** — [Приложение с S3, PostgreSQL и ASP.NET Core Web API](/encyclopedia/5-languages/5-05-csharp/453), [Веб-разработка и REST API на Python](/encyclopedia/5-languages/5-02-python/34), [Документация и практика ASP.NET (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/455), [Социальные сети](/encyclopedia/2-system-network/2-02-platformy/311), [ASP.NET - фреймворк для веб-приложений](/encyclopedia/5-languages/5-05-csharp/451), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1).
+
+**Бэкенд и серверная разработка** — [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro).
+
+<!-- /sidebar-collections -->
 
 ---

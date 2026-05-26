@@ -1,7 +1,16 @@
 ---
 title: Zig — о разделе
-description: Подборка материалов раздела Zig в энциклопедии Вселенная IT
+description: "Раздел про язык Zig — системное программирование с явной памятью, comptime и C-совместимостью."
 sidebar_label: Zig — о разделе
+related:
+  - title: "Elixir — о разделе"
+    doc: encyclopedia/5-languages/5-19-elixir/intro
+  - title: "Nim — о разделе"
+    doc: encyclopedia/5-languages/5-21-nim/intro
+  - title: "Scala — о разделе"
+    doc: encyclopedia/5-languages/5-18-scala/intro
+  - title: "Dart — о разделе"
+    doc: encyclopedia/5-languages/5-22-dart/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -9,6 +18,8 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Раздел про язык **Zig** — системное программирование с явной памятью, `comptime` и C-совместимостью. Примеры кода ориентированы на компилятор **0.12+**; язык до 1.0 может менять API — сверяйтесь с [официальными release notes](https://ziglang.org/download/).
+
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ## Краткий глоссарий
 
@@ -32,5 +43,14 @@ import DocCardList from '@theme/DocCardList';
 6. [История](./1) и [архитектура](./3) — контекст и принципы языка
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro).
+
+<!-- /sidebar-collections -->
 
 ---

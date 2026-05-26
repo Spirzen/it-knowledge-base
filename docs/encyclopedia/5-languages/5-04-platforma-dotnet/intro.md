@@ -1,7 +1,16 @@
 ---
 title: Платформа .NET — о разделе
-description: Подборка материалов раздела Платформа .NET в энциклопедии Вселенная IT
+description: "Раздел описывает платформу .NET: CLR, сборки, развёртывание, экосистему приложений и языки (C#, F#, VB)."
 sidebar_label: Платформа .NET — о разделе
+related:
+  - title: "Java — о разделе"
+    doc: encyclopedia/5-languages/5-03-java/intro
+  - title: "C# — о разделе"
+    doc: encyclopedia/5-languages/5-05-csharp/intro
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
+  - title: "C++ — о разделе"
+    doc: encyclopedia/5-languages/5-06-cpp/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -10,13 +19,15 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел описывает **платформу .NET**: CLR, сборки, развёртывание, экосистему приложений и языки (C#, F#, VB).
 
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
 ## F# — с чего начать
 
 1. [F# в экосистеме .NET](./18) — обзор языка и парадигм.
 2. [Первая программа на F#](./182) — консольный проект и `match`.
 3. [Интерактивная работа (FSI)](./185) — REPL и скрипты `.fsx`.
 4. [Сопоставление с образцом — практикум](./186) · [Императивные конструкции](./187).
-5. [ООП для взаимодействия с .NET](./188) · [Асинхронность: async, task и агенты](./189).
+5. [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro) (база) · [ООП для взаимодействия с .NET](./188) · [Асинхронность: async, task и агенты](./189).
 6. [Структура F#-проекта](./190) — порядок файлов и solution.
 7. [Справочник по F#](./181) · [Справочник F# (Learn)](./184).
 
@@ -33,5 +44,14 @@ import DocCardList from '@theme/DocCardList';
 - [Справочник C#](../5-05-csharp/472)
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro).
+
+<!-- /sidebar-collections -->
 
 ---

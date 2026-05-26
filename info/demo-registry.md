@@ -1,11 +1,11 @@
 # Реестр интерактивных демо
 
 > Служебный файл (не публикуется на сайте).  
-> Сгенерировано **2026-05-23** — `npm run docs:demo-registry`. Не редактировать вручную.
+> Сгенерировано **2026-05-25** — `npm run docs:demo-registry`. Не редактировать вручную.
 
 Путь: `info/demo-registry.md`
 
-Сводка: **440** компонентов в `src/components/`, из них **432** используются в статьях, **8** пока без подключений.
+Сводка: **492** компонентов в `src/components/`, из них **480** используются в статьях, **12** пока без подключений.
 
 | Компонент | Файл | Статей | Статьи (примеры) |
 | --- | --- | ---: | --- |
@@ -15,6 +15,7 @@
 | **AiCodingAssistantPlay** | `src/components/AiCodingAssistantPlay.jsx` | 3 | [1113](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1113), [1](/tools/development/1), [3](/tools/development/3) |
 | **AiDataAnalysisPlay** | `src/components/AiDataAnalysisPlay.jsx` | 1 | [421](/encyclopedia/3-data-markup/3-11-analiz-dannyh/421) |
 | **AlgoCodeVisualizer** | `src/components/AlgoCodeVisualizer.jsx` | 6 | [interactive](/about/interactive), [1](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1), [26](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/26), [12](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/12), [6](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/6), …ещё 1 |
+| **AnalyticsSectionHub** | `src/components/AnalyticsSectionHub.jsx` | 1 | [intro](/encyclopedia/7-project/7-04-analitika/intro) |
 | **AnsibleRunPlay** | `src/components/AnsibleRunPlay.jsx` | 1 | [216](/encyclopedia/8-infra-security/8-04-devops-ci-cd/216) |
 | **AntivirusDetectionPlay** | `src/components/AntivirusDetectionPlay.jsx` | 3 | [1112](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112), [120](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/120), [1](/tools/security/1) |
 | **ApiDesignPlay** | `src/components/ApiDesignPlay.jsx` | 1 | [122](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122) |
@@ -25,6 +26,8 @@
 | **ArchiveUtilitySimulator** | `src/components/ArchiveUtilitySimulator.jsx` | 2 | [1](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1), [2](/tools/development/2) |
 | **ArticleRelated** | `src/components/ArticleRelated.jsx` | 0 | — |
 | **articleSeeAlsoUtils** | `src/components/articleSeeAlsoUtils.js` | 0 | — |
+| **AspNetArchitecturePlay** | `src/components/AspNetArchitecturePlay.jsx` | 1 | [451](/encyclopedia/5-languages/5-05-csharp/451) |
+| **AssemblerEcosystemPlay** | `src/components/AssemblerEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/3) |
 | **AsynchronousInteraction** | `src/components/AsynchronousInteraction.jsx` | 4 | [111](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [119](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/119), [115](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115), [114](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114) |
 | **AttentionManipulationPlay** | `src/components/AttentionManipulationPlay.jsx` | 1 | [115](/encyclopedia/9-spinoff/9-10-internet-kultura/115) |
 | **AudioToolsPlay** | `src/components/AudioToolsPlay.jsx` | 1 | [4](/tools/multimedia/4) |
@@ -36,7 +39,9 @@
 | **BackpropStepPlay** | `src/components/BackpropStepPlay.jsx` | 1 | [1](/encyclopedia/6-ai/6-03-neyroseti/1) |
 | **BackupDemo** | `src/components/BackupDemo.jsx` | 2 | [91](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91), [117](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117) |
 | **BackupStrategyPlay** | `src/components/BackupStrategyPlay.jsx` | 1 | [5](/tools/data/5) |
-| **BashShellPlay** | `src/components/BashShellPlay.jsx` | 16 | [interactive](/about/interactive), [1](/encyclopedia/5-languages/5-25-bash/1), [11](/encyclopedia/5-languages/5-25-bash/11), [112](/encyclopedia/5-languages/5-25-bash/112), [113](/encyclopedia/5-languages/5-25-bash/113), …ещё 11 |
+| **BannerCarouselPlay** | `src/components/BannerCarouselPlay.jsx` | 2 | [113](/encyclopedia/3-data-markup/3-10-css/113), [34](/encyclopedia/5-languages/5-01-javascript/34) |
+| **BashEcosystemPlay** | `src/components/BashEcosystemPlay.jsx` | 1 | [11](/encyclopedia/5-languages/5-25-bash/11) |
+| **BashShellPlay** | `src/components/BashShellPlay.jsx` | 15 | [interactive](/about/interactive), [1](/encyclopedia/5-languages/5-25-bash/1), [112](/encyclopedia/5-languages/5-25-bash/112), [113](/encyclopedia/5-languages/5-25-bash/113), [114](/encyclopedia/5-languages/5-25-bash/114), …ещё 10 |
 | **BeginnerWebStackHub** | `src/components/BeginnerWebStackHub.jsx` | 7 | [intro](/encyclopedia/3-data-markup/3-09-html/intro), [intro](/encyclopedia/3-data-markup/3-10-css/intro), [intro](/encyclopedia/5-languages/5-01-javascript/intro), [intro](/encyclopedia/5-languages/5-02-python/intro), [intro](/encyclopedia/5-languages/5-07-php/intro), …ещё 2 |
 | **BigDataFiveVsPlay** | `src/components/BigDataFiveVsPlay.jsx` | 1 | [11](/encyclopedia/3-data-markup/3-11-analiz-dannyh/11) |
 | **BIOSemulator** | `src/components/BIOSemulator.jsx` | 3 | [6](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/6), [1](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1), [2](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2) |
@@ -60,14 +65,16 @@
 | **CassandraPartitionPlay** | `src/components/CassandraPartitionPlay.jsx` | 2 | [6](/encyclopedia/3-data-markup/3-06-nosql/6), [2](/tools/data/2) |
 | **CausalAnalysisPlay** | `src/components/CausalAnalysisPlay.jsx` | 1 | [422](/encyclopedia/3-data-markup/3-11-analiz-dannyh/422) |
 | **CdnCacheEmulatorPlay** | `src/components/CdnCacheEmulatorPlay.jsx` | 5 | [211](/encyclopedia/2-system-network/2-03-set-i-internet/211), [614](/encyclopedia/2-system-network/2-03-set-i-internet/614), [7](/encyclopedia/2-system-network/2-03-set-i-internet/7), [112](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/112), [13](/encyclopedia/9-spinoff/9-09-media-kontent/13) |
+| **CEcosystemPlay** | `src/components/CEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/3) |
 | **CiaTriadPlay** | `src/components/CiaTriadPlay.jsx` | 1 | [1](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1) |
 | **CicdAuthFlowPlay** | `src/components/CicdAuthFlowPlay.jsx` | 1 | [211](/encyclopedia/8-infra-security/8-04-devops-ci-cd/211) |
-| **CicdDemo** | `src/components/CicdDemo.jsx` | 4 | [1](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1), [1](/encyclopedia/7-project/7-11-legasi-kod/1), [1](/encyclopedia/8-infra-security/8-04-devops-ci-cd/1), [11](/encyclopedia/8-infra-security/8-04-devops-ci-cd/11) |
+| **CicdDemo** | `src/components/CicdDemo.jsx` | 4 | [1](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1), [3](/encyclopedia/7-project/7-11-legasi-kod/3), [1](/encyclopedia/8-infra-security/8-04-devops-ci-cd/1), [11](/encyclopedia/8-infra-security/8-04-devops-ci-cd/11) |
 | **CicdValidationLayersPlay** | `src/components/CicdValidationLayersPlay.jsx` | 2 | [interactive](/about/interactive), [13](/encyclopedia/8-infra-security/8-04-devops-ci-cd/13) |
 | **CleanArchitectureLayersPlay** | `src/components/CleanArchitectureLayersPlay.jsx` | 1 | [116](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/116) |
 | **CloudServiceStackPlay** | `src/components/CloudServiceStackPlay.jsx` | 1 | [3](/encyclopedia/2-system-network/2-02-platformy/3) |
 | **CloudStorageComparePlay** | `src/components/CloudStorageComparePlay.jsx` | 1 | [4](/tools/data/4) |
 | **ClusteringPlay** | `src/components/ClusteringPlay.jsx` | 1 | [2](/encyclopedia/3-data-markup/3-11-analiz-dannyh/2) |
+| **CobolEcosystemPlay** | `src/components/CobolEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/3) |
 | **CodeProtectionPlay** | `src/components/CodeProtectionPlay.jsx` | 1 | [11](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/11) |
 | **CodeRunPlacePlay** | `src/components/CodeRunPlacePlay.jsx` | 2 | [1](/encyclopedia/5-languages/5-07-php/1), [intro](/encyclopedia/5-languages/5-07-php/intro) |
 | **CodeSafetyPlay** | `src/components/CodeSafetyPlay.jsx` | 1 | [1](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1) |
@@ -82,6 +89,8 @@
 | **ConfluenceWikiDemo** | `src/components/ConfluenceWikiDemo.jsx` | 3 | [119](/encyclopedia/7-project/7-04-analitika/119), [1](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/1), [11](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/11) |
 | **ContainerOrchestrator** | `src/components/ContainerOrchestrator.jsx` | 4 | [1](/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1), [1](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1), [1172](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1172), [4](/tools/system/4) |
 | **CookieSessionPlay** | `src/components/CookieSessionPlay.jsx` | 1 | [7](/encyclopedia/2-system-network/2-03-set-i-internet/7) |
+| **CppDatabasePlay** | `src/components/CppDatabasePlay.jsx` | 1 | [24](/encyclopedia/5-languages/5-06-cpp/24) |
+| **CppEcosystemPlay** | `src/components/CppEcosystemPlay.jsx` | 1 | [10](/encyclopedia/5-languages/5-06-cpp/10) |
 | **CpuRegistersPlay** | `src/components/CpuRegistersPlay.jsx` | 1 | [311](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/311) |
 | **CreatorRolesPlay** | `src/components/CreatorRolesPlay.jsx` | 1 | [112](/encyclopedia/9-spinoff/9-10-internet-kultura/112) |
 | **CronSchedulePlay** | `src/components/CronSchedulePlay.jsx` | 1 | [1](/tools/automation/1) |
@@ -90,14 +99,16 @@
 | **CryptoTransactionPlay** | `src/components/CryptoTransactionPlay.jsx` | 1 | [11](/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/11) |
 | **CryptoVolatilityPlay** | `src/components/CryptoVolatilityPlay.jsx` | 1 | [11](/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/11) |
 | **CsharpDatabasePlay** | `src/components/CsharpDatabasePlay.jsx` | 1 | [44](/encyclopedia/5-languages/5-05-csharp/44) |
+| **CsharpLanguageRefExplorerPlay** | `src/components/CsharpLanguageRefExplorerPlay.jsx` | 1 | [472](/encyclopedia/5-languages/5-05-csharp/472) |
 | **CssHtmlBridgePlay** | `src/components/CssHtmlBridgePlay.jsx` | 1 | [111](/encyclopedia/3-data-markup/3-10-css/111) |
 | **CssTransitionPlay** | `src/components/CssTransitionPlay.jsx` | 1 | [6](/encyclopedia/3-data-markup/3-10-css/6) |
 | **CyclomaticComplexityPlay** | `src/components/CyclomaticComplexityPlay.jsx` | 1 | [2](/encyclopedia/7-project/7-10-kultura-koda/2) |
+| **DartEcosystemPlay** | `src/components/DartEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-22-dart/3) |
 | **DataAnalyticsPipelinePlay** | `src/components/DataAnalyticsPipelinePlay.jsx` | 2 | [1](/encyclopedia/3-data-markup/3-11-analiz-dannyh/1), [6](/tools/data/6) |
 | **DatabaseSchemaViewerPlay** | `src/components/DatabaseSchemaViewerPlay.jsx` | 10 | [interactive](/about/interactive), [91](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91), [1](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1), [2](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2), [4](/encyclopedia/3-data-markup/3-07-sql/4), …ещё 5 |
 | **DataGovernancePlay** | `src/components/DataGovernancePlay.jsx` | 1 | [111](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/111) |
 | **DataInformationPlay** | `src/components/DataInformationPlay.jsx` | 1 | [1](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/1) |
-| **DataLeakScenarioPlay** | `src/components/DataLeakScenarioPlay.jsx` | 1 | [121](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/121) |
+| **DataLeakScenarioPlay** | `src/components/DataLeakScenarioPlay.jsx` | 0 | — |
 | **DataScienceRolesPlay** | `src/components/DataScienceRolesPlay.jsx` | 1 | [12](/encyclopedia/3-data-markup/3-11-analiz-dannyh/12) |
 | **DataStructureGraph** | `src/components/DataStructureGraph.jsx` | 1 | [1](/encyclopedia/3-data-markup/3-02-struktury-dannyh/1) |
 | **DataStructureHierarchy** | `src/components/DataStructureHierarchy.jsx` | 1 | [1](/encyclopedia/3-data-markup/3-02-struktury-dannyh/1) |
@@ -138,6 +149,9 @@
 | **DocumentationArchitecturePlay** | `src/components/DocumentationArchitecturePlay.jsx` | 1 | [1002](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1002) |
 | **DomainLevelAnalyzer** | `src/components/DomainLevelAnalyzer.jsx` | 1 | [511](/encyclopedia/2-system-network/2-03-set-i-internet/511) |
 | **DomainModelPlay** | `src/components/DomainModelPlay.jsx` | 1 | [116](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/116) |
+| **DotNetApiExplorerPlay** | `src/components/DotNetApiExplorerPlay.jsx` | 2 | [183](/encyclopedia/5-languages/5-04-platforma-dotnet/183), [473](/encyclopedia/5-languages/5-05-csharp/473) |
+| **DotNetEcosystemPlay** | `src/components/DotNetEcosystemPlay.jsx` | 5 | [1](/encyclopedia/5-languages/5-04-platforma-dotnet/1), [12](/encyclopedia/5-languages/5-04-platforma-dotnet/12), [15](/encyclopedia/5-languages/5-04-platforma-dotnet/15), [17](/encyclopedia/5-languages/5-04-platforma-dotnet/17), [173](/encyclopedia/5-languages/5-04-platforma-dotnet/173) |
+| **ElixirEcosystemPlay** | `src/components/ElixirEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-19-elixir/3) |
 | **EmbeddedSystemPlay** | `src/components/EmbeddedSystemPlay.jsx` | 1 | [112](/encyclopedia/2-system-network/2-10-zhelezo/112) |
 | **EncryptionPlay** | `src/components/EncryptionPlay.jsx` | 7 | [116](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/116), [1112](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112), [112](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112), [115](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/115), [1151](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1151), …ещё 2 |
 | **EndUserSoftwareHub** | `src/components/EndUserSoftwareHub.jsx` | 3 | [intro](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [intro](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/intro), [intro](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro) |
@@ -146,18 +160,20 @@
 | **EnvSecretsPlay** | `src/components/EnvSecretsPlay.jsx` | 1 | [1112](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1112) |
 | **ERDDemo** | `src/components/ERDDemo.jsx` | 5 | [11](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11), [2](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2), [4](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4), [124](/encyclopedia/7-project/7-04-analitika/124), [1](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1) |
 | **EtlEltOrchestrationPlay** | `src/components/EtlEltOrchestrationPlay.jsx` | 1 | [425](/encyclopedia/3-data-markup/3-11-analiz-dannyh/425) |
-| **ExcelSimulator** | `src/components/ExcelSimulator.jsx` | 7 | [51](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [2](/encyclopedia/1-basics/1-15-tekst/2), [4](/encyclopedia/1-basics/1-15-tekst/4), [41](/encyclopedia/1-basics/1-15-tekst/41), [intro](/encyclopedia/1-basics/1-15-tekst/intro), …ещё 2 |
-| **ExceptionHandlingDemo** | `src/components/ExceptionHandlingDemo.jsx` | 31 | [111](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111), [241](/encyclopedia/5-languages/5-01-javascript/241), [28](/encyclopedia/5-languages/5-02-python/28), [281](/encyclopedia/5-languages/5-02-python/281), [21](/encyclopedia/5-languages/5-03-java/21), …ещё 26 |
+| **ExcelSimulator** | `src/components/ExcelSimulator.jsx` | 6 | [51](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [2](/encyclopedia/1-basics/1-15-tekst/2), [4](/encyclopedia/1-basics/1-15-tekst/4), [41](/encyclopedia/1-basics/1-15-tekst/41), [intro](/encyclopedia/1-basics/1-15-tekst/intro), …ещё 1 |
+| **ExceptionHandlingDemo** | `src/components/ExceptionHandlingDemo.jsx` | 32 | [111](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111), [241](/encyclopedia/5-languages/5-01-javascript/241), [28](/encyclopedia/5-languages/5-02-python/28), [281](/encyclopedia/5-languages/5-02-python/281), [21](/encyclopedia/5-languages/5-03-java/21), …ещё 27 |
 | **ExecutionPerformancePlay** | `src/components/ExecutionPerformancePlay.jsx` | 1 | [1](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1) |
 | **FigmaPrototypeStudio** | `src/components/FigmaPrototypeStudio.jsx` | 1 | [125](/encyclopedia/7-project/7-04-analitika/125) |
 | **FileManagerDualPanePlay** | `src/components/FileManagerDualPanePlay.jsx` | 1 | [3](/tools/data/3) |
 | **FileOpsLabPlay** | `src/components/FileOpsLabPlay.jsx` | 1 | [2](/tools/automation/2) |
-| **FiniteAutomatonDemo** | `src/components/FiniteAutomatonDemo.jsx` | 1 | [38](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/38) |
+| **FiniteAutomatonDemo** | `src/components/FiniteAutomatonDemo.jsx` | 2 | [38](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/38), [44](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/44) |
 | **FirewallPlay** | `src/components/FirewallPlay.jsx` | 3 | [115](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/115), [1112](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112), [2](/tools/security/2) |
-| **FirstProgramPlay** | `src/components/FirstProgramPlay.jsx` | 48 | [1](/encyclopedia/5-languages/5-01-javascript/1), [272](/encyclopedia/5-languages/5-01-javascript/272), [282](/encyclopedia/5-languages/5-01-javascript/282), [292](/encyclopedia/5-languages/5-01-javascript/292), [intro](/encyclopedia/5-languages/5-01-javascript/intro), …ещё 43 |
+| **FirstProgramPlay** | `src/components/FirstProgramPlay.jsx` | 66 | [118](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118), [1](/encyclopedia/5-languages/5-01-javascript/1), [262](/encyclopedia/5-languages/5-01-javascript/262), [272](/encyclopedia/5-languages/5-01-javascript/272), [2731](/encyclopedia/5-languages/5-01-javascript/2731), …ещё 61 |
 | **FlexGridPlay** | `src/components/FlexGridPlay.jsx` | 1 | [2](/encyclopedia/3-data-markup/3-10-css/2) |
+| **FortranEcosystemPlay** | `src/components/FortranEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/3) |
 | **ForumImageboardPlay** | `src/components/ForumImageboardPlay.jsx` | 1 | [11](/encyclopedia/9-spinoff/9-10-internet-kultura/11) |
 | **FrameworkDemo** | `src/components/FrameworkDemo.jsx` | 1 | [11](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/11) |
+| **FsharpLanguageRefExplorerPlay** | `src/components/FsharpLanguageRefExplorerPlay.jsx` | 1 | [184](/encyclopedia/5-languages/5-04-platforma-dotnet/184) |
 | **FunctionSimulator** | `src/components/FunctionSimulator.jsx` | 31 | [4](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4), [112](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/112), [15](/encyclopedia/5-languages/5-01-javascript/15), [24](/encyclopedia/5-languages/5-02-python/24), [3](/encyclopedia/5-languages/5-03-java/3), …ещё 26 |
 | **GameArchitecturePlay** | `src/components/GameArchitecturePlay.jsx` | 1 | [3](/encyclopedia/1-basics/1-18-kompyuternye-igry/3) |
 | **GameDesignMdaPlay** | `src/components/GameDesignMdaPlay.jsx` | 1 | [117](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) |
@@ -190,16 +206,21 @@
 | **GisStackExplorerPlay** | `src/components/GisStackExplorerPlay.jsx` | 1 | [4](/tools/misc/4) |
 | **GitBranchMergePlay** | `src/components/GitBranchMergePlay.jsx` | 1 | [113](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113) |
 | **GitCommandsPlay** | `src/components/GitCommandsPlay.jsx` | 1 | [114](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/114) |
-| **GitEmulator** | `src/components/GitEmulator.jsx` | 5 | [interactive](/about/interactive), [112](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112), [1](/encyclopedia/7-project/7-11-legasi-kod/1), [1](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1), [111](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/111) |
+| **GitEmulator** | `src/components/GitEmulator.jsx` | 5 | [interactive](/about/interactive), [112](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112), [2](/encyclopedia/7-project/7-11-legasi-kod/2), [1](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1), [111](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/111) |
 | **GitFlagsPlay** | `src/components/GitFlagsPlay.jsx` | 1 | [115](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/115) |
 | **GitFlowPlay** | `src/components/GitFlowPlay.jsx` | 2 | [1111](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1111), [12](/encyclopedia/8-infra-security/8-04-devops-ci-cd/12) |
 | **GitHubActionsWorkflowPlay** | `src/components/GitHubActionsWorkflowPlay.jsx` | 1 | [2112](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2112) |
 | **GitInternalsPlay** | `src/components/GitInternalsPlay.jsx` | 1 | [112](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/112) |
 | **GitLabCiPipelinePlay** | `src/components/GitLabCiPipelinePlay.jsx` | 1 | [2113](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2113) |
 | **GitSvnComparePlay** | `src/components/GitSvnComparePlay.jsx` | 1 | [116](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/116) |
+| **GoDatabasePlay** | `src/components/GoDatabasePlay.jsx` | 1 | [20](/encyclopedia/5-languages/5-10-go/20) |
+| **GoEcosystemPlay** | `src/components/GoEcosystemPlay.jsx` | 1 | [111](/encyclopedia/5-languages/5-10-go/111) |
 | **GoMicroservicePlay** | `src/components/GoMicroservicePlay.jsx` | 1 | [102](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/102) |
 | **GraphRepresentationPlay** | `src/components/GraphRepresentationPlay.jsx` | 1 | [2](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/2) |
 | **GraphTraversalPlay** | `src/components/GraphTraversalPlay.jsx` | 1 | [7](/encyclopedia/3-data-markup/3-06-nosql/7) |
+| **GroovyDatabasePlay** | `src/components/GroovyDatabasePlay.jsx` | 1 | [19](/encyclopedia/5-languages/5-12-groovy/19) |
+| **GroovyEcosystemPlay** | `src/components/GroovyEcosystemPlay.jsx` | 1 | [11](/encyclopedia/5-languages/5-12-groovy/11) |
+| **HaskellEcosystemPlay** | `src/components/HaskellEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-17-haskell/3) |
 | **HexNotationPlay** | `src/components/HexNotationPlay.jsx` | 1 | [211](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/211) |
 | **HomeNetworkPlay** | `src/components/HomeNetworkPlay.jsx` | 1 | [61](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61) |
 | **HTMLPlayground** | `src/components/HTMLPlayground.js` | 8 | [interactive](/about/interactive), [1](/encyclopedia/3-data-markup/3-09-html/1), [2](/encyclopedia/3-data-markup/3-09-html/2), [21](/encyclopedia/3-data-markup/3-09-html/21), [22](/encyclopedia/3-data-markup/3-09-html/22), …ещё 3 |
@@ -224,21 +245,28 @@
 | **ItCareerPlanPlay** | `src/components/ItCareerPlanPlay.jsx` | 1 | [911](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/911) |
 | **ItInfrastructurePlay** | `src/components/ItInfrastructurePlay.jsx` | 1 | [3](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3) |
 | **JavaDatabasePlay** | `src/components/JavaDatabasePlay.jsx` | 1 | [22](/encyclopedia/5-languages/5-03-java/22) |
+| **JavaScriptRuntimePlay** | `src/components/JavaScriptRuntimePlay.jsx` | 1 | [14](/encyclopedia/5-languages/5-01-javascript/14) |
 | **JiraTaskTrackerDemo** | `src/components/JiraTaskTrackerDemo.jsx` | 1 | [2](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/2) |
 | **JsDomBridgePlay** | `src/components/JsDomBridgePlay.jsx` | 1 | [102](/encyclopedia/5-languages/5-01-javascript/102) |
+| **JsEcosystemPlay** | `src/components/JsEcosystemPlay.jsx` | 1 | [25](/encyclopedia/5-languages/5-01-javascript/25) |
 | **JsonPlayDemo** | `src/components/JsonPlayDemo.jsx` | 1 | [3](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3) |
+| **JuliaEcosystemPlay** | `src/components/JuliaEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-24-julia/3) |
 | **KafkaSimulation** | `src/components/KafkaSimulation.js` | 3 | [123](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123), [115](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115), [119](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119) |
 | **KernelArchitecturePlay** | `src/components/KernelArchitecturePlay.jsx` | 1 | [3](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/3) |
-| **KeyboardPlay** | `src/components/KeyboardPlay.jsx` | 6 | [interactive](/about/interactive), [713](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [7131](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [3](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3), [4](/encyclopedia/1-basics/1-18-kompyuternye-igry/4), …ещё 1 |
+| **KeyboardPlay** | `src/components/KeyboardPlay.jsx` | 7 | [interactive](/about/interactive), [713](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [7131](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [3](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3), [5](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5), …ещё 2 |
+| **KotlinDatabasePlay** | `src/components/KotlinDatabasePlay.jsx` | 1 | [18](/encyclopedia/5-languages/5-09-kotlin/18) |
+| **KotlinEcosystemPlay** | `src/components/KotlinEcosystemPlay.jsx` | 1 | [10](/encyclopedia/5-languages/5-09-kotlin/10) |
+| **KubernetesDocsExplorerPlay** | `src/components/KubernetesDocsExplorerPlay.jsx` | 1 | [7](/tools/documentation/7) |
 | **LabTrainersHub** | `src/components/LabTrainersHub.jsx` | 2 | [interactive](/about/interactive), [1](/lab/trainers/1) |
 | **LanguageAbstractionPlay** | `src/components/LanguageAbstractionPlay.jsx` | 2 | [55](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/55), [111](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/111) |
 | **LanguageIntroHub** | `src/components/LanguageIntroHub.jsx` | 1 | [1](/encyclopedia/1-basics/1-24-osnovnye-yazyki/1) |
-| **LanguageIntroPlay** | `src/components/LanguageIntroPlay.jsx` | 37 | [1](/encyclopedia/3-data-markup/3-07-sql/1), [1](/encyclopedia/3-data-markup/3-09-html/1), [1](/encyclopedia/3-data-markup/3-10-css/1), [1](/encyclopedia/5-languages/5-01-javascript/1), [1](/encyclopedia/5-languages/5-02-python/1), …ещё 32 |
+| **LanguageIntroPlay** | `src/components/LanguageIntroPlay.jsx` | 38 | [1](/encyclopedia/3-data-markup/3-07-sql/1), [1](/encyclopedia/3-data-markup/3-09-html/1), [1](/encyclopedia/3-data-markup/3-10-css/1), [1](/encyclopedia/5-languages/5-01-javascript/1), [1](/encyclopedia/5-languages/5-02-python/1), …ещё 33 |
 | **LaptopExplorerPlay** | `src/components/LaptopExplorerPlay.jsx` | 3 | [711](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/711), [11](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/11), [intro](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro) |
 | **LexicalScopeVisualizer** | `src/components/LexicalScopeVisualizer.jsx` | 3 | [16](/encyclopedia/5-languages/5-01-javascript/16), [17](/encyclopedia/5-languages/5-01-javascript/17), [17](/encyclopedia/5-languages/5-07-php/17) |
 | **LibraryConnectionDemo** | `src/components/LibraryConnectionDemo.jsx` | 1 | [101](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/101) |
 | **LicenseUsagePlay** | `src/components/LicenseUsagePlay.jsx` | 1 | [license](/about/license) |
 | **LinterLivePlay** | `src/components/LinterLivePlay.jsx` | 1 | [3](/tools/testing/3) |
+| **LispEcosystemPlay** | `src/components/LispEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/3) |
 | **LiteratureShelfPlay** | `src/components/LiteratureShelfPlay.jsx` | 1 | [1](/tools/documentation/1) |
 | **LoadStressMetricsPlay** | `src/components/LoadStressMetricsPlay.jsx` | 3 | [122](/encyclopedia/7-project/7-05-testirovanie/122), [4](/tools/development/4), [1](/tools/testing/1) |
 | **LoadTestSimulatorPlay** | `src/components/LoadTestSimulatorPlay.jsx` | 1 | [1014](/encyclopedia/7-project/7-05-testirovanie/1014) |
@@ -247,6 +275,7 @@
 | **LoopsSimulator** | `src/components/LoopsSimulator.jsx` | 34 | [5](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/5), [113](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/113), [20](/encyclopedia/5-languages/5-01-javascript/20), [23](/encyclopedia/5-languages/5-02-python/23), [17](/encyclopedia/5-languages/5-03-java/17), …ещё 29 |
 | **LowCodeRolloutPlay** | `src/components/LowCodeRolloutPlay.jsx` | 1 | [111](/encyclopedia/8-infra-security/8-02-low-code-no-code/111) |
 | **LowNoCodeDemo** | `src/components/LowNoCodeDemo.jsx` | 1 | [1](/encyclopedia/8-infra-security/8-02-low-code-no-code/1) |
+| **LuaEcosystemPlay** | `src/components/LuaEcosystemPlay.jsx` | 1 | [11](/encyclopedia/5-languages/5-15-lua-i-luau/11) |
 | **MalwareRemediationPlay** | `src/components/MalwareRemediationPlay.jsx` | 2 | [112](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/112), [119](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/119) |
 | **ManifestPrinciplesPlay** | `src/components/ManifestPrinciplesPlay.jsx` | 1 | [manifest](/about/manifest) |
 | **MarkdownLivePlay** | `src/components/MarkdownLivePlay.jsx` | 1 | [5](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5) |
@@ -265,6 +294,7 @@
 | **MetadataExplorerPlay** | `src/components/MetadataExplorerPlay.jsx` | 1 | [5](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/5) |
 | **MetaprogrammingPhasesPlay** | `src/components/MetaprogrammingPhasesPlay.jsx` | 1 | [112](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/112) |
 | **MethodCallSimulator** | `src/components/MethodCallSimulator.jsx` | 3 | [2](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2), [113](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/113), [16](/encyclopedia/5-languages/5-03-java/16) |
+| **MicrosoftLearnExplorerPlay** | `src/components/MicrosoftLearnExplorerPlay.jsx` | 1 | [6](/tools/documentation/6) |
 | **MiscToolsCatalogPlay** | `src/components/MiscToolsCatalogPlay.jsx` | 2 | [6](/tools/misc/6), [5](/tools/system/5) |
 | **MobileAppEmulator** | `src/components/MobileAppEmulator.jsx` | 2 | [3](/encyclopedia/1-basics/1-19-programma/3), [1](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1) |
 | **MobileDevicesPlay** | `src/components/MobileDevicesPlay.jsx` | 1 | [712](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/712) |
@@ -280,6 +310,7 @@
 | **NetworkStackExplorerPlay** | `src/components/NetworkStackExplorerPlay.jsx` | 5 | [interactive](/about/interactive), [1](/encyclopedia/2-system-network/2-03-set-i-internet/1), [211](/encyclopedia/2-system-network/2-03-set-i-internet/211), [6](/encyclopedia/2-system-network/2-03-set-i-internet/6), [118](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) |
 | **NetworkTrafficMonitorDemo** | `src/components/NetworkTrafficMonitorDemo.jsx` | 4 | [615](/encyclopedia/2-system-network/2-03-set-i-internet/615), [2](/tools/development/2), [4](/tools/development/4), [4](/tools/security/4) |
 | **NeuralNetworkDemo** | `src/components/NeuralNetworkDemo.jsx` | 4 | [interactive](/about/interactive), [1](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1), [1](/encyclopedia/6-ai/6-03-neyroseti/1), [112](/encyclopedia/6-ai/6-03-neyroseti/112) |
+| **NimEcosystemPlay** | `src/components/NimEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-21-nim/3) |
 | **NodeDatabasePlay** | `src/components/NodeDatabasePlay.jsx` | 1 | [26](/encyclopedia/5-languages/5-01-javascript/26) |
 | **NoSqlModelsPlay** | `src/components/NoSqlModelsPlay.jsx` | 1 | [2](/tools/data/2) |
 | **NotesWorkflowPlay** | `src/components/NotesWorkflowPlay.jsx` | 1 | [3](/tools/misc/3) |
@@ -287,6 +318,8 @@
 | **ObservabilityStackDemo** | `src/components/ObservabilityStackDemo.jsx` | 6 | [6](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6), [92](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92), [19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19), [217](/encyclopedia/8-infra-security/8-04-devops-ci-cd/217), [4](/tools/development/4), …ещё 1 |
 | **ObsStreamStudioPlay** | `src/components/ObsStreamStudioPlay.jsx` | 1 | [5](/tools/multimedia/5) |
 | **OfficeSuiteComparePlay** | `src/components/OfficeSuiteComparePlay.jsx` | 1 | [1](/tools/misc/1) |
+| **OneCDatabasePlay** | `src/components/OneCDatabasePlay.jsx` | 1 | [118](/encyclopedia/5-languages/5-27-1s/118) |
+| **OneCEcosystemPlay** | `src/components/OneCEcosystemPlay.jsx` | 1 | [111](/encyclopedia/5-languages/5-27-1s/111) |
 | **OneCPlatformEmulator** | `src/components/OneCPlatformEmulator.jsx` | 8 | [1](/encyclopedia/5-languages/5-27-1s/1), [111](/encyclopedia/5-languages/5-27-1s/111), [112](/encyclopedia/5-languages/5-27-1s/112), [113](/encyclopedia/5-languages/5-27-1s/113), [114](/encyclopedia/5-languages/5-27-1s/114), …ещё 3 |
 | **OopAbstractionDemo** | `src/components/OopAbstractionDemo.jsx` | 5 | [2](/encyclopedia/4-code-dev/4-08-oop/2), [26](/encyclopedia/5-languages/5-02-python/26), [18](/encyclopedia/5-languages/5-03-java/18), [25](/encyclopedia/5-languages/5-05-csharp/25), [4](/encyclopedia/5-languages/5-08-smalltalk/4) |
 | **OopBasicsDemo** | `src/components/OopBasicsDemo.jsx` | 15 | [1](/encyclopedia/4-code-dev/4-08-oop/1), [22](/encyclopedia/5-languages/5-01-javascript/22), [26](/encyclopedia/5-languages/5-02-python/26), [18](/encyclopedia/5-languages/5-03-java/18), [25](/encyclopedia/5-languages/5-05-csharp/25), …ещё 10 |
@@ -305,14 +338,18 @@
 | **OwaspTop10ExplorerPlay** | `src/components/OwaspTop10ExplorerPlay.jsx` | 1 | [1](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1) |
 | **PackagePublishPlay** | `src/components/PackagePublishPlay.jsx` | 1 | [113](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/113) |
 | **PacketCapturePlay** | `src/components/PacketCapturePlay.jsx` | 1 | [4](/tools/security/4) |
+| **PascalEcosystemPlay** | `src/components/PascalEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/3) |
 | **PasswordManagerComparePlay** | `src/components/PasswordManagerComparePlay.jsx` | 1 | [2](/tools/misc/2) |
 | **PcAssemblyPlay** | `src/components/PcAssemblyPlay.jsx` | 1 | [1011](/encyclopedia/2-system-network/2-10-zhelezo/1011) |
 | **PcFirstBootDiagnosticPlay** | `src/components/PcFirstBootDiagnosticPlay.jsx` | 1 | [1012](/encyclopedia/2-system-network/2-10-zhelezo/1012) |
 | **PersonalizedPricingPlay** | `src/components/PersonalizedPricingPlay.jsx` | 1 | [2](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/2) |
 | **PetProjectPlannerPlay** | `src/components/PetProjectPlannerPlay.jsx` | 1 | [114](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/114) |
+| **PhpDatabasePlay** | `src/components/PhpDatabasePlay.jsx` | 1 | [151](/encyclopedia/5-languages/5-07-php/151) |
+| **PhpEcosystemPlay** | `src/components/PhpEcosystemPlay.jsx` | 1 | [10](/encyclopedia/5-languages/5-07-php/10) |
 | **PipelineLifecyclePlay** | `src/components/PipelineLifecyclePlay.jsx` | 1 | [14](/encyclopedia/8-infra-security/8-04-devops-ci-cd/14) |
 | **PortForwardingPlay** | `src/components/PortForwardingPlay.jsx` | 1 | [7](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7) |
-| **PowerShellShellPlay** | `src/components/PowerShellShellPlay.jsx` | 16 | [1](/encyclopedia/5-languages/5-26-powershell/1), [11](/encyclopedia/5-languages/5-26-powershell/11), [111](/encyclopedia/5-languages/5-26-powershell/111), [112](/encyclopedia/5-languages/5-26-powershell/112), [113](/encyclopedia/5-languages/5-26-powershell/113), …ещё 11 |
+| **PowerShellEcosystemPlay** | `src/components/PowerShellEcosystemPlay.jsx` | 1 | [11](/encyclopedia/5-languages/5-26-powershell/11) |
+| **PowerShellShellPlay** | `src/components/PowerShellShellPlay.jsx` | 15 | [1](/encyclopedia/5-languages/5-26-powershell/1), [111](/encyclopedia/5-languages/5-26-powershell/111), [112](/encyclopedia/5-languages/5-26-powershell/112), [113](/encyclopedia/5-languages/5-26-powershell/113), [114](/encyclopedia/5-languages/5-26-powershell/114), …ещё 10 |
 | **PrivacyConsentPlay** | `src/components/PrivacyConsentPlay.jsx` | 1 | [122](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/122) |
 | **ProcessorExecutionPlay** | `src/components/ProcessorExecutionPlay.jsx` | 1 | [3](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/3) |
 | **ProcessThreadVisualizer** | `src/components/ProcessThreadVisualizer.jsx` | 2 | [1](/encyclopedia/4-code-dev/4-05-asinhronnost/1), [21](/encyclopedia/5-languages/5-10-go/21) |
@@ -331,20 +368,22 @@
 | **PushNotificationPlay** | `src/components/PushNotificationPlay.jsx` | 2 | [117](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/117), [120](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120) |
 | **PythonDatabasePlay** | `src/components/PythonDatabasePlay.jsx` | 2 | [30](/encyclopedia/5-languages/5-02-python/30), [314](/encyclopedia/5-languages/5-02-python/314) |
 | **PythonDataStatsPlay** | `src/components/PythonDataStatsPlay.jsx` | 1 | [424](/encyclopedia/3-data-markup/3-11-analiz-dannyh/424) |
+| **PythonEcosystemPlay** | `src/components/PythonEcosystemPlay.jsx` | 1 | [121](/encyclopedia/5-languages/5-02-python/121) |
 | **QrCodeGenerator** | `src/components/QrCodeGenerator.jsx` | 1 | [2](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/2) |
 | **QueryLanguagesPlay** | `src/components/QueryLanguagesPlay.jsx` | 2 | [2](/encyclopedia/1-basics/1-21-poisk-informatsii/2), [13](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/13) |
 | **RabbitMQSimulation** | `src/components/RabbitMQSimulation.js` | 3 | [122](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122), [115](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115), [118](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118) |
 | **RaceConditionDemo** | `src/components/RaceConditionDemo.jsx` | 1 | [11](/encyclopedia/4-code-dev/4-05-asinhronnost/11) |
-| **RandomChecklistItem** | `src/components/RandomChecklistItem.jsx` | 109 | [99](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/99), [99](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/99), [99](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/99), [99](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/99), [99](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/99), …ещё 104 |
+| **RandomChecklistItem** | `src/components/RandomChecklistItem.jsx` | 112 | [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99), [99](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/99), [99](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/99), [99](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/99), [99](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/99), …ещё 107 |
 | **RandomGameGenerator** | `src/components/RandomGameGenerator.jsx` | 1 | [4](/tools/games/4) |
 | **RandomQuestionFromArticle** | `src/components/RandomQuestionFromArticle.jsx` | 51 | [1](/lab/questions/1), [11](/lab/questions/11), [111](/lab/questions/111), [112](/lab/questions/112), [113](/lab/questions/113), …ещё 46 |
 | **RasterVectorCompareDemo** | `src/components/RasterVectorCompareDemo.jsx` | 3 | [2](/encyclopedia/1-basics/1-16-grafika/2), [11](/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/11), [12](/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/12) |
 | **ReactiveInteraction** | `src/components/ReactiveInteraction.jsx` | 4 | [111](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [120](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/120), [115](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115), [116](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) |
 | **ReactTreeDemo** | `src/components/ReactTreeDemo.jsx` | 1 | [27](/encyclopedia/5-languages/5-01-javascript/27) |
 | **ReadWritePlay** | `src/components/ReadWritePlay.jsx` | 2 | [2](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/2), [14](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/14) |
+| **REcosystemPlay** | `src/components/REcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-23-r/3) |
 | **RedisCacheDemo** | `src/components/RedisCacheDemo.jsx` | 1 | [5](/encyclopedia/3-data-markup/3-06-nosql/5) |
 | **RedisDataTypesPlay** | `src/components/RedisDataTypesPlay.jsx` | 2 | [511](/encyclopedia/3-data-markup/3-06-nosql/511), [2](/tools/data/2) |
-| **RefactoringDemo** | `src/components/RefactoringDemo.jsx` | 2 | [612](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612), [1](/encyclopedia/7-project/7-11-legasi-kod/1) |
+| **RefactoringDemo** | `src/components/RefactoringDemo.jsx` | 2 | [612](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612), [3](/encyclopedia/7-project/7-11-legasi-kod/3) |
 | **RegexPlaygroundDemo** | `src/components/RegexPlaygroundDemo.jsx` | 2 | [111](/encyclopedia/4-code-dev/4-01-algoritmy/111), [37](/encyclopedia/5-languages/5-05-csharp/37) |
 | **RemoteWorkConnectPlay** | `src/components/RemoteWorkConnectPlay.jsx` | 1 | [1](/encyclopedia/1-basics/1-27-udalennaya-rabota/1) |
 | **RequestResponseModel** | `src/components/RequestResponseModel.jsx` | 2 | [116](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/116), [115](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115) |
@@ -352,8 +391,13 @@
 | **ResourceMetricsDemo** | `src/components/ResourceMetricsDemo.jsx` | 4 | [114](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/114), [112](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/112), [4](/tools/development/4), [2](/tools/system/2) |
 | **ResponsiveViewportPlay** | `src/components/ResponsiveViewportPlay.jsx` | 1 | [7](/encyclopedia/3-data-markup/3-10-css/7) |
 | **RoleDevelopmentPlanPlay** | `src/components/RoleDevelopmentPlanPlay.jsx` | 6 | [1](/lab/roadmap/1), [2](/lab/roadmap/2), [3](/lab/roadmap/3), [4](/lab/roadmap/4), [5](/lab/roadmap/5), …ещё 1 |
+| **RubyDatabasePlay** | `src/components/RubyDatabasePlay.jsx` | 1 | [16](/encyclopedia/5-languages/5-11-ruby/16) |
+| **RubyEcosystemPlay** | `src/components/RubyEcosystemPlay.jsx` | 1 | [15](/encyclopedia/5-languages/5-11-ruby/15) |
+| **RustDatabasePlay** | `src/components/RustDatabasePlay.jsx` | 1 | [16](/encyclopedia/5-languages/5-13-rust/16) |
+| **RustEcosystemPlay** | `src/components/RustEcosystemPlay.jsx` | 1 | [110](/encyclopedia/5-languages/5-13-rust/110) |
+| **ScalaEcosystemPlay** | `src/components/ScalaEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-18-scala/3) |
 | **ScalingDemo** | `src/components/ScalingDemo.jsx` | 5 | [2112](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2112), [2137](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2137), [1](/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1), [1](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1), [111](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/111) |
-| **SchemaMakerPlay** | `src/components/SchemaMakerPlay.jsx` | 28 | [interactive](/about/interactive), [4](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4), [21](/encyclopedia/1-basics/1-16-grafika/21), [7](/encyclopedia/1-basics/1-24-osnovnye-yazyki/7), [1](/encyclopedia/4-code-dev/4-01-algoritmy/1), …ещё 23 |
+| **SchemaMakerPlay** | `src/components/SchemaMakerPlay.jsx` | 29 | [interactive](/about/interactive), [10](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/10), [4](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4), [21](/encyclopedia/1-basics/1-16-grafika/21), [7](/encyclopedia/1-basics/1-24-osnovnye-yazyki/7), …ещё 24 |
 | **ScreenshotWorkflowPlay** | `src/components/ScreenshotWorkflowPlay.jsx` | 1 | [5](/tools/misc/5) |
 | **SearchEnginesHub** | `src/components/SearchEnginesHub.jsx` | 2 | [4](/encyclopedia/1-basics/1-21-poisk-informatsii/4), [intro](/encyclopedia/1-basics/1-21-poisk-informatsii/intro) |
 | **SearchPipelinePlay** | `src/components/SearchPipelinePlay.jsx` | 1 | [1](/encyclopedia/1-basics/1-21-poisk-informatsii/1) |
@@ -366,21 +410,25 @@
 | **SoftwareLifecycleDemo** | `src/components/SoftwareLifecycleDemo.jsx` | 1 | [1](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1) |
 | **SolidDemo** | `src/components/SolidDemo.jsx` | 2 | [113](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113), [1112](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1112) |
 | **SortingVisualizer** | `src/components/SortingVisualizer.jsx` | 1 | [2](/encyclopedia/4-code-dev/4-01-algoritmy/2) |
+| **SpirzenOnlineToolLink** | `src/components/SpirzenOnlineToolLink.jsx` | 0 | — |
+| **SpirzenOnlineToolsPanel** | `src/components/SpirzenOnlineToolsPanel.jsx` | 1 | [author](/about/author) |
 | **SqlCtePlay** | `src/components/SqlCtePlay.jsx` | 1 | [551](/encyclopedia/3-data-markup/3-07-sql/551) |
 | **SqlDeleteTrainer** | `src/components/SqlDeleteTrainer.jsx` | 1 | [5](/encyclopedia/3-data-markup/3-07-sql/5) |
 | **SqlExplainPlanPlay** | `src/components/SqlExplainPlanPlay.jsx` | 1 | [881](/encyclopedia/3-data-markup/3-07-sql/881) |
 | **SqlInsertTrainer** | `src/components/SqlInsertTrainer.jsx` | 1 | [5](/encyclopedia/3-data-markup/3-07-sql/5) |
 | **SqlJoinTrainer** | `src/components/SqlJoinTrainer.jsx` | 2 | [interactive](/about/interactive), [55](/encyclopedia/3-data-markup/3-07-sql/55) |
 | **SqlProcedureTriggerPlay** | `src/components/SqlProcedureTriggerPlay.jsx` | 1 | [88](/encyclopedia/3-data-markup/3-07-sql/88) |
-| **SqlTrainer** | `src/components/SqlTrainer.jsx` | 3 | [1](/encyclopedia/3-data-markup/3-07-sql/1), [5](/encyclopedia/3-data-markup/3-07-sql/5), [1122](/encyclopedia/7-project/7-04-analitika/1122) |
+| **SqlTrainer** | `src/components/SqlTrainer.jsx` | 4 | [1](/encyclopedia/3-data-markup/3-07-sql/1), [107](/encyclopedia/3-data-markup/3-07-sql/107), [5](/encyclopedia/3-data-markup/3-07-sql/5), [1122](/encyclopedia/7-project/7-04-analitika/1122) |
 | **SqlUpdateTrainer** | `src/components/SqlUpdateTrainer.jsx` | 1 | [5](/encyclopedia/3-data-markup/3-07-sql/5) |
 | **SqlViewPlay** | `src/components/SqlViewPlay.jsx` | 1 | [8](/encyclopedia/3-data-markup/3-07-sql/8) |
 | **SreMetricsPlay** | `src/components/SreMetricsPlay.jsx` | 1 | [2111](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2111) |
 | **StreamingAdaptivePlay** | `src/components/StreamingAdaptivePlay.jsx` | 2 | [13](/encyclopedia/9-spinoff/9-09-media-kontent/13), [5](/tools/multimedia/5) |
 | **StyleInjectionPlay** | `src/components/StyleInjectionPlay.jsx` | 1 | [711](/encyclopedia/3-data-markup/3-10-css/711) |
 | **SwaggerApiExplorer** | `src/components/SwaggerApiExplorer.jsx` | 4 | [117](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117), [1002](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1002), [3](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3), [122](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122) |
+| **SwiftDatabasePlay** | `src/components/SwiftDatabasePlay.jsx` | 1 | [16](/encyclopedia/5-languages/5-14-swift/16) |
+| **SwiftEcosystemPlay** | `src/components/SwiftEcosystemPlay.jsx` | 1 | [10](/encyclopedia/5-languages/5-14-swift/10) |
 | **SynchronousInteraction** | `src/components/SynchronousInteraction.jsx` | 3 | [111](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [115](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115), [115](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115) |
-| **SyntaxComparePlay** | `src/components/SyntaxComparePlay.jsx` | 2 | [intro](/encyclopedia/5-languages/5-02-python/intro), [8](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/8) |
+| **SyntaxComparePlay** | `src/components/SyntaxComparePlay.jsx` | 7 | [intro](/encyclopedia/5-languages/5-02-python/intro), [intro](/encyclopedia/5-languages/5-08-smalltalk/intro), [intro](/encyclopedia/5-languages/5-11-ruby/intro), [intro](/encyclopedia/5-languages/5-13-rust/intro), [intro](/encyclopedia/5-languages/5-14-swift/intro), …ещё 2 |
 | **SystemAnalystRoleDemo** | `src/components/SystemAnalystRoleDemo.jsx` | 1 | [114](/encyclopedia/7-project/7-04-analitika/114) |
 | **SystemDiscoveryDemo** | `src/components/SystemDiscoveryDemo.jsx` | 1 | [115](/encyclopedia/7-project/7-04-analitika/115) |
 | **SystemRequirementsComparePlay** | `src/components/SystemRequirementsComparePlay.jsx` | 1 | [312](/encyclopedia/2-system-network/2-02-platformy/312) |
@@ -411,6 +459,7 @@
 | **TrainTestSplitDemo** | `src/components/TrainTestSplitDemo.jsx` | 1 | [1](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1) |
 | **TurtleGraphicsSimulator** | `src/components/TurtleGraphicsSimulator.jsx` | 2 | [32](/encyclopedia/5-languages/5-02-python/32), [111](/lab/examples/111) |
 | **TypingPlay** | `src/components/TypingPlay.jsx` | 36 | [4](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/4), [18](/encyclopedia/5-languages/5-01-javascript/18), [19](/encyclopedia/5-languages/5-02-python/19), [15](/encyclopedia/5-languages/5-03-java/15), [17](/encyclopedia/5-languages/5-05-csharp/17), …ещё 31 |
+| **TypingSpeedTrainerPlay** | `src/components/TypingSpeedTrainerPlay.jsx` | 4 | [interactive](/about/interactive), [713](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [7131](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [3](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3) |
 | **UiFeedbackElementsDemo** | `src/components/UiFeedbackElementsDemo.jsx` | 1 | [5](/encyclopedia/1-basics/1-25-interfeys/5) |
 | **UiFunctionalElementsDemo** | `src/components/UiFunctionalElementsDemo.jsx` | 1 | [3](/encyclopedia/1-basics/1-25-interfeys/3) |
 | **UiNavigationElementsDemo** | `src/components/UiNavigationElementsDemo.jsx` | 1 | [4](/encyclopedia/1-basics/1-25-interfeys/4) |
@@ -425,6 +474,7 @@
 | **UrlUriRnConverter** | `src/components/UrlUriRnConverter.jsx` | 1 | [3](/encyclopedia/2-system-network/2-03-set-i-internet/3) |
 | **useCollectionArticleLists** | `src/components/useCollectionArticleLists.js` | 0 | — |
 | **VariableLifecyclePlay** | `src/components/VariableLifecyclePlay.jsx` | 1 | [115](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/115) |
+| **VbArchitecturePlay** | `src/components/VbArchitecturePlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/3) |
 | **VectorSimilarityPlay** | `src/components/VectorSimilarityPlay.jsx` | 1 | [812](/encyclopedia/3-data-markup/3-06-nosql/812) |
 | **VerticalSoftwareExplorerPlay** | `src/components/VerticalSoftwareExplorerPlay.jsx` | 1 | [1](/encyclopedia/9-spinoff/9-06-otraslevoe-po/1) |
 | **VideoConferenceSimulator** | `src/components/VideoConferenceSimulator.jsx` | 2 | [4](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/4), [4](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/4) |
@@ -443,13 +493,14 @@
 | **WebViewBridgePlay** | `src/components/WebViewBridgePlay.jsx` | 1 | [113](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/113) |
 | **WindowsProgramTypesPlay** | `src/components/WindowsProgramTypesPlay.jsx` | 2 | [112](/encyclopedia/1-basics/1-19-programma/112), [1](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/1) |
 | **WirelessNetworkPlay** | `src/components/WirelessNetworkPlay.jsx` | 1 | [71](/encyclopedia/2-system-network/2-03-set-i-internet/71) |
-| **WordSimulator** | `src/components/WordSimulator.jsx` | 7 | [51](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [2](/encyclopedia/1-basics/1-15-tekst/2), [211](/encyclopedia/1-basics/1-15-tekst/211), [intro](/encyclopedia/1-basics/1-15-tekst/intro), [1005](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1005), …ещё 2 |
+| **WordSimulator** | `src/components/WordSimulator.jsx` | 6 | [51](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [2](/encyclopedia/1-basics/1-15-tekst/2), [211](/encyclopedia/1-basics/1-15-tekst/211), [intro](/encyclopedia/1-basics/1-15-tekst/intro), [1005](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1005), …ещё 1 |
 | **XamlLayoutPlay** | `src/components/XamlLayoutPlay.jsx` | 1 | [6](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6) |
 | **XboxStorageCompatPlay** | `src/components/XboxStorageCompatPlay.jsx` | 1 | [1111](/tools/games/1111) |
-| **XPathPlayDemo** | `src/components/XPathPlayDemo.jsx` | 1 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2) |
+| **XPathPlayDemo** | `src/components/XPathPlayDemo.jsx` | 2 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2), [213](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/213) |
 | **XsdValidationDemo** | `src/components/XsdValidationDemo.jsx` | 1 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2) |
-| **XsltTransformDemo** | `src/components/XsltTransformDemo.jsx` | 1 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2) |
+| **XsltTransformDemo** | `src/components/XsltTransformDemo.jsx` | 2 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2), [214](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/214) |
 | **YamlPlayDemo** | `src/components/YamlPlayDemo.jsx` | 1 | [4](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4) |
+| **ZigEcosystemPlay** | `src/components/ZigEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-20-zig/3) |
 
 ## Импорты без файла компонента
 

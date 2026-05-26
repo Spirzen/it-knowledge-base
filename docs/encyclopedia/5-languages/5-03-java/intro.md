@@ -4,6 +4,19 @@ description: >-
   Подборка материалов раздела Java — от JDK и синтаксиса до Spring, JPA и
   экосистемы; внешние конспекты и официальная документация.
 sidebar_label: Java — о разделе
+related:
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
+  - title: "Документация и инструменты Java (Microsoft)"
+    doc: encyclopedia/5-languages/5-03-java/294
+  - title: "JavaScript — о разделе"
+    doc: encyclopedia/5-languages/5-01-javascript/intro
+  - title: "Low-code и No-code платформы"
+    doc: encyclopedia/8-infra-security/8-02-low-code-no-code/1
+  - title: "Платформа .NET — о разделе"
+    doc: encyclopedia/5-languages/5-04-platforma-dotnet/intro
+  - title: "C# — о разделе"
+    doc: encyclopedia/5-languages/5-05-csharp/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -11,6 +24,8 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Раздел охватывает язык **Java**, **JVM**, сборки (Maven/Gradle), фреймворки и работу с данными. Материалы рассчитаны на разработчиков и архитекторов: от первой программы до Spring, тестирования и облачного развёртывания.
+
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ## С чего начать
 
@@ -24,7 +39,7 @@ import DocCardList from '@theme/DocCardList';
 8. [Вопросы на собеседование — Core Java](./301.md) — навигация по JavaRush Top-50 и ITVDN 250+.
 9. [Spring Framework](./27.md), [работа с БД](./22.md) — после основ.
 
-Общие принципы (код, ООП, алгоритмы) — в [Код и разработка](/encyclopedia/4-code-dev/code-dev) и [ООП](/encyclopedia/4-code-dev/4-08-oop/1); здесь — **особенности Java и платформы**.
+Подробная база про код — в [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1). Перед [ООП в Java](./18.md): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro). Здесь — **особенности Java и платформы**.
 
 ## Справочник и углубление
 
@@ -67,5 +82,16 @@ import DocCardList from '@theme/DocCardList';
 Актуальные примеры в разделе ориентированы на **Java 17+** (LTS) и современный API (`java.time`, pattern matching для `instanceof`, records). Упоминания `Date`, `Vector`, `Hashtable` — в контексте legacy и собеседований.
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**База программиста** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
+
+**Бэкенд и серверная разработка** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro).
+
+<!-- /sidebar-collections -->
 
 ---

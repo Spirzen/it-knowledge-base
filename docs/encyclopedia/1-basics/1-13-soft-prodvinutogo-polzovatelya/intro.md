@@ -22,6 +22,8 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 
 <EndUserSoftwareHub tier="all" defaultApp="archive" />
 
+Во всех главах (кроме чисто справочных вроде формата `.drawio`, где техника в теле статьи) в конце есть **Под капотом** и **Опыт, мнение и истории** — устройство инструмента и практика power user.
+
 ## Карта раздела
 
 | Глава | Содержание |

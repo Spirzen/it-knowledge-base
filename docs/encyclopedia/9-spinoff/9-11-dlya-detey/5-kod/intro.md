@@ -10,7 +10,21 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 
 # Код — о разделе
 
-Здесь ты уже **автор**: не только нажимаешь кнопки в чужой игре, а описываешь правила сам. Путь такой: блоки (Scratch) → понять, что под капотом → короткие программы на Python и JavaScript.
+Здесь Вы уже **автор**: описываете правила сами, а не только нажимаете кнопки в чужой игре.
+
+**Маршрут по порядку:**
+
+1. [Введение](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1) → [Блоки](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/2) → [Scratch](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/3)  
+2. [Стартовые проекты MIT](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/31) и [платформер / демосцена](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/32) — remix и практика  
+3. [Edublocks](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/4) → [Python](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/6), [JavaScript](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/7)  
+4. [App Inventor](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/9), [PascalABC.NET](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/10)
+
+Сводная таблица всех перечисленных сред (Godot, Flutter, BeautifulSoup и др.): [Инструменты и среды](/encyclopedia/1-basics/1-035-bazovaya-informatika/9).
+
+<div class="callout callout--info">
+  <div class="callout-title">Общая база про код</div>
+  Перед Scratch и текстовыми языками полезно понять, что такое <strong>код</strong>, <strong>блок кода</strong> и чем отличаются <strong>исходный</strong> и <strong>машинный</strong> код. Для старших школьников и взрослых, которые ведут занятие: <a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1">Что такое код и как он работает</a> (компиляция, интерпретация, как текст превращается в действия компьютера).
+</div>
 
 <div class="callout callout--tip">
   <div class="callout-title">Путеводитель по языкам</div>
@@ -21,12 +35,12 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 
 <div class="callout callout--tip">
   <div class="callout-title">Первый шаг</div>
-  Собери несколько блоков ниже — это тот же принцип, что в Scratch, только прямо на сайте.
+  Соберите несколько блоков ниже — тот же принцип, что в Scratch, только прямо на сайте.
 </div>
 
 <BlockBuilder />
 
-Не бойся ошибок: компьютер просто скажет «тут опечатка» и покажет строку. Это нормально даже у взрослых разработчиков.
+Ошибки в коде — обычная часть работы: компьютер укажет строку с опечаткой. Так бывает и у опытных разработчиков.
 
 <DocCardList />
 

@@ -1,7 +1,16 @@
 ---
 title: Lisp — о разделе
-description: Подборка материалов раздела Lisp в энциклопедии Вселенная IT
+description: "Раздел про Lisp и его современное воплощение в учебном курсе — прежде всего Common Lisp: S-выражения, REPL, макросы, CLOS и практическая первая программа."
 sidebar_label: Lisp — о разделе
+related:
+  - title: "Fortran — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro
+  - title: "Pascal — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro
+  - title: "Cobol — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro
+  - title: "Visual Basic — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -13,6 +22,8 @@ import DocCardList from '@theme/DocCardList';
 :::info Диалект в курсе
 Примеры кода в учебных статьях (2–8) рассчитаны на **ANSI Common Lisp** (SBCL, CCL, CLISP). **Scheme** и **Clojure** упоминаются в истории и сравнениях; синтаксис у них близкий, но детали отличаются (например, `defun` vs `define`, `nil` vs `#f`).
 :::
+
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ## Рекомендуемый маршрут
 
@@ -28,5 +39,14 @@ import DocCardList from '@theme/DocCardList';
 Начните с [установки и REPL](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/7), затем читайте [основы](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/2) с открытым интерпретатором.
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro).
+
+<!-- /sidebar-collections -->
 
 ---

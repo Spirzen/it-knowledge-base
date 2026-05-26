@@ -1,7 +1,16 @@
 ---
 title: Visual Basic — о разделе
-description: Подборка материалов раздела Visual Basic в энциклопедии Вселенная IT
+description: "Раздел про Visual Basic — от классического VB 6.0 и VBA в Microsoft Office до VB.NET на платформе .NET."
 sidebar_label: Visual Basic — о разделе
+related:
+  - title: "Pascal — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro
+  - title: "Ассемблер — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro
+  - title: "Lisp — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro
+  - title: "Си — о разделе"
+    doc: encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -26,6 +35,17 @@ import DocCardList from '@theme/DocCardList';
 | Ошибки | `On Error GoTo` | `Try…Catch…Finally` |
 | Статус | legacy, VBA в Office | поддержка платформы, язык без новых фич |
 
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro).
+
+<!-- /sidebar-collections -->
 
 ---

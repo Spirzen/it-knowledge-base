@@ -1,0 +1,59 @@
+﻿=== UNCOMMITTED: exact removed lines ===
+docs/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/3.md
+  ![alt text](image.png)
+docs/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/3.md
+  ![alt text](image-1.png)
+docs/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/4.md
+  ![alt text](image-2.png)
+docs/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/5.md
+  ![alt text](image-3.png)
+docs/encyclopedia/1-basics/1-09-dannye-i-informatsiya/3.md
+  ![alt text](image.png)
+docs/encyclopedia/1-basics/1-19-programma/1.md
+  ![image.png](image.png)
+docs/encyclopedia/1-basics/1-19-programma/113.md
+  ![image-1.png](image-1.png)
+docs/encyclopedia/1-basics/1-19-programma/113.md
+  ![image-2.png](image-2.png)
+docs/encyclopedia/1-basics/1-19-programma/113.md
+  ![image-3.png](image-3.png)
+docs/encyclopedia/1-basics/1-19-programma/113.md
+  ![image-4.png](image-4.png)
+docs/encyclopedia/1-basics/1-19-programma/113.md
+  ![image-5.png](image-5.png)
+docs/encyclopedia/1-basics/1-26-karera-v-it-i-mify/8.md
+  ![image.png](image.png)
+docs/encyclopedia/1-basics/1-26-karera-v-it-i-mify/8.md
+  ![image-1.png](image-1.png)
+docs/encyclopedia/7-project/7-10-kultura-koda/1.md
+  ![image.png](image.png)
+docs/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1.md
+  ![image.png](image.png)
+docs/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1.md
+  ![image-1.png](image-1.png)
+docs/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1.md
+  ![image-2.png](image-2.png)
+docs/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1.md
+  ![image-3.png](image-3.png)
+docs/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1.md
+  ![image.png](image.png)
+docs/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1.md
+  ![image-1.png](image-1.png)
+docs/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1.md
+  ![image-2.png](image-2.png)
+docs/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1.md
+  ![image-3.png](image-3.png)
+docs/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1.md
+  ![image-4.png](image-4.png)
+docs/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1.md
+  ![image-5.png](image-5.png)
+docs/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/131.md
+  ![image.png](image.png)
+
+=== COMMITTED 254089548 ===
+docs/encyclopedia/3-data-markup/3-06-nosql/7.md
+  ![image.png](image.png)
+docs/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111.md
+  ![image-3.png](image-3.png)
+docs/encyclopedia/9-spinoff/9-04-razrabotka-igr/1.md
+  ![image.png](image.png)

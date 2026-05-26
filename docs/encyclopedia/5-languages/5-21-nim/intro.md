@@ -1,7 +1,16 @@
 ---
 title: Nim — о разделе
-description: Подборка материалов раздела Nim в энциклопедии Вселенная IT
+description: "Материалы ориентированы на Nim 2.x (модель памяти ORC по умолчанию, модули std/...)."
 sidebar_label: Nim — о разделе
+related:
+  - title: "Zig — о разделе"
+    doc: encyclopedia/5-languages/5-20-zig/intro
+  - title: "Dart — о разделе"
+    doc: encyclopedia/5-languages/5-22-dart/intro
+  - title: "Elixir — о разделе"
+    doc: encyclopedia/5-languages/5-19-elixir/intro
+  - title: "R — о разделе"
+    doc: encyclopedia/5-languages/5-23-r/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -9,6 +18,8 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Материалы ориентированы на **Nim 2.x** (модель памяти ORC по умолчанию, модули `std/...`). Официальные источники: [nim-lang.org](https://nim-lang.org/), [руководство](https://nim-lang.org/docs/manual.html), [стандартная библиотека](https://nim-lang.org/docs/lib.html).
+
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ## Порядок чтения
 
@@ -21,5 +32,14 @@ import DocCardList from '@theme/DocCardList';
 7. [Первая программа](./7.md) — установка, `nim c` / `nim r`, C-компилятор
 
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro).
+
+<!-- /sidebar-collections -->
 
 ---

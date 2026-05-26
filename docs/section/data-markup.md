@@ -21,6 +21,7 @@ mindmap
       3.01 Продвинутые операции
       3.02 Структуры данных
       3.03 Мыслительная база
+      3.12 Математическое программирование
     Конфигурация и БД
       3.04 Конфигурации
       3.05 Основы баз данных
@@ -88,6 +89,20 @@ mindmap
   
 </ul>
 
+## Математическое программирование
+
+<ul>
+  <li>
+  <ul>
+  Математическое программирование
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1">3.12. Введение и постановка</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/4">3.12. Симплекс-метод</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/7">3.12. Транспортная задача</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/998">3.12. Итоги</a></li>
+  </ul>
+  </li>
+</ul>
+
 ## Конфигурации и данные
 
 <ul>
@@ -120,11 +135,16 @@ mindmap
   <li>
   <ul>
   Основы баз данных
-  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1">3-05-osnovy-baz-dannyh</a></li>
-  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11">3.05. Entity Relationship</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1">3.05. Знакомство с базами данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2">3.05. СУБД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6">3.05. Роль базы данных в организации</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3">3.05. Как БД работает с данными</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4">3.05. Теория данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/5">3.05. Двенадцать правил Кодда</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11">3.05. Entity Relationship</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/7">3.05. Конкурентный доступ</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8">3.05. Восстановление после сбоя</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/111">3.05. Data Governance</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/98">3.05. Итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/99">3.05. Чек-лист самопроверки</a></li>
   </ul>
@@ -206,7 +226,8 @@ mindmap
   <li>
   <ul>
   Управление РСУБД
-  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1">3-08-upravlenie-rsubd</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1">3.08. Управление РСУБД</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3">3.08. Администрирование БД в облаке</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2">3.08. Справочник по PostgreSQL</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/211">3.08. Справочник по MySQL</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212">3.08. Справочник по Microsoft SQL Server</a></li>

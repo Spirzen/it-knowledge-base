@@ -1,7 +1,16 @@
 ---
 title: 1С — о разделе
-description: Подборка материалов раздела 1С в энциклопедии Вселенная IT
+description: "Материалы про платформу 1С:Предприятие и встроенный язык (BSL): метаданные, модули, запросы, проведение документов, обмен данными."
 sidebar_label: 1С — о разделе
+related:
+  - title: "PowerShell — о разделе"
+    doc: encyclopedia/5-languages/5-26-powershell/intro
+  - title: "Bash — о разделе"
+    doc: encyclopedia/5-languages/5-25-bash/intro
+  - title: "Julia — о разделе"
+    doc: encyclopedia/5-languages/5-24-julia/intro
+  - title: "R — о разделе"
+    doc: encyclopedia/5-languages/5-23-r/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -21,6 +30,17 @@ import DocCardList from '@theme/DocCardList';
 
 Исторический обзор — в [Истории 1С](11.md); обзор продуктов и партнёрской сети — в [Экосистеме](111.md).
 
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
 <DocCardList />
+
+<!-- sidebar-collections -->
+## В подборках
+
+Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [PowerShell — о разделе](/encyclopedia/5-languages/5-26-powershell/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro).
+
+<!-- /sidebar-collections -->
 
 ---
