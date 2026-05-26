@@ -87,7 +87,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -98,6 +98,6 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 **Бэкенд и серверная разработка** — [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

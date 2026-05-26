@@ -27,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -36,6 +36,6 @@ import DocCardList from '@theme/DocCardList';
 
 **Системное программирование** — [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Платформы — о разделе](/encyclopedia/2-system-network/2-02-platformy/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

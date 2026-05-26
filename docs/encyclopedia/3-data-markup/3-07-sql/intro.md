@@ -43,7 +43,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -54,6 +54,6 @@ import DocCardList from '@theme/DocCardList';
 
 **Системная аналитика** — [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Техническое письмо — о разделе](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

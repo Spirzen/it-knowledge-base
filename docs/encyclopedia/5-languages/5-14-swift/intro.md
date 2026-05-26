@@ -94,7 +94,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -103,6 +103,6 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 **Мобильная разработка** — [Kotlin — о разделе](/encyclopedia/5-languages/5-09-kotlin/intro), [Справочник по Android](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/81), [Справочник по iOS](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/71), [Мобильные игры](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Особенности тестирования мобильных приложений](/encyclopedia/7-project/7-05-testirovanie/124), [Беспроводные технологии - Bluetooth, Zigbee, NFC](/encyclopedia/2-system-network/2-10-zhelezo/119).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

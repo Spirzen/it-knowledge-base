@@ -29,6 +29,7 @@ import DocCardList from '@theme/DocCardList';
 | :--- | :--- |
 | [Путь продвинутого пользователя](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1) | Кто такой «продвинутый», куда расти дальше |
 | [Скрипты и локальная автоматизация](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/2) | Python, Bash, PowerShell, макросы, планировщик |
+| [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) | Стоп-лист команд и проверка предложений ИИ-агента |
 | [ВМ, Home Lab и Linux](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3) | Эксперименты в изоляции, старый ПК как сервер |
 | [Приватность и self-hosting](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4) | Nextcloud, Vaultwarden, WireGuard, DNS, бэкапы |
 | [Рабочий процесс без мыши](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5) | Клавиатура, редакторы, PowerToys |

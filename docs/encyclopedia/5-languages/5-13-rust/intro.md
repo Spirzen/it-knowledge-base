@@ -103,7 +103,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -112,6 +112,6 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 **Бэкенд и серверная разработка** — [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

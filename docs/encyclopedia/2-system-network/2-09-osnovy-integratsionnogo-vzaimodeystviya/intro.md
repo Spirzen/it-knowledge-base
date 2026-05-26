@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -51,6 +51,6 @@ import DocCardList from '@theme/DocCardList';
 
 Также: Тестирование ПО, Инфобез, DevOps и инфраструктура.
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

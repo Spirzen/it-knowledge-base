@@ -37,7 +37,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -46,6 +46,6 @@ import DocCardList from '@theme/DocCardList';
 
 **DevOps и инфраструктура** — [Архитектура персонального компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7), [Модели и сервисы облачных технологий](/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1), [Основы DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/1), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

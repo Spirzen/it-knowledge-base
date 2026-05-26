@@ -44,7 +44,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -53,6 +53,6 @@ import DocCardList from '@theme/DocCardList';
 
 **Веб-разработка** — [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [История интернета](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/4), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [Интерфейс — о разделе](/encyclopedia/1-basics/1-25-interfeys/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

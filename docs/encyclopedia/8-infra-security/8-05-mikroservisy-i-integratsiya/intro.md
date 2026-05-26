@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -40,6 +40,6 @@ import DocCardList from '@theme/DocCardList';
 
 **DevOps и инфраструктура** — [DevOps, CI-CD — о разделе](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [Забота о коде и данных — о разделе](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro), [Безопасность в Docker](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125), [Проверка надежности под нагрузкой](/encyclopedia/7-project/7-05-testirovanie/1014), [Автоматизация тестирования](/encyclopedia/7-project/7-05-testirovanie/115).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

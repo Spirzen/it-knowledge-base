@@ -87,7 +87,7 @@ PHP выполняется **на сервере**: браузер получа�
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -96,6 +96,6 @@ PHP выполняется **на сервере**: браузер получа�
 
 **Бэкенд и серверная разработка** — [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [Kotlin — о разделе](/encyclopedia/5-languages/5-09-kotlin/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

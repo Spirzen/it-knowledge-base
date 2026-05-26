@@ -96,7 +96,7 @@ import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -105,6 +105,6 @@ import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 
 **Системное программирование** — [Архитектура персонального компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7), [Платформы — о разделе](/encyclopedia/2-system-network/2-02-platformy/intro), [Принцип работы компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

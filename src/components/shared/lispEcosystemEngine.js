@@ -135,7 +135,7 @@ export const ARCH_PRESETS = [
         children: [
           {type: 'file', path: 'notes-api/notes-api.asd', role: 'Система', hint: ':depends-on (:clack :hunchentoot :jonathan)'},
           {type: 'file', path: 'notes-api/src/package.lisp', role: 'Пакет', hint: '(defpackage :notes-api ... (:use :cl :hunchentoot))'},
-          {type: 'file', path: 'notes-api/src/server.lisp', role: 'Старт', hint: '(clack:clackup #'app) — Clack оборачивает handler'},
+          {type: 'file', path: 'notes-api/src/server.lisp', role: 'Старт', hint: "(clack:clackup #'app) — Clack оборачивает handler"},
           {type: 'file', path: 'notes-api/src/routes.lisp', role: 'Маршруты', hint: 'defroute "/notes" () ... — декларативные GET/POST'},
           {type: 'file', path: 'notes-api/src/handlers.lisp', role: 'Обработчики', hint: 'JSON через jonathan; бизнес-логика без HTML'},
         ],

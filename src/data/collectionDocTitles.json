@@ -782,6 +782,12 @@
   "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203": {
     "title": "Справочник по GraphQL"
   },
+  "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1204": {
+    "title": "Справочник по RabbitMQ"
+  },
+  "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1205": {
+    "title": "Справочник по Apache Kafka"
+  },
   "encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro": {
     "title": "Микросервисы и интеграция — о разделе"
   },

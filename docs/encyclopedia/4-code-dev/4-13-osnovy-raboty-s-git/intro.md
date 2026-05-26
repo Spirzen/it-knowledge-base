@@ -28,6 +28,7 @@ import DocCardList from '@theme/DocCardList';
 3. [Как работать с Git](./112) — три зоны, `add`, `commit`, `push` / `pull`  
 4. [Ветвление и слияние](./113) — ветки, PR, конфликты, форк  
 5. [Рекомендации в команде](./114) — процесс, сообщения коммитов, базовое восстановление  
+5a. [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — `reset --hard`, `clean`, `push --force`, reflog  
 6. [Типовые ситуации с Git](./1141) — **справочник по симптомам** (ошибки, `stash`, `rebase`, `bisect`)  
 7. [`.gitignore` — полное руководство](./116) — секреты и шаблоны под стек  
 8. [Справочник-шпаргалка](./115) — углублённо, когда нужны детали команд  
@@ -52,13 +53,13 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
 
 **База программиста** — [Десктопные приложения — о разделе](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

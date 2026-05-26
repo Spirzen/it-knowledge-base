@@ -37,12 +37,13 @@ import DocCardList from '@theme/DocCardList';
     <li><a href="./113">Риски открытых Wi‑Fi</a></li>
     <li><a href="./112">Антивирус и лечение</a> — по желанию; хвост статьи помечен как углубление</li>
     <li><a href="./2">Итоги</a> и <a href="./3">Чек-лист самопроверки</a></li>
+    <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101">Опасные скрипты</a> — социальная инженерия через «установочный» shell-скрипт и команды от ИИ-агента</li>
   </ol>
 </div>
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -57,6 +58,6 @@ import DocCardList from '@theme/DocCardList';
 
 Также: Инфобез, DevOps и инфраструктура.
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

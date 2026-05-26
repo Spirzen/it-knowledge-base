@@ -95,7 +95,7 @@ CAP/PACELC — [распределённые системы](design/21.md), ит
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -104,6 +104,6 @@ CAP/PACELC — [распределённые системы](design/21.md), ит
 
 Ключевые материалы этого раздела по теме запроса: [Доменная модель](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114), [Типы классов в DDD](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141), [Системный подход](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/116), [Имитационное моделирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161). Для .NET: [чистая архитектура — теория](design/2132.md), [Clean Architecture на ASP.NET Core](design/2143.md).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

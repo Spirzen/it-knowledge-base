@@ -15,7 +15,7 @@ import LaptopExplorerPlay from '@site/src/components/LaptopExplorerPlay';
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>
-  Демо ниже показывает состав типичного ноутбука. Нажимайте на элеменВы — подписи поясняют назначение.
+  Демо ниже показывает состав типичного ноутбука. Нажимайте на элементы — подписи поясняют назначение.
 </div>
 
 <LaptopExplorerPlay />

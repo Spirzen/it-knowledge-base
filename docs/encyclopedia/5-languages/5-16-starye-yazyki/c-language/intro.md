@@ -63,7 +63,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -72,6 +72,6 @@ import DocCardList from '@theme/DocCardList';
 
 **Бэкенд и серверная разработка** — [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

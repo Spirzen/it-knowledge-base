@@ -198,10 +198,10 @@ $stmt->execute([$email]);`,
         label: 'fetch(PDO::FETCH_ASSOC)',
         detail: 'Ассоциативный массив для шаблона или JSON-ответа',
         packet: 'up',
-        code: '$subscriber = $stmt->fetch();
+        code: `$subscriber = $stmt->fetch();
 if (!$subscriber) {
     http_response_code(404);
-}',
+}`,
       },
     ],
   },
@@ -264,9 +264,9 @@ $stmt->execute([$name, $id]);`,
         label: 'rowCount() === 0',
         detail: 'Строка не найдена — отдельное сообщение пользователю',
         packet: 'up',
-        code: 'if ($stmt->rowCount() === 0) {
-    $errors[] = \'Запись не найдена\';
-}',
+        code: `if ($stmt->rowCount() === 0) {
+    $errors[] = 'Запись не найдена';
+}`,
       },
     ],
   },

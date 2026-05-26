@@ -83,13 +83,13 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Kotlin — о разделе](/encyclopedia/5-languages/5-09-kotlin/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

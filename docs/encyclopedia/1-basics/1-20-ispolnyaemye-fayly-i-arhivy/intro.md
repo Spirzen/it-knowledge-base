@@ -27,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -36,6 +36,6 @@ import DocCardList from '@theme/DocCardList';
 
 **База программиста** — [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Текст — о разделе](/encyclopedia/1-basics/1-15-tekst/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

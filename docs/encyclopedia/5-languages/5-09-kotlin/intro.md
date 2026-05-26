@@ -119,7 +119,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -128,6 +128,6 @@ import DocCardList from '@theme/DocCardList';
 
 **Мобильная разработка** — [Справочник по Android](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/81), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [Справочник по iOS](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/71), [Мобильные игры](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Особенности тестирования мобильных приложений](/encyclopedia/7-project/7-05-testirovanie/124), [Беспроводные технологии - Bluetooth, Zigbee, NFC](/encyclopedia/2-system-network/2-10-zhelezo/119).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

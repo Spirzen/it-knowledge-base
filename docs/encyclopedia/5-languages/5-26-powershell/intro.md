@@ -32,6 +32,7 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
 | 1 | [Первая программа](./122.md) | Запуск и синтаксис |
+| — | [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) | `Remove-Item`, ExecutionPolicy, команды от ИИ-агента |
 
 ---
 
@@ -108,13 +109,13 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

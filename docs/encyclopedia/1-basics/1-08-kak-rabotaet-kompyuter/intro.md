@@ -37,7 +37,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -48,6 +48,6 @@ import DocCardList from '@theme/DocCardList';
 
 **Железо** — [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/1), [Как устроен Xbox Series S и Series X](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11431), [Как устроен Steam Deck и Steam Machine](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11432), [Как устроена Nintendo Switch](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11433), [Как устроена Playstation 5](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11434), [Аппаратное обеспечение — о разделе](/encyclopedia/2-system-network/2-10-zhelezo/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

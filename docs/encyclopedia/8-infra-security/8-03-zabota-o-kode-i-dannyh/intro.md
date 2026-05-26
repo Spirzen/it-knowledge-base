@@ -31,6 +31,7 @@ import DocCardList from '@theme/DocCardList';
 |-----|----------|-------|
 | 1 | [Безопасность кода](./1.md) | Потеря несохранённого, VCS, локальная история |
 | 2 | [Git: ветки и совместная работа](./11.md) | Конфликты, code review |
+| 2a | [Опасные скрипты](./101.md) | Стоп-лист: терминал, Git, «curl \| bash» |
 | 3 | [Секреты и конфигурация](./117.md) | Пароли не в репозитории |
 | 4 | [Шифрование и бэкапы](./115.md) · [111](./111.md) | Данные в покое и при передаче |
 | 5 | [Итоги](./998.md) · [чек-лист](./999.md) | Самопроверка |
@@ -39,7 +40,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -48,6 +49,6 @@ import DocCardList from '@theme/DocCardList';
 
 **DevOps и инфраструктура** — [Проверка надежности под нагрузкой](/encyclopedia/7-project/7-05-testirovanie/1014), [DevOps, CI-CD — о разделе](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro), [Автоматизация тестирования](/encyclopedia/7-project/7-05-testirovanie/115), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

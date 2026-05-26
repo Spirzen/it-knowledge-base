@@ -25,6 +25,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Опасные флаги `docker run` (`-v /`, `--privileged`, socket) — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
+
 Маршрут по **Kubernetes** в разделе:
 
 | Цель | Статья |
@@ -37,7 +39,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -50,6 +52,6 @@ import DocCardList from '@theme/DocCardList';
 
 **DevOps и инфраструктура** — [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Безопасность в Docker](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125), [DevOps, CI-CD — о разделе](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro), [Забота о коде и данных — о разделе](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro), [Проверка надежности под нагрузкой](/encyclopedia/7-project/7-05-testirovanie/1014), [Автоматизация тестирования](/encyclopedia/7-project/7-05-testirovanie/115).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---

@@ -106,7 +106,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-<!-- sidebar-collections -->
+{/* sidebar-collections */}
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
@@ -115,6 +115,6 @@ import DocCardList from '@theme/DocCardList';
 
 **Бэкенд и серверная разработка** — [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Kotlin — о разделе](/encyclopedia/5-languages/5-09-kotlin/intro).
 
-<!-- /sidebar-collections -->
+{/* /sidebar-collections */}
 
 ---
