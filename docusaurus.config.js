@@ -66,6 +66,8 @@ function createEncyclopediaFolderRedirects(existingPath) {
   return redirects.length > 0 ? redirects : undefined;
 }
 
+const isWindowsDev = process.platform === 'win32' && process.env.NODE_ENV !== 'production';
+
 module.exports = {
   title: 'Вселенная IT',
   tagline: 'Единый и ультимативный гайд по IT',
@@ -370,6 +372,7 @@ module.exports = {
   staticDirectories: ['static'],
   future: {
     v4: true,
-    faster: true,
+    // Rspack "faster" mode can trigger EMFILE on large docs trees in Windows dev sessions.
+    faster: !isWindowsDev,
   },
 };
