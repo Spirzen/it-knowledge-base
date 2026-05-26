@@ -5,10 +5,13 @@ description: Как мы уже выяснили, разработка в IT - �
 sidebar_label: 7. Проект - о разделе
 slug: /section/project
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>
+
+---
 
 ## О разделе
 
@@ -39,6 +42,8 @@ slug: /section/project
 
 Помните - вас нанимают не потому что вы умный или хороший, а потому что вы решаете проблему заказчика/работодателя.
 
+---
+
 ## Общее о бизнесе
 
 <ul>
@@ -54,6 +59,8 @@ slug: /section/project
   </li>
   
 </ul>
+
+---
 
 ## Команда и управление
 
@@ -76,6 +83,8 @@ slug: /section/project
   
 </ul>
 
+---
+
 ## Методология и жизненный цикл ПО
 
 <ul>
@@ -91,6 +100,8 @@ slug: /section/project
   </li>
   
 </ul>
+
+---
 
 ## Аналитика
 
@@ -126,6 +137,8 @@ slug: /section/project
   
 </ul>
 
+---
+
 ## Тестирование
 
 <ul>
@@ -160,6 +173,8 @@ slug: /section/project
   
 </ul>
 
+---
+
 ## Проектирование и архитектура
 
 <ul>
@@ -189,6 +204,8 @@ slug: /section/project
   
 </ul>
 
+---
+
 ### Проектирование и архитектура
 
 <ul>
@@ -207,6 +224,8 @@ slug: /section/project
   </li>
   
 </ul>
+
+---
 
 ### Проектирование
 
@@ -262,6 +281,8 @@ slug: /section/project
   
 </ul>
 
+---
+
 ## Интеллектуальные права
 
 <ul>
@@ -282,6 +303,8 @@ slug: /section/project
   </li>
   
 </ul>
+
+---
 
 ## Техническое письмо
 
@@ -310,6 +333,8 @@ slug: /section/project
   
 </ul>
 
+---
+
 ## Базы знаний и задачники
 
 <ul>
@@ -327,6 +352,8 @@ slug: /section/project
   
 </ul>
 
+---
+
 ## Культура кода
 
 <ul>
@@ -342,6 +369,8 @@ slug: /section/project
   </li>
   
 </ul>
+
+---
 
 ## Легаси-код
 

@@ -19,6 +19,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Смежно:** [Платформы в IT](/encyclopedia/2-system-network/2-02-platformy/intro) · [Системная аналитика](/encyclopedia/7-project/7-04-analitika/intro) · [ORM и данные](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro)
 
+---
+
 ## С чего начать
 
 1. **[Low-code и No-code платформы](./1.md)** — определения, сценарии, риски.

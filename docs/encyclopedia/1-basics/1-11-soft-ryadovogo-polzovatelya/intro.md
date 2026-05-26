@@ -32,6 +32,9 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

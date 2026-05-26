@@ -25,6 +25,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+---
+
 ### Рекомендуемый маршрут
 
 | Шаг | Материал | Зачем |
@@ -37,6 +39,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 5 | [Фреймворки](./15.md) → [Rails](./21.md) | Веб после языка |
 | 6 | [Справочник](./3.md) → [Чек-лист](./999.md) | Шпаргалка |
 
+---
+
 ### Частые ошибки при старте
 
 | Ошибка | Что делать |
@@ -44,6 +48,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | Путать `==`, `===`, `eql?` | См. [типы](./13.md) |
 | Писать `for` вместо `each` | Идиоматичный Ruby — итераторы |
 | Сразу Rails без IRB | Сначала [первая программа](./20.md) |
+
+---
 
 ### Зачем этот раздел
 
@@ -84,6 +90,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

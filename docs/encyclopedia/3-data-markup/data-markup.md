@@ -5,6 +5,7 @@ description: Типы данных и алгоритмы, базы и SQL, ко�
 sidebar_label: 3. Данные и разметка - о разделе
 slug: /encyclopedia/3-data-markup/data-markup
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
@@ -12,6 +13,8 @@ slug: /encyclopedia/3-data-markup/data-markup
 </div>
 
 import DocCardList from '@theme/DocCardList';
+
+---
 
 ## О разделе
 

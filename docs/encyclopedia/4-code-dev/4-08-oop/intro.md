@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 Идеи здесь даются **сначала на русском псевдокоде** (`КЛАСС`, `метод`, `НАСЛЕДУЕТ`), затем — примерами на Java/C#/Python в статьях и в разделах языков. На старте пройдите этот маршрут **до** синтаксиса конкретного языка.
 
+---
+
 ## Рекомендуемый маршрут
 
 | Шаг | Статья | Зачем |
@@ -35,6 +37,8 @@ import DocCardList from '@theme/DocCardList';
 | 8 | [Итоги](./98.md) · [чек-лист](./99.md) | закрепление |
 
 Парадигмы и SOLID: [Парадигмы и уровни абстракции](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro). Паттерны: [design-patterns](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro).
+
+---
 
 ## ООП в разделах языков
 
@@ -59,6 +63,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

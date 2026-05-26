@@ -10,6 +10,8 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь — вход в тему **баз данных и СУБД**: что хранится, как описывается схема, чем реляционная модель отличается от NoSQL и когда нужны оба подхода.
 
+---
+
 ## Рекомендуемый маршрут
 
 **Базовый путь (теория + практика в компании):**
@@ -32,6 +34,8 @@ import DocCardList from '@theme/DocCardList';
 **SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)).
 
 **Корпоративный контекст:** [Data Governance](./111.md).
+
+---
 
 ## Мини-глоссарий
 

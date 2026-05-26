@@ -5,10 +5,13 @@ description: Мы изучили, как пишут программы, тепе
 sidebar_label: 5. Языки - о разделе
 slug: /section/languages
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>
+
+---
 
 ## О разделе
 
@@ -68,6 +71,8 @@ mindmap
 
 Вообще, лучше воспользуйтесь содержанием или перейдите к Базе знаний. Но для удобства, я размещу здесь ссылки на основные главы раздела:
 
+---
+
 ## JavaScript
 
 <ul>
@@ -114,6 +119,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## Python
 
@@ -168,6 +175,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Java
 
 <ul>
@@ -208,6 +217,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Платформа .NET
 
 <ul>
@@ -243,6 +254,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## C#
 
@@ -306,6 +319,8 @@ mindmap
   
 </ul>
 
+---
+
 ## C++
 
 <ul>
@@ -352,6 +367,8 @@ mindmap
   
 </ul>
 
+---
+
 ## PHP
 
 <ul>
@@ -393,6 +410,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Smalltalk
 
 <ul>
@@ -415,6 +434,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## Kotlin
 
@@ -457,6 +478,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Go
 
 <ul>
@@ -492,6 +515,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Ruby
 
 <ul>
@@ -524,6 +549,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Groovy
 
 <ul>
@@ -555,6 +582,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## Rust
 
@@ -589,6 +618,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Swift
 
 <ul>
@@ -622,6 +653,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Lua и Luau
 
 <ul>
@@ -654,6 +687,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Старые языки
 
 <ul>
@@ -668,6 +703,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ### Cobol
 
@@ -688,6 +725,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ### Fortran
 
@@ -710,6 +749,8 @@ mindmap
   
 </ul>
 
+---
+
 ### Lisp
 
 <ul>
@@ -731,6 +772,8 @@ mindmap
   
 </ul>
 
+---
+
 ### Pascal
 
 <ul>
@@ -750,6 +793,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ### visual-basic
 
@@ -775,6 +820,8 @@ mindmap
   
 </ul>
 
+---
+
 ### Ассемблер
 
 <ul>
@@ -794,6 +841,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ### Си
 
@@ -822,6 +871,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Haskell
 
 <ul>
@@ -840,6 +891,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## Scala
 
@@ -860,6 +913,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Elixir
 
 <ul>
@@ -878,6 +933,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## Zig
 
@@ -898,6 +955,8 @@ mindmap
   
 </ul>
 
+---
+
 ## Nim
 
 <ul>
@@ -916,6 +975,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## Dart
 
@@ -941,6 +1002,8 @@ mindmap
   
 </ul>
 
+---
+
 ## R
 
 <ul>
@@ -959,6 +1022,8 @@ mindmap
   </li>
   
 </ul>
+
+---
 
 ## Julia
 

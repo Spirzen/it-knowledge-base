@@ -5,6 +5,7 @@ description: IT-проект целиком — роли, командный к�
 sidebar_label: 7. Проект - о разделе
 slug: /encyclopedia/Проект/project
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
@@ -12,6 +13,8 @@ slug: /encyclopedia/Проект/project
 </div>
 
 import DocCardList from '@theme/DocCardList';
+
+---
 
 ## О разделе
 

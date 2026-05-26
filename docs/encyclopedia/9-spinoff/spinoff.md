@@ -5,6 +5,7 @@ description: Факультативные темы вне ядра курса �
 sidebar_label: 9. Спин-офф - о разделе
 slug: /encyclopedia/Спин-офф/spinoff
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
@@ -12,6 +13,8 @@ slug: /encyclopedia/Спин-офф/spinoff
 </div>
 
 import DocCardList from '@theme/DocCardList';
+
+---
 
 ## О разделе
 

@@ -33,6 +33,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+---
+
 ## Рекомендуемый маршрут
 
 | Этап | Статьи | Зачем |
@@ -50,6 +52,8 @@ import DocCardList from '@theme/DocCardList';
 
 Статья [1](/encyclopedia/5-languages/5-06-cpp/1) — вводный обзор; продолжение в [28](/encyclopedia/5-languages/5-06-cpp/28).
 
+---
+
 ### Маршрут "ООП и парадигмы" (C++)
 
 Концепции ООП без C++: [раздел ООП](/encyclopedia/4-code-dev/4-08-oop/intro), начните с [сложности и декомпозиции](/encyclopedia/4-code-dev/4-08-oop/7).
@@ -65,6 +69,8 @@ import DocCardList from '@theme/DocCardList';
 | 7 | [RTTI](./142.md) | typeid, dynamic_cast |
 | 8 | [Память и RAII](./19.md) · [идиомы](./30.md) | владение, rule of five |
 | 9 | [Паттерны GoF](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro) | проектирование поверх синтаксиса |
+
+---
 
 ### Зачем этот раздел
 
@@ -107,6 +113,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

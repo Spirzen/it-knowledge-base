@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+---
+
 ### Зачем этот раздел
 
 Подборка по **PowerShell** в энциклопедии: синтаксис, первая программа и смежные темы. Пройдите один маршрут до конца, не смешивая несколько языков на старте.
@@ -58,6 +60,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел посвящён **PowerShell** — оболочке и языку сценариев для автоматизации Windows, Linux и macOS. Материалы идут от истории и установки к синтаксису, объектному конвейеру, ошибкам и практическим скриптам.
 
+---
+
 ## Две линейки, о которых важно помнить
 
 | | **Windows PowerShell 5.1** | **PowerShell 7+** (`pwsh`) |
@@ -70,6 +74,8 @@ import DocCardList from '@theme/DocCardList';
 
 Проверка версии в сессии: `$PSVersionTable.PSVersion`.
 
+---
+
 ## Рекомендуемый порядок чтения
 
 1. [История PowerShell](/encyclopedia/5-languages/5-26-powershell/1) — зачем появился объектный pipeline.
@@ -79,6 +85,8 @@ import DocCardList from '@theme/DocCardList';
 5. [Обработка ошибок](/encyclopedia/5-languages/5-26-powershell/12) — terminating/non-terminating, `$ErrorActionPreference`.
 6. [Рекомендации по скриптам](/encyclopedia/5-languages/5-26-powershell/111), [первая программа](/encyclopedia/5-languages/5-26-powershell/122).
 7. [Справочник](/encyclopedia/5-languages/5-26-powershell/123) — таблицы команд и операторов.
+
+---
 
 ## Ключевые идеи раздела
 
@@ -90,6 +98,8 @@ import DocCardList from '@theme/DocCardList';
 - **Политика выполнения** ограничивает запуск файлов `.ps1`, а не "блокирует все команды".
 
 Интерактивные вставки в статьях (`PowerShellShellPlay`, демо операторов и ошибок) дополняют текст, но не заменяют пробу команд в своей среде.
+
+---
 
 ## Официальная документация Microsoft
 
@@ -110,6 +120,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

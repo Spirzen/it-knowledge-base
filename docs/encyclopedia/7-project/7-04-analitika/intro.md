@@ -48,13 +48,19 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 3. [Профессиональная аналитика](/encyclopedia/7-project/7-04-analitika/112)
 4. [Формализация и управление требованиями](/encyclopedia/7-project/7-04-analitika/116)
 
+---
+
 ### Бизнес-аналитик
 
 [113](/encyclopedia/7-project/7-04-analitika/113) → [124](/encyclopedia/7-project/7-04-analitika/124) → [116](/encyclopedia/7-project/7-04-analitika/116) → [117](/encyclopedia/7-project/7-04-analitika/117) → [127](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [121](/encyclopedia/7-project/7-04-analitika/121).
 
+---
+
 ### Системный аналитик
 
 [114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro).
+
+---
 
 ### Продукт и данные
 
@@ -76,6 +82,9 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

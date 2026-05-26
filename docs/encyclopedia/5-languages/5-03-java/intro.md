@@ -76,6 +76,8 @@ import DocCardList from '@theme/DocCardList';
 - [Документация и инструменты (Microsoft)](./294.md) — OpenJDK, VS Code, Azure.
 - Общая [подборка документации](/tools/documentation/2).
 
+---
+
 ## Внешние источники
 
 Компактные конспекты — для **второго прохода**; эталон — [OpenJDK](https://openjdk.org/) и документация Oracle.
@@ -142,6 +144,10 @@ import DocCardList from '@theme/DocCardList';
 1. [13.md](./13.md) — оба варианта IDE или тот, что у вас в команде.
 2. [132.md](./132.md) — найти off-by-one в цикле через F8.
 3. [271.md](./271.md) — `curl localhost:8080/...` к своему API.
+
+```bash
+curl localhost:8080/...
+```
 4. [чек-лист](./999.md) в конце раздела.
 
 ---
@@ -149,6 +155,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

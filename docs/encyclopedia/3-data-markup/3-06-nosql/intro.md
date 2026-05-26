@@ -15,6 +15,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про **NoSQL** (Not Only SQL): альтернативы и дополнения к реляционным СУБД для масштаба, гибкой схемы и распределённых систем.
 
+---
+
 ## Маршрут обучения
 
 1. [История NoSQL](/encyclopedia/3-data-markup/3-06-nosql/1) — контекст и эволюция семейств СУБД.
@@ -29,6 +31,8 @@ import DocCardList from '@theme/DocCardList';
 Справочники (синтаксис и ограничения): MongoDB (`41`), Redis (`51`), Cassandra (`61`), Cypher (`71`), Memcached (`81`).
 
 Пошаговый протокол: [Первые шаги с Memcached](/encyclopedia/3-data-markup/3-06-nosql/8111).
+
+---
 
 ## Мини-глоссарий
 
@@ -49,6 +53,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

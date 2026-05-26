@@ -36,6 +36,8 @@ import LinearProgrammingPlayground from '@site/src/components/LinearProgrammingP
 // на практике это делает солвер, не ручной перебор
 ```
 
+---
+
 ## Перед стартом раздела
 
 Этот раздел — цельный мини-курс. Мы последовательно идём от формулировки задачи к техникам решения и затем к коду. По ходу формируется инженерное понимание корректности ответа — зачем солвер дал именно такой план и как это проверить.
@@ -46,6 +48,8 @@ import LinearProgrammingPlayground from '@site/src/components/LinearProgrammingP
 
 **Рекомендуемый порядок для новичка** — [1](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1) (обозначения и постановка) → [2](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/2) (картинка на плоскости) → [3](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/3)–[6](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/6) (симплекс и двойственность) → по необходимости [7](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/7)–[8](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/8). Код — когда понятна постановка на бумаге.
 
+---
+
 ## Что вы получите после раздела
 
 - Умение переводить прикладную задачу в формальную модель — переменные, цель, ограничения.
@@ -53,6 +57,8 @@ import LinearProgrammingPlayground from '@site/src/components/LinearProgrammingP
 - Знание случаев, когда нужны целочисленные или нелинейные подходы.
 - Навык проверять решение двумя способами — вручную (графика/симплекс) и в коде (солвер).
 - Базу для тем уровня middle — чувствительность, MIP, network flow, робастные модели.
+
+---
 
 ## Практический режим прохождения
 
@@ -62,6 +68,8 @@ import LinearProgrammingPlayground from '@site/src/components/LinearProgrammingP
 3. Проверить тот же пример в `linprog` или OR-Tools.
 
 Такой цикл резко уменьшает разрыв между "понимаю теорию" и "могу применить в задаче проекта".
+
+---
 
 ## Интерактивный старт
 

@@ -29,6 +29,8 @@ import DocCardList from '@theme/DocCardList';
 
 В [вводной статье по C#](./1.md) и материалах про .NET цепочка "исходник → IL → CLR" по возможности показана **псевдокодом** до синтаксиса C#.
 
+---
+
 ## С чего начать
 
 1. [C# — язык платформы .NET](/encyclopedia/5-languages/5-05-csharp/1) — проекты, сборки, `using`, консоль.
@@ -39,6 +41,8 @@ import DocCardList from '@theme/DocCardList';
 
 Общие принципы (код, ООП, выполнение) — в [Код и разработка](/encyclopedia/4-code-dev/code-dev). Перед [ООП в C#](./25): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro). Здесь — **особенности C# и .NET**.
 
+---
+
 ## Справочник и углубление
 
 - [Вопросы на собеседование .NET и C#](/encyclopedia/5-languages/5-05-csharp/474) — карта типовых вопросов Junior–Senior (по мотивам [ITVDN/DOU](https://itvdn.com/ru/blog/article/150-questions-net-developer)) и ссылки на статьи раздела.
@@ -47,11 +51,15 @@ import DocCardList from '@theme/DocCardList';
 - [Справочник .NET API (BCL)](/encyclopedia/5-languages/5-05-csharp/473) — пространства имён .NET 10 и .NET Framework 4.8 / 4.8.1.
 - [Асинхронность и многопоточность](/encyclopedia/5-languages/5-05-csharp/39), [сеть и HTTP](/encyclopedia/5-languages/5-05-csharp/42), [производительность](/encyclopedia/5-languages/5-05-csharp/41).
 
+---
+
 ## Веб на .NET
 
 - [ASP.NET — фреймворк](./451), [Web API](./4511), [Minimal API и OpenAPI](./4517), [MediatR и pipeline](./4518), [интеграционные тесты](./4516), [Razor Pages](./4514), [Identity и JWT](./4515), [Blazor](./4512), [справочник](./452), [документация Microsoft Learn](./455)
 - Данные: [EF Core](./441), [ADO.NET / Dapper](./442), [обзор БД](./44)
 - Архитектура solution: [Clean Architecture на ASP.NET Core](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2143)
+
+---
 
 ## Внешние источники
 
@@ -61,6 +69,8 @@ import DocCardList from '@theme/DocCardList';
 - [ASP.NET Core 10](https://learn.microsoft.com/ru-ru/aspnet/core/?view=aspnetcore-10.0)
 
 Актуальные примеры в разделе ориентированы на **.NET 8+** и современный C# (nullable reference types, records, top-level statements). Упоминания Xamarin, Web Forms, LINQ to SQL — в контексте сопровождения legacy.
+
+---
 
 ### Зачем этот раздел
 
@@ -99,6 +109,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

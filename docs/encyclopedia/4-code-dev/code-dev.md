@@ -5,6 +5,7 @@ description: От алгоритмов и синтаксиса до архите
 sidebar_label: 4. Код и разработка - о разделе
 slug: /encyclopedia/4-code-dev/code-dev
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
@@ -12,6 +13,8 @@ slug: /encyclopedia/4-code-dev/code-dev
 </div>
 
 import DocCardList from '@theme/DocCardList';
+
+---
 
 ## О разделе
 

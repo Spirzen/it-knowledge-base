@@ -24,6 +24,8 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 
 Во всех главах (кроме чисто справочных вроде формата `.drawio`, где техника в теле статьи) в конце есть **Под капотом** и **Опыт, мнение и истории** — устройство инструмента и практика power user.
 
+---
+
 ## Мини-глоссарий
 
 | Термин | В двух словах |
@@ -34,6 +36,8 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 | **LSP** | Сервер подсказок в редакторе (IntelliSense в VS Code) |
 | **NAT / Bridge** | Режимы сети виртуальной машины |
 | **Sysinternals** | Набор утилит Microsoft для процессов, автозагрузки, сети |
+
+---
 
 ## Карта раздела
 

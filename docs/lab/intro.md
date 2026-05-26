@@ -7,6 +7,8 @@ sidebar_label: Лаборатория — о разделе
 
 import DocCardList from '@theme/DocCardList';
 
+---
+
 ## Лаборатория
 
 <DocCardList />

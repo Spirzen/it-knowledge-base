@@ -8,6 +8,8 @@ sidebar_label: Контекст — о разделе
 import DocCardList from '@theme/DocCardList';
 import ContextDomainsHub from '@site/src/components/context/ContextDomainsHub';
 
+---
+
 ## Контекст
 
 <ContextDomainsHub />

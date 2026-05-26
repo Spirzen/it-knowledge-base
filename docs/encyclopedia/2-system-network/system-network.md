@@ -5,6 +5,7 @@ description: После базовой грамотности — сети, се
 sidebar_label: 2. Система и сеть - о разделе
 slug: /encyclopedia/2-system-network/system-network
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
@@ -12,6 +13,8 @@ slug: /encyclopedia/2-system-network/system-network
 </div>
 
 import DocCardList from '@theme/DocCardList';
+
+---
 
 ## О разделе
 

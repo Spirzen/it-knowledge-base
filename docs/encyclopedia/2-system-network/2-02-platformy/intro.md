@@ -23,6 +23,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Смежно:** [ОС](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro) · [Облака](/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/intro) · [Low-code](/encyclopedia/8-infra-security/8-02-low-code-no-code/intro) · [Аналитика](/encyclopedia/7-project/7-04-analitika/intro)
 
+---
+
 ## Рекомендуемый порядок
 
 | Шаг | Материал | Тема |
@@ -38,6 +40,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

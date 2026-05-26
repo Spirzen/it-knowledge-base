@@ -25,6 +25,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+---
+
 ## Рекомендуемый маршрут
 
 | Этап | Статьи | Зачем |
@@ -37,6 +39,8 @@ import DocCardList from '@theme/DocCardList';
 | Справка | [Справочник](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/811) | шпаргалка по CL: API, CLOS, ASDF, идиомы (не заменяет курс) |
 
 Начните с [установки и REPL](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/7), затем читайте [основы](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/2) с открытым интерпретатором.
+
+---
 
 ### Зачем этот раздел
 
@@ -73,6 +77,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

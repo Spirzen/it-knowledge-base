@@ -96,6 +96,8 @@ import SpirzenOnlineToolsPanel from '@site/src/components/SpirzenOnlineToolsPane
 
 Если вам нравится проект "Вселенная IT" и вы хотите его поддержать, вот несколько способов:
 
+---
+
 ### Финансовая поддержка
 
 - **ЮMoney**: 4100119386983244
@@ -104,6 +106,8 @@ import SpirzenOnlineToolsPanel from '@site/src/components/SpirzenOnlineToolsPane
 - **Через Дзен**: [https://dzen.ru/itus](https://dzen.ru/itus)
 - **Подарить мне игру в Steam** [сюда](https://steamcommunity.com/id/brutal_professor/)
 - **Поставить звезду на GitHub** [здесь](https://github.com/Spirzen/it-knowledge-base)
+
+---
 
 ### Другие способы поддержки
 

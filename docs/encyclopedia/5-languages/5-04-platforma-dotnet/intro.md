@@ -23,6 +23,8 @@ import DocCardList from '@theme/DocCardList';
 
 В [обзоре платформы](./1.md) цепочка CIL → CLR → JIT по возможности показана **псевдокодом** до деталей CLI.
 
+---
+
 ## F# — с чего начать
 
 1. [F# в экосистеме .NET](./18) — обзор языка и парадигм.
@@ -33,17 +35,23 @@ import DocCardList from '@theme/DocCardList';
 6. [Структура F#-проекта](./190) — порядок файлов и solution.
 7. [Справочник по F#](./181) · [Справочник F# (Learn)](./184).
 
+---
+
 ## Справочники
 
 - [Вопросы на собеседование .NET и C#](../5-05-csharp/474) — шпаргалка с отсылками к материалам платформы и языка.
 - [Справочник .NET API](./183) — полный каталог BCL (.NET 10, .NET Framework 4.8 / 4.8.1) с навигацией по Microsoft Learn.
 - [Справочник по F#](./181) · [Справочник F# (Learn)](./184) · [ADO.NET](./171) · [EF Core (C#)](../5-05-csharp/441) · [ASP.NET](./172)
 
+---
+
 ## Внешние источники
 
 - [.NET API browser](https://learn.microsoft.com/ru-ru/dotnet/api/?view=net-10.0)
 - [.NET Framework 4.8 API](https://learn.microsoft.com/ru-ru/dotnet/api/?view=netframework-4.8&preserve-view=true)
 - [Справочник C#](../5-05-csharp/472)
+
+---
 
 ### Зачем этот раздел
 
@@ -81,6 +89,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

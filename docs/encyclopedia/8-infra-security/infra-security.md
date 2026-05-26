@@ -5,6 +5,7 @@ description: Облака, DevOps, контейнеры, микросервис�
 sidebar_label: 8. Инфраструктура и безопасность - о разделе
 slug: /encyclopedia/8-infra-security/infra-Безопасность
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
@@ -12,6 +13,8 @@ slug: /encyclopedia/8-infra-security/infra-Безопасность
 </div>
 
 import DocCardList from '@theme/DocCardList';
+
+---
 
 ## О разделе
 

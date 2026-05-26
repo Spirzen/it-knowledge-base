@@ -55,6 +55,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <KeyboardPlay />
 
+---
+
 ### Скорость печати
 
 Замер знаков и слов в минуту с подсветкой ошибок — для самопроверки после карты клавиатуры.
@@ -62,6 +64,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Статьи: [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
 
 <TypingSpeedTrainerPlay />
+
+---
 
 ### Устройства ввода-вывода
 
@@ -71,6 +75,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <IoDevicesPlay />
 
+---
+
 ### Типы данных
 
 Биты, числа, строки и логика представления — фундамент перед программированием.
@@ -78,6 +84,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Статья: [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/3)
 
 <DataTypesPlay />
+
+---
 
 ### Архитектура ПК
 
@@ -87,6 +95,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <ComputerArchitecturePlay />
 
+---
+
 ### Компилятор и интерпретатор
 
 Как исходный код превращается в исполняемую программу.
@@ -94,6 +104,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Статья: [Программа](/encyclopedia/1-basics/1-19-programma/1)
 
 <CompilerSimulator />
+
+---
 
 ### Дорожная карта изучения
 
@@ -103,6 +115,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <InteractiveRoadmap />
 
+---
+
 ### Визуальные блоки кода
 
 Сборка простых программ из блоков — мост к текстовому коду.
@@ -110,6 +124,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Статья: [Основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/7)
 
 <BlockBuilder />
+
+---
 
 ### Веб-приложение: фронт и бэк
 
@@ -119,6 +135,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <WebAppArchitecturePlay />
 
+---
+
 ### IT-английский
 
 Три режима: карточки с переворотом, викторина и ввод перевода. Прогресс сохраняется в браузере; слова берутся из учебного плана и таблицы в статье.
@@ -126,6 +144,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Статья: [Ключевые термины и фразы](/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2)
 
 <EnglishVocabularyTrainer />
+
+---
 
 ### Хаб тренажёров
 
@@ -147,6 +167,8 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 <NetworkStackExplorerPlay />
 
+---
+
 ### HTTP-запрос
 
 Разбор заголовков, метода, тела и ответа сервера.
@@ -167,6 +189,8 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 <HTMLPlayground />
 
+---
+
 ### SQL JOIN
 
 Пошаговый тренажёр соединений таблиц.
@@ -175,11 +199,15 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 <SqlJoinTrainer />
 
+---
+
 ### SQL Generator Online
 
 Конструктор запросов: соберите SELECT/INSERT по правилам SQL; можно загрузить таблицу из Excel и получить INSERT для импорта в БД.
 
 Отдельное приложение: [SQL Generator Online](https://spirzen.github.io/SQLGeneratorOnline/) — в статьях раздела SQL ссылка также стоит под встроенным [SQL-тренажёром](/encyclopedia/3-data-markup/3-07-sql/1).
+
+---
 
 ### Просмотр схемы БД
 
@@ -201,6 +229,8 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 <AlgoCodeVisualizer />
 
+---
+
 ### Git
 
 Ветки, коммиты и слияния в безопасной песочнице.
@@ -208,6 +238,8 @@ SQL, терминалы, Git, Docker и практика — переключе�
 Статья: [Основы Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112)
 
 <GitEmulator />
+
+---
 
 ### Schema Maker — свободные схемы
 
@@ -218,6 +250,8 @@ SQL, терминалы, Git, Docker и практика — переключе�
 Полная онлайн-версия (минималистичный холст, экспорт PNG в один клик): [Schema Maker Online](https://spirzen.github.io/SchemaMakerOnline/).
 
 <SchemaMakerPlay defaultDocName="Витрина" title="Schema Maker" />
+
+---
 
 ### ArchiStyler — планировщик классов
 
@@ -253,6 +287,8 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 <NeuralNetworkDemo />
 
+---
+
 ### ИИ-агент
 
 Цикл восприятия, рассуждения и действий агента.
@@ -272,6 +308,8 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 Статья: [Тестирование](/encyclopedia/7-project/7-05-testirovanie/1)
 
 <TestingBasicsDemo />
+
+---
 
 ### BPMN
 
@@ -293,6 +331,8 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 <InfraDiagramStudio />
 
+---
+
 ### Docker Compose
 
 Сервисы, сети и зависимости в одном стеке.
@@ -300,6 +340,8 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 Статья: [Контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1111)
 
 <DockerComposePlay />
+
+---
 
 ### CI/CD: слои проверок
 

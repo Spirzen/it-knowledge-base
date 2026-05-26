@@ -5,12 +5,15 @@ description: Языки программирования и типичные с�
 sidebar_label: 5. Языки - о разделе
 slug: /encyclopedia/5-languages/intro
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>
 
 import DocCardList from '@theme/DocCardList';
+
+---
 
 ## О разделе
 

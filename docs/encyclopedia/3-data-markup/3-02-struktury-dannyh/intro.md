@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала (общая база):** [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro) · [Алгоритмы](/encyclopedia/4-code-dev/4-01-algoritmy/intro)
 
+---
+
 ## Рекомендуемый порядок
 
 | Шаг | Статья | Зачем |
@@ -31,6 +33,8 @@ import DocCardList from '@theme/DocCardList';
 | 4 | [Итоги](./3.md) · [чек-лист](./4.md) | закрепление |
 
 Дальше — коллекции в [языках](/encyclopedia/5-languages/languages) (таблица ниже). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro).
+
+---
 
 ## Коллекции в разделах языков
 

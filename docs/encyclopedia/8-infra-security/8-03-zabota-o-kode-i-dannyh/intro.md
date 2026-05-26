@@ -25,6 +25,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Смежно:** [Основы работы с Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) · [Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro)
 
+---
+
 ## Рекомендуемый порядок
 
 | Шаг | Материал | Зачем |
@@ -41,6 +43,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

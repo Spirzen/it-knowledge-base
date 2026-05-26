@@ -16,6 +16,8 @@ slug: /encyclopedia/1-basics/basics
 
 import DocCardList from '@theme/DocCardList';
 
+---
+
 ## О разделе
 
 <DocCardList />

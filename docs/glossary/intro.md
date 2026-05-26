@@ -12,6 +12,8 @@ import DocCardList from '@theme/DocCardList';
   <span class="tag tag-notrequired">НЕ ОБЯЗАТЕЛЬНО</span>
 </div>
 
+---
+
 ## Глоссарий
 
 <DocCardList />

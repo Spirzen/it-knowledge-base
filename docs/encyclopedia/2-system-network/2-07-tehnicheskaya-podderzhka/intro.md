@@ -19,6 +19,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Смежно:** [Базы знаний в проектах](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro) · [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro) · [Коммуникация](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro)
 
+---
+
 ## С чего начать
 
 1. **[Понятие и задачи техподдержки](./1.md)** — роли, цели, связь с продуктом.

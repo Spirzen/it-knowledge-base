@@ -19,6 +19,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про **работу вне офиса**: доступы и связь, отличие "удалёнки" от дистанционной работы по ТК РФ, процессы и метрики команды. Связан с [Коммуникацией](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro) и [Карьерой в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro).
 
+---
+
 ## Как читать
 
 | Глава | Содержание | Кому в первую очередь |
@@ -32,6 +34,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

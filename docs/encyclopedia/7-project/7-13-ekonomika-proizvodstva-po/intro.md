@@ -42,6 +42,8 @@ import DocCardList from '@theme/DocCardList';
 | 1.4 | Качество и риски | [ISO/IEC 25010](./2) | [NFR в архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1116) |
 | 1.5–1.6 | Сложность, трудоёмкость, COCOMO II | [COCOMO II](./1) | [Оценка трудозатрат](/encyclopedia/7-project/7-02-komanda-i-upravlenie/112) |
 
+---
+
 ### Часть 2. Производство
 
 | Глава | Тема | Материалы раздела 7.13 | Соседние разделы |

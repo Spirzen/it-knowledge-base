@@ -30,6 +30,8 @@ import DocCardList from '@theme/DocCardList';
   Цифры по вакансиям и зарплатам в материалах — <strong>ориентиры</strong>; перед поиском работы сверяйте их на HeadHunter и в [разделе про карьеру](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro).
 </div>
 
+---
+
 ### Короткий глоссарий
 
 | Термин | В двух словах |

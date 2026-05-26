@@ -5,10 +5,13 @@ description: Современный ИИ как статистика, данны
 sidebar_label: 6. Искусственный интеллект - о разделе
 slug: /section/ai
 ---
+
 <div class="article-tags">
   <span class="tag tag-required">ОБЯЗАТЕЛЬНО</span>
   <span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span>
 </div>
+
+---
 
 ## О разделе
 
@@ -43,6 +46,8 @@ slug: /section/ai
 
 Подробности как раз будем разбирать в этом разделе!
 
+---
+
 ## Введение в ИИ
 
 <ul>
@@ -58,6 +63,8 @@ slug: /section/ai
   
 </ul>
 
+---
+
 ## Машинное обучение
 
 <ul>
@@ -71,6 +78,8 @@ slug: /section/ai
   </li>
   
 </ul>
+
+---
 
 ## Нейросети
 
@@ -88,6 +97,8 @@ slug: /section/ai
   
 </ul>
 
+---
+
 ## Модели и инструменты
 
 <ul>
@@ -104,6 +115,8 @@ slug: /section/ai
   
 </ul>
 
+---
+
 ## Разработка ИИ
 
 <ul>
@@ -118,6 +131,8 @@ slug: /section/ai
   </li>
   
 </ul>
+
+---
 
 ## Применение ИИ
 

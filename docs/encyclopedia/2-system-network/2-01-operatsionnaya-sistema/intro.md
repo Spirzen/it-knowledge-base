@@ -44,6 +44,8 @@ import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 4. Платформы: [Windows](./4) · [Linux](./5) · [macOS](./6) · [Android](./8) · [iOS](./7)  
 5. [Чек-лист самопроверки](./99)
 
+---
+
 ### Маршрут B — "База курса по ОС" (учебная программа)
 
 Покрывает типичный syllabus: определение, история, требования, архитектура, процессы, синхронизация, тупики, память, I/O.
@@ -97,6 +99,9 @@ import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

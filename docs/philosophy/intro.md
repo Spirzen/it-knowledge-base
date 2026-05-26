@@ -7,6 +7,8 @@ sidebar_label: Философия — о разделе
 
 import DocCardList from '@theme/DocCardList';
 
+---
+
 ## Философия
 
 <DocCardList />

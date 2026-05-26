@@ -19,6 +19,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Смежно:** [Техническое письмо](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro) · [ИБ](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro)
 
+---
+
 ## С чего начать
 
 1. **[Права интеллектуальной собственности в IT](./1.md)** — право, РИД, лицензии.

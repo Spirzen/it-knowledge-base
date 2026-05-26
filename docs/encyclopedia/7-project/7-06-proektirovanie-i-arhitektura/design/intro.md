@@ -25,6 +25,8 @@ import DocCardList from '@theme/DocCardList';
 
 **Чистая архитектура:** [теория (2132)](2132.md) → [практика ASP.NET Core (2143)](2143.md) → [MediatR](/encyclopedia/5-languages/5-05-csharp/4518).
 
+---
+
 ### Термины подраздела
 
 | Термин | Коротко |
@@ -44,15 +46,21 @@ import DocCardList from '@theme/DocCardList';
 1. [Проектирование программных систем](1.md) · [лестница проектирования](2111.md) · [принципы](1112.md)
 2. [NFR](1116.md) · [документация](1117.md) · [сервисы и методы](1113.md)
 
+---
+
 ### Данные, API, масштаб
 
 3. [БД](116.md) · [API и интеграции](117.md) · [Ричардсон](212.md)
 4. [Масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA](2135.md) · [распределённые системы](21.md)
 
+---
+
 ### Стили и эволюция
 
 5. [Модульный монолит](2126.md) · [события](2127.md) · [CQRS](2122.md) · [Saga](2124.md) · [Strangler](2125.md)
 6. [Микросервисные паттерны](118.md) · [веб](119.md) · [GRASP и ADR](2139.md)
+
+---
 
 ### Практика архитектора
 
@@ -65,6 +73,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 **Архитектура и проектирование ПО** — [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro).

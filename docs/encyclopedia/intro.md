@@ -7,6 +7,8 @@ sidebar_label: Энциклопедия — о разделе
 
 import DocCardList from '@theme/DocCardList';
 
+---
+
 ## Энциклопедия
 
 <DocCardList />

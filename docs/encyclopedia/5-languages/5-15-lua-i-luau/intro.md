@@ -21,12 +21,16 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+---
+
 ## Две дорожки
 
 | Контекст | Версия | На что обратить внимание |
 |----------|--------|-------------------------|
 | Чистый Lua, LÖVE, Neovim, OpenResty | 5.3–5.4 | `//`, `table.unpack`, `<const>`, `<toclose>`, generational GC |
 | Roblox Studio / Luau | 5.1 + расширения | аннотации типов, `task.*`, `--!strict`, другой захват `i` в `for`, ограниченные `io`/`os` |
+
+---
 
 ## Рекомендуемый порядок
 
@@ -37,6 +41,8 @@ import DocCardList from '@theme/DocCardList';
 5. [Luau и Roblox](/encyclopedia/5-languages/5-15-lua-i-luau/23) — после базового Lua  
 
 **Справочник:** [3.md](/encyclopedia/5-languages/5-15-lua-i-luau/3) · **Самопроверка:** [999.md](/encyclopedia/5-languages/5-15-lua-i-luau/999)
+
+---
 
 ### Зачем этот раздел
 
@@ -73,6 +79,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

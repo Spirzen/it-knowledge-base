@@ -41,6 +41,8 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
   Идите по главам <strong>1 → 8</strong> подряд или выборочно по таблице ниже. Глава <strong>9</strong> — справочник по средам (Godot, Flutter, BeautifulSoup и др.), её можно открывать по мере необходимости. Итоги и чек-лист — в конце ([98](/encyclopedia/1-basics/1-035-bazovaya-informatika/98), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99)).
 </div>
 
+---
+
 ## Карта курса
 
 | № | Тема учебника | Глава курса | Подробнее в энциклопедии |
@@ -54,6 +56,8 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 | 7 | Право и защита информации | [7](/encyclopedia/1-basics/1-035-bazovaya-informatika/7) | [Интеллектуальные права](/encyclopedia/7-project/7-07-intellektualnye-prava/intro) |
 | 8 | Организация рабочего места | [8](/encyclopedia/1-basics/1-035-bazovaya-informatika/8) | [Эргономика клавиатуры](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713) |
 | 9 | Инструменты и среды (справочник) | [9](/encyclopedia/1-basics/1-035-bazovaya-informatika/9) | BeautifulSoup, Godot, Flutter, App Inventor и др. |
+
+---
 
 ## Рекомендуемый порядок для новичка
 
@@ -70,6 +74,8 @@ flowchart LR
 ```
 
 Главу **4** (алгоритмы и программирование) можно пройти раньше, если вы уже на уроках пишете код — она не зависит от интернета. Главы **7** и **8** удобны в любой момент после [1](/encyclopedia/1-basics/1-035-bazovaya-informatika/1).
+
+---
 
 ## Интерактивная карта маршрута
 

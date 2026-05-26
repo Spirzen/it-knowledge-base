@@ -120,6 +120,9 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 ---
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

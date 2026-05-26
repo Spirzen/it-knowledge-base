@@ -23,6 +23,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Смежная база:** [Терминал](/encyclopedia/2-system-network/2-05-terminal/intro) · [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) · [Системное администрирование](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro) · [Контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro) · [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro)
 
+---
+
 ## Рекомендуемый порядок
 
 1. **[Основы DevOps](./1.md)** — тест vs прод, зачем CI/CD, типичные ошибки при выкате.
@@ -36,6 +38,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

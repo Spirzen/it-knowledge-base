@@ -19,6 +19,8 @@
     "docs:wiki-links": "node scripts/build-wiki-link-index.mjs",
     "docs:toc": "node scripts/generate-toc.mjs",
     "docs:fix-mdx-imports": "node scripts/fix-mdx-import-after-frontmatter.mjs",
+    "docs:fix-frontmatter-blank": "node scripts/fix-blank-after-frontmatter.mjs",
+    "docs:fix-heading-separators": "node scripts/fix-heading-separators.mjs",
     "docs:basics-crosslinks": "node scripts/enrich-basics-crosslinks.mjs",
     "docs:revert-basics-wiki": "node scripts/revert-basics-wiki-markup.mjs",
     "docs:fix-cyrillic-latin": "node scripts/fix-cyrillic-latin-corruption.mjs",

@@ -27,6 +27,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 Перед [ООП-модель Smalltalk](./4): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro).
 
+---
+
 ### Рекомендуемый маршрут
 
 | Шаг | Материал | Зачем |
@@ -37,6 +39,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 4 | [Типы](./33.md) → [ООП](./4.md) | Класс в браузере |
 | 5 | [Справочник](./5.md) → [Чек-лист](./999.md) | Шпаргалка |
 
+---
+
 ### Частые ошибки
 
 | Ошибка | Что делать |
@@ -44,6 +48,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | Ждать `.exe` и сборку как в C | Работать в **image**, сохранять образ |
 | Копировать Java-синтаксис | `ifTrue:`, `timesRepeat:` |
 | Не нажать accept (Ctrl+S) | Метод не попадёт в систему |
+
+---
 
 ### Зачем этот раздел
 
@@ -84,6 +90,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

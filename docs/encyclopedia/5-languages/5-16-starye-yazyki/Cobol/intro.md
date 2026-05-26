@@ -36,6 +36,8 @@ import DocCardList from '@theme/DocCardList';
 
 Завершение: [Итоги](./998.md), [Чек-лист](./999.md).
 
+---
+
 ### Частые ошибки при старте
 
 | Ошибка | Что делать |
@@ -44,6 +46,8 @@ import DocCardList from '@theme/DocCardList';
 | `cobc` не найден | GnuCOBOL в WSL: `apt install gnucobol` |
 | Сразу CICS/DB2 | Сначала шаги 2–6 |
 
+---
+
 ### Что попробовать
 
 1. [hello](./7.md), затем пример с `ACCEPT`.
@@ -51,6 +55,8 @@ import DocCardList from '@theme/DocCardList';
 3. [Чек-лист](./999.md).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
+---
 
 ### Зачем этот раздел
 
@@ -87,6 +93,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

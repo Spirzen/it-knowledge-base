@@ -27,6 +27,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про **командную строку и терминал**: зачем нужен текстовый интерфейс, как запускать оболочки в Windows и Linux, базовые команды и автоматизация. Для Windows центральный инструмент администрирования — **PowerShell**; углублённый язык и синтаксис — в разделе [5.26 PowerShell](/encyclopedia/5-languages/5-26-powershell/intro).
 
+---
+
 ## С чего начать в энциклопедии
 
 Общая база для всех платформ:
@@ -42,6 +44,8 @@ import DocCardList from '@theme/DocCardList';
 **Удалённый сервер и сборка:** [PuTTY и SSH](/encyclopedia/2-system-network/2-05-terminal/1131) · [утилита make](/encyclopedia/2-system-network/2-05-terminal/1132) (оркестрация команд по Makefile, не замена shell).
 
 Справочники **101** и **102** удобнее открывать по задаче, а не читать подряд. Итоги раздела — [статья 2](/encyclopedia/2-system-network/2-05-terminal/2), самопроверка — [чек-лист](/encyclopedia/2-system-network/2-05-terminal/3).
+
+---
 
 ## PowerShell — официальные материалы Microsoft
 
@@ -61,6 +65,9 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

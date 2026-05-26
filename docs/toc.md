@@ -16,6 +16,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## Общая структура проекта
 
 Энциклопедия "IT Universe" представляет собой систематизированное, многоуровневое пособие, охватывающее полный цикл знаний — от цифровой грамотности до профессиональных практик в инженерии, разработке и управлении. Структура построена по принципу "от общего к частному", с возможностью вертикального (углубление в тему) и горизонтального (перекрёстное изучение смежных дисциплин) движения по содержанию.
@@ -30,9 +32,13 @@ import DocCardList from '@theme/DocCardList';
 
 Начните с энциклопедии.
 
+---
+
 ## Энциклопедия
 
 Энциклопедия - это основной раздел "Вселенной IT". Он регулярно обновляется, расширяется и изменяется, поэтому рекомендую использовать боковое меню (сайд-бар) для ориентира по разделу.
+
+---
 
 ## Основы
 
@@ -48,6 +54,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Знакомство с Вселенной IT
 
 <ul>
@@ -59,6 +67,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Обзор структуры Вселенной IT
 
@@ -72,6 +82,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Дорожная карта изучения
 
@@ -89,6 +101,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Восприятие IT в обществе
 
@@ -111,6 +125,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Предупреждения при изучении
 
 <ul>
@@ -126,6 +142,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Сленг
 
 <ul>
@@ -137,6 +155,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### История информационных технологий
 
@@ -157,6 +177,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Как работает компьютер
 
@@ -189,6 +211,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Данные и информация
 
 <ul>
@@ -207,6 +231,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Базовые операции с данными
 
 <ul>
@@ -223,6 +249,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Софт рядового пользователя
 
@@ -245,6 +273,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Советы для новичка
 
@@ -272,6 +302,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Софт продвинутого пользователя
 
 <ul>
@@ -296,6 +328,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Советы для продвинутого
 
 <ul>
@@ -316,6 +350,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Текст
 
@@ -340,6 +376,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Графика
 
 <ul>
@@ -358,6 +396,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Аудио и видео
 
@@ -378,6 +418,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Компьютерные игры
 
 <ul>
@@ -396,6 +438,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Программа
 
@@ -418,6 +462,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Исполняемые файлы и архивы
 
 <ul>
@@ -435,6 +481,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Поиск информации
 
 <ul>
@@ -451,6 +499,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Коммуникация и общение
 
@@ -470,6 +520,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Фронтенд и бэкенд
 
@@ -493,6 +545,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Классификация языков в IT
 
 <ul>
@@ -513,6 +567,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Интерфейс
 
 <ul>
@@ -531,6 +587,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Карьера в IT и мифы
 
@@ -561,6 +619,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Удаленная работа
 
 <ul>
@@ -574,6 +634,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Маркетинг и распространение
 
@@ -590,6 +652,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Государство и бизнес
 
@@ -608,6 +672,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Английский язык в IT
 
@@ -642,6 +708,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Операционная система
 
@@ -679,6 +747,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Платформы
 
 <ul>
@@ -699,6 +769,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Сеть и интернет
 
@@ -739,6 +811,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Веб-сайты и веб-приложения
 
 <ul>
@@ -767,6 +841,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Терминал
 
 <ul>
@@ -788,6 +864,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Системное администрирование
 
@@ -820,6 +898,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Восстановление данных
 
 <ul>
@@ -836,6 +916,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Техническая поддержка
 
@@ -860,6 +942,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Основы информационной безопасности
 
 <ul>
@@ -879,6 +963,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Основы интеграционного взаимодействия
 
@@ -913,6 +999,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Аппаратное обеспечение
 
@@ -958,6 +1046,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Продвинутые операции с данными
 
 <ul>
@@ -975,6 +1065,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Структуры данных
 
 <ul>
@@ -991,6 +1083,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Мыслительная база
 
@@ -1026,6 +1120,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Математическое программирование
 
 <ul>
@@ -1048,6 +1144,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Конфигурации и данные
 
@@ -1077,6 +1175,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Основы баз данных
 
 <ul>
@@ -1099,6 +1199,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### NoSQL
 
@@ -1131,6 +1233,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### SQL
 
@@ -1171,6 +1275,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Управление реляционными СУБД
 
 <ul>
@@ -1189,6 +1295,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### HTML
 
@@ -1209,6 +1317,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### CSS
 
@@ -1241,6 +1351,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Анализ данных
 
@@ -1284,6 +1396,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Алгоритмы
 
 <ul>
@@ -1305,6 +1419,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Код
 
@@ -1331,6 +1447,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Выполнение кода
 
@@ -1359,6 +1477,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Проект, структура и фреймворки
 
 <ul>
@@ -1381,6 +1501,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Асинхронность
 
 <ul>
@@ -1397,6 +1519,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Архитектура выполнения
 
@@ -1419,6 +1543,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Парадигмы и уровни абстракции
 
 <ul>
@@ -1435,6 +1561,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Объектно-ориентированное программирование
 
@@ -1455,6 +1583,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Зависимости
 
 <ul>
@@ -1470,6 +1600,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### ORM и работа с данными
 
@@ -1494,6 +1626,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Десктопные приложения
 
 <ul>
@@ -1515,6 +1649,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Мобильные приложения
 
@@ -1545,6 +1681,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Основы работы с Git
 
 <ul>
@@ -1563,6 +1701,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Разработка и отладка
 
@@ -1593,6 +1733,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Сборка мусора
 
 <ul>
@@ -1606,6 +1748,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Параллельные вычисления
 
@@ -1646,6 +1790,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### JavaScript
 
@@ -1712,6 +1858,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Python
 
@@ -1781,6 +1929,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Java
 
 <ul>
@@ -1834,6 +1984,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Платформа .NET
 
 <ul>
@@ -1869,6 +2021,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### C#
 
@@ -1937,6 +2091,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### C++
 
 <ul>
@@ -1988,6 +2144,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### PHP
 
 <ul>
@@ -2038,6 +2196,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Smalltalk
 
 <ul>
@@ -2059,6 +2219,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Kotlin
 
@@ -2101,6 +2263,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Go
 
@@ -2145,6 +2309,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Ruby
 
 <ul>
@@ -2177,6 +2343,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Groovy
 
 <ul>
@@ -2207,6 +2375,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Rust
 
@@ -2248,6 +2418,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Swift
 
 <ul>
@@ -2285,6 +2457,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Lua и Luau
 
 <ul>
@@ -2319,6 +2493,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Старые языки
 
 <ul>
@@ -2332,6 +2508,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Ассемблер
 
@@ -2361,6 +2539,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Си
 
@@ -2394,6 +2574,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Cobol
 
 <ul>
@@ -2412,6 +2594,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Fortran
 
@@ -2433,6 +2617,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Lisp
 
 <ul>
@@ -2453,6 +2639,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Pascal
 
 <ul>
@@ -2471,6 +2659,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Visual Basic
 
@@ -2495,6 +2685,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Haskell
 
 <ul>
@@ -2512,6 +2704,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Scala
 
@@ -2531,6 +2725,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Elixir
 
 <ul>
@@ -2548,6 +2744,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Zig
 
@@ -2567,6 +2765,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Nim
 
 <ul>
@@ -2584,6 +2784,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Dart
 
@@ -2608,6 +2810,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### R
 
 <ul>
@@ -2626,6 +2830,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Julia
 
 <ul>
@@ -2643,6 +2849,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Bash
 
@@ -2669,6 +2877,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### PowerShell
 
 <ul>
@@ -2694,6 +2904,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### 1С
 
@@ -2735,6 +2947,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Введение в ИИ
 
 <ul>
@@ -2751,6 +2965,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Машинное обучение
 
 <ul>
@@ -2765,6 +2981,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Нейросети
 
@@ -2781,6 +2999,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Модели и инструменты
 
@@ -2800,6 +3020,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Разработка ИИ
 
 <ul>
@@ -2816,6 +3038,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Применение ИИ
 
@@ -2851,6 +3075,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Общее о бизнесе
 
 <ul>
@@ -2866,6 +3092,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Команда и управление
 
@@ -2889,6 +3117,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Методология и жизненный цикл ПО
 
 <ul>
@@ -2903,6 +3133,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Аналитика
 
@@ -2939,6 +3171,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Тестирование программного обеспечения
 
@@ -2983,6 +3217,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Проектирование и архитектура
 
 <ul>
@@ -3010,6 +3246,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Проектирование
 
@@ -3067,6 +3305,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Паттерны проектирования
 
 <ul>
@@ -3084,6 +3324,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Интеллектуальные права
 
@@ -3104,6 +3346,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Техническое письмо
 
@@ -3138,6 +3382,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Базы знаний и задачники
 
 <ul>
@@ -3155,6 +3401,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Культура кода
 
 <ul>
@@ -3169,6 +3417,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Легаси-код
 
@@ -3204,6 +3454,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Облачные технологии
 
 <ul>
@@ -3218,6 +3470,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Low-code, No-code
 
@@ -3234,6 +3488,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Забота о коде и данных
 
@@ -3260,6 +3516,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### DevOps, CI-CD
 
@@ -3314,6 +3572,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Микросервисы и интеграция
 
 <ul>
@@ -3351,6 +3611,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Контейнеризация и оркестрация
 
 <ul>
@@ -3377,6 +3639,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Информационная безопасность
 
@@ -3434,6 +3698,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Великие люди
 
 <ul>
@@ -3448,6 +3714,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Как понять, что пора менять работу
 
 <ul>
@@ -3461,6 +3729,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Игровая индустрия
 
@@ -3498,6 +3768,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Игроведение
 
 <ul>
@@ -3533,6 +3805,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Разработка игр
 
@@ -3573,6 +3847,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Блокчейн, криптовалюты и NFT
 
 <ul>
@@ -3587,6 +3863,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Отраслевое ПО
 
@@ -3603,6 +3881,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Компьютерная графика
 
@@ -3623,6 +3903,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Медиа-контент
 
 <ul>
@@ -3639,6 +3921,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Интернет-культура
 
@@ -3663,6 +3947,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Для детей
 
 <ul>
@@ -3674,6 +3960,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Компьютер
 
@@ -3692,6 +3980,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Видеоигры и компьютерные игры
 
@@ -3721,6 +4011,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Развитие
 
 <ul>
@@ -3739,6 +4031,8 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+---
+
 ### Программы
 
 <ul>
@@ -3755,6 +4049,8 @@ import DocCardList from '@theme/DocCardList';
   </li>
 
 </ul>
+
+---
 
 ### Программирование
 
@@ -3785,11 +4081,15 @@ import DocCardList from '@theme/DocCardList';
 
 <p><a href="/context/intro">Контекст — о разделе</a></p>
 
+---
+
 ## Лаборатория
 
 Практический раздел для тех, кому интереснее попробовать, поэкспериментировать и учиться на практике.
 
 <p><a href="/lab/intro">Лаборатория — о разделе</a></p>
+
+---
 
 ## Философия
 
@@ -3797,11 +4097,15 @@ import DocCardList from '@theme/DocCardList';
 
 <p><a href="/philosophy/intro">Философия — о разделе</a></p>
 
+---
+
 ## Инструменты
 
 Справочник инструментов для повседневной работы в IT.
 
 <p><a href="/tools/intro">Инструменты — о разделе</a></p>
+
+---
 
 ## О проекте
 

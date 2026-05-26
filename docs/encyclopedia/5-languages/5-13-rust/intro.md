@@ -37,6 +37,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 В [типах и владении](./13.md) правила borrow checker сначала объясняются **псевдокодом**, затем — синтаксисом Rust.
 
+---
+
 ### Рекомендуемый маршрут
 
 | Шаг | Материал | Зачем |
@@ -52,6 +54,8 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 8 | [Axum](./201.md) | HTTP после базы |
 | 9 | [Чек-лист](./999.md) | Самопроверка |
 
+---
+
 ### Частые ошибки при старте
 
 | Ошибка | Что делать |
@@ -60,11 +64,15 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | Сразу Tokio + Axum без `13` и `171` | Сначала владение и `Result` |
 | Везде `clone()` | Поймите, где достаточно `&T` |
 
+---
+
 ### Что попробовать
 
 1. [Первая программа](./20.md) — измените вывод и пересоберите проект.
 2. Получите ошибку borrow checker и прочитайте подсказку компилятора.
 3. Один unit-тест по [тестированию](./202.md).
+
+---
 
 ### Зачем этот раздел
 
@@ -106,6 +114,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 <DocCardList />
 
 {/* sidebar-collections */}
+
+---
+
 ## В подборках
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:

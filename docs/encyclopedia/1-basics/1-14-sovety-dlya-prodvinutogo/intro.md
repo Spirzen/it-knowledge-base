@@ -23,6 +23,8 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь нет повторения "как установить принтер" или "что такое Excel". Вместо этого — дорожная карта навыков и ссылки на углублённые главы энциклопедии.
 
+---
+
 ## Что вы найдёте
 
 | Глава | Тема |
@@ -39,6 +41,8 @@ import DocCardList from '@theme/DocCardList';
 
 Связанный раздел инструментов: [Софт продвинутого пользователя](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/intro).
 
+---
+
 ## Как читать раздел
 
 1. Начните с [пути продвинутого](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1) — карта навыков.
@@ -47,6 +51,8 @@ import DocCardList from '@theme/DocCardList';
 4. В конце — [чек-лист](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/99).
 
 Главы **2–8** самодостаточны: можно читать "Игры" без "Home Lab", если вы геймер, а не админ.
+
+---
 
 ## Объём и глубина
 
