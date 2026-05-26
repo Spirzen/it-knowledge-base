@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 1. [C# — язык платформы .NET](/encyclopedia/5-languages/5-05-csharp/1) — проекты, сборки, `using`, консоль.
 2. [Синтаксис и пунктуация](/encyclopedia/5-languages/5-05-csharp/11), [переменные](/encyclopedia/5-languages/5-05-csharp/17), [типы и приведения](/encyclopedia/5-languages/5-05-csharp/20).
 3. [Пространства имён](/encyclopedia/5-languages/5-05-csharp/12), [nullable](/encyclopedia/5-languages/5-05-csharp/22), [исключения](/encyclopedia/5-languages/5-05-csharp/15).
-4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29).
+4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции и кортежи](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29).
 5. Данные: [EF Core — первая программа](./441) или [ADO.NET / Dapper](./442), обзор — [БД и ORM](./44).
 
 Общие принципы (код, ООП, выполнение) — в [Код и разработка](/encyclopedia/4-code-dev/code-dev). Перед [ООП в C#](./25): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro). Здесь — **особенности C# и .NET**.
@@ -49,7 +49,7 @@ import DocCardList from '@theme/DocCardList';
 - [Справочник по синтаксису и возможностям C#](/encyclopedia/5-languages/5-05-csharp/471) — операторы, модификаторы, `Span`, async.
 - [Справочник языка C# (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/472) — полный каталог language reference (869 разделов).
 - [Справочник .NET API (BCL)](/encyclopedia/5-languages/5-05-csharp/473) — пространства имён .NET 10 и .NET Framework 4.8 / 4.8.1.
-- [Асинхронность и многопоточность](/encyclopedia/5-languages/5-05-csharp/39), [сеть и HTTP](/encyclopedia/5-languages/5-05-csharp/42), [производительность](/encyclopedia/5-languages/5-05-csharp/41).
+- [Асинхронность и многопоточность](/encyclopedia/5-languages/5-05-csharp/39), [Task и async/await](/encyclopedia/5-languages/5-05-csharp/392), [класс `Thread`](/encyclopedia/5-languages/5-05-csharp/391), [сеть и HTTP](/encyclopedia/5-languages/5-05-csharp/42), [производительность](/encyclopedia/5-languages/5-05-csharp/41).
 
 ---
 
@@ -123,3 +123,10 @@ import DocCardList from '@theme/DocCardList';
 {/* /sidebar-collections */}
 
 ---
+---
+
+<!-- http-basics-link -->
+:::tip Основа по протоколу
+Базовый разбор HTTP и HTTPS находится в отдельной статье — [HTTP как основа веб-интеграций](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118).
+:::
+

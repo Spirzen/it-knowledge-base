@@ -1,8 +1,10 @@
 ---
 title: Микросервисы и интеграция — о разделе
-description: "Теория распределённых данных: CAP в основах NoSQL, уточнение для продакшена — PACELC."
+description: "Микросервисная архитектура, коммуникация между сервисами, брокеры сообщений и практика интеграции в продакшене."
 sidebar_label: Микросервисы и интеграция — о разделе
 related:
+  - title: "Основы интеграционного взаимодействия — о разделе"
+    doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro
   - title: "Методы защиты пользовательских и корпоративных данных"
     doc: encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117
   - title: "Контейнеризация и оркестрация — о разделе"
@@ -25,7 +27,32 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Теория распределённых данных: [CAP в основах NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2), уточнение для продакшена — [PACELC](./124.md).
+Раздел про **микросервисную архитектуру** и **интеграцию в продакшене** — как сервисы общаются, масштабируются и выдерживают нагрузку. Базовые термины, HTTP, API и очереди разобраны в [Основах интеграционного взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro); здесь — MSA, балансировка, практические кейсы и справочники.
+
+**Рекомендуемый порядок чтения:**
+
+1. [Первые шаги к микросервисам](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/101) и [Архитектура микросервисов](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/112).
+2. [Коммуникация и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113) — контракты, ESB, event-driven.
+3. [Синхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115), [асинхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114) и [реактивная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) коммуникация.
+4. [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [RabbitMQ](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118), [Kafka](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119), [реализация интеграции](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121).
+5. Компромиссы распределённых систем — [PACELC](./124.md) (связь с [CAP в основах NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2)).
+
+---
+
+## Связанные разделы
+
+Базовые темы для новичков — в [Основы интеграционного взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) (блок «Система и сеть»). Рекомендуем пройти их до или параллельно с этим разделом.
+
+| Углубление (этот раздел) | Основы (раздел 2) |
+| --- | --- |
+| [Коммуникация и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113) | [Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1) |
+| [Синхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115), [асинхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114) и [реактивная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) коммуникация | [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111) |
+| [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [проектирование API](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122) | [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117), [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) |
+| [Брокеры сообщений](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117) | [Брокеры сообщений](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) |
+| [RabbitMQ](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118) | [RabbitMQ — работа с очередями](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122) |
+| [Kafka](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119) | [Apache Kafka — потоковая обработка](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123) |
+| [Справочник по SOAP](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201) | [Протокол SOAP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/126) |
+| [Реализация интеграции](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121) | [Реализация интеграционных решений](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/125) |
 
 <DocCardList />
 

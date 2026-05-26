@@ -220,6 +220,11 @@ slug: /section/project
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/114">7.06. Архитектурные паттерны</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115">7.06. Паттерны интеграции</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/116">7.06. Паттерны доменного моделирования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/117">7.06. Паттерн «Стратегия» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/118">7.06. Паттерн «Итератор» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/119">7.06. Паттерн «Фабрика» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/120">7.06. Паттерн «Команда» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/121">7.06. Паттерн «Наблюдатель» в C#</a></li>
   </ul>
   </li>
   

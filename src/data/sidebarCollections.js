@@ -339,6 +339,7 @@ export const SIDEBAR_COLLECTIONS = [
       'encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112',
       'encyclopedia/7-project/7-04-analitika/111',
       'encyclopedia/7-project/7-04-analitika/intro',
+      'encyclopedia/7-project/7-04-analitika/130',
       'encyclopedia/2-system-network/2-02-platformy/3',
       'encyclopedia/2-system-network/2-02-platformy/3001',
       'encyclopedia/2-system-network/2-02-platformy/3002',

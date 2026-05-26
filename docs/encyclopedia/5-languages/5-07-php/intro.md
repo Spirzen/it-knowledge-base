@@ -37,7 +37,7 @@ PHP выполняется **на сервере**: браузер получа�
 ### Рекомендуемая траектория для новичка
 
 1. [Первая программа](/encyclopedia/5-languages/5-07-php/13) → синтаксис и типы (`14`–`17`, `152`, `153`)
-2. [Данные со страницы](/encyclopedia/5-languages/5-07-php/151) → [сессии](/encyclopedia/5-languages/5-07-php/155)
+2. [Данные со страницы](/encyclopedia/5-languages/5-07-php/151) → [загрузка файлов и валидация](/encyclopedia/5-languages/5-07-php/162) → [сессии](/encyclopedia/5-languages/5-07-php/155)
 3. [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) (по желанию) → [ООП в PHP](/encyclopedia/5-languages/5-07-php/18) → [пространства имён](/encyclopedia/5-languages/5-07-php/157) → [enum, readonly, атрибуты](/encyclopedia/5-languages/5-07-php/158)
 4. [Исключения в коде](/encyclopedia/5-languages/5-07-php/159) и [иерархия типов](/encyclopedia/5-languages/5-07-php/181)
 5. [PDO](/encyclopedia/5-languages/5-07-php/160) → [форма и запись в БД](/encyclopedia/5-languages/5-07-php/161) → при необходимости [полный раздел по БД](/encyclopedia/5-languages/5-07-php/20)

@@ -31,7 +31,7 @@ import DocCardList from '@theme/DocCardList';
 |-----|----------|
 | 1 | [Архитектура десктопных приложений](./1.md) — окно, UI-поток, события |
 | 2 | [Особенности разработки](./112.md) — многопоточность, ресурсы |
-| 3 | Стек по языку | Python: [Tkinter](/encyclopedia/5-languages/5-02-python/3111) · C#: [MAUI](/encyclopedia/5-languages/5-05-csharp/4513) · C++: [Qt](/encyclopedia/5-languages/5-06-cpp/2731) · JS: [Electron](./114.md) |
+| 3 | Стек по языку | Python: [Tkinter](/encyclopedia/5-languages/5-02-python/3111) · C#: [WPF с нуля](./119.md) · [MAUI](/encyclopedia/5-languages/5-05-csharp/4513) · C++: [Qt](/encyclopedia/5-languages/5-06-cpp/2731) · JS: [Electron](./114.md) |
 
 ---
 
@@ -48,7 +48,7 @@ import DocCardList from '@theme/DocCardList';
 ### Что попробовать после intro
 
 1. Откройте [архитектуру](./1.md) и пройдите симулятор окна.
-2. Выберите один стек: [Electron](./114.md) *или* [Python Tkinter](/encyclopedia/5-languages/5-02-python/3111) *или* [Qt](/encyclopedia/5-languages/5-06-cpp/2731).
+2. Выберите один стек: [WPF с нуля](./119.md) *или* [Electron](./114.md) *или* [Python Tkinter](/encyclopedia/5-languages/5-02-python/3111) *или* [Qt](/encyclopedia/5-languages/5-06-cpp/2731).
 3. Прочитайте [112](./112.md) про UI-поток — применимо ко всем стекам.
 
 ---

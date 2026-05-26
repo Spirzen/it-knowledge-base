@@ -27,6 +27,10 @@ HTML — **каркас** страницы: заголовки, абзацы, с
 
 > **Логика на странице** (вызов функций, обработчики событий): [функции в коде](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4), практика — [JavaScript](/encyclopedia/5-languages/5-01-javascript/15).
 
+> **Локализация в HTML:** для мультиязычных страниц сразу закладывайте `lang`, при смешении направлений письма применяйте `dir`, а для служебных фрагментов (`бренды`, `команды`, `код`) используйте `translate="no"`.
+
+> **Ускорение навигации:** `<script type="speculationrules">` (Speculation Rules API) позволяет заранее готовить следующую страницу — переход по ссылке ощущается заметно быстрее.
+
 <BeginnerWebStackHub defaultTab="html" />
 
 <WebPageLayersPlay />

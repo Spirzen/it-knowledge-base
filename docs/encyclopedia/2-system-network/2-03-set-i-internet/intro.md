@@ -33,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 | 2. Имена и протоколы | [3](./3.md), [4](./4.md), [6](./6.md) | URI/URL, OSI, TCP/UDP, HTTP, DNS |
 | 3. Практика веба | [5](./5.md), [11](./11.md), [7](./7.md) | Загрузка сайта, HTTPS, cookie и кэш |
 | 4. Инфраструктура | [21](./21.md), [211](./211.md), [212](./212.md) | Устройства, магистрали, CDN |
-| 5. Углубление | [8](./8.md), [41](./41.md), [611](./611.md) | HTTP/2–3, справочники, IP-таблицы |
+| 5. Углубление | [8](./8.md), [41](./41.md), [611](./611.md), [база по HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) | HTTP/2–3, справочники, IP-таблицы |
 
 Опционально: [71](./71.md) (Wi‑Fi, Bluetooth, LTE), [91](./91.md) (регулирование), [613](./613.md)–[617](./617.md) (VPN, прокси, мониторинг).
 
@@ -62,3 +62,10 @@ import DocCardList from '@theme/DocCardList';
 {/* /sidebar-collections */}
 
 ---
+---
+
+<!-- http-basics-link -->
+:::tip Основа по протоколу
+Базовый разбор HTTP и HTTPS находится в отдельной статье — [HTTP как основа веб-интеграций](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118).
+:::
+

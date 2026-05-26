@@ -686,6 +686,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/3">1.30. Аббревиатуры и сокращения в IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/4">1.30. Англицизмы в русскоязычной IT-среде</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/41">1.30. Изучение английского языка с помощью ИИ</a></li>
+  <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/5">1.30. Практикум — чтение технической документации</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/998">1.30. Итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/999">1.30. Чек-лист самопроверки</a></li>
   </ul>
@@ -991,6 +992,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/125">2.09. Реализация интеграционных решений</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/126">2.09. Протокол SOAP</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/128">2.09. OData — протокол открытых данных</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129">2.09. Redis в интеграции и кэшировании</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/127">2.09. Современные интеграционные фреймворки</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/998">2.09. Итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/999">2.09. Чек-лист самопроверки</a></li>
@@ -1836,6 +1838,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/41">5.01. Объектная модель браузера (BOM)</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/42">5.01. Чтение файлов в браузере</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/43">5.01. Web Components — Custom Elements и Shadow DOM</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/44">5.01. Кнопка «Поделиться» — DOM, события и Web Share API</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/121">5.01. Ключевые слова языка JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/122">5.01. Встроенные функции JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/35">5.01. Регулярные выражения в JavaScript</a></li>
@@ -3259,6 +3262,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/21">7.06. Проектирование распределенных систем</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116">7.06. Проектирование баз данных</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117">7.06. Проектирование API и интеграций</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1171">7.06. Публичный API, OAuth 2.0 и webhooks</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1172">7.06. mTLS, JWS-подпись webhooks и AsyncAPI с outbox</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118">7.06. Паттерны микросервисной архитектуры</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/119">7.06. Проектирование веб-разработки</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/211">7.06. Хранилища DWH и ETL-процессы</a></li>
@@ -3320,6 +3325,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/114">7.06. Архитектурные паттерны</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115">7.06. Паттерны интеграции внешних систем</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/116">7.06. Паттерны проектирования доменных моделей</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/117">7.06. Паттерн «Стратегия» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/118">7.06. Паттерн «Итератор» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/119">7.06. Паттерн «Фабрика» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/120">7.06. Паттерн «Команда» в C#</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/121">7.06. Паттерн «Наблюдатель» в C#</a></li>
   </ul>
   </li>
 
@@ -3555,6 +3565,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/2113">8.04. GitLab CI</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3111">8.04. Справочник по Ansible</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3112">8.04. Справочник по Nginx</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125">8.04. Справочник по Apache HTTP Server</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3113">8.04. Справочник по GitHub Actions</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114">8.04. Справочник по Jenkins</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115">8.04. Справочник по Prometheus</a></li>

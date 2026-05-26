@@ -3,6 +3,8 @@ title: Основы интеграционного взаимодействия 
 description: "Подборка материалов раздела Основы интеграционного взаимодействия в энциклопедии Вселенная IT."
 sidebar_label: Основы интеграционного взаимодействия — о разделе
 related:
+  - title: "Микросервисы и интеграция — о разделе"
+    doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
   - title: "Основы информационной безопасности — о разделе"
     doc: encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro
   - title: "NAT и проброс портов"
@@ -31,8 +33,26 @@ import DocCardList from '@theme/DocCardList';
 
 1. [Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1) — термины, контракт, зачем всё это.
 2. [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) и [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) — основа веб-интеграций.
-3. [Postman и curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) — ручная проверка запросов.
-4. [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) — когда HTTP "здесь и сейчас" недостаточно.
+3. [Проектирование API и интеграций](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117) — три сквозных примера (B2B REST, OAuth/webhooks, mTLS/JWS/AsyncAPI/outbox) и маршрут по главам.
+4. [Postman и curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) — ручная проверка запросов.
+5. [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), [RabbitMQ](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122), [Kafka](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123), [Redis в интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129) — когда HTTP «здесь и сейчас» недостаточно.
+
+---
+
+## Связанные разделы
+
+Те же темы с акцентом на микросервисы, масштабирование и продакшен — в [Микросервисы и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro) (блок «Инфраструктура и безопасность»). Здесь — базовые понятия, контракты и протоколы; там — архитектура MSA, балансировка, практические кейсы и справочники по инструментам.
+
+| Основы (этот раздел) | Углубление (раздел 8) |
+| --- | --- |
+| [Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1) | [Коммуникация и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113) |
+| [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111) | [Синхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115), [асинхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114) и [реактивная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) коммуникация |
+| [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) | [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [проектирование API](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122) |
+| [Брокеры сообщений](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) | [Брокеры сообщений](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117) |
+| [RabbitMQ](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122) | [RabbitMQ](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118), [справочник](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1204) |
+| [Apache Kafka](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123) | [Kafka](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119), [справочник](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1205) |
+| [Протокол SOAP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/126) | [Справочник по SOAP](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201) |
+| [Реализация интеграционных решений](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/125) | [Реализация интеграции](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121) |
 
 <DocCardList />
 
@@ -52,7 +72,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Системная аналитика** — [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Техническое письмо — о разделе](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro), [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro).
 
-Также: Тестирование ПО, Инфобез, DevOps и инфраструктура.
+Также: Тестирование ПО, Инфобез, [DevOps и инфраструктура](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro).
 
 {/* /sidebar-collections */}
 

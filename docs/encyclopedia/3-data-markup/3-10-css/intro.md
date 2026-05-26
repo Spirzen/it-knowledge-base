@@ -26,7 +26,7 @@ CSS описывает **внешний вид** разметки HTML: цвет
 
 > **Перед селекторами:** [Операторы](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/33) — оператор, операнд и приоритет; в CSS ту же роль выполняют селекторы, комбинаторы и псевдоклассы.
 
-> **Функции в значениях** (`calc()`, `var()`): [справочник CSS](./71.md); базовая модель именованного вычисления — [функции в коде](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4).
+> **Функции в CSS** (`calc()`, `var()`, `:where()`, `:has()`): [обзор и практика](./119.md), [справочник](./71.md#функции-css); базовая модель именованного вычисления — [функции в коде](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4).
 
 <BeginnerWebStackHub defaultTab="css" />
 

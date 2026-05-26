@@ -25,6 +25,10 @@ import DocCardList from '@theme/DocCardList';
 
 > **Смежно:** [Основы работы с Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) · [Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro)
 
+**База в разделе 4.13 (с чего начать новичку):** [как работать с Git — add, commit, push](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112) · [ветки, merge, pull request / merge request](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113) · [рекомендации в команде](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/114) · [типовые ситуации и восстановление](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1141).
+
+Ниже в **8.03** — материалы про сохранность кода, устройство Git и гигиену репозитория; они опираются на ту же базу, но идут глубже в инфраструктуру и процессы.
+
 ---
 
 ## Рекомендуемый порядок

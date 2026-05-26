@@ -52,7 +52,7 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 
 ### Бизнес-аналитик
 
-[113](/encyclopedia/7-project/7-04-analitika/113) → [124](/encyclopedia/7-project/7-04-analitika/124) → [116](/encyclopedia/7-project/7-04-analitika/116) → [117](/encyclopedia/7-project/7-04-analitika/117) → [127](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [121](/encyclopedia/7-project/7-04-analitika/121).
+[113](/encyclopedia/7-project/7-04-analitika/113) → [124](/encyclopedia/7-project/7-04-analitika/124) → [129](/encyclopedia/7-project/7-04-analitika/129) → [130](/encyclopedia/7-project/7-04-analitika/130) → [116](/encyclopedia/7-project/7-04-analitika/116) → [117](/encyclopedia/7-project/7-04-analitika/117) → [127](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [121](/encyclopedia/7-project/7-04-analitika/121).
 
 ---
 

@@ -127,6 +127,7 @@ mindmap
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3">8.04. Справочник по Terraform</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3111">8.04. Справочник по Ansible</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3112">8.04. Справочник по Nginx</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125">8.04. Справочник по Apache HTTP Server</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3113">8.04. Справочник по GitHub Actions</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114">8.04. Справочник по Jenkins</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115">8.04. Справочник по Prometheus</a></li>

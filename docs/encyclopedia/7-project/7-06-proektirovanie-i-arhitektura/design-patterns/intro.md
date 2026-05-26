@@ -49,6 +49,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 1. [Обзор](1.md) · [порождающие](111.md) · [структурные](112.md) · [поведенческие](113.md)
 2. [Архитектурные](114.md) · [интеграции](115.md) · [доменные](116.md)
+3. Углубление — [Стратегия в C#](117.md) (`Func` / интерфейс / DI), [Итератор в C#](118.md) (`yield return` / LINQ), [Фабрика в C#](119.md) (Abstract Factory / DI / keyed services), [Команда в C#](120.md) (`ICommand` / MediatR), [Наблюдатель в C#](121.md) (`event` / `IObservable`)
 
 Каркас системы: [design/intro.md](../design/intro.md) · [NFR](../design/1116.md).
 

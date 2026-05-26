@@ -50,21 +50,22 @@ import DocCardList from '@theme/DocCardList';
 
 ### Данные, API, масштаб
 
-3. [БД](116.md) · [API и интеграции](117.md) · [Ричардсон](212.md)
-4. [Масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA](2135.md) · [распределённые системы](21.md)
+3. [БД](116.md) · [API и интеграции](117.md) (три сквозных примера и маршрут) · [OAuth и webhooks](1171.md) · [mTLS, JWS, AsyncAPI, outbox](1172.md) · [Ричардсон](212.md) · [идемпотентность](213.md)
+4. [OpenAPI](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3) · [REST в инфраструктуре](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) · [ввод по API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117)
+5. [Масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA](2135.md) · [распределённые системы](21.md)
 
 ---
 
 ### Стили и эволюция
 
-5. [Модульный монолит](2126.md) · [события](2127.md) · [CQRS](2122.md) · [Saga](2124.md) · [Strangler](2125.md)
-6. [Микросервисные паттерны](118.md) · [веб](119.md) · [GRASP и ADR](2139.md)
+6. [Модульный монолит](2126.md) · [события](2127.md) · [CQRS](2122.md) · [Saga](2124.md) · [Strangler](2125.md)
+7. [Микросервисные паттерны](118.md) · [веб](119.md) · [GRASP и ADR](2139.md)
 
 ---
 
 ### Практика архитектора
 
-7. [Event Storming](2140.md) · [оценка альтернатив](2141.md) · [threat modeling](2142.md)
+8. [Event Storming](2140.md) · [оценка альтернатив](2141.md) · [threat modeling](2142.md)
 
 ---
 
