@@ -189,7 +189,7 @@ function UndefinedBehaviorDemoInner() {
                     </>
                   ) : (
                     <p className={styles.resultDetail} style={{margin: 0}}>
-                      Нажмите «Запустить снова» — один и тот же исходный код может дать разный результат.
+                      Нажмите "Запустить снова" — один и тот же исходный код может дать разный результат.
                     </p>
                   )}
                 </div>
@@ -252,7 +252,7 @@ function UndefinedBehaviorDemoInner() {
               </>
             )}
             <label className={styles.envField} style={{maxWidth: 220, margin: '0.75rem auto 0', display: 'block'}}>
-              <span className="it-demo__label">Размер int (для «зависит от реализации»)</span>
+              <span className="it-demo__label">Размер int (для "зависит от реализации")</span>
               <select
                 className="it-demo__select"
                 value={platformBits}

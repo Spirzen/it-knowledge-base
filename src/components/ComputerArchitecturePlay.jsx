@@ -5,7 +5,7 @@ import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
 import styles from './ComputerArchitecturePlay.module.css';
 
-/** Узлы «кабинета» — метафора из статьи 7.md */
+/** Узлы "кабинета" — метафора из статьи 7.md */
 const NODES = [
   {id: 'bp', label: 'БП', role: 'Свет', icon: '⚡', grid: 'span4'},
   {id: 'mb', label: 'МП', role: 'Начальник', icon: '🎛️'},
@@ -194,7 +194,7 @@ function ComputerArchitecturePlayInner() {
   return (
     <DemoShell className={styles.root}>
       <DemoCard
-        title="Спектакль «Кабинет-компьютер»"
+        title="Спектакль "Кабинет-компьютер""
         subtitle="Включите свет и пройдите все 7 актов — от POST до выключения"
       >
         <div aria-label="Акты спектакля" className={styles.actProgress}>
@@ -292,7 +292,7 @@ function ComputerArchitecturePlayInner() {
         )}
 
         <p className={styles.footer}>
-          Подсвеченные ячейки соответствуют участникам акта из таблицы «Спектакль» в статье
+          Подсвеченные ячейки соответствуют участникам акта из таблицы "Спектакль" в статье
         </p>
       </DemoCard>
     </DemoShell>

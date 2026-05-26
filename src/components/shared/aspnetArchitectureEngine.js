@@ -115,7 +115,7 @@ export const REQUEST_SCENARIOS = [
       {spotlight: ['exception', 'routing'], label: 'Middleware до endpoint', detail: 'Routing находит NotesController.Get'},
       {spotlight: ['auth', 'endpoints'], label: 'Авторизация и вызов', detail: '[Authorize] → action method'},
       {spotlight: ['controller', 'services', 'data'], label: 'Сервис и БД', detail: 'INotesService → EF Core → JSON', packet: 'down'},
-      {spotlight: ['httpctx', 'client'], label: 'Ответ 200 OK', detail: 'System.Text.Json; middleware «after»', packet: 'response'},
+      {spotlight: ['httpctx', 'client'], label: 'Ответ 200 OK', detail: 'System.Text.Json; middleware "after"', packet: 'response'},
     ],
   },
   {
@@ -297,5 +297,5 @@ export const META = {
   subtitle:
     'Эволюция стека, путь HTTP-запроса, структура решения, NuGet-пакеты и модели разработки',
   footer:
-    'ASP.NET Core — не отдельный «веб-сервер», а хост + middleware + выбранная модель (API, Razor, Blazor). Пакеты Microsoft.AspNetCore.* и Extensions.* связывают всё через DI и конфигурацию.',
+    'ASP.NET Core — не отдельный "веб-сервер", а хост + middleware + выбранная модель (API, Razor, Blazor). Пакеты Microsoft.AspNetCore.* и Extensions.* связывают всё через DI и конфигурацию.',
 };

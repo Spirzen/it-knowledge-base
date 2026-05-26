@@ -235,7 +235,7 @@ function EnglishVocabularyTrainerInner() {
   const resetProgress = useCallback(() => {
     if (
       typeof window !== 'undefined' &&
-      !window.confirm('Сбросить прогресс «Знаю» и «Сложные»? Серия и рекорд тоже обнулятся.')
+      !window.confirm('Сбросить прогресс "Знаю" и "Сложные"? Серия и рекорд тоже обнулятся.')
     ) {
       return;
     }

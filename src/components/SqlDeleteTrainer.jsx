@@ -122,7 +122,7 @@ function SqlDeleteTrainerInner() {
       }
       footer={
         <>
-          Удалённые строки не восстанавливаются, кроме кнопки «Сбросить». DELETE без WHERE заблокирован.
+          Удалённые строки не восстанавливаются, кроме кнопки "Сбросить". DELETE без WHERE заблокирован.
         </>
       }
     >
@@ -167,7 +167,7 @@ function SqlDeleteTrainerInner() {
         caption="Таблица users"
         columns={USER_COLUMNS}
         rows={data}
-        emptyMessage="Таблица пуста. Нажмите «Сбросить», чтобы восстановить учебные данные."
+        emptyMessage="Таблица пуста. Нажмите "Сбросить", чтобы восстановить учебные данные."
       />
     </SqlTrainerCard>
   );

@@ -58,7 +58,7 @@ function TechSupportMetricsPlayInner() {
         <div className={styles.detailBox}>
           <p className={styles.detailTitle}>Как читать показатели</p>
           <p className={styles.detailText}>
-            <strong>MTTR</strong> — полное закрытие инцидента; снижать «любой ценой» опасно.
+            <strong>MTTR</strong> — полное закрытие инцидента; снижать "любой ценой" опасно.
             <strong> FRT</strong> — восприятие скорости, даже если решение долгое.
             <strong> CSAT</strong> чувствителен к эмоциям; <strong>NPS</strong> — долгосрочная
             лояльность. <strong>RwE</strong> растёт при сильной базе знаний и обучении L1.

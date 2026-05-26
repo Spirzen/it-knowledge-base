@@ -390,7 +390,7 @@ function ArchiStylerPlayInner({
             />
 
             {classes.length === 0 && (
-              <p className={styles.canvasHint}>Нажмите «+ Класс», затем добавьте свойства и методы в панели ниже</p>
+              <p className={styles.canvasHint}>Нажмите "+ Класс", затем добавьте свойства и методы в панели ниже</p>
             )}
 
             {classes.map((cls) => (
@@ -467,7 +467,7 @@ function ArchiStylerPlayInner({
 
             <div className={styles.memberList}>
               {(selected.members || []).length === 0 ? (
-                <p className={styles.memberEmpty}>Нет членов — кнопки «+ Свойство / Метод / Поле» в панели сверху</p>
+                <p className={styles.memberEmpty}>Нет членов — кнопки "+ Свойство / Метод / Поле" в панели сверху</p>
               ) : (
                 (selected.members || []).map((m, idx) => (
                   <div key={`${m.kind}-${m.name}-${idx}`} className={styles.memberRow}>
@@ -514,7 +514,7 @@ function ArchiStylerPlayInner({
           </div>
         ) : (
           <p className={styles.hint}>
-            Перетаскивайте карточки. «Связать» — от выбранного класса к цели; клик по линии связи — удалить.
+            Перетаскивайте карточки. "Связать" — от выбранного класса к цели; клик по линии связи — удалить.
             Шаблон — в выпадающем списке. Namespace: <code>{namespace}</code>
           </p>
         )}

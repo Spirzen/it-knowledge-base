@@ -51,7 +51,7 @@ function encodeSingleByte(text, label) {
     const code = table.get(ch);
     if (code === undefined) {
       throw new Error(
-        `Символ «${ch}» (U+${text.charCodeAt(i).toString(16).toUpperCase()}) недоступен в ${label}`,
+        `Символ "${ch}" (U+${text.charCodeAt(i).toString(16).toUpperCase()}) недоступен в ${label}`,
       );
     }
     out[i] = code;

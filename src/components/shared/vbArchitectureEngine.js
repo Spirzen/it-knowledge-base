@@ -312,7 +312,7 @@ export const BUILD_STEPS_BY_ERA = {
       id: 'comreg',
       label: 'COM / OCX',
       cmd: 'regsvr32 MSCOMCTL.OCX  ·  ADO в References',
-      detail: 'ActiveX должны быть зарегистрированы. ADO — через «References» к msadoXX.dll; без регистрации типовая библиотека недоступна.',
+      detail: 'ActiveX должны быть зарегистрированы. ADO — через "References" к msadoXX.dll; без регистрации типовая библиотека недоступна.',
     },
     {
       id: 'run',

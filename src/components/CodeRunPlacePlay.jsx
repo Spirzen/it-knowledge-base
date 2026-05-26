@@ -22,7 +22,7 @@ const SCENARIOS = [
         active: ['browser'],
         packet: null,
         label: 'JavaScript меняет страницу',
-        detail: 'Скрипт выполняется в браузере. Сервер в этот момент «молчит».',
+        detail: 'Скрипт выполняется в браузере. Сервер в этот момент "молчит".',
         browserCode: "document.querySelector('h1').textContent = 'Клик!';",
         serverCode: null,
       },
@@ -249,7 +249,7 @@ export function CodeRunPlacePlayInner({embedded = false}) {
 
 export default function CodeRunPlacePlay() {
   return (
-    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо «где выполняется код»…')}>
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо "где выполняется код"…')}>
       {() => <CodeRunPlacePlayInner />}
     </BrowserOnly>
   );

@@ -60,7 +60,7 @@ function ArticlePdfExportInner() {
       console.error('PDF export failed:', err);
       setStatus('idle');
       setError(
-        'Не удалось сформировать PDF автоматически. Открываем диалог печати — выберите «Сохранить как PDF».',
+        'Не удалось сформировать PDF автоматически. Открываем диалог печати — выберите "Сохранить как PDF".',
       );
       printArticleAsPdf();
     }

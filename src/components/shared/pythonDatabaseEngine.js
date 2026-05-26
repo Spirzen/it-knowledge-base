@@ -290,7 +290,7 @@ export const DJANGO_FLOW_SCENARIOS = [
         label: 'commit в транзакции',
         detail: 'Django оборачивает запрос в atomic() по умолчанию',
         packet: 'up',
-        code: '# redirect с сообщением «Сохранено»',
+        code: '# redirect с сообщением "Сохранено"',
       },
     ],
   },

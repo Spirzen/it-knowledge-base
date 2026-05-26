@@ -67,7 +67,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '🏗',
     items: ['*.groovy · buildSrc', 'controllers · services', 'Jenkinsfile · скрипты'],
     detail:
-      'Прикладной код, DSL-правила, тесты Spock и скрипты автоматизации. Структура зависит от Grails, Spring Boot или «голого» Gradle-проекта.',
+      'Прикладной код, DSL-правила, тесты Spock и скрипты автоматизации. Структура зависит от Grails, Spring Boot или "голого" Gradle-проекта.',
   },
 ];
 

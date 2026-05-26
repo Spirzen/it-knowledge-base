@@ -83,7 +83,7 @@ function BusinessPlatformsPlayInner() {
           ))}
         </div>
         <p className={styles.detail}>
-          <strong>{c.nodes[activeNode]}</strong> — элемент цепочки «{c.title}». {c.metric}
+          <strong>{c.nodes[activeNode]}</strong> — элемент цепочки "{c.title}". {c.metric}
         </p>
       </DemoCard>
     </DemoShell>

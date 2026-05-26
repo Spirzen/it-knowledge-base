@@ -1,4 +1,4 @@
-/** Данные интерактивных хронологий подборки «История» */
+/** Данные интерактивных хронологий подборки "История" */
 
 import {SECTION_HISTORIES} from './techHistorySections';
 
@@ -60,7 +60,7 @@ const HISTORIES = {
       {year: 1990, title: 'Витая пара UTP', detail: 'Дешёвый гибкий кабель вытесняет коаксиал; основа офисных LAN.', type: 'ecosystem'},
       {year: 1995, title: 'DSL', detail: 'Цифровой канал по телефонной линии без занятия голосового разговора.', type: 'release'},
       {year: 1998, title: 'Коммутаторы', detail: 'Switch с MAC-таблицей заменяет хабы и устраняет коллизии.', type: 'milestone'},
-      {year: 1990, title: 'Интранет', detail: 'Корпоративные сети с внутренними сервисами — «закрытый интернет» организации.', type: 'ecosystem'},
+      {year: 1990, title: 'Интранет', detail: 'Корпоративные сети с внутренними сервисами — "закрытый интернет" организации.', type: 'ecosystem'},
       {year: null, title: 'Интернет сегодня', detail: 'TCP/IP, оптика, Wi‑Fi, CDN — глобальная инфраструктура сервисов.', type: 'milestone'},
     ],
   },
@@ -109,10 +109,10 @@ const HISTORIES = {
       {year: 2000, title: 'Python 2.0', detail: 'List comprehensions, GC, Unicode — расширение экосистемы.', type: 'release'},
       {year: 2001, title: 'PSF', detail: 'Python Software Foundation координирует язык и сообщество.', type: 'ecosystem'},
       {year: 2008, title: 'Python 3.0', detail: 'Несовместимая чистка языка; долгая миграция с Python 2.', type: 'release'},
-      {year: 2018, title: 'Конец BDFL', detail: 'Гвидо передаёт управление совету; PEP-процесс без «диктатора».', type: 'milestone'},
+      {year: 2018, title: 'Конец BDFL', detail: 'Гвидо передаёт управление совету; PEP-процесс без "диктатора".', type: 'milestone'},
       {year: 2023, title: 'Python 3.12', detail: 'Улучшения perf, typing, f-строк; async ecosystem зрелый.', type: 'release'},
       {year: 2025, title: 'Free-threaded 3.14', detail: 'Опциональный режим без GIL — параллелизм на нескольких ядрах.', type: 'release'},
-      {year: null, title: 'Python сегодня', detail: 'ML, DevOps, веб, автоматизация — универсальный «клей» индустрии.', type: 'milestone'},
+      {year: null, title: 'Python сегодня', detail: 'ML, DevOps, веб, автоматизация — универсальный "клей" индустрии.', type: 'milestone'},
     ],
   },
   go: {
@@ -137,7 +137,7 @@ const HISTORIES = {
     accentColor: '#ED8B00',
     events: [
       {year: 1991, title: 'Green / Oak', detail: 'Джеймс Гослинг — встраиваемые устройства, байт-код, GC.', type: 'origin'},
-      {year: 1996, title: 'Java 1.0', detail: '«Write Once, Run Anywhere»; апплеты и JDK.', type: 'release'},
+      {year: 1996, title: 'Java 1.0', detail: '"Write Once, Run Anywhere"; апплеты и JDK.', type: 'release'},
       {year: 1998, title: 'Java 2', detail: 'J2SE/J2EE/J2ME, Collections, HotSpot JIT.', type: 'release'},
       {year: 2004, title: 'Java 5', detail: 'Generics, аннотации, enum, java.util.concurrent.', type: 'release'},
       {year: 2006, title: 'OpenJDK', detail: 'Открытые исходники под GPL.', type: 'ecosystem'},
@@ -419,7 +419,7 @@ const HISTORIES = {
     tagline: 'От перцептрона к большим языковым моделям',
     accentColor: '#8E44AD',
     events: [
-      {year: 1956, title: 'Dartmouth', detail: 'Термин «искусственный интеллект».', type: 'origin'},
+      {year: 1956, title: 'Dartmouth', detail: 'Термин "искусственный интеллект".', type: 'origin'},
       {year: 1958, title: 'Перцептрон', detail: 'Розенблатт — обучаемый классификатор.', type: 'release'},
       {year: 1969, title: 'Зима ИИ', detail: 'Критика Minsky & Papert снижает финансирование.', type: 'milestone'},
       {year: 1980, title: 'Экспертные системы', detail: 'Правила и базы знаний в промышленности.', type: 'release'},

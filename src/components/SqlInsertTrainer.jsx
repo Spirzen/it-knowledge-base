@@ -96,7 +96,7 @@ function parseInsertQuery(sql) {
 
   for (const col of ['name', 'age', 'city', 'salary']) {
     if (!(col in row)) {
-      throw new Error(`Обязательное поле «${col}» отсутствует в запросе`);
+      throw new Error(`Обязательное поле "${col}" отсутствует в запросе`);
     }
   }
 

@@ -81,7 +81,7 @@ export function runDfa(preset, input) {
         char: ch,
         state,
         accept: false,
-        error: `Нет перехода из ${state} по «${ch}»`,
+        error: `Нет перехода из ${state} по "${ch}"`,
       });
       return {steps, final: state, accepted: false, stuck: true};
     }

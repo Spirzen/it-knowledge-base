@@ -22,7 +22,7 @@ const STEPS = [
     title: 'Идентификация',
     subtitle: 'Заявление личности',
     description: 'Пользователь сообщает логин или email — система получает идентификатор.',
-    userAction: '«Я — Timur»',
+    userAction: '"Я — Timur"',
     serverAction: 'Приём username',
     icon: '🆔',
   },

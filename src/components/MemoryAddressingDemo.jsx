@@ -108,7 +108,7 @@ const SCENARIOS = [
         frameA: true,
         frameB: false,
         label: 'Физическая RAM',
-        detail: 'В микросхемах RAM по адресу 0x5000 лежат данные процесса A (например, «Invoice»).',
+        detail: 'В микросхемах RAM по адресу 0x5000 лежат данные процесса A (например, "Invoice").',
       },
       {
         spotlight: ['procB'],
@@ -129,7 +129,7 @@ const SCENARIOS = [
         frameA: false,
         frameB: true,
         label: 'Другой кадр в RAM',
-        detail: 'По физическому 0x8000 — данные B («User profile»). Сбой в A не портит память B.',
+        detail: 'По физическому 0x8000 — данные B ("User profile"). Сбой в A не портит память B.',
       },
     ],
   },
@@ -256,7 +256,7 @@ function VirtualMemoryView({step}) {
             <span>0x1000</span>
           </div>
           <div style={{fontSize: '0.68rem', color: 'var(--ifm-color-content-secondary)'}}>
-            «Invoice.pdf»
+            "Invoice.pdf"
           </div>
         </div>
 
@@ -276,7 +276,7 @@ function VirtualMemoryView({step}) {
             <span>0x1000</span>
           </div>
           <div style={{fontSize: '0.68rem', color: 'var(--ifm-color-content-secondary)'}}>
-            «User profile»
+            "User profile"
           </div>
         </div>
       </div>
@@ -448,7 +448,7 @@ function MemoryAddressingDemoInner() {
 
         <p className={styles.footer}>
           {scenarioId === 'tape'
-            ? 'Кликните по ячейке: адрес — это номер байта, а не «поля» переменной целиком.'
+            ? 'Кликните по ячейке: адрес — это номер байта, а не "поля" переменной целиком.'
             : 'Упрощённая модель из статьи: в реальности добавляются кэш, TLB и защита страниц.'}
         </p>
       </DemoCard>

@@ -1,5 +1,5 @@
 /**
- * Перекрёстные ссылки в «Основах»: только блок related в intro.md (без [[...]] в тексте).
+ * Перекрёстные ссылки в "Основах": только блок related в intro.md (без [[...]] в тексте).
  * Запуск: node scripts/enrich-basics-crosslinks.mjs
  */
 import fs from 'node:fs';
@@ -112,7 +112,7 @@ const INTRO_RELATED = {
   ],
   '1-24-osnovnye-yazyki': [
     {title: 'Фронтенд и бэкенд', doc: 'encyclopedia/1-basics/1-23-frontend-i-bekend/intro'},
-    {title: 'Раздел «Языки»', doc: 'encyclopedia/5-languages/intro'},
+    {title: 'Раздел "Языки"', doc: 'encyclopedia/5-languages/intro'},
   ],
   '1-25-interfeys': [
     {title: 'Софт рядового пользователя', doc: 'encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro'},

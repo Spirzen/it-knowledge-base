@@ -102,7 +102,7 @@ function MarkdownLivePlayInner() {
         </div>
 
         <p className="it-demo__hint" style={{marginTop: '0.75rem', marginBottom: 0}}>
-          Эта энциклопедия (Docusaurus) тоже хранит статьи в Markdown/MDX — тот же принцип «текст → HTML».
+          Эта энциклопедия (Docusaurus) тоже хранит статьи в Markdown/MDX — тот же принцип "текст → HTML".
         </p>
       </DemoCard>
     </DemoShell>

@@ -124,7 +124,7 @@ function OsClassificationPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Классификация ОС"
-        subtitle="По задачам, пользователям и архитектуре — не путать с «семейством» (Windows vs Unix)."
+        subtitle="По задачам, пользователям и архитектуре — не путать с "семейством" (Windows vs Unix)."
       >
         <div className={styles.classGrid}>
           {CLASSIFICATIONS.map((c) => (

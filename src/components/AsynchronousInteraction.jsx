@@ -32,7 +32,7 @@ const STAGES = [
     desc: 'Результат доставляется клиенту через callback, webhook или polling.',
     packetTrack: 1,
     packetReverse: true,
-    log: '← Callback: заказ #1042 — статус «выполнен»',
+    log: '← Callback: заказ #1042 — статус "выполнен"',
     activeNodes: ['server', 'client'],
   },
 ];
@@ -357,7 +357,7 @@ function AsynchronousInteractionInner() {
 
         {phase === 'idle' && (
           <div className="it-demo__alert it-demo__alert--info" style={{marginTop: '1rem'}}>
-            Сравните с синхронным демо выше: здесь клиент не «замирает», пока сервер обрабатывает
+            Сравните с синхронным демо выше: здесь клиент не "замирает", пока сервер обрабатывает
             запрос.
           </div>
         )}

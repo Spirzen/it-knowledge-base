@@ -57,7 +57,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '📦',
     items: ['GetIt · OPM (Lazarus)', 'Horse · mORMot', 'Zeos · Indy'],
     detail:
-      'Delphi: GetIt и .bpl design-time/runtime packages. Lazarus: Online Package Manager. Веб — Horse, Brook; ORM — mORMot, FireDAC. Зависимости фиксируются в .lpi / .dproj, не в едином «npm для Pascal».',
+      'Delphi: GetIt и .bpl design-time/runtime packages. Lazarus: Online Package Manager. Веб — Horse, Brook; ORM — mORMot, FireDAC. Зависимости фиксируются в .lpi / .dproj, не в едином "npm для Pascal".',
   },
   {
     id: 'app',

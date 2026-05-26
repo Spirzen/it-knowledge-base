@@ -23,7 +23,7 @@ function HomepageHeader() {
             <UniverseLogo />
           </Heading>
           <p className="hero__subtitle">
-            <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> «Вселенная IT» — это открытая энциклопедия по информационным технологиям. Бесплатно, без рекламы, без партнёров — только систематизированные знания.
+            <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> "Вселенная IT" — это открытая энциклопедия по информационным технологиям. Бесплатно, без рекламы, без партнёров — только систематизированные знания.
           </p>
           <RandomArticle />
           <div className={styles.heroActions}>

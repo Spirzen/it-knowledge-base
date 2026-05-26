@@ -95,8 +95,8 @@ function KafkaSimulationInner() {
       schedule(() => setBrokerSync(null), 800);
 
       addLog(`✅ ${BROKERS_COUNT} брокера в строю`, 'success');
-      addLog(`Топик «${TOPIC}»: ${PARTITIONS_COUNT} партиции, replication-factor=3`, 'success');
-      addLog('Consumer group «order-processors»: rebalance завершён', 'info');
+      addLog(`Топик "${TOPIC}": ${PARTITIONS_COUNT} партиции, replication-factor=3`, 'success');
+      addLog('Consumer group "order-processors": rebalance завершён', 'info');
       initialPartitions.forEach((p) => {
         const c = initialConsumers.find((consumer) => consumer.assignedPartitionIds.includes(p.id));
         if (c) addLog(`   partition ${p.id} → ${c.id} (leader: broker-${p.leaderBrokerId})`, 'info');
@@ -145,7 +145,7 @@ function KafkaSimulationInner() {
     setActiveConsumerId(targetConsumer.id);
     flashTrack(`partition-${targetPartition.id}`, 1000);
     addLog(
-      `${targetConsumer.id} poll partition ${targetPartition.id} @ offset ${offset} → «${currentMsg.shortId}»`,
+      `${targetConsumer.id} poll partition ${targetPartition.id} @ offset ${offset} → "${currentMsg.shortId}"`,
       'info',
     );
 
@@ -206,8 +206,8 @@ function KafkaSimulationInner() {
     setPhase('ready');
     addLog(
       burst === 3
-        ? `Producer: batch из ${count} записей в топик «${TOPIC}»…`
-        : `Producer → топик «${TOPIC}» (key hash → partition)…`,
+        ? `Producer: batch из ${count} записей в топик "${TOPIC}"…`
+        : `Producer → топик "${TOPIC}" (key hash → partition)…`,
       'info',
     );
     flashTrack('producer-brokers', 900);
@@ -228,7 +228,7 @@ function KafkaSimulationInner() {
           next[partitionIdx].messages.push(msg);
           const brokerId = next[partitionIdx].leaderBrokerId;
           addLog(
-            `✅ «${msg.shortId}» → partition ${partitionIdx} (leader broker-${brokerId}, offset ${next[partitionIdx].nextOffset + next[partitionIdx].messages.length - 1})`,
+            `✅ "${msg.shortId}" → partition ${partitionIdx} (leader broker-${brokerId}, offset ${next[partitionIdx].nextOffset + next[partitionIdx].messages.length - 1})`,
             'success',
           );
           setBrokerSync(brokerId);

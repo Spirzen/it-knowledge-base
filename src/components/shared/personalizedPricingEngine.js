@@ -23,7 +23,7 @@ export const PRICE_SIGNALS = [
     id: 'salary',
     label: 'Недавно пришла зарплата',
     markup: 5,
-    hint: 'Финансовый профиль: «деньги есть»',
+    hint: 'Финансовый профиль: "деньги есть"',
   },
   {
     id: 'iphone',

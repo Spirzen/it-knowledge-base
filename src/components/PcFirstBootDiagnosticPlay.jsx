@@ -74,7 +74,7 @@ function PcFirstBootDiagnosticPlayInner() {
 
         {symptomId === 'post-ok' ? (
           <p className={styles.success}>
-            POST пройден — можно устанавливать ОС. «No boot device» без флешки/диска — норма.
+            POST пройден — можно устанавливать ОС. "No boot device" без флешки/диска — норма.
           </p>
         ) : (
           checks.map((block) => (
@@ -102,8 +102,8 @@ function PcFirstBootDiagnosticPlayInner() {
         )}
 
         <p className={styles.tip}>
-          Если не помогло — минимальная конфигурация (одна RAM, без GPU при iGPU) и повторная сборка «на
-          столе».
+          Если не помогло — минимальная конфигурация (одна RAM, без GPU при iGPU) и повторная сборка "на
+          столе".
         </p>
       </DemoCard>
     </DemoShell>

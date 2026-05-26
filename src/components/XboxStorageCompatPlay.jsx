@@ -34,7 +34,7 @@ function XboxStorageCompatPlayInner() {
     <DemoShell>
       <DemoCard
         title="Xbox Series: внешний диск"
-        subtitle="Симулятор полей Gen и ConsoleType из «Сведения о файле»"
+        subtitle="Симулятор полей Gen и ConsoleType из "Сведения о файле""
       >
         <div className={styles.fieldGrid2}>
           <div className={styles.field}>

@@ -193,7 +193,7 @@ function JsEcosystemPlayInner() {
                   checked={enabledNodes.has('reports')}
                   onChange={(e) => toggleReports(e.target.checked)}
                 />
-                Раздел «Отчёты» (lazy import)
+                Раздел "Отчёты" (lazy import)
               </label>
             </div>
             <div className={styles.graphLegend}>

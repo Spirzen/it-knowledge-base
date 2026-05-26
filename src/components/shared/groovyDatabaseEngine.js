@@ -184,7 +184,7 @@ export const FLOW_SCENARIOS = [
       {
         spotlight: ['app', 'gorm'],
         label: 'book.id заполнен',
-        detail: 'Объект «привязан» к строке — можно update/delete',
+        detail: 'Объект "привязан" к строке — можно update/delete',
         packet: 'up',
         code: 'assert book.id != null',
       },

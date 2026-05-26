@@ -57,7 +57,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '⚙',
     items: ['Django · Flask · FastAPI', 'PyQt · Tkinter · Kivy', 'NumPy · PyTorch · pandas'],
     detail:
-      'Фреймворк задаёт архитектуру: Django «всё включено», Flask — минимализм, FastAPI — ASGI и типизация. Библиотеки подключаются точечно.',
+      'Фреймворк задаёт архитектуру: Django "всё включено", Flask — минимализм, FastAPI — ASGI и типизация. Библиотеки подключаются точечно.',
   },
   {
     id: 'app',

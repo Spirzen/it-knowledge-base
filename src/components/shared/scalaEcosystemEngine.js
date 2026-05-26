@@ -57,7 +57,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '🏗',
     items: ['Play Framework', 'Akka · Pekko', 'Apache Spark', 'http4s · tapir'],
     detail:
-      'Фреймворки задают каркас: Play — MVC/REST на JVM, Akka/Pekko — акторы и стриминг, Spark — распределённая аналитика. http4s/tapir — «чистый» FP-стек поверх Cats Effect.',
+      'Фреймворки задают каркас: Play — MVC/REST на JVM, Akka/Pekko — акторы и стриминг, Spark — распределённая аналитика. http4s/tapir — "чистый" FP-стек поверх Cats Effect.',
   },
   {
     id: 'app',

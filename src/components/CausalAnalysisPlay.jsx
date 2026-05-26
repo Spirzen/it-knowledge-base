@@ -28,7 +28,7 @@ function CausalAnalysisPlayInner() {
 
   return (
     <DemoShell>
-      <DemoCard title="Причинно-следственный анализ" subtitle="5 «Почему» и категории диаграммы Исикавы">
+      <DemoCard title="Причинно-следственный анализ" subtitle="5 "Почему" и категории диаграммы Исикавы">
         <div className={toolStyles.chips} style={{marginBottom: '0.65rem'}}>
           <button
             type="button"
@@ -64,7 +64,7 @@ function CausalAnalysisPlayInner() {
               disabled={whyIdx >= DEFAULT_WHYS.length - 1}
               onClick={() => setWhyIdx((i) => Math.min(i + 1, DEFAULT_WHYS.length - 1))}
             >
-              {whyIdx >= DEFAULT_WHYS.length - 1 ? 'Корневая причина найдена' : 'Следующее «почему»'}
+              {whyIdx >= DEFAULT_WHYS.length - 1 ? 'Корневая причина найдена' : 'Следующее "почему"'}
             </button>
           </>
         ) : (

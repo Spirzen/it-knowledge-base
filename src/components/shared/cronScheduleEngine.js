@@ -41,7 +41,7 @@ export const CRON_PRESETS = [
     id: 'sunday',
     label: 'Воскресенье 03:00',
     parts: ['0', '3', '*', '*', '0'],
-    hint: 'Тяжёлые задачи в «тихое» окно',
+    hint: 'Тяжёлые задачи в "тихое" окно',
     cmd: 'vacuumdb --all',
   },
 ];

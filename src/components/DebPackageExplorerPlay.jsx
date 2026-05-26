@@ -58,7 +58,7 @@ function DebPackageExplorerPlayInner() {
           {layerId === 'deb' && (
             <ul>
               <li>
-                <strong>debian-binary</strong> → «2.0»
+                <strong>debian-binary</strong> → "2.0"
               </li>
               <li>
                 <strong>control.tar.gz</strong> — метаданные, скрипты

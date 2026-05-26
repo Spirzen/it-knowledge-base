@@ -269,7 +269,7 @@ function TypingSpeedTrainerPlayInner() {
           aria-label="Поле для набора текста"
           placeholder={
             phase === 'idle'
-              ? 'Нажмите «Начать» или начните печатать…'
+              ? 'Нажмите "Начать" или начните печатать…'
               : 'Печатайте текст выше посимвольно…'
           }
           spellCheck={false}

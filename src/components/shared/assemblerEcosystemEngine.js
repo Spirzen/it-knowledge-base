@@ -231,7 +231,7 @@ export const BUILD_STEPS = [
     id: 'inspect',
     label: 'Анализ',
     cmd: 'readelf -h calc          # заголовок ELF\nreadelf -S calc          # секции .text .data .bss\nnm -u calc               # неопределённые символы\nobjdump -d -M intel calc   # дизассемблирование\nldd calc                 # libm.so.6, libc.so.6',
-    detail: 'Перед отладкой убедитесь, что символы разрешены (nm без «U» для нужных имён). objdump показывает, как директивы превратились в машинный код.',
+    detail: 'Перед отладкой убедитесь, что символы разрешены (nm без "U" для нужных имён). objdump показывает, как директивы превратились в машинный код.',
   },
   {
     id: 'debug',

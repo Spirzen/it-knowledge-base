@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import useDemoFullscreen from './useDemoFullscreen';
 
-/** Кнопка «во весь экран» для DemoShell и DemoCard. */
+/** Кнопка "во весь экран" для DemoShell и DemoCard. */
 export function DemoFullscreenButton({isFullscreen, onToggle, className}) {
   return (
     <button

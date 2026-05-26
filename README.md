@@ -5,7 +5,7 @@
 ### Варианты использования
 
 1. Готовый сайт проекта — [spirzen.ru](https://spirzen.ru/)
-2. Мобильное приложение для Android — APK на [главной](https://spirzen.ru/) (кнопка «Скачать APK») или напрямую: [spirzen.ru/downloads/it-universe.apk](https://spirzen.ru/downloads/it-universe.apk)
+2. Мобильное приложение для Android — APK на [главной](https://spirzen.ru/) (кнопка "Скачать APK") или напрямую: [spirzen.ru/downloads/it-universe.apk](https://spirzen.ru/downloads/it-universe.apk)
 3. Локальная (оффлайн) версия — `git clone`, `npm install`, `npm start`.
 
 Для офлайн-сборки желательно:
@@ -42,7 +42,7 @@
 
 | Компонент / модуль | Назначение |
 |--------------------|------------|
-| `src/theme/DocItem/Layout` | Прогресс главы, кликабельные теги, PDF, блок «См. также» |
+| `src/theme/DocItem/Layout` | Прогресс главы, кликабельные теги, PDF, блок "См. также" |
 | `src/components/ArticleSeeAlso.jsx` | Карточки соседних статей раздела (`DocCardList` + sidebar) |
 | `src/components/ArticlePdfExport.jsx` | Экспорт статьи в PDF |
 | `src/components/shared/DemoShell.jsx` | Оболочка интерактивных демо |
@@ -91,7 +91,7 @@ it-knowledge-base/
 8. **Инфраструктура и безопасность** — DevOps, облака, контейнеры, ИБ  
 9. **Спин-офф** — смежные темы  
 
-В конце статей (кроме `intro`) автоматически выводится блок **«См. также»** — до 12 карточек соседних материалов из того же раздела sidebar, как на страницах «о разделе».
+В конце статей (кроме `intro`) автоматически выводится блок **"См. также"** — до 12 карточек соседних материалов из того же раздела sidebar, как на страницах "о разделе".
 
 ---
 
@@ -115,7 +115,7 @@ npm run serve          # просмотр build/
 npm run clear          # сброс кэша Docusaurus
 
 npm run docs:demo-registry   # обновить info/demo-registry.md
-npm run docs:collection-titles  # заголовки статей для блока «С чего начать?» на главной
+npm run docs:collection-titles  # заголовки статей для блока "С чего начать?" на главной
 ```
 
 Сборка создаёт каталог `build/` — полностью статический сайт без backend.
@@ -147,7 +147,7 @@ npm run docs:collection-titles  # заголовки статей для бло�
 title: Операционная система
 sidebar_label: ОС
 tags: [beginner, required, developer]
-see_also: false          # отключить блок «См. также»
+see_also: false          # отключить блок "См. также"
 pdf_export: false        # скрыть кнопку PDF
 hide_table_of_contents: true
 ---
@@ -197,4 +197,4 @@ import TestingBasicsDemo from '@site/src/components/TestingBasicsDemo.jsx';
 
 ---
 
-*«Вселенная IT» — не обучалка и не блог, а попытка выстроить целостную модель IT-дисциплины.*
+*"Вселенная IT" — не обучалка и не блог, а попытка выстроить целостную модель IT-дисциплины.*

@@ -28,7 +28,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '🌳',
     items: ['GenServer · Supervisor', 'Application · Agent', 'Task · Registry'],
     detail:
-      'Open Telecom Platform задаёт контракты: сервер с состоянием, дерево супервизии, жизненный цикл приложения. «Let it crash» + перезапуск дочерних процессов.',
+      'Open Telecom Platform задаёт контракты: сервер с состоянием, дерево супервизии, жизненный цикл приложения. "Let it crash" + перезапуск дочерних процессов.',
   },
   {
     id: 'elixir',

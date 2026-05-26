@@ -86,7 +86,7 @@ function RabbitMQSimulationInner() {
 
       setActiveConsumer(consumerId);
       flashTrack('queue-consumer', 1100);
-      addLog(`${consumerName} получает «${msg.shortId}» (prefetch=1)…`, 'info');
+      addLog(`${consumerName} получает "${msg.shortId}" (prefetch=1)…`, 'info');
 
       const processing = prev.map((item, i) =>
         i === idx ? {...item, status: 'processing', consumerId} : item,
@@ -106,7 +106,7 @@ function RabbitMQSimulationInner() {
           }, 400);
           return next;
         });
-        addLog(`✅ ${consumerName}: ACK для «${msg.shortId}»`, 'success');
+        addLog(`✅ ${consumerName}: ACK для "${msg.shortId}"`, 'success');
         setProcessedCount((c) => c + 1);
         setActiveConsumer(null);
         busyRef.current = false;
@@ -139,7 +139,7 @@ function RabbitMQSimulationInner() {
     addLog(
       burst === 3
         ? 'Producer: пакет из 3 сообщений → Exchange direct…'
-        : 'Producer → Exchange «orders.direct» (routing key: orders)…',
+        : 'Producer → Exchange "orders.direct" (routing key: orders)…',
       'info',
     );
     flashTrack('producer-exchange', 900);
@@ -158,7 +158,7 @@ function RabbitMQSimulationInner() {
     schedule(() => {
       setQueueItems((prev) => [...prev, ...newItems]);
       newItems.forEach((m) =>
-        addLog(`📥 «${m.shortId}» в очереди orders (${m.content})`, 'success'),
+        addLog(`📥 "${m.shortId}" в очереди orders (${m.content})`, 'success'),
       );
       schedule(processNext, 600);
     }, 1000);

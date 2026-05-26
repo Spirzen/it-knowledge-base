@@ -82,7 +82,7 @@ function AlgoCodeVisualizerInner() {
     <DemoShell>
       <DemoCard
         title="Алгоритм и код"
-        subtitle="Сопоставьте шаги «человеческого» алгоритма с инструкциями для машины"
+        subtitle="Сопоставьте шаги "человеческого" алгоритма с инструкциями для машины"
       >
         <div className={styles.scenarioBar}>
           {Object.entries(SCENARIOS).map(([key, s]) => (

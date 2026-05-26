@@ -2,7 +2,7 @@ export const MERGE_SCENARIOS = [
   {
     id: 'fast-forward',
     label: 'Fast-forward',
-    hint: 'main просто «переезжает» на tip feature — история линейная',
+    hint: 'main просто "переезжает" на tip feature — история линейная',
   },
   {
     id: 'merge-commit',

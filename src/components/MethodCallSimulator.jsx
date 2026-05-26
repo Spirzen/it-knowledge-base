@@ -102,7 +102,7 @@ function MethodCallSimulatorInner() {
                 )}
                 onClick={() => jumpToPhase(p.id)}
                 disabled={busy || done}
-                title={`Перейти к фазе «${p.label}»`}
+                title={`Перейти к фазе "${p.label}"`}
               >
                 {p.label}
               </button>

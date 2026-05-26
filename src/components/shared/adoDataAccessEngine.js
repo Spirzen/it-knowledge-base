@@ -104,7 +104,7 @@ export const OBJECT_STEPS_DOTNET = [
   {
     id: 'reader',
     label: 'ExecuteReader → SqlDataReader',
-    detail: 'Потоковое чтение «только вперёд»; меньше памяти, чем Recordset',
+    detail: 'Потоковое чтение "только вперёд"; меньше памяти, чем Recordset',
     active: ['command', 'reader'],
     code: 'await using var reader = await cmd.ExecuteReaderAsync();\nwhile (await reader.ReadAsync()) { ... }',
   },

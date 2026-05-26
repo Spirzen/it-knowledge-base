@@ -32,7 +32,7 @@ const STAGES = [
     id: 'response',
     label: 'Ответ',
     duration: 1400,
-    desc: 'Сервер возвращает результат по тому же каналу — цикл «запрос–ответ» завершён.',
+    desc: 'Сервер возвращает результат по тому же каналу — цикл "запрос–ответ" завершён.',
     packetTrack: 0,
     packetReverse: true,
     log: '← 200 OK — JSON 1.2 KB получен клиентом',
@@ -164,7 +164,7 @@ function RequestResponseModelInner() {
   return (
     <DemoShell className={flowStyles.root}>
       <DemoCard
-        title="Модель «Запрос — ответ»"
+        title="Модель "Запрос — ответ""
         subtitle="Синхронный обмен: клиент ждёт ответ в рамках одного HTTP-цикла."
       >
         <div className={flowStyles.diagram}>
@@ -274,7 +274,7 @@ function RequestResponseModelInner() {
 
 export default function RequestResponseModel() {
   return (
-    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо «Запрос — ответ»…')}>
+    <BrowserOnly fallback={demoLoadingFallback('Загрузка демо "Запрос — ответ"…')}>
       {() => <RequestResponseModelInner />}
     </BrowserOnly>
   );

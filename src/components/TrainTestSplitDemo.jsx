@@ -35,7 +35,7 @@ function TrainTestSplitDemoInner() {
 
   const overfitHint =
     counts.train >= 5 && counts.test <= 1
-      ? 'Мало test — риск переобучения: модель «запомнит» train.'
+      ? 'Мало test — риск переобучения: модель "запомнит" train.'
       : counts.test >= 2
         ? 'Есть test-выборка — можно честно оценить обобщение.'
         : 'Кликните точки: train (синий) / test (оранжевый).';

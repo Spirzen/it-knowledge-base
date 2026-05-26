@@ -44,7 +44,7 @@ function GameIndustryHubInner() {
         <div className={styles.layerDetail} style={{'--layer-color': layer.color}}>
           <span className={styles.layerTag}>{layer.tag}</span>
           <p className={styles.layerTitle}>
-            {layer.icon} Старт с уровня «{layer.label}»
+            {layer.icon} Старт с уровня "{layer.label}"
           </p>
           <p className={styles.hint} style={{marginBottom: 0}}>
             {layer.actors.slice(0, 2).join(', ')}…

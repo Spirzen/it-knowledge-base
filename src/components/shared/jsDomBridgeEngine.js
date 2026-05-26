@@ -1,4 +1,4 @@
-/** Учебная модель DOM для демо «JS ↔ HTML» (статья 102). */
+/** Учебная модель DOM для демо "JS ↔ HTML" (статья 102). */
 
 export const NODE_META = {
   document: {label: '#document', kind: 'root'},
@@ -129,7 +129,7 @@ export const QUERY_PRESETS = [
     code: "document.querySelectorAll('.lead')",
     match: ['p1', 'p2'],
     returns: 'статический NodeList',
-    hint: 'Все совпадения; список не «живой».',
+    hint: 'Все совпадения; список не "живой".',
   },
   {
     id: 'body',

@@ -185,7 +185,7 @@ function KotlinEcosystemPlayInner() {
                   checked={enabledNodes.has('analytics')}
                   onChange={(e) => toggleAnalytics(e.target.checked)}
                 />
-                Feature-модуль «Аналитика»
+                Feature-модуль "Аналитика"
               </label>
             </div>
             <div className={styles.graphLegend}>

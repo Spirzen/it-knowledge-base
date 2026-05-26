@@ -6,10 +6,10 @@ import {demoLoadingFallback} from './shared/demoFallback';
 import styles from './PromptPipelineDemo.module.css';
 
 const STAGES = [
-  {id: 'prompt', title: 'Запрос пользователя', body: '«Объясни bubble sort простыми словами»'},
-  {id: 'context', title: 'Контекст (RAG / system)', body: 'Статья из базы знаний + роль: «ты преподаватель IT»'},
+  {id: 'prompt', title: 'Запрос пользователя', body: '"Объясни bubble sort простыми словами"'},
+  {id: 'context', title: 'Контекст (RAG / system)', body: 'Статья из базы знаний + роль: "ты преподаватель IT"'},
   {id: 'model', title: 'Модель', body: 'Токенизация → attention → генерация токенов'},
-  {id: 'response', title: 'Ответ', body: '«Bubble sort сравнивает соседей и меняет местами…»'},
+  {id: 'response', title: 'Ответ', body: '"Bubble sort сравнивает соседей и меняет местами…"'},
 ];
 
 function PromptPipelineDemoInner() {
@@ -17,7 +17,7 @@ function PromptPipelineDemoInner() {
 
   return (
     <DemoShell className={styles.root}>
-      <DemoCard title="Pipeline LLM-запроса" subtitle="Кликайте «Далее» — пройдите путь от prompt до ответа">
+      <DemoCard title="Pipeline LLM-запроса" subtitle="Кликайте "Далее" — пройдите путь от prompt до ответа">
         <div className={styles.pipeline}>
           {STAGES.map((s, i) => (
             <div

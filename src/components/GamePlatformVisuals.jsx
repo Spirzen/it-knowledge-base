@@ -81,7 +81,7 @@ export function SteamClientVisual() {
               <strong style={{color: '#66c0f4'}}>{view.headline}</strong>
               <p style={{margin: '0.5rem 0 0'}}>{view.hint}</p>
               <p style={{margin: '0.75rem 0 0', fontSize: '0.65rem'}}>
-                Выбрана игра: {game.title} — можно вернуться в «Библиотеку».
+                Выбрана игра: {game.title} — можно вернуться в "Библиотеку".
               </p>
             </div>
           )}

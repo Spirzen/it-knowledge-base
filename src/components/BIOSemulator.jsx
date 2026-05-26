@@ -243,7 +243,7 @@ function BIOSemulatorInner() {
 
   const renderScreen = () => {
     if (state === BIOS_STATE.OFF) {
-      return <div className={styles.screenOff}>Нажмите «ВКЛ/ВЫКЛ» или клавиши на панели</div>;
+      return <div className={styles.screenOff}>Нажмите "ВКЛ/ВЫКЛ" или клавиши на панели</div>;
     }
 
     if (popup) {

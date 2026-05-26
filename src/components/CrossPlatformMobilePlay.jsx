@@ -25,7 +25,7 @@ const STACKS = {
     ecosystem: 'Gradle, KMP в Android Studio, CocoaPods/Xcode',
     link: 'https://developer.android.com/courses/pathways/kotlin-multiplatform',
     pros: ['Поддержка Google и JetBrains', 'Зрелый Android-стек', 'Официальный pathway'],
-    cons: ['iOS-тулчейн сложнее', 'Не «один UI на всех»', 'Кривая обучения Gradle KMP'],
+    cons: ['iOS-тулчейн сложнее', 'Не "один UI на всех"', 'Кривая обучения Gradle KMP'],
   },
 };
 

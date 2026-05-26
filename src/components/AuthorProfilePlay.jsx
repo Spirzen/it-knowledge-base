@@ -54,7 +54,7 @@ function AuthorProfilePlayInner() {
   return (
     <DemoShell className={styles.root}>
       <DemoCard
-        title="Профиль создателя «Вселенная IT»"
+        title="Профиль создателя "Вселенная IT""
         subtitle="Роли в проекте, компетенции и способы поддержки — соберите свой взгляд на автора"
       >
         <div className={styles.hero}>

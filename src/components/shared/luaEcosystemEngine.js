@@ -57,7 +57,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '⚙',
     items: ['LÖVE · Defold · Solar2D', 'OpenResty · ngx_lua', 'Roblox · Neovim'],
     detail:
-      'Движок задаёт цикл (love.load/update/draw), API и упаковку. OpenResty вшивает Lua в Nginx. Roblox предоставляет сервисы и клиент-сервер без «голого» lua на диске.',
+      'Движок задаёт цикл (love.load/update/draw), API и упаковку. OpenResty вшивает Lua в Nginx. Roblox предоставляет сервисы и клиент-сервер без "голого" lua на диске.',
   },
   {
     id: 'app',

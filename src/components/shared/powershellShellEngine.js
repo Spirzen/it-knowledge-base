@@ -180,7 +180,7 @@ function resolveNode(path) {
 
 function listDir(path) {
   const node = resolveNode(path);
-  if (!node || node.type !== 'dir') return {error: `Не удаётся найти путь «${path}»`};
+  if (!node || node.type !== 'dir') return {error: `Не удаётся найти путь "${path}"`};
   return {
     lines: (node.children ?? []).map((name) => {
       const childPath = path.endsWith('\\') ? `${path}${name}` : `${path}\\${name}`;

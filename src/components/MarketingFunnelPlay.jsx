@@ -152,7 +152,7 @@ function MarketingFunnelPlayInner() {
         </div>
 
         <p className="it-demo__hint" style={{marginBottom: 0, marginTop: '0.75rem'}}>
-          Воронка показывает, где «утекают» лиды; BANT отсекает неготовых до дорогой работы отдела продаж.
+          Воронка показывает, где "утекают" лиды; BANT отсекает неготовых до дорогой работы отдела продаж.
         </p>
       </DemoCard>
     </DemoShell>

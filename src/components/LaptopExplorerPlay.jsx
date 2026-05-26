@@ -61,7 +61,7 @@ const TYPES = [
     screen: 'сенсор + перо',
     hz: '120 Гц',
     metrics: {portability: 70, performance: 58, battery: 65, upgrade: 35},
-    chips: ['тач + стилус', 'режим «палатка»', 'Windows / iPadOS', 'компактный SoC'],
+    chips: ['тач + стилус', 'режим "палатка"', 'Windows / iPadOS', 'компактный SoC'],
     hint: 'Сенсор и перо требуют поддержки ОС — без неё это просто экран, который можно крутить.',
     rgb: false,
     touchpad: true,
@@ -70,7 +70,7 @@ const TYPES = [
     id: 'mac',
     label: 'MacBook',
     title: 'MacBook (Apple Silicon)',
-    tagline: 'Высокая интеграция SoC, энергоэффективность и экосистема — минимум совместимости с «чужим» железом.',
+    tagline: 'Высокая интеграция SoC, энергоэффективность и экосистема — минимум совместимости с "чужим" железом.',
     lidA: '#9ca3af',
     lidB: '#6b7280',
     screen: 'Liquid Retina',
@@ -106,7 +106,7 @@ function LaptopExplorerPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Классы ноутбуков"
-        subtitle="Выберите тип — сравните компромиссы и посмотрите, как устроен «книжный» форм-фактор."
+        subtitle="Выберите тип — сравните компромиссы и посмотрите, как устроен "книжный" форм-фактор."
       >
         <div className={styles.tabs}>
           {TYPES.map((t) => (

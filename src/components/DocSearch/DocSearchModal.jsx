@@ -211,7 +211,7 @@ export default function DocSearchModal({open, onClose}) {
               <span className={styles.emptyIcon} aria-hidden>
                 ∅
               </span>
-              <p>Ничего не найдено по запросу «{trimmed}»</p>
+              <p>Ничего не найдено по запросу "{trimmed}"</p>
             </div>
           )}
           {results.length > 0 && (

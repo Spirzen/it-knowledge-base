@@ -410,7 +410,7 @@ export const DEVELOPMENT_PLANS = {
         duration: 'средний шк',
         goal: 'Текстовый код и системы',
         color: '#facc15',
-        milestones: ['Python / Lua intro', 'Git для детей', 'Сети «как интернет»', 'Мини-проект'],
+        milestones: ['Python / Lua intro', 'Git для детей', 'Сети "как интернет"', 'Мини-проект'],
       },
       {
         id: 'iv',

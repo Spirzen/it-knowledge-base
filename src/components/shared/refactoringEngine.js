@@ -7,7 +7,7 @@ export const STEPS = [
     short: 'Хаос',
     technique: 'Запахи кода',
     insight:
-      'Всё в одном файле: дублирование, магические числа, «божественный» метод и мёртвый код. Поведение работает, но менять страшно.',
+      'Всё в одном файле: дублирование, магические числа, "божественный" метод и мёртвый код. Поведение работает, но менять страшно.',
     smells: ['Длинный метод', 'Дублирование', 'Магические числа', 'Мёртвый код', 'Неясные имена'],
     metrics: {files: 2, lines: 186, complexity: 28, duplication: 4, smells: 7},
     defaultFile: 'everything.js',
@@ -35,7 +35,7 @@ export const STEPS = [
     short: 'Имена',
     technique: 'Rename',
     insight:
-      'Переменные и функции отражают предметную область: `calc` → `calculateOrderTotal`, `x` → `lineItems`. Комментарии «что делает код» становятся лишними.',
+      'Переменные и функции отражают предметную область: `calc` → `calculateOrderTotal`, `x` → `lineItems`. Комментарии "что делает код" становятся лишними.',
     smells: ['Дублирование', 'Магические числа', 'Мёртвый код', 'Неясные имена'],
     metrics: {files: 2, lines: 172, complexity: 20, duplication: 3, smells: 4},
     defaultFile: 'src/everything.js',
@@ -61,7 +61,7 @@ export const STEPS = [
     short: 'Класс',
     technique: 'Extract Class',
     insight:
-      'Логика заказа и расчётов перенесены в `Order` и `PricingService`. Файл перестаёт быть «божественным» объектом.',
+      'Логика заказа и расчётов перенесены в `Order` и `PricingService`. Файл перестаёт быть "божественным" объектом.',
     smells: ['Дублирование'],
     metrics: {files: 3, lines: 132, complexity: 12, duplication: 1, smells: 1},
     defaultFile: 'src/domain/Order.js',

@@ -798,7 +798,7 @@ function DatabaseSchemaViewerPlayInner({title, subtitle}) {
                   ◈
                 </span>
                 <p>
-                  Укажите параметры подключения и нажмите «Подключить», либо «Демо SQLite» — появится
+                  Укажите параметры подключения и нажмите "Подключить", либо "Демо SQLite" — появится
                   ER-диаграмма со связями, как в Database Schema Viewer.
                 </p>
               </div>

@@ -17,7 +17,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '💎',
     items: ['Matz · 1995', 'метапрограммирование', 'GVL · GC · JIT (YJIT)'],
     detail:
-      'Интерпретатор исполняет .rb-файлы. Открытые классы и DSL позволяют фреймворкам «расширять» язык (5.days.ago, has_many).',
+      'Интерпретатор исполняет .rb-файлы. Открытые классы и DSL позволяют фреймворкам "расширять" язык (5.days.ago, has_many).',
   },
   {
     id: 'stdlib',
@@ -47,7 +47,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '🔗',
     items: ['call(env) → [status, headers, body]', 'Puma · Unicorn', 'middleware stack'],
     detail:
-      'Единый контракт между веб-сервером и приложением. Rails, Sinatra, Roda — все Rack-приложения; отличаются маршрутизацией и «магией».',
+      'Единый контракт между веб-сервером и приложением. Rails, Sinatra, Roda — все Rack-приложения; отличаются маршрутизацией и "магией".',
   },
   {
     id: 'frameworks',

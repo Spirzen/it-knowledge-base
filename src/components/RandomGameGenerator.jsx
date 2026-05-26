@@ -225,7 +225,7 @@ function RandomGameGeneratorInner() {
           style={{width: '100%', marginBottom: '0.65rem'}}
           placeholder={
             activePreset.terms.length
-              ? `Поиск внутри «${activePreset.label}»…`
+              ? `Поиск внутри "${activePreset.label}"…`
               : 'Фильтр по названию…'
           }
           value={query}

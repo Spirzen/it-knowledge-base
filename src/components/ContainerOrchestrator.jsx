@@ -107,7 +107,7 @@ function ContainerOrchestratorInner() {
             <div className={styles.containers}>
               {containers.length === 0 ? (
                 <span style={{fontSize: '0.85rem', color: 'var(--demo-muted)'}}>
-                  Контейнеры появятся после шага «Запуск»
+                  Контейнеры появятся после шага "Запуск"
                 </span>
               ) : (
                 containers.map((c) => (

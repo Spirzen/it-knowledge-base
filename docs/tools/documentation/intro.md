@@ -12,7 +12,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Страница | Содержание |
 |----------|------------|
-| [Литература](/tools/documentation/1) | Книги по IT-темам, интерактивная «полка» |
+| [Литература](/tools/documentation/1) | Книги по IT-темам, интерактивная "полка" |
 | [Документация](/tools/documentation/2) | Официальные справочники и MDN |
 | [Статьи](/tools/documentation/3) | Блоги, эталонные материалы, дайджест |
 | [Swift на Android](/tools/documentation/4) | Новости кроссплатформы |

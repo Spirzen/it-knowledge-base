@@ -457,13 +457,13 @@ function EventLoopPanel() {
       </div>
 
       <p className={styles.hint}>
-        {current.action === 'sync' && current.log && `Синхронно: вывод «${current.log}».`}
+        {current.action === 'sync' && current.log && `Синхронно: вывод "${current.log}".`}
         {current.action === 'delegate' &&
           'setTimeout делегируется Web API — коллбэк попадёт в macrotask queue после синхронного кода.'}
         {current.action === 'enqueueMicro' &&
           'Promise.then попадает в microtask queue — выполнится раньше macrotask.'}
-        {current.action === 'micro' && `Event Loop опустошает microtasks: «${current.log}».`}
-        {current.action === 'macro' && `Стек свободен — берётся macrotask: «${current.log}».`}
+        {current.action === 'micro' && `Event Loop опустошает microtasks: "${current.log}".`}
+        {current.action === 'macro' && `Стек свободен — берётся macrotask: "${current.log}".`}
       </p>
 
       <div className={styles.controls}>

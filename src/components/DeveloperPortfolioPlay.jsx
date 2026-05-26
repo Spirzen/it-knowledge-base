@@ -90,7 +90,7 @@ function DeveloperPortfolioPlayInner() {
                 </span>
               ))
             ) : (
-              <span className="it-demo__hint">Отметьте хотя бы один проект как «Сделано»</span>
+              <span className="it-demo__hint">Отметьте хотя бы один проект как "Сделано"</span>
             )}
           </div>
         </div>

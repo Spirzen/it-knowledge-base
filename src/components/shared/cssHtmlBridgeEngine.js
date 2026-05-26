@@ -1,4 +1,4 @@
-/** Учебная модель «HTML ↔ CSS» для статьи 3-10-css/111. */
+/** Учебная модель "HTML ↔ CSS" для статьи 3-10-css/111. */
 
 export const ELEMENT_IDS = ['card', 'title', 'lead', 'cta'];
 

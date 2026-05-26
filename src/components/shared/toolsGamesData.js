@@ -148,7 +148,7 @@ export function xboxExternalDriveVerdict(gen, consoleType) {
   }
   return {
     ok: null,
-    title: 'Уточните в «Сведения о файле»',
+    title: 'Уточните в "Сведения о файле"',
     detail: 'Откройте управление игрой → Сведения о файле и сверьте поля Gen и ConsoleType.',
     storage: 'unknown',
   };

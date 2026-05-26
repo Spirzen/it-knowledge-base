@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const basicsDir = path.join(__dirname, '..', 'docs', 'encyclopedia', '1-basics');
 
 const WIKI_RE = /\[\[([^\]|#]+)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]/g;
-/** Остаток после неполного снятия [[...]]: «термин|подпись]]» */
+/** Остаток после неполного снятия [[...]]: "термин|подпись]]" */
 const BROKEN_WIKI_RE = /([а-яёА-ЯЁa-zA-Z][а-яёА-ЯЁa-zA-Z0-9\s-]*)\|([^\]]+)\]\]/g;
 
 /** Порядок важен: сначала длинные фразы */

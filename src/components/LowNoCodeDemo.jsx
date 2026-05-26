@@ -337,7 +337,7 @@ function LowNoCodeDemoInner() {
               {preview ? (
                 <LowCodePreview config={preview} tableSort={tableSort} onSort={handleSort} />
               ) : (
-                <div className={styles.previewEmpty}>Выберите пример или нажмите «Собрать превью»</div>
+                <div className={styles.previewEmpty}>Выберите пример или нажмите "Собрать превью"</div>
               )}
             </div>
           </div>
@@ -456,7 +456,7 @@ function LowNoCodeDemoInner() {
 
       <p className={styles.fact}>
         По оценкам Gartner, к 2025 году до 70% новых приложений создаются с элементами Low-Code/No-Code — цикл
-        «идея → прототип» сокращается с месяцев до недель.
+        "идея → прототип" сокращается с месяцев до недель.
       </p>
     </DemoShell>
   );

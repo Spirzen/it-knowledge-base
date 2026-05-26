@@ -332,7 +332,7 @@ function DockerfileBuilderInner() {
             <h4 style={{margin: '0.85rem 0 0.35rem', fontSize: '0.85rem'}}>Лог сборки</h4>
             <div className="it-demo__log" style={{minHeight: '8rem'}}>
               {buildLogs.length === 0 ? (
-                <span style={{color: 'var(--demo-muted)'}}>Нажмите «docker build» для симуляции</span>
+                <span style={{color: 'var(--demo-muted)'}}>Нажмите "docker build" для симуляции</span>
               ) : (
                 buildLogs.map((log, i) => (
                   <div key={i} className="it-demo__log-entry">

@@ -212,7 +212,7 @@ function RaceConditionDemoInner() {
           <h4 className={styles.panelTitle}>Лог операций</h4>
           <div className={styles.log}>
             {logs.length === 0 ? (
-              <div className={styles.logEmpty}>Нажмите «Запустить», чтобы увидеть пересечение операций</div>
+              <div className={styles.logEmpty}>Нажмите "Запустить", чтобы увидеть пересечение операций</div>
             ) : (
               logs.map((entry) => (
                 <div key={entry.id} className={styles.logLine}>

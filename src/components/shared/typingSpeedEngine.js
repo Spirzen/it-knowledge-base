@@ -56,7 +56,7 @@ export function getDurationById(id) {
   return TYPING_DURATIONS.find((d) => d.id === id) ?? TYPING_DURATIONS[1];
 }
 
-/** Сравнение посимвольно: позиция, ошибки, «лишние» символы после конца эталона. */
+/** Сравнение посимвольно: позиция, ошибки, "лишние" символы после конца эталона. */
 export function analyzeTyping(target, typed) {
   const len = Math.max(target.length, typed.length);
   let correct = 0;

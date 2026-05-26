@@ -39,7 +39,7 @@ function TestingSectionHubInner() {
   return (
     <DemoShell>
       <DemoCard
-        title="Раздел «Тестирование» — интерактивный хаб"
+        title="Раздел "Тестирование" — интерактивный хаб"
         subtitle="Цепочка артефактов качества, техники тест-дизайна и мини-трекер дефектов"
       >
         <div className={styles.chain}>

@@ -465,8 +465,8 @@ export function edgeAnchors(fromCls, toCls) {
 
 export function memberPreview(cls, max = 5) {
   const lines = [];
-  if (cls.isInterface) lines.push('«interface»');
-  else if (cls.isAbstract) lines.push('«abstract»');
+  if (cls.isInterface) lines.push('"interface"');
+  else if (cls.isAbstract) lines.push('"abstract"');
   if (cls.baseType) lines.push(`: ${cls.baseType}`);
   (cls.implements || []).slice(0, 2).forEach((i) => lines.push(`implements ${i}`));
   (cls.members || []).slice(0, max).forEach((m) => {

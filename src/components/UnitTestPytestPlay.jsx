@@ -15,7 +15,7 @@ function UnitTestPytestPlayInner() {
   const passed = result === 5;
 
   const terminal = useMemo(() => {
-    if (!ran) return '$ pytest tests/test_calculator.py\n# нажмите «Запустить pytest»';
+    if (!ran) return '$ pytest tests/test_calculator.py\n# нажмите "Запустить pytest"';
     if (passed) {
       return [
         'tests/test_calculator.py .',

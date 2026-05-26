@@ -58,7 +58,7 @@ export const CONNECTION_SCENARIOS = [
   {
     id: 'zero',
     short: 'Zero Trust',
-    title: 'Без «плоской» VPN-сети',
+    title: 'Без "плоской" VPN-сети',
     subtitle: 'Каждое приложение проверяет пользователя и устройство отдельно',
     steps: [
       {

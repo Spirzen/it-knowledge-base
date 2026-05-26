@@ -77,7 +77,7 @@ function QueueLogic({defaultLang = 'js'}) {
     const item = tempValue.trim();
     setQueue((q) => [...q, item]);
     setTempValue('');
-    addLog(`ENQUEUE: «${item}» добавлен в конец.`);
+    addLog(`ENQUEUE: "${item}" добавлен в конец.`);
   };
 
   const handleDequeue = () => {
@@ -87,7 +87,7 @@ function QueueLogic({defaultLang = 'js'}) {
     window.setTimeout(() => {
       setQueue((q) => q.slice(1));
       setLeaving(false);
-      addLog(`DEQUEUE: «${removed}» обслужен из начала.`);
+      addLog(`DEQUEUE: "${removed}" обслужен из начала.`);
     }, 350);
   };
 

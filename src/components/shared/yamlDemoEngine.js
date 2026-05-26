@@ -172,7 +172,7 @@ export function parseYaml(text) {
       issues.push({
         line: lineNo + 1,
         ok: false,
-        message: `После «${key}:» нужен пробел перед значением.`,
+        message: `После "${key}:" нужен пробел перед значением.`,
       });
     }
     const valuePart = rest.trim();
@@ -181,7 +181,7 @@ export function parseYaml(text) {
       issues.push({
         line: lineNo + 1,
         ok: false,
-        message: 'Ключ внутри списка без объекта — используйте «- key: value».',
+        message: 'Ключ внутри списка без объекта — используйте "- key: value".',
       });
       continue;
     }

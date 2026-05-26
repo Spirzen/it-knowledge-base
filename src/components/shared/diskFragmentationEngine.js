@@ -111,8 +111,8 @@ export function addFile(state, size, name) {
     ok: true,
     state: next,
     message: contiguous
-      ? `«${name}» записан в ${size} смежных блоков`
-      : `«${name}» разбит на ${file?.fragments ?? '?'} фрагментов — свободного «коридора» не хватило`,
+      ? `"${name}" записан в ${size} смежных блоков`
+      : `"${name}" разбит на ${file?.fragments ?? '?'} фрагментов — свободного "коридора" не хватило`,
     fragmented: !contiguous,
   };
 }
@@ -121,7 +121,7 @@ export function deleteFile(state, fileId) {
   const blocks = state.blocks.map((c) => (c?.fileId === fileId ? null : c));
   const next = buildState(blocks);
   const name = state.files.find((f) => f.id === fileId)?.name ?? 'файл';
-  return {state: next, message: `«${name}» удалён — блоки помечены свободными`};
+  return {state: next, message: `"${name}" удалён — блоки помечены свободными`};
 }
 
 export function defragment(state) {

@@ -304,7 +304,7 @@ function CicdDemoInner() {
                 <h3 className={styles.cardTitle}>Логи</h3>
                 <div className={styles.logs}>
                   {logs.length === 0 ? (
-                    <div className={styles.logEmpty}>Нажмите «Запустить пайплайн»</div>
+                    <div className={styles.logEmpty}>Нажмите "Запустить пайплайн"</div>
                   ) : (
                     logs.map((log) => (
                       <div key={log.id} className={styles.logLine}>
@@ -447,7 +447,7 @@ function CicdDemoInner() {
                 </p>
                 <ul>
                   <li>Быстрая обратная связь</li>
-                  <li>Меньше «интеграционного ада»</li>
+                  <li>Меньше "интеграционного ада"</li>
                   <li>Предсказуемые релизы</li>
                 </ul>
               </div>

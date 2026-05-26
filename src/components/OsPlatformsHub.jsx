@@ -462,7 +462,7 @@ export function OsPlatformsHubInner({defaultPlatform = 'windows', compact}) {
           {platform === 'macos' &&
             'Darwin + Aqua: Unix внутри, закрытая экосистема снаружи. ⌘ заменяет часть Ctrl/Win.'}
           {platform === 'android' &&
-            'Ядро Linux + слой Google: открытый AOSP и проприетарные GMS. Откройте «Слои» на экране телефона.'}
+            'Ядро Linux + слой Google: открытый AOSP и проприетарные GMS. Откройте "Слои" на экране телефона.'}
           {platform === 'ios' &&
             'Тот же Darwin, что у macOS, но жёсткая песочница приложений и единый магазин.'}
         </p>

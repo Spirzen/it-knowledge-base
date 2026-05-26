@@ -20,7 +20,7 @@ function DiskFragmentationPlayInner() {
   const [state, setState] = useState(() => presetDisk('tidy'));
   const [driveType, setDriveType] = useState('hdd');
   const [selectedFileId, setSelectedFileId] = useState(null);
-  const [log, setLog] = useState('Диск разбит на блоки. Запишите файлы, удалите часть — появятся «дыры», затем сравните чтение до и после дефрагментации.');
+  const [log, setLog] = useState('Диск разбит на блоки. Запишите файлы, удалите часть — появятся "дыры", затем сравните чтение до и после дефрагментации.');
 
   const drive = DRIVE_TYPES.find((d) => d.id === driveType) ?? DRIVE_TYPES[0];
   const readSim = useMemo(
@@ -67,7 +67,7 @@ function DiskFragmentationPlayInner() {
     <DemoShell>
       <DemoCard
         title="Симулятор фрагментации диска"
-        subtitle="Как пустые блоки между файлами заставляют HDD «прыгать» головкой — и почему SSD ведёт себя иначе"
+        subtitle="Как пустые блоки между файлами заставляют HDD "прыгать" головкой — и почему SSD ведёт себя иначе"
       >
         <label className="it-demo__label">Тип накопителя</label>
         <div className={toolStyles.chips} style={{marginBottom: '0.5rem'}}>
@@ -94,7 +94,7 @@ function DiskFragmentationPlayInner() {
             <strong>{state.freeBlocks}</strong>
           </div>
           <div className={styles.stat}>
-            <span>«Разрывов» данных</span>
+            <span>"Разрывов" данных</span>
             <strong>{state.fragmentationPct}%</strong>
           </div>
         </div>

@@ -6,7 +6,7 @@ import {demoLoadingFallback} from './shared/demoFallback';
 import styles from './searchPlays.module.css';
 
 const INTENT =
-  'Найти друзей друзей пользователя «Тимур» и посчитать, сколько общих друзей у каждого.';
+  'Найти друзей друзей пользователя "Тимур" и посчитать, сколько общих друзей у каждого.';
 
 const LANGUAGES = [
   {

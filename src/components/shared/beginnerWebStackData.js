@@ -13,7 +13,7 @@ export const WEB_STACK_LANGUAGES = [
     firstLine: '<h1>Привет, мир!</h1>',
     fileExt: '.html',
     pitfalls: [
-      'HTML не «рисует красиво» — только размечает; оформление даёт CSS.',
+      'HTML не "рисует красиво" — только размечает; оформление даёт CSS.',
       'Теги нужно закрывать: <p>текст</p>, а не оставлять <p> открытым.',
     ],
     articlePath: '/encyclopedia/3-data-markup/3-09-html/1',

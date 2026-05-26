@@ -1,4 +1,4 @@
-/** Canvas-хелперы для демо раздела «Разработка игр». */
+/** Canvas-хелперы для демо раздела "Разработка игр". */
 
 export function drawTexturePreview(ctx, w, h, activeMapIds) {
   const bg =

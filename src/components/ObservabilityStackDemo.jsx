@@ -103,7 +103,7 @@ function ObservabilityStackDemoInner() {
                 <div className={styles.pillarIcon}>📈</div>
                 <div className={styles.pillarName}>Метрики</div>
                 <div className={styles.pillarDesc}>
-                  Числа во времени: CPU, RPS, p95. Отвечают на «что» и «сколько».
+                  Числа во времени: CPU, RPS, p95. Отвечают на "что" и "сколько".
                 </div>
               </div>
               <div
@@ -114,7 +114,7 @@ function ObservabilityStackDemoInner() {
                 <div className={styles.pillarIcon}>📋</div>
                 <div className={styles.pillarName}>Логи</div>
                 <div className={styles.pillarDesc}>
-                  События с контекстом: кто, когда, почему. Отвечают на «почему».
+                  События с контекстом: кто, когда, почему. Отвечают на "почему".
                 </div>
               </div>
               <div
@@ -125,7 +125,7 @@ function ObservabilityStackDemoInner() {
                 <div className={styles.pillarIcon}>🔔</div>
                 <div className={styles.pillarName}>Мониторинг</div>
                 <div className={styles.pillarDesc}>
-                  Сбор, хранение, алерты. Непрерывное «всё ли в норме?»
+                  Сбор, хранение, алерты. Непрерывное "всё ли в норме?"
                 </div>
               </div>
             </div>
@@ -169,8 +169,8 @@ function ObservabilityStackDemoInner() {
                 />
               </div>
               <p className={styles.hint}>
-                {metricType === 'gauge' && 'Gauge можно читать напрямую — «сейчас свободно 4 ГБ RAM».'}
-                {metricType === 'counter' && 'Counter смотрят через rate() — «за последние 5 минут 120 req/s».'}
+                {metricType === 'gauge' && 'Gauge можно читать напрямую — "сейчас свободно 4 ГБ RAM".'}
+                {metricType === 'counter' && 'Counter смотрят через rate() — "за последние 5 минут 120 req/s".'}
                 {metricType === 'histogram' && 'Histogram даёт перцентили — среднее 80 ms, но p99 = 2 s убивает UX.'}
               </p>
             </div>
@@ -265,7 +265,7 @@ function ObservabilityStackDemoInner() {
               </ul>
             </div>
             <p className={styles.hint}>
-              При «БД недоступна» метрика error rate растёт, логи показывают connection refused — без логов вы
+              При "БД недоступна" метрика error rate растёт, логи показывают connection refused — без логов вы
               только видите красный график, без метрик — тонете в миллионах строк.
             </p>
           </>

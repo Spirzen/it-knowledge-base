@@ -87,7 +87,7 @@ function SqlUpdateTrainerInner() {
             throw new Error('Нельзя изменять поле id');
           }
           throw new Error(
-            `Колонка «${col}» недоступна. Доступны: ${USER_EDITABLE_COLUMNS.join(', ')}`,
+            `Колонка "${col}" недоступна. Доступны: ${USER_EDITABLE_COLUMNS.join(', ')}`,
           );
         }
         validateUserField(col, updates[col]);

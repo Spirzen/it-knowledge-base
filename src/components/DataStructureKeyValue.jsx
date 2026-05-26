@@ -145,7 +145,7 @@ function KeyValueLogic({defaultLang = 'js'}) {
 
   return (
     <DataStructureLayout
-      title="Структура «Ключ–значение»"
+      title="Структура "Ключ–значение""
       subtitle="Каждый элемент доступен по уникальному ключу без перебора всей коллекции. Основа словарей, хеш-таблиц, NoSQL и кэшей."
     >
       <TypeChips options={STORE_OPTIONS} value={storeType} onChange={setStoreType} />

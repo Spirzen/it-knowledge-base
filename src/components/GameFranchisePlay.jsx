@@ -145,7 +145,7 @@ function LootSpecial({tiers}) {
   const tier = tiers.find((t) => t.id === tierId);
   return (
     <>
-      <p className={styles.hint}>Симулятор «редкости лута» — ядро цикла Diablo.</p>
+      <p className={styles.hint}>Симулятор "редкости лута" — ядро цикла Diablo.</p>
       <div className={styles.lootBar}>
         {tiers.map((t) => (
           <button
@@ -284,7 +284,7 @@ function GameFranchisePlayInner({franchise: franchiseId = 'elder-scrolls'}) {
     return (
       <DemoShell>
         <DemoCard title="Игроведение">
-          <p className={styles.hint}>Франшиза «{franchiseId}» не найдена в каталоге.</p>
+          <p className={styles.hint}>Франшиза "{franchiseId}" не найдена в каталоге.</p>
         </DemoCard>
       </DemoShell>
     );

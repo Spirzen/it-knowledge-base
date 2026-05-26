@@ -91,7 +91,7 @@ const SCENARIOS = [
         pc: 'main',
         phase: 'Код',
         label: 'Программа готовит байт',
-        detail: 'В коде: записать символ «A» (0x41) в регистр UART_TX.',
+        detail: 'В коде: записать символ "A" (0x41) в регистр UART_TX.',
         ledOn: false,
         btnPressed: false,
         regHighlight: 'UART_TX',

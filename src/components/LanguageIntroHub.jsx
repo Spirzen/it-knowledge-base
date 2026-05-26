@@ -28,7 +28,7 @@ function LanguageIntroHubInner() {
     <DemoShell>
       <DemoCard
         title="Обзор языков из энциклопедии"
-        subtitle="Выберите язык — краткие сведения из раздела «Основные языки»"
+        subtitle="Выберите язык — краткие сведения из раздела "Основные языки""
       >
         <div className={styles.root}>
           {groups.map(([category, items]) => (

@@ -1,4 +1,4 @@
-/** Краткие обзоры языков — по материалу «Основные языки» (1-24-osnovnye-yazyki/1) */
+/** Краткие обзоры языков — по материалу "Основные языки" (1-24-osnovnye-yazyki/1) */
 
 export const OVERVIEW_ARTICLE = '/encyclopedia/1-basics/1-24-osnovnye-yazyki/1';
 
@@ -45,7 +45,7 @@ export const LANGUAGE_INTROS = {
     category: 'Скриптовые и веб-языки',
     kind: 'programming',
     summary:
-      'Изначально — интерактивность в браузере; сегодня «король веба»: клиент, сервер (Node.js), мобильные и встроенные среды. Гибкий синтаксис, богатая экосистема фреймворков и инструментов.',
+      'Изначально — интерактивность в браузере; сегодня "король веба": клиент, сервер (Node.js), мобильные и встроенные среды. Гибкий синтаксис, богатая экосистема фреймворков и инструментов.',
     traits: ['Интерпретируемый + JIT', 'Динамическая типизация', 'Событийная модель'],
     uses: ['фронтенд', 'Node.js backend', 'мобильные (React Native)', 'инструменты сборки'],
     ecosystem: ['React', 'Vue', 'Angular', 'Node.js', 'npm'],
@@ -144,7 +144,7 @@ export const LANGUAGE_INTROS = {
     category: 'Разметка и запросы',
     kind: 'markup',
     summary:
-      'Язык разметки гипертекста: структура страницы — заголовки, абзацы, таблицы, формы, ссылки. Вместе с CSS и JS — основа веба; сам по себе не «программирует».',
+      'Язык разметки гипертекста: структура страницы — заголовки, абзацы, таблицы, формы, ссылки. Вместе с CSS и JS — основа веба; сам по себе не "программирует".',
     traits: ['Декларативная разметка', 'DOM-дерево', 'Семантические теги'],
     uses: ['веб-страницы', 'email-шаблоны', 'основа для CSS/JS'],
     ecosystem: ['WHATWG', 'accessibility', 'Web Components'],
@@ -187,7 +187,7 @@ export const LANGUAGE_INTROS = {
     category: 'JVM-платформа',
     kind: 'programming',
     summary:
-      'ООП-язык Sun Microsystems: байт-код на JVM — «написал один раз — запускай где угодно». Стандарт корпоративной разработки, Android, big data, микросервисы.',
+      'ООП-язык Sun Microsystems: байт-код на JVM — "написал один раз — запускай где угодно". Стандарт корпоративной разработки, Android, big data, микросервисы.',
     traits: ['Статическая типизация', 'JVM', 'Сборка мусора'],
     uses: ['enterprise', 'Android', 'микросервисы', 'big data'],
     ecosystem: ['Spring', 'Hibernate', 'Maven', 'Kafka'],
@@ -609,7 +609,7 @@ export function isIconRedundant(icon, name) {
   return false;
 }
 
-/** Подпись кнопки / ссылки без дубля «Go Go» */
+/** Подпись кнопки / ссылки без дубля "Go Go" */
 export function formatLanguageLabel(entry) {
   const {icon, name} = entry;
   if (!icon || isIconRedundant(icon, name)) return name;

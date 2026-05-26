@@ -88,7 +88,7 @@ export default function ArticleSeeAlso() {
         См. также
       </h2>
       <p className={styles.hint}>
-        Другие статьи этого же раздела в боковом меню (как на странице «О разделе»).
+        Другие статьи этого же раздела в боковом меню (как на странице "О разделе").
       </p>
       <DocCardList items={visibleCards} className={styles.cardList} />
       {hiddenCount > 0 && introHref && (

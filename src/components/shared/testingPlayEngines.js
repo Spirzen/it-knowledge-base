@@ -137,7 +137,7 @@ export const TEST_DOUBLES = [
     label: 'Fake',
     role: 'Упрощённая, но рабочая реализация',
     checksCalls: false,
-    demo: 'In-memory «БД» с insert/select',
+    demo: 'In-memory "БД" с insert/select',
   },
 ];
 

@@ -190,7 +190,7 @@ function DartEcosystemPlayInner() {
                   checked={enabledNodes.has('analytics')}
                   onChange={(e) => toggleAnalytics(e.target.checked)}
                 />
-                Feature-модуль «Аналитика» (firebase_analytics)
+                Feature-модуль "Аналитика" (firebase_analytics)
               </label>
             </div>
             <div className={styles.graphLegend}>

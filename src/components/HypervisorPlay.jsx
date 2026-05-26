@@ -27,7 +27,7 @@ const LAYER_LABELS = {
 };
 
 const TRAP_STEPS = [
-  {from: 'guest', to: 'hypervisor', msg: 'Гость: «открыть файл» → ловушка (trap)'},
+  {from: 'guest', to: 'hypervisor', msg: 'Гость: "открыть файл" → ловушка (trap)'},
   {from: 'hypervisor', to: 'hostos', msg: 'Гипервизор: эмуляция или проброс на хост'},
   {from: 'hostos', to: 'guest', msg: 'Ответ возвращается в гостевую ОС'},
 ];

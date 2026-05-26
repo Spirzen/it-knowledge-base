@@ -46,7 +46,7 @@ function DomainModelPlayInner() {
         </div>
         <p className={styles.footer}>
           {focus !== 'agg'
-            ? 'Изменение только через Aggregate Root — выберите «Aggregate Root».'
+            ? 'Изменение только через Aggregate Root — выберите "Aggregate Root".'
             : 'Инвариант агрегата: сумма пересчитывается внутри Order.'}
         </p>
       </DemoCard>

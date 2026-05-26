@@ -95,7 +95,7 @@ function RefactoringDemoInner() {
       <div className={styles.headerBand}>
         <h4 className={styles.title}>Пошаговый рефакторинг мини-проекта</h4>
         <p className={styles.subtitle}>
-          От «всё в одном файле» к слоям domain / application / infrastructure — поведение не меняется
+          От "всё в одном файле" к слоям domain / application / infrastructure — поведение не меняется
         </p>
       </div>
 

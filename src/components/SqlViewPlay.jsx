@@ -16,7 +16,7 @@ function SqlViewPlayInner() {
   const [mvSnapshot, setMvSnapshot] = useState(() => computeSalesSummary(SALES_RAW));
   const [mvStale, setMvStale] = useState(false);
   const [queryCount, setQueryCount] = useState(0);
-  const [log, setLog] = useState('Нажмите «SELECT из представления», чтобы увидеть разницу.');
+  const [log, setLog] = useState('Нажмите "SELECT из представления", чтобы увидеть разницу.');
 
   const liveSummary = useMemo(() => computeSalesSummary(sourceSales), [sourceSales]);
   const displayRows = viewType === 'regular' ? liveSummary : mvSnapshot;
@@ -119,7 +119,7 @@ function SqlViewPlayInner() {
 
         {viewType === 'materialized' && mvStale && (
           <p className="it-demo__hint" style={{marginTop: '0.5rem', color: '#e65100'}}>
-            Сейчас в таблице «живые» суммы: Москва/Софт ={' '}
+            Сейчас в таблице "живые" суммы: Москва/Софт ={' '}
             {liveSummary.find((x) => x.region === 'Москва' && x.product_category === 'Софт')?.total_sales ?? '—'} ₽,
             в MV всё ещё старый снимок.
           </p>

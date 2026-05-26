@@ -101,8 +101,8 @@ function FiniteAutomatonDemoInner() {
             {run.stuck
               ? `Отклонено: ${run.steps[run.steps.length - 1]?.error ?? 'нет перехода'}`
               : run.accepted
-                ? `Принято в состоянии «${run.final}»`
-                : `Отклонено (конечное состояние «${run.final}» не принимающее)`}
+                ? `Принято в состоянии "${run.final}"`
+                : `Отклонено (конечное состояние "${run.final}" не принимающее)`}
           </p>
 
           <p className={styles.note}>{preset.note}</p>

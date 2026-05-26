@@ -61,7 +61,7 @@ function GameTexturesPlayInner() {
             </p>
           ))}
           {maps.size === 0 && (
-            <p className={styles.hint}>Включите хотя бы albedo — иначе меш останется «серым».</p>
+            <p className={styles.hint}>Включите хотя бы albedo — иначе меш останется "серым".</p>
           )}
         </div>
       </DemoCard>

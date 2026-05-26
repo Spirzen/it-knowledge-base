@@ -93,7 +93,7 @@ export const INSTRUCTION_TEMPLATES = {
   },
   HEALTHCHECK: {
     syntax: 'HEALTHCHECK CMD command',
-    description: 'Периодическая проверка «живости» контейнера',
+    description: 'Периодическая проверка "живости" контейнера',
     example: 'CMD curl -f http://localhost/ || exit 1',
     validate: (v) => (!v.trim() ? 'Укажите команду проверки' : null),
   },

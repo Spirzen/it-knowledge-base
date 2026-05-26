@@ -46,7 +46,7 @@ function DIDemoInner() {
   const [injectionType, setInjectionType] = useState('constructor');
   const [emailImpl, setEmailImpl] = useState('smtp');
   const [flowStep, setFlowStep] = useState('idle');
-  const [status, setStatus] = useState({ok: true, message: 'Выбери тип инъекции и нажми «Зарегистрировать»'});
+  const [status, setStatus] = useState({ok: true, message: 'Выбери тип инъекции и нажми "Зарегистрировать"'});
   const [emailPreview, setEmailPreview] = useState('');
   const [channel, setChannel] = useState('');
 
@@ -105,7 +105,7 @@ function DIDemoInner() {
       <div className={styles.headerBand}>
         <h4 className={styles.title}>💉 Dependency Injection (DI)</h4>
         <p className={styles.subtitle}>
-          DIP — «что»: зависеть от абстракций. DI — «как»: передавать зависимости извне (конструктор, setter, IoC).
+          DIP — "что": зависеть от абстракций. DI — "как": передавать зависимости извне (конструктор, setter, IoC).
         </p>
       </div>
 

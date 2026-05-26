@@ -336,7 +336,7 @@ function FormMode() {
       <div className={formStyles.formLayout}>
         <form className={formStyles.demoForm} onSubmit={handleSubmit} noValidate>
           <p className={formStyles.formHint}>
-            Мини-форма имитирует POST: после «Отправить» данные проходят по стеку до MySQL.
+            Мини-форма имитирует POST: после "Отправить" данные проходят по стеку до MySQL.
           </p>
           <div className={styles.crudField}>
             <label htmlFor="php-form-name">name</label>

@@ -73,6 +73,6 @@ export const LICENSE_BADGES = {
   sa: {short: 'SA', label: 'ShareAlike — производные под той же лицензией'},
 };
 
-export const CITATION_TEMPLATE = `Источник: Тагиров Т.В. «Вселенная IT» — открытая база знаний
+export const CITATION_TEMPLATE = `Источник: Тагиров Т.В. "Вселенная IT" — открытая база знаний
 URL: https://spirzen.github.io/it-knowledge-base/
 Лицензия: CC BY-NC-SA 4.0`;

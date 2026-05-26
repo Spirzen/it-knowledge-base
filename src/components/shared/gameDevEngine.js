@@ -1,4 +1,4 @@
-/** Данные для демо раздела «Разработка игр». */
+/** Данные для демо раздела "Разработка игр". */
 
 export const PIPELINE_STAGES = [
   {
@@ -241,8 +241,8 @@ export const TEAM_HANDOFFS = [
   {from: 'design', to: 'code', artifact: 'GDD → прототип механики', risk: 'Нереализуемая механика без tech review'},
   {from: 'code', to: 'art', artifact: 'Лимиты полигонов / шейдеров', risk: 'Ассеты не влезают в memory budget'},
   {from: 'art', to: 'code', artifact: 'FBX + PBR-набор', risk: 'Сломанные UV или неверный scale'},
-  {from: 'design', to: 'qa', artifact: 'Acceptance criteria уровня', risk: 'Субъективный «фан» вместо проверяемых кейсов'},
-  {from: 'qa', to: 'prod', artifact: 'Severity-отчёт перед gold', risk: 'Блокеры спрятаны в «minor»'},
+  {from: 'design', to: 'qa', artifact: 'Acceptance criteria уровня', risk: 'Субъективный "фан" вместо проверяемых кейсов'},
+  {from: 'qa', to: 'prod', artifact: 'Severity-отчёт перед gold', risk: 'Блокеры спрятаны в "minor"'},
   {from: 'audio', to: 'design', artifact: 'Адаптивные стемы под состояния', risk: 'Звук не читается в геймплее'},
 ];
 
@@ -326,7 +326,7 @@ export const MDA_EXAMPLES = {
     'Roguelike: permadeath + мета-прогресс',
   ],
   dynamics: [
-    'Риск vs награда при входе в «красную зону»',
+    'Риск vs награда при входе в "красную зону"',
     'Экономика дефицита на аукционе',
     'Социальное давление в кооперативе',
   ],
@@ -440,7 +440,7 @@ export const QA_TYPES = [
 export const QA_SAMPLE_BUGS = [
   {id: 'b1', title: 'Сейв не пишется после сна консоли', type: 'functional', sev: 'blocker'},
   {id: 'b2', title: 'FPS падает до 18 в городе на Series S', type: 'perf', sev: 'major'},
-  {id: 'b3', title: 'Кнопка «Купить» дублирует списание', type: 'functional', sev: 'blocker'},
+  {id: 'b3', title: 'Кнопка "Купить" дублирует списание', type: 'functional', sev: 'blocker'},
   {id: 'b4', title: 'Немецкий текст вылезает за кнопку', type: 'compat', sev: 'minor'},
   {id: 'b5', title: 'Босс слишком лёгкий на Hard', type: 'ux', sev: 'tuning'},
 ];

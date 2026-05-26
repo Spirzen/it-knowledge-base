@@ -110,7 +110,7 @@ function WebhooksDeliveryPlayInner() {
           <>
             <div className={styles.panel}>
               <div className={styles.statRow}>
-                <span>Запросов «есть новое?»</span>
+                <span>Запросов "есть новое?"</span>
                 <strong>{pollCount}</strong>
               </div>
               <div className={styles.statRow}>

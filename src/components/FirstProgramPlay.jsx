@@ -184,7 +184,7 @@ function FirstProgramPlayInner({language = 'python'}) {
             </pre>
             <div className={styles.console} role="log" aria-live="polite" aria-label="Консоль">
               {consoleLines.length === 0 ? (
-                <div className={styles.consoleLine}>Нажмите «Запустить» — здесь появятся команды и вывод</div>
+                <div className={styles.consoleLine}>Нажмите "Запустить" — здесь появятся команды и вывод</div>
               ) : (
                 consoleLines.map((line, i) => (
                   <div

@@ -561,7 +561,7 @@ function NodeDatabasePlayInner({defaultMode = 'stack'}) {
           {mode === 'layers' &&
             'ORM (Prisma, Sequelize) генерирует SQL — при отладке смотрите логи или prisma.$queryRaw. Для сложных отчётов часто оставляют raw SQL.'}
           {mode === 'lifecycle' &&
-            'При деплое закрывайте pool.end() в graceful shutdown — иначе PostgreSQL держит «висячие» backend-сессии.'}
+            'При деплое закрывайте pool.end() в graceful shutdown — иначе PostgreSQL держит "висячие" backend-сессии.'}
           {mode === 'async' &&
             'Пока libuv ждёт ответа СУБД, основной поток принимает новые HTTP-запросы — главное преимущество Node для I/O-bound API.'}
         </p>

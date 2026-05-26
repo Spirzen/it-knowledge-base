@@ -26,9 +26,9 @@ function ReadWritePlayInner() {
     setReadMask((prev) => [...new Set([...prev, ...slice])]);
     const chars = slice.map((i) => FILE_CHARS[i]).join('');
     if (osCacheHit) {
-      pushLog(`read(${n}): «${chars}» — из page cache (быстро)`);
+      pushLog(`read(${n}): "${chars}" — из page cache (быстро)`);
     } else {
-      pushLog(`read(${n}): «${chars}» — промах кэша ОС → диск`);
+      pushLog(`read(${n}): "${chars}" — промах кэша ОС → диск`);
       setOsCacheHit(true);
     }
     setPointer(end);
@@ -55,7 +55,7 @@ function ReadWritePlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Чтение, запись и указатель файла"
-        subtitle="Файл «Hello» — линейная лента байтов. Указатель сдвигается после каждой операции."
+        subtitle="Файл "Hello" — линейная лента байтов. Указатель сдвигается после каждой операции."
       >
         <div className={styles.fileTape}>
           {FILE_CHARS.map((ch, i) => (

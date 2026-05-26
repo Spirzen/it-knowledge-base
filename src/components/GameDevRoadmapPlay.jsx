@@ -104,7 +104,7 @@ function GameDevRoadmapPlayInner() {
           <p className={styles.hint}>
             В {ctx.label.toLowerCase()}-контексте{' '}
             {ctx.id === 'aaa'
-              ? 'достаточно мастерства в одном слое «' + disc.layers[0] + '».'
+              ? 'достаточно мастерства в одном слое "' + disc.layers[0] + '".'
               : ctx.id === 'indie'
                 ? 'нужно понимать соседние дисциплины хотя бы на уровне handoff.'
                 : 'важен документированный процесс и связь механик с эстетикой.'}

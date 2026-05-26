@@ -185,7 +185,7 @@ function SwiftEcosystemPlayInner() {
                   checked={enabledNodes.has('widget')}
                   onChange={(e) => toggleWidget(e.target.checked)}
                 />
-                Target «WidgetExtension»
+                Target "WidgetExtension"
               </label>
             </div>
             <div className={styles.graphLegend}>

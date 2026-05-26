@@ -154,7 +154,7 @@ function LexicalScopeVisualizerInner() {
 
             <div className={styles.pathBar} aria-live="polite">
               {phase === 'idle' && !result && (
-                <span>Введите имя и нажмите «Найти» или выберите пресет</span>
+                <span>Введите имя и нажмите "Найти" или выберите пресет</span>
               )}
               {(phase === 'searching' || result) && resolved.path.length > 0 && (
                 <>

@@ -258,7 +258,7 @@ function LibraryConnectionDemoInner() {
               )}
             </div>
             <div className={styles.output} aria-live="polite">
-              {output || 'Нажмите «Запустить пример», чтобы увидеть результат вызова библиотеки.'}
+              {output || 'Нажмите "Запустить пример", чтобы увидеть результат вызова библиотеки.'}
             </div>
           </>
         )}

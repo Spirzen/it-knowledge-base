@@ -43,7 +43,7 @@ function CleanArchitectureLayersPlayInner() {
 
         <div className={styles.check}>
           <label className="it-demo__label">
-            Может ли «{layer.label}» зависеть от:
+            Может ли "{layer.label}" зависеть от:
           </label>
           <select
             className="it-demo__select"
@@ -59,7 +59,7 @@ function CleanArchitectureLayersPlayInner() {
           <p className={clsx(styles.verdict, allowed ? styles.ok : styles.bad)}>
             {allowed
               ? 'Допустимо: зависимость направлена к ядру или равному слою.'
-              : 'Нарушение: внешний слой не должен тянуть внутренний «вверх» через инфраструктуру.'}
+              : 'Нарушение: внешний слой не должен тянуть внутренний "вверх" через инфраструктуру.'}
           </p>
         </div>
 

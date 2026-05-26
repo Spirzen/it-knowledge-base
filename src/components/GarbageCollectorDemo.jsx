@@ -59,7 +59,7 @@ function HeapPanel({stats, phase, phaseLabel, roots, blocks, isCollecting, onTog
 
       {blocks.length === 0 ? (
         <div className={styles.emptyHeap}>
-          Нажмите «Выделить память», затем переключайте достижимость кликом по блоку
+          Нажмите "Выделить память", затем переключайте достижимость кликом по блоку
         </div>
       ) : (
         <div className={styles.blocks}>

@@ -31,7 +31,7 @@ export const SCENARIOS = {
   atomic: {
     id: 'atomic',
     label: 'Атомарные',
-    hint: 'Чтение–изменение–запись как неделимая операция на уровне «процессора».',
+    hint: 'Чтение–изменение–запись как неделимая операция на уровне "процессора".',
     accent: '#f39c12',
   },
 };
@@ -213,7 +213,7 @@ export function createRaceSimulator(hooks) {
   const run = async (scenario) => {
     reset();
     const label = SCENARIOS[scenario]?.label ?? scenario;
-    log(`Старт: режим «${label}»`, 'info');
+    log(`Старт: режим "${label}"`, 'info');
 
     const runners = OPERATIONS.map(async (op) => {
       if (stopped) return;

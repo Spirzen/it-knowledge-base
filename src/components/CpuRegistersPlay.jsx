@@ -32,7 +32,7 @@ function CpuRegistersPlayInner() {
   const [regs, setRegs] = useState(INITIAL);
   const [pc, setPc] = useState(0);
   const [autoPlay, setAutoPlay] = useState(false);
-  const [log, setLog] = useState('Нажмите «Шаг» — выполнится одна инструкция.');
+  const [log, setLog] = useState('Нажмите "Шаг" — выполнится одна инструкция.');
 
   const stepInstr = useCallback(() => {
     if (pc >= PROGRAM.length) {

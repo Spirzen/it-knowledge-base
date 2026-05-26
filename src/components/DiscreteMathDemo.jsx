@@ -109,9 +109,9 @@ function GraphPanel() {
 
   const stepText = () => {
     if (!step) return '';
-    if (step.type === 'init') return `Старт BFS из «${DEMO_GRAPH.start}», цель — «${DEMO_GRAPH.goal}».`;
-    if (step.type === 'visit') return `Посещаем «${step.current}». Очередь: [${step.queue.join(', ')}].`;
-    if (step.type === 'enqueue') return `Кладём в очередь «${step.next}» из «${step.current}».`;
+    if (step.type === 'init') return `Старт BFS из "${DEMO_GRAPH.start}", цель — "${DEMO_GRAPH.goal}".`;
+    if (step.type === 'visit') return `Посещаем "${step.current}". Очередь: [${step.queue.join(', ')}].`;
+    if (step.type === 'enqueue') return `Кладём в очередь "${step.next}" из "${step.current}".`;
     if (step.type === 'found') return `Цель найдена. Кратчайший путь: ${step.path.join(' → ')}.`;
     if (step.type === 'notfound') return 'Цель недостижима в этом графе.';
     return '';

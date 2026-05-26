@@ -200,14 +200,14 @@ export function OneCPlatformEmulatorInner({focus, compact}) {
                   <strong>Итого: {formatDocumentTotal(doc.lines)} ₽</strong>
                   {posted && (
                     <p style={{margin: 0, fontSize: '0.78rem', color: 'var(--ifm-color-success)'}}>
-                      Документ проведён — движения записаны в регистр «ОстаткиТоваров»
+                      Документ проведён — движения записаны в регистр "ОстаткиТоваров"
                     </p>
                   )}
                 </div>
               )}
               {view === 'stock' && (
                 <div className={styles.reportBox}>
-                  <h5>Отчёт «Остатки товаров»</h5>
+                  <h5>Отчёт "Остатки товаров"</h5>
                   <table className={styles.listTable}>
                     <thead>
                       <tr>
@@ -302,7 +302,7 @@ export function OneCPlatformEmulatorInner({focus, compact}) {
             />
             <div className={styles.messages} aria-label="Сообщения отладки">
               {messages.length === 0 ? (
-                <div className={styles.msgLine}>Нажмите «Выполнить» для запуска процедуры…</div>
+                <div className={styles.msgLine}>Нажмите "Выполнить" для запуска процедуры…</div>
               ) : (
                 messages.map((m, i) => (
                   <div
@@ -335,7 +335,7 @@ export function OneCPlatformEmulatorInner({focus, compact}) {
         {enterpriseChrome}
         <p className={styles.hint}>
           Переключайтесь между режимом пользователя и конфигуратором. Это не настоящая 1С, а
-          наглядная модель: справочники, документ «Поступление», проведение и модуль на встроенном
+          наглядная модель: справочники, документ "Поступление", проведение и модуль на встроенном
           языке.
         </p>
       </DemoCard>

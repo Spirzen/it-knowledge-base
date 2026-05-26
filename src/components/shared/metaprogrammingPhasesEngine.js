@@ -3,7 +3,7 @@ export const META_PHASES = [
     id: 'write',
     label: 'Написание (IDE)',
     when: 'Редактор, без запуска программы',
-    examples: ['Сниппеты fori → цикл for', '«Создать геттеры/сеттеры»', 'Автодополнение по AST'],
+    examples: ['Сниппеты fori → цикл for', '"Создать геттеры/сеттеры"', 'Автодополнение по AST'],
     input: 'class User { name }',
     output: 'class User {\n  get name() { ... }\n  set name(v) { ... }\n}',
     risk: 'Низкий: в артефакт сборки не попадает, если не сохранили',

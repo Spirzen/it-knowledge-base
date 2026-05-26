@@ -166,7 +166,7 @@ function BrowserAddressBarPlayInner() {
         setResult({
           kind: 'search',
           query: raw,
-          pageTitle: `Поиск: «${raw}»`,
+          pageTitle: `Поиск: "${raw}"`,
           pageBody: 'Браузер отправил запрос в поисковую систему по умолчанию — текст не похож на адрес сайта.',
         });
       } else {
@@ -175,7 +175,7 @@ function BrowserAddressBarPlayInner() {
           setResult({
             kind: 'search',
             query: raw,
-            pageTitle: `Поиск: «${raw}»`,
+            pageTitle: `Поиск: "${raw}"`,
             pageBody: 'Не удалось разобрать как URL — браузер интерпретировал ввод как поиск.',
           });
         } else {

@@ -99,7 +99,7 @@ function SocialNetworkArchPlayInner() {
               </svg>
             </div>
             <p className={styles.hint}>
-              Узел «{nodes.find((n) => n.id === selected)?.label}» — {edges.filter((e) => e[0] === selected || e[1] === selected).length}{' '}
+              Узел "{nodes.find((n) => n.id === selected)?.label}" — {edges.filter((e) => e[0] === selected || e[1] === selected).length}{' '}
               связей в подсети.
             </p>
           </>

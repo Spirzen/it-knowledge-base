@@ -23,7 +23,7 @@ const STACKS = [
     format: 'Блоки / страницы в БД',
     sync: 'Облако SaaS или self-host',
     strength: 'Права, шаблоны, встроенные БД',
-    sample: 'Страница: «Runbook инцидента»\n• Статус: 🔴 P1\n• Ответственный: @oncall\n• Чеклист: 1) алерт 2) rollback',
+    sample: 'Страница: "Runbook инцидента"\n• Статус: 🔴 P1\n• Ответственный: @oncall\n• Чеклист: 1) алерт 2) rollback',
   },
   {
     id: 'secure',
@@ -105,7 +105,7 @@ function NotesWorkflowPlayInner() {
               <td>{s.sync}</td>
             </tr>
             <tr>
-              <th>Этап «{STEPS[step]}»</th>
+              <th>Этап "{STEPS[step]}"</th>
               <td>
                 {step === 0 && 'Inbox, мобильный виджет, голосовая заметка'}
                 {step === 1 && 'Папки, теги, MOC (карта содержания)'}

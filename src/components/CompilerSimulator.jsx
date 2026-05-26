@@ -277,7 +277,7 @@ function CompilerSimulatorInner() {
           <div style={{padding: '0.75rem', minHeight: '8rem'}}>
             {status === 'idle' && (
               <p style={{color: 'var(--demo-muted)', fontStyle: 'italic', margin: 0}}>
-                Нажмите «{mode === 'compile' ? 'Компилировать' : 'Запустить'}»
+                Нажмите "{mode === 'compile' ? 'Компилировать' : 'Запустить'}"
               </p>
             )}
 

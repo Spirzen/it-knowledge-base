@@ -410,7 +410,7 @@ export function describeFk(fkInfo) {
     const fromCol = fkInfo.from_columns[i];
     const toCol = fkInfo.to_columns[i] ?? fkInfo.to_columns[0];
     parts.push(
-      `Поле «${fromCol}» таблицы «${fkInfo.from_table}» связано с полем «${toCol}» таблицы «${fkInfo.to_table}»`,
+      `Поле "${fromCol}" таблицы "${fkInfo.from_table}" связано с полем "${toCol}" таблицы "${fkInfo.to_table}"`,
     );
   }
   return parts.join(fkInfo.from_columns.length > 1 ? '; ' : '');

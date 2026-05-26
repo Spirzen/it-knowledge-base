@@ -675,7 +675,7 @@ function TransactionMode() {
 
       <pre className={styles.codePanel}>{step.code}</pre>
 
-      <p className={styles.panelLabel}>Регистр накопления «ОстаткиТоваров» (до/после проведения)</p>
+      <p className={styles.panelLabel}>Регистр накопления "ОстаткиТоваров" (до/после проведения)</p>
       <StockTable rows={stock} />
 
       <div className={styles.controls}>

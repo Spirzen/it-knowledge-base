@@ -151,13 +151,13 @@ function ERDDemoInner() {
     if (scenario.cardinality === 'M:N') {
       return 'В Mermaid: }o--o{ — многие ко многим; промежуточная таблица — отдельная сущность с двумя FK.';
     }
-    return 'В Mermaid: ||--o{ — один ко многим (одна линия у «одного», «воронья лапка» у «многих»).';
+    return 'В Mermaid: ||--o{ — один ко многим (одна линия у "одного", "воронья лапка" у "многих").';
   }, [scenario.cardinality]);
 
   return (
     <DemoShell>
       <DemoCard
-        title="ERD — диаграмма «сущность–связь»"
+        title="ERD — диаграмма "сущность–связь""
         subtitle="Сущности, атрибуты и кардинальность: наведите на поле FK или переключите сценарий"
       >
         <div className={styles.scenarioRow} role="tablist">

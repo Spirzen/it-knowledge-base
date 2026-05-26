@@ -382,7 +382,7 @@ function executeJoinQuery(sql, db) {
   const {mainTable, mainAlias, joins} = parseFromAndJoins(sql);
   const mainData = getTableRows(db, mainTable);
   if (!mainData) {
-    throw new Error(`Таблица «${mainTable}» не найдена. Доступны: ${Object.keys(TABLE_META).join(', ')}`);
+    throw new Error(`Таблица "${mainTable}" не найдена. Доступны: ${Object.keys(TABLE_META).join(', ')}`);
   }
 
   let joined = mainData.map((row) => ({[mainAlias]: {...row}}));
@@ -390,7 +390,7 @@ function executeJoinQuery(sql, db) {
   for (const j of joins) {
     const joinData = getTableRows(db, j.table);
     if (!joinData) {
-      throw new Error(`Таблица «${j.table}» не найдена.`);
+      throw new Error(`Таблица "${j.table}" не найдена.`);
     }
 
     const next = [];
@@ -513,7 +513,7 @@ function executeSimpleSelect(sql, db) {
   const table = fromM[1].toLowerCase();
   const data = getTableRows(db, table);
   if (!data) {
-    throw new Error(`Таблица «${table}» не найдена. Доступны: ${Object.keys(TABLE_META).join(', ')}`);
+    throw new Error(`Таблица "${table}" не найдена. Доступны: ${Object.keys(TABLE_META).join(', ')}`);
   }
 
   let rows = data.map((r) => ({...r}));
@@ -623,7 +623,7 @@ function executeInsert(sql, db) {
   const table = m[1].toLowerCase();
   const meta = TABLE_META[table];
   if (!meta) {
-    throw new Error(`Таблица «${table}» недоступна.`);
+    throw new Error(`Таблица "${table}" недоступна.`);
   }
 
   const columns = m[2].split(',').map((c) => c.trim().toLowerCase());
@@ -656,7 +656,7 @@ function executeInsert(sql, db) {
   return {
     kind: 'insert',
     rowsAffected: 1,
-    message: `Добавлена 1 строка в «${table}».`,
+    message: `Добавлена 1 строка в "${table}".`,
     db,
   };
 }
@@ -701,7 +701,7 @@ function executeUpdate(sql, db) {
   const table = m[1].toLowerCase();
   const data = getTableRows(db, table);
   if (!data) {
-    throw new Error(`Таблица «${table}» не найдена.`);
+    throw new Error(`Таблица "${table}" не найдена.`);
   }
 
   const updates = parseSetClause(m[2]);
@@ -737,7 +737,7 @@ function executeDelete(sql, db) {
   const table = m[1].toLowerCase();
   const data = getTableRows(db, table);
   if (!data) {
-    throw new Error(`Таблица «${table}» не найдена.`);
+    throw new Error(`Таблица "${table}" не найдена.`);
   }
 
   const whereGroups = m[2] ? parseWhereClause(m[2]) : [];

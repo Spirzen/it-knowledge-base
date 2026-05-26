@@ -27,7 +27,7 @@ const PAGES = {
     url: 'https://www.google.com/search?q=как+устроен+dns',
     body: (
       <>
-        <p className={styles.searchMeta}>Результаты по запросу «как устроен dns»</p>
+        <p className={styles.searchMeta}>Результаты по запросу "как устроен dns"</p>
         <div className={styles.result}>
           <strong>DNS — система доменных имён</strong>
           <span>encyclopedia.example/dns</span>

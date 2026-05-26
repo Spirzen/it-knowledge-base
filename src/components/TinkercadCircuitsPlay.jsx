@@ -562,7 +562,7 @@ export default function TinkercadCircuitsPlay({section}) {
     section === 'arduino'
       ? 'визуализатора Arduino'
       : section && PROJECTS[section]
-        ? `проекта «${PROJECTS[section].label}»`
+        ? `проекта "${PROJECTS[section].label}"`
         : 'Tinkercad Circuits';
   return (
     <BrowserOnly fallback={demoLoadingFallback(`Загрузка ${label}…`)}>

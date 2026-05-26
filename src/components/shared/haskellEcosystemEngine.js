@@ -57,7 +57,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '⚙',
     items: ['Servant · Yesod · Scotty', 'Persistent · aeson', 'optparse · conduit'],
     detail:
-      'Servant описывает API типами; Yesod — full-stack с шаблонами. Библиотеки подключаются точечно через build-depends, а не «всё включено».',
+      'Servant описывает API типами; Yesod — full-stack с шаблонами. Библиотеки подключаются точечно через build-depends, а не "всё включено".',
   },
   {
     id: 'app',
@@ -223,7 +223,7 @@ export const BUILD_STEPS = [
     label: 'GHCup',
     cmd: 'curl --proto \'=https\' -sSf https://get-ghcup.haskell.org | sh\nghcup install ghc 9.8\ncabal update',
     detail:
-      'GHCup ставит GHC, Cabal и HLS. Одна версия компилятора на машину; проекты изолируют зависимости через Cabal/Stack, а не через «виртуальные окружения» как в Python.',
+      'GHCup ставит GHC, Cabal и HLS. Одна версия компилятора на машину; проекты изолируют зависимости через Cabal/Stack, а не через "виртуальные окружения" как в Python.',
   },
   {
     id: 'init',

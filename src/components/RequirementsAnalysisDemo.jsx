@@ -106,11 +106,11 @@ const SMART_LABELS = {
 };
 
 const SMART_TIPS = {
-  specific: 'Используйте «должен», «может», «система» — однозначная формулировка.',
+  specific: 'Используйте "должен", "может", "система" — однозначная формулировка.',
   measurable: 'Добавьте числа: время, %, количество пользователей.',
   achievable: 'Проверьте реализуемость с командой и бюджетом.',
   relevant: 'Свяжите требование с бизнес-целью (минимум ~20 символов).',
-  timeBound: 'Укажите срок: «в течение», «до», «к релизу N».',
+  timeBound: 'Укажите срок: "в течение", "до", "к релизу N".',
 };
 
 const BEST_PRACTICES = [
@@ -223,7 +223,7 @@ function SmartPanel({text}) {
         <div style={{flex: 1, minWidth: '12rem'}}>
           <p style={{margin: 0, fontSize: '0.85rem', fontWeight: 600}}>SMART-валидация</p>
           <p style={{margin: '0.25rem 0 0', fontSize: '0.8rem', color: 'var(--demo-muted)'}}>{scoreVerdict(score)}</p>
-          {text && <p style={{margin: '0.5rem 0 0', fontSize: '0.78rem', fontStyle: 'italic'}}>«{text}»</p>}
+          {text && <p style={{margin: '0.5rem 0 0', fontSize: '0.78rem', fontStyle: 'italic'}}>"{text}"</p>}
         </div>
       </div>
       <div className={styles.smartGrid}>

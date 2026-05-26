@@ -8,7 +8,7 @@ import styles from './WebPageLayersPlay.module.css';
 const LESSONS = [
   {
     layers: {html: true, css: false, js: false},
-    hint: 'Только HTML: браузер показывает «голую» разметку — без цветов и без реакции на кнопку.',
+    hint: 'Только HTML: браузер показывает "голую" разметку — без цветов и без реакции на кнопку.',
   },
   {
     layers: {html: true, css: true, js: false},

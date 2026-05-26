@@ -17,7 +17,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '🖥',
     items: ['JES2 · JCL · RACF', 'VSAM · DB2', 'CICS · IMS · MQ'],
     detail:
-      'Мейнфрейм даёт пакетные очереди (JES), транзакционный CICS, файлы VSAM и безопасность RACF. COBOL-программа — один модуль в цепочке «JCL → load module → данные».',
+      'Мейнфрейм даёт пакетные очереди (JES), транзакционный CICS, файлы VSAM и безопасность RACF. COBOL-программа — один модуль в цепочке "JCL → load module → данные".',
   },
   {
     id: 'compiler',

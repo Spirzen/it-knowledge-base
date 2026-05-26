@@ -10,7 +10,7 @@ const ROLES = [
   {id: 'streamer', label: 'Стример', group: 'producer', desc: 'Live + чат, синхронная обратная связь'},
   {id: 'micro', label: 'Микроблогер', group: 'producer', desc: 'Короткие посты, быстрая реакция на тренды'},
   {id: 'commenter', label: 'Комментатор', group: 'consumer', desc: 'Обсуждение чужого контента, модерация тона'},
-  {id: 'lurker', label: 'Луркер', group: 'consumer', desc: 'Потребление без публикации — «тихое большинство»'},
+  {id: 'lurker', label: 'Луркер', group: 'consumer', desc: 'Потребление без публикации — "тихое большинство"'},
   {id: 'donor', label: 'Донатер', group: 'economic', desc: 'Монетизация внимания через донаты и подписки'},
   {id: 'mod', label: 'Модератор чата', group: 'transform', desc: 'Регуляция общения, фильтр токсичности'},
   {id: 'remixer', label: 'Ремиксер', group: 'transform', desc: 'Пересборка мемов, фан-арт, пародии'},

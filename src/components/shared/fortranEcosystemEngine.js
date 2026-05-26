@@ -209,14 +209,14 @@ export const BUILD_STEPS = [
     label: 'Каталог .mod',
     cmd: 'mkdir -p build/mod\n# флаг -J (gfortran) или -module (ifx)',
     detail:
-      'Компилятор кладёт .mod — «заголовки» модулей с сигнатурами типов и процедур. Зависимые файлы ищут их через -I build/mod.',
+      'Компилятор кладёт .mod — "заголовки" модулей с сигнатурами типов и процедур. Зависимые файлы ищут их через -I build/mod.',
   },
   {
     id: 'compile-base',
     label: 'Базовые модули',
     cmd: 'gfortran -std=f2018 -Jbuild/mod -c src/mod_types.f90\ngfortran -Jbuild/mod -c src/mod_solver.f90',
     detail:
-      'Сначала компилируют модули без зависимостей (types), затем те, кто делает USE types (solver). Нарушение порядка → ошибка «mod file not found».',
+      'Сначала компилируют модули без зависимостей (types), затем те, кто делает USE types (solver). Нарушение порядка → ошибка "mod file not found".',
   },
   {
     id: 'compile-main',

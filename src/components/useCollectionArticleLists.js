@@ -38,7 +38,7 @@ function resolveArticleTitle(docId) {
 }
 
 /**
- * Карта «название подборки» → статьи с человекочитаемыми заголовками.
+ * Карта "название подборки" → статьи с человекочитаемыми заголовками.
  * @returns {Map<string, { id: string, title: string, href: string }[]>}
  */
 export function useCollectionArticleLists() {

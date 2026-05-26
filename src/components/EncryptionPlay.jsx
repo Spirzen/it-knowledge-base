@@ -33,7 +33,7 @@ const SCENARIOS = [
         wire: 'plain',
         payload: 'PASSWORD=MySecret42',
         label: 'Пароль уходит в сеть',
-        detail: 'Строка «PASSWORD=…» — обычный текст в TCP-пакете',
+        detail: 'Строка "PASSWORD=…" — обычный текст в TCP-пакете',
         log: 'Перехватчик на Wi‑Fi или у провайдера читает байты как есть',
       },
       {
@@ -102,7 +102,7 @@ const SCENARIOS = [
     id: 'encrypted',
     title: 'Зашифрованная сессия',
     short: 'SSH',
-    subtitle: 'Согласование cipher, шифрование пакетов, перехватчик видит «шум»',
+    subtitle: 'Согласование cipher, шифрование пакетов, перехватчик видит "шум"',
     steps: [
       {
         spotlight: ['client', 'server'],
@@ -128,7 +128,7 @@ const SCENARIOS = [
         wire: 'cipher',
         payload: 'a7:f3:9c:… e2:01:8b | poly1305 tag',
         label: 'В сети — только шифротекст',
-        detail: 'Перехватчик не видит «systemctl» и не может подменить данные незаметно',
+        detail: 'Перехватчик не видит "systemctl" и не может подменить данные незаметно',
         log: 'Конфиденциальность + целостность (AEAD)',
         sessionKey: true,
       },
@@ -137,7 +137,7 @@ const SCENARIOS = [
         wire: 'decrypt',
         payload: 'systemctl status nginx',
         label: 'Сервер расшифровал пакет',
-        detail: 'Тот же K_sess; ответ «active (running)» тоже шифруется обратно',
+        detail: 'Тот же K_sess; ответ "active (running)" тоже шифруется обратно',
         log: 'Так работает защищённый канал SSH',
         sessionKey: true,
       },
@@ -296,7 +296,7 @@ function EncryptionPlayInner() {
               {payload ? (
                 <code className={styles.wirePayload}>{payload}</code>
               ) : (
-                <span className={styles.wireEmpty}>Нажмите «Пройти сценарий»</span>
+                <span className={styles.wireEmpty}>Нажмите "Пройти сценарий"</span>
               )}
               {wire === 'plain' && <span className={styles.wireTagDanger}>открытый текст</span>}
               {wire === 'cipher' && <span className={styles.wireTagSafe}>шифротекст</span>}
@@ -318,7 +318,7 @@ function EncryptionPlayInner() {
                 {wire === 'plain'
                   ? 'Видит пароль'
                   : wire === 'cipher'
-                    ? 'Только «шум»'
+                    ? 'Только "шум"'
                     : wire === 'kex' || wire === 'derive'
                       ? 'Не восстановит K_sess'
                       : '—'}

@@ -6,7 +6,7 @@ import {demoLoadingFallback} from './shared/demoFallback';
 import styles from './BytecodeVmPlay.module.css';
 
 const MODES = [
-  {id: 'interpret', label: 'Интерпретация', speed: 1, note: 'Каждый opcode — цикл «считай-выполни»'},
+  {id: 'interpret', label: 'Интерпретация', speed: 1, note: 'Каждый opcode — цикл "считай-выполни"'},
   {id: 'jit', label: 'JIT', speed: 4, note: 'Горячий метод компилируется в машинный код'},
   {id: 'aot', label: 'AOT', speed: 8, note: 'Машинный код готов до запуска'},
 ];
@@ -54,7 +54,7 @@ function BytecodeVmPlayInner() {
       setStack([]);
       setLog(
         mode === 'jit' && hotCount + 1 >= 2
-          ? 'Метод «горячий» — JIT сгенерировал нативный код.'
+          ? 'Метод "горячий" — JIT сгенерировал нативный код.'
           : 'Метод завершён. Следующий проход — снова с начала.',
       );
       return;

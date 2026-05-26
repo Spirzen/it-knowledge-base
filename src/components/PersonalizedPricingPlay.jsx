@@ -64,14 +64,14 @@ function PersonalizedPricingPlayInner() {
     <DemoShell>
       <DemoCard
         title="Персонализированная цена"
-        subtitle="Сервис собирает сигналы о вас и подбирает цену в «допустимом» диапазоне — сравните с базовой"
+        subtitle="Сервис собирает сигналы о вас и подбирает цену в "допустимом" диапазоне — сравните с базовой"
       >
         <div className={toolStyles.toolbar}>
           <button type="button" className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm" onClick={resetProfile}>
-            Режим «инкогнито»
+            Режим "инкогнито"
           </button>
           <button type="button" className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm" onClick={applyGreedyProfile}>
-            Профиль «максимум сигналов»
+            Профиль "максимум сигналов"
           </button>
         </div>
 
@@ -86,7 +86,7 @@ function PersonalizedPricingPlayInner() {
             <div className={styles.priceDelta}>
               {result.delta > 0
                 ? `+${formatRub(result.delta)} (+${result.markupPct}%)`
-                : 'Наценок нет — профиль «холодный»'}
+                : 'Наценок нет — профиль "холодный"'}
             </div>
           </div>
         </div>
@@ -135,7 +135,7 @@ function PersonalizedPricingPlayInner() {
 
         <p className="it-demo__hint" style={{marginBottom: 0, marginTop: '0.75rem'}}>
           Отдельно для каждого сигнала наценка небольшая, но в сумме даёт ощутимую разницу — её сложно заметить без
-          сравнения с «чужим» профилем.
+          сравнения с "чужим" профилем.
         </p>
       </DemoCard>
     </DemoShell>

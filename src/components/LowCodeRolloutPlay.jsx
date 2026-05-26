@@ -39,7 +39,7 @@ function LowCodeRolloutPlayInner() {
           <div className={styles.mockBody}>
             {ui.form ? (
               <div className={styles.panel}>
-                <strong>Форма «Новый заказ»</strong>
+                <strong>Форма "Новый заказ"</strong>
                 <input readOnly placeholder="Клиент" value="ООО Ромашка" />
                 <input readOnly placeholder="Сумма" value="12 400 ₽" />
                 <button type="button" className="it-demo__btn it-demo__btn--sm">

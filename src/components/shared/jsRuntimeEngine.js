@@ -52,7 +52,7 @@ export const ECOSYSTEM_AREAS = [
     label: 'IoT',
     tools: 'Johnny-Five, Espruino',
     summary: 'Скрипты для микроконтроллеров и Raspberry Pi.',
-    runtime: 'Ограниченный JS на «железе»',
+    runtime: 'Ограниченный JS на "железе"',
     color: '#f7df1e',
   },
   {

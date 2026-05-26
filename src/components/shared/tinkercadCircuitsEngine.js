@@ -112,7 +112,7 @@ export const CODE_MODES = [
   {
     id: 'blocks',
     label: 'Блоки (Blockly)',
-    desc: 'Перетаскивание блоков «Управление», «Математика» — генерация C++.',
+    desc: 'Перетаскивание блоков "Управление", "Математика" — генерация C++.',
     blocks: ['setup', 'pinMode 13 OUTPUT', 'loop', 'digitalWrite HIGH', 'delay 1000'],
     code: `void setup() {\n  pinMode(13, OUTPUT);\n}\nvoid loop() {\n  digitalWrite(13, HIGH);\n  delay(1000);\n}`,
   },

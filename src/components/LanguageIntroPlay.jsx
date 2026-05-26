@@ -37,7 +37,7 @@ export function LanguageIntroPlayInner({topic, embedded = false}) {
 
   if (!intro) {
     const missing = (
-      <p className={styles.hint}>Обзор для темы «{topic}» пока не добавлен.</p>
+      <p className={styles.hint}>Обзор для темы "{topic}" пока не добавлен.</p>
     );
     if (embedded) return missing;
     return (
@@ -160,7 +160,7 @@ export function LanguageIntroPlayInner({topic, embedded = false}) {
 
           <p className={styles.footer}>
             Полный обзор всех языков — в статье{' '}
-            <a href={OVERVIEW_ARTICLE}>«Основные языки»</a>.
+            <a href={OVERVIEW_ARTICLE}>"Основные языки"</a>.
           </p>
         </div>
   );
@@ -171,7 +171,7 @@ export function LanguageIntroPlayInner({topic, embedded = false}) {
     <DemoShell>
       <DemoCard
         title="Краткое знакомство"
-        subtitle="Обзор из раздела «Основные языки» — без углубления в синтаксис"
+        subtitle="Обзор из раздела "Основные языки" — без углубления в синтаксис"
       >
         {body}
       </DemoCard>

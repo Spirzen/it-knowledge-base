@@ -133,7 +133,7 @@ function OopClassArchetypesDemoInner() {
             </div>
 
             <p className={styles.scenario}>
-              В сценарии «оформление заказа»: {(SCENARIO[selected] || ['—']).join(' → ')}
+              В сценарии "оформление заказа": {(SCENARIO[selected] || ['—']).join(' → ')}
             </p>
           </>
         )}

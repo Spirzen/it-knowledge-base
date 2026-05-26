@@ -305,7 +305,7 @@ function OopBasicsDemoInner() {
         if (!selected) {
           return (
             <p className="it-demo__alert it-demo__alert--info">
-              Сначала создайте объект на вкладке «Конструктор».
+              Сначала создайте объект на вкладке "Конструктор".
             </p>
           );
         }
@@ -364,7 +364,7 @@ function OopBasicsDemoInner() {
         if (!selected) {
           return (
             <p className="it-demo__alert it-demo__alert--info">
-              Сначала создайте объект на вкладке «Конструктор».
+              Сначала создайте объект на вкладке "Конструктор".
             </p>
           );
         }

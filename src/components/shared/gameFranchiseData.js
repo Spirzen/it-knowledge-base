@@ -1,4 +1,4 @@
-/** Каталог франшиз раздела «Игроведение» — данные для хаба и GameFranchisePlay */
+/** Каталог франшиз раздела "Игроведение" — данные для хаба и GameFranchisePlay */
 
 const BASE = '/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies';
 
@@ -159,7 +159,7 @@ export const FRANCHISES = [
       {id: 'xelnga', label: 'Ксел\'нага', desc: 'Древняя раса, связавшая происхождение трёх сторон.'},
     ],
     races: [
-      {id: 'terran', label: 'Терраны', desc: 'Гибкая оборона, механика, тактика «стеной».', traits: ['бункеры', 'медики', 'танки']},
+      {id: 'terran', label: 'Терраны', desc: 'Гибкая оборона, механика, тактика "стеной".', traits: ['бункеры', 'медики', 'танки']},
       {id: 'protoss', label: 'Протоссы', desc: 'Дорогие, но мощные юниты; псионика и щиты.', traits: ['драгоны', 'тёмные тамплиеры']},
       {id: 'zerg', label: 'Зерги', desc: 'Массовый спам, захват экономики, мутации.', traits: ['гидралиски', 'ультралиски', 'нидусы']},
     ],
@@ -484,7 +484,7 @@ export const FRANCHISES = [
     ],
     mechanics: [
       {id: 'needs', label: 'Потребности', desc: 'Голод, гигиена, социализация — цикл дня.'},
-      {id: 'sandbox', label: 'Песочница жизни', desc: 'Нет условия «победы» — цель задаёт игрок.'},
+      {id: 'sandbox', label: 'Песочница жизни', desc: 'Нет условия "победы" — цель задаёт игрок.'},
     ],
     lore: [
       {id: 'will', label: 'Wright', desc: 'Уилл Райт — автор SimCity и The Sims.'},
@@ -534,7 +534,7 @@ export const FRANCHISES = [
     ],
     mechanics: [
       {id: 'ip', label: 'Трансмедиа', desc: 'Настолки, книги, игры — единый лор.'},
-      {id: '40k', label: 'Warhammer 40,000', desc: '«В галактике нет ничего, кроме войны».'},
+      {id: '40k', label: 'Warhammer 40,000', desc: '"В галактике нет ничего, кроме войны".'},
     ],
     lore: [
       {id: 'fantasy', label: 'Fantasy', desc: 'Старый мир — орки, эльфы, империя.'},
@@ -676,7 +676,7 @@ export const FRANCHISES = [
     color: '#38bdf8',
     tagline: 'Нанокостюм и эталон графики эпохи',
     releases: [
-      {year: 2007, name: 'Crysis', type: 'main', platforms: 'PC', note: '«Can it run Crysis?»'},
+      {year: 2007, name: 'Crysis', type: 'main', platforms: 'PC', note: '"Can it run Crysis?"'},
       {year: 2011, name: 'Crysis 2', type: 'main', platforms: 'PC, консоли', note: 'Нью-Йорк, вирус Ceph'},
       {year: 2013, name: 'Crysis 3', type: 'main', platforms: 'PC, консоли', note: 'Купол над NYC'},
       {year: 2021, name: 'Crysis Remastered Trilogy', type: 'spinoff', platforms: 'PC, консоли', note: 'Обновлённая трилогия'},

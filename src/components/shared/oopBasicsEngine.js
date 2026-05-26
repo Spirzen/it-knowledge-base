@@ -1,4 +1,4 @@
-/** Данные и подсказки для демо «Основы ООП» (статья 4-08-oop/1). */
+/** Данные и подсказки для демо "Основы ООП" (статья 4-08-oop/1). */
 
 export const CAT_CLASS = {
   name: 'Cat',
@@ -85,7 +85,7 @@ export function formatConstructorCall(form) {
 
 export function runCatMethod(methodKey, cat) {
   if (methodKey === 'meow') {
-    return `${cat.name} мяукает: «Мяу!»`;
+    return `${cat.name} мяукает: "Мяу!"`;
   }
   if (methodKey === 'sleep') {
     return `${cat.name} засыпает… zzz`;

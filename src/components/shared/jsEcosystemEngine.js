@@ -67,7 +67,7 @@ export const ECOSYSTEM_LAYERS = [
     icon: '⚛',
     items: ['React · Vue · Angular · Svelte', 'Express · NestJS · Fastify', 'Electron · Next · Nuxt'],
     detail:
-      'Фреймворк задаёт структуру проекта и жизненный цикл. Библиотека (date-fns, axios) подключается точечно; фреймворк «ведёт» приложение.',
+      'Фреймворк задаёт структуру проекта и жизненный цикл. Библиотека (date-fns, axios) подключается точечно; фреймворк "ведёт" приложение.',
   },
   {
     id: 'app',
@@ -295,7 +295,7 @@ module.exports = { add: (a,b) => a+b };
 
 // app.js
 const { add } = require('./math');`,
-    traits: ['Синхронный require', 'Кэш модуля', 'Без tree-shaking «из коробки»', 'Файл = модуль'],
+    traits: ['Синхронный require', 'Кэш модуля', 'Без tree-shaking "из коробки"', 'Файл = модуль'],
     tools: 'Node (по умолчанию), Browserify, старый Webpack',
     use: 'Старые пакеты npm, скрипты Node, .cjs',
   },

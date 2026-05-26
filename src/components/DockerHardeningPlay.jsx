@@ -67,7 +67,7 @@ function DockerHardeningPlayInner() {
   const risk = useMemo(() => {
     if (score >= 80) return 'Высокий уровень hardening — близко к production best practices.';
     if (score >= 50) return 'Средний уровень: остаются риски escape и privilege escalation.';
-    return 'Низкий уровень: контейнер близок к «docker run --privileged» по поверхности атаки.';
+    return 'Низкий уровень: контейнер близок к "docker run --privileged" по поверхности атаки.';
   }, [score]);
 
   const barColor = score >= 80 ? '#2e7d32' : score >= 50 ? '#ed6c02' : '#d32f2f';

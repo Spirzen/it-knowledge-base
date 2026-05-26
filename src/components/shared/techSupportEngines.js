@@ -89,7 +89,7 @@ export const TICKET_FLOW_STEPS = [
     id: 'create',
     label: 'Создание тикета',
     icon: '📝',
-    detail: 'CRM-2047 · категория «Авторизация» · приоритет «Средний»',
+    detail: 'CRM-2047 · категория "Авторизация" · приоритет "Средний"',
     kbMatch: null,
   },
   {

@@ -81,7 +81,7 @@ function CodeStylePlayInner() {
               className="it-demo__btn it-demo__btn--sm"
               onClick={() => setFormatted((f) => !f)}
             >
-              {formatted ? 'Показать «сырой» вариант' : 'Применить форматтер (как Prettier)'}
+              {formatted ? 'Показать "сырой" вариант' : 'Применить форматтер (как Prettier)'}
             </button>
             <pre className={styles.pre}>{formatted ? FORMAT_CLEAN : FORMAT_RAW}</pre>
             <p className="it-demo__hint">

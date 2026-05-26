@@ -73,7 +73,7 @@ function TechHistoryPlayInner({topic}) {
     return (
       <DemoShell>
         <DemoCard title="Хронология">
-          <p className={styles.hint}>Тема «{topic}» не найдена в каталоге истории.</p>
+          <p className={styles.hint}>Тема "{topic}" не найдена в каталоге истории.</p>
         </DemoCard>
       </DemoShell>
     );

@@ -18,7 +18,7 @@ export const STACK_LAYERS = [
 
 export const ACCESS_LAYERS = [
   {id: 'pg', label: 'pg (raw)', desc: 'PG.connect · exec с $1, $2'},
-  {id: 'sequel', label: 'Sequel', desc: 'DB[:users].where — DSL без «магии»'},
+  {id: 'sequel', label: 'Sequel', desc: 'DB[:users].where — DSL без "магии"'},
   {id: 'activerecord', label: 'ActiveRecord', desc: 'User.find · save · Relation'},
 ];
 

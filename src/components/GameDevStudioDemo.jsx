@@ -65,7 +65,7 @@ function UnityTab() {
   return (
     <>
       <p className={styles.hint}>
-        GameObject «{UNITY_DEMO_OBJECT.name}» — включите компоненты и посмотрите, что даёт каждый.
+        GameObject "{UNITY_DEMO_OBJECT.name}" — включите компоненты и посмотрите, что даёт каждый.
       </p>
       <div className={styles.compList}>
         {UNITY_DEMO_OBJECT.components.map((c) => {

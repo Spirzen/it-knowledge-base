@@ -34,14 +34,14 @@ export const ADOBE_PRODUCTS = {
     label: 'Acrobat Pro',
     brand: '#ff0000',
     subtitle: 'PDF: страницы, формы и подпись',
-    hint: 'Tagged PDF и AcroForms превращают «электронную бумагу» в интерактивный документ.',
+    hint: 'Tagged PDF и AcroForms превращают "электронную бумагу" в интерактивный документ.',
   },
   indesign: {
     id: 'indesign',
     label: 'InDesign',
     brand: '#ff3366',
     subtitle: 'Связанные текстовые фреймы и стили',
-    hint: 'Текст «течёт» между фреймами — при добавлении контента перестраиваются страницы.',
+    hint: 'Текст "течёт" между фреймами — при добавлении контента перестраиваются страницы.',
   },
   lightroom: {
     id: 'lightroom',

@@ -48,7 +48,7 @@ function XsltTransformDemoInner() {
           return {
             id: `book-${i}`,
             label: `xsl:for-each → book #${i + 1}`,
-            detail: `xsl:value-of: «${title}» (${author})`,
+            detail: `xsl:value-of: "${title}" (${author})`,
           };
         }),
       ];

@@ -5,7 +5,7 @@ import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
 import styles from './VonNeumannArchitecturePlay.module.css';
 
-/** Упрощённая «память» — программа и данные в одном адресном пространстве */
+/** Упрощённая "память" — программа и данные в одном адресном пространстве */
 const MEMORY = [
   {addr: '0x00', value: 'LOAD A, [0x03]', kind: 'code', label: 'инструкция'},
   {addr: '0x01', value: 'ADD  A, [0x04]', kind: 'code', label: 'инструкция'},
@@ -18,7 +18,7 @@ const MEMORY = [
 const SCENARIOS = [
   {
     id: 'fetch',
-    title: 'Цикл «выборка — выполнение»',
+    title: 'Цикл "выборка — выполнение"',
     short: 'Fetch',
     subtitle: 'Процессор последовательно читает команды из памяти по счётчику команд (PC)',
     steps: [
@@ -68,7 +68,7 @@ const SCENARIOS = [
     id: 'unified',
     title: 'Единое адресное пространство',
     short: 'Память',
-    subtitle: 'Код и данные — те же ячейки; процессор не различает их «по смыслу»',
+    subtitle: 'Код и данные — те же ячейки; процессор не различает их "по смыслу"',
     steps: [
       {
         spotlight: ['memory'],
@@ -108,7 +108,7 @@ const SCENARIOS = [
         highlightAddr: null,
         pc: '—',
         label: 'Устройство ввода',
-        detail: 'Клавиатура кладёт байт «7» на шину — контроллер прерывает CPU',
+        detail: 'Клавиатура кладёт байт "7" на шину — контроллер прерывает CPU',
       },
       {
         spotlight: ['cu', 'bus', 'memory'],

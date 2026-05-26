@@ -93,7 +93,7 @@ function SearchVisualizerInner() {
           ))}
         </div>
         <p className={styles.status}>
-          {found ? `Найдено: ${target}` : step < 0 ? 'Нажмите «Шаг»' : `Шаг ${mode === 'linear' ? step + 1 : 'mid=' + step}`}
+          {found ? `Найдено: ${target}` : step < 0 ? 'Нажмите "Шаг"' : `Шаг ${mode === 'linear' ? step + 1 : 'mid=' + step}`}
         </p>
         <div className={styles.controls}>
           <button type="button" className="it-demo__btn it-demo__btn--primary" onClick={nextStep} disabled={found}>

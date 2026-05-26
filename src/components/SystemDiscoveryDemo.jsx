@@ -15,7 +15,7 @@ const CHECKLIST = [
 ];
 
 const DECOMPOSITION = [
-  {id: 'root', label: 'Система «Склад»', children: ['proc', 'data', 'ext']},
+  {id: 'root', label: 'Система "Склад"', children: ['proc', 'data', 'ext']},
   {id: 'proc', label: 'Процессы: приёмка, отгрузка', children: []},
   {id: 'data', label: 'Данные: SKU, остатки, ячейки', children: []},
   {id: 'ext', label: 'Внешние: ERP, TMS', children: []},
@@ -88,7 +88,7 @@ function SystemDiscoveryDemoInner() {
         </div>
 
         <label className={styles.notes}>
-          Заметки и «глупые вопросы»
+          Заметки и "глупые вопросы"
           <textarea
             rows={3}
             value={notes}

@@ -34,7 +34,7 @@ export const MODELING_STAGES = [
     icon: '▤',
     polys: 3200,
     lod: 'Game mesh',
-    detail: 'Поверхность «разрезается» на 2D-острова для текстур.',
+    detail: 'Поверхность "разрезается" на 2D-острова для текстур.',
     artifacts: ['UV layout', 'Texel density map'],
   },
   {
@@ -53,7 +53,7 @@ export function modelingProgress(completedIds) {
   return {done, total: MODELING_STAGES.length, pct: Math.round((done / MODELING_STAGES.length) * 100)};
 }
 
-/** Упрощённая «сетка» — больше линий на поздних этапах */
+/** Упрощённая "сетка" — больше линий на поздних этапах */
 export function drawModelPreview(ctx, w, h, stageId) {
   const cx = w / 2;
   const cy = h / 2;

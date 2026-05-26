@@ -33,7 +33,7 @@ function GoMicroservicePlayInner() {
     const result = dispatchTask(goroutine);
     if (result.ok) {
       setGoroutine(result.state);
-      setLastDispatch(`Задача «${result.task.label}» → ${result.state.workers[result.workerIdx].id} (work-stealing по длине очереди)`);
+      setLastDispatch(`Задача "${result.task.label}" → ${result.state.workers[result.workerIdx].id} (work-stealing по длине очереди)`);
     } else {
       setLastDispatch(result.reason);
     }

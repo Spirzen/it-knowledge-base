@@ -61,7 +61,7 @@ function AppConfigStackPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Конфигурация: форматы и приоритет источников"
-        subtitle="Один параметр port может быть задан в файле, среде и CLI — побеждает самый «сильный» источник."
+        subtitle="Один параметр port может быть задан в файле, среде и CLI — побеждает самый "сильный" источник."
       >
         <p className="it-demo__label" style={{marginBottom: '0.35rem'}}>
           Формат конфигурационного файла
@@ -106,7 +106,7 @@ function AppConfigStackPlayInner() {
           <strong>{PRIORITY_SOURCES.find((s) => s.value === resolved)?.label}</strong>)
         </div>
         <p className={styles.hint} style={{marginTop: '0.5rem'}}>
-          {active.note} Конфигурационная единица — пара «ключ + значение»; настройка в GUI обычно пишет ту же пару в
+          {active.note} Конфигурационная единица — пара "ключ + значение"; настройка в GUI обычно пишет ту же пару в
           JSON или реестр.
         </p>
       </DemoCard>

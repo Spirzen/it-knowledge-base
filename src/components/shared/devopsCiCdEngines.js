@@ -93,7 +93,7 @@ export const DEVOPS_VS_SYSADMIN = [
   {
     id: 'infra',
     topic: 'Инфраструктура',
-    sysadmin: 'Ручная настройка серверов, «истина» на железе.',
+    sysadmin: 'Ручная настройка серверов, "истина" на железе.',
     devops: 'Код в Git → plan/apply; расхождение = инцидент.',
   },
   {
@@ -169,7 +169,7 @@ export const PULUMI_RESOURCES = [
 
 export const CICD_AUTH_STEPS = [
   {id: 'trigger', title: 'Триггер пайплайна', actor: 'GitHub → OIDC', detail: 'Push в main запускает workflow без долгоживущего пароля.'},
-  {id: 'authn', title: 'Аутентификация', actor: 'JWT / federated cred', detail: 'Runner доказывает идентичность workload (не «кто угодно с PAT»).'},
+  {id: 'authn', title: 'Аутентификация', actor: 'JWT / federated cred', detail: 'Runner доказывает идентичность workload (не "кто угодно с PAT").'},
   {id: 'authz', title: 'Авторизация', actor: 'RBAC / environment', detail: 'Роль ci-deploy может писать только в staging; prod — approval.'},
   {id: 'secrets', title: 'Секреты', actor: 'Vault / GH Secrets', detail: 'Ключи не в логах; маскирование в выводе job.'},
   {id: 'audit', title: 'Аудит', actor: 'Immutable log', detail: 'Кто, когда, какой SHA задеплоил — связь с Jira/Azure Boards.'},

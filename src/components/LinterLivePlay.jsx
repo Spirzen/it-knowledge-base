@@ -79,7 +79,7 @@ function LinterLivePlayInner() {
             className="it-demo__btn it-demo__btn--secondary"
             onClick={() => setFixed(false)}
           >
-            Вернуть «плохой» код
+            Вернуть "плохой" код
           </button>
         </div>
 

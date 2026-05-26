@@ -43,7 +43,7 @@ function TechSupportItsmPlayInner() {
             {block.icon} {block.label}
           </p>
           <p className={styles.detailText}>
-            ITSM переводит поддержку из «пожаротушения» в регламентированные процессы с SLA и
+            ITSM переводит поддержку из "пожаротушения" в регламентированные процессы с SLA и
             аналитикой. {block.processes.join(' · ')}.
           </p>
         </div>

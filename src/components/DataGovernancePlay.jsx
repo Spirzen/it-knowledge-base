@@ -110,7 +110,7 @@ function DataGovernancePlayInner() {
               )}
               {minOk && !accessOk && (
                 <p style={{margin: 0}}>
-                  Роль «{ROLES.find((r) => r.id === roleId)?.label}» не имеет права на этот уровень данных.
+                  Роль "{ROLES.find((r) => r.id === roleId)?.label}" не имеет права на этот уровень данных.
                 </p>
               )}
               {minOk && accessOk && (

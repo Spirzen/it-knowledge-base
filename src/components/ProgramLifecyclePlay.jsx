@@ -10,7 +10,7 @@ const VERSION = {major: 2, minor: 1, patch: 4};
 
 const CHANGE_TYPES = [
   {id: 'patch', label: 'PATCH (багфикс)', bump: [0, 0, 1], example: 'Исправлена ошибка округления'},
-  {id: 'minor', label: 'MINOR (фича)', bump: [0, 1, 0], example: 'Добавлена кнопка «Экспорт PDF»'},
+  {id: 'minor', label: 'MINOR (фича)', bump: [0, 1, 0], example: 'Добавлена кнопка "Экспорт PDF"'},
   {id: 'major', label: 'MAJOR (ломающее)', bump: [1, 0, 0], example: 'Удалён старый API v1'},
 ];
 

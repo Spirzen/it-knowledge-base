@@ -71,7 +71,7 @@ export function calculateTotal(discountId, followsSolid) {
       subtotal,
       total: subtotal,
       blocked: true,
-      message: 'Новый тип скидки «Лояльность» — придётся дописать ветку в calculate_total().',
+      message: 'Новый тип скидки "Лояльность" — придётся дописать ветку в calculate_total().',
     };
   }
 

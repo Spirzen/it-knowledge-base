@@ -235,7 +235,7 @@ export const BUILD_STEPS = [
     label: 'renv',
     cmd: 'install.packages("renv")\nrenv::init()\nrenv::install("shiny")\nrenv::snapshot()',
     detail:
-      'renv создаёт локальную библиотеку пакетов и lock-файл. Коллега выполняет renv::restore() — те же версии, что у вас, без «у меня работает».',
+      'renv создаёт локальную библиотеку пакетов и lock-файл. Коллега выполняет renv::restore() — те же версии, что у вас, без "у меня работает".',
   },
   {
     id: 'install',

@@ -568,9 +568,9 @@ function RubyDatabasePlayInner({defaultMode}) {
           {mode === 'stack' &&
             'Ruby не открывает сокет к PostgreSQL сам — гем pg реализует протокол. Параметры $1 отделяют данные от текста SQL.'}
           {mode === 'crud' &&
-            'В pg нет autocommit «как в Rails» — явный transaction или pool.with_connection. В ActiveRecord commit при save внутри транзакции.'}
+            'В pg нет autocommit "как в Rails" — явный transaction или pool.with_connection. В ActiveRecord commit при save внутри транзакции.'}
           {mode === 'layers' &&
-            'Sequel даёт SQL-DSL без объектной «магии»; ActiveRecord — полный цикл find/save. Оба внизу используют pg.'}
+            'Sequel даёт SQL-DSL без объектной "магии"; ActiveRecord — полный цикл find/save. Оба внизу используют pg.'}
           {mode === 'lifecycle' &&
             'res.clear освобождает память драйвера после больших выборок. Не открывайте PG.connect на каждый запрос в вебе.'}
           {mode === 'rails' &&

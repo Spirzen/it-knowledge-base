@@ -269,7 +269,7 @@ function OneCEcosystemPlayInner() {
                   <strong>{picked.label}</strong> ({NODE_TYPE_META[picked.type].label}).{' '}
                 </>
               )}
-              Клик по узлу переключает участие в схеме. Отключите «Расширение» — исчезнут связи с HTTP-сервисом
+              Клик по узлу переключает участие в схеме. Отключите "Расширение" — исчезнут связи с HTTP-сервисом
               доработки.
             </p>
             <div className={styles.bundleBox}>

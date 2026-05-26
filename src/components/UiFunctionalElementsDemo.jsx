@@ -16,7 +16,7 @@ function UiFunctionalElementsDemoInner() {
 
   const toggleTask = (key) => {
     setTasks((prev) => ({...prev, [key]: !prev[key]}));
-    setLastAction(`Чекбокс «${key}»`);
+    setLastAction(`Чекбокс "${key}"`);
   };
 
   return (

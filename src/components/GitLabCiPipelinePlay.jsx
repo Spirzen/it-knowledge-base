@@ -106,7 +106,7 @@ function GitLabCiPipelinePlayInner() {
           {playing ? 'Пайплайн…' : 'Запустить .gitlab-ci.yml'}
         </button>
         <p className="it-demo__hint" style={{marginBottom: 0, marginTop: '0.5rem'}}>
-          Runner с executor «{executor.label}» подхватывает job из очереди GitLab.
+          Runner с executor "{executor.label}" подхватывает job из очереди GitLab.
         </p>
       </DemoCard>
     </DemoShell>

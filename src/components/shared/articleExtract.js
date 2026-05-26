@@ -51,7 +51,7 @@ export function extractChecklistQuestions(articleElement) {
   return [...new Set(found)];
 }
 
-/** Вопросы после заголовков «Вопрос» в лабораторных статьях. */
+/** Вопросы после заголовков "Вопрос" в лабораторных статьях. */
 export function extractArticleQuestions(articleElement) {
   if (!articleElement) {
     return [];
@@ -122,7 +122,7 @@ export function extractArticleQuestions(articleElement) {
 }
 
 /**
- * Вопросы экзамена из нумерованных списков под заголовками «Раздел».
+ * Вопросы экзамена из нумерованных списков под заголовками "Раздел".
  * @returns {{ sections: {id: string, title: string}[], questions: {id: string, number: number, text: string, sectionId: string, sectionTitle: string}[] }}
  */
 export function extractExamQuestions(articleElement) {

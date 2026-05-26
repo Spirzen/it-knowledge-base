@@ -68,7 +68,7 @@ export function buildActionPlan(gaps, horizonMonths) {
     const weeks = Math.max(4, Math.round((horizonMonths * 4) / (top.length + 1)));
     steps.push({
       id: `step-${i}`,
-      title: `Подтянуть «${g.axis}» (+${g.gap} п.п.)`,
+      title: `Подтянуть "${g.axis}" (+${g.gap} п.п.)`,
       detail:
         g.priority === 'высокий'
           ? 'Курс + pet-проект + ревью у ментора'

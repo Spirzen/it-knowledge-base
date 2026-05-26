@@ -124,7 +124,7 @@ const SCENARIOS = [
       {
         spotlight: ['browser', 'logic'],
         label: 'Гидратация JavaScript',
-        detail: 'Клиент «оживляет» DOM и дальше как SPA',
+        detail: 'Клиент "оживляет" DOM и дальше как SPA',
         packet: 'down',
       },
     ],

@@ -84,7 +84,7 @@ function TechSupportOverviewPlayInner() {
 
         <label className="it-demo__hint" style={{display: 'flex', alignItems: 'center', gap: '0.4rem'}}>
           <input type="checkbox" checked={botMode} onChange={(e) => setBotMode(e.target.checked)} />
-          Сценарий «только бот» (без базы знаний)
+          Сценарий "только бот" (без базы знаний)
         </label>
         {botMode && (
           <p className={styles.detailText} style={{color: '#c62828', fontWeight: 600, marginTop: '0.35rem'}}>
@@ -93,8 +93,8 @@ function TechSupportOverviewPlayInner() {
         )}
 
         <p className={styles.footer}>
-          Техподдержка — часть ITSM: процессы должны быть предсказуемыми, а не только «ответить
-          быстрее».
+          Техподдержка — часть ITSM: процессы должны быть предсказуемыми, а не только "ответить
+          быстрее".
         </p>
       </DemoCard>
     </DemoShell>

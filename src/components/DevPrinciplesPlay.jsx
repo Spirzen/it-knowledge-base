@@ -25,7 +25,7 @@ forAdmin(user, logAction);`,
     label: 'YAGNI',
     bad: `class UserService {
   save() {}
-  exportToPdf() {}  // «на будущее»
+  exportToPdf() {}  // "на будущее"
   syncWithCrm() {}
 }`,
     good: `class UserService {

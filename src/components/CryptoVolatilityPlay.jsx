@@ -72,7 +72,7 @@ function CryptoVolatilityPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Симулятор волатильности"
-        subtitle="30 «дней» цены: сравните разброс BTC, альткоина и спокойного фиат-индекса"
+        subtitle="30 "дней" цены: сравните разброс BTC, альткоина и спокойного фиат-индекса"
       >
         <div className={styles.chips}>
           {PRESETS.map((p) => (
@@ -115,7 +115,7 @@ function CryptoVolatilityPlayInner() {
 
         <div className={styles.stats}>
           <span>
-            Изменение за последний «день»:{' '}
+            Изменение за последний "день":{' '}
             <strong className={change24 >= 0 ? styles.up : styles.down}>
               {change24 >= 0 ? '+' : ''}
               {change24.toFixed(1)}%
@@ -134,7 +134,7 @@ function CryptoVolatilityPlayInner() {
         </button>
         <p className={styles.hint}>
           На крипторынке колебания 10–30% за сутки возможны из‑за низкой капитализации, новостей и
-          действий крупных держателей — на графике это видно как «рваные» столбцы.
+          действий крупных держателей — на графике это видно как "рваные" столбцы.
         </p>
       </DemoCard>
     </DemoShell>

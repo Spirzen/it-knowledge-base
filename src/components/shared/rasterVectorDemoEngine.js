@@ -1,4 +1,4 @@
-/** Параметры сцены «логотип» для сравнения растра и вектора */
+/** Параметры сцены "логотип" для сравнения растра и вектора */
 export const SCENE_SIZE = 120;
 
 export const ZOOM_STOPS = [
@@ -39,7 +39,7 @@ export function describeRasterAtZoom(zoom, size = SCENE_SIZE) {
   if (zoom <= 1) {
     return `Сетка ${nativePx}×${nativePx} пикселей — каждая точка закодирована в файле.`;
   }
-  return `При увеличении ${Math.round(zoom * 100)}% браузер интерполирует ${nativePx}×${nativePx} → ${displayPx}×${displayPx}: появляются «лесенки».`;
+  return `При увеличении ${Math.round(zoom * 100)}% браузер интерполирует ${nativePx}×${nativePx} → ${displayPx}×${displayPx}: появляются "лесенки".`;
 }
 
 export function describeVectorAtZoom(zoom) {

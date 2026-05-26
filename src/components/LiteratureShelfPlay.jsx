@@ -101,7 +101,7 @@ function LiteratureShelfPlayInner() {
             </p>
             <p>{book.note}</p>
             <p className={styles.mono} style={{fontSize: '0.72rem', marginTop: '0.5rem'}}>
-              Совет: одна книга на спринт + заметки в базе знаний, а не «прочитать всё».
+              Совет: одна книга на спринт + заметки в базе знаний, а не "прочитать всё".
             </p>
           </div>
         </div>
