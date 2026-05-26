@@ -17,6 +17,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+От [нейрона и слоёв](/encyclopedia/6-ai/6-03-neyroseti/1) — к [первому обучению на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2), затем к обзору концепций и архитектур.
+
 <DocCardList />
 
 <!-- sidebar-collections -->

@@ -7,6 +7,10 @@ related:
     doc: encyclopedia/1-basics/1-02-vvedenie/intro
   - title: Советы для новичка
     doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
+  - title: Перед первыми откликами
+    doc: encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1
+  - title: Тестовое задание при найме
+    doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/13
 ---
 
 import DocCardList from '@theme/DocCardList';

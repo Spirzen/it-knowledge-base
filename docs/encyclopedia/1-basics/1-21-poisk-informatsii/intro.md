@@ -14,6 +14,15 @@ import SearchEnginesHub from '@site/src/components/SearchEnginesHub.jsx';
 
 # О разделе
 
+Раздел учит **находить и проверять** техническую информацию: от устройства поисковых систем до операторов в Google и синтаксиса Elasticsearch.
+
+**Рекомендуемый порядок чтения:**
+
+1. [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3) — практика запросов и оценка источников;
+2. [Поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/1) — индекс, ранжирование, BM25, векторный поиск;
+3. [Языки поисковых запросов](/encyclopedia/1-basics/1-21-poisk-informatsii/2) — SQL, SPARQL, Lucene/Elasticsearch DSL;
+4. [Популярные поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/4) — обзор Google, Яндекс, специализированных сервисов.
+
 <SearchEnginesHub />
 
 <DocCardList />

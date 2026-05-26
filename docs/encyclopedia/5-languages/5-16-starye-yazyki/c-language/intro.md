@@ -23,6 +23,22 @@ import DocCardList from '@theme/DocCardList';
 
 # Си — о разделе
 
+### Зачем этот раздел
+
+**C** — основа системного программирования, Unix и многих современных языков. Маршрут ниже ведёт от `Hello, World` к памяти, линковке и стандартам.
+
+---
+
+### Частые ошибки при старте
+
+| Ошибка | Что делать |
+|--------|------------|
+| Игнор предупреждений компилятора | `-Wall -Wextra` с первого дня |
+| Утечки и UB | [Память процесса](./214.md), [идиомы](./412.md) |
+| Смешение C и C++ | Держитесь `.c` / компилятора `gcc`, не `g++` без нужды |
+
+---
+
 Рекомендуемый порядок для первого прохода:
 
 1. [Первая программа](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/7) — установка toolchain, `Hello, World`, сборка из терминала.
@@ -38,6 +54,12 @@ import DocCardList from '@theme/DocCardList';
 Углубление: [структуры и объединения](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/411), [идиомы и ошибки](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/412), [хеш-таблица](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/413), [встраиваемая БД](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/414), [многопоточность](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/415), [файловый ввод-вывод](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/416), [компиляторы и IDE](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/311), [примеры](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/711), [системное программирование](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/712). Исторический контекст — [История языка С](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/1).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
+### Что попробовать
+
+1. [Первая программа](./7.md) — соберите и запустите из терминала.
+2. Один warning исправьте по подсказке `gcc`.
+3. Сравните с [C++](/encyclopedia/5-languages/5-06-cpp/intro) после пунктов 1–3 маршрута выше.
 
 <DocCardList />
 

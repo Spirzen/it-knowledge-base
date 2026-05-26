@@ -1618,9 +1618,9 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/3">4.16. Память, кластеры и GRID</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/4">4.16. Модели параллельных вычислений</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/5">4.16. Граф алгоритма и матрица следования</a></li>
-  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/6">4.16. Временной анализ параллельных алгорitмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/6">4.16. Временной анализ параллельных алгоритмов</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/7">4.16. Законы производительности</a></li>
-  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/8">4.16. Инженерия параллельных алгорitмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/8">4.16. Инженерия параллельных алгоритмов</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/9">4.16. Параллельное умножение матриц</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/10">4.16. Сети Петри и расписания</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/11">4.16. Практика — OpenMP, MPI и профилирование</a></li>

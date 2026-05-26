@@ -29,9 +29,18 @@ import DocCardList from '@theme/DocCardList';
 
 ## С чего начать в энциклопедии
 
-1. [Что такое терминал](/encyclopedia/2-system-network/2-05-terminal/1) — CMD, PowerShell, Windows Terminal, Bash.
-2. [Основные команды Windows](/encyclopedia/2-system-network/2-05-terminal/102) — справочник для CMD/PowerShell.
-3. [Автоматизация в Windows с PowerShell](/encyclopedia/2-system-network/2-05-terminal/112) — скрипты `.ps1`, политика выполнения, ISE и VS Code.
+Общая база для всех платформ:
+
+1. [Что такое терминал](/encyclopedia/2-system-network/2-05-terminal/1) — терминал vs оболочка, CMD, PowerShell, Bash, потоки ввода-вывода.
+2. [Знаки препинания в командной строке](/encyclopedia/2-system-network/2-05-terminal/11) — `|`, `>`, `&&`, кавычки, переменные.
+
+**Маршрут Windows:** [справочник команд](/encyclopedia/2-system-network/2-05-terminal/102) → [bat-сценарии](/encyclopedia/2-system-network/2-05-terminal/103) → [PowerShell](/encyclopedia/2-system-network/2-05-terminal/112).
+
+**Маршрут Linux / macOS:** [справочник команд](/encyclopedia/2-system-network/2-05-terminal/101) → [скрипты Unix](/encyclopedia/2-system-network/2-05-terminal/111).
+
+**Удалённый сервер и сборка:** [PuTTY и SSH](/encyclopedia/2-system-network/2-05-terminal/1131) · [утилита make](/encyclopedia/2-system-network/2-05-terminal/1132) (оркестрация команд по Makefile, не замена shell).
+
+Справочники **101** и **102** удобнее открывать по задаче, а не читать подряд. Итоги раздела — [статья 2](/encyclopedia/2-system-network/2-05-terminal/2), самопроверка — [чек-лист](/encyclopedia/2-system-network/2-05-terminal/3).
 
 ## PowerShell — официальные материалы Microsoft
 

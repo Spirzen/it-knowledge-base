@@ -1,6 +1,8 @@
 ---
 title: Забота о коде и данных — о разделе
-description: "Подборка материалов раздела Забота о коде и данных в энциклопедии Вселенная IT."
+description: >-
+  Резервные копии, Git, секреты, шифрование и гигиена репозитория — как не
+  потерять код и не утекли данные; маршрут раздела в энциклопедии Вселенная IT.
 sidebar_label: Забота о коде и данных — о разделе
 related:
   - title: "Тестирование информационной безопасности"
@@ -11,19 +13,29 @@ related:
     doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro
   - title: "Информационная безопасность — о разделе"
     doc: encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro
-  - title: "Проверка надежности под нагрузкой"
-    doc: encyclopedia/7-project/7-05-testirovanie/1014
   - title: "DevOps, CI-CD — о разделе"
     doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/intro
-  - title: "Автоматизация тестирования"
-    doc: encyclopedia/7-project/7-05-testirovanie/115
-  - title: "Микросервисы и интеграция — о разделе"
-    doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+Здесь — практики **сохранности исходников и чувствительных данных**: что делать, когда IDE упала, диск сгорел, в репозиторий попал пароль или два разработчика перезаписали один файл. Это не полный курс ИБ (он в [разделе 8.07](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro)), а «гигиена», которую ожидают от любой команды разработки.
+
+> **Смежно:** [Основы работы с Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) · [Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro)
+
+## Рекомендуемый порядок
+
+| Шаг | Материал | Зачем |
+|-----|----------|-------|
+| 1 | [Безопасность кода](./1.md) | Потеря несохранённого, VCS, локальная история |
+| 2 | [Git: ветки и совместная работа](./11.md) | Конфликты, code review |
+| 3 | [Секреты и конфигурация](./117.md) | Пароли не в репозитории |
+| 4 | [Шифрование и бэкапы](./115.md) · [111](./111.md) | Данные в покое и при передаче |
+| 5 | [Итоги](./998.md) · [чек-лист](./999.md) | Самопроверка |
+
+Начните с [первой статьи](./1.md), если ещё не настроили Git на проекте — остальные главы опираются на эту базу.
 
 <DocCardList />
 

@@ -5,7 +5,7 @@
   "truncated_samples": [],
   "broken_999_template_count": 0,
   "broken_999_samples": [],
-  "generic_intro_count": 98,
+  "generic_intro_count": 88,
   "generic_99_checklist_count": 29,
   "mixed_language_artifacts": [],
   "wikipedia_opening_style_count": 48,
@@ -69,13 +69,6 @@
       "9-spinoff/9-05-blokcheyn-kripta-i-nft/2.md",
       "9-spinoff/9-06-otraslevoe-po/2.md"
     ],
-    "Мини-демо ниже — нажимай кнопки и смотри, как это устроено. Ничего на компьютере не меняется.": [
-      "9-spinoff/9-11-dlya-detey/2-video-games/11.md",
-      "9-spinoff/9-11-dlya-detey/2-video-games/20.md",
-      "9-spinoff/9-11-dlya-detey/3-development/15.md",
-      "9-spinoff/9-11-dlya-detey/3-development/16.md",
-      "9-spinoff/9-11-dlya-detey/5-kod/5.md"
-    ],
     "Чек-лист самопроверки — материал энциклопедии Вселенная IT.": [
       "1-basics/1-29-gosudarstvo-i-biznes/4.md",
       "3-data-markup/3-03-myslitelnaya-baza/5.md",
@@ -97,6 +90,11 @@
       "9-spinoff/9-03-igrovaya-industriya/1141.md",
       "9-spinoff/9-03-igrovaya-industriya/1142.md",
       "9-spinoff/9-03-igrovaya-industriya/1143.md"
+    ],
+    "Демо ниже — нажимайте кнопки и смотрите, как это устроено. Ничего на компьютере не меняется.": [
+      "9-spinoff/9-11-dlya-detey/2-video-games/11.md",
+      "9-spinoff/9-11-dlya-detey/3-development/15.md",
+      "9-spinoff/9-11-dlya-detey/5-kod/5.md"
     ]
   }
 }

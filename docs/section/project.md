@@ -176,7 +176,10 @@ slug: /section/project
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/112">7.06. Типы классов</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/113">7.06. Конструкция из классов</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114">7.06. Доменная модель</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141">7.06. Типы классов в DDD</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/115">7.06. Паттерны проектирования</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/116">7.06. Системный подход и системное мышление</a></li>
+  <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161">7.06. Имитационное моделирование</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2">7.06. Основы системного проектирования и масштабируемости параллелизма</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3">7.06. Архитектурная практика</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998">7.06. Итоги</a></li>

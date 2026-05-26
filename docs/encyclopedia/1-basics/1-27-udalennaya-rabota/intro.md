@@ -17,6 +17,18 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Раздел про **работу вне офиса**: доступы и связь, отличие «удалёнки» от дистанционной работы по ТК РФ, процессы и метрики команды. Связан с [Коммуникацией](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro) и [Карьерой в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro).
+
+## Как читать
+
+| Глава | Содержание | Кому в первую очередь |
+|-------|------------|------------------------|
+| [1](/encyclopedia/1-basics/1-27-udalennaya-rabota/1) | Практика, инфраструктура, право, психология; интерактив VPN / VDI / Zero Trust | все, особенно новички |
+| [3](/encyclopedia/1-basics/1-27-udalennaya-rabota/3) | Чек-лист самопроверки (сотрудник и команда) | перед выходом на удалёнку |
+| [2](/encyclopedia/1-basics/1-27-udalennaya-rabota/2) | Сжатые итоги | повторение после главы 1 |
+
+В [главе 1](/encyclopedia/1-basics/1-27-udalennaya-rabota/1) сначала блок **«Практика»**, затем теория и право — можно читать выборочно.
+
 <DocCardList />
 
 <!-- sidebar-collections -->

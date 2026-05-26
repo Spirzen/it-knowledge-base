@@ -24,7 +24,7 @@ import DocCardList from '@theme/DocCardList';
 1. [Что такое ИИ на самом деле](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1) — термины, перцептрон, трансформер, ограничения LLM.
 2. [История ИИ](/encyclopedia/6-ai/6-01-vvedenie-v-ii/11) и [классификация моделей](/encyclopedia/6-ai/6-01-vvedenie-v-ii/112).
 3. [Машинное обучение](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1) — типы обучения, датасеты, метрики, sklearn и фреймворки.
-4. [Нейрон](/encyclopedia/6-ai/6-03-neyroseti/1) — веса, слои, обучение.
+4. [Нейрон](/encyclopedia/6-ai/6-03-neyroseti/1) — веса, слои; затем [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2) — первое обучение в коде.
 5. [Большие языковые модели](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1) — LLM, токены, инференс, агенты.
 6. [Разработка ИИ-решений](/encyclopedia/6-ai/6-05-razrabotka-ii/1) — API, RAG, галлюцинации, развёртывание.
 7. [Применение в бизнесе](/encyclopedia/6-ai/6-06-primenenie-ii/1) — критерии зрелости продукта и риски.

@@ -1,16 +1,14 @@
 ---
 title: Платформы — о разделе
-description: "Подборка материалов раздела Платформы в энциклопедии Вселенная IT."
+description: >-
+  Платформы в IT: ОС, облако, маркетплейсы, соцсети, корпоративное ПО — что
+  считается платформой и как выбирать; маршрут раздела Вселенная IT.
 sidebar_label: Платформы — о разделе
 related:
   - title: "Операционная система — о разделе"
     doc: encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro
   - title: "Терминал — о разделе"
     doc: encyclopedia/2-system-network/2-05-terminal/intro
-  - title: "Архитектура персонального компьютера"
-    doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7
-  - title: "Системное администрирование — о разделе"
-    doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro
   - title: "Модели и сервисы облачных технологий"
     doc: encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1
   - title: "Основы DevOps"
@@ -20,6 +18,22 @@ related:
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+**Платформа** в IT — среда, на которой другие строят продукт: операционная система, облако (IaaS/PaaS), маркетплейс, соцсеть, корпоративный портал. Раздел помогает не путать «платформу» с «фреймворком» и понимать, **кто владеет данными, правилами модерации и экономикой** экосистемы.
+
+> **Смежно:** [ОС](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro) · [Облака](/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/intro) · [Low-code](/encyclopedia/8-infra-security/8-02-low-code-no-code/intro) · [Аналитика](/encyclopedia/7-project/7-04-analitika/intro)
+
+## Рекомендуемый порядок
+
+| Шаг | Материал | Тема |
+|-----|----------|------|
+| 1 | [Платформы в IT](./1.md) | Определение, карта видов |
+| 2 | [Программные платформы](./3.md) | API, SDK, экосистема |
+| 3 | [Корпоративное ПО](./3001.md) · [платформенные решения](./3002.md) | B2B, интеграции |
+| 4 | [Социальные сети](./311.md) · [мессенджеры](./312.md) | Потребительские платформы |
+| 5 | [Итоги](./98.md) · [чек-лист](./99.md) | Закрепление |
+
+Для разработчика полезно читать параллельно [как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro) — там HTTP и браузер, здесь — бизнес-модель и роль владельца платформы.
 
 <DocCardList />
 

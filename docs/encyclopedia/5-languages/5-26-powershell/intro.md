@@ -21,6 +21,38 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+### Зачем этот раздел
+
+Подборка по **PowerShell** в энциклопедии: синтаксис, первая программа и смежные темы. Пройдите один маршрут до конца, не смешивая несколько языков на старте.
+
+---
+
+### С чего начать
+
+| Шаг | Материал | Зачем |
+|-----|----------|-------|
+| 1 | [Первая программа](./122.md) | Запуск и синтаксис |
+
+---
+
+### Частые ошибки при старте
+
+| Ошибка | Что делать |
+|--------|------------|
+| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Код без запуска | Выполните пример локально |
+| Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
+
+---
+
+### Что попробовать
+
+1. Шаг 1 из таблицы.
+2. Три непонятных термина — найдите статьи в оглавлении раздела.
+3. Другой язык — только после своей рабочей первой программы.
+
+---
+
 <PowerShellShellPlay lesson="intro" />
 
 Раздел посвящён **PowerShell** — оболочке и языку сценариев для автоматизации Windows, Linux и macOS. Материалы идут от истории и установки к синтаксису, объектному конвейеру, ошибкам и практическим скриптам.
@@ -66,7 +98,7 @@ import DocCardList from '@theme/DocCardList';
 |--------|-----------------|
 | [Документация PowerShell (хаб)](https://learn.microsoft.com/ru-ru/powershell/) | Точка входа: установка, примеры, ссылка на галерею, браузер модулей |
 | [Что такое PowerShell?](https://learn.microsoft.com/ru-ru/powershell/scripting/overview?view=powershell-7.6) | Оболочка, язык сценариев и платформа управления в одном обзоре |
-| [Установка PowerShell](https://learn.microsoft.com/ru-ru/powershell/scripting/install/install-powershell?view=powershell-7.6) | Windows, Linux, macOS; `pwsh` vs встроенный 5.1 |
+| [Установка PowerShell](https://learn.microsoft.com/ru-ru/powershell/scripting/install/install-powershell?view=powershell-7.6) | Windows, Linux, macOS; `pwsh` и встроенный 5.1 |
 | [Примеры скриптов для администрирования](https://learn.microsoft.com/ru-ru/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.6) | Готовые сценарии: службы, события, реестр, сеть |
 | [Windows PowerShell ISE](https://learn.microsoft.com/ru-ru/powershell/scripting/windows-powershell/ise/introducing-the-windows-powershell-ise?view=powershell-7.6) | Legacy-среда под 5.1; для новых проектов — VS Code |
 | [PowerShell Gallery](https://www.powershellgallery.com/) | Публикация и установка модулей (`Install-Module`, `Find-Module`) |

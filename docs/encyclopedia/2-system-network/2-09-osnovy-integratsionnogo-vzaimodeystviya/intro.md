@@ -25,6 +25,15 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Раздел про то, как программы и сервисы **договариваются** друг с другом: контракты, HTTP, API, очереди, SOAP и инструменты проверки.
+
+**Рекомендуемый порядок чтения:**
+
+1. [Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1) — термины, контракт, зачем всё это.
+2. [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) и [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) — основа веб-интеграций.
+3. [Postman и curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) — ручная проверка запросов.
+4. [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) — когда HTTP «здесь и сейчас» недостаточно.
+
 <DocCardList />
 
 <!-- sidebar-collections -->

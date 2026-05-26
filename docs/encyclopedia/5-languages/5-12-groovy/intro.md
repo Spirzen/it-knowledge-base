@@ -1,6 +1,8 @@
 ---
 title: Groovy — о разделе
-description: "Раздел про Groovy на JVM: синтаксис, GDK, замыкания, DSL (Gradle, Jenkins), тесты (Spock)."
+description: >-
+  Groovy на JVM — синтаксис, GDK, DSL для Gradle и Jenkins, тесты Spock;
+  маршрут для сборки и автоматизации, не для «основного» приложения.
 sidebar_label: Groovy — о разделе
 related:
   - title: "Ruby — о разделе"
@@ -17,24 +19,82 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про **Groovy** на JVM: синтаксис, GDK, замыкания, DSL (Gradle, Jenkins), тесты (Spock). Язык чаще встречается в **сборке и автоматизации**, реже как единственный язык всего приложения.
+Раздел про **Groovy** на JVM: синтаксис, GDK, замыкания, DSL (**Gradle**, **Jenkins**), тесты (**Spock**).
 
-**Рекомендуемый порядок для новичка:**
+Честная установка: Groovy **редко** бывает единственным языком всего продукта. Его учат, когда нужно читать `build.gradle`, править `Jenkinsfile` или писать выразительные тесты к Java/Kotlin-коду. База [Java](/encyclopedia/5-languages/5-03-java/intro) сильно ускоряет вход.
 
-0. [Что знать перед Groovy](/encyclopedia/5-languages/5-12-groovy/1001) — минимум Java/JVM и маршрут по разделу  
-1. [История](/encyclopedia/5-languages/5-12-groovy/1) — зачем язык появился на JVM  
-2. [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) — `==`, GString, `def`, вызов из Java  
-3. [Первая программа](/encyclopedia/5-languages/5-12-groovy/2) — IDE или `groovy hello.groovy`  
-4. [Основы языка](/encyclopedia/5-languages/5-12-groovy/11) — компиляция, MetaClass, **делегирование замыканий** (Gradle DSL)  
-5. [Типы](/encyclopedia/5-languages/5-12-groovy/12) → [Операторы](/encyclopedia/5-languages/5-12-groovy/13) → [Циклы](/encyclopedia/5-languages/5-12-groovy/14)  
-6. [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro) (если нужна база) → [ООП в Groovy](/encyclopedia/5-languages/5-12-groovy/15) → [Особенности](/encyclopedia/5-languages/5-12-groovy/16)  
-7. [Пунктуация](/encyclopedia/5-languages/5-12-groovy/17) → [Конструкции и фреймворки](/encyclopedia/5-languages/5-12-groovy/18)  
-8. [Справочник](/encyclopedia/5-languages/5-12-groovy/3) — шпаргалка по мере задач  
-9. [Итоги](/encyclopedia/5-languages/5-12-groovy/998) и [чек-лист](/encyclopedia/5-languages/5-12-groovy/999)
-
-Опыт с **Java** сильно ускоряет вход. Интерактивные демо в части статей построены на JavaScript — рядом всегда есть примеры на Groovy.
+Интерактивные демо в части статей — на JavaScript; рядом всегда есть примеры на Groovy.
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
+---
+
+## Два маршрута
+
+| Кто вы | Маршрут |
+|--------|---------|
+| **Уже пишете на Java/Kotlin** | [1001](./1001.md) → [Groovy и Java](./20.md) → [11](./11.md) (делегирование замыканий) → [3](./3.md) (Spock, Jenkins) |
+| **Новичок на JVM** | Сначала [Java — первая программа](/encyclopedia/5-languages/5-03-java/13), потом [первая программа на Groovy](./2.md) |
+
+---
+
+## Рекомендуемый порядок (язык + инструменты)
+
+0. [Что знать перед Groovy](./1001.md)  
+1. [История](./1.md) — зачем язык на JVM  
+2. [Groovy и Java](./20.md) — `==`, GString, `def`, вызов из Java  
+3. [Первая программа](./2.md) — IDEA, NetBeans или `groovy hello.groovy`  
+4. [Основы](./11.md) — MetaClass, **делегирование замыканий** (сердце Gradle DSL)  
+5. [Типы](./12.md) → [Операторы](./13.md) → [Циклы](./14.md)  
+6. [ООП](./15.md) → [Особенности](./16.md)  
+7. [Пунктуация](./17.md) → [Конструкции и фреймворки](./18.md)  
+8. [Gradle Groovy DSL](./23.md) — чтение `build.gradle`  
+9. [Spock](./21.md) · [Jenkins Pipeline](./22.md) — CI и тесты  
+10. [Справочник](./3.md) — углубление  
+11. [Итоги](./998.md) и [чек-лист](./999.md)
+
+:::tip Gradle на Kotlin DSL
+Новые проекты часто пишут `build.gradle.kts` ([Kotlin DSL](/encyclopedia/5-languages/5-09-kotlin/230)). Groovy DSL всё ещё встречается в старых репозиториях и в примерах Android — этот раздел как раз про чтение таких скриптов.
+:::
+
+---
+
+### Зачем этот раздел
+
+Научить **читать и писать Groovy там, где он реально живёт**: сборка, CI, тесты — а не конкурировать с Spring Boot на Java/Kotlin.
+
+---
+
+### С чего начать (кратко)
+
+| Шаг | Материал | Зачем |
+|-----|----------|-------|
+| 1 | [Первая программа](./2.md) | Запуск, структура Gradle-проекта |
+| 2 | [Gradle Groovy DSL](./23.md) | `build.gradle` |
+| 3 | [Основы — делегирование](./11.md) | Почему работает `implementation` |
+| 4 | [Spock](./21.md) · [Jenkins](./22.md) | Тесты и CI |
+
+---
+
+### Частые ошибки при старте
+
+| Ошибка | Что делать |
+|--------|------------|
+| Учить Groovy без Java | Минимум [Java 13](/encyclopedia/5-languages/5-03-java/13) или Kotlin на JVM |
+| Сравнивать `==` с Java | В Groovy `==` → `equals` — [20](./20.md) |
+| Писать приложение на Grails «с нуля» | Для нового веба чаще Spring/Ktor; Grails — [18](./18.md), legacy |
+| Забыть `def` в скрипте | Иначе `MissingPropertyException` — [2](./2.md) |
+
+---
+
+### Что попробовать
+
+1. Скрипт `hello.groovy` без IDE — [2.md](./2.md).
+2. В [11.md](./11.md) — мини-DSL с `delegate` как в Gradle.
+3. Один тест Spock к Java-классу — раздел 19 в [3.md](./3.md).
+4. [чек-лист](./999.md).
+
+---
 
 <DocCardList />
 

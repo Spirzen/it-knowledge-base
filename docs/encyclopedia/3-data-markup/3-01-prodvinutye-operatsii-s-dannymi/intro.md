@@ -14,6 +14,15 @@ import DocCardList from '@theme/DocCardList';
 |------|--------|--------|
 | Базис операторов | [Операторы](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/33) | сравнение, логика, приоритет — перед разделом |
 | Обзор операций | [Продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/1) | преобразования, строки, потоки, объекты, даты |
+| Представление | [Биты, байты, машинные слова](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/113) | байт, слово, endianness |
+| Память | [Адресация данных в памяти](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/112) | виртуальные адреса, MMU, указатели |
+| Передача | [Маршалинг и анмаршалинг](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111) | JSON, protobuf, безопасность десериализации |
+| Закрепление | [Итоги](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/998), [Чек-лист](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/999) | самопроверка |
+
+:::tip Связанные разделы
+- Физика и кодировки: [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8).
+- Форматы конфигураций: [Конфигурации и данные](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/intro).
+:::
 
 <DocCardList />
 
