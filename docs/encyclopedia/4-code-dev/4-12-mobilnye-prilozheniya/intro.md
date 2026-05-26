@@ -32,7 +32,7 @@ import DocCardList from '@theme/DocCardList';
 | Симптом | Причина |
 |---------|---------|
 | Приложение не ставится | Debug-подпись вместо release — [1141](./1141.md) |
-| «App keeps stopping» | Краш в `onCreate` / главном потоке — смотрите Logcat |
+| "App keeps stopping" | Краш в `onCreate` / главном потоке — смотрите Logcat |
 | iOS только на Mac | Сборка под iPhone требует Xcode |
 | Expo не видит телефон | Разные сети — `expo start --tunnel` |
 
@@ -51,7 +51,7 @@ import DocCardList from '@theme/DocCardList';
 | Симптом | Причина |
 |---------|---------|
 | Приложение не ставится | Debug-подпись вместо release — [1141](./1141.md) |
-| «App keeps stopping» | Краш в `onCreate` / главном потоке — смотрите Logcat |
+| "App keeps stopping" | Краш в `onCreate` / главном потоке — смотрите Logcat |
 | iOS только на Mac | Сборка под iPhone требует Xcode |
 | Expo не видит телефон | Разные сети — `expo start --tunnel` |
 

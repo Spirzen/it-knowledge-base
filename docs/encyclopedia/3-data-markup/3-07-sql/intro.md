@@ -46,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro).
 

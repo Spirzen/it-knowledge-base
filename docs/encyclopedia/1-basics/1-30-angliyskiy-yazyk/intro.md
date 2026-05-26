@@ -26,7 +26,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Цифровая грамотность** — [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Предупреждения при изучении — о разделе](/encyclopedia/1-basics/1-05-preduprezhdenie/intro), [Настройка Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11), [Родительский контроль](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/111), [Поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/1), [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3).
 

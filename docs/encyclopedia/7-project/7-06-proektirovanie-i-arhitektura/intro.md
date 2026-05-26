@@ -37,7 +37,7 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Как читать раздел</div>
-  <p>Не обязательно идти по алфавиту в меню. Ниже — три маршрута; в конце — связи с соседними разделами и подборка «Архитектура и проектирование ПО».</p>
+  <p>Не обязательно идти по алфавиту в меню. Ниже — три маршрута; в конце — связи с соседними разделами и подборка "Архитектура и проектирование ПО".</p>
 </div>
 
 ---
@@ -64,7 +64,7 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">Разбор</div>
-  <p><strong>«Срочно нужны микросервисы»</strong> — сначала NFR и границы команд; сравните с <a href="design/2126.md">модульным монолитом</a> и <a href="design/2141.md">таблицей trade-off</a>.</p>
+  <p><strong>"Срочно нужны микросервисы"</strong> — сначала NFR и границы команд; сравните с <a href="design/2126.md">модульным монолитом</a> и <a href="design/2141.md">таблицей trade-off</a>.</p>
 </div>
 
 ---
@@ -98,7 +98,7 @@ CAP/PACELC — [распределённые системы](design/21.md), ит
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Архитектура и проектирование ПО** — [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117).
 

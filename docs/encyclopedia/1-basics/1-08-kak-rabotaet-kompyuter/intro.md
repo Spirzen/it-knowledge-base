@@ -31,7 +31,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Здесь — путь от «что такое компьютер» до железа, накопителей, видеокарты, периферии и загрузки ОС. Материалы идут **от простого к глубокому**. Справочник характеристик ([81](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/81)) удобен при выборе техники, но не обязателен подряд с уроками.
+Здесь — путь от "что такое компьютер" до железа, накопителей, видеокарты, периферии и загрузки ОС. Материалы идут **от простого к глубокому**. Справочник характеристик ([81](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/81)) удобен при выборе техники, но не обязателен подряд с уроками.
 
 **Рекомендуемый порядок для новичка:** [1](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1) → [7](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7) → [3](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/3) → [6](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/6). Главы [2](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/2), [4](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/4), [5](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/5) и [8](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8) — по желанию или с возвратом позже.
 
@@ -40,7 +40,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Компьютерная грамотность** — [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro).
 

@@ -31,7 +31,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
-Перед [ООП-паттернами в Rust](/encyclopedia/5-languages/5-13-rust/141): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro).
+Перед [ООП-паттернами в Rust](/encyclopedia/5-languages/5-13-rust/141): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro).
 
 Пройдите **один маршрут до конца**, не смешивая на старте несколько языков — иначе правила владения смешаются с GC из Java или Python.
 
@@ -85,7 +85,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 
@@ -108,7 +108,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Системное программирование** — [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 

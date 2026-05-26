@@ -25,7 +25,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
-Перед [классами и ООП](./10): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro).
+Перед [классами и ООП](./10): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro).
 
 ### Рекомендуемый маршрут
 
@@ -59,7 +59,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 
@@ -82,7 +82,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro).
 

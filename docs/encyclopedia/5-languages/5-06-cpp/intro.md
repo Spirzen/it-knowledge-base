@@ -37,12 +37,12 @@ import DocCardList from '@theme/DocCardList';
 
 | Этап | Статьи | Зачем |
 |------|--------|--------|
-| Подготовка | [Что знать перед C++](/encyclopedia/5-languages/5-06-cpp/1001) | фундамент из разделов «Основы», «Код», «Система» |
+| Подготовка | [Что знать перед C++](/encyclopedia/5-languages/5-06-cpp/1001) | фундамент из разделов "Основы", "Код", "Система" |
 | Старт | [Язык системного программирования](/encyclopedia/5-languages/5-06-cpp/1) | зачем C++, модель компиляции, ABI |
 | Углубление (обзор) | [Углублённые темы](/encyclopedia/5-languages/5-06-cpp/28) | модули, EH, сравнение с Rust, HPC |
 | Идиомы и C++20 | [Идиомы](/encyclopedia/5-languages/5-06-cpp/30), [Диапазоны](/encyclopedia/5-languages/5-06-cpp/31) | RAII, copy-and-swap, ranges/views |
 | Синтаксис | [Типы](/encyclopedia/5-languages/5-06-cpp/11), [Операторы](/encyclopedia/5-languages/5-06-cpp/12), [Циклы и управление](/encyclopedia/5-languages/5-06-cpp/13) | базовый язык |
-| Память и ООП | [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro) (база) → [ООП в C++](/encyclopedia/5-languages/5-06-cpp/14), [Память](/encyclopedia/5-languages/5-06-cpp/19), [Системное программирование](/encyclopedia/5-languages/5-06-cpp/21) | классы, владение, низкий уровень |
+| Память и ООП | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) (база) → [ООП в C++](/encyclopedia/5-languages/5-06-cpp/14), [Память](/encyclopedia/5-languages/5-06-cpp/19), [Системное программирование](/encyclopedia/5-languages/5-06-cpp/21) | классы, владение, низкий уровень |
 | Практика | [Функции и лямбды](/encyclopedia/5-languages/5-06-cpp/17), [Сборка](/encyclopedia/5-languages/5-06-cpp/1004), [CMake](/encyclopedia/5-languages/5-06-cpp/1006), [Задания](/encyclopedia/5-languages/5-06-cpp/1008) | писать, собирать, закреплять |
 | UI и графика | [Qt](/encyclopedia/5-languages/5-06-cpp/27), [Qt Widgets](/encyclopedia/5-languages/5-06-cpp/2731), [Qt Quick](/encyclopedia/5-languages/5-06-cpp/2732), [Vulkan](/encyclopedia/5-languages/5-06-cpp/29), [Игры](/encyclopedia/5-languages/5-06-cpp/22) | desktop, GPU |
 | Продвинутое | [Потоки](/encyclopedia/5-languages/5-06-cpp/20), [Сеть](/encyclopedia/5-languages/5-06-cpp/25), [Экосистема](/encyclopedia/5-languages/5-06-cpp/10) | конкурентность, I/O, фреймворки |
@@ -50,7 +50,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья [1](/encyclopedia/5-languages/5-06-cpp/1) — вводный обзор; продолжение в [28](/encyclopedia/5-languages/5-06-cpp/28).
 
-### Маршрут «ООП и парадигмы» (C++)
+### Маршрут "ООП и парадигмы" (C++)
 
 Концепции ООП без C++: [раздел ООП](/encyclopedia/4-code-dev/4-08-oop/intro), начните с [сложности и декомпозиции](/encyclopedia/4-code-dev/4-08-oop/7).
 
@@ -90,7 +90,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 
@@ -109,7 +109,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Системное программирование** — [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro).
 

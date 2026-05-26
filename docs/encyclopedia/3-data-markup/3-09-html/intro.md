@@ -36,7 +36,7 @@ HTML — **каркас** страницы: заголовки, абзацы, с
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Веб-разработка** — [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro).
 

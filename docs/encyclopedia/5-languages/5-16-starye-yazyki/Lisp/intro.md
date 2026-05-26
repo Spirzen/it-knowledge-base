@@ -56,7 +56,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 
@@ -75,7 +75,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro).
 

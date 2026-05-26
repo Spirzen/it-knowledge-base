@@ -25,7 +25,7 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 
 <div class="callout callout--info">
   <div class="callout-title">Примечание</div>
-  Блоки с пометкой «псевдокод» иллюстрируют логику; блоки Python и JavaScript без такой пометки можно запускать (инструкции — в соответствующих главах). Онлайн-интерпретатор Python: <a href="https://trinket.io/python3" target="_blank" rel="noopener noreferrer">Trinket</a>.
+  Блоки с пометкой "псевдокод" иллюстрируют логику; блоки Python и JavaScript без такой пометки можно запускать (инструкции — в соответствующих главах). Онлайн-интерпретатор Python: <a href="https://trinket.io/python3" target="_blank" rel="noopener noreferrer">Trinket</a>.
 </div>
 
 <div class="callout callout--tip">

@@ -28,7 +28,7 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">До изучения языков</div>
-  Блоки «Справочно на …» иллюстрируют те же идеи синтаксисом языка. Зависимости и DI — в <a href="/encyclopedia/4-code-dev/4-09-zavisimosti/intro">разделе 4.09</a>; классы и наследование подробнее — в <a href="/encyclopedia/4-code-dev/4-08-oop/intro">ООП</a>.
+  Блоки "Справочно на …" иллюстрируют те же идеи синтаксисом языка. Зависимости и DI — в <a href="/encyclopedia/4-code-dev/4-09-zavisimosti/intro">разделе 4.09</a>; классы и наследование подробнее — в <a href="/encyclopedia/4-code-dev/4-08-oop/intro">ООП</a>.
 </div>
 
 <DocCardList />
@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **База программиста** — [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Объектно-ориентированное программирование — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro), [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro), [Проект, структура и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro).
 

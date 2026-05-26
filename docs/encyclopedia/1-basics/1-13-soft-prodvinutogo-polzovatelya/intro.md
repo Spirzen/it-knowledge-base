@@ -29,7 +29,7 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 | Термин | В двух словах |
 | :--- | :--- |
 | **MFT** | Таблица файлов NTFS; по ней строит индекс Everything |
-| **Hosted / bare-metal** | ВМ как программа в Windows vs гипервизор на «голом» сервере |
+| **Hosted / bare-metal** | ВМ как программа в Windows vs гипервизор на "голом" сервере |
 | **Контейнер** | Изолированный процесс с образом (Docker), не полная ВМ |
 | **LSP** | Сервер подсказок в редакторе (IntelliSense в VS Code) |
 | **NAT / Bridge** | Режимы сети виртуальной машины |

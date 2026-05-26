@@ -60,7 +60,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 
@@ -79,7 +79,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Kotlin — о разделе](/encyclopedia/5-languages/5-09-kotlin/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro), [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro).
 

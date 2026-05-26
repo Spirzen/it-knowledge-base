@@ -19,7 +19,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 # О разделе
 
-Раздел про язык **Ruby** (синтаксис, stdlib, ООП) и экосистему вокруг него (Rails, гемы). Ruby удобен для чтения кода «как текста»: блоки, итераторы, «всё — объект». На Ruby написан **Rails**; для старта достаточно интерпретатора и файла `.rb`.
+Раздел про язык **Ruby** (синтаксис, stdlib, ООП) и экосистему вокруг него (Rails, гемы). Ruby удобен для чтения кода "как текста": блоки, итераторы, "всё — объект". На Ruby написан **Rails**; для старта достаточно интерпретатора и файла `.rb`.
 
 Примеры со значком **Rails / ActiveSupport** относятся к фреймворку, а не к стандартной библиотеке MRI.
 
@@ -33,7 +33,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 1 | [Первая программа](./20.md) | `ruby`, `puts`, IRB |
 | 2 | [Синтаксис](./12.md) → [Основы](./1.md) | TL;DR в начале `1.md` |
 | 3 | [Типы](./13.md) → [Управление](./14.md) | Итераторы, `case`/`in` |
-| 4 | [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП в Ruby](./102.md) | Классы, модули |
+| 4 | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП в Ruby](./102.md) | Классы, модули |
 | 5 | [Фреймворки](./15.md) → [Rails](./21.md) | Веб после языка |
 | 6 | [Справочник](./3.md) → [Чек-лист](./999.md) | Шпаргалка |
 
@@ -63,7 +63,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 
@@ -86,7 +86,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro), [Kotlin — о разделе](/encyclopedia/5-languages/5-09-kotlin/intro), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro).
 

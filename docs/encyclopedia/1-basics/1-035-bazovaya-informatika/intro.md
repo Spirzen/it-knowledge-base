@@ -28,7 +28,7 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
 </div>
 
-Это **учебный курс «Базовая информатика»** — **маршрут** по темам энциклопедии — что читать, в каком порядке и где углублаться. Подробные статьи уже есть в энциклопедии ([компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [данные](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [программы](/encyclopedia/1-basics/1-19-programma/intro), [сеть](/encyclopedia/2-system-network/2-03-set-i-internet/intro)); здесь они собраны в логику школьного и начального курса.
+Это **учебный курс "Базовая информатика"** — **маршрут** по темам энциклопедии — что читать, в каком порядке и где углублаться. Подробные статьи уже есть в энциклопедии ([компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [данные](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [программы](/encyclopedia/1-basics/1-19-programma/intro), [сеть](/encyclopedia/2-system-network/2-03-set-i-internet/intro)); здесь они собраны в логику школьного и начального курса.
 
 Этот раздел — академичный вход в базовый пласт цифровой грамотности. Главная цель — собрать в одной последовательности темы, которые обычно изучаются разрозненно — на уроках, в бытовой практике, в разных учебниках и в случайных видео.
 
@@ -73,7 +73,7 @@ flowchart LR
 
 ## Интерактивная карта маршрута
 
-Если удобнее идти по «живому» дереву тем вместо таблицы, используйте карту —
+Если удобнее идти по "живому" дереву тем вместо таблицы, используйте карту —
 
 <InteractiveRoadmap />
 

@@ -37,7 +37,7 @@ import DocCardList from '@theme/DocCardList';
     <li><a href="./113">Риски открытых Wi‑Fi</a></li>
     <li><a href="./112">Антивирус и лечение</a> — по желанию; хвост статьи помечен как углубление</li>
     <li><a href="./2">Итоги</a> и <a href="./3">Чек-лист самопроверки</a></li>
-    <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101">Опасные скрипты</a> — социальная инженерия через «установочный» shell-скрипт и команды от ИИ-агента</li>
+    <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101">Опасные скрипты</a> — социальная инженерия через "установочный" shell-скрипт и команды от ИИ-агента</li>
   </ol>
 </div>
 
@@ -46,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Компьютерная грамотность** — [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro).
 

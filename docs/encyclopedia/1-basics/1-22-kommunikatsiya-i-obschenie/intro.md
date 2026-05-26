@@ -24,7 +24,7 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 
 <EndUserSoftwareHub defaultApp="messenger" />
 
-Раздел связывает **мягкие навыки** (ясность, тон, этикет) с **технической базой** (протоколы почты и чатов, формы, инструменты встреч). Общая ось: выбрать канал → снизить «шум» в сообщении → зафиксировать договорённости.
+Раздел связывает **мягкие навыки** (ясность, тон, этикет) с **технической базой** (протоколы почты и чатов, формы, инструменты встреч). Общая ось: выбрать канал → снизить "шум" в сообщении → зафиксировать договорённости.
 
 ## Карта глав
 
@@ -34,7 +34,7 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 | [2](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/2) | Мессенджеры: протоколы, архитектура, боты, командные нормы | разработчики, тимлиды |
 | [3](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3) | Электронная почта: SMTP, IMAP, SPF/DKIM, доставка | инженеры, админы |
 | [4](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/4) | Встречи и звонки: модерация, протоколы, деэскалация | все в распределённых командах |
-| [5](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5) | Иерархия, субординация, переписка «вверх/вниз» | исполнители, PM, лиды |
+| [5](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5) | Иерархия, субординация, переписка "вверх/вниз" | исполнители, PM, лиды |
 | [6](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6) | Формы и анкеты: HTML, валидация, 152-ФЗ | разработчики, аналитики |
 
 [98](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/98) — краткие итоги; [99](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/99) — чек-лист самопроверки.
@@ -42,7 +42,7 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 ## Синхронно и асинхронно
 
 - **Асинхронно** — почта, документ, тред, RFC: когда важна фиксация и работа через часовые пояса.
-- **Синхронно** — звонок, видеовстреча: когда нужен быстрый цикл «вопрос — ответ» или высокая неопределённость.
+- **Синхронно** — звонок, видеовстреча: когда нужен быстрый цикл "вопрос — ответ" или высокая неопределённость.
 
 Правило: если можно решить письменно за один проход — не назначайте встречу (подробнее в гл. 4).
 
@@ -61,7 +61,7 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Софт-скиллы** — [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Удаленная работа — о разделе](/encyclopedia/1-basics/1-27-udalennaya-rabota/intro), [Как понять, что пора менять работу — о разделе](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/intro), [Экономические и организационные сообщества](/encyclopedia/9-spinoff/9-10-internet-kultura/114), [Взаимодействие аналитика с командой](/encyclopedia/7-project/7-04-analitika/127).
 

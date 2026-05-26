@@ -27,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел охватывает язык **Java**, **JVM**, сборки (Maven/Gradle), фреймворки и работу с данными. Материалы рассчитаны на разработчиков и архитекторов: от первой программы до Spring, тестирования и облачного развёртывания.
 
-**Java** — не «только банки»: это JVM-экосистема (серверы, Android-наследие, инструменты). В новых backend-проектах чаще **Spring Boot**, а не JSF — legacy-главы в разделе помечены как справочные.
+**Java** — не "только банки": это JVM-экосистема (серверы, Android-наследие, инструменты). В новых backend-проектах чаще **Spring Boot**, а не JSF — legacy-главы в разделе помечены как справочные.
 
 Общие принципы (код, ООП, алгоритмы) — в [Код и разработка](/encyclopedia/4-code-dev/code-dev) и [ООП](/encyclopedia/4-code-dev/4-08-oop/1); здесь — **особенности Java и платформы**.
 
@@ -130,7 +130,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом Kotlin/Groovy |
+| Прыжки между языками | Закройте одну "первую программу", потом Kotlin/Groovy |
 | Код без запуска | `mvn compile exec:java` или Run в IDE |
 | Spring до коллекций | Сначала шаги 4–6 основного маршрута |
 | Путать JDK и JRE | Для разработки нужен **JDK** — [1](./1.md) |
@@ -151,7 +151,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **База программиста** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 

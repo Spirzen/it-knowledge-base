@@ -38,7 +38,7 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">До изучения языков</div>
-  Блоки «Справочно на …» можно читать как иллюстрацию идей. Вызовы и стек — в <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2">выполнении кода</a>; асинхронность — в <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/intro">разделе 4.05</a>; параллелизм на кластерах — в <a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro">параллельных вычислениях</a>.
+  Блоки "Справочно на …" можно читать как иллюстрацию идей. Вызовы и стек — в <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2">выполнении кода</a>; асинхронность — в <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/intro">разделе 4.05</a>; параллелизм на кластерах — в <a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro">параллельных вычислениях</a>.
 </div>
 
 <DocCardList />
@@ -46,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **База программиста** — [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [Парадигмы и уровни абстракции — о разделе](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro), [Проект, структура и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro), [Объектно-ориентированное программирование — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro), [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro).
 

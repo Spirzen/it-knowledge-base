@@ -2,7 +2,7 @@
 title: Groovy — о разделе
 description: >-
   Groovy на JVM — синтаксис, GDK, DSL для Gradle и Jenkins, тесты Spock;
-  маршрут для сборки и автоматизации, не для «основного» приложения.
+  маршрут для сборки и автоматизации, не для "основного" приложения.
 sidebar_label: Groovy — о разделе
 related:
   - title: "Ruby — о разделе"
@@ -82,7 +82,7 @@ import DocCardList from '@theme/DocCardList';
 |--------|------------|
 | Учить Groovy без Java | Минимум [Java 13](/encyclopedia/5-languages/5-03-java/13) или Kotlin на JVM |
 | Сравнивать `==` с Java | В Groovy `==` → `equals` — [20](./20.md) |
-| Писать приложение на Grails «с нуля» | Для нового веба чаще Spring/Ktor; Grails — [18](./18.md), legacy |
+| Писать приложение на Grails "с нуля" | Для нового веба чаще Spring/Ktor; Grails — [18](./18.md), legacy |
 | Забыть `def` в скрипте | Иначе `MissingPropertyException` — [2](./2.md) |
 
 ---
@@ -101,7 +101,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [Kotlin — о разделе](/encyclopedia/5-languages/5-09-kotlin/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro).
 

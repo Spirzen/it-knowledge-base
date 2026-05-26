@@ -38,7 +38,7 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">До изучения языков</div>
-  Блоки «Справочно на …» можно читать как иллюстрацию идей. Базовые алгоритмы и блок-схемы — в <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/4">базовой информатике</a>; параллелизм на потоках — в <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">асинхронности</a> и <a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro">параллельных вычислениях</a>.
+  Блоки "Справочно на …" можно читать как иллюстрацию идей. Базовые алгоритмы и блок-схемы — в <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/4">базовой информатике</a>; параллелизм на потоках — в <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">асинхронности</a> и <a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro">параллельных вычислениях</a>.
 </div>
 
 <DocCardList />
@@ -46,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **База программиста** — [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Проект, структура и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro), [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro), [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro).
 

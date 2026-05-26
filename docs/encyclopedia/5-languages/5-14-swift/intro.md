@@ -41,7 +41,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 1 | [История](./1.md) | Objective-C, эволюция |
 | 2 | [Основы](./11.md) → [Синтаксис](./12.md) → [Типы](./13.md) → [Управление](./14.md) | База языка |
 | 3 | [Параметры](./23.md) → [Pattern matching](./24.md) → [Property wrappers](./25.md) | Идиомы Swift |
-| 4 | [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП](./102.md) → [Данные](./16.md) → [Async](./17.md) | struct/class, Codable |
+| 4 | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП](./102.md) → [Данные](./16.md) → [Async](./17.md) | struct/class, Codable |
 | 5 | [Первая программа](./20.md) | Playground, Xcode, SwiftUI в обзоре |
 | 6 | [Экосистема](./10.md) → [Фреймворки](./15.md) → [Жизненный цикл](./21.md) | Apple-стек |
 | 7 | [Справочник](./3.md) → [Чек-лист](./999.md) | После курса |
@@ -74,7 +74,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 
@@ -97,7 +97,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro).
 

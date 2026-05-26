@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
-Перед [ООП в Kotlin](./15): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе «Код»](/encyclopedia/4-code-dev/4-08-oop/intro).
+Перед [ООП в Kotlin](./15): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro).
 
 **Kotlin** — язык от JetBrains: короче Java, безопаснее по `null`, с корутинами и официальной поддержкой **Android**. Компилируется в байт-код JVM (как Java), поэтому те же JDK, Gradle и библиотеки — плюс свой синтаксис и `kotlin-stdlib`.
 
@@ -81,7 +81,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Зачем этот раздел
 
-Собрать **цельный путь по Kotlin**: от запуска в IDEA до реального стека (Android, Ktor или CMP), без смешивания с Java/Python на этапе «Hello World».
+Собрать **цельный путь по Kotlin**: от запуска в IDEA до реального стека (Android, Ktor или CMP), без смешивания с Java/Python на этапе "Hello World".
 
 ---
 
@@ -112,7 +112,7 @@ import DocCardList from '@theme/DocCardList';
 
 1. Пройти [2.md](./2.md) и изменить цикл в `main` — пересобрать и запустить.
 2. В IDEA: **Show Kotlin Bytecode** для `main` — увидеть связь с JVM.
-3. Одна ветка из таблицы «Три маршрута» — до рабочего мини-приложения.
+3. Одна ветка из таблицы "Три маршрута" — до рабочего мини-приложения.
 4. В конце — [чек-лист](./999.md).
 
 ---
@@ -122,7 +122,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro).
 

@@ -42,7 +42,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Ошибка | Что делать |
 |--------|------------|
-| Прыжки между языками | Закройте одну «первую программу», потом сравнивайте |
+| Прыжки между языками | Закройте одну "первую программу", потом сравнивайте |
 | Код без запуска | Выполните пример локально |
 | Сразу большой фреймворк | Сначала база раздела, потом REST/UI |
 | Команда из чата без чтения | [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — перед `rm`, pipe, `curl` |
@@ -64,7 +64,7 @@ import DocCardList from '@theme/DocCardList';
 {/* sidebar-collections */}
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока «С чего начать?» на главной. Соседние шаги того же маршрута:
+Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [PowerShell — о разделе](/encyclopedia/5-languages/5-26-powershell/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro).
 
