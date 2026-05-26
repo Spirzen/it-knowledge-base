@@ -171,7 +171,7 @@ export function LanguageIntroPlayInner({topic, embedded = false}) {
     <DemoShell>
       <DemoCard
         title="Краткое знакомство"
-        subtitle="Обзор из раздела "Основные языки" — без углубления в синтаксис"
+        subtitle="Обзор из раздела &quot;Основные языки&quot; — без углубления в синтаксис"
       >
         {body}
       </DemoCard>

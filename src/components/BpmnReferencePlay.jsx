@@ -99,7 +99,7 @@ function BpmnReferencePlayInner() {
         initialMode="bpmn"
         modes={['bpmn']}
         title="Практика: соберите процесс"
-        subtitle="Шаблон "Обработка заказа" или своя схема — экспорт в Mermaid для Confluence"
+        subtitle="Шаблон &quot;Обработка заказа&quot; или своя схема — экспорт в Mermaid для Confluence"
       />
     </DemoShell>
   );

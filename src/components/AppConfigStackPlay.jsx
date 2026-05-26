@@ -61,7 +61,7 @@ function AppConfigStackPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Конфигурация: форматы и приоритет источников"
-        subtitle="Один параметр port может быть задан в файле, среде и CLI — побеждает самый "сильный" источник."
+        subtitle="Один параметр port может быть задан в файле, среде и CLI — побеждает самый &quot;сильный&quot; источник."
       >
         <p className="it-demo__label" style={{marginBottom: '0.35rem'}}>
           Формат конфигурационного файла

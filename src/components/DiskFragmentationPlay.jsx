@@ -67,7 +67,7 @@ function DiskFragmentationPlayInner() {
     <DemoShell>
       <DemoCard
         title="Симулятор фрагментации диска"
-        subtitle="Как пустые блоки между файлами заставляют HDD "прыгать" головкой — и почему SSD ведёт себя иначе"
+        subtitle="Как пустые блоки между файлами заставляют HDD &quot;прыгать&quot; головкой — и почему SSD ведёт себя иначе"
       >
         <label className="it-demo__label">Тип накопителя</label>
         <div className={toolStyles.chips} style={{marginBottom: '0.5rem'}}>

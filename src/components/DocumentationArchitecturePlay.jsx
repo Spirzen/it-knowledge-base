@@ -105,7 +105,7 @@ function DocumentationArchitecturePlayInner() {
       {showModeling && (
         <DiagramStudio
           title="Моделирование для проектной документации"
-          subtitle="Диаграммы UML, C4 и BPMN — артефакты раздела "Проектная""
+          subtitle="Диаграммы UML, C4 и BPMN — артефакты раздела &quot;Проектная&quot;"
         />
       )}
     </DemoShell>

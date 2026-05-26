@@ -28,7 +28,7 @@ function CausalAnalysisPlayInner() {
 
   return (
     <DemoShell>
-      <DemoCard title="Причинно-следственный анализ" subtitle="5 "Почему" и категории диаграммы Исикавы">
+      <DemoCard title="Причинно-следственный анализ" subtitle="5 &quot;Почему&quot; и категории диаграммы Исикавы">
         <div className={toolStyles.chips} style={{marginBottom: '0.65rem'}}>
           <button
             type="button"

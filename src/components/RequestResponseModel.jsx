@@ -164,7 +164,7 @@ function RequestResponseModelInner() {
   return (
     <DemoShell className={flowStyles.root}>
       <DemoCard
-        title="Модель "Запрос — ответ""
+        title="Модель &quot;Запрос — ответ&quot;"
         subtitle="Синхронный обмен: клиент ждёт ответ в рамках одного HTTP-цикла."
       >
         <div className={flowStyles.diagram}>

@@ -17,7 +17,7 @@ function PromptPipelineDemoInner() {
 
   return (
     <DemoShell className={styles.root}>
-      <DemoCard title="Pipeline LLM-запроса" subtitle="Кликайте "Далее" — пройдите путь от prompt до ответа">
+      <DemoCard title="Pipeline LLM-запроса" subtitle="Кликайте &quot;Далее&quot; — пройдите путь от prompt до ответа">
         <div className={styles.pipeline}>
           {STAGES.map((s, i) => (
             <div

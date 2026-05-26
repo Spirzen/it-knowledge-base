@@ -64,7 +64,7 @@ function PersonalizedPricingPlayInner() {
     <DemoShell>
       <DemoCard
         title="Персонализированная цена"
-        subtitle="Сервис собирает сигналы о вас и подбирает цену в "допустимом" диапазоне — сравните с базовой"
+        subtitle="Сервис собирает сигналы о вас и подбирает цену в &quot;допустимом&quot; диапазоне — сравните с базовой"
       >
         <div className={toolStyles.toolbar}>
           <button type="button" className="it-demo__btn it-demo__btn--secondary it-demo__btn--sm" onClick={resetProfile}>

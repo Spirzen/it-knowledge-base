@@ -36,7 +36,7 @@ function AttentionManipulationPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Искусственное усиление внимания"
-        subtitle="Доля ботов в ленте — как меняется "популярность" темы"
+        subtitle="Доля ботов в ленте — как меняется &quot;популярность&quot; темы"
       >
         <label className={styles.slider}>
           Доля ботов в активности: <strong>{botPct}%</strong>

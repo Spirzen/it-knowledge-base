@@ -32,7 +32,7 @@ function GameOptimizationPlayInner() {
     <DemoShell className={styles.shell}>
       <DemoCard
         title="Оптимизация под 60 FPS"
-        subtitle="Базовая нагрузка "города" 18.4 ms — включайте техники и возвращайтесь в бюджет"
+        subtitle="Базовая нагрузка &quot;города&quot; 18.4 ms — включайте техники и возвращайтесь в бюджет"
       >
         <p className={clsx(styles.fpsGauge, ok ? styles.fpsOk : styles.fpsBad)} aria-live="polite">
           {fps} FPS <span style={{fontSize: '0.9rem'}}>({usedMs.toFixed(1)} ms)</span>

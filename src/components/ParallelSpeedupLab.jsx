@@ -92,7 +92,7 @@ function ParallelSpeedupLabInner() {
           <h4>Амдаль (fixed workload)</h4>
           <div className={styles.metric}>S = {metrics.amdahlSpeedup.toFixed(2)}x</div>
           <div className={styles.note}>Efficiency = {(metrics.amdahlEfficiency * 100).toFixed(1)}%</div>
-          <div className={styles.note}>Предел при N -> inf — {metrics.maxSpeedup.toFixed(2)}x</div>
+          <div className={styles.note}>Предел при N -&gt; inf — {metrics.maxSpeedup.toFixed(2)}x</div>
         </article>
 
         <article className={styles.card}>

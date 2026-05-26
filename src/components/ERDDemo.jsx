@@ -157,7 +157,7 @@ function ERDDemoInner() {
   return (
     <DemoShell>
       <DemoCard
-        title="ERD — диаграмма "сущность–связь""
+        title="ERD — диаграмма &quot;сущность–связь&quot;"
         subtitle="Сущности, атрибуты и кардинальность: наведите на поле FK или переключите сценарий"
       >
         <div className={styles.scenarioRow} role="tablist">

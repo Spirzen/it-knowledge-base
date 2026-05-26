@@ -167,7 +167,7 @@ function SqlDeleteTrainerInner() {
         caption="Таблица users"
         columns={USER_COLUMNS}
         rows={data}
-        emptyMessage="Таблица пуста. Нажмите "Сбросить", чтобы восстановить учебные данные."
+        emptyMessage="Таблица пуста. Нажмите &quot;Сбросить&quot;, чтобы восстановить учебные данные."
       />
     </SqlTrainerCard>
   );

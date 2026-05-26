@@ -66,7 +66,7 @@ function TechHistoryHubInner() {
   return (
     <DemoShell>
       <DemoCard
-        title="Подборка "История""
+        title="Подборка &quot;История&quot;"
         subtitle="Выберите тему — откроется интерактивная шкала в статье; здесь превью вех"
       >
         <div style={hubStyles.grid}>

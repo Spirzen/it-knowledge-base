@@ -194,7 +194,7 @@ function ComputerArchitecturePlayInner() {
   return (
     <DemoShell className={styles.root}>
       <DemoCard
-        title="Спектакль "Кабинет-компьютер""
+        title="Спектакль &quot;Кабинет-компьютер&quot;"
         subtitle="Включите свет и пройдите все 7 актов — от POST до выключения"
       >
         <div aria-label="Акты спектакля" className={styles.actProgress}>

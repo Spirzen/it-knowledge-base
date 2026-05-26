@@ -32,7 +32,7 @@ function GraphRepresentationPlayInner() {
     <DemoShell>
       <DemoCard
         title="Граф задач: представление и обход"
-        subtitle="Список смежности vs матрица — и пошаговый BFS от узла "ТЗ""
+        subtitle="Список смежности vs матрица — и пошаговый BFS от узла &quot;ТЗ&quot;"
       >
         <div className={toolStyles.chips}>
           <button

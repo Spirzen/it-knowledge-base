@@ -55,7 +55,7 @@ function ReadWritePlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Чтение, запись и указатель файла"
-        subtitle="Файл "Hello" — линейная лента байтов. Указатель сдвигается после каждой операции."
+        subtitle="Файл &quot;Hello&quot; — линейная лента байтов. Указатель сдвигается после каждой операции."
       >
         <div className={styles.fileTape}>
           {FILE_CHARS.map((ch, i) => (

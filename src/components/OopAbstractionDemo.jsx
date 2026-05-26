@@ -330,7 +330,7 @@ function OopAbstractionDemoInner() {
     <DemoShell className={shared.root}>
       <DemoCard
         title="Абстракция: Transport, абстрактные методы и интерфейс"
-        subtitle="Скрываем "как", оставляем "что" — как в примерах из статьи"
+        subtitle="Скрываем &quot;как&quot;, оставляем &quot;что&quot; — как в примерах из статьи"
       >
         <div className={styles.tabRow}>
           {CONCEPT_TABS.map((t) => (

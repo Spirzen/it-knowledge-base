@@ -106,7 +106,7 @@ function LaptopExplorerPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Классы ноутбуков"
-        subtitle="Выберите тип — сравните компромиссы и посмотрите, как устроен "книжный" форм-фактор."
+        subtitle="Выберите тип — сравните компромиссы и посмотрите, как устроен &quot;книжный&quot; форм-фактор."
       >
         <div className={styles.tabs}>
           {TYPES.map((t) => (

@@ -162,7 +162,7 @@ function MatchThreePlayInner() {
   return (
     <DemoShell className={styles.root}>
       <DemoCard
-        title="Мини-игра "три в ряд""
+        title="Мини-игра &quot;три в ряд&quot;"
         subtitle="Простой пример видеоигры: клик — ввод, проверка совпадений — логика, сетка на экране — отрисовка. Так крутится игровой цикл."
       >
         <div className={styles.layout}>

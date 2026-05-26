@@ -72,7 +72,7 @@ function CryptoVolatilityPlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Симулятор волатильности"
-        subtitle="30 "дней" цены: сравните разброс BTC, альткоина и спокойного фиат-индекса"
+        subtitle="30 &quot;дней&quot; цены: сравните разброс BTC, альткоина и спокойного фиат-индекса"
       >
         <div className={styles.chips}>
           {PRESETS.map((p) => (

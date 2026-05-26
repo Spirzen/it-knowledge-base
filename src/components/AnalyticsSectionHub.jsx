@@ -87,7 +87,7 @@ function AnalyticsSectionHubInner() {
   return (
     <DemoShell>
       <DemoCard
-        title="Раздел "Аналитика" — навигатор"
+        title="Раздел &quot;Аналитика&quot; — навигатор"
         subtitle="Цепочка работы аналитика, треки по ролям и короткие подсказки"
       >
         <div className={styles.roles}>

@@ -113,7 +113,7 @@ function CodeTransformationDemoInner() {
     <DemoShell>
       <DemoCard
         title="Трансформация кода"
-        subtitle="Один и тот же "Hello World" на трёх уровнях абстракции"
+        subtitle="Один и тот же &quot;Hello World&quot; на трёх уровнях абстракции"
       >
         <div className={styles.langRow}>
           {Object.entries(EXAMPLES).map(([key, l]) => (
