@@ -1,4 +1,3 @@
-import { jsPDF } from 'jspdf';
 import type Konva from 'konva';
 
 export async function exportStageImage(
@@ -41,6 +40,7 @@ export function downloadDataUrl(dataUrl: string, filename: string) {
 }
 
 export async function exportStagePdf(stage: Konva.Stage) {
+  const { jsPDF } = await import('jspdf');
   const dataUrl = await exportStageImage(stage, 'png', 2);
   const img = new Image();
   await new Promise<void>((resolve, reject) => {
