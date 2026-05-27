@@ -1,9 +1,9 @@
 ---
-id: infra-security
 title: 8. Инфраструктура и безопасность - о разделе
 description: Облака, DevOps, контейнеры, микросервисы и практики информационной безопасности — как проектируют, разворачивают и защищают промышленные системы.
 sidebar_label: 8. Инфраструктура и безопасность - о разделе
 slug: /section/infra-security
+id: infra-security
 ---
 
 <div class="article-tags">

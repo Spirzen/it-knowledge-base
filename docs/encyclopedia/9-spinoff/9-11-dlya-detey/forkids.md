@@ -1,9 +1,9 @@
 ---
-id: forkids
 title: Для детей — о разделе
 description: Учебный маршрут для школьников 8–16 лет — компьютер, игры, алгоритмы, программы и первый код, с интерактивами в статьях.
 sidebar_label: Для детей — о разделе
 slug: /encyclopedia/Спин-офф/9.11. Для детей/forkids
+id: forkids
 ---
 
 import DocCardList from '@theme/DocCardList';

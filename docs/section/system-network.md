@@ -1,9 +1,9 @@
 ---
-id: system-network
 title: 2. Система и сеть - о разделе
 description: В IT система сильно зависит от контекста, но суть всегда одна - это некая совокупность элементов, действующих вместе как одно целое и выполняющих этим определённую функцию.
 sidebar_label: 2. Система и сеть - о разделе
 slug: /section/system-network
+id: system-network
 ---
 
 <div class="article-tags">

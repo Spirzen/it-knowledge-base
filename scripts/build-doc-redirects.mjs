@@ -39,7 +39,9 @@ function normalizeHref(href) {
     return '';
   }
   const withSlash = trimmed.startsWith('/') ? trimmed : `/${trimmed}`;
-  return withSlash.replace(/\/+$/, '') || '/';
+  // Keep legacy unicode paths, but escape reserved URL markers that break pathname validation.
+  const escaped = withSlash.replace(/#/g, '%23').replace(/\?/g, '%3F');
+  return escaped.replace(/\/+$/, '') || '/';
 }
 
 /**
@@ -60,10 +62,6 @@ function labelSegmentsForLegacy(label, slugger) {
   /** @type {Set<string>} */
   const segments = new Set();
   segments.add(slugger.slug(trimmed));
-  segments.add(trimmed.replace(/\s+/g, '-'));
-  if (/[а-яё]/i.test(trimmed)) {
-    segments.add(trimmed);
-  }
   return [...segments];
 }
 
@@ -389,6 +387,7 @@ function main() {
   const docMap = collectDocRedirects(categoryByDir, slugger);
   const catMap = collectCategoryIndexRedirects(categoryByDir, slugger);
   const merged = mergeMaps(docMap, catMap);
+  const canonicalSet = new Set(merged.keys());
 
   /** @type {Record<string, string[]>} */
   const payload = {};
@@ -396,8 +395,12 @@ function main() {
   for (const [to, fromList] of [...merged.entries()].sort(([a], [b]) =>
     a.localeCompare(b, 'ru'),
   )) {
-    payload[to] = fromList;
-    legacyCount += fromList.length;
+    const safeFrom = fromList.filter((from) => !canonicalSet.has(from));
+    if (safeFrom.length === 0) {
+      continue;
+    }
+    payload[to] = safeFrom;
+    legacyCount += safeFrom.length;
   }
 
   fs.mkdirSync(path.dirname(outFile), {recursive: true});

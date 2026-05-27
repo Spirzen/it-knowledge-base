@@ -1,9 +1,9 @@
 ---
-id: spinoff
 title: 9. Спин-офф - о разделе
 description: Факультативные темы вне ядра курса — карьера, игры, железо, блокчейн и смежные области для тех, кто хочет углубиться по интересам.
 sidebar_label: 9. Спин-офф - о разделе
 slug: /section/spinoff
+id: spinoff
 ---
 
 <div class="article-tags">
