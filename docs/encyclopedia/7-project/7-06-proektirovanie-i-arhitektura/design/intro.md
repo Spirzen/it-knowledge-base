@@ -51,6 +51,8 @@ import DocCardList from '@theme/DocCardList';
 ### Данные, API, масштаб
 
 3. [БД](116.md) · [API и интеграции](117.md) (три сквозных примера и маршрут) · [OAuth и webhooks](1171.md) · [mTLS, JWS, AsyncAPI, outbox](1172.md) · [Ричардсон](212.md) · [идемпотентность](213.md)
+
+   Практика выбранной СУБД из кода: [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 4. [OpenAPI](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3) · [REST в инфраструктуре](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) · [ввод по API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117)
 5. [Масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA](2135.md) · [распределённые системы](21.md)
 

@@ -107,7 +107,7 @@ CAP/PACELC — [распределённые системы](design/21.md), ит
 |------|------|
 | Анализ ситуации, гипотезы, критерии решения | [«Ситуации в IT»](/lab/Кейсы/1) |
 | Разбор инцидента и профилактика | [«Разборы»](/lab/Кейсы/2) |
-| Слоистый backend (REST, DI, репозиторий) | [«Spring Boot приложение»](/lab/Кейсы/4) |
+| Слоистый backend (REST, DI, репозиторий) | [«Spring Boot приложение»](/lab/Кейсы/4) (данные — [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)) |
 | Порождающий паттерн Singleton | [«Singleton на C#»](/lab/Кейсы/5) |
 | Клиент внешнего API, обработчики событий | [«Telegram Bot на Python»](/lab/Кейсы/6) |
 | TDD и качество модулей | [«Тренируем TDD»](/lab/Кейсы/7) (теория — [тестирование](/encyclopedia/7-project/7-05-testirovanie/131)) |

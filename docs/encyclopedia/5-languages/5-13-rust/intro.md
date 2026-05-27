@@ -52,6 +52,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 6 | [Тестирование](./202.md) → [Cargo workspace](./204.md) | Практика в проекте |
 | 7 | [Async](./17.md) → [Потоки](./203.md) | Когда что выбирать |
 | 8 | [Axum](./201.md) | HTTP после базы |
+| — | СУБД из Rust | [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) |
 | 9 | [Чек-лист](./999.md) | Самопроверка |
 
 ---

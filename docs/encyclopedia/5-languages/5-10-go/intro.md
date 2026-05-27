@@ -41,6 +41,7 @@ import DocCardList from '@theme/DocCardList';
 | 2 | [Первая программа](./24.md) | `go run`, структура проекта |
 | 3 | [Gin](./2412.md) | HTTP API после базы |
 | 4 | [REST обзор](./24.md) | Контракты и маршруты |
+| — | СУБД из Go | [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) |
 
 ---
 

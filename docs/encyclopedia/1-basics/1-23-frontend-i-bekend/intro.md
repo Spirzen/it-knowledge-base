@@ -24,6 +24,7 @@ import DocCardList from '@theme/DocCardList';
 3. [Метрики производительности](./3.md) — QPS, latency, перцентили, SLO; в паре с [наблюдаемостью](./9.md) (логи, алерты, аудит).
 4. [Матрица компетенций бэкенда](./4.md) и [чек-лист самопроверки](./99.md).
 5. По задаче: [Linux](./5.md), [сеть для диагностики](./6.md), [почта](./7.md), [типы веб-приложений](./8.md).
+6. Данные и СУБД из кода: [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) (язык запросов — [SQL](/encyclopedia/3-data-markup/3-07-sql/intro)).
 
 Итог раздела: [Итоги](./98.md).
 

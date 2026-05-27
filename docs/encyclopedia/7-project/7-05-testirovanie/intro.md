@@ -100,7 +100,7 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
   <div class="callout-title">Смежные разделы</div>
 
   <div class="callout-body">
-  - SQL для проверки данных в БД: [SQL для тестировщика](./129.md) и [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro)
+  - SQL для проверки данных в БД: [SQL для тестировщика](./129.md) и [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro); практика по СУБД — [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)
   - HTTP и Postman глубже: [Основы интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro)
   - CI/CD и запуск тестов в пайплайне: [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro)
   - Карьера и роли: [Карьера в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/1)

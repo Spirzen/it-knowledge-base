@@ -25,11 +25,13 @@ import DocCardList from '@theme/DocCardList';
 
 Если вы только учите SQL как язык, этот раздел можно отложить до первого деплоя или стажировки в эксплуатации.
 
+**Подключение и CRUD из приложения (API по языкам):** [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889) (администрирование — [справочник MySQL](./211.md)), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) (эксплуатация — [212](./212.md)).
+
 ---
 
 ## Что здесь не повторяем
 
-- Написание `SELECT` / `JOIN` / транзакций — глава [SQL](/encyclopedia/3-data-markup/3-07-sql/intro).
+- Написание `SELECT` / `JOIN` / транзакций — глава [SQL](/encyclopedia/3-data-markup/3-07-sql/intro); сводные практические главы по СУБД — [887](/encyclopedia/3-data-markup/3-07-sql/887)–[890](/encyclopedia/3-data-markup/3-07-sql/890).
 - NoSQL и распределённая согласованность — [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro).
 
 <DocCardList />

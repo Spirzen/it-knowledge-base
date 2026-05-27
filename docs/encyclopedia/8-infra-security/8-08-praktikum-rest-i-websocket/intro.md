@@ -48,7 +48,7 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 | 1 | [Сценарий и архитектура](./1.md) | Цели, диаграмма потоков, границы ответственности |
 | 2 | [Проектирование контракта API](./2.md) | Ресурсы, методы HTTP, коды ответов, OpenAPI |
 | 3 | [Модели данных и маппинг](./3.md) | Домен, DTO, соглашения JSON, версии полей |
-| 4 | [Сервис каталога на Python](./4.md) | FastAPI, SQLite, эндпоинты резерва |
+| 4 | [Сервис каталога на Python](./4.md) | FastAPI, SQLite, эндпоинты резерва ([практика SQLite](/encyclopedia/3-data-markup/3-07-sql/887)) |
 | 5 | [Сервис заказов на C#](./5.md) | Minimal API, HttpClient, сохранение заказов |
 | 6 | [Безопасность и устойчивость](./6.md) | JWT, API-ключ, таймауты, идемпотентность |
 | 7 | [WebSocket и события](./7.md) | Протокол сообщений, heartbeat, рассылка |

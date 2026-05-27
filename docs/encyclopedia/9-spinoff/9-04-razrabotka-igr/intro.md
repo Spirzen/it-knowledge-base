@@ -32,7 +32,7 @@ import DocCardList from '@theme/DocCardList';
 | **Обзор** | Контекст, термины, сравнения | [Процесс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1), [Движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112), [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) |
 | **Практика в редакторе** | Пошагово в движке | [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3), [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4), [Roblox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2) |
 | **Справочник** | API, горячие клавиши, lifecycle | [301](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301), [401](/encyclopedia/9-spinoff/9-04-razrabotka-igr/401), [201](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201) |
-| **Платформы и качество** | Где публиковать, как не тормозить | [PC](/encyclopedia/9-spinoff/9-04-razrabotka-igr/118)–[122](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), [Тестирование](/encyclopedia/9-spinoff/9-04-razrabotka-igr/124) |
+| **Платформы и качество** | Где публиковать, как не тормозить | [PC](/encyclopedia/9-spinoff/9-04-razrabotka-igr/118)–[122](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), [Тестирование](/encyclopedia/9-spinoff/9-04-razrabotka-igr/124) |
 | **Внешний каталог** | Open-source клоны для разбора исходников | [Каталог клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125) ([osgameclones.com](https://osgameclones.com/)) |
 | **Референсы для игрока** | Эталоны жанров и механик "на ощупь" | [Игры, которые должен попробовать каждый](/tools/games/4) |
 

@@ -80,7 +80,7 @@ import DocCardList from '@theme/DocCardList';
 - [Рекомендации по разработке](./101.md) — стиль, тестируемость, DI.
 - [Тестирование](./223.md) — JUnit 5, MockK, Kotest.
 - [Консольный ввод-вывод](./227.md) — `readln()`, кодировки.
-- [Работа с БД](./18.md) — JDBC и обзор ORM на JVM.
+- [Работа с БД](./18.md) — JDBC и обзор ORM на JVM; практика СУБД — [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 
 ---
 

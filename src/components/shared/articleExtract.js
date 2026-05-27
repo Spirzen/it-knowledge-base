@@ -58,18 +58,25 @@ export function extractArticleQuestions(articleElement) {
   }
 
   const found = [];
-
-  const questionAnchors = articleElement.querySelectorAll('h4.anchor[id^="вопрос"]');
-  questionAnchors.forEach((anchor) => {
-    let next = anchor.nextElementSibling;
-    while (next && next.tagName !== 'P') {
-      next = next.nextElementSibling;
+  const questionHeaders = articleElement.querySelectorAll('h4');
+  questionHeaders.forEach((header) => {
+    const headingText = header.textContent.trim();
+    if (!headingText || !headingText.startsWith('Вопрос')) {
+      return;
     }
-    if (next?.textContent) {
-      const text = next.textContent.trim();
-      if (text.length > 5 && text.includes('?')) {
-        found.push(text);
+
+    let next = header.nextElementSibling;
+    while (next) {
+      if (next.tagName === 'HR' || /^H[1-6]$/.test(next.tagName)) {
+        break;
       }
+
+      const text = next.textContent?.trim();
+      if (text && text.length > 3) {
+        found.push(text);
+        break;
+      }
+      next = next.nextElementSibling;
     }
   });
 
@@ -89,7 +96,7 @@ export function extractArticleQuestions(articleElement) {
         }
         if (next?.tagName === 'P') {
           const text = next.textContent.trim();
-          if (text.length > 5 && text.includes('?')) {
+          if (text.length > 3) {
             found.push(text);
           }
         }
@@ -103,7 +110,7 @@ export function extractArticleQuestions(articleElement) {
     let match;
     while ((match = regex1.exec(html)) !== null) {
       const text = match[1].replace(/<[^>]*>/g, '').trim();
-      if (text.includes('?')) {
+      if (text.length > 3) {
         found.push(text);
       }
     }
@@ -111,14 +118,14 @@ export function extractArticleQuestions(articleElement) {
       const regex2 = /####\s*Вопрос\s*[\s\S]*?<p>(.*?)<\/p>/gi;
       while ((match = regex2.exec(html)) !== null) {
         const text = match[1].replace(/<[^>]*>/g, '').trim();
-        if (text.includes('?')) {
+        if (text.length > 3) {
           found.push(text);
         }
       }
     }
   }
 
-  return [...new Set(found)];
+  return found;
 }
 
 /**

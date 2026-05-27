@@ -33,6 +33,8 @@ import DocCardList from '@theme/DocCardList';
 
 **SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)).
 
+**Практика по популярным СУБД из кода:** [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
+
 **Корпоративный контекст:** [Data Governance](./111.md).
 
 ---

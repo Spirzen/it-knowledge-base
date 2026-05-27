@@ -53,7 +53,7 @@ import DocCardList from '@theme/DocCardList';
 | Практика | [Функции и лямбды](/encyclopedia/5-languages/5-06-cpp/17), [Сборка](/encyclopedia/5-languages/5-06-cpp/1004), [CMake](/encyclopedia/5-languages/5-06-cpp/1006), [Задания](/encyclopedia/5-languages/5-06-cpp/1008) | писать, собирать, закреплять |
 | UI и графика | [Qt](/encyclopedia/5-languages/5-06-cpp/27), [Qt Widgets](/encyclopedia/5-languages/5-06-cpp/2731), [Qt Quick](/encyclopedia/5-languages/5-06-cpp/2732), [Vulkan](/encyclopedia/5-languages/5-06-cpp/29), [Игры](/encyclopedia/5-languages/5-06-cpp/22) | desktop, GPU |
 | Продвинутое | [Потоки](/encyclopedia/5-languages/5-06-cpp/20), [Сеть](/encyclopedia/5-languages/5-06-cpp/25), [Экосистема](/encyclopedia/5-languages/5-06-cpp/10) | конкурентность, I/O, фреймворки |
-| Справка | [Справочник](/encyclopedia/5-languages/5-06-cpp/3), [Ключевые слова](/encyclopedia/5-languages/5-06-cpp/151) | быстрый поиск по API |
+| Справка | [Справочник](/encyclopedia/5-languages/5-06-cpp/3), [Ключевые слова](/encyclopedia/5-languages/5-06-cpp/151) | быстрый поиск по API и официальной документации |
 
 Статья [1](/encyclopedia/5-languages/5-06-cpp/1) — вводный обзор; продолжение в [28](/encyclopedia/5-languages/5-06-cpp/28).
 

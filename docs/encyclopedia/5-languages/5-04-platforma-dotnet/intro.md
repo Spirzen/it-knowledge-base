@@ -42,6 +42,7 @@ import DocCardList from '@theme/DocCardList';
 - [Вопросы на собеседование .NET и C#](../5-05-csharp/474) — шпаргалка с отсылками к материалам платформы и языка.
 - [Справочник .NET API](./183) — полный каталог BCL (.NET 10, .NET Framework 4.8 / 4.8.1) с навигацией по Microsoft Learn.
 - [Справочник по F#](./181) · [Справочник F# (Learn)](./184) · [ADO.NET](./171) · [EF Core (C#)](../5-05-csharp/441) · [ASP.NET](./172)
+- Практика СУБД из .NET: [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)
 
 ---
 

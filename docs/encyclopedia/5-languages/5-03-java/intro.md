@@ -42,11 +42,11 @@ import DocCardList from '@theme/DocCardList';
 3. [Структура и сборки](./12.md) — Maven/Gradle, запуск вне IDE; [отладка в IDEA](./132.md).
 4. [Синтаксис](./14.md), [типы](./15.md), [операторы и циклы](./17.md), [конструкции](./16.md) — в том числе `Scanner`.
 5. [ООП](./18.md) — классы, наследование, интерфейсы, `instanceof`.
-6. [Коллекции](./24.md), [Stream API](./295.md), [строки](./296.md), [исключения](./21.md).
-7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [JVM и потоки](./23.md).
+6. [Коллекции](./24.md), [полный API Collections Framework](./305.md), [Stream API](./295.md), [полный API Streams](./306.md), [строки](./296.md), [исключения](./21.md).
+7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [Virtual Threads (Java 21+)](./308.md), [JVM и потоки](./23.md).
 8. [Аннотации и рефлексия](./299.md), [современный синтаксис](./300.md) — record, sealed, pattern matching.
 9. [Вопросы на собеседование — Core Java](./301.md) — карта тем → главы раздела.
-10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [Security Basic](./272.md) → [JWT](./274.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md).
+10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [Security Basic](./272.md) → [JWT](./274.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 11. **JVM в проде:** [jcmd, heap dump, JFR](./302.md) — после [JVM и потоки](./23.md).
 
 <div class="callout callout--info">
@@ -75,7 +75,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Справочник и углубление
 
-- [Справочник по Java](./3.md) — синтаксис, коллекции, `java.time`, JDBC, JVM.
+- [Справочник по Java](./3.md) — синтаксис, коллекции, `java.time`, JDBC, JVM + API-дополнения по language basics, collections, streams/gatherers и virtual threads.
 - [Ключевые классы стандартной библиотеки](./28.md) — `String`, дата/время.
 - [Экосистема Java-приложений](./110.md), [рекомендации](./101.md).
 - [Документация и инструменты (Microsoft)](./294.md) — OpenJDK, VS Code, Azure.
@@ -90,6 +90,11 @@ import DocCardList from '@theme/DocCardList';
 | Источник | Назначение |
 |----------|------------|
 | [Oracle Java SE Documentation](https://docs.oracle.com/en/java/javase/) | Спецификация языка и API |
+| [dev.java — Language Basics](https://dev.java/learn/language-basics/) | Официальный фундамент синтаксиса и моделей кода |
+| [dev.java — Collections Framework](https://dev.java/learn/api/collections-framework/) | Интерфейсы и реализации коллекций |
+| [dev.java — Streams](https://dev.java/learn/api/streams/) | Потоки, terminal/intermediate операции |
+| [dev.java — Stream Gatherers](https://dev.java/learn/api/streams/gatherers/) | Кастомные stateful-пайплайны в Stream API |
+| [dev.java — Virtual Threads](https://dev.java/learn/new-features/virtual-threads/) | Современная конкурентность Java 21+ |
 | [Metanit: Java](https://metanit.com/java/) | Пошаговый курс на русском |
 | [Java — конспект (GitBook)](https://andrey-ivantsov.gitbook.io/java) | Краткий Core Java |
 | [proglang.su/java](http://proglang.su/java) | Углубление по коллекциям и API |
@@ -174,7 +179,7 @@ curl localhost:8080/...
 
 **База программиста** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 
-**Бэкенд и серверная разработка** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro).
+**Бэкенд и серверная разработка** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro) ([PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro).
 
 {/* /sidebar-collections */}
 

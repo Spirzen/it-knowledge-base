@@ -25,6 +25,15 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+ORM и драйверы опираются на конкретную СУБД. Перед ORM полезно понять подключение и CRUD на «голом» API:
+
+- [SQLite](/encyclopedia/3-data-markup/3-07-sql/887)
+- [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888)
+- [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)
+- [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)
+
+Теория SQL и схемы — [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro); проектирование таблиц — [Проектирование баз данных](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116).
+
 <DocCardList />
 
 {/* sidebar-collections */}
@@ -37,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 
 **База программиста** — [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro), [Десктопные приложения — о разделе](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), [Объектно-ориентированное программирование — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Парадигмы и уровни абстракции — о разделе](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 
-**Бэкенд и серверная разработка** — [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro).
+**Бэкенд и серверная разработка** — [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [практика СУБД](/encyclopedia/3-data-markup/3-07-sql/887) ([PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)).
 
 {/* /sidebar-collections */}
 

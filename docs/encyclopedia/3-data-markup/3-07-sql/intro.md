@@ -34,8 +34,19 @@ import DocCardList from '@theme/DocCardList';
 3. [Первые шаги с SQL](./101.md) → [Практикум shop_data](./111.md) → [Словарь данных и каталоги](./105.md)
 4. [Подзапросы и EXISTS](./108.md) → [JOIN](./55.md) → [CTE](./551.md) → [функции в коде](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4) → [оконные функции](./7.md) → [иерархии в реляционной БД](./886.md)
 5. [Транзакции](./77.md) → [Конкурентный доступ (теория)](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/7.md) → [блокировки](./110.md) → [оптимизация](./881.md) → [восстановление после сбоя](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8.md) → [резервное копирование](./106.md)
-6. [Шпаргалка типичных задач](./885.md) — после основ; рецепты, не замена главам 107–108
-7. Для **Microsoft SQL Server**: теория [T-SQL](./882.md) и [справочник](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212) → практика на [Microsoft Learn](/tools/documentation/6) (учебник Transact-SQL, SSMS).
+6. [SQLite — практическая работа и API](./887.md) — встроенная СУБД, команды, типы и API по языкам
+7. [PostgreSQL — практическая работа и API](./888.md) — серверная СУБД, команды, типы и API по языкам
+8. [MySQL — практическая работа и API](./889.md) — серверная СУБД, команды, типы и API по языкам
+9. [Microsoft SQL Server — практическая работа и API](./890.md) — серверная СУБД, T-SQL, команды, типы и API по языкам
+10. [Шпаргалка типичных задач](./885.md) — после основ; рецепты, не замена главам 107–108
+11. Для углубления по **Microsoft SQL Server**: теория [T-SQL](./882.md) и [справочник](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212) → практика на [Microsoft Learn](/tools/documentation/6) (учебник Transact-SQL, SSMS).
+
+**Практика по СУБД (подключение, CRUD, API по языкам):**
+
+- [SQLite](./887.md)
+- [PostgreSQL](./888.md)
+- [MySQL](./889.md)
+- [Microsoft SQL Server](./890.md)
 
 Интерактивная практика: [SQL-тренажёр](./1.md) (схема shop_data, JOIN, GROUP BY, DML) и [практикум shop_data](./111.md).
 
