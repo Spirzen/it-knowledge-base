@@ -49,9 +49,10 @@ import DocCardList from '@theme/DocCardList';
 10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [Security Basic](./272.md) → [JWT](./274.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md).
 11. **JVM в проде:** [jcmd, heap dump, JFR](./302.md) — после [JVM и потоки](./23.md).
 
-:::info Когда Spring, а когда ещё Core
-Пока не уверены в `List`, `Stream`, исключениях и `main` — не уходите в [271](./271.md). Spring опирается на те же классы, пакеты и Maven, что и консольная программа.
-:::
+<div class="callout callout--info">
+  <div class="callout-title">Когда Spring, а когда ещё Core</div>
+  Пока не уверены в `List`, `Stream`, исключениях и `main` — не уходите в [271](./271.md). Spring опирается на те же классы, пакеты и Maven, что и консольная программа.
+</div>
 
 ---
 
@@ -90,21 +91,22 @@ import DocCardList from '@theme/DocCardList';
 | [proglang.su/java](http://proglang.su/java) | Углубление по коллекциям и API |
 | [Microsoft для Java](https://learn.microsoft.com/ru-ru/java/) | OpenJDK, VS Code — [294](./294.md) |
 
-:::tip Соответствие конспекту GitBook главам энциклопедии
-| Тема в [GitBook](https://andrey-ivantsov.gitbook.io/java) | Глава здесь |
-|-----------------------------------------------------------|-------------|
-| Типы, литералы, переменные, операторы | [15](./15.md), [16](./16.md), [17](./17.md) |
-| Ввод с клавиатуры | [16](./16.md) (`Scanner`) |
-| Особенности строк | [296](./296.md), [15](./15.md) |
-| Коллекции, Stream API | [24](./24.md), [295](./295.md) |
-| Файлы, I/O | [297](./297.md) |
-| Асинхронность | [298](./298.md) |
-| Аннотации, рефлексия | [299](./299.md) |
-| record, sealed, pattern matching | [300](./300.md) |
-| Дата и время | [28](./28.md) (`java.time`) |
-| Исключения | [21](./21.md), [211](./211.md) |
-| Интерфейсы, `instanceof` | [18](./18.md), [141](./141.md) |
-:::
+<div class="callout callout--tip">
+  <div class="callout-title">Соответствие конспекту GitBook главам энциклопедии</div>
+  | Тема в [GitBook](https://andrey-ivantsov.gitbook.io/java) | Глава здесь |
+  |-----------------------------------------------------------|-------------|
+  | Типы, литералы, переменные, операторы | [15](./15.md), [16](./16.md), [17](./17.md) |
+  | Ввод с клавиатуры | [16](./16.md) (`Scanner`) |
+  | Особенности строк | [296](./296.md), [15](./15.md) |
+  | Коллекции, Stream API | [24](./24.md), [295](./295.md) |
+  | Файлы, I/O | [297](./297.md) |
+  | Асинхронность | [298](./298.md) |
+  | Аннотации, рефлексия | [299](./299.md) |
+  | record, sealed, pattern matching | [300](./300.md) |
+  | Дата и время | [28](./28.md) (`java.time`) |
+  | Исключения | [21](./21.md), [211](./211.md) |
+  | Интерфейсы, `instanceof` | [18](./18.md), [141](./141.md) |
+</div>
 
 Примеры ориентированы на **Java 17+** (LTS). Упоминания `Date`, `Vector`, `Hashtable` — в контексте legacy и собеседований.
 

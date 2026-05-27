@@ -162,9 +162,20 @@ html[data-design]:not([data-design='design-universe-original']) .callout--note {
   border-left-color: var(--d-primary);
 }
 
-html[data-design]:not([data-design='design-universe-original']) .callout--warning {
+html[data-design]:not([data-design='design-universe-original']) .callout--warning,
+html[data-design]:not([data-design='design-universe-original']) .callout--caution {
   background-color: var(--d-tag-warn-bg);
   border-left-color: #ff8f00;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .callout--danger {
+  background-color: color-mix(in srgb, #d32f2f 14%, var(--d-surface));
+  border-left-color: #d32f2f;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .callout--info {
+  background-color: var(--d-tag-info-bg);
+  border-left-color: var(--d-accent2);
 }
 
 html[data-design]:not([data-design='design-universe-original']) .callout--tip {
@@ -382,8 +393,17 @@ html[data-design='design-universe-original'][data-theme='dark'] .callout--note {
   background-color: color-mix(in srgb, var(--ifm-color-primary) 15%, #2a2a2a);
 }
 
-html[data-design='design-universe-original'][data-theme='dark'] .callout--warning {
+html[data-design='design-universe-original'][data-theme='dark'] .callout--warning,
+html[data-design='design-universe-original'][data-theme='dark'] .callout--caution {
   background-color: color-mix(in srgb, #ff8f00 12%, #2a2a2a);
+}
+
+html[data-design='design-universe-original'][data-theme='dark'] .callout--danger {
+  background-color: color-mix(in srgb, #d32f2f 12%, #2a2a2a);
+}
+
+html[data-design='design-universe-original'][data-theme='dark'] .callout--info {
+  background-color: color-mix(in srgb, #0288d1 12%, #2a2a2a);
 }
 
 html[data-design='design-universe-original'][data-theme='dark'] .callout--tip {

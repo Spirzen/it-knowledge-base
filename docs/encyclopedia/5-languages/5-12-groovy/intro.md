@@ -53,9 +53,10 @@ import DocCardList from '@theme/DocCardList';
 10. [Справочник](./3.md) — углубление  
 11. [Итоги](./998.md) и [чек-лист](./999.md)
 
-:::tip Gradle на Kotlin DSL
-Новые проекты часто пишут `build.gradle.kts` ([Kotlin DSL](/encyclopedia/5-languages/5-09-kotlin/230)). Groovy DSL всё ещё встречается в старых репозиториях и в примерах Android — этот раздел как раз про чтение таких скриптов.
-:::
+<div class="callout callout--tip">
+  <div class="callout-title">Gradle на Kotlin DSL</div>
+  Новые проекты часто пишут `build.gradle.kts` ([Kotlin DSL](/encyclopedia/5-languages/5-09-kotlin/230)). Groovy DSL всё ещё встречается в старых репозиториях и в примерах Android — этот раздел как раз про чтение таких скриптов.
+</div>
 
 ---
 

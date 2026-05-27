@@ -21,10 +21,11 @@ import DocCardList from '@theme/DocCardList';
 | Передача | [Маршалинг и анмаршалинг](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111) | JSON, protobuf, безопасность десериализации |
 | Закрепление | [Итоги](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/998), [Чек-лист](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/999) | самопроверка |
 
-:::tip Связанные разделы
-- Физика и кодировки: [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8).
-- Форматы конфигураций: [Конфигурации и данные](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/intro).
-:::
+<div class="callout callout--tip">
+  <div class="callout-title">Связанные разделы</div>
+  - Физика и кодировки: [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8).
+  - Форматы конфигураций: [Конфигурации и данные](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/intro).
+</div>
 
 <DocCardList />
 

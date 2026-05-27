@@ -520,6 +520,21 @@ img {
   background-color: #fff8e1;
 }
 
+.callout--caution {
+  border-left-color: #f57c00;
+  background-color: #fff3e0;
+}
+
+.callout--danger {
+  border-left-color: #d32f2f;
+  background-color: #ffebee;
+}
+
+.callout--info {
+  border-left-color: #0288d1;
+  background-color: #e1f5fe;
+}
+
 .callout--tip {
   border-left-color: #1976d2;
   background-color: #e3f2fd;

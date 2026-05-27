@@ -50,9 +50,10 @@ import DocCardList from '@theme/DocCardList';
 | **Backend (Spring)** | [Spring Boot на Kotlin](./232.md) | [Security (Java)](/encyclopedia/5-languages/5-03-java/272), [JPA](/encyclopedia/5-languages/5-03-java/293) |
 | **Desktop / KMP** | [Compose Multiplatform](./224.md) | [DSL](./230.md), [экосистема](./10.md) |
 
-:::tip Если уже знаете Java
-Сначала [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) не нужен — сразу [основы Kotlin](./11.md) и [совместимость с Java](./10.md) (вызов Java-классов, `@JvmStatic`, nullable). Первая программа в IDEA описана в [2.md](./2.md).
-:::
+<div class="callout callout--tip">
+  <div class="callout-title">Если уже знаете Java</div>
+  Сначала [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) не нужен — сразу [основы Kotlin](./11.md) и [совместимость с Java](./10.md) (вызов Java-классов, `@JvmStatic`, nullable). Первая программа в IDEA описана в [2.md](./2.md).
+</div>
 
 ---
 
