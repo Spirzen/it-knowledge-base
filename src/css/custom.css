@@ -215,7 +215,7 @@ img {
 .menu__link {
   border-radius: 6px;
   margin: 2px 0;
-  transition: all 0.3s ease;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .menu__link:hover,
@@ -328,6 +328,11 @@ img {
   padding-bottom: 0.1rem !important;
   margin-bottom: 0.2rem !important;
   border-radius: 4px !important;
+}
+
+.theme-doc-sidebar-menu .menu__list .menu__list {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 12rem;
 }
 
 .theme-doc-sidebar-menu .menu__link {

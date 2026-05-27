@@ -42,6 +42,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Связь с соседними разделами
 
+- Пошаговая публикация статики на **GitHub Pages** (домен, DNS, Actions) — лабораторный кейс [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3)
 - Сети, DNS, TCP — [2.03. Сеть и интернет](/encyclopedia/2-system-network/2-03-set-i-internet/intro)
 - HTML и разметка — [3.09. HTML](/encyclopedia/3-data-markup/3-09-html/intro)
 - JavaScript — [5.01. JavaScript](/encyclopedia/5-languages/5-01-javascript/intro)

@@ -85,9 +85,15 @@ export default function useSidebarAutoWidth(navRef, deps = []) {
     const mq = window.matchMedia('(min-width: 997px)');
     let frame = 0;
 
+    let debounceTimer = 0;
     const apply = () => {
       cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
+      if (debounceTimer) {
+        window.clearTimeout(debounceTimer);
+      }
+      debounceTimer = window.setTimeout(() => {
+        debounceTimer = 0;
+        frame = requestAnimationFrame(() => {
         const sidebar = nav.closest('.theme-doc-sidebar-container');
         if (!sidebar) {
           return;
@@ -119,7 +125,8 @@ export default function useSidebarAutoWidth(navRef, deps = []) {
           '--doc-sidebar-nest-depth',
           String(result.maxNestDepth),
         );
-      });
+        });
+      }, 120);
     };
 
     apply();
@@ -140,6 +147,9 @@ export default function useSidebarAutoWidth(navRef, deps = []) {
 
     return () => {
       cancelAnimationFrame(frame);
+      if (debounceTimer) {
+        window.clearTimeout(debounceTimer);
+      }
       observer.disconnect();
       window.removeEventListener('resize', onResize);
       window.removeEventListener(RESET_WIDTH_EVENT, onReset);

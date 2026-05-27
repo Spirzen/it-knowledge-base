@@ -8,6 +8,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from 'gray-matter';
 import {createSlugger} from '@docusaurus/utils';
+import {resolveDocHref} from './lib/docUrl.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -98,7 +99,7 @@ function parseEncyclopediaTitles() {
         .replace(/\\/g, '/')
         .replace(/\.mdx?$/, '');
       const list = titleCounts.get(key) ?? [];
-      list.push({title, href: `/${rel}`});
+      list.push({title, href: resolveDocHref(rel, data)});
       titleCounts.set(key, list);
     }
   }

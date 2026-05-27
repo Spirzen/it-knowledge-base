@@ -1,5 +1,13 @@
 // docusaurus.config.js
 
+/** @type {Record<string, string[]>} */
+let docLegacyRedirects = {};
+try {
+  docLegacyRedirects = require('./src/data/docLegacyRedirects.json');
+} catch {
+  // npm run docs:redirects — перед start/build
+}
+
 /** Old slug segment -> new folder name (encyclopedia subsection). */
 const ENCYCLOPEDIA_FOLDER_RENAMES = [
   ['encyclopedia/3-data-markup/3.01. Продвинутые операции с данными', 'encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi'],
@@ -134,51 +142,13 @@ module.exports = {
               '/encyclopedia/Код и разработка/code-dev',
             ],
             '/encyclopedia/5-languages/intro': ['/encyclopedia/5-languages/languages'],
-            '/tools/testing/1': ['/tools/Тестирование/1'],
-            '/tools/testing/2': ['/tools/Тестирование/2'],
-            '/tools/testing/3': ['/tools/Тестирование/3'],
-            '/tools/data/1': ['/tools/Данные/1'],
-            '/tools/data/2': ['/tools/Данные/2'],
-            '/tools/data/3': ['/tools/Данные/3'],
-            '/tools/data/4': ['/tools/Данные/4'],
-            '/tools/data/5': ['/tools/Данные/5'],
-            '/tools/data/6': ['/tools/Данные/6'],
-            '/tools/automation/1': ['/tools/Автоматизация/1'],
-            '/tools/automation/2': ['/tools/Автоматизация/2'],
-            '/tools/automation/3': ['/tools/Автоматизация/3'],
-            '/tools/games/1': ['/tools/Игры/1'],
-            '/tools/games/2': ['/tools/Игры/2'],
-            '/tools/games/3': ['/tools/Игры/3'],
-            '/tools/games/4': ['/tools/Игры/4'],
-            '/tools/games/1111': ['/tools/Игры/1111'],
-            '/tools/network/intro': ['/tools/Сеть/intro'],
-            '/tools/network/1': ['/tools/Сеть/1'],
-            '/tools/network/2': ['/tools/Сеть/2'],
-            '/tools/network/3': ['/tools/Сеть/3'],
-            '/tools/network/4': ['/tools/Сеть/4'],
-            '/tools/security/1': ['/tools/Безопасность/1'],
-            '/tools/security/2': ['/tools/Безопасность/2'],
-            '/tools/security/3': ['/tools/Безопасность/3'],
-            '/tools/security/4': ['/tools/Безопасность/4'],
-            '/tools/documentation/1': ['/tools/Документация/1'],
-            '/tools/documentation/2': ['/tools/Документация/2'],
-            '/tools/documentation/3': ['/tools/Документация/3'],
-            '/tools/documentation/4': ['/tools/Документация/4'],
-            '/tools/documentation/5': ['/tools/Документация/5'],
-            '/tools/development/1': ['/tools/Разработка/1'],
-            '/tools/development/2': ['/tools/Разработка/2'],
-            '/tools/development/3': ['/tools/Разработка/3'],
-            '/tools/development/4': ['/tools/Разработка/4'],
-            '/tools/misc/1': ['/tools/Прочее/1'],
-            '/tools/misc/2': ['/tools/Прочее/2'],
-            '/tools/misc/3': ['/tools/Прочее/3'],
-            '/tools/misc/4': ['/tools/Прочее/4'],
-            '/tools/misc/5': ['/tools/Прочее/5'],
-            '/tools/misc/6': ['/tools/Прочее/6'],
             '/encyclopedia/3-data-markup/data-markup': [
               '/encyclopedia/3-data-markup/Данные-markup',
             ],
             '/section/data-markup': ['/section/Данные-markup'],
+            '/section/basics': ['/section/Основы'],
+            '/section/system-network': ['/section/Система-Сеть'],
+            '/section/infra-security': ['/section/infra-Безопасность'],
           };
           const cLanguageRedirects = {};
           for (let n = 1; n <= 8; n += 1) {
@@ -202,10 +172,15 @@ module.exports = {
             ];
           }
           Object.assign(slugRedirects, cLanguageRedirects, designPatternRedirects);
-          if (slugRedirects[existingPath]) {
-            return slugRedirects[existingPath];
+
+          const fromGenerated = docLegacyRedirects[existingPath] ?? [];
+          const fromManual = slugRedirects[existingPath] ?? [];
+          const fromEncFolders = fromEncyclopedia ?? [];
+          const merged = [...fromGenerated, ...fromManual, ...fromEncFolders];
+          if (merged.length > 0) {
+            return [...new Set(merged)];
           }
-          return fromEncyclopedia;
+          return undefined;
         },
       },
     ],

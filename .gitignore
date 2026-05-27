@@ -175,6 +175,7 @@ launch.bat
 !scripts/generate-demo-registry.mjs
 !scripts/build-wiki-link-index.mjs
 !scripts/build-doc-search-index.mjs
+!scripts/build-doc-redirects.mjs
 !scripts/generate-collection-doc-titles.mjs
 !scripts/fix-mdx-import-after-frontmatter.mjs
 !scripts/enrich-basics-crosslinks.mjs
@@ -182,6 +183,9 @@ launch.bat
 
 # Индекс перекрёстных ссылок (генерируется npm run docs:wiki-links)
 src/data/wikiLinkIndex.json
+
+# Редиректы устаревших URL (генерируется npm run docs:redirects)
+src/data/docLegacyRedirects.json
 
 # Артефакты служебных скриптов
 /scripts/_*.txt

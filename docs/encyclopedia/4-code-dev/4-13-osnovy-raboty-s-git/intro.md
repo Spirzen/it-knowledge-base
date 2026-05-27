@@ -71,6 +71,8 @@ import DocCardList from '@theme/DocCardList';
 
 Тренажёр веток: [Learn Git Branching](https://learngitbranching.js.org/?locale=ru_RU).
 
+Практика выкладки статического сайта после `git push` — лабораторный кейс [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3) (HTTPS/SSH, `.gitignore`, деплой через Actions).
+
 <DocCardList />
 
 {/* sidebar-collections */}

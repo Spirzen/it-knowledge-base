@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from 'gray-matter';
+import {resolveDocHref} from './lib/docUrl.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -80,11 +81,6 @@ function sectionForFile(filePath, categoryLabels) {
   return '';
 }
 
-function docHref(relPath) {
-  const slug = relPath.replace(/\.mdx?$/i, '');
-  return `/${slug}`;
-}
-
 function tagsToString(tags) {
   if (!Array.isArray(tags)) {
     return '';
@@ -149,7 +145,7 @@ function collectDocs(categoryLabels) {
       const tagStr = tagsToString(data.tags);
 
       docs.push({
-        u: docHref(rel),
+        u: resolveDocHref(rel, data),
         t: displayTitle,
         d: description,
         s: section,

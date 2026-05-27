@@ -25,7 +25,13 @@ function RandomArticleInner({className}) {
   }, [baseUrl]);
 
   useEffect(() => {
-    roll();
+    const run = () => roll();
+    if (typeof window.requestIdleCallback === 'function') {
+      const idleId = window.requestIdleCallback(run, {timeout: 2500});
+      return () => window.cancelIdleCallback(idleId);
+    }
+    const timerId = window.setTimeout(run, 400);
+    return () => window.clearTimeout(timerId);
   }, [roll]);
 
   return (

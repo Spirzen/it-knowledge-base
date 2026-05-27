@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "npm run docs:wiki-links && npm run docs:search-index && cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus start",
-    "build": "npm run docs:collection-titles && npm run docs:wiki-links && npm run docs:search-index && cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus build",
+    "start": "npm run docs:wiki-links && npm run docs:search-index && npm run docs:redirects && cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus start",
+    "build": "npm run docs:collection-titles && npm run docs:wiki-links && npm run docs:search-index && npm run docs:redirects && cross-env NODE_OPTIONS=--max-old-space-size=12288 docusaurus build",
     "docs:search-index": "node scripts/build-doc-search-index.mjs",
+    "docs:redirects": "node scripts/build-doc-redirects.mjs",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",

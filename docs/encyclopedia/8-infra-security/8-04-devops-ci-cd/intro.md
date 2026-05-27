@@ -35,6 +35,8 @@ import DocCardList from '@theme/DocCardList';
 
 Если вы только пишете код в IDE и никогда не видели staging — начните с [основ](./1.md): без этого остальные главы про Jenkins, Kubernetes и Terraform воспринимаются как "чужой мир".
 
+Развёрнутый пример CI/CD на **GitHub Pages** (`.github/workflows/deploy.yml`, ручной и автоматический запуск) — лабораторный кейс [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3).
+
 <DocCardList />
 
 {/* sidebar-collections */}
