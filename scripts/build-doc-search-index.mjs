@@ -92,7 +92,7 @@ function tagsToString(tags) {
 }
 
 function collectDocs(categoryLabels) {
-  /** @type {{ u: string, t: string, d: string, s: string, a: string }[]} */
+/** @type {{ u: string, t: string, d: string, s: string, a: string, h: string }[]} */
   const docs = [];
 
   function walk(dir) {
@@ -140,6 +140,13 @@ function collectDocs(categoryLabels) {
       description = description.replace(/\s+/g, ' ').trim();
       description = truncate(description, MAX_DESCRIPTION);
 
+      // Заголовки (##/###) из тела статьи: используется в интерактивных “профилях”.
+      // Ограничиваем размер, чтобы индекс оставался компактным.
+      const headings = [...content.matchAll(/^#{2,3}\s+(.+?)\s*$/gm)]
+        .map((m) => (m?.[1] ?? '').trim())
+        .filter(Boolean);
+      const headingsText = truncate(headings.join(' '), 260);
+
       const rel = path.relative(docsDir, fullPath).replace(/\\/g, '/');
       const section = sectionForFile(fullPath, categoryLabels);
       const tagStr = tagsToString(data.tags);
@@ -150,6 +157,7 @@ function collectDocs(categoryLabels) {
         d: description,
         s: section,
         a: tagStr,
+        h: headingsText,
       });
     }
   }

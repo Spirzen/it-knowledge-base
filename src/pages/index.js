@@ -85,6 +85,11 @@ function HomepageInteractive() {
                 Витрина интерактива
               </Link>
               <Link
+                className="button button--secondary button--lg"
+                to="/lab/Планы%20развития/7">
+                Навигатор профиля (игра) →
+              </Link>
+              <Link
                 className="button button--outline button--primary button--lg"
                 to="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">
                 Дорожная карта →

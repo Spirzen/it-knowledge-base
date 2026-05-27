@@ -1,4 +1,4 @@
-/** @typedef {{ u: string, t: string, d: string, s: string, a: string }} DocSearchEntry */
+/** @typedef {{ u: string, t: string, d: string, s: string, a: string, h?: string }} DocSearchEntry */
 
 /** @typedef {{ v: number, docs: DocSearchEntry[] }} DocSearchIndex */
 
@@ -13,7 +13,7 @@ export function normalizeSearchText(text) {
  * @param {DocSearchEntry} doc
  */
 function haystack(doc) {
-  return normalizeSearchText([doc.t, doc.d, doc.s, doc.a, doc.u].filter(Boolean).join(' '));
+  return normalizeSearchText([doc.t, doc.d, doc.s, doc.a, doc.h, doc.u].filter(Boolean).join(' '));
 }
 
 /**
