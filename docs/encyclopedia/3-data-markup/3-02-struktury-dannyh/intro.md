@@ -32,7 +32,7 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [История](./11.md) · [Геометрия](./12.md) | по желанию |
 | 4 | [Итоги](./3.md) · [чек-лист](./4.md) | закрепление |
 
-Дальше — коллекции в [языках](/encyclopedia/5-languages/languages) (таблица ниже). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro).
+Дальше — коллекции в [языках](/encyclopedia/5-languages/intro) (таблица ниже). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro).
 
 ---
 

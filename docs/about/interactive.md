@@ -355,5 +355,9 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 <div class="callout callout--tip">
   <div class="callout-title">Как искать демо дальше</div>
+
+  <div class="callout-body">
   Откройте любой раздел энциклопедии с карты на <a href="/">главной</a> или по <a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">дорожной карте</a> — интерактивные блоки стоят там, где они помогают понять тему, а не ради украшения.
 </div>
+  </div>
+

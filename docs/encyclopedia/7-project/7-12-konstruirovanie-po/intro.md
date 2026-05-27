@@ -16,8 +16,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Для кого</div>
+
+  <div class="callout-body">
   <p><strong>Студентам и новичкам</strong> — термины курса "Конструирование ПО" в одном маршруте. <strong>Разработчикам</strong> — связность, сцепление, сложность без академического тумана. <strong>Руководителям</strong> — модели ЖЦ, планирование, стандарты — кратко и с примерами.</p>
 </div>
+  </div>
+
 
 ---
 
@@ -29,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 | **Модульность** | Разбиение на части с чёткими границами | [Связность и сцепление](./2), [Компонентная архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/103) |
 | **Модели и процесс** | Как организовать работу (Waterfall, инкремент, RAD…) | [Модели ЖЦ для конструирования](./3), [SDLC](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1) |
 | **Планирование** | Оценки, критический путь, покер | [Планирование и оценка](./4), [Оценка трудозатрат](/encyclopedia/7-project/7-02-komanda-i-upravlenie/112) |
-| **Языки** | Программирование, проектирование, контракты | [Языки конструирования](./5), [Языки](/encyclopedia/5-languages) |
+| **Языки** | Программирование, проектирование, контракты | [Языки конструирования](./5), [Языки](/encyclopedia/5-languages/intro) |
 | **Качество** | Тесты, метрики, стандарты | [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro), [ISO 25010](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/2), [Цикломатическая сложность](/encyclopedia/7-project/7-10-kultura-koda/2) |
 
 ---

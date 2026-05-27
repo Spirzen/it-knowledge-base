@@ -55,8 +55,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Gradle на Kotlin DSL</div>
+
+  <div class="callout-body">
   Новые проекты часто пишут `build.gradle.kts` ([Kotlin DSL](/encyclopedia/5-languages/5-09-kotlin/230)). Groovy DSL всё ещё встречается в старых репозиториях и в примерах Android — этот раздел как раз про чтение таких скриптов.
 </div>
+  </div>
+
 
 ---
 

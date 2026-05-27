@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## В энциклопедии
 
 - [Основы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) — модели, транзакции, выбор СУБД

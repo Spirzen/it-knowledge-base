@@ -36,8 +36,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Ожидания</div>
+
+  <div class="callout-body">
   Статьи **длинные там, где тема того требует** (растр, Blender). Если нужна академическая строгость — сверяйтесь с учебниками и спецификациями (OpenGL, SVG, EXIF). Энциклопедия — **навигатор и объяснение своими словами**, не замена Wikipedia и не мануал Blender целиком.
 </div>
+  </div>
+
 
 <DocCardList />
 

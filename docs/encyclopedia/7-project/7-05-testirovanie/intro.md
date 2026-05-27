@@ -89,11 +89,17 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 
 <div class="callout callout--tip">
   <div class="callout-title">Жизненный цикл и этапы</div>
+
+  <div class="callout-body">
   [Жизненный цикл тестирования](./112.md) — **что** делает команда QA на уровне процесса (планирование → отчёт). [Последовательность этапов](./116.md) — **в каком порядке** проверять (unit → integration → system → UAT). Статьи дополняют друг друга, не дублируют.
 </div>
+  </div>
+
 
 <div class="callout callout--info">
   <div class="callout-title">Смежные разделы</div>
+
+  <div class="callout-body">
   - SQL для проверки данных в БД: [SQL для тестировщика](./129.md) и [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro)
   - HTTP и Postman глубже: [Основы интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro)
   - CI/CD и запуск тестов в пайплайне: [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro)
@@ -101,6 +107,8 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
   - Стадия конструирования и V-модель (unit на этапе кода): [Конструирование ПО](/encyclopedia/7-project/7-12-konstruirovanie-po/intro)
   - Курс "экономика производства ПО" (COCOMO, ISO 25010, приёмка): [7-13](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)
 </div>
+  </div>
+
 
 ---
 

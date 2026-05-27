@@ -17,8 +17,12 @@ import GamepadPlay from '@site/src/components/GamepadPlay';
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>
+
+  <div class="callout-body">
   Виртуальный геймпад показывает, как нажатия превращаются в сигнал для игры — по тому же принципу работает физический контроллер.
 </div>
+  </div>
+
 
 <GamepadPlay />
 

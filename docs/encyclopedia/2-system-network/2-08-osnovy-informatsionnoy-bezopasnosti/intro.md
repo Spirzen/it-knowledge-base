@@ -29,6 +29,8 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Рекомендуемый порядок</div>
+
+  <div class="callout-body">
   <ol>
     <li><a href="./1">Основы информационной безопасности</a> — триада CIA, политики, угрозы</li>
     <li><a href="./114">Устройство и надёжность паролей</a> — хеши, соль, менеджеры паролей</li>
@@ -40,6 +42,8 @@ import DocCardList from '@theme/DocCardList';
     <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101">Опасные скрипты</a> — социальная инженерия через "установочный" shell-скрипт и команды от ИИ-агента</li>
   </ol>
 </div>
+  </div>
+
 
 <DocCardList />
 

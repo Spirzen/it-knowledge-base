@@ -23,9 +23,13 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Связанные разделы</div>
+
+  <div class="callout-body">
   - Физика и кодировки: [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8).
   - Форматы конфигураций: [Конфигурации и данные](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/intro).
 </div>
+  </div>
+
 
 <DocCardList />
 

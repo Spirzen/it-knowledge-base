@@ -8,9 +8,9 @@ related:
   - title: "Julia — о разделе"
     doc: encyclopedia/5-languages/5-24-julia/intro
   - title: "Python — о разделе"
-    doc: encyclopedia/5-languages/5-01-python/intro
+    doc: encyclopedia/5-languages/5-02-python/intro
   - title: "Данные и разметка — о разделе"
-    doc: encyclopedia/3-data-markup/intro
+    doc: encyclopedia/3-data-markup/data-markup
   - title: "Nim — о разделе"
     doc: encyclopedia/5-languages/5-21-nim/intro
   - title: "Bash — о разделе"
@@ -44,8 +44,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">Смежные разделы энциклопедии</div>
-  Общая база про код и интерпретацию — [что такое код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1). Табличные данные, CSV и БД — [данные и разметка](/encyclopedia/3-data-markup/intro). Сравнение R с Python и другими языками — [основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/intro). Воспроизводимые отчёты пересекаются с темой [документации и разметки](/encyclopedia/3-data-markup/3-01-markup/intro).
+
+  <div class="callout-body">
+  Общая база про код и интерпретацию — [что такое код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1). Табличные данные, CSV и БД — [данные и разметка](/encyclopedia/3-data-markup/data-markup). Сравнение R с Python и другими языками — [основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/intro). Воспроизводимые отчёты пересекаются с темой [документации и разметки](/encyclopedia/3-data-markup/data-markup).
 </div>
+  </div>
+
 
 ---
 

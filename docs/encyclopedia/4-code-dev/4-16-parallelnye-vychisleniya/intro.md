@@ -22,8 +22,12 @@ import RooflinePlay from '@site/src/components/RooflinePlay';
 
 <div class="callout callout--tip">
   <div class="callout-title">Как читать этот раздел правильно</div>
+
+  <div class="callout-body">
   Не пытайтесь "проглотить" все формулы за один заход. Нормальная траектория — сначала общая картина (1–4), затем формальные инструменты (5–7), потом инженерная практика (8–11). Возвращаться к главам повторно — правильно и полезно.
 </div>
+  </div>
+
 
 ---
 
@@ -68,8 +72,12 @@ import RooflinePlay from '@site/src/components/RooflinePlay';
 
 <div class="callout callout--tip">
   <div class="callout-title">Если C++ ещё впереди</div>
+
+  <div class="callout-body">
   Статьи 1–10 можно пройти, опираясь на псевдокод и схемы. Статья <a href="./11.md">11</a> и фрагменты в <a href="./8.md">8</a>, <a href="./9.md">9</a> содержат блоки "Справочно на C/C++" — их удобно читать как иллюстрацию идей, не заучивая синтаксис. Полноценная работа с потоками — в разделе <a href="/encyclopedia/5-languages/5-06-cpp/20">C++</a> и <a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/811">Fortran HPC</a>.
 </div>
+  </div>
+
 
 **С чего начать, если вы уже знаете потоки —** прочитайте [1](./1.md) (проблемы HPC, Roofline) и [7](./7.md) — там формулы и "почему 16 ядер ≠ ×16 скорости". Затем [5](./5.md)–[6](./6.md), если нужен академический разбор алгоритма по графу.
 

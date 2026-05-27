@@ -12,6 +12,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## В энциклопедии
 
 - [Компьютерные игры](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro) — жанры, платформы, культура

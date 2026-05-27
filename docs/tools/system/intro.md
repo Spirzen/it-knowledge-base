@@ -10,6 +10,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## В энциклопедии
 
 - [Операционные системы](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro) — ядро, процессы, память

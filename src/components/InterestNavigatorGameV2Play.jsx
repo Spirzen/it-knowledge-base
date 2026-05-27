@@ -1,8 +1,10 @@
 import React, {useEffect, useMemo, useState} from 'react';
+import clsx from 'clsx';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
 import {loadDocSearchIndex} from './DocSearch/docSearchEngine';
+import styles from './InterestNavigatorGameV2Play.module.css';
 
 const STORAGE_KEY = 'it-universe-interest-ratings-v2';
 
@@ -154,16 +156,23 @@ function sphereHitsForDoc(doc) {
 }
 
 function StarRating({value, onChange}) {
+  const [hovered, setHovered] = useState(0);
+  const activeValue = hovered || value;
   return (
-    <div style={{display: 'flex', gap: '0.25rem', alignItems: 'center', flexWrap: 'wrap'}}>
+    <div className={styles.starRating} style={{display: 'flex', gap: '0.25rem', alignItems: 'center', flexWrap: 'wrap'}}>
       {[1, 2, 3, 4, 5].map((n) => {
-        const filled = n <= value;
+        const filled = n <= activeValue;
         return (
           <button
             key={n}
             type="button"
             onClick={() => onChange(n)}
+            onMouseEnter={() => setHovered(n)}
+            onMouseLeave={() => setHovered(0)}
+            onFocus={() => setHovered(n)}
+            onBlur={() => setHovered(0)}
             title={`Оценка ${n}`}
+            className={styles.starButton}
             style={{
               border: '1px solid var(--ifm-color-emphasis-300)',
               borderRadius: 8,
@@ -173,14 +182,14 @@ function StarRating({value, onChange}) {
               background: filled ? '#ffd166' : 'transparent',
               cursor: 'pointer',
               lineHeight: '32px',
-              fontWeight: 800,
+              fontWeight: 600,
               fontSize: '1rem',
               touchAction: 'manipulation',
             }}
             aria-label={`Оценка ${n}`}
             aria-pressed={filled}
           >
-            {filled ? '★' : '☆'}
+            <span className={styles.starGlyph}>{filled ? '★' : '☆'}</span>
           </button>
         );
       })}
@@ -237,7 +246,14 @@ function RadarChart({values, labels}) {
 
   return (
     <div style={{display: 'flex', gap: '1rem', alignItems: 'center', flexWrap: 'wrap'}}>
-      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} role="img" aria-label="Карта профиля">
+      <svg
+        width={size}
+        height={size}
+        viewBox={`0 0 ${size} ${size}`}
+        role="img"
+        aria-label="Карта профиля"
+        style={{fontFamily: 'var(--ifm-font-family-base)'}}
+      >
         <polygon points={axes.map((a) => `${a.x},${a.y}`).join(' ')} fill="rgba(123,104,238,0.06)" stroke="rgba(123,104,238,0.25)" />
         <polygon points={points} fill="rgba(123,104,238,0.25)" stroke="rgba(123,104,238,0.9)" strokeWidth="2" />
         {axes.map((a, i) => (
@@ -561,8 +577,16 @@ function InterestNavigatorGameV2Inner() {
         title="Навигатор новичка v2"
         subtitle="Оцените интерес к статьям (1–5), игра посчитает профиль в реальном времени."
       >
-        <div style={{display: 'grid', gridTemplateColumns: '1fr', gap: '1rem'}}>
-          <div style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '0.85rem'}}>
+        <div
+          className={styles.root}
+          style={{
+            display: 'grid',
+            gridTemplateColumns: '1fr',
+            gap: '1rem',
+            fontFamily: 'var(--ifm-font-family-base)',
+          }}
+        >
+          <div className={styles.panel} style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '0.85rem'}}>
             <div style={{display: 'flex', gap: '0.5rem', flexWrap: 'wrap', marginBottom: '0.6rem'}}>
               <button
                 type="button"
@@ -573,7 +597,7 @@ function InterestNavigatorGameV2Inner() {
                   border: '1px solid var(--ifm-color-emphasis-300)',
                   background: navTab === 'flow' ? 'rgba(123,104,238,0.12)' : 'transparent',
                   cursor: 'pointer',
-                  fontWeight: 800,
+                  fontWeight: 600,
                 }}
               >
                 Поток
@@ -587,7 +611,7 @@ function InterestNavigatorGameV2Inner() {
                   border: '1px solid var(--ifm-color-emphasis-300)',
                   background: navTab === 'sections' ? 'rgba(123,104,238,0.12)' : 'transparent',
                   cursor: 'pointer',
-                  fontWeight: 800,
+                  fontWeight: 600,
                 }}
               >
                 Разделы (дерево)
@@ -612,7 +636,7 @@ function InterestNavigatorGameV2Inner() {
                     border: '1px solid var(--ifm-color-emphasis-300)',
                     background: 'transparent',
                     cursor: 'pointer',
-                    fontWeight: 800,
+                    fontWeight: 600,
                   }}
                 >
                   Сбросить фильтр
@@ -636,14 +660,14 @@ function InterestNavigatorGameV2Inner() {
                     border: '1px solid var(--ifm-color-emphasis-300)',
                     background: sectionFilter === 'all' ? 'rgba(123,104,238,0.12)' : 'transparent',
                     cursor: 'pointer',
-                    fontWeight: 800,
+                    fontWeight: 600,
                   }}
                 >
                   Все разделы ({corpus.length})
                 </button>
                 {sectionTree.map((chapter) => (
                   <details key={chapter.id}>
-                    <summary style={{cursor: 'pointer', fontWeight: 900}}>
+                    <summary style={{cursor: 'pointer', fontWeight: 700}}>
                       {chapter.label} ({chapter.count})
                     </summary>
                     <div style={{marginTop: '0.35rem', marginLeft: '0.5rem', display: 'grid', gap: '0.3rem'}}>
@@ -679,7 +703,7 @@ function InterestNavigatorGameV2Inner() {
             )}
           </div>
 
-          <div style={{display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center'}}>
+          <div className={styles.toolbar} style={{display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center'}}>
             <button
               type="button"
               onClick={() => setMode('order')}
@@ -713,7 +737,7 @@ function InterestNavigatorGameV2Inner() {
               <div style={{color: 'var(--ifm-color-content-secondary)', fontWeight: 700}}>
                 Пройдено: <span style={{color: 'var(--ifm-color-content)'}}>{ratedCount}</span> / {corpus.length}
               </div>
-              <div style={{color: isDone ? '#16a34a' : 'var(--ifm-color-content-secondary)', fontWeight: 800}}>
+              <div style={{color: isDone ? '#16a34a' : 'var(--ifm-color-content-secondary)', fontWeight: 600}}>
                 Осталось: {unratedCount}
               </div>
               <button
@@ -726,7 +750,7 @@ function InterestNavigatorGameV2Inner() {
                   background: 'rgba(220, 38, 38, 0.08)',
                   color: '#b91c1c',
                   cursor: 'pointer',
-                  fontWeight: 800,
+                  fontWeight: 600,
                 }}
               >
                 Очистить прогресс
@@ -735,10 +759,10 @@ function InterestNavigatorGameV2Inner() {
           </div>
 
           <div style={{display: 'grid', gridTemplateColumns: '1fr', gap: '1rem'}}>
-            <div style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '1rem'}}>
+            <div className={styles.panel} style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '1rem'}}>
               <div style={{display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap'}}>
                 <div>
-                  <div style={{fontWeight: 900, color: 'var(--ifm-color-content)', marginBottom: '0.25rem'}}>
+                  <div style={{fontWeight: 700, color: 'var(--ifm-color-content)', marginBottom: '0.25rem'}}>
                     Сейчас: {currentDoc ? currentDoc.t : '—'}
                   </div>
                   {currentDoc && (
@@ -752,12 +776,13 @@ function InterestNavigatorGameV2Inner() {
                     href={currentDoc.u}
                     target="_blank"
                     rel="noreferrer"
+                    className={styles.openArticleLink}
                     style={{
                       padding: '0.55rem 0.9rem',
                       borderRadius: 10,
                       border: '1px solid rgba(123,104,238,0.35)',
                       background: 'rgba(123,104,238,0.08)',
-                      fontWeight: 800,
+                      fontWeight: 600,
                       color: 'var(--ifm-link-color)',
                       textDecoration: 'none',
                     }}
@@ -776,7 +801,7 @@ function InterestNavigatorGameV2Inner() {
               {currentDoc && (
                 <div style={{display: 'flex', gap: '1rem', flexWrap: 'wrap', alignItems: 'center'}}>
                   <div>
-                    <div style={{fontWeight: 900, marginBottom: '0.35rem'}}>Оценка интереса</div>
+                    <div style={{fontWeight: 700, marginBottom: '0.35rem'}}>Оценка интереса</div>
                     <StarRating
                       value={typeof ratings[currentDoc.u] === 'number' ? ratings[currentDoc.u] : 0}
                       onChange={(v) => {
@@ -797,7 +822,7 @@ function InterestNavigatorGameV2Inner() {
                         borderRadius: 10,
                         border: '1px solid rgba(123,104,238,0.35)',
                         background: 'transparent',
-                        fontWeight: 900,
+                        fontWeight: 700,
                         cursor: 'pointer',
                       }}
                     >
@@ -813,7 +838,7 @@ function InterestNavigatorGameV2Inner() {
                           borderRadius: 10,
                           border: '1px solid rgba(123,104,238,0.35)',
                           background: 'rgba(123,104,238,0.08)',
-                          fontWeight: 900,
+                          fontWeight: 700,
                           cursor: 'pointer',
                           opacity: isDone ? 0.5 : 1,
                         }}
@@ -836,12 +861,13 @@ function InterestNavigatorGameV2Inner() {
                         return (
                           <span
                             key={sphereId}
+                            className={styles.signalChip}
                             style={{
                               padding: '0.25rem 0.6rem',
                               border: '1px solid rgba(123,104,238,0.25)',
                               borderRadius: 999,
                               background: 'rgba(123,104,238,0.06)',
-                              fontWeight: 800,
+                              fontWeight: 600,
                               color: 'var(--ifm-color-content)',
                             }}
                           >
@@ -857,10 +883,10 @@ function InterestNavigatorGameV2Inner() {
               )}
             </div>
 
-            <div style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '1rem'}}>
+            <div className={styles.panel} style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '1rem'}}>
               <div style={{display: 'flex', justifyContent: 'space-between', gap: '1rem', alignItems: 'flex-end', flexWrap: 'wrap'}}>
                 <div>
-                  <div style={{fontWeight: 1000, marginBottom: '0.25rem'}}>Прогресс по сферам</div>
+                  <div style={{fontWeight: 700, marginBottom: '0.25rem'}}>Прогресс по сферам</div>
                   <div style={{color: 'var(--ifm-color-content-secondary)', lineHeight: 1.5}}>
                     Показатели обновляются при каждой оценке. Доля = (набрано очков) / (теоретический максимум).
                   </div>
@@ -870,8 +896,8 @@ function InterestNavigatorGameV2Inner() {
                 {progressRows.map((r) => (
                   <div key={r.id}>
                     <div style={{display: 'flex', justifyContent: 'space-between', gap: '1rem'}}>
-                      <div style={{fontWeight: 900}}>{r.label}</div>
-                      <div style={{color: 'var(--ifm-color-content-secondary)', fontWeight: 900}}>
+                      <div style={{fontWeight: 700}}>{r.label}</div>
+                      <div style={{color: 'var(--ifm-color-content-secondary)', fontWeight: 700}}>
                         {r.score} / {r.max}
                         {'  '}
                         ({Math.round(r.percent)}%)
@@ -895,7 +921,7 @@ function InterestNavigatorGameV2Inner() {
 
               <div style={{marginTop: '1rem'}}>
                 <div className="it-demo__label">Рекомендация следующего шага</div>
-                <div style={{marginTop: '0.5rem', color: 'var(--ifm-color-content)', fontWeight: 750, lineHeight: 1.5}}>
+                <div style={{marginTop: '0.5rem', color: 'var(--ifm-color-content)', fontWeight: 600, lineHeight: 1.5}}>
                   <Recommendation topSpheres={topSpheres.slice(0, 5)} />
                 </div>
               </div>
@@ -903,9 +929,9 @@ function InterestNavigatorGameV2Inner() {
           </div>
 
           {mode === 'choose' && (
-            <div style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '1rem'}}>
+            <div className={styles.panel} style={{border: '1px solid var(--ifm-color-emphasis-300)', borderRadius: 14, padding: '1rem'}}>
               <div style={{display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap'}}>
-                <div style={{fontWeight: 1000}}>Выбор статей</div>
+                <div style={{fontWeight: 700}}>Выбор статей</div>
                 <input
                   value={search}
                   onChange={(e) => {
@@ -947,6 +973,7 @@ function InterestNavigatorGameV2Inner() {
                   const active = doc.u === currentU;
                   return (
                     <div
+                      className={clsx(styles.choiceCard, active && styles.choiceCardActive)}
                       key={doc.u}
                       style={{
                         border: `1px solid ${active ? 'rgba(123,104,238,0.65)' : 'var(--ifm-color-emphasis-300)'}`,
@@ -955,11 +982,11 @@ function InterestNavigatorGameV2Inner() {
                         background: active ? 'rgba(123,104,238,0.06)' : 'transparent',
                       }}
                     >
-                      <div style={{fontWeight: 950, color: 'var(--ifm-color-content)', lineHeight: 1.3}}>
+                      <div style={{fontWeight: 700, color: 'var(--ifm-color-content)', lineHeight: 1.3}}>
                         <button
                           type="button"
                           onClick={() => setCurrentU(doc.u)}
-                          style={{background: 'transparent', border: 'none', padding: 0, cursor: 'pointer', fontWeight: 950, color: 'inherit', textAlign: 'left'}}
+                          style={{background: 'transparent', border: 'none', padding: 0, cursor: 'pointer', fontWeight: 700, color: 'inherit', textAlign: 'left'}}
                           title="Открыть карточку"
                         >
                           {doc.t}
@@ -977,7 +1004,7 @@ function InterestNavigatorGameV2Inner() {
                           rel="noreferrer"
                           style={{
                             textDecoration: 'none',
-                            fontWeight: 900,
+                            fontWeight: 700,
                             color: 'var(--ifm-link-color)',
                             fontSize: '0.9rem',
                           }}
@@ -985,11 +1012,11 @@ function InterestNavigatorGameV2Inner() {
                           Ссылка
                         </a>
                         {typeof valueNum === 'number' ? (
-                          <span style={{fontWeight: 900, color: valueNum > 0 ? '#16a34a' : 'var(--ifm-color-content-secondary)'}}>
+                          <span style={{fontWeight: 700, color: valueNum > 0 ? '#16a34a' : 'var(--ifm-color-content-secondary)'}}>
                             {valueNum > 0 ? `Оценка: ${valueNum}` : 'Пропущено'}
                           </span>
                         ) : (
-                          <span style={{fontWeight: 900, color: 'var(--ifm-color-content-secondary)'}}>Без оценки</span>
+                          <span style={{fontWeight: 700, color: 'var(--ifm-color-content-secondary)'}}>Без оценки</span>
                         )}
                       </div>
 
@@ -1010,7 +1037,7 @@ function InterestNavigatorGameV2Inner() {
                               borderRadius: 10,
                               border: '1px solid rgba(123,104,238,0.25)',
                               background: 'transparent',
-                              fontWeight: 900,
+                              fontWeight: 700,
                               cursor: 'pointer',
                               fontSize: '0.85rem',
                             }}
@@ -1038,7 +1065,7 @@ function InterestNavigatorGameV2Inner() {
                       borderRadius: 10,
                       border: '1px solid rgba(123,104,238,0.35)',
                       background: 'rgba(123,104,238,0.08)',
-                      fontWeight: 900,
+                      fontWeight: 700,
                       cursor: 'pointer',
                     }}
                   >

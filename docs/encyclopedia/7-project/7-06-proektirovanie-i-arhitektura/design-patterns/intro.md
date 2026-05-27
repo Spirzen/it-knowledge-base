@@ -21,9 +21,13 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <div class="callout callout--tip">
   <div class="callout-title">Онлайн-версии</div>
+
+  <div class="callout-body">
   <a href="https://spirzen.github.io/SchemaMakerOnline/">Schema Maker Online</a>,
   <a href="https://spirzen.github.io/ArchiStylerOnline/">ArchiStyler Online</a>.
 </div>
+  </div>
+
 
 <SchemaMakerPlay defaultDocName="GoF" title="Планировщик схем" subtitle="Свободный холст + шаблоны классов ArchiStyler" />
 
@@ -32,6 +36,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Паттерн — **имя проверенного решения** повторяющейся проблемы. Сначала [Основы](../1.md) и [обзор в корне](../115.md) — уровни абстракции; затем GoF ниже.
 
 <ArchiStylerPlay defaultPattern="factory" title="Планировщик паттернов" subtitle="Диаграмма классов по шаблону" />
+
+---
 
 ## Как проходить раздел, чтобы не осталось "сухой теории"
 
@@ -43,6 +49,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 4. Только после этого расширяйте применение на соседние модули.
 
 Так материал закрепляется намного лучше, чем при последовательном "прочитал и пошел дальше".
+
+---
 
 ## Практическая навигация по связям раздела
 
@@ -89,8 +97,12 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <div class="callout callout--warning">
   <div class="callout-title">Антипаттерн</div>
+
+  <div class="callout-body">
   <p>Если после паттерна код <strong>сложнее объяснить за пять минут</strong> — абстракция, скорее всего, ранняя.</p>
 </div>
+  </div>
+
 
 ---
 

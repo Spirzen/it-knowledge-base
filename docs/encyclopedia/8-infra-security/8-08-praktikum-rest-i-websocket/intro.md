@@ -26,6 +26,8 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 
 Песочница выше повторяет статусы **201**, **409**, **502** и события **WebSocket** без установки Python и .NET. Локальный код из шагов 4–5 даёт тот же контракт на реальных портах `8100` и `5200`.
 
+---
+
 ## Сценарий
 
 Два сервиса учебной системы **OrderDesk**:
@@ -36,6 +38,8 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 | **orders-api** | C#, ASP.NET Core 8 | `5200` | Заказы, вызов каталога по REST, WebSocket для клиентов |
 
 Синхронная связь — **HTTP/JSON** по версионированному контракту `/api/v1/…`. События для браузера и Postman — **WebSocket** на стороне `orders-api`. Межсервисные вызовы защищены **API-ключом**; для внешних клиентов — **JWT**.
+
+---
 
 ## Маршрут по шагам
 
@@ -52,12 +56,16 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 
 Теория по REST, маппингу и WebSocket — в [8.05 Микросервисы и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro); этот раздел — **применение на практике**.
 
+---
+
 ## Что понадобится
 
 - [Python 3.11+](https://www.python.org/downloads/) и `pip`
 - [.NET SDK 8](https://dotnet.microsoft.com/download)
 - [Postman](https://www.postman.com/downloads/) или Newman для CLI
-- Базовое знакомство с [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) и [JSON](/encyclopedia/3-data-markup/3-01-markup/1)
+- Базовое знакомство с [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) и [JSON](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1)
+
+---
 
 ## Как учиться по разделу
 
@@ -65,6 +73,8 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 2. Прочитайте [шаги 1–3](./1.md) и зафиксируйте контракт на бумаге или в OpenAPI.
 3. Поднимите оба сервиса локально ([4](./4.md), [5](./5.md)) и сверьте ответы с песочницей.
 4. Закройте цикл в [Postman](./8.md) и негативными кейсами из шага 8.
+
+---
 
 ## Связь с теорией
 

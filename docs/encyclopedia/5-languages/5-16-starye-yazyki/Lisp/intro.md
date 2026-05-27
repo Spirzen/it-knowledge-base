@@ -21,8 +21,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">Диалект в курсе</div>
+
+  <div class="callout-body">
   Примеры кода в учебных статьях (2–8) рассчитаны на **ANSI Common Lisp** (SBCL, CCL, CLISP). **Scheme** и **Clojure** упоминаются в истории и сравнениях; синтаксис у них близкий, но детали отличаются (например, `defun` и `define`, `nil` и `#f`).
 </div>
+  </div>
+
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 

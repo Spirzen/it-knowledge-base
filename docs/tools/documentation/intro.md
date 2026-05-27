@@ -22,6 +22,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## В энциклопедии
 
 - [Техническое письмо](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro) — как писать и структурировать документацию

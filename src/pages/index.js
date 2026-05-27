@@ -85,9 +85,10 @@ function HomepageInteractive() {
                 Витрина интерактива
               </Link>
               <Link
-                className="button button--secondary button--lg"
+                className={clsx('button button--secondary button--lg', styles.profileGameButton)}
                 to="/lab/Планы%20развития/7">
-                Навигатор профиля (игра) →
+                <span className={styles.profileGameButtonTitle}>Навигатор профиля</span>
+                <span className={styles.profileGameButtonHint}>Интерактивная игра по траектории →</span>
               </Link>
               <Link
                 className="button button--outline button--primary button--lg"

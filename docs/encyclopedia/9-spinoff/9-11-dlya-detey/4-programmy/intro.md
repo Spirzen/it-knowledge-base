@@ -13,8 +13,12 @@ import DesktopWindowPlay from '@site/src/components/DesktopWindowPlay';
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>
+
+  <div class="callout-body">
   Демо окон и кнопок имитирует рабочий стол Windows и macOS — те же принципы свёртывания, перемещения и закрытия.
 </div>
+  </div>
+
 
 <DesktopWindowPlay />
 

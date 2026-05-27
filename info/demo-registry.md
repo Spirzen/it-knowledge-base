@@ -512,6 +512,8 @@
 | **YamlPlayDemo** | `src/components/YamlPlayDemo.jsx` | 1 | [4](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4) |
 | **ZigEcosystemPlay** | `src/components/ZigEcosystemPlay.jsx` | 1 | [3](/encyclopedia/5-languages/5-20-zig/3) |
 
+---
+
 ## Импорты без файла компонента
 
 | Имя в импорте | Статей | examples статей |

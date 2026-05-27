@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useMemo} from 'react';
 import Link from '@docusaurus/Link';
-import {useDoc} from '@docusaurus/plugin-content-docs/client';
+import {useActivePlugin, useDoc} from '@docusaurus/plugin-content-docs/client';
 
 import styles from './ArticleRelated.module.css';
 
-function normalizeRelatedItem(item) {
+function normalizeDocId(doc) {
+  return doc.replace(/^\//, '').replace(/\.mdx?$/, '');
+}
+
+function normalizeRelatedItem(item, docPermalinks) {
   if (!item || typeof item !== 'object') {
     return null;
   }
@@ -22,22 +26,36 @@ function normalizeRelatedItem(item) {
   }
 
   if (doc) {
-    const docId = doc.replace(/^\//, '').replace(/\.mdx?$/, '');
-    return {title, href: `/${docId}`};
+    const docId = normalizeDocId(doc);
+    return {title, href: docPermalinks.get(docId) ?? `/${docId}`};
   }
 
   return null;
 }
 
+function useDocPermalinks() {
+  const activePlugin = useActivePlugin({failfast: true});
+  return useMemo(() => {
+    const version =
+      activePlugin.pluginData.versions.find((entry) => entry.isLast) ??
+      activePlugin.pluginData.versions[0];
+    if (!version) {
+      return new Map();
+    }
+    return new Map(version.docs.map((doc) => [doc.id, doc.path]));
+  }, [activePlugin.pluginData]);
+}
+
 export default function ArticleRelated() {
   const {frontMatter} = useDoc();
+  const docPermalinks = useDocPermalinks();
   const raw = frontMatter?.related;
 
   if (!Array.isArray(raw) || raw.length === 0) {
     return null;
   }
 
-  const items = raw.map(normalizeRelatedItem).filter(Boolean);
+  const items = raw.map((item) => normalizeRelatedItem(item, docPermalinks)).filter(Boolean);
   if (items.length === 0) {
     return null;
   }

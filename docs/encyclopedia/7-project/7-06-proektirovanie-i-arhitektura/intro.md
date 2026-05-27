@@ -37,8 +37,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Как читать раздел</div>
+
+  <div class="callout-body">
   <p>Не обязательно идти по алфавиту в меню. Ниже — три маршрута; в конце — связи с соседними разделами и подборка "Архитектура и проектирование ПО".</p>
 </div>
+  </div>
+
 
 ---
 
@@ -64,8 +68,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">Разбор</div>
+
+  <div class="callout-body">
   <p><strong>"Срочно нужны микросервисы"</strong> — сначала NFR и границы команд; сравните с <a href="design/2126.md">модульным монолитом</a> и <a href="design/2141.md">таблицей trade-off</a>.</p>
 </div>
+  </div>
+
 
 ---
 

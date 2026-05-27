@@ -10,6 +10,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## В энциклопедии
 
 - [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro) — IDE, профилирование, расширения браузера

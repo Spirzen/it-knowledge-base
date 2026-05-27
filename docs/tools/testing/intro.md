@@ -10,6 +10,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## В энциклопедии
 
 - [Тестирование — о разделе](/encyclopedia/7-project/7-05-testirovanie/intro) — стратегия, пирамида, виды тестов

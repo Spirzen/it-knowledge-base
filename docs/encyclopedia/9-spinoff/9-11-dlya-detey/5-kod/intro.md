@@ -25,20 +25,32 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 
 <div class="callout callout--info">
   <div class="callout-title">Примечание</div>
+
+  <div class="callout-body">
   Блоки с пометкой "псевдокод" иллюстрируют логику; блоки Python и JavaScript без такой пометки можно запускать (инструкции — в соответствующих главах). Онлайн-интерпретатор Python: <a href="https://trinket.io/python3" target="_blank" rel="noopener noreferrer">Trinket</a>.
 </div>
+  </div>
+
 
 <div class="callout callout--tip">
   <div class="callout-title">Путеводитель по веб-стеку</div>
+
+  <div class="callout-body">
   HTML, CSS, JavaScript, Python и PHP — в одном хабе: <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/8">открыть путеводитель</a>.
 </div>
+  </div>
+
 
 <BeginnerWebStackHub defaultTab="overview" />
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>
+
+  <div class="callout-body">
   Соберите несколько блоков ниже — тот же принцип соединения команд, что в Scratch.
 </div>
+  </div>
+
 
 <BlockBuilder />
 

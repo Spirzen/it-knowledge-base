@@ -14,6 +14,8 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Дорожка 1 — мышление и обучение</div>
+
+  <div class="callout-body">
   <ol>
     <li><a href="./1">Когнитивистика</a></li>
     <li><a href="./2">Ментальные модели</a></li>
@@ -21,21 +23,31 @@ import DocCardList from '@theme/DocCardList';
     <li><a href="./4">Итоги</a> → <a href="./5">Чек-лист самопроверки</a></li>
   </ol>
 </div>
+  </div>
+
 
 <div class="callout callout--tip">
   <div class="callout-title">Дорожка 2 — математическая основа IT</div>
+
+  <div class="callout-body">
   <p>Обзор таблиц и маршрутов: <a href="./3">Математическая основа IT</a>.</p>
   <p><strong>Минимум для разработчика:</strong> <a href="./31">31</a> → <a href="./32">32</a> → <a href="./33">33</a>.</p>
   <p><strong>Данные и ML:</strong> добавьте <a href="./34">34</a>, <a href="./35">35</a>, <a href="./39">39</a>.</p>
   <p><strong>Архитектор / аналитик:</strong> <a href="./35">35</a>, <a href="./36">36</a>, <a href="./37">37</a>.</p>
 </div>
+  </div>
+
 
 <div class="callout callout--tip">
   <div class="callout-title">Дорожка 3 — ТАФЯ (компиляторы и пределы анализа)</div>
+
+  <div class="callout-body">
   <p>Краткий обзор: <a href="./38">Формальные языки и автоматы</a>.</p>
   <p><strong>Углубление:</strong> <a href="./40">40</a> → <a href="./41">41</a> → <a href="./42">42</a> → <a href="./43">43</a> → <a href="./44">44</a> → <a href="./45">45</a> → <a href="./46">46</a>.</p>
   <p>Интерактивный конечный автомат — в статье <a href="./44">44</a>.</p>
 </div>
+  </div>
+
 
 <DocCardList />
 

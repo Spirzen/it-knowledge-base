@@ -52,8 +52,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Если уже знаете Java</div>
+
+  <div class="callout-body">
   Сначала [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) не нужен — сразу [основы Kotlin](./11.md) и [совместимость с Java](./10.md) (вызов Java-классов, `@JvmStatic`, nullable). Первая программа в IDEA описана в [2.md](./2.md).
 </div>
+  </div>
+
 
 ---
 

@@ -40,15 +40,20 @@ mindmap
 ## Облачные технологии
 
 <ul>
+  <li><span>Облачные технологии</span></li>
   <li>
-  <ul>
-  Облачные технологии
-  <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1">8-01-oblachnye-tehnologii</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/2">8.01. Итоги</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/3">8.01. Чек-лист самопроверки</a></li>
-  </ul>
+    <ul>
+<ul>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1">8-01-oblachnye-tehnologii</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/2">8.01. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/3">8.01. Чек-лист самопроверки</a></li>
+    </ul>
   </li>
-  
+</ul>
+    </ul>
+  </li>
 </ul>
 
 ---
@@ -56,16 +61,20 @@ mindmap
 ## Low-code, No-code
 
 <ul>
-  
+  <li><span>Low-code, No-code</span></li>
   <li>
-  <ul>
-  Low-code, No-code
-  <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/1">8-02-low-code-no-code</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/2">8.02. Итоги</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/3">8.02. Чек-лист самопроверки</a></li>
-  </ul>
+    <ul>
+<ul>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/1">8-02-low-code-no-code</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/2">8.02. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/3">8.02. Чек-лист самопроверки</a></li>
+    </ul>
   </li>
-  
+</ul>
+    </ul>
+  </li>
 </ul>
 
 ---
@@ -73,25 +82,29 @@ mindmap
 ## Забота о коде и данных
 
 <ul>
-  
+  <li><span>Забота о коде и данных</span></li>
   <li>
-  <ul>
-  Забота о коде и данных
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1">8.03. Безопасность кода</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/11">8.03. Защита кода от изменений</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/111">8.03. Как работает Git</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1111">8.03. GitFlow</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/112">8.03. Внутренности Git</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/113">8.03. Особенности Git</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/114">8.03. Git команды</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/115">8.03. Параметры Git</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/116">8.03. Отличия SVN от Git</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117">8.03. Защита данных</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/998">8.03. Итоги</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/999">8.03. Чек-лист самопроверки</a></li>
-  </ul>
+    <ul>
+<ul>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1">8.03. Безопасность кода</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/11">8.03. Защита кода от изменений</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/111">8.03. Как работает Git</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1111">8.03. GitFlow</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/112">8.03. Внутренности Git</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/113">8.03. Особенности Git</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/114">8.03. Git команды</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/115">8.03. Параметры Git</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/116">8.03. Отличия SVN от Git</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117">8.03. Защита данных</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/998">8.03. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/999">8.03. Чек-лист самопроверки</a></li>
+    </ul>
   </li>
-  
+</ul>
+    </ul>
+  </li>
 </ul>
 
 ---
@@ -99,52 +112,56 @@ mindmap
 ## DevOps, CI-CD
 
 <ul>
-  
+  <li><span>DevOps, CI-CD</span></li>
   <li>
-  <ul>
-  DevOps, CI-CD
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/1">8.04. Основы DevOps</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/11">8.04. Как работает CI CD</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/111">8.04. Стратегии развертывания</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/12">8.04. GitFlow и Git в работе DevOps</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/13">8.04. Особенности работы с CI и CD</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/14">8.04. Процесс в CI CD</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/15">8.04. Azure Repos и TFS</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/16">8.04. Инструменты</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/17">8.04. Чем отличается DevOps от сисадмина</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/18">8.04. Автоматизация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/19">8.04. Логирование и мониторинг</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/2">8.04. Terraform</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/21">8.04. Pulumi</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/211">8.04. Аутентификация и авторизация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/212">8.04. Webhooks</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/213">8.04. Data Warehouse</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/214">8.04. Deb-пакеты</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/215">8.04. Инфраструктура как код (IaC)</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/216">8.04. Ansible</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/217">8.04. Наблюдаемость и автоматизация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/218">8.04. Service Mesh</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3">8.04. Справочник по Terraform</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3111">8.04. Справочник по Ansible</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3112">8.04. Справочник по Nginx</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125">8.04. Справочник по Apache HTTP Server</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3113">8.04. Справочник по GitHub Actions</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114">8.04. Справочник по Jenkins</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115">8.04. Справочник по Prometheus</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116">8.04. Справочник по Grafana</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3117">8.04. Справочник по Elasticsearch</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3118">8.04. Справочник по AWS</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3119">8.04. Справочник по Logstash</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3120">8.04. Справочник по Kibana</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3121">8.04. Справочник по Loki</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3122">8.04. Справочник по Tempo</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3123">8.04. Справочник по Mimir</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3124">8.04. Справочник по Azure Repos Git</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/998">8.04. Итоги</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/999">8.04. Чек-лист самопроверки</a></li>
-  </ul>
+    <ul>
+<ul>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/1">8.04. Основы DevOps</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/11">8.04. Как работает CI CD</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/111">8.04. Стратегии развертывания</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/12">8.04. GitFlow и Git в работе DevOps</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/13">8.04. Особенности работы с CI и CD</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/14">8.04. Процесс в CI CD</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/15">8.04. Azure Repos и TFS</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/16">8.04. Инструменты</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/17">8.04. Чем отличается DevOps от сисадмина</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/18">8.04. Автоматизация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/19">8.04. Логирование и мониторинг</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/2">8.04. Terraform</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/21">8.04. Pulumi</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/211">8.04. Аутентификация и авторизация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/212">8.04. Webhooks</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/213">8.04. Data Warehouse</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/214">8.04. Deb-пакеты</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/215">8.04. Инфраструктура как код (IaC)</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/216">8.04. Ansible</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/217">8.04. Наблюдаемость и автоматизация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/218">8.04. Service Mesh</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3">8.04. Справочник по Terraform</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3111">8.04. Справочник по Ansible</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3112">8.04. Справочник по Nginx</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125">8.04. Справочник по Apache HTTP Server</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3113">8.04. Справочник по GitHub Actions</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114">8.04. Справочник по Jenkins</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115">8.04. Справочник по Prometheus</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116">8.04. Справочник по Grafana</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3117">8.04. Справочник по Elasticsearch</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3118">8.04. Справочник по AWS</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3119">8.04. Справочник по Logstash</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3120">8.04. Справочник по Kibana</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3121">8.04. Справочник по Loki</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3122">8.04. Справочник по Tempo</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3123">8.04. Справочник по Mimir</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3124">8.04. Справочник по Azure Repos Git</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/998">8.04. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/999">8.04. Чек-лист самопроверки</a></li>
+    </ul>
   </li>
-  
+</ul>
+    </ul>
+  </li>
 </ul>
 
 ---
@@ -152,32 +169,36 @@ mindmap
 ## Микросервисы и интеграция
 
 <ul>
-  
+  <li><span>Микросервисы и интеграция</span></li>
   <li>
-  <ul>
-  Микросервисы и интеграция
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1">8.05. Масштабирование</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/111">8.05. Балансировка нагрузки</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/112">8.05. Распределение и MSA</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113">8.05. Коммуникация и интеграция</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114">8.05. Асинхронная коммуникация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115">8.05. Синхронная коммуникация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116">8.05. Реактивная коммуникация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117">8.05. Брокеры сообщений</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118">8.05. RabbitMQ</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119">8.05. Kafka</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120">8.05. Push, Pull, Webhooks</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201">8.05. Справочник по SOAP</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1202">8.05. Справочник по gRPC</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203">8.05. Справочник по GraphQL</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121">8.05. Реализация интеграции</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122">8.05. Проектирование API</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/123">8.05. Транспортные механизмы</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/998">8.05. Итоги</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/999">8.05. Чек-лист самопроверки</a></li>
-  </ul>
+    <ul>
+<ul>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1">8.05. Масштабирование</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/111">8.05. Балансировка нагрузки</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/112">8.05. Распределение и MSA</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113">8.05. Коммуникация и интеграция</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114">8.05. Асинхронная коммуникация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115">8.05. Синхронная коммуникация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116">8.05. Реактивная коммуникация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117">8.05. Брокеры сообщений</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118">8.05. RabbitMQ</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119">8.05. Kafka</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120">8.05. Push, Pull, Webhooks</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201">8.05. Справочник по SOAP</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1202">8.05. Справочник по gRPC</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203">8.05. Справочник по GraphQL</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121">8.05. Реализация интеграции</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122">8.05. Проектирование API</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/123">8.05. Транспортные механизмы</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/998">8.05. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/999">8.05. Чек-лист самопроверки</a></li>
+    </ul>
   </li>
-  
+</ul>
+    </ul>
+  </li>
 </ul>
 
 ---
@@ -185,26 +206,30 @@ mindmap
 ## Контейнеризация и оркестрация
 
 <ul>
-  
+  <li><span>Контейнеризация и оркестрация</span></li>
   <li>
-  <ul>
-  Контейнеризация и оркестрация
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1">8.06. Контейнеризация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111">8.06. Docker</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/112">8.06. Объекты Docker</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/113">8.06. DockerHub и реестры образов</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/114">8.06. Работа с Docker</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/115">8.06. Сеть в контейнерах</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/116">8.06. Dockerfile</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117">8.06. Docker Swarm и Kubernetes</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. Универсальная шпаргалка</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2">8.06. Справочник по Docker</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211">8.06. Справочник по Kubernetes</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/998">8.06. Итоги</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/999">8.06. Чек-лист самопроверки</a></li>
-  </ul>
+    <ul>
+<ul>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1">8.06. Контейнеризация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111">8.06. Docker</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/112">8.06. Объекты Docker</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/113">8.06. DockerHub и реестры образов</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/114">8.06. Работа с Docker</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/115">8.06. Сеть в контейнерах</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/116">8.06. Dockerfile</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117">8.06. Docker Swarm и Kubernetes</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. Универсальная шпаргалка</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2">8.06. Справочник по Docker</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211">8.06. Справочник по Kubernetes</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/998">8.06. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/999">8.06. Чек-лист самопроверки</a></li>
+    </ul>
   </li>
-  
+</ul>
+    </ul>
+  </li>
 </ul>
 
 ---
@@ -212,35 +237,40 @@ mindmap
 ## Информационная безопасность
 
 <ul>
-  
+  <li><span>Информационная безопасность</span></li>
   <li>
-  <ul>
-  Информационная безопасность
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1">8-07-informatsionnaya-bezopasnost</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/111">8.07. Методы защиты информации</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1111">8.07. Государственные требования к информационной безопасности</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112">8.07. Средства защиты информации</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112">8.07. Сертификация и сертификаты</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/113">8.07. Безопасность приложений</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1131">8.07. Анализ и тестирование безопасности</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/114">8.07. Контроль и отслеживание</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/115">8.07. Шифрование</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/116">8.07. Авторизация и аутентификация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/117">8.07. Устаревшие подходы</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/118">8.07. Уровни доверия и SSL TLS</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/119">8.07. Вирусы и вредоносные программы</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/120">8.07. Антивирусы</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/121">8.07. Сливы и утечки данных</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/122">8.07. Легальный сбор информации</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/123">8.07. Инъекции</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/124">8.07. Аудит</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125">8.07. Безопасность в Docker</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/126">8.07. Пессимистическая и оптимистическая блокировки в базах данных</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/127">8.07. Взаимоблокировка</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/2">8.07. Обеспечение безопасности</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/998">8.07. Итоги</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/999">8.07. Чек-лист самопроверки</a></li>
-  </ul>
+    <ul>
+<ul>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1">8-07-informatsionnaya-bezopasnost</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/111">8.07. Методы защиты информации</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1111">8.07. Государственные требования к информационной безопасности</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112">8.07. Средства защиты информации</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112">8.07. Сертификация и сертификаты</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/113">8.07. Безопасность приложений</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1131">8.07. Анализ и тестирование безопасности</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/114">8.07. Контроль и отслеживание</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/115">8.07. Шифрование</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/116">8.07. Авторизация и аутентификация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/117">8.07. Устаревшие подходы</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/118">8.07. Уровни доверия и SSL TLS</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/119">8.07. Вирусы и вредоносные программы</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/120">8.07. Антивирусы</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/121">8.07. Сливы и утечки данных</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/122">8.07. Легальный сбор информации</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/123">8.07. Инъекции</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/124">8.07. Аудит</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125">8.07. Безопасность в Docker</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/126">8.07. Пессимистическая и оптимистическая блокировки в базах данных</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/127">8.07. Взаимоблокировка</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/2">8.07. Обеспечение безопасности</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/998">8.07. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/999">8.07. Чек-лист самопроверки</a></li>
+    </ul>
+  </li>
+</ul>
+    </ul>
   </li>
 </ul>
 

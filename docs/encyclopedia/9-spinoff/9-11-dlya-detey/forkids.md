@@ -2,7 +2,7 @@
 title: Для детей — о разделе
 description: Учебный маршрут для школьников 8–16 лет — компьютер, игры, алгоритмы, программы и первый код, с интерактивами в статьях.
 sidebar_label: Для детей — о разделе
-slug: /encyclopedia/Спин-офф/9.11. Для детей/forkids
+slug: /encyclopedia/9-spinoff/9-11-dlya-detey/forkids
 id: forkids
 ---
 
@@ -21,8 +21,12 @@ import ComputerArchitecturePlay from '@site/src/components/ComputerArchitectureP
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>
+
+  <div class="callout-body">
   Ниже — пошаговая схема загрузки и работы компьютера. Переключайте этапы и смотрите роль процессора, памяти и периферии.
 </div>
+  </div>
+
 
 <ComputerArchitecturePlay />
 

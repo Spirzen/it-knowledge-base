@@ -16,8 +16,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Для кого</div>
+
+  <div class="callout-body">
   <p><strong>Студентам</strong> — карта курса без поиска по всей энциклопедии. <strong>Руководителям и аналитикам</strong> — связка "оценка → качество → приёмка". <strong>Разработчикам и QA</strong> — зачем формальные модели (COCOMO, ISO 25010, ПМИ) сосуществуют с Agile.</p>
 </div>
+  </div>
+
 
 ---
 
@@ -74,8 +78,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">Agile и "учебник"</div>
+
+  <div class="callout-body">
   <p>Формальные модели не отменяют Scrum. Заказчик по контракту всё равно спросит: <strong>сколько стоит</strong>, <strong>как докажете качество</strong>, <strong>что сдаёте при приёмке</strong>. Раздел учит отвечать на эти вопросы языком стандартов — и переводить ответы в backlog, DoD и CI.</p>
 </div>
+  </div>
+
 
 <DocCardList />
 

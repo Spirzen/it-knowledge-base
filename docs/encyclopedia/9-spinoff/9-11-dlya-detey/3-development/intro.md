@@ -17,8 +17,12 @@ import BlockBuilder from '@site/src/components/BlockBuilder';
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>
+
+  <div class="callout-body">
   Конструктор блоков ниже повторяет принцип Scratch: команды собираются в последовательность без синтаксических ошибок ввода.
 </div>
+  </div>
+
 
 <BlockBuilder />
 

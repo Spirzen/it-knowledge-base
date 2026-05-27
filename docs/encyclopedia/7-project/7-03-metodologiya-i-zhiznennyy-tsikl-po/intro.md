@@ -14,8 +14,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Для кого</div>
+
+  <div class="callout-body">
   <p><strong>Новичкам</strong> — базовые термины и сравнение подходов. <strong>Руководителям и аналитикам</strong> — гибриды, регуляторика ГИС, чек-лист "какой процесс у нас на самом деле". <strong>Разработчикам</strong> — связь методологии с TDD, DevOps и качеством поставки.</p>
 </div>
+  </div>
+
 
 ---
 

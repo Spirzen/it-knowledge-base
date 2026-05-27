@@ -27,8 +27,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Связь с SOLID</div>
+
+  <div class="callout-body">
   Буква <strong>D</strong> в SOLID разобрана и здесь, и в <a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113">статье про SOLID</a> — читайте оба угла: принцип проектирования и практика внедрения.
 </div>
+  </div>
+
 
 <DocCardList />
 

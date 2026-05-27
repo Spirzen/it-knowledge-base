@@ -2,6 +2,7 @@
 title: Экзамены — о разделе
 description: Подборка материалов раздела Экзамены в энциклопедии Вселенная IT
 sidebar_label: Экзамены — о разделе
+slug: /lab/Экзамены/intro
 related:
   - title: Тестирование программного обеспечения — о разделе
     doc: encyclopedia/7-project/7-05-testirovanie/intro

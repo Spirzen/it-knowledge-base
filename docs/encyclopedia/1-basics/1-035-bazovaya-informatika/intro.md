@@ -38,8 +38,12 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 
 <div class="callout callout--tip">
   <div class="callout-title">Как пользоваться</div>
+
+  <div class="callout-body">
   Идите по главам <strong>1 → 8</strong> подряд или выборочно по таблице ниже. Глава <strong>9</strong> — справочник по средам (Godot, Flutter, BeautifulSoup и др.), её можно открывать по мере необходимости. Итоги и чек-лист — в конце ([98](/encyclopedia/1-basics/1-035-bazovaya-informatika/98), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99)).
 </div>
+  </div>
+
 
 ---
 

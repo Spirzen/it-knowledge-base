@@ -10,6 +10,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+---
+
 ## В энциклопедии
 
 - [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro) — протоколы, DNS, домашняя сеть

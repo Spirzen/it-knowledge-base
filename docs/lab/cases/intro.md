@@ -2,6 +2,7 @@
 title: Кейсы — о разделе
 description: Подборка материалов раздела Кейсы в энциклопедии Вселенная IT
 sidebar_label: Кейсы — о разделе
+slug: /lab/Кейсы/intro
 related:
   - title: Разработка и отладка — о разделе
     doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro

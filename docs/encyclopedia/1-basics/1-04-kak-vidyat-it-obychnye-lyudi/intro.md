@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Как читать</div>
+
+  <div class="callout-body">
   <ul>
     <li><strong>Сначала</strong> — роли и технологии (<code>1</code>–<code>3</code>).</li>
     <li><strong>Затем</strong> — деньги и рынок (<code>4</code>–<code>5</code>).</li>
@@ -29,6 +31,8 @@ import DocCardList from '@theme/DocCardList';
   </ul>
   Цифры по вакансиям и зарплатам в материалах — <strong>ориентиры</strong>; перед поиском работы сверяйте их на HeadHunter и в [разделе про карьеру](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro).
 </div>
+  </div>
+
 
 ---
 

@@ -51,8 +51,12 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">Когда Spring, а когда ещё Core</div>
+
+  <div class="callout-body">
   Пока не уверены в `List`, `Stream`, исключениях и `main` — не уходите в [271](./271.md). Spring опирается на те же классы, пакеты и Maven, что и консольная программа.
 </div>
+  </div>
+
 
 ---
 
@@ -93,6 +97,8 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Соответствие конспекту GitBook главам энциклопедии</div>
+
+  <div class="callout-body">
   | Тема в [GitBook](https://andrey-ivantsov.gitbook.io/java) | Глава здесь |
   |-----------------------------------------------------------|-------------|
   | Типы, литералы, переменные, операторы | [15](./15.md), [16](./16.md), [17](./17.md) |
@@ -107,6 +113,8 @@ import DocCardList from '@theme/DocCardList';
   | Исключения | [21](./21.md), [211](./211.md) |
   | Интерфейсы, `instanceof` | [18](./18.md), [141](./141.md) |
 </div>
+  </div>
+
 
 Примеры ориентированы на **Java 17+** (LTS). Упоминания `Date`, `Vector`, `Hashtable` — в контексте legacy и собеседований.
 
