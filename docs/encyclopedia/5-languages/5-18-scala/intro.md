@@ -1,7 +1,7 @@
 ---
-title: Scala — о разделе
+title: "Scala — о разделе"
 description: "Материалы раздела ориентированы на Scala 3 на JVM."
-sidebar_label: Scala — о разделе
+sidebar_label: "Scala — о разделе"
 related:
   - title: "Haskell — о разделе"
     doc: encyclopedia/5-languages/5-17-haskell/intro

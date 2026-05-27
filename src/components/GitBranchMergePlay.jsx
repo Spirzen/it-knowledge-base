@@ -91,7 +91,7 @@ function GitBranchMergePlayInner() {
           </div>
         )}
 
-        <pre className={styles.file}>app.js: {state.files.app.js}</pre>
+        <pre className={styles.file}>app.js: {state.files['app.js']}</pre>
 
         <div className={styles.controls}>
           <button type="button" className="it-demo__btn it-demo__btn--primary" onClick={next}>

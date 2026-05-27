@@ -30,6 +30,8 @@ import DocCardList from '@theme/DocCardList';
 
 Статью **2** логично читать после **1**, если работаете с госконтрактами или заказной разработкой для госсектора.
 
+Практика **TDD** как инженерной дисциплины Agile/XP — лабораторный кейс [«Тренируем Test-Driven Development»](/lab/Кейсы/7); теория уровней тестов и TDD/BDD — [карта в разделе «Тестирование»](/encyclopedia/7-project/7-05-testirovanie/131).
+
 <DocCardList />
 
 ---

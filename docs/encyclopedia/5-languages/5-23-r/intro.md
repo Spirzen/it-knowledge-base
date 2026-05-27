@@ -7,6 +7,10 @@ related:
     doc: encyclopedia/5-languages/5-22-dart/intro
   - title: "Julia — о разделе"
     doc: encyclopedia/5-languages/5-24-julia/intro
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-01-python/intro
+  - title: "Данные и разметка — о разделе"
+    doc: encyclopedia/3-data-markup/intro
   - title: "Nim — о разделе"
     doc: encyclopedia/5-languages/5-21-nim/intro
   - title: "Bash — о разделе"
@@ -34,8 +38,14 @@ import DocCardList from '@theme/DocCardList';
 | [Управление и операторы](5.md) | `if`, циклы, `&&`/`&`, `tryCatch()` |
 | [Функции и пакеты](6.md) | `function`, `...`, замыкания, `library()` |
 | [Первая программа](7.md) | Установка, Posit/RStudio, `Rscript` |
+| [Простые приложения](103.md) | CSV, dplyr, ggplot2, JSON — практика после "Hello" |
 
-Рекомендуемый порядок для новичка: **7 → 4 → 5 → 6 → 2 → 3 → 1** (сначала запустить код, затем углубиться в теорию).
+Рекомендуемый порядок для новичка: **7 → 4 → 5 → 6 → 103 → 2 → 3 → 1** — сначала запустить код и поработать с таблицей, затем углубиться в теорию и историю экосистемы.
+
+<div class="callout callout--info">
+  <div class="callout-title">Смежные разделы энциклопедии</div>
+  Общая база про код и интерпретацию — [что такое код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1). Табличные данные, CSV и БД — [данные и разметка](/encyclopedia/3-data-markup/intro). Сравнение R с Python и другими языками — [основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/intro). Воспроизводимые отчёты пересекаются с темой [документации и разметки](/encyclopedia/3-data-markup/3-01-markup/intro).
+</div>
 
 ---
 
@@ -50,6 +60,8 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
 | 1 | [Первая программа](./7.md) | Запуск и синтаксис |
+| 2 | [Типы и векторизация](./4.md) | Векторы, `NA`, индексация |
+| 3 | [Простые приложения](./103.md) | CSV, график, JSON |
 
 ---
 
