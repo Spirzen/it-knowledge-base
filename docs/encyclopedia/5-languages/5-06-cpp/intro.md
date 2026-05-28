@@ -38,6 +38,14 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+<div class="callout callout--info">
+  <div class="callout-title">Потоки и память в C++</div>
+
+  <div class="callout-body">
+  Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>, <a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1">стек и куча</a>. Практика — <a href="/encyclopedia/5-languages/5-06-cpp/20">многопоточность в C++</a> (<code>std::thread</code>, мьютексы, атомики).
+</div>
+</div>
+
 ---
 
 ## Рекомендуемый маршрут
@@ -50,7 +58,7 @@ import DocCardList from '@theme/DocCardList';
 | Идиомы и C++20 | [Идиомы](/encyclopedia/5-languages/5-06-cpp/30), [Диапазоны](/encyclopedia/5-languages/5-06-cpp/31) | RAII, copy-and-swap, ranges/views |
 | Синтаксис | [Типы](/encyclopedia/5-languages/5-06-cpp/11), [Операторы](/encyclopedia/5-languages/5-06-cpp/12), [Циклы и управление](/encyclopedia/5-languages/5-06-cpp/13) | базовый язык |
 | Память и ООП | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) (база) → [ООП в C++](/encyclopedia/5-languages/5-06-cpp/14), [Память](/encyclopedia/5-languages/5-06-cpp/19), [Системное программирование](/encyclopedia/5-languages/5-06-cpp/21) | классы, владение, низкий уровень |
-| Практика | [Функции и лямбды](/encyclopedia/5-languages/5-06-cpp/17), [Сборка](/encyclopedia/5-languages/5-06-cpp/1004), [CMake](/encyclopedia/5-languages/5-06-cpp/1006), [Задания](/encyclopedia/5-languages/5-06-cpp/1008) | писать, собирать, закреплять |
+| Практика | [Функции и лямбды](/encyclopedia/5-languages/5-06-cpp/17), [Компиляторы и toolchain](/encyclopedia/5-languages/5-06-cpp/32), [Сборка](/encyclopedia/5-languages/5-06-cpp/1004), [CMake](/encyclopedia/5-languages/5-06-cpp/1006), [Задания](/encyclopedia/5-languages/5-06-cpp/1008) | писать, собирать, закреплять |
 | UI и графика | [Qt](/encyclopedia/5-languages/5-06-cpp/27), [Qt Widgets](/encyclopedia/5-languages/5-06-cpp/2731), [Qt Quick](/encyclopedia/5-languages/5-06-cpp/2732), [Vulkan](/encyclopedia/5-languages/5-06-cpp/29), [Игры](/encyclopedia/5-languages/5-06-cpp/22) | desktop, GPU |
 | Продвинутое | [Потоки](/encyclopedia/5-languages/5-06-cpp/20), [Сеть](/encyclopedia/5-languages/5-06-cpp/25), [Экосистема](/encyclopedia/5-languages/5-06-cpp/10) | конкурентность, I/O, фреймворки |
 | Справка | [Справочник](/encyclopedia/5-languages/5-06-cpp/3), [Ключевые слова](/encyclopedia/5-languages/5-06-cpp/151) | быстрый поиск по API и официальной документации |

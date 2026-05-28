@@ -40,7 +40,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
 | 0 | [Что нужно знать перед Swift](./1001.md) | Фундамент (по желанию) |
-| 1 | [История](./1.md) | Objective-C, эволюция |
+| 1 | [История](./1.md) | Objective-C, эволюция, факты из открытых источников |
 | 2 | [Основы](./11.md) → [Синтаксис](./12.md) → [Типы](./13.md) → [Управление](./14.md) | База языка |
 | 3 | [Параметры](./23.md) → [Pattern matching](./24.md) → [Property wrappers](./25.md) | Идиомы Swift |
 | 4 | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП](./102.md) → [Данные](./16.md) → [Async](./17.md) | struct/class, Codable |

@@ -28,9 +28,27 @@ import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 # О разделе
 
-Python удобен для **первого языка**: читается почти как текст, много материалов для школ и курсов.
+Python удобен для **первого языка**: читается почти как текст, много материалов для школ и курсов. Это **мультипарадигменный** язык общего назначения с динамической строгой типизацией, автоматическим управлением памятью и эталонной реализацией **CPython**; экосистема пакетов строится вокруг **PyPI** и **pip**.
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
+Теория и контекст: [Python — язык общего назначения](./1.md) · [история](./14.md) · [Дзен Python](./15.md) · [архитектура CPython](./11.md).
+
+<div class="callout callout--info">
+  <div class="callout-title">Среда выполнения Python</div>
+
+  <div class="callout-body">
+  Интерпретатор CPython компилирует модули в <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код</a> (<code>.pyc</code>) и исполняет его на PVM; память и <a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1">сборка мусора</a> — в runtime. Общие термины — <a href="/encyclopedia/1-basics/1-19-programma/1">программа и библиотеки</a>.
+</div>
+</div>
+
+<div class="callout callout--info">
+  <div class="callout-title">Потоки, процессы и async в Python</div>
+
+  <div class="callout-body">
+  Теория ОС — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>, <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">синхронизация</a>. В Python: <code>threading</code> и <code>multiprocessing</code> — <a href="/encyclopedia/5-languages/5-02-python/26">многопоточность</a>; <code>asyncio</code> — <a href="/encyclopedia/5-languages/5-02-python/27">асинхронность</a>; GIL — <a href="/encyclopedia/5-languages/5-02-python/28">ограничения параллелизма</a>.
+</div>
+</div>
 
 В статьях раздела идеи исполнения (байт-код, модули, исключения) по возможности сначала показываются **псевдокодом**, затем — синтаксисом Python.
 
@@ -53,16 +71,6 @@ Python удобен для **первого языка**: читается по�
 ### Зачем этот раздел
 
 Подборка по **Python** в энциклопедии: синтаксис, первая программа и смежные темы. Пройдите один маршрут до конца, не смешивая несколько языков на старте.
-
----
-
-### С чего начать
-
-| Шаг | Материал | Зачем |
-|-----|----------|-------|
-| 1 | [Первая программа](./16.md) | Запуск и синтаксис |
-| 2 | [Flask API](./3411.md) | Углубление |
-| 3 | [FastAPI](./3432.md) | Углубление |
 
 ---
 

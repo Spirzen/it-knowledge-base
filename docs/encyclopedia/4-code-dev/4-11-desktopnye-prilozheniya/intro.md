@@ -30,7 +30,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Материал |
 |-----|----------|
-| 1 | [Архитектура десктопных приложений](./1.md) — окно, UI-поток, события |
+| 1 | [Архитектура десктопных приложений](./1.md) — GUI, WIMP, окно, UI-поток, события |
 | 2 | [Особенности разработки](./112.md) — многопоточность, ресурсы |
 | 3 | Стек по языку | Python: [Tkinter](/encyclopedia/5-languages/5-02-python/3111) · C#: [WPF с нуля](./119.md) · [MAUI](/encyclopedia/5-languages/5-05-csharp/4513) · C++: [Qt](/encyclopedia/5-languages/5-06-cpp/2731) · JS: [Electron](./114.md) |
 

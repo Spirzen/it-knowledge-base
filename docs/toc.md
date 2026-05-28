@@ -1993,6 +1993,7 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/5-languages/5-05-csharp/45">5.05. Веб-разработка и API на C#</a></li>
       <li><a href="/encyclopedia/5-languages/5-05-csharp/46">5.05. Популярные библиотеки и пакеты для C#</a></li>
       <li><a href="/encyclopedia/5-languages/5-05-csharp/47">5.05. Пример реализации бэкенда на C#</a></li>
+      <li><a href="/encyclopedia/5-languages/5-05-csharp/48">5.05. Версии C# и .NET — справочная таблица</a></li>
       <li><a href="/encyclopedia/5-languages/5-05-csharp/101">5.05. Справочник по конфигурациям в C#</a></li>
       <li><a href="/encyclopedia/5-languages/5-05-csharp/102">5.05. Рекомендации по разработке на C#</a></li>
       <li><a href="/encyclopedia/5-languages/5-05-csharp/111">5.05. Ключевые слова языка C#</a></li>
@@ -2432,6 +2433,7 @@ import DocCardList from '@theme/DocCardList';
     <ul>
       <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/1">5.16. История ассемблерных языков</a></li>
       <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/2">5.16. Основы ассемблера</a></li>
+      <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/17">5.16. Система команд (ISA) и синтаксис Intel/AT&T</a></li>
       <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/3">5.16. Архитектура ассемблерных программ</a></li>
       <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/4">5.16. Типы данных и регистры</a></li>
       <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/5">5.16. Управляющие конструкции и команды процессора</a></li>

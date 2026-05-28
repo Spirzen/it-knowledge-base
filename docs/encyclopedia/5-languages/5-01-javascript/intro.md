@@ -30,7 +30,35 @@ import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 JavaScript оживляет страницу в **браузере**. Это не Java — разные языки.
 
+### Термины экосистемы
+
+| Термин | Кратко | Статья раздела |
+|--------|--------|----------------|
+| **ECMAScript** | официальный стандарт языка (TC39, Ecma International) | [Основы](./1.md), [История](./11.md) |
+| **JavaScript** | торговое имя реализации ECMAScript в браузерах и Node.js | [Основы](./1.md) |
+| **JScript** | реализация Microsoft в Internet Explorer | [История](./11.md) |
+| **ActionScript** | язык платформы Adobe Flash (на базе ECMAScript) | [История](./11.md), [Экосистема](./25.md) |
+| **DOM** | дерево объектов HTML/XML в браузере | [Работа с HTML](./102.md), [Применение в вебе](./14.md) |
+| **AJAX** | обмен данными с сервером без полной перезагрузки страницы | [Асинхронность](./21.md), [История](./11.md) |
+| **Comet** | push-модели поверх HTTP (long polling, поток) | [Асинхронность](./21.md), [SSE](./37.md) |
+| **Веб-приложение** | интерактивная программа в браузере (часто SPA) | [Применение в вебе](./14.md) |
+| **V8** | движок JavaScript (Chrome, Node.js) | [Применение](./14.md), [Node.js](./26.md) |
+| **Chromium** | открытый браузерный проект (рендер + V8) | [Применение](./14.md) |
+| **Node.js** | серверная среда на V8 | [Node.js](./26.md) |
+| **Electron** | десктоп на Chromium + Node.js | [Применение](./14.md) |
+| **webOS** | платформа устройств (TV) на веб-технологиях | [Применение](./14.md) |
+| **jQuery** | библиотека DOM и AJAX (2006+) | [Экосистема](./25.md) |
+| **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
+
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
+<div class="callout callout--info">
+  <div class="callout-title">Event loop, Worker и async</div>
+
+  <div class="callout-body">
+  В браузере и Node.js основной поток один; параллелизм — через <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/12">асинхронность</a> и <a href="/encyclopedia/5-languages/5-01-javascript/36">Web Workers</a>. Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; в Node — <code>worker_threads</code>, <code>child_process</code>.
+</div>
+</div>
 
 В [основах JavaScript](./1.md) модель Event Loop и асинхронность сначала разбираются **псевдокодом**, затем — на JS/Node.
 

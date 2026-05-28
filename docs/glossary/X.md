@@ -13,7 +13,7 @@ description: Extensible Application Markup Language (XAML) — декларат�
 
 ## XAML
 
-Extensible Application Markup Language (XAML): декларативный язык разметки на основе XML, разработанный Microsoft для описания пользовательских интерфейсов в .NET-приложениях. Используется в технологиях WPF, UWP, MAUI и Xamarin.Forms. Позволяет визуально проектировать интерфейсы, привязывать данные (data binding), задавать стили и шаблоны, а также интегрировать логику через код на C# или VB.NET.
+**XAML** (*eXtensible Application Markup Language*) — декларативный XML-язык разметки от Microsoft для описания UI в .NET-приложениях. Используется в WPF, WinUI, UWP, .NET MAUI и Xamarin.Forms. Разделяет внешний вид (XAML) и логику (C#/VB); поддерживает привязку данных, стили, шаблоны и ресурсы. Подробнее — [статья XAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6), практикум — [WPF с нуля](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119).
 
 ---
 
@@ -37,7 +37,7 @@ Xen: гипервизор с открытым исходным кодом тип
 
 ## Xbox
 
-Xbox: бренд игровых консолей, сервисов и студий, принадлежащий Microsoft. Включает аппаратные платформы (Xbox, Xbox 360, Xbox One, Xbox Series X/S), цифровой магазин, подписку Xbox Game Pass, облачный гейминг (xCloud) и экосистему кроссплатформенных сервисов. Является одним из трёх лидеров на рынке домашних консолей наряду с PlayStation и Nintendo.
+Xbox: бренд игровых консолей, сервисов и студий Microsoft. Аппаратная линейка с 2001 года — **Xbox** (≈24,6 млн), **Xbox 360** (≈85,8 млн), **Xbox One** / One S / One X (≈51 млн), **Xbox Series X|S** (с 2020). Название происходит от проекта **DirectX Box** (консоль на базе DirectX и PC-подобного железа). Ключевые сервисы: **Xbox Live** (онлайн с 2002), магазин, **Xbox Game Pass**, облачный **Xbox Cloud Gaming**. Один из трёх крупнейших игроков на рынке домашних консолей наряду с PlayStation и Nintendo. Подробнее — [Xbox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/121), [Xbox Series X|S](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11431).
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Haskell — о разделе
-description: "Haskell — чисто функциональный язык со статической типизацией, ленивыми вычислениями и явным разделением чистого кода и эффектов (IO, монады)."
+description: "Haskell — ленивый функциональный язык семейства ML, типы Хиндли — Милнера, монады и GHC; история, синтаксис и практика."
 sidebar_label: Haskell — о разделе
 related:
   - title: "Си — о разделе"
@@ -18,6 +18,22 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Haskell — чисто функциональный язык со статической типизацией, ленивыми вычислениями и явным разделением чистого кода и эффектов (`IO`, монады). Раздел рассчитан на тех, кто хочет понять не только синтаксис, но и модель выполнения (GHC, thunks, STG) и проектирование через типы.
+
+Имя языка дано в честь логика **Хаскелла Карри** — исследователя теории типов и комбинаторной логики. Отличительная черта Haskell — серьёзное отношение к типизации: типы здесь не «дополнение к синтаксису», а основа проектирования программ.
+
+Haskell относится к семейству **ML**; непосредственным предшественником стал язык **Miranda** (ленивый функциональный язык 1980-х). В 1987 году на конференции FPCA в Орегоне исследователи договорились о **открытом стандарте** вместо разрозненных диалектов; первая версия спецификации — **Haskell 1.0** (1990). Стабильное ядро закрепил **Haskell 98**; практический стандарт сегодня — **Haskell 2010**, а эволюция идёт через процесс **Haskell Prime** (рабочее название «Haskell-штрих»).
+
+| Параметр | Значение |
+|----------|----------|
+| Класс | функциональный, ленивый, модульный |
+| Исполнение | компилируемый (GHC) и интерактивный (GHCi) |
+| Система типов | статическая, сильная, с выводом по Хиндли — Милнеру |
+| Расширения файлов | `.hs`, литературный Haskell — `.lhs` |
+| Основные реализации | GHC, HUGS, nhc98, YHC |
+| Экосистема | Cabal, Stack, [Hackage](https://hackage.haskell.org), HLS |
+| Сайт | [haskell.org](https://www.haskell.org) |
+
+Идеи Haskell повлияли на **Rust**, **Scala**, **Swift**, **F#**, **LINQ**, **Idris**, **Agda** и другие языки — прежде всего через алгебраические типы данных, вывод типов и явное моделирование эффектов.
 
 **Рекомендуемый порядок для практики:** [Первая программа](/encyclopedia/5-languages/5-17-haskell/7) → [Основы FP](/encyclopedia/5-languages/5-17-haskell/2) → [Типы](/encyclopedia/5-languages/5-17-haskell/4) → [Управляющие конструкции](/encyclopedia/5-languages/5-17-haskell/5) → [Функции и композиция](/encyclopedia/5-languages/5-17-haskell/6) → [Архитектура выполнения](/encyclopedia/5-languages/5-17-haskell/3) → [История](/encyclopedia/5-languages/5-17-haskell/1).
 
@@ -95,6 +111,15 @@ Haskell — чисто функциональный язык со статиче
 **Бэкенд и серверная разработка** — [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro).
 
 {/* /sidebar-collections */}
+
+---
+
+### Учебные материалы (вне раздела)
+
+- [Официальный сайт Haskell](https://www.haskell.org) — компиляторы, отчёты, ссылки.
+- [Learn You a Haskell for Great Good!](http://learnyouahaskell.com) — популярная вводная книга (англ.).
+- [«Мягкое введение в Haskell»](https://wiki.haskell.org/Ru/Haskell) — перевод на русский в вики сообщества.
+- Книги: Graham Hutton — *Programming in Haskell*; Bryan O’Sullivan и др. — *Real World Haskell*; Р. В. Душкин — *Функциональное программирование на языке Haskell* (ДМК Пресс).
 
 ---
 

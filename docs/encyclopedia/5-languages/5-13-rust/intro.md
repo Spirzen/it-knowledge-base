@@ -31,6 +31,14 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+<div class="callout callout--info">
+  <div class="callout-title">Потоки, Send/Sync и async</div>
+
+  <div class="callout-body">
+  Модель владения заменяет часть ошибок гонок на этапе компиляции. Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">синхронизация и гонки</a>; в Rust — <code>std::thread</code>, <code>tokio</code>, типы <code>Send</code>/<code>Sync</code>.
+</div>
+</div>
+
 Перед [ООП-паттернами в Rust](/encyclopedia/5-languages/5-13-rust/141): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro).
 
 Пройдите **один маршрут до конца**, не смешивая на старте несколько языков — иначе правила владения смешаются с GC из Java или Python.

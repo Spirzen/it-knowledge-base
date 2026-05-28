@@ -17,9 +17,11 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Scala** — мультипарадигмальный язык (функциональный, объектно-ориентированный, императивный), созданный в EPFL под руководством [Мартина Одерски](https://ru.wikipedia.org/wiki/Одерски,_Мартин) для **компонентного** ПО: краткий, **типобезопасный** синтаксис и единые концепции абстракции для модулей любого масштаба. Целевые платформы — **JVM**, **JavaScript** ([Scala.js](https://www.scala-js.org/)) и нативный код ([Scala Native](https://www.scala-native.org/)); расширения исходников — `.scala` и `.sc`.
+
 Материалы раздела ориентированы на **Scala 3** на JVM. Если вы приходите из Java, начните с [истории и контекста](/encyclopedia/5-languages/5-18-scala/1), затем [основ языка](/encyclopedia/5-languages/5-18-scala/2) и [первой программы](/encyclopedia/5-languages/5-18-scala/7); дальше — [типы и pattern matching](/encyclopedia/5-languages/5-18-scala/4), [управляющие конструкции](/encyclopedia/5-languages/5-18-scala/5) и [функции](/encyclopedia/5-languages/5-18-scala/6). [Архитектура JVM-приложений](/encyclopedia/5-languages/5-18-scala/3) — когда синтаксис уже понятен и нужна связь с Akka, Spark и продакшен-практиками.
 
-**Полезные внешние источники:** [документация Scala](https://docs.scala-lang.org/), курс [Functional Programming Principles in Scala](https://www.coursera.org/learn/scala-functional-programming) (Мартин Одерски).
+**Полезные внешние источники:** [документация Scala](https://docs.scala-lang.org/), [обзор на Википедии](https://ru.wikipedia.org/wiki/Scala_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)), курс [Functional Programming Principles in Scala](https://www.coursera.org/learn/scala-functional-programming) (Мартин Одерски).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 

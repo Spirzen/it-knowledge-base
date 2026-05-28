@@ -17,6 +17,10 @@ related:
     doc: encyclopedia/5-languages/5-06-cpp/intro
   - title: "Java — о разделе"
     doc: encyclopedia/5-languages/5-03-java/intro
+  - title: "История платформы .NET"
+    doc: encyclopedia/5-languages/5-04-platforma-dotnet/11
+  - title: "Версии C# и .NET — справочная таблица"
+    doc: encyclopedia/5-languages/5-05-csharp/48
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -26,6 +30,14 @@ import DocCardList from '@theme/DocCardList';
 Раздел посвящён языку **C#** и экосистеме **.NET**. Материалы рассчитаны на разработчиков и архитекторов: от первого проекта до углублённых тем (LINQ, async, ООП, веб, производительность).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+
+<div class="callout callout--info">
+  <div class="callout-title">Потоки, Task и async в .NET</div>
+
+  <div class="callout-body">
+  Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>, <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">мьютексы и гонки</a>. В C# — <code>async</code>/<code>await</code>, <code>Task</code>, пул потоков CLR; см. статьи раздела про параллелизм и асинхронность после основ синтаксиса.
+</div>
+</div>
 
 В [вводной статье по C#](./1.md) и материалах про .NET цепочка "исходник → IL → CLR" по возможности показана **псевдокодом** до синтаксиса C#.
 
@@ -43,11 +55,22 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+## История и эволюция
+
+- [История платформы .NET](../5-04-platforma-dotnet/11.md) — NGWS, рождение C#, .NET Framework → Core → единый .NET, F#.
+- [Версии C# и .NET — справочная таблица](./48.md) — C# 1.0–14, LTS/STS, .NET Framework, NGen / R2R / Native AOT.
+- [Архитектурные особенности .NET](../5-04-platforma-dotnet/12.md) — CLI, CLR, эволюция версий в контексте архитектуры.
+
+Файл [11.md](./11.md) в этом разделе — **синтаксис и пунктуация**, не хронология.
+
+---
+
 ## Справочник и углубление
 
 - [Вопросы на собеседование .NET и C#](/encyclopedia/5-languages/5-05-csharp/474) — карта типовых вопросов Junior–Senior (по мотивам [ITVDN/DOU](https://itvdn.com/ru/blog/article/150-questions-net-developer)) и ссылки на статьи раздела.
 - [Справочник по синтаксису и возможностям C#](/encyclopedia/5-languages/5-05-csharp/471) — операторы, модификаторы, `Span`, async.
 - [Справочник языка C# (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/472) — полный каталог language reference (869 разделов).
+- [Версии C# и .NET — справочная таблица](./48.md) — шпаргалка по версиям и поддержке.
 - [Справочник .NET API (BCL)](/encyclopedia/5-languages/5-05-csharp/473) — пространства имён .NET 10 и .NET Framework 4.8 / 4.8.1.
 - [Асинхронность и многопоточность](/encyclopedia/5-languages/5-05-csharp/39), [Task и async/await](/encyclopedia/5-languages/5-05-csharp/392), [класс `Thread`](/encyclopedia/5-languages/5-05-csharp/391), [сеть и HTTP](/encyclopedia/5-languages/5-05-csharp/42), [производительность](/encyclopedia/5-languages/5-05-csharp/41).
 

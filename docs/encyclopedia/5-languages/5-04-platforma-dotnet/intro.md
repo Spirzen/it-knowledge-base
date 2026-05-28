@@ -11,6 +11,10 @@ related:
     doc: encyclopedia/5-languages/5-02-python/intro
   - title: "C++ — о разделе"
     doc: encyclopedia/5-languages/5-06-cpp/intro
+  - title: "История платформы .NET"
+    doc: encyclopedia/5-languages/5-04-platforma-dotnet/11
+  - title: "Версии C# и .NET — справочная таблица"
+    doc: encyclopedia/5-languages/5-05-csharp/48
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -22,6 +26,15 @@ import DocCardList from '@theme/DocCardList';
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 В [обзоре платформы](./1.md) цепочка CIL → CLR → JIT по возможности показана **псевдокодом** до деталей CLI.
+
+---
+
+## С чего начать (.NET)
+
+1. [Платформа .NET](./1.md) — CLR, CIL, BCL, развёртывание.
+2. [Архитектурные особенности .NET](./12.md) — CTS, CLS, PAL, эволюция версий.
+3. [История платформы .NET](./11.md) — хронология от NGWS до .NET 10.
+4. [Версии C# и .NET — таблица](../5-05-csharp/48.md) — LTS/STS и соответствие C# ↔ .NET ↔ Visual Studio.
 
 ---
 
@@ -64,8 +77,8 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
-| 1 | [Первая программа](./182.md) | Запуск и синтаксис |
-| 2 | [Типы UI](./13.md) | Углубление |
+| 1 | [Платформа .NET](./1.md) | CLR, сборки, публикация |
+| 2 | [Типы приложений](./13.md) | Выбор шаблона проекта |
 
 ---
 

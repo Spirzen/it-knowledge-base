@@ -23,6 +23,14 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+<div class="callout callout--info">
+  <div class="callout-title">Горутины и модель CSP</div>
+
+  <div class="callout-body">
+  Go реализует <strong>легковесные потоки</strong> (горутины) и обмен через каналы — вариант <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/13">передачи сообщений</a>. Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; практика — <a href="/encyclopedia/5-languages/5-10-go/14">синтаксис и конкурентность</a>, <a href="/encyclopedia/5-languages/5-10-go/16">паттерны</a>.
+</div>
+</div>
+
 Горутины и каналы в [синтаксисе Go](./14.md) сначала разбираются **псевдокодом**, затем — на Go.
 
 ---

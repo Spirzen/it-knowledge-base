@@ -25,6 +25,14 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
+<div class="callout callout--info">
+  <div class="callout-title">Среда выполнения Java</div>
+
+  <div class="callout-body">
+  Общая теория — <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код и виртуальные машины</a>, <a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1">GC и память</a>, <a href="/encyclopedia/1-basics/1-19-programma/1">программа и runtime</a>. Потоки — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; в Java: <a href="/encyclopedia/5-languages/5-03-java/23">JVM и потоки</a>, <a href="/encyclopedia/5-languages/5-03-java/298">асинхронность</a>, <a href="/encyclopedia/5-languages/5-03-java/308">virtual threads (Java 21+)</a>.
+</div>
+</div>
+
 Раздел охватывает язык **Java**, **JVM**, сборки (Maven/Gradle), фреймворки и работу с данными. Материалы рассчитаны на разработчиков и архитекторов: от первой программы до Spring, тестирования и облачного развёртывания.
 
 **Java** — не "только банки": это JVM-экосистема (серверы, Android-наследие, инструменты). В новых backend-проектах чаще **Spring Boot**, а не JSF — legacy-главы в разделе помечены как справочные.
