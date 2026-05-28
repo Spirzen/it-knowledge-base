@@ -200,3 +200,5 @@ info/llm-phrases-scan.csv
 /.cursor
 zhelezo-scan.txt
 /AGENTS.local.md
+tmp_test.txt
+_tmp_blocks_2.txt
