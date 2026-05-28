@@ -12,7 +12,6 @@ import {
   THEMES,
   createShuffledPuzzle,
   enemyTurn,
-  getCodeSnippet,
   isPuzzleSolved,
   manhattan,
   rollRogueEvent,
@@ -26,20 +25,8 @@ const ARCADE_TICK_MS = 420;
 
 const PLATFORM_LEN = 100;
 const PLATFORM_GAP = {from: 42, to: 52};
-
-function CodeAside({theme, genre, showCode}) {
-  if (!showCode) return null;
-  const themeLabel = THEMES[theme]?.label ?? 'JavaScript';
-  return (
-    <aside className={styles.codePanel} aria-label={`Фрагмент на ${themeLabel}`}>
-      <strong>{themeLabel}</strong>
-      {' · '}
-      {GENRE_META[genre]?.label}
-      {'\n'}
-      {getCodeSnippet(theme, genre)}
-    </aside>
-  );
-}
+/** Высота линии земли в % от низа трека (совпадает с градиентом в CSS). */
+const PLATFORM_GROUND_BOTTOM = 45;
 
 function ArcadeToy() {
   const [playerC, setPlayerC] = useState(4);
@@ -190,7 +177,10 @@ function PlatformerToy() {
           style={{left: `${PLATFORM_GAP.from}%`, width: `${PLATFORM_GAP.to - PLATFORM_GAP.from}%`}}
         />
         <div className={styles.platformGoal} aria-hidden />
-        <div className={styles.platformHero} style={{left: `${x}%`, bottom: `${28 + y * 40}%`}} />
+        <div
+          className={styles.platformHero}
+          style={{left: `${x}%`, bottom: `${PLATFORM_GROUND_BOTTOM + y * 28}%`}}
+        />
       </div>
       <div className={styles.controlsRow}>
         <button type="button" className="it-demo__btn it-demo__btn--primary" onClick={jump} disabled={won || lost}>
@@ -504,7 +494,6 @@ function GenreBody({genre}) {
 export function GameGenreToyPlayInner({
   genre = 'arcade',
   theme = 'javascript',
-  showCode = true,
   showTabs = false,
   genres: genresProp,
 }) {
@@ -540,9 +529,8 @@ export function GameGenreToyPlayInner({
           <span className={styles.badge}>Закрепляет: {meta.skill}</span>
           {themeData.label && <span className={styles.badge}>{themeData.label}</span>}
         </div>
-        <div className={clsx(styles.layout, showCode && styles.layoutWithCode)}>
+        <div className={styles.layout}>
           <GenreBody genre={current} />
-          <CodeAside theme={theme} genre={current} showCode={showCode} />
         </div>
       </DemoCard>
     </DemoShell>
@@ -559,19 +547,9 @@ export default function GameGenreToyPlay(props) {
 }
 
 /** Вкладки с жанрами — для глав про классификацию и геймдев. */
-export function GameGenreToysHubInner({
-  theme = 'javascript',
-  genres = GENRES,
-  showCode = false,
-}) {
+export function GameGenreToysHubInner({theme = 'javascript', genres = GENRES}) {
   return (
-    <GameGenreToyPlayInner
-      theme={theme}
-      genres={genres}
-      genre={genres[0]}
-      showCode={showCode}
-      showTabs
-    />
+    <GameGenreToyPlayInner theme={theme} genres={genres} genre={genres[0]} showTabs />
   );
 }
 
@@ -579,26 +557,6 @@ export function GameGenreToysHub(props) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка жанровых мини-игр…')}>
       {() => <GameGenreToysHubInner {...props} />}
-    </BrowserOnly>
-  );
-}
-
-/** Несколько жанров подряд — для глав «Простые приложения на …». */
-export function GameGenreToysStackInner({theme = 'javascript', genres, showCode = true}) {
-  const list = genres ?? ['arcade', 'puzzle', 'rpg'];
-  return (
-    <div className={styles.stack}>
-      {list.map((g) => (
-        <GameGenreToyPlayInner key={g} genre={g} theme={theme} showCode={showCode} showTabs={false} />
-      ))}
-    </div>
-  );
-}
-
-export function GameGenreToysStack(props) {
-  return (
-    <BrowserOnly fallback={demoLoadingFallback('Загрузка мини-игр…')}>
-      {() => <GameGenreToysStackInner {...props} />}
     </BrowserOnly>
   );
 }

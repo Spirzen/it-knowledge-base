@@ -1,8 +1,13 @@
 /** Метаданные и данные для мини-игр по жанрам видеоигр. */
 
-import {THEMES} from './langPracticeToysEngine';
-
-export {THEMES};
+export const THEMES = {
+  javascript: {label: 'JavaScript', accent: '#f7df1e'},
+  python: {label: 'Python', accent: '#3776ab'},
+  java: {label: 'Java', accent: '#f89820'},
+  csharp: {label: 'C#', accent: '#68217a'},
+  go: {label: 'Go', accent: '#00add8'},
+  rust: {label: 'Rust', accent: '#dea584'},
+};
 
 export const GENRES = [
   'arcade',
@@ -57,174 +62,6 @@ export const GENRE_META = {
     refs: 'Hades, Slay the Spire',
   },
 };
-
-/** Короткие фрагменты «как это пишут» — привязка к языку главы. */
-export const CODE_SNIPPETS = {
-  javascript: {
-    arcade: `while (running) {
-  readInput();
-  updatePositions(dt);
-  if (playerHits(enemy)) gameOver();
-  drawFrame();
-}`,
-    platformer: `if (onGround && keys.jump) vy = JUMP;
-vy += GRAVITY * dt;
-y += vy * dt;
-onGround = floor.collides(x, y);`,
-    puzzle: `function tryMove(board, r, c) {
-  if (!isAdjacentEmpty(board, r, c)) return board;
-  return swapWithEmpty(board, r, c);
-}`,
-    turnbased: `if (phase === 'player') moveUnit(sel, cell);
-else enemy.takeTurn(state);
-if (allEnemiesDown()) win();`,
-    rpg: `hero = { hp: 20, gold: 0, items: [] };
-function choose(action) {
-  apply(hero, action.effects);
-  scene = action.next;
-}`,
-    roguelike: `room = randomRoom(seed, floor);
-hero.hp -= room.risk;
-if (hero.hp <= 0) return restartRun();`,
-  },
-  python: {
-    arcade: `while running:
-    events = poll_input()
-    update_positions(dt)
-    if player_hits(enemy):
-        game_over()
-    draw_frame()`,
-    platformer: `if on_ground and keys["jump"]:
-    vy = JUMP
-vy += GRAVITY * dt
-y += vy * dt
-on_ground = floor.collides(x, y)`,
-    puzzle: `def try_move(board, r, c):
-    if not is_adjacent_empty(board, r, c):
-        return board
-    return swap_with_empty(board, r, c)`,
-    turnbased: `if phase == "player":
-    move_unit(sel, cell)
-else:
-    enemy.take_turn(state)`,
-    rpg: `hero = {"hp": 20, "gold": 0, "items": []}
-
-def choose(action):
-    apply(hero, action.effects)
-    global scene
-    scene = action.next_id`,
-    roguelike: `room = random_room(seed, floor)
-hero["hp"] -= room["risk"]
-if hero["hp"] <= 0:
-    restart_run()`,
-  },
-  java: {
-    arcade: `while (running) {
-  input.poll();
-  world.update(dt);
-  if (world.collides(player, foe)) gameOver();
-  renderer.draw(world);
-}`,
-    platformer: `if (onGround && input.jump()) vy = JUMP;
-vy += GRAVITY * dt;
-y += vy * dt;
-onGround = floor.collides(x, y);`,
-    puzzle: `Board tryMove(Board b, int r, int c) {
-  if (!adjacentEmpty(b, r, c)) return b;
-  return swapWithEmpty(b, r, c);
-}`,
-    turnbased: `if (phase == Phase.PLAYER) move(sel, cell);
-else ai.takeTurn(state);`,
-    rpg: `Hero hero = new Hero(20, 0);
-void choose(Action a) {
-  a.apply(hero);
-  scene = a.next();
-}`,
-    roguelike: `Room room = Rooms.roll(seed, floor);
-hero.hp -= room.risk();
-if (hero.hp <= 0) restartRun();`,
-  },
-  csharp: {
-    arcade: `while (running) {
-  Input.Poll();
-  World.Update(dt);
-  if (World.Collides(player, foe)) GameOver();
-  Renderer.Draw(World);
-}`,
-    platformer: `if (onGround && input.Jump) vy = JumpForce;
-vy += Gravity * dt;
-y += vy * dt;
-onGround = floor.Collides(x, y);`,
-    puzzle: `Board TryMove(Board b, int r, int c) =>
-  AdjacentEmpty(b, r, c) ? SwapEmpty(b, r, c) : b;`,
-    turnbased: `if (phase == Phase.Player) Move(sel, cell);
-else enemy.TakeTurn(ref state);`,
-    rpg: `var hero = new Hero(Hp: 20);
-void Choose(Action a) {
-  a.Apply(hero);
-  scene = a.Next;
-}`,
-    roguelike: `var room = Rooms.Roll(seed, floor);
-hero.Hp -= room.Risk;
-if (hero.Hp <= 0) RestartRun();`,
-  },
-  go: {
-    arcade: `for running {
-  in := pollInput()
-  update(&world, dt)
-  if collides(world.Player, world.Foe) { gameOver() }
-  draw(world)
-}`,
-    platformer: `if onGround && in.Jump { vy = jump }
-vy += gravity * dt
-y += vy * dt
-onGround = floor.Collides(x, y)`,
-    puzzle: `func tryMove(b Board, r, c int) Board {
-  if !adjacentEmpty(b, r, c) { return b }
-  return swapEmpty(b, r, c)
-}`,
-    turnbased: `if phase == player { move(sel, cell) } else { ai.Turn(&st) }`,
-    rpg: `hero := Hero{HP: 20}
-func choose(a Action) {
-  a.Apply(&hero)
-  scene = a.Next
-}`,
-    roguelike: `room := rooms.Roll(seed, floor)
-hero.HP -= room.Risk
-if hero.HP <= 0 { restartRun() }`,
-  },
-  rust: {
-    arcade: `while running {
-    let input = poll_input();
-    world.update(dt);
-    if world.collides(player, foe) { break; }
-    draw(&world);
-}`,
-    platformer: `if on_ground && input.jump { vy = JUMP; }
-vy += GRAVITY * dt;
-y += vy * dt;
-on_ground = floor.collides(x, y);`,
-    puzzle: `fn try_move(board: &mut Board, r: usize, c: usize) {
-    if adjacent_empty(board, r, c) { swap_empty(board, r, c); }
-}`,
-    turnbased: `match phase {
-    Phase::Player => move_unit(sel, cell),
-    Phase::Enemy => ai.take_turn(&mut state),
-}`,
-    rpg: `struct Hero { hp: i32, gold: i32 }
-fn choose(hero: &mut Hero, action: &Action) {
-    action.apply(hero);
-}`,
-    roguelike: `let room = rooms::roll(seed, floor);
-hero.hp -= room.risk;
-if hero.hp <= 0 { restart_run(); }`,
-  },
-};
-
-export function getCodeSnippet(theme, genre) {
-  const lang = CODE_SNIPPETS[theme] ?? CODE_SNIPPETS.javascript;
-  return lang[genre] ?? lang.arcade;
-}
 
 /** Пятнашки 3×3: 0 — пустая клетка. */
 export const SOLVED_PUZZLE = [1, 2, 3, 4, 5, 6, 7, 8, 0];

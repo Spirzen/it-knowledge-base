@@ -57,7 +57,7 @@ import DocCardList from '@theme/DocCardList';
 
 Перед Unity или Unreal полезно **пощупать жанр**: аркада, платформер, головоломка, пошаговая стратегия, RPG, roguelike. Ниже — оригинальные учебные игрушки с вкладками (подробнее в [классификации жанров](/encyclopedia/1-basics/1-18-kompyuternye-igry/2)).
 
-<GameGenreToysHub theme="javascript" showCode={false} />
+<GameGenreToysHub theme="javascript" />
 
 ---
 

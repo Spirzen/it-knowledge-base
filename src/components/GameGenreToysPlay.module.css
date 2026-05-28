@@ -45,27 +45,10 @@
   gap: 1rem;
 }
 
-@media (min-width: 900px) {
-  .layoutWithCode {
-    grid-template-columns: 1fr minmax(200px, 34%);
-  }
-}
-
 .panel {
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
-}
-
-.codePanel {
-  padding: 0.75rem;
-  border-radius: 8px;
-  border: 1px solid var(--demo-border, var(--ifm-color-emphasis-300));
-  background: var(--ifm-code-background);
-  font-size: 0.72rem;
-  line-height: 1.45;
-  white-space: pre-wrap;
-  font-family: var(--ifm-font-family-monospace);
 }
 
 .status {
@@ -132,7 +115,7 @@
 
 .platformHero {
   position: absolute;
-  bottom: 28%;
+  bottom: 45%;
   width: 22px;
   height: 22px;
   margin-left: -11px;
@@ -144,7 +127,7 @@
 .platformGoal {
   position: absolute;
   right: 8px;
-  bottom: 28%;
+  bottom: 45%;
   width: 16px;
   height: 28px;
   border-radius: 3px;
@@ -231,6 +214,3 @@
   font-size: 0.82rem;
 }
 
-.stack > * + * {
-  margin-top: 1.25rem;
-}
