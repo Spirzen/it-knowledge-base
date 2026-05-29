@@ -3,6 +3,22 @@ title: Модели и инструменты — о разделе
 description: "Подборка материалов раздела Модели и инструменты в энциклопедии Вселенная IT."
 sidebar_label: Модели и инструменты — о разделе
 related:
+  - title: "RAG, MCP и агенты — три слоя архитектуры"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/121
+  - title: "Типы интеллектуальных агентов"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/120
+  - title: "Семь слоёв LLM-стека"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/119
+  - title: "Параметры генерации LLM — напоминалка"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/118
+  - title: "Вайб-кодинг"
+    doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1
+  - title: "Генерация кода — ChatGPT, Gemini и DeepSeek"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/117
+  - title: "MCP-серверы"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/114
+  - title: "API — интерфейсы прикладного программирования"
+    doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117
   - title: "Нейросети — о разделе"
     doc: encyclopedia/6-ai/6-03-neyroseti/intro
   - title: "Разработка ИИ — о разделе"
@@ -17,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Перед запуском shell/Git от IDE-агента — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) (стоп-лист и проверка tool calls). Глава [Агенты ИИ](./116) — архитектура и политики инструментов.
+Перед запуском shell/Git от IDE-агента — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) (стоп-лист и проверка tool calls). Обзор **RAG + MCP + агент** как трёх слоёв одного приложения — [RAG, MCP и агенты — три слоя архитектуры](./121). [Типы интеллектуальных агентов](./120) — классическая схема от рефлекса до обучения; [Агенты ИИ](./116) — архитектура LLM-агентов и политики инструментов. [MCP-серверы](./114) — стандартизированный слой инструментов для IDE и агентов; сравнение с REST и API Gateway — [MCP и классический API](./114#mcp-i-api).
 
 <DocCardList />
 
@@ -29,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
-**Нейросети и ИИ** — [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812).
+**Нейросети и ИИ** — [Вайб-кодинг и нейроконтент — о разделе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812).
 
 {/* /sidebar-collections */}
 

@@ -29,11 +29,11 @@ import DocCardList from '@theme/DocCardList';
 
 | Этап | Статьи | Зачем |
 | :--- | :--- | :--- |
-| 1. Основы | [1](./1.md), [2](./2.md) | Сети, IP, порты, история связи |
-| 2. Имена и протоколы | [3](./3.md), [4](./4.md), [6](./6.md) | URI/URL, OSI, TCP/UDP, HTTP, DNS |
+| 1. Основы | [1](./1.md), [2](./2.md) | Сети, IP, порты, [шесть типов серверов](./1.md#tipy-serverov), история связи |
+| 2. Имена и протоколы | [3](./3.md), [4](./4.md), [6](./6.md) | URI/URL, OSI, [модель TCP/IP](./4.md#model-tcp-ip), [обзор девяти ключевых протоколов](./4.md#key-network-protocols), TCP/UDP, HTTP, DNS |
 | 3. Практика веба | [5](./5.md), [11](./11.md), [7](./7.md) | Загрузка сайта, HTTPS, cookie и кэш |
 | 4. Инфраструктура | [21](./21.md), [211](./211.md), [212](./212.md) | Устройства, магистрали, CDN |
-| 5. Углубление | [8](./8.md), [41](./41.md), [611](./611.md), [база по HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) | HTTP/2–3, справочники, IP-таблицы |
+| 5. Углубление | [8](./8.md), [41](./41.md), [611](./611.md), [618](./618.md), [619](./619.md), [база по HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) | HTTP/2–3, [карта HTTP-экосистемы](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem), [девять ключевых протоколов](./618.md#key-protocols-overview), [18 основных портов](./618.md#18-osnovnyh-portov), [сводка протоколов для отладки](./618.md#obzor-protokoly), [сетевые сервисы по ролям](./618.md#setevye-servisy-po-rolyam), [справочник IP и CIDR](./619.md) |
 
 Опционально: [71](./71.md) (Wi‑Fi, Bluetooth, LTE), [91](./91.md) (регулирование), [613](./613.md)–[617](./617.md) (VPN, прокси, мониторинг).
 
@@ -43,7 +43,9 @@ import DocCardList from '@theme/DocCardList';
 
 - Шифрование и угрозы — **2.08. Основы информационной безопасности**
 - Веб-разработка — раздел [2.04. Сайты и веб-сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro)
+- Форумы, мемы и рунетская лексика (культура, не протоколы) — [9.10 / 120](/encyclopedia/9-spinoff/9-10-internet-kultura/120), мост [2.04 / 125](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/125)
 - Самопроверка — [чек-лист](./99.md) и [итоги](./98.md)
+- Подготовка к system design — [задержка и пропускная способность](./1.md#пропускная-способность-и-задержка), маршрут в [143.md](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/143#poriadok-izucheniia)
 
 <DocCardList />
 

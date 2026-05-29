@@ -83,6 +83,7 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 | REST, коды HTTP | [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) |
 | Проектирование и DTO | [Проектирование API](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122) |
 | WebSocket | [Реактивные транспорты](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) |
+| Polling, SSE, webhook | [129](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/129), [Push, Pull, Webhooks](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120) |
 | Интеграционные тесты | [1012](/encyclopedia/7-project/7-05-testirovanie/1012) |
 
 <DocCardList />

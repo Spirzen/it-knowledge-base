@@ -19,6 +19,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+Быстрые маршруты по новым темам: [131](./131) — рунетские IT-формулы, [133](./133) — Open Source и GitHub в дискурсе, [126](./126) — роли в сети.
+
 {/* sidebar-collections */}
 
 ---

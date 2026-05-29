@@ -15,6 +15,8 @@ related:
     doc: encyclopedia/7-project/7-12-konstruirovanie-po/intro
   - title: "Микросервисы и интеграция — о разделе"
     doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
+  - title: "Семь слоёв LLM-стека"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/119
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -67,21 +69,37 @@ import DocCardList from '@theme/DocCardList';
 3. [БД](116.md) · [API и интеграции](117.md) (три сквозных примера и маршрут) · [OAuth и webhooks](1171.md) · [mTLS, JWS, AsyncAPI, outbox](1172.md) · [Ричардсон](212.md) · [идемпотентность](213.md)
 
    Практика выбранной СУБД из кода: [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
-4. [OpenAPI](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3) · [REST в инфраструктуре](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) · [ввод по API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117)
-5. [Масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA](2135.md) · [распределённые системы](21.md)
+4. [OpenAPI](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3) · [REST в инфраструктуре](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) · [ввод по API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) · [8 принципов RESTful API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-api-design-principles)
+5. [System Design — карта тем](../143.md) · [12 концепций распределённой архитектуры](../141.md) · [масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA](2135.md) · [распределённые системы](21.md)
 
 ---
 
 ### Стили и эволюция
 
-6. [Модульный монолит](2126.md) · [события](2127.md) · [CQRS](2122.md) · [Saga](2124.md) · [Strangler](2125.md)
-7. [Микросервисные паттерны](118.md) · [веб](119.md) · [GRASP и ADR](2139.md)
+6. [Модульный монолит](2126.md) · [события](2127.md) · [CQRS](2122.md) · [Event Sourcing](2123.md) · [Saga](2124.md) · [Strangler](2125.md) · [паттерны перехода с монолита](2144.md)
+7. [Микросервисные паттерны](118.md) ([девять компонентов продакшн-стека](118.md#prodakshn-stek)) · [веб](119.md) · [GRASP и ADR](2139.md)
 
 ---
 
 ### Практика архитектора
 
 8. [Event Storming](2140.md) · [оценка альтернатив](2141.md) · [threat modeling](2142.md)
+
+---
+
+### Системы с LLM и RAG
+
+Корпоративный чат, copilot и поиск по базе знаний — те же инженерные задачи, что и у распределённого сервиса: контракт API, NFR, данные, отказоустойчивость. Удобный **вертикальный** каркас — [Семь слоёв LLM-стека](/encyclopedia/6-ai/6-05-razrabotka-ii/119) (источники → предобработка → модель → оркестрация → инференс → интеграция → приложение). Горизонтальные приёмы из этого подраздела к нему стыкуются так:
+
+| Задача проектирования | Глава здесь | Слой LLM-стека |
+|----------------------|-------------|----------------|
+| Latency, SLA, деградация | [NFR](1116.md), [SLA](2135.md) | 5 — инференс |
+| REST, OAuth, webhooks | [API и интеграции](117.md) | 6 — интеграция |
+| Векторный индекс, схема метаданных | [БД](116.md), [векторные БД](/encyclopedia/3-data-markup/3-06-nosql/812) | 2 — данные |
+| Gateway, rate limit, очереди | [12 концепций](../141.md) | 5–6 |
+| Угрозы и PII | [threat modeling](2142.md), [защита данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117) | 2, 5 |
+
+Реализация и промпты — [Разработка ИИ](/encyclopedia/6-ai/6-05-razrabotka-ii/intro).
 
 ---
 

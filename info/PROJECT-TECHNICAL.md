@@ -31,31 +31,51 @@
 
 ## 2. Архитектура системы
 
+> **Полный набор Mermaid-схем (контекст, сборка, контент, runtime, демо, деплой):** [`ARCHITECTURE.md`](./ARCHITECTURE.md) — обновляйте в первую очередь при изменении архитектуры.
+
 ### 2.1. Слои
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#1565c0', 'lineColor': '#546e7a', 'secondaryColor': '#f5f5f5', 'tertiaryColor': '#eceff1'}}}%%
+
 flowchart TB
-  subgraph build [Сборка]
-    Node[Node.js 20+]
-    DC[@docusaurus/core 3.10]
-    Faster[@docusaurus/faster + future.v4]
+  %% === СТИЛИ ===
+  classDef build fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px,color:#283593
+  classDef sources fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+  classDef output fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+
+  %% === СБОРКА ===
+  subgraph build ["🏗️ Сборка"]
+    direction TB
+    Node["Node.js 20+"]:::build
+    DC["@docusaurus/core 3.10"]:::build
+    Faster["@docusaurus/faster + future.v4"]:::build
     Node --> DC --> Faster
   end
 
-  subgraph sources [Источники]
-    Docs[docs/*.md MDX]
-    Src[src/ React theme]
-    Static[static/]
-    CFG[docusaurus.config.js + sidebars.js]
+  %% === ИСТОЧНИКИ ===
+  subgraph sources ["📚 Источники"]
+    direction TB
+    Docs["docs/*.md MDX"]:::sources
+    Src["src/ React theme"]:::sources
+    Static["static/"]:::sources
+    CFG["docusaurus.config.js + sidebars.js"]:::sources
   end
 
-  subgraph output [Результат]
-    BuildDir[build/ статический HTML]
-    GHP[GitHub Pages → spirzen.ru]
+  %% === РЕЗУЛЬТАТ ===
+  subgraph output ["📦 Результат"]
+    direction TB
+    BuildDir["build/ статический HTML"]:::output
+    GHP["GitHub Pages → spirzen.ru"]:::output
   end
 
-  sources --> DC
-  DC --> BuildDir --> GHP
+  %% === СВЯЗИ ===
+  Docs --> DC
+  Src --> DC
+  Static --> DC
+  CFG --> DC
+  
+  Faster --> BuildDir --> GHP
 ```
 
 ---

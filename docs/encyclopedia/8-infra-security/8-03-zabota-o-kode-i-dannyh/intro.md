@@ -21,11 +21,11 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Здесь — практики **сохранности исходников и чувствительных данных**: что делать, когда IDE упала, диск сгорел, в репозиторий попал пароль или два разработчика перезаписали один файл. Это не полный курс ИБ (он в [разделе 8.07](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro)), а "гигиена", которую ожидают от любой команды разработки.
+Здесь — практики **сохранности исходников и чувствительных данных**: что делать, когда IDE упала, диск сгорел, в репозиторий попал пароль или два разработчика перезаписали один файл. Слепая вставка кода из чата ([вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1)) — частый источник утечек секретов в промпт и уязвимостей в диффе. Это не полный курс ИБ (он в [разделе 8.07](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro)), а "гигиена", которую ожидают от любой команды разработки.
 
 > **Смежно:** [Основы работы с Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) · [Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro)
 
-**База в разделе 4.13 (с чего начать новичку):** [как работать с Git — add, commit, push](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112) · [ветки, merge, pull request / merge request](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113) · [рекомендации в команде](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/114) · [типовые ситуации и восстановление](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1141).
+**База в разделе 4.13 (с чего начать новичку):** [12 команд Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115#12-komand) · [как работать с Git — add, commit, push](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112) · [ветки, merge, pull request / merge request](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113) · [рекомендации в команде](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/114) · [типовые ситуации и восстановление](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1141).
 
 Ниже в **8.03** — материалы про сохранность кода, устройство Git и гигиену репозитория; они опираются на ту же базу, но идут глубже в инфраструктуру и процессы.
 

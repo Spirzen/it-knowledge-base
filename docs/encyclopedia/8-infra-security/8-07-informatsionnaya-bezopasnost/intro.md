@@ -9,6 +9,8 @@ related:
     doc: encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro
   - title: "Тестирование информационной безопасности"
     doc: encyclopedia/7-project/7-05-testirovanie/123
+  - title: "Белое хакерство и Bug Bounty — о разделе"
+    doc: encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro
   - title: "Основы интеграционного взаимодействия — о разделе"
     doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro
 ---
@@ -26,9 +28,11 @@ import DocCardList from '@theme/DocCardList';
 1. **[Информационная безопасность](1.md)** — триада CIA, угрозы, риски, OWASP Top 10 (есть интерактивные симуляторы).
 2. **[Методы защиты информации](111.md)** — системный подход: криптография, сеть, хосты, облако, DevSecOps.
 3. **[Безопасность приложений](113.md)** — XSS, CSRF, CSP, бэкенд и типовые ошибки в коде.
-4. **[Уязвимости и атаки на API](128.md)** — IDOR, SSRF, rate limit, логические атаки.
-5. **[Инъекции](123.md)** — SQLi, CMDi, XSS: одна модель, разные контексты.
-6. **[Шифрование](115.md)** и **[Сертификация и сертификаты](112.md)** — алгоритмы, TLS, PKI.
+4. **[12 советов по безопасности API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132)** — HTTPS, OAuth, gateway, OWASP, чек-лист для ревью.
+5. **[Уязвимости и атаки на API](128.md)** — IDOR, SSRF, rate limit, логические атаки.
+6. **[Инъекции](123.md)** — SQLi (тавтология, UNION, blind boolean/time), CMDi, XSS: одна модель, разные контексты.
+7. **[Шифрование](115.md)** и **[Сертификация и сертификаты](112.md)** — алгоритмы, TLS, PKI.
+8. **[Белое хакерство и Bug Bounty](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro)** — этичный поиск уязвимостей, отчёты, программы вознаграждений у техгигантов.
 
 ---
 

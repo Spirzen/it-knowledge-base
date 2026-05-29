@@ -23,6 +23,8 @@ import SearchEnginesHub from '@site/src/components/SearchEnginesHub.jsx';
 3. [Языки поисковых запросов](/encyclopedia/1-basics/1-21-poisk-informatsii/2) — SQL, SPARQL, Lucene/Elasticsearch DSL;
 4. [Популярные поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/4) — обзор Google, Яндекс, специализированных сервисов.
 
+На ["Вселенной IT"](https://spirzen.ru) материалы энциклопедии ищутся **своим клиентским поиском** в шапке (`Ctrl+K`) — без Algolia и без полнотекстового индекса тела статей. Схема сборки и runtime — в [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3#poisk-po-vselennoy-it).
+
 <SearchEnginesHub />
 
 <DocCardList />

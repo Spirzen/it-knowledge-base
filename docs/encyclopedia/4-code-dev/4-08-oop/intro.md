@@ -35,8 +35,9 @@ import DocCardList from '@theme/DocCardList';
 | 6 | [Полиморфизм](./5.md) | единый интерфейс |
 | 7 | [Инструменты ООП](./6.md) | enum, коллекции |
 | 8 | [Итоги](./98.md) · [чек-лист](./99.md) | закрепление |
+| 9 | [Частые паттерны GoF](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/141) | Factory, Observer, Strategy и др. после столпов ООП |
 
-Парадигмы и SOLID: [Парадигмы и уровни абстракции](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro). Паттерны: [design-patterns](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro).
+Парадигмы и SOLID: [Парадигмы и уровни абстракции](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro). Паттерны: [design-patterns](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), шпаргалка — [141](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/141).
 
 ---
 

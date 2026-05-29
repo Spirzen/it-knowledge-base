@@ -37,7 +37,7 @@ Painkiller — шутер от первого лица от польской с�
 
 ## Pandas
 
-Pandas — библиотека с открытым исходным кодом для анализа и обработки данных на языке Python. Предоставляет высокоуровневые структуры данных `DataFrame` и `Series`, а также методы для фильтрации, агрегации, объединения и временных рядов.
+Pandas — библиотека с открытым исходным кодом для анализа и обработки данных на языке Python. Предоставляет высокоуровневые структуры данных `DataFrame` и `Series`, а также методы для фильтрации, агрегации, объединения и временных рядов. Типовые операции при EDA (`read_csv`, `groupby`, `describe`, `.str`) — [428](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428). Очистка и подготовка таблицы — [427](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427). Сравнение с Polars, SQL и PySpark — [426](/encyclopedia/3-data-markup/3-11-analiz-dannyh/426).
 
 ---
 
@@ -50,6 +50,12 @@ Parser (парсер, синтаксический анализатор) — к�
 ## Password Hashing
 
 Password Hashing — криптографическая процедура преобразования пароля в фиксированную строку с помощью односторонней хеш-функции (часто с солью и замедлением, например, bcrypt, scrypt, Argon2). Цель — безопасное хранение паролей без возможности восстановления в открытом виде.
+
+---
+
+## PASETO
+
+PASETO (Platform-Agnostic SEcurity TOkens) — формат токенов для аутентификации и обмена claims, альтернатива JWT с фиксированными версиями криптографии (`v2.local`, `v2.public` и др.) вместо выбора алгоритма в заголовке. `local` — симметричное шифрование payload; `public` — асимметричная подпись (Ed25519). Подробнее — [Cookies, sessions, JWT и PASETO](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111#cookies-sessions-jwt-paseto).
 
 ---
 
@@ -145,7 +151,7 @@ PID (Process ID — идентификатор процесса) — уника�
 
 ## Pipeline
 
-Pipeline — последовательность автоматизированных этапов обработки данных или кода. В DevOps — CI/CD-конвейер (сборка, тесты, развёртывание). В машинном обучении — цепочка преобразований данных (preprocessing → обучение → оценка). В GPU — конвейер рендеринга.
+Pipeline — последовательность автоматизированных этапов обработки данных или кода. В DevOps — [CI/CD-конвейер](/encyclopedia/8-infra-security/8-04-devops-ci-cd/14#karta-pipeline-cicd) от планирования и коммита до мониторинга на проде (сборка, тесты, релиз, развёртывание). В машинном обучении — цепочка преобразований данных (preprocessing → обучение → оценка). В GPU — конвейер рендеринга.
 
 ---
 
@@ -185,6 +191,12 @@ PMDK (Persistent Memory Development Kit) — набор библиотек от 
 ## Point-and-click
 
 Point-and-click — жанр приключенческих игр, в которых взаимодействие с окружением осуществляется щелчками мыши. Акцент на головоломках, диалогах и исследовании. Классические примеры: Monkey Island, Myst.
+
+---
+
+## Pod (Kubernetes)
+
+Pod — наименьшая единица планирования в Kubernetes: один или несколько контейнеров с общим сетевым namespace и томами. Жизненный цикл проходит через API Server и etcd (создание объекта), Scheduler (назначение узла), kubelet (запуск через CRI, фазы Pending/Running/Succeeded/Failed), при удалении — graceful shutdown (SIGTERM, `terminationGracePeriodSeconds`) и освобождение сети и томов на узле. Подробнее — [жизненный цикл Pod](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117#zhiznennyy-tsikl-pod).
 
 ---
 
@@ -371,6 +383,12 @@ PyPI — Python Package Index, официальный репозиторий п�
 ## PyPy
 
 PyPy — альтернативная реализация Python, написанная на подмножестве Python (RPython). Главное отличие от CPython — Just-In-Time компилятор, дающий 4–5x прирост скорости для CPU-bound задач.
+
+---
+
+## PVM
+
+PVM (Python Virtual Machine) — цикл интерпретации байт-кода в **CPython**: чтение opcode, работа со стеком значений и кадрами вызовов, вызов C-функций runtime. Исходник `.py` сначала компилируется в байт-код (кэш `.pyc` при импорте), затем исполняется PVM. См. [архитектура интерпретатора Python](/encyclopedia/5-languages/5-02-python/11#zhiznennyy-tsikl-koda).
 
 ---
 

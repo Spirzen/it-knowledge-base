@@ -32,7 +32,7 @@ function SpirzenOnlineToolsPanelInner({
   );
 }
 
-/** Панель со ссылками на Schema Maker, SQL Generator и ArchiStyler Online. */
+/** Панель со ссылками на веб-приложения автора на spirzen.github.io. */
 export default function SpirzenOnlineToolsPanel(props) {
   return (
     <BrowserOnly fallback={demoLoadingFallback('Загрузка списка инструментов…')}>

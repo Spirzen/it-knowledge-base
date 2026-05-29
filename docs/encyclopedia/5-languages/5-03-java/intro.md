@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Среда выполнения Java</div>
 
   <div class="callout-body">
-  Общая теория — <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код и виртуальные машины</a>, <a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1">GC и память</a>, <a href="/encyclopedia/1-basics/1-19-programma/1">программа и runtime</a>. Потоки — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; в Java: <a href="/encyclopedia/5-languages/5-03-java/23">JVM и потоки</a>, <a href="/encyclopedia/5-languages/5-03-java/298">асинхронность</a>, <a href="/encyclopedia/5-languages/5-03-java/308">virtual threads (Java 21+)</a>.
+  Общая теория — <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код и виртуальные машины</a>, <a href="/encyclopedia/4-code-dev/4-15-sborka-musora/4">сравнение GC (Java, Python, Go)</a>, <a href="/encyclopedia/1-basics/1-19-programma/1">программа и runtime</a>. Потоки — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; в Java: <a href="/encyclopedia/5-languages/5-03-java/23">JVM и потоки</a>, <a href="/encyclopedia/5-languages/5-03-java/298">асинхронность</a>, <a href="/encyclopedia/5-languages/5-03-java/308">virtual threads (Java 21+)</a>.
 </div>
 </div>
 
@@ -45,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## С чего начать (основной маршрут)
 
-1. [Основы языка Java](./1.md) — JDK/JVM, байт-код, состав дистрибутива.
+1. [Основы языка Java](./1.md) — JDK/JVM, байт-код, [путь от исходника до запуска](./1.md#put-isxodnika-do-zapuska), состав дистрибутива.
 2. [Первая программа](./13.md) — Maven; в статье два пути: **IntelliJ IDEA** (рекомендуется) и **NetBeans**.
 3. [Структура и сборки](./12.md) — Maven/Gradle, запуск вне IDE; [отладка в IDEA](./132.md).
 4. [Синтаксис](./14.md), [типы](./15.md), [операторы и циклы](./17.md), [конструкции](./16.md) — в том числе `Scanner`.
@@ -54,8 +54,8 @@ import DocCardList from '@theme/DocCardList';
 7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [Virtual Threads (Java 21+)](./308.md), [JVM и потоки](./23.md).
 8. [Аннотации и рефлексия](./299.md), [современный синтаксис](./300.md) — record, sealed, pattern matching.
 9. [Вопросы на собеседование — Core Java](./301.md) — карта тем → главы раздела.
-10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [Security Basic](./272.md) → [JWT](./274.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
-11. **JVM в проде:** [jcmd, heap dump, JFR](./302.md) — после [JVM и потоки](./23.md).
+10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [Security Basic](./272.md) → [JWT](./274.md) → [безопасность в prod](./275.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
+11. **JVM в проде:** [JVM и потоки](./23.md) → [флаги запуска в справочнике, §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [jcmd, heap dump, JFR](./302.md).
 
 <div class="callout callout--info">
   <div class="callout-title">Когда Spring, а когда ещё Core</div>
@@ -72,8 +72,8 @@ import DocCardList from '@theme/DocCardList';
 
 | Цель | Маршрут |
 |------|---------|
-| **Корпоративный REST** | [271](./271.md) → [272](./272.md) → [274](./274.md) → [303](./303.md) → [293](./293.md) → [273](./273.md) |
-| **Понять JVM в проде** | [23](./23.md) → [302](./302.md) → [101](./101.md) |
+| **Корпоративный REST** | [271](./271.md) → [272](./272.md) → [274](./274.md) → [275](./275.md) → [303](./303.md) → [293](./293.md) → [273](./273.md) |
+| **Понять JVM в проде** | [23](./23.md) → [справочник §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [302](./302.md) → [101](./101.md) |
 | **Сборка и CI** | [12](./12.md) → [292](./292.md) (Gradle) |
 | **Legacy (поддержка)** | [JSF](./25.md), [JavaBeans](./26.md) — не для зелёного поля |
 
@@ -86,6 +86,7 @@ import DocCardList from '@theme/DocCardList';
 - [Справочник по Java](./3.md) — синтаксис, коллекции, `java.time`, JDBC, JVM + API-дополнения по language basics, collections, streams/gatherers и virtual threads.
 - [Ключевые классы стандартной библиотеки](./28.md) — `String`, дата/время.
 - [Экосистема Java-приложений](./110.md), [рекомендации](./101.md).
+- [Паттерны GoF на Java](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/140) — большой гид + практические статьи по ключевым паттернам (122-140).
 - [Документация и инструменты (Microsoft)](./294.md) — OpenJDK, VS Code, Azure.
 - Общая [подборка документации](/tools/documentation/2).
 
@@ -146,8 +147,8 @@ import DocCardList from '@theme/DocCardList';
 | 1 | [Первая программа](./13.md) | JDK, Maven, IDEA или NetBeans |
 | 2 | [Отладка](./132.md) | Точки останова, Variables, Call Stack |
 | 3 | [Spring Boot](./271.md) | REST после Core |
-| 4 | [Spring Security](./272.md) | Защита API |
-| 5 | [JVM](./23.md) · [диагностика](./302.md) | Память, GC, jcmd |
+| 4 | [Spring Security](./272.md) · [prod](./275.md) | Защита API и чеклист выкладки |
+| 5 | [JVM](./23.md) · [флаги §24](./3.md#24-jvm--параметры-запуска-и-настройка) · [диагностика](./302.md) | Память, GC, `-Xmx`, jcmd |
 
 ---
 

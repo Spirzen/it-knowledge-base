@@ -32,13 +32,13 @@ Python удобен для **первого языка**: читается по�
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
-Теория и контекст: [Python — язык общего назначения](./1.md) · [история](./14.md) · [Дзен Python](./15.md) · [архитектура CPython](./11.md).
+Теория и контекст: [Python — язык общего назначения](./1.md) · [история](./14.md) · [Дзен Python](./15.md) · [архитектура CPython](./11.md). Краткие идиоматичные записи — [однострочные приёмы](./38.md) (обзор для всех языков — [в разделе «Код»](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/614)).
 
 <div class="callout callout--info">
   <div class="callout-title">Среда выполнения Python</div>
 
   <div class="callout-body">
-  Интерпретатор CPython компилирует модули в <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код</a> (<code>.pyc</code>) и исполняет его на PVM; память и <a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1">сборка мусора</a> — в runtime. Общие термины — <a href="/encyclopedia/1-basics/1-19-programma/1">программа и библиотеки</a>.
+  Интерпретатор CPython компилирует модули в <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код</a> (<code>.pyc</code>) и исполняет его на PVM — см. <a href="/encyclopedia/5-languages/5-02-python/11#zhiznennyy-tsikl-koda">жизненный цикл кода</a>; память — в <a href="/encyclopedia/5-languages/5-02-python/27">архитектуре выполнения</a>, сравнение с Java и Go — <a href="/encyclopedia/4-code-dev/4-15-sborka-musora/4">шпаргалка GC</a>. Общие термины — <a href="/encyclopedia/1-basics/1-19-programma/1">программа и библиотеки</a>.
 </div>
 </div>
 
@@ -46,7 +46,7 @@ Python удобен для **первого языка**: читается по�
   <div class="callout-title">Потоки, процессы и async в Python</div>
 
   <div class="callout-body">
-  Теория ОС — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>, <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">синхронизация</a>. В Python: <code>threading</code> и <code>multiprocessing</code> — <a href="/encyclopedia/5-languages/5-02-python/26">многопоточность</a>; <code>asyncio</code> — <a href="/encyclopedia/5-languages/5-02-python/27">асинхронность</a>; GIL — <a href="/encyclopedia/5-languages/5-02-python/28">ограничения параллелизма</a>.
+  Теория ОС — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>, <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">синхронизация</a>. В Python: <code>threading</code> и <code>multiprocessing</code> — <a href="/encyclopedia/5-languages/5-02-python/26">многопоточность</a>; <code>asyncio</code> — <a href="/encyclopedia/5-languages/5-02-python/27">асинхронность</a>; GIL — <a href="/encyclopedia/5-languages/5-02-python/28">ограничения параллелизма</a>. Сетевой I/O — <a href="/encyclopedia/5-languages/5-02-python/315">сетевое программирование</a> и <a href="/encyclopedia/5-languages/5-02-python/315#spravochnik-setevyh-bibliotek">справочник библиотек</a>.
 </div>
 </div>
 

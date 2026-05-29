@@ -35,7 +35,7 @@ function PipelineLifecyclePlayInner() {
     <DemoShell className={styles.root}>
       <DemoCard
         title="Жизненный цикл CI/CD-пайплайна"
-        subtitle="8 этапов от планирования до мониторинга — CI начинается со сборки"
+        subtitle="8 этапов от Jira до Prometheus — автоматический CI со сборки, CD с релиза"
       >
         <div className={styles.flowSteps}>
           {PIPELINE_LIFECYCLE.map((p, i) => (

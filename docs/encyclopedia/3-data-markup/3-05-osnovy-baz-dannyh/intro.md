@@ -16,26 +16,28 @@ import DocCardList from '@theme/DocCardList';
 
 **Базовый путь (теория + практика в компании):**
 
-1. [Знакомство с базами данных](./1.md) — определения БД и схемы, модель данных vs схема, *relation* / *relationship*, история иерархической и сетевой моделей, обзор SQL / NoSQL / NewSQL.
-2. [СУБД в экосистеме](./2.md) — продукты, клиент–сервер, где что применяют.
+1. [Знакомство с базами данных](./1.md) — определения БД и схемы, модель данных vs схема, *relation* / *relationship*, [четыре основных типа БД](./1.md#chetyre-osnovnyh-tipa-baz-dannyh) (реляционные, NoSQL, иерархические, объектно-ориентированные), обзор SQL / NoSQL / NewSQL.
+2. [СУБД в экосистеме](./2.md) — продукты, клиент–сервер, процессы и память (например PostgreSQL), где что применяют.
 3. [Роль базы данных в организации](./6.md) — зачем центральная БД, жизненный цикл модели, люди и процессы.
-4. [Как СУБД выполняет запрос](./3.md) — буферы, индексы, план; для любознательных.
+4. [Как СУБД выполняет запрос](./3.md) — буферы, [пять структур индексов](./3.md#pyat-osnovnyh-struktur-indeksov) (B⁺, хеш, bitmap…), [типы по роли](./3.md#tipy-indeksov-po-role) (primary dense/sparse, clustered, secondary), [восемь структур хранения](./3.md#vosem-struktur-indeksa-i-hraneniya), [вторичные индексы](./3.md#vtorichnye-indeksy), партиции, план; для любознательных. Конспект для масштабирования — [опорные темы](./12.md). Практика эксплуатации — [семь стратегий](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1.md#sem-strategij-masshtabirovaniya), [девять рычагов](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1.md#devyat-rychagov-proizvoditelnosti) в разделе управления РСУБД.
 5. [Теоретические основы реляционных данных](./4.md) — Кодд, страницы, WAL, алгебра.
 6. [Двенадцать правил Кодда](./5.md) — критерии "настоящей" реляционной СУБД.
-7. [Entity Relationship](./11.md) — сущности, ключи, кардинальность, DDL-примеры.
+7. [Entity Relationship](./11.md) — сущности, первичный и внешний ключ, кардинальность 1:1 / 1:N / M:N, DDL-примеры; теория ключей и JOIN — [Реляционная модель](/encyclopedia/3-data-markup/3-07-sql/103.md#otnoshenie-na-praktike).
 8. [Конкурентный доступ](./7.md) — блокировки, MVCC, оптимистичный контроль.
 9. [Восстановление после сбоя](./8.md) — WAL, redo/undo; отличие от бэкапа DBA.
 10. [Итоги](./98.md) и [чек-лист](./99.md).
 
 **Проектирование схем (углубление):** после пунктов 1 и 7 — [Проектирование баз данных](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116) (концептуальная / логическая / физическая модель, нормализация, чек-лист перед `CREATE TABLE`).
 
-**Нормализация (1НФ–3НФ, BCNF)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md) — после [11](./11.md) и [103](/encyclopedia/3-data-markup/3-07-sql/103.md).
+**Нормализация (1НФ–4НФ, НФБК)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md#normalnye-formy) — после [11](./11.md) и [103](/encyclopedia/3-data-markup/3-07-sql/103.md).
 
 **SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)).
 
 **Практика по популярным СУБД из кода:** [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 
 **Корпоративный контекст:** [Data Governance](./111.md).
+
+**Масштабирование и system design:** [опорные темы](./12.md) (B⁺, LSM, WAL, 2PC, реплики, шардинг, CDC) → репликация и шардинг в [управлении РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1) → [System Design — карта](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/143#poriadok-izucheniia).
 
 ---
 
@@ -60,6 +62,10 @@ import DocCardList from '@theme/DocCardList';
 | **Бэкап / PITR** | Копия отдельно от оригинала; откат на момент времени — бэкап + архив WAL. |
 | **Иерархическая / сетевая модель** | Дерево (один родитель) и граф записей (несколько родителей); эпоха до SQL. |
 | **schema в PostgreSQL** | Имя пространства имён (`CREATE SCHEMA`) — отдельно от «схемы данных» в общем смысле. |
+| **postmaster** | Главный процесс серверной СУБД PostgreSQL: принимает подключения, порождает backend'ы. |
+| **backend-процесс** | Процесс на одну клиентскую сессию; выполняет SQL этой сессии. |
+| **WAL** | Журнал опережающей записи; изменения сначала в журнале, затем в файлах таблиц. |
+| **Шардинг** | Данные одной логической БД на нескольких серверах по ключу шарда; отличие от партиций одной СУБД — [§10 в «Как СУБД выполняет запрос»](./3.md#10-партиционирование). |
 
 <DocCardList />
 

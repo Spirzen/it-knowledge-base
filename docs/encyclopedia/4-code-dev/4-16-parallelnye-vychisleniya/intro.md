@@ -83,6 +83,7 @@ import RooflinePlay from '@site/src/components/RooflinePlay';
 
 **Смежные материалы —**
 
+- Программа, процесс, поток — [вводная схема](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok), [процессы и потоки в ОС](/encyclopedia/4-code-dev/4-05-asinhronnost/1)
 - Железо — [как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/2), [GPU](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/4)
 - Практика — [Fortran OpenMP/MPI](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/811), [потоки C++](/encyclopedia/5-languages/5-06-cpp/20)
 - IPC — [разделяемая память](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5118)

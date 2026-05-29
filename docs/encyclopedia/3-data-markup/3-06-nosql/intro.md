@@ -22,7 +22,7 @@ import DocCardList from '@theme/DocCardList';
 ## Маршрут обучения
 
 1. [История NoSQL](/encyclopedia/3-data-markup/3-06-nosql/1) — контекст и эволюция семейств СУБД.
-2. [Основы NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2) — модели данных, CAP, репликация, сравнение с SQL.
+2. [Основы NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2) — модели данных, CAP, репликация, сравнение с SQL. Leader-based кластеры — [выбор лидера](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/142.md).
 3. [Операторы в коде](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/33) (базис перед `$gt`, `$and` и условиями) → [функции в коде](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4) (вызов в программе; аналог в запросах — [функции в SQL](../3-07-sql/7)) → [Синтаксис запросов](/encyclopedia/3-data-markup/3-06-nosql/3) — JSON, mongosh, Redis, CQL, Cypher.
 4. Практика по системам (в главах есть примеры `redis-cli`, CQL, Cypher): [MongoDB](/encyclopedia/3-data-markup/3-06-nosql/4) (связи коллекций, GridFS, типы BSON), [Redis](/encyclopedia/3-data-markup/3-06-nosql/5) → [первые шаги](/encyclopedia/3-data-markup/3-06-nosql/511) → [справочник](/encyclopedia/3-data-markup/3-06-nosql/51), [Cassandra](/encyclopedia/3-data-markup/3-06-nosql/6), [графы](/encyclopedia/3-data-markup/3-06-nosql/7), [Memcached](/encyclopedia/3-data-markup/3-06-nosql/8).
 5. [NewSQL](/encyclopedia/3-data-markup/3-06-nosql/811) — SQL + ACID + горизонтальный OLTP (CockroachDB, Spanner).
@@ -49,7 +49,7 @@ import DocCardList from '@theme/DocCardList';
 | **Denormalization** | Дублирование данных в одном документе/таблице ради одного быстрого запроса. |
 | **Tombstone** | Маркер удаления в LSM-хранилищах (Cassandra); влияет на compaction. |
 | **Commit log** | Журнал записи на диск до memtable; обеспечивает durability (аналог WAL в других СУБД). |
-| **Memtable / SSTable** | RAM-буфер записи и неизменяемые файлы на диске после flush. |
+| **Memtable / SSTable** | RAM-буфер записи (часто skip list) и неизменяемые файлы на диске после flush; цепочка LSM — [восемь структур](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3.md#vosem-struktur-indeksa-i-hraneniya). |
 | **Wide-column store** | Модель Cassandra/Bigtable: partition key + clustering columns. |
 
 <DocCardList />

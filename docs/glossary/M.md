@@ -13,13 +13,19 @@ description: MAC Address (Media Access Control Address) — уникальный
 
 ## MAC Address
 
-MAC Address (Media Access Control Address) — уникальный аппаратный идентификатор сетевого интерфейса, присваиваемый производителем. Используется на канальном уровне (L2) модели OSI для доставки кадров внутри одного сегмента сети. Представлен в виде шестнадцатеричной строки (например, `00:1A:2B:3C:4D:5E`).
+MAC Address (Media Access Control Address) — 48-битный идентификатор сетевого интерфейса на канальном уровне (L2) модели OSI; доставка кадров Ethernet, Wi‑Fi и Bluetooth внутри одного сегмента LAN. Первые три октета (**OUI**) закреплены за производителем (реестр IEEE), последние три (**NIC**) назначает вендор каждому адаптеру. В первом октете биты **U/L** (заводской или локально заданный адрес) и **I/G** (unicast или multicast). Широковещание — `FF:FF:FF:FF:FF:FF`. Подробнее — [структура MAC-адреса](/encyclopedia/2-system-network/2-03-set-i-internet/1#mac-adres).
 
 ---
 
 ## Machine Learning
 
 Machine Learning (машинное обучение) — подраздел искусственного интеллекта, посвящённый разработке алгоритмов, способных обучаться на данных без явного программирования. Основные парадигмы: обучение с учителем (supervised), без учителя (unsupervised), с подкреплением (reinforcement learning).
+
+---
+
+## Multitask Learning
+
+Multitask Learning (мультизадачное обучение) — одна общая нейросеть обучается на нескольких связанных задачах одновременно; у каждой задачи своя выходная ветка, градиенты от всех задач обновляют общие слои. См. [Обучение на базе готовой модели](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/3).
 
 ---
 
@@ -133,13 +139,23 @@ Metroid — серия экшен-платформеров от Nintendo, зал
 
 ## Microservice
 
-Microservice (микросервис) — архитектурный стиль, при котором приложение строится как набор мелких, слабосвязанных, независимо развертываемых сервисов, каждый из которых отвечает за конкретную бизнес-функцию и взаимодействует через API (часто REST или gRPC).
+Microservice (микросервис) — архитектурный стиль, при котором приложение строится как набор мелких, слабосвязанных, независимо развертываемых сервисов, каждый из которых отвечает за конкретную бизнес-функцию и взаимодействует через API (часто REST или gRPC). Обзор инфраструктуры вокруг сервисов — [экосистема MSA](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#ekosistema-msa).
 
 ---
 
 ## Microsoft
 
 Microsoft — американская технологическая корпорация, основанная в 1975 году Биллом Гейтсом и Полом Алленом. Известна операционными системами Windows, офисным пакетом Microsoft Office, облачной платформой Azure, игровой консолью Xbox и разработкой языков (C#, TypeScript, F#).
+
+В рунете имя часто смешивают с Windows и «офисом на работе»; мемы про обновления и Teams — социальный фон, не спецификация ОС. Пересказ — [Windows](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/4#в-рунет-дискурсе), [.NET](/encyclopedia/5-languages/5-04-platforma-dotnet/11#в-рунет-дискурсе).
+
+---
+
+<span id="microsoft-store"></span>
+
+## Microsoft Store
+
+**Microsoft Store** — магазин приложений и игр в Windows (UWP, Xbox, часть обновлений). Удаление Store ломает игровые сервисы и обновления — см. [1.12 / 11](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11), [96](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96). [Неолурк: Microsoft Store](https://neolurk.org/wiki/Microsoft_Store).
 
 ---
 
@@ -206,6 +222,12 @@ Multi-Level Cell — NAND-память, хранящая 2 бита в ячей�
 ## MMO
 
 MMO (Massively Multiplayer Online) — жанр онлайн-игр с одновременным участием сотен или тысяч игроков в едином виртуальном мире. Поджанры: MMORPG (World of Warcraft), MMORTS, MMOFPS.
+
+---
+
+## MMORPG
+
+**MMORPG** (Massively Multiplayer Online Role-Playing Game) — ролевая игра в **постоянном** онлайн-мире: прокачка персонажа, квесты, инстансы и социальные группы (гильдии). Примеры — *World of Warcraft*, *Final Fantasy XIV*. В чатах рунета жанр ассоциируют с «фармом», рейдами и подписками. См. [жанры — маршрут](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/127), [MMO](/glossary/M#mmo). [Неолурк: MMORPG](https://neolurk.org/wiki/MMORPG).
 
 ---
 
@@ -321,7 +343,7 @@ MQTT — MQ Telemetry Transport, лёгкий протокол публикац�
 
 ## MSA
 
-MSA — Microservices Architecture, архитектура на основе микросервисов. Подход к проектированию ПО как набора небольших, независимо развёртываемых сервисов, организованных вокруг бизнес-возможностей.
+MSA — Microservices Architecture, архитектура на основе микросервисов. Подход к проектированию ПО как набора небольших, независимо развёртываемых сервисов, организованных вокруг бизнес-возможностей. Сводка слоёв (БД, брокеры, контейнеры, CI/CD, мониторинг) — [экосистема MSA](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#ekosistema-msa).
 
 ---
 

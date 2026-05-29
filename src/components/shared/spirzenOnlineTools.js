@@ -24,6 +24,14 @@ export const SPIRZEN_ONLINE_TOOLS = {
     tagline:
       'Архитектурные схемы программ: классы, связи, свойства; паттерны в пару кликов.',
   },
+  randomManager: {
+    id: 'randomManager',
+    name: 'Random Manager',
+    shortName: 'Random Manager',
+    href: 'https://spirzen.github.io/RandomManager/',
+    tagline:
+      'Каталог фильмов, игр и книг: фильтры, поиск и случайный выбор с анимацией «рулетки».',
+  },
 };
 
 export const SPIRZEN_ONLINE_TOOLS_LIST = Object.values(SPIRZEN_ONLINE_TOOLS);

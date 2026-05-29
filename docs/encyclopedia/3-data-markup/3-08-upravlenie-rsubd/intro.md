@@ -14,7 +14,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## С чего начать
 
-1. [Обзор администрирования РСУБД](./1.md) — роли DBA, жизненный цикл, WAL, сеть, типовые риски.
+1. [Обзор администрирования РСУБД](./1.md) — роли DBA, жизненный цикл, WAL, сеть, типовые риски; [семь стратегий масштабирования](./1.md#sem-strategij-masshtabirovaniya) и [девять рычагов производительности](./1.md#devyat-rychagov-proizvoditelnosti). Теоретический конспект (B⁺, LSM, 2PC, CDC) — [опорные темы](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12.md).
 2. [Администрирование БД в облаке](./3.md) — managed-сервисы, shared responsibility, бэкапы.
 3. [Справочник PostgreSQL](./2.md) — параметры, `pg_dump`, PITR.
 4. [PostgreSQL](./211.md) — установка, `initdb`, роли, бэкапы.

@@ -20,6 +20,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+Сквозная схема **bare metal → ВМ → контейнеры → контейнеры в облачных ВМ** — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) (базовая информатика и софт power user).
+
 Текущая часть не для каждого. Не каждому аналитику нужно знать контейнеризацию, не каждому разработчику надо углубляться в облачные технологии.
 
 ```mermaid

@@ -19,3 +19,5 @@ import DocCardList from '@theme/DocCardList';
 ## О разделе
 
 <DocCardList />
+
+Инфраструктурный контекст сдачи ПО (ВМ, контейнеры, облако) — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) и раздел [8. Инфраструктура и безопасность](/encyclopedia/8-infra-security/infra-security).

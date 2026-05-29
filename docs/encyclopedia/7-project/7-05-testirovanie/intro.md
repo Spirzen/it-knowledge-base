@@ -24,6 +24,8 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 
 Если вы только входите в профессию — не пытайтесь прочитать всё подряд. Ниже маршрут: сначала "что и зачем", потом "как проверять руками и в документах", затем инструменты и автоматизация.
 
+Код и тест-кейсы от LLM без review — типичный [нейрослоп](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2); вставка «как сгенерировало» — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1). QA остаётся обязательным фильтром перед продом.
+
 <TestingSectionHub />
 
 ---

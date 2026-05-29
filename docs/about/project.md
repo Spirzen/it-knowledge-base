@@ -142,6 +142,158 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+<span id="arhitektura-proekta"></span>
+
+## Как устроен проект технически
+
+«Вселенная IT» — это не только тысячи статей, но и **спроектированная программная система**: репозиторий с понятной структурой папок, сборка на Node.js, статическая публикация, автоматический деплой. На продакшене **нет серверного backend и базы данных** — читатель получает готовый HTML и JavaScript; вся подготовка контента и индексов происходит при `npm run build` и в CI.
+
+<div class="callout callout--info">
+  <div class="callout-title">Живой пример</div>
+
+  <div class="callout-body">
+  Схема ниже описывает тот же проект, из которого собран сайт <a href="https://spirzen.ru">spirzen.ru</a>. Её можно использовать в учебных главах про архитектуру, аналитику и DevOps как эталон as-is.
+</div>
+  </div>
+
+
+![Архитектура «Вселенная IT» — контекст, репозиторий, сборка, runtime в браузере и деплой](/img/it-universe-architecture.png)
+
+### Что показано на схеме
+
+| Зона | Содержание |
+| :--- | :--- |
+| Контекст (C4, уровень 1) | Автор, читатель, GitHub, локальная разработка, GitHub Actions, GitHub Pages, домен spirzen.ru |
+| Карта репозитория | `docs/`, `src/`, `static/`, `scripts/`, `docusaurus.config.js`, `sidebars.js`, каталог `info/` (служебно) |
+| Пайплайн сборки | `npm ci`, скрипты индексов и редиректов, `docusaurus build`, каталог `build/` |
+| Модель контента | Пути статей, sidebar, slug, legacy-редиректы |
+| Конфигурация Docusaurus | Плагины, тема, webpack, Mermaid |
+| Runtime в браузере | React, тема, клиентский поиск, интерактивные демо |
+| Рендер статьи | Цепочка MDX → remark → страница |
+| Слой демо | Компоненты в `src/components/`, чанк `demo-widgets`, [цепочка lazyDemo → DemoShell](/encyclopedia/5-languages/5-01-javascript/27#lazy-demo-mdx) |
+| Поиск и wiki-ссылки | `doc-search-index.json`, remark-плагин для `[[wiki]]` |
+| Деплой | Workflow `.github/workflows/deploy.yml`, ветка `gh-pages`, CNAME |
+
+<span id="it-universe-c4-mermaid"></span>
+
+### C4-контекст (Mermaid)
+
+```mermaid
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#e3f2fd','primaryTextColor':'#0d47a1','primaryBorderColor':'#1565c0','lineColor':'#546e7a','secondaryColor':'#f5f5f5','tertiaryColor':'#eceff1'}}}%%
+
+flowchart TD
+  classDef human fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+  classDef repo fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100
+  classDef ci fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1
+  classDef prod fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+  classDef external fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,stroke-dasharray:5 5
+
+  subgraph people ["Люди"]
+    direction TB
+    Author["Автор / редактор - Markdown в git"]:::human
+    Reader["Читатель - браузер"]:::human
+  end
+
+  subgraph dev ["Разработка"]
+    direction TB
+    Repo["([GitHub - spirzen/it-knowledge-base])"]:::repo
+    Local["Локально - npm start / build"]:::repo
+  end
+
+  subgraph ci ["CI/CD"]
+    direction TB
+    GHA["GitHub Actions - deploy.yml"]:::ci
+    GHPages["Ветка gh-pages - статический HTML"]:::ci
+  end
+
+  subgraph prod ["Продакшен"]
+    direction TB
+    CDN["GitHub Pages + CNAME - spirzen.ru"]:::prod
+    Site["https://spirzen.ru"]:::prod
+  end
+
+  subgraph external ["Внешние сервисы"]
+    direction TB
+    GH["GitHub API / Releases"]:::external
+    Yandex["Верификация - yandex_*.html"]:::external
+  end
+
+  Author -->|"push main"| Repo
+  Local -->|"PR / push"| Repo
+  Repo ==>|"trigger"| GHA
+  GHA -->|"npm ci + build"| GHPages
+  GHPages ==>|"deploy"| CDN
+  CDN -->|"publish"| Site
+  Reader -->|"HTTPS GET"| Site
+  Site -.->|"ссылки"| GH
+  Site -.->|"robots, метрики"| Yandex
+
+  linkStyle 4,5 stroke:#7b1fa2,stroke-width:3px
+  linkStyle 2 stroke:#1565c0,stroke-width:3px
+```
+
+<span id="it-universe-build-mermaid"></span>
+
+### Пайплайн сборки (Mermaid)
+
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#1565c0', 'lineColor': '#546e7a', 'secondaryColor': '#f5f5f5', 'tertiaryColor': '#eceff1'}}}%%
+
+flowchart TB
+  classDef io fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px,color:#283593
+  classDef script fill:#fff3e0,stroke:#f57c00,stroke-width:2px,color:#e65100
+  classDef core fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
+  classDef file fill:#e8f5e9,stroke:#388e3c,stroke-width:2px,color:#1b5e20,stroke-dasharray: 5 5
+
+  Start(["npm start / npm run build"]):::io
+
+  subgraph preStart ["Pre-Scripts (Start + Build)"]
+    direction TB
+    W["docs:wiki-links - build-wiki-link-index.mjs"]:::script
+    S["docs:search-index - build-doc-search-index.mjs"]:::script
+    R["docs:redirects - build-doc-redirects.mjs"]:::script
+  end
+
+  subgraph preBuildOnly ["Pre-Scripts (только Build)"]
+    direction TB
+    CT["docs:collection-titles - generate-collection-doc-titles.mjs"]:::script
+  end
+
+  subgraph docusaurus ["Docusaurus 3.10"]
+    direction TB
+    DC["@docusaurus/core"]:::core
+    Faster["@docusaurus/faster - v4 future, откл. на Win dev"]:::core
+    Preset["preset-classic - docs routeBasePath /"]:::core
+    MDX["MDX + remark wikiLink"]:::core
+    Webpack["Webpack / Rspack - demo-chunk-splitting"]:::core
+  end
+
+  Out(["build/ или dev server"]):::io
+
+  WikiOut[("wikiLinkIndex.json")]:::file
+  SearchOut[("doc-search-index.json")]:::file
+  RedirOut[("docLegacyRedirects.json")]:::file
+
+  Start --> W
+  W --> WikiOut
+  W --> S
+  S --> SearchOut
+  S --> R
+  R --> RedirOut
+
+  R --> CT
+  CT --> DC
+  R --> DC
+
+  DC --> Faster --> Preset --> MDX --> Webpack --> Out
+```
+
+Исходник диаграммы в репозитории — `info/it-universe-architecture.drawio` (редактор [diagrams.net](https://app.diagrams.net/) или расширение Draw.io в VS Code). PNG для сайта лежит в `static/img/`. Пересборка drawio-файла: `node scripts/generate-architecture-drawio.mjs`.
+
+Развёрнутое текстовое описание и дополнительные фрагменты Mermaid — в [`info/ARCHITECTURE.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ARCHITECTURE.md) на GitHub (каталог `info/` в публичную сборку сайта не входит). Якоря на этой странице: [C4-контекст](#it-universe-c4-mermaid), [пайплайн сборки](#it-universe-build-mermaid). Тот же материал разобран по темам энциклопедии — в статьях про [веб и SSG](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/114), [C4](/encyclopedia/7-project/7-04-analitika/126), [CI/CD](/encyclopedia/8-infra-security/8-04-devops-ci-cd/11) и [GitHub Actions](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2112).
+
+---
+
 ## Структура базы знаний
 
 Проект разработан на Docusaurus, и организован в **6 основных разделов**, и каждый из них имеет свои подразделы. Самый существенный для вас, наверное, это "Энциклопедия", поделённая на **9 подразделов**. Они условные и рассчитаны скорее на порядок и структурность ознакомления.

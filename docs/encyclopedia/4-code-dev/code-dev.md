@@ -29,7 +29,11 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел **«Код и разработка»** — мост между [программой как инструкциями для ПК](/encyclopedia/1-basics/1-19-programma/intro) и профессиональной инженерией: языками, фреймворками, архитектурой. Здесь разбирают, **как записывают** логику (синтаксис, операторы, стиль), **как она доходит до процессора** (компиляция, байт-код, JIT, память, потоки) и **как удерживают проект живым** (модули, зависимости, отладка, Git).
 
+ИИ в этом контуре — ускоритель черновика и объяснений; антипаттерны «код по наитию» и однотипный мусорный вывод — в [вайб-кодинге](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) и [нейрослопе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2). Рабочий цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117).
+
 Если в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) вы уже прошли алгоритмы и блок-схемы, этот том переводит те же идеи на язык разработчика — с большей глубиной и практикой.
+
+Где исполняется собранный код (bare metal, ВМ, контейнер, облачный worker) — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya); среда JVM/CLR — в [4.03 Выполнение кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 
 <DocCardList />
 
@@ -63,7 +67,7 @@ flowchart LR
 2. **Исходный текст** — синтаксическая единица языка: определения, операторы, комментарии ([синтаксис](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/3) проверяется компилятором или IDE).
 3. **Трансляция** — компиляция заранее, интерпретация по ходу или гибрид (байт-код + JIT, транспиляция). Подробно — [трансляторы, компиляторы и интерпретаторы](/encyclopedia/1-basics/1-19-programma/2).
 4. **Исполняемый образ** на диске загружает [программный загрузчик](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro) под управлением ОС.
-5. **Процесс** — программа в памяти: процессор выполняет инструкции одну за другой (или несколько потоков при [многозадачности](/encyclopedia/4-code-dev/4-05-asinhronnost/1)) до завершения или ошибки.
+5. **Процесс** — запущенный экземпляр программы в ОЗУ; процессор выполняет инструкции до завершения или ошибки. Внутри процесса работают **потоки** — наименьшие единицы выполнения при [многозадачности](/encyclopedia/4-code-dev/4-05-asinhronnost/1). Цепочка «файл на диске → процесс → потоки» — [программа, процесс и поток](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok).
 
 ### Уровни представления кода
 
@@ -104,7 +108,7 @@ flowchart LR
 | 4 | [4.07 Парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) | Стили мышления |
 | 5 | [4.04 Проект и фреймворки](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro) | Структура приложения |
 | 5a | [IDE и редакторы](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10) | Подсветка, IntelliSense, отладчик в одной среде |
-| 6 | [4.13 Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) | История изменений кода |
+| 6 | [4.13 Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [12 команд](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115#12-komand) | История изменений кода |
 | 6a | [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111) | Точки останова, символы, GDB |
 
 Дальше — специализации: [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro).

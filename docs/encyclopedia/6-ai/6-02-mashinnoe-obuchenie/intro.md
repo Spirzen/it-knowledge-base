@@ -3,6 +3,10 @@ title: Машинное обучение — о разделе
 description: "Подборка материалов раздела Машинное обучение в энциклопедии Вселенная IT."
 sidebar_label: Машинное обучение — о разделе
 related:
+  - title: "Кодирование категориальных признаков"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4
+  - title: "Обучение на базе готовой модели"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/3
   - title: "Введение в ИИ — о разделе"
     doc: encyclopedia/6-ai/6-01-vvedenie-v-ii/intro
   - title: "Нейросети — о разделе"

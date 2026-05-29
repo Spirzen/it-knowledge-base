@@ -32,7 +32,7 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 
 Этот раздел — академичный вход в базовый пласт цифровой грамотности. Главная цель — собрать в одной последовательности темы, которые обычно изучаются разрозненно — на уроках, в бытовой практике, в разных учебниках и в случайных видео.
 
-На практике именно разрозненность чаще всего и ломает понимание — путают интернет и веб, ОЗУ и долговременное хранение, алгоритм и программу. Поэтому здесь важна связка между темами — она удерживает факты в единой картине.
+На практике именно разрозненность чаще всего и ломает понимание — путают интернет и веб, ОЗУ и долговременное хранение, алгоритм и программу, файл на диске и процесс в памяти. Цепочка **программа → процесс → поток** — в [вводной статье раздела «Программа»](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok). Поэтому здесь важна связка между темами — она удерживает факты в единой картине.
 
 Этот курс строится по инженерному принципу "от моделей к действиям" — сначала формируется картина, как устроена система (данные, железо, ОС, сеть), затем — как человек в ней действует безопасно, юридически корректно и продуктивно. Такой подход нужен и школьнику, и взрослому новичку, потому что одинаково полезен для повседневных задач и для дальнейшего профессионального роста в IT.
 
@@ -52,10 +52,10 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 | № | Тема учебника | Глава курса | Подробнее в энциклопедии |
 |---|---------------|-------------|---------------------------|
 | 1 | Введение, зачем этот блок | [1](/encyclopedia/1-basics/1-035-bazovaya-informatika/1) | [Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) |
-| 2 | Кодирование, сжатие, архивы | [2](/encyclopedia/1-basics/1-035-bazovaya-informatika/2) | [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2) |
+| 2 | Кодирование, сжатие, архивы, обзор БД | [2](/encyclopedia/1-basics/1-035-bazovaya-informatika/2) | [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2), [типы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1#chetyre-osnovnyh-tipa-baz-dannyh) |
 | 3 | Железо, периферия, сети (компьютер, ЭВМ, устройства) | [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/1) |
 | 4 | Алгоритмы, языки, программирование | [4](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) | [Программа](/encyclopedia/1-basics/1-19-programma/intro), [Код и разработка](/encyclopedia/4-code-dev/code-dev), [Ассемблер](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Visual Basic](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
-| 5 | ОС, файловые системы, утилиты | [5](/encyclopedia/1-basics/1-035-bazovaya-informatika/5) | [ОС](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro) |
+| 5 | ОС, файловые системы, утилиты | [5](/encyclopedia/1-basics/1-035-bazovaya-informatika/5) | [ОС](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) |
 | 6 | Интернет и сервисы | [6](/encyclopedia/1-basics/1-035-bazovaya-informatika/6) | [Сеть](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [Поиск](/encyclopedia/1-basics/1-21-poisk-informatsii/intro), [Коммуникация](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro) |
 | 7 | Право и защита информации | [7](/encyclopedia/1-basics/1-035-bazovaya-informatika/7) | [Интеллектуальные права](/encyclopedia/7-project/7-07-intellektualnye-prava/intro) |
 | 8 | Организация рабочего места | [8](/encyclopedia/1-basics/1-035-bazovaya-informatika/8) | [Эргономика клавиатуры](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713) |

@@ -33,14 +33,14 @@ export const CANARY_STEPS = [1, 5, 25, 50, 100];
 export const ROLLING_POOL_SIZE = 6;
 
 export const PIPELINE_LIFECYCLE = [
-  {id: 'plan', icon: '📋', label: 'Планирование', ci: false, detail: 'User stories, архитектура, критерии приёмки. Jira, Azure Boards.'},
-  {id: 'dev', icon: '💻', label: 'Разработка', ci: false, detail: 'Feature-ветки, коммиты, локальный lint. Git — источник изменений.'},
-  {id: 'build', icon: '🔨', label: 'Сборка', ci: true, detail: 'Компиляция, артефакт, Docker-образ. Maven, Gradle, npm, MSBuild.'},
-  {id: 'test', icon: '🧪', label: 'Тестирование', ci: true, detail: 'Unit, integration, E2E, SAST. Блокировка merge при падении.'},
-  {id: 'release', icon: '📦', label: 'Релиз', ci: false, detail: 'Версионирование, changelog, теги, подпись артефактов.'},
-  {id: 'deploy', icon: '🚀', label: 'Развёртывание', cd: true, detail: 'Staging → production. Helm, Terraform, kubectl apply.'},
-  {id: 'manage', icon: '⚙️', label: 'Управление', cd: true, detail: 'Blue/Green, Canary, feature flags, approvals.'},
-  {id: 'monitor', icon: '📊', label: 'Мониторинг', cd: true, detail: 'Метрики, логи, алерты. Обратная связь в следующий цикл.'},
+  {id: 'plan', icon: '📋', label: 'Планирование', ci: false, detail: 'User stories, ADR, критерии приёмки. Jira, Confluence, Azure Boards.'},
+  {id: 'dev', icon: '💻', label: 'Разработка', ci: false, detail: 'Feature-ветки, PR, коммиты. GitHub, GitLab — триггер пайплайна.'},
+  {id: 'build', icon: '🔨', label: 'Сборка', ci: true, detail: 'Артефакт и Docker-образ в чистом runner. Gradle, Webpack, Bazel, MSBuild.'},
+  {id: 'test', icon: '🧪', label: 'Тестирование', ci: true, detail: 'JUnit, Jest, Playwright, SonarQube. Красный job блокирует merge.'},
+  {id: 'release', icon: '📦', label: 'Релиз', ci: false, detail: 'SemVer, тег, registry. Jenkins, GitHub Actions, Buildkite.'},
+  {id: 'deploy', icon: '🚀', label: 'Развёртывание', cd: true, detail: 'Docker push, Argo CD, Lambda, Pages. Staging → prod.'},
+  {id: 'manage', icon: '⚙️', label: 'Эксплуатация', cd: true, detail: 'Kubernetes, Terraform, rolling/canary, IaC desired state.'},
+  {id: 'monitor', icon: '📊', label: 'Мониторинг', cd: true, detail: 'Prometheus, Datadog, логи. Алерты → новые задачи в бэклог.'},
 ];
 
 export const CICD_VALIDATION_LAYERS = [

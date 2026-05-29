@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про практику разработки: от процесса и отладки до оформления репозитория. Для README и структуры проекта см. [README — полное руководство](./117). Чтобы вынести пет-проект в интернет бесплатно — [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3); идеи проектов — [Пет-проекты](./114).
 
+Код из ИИ без review — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл «промпт → проверка → merge» — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117).
+
 <DocCardList />
 
 {/* sidebar-collections */}

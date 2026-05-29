@@ -33,9 +33,13 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-body">
   <ol>
     <li><a href="./1">Основы информационной безопасности</a> — триада CIA, политики, угрозы</li>
-    <li><a href="./114">Устройство и надёжность паролей</a> — хеши, соль, менеджеры паролей</li>
-    <li><a href="./111">Аутентификация и авторизация</a> — OAuth, JWT, SSO (интерактивная схема)</li>
-    <li><a href="./115">Фаерволы</a> и <a href="./116">Шифрование и SSH</a></li>
+    <li><a href="./114">Устройство и надёжность паролей</a> — хеши, соль, <a href="./114#asymmetric-crypto">открытый и закрытый ключ</a>, менеджеры паролей, <a href="./114#tipy-atak-na-paroli">типы атак на пароли</a></li>
+    <li><a href="./111">Аутентификация и авторизация</a> — cookie, session, JWT, PASETO, SSO и OAuth; <a href="./111#jwt-i-api-keys">JWT и API-ключи</a>; <a href="./111#bezopasnyy-potok-vhoda">безопасный поток login → refresh → logout</a></li>
+    <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132">12 советов по безопасности API</a> — HTTPS, rate limiting, gateway, OWASP (раздел интеграций)</li>
+    <li><a href="./118">JWT — семь строк, которые обходят авторизацию</a> — <code>alg: none</code>, подмена RS256 на HS256, безопасный <code>jwt.verify</code></li>
+    <li><a href="./119">Смена пароля — пропущенный шаг re-auth</a> — захват аккаунта при украденной сессии и CSRF</li>
+    <li><a href="./120">Админка по ?isAdmin=true</a> — Broken Access Control и права с клиента</li>
+    <li><a href="./115">Фаерволы</a>, <a href="./117">DDoS и отказ в обслуживании</a> и <a href="./116">Шифрование и SSH</a> — <a href="./116#asymmetric-keys">пара ключей</a>, TLS, подпись, затем протокол SSH</li>
     <li><a href="./113">Риски открытых Wi‑Fi</a></li>
     <li><a href="./112">Антивирус и лечение</a> — по желанию; хвост статьи помечен как углубление</li>
     <li><a href="./2">Итоги</a> и <a href="./3">Чек-лист самопроверки</a></li>

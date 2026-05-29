@@ -3,6 +3,8 @@ title: Применение ИИ — о разделе
 description: "Подборка материалов раздела Применение ИИ в энциклопедии Вселенная IT."
 sidebar_label: Применение ИИ — о разделе
 related:
+  - title: "Монетизация цифровых продуктов с ИИ"
+    doc: encyclopedia/6-ai/6-06-primenenie-ii/5
   - title: "Разработка ИИ — о разделе"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/intro
   - title: "Векторные базы данных"
@@ -29,7 +31,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
-**Нейросети и ИИ** — [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Графовые базы данных](/encyclopedia/3-data-markup/3-06-nosql/7), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro).
+**Нейросети и ИИ** — [Вайб-кодинг и нейроконтент — о разделе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Графовые базы данных](/encyclopedia/3-data-markup/3-06-nosql/7), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro).
 
 {/* /sidebar-collections */}
 

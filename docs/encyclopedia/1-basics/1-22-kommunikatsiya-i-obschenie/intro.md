@@ -34,12 +34,14 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 |-------|------|---------------------------|
 | [1](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/1) | Цифровая коммуникация: тон, каналы, конфликты в переписке | все, особенно новички |
 | [2](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/2) | Мессенджеры: протоколы, архитектура, боты, командные нормы | разработчики, тимлиды |
-| [3](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3) | Электронная почта: SMTP, IMAP, SPF/DKIM, доставка | инженеры, админы |
+| [3](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3) | Электронная почта: путь письма (MUA→MTA→MX), SMTP / IMAP / POP3, SPF/DKIM | инженеры, админы |
 | [4](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/4) | Встречи и звонки: модерация, протоколы, деэскалация | все в распределённых командах |
 | [5](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5) | Иерархия, субординация, переписка "вверх/вниз" | исполнители, PM, лиды |
 | [6](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6) | Формы и анкеты: HTML, валидация, 152-ФЗ | разработчики, аналитики |
+| [7](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/7) | CAPSLOCK, T9, форумный и dev-сленг в чате | все, особенно новички |
+| [8](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/8) | Как задать вопрос на форуме и в сообществе | новички, после [1.21](/encyclopedia/1-basics/1-21-poisk-informatsii/intro) |
 
-[98](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/98) — краткие итоги; [99](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/99) — чек-лист самопроверки.
+[98](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/98) — краткие итоги; [99](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/99) — чек-лист самопроверки. Контекст рунета — [Форумная культура](/encyclopedia/9-spinoff/9-10-internet-kultura/120).
 
 ---
 

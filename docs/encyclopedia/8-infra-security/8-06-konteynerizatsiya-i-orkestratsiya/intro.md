@@ -25,12 +25,18 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Контейнеры — **третья** модель в цепочке развёртывания (после bare metal и ВМ); в облаке их часто запускают **внутри ВМ** — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya). В **микросервисной** архитектуре один сервис обычно упаковывают в свой образ (Docker, Podman), а реплики координирует оркестратор (Kubernetes, OpenShift, ECS) — см. [экосистему MSA](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#ekosistema-msa) и [контейнеры в микросервисах](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117#контейнеры-в-микросервисах).
+
 Опасные флаги `docker run` (`-v /`, `--privileged`, socket) — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
 
 Маршрут по **Kubernetes** в разделе:
 
 | Цель | Статья |
 |------|--------|
+| Как устроены клиент, демон, образы и реестр | [Docker](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111#kak-ustroen-docker) |
+| 18 команд Docker с пояснениями | [Универсальная шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-18-komand) |
+| 9 практик Dockerfile | [Универсальная шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-9-praktik) |
+| Справочник CLI, Dockerfile, Compose | [Справочник по Docker](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2) |
 | Архитектура, Swarm, Helm, Kustomize | [Docker Swarm и Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117) |
 | Практика (Docker Desktop, kubectl) | [Первые шаги](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1172) |
 | Прод-стек, Helm, HPA, Ingress | [Реализация Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1171) |

@@ -30,9 +30,14 @@ import DocCardList from '@theme/DocCardList';
 2. [История ИИ](/encyclopedia/6-ai/6-01-vvedenie-v-ii/11) и [классификация моделей](/encyclopedia/6-ai/6-01-vvedenie-v-ii/112).
 3. [Машинное обучение](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1) — типы обучения, датасеты, метрики, sklearn и фреймворки.
 4. [Нейрон](/encyclopedia/6-ai/6-03-neyroseti/1) — веса, слои; затем [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2) — первое обучение в коде.
-5. [Большие языковые модели](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1) — LLM, токены, инференс, агенты.
-6. [Разработка ИИ-решений](/encyclopedia/6-ai/6-05-razrabotka-ii/1) — API, RAG, галлюцинации, развёртывание.
-7. [Применение в бизнесе](/encyclopedia/6-ai/6-06-primenenie-ii/1) — критерии зрелости продукта и риски.
+5. [Большие языковые модели](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1) — LLM, цепочка «текст → токены → эмбеддинги», инференс; затем [RAG, MCP и агенты — три слоя](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/121), [типы интеллектуальных агентов](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/120), [агенты ИИ](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/116) и [MCP-серверы](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/114) (связь с [классическим API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117)).
+6. [Генерация кода — ChatGPT, Gemini, DeepSeek](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) — практика для разработчика.
+7. [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) и [нейрослоп](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2) — риски «кода по наитию» и однотипного ИИ-вывода.
+8. [Цифровые инструменты без ручного кодинга](/encyclopedia/6-ai/6-05-razrabotka-ii/117) — конструкторы, агенты, деплой.
+9. [Семь слоёв LLM-стека](/encyclopedia/6-ai/6-05-razrabotka-ii/119) — каркас от данных до продукта.
+10. [Разработка ИИ-решений](/encyclopedia/6-ai/6-05-razrabotka-ii/1) — API, RAG, галлюцинации, развёртывание.
+11. [Применение в бизнесе](/encyclopedia/6-ai/6-06-primenenie-ii/1) — критерии зрелости продукта и риски.
+12. [Монетизация цифровых продуктов с ИИ](/encyclopedia/6-ai/6-06-primenenie-ii/5) — модели дохода для автора и фрилансера.
 
 Статья [Контекст](/encyclopedia/6-ai/6-01-vvedenie-v-ii/113) — углубление в промпты, эмбеддинги и контекстное окно; её удобно читать после базового введения в LLM.
 

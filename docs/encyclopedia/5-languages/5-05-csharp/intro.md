@@ -72,6 +72,7 @@ import DocCardList from '@theme/DocCardList';
 - [Справочник языка C# (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/472) — полный каталог language reference (869 разделов).
 - [Версии C# и .NET — справочная таблица](./48.md) — шпаргалка по версиям и поддержке.
 - [Справочник .NET API (BCL)](/encyclopedia/5-languages/5-05-csharp/473) — пространства имён .NET 10 и .NET Framework 4.8 / 4.8.1.
+- [Guid в C# — шпаргалка](/encyclopedia/5-languages/5-05-csharp/493) — `NewGuid`, `Parse`/`TryParse`, форматы строки, `Empty`, сравнение.
 - [Асинхронность и многопоточность](/encyclopedia/5-languages/5-05-csharp/39), [Task и async/await](/encyclopedia/5-languages/5-05-csharp/392), [класс `Thread`](/encyclopedia/5-languages/5-05-csharp/391), [сеть и HTTP](/encyclopedia/5-languages/5-05-csharp/42), [производительность](/encyclopedia/5-languages/5-05-csharp/41).
 
 ---

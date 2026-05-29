@@ -21,6 +21,8 @@ related:
     doc: encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro
   - title: "Аутентификация и авторизация"
     doc: encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111
+  - title: "MCP-серверы"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/114
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -32,10 +34,13 @@ import DocCardList from '@theme/DocCardList';
 **Рекомендуемый порядок чтения:**
 
 1. [Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1) — термины, контракт, зачем всё это.
-2. [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) и [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) — основа веб-интеграций.
+2. [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) (структура HTTP-запроса, [SDK](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#sdk), [обзор дизайна REST API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-design-overview), [восемь принципов RESTful API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-api-design-principles), [пагинация — шесть схем](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/131)) и [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) — основа веб-интеграций; карта стека — [HTTP-экосистема](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem) (версии, TLS, DNS, CDN, WAF, gRPC). Обзор **восьми архитектурных стилей API** (SOAP, REST, GraphQL, gRPC, WebSocket, webhook, MQTT, AMQP) — [карта стилей](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/130#eight-api-styles); сравнение **REST, GraphQL и gRPC** на одном сценарии — [стили API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/130). Для **ИИ-агентов и IDE** поверх тех же источников — [MCP и классический API](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/114#mcp-i-api). Идемпотентность методов, retry и `Idempotency-Key` — [методы и ключ идемпотентности](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/213).
 3. [Проектирование API и интеграций](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117) — три сквозных примера (B2B REST, OAuth/webhooks, mTLS/JWS/AsyncAPI/outbox) и маршрут по главам.
-4. [Postman и curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) — ручная проверка запросов.
-5. [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), [RabbitMQ](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122), [Kafka](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123), [Redis в интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129) — когда HTTP «здесь и сейчас» недостаточно.
+4. [Авторизация в интеграционных сценариях](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1121) — [JWT и API-ключи](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1121#tokens-i-api-keys), OAuth M2M, mTLS.
+5. [12 советов по безопасности API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132) — HTTPS, rate limiting, gateway, OWASP и чек-лист для ревью; углубление — [атаки на API](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/128).
+6. [Postman и curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) — ручная проверка запросов; таблица методов и связь с retry — в той же главе.
+7. [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), [RabbitMQ](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122), [Kafka](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123), [Redis в интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129) — когда HTTP «здесь и сейчас» недостаточно.
+8. [12 концепций распределённой архитектуры](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/141) — очереди, pub/sub, API Gateway, circuit breaker в одной таблице.
 
 ---
 
@@ -47,7 +52,7 @@ import DocCardList from '@theme/DocCardList';
 | --- | --- |
 | [Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1) | [Коммуникация и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113) |
 | [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111) | [Синхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115), [асинхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114) и [реактивная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) коммуникация |
-| [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) | [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [проектирование API](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122) |
+| [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117), [пагинация](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/131), [REST / GraphQL / gRPC](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/130), [безопасность API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132) | [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [проектирование API](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122), [атаки на API](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/128) |
 | [Брокеры сообщений](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) | [Брокеры сообщений](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117) |
 | [RabbitMQ](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122) | [RabbitMQ](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118), [справочник](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1204) |
 | [Apache Kafka](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123) | [Kafka](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119), [справочник](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1205) |

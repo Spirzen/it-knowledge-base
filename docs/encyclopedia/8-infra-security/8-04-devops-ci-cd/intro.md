@@ -19,21 +19,24 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про **путь кода от коммита до продакшена**: отдельные среды (dev, test/stage, prod), автоматическая сборка и тесты (CI), выкладка (CD), инфраструктура как код и обратная связь через логи и метрики. Материалы полезны разработчикам, инженерам эксплуатации и тем, кто готовится к роли DevOps.
+Раздел про **путь кода от коммита до продакшена**: отдельные среды (dev, test/stage, prod), автоматическая сборка и тесты (CI), выкладка (CD), инфраструктура как код и обратная связь через логи и метрики. В **микросервисах** у каждого сервиса свой пайплайн (GitHub Actions, Jenkins, GitLab CI, TeamCity, CircleCI), а наблюдаемость строят на Prometheus, Grafana и централизованных логах — [экосистема MSA](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#ekosistema-msa). Материалы полезны разработчикам, инженерам эксплуатации и тем, кто готовится к роли DevOps. CI отсекает часть [нейрослопа](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2) из ветки с [вайб-кодингом](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) — пайплайн без тестов и lint не компенсирует слепой merge.
 
-> **Смежная база:** [Терминал](/encyclopedia/2-system-network/2-05-terminal/intro) · [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) · [Системное администрирование](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro) · [Контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro) · [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro)
+> **Смежная база:** [Четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) · [Терминал](/encyclopedia/2-system-network/2-05-terminal/intro) · [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) · [Системное администрирование](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro) · [Контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro) · [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro)
 
 ---
 
 ## Рекомендуемый порядок
 
 1. **[Основы DevOps](./1.md)** — тест vs прод, зачем CI/CD, типичные ошибки при выкате.
-2. **[Git и ветки](./2.md)** · **[GitHub Actions / GitLab CI](./3.md)** — как запускается пайплайн.
-3. **Инфраструктура как код** — статьи блока `21x` (Terraform, Ansible и смежные темы по оглавлению).
-4. **[Мониторинг и логи](./11.md)** · **[Надёжность под нагрузкой](/encyclopedia/7-project/7-05-testirovanie/1014)** — наблюдаемость после релиза.
-5. **Итоги** [998](./998.md) и **чек-лист** [999](./999.md).
+2. **[CI/CD — принципы](./11.md)** · **[Жизненный цикл пайплайна](./14.md)** — карта этапов (план → код → сборка → тесты → релиз → деплой → мониторинг) и типичные инструменты (Jira, GitHub, Gradle, Playwright, Kubernetes, Prometheus).
+3. **[Git и ветки](./12.md)** · **[GitHub Actions / GitLab CI](./3.md)** — триггеры и конфигурация job.
+4. **Инфраструктура как код** — статьи блока `21x` (Terraform, Ansible и смежные темы по оглавлению).
+5. **[Логирование и мониторинг](./19.md)** · **[Надёжность под нагрузкой](/encyclopedia/7-project/7-05-testirovanie/1014)** — наблюдаемость после релиза.
+6. **Итоги** [998](./998.md) и **чек-лист** [999](./999.md).
 
 Если вы только пишете код в IDE и никогда не видели staging — начните с [основ](./1.md): без этого остальные главы про Jenkins, Kubernetes и Terraform воспринимаются как "чужой мир".
+
+Культурный мост по терминам GitHub и DevOps в рунете — [9.10 / 133](/encyclopedia/9-spinoff/9-10-internet-kultura/133).
 
 Развёрнутый пример CI/CD на **GitHub Pages** (`.github/workflows/deploy.yml`, ручной и автоматический запуск) — лабораторный кейс [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3).
 

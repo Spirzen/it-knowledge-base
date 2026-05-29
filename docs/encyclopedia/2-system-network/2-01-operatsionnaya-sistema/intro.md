@@ -28,6 +28,8 @@ import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 
 Раздел объясняет, **как операционная система управляет железом** для множества программ: процессор, память, диски, сеть, права доступа. Материалы подходят и новичкам, и тем, кто готовит базу по курсу "Операционные системы".
 
+Как одна ОС на сервере соседствует с **ВМ и контейнерами** — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya).
+
 <OsPlatformsHub />
 
 ---

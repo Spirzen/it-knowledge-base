@@ -183,13 +183,15 @@ HTML (HyperText Markup Language) — стандартный язык разме�
 
 ## HTTP
 
-HTTP (HyperText Transfer Protocol) — прикладной протокол передачи гипертекста, лежащий в основе обмена данными в вебе. Работает поверх TCP, использует методы (GET, POST и др.) и статус-коды (200, 404, 500). Не является защищённым — данные передаются в открытом виде.
+HTTP (HyperText Transfer Protocol) — прикладной протокол передачи гипертекста, лежащий в основе обмена данными в вебе. Работает поверх TCP, использует методы (`GET`, `POST`, `PUT`, `PATCH`, `DELETE` и др.) и статус-коды (200, 404, 500). Не является защищённым — данные передаются в открытом виде. Примеры HTTP-методов — [2.09 / 118](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-methods-practical); шпаргалка по кодам ответа — [2.03 / 611](/encyclopedia/2-system-network/2-03-set-i-internet/611#status-codes-cheatsheet).
 
 ---
 
 ## HTTPS
 
 HTTPS (HTTP Secure) — расширение HTTP, обеспечивающее шифрование трафика с помощью TLS/SSL. Гарантирует конфиденциальность, целостность и аутентификацию сервера. Стандарт де-факто для современных веб-сайтов.
+
+Учебный разбор для пользователя и разработчика — [2.04 / 128](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/128); протокол HTTP — [2.09 / 118](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118). [Неолурк: HTTPS](https://neolurk.org/wiki/HTTPS).
 
 ---
 

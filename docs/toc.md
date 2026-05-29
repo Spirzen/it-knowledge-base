@@ -1320,6 +1320,7 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/423">3.11. Потоковая аналитика в реальном времени</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/424">3.11. Python для анализа данных</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/425">3.11. ETL-ELT и оркестрация</a></li>
+      <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/426">3.11. Табличные данные — Pandas, Polars, SQL и PySpark</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/998">3.11. Итоги</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/999">3.11. Чек-лист самопроверки</a></li>
     </ul>
@@ -1673,6 +1674,7 @@ import DocCardList from '@theme/DocCardList';
   <li>
     <ul>
       <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/1">4.15. Автоматическое управление памятью</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/4">4.15. Java, Python и Go — три модели GC</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/2">4.15. Итоги</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/3">4.15. Чек-лист самопроверки</a></li>
     </ul>

@@ -3,6 +3,12 @@ title: Разработка ИИ — о разделе
 description: "Подборка материалов раздела Разработка ИИ в энциклопедии Вселенная IT."
 sidebar_label: Разработка ИИ — о разделе
 related:
+  - title: "Семь слоёв LLM-стека"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/119
+  - title: "Обучение на базе готовой модели"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/3
+  - title: "Цифровые инструменты без ручного кодинга"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/117
   - title: "Модели и инструменты — о разделе"
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro
   - title: "Применение ИИ — о разделе"
