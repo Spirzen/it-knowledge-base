@@ -34,6 +34,7 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
 | 1 | [Первая программа](./122.md) | Запуск и синтаксис |
+| 2 | [Практическая автоматизация — модель](./124.md) | Цель, триггеры, окупаемость — до больших скриптов |
 | — | [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) | `Remove-Item`, ExecutionPolicy, команды от ИИ-агента |
 
 ---
@@ -84,7 +85,29 @@ import DocCardList from '@theme/DocCardList';
 4. [Ключевые слова](/encyclopedia/5-languages/5-26-powershell/114) (шпаргалка + ссылки), [условия и циклы](/encyclopedia/5-languages/5-26-powershell/117) (углублённо).
 5. [Обработка ошибок](/encyclopedia/5-languages/5-26-powershell/12) — terminating/non-terminating, `$ErrorActionPreference`.
 6. [Рекомендации по скриптам](/encyclopedia/5-languages/5-26-powershell/111), [первая программа](/encyclopedia/5-languages/5-26-powershell/122).
-7. [Справочник](/encyclopedia/5-languages/5-26-powershell/123) — таблицы команд и операторов.
+7. [Практическая автоматизация — модель и окупаемость](/encyclopedia/5-languages/5-26-powershell/124) — цель, триггеры, действия, обслуживание; когда скрипт окупается.
+8. [Стандартные блоки и модули](/encyclopedia/5-languages/5-26-powershell/125) — функции, `.psm1`, переиспользование.
+9. [Триггеры — расписание и наблюдатели](/encyclopedia/5-languages/5-26-powershell/126) — планировщик, cron, watcher.
+10. [Секреты и безопасная автоматизация](/encyclopedia/5-languages/5-26-powershell/127) — SecretManagement, УЗ службы, least privilege.
+11. [Конфигурация и адаптивные скрипты](/encyclopedia/5-languages/5-26-powershell/128) — JSON, data-driven, идемпотентность.
+12. [Справочник](/encyclopedia/5-languages/5-26-powershell/123) — таблицы команд и операторов.
+
+---
+
+## Практическая автоматизация (продакшен)
+
+После синтаксиса — инженерный слой: проектирование системы, которую можно сопровождать годами.
+
+| Шаг | Материал |
+|-----|----------|
+| 1 | [124 — модель и ROI](/encyclopedia/5-languages/5-26-powershell/124) |
+| 2 | [125 — блоки и модули](/encyclopedia/5-languages/5-26-powershell/125) |
+| 3 | [126 — триггеры](/encyclopedia/5-languages/5-26-powershell/126) |
+| 4 | [2.05/112 — скрипты в Windows](/encyclopedia/2-system-network/2-05-terminal/112) (планировщик, remoting) |
+| 5 | [127 — секреты](/encyclopedia/5-languages/5-26-powershell/127) |
+| 6 | [128 — конфигурация](/encyclopedia/5-languages/5-26-powershell/128) |
+| 7 | [111 — рекомендации по скриптам](/encyclopedia/5-languages/5-26-powershell/111) |
+| 8 | [11 — экосистема, Azure Automation](/encyclopedia/5-languages/5-26-powershell/11) |
 
 ---
 

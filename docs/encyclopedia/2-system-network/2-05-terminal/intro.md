@@ -39,11 +39,15 @@ import DocCardList from '@theme/DocCardList';
 
 **Маршрут Windows:** [справочник команд](/encyclopedia/2-system-network/2-05-terminal/102) → [bat-сценарии](/encyclopedia/2-system-network/2-05-terminal/103) → [PowerShell](/encyclopedia/2-system-network/2-05-terminal/112).
 
+**Продакшен-автоматизация (Windows):** [124](/encyclopedia/5-languages/5-26-powershell/124) → [125](/encyclopedia/5-languages/5-26-powershell/125) → [126](/encyclopedia/5-languages/5-26-powershell/126) → [127](/encyclopedia/5-languages/5-26-powershell/127) → [128](/encyclopedia/5-languages/5-26-powershell/128) → [112](/encyclopedia/2-system-network/2-05-terminal/112) → [111](/encyclopedia/5-languages/5-26-powershell/111).
+
 **Маршрут Linux / macOS:** [справочник и напоминалка команд](/encyclopedia/2-system-network/2-05-terminal/101#napominalka) (включая [дерево каталогов FHS](/encyclopedia/2-system-network/2-05-terminal/101#fhs-katalogi)) → [скрипты Unix](/encyclopedia/2-system-network/2-05-terminal/111).
 
 **Удалённый сервер и сборка:** [PuTTY и SSH](/encyclopedia/2-system-network/2-05-terminal/1131) · [утилита make](/encyclopedia/2-system-network/2-05-terminal/1132) (оркестрация команд по Makefile, не замена shell).
 
-Справочники **101** и **102** удобнее открывать по задаче, а не читать подряд. Итоги раздела — [статья 2](/encyclopedia/2-system-network/2-05-terminal/2), самопроверка — [чек-лист](/encyclopedia/2-system-network/2-05-terminal/3).
+**Мастер-таблица CLI:** [справочник утилит и исполняемых файлов](/encyclopedia/2-system-network/2-05-terminal/114) — **500+** команд по всему стеку (оболочки, языки, DevOps, СУБД, облака, ИИ, пакетные менеджеры).
+
+Справочники **101**, **102** и **114** удобнее открывать по задаче, а не читать подряд. Итоги раздела — [статья 2](/encyclopedia/2-system-network/2-05-terminal/2), самопроверка — [чек-лист](/encyclopedia/2-system-network/2-05-terminal/3).
 
 ---
 

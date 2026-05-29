@@ -75,7 +75,8 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 1 | [Основы JavaScript](./1.md) | среда выполнения, Web API, Event Loop |
 | 2 | [Асинхронное программирование](./21.md) | Promise, `async/await`, `fetch`, очереди задач |
 | 3 | [Работа с HTML](./102.md) + [События](./23.md) | доступ к DOM, `addEventListener`, реакция на действия пользователя |
-| 4 | [BOM](./41.md) | `window`, `location`, `history`, `navigator` |
+| 3a | [Canvas 2D](./47.md) | программируемая графика на `<canvas>` |
+| 4 | [BOM](./41.md) | `window`, `location`, `history`, `navigator`, geolocation |
 | 5 | [Практика](./32.md) | рабочие сниппеты: URL-параметры, `fetch`, буфер обмена |
 | 6 | [Web Share API](./44.md) | системное окно «Поделиться» через `navigator.share` |
 | 7 | [Notification API](./46.md) | разрешения и нативные уведомления браузера |
@@ -93,6 +94,25 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 ---
 
+### Маршрут по TypeScript
+
+Пошаговое углубление в [статью TypeScript](./30.md):
+
+| Шаг | Тема | Раздел |
+|-----|------|--------|
+| 1 | Зачем TS, типы и значения | [§ Типы и значения](./30.md#типы-и-значения) |
+| 2 | Компилятор, `tsconfig`, strict | [§ Компилятор](./30.md#компилятор-typescript), [справочник §11](./301.md#11-конфигурация-typescript-tsconfigjson) |
+| 3 | Функции, полиморфизм, type-driven | [§ Разработка на основе типов](./30.md#разработка-на-основе-типов) |
+| 4 | Классы, примеси, паттерны | [§ Примеси и паттерны](./30.md#примеси-и-паттерны) |
+| 5 | Продвинутые типы, тотальность | [§ Продвинутые типы](./30.md#продвинутые-типы) |
+| 6 | Ошибки — Option, Result | [§ Обработка ошибок](./30.md#обработка-ошибок) |
+| 7 | Promise, Worker | [§ Асинхронность с типами](./30.md#асинхронность-с-типами), [21.md](./21.md) |
+| 8 | Миграция JS-проекта | [§ Поэтапная миграция](./30.md#поэтапная-миграция) |
+| 9 | Monorepo, NPM | [§ Monorepo и публикация](./30.md#monorepo-и-публикация) |
+| 10 | Шпаргалка | [Справочник TypeScript](./301.md) |
+
+---
+
 ### С чего начать
 
 | Шаг | Материал | Зачем |
@@ -100,13 +120,29 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 1 | [Основы JavaScript](./1.md) | Синтаксис, браузер |
 | 1a | [Типы данных](./18.md) | Примитивы, [методы строк](./18.md#методы-строк) (`charAt`, `includes`, `slice`, …) |
 | 1b | [TypeScript](./30.md) | Типизация и масштабирование больших проектов |
-| 2 | [Node API](./262.md) → [Express](./263.md) | Серверный JS |
+| 2 | [Первая программа на Node.js](./262.md) → [Express](./263.md) | Консоль, npm, `http`, REST API |
 | 3 | [React](./272.md) · [Vue](./282.md) · [Next](./2731.md) | UI |
 | 3b | [Fullstack](./264.md) | API + фронт, CORS |
 | 4 | [Angular](./292.md) | Крупные SPA (по желанию) |
 | 5 | [Electron + React](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118) | Десктоп |
 
 В конце раздела — [чек-лист самопроверки](./999.md).
+
+<div class="callout callout--tip">
+  <div class="callout-title">Маршрут: от Node до fullstack</div>
+
+  <div class="callout-body">
+  Последовательность «сервер → браузер → сборка»: <a href="./262.md">262</a> (Node до Express) → <a href="./18.md">типы и Date</a> → <a href="./21.md">async и fetch</a> → <a href="./102.md">DOM</a> → <a href="./47.md">Canvas</a> → <a href="./25.md#сборка-для-браузера--webpack-и-vite">Webpack / Vite</a> → <a href="./263.md">Express</a> → <a href="./264.md">Fullstack</a>.
+</div>
+</div>
+
+<div class="callout callout--info">
+  <div class="callout-title">Инструменты для старта</div>
+
+  <div class="callout-body">
+  <strong>VS Code</strong>, встроенный терминал, <strong>Live Server</strong> и <strong>Emmet</strong> для HTML/CSS — в разделе <a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111">отладка в браузере</a> и <a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10">IDE и редакторы</a>. Разметка — <a href="/encyclopedia/3-data-markup/3-09-html/intro">HTML</a>, стили — <a href="/encyclopedia/3-data-markup/3-10-css/intro">CSS</a>.
+</div>
+</div>
 
 ---
 

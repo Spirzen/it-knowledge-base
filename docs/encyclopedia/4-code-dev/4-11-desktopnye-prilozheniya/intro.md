@@ -32,7 +32,7 @@ import DocCardList from '@theme/DocCardList';
 |-----|----------|
 | 1 | [Архитектура десктопных приложений](./1.md) — GUI, WIMP, окно, UI-поток, события |
 | 2 | [Особенности разработки](./112.md) — многопоточность, ресурсы |
-| 3 | Стек по языку | Python: [Tkinter](/encyclopedia/5-languages/5-02-python/3111) · C#: [WPF с нуля](./119.md) · [MAUI](/encyclopedia/5-languages/5-05-csharp/4513) · C++: [Qt](/encyclopedia/5-languages/5-06-cpp/2731) · JS: [Electron](./114.md) |
+| 3 | Стек по языку | Python: [Tkinter — теория](/encyclopedia/5-languages/5-02-python/311) · [первая программа](/encyclopedia/5-languages/5-02-python/3111) · [элементы UI](/encyclopedia/5-languages/5-02-python/3112) · C#: [WPF с нуля](./119.md) · [элементы WPF](./1192.md) · [WinForms](./115.md) · [элементы WinForms](./1152.md) · Java: [JavaFX — теория](/encyclopedia/5-languages/5-03-java/311) · [первая программа](/encyclopedia/5-languages/5-03-java/3111) · [элементы UI](/encyclopedia/5-languages/5-03-java/3112) · [MAUI](/encyclopedia/5-languages/5-05-csharp/4513) · C++: [Qt](/encyclopedia/5-languages/5-06-cpp/2731) · JS: [Electron](./114.md) |
 
 ---
 

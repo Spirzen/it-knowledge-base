@@ -28,13 +28,14 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
 </div>
 
-Это **учебный курс "Базовая информатика"** — **маршрут** по темам энциклопедии — что читать, в каком порядке и где углублаться. Подробные статьи уже есть в энциклопедии ([компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [данные](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [программы](/encyclopedia/1-basics/1-19-programma/intro), [сеть](/encyclopedia/2-system-network/2-03-set-i-internet/intro)); здесь они собраны в логику школьного и начального курса.
+**Учебный маршрут** по школьной и начальной информатике — что читать, в каком порядке и где углубляться. Подробные статьи уже есть в энциклопедии; здесь они собраны в одну последовательность.
 
-Этот раздел — академичный вход в базовый пласт цифровой грамотности. Главная цель — собрать в одной последовательности темы, которые обычно изучаются разрозненно — на уроках, в бытовой практике, в разных учебниках и в случайных видео.
-
-На практике именно разрозненность чаще всего и ломает понимание — путают интернет и веб, ОЗУ и долговременное хранение, алгоритм и программу, файл на диске и процесс в памяти. Цепочка **программа → процесс → поток** — в [вводной статье раздела «Программа»](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok). Поэтому здесь важна связка между темами — она удерживает факты в единой картине.
-
-Этот курс строится по инженерному принципу "от моделей к действиям" — сначала формируется картина, как устроена система (данные, железо, ОС, сеть), затем — как человек в ней действует безопасно, юридически корректно и продуктивно. Такой подход нужен и школьнику, и взрослому новичку, потому что одинаково полезен для повседневных задач и для дальнейшего профессионального роста в IT.
+| Частая путаница | Как различать | Где разобрать |
+|-----------------|---------------|---------------|
+| Интернет и веб | Интернет — инфраструктура; WWW — сервис страниц в браузере | [6](/encyclopedia/1-basics/1-035-bazovaya-informatika/6) |
+| ОЗУ и накопитель | ОЗУ — работа «здесь и сейчас»; диск — хранение после выключения | [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) |
+| Алгоритм и программа | Алгоритм — план; программа — запись плана для машины | [4](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) |
+| Файл и процесс | Файл на диске; процесс — исполнение программы в памяти | [Программа](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok) |
 
 <div class="callout callout--tip">
   <div class="callout-title">Как пользоваться</div>
@@ -49,9 +50,9 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 
 ## Карта курса
 
-| № | Тема учебника | Глава курса | Подробнее в энциклопедии |
+| № | Тема | Глава курса | Подробнее в энциклопедии |
 |---|---------------|-------------|---------------------------|
-| 1 | Введение, зачем этот блок | [1](/encyclopedia/1-basics/1-035-bazovaya-informatika/1) | [Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) |
+| 1 | Ключевые понятия и маршрут | [1](/encyclopedia/1-basics/1-035-bazovaya-informatika/1) | [Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) |
 | 2 | Кодирование, сжатие, архивы, обзор БД | [2](/encyclopedia/1-basics/1-035-bazovaya-informatika/2) | [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2), [типы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1#chetyre-osnovnyh-tipa-baz-dannyh) |
 | 3 | Железо, периферия, сети (компьютер, ЭВМ, устройства) | [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/1) |
 | 4 | Алгоритмы, языки, программирование | [4](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) | [Программа](/encyclopedia/1-basics/1-19-programma/intro), [Код и разработка](/encyclopedia/4-code-dev/code-dev), [Ассемблер](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Visual Basic](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
@@ -67,7 +68,7 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 
 ```mermaid
 flowchart LR
-    A["1 Введение"] --> B["2 Данные"]
+    A["1 Понятия и маршрут"] --> B["2 Данные"]
     B --> C["3 Железо"]
     C --> D["5 ОС"]
     D --> E["6 Интернет"]

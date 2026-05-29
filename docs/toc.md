@@ -1056,7 +1056,12 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/21">3.03. Тектология</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/22">3.03. Системы и модели</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/31">3.03. Логика</a></li>
+      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/314">3.03. Алгебра логики — нормальные формы и схемы</a></li>
+      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/321">3.03. Множества и отношения — формальный слой</a></li>
+      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/322">3.03. Реляционная алгебра и таблицы</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/32">3.03. Дискретная математика</a></li>
+      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/323">3.03. Графы — маршруты, остовы и раскраски</a></li>
+      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/325">3.03. Дискретная математика — чек-лист самопроверки</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/33">3.03. Теория чисел, псевдокод и анализ алгоритмов</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/34">3.03. Линейная алгебра</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/35">3.03. Вероятность и статистика</a></li>
@@ -1176,6 +1181,7 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/3-data-markup/3-06-nosql/98">3.06. Итоги</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-06-nosql/99">3.06. Чек-лист самопроверки</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-06-nosql/411">3.06. Первые шаги с MongoDB</a></li>
+      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/412">3.06. MongoDB — проектирование документной схемы</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-06-nosql/511">3.06. Первые шаги с Redis</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-06-nosql/611">3.06. Первые шаги с Cassandra</a></li>
       <li><a href="/encyclopedia/3-data-markup/3-06-nosql/811">3.06. NewSQL - гибридные системы нового поколения</a></li>
@@ -1353,6 +1359,10 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1">4.01. Алгоритмы</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/2">4.01. Алгоритмы сортировки и поиска</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/3">4.01. Анализ эффективности алгоритмов</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/4">4.01. Графы — модели и задачи</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/41">4.01. Кратчайший путь — алгоритм Дейкстры</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/42">4.01. PageRank — ранжирование на графе</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/43">4.01. Евклид и классические алгоритмы на числах</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/11">4.01. Тренировка алгоритмического мышления</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/111">4.01. Регулярные выражения</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/112">4.01. Алгоритм обработки</a></li>
@@ -1386,6 +1396,7 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/611">4.02. Приёмы написания кода</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612">4.02. Методы рефакторинга программного кода</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/613">4.02. Типы задач в программировании</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/616">4.02. Примитивы, value objects и маленькие типы</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/998">4.02. Итоги</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/999">4.02. Чек-лист самопроверки</a></li>
     </ul>
@@ -1577,8 +1588,11 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/113">4.11. WebView</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/114">4.11. Electron</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/115">4.11. Windows Forms (WinForms)</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1152">4.11. Справочник по WinForms — элементы UI</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/116">4.11. Разработка приложений для Windows (Microsoft Learn)</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/117">4.11. Microsoft Store и публикация Windows-приложений</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119">4.11. Первая форма WPF</a></li>
+      <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1192">4.11. Справочник по WPF — элементы UI</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/998">4.11. Итоги</a></li>
       <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/999">4.11. Чек-лист самопроверки</a></li>
     </ul>
@@ -1842,6 +1856,8 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/5-languages/5-02-python/281">5.02. Распространённые типы исключений</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/301">5.02. Справочник по Django</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/311">5.02. Tkinter и GUI</a></li>
+      <li><a href="/encyclopedia/5-languages/5-02-python/3111">5.02. Первая программа на Tkinter</a></li>
+      <li><a href="/encyclopedia/5-languages/5-02-python/3112">5.02. Справочник по Tkinter — элементы UI</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/312">5.02. Разработка игр на Python</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/321">5.02. Справочник по модулю Turtle</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/341">5.02. Flask</a></li>
@@ -1890,6 +1906,9 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/5-languages/5-03-java/110">5.03. Экосистема Java-приложений</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/121">5.03. Справочник по конфигурациям в Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/131">5.03. Простые приложения на Java</a></li>
+      <li><a href="/encyclopedia/5-languages/5-03-java/311">5.03. JavaFX и GUI</a></li>
+      <li><a href="/encyclopedia/5-languages/5-03-java/3111">5.03. Первая программа на JavaFX</a></li>
+      <li><a href="/encyclopedia/5-languages/5-03-java/3112">5.03. Справочник JavaFX — элементы UI</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/141">5.03. Ключевые слова в Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/142">5.03. Встроенные функции и методы Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/211">5.03. Иерархия классов исключений в Java</a></li>
@@ -2217,6 +2236,11 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/5-languages/5-10-go/28">5.10. Рефлексия в Go</a></li>
       <li><a href="/encyclopedia/5-languages/5-10-go/29">5.10. Модули, workspace, embed и slog</a></li>
       <li><a href="/encyclopedia/5-languages/5-10-go/30">5.10. Механика языка и гонки данных</a></li>
+      <li><a href="/encyclopedia/5-languages/5-10-go/31">5.10. Дженерики в Go</a></li>
+      <li><a href="/encyclopedia/5-languages/5-10-go/32">5.10. gRPC в Go</a></li>
+      <li><a href="/encyclopedia/5-languages/5-10-go/33">5.10. CLI на cobra и viper</a></li>
+      <li><a href="/encyclopedia/5-languages/5-10-go/35">5.10. Профилирование, trace и fuzz в Go</a></li>
+      <li><a href="/encyclopedia/5-languages/5-10-go/34">5.10. WebSocket в Go</a></li>
       <li><a href="/encyclopedia/5-languages/5-10-go/101">5.10. Рекомендации по разработке на Go</a></li>
       <li><a href="/encyclopedia/5-languages/5-10-go/111">5.10. Экосистема приложений на Go</a></li>
       <li><a href="/encyclopedia/5-languages/5-10-go/121">5.10. Ключевые слова языка Go</a></li>
@@ -3298,8 +3322,18 @@ import DocCardList from '@theme/DocCardList';
     <ul>
       <li><a href="/encyclopedia/7-project/7-10-kultura-koda/1">7.10. Культура написания и поддержки кода</a></li>
       <li><a href="/encyclopedia/7-project/7-10-kultura-koda/2">7.10. Цикломатическая сложность и читаемость кода</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/5">7.10. MAPPER — модель кода и предметная область</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/6">7.10. Анемичные модели и примитивная одержимость</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/7">7.10. Изменяемость и побочные эффекты</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/14">7.10. Декларативный код</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/8">7.10. Условия, null и явные контракты</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/9">7.10. Связанность и глобалы</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/10">7.10. YAGNI, быстрый провал и техдолг</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/11">7.10. Тесты как часть культуры кода</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/12">7.10. Исключения и обработка ошибок</a></li>
       <li><a href="/encyclopedia/7-project/7-10-kultura-koda/3">7.10. Итоги</a></li>
       <li><a href="/encyclopedia/7-project/7-10-kultura-koda/4">7.10. Чек-лист самопроверки</a></li>
+      <li><a href="/encyclopedia/7-project/7-10-kultura-koda/13">7.10. Справочник тем чистого кода</a></li>
     </ul>
   </li>
 </ul>
@@ -3928,6 +3962,15 @@ import DocCardList from '@theme/DocCardList';
       <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1">9.11. Введение в программирование</a></li>
       <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/2">9.11. Блоки</a></li>
       <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/3">9.11. Scratch</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/31">9.11. Scratch — стартовые проекты MIT</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/32">9.11. Scratch — платформер и демосцена</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/33">9.11. Scratch — практика 1 (радуга)</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/34">9.11. Scratch — практика 2 (лабиринт)</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/35">9.11. Scratch — практика 3 (баскетбол)</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/36">9.11. Scratch — практика 4 (арканоид)</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/37">9.11. Scratch — практика 5 (астероиды)</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/38">9.11. Scratch — практика 6 (платформер)</a></li>
+      <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/39">9.11. Scratch — метод обучения</a></li>
       <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/4">9.11. Edublocks</a></li>
       <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/5">9.11. Типы данных</a></li>
       <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/6">9.11. Программа на Python</a></li>

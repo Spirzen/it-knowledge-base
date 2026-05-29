@@ -21,6 +21,12 @@ import DocCardList from '@theme/DocCardList';
 
 От [нейрона и слоёв](/encyclopedia/6-ai/6-03-neyroseti/1) — к [первому обучению на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2), затем к обзору концепций и архитектур.
 
+<div class="callout callout--tip">
+  <div class="callout-title">Сначала табличный ML</div>
+
+  Если вы только начинаете: пройдите [маршрут по машинному обучению](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro) — от [категорий обучения](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/5) и [кодирования признаков](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4) до сквозного [проекта Melbourne](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/7). Перцептрон и глубокие сети логичнее после понимания train/test, метрик и простых моделей на таблицах.
+</div>
+
 <DocCardList />
 
 {/* sidebar-collections */}

@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/2-system-network/2-02-platformy/3002
   - title: "Конструирование ПО — о разделе"
     doc: encyclopedia/7-project/7-12-konstruirovanie-po/intro
+  - title: "Разработка и ОЭ ERP"
+    doc: encyclopedia/7-project/7-15-vnedrenie-erp-sistem/9
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -46,6 +48,8 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 | 10 | [Тренируем TDD](/lab/Кейсы/7) | Практика цикла Red-Green-Refactor (лабораторный кейс) |
 
 После шагов 1–5 вы уже можете работать **ручным QA**. Шаги 6–9 добавляют SQL, API, автоматизацию и системную карту уровней тестирования. Шаг 10 — закрепление TDD на учебной задаче.
+
+На проектах **внедрения ERP** (в т.ч. 1С) к dev/test/prod часто добавляют контур **master** для регрессии перед релизом — см. [Разработка и ОЭ ERP](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/9).
 
 ---
 
@@ -86,7 +90,7 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 | По типам тестов | `2`, `114`, `120`–`126`, `130`, `131` | API, E2E, unit, integration, perf, security, mobile; структурные тесты — [130](./130.md) (CFG, data flow); карта уровней и практик — [131](./131.md); глубина unit — [125](./125.md) |
 | Инструменты | `118`, `1181`, `1182`, `115` | Каталог, Selenium, Playwright, стратегия автоматизации |
 | Практикум | `1011`–`1014` | Руки в код и сценарии |
-| Лаборатория | [Кейс «Тренируем TDD»](/lab/Кейсы/7) | Цикл Red-Green-Refactor вне практикума 1011 |
+| Лаборатория | [TDD](/lab/Кейсы/7) · [Конвертер файлов — ручной QA](/lab/Кейсы/8) | TDD вне 1011; ручной тест-дизайн на учебном консольном приложении |
 | Итог | [Чек-лист самопроверки](./999.md) | 50 вопросов — когда пройдёте основной маршрут |
 
 <div class="callout callout--tip">

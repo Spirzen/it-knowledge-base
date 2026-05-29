@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112
   - title: "Корпоративное ПО"
     doc: encyclopedia/2-system-network/2-02-platformy/3001
+  - title: "Внедрение ERP — о разделе"
+    doc: encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -54,6 +56,21 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 
 [113](/encyclopedia/7-project/7-04-analitika/113) → [124](/encyclopedia/7-project/7-04-analitika/124) → [129](/encyclopedia/7-project/7-04-analitika/129) → [130](/encyclopedia/7-project/7-04-analitika/130) → [116](/encyclopedia/7-project/7-04-analitika/116) → [117](/encyclopedia/7-project/7-04-analitika/117) → [127](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [121](/encyclopedia/7-project/7-04-analitika/121).
 
+<div class="callout callout--tip">
+  <div class="callout-title">Компактный маршрут по BABOK</div>
+
+  Последовательный проход по роли BA и управлению требованиями — без дублирования BPMN-справочника:
+
+  1. [113](/encyclopedia/7-project/7-04-analitika/113) — роль BA, концепты, фазы проекта  
+  2. [112](/encyclopedia/7-project/7-04-analitika/112) — области знаний, тип проекта, «цель → метод»  
+  3. [116](/encyclopedia/7-project/7-04-analitika/116) — план BA, RM, приоритизация  
+  4. [111](/encyclopedia/7-project/7-04-analitika/111) — пять шагов анализа, стоимость дефекта  
+  5. [124](/encyclopedia/7-project/7-04-analitika/124) — gap analysis, journey, DFD  
+  6. [126](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
+  7. [127](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
+  8. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление  
+</div>
+
 ---
 
 ### Системный аналитик
@@ -73,8 +90,9 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 | Тема | Раздел |
 | :--- | :--- |
 | Методологии, ЖЦ | [7.03](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1) |
+| Scrum, бэклог, оценка | [7.14](/encyclopedia/7-project/7-14-scrum/intro) |
 | Архитектура, API | [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro) |
-| Тестирование | [7.05](/encyclopedia/7-project/7-05-testirovanie/intro) |
+| Тестирование | [7.05](/encyclopedia/7-project/7-05-testirovanie/intro) — в т.ч. [статическая проверка требований](/encyclopedia/7-project/7-05-testirovanie/1.md), [свойства качественных требований](/encyclopedia/7-project/7-04-analitika/111#свойства-качественных-требований) |
 | Карьера | [1.26](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/10) |
 
 Закрепление: [Итоги](/encyclopedia/7-project/7-04-analitika/998), [Чек-лист](/encyclopedia/7-project/7-04-analitika/999).

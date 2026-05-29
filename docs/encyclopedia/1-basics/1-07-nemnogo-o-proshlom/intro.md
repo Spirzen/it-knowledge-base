@@ -3,6 +3,10 @@ title: История информационных технологий — о �
 description: "Подборка материалов раздела История информационных технологий в энциклопедии Вселенная IT."
 sidebar_label: История информационных технологий — о разделе
 related:
+  - title: "История информационных технологий"
+    doc: encyclopedia/1-basics/1-07-nemnogo-o-proshlom/1
+  - title: "Поколения вычислительной техники"
+    doc: encyclopedia/1-basics/1-07-nemnogo-o-proshlom/12
   - title: "Как работает компьютер"
     doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro
   - title: "Программа"

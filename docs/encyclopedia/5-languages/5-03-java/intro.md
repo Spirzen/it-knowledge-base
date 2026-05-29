@@ -76,6 +76,7 @@ import DocCardList from '@theme/DocCardList';
 | **Понять JVM в проде** | [23](./23.md) → [справочник §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [302](./302.md) → [101](./101.md) |
 | **Сборка и CI** | [12](./12.md) → [292](./292.md) (Gradle) |
 | **Legacy (поддержка)** | [JSF](./25.md), [JavaBeans](./26.md) — не для зелёного поля |
+| **Десктоп (JavaFX / Swing)** | [311.md](./311.md) → [3111.md](./3111.md) → [3112.md](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [112.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
 
 Параллельно с Java на JVM: [Kotlin](/encyclopedia/5-languages/5-09-kotlin/intro) (Android/Ktor), [Groovy](/encyclopedia/5-languages/5-12-groovy/intro) (Gradle DSL, Spock).
 

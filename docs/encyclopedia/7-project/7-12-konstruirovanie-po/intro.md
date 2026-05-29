@@ -34,7 +34,8 @@ import DocCardList from '@theme/DocCardList';
 | **Модели и процесс** | Как организовать работу (Waterfall, инкремент, RAD…) | [Модели ЖЦ для конструирования](./3), [SDLC](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1) |
 | **Планирование** | Оценки, критический путь, покер | [Планирование и оценка](./4), [Оценка трудозатрат](/encyclopedia/7-project/7-02-komanda-i-upravlenie/112) |
 | **Языки** | Программирование, проектирование, контракты | [Языки конструирования](./5), [Языки](/encyclopedia/5-languages/intro) |
-| **Качество** | Тесты, метрики, стандарты | [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro), [ISO 25010](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/2), [Цикломатическая сложность](/encyclopedia/7-project/7-10-kultura-koda/2) |
+| **Тестирование на коде** | Unit/integration, Myers, отладка | [Тестирование на стадии конструирования](./6), [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro) |
+| **Качество** | Метрики, стандарты | [ISO 25010](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/2), [Цикломатическая сложность](/encyclopedia/7-project/7-10-kultura-koda/2) |
 
 ---
 
@@ -47,8 +48,9 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [Модели жизненного цикла](./3) | Классический, инкрементный, RAD, спиральный, компонентно-ориентированный |
 | 4 | [Планирование конструирования](./4) | WBS, Gantt, PERT, CPM, Planning Poker, связь с тестированием |
 | 5 | [Языки конструирования](./5) | Языки программирования, проектирования, DSL, конфигурации |
-| 6 | [Итоги](./998) | Краткое резюме раздела |
-| 7 | [Чек-лист самопроверки](./999) | Вопросы для закрепления |
+| 6 | [Тестирование на стадии конструирования](./6) | Myers, unit/integration, white/black-box, артефакты IEEE 829 |
+| 7 | [Итоги](./998) | Краткое резюме раздела |
+| 8 | [Чек-лист самопроверки](./999) | Вопросы для закрепления |
 
 Если времени мало: **1 → 2 → 3** — этого достаточно для базового экзамена по теме "конструирование и модульность". Добавьте **4** и **5**, если в программе есть управление проектами и языки.
 
@@ -63,6 +65,7 @@ import DocCardList from '@theme/DocCardList';
 ## Связь с соседними разделами
 
 - **[Методология и жизненный цикл](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro)** — Scrum, Kanban, XP, DevOps; здесь мы смотрим на **инженерную сторону** реализации.
+- **[Scrum](/encyclopedia/7-project/7-14-scrum/intro)** — спринт, DoD, инкремент и потери в потоке разработки.
 - **[Проектирование и архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro)** — *что* строить; конструирование — *как* это закодировать и собрать.
 - **[Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro)** — верификация на стадии конструирования (unit, integration) и дальше по SDLC.
 - **[Экономика производства ПО](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)** — COCOMO II, качество ISO 25010, SCM, сопровождение, приёмка.

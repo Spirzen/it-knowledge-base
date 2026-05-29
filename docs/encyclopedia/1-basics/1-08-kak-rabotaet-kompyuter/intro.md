@@ -3,6 +3,8 @@ title: Как работает компьютер — о разделе
 description: "Подборка материалов раздела Как работает компьютер в энциклопедии Вселенная IT."
 sidebar_label: Как работает компьютер — о разделе
 related:
+  - title: "Многоуровневая организация компьютера"
+    doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13
   - title: "Принцип работы компьютера"
     doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1
   - title: "Память и накопители — типы и иерархия"
@@ -33,9 +35,9 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Здесь — путь от «что такое компьютер» и **ЭВМ** до железа, накопителей, видеокарты, периферии, **перезагрузки** и загрузки ОС. Материалы идут **от простого к глубокому**: термины и цифровой принцип — в [главе 1](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1), инженерная теория ЭВМ — в [главе 8](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8). Справочник характеристик ([81](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/81)) удобен при выборе техники, но не обязателен подряд с уроками.
+Здесь — путь от «что такое компьютер» и **ЭВМ** до железа, накопителей, видеокарты, периферии, **перезагрузки** и загрузки ОС. Материалы идут **от простого к глубокому**: термины и цифровой принцип — в [главе 1](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1), **лестница уровней** — в [главе 13](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13), инженерная теория ЭВМ — в [главе 8](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8). Справочник характеристик ([81](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/81)) удобен при выборе техники, но не обязателен подряд с уроками.
 
-**Рекомендуемый порядок для новичка:** [1](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1) → [12](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/12) (типы RAM, ROM и накопителей) → [7](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7) → [3](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/3) → [6](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/6). Главы [2](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/2), [4](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/4), [5](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/5) и [8](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8) — по желанию или с возвратом позже.
+**Рекомендуемый порядок для новичка:** [1](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1) → [13](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13) (уровни абстракции) → [12](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/12) (типы RAM, ROM и накопителей) → [7](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7) → [3](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/3) → [6](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/6). Главы [2](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/2), [4](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/4), [5](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/5) и [8](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/8) — по желанию или с возвратом позже.
 
 <DocCardList />
 

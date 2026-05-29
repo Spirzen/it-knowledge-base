@@ -16,12 +16,17 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 
 1. [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1) — алгоритм, переменные, циклы, ошибки  
 2. [Блоки](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/2) — визуальные среды и связь с текстовым кодом  
-3. [Scratch](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/3) — редактор MIT  
-4. [Стартовые проекты MIT](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/31) и [платформер / демосцена](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/32)  
-5. [Edublocks](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/4)  
-6. [Python](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/6) и [JavaScript](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/7)  
-7. [MIT App Inventor](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/9)  
-8. [PascalABC.NET](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/10)
+3. [Scratch](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/3) — справочник по редактору MIT  
+4. [Edublocks](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/4)  
+5. [Python](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/6) и [JavaScript](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/7)  
+6. [MIT App Inventor](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/9)  
+7. [PascalABC.NET](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/10)
+
+**Шесть игр в Scratch (пошагово):**
+
+0. [Как учиться по проектам](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/39) — эскиз, контрольные точки, готовые файлы  
+1. [Радужные линии](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/33) → [Лабиринт](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/34) → [Баскетбол](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/35) → [Арканоид](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/36) → [Астероиды](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/37) → [Платформер](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/38)  
+Параллельно: [стартовые проекты MIT](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/31), [платформер и демосцена](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/32)
 
 <div class="callout callout--info">
   <div class="callout-title">Примечание</div>

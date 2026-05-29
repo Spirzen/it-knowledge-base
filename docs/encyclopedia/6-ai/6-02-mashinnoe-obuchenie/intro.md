@@ -3,6 +3,18 @@ title: Машинное обучение — о разделе
 description: "Подборка материалов раздела Машинное обучение в энциклопедии Вселенная IT."
 sidebar_label: Машинное обучение — о разделе
 related:
+  - title: "Как начать с ML на Python"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/21
+  - title: "Категории обучения и стек инструментов"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/5
+  - title: "Сквозной проект — Мельбурн"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/7
+  - title: "Разбиение данных и кросс-валидация"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/6
+  - title: "Смещение, дисперсия и переобучение"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/8
+  - title: "Деревья решений с нуля"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/9
   - title: "Кодирование категориальных признаков"
     doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4
   - title: "Обучение на базе готовой модели"
@@ -22,6 +34,12 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 <DocCardList />
+
+<div class="callout callout--tip">
+  <div class="callout-title">Маршрут для абсолютного новичка</div>
+
+  [Как начать с ML на Python](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/21) → [Категории и стек](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/5) → [Кодирование признаков](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4) → [Разбиение данных](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/6) → [Проект Melbourne](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/7) → [Смещение и дисперсия](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/8) → [Деревья решений](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/9) → [Обзор ML](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1) → [Справочник алгоритмов](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/2).
+</div>
 
 {/* sidebar-collections */}
 

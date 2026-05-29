@@ -36,10 +36,26 @@ import DocCardList from '@theme/DocCardList';
 | 7 | [Первая программа](./7.md) | VS Community |
 | 8 | [Консоль, файлы](./10.md) | `List(Of T)` |
 | 9 | [LINQ](./11.md) | Лямбды, запросы |
-| 10 | [VBA в Excel](./8.md) | Макросы |
-| 11 | [Справочник](./711.md) | WinForms |
+| 10 | [VBA в Excel](./8.md) | Макросы в таблицах |
+| 11 | [VBScript](./12.md) | `.vbs`, WScript |
+| 12 | [VBA Word и Access](./13.md) | Документы и БД |
+| 13 | [Справочник](./711.md) | WinForms, VBA |
 
 Завершение: [Итоги](./998.md), [Чек-лист](./999.md).
+
+---
+
+### Маршрут VBScript и Office
+
+Сценарии Windows и макросы Office собраны в этом разделе (в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) — только алгоритмы и обзор языков):
+
+| Тема | Статья |
+|------|--------|
+| VBScript, WScript, `MsgBox`, циклы | [12 — VBScript](./12.md) |
+| VBA Excel | [8 — VBA в Excel](./8.md) |
+| VBA Word, Access | [13 — VBA Word и Access](./13.md) |
+| Алгоритмы и классификация языков | [базовая информатика, гл. 4](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) |
+| VB.NET / Visual Studio | [7 — первая программа](./7.md) |
 
 ---
 
@@ -70,6 +86,7 @@ import DocCardList from '@theme/DocCardList';
 | Быстро написать рабочее приложение | [7](./7.md) → [5](./5.md) → [6](./6.md) → [10](./10.md) |
 | Понять архитектуру и различия поколений | [1](./1.md) → [2](./2.md) → [3](./3.md) → [9](./9.md) |
 | Автоматизировать Excel | [8](./8.md) → [6](./6.md) → [711](./711.md) |
+| VBScript и Office (классический курс) | [12](./12.md) → [8](./8.md) → [13](./13.md) → [7](./7.md) |
 
 Полезный принцип: каждый блок закреплять мини-практикой, а не только чтением.
 

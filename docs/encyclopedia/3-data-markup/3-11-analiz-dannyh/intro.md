@@ -15,11 +15,14 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел выстроен от общей картины к инструментам и прикладным сценариям. Рекомендуемый порядок для первого прохода:
 
+0. **Старт из Excel** — [429 — EDA в Excel](/encyclopedia/3-data-markup/3-11-analiz-dannyh/429) → [42 — статистика](/encyclopedia/3-data-markup/3-11-analiz-dannyh/42) → [430 — маршрут Excel → R → Python](/encyclopedia/3-data-markup/3-11-analiz-dannyh/430) → ветка [424 — Python](/encyclopedia/3-data-markup/3-11-analiz-dannyh/424) или [5-23-r/103 — R](/encyclopedia/5-languages/5-23-r/103).
 1. [Анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/1) — OLTP/OLAP, семантика, DAX, жизненный цикл аналитики.
-2. [Основы статистики](/encyclopedia/3-data-markup/3-11-analiz-dannyh/42) и [Data Science](/encyclopedia/3-data-markup/3-11-analiz-dannyh/12) — выводы, роли, NumPy/pandas; [типовые операции Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428) — загрузка, выбор, `groupby`, статистика, строки и экспорт; [напоминалка Pandas / Polars / SQL / PySpark](/encyclopedia/3-data-markup/3-11-analiz-dannyh/426) — одна операция в четырёх синтаксисах; [очистка и подготовка в Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427) — пропуски, фильтры, `groupby`.
+2. [Data Science](/encyclopedia/3-data-markup/3-11-analiz-dannyh/12) — роли и стек инструментов; [типовые операции Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428); [напоминалка Pandas / Polars / SQL / PySpark / Excel](/encyclopedia/3-data-markup/3-11-analiz-dannyh/426); [очистка в Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427).
 3. [Big Data](/encyclopedia/3-data-markup/3-11-analiz-dannyh/11) (в т. ч. [Data Warehouse, Data Lake и Data Mesh](/encyclopedia/3-data-markup/3-11-analiz-dannyh/11#data-warehouse-lake-mesh)), [ETL/ELT](/encyclopedia/3-data-markup/3-11-analiz-dannyh/425), [потоковая аналитика](/encyclopedia/3-data-markup/3-11-analiz-dannyh/423) — масштаб, конвейеры, события в реальном времени.
 4. [Дата-майнинг](/encyclopedia/3-data-markup/3-11-analiz-dannyh/2), [причинно-следственный анализ](/encyclopedia/3-data-markup/3-11-analiz-dannyh/422), [ошибки интерпретации](/encyclopedia/3-data-markup/3-11-analiz-dannyh/3) — закономерности, корреляция и критическое мышление.
 5. [Python для анализа](/encyclopedia/3-data-markup/3-11-analiz-dannyh/424) (очистка таблиц — [427](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427)), [ИИ в аналитике](/encyclopedia/3-data-markup/3-11-analiz-dannyh/421), [Power BI](/encyclopedia/3-data-markup/3-11-analiz-dannyh/43) — практика и self-service.
+
+Углубление по тому же маршруту: [431 — вероятность](/encyclopedia/3-data-markup/3-11-analiz-dannyh/431), [432 — регрессия в Excel, R и Python](/encyclopedia/3-data-markup/3-11-analiz-dannyh/432).
 
 Прикладные кейсы: [технологии в спорте](/encyclopedia/3-data-markup/3-11-analiz-dannyh/41), [умный дом](/encyclopedia/3-data-markup/3-11-analiz-dannyh/4) (IoT и телеметрия). Итоги — в [998](/encyclopedia/3-data-markup/3-11-analiz-dannyh/998), самопроверка — в [999](/encyclopedia/3-data-markup/3-11-analiz-dannyh/999).
 

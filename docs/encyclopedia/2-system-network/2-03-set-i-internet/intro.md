@@ -33,9 +33,36 @@ import DocCardList from '@theme/DocCardList';
 | 2. Имена и протоколы | [3](./3.md), [4](./4.md), [6](./6.md) | URI/URL, OSI, [модель TCP/IP](./4.md#model-tcp-ip), [обзор девяти ключевых протоколов](./4.md#key-network-protocols), TCP/UDP, HTTP, DNS |
 | 3. Практика веба | [5](./5.md), [11](./11.md), [7](./7.md) | Загрузка сайта, HTTPS, cookie и кэш |
 | 4. Инфраструктура | [21](./21.md), [211](./211.md), [212](./212.md) | Устройства, магистрали, CDN |
-| 5. Углубление | [8](./8.md), [41](./41.md), [611](./611.md), [618](./618.md), [619](./619.md), [база по HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) | HTTP/2–3, [карта HTTP-экосистемы](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem), [девять ключевых протоколов](./618.md#key-protocols-overview), [18 основных портов](./618.md#18-osnovnyh-portov), [сводка протоколов для отладки](./618.md#obzor-protokoly), [сетевые сервисы по ролям](./618.md#setevye-servisy-po-rolyam), [справочник IP и CIDR](./619.md) |
+| 5. Углубление | [8](./8.md), [41](./41.md), [421](./421.md), [611](./611.md), [618](./618.md), [619](./619.md), [база по HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) | TCP и перегрузка, HTTP/2–3, [карта HTTP-экосистемы](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem), [девять ключевых протоколов](./618.md#key-protocols-overview), [18 основных портов](./618.md#18-osnovnyh-portov), [справочник IP и CIDR](./619.md) |
 
 Опционально: [71](./71.md) (Wi‑Fi, Bluetooth, LTE), [91](./91.md) (регулирование), [613](./613.md)–[617](./617.md) (VPN, прокси, мониторинг).
+
+---
+
+## Маршрут по учебнику (нисходящий подход)
+
+Таблица ниже повторяет логику классического курса **«Компьютерные сети. Нисходящий подход»** (Куроуз, Росс): сначала приложения, затем транспорт, IP, канал и радио. Статьи энциклопедии идут в том же порядке, с перекрёстными ссылками на соседние разделы.
+
+| Глава учебника | Тема | Статьи раздела 2.03 |
+| :--- | :--- | :--- |
+| 1 | Интернет, задержки, уровни, периферия и ядро | [1](./1.md), [2](./2.md) |
+| 2 | HTTP, DNS, почта, сокеты | [3](./3.md), [5](./5.md), [6](./6.md), [11](./11.md), [7](./7.md), [4](./4.md) |
+| 3 | TCP, UDP, надёжность, перегрузка | [4](./4.md), [42](./42.md), [421](./421.md), [612](./612.md) |
+| 4 | IP, маршрутизация, BGP | [41](./41.md), [619](./619.md), [211](./211.md) |
+| 5 | Ethernet, ARP, «день HTTP-запроса» | [21](./21.md), [5](./5.md#put-paketa-dhcp-http), [2-06/61](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61) |
+| 6 | Wi‑Fi, сотовые сети | [71](./71.md) |
+| 7 | CDN, стриминг, VoIP | [212](./212.md), [8](./8.md) |
+| 8 | TLS, VPN, фаервол | [2-08](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [613](./613.md), [2-04/128](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/128) |
+
+Полный план обогащения по книге — в репозитории, файл `build/kurose-ross-mapping.md`.
+
+---
+
+## Источники
+
+- *Компьютерные сети. Нисходящий подход*, Дж. Куроуз, К. Росс — 2016 (базовая структура маршрута выше).
+- *Компьютерные сети*, Э. Таненбаум — для сравнения «снизу вверх» и альтернативных технологий.
+- См. также [библиотеку в документации](/docs/tools/documentation/1#сети-и-безопасность).
 
 ---
 

@@ -166,6 +166,9 @@ mindmap
       <li><a href="/encyclopedia/5-languages/5-02-python/301">5.02. Справочник по Django</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/31">5.02. Работа с данными и внешним миром</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/314">5.02. Базы данных в Python</a></li>
+      <li><a href="/encyclopedia/5-languages/5-02-python/311">5.02. Tkinter и GUI</a></li>
+      <li><a href="/encyclopedia/5-languages/5-02-python/3111">5.02. Первая программа на Tkinter</a></li>
+      <li><a href="/encyclopedia/5-languages/5-02-python/3112">5.02. Справочник по Tkinter — элементы UI</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/32">5.02. Графика и игры</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/321">5.02. Справочник по модулю Turtle</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/33">5.02. Анализ данных и научные вычисления</a></li>
@@ -199,6 +202,9 @@ mindmap
       <li><a href="/encyclopedia/5-languages/5-03-java/101">5.03. Рекомендации по разработке на Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/11">5.03. Основы языка</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/110">5.03. Экосистема Java-приложений</a></li>
+      <li><a href="/encyclopedia/5-languages/5-03-java/311">5.03. JavaFX и GUI</a></li>
+      <li><a href="/encyclopedia/5-languages/5-03-java/3111">5.03. Первая программа на JavaFX</a></li>
+      <li><a href="/encyclopedia/5-languages/5-03-java/3112">5.03. Справочник JavaFX — элементы UI</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/12">5.03. Структуры проекта</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/121">5.03. Справочник по конфигурациям в Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/13">5.03. Первая программа на Java</a></li>

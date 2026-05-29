@@ -40,6 +40,7 @@ import DocCardList from '@theme/DocCardList';
     <li><a href="./119">Смена пароля — пропущенный шаг re-auth</a> — захват аккаунта при украденной сессии и CSRF</li>
     <li><a href="./120">Админка по ?isAdmin=true</a> — Broken Access Control и права с клиента</li>
     <li><a href="./115">Фаерволы</a>, <a href="./117">DDoS и отказ в обслуживании</a> и <a href="./116">Шифрование и SSH</a> — <a href="./116#asymmetric-keys">пара ключей</a>, TLS, подпись, затем протокол SSH</li>
+    <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/129">Жизненный цикл атаки</a> — семь этапов взлома и векторы проникновения (углубление в разделе 8.07)</li>
     <li><a href="./113">Риски открытых Wi‑Fi</a></li>
     <li><a href="./112">Антивирус и лечение</a> — по желанию; хвост статьи помечен как углубление</li>
     <li><a href="./2">Итоги</a> и <a href="./3">Чек-лист самопроверки</a></li>

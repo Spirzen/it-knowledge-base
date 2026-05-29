@@ -21,6 +21,8 @@ related:
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/11
   - title: "Версии C# и .NET — справочная таблица"
     doc: encyclopedia/5-languages/5-05-csharp/48
+  - title: "Разработка игр — о разделе"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -55,6 +57,32 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+## C# для Unity
+
+Unity-скрипты — это обычный C# плюс API движка (`UnityEngine`). Если вы учите язык **ради игр**, не обязательно проходить весь раздел до ASP.NET — достаточно ветки ниже параллельно с [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3).
+
+| Тема в Unity | Статья C# | Комментарий |
+|--------------|-----------|-------------|
+| Переменные, типы, `if`/`for` | [17](/encyclopedia/5-languages/5-05-csharp/17), [20](/encyclopedia/5-languages/5-05-csharp/20), [18](/encyclopedia/5-languages/5-05-csharp/18) | Основа до `MonoBehaviour` |
+| Классы, наследование, `GetComponent` | [25](/encyclopedia/5-languages/5-05-csharp/25) — блок **Unity** | `MonoBehaviour`, композиция |
+| `List`, `Dictionary`, `Stack`, `HashSet` | [28](/encyclopedia/5-languages/5-05-csharp/28) | Инвентарь, пулы, лут |
+| `enum`, свойства `get`/`set` | [25](/encyclopedia/5-languages/5-05-csharp/25), [18](/encyclopedia/5-languages/5-05-csharp/18) | Состояние игрока, `KeyCode` |
+| `static`, утилиты без сцены | [25](/encyclopedia/5-languages/5-05-csharp/25) | `LevelRestart`, хелперы |
+| Делегаты, `event` | [102](/encyclopedia/5-languages/5-05-csharp/102) | UI ↔ GameManager |
+| Generics | [26](/encyclopedia/5-languages/5-05-csharp/26) | Обобщённые коллекции и API |
+
+Полный маршрут «Unity + C#» шаг за шагом — в [intro раздела «Разработка игр»](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro#unity-csharp-track). Самопроверка — [чек-лист 9.04/999](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
+
+<div class="callout callout--info">
+  <div class="callout-title">Unity и .NET</div>
+
+  <div class="callout-body">
+  В редакторе Unity используется профиль .NET, совместимый с игровым рантаймом (IL2CPP / Mono). Веб- и desktop-статьи этого раздела (ASP.NET, WPF) для первого игрового прототипа можно отложить.
+</div>
+</div>
+
+---
+
 ## История и эволюция
 
 - [История платформы .NET](../5-04-platforma-dotnet/11.md) — NGWS, рождение C#, .NET Framework → Core → единый .NET, F#.
@@ -77,9 +105,23 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+## Десктоп на .NET
+
+Общая теория окон, элементов и UI-потока — [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Особенности разработки](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md), [раздел «Десктопные приложения»](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro).
+
+| Стек | Теория / практика | Элементы UI |
+|------|-------------------|-------------|
+| WinForms | [115.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/115) | [1152.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1152) |
+| WPF | [119.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119) | [1192.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1192) |
+| Windows-платформа | [116.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/116) | — |
+| UI-фреймворки .NET | [13.md](../5-04-platforma-dotnet/13.md) | — |
+| Кроссплатформа | [MAUI — первая программа](./4513.md) | [мобильный раздел](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) |
+
+---
+
 ## Веб на .NET
 
-- [ASP.NET — фреймворк](./451), [Web API](./4511), [Minimal API и OpenAPI](./4517), [MediatR и pipeline](./4518), [интеграционные тесты](./4516), [Razor Pages](./4514), [Identity и JWT](./4515), [Blazor](./4512), [справочник](./452), [документация Microsoft Learn](./455)
+- [ASP.NET — фреймворк](./451), [Web API](./4511), [Minimal API и OpenAPI](./4517), [MediatR и pipeline](./4518), [тесты — юнит и интеграция](./4516), [Razor Pages](./4514), [Identity — JWT и cookie](./4515), [Blazor](./4512), [справочник](./452), [документация Microsoft Learn](./455)
 - Данные: [EF Core](./441), [ADO.NET / Dapper](./442), [обзор БД](./44); практика СУБД — [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)
 - Архитектура solution: [Clean Architecture на ASP.NET Core](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2143)
 

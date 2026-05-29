@@ -18,8 +18,8 @@ import DocCardList from '@theme/DocCardList';
 
 1. [Знакомство с базами данных](./1.md) — определения БД и схемы, модель данных vs схема, *relation* / *relationship*, [четыре основных типа БД](./1.md#chetyre-osnovnyh-tipa-baz-dannyh) (реляционные, NoSQL, иерархические, объектно-ориентированные), обзор SQL / NoSQL / NewSQL.
 2. [СУБД в экосистеме](./2.md) — продукты, клиент–сервер, процессы и память (например PostgreSQL), где что применяют.
-3. [Роль базы данных в организации](./6.md) — зачем центральная БД, жизненный цикл модели, люди и процессы.
-4. [Как СУБД выполняет запрос](./3.md) — буферы, [пять структур индексов](./3.md#pyat-osnovnyh-struktur-indeksov) (B⁺, хеш, bitmap…), [типы по роли](./3.md#tipy-indeksov-po-role) (primary dense/sparse, clustered, secondary), [восемь структур хранения](./3.md#vosem-struktur-indeksa-i-hraneniya), [вторичные индексы](./3.md#vtorichnye-indeksy), партиции, план; для любознательных. Конспект для масштабирования — [опорные темы](./12.md). Практика эксплуатации — [семь стратегий](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1.md#sem-strategij-masshtabirovaniya), [девять рычагов](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1.md#devyat-rychagov-proizvoditelnosti) в разделе управления РСУБД.
+3. [Роль базы данных в организации](./6.md) — зачем центральная БД, жизненный цикл модели, [выбор СУБД](./6.md#vybor-subd), люди и процессы.
+4. [Как СУБД выполняет запрос](./3.md) — путь SQL, [когда нужна оптимизация](./3.md#kogda-optimizaciya-imeet-znachenie), [пять шагов формулировки запроса](./3.md#kak-sostavit-zapros-po-shagam); буферы, [пять структур индексов](./3.md#pyat-osnovnyh-struktur-indeksov), [типы по роли](./3.md#tipy-indeksov-po-role), партиции, план. Конспект для масштабирования — [опорные темы](./12.md). Эксплуатация — [управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro).
 5. [Теоретические основы реляционных данных](./4.md) — Кодд, страницы, WAL, алгебра.
 6. [Двенадцать правил Кодда](./5.md) — критерии "настоящей" реляционной СУБД.
 7. [Entity Relationship](./11.md) — сущности, первичный и внешний ключ, кардинальность 1:1 / 1:N / M:N, DDL-примеры; теория ключей и JOIN — [Реляционная модель](/encyclopedia/3-data-markup/3-07-sql/103.md#otnoshenie-na-praktike).
@@ -29,7 +29,9 @@ import DocCardList from '@theme/DocCardList';
 
 **Проектирование схем (углубление):** после пунктов 1 и 7 — [Проектирование баз данных](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116) (концептуальная / логическая / физическая модель, нормализация, чек-лист перед `CREATE TABLE`).
 
-**Нормализация (1НФ–4НФ, НФБК)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md#normalnye-formy) — после [11](./11.md) и [103](/encyclopedia/3-data-markup/3-07-sql/103.md).
+**Нормализация (1НФ–4НФ, НФБК)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md#normalnye-formy) — после [11](./11.md) и [103](/encyclopedia/3-data-markup/3-07-sql/103.md). Краткий [чек-лист моделирования](/encyclopedia/3-data-markup/3-07-sql/104.md#chek-list-modelirovaniya-dannyh) — в той же главе.
+
+**Файлы и СУБД, нотации ER:** [СУБД — файловое хранение и ограничения](./2.md#fajlovoe-hranenie-i-subd), [Entity Relationship — нотации](./11.md#notacii-er-modeli).
 
 **SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)).
 

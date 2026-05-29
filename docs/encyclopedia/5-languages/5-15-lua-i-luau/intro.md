@@ -34,6 +34,18 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+## Маршрут Luau для Roblox
+
+Если цель — **игры на Roblox**, идите параллельно с разделом [Разработка игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro):
+
+| Шаг | Luau (этот раздел) | Roblox (геймдев) |
+|-----|--------------------|------------------|
+| 1 | [13 — первая программа](./13) | [203 — Studio](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203) |
+| 2 | [14](./14) → [17](./17) | [204 — обби](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) |
+| 3 | [23 — Luau и Roblox](./23) | [206 — продвижение](/encyclopedia/9-spinoff/9-04-razrabotka-igr/206) |
+
+---
+
 ## Рекомендуемый порядок
 
 1. [Основы языка](/encyclopedia/5-languages/5-15-lua-i-luau/1) — философия и модель выполнения  
