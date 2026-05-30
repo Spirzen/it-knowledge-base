@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/5-languages/5-15-lua-i-luau/intro
   - title: "Разработка игр на Python"
     doc: encyclopedia/5-languages/5-02-python/312
+  - title: "Практикум разработки игр — о разделе"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Игроведение — о разделе"
     doc: encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro
   - title: "Веб-игры на HTML5 и Canvas"
@@ -37,6 +39,7 @@ import DocCardList from '@theme/DocCardList';
 |--------------|--------|---------|
 | **Обзор** | Контекст, термины, сравнения | [Процесс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1), [Движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112), [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) |
 | **Практика в редакторе** | Пошагово в движке | [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3), [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4), [Roblox — Studio](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203), [обби](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) |
+| **Практикум на коде** | Мини-игры на Python и Java | [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |
 | **Справочник** | API, горячие клавиши, lifecycle | [301](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301), [401](/encyclopedia/9-spinoff/9-04-razrabotka-igr/401), [201](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201) |
 | **Платформы и качество** | Где публиковать, как не тормозить | [PC](/encyclopedia/9-spinoff/9-04-razrabotka-igr/118)–[122](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), [Тестирование](/encyclopedia/9-spinoff/9-04-razrabotka-igr/124) |
 | **Внешний каталог** | Open-source клоны для разбора исходников | [Каталог клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125) ([osgameclones.com](https://osgameclones.com/)) |
@@ -141,7 +144,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
-**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
+**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Практикум разработки игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
 
 {/* /sidebar-collections */}
 

@@ -19,6 +19,10 @@ related:
     doc: encyclopedia/5-languages/5-05-csharp/455
   - title: "Социальные сети"
     doc: encyclopedia/2-system-network/2-02-platformy/311
+  - title: "Практикум разработки игр — о разделе"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
+  - title: "Разработка игр на Python"
+    doc: encyclopedia/5-languages/5-02-python/312
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -64,6 +68,7 @@ Python удобен для **первого языка**: читается по�
 | 2b | [Практикум — доска объявлений](./3013.md) | Сквозной сайт: рубрики, объявления, комментарии |
 | 3 | [DRF](./3012.md) или [FastAPI](./3432.md) | JSON API |
 | 4 | [Tkinter](./311.md) → [3111](./3111.md) → [3112](./3112.md) | Десктоп; теория — [раздел 4.11](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) |
+| 4a | [Разработка игр на Python](./312.md) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Pygame и учебные мини-игры |
 | 5 | [pytest](./37.md) | Тесты |
 
 [Чек-лист самопроверки](./999.md).

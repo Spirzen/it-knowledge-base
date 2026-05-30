@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/intro
   - title: "Разработка игр на Python"
     doc: encyclopedia/5-languages/5-02-python/312
+  - title: "Практикум разработки игр — о разделе"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
 ---
 
 import GameIndustryHub from '@site/src/components/GameIndustryHub.jsx';
@@ -37,7 +39,7 @@ import DocCardList from '@theme/DocCardList';
 
 **База для геймера** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игры, которые должен попробовать каждый](/tools/games/4).
 
-**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
+**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Практикум разработки игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
 
 {/* /sidebar-collections */}
 

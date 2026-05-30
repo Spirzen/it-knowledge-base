@@ -19,6 +19,10 @@ related:
     doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3
   - title: "PHP — о разделе"
     doc: encyclopedia/5-languages/5-07-php/intro
+  - title: "Практикум разработки игр — о разделе"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
+  - title: "Веб-игры на HTML5 и Canvas"
+    doc: encyclopedia/3-data-markup/3-09-html/22
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -125,6 +129,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 3b | [Fullstack](./264.md) | API + фронт, CORS |
 | 4 | [Angular](./292.md) | Крупные SPA (по желанию) |
 | 5 | [Electron + React](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118) | Десктоп |
+| 5a | [TypeScript](./30.md) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Игры на TS (Canvas, онлайн-карты) |
 
 В конце раздела — [чек-лист самопроверки](./999.md).
 

@@ -32,6 +32,14 @@ export const SPIRZEN_ONLINE_TOOLS = {
     tagline:
       'Каталог фильмов, игр и книг: фильтры, поиск и случайный выбор с анимацией «рулетки».',
   },
+  onlineCardGame: {
+    id: 'onlineCardGame',
+    name: 'Приключения Урала Батыра',
+    shortName: 'Урал Батыр',
+    href: 'https://spirzen.github.io/OnlineCardGame/',
+    tagline:
+      'Карточный roguelike по башкирскому эпосу: батыры, дивы, лор карт и поход к Шульгену. Браузер, PWA.',
+  },
 };
 
 export const SPIRZEN_ONLINE_TOOLS_LIST = Object.values(SPIRZEN_ONLINE_TOOLS);

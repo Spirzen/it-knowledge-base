@@ -476,6 +476,7 @@ export const SIDEBAR_COLLECTIONS = [
       'encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro',
       'encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro',
       'encyclopedia/9-spinoff/9-04-razrabotka-igr/intro',
+      'encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro',
       'encyclopedia/5-languages/5-02-python/312',
       'encyclopedia/3-data-markup/3-09-html/22',
       'encyclopedia/5-languages/5-06-cpp/22',

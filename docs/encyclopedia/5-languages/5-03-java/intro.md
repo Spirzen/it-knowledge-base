@@ -17,6 +17,10 @@ related:
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/intro
   - title: "C# — о разделе"
     doc: encyclopedia/5-languages/5-05-csharp/intro
+  - title: "Java — Java Survivors"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8
+  - title: "Практикум разработки игр — о разделе"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -77,6 +81,7 @@ import DocCardList from '@theme/DocCardList';
 | **Сборка и CI** | [12](./12.md) → [292](./292.md) (Gradle) |
 | **Legacy (поддержка)** | [JSF](./25.md), [JavaBeans](./26.md) — не для зелёного поля |
 | **Десктоп (JavaFX / Swing)** | [311.md](./311.md) → [3111.md](./3111.md) → [3112.md](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [112.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
+| **Учебная игра** | [Java Survivors](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8) (в подготовке) — маршрут раздела [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |
 
 Параллельно с Java на JVM: [Kotlin](/encyclopedia/5-languages/5-09-kotlin/intro) (Android/Ktor), [Groovy](/encyclopedia/5-languages/5-12-groovy/intro) (Gradle DSL, Spock).
 

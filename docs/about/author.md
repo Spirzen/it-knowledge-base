@@ -18,7 +18,7 @@ import SpirzenOnlineToolsPanel from '@site/src/components/SpirzenOnlineToolsPane
 
 Сайт-визитка: [spirzen.github.io](https://spirzen.github.io/)
 
-Помимо встроенных демо в энциклопедии, на GitHub Pages есть отдельные веб-приложения: [Schema Maker](https://spirzen.github.io/SchemaMakerOnline/), [SQL Generator](https://spirzen.github.io/SQLGeneratorOnline/), [ArchiStyler](https://spirzen.github.io/ArchiStylerOnline/) и [Random Manager](https://spirzen.github.io/RandomManager/) — ими можно пользоваться без входа на spirzen.ru.
+Помимо встроенных демо в энциклопедии, на GitHub Pages есть отдельные веб-приложения: [Schema Maker](https://spirzen.github.io/SchemaMakerOnline/), [SQL Generator](https://spirzen.github.io/SQLGeneratorOnline/), [ArchiStyler](https://spirzen.github.io/ArchiStylerOnline/), [Random Manager](https://spirzen.github.io/RandomManager/) и браузерная игра [Приключения Урала Батыра](https://spirzen.github.io/OnlineCardGame/) — ими можно пользоваться без входа на spirzen.ru.
 
 Я преподаватель, юрист и специалист с многолетним опытом в Fullstack-разработке, системном и бизнес-анализе, тестировании, интеграции и архитектуре корпоративных CRM, BPM, ERP-систем.
 
