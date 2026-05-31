@@ -1,17 +1,16 @@
 {
-  "total_md": 2331,
+  "total_md": 2760,
   "no_description": [],
   "truncated_ellipsis_count": 0,
   "truncated_samples": [],
   "broken_999_template_count": 0,
   "broken_999_samples": [],
-  "generic_intro_count": 88,
-  "generic_99_checklist_count": 29,
+  "generic_intro_count": 75,
+  "generic_99_checklist_count": 28,
   "mixed_language_artifacts": [],
-  "wikipedia_opening_style_count": 48,
+  "wikipedia_opening_style_count": 43,
   "wikipedia_opening_samples": [
     "1-basics/1-08-kak-rabotaet-kompyuter/4.md",
-    "1-basics/1-27-udalennaya-rabota/2.md",
     "2-system-network/2-01-operatsionnaya-sistema/7.md",
     "3-data-markup/3-11-analiz-dannyh/1.md",
     "4-code-dev/4-03-vypolnenie-koda/313.md",
@@ -20,11 +19,12 @@
     "4-code-dev/4-12-mobilnye-prilozheniya/113.md",
     "4-code-dev/4-13-osnovy-raboty-s-git/1.md",
     "5-languages/5-01-javascript/12.md",
-    "5-languages/5-04-platforma-dotnet/182.md",
-    "5-languages/5-05-csharp/453.md",
     "5-languages/5-07-php/1431.md",
     "5-languages/5-13-rust/11.md",
-    "5-languages/5-15-lua-i-luau/19.md"
+    "5-languages/5-15-lua-i-luau/19.md",
+    "5-languages/5-15-lua-i-luau/3.md",
+    "5-languages/5-25-bash/1.md",
+    "5-languages/5-26-powershell/113.md"
   ],
   "duplicate_non_intro_3plus": {
     "Гайд по установке и настройке с написанием первой программы и её запуском.": [
@@ -62,18 +62,11 @@
       "5-languages/5-09-kotlin/16.md",
       "5-languages/5-13-rust/12.md"
     ],
-    "Итоги — материал энциклопедии Вселенная IT.": [
-      "7-project/7-10-kultura-koda/3.md",
-      "7-project/7-11-legasi-kod/2.md",
-      "8-infra-security/8-02-low-code-no-code/2.md",
-      "9-spinoff/9-05-blokcheyn-kripta-i-nft/2.md",
-      "9-spinoff/9-06-otraslevoe-po/2.md"
-    ],
-    "Чек-лист самопроверки — материал энциклопедии Вселенная IT.": [
-      "1-basics/1-29-gosudarstvo-i-biznes/4.md",
-      "3-data-markup/3-03-myslitelnaya-baza/5.md",
-      "4-code-dev/4-06-arhitektura-vypolneniya/4.md",
-      "7-project/7-10-kultura-koda/4.md"
+    ">-": [
+      "1-basics/1-09-dannye-i-informatsiya/3.md",
+      "1-basics/1-16-grafika/21.md",
+      "1-basics/1-17-audio-i-video/61.md",
+      "1-basics/1-29-gosudarstvo-i-biznes/114.md"
     ],
     "Примеры простых и полезных консольных приложений с демонстрацией концепций языка.": [
       "5-languages/5-05-csharp/161.md",
@@ -81,20 +74,10 @@
       "5-languages/5-07-php/131.md",
       "5-languages/5-10-go/2411.md"
     ],
-    ">-": [
-      "1-basics/1-16-grafika/21.md",
-      "1-basics/1-17-audio-i-video/61.md",
-      "1-basics/1-29-gosudarstvo-i-biznes/114.md"
-    ],
     "Игровые платформы — это устройства, на которых запускаются видеоигры. Они различаются по техническим характеристикам, це": [
       "9-spinoff/9-03-igrovaya-industriya/1141.md",
       "9-spinoff/9-03-igrovaya-industriya/1142.md",
       "9-spinoff/9-03-igrovaya-industriya/1143.md"
-    ],
-    "Демо ниже — нажимайте кнопки и смотрите, как это устроено. Ничего на компьютере не меняется.": [
-      "9-spinoff/9-11-dlya-detey/2-video-games/11.md",
-      "9-spinoff/9-11-dlya-detey/3-development/15.md",
-      "9-spinoff/9-11-dlya-detey/5-kod/5.md"
     ]
   }
 }

@@ -186,10 +186,15 @@ html[data-design]:not([data-design='design-universe-original']) .callout--tip {
 html[data-design]:not([data-design='design-universe-original']) .callout-title,
 html[data-design]:not([data-design='design-universe-original']) .callout,
 html[data-design]:not([data-design='design-universe-original']) .callout p,
-html[data-design]:not([data-design='design-universe-original']) .callout li,
-html[data-design]:not([data-design='design-universe-original']) .callout span,
-html[data-design]:not([data-design='design-universe-original']) .callout div:not(.callout-title) {
+html[data-design]:not([data-design='design-universe-original']) .callout li {
   color: var(--d-callout-fg) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .callout .theme-code-block,
+html[data-design]:not([data-design='design-universe-original']) .callout .theme-code-block *,
+html[data-design]:not([data-design='design-universe-original']) .callout pre,
+html[data-design]:not([data-design='design-universe-original']) .callout pre * {
+  color: inherit;
 }
 
 html[data-design]:not([data-design='design-universe-original']) .callout-title {
@@ -379,10 +384,15 @@ html[data-design='design-universe-original'][data-theme='dark'] .tag-inprogress 
 
 html[data-design='design-universe-original'][data-theme='dark'] .callout,
 html[data-design='design-universe-original'][data-theme='dark'] .callout p,
-html[data-design='design-universe-original'][data-theme='dark'] .callout li,
-html[data-design='design-universe-original'][data-theme='dark'] .callout span,
-html[data-design='design-universe-original'][data-theme='dark'] .callout div:not(.callout-title) {
+html[data-design='design-universe-original'][data-theme='dark'] .callout li {
   color: var(--ifm-color-content) !important;
+}
+
+html[data-design='design-universe-original'][data-theme='dark'] .callout .theme-code-block,
+html[data-design='design-universe-original'][data-theme='dark'] .callout .theme-code-block *,
+html[data-design='design-universe-original'][data-theme='dark'] .callout pre,
+html[data-design='design-universe-original'][data-theme='dark'] .callout pre * {
+  color: inherit;
 }
 
 html[data-design='design-universe-original'][data-theme='dark'] .callout-title {

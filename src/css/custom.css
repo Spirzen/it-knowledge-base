@@ -553,10 +553,16 @@ img {
 
 .callout,
 .callout p,
-.callout li,
-.callout span,
-.callout div:not(.callout-title) {
+.callout li {
   color: #2C3E50 !important;
+}
+
+/* Блоки кода внутри callout — не перекрашивать (Prism-токены и plain-текст) */
+.callout .theme-code-block,
+.callout .theme-code-block *,
+.callout pre,
+.callout pre * {
+  color: inherit;
 }
 
 /* FAQ (вопрос — ответ) */
