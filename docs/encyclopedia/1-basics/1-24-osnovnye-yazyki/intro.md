@@ -7,6 +7,8 @@ related:
     doc: encyclopedia/1-basics/1-23-frontend-i-bekend/intro
   - title: Раздел "Языки"
     doc: encyclopedia/5-languages/intro
+  - title: "LaTeX — формулы для отчётов"
+    doc: lab/examples/1137
 ---
 
 import DocCardList from '@theme/DocCardList';

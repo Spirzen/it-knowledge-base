@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/2
   - title: "Практикум — PromQL"
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/3
+  - title: "Prometheus + Grafana — запросы"
+    doc: lab/examples/11114
 ---
 
 # Практикум Prometheus и Grafana — как пользоваться
@@ -62,7 +64,7 @@ related:
 up
 ```
 
-Если видите `up{job="prometheus"} 1` — Prometheus работает. С windows_exporter также `up{job="windows"} 1`.
+Если видите `up&#123;job="prometheus"&#125; 1` — Prometheus работает. С windows_exporter также `up&#123;job="windows"&#125; 1`.
 
 **Status → Configuration**
 
@@ -84,7 +86,7 @@ up
 
 - Datasource — **Prometheus**
 - Запрос — `up`
-- **Run query** — график или таблица с `up{job="prometheus"} 1`
+- **Run query** — график или таблица с `up&#123;job="prometheus"&#125; 1`
 
 Подробнее про первую панель и дашборд — [шаг 4](./4.md).
 
@@ -139,6 +141,8 @@ curl.exe -X POST http://localhost:<PORT_PROM>/-/reload
 5. **Grafana → Dashboards → Windows → Windows Exporter Dashboard** (если настроен [provisioning](./2.md) с JSON из Grafana.com **14694**).
 
 ### Примеры PromQL для Windows
+
+Готовые запросы с разбором (Linux и HTTP) — [галерея Lab](/lab/Примеры/11114). Ниже — фрагменты для **windows_exporter**:
 
 ```promql
 up{job="windows"}
@@ -365,8 +369,8 @@ flowchart TD
 | Запрос | Смысл |
 |--------|-------|
 | `up` | Кто жив (`1` = UP, `0` = DOWN) |
-| `up{job="my-app"}` | Конкретный job приложения |
-| `up{job="windows"}` | Windows exporter жив |
+| `up&#123;job="my-app"&#125;` | Конкретный job приложения |
+| `up&#123;job="windows"&#125;` | Windows exporter жив |
 | `windows_logical_disk_free_bytes` | Свободное место на диске (Windows) |
 | `rate(http_requests_total[5m])` | RPS за 5 минут |
 | `process_resident_memory_bytes` | Память процесса (если метрика есть) |

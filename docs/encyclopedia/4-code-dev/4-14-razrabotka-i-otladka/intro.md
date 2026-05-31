@@ -5,6 +5,10 @@ description: >-
   pet-проекты, AI-ассистенты и типичные ошибки новичков.
 sidebar_label: Разработка и отладка — о разделе
 related:
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
+  - title: "Генерация кода — ChatGPT, Gemini и DeepSeek"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/117
   - title: "Основы работы с Git — о разделе"
     doc: encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro
   - title: "Автоматическое управление памятью"
@@ -19,9 +23,9 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про практику разработки: от процесса и отладки до оформления репозитория. Сборка, Run в IDE, dev-сервер и перезапуск — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Для README и структуры проекта см. [README — полное руководство](./117). Быстрые проверки HTTP API в терминале — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133). Чтобы вынести пет-проект в интернет бесплатно — [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3); идеи проектов — [Пет-проекты](./114).
+Раздел про практику разработки: от процесса и отладки до оформления репозитория. Сборка, Run в IDE, dev-сервер и перезапуск — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Для README и структуры проекта см. [README — полное руководство](./117). Быстрые проверки HTTP API в терминале — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133). Чтобы вынести пет-проект в интернет бесплатно — [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3); идеи проектов — [Пет-проекты](./114).
 
-Код из ИИ без review — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл «промпт → проверка → merge» — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117).
+Код из ИИ без review — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл «промпт → проверка → merge» — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) и [библиотека промптов](/lab/Примеры/1150) (Python, traceback, рефакторинг, review).
 
 <DocCardList />
 

@@ -171,6 +171,32 @@ export const PRESETS = [
 </html>`,
   },
   {
+    id: 'tailwind',
+    label: 'Tailwind',
+    icon: '🎨',
+    code: `<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tailwind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-dvh flex items-center justify-center bg-indigo-50 p-4">
+  <article class="w-full max-w-sm rounded-xl bg-white p-6 shadow-lg">
+    <h1 class="text-xl font-semibold text-slate-900">Tailwind CSS</h1>
+    <p class="mt-2 text-slate-600">Редактируйте классы — предпросмотр обновится автоматически.</p>
+    <button
+      type="button"
+      class="mt-4 w-full rounded-lg bg-indigo-600 px-4 py-2.5 font-semibold text-white hover:bg-indigo-700 transition-colors"
+    >
+      Начать
+    </button>
+  </article>
+</body>
+</html>`,
+  },
+  {
     id: 'dom',
     label: 'DOM',
     icon: '🔧',

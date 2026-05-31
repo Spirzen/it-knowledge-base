@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro
   - title: "Ассемблер — о разделе"
     doc: encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro
+  - title: "Pascal / Free Pascal — типовые программы"
+    doc: lab/examples/1140
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -35,6 +37,7 @@ import DocCardList from '@theme/DocCardList';
 | 6 | [Первая программа](./7.md) | Lazarus, F9 |
 | 7 | [Архитектура](./3.md) | `uses`, `unit` |
 | 8 | [Справочник](./711.md) | Синтаксис по диалектам |
+| 9 | [Типовые программы (Lab)](/lab/Примеры/1140) | Готовые примеры с разбором |
 
 Завершение: [Итоги](./998.md), [Чек-лист](./999.md).
 

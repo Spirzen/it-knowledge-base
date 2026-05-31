@@ -11,6 +11,18 @@ related:
     doc: encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro
   - title: "CSS — о разделе"
     doc: encyclopedia/3-data-markup/3-10-css/intro
+  - title: "HTML + CSS — готовые макеты"
+    doc: lab/examples/110
+  - title: "HTML-страницы целиком"
+    doc: lab/examples/1153
+  - title: "Tailwind — готовые блоки"
+    doc: lab/examples/1117
+  - title: "React — компоненты-рецепты"
+    doc: lab/examples/1146
+  - title: "CSS-анимации — готовые эффекты"
+    doc: lab/examples/1116
+  - title: "SVG — рисунки кодом"
+    doc: lab/examples/1119
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -34,6 +46,8 @@ HTML — **каркас** страницы: заголовки, абзацы, с
 <BeginnerWebStackHub defaultTab="html" />
 
 <WebPageLayersPlay />
+
+> **Практика целых страниц.** Готовые файлы от `DOCTYPE` до `footer` с разбором тегов (статья, таблица, форма, портфолио): [HTML-страницы целиком](/lab/Примеры/1153). После каркаса — макеты HTML+CSS (центрирование, сетка, адаптив): [HTML + CSS — готовые макеты](/lab/Примеры/110). **Векторные рисунки** в `<svg>` — квадрат, домик, цветок, снежинка с разбором строк: [SVG — рисунки кодом](/lab/Примеры/1119). Тот же каркас на **Tailwind** (классы в `class="..."`, CDN без сборки): [Tailwind — готовые блоки](/lab/Примеры/1117). **Анимации** — fade, спиннер, hover: [CSS-анимации — готовые эффекты](/lab/Примеры/1116). Когда макет понятен, перенесите его в компоненты — [React — компоненты-рецепты](/lab/Примеры/1146) (лендинг, форма, modal).
 
 <DocCardList />
 

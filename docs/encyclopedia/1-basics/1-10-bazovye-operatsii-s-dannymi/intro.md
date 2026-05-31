@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro
   - title: "Программа — о разделе"
     doc: encyclopedia/1-basics/1-19-programma/intro
+  - title: "Python — работа с файлами и текстом"
+    doc: lab/examples/1126
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -27,6 +29,8 @@ import DocCardList from '@theme/DocCardList';
 2. [Чтение и запись](./2) — байты, позиция в файле, буферы ОС.
 3. [Кэширование](./3) — от кэша CPU до page cache и браузера.
 4. [Манипуляции с данными](./4) — CRUD, clipboard, удаление.
+
+На Python теорию I/O и файлов удобно закрепить скриптами с разбором — [Lab — Python, файлы и текст](/lab/Примеры/1126); общая теория байтов и page cache — в [главе 2](./2).
 
 См. также: [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Структуры данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
 

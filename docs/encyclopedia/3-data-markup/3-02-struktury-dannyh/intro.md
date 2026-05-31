@@ -9,13 +9,17 @@ related:
     doc: encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro
   - title: "Алгоритмы — о разделе"
     doc: encyclopedia/4-code-dev/4-01-algoritmy/intro
+  - title: "Алгоритмы на Python — ЕГЭ и олимпиадка"
+    doc: lab/examples/1122
+  - title: "Big-O — шпаргалка с примерами"
+    doc: lab/examples/1128
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про **способы хранения и доступа к данным в памяти**: массив, связный список, стек, очередь, дерево, хеш-таблица — когда что выбирать и какая сложность операций. Таблица `O(·)` по операциям — в [реализации](./2.md); теория классов сложности — в [Нотация Большое O](/encyclopedia/4-code-dev/4-01-algoritmy/311). Это опора для алгоритмов и для понимания коллекций в языках программирования.
+Раздел про **способы хранения и доступа к данным в памяти**: массив, связный список, стек, очередь, дерево, хеш-таблица — когда что выбирать и какая сложность операций. Таблица `O(·)` по операциям — в [реализации](./2.md); теория классов сложности — в [Нотация Большое O](/encyclopedia/4-code-dev/4-01-algoritmy/311); **почему `list` и `set` в Python дают разную сложность** — [Lab / Big-O — 1128](/lab/Примеры/1128#ловушки-python). Это опора для алгоритмов и для понимания коллекций в языках программирования.
 
 Идеи даются **сначала на русском псевдокоде** (`АЛГОРИТМ`, `для`, `вернуть`) — см. [алгоритмический справочник](./2.md#алгоритмический-справочник-псевдокод) в главе про реализацию; затем — синтаксис `List` / `dict` / `Map` в разделах языков.
 
@@ -32,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [История](./11.md) · [Геометрия](./12.md) | по желанию |
 | 4 | [Итоги](./3.md) · [чек-лист](./4.md) | закрепление |
 
-Дальше — коллекции в [языках](/encyclopedia/5-languages/intro) (таблица ниже). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro).
+Дальше — коллекции в [языках](/encyclopedia/5-languages/intro) (таблица ниже). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro). Для **задач ЕГЭ и олимпиад на Python** (`list`, `dict`, `set` в коде решений) — [Lab / 1122](/lab/Примеры/1122#3-словари-множества-и-частоты). На **Pascal** — массив, поиск, префиксы: [Lab / 1140](/lab/Примеры/1140#1-массивы).
 
 ---
 
@@ -51,6 +55,7 @@ import DocCardList from '@theme/DocCardList';
 | Swift | [Данные и коллекции](/encyclopedia/5-languages/5-14-swift/16) | `Array`, `Dictionary`, `Set` |
 | PHP | [Типы данных](/encyclopedia/5-languages/5-07-php/15) | `array` как список и словарь |
 | Ruby | [Типы](/encyclopedia/5-languages/5-11-ruby/13) | `Array`, `Hash` |
+| Pascal | [Типы данных](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/4) | `array`, `record`, `set`; практика — [Lab / 1140](/lab/Примеры/1140#1-массивы) |
 
 <DocCardList />
 

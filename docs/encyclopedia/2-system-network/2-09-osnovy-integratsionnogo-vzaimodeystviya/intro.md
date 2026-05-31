@@ -23,6 +23,14 @@ related:
     doc: encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111
   - title: "MCP-серверы"
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/114
+  - title: "curl / fetch — API-запросы"
+    doc: lab/examples/1133
+  - title: "Fetch / axios — типовые запросы"
+    doc: lab/examples/1145
+  - title: "OpenAI / API — готовые промпты и вызовы"
+    doc: lab/examples/1149
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -38,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 3. [Проектирование API и интеграций](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117) — три сквозных примера (B2B REST, OAuth/webhooks, mTLS/JWS/AsyncAPI/outbox) и маршрут по главам.
 4. [Авторизация в интеграционных сценариях](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1121) — [JWT и API-ключи](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1121#tokens-i-api-keys), OAuth M2M, mTLS.
 5. [12 советов по безопасности API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132) — HTTPS, rate limiting, gateway, OWASP и чек-лист для ревью; углубление — [атаки на API](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/128).
-6. [Postman и curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) — ручная проверка запросов; таблица методов и связь с retry — в той же главе. Полная шпаргалка по CLI-запросам и флагам — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133).
+6. [Postman и curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) — ручная проверка запросов; таблица методов и связь с retry — в той же главе. CLI — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133). JavaScript в браузере — [Fetch / axios — типовые запросы](/lab/Примеры/1145). Вызов LLM API — [OpenAI / API](/lab/Примеры/1149), текст `messages` — [Prompt engineering — библиотека](/lab/Примеры/1150).
 7. [Типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), [идемпотентность и семантика доставки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/133), [RabbitMQ](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122), [Kafka](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123), [Redis в интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129) — когда HTTP «здесь и сейчас» недостаточно.
 8. [12 концепций распределённой архитектуры](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/141) — очереди, pub/sub, API Gateway, circuit breaker в одной таблице.
 

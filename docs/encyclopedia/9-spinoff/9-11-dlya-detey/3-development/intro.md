@@ -13,7 +13,7 @@ import BlockBuilder from '@site/src/components/BlockBuilder';
 
 **Рекомендуемый порядок:** [Алгоритм](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/1) → задачи и отладка → [цифровая гигиена](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/16). Темы про здоровье и время за экраном удобно обсудить с родителем или педагогом.
 
-**3D и VR в учебных проектах:** [Tinkercad](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/18), [CoSpaces Edu](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/17).
+**3D и VR в учебных проектах:** [Tinkercad](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/18), [CoSpaces Edu](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/17). **Электроника в браузере:** [Tinkercad Circuits](/encyclopedia/2-system-network/2-10-zhelezo/1013), [скетчи Arduino/micro:bit в Lab](/lab/Примеры/1135).
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>

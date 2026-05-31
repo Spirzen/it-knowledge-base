@@ -17,7 +17,14 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Команды из README (`npm run`, `dotnet run`, `docker compose up`) и кнопка Run в IDE — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
+Команды из README (`npm run`, `dotnet run`, `docker compose up`) и кнопка Run в IDE — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Готовые `compose.yaml` для локального стека — [Docker Compose — готовые стеки](/lab/Примеры/11111).
+
+| Шаг | Материал | Зачем |
+|-----|----------|-------|
+| 1 | [Проект ПО](./1.md) | Структура, `.csproj`, `pyproject.toml` |
+| 2 | [Библиотека](./101.md) | Сторонние пакеты и менеджеры |
+| 3 | [Манифесты зависимостей](./103.md) | `requirements.txt`, `package.json`, Dockerfile — одна команда установки; в CI — [рецепты GitHub Actions](/lab/Примеры/1134); готовые Dockerfile — [галерея Lab](/lab/Примеры/11113) |
+| 4 | [Сборка и публикация](./102.md) | От исходника до артефакта |
 
 <DocCardList />
 

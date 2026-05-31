@@ -15,6 +15,16 @@ related:
     doc: encyclopedia/7-project/7-12-konstruirovanie-po/intro
   - title: "Разработка и ОЭ ERP"
     doc: encyclopedia/7-project/7-15-vnedrenie-erp-sistem/9
+  - title: "curl / fetch — API-запросы"
+    doc: lab/examples/1133
+  - title: "Fetch / axios — типовые запросы"
+    doc: lab/examples/1145
+  - title: "GitHub Actions — CI/CD рецепты"
+    doc: lab/examples/1134
+  - title: "Docker Compose — готовые стеки"
+    doc: lab/examples/11111
+  - title: "Bash — однострочники и скрипты"
+    doc: lab/examples/1151
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -32,7 +42,7 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
   <div class="callout-title">PostgreSQL на стенде тестировщика</div>
 
   <div class="callout-body">
-  <p>Для SQL-проверок и API-тестов с данными <strong>поставьте PostgreSQL</strong> локально (или в Docker) и держите учебную базу под рукой. Установка — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a>; запросы для QA — <a href="./129.md">SQL для тестировщика</a>; практика по СУБД — <a href="/encyclopedia/3-data-markup/3-07-sql/888">PostgreSQL — практическая работа</a>.</p>
+  <p>Для SQL-проверок и API-тестов с данными <strong>поставьте PostgreSQL</strong> локально (или в Docker) и держите учебную базу под рукой. Установка — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a>; запросы для QA — <a href="./129.md">SQL для тестировщика</a>; практика по СУБД — <a href="/encyclopedia/3-data-markup/3-07-sql/888">PostgreSQL — практическая работа</a>; готовый <code>compose.yaml</code> для Postgres — <a href="/lab/Примеры/11111#3-только-postgresql-для-разработки">стек №3</a> в галерее Compose.</p>
 </div>
   </div>
 
@@ -52,7 +62,8 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 | 5 | [Ручное тестирование веба](./128.md) | Чек-лист UI, Network, сессии |
 | 6 | [Техники проектирования тестов](./127.md) | Эквивалентные классы, границы, таблицы решений |
 | 7 | [SQL для тестировщика](./129.md) | Проверка данных в БД |
-| 8 | [Тестирование и анализ API](./2.md) | Postman, curl, DevTools |
+| 8 | [Тестирование и анализ API](./2.md) · [curl / fetch — примеры](/lab/Примеры/1133) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) · [Bash — health-check в shell](/lab/Примеры/1151) | Postman, curl, DevTools; галереи запросов и скриптов с разбором |
+| 8a | [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134) · [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) | Запуск `pytest` / `npm test` в pipeline, badge в README |
 | 9 | [Подготовка среды и первый тест](./1011.md) | Первый автотест на pytest (SDET) |
 | 10 | [Unit, Integration, UI, E2E, TDD и BDD](./131.md) | Карта уровней тестов и практик разработки |
 | 11 | [Тренируем TDD](/lab/Кейсы/7) | Практика цикла Red-Green-Refactor (лабораторный кейс) |
@@ -70,9 +81,9 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 | Основы QA, документы, тест-дизайн | [1](./1.md), [111](./111.md), [119](./119.md), [127](./127.md) | Покрыто |
 | Основы веб-тестирования (маршрут QA) | [132](./132.md) | Добавлено |
 | Ручное веб-тестирование, DevTools | [128](./128.md), [2](./2.md) | Покрыто |
-| API, HTTP, Postman, curl | [2](./2.md) · [интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133) | Покрыто |
+| API, HTTP, Postman, curl | [2](./2.md) · [интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Fetch / axios — типовые запросы](/lab/Примеры/1145) | Покрыто |
 | SQL для проверки данных | [129](./129.md) · [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) | Покрыто |
-| Автоматизация, пирамида, инструменты | [115](./115.md), [118](./118.md), [1181](./1181.md), [1182](./1182.md) (Playwright, POM, pytest, Allure, CI) | Покрыто |
+| Автоматизация, пирамида, инструменты | [115](./115.md), [118](./118.md), [1181](./1181.md), [1182](./1182.md) (Playwright, POM, pytest, Allure, CI) · [CI/CD рецепты](/lab/Примеры/1134) | Покрыто |
 | Практикум **Python** | [1011](./1011.md) → [1014](./1014.md) | Покрыто |
 | Практикум **Java** | [1015](./1015.md) · JUnit/REST Assured в [118](./118.md) | Добавлено |
 | Практикум **JavaScript** | [1016](./1016.md) · Jest/Playwright в [118](./118.md) | Добавлено |
@@ -140,8 +151,8 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 
   <div class="callout-body">
   - SQL для проверки данных в БД: [SQL для тестировщика](./129.md) и [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro); практика по СУБД — [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)
-  - HTTP и Postman глубже: [Основы интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133)
-  - CI/CD и запуск тестов в пайплайне: [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro)
+  - HTTP и Postman глубже: [Основы интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Fetch / axios — типовые запросы](/lab/Примеры/1145)
+  - CI/CD и запуск тестов в пайплайне: [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro), [GitHub Actions — рецепты](/lab/Примеры/1134); установка зависимостей в job — [Манифесты зависимостей](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/103)
   - Карьера и роли: [Карьера в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/1)
   - Стадия конструирования и V-модель (unit на этапе кода): [Конструирование ПО](/encyclopedia/7-project/7-12-konstruirovanie-po/intro)
   - Курс "экономика производства ПО" (COCOMO, ISO 25010, приёмка): [7-13](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)

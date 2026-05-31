@@ -13,6 +13,10 @@ related:
     doc: encyclopedia/6-ai/6-01-vvedenie-v-ii/intro
   - title: "Разработка ИИ — о разделе"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/intro
+  - title: "NumPy — массивы и матрицы"
+    doc: lab/examples/1129
+  - title: "Первое обучение — перцептрон на NumPy"
+    doc: encyclopedia/6-ai/6-03-neyroseti/2
   - title: "Keras и TensorFlow — нейросети"
     doc: encyclopedia/6-ai/6-03-neyroseti/114
   - title: "PyTorch для разработчика"
@@ -21,13 +25,15 @@ related:
     doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/10
   - title: "Распознавание лиц, объектов и текста"
     doc: encyclopedia/6-ai/6-06-primenenie-ii/120
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-От [нейрона и слоёв](/encyclopedia/6-ai/6-03-neyroseti/1) — к [первому обучению на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2), затем [Трансформеры и NLP](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [PyTorch для разработчика](/encyclopedia/5-languages/5-02-python/333) или [Keras и TensorFlow](/encyclopedia/6-ai/6-03-neyroseti/114) и обзору концепций в [112](/encyclopedia/6-ai/6-03-neyroseti/112).
+От [нейрона и слоёв](/encyclopedia/6-ai/6-03-neyroseti/1) — к [NumPy — массивы и матрицы](/lab/Примеры/1129) (если ещё не работали с `ndarray`), затем [первому обучению на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2), далее [Трансформеры и NLP](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [PyTorch для разработчика](/encyclopedia/5-languages/5-02-python/333) или [Keras и TensorFlow](/encyclopedia/6-ai/6-03-neyroseti/114) и обзору концепций в [112](/encyclopedia/6-ai/6-03-neyroseti/112). Для диалога с ChatGPT без курса по ML — [Prompt engineering — библиотека промптов](/lab/Примеры/1150) и [краткое введение в нейросети](/encyclopedia/6-ai/6-03-neyroseti/111).
 
 <div class="callout callout--tip">
   <div class="callout-title">Сначала табличный ML</div>

@@ -3,6 +3,8 @@ title: AgentOps и MLOps — о разделе
 description: "Эксплуатация LLM-стека: MLOps на слоях 1–3 (данные, модель) и AgentOps на слоях 4–7 (оркестрация, инференс, интеграция, продукт)."
 sidebar_label: AgentOps и MLOps — о разделе
 related:
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
   - title: "MLOps и LLM-стек — слои 1–3"
     doc: encyclopedia/6-ai/6-08-agentops/2
   - title: "AgentOps и LLM-стек — слои 4–7"
@@ -46,6 +48,8 @@ import DocCardList from '@theme/DocCardList';
 ## См. также
 
 - [Развёртывание ИИ-моделей](/encyclopedia/6-ai/6-05-razrabotka-ii/111)
+- [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149) — контроль расходов токенов на уровне кода
+- [Prompt engineering — библиотека промптов](/lab/Примеры/1150) — версионируемые шаблоны system/user и RAG в git
 - [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1)
 - [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812)
 

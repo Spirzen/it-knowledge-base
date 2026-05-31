@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/5-languages/5-05-csharp/451
   - title: "Платформа .NET — о разделе"
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/intro
+  - title: "C# WinForms и WPF — простые окна"
+    doc: lab/examples/1138
   - title: "C++ — о разделе"
     doc: encyclopedia/5-languages/5-06-cpp/intro
   - title: "Java — о разделе"
@@ -23,6 +25,8 @@ related:
     doc: encyclopedia/5-languages/5-05-csharp/48
   - title: "Разработка игр — о разделе"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/intro
+  - title: "Unity C# — скрипты для новичков"
+    doc: lab/examples/1136
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -48,6 +52,7 @@ import DocCardList from '@theme/DocCardList';
 ## С чего начать
 
 1. [C# — язык платформы .NET](/encyclopedia/5-languages/5-05-csharp/1) — проекты, сборки, `using`, консоль.
+1a. [Main и top-level statements — точка входа](/encyclopedia/5-languages/5-05-csharp/49) — `Program.cs`, exe vs library.
 2. [Синтаксис и пунктуация](/encyclopedia/5-languages/5-05-csharp/11), [переменные](/encyclopedia/5-languages/5-05-csharp/17), [типы и приведения](/encyclopedia/5-languages/5-05-csharp/20).
 3. [Пространства имён](/encyclopedia/5-languages/5-05-csharp/12), [nullable](/encyclopedia/5-languages/5-05-csharp/22), [исключения](/encyclopedia/5-languages/5-05-csharp/15).
 4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции и кортежи](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29).
@@ -59,11 +64,11 @@ import DocCardList from '@theme/DocCardList';
 
 ## C# для Unity
 
-Unity-скрипты — это обычный C# плюс API движка (`UnityEngine`). Если вы учите язык **ради игр**, не обязательно проходить весь раздел до ASP.NET — достаточно ветки ниже параллельно с [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3).
+Unity-скрипты — это обычный C# плюс API движка (`UnityEngine`). Если вы учите язык **ради игр**, не обязательно проходить весь раздел до ASP.NET — достаточно ветки ниже параллельно с [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3). Готовые `MonoBehaviour` с разбором строк — [Unity C# — скрипты для новичков](/lab/Примеры/1136).
 
 | Тема в Unity | Статья C# | Комментарий |
 |--------------|-----------|-------------|
-| Переменные, типы, `if`/`for` | [17](/encyclopedia/5-languages/5-05-csharp/17), [20](/encyclopedia/5-languages/5-05-csharp/20), [18](/encyclopedia/5-languages/5-05-csharp/18) | Основа до `MonoBehaviour` |
+| Переменные, типы, `if`/`for` | [17](/encyclopedia/5-languages/5-05-csharp/17), [20](/encyclopedia/5-languages/5-05-csharp/20), [18](/encyclopedia/5-languages/5-05-csharp/18) (в т.ч. [boxing и `int?`](/encyclopedia/5-languages/5-05-csharp/18#znachimye-tipy-i-boxing)) | Основа до `MonoBehaviour` |
 | Классы, наследование, `GetComponent` | [25](/encyclopedia/5-languages/5-05-csharp/25) — блок **Unity** | `MonoBehaviour`, композиция |
 | `List`, `Dictionary`, `Stack`, `HashSet` | [28](/encyclopedia/5-languages/5-05-csharp/28) | Инвентарь, пулы, лут |
 | `enum`, свойства `get`/`set` | [25](/encyclopedia/5-languages/5-05-csharp/25), [18](/encyclopedia/5-languages/5-05-csharp/18) | Состояние игрока, `KeyCode` |
@@ -109,15 +114,15 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 
 Общая теория окон, элементов и UI-потока — [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Особенности разработки](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md), [раздел «Десктопные приложения»](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro).
 
-| Стек | Теория / практика | Элементы UI |
-|------|-------------------|-------------|
-| WinForms | [115.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/115) | [1152.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1152) |
-| WPF | [119.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119) | [1192.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1192) |
+| Стек | Теория / практика | Элементы UI | Примеры в Lab |
+|------|-------------------|-------------|---------------|
+| WinForms | [115.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/115) | [1152.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1152) | [1138](/lab/Примеры/1138) |
+| WPF | [119.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119) | [1192.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1192) | [1138](/lab/Примеры/1138) |
 | Windows-платформа | [116.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/116) | — |
 | UI-фреймворки .NET | [13.md](../5-04-platforma-dotnet/13.md) | — |
 | Кроссплатформа | [MAUI — первая программа](./4513.md) | [мобильный раздел](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) |
 
----
+**Галерея для лабораторной и курсовой** — [C# WinForms и WPF — простые окна](/lab/Примеры/1138): полный `Program.cs`, кнопка, TextBox, MessageBox, конвертер температуры, to-do с построчным разбором (аналог [Tkinter в Lab](/lab/Примеры/1124) для Python).
 
 ## Веб на .NET
 

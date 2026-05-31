@@ -21,11 +21,19 @@ related:
     doc: encyclopedia/6-ai/6-06-primenenie-ii/120
   - title: "Векторные базы данных"
     doc: encyclopedia/3-data-markup/3-06-nosql/812
+  - title: "OpenAI / API — готовые промпты и вызовы"
+    doc: lab/examples/1149
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
+  - title: "Интеграция ИИ-моделей в Python"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/112
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+Первый вызов Chat Completions из Python с разбором строк — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149). Шаблоны system/user для чата и RAG — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Промышленные паттерны клиента — [интеграция ИИ-моделей в Python](/encyclopedia/6-ai/6-05-razrabotka-ii/112).
 
 <DocCardList />
 

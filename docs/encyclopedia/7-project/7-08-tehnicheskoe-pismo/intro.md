@@ -11,6 +11,12 @@ related:
     doc: encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111
   - title: "SQL — о разделе"
     doc: encyclopedia/3-data-markup/3-07-sql/intro
+  - title: "LaTeX — формулы для отчётов"
+    doc: lab/examples/1137
+  - title: "SymPy — уравнения и производные"
+    doc: lab/examples/1118
+  - title: "Word и Excel в проектной документации"
+    doc: encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -42,6 +48,8 @@ import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 | [Качество документации](1004.md) | Метрики понятности, типичные провалы | Руководителям, ревьюерам |
 | [Архитектура документации](1005.md) | Элементы, стили, шаблоны | Руководителям, техписам |
 | [Word и Excel в проектной документации](1007.md) | Оглавление, реестр требований, рецензирование | Аналитикам, перед сдачей DOCX |
+| [LaTeX — формулы для отчётов](/lab/Примеры/1137) | Дроби, интегралы, шаблон лабораторной | Студентам STEM, школьным олимпиадникам |
+| [SymPy — уравнения и производные](/lab/Примеры/1118) | Корни, производные, LaTeX из Python | Школа, матан, проверка ДЗ |
 | [Swagger / OpenAPI](3.md) | Спецификация REST API | Backend, интеграторы |
 | [Стилевые паттерны](11.md) | Гайдлайны без догмы | Редакторам, авторам |
 | [Навигатор по ГОСТ](22.md) | Серия 19 vs 34, стадии, мост к Agile | Аналитикам, архитекторам |
@@ -78,7 +86,7 @@ import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 ## Оформление документов (практика)
 
-Ниже — тренажёры по базовому оформлению в Word и Excel. Они не заменяют раздел про техпис, но помогают, если вам нужно сверстать формальный комплект или таблицу требований. Пошаговые рецепты — в [Word и Excel в проектной документации](1007.md); базовый курс — [Word](/encyclopedia/1-basics/1-15-tekst/211) и [Excel](/encyclopedia/1-basics/1-15-tekst/212).
+Ниже — тренажёры по базовому оформлению в Word и Excel. Они не заменяют раздел про техпис, но помогают, если вам нужно сверстать формальный комплект или таблицу требований. Пошаговые рецепты — в [Word и Excel в проектной документации](1007.md); базовый курс — [Word](/encyclopedia/1-basics/1-15-tekst/211) и [Excel](/encyclopedia/1-basics/1-15-tekst/212). Отчёт с формулами и PDF для вуза — [LaTeX — формулы для отчётов](/lab/Примеры/1137); расчёт корней и производных в Python — [SymPy — уравнения и производные](/lab/Примеры/1118).
 
 <WordSimulator />
 

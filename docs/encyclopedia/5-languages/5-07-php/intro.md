@@ -28,7 +28,7 @@ import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 PHP выполняется **на сервере**: браузер получает уже готовый HTML. Язык изначально задумывали как **препроцессор гипертекста** — программу, которая обрабатывает файл страницы и подставляет динамические фрагменты в [HTML-разметку](/encyclopedia/3-data-markup/3-09-html/1) (гипертекст со ссылками и формами). Часто код вставляют между `<?php` … `?>`; в новых проектах чаще отдельные entrypoint-файлы и шаблоны (Blade, Twig).
 
-> **Теория веба:** [гипертекст и ссылки](/encyclopedia/3-data-markup/3-09-html/1#gipertekst-i-giperssylki), [статическая и динамическая страница](/encyclopedia/3-data-markup/3-09-html/1#veb-stranitsa) — в разделе HTML; [что такое PHP](/encyclopedia/5-languages/5-07-php/1), [история](./11.md) — здесь.
+> **Теория веба:** [гипертекст и ссылки](/encyclopedia/3-data-markup/3-09-html/1#gipertekst-i-giperssylki), [статическая и динамическая страница](/encyclopedia/3-data-markup/3-09-html/1#veb-stranitsa) — в разделе HTML; [что такое PHP](/encyclopedia/5-languages/5-07-php/1), [история](./11.md) — здесь. Статический каркас страницы до PHP — [HTML-страницы целиком](/lab/Примеры/1153), затем оформление — [HTML + CSS — готовые макеты](/lab/Примеры/110) или [Tailwind — готовые блоки](/lab/Примеры/1117). Конфиг nginx + PHP-FPM — [Nginx — конфиги под задачу](/lab/Примеры/11112).
 
 Материалы раздела ориентированы на **PHP 8.1+**; устаревшие API (`mysql_*`, `FILTER_SANITIZE_STRING` и др.) упоминаются только в историческом контексте или с пометкой об удалении.
 
@@ -39,6 +39,7 @@ PHP выполняется **на сервере**: браузер получа�
 ### Рекомендуемая траектория для новичка
 
 1. [Первая программа](/encyclopedia/5-languages/5-07-php/13) → синтаксис и типы (`14`–`17`, `152`, `153`)
+1a. [index.php и require — точка входа](/encyclopedia/5-languages/5-07-php/40) → entrypoint vs подключаемые файлы
 2. [Данные со страницы](/encyclopedia/5-languages/5-07-php/151) → [загрузка файлов и валидация](/encyclopedia/5-languages/5-07-php/162) → [сессии](/encyclopedia/5-languages/5-07-php/155)
 3. [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) (по желанию) → [ООП в PHP](/encyclopedia/5-languages/5-07-php/18) → [пространства имён](/encyclopedia/5-languages/5-07-php/157) → [enum, readonly, атрибуты](/encyclopedia/5-languages/5-07-php/158)
 4. [Исключения в коде](/encyclopedia/5-languages/5-07-php/159) и [иерархия типов](/encyclopedia/5-languages/5-07-php/181)

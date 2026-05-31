@@ -9,6 +9,10 @@ related:
     doc: encyclopedia/6-ai/6-09-transformery-i-nlp/2
   - title: "Большие языковые модели"
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/1
+  - title: "OpenAI / API — готовые промпты и вызовы"
+    doc: lab/examples/1149
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
   - title: "Нейросети — о разделе"
     doc: encyclopedia/6-ai/6-03-neyroseti/intro
   - title: "Обучение на базе готовой модели"
@@ -38,7 +42,7 @@ import DocCardList from '@theme/DocCardList';
   8. [Мультимодальные трансформеры](./8) — ViT, Whisper, CLIP.
   9. [Итоги](./98) и [чек-лист](./999).
 
-  Перед разделом полезны [нейрон и слои](/encyclopedia/6-ai/6-03-neyroseti/1), [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2) и [PyTorch для разработчика](/encyclopedia/5-languages/5-02-python/333). После — [LLM и ChatGPT](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1) и [работа с ИИ-моделями](/encyclopedia/6-ai/6-05-razrabotka-ii/113).
+  Перед разделом полезны [нейрон и слои](/encyclopedia/6-ai/6-03-neyroseti/1), [NumPy — массивы и матрицы](/lab/Примеры/1129), [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2) и [PyTorch для разработчика](/encyclopedia/5-languages/5-02-python/333). После — [LLM и ChatGPT](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1), [работа с ИИ-моделями](/encyclopedia/6-ai/6-05-razrabotka-ii/113), вызов API — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149) и шаблоны запросов — [Prompt engineering — библиотека промптов](/lab/Примеры/1150).
 </div>
 
 <DocCardList />

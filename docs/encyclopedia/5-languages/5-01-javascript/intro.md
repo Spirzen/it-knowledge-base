@@ -23,6 +23,22 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Веб-игры на HTML5 и Canvas"
     doc: encyclopedia/3-data-markup/3-09-html/22
+  - title: "Примеры фигур на Processing/p5.js"
+    doc: lab/examples/1114
+  - title: "SVG — рисунки кодом"
+    doc: lab/examples/1119
+  - title: "CSS-анимации — готовые эффекты"
+    doc: lab/examples/1116
+  - title: "HTML + CSS — готовые макеты"
+    doc: lab/examples/110
+  - title: "HTML-страницы целиком"
+    doc: lab/examples/1153
+  - title: "Fetch / axios — типовые запросы"
+    doc: lab/examples/1145
+  - title: "React — компоненты-рецепты"
+    doc: lab/examples/1146
+  - title: "curl / fetch — API-запросы"
+    doc: lab/examples/1133
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -52,7 +68,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | **Electron** | десктоп на Chromium + Node.js | [Применение](./14.md) |
 | **webOS** | платформа устройств (TV) на веб-технологиях | [Применение](./14.md) |
 | **jQuery** | библиотека DOM и AJAX (2006+) | [Экосистема](./25.md) |
-| **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md) ([карта тем](./27.md#карта-тем-react), [первая программа](./272.md), [справочник](./271.md)), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
+| **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md) ([карта тем](./27.md#карта-тем-react), [первая программа](./272.md), [справочник](./271.md), [галерея компонентов](/lab/Примеры/1146)), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
@@ -80,11 +96,13 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 2 | [Асинхронное программирование](./21.md) | Promise, `async/await`, `fetch`, очереди задач |
 | 3 | [Работа с HTML](./102.md) + [События](./23.md) | доступ к DOM, `addEventListener`, реакция на действия пользователя |
 | 3a | [Canvas 2D](./47.md) | программируемая графика на `<canvas>` |
+| 3b | [Примеры фигур p5.js](/lab/Примеры/1114) | квадрат, цветок, фракталы — готовые скетчи с разбором строк |
 | 4 | [BOM](./41.md) | `window`, `location`, `history`, `navigator`, geolocation |
-| 5 | [Практика](./32.md) | рабочие сниппеты: URL-параметры, `fetch`, буфер обмена |
+| 5 | [Практика](./32.md) · [curl / fetch — примеры](/lab/Примеры/1133) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) | рабочие сниппеты и галереи: GET/POST, токен, таймаут, React `useEffect` — с построчным разбором |
 | 6 | [Web Share API](./44.md) | системное окно «Поделиться» через `navigator.share` |
 | 7 | [Notification API](./46.md) | разрешения и нативные уведомления браузера |
 | 8 | [Первая программа на React](./272.md) | подключение API в компонентном UI |
+| 8a | [React — компоненты-рецепты](/lab/Примеры/1146) | счётчик, todo, формы, modal, Router — готовый код с разбором строк |
 
 Этот маршрут даёт полноценный переход от нативных API браузера к прикладным интеграциям в реальных интерфейсах.
 
@@ -92,7 +110,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 ### Важно про TypeScript
 
-Если идёте в сторону крупных frontend/backend-проектов, добавьте в маршрут [TypeScript](./30.md). Для ветки 7.x в экосистеме TypeScript анонсирован нативный компилятор на Go: это ориентировано на более быструю проверку типов и сборку в больших кодовых базах, особенно в CI/CD.
+Если идёте в сторону крупных frontend/backend-проектов, добавьте в маршрут [TypeScript](./30.md). Для ветки 7.x в экосистеме TypeScript анонсирован нативный компилятор на Go: это ориентировано на более быструю проверку типов и сборку в больших кодовых базах, особенно в CI/CD. Примеры workflow для Node — [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134).
 
 Практический вывод: при обновлении toolchain проверяйте официальные release notes TypeScript и совместимость вашей инфраструктуры.
 
@@ -125,7 +143,8 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 1a | [Типы данных](./18.md) | Примитивы, [методы строк](./18.md#методы-строк) (`charAt`, `includes`, `slice`, …) |
 | 1b | [TypeScript](./30.md) | Типизация и масштабирование больших проектов |
 | 2 | [Первая программа на Node.js](./262.md) → [Express](./263.md) | Консоль, npm, `http`, REST API |
-| 3 | [React](./272.md) · [Vue](./282.md) · [Next](./2731.md) | UI |
+| 2a | [Точка входа в Node.js](./48.md) | `require.main`, ESM и прямой `node file.js` |
+| 3 | [React](./272.md) · [галерея компонентов](/lab/Примеры/1146) · [Vue](./282.md) · [Next](./2731.md) | UI |
 | 3b | [Fullstack](./264.md) | API + фронт, CORS |
 | 4 | [Angular](./292.md) | Крупные SPA (по желанию) |
 | 5 | [Electron + React](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118) | Десктоп |
@@ -137,7 +156,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
   <div class="callout-title">Маршрут: от Node до fullstack</div>
 
   <div class="callout-body">
-  Последовательность «сервер → браузер → сборка»: <a href="./262.md">262</a> (Node до Express) → <a href="./18.md">типы и Date</a> → <a href="./21.md">async и fetch</a> → <a href="./102.md">DOM</a> → <a href="./47.md">Canvas</a> → <a href="./25.md#сборка-для-браузера--webpack-и-vite">Webpack / Vite</a> → <a href="./263.md">Express</a> → <a href="./264.md">Fullstack</a>.
+  Последовательность «сервер → браузер → сборка»: <a href="./262.md">262</a> (Node до Express) → <a href="./18.md">типы и Date</a> → <a href="./21.md">async и fetch</a> → <a href="/lab/Примеры/1145">Fetch / axios — типовые запросы</a> → <a href="./102.md">DOM</a> → <a href="./47.md">Canvas</a> → <a href="/lab/Примеры/1114">p5.js — фигуры</a> → <a href="./25.md#сборка-для-браузера--webpack-и-vite">Webpack / Vite</a> → <a href="./263.md">Express</a> → <a href="./264.md">Fullstack</a>.
 </div>
 </div>
 
@@ -145,7 +164,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
   <div class="callout-title">Инструменты для старта</div>
 
   <div class="callout-body">
-  <strong>VS Code</strong>, встроенный терминал, <strong>Live Server</strong> и <strong>Emmet</strong> для HTML/CSS — в разделе <a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111">отладка в браузере</a> и <a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10">IDE и редакторы</a>. Разметка — <a href="/encyclopedia/3-data-markup/3-09-html/intro">HTML</a>, стили — <a href="/encyclopedia/3-data-markup/3-10-css/intro">CSS</a>.
+  <strong>VS Code</strong>, встроенный терминал, <strong>Live Server</strong> и <strong>Emmet</strong> для HTML/CSS — в разделе <a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111">отладка в браузере</a> и <a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10">IDE и редакторы</a>. Разметка — <a href="/encyclopedia/3-data-markup/3-09-html/intro">HTML</a>, стили — <a href="/encyclopedia/3-data-markup/3-10-css/intro">CSS</a>. Целый <code>index.html</code> с разбором тегов — <a href="/lab/Примеры/1153">HTML-страницы целиком</a>. Макеты до первого скрипта — <a href="/lab/Примеры/110">HTML + CSS — готовые макеты</a>, Tailwind — <a href="/lab/Примеры/1117">Tailwind — готовые блоки</a>, анимации — <a href="/lab/Примеры/1116">CSS-анимации — готовые эффекты</a>.
 </div>
 </div>
 

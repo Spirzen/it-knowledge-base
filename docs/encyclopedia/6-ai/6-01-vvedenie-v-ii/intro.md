@@ -11,13 +11,17 @@ related:
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro
   - title: "Разработка ИИ — о разделе"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/intro
+  - title: "OpenAI / API — готовые промпты и вызовы"
+    doc: lab/examples/1149
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Вводный блок: отличие ML от маркетингового "ИИ", ИИ в быту, история, типы моделей, контекст для LLM. Начните с [главной статьи раздела](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1). Практический старт в коде — [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2). Агенты с терминалом — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
+Вводный блок: отличие ML от маркетингового "ИИ", ИИ в быту, история, типы моделей, контекст для LLM. Начните с [главной статьи раздела](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1). Практический старт в коде: [NumPy — массивы и матрицы](/lab/Примеры/1129), затем [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2); вызов OpenAI API из Python — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149); готовые формулировки запросов с разбором — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Агенты с терминалом — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
 
 <DocCardList />
 

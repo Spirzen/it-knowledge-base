@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro
   - title: Компетенции бэкенда
     doc: encyclopedia/1-basics/1-23-frontend-i-bekend/4
+  - title: "Fetch / axios — типовые запросы"
+    doc: lab/examples/1145
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -20,7 +22,7 @@ import DocCardList from '@theme/DocCardList';
 Рекомендуемый маршрут:
 
 0. [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) — `npm run dev`, локальный сервер и браузер (если путаете терминал и веб-интерфейс).
-1. [Фронтенд](./1.md) — клиент, верстка, API с браузера, роли в команде.
+1. [Фронтенд](./1.md) — клиент, верстка, API с браузера, роли в команде. Готовые примеры `fetch` и axios — [Fetch / axios — типовые запросы](/lab/Примеры/1145).
 2. [Бэкенд](./2.md) — сервер, API, данные, нагрузка.
 3. [Метрики производительности](./3.md) — QPS, latency, перцентили, SLO; в паре с [наблюдаемостью](./9.md) (логи, алерты, аудит).
 4. [Матрица компетенций бэкенда](./4.md) и [чек-лист самопроверки](./99.md).

@@ -13,6 +13,16 @@ related:
     doc: encyclopedia/5-languages/5-15-lua-i-luau/intro
   - title: "Разработка игр на Python"
     doc: encyclopedia/5-languages/5-02-python/312
+  - title: "Pygame — мини-игры на Python"
+    doc: lab/examples/1132
+  - title: "Minecraft — команды и datapack"
+    doc: lab/examples/1142
+  - title: "Roblox / Luau — скрипты для новичков"
+    doc: lab/examples/1141
+  - title: "Unity C# — скрипты для новичков"
+    doc: lab/examples/1136
+  - title: "Roblox / Luau — скрипты"
+    doc: lab/examples/1141
   - title: "Практикум разработки игр — о разделе"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Игроведение — о разделе"
@@ -40,6 +50,10 @@ import DocCardList from '@theme/DocCardList';
 | **Обзор** | Контекст, термины, сравнения | [Процесс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1), [Движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112), [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) |
 | **Практика в редакторе** | Пошагово в движке | [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3), [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4), [Roblox — Studio](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203), [обби](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) |
 | **Практикум на коде** | Мини-игры на Python и Java | [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |
+| **Быстрые примеры Pygame** | Один файл — одна игра, разбор строк | [Pygame — мини-игры](/lab/Примеры/1132) |
+| **Команды и datapack Minecraft** | Чат, scoreboard, `mcfunction`, load/tick | [Minecraft — команды и datapack](/lab/Примеры/1142) |
+| **Быстрые скрипты Unity** | Один скрипт — одна механика, разбор строк | [Unity C# — скрипты](/lab/Примеры/1136) |
+| **Быстрые скрипты Roblox** | Script, LocalScript, RemoteEvent — разбор строк | [Roblox / Luau — скрипты](/lab/Примеры/1141) |
 | **Справочник** | API, горячие клавиши, lifecycle | [301](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301), [401](/encyclopedia/9-spinoff/9-04-razrabotka-igr/401), [201](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201) |
 | **Платформы и качество** | Где публиковать, как не тормозить | [PC](/encyclopedia/9-spinoff/9-04-razrabotka-igr/118)–[122](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), [Тестирование](/encyclopedia/9-spinoff/9-04-razrabotka-igr/124) |
 | **Внешний каталог** | Open-source клоны для разбора исходников | [Каталог клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125) ([osgameclones.com](https://osgameclones.com/)) |
@@ -93,7 +107,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Как учиться эффективно</div>
 
   <div class="callout-body">
-  Держите открытыми Unity и IDE: повторяйте примеры из <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/3">главы 3</a>, не копируя слепо — меняйте параметры (скорость, радиус агента, win-условие). После каждого блока — 3–5 вопросов из <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/999">чек-листа Unity/C#</a>.
+  Держите открытыми Unity и IDE: повторяйте примеры из <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/3">главы 3</a> и <a href="/lab/Примеры/1136">галереи скриптов в Lab</a>, не копируя слепо — меняйте параметры (скорость, радиус агента, win-условие). После каждого блока — 3–5 вопросов из <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/999">чек-листа Unity/C#</a>.
 </div>
 </div>
 
@@ -118,7 +132,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Как учиться эффективно</div>
 
   <div class="callout-body">
-  Держите открытыми Studio и статью <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/204">204</a>: повторяйте модули и чекпоинты, меняя число этапов и цены в магазине. Справочник <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/2">2</a> читайте выборочно при вопросах по lifecycle и репликации.
+  Держите открытыми Studio, <a href="/lab/Примеры/1141">галерею скриптов в Lab</a> и статью <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/204">204</a>: повторяйте модули и чекпоинты, меняя число этапов и цены в магазине. Справочник <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/2">2</a> читайте выборочно при вопросах по lifecycle и репликации.
 </div>
 </div>
 
@@ -129,6 +143,39 @@ import DocCardList from '@theme/DocCardList';
 Перед Unity или Unreal полезно **пощупать жанр**: аркада, платформер, головоломка, пошаговая стратегия, RPG, roguelike. Ниже — оригинальные учебные игрушки с вкладками (подробнее в [классификации жанров](/encyclopedia/1-basics/1-18-kompyuternye-igry/2)).
 
 <GameGenreToysHub theme="javascript" />
+
+---
+
+## Unity C# — быстрые скрипты
+
+Если нужны **готовые MonoBehaviour с разбором строк**, а не только пошаговая глава в редакторе:
+
+1. [Unity C# — скрипты для новичков](/lab/Примеры/1136) — каркас, WASD, прыжок, монетки, UI, камера.
+2. [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — полная практика в редакторе (white-box, NavMesh, стрельба).
+3. [Справочник по Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301) — lifecycle и API.
+
+---
+
+## Python и Pygame — быстрый старт
+
+Если нужен **код на Python без Unity**, а не редактор движка:
+
+1. [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312) — игровой цикл, события, `Rect`, спрайты.
+2. [Pygame — мини-игры на Python](/lab/Примеры/1132) — змейка, Pong, Breakout, Flappy: скопировать скрипт и разобрать по комментариям (удобно перед курсовой или олимпиадой). Альтернатива в мире Minecraft — [команды и datapack](/lab/Примеры/1142).
+3. [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) — Tetris, Match-3, диаблоид по этапам с полной ревизией файлов.
+
+Для рисования фигур без игровой логики — [Turtle в Lab](/lab/Примеры/111) (Python), [p5.js в Lab](/lab/Примеры/1114) (Canvas в браузере) или [SVG в Lab](/lab/Примеры/1119) (вектор в HTML); для 3D — [Panda3D](/encyclopedia/5-languages/5-02-python/318) и [примеры сцен](/lab/Примеры/1111).
+
+---
+
+## Minecraft Java — команды и datapack
+
+Если ученик уже играет в **Java Edition** и хочет «программировать внутри мира» без установки Forge:
+
+1. [Разработка в Minecraft](/encyclopedia/9-spinoff/9-04-razrabotka-igr/21) — уровни: команды, моды, Python, ComputerCraft.
+2. [Minecraft — команды и datapack](/lab/Примеры/1142) — `/tp`, `scoreboard`, `execute`, командные блоки, `pack.mcmeta`, чекпоинт паркура; **разбор каждой строки**, как в [галерее Turtle](/lab/Примеры/111).
+
+Дальше по желанию — [Roblox / Luau](/lab/Примеры/1141) или [Unity C#](/lab/Примеры/1136).
 
 ---
 
@@ -144,7 +191,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
-**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Практикум разработки игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
+**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Практикум разработки игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Pygame — мини-игры на Python](/lab/Примеры/1132), [Minecraft — команды и datapack](/lab/Примеры/1142), [Unity C# — скрипты для новичков](/lab/Примеры/1136), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
 
 {/* /sidebar-collections */}
 

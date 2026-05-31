@@ -3,6 +3,8 @@ title: Аппаратное обеспечение — о разделе
 description: "Подборка материалов раздела Аппаратное обеспечение в энциклопедии Вселенная IT."
 sidebar_label: Аппаратное обеспечение — о разделе
 related:
+  - title: "Arduino и micro:bit — примеры"
+    doc: lab/examples/1135
   - title: "Как устроена Playstation 5"
     doc: encyclopedia/9-spinoff/9-03-igrovaya-industriya/11434
   - title: "Методы защиты пользовательских и корпоративных данных"
@@ -30,7 +32,7 @@ import DocCardList from '@theme/DocCardList';
 7. [Современные системы хранения данных](121.md) — ECC, RAID, SAN, облако.
 8. [Архитектура фон Неймана](11.md) — классическая модель и системная шина.
 9. [Встраиваемые системы](112.md) — MCU, три эталона ISA, RK3328.
-10. [Tinkercad Circuits и Arduino](1013.md) — практика без паяльника.
+10. [Tinkercad Circuits и Arduino](1013.md) — практика без паяльника; готовые скетчи — [галерея в Lab](/lab/Примеры/1135).
 
 В конце раздела — [итоги](./98.md).
 

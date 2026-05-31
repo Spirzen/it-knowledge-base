@@ -33,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 - [Дорожная карта изучения](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) — куда углубляться после обзора инструментов
 - [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) — среды разработки в контексте программирования
 - [Система и сеть](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro) — ОС, терминал, администрирование
-- [Утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133) — HTTP-запросы из CLI, API smoke-test и отладка интеграций
+- [Утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) — HTTP-запросы из CLI, API smoke-test и отладка интеграций
 - [Инфраструктура и безопасность](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) — CI/CD, облако, контейнеры
 
 ---

@@ -47,6 +47,30 @@ services:
 `,
   },
   {
+    id: 'k8s-deployment',
+    label: 'Kubernetes Deployment',
+    yaml: `apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.27-alpine
+          ports:
+            - containerPort: 80
+`,
+  },
+  {
     id: 'tab-indent',
     label: 'Табуляция (ошибка)',
     yaml: `server:

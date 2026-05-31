@@ -5,6 +5,8 @@ sidebar_label: Dart — о разделе
 related:
   - title: "Nim — о разделе"
     doc: encyclopedia/5-languages/5-21-nim/intro
+  - title: "Flutter — готовые виджеты"
+    doc: lab/examples/1154
   - title: "R — о разделе"
     doc: encyclopedia/5-languages/5-23-r/intro
   - title: "Zig — о разделе"
@@ -38,9 +40,17 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 3 | [Управление](./5.md) → [Паттерны Dart 3](./8.md) | switch expressions |
 | 4 | [Первая программа](./7.md) → [Async](./6.md) | SDK и `dart run` |
 | 5 | [ООП](./10.md) → [Консоль и HTTP](./9.md) | Без Flutter |
-| 6 | [Flutter](./311.md) → [Чек-лист](./999.md) | UI и самопроверка |
+| 6 | [Flutter](./311.md) → [галерея виджетов (Lab)](/lab/Примеры/1154) → [Чек-лист](./999.md) | UI, практика, самопроверка |
 
-Мобильный контекст: [раздел мобильных приложений](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1134).
+Мобильный контекст: [раздел мобильных приложений](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1134). Практика UI — [Flutter — готовые виджеты](/lab/Примеры/1154).
+
+<div class="callout callout--tip">
+  <div class="callout-title">Практика после теории</div>
+
+  <div class="callout-body">
+  Прочитали <a href="./311.md">Flutter</a> — закрепите на <a href="/lab/Примеры/1154">галерее виджетов</a>: счётчик, формы, ListView и Navigator с разбором каждой строки.
+</div>
+</div>
 
 ---
 
@@ -55,7 +65,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
 | 1 | [Первая программа](./7.md) | Запуск и синтаксис |
-| 2 | [Flutter](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1134) | Углубление |
+| 2 | [Flutter](./311.md) · [готовые виджеты (Lab)](/lab/Примеры/1154) | Экраны с разбором кода |
 
 ---
 
@@ -73,7 +83,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 1. Шаг 1 из таблицы.
 2. Три непонятных термина — найдите статьи в оглавлении раздела.
-3. Другой язык — только после своей рабочей первой программы.
+3. Другой язык — только после своей рабочей первой программы. Для UI на телефоне — [Flutter](./311.md) и [галерея виджетов](/lab/Примеры/1154).
 
 ---
 

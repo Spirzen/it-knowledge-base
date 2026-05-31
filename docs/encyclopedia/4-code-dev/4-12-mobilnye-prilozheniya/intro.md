@@ -2,6 +2,13 @@
 title: Мобильные приложения — о разделе
 description: "Подборка материалов раздела Мобильные приложения в энциклопедии Вселенная IT."
 sidebar_label: Мобильные приложения — о разделе
+related:
+  - title: "Flutter — готовые виджеты"
+    doc: lab/examples/1154
+  - title: Flutter
+    doc: encyclopedia/5-languages/5-22-dart/311
+  - title: "Dart — о разделе"
+    doc: encyclopedia/5-languages/5-22-dart/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -12,7 +19,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Мобильные приложения** — отдельная дисциплина: ограниченная батарея, сенсорный UI, магазины приложений, фоновые режимы iOS/Android. Здесь — обзор платформ, стеки (Kotlin, Swift, React Native, MAUI, Flutter) и публикация.
 
-Если вы уже делали [веб на React](/encyclopedia/5-languages/5-01-javascript/272) или [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), многие идеи (компоненты, состояние) переносятся — меняются жизненный цикл экрана и правила Store.
+Если вы уже делали [веб на React](/encyclopedia/5-languages/5-01-javascript/272) ([галерея компонентов](/lab/Примеры/1146)) или [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), многие идеи (компоненты, состояние) переносятся — меняются жизненный цикл экрана и правила Store. Кроссплатформа на Dart — [Flutter](/encyclopedia/5-languages/5-22-dart/311) и [готовые виджеты с разбором (Lab)](/lab/Примеры/1154).
 
 ---
 
@@ -22,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 |-----|----------|
 | 1 | [Мобильные приложения (обзор)](./1.md) — iOS vs Android, ограничения |
 | 2 | [Сборка и развёртывание](./112.md) — APK, AAB, подпись; [сравнение сложности стеков](./112.md#slozhnost-sborki-sravnenie-stekov) (MAUI, RN/Expo, Unity) |
-| 3 | Стек | Android: [Kotlin](./1135.md) + [Compose](/encyclopedia/5-languages/5-09-kotlin/229) · кроссплатформа: [React Native](./1131.md) → [практикум RN](./11311.md) / [Expo](./1132.md) / [MAUI](./1133.md) |
+| 3 | Стек | Android: [Kotlin](./1135.md) + [Compose](/encyclopedia/5-languages/5-09-kotlin/229) · кроссплатформа: [Flutter](/encyclopedia/5-languages/5-22-dart/311) → [виджеты (Lab)](/lab/Примеры/1154) · [React Native](./1131.md) → [практикум RN](./11311.md) / [Expo](./1132.md) / [MAUI](./1133.md) |
 | 4 | [Публикация Android](./1141.md) — keystore, Play / RuStore |
 
 ---

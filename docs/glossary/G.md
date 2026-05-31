@@ -99,7 +99,7 @@ GIL — Global Interpreter Lock, глобальная блокировка ин�
 
 Git — распределённая система контроля версий с открытым исходным кодом, разработанная Линусом Торвальдсом в 2005 году. Обеспечивает эффективное отслеживание изменений, ветвление, слияние и совместную работу над проектами. Является де-факто стандартом в разработке ПО.
 
-Маршрут — [Основы Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [12 команд](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115#12-komand), [шпаргалка](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115).
+Маршрут — [Основы Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [12 команд](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115#12-komand), [шпаргалка](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115), [сценарии в лаборатории](/lab/Примеры/1123).
 
 ---
 

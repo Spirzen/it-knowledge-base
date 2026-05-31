@@ -17,6 +17,8 @@ related:
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro
   - title: "DevOps, CI-CD — о разделе"
     doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/intro
+  - title: "SQL — реальные кейсы"
+    doc: lab/examples/1152
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -60,7 +62,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Тема | Где уже есть |
 |------|--------------|
-| Синтаксис SELECT, JOIN, транзакции | [3.07 SQL](/encyclopedia/3-data-markup/3-07-sql/intro) |
+| Синтаксис SELECT, JOIN, транзакции | [3.07 SQL](/encyclopedia/3-data-markup/3-07-sql/intro), [SQL — реальные кейсы](/lab/Примеры/1152), [практикум shop_data](/encyclopedia/3-data-markup/3-07-sql/111) |
 | Оконные функции и CTE | [885](/encyclopedia/3-data-markup/3-07-sql/885.md), [886](/encyclopedia/3-data-markup/3-07-sql/886.md) |
 | Практикум JSONB с примерами | [66](/encyclopedia/3-data-markup/3-07-sql/66.md) |
 | Установка, pg_dump, справочник параметров | [3.08/2](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2.md) |

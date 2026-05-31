@@ -43,7 +43,7 @@ import DocCardList from '@theme/DocCardList';
     <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/129">Жизненный цикл атаки</a> — семь этапов взлома и векторы проникновения (углубление в разделе 8.07)</li>
     <li><a href="./113">Риски открытых Wi‑Fi</a></li>
     <li><a href="./112">Антивирус и лечение</a> — по желанию; хвост статьи помечен как углубление</li>
-    <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92">Мониторинг и логи</a> — теория; практика — <a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro">Zabbix</a>, <a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro">Prometheus и Grafana</a></li>
+    <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92">Мониторинг и логи</a> — теория; практика — <a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro">Zabbix</a>, <a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro">Prometheus и Grafana</a>, <a href="/lab/Примеры/11114">PromQL — галерея</a></li>
     <li><a href="./2">Итоги</a> и <a href="./3">Чек-лист самопроверки</a></li>
     <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101">Опасные скрипты</a> — социальная инженерия через "установочный" shell-скрипт и команды от ИИ-агента; безопасная CLI-практика запросов — <a href="/encyclopedia/2-system-network/2-05-terminal/1133">утилита curl</a></li>
   </ol>

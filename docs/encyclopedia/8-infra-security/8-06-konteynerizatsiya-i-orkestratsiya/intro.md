@@ -5,6 +5,14 @@ sidebar_label: Контейнеризация и оркестрация — о �
 related:
   - title: "Микросервисы и интеграция — о разделе"
     doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
+  - title: "Docker Compose — готовые стеки"
+    doc: lab/examples/11111
+  - title: "Kubernetes YAML — минимальные манифесты"
+    doc: lab/examples/11115
+  - title: "Prometheus + Grafana — запросы"
+    doc: lab/examples/11114
+  - title: "Dockerfile — 10 типовых образов"
+    doc: lab/examples/11113
   - title: "SQL — о разделе"
     doc: encyclopedia/3-data-markup/3-07-sql/intro
   - title: "Методы защиты пользовательских и корпоративных данных"
@@ -27,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 
 Контейнеры — **третья** модель в цепочке развёртывания (после bare metal и ВМ); в облаке их часто запускают **внутри ВМ** — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya). В **микросервисной** архитектуре один сервис обычно упаковывают в свой образ (Docker, Podman), а реплики координирует оркестратор (Kubernetes, OpenShift, ECS) — см. [экосистему MSA](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#ekosistema-msa) и [контейнеры в микросервисах](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117#контейнеры-в-микросервисах).
 
-Перед первым `docker run` — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) (Docker Desktop, окно терминала, остановка). Опасные флаги `docker run` (`-v /`, `--privileged`, socket) — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
+Перед первым `docker run` — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) (Docker Desktop, окно терминала, остановка). Опасные флаги `docker run` (`-v /`, `--privileged`, socket) — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101). Сборка образа в CI — [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134) (рецепт Docker build), контекст пайплайна — [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro).
 
 Маршрут по **Kubernetes** в разделе:
 
@@ -36,14 +44,20 @@ import DocCardList from '@theme/DocCardList';
 | Как устроены клиент, демон, образы и реестр | [Docker](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111#kak-ustroen-docker) |
 | 18 команд Docker с пояснениями | [Универсальная шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-18-komand) |
 | 9 практик Dockerfile | [Универсальная шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-9-praktik) |
+| Манифесты зависимостей (`requirements.txt`, `RUN pip install`) | [Манифесты зависимостей](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/103) |
+| Сборка образа в GitHub Actions | [CI/CD рецепты](/lab/Примеры/1134) |
 | Справочник CLI, Dockerfile, Compose | [Справочник по Docker](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2) |
 | Архитектура, Swarm, Helm, Kustomize | [Docker Swarm и Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117) |
 | Практика (Docker Desktop, kubectl) | [Первые шаги](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1172) |
 | Прод-стек, Helm, HPA, Ingress | [Реализация Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1171) |
-| Мониторинг Prometheus, Grafana, Loki | [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro) |
+| Мониторинг Prometheus, Grafana, Loki | [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro), [PromQL — галерея](/lab/Примеры/11114) |
 | Мониторинг Zabbix (серверы, SNMP, SLA) | [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro) |
 | Справочник YAML и команд | [Справочник по Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211) |
 | Официальная документация kubernetes.io | [Навигатор Kubernetes](/tools/documentation/7) |
+| Готовые `nginx.conf` (proxy, SPA, PHP, TLS) | [Nginx — конфиги под задачу](/lab/Примеры/11112) |
+| Готовые `compose.yaml` (nginx, Postgres, Redis, WordPress…) | [Docker Compose — готовые стеки](/lab/Примеры/11111) |
+| Готовые Dockerfile (Node, Python, Go, SPA, Spring…) | [Dockerfile — 10 типовых образов](/lab/Примеры/11113) |
+| Минимальные манифесты Pod, Deployment, Service | [Kubernetes YAML — минимальные манифесты](/lab/Примеры/11115) |
 
 <DocCardList />
 

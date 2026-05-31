@@ -102,6 +102,7 @@ import DocCardList from '@theme/DocCardList';
 
 1. [Что знать перед Kotlin](./1001.md) — JVM, IDE, Gradle.
 2. [Первая программа](./2.md) — IntelliJ IDEA, Maven, `fun main()`.
+2a. [fun main() — точка входа](./40.md) — JVM и import.
 3. [Основы](./11.md) → [типы](./12.md) → [операторы](./13.md) → [циклы](./14.md).
 4. [ООП](./15.md) → [синтаксис](./16.md) → [конструкции](./17.md).
 5. [Исключения](./171.md) → [коллекции и Sequence](./225.md).

@@ -11,6 +11,18 @@ related:
     doc: encyclopedia/3-data-markup/3-09-html/intro
   - title: "ASP.NET - веб-платформа Microsoft"
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/172
+  - title: "HTML + CSS — готовые макеты"
+    doc: lab/examples/110
+  - title: "HTML-страницы целиком"
+    doc: lab/examples/1153
+  - title: "CSS-анимации — готовые эффекты"
+    doc: lab/examples/1116
+  - title: "Tailwind — готовые блоки"
+    doc: lab/examples/1117
+  - title: "SVG — рисунки кодом"
+    doc: lab/examples/1119
+  - title: "React — компоненты-рецепты"
+    doc: lab/examples/1146
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -33,6 +45,8 @@ CSS описывает **внешний вид** разметки HTML: цвет
 <WebPageLayersPlay />
 
 <BoxModelPlay />
+
+> **Практика.** Сначала HTML-каркас с разбором тегов — [HTML-страницы целиком](/lab/Примеры/1153). Затем оформление целых страниц (сетка, лендинг, форма входа) с разбором CSS — [HTML + CSS — готовые макеты](/lab/Примеры/110). **Tailwind** — те же задачи через utility-классы: [Tailwind — готовые блоки](/lab/Примеры/1117) — после [Flexbox и CSS Grid](./2.md). **Анимации** — [CSS-анимации — готовые эффекты](/lab/Примеры/1116). В JSX — [React — компоненты-рецепты](/lab/Примеры/1146).
 
 <DocCardList />
 

@@ -1938,6 +1938,9 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/3013">5.02. Практикум — доска объявлений на Django</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3111">5.02. Первая программа на Tkinter</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3112">5.02. Справочник по Tkinter — элементы UI</a></li>
+  <li><a href="/lab/Примеры/1124">Lab. Tkinter — окна и виджеты</a></li>
+  <li><a href="/lab/Примеры/1141">Lab. Roblox / Luau — скрипты</a></li>
+  <li><a href="/lab/Примеры/1143">Lab. Java Swing — окна и кнопки</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3131">5.02. Первая программа на PyQt6</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3411">5.02. Первая программа на Flask</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3431">5.02. FastAPI</a></li>
@@ -2010,6 +2013,9 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-03-java/1001">5.03. Что требуется знать перед началом изучения языка программирования Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/3111">5.03. Первая программа на JavaFX</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/3112">5.03. Справочник по JavaFX и Swing — элементы UI</a></li>
+  <li><a href="/lab/Примеры/1131">Lab. Java — консольные задачи</a></li>
+  <li><a href="/lab/Примеры/1141">Lab. Roblox / Luau — скрипты</a></li>
+  <li><a href="/lab/Примеры/1143">Lab. Java Swing — окна и кнопки</a></li>
   </ul>
   </li>
 

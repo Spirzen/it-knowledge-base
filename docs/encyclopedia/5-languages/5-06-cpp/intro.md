@@ -19,6 +19,8 @@ related:
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/intro
   - title: "Smalltalk — о разделе"
     doc: encyclopedia/5-languages/5-08-smalltalk/intro
+  - title: "C++ — олимпиадные шаблоны"
+    doc: lab/examples/1125
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -59,6 +61,7 @@ import DocCardList from '@theme/DocCardList';
 | Синтаксис | [Типы](/encyclopedia/5-languages/5-06-cpp/11), [Операторы](/encyclopedia/5-languages/5-06-cpp/12), [Циклы и управление](/encyclopedia/5-languages/5-06-cpp/13) | базовый язык |
 | Память и ООП | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) (база) → [ООП в C++](/encyclopedia/5-languages/5-06-cpp/14), [Память](/encyclopedia/5-languages/5-06-cpp/19), [Системное программирование](/encyclopedia/5-languages/5-06-cpp/21) | классы, владение, низкий уровень |
 | Практика | [Функции и лямбды](/encyclopedia/5-languages/5-06-cpp/17), [Компиляторы и toolchain](/encyclopedia/5-languages/5-06-cpp/32), [Сборка](/encyclopedia/5-languages/5-06-cpp/1004), [CMake](/encyclopedia/5-languages/5-06-cpp/1006), [Задания](/encyclopedia/5-languages/5-06-cpp/1008) | писать, собирать, закреплять |
+| Олимпиады | [Шаблоны C++ в Lab](/lab/Примеры/1125), [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro) | ввод-вывод, STL, графы, ДП |
 | UI и графика | [Qt](/encyclopedia/5-languages/5-06-cpp/27), [Qt Widgets](/encyclopedia/5-languages/5-06-cpp/2731), [Qt Quick](/encyclopedia/5-languages/5-06-cpp/2732), [Vulkan](/encyclopedia/5-languages/5-06-cpp/29), [Игры](/encyclopedia/5-languages/5-06-cpp/22) | desktop, GPU |
 | Продвинутое | [Потоки](/encyclopedia/5-languages/5-06-cpp/20), [Сеть](/encyclopedia/5-languages/5-06-cpp/25), [Экосистема](/encyclopedia/5-languages/5-06-cpp/10) | конкурентность, I/O, фреймворки |
 | Справка | [Справочник](/encyclopedia/5-languages/5-06-cpp/3), [Ключевые слова](/encyclopedia/5-languages/5-06-cpp/151) | быстрый поиск по API и официальной документации |

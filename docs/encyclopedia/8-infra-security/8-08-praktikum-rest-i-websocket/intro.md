@@ -54,6 +54,8 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 | 7 | [WebSocket и события](./7.md) | Протокол сообщений, heartbeat, рассылка |
 | 8 | [Проверка в Postman](./8.md) | Коллекция, окружение, сценарий E2E |
 
+Проксирование WebSocket через nginx (`Upgrade`, `Connection`) — [Nginx — конфиги под задачу](/lab/Примеры/11112).
+
 Теория по REST, маппингу и WebSocket — в [8.05 Микросервисы и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro); этот раздел — **применение на практике**.
 
 ---
@@ -64,7 +66,7 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 - [.NET SDK 8](https://dotnet.microsoft.com/download)
 - [Postman](https://www.postman.com/downloads/) или Newman для CLI
 - Базовое знакомство с [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) и [JSON](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1)
-- Базовая работа с [утилитой curl](/encyclopedia/2-system-network/2-05-terminal/1133) для проверки ручек вне Postman
+- Базовая работа с [утилитой curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) для проверки ручек вне Postman; клиентский JavaScript — [Fetch / axios — типовые запросы](/lab/Примеры/1145)
 
 ---
 

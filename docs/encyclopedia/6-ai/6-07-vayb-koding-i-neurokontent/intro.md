@@ -13,6 +13,10 @@ related:
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2
   - title: "Генерация кода — ChatGPT, Gemini и DeepSeek"
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/117
+  - title: "OpenAI / API — готовые промпты и вызовы"
+    doc: lab/examples/1149
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
   - title: "Искусственный интеллект — о разделе"
     doc: encyclopedia/6-ai/ai
 ---
@@ -32,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 [Итоги](./98) и [чек-лист](./99) — после прохождения статей.
 
-Практический цикл "промпт -> код -> review -> merge" — в [Генерации кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117). Общая теория no-code и AI-конструкторов — [6.05 / 117](/encyclopedia/6-ai/6-05-razrabotka-ii/117). Краткое введение в нейросети для новичка — в [Нейросетях и ИИ](/encyclopedia/6-ai/6-03-neyroseti/111). Как о "нейросетях" говорят в рунете — [132](/encyclopedia/9-spinoff/9-10-internet-kultura/132).
+Практический цикл "промпт -> код -> review -> merge" — в [Генерации кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117). Готовые **вызовы API** и **шаблоны промптов** с построчным разбором — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149) и [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Общая теория no-code и AI-конструкторов — [6.05 / 117](/encyclopedia/6-ai/6-05-razrabotka-ii/117). Краткое введение в нейросети для новичка — в [Нейросетях и ИИ](/encyclopedia/6-ai/6-03-neyroseti/111). Как о "нейросетях" говорят в рунете — [132](/encyclopedia/9-spinoff/9-10-internet-kultura/132).
 
 <DocCardList />
 

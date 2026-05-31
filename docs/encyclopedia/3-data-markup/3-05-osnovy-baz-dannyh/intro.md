@@ -33,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Файлы и СУБД, нотации ER:** [СУБД — файловое хранение и ограничения](./2.md#fajlovoe-hranenie-i-subd), [Entity Relationship — нотации](./11.md#notacii-er-modeli).
 
-**SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)).
+**SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)). Практика запросов на схеме магазина с разбором — [SQL — реальные кейсы](/lab/Примеры/1152).
 
 **Практика по популярным СУБД из кода:** [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 

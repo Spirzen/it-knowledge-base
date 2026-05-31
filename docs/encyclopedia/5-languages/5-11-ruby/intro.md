@@ -33,6 +33,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 |-----|----------|-------|
 | 0 | [Что повторить перед Ruby](./1001.md) | Фундамент (по желанию) |
 | 1 | [Первая программа](./20.md) | `ruby`, `puts`, IRB |
+| 1a | [if __FILE__ == $0](./40.md) | Скрипт vs `require` |
 | 2 | [Синтаксис](./12.md) → [Основы](./1.md) | TL;DR в начале `1.md` |
 | 3 | [Типы](./13.md) → [Управление](./14.md) | Итераторы, `case`/`in` |
 | 4 | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП в Ruby](./102.md) | Классы, модули |

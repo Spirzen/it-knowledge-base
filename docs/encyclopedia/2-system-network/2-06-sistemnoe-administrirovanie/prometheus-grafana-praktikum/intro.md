@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/19
   - title: "Контейнеризация — о разделе"
     doc: encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro
+  - title: "Prometheus + Grafana — запросы"
+    doc: lab/examples/11114
   - title: "Мониторинг (инструменты)"
     doc: tools/system/2
 ---
@@ -36,7 +38,7 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
 
-  Нужны понимание [HTTP и портов](../6.md) и **Docker Compose** ([контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro)). Подойдут Linux VM, WSL2 или **Windows 10/11 + Docker Desktop** — минимальный стенд из [шага 2](./2.md) проверен на последнем: нестандартные порты, **windows_exporter**, русский UI Grafana 12, provisioning дашборда Windows.
+  Нужны понимание [HTTP и портов](../6.md) и **Docker Compose** ([контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [готовые стеки](/lab/Примеры/11111)). Подойдут Linux VM, WSL2 или **Windows 10/11 + Docker Desktop** — минимальный стенд из [шага 2](./2.md) проверен на последнем: нестандартные порты, **windows_exporter**, русский UI Grafana 12, provisioning дашборда Windows.
 </div>
 
 ---
@@ -102,6 +104,7 @@ flowchart TB
 | 2 | [Установка и первые метрики](./2.md) | Compose (Windows/Linux), структура каталога, Prometheus + Grafana, provisioning, health check |
 | — | [**Как пользоваться**](./usage.md) | UI Prometheus и Grafana, добавить target, Explore, дашборд, шпаргалка |
 | 3 | [Типы метрик и PromQL](./3.md) | Counter, Gauge, Histogram, Summary, `rate()`, агрегации |
+| — | [**Prometheus + Grafana — запросы**](/lab/Примеры/11114) | Галерея PromQL и панелей с построчным разбором (параллельно шагам 3–6) |
 | 4 | [Grafana — источники и дашборды](./4.md) | Проверка datasource, панель `up`, Explore, импорт |
 | 5 | [Экспортёры и инструментирование](./5.md) | node_exporter, blackbox, client libraries, `/metrics` |
 | 6 | [Алертинг](./6.md) | Alertmanager, правила Prometheus, Grafana Alerting |

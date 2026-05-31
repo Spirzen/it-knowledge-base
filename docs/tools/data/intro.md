@@ -14,7 +14,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">PostgreSQL — установите и потренируйтесь</div>
 
   <div class="callout-body">
-  <p>PostgreSQL — рекомендуемая СУБД для локальной практики <strong>всем</strong> в IT. Поставьте сервер, откройте psql или pgAdmin и пройдите <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/888">практику по PostgreSQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/891">демобазу</a>. Подробности установки — в статье <a href="/tools/data/1">СУБД</a> ниже.</p>
+  <p>PostgreSQL — рекомендуемая СУБД для локальной практики <strong>всем</strong> в IT. Поставьте сервер, откройте psql или pgAdmin и пройдите <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/888">практику по PostgreSQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/891">демобазу</a>. Без установки — <a href="/lab/Примеры/1152">SQL — реальные кейсы</a> (браузерный тренажёр, разбор по строкам). Подробности установки — в статье <a href="/tools/data/1">СУБД</a> ниже.</p>
 </div>
   </div>
 

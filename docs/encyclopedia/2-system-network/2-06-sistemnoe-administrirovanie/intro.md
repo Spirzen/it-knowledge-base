@@ -19,6 +19,12 @@ related:
     doc: encyclopedia/2-system-network/2-02-platformy/intro
   - title: "Оптимизация размера и производительности приложений"
     doc: encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3
+  - title: "Bash — однострочники и скрипты"
+    doc: lab/examples/1151
+  - title: "Примеры скриптов в Linux"
+    doc: lab/examples/113
+  - title: "Prometheus + Grafana — запросы"
+    doc: lab/examples/11114
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -41,7 +47,7 @@ import DocCardList from '@theme/DocCardList';
 | 6 | [Рабочие станции](./5.md) | Подготовка ПК, ввод в домен |
 | 7 | [Сеть и диагностика](./6.md) | IP, ping, порты, DNS, NAT |
 
-Дальше — углубление: [планировщики](./8.md), [ошибки и логи](./9.md), [диагностика производительности Linux](./100.md), [Linux в админской практике](./93.md) (права `chmod` — [rwx и восьмеричный код](./93.md#linux-prava-rwx)), [рабочие столы GNU/Linux](./96.md), [Windows Store и «сборки»](./97.md), [жизненный цикл Windows](./95.md), [СУБД](./91.md), [мониторинг](./92.md), [практикум Zabbix](./zabbix-praktikum/intro.md), [практикум Prometheus и Grafana](./prometheus-grafana-praktikum/intro.md), [GPO](./411.md), [сетевые аномалии](./31.md), [curl для API и health-check](/encyclopedia/2-system-network/2-05-terminal/1133).
+Дальше — углубление: [планировщики](./8.md), [ошибки и логи](./9.md), [диагностика производительности Linux](./100.md), [Linux в админской практике](./93.md) (права `chmod` — [rwx и восьмеричный код](./93.md#linux-prava-rwx)), [рабочие столы GNU/Linux](./96.md), [Windows Store и «сборки»](./97.md), [жизненный цикл Windows](./95.md), [СУБД](./91.md), [мониторинг](./92.md), [практикум Zabbix](./zabbix-praktikum/intro.md), [практикум Prometheus и Grafana](./prometheus-grafana-praktikum/intro.md), [Prometheus + Grafana — запросы](/lab/Примеры/11114), [GPO](./411.md), [сетевые аномалии](./31.md), [curl для API и health-check](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Bash — однострочники и скрипты](/lab/Примеры/1151), [production-скрипты](/lab/Примеры/113), [Nginx — конфиги под задачу](/lab/Примеры/11112).
 
 ---
 

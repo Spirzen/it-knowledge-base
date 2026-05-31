@@ -169,6 +169,7 @@ mindmap
       <li><a href="/encyclopedia/5-languages/5-02-python/311">5.02. Tkinter и GUI</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/3111">5.02. Первая программа на Tkinter</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/3112">5.02. Справочник по Tkinter — элементы UI</a></li>
+      <li><a href="/lab/Примеры/1124">Lab. Tkinter — окна и виджеты (примеры)</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/32">5.02. Графика и игры</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/321">5.02. Справочник по модулю Turtle</a></li>
       <li><a href="/encyclopedia/5-languages/5-02-python/33">5.02. Анализ данных и научные вычисления</a></li>
@@ -213,6 +214,7 @@ mindmap
       <li><a href="/encyclopedia/5-languages/5-03-java/142">5.03. Встроенные функции в Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/15">5.03. Типы данных в Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/16">5.03. Основные элементы Java</a></li>
+      <li><a href="/lab/Примеры/1131">Lab. Java — консольные задачи (примеры)</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/17">5.03. Операторы и циклы в Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/18">5.03. ООП в Java</a></li>
       <li><a href="/encyclopedia/5-languages/5-03-java/19">5.03. Прочие особенности языка Java</a></li>

@@ -17,13 +17,17 @@ related:
     doc: encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro
   - title: "Системное администрирование — о разделе"
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro
+  - title: "Prompt engineering — библиотека промптов"
+    doc: lab/examples/1150
+  - title: "Генерация кода — ChatGPT, Gemini и DeepSeek"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/117
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Перед командами из интернета или от ИИ-помощника — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101). Код из чата без разбора — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117).
+Перед командами из интернета или от ИИ-помощника — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101). Код из чата без разбора — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) и [библиотека промптов](/lab/Примеры/1150) (объяснение темы, traceback, домашка без списывания).
 
 <div class="callout callout--tip">
   <div class="callout-title">Запуск, перезапуск, dev-сервер</div>

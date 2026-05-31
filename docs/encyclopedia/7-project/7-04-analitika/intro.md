@@ -85,7 +85,7 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 
 ### Системный аналитик
 
-[114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro); для быстрой проверки контрактов в консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133).
+[114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro); для быстрой проверки контрактов в консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133).
 
 ---
 
