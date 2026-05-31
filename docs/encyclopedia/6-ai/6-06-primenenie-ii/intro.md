@@ -13,11 +13,17 @@ related:
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro
   - title: "Графовые базы данных"
     doc: encyclopedia/3-data-markup/3-06-nosql/7
+  - title: "Распознавание лиц, объектов и текста"
+    doc: encyclopedia/6-ai/6-06-primenenie-ii/120
+  - title: "Облачные API Cognitive Services"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/120
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+Прикладной CV и NLP — [распознавание лиц, объектов и текста](/encyclopedia/6-ai/6-06-primenenie-ii/120); готовые облачные API — [Cognitive Services](/encyclopedia/6-ai/6-05-razrabotka-ii/120).
 
 ИИ-агенты с доступом к shell — риск деструктивных команд: [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101), глава [Агенты ИИ](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/116).
 

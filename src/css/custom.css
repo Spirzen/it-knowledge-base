@@ -559,6 +559,47 @@ img {
   color: #2C3E50 !important;
 }
 
+/* FAQ (вопрос — ответ) */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1.25rem 0 1.75rem;
+}
+
+.faq-item {
+  padding: 1rem 1.25rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+}
+
+.faq-q,
+.faq-a {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.faq-q {
+  font-weight: 600;
+  color: var(--ifm-heading-color);
+  margin-bottom: 0.65rem;
+}
+
+.faq-a {
+  color: var(--ifm-color-content-secondary);
+}
+
+.faq-label {
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-right: 0.15em;
+}
+
+.faq-a .faq-label {
+  color: var(--ifm-color-content);
+}
+
 /* Аккордеоны (Details) */
 details summary {
   display: flex;

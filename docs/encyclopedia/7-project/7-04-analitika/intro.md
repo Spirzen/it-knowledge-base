@@ -50,6 +50,15 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 3. [Профессиональная аналитика](/encyclopedia/7-project/7-04-analitika/112)
 4. [Формализация и управление требованиями](/encyclopedia/7-project/7-04-analitika/116)
 
+<div class="callout callout--tip">
+  <div class="callout-title">PostgreSQL для аналитика</div>
+
+  <div class="callout-body">
+  <p>Даже если вы не пишете продакшен-код, <strong>установите PostgreSQL</strong> и потренируйтесь в SQL — проверка гипотез, сверка отчётов, понимание ERD и интеграций. Старт — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/888">PostgreSQL — практическая работа</a>; язык данных в аналитике — <a href="/encyclopedia/7-project/7-04-analitika/1121">1121</a>.</p>
+</div>
+  </div>
+
+
 ---
 
 ### Бизнес-аналитик
@@ -66,16 +75,17 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
   3. [116](/encyclopedia/7-project/7-04-analitika/116) — план BA, RM, приоритизация  
   4. [111](/encyclopedia/7-project/7-04-analitika/111) — пять шагов анализа, стоимость дефекта  
   5. [124](/encyclopedia/7-project/7-04-analitika/124) — gap analysis, journey, DFD  
-  6. [126](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
-  7. [127](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
-  8. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление  
+  6. Wireframe и UX до ТЗ — [Веб-дизайн — блок 2](/encyclopedia/1-basics/1-25-interfeys/7#блок-2--референсы-и-прототипирование)  
+  7. [126](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
+  8. [127](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
+  9. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление  
 </div>
 
 ---
 
 ### Системный аналитик
 
-[114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro).
+[114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro); для быстрой проверки контрактов в консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133).
 
 ---
 

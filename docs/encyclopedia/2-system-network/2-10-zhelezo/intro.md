@@ -32,6 +32,8 @@ import DocCardList from '@theme/DocCardList';
 9. [Встраиваемые системы](112.md) — MCU, три эталона ISA, RK3328.
 10. [Tinkercad Circuits и Arduino](1013.md) — практика без паяльника.
 
+В конце раздела — [итоги](./98.md).
+
 <DocCardList />
 
 {/* sidebar-collections */}

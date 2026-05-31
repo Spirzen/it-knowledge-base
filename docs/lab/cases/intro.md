@@ -19,3 +19,5 @@ import DocCardList from '@theme/DocCardList';
 <DocCardList />
 
 ---
+
+Для проверки HTTP-сценариев в кейсах используйте [утилиту curl](/encyclopedia/2-system-network/2-05-terminal/1133) вместе с Postman и DevTools.

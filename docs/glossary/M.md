@@ -213,6 +213,12 @@ ML.NET — кроссплатформенный фреймворк машинн�
 
 ---
 
+## MLOps
+
+MLOps (Machine Learning Operations) — практики и инструменты для автоматизации жизненного цикла ML и LLM на слоях данных и модели: ingestion, версионирование датасетов, обучение, model registry, reindex, мониторинг drift. В LLM-стеке закрывает слои 1–3. См. [MLOps и LLM-стек — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2).
+
+---
+
 ## MLC
 
 Multi-Level Cell — NAND-память, хранящая 2 бита в ячейке (четыре уровня напряжения). 

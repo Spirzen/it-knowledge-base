@@ -10,6 +10,15 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел **Инструменты → Данные** — практический справочник: какие продукты выбрать и как быстро поднять стенд. В каждой статье есть **интерактивные демо** (ландшафт СУБД, модели NoSQL, двухпанельный менеджер, сравнение облаков, стратегии бэкапа, типы графиков).
 
+<div class="callout callout--tip">
+  <div class="callout-title">PostgreSQL — установите и потренируйтесь</div>
+
+  <div class="callout-body">
+  <p>PostgreSQL — рекомендуемая СУБД для локальной практики <strong>всем</strong> в IT. Поставьте сервер, откройте psql или pgAdmin и пройдите <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/888">практику по PostgreSQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/891">демобазу</a>. Подробности установки — в статье <a href="/tools/data/1">СУБД</a> ниже.</p>
+</div>
+  </div>
+
+
 | Статья | Тема |
 | --- | --- |
 | [СУБД](/tools/data/1) | SQL и NoSQL, архитектура запроса |

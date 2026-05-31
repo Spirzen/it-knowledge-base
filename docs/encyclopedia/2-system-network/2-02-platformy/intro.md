@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 | 4 | [Социальные сети](./311.md) · [мессенджеры](./312.md) | Потребительские платформы |
 | 5 | [Итоги](./98.md) · [чек-лист](./99.md) | Закрепление |
 
-Для разработчика полезно читать параллельно [как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro) — там HTTP и браузер, здесь — бизнес-модель и роль владельца платформы.
+Для разработчика полезно читать параллельно [как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro) — там HTTP и браузер, здесь — бизнес-модель и роль владельца платформы. Мониторинг платформенной инфраструктуры — [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro), [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro).
 
 <DocCardList />
 

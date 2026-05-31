@@ -34,6 +34,7 @@ import DocCardList from '@theme/DocCardList';
 7. **[Инъекции](123.md)** — SQLi (тавтология, UNION, blind boolean/time), CMDi, XSS: одна модель, разные контексты.
 8. **[Шифрование](115.md)** и **[Сертификация и сертификаты](112.md)** — алгоритмы, TLS, PKI.
 9. **[Белое хакерство и Bug Bounty](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro)** — этичный поиск уязвимостей, отчёты, программы вознаграждений у техгигантов.
+10. **[Тестирование на проникновение](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro)** — Kali Linux, recon, Wi-Fi, веб, сканирование и брутфорс в лаборатории.
 
 ---
 
@@ -44,7 +45,8 @@ import DocCardList from '@theme/DocCardList';
 - **[Безопасность IoT](131.md)** — встраиваемые устройства, Mirai, SDL для прошивки.
 - **[Патчи и управление уязвимостями](132.md)** — SLA, приоритизация CVE, типичные сбои patch management.
 - **[Обеспечение безопасности](2.md)** — анализ хостов Windows/Linux, логи, forensics, автоматизация (объёмная глава; удобна как справочник).
-- **[Мониторинг и SIEM](114.md)**, **[Средства защиты](1112.md)** — детективный контур.
+- **[Вирусы и вредоносные программы](119.md)**, **[Антивирусы](120.md)** — malware, EDR; в статье про антивирусы — внедрение и сопровождение **Kaspersky Endpoint Security** (политики, задачи, защита файлов и сети).
+- **[Мониторинг и SIEM](114.md)**, **[Средства защиты](1112.md)** — детективный контур; метрики и алерты — [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro), [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro).
 - **[Чек-лист самопроверки](999.md)** — закрепление материала.
 
 ---

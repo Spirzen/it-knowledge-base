@@ -97,7 +97,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Основа по протоколу</div>
 
   <div class="callout-body">
-  Базовый разбор HTTP и HTTPS находится в отдельной статье — [HTTP как основа веб-интеграций](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118).
+  Базовый разбор HTTP и HTTPS находится в отдельной статье — [HTTP как основа веб-интеграций](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118). Практика запросов из терминала — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133).
 </div>
   </div>
 

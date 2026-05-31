@@ -139,7 +139,13 @@ PHP/FI — Personal Home Page / Forms Interpreter, первая версия PHP
 
 ## phpMyAdmin
 
-phpMyAdmin — веб-приложение с открытым кодом, написанное на языке PHP и представляющее собой веб-интерфейс для администрирования СУБД MySQL. PhpMyAdmin позволяет через браузер и не только осуществлять администрирование сервера MySQL, запускать команды SQL и просматривать содержимое таблиц и баз данных. Приложение пользуется большой популярностью у веб-разработчиков, так как позволяет управлять СУБД MySQL без непосредственного ввода SQL команд.
+phpMyAdmin — веб-приложение с открытым кодом на PHP для администрирования **MySQL** и **MariaDB** через браузер (SQL, DDL/DML, импорт и экспорт, учётные записи). Подробная глава в энциклопедии: [phpMyAdmin — о разделе](/encyclopedia/5-languages/5-07-php/phpmyadmin/intro). История линии MySQL-Webadmin → phpMyAdmin и параллельная ветка phpPgAdmin: [История веб-админок БД на PHP](/encyclopedia/5-languages/5-07-php/phpmyadmin/5).
+
+---
+
+## phpPgAdmin
+
+phpPgAdmin — веб-приложение на PHP для администрирования **PostgreSQL** (происхождение от **WebDB**, 2002; переименование в phpPgAdmin в 3.0.0-dev-1). Использует расширение PHP **pgsql**, схемы, роли и утилиты **pg_dump**. Глава в энциклопедии: [phpPgAdmin — о разделе](/encyclopedia/5-languages/5-07-php/phppgadmin/intro). Продвинутая эксплуатация Postgres — [практикум 8.11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
 
 ---
 

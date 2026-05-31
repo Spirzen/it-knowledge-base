@@ -32,6 +32,7 @@ mindmap
     Безопасность
       8.07 Информационная безопасность
       8.09 Белое хакерство и Bug Bounty
+      8.11 Практикум PostgreSQL
 ```
 
 Вообще, лучше воспользуйтесь содержанием или перейдите к Базе знаний. Но для удобства, я размещу здесь ссылки на основные главы раздела:
@@ -303,7 +304,7 @@ mindmap
 
 Другая важная часть - DevOps и CI/CD. Нужно знать, что такое CI, что такое CD, ка кработать с Git в разрезе DevOps-инженерии, чем собственно такой инженер отличается от системного администратора, какие инструменты он использует. Потом пойдём уже по инструментам и подходам. Сначала - микросервисы и интеграция, что такое масштабирование и балансировка нагрузки, как выстраиваются распределенные системы, как настраивается интеграция и коммуникация между ними, что такое брокеры сообщений и тому подобное. Нужно погрузиться в Docker, контейнеризацию и оркестрацию, кластеризацию, шардирование и прочее-прочее. 
 
-А добъём всё это изучением информационной безопасности, включая как кибербезопасность, вирусы, сливы и инъекции, так и защиту API, безопасность фронта/бэка, отслеживание действий и прочие важные аспекты. Отдельный маршрут — [белое хакерство и Bug Bounty](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro): этичный поиск уязвимостей, отчёты, выплаты и процессы у крупнейших вендоров.
+А добъём всё это изучением информационной безопасности, включая как кибербезопасность, вирусы, сливы и инъекции, так и защиту API, безопасность фронта/бэка, отслеживание действий и прочие важные аспекты. Отдельный маршрут — [белое хакерство и Bug Bounty](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro): этичный поиск уязвимостей, отчёты, выплаты и процессы у крупнейших вендоров. Практика на Kali Linux — в [тестировании на проникновение](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro): recon, Wi-Fi, веб, сканирование и брутфорс в лаборатории. Продвинутая эксплуатация PostgreSQL в Docker, Kubernetes и HA-кластерах — в [практикуме PostgreSQL](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
 
 ---
 
@@ -322,6 +323,57 @@ mindmap
       <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/6">8.09. Когда доверие ломается</a></li>
       <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/998">8.09. Итоги</a></li>
       <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/999">8.09. Чек-лист</a></li>
+    </ul>
+  </li>
+</ul>
+
+---
+
+## Тестирование на проникновение
+
+<ul>
+  <li><span>Тестирование на проникновение</span></li>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro">8.10 — о разделе</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/1">8.10. Kali Linux — установка и настройка</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/6">8.10. Процессы пентестинга</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/2">8.10. Сбор информации и recon</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/5">8.10. Сканирование, перехват и брутфорс</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/3">8.10. Тестирование беспроводных сетей</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/4">8.10. Уязвимости веб-приложений и серверов</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/7">8.10. Оценка уязвимостей и эксплуатация</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/8">8.10. Active Directory и типовые сервисы</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/9">8.10. Pivoting, post-exploitation и отчёты</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/998">8.10. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/999">8.10. Чек-лист</a></li>
+    </ul>
+  </li>
+</ul>
+
+---
+
+## Практикум PostgreSQL
+
+<ul>
+  <li><span>Практикум PostgreSQL</span></li>
+  <li>
+    <ul>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro">8.11 — о разделе</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/1">8.11. Архитектура и внутреннее устройство</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/2">8.11. Продвинутая оптимизация и индексы</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/3">8.11. Конфигурация postgresql.conf</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/4">8.11. JSONB, партиционирование и расширения SQL</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/5">8.11. PL/pgSQL, триггеры и NOTIFY/LISTEN</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/6">8.11. Репликация, Hot Standby и PgBouncer</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/7">8.11. PostgreSQL в Docker</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/8">8.11. Облако и Kubernetes</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/9">8.11. HA-кластеры и распределённые СУБД</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/10">8.11. Бэкапы и восстановление</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/11">8.11. Профилирование и мониторинг</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/12">8.11. Автоматизация — Ansible и Terraform</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/998">8.11. Итоги</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/999">8.11. Чек-лист</a></li>
     </ul>
   </li>
 </ul>

@@ -27,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 Контейнеры — **третья** модель в цепочке развёртывания (после bare metal и ВМ); в облаке их часто запускают **внутри ВМ** — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya). В **микросервисной** архитектуре один сервис обычно упаковывают в свой образ (Docker, Podman), а реплики координирует оркестратор (Kubernetes, OpenShift, ECS) — см. [экосистему MSA](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#ekosistema-msa) и [контейнеры в микросервисах](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117#контейнеры-в-микросервисах).
 
-Опасные флаги `docker run` (`-v /`, `--privileged`, socket) — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
+Перед первым `docker run` — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) (Docker Desktop, окно терминала, остановка). Опасные флаги `docker run` (`-v /`, `--privileged`, socket) — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
 
 Маршрут по **Kubernetes** в разделе:
 
@@ -40,6 +40,8 @@ import DocCardList from '@theme/DocCardList';
 | Архитектура, Swarm, Helm, Kustomize | [Docker Swarm и Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117) |
 | Практика (Docker Desktop, kubectl) | [Первые шаги](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1172) |
 | Прод-стек, Helm, HPA, Ingress | [Реализация Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1171) |
+| Мониторинг Prometheus, Grafana, Loki | [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro) |
+| Мониторинг Zabbix (серверы, SNMP, SLA) | [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro) |
 | Справочник YAML и команд | [Справочник по Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211) |
 | Официальная документация kubernetes.io | [Навигатор Kubernetes](/tools/documentation/7) |
 

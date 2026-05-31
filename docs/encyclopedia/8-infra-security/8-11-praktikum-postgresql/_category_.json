@@ -1,0 +1,8 @@
+{
+  "label": "Практикум PostgreSQL",
+  "link": {
+    "type": "generated-index",
+    "title": "Практикум PostgreSQL",
+    "description": "Продвинутая эксплуатация PostgreSQL — MVCC и VACUUM, индексы и EXPLAIN, конфигурация, JSONB и партиционирование, PL/pgSQL, репликация, контейнеры, Kubernetes, HA-кластеры, бэкапы и автоматизация."
+  }
+}

@@ -26,6 +26,8 @@ import GamepadPlay from '@site/src/components/GamepadPlay';
 
 <GamepadPlay />
 
+Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/98).
+
 <DocCardList />
 
 ---

@@ -8,7 +8,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Практика **администрирования и эксплуатации** реляционных СУБД: установка, ресурсы, резервное копирование, безопасность, мониторинг. Теория запросов и транзакций — в разделе [SQL](/encyclopedia/3-data-markup/3-07-sql/intro); основы моделей — в [Основах баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro).
+Практика **администрирования и эксплуатации** реляционных СУБД: установка, ресурсы, резервное копирование, безопасность, мониторинг. Теория запросов и транзакций — в разделе [SQL](/encyclopedia/3-data-markup/3-07-sql/intro); основы моделей — в [Основах баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro). Мониторинг СУБД — [Практикум PostgreSQL, шаг 11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/11), [Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro), [Prometheus](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro).
 
 ---
 
@@ -24,6 +24,8 @@ import DocCardList from '@theme/DocCardList';
 Теория сбоев и журналов: [Восстановление после сбоя](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8.md). Роль БД в компании: [6.md](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6.md).
 
 Если вы только учите SQL как язык, этот раздел можно отложить до первого деплоя или стажировки в эксплуатации.
+
+Продвинутая эксплуатация — MVCC, Kubernetes, HA, Wal-G — в [практикуме PostgreSQL (раздел 8.11)](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro). Визуальная работа с SQL на PHP-стеке — [phpPgAdmin](/encyclopedia/5-languages/5-07-php/phppgadmin/intro).
 
 **Подключение и CRUD из приложения (API по языкам):** [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888) (установка и psql — [101](/encyclopedia/3-data-markup/3-07-sql/101.md)), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889) (администрирование — [справочник MySQL](./211.md)), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) (эксплуатация — [212](./212.md)).
 

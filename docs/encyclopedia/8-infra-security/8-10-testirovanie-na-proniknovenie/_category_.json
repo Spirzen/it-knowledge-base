@@ -1,0 +1,8 @@
+{
+  "label": "Тестирование на проникновение",
+  "link": {
+    "type": "generated-index",
+    "title": "Тестирование на проникновение",
+    "description": "Полный цикл пентеста на Kali — PTES, recon, VA и exploitation, веб, AD, pivoting, privesc, post-exploitation и отчёты enterprise-уровня."
+  }
+}

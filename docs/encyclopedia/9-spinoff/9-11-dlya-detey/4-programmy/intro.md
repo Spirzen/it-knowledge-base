@@ -22,6 +22,8 @@ import DesktopWindowPlay from '@site/src/components/DesktopWindowPlay';
 
 <DesktopWindowPlay />
 
+Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/98).
+
 <DocCardList />
 
 ---

@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro
   - title: "Софт рядового пользователя — о разделе"
     doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro
+  - title: "Запуск и перезапуск приложений"
+    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/13
   - title: "Исполняемые файлы и архивы — о разделе"
     doc: encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro
   - title: "Системное администрирование — о разделе"
@@ -22,6 +24,23 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Перед командами из интернета или от ИИ-помощника — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101). Код из чата без разбора — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117).
+
+<div class="callout callout--tip">
+  <div class="callout-title">Запуск, перезапуск, dev-сервер</div>
+
+  <div class="callout-body">
+  Если путаете Run в IDE, <code>npm run dev</code>, двойной клик по <code>.exe</code> и Docker — начните с <a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13">Запуск и перезапуск приложений</a>.
+</div>
+  </div>
+
+<div class="callout callout--tip">
+  <div class="callout-title">PostgreSQL на своём компьютере</div>
+
+  <div class="callout-body">
+  <p>Когда дойдёте до данных и SQL — <strong>обязательно поставьте PostgreSQL</strong> и потренируйтесь: psql, простые запросы, проверка таблиц. Это нужно любой IT-роли, не только разработчикам. Старт — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a>, установка — <a href="/tools/data/1">СУБД в Инструментах</a>.</p>
+</div>
+  </div>
+
 
 <DocCardList />
 

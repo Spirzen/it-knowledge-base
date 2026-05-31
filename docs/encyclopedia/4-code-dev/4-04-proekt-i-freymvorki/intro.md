@@ -17,6 +17,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Команды из README (`npm run`, `dotnet run`, `docker compose up`) и кнопка Run в IDE — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
+
 <DocCardList />
 
 {/* sidebar-collections */}

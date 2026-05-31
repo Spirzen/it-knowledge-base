@@ -25,6 +25,15 @@ import DocCardList from '@theme/DocCardList';
 
 Если нужна более плавная профориентация с оценкой интереса к темам (от 1 до 5) и подсказкой направлений, используйте [Навигатор новичка и профилей](/lab/Планы%20развития/7).
 
+<div class="callout callout--tip">
+  <div class="callout-title">PostgreSQL — общая рекомендация</div>
+
+  <div class="callout-body">
+  <p>На любом маршруте изучения стоит <strong>установить PostgreSQL</strong> и потренироваться в SQL — это нужно всем ролям в IT, не только разработчикам. Установка — <a href="/tools/data/1">СУБД</a>; первые шаги — <a href="/encyclopedia/3-data-markup/3-07-sql/101">101</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/888">888</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/891">демобаза</a>.</p>
+</div>
+  </div>
+
+
 <DocCardList />
 
 ---

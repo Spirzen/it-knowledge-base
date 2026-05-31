@@ -3,6 +3,8 @@ title: Интерфейс — о разделе
 description: "Подборка материалов раздела Интерфейс в энциклопедии Вселенная IT."
 sidebar_label: Интерфейс — о разделе
 related:
+  - title: "Веб-дизайн — маршрут от UX до портфолио"
+    doc: encyclopedia/1-basics/1-25-interfeys/7
   - title: "Софт рядового пользователя"
     doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro
   - title: "UX"
@@ -21,6 +23,16 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Раздел про **пользовательский интерфейс** — от понятий UX/UI до элементов экрана и принципов проектирования. Для **полного маршрута веб-дизайна** (референсы, типы сайтов, исследования, портфолио) начните с [Веб-дизайн — маршрут от UX до портфолио](./7.md).
+
+**Рекомендуемый порядок**
+
+1. [Пользовательский интерфейс — UX и UI](./1.md) — словарь и границы дисциплин.
+2. [Визуальные](./2.md), [функциональные](./3.md), [навигационные](./4.md) элементы и [обратная связь](./5.md).
+3. [Особенности и принципы UX и UI](./6.md) — юзабилити, a11y, интерактивная демо.
+4. [Веб-дизайн — маршрут от UX до портфолио](./7.md) — лендинги, магазины, корпоративные сайты, исследования (по задаче).
+5. [Итоги](./98.md) и [чек-лист](./99.md).
+
 <DocCardList />
 
 {/* sidebar-collections */}
@@ -31,7 +43,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
 
-**Веб-разработка** — [История интернета](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/4), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro).
+**Веб-разработка** — [История интернета](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/4), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Веб-дизайн — маршрут](/encyclopedia/1-basics/1-25-interfeys/7).
 
 {/* /sidebar-collections */}
 

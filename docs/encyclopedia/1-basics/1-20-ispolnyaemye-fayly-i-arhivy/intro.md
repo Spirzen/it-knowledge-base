@@ -25,6 +25,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Двойной клик по `.exe`, запуск из терминала и из IDE — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
+
 <DocCardList />
 
 {/* sidebar-collections */}

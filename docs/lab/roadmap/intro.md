@@ -24,6 +24,15 @@ import DocCardList from '@theme/DocCardList';
 
 Если вы только начинаете и хотите сначала понять, что вам ближе, начните с [Навигатора новичка и профилей](/lab/Планы%20развития/7).
 
+<div class="callout callout--tip">
+  <div class="callout-title">PostgreSQL — для любой роли из планов ниже</div>
+
+  <div class="callout-body">
+  <p>Независимо от выбранного плана развития стоит <strong>установить PostgreSQL</strong> и регулярно с ним работать — разработчикам, аналитикам, тестировщикам, инженерам, администраторам и архитекторам. Старт — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a>, установка — <a href="/tools/data/1">СУБД</a>.</p>
+</div>
+  </div>
+
+
 ---
 
 ## Карточки планов

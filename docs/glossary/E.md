@@ -239,9 +239,21 @@ ETL (Extract, Transform, Load) — процесс извлечения данн�
 
 ---
 
+## Effectively exactly-once
+
+Effectively exactly-once (иногда semantic exactly-once) — практическая цель системы: каждое бизнес-событие влияет на состояние **ровно один раз**, при том что транспорт работает как at-least-once. Формула: **at-least-once + идемпотентная обработка**. Hub-статья — [Идемпотентность и семантика доставки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/133#effectively-exactly-once).
+
+---
+
 ## Evaluate
 
 Evaluate — вычислить выражение.
+
+---
+
+## Exactly-once delivery
+
+Exactly-once delivery (EOS) — семантика, при которой сообщение или offset обрабатываются **один раз внутри контура брокера** (например, Kafka с идемпотентным producer и транзакциями). Сквозной эффект на БД и внешние API требует outbox и идемпотентных sink; см. [Идемпотентность и семантика доставки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/133).
 
 ---
 

@@ -1,0 +1,9 @@
+{
+  "label": "Практикум WPF и клиент-сервер",
+  "position": 25,
+  "link": {
+    "type": "generated-index",
+    "title": "Практикум WPF и клиент-сервер",
+    "description": "Сквозной маршрут — WPF и XAML, MVVM, ASP.NET Core Web API, Prism, тестирование и итоговое приложение TaskDesk."
+  }
+}

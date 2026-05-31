@@ -104,6 +104,7 @@ import DocCardList from '@theme/DocCardList';
 | 2 | [125 — блоки и модули](/encyclopedia/5-languages/5-26-powershell/125) |
 | 3 | [126 — триггеры](/encyclopedia/5-languages/5-26-powershell/126) |
 | 4 | [2.05/112 — скрипты в Windows](/encyclopedia/2-system-network/2-05-terminal/112) (планировщик, remoting) |
+| 4a | [2.05/1133 — curl в терминале](/encyclopedia/2-system-network/2-05-terminal/1133) (`curl.exe`, API smoke-test, health-check) |
 | 5 | [127 — секреты](/encyclopedia/5-languages/5-26-powershell/127) |
 | 6 | [128 — конфигурация](/encyclopedia/5-languages/5-26-powershell/128) |
 | 7 | [111 — рекомендации по скриптам](/encyclopedia/5-languages/5-26-powershell/111) |

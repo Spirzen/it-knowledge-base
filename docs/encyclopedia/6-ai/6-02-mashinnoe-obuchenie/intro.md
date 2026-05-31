@@ -19,6 +19,12 @@ related:
     doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4
   - title: "Обучение на базе готовой модели"
     doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/3
+  - title: "Scikit-learn — регрессия и классификация"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/10
+  - title: "Keras и TensorFlow — нейросети"
+    doc: encyclopedia/6-ai/6-03-neyroseti/114
+  - title: "PyTorch для разработчика"
+    doc: encyclopedia/5-languages/5-02-python/333
   - title: "Введение в ИИ — о разделе"
     doc: encyclopedia/6-ai/6-01-vvedenie-v-ii/intro
   - title: "Нейросети — о разделе"
@@ -38,7 +44,7 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--tip">
   <div class="callout-title">Маршрут для абсолютного новичка</div>
 
-  [Как начать с ML на Python](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/21) → [Категории и стек](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/5) → [Кодирование признаков](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4) → [Разбиение данных](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/6) → [Проект Melbourne](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/7) → [Смещение и дисперсия](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/8) → [Деревья решений](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/9) → [Обзор ML](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1) → [Справочник алгоритмов](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/2).
+  [Как начать с ML на Python](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/21) → [Категории и стек](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/5) → [Кодирование признаков](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4) → [Разбиение данных](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/6) → [Проект Melbourne](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/7) → [Scikit-learn](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/10) → [Смещение и дисперсия](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/8) → [Деревья решений](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/9) → [PyTorch](/encyclopedia/5-languages/5-02-python/333) или [Keras и TensorFlow](/encyclopedia/6-ai/6-03-neyroseti/114) → [Обзор ML](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1) → [Справочник алгоритмов](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/2).
 </div>
 
 {/* sidebar-collections */}

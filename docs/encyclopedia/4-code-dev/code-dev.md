@@ -33,6 +33,8 @@ import DocCardList from '@theme/DocCardList';
 
 Если в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) вы уже прошли алгоритмы и блок-схемы, этот том переводит те же идеи на язык разработчика — с большей глубиной и практикой.
 
+Сборка, Run в IDE, dev-сервер в терминале, Docker — единая шпаргалка для новичка: [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
+
 Где исполняется собранный код (bare metal, ВМ, контейнер, облачный worker) — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya); среда JVM/CLR — в [4.03 Выполнение кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 
 <DocCardList />
@@ -121,7 +123,7 @@ flowchart LR
 </div>
   </div>
 
-Смежная гигиена: [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — терминал, Git и проверка команд от ИИ-агента в IDE.
+Смежная гигиена: [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — терминал, Git и проверка команд от ИИ-агента в IDE; для API smoke-test из консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133).
 
 ```mermaid
 mindmap

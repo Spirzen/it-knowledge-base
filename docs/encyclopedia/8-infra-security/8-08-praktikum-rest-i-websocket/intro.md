@@ -64,6 +64,7 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 - [.NET SDK 8](https://dotnet.microsoft.com/download)
 - [Postman](https://www.postman.com/downloads/) или Newman для CLI
 - Базовое знакомство с [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) и [JSON](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1)
+- Базовая работа с [утилитой curl](/encyclopedia/2-system-network/2-05-terminal/1133) для проверки ручек вне Postman
 
 ---
 
@@ -73,6 +74,8 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 2. Прочитайте [шаги 1–3](./1.md) и зафиксируйте контракт на бумаге или в OpenAPI.
 3. Поднимите оба сервиса локально ([4](./4.md), [5](./5.md)) и сверьте ответы с песочницей.
 4. Закройте цикл в [Postman](./8.md) и негативными кейсами из шага 8.
+
+Закрепление: [итоги](./998.md), [чек-лист](./999.md).
 
 ---
 

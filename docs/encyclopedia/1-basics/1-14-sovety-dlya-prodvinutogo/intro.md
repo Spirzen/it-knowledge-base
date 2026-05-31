@@ -23,6 +23,15 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь нет повторения "как установить принтер" или "что такое Excel". Вместо этого — дорожная карта навыков и ссылки на углублённые главы энциклопедии.
 
+<div class="callout callout--tip">
+  <div class="callout-title">PostgreSQL в home lab</div>
+
+  <div class="callout-body">
+  <p>Если поднимаете домашний стенд или ВМ — добавьте в него <strong>PostgreSQL</strong>. Локальная практика с SQL, бэкапами и ролями пригодится на любой роли в IT. Установка и клиенты — <a href="/tools/data/1">СУБД</a>, маршрут обучения — <a href="/encyclopedia/3-data-markup/3-07-sql/888">PostgreSQL — практическая работа</a>, продвинутая эксплуатация — <a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro">практикум 8.11</a>.</p>
+</div>
+  </div>
+
+
 ---
 
 ## Что вы найдёте

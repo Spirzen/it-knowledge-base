@@ -15,6 +15,10 @@ related:
     doc: encyclopedia/6-ai/6-06-primenenie-ii/intro
   - title: "Нейросети — о разделе"
     doc: encyclopedia/6-ai/6-03-neyroseti/intro
+  - title: "Облачные API Cognitive Services"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/120
+  - title: "Распознавание лиц, объектов и текста"
+    doc: encyclopedia/6-ai/6-06-primenenie-ii/120
   - title: "Векторные базы данных"
     doc: encyclopedia/3-data-markup/3-06-nosql/812
 ---

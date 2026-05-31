@@ -409,3 +409,29 @@ html[data-design='design-universe-original'][data-theme='dark'] .callout--info {
 html[data-design='design-universe-original'][data-theme='dark'] .callout--tip {
   background-color: color-mix(in srgb, #1976d2 12%, #2a2a2a);
 }
+
+html[data-design]:not([data-design='design-universe-original']) .faq-item {
+  background: var(--d-surface);
+  border-color: var(--d-border);
+}
+
+html[data-design]:not([data-design='design-universe-original']) .faq-q {
+  color: var(--d-heading);
+}
+
+html[data-design]:not([data-design='design-universe-original']) .faq-a {
+  color: var(--d-muted);
+}
+
+html[data-design]:not([data-design='design-universe-original']) .faq-label {
+  color: var(--d-primary);
+}
+
+html[data-design]:not([data-design='design-universe-original']) .faq-a .faq-label {
+  color: var(--d-heading);
+}
+
+html[data-design='design-universe-original'][data-theme='dark'] .faq-item {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+}

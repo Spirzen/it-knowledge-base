@@ -26,6 +26,8 @@ import BlockBuilder from '@site/src/components/BlockBuilder';
 
 <BlockBuilder />
 
+Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/98).
+
 <DocCardList />
 
 ---

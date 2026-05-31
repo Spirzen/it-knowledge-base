@@ -40,6 +40,15 @@ import DocCardList from '@theme/DocCardList';
 *Как закодировать и собрать* решения — в **[Конструирование ПО](/encyclopedia/7-project/7-12-konstruirovanie-po/intro)** (связность/сцепление, модели ЖЦ, планирование).
 
 <div class="callout callout--tip">
+  <div class="callout-title">PostgreSQL в архитектурных решениях</div>
+
+  <div class="callout-body">
+  <p>Архитектору и разработчику нужен живой опыт с <strong>PostgreSQL</strong> — транзакции, индексы, репликация, JSONB, миграции схем. Установите сервер локально и пройдите <a href="/encyclopedia/3-data-markup/3-07-sql/888">практику по PostgreSQL</a>; для production — <a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro">практикум 8.11</a>. System Design с БД — <a href="143.md">карта тем</a>.</p>
+</div>
+  </div>
+
+
+<div class="callout callout--tip">
   <div class="callout-title">Как читать раздел</div>
 
   <div class="callout-body">
@@ -53,7 +62,7 @@ import DocCardList from '@theme/DocCardList';
 ## С чего начать (базовый маршрут)
 
 1. **[Основы проектирования и архитектуры](1.md)** — зачем проектировать, четыре уровня архитектуры, схемы, ADR.
-2. **[System Design — карта тем и подготовка](143.md)** — порядок изучения (сети → БД → кэш → очереди), пять рычагов, типовой контур, классические задачи, postmortem. Для «ложного CRUD» — [email-рассылка как распределённая система](144.md).
+2. **[System Design — карта тем и подготовка](143.md)** — порядок изучения (сети → БД → кэш → очереди), пять рычагов, типовой контур, классические задачи, postmortem. Для «ложного CRUD» — [email-рассылка как распределённая система](144.md); для ручной диагностики API-контуров — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133).
 3. **[12 концепций распределённой архитектуры](141.md)** — балансировка, кэш, CDN, очереди, gateway, шардирование и autoscaling в одной шпаргалке. Экосистема технологий MSA (БД, брокеры, K8s, CI/CD) — [таблица](design/118.md#ekosistema-msa); сборка в продакшн-контур — [девять компонентов](design/118.md#prodakshn-stek).
 4. **[Системный подход и системное мышление](116.md)** — границы системы, обратные связи.
 5. **[Архитектурные стили и их применение](101.md)** — монолит, SOA, микросервисы.
