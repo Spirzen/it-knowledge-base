@@ -70,7 +70,7 @@ import DocCardList from '@theme/DocCardList';
 
    Практика выбранной СУБД из кода: [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 4. [OpenAPI](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3) · [REST в инфраструктуре](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) · [ввод по API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) · [8 принципов RESTful API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-api-design-principles)
-5. [System Design — карта тем](../143.md) · [12 концепций распределённой архитектуры](../141.md) · [масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA](2135.md) · [распределённые системы](21.md)
+5. [System Design — карта тем](../143.md) · [12 концепций распределённой архитектуры](../141.md) · [масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [SLA — договор](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/2) · [SLA — «девятки»](2135.md) · [распределённые системы](21.md)
 
 ---
 

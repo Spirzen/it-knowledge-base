@@ -392,6 +392,12 @@ PyPy — альтернативная реализация Python, написа�
 
 ---
 
+## Pydantic
+
+Pydantic — библиотека Python для валидации входящих данных, приведения типов и описания схем на основе аннотаций типов (`BaseModel`). Используется в FastAPI, ETL, API-клиентах и конфигурации (`pydantic-settings`). Подробнее — [Pydantic — валидация входящих данных](/encyclopedia/5-languages/5-02-python/41).
+
+---
+
 ## PVM
 
 PVM (Python Virtual Machine) — цикл интерпретации байт-кода в **CPython**: чтение opcode, работа со стеком значений и кадрами вызовов, вызов C-функций runtime. Исходник `.py` сначала компилируется в байт-код (кэш `.pyc` при импорте), затем исполняется PVM. См. [архитектура интерпретатора Python](/encyclopedia/5-languages/5-02-python/11#zhiznennyy-tsikl-koda).

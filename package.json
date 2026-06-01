@@ -22,6 +22,8 @@
     "docs:fix-mdx-imports": "node scripts/fix-mdx-import-after-frontmatter.mjs",
     "docs:fix-frontmatter-blank": "node scripts/fix-blank-after-frontmatter.mjs",
     "docs:fix-heading-separators": "node scripts/fix-heading-separators.mjs",
+    "docs:check-article-structure": "node scripts/scan-article-structure.mjs",
+    "docs:fix-article-structure": "node scripts/fix-article-structure.mjs",
     "docs:basics-crosslinks": "node scripts/enrich-basics-crosslinks.mjs",
     "docs:lab-crosslinks": "node scripts/enrich-lab-crosslinks.mjs",
     "docs:revert-basics-wiki": "node scripts/revert-basics-wiki-markup.mjs",

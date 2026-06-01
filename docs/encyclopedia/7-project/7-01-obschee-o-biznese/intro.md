@@ -9,6 +9,8 @@ related:
     doc: encyclopedia/7-project/7-04-analitika/intro
   - title: "Методология и ЖЦ ПО — о разделе"
     doc: encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro
+  - title: "ITSM и ИТ-услуги — о разделе"
+    doc: encyclopedia/7-project/7-16-itsm-i-it-uslugi/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

@@ -114,7 +114,7 @@ flowchart LR
 | Метрики, алерты, observability | [92.md](../92.md), [DevOps 19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19), [Практикум Prometheus и Grafana](../prometheus-grafana-praktikum/intro.md), [PromQL — галерея](/lab/Примеры/11114) |
 | Linux, systemd, логи | [93.md](../93.md), [9.md](../9.md) |
 | SNMP, сеть | [6.md](../6.md) |
-| Инциденты из мониторинга | [Техподдержка 118](/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/118) |
+| Инциденты из мониторинга | [ITSM 7.16](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/1) · [Техподдержка 118](/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/118) |
 | Справочник термина | [Zabbix в глоссарии](/glossary/Z#zabbix) |
 
 ---

@@ -9,6 +9,8 @@ related:
     doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
   - title: "Коммуникация — о разделе"
     doc: encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro
+  - title: "ITSM и ИТ-услуги — о разделе"
+    doc: encyclopedia/7-project/7-16-itsm-i-it-uslugi/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -17,7 +19,7 @@ import DocCardList from '@theme/DocCardList';
 
 Материалы для тех, кто **принимает обращения пользователей** и помогает продукту работать: уровни поддержки (L1–L3), метрики, эскалация в разработку, база знаний и типичные инструменты (тикеты, удалённый доступ). Полезно и разработчикам — чтобы понимать, как до них доходят баги с прода.
 
-> **Смежно:** [Базы знаний в проектах](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro) · [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro) · [Коммуникация](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro)
+> **Смежно:** [ITSM, SLA, ITIL (7.16)](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/intro) · [Базы знаний в проектах](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro) · [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro) · [Коммуникация](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro)
 
 ---
 

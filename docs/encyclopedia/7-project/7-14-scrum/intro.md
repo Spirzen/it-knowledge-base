@@ -41,7 +41,7 @@ import DocCardList from '@theme/DocCardList';
 | 8 | [Итоги](./998) | Краткое сравнение с Kanban и waterfall |
 | 9 | [Чек-лист самопроверки](./999) | Есть ли у вас процесс или «Scrum-театр» |
 
-Перед шагом **1** полезно один раз просмотреть **[жизненный цикл и Agile](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1)** — чтобы отделить **модель фаз SDLC** от **фреймворка Scrum**.
+Перед шагом **1** полезно один раз просмотреть **[Agile — гибкая методология](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/3)** и **[жизненный цикл ПО](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1)** — чтобы отделить **ценности Agile**, **модель фаз SDLC** и **фреймворк Scrum**.
 
 ---
 
