@@ -44,7 +44,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">До изучения языков</div>
 
   <div class="callout-body">
-  Блоки "Справочно на …" можно читать как иллюстрацию идей. Базовые алгоритмы и блок-схемы — в <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/4">базовой информатике</a>; параллелизм на потоках — в <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">асинхронности</a> и <a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro">параллельных вычислениях</a>.
+  Блоки "Справочно на …" можно читать как иллюстрацию идей. Базовые алгоритмы и блок-схемы — в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4)
+
+  параллелизм на потоках — в [асинхронности](/encyclopedia/4-code-dev/4-05-asinhronnost/1) и [параллельных вычислениях](/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro).
 </div>
   </div>
 

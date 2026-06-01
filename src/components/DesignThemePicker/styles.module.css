@@ -24,6 +24,17 @@
   }
 }
 
+.navbar-sidebar .root {
+  max-width: none;
+  flex: 1 1 auto;
+  margin-right: 0;
+}
+
+.navbar-sidebar .select {
+  width: 100%;
+  font-size: 0.8rem;
+}
+
 .select {
   flex: 1;
   min-width: 0;

@@ -8,6 +8,7 @@ import UniverseMap from '@site/src/components/UniverseMap';
 import GettingStartedPaths from '@site/src/components/GettingStartedPaths';
 import UniverseLogo from '@site/src/components/UniverseLogo';
 import RandomArticle from '@site/src/components/RandomArticle';
+import HomepageHeroSearch from '@site/src/components/HomepageHeroSearch';
 import styles from './index.module.css';
 
 const APK_DOWNLOAD_PATH = '/downloads/it-universe.apk';
@@ -22,80 +23,81 @@ function HomepageHeader() {
           <Heading as="h1" className={clsx('hero__title', styles.heroLogoTitle)}>
             <UniverseLogo />
           </Heading>
-          <p className="hero__subtitle">
-            <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> "Вселенная IT" — это открытая энциклопедия по информационным технологиям. Бесплатно, без рекламы, без партнёров — только систематизированные знания.
+          <p className={clsx('hero__subtitle', styles.heroSubtitle)}>
+            Энциклопедия с интерактивом внутри статей. Бесплатно, без рекламы и
+            партнёрских вставок — только систематизированные знания.
           </p>
-          <RandomArticle />
+          <HomepageHeroSearch />
           <div className={styles.heroActions}>
             <div className={styles.buttons}>
               <Link
                 className="button button--primary button--lg"
                 to="/section/basics">
-                🔎 Начать изучение
+                Начать с основ
               </Link>
               <Link
                 className="button button--secondary button--lg"
-                to="/about/manifest">
-                <img src="/img/docusaurus.png" alt="Вселенная IT" className={styles.emojiImage} /> Манифест и Правила
+                to="/about/interactive">
+                Витрина
               </Link>
             </div>
-            <div className={clsx('apk-strip', styles.apkStrip)}>
-              <a
-                className={styles.apkButton}
-                href={apkUrl}
-                download="it-universe.apk">
-                <span className={styles.apkButtonIcon} aria-hidden="true">
-                  🤖
-                </span>
-                <span className={styles.apkButtonText}>
-                  <span className={styles.apkButtonLabel}>Скачать APK</span>
-                  <span className={styles.apkButtonHint}>
-                    Мобильное приложение для Android
-                  </span>
-                </span>
-              </a>
-            </div>
           </div>
+          <footer className={styles.heroFooter}>
+            <a
+              className={styles.heroFooterLink}
+              href={apkUrl}
+              download="it-universe.apk">
+              Скачать приложение для Android (APK)
+            </a>
+          </footer>
         </div>
       </div>
     </header>
   );
 }
 
+function HomepageDiscover() {
+  return (
+    <section className={styles.discoverSection} aria-label="Случайная статья">
+      <div className="container">
+        <div className={styles.discoverCard}>
+          <RandomArticle variant="discover" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function HomepageInteractive() {
   return (
-    <section className={styles.interactive}>
+    <section className={styles.homeSection} aria-labelledby="home-interactive-title">
       <div className="container">
-        <div className="row">
-          <div className="col col--12">
-            <Heading as="h2" className={styles.interactiveTitle}>
-              Интерактив в каждой теме
-            </Heading>
-            <p className={styles.interactiveText}>
-              Это не просто статьи: в энциклопедии встроены сотни кастомных компонентов —
-              тренажёры клавиатуры и Office, визуализаторы алгоритмов и нейросетей, схемы
-              сети и инфраструктуры, эмуляторы Git, SQL, Docker и многое другое. Нажимайте,
-              переключайте режимы и сразу видите, как устроена тема — без установки ПО и
-              без отрыва от текста.
-            </p>
-            <div className={styles.interactiveActions}>
-              <Link
-                className="button button--primary button--lg"
-                to="/about/interactive">
-                Витрина интерактива
-              </Link>
-              <Link
-                className={clsx('button button--secondary button--lg', styles.profileGameButton)}
-                to="/lab/Планы%20развития/7">
-                <span className={styles.profileGameButtonTitle}>Навигатор профиля</span>
-                <span className={styles.profileGameButtonHint}>Интерактивная игра по траектории →</span>
-              </Link>
-              <Link
-                className="button button--outline button--primary button--lg"
-                to="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">
-                Дорожная карта →
-              </Link>
-            </div>
+        <div className={clsx('home-panel', styles.homePanel)}>
+          <Heading as="h2" className={styles.sectionTitle} id="home-interactive-title">
+            Интерактив в каждой теме
+          </Heading>
+          <p className={styles.sectionLead}>
+            В энциклопедии встроены сотни кастомных компонентов — тренажёры клавиатуры и
+            Office, визуализаторы алгоритмов и нейросетей, схемы сети и инфраструктуры,
+            эмуляторы Git, SQL, Docker и многое другое. Нажимайте, переключайте режимы и
+            сразу видите, как устроена тема — без установки ПО и без отрыва от текста.
+          </p>
+          <div className={styles.interactiveActions}>
+            <Link
+              className="button button--primary button--lg"
+              to="/about/interactive">
+              Витрина
+            </Link>
+            <Link
+              className="button button--secondary button--lg"
+              to="/lab/Планы%20развития/7">
+              Навигатор
+            </Link>
+            <Link
+              className="button button--outline button--primary button--lg"
+              to="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">
+              Дорожная карта
+            </Link>
           </div>
         </div>
       </div>
@@ -144,10 +146,10 @@ function HomepageFeatures() {
       <div className="container">
         <div className="row">
           <div className="col col--12">
-            <Heading as="h2" className={styles.featuresTitle}>
+            <Heading as="h2" className={styles.sectionTitle}>
               Форматы контента
             </Heading>
-            <p className={styles.featuresSubtitle}>
+            <p className={clsx(styles.sectionLead, styles.featuresLead)}>
               Энциклопедия первична. Затем - дополнительный контент.
             </p>
           </div>
@@ -162,15 +164,13 @@ function HomepageFeatures() {
                   'feature-card',
                   styles['feature-card'],
                   feature.isWide && 'feature-card--wide',
-                  feature.isWide && styles['feature-card--wide']
-                )}
-              >
+                  feature.isWide && styles['feature-card--wide'],
+                )}>
                 <Heading as="h3">{feature.title}</Heading>
                 <p>{feature.description}</p>
                 <Link
                   className={`button button--outline button--primary ${styles['feature-cta']}`}
-                  to={feature.link}
-                >
+                  to={feature.link}>
                   Изучить раздел
                 </Link>
               </div>
@@ -188,55 +188,15 @@ export default function Home() {
       title="Вселенная IT"
       description="Открытая энциклопедия по информационным технологиям"
       paddingTop={false}
-      paddingBottom={false}
-    >
+      paddingBottom={false}>
       <HomepageHeader />
       <main>
         <UniverseMap />
         <GettingStartedPaths />
         <HomepageInteractive />
+        <HomepageDiscover />
         <HomepageFeatures />
       </main>
-      <script
-      dangerouslySetInnerHTML={{
-        __html: `
-          document.addEventListener('DOMContentLoaded', function() {
-            const cardsWrapper = document.querySelector('.cardsWrapper');
-            const overlay = cardsWrapper?.querySelector('.overlay');
-            if (!cardsWrapper || !overlay) return;
-
-            // Clone featureCard into overlay
-            const originalCards = cardsWrapper.querySelectorAll('.featureCard');
-            originalCards.forEach(card => {
-              const clone = card.cloneNode(true);
-              clone.setAttribute('aria-hidden', 'true');
-              clone.style.position = 'absolute';
-              clone.style.top = '0';
-              clone.style.left = '0';
-              clone.style.width = '100%';
-              clone.style.height = '100%';
-              clone.style.pointerEvents = 'none';
-              const cta = clone.querySelector('.featureCta');
-              if (cta) cta.style.display = 'none';
-              overlay.appendChild(clone);
-            });
-
-            cardsWrapper.addEventListener('mousemove', e => {
-              const rect = cardsWrapper.getBoundingClientRect();
-              const x = e.clientX - rect.left;
-              const y = e.clientY - rect.top;
-              overlay.style.setProperty('--x', \`\${x}px\`);
-              overlay.style.setProperty('--y', \`\${y}px\`);
-              overlay.style.setProperty('--opacity', '1');
-            });
-
-            cardsWrapper.addEventListener('mouseleave', () => {
-              overlay.style.setProperty('--opacity', '0');
-            });
-          });
-        `,
-      }}
-    />
     </Layout>
   );
 }

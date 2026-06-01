@@ -222,7 +222,7 @@ mindmap
       <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/115">8.06. Сеть в контейнерах</a></li>
       <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/116">8.06. Dockerfile</a></li>
       <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117">8.06. Docker Swarm и Kubernetes</a></li>
-      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. Универсальная шпаргалка</a></li>
+      <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. DevOps — шпаргалка</a></li>
       <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2">8.06. Справочник по Docker</a></li>
       <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211">8.06. Справочник по Kubernetes</a></li>
       <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/998">8.06. Итоги</a></li>

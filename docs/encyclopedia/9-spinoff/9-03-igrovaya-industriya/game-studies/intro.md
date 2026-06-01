@@ -3,9 +3,9 @@ title: Игроведение — о разделе
 description: "Подборка материалов раздела Игроведение в энциклопедии Вселенная IT."
 sidebar_label: Игроведение — о разделе
 related:
-  - title: "Игровые консоли — краткий маршрут"
+  - title: "Игровые консоли — маршрут"
     doc: encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/129
-  - title: "Жанры видеоигр — краткий маршрут"
+  - title: "Жанры видеоигр — маршрут"
     doc: encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/127
   - title: "Компьютерные игры — о разделе"
     doc: encyclopedia/1-basics/1-18-kompyuternye-igry/intro

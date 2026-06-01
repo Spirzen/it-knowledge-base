@@ -40,7 +40,11 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">До изучения языков</div>
 
   <div class="callout-body">
-  Блоки "Справочно на …" можно читать как иллюстрацию идей. Вызовы и стек — в <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2">выполнении кода</a>; асинхронность — в <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/intro">разделе 4.05</a>; параллелизм на кластерах — в <a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro">параллельных вычислениях</a>.
+  Блоки "Справочно на …" можно читать как иллюстрацию идей. Вызовы и стек — в [выполнении кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2)
+
+  асинхронность — в [разделе 4.05](/encyclopedia/4-code-dev/4-05-asinhronnost/intro)
+
+  параллелизм на кластерах — в [параллельных вычислениях](/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro).
 </div>
   </div>
 

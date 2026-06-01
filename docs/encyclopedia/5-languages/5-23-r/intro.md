@@ -46,7 +46,11 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Смежные разделы энциклопедии</div>
 
   <div class="callout-body">
-  Общая база про код и интерпретацию — [что такое код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1). Табличные данные, CSV и БД — [данные и разметка](/encyclopedia/3-data-markup/data-markup). Сравнение R с Python и другими языками — [основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/intro). Воспроизводимые отчёты пересекаются с темой [документации и разметки](/encyclopedia/3-data-markup/data-markup).
+  Общая база про код и интерпретацию — [что такое код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1).
+
+  Табличные данные, CSV и БД — [данные и разметка](/encyclopedia/3-data-markup/data-markup).
+
+  Сравнение R с Python и другими языками — [основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/intro). Воспроизводимые отчёты пересекаются с темой [документации и разметки](/encyclopedia/3-data-markup/data-markup).
 </div>
   </div>
 

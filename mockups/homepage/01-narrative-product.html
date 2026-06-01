@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Макет 1 — Продуктовый нарратив · Вселенная IT</title>
+  <style>
+    :root {
+      --primary: #7b68ee;
+      --primary-dark: #6a5acd;
+      --bg: #f7f8fc;
+      --surface: #fff;
+      --text: #2c3e50;
+      --muted: #5a6c7d;
+      --border: #e2e6ef;
+      --radius: 12px;
+      --shadow: 0 4px 20px rgba(123, 104, 238, 0.12);
+      --nav-h: 56px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .mock-badge {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      z-index: 9999;
+      padding: 0.35rem 0.65rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 6px;
+      background: #1a1a2e;
+      color: #fff;
+    }
+    .topnav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.25rem;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo { font-weight: 800; font-size: 1.1rem; color: var(--primary); }
+    .topnav nav { display: flex; gap: 1.25rem; font-size: 0.9rem; }
+    .topnav a { color: var(--muted); text-decoration: none; }
+    .topnav a:hover { color: var(--primary); }
+
+    .hero {
+      padding: 3rem 1.25rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .hero h1 {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .hero h1 span { color: var(--primary); }
+    .tagline {
+      margin: 0 auto 1.5rem;
+      max-width: 36rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem 2.5rem;
+      margin-bottom: 1.75rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+    .stat span { font-size: 0.82rem; color: var(--muted); }
+    .search-mock {
+      display: flex;
+      max-width: 28rem;
+      margin: 0 auto 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--bg);
+    }
+    .search-mock input {
+      flex: 1;
+      border: none;
+      padding: 0.75rem 1rem;
+      font-size: 0.95rem;
+      background: transparent;
+      outline: none;
+    }
+    .search-mock kbd {
+      align-self: center;
+      margin-right: 0.5rem;
+      padding: 0.15rem 0.4rem;
+      font-size: 0.7rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1.35rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .hero-footer {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+    }
+    .hero-footer a { color: var(--muted); }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 1.75rem;
+      margin: 0 0 0.5rem;
+    }
+    .section-lead {
+      text-align: center;
+      max-width: 40rem;
+      margin: 0 auto 2rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .map-wrap {
+      display: grid;
+      gap: 2rem;
+      align-items: start;
+    }
+    @media (min-width: 900px) {
+      .map-wrap { grid-template-columns: 1fr 1fr; }
+    }
+    .orbit {
+      position: relative;
+      aspect-ratio: 1;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .orbit svg { width: 100%; height: 100%; }
+    .orbit .core {
+      position: absolute;
+      inset: 38%;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(123,104,238,0.4);
+    }
+    .node {
+      position: absolute;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      border: 2px solid var(--primary);
+      background: var(--surface);
+      font-size: 0.7rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .node:hover, .node.active {
+      transform: scale(1.12);
+      box-shadow: 0 0 0 4px rgba(123,104,238,0.25);
+      background: var(--primary);
+      color: #fff;
+    }
+    .map-detail {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      min-height: 200px;
+    }
+    .map-detail h3 { margin: 0 0 0.5rem; color: var(--primary); }
+
+    .paths { display: grid; gap: 0.75rem; }
+    .path-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+    }
+    .path-card:hover { border-color: var(--primary); }
+    .path-card strong { display: block; margin-bottom: 0.25rem; }
+
+    .demo-strip {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .demo-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .demo-preview {
+      height: 140px;
+      background: linear-gradient(145deg, #1a1a2e 0%, #2d2a4a 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.7);
+      font-size: 0.85rem;
+    }
+    .demo-card .body { padding: 1rem; }
+    .demo-card h3 { margin: 0 0 0.35rem; font-size: 1rem; }
+
+    .discover {
+      text-align: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      max-width: 36rem;
+      margin: 0 auto;
+    }
+    .discover a { color: var(--primary); font-weight: 600; font-size: 1.05rem; }
+
+    .formats {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .format-tile {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .format-tile:hover { border-color: var(--primary); color: var(--primary); }
+
+    footer.page-foot {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <div class="mock-badge">Макет 1 · Продукт</div>
+
+  <header class="topnav">
+    <div class="logo">Вселенная IT</div>
+    <nav>
+      <a href="#">Энциклопедия</a>
+      <a href="#">Лаборатория</a>
+      <a href="#">Поиск</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-card">
+      <h1>Энциклопедия IT с <span>интерактивом</span> внутри статей</h1>
+      <p class="tagline">
+        Открытый справочник: читаете, нажимаете, пробуете — Git, SQL, алгоритмы и сотни тренажёров без установки ПО.
+      </p>
+      <div class="stats">
+        <div class="stat"><strong>4&nbsp;200+</strong><span>статей</span></div>
+        <div class="stat"><strong>9</strong><span>разделов энциклопедии</span></div>
+        <div class="stat"><strong>300+</strong><span>интерактивных блоков</span></div>
+        <div class="stat"><strong>0</strong><span>рекламы</span></div>
+      </div>
+      <div class="search-mock" role="search">
+        <input type="search" placeholder="Поиск по энциклопедии…" aria-label="Поиск" />
+        <kbd>Ctrl K</kbd>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#">Начать с основ</a>
+        <a class="btn btn-secondary" href="#">Витрина интерактива</a>
+      </div>
+      <div class="hero-footer">
+        <a href="#">Скачать приложение для Android (APK)</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <h2>Карта Вселенной IT</h2>
+    <p class="section-lead">Девять разделов вокруг ядра. Выберите узел — справа описание раздела.</p>
+    <div class="map-wrap">
+      <div class="orbit" id="orbit">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(123,104,238,0.25)" stroke-width="0.5" stroke-dasharray="2 2"/>
+        </svg>
+        <div class="core">IT<br/>ядро</div>
+      </div>
+      <div class="map-detail" id="mapDetail">
+        <h3>1. Основы</h3>
+        <p>Фундамент: логика, архитектура, карьера, методологии. Точка входа для новичков и систематизации для опытных.</p>
+        <a class="btn btn-primary" href="#" style="margin-top:1rem">Открыть раздел →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="paths">
+    <h2>С чего начать?</h2>
+    <p class="section-lead">Готовые маршруты из бокового меню — раскройте карточку и перейдите к статье.</p>
+    <div class="paths">
+      <div class="path-card"><strong>Junior-разработчик</strong><span style="color:var(--muted);font-size:0.9rem">12 статей · порядок как в сайдбаре</span></div>
+      <div class="path-card"><strong>Аналитик данных</strong><span style="color:var(--muted);font-size:0.9rem">8 статей</span></div>
+      <div class="path-card"><strong>DevOps с нуля</strong><span style="color:var(--muted);font-size:0.9rem">15 статей</span></div>
+    </div>
+  </section>
+
+  <section id="interactive">
+    <h2>Интерактив в каждой теме</h2>
+    <p class="section-lead">Не скриншоты — живые демо в статьях. Три примера с витрины:</p>
+    <div class="demo-strip">
+      <article class="demo-card">
+        <div class="demo-preview">Git: ветки и merge</div>
+        <div class="body"><h3>Эмулятор Git</h3><p style="margin:0;font-size:0.88rem;color:var(--muted)">Коммиты, ветвление, слияние</p></div>
+      </article>
+      <article class="demo-card">
+        <div class="demo-preview">SQL: план запроса</div>
+        <div class="body"><h3>SQL-тренажёр</h3><p style="margin:0;font-size:0.88rem;color:var(--muted)">Запросы и индексы</p></div>
+      </article>
+      <article class="demo-card">
+        <div class="demo-preview">Алгоритм: визуализация</div>
+        <div class="body"><h3>Сортировки</h3><p style="margin:0;font-size:0.88rem;color:var(--muted)">Шаг за шагом</p></div>
+      </article>
+    </div>
+    <p style="text-align:center;margin-top:1.5rem">
+      <a class="btn btn-primary" href="#">Все тренажёры →</a>
+    </p>
+  </section>
+
+  <section id="discover">
+    <h2>Не знаете, с чего начать?</h2>
+    <div class="discover">
+      <p style="margin:0 0 0.5rem;color:var(--muted);font-size:0.9rem">Случайная статья</p>
+      <a href="#">Паттерн Singleton в контексте DI</a>
+      <button class="btn btn-secondary" style="margin-top:0.75rem" type="button">Ещё</button>
+    </div>
+  </section>
+
+  <section id="formats">
+    <h2>Форматы контента</h2>
+    <div class="formats">
+      <div class="format-tile">Энциклопедия</div>
+      <div class="format-tile">Лаборатория</div>
+      <div class="format-tile">Глоссарий</div>
+      <div class="format-tile">Инструменты</div>
+      <div class="format-tile">Контекст</div>
+      <div class="format-tile">Философия</div>
+    </div>
+  </section>
+
+  <footer class="page-foot">Макет для оценки UX · не подключён к Docusaurus</footer>
+
+  <script>
+    const sections = [
+      { id: 1, title: '1. Основы', text: 'Фундамент: логика, архитектура, карьера, методологии.' },
+      { id: 2, title: '2. Система и сеть', text: 'ОС, протоколы, железо, распределённые системы.' },
+      { id: 3, title: '3. Данные и разметка', text: 'SQL, NoSQL, HTML/CSS, аналитика.' },
+      { id: 4, title: '4. Код и разработка', text: 'Практики, тестирование, рефакторинг.' },
+      { id: 5, title: '5. Языки', text: 'JavaScript, Python, Java, C#, Rust и др.' },
+      { id: 6, title: '6. Инструменты', text: 'IDE, CI/CD, мониторинг.' },
+      { id: 7, title: '7. Проект', text: 'Архитектура, паттерны, управление.' },
+      { id: 8, title: '8. Инфра и безопасность', text: 'Облака, DevOps, ИБ.' },
+      { id: 9, title: '9. Контекст', text: 'Отрасли и прикладные домены.' },
+    ];
+    const orbit = document.getElementById('orbit');
+    const detail = document.getElementById('mapDetail');
+    const r = 38;
+    sections.forEach((s, i) => {
+      const angle = (i / 9) * Math.PI * 2 - Math.PI / 2;
+      const x = 50 + Math.cos(angle) * r;
+      const y = 50 + Math.sin(angle) * r;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'node' + (i === 0 ? ' active' : '');
+      btn.textContent = s.id;
+      btn.style.left = `calc(${x}% - 1.2rem)`;
+      btn.style.top = `calc(${y}% - 1.2rem)`;
+      btn.title = s.title;
+      btn.addEventListener('click', () => {
+        orbit.querySelectorAll('.node').forEach(n => n.classList.remove('active'));
+        btn.classList.add('active');
+        detail.innerHTML = `<h3>${s.title}</h3><p>${s.text}</p><a class="btn btn-primary" href="#" style="margin-top:1rem">Открыть раздел →</a>`;
+      });
+      orbit.appendChild(btn);
+    });
+  </script>
+</body>
+</html>

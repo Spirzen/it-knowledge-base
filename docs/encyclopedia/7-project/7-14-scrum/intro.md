@@ -16,7 +16,11 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Для кого</div>
 
   <div class="callout-body">
-  <p><strong>Новичкам</strong> — зачем Scrum появился и как устроен цикл спринта. <strong>Аналитикам и разработчикам</strong> — бэклог, оценки, Definition of Done. <strong>Руководителям и Scrum Master</strong> — размер команды, потери, внедрение и отличие «настоящего» Scrum от отчётности в Jira.</p>
+  **Новичкам** — зачем Scrum появился и как устроен цикл спринта.
+
+  **Аналитикам и разработчикам** — бэклог, оценки, Definition of Done.
+
+  **Руководителям и Scrum Master** — размер команды, потери, внедрение и отличие «настоящего» Scrum от отчётности в Jira.
 </div>
   </div>
 

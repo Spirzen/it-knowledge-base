@@ -1,0 +1,133 @@
+/**
+ * Шапка: компактные пункты слева, поиск по центру правой зоны, темы в углу.
+ */
+
+.navbar,
+.navbar__inner {
+  overflow: visible;
+}
+
+@media (min-width: 997px) {
+  .navbar__inner {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 0.45rem;
+    padding-bottom: 0.45rem;
+  }
+
+  .navbar__items--left {
+    flex: 0 0 auto;
+  }
+
+  .navbar__items--right {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    gap: 0.65rem;
+    min-width: 0;
+  }
+
+  .navbar__items--right > .navbar__item:has(.it-doc-search-bar) {
+    flex: 1 1 12rem;
+    max-width: 26rem;
+    min-width: 10rem;
+  }
+
+  .navbar__items--right > .navbar__item:has(.it-doc-search-bar) .it-doc-search-bar {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.it-doc-search-trigger {
+  font-family: inherit;
+}
+
+.navbar__items--right > .navbar__item:has(.it-navbar-theme-controls) {
+  flex-shrink: 0;
+}
+
+.it-navbar-theme-controls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.35rem 0.2rem 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--ifm-background-surface-color) 90%, transparent);
+}
+
+.it-navbar-theme-controls label {
+  margin-right: 0;
+}
+
+@media (max-width: 996px) {
+  .navbar__inner {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .navbar__toggle {
+    flex: 0 0 auto;
+    order: -1;
+    z-index: calc(var(--ifm-z-index-fixed) + 2);
+    margin-right: 0.15rem;
+  }
+
+  .navbar__brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .navbar__brand .navbar__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .navbar__items--right {
+    flex: 0 0 auto;
+    min-width: 0;
+    margin-left: auto;
+    gap: 0;
+  }
+
+  .navbar__items--right > .navbar__item:has(.it-doc-search-bar) {
+    display: none;
+  }
+
+  /* Тема: только в сайдбаре (см. NavbarColorModeToggle) */
+  .navbar > .navbar__inner .it-navbar-theme-controls {
+    display: none !important;
+  }
+}
+
+/* Палитра и свет/тёмная тема в мобильном меню */
+.navbar-sidebar .it-navbar-theme-controls {
+  display: inline-flex !important;
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: none;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.navbar-sidebar .it-navbar-theme-controls label {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.it-mobile-sidebar-header .it-doc-search-bar {
+  width: 100%;
+}
+
+.it-mobile-sidebar-header .it-doc-search-dropdown {
+  position: static;
+  margin-top: 0.35rem;
+}

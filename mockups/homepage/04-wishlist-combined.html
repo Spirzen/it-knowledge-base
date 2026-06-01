@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Макет 4 — Сводка хотелок · Вселенная IT</title>
+  <style>
+    :root {
+      --primary: #7b68ee;
+      --primary-dark: #6a5acd;
+      --primary-glow: rgba(123, 104, 238, 0.35);
+      --bg: #f7f8fc;
+      --surface: #fff;
+      --text: #2c3e50;
+      --muted: #5a6c7d;
+      --border: #e2e6ef;
+      --radius: 12px;
+      --shadow: 0 4px 20px rgba(123, 104, 238, 0.1);
+      --nav-h: 60px;
+    }
+    html[data-theme='dark'] {
+      --bg: #12121a;
+      --surface: #1e1e2a;
+      --text: #e8e8f0;
+      --muted: #9898b0;
+      --border: rgba(147, 112, 219, 0.22);
+      --shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+      --primary-glow: rgba(147, 112, 219, 0.45);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+
+    .mock-badge {
+      position: fixed;
+      top: 70px;
+      right: 12px;
+      z-index: 9999;
+      padding: 0.4rem 0.7rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 6px;
+      background: var(--primary);
+      color: #fff;
+      max-width: 11rem;
+      text-align: center;
+      line-height: 1.35;
+    }
+
+    /* ——— Хедер (макет 3 + ваши правила) ——— */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 200;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.6rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      text-decoration: none;
+      color: var(--text);
+      flex-shrink: 0;
+    }
+    .brand:hover { color: var(--primary); }
+    .mascot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 800;
+      color: #fff;
+      box-shadow: 0 2px 8px var(--primary-glow);
+    }
+    .brand-text {
+      font-weight: 800;
+      font-size: 1.05rem;
+      line-height: 1.2;
+    }
+    .header-nav {
+      display: flex;
+      gap: 0.25rem;
+      flex-shrink: 0;
+    }
+    .header-nav a {
+      padding: 0.45rem 0.75rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .header-nav a:hover,
+    .header-nav a.active {
+      color: var(--primary);
+      background: color-mix(in srgb, var(--primary) 10%, transparent);
+    }
+    .header-search-wrap {
+      flex: 1;
+      min-width: 180px;
+      max-width: 420px;
+    }
+    .header-search {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg);
+      gap: 0.5rem;
+    }
+    .header-search svg {
+      flex-shrink: 0;
+      color: var(--muted);
+    }
+    .header-search input {
+      flex: 1;
+      border: none;
+      background: transparent;
+      font-size: 0.9rem;
+      color: var(--text);
+      outline: none;
+      min-width: 0;
+    }
+    .header-search kbd {
+      font-size: 0.68rem;
+      padding: 0.12rem 0.35rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-family: inherit;
+    }
+    .header-tools {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-left: auto;
+      flex-shrink: 0;
+    }
+    .theme-cluster {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.25rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--bg);
+    }
+    .theme-cluster label {
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0 0.25rem;
+    }
+    .icon-btn {
+      width: 2.1rem;
+      height: 2.1rem;
+      border: none;
+      border-radius: 8px;
+      background: transparent;
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1;
+      color: var(--text);
+    }
+    .icon-btn:hover {
+      background: color-mix(in srgb, var(--primary) 12%, transparent);
+    }
+    .design-select {
+      max-width: 7.5rem;
+      padding: 0.35rem 0.5rem;
+      font-size: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .header-note {
+      width: 100%;
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-align: center;
+      padding: 0.25rem 1rem 0.5rem;
+      border-top: 1px dashed var(--border);
+      background: color-mix(in srgb, var(--primary) 4%, var(--bg));
+    }
+    @media (max-width: 768px) {
+      .header-search-wrap { order: 3; flex: 1 1 100%; max-width: none; }
+      .header-note { display: none; }
+    }
+
+    /* ——— Hero (макет 1) ——— */
+    .hero {
+      padding: 2.5rem 1.25rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.25rem 1.75rem 1.75rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .hero-logo {
+      margin-bottom: 0.75rem;
+    }
+    .hero-logo .mascot {
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 0.5rem;
+      font-size: 0.85rem;
+    }
+    .hero-logo h1 {
+      margin: 0;
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .hero-logo h1 span { color: var(--primary); }
+    .tagline {
+      margin: 0 auto 1.25rem;
+      max-width: 34rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .hero-search-label {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .hero-search {
+      display: flex;
+      max-width: 30rem;
+      margin: 0 auto 1.15rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--bg);
+      box-shadow: 0 2px 12px var(--primary-glow);
+    }
+    .hero-search input {
+      flex: 1;
+      border: none;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      background: transparent;
+      color: var(--text);
+      outline: none;
+    }
+    .hero-search kbd {
+      align-self: center;
+      margin-right: 0.6rem;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      justify-content: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1.35rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .btn-primary { background: var(--primary); color: #fff; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
+    .hero-footer {
+      margin-top: 1.15rem;
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+    .hero-footer a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .hero-footer a:hover { color: var(--primary); text-decoration: underline; }
+
+    /* ——— Секции общие ——— */
+    .section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 1.75rem;
+      margin: 0 0 0.5rem;
+    }
+    .section-lead {
+      text-align: center;
+      max-width: 40rem;
+      margin: 0 auto 2rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+    .home-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    /* ——— Орбита (макет 2, на светлом фоне) ——— */
+    .map-section {
+      background: linear-gradient(
+        180deg,
+        color-mix(in srgb, var(--primary) 8%, var(--bg)) 0%,
+        var(--bg) 70%
+      );
+      padding: 3rem 1.25rem 3.5rem;
+    }
+    html[data-theme='dark'] .map-section {
+      background: linear-gradient(180deg, #1a1528 0%, var(--bg) 65%);
+    }
+    .map-section .section-lead { margin-bottom: 1.5rem; }
+    .orbit-stage {
+      position: relative;
+      width: min(92vw, 540px);
+      aspect-ratio: 1;
+      margin: 0 auto 1.5rem;
+    }
+    .orbit-stage svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 0 24px var(--primary-glow));
+    }
+    .orbit-core {
+      position: absolute;
+      inset: 36%;
+      border-radius: 50%;
+      background: linear-gradient(145deg, var(--primary), var(--primary-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 800;
+      font-size: clamp(0.85rem, 2.5vw, 1.1rem);
+      text-align: center;
+      line-height: 1.2;
+      box-shadow: 0 0 50px var(--primary-glow), inset 0 0 20px rgba(255, 255, 255, 0.12);
+      animation: core-pulse 4s ease-in-out infinite;
+    }
+    @keyframes core-pulse {
+      50% { box-shadow: 0 0 70px var(--primary-glow), inset 0 0 28px rgba(255, 255, 255, 0.18); }
+    }
+    .orbit-node {
+      position: absolute;
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.72rem;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s, background 0.2s;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    }
+    .orbit-node:hover,
+    .orbit-node.active {
+      transform: scale(1.1);
+      border-color: var(--primary);
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+    .map-detail-wrap {
+      max-width: 520px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .map-detail {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      min-height: 120px;
+    }
+    .map-detail h3 { margin: 0 0 0.5rem; color: var(--primary); }
+
+    /* ——— С чего начать (без эмодзи) ——— */
+    .paths-grid {
+      display: grid;
+      gap: 0.75rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .path-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    }
+    .path-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+      width: 100%;
+      padding: 1rem 1.15rem;
+      border: none;
+      background: transparent;
+      text-align: left;
+      cursor: pointer;
+      font: inherit;
+      color: inherit;
+    }
+    .path-header:hover { background: color-mix(in srgb, var(--primary) 6%, transparent); }
+    .path-num {
+      flex-shrink: 0;
+      width: 1.75rem;
+      height: 1.75rem;
+      margin-right: 0.75rem;
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--primary) 14%, transparent);
+      color: var(--primary);
+      font-size: 0.8rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .path-body { flex: 1; min-width: 0; }
+    .path-title { font-size: 1.05rem; font-weight: 600; display: block; margin-bottom: 0.25rem; }
+    .path-desc { font-size: 0.875rem; color: var(--muted); line-height: 1.45; }
+    .path-meta { font-size: 0.75rem; font-weight: 600; color: var(--primary); margin-top: 0.35rem; display: block; }
+    .path-chevron {
+      flex-shrink: 0;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-top: 0.5rem;
+      border-right: 2px solid var(--primary);
+      border-bottom: 2px solid var(--primary);
+      transform: rotate(45deg);
+    }
+
+    /* ——— Интерактив ——— */
+    .demo-strip {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .demo-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .demo-preview {
+      height: 130px;
+      background: linear-gradient(145deg, #2d2a4a, #1a1a2e);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.85rem;
+    }
+    html[data-theme='dark'] .demo-preview {
+      background: linear-gradient(145deg, #0f0f18, #2a2540);
+    }
+    .demo-card .body { padding: 1rem; }
+    .demo-card h3 { margin: 0 0 0.3rem; font-size: 1rem; }
+    .demo-card p { margin: 0; font-size: 0.88rem; color: var(--muted); }
+    .panel-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .stacked-btn {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      gap: 0.1rem;
+      min-width: 15rem;
+    }
+    .stacked-btn small {
+      font-size: 0.78rem;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+
+    /* ——— Случайная статья ——— */
+    .discover-panel {
+      text-align: center;
+      max-width: 28rem;
+      margin: 0 auto;
+    }
+    .discover-panel h2 { margin-bottom: 0.35rem; }
+    .discover-panel .section-lead { margin-bottom: 1.25rem; }
+    .discover-card {
+      padding: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .discover-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin: 0 0 0.75rem;
+    }
+    .discover-link {
+      display: block;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-decoration: none;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+    }
+    .discover-link:hover { text-decoration: underline; }
+    .discover-section {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .btn-more {
+      width: 100%;
+      max-width: 10rem;
+      margin: 0 auto;
+    }
+
+    /* ——— Форматы (как на сайте: wide + сетка) ——— */
+    .formats-section { padding-bottom: 3rem; }
+    .cards-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    @media (min-width: 996px) {
+      .cards-grid { grid-template-columns: repeat(4, 1fr); }
+    }
+    @media (min-width: 768px) and (max-width: 995px) {
+      .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .feature-card {
+      padding: 1.5rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .feature-card h3 { margin: 0 0 0.5rem; font-size: 1.2rem; }
+    .feature-card p { margin: 0; font-size: 0.95rem; color: var(--muted); }
+    .feature-cta {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+    }
+    .feature-card--wide {
+      grid-column: span 2;
+      padding: 2rem;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border: none;
+      color: #fff;
+    }
+    .feature-card--wide h3,
+    .feature-card--wide p { color: #fff; }
+    .feature-card--wide .feature-cta {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.4);
+      color: #fff;
+    }
+    @media (max-width: 767px) {
+      .feature-card--wide { grid-column: span 1; }
+    }
+
+    /* ——— Футер (бывшие пункты хедера) ——— */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 2.5rem 1.25rem;
+    }
+    .footer-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      gap: 2rem;
+    }
+    @media (min-width: 768px) {
+      .footer-inner { grid-template-columns: 1.2fr 1fr 1fr; }
+    }
+    .footer-brand { font-weight: 800; color: var(--primary); font-size: 1.1rem; }
+    .footer-col h4 {
+      margin: 0 0 0.75rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+    .footer-col a {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text);
+      text-decoration: none;
+      padding: 0.2rem 0;
+    }
+    .footer-col a:hover { color: var(--primary); }
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 2rem auto 0;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="mock-badge">Макет 4 · ваши хотелки</div>
+
+  <!-- Хедер: маскот + название, энциклопедия, поиск, тема/дизайн -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#">
+        <span class="mascot" aria-hidden="true">IT</span>
+        <span class="brand-text">Вселенная IT</span>
+      </a>
+      <nav class="header-nav" aria-label="Разделы">
+        <a href="#" class="active">Энциклопедия</a>
+      </nav>
+      <div class="header-search-wrap">
+        <div class="header-search" role="search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/>
+          </svg>
+          <input type="search" placeholder="Поиск по сайту…" aria-label="Поиск" />
+          <kbd>Ctrl K</kbd>
+        </div>
+      </div>
+      <div class="header-tools">
+        <div class="theme-cluster" title="Светлая/тёмная и оформление">
+          <label for="mode">Тема</label>
+          <button type="button" class="icon-btn" id="modeToggle" aria-label="Светлая или тёмная тема">☀</button>
+          <select class="design-select" id="designSelect" aria-label="Оформление сайта">
+            <option>Original</option>
+            <option>Glass Aurora</option>
+            <option>Cosmic Void</option>
+            <option>…ещё 22</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <p class="header-note">
+      Поиск в шапке остаётся на всех страницах · на главной ниже — акцентное поле (то же действие)
+    </p>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-card">
+      <div class="hero-logo">
+        <div class="mascot" aria-hidden="true">IT</div>
+        <h1><span>Вселенная IT</span></h1>
+      </div>
+      <p class="tagline">
+        Энциклопедия с интерактивом внутри статей. Бесплатно, без рекламы — систематизированные знания.
+      </p>
+      <p class="hero-search-label">Быстрый поиск с главной</p>
+      <div class="hero-search">
+        <input type="search" placeholder="Найти статью, термин, тему…" aria-label="Поиск с главной" />
+        <kbd>Ctrl K</kbd>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#">Начать с основ</a>
+        <a class="btn btn-secondary" href="#">Витрина интерактива</a>
+      </div>
+      <footer class="hero-footer">
+        <a href="#">Скачать приложение для Android (APK)</a>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Орбита знаний (из макета 2) -->
+  <section class="map-section" id="map">
+    <div class="section" style="padding-top:0;padding-bottom:0;max-width:100%">
+      <h2>Карта Вселенной IT</h2>
+      <p class="section-lead">
+        Девять разделов вокруг ядра — орбита из макета 2. Нажмите узел, чтобы увидеть описание.
+      </p>
+      <div class="orbit-stage" id="orbitStage">
+        <svg viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#7b68ee" stop-opacity="0.15"/>
+              <stop offset="50%" stop-color="#7b68ee" stop-opacity="0.85"/>
+              <stop offset="100%" stop-color="#7b68ee" stop-opacity="0.15"/>
+            </linearGradient>
+          </defs>
+          <circle cx="50" cy="50" r="42" fill="none" stroke="url(#ringGrad)" stroke-width="0.9"/>
+          <circle cx="50" cy="50" r="38" fill="none" stroke="rgba(123,104,238,0.12)" stroke-width="0.35" stroke-dasharray="1.5 3"/>
+        </svg>
+        <div class="orbit-core">IT<br />ядро</div>
+      </div>
+      <div class="map-detail-wrap">
+        <div class="map-detail" id="mapDetail">
+          <h3>1. Основы</h3>
+          <p>Фундамент: логика, архитектура, карьера. Точка входа для новичков.</p>
+          <a class="btn btn-primary" href="#" style="margin-top:0.75rem">Открыть раздел</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- С чего начать -->
+  <section class="section" id="paths">
+    <h2>С чего начать?</h2>
+    <p class="section-lead">
+      Маршруты из бокового меню — без эмодзи, с номером и шевроном.
+    </p>
+    <div class="paths-grid">
+      <article class="path-card">
+        <button type="button" class="path-header">
+          <span class="path-num">1</span>
+          <span class="path-body">
+            <span class="path-title">Junior-разработчик</span>
+            <span class="path-desc">От переменных до первого PR: язык, Git, основы веба.</span>
+            <span class="path-meta">12 статей · нажмите, чтобы раскрыть</span>
+          </span>
+          <span class="path-chevron" aria-hidden="true"></span>
+        </button>
+      </article>
+      <article class="path-card">
+        <button type="button" class="path-header">
+          <span class="path-num">2</span>
+          <span class="path-body">
+            <span class="path-title">Аналитик данных</span>
+            <span class="path-desc">SQL, визуализация, метрики и работа с требованиями.</span>
+            <span class="path-meta">8 статей</span>
+          </span>
+          <span class="path-chevron" aria-hidden="true"></span>
+        </button>
+      </article>
+      <article class="path-card">
+        <button type="button" class="path-header">
+          <span class="path-num">3</span>
+          <span class="path-body">
+            <span class="path-title">DevOps с нуля</span>
+            <span class="path-desc">CI/CD, контейнеры, мониторинг и инфраструктура как код.</span>
+            <span class="path-meta">15 статей</span>
+          </span>
+          <span class="path-chevron" aria-hidden="true"></span>
+        </button>
+      </article>
+    </div>
+  </section>
+
+  <!-- Интерактив -->
+  <section class="section">
+    <div class="home-panel">
+      <h2 style="text-align:center;margin-top:0" id="interactive">Интерактив в каждой теме</h2>
+      <p class="section-lead">
+        Сотни встроенных тренажёров — примеры с витрины, без отрыва от текста статьи.
+      </p>
+      <div class="demo-strip">
+        <article class="demo-card">
+          <div class="demo-preview">Git: ветки и merge</div>
+          <div class="body"><h3>Эмулятор Git</h3><p>Коммиты, ветвление, слияние</p></div>
+        </article>
+        <article class="demo-card">
+          <div class="demo-preview">SQL: план запроса</div>
+          <div class="body"><h3>SQL-тренажёр</h3><p>Запросы и индексы</p></div>
+        </article>
+        <article class="demo-card">
+          <div class="demo-preview">Сортировки: шаг за шагом</div>
+          <div class="body"><h3>Алгоритмы</h3><p>Визуализация в действии</p></div>
+        </article>
+      </div>
+      <div class="panel-actions">
+        <a class="btn btn-primary" href="#">Витрина интерактива</a>
+        <a class="btn btn-secondary stacked-btn" href="#">
+          <span>Навигатор профиля</span>
+          <small>Интерактивная игра по траектории</small>
+        </a>
+        <a class="btn btn-secondary" href="#">Дорожная карта</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Случайная статья: «Ещё» под ссылкой -->
+  <section class="section discover-panel" id="discover">
+    <h2>Не знаете, с чего начать?</h2>
+    <p class="section-lead">Случайная статья из энциклопедии — кнопка «Ещё» под заголовком.</p>
+    <div class="discover-card">
+      <p class="discover-label">Случайная статья</p>
+      <a class="discover-link" href="#">Паттерн Singleton в контексте внедрения зависимостей</a>
+      <span class="discover-section">7. Проект</span>
+      <button type="button" class="btn btn-secondary btn-more">Ещё</button>
+    </div>
+  </section>
+
+  <!-- Форматы — как на сайте -->
+  <section class="section formats-section" id="formats">
+    <h2>Форматы контента</h2>
+    <p class="section-lead features-lead">Энциклопедия первична. Затем — дополнительный контент.</p>
+    <div class="cards-grid">
+      <div class="feature-card feature-card--wide">
+        <h3>Энциклопедия</h3>
+        <p>Систематизированный справочник по всем аспектам IT.</p>
+        <a class="feature-cta" href="#">Изучить раздел</a>
+      </div>
+      <div class="feature-card feature-card--wide">
+        <h3>Инструменты</h3>
+        <p>Обзоры, гайды и рекомендации по технологиям и ПО.</p>
+        <a class="feature-cta" href="#">Изучить раздел</a>
+      </div>
+      <div class="feature-card">
+        <h3>Глоссарий</h3>
+        <p>Термины и аббревиатуры.</p>
+        <a class="feature-cta" href="#">Изучить</a>
+      </div>
+      <div class="feature-card">
+        <h3>Лаборатория</h3>
+        <p>Задания и примеры кода.</p>
+        <a class="feature-cta" href="#">Изучить</a>
+      </div>
+      <div class="feature-card">
+        <h3>Контекст</h3>
+        <p>Отрасли и домены.</p>
+        <a class="feature-cta" href="#">Изучить</a>
+      </div>
+      <div class="feature-card">
+        <h3>Философия</h3>
+        <p>Культура и этика разработки.</p>
+        <a class="feature-cta" href="#">Изучить</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер: бывшие пункты хедера -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Вселенная IT</div>
+        <p style="margin:0.5rem 0 0;font-size:0.9rem;color:var(--muted)">
+          Открытая энциклопедия. Поиск и темы оформления — в шапке на каждой странице.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>О проекте</h4>
+        <a href="#">О проекте</a>
+        <a href="#">Манифест и правила</a>
+        <a href="#">Поддержать проект</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ещё</h4>
+        <a href="#">Скачать APK (Android)</a>
+        <a href="#">Витрина интерактива</a>
+        <a href="#">Дорожная карта</a>
+      </div>
+    </div>
+    <p class="footer-bottom">Макет 4 — сводка пожеланий · не подключён к Docusaurus</p>
+  </footer>
+
+  <script>
+    const sections = [
+      { id: 1, title: '1. Основы', text: 'Фундамент: логика, архитектура, карьера, методологии.' },
+      { id: 2, title: '2. Система и сеть', text: 'ОС, протоколы, железо, распределённые системы.' },
+      { id: 3, title: '3. Данные и разметка', text: 'SQL, NoSQL, HTML/CSS, аналитика.' },
+      { id: 4, title: '4. Код и разработка', text: 'Практики, тестирование, рефакторинг.' },
+      { id: 5, title: '5. Языки', text: 'JavaScript, Python, Java, C#, Rust и др.' },
+      { id: 6, title: '6. Инструменты', text: 'IDE, CI/CD, мониторинг.' },
+      { id: 7, title: '7. Проект', text: 'Архитектура, паттерны, управление.' },
+      { id: 8, title: '8. Инфра и безопасность', text: 'Облака, DevOps, ИБ.' },
+      { id: 9, title: '9. Контекст', text: 'Отрасли и прикладные домены.' },
+    ];
+    const stage = document.getElementById('orbitStage');
+    const detail = document.getElementById('mapDetail');
+    const r = 42;
+    sections.forEach((s, i) => {
+      const a = (i / 9) * Math.PI * 2 - Math.PI / 2;
+      const x = 50 + Math.cos(a) * r;
+      const y = 50 + Math.sin(a) * r;
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'orbit-node' + (i === 0 ? ' active' : '');
+      btn.textContent = s.id;
+      btn.style.left = 'calc(' + x + '% - 1.375rem)';
+      btn.style.top = 'calc(' + y + '% - 1.375rem)';
+      btn.addEventListener('click', () => {
+        stage.querySelectorAll('.orbit-node').forEach((n) => n.classList.remove('active'));
+        btn.classList.add('active');
+        detail.innerHTML =
+          '<h3>' + s.title + '</h3><p>' + s.text + '</p>' +
+          '<a class="btn btn-primary" href="#" style="margin-top:0.75rem">Открыть раздел</a>';
+      });
+      stage.appendChild(btn);
+    });
+
+    const modeToggle = document.getElementById('modeToggle');
+    modeToggle.addEventListener('click', () => {
+      const html = document.documentElement;
+      const dark = html.getAttribute('data-theme') === 'dark';
+      html.setAttribute('data-theme', dark ? 'light' : 'dark');
+      modeToggle.textContent = dark ? '☀' : '🌙';
+    });
+  </script>
+</body>
+</html>

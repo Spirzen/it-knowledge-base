@@ -76,7 +76,9 @@ JavaScript оживляет страницу в **браузере**. Это н�
   <div class="callout-title">Event loop, Worker и async</div>
 
   <div class="callout-body">
-  В браузере и Node.js основной поток один; параллелизм — через <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/12">асинхронность</a> и <a href="/encyclopedia/5-languages/5-01-javascript/36">Web Workers</a>. Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; в Node — <code>worker_threads</code>, <code>child_process</code>.
+  В браузере и Node.js основной поток один; параллелизм — через [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/12) и [Web Workers](/encyclopedia/5-languages/5-01-javascript/36).
+
+  Теория — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1); в Node — `worker_threads`, `child_process`.
 </div>
 </div>
 
@@ -164,7 +166,13 @@ JavaScript оживляет страницу в **браузере**. Это н�
   <div class="callout-title">Инструменты для старта</div>
 
   <div class="callout-body">
-  <strong>VS Code</strong>, встроенный терминал, <strong>Live Server</strong> и <strong>Emmet</strong> для HTML/CSS — в разделе <a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111">отладка в браузере</a> и <a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10">IDE и редакторы</a>. Разметка — <a href="/encyclopedia/3-data-markup/3-09-html/intro">HTML</a>, стили — <a href="/encyclopedia/3-data-markup/3-10-css/intro">CSS</a>. Целый <code>index.html</code> с разбором тегов — <a href="/lab/Примеры/1153">HTML-страницы целиком</a>. Макеты до первого скрипта — <a href="/lab/Примеры/110">HTML + CSS — готовые макеты</a>, Tailwind — <a href="/lab/Примеры/1117">Tailwind — готовые блоки</a>, анимации — <a href="/lab/Примеры/1116">CSS-анимации — готовые эффекты</a>.
+  **VS Code**, встроенный терминал, **Live Server** и **Emmet** для HTML/CSS — [DevTools в браузере — справочник](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116), общие принципы отладки — [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111), IDE — [редакторы](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10).
+
+  Разметка — [HTML](/encyclopedia/3-data-markup/3-09-html/intro), стили — [CSS](/encyclopedia/3-data-markup/3-10-css/intro).
+
+  Целый `index.html` с разбором тегов — [HTML-страницы целиком](/lab/Примеры/1153).
+
+  Макеты до первого скрипта — [HTML + CSS — готовые макеты](/lab/Примеры/110), Tailwind — [Tailwind — готовые блоки](/lab/Примеры/1117), анимации — [CSS-анимации — готовые эффекты](/lab/Примеры/1116).
 </div>
 </div>
 

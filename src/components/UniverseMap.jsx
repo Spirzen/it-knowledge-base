@@ -7,7 +7,7 @@ import {ENCYCLOPEDIA_SECTIONS} from '@site/src/data/encyclopediaSections';
 import styles from './UniverseMap.module.css';
 
 const SECTION_COUNT = ENCYCLOPEDIA_SECTIONS.length;
-const ORBIT_RADIUS = 38;
+const ORBIT_RADIUS = 32;
 
 function polarToPercent(index) {
   const angleDeg = (index * 360) / SECTION_COUNT - 90;
@@ -18,11 +18,6 @@ function polarToPercent(index) {
   };
 }
 
-function orbitPoint(index) {
-  const {x, y} = polarToPercent(index);
-  return {x: 50 + x, y: 50 + y};
-}
-
 export default function UniverseMap() {
   const [activeId, setActiveId] = useState(ENCYCLOPEDIA_SECTIONS[0].id);
 
@@ -30,14 +25,6 @@ export default function UniverseMap() {
     () => ENCYCLOPEDIA_SECTIONS.map((_, index) => polarToPercent(index)),
     [],
   );
-
-  const orbitPath = useMemo(() => {
-    const points = ENCYCLOPEDIA_SECTIONS.map((_, i) => {
-      const {x, y} = orbitPoint(i);
-      return `${x},${y}`;
-    });
-    return `M ${points.join(' L ')} Z`;
-  }, []);
 
   const activeSection =
     ENCYCLOPEDIA_SECTIONS.find((s) => s.id === activeId) ??
@@ -52,9 +39,8 @@ export default function UniverseMap() {
           Карта Вселенной IT
         </Heading>
         <p className={styles.subtitle}>
-          Девять разделов энциклопедии вокруг общего ядра. Наведите на узел или
-          выберите с клавиатуры — справа появится описание. Можно идти по
-          порядку 1→9 или переходить в любой раздел.
+          Девять разделов вокруг ядра — нажмите узел на орбите или выберите в списке,
+          чтобы увидеть описание и перейти в раздел.
         </p>
 
         <div className={styles.layout}>
@@ -68,36 +54,59 @@ export default function UniverseMap() {
                 viewBox="0 0 100 100"
                 preserveAspectRatio="xMidYMid meet"
                 aria-hidden="true">
+                <defs>
+                  <linearGradient
+                    id="universe-orbit-ring"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%">
+                    <stop
+                      offset="0%"
+                      stopColor="var(--ifm-color-primary)"
+                      stopOpacity="0.12"
+                    />
+                    <stop
+                      offset="50%"
+                      stopColor="var(--ifm-color-primary)"
+                      stopOpacity="0.85"
+                    />
+                    <stop
+                      offset="100%"
+                      stopColor="var(--ifm-color-primary)"
+                      stopOpacity="0.12"
+                    />
+                  </linearGradient>
+                </defs>
+                <circle
+                  className={styles.orbitRingGlow}
+                  cx="50"
+                  cy="50"
+                  r={ORBIT_RADIUS + 2}
+                />
                 <circle
                   className={styles.orbitRing}
                   cx="50"
                   cy="50"
                   r={ORBIT_RADIUS}
                 />
-                <path className={styles.orbitPath} d={orbitPath} />
-                {nodePositions.map((pos, index) => (
-                  <line
-                    key={ENCYCLOPEDIA_SECTIONS[index].id}
-                    className={styles.spoke}
-                    x1="50"
-                    y1="50"
-                    x2={50 + pos.x}
-                    y2={50 + pos.y}
-                    data-active={
-                      activeId === ENCYCLOPEDIA_SECTIONS[index].id
-                        ? 'true'
-                        : undefined
-                    }
-                  />
-                ))}
+                <circle
+                  className={styles.orbitRingInner}
+                  cx="50"
+                  cy="50"
+                  r={ORBIT_RADIUS - 3}
+                />
               </svg>
 
               <Link
                 to="/encyclopedia/intro"
                 className={styles.hub}
                 aria-label="Энциклопедия — введение">
-                <span className={styles.hubLabel}>IT</span>
-                <span className={styles.hubSub}>ядро</span>
+                <span className={styles.hubLabel}>
+                  IT
+                  <br />
+                  ядро
+                </span>
               </Link>
 
               {ENCYCLOPEDIA_SECTIONS.map((section, index) => {
@@ -119,17 +128,15 @@ export default function UniverseMap() {
                     aria-current={isActive ? 'true' : undefined}
                     onPointerEnter={() => activate(section.id)}
                     onFocus={() => activate(section.id)}
-                    onClick={() => activate(section.id)}>
+                    onClick={() => activate(section.id)}
+                    title={section.shortTitle}
+                    aria-label={`${section.number}. ${section.title}`}>
                     <span className={styles.nodeNumber}>{section.number}</span>
-                    <span className={styles.nodeTitle}>{section.shortTitle}</span>
                   </Link>
                 );
               })}
             </div>
 
-            <p className={styles.mapHint}>
-              Пунктир — рекомендуемый маршрут изучения снаружи вглубь
-            </p>
             <p className={styles.roadmapLink}>
               <Link to="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">
                 Полная интерактивная дорожная карта →

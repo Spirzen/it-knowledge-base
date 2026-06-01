@@ -23,6 +23,8 @@ related:
     doc: lab/examples/1116
   - title: "SVG — рисунки кодом"
     doc: lab/examples/1119
+  - title: "DevTools в браузере — справочник"
+    doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -31,7 +33,7 @@ import WebPageLayersPlay from '@site/src/components/WebPageLayersPlay';
 
 # О разделе
 
-HTML — **каркас** страницы: заголовки, абзацы, ссылки, формы. Стили добавляет CSS, поведение кнопок — JavaScript. Связь с формулировками рунета — [9.10 / 133](/encyclopedia/9-spinoff/9-10-internet-kultura/133). Разметка описывает **гипертекст** — электронный текст со ссылками между документами; теория терминов (веб-страница, статика и динамика, гиперссылки) — в [основах HTML](./1.md). Сервер дополняет каркас данными — [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro). В статьях энциклопедии дополнительно используют **callout** (выноски на `<div>`) и **`<details>`** — см. [основы HTML](./1.md#callout-i-details).
+HTML — **каркас** страницы: заголовки, абзацы, ссылки, формы. Стили добавляет CSS, поведение кнопок — JavaScript. Проверка разметки в браузере — [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) (вкладка Elements). Связь с формулировками рунета — [9.10 / 133](/encyclopedia/9-spinoff/9-10-internet-kultura/133). Разметка описывает **гипертекст** — электронный текст со ссылками между документами; теория терминов (веб-страница, статика и динамика, гиперссылки) — в [основах HTML](./1.md). Сервер дополняет каркас данными — [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro). В статьях энциклопедии дополнительно используют **callout** (выноски на `<div>`) и **`<details>`** — см. [основы HTML](./1.md#callout-i-details).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный** и **машинный код**; HTML — тоже текстовый код, который читает браузер.
 

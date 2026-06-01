@@ -70,7 +70,9 @@ Python удобен для **первого языка**: читается по�
   <div class="callout-title">Среда выполнения Python</div>
 
   <div class="callout-body">
-  Интерпретатор CPython компилирует модули в <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код</a> (<code>.pyc</code>) и исполняет его на PVM — см. <a href="/encyclopedia/5-languages/5-02-python/11#zhiznennyy-tsikl-koda">жизненный цикл кода</a>; память — в <a href="/encyclopedia/5-languages/5-02-python/27">архитектуре выполнения</a>, сравнение с Java и Go — <a href="/encyclopedia/4-code-dev/4-15-sborka-musora/4">шпаргалка GC</a>. Общие термины — <a href="/encyclopedia/1-basics/1-19-programma/1">программа и библиотеки</a>.
+  Интерпретатор CPython компилирует модули в [байт-код](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314) (`.pyc`) и исполняет его на PVM — см. [жизненный цикл кода](/encyclopedia/5-languages/5-02-python/11#zhiznennyy-tsikl-koda); память — в [архитектуре выполнения](/encyclopedia/5-languages/5-02-python/27), сравнение с Java и Go — [шпаргалка GC](/encyclopedia/4-code-dev/4-15-sborka-musora/4).
+
+  Общие термины — [программа и библиотеки](/encyclopedia/1-basics/1-19-programma/1).
 </div>
 </div>
 
@@ -78,7 +80,13 @@ Python удобен для **первого языка**: читается по�
   <div class="callout-title">Потоки, процессы и async в Python</div>
 
   <div class="callout-body">
-  Теория ОС — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>, <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">синхронизация</a>. В Python: <code>threading</code> и <code>multiprocessing</code> — <a href="/encyclopedia/5-languages/5-02-python/26">многопоточность</a>; <code>asyncio</code> — <a href="/encyclopedia/5-languages/5-02-python/27">асинхронность</a>; GIL — <a href="/encyclopedia/5-languages/5-02-python/28">ограничения параллелизма</a>. Сетевой I/O — <a href="/encyclopedia/5-languages/5-02-python/315">сетевое программирование</a> и <a href="/encyclopedia/5-languages/5-02-python/315#spravochnik-setevyh-bibliotek">справочник библиотек</a>.
+  Теория ОС — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1), [синхронизация](/encyclopedia/4-code-dev/4-05-asinhronnost/11).
+
+  В Python: `threading` и `multiprocessing` — [многопоточность](/encyclopedia/5-languages/5-02-python/26); `asyncio` — [асинхронность](/encyclopedia/5-languages/5-02-python/27);
+
+  GIL — [ограничения параллелизма](/encyclopedia/5-languages/5-02-python/28).
+
+  Сетевой I/O — [сетевое программирование](/encyclopedia/5-languages/5-02-python/315) и [справочник библиотек](/encyclopedia/5-languages/5-02-python/315#spravochnik-setevyh-bibliotek).
 </div>
 </div>
 

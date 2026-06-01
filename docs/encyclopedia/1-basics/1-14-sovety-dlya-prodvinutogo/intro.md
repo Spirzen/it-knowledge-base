@@ -27,7 +27,11 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">PostgreSQL в home lab</div>
 
   <div class="callout-body">
-  <p>Если поднимаете домашний стенд или ВМ — добавьте в него <strong>PostgreSQL</strong>. Локальная практика с SQL, бэкапами и ролями пригодится на любой роли в IT. Установка и клиенты — <a href="/tools/data/1">СУБД</a>, маршрут обучения — <a href="/encyclopedia/3-data-markup/3-07-sql/888">PostgreSQL — практическая работа</a>, продвинутая эксплуатация — <a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro">практикум 8.11</a>.</p>
+  Если поднимаете домашний стенд или ВМ — добавьте в него **PostgreSQL**.
+
+  Локальная практика с SQL, бэкапами и ролями пригодится на любой роли в IT.
+
+  Установка и клиенты — [СУБД](/tools/data/1), маршрут обучения — [PostgreSQL — практическая работа](/encyclopedia/3-data-markup/3-07-sql/888), продвинутая эксплуатация — [практикум 8.11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
 </div>
   </div>
 
@@ -47,6 +51,7 @@ import DocCardList from '@theme/DocCardList';
 | [Процессы и чистка Windows](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6) | Диспетчер задач, телеметрия, кэши, RGB-софт |
 | [Игры: FPS и латентность](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7) | Shader cache, input lag, память, драйверы |
 | [Железо и диагностика](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/8) | Охлаждение, троттлинг, устойчивость системы |
+| [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) | F12, Network, отладка веб-приложений (при уходе в разработку) |
 
 Связанный раздел инструментов: [Софт продвинутого пользователя](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/intro).
 

@@ -32,6 +32,8 @@ const ArticlePdfExport = require('@site/src/components/ArticlePdfExport').defaul
 const ArticleSeeAlso = require('@site/src/components/ArticleSeeAlso').default;
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const ArticleRelated = require('@site/src/components/ArticleRelated').default;
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const DocTocPanel = require('@site/src/theme/DocItem/Layout/DocTocPanel').default;
 
 type DocItemLayoutProps = {
   children: ReactNode;
@@ -231,8 +233,8 @@ export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode
   useClickableArticleTags();
 
   return (
-    <div className="row">
-      <div className={clsx('col', !docTOC.hidden && styles.docItemCol)}>
+    <div className={clsx('row', 'docItemRow', styles.docItemRow)}>
+      <div className={clsx('col', 'docItemCol', styles.docItemCol)}>
         <ContentVisibility metadata={metadata} />
         <DocVersionBanner />
         <div className={styles.docItemContainer}>
@@ -250,12 +252,12 @@ export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode
         </div>
       </div>
       {docTOC.desktop && (
-        <div className={clsx('col col--3', styles.docSidebarCol)}>
-          <div className={styles.docSidebarInner}>
-            <ChapterProgress />
-            <div className={styles.docTocScroll}>{docTOC.desktop}</div>
-          </div>
-        </div>
+        <DocTocPanel
+          sidebarColClassName={styles.docSidebarCol}
+          innerClassName={styles.docSidebarInner}>
+          <ChapterProgress />
+          <div className={styles.docTocScroll}>{docTOC.desktop}</div>
+        </DocTocPanel>
       )}
     </div>
   );

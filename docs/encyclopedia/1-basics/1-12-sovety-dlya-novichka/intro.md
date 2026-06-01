@@ -41,7 +41,11 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">PostgreSQL на своём компьютере</div>
 
   <div class="callout-body">
-  <p>Когда дойдёте до данных и SQL — <strong>обязательно поставьте PostgreSQL</strong> и потренируйтесь: psql, простые запросы, проверка таблиц. Это нужно любой IT-роли, не только разработчикам. Старт — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a>, установка — <a href="/tools/data/1">СУБД в Инструментах</a>.</p>
+  Когда дойдёте до данных и SQL — **обязательно поставьте PostgreSQL** и потренируйтесь: psql, простые запросы, проверка таблиц.
+
+  Это нужно любой IT-роли, не только разработчикам.
+
+  Старт — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101), установка — [СУБД в Инструментах](/tools/data/1).
 </div>
   </div>
 

@@ -33,7 +33,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Корутины и JVM-потоки</div>
 
   <div class="callout-body">
-  Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>. В Kotlin — <strong>корутины</strong> (легковесная конкуренция) поверх JVM; см. статьи раздела про <code>suspend</code>, диспетчеры и structured concurrency.
+  Теория — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1).
+
+  В Kotlin — **корутины** (легковесная конкуренция) поверх JVM; см. статьи раздела про `suspend`, диспетчеры и structured concurrency.
 </div>
 </div>
 

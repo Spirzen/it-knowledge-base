@@ -54,7 +54,9 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
   <div class="callout-title">PostgreSQL для аналитика</div>
 
   <div class="callout-body">
-  <p>Даже если вы не пишете продакшен-код, <strong>установите PostgreSQL</strong> и потренируйтесь в SQL — проверка гипотез, сверка отчётов, понимание ERD и интеграций. Старт — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a> → <a href="/encyclopedia/3-data-markup/3-07-sql/888">PostgreSQL — практическая работа</a>; язык данных в аналитике — <a href="/encyclopedia/7-project/7-04-analitika/1121">1121</a>.</p>
+  Даже если вы не пишете продакшен-код, **установите PostgreSQL** и потренируйтесь в SQL — проверка гипотез, сверка отчётов, понимание ERD и интеграций.
+
+  Старт — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) → [PostgreSQL — практическая работа](/encyclopedia/3-data-markup/3-07-sql/888); язык данных в аналитике — [1121](/encyclopedia/7-project/7-04-analitika/1121).
 </div>
   </div>
 

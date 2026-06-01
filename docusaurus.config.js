@@ -236,6 +236,11 @@ module.exports = {
   ],
 
   themeConfig: {
+    docs: {
+      sidebar: {
+        hideable: true,
+      },
+    },
     prism: {
       additionalLanguages: [
         'bash',
@@ -277,14 +282,7 @@ module.exports = {
           position: 'left',
           label: 'Энциклопедия',
         },
-        { to: '/about/project', label: 'О проекте', position: 'left' },
-        { to: '/about/manifest', label: 'Манифест', position: 'left' },
-        { type: 'custom-docSearch', position: 'right' },
-        {
-          href: '/about/author#support',
-          label: 'Поддержать',
-          position: 'right',
-        },
+        {type: 'custom-docSearch', position: 'right'},
       ],
     },
     footer: {
@@ -317,9 +315,11 @@ module.exports = {
         {
           title: 'О проекте',
           items: [
-            { label: 'Манифест и Правила', to: '/about/manifest' },
-            { label: 'Об авторе', to: '/about/author' },
-            { label: 'GitHub', href: 'https://github.com/spirzen/it-knowledge-base' },
+            {label: 'О проекте', to: '/about/project'},
+            {label: 'Манифест и правила', to: '/about/manifest'},
+            {label: 'Поддержать проект', to: '/about/author#support'},
+            {label: 'Об авторе', to: '/about/author'},
+            {label: 'GitHub', href: 'https://github.com/spirzen/it-knowledge-base'},
           ],
         },
       ],

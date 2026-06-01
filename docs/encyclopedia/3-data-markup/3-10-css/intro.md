@@ -23,6 +23,8 @@ related:
     doc: lab/examples/1119
   - title: "React — компоненты-рецепты"
     doc: lab/examples/1146
+  - title: "DevTools в браузере — справочник"
+    doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -32,7 +34,7 @@ import WebPageLayersPlay from '@site/src/components/WebPageLayersPlay';
 
 # О разделе
 
-CSS описывает **внешний вид** разметки HTML: цвета, шрифты, отступы, сетку. Без HTML не к чему применять правила.
+CSS описывает **внешний вид** разметки HTML: цвета, шрифты, отступы, сетку. Без HTML не к чему применять правила. Проверка каскада и box model на живой странице — [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) (вкладки Elements, Styles, Computed).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, как браузер обрабатывает текстовые инструкции; в этом разделе — **таблицы стилей CSS**.
 

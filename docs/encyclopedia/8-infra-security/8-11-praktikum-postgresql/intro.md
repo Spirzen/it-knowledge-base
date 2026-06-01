@@ -104,7 +104,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Связанные материалы
 
-- [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro) — полный маршрут от SELECT до бэкапов.
+- [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro) — маршрут от SELECT до бэкапов.
 - [PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888) — драйверы, psql, типовой стек.
 - [phpPgAdmin — о разделе](/encyclopedia/5-languages/5-07-php/phppgadmin/intro) — веб-админка для учебных стендов на PHP.
 - [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) — установка Postgres, psql, pgAdmin.

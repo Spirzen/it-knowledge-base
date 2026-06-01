@@ -4,6 +4,7 @@
 @import './it-design-compat.css';
 @import './it-design-effects.css';
 @import './doc-search-theme.css';
+@import './navbar-layout.css';
 
 /* ============================================================================
    1. ПЕРЕМЕННЫЕ (CSS VARIABLES)
@@ -67,6 +68,10 @@
   /* Код */
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(123, 104, 238, 0.15);
+
+  /* Документация: доля центра и правого оглавления */
+  --it-doc-toc-width: clamp(11rem, 18vw, 20rem);
+  --it-doc-article-gap: 1rem;
 }
 
 [data-theme='dark'] {
@@ -119,6 +124,18 @@
 /* ============================================================================
    2. ГЛОБАЛЬНЫЕ НАСТРОЙКИ И ТИПОГРАФИКА
    ============================================================================ */
+
+html {
+  overflow-x: clip;
+}
+
+body,
+#main-wrapper,
+.main-wrapper,
+#__docusaurus {
+  max-width: 100%;
+  overflow-x: clip;
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -239,12 +256,29 @@ img {
   display: flex;
   align-items: flex-start;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: clip;
 }
 
 .docMainContainer {
   flex: 1 1 0;
   min-width: 0;
   max-width: 100%;
+  overflow-x: clip;
+}
+
+@media screen and (min-width: 997px) {
+  html.it-docs-page main.docMainContainer .container,
+  html.it-docs-page .docItemWrapper {
+    max-width: 100% !important;
+    width: 100%;
+  }
+
+  html.it-docs-page.it-doc-toc-collapsed .docItemRow .docItemCol {
+    flex: 1 1 auto;
+    width: auto;
+  }
 }
 
 .theme-doc-sidebar-container {
@@ -284,6 +318,19 @@ img {
 }
 
 @media screen and (max-width: 996px) {
+  .theme-doc-sidebar-container {
+    min-width: 0 !important;
+    max-width: none !important;
+  }
+
+  .docMainContainer > .container {
+    max-width: 100%;
+  }
+
+  .theme-doc-markdown > article {
+    padding: 1.25rem 1rem !important;
+  }
+
   .navbar-sidebar .menu__link {
     white-space: normal !important;
     overflow: visible !important;
@@ -437,7 +484,7 @@ img {
   border-radius: var(--ifm-card-border-radius);
   padding: 2rem !important;
   box-shadow: var(--ifm-global-shadow-md) !important;
-  margin: 0 auto;
+  margin: 0;
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -1092,16 +1139,17 @@ pre[class*='language-']::after,
   min-width: 0;
 }
 
-/* Колонки статьи и правого оглавления */
-.docItemCol,
-.docSidebarCol {
+/* Колонки статьи: min-width: 0 — в module DocItem/Layout; здесь только общий overflow */
+.theme-doc-markdown,
+.docItemContainer,
+.docItemContainer article {
   min-width: 0;
+  max-width: 100%;
 }
 
-@media (min-width: 997px) {
-  .docSidebarCol {
-    flex: 0 0 25%;
-    max-width: 25%;
+@media screen and (min-width: 1200px) {
+  :root {
+    --it-doc-toc-width: clamp(12rem, 16vw, 22rem);
   }
 }
 

@@ -100,7 +100,7 @@ export default function useSidebarAutoWidth(navRef, deps = []) {
         }
 
         if (!mq.matches) {
-          sidebar.style.removeProperty('width');
+          clearAppliedSidebarWidth(sidebar);
           sidebar.style.removeProperty('--doc-sidebar-nest-depth');
           return;
         }
@@ -155,8 +155,10 @@ export default function useSidebarAutoWidth(navRef, deps = []) {
       window.removeEventListener(RESET_WIDTH_EVENT, onReset);
       mq.removeEventListener('change', apply);
       const sidebar = nav.closest('.theme-doc-sidebar-container');
-      sidebar?.style.removeProperty('width');
-      sidebar?.style.removeProperty('--doc-sidebar-nest-depth');
+      if (sidebar) {
+        clearAppliedSidebarWidth(sidebar);
+        sidebar.style.removeProperty('--doc-sidebar-nest-depth');
+      }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps -- deps задают пересчёт при фильтрации
   }, [navRef, ...deps]);

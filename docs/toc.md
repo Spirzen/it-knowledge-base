@@ -713,7 +713,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/412">2.01. Поддержка локализации и символов в Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/413">2.01. Сравнение Windows и Linux</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/414">2.01. Эмуляция, виртуализация и Wine</a></li>
-  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/415">2.01. Windows 11 — практическое руководство</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/415">2.01. Windows 11 — настройка и работа</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/4111">2.01. Работа памяти в Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5111">2.01. Дескрипторы процессов в Linux</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5112">2.01. Управление памятью в Linux</a></li>
@@ -1701,7 +1701,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113">4.13. Ветвление и слияние в Git</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/114">4.13. Рекомендации по использованию Git в команде</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115">4.13. Справочник-шпаргалка по Git</a></li>
-  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/116">4.13. Файл .gitignore — полное руководство</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/116">4.13. Файл .gitignore</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1141">4.13. Типовые ситуации с Git</a></li>
   </ul>
   </li>
@@ -1719,12 +1719,13 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/3">4.14. Чек-лист самопроверки</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/11">4.14. Профессиональные практики и культура разработки</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111">4.14. Отладка</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116">4.14. DevTools в браузере — справочник</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/112">4.14. Анализ и оптимизация производительности приложений</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/113">4.14. Создание и публикация собственной библиотеки</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/114">4.14. Пет-проекты</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/115">4.14. План развития разработчика</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/116">4.14. Организация структуры кодовой базы</a></li>
-  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/117">4.14. README — полное руководство для разработчика</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/117">4.14. README для разработчика</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/119">4.14. Разработка расширений для веб-браузеров</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1111">4.14. Настройка логирования</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1112">4.14. Безопасность окружения и .env файлы</a></li>
@@ -2110,7 +2111,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/161">5.05. Простые приложения на C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/291">5.05. Справочник по LINQ</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/391">5.05. Класс Thread в C# — создание, Start, фоновые потоки и практика</a></li>
-  <li><a href="/encyclopedia/5-languages/5-05-csharp/392">5.05. Task и async/await в C# — полная практическая глава</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/392">5.05. Task и async/await в C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/441">5.05. EF Core — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/442">5.05. ADO.NET / Dapper — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/451">5.05. ASP.NET - фреймворк для веб-приложений</a></li>
@@ -3906,7 +3907,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/115">8.06. Сеть в контейнерах</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/116">8.06. Dockerfile</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117">8.06. Docker Swarm и Kubernetes</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. Универсальная шпаргалка</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. DevOps — шпаргалка</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211">8.06. Справочник по Kubernetes</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/998">8.06. Итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/999">8.06. Чек-лист самопроверки</a></li>
@@ -4163,9 +4164,9 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/124">9.03. Final Fantasy</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/125">9.03. Halo</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/126">9.03. Grand Theft Auto</a></li>
-  <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/127">9.03. Жанры видеоигр — краткий маршрут</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/127">9.03. Жанры видеоигр — маршрут</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/128">9.03. DRM и Denuvo в играх</a></li>
-  <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/129">9.03. Игровые консоли — краткий маршрут</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/129">9.03. Игровые консоли — маршрут</a></li>
   </ul>
   </li>
 

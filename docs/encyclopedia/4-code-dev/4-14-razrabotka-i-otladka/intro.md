@@ -15,6 +15,10 @@ related:
     doc: encyclopedia/4-code-dev/4-15-sborka-musora/1
   - title: "Десктопные приложения — о разделе"
     doc: encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro
+  - title: "DevTools в браузере — справочник"
+    doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116
+  - title: "Отладка"
+    doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111
   - title: "Low-code и No-code платформы"
     doc: encyclopedia/8-infra-security/8-02-low-code-no-code/1
 ---
@@ -23,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про практику разработки: от процесса и отладки до оформления репозитория. Сборка, Run в IDE, dev-сервер и перезапуск — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Для README и структуры проекта см. [README — полное руководство](./117). Быстрые проверки HTTP API в терминале — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133). Чтобы вынести пет-проект в интернет бесплатно — [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3); идеи проектов — [Пет-проекты](./114).
+Раздел про практику разработки: от процесса и отладки до оформления репозитория. Встроенные **средства разработчика в браузере** (Elements, Console, Network, Sources) — [DevTools в браузере — справочник](./1116). Сборка, Run в IDE, dev-сервер и перезапуск — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Для README и структуры проекта см. [README для разработчика](./117). Быстрые проверки HTTP API в терминале — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133). Чтобы вынести пет-проект в интернет бесплатно — [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3); идеи проектов — [Пет-проекты](./114).
 
 Код из ИИ без review — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл «промпт → проверка → merge» — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) и [библиотека промптов](/lab/Примеры/1150) (Python, traceback, рефакторинг, review).
 

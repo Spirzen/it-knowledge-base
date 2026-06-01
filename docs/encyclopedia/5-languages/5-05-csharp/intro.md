@@ -41,7 +41,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Потоки, Task и async в .NET</div>
 
   <div class="callout-body">
-  Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>, <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">мьютексы и гонки</a>. В C# — <code>async</code>/<code>await</code>, <code>Task</code>, пул потоков CLR; см. статьи раздела про параллелизм и асинхронность после основ синтаксиса.
+  Теория — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1), [мьютексы и гонки](/encyclopedia/4-code-dev/4-05-asinhronnost/11).
+
+  В C# — `async`/`await`, `Task`, пул потоков CLR; см. статьи раздела про параллелизм и асинхронность после основ синтаксиса.
 </div>
 </div>
 

@@ -1,0 +1,25 @@
+﻿=== 1-basics: colon+comma, no bullet below (554 lines) ===
+encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1.md:34
+  ┼ёыш їюЄшЄх эх яЁюёЄю ўшЄрЄ№ яю яюЁ фъє, р ёЁрчє тшфхЄ№, ўЄю трь яюфїюфшЄ, яЁющфшЄх [═ртшурЄюЁ эютшўър ш яЁюЇшыхщ](/lab/╧ырэ√%20ЁрчтшЄш /7): ёЄрт№Єх юЎхэъш ёЄрЄ
+
+encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/2.md:36
+  ╟рЇшъёшЁєщЄх шэЄхЁхё ъ Єхьрь т [═ртшурЄюЁх эютшўър ш яЁюЇшыхщ](/lab/╧ырэ√%20ЁрчтшЄш /7): ¤Єю яюьюцхЄ яюэ Є№, шфЄш ыш фры№°х т  ч√ъш, рэрышЄшъє, схчюярёэюёЄ№ шыш
+
+encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/2.md:281
+python : Traceback (most recent call last):
+C:\Users\timta\AppData\Local\Temp\ps-script-946aa6b0-9dc5-45ad-8328-754e78da3960.ps1:94 знак:49
++ ... edge-base"; python scripts\scan-section-colon-lists.py 1-basics 2>&1  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "F:\ITUniverse\it-knowledge-base\scripts\scan-section-colon-lists.py", line 63, in <module>
+    scan(sec)
+    ~~~~^^^^^
+  File "F:\ITUniverse\it-knowledge-base\scripts\scan-section-colon-lists.py", line 57, in scan
+    print(f"  {t}")
+    ~~~~~^^^^^^^^^^
+  File "C:\Python313\Lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2192' in position 79: character maps to <undefined>

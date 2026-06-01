@@ -42,8 +42,8 @@ import DocCardList from '@theme/DocCardList';
 | Цель | Статья |
 |------|--------|
 | Как устроены клиент, демон, образы и реестр | [Docker](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111#kak-ustroen-docker) |
-| 18 команд Docker с пояснениями | [Универсальная шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-18-komand) |
-| 9 практик Dockerfile | [Универсальная шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-9-praktik) |
+| 18 команд Docker с пояснениями | [DevOps — шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-18-komand) |
+| 9 практик Dockerfile | [DevOps — шпаргалка](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118#docker-9-praktik) |
 | Манифесты зависимостей (`requirements.txt`, `RUN pip install`) | [Манифесты зависимостей](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/103) |
 | Сборка образа в GitHub Actions | [CI/CD рецепты](/lab/Примеры/1134) |
 | Справочник CLI, Dockerfile, Compose | [Справочник по Docker](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2) |

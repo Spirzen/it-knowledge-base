@@ -26,6 +26,10 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">PostgreSQL — общий навык для всех ролей в проекте</div>
 
   <div class="callout-body">
-  <p>Разработчикам, аналитикам, тестировщикам, инженерам, администраторам и архитекторам в одной команде нужно уметь работать с данными в <strong>PostgreSQL</strong> — независимо от языка. Поставьте сервер локально, пройдите <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a> и держите под рукой <a href="/encyclopedia/3-data-markup/3-07-sql/888">практику по PostgreSQL</a>. Проверка данных в QA — <a href="/encyclopedia/7-project/7-05-testirovanie/129">SQL для тестировщика</a>; модели и ERD — в <a href="/encyclopedia/7-project/7-04-analitika/intro">Аналитике</a> и <a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro">Проектировании</a>.</p>
+  Разработчикам, аналитикам, тестировщикам, инженерам, администраторам и архитекторам в одной команде нужно уметь работать с данными в **PostgreSQL** — независимо от языка.
+
+  Поставьте сервер локально, пройдите [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) и держите под рукой [практику по PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888).
+
+  Проверка данных в QA — [SQL для тестировщика](/encyclopedia/7-project/7-05-testirovanie/129); модели и ERD — в [Аналитике](/encyclopedia/7-project/7-04-analitika/intro) и [Проектировании](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro).
 </div>
   </div>

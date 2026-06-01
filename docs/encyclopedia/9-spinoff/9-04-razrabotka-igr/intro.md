@@ -107,7 +107,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Как учиться эффективно</div>
 
   <div class="callout-body">
-  Держите открытыми Unity и IDE: повторяйте примеры из <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/3">главы 3</a> и <a href="/lab/Примеры/1136">галереи скриптов в Lab</a>, не копируя слепо — меняйте параметры (скорость, радиус агента, win-условие). После каждого блока — 3–5 вопросов из <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/999">чек-листа Unity/C#</a>.
+  Держите открытыми Unity и IDE: повторяйте примеры из [главы 3](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) и [галереи скриптов в Lab](/lab/Примеры/1136), не копируя слепо — меняйте параметры (скорость, радиус агента, win-условие).
+
+  После каждого блока — 3–5 вопросов из [чек-листа Unity/C#](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
 </div>
 </div>
 
@@ -132,7 +134,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Как учиться эффективно</div>
 
   <div class="callout-body">
-  Держите открытыми Studio, <a href="/lab/Примеры/1141">галерею скриптов в Lab</a> и статью <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/204">204</a>: повторяйте модули и чекпоинты, меняя число этапов и цены в магазине. Справочник <a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/2">2</a> читайте выборочно при вопросах по lifecycle и репликации.
+  Держите открытыми Studio
+
+  [галерею скриптов в Lab](/lab/Примеры/1141) и статью [204](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204): повторяйте модули и чекпоинты, меняя число этапов и цены в магазине. Справочник [2](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2) читайте выборочно при вопросах по lifecycle и репликации.
 </div>
 </div>
 

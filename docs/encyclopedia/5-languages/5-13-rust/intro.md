@@ -35,7 +35,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
   <div class="callout-title">Потоки, Send/Sync и async</div>
 
   <div class="callout-body">
-  Модель владения заменяет часть ошибок гонок на этапе компиляции. Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">синхронизация и гонки</a>; в Rust — <code>std::thread</code>, <code>tokio</code>, типы <code>Send</code>/<code>Sync</code>.
+  Модель владения заменяет часть ошибок гонок на этапе компиляции. Теория — [синхронизация и гонки](/encyclopedia/4-code-dev/4-05-asinhronnost/11)
+
+  в Rust — `std::thread`, `tokio`, типы `Send`/`Sync`.
 </div>
 </div>
 

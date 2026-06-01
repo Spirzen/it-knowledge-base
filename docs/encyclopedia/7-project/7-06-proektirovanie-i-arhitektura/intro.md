@@ -43,7 +43,11 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">PostgreSQL в архитектурных решениях</div>
 
   <div class="callout-body">
-  <p>Архитектору и разработчику нужен живой опыт с <strong>PostgreSQL</strong> — транзакции, индексы, репликация, JSONB, миграции схем. Установите сервер локально и пройдите <a href="/encyclopedia/3-data-markup/3-07-sql/888">практику по PostgreSQL</a>; для production — <a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro">практикум 8.11</a>. System Design с БД — <a href="143.md">карта тем</a>.</p>
+  Архитектору и разработчику нужен живой опыт с **PostgreSQL** — транзакции, индексы, репликация, JSONB, миграции схем.
+
+  Установите сервер локально и пройдите [практику по PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888); для production — [практикум 8.11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
+
+  System Design с БД — [карта тем](143.md).
 </div>
   </div>
 
@@ -52,7 +56,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Как читать раздел</div>
 
   <div class="callout-body">
-  <p>Не обязательно идти по алфавиту в меню. Ниже — три маршрута; в конце — связи с соседними разделами и подборка "Архитектура и проектирование ПО".</p>
+  Не обязательно идти по алфавиту в меню. Ниже — три маршрута
+
+  в конце — связи с соседними разделами и подборка "Архитектура и проектирование ПО".
 </div>
   </div>
 
@@ -88,7 +94,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Разбор</div>
 
   <div class="callout-body">
-  <p><strong>"Срочно нужны микросервисы"</strong> — сначала NFR и границы команд; сравните с <a href="design/2126.md">модульным монолитом</a> и <a href="design/2141.md">таблицей trade-off</a>.</p>
+  **"Срочно нужны микросервисы"** — сначала NFR и границы команд
+
+  сравните с [модульным монолитом](design/2126.md) и [таблицей trade-off](design/2141.md).
 </div>
   </div>
 

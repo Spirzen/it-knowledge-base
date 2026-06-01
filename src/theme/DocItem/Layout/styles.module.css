@@ -2,16 +2,46 @@
  * Базовые стили DocItem Layout (на основе стандартной темы Docusaurus)
  */
 
+.docItemRow {
+  width: 100%;
+  min-width: 0;
+}
+
 .docItemContainer header + *,
 .docItemContainer article > *:first-child {
   margin-top: 0;
 }
 
+.docItemCol {
+  min-width: 0;
+}
+
 @media (min-width: 997px) {
+  .docItemRow {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: var(--it-doc-article-gap, 1rem);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .docItemRow > :global(.col) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .docItemCol {
     flex: 1 1 0;
+    width: 0;
     max-width: none !important;
     min-width: 0;
+  }
+
+  .docSidebarCol {
+    flex: 0 0 var(--it-doc-toc-width);
+    width: var(--it-doc-toc-width);
+    max-width: var(--it-doc-toc-width);
   }
 }
 
@@ -22,6 +52,7 @@
   flex-shrink: 0;
   position: relative;
   z-index: 2;
+  min-width: 0;
 }
 
 .docSidebarInner {
@@ -111,5 +142,101 @@
 
 .clickableTag:focus-visible {
   box-shadow: 0 0 0 2px var(--ifm-color-primary);
+}
+
+/* --- Панель «Содержание» (сворачивание) --- */
+
+.tocPanelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-shrink: 0;
+  padding: 0.35rem 0.5rem 0.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.tocPanelTitle {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-content-secondary);
+}
+
+.tocCollapseBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.tocCollapseBtn:hover,
+.tocCollapseBtn:focus-visible {
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  outline: none;
+}
+
+.tocCollapseBtnIcon {
+  width: 0.85rem;
+  height: 0.85rem;
+  transform: rotate(90deg);
+}
+
+.tocExpandTab {
+  position: fixed;
+  z-index: 4;
+  top: calc(var(--ifm-navbar-height) + 5rem);
+  right: 0;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.65rem 0.4rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  background: var(--ifm-card-background-color);
+  box-shadow: var(--ifm-global-shadow-lw);
+  color: var(--ifm-color-content-secondary);
+  cursor: pointer;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.tocExpandTab:hover,
+.tocExpandTab:focus-visible {
+  color: var(--ifm-color-primary);
+  box-shadow: var(--ifm-global-shadow-md);
+  outline: none;
+}
+
+.tocExpandTabLabel {
+  transform: rotate(180deg);
+}
+
+.tocExpandTabIcon {
+  width: 0.85rem;
+  height: 0.85rem;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 996px) {
+  .tocExpandTab {
+    display: none;
+  }
 }
 

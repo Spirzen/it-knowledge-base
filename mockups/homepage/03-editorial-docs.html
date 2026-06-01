@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Макет 3 — Редакционный docs · Вселенная IT</title>
+  <style>
+    :root {
+      --primary: #7b68ee;
+      --bg: #fafafb;
+      --surface: #fff;
+      --text: #1a2332;
+      --muted: #5c6b7a;
+      --border: #dfe3eb;
+      --sidebar-w: 200px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .mock-badge {
+      position: fixed; top: 12px; right: 12px; z-index: 9999;
+      padding: 0.35rem 0.65rem; font-size: 0.72rem; font-weight: 700;
+      border-radius: 6px; background: var(--text); color: #fff;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+    }
+    @media (min-width: 1024px) {
+      .layout {
+        grid-template-columns: var(--sidebar-w) 1fr;
+      }
+    }
+
+    .sidebar {
+      display: none;
+      padding: 1.5rem 1rem;
+      border-right: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+    @media (min-width: 1024px) {
+      .sidebar { display: block; }
+    }
+    .sidebar .brand {
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      display: block;
+      text-decoration: none;
+    }
+    .sidebar nav a {
+      display: block;
+      padding: 0.4rem 0.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-decoration: none;
+      border-radius: 6px;
+      border-left: 2px solid transparent;
+    }
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      color: var(--primary);
+      background: rgba(123, 104, 238, 0.08);
+      border-left-color: var(--primary);
+    }
+
+    main { min-width: 0; }
+
+    .topbar {
+      padding: 0.75rem 1.5rem;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .topbar .search {
+      flex: 1;
+      min-width: 200px;
+      max-width: 400px;
+      padding: 0.5rem 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+
+    .content { max-width: 720px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+    .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin: 0 0 0.5rem;
+    }
+  .content h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin: 0 0 1rem;
+    }
+    .lead {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin: 0 0 2rem;
+      max-width: 38rem;
+    }
+
+    .metrics-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .metrics-inline strong { color: var(--text); font-size: 1.1rem; }
+
+    .btn-row { display: flex; flex-wrap: wrap; gap: 0.65rem; margin-bottom: 2.5rem; }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      border: 1px solid transparent;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .btn-fill { background: var(--primary); color: #fff; }
+    .btn-ghost { background: transparent; border-color: var(--border); color: var(--text); }
+
+    .chapter {
+      margin-top: 3rem;
+      scroll-margin-top: 2rem;
+    }
+    .chapter-num {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+    }
+    .chapter h2 {
+      font-size: 1.5rem;
+      margin: 0.25rem 0 1rem;
+      font-weight: 700;
+    }
+
+    .map-compact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+    .map-compact button {
+      aspect-ratio: 1;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-family: inherit;
+      color: var(--muted);
+    }
+    .map-compact button:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: rgba(123,104,238,0.06);
+    }
+    .map-compact button:nth-child(5) {
+      grid-column: 2;
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    .path-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .path-list li {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.95rem;
+    }
+    .path-list li:last-child { border-bottom: none; }
+    .path-list span { color: var(--muted); font-size: 0.82rem; }
+
+    .demo-row {
+      display: grid;
+      gap: 0.75rem;
+    }
+    @media (min-width: 600px) {
+      .demo-row { grid-template-columns: repeat(3, 1fr); }
+    }
+    .demo-chip {
+      padding: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+      font-size: 0.88rem;
+    }
+    .demo-chip strong { display: block; margin-bottom: 0.25rem; }
+
+    .pick-box {
+      padding: 1.25rem;
+      background: var(--surface);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 10px 10px 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .pick-box a { font-weight: 600; color: var(--primary); }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .tags a {
+      padding: 0.35rem 0.75rem;
+      font-size: 0.82rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--muted);
+      background: var(--surface);
+    }
+    .tags a:hover { border-color: var(--primary); color: var(--primary); }
+
+    .text-link {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 2rem;
+    }
+    .text-link a { color: var(--primary); }
+
+    .mobile-toc {
+      display: flex;
+      gap: 0.35rem;
+      overflow-x: auto;
+      padding: 0.5rem 1rem;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.78rem;
+    }
+    @media (min-width: 1024px) {
+      .mobile-toc { display: none; }
+    }
+    .mobile-toc a {
+      white-space: nowrap;
+      padding: 0.35rem 0.6rem;
+      border-radius: 999px;
+      background: var(--bg);
+      color: var(--muted);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="mock-badge">Макет 3 · Editorial</div>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="#">Вселенная IT</a>
+      <nav>
+        <a href="#intro" class="active">Введение</a>
+        <a href="#map">Карта разделов</a>
+        <a href="#paths">Маршруты</a>
+        <a href="#interactive">Интерактив</a>
+        <a href="#discover">Открытие</a>
+        <a href="#formats">Форматы</a>
+      </nav>
+    </aside>
+
+    <div>
+      <div class="mobile-toc">
+        <a href="#intro">Введение</a>
+        <a href="#map">Карта</a>
+        <a href="#paths">Маршруты</a>
+        <a href="#interactive">Интерактив</a>
+        <a href="#discover">Открытие</a>
+      </div>
+
+      <header class="topbar">
+        <input class="search" type="search" placeholder="Поиск (Ctrl+K)…" aria-label="Поиск" />
+        <a class="btn btn-ghost" href="#">Манифест</a>
+      </header>
+
+      <main class="content">
+        <section id="intro" class="chapter">
+          <p class="eyebrow">Открытая энциклопедия</p>
+          <h1>Систематизированные знания по IT — с практикой внутри статей</h1>
+          <p class="lead">
+            Бесплатно, без рекламы. Читайте справочник, запускайте тренажёры в том же окне, идите по маршрутам или исследуйте карту девяти разделов.
+          </p>
+
+          <div class="metrics-inline">
+            <div><strong>4 200+</strong><br />статей</div>
+            <div><strong>9</strong><br />разделов</div>
+            <div><strong>300+</strong><br />демо</div>
+          </div>
+
+          <div class="btn-row">
+            <a class="btn btn-fill" href="#">Начать с основ</a>
+            <a class="btn btn-ghost" href="#">Витрина интерактива</a>
+          </div>
+        </section>
+
+        <section id="map" class="chapter">
+          <div class="chapter-num">01</div>
+          <h2>Карта разделов</h2>
+          <p style="color:var(--muted);margin-top:0">Сетка вместо орбиты — быстрый обзор на узких и широких экранах.</p>
+          <div class="map-compact" role="group" aria-label="Разделы">
+            <button type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">4</button>
+            <button type="button">IT</button>
+            <button type="button">6</button>
+            <button type="button">7</button>
+            <button type="button">8</button>
+            <button type="button">9</button>
+          </div>
+        </section>
+
+        <section id="paths" class="chapter">
+          <div class="chapter-num">02</div>
+          <h2>С чего начать</h2>
+          <ul class="path-list">
+            <li>Junior-разработчик <span>12 статей →</span></li>
+            <li>Аналитик данных <span>8 статей →</span></li>
+            <li>DevOps с нуля <span>15 статей →</span></li>
+          </ul>
+        </section>
+
+        <section id="interactive" class="chapter">
+          <div class="chapter-num">03</div>
+          <h2>Интерактив</h2>
+          <div class="demo-row">
+            <div class="demo-chip"><strong>Git</strong>ветки и merge</div>
+            <div class="demo-chip"><strong>SQL</strong>планы запросов</div>
+            <div class="demo-chip"><strong>Алгоритмы</strong>визуализация</div>
+          </div>
+        </section>
+
+        <section id="discover" class="chapter">
+          <div class="chapter-num">04</div>
+          <h2>Открытие</h2>
+          <div class="pick-box">
+            <p style="margin:0 0 0.35rem;font-size:0.82rem;color:var(--muted)">Случайная статья</p>
+            <a href="#">Паттерн Singleton в контексте DI</a>
+          </div>
+        </section>
+
+        <section id="formats" class="chapter">
+          <div class="chapter-num">05</div>
+          <h2>Форматы</h2>
+          <div class="tags">
+            <a href="#">Энциклопедия</a>
+            <a href="#">Лаборатория</a>
+            <a href="#">Глоссарий</a>
+            <a href="#">Инструменты</a>
+            <a href="#">Контекст</a>
+            <a href="#">Философия</a>
+          </div>
+        </section>
+
+        <p class="text-link">
+          <a href="#">Скачать APK для Android</a> · Макет 3 — редакционная колонка как у docs-порталов
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.sidebar nav a').forEach((link) => {
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.sidebar nav a').forEach((l) => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

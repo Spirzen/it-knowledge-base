@@ -16,7 +16,7 @@ import {
 
 import styles from './GettingStartedPaths.module.css';
 
-function CollectionAccordion({collection, articles, isOpen, onToggle}) {
+function CollectionAccordion({collection, articles, isOpen, onToggle, displayIndex}) {
   const baseId = useId();
   const panelId = `${baseId}-panel`;
   const headerId = `${baseId}-header`;
@@ -32,8 +32,8 @@ function CollectionAccordion({collection, articles, isOpen, onToggle}) {
         aria-expanded={isOpen}
         aria-controls={panelId}
         onClick={onToggle}>
-        <span className={styles.cardIcon} aria-hidden="true">
-          {collection.emoji}
+        <span className={styles.cardNum} aria-hidden="true">
+          {displayIndex}
         </span>
         <span className={styles.cardBody}>
           <span className={styles.cardTitle}>{collection.label}</span>
@@ -108,7 +108,7 @@ function CollectionGroup({group, collections, articleLists}) {
         {group.title}
       </Heading>
       <div className={styles.accordionStack}>
-        {collections.map((collection) => {
+        {collections.map((collection, index) => {
           const articles =
             articleLists.get(collection.label) ??
             collection.items.map((docId) => ({
@@ -122,6 +122,7 @@ function CollectionGroup({group, collections, articleLists}) {
               key={collection.label}
               collection={collection}
               articles={articles}
+              displayIndex={index + 1}
               isOpen={openLabels.has(collection.label)}
               onToggle={() => toggle(collection.label)}
             />

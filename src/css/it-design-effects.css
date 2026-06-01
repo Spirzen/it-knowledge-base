@@ -35,7 +35,7 @@ html[data-design='design-brutalist-swiss'] .button--primary {
 
 html[data-design='design-glass-aurora'] .hero-card,
 html[data-design='design-glass-aurora'] .feature-card,
-html[data-design='design-glass-aurora'] .apk-strip {
+html[data-design='design-glass-aurora'] .home-panel {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-color: rgba(255, 255, 255, 0.15);

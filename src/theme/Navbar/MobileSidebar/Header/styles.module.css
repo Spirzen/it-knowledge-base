@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.search {
+  padding: 0.65rem 0.85rem 0.85rem;
+}
+
+.searchBar {
+  width: 100%;
+}

@@ -45,7 +45,11 @@ import DocCardList from '@theme/DocCardList';
 6. **[Логирование и мониторинг](./19.md)** · **[Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro)** · **[Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro)** · **[Надёжность под нагрузкой](/encyclopedia/7-project/7-05-testirovanie/1014)** — наблюдаемость после релиза.
 7. **Итоги** [998](./998.md) и **чек-лист** [999](./999.md).
 
-Если вы только пишете код в IDE и никогда не видели staging — начните с [основ](./1.md): без этого остальные главы про Jenkins, Kubernetes и Terraform воспринимаются как "чужой мир".
+Если вы только пишете код в IDE и никогда не видели staging — начните с [основ](./1.md):
+
+- без этого остальные главы про Jenkins;
+- Kubernetes;
+- Terraform воспринимаются как "чужой мир".
 
 Культурный мост по терминам GitHub и DevOps в рунете — [9.10 / 133](/encyclopedia/9-spinoff/9-10-internet-kultura/133).
 

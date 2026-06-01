@@ -15,6 +15,8 @@ related:
     doc: encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro
   - title: "Основы информационной безопасности — о разделе"
     doc: encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro
+  - title: "DevTools в браузере — справочник"
+    doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116
 ---
 
 import DocCardList from '@theme/DocCardList';

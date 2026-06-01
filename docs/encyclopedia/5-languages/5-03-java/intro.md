@@ -37,7 +37,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Среда выполнения Java</div>
 
   <div class="callout-body">
-  Общая теория — <a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">байт-код и виртуальные машины</a>, <a href="/encyclopedia/4-code-dev/4-15-sborka-musora/4">сравнение GC (Java, Python, Go)</a>, <a href="/encyclopedia/1-basics/1-19-programma/1">программа и runtime</a>. Потоки — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; в Java: <a href="/encyclopedia/5-languages/5-03-java/23">JVM и потоки</a>, <a href="/encyclopedia/5-languages/5-03-java/298">асинхронность</a>, <a href="/encyclopedia/5-languages/5-03-java/308">virtual threads (Java 21+)</a>.
+  Общая теория — [байт-код и виртуальные машины](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314), [сравнение GC (Java, Python, Go)](/encyclopedia/4-code-dev/4-15-sborka-musora/4), [программа и runtime](/encyclopedia/1-basics/1-19-programma/1).
+
+  Потоки — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1); в Java: [JVM и потоки](/encyclopedia/5-languages/5-03-java/23), [асинхронность](/encyclopedia/5-languages/5-03-java/298), [virtual threads (Java 21+)](/encyclopedia/5-languages/5-03-java/308).
 </div>
 </div>
 

@@ -4,6 +4,14 @@
   gap: 0.15rem;
 }
 
+.themeControlsSidebar {
+  flex: 1 1 auto;
+  justify-content: flex-end;
+  min-width: 0;
+  max-width: calc(100% - 3rem);
+  gap: 0.35rem;
+}
+
 .darkNavbarColorModeToggle:hover {
   background: var(--ifm-color-gray-800);
 }

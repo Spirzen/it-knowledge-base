@@ -115,6 +115,7 @@ flowchart LR
 | 5a | [IDE и редакторы](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10) | Подсветка, IntelliSense, отладчик в одной среде |
 | 6 | [4.13 Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [12 команд](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115#12-komand) | История изменений кода |
 | 6a | [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111) | Точки останова, символы, GDB |
+| 6b | [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) | Elements, Console, Network, Sources |
 
 Дальше — специализации: [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) ([Flutter — виджеты в Lab](/lab/Примеры/1154), [Dart — Flutter](/encyclopedia/5-languages/5-22-dart/311)) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) ([WinForms/WPF в Lab](/lab/Примеры/1138), [Tkinter в Lab](/lab/Примеры/1124), [Java Swing в Lab](/lab/Примеры/1143)). Для веб-UI на React — [галерея компонентов](/lab/Примеры/1146) после [272](/encyclopedia/5-languages/5-01-javascript/272).
 
@@ -122,7 +123,11 @@ flowchart LR
   <div class="callout-title">Связь с другими томами</div>
 
   <div class="callout-body">
-  Школьный маршрут — <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/4">алгоритмы и языки в базовой информатике</a>. Правовой статус программ — <a href="/encyclopedia/7-project/7-07-intellektualnye-prava/intro">интеллектуальные права</a>. Конкретные языки — раздел <a href="/encyclopedia/5-languages/intro">5. Языки</a>.
+  Школьный маршрут — [алгоритмы и языки в базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4).
+
+  Правовой статус программ — [интеллектуальные права](/encyclopedia/7-project/7-07-intellektualnye-prava/intro).
+
+  Конкретные языки — раздел [5. Языки](/encyclopedia/5-languages/intro).
 </div>
   </div>
 
@@ -157,7 +162,11 @@ mindmap
   <div class="callout-title">Псевдокод и эталонный код</div>
 
   <div class="callout-body">
-  В подразделах <strong>4.01–4.03, 4.05–4.08, 4.15–4.16</strong> сложные идеи по возможности даются сначала на <strong>русском алгоритмическом псевдокоде</strong>, затем — примером на конкретном языке. Подразделы про Git, мобильные и десктопные приложения опираются на платформы — там псевдокод уместен точечно. Развёрнутый образец — <a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro">"Параллельные вычисления"</a>.
+  В подразделах **4.01–4.03, 4.05–4.08, 4.15–4.16** сложные идеи по возможности даются сначала на **русском алгоритмическом псевдокоде**, затем — примером на конкретном языке.
+
+  Подразделы про Git, мобильные и десктопные приложения опираются на платформы — там псевдокод уместен точечно.
+
+  Развёрнутый образец — ["Параллельные вычисления"](/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro).
 </div>
   </div>
 
@@ -166,7 +175,11 @@ mindmap
   <div class="callout-title">Код — одна фаза проекта</div>
 
   <div class="callout-body">
-  <p>Этот том про <strong>алгоритмы, синтаксис, отладку и Git</strong>. Как устроены требования, тестирование на уровне проекта, релизы, сопровождение и роли в команде — в томе <a href="/encyclopedia/Проект/project">Проект</a>: <a href="/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro">методология и SDLC</a>, <a href="/encyclopedia/7-project/7-04-analitika/intro">аналитика</a>, <a href="/encyclopedia/7-project/7-05-testirovanie/intro">тестирование</a>.</p>
+  Этот том про **алгоритмы, синтаксис, отладку и Git**. Как устроены требования, тестирование на уровне проекта, релизы, сопровождение и роли в команде — в томе [Проект](/encyclopedia/Проект/project): [методология и SDLC](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro)
+
+  [аналитика](/encyclopedia/7-project/7-04-analitika/intro)
+
+  [тестирование](/encyclopedia/7-project/7-05-testirovanie/intro).
 </div>
   </div>
 

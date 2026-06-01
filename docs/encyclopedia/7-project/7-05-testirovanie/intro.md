@@ -42,7 +42,9 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
   <div class="callout-title">PostgreSQL на стенде тестировщика</div>
 
   <div class="callout-body">
-  <p>Для SQL-проверок и API-тестов с данными <strong>поставьте PostgreSQL</strong> локально (или в Docker) и держите учебную базу под рукой. Установка — <a href="/encyclopedia/3-data-markup/3-07-sql/101">Первые шаги с SQL</a>; запросы для QA — <a href="./129.md">SQL для тестировщика</a>; практика по СУБД — <a href="/encyclopedia/3-data-markup/3-07-sql/888">PostgreSQL — практическая работа</a>; готовый <code>compose.yaml</code> для Postgres — <a href="/lab/Примеры/11111#3-только-postgresql-для-разработки">стек №3</a> в галерее Compose.</p>
+  Для SQL-проверок и API-тестов с данными **поставьте PostgreSQL** локально (или в Docker) и держите учебную базу под рукой.
+
+  Установка — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101); запросы для QA — [SQL для тестировщика](./129.md); практика по СУБД — [PostgreSQL — практическая работа](/encyclopedia/3-data-markup/3-07-sql/888); готовый `compose.yaml` для Postgres — [стек №3](/lab/Примеры/11111#3-только-postgresql-для-разработки) в галерее Compose.
 </div>
   </div>
 

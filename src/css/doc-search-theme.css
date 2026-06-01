@@ -3,11 +3,13 @@
  * Основные стили — src/components/DocSearch/styles.module.css
  */
 
+.navbar__items--right > .navbar__item:has(.it-doc-search-bar),
 .navbar__items--right > .navbar__item:has(.it-doc-search-trigger) {
   display: flex;
   align-items: center;
 }
 
+.it-doc-search-bar,
 .it-doc-search-trigger {
   font-family: inherit;
 }

@@ -27,7 +27,9 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Горутины и модель CSP</div>
 
   <div class="callout-body">
-  Go реализует <strong>легковесные потоки</strong> (горутины) и обмен через каналы — вариант <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/13">передачи сообщений</a>. Теория — <a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">процессы и потоки</a>; практика — <a href="/encyclopedia/5-languages/5-10-go/14">синтаксис и конкурентность</a>, <a href="/encyclopedia/5-languages/5-10-go/16">паттерны</a>.
+  Go реализует **легковесные потоки** (горутины) и обмен через каналы — вариант [передачи сообщений](/encyclopedia/4-code-dev/4-05-asinhronnost/13).
+
+  Теория — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1); практика — [синтаксис и конкурентность](/encyclopedia/5-languages/5-10-go/14), [паттерны](/encyclopedia/5-languages/5-10-go/16).
 </div>
 </div>
 
