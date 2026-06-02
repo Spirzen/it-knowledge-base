@@ -15,6 +15,7 @@ function CassandraCqlPlayInner() {
         subtitle="SELECT по partition key (user_id) читает одну партицию; без него — дорогой обход"
       >
         <MiniDbTerminal
+          title="cqlsh"
           prompt="cqlsh> "
           welcomeLines={getCqlWelcome()}
           execute={execute}

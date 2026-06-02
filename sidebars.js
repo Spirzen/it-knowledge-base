@@ -8,6 +8,7 @@ const sidebars = {
       items: [
         'about/project',
         'about/collections',
+        'about/collections/pervye-shagi',
         'about/interactive',
         'about/author',
         'about/license',

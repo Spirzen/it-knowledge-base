@@ -51,7 +51,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Нейросети и ИИ** — [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812).
+**Нейросети и ИИ** — [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro).
 
 {/* /sidebar-collections */}
 

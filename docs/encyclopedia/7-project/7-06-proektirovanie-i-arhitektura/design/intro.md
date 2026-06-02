@@ -17,6 +17,10 @@ related:
     doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
   - title: "Семь слоёв LLM-стека"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/119
+  - title: "Архитектура выполнения — о разделе"
+    doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro
+  - title: "Роль и практика архитектора программного обеспечения"
+    doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -114,6 +118,8 @@ import DocCardList from '@theme/DocCardList';
 ## В подборках
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Техлид** — [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Роль и практика архитектора программного обеспечения](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro).
 
 **Архитектура и проектирование ПО** — [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro).
 

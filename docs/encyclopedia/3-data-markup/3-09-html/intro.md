@@ -21,10 +21,14 @@ related:
     doc: lab/examples/1146
   - title: "CSS-анимации — готовые эффекты"
     doc: lab/examples/1116
+  - title: "UI-паттерны из Uiverse (Galaxy)"
+    doc: lab/examples/1155
   - title: "SVG — рисунки кодом"
     doc: lab/examples/1119
   - title: "DevTools в браузере — справочник"
     doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -49,7 +53,7 @@ HTML — **каркас** страницы: заголовки, абзацы, с
 
 <WebPageLayersPlay />
 
-> **Практика целых страниц.** Готовые файлы от `DOCTYPE` до `footer` с разбором тегов (статья, таблица, форма, портфолио): [HTML-страницы целиком](/lab/Примеры/1153). После каркаса — макеты HTML+CSS (центрирование, сетка, адаптив): [HTML + CSS — готовые макеты](/lab/Примеры/110). **Векторные рисунки** в `<svg>` — квадрат, домик, цветок, снежинка с разбором строк: [SVG — рисунки кодом](/lab/Примеры/1119). Тот же каркас на **Tailwind** (классы в `class="..."`, CDN без сборки): [Tailwind — готовые блоки](/lab/Примеры/1117). **Анимации** — fade, спиннер, hover: [CSS-анимации — готовые эффекты](/lab/Примеры/1116). Когда макет понятен, перенесите его в компоненты — [React — компоненты-рецепты](/lab/Примеры/1146) (лендинг, форма, modal).
+> **Практика целых страниц.** Готовые файлы от `DOCTYPE` до `footer` с разбором тегов (статья, таблица, форма, портфолио): [HTML-страницы целиком](/lab/Примеры/1153). После каркаса — макеты HTML+CSS (центрирование, сетка, адаптив): [HTML + CSS — готовые макеты](/lab/Примеры/110). **Векторные рисунки** в `<svg>` — квадрат, домик, цветок, снежинка с разбором строк: [SVG — рисунки кодом](/lab/Примеры/1119). Тот же каркас на **Tailwind** (классы в `class="..."`, CDN без сборки): [Tailwind — готовые блоки](/lab/Примеры/1117). **Анимации** — fade, спиннер, hover: [CSS-анимации — готовые эффекты](/lab/Примеры/1116). **Отдельные UI-блоки** (кнопки, switch, tooltip, skeleton по мотивам [Uiverse / Galaxy](/lab/Примеры/1155)) — после [типовых элементов в CSS](/encyclopedia/3-data-markup/3-10-css/113). Когда макет понятен, перенесите его в компоненты — [React — компоненты-рецепты](/lab/Примеры/1146) (лендинг, форма, modal).
 
 <DocCardList />
 
@@ -62,6 +66,8 @@ HTML — **каркас** страницы: заголовки, абзацы, с
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Веб-разработка** — [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro).
+
+**Соло / инди-разработчик** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Разработка — о разделе](/tools/development/intro), [Личный профиль и портфолио разработчика](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/7), [IDE](/tools/development/1).
 
 {/* /sidebar-collections */}
 

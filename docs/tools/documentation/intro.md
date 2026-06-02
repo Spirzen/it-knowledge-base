@@ -2,6 +2,15 @@
 title: Документация — о разделе
 description: Подборка материалов раздела Документация в энциклопедии Вселенная IT
 sidebar_label: Документация — о разделе
+related:
+  - title: "Автоматизация — о разделе"
+    doc: tools/automation/intro
+  - title: "Данные — о разделе"
+    doc: tools/data/intro
+  - title: "ОС"
+    doc: tools/system/1
+  - title: "СУБД"
+    doc: tools/data/1
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -29,5 +38,17 @@ import DocCardList from '@theme/DocCardList';
 - [Техническое письмо](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro) — как писать и структурировать документацию
 - [Дорожная карта изучения](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) — связь внешних курсов с разделами энциклопедии
 - [Документация как инструмент проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1117) — living docs и C4
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Каталог инструментов** — [Автоматизация — о разделе](/tools/automation/intro), [Данные — о разделе](/tools/data/intro), [ОС](/tools/system/1), [СУБД](/tools/data/1), [Система — о разделе](/tools/system/intro), [Сеть — о разделе](/tools/network/intro).
+
+{/* /sidebar-collections */}
 
 ---

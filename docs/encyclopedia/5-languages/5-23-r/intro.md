@@ -15,6 +15,12 @@ related:
     doc: encyclopedia/5-languages/5-21-nim/intro
   - title: "Bash — о разделе"
     doc: encyclopedia/5-languages/5-25-bash/intro
+  - title: "Анализ данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/intro
+  - title: "Продвинутые операции с данными — о разделе"
+    doc: encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro
+  - title: "NoSQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-06-nosql/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -101,6 +107,8 @@ import DocCardList from '@theme/DocCardList';
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [PowerShell — о разделе](/encyclopedia/5-languages/5-26-powershell/intro).
+
+**Аналитика данных** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro), [Продвинутые операции с данными — о разделе](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro).
 
 {/* /sidebar-collections */}
 

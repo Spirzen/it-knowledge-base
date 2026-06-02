@@ -24,6 +24,7 @@ function RedisDataTypesPlayInner() {
         subtitle="Строки, хэши и списки в одной in-memory БД; логические базы SELECT 0–15"
       >
         <MiniDbTerminal
+          title="redis-cli — 127.0.0.1:6379"
           prompt={`127.0.0.1:6379[${db}]> `}
           welcomeLines={getRedisWelcome(db)}
           execute={execute}

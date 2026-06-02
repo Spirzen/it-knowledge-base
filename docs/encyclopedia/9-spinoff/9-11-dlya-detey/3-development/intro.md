@@ -2,6 +2,15 @@
 title: Развитие — о разделе
 description: Алгоритмы, постановка задач, IT-лексика и цифровая гигиена — учебный блок для школьников.
 sidebar_label: Развитие — о разделе
+related:
+  - title: "Видеоигры — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro
+  - title: "Программы — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
+  - title: "Компьютер — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro
+  - title: "Код — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -23,11 +32,22 @@ import BlockBuilder from '@site/src/components/BlockBuilder';
 </div>
   </div>
 
-
 <BlockBuilder />
 
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/98).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Для детей** — [Для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/forkids), [Компьютер — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro), [Видеоигры — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro), [Программы — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro), [Код — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1).
+
+{/* /sidebar-collections */}
 
 ---

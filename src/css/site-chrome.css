@@ -1,0 +1,197 @@
+/**
+ * Хром сайта: navbar, breadcrumbs, footer — в духе Docs Prime.
+ */
+
+:root {
+  --it-chrome-border: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-color-emphasis-200));
+  --it-chrome-surface: color-mix(in srgb, var(--ifm-color-primary) 4%, var(--ifm-background-surface-color));
+  --it-chrome-muted: var(--ifm-color-content-secondary);
+}
+
+/* —— Navbar —— */
+.navbar {
+  border-bottom: 1px solid var(--it-chrome-border) !important;
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--ifm-color-primary) 8%, transparent),
+    0 6px 24px color-mix(in srgb, var(--ifm-color-primary) 6%, transparent) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+[data-theme='light'] .navbar {
+  background: color-mix(in srgb, var(--ifm-navbar-background-color) 88%, transparent) !important;
+}
+
+[data-theme='dark'] .navbar {
+  background: color-mix(in srgb, var(--ifm-navbar-background-color) 94%, transparent) !important;
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--ifm-color-primary) 12%, transparent),
+    0 8px 28px rgba(0, 0, 0, 0.35) !important;
+}
+
+.navbar__brand {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.navbar__title {
+  background: linear-gradient(
+    120deg,
+    var(--ifm-color-primary) 0%,
+    color-mix(in srgb, var(--ifm-color-primary) 70%, var(--ifm-color-content)) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar__link {
+  font-weight: 500;
+  font-size: 0.88rem;
+  border-radius: 6px;
+  padding: 0.35rem 0.55rem;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.navbar__link:hover,
+.navbar__link--active {
+  color: var(--ifm-color-primary) !important;
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+}
+
+.navbar__toggle {
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.navbar__toggle:hover {
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+}
+
+/* —— Breadcrumbs —— */
+.theme-doc-breadcrumbs {
+  margin: 0 0 1.1rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--it-chrome-border);
+  background: linear-gradient(
+    90deg,
+    var(--it-chrome-surface),
+    color-mix(in srgb, var(--it-chrome-surface) 40%, transparent) 72%
+  );
+}
+
+.breadcrumbs {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-flex;
+  align-items: center;
+}
+
+.breadcrumbs__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.35rem;
+  border-radius: 5px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--ifm-color-primary-dark);
+  background: color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  text-decoration: none;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--it-chrome-muted);
+  font-weight: 600;
+  pointer-events: none;
+  background: transparent;
+}
+
+.breadcrumbs__item:not(:last-child)::after {
+  opacity: 0.4;
+  margin: 0 0.2rem;
+  color: var(--it-chrome-muted);
+}
+
+.breadcrumbs__home-icon {
+  opacity: 0.85;
+}
+
+/* —— Footer (тёмный, с акцентом Docs Prime) —— */
+.footer {
+  border-top: 3px solid color-mix(in srgb, var(--ifm-color-primary) 45%, transparent);
+  padding-top: 2.25rem;
+  background: linear-gradient(
+    165deg,
+    var(--ifm-footer-background-color) 0%,
+    color-mix(in srgb, var(--ifm-footer-background-color) 82%, #000) 100%
+  ) !important;
+}
+
+.footer__title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ifm-footer-color) 88%, var(--ifm-color-primary-lightest));
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--ifm-footer-link-color) 25%, transparent);
+}
+
+.footer__link-item {
+  font-size: 0.88rem;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-footer-color) !important;
+  transform: translateX(3px);
+}
+
+.footer__copyright {
+  font-size: 0.8rem;
+  opacity: 0.88;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--ifm-footer-link-color) 22%, transparent);
+}
+
+@media screen and (max-width: 996px) {
+  .theme-doc-breadcrumbs {
+    margin-bottom: 0.85rem;
+    padding: 0.4rem 0.65rem;
+  }
+
+  .breadcrumbs__link {
+    font-size: 0.74rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar__link,
+  .breadcrumbs__link,
+  .footer__link-item {
+    transition: none;
+  }
+
+  .footer__link-item:hover {
+    transform: none;
+  }
+}

@@ -15,6 +15,12 @@ related:
     doc: encyclopedia/1-basics/1-15-tekst/intro
   - title: "Программа — о разделе"
     doc: encyclopedia/1-basics/1-19-programma/intro
+  - title: "Структуры данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-02-struktury-dannyh/intro
+  - title: "SQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-07-sql/intro
+  - title: "NoSQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-06-nosql/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -44,6 +50,10 @@ import DocCardList from '@theme/DocCardList';
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [Текст — о разделе](/encyclopedia/1-basics/1-15-tekst/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro).
+
+**Базы данных** — [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro).
+
+**Аналитика данных** — [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Продвинутые операции с данными — о разделе](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro).
 
 {/* /sidebar-collections */}
 

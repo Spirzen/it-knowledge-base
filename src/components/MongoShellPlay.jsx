@@ -20,6 +20,7 @@ function MongoShellPlayInner() {
         subtitle="Переключение БД, вставка документа и выборка из коллекции — без установки сервера"
       >
         <MiniDbTerminal
+          title="mongosh"
           prompt="test> "
           welcomeLines={getMongoWelcome()}
           execute={execute}

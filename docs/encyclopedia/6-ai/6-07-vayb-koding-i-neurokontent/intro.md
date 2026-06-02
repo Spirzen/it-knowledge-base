@@ -19,6 +19,12 @@ related:
     doc: lab/examples/1150
   - title: "Искусственный интеллект — о разделе"
     doc: encyclopedia/6-ai/ai
+  - title: "Разработка ИИ — о разделе"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/intro
+  - title: "Модели и инструменты — о разделе"
+    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro
+  - title: "AgentOps и MLOps — о разделе"
+    doc: encyclopedia/6-ai/6-08-agentops/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -46,7 +52,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-**Нейросети и ИИ** — [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro).
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**ИИ для разработчика** — [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [AgentOps и MLOps — о разделе](/encyclopedia/6-ai/6-08-agentops/intro), [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [MLOps и LLM-стек — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2).
 
 {/* /sidebar-collections */}
 

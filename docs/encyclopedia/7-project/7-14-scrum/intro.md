@@ -4,6 +4,21 @@ description: >-
   Углублённый маршрут по Scrum для IT-проектов: история, роли, спринты,
   потери, бэклог и внедрение. Опора на Scrum Guide и отраслевую практику.
 sidebar_label: Scrum — о разделе
+related:
+  - title: "Методология и жизненный цикл ПО — о разделе"
+    doc: encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro
+  - title: "Базы знаний и задачники — о разделе"
+    doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
+  - title: "Команда и управление — о разделе"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/intro
+  - title: "Культура кода — о разделе"
+    doc: encyclopedia/7-project/7-10-kultura-koda/intro
+  - title: "Ежедневные стендапы и коммуникация"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/111
+  - title: "Первые 90 дней тимлида"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/141
+  - title: "Организационная иерархия и деловая переписка"
+    doc: encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -23,7 +38,6 @@ import DocCardList from '@theme/DocCardList';
   **Руководителям и Scrum Master** — размер команды, потери, внедрение и отличие «настоящего» Scrum от отчётности в Jira.
 </div>
   </div>
-
 
 ---
 
@@ -56,5 +70,19 @@ import DocCardList from '@theme/DocCardList';
 | Госзаказ и приёмка при спринтах | [Методологии ГИС](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/2) |
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Управление проектами и Agile** — [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Общее о бизнесе — о разделе](/encyclopedia/7-project/7-01-obschee-o-biznese/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro).
+
+**Тимлид** — [Ежедневные стендапы и коммуникация](/encyclopedia/7-project/7-02-komanda-i-upravlenie/111), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Первые 90 дней тимлида](/encyclopedia/7-project/7-02-komanda-i-upravlenie/141), [Организационная иерархия и деловая переписка](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5), [Роль тимлида — ожидания, риски и выбор траектории](/encyclopedia/7-project/7-02-komanda-i-upravlenie/14), [Эффективное управление разработчиками](/encyclopedia/7-project/7-02-komanda-i-upravlenie/13).
+
+{/* /sidebar-collections */}
 
 ---

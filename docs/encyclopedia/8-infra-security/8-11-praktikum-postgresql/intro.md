@@ -19,6 +19,10 @@ related:
     doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/intro
   - title: "SQL — реальные кейсы"
     doc: lab/examples/1152
+  - title: "ORM и работа с данными — о разделе"
+    doc: encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro
+  - title: "NoSQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-06-nosql/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -120,9 +124,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-**Базы данных** — [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro), [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro).
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Инфраструктура** — [Контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro).
+**Базы данных** — [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
 
 {/* /sidebar-collections */}
 

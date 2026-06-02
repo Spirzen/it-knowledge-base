@@ -1,0 +1,757 @@
+/**
+ * Docs Prime — типографика статей (макет combo 31).
+ * Токены: --it-doc-* (светлая/тёмная Infima + data-design через it-design-compat).
+ */
+
+.theme-doc-markdown {
+  --it-doc-h2-size: 1.5rem;
+  --it-doc-h3-size: 1.3rem;
+  --it-doc-h4-size: 1.15rem;
+  --it-doc-h5-size: 1.05rem;
+  --it-doc-h6-size: 1rem;
+  /* Отступы перед заголовками */
+  --it-doc-section-gap: 2.25rem;
+  --it-doc-h2-before: 2.5rem;
+  --it-doc-h3-before: 1.85rem;
+  --it-doc-h4-before: 1.6rem;
+  --it-doc-h5-before: 1.4rem;
+  --it-doc-h6-before: 1.2rem;
+  /* Доп. воздух, когда заголовок идёт сразу после текста/списка/кода */
+  --it-doc-heading-after-content: 2.35rem;
+  /* Отступы после заголовков (до следующего блока) */
+  --it-doc-h2-after: 1.35rem;
+  --it-doc-h3-after: 1.15rem;
+  --it-doc-h4-after: 1rem;
+  --it-doc-h5-after: 0.95rem;
+  --it-doc-h6-after: 0.85rem;
+  --it-doc-after-heading-gap: 0.75rem;
+  /* --- горизонтальная линия (markdown hr) */
+  --it-doc-hr-gap: 2.5rem;
+  /* Цитаты, иллюстрации, диаграммы */
+  --it-doc-blockquote-gap: 1.5rem;
+  --it-doc-figure-gap: 1.35rem;
+  --it-doc-demo-gap: 1.5rem;
+  --it-doc-blockquote-bg: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-card-background-color));
+  --it-doc-blockquote-border: color-mix(in srgb, var(--ifm-color-primary) 18%, var(--it-doc-section-border));
+  /* Callouts — градиенты в духе заголовков */
+  --it-doc-callout-radius: 10px;
+  --it-doc-callout-border: var(--it-doc-section-border);
+}
+
+/* ── H1 hero (h1 может быть во вложенном контейнере контента) ── */
+.theme-doc-markdown h1:first-of-type {
+  background: var(--it-doc-hero-gradient);
+  border: 1px solid var(--it-doc-hero-border);
+  border-radius: 12px;
+  padding: 1.35rem 1.6rem;
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.55rem, 3.5vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  color: var(--it-doc-h1-fg);
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
+}
+
+.theme-doc-markdown h1:first-of-type:has(+ .article-meta) {
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.theme-doc-markdown h1:first-of-type:not(:has(+ .article-meta)) {
+  margin-bottom: 1rem;
+}
+
+/* Мета под hero — приглушённо, без конкуренции с H1 */
+.theme-doc-markdown h1:first-of-type + .article-meta {
+  margin: 0 0 1rem;
+  padding: 0.45rem 1.35rem 0.6rem;
+  border: 1px solid var(--it-doc-hero-border);
+  border-top: 1px dashed color-mix(in srgb, var(--it-doc-hero-border) 75%, transparent);
+  border-radius: 0 0 12px 12px;
+  background: color-mix(in srgb, var(--ifm-color-primary) 2%, var(--ifm-card-background-color));
+  gap: 0.4rem;
+}
+
+.theme-doc-markdown .article-meta:not(h1 + .article-meta) {
+  margin: 0.75rem 0 1.25rem;
+}
+
+/* Lead после hero / мета */
+.theme-doc-markdown h1:first-of-type + p,
+.theme-doc-markdown h1:first-of-type + .article-meta + p,
+.theme-doc-markdown .article-meta + p {
+  color: var(--it-doc-lead-fg);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+/* ── Карточки секций (h2) ── */
+.theme-doc-markdown .doc-section {
+  border: 1px solid var(--it-doc-section-border);
+  border-radius: 10px;
+  padding: 0 1rem 1rem;
+  margin: var(--it-doc-section-gap) 0 0.75rem;
+  background: var(--it-doc-section-bg);
+}
+
+.theme-doc-markdown .doc-section > h2 {
+  margin: 0 -1rem var(--it-doc-h2-after);
+  padding: 0.7rem 1rem 0.55rem;
+  padding-left: calc(1rem + 0.85rem);
+  margin-left: -1rem;
+  border-left: 3px solid var(--it-doc-rail-color);
+  border-bottom: 1px solid var(--it-doc-heading-underline);
+  background: var(--it-doc-h2-header-gradient);
+  border-radius: 10px 10px 0 0;
+  font-size: var(--it-doc-h2-size);
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--it-doc-heading-fg);
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
+}
+
+.theme-doc-markdown .doc-section > h2 .hash-link,
+.theme-doc-markdown .doc-section > h3 .hash-link {
+  opacity: 0;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.theme-doc-markdown .doc-section > h2:hover .hash-link,
+.theme-doc-markdown .doc-section > h2:focus-within .hash-link,
+.theme-doc-markdown .doc-section > h3:hover .hash-link,
+.theme-doc-markdown .doc-section > h3:focus-within .hash-link {
+  opacity: 0.55;
+}
+
+.theme-doc-markdown .doc-section h3 {
+  font-size: var(--it-doc-h3-size);
+  font-weight: 600;
+  margin: var(--it-doc-h3-before) 0 var(--it-doc-h3-after);
+  padding: 0.35rem 0 0.35rem 0.75rem;
+  border-left: 2px solid var(--it-doc-rail-muted);
+  border-bottom: 1px solid var(--it-doc-section-border);
+  background: var(--it-doc-h3-header-gradient);
+  color: var(--it-doc-heading-fg);
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.5rem);
+}
+
+.theme-doc-markdown .doc-section h4 {
+  font-size: var(--it-doc-h4-size);
+  font-weight: 600;
+  margin: var(--it-doc-h4-before) 0 var(--it-doc-h4-after);
+  color: var(--it-doc-heading-fg);
+}
+
+.theme-doc-markdown .doc-section h5 {
+  font-size: var(--it-doc-h5-size);
+  font-weight: 600;
+  margin: var(--it-doc-h5-before) 0 var(--it-doc-h5-after);
+  color: var(--it-doc-heading-fg);
+}
+
+.theme-doc-markdown .doc-section h6 {
+  font-size: var(--it-doc-h6-size);
+  font-weight: 600;
+  margin: var(--it-doc-h6-before) 0 var(--it-doc-h6-after);
+  color: var(--it-doc-lead-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.theme-doc-markdown .doc-section h2 + p,
+.theme-doc-markdown .doc-section h3 + p {
+  color: var(--it-doc-lead-fg);
+  font-size: 0.95rem;
+}
+
+/* Больше воздуха перед заголовком после абзаца, списка, кода и т.п. */
+.theme-doc-markdown .doc-section
+  :is(
+    p,
+    ul,
+    ol,
+    pre,
+    blockquote,
+    table,
+    hr,
+    img,
+    figure,
+    .mermaid,
+    div.mermaid,
+    .it-demo,
+    .it-demo-lazy-host,
+    .theme-code-block,
+    .prism-code,
+    div[class*='language-'],
+    div[class*='codeBlock']
+  )
+  + :is(h2, h3, h4, h5, h6),
+.theme-doc-markdown
+  :is(
+      p,
+      ul,
+      ol,
+      pre,
+      blockquote,
+      table,
+      hr,
+      img,
+      figure,
+      .mermaid,
+      div.mermaid,
+      .it-demo,
+      .it-demo-lazy-host,
+      .theme-code-block,
+      .prism-code
+    )
+  + :is(h2, h3, h4, h5, h6) {
+  margin-top: var(--it-doc-heading-after-content);
+}
+
+/* Отступ после заголовка до следующего блока контента (демо — свой --it-doc-demo-gap) */
+.theme-doc-markdown
+  :is(h2, h3, h4, h5)
+  + :is(
+    p,
+    ul,
+    ol,
+    pre,
+    blockquote,
+    table,
+    hr,
+    img,
+    figure,
+    .mermaid,
+    div.mermaid,
+    .theme-code-block,
+    .prism-code,
+    div[class*='language-'],
+    div[class*='codeBlock'],
+    .theme-admonition,
+    .admonition
+  ) {
+  margin-top: var(--it-doc-after-heading-gap);
+}
+
+.theme-doc-markdown .doc-section > h2 + :is(h3, h4, h5, h6) {
+  margin-top: 1.25rem;
+}
+
+/* Fallback: h2/h3 вне карточки (до enhancement) */
+.theme-doc-markdown :is(.markdown, article) > h2,
+.theme-doc-markdown > h2 {
+  padding: 0.55rem 0.85rem 0.45rem calc(0.85rem + 0.85rem);
+  border-left: 3px solid var(--it-doc-rail-color);
+  border-bottom: 1px solid var(--it-doc-heading-underline);
+  background: var(--it-doc-h2-header-gradient);
+  border-radius: 8px;
+  margin-top: var(--it-doc-h2-before);
+  margin-bottom: var(--it-doc-h2-after);
+  font-size: var(--it-doc-h2-size);
+  font-weight: 600;
+  color: var(--it-doc-heading-fg);
+}
+
+.theme-doc-markdown :is(.markdown, article) > h3,
+.theme-doc-markdown > h3 {
+  font-size: var(--it-doc-h3-size);
+  font-weight: 600;
+  padding: 0.35rem 0 0.35rem 0.75rem;
+  border-left: 2px solid var(--it-doc-rail-muted);
+  border-bottom: 1px solid var(--it-doc-section-border);
+  background: var(--it-doc-h3-header-gradient);
+  border-radius: 6px;
+  margin-top: var(--it-doc-h3-before);
+  margin-bottom: var(--it-doc-h3-after);
+  color: var(--it-doc-heading-fg);
+}
+
+.theme-doc-markdown :is(.markdown, article) > h4,
+.theme-doc-markdown > h4 {
+  font-size: var(--it-doc-h4-size);
+  font-weight: 600;
+  color: var(--it-doc-heading-fg);
+  margin-top: var(--it-doc-h4-before);
+  margin-bottom: var(--it-doc-h4-after);
+}
+
+.theme-doc-markdown :is(.markdown, article) > h5,
+.theme-doc-markdown > h5 {
+  font-size: var(--it-doc-h5-size);
+  font-weight: 600;
+  color: var(--it-doc-heading-fg);
+  margin-top: var(--it-doc-h5-before);
+  margin-bottom: var(--it-doc-h5-after);
+}
+
+.theme-doc-markdown :is(.markdown, article) > h6,
+.theme-doc-markdown > h6 {
+  font-size: var(--it-doc-h6-size);
+  font-weight: 600;
+  color: var(--it-doc-lead-fg);
+  margin-top: var(--it-doc-h6-before);
+  margin-bottom: var(--it-doc-h6-after);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ── Инлайн-код ── */
+.theme-doc-markdown :not(pre) > code,
+.theme-doc-markdown p code,
+.theme-doc-markdown li code,
+.theme-doc-markdown td code {
+  background: var(--it-doc-inline-code-bg);
+  color: var(--it-doc-inline-code-fg);
+  padding: 0.14em 0.38em;
+  border-radius: 4px;
+  font-size: 0.88em;
+  border: 1px solid var(--it-doc-inline-code-border);
+}
+
+/* ── Блоки кода в статьях ── */
+.theme-doc-markdown .prism-code,
+.theme-doc-markdown pre[class*='language-'],
+.theme-doc-markdown .theme-code-block pre {
+  background-color: var(--it-doc-code-bg) !important;
+  color: var(--it-doc-code-fg) !important;
+  border: 1px solid var(--it-doc-code-border) !important;
+  border-radius: 10px !important;
+  box-shadow: inset 0 1px 0 var(--it-doc-code-inset) !important;
+  padding: 1rem 1.15rem !important;
+  margin: 1rem 0 1.15rem !important;
+  font-size: 0.84rem !important;
+  line-height: 1.55 !important;
+}
+
+.theme-doc-markdown .doc-section .prism-code,
+.theme-doc-markdown .doc-section pre[class*='language-'] {
+  margin-top: 0.85rem !important;
+}
+
+/* HR — горизонтальная линия (markdown ---) */
+.theme-doc-markdown hr {
+  border: none !important;
+  height: 3px !important;
+  margin: var(--it-doc-hr-gap) 0 !important;
+  padding: 0;
+  border-radius: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    color-mix(in srgb, var(--it-doc-rail-color) 25%, var(--it-doc-section-border)) 15%,
+    var(--it-doc-rail-color) 50%,
+    color-mix(in srgb, var(--it-doc-rail-color) 25%, var(--it-doc-section-border)) 85%,
+    transparent 100%
+  ) !important;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--it-doc-rail-color) 15%, transparent);
+  clear: both;
+}
+
+/* Цитаты */
+.theme-doc-markdown blockquote {
+  margin: var(--it-doc-blockquote-gap) 0;
+  padding: 0.9rem 1.1rem 0.95rem calc(1rem + 0.85rem);
+  border: 1px solid var(--it-doc-blockquote-border);
+  border-left: 3px solid var(--it-doc-rail-color);
+  border-radius: 0 var(--it-doc-callout-radius) var(--it-doc-callout-radius) 0;
+  background: linear-gradient(
+    90deg,
+    var(--it-doc-blockquote-bg),
+    color-mix(in srgb, var(--it-doc-blockquote-bg) 35%, transparent) 68%
+  );
+  color: var(--it-doc-lead-fg);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  position: relative;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ifm-color-primary) 6%, transparent);
+}
+
+.theme-doc-markdown blockquote::before {
+  content: '\201C';
+  position: absolute;
+  left: 0.55rem;
+  top: 0.2rem;
+  font-size: 1.85rem;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: color-mix(in srgb, var(--it-doc-rail-color) 40%, transparent);
+  pointer-events: none;
+}
+
+.theme-doc-markdown blockquote > :first-child {
+  margin-top: 0;
+}
+
+.theme-doc-markdown blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.theme-doc-markdown blockquote p + p {
+  margin-top: 0.65em;
+}
+
+/* Изображения */
+.theme-doc-markdown img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--it-doc-figure-gap) auto;
+  border-radius: 10px;
+  border: 1px solid var(--it-doc-section-border);
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+}
+
+.theme-doc-markdown p:has(> img:only-child) {
+  margin-top: var(--it-doc-figure-gap);
+  margin-bottom: var(--it-doc-figure-gap);
+}
+
+.theme-doc-markdown p:has(> img:only-child) img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.theme-doc-markdown figure {
+  margin: var(--it-doc-figure-gap) 0;
+}
+
+.theme-doc-markdown figure img {
+  margin: 0 auto;
+}
+
+.theme-doc-markdown figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--it-doc-lead-fg);
+  text-align: center;
+}
+
+/* Mermaid */
+.theme-doc-markdown :is(.mermaid, div.mermaid, pre.mermaid) {
+  display: block;
+  margin: var(--it-doc-figure-gap) 0;
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid var(--it-doc-section-border);
+  background: color-mix(in srgb, var(--ifm-color-primary) 4%, var(--ifm-card-background-color));
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
+  overflow-x: auto;
+  text-align: center;
+}
+
+.theme-doc-markdown pre.mermaid code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* Интерактивные демо (DemoShell, lazy, скелетон загрузки) */
+.theme-doc-markdown :is(.it-demo, .it-demo-lazy-host) {
+  margin-top: var(--it-doc-demo-gap);
+  margin-bottom: var(--it-doc-demo-gap);
+  max-width: 100%;
+}
+
+.theme-doc-markdown .it-demo-lazy-host > :is(.it-demo, .it-demo--loading) {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.theme-doc-markdown .it-demo--fullscreen {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ── Callouts (HTML .callout в статьях) ── */
+.theme-doc-markdown .callout {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem 1.1rem;
+  border-radius: var(--it-doc-callout-radius);
+  border: 1px solid var(--it-doc-callout-border);
+  border-left-width: 3px;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-card-background-color)),
+    transparent 58%
+  ) !important;
+}
+
+.theme-doc-markdown .callout-title {
+  font-weight: 600;
+  margin: 0 0 0.6rem;
+  padding: 0.3rem 0 0.35rem 0.65rem;
+  border-left: 2px solid color-mix(in srgb, var(--ifm-color-primary) 40%, transparent);
+  border-bottom: 1px solid var(--it-doc-callout-border);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-card-background-color)),
+    transparent 50%
+  );
+  color: var(--it-doc-heading-fg) !important;
+}
+
+.theme-doc-markdown .callout,
+.theme-doc-markdown .callout p,
+.theme-doc-markdown .callout li {
+  color: var(--ifm-color-content) !important;
+}
+
+.theme-doc-markdown .callout--note {
+  border-left-color: var(--ifm-color-primary);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-card-background-color)),
+    transparent 58%
+  ) !important;
+}
+
+.theme-doc-markdown .callout--note .callout-title {
+  border-left-color: var(--ifm-color-primary);
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-card-background-color)),
+    transparent 52%
+  ) !important;
+}
+
+.theme-doc-markdown .callout--tip,
+.theme-doc-markdown .callout--info {
+  border-left-color: #1976d2;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #1976d2 8%, var(--ifm-card-background-color)),
+    transparent 58%
+  ) !important;
+}
+
+.theme-doc-markdown .callout--tip .callout-title,
+.theme-doc-markdown .callout--info .callout-title {
+  border-left-color: #1976d2;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #1976d2 10%, var(--ifm-card-background-color)),
+    transparent 52%
+  );
+}
+
+.theme-doc-markdown .callout--warning,
+.theme-doc-markdown .callout--caution {
+  border-left-color: #f57c00;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #ff8f00 10%, var(--ifm-card-background-color)),
+    transparent 58%
+  ) !important;
+}
+
+.theme-doc-markdown .callout--warning .callout-title,
+.theme-doc-markdown .callout--caution .callout-title {
+  border-left-color: #f57c00;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #ff8f00 12%, var(--ifm-card-background-color)),
+    transparent 52%
+  );
+}
+
+.theme-doc-markdown .callout--danger {
+  border-left-color: #d32f2f;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #d32f2f 8%, var(--ifm-card-background-color)),
+    transparent 58%
+  ) !important;
+}
+
+.theme-doc-markdown .callout--danger .callout-title {
+  border-left-color: #d32f2f;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, #d32f2f 10%, var(--ifm-card-background-color)),
+    transparent 52%
+  );
+}
+
+/* Docusaurus admonitions (если встречаются в markdown) */
+.theme-doc-markdown .theme-admonition {
+  border-radius: var(--it-doc-callout-radius) !important;
+  border: 1px solid var(--it-doc-callout-border) !important;
+  border-left-width: 3px !important;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 7%, var(--ifm-card-background-color)),
+    transparent 58%
+  ) !important;
+  overflow: hidden;
+}
+
+.theme-doc-markdown .theme-admonition-heading {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 9%, var(--ifm-card-background-color)),
+    transparent 55%
+  ) !important;
+  border-bottom: 1px solid var(--it-doc-callout-border);
+  color: var(--it-doc-heading-fg) !important;
+}
+
+.theme-doc-markdown .alert--warning .theme-admonition-heading,
+.theme-doc-markdown .alert--warning {
+  border-left-color: #f57c00 !important;
+}
+
+.theme-doc-markdown .alert--danger .theme-admonition-heading,
+.theme-doc-markdown .alert--danger {
+  border-left-color: #d32f2f !important;
+}
+
+.theme-doc-markdown .alert--info .theme-admonition-heading,
+.theme-doc-markdown .alert--info {
+  border-left-color: #1976d2 !important;
+}
+
+.theme-doc-markdown .alert--success .theme-admonition-heading,
+.theme-doc-markdown .alert--success {
+  border-left-color: #43a047 !important;
+}
+
+/* ── Адаптив ── */
+@media screen and (max-width: 996px) {
+  .theme-doc-markdown {
+    --it-doc-h2-size: 1.4rem;
+    --it-doc-h3-size: 1.22rem;
+    --it-doc-h4-size: 1.1rem;
+    --it-doc-section-gap: 2rem;
+    --it-doc-h2-before: 2.15rem;
+    --it-doc-h3-before: 1.65rem;
+    --it-doc-h4-before: 1.45rem;
+    --it-doc-h5-before: 1.25rem;
+    --it-doc-heading-after-content: 2rem;
+    --it-doc-h2-after: 1.05rem;
+    --it-doc-h3-after: 0.95rem;
+    --it-doc-h4-after: 0.85rem;
+    --it-doc-h5-after: 0.8rem;
+    --it-doc-hr-gap: 2rem;
+    --it-doc-blockquote-gap: 1.25rem;
+    --it-doc-figure-gap: 1.15rem;
+    --it-doc-demo-gap: 1.25rem;
+  }
+
+  .theme-doc-markdown .doc-section {
+    padding: 0 0.85rem 0.85rem;
+    margin-top: 1.35rem;
+  }
+
+  .theme-doc-markdown .doc-section > h2 {
+    margin-left: -0.85rem;
+    margin-right: -0.85rem;
+    padding: 0.6rem 0.85rem 0.5rem;
+    padding-left: calc(0.85rem + 0.65rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .theme-doc-markdown {
+    --it-doc-h2-size: 1.3rem;
+    --it-doc-h3-size: 1.15rem;
+    --it-doc-h4-size: 1.05rem;
+    --it-doc-h5-size: 1rem;
+    --it-doc-section-gap: 1.75rem;
+    --it-doc-h2-before: 1.85rem;
+    --it-doc-h3-before: 1.5rem;
+    --it-doc-h4-before: 1.3rem;
+    --it-doc-h5-before: 1.15rem;
+    --it-doc-heading-after-content: 1.75rem;
+    --it-doc-h2-after: 0.95rem;
+    --it-doc-h3-after: 0.85rem;
+    --it-doc-h4-after: 0.8rem;
+    --it-doc-h5-after: 0.75rem;
+    --it-doc-hr-gap: 1.75rem;
+    --it-doc-blockquote-gap: 1.1rem;
+    --it-doc-figure-gap: 1rem;
+    --it-doc-demo-gap: 1.1rem;
+  }
+
+  .theme-doc-markdown h1:first-of-type {
+    padding: 1rem 1.15rem;
+    font-size: 1.55rem;
+  }
+
+  .theme-doc-markdown h1:first-of-type + .article-meta {
+    padding: 0.4rem 1.15rem 0.55rem;
+  }
+
+  .theme-doc-markdown .doc-section {
+    padding: 0 0.75rem 0.75rem;
+    border-radius: 8px;
+  }
+
+  .theme-doc-markdown .doc-section > h2 {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    padding-left: calc(0.75rem + 0.55rem);
+  }
+
+  .theme-doc-markdown .prism-code,
+  .theme-doc-markdown pre[class*='language-'] {
+    padding: 0.85rem !important;
+    font-size: 0.8rem !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-doc-markdown .doc-section > h2 .hash-link,
+  .theme-doc-markdown .doc-section > h3 .hash-link {
+    transition: none;
+  }
+}
+
+/* ── Страницы категорий (/category/*) — карточки оглавления ── */
+.theme-doc-markdown .theme-doc-card-container {
+  border-radius: 10px;
+  border: 1px solid var(--it-doc-section-border);
+  background: var(--it-doc-section-bg);
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--ifm-color-primary) 6%, transparent),
+    0 4px 16px color-mix(in srgb, var(--ifm-color-primary) 5%, transparent);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.theme-doc-markdown .theme-doc-card-container:hover {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 35%, var(--it-doc-section-border));
+  box-shadow:
+    0 2px 0 color-mix(in srgb, var(--ifm-color-primary) 10%, transparent),
+    0 8px 24px color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+  transform: translateY(-1px);
+}
+
+.theme-doc-markdown .theme-doc-card-heading {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--it-doc-heading-fg);
+}
+
+.theme-doc-markdown .theme-doc-card-description {
+  color: var(--it-doc-lead-fg);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-doc-markdown .theme-doc-card-container {
+    transition: none;
+  }
+
+  .theme-doc-markdown .theme-doc-card-container:hover {
+    transform: none;
+  }
+}

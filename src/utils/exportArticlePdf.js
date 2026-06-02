@@ -110,36 +110,48 @@ function applyPdfSafeStyles(root) {
     if (tag === 'H1') {
       s.setProperty('display', 'block', 'important');
       s.setProperty('font-size', '22px', 'important');
-      s.setProperty('font-weight', '700', 'important');
-      s.setProperty('padding', '12px 16px', 'important');
-      s.setProperty('margin', '16px 0', 'important');
-      s.setProperty('border', '2px solid #7b68ee', 'important');
-      s.setProperty('border-radius', '8px', 'important');
+      s.setProperty('font-weight', '600', 'important');
+      s.setProperty('padding', '14px 18px', 'important');
+      s.setProperty('margin', '0 0 8px', 'important');
+      s.setProperty('border', '1px solid #c5b8f5', 'important');
+      s.setProperty('border-radius', '10px', 'important');
       s.setProperty('background', '#f5f3ff', 'important');
     } else if (tag === 'H2') {
       s.setProperty('display', 'block', 'important');
-      s.setProperty('font-size', '18px', 'important');
-      s.setProperty('padding', '8px 12px', 'important');
-      s.setProperty('margin', '14px 0 8px', 'important');
+      s.setProperty('font-size', '16px', 'important');
+      s.setProperty('font-weight', '600', 'important');
+      s.setProperty('padding', '8px 12px 6px', 'important');
+      s.setProperty('margin', '0 0 8px', 'important');
       s.setProperty('border-left', '3px solid #7b68ee', 'important');
-      s.setProperty('background', '#f8f7fc', 'important');
+      s.setProperty('border-bottom', '1px solid #d8dce3', 'important');
+      s.setProperty('background', '#f8f9fc', 'important');
     } else if (tag === 'H3' || tag === 'H4') {
       s.setProperty('display', 'block', 'important');
-      s.setProperty('font-size', tag === 'H3' ? '16px' : '14px', 'important');
-      s.setProperty('padding', '6px 10px', 'important');
-      s.setProperty('margin', '12px 0 6px', 'important');
-      s.setProperty('background', '#f8f7fc', 'important');
+      s.setProperty('font-size', tag === 'H3' ? '14px' : '13px', 'important');
+      s.setProperty('font-weight', '600', 'important');
+      s.setProperty('padding', '4px 0 4px 10px', 'important');
+      s.setProperty('margin', '10px 0 6px', 'important');
+      s.setProperty('border-left', tag === 'H3' ? '2px solid #b19cd9' : 'none', 'important');
+      s.setProperty('border-bottom', '1px solid #e8eaf0', 'important');
+      s.setProperty('background', 'transparent', 'important');
+    } else if (tag === 'DIV' && el.classList?.contains('doc-section')) {
+      s.setProperty('border', '1px solid #e2e6ef', 'important');
+      s.setProperty('border-radius', '8px', 'important');
+      s.setProperty('padding', '0 12px 12px', 'important');
+      s.setProperty('margin', '14px 0', 'important');
+      s.setProperty('background', '#fafbfc', 'important');
     } else if (tag === 'PRE') {
       s.setProperty('display', 'block', 'important');
-      s.setProperty('background', '#f6f8fa', 'important');
-      s.setProperty('color', '#24292f', 'important');
+      s.setProperty('background', '#1a1b26', 'important');
+      s.setProperty('color', '#c8d3f5', 'important');
       s.setProperty('padding', '12px', 'important');
-      s.setProperty('border', '1px solid #e0e0e0', 'important');
+      s.setProperty('border', '1px solid #2f334d', 'important');
+      s.setProperty('border-radius', '8px', 'important');
       s.setProperty('white-space', 'pre-wrap', 'important');
       s.setProperty('word-break', 'break-word', 'important');
     } else if (tag === 'CODE') {
-      s.setProperty('background', '#f0f0f0', 'important');
-      s.setProperty('color', '#24292f', 'important');
+      s.setProperty('background', '#f0f0ff', 'important');
+      s.setProperty('color', '#4b3a8a', 'important');
     } else if (tag === 'A') {
       s.setProperty('color', '#5b4acb', 'important');
     } else if (tag === 'TABLE') {

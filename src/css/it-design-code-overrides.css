@@ -191,3 +191,16 @@ html[data-design]:not([data-design='design-universe-original']) .markdown pre co
   border: none;
   font-size: inherit;
 }
+
+/* Docs Prime в статьях — согласовать с article-docs-prime.css */
+html[data-design]:not([data-design='design-universe-original']) .theme-doc-markdown .prism-code,
+html[data-design]:not([data-design='design-universe-original']) .theme-doc-markdown pre[class*='language-'] {
+  background-color: var(--it-doc-code-bg) !important;
+  color: var(--it-doc-code-fg) !important;
+  border: 1px solid var(--it-doc-code-border) !important;
+  border-radius: 10px !important;
+  box-shadow: inset 0 1px 0 var(--it-doc-code-inset) !important;
+  padding: 1rem 1.15rem !important;
+  font-size: 0.84rem !important;
+  line-height: 1.55 !important;
+}

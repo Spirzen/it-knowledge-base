@@ -2,6 +2,23 @@
 title: Команда и управление — о разделе
 description: Подборка материалов раздела Команда и управление в энциклопедии Вселенная IT
 sidebar_label: Команда и управление — о разделе
+related:
+  - title: "Общее о бизнесе — о разделе"
+    doc: encyclopedia/7-project/7-01-obschee-o-biznese/intro
+  - title: "Методология и жизненный цикл ПО — о разделе"
+    doc: encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro
+  - title: "Scrum — о разделе"
+    doc: encyclopedia/7-project/7-14-scrum/intro
+  - title: "Базы знаний и задачники — о разделе"
+    doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
+  - title: "Управленческая ветка в IT"
+    doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/912
+  - title: "Эффективное управление разработчиками"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/13
+  - title: "Роль тимлида — ожидания, риски и выбор траектории"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/14
+  - title: "Первые 90 дней тимлида"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/141
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -55,5 +72,19 @@ IT-проект — это не только код и серверы. Это л
 Здесь мало "как настроить пайплайн" — это инфраструктура и разработка в других главах энциклопедии. Зато много про **поведение, процессы и формулировки**: как не превратить дейли в суд, как фиксировать изменения и почему "цифровизация" и "трансформация" — разные вещи.
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Управление проектами и Agile** — [Общее о бизнесе — о разделе](/encyclopedia/7-project/7-01-obschee-o-biznese/intro), [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro).
+
+**Тимлид** — [Управленческая ветка в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/912), [Эффективное управление разработчиками](/encyclopedia/7-project/7-02-komanda-i-upravlenie/13), [Роль тимлида — ожидания, риски и выбор траектории](/encyclopedia/7-project/7-02-komanda-i-upravlenie/14), [Первые 90 дней тимлида](/encyclopedia/7-project/7-02-komanda-i-upravlenie/141), [Ежедневные стендапы и коммуникация](/encyclopedia/7-project/7-02-komanda-i-upravlenie/111), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro).
+
+{/* /sidebar-collections */}
 
 ---

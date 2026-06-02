@@ -2,6 +2,15 @@
 title: Программирование — о разделе
 description: Scratch, блоки, Python, Кумир и JavaScript — учебный маршрут по первому коду.
 sidebar_label: Код — о разделе
+related:
+  - title: "Программы — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
+  - title: "Введение в программирование"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1
+  - title: "Развитие — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro
+  - title: "Видеоигры — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -41,7 +50,6 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 </div>
   </div>
 
-
 <div class="callout callout--tip">
   <div class="callout-title">Путеводитель по веб-стеку</div>
 
@@ -49,7 +57,6 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
   HTML, CSS, JavaScript, Python и PHP — в одном хабе: <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/8">открыть путеводитель</a>.
 </div>
   </div>
-
 
 <BeginnerWebStackHub defaultTab="overview" />
 
@@ -61,7 +68,6 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 </div>
   </div>
 
-
 <BlockBuilder />
 
 Сообщения об ошибках в коде указывают строку и тип проблемы; исправление ошибок — обычная часть работы программиста на любом уровне опыта.
@@ -69,5 +75,17 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/98).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Для детей** — [Для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/forkids), [Компьютер — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro), [Видеоигры — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro), [Развитие — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro), [Программы — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro), [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1).
+
+{/* /sidebar-collections */}
 
 ---

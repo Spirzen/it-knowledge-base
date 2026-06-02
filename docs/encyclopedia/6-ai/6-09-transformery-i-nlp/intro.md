@@ -19,6 +19,14 @@ related:
     doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/3
   - title: "Распознавание лиц, объектов и текста"
     doc: encyclopedia/6-ai/6-06-primenenie-ii/120
+  - title: "Применение ИИ — о разделе"
+    doc: encyclopedia/6-ai/6-06-primenenie-ii/intro
+  - title: "Векторные базы данных"
+    doc: encyclopedia/3-data-markup/3-06-nosql/812
+  - title: "Разработка ИИ — о разделе"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/intro
+  - title: "Графовые базы данных"
+    doc: encyclopedia/3-data-markup/3-06-nosql/7
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -53,9 +61,11 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги маршрута **Нейросети и ИИ**:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-[Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro).
+**Нейросети и ИИ** — [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Графовые базы данных](/encyclopedia/3-data-markup/3-06-nosql/7), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro).
+
+**ИИ для разработчика** — [MLOps и LLM-стек — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro), [AgentOps и MLOps — о разделе](/encyclopedia/6-ai/6-08-agentops/intro), [Low-code, No-code — о разделе](/encyclopedia/8-infra-security/8-02-low-code-no-code/intro), [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1), [Вайб-кодинг и нейроконтент — о разделе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro).
 
 {/* /sidebar-collections */}
 

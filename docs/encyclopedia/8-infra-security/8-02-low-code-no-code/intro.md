@@ -9,6 +9,14 @@ related:
     doc: encyclopedia/2-system-network/2-02-platformy/intro
   - title: "Аналитика — о разделе"
     doc: encyclopedia/7-project/7-04-analitika/intro
+  - title: "Разработка и отладка — о разделе"
+    doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro
+  - title: "Трансформеры и NLP — о разделе"
+    doc: encyclopedia/6-ai/6-09-transformery-i-nlp/intro
+  - title: "MLOps и LLM-стек — слои 1–3"
+    doc: encyclopedia/6-ai/6-08-agentops/2
+  - title: "AgentOps и MLOps — о разделе"
+    doc: encyclopedia/6-ai/6-08-agentops/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -28,5 +36,17 @@ import DocCardList from '@theme/DocCardList';
 3. Если упираетесь в лимит платформы — см. [веб-стек](/encyclopedia/5-languages/5-02-python/intro) или [JavaScript](/encyclopedia/5-languages/5-01-javascript/intro).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**ИИ для разработчика** — [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [MLOps и LLM-стек — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2), [AgentOps и MLOps — о разделе](/encyclopedia/6-ai/6-08-agentops/intro), [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1), [Вайб-кодинг и нейроконтент — о разделе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro).
+
+{/* /sidebar-collections */}
 
 ---

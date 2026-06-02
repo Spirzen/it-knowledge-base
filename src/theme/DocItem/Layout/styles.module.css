@@ -20,7 +20,8 @@
   .docItemRow {
     display: flex;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    /* stretch: колонка TOC должна быть высотой с статью, иначе sticky «уезжает» вверх */
+    align-items: stretch;
     gap: var(--it-doc-article-gap, 1rem);
     margin-left: 0;
     margin-right: 0;
@@ -50,9 +51,16 @@
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
+  align-self: stretch;
   position: relative;
   z-index: 2;
   min-width: 0;
+}
+
+.docSidebarColCollapsed {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  max-width: none !important;
 }
 
 .docSidebarInner {
@@ -146,21 +154,28 @@
 
 /* --- Панель «Содержание» (сворачивание) --- */
 
+.tocControlIcon {
+  display: block;
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-shrink: 0;
+}
+
 .tocPanelHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
   flex-shrink: 0;
-  padding: 0.35rem 0.5rem 0.5rem;
+  padding: 0.55rem 0.65rem 0.45rem;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .tocPanelTitle {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.07em;
   color: var(--ifm-color-content-secondary);
 }
 
@@ -168,70 +183,95 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 1.625rem;
+  height: 1.625rem;
   padding: 0;
-  border: 1px solid var(--ifm-color-emphasis-300);
-  border-radius: 6px;
-  background: var(--ifm-background-surface-color);
+  border: none;
+  border-radius: 999px;
+  background: transparent;
   color: var(--ifm-color-content-secondary);
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  opacity: 0.72;
+  transition:
+    opacity 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
 }
 
 .tocCollapseBtn:hover,
 .tocCollapseBtn:focus-visible {
+  opacity: 1;
   color: var(--ifm-color-primary);
-  border-color: var(--ifm-color-primary);
+  background: color-mix(in srgb, var(--ifm-color-primary) 12%, transparent);
+  transform: translateX(1px);
   outline: none;
 }
 
-.tocCollapseBtnIcon {
-  width: 0.85rem;
-  height: 0.85rem;
-  transform: rotate(90deg);
-}
-
 .tocExpandTab {
-  position: fixed;
+  position: sticky;
   z-index: 4;
-  top: calc(var(--ifm-navbar-height) + 5rem);
-  right: 0;
+  top: calc(var(--ifm-navbar-height) + 1rem);
+  align-self: flex-end;
+  margin-top: 1rem;
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.35rem;
-  padding: 0.65rem 0.4rem;
-  border: 1px solid var(--ifm-color-emphasis-300);
+  width: 2rem;
+  padding: 0.7rem 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
   border-right: none;
-  border-radius: 8px 0 0 8px;
+  border-radius: 10px 0 0 10px;
   background: var(--ifm-card-background-color);
-  box-shadow: var(--ifm-global-shadow-lw);
+  box-shadow:
+    -3px 2px 14px color-mix(in srgb, var(--ifm-color-emphasis-900) 8%, transparent),
+    inset 3px 0 0 color-mix(in srgb, var(--ifm-color-primary) 55%, transparent);
   color: var(--ifm-color-content-secondary);
   cursor: pointer;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease,
+    border-color 0.15s ease;
 }
 
 .tocExpandTab:hover,
 .tocExpandTab:focus-visible {
   color: var(--ifm-color-primary);
-  box-shadow: var(--ifm-global-shadow-md);
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 35%, var(--ifm-color-emphasis-200));
+  box-shadow:
+    -5px 3px 18px color-mix(in srgb, var(--ifm-color-primary) 16%, transparent),
+    inset 3px 0 0 var(--ifm-color-primary);
+  transform: translateX(-2px);
   outline: none;
 }
 
-.tocExpandTabLabel {
-  transform: rotate(180deg);
+.tocExpandTab .tocControlIcon:last-child {
+  width: 0.75rem;
+  height: 0.75rem;
+  opacity: 0.75;
 }
 
-.tocExpandTabIcon {
-  width: 0.85rem;
-  height: 0.85rem;
-  transform: rotate(-90deg);
+.tocExpandTab:hover .tocControlIcon:last-child,
+.tocExpandTab:focus-visible .tocControlIcon:last-child {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tocCollapseBtn,
+  .tocExpandTab {
+    transition: none;
+  }
+
+  .tocCollapseBtn:hover,
+  .tocCollapseBtn:focus-visible,
+  .tocExpandTab:hover,
+  .tocExpandTab:focus-visible {
+    transform: none;
+  }
 }
 
 @media (max-width: 996px) {

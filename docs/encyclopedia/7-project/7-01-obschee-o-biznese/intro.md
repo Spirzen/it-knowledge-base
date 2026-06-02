@@ -11,6 +11,12 @@ related:
     doc: encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro
   - title: "ITSM и ИТ-услуги — о разделе"
     doc: encyclopedia/7-project/7-16-itsm-i-it-uslugi/intro
+  - title: "Команда и управление — о разделе"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/intro
+  - title: "Scrum — о разделе"
+    doc: encyclopedia/7-project/7-14-scrum/intro
+  - title: "Базы знаний и задачники — о разделе"
+    doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -27,5 +33,17 @@ IT-проекты существуют внутри **организаций с 
 2. Остальные статьи раздела — по оглавлению, если роль требует (руководитель, аналитик, техпис).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Управление проектами и Agile** — [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro), [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro).
+
+{/* /sidebar-collections */}
 
 ---

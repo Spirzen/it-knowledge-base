@@ -13,6 +13,16 @@ related:
     doc: lab/examples/1122
   - title: "Big-O — шпаргалка с примерами"
     doc: lab/examples/1128
+  - title: "Базовые операции с данными — о разделе"
+    doc: encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro
+  - title: "Основы баз данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro
+  - title: "Данные и информация — о разделе"
+    doc: encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro
+  - title: "SQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-07-sql/intro
+  - title: "NoSQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-06-nosql/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -58,5 +68,19 @@ import DocCardList from '@theme/DocCardList';
 | Pascal | [Типы данных](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/4) | `array`, `record`, `set`; практика — [Lab / 1140](/lab/Примеры/1140#1-массивы) |
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Базы данных** — [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro).
+
+**Аналитика данных** — [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Продвинутые операции с данными — о разделе](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro).
+
+{/* /sidebar-collections */}
 
 ---

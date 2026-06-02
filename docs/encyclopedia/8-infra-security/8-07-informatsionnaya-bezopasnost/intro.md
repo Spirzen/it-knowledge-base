@@ -44,6 +44,7 @@ import DocCardList from '@theme/DocCardList';
 - **[Honeypots и приманки](130.md)** — раннее обнаружение lateral movement.
 - **[Безопасность IoT](131.md)** — встраиваемые устройства, Mirai, SDL для прошивки.
 - **[Патчи и управление уязвимостями](132.md)** — SLA, приоритизация CVE, типичные сбои patch management.
+- **[Кейс — захват аккаунтов через AI-поддержку и дипфейк](133.md)** — Instagram (Meta), 2026: восстановление доступа, дипфейк-селфи, почему 2FA не спасает от бота поддержки.
 - **[Обеспечение безопасности](2.md)** — анализ хостов Windows/Linux, логи, forensics, автоматизация (объёмная глава; удобна как справочник).
 - **[Вирусы и вредоносные программы](119.md)**, **[Антивирусы](120.md)** — malware, EDR; в статье про антивирусы — внедрение и сопровождение **Kaspersky Endpoint Security** (политики, задачи, защита файлов и сети).
 - **[Мониторинг и SIEM](114.md)**, **[Средства защиты](1112.md)** — детективный контур; метрики и алерты — [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro), [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro).

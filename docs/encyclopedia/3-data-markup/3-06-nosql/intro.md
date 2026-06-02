@@ -7,6 +7,14 @@ related:
     doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/intro
   - title: "SQL — о разделе"
     doc: encyclopedia/3-data-markup/3-07-sql/intro
+  - title: "Управление реляционными СУБД — о разделе"
+    doc: encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro
+  - title: "Основы баз данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro
+  - title: "ORM и работа с данными — о разделе"
+    doc: encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro
+  - title: "Продвинутые операции с данными — о разделе"
+    doc: encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -62,7 +70,9 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Аналитика данных** — [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro).
+**Базы данных** — [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [PostgreSQL — о разделе](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
+
+**Аналитика данных** — [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Продвинутые операции с данными — о разделе](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro).
 
 {/* /sidebar-collections */}
 

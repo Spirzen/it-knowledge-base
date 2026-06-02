@@ -15,6 +15,7 @@ function MemcachedShellPlayInner() {
         subtitle="Текстовые команды set / get / delete / stats — сервер не интерпретирует значения"
       >
         <MiniDbTerminal
+          title="memcached — :11211"
           prompt="memcached> "
           welcomeLines={getMemcachedWelcome()}
           execute={execute}

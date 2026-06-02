@@ -28,7 +28,7 @@
 
   font-family: var(--ifm-font-family-base);
   color: var(--ifm-color-content);
-  margin: 1.5rem 0;
+  margin: var(--it-doc-demo-gap, 1.5rem) 0;
   max-width: 100%;
   box-sizing: border-box;
 }

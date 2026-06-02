@@ -4,6 +4,15 @@ description: >-
   Маршрут по курсу "экономика производства программных продуктов": проектирование
   и производство заказного ПО, оценки, качество, сопровождение, сертификация.
 sidebar_label: Экономика производства ПО — о разделе
+related:
+  - title: "Культура кода — о разделе"
+    doc: encyclopedia/7-project/7-10-kultura-koda/intro
+  - title: "Коммуникация и общение — о разделе"
+    doc: encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro
+  - title: "Базы знаний и задачники — о разделе"
+    doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
+  - title: "Scrum — о разделе"
+    doc: encyclopedia/7-project/7-14-scrum/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -25,7 +34,6 @@ import DocCardList from '@theme/DocCardList';
   **Разработчикам и QA** — зачем формальные модели (COCOMO, ISO 25010, ПМИ) сосуществуют с Agile.
 </div>
   </div>
-
 
 ---
 
@@ -95,7 +103,18 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Управление проектами и Agile** — [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Коммуникация и общение — о разделе](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro).
+
+{/* /sidebar-collections */}
 
 ---

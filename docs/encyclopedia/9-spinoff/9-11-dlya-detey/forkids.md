@@ -4,6 +4,15 @@ description: Учебный маршрут для школьников 8–16 л
 sidebar_label: Для детей — о разделе
 slug: /encyclopedia/9-spinoff/9-11-dlya-detey/forkids
 id: forkids
+related:
+  - title: "Компьютер — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro
+  - title: "Видеоигры — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro
+  - title: "Развитие — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro
+  - title: "Программы — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -26,7 +35,6 @@ import ComputerArchitecturePlay from '@site/src/components/ComputerArchitectureP
   Ниже — пошаговая схема загрузки и работы компьютера. Переключайте этапы и смотрите роль процессора, памяти и периферии.
 </div>
   </div>
-
 
 <ComputerArchitecturePlay />
 
@@ -53,5 +61,17 @@ import ComputerArchitecturePlay from '@site/src/components/ComputerArchitectureP
 - Замечания по ясности формулировок можно оставить в комментариях на сайте — раздел дорабатывается.
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Для детей** — [Компьютер — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro), [Видеоигры — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro), [Развитие — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro), [Программы — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro), [Код — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1).
+
+{/* /sidebar-collections */}
 
 ---

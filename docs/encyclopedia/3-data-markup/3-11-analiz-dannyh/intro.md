@@ -19,6 +19,12 @@ related:
     doc: lab/examples/1150
   - title: "SQL — реальные кейсы"
     doc: lab/examples/1152
+  - title: "Продвинутые операции с данными — о разделе"
+    doc: encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
+  - title: "R — о разделе"
+    doc: encyclopedia/5-languages/5-23-r/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -48,7 +54,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Аналитика данных** — [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro).
+**Аналитика данных** — [Продвинутые операции с данными — о разделе](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro).
 
 {/* /sidebar-collections */}
 

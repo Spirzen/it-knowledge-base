@@ -15,6 +15,12 @@ related:
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/119
   - title: "DevOps, CI-CD — о разделе"
     doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/intro
+  - title: "Вайб-кодинг"
+    doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1
+  - title: "Вайб-кодинг и нейроконтент — о разделе"
+    doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro
+  - title: "Трансформеры и NLP — о разделе"
+    doc: encyclopedia/6-ai/6-09-transformery-i-nlp/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -52,5 +58,17 @@ import DocCardList from '@theme/DocCardList';
 - [Prompt engineering — библиотека промптов](/lab/Примеры/1150) — версионируемые шаблоны system/user и RAG в git
 - [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1)
 - [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812)
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**ИИ для разработчика** — [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1), [MLOps и LLM-стек — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2), [Вайб-кодинг и нейроконтент — о разделе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
+
+{/* /sidebar-collections */}
 
 ---

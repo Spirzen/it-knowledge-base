@@ -193,6 +193,8 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
+**Соло / инди-разработчик** — [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [Разработка — о разделе](/tools/development/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [IDE](/tools/development/1), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Основы DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/1).
+
 **Разработка видеоигр** — [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Практикум — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22).
 
 {/* /sidebar-collections */}

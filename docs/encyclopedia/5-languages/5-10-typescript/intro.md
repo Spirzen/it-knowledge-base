@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1
   - title: "React — компоненты-рецепты"
     doc: lab/examples/1146
+  - title: "UI-паттерны из Uiverse (Galaxy)"
+    doc: lab/examples/1155
   - title: "curl / fetch — API-запросы"
     doc: lab/examples/1133
 ---

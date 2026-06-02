@@ -3,6 +3,23 @@ title: Культура кода — о разделе
 description: Подборка материалов раздела Культура кода в энциклопедии Вселенная IT
 sidebar_label: Культура кода — о разделе
 sidebar_position: 0
+related:
+  - title: "Базы знаний и задачники — о разделе"
+    doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
+  - title: "Экономика производства ПО — о разделе"
+    doc: encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro
+  - title: "Scrum — о разделе"
+    doc: encyclopedia/7-project/7-14-scrum/intro
+  - title: "Коммуникация и общение — о разделе"
+    doc: encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro
+  - title: "Микросервисы и интеграция — о разделе"
+    doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
+  - title: "Технический дизайн на основе требований"
+    doc: encyclopedia/7-project/7-04-analitika/128
+  - title: "Архитектура выполнения — о разделе"
+    doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro
+  - title: "Командная работа в разработке ПО"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/11
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -12,7 +29,6 @@ import DocCardList from '@theme/DocCardList';
 Культура кода — это **общие договорённости в команде**: как мы называем сущности, форматируем файлы, комментируем неочевидное, ревьюим изменения и не превращаем качество в личный вкус одного человека. Хорошая культура снижает стоимость правок: код читают и меняют чаще, чем пишут с нуля.
 
 Знать синтаксис языка недостаточно — важно понимать **стиль проекта**, инструменты (форматтеры, линтеры) и то, *какую* информацию оставлять в коде, а какую — в документации и тестах.
-
 
 ---
 
@@ -52,5 +68,21 @@ import DocCardList from '@theme/DocCardList';
 Здесь — **качество исходного кода** на уровне файла и модуля. Настройка пайплайнов, политики веток и процессы релиза — в других главах энциклопедии (методология, инфраструктура, команда). Зато много про формулировки в ревью, автоматизацию рутины и то, как не спорить о пробелах вручную.
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Техлид** — [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Технический дизайн на основе требований](/encyclopedia/7-project/7-04-analitika/128), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Командная работа в разработке ПО](/encyclopedia/7-project/7-02-komanda-i-upravlenie/11), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro).
+
+**Управление проектами и Agile** — [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Коммуникация и общение — о разделе](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro), [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro).
+
+**Тимлид** — [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Организационная иерархия и деловая переписка](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5), [Ежедневные стендапы и коммуникация](/encyclopedia/7-project/7-02-komanda-i-upravlenie/111), [Первые 90 дней тимлида](/encyclopedia/7-project/7-02-komanda-i-upravlenie/141), [Роль тимлида — ожидания, риски и выбор траектории](/encyclopedia/7-project/7-02-komanda-i-upravlenie/14), [Эффективное управление разработчиками](/encyclopedia/7-project/7-02-komanda-i-upravlenie/13).
+
+{/* /sidebar-collections */}
 
 ---

@@ -2,6 +2,15 @@
 title: Данные — о разделе
 description: Подборка материалов раздела "Данные" в энциклопедии Вселенная IT — СУБД, NoSQL, файлы, облако, бэкапы и визуализация.
 sidebar_label: Данные — о разделе
+related:
+  - title: "Документация — о разделе"
+    doc: tools/documentation/intro
+  - title: "СУБД"
+    doc: tools/data/1
+  - title: "Автоматизация — о разделе"
+    doc: tools/automation/intro
+  - title: "Сеть — о разделе"
+    doc: tools/network/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -22,7 +31,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 | Статья | Тема |
 | --- | --- |
 | [СУБД](/tools/data/1) | SQL и NoSQL, архитектура запроса |
@@ -41,3 +49,17 @@ import DocCardList from '@theme/DocCardList';
 - [Основы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) — модели, транзакции, выбор СУБД
 - [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) · [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro) — теория запросов и распределённых хранилищ
 - [Анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro) — визуализация, BI, дашборды
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Каталог инструментов** — [Документация — о разделе](/tools/documentation/intro), [СУБД](/tools/data/1), [Автоматизация — о разделе](/tools/automation/intro), [Сеть — о разделе](/tools/network/intro), [ОС](/tools/system/1), [Безопасность — о разделе](/tools/security/intro).
+
+{/* /sidebar-collections */}
+
+---

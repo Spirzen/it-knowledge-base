@@ -17,6 +17,10 @@ related:
     doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/142
   - title: "Составные паттерны и MVC"
     doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/143
+  - title: "Роль и практика архитектора программного обеспечения"
+    doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117
+  - title: "Архитектура выполнения — о разделе"
+    doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -143,6 +147,8 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 ## В подборках
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Техлид** — [Роль и практика архитектора программного обеспечения](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Специализации](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/2), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro).
 
 **Архитектура и проектирование ПО** — [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro).
 

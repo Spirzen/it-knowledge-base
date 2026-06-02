@@ -21,6 +21,8 @@ related:
     doc: encyclopedia/6-ai/6-06-primenenie-ii/120
   - title: "Облачные API Cognitive Services"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/120
+  - title: "Трансформеры и NLP — о разделе"
+    doc: encyclopedia/6-ai/6-09-transformery-i-nlp/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -41,7 +43,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Нейросети и ИИ** — [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Графовые базы данных](/encyclopedia/3-data-markup/3-06-nosql/7), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro).
+**Нейросети и ИИ** — [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Графовые базы данных](/encyclopedia/3-data-markup/3-06-nosql/7).
 
 {/* /sidebar-collections */}
 

@@ -15,6 +15,12 @@ related:
     doc: encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro
   - title: "BPMN-движки Camunda и Flowable"
     doc: encyclopedia/7-project/7-04-analitika/130
+  - title: "Платформа 1С"
+    doc: encyclopedia/5-languages/5-27-1s/1
+  - title: "1С — о разделе"
+    doc: encyclopedia/5-languages/5-27-1s/intro
+  - title: "Отраслевое ПО — итоги"
+    doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/2
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -121,6 +127,8 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Системная аналитика** — [Основы анализа требований](/encyclopedia/7-project/7-04-analitika/111), [BPMN-движки Camunda и Flowable](/encyclopedia/7-project/7-04-analitika/130), [Основы бизнеса для IT-специалиста](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112), [Программные платформы](/encyclopedia/2-system-network/2-02-platformy/3), [Корпоративное ПО](/encyclopedia/2-system-network/2-02-platformy/3001), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002).
+
+**ERP, 1С и отраслевое ПО** — [Внедрение ERP — о разделе](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro), [Платформа 1С](/encyclopedia/5-languages/5-27-1s/1), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro), [Отраслевое ПО — итоги](/encyclopedia/9-spinoff/9-06-otraslevoe-po/2), [Adobe](/encyclopedia/9-spinoff/9-06-otraslevoe-po/11), [Отраслевое программное обеспечение](/encyclopedia/9-spinoff/9-06-otraslevoe-po/1).
 
 {/* /sidebar-collections */}
 

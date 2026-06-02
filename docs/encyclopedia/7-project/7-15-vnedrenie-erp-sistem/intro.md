@@ -14,6 +14,12 @@ related:
     doc: encyclopedia/7-project/7-04-analitika/intro
   - title: "Методология и жизненный цикл ПО"
     doc: encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro
+  - title: "Платформа 1С"
+    doc: encyclopedia/5-languages/5-27-1s/1
+  - title: "1С — о разделе"
+    doc: encyclopedia/5-languages/5-27-1s/intro
+  - title: "Отраслевое ПО — итоги"
+    doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/2
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -79,3 +85,17 @@ import DocCardList from '@theme/DocCardList';
   <p>Для предметной области конфигураций и регламентированного учёта на платформе 1С полезна отдельная серия «Академия ERP» — она дополняет этот раздел, где фокус на <strong>управлении проектом</strong> внедрения.</p>
 </div>
   </div>
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**ERP, 1С и отраслевое ПО** — [Платформа 1С](/encyclopedia/5-languages/5-27-1s/1), [Аналитика — о разделе](/encyclopedia/7-project/7-04-analitika/intro), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro), [Отраслевое ПО — итоги](/encyclopedia/9-spinoff/9-06-otraslevoe-po/2), [Adobe](/encyclopedia/9-spinoff/9-06-otraslevoe-po/11), [Отраслевое программное обеспечение](/encyclopedia/9-spinoff/9-06-otraslevoe-po/1).
+
+{/* /sidebar-collections */}
+
+---

@@ -48,6 +48,8 @@ ORM и драйверы опираются на конкретную СУБД. �
 
 **Бэкенд и серверная разработка** — [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro).
 
+**Базы данных** — [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro), [PostgreSQL — о разделе](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
+
 {/* /sidebar-collections */}
 
 ---

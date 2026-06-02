@@ -2,6 +2,15 @@
 title: Видеоигры и компьютерные игры — о разделе
 description: Жанры, платформы, игровой цикл и основы разработки — учебный блок для школьников.
 sidebar_label: Видеоигры — о разделе
+related:
+  - title: "Компьютер — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro
+  - title: "Развитие — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro
+  - title: "Для детей — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/forkids
+  - title: "Программы — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -23,11 +32,22 @@ import GamepadPlay from '@site/src/components/GamepadPlay';
 </div>
   </div>
 
-
 <GamepadPlay />
 
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/98).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Для детей** — [Для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/forkids), [Компьютер — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro), [Развитие — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro), [Программы — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro), [Код — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1).
+
+{/* /sidebar-collections */}
 
 ---

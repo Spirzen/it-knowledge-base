@@ -19,6 +19,14 @@ related:
     doc: encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111
   - title: "Проектирование и архитектура — о разделе"
     doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro
+  - title: "Проектирование — о разделе"
+    doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro
+  - title: "Микросервисы и интеграция — о разделе"
+    doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
+  - title: "Паттерны проектирования — о разделе"
+    doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro
+  - title: "Культура кода — о разделе"
+    doc: encyclopedia/7-project/7-10-kultura-koda/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -59,6 +67,8 @@ import DocCardList from '@theme/DocCardList';
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [Парадигмы и уровни абстракции — о разделе](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro), [Проект, структура и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro), [Объектно-ориентированное программирование — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro), [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro).
+
+**Техлид** — [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Роль и практика архитектора программного обеспечения](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117), [Технический дизайн на основе требований](/encyclopedia/7-project/7-04-analitika/128).
 
 **Архитектура и проектирование ПО** — [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro).
 

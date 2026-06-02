@@ -2,6 +2,15 @@
 title: Продвинутые операции с данными — о разделе
 description: "Подборка материалов раздела Продвинутые операции с данными в энциклопедии Вселенная IT."
 sidebar_label: Продвинутые операции с данными — о разделе
+related:
+  - title: "NoSQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-06-nosql/intro
+  - title: "Анализ данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/intro
+  - title: "SQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-07-sql/intro
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -30,7 +39,18 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Аналитика данных** — [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro).
+
+{/* /sidebar-collections */}
 
 ---

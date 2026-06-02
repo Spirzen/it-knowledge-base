@@ -25,6 +25,10 @@ related:
     doc: encyclopedia/7-project/7-12-konstruirovanie-po/intro
   - title: "Семь слоёв LLM-стека"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/119
+  - title: "Специализации"
+    doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/2
+  - title: "Роль и практика архитектора программного обеспечения"
+    doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -153,6 +157,8 @@ CAP/PACELC — [распределённые системы](design/21.md), вы
 ## В подборках
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Техлид** — [Специализации](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/2), [Роль и практика архитектора программного обеспечения](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro).
 
 **Архитектура и проектирование ПО** — [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117).
 

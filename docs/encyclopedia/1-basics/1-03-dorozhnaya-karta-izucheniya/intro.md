@@ -3,16 +3,22 @@ title: Дорожная карта изучения — о разделе
 description: "Подборка материалов раздела Дорожная карта изучения в энциклопедии Вселенная IT."
 sidebar_label: Дорожная карта изучения — о разделе
 related:
-  - title: Обзор структуры
+  - title: "Обзор структуры"
     doc: encyclopedia/1-basics/1-02-vvedenie/intro
-  - title: Советы для новичка
+  - title: "Советы для новичка"
     doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
-  - title: Перед первыми откликами
+  - title: "Перед первыми откликами"
     doc: encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1
   - title: "Где и о чём почитать"
     doc: encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101
-  - title: Тестовое задание при найме
+  - title: "Тестовое задание при найме"
     doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/13
+  - title: "Восприятие IT в обществе"
+    doc: encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1
+  - title: "Знакомство с Вселенной IT — о разделе"
+    doc: encyclopedia/1-basics/1-01-davayte-poznakomimsya/intro
+  - title: "Базовая информатика — о разделе"
+    doc: encyclopedia/1-basics/1-035-bazovaya-informatika/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -35,7 +41,18 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Старт в IT** — [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Знакомство с Вселенной IT — о разделе](/encyclopedia/1-basics/1-01-davayte-poznakomimsya/intro), [Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro).
+
+{/* /sidebar-collections */}
 
 ---

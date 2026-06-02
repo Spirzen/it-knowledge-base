@@ -15,6 +15,14 @@ related:
     doc: encyclopedia/4-code-dev/4-15-sborka-musora/1
   - title: "Git — шпаргалка сценариев"
     doc: lab/examples/1123
+  - title: "Код — о разделе"
+    doc: encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
+  - title: "Программа — о разделе"
+    doc: encyclopedia/1-basics/1-19-programma/intro
+  - title: "Личный профиль и портфолио разработчика"
+    doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/7
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -96,7 +104,11 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
+**Первый коммит** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
+
 **База программиста** — [Десктопные приложения — о разделе](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1).
+
+**Соло / инди-разработчик** — [Личный профиль и портфолио разработчика](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/7), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Маркетинг и распространение — о разделе](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/intro), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [Удаленная работа — о разделе](/encyclopedia/1-basics/1-27-udalennaya-rabota/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro).
 
 {/* /sidebar-collections */}
 

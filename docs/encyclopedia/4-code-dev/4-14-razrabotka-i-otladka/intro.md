@@ -21,6 +21,14 @@ related:
     doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111
   - title: "Low-code и No-code платформы"
     doc: encyclopedia/8-infra-security/8-02-low-code-no-code/1
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
+  - title: "Код — о разделе"
+    doc: encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro
+  - title: "Программа — о разделе"
+    doc: encyclopedia/1-basics/1-19-programma/intro
+  - title: "Трансформеры и NLP — о разделе"
+    doc: encyclopedia/6-ai/6-09-transformery-i-nlp/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -41,7 +49,11 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
+**Первый коммит** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro).
+
 **База программиста** — [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Десктопные приложения — о разделе](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro).
+
+**ИИ для разработчика** — [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [Low-code, No-code — о разделе](/encyclopedia/8-infra-security/8-02-low-code-no-code/intro), [MLOps и LLM-стек — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2), [AgentOps и MLOps — о разделе](/encyclopedia/6-ai/6-08-agentops/intro), [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1), [Вайб-кодинг и нейроконтент — о разделе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro).
 
 {/* /sidebar-collections */}
 

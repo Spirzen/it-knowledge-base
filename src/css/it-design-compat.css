@@ -388,3 +388,40 @@ html[data-design='design-universe-original'][data-theme='dark'] .faq-item {
   background: var(--ifm-background-surface-color);
   border-color: var(--ifm-color-emphasis-300);
 }
+
+/* Docs Prime — токены статей под кастомные темы */
+html[data-design]:not([data-design='design-universe-original']) {
+  --it-doc-h1-fg: var(--d-heading);
+  --it-doc-heading-fg: var(--d-heading);
+  --it-doc-hero-bg: color-mix(in srgb, var(--d-primary) 8%, var(--d-surface));
+  --it-doc-hero-gradient: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--d-primary) 8%, var(--d-surface)),
+    color-mix(in srgb, var(--d-primary) 2%, var(--d-surface))
+  );
+  --it-doc-hero-border: color-mix(in srgb, var(--d-primary) 18%, var(--d-border));
+  --it-doc-section-bg: color-mix(in srgb, var(--d-primary) 4%, var(--d-surface));
+  --it-doc-section-h2-bg: color-mix(in srgb, var(--d-primary) 8%, var(--d-surface));
+  --it-doc-h2-header-gradient: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--d-primary) 6%, var(--d-surface)),
+    transparent 55%
+  );
+  --it-doc-h3-header-gradient: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--d-primary) 5%, var(--d-surface)),
+    transparent 42%
+  );
+  --it-doc-section-border: var(--d-border);
+  --it-doc-heading-underline: color-mix(in srgb, var(--d-text-muted) 35%, var(--d-border));
+  --it-doc-rail-color: var(--d-primary);
+  --it-doc-rail-muted: color-mix(in srgb, var(--d-primary) 40%, transparent);
+  --it-doc-lead-fg: var(--d-text-muted);
+  --it-doc-inline-code-bg: color-mix(in srgb, var(--d-primary) 14%, var(--d-code-bg));
+  --it-doc-inline-code-fg: var(--d-code-fg);
+  --it-doc-inline-code-border: color-mix(in srgb, var(--d-primary) 22%, var(--d-border));
+  --it-doc-code-bg: var(--d-code-bg);
+  --it-doc-code-border: color-mix(in srgb, var(--d-primary) 35%, var(--d-border));
+  --it-doc-code-fg: var(--d-code-fg);
+  --it-doc-code-inset: color-mix(in srgb, var(--d-text) 4%, transparent);
+}

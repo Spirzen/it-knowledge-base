@@ -4,6 +4,15 @@ description: >-
   Waterfall, Agile, Scrum, Kanban, DevOps и жизненный цикл ПО — маршруты для
   руководителя, аналитика и разработчика; отдельно — методология государственных ИТ-систем.
 sidebar_label: Методология и жизненный цикл ПО — о разделе
+related:
+  - title: "Команда и управление — о разделе"
+    doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/intro
+  - title: "Scrum — о разделе"
+    doc: encyclopedia/7-project/7-14-scrum/intro
+  - title: "Общее о бизнесе — о разделе"
+    doc: encyclopedia/7-project/7-01-obschee-o-biznese/intro
+  - title: "Базы знаний и задачники — о разделе"
+    doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -24,7 +33,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 ---
 
 ## Как читать раздел
@@ -44,5 +52,17 @@ import DocCardList from '@theme/DocCardList';
 Практика **TDD** как инженерной дисциплины Agile/XP — лабораторный кейс [«Тренируем Test-Driven Development»](/lab/Кейсы/7); теория уровней тестов и TDD/BDD — [карта в разделе «Тестирование»](/encyclopedia/7-project/7-05-testirovanie/131).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Управление проектами и Agile** — [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Общее о бизнесе — о разделе](/encyclopedia/7-project/7-01-obschee-o-biznese/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro).
+
+{/* /sidebar-collections */}
 
 ---

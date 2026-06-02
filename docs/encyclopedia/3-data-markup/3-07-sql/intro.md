@@ -25,6 +25,8 @@ related:
     doc: encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro
   - title: "SQL — реальные кейсы"
     doc: lab/examples/1152
+  - title: "Основы баз данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -91,7 +93,9 @@ import DocCardList from '@theme/DocCardList';
 
 **Бэкенд и серверная разработка** — [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro).
 
-**Аналитика данных** — [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro).
+**Базы данных** — [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro), [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro).
+
+**Аналитика данных** — [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [Продвинутые операции с данными — о разделе](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro), [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro).
 
 **Системная аналитика** — [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Техническое письмо — о разделе](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002).
 

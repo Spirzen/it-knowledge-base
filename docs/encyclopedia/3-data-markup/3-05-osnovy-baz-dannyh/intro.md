@@ -2,6 +2,17 @@
 title: Основы баз данных — о разделе
 description: Подборка материалов раздела Основы баз данных в энциклопедии Вселенная IT
 sidebar_label: Основы баз данных — о разделе
+related:
+  - title: "Структуры данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-02-struktury-dannyh/intro
+  - title: "SQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-07-sql/intro
+  - title: "Базовые операции с данными — о разделе"
+    doc: encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro
+  - title: "NoSQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-06-nosql/intro
+  - title: "Данные и информация — о разделе"
+    doc: encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -70,5 +81,19 @@ import DocCardList from '@theme/DocCardList';
 | **Шардинг** | Данные одной логической БД на нескольких серверах по ключу шарда; отличие от партиций одной СУБД — [§10 в «Как СУБД выполняет запрос»](./3.md#10-партиционирование). |
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Базы данных** — [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro).
+
+**Аналитика данных** — [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Продвинутые операции с данными — о разделе](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro).
+
+{/* /sidebar-collections */}
 
 ---

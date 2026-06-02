@@ -6,14 +6,21 @@
 .navbar-sidebar {
   --it-explorer-icon: var(--ifm-color-content-secondary);
   --it-explorer-icon-active: var(--ifm-color-primary);
+  --it-explorer-rail: var(--it-doc-rail-color, var(--ifm-color-primary));
+  --it-explorer-rail-muted: var(--it-doc-rail-muted, color-mix(in srgb, var(--ifm-color-primary) 45%, transparent));
   --it-explorer-text: var(--ifm-menu-color);
   --it-explorer-text-active: var(--ifm-menu-color-active);
-  --it-explorer-border: var(--ifm-color-emphasis-200);
+  --it-explorer-border: color-mix(in srgb, var(--it-explorer-rail) 12%, var(--ifm-color-emphasis-200));
   --it-explorer-surface: var(--ifm-background-surface-color);
   --it-explorer-sidebar-bg: var(--ifm-sidebar-background-color);
   --it-explorer-hover-bg: var(
     --ifm-menu-color-background-hover,
-    color-mix(in srgb, var(--ifm-color-primary) 14%, var(--it-explorer-sidebar-bg))
+    color-mix(in srgb, var(--it-explorer-rail) 10%, var(--it-explorer-sidebar-bg))
+  );
+  --it-explorer-category-bg: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--it-explorer-rail) 7%, var(--it-explorer-sidebar-bg)),
+    transparent 58%
   );
   --it-mask-caret: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z'/%3E%3C/svg%3E");
   --it-mask-folder-open: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23000' d='M1.5 4.5h4.2l1.2 1.2H14v7.3H1.5V4.5z'/%3E%3C/svg%3E");
@@ -33,9 +40,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.65rem 0.75rem 0.4rem;
+  padding: 0.65rem 0.75rem 0.45rem;
   margin: 0 0.35rem 0.25rem;
   border-bottom: 1px solid var(--it-explorer-border);
+  border-left: 3px solid var(--it-explorer-rail);
+  border-radius: 0 8px 0 0;
+  background: var(--it-explorer-category-bg);
   color: var(--it-explorer-icon-active);
 }
 
@@ -306,13 +316,18 @@
   font-weight: 600 !important;
   font-size: 0.8rem !important;
   color: var(--it-explorer-text) !important;
+  border-left: 2px solid var(--it-explorer-rail-muted) !important;
+  border-bottom: 1px solid color-mix(in srgb, var(--it-explorer-rail) 10%, var(--it-explorer-border)) !important;
+  border-radius: 6px !important;
+  background: var(--it-explorer-category-bg) !important;
+  padding-left: calc(0.65rem + 2px) !important;
 }
 
 .theme-doc-sidebar-container .theme-doc-sidebar-menu .menu__list .menu__list,
 .navbar-sidebar .theme-doc-sidebar-menu .menu__list .menu__list {
   margin: 0.1rem 0 0.35rem 0.15rem !important;
   padding-left: 0.55rem !important;
-  border-left: 1px solid color-mix(in srgb, var(--it-explorer-icon-active) 20%, transparent) !important;
+  border-left: 2px solid var(--it-explorer-rail-muted) !important;
   background: transparent !important;
 }
 
@@ -365,10 +380,16 @@
   .theme-doc-sidebar-menu
   .menu__link--active:not(.menu__link--sublist),
 .navbar-sidebar .theme-doc-sidebar-menu .menu__link--active:not(.menu__link--sublist) {
-  background: var(--ifm-menu-color-background-active) !important;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--it-explorer-rail) 12%, var(--ifm-menu-color-background-active)),
+    var(--ifm-menu-color-background-active) 55%
+  ) !important;
   color: var(--it-explorer-text-active) !important;
   font-weight: 600 !important;
-  box-shadow: inset 3px 0 0 var(--it-explorer-icon-active) !important;
+  border-left: 2px solid var(--it-explorer-rail) !important;
+  border-radius: 6px !important;
+  box-shadow: inset 3px 0 0 var(--it-explorer-rail) !important;
 }
 
 .theme-doc-sidebar-container
@@ -385,9 +406,14 @@
   .theme-doc-sidebar-menu
   .menu__link--active.menu__link--sublist,
 .navbar-sidebar .theme-doc-sidebar-menu .menu__link--active.menu__link--sublist {
-  background: var(--ifm-menu-color-background-active) !important;
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--it-explorer-rail) 14%, var(--ifm-menu-color-background-active)),
+    var(--ifm-menu-color-background-active) 62%
+  ) !important;
   color: var(--it-explorer-text-active) !important;
-  box-shadow: inset 3px 0 0 var(--it-explorer-icon-active) !important;
+  border-left-color: var(--it-explorer-rail) !important;
+  box-shadow: inset 3px 0 0 var(--it-explorer-rail) !important;
 }
 
 .theme-doc-sidebar-container

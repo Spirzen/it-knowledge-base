@@ -2,6 +2,15 @@
 title: Управление реляционными СУБД — о разделе
 description: Подборка материалов раздела Управление реляционными СУБД в энциклопедии Вселенная IT
 sidebar_label: Управление реляционными СУБД — о разделе
+related:
+  - title: "NoSQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-06-nosql/intro
+  - title: "ORM и работа с данными — о разделе"
+    doc: encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro
+  - title: "SQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-07-sql/intro
+  - title: "PostgreSQL — о разделе"
+    doc: encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -39,5 +48,17 @@ import DocCardList from '@theme/DocCardList';
 - NoSQL и распределённая согласованность — [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Базы данных** — [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [PostgreSQL — о разделе](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
+
+{/* /sidebar-collections */}
 
 ---

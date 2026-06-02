@@ -2,6 +2,15 @@
 title: Программы — о разделе
 description: Текстовые редакторы, таблицы, браузер и графика — учебный блок для школьников.
 sidebar_label: Программы — о разделе
+related:
+  - title: "Развитие — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro
+  - title: "Код — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro
+  - title: "Видеоигры — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro
+  - title: "Введение в программирование"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -19,11 +28,22 @@ import DesktopWindowPlay from '@site/src/components/DesktopWindowPlay';
 </div>
   </div>
 
-
 <DesktopWindowPlay />
 
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/98).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Для детей** — [Для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/forkids), [Компьютер — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro), [Видеоигры — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro), [Развитие — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro), [Код — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1).
+
+{/* /sidebar-collections */}
 
 ---

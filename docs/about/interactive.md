@@ -7,6 +7,7 @@ slug: /about/interactive
 ---
 
 import KeyboardPlay from '@site/src/components/KeyboardPlay';
+import TouchTypingFingerPlay from '@site/src/components/TouchTypingFingerPlay';
 import TypingSpeedTrainerPlay from '@site/src/components/TypingSpeedTrainerPlay';
 import IoDevicesPlay from '@site/src/components/IoDevicesPlay';
 import DataTypesPlay from '@site/src/components/DataTypesPlay';
@@ -61,9 +62,19 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Замер знаков и слов в минуту с подсветкой ошибок — для самопроверки после карты клавиатуры.
 
-Статьи: [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
+Статьи: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14), [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
 
 <TypingSpeedTrainerPlay />
+
+---
+
+### Зоны пальцев (слепая печать)
+
+Цветовая схема домашнего ряда и мини-дрилл «нажми нужную клавишу».
+
+Статья: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14)
+
+<TouchTypingFingerPlay />
 
 ---
 

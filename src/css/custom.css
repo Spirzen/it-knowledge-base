@@ -7,6 +7,8 @@
 @import './navbar-layout.css';
 @import './sidebar-explorer.css';
 @import './sidebar-cosmic-explorer.css';
+@import './article-docs-prime.css';
+@import './site-chrome.css';
 
 /* ============================================================================
    1. ПЕРЕМЕННЫЕ (CSS VARIABLES)
@@ -103,9 +105,44 @@
   --it-tag-notrequired-fg: #546e7a;
   --it-tag-notrequired-border: #cfd8dc;
 
-  --it-meta-panel-bg: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-card-background-color));
-  --it-meta-panel-border: color-mix(in srgb, var(--ifm-color-primary) 22%, var(--ifm-color-emphasis-300));
+  --it-meta-panel-bg: color-mix(in srgb, var(--ifm-color-primary) 3%, var(--ifm-card-background-color));
+  --it-meta-panel-border: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-color-emphasis-300));
   --it-meta-label-fg: var(--ifm-color-content-secondary);
+
+  /* Docs Prime — типографика статей */
+  --it-doc-h1-fg: var(--ifm-color-content);
+  --it-doc-heading-fg: var(--ifm-color-content);
+  --it-doc-hero-bg: color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-card-background-color));
+  --it-doc-hero-gradient: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-card-background-color)),
+    color-mix(in srgb, var(--ifm-color-primary) 2%, var(--ifm-card-background-color))
+  );
+  --it-doc-hero-border: color-mix(in srgb, var(--ifm-color-primary) 15%, var(--ifm-color-emphasis-300));
+  --it-doc-section-bg: color-mix(in srgb, var(--ifm-color-primary) 3%, var(--ifm-card-background-color));
+  --it-doc-section-h2-bg: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-card-background-color));
+  --it-doc-h2-header-gradient: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-card-background-color)),
+    transparent 55%
+  );
+  --it-doc-h3-header-gradient: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-card-background-color)),
+    transparent 42%
+  );
+  --it-doc-section-border: var(--ifm-color-emphasis-300);
+  --it-doc-heading-underline: color-mix(in srgb, #a2a9b1 70%, var(--ifm-color-emphasis-300));
+  --it-doc-rail-color: var(--ifm-color-primary);
+  --it-doc-rail-muted: color-mix(in srgb, var(--ifm-color-primary) 45%, transparent);
+  --it-doc-lead-fg: var(--ifm-color-content-secondary);
+  --it-doc-inline-code-bg: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-code-background));
+  --it-doc-inline-code-fg: var(--ifm-color-primary-darkest);
+  --it-doc-inline-code-border: color-mix(in srgb, var(--ifm-color-primary) 18%, var(--ifm-color-emphasis-200));
+  --it-doc-code-bg: #1a1b26;
+  --it-doc-code-border: #2f334d;
+  --it-doc-code-fg: #c8d3f5;
+  --it-doc-code-inset: rgba(255, 255, 255, 0.04);
 
   --it-audience-developer-bg: color-mix(in srgb, #5c6bc0 14%, var(--ifm-card-background-color));
   --it-audience-developer-fg: #3949ab;
@@ -219,8 +256,42 @@
   --it-tag-notrequired-fg: #cfd8dc;
   --it-tag-notrequired-border: color-mix(in srgb, #78909c 35%, #444);
 
-  --it-meta-panel-bg: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-card-background-color));
-  --it-meta-panel-border: color-mix(in srgb, var(--ifm-color-primary) 28%, #444);
+  --it-meta-panel-bg: color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-card-background-color));
+  --it-meta-panel-border: color-mix(in srgb, var(--ifm-color-primary) 14%, #444);
+
+  --it-doc-h1-fg: var(--ifm-heading-color);
+  --it-doc-heading-fg: var(--ifm-heading-color);
+  --it-doc-hero-bg: color-mix(in srgb, var(--ifm-color-primary) 12%, var(--ifm-card-background-color));
+  --it-doc-hero-gradient: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-card-background-color)),
+    color-mix(in srgb, var(--ifm-color-primary) 4%, var(--ifm-card-background-color))
+  );
+  --it-doc-hero-border: color-mix(in srgb, var(--ifm-color-primary) 22%, #444);
+  --it-doc-section-bg: color-mix(in srgb, var(--ifm-color-primary) 5%, var(--ifm-card-background-color));
+  --it-doc-section-h2-bg: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-card-background-color));
+  --it-doc-h2-header-gradient: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-card-background-color)),
+    transparent 55%
+  );
+  --it-doc-h3-header-gradient: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--ifm-color-primary) 8%, var(--ifm-card-background-color)),
+    transparent 42%
+  );
+  --it-doc-section-border: color-mix(in srgb, var(--ifm-color-primary) 12%, #444);
+  --it-doc-heading-underline: color-mix(in srgb, var(--ifm-color-primary) 20%, #555);
+  --it-doc-rail-color: var(--ifm-color-primary-light);
+  --it-doc-rail-muted: color-mix(in srgb, var(--ifm-color-primary) 35%, transparent);
+  --it-doc-lead-fg: var(--ifm-color-content-secondary);
+  --it-doc-inline-code-bg: color-mix(in srgb, var(--ifm-color-primary) 18%, var(--ifm-code-background));
+  --it-doc-inline-code-fg: var(--ifm-color-primary-lighter);
+  --it-doc-inline-code-border: color-mix(in srgb, var(--ifm-color-primary) 28%, #444);
+  --it-doc-code-bg: #12121a;
+  --it-doc-code-border: color-mix(in srgb, var(--ifm-color-primary) 25%, #333);
+  --it-doc-code-fg: #c8d3f5;
+  --it-doc-code-inset: rgba(255, 255, 255, 0.03);
 
   --it-audience-developer-fg: #9fa8da;
   --it-audience-analytic-fg: #80cbc4;
@@ -317,19 +388,7 @@ img {
    4. НАВИГАЦИЯ И САЙДБАР
    ============================================================================ */
 
-.navbar {
-  box-shadow: 0 2px 8px rgba(123, 104, 238, 0.1);
-  border-bottom: 1px solid #F0F0FF;
-}
-
-.navbar__link {
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.navbar__link:hover {
-  color: var(--ifm-color-primary);
-}
+/* Navbar — см. site-chrome.css */
 
 .menu__list > .menu__list-item:first-of-type {
   border-top: 1px solid var(--ifm-color-emphasis-300);
@@ -659,13 +718,24 @@ img {
 
 .article-meta {
   margin: 0.75rem 0 1.5rem;
-  padding: 0.85rem 1rem;
-  border-radius: 10px;
+  padding: 0.55rem 0.85rem;
+  border-radius: 8px;
   border: 1px solid var(--it-meta-panel-border);
   background: var(--it-meta-panel-bg);
   display: flex;
   flex-direction: column;
-  gap: 0.65rem;
+  gap: 0.45rem;
+}
+
+.article-meta .tag,
+.article-meta .complexity-badge {
+  --it-tag-chip-padding: 0.2rem 0.55rem;
+  --it-tag-chip-font-size: 0.72rem;
+  --it-tag-chip-weight: 500;
+}
+
+.article-meta .tag-inprogress {
+  animation: none;
 }
 
 .article-meta__row {
@@ -678,10 +748,10 @@ img {
 .article-meta__label {
   flex: 0 0 auto;
   min-width: 4.5rem;
-  padding-top: 0.3rem;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  padding-top: 0.22rem;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--it-meta-label-fg);
   line-height: 1.2;
@@ -1531,23 +1601,7 @@ pre[class*='language-']::after,
    10. ФУТЕР И ДРУГИЕ ЭЛЕМЕНТЫ
    ============================================================================ */
 
-.footer {
-  background: linear-gradient(135deg, #2C3E50 0%, #34495E 100%);
-}
-
-.footer__title {
-  color: #FFFFFF;
-  font-weight: 600;
-}
-
-.footer__link-item {
-  color: #B0C4DE;
-  transition: color 0.3s ease;
-}
-
-.footer__link-item:hover {
-  color: #FFFFFF;
-}
+/* Footer — см. site-chrome.css */
 
 .theme-admonition,
 details,
@@ -1577,124 +1631,13 @@ details,
 }
 
 /* ============================================================================
-   СВИСТЕЛКИ И ПЕРДЕЛКИ
+   СТАТЬИ · Docs Prime (см. article-docs-prime.css)
    ============================================================================ */
-   
-/* H1 - Эффект рамки с анимацией */
-.theme-doc-markdown h1 {
-  font-size: 2.6rem !important;
-  font-weight: 800 !important;
-  color: var(--ifm-color-primary-darkest) !important;
-  padding: 2rem 2.5rem !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 2rem !important;
-  border: 3px solid transparent !important;
-  border-image: linear-gradient(45deg, 
-    var(--ifm-color-primary), 
-    var(--ifm-color-primary-dark), 
-    var(--ifm-color-primary-light)) !important;
-  border-image-slice: 1 !important;
-  border-radius: 12px !important;
-  background: rgba(123, 104, 238, 0.05) !important;
-  position: relative !important;
-  overflow: visible !important;
-  transition: border-color 0.3s ease !important;
-}
 
-.theme-doc-markdown h1:hover {
-  border-color: var(--ifm-color-primary-lightest) !important;
-  background: rgba(123, 104, 238, 0.08) !important;
-}
-
-/* Дополнительная декоративная линия снизу */
-.theme-doc-markdown h1::after {
-  content: "" !important;
-  position: absolute !important;
-  bottom: 0 !important;
-  left: 0 !important;
-  width: 0 !important;
-  height: 4px !important;
-  background: var(--ifm-color-primary) !important;
-  border-bottom-left-radius: 12px !important;
-  border-bottom-right-radius: 12px !important;
-  transition: width 0.4s ease !important;
-}
-
-.theme-doc-markdown h1:hover::after {
-  width: 100% !important;
-}
-
-@media screen and (max-width: 768px) {
-  .theme-doc-markdown h1 {
-    font-size: 2rem !important;
-    padding: 1.5rem 1.5rem !important;
-    border-width: 2px !important;
-  }
-}
-   
-/* H2 заголовки с фоном */
-.theme-doc-markdown h2 {
-  padding: 0.8rem 1.2rem !important;
-  margin-top: 2rem !important;
-  margin-bottom: 1rem !important;
-  background: linear-gradient(135deg, 
-    rgba(123, 104, 238, 0.05) 0%, 
-    rgba(123, 104, 238, 0.1) 100%) !important;
-  border-radius: 8px !important;
-  border-left: 3px solid var(--ifm-color-primary) !important;
-  font-weight: 700 !important;
-}
-
-.theme-doc-markdown h2:hover {
-  background: linear-gradient(135deg, 
-    rgba(123, 104, 238, 0.1) 0%, 
-    rgba(123, 104, 238, 0.15) 100%) !important;
-}
-
-/* H3 заголовки с иконкой */
-.theme-doc-markdown h3 {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem !important;
-  padding: 0.6rem 1rem !important;
-  margin-top: 1.5rem !important;
-  margin-bottom: 0.75rem !important;
-  background: rgba(123, 104, 238, 0.08) !important;
-  border-radius: 6px !important;
-  font-weight: 600 !important;
-  color: var(--ifm-color-primary-dark) !important;
-}
-
-.theme-doc-markdown h3::before {
-  content: "◉";
-  display: inline-block;
-  font-size: 0.9em !important;
-  color: var(--ifm-color-primary) !important;
-  line-height: 1 !important;
-}
-
-.theme-doc-markdown h3:hover {
-  background: rgba(123, 104, 238, 0.12) !important;
-}
-
-/* Разделитель с градиентом */
-.theme-doc-markdown hr {
-  border: none !important;
-  height: 4px !important;
-  margin: 2rem auto !important;
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    var(--ifm-color-primary-lightest) 50%, 
-    transparent 100%) !important;
-  border-radius: 2px !important;
-}
-
-/* Тёмная тема для градиента */
-html[data-theme='dark'] .theme-doc-markdown hr {
-  background: linear-gradient(90deg, 
-    transparent 0%, 
-    rgba(147, 112, 219, 0.2) 50%, 
-    transparent 100%) !important;
+/* Блоки кода в статьях — тонкая рамка вместо legacy 5px */
+.theme-doc-markdown .prism-code,
+.theme-doc-markdown pre[class*='language-'] {
+  border-width: 1px !important;
 }
 
 /* ============================================================================

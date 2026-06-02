@@ -2,6 +2,15 @@
 title: Компьютер — о разделе
 description: Компьютер, периферия, файлы, сеть и безопасность — учебный блок для школьников.
 sidebar_label: Компьютер — о разделе
+related:
+  - title: "Для детей — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/forkids
+  - title: "Видеоигры — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro
+  - title: "Развитие — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro
+  - title: "Программы — о разделе"
+    doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -21,7 +30,6 @@ import LaptopExplorerPlay from '@site/src/components/LaptopExplorerPlay';
 </div>
   </div>
 
-
 <LaptopExplorerPlay />
 
 В статьях раздела есть интерактивные схемы: они работают в браузере и не меняют настройки вашего компьютера.
@@ -29,5 +37,17 @@ import LaptopExplorerPlay from '@site/src/components/LaptopExplorerPlay';
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/98).
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Для детей** — [Для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/forkids), [Видеоигры — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro), [Развитие — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/intro), [Программы — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro), [Код — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1).
+
+{/* /sidebar-collections */}
 
 ---

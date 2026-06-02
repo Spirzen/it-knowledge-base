@@ -3,6 +3,15 @@ title: Инструменты — о разделе
 description: Подборка материалов раздела Инструменты в энциклопедии Вселенная IT
 slug: /tools/intro
 sidebar_label: Инструменты — о разделе
+related:
+  - title: "Разработка — о разделе"
+    doc: tools/development/intro
+  - title: "IDE"
+    doc: tools/development/1
+  - title: "Утилиты"
+    doc: tools/development/2
+  - title: "Система — о разделе"
+    doc: tools/system/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -27,7 +36,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 ---
 
 ## В энциклопедии
@@ -37,5 +45,17 @@ import DocCardList from '@theme/DocCardList';
 - [Система и сеть](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro) — ОС, терминал, администрирование
 - [Утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) — HTTP-запросы из CLI, API smoke-test и отладка интеграций
 - [Инфраструктура и безопасность](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) — CI/CD, облако, контейнеры
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Каталог инструментов** — [Разработка — о разделе](/tools/development/intro), [IDE](/tools/development/1), [Утилиты](/tools/development/2), [Система — о разделе](/tools/system/intro), [ОС](/tools/system/1), [Автоматизация — о разделе](/tools/automation/intro).
+
+{/* /sidebar-collections */}
 
 ---

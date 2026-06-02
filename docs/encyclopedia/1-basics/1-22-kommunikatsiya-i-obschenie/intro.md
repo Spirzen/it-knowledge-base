@@ -15,6 +15,14 @@ related:
     doc: encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/intro
   - title: "Экономические и организационные сообщества"
     doc: encyclopedia/9-spinoff/9-10-internet-kultura/114
+  - title: "Экономика производства ПО — о разделе"
+    doc: encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro
+  - title: "Культура кода — о разделе"
+    doc: encyclopedia/7-project/7-10-kultura-koda/intro
+  - title: "Базы знаний и задачники — о разделе"
+    doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
+  - title: "Scrum — о разделе"
+    doc: encyclopedia/7-project/7-14-scrum/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -75,6 +83,8 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Софт-скиллы** — [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Удаленная работа — о разделе](/encyclopedia/1-basics/1-27-udalennaya-rabota/intro), [Как понять, что пора менять работу — о разделе](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/intro), [Экономические и организационные сообщества](/encyclopedia/9-spinoff/9-10-internet-kultura/114), [Взаимодействие аналитика с командой](/encyclopedia/7-project/7-04-analitika/127).
+
+**Управление проектами и Agile** — [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro).
 
 {/* /sidebar-collections */}
 

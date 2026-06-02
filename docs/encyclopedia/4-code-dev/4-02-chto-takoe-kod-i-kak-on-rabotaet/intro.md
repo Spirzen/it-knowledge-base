@@ -15,6 +15,14 @@ related:
     doc: lab/examples/615
   - title: "Конструирование ПО — о разделе"
     doc: encyclopedia/7-project/7-12-konstruirovanie-po/intro
+  - title: "Программа — о разделе"
+    doc: encyclopedia/1-basics/1-19-programma/intro
+  - title: "Основы работы с Git — о разделе"
+    doc: encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro
+  - title: "Терминал — о разделе"
+    doc: encyclopedia/2-system-network/2-05-terminal/intro
+  - title: "Python — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -86,6 +94,8 @@ import DocCardList from '@theme/DocCardList';
 ## В подборках
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Первый коммит** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 
 **База программиста** — [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Проект, структура и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro).
 

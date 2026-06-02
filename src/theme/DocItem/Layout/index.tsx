@@ -7,6 +7,7 @@ import {
   getArticleTagSlug,
   getComplexityBadgeSlug,
 } from './articleMetaEnhancement';
+import {enhanceArticleSections} from './articleSectionEnhancement';
 import {useWindowSize} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 
@@ -139,6 +140,7 @@ function useArticleMetaEnhancement() {
 
   useEffect(() => {
     enhanceArticleMeta();
+    enhanceArticleSections();
 
     const navigateToTag = (slug: string) => {
       history.push(`/tags/${slug}`);

@@ -15,6 +15,10 @@ related:
     doc: encyclopedia/1-basics/1-19-programma/intro
   - title: "Python — работа с файлами и текстом"
     doc: lab/examples/1126
+  - title: "Основы баз данных — о разделе"
+    doc: encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro
+  - title: "SQL — о разделе"
+    doc: encyclopedia/3-data-markup/3-07-sql/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -45,6 +49,8 @@ import DocCardList from '@theme/DocCardList';
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Текст — о разделе](/encyclopedia/1-basics/1-15-tekst/intro), [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro).
+
+**Базы данных** — [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro).
 
 {/* /sidebar-collections */}
 

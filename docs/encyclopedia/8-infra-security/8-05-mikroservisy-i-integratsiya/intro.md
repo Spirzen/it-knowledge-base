@@ -21,6 +21,12 @@ related:
     doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/intro
   - title: "Забота о коде и данных — о разделе"
     doc: encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro
+  - title: "Архитектура выполнения — о разделе"
+    doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro
+  - title: "Культура кода — о разделе"
+    doc: encyclopedia/7-project/7-10-kultura-koda/intro
+  - title: "Технический дизайн на основе требований"
+    doc: encyclopedia/7-project/7-04-analitika/128
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -66,6 +72,8 @@ import DocCardList from '@theme/DocCardList';
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro).
+
+**Техлид** — [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Технический дизайн на основе требований](/encyclopedia/7-project/7-04-analitika/128), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Командная работа в разработке ПО](/encyclopedia/7-project/7-02-komanda-i-upravlenie/11).
 
 **Архитектура и проектирование ПО** — [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1).
 

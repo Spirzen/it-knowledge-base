@@ -9,18 +9,26 @@ description: >-
   энциклопедии.
 sidebar_label: Базовая информатика — о разделе
 related:
-  - title: Дорожная карта изучения
+  - title: "Дорожная карта изучения"
     doc: encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1
-  - title: Как работает компьютер
+  - title: "Как работает компьютер"
     doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro
-  - title: Данные и информация
+  - title: "Данные и информация"
     doc: encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro
-  - title: Программа
+  - title: "Программа"
     doc: encyclopedia/1-basics/1-19-programma/intro
   - title: "Big-O — шпаргалка с примерами"
     doc: lab/examples/1128
   - title: "Алгоритмы на Python — ЕГЭ и олимпиадка"
     doc: lab/examples/1122
+  - title: "Восприятие IT в обществе"
+    doc: encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1
+  - title: "Советы для новичка — о разделе"
+    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
+  - title: "Дорожная карта изучения — о разделе"
+    doc: encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro
+  - title: "Карьера в IT и мифы — о разделе"
+    doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -50,7 +58,6 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
   Итоги и чек-лист — в конце ([98](/encyclopedia/1-basics/1-035-bazovaya-informatika/98), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99)).
 </div>
   </div>
-
 
 ---
 
@@ -97,4 +104,17 @@ flowchart LR
 После просмотра выберите свой ближайший маршрут из 3 шагов — текущая глава -> следующая обязательная -> глава для углубления. Это поможет не потеряться в материале и сразу закрепить порядок прохождения.
 
 <DocCardList />
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Старт в IT** — [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro), [Фронтенд и бэкенд — о разделе](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro).
+
+{/* /sidebar-collections */}
+
 ---

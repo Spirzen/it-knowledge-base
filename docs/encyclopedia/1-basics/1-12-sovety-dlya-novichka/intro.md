@@ -25,6 +25,8 @@ related:
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/117
   - title: "Поиск текста в файлах — grep, findstr и Select-String"
     doc: encyclopedia/2-system-network/2-05-terminal/104
+  - title: "Базовая информатика — о разделе"
+    doc: encyclopedia/1-basics/1-035-bazovaya-informatika/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -47,7 +49,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Найти слово в файле или в папке</div>
 
   <div class="callout-body">
-  В открытом документе — <strong>Ctrl+F</strong> (Mac — <strong>Cmd+F</strong>); по папке — VS Code или Notepad++; в терминале — <code>grep</code>. Обзор способов — <a href="/encyclopedia/2-system-network/2-05-terminal/104">поиск текста в файлах</a>; горячие клавиши — <a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3">глава про клавиатуру</a>.
+  В открытом документе — <strong>Ctrl+F</strong> (Mac — <strong>Cmd+F</strong>); по папке — VS Code или Notepad++; в терминале — <code>grep</code>. Обзор способов — <a href="/encyclopedia/2-system-network/2-05-terminal/104">поиск текста в файлах</a>; горячие клавиши — <a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3">глава про клавиатуру</a>; слепая печать — <a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14">как научиться быстро печатать</a>.
 </div>
   </div>
 
@@ -72,6 +74,8 @@ import DocCardList from '@theme/DocCardList';
 ## В подборках
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Старт в IT** — [Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Фронтенд и бэкенд — о разделе](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro).
 
 **Компьютерная грамотность** — [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
 

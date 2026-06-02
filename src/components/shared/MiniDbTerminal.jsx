@@ -36,6 +36,7 @@ export default function MiniDbTerminal({
   execute,
   hints = [],
   minHeight = 220,
+  title,
 }) {
   const [lines, setLines] = useState(welcomeLines);
   const [input, setInput] = useState('');
@@ -44,7 +45,13 @@ export default function MiniDbTerminal({
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
 
+  const headerTitle = title ?? (prompt.replace(/\s*>+\s*$/, '').trim() || 'shell');
+
   useTerminalBodyScroll(scrollRef, [lines]);
+
+  const focusInput = useCallback(() => {
+    inputRef.current?.focus();
+  }, []);
 
   const run = useCallback(
     (raw) => {
@@ -92,12 +99,35 @@ export default function MiniDbTerminal({
   };
 
   return (
-    <div>
+    <div className={clsx(terminalStyles.shell, terminalStyles.shellEmbedded)}>
+      <div className={terminalStyles.header}>
+        <div className={terminalStyles.buttons}>
+          <button
+            type="button"
+            className={clsx(terminalStyles.winBtn, terminalStyles.winBtnRed)}
+            title="Очистить экран"
+            aria-label="Очистить экран"
+            onClick={() => run('clear')}
+          />
+          <button
+            type="button"
+            className={clsx(terminalStyles.winBtn, terminalStyles.winBtnGreen)}
+            title="Фокус на ввод"
+            aria-label="Фокус на ввод"
+            onClick={focusInput}
+          />
+        </div>
+        <div className={terminalStyles.title}>{headerTitle}</div>
+        <span className={terminalStyles.status} aria-hidden>
+          ● online
+        </span>
+      </div>
+
       <div
         ref={scrollRef}
         className={terminalStyles.body}
         style={{minHeight}}
-        onClick={() => inputRef.current?.focus()}
+        onClick={focusInput}
         role="presentation"
       >
         {lines.map((item, i) => (
@@ -105,22 +135,36 @@ export default function MiniDbTerminal({
         ))}
         <div className={terminalStyles.inputRow}>
           <span className={terminalStyles.prompt}>{prompt}</span>
-          <input
-            ref={inputRef}
-            className={terminalStyles.input}
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={onKeyDown}
-            spellCheck={false}
-            autoComplete="off"
-            aria-label="Команда"
-          />
+          <span className={terminalStyles.inputWrap}>
+            <input
+              ref={inputRef}
+              className={terminalStyles.input}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={onKeyDown}
+              spellCheck={false}
+              autoComplete="off"
+              aria-label="Команда"
+              placeholder="введите команду…"
+            />
+            {!input && <span className={terminalStyles.cursor} aria-hidden />}
+          </span>
         </div>
       </div>
+
       {hints.length > 0 && (
-        <p className="it-demo__hint" style={{marginTop: '0.5rem'}}>
-          {hints.join(' · ')}
-        </p>
+        <div className={terminalStyles.hints}>
+          {hints.map((hint) => (
+            <button
+              key={hint}
+              type="button"
+              className={terminalStyles.hintBtn}
+              onClick={() => run(hint)}
+            >
+              {hint}
+            </button>
+          ))}
+        </div>
       )}
     </div>
   );
