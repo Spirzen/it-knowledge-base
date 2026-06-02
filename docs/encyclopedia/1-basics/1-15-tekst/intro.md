@@ -27,14 +27,6 @@ related:
     doc: encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6
   - title: "Базовые операции с данными — о разделе"
     doc: encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro
-  - title: "Программа — о разделе"
-    doc: encyclopedia/1-basics/1-19-programma/intro
-  - title: "Данные и информация — о разделе"
-    doc: encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro
-  - title: "Исполняемые файлы и архивы — о разделе"
-    doc: encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro
-  - title: "Поиск текста в файлах — grep, findstr и Select-String"
-    doc: encyclopedia/2-system-network/2-05-terminal/104
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -74,9 +66,9 @@ import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Офисная грамотность** — [Работа с Word](/encyclopedia/1-basics/1-15-tekst/211), [Работа с Excel](/encyclopedia/1-basics/1-15-tekst/212), [Excel и Google Sheets — формулы](/lab/Примеры/1139), [Word и Excel в проектной документации](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007), [Документация](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1001), [Электронная почта](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3), [Офисные пакеты](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [Цифровые формы и анкеты](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6), [Устройство и надёжность паролей](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/114), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1).
+**Офисная грамотность** — [Документация](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1001), [Электронная почта](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3), [Офисные пакеты](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [Цифровые формы и анкеты](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6), [Устройство и надёжность паролей](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/114), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1).
 
 **База программиста** — [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro).
 

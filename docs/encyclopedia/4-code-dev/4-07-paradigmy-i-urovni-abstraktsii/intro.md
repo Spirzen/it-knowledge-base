@@ -37,7 +37,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 <DocCardList />
 
 {/* sidebar-collections */}
@@ -46,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Объектно-ориентированное программирование — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro), [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro), [Проект, структура и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro).
 

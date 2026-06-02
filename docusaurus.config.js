@@ -326,6 +326,7 @@ module.exports = {
           title: 'О проекте',
           items: [
             {label: 'О проекте', to: '/about/project'},
+            {label: 'Тематические подборки', to: '/about/collections'},
             {label: 'Манифест и правила', to: '/about/manifest'},
             {label: 'Поддержать проект', to: '/about/author#support'},
             {label: 'Об авторе', to: '/about/author'},

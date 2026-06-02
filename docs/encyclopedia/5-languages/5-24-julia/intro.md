@@ -69,18 +69,6 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-{/* sidebar-collections */}
-
----
-
-## В подборках
-
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
-
-**Бэкенд и серверная разработка** — [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [PowerShell — о разделе](/encyclopedia/5-languages/5-26-powershell/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro).
-
-{/* /sidebar-collections */}
-
 ---
 
 ## Как читать раздел с пользой
@@ -109,3 +97,17 @@ import DocCardList from '@theme/DocCardList';
 - Могу объяснить, почему первый вызов часто медленнее из-за JIT.
 
 Если хотя бы два пункта пока "плавают", вернитесь к [Основам](./2.md), [Типам](./4.md) и [Функциям](./6.md) и повторите примеры.
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [PowerShell — о разделе](/encyclopedia/5-languages/5-26-powershell/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [1С — о разделе](/encyclopedia/5-languages/5-27-1s/intro).
+
+{/* /sidebar-collections */}
+
+---

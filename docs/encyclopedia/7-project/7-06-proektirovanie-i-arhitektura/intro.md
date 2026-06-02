@@ -51,7 +51,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 <div class="callout callout--tip">
   <div class="callout-title">Как читать раздел</div>
 
@@ -61,7 +60,6 @@ import DocCardList from '@theme/DocCardList';
   в конце — связи с соседними разделами и подборка "Архитектура и проектирование ПО".
 </div>
   </div>
-
 
 ---
 
@@ -99,7 +97,6 @@ import DocCardList from '@theme/DocCardList';
   сравните с [модульным монолитом](design/2126.md) и [таблицей trade-off](design/2141.md).
 </div>
   </div>
-
 
 ---
 
@@ -155,11 +152,9 @@ CAP/PACELC — [распределённые системы](design/21.md), вы
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Архитектура и проектирование ПО** — [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Проектирование — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117).
-
-Ключевые материалы этого раздела по теме запроса: [Доменная модель](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114), [Типы классов в DDD](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141), [Системный подход](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/116), [Имитационное моделирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161). Для .NET: [чистая архитектура — теория](design/2132.md), [Clean Architecture на ASP.NET Core](design/2143.md).
 
 {/* /sidebar-collections */}
 

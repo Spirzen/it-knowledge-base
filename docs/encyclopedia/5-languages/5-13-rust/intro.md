@@ -125,20 +125,6 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 <DocCardList />
 
-{/* sidebar-collections */}
-
----
-
-## В подборках
-
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
-
-**Системное программирование** — [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
-
-**Бэкенд и серверная разработка** — [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro).
-
-{/* /sidebar-collections */}
-
 ---
 
 {/* http-basics-link  */}
@@ -150,4 +136,18 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 </div>
   </div>
 
+{/* sidebar-collections */}
 
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Системное программирование** — [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
+
+**Бэкенд и серверная разработка** — [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro).
+
+{/* /sidebar-collections */}
+
+---

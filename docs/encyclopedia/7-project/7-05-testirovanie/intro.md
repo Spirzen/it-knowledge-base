@@ -48,7 +48,6 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 </div>
   </div>
 
-
 <TestingSectionHub />
 
 ---
@@ -147,7 +146,6 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 </div>
   </div>
 
-
 <div class="callout callout--info">
   <div class="callout-title">Смежные разделы</div>
 
@@ -160,7 +158,6 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
   - Курс "экономика производства ПО" (COCOMO, ISO 25010, приёмка): [7-13](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)
 </div>
   </div>
-
 
 ---
 
@@ -197,16 +194,16 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 
 <DocCardList />
 
----
-
 {/* sidebar-collections */}
 
 ---
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Тестирование ПО** — [Основы бизнеса для IT-специалиста](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112), [Программные платформы](/encyclopedia/2-system-network/2-02-platformy/3), [Корпоративное ПО](/encyclopedia/2-system-network/2-02-platformy/3001), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002), [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
 
 {/* /sidebar-collections */}
+
+---

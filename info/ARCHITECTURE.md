@@ -240,7 +240,7 @@ flowchart TB
   subgraph nav [Навигация]
     Sidebars[sidebars.js - docsSidebar]
     CatJSON["_category_.json - ~195 файлов"]
-    Coll[src/data/sidebarCollections.js - Подборки вручную]
+    Coll[src/data/sidebarCollections.js - маршруты подборок]
   end
 
   subgraph url [URL]
@@ -250,7 +250,7 @@ flowchart TB
 
   Enc --> CatJSON
   docsTree --> Sidebars
-  Coll --> Sidebars
+  Coll --> Home[Главная и /about/collections]
   Sidebars --> Route
   CatJSON --> SectionSlug
 ```
@@ -340,7 +340,7 @@ flowchart TD
 | `Root` | `DocSidebarFallbackProvider` |
 | `DocItem/Layout` | PDF, SeeAlso, Related, прогресс главы, кликабельные HTML-теги |
 | `DocSidebar/Desktop/Content` | Фильтр пунктов sidebar, ресайз ширины |
-| `DocSidebarItem/Category` | Подборки, коллекции |
+| `DocSidebarItem/Category` | Категории sidebar (стандартное поведение) |
 | `Navbar/Layout`, `MobileSidebar` | Оболочка шапки |
 | `NavbarItem/DocSearch` | Кнопка поиска + `DocSearchModal` |
 | `DocRoot/Layout` | Обёртка страницы документации |

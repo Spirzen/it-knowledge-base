@@ -76,7 +76,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 ---
 
 ## Ветки по цели
@@ -144,7 +143,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 Примеры ориентированы на **Java 17+** (LTS). Упоминания `Date`, `Vector`, `Hashtable` — в контексте legacy и собеседований.
 
 ---
@@ -199,11 +197,11 @@ curl localhost:8080/...
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 
-**Бэкенд и серверная разработка** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro) ([PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro).
+**Бэкенд и серверная разработка** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro).
 
 {/* /sidebar-collections */}
 

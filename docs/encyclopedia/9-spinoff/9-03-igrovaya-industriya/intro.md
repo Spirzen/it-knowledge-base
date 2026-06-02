@@ -37,11 +37,11 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База для геймера** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игры, которые должен попробовать каждый](/tools/games/4).
 
-**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Практикум разработки игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Pygame — мини-игры на Python](/lab/Примеры/1132), [Minecraft — команды и datapack](/lab/Примеры/1142), [Unity C# — скрипты для новичков](/lab/Примеры/1136), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
+**Разработка видеоигр** — [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Практикум — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22).
 
 {/* /sidebar-collections */}
 

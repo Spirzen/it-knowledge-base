@@ -27,10 +27,6 @@ related:
     doc: lab/examples/1133
   - title: "Fetch / axios — типовые запросы"
     doc: lab/examples/1145
-  - title: "OpenAI / API — готовые промпты и вызовы"
-    doc: lab/examples/1149
-  - title: "Prompt engineering — библиотека промптов"
-    doc: lab/examples/1150
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -75,7 +71,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Сетевая грамотность** — [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [NAT и проброс портов](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7), [Организация домашней сети](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro).
 
@@ -85,7 +81,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Системная аналитика** — [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Техническое письмо — о разделе](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro), [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro).
 
-Также: Тестирование ПО, Инфобез, [DevOps и инфраструктура](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro).
+Также: Тестирование ПО, Инфобез, DevOps и инфраструктура.
 
 {/* /sidebar-collections */}
 

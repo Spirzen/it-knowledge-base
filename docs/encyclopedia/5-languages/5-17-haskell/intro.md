@@ -100,18 +100,6 @@ Haskell относится к семейству **ML**; непосредств�
 
 <DocCardList />
 
-{/* sidebar-collections */}
-
----
-
-## В подборках
-
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
-
-**Бэкенд и серверная разработка** — [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro).
-
-{/* /sidebar-collections */}
-
 ---
 
 ### Учебные материалы (вне раздела)
@@ -128,5 +116,17 @@ Haskell относится к семейству **ML**; непосредств�
 - Для первого рабочего запуска: [Первая программа на Haskell](/encyclopedia/5-languages/5-17-haskell/7).
 - Для понимания парадигмы и мышления через функции: [Основы функционального программирования на Haskell](/encyclopedia/5-languages/5-17-haskell/2).
 - Для перехода к практике: [Простые приложения на Haskell](/encyclopedia/5-languages/5-17-haskell/103).
+
+{/* sidebar-collections */}
+
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro).
+
+{/* /sidebar-collections */}
 
 ---

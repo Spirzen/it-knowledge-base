@@ -100,7 +100,7 @@ PHP выполняется **на сервере**: браузер получа�
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Веб-разработка** — [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [ASP.NET - веб-платформа Microsoft](/encyclopedia/5-languages/5-04-platforma-dotnet/172), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [Веб-разработка и API на C#](/encyclopedia/5-languages/5-05-csharp/45).
 

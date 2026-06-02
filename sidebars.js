@@ -1,9 +1,4 @@
 // sidebars.js
-import {
-  sidebarCollectionCategories,
-  SIDEBAR_COLLECTION_CATEGORY_PROPS,
-} from './src/data/sidebarCollections.js';
-
 const sidebars = {
   docsSidebar: [
     {
@@ -12,6 +7,7 @@ const sidebars = {
       link: { type: 'doc', id: 'about/project' },
       items: [
         'about/project',
+        'about/collections',
         'about/interactive',
         'about/author',
         'about/license',
@@ -28,13 +24,6 @@ const sidebars = {
           dirName: 'encyclopedia',
         },
       ],
-    },
-    {
-      type: 'category',
-      label: 'Подборки',
-      collapsed: true,
-      customProps: SIDEBAR_COLLECTION_CATEGORY_PROPS,
-      items: sidebarCollectionCategories,
     },
     {
       type: 'category',

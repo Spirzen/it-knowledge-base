@@ -138,7 +138,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro).
 

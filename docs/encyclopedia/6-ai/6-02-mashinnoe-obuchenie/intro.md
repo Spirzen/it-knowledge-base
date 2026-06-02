@@ -27,14 +27,6 @@ related:
     doc: encyclopedia/5-languages/5-02-python/333
   - title: "Введение в ИИ — о разделе"
     doc: encyclopedia/6-ai/6-01-vvedenie-v-ii/intro
-  - title: "Нейросети — о разделе"
-    doc: encyclopedia/6-ai/6-03-neyroseti/intro
-  - title: "Модели и инструменты — о разделе"
-    doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro
-  - title: "Разработка ИИ — о разделе"
-    doc: encyclopedia/6-ai/6-05-razrabotka-ii/intro
-  - title: "Prompt engineering — библиотека промптов"
-    doc: lab/examples/1150
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -55,9 +47,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Нейросети и ИИ** — [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Prompt engineering — библиотека](/lab/Примеры/1150).
+**Нейросети и ИИ** — [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812).
 
 {/* /sidebar-collections */}
 

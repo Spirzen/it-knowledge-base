@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import {
   COLLECTION_GROUPS,
+  COLLECTIONS_PAGE_PATH,
   SIDEBAR_COLLECTIONS,
   articlesCountLabel,
   collectionEntryPath,
@@ -133,23 +134,27 @@ function CollectionGroup({group, collections, articleLists}) {
   );
 }
 
-export default function GettingStartedPaths() {
+export default function GettingStartedPaths({variant = 'home'}) {
   const articleLists = useCollectionArticleLists();
+  const isHub = variant === 'hub';
 
   return (
     <section
-      className={styles.section}
-      aria-labelledby="getting-started-title">
-      <div className="container">
-        <div className={styles.header}>
-          <Heading as="h2" className={styles.title} id="getting-started-title">
-            С чего начать?
-          </Heading>
-          <p className={styles.subtitle}>
-            Подборки из бокового меню — нажмите на маршрут, чтобы увидеть статьи,
-            и переходите к нужной одним кликом. Порядок как в сайдбаре.
-          </p>
-        </div>
+      className={clsx(styles.section, isHub && styles.sectionEmbedded)}
+      aria-labelledby={isHub ? undefined : 'getting-started-title'}>
+      <div className={isHub ? undefined : 'container'}>
+        {!isHub && (
+          <div className={styles.header}>
+            <Heading as="h2" className={styles.title} id="getting-started-title">
+              С чего начать?
+            </Heading>
+            <p className={styles.subtitle}>
+              Тематические маршруты по IT — раскройте подборку, чтобы увидеть
+              статьи, и переходите к нужной одним кликом.{' '}
+              <Link to={COLLECTIONS_PAGE_PATH}>Полный каталог подборок</Link>.
+            </p>
+          </div>
+        )}
 
         <div className={styles.groups}>
           {COLLECTION_GROUPS.map((group) => {

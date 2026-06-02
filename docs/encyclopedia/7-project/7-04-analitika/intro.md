@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/2-system-network/2-02-platformy/3001
   - title: "Внедрение ERP — о разделе"
     doc: encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro
+  - title: "BPMN-движки Camunda и Flowable"
+    doc: encyclopedia/7-project/7-04-analitika/130
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -59,7 +61,6 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
   Старт — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) → [PostgreSQL — практическая работа](/encyclopedia/3-data-markup/3-07-sql/888); язык данных в аналитике — [1121](/encyclopedia/7-project/7-04-analitika/1121).
 </div>
   </div>
-
 
 ---
 
@@ -117,9 +118,9 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Системная аналитика** — [Основы анализа требований](/encyclopedia/7-project/7-04-analitika/111), [Программные платформы](/encyclopedia/2-system-network/2-02-platformy/3), [Основы бизнеса для IT-специалиста](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112), [Корпоративное ПО](/encyclopedia/2-system-network/2-02-platformy/3001), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002), [Основы архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112).
+**Системная аналитика** — [Основы анализа требований](/encyclopedia/7-project/7-04-analitika/111), [BPMN-движки Camunda и Flowable](/encyclopedia/7-project/7-04-analitika/130), [Основы бизнеса для IT-специалиста](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112), [Программные платформы](/encyclopedia/2-system-network/2-02-platformy/3), [Корпоративное ПО](/encyclopedia/2-system-network/2-02-platformy/3001), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002).
 
 {/* /sidebar-collections */}
 

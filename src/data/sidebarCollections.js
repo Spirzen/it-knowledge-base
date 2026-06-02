@@ -1,7 +1,10 @@
 /**
- * Подборки из docsSidebar → "Подборки".
- * Используются на главной и в sidebars.js — при изменении правьте только здесь.
+ * Тематические подборки (маршруты по статьям).
+ * Используются на главной, на /about/collections и в блоках «В подборках» в статьях.
  */
+
+/** Страница-каталог всех подборок */
+export const COLLECTIONS_PAGE_PATH = '/about/collections';
 
 /** @typedef {'literacy' | 'dev' | 'data' | 'ops' | 'other'} CollectionGroup */
 
@@ -564,22 +567,6 @@ export const COLLECTION_GROUPS = [
   {id: 'ops', title: 'Инженерия и качество'},
   {id: 'other', title: 'Темы и углубление'},
 ];
-
-/** customProps для категорий подборок — не раскрывать при открытой статье */
-export const SIDEBAR_COLLECTION_CATEGORY_PROPS = {
-  sidebarCollection: true,
-};
-
-/** Пункты для sidebars.js */
-export const sidebarCollectionCategories = SIDEBAR_COLLECTIONS.map(
-  ({label, items}) => ({
-    type: 'category',
-    label,
-    collapsed: true,
-    customProps: SIDEBAR_COLLECTION_CATEGORY_PROPS,
-    items,
-  }),
-);
 
 /** doc id → URL пути сайта */
 export function collectionEntryPath(docId) {

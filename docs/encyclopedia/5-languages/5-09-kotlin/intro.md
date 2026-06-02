@@ -97,7 +97,6 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-
 ---
 
 ## Базовый маршрут (язык, ~2–3 недели)
@@ -170,7 +169,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro).
 

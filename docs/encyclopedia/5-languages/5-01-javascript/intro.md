@@ -27,18 +27,6 @@ related:
     doc: lab/examples/1114
   - title: "SVG — рисунки кодом"
     doc: lab/examples/1119
-  - title: "CSS-анимации — готовые эффекты"
-    doc: lab/examples/1116
-  - title: "HTML + CSS — готовые макеты"
-    doc: lab/examples/110
-  - title: "HTML-страницы целиком"
-    doc: lab/examples/1153
-  - title: "Fetch / axios — типовые запросы"
-    doc: lab/examples/1145
-  - title: "React — компоненты-рецепты"
-    doc: lab/examples/1146
-  - title: "curl / fetch — API-запросы"
-    doc: lab/examples/1133
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -218,13 +206,13 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294).
 
 **Веб-разработка** — [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [ASP.NET - веб-платформа Microsoft](/encyclopedia/5-languages/5-04-platforma-dotnet/172).
 
-**Бэкенд и серверная разработка** — [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro) ([SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro).
+**Бэкенд и серверная разработка** — [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro).
 
 {/* /sidebar-collections */}
 

@@ -93,18 +93,6 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 <DocCardList />
 
-{/* sidebar-collections */}
-
----
-
-## В подборках
-
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
-
-**Бэкенд и серверная разработка** — [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro).
-
-{/* /sidebar-collections */}
-
 ---
 
 {/* http-basics-link  */}
@@ -116,4 +104,16 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 </div>
   </div>
 
+{/* sidebar-collections */}
 
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Бэкенд и серверная разработка** — [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro).
+
+{/* /sidebar-collections */}
+
+---

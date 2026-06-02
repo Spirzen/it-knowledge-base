@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **История** — [История развития сетевых технологий](/encyclopedia/2-system-network/2-03-set-i-internet/2), [История развития структур данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/11), [История развития NoSQL-систем](/encyclopedia/3-data-markup/3-06-nosql/1), [История языка JavaScript](/encyclopedia/5-languages/5-01-javascript/11), [История языка Python](/encyclopedia/5-languages/5-02-python/14), [История языка Java](/encyclopedia/5-languages/5-03-java/11).
 

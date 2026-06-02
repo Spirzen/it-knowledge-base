@@ -21,8 +21,6 @@ related:
     doc: lab/examples/1141
   - title: "Unity C# — скрипты для новичков"
     doc: lab/examples/1136
-  - title: "Roblox / Luau — скрипты"
-    doc: lab/examples/1141
   - title: "Практикум разработки игр — о разделе"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Игроведение — о разделе"
@@ -193,9 +191,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Разработка видеоигр** — [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Практикум разработки игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Pygame — мини-игры на Python](/lab/Примеры/1132), [Minecraft — команды и datapack](/lab/Примеры/1142), [Unity C# — скрипты для новичков](/lab/Примеры/1136), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), [Разработка игр с использованием C++](/encyclopedia/5-languages/5-06-cpp/22).
+**Разработка видеоигр** — [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Практикум — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Компьютерные игры — о разделе](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22).
 
 {/* /sidebar-collections */}
 

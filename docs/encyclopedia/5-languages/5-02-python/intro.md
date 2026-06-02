@@ -27,30 +27,6 @@ related:
     doc: lab/examples/1132
   - title: "Tkinter — окна и виджеты"
     doc: lab/examples/1124
-  - title: "Алгоритмы на Python — ЕГЭ и олимпиадка"
-    doc: lab/examples/1122
-  - title: "Python — работа с файлами и текстом"
-    doc: lab/examples/1126
-  - title: "Regex — готовые паттерны"
-    doc: lab/examples/615
-  - title: "NumPy — массивы и матрицы"
-    doc: lab/examples/1129
-  - title: "Pandas — типовые операции"
-    doc: lab/examples/1113
-  - title: "Excel и Google Sheets — формулы"
-    doc: lab/examples/1139
-  - title: "Matplotlib — графики (примеры)"
-    doc: lab/examples/1112
-  - title: "LaTeX — формулы для отчётов"
-    doc: lab/examples/1137
-  - title: "SymPy — уравнения и производные"
-    doc: lab/examples/1118
-  - title: "Примеры фигур Turtle на Python"
-    doc: lab/examples/111
-  - title: "Примеры фигур на Processing/p5.js"
-    doc: lab/examples/1114
-  - title: "SVG — рисунки кодом"
-    doc: lab/examples/1119
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -163,13 +139,13 @@ Python удобен для **первого языка**: читается по�
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 
 **Веб-разработка** — [Приложение с S3, PostgreSQL и ASP.NET Core Web API](/encyclopedia/5-languages/5-05-csharp/453), [Веб-разработка и REST API на Python](/encyclopedia/5-languages/5-02-python/34), [Документация и практика ASP.NET (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/455), [Социальные сети](/encyclopedia/2-system-network/2-02-platformy/311), [ASP.NET - фреймворк для веб-приложений](/encyclopedia/5-languages/5-05-csharp/451), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1).
 
-**Бэкенд и серверная разработка** — [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro) ([PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro).
+**Бэкенд и серверная разработка** — [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro).
 
 {/* /sidebar-collections */}
 

@@ -40,49 +40,29 @@ import type {
 } from '@docusaurus/plugin-content-docs';
 import styles from './styles.module.css';
 
-function isSidebarCollectionCategory(item: Props['item']): boolean {
-  return Boolean(
-    item.customProps?.sidebarCollection === true ||
-      item.customProps?.sidebarCollection === 'true',
-  );
-}
-
 // If we navigate to a category and it becomes active, it should automatically
-// expand itself (except sidebar collections — see isSidebarCollectionCategory).
+// expand itself
 function useAutoExpandActiveCategory({
   isActive,
   collapsed,
   updateCollapsed,
   activePath,
-  disabled,
 }: {
   isActive: boolean;
   collapsed: boolean;
   updateCollapsed: (b: boolean) => void;
   activePath: string;
-  disabled?: boolean;
 }) {
   const wasActive = usePrevious(isActive);
   const previousActivePath = usePrevious(activePath);
   useEffect(() => {
-    if (disabled) {
-      return;
-    }
     const justBecameActive = isActive && !wasActive;
     const stillActiveButPathChanged =
       isActive && wasActive && activePath !== previousActivePath;
     if ((justBecameActive || stillActiveButPathChanged) && collapsed) {
       updateCollapsed(false);
     }
-  }, [
-    disabled,
-    isActive,
-    wasActive,
-    collapsed,
-    updateCollapsed,
-    activePath,
-    previousActivePath,
-  ]);
+  }, [isActive, wasActive, collapsed, updateCollapsed, activePath, previousActivePath]);
 }
 
 /**
@@ -206,7 +186,6 @@ function DocSidebarItemCategoryCollapsible({
   ...props
 }: Props): ReactNode {
   const {items, label, collapsible, className, href} = item;
-  const keepCollapsedOnActive = isSidebarCollectionCategory(item);
   const {
     docs: {
       sidebar: {autoCollapseCategories},
@@ -223,9 +202,6 @@ function DocSidebarItemCategoryCollapsible({
     initialState: () => {
       if (!collapsible) {
         return false;
-      }
-      if (keepCollapsedOnActive) {
-        return item.collapsed ?? true;
       }
       return isActive ? false : item.collapsed;
     },
@@ -244,7 +220,6 @@ function DocSidebarItemCategoryCollapsible({
     collapsed,
     updateCollapsed,
     activePath,
-    disabled: keepCollapsedOnActive,
   });
   useEffect(() => {
     if (
@@ -268,7 +243,7 @@ function DocSidebarItemCategoryCollapsible({
         if (isCurrentPage) {
           e.preventDefault();
           updateCollapsed();
-        } else if (!keepCollapsedOnActive) {
+        } else {
           // When navigating to a new category, we always expand
           // see https://github.com/facebook/docusaurus/issues/10854#issuecomment-2609616182
           updateCollapsed(false);

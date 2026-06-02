@@ -27,14 +27,6 @@ related:
     doc: lab/examples/1145
   - title: "GitHub Actions — CI/CD рецепты"
     doc: lab/examples/1134
-  - title: "Bash — однострочники и скрипты"
-    doc: lab/examples/1151
-  - title: "Поиск текста в файлах — grep, findstr и Select-String"
-    doc: encyclopedia/2-system-network/2-05-terminal/104
-  - title: "Nginx — конфиги под задачу"
-    doc: lab/examples/11112
-  - title: "Dockerfile — 10 типовых образов"
-    doc: lab/examples/11113
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -53,7 +45,6 @@ import DocCardList from '@theme/DocCardList';
 2. [Что такое терминал](/encyclopedia/2-system-network/2-05-terminal/1) — терминал vs оболочка, CMD, PowerShell, Bash, потоки ввода-вывода.
 3. [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — стоп-лист перед `rm`, pipe в bash и командами от ИИ-агента.
 4. [Знаки препинания в командной строке](/encyclopedia/2-system-network/2-05-terminal/11) — `|`, `>`, `&&`, кавычки, переменные; [напоминалка по скобкам Bash](/encyclopedia/2-system-network/2-05-terminal/11#napominalka-bash) — `()`, `{}`, `$()`, `[[ ]]`.
-
 
 **Продакшен-автоматизация (Windows):** [124](/encyclopedia/5-languages/5-26-powershell/124) → [125](/encyclopedia/5-languages/5-26-powershell/125) → [126](/encyclopedia/5-languages/5-26-powershell/126) → [127](/encyclopedia/5-languages/5-26-powershell/127) → [128](/encyclopedia/5-languages/5-26-powershell/128) → [112](/encyclopedia/2-system-network/2-05-terminal/112) → [111](/encyclopedia/5-languages/5-26-powershell/111).
 
@@ -92,7 +83,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Текст — о разделе](/encyclopedia/1-basics/1-15-tekst/intro), [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro).
 

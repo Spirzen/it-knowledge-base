@@ -181,20 +181,6 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 
 <DocCardList />
 
-{/* sidebar-collections */}
-
----
-
-## В подборках
-
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
-
-**Веб-разработка** — [ASP.NET - веб-платформа Microsoft](/encyclopedia/5-languages/5-04-platforma-dotnet/172), [Веб-разработка и API на C#](/encyclopedia/5-languages/5-05-csharp/45), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [ASP.NET - фреймворк для веб-приложений](/encyclopedia/5-languages/5-05-csharp/451), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Документация и практика ASP.NET (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/455).
-
-**Бэкенд и серверная разработка** — [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro).
-
-{/* /sidebar-collections */}
-
 ---
 
 {/* http-basics-link  */}
@@ -206,4 +192,18 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 </div>
   </div>
 
+{/* sidebar-collections */}
 
+---
+
+## В подборках
+
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+
+**Веб-разработка** — [ASP.NET - веб-платформа Microsoft](/encyclopedia/5-languages/5-04-platforma-dotnet/172), [Веб-разработка и API на C#](/encyclopedia/5-languages/5-05-csharp/45), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [ASP.NET - фреймворк для веб-приложений](/encyclopedia/5-languages/5-05-csharp/451), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Документация и практика ASP.NET (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/455).
+
+**Бэкенд и серверная разработка** — [Платформа .NET — о разделе](/encyclopedia/5-languages/5-04-platforma-dotnet/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro).
+
+{/* /sidebar-collections */}
+
+---

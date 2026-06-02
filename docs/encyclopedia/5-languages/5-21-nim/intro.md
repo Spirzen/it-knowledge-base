@@ -85,7 +85,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в тематические маршруты из меню **Подборки** и блока "С чего начать?" на главной. Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [Dart — о разделе](/encyclopedia/5-languages/5-22-dart/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro).
 
