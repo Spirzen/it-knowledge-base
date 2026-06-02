@@ -19,6 +19,8 @@ related:
     doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1
   - title: "Терминал — о разделе"
     doc: encyclopedia/2-system-network/2-05-terminal/intro
+  - title: "Управление службами в Windows"
+    doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -94,6 +96,7 @@ import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 - [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) — железо, RAM, MMU в контексте машины  
 - [Терминал](/encyclopedia/2-system-network/2-05-terminal/intro) — команды для работы с ОС  
 - [Системное администрирование](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1)  
+- [Управление службами в Windows](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64)  
 - [Асинхронность в коде](/encyclopedia/4-code-dev/4-05-asinhronnost/intro) — не путать с планировщиком ОС, но те же идеи блокировок  
 
 ---

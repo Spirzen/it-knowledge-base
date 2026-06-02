@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайдбар 04 — Карточки разделов · Вселенная IT</title>
+  <link rel="stylesheet" href="base.css" />
+  <style>
+  .theme-doc-sidebar-menu > .menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.25rem !important;
+  }
+
+  .theme-doc-sidebar-menu > .menu__list > .menu__list-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 0.35rem 0.35rem 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  }
+
+  .menu__list-item-collapsible {
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .menu__link--sublist {
+    font-weight: 700 !important;
+    font-size: 0.82rem !important;
+    border-radius: 8px !important;
+    background: linear-gradient(90deg, rgba(123, 104, 238, 0.1), transparent) !important;
+    margin-bottom: 0.15rem;
+  }
+
+  .theme-doc-sidebar-item-category .menu__list {
+    border-left: none !important;
+    padding-left: 0.25rem !important;
+    margin: 0 !important;
+    background: none !important;
+  }
+
+  .theme-doc-sidebar-item-category .menu__link:not(.menu__link--sublist) {
+    font-size: 0.84rem !important;
+    padding: 0.35rem 0.5rem !important;
+    margin: 0.1rem 0;
+    border-radius: 6px !important;
+  }
+
+  .menu__link--active {
+    background: var(--primary) !important;
+    color: #fff !important;
+    animation: none !important;
+    box-shadow: 0 2px 8px rgba(123, 104, 238, 0.35) !important;
+  }
+
+  .menu__list-item--collapsed {
+    opacity: 0.85;
+  }
+
+  nav.menu > .sidebar-tools {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin: 0 0.15rem 0.5rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar-quick-filters button {
+    font-weight: 500;
+  }
+  </style>
+</head>
+<body>
+  <p class="mock-nav-hub"><a href="index.html">← все макеты</a></p>
+  <span class="mock-badge">04 · Карточки разделов<br />блоки-главы</span>
+  <p class="mock-note">Каждая <code>theme-doc-sidebar-item-category</code> визуально отделена. Чуть больше вертикального места — ок для энциклопедии.</p>
+
+  <header class="navbar">
+    <a class="navbar__brand" href="#">Вселенная IT</a>
+    <div class="navbar__items"><a href="#">Энциклопедия</a></div>
+    <input class="navbar__search" type="search" placeholder="Поиск…" />
+  </header>
+
+  <div class="docRoot">
+    <aside class="theme-doc-sidebar-container">
+      <div class="theme-doc-sidebar-container-inner">
+        <nav class="menu thin-scrollbar theme-doc-sidebar-menu" aria-label="Docs sidebar">
+          <div class="sidebar-tools">
+            <input type="search" placeholder="Фильтр по категориям..." />
+            <div class="sidebar-quick-filters">
+              <button type="button">Языки</button>
+              <button type="button" class="is-active">Сеть</button>
+            </div>
+          </div>
+          <ul class="menu__list theme-doc-sidebar-menu">
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">1. Основы</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">Введение</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Дорожная карта</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">2. Система и сеть</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">Терминал</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">5. Языки</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main class="docMainContainer">
+      <article class="doc-article-card">
+        <h1>Терминал</h1>
+        <p>Разделы энциклопедии читаются как «главы в карточках». Активная статья — заливка primary (можно смягчить до рейки из макета 01).</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro
   - title: Терминал
     doc: encyclopedia/2-system-network/2-05-terminal/intro
+  - title: "Поиск текста в файлах — grep, findstr и Select-String"
+    doc: encyclopedia/2-system-network/2-05-terminal/104
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -44,7 +46,8 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 | Глава | Содержание |
 | :--- | :--- |
 | [Обзор стека](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1) | Какие категории софта нужны power user |
-| [Файлы и система](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/2) | Total Commander, Everything, анализ диска |
+| [Файлы и система](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/2) | Total Commander, Everything, FileSeek, анализ диска |
+| [Поиск текста в файлах](/encyclopedia/2-system-network/2-05-terminal/104) | Ctrl+F, VS Code, `grep`, Windows и macOS |
 | [Редакторы и разработка](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/3) | VS Code, Vim, Notepad++ |
 | [Графика и 3D](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4) | GIMP, Blender, профессиональные пакеты |
 | [Сеть и диагностика](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/5) | Wireshark, ping, мониторинг |

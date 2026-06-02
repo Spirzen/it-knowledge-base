@@ -274,9 +274,12 @@ theme: { customCss: './src/css/custom.css' },
 
 ---
 
-### 4.4. Плагин `demo-chunk-splitting`
+### 4.4. Чанки демо
 
-Кастомный webpack-плагин: на клиенте выносит `src/components/` в chunk `demo-widgets` (`splitChunks`, `minSize: 20000`, `priority: 25`) — уменьшает начальный бандл страниц без демо.
+- Плагин `demo-chunk-splitting` (единый sync-чанк `demo-widgets.js`) **удалён**.
+- Remark `lazyMdxDemoImports` переводит `import … from '@site/src/components/…'` в MDX в `lazyDemoInView(() => import(…))` — chunk грузится при прокрутке к блоку.
+- Webpack `it-demo-async-chunks`: async-куски из `src/components/`, `maxSize` ~180 KB, **без** имени `demo-widgets`.
+- Оболочка статей — `lazyDemo()` в `DocItem/Layout`.
 
 ---
 
@@ -416,7 +419,7 @@ import TerminalEmulator from '@site/src/components/TerminalEmulator.js';
 ### 7.1. Порядок инициализации (от конфига к странице)
 
 1. **`docusaurus.config.js`** — preset, `customCss`, plugins, themes.
-2. **`src/css/custom.css`** — глобальные переменные IFM, типографика, теги, таблицы; `@import './demo-widgets.css'`.
+2. **`src/css/custom.css`** — глобальные переменные IFM, типографика, теги, таблицы; `@import './it-demo-shell.css'`.
 3. **Swizzle `@theme/DocItem/Layout`** — обёртка каждой статьи.
 4. **Swizzle `@theme/DocSidebar/Desktop/Content`** — поиск/фильтр по sidebar.
 5. **`src/pages/index.js`** — главная (`@theme/Layout` + hero + карточки разделов).
@@ -589,7 +592,7 @@ MDX import
 | Файл | Область |
 |------|---------|
 | `src/css/custom.css` | Глобальная тема Docusaurus (IFM variables), статьи, теги, таблицы, hero, PDF |
-| `src/css/demo-widgets.css` | Классы `.it-demo*` для React-демо |
+| `src/css/it-demo-shell.css` | Классы `.it-demo*` для React-демо (раньше `demo-widgets.css`) |
 | `src/theme/DocItem/Layout/styles.module.css` | Прогресс главы, колонки, кликабельные теги |
 | `src/theme/DocSidebar/Desktop/Content/styles.module.css` | Поле поиска в sidebar |
 | `src/components/ArticleSeeAlso.module.css` | Блок "См. также" |

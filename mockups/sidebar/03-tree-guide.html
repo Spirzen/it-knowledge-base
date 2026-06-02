@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайдбар 03 — Дерево-гид · Вселенная IT</title>
+  <link rel="stylesheet" href="base.css" />
+  <style>
+  .theme-doc-sidebar-container {
+    --tree-line: #c8cce0;
+    --tree-dot: #7b68ee;
+  }
+
+  .theme-doc-sidebar-menu > .menu__list > .menu__list-item {
+    position: relative;
+    padding-left: 0.15rem;
+  }
+
+  .menu__list-item-collapsible {
+    border: none !important;
+  }
+
+  .menu__link--sublist {
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+    padding-left: 1.1rem !important;
+    position: relative;
+  }
+
+  .menu__link--sublist::before {
+    content: '';
+    position: absolute;
+    left: 0.15rem;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -4px;
+    border-radius: 50%;
+    background: var(--tree-dot);
+    box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.2);
+  }
+
+  .theme-doc-sidebar-item-category .menu__list {
+    position: relative;
+    margin-left: 0.85rem !important;
+    padding-left: 0.85rem !important;
+    border-left: 2px solid var(--tree-line) !important;
+    background: none !important;
+  }
+
+  .theme-doc-sidebar-item-category .menu__list .menu__list-item {
+    position: relative;
+  }
+
+  .theme-doc-sidebar-item-category .menu__list .menu__list-item::before {
+    content: '';
+    position: absolute;
+    left: -0.85rem;
+    top: 50%;
+    width: 0.65rem;
+    height: 2px;
+    background: var(--tree-line);
+  }
+
+  .theme-doc-sidebar-item-category .menu__list .menu__link {
+    font-size: 0.86rem !important;
+    padding-left: 0.35rem !important;
+    border-radius: 6px !important;
+  }
+
+  .menu__link--active {
+    background: #f0f0ff !important;
+    color: var(--primary) !important;
+    font-weight: 600;
+    animation: none !important;
+    box-shadow: none !important;
+  }
+
+  .menu__link--active::after {
+    content: '';
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    border-radius: 50%;
+    background: var(--primary);
+  }
+
+  .theme-doc-sidebar-item-category .menu__list .menu__link {
+    position: relative;
+  }
+
+  nav.menu > .sidebar-tools input[type="search"] {
+    border-radius: 999px;
+    padding-left: 1rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%235a6c7d' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242 1.1a5 5 0 1 1 0-10 5 5 0 0 1 0 10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 0.55rem center;
+  }
+  </style>
+</head>
+<body>
+  <p class="mock-nav-hub"><a href="index.html">← все макеты</a></p>
+  <span class="mock-badge">03 · Дерево-гид<br />линии и точки</span>
+  <p class="mock-note">Удобно при глубокой вложенности. Псевдоэлементы на <code>.menu__list .menu__list</code> — разметка не меняется.</p>
+
+  <header class="navbar">
+    <a class="navbar__brand" href="#">Вселенная IT</a>
+    <div class="navbar__items"><a href="#">Энциклопедия</a></div>
+    <input class="navbar__search" type="search" placeholder="Поиск…" />
+  </header>
+
+  <div class="docRoot">
+    <aside class="theme-doc-sidebar-container">
+      <div class="theme-doc-sidebar-container-inner">
+        <nav class="menu thin-scrollbar theme-doc-sidebar-menu" aria-label="Docs sidebar">
+          <div class="sidebar-tools">
+            <input type="search" placeholder="Фильтр по категориям..." />
+            <div class="sidebar-quick-filters">
+              <button type="button" class="is-active">Сеть</button>
+              <button type="button">Языки</button>
+            </div>
+          </div>
+          <ul class="menu__list theme-doc-sidebar-menu">
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">1. Основы</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">Введение</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Дорожная карта</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">2. Система и сеть</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">ОС</a></li>
+                <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">Терминал</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Сисадмин</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">5. Языки</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main class="docMainContainer">
+      <article class="doc-article-card">
+        <h1>Терминал</h1>
+        <p>Визуальное «дерево»: разделы — узлы с точкой, статьи — ветки с горизонтальными соединителями. Помогает не теряться в длинном оглавлении.</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

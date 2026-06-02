@@ -353,23 +353,23 @@
   "encyclopedia/5-languages/5-01-javascript/251": {
     "title": "Справочник по JavaScript"
   },
-  "encyclopedia/5-languages/5-01-javascript/261": {
+  "encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/261": {
     "title": "Справочник по Node"
   },
-  "encyclopedia/5-languages/5-01-javascript/271": {
+  "encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/271": {
     "title": "Справочник по React"
   },
-  "encyclopedia/5-languages/5-01-javascript/281": {
+  "encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/281": {
     "title": "Справочник по Vue.js"
   },
-  "encyclopedia/5-languages/5-01-javascript/291": {
+  "encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/291": {
     "title": "Справочник по Angular"
+  },
+  "encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/311": {
+    "title": "Справочник по Ext JS"
   },
   "encyclopedia/5-languages/5-01-javascript/301": {
     "title": "Справочник по TypeScript"
-  },
-  "encyclopedia/5-languages/5-01-javascript/311": {
-    "title": "Справочник по Ext JS"
   },
   "encyclopedia/5-languages/5-01-javascript/intro": {
     "title": "JavaScript — о разделе"

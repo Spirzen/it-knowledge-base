@@ -9,6 +9,7 @@ import {
   createStructuredLog,
   levelMeetsMin,
 } from './shared/observabilityEngine';
+import {useTerminalBodyScroll} from './shared/useTerminalBodyScroll';
 import styles from './LogExplorerDemo.module.css';
 
 const LEVEL_STYLE = {
@@ -29,7 +30,7 @@ function LogExplorerDemoInner() {
   const [selectedId, setSelectedId] = useState(null);
   const [streaming, setStreaming] = useState(false);
   const streamRef = useRef(null);
-  const endRef = useRef(null);
+  const streamScrollRef = useRef(null);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -56,9 +57,7 @@ function LogExplorerDemoInner() {
     return () => clearInterval(streamRef.current);
   }, [streaming, pushLog]);
 
-  useEffect(() => {
-    endRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [filtered.length]);
+  useTerminalBodyScroll(streamScrollRef, [filtered.length]);
 
   const counts = useMemo(() => {
     const c = {};
@@ -130,7 +129,7 @@ function LogExplorerDemoInner() {
           </button>
         </div>
 
-        <div className={styles.stream}>
+        <div ref={streamScrollRef} className={styles.stream}>
           {filtered.map((l) => (
             <div
               key={l.id}
@@ -147,7 +146,6 @@ function LogExplorerDemoInner() {
               <span className={styles.msg}>{l.message}</span>
             </div>
           ))}
-          <div ref={endRef} />
         </div>
 
         {selected && jsonView && (

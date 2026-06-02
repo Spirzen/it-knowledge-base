@@ -1,0 +1,32 @@
+/**
+ * Тёмная тема: лёгкий тинт сайдбара (без blur). Цвета — из --ifm-* / --d-*.
+ */
+
+html[data-theme='dark'] .theme-doc-sidebar-container {
+  background: color-mix(
+    in srgb,
+    var(--ifm-sidebar-background-color) 88%,
+    var(--ifm-color-primary) 12%
+  );
+  border-right-color: color-mix(in srgb, var(--ifm-color-primary) 22%, var(--it-explorer-border, var(--ifm-color-emphasis-200)));
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-container nav.menu .it-sidebar-tools {
+  background: color-mix(
+    in srgb,
+    var(--ifm-background-surface-color) 90%,
+    var(--ifm-color-primary) 10%
+  );
+}
+
+html[data-theme='dark'] .theme-doc-sidebar-container nav.menu .it-sidebar-tools input[type='search'] {
+  background-color: var(--ifm-background-color);
+}
+
+html[data-theme='dark'] .navbar-sidebar {
+  background: var(--ifm-sidebar-background-color);
+}
+
+html[data-theme='dark'] .navbar-sidebar nav.menu .it-sidebar-tools {
+  background: var(--ifm-background-surface-color);
+}

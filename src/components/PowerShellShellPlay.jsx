@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, {useCallback, useMemo, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
@@ -12,6 +12,7 @@ import {
   getPsLesson,
   getPsWelcomeLines,
 } from './shared/powershellShellEngine';
+import {useTerminalBodyScroll} from './shared/useTerminalBodyScroll';
 import styles from './PowerShellShellPlay.module.css';
 
 const BANNER = `Windows PowerShell
@@ -45,16 +46,14 @@ function PowerShellShellPlayInner({lesson: lessonProp = 'intro'}) {
   const [inputValue, setInputValue] = useState('');
   const [historyIndex, setHistoryIndex] = useState(-1);
   const inputRef = useRef(null);
-  const endRef = useRef(null);
+  const bodyRef = useRef(null);
 
   const progress = useMemo(
     () => evaluatePsLesson(lesson.id, state.commandHistory, state),
     [lesson.id, state],
   );
 
-  useEffect(() => {
-    endRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [lines]);
+  useTerminalBodyScroll(bodyRef, [lines]);
 
   const runCommand = useCallback(
     (raw) => {
@@ -136,7 +135,11 @@ function PowerShellShellPlayInner({lesson: lessonProp = 'intro'}) {
             <div className={styles.header}>
               <span className={styles.title}>Administrator: PowerShell</span>
             </div>
-            <div className={styles.body} onClick={() => inputRef.current?.focus()} role="presentation">
+            <div
+              ref={bodyRef}
+              className={styles.body}
+              onClick={() => inputRef.current?.focus()}
+              role="presentation">
               {lines.map((item, index) => (
                 <PsLine key={`${index}-${item.type}`} item={item} cwd={state.cwd} />
               ))}
@@ -154,7 +157,6 @@ function PowerShellShellPlayInner({lesson: lessonProp = 'intro'}) {
                   aria-label="Команда PowerShell"
                 />
               </div>
-              <div ref={endRef} />
             </div>
           </div>
         </div>

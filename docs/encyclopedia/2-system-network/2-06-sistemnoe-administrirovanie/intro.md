@@ -43,11 +43,12 @@ import DocCardList from '@theme/DocCardList';
 | 2 | [Установка и настройка ОС](./2.md) | ISO, UEFI/GPT, загрузка, переустановка |
 | 3 | [ИТ-инфраструктура](./3.md) | Железо, софт, сеть; [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya), [типы storage](/encyclopedia/2-system-network/2-10-zhelezo/121.md) |
 | 4 | [Windows Server — начало](./63.md) | Роли, отличия от клиентской Windows |
-| 5 | [Настройка серверов](./4.md) | Первый DC, AD, DNS, PowerShell |
-| 6 | [Рабочие станции](./5.md) | Подготовка ПК, ввод в домен |
-| 7 | [Сеть и диагностика](./6.md) | IP, ping, порты, DNS, NAT |
+| 5 | [Управление службами в Windows](./64.md) | Критичные службы, ручной запуск, удаление и добавление своих служб |
+| 6 | [Настройка серверов](./4.md) | Первый DC, AD, DNS, PowerShell |
+| 7 | [Рабочие станции](./5.md) | Подготовка ПК, ввод в домен |
+| 8 | [Сеть и диагностика](./6.md) | IP, ping, порты, DNS, NAT |
 
-Дальше — углубление: [планировщики](./8.md), [ошибки и логи](./9.md), [диагностика производительности Linux](./100.md), [Linux в админской практике](./93.md) (права `chmod` — [rwx и восьмеричный код](./93.md#linux-prava-rwx)), [рабочие столы GNU/Linux](./96.md), [Windows Store и «сборки»](./97.md), [жизненный цикл Windows](./95.md), [СУБД](./91.md), [мониторинг](./92.md), [практикум Zabbix](./zabbix-praktikum/intro.md), [практикум Prometheus и Grafana](./prometheus-grafana-praktikum/intro.md), [Prometheus + Grafana — запросы](/lab/Примеры/11114), [GPO](./411.md), [сетевые аномалии](./31.md), [curl для API и health-check](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Bash — однострочники и скрипты](/lab/Примеры/1151), [production-скрипты](/lab/Примеры/113), [Nginx — конфиги под задачу](/lab/Примеры/11112).
+Дальше — углубление: [планировщики](./8.md), [ошибки и логи](./9.md), [диагностика производительности Linux](./100.md), [Linux в админской практике](./93.md) (права `chmod` — [rwx и восьмеричный код](./93.md#linux-prava-rwx)), [рабочие столы GNU/Linux](./96.md), [Windows Store и «сборки»](./97.md), [жизненный цикл Windows](./95.md), [СУБД](./91.md), [мониторинг](./92.md), [практикум Zabbix](./zabbix-praktikum/intro.md), [практикум Prometheus и Grafana](./prometheus-grafana-praktikum/intro.md), [Prometheus + Grafana — запросы](/lab/Примеры/11114), [GPO](./411.md), [сетевые аномалии](./31.md), [curl для API и health-check](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Bash — однострочники и скрипты](/lab/Примеры/1151), [production-скрипты](/lab/Примеры/113), [Nginx — конфиги под задачу](/lab/Примеры/11112), [управление службами в Windows](./64.md).
 
 ---
 

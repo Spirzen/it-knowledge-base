@@ -9,6 +9,7 @@ import {
   getWelcomeLines,
   INITIAL_CWD,
 } from './shared/terminalEngine';
+import {useTerminalBodyScroll} from './shared/useTerminalBodyScroll';
 import styles from './TerminalEmulator.module.css';
 
 const BANNER = `╭─ universe-it ─────────────────────────────╮
@@ -65,15 +66,13 @@ function TerminalEmulatorInner() {
   const [tabHint, setTabHint] = useState('');
 
   const inputRef = useRef(null);
-  const endRef = useRef(null);
+  const bodyRef = useRef(null);
 
   const focusInput = useCallback(() => {
     inputRef.current?.focus();
   }, []);
 
-  useEffect(() => {
-    endRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [lines, rebooting]);
+  useTerminalBodyScroll(bodyRef, [lines, rebooting]);
 
   useEffect(() => {
     focusInput();
@@ -228,7 +227,7 @@ function TerminalEmulatorInner() {
         </span>
       </div>
 
-      <div className={styles.body} onClick={focusInput} role="presentation">
+      <div ref={bodyRef} className={styles.body} onClick={focusInput} role="presentation">
         {lines.map((item, index) => (
           <TerminalLine key={`${index}-${item.type}-${item.command ?? ''}`} item={item} cwd={cwd} />
         ))}
@@ -263,7 +262,6 @@ function TerminalEmulatorInner() {
           </div>
         )}
 
-        <div ref={endRef} />
         {rebooting && <div className={styles.rebootOverlay}>Перезагрузка…</div>}
       </div>
 

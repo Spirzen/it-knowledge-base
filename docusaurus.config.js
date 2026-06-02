@@ -75,6 +75,9 @@ function createEncyclopediaFolderRedirects(existingPath) {
 }
 
 const isWindowsDev = process.platform === 'win32' && process.env.NODE_ENV !== 'production';
+/** На Windows dev по умолчанию без Rspack faster (EMFILE). Включить: IT_DOCUSAURUS_FASTER=1 */
+const useFasterBundler =
+  process.env.IT_DOCUSAURUS_FASTER === '1' || !isWindowsDev;
 
 module.exports = {
   title: 'Вселенная IT',
@@ -116,11 +119,17 @@ module.exports = {
           showLastUpdateTime: true,
           routeBasePath: '/',
           numberPrefixParser: false,
-          remarkPlugins: [require('./src/remark/wikiLink.js')],
+          remarkPlugins: [
+            require('./src/remark/wikiLink.js'),
+            require('./src/remark/lazyMdxDemoImports.js'),
+          ],
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: [
+            './src/css/custom.css',
+            './src/css/it-design-code-overrides.css',
+          ],
         },
         gtag: undefined,
       },
@@ -210,7 +219,7 @@ module.exports = {
       },
     }),
     () => ({
-      name: 'demo-chunk-splitting',
+      name: 'it-demo-async-chunks',
       configureWebpack(_config, isServer) {
         if (isServer) {
           return {};
@@ -219,12 +228,13 @@ module.exports = {
           optimization: {
             splitChunks: {
               cacheGroups: {
-                demoWidgets: {
+                /** Только async-импорты; без фиксированного имени demo-widgets */
+                itDemoAsync: {
                   test: /[\\/]src[\\/]components[\\/]/,
-                  name: 'demo-widgets',
-                  chunks: 'all',
-                  minSize: 20000,
-                  priority: 25,
+                  chunks: 'async',
+                  minSize: 0,
+                  maxSize: 180000,
+                  priority: 15,
                   reuseExistingChunk: true,
                 },
               },
@@ -338,7 +348,6 @@ module.exports = {
   staticDirectories: ['static'],
   future: {
     v4: true,
-    // Rspack "faster" mode can trigger EMFILE on large docs trees in Windows dev sessions.
-    faster: !isWindowsDev,
+    faster: useFasterBundler,
   },
 };

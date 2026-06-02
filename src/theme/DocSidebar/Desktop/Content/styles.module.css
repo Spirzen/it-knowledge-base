@@ -19,6 +19,18 @@
   }
 }
 
+/* Fallback-вёрстка шапки, если глобальный CSS ещё не подгрузился */
+:global(.it-sidebar-panel-head) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:global(.it-sidebar-panel-title),
+:global(.it-sidebar-panel-sub) {
+  display: block;
+}
+
 .sidebarSearchWrapper {
   padding: 0.25rem 0.5rem 0.5rem;
   border-bottom: 1px solid var(--ifm-color-emphasis-200);

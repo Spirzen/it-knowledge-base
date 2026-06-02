@@ -1,0 +1,193 @@
+/**
+ * Code blocks for IT design themes — must load AFTER custom.css (see docusaurus.config.js).
+ * Overrides One Dark defaults and [data-theme='dark'] inline-code tints inside fenced blocks.
+ */
+
+/* Внутри блоков — наследовать цвет pre, не инлайн-фиолетовый из custom.css */
+pre code,
+.prism-code code,
+.theme-code-block code,
+[class*='codeBlockLines_'] code,
+pre code.language-plaintext,
+pre code[class=''],
+.prism-code code[class*='language-'],
+[class*='codeBlockLines_'] code.language-plaintext {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  white-space: inherit !important;
+}
+
+pre code:hover,
+.prism-code code:hover,
+.theme-code-block code:hover {
+  background-color: transparent !important;
+}
+
+[data-theme='dark'] pre code,
+[data-theme='dark'] .prism-code code,
+[data-theme='dark'] .theme-code-block code,
+[data-theme='dark'] [class*='codeBlockLines_'] code {
+  background-color: transparent !important;
+  color: inherit !important;
+}
+
+/* Инлайн-код */
+html[data-design]:not([data-design='design-universe-original']) :not(pre) > code,
+html[data-design]:not([data-design='design-universe-original']) code[class=''] {
+  background-color: color-mix(in srgb, var(--d-primary) 14%, var(--d-code-bg)) !important;
+  color: var(--d-code-fg) !important;
+  border: 1px solid color-mix(in srgb, var(--d-primary) 22%, var(--d-border));
+}
+
+html[data-design]:not([data-design='design-universe-original']) :not(pre) > code:hover,
+html[data-design]:not([data-design='design-universe-original']) code[class='']:hover {
+  background-color: color-mix(in srgb, var(--d-primary) 22%, var(--d-code-bg)) !important;
+}
+
+/* Блоки кода (Prism) */
+html[data-design]:not([data-design='design-universe-original']) .prism-code,
+html[data-design]:not([data-design='design-universe-original']) pre[class*='language-'] {
+  background-color: var(--d-code-bg) !important;
+  color: var(--d-code-fg) !important;
+  border-color: color-mix(in srgb, var(--d-primary) 45%, var(--d-border)) !important;
+  box-shadow: var(--d-shadow-sm) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .theme-code-block code,
+html[data-design]:not([data-design='design-universe-original']) .theme-code-block pre code,
+html[data-design]:not([data-design='design-universe-original']) pre.prism-code code,
+html[data-design]:not([data-design='design-universe-original']) pre[class*='language-'] code,
+html[data-design]:not([data-design='design-universe-original']) [class*='codeBlockLines_'] code {
+  background: transparent !important;
+  color: inherit !important;
+  border: none !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.plain {
+  color: var(--d-code-fg) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.punctuation,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.operator,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.entity,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.url,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.variable {
+  color: var(--d-code-fg) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.comment,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.prolog,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.doctype,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.cdata {
+  color: var(--d-code-syntax-comment) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.namespace,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.deleted {
+  color: var(--d-code-syntax-deleted) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.property,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.tag,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.boolean,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.number,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.constant,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.symbol,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.char,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.selector,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.attr-name,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.string,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.bullet,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.inserted {
+  color: var(--d-code-syntax-string) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.builtin {
+  color: var(--d-code-syntax-builtin) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.atrule,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.attr-value,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.keyword.control-flow,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.control,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.directive,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.unit {
+  color: var(--d-code-syntax-keyword) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.function,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.class-name,
+html[data-design]:not([data-design='design-universe-original']) .prism-code .token.maybe-class-name {
+  color: var(--d-code-syntax-function) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-csharp .token.preprocessor,
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-csharp .token.keyword.control-flow.null,
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-csharp .token.keyword.control-flow.boolean {
+  color: var(--d-code-syntax-control) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-bash .token.variable,
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-bash .token.builtin {
+  color: var(--d-code-syntax-builtin) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-rust .token.macro,
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-rust .token.lifetime {
+  color: var(--d-code-syntax-deleted) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token {
+  background: transparent !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.tag,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.tag,
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.attr-name,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.attr-name,
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.attr-value,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.attr-value,
+html[data-design]:not([data-design='design-universe-original']) .language-xml .token.punctuation,
+html[data-design]:not([data-design='design-universe-original']) .language-html .token.punctuation {
+  color: var(--d-code-syntax-string) !important;
+  background: transparent !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .prism-code .highlighted-code-line {
+  background-color: color-mix(in srgb, var(--d-primary) 20%, transparent) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .language-csharp .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .language-python .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .language-java .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .language-javascript .token.keyword,
+html[data-design]:not([data-design='design-universe-original']) .prism-code.language-sql .token.keyword {
+  color: var(--d-code-syntax-keyword) !important;
+}
+
+/* Блоки без Prism (редко) */
+html[data-design]:not([data-design='design-universe-original']) .theme-doc-markdown pre,
+html[data-design]:not([data-design='design-universe-original']) .markdown pre {
+  background-color: var(--d-code-bg) !important;
+  color: var(--d-code-fg) !important;
+  border: 1px solid color-mix(in srgb, var(--d-primary) 35%, var(--d-border)) !important;
+  border-radius: 8px;
+  padding: 1rem !important;
+  margin: 1.25rem 0 !important;
+  box-shadow: var(--d-shadow-sm) !important;
+}
+
+html[data-design]:not([data-design='design-universe-original']) .theme-doc-markdown pre code,
+html[data-design]:not([data-design='design-universe-original']) .markdown pre code {
+  background: transparent !important;
+  color: inherit !important;
+  white-space: pre !important;
+  display: block;
+  padding: 0;
+  border: none;
+  font-size: inherit;
+}

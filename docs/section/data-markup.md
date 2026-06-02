@@ -44,340 +44,184 @@ mindmap
 
 ## Продвинутые операции с данными
 
-<ul>
-  <li><span>Продвинутые операции с данными</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/1">3-01-prodvinutye-operatsii-s-dannymi</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111">3.01. Маршалинг и анмаршалинг</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/112">3.01. Адрес в памяти</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/113">3.01. Виды битов</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/998">3.01. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/999">3.01. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3-01-prodvinutye-operatsii-s-dannymi](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/1)
+- [3.01. Маршалинг и анмаршалинг](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111)
+- [3.01. Адрес в памяти](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/112)
+- [3.01. Виды битов](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/113)
+- [3.01. Итоги](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/998)
+- [3.01. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/999)
 
 ---
 
 ## Структуры данных
 
-<ul>
-  <li><span>Структуры данных</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/1">3-02-struktury-dannyh</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/11">3.02. История развития структур данных</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/12">3.02. Геометрические данные</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/2">3.02. Фундаментальные структуры данных и их реализация</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/3">3.02. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/4">3.02. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3-02-struktury-dannyh](/encyclopedia/3-data-markup/3-02-struktury-dannyh/1)
+- [3.02. История развития структур данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/11)
+- [3.02. Геометрические данные](/encyclopedia/3-data-markup/3-02-struktury-dannyh/12)
+- [3.02. Фундаментальные структуры данных и их реализация](/encyclopedia/3-data-markup/3-02-struktury-dannyh/2)
+- [3.02. Итоги](/encyclopedia/3-data-markup/3-02-struktury-dannyh/3)
+- [3.02. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-02-struktury-dannyh/4)
 
 ---
 
 ## Мыслительная база
 
-<ul>
-  <li><span>Мыслительная база</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/1">3.03. Когнитивистика</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/2">3.03. Ментальные модели</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/3">3-03-myslitelnaya-baza</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/4">3.03. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/5">3.03. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3.03. Когнитивистика](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/1)
+- [3.03. Ментальные модели](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/2)
+- [3-03-myslitelnaya-baza](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/3)
+- [3.03. Итоги](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/4)
+- [3.03. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/5)
 
 ---
 
 ## Математическое программирование
 
-<ul>
-  <li><span>Математическое программирование</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1">3.12. Введение и постановка</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/4">3.12. Симплекс-метод</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/7">3.12. Транспортная задача</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/998">3.12. Итоги</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3.12. Введение и постановка](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1)
+- [3.12. Симплекс-метод](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/4)
+- [3.12. Транспортная задача](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/7)
+- [3.12. Итоги](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/998)
 
 ---
 
 ## Конфигурации и данные
 
-<ul>
-  <li><span>Конфигурации и данные</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1">3-04-konfiguratsii-i-dannye в тексте</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/111">3.04. Текстовые данные</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/112">3.04. Справочник по эмодзи</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/113">3.04. Шрифты</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2">3.04. XML</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/211">3.04. Справочник по XML</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/212">3.04. Справочник по XSLT</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3">3.04. JSON</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4">3.04. YAML</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5">3.04. Markdown</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6">3.04. XAML</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/98">3.04. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/99">3.04. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3-04-konfiguratsii-i-dannye в тексте](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1)
+- [3.04. Текстовые данные](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/111)
+- [3.04. Справочник по эмодзи](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/112)
+- [3.04. Шрифты](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/113)
+- [3.04. XML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2)
+- [3.04. Справочник по XML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/211)
+- [3.04. Справочник по XSLT](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/212)
+- [3.04. JSON](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3)
+- [3.04. YAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4)
+- [3.04. Markdown](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5)
+- [3.04. XAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6)
+- [3.04. Итоги](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/98)
+- [3.04. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/99)
 
 ---
 
 ## Основы баз данных
 
-<ul>
-  <li><span>Основы баз данных</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1">3.05. Знакомство с базами данных</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2">3.05. СУБД</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6">3.05. Роль базы данных в организации</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3">3.05. Как БД работает с данными</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4">3.05. Теория данных</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/5">3.05. Двенадцать правил Кодда</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11">3.05. Entity Relationship</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/7">3.05. Конкурентный доступ</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8">3.05. Восстановление после сбоя</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/111">3.05. Data Governance</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/98">3.05. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/99">3.05. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3.05. Знакомство с базами данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1)
+- [3.05. СУБД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2)
+- [3.05. Роль базы данных в организации](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6)
+- [3.05. Как БД работает с данными](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3)
+- [3.05. Теория данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/4)
+- [3.05. Двенадцать правил Кодда](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/5)
+- [3.05. Entity Relationship](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11)
+- [3.05. Конкурентный доступ](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/7)
+- [3.05. Восстановление после сбоя](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8)
+- [3.05. Data Governance](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/111)
+- [3.05. Итоги](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/98)
+- [3.05. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/99)
 
 ---
 
 ## NoSQL
 
-<ul>
-  <li><span>NoSQL</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/1">3.06. История NoSQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/2">3.06. Основы NoSQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/3">3.06. Знаки препинания</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/4">3.06. MongoDB</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/41">3.06. Справочник по MongoDB</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/5">3.06. Redis</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/51">3.06. Справочник по Redis</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/6">3.06. Cassandra</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/61">3.06. Справочник по Cassandra</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/7">3.06. Графовые БД</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/71">3.06. Справочник по Cypher</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/8">3.06. Memcached</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/81">3.06. Справочник по Memcached</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/811">3.06. NewSQL системы</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/812">3.06. Векторные базы данных</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/98">3.06. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-06-nosql/99">3.06. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3.06. История NoSQL](/encyclopedia/3-data-markup/3-06-nosql/1)
+- [3.06. Основы NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2)
+- [3.06. Знаки препинания](/encyclopedia/3-data-markup/3-06-nosql/3)
+- [3.06. MongoDB](/encyclopedia/3-data-markup/3-06-nosql/4)
+- [3.06. Справочник по MongoDB](/encyclopedia/3-data-markup/3-06-nosql/41)
+- [3.06. Redis](/encyclopedia/3-data-markup/3-06-nosql/5)
+- [3.06. Справочник по Redis](/encyclopedia/3-data-markup/3-06-nosql/51)
+- [3.06. Cassandra](/encyclopedia/3-data-markup/3-06-nosql/6)
+- [3.06. Справочник по Cassandra](/encyclopedia/3-data-markup/3-06-nosql/61)
+- [3.06. Графовые БД](/encyclopedia/3-data-markup/3-06-nosql/7)
+- [3.06. Справочник по Cypher](/encyclopedia/3-data-markup/3-06-nosql/71)
+- [3.06. Memcached](/encyclopedia/3-data-markup/3-06-nosql/8)
+- [3.06. Справочник по Memcached](/encyclopedia/3-data-markup/3-06-nosql/81)
+- [3.06. NewSQL системы](/encyclopedia/3-data-markup/3-06-nosql/811)
+- [3.06. Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812)
+- [3.06. Итоги](/encyclopedia/3-data-markup/3-06-nosql/98)
+- [3.06. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-06-nosql/99)
 
 ---
 
 ## SQL
 
-<ul>
-  <li><span>SQL</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/1">3-07-sql</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/2">3.07. Как работает SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/21">3.07. Как читать сложные SQL запросы</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/22">3.07. Типы SQL команд</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/3">3.07. Знаки препинания</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/33">3.07. Типы данных в SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/4">3.07. Работа с СУБД</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/44">3.07. DDL в SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/444">3.07. Ограничения в SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/5">3.07. CRUD и DML</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/55">3.07. Алиасы и объединения</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/551">3.07. Общие табличные выражения</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/6">3.07. Другие операции в SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/66">3.07. Сложные типы</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/7">3.07. Функции</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/77">3.07. Транзакции и блокировки</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/8">3.07. Представления SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/88">3.07. Процедуры SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/881">3.07. Оптимизация</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/882">3.07. Процедурные расширения</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/8821">3.07. Подсказки оптимизатора запросов</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/883">3.07. Справочник по SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/884">3.07. Сложные индексы</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/885">3.07. Шпаргалка с типичными задачами по SQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/998">3.07. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-07-sql/999">3.07. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3-07-sql](/encyclopedia/3-data-markup/3-07-sql/1)
+- [3.07. Как работает SQL](/encyclopedia/3-data-markup/3-07-sql/2)
+- [3.07. Как читать сложные SQL запросы](/encyclopedia/3-data-markup/3-07-sql/21)
+- [3.07. Типы SQL команд](/encyclopedia/3-data-markup/3-07-sql/22)
+- [3.07. Знаки препинания](/encyclopedia/3-data-markup/3-07-sql/3)
+- [3.07. Типы данных в SQL](/encyclopedia/3-data-markup/3-07-sql/33)
+- [3.07. Работа с СУБД](/encyclopedia/3-data-markup/3-07-sql/4)
+- [3.07. DDL в SQL](/encyclopedia/3-data-markup/3-07-sql/44)
+- [3.07. Ограничения в SQL](/encyclopedia/3-data-markup/3-07-sql/444)
+- [3.07. CRUD и DML](/encyclopedia/3-data-markup/3-07-sql/5)
+- [3.07. Алиасы и объединения](/encyclopedia/3-data-markup/3-07-sql/55)
+- [3.07. Общие табличные выражения](/encyclopedia/3-data-markup/3-07-sql/551)
+- [3.07. Другие операции в SQL](/encyclopedia/3-data-markup/3-07-sql/6)
+- [3.07. Сложные типы](/encyclopedia/3-data-markup/3-07-sql/66)
+- [3.07. Функции](/encyclopedia/3-data-markup/3-07-sql/7)
+- [3.07. Транзакции и блокировки](/encyclopedia/3-data-markup/3-07-sql/77)
+- [3.07. Представления SQL](/encyclopedia/3-data-markup/3-07-sql/8)
+- [3.07. Процедуры SQL](/encyclopedia/3-data-markup/3-07-sql/88)
+- [3.07. Оптимизация](/encyclopedia/3-data-markup/3-07-sql/881)
+- [3.07. Процедурные расширения](/encyclopedia/3-data-markup/3-07-sql/882)
+- [3.07. Подсказки оптимизатора запросов](/encyclopedia/3-data-markup/3-07-sql/8821)
+- [3.07. Справочник по SQL](/encyclopedia/3-data-markup/3-07-sql/883)
+- [3.07. Сложные индексы](/encyclopedia/3-data-markup/3-07-sql/884)
+- [3.07. Шпаргалка с типичными задачами по SQL](/encyclopedia/3-data-markup/3-07-sql/885)
+- [3.07. Итоги](/encyclopedia/3-data-markup/3-07-sql/998)
+- [3.07. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-07-sql/999)
 
 ---
 
 ## Управление РСУБД
 
-<ul>
-  <li><span>Управление РСУБД</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1">3.08. Управление РСУБД</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3">3.08. Администрирование БД в облаке</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2">3.08. Справочник по PostgreSQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/211">3.08. Справочник по MySQL</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212">3.08. Справочник по Microsoft SQL Server</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/213">3.08. Справочник по Oracle DB</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/998">3.08. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/999">3.08. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3.08. Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1)
+- [3.08. Администрирование БД в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3)
+- [3.08. Справочник по PostgreSQL](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2)
+- [3.08. Справочник по MySQL](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/211)
+- [3.08. Справочник по Microsoft SQL Server](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/212)
+- [3.08. Справочник по Oracle DB](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/213)
+- [3.08. Итоги](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/998)
+- [3.08. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/999)
 
 ---
 
 ## HTML
 
-<ul>
-  <li><span>HTML</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-09-html/1">3-09-html</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-09-html/2">3.09. Основные теги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-09-html/21">3.09. Справочник по HTML</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-09-html/22">3.09. Игры на HTML5</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-09-html/3">3.09. Практика</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-09-html/998">3.09. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-09-html/999">3.09. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3-09-html](/encyclopedia/3-data-markup/3-09-html/1)
+- [3.09. Основные теги](/encyclopedia/3-data-markup/3-09-html/2)
+- [3.09. Справочник по HTML](/encyclopedia/3-data-markup/3-09-html/21)
+- [3.09. Игры на HTML5](/encyclopedia/3-data-markup/3-09-html/22)
+- [3.09. Практика](/encyclopedia/3-data-markup/3-09-html/3)
+- [3.09. Итоги](/encyclopedia/3-data-markup/3-09-html/998)
+- [3.09. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-09-html/999)
 
 ---
 
 ## CSS
 
-<ul>
-  <li><span>CSS</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/1">3-10-css</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/111">3.10. Блочная модель и каскадность</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/112">3.10. Работа с CSS</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/2">3.10. Flex и Grid</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/3">3.10. Адаптивность</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/4">3.10. Знаки препинания</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/5">3.10. Псевдо-селекторы</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/6">3.10. Анимации и трансформации</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/7">3.10. Работа с CSS</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/71">3.10. Справочник по CSS</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/8">3.10. Практика</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/998">3.10. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-10-css/999">3.10. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3-10-css](/encyclopedia/3-data-markup/3-10-css/1)
+- [3.10. Блочная модель и каскадность](/encyclopedia/3-data-markup/3-10-css/111)
+- [3.10. Работа с CSS](/encyclopedia/3-data-markup/3-10-css/112)
+- [3.10. Flex и Grid](/encyclopedia/3-data-markup/3-10-css/2)
+- [3.10. Адаптивность](/encyclopedia/3-data-markup/3-10-css/3)
+- [3.10. Знаки препинания](/encyclopedia/3-data-markup/3-10-css/4)
+- [3.10. Псевдо-селекторы](/encyclopedia/3-data-markup/3-10-css/5)
+- [3.10. Анимации и трансформации](/encyclopedia/3-data-markup/3-10-css/6)
+- [3.10. Работа с CSS](/encyclopedia/3-data-markup/3-10-css/7)
+- [3.10. Справочник по CSS](/encyclopedia/3-data-markup/3-10-css/71)
+- [3.10. Практика](/encyclopedia/3-data-markup/3-10-css/8)
+- [3.10. Итоги](/encyclopedia/3-data-markup/3-10-css/998)
+- [3.10. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-10-css/999)
 
 ---
 
 ## Анализ данных
 
-<ul>
-  <li><span>Анализ данных</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/1">3-11-analiz-dannyh</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/11">3.11. Дата майнинг</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/12">3.11. Фиксация на цифрах и ложь в статистике</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/2">3.11. Основы статистики</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/41">3.11. Итоги</a></li>
-      <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/42">3.11. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [3-11-analiz-dannyh](/encyclopedia/3-data-markup/3-11-analiz-dannyh/1)
+- [3.11. Дата майнинг](/encyclopedia/3-data-markup/3-11-analiz-dannyh/11)
+- [3.11. Фиксация на цифрах и ложь в статистике](/encyclopedia/3-data-markup/3-11-analiz-dannyh/12)
+- [3.11. Основы статистики](/encyclopedia/3-data-markup/3-11-analiz-dannyh/2)
+- [3.11. Итоги](/encyclopedia/3-data-markup/3-11-analiz-dannyh/41)
+- [3.11. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-11-analiz-dannyh/42)
 
 Представьте, что человек лишается абсолютно всех своих знаний, информации и данных (воспоминаний, мыслей и прочих признаков мышления), но сохраняет возможность функционировать - он может двигаться, дышать, прыгать. Чем он будет являться без этого? Пустой машиной. Компьютер тоже генерирует сигналы, которые можно направлять для любых мыслимых действий - от обычного включения компьютера до запуска ядерных боеголовок. И чтобы он был не пустым инструментом, он должен генерировать сигналы и манипулировать информацией. И словно человеку для отличия от машины нужны мысли, знания, воспоминания, машине нужны данные.
 

@@ -46,402 +46,233 @@ id: project
 
 ## Общее о бизнесе
 
-<ul>
-  <li><span>Общее о бизнесе</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/1">7.01. Общее о бизнесе</a></li>
-      <li><a href="/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/111">7.01. Бизнес логика</a></li>
-      <li><a href="/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/112">7.01. Управление бизнесом</a></li>
-      <li><a href="/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/998">7.01. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/999">7.01. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.01. Общее о бизнесе](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/1)
+- [7.01. Бизнес логика](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/111)
+- [7.01. Управление бизнесом](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/112)
+- [7.01. Итоги](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/998)
+- [7.01. Чек-лист самопроверки](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/999)
 
 ---
 
 ## Команда и управление
 
-<ul>
-  <li><span>Команда и управление</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/1">7.02. Основы проекта</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/11">7.02. Команда</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/111">7.02. Дейли</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/12">7.02. Менеджмент</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/13">7.02. Управление командой</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/2">7.02. Уважайте программистов</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/3">7.02. Цифровая трансформация</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/998">7.02. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.02.%20Команда%20и%20управление/999">7.02. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.02. Основы проекта](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/1)
+- [7.02. Команда](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/11)
+- [7.02. Дейли](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/111)
+- [7.02. Менеджмент](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/12)
+- [7.02. Управление командой](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/13)
+- [7.02. Уважайте программистов](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/2)
+- [7.02. Цифровая трансформация](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/3)
+- [7.02. Итоги](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/998)
+- [7.02. Чек-лист самопроверки](/encyclopedia/Проект/7.02.%20Команда%20и%20управление/999)
 
 ---
 
 ## Методология и жизненный цикл ПО
 
-<ul>
-  <li><span>Методология и жизненный цикл ПО</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/1">7.03. Методология и жизненный цикл ПО</a></li>
-      <li><a href="/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/2">7.03. Методология государственных систем</a></li>
-      <li><a href="/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/998">7.03. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/999">7.03. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.03. Методология и жизненный цикл ПО](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/1)
+- [7.03. Методология государственных систем](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/2)
+- [7.03. Итоги](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/998)
+- [7.03. Чек-лист самопроверки](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/999)
 
 ---
 
 ## Аналитика
 
-<ul>
-  <li><span>Аналитика</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/1">7.04. История аналитики</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/111">7.04. Основы анализа</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/112">7.04. Профессиональный анализ</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/113">7.04. Бизнес аналитик</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/114">7.04. Системный аналитик</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/115">7.04. Исследование систем</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/116">7.04. Требования</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/117">7.04. Документация</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/118">7.04. Виды документации</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/119">7.04. Confluence</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/120">7.04. Руководства и инструкции</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/121">7.04. Прочие документы</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/122">7.04. Практика</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/123">7.04. Артефакты</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/124">7.04. Моделирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/125">7.04. Прототипирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/126">7.04. Инструменты аналитика</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/127">7.04. Взаимодействие</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/128">7.04. Технический дизайн</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/129">7.04. Справочник по BPMN 2.0</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/998">7.04. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.04.%20Аналитика/999">7.04. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.04. История аналитики](/encyclopedia/Проект/7.04.%20Аналитика/1)
+- [7.04. Основы анализа](/encyclopedia/Проект/7.04.%20Аналитика/111)
+- [7.04. Профессиональный анализ](/encyclopedia/Проект/7.04.%20Аналитика/112)
+- [7.04. Бизнес аналитик](/encyclopedia/Проект/7.04.%20Аналитика/113)
+- [7.04. Системный аналитик](/encyclopedia/Проект/7.04.%20Аналитика/114)
+- [7.04. Исследование систем](/encyclopedia/Проект/7.04.%20Аналитика/115)
+- [7.04. Требования](/encyclopedia/Проект/7.04.%20Аналитика/116)
+- [7.04. Документация](/encyclopedia/Проект/7.04.%20Аналитика/117)
+- [7.04. Виды документации](/encyclopedia/Проект/7.04.%20Аналитика/118)
+- [7.04. Confluence](/encyclopedia/Проект/7.04.%20Аналитика/119)
+- [7.04. Руководства и инструкции](/encyclopedia/Проект/7.04.%20Аналитика/120)
+- [7.04. Прочие документы](/encyclopedia/Проект/7.04.%20Аналитика/121)
+- [7.04. Практика](/encyclopedia/Проект/7.04.%20Аналитика/122)
+- [7.04. Артефакты](/encyclopedia/Проект/7.04.%20Аналитика/123)
+- [7.04. Моделирование](/encyclopedia/Проект/7.04.%20Аналитика/124)
+- [7.04. Прототипирование](/encyclopedia/Проект/7.04.%20Аналитика/125)
+- [7.04. Инструменты аналитика](/encyclopedia/Проект/7.04.%20Аналитика/126)
+- [7.04. Взаимодействие](/encyclopedia/Проект/7.04.%20Аналитика/127)
+- [7.04. Технический дизайн](/encyclopedia/Проект/7.04.%20Аналитика/128)
+- [7.04. Справочник по BPMN 2.0](/encyclopedia/Проект/7.04.%20Аналитика/129)
+- [7.04. Итоги](/encyclopedia/Проект/7.04.%20Аналитика/998)
+- [7.04. Чек-лист самопроверки](/encyclopedia/Проект/7.04.%20Аналитика/999)
 
 ---
 
 ## Тестирование
 
-<ul>
-  <li><span>Тестирование</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/1">7.05. Основы тестирования</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/111">7.05. Классификация тестирования</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/112">7.05. Процесс тестирования</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/113">7.05. Проектные артефакты QA</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/114">7.05. End-to-End и системное тестирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/115">7.05. Автоматизация тестирования</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/116">7.05. Порядок тестирования</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/117">7.05. Объекты в тестировании</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/118">7.05. Инструменты тестирования</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/1181">7.05. Selenium</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/119">7.05. Тестовая документация</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/120">7.05. Юнит тестирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/121">7.05. Интеграционное тестирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/122">7.05. Нагрузочное и стресс тестирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/123">7.05. Тестирование безопасности</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/124">7.05. Тестирование мобильных приложений</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/125">7.05. Мутационное тестирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/126">7.05. Покрытие программного кода и полнота тестирования</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/127">7.05. Техники тестирования и тест-дизайн</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/2">7.05. Тестирование и исследование API</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/998">7.05. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.05.%20Тестирование/999">7.05. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.05. Основы тестирования](/encyclopedia/Проект/7.05.%20Тестирование/1)
+- [7.05. Классификация тестирования](/encyclopedia/Проект/7.05.%20Тестирование/111)
+- [7.05. Процесс тестирования](/encyclopedia/Проект/7.05.%20Тестирование/112)
+- [7.05. Проектные артефакты QA](/encyclopedia/Проект/7.05.%20Тестирование/113)
+- [7.05. End-to-End и системное тестирование](/encyclopedia/Проект/7.05.%20Тестирование/114)
+- [7.05. Автоматизация тестирования](/encyclopedia/Проект/7.05.%20Тестирование/115)
+- [7.05. Порядок тестирования](/encyclopedia/Проект/7.05.%20Тестирование/116)
+- [7.05. Объекты в тестировании](/encyclopedia/Проект/7.05.%20Тестирование/117)
+- [7.05. Инструменты тестирования](/encyclopedia/Проект/7.05.%20Тестирование/118)
+- [7.05. Selenium](/encyclopedia/Проект/7.05.%20Тестирование/1181)
+- [7.05. Тестовая документация](/encyclopedia/Проект/7.05.%20Тестирование/119)
+- [7.05. Юнит тестирование](/encyclopedia/Проект/7.05.%20Тестирование/120)
+- [7.05. Интеграционное тестирование](/encyclopedia/Проект/7.05.%20Тестирование/121)
+- [7.05. Нагрузочное и стресс тестирование](/encyclopedia/Проект/7.05.%20Тестирование/122)
+- [7.05. Тестирование безопасности](/encyclopedia/Проект/7.05.%20Тестирование/123)
+- [7.05. Тестирование мобильных приложений](/encyclopedia/Проект/7.05.%20Тестирование/124)
+- [7.05. Мутационное тестирование](/encyclopedia/Проект/7.05.%20Тестирование/125)
+- [7.05. Покрытие программного кода и полнота тестирования](/encyclopedia/Проект/7.05.%20Тестирование/126)
+- [7.05. Техники тестирования и тест-дизайн](/encyclopedia/Проект/7.05.%20Тестирование/127)
+- [7.05. Тестирование и исследование API](/encyclopedia/Проект/7.05.%20Тестирование/2)
+- [7.05. Итоги](/encyclopedia/Проект/7.05.%20Тестирование/998)
+- [7.05. Чек-лист самопроверки](/encyclopedia/Проект/7.05.%20Тестирование/999)
 
 ---
 
 ## Проектирование и архитектура
 
-<ul>
-  <li><span>Проектирование и архитектура</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1">7.06. Общее о проектировании и архитектуре</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/101">7.06. Виды архитектур</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/102">7.06. Стили внутренней организации</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/103">7.06. Принципы компонентной архитектуры</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/104">7.06. Декомпозиция монолита</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/105">7.06. Инфраструктура как архитектурный фактор</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/112">7.06. Типы классов</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/113">7.06. Конструкция из классов</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114">7.06. Доменная модель</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141">7.06. Типы классов в DDD</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/115">7.06. Паттерны проектирования</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/116">7.06. Системный подход и системное мышление</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161">7.06. Имитационное моделирование</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2">7.06. Основы системного проектирования и масштабируемости параллелизма</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3">7.06. Архитектурная практика</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998">7.06. Итоги</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/999">7.06. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.06. Общее о проектировании и архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1)
+- [7.06. Виды архитектур](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/101)
+- [7.06. Стили внутренней организации](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/102)
+- [7.06. Принципы компонентной архитектуры](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/103)
+- [7.06. Декомпозиция монолита](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/104)
+- [7.06. Инфраструктура как архитектурный фактор](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/105)
+- [7.06. Типы классов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/112)
+- [7.06. Конструкция из классов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/113)
+- [7.06. Доменная модель](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114)
+- [7.06. Типы классов в DDD](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141)
+- [7.06. Паттерны проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/115)
+- [7.06. Системный подход и системное мышление](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/116)
+- [7.06. Имитационное моделирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161)
+- [7.06. Основы системного проектирования и масштабируемости параллелизма](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2)
+- [7.06. Архитектурная практика](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3)
+- [7.06. Итоги](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998)
+- [7.06. Чек-лист самопроверки](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/999)
 
 ---
 
 ### Проектирование и архитектура
 
-<ul>
-  <li><span>Паттерны проектирования</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/1">7.06. Общее о паттернах проектирования</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/111">7.06. Порождающие паттерны</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/112">7.06. Структурные паттерны</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/113">7.06. Поведенческие паттерны</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/114">7.06. Архитектурные паттерны</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115">7.06. Паттерны интеграции</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/116">7.06. Паттерны доменного моделирования</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/117">7.06. Паттерн «Стратегия» в C#</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/118">7.06. Паттерн «Итератор» в C#</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/119">7.06. Паттерн «Фабрика» в C#</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/120">7.06. Паттерн «Команда» в C#</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/121">7.06. Паттерн «Наблюдатель» в C#</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.06. Общее о паттернах проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/1)
+- [7.06. Порождающие паттерны](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/111)
+- [7.06. Структурные паттерны](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/112)
+- [7.06. Поведенческие паттерны](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/113)
+- [7.06. Архитектурные паттерны](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/114)
+- [7.06. Паттерны интеграции](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/115)
+- [7.06. Паттерны доменного моделирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/116)
+- [7.06. Паттерн «Стратегия» в C#](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/117)
+- [7.06. Паттерн «Итератор» в C#](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/118)
+- [7.06. Паттерн «Фабрика» в C#](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/119)
+- [7.06. Паттерн «Команда» в C#](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/120)
+- [7.06. Паттерн «Наблюдатель» в C#](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/121)
 
 ---
 
 ### Проектирование
 
-<ul>
-  <li><span>Проектирование</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1">7.06. Проектирование</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1111">7.06. Подходы к проектированию</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1112">7.06. Принципы проектирования</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1113">7.06. Проектирование сервисов и методов</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1114">7.06. Проектирование функциональных UI</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1116">7.06. Проектирование под нефункциональные требования</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116">7.06. Документация как инструмент проектирования</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117">7.06. Проектирование баз данных</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118">7.06. Проектирование API и интеграций</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/119">7.06. Паттерны микросервисной архитектуры</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/21">7.06. Проектирование веб-разработки</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/211">7.06. Проектирование распределенных систем</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2111">7.06. Хранилища DWH и ETL-процессы</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2112">7.06. Лестница проектирования систем</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2113">7.06. Вертикальное масштабирование</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2114">7.06. Горизонтальное масштабирование</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2115">7.06. Горизонтальное дублирование</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2116">7.06. Competing Consumer Pattern</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2117">7.06. Read Replicas</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2118">7.06. Shared Nothing Architecture</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2119">7.06. Shared Storage Architecture</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/212">7.06. Single Node architecture</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2120">7.06. Уровни развития API и модель Ричардсона</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2121">7.06. Модельная архитектура микросервисов</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2122">7.06. Стратегии совместного использования кода в микросервисах</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2123">7.06. CQRS</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2124">7.06. Event Sourcing</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2125">7.06. Saga</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2126">7.06. Strangler Fig</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2127">7.06. Модульный монолит</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2128">7.06. Событийно-ориентированная архитектура</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2129">7.06. Сервисно-ориентированная архитектура</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/213">7.06. Пространственная архитектура</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2130">7.06. Методы и ключ идемпотентности</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2131">7.06. Архитектура конвейера</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2132">7.06. Одноранговая архитектура</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133">7.06. Чистая архитектура</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2134">7.06. Многоуровневая архитектура</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2135">7.06. Надежность и доступность</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2136">7.06. Уровни SLA и реальное время простоя</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2137">7.06. Инженерия устойчивости</a></li>
-      <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2138">7.06. Масштабирование чтения и записи в веб-приложении</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.06. Проектирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1)
+- [7.06. Подходы к проектированию](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1111)
+- [7.06. Принципы проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1112)
+- [7.06. Проектирование сервисов и методов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1113)
+- [7.06. Проектирование функциональных UI](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1114)
+- [7.06. Проектирование под нефункциональные требования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1116)
+- [7.06. Документация как инструмент проектирования](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116)
+- [7.06. Проектирование баз данных](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117)
+- [7.06. Проектирование API и интеграций](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118)
+- [7.06. Паттерны микросервисной архитектуры](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/119)
+- [7.06. Проектирование веб-разработки](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/21)
+- [7.06. Проектирование распределенных систем](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/211)
+- [7.06. Хранилища DWH и ETL-процессы](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2111)
+- [7.06. Лестница проектирования систем](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2112)
+- [7.06. Вертикальное масштабирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2113)
+- [7.06. Горизонтальное масштабирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2114)
+- [7.06. Горизонтальное дублирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2115)
+- [7.06. Competing Consumer Pattern](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2116)
+- [7.06. Read Replicas](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2117)
+- [7.06. Shared Nothing Architecture](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2118)
+- [7.06. Shared Storage Architecture](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2119)
+- [7.06. Single Node architecture](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/212)
+- [7.06. Уровни развития API и модель Ричардсона](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2120)
+- [7.06. Модельная архитектура микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2121)
+- [7.06. Стратегии совместного использования кода в микросервисах](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2122)
+- [7.06. CQRS](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2123)
+- [7.06. Event Sourcing](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2124)
+- [7.06. Saga](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2125)
+- [7.06. Strangler Fig](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2126)
+- [7.06. Модульный монолит](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2127)
+- [7.06. Событийно-ориентированная архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2128)
+- [7.06. Сервисно-ориентированная архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2129)
+- [7.06. Пространственная архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/213)
+- [7.06. Методы и ключ идемпотентности](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2130)
+- [7.06. Архитектура конвейера](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2131)
+- [7.06. Одноранговая архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2132)
+- [7.06. Чистая архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133)
+- [7.06. Многоуровневая архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2134)
+- [7.06. Надежность и доступность](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2135)
+- [7.06. Уровни SLA и реальное время простоя](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2136)
+- [7.06. Инженерия устойчивости](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2137)
+- [7.06. Масштабирование чтения и записи в веб-приложении](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2138)
 
 ---
 
 ## Интеллектуальные права
 
-<ul>
-  <li><span>Интеллектуальные права</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/1">7.07. Общее о правах</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/111">7.07. Тайна</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/112">7.07. Регистрация прав</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/113">7.07. Соглашения</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/114">7.07. Лицензирование</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/1141">7.07. Лицензионные ключи</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/115">7.07. Наследование в IT</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/998">7.07. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/999">7.07. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.07. Общее о правах](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/1)
+- [7.07. Тайна](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/111)
+- [7.07. Регистрация прав](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/112)
+- [7.07. Соглашения](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/113)
+- [7.07. Лицензирование](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/114)
+- [7.07. Лицензионные ключи](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/1141)
+- [7.07. Наследование в IT](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/115)
+- [7.07. Итоги](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/998)
+- [7.07. Чек-лист самопроверки](/encyclopedia/Проект/7.07.%20Интеллектуальные%20права/999)
 
 ---
 
 ## Техническое письмо
 
-<ul>
-  <li><span>Техническое письмо</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/1">7.08. Техническое письмо</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/11">7.08. Паттерны стиля</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/12">7.08. Техническое задание по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/13">7.08. Спецификация по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/14">7.08. ПМИ по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/15">7.08. ПЗ по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/16">7.08. Руководство системного программиста по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/17">7.08. Руководство программиста по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/18">7.08. Руководство оператора по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/19">7.08. Руководство по техническому обслуживанию по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/20">7.08. Руководство пользователя по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/21">7.08. Руководство администратора по ГОСТ</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/3">7.08. Документирование с помощью Swagger</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/998">7.08. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.08.%20Техническое%20письмо/999">7.08. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.08. Техническое письмо](/encyclopedia/Проект/7.08.%20Техническое%20письмо/1)
+- [7.08. Паттерны стиля](/encyclopedia/Проект/7.08.%20Техническое%20письмо/11)
+- [7.08. Техническое задание по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/12)
+- [7.08. Спецификация по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/13)
+- [7.08. ПМИ по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/14)
+- [7.08. ПЗ по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/15)
+- [7.08. Руководство системного программиста по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/16)
+- [7.08. Руководство программиста по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/17)
+- [7.08. Руководство оператора по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/18)
+- [7.08. Руководство по техническому обслуживанию по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/19)
+- [7.08. Руководство пользователя по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/20)
+- [7.08. Руководство администратора по ГОСТ](/encyclopedia/Проект/7.08.%20Техническое%20письмо/21)
+- [7.08. Документирование с помощью Swagger](/encyclopedia/Проект/7.08.%20Техническое%20письмо/3)
+- [7.08. Итоги](/encyclopedia/Проект/7.08.%20Техническое%20письмо/998)
+- [7.08. Чек-лист самопроверки](/encyclopedia/Проект/7.08.%20Техническое%20письмо/999)
 
 ---
 
 ## Базы знаний и задачники
 
-<ul>
-  <li><span>Базы знаний и задачники</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/1">7.09. Базы знаний</a></li>
-      <li><a href="/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/11">7.09. Wiki проекта</a></li>
-      <li><a href="/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/2">7.09. Задачи</a></li>
-      <li><a href="/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/998">7.09. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/999">7.09. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.09. Базы знаний](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/1)
+- [7.09. Wiki проекта](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/11)
+- [7.09. Задачи](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/2)
+- [7.09. Итоги](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/998)
+- [7.09. Чек-лист самопроверки](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/999)
 
 ---
 
 ## Культура кода
 
-<ul>
-  <li><span>Культура кода</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.10.%20Культура%20кода/1">7.10. Культура кода</a></li>
-      <li><a href="/encyclopedia/Проект/7.10.%20Культура%20кода/2">7.10. Цикломатическая сложность</a></li>
-      <li><a href="/encyclopedia/Проект/7.10.%20Культура%20кода/3">7.10. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.10.%20Культура%20кода/4">7.10. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.10. Культура кода](/encyclopedia/Проект/7.10.%20Культура%20кода/1)
+- [7.10. Цикломатическая сложность](/encyclopedia/Проект/7.10.%20Культура%20кода/2)
+- [7.10. Итоги](/encyclopedia/Проект/7.10.%20Культура%20кода/3)
+- [7.10. Чек-лист самопроверки](/encyclopedia/Проект/7.10.%20Культура%20кода/4)
 
 ---
 
 ## Легаси-код
 
-<ul>
-  <li><span>Легаси-код</span></li>
-  <li>
-    <ul>
-<ul>
-  <li>
-    <ul>
-      <li><a href="/encyclopedia/Проект/7.11.%20Легаси-код/1">7.11. Легаси-код</a></li>
-      <li><a href="/encyclopedia/Проект/7.11.%20Легаси-код/2">7.11. Итоги</a></li>
-      <li><a href="/encyclopedia/Проект/7.11.%20Легаси-код/3">7.11. Чек-лист самопроверки</a></li>
-    </ul>
-  </li>
-</ul>
-    </ul>
-  </li>
-</ul>
+- [7.11. Легаси-код](/encyclopedia/Проект/7.11.%20Легаси-код/1)
+- [7.11. Итоги](/encyclopedia/Проект/7.11.%20Легаси-код/2)
+- [7.11. Чек-лист самопроверки](/encyclopedia/Проект/7.11.%20Легаси-код/3)
 ---

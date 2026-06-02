@@ -17,10 +17,14 @@ related:
     doc: encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro
   - title: "Системное администрирование — о разделе"
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro
+  - title: "Управление службами в Windows"
+    doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64
   - title: "Prompt engineering — библиотека промптов"
     doc: lab/examples/1150
   - title: "Генерация кода — ChatGPT, Gemini и DeepSeek"
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/117
+  - title: "Поиск текста в файлах — grep, findstr и Select-String"
+    doc: encyclopedia/2-system-network/2-05-terminal/104
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -29,11 +33,21 @@ import DocCardList from '@theme/DocCardList';
 
 Перед командами из интернета или от ИИ-помощника — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101). Код из чата без разбора — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) и [библиотека промптов](/lab/Примеры/1150) (объяснение темы, traceback, домашка без списывания).
 
+Если вы уже настраиваете Windows глубже, откройте практикум [Управление службами в Windows](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64) и применяйте изменения через `Manual` с проверкой зависимостей.
+
 <div class="callout callout--tip">
   <div class="callout-title">Запуск, перезапуск, dev-сервер</div>
 
   <div class="callout-body">
   Если путаете Run в IDE, <code>npm run dev</code>, двойной клик по <code>.exe</code> и Docker — начните с <a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13">Запуск и перезапуск приложений</a>.
+</div>
+  </div>
+
+<div class="callout callout--tip">
+  <div class="callout-title">Найти слово в файле или в папке</div>
+
+  <div class="callout-body">
+  В открытом документе — <strong>Ctrl+F</strong> (Mac — <strong>Cmd+F</strong>); по папке — VS Code или Notepad++; в терминале — <code>grep</code>. Обзор способов — <a href="/encyclopedia/2-system-network/2-05-terminal/104">поиск текста в файлах</a>; горячие клавиши — <a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3">глава про клавиатуру</a>.
 </div>
   </div>
 

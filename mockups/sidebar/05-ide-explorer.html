@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайдбар 05 — IDE Explorer · Вселенная IT</title>
+  <link rel="stylesheet" href="base.css" />
+  <style>
+    :root {
+      --bg: #1e1e1e;
+      --surface: #252526;
+      --text: #cccccc;
+      --muted: #858585;
+      --border: #3e3e3e;
+      --primary: #007acc;
+      --sidebar-bg: #252526;
+    }
+
+    body { background: var(--bg); color: var(--text); }
+
+    .navbar {
+      background: #323233;
+      border-bottom-color: var(--border);
+      box-shadow: none;
+    }
+
+    .navbar__brand { color: #4fc3f7; }
+    .navbar__items a { color: var(--muted); }
+    .navbar__search {
+      background: #1e1e1e;
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    .theme-doc-sidebar-container {
+      background: var(--sidebar-bg);
+      border-right-color: var(--border);
+      font-family: var(--font-mono, 'Cascadia Code', 'Consolas', monospace);
+      font-size: 0.8rem;
+    }
+
+    .sidebar-explorer-label {
+      padding: 0.5rem 0.65rem 0.35rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    nav.menu > .sidebar-tools {
+      border-bottom-color: var(--border);
+      padding-top: 0;
+    }
+
+    nav.menu > .sidebar-tools input[type="search"] {
+      background: #1e1e1e;
+      border-color: var(--border);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.78rem;
+    }
+
+    .sidebar-quick-filters button {
+      background: #2d2d2d;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      font-family: system-ui, sans-serif;
+    }
+
+    .sidebar-quick-filters button.is-active {
+      background: color-mix(in srgb, var(--primary) 30%, #2d2d2d);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    .menu__list-item-collapsible {
+      border: none !important;
+    }
+
+    .menu__link {
+      color: var(--text) !important;
+      border-radius: 4px !important;
+      padding-top: 0.2rem !important;
+      padding-bottom: 0.2rem !important;
+      min-height: 1.5rem;
+    }
+
+    .menu__link--sublist {
+      color: var(--muted) !important;
+      font-weight: 600 !important;
+      font-size: 0.72rem !important;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .menu__link:hover {
+      background: #2a2d2e !important;
+    }
+
+    .menu__link--active {
+      background: #094771 !important;
+      color: #fff !important;
+      animation: none !important;
+      box-shadow: none !important;
+    }
+
+    .menu__list .menu__list {
+      border-left: none !important;
+      padding-left: 0.75rem !important;
+      background: none !important;
+    }
+
+    .menu__link:not(.menu__link--sublist)::before {
+      content: '📄 ';
+      font-size: 0.75em;
+      opacity: 0.7;
+    }
+
+    .menu__link--sublist::before {
+      content: '📁 ';
+      font-size: 0.75em;
+    }
+
+    .doc-article-card {
+      background: #1e1e1e;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: system-ui, sans-serif;
+    }
+
+    .doc-article-card p { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <p class="mock-nav-hub"><a href="index.html">← все макеты</a></p>
+  <span class="mock-badge">05 · IDE Explorer<br />как VS Code</span>
+  <p class="mock-note">Эмодзи в CSS — только для макета. В проде: <code>background-image</code> или иконки без смены React.</p>
+
+  <header class="navbar">
+    <a class="navbar__brand" href="#">Вселенная IT</a>
+    <div class="navbar__items"><a href="#">Энциклопедия</a></div>
+    <input class="navbar__search" type="search" placeholder="Поиск…" />
+  </header>
+
+  <div class="docRoot">
+    <aside class="theme-doc-sidebar-container">
+      <div class="theme-doc-sidebar-container-inner">
+        <nav class="menu thin-scrollbar theme-doc-sidebar-menu" aria-label="Docs sidebar">
+          <div class="sidebar-explorer-label">Explorer — Энциклопедия</div>
+          <div class="sidebar-tools">
+            <input type="search" placeholder="Фильтр по категориям..." />
+            <div class="sidebar-quick-filters">
+              <button type="button" class="is-active">Сеть</button>
+            </div>
+          </div>
+          <ul class="menu__list theme-doc-sidebar-menu">
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">1-basics</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">intro.md</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">2-system-network</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">2-05-terminal</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main class="docMainContainer">
+      <article class="doc-article-card">
+        <h1>Терминал</h1>
+        <p>Для тех, кто привык к IDE: тёмная панель, моноширинный текст, подсветка активного файла. Опциональный «режим разработчика» через data-атрибут на html.</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

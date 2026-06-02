@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайдбар 01 — Акцентная рейка · Вселенная IT</title>
+  <link rel="stylesheet" href="base.css" />
+  <style>
+    /* Перенос: только custom.css, селекторы .theme-doc-sidebar-container … */
+
+    :root {
+      --sidebar-bg: linear-gradient(180deg, #fafbff 0%, #f3f4f8 100%);
+    }
+
+    .theme-doc-sidebar-container {
+      background: var(--sidebar-bg);
+      border-right-color: #e8eaf2;
+    }
+
+    nav.menu > .sidebar-tools {
+      border-bottom: none;
+      padding-bottom: 0.65rem;
+    }
+
+    nav.menu > .sidebar-tools input[type="search"] {
+      border-radius: 10px;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+    }
+
+    .theme-doc-sidebar-menu > .menu__list {
+      padding-left: 0.15rem !important;
+    }
+
+    .menu__list-item-collapsible {
+      border: none !important;
+      margin-top: 0.35rem;
+    }
+
+    .menu__link--sublist {
+      font-size: 0.78rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted) !important;
+      background: transparent !important;
+      padding-left: 0.5rem !important;
+    }
+
+    .menu__link--sublist:hover {
+      color: var(--primary) !important;
+    }
+
+    .menu__list .menu__list {
+      border-left: none !important;
+      padding-left: 0.5rem !important;
+      margin-left: 0.35rem;
+      background: none !important;
+    }
+
+    .menu__link {
+      border-radius: 8px !important;
+      border-left: 3px solid transparent;
+      padding-left: 0.65rem !important;
+    }
+
+    .menu__link:hover {
+      background: rgba(123, 104, 238, 0.08) !important;
+      border-left-color: rgba(123, 104, 238, 0.35);
+    }
+
+    .menu__link--active {
+      background: linear-gradient(90deg, rgba(123, 104, 238, 0.14), rgba(123, 104, 238, 0.04)) !important;
+      border-left-color: var(--primary) !important;
+      color: var(--primary) !important;
+      font-weight: 600;
+      box-shadow: none !important;
+      animation: none !important;
+    }
+
+    .menu__caret::before {
+      content: '▾';
+      font-size: 0.65rem;
+      opacity: 0.5;
+    }
+
+    .menu__list-item--collapsed .menu__caret::before {
+      content: '▸';
+    }
+  </style>
+</head>
+<body>
+  <p class="mock-nav-hub"><a href="index.html">← все макеты</a></p>
+  <span class="mock-badge">01 · Акцентная рейка<br />без pulse, чёткая иерархия</span>
+  <p class="mock-note">Классы Docusaurus сохранены. Стили → <code>custom.css</code>. Поиск: <code>nav.menu &gt; div:first-child</code> вместо <code>.sidebar-tools</code>.</p>
+
+  <header class="navbar">
+    <a class="navbar__brand" href="#">Вселенная IT</a>
+    <div class="navbar__items">
+      <a href="#">Энциклопедия</a>
+      <a href="#">Инструменты</a>
+    </div>
+    <input class="navbar__search" type="search" placeholder="Поиск по энциклопедии…" />
+  </header>
+
+  <div class="docRoot">
+    <aside class="theme-doc-sidebar-container">
+      <div class="theme-doc-sidebar-container-inner">
+        <nav class="menu thin-scrollbar theme-doc-sidebar-menu" aria-label="Docs sidebar">
+          <div class="sidebar-tools">
+            <input type="search" placeholder="Фильтр по категориям..." />
+            <div class="sidebar-quick-filters">
+              <button type="button">Языки</button>
+              <button type="button">Проект</button>
+              <button type="button" class="is-active">Сеть</button>
+              <button type="button">Инженеру</button>
+            </div>
+          </div>
+          <ul class="menu__list theme-doc-sidebar-menu">
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">1. Основы</a>
+                <button type="button" class="clean-btn menu__caret" aria-label="Свернуть"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">Введение</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Дорожная карта</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">2. Система и сеть</a>
+                <button type="button" class="clean-btn menu__caret" aria-label="Свернуть"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">Операционная система</a></li>
+                <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">Терминал</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Системное администрирование</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">3. Данные и разметка</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">5. Языки</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">JavaScript</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main class="docMainContainer">
+      <article class="doc-article-card">
+        <h1>Терминал</h1>
+        <p>Активный пункт — слева цветная рейка и мягкий градиент. Пульсация убрана: спокойнее для длинных сессий чтения.</p>
+        <p>Разделы верхнего уровня — капс-мелочь, статьи — обычные ссылки с hover-рейкой.</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

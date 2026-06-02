@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark" data-sidebar-style="cosmic-explorer">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайдбар 06 — Cosmic Explorer · Вселенная IT</title>
+  <link rel="stylesheet" href="base.css" />
+  <style>
+    :root {
+      --primary: #8b7cf6;
+      --primary-soft: #c4b5fd;
+      --primary-dark: #6d5ce8;
+      --bg: #0b0d14;
+      --surface: #141824;
+      --surface-elevated: rgba(22, 26, 40, 0.85);
+      --text: #e8eaff;
+      --muted: #9aa3c7;
+      --muted-dim: #6b7394;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-glow: rgba(139, 124, 246, 0.28);
+      --sidebar-bg: rgba(12, 14, 22, 0.78);
+      --icon-folder: %23c4b5fd;
+      --icon-file: %239aa3c7;
+      --icon-file-active: %23ffffff;
+      --doc-sidebar-width: 18.5rem;
+      /* Chevron как в Infima (--ifm-menu-link-sublist-icon), цвет под тёмный сайдбар */
+      --cosmic-menu-caret-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24'%3E%3Cpath fill='%239aa3c7' d='M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6z'/%3E%3C/svg%3E");
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      background-image:
+        radial-gradient(ellipse 90% 60% at 0% 0%, rgba(139, 124, 246, 0.12), transparent 55%),
+        radial-gradient(ellipse 70% 50% at 100% 80%, rgba(109, 92, 232, 0.08), transparent 50%);
+    }
+
+    .navbar {
+      background: rgba(12, 14, 22, 0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 1px 0 rgba(139, 124, 246, 0.08);
+    }
+
+    .navbar__brand {
+      color: var(--primary-soft);
+      letter-spacing: -0.02em;
+    }
+
+    .navbar__items a {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .navbar__items a:hover { color: var(--text); }
+
+    .navbar__search {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: var(--border);
+      color: var(--text);
+      border-radius: 10px;
+    }
+
+    .navbar__search::placeholder { color: var(--muted-dim); }
+
+    /* —— Sidebar shell —— */
+    .theme-doc-sidebar-container {
+      background: var(--sidebar-bg);
+      backdrop-filter: blur(20px) saturate(1.15);
+      border-right: 1px solid var(--border-glow);
+      box-shadow:
+        4px 0 40px rgba(0, 0, 0, 0.35),
+        inset -1px 0 0 rgba(255, 255, 255, 0.04);
+    }
+
+    .theme-doc-sidebar-container::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(139, 124, 246, 0.07), transparent 40%),
+        radial-gradient(circle at 80% 90%, rgba(109, 92, 232, 0.05), transparent 35%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .theme-doc-sidebar-container-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .sidebar-panel-head {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 0.75rem 0.35rem;
+      margin: 0 0.35rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-panel-head svg {
+      flex-shrink: 0;
+      opacity: 0.9;
+    }
+
+    .sidebar-panel-head-text {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .sidebar-panel-title {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted-dim);
+      line-height: 1.2;
+    }
+
+    .sidebar-panel-sub {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary-soft);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    nav.menu {
+      padding: 0.35rem 0.4rem 0.75rem;
+    }
+
+    nav.menu > .sidebar-tools {
+      margin: 0 0.35rem 0.5rem;
+      padding: 0.55rem;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--surface-elevated);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav.menu > .sidebar-tools input[type="search"] {
+      width: 100%;
+      padding: 0.45rem 0.55rem 0.45rem 2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(0, 0, 0, 0.25);
+      color: var(--text);
+      font-size: 0.82rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='none' stroke='%236b7394' stroke-width='1.5' viewBox='0 0 16 16'%3E%3Ccircle cx='6.5' cy='6.5' r='4.25'/%3E%3Cpath d='M10 10l4 4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: 0.55rem center;
+    }
+
+    nav.menu > .sidebar-tools input[type="search"]::placeholder {
+      color: var(--muted-dim);
+    }
+
+    nav.menu > .sidebar-tools input[type="search"]:focus-visible {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(139, 124, 246, 0.2);
+    }
+
+    .sidebar-quick-filters {
+      margin-top: 0.45rem;
+    }
+
+    .sidebar-quick-filters button {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--muted);
+      border: 1px solid transparent;
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+
+    .sidebar-quick-filters button:hover {
+      background: rgba(139, 124, 246, 0.12);
+      color: var(--text);
+    }
+
+    .sidebar-quick-filters button.is-active {
+      background: linear-gradient(135deg, rgba(139, 124, 246, 0.35), rgba(109, 92, 232, 0.25));
+      border-color: rgba(196, 181, 253, 0.35);
+      color: #fff;
+      box-shadow: 0 0 14px rgba(139, 124, 246, 0.25);
+    }
+
+    /* —— Menu tree —— */
+    nav.menu .menu__list,
+    nav.menu .menu__list-item {
+      list-style: none;
+      margin: 0;
+    }
+
+    nav.menu .menu__list-item::marker {
+      content: none;
+    }
+
+    nav.menu .menu__list-item::-webkit-details-marker {
+      display: none;
+    }
+
+    .theme-doc-sidebar-menu > .menu__list {
+      padding: 0 0.2rem !important;
+    }
+
+    .menu__list-item-collapsible {
+      display: flex;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      border: none !important;
+      padding: 0 !important;
+      border-radius: 8px;
+      position: relative;
+    }
+
+    .menu__list-item-collapsible:hover {
+      background: rgba(139, 124, 246, 0.06);
+    }
+
+    .menu__list-item-collapsible .menu__link--sublist {
+      flex: 1;
+      min-width: 0;
+      padding-right: 0.35rem !important;
+    }
+
+    /* На проде caret только на .menu__caret (если у категории есть href) */
+    .menu__link--sublist::after,
+    .menu__link--sublist-caret::after {
+      content: none !important;
+      display: none !important;
+    }
+
+    .menu__caret {
+      flex-shrink: 0;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: static;
+      width: auto;
+      min-width: 2rem;
+      margin: 0;
+      padding: 0 0.25rem;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      background: transparent;
+      cursor: pointer;
+      opacity: 1;
+      transition: background 0.15s ease;
+    }
+
+    .menu__caret:hover {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .menu__caret::before {
+      content: '';
+      display: block;
+      width: 1.25rem;
+      height: 1.25rem;
+      min-width: 1.25rem;
+      margin: 0;
+      border: none;
+      background: var(--cosmic-menu-caret-icon) 50% / 1.25rem 1.25rem no-repeat;
+      transform: rotate(180deg);
+      transition: transform 0.2s linear;
+    }
+
+    .menu__list-item--collapsed .menu__caret::before {
+      transform: rotate(90deg);
+    }
+
+    .menu__link {
+      display: flex !important;
+      align-items: center;
+      gap: 0.45rem;
+      color: var(--muted) !important;
+      border-radius: 8px !important;
+      padding: 0.38rem 0.5rem 0.38rem 0.45rem !important;
+      font-size: 0.84rem !important;
+      line-height: 1.35 !important;
+      min-height: 2rem;
+      transition:
+        background 0.15s ease,
+        color 0.15s ease,
+        box-shadow 0.15s ease;
+    }
+
+    .menu__link::before {
+      content: '';
+      flex-shrink: 0;
+      width: 1rem;
+      height: 1rem;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0.88;
+    }
+
+    /* Папка открыта */
+    .menu__link--sublist::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M1.5 4.5h4l1.2 1.2H14v7.3H1.5V4.5z' fill='%238b7cf6' fill-opacity='.35' stroke='%23c4b5fd' stroke-width='1.1' stroke-linejoin='round'/%3E%3Cpath d='M1.5 4.5h4.8l1 1H14' stroke='%23c4b5fd' stroke-width='1.1'/%3E%3C/svg%3E");
+    }
+
+    .menu__list-item--collapsed > .menu__list-item-collapsible .menu__link--sublist::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M2 5.5h4.2l1 1H13.5v6H2V5.5z' fill='%238b7cf6' fill-opacity='.2' stroke='%23a89adb' stroke-width='1.1' stroke-linejoin='round'/%3E%3Cpath d='M2 5.5h5l1-1.5h5.5' stroke='%23a89adb' stroke-width='1.1' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+
+    /* Файл / статья */
+    .menu__link:not(.menu__link--sublist)::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 1.5h5.2L12 4.3v10.2H4V1.5z' fill='%23ffffff' fill-opacity='.04' stroke='%239aa3c7' stroke-width='1.1' stroke-linejoin='round'/%3E%3Cpath d='M9 1.5V4.5h3' stroke='%239aa3c7' stroke-width='1.1'/%3E%3Cpath d='M5.5 8h5M5.5 10h4' stroke='%236b7394' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+    }
+
+    .menu__link--sublist {
+      font-weight: 600 !important;
+      color: var(--primary-soft) !important;
+      font-size: 0.8rem !important;
+      letter-spacing: 0.01em;
+      margin-top: 0.15rem;
+    }
+
+    .menu__link--sublist:hover {
+      color: #fff !important;
+    }
+
+    .menu__list .menu__list {
+      margin: 0.1rem 0 0.35rem 0.15rem !important;
+      padding-left: 0.55rem !important;
+      border-left: 1px solid rgba(139, 124, 246, 0.22) !important;
+      background: linear-gradient(90deg, rgba(139, 124, 246, 0.06), transparent 12px) !important;
+    }
+
+    .menu__link:hover {
+      background: rgba(139, 124, 246, 0.1) !important;
+      color: var(--text) !important;
+    }
+
+    .menu__link--active {
+      background: linear-gradient(
+        90deg,
+        rgba(139, 124, 246, 0.28),
+        rgba(109, 92, 232, 0.12)
+      ) !important;
+      color: #fff !important;
+      font-weight: 500;
+      box-shadow:
+        inset 3px 0 0 var(--primary),
+        inset 0 0 0 1px rgba(196, 181, 253, 0.22),
+        0 0 18px rgba(139, 124, 246, 0.18) !important;
+      animation: none !important;
+    }
+
+    .menu__link--active:not(.menu__link--sublist)::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4 1.5h5.2L12 4.3v10.2H4V1.5z' fill='%238b7cf6' fill-opacity='.35' stroke='%23e8eaff' stroke-width='1.1' stroke-linejoin='round'/%3E%3Cpath d='M9 1.5V4.5h3' stroke='%23e8eaff' stroke-width='1.1'/%3E%3Cpath d='M5.5 8h5M5.5 10h4' stroke='%23c4b5fd' stroke-width='1' stroke-linecap='round'/%3E%3C/svg%3E");
+      opacity: 1;
+    }
+
+    .menu__link--active.menu__link--sublist::before {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M1.5 4.5h4l1.2 1.2H14v7.3H1.5V4.5z' fill='%238b7cf6' fill-opacity='.35' stroke='%23c4b5fd' stroke-width='1.1' stroke-linejoin='round'/%3E%3Cpath d='M1.5 4.5h4.8l1 1H14' stroke='%23c4b5fd' stroke-width='1.1'/%3E%3C/svg%3E");
+      opacity: 1;
+    }
+
+    .resize-hint {
+      position: absolute;
+      top: 0;
+      right: -3px;
+      width: 6px;
+      height: 100%;
+      cursor: col-resize;
+      border-radius: 4px;
+      background: transparent;
+      transition: background 0.15s;
+    }
+
+    .resize-hint:hover {
+      background: rgba(139, 124, 246, 0.35);
+    }
+
+    .docMainContainer { padding: 1.75rem 2.25rem 3rem; }
+
+    .doc-article-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: 0 12px 48px rgba(0, 0, 0, 0.45);
+    }
+
+    .doc-article-card h1 {
+      background: linear-gradient(135deg, #fff 0%, var(--primary-soft) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .doc-article-card p { color: var(--muted); }
+
+    .doc-path {
+      font-size: 0.75rem;
+      color: var(--muted-dim);
+      margin: 0 0 1rem;
+      font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+    }
+
+    .doc-path span { color: var(--primary-soft); }
+
+    /* Светлая тема — та же структура, мягче (совместимость) */
+    @media (prefers-color-scheme: light) {
+      html[data-sidebar-style="cosmic-explorer"][data-allow-light="true"] {
+        /* опционально: раскомментировать блок в README */
+      }
+    }
+  </style>
+</head>
+<body>
+  <p class="mock-nav-hub"><a href="index.html">← все макеты</a></p>
+  <span class="mock-badge">06 · Cosmic Explorer<br />02 + 05, SVG-иконки</span>
+  <p class="mock-note">Смесь космоса и explorer. Иконки — <code>::before</code> + data-URI (без React). Прод: <code>html[data-sidebar-style="cosmic-explorer"]</code>.</p>
+
+  <header class="navbar">
+    <a class="navbar__brand" href="#">Вселенная IT</a>
+    <div class="navbar__items">
+      <a href="#">Энциклопедия</a>
+      <a href="#">Инструменты</a>
+    </div>
+    <input class="navbar__search" type="search" placeholder="Поиск по энциклопедии…" />
+  </header>
+
+  <div class="docRoot">
+    <aside class="theme-doc-sidebar-container">
+      <div class="resize-hint" title="Ширина — как на проде (resize handle)"></div>
+      <div class="theme-doc-sidebar-container-inner">
+        <nav class="menu thin-scrollbar theme-doc-sidebar-menu" aria-label="Docs sidebar">
+          <div class="sidebar-panel-head">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 6h16M4 12h10M4 18h14" stroke="#8b7cf6" stroke-width="1.75" stroke-linecap="round"/>
+              <circle cx="19" cy="17" r="3" fill="#6d5ce8" fill-opacity=".4" stroke="#c4b5fd" stroke-width="1.25"/>
+            </svg>
+            <div class="sidebar-panel-head-text">
+              <span class="sidebar-panel-title">Оглавление</span>
+              <span class="sidebar-panel-sub">Энциклопедия</span>
+            </div>
+          </div>
+
+          <div class="sidebar-tools">
+            <input type="search" placeholder="Фильтр по категориям…" value="" />
+            <div class="sidebar-quick-filters">
+              <button type="button">Языки</button>
+              <button type="button">Проект</button>
+              <button type="button" class="is-active">Сеть</button>
+              <button type="button">Инженеру</button>
+            </div>
+          </div>
+
+          <ul class="menu__list theme-doc-sidebar-menu">
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist" href="#">1. Основы</a>
+                <button type="button" class="clean-btn menu__caret" aria-label="Свернуть раздел"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">Введение</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Дорожная карта</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Советы для новичка</a></li>
+              </ul>
+            </li>
+
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist" href="#">2. Система и сеть</a>
+                <button type="button" class="clean-btn menu__caret" aria-label="Свернуть раздел"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">Операционная система</a></li>
+                <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">Терминал</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Системное администрирование</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Основы ИБ</a></li>
+              </ul>
+            </li>
+
+            <li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist" href="#">3. Данные и разметка</a>
+                <button type="button" class="clean-btn menu__caret" aria-label="Развернуть раздел"></button>
+              </div>
+            </li>
+
+            <li class="theme-doc-sidebar-item-category menu__list-item menu__list-item--collapsed">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist" href="#">4. Код и разработка</a>
+                <button type="button" class="clean-btn menu__caret" aria-label="Развернуть раздел"></button>
+              </div>
+            </li>
+
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist" href="#">5. Языки программирования</a>
+                <button type="button" class="clean-btn menu__caret" aria-label="Свернуть раздел"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">JavaScript</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#">Python</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="docMainContainer">
+      <article class="doc-article-card">
+        <p class="doc-path">encyclopedia / <span>2-system-network</span> / <span>2-05-terminal</span></p>
+        <h1>Терминал</h1>
+        <p>
+          Cosmic Explorer: полупрозрачная панель и свечение из макета 02, плюс узнаваемые папки и «файлы» из 05 —
+          но на SVG, с человекочитаемыми названиями разделов, а не slug-путями.
+        </p>
+        <p>
+          Для продакшена достаточно CSS и опционального <code>data-sidebar-style</code> на <code>&lt;html&gt;</code>;
+          разметка Docusaurus не меняется.
+        </p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

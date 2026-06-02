@@ -10,6 +10,7 @@ import {translate} from '@docusaurus/Translate';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import type {Props} from '@theme/DocSidebar/Desktop/Content';
 
+import SidebarPanelHead from './SidebarPanelHead';
 import SidebarResizeHandle from './SidebarResizeHandle';
 import styles from './styles.module.css';
 
@@ -84,7 +85,7 @@ export default function DocSidebarDesktopContent({
   );
 
   const navRef = useRef<HTMLElement>(null);
-  useSidebarAutoWidth(navRef, [filteredSidebar, search]);
+  useSidebarAutoWidth(navRef, [filteredSidebar]);
 
   const quickFilters = [
     {label: 'Языки', query: 'язык'},
@@ -112,7 +113,8 @@ export default function DocSidebarDesktopContent({
         showAnnouncementBar && styles.menuWithAnnouncementBar,
         className,
       )}>
-      <div className={styles.sidebarSearchWrapper}>
+      <SidebarPanelHead />
+      <div className={clsx(styles.sidebarSearchWrapper, 'it-sidebar-tools')}>
         <input
           type="search"
           className={styles.sidebarSearchInput}
@@ -120,7 +122,7 @@ export default function DocSidebarDesktopContent({
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <div className={styles.sidebarQuickFilters}>
+        <div className={clsx(styles.sidebarQuickFilters, 'it-sidebar-quick-filters')}>
           {quickFilters.map((filter) => (
             <button
               key={filter.query}
@@ -129,6 +131,8 @@ export default function DocSidebarDesktopContent({
                 styles.sidebarQuickFilter,
                 activeQuick?.query === filter.query &&
                   styles.sidebarQuickFilterActive,
+                activeQuick?.query === filter.query &&
+                  'it-sidebar-quick-filter--active',
               )}
               onClick={() => setSearch(filter.query)}
             >

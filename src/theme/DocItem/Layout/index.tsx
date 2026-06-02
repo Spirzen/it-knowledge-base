@@ -1,6 +1,12 @@
 import React, {useEffect, useState, type ReactElement, type ReactNode} from 'react';
 import clsx from 'clsx';
-import {useHistory} from '@docusaurus/router';
+import {useHistory, useLocation} from '@docusaurus/router';
+import lazyDemo from '@site/src/components/shared/lazyDemo';
+import {
+  enhanceArticleMeta,
+  getArticleTagSlug,
+  getComplexityBadgeSlug,
+} from './articleMetaEnhancement';
 import {useWindowSize} from '@docusaurus/theme-common';
 import {useDoc} from '@docusaurus/plugin-content-docs/client';
 
@@ -26,12 +32,9 @@ const DocItemContent = require('@theme/DocItem/Content').default;
 const DocBreadcrumbs = require('@theme/DocBreadcrumbs').default;
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const ContentVisibility = require('@theme/ContentVisibility').default;
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const ArticlePdfExport = require('@site/src/components/ArticlePdfExport').default;
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const ArticleSeeAlso = require('@site/src/components/ArticleSeeAlso').default;
-// eslint-disable-next-line @typescript-eslint/no-require-imports
-const ArticleRelated = require('@site/src/components/ArticleRelated').default;
+const ArticlePdfExport = lazyDemo(() => import('@site/src/components/ArticlePdfExport'));
+const ArticleSeeAlso = lazyDemo(() => import('@site/src/components/ArticleSeeAlso'));
+const ArticleRelated = lazyDemo(() => import('@site/src/components/ArticleRelated'));
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const DocTocPanel = require('@site/src/theme/DocItem/Layout/DocTocPanel').default;
 
@@ -127,55 +130,16 @@ function ChapterProgress(): ReactElement | null {
   );
 }
 
-const TAG_CLASS_TO_SLUG: Record<string, string> = {
-  'tag-required': 'required',
-  'tag-notrequired': 'notrequired',
-  'tag-human': 'beginner',
-  'tag-beginner': 'beginner',
-  'tag-advanced': 'advanced',
-};
-
-const COMPLEXITY_LABEL_TO_SLUG: Record<string, string> = {
-  'Аналитику': 'analytic',
-  'Тестировщику': 'tester',
-  'Архитектору': 'architector',
-  'Разработчику': 'developer',
-  'Руководителю': 'manager',
-  'Инженеру': 'engineer',
-  'Всем': 'all',
-};
-
-function getArticleTagSlug(el: HTMLElement): string | null {
-  if (el.classList.contains('tag-inprogress')) {
-    return null;
-  }
-
-  for (const [className, slug] of Object.entries(TAG_CLASS_TO_SLUG)) {
-    if (el.classList.contains(className)) {
-      return slug;
-    }
-  }
-
-  return null;
-}
-
-function getComplexityBadgeSlug(el: HTMLElement): string | null {
-  const label = el.textContent?.trim();
-  if (!label) {
-    return null;
-  }
-
-  return COMPLEXITY_LABEL_TO_SLUG[label] ?? null;
-}
-
 /**
- * Делает HTML-теги кликабельными и ведёт на страницы /tags/*,
- * как теги из frontmatter Docusaurus.
+ * Панель метаданных + кликабельные теги → /tags/*
  */
-function useClickableArticleTags() {
+function useArticleMetaEnhancement() {
   const history = useHistory();
+  const location = useLocation();
 
   useEffect(() => {
+    enhanceArticleMeta();
+
     const navigateToTag = (slug: string) => {
       history.push(`/tags/${slug}`);
     };
@@ -185,7 +149,7 @@ function useClickableArticleTags() {
       getSlug: (el: HTMLElement) => string | null,
     ) => {
       elements.forEach((el) => {
-        if (el.dataset.enhanced === 'true') {
+        if (el.dataset.clickableTag === 'true') {
           return;
         }
 
@@ -194,7 +158,7 @@ function useClickableArticleTags() {
           return;
         }
 
-        el.dataset.enhanced = 'true';
+        el.dataset.clickableTag = 'true';
         el.classList.add(styles.clickableTag);
         el.setAttribute('role', 'link');
         el.setAttribute('tabindex', '0');
@@ -223,14 +187,14 @@ function useClickableArticleTags() {
     const complexityBadges =
       document.querySelectorAll<HTMLElement>('.complexity-badge');
     makeInteractive(complexityBadges, getComplexityBadgeSlug);
-  }, [history]);
+  }, [history, location.pathname]);
 }
 
 export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode {
   const docTOC = useDocTOC();
   const {metadata} = useDoc();
 
-  useClickableArticleTags();
+  useArticleMetaEnhancement();
 
   return (
     <div className={clsx('row', 'docItemRow', styles.docItemRow)}>

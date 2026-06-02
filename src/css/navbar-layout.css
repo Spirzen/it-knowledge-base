@@ -77,6 +77,12 @@
     margin-right: 0.15rem;
   }
 
+  /* When mobile sidebar is open, avoid overlap with brand/logo area. */
+  .navbar-sidebar--show .navbar__toggle {
+    opacity: 0;
+    pointer-events: none;
+  }
+
   .navbar__brand {
     flex: 1 1 auto;
     min-width: 0;

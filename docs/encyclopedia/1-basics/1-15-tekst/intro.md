@@ -33,6 +33,8 @@ related:
     doc: encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro
   - title: "Исполняемые файлы и архивы — о разделе"
     doc: encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro
+  - title: "Поиск текста в файлах — grep, findstr и Select-String"
+    doc: encyclopedia/2-system-network/2-05-terminal/104
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -55,6 +57,8 @@ import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 | 3a | [Excel и Google Sheets — формулы](/lab/Примеры/1139) | СУММ, ЕСЛИ, ВПР, скидка, журнал оценок — с разбором |
 | 4 | [Формат XLSX](./4) | Устройство табличного файла |
 | 5 | [Текст в веб-технологиях](./5) | HTML и Markdown для IT |
+
+Чтобы найти фрагмент в Word, логе или папке с документами — [поиск текста в файлах](/encyclopedia/2-system-network/2-05-terminal/104) (Ctrl+F, поиск по папке, терминал).
 
 Для госпроекта или ТЗ в Word/Excel — [Word и Excel в проектной документации](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007). Углублённый справочник функций Excel — [41](./41). **Готовые формулы с разбором** — [Lab / 1139](/lab/Примеры/1139).
 

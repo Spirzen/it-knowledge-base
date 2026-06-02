@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Макеты сайдбара · Вселенная IT</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      max-width: 42rem;
+      margin: 3rem auto;
+      padding: 0 1.25rem;
+      line-height: 1.6;
+      color: #2c3e50;
+    }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1rem; margin-top: 2rem; }
+    ul { padding-left: 1.25rem; }
+    a { color: #7b68ee; font-weight: 600; }
+    li { margin-bottom: 0.85rem; }
+    code { font-size: 0.88em; background: #f0f0ff; padding: 0.1em 0.35em; border-radius: 4px; }
+    .tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      background: #e8e4ff;
+      color: #5d4eba;
+      margin-left: 0.35rem;
+      vertical-align: middle;
+    }
+    p.note {
+      padding: 0.75rem 1rem;
+      background: #f8f7ff;
+      border-left: 3px solid #7b68ee;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Макеты сайдбара энциклопедии</h1>
+  <p>Автономные HTML — без Docusaurus. Разметка и классы как на проде (<code>menu__link</code>, <code>theme-doc-sidebar-*</code>), чтобы перенос был <strong>только CSS</strong> в <code>src/css/custom.css</code>.</p>
+  <p class="note">Уже есть: фильтр, чипы, resize-handle, автоширина — React не трогаем. Макеты показывают визуальные направления.</p>
+
+  <ul>
+    <li><strong><a href="06-cosmic-explorer.html">06 — Cosmic Explorer</a></strong> <span class="tag">новый</span><br />
+      <small>Смесь 02 + 05: космическое стекло, SVG папки/файлы, шапка «Оглавление», рейка у active</small></li>
+    <li><a href="01-rail-accent.html">01 — Акцентная рейка</a><br />
+      <small>Слева полоска у активного пункта, капс-заголовки разделов, без пульсации</small></li>
+    <li><a href="02-cosmic-glass.html">02 — Космическое стекло</a><br />
+      <small>Тёмная тема, blur, glow — под «Космическую пустоту»</small></li>
+    <li><a href="03-tree-guide.html">03 — Дерево-гид</a><br />
+      <small>Линии и точки вложенности — для длинного оглавления</small></li>
+    <li><a href="04-section-cards.html">04 — Карточки разделов</a><br />
+      <small>Каждая глава энциклопедии в отдельной карточке</small></li>
+    <li><a href="05-ide-explorer.html">05 — IDE Explorer</a><br />
+      <small>Тёмный explorer в духе VS Code (опциональный режим)</small></li>
+  </ul>
+
+  <h2>Другие макеты</h2>
+  <ul>
+    <li><a href="../homepage/index.html">Главная страница</a></li>
+  </ul>
+  <p><a href="README.md">README</a> — как переносить в проект.</p>
+</body>
+</html>

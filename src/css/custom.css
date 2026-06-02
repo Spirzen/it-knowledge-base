@@ -1,10 +1,12 @@
-@import './demo-widgets.css';
+@import './it-demo-shell.css';
 @import './it-design-themes.css';
 @import './it-design-bridge.css';
 @import './it-design-compat.css';
 @import './it-design-effects.css';
 @import './doc-search-theme.css';
 @import './navbar-layout.css';
+@import './sidebar-explorer.css';
+@import './sidebar-cosmic-explorer.css';
 
 /* ============================================================================
    1. ПЕРЕМЕННЫЕ (CSS VARIABLES)
@@ -46,6 +48,7 @@
   --ifm-sidebar-background-color: #F8F9FA;
   --ifm-menu-color: #2C3E50;
   --ifm-menu-color-active: #7B68EE;
+  --ifm-menu-color-background-hover: color-mix(in srgb, var(--ifm-color-primary) 14%, var(--ifm-sidebar-background-color));
   --ifm-menu-color-background-active: #F0F0FF;
 
   /* Футер */
@@ -72,6 +75,81 @@
   /* Документация: доля центра и правого оглавления */
   --it-doc-toc-width: clamp(11rem, 18vw, 20rem);
   --it-doc-article-gap: 1rem;
+
+  /* Чипы статуса и аудитории статей */
+  --it-tag-chip-radius: 999px;
+  --it-tag-chip-padding: 0.35rem 0.85rem;
+  --it-tag-chip-font-size: 0.8rem;
+  --it-tag-chip-weight: 600;
+  --it-tag-chip-gap: 0.4rem;
+
+  --it-tag-required-bg: #ffebee;
+  --it-tag-required-fg: #b71c1c;
+  --it-tag-required-border: #ef9a9a;
+
+  --it-tag-warn-bg: #fff8e1;
+  --it-tag-warn-fg: #e65100;
+  --it-tag-warn-border: #ffcc80;
+
+  --it-tag-beginner-bg: #e8f5e9;
+  --it-tag-beginner-fg: #2e7d32;
+  --it-tag-beginner-border: #a5d6a7;
+
+  --it-tag-advanced-bg: #ede7f6;
+  --it-tag-advanced-fg: #512da8;
+  --it-tag-advanced-border: #b39ddb;
+
+  --it-tag-notrequired-bg: #f5f5f5;
+  --it-tag-notrequired-fg: #546e7a;
+  --it-tag-notrequired-border: #cfd8dc;
+
+  --it-meta-panel-bg: color-mix(in srgb, var(--ifm-color-primary) 6%, var(--ifm-card-background-color));
+  --it-meta-panel-border: color-mix(in srgb, var(--ifm-color-primary) 22%, var(--ifm-color-emphasis-300));
+  --it-meta-label-fg: var(--ifm-color-content-secondary);
+
+  --it-audience-developer-bg: color-mix(in srgb, #5c6bc0 14%, var(--ifm-card-background-color));
+  --it-audience-developer-fg: #3949ab;
+  --it-audience-developer-border: color-mix(in srgb, #5c6bc0 35%, var(--ifm-color-emphasis-300));
+
+  --it-audience-analytic-bg: color-mix(in srgb, #00897b 12%, var(--ifm-card-background-color));
+  --it-audience-analytic-fg: #00695c;
+  --it-audience-analytic-border: color-mix(in srgb, #00897b 32%, var(--ifm-color-emphasis-300));
+
+  --it-audience-tester-bg: color-mix(in srgb, #fb8c00 12%, var(--ifm-card-background-color));
+  --it-audience-tester-fg: #e65100;
+  --it-audience-tester-border: color-mix(in srgb, #fb8c00 30%, var(--ifm-color-emphasis-300));
+
+  --it-audience-architector-bg: color-mix(in srgb, #8e24aa 12%, var(--ifm-card-background-color));
+  --it-audience-architector-fg: #6a1b9a;
+  --it-audience-architector-border: color-mix(in srgb, #8e24aa 30%, var(--ifm-color-emphasis-300));
+
+  --it-audience-manager-bg: color-mix(in srgb, #d81b60 10%, var(--ifm-card-background-color));
+  --it-audience-manager-fg: #ad1457;
+  --it-audience-manager-border: color-mix(in srgb, #d81b60 28%, var(--ifm-color-emphasis-300));
+
+  --it-audience-engineer-bg: color-mix(in srgb, #546e7a 12%, var(--ifm-card-background-color));
+  --it-audience-engineer-fg: #37474f;
+  --it-audience-engineer-border: color-mix(in srgb, #546e7a 30%, var(--ifm-color-emphasis-300));
+
+  --it-audience-all-bg: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-card-background-color));
+  --it-audience-all-fg: var(--ifm-color-primary-darkest);
+  --it-audience-all-border: color-mix(in srgb, var(--ifm-color-primary) 28%, var(--ifm-color-emphasis-300));
+
+  --it-audience-technical-writer-bg: color-mix(in srgb, #5e35b1 10%, var(--ifm-card-background-color));
+  --it-audience-technical-writer-fg: #4527a0;
+  --it-audience-technical-writer-border: color-mix(in srgb, #5e35b1 26%, var(--ifm-color-emphasis-300));
+
+  --it-audience-family-bg: color-mix(in srgb, #f06292 10%, var(--ifm-card-background-color));
+  --it-audience-family-fg: #c2185b;
+  --it-audience-family-border: color-mix(in srgb, #f06292 26%, var(--ifm-color-emphasis-300));
+
+  --it-audience-power-user-bg: color-mix(in srgb, #6d4c41 10%, var(--ifm-card-background-color));
+  --it-audience-power-user-fg: #4e342e;
+  --it-audience-power-user-border: color-mix(in srgb, #6d4c41 26%, var(--ifm-color-emphasis-300));
+
+  --it-audience-other-bg: var(--ifm-background-surface-color);
+  --it-audience-other-fg: var(--ifm-color-content-secondary);
+  --it-audience-other-border: var(--ifm-color-emphasis-300);
 }
 
 [data-theme='dark'] {
@@ -105,6 +183,7 @@
   --ifm-sidebar-background-color: #2A2A2A;
   --ifm-menu-color: #E8E8E8;
   --ifm-menu-color-active: #9370DB;
+  --ifm-menu-color-background-hover: color-mix(in srgb, var(--ifm-color-primary) 22%, var(--ifm-sidebar-background-color));
   --ifm-menu-color-background-active: #3A2A5A;
 
   --docusaurus-highlighted-code-line-bg: rgba(147, 112, 219, 0.25);
@@ -119,6 +198,41 @@
   --ifm-button-color: #FFFFFF;
 
   --ifm-card-background-color: #2A2A2A;
+
+  --it-tag-required-bg: color-mix(in srgb, #ef5350 22%, var(--ifm-card-background-color));
+  --it-tag-required-fg: #ffcdd2;
+  --it-tag-required-border: color-mix(in srgb, #ef5350 45%, #444);
+
+  --it-tag-warn-bg: color-mix(in srgb, #ffb74d 18%, var(--ifm-card-background-color));
+  --it-tag-warn-fg: #ffe0b2;
+  --it-tag-warn-border: color-mix(in srgb, #ffb74d 40%, #444);
+
+  --it-tag-beginner-bg: color-mix(in srgb, #66bb6a 18%, var(--ifm-card-background-color));
+  --it-tag-beginner-fg: #c8e6c9;
+  --it-tag-beginner-border: color-mix(in srgb, #66bb6a 38%, #444);
+
+  --it-tag-advanced-bg: color-mix(in srgb, #ab47bc 18%, var(--ifm-card-background-color));
+  --it-tag-advanced-fg: #e1bee7;
+  --it-tag-advanced-border: color-mix(in srgb, #ab47bc 38%, #444);
+
+  --it-tag-notrequired-bg: color-mix(in srgb, #78909c 16%, var(--ifm-card-background-color));
+  --it-tag-notrequired-fg: #cfd8dc;
+  --it-tag-notrequired-border: color-mix(in srgb, #78909c 35%, #444);
+
+  --it-meta-panel-bg: color-mix(in srgb, var(--ifm-color-primary) 10%, var(--ifm-card-background-color));
+  --it-meta-panel-border: color-mix(in srgb, var(--ifm-color-primary) 28%, #444);
+
+  --it-audience-developer-fg: #9fa8da;
+  --it-audience-analytic-fg: #80cbc4;
+  --it-audience-tester-fg: #ffcc80;
+  --it-audience-architector-fg: #ce93d8;
+  --it-audience-manager-fg: #f48fb1;
+  --it-audience-engineer-fg: #b0bec5;
+  --it-audience-all-fg: var(--ifm-color-primary-lighter);
+  --it-audience-technical-writer-fg: #b39ddb;
+  --it-audience-family-fg: #f48fb1;
+  --it-audience-power-user-fg: #bcaaa4;
+  --it-audience-other-fg: var(--ifm-color-content-secondary);
 }
 
 /* ============================================================================
@@ -235,7 +349,11 @@ img {
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-.menu__link:hover,
+.menu__link:hover:not(.menu__link--active) {
+  background-color: var(--ifm-menu-color-background-hover);
+  color: var(--ifm-menu-color-active);
+}
+
 .menu__link--active {
   background-color: var(--ifm-menu-color-background-active);
   color: var(--ifm-menu-color-active);
@@ -281,7 +399,7 @@ img {
   }
 }
 
-.theme-doc-sidebar-container {
+.theme-doc-sidebar-container:not([class*='docSidebarContainerHidden']) {
   flex-shrink: 0;
   position: relative;
   z-index: 3;
@@ -296,7 +414,7 @@ img {
 }
 
 @media screen and (min-width: 997px) and (max-width: 1199px) {
-  .theme-doc-sidebar-container {
+  .theme-doc-sidebar-container:not([class*='docSidebarContainerHidden']) {
     min-width: clamp(
       12rem,
       calc(11rem + var(--doc-sidebar-nest-depth, 1) * 1.25rem),
@@ -307,13 +425,47 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .theme-doc-sidebar-container {
+  .theme-doc-sidebar-container:not([class*='docSidebarContainerHidden']) {
     min-width: clamp(
       14rem,
       calc(12rem + var(--doc-sidebar-nest-depth, 1) * 1.15rem),
       22rem
     ) !important;
     max-width: min(28rem, 32vw) !important;
+  }
+}
+
+/* Скрытый сайдбар: узкая полоска «развернуть», не ширина авто-подбора */
+@media screen and (min-width: 997px) {
+  :root {
+    --it-doc-sidebar-hidden-width: 2.25rem;
+  }
+
+  .theme-doc-sidebar-container[class*='docSidebarContainerHidden'] {
+    width: var(--it-doc-sidebar-hidden-width) !important;
+    min-width: var(--it-doc-sidebar-hidden-width) !important;
+    max-width: var(--it-doc-sidebar-hidden-width) !important;
+    flex: 0 0 var(--it-doc-sidebar-hidden-width) !important;
+    overflow: hidden;
+  }
+
+  .theme-doc-sidebar-container[class*='docSidebarContainerHidden'] button[class*='expandButton'] {
+    top: calc(var(--ifm-navbar-height) + 0.35rem) !important;
+    right: 0 !important;
+    left: auto !important;
+    width: 100% !important;
+    height: 2.5rem !important;
+    min-height: 0 !important;
+    max-height: 2.5rem !important;
+    padding: 0 !important;
+    border: none;
+    border-right: 1px solid var(--ifm-toc-border-color);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .theme-doc-sidebar-container[class*='docSidebarContainerHidden'] [class*='expandButtonIcon'] {
+    width: 0.9rem;
+    height: 0.9rem;
   }
 }
 
@@ -503,54 +655,191 @@ img {
   margin-top: 1em;
 }
 
-.article-tags {
-  margin: 1rem 0 1.5rem;
+/* --- Метаданные статьи (статус + аудитория) --- */
+
+.article-meta {
+  margin: 0.75rem 0 1.5rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--it-meta-panel-border);
+  background: var(--it-meta-panel-bg);
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.article-meta__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem 0.75rem;
+}
+
+.article-meta__label {
+  flex: 0 0 auto;
+  min-width: 4.5rem;
+  padding-top: 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--it-meta-label-fg);
+  line-height: 1.2;
+}
+
+.article-meta__chips {
+  flex: 1 1 12rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--it-tag-chip-gap);
+  min-width: 0;
+}
+
+.article-meta__audience {
+  margin: 0;
+}
+
+.article-tags {
+  margin: 0;
+  display: flex;
+  gap: var(--it-tag-chip-gap);
   flex-wrap: wrap;
 }
 
-.tag {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  border-radius: 4px;
-  line-height: 1.4;
+.theme-doc-markdown > .article-tags,
+.theme-doc-markdown > p > .article-tags:only-child {
+  margin: 1rem 0 1.25rem;
+}
+
+.tag,
+.complexity-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--it-tag-chip-padding);
+  font-size: var(--it-tag-chip-font-size);
+  font-weight: var(--it-tag-chip-weight);
+  border-radius: var(--it-tag-chip-radius);
+  line-height: 1.35;
+  border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .tag-required {
-  background-color: #ffebee;
-  color: #c62828;
-  border: 1px solid #ef9a9a;
+  background-color: var(--it-tag-required-bg);
+  color: var(--it-tag-required-fg);
+  border-color: var(--it-tag-required-border);
 }
 
 .tag-inprogress {
-  background-color: #fff8e1;
-  color: #ff8f00;
-  border: 1px solid #ffd54f;
+  background-color: var(--it-tag-warn-bg);
+  color: var(--it-tag-warn-fg);
+  border-color: var(--it-tag-warn-border);
   cursor: default;
+  animation: it-tag-inprogress-pulse 2.5s ease-in-out infinite;
 }
 
-.tag-advanced,
+@keyframes it-tag-inprogress-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--it-tag-warn-border) 0%, transparent);
+  }
+
+  50% {
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--it-tag-warn-border) 45%, transparent);
+  }
+}
+
 .tag-beginner,
-.tag-human,
+.tag-human {
+  background-color: var(--it-tag-beginner-bg);
+  color: var(--it-tag-beginner-fg);
+  border-color: var(--it-tag-beginner-border);
+}
+
+.tag-advanced {
+  background-color: var(--it-tag-advanced-bg);
+  color: var(--it-tag-advanced-fg);
+  border-color: var(--it-tag-advanced-border);
+}
+
 .tag-notrequired {
-  background-color: #e3f2fd;
-  color: #000000;
-  border: 1px solid #90caf9;
+  background-color: var(--it-tag-notrequired-bg);
+  color: var(--it-tag-notrequired-fg);
+  border-color: var(--it-tag-notrequired-border);
 }
 
 .complexity-badge {
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  font-size: 0.85em;
-  border-radius: 999px;
-  background: var(--ifm-background-surface-color);
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-  color: var(--ifm-color-content-secondary);
-  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--it-audience-other-bg);
+  color: var(--it-audience-other-fg);
+  border-color: var(--it-audience-other-border);
+  margin: 0;
+}
+
+.complexity-badge--developer {
+  background: var(--it-audience-developer-bg);
+  color: var(--it-audience-developer-fg);
+  border-color: var(--it-audience-developer-border);
+}
+
+.complexity-badge--analytic {
+  background: var(--it-audience-analytic-bg);
+  color: var(--it-audience-analytic-fg);
+  border-color: var(--it-audience-analytic-border);
+}
+
+.complexity-badge--tester {
+  background: var(--it-audience-tester-bg);
+  color: var(--it-audience-tester-fg);
+  border-color: var(--it-audience-tester-border);
+}
+
+.complexity-badge--architector {
+  background: var(--it-audience-architector-bg);
+  color: var(--it-audience-architector-fg);
+  border-color: var(--it-audience-architector-border);
+}
+
+.complexity-badge--manager {
+  background: var(--it-audience-manager-bg);
+  color: var(--it-audience-manager-fg);
+  border-color: var(--it-audience-manager-border);
+}
+
+.complexity-badge--engineer {
+  background: var(--it-audience-engineer-bg);
+  color: var(--it-audience-engineer-fg);
+  border-color: var(--it-audience-engineer-border);
+}
+
+.complexity-badge--all {
+  background: var(--it-audience-all-bg);
+  color: var(--it-audience-all-fg);
+  border-color: var(--it-audience-all-border);
+}
+
+.complexity-badge--technical-writer {
+  background: var(--it-audience-technical-writer-bg);
+  color: var(--it-audience-technical-writer-fg);
+  border-color: var(--it-audience-technical-writer-border);
+}
+
+.complexity-badge--family {
+  background: var(--it-audience-family-bg);
+  color: var(--it-audience-family-fg);
+  border-color: var(--it-audience-family-border);
+}
+
+.complexity-badge--power-user {
+  background: var(--it-audience-power-user-bg);
+  color: var(--it-audience-power-user-fg);
+  border-color: var(--it-audience-power-user-border);
+}
+
+.complexity-badge--other {
+  background: var(--it-audience-other-bg);
+  color: var(--it-audience-other-fg);
+  border-color: var(--it-audience-other-border);
 }
 
 /* Выноски (Callouts) */
@@ -791,6 +1080,34 @@ code:hover {
 [data-theme='dark'] code {
   background-color: rgba(147, 112, 219, 0.15);
   color: #B19CD9;
+}
+
+/* В fenced-блоках — наследовать цвет pre, не инлайн-стили */
+pre code,
+.prism-code code,
+.theme-code-block code,
+[class*='codeBlockLines_'] code,
+pre code.language-plaintext,
+pre code[class=''],
+.prism-code code[class*='language-'],
+[class*='codeBlockLines_'] code.language-plaintext {
+  background-color: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  white-space: inherit !important;
+}
+
+pre code:hover,
+.prism-code code:hover {
+  background-color: transparent !important;
+}
+
+[data-theme='dark'] pre code,
+[data-theme='dark'] .prism-code code,
+[data-theme='dark'] .theme-code-block code {
+  background-color: transparent !important;
+  color: inherit !important;
 }
 
 .prism-code,
@@ -1567,35 +1884,3 @@ body.pdf-export-busy::before {
 [data-theme='dark'] .theme-doc-markdown a.wiki-link--glossary {
   color: #6ecfba;
 }
-
-/* IT-темы: Prism/XML — поверх глобальных [data-theme='dark'] правил выше */
-html[data-design]:not([data-design='design-universe-original']) .language-xml .token,
-html[data-design]:not([data-design='design-universe-original']) .language-html .token {
-  background: transparent !important;
-}
-
-html[data-design]:not([data-design='design-universe-original']) .language-xml .token.tag,
-html[data-design]:not([data-design='design-universe-original']) .language-html .token.tag,
-html[data-design]:not([data-design='design-universe-original']) .language-xml .token.attr-name,
-html[data-design]:not([data-design='design-universe-original']) .language-html .token.attr-name,
-html[data-design]:not([data-design='design-universe-original']) .language-xml .token.attr-value,
-html[data-design]:not([data-design='design-universe-original']) .language-html .token.attr-value,
-html[data-design]:not([data-design='design-universe-original']) .language-xml .token.punctuation,
-html[data-design]:not([data-design='design-universe-original']) .language-html .token.punctuation {
-  color: var(--d-code-syntax-string) !important;
-}
-
-html[data-design]:not([data-design='design-universe-original']) .prism-code,
-html[data-design]:not([data-design='design-universe-original']) pre[class*='language-'] {
-  background-color: var(--d-code-bg) !important;
-  color: var(--d-code-fg) !important;
-}
-
-html[data-design]:not([data-design='design-universe-original']) .language-csharp .token.keyword,
-html[data-design]:not([data-design='design-universe-original']) .language-python .token.keyword,
-html[data-design]:not([data-design='design-universe-original']) .language-java .token.keyword,
-html[data-design]:not([data-design='design-universe-original']) .language-javascript .token.keyword,
-html[data-design]:not([data-design='design-universe-original']) .prism-code.language-sql .token.keyword {
-  color: var(--d-code-syntax-keyword) !important;
-}
-

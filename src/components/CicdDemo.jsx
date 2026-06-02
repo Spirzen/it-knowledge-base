@@ -17,6 +17,7 @@ import {
   envStatusLabel,
   generateTestSuite,
 } from './shared/cicdEngine';
+import {useTerminalBodyScroll} from './shared/useTerminalBodyScroll';
 import styles from './CicdDemo.module.css';
 
 const GITLAB_YAML = `# .gitlab-ci.yml
@@ -80,16 +81,14 @@ function CicdDemoInner() {
   const [autoDeploy, setAutoDeploy] = useState(false);
   const [environments, setEnvironments] = useState(INITIAL_ENVIRONMENTS);
 
-  const logEndRef = useRef(null);
+  const logsRef = useRef(null);
   const runningRef = useRef(false);
 
   const pushLog = useCallback((message, type = 'info') => {
     setLogs((prev) => [...prev, createLog(message, type)]);
   }, []);
 
-  useEffect(() => {
-    logEndRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [logs]);
+  useTerminalBodyScroll(logsRef, [logs]);
 
   const runTests = useCallback(async () => {
     pushLog('Запуск тестов…', 'info');
@@ -302,7 +301,7 @@ function CicdDemoInner() {
 
               <div className={styles.card}>
                 <h3 className={styles.cardTitle}>Логи</h3>
-                <div className={styles.logs}>
+                <div ref={logsRef} className={styles.logs}>
                   {logs.length === 0 ? (
                     <div className={styles.logEmpty}>Нажмите "Запустить пайплайн"</div>
                   ) : (
@@ -313,7 +312,6 @@ function CicdDemoInner() {
                       </div>
                     ))
                   )}
-                  <div ref={logEndRef} />
                 </div>
               </div>
             </div>

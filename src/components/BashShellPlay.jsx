@@ -1,8 +1,9 @@
-import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
+import React, {useCallback, useMemo, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
+import {useTerminalBodyScroll} from './shared/useTerminalBodyScroll';
 import {
   BASH_LESSONS,
   INITIAL_CWD,
@@ -60,16 +61,14 @@ function BashShellPlayInner({lesson: lessonProp = 'intro'}) {
   const [historyIndex, setHistoryIndex] = useState(-1);
   const [tabHint, setTabHint] = useState('');
   const inputRef = useRef(null);
-  const endRef = useRef(null);
+  const bodyRef = useRef(null);
 
   const progress = useMemo(
     () => evaluateLessonProgress(lesson.id, state.commandHistory, state),
     [lesson.id, state],
   );
 
-  useEffect(() => {
-    endRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [lines]);
+  useTerminalBodyScroll(bodyRef, [lines]);
 
   const focusInput = useCallback(() => inputRef.current?.focus(), []);
 
@@ -197,7 +196,11 @@ function BashShellPlayInner({lesson: lessonProp = 'intro'}) {
               </div>
               <div className={terminalStyles.title}>bash — guest@universe-it:{titlePath}</div>
             </div>
-            <div className={terminalStyles.body} onClick={focusInput} role="presentation">
+            <div
+              ref={bodyRef}
+              className={terminalStyles.body}
+              onClick={focusInput}
+              role="presentation">
               {lines.map((item, index) => (
                 <TerminalLine key={`${index}-${item.type}`} item={item} cwd={cwd} />
               ))}
@@ -219,7 +222,6 @@ function BashShellPlayInner({lesson: lessonProp = 'intro'}) {
                 />
               </div>
               {tabHint && <div className={clsx(terminalStyles.line, terminalStyles.muted)}>{tabHint}</div>}
-              <div ref={endRef} />
             </div>
           </div>
         </div>

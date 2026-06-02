@@ -29,6 +29,8 @@ related:
     doc: lab/examples/1134
   - title: "Bash — однострочники и скрипты"
     doc: lab/examples/1151
+  - title: "Поиск текста в файлах — grep, findstr и Select-String"
+    doc: encyclopedia/2-system-network/2-05-terminal/104
   - title: "Nginx — конфиги под задачу"
     doc: lab/examples/11112
   - title: "Dockerfile — 10 типовых образов"
@@ -52,11 +54,12 @@ import DocCardList from '@theme/DocCardList';
 3. [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — стоп-лист перед `rm`, pipe в bash и командами от ИИ-агента.
 4. [Знаки препинания в командной строке](/encyclopedia/2-system-network/2-05-terminal/11) — `|`, `>`, `&&`, кавычки, переменные; [напоминалка по скобкам Bash](/encyclopedia/2-system-network/2-05-terminal/11#napominalka-bash) — `()`, `{}`, `$()`, `[[ ]]`.
 
-**Маршрут Windows:** [справочник команд](/encyclopedia/2-system-network/2-05-terminal/102) → [bat-сценарии](/encyclopedia/2-system-network/2-05-terminal/103) → [PowerShell](/encyclopedia/2-system-network/2-05-terminal/112).
 
 **Продакшен-автоматизация (Windows):** [124](/encyclopedia/5-languages/5-26-powershell/124) → [125](/encyclopedia/5-languages/5-26-powershell/125) → [126](/encyclopedia/5-languages/5-26-powershell/126) → [127](/encyclopedia/5-languages/5-26-powershell/127) → [128](/encyclopedia/5-languages/5-26-powershell/128) → [112](/encyclopedia/2-system-network/2-05-terminal/112) → [111](/encyclopedia/5-languages/5-26-powershell/111).
 
-**Маршрут Linux / macOS:** [справочник и напоминалка команд](/encyclopedia/2-system-network/2-05-terminal/101#napominalka) (включая [дерево каталогов FHS](/encyclopedia/2-system-network/2-05-terminal/101#fhs-katalogi), [`grep` и RegEx](/encyclopedia/2-system-network/2-05-terminal/101#grep--поиск-по-шаблону)) → [скрипты Unix](/encyclopedia/2-system-network/2-05-terminal/111). Готовые однострочники и `.sh` с построчным разбором — [Bash — однострочники и скрипты](/lab/Примеры/1151). Шаблоны RegEx для `grep` — [Regex — готовые паттерны](/lab/Примеры/615). Конфиги веб-сервера — [Nginx — конфиги под задачу](/lab/Примеры/11112).
+**Маршрут Linux / macOS:** [как искать текст в файлах](/encyclopedia/2-system-network/2-05-terminal/104) → [справочник и напоминалка команд](/encyclopedia/2-system-network/2-05-terminal/101#napominalka) (включая [дерево каталогов FHS](/encyclopedia/2-system-network/2-05-terminal/101#fhs-katalogi), [краткий блок `grep`](/encyclopedia/2-system-network/2-05-terminal/101#grep--поиск-по-шаблону)) → [скрипты Unix](/encyclopedia/2-system-network/2-05-terminal/111). Готовые однострочники и `.sh` с построчным разбором — [Bash — однострочники и скрипты](/lab/Примеры/1151). Шаблоны RegEx для `grep` — [Regex — готовые паттерны](/lab/Примеры/615). Конфиги веб-сервера — [Nginx — конфиги под задачу](/lab/Примеры/11112).
+
+**Маршрут Windows:** [как искать текст в файлах](/encyclopedia/2-system-network/2-05-terminal/104) → [справочник команд](/encyclopedia/2-system-network/2-05-terminal/102) → [bat-сценарии](/encyclopedia/2-system-network/2-05-terminal/103) → [PowerShell](/encyclopedia/2-system-network/2-05-terminal/112).
 
 **Удалённый сервер, HTTP и сборка:** [PuTTY и SSH](/encyclopedia/2-system-network/2-05-terminal/1131) · [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) (запросы из консоли) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) (JavaScript в браузере) · [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134) (curl и `npm test` в workflow) · [Dockerfile — 10 типовых образов](/lab/Примеры/11113) (`docker build` / `docker run` из терминала) · [утилита make](/encyclopedia/2-system-network/2-05-terminal/1132) (оркестрация команд по Makefile, не замена shell).
 

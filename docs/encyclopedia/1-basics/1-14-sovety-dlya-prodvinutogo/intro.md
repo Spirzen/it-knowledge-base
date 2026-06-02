@@ -11,6 +11,10 @@ related:
     doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
   - title: Терминал
     doc: encyclopedia/2-system-network/2-05-terminal/intro
+  - title: "Поиск текста в файлах — grep, findstr и Select-String"
+    doc: encyclopedia/2-system-network/2-05-terminal/104
+  - title: Управление службами в Windows
+    doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64
   - title: Код и разработка
     doc: encyclopedia/4-code-dev/code-dev
 ---
@@ -49,6 +53,7 @@ import DocCardList from '@theme/DocCardList';
 | [Приватность и self-hosting](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4) | Nextcloud, Vaultwarden, WireGuard, DNS, бэкапы |
 | [Рабочий процесс без мыши](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5) | Клавиатура, редакторы, PowerToys |
 | [Процессы и чистка Windows](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6) | Диспетчер задач, телеметрия, кэши, RGB-софт |
+| [Управление службами в Windows](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64) | Какие службы оставлять системными, какие переводить в ручной запуск |
 | [Игры: FPS и латентность](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7) | Shader cache, input lag, память, драйверы |
 | [Железо и диагностика](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/8) | Охлаждение, троттлинг, устойчивость системы |
 | [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) | F12, Network, отладка веб-приложений (при уходе в разработку) |

@@ -65,7 +65,7 @@ import DocCardList from '@theme/DocCardList';
 7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [Virtual Threads (Java 21+)](./308.md), [JVM и потоки](./23.md).
 8. [Аннотации и рефлексия](./299.md), [современный синтаксис](./300.md) — record, sealed, pattern matching.
 9. [Вопросы на собеседование — Core Java](./301.md) — карта тем → главы раздела.
-10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [Security Basic](./272.md) → [JWT](./274.md) → [безопасность в prod](./275.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
+10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [аннотации Spring Boot](./304.md) → [Security Basic](./272.md) → [JWT](./274.md) → [безопасность в prod](./275.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 11. **JVM в проде:** [JVM и потоки](./23.md) → [флаги запуска в справочнике, §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [jcmd, heap dump, JFR](./302.md).
 
 <div class="callout callout--info">

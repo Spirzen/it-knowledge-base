@@ -8,6 +8,7 @@
 import React, {
   type ComponentProps,
   type ReactNode,
+  startTransition,
   useEffect,
   useMemo,
 } from 'react';
@@ -233,8 +234,10 @@ function DocSidebarItemCategoryCollapsible({
   const {expandedItem, setExpandedItem} = useDocSidebarItemsExpandedState();
   // Use this instead of `setCollapsed`, because it is also reactive
   const updateCollapsed = (toCollapsed: boolean = !collapsed) => {
-    setExpandedItem(toCollapsed ? null : index);
-    setCollapsed(toCollapsed);
+    startTransition(() => {
+      setExpandedItem(toCollapsed ? null : index);
+      setCollapsed(toCollapsed);
+    });
   };
   useAutoExpandActiveCategory({
     isActive,

@@ -68,7 +68,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | **Electron** | десктоп на Chromium + Node.js | [Применение](./14.md) |
 | **webOS** | платформа устройств (TV) на веб-технологиях | [Применение](./14.md) |
 | **jQuery** | библиотека DOM и AJAX (2006+) | [Экосистема](./25.md) |
-| **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md) ([карта тем](./27.md#карта-тем-react), [первая программа](./272.md), [справочник](./271.md), [галерея компонентов](/lab/Примеры/1146)), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
+| **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md) ([карта тем](./27.md#карта-тем-react), [первая программа](./272.md), [справочник](./3-ecosystem/2-frontend-frameworks/271.md), [галерея компонентов](/lab/Примеры/1146)), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
@@ -112,7 +112,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 ### Важно про TypeScript
 
-Если идёте в сторону крупных frontend/backend-проектов, добавьте в маршрут [TypeScript](./30.md). Для ветки 7.x в экосистеме TypeScript анонсирован нативный компилятор на Go: это ориентировано на более быструю проверку типов и сборку в больших кодовых базах, особенно в CI/CD. Примеры workflow для Node — [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134).
+Если идёте в сторону крупных frontend/backend-проектов, добавьте в маршрут [TypeScript (подробнее в отдельном разделе)](/encyclopedia/5-languages/5-10-typescript/intro). Для ветки 7.x в экосистеме TypeScript анонсирован нативный компилятор на Go: это ориентировано на более быструю проверку типов и сборку в больших кодовых базах, особенно в CI/CD. Примеры workflow для Node — [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134).
 
 Практический вывод: при обновлении toolchain проверяйте официальные release notes TypeScript и совместимость вашей инфраструктуры.
 
@@ -120,7 +120,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 ### Маршрут по TypeScript
 
-Пошаговое углубление в [статью TypeScript](./30.md):
+Пошаговое углубление в [отдельный раздел TypeScript](/encyclopedia/5-languages/5-10-typescript/intro):
 
 | Шаг | Тема | Раздел |
 |-----|------|--------|
@@ -133,7 +133,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 7 | Promise, Worker | [§ Асинхронность с типами](./30.md#асинхронность-с-типами), [21.md](./21.md) |
 | 8 | Миграция JS-проекта | [§ Поэтапная миграция](./30.md#поэтапная-миграция) |
 | 9 | Monorepo, NPM | [§ Monorepo и публикация](./30.md#monorepo-и-публикация) |
-| 10 | Шпаргалка | [Справочник TypeScript](./301.md) |
+| 10 | Шпаргалка | [Справочник TypeScript](/encyclopedia/5-languages/5-10-typescript/2) |
 
 ---
 
@@ -143,14 +143,14 @@ JavaScript оживляет страницу в **браузере**. Это н�
 |-----|----------|-------|
 | 1 | [Основы JavaScript](./1.md) | Синтаксис, браузер |
 | 1a | [Типы данных](./18.md) | Примитивы, [методы строк](./18.md#методы-строк) (`charAt`, `includes`, `slice`, …) |
-| 1b | [TypeScript](./30.md) | Типизация и масштабирование больших проектов |
-| 2 | [Первая программа на Node.js](./262.md) → [Express](./263.md) | Консоль, npm, `http`, REST API |
-| 2a | [Точка входа в Node.js](./48.md) | `require.main`, ESM и прямой `node file.js` |
-| 3 | [React](./272.md) · [галерея компонентов](/lab/Примеры/1146) · [Vue](./282.md) · [Next](./2731.md) | UI |
-| 3b | [Fullstack](./264.md) | API + фронт, CORS |
+| 1b | [TypeScript (подробнее в отдельном разделе)](/encyclopedia/5-languages/5-10-typescript/intro) | Типизация и масштабирование больших проектов |
+| 2 | [Первая программа на Node.js](./3-ecosystem/1-runtime-node/262.md) → [Express](./3-ecosystem/1-runtime-node/263.md) | Консоль, npm, `http`, REST API |
+| 2a | [Точка входа в Node.js](./3-ecosystem/1-runtime-node/48.md) | `require.main`, ESM и прямой `node file.js` |
+| 3 | [React](./3-ecosystem/2-frontend-frameworks/1-react/272.md) · [галерея](/lab/Примеры/1146) · [Vue](./3-ecosystem/2-frontend-frameworks/2-vue/282.md) · [Next](./3-ecosystem/3-meta-frameworks/2731.md) | UI |
+| 3b | [Fullstack](./3-ecosystem/1-runtime-node/264.md) | API + фронт, CORS |
 | 4 | [Angular](./292.md) | Крупные SPA (по желанию) |
 | 5 | [Electron + React](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118) | Десктоп |
-| 5a | [TypeScript](./30.md) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Игры на TS (Canvas, онлайн-карты) |
+| 5a | [TypeScript (подробнее в отдельном разделе)](/encyclopedia/5-languages/5-10-typescript/intro) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Игры на TS (Canvas, онлайн-карты) |
 
 В конце раздела — [чек-лист самопроверки](./999.md).
 
@@ -158,7 +158,15 @@ JavaScript оживляет страницу в **браузере**. Это н�
   <div class="callout-title">Маршрут: от Node до fullstack</div>
 
   <div class="callout-body">
-  Последовательность «сервер → браузер → сборка»: <a href="./262.md">262</a> (Node до Express) → <a href="./18.md">типы и Date</a> → <a href="./21.md">async и fetch</a> → <a href="/lab/Примеры/1145">Fetch / axios — типовые запросы</a> → <a href="./102.md">DOM</a> → <a href="./47.md">Canvas</a> → <a href="/lab/Примеры/1114">p5.js — фигуры</a> → <a href="./25.md#сборка-для-браузера--webpack-и-vite">Webpack / Vite</a> → <a href="./263.md">Express</a> → <a href="./264.md">Fullstack</a>.
+  Последовательность «сервер → браузер → сборка»: <a href="./3-ecosystem/1-runtime-node/262.md">262</a> (Node до Express) → <a href="./18.md">типы и Date</a> → <a href="./21.md">async и fetch</a> → <a href="/lab/Примеры/1145">Fetch / axios — типовые запросы</a> → <a href="./102.md">DOM</a> → <a href="./47.md">Canvas</a> → <a href="/lab/Примеры/1114">p5.js — фигуры</a> → <a href="./25.md#сборка-для-браузера--webpack-и-vite">Webpack / Vite</a> → <a href="./3-ecosystem/1-runtime-node/263.md">Express</a> → <a href="./3-ecosystem/1-runtime-node/264.md">Fullstack</a>.
+</div>
+</div>
+
+<div class="callout callout--info">
+  <div class="callout-title">Новая карта экосистемы</div>
+
+  <div class="callout-body">
+  Для тем по runtime и фреймворкам используйте отдельную карту: <a href="./3-ecosystem/intro">JavaScript экосистема — Runtime и Frameworks</a>. Там собраны ветки <strong>Node.js</strong>, <strong>Frontend Frameworks</strong> и <strong>Meta Frameworks</strong>.
 </div>
 </div>
 

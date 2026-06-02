@@ -25,6 +25,7 @@ html[data-design]:not([data-design='design-universe-original']) {
   --ifm-sidebar-background-color: var(--d-surface);
   --ifm-menu-color: var(--d-text);
   --ifm-menu-color-active: var(--d-primary);
+  --ifm-menu-color-background-hover: color-mix(in srgb, var(--d-primary) 14%, var(--d-surface));
   --ifm-menu-color-background-active: color-mix(in srgb, var(--d-primary) 18%, transparent);
 
   --ifm-footer-background-color: var(--d-footer);

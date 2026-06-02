@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Сайдбар 02 — Космическое стекло · Вселенная IT</title>
+  <link rel="stylesheet" href="base.css" />
+  <style>
+    :root {
+      --primary: #8b7cf6;
+      --primary-dark: #6d5ce8;
+      --bg: #0b0d14;
+      --surface: #141824;
+      --text: #e8eaff;
+      --muted: #9aa3c7;
+      --border: rgba(255, 255, 255, 0.1);
+      --sidebar-bg: rgba(15, 17, 25, 0.72);
+    }
+
+    body {
+      background: var(--bg);
+      background-image:
+        radial-gradient(ellipse 80% 50% at 0% 0%, rgba(139, 124, 246, 0.15), transparent 50%),
+        radial-gradient(ellipse 60% 40% at 100% 100%, rgba(109, 92, 232, 0.1), transparent 45%);
+    }
+
+    .navbar {
+      background: rgba(15, 17, 25, 0.85);
+      backdrop-filter: blur(12px);
+      border-bottom-color: var(--border);
+      box-shadow: none;
+    }
+
+    .navbar__search {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    .theme-doc-sidebar-container {
+      background: var(--sidebar-bg);
+      backdrop-filter: blur(16px) saturate(1.2);
+      border-right: 1px solid rgba(139, 124, 246, 0.2);
+      box-shadow: 4px 0 32px rgba(0, 0, 0, 0.35);
+    }
+
+    nav.menu > .sidebar-tools {
+      border-bottom-color: var(--border);
+    }
+
+    nav.menu > .sidebar-tools input[type="search"] {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: var(--border);
+      color: var(--text);
+    }
+
+    .sidebar-quick-filters button {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--muted);
+    }
+
+    .sidebar-quick-filters button.is-active {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 0 12px rgba(139, 124, 246, 0.45);
+    }
+
+    .menu__link {
+      color: var(--muted) !important;
+      border-radius: 8px !important;
+    }
+
+    .menu__link:hover {
+      background: rgba(139, 124, 246, 0.12) !important;
+      color: var(--text) !important;
+    }
+
+    .menu__link--sublist {
+      color: #c4b5fd !important;
+      font-weight: 600 !important;
+    }
+
+    .menu__list .menu__list {
+      border-left: 1px solid rgba(139, 124, 246, 0.25) !important;
+      background: linear-gradient(90deg, rgba(139, 124, 246, 0.08), transparent 8px) !important;
+    }
+
+    .menu__link--active {
+      background: rgba(139, 124, 246, 0.2) !important;
+      color: #fff !important;
+      box-shadow:
+        inset 0 0 0 1px rgba(196, 181, 253, 0.35),
+        0 0 20px rgba(139, 124, 246, 0.25) !important;
+      animation: none !important;
+    }
+
+    .menu__list-item-collapsible {
+      border-color: var(--border) !important;
+    }
+
+    .doc-article-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <p class="mock-nav-hub"><a href="index.html">← все макеты</a></p>
+  <span class="mock-badge">02 · Космическое стекло<br />тёмная тема, glow</span>
+  <p class="mock-note">Сочетается с <code>design-cosmic-void</code>. Только CSS в <code>[data-theme='dark']</code> или data-design.</p>
+
+  <header class="navbar">
+    <a class="navbar__brand" href="#">Вселенная IT</a>
+    <div class="navbar__items"><a href="#">Энциклопедия</a></div>
+    <input class="navbar__search" type="search" placeholder="Поиск…" />
+  </header>
+
+  <div class="docRoot">
+    <aside class="theme-doc-sidebar-container">
+      <div class="theme-doc-sidebar-container-inner">
+        <nav class="menu thin-scrollbar theme-doc-sidebar-menu" aria-label="Docs sidebar">
+          <div class="sidebar-tools">
+            <input type="search" placeholder="Фильтр по категориям..." />
+            <div class="sidebar-quick-filters">
+              <button type="button">Языки</button>
+              <button type="button" class="is-active">Сеть</button>
+            </div>
+          </div>
+          <ul class="menu__list theme-doc-sidebar-menu">
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">1. Основы</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link" href="#">Введение</a></li>
+              </ul>
+            </li>
+            <li class="theme-doc-sidebar-item-category menu__list-item">
+              <div class="menu__list-item-collapsible">
+                <a class="menu__link menu__link--sublist menu__link--sublist-caret" href="#">2. Система и сеть</a>
+                <button type="button" class="clean-btn menu__caret"></button>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__link menu__link--active" href="#">Терминал</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <main class="docMainContainer">
+      <article class="doc-article-card">
+        <h1>Терминал</h1>
+        <p>Полупрозрачная панель, мягкое свечение у активного пункта — в духе «космоса» на главной (макет 02).</p>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

@@ -26,6 +26,7 @@ import {
   stopContainer,
   welcomeLogs,
 } from './shared/dockerEngine';
+import {useTerminalBodyScroll} from './shared/useTerminalBodyScroll';
 import styles from './DockerEmulator.module.css';
 
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -48,15 +49,13 @@ function DockerEmulatorInner() {
   const [pushName, setPushName] = useState('');
   const [busy, setBusy] = useState(false);
 
-  const endRef = useRef(null);
+  const termBodyRef = useRef(null);
 
   const appendLogs = useCallback((entries) => {
     setLogs((prev) => [...prev, ...entries]);
   }, []);
 
-  useEffect(() => {
-    endRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [logs, busy]);
+  useTerminalBodyScroll(termBodyRef, [logs, busy]);
 
   const runAsync = useCallback(async (fn) => {
     setBusy(true);
@@ -374,7 +373,7 @@ function DockerEmulatorInner() {
                 clear
               </button>
             </div>
-            <div className={styles.termBody}>
+            <div ref={termBodyRef} className={styles.termBody}>
               {logs.map((log) => (
                 <div key={log.id} className={styles.logLine}>
                   <span className={styles.logTime}>[{log.time}]</span>
@@ -399,7 +398,6 @@ function DockerEmulatorInner() {
                 />
                 <span className={styles.cursor} aria-hidden />
               </div>
-              <div ref={endRef} />
             </div>
             <div className={styles.hints}>
               {DOCKER_QUICK_COMMANDS.map(({label, cmd}) => (

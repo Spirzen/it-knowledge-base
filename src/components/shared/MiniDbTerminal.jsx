@@ -1,6 +1,7 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react';
+import React, {useCallback, useRef, useState} from 'react';
 import clsx from 'clsx';
 import terminalStyles from '../TerminalEmulator.module.css';
+import {useTerminalBodyScroll} from './useTerminalBodyScroll';
 
 const LINE_CLASS = {
   banner: terminalStyles.banner,
@@ -40,12 +41,10 @@ export default function MiniDbTerminal({
   const [input, setInput] = useState('');
   const [history, setHistory] = useState([]);
   const [histIdx, setHistIdx] = useState(-1);
-  const endRef = useRef(null);
+  const scrollRef = useRef(null);
   const inputRef = useRef(null);
 
-  useEffect(() => {
-    endRef.current?.scrollIntoView({behavior: 'smooth'});
-  }, [lines]);
+  useTerminalBodyScroll(scrollRef, [lines]);
 
   const run = useCallback(
     (raw) => {
@@ -95,7 +94,8 @@ export default function MiniDbTerminal({
   return (
     <div>
       <div
-        className={terminalStyles.terminal}
+        ref={scrollRef}
+        className={terminalStyles.body}
         style={{minHeight}}
         onClick={() => inputRef.current?.focus()}
         role="presentation"
@@ -116,7 +116,6 @@ export default function MiniDbTerminal({
             aria-label="Команда"
           />
         </div>
-        <div ref={endRef} />
       </div>
       {hints.length > 0 && (
         <p className="it-demo__hint" style={{marginTop: '0.5rem'}}>

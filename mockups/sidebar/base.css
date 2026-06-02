@@ -1,0 +1,245 @@
+/* Общая оболочка «страница документации» для макетов сайдбара — без сборки */
+
+:root {
+  --primary: #7b68ee;
+  --primary-dark: #6a5acd;
+  --bg: #f4f5f9;
+  --surface: #fff;
+  --text: #2c3e50;
+  --muted: #5a6c7d;
+  --border: #e2e6ef;
+  --sidebar-bg: #f8f9fa;
+  --nav-h: 52px;
+  --doc-sidebar-width: 17rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.mock-badge {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 9999;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  border-radius: 6px;
+  background: #1a1a2e;
+  color: #fff;
+  max-width: 14rem;
+  text-align: right;
+  line-height: 1.35;
+}
+
+.mock-note {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  z-index: 9998;
+  max-width: 22rem;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  border-radius: 8px;
+  background: rgba(26, 26, 46, 0.92);
+  color: #e8e8ff;
+}
+
+.mock-note a { color: #b19cd9; }
+
+.mock-nav-hub {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 9999;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.mock-nav-hub a {
+  color: var(--primary);
+  text-decoration: none;
+  padding: 0.3rem 0.55rem;
+  border-radius: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+/* —— как на сайте: navbar + docRoot —— */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(123, 104, 238, 0.08);
+}
+
+.navbar__brand {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar__items {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.85rem;
+  flex: 1;
+}
+
+.navbar__items a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.navbar__search {
+  flex: 0 1 220px;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  background: var(--bg);
+}
+
+.docRoot {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: calc(100vh - var(--nav-h));
+}
+
+.theme-doc-sidebar-container {
+  flex-shrink: 0;
+  position: relative;
+  z-index: 3;
+  width: var(--doc-sidebar-width);
+  max-width: min(26rem, 42vw);
+  min-height: calc(100vh - var(--nav-h));
+  border-right: 1px solid var(--border);
+  background: var(--sidebar-bg);
+}
+
+.theme-doc-sidebar-container-inner {
+  position: sticky;
+  top: var(--nav-h);
+  max-height: calc(100vh - var(--nav-h));
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* nav.menu — тот же корень, что в DocSidebarDesktopContent */
+
+nav.menu {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+  scrollbar-gutter: stable;
+}
+
+nav.menu .menu__list,
+nav.menu .menu__list-item {
+  list-style: none;
+}
+
+nav.menu .menu__list-item::marker {
+  content: none;
+}
+
+/* Первый блок в nav = поиск + чипы (в проде — sidebarSearchWrapper) */
+nav.menu > .sidebar-tools {
+  padding: 0.25rem 0.5rem 0.55rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.35rem;
+}
+
+.sidebar-tools input[type="search"] {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  font-size: 0.85rem;
+  background: var(--surface);
+  font-family: inherit;
+}
+
+.sidebar-tools input[type="search"]:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+.sidebar-quick-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+.sidebar-quick-filters button {
+  border: none;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  cursor: pointer;
+  background: #eceef3;
+  color: var(--muted);
+  font-family: inherit;
+}
+
+.sidebar-quick-filters button.is-active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.docMainContainer {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 1.5rem 2rem 3rem;
+}
+
+.theme-doc-markdown > article,
+.doc-article-card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  max-width: 52rem;
+}
+
+.doc-article-card h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.85rem;
+  letter-spacing: -0.02em;
+}
+
+.doc-article-card p {
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 996px) {
+  .theme-doc-sidebar-container {
+    display: none;
+  }
+  .mock-note::after {
+    content: ' На узком экране сайдбар — в мобильном drawer (navbar-sidebar), макет показывает desktop.';
+  }
+}
