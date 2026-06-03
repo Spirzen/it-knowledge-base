@@ -27,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Типы и сравнения в Bash:** [Ключевые слова и зарезервированные конструкции](./114.md) (строки, числа, массивы, операторы `[[ ]]`).
 
-**Скобки и метасимволы:** [напоминалка](./123.md#napominalka-skobki) в справочнике · то же в контексте терминала — [Знаки препинания](/encyclopedia/2-system-network/2-05-terminal/11#napominalka-bash).
+**Скобки и метасимволы:** [напоминалка](./123.md#napominalka-skobki) в справочнике · то же в контексте терминала — [Знаки препинания](/encyclopedia/2-system-network/2-05-terminal/11#napominalka-bash) · [русские и английские имена символов](/encyclopedia/1-basics/1-30-angliyskiy-yazyk/7).
 
 ---
 

@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [Архитектура процессора](./3.md) | Стек, куча, регистры, инструкции |
 | 4 | [Функции](./112.md), [циклы](./113.md), [условия](./114.md) | Управление потоком |
 | 5 | [Переменные](./115.md) (типы, scope, namespace), [неопределённое поведение](./111.md) | Данные и границы языка |
-| 6 | [Байт-код и VM](./314.md) | IR, P-код, Java, .NET, AOT и JIT |
+| 6 | [Process VM и среда выполнения](./116.md), [байт-код — JIT и IR](./314.md) | JVM, CLR, V8, PVM; отличие от VirtualBox |
 | — | [Память процесса](./313.md) | Виртуальные адреса, сегменты, подкачка страниц |
 | — | [Четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) | Bare metal, ВМ, контейнеры (отдельно от JVM/CLR) |
 

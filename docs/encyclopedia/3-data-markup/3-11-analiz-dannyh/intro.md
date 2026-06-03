@@ -23,8 +23,10 @@ related:
     doc: encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro
   - title: "Python — о разделе"
     doc: encyclopedia/5-languages/5-02-python/intro
-  - title: "R — о разделе"
+  - title: R — о разделе
     doc: encyclopedia/5-languages/5-23-r/intro
+  - title: Наука (контекст)
+    doc: context/science/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

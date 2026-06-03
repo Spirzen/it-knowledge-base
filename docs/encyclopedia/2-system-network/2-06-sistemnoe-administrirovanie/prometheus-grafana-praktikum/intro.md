@@ -32,13 +32,17 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--tip">
   <div class="callout-title">Стек уже поднят?</div>
 
+  <div class="callout-body">
   Переходите сразу к [Как пользоваться](./usage.md) — два URL, `up`, добавление своего сервиса, Explore и дашборд.
+  </div>
 </div>
 
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
 
+  <div class="callout-body">
   Нужны понимание [HTTP и портов](../6.md) и **Docker Compose** ([контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [готовые стеки](/lab/Примеры/11111)). Подойдут Linux VM, WSL2 или **Windows 10/11 + Docker Desktop** — минимальный стенд из [шага 2](./2.md) проверен на последнем: нестандартные порты, **windows_exporter**, русский UI Grafana 12, provisioning дашборда Windows.
+  </div>
 </div>
 
 ---
@@ -124,7 +128,9 @@ flowchart TB
 <div class="callout callout--tip">
   <div class="callout-title">Официальные материалы</div>
 
+  <div class="callout-body">
   База — [документация Prometheus](https://prometheus.io/docs/), [Getting started](https://prometheus.io/docs/prometheus/latest/getting_started/), [First steps](https://prometheus.io/docs/introduction/first_steps/), [Grafana docs](https://grafana.com/docs/), туториалы [метрики](https://prometheus.io/docs/tutorials/understanding_metric_types/), [Grafana](https://prometheus.io/docs/tutorials/visualizing_metrics_using_grafana/), [алерты](https://prometheus.io/docs/tutorials/alerting_based_on_metrics/). Полезен обзорный [Prometheus workshop](https://github.com/juliusv/prometheus_workshop/blob/master/workshop.md).
+  </div>
 </div>
 
 ---

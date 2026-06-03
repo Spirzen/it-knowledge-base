@@ -1,17 +1,33 @@
+import React, {lazy, Suspense} from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-import UniverseMap from '@site/src/components/UniverseMap';
-import GettingStartedPaths from '@site/src/components/GettingStartedPaths';
-import UniverseLogo from '@site/src/components/UniverseLogo';
-import RandomArticle from '@site/src/components/RandomArticle';
 import HomepageHeroSearch from '@site/src/components/HomepageHeroSearch';
+import UniverseLogo from '@site/src/components/UniverseLogo';
 import styles from './index.module.css';
 
+const UniverseMap = lazy(() => import('@site/src/components/UniverseMap'));
+const GettingStartedPaths = lazy(
+  () => import('@site/src/components/GettingStartedPaths'),
+);
+const RandomArticle = lazy(() => import('@site/src/components/RandomArticle'));
+
 const APK_DOWNLOAD_PATH = '/downloads/it-universe.apk';
+const INDEX_GUIDE_PATH =
+  '/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101';
+
+function HomeSectionFallback({minHeight = '12rem'}) {
+  return (
+    <div
+      className={styles.sectionFallback}
+      style={{minHeight}}
+      aria-hidden="true"
+    />
+  );
+}
 
 function HomepageHeader() {
   const apkUrl = useBaseUrl(APK_DOWNLOAD_PATH);
@@ -37,10 +53,14 @@ function HomepageHeader() {
               </Link>
               <Link
                 className="button button--secondary button--lg"
-                to="/about/interactive">
+                to="/about/interactive"
+                prefetch={false}>
                 Витрина
               </Link>
             </div>
+            <Link className={styles.heroIndexLink} to={INDEX_GUIDE_PATH} prefetch={false}>
+              Указатель — где и о чём почитать
+            </Link>
           </div>
           <footer className={styles.heroFooter}>
             <a
@@ -61,7 +81,9 @@ function HomepageDiscover() {
     <section className={styles.discoverSection} aria-label="Случайная статья">
       <div className="container">
         <div className={styles.discoverCard}>
-          <RandomArticle variant="discover" />
+          <Suspense fallback={<HomeSectionFallback minHeight="8rem" />}>
+            <RandomArticle variant="discover" />
+          </Suspense>
         </div>
       </div>
     </section>
@@ -85,7 +107,8 @@ function HomepageInteractive() {
           <div className={styles.interactiveActions}>
             <Link
               className="button button--primary button--lg"
-              to="/about/interactive">
+              to="/about/interactive"
+              prefetch={false}>
               Витрина
             </Link>
             <Link
@@ -94,7 +117,7 @@ function HomepageInteractive() {
               Навигатор
             </Link>
             <Link
-              className="button button--outline button--primary button--lg"
+              className="button button--secondary button--lg"
               to="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">
               Дорожная карта
             </Link>
@@ -191,8 +214,12 @@ export default function Home() {
       paddingBottom={false}>
       <HomepageHeader />
       <main>
-        <UniverseMap />
-        <GettingStartedPaths />
+        <Suspense fallback={<HomeSectionFallback minHeight="20rem" />}>
+          <UniverseMap />
+        </Suspense>
+        <Suspense fallback={<HomeSectionFallback minHeight="16rem" />}>
+          <GettingStartedPaths />
+        </Suspense>
         <HomepageInteractive />
         <HomepageDiscover />
         <HomepageFeatures />

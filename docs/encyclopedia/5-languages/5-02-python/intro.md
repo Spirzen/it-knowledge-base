@@ -42,6 +42,16 @@ Python удобен для **первого языка**: читается по�
 
 Теория и контекст: [Python — язык общего назначения](./1.md) · [история](./14.md) · [Дзен Python](./15.md) · [архитектура CPython](./11.md). Краткие идиоматичные записи — [однострочные приёмы](./38.md) (обзор для всех языков — [в разделе «Код»](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/614)).
 
+<div class="callout callout--tip">
+  <div class="callout-title">Официальная документация</div>
+
+  <div class="callout-body">
+  Статьи раздела объясняют язык и экосистему; при споре о синтаксисе, API библиотеки или флагах CLI сверяйтесь с первоисточником:
+
+  [Python 3 (RU)](https://docs.python.org/3/ru/) · [Django](https://docs.djangoproject.com/) · [FastAPI](https://fastapi.tiangolo.com/ru/) · [Metanit: Python](https://metanit.com/python/) · [подборка документации](/tools/documentation/2).
+  </div>
+</div>
+
 <div class="callout callout--info">
   <div class="callout-title">Среда выполнения Python</div>
 

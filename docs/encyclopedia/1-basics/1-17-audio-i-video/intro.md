@@ -7,6 +7,8 @@ related:
     doc: encyclopedia/1-basics/1-16-grafika/intro
   - title: Компьютерные игры
     doc: encyclopedia/1-basics/1-18-kompyuternye-igry/intro
+  - title: Развлечения (контекст)
+    doc: context/entertainment/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

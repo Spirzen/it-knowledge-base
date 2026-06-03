@@ -27,7 +27,10 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">pgAdmin и phpPgAdmin</div>
+
+  <div class="callout-body">
   В учебных и промышленных средах для PostgreSQL чаще встречают <strong>pgAdmin 4</strong> (отдельное приложение, не PHP). phpPgAdmin остаётся полезен там, где уже есть LAMP/PHP-стек и нужен лёгкий веб-клиент без установки pgAdmin.
+  </div>
 </div>
 
 ---

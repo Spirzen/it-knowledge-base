@@ -36,7 +36,9 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
 
+  <div class="callout-body">
   Материал рассчитан на тех, кто уже писал SQL и подключал PostgreSQL из кода, но ещё **не эксплуатировал** СУБД в контейнерах или кластере. Нужны базовый Linux, понимание [Docker](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111) и желательно знакомство с [Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211).
+  </div>
 </div>
 
 ---

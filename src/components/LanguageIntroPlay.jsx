@@ -5,12 +5,12 @@ import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
 import {
   formatLanguageLabel,
-  getHeaderIcon,
   getLanguageIntro,
   KIND_LABELS,
   LANGUAGE_INTROS,
   OVERVIEW_ARTICLE,
 } from './shared/languageIntroData';
+import TechIcon from './TechIcon';
 import styles from './LanguageIntroPlay.module.css';
 
 const TABS = [
@@ -48,20 +48,18 @@ export function LanguageIntroPlayInner({topic, embedded = false}) {
   }
 
   const accent = ACCENT_BY_KIND[display.kind] ?? '#6366f1';
-  const headerIcon = getHeaderIcon(display);
 
   const body = (
         <div className={styles.root} style={{'--accent': accent}}>
           <div className={styles.header}>
-            {headerIcon && (
-              <span
-                className={styles.icon}
-                style={{background: accent}}
-                aria-hidden
-              >
-                {headerIcon}
-              </span>
-            )}
+            <TechIcon
+              techId={display.id}
+              variant="badge"
+              size="sm"
+              accent={accent}
+              className={styles.icon}
+              title={display.name}
+            />
             <div className={styles.headText}>
               <h5 className={styles.title}>{display.name}</h5>
               <p className={styles.meta}>

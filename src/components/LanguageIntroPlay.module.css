@@ -12,15 +12,6 @@
 }
 
 .icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 10px;
-  font-size: 0.85rem;
-  font-weight: 800;
-  color: #fff;
   flex-shrink: 0;
 }
 

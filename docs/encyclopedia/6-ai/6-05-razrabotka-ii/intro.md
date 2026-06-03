@@ -27,13 +27,15 @@ related:
     doc: lab/examples/1150
   - title: "Интеграция ИИ-моделей в Python"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/112
+  - title: "Оркестрация AI-агентов"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/121
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Первый вызов Chat Completions из Python с разбором строк — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149). Шаблоны system/user для чата и RAG — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Промышленные паттерны клиента — [интеграция ИИ-моделей в Python](/encyclopedia/6-ai/6-05-razrabotka-ii/112).
+Первый вызов Chat Completions из Python с разбором строк — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149). Шаблоны system/user для чата и RAG — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Промышленные паттерны клиента — [интеграция ИИ-моделей в Python](/encyclopedia/6-ai/6-05-razrabotka-ii/112). Мультиагентные потоки (Sequential, Parallel, Router, Debate) и фреймворки — [Оркестрация AI-агентов](/encyclopedia/6-ai/6-05-razrabotka-ii/121).
 
 <DocCardList />
 

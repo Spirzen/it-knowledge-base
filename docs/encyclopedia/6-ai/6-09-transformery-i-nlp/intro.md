@@ -40,6 +40,7 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--tip">
   <div class="callout-title">Рекомендуемый порядок</div>
 
+  <div class="callout-body">
   1. [NLP и работа с текстом](./1) — задачи, корпуса, метрики.
   2. [Что такое трансформер](./2) — attention, encoder/decoder, особенности.
   3. [Трансформер с нуля](./3) — теория и минимальная реализация на PyTorch.
@@ -51,6 +52,7 @@ import DocCardList from '@theme/DocCardList';
   9. [Итоги](./98) и [чек-лист](./999).
 
   Перед разделом полезны [нейрон и слои](/encyclopedia/6-ai/6-03-neyroseti/1), [NumPy — массивы и матрицы](/lab/Примеры/1129), [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2) и [PyTorch для разработчика](/encyclopedia/5-languages/5-02-python/333). После — [LLM и ChatGPT](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1), [работа с ИИ-моделями](/encyclopedia/6-ai/6-05-razrabotka-ii/113), вызов API — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149) и шаблоны запросов — [Prompt engineering — библиотека промптов](/lab/Примеры/1150).
+  </div>
 </div>
 
 <DocCardList />

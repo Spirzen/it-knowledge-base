@@ -21,8 +21,10 @@ related:
     doc: encyclopedia/6-ai/6-06-primenenie-ii/120
   - title: "Облачные API Cognitive Services"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/120
-  - title: "Трансформеры и NLP — о разделе"
+  - title: Трансформеры и NLP — о разделе
     doc: encyclopedia/6-ai/6-09-transformery-i-nlp/intro
+  - title: Здравоохранение (контекст)
+    doc: context/healthcare/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

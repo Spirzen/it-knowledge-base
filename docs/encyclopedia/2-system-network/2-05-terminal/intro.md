@@ -27,6 +27,8 @@ related:
     doc: lab/examples/1145
   - title: "GitHub Actions — CI/CD рецепты"
     doc: lab/examples/1134
+  - title: "CLI — шпаргалка сценариев (порты, процессы, стеки)"
+    doc: lab/examples/1156
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -50,7 +52,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Маршрут Linux / macOS:** [как искать текст в файлах](/encyclopedia/2-system-network/2-05-terminal/104) → [справочник и напоминалка команд](/encyclopedia/2-system-network/2-05-terminal/101#napominalka) (включая [дерево каталогов FHS](/encyclopedia/2-system-network/2-05-terminal/101#fhs-katalogi), [краткий блок `grep`](/encyclopedia/2-system-network/2-05-terminal/101#grep--поиск-по-шаблону)) → [скрипты Unix](/encyclopedia/2-system-network/2-05-terminal/111). Готовые однострочники и `.sh` с построчным разбором — [Bash — однострочники и скрипты](/lab/Примеры/1151). Шаблоны RegEx для `grep` — [Regex — готовые паттерны](/lab/Примеры/615). Конфиги веб-сервера — [Nginx — конфиги под задачу](/lab/Примеры/11112).
 
-**Маршрут Windows:** [как искать текст в файлах](/encyclopedia/2-system-network/2-05-terminal/104) → [справочник команд](/encyclopedia/2-system-network/2-05-terminal/102) → [bat-сценарии](/encyclopedia/2-system-network/2-05-terminal/103) → [PowerShell](/encyclopedia/2-system-network/2-05-terminal/112).
+**Маршрут Windows:** [как искать текст в файлах](/encyclopedia/2-system-network/2-05-terminal/104) → [справочник команд](/encyclopedia/2-system-network/2-05-terminal/102) → [CLI — порты, процессы, dev-сервер](/lab/Примеры/1156) → [bat-сценарии](/encyclopedia/2-system-network/2-05-terminal/103) → [PowerShell](/encyclopedia/2-system-network/2-05-terminal/112).
 
 **Удалённый сервер, HTTP и сборка:** [PuTTY и SSH](/encyclopedia/2-system-network/2-05-terminal/1131) · [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) (запросы из консоли) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) (JavaScript в браузере) · [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134) (curl и `npm test` в workflow) · [Dockerfile — 10 типовых образов](/lab/Примеры/11113) (`docker build` / `docker run` из терминала) · [утилита make](/encyclopedia/2-system-network/2-05-terminal/1132) (оркестрация команд по Makefile, не замена shell).
 

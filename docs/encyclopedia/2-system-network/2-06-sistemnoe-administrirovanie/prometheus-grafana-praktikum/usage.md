@@ -41,7 +41,9 @@ related:
 <div class="callout callout--info">
   <div class="callout-title">Пример портов</div>
 
+  <div class="callout-body">
   Если `9090` и `3000` на машине заняты, в Compose часто ставят другие **внешние** порты — например `9189→9090` и `8347→3000`. Внутри Docker Prometheus всё равно на `9090`, Grafana на `3000`. Конкретные `<PORT_*>` вы задавали при [установке](./2.md).
+  </div>
 </div>
 
 ---
@@ -393,7 +395,9 @@ flowchart TD
 <div class="callout callout--tip">
   <div class="callout-title">Под свой стенд</div>
 
+  <div class="callout-body">
   Если мониторите конкретно **приложение на Windows**, **Docker** или **PostgreSQL** — начните с [шага 5](./5.md): там те же `prometheus.yml` jobs, но с готовыми exporters и примерами instrumentation.
+  </div>
 </div>
 
 ---

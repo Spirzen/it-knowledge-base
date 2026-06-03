@@ -24,3 +24,9 @@ TODO merge this logic back in Infima?
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+
+.categoryTechIcon {
+  display: inline-flex;
+  vertical-align: -0.15em;
+  margin-right: 0.35rem;
+}

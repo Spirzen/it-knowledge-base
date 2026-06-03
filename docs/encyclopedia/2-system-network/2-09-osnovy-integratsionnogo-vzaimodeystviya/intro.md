@@ -25,8 +25,10 @@ related:
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/114
   - title: "curl / fetch — API-запросы"
     doc: lab/examples/1133
-  - title: "Fetch / axios — типовые запросы"
+  - title: Fetch / axios — типовые запросы
     doc: lab/examples/1145
+  - title: Финтех (контекст)
+    doc: context/fintech/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

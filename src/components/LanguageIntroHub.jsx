@@ -3,7 +3,8 @@ import BrowserOnly from '@docusaurus/BrowserOnly';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
-import {formatLanguageLabel, LANGUAGE_INTROS} from './shared/languageIntroData';
+import {LANGUAGE_INTROS} from './shared/languageIntroData';
+import TechIcon from './TechIcon';
 import {LanguageIntroPlayInner} from './LanguageIntroPlay';
 import styles from './LanguageIntroHub.module.css';
 
@@ -41,11 +42,13 @@ function LanguageIntroHubInner() {
                     type="button"
                     className={clsx(
                       'it-demo__btn it-demo__btn--sm',
+                      styles.langBtn,
                       topic !== e.id && 'it-demo__btn--secondary',
                     )}
                     onClick={() => setTopic(e.id)}
                   >
-                    {formatLanguageLabel(e)}
+                    <TechIcon techId={e.id} variant="badge" size="sm" />
+                    <span>{e.name}</span>
                   </button>
                 ))}
               </div>

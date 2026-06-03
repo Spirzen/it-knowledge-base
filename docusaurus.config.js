@@ -95,6 +95,7 @@ module.exports = {
 
   clientModules: [
     require.resolve('./src/clientModules/itDesignThemeInit.js'),
+    require.resolve('./src/clientModules/limitRoutePrefetch.js'),
   ],
 
   i18n: {
@@ -219,7 +220,7 @@ module.exports = {
       },
     }),
     () => ({
-      name: 'it-demo-async-chunks',
+      name: 'it-async-chunks',
       configureWebpack(_config, isServer) {
         if (isServer) {
           return {};
@@ -227,14 +228,22 @@ module.exports = {
         return {
           optimization: {
             splitChunks: {
+              maxAsyncRequests: 12,
               cacheGroups: {
-                /** Только async-импорты; без фиксированного имени demo-widgets */
+                /** Только async-импорты демо; minSize снижает сотни мелких itDemoAsync-чанков */
                 itDemoAsync: {
                   test: /[\\/]src[\\/]components[\\/]/,
                   chunks: 'async',
-                  minSize: 0,
-                  maxSize: 180000,
+                  minSize: 32000,
+                  maxSize: 200000,
                   priority: 15,
+                  reuseExistingChunk: true,
+                },
+                /** Mermaid — только при рендере диаграммы, не в main */
+                itMermaid: {
+                  test: /[\\/]node_modules[\\/](mermaid|@mermaid-js|dagre-d3|khroma)/,
+                  chunks: 'async',
+                  priority: 20,
                   reuseExistingChunk: true,
                 },
               },
@@ -341,10 +350,7 @@ module.exports = {
   markdown: {
     mermaid: true,
   },
-  themes: [
-    '@docusaurus/theme-mermaid',
-    '@docusaurus/theme-live-codeblock',
-  ],
+  themes: ['@docusaurus/theme-mermaid'],
 
   staticDirectories: ['static'],
   future: {

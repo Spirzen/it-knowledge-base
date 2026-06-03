@@ -9,6 +9,9 @@ import DocVersionBanner from '@theme/DocVersionBanner';
 import DocVersionBadge from '@theme/DocVersionBadge';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import Heading from '@theme/Heading';
+import TechIcon from '@site/src/components/TechIcon';
+import {getTechIdForPath} from '@site/src/data/techArticlePages';
+import heroStyles from '@site/src/css/tech-article-hero.module.css';
 import type {Props} from '@theme/DocCategoryGeneratedIndexPage';
 
 import styles from './styles.module.css';
@@ -30,6 +33,7 @@ function DocCategoryGeneratedIndexPageContent({
   categoryGeneratedIndex,
 }: Pick<Props, 'categoryGeneratedIndex'>): ReactNode {
   const category = useCurrentSidebarCategory();
+  const techId = category?.href ? getTechIdForPath(category.href) : null;
 
   return (
     <div className={styles.generatedIndexPage}>
@@ -38,7 +42,19 @@ function DocCategoryGeneratedIndexPageContent({
       <DocVersionBadge />
       <div className={clsx(ThemeClassNames.docs.docMarkdown, 'markdown')}>
         <header>
-          <Heading as="h1">{categoryGeneratedIndex.title}</Heading>
+          <div className={heroStyles.wrap}>
+            {techId ? (
+              <div className={heroStyles.iconHost}>
+                <TechIcon
+                  techId={techId}
+                  variant="badge"
+                  size="lg"
+                  className={heroStyles.icon}
+                />
+              </div>
+            ) : null}
+            <Heading as="h1">{categoryGeneratedIndex.title}</Heading>
+          </div>
           {categoryGeneratedIndex.description && (
             <p className={styles.description}>{categoryGeneratedIndex.description}</p>
           )}

@@ -65,7 +65,10 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--tip">
   <div class="callout-title">Рабочий цикл на каждом этапе</div>
+
+  <div class="callout-body">
   Создай папку проекта и виртуальное окружение один раз в начале трека — дальше работай в той же папке на всех этапах.
+  </div>
 </div>
 
 1. **Подготовь окружение** — отдельная папка проекта и `venv` (или аналог для Java/TypeScript-треков). Установи зависимости из инструкции в первой главе трека.

@@ -78,7 +78,9 @@ flowchart LR
 <div class="callout callout--tip">
   <div class="callout-title">С чего начать, если WPF впервые</div>
 
+  <div class="callout-body">
   Сначала пройдите [119.md](../119.md) (локальные заметки без сервера), затем вернитесь сюда. Параллельно держите открытым [справочник XAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6) и [116.md](../116.md) — карту стеков Windows.
+  </div>
 </div>
 
 ---

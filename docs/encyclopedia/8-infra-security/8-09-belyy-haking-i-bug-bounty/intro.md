@@ -22,7 +22,9 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
 
+  <div class="callout-body">
   Раздел полезен разработчикам, тестировщикам, будущим специалистам по ИБ и всем, кто слышал про «белых хакеров» и хочет понять процесс без мифов. Базовые атаки и OWASP — в [8.07](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro) (в т. ч. [жизненный цикл атаки](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/129)) и [тестировании ИБ](/encyclopedia/7-project/7-05-testirovanie/123); практика на Kali — в [8.10](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro); здесь фокус на **взаимодействии с вендором** и **экономике** поиска дыр.
+  </div>
 </div>
 
 ---
@@ -55,7 +57,9 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--tip">
   <div class="callout-title">Объём раздела</div>
 
+  <div class="callout-body">
   Шесть основных статей + итоги и чек-лист. Материал рассчитан на **справочное** чтение: можно начать с [основ](./1.md) и [оформления отчёта](./2.md), остальное — по задаче.
+  </div>
 </div>
 
 ### Что нужно знать заранее

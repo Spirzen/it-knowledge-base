@@ -125,7 +125,10 @@ import DocCardList from '@theme/DocCardList';
 
 <div class="callout callout--info">
   <div class="callout-title">Политика Microsoft (2020)</div>
+
+  <div class="callout-body">
   **11 марта 2020 года** компания объявила: Visual Basic останется в **.NET 5+** и дальше будет **поддерживаться**, но **новые возможности языка добавляться не будут** — развитие идёт через платформу .NET и библиотеки, доступные и из VB.NET. Подробнее — в [истории](./1.md#современное-состояние-vbnet).
+  </div>
 </div>
 
 ---

@@ -22,6 +22,12 @@
   gap: 0.35rem;
 }
 
+.langBtn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.4rem;
+}
+
 .panel :global(.it-demo) {
   margin: 0.75rem 0 0;
 }

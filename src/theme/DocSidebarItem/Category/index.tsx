@@ -32,6 +32,8 @@ import {translate} from '@docusaurus/Translate';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import DocSidebarItemLink from '@theme/DocSidebarItem/Link';
+import TechIcon from '@site/src/components/TechIcon';
+import {getTechIdForSidebarCategory} from '@site/src/data/techArticlePages';
 import type {Props} from '@theme/DocSidebarItem/Category';
 
 import type {
@@ -128,10 +130,24 @@ function CollapseButton({
   );
 }
 
-function CategoryLinkLabel({label}: {label: string}) {
+function CategoryLinkLabel({label, href}: {label: string; href?: string}) {
+  const techId = href ? getTechIdForSidebarCategory(href) : null;
+
   return (
     <span title={label} className={styles.categoryLinkLabel}>
-      {label}
+      {techId ? (
+        <>
+          <TechIcon
+            techId={techId}
+            variant="mono"
+            size={16}
+            className={styles.categoryTechIcon}
+          />
+          {label}
+        </>
+      ) : (
+        label
+      )}
     </span>
   );
 }
@@ -282,7 +298,7 @@ function DocSidebarItemCategoryCollapsible({
           aria-expanded={collapsible && !href ? !collapsed : undefined}
           href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
           {...props}>
-          <CategoryLinkLabel label={label} />
+          <CategoryLinkLabel label={label} href={hrefWithSSRFallback} />
         </Link>
         {href && collapsible && (
           <CollapseButton

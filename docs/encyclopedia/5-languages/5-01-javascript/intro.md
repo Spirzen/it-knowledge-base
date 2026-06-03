@@ -38,6 +38,16 @@ import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 JavaScript оживляет страницу в **браузере**. Это не Java — разные языки.
 
+<div class="callout callout--tip">
+  <div class="callout-title">Официальная документация</div>
+
+  <div class="callout-body">
+  ECMAScript задаёт стандарт; в браузере и Node.js сверяйтесь с реализацией через MDN и справочники вендоров:
+
+  [MDN: JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript) · [TypeScript Handbook](https://www.typescriptlang.org/docs/) · [Node.js Docs](https://nodejs.org/en/docs/) · [React](https://react.dev/) · [современный учебник JS](https://learn.javascript.ru/) · [подборка документации](/tools/documentation/2).
+  </div>
+</div>
+
 ### Термины экосистемы
 
 | Термин | Кратко | Статья раздела |

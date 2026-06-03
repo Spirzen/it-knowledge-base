@@ -34,13 +34,17 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
 
+  <div class="callout-body">
   Инженеры, тестировщики, менеджеры проектов ИБ и студенты курсов OSCP-профиля. Нужны [основы ИБ](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro), Linux и HTTP. Wi-Fi и AD — только lab или internal pentest с договором.
+  </div>
 </div>
 
 <div class="callout callout--danger">
   <div class="callout-title">Только с разрешения</div>
 
+  <div class="callout-body">
   Техники из раздела — для **собственных** lab, учебных стендов и **письменного** engagement. [ст. 272 УК РФ](https://www.consultant.ru/document/cons_doc_LAW_10699/c87a336408011de5d6f360a9bf71e30d4f22d/) — при несанкционированном доступе.
+  </div>
 </div>
 
 ---

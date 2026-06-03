@@ -17,6 +17,7 @@
     "docs:demo-registry": "node scripts/generate-demo-registry.mjs",
     "docs:collection-titles": "node scripts/generate-collection-doc-titles.mjs",
     "docs:collection-crosslinks": "node scripts/enrich-collection-crosslinks.mjs",
+    "docs:context-crosslinks": "node scripts/enrich-context-encyclopedia-crosslinks.mjs",
     "docs:wiki-links": "node scripts/build-wiki-link-index.mjs",
     "docs:toc": "node scripts/generate-toc.mjs",
     "docs:fix-mdx-imports": "node scripts/fix-mdx-import-after-frontmatter.mjs",
@@ -33,7 +34,8 @@
     "docs:normalize-tags": "node scripts/normalize-article-tags.mjs",
     "docs:descriptions": "node scripts/ensure-article-descriptions.mjs",
     "docs:refine-descriptions": "node scripts/refine-article-descriptions.mjs",
-    "docs:dotnet-catalog": "node scripts/generate-dotnet-reference-catalog.mjs"
+    "docs:dotnet-catalog": "node scripts/generate-dotnet-reference-catalog.mjs",
+    "docs:tech-icon-paths": "node scripts/generate-tech-icon-paths.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.0",
@@ -61,6 +63,7 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "cross-env": "^10.1.0",
+    "simple-icons": "^14.15.0",
     "typescript": "^5.9.3"
   },
   "browserslist": {

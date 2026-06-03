@@ -81,7 +81,7 @@ import DocCardList from '@theme/DocCardList';
   Дорожная карта изучения
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">1.03. Дорожная карта изучения</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/2">1.03. Тест на готовность к программированию</a></li>
-  <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101">1.03. Где и о чём почитать</a></li>
+  <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101">1.03. Указатель</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/211">1.03. Тест на компьютерную грамотность</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/212">1.03. Тест на готовность к работе с данными</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/213">1.03. Тест на готовность к веб-разработке</a></li>
@@ -640,6 +640,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2">1.30. Ключевые термины и фразы на английском</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/3">1.30. Аббревиатуры и сокращения в IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/4">1.30. Англицизмы в русскоязычной IT-среде</a></li>
+  <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/6">1.30. Латиница, алфавит и сортировка имён</a></li>
+  <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/7">1.30. Знаки препинания и символы в IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/5">1.30. Практикум — чтение технической документации</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/41">1.30. Изучение английского языка с помощью ИИ</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/998">1.30. Английский язык в IT — итоги</a></li>
@@ -1517,6 +1519,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/113">4.03. Реализация циклов на уровне системы</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/114">4.03. Как работают условные операторы</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/115">4.03. Жизненный цикл переменных</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/116">4.03. Виртуальные машины для выполнения кода</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/211">4.03. Шестнадцатеричная система счисления в программировании</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/311">4.03. Регистры процессора и их роль</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/312">4.03. Машинное слово</a></li>
@@ -1557,6 +1560,7 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Асинхронность
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/2">4.05. Асинхронность простым языком — живые примеры</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">4.05. Процессы и потоки выполнения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">4.05. Управление потоками в многозадачных системах</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/12">4.05. Асинхронное и синхронное выполнение</a></li>

@@ -1,5 +1,16 @@
 /** Тексты и расчёт скорости печати для TypingSpeedTrainerPlay. */
 
+import {TYPING_ENGLISH_PRESETS} from './typingSpeedEnglishPresets';
+import {TYPING_HARD_PRESETS} from './typingSpeedHardPresets';
+
+export {TYPING_ENGLISH_PRESETS, TYPING_HARD_PRESETS};
+
+export const TYPING_CATALOGS = [
+  {id: 'basic', label: 'Базовые'},
+  {id: 'hard', label: 'Сложные'},
+  {id: 'english', label: 'Английские'},
+];
+
 export const TYPING_DURATIONS = [
   {id: '30', label: '30 сек', seconds: 30},
   {id: '60', label: '1 мин', seconds: 60},
@@ -61,8 +72,15 @@ export const TYPING_LEVELS = [
 
 const CHARS_PER_WORD = 5;
 
-export function getPresetById(id) {
-  return TYPING_PRESETS.find((p) => p.id === id) ?? TYPING_PRESETS[0];
+export function getPresetsForCatalog(catalogId) {
+  if (catalogId === 'hard') return TYPING_HARD_PRESETS;
+  if (catalogId === 'english') return TYPING_ENGLISH_PRESETS;
+  return TYPING_PRESETS;
+}
+
+export function getPresetById(id, catalogId = 'basic') {
+  const list = getPresetsForCatalog(catalogId);
+  return list.find((p) => p.id === id) ?? list[0];
 }
 
 export function getDurationById(id) {

@@ -38,7 +38,9 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--tip">
   <div class="callout-title">Сначала табличный ML</div>
 
+  <div class="callout-body">
   Если вы только начинаете: пройдите [маршрут по машинному обучению](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro) — от [категорий обучения](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/5) и [кодирования признаков](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/4) до сквозного [проекта Melbourne](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/7). Перцептрон и глубокие сети логичнее после понимания train/test, метрик и простых моделей на таблицах.
+  </div>
 </div>
 
 <DocCardList />

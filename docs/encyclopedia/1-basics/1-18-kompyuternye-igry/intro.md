@@ -23,8 +23,10 @@ related:
     doc: lab/examples/1142
   - title: "Unity C# — скрипты для новичков"
     doc: lab/examples/1136
-  - title: "Практикум разработки игр — о разделе"
+  - title: Практикум разработки игр — о разделе
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
+  - title: Видеоигры (контекст)
+    doc: context/video-games/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

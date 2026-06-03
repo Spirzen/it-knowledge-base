@@ -1,0 +1,35 @@
+.wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.wrap h1 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  flex: 1;
+  min-width: 0;
+}
+
+.iconHost {
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+.icon {
+  box-shadow:
+    0 1px 0 color-mix(in srgb, #000 12%, transparent),
+    0 4px 14px color-mix(in srgb, var(--ifm-color-primary) 18%, transparent);
+}
+
+/* Приглушённый badge (разделы без брендового SVG) — без цветного glow */
+.iconHost :global(.badgeMuted) {
+  box-shadow: 0 1px 2px color-mix(in srgb, #000 8%, transparent);
+}
+
+@media (max-width: 576px) {
+  .wrap {
+    gap: 0.55rem;
+  }
+}

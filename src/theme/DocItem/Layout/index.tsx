@@ -13,6 +13,10 @@ import {useDoc} from '@docusaurus/plugin-content-docs/client';
 
 import styles from './styles.module.css';
 
+const TechArticleHero = lazyDemo(
+  () => import('@site/src/components/TechArticleHero'),
+);
+
 // Docusaurus theme aliases (`@theme/*`) резолвятся на этапе сборки.
 // Для TypeScript-линта в IDE используем `require`, чтобы не зависеть от type-aliases.
 // eslint-disable-next-line @typescript-eslint/no-require-imports
@@ -210,6 +214,7 @@ export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode
             <DocVersionBadge />
             {docTOC.mobile}
             <DocItemContent>{children}</DocItemContent>
+            <TechArticleHero />
             <ArticleRelated />
             <ArticleSeeAlso />
             <DocItemFooter />

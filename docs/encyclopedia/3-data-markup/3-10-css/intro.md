@@ -38,6 +38,16 @@ import WebPageLayersPlay from '@site/src/components/WebPageLayersPlay';
 
 CSS описывает **внешний вид** разметки HTML: цвета, шрифты, отступы, сетку. Без HTML не к чему применять правила. Проверка каскада и box model на живой странице — [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) (вкладки Elements, Styles, Computed).
 
+<div class="callout callout--tip">
+  <div class="callout-title">Официальная документация</div>
+
+  <div class="callout-body">
+  Статьи раздела объясняют каскад и вёрстку; при споре о селекторах, свойствах и поддержке браузерами — MDN:
+
+  [MDN: CSS](https://developer.mozilla.org/ru/docs/Web/CSS) · [MDN: Flexbox](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_flexible_box_layout) · [MDN: Grid](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_grid_layout) · [подборка документации](/tools/documentation/2).
+  </div>
+</div>
+
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, как браузер обрабатывает текстовые инструкции; в этом разделе — **таблицы стилей CSS**.
 
 > **Перед селекторами:** [Операторы](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/33) — оператор, операнд и приоритет; в CSS ту же роль выполняют селекторы, комбинаторы и псевдоклассы.

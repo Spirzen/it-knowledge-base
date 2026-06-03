@@ -1,9 +1,8 @@
-import {useMemo} from 'react';
+import {useEffect, useMemo, useState} from 'react';
 import {
   SIDEBAR_COLLECTIONS,
   collectionEntryPath,
 } from '@site/src/data/sidebarCollections';
-import collectionDocTitles from '@site/src/data/collectionDocTitles.json';
 
 function humanizeSlug(segment) {
   return segment
@@ -29,12 +28,15 @@ export function fallbackTitleFromDocId(docId) {
   return humanizeSlug(last) || docId;
 }
 
-function resolveArticleTitle(docId) {
-  const fromRegistry = collectionDocTitles[docId]?.title;
-  if (fromRegistry) {
-    return fromRegistry;
+let titlesPromise;
+
+function loadCollectionDocTitles() {
+  if (!titlesPromise) {
+    titlesPromise = import('@site/src/data/collectionDocTitles.json').then(
+      (mod) => mod.default ?? mod,
+    );
   }
-  return fallbackTitleFromDocId(docId);
+  return titlesPromise;
 }
 
 /**
@@ -42,8 +44,30 @@ function resolveArticleTitle(docId) {
  * @returns {Map<string, { id: string, title: string, href: string }[]>}
  */
 export function useCollectionArticleLists() {
+  const [titlesByDocId, setTitlesByDocId] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    loadCollectionDocTitles().then((registry) => {
+      if (!cancelled) {
+        setTitlesByDocId(registry);
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   return useMemo(() => {
     const map = new Map();
+
+    const resolveArticleTitle = (docId) => {
+      const fromRegistry = titlesByDocId?.[docId]?.title;
+      if (fromRegistry) {
+        return fromRegistry;
+      }
+      return fallbackTitleFromDocId(docId);
+    };
 
     for (const collection of SIDEBAR_COLLECTIONS) {
       const articles = collection.items.map((docId) => ({
@@ -55,5 +79,5 @@ export function useCollectionArticleLists() {
     }
 
     return map;
-  }, []);
+  }, [titlesByDocId]);
 }

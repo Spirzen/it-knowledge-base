@@ -4,13 +4,14 @@ import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback} from './shared/demoFallback';
 import {
+  TYPING_CATALOGS,
   TYPING_DURATIONS,
-  TYPING_PRESETS,
   analyzeTyping,
   calcTypingStats,
   formatDuration,
   getDurationById,
   getPresetById,
+  getPresetsForCatalog,
   levelForCpm,
 } from './shared/typingSpeedEngine';
 import toolStyles from './shared/toolDemo.module.css';
@@ -57,7 +58,9 @@ function ChipRow({label, items, value, onChange, disabled}) {
 }
 
 function TypingSpeedTrainerPlayInner() {
-  const [presetId, setPresetId] = useState(TYPING_PRESETS[0].id);
+  const [catalogId, setCatalogId] = useState('basic');
+  const presets = useMemo(() => getPresetsForCatalog(catalogId), [catalogId]);
+  const [presetId, setPresetId] = useState(() => getPresetsForCatalog('basic')[0].id);
   const [durationId, setDurationId] = useState('60');
   const [phase, setPhase] = useState('idle');
   const [typed, setTyped] = useState('');
@@ -70,7 +73,18 @@ function TypingSpeedTrainerPlayInner() {
   const startedAtRef = useRef(null);
   const tickRef = useRef(null);
 
-  const preset = useMemo(() => getPresetById(presetId), [presetId]);
+  const preset = useMemo(
+    () => getPresetById(presetId, catalogId),
+    [presetId, catalogId],
+  );
+
+  const onCatalogChange = useCallback(
+    (nextCatalogId) => {
+      setCatalogId(nextCatalogId);
+      setPresetId(getPresetsForCatalog(nextCatalogId)[0].id);
+    },
+    [],
+  );
   const duration = useMemo(() => getDurationById(durationId), [durationId]);
   const target = preset.text;
 
@@ -116,7 +130,7 @@ function TypingSpeedTrainerPlayInner() {
     setPhase('finished');
     setRemainingSec(0);
 
-    const key = `${presetId}-${durationId}`;
+    const key = `${catalogId}-${presetId}-${durationId}`;
     setBest((prev) => {
       const record = prev[key];
       if (record && stats.cpm <= record.cpm) {
@@ -135,6 +149,7 @@ function TypingSpeedTrainerPlayInner() {
     clearTimers,
     durationId,
     elapsedMs,
+    catalogId,
     presetId,
     target.length,
   ]);
@@ -220,7 +235,7 @@ function TypingSpeedTrainerPlayInner() {
     });
   };
 
-  const bestKey = `${presetId}-${durationId}`;
+  const bestKey = `${catalogId}-${presetId}-${durationId}`;
   const personalBest = best[bestKey];
   const displayStats = phase === 'finished' ? finalStats : liveStats;
   const level =
@@ -239,8 +254,15 @@ function TypingSpeedTrainerPlayInner() {
         subtitle="Наберите текст ниже — демо посчитает знаков в минуту (зн/мин) и слов в минуту (слов/мин, по стандарту 5 символов на слово)."
       >
         <ChipRow
+          label="Каталог"
+          items={TYPING_CATALOGS}
+          value={catalogId}
+          onChange={onCatalogChange}
+          disabled={configLocked}
+        />
+        <ChipRow
           label="Текст"
-          items={TYPING_PRESETS}
+          items={presets}
           value={presetId}
           onChange={setPresetId}
           disabled={configLocked}

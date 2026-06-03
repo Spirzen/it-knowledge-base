@@ -11,8 +11,10 @@ related:
     doc: encyclopedia/7-project/7-05-testirovanie/123
   - title: "Белое хакерство и Bug Bounty — о разделе"
     doc: encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro
-  - title: "Основы интеграционного взаимодействия — о разделе"
+  - title: Основы интеграционного взаимодействия — о разделе
     doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro
+  - title: Контекст — о разделе
+    doc: context/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -20,6 +22,16 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 Раздел для разработчиков и инженеров: от базовых понятий (CIA, риски, OWASP) до практики — защита приложений, криптография, PKI, мониторинг и реагирование на инциденты.
+
+<div class="callout callout--tip">
+  <div class="callout-title">Официальные источники по безопасности</div>
+
+  <div class="callout-body">
+  Энциклопедия даёт контекст и практику; при проверке уязвимостей и стандартов защиты опирайтесь на актуальные материалы OWASP и CWE:
+
+  [OWASP Top 10](https://owasp.org/www-project-top-ten/) · [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) · [OWASP ASVS](https://owasp.org/www-project-application-security-verification-standard/) · [CWE](https://cwe.mitre.org/) · [подборка документации](/tools/documentation/2).
+  </div>
+</div>
 
 ---
 

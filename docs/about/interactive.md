@@ -48,6 +48,16 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 ## 1. Основы
 
+### Скорость печати
+
+Замер зн/мин и слов/мин с подсветкой ошибок: шесть базовых текстов, **тридцать сложных** на русском и **тридцать на английском** (QWERTY). Удобно начать здесь, затем перейти к карте клавиатуры и зонам пальцев.
+
+Статьи: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14), [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
+
+<TypingSpeedTrainerPlay />
+
+---
+
 ### Карта клавиатуры
 
 Тренажёр раскладки, зон и сочетаний — полезен новичкам до углубления в ОС.
@@ -55,16 +65,6 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 Статья: [Советы для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
 
 <KeyboardPlay />
-
----
-
-### Скорость печати
-
-Замер знаков и слов в минуту с подсветкой ошибок — для самопроверки после карты клавиатуры.
-
-Статьи: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14), [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
-
-<TypingSpeedTrainerPlay />
 
 ---
 

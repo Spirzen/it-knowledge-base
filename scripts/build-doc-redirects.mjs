@@ -45,12 +45,7 @@ function normalizeHref(href) {
 }
 
 /**
- * @param {Map<string, CategoryJson>} categoryByDir
- * @param {import('@docusaurus/utils').Slugger} slugger
- * @param {string} relDir — путь каталога от docs/ (philosophy/culture)
- */
-/**
- * Варианты сегмента URL из подписи категории (кириллица + slugger).
+ * Сегменты URL из подписи категории: slugger (финтех) и label как в старых slug (Финтех).
  * @param {string} label
  * @param {import('@docusaurus/utils').Slugger} slugger
  */
@@ -61,8 +56,55 @@ function labelSegmentsForLegacy(label, slugger) {
   }
   /** @type {Set<string>} */
   const segments = new Set();
-  segments.add(slugger.slug(trimmed));
+  const slugged = slugger.slug(trimmed);
+  const lowerLabel = trimmed.toLocaleLowerCase('ru');
+  // Slugger даёт нижний регистр (торговля); label — «Торговля». На Windows оба URL → один файл.
+  if (slugged && slugged !== lowerLabel) {
+    segments.add(slugged);
+  }
+  // Старые frontmatter slug: /context/Финтех/1, /context/Видеоигры/10 (label целиком)
+  segments.add(trimmed);
+  // Если в метаданных label был только в нижнем регистре — добавляем «заглавную» форму
+  if (slugged && trimmed === slugged) {
+    const titled = trimmed.replace(/^(\p{Ll})/u, (ch) => ch.toUpperCase());
+    if (titled !== trimmed) {
+      segments.add(titled);
+    }
+  }
   return [...segments];
+}
+
+/**
+ * Для docs/context/*: /context/{label}/… при каноническом /context/{folder}/….
+ * @param {string} relNoExt
+ * @param {string} canonical
+ * @param {Map<string, CategoryJson>} categoryByDir
+ * @param {import('@docusaurus/utils').Slugger} slugger
+ */
+function contextLabelSlugAliases(relNoExt, canonical, categoryByDir, slugger) {
+  const parts = relNoExt.split('/').filter(Boolean);
+  if (parts[0] !== 'context' || parts.length < 2) {
+    return [];
+  }
+  const catDir = path.join(docsDir, ...parts.slice(0, 2));
+  const cat = categoryByDir.get(catDir);
+  const label = cat?.label?.trim();
+  if (!label) {
+    return [];
+  }
+  const folder = parts[1];
+  const tail = parts.slice(2).join('/');
+  const canonicalNorm = normalizeHref(canonical);
+  /** @type {Set<string>} */
+  const legacies = new Set();
+  for (const seg of labelSegmentsForLegacy(label, slugger)) {
+    if (seg === folder) {
+      continue;
+    }
+    legacies.add(normalizeHref(tail ? `/context/${seg}/${tail}` : `/context/${seg}`));
+  }
+  legacies.delete(canonicalNorm);
+  return [...legacies];
 }
 
 /**
@@ -122,6 +164,52 @@ function inferCategoryIndexFromDocSlugs(relDir) {
     }
   }
   return null;
+}
+
+/**
+ * Канонический URL как на собранном сайте: для encyclopedia/N-slug в пути — label «N. …» из _category_.json.
+ * @param {string} relNoExt
+ * @param {Map<string, CategoryJson>} categoryByDir
+ * @param {import('@docusaurus/utils').Slugger} slugger
+ * @param {string} folderCanonical — путь по имени папок (resolveDocHref)
+ */
+function resolveDocusaurusCanonicalHref(relNoExt, categoryByDir, slugger, folderCanonical) {
+  const parts = relNoExt.split('/').filter(Boolean);
+  if (parts.length === 0) {
+    return folderCanonical;
+  }
+
+  /** @type {string[]} */
+  const urlParts = [...parts];
+  let current = docsDir;
+
+  for (let i = 0; i < parts.length; i += 1) {
+    current = path.join(current, parts[i]);
+    const cat = categoryByDir.get(current);
+    if (!cat) {
+      continue;
+    }
+
+    const catDirRel = parts.slice(0, i + 1).join('/');
+    const parentSeg = i > 0 ? parts[i - 1] : '';
+    const isEncyclopediaNumberedSection =
+      parentSeg === 'encyclopedia' && /^\d+-/.test(parts[i]);
+
+    if (isEncyclopediaNumberedSection) {
+      const label = cat.label?.trim();
+      if (label && label !== parts[i]) {
+        urlParts[i] = label;
+        continue;
+      }
+    }
+
+    const docSeg = categorySegmentFromDocSlugs(catDirRel);
+    if (docSeg) {
+      urlParts[i] = docSeg;
+    }
+  }
+
+  return normalizeHref(`/${urlParts.join('/')}`);
 }
 
 function categoryGeneratedIndexHref(relDir, categoryByDir, slugger) {
@@ -323,9 +411,23 @@ function collectDocRedirects(categoryByDir, slugger) {
 
       const rel = path.relative(docsDir, fullPath).replace(/\\/g, '/');
       const relNoExt = rel.replace(/\.mdx?$/i, '');
-      const canonical = normalizeHref(resolveDocHref(rel, data));
+      const folderCanonical = normalizeHref(resolveDocHref(rel, data));
+      const canonical = resolveDocusaurusCanonicalHref(
+        relNoExt,
+        categoryByDir,
+        slugger,
+        folderCanonical,
+      );
       const idHref = hrefFromDocId(relNoExt, data);
       for (const legacy of legacyPathVariants(relNoExt, categoryByDir, slugger, canonical)) {
+        addLegacy(redirectMap, canonical, legacy);
+      }
+      for (const legacy of contextLabelSlugAliases(
+        relNoExt,
+        canonical,
+        categoryByDir,
+        slugger,
+      )) {
         addLegacy(redirectMap, canonical, legacy);
       }
       if (idHref) {
@@ -363,6 +465,30 @@ function collectCategoryIndexRedirects(categoryByDir, slugger) {
   return redirectMap;
 }
 
+/**
+ * Один legacy-URL на регистронезависимый ключ (Windows: Торговля ≡ торговля).
+ * @param {string[]} urls
+ */
+function dedupeLegacyUrlsCaseInsensitive(urls) {
+  /** @type {Map<string, string>} */
+  const byLower = new Map();
+  for (const url of urls) {
+    const key = url.toLocaleLowerCase('ru');
+    const existing = byLower.get(key);
+    if (!existing) {
+      byLower.set(key, url);
+      continue;
+    }
+    // Предпочитаем сегмент с заглавными буквами (как в label категории), не slugger lowercase.
+    const existingHasUpper = existing !== existing.toLocaleLowerCase('ru');
+    const urlHasUpper = url !== url.toLocaleLowerCase('ru');
+    if (!existingHasUpper && urlHasUpper) {
+      byLower.set(key, url);
+    }
+  }
+  return [...byLower.values()];
+}
+
 function mergeMaps(...maps) {
   /** @type {Map<string, string[]>} */
   const merged = new Map();
@@ -374,7 +500,7 @@ function mergeMaps(...maps) {
           existing.push(from);
         }
       }
-      merged.set(to, existing);
+      merged.set(to, dedupeLegacyUrlsCaseInsensitive(existing));
     }
   }
   return merged;
@@ -392,12 +518,28 @@ function main() {
   /** @type {Record<string, string[]>} */
   const payload = {};
   let legacyCount = 0;
+  /** @type {Map<string, string>} */
+  const legacyOwner = new Map();
+
   for (const [to, fromList] of [...merged.entries()].sort(([a], [b]) =>
     a.localeCompare(b, 'ru'),
   )) {
-    const safeFrom = fromList.filter((from) => !canonicalSet.has(from));
+    const safeFrom = dedupeLegacyUrlsCaseInsensitive(
+      fromList.filter((from) => !canonicalSet.has(from)),
+    );
     if (safeFrom.length === 0) {
       continue;
+    }
+    for (const from of safeFrom) {
+      const key = from.toLocaleLowerCase('ru');
+      const prev = legacyOwner.get(key);
+      if (prev && prev !== to) {
+        console.warn(
+          `doc-legacy-redirects: legacy collision ${from}\n  → ${prev}\n  → ${to}`,
+        );
+      } else {
+        legacyOwner.set(key, to);
+      }
     }
     payload[to] = safeFrom;
     legacyCount += safeFrom.length;
@@ -405,6 +547,23 @@ function main() {
 
   fs.mkdirSync(path.dirname(outFile), {recursive: true});
   fs.writeFileSync(outFile, `${JSON.stringify(payload)}\n`, 'utf8');
+
+  /** @type {[string, string][]} */
+  const contextSlugChecks = [
+    ['/context/fintech/1', '/context/Финтех/1'],
+    ['/context/commerce/1', '/context/Торговля/1'],
+    ['/context/video-games/1', '/context/Видеоигры/1'],
+    ['/context/government/1', '/context/Государство/1'],
+    ['/context/iot/1', '/context/IoT/1'],
+    ['/context/fintech/intro', '/context/Финтех/intro'],
+  ];
+  for (const [canon, legacy] of contextSlugChecks) {
+    if (!payload[canon]?.includes(legacy)) {
+      console.warn(
+        `doc-legacy-redirects: expected ${legacy} → ${canon}, got: ${payload[canon]?.join(', ') ?? 'none'}`,
+      );
+    }
+  }
 
   console.log(
     `doc-legacy-redirects: ${Object.keys(payload).length} canonical routes, ${legacyCount} legacy URLs → ${path.relative(root, outFile)}`,

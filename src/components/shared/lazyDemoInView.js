@@ -1,7 +1,7 @@
 import React, {lazy, Suspense, useEffect, useRef, useState} from 'react';
 import {demoSkeletonFallback} from './demoFallback';
 
-const DEFAULT_ROOT_MARGIN = '280px 0px';
+const DEFAULT_ROOT_MARGIN = '120px 0px';
 
 /**
  * Ленивая загрузка демо только когда блок попадает в viewport (или близко к нему).

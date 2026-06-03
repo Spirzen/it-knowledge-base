@@ -77,6 +77,7 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 <div class="callout callout--tip">
   <div class="callout-title">Компактный маршрут по BABOK</div>
 
+  <div class="callout-body">
   Последовательный проход по роли BA и управлению требованиями — без дублирования BPMN-справочника:
 
   1. [113](/encyclopedia/7-project/7-04-analitika/113) — роль BA, концепты, фазы проекта  
@@ -87,7 +88,8 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
   6. Wireframe и UX до ТЗ — [Веб-дизайн — блок 2](/encyclopedia/1-basics/1-25-interfeys/7#блок-2--референсы-и-прототипирование)  
   7. [126](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
   8. [127](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
-  9. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление  
+  9. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление
+  </div>
 </div>
 
 ---

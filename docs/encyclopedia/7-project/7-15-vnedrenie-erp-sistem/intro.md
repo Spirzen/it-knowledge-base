@@ -18,8 +18,10 @@ related:
     doc: encyclopedia/5-languages/5-27-1s/1
   - title: "1С — о разделе"
     doc: encyclopedia/5-languages/5-27-1s/intro
-  - title: "Отраслевое ПО — итоги"
+  - title: Отраслевое ПО — итоги
     doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/2
+  - title: Производство (контекст)
+    doc: context/manufacturing/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

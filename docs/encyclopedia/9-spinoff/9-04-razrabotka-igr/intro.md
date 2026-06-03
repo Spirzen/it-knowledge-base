@@ -25,8 +25,10 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Игроведение — о разделе"
     doc: encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro
-  - title: "Веб-игры на HTML5 и Canvas"
+  - title: Веб-игры на HTML5 и Canvas
     doc: encyclopedia/3-data-markup/3-09-html/22
+  - title: Видеоигры — отраслевой контекст
+    doc: context/video-games/intro
 ---
 
 import GameDevHub from '@site/src/components/GameDevHub.jsx';

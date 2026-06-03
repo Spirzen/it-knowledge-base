@@ -30,7 +30,9 @@ import DocCardList from '@theme/DocCardList';
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
 
+  <div class="callout-body">
   Материал рассчитан на тех, кто знаком с [Linux](../93.md), базовой [сетью](../6.md) и понимает, зачем нужен [мониторинг](../92.md). Достаточно одной виртуальной машины с Linux (сервер Zabbix) и второй машины или контейнера под агент.
+  </div>
 </div>
 
 ---
@@ -89,7 +91,9 @@ flowchart LR
 <div class="callout callout--tip">
   <div class="callout-title">Официальная документация</div>
 
+  <div class="callout-body">
   Весь практикум опирается на [руководство Zabbix 7.0 (RU)](https://www.zabbix.com/documentation/7.0/ru/manual). Блок [Быстрый старт — базовая настройка](https://www.zabbix.com/documentation/7.0/ru/manual/quickstart/basic_config/login) — главный ориентир для шагов 3–4.
+  </div>
 </div>
 
 ---

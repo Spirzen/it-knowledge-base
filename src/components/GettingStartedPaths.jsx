@@ -63,6 +63,7 @@ function CollectionAccordion({collection, articles, isOpen, onToggle, displayInd
               <li key={article.id} className={styles.articleItem}>
                 <Link
                   to={article.href}
+                  prefetch={false}
                   className={styles.articleLink}
                   onClick={(event) => event.stopPropagation()}>
                   <span className={styles.articleIndex}>{index + 1}</span>
@@ -77,6 +78,7 @@ function CollectionAccordion({collection, articles, isOpen, onToggle, displayInd
           <div className={styles.panelFooter}>
             <Link
               to={collectionStartPath(collection)}
+              prefetch={false}
               className={styles.startRouteLink}
               onClick={(event) => event.stopPropagation()}>
               Начать маршрут с первой статьи
@@ -151,7 +153,10 @@ export default function GettingStartedPaths({variant = 'home'}) {
             <p className={styles.subtitle}>
               Тематические маршруты по IT — раскройте подборку, чтобы увидеть
               статьи, и переходите к нужной одним кликом.{' '}
-              <Link to={COLLECTIONS_PAGE_PATH}>Полный каталог подборок</Link>.
+              <Link to={COLLECTIONS_PAGE_PATH} prefetch={false}>
+                Полный каталог подборок
+              </Link>
+              .
             </p>
           </div>
         )}
