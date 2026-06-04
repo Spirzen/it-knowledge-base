@@ -21,6 +21,8 @@ related:
     doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117
   - title: "Архитектура выполнения — о разделе"
     doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro
+  - title: "Ошибки, исключения и отказоустойчивость"
+    doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -40,7 +42,30 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 # Паттерны проектирования — о разделе
 
-Паттерн — **имя проверенного решения** повторяющейся проблемы. Сначала [принципы перед паттернами](./142.md) и [обзор](./1.md); затем GoF и архитектурные стили ниже.
+Паттерн — **имя проверенного решения** повторяющейся проблемы. Сначала [принципы перед паттернами](./142.md) и [обзор](./1.md); затем GoF и архитектурные стили ниже. Для **Chain of Responsibility** и обработки сбоев в коде — [ошибки и исключения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111).
+
+<div class="callout callout--info">
+  <div class="callout-title">Теория данных (раздел 3)</div>
+  <div class="callout-body">
+  Repository, Unit of Work, кэш — опираются на [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) и [проектирование БД](../design/116). Карта — [проектирование](../design/intro).
+  </div>
+</div>
+
+| Вопрос при изучении паттерна | Теория (глава 4) |
+| :--- | :--- |
+| Класс, объект, наследование, полиморфизм | [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro) |
+| SOLID перед GoF | [SOLID](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113) · [142 — принципы](./142) |
+| Инъекция зависимостей, DI-контейнер | [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro) |
+| Observer, async callback | [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro) |
+
+| Вопрос при изучении паттерна | Теория (глава 2) |
+| :--- | :--- |
+| Adapter, Facade, внешний API | [2.09 Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [115 — паттерны интеграции](./115) |
+| HTTP, REST, контракт, статусы | [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) · [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) |
+| Очереди, pub/sub, Saga, DLQ | [Брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) |
+| Proxy (кэш, удалённый вызов), CDN | [Redis в интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129) · [CDN](/encyclopedia/2-system-network/2-03-set-i-internet/212) |
+| Цепочка фильтров, middleware | [HTTP-экосистема](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem) |
+| MVC, BFF, слой API | [Как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro) |
 
 <ArchiStylerPlay defaultPattern="factory" title="Планировщик паттернов" subtitle="Диаграмма классов по шаблону" />
 
@@ -77,7 +102,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 |---------|---------|
 | GoF | Factory, Observer, Decorator — [шпаргалка](141.md) |
 | Архитектурные | Layered, Hexagonal, MVC |
-| Распределённые | Saga, Outbox, Circuit Breaker |
+| Распределённые | Saga, Outbox, Circuit Breaker — теория: [очереди](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), практика: [design/2124](../design/2124.md), [2136](../design/2136.md) |
 
 ---
 
@@ -112,7 +137,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 | Когда применять | [142](./142.md), [1](./1.md) |
 | Bridge, Builder, … | [140](./140.md), статьи `122–135` |
 
-Каркас системы: [design/intro.md](../design/intro.md) · [NFR](../design/1116.md).
+Каркас системы: [design/intro.md](../design/intro.md) · [NFR](../design/1116.md). Базовая теория сети и интеграций — [2. Система и сеть](/encyclopedia/2-system-network/system-network).
 
 ---
 

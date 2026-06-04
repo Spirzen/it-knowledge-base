@@ -15,6 +15,8 @@ related:
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/11
   - title: "Версии C# и .NET — справочная таблица"
     doc: encyclopedia/5-languages/5-05-csharp/48
+  - title: "SignalR — реальное время в .NET"
+    doc: encyclopedia/5-languages/5-04-platforma-dotnet/2
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -79,6 +81,7 @@ import DocCardList from '@theme/DocCardList';
 |-----|----------|-------|
 | 1 | [Платформа .NET](./1.md) | CLR, сборки, публикация |
 | 2 | [Типы приложений](./13.md) | Выбор шаблона проекта; для WinForms/WPF — [галерея (Lab)](/lab/Примеры/1138) |
+| 3 | [SignalR — реальное время](./2.md) | Чаты, push, хабы и масштабирование после [ASP.NET](./172.md) |
 
 ---
 

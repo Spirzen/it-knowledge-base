@@ -41,6 +41,20 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь — **работа с существующим кодом и знаниями о нём**. Детали CI/CD, облачной миграции БД, контейнеризации и кибербезопасности затронуты только там, где они связаны с легаси; углублённо эти темы живут в главах про тестирование, инфраструктуру и архитектуру. Переходные паттерны (Strangler Fig, Parallel Run, CDC и др.) — в [обзоре по архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2144); Strangler Fig подробно — в [2125](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2125).
 
+**Базовая теория (глава 2)** — если при реверсе непонятны интеграции и контуры: [типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [интеграционные потоки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/112), [очереди и брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), [сеть и интернет](/encyclopedia/2-system-network/2-03-set-i-internet/intro). Ручная проверка старого API — [curl](/encyclopedia/2-system-network/2-05-terminal/1133).
+
+**Базовая теория (глава 3)** — миграция данных и схем при Strangler Fig / CDC: [пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433), [опорные темы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12), [управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1); сверка после переноса — [SQL для тестировщика](/encyclopedia/7-project/7-05-testirovanie/129).
+
+**Базовая теория (глава 4)** — без понимания кода реверс и рефакторинг превращаются в угадывание:
+
+| Вопрос при работе с легаси | Теория |
+| :--- | :--- |
+| Как читать чужой модуль, «швы» для тестов | [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) · [зависимости](/encyclopedia/4-code-dev/4-09-zavisimosti/intro) |
+| Безопасный рефакторинг, приёмы Фаулера | [Методы рефакторинга](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612) · [безопасные изменения](./3) |
+| История изменений, bisect | [Основы Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) |
+| Отладка странного поведения | [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro) |
+| Как программа выполняется в памяти | [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro) |
+
 <DocCardList />
 
 ---

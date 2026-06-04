@@ -40,6 +40,7 @@ import DocCardList from '@theme/DocCardList';
 | **Языки** | Программирование, проектирование, контракты | [Языки конструирования](./5), [Языки](/encyclopedia/5-languages/intro) |
 | **Тестирование на коде** | Unit/integration, Myers, отладка | [Тестирование на стадии конструирования](./6), [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro) |
 | **Качество** | Метрики, стандарты | [ISO 25010](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/2), [Цикломатическая сложность](/encyclopedia/7-project/7-10-kultura-koda/2) |
+| **Данные в коде** | Структуры, конфиги, доступ к БД | [Структуры данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro), [ORM](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [конфигурации](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/intro) |
 
 ---
 
@@ -73,6 +74,23 @@ import DocCardList from '@theme/DocCardList';
 - **[Проектирование и архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro)** — *что* строить; конструирование — *как* это закодировать и собрать.
 - **[Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro)** — верификация на стадии конструирования (unit, integration) и дальше по SDLC.
 - **[Экономика производства ПО](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)** — COCOMO II, качество ISO 25010, SCM, сопровождение, приёмка.
+- **[2. Система и сеть](/encyclopedia/2-system-network/system-network)** — сети, HTTP, интеграции и ИБ, когда при реализации всплывают вопросы «как ходит запрос» и «как сервисы связаны»: [2.03](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [2.09](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
+- **[3. Данные и разметка](/encyclopedia/3-data-markup/data-markup)** — транзакции, индексы, миграции схем: [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [SQL](/encyclopedia/3-data-markup/3-07-sql/intro).
+- **[4. Код и разработка](/encyclopedia/4-code-dev/code-dev)** — синтаксис, выполнение, отладка, Git; см. таблицу ниже.
+
+## Базовая теория (глава 4)
+
+Конструирование — стадия, где теория из гл. 4 становится артефактами:
+
+| Аспект конструирования | Теория |
+| :--- | :--- |
+| Синтаксис, функции, рефакторинг | [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) · [методы рефакторинга](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612) |
+| Компиляция, память, VM | [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro) |
+| Структура solution, зависимости | [Проект и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro) |
+| ООП, модули, SOLID | [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro) · [SOLID](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113) |
+| Unit-тесты и отладка на коде | [Тестирование на конструировании](./6) · [отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro) |
+| Версионирование, ветки | [Основы Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) |
+| Доступ к БД из кода | [ORM — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro) |
 
 <DocCardList />
 

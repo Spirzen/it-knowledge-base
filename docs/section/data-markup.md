@@ -93,6 +93,7 @@ mindmap
 - [3.04. Справочник по XML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/211)
 - [3.04. Справочник по XSLT](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/212)
 - [3.04. JSON](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3)
+- [3.04. JSONB](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/217)
 - [3.04. YAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4)
 - [3.04. Markdown](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5)
 - [3.04. XAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6)

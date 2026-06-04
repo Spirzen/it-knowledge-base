@@ -23,6 +23,8 @@ related:
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/11
   - title: "Версии C# и .NET — справочная таблица"
     doc: encyclopedia/5-languages/5-05-csharp/48
+  - title: "Пакетная работа с данными"
+    doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/433
   - title: "Разработка игр — о разделе"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/intro
   - title: "Unity C# — скрипты для новичков"
@@ -33,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел посвящён языку **C#** и экосистеме **.NET**. Материалы рассчитаны на разработчиков и архитекторов: от первого проекта до углублённых тем (LINQ, async, ООП, веб, производительность).
+Раздел посвящён языку **C#** и экосистеме **.NET**. Материалы рассчитаны на разработчиков и архитекторов: от первого проекта до углублённых тем (LINQ, async, ООП, веб, производительность). Массовая загрузка и bulk (отличие от «LINQ в цикле + SaveChanges») — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433); LINQ к БД — [29](./29.md).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
@@ -56,8 +58,8 @@ import DocCardList from '@theme/DocCardList';
 1. [C# — язык платформы .NET](/encyclopedia/5-languages/5-05-csharp/1) — проекты, сборки, `using`, консоль.
 1a. [Main и top-level statements — точка входа](/encyclopedia/5-languages/5-05-csharp/49) — `Program.cs`, exe vs library.
 2. [Синтаксис и пунктуация](/encyclopedia/5-languages/5-05-csharp/11), [переменные](/encyclopedia/5-languages/5-05-csharp/17), [типы и приведения](/encyclopedia/5-languages/5-05-csharp/20).
-3. [Пространства имён](/encyclopedia/5-languages/5-05-csharp/12), [nullable](/encyclopedia/5-languages/5-05-csharp/22), [исключения](/encyclopedia/5-languages/5-05-csharp/15).
-4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции и кортежи](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29).
+3. [Пространства имён](/encyclopedia/5-languages/5-05-csharp/12), [nullable](/encyclopedia/5-languages/5-05-csharp/22). Исключения: [теория](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [15](/encyclopedia/5-languages/5-05-csharp/15), [151](/encyclopedia/5-languages/5-05-csharp/151).
+4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции и кортежи](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29) ([справочник операторов](/encyclopedia/5-languages/5-05-csharp/291)).
 5. Данные: [EF Core — первая программа](./441) или [ADO.NET / Dapper](./442), обзор — [БД и ORM](./44). СУБД: [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889).
 
 Общие принципы (код, ООП, выполнение) — в [Код и разработка](/encyclopedia/4-code-dev/code-dev). Перед [ООП в C#](./25): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro). Здесь — **особенности C# и .NET**.

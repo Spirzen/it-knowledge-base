@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro
   - title: "Архитектура выполнения — о разделе"
     doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro
+  - title: "Ошибки, исключения и отказоустойчивость"
+    doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111
   - title: "Проектирование — о разделе"
     doc: encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/intro
   - title: "Типы классов в DDD"
@@ -55,6 +57,45 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
+---
+
+## Базовая теория (глава 2)
+
+Проектные паттерны опираются на сети и протоколы — при пробелах идите в [2. Система и сеть](/encyclopedia/2-system-network/system-network):
+
+| Вопрос при проектировании | Теория |
+| :--- | :--- |
+| REST, HTTP, контракты, идемпотентность | [2.09](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [design/117](design/117.md) |
+| Очереди, Saga, согласованность | [Брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) |
+| DNS, TLS, CDN, балансировка | [2.03](/encyclopedia/2-system-network/2-03-set-i-internet/intro) · [12 концепций](141.md) |
+| OAuth, mTLS, ИБ в NFR | [2.08](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro) |
+| Диагностика API в консоли | [curl](/encyclopedia/2-system-network/2-05-terminal/1133) |
+
+## Базовая теория (глава 3)
+
+| Вопрос при проектировании | Теория |
+| :--- | :--- |
+| Модель данных, нормализация, индексы | [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) · [проектирование БД](design/116.md) |
+| Транзакции, MVCC, изоляция | [Конкурентный доступ](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/7) |
+| Репликация, шардинг, кэш у БД | [Опорные темы](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12) · [управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1) |
+| NoSQL, полиглот, event sourcing | [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro) · [Event Sourcing в NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2#2-event-sourcing-и-cqrs) |
+| Batch, bulk, ETL, checkpoint | [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433) |
+| JSONB, пагинация в API | [JSONB в PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/66) · [пагинация в SQL](/encyclopedia/3-data-markup/3-07-sql/6) |
+
+## Базовая теория (глава 4)
+
+Архитектурные решения должны стыковаться с тем, **как код реально выполняется**:
+
+| Вопрос при проектировании | Теория |
+| :--- | :--- |
+| SOLID, слои, абстракции | [SOLID](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113) · [парадигмы — о разделе](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) |
+| ООП, агрегаты, наследование vs композиция | [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro) |
+| Память, потоки, GC, производительность | [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro) |
+| Исключения в коде vs retry на сервисе | [Ошибки и отказоустойчивость](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) |
+| DI, версии библиотек, модульность | [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro) |
+| Слой доступа к данным, N+1 | [ORM — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro) |
+| Асинхронные вызовы, event loop | [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro) |
+
 <div class="callout callout--tip">
   <div class="callout-title">Как читать раздел</div>
 
@@ -70,7 +111,8 @@ import DocCardList from '@theme/DocCardList';
 ## С чего начать (базовый маршрут)
 
 1. **[Основы проектирования и архитектуры](1.md)** — зачем проектировать, четыре уровня архитектуры, схемы, ADR.
-2. **[System Design — карта тем и подготовка](143.md)** — порядок изучения (сети → БД → кэш → очереди), пять рычагов, типовой контур, классические задачи, postmortem. Для «ложного CRUD» — [email-рассылка как распределённая система](144.md); для ручной диагностики API-контуров — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133).
+1a. **[Ошибки, исключения и отказоустойчивость](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111)** — термины (ошибка vs исключение), стек, логи; мост к retry/DLQ в главах ниже.
+2. **[System Design — карта тем и подготовка](143.md)** — порядок изучения (сети → БД → кэш → [очереди](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121)), пять рычагов, типовой контур, классические задачи, postmortem. Для «ложного CRUD» — [email-рассылка как распределённая система](144.md); для ручной диагностики API-контуров — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133).
 3. **[12 концепций распределённой архитектуры](141.md)** — балансировка, кэш, CDN, очереди, gateway, шардирование и autoscaling в одной шпаргалке. Экосистема технологий MSA (БД, брокеры, K8s, CI/CD) — [таблица](design/118.md#ekosistema-msa); сборка в продакшн-контур — [девять компонентов](design/118.md#prodakshn-stek).
 4. **[Системный подход и системное мышление](116.md)** — границы системы, обратные связи.
 5. **[Архитектурные стили и их применение](101.md)** — монолит, SOA, микросервисы.
@@ -87,7 +129,7 @@ import DocCardList from '@theme/DocCardList';
 1. **[Роль и практика архитектора ПО](117.md)** — артефакты, навыки, отличие от техлида.
 2. **[Практика архитектурного проектирования](3.md)** — монолит, границы, Conway, эволюция.
 3. **[Event Storming](design/2140.md)** · **[Оценка альтернатив](design/2141.md)** · **[Threat modeling](design/2142.md)**.
-4. **[Проектирование — о разделе](design/intro.md)** — API, БД, распределённые системы, надёжность.
+4. **[Проектирование — о разделе](design/intro.md)** — API, БД, распределённые системы, надёжность; массовые загрузки и ETL — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433).
 5. **[Чистая архитектура — теория](design/2132.md)** → **[практика на ASP.NET Core](design/2143.md)**.
 6. **[Документация как инструмент](design/1117.md)** · **[API и интеграции](design/117.md)** · **[микросервисы](design/118.md)** · **[декомпозиция монолита](104.md)** · **[паттерны перехода](design/2144.md)**.
 7. **[Семь слоёв LLM-стека](/encyclopedia/6-ai/6-05-razrabotka-ii/119)** — если в ландшафт входят RAG, copilot или вызов внешней модели: от источников данных до прикладного UI (сопоставимо с gateway, очередями и NFR из [12 концепций](141.md)).
@@ -111,7 +153,7 @@ import DocCardList from '@theme/DocCardList';
 | **NFR** | Нефункциональные требования в цифрах: latency, RPS, RTO/RPO |
 | **ADR** | Почему выбрали вариант A, а не B |
 | **Bounded context** | Граница однозначных терминов и правил |
-| **Saga / Outbox** | Согласованность между сервисами без одной БД |
+| **Saga / Outbox** | Согласованность между сервисами без одной БД — [Saga](design/2124.md), [теория очередей](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) |
 | **Circuit Breaker** | Предохранитель на вызов зависимости |
 
 CAP/PACELC — [распределённые системы](design/21.md), выбор лидера (Raft, Paxos, ZAB) — [142.md](142.md), карта system design — [143.md](143.md), итоги — [998.md](998.md).

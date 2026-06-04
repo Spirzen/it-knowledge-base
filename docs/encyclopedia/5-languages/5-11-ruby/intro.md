@@ -36,6 +36,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 1a | [if __FILE__ == $0](./40.md) | Скрипт vs `require` |
 | 2 | [Синтаксис](./12.md) → [Основы](./1.md) | TL;DR в начале `1.md` |
 | 3 | [Типы](./13.md) → [Управление](./14.md) | Итераторы, `case`/`in` |
+| 3a | [Теория исключений](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [иерархия и rescue](./171.md) | `begin/rescue/ensure` |
 | 4 | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП в Ruby](./102.md) | Классы, модули |
 | 5 | [Фреймворки](./15.md) → [Rails](./21.md) | Веб после языка |
 | 6 | [Справочник](./3.md) → [Чек-лист](./999.md) | Шпаргалка |

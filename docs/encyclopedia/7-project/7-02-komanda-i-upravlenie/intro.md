@@ -71,6 +71,19 @@ IT-проект — это не только код и серверы. Это л
 
 Здесь мало "как настроить пайплайн" — это инфраструктура и разработка в других главах энциклопедии. Зато много про **поведение, процессы и формулировки**: как не превратить дейли в суд, как фиксировать изменения и почему "цифровизация" и "трансформация" — разные вещи.
 
+При инцидентах и эскалациях к инженерной стороне — [2.07 Техподдержка](/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/intro) и [7.16 ITSM](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/intro).
+
+## Закрепить базовую теорию (глава 4)
+
+Руководителю и тимлиду не нужно писать продакшен-код, но **понимать артефакты команды** — да:
+
+| Вопрос в управлении | Теория |
+| :--- | :--- |
+| Code review: на что смотреть | [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro) · [код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) |
+| Git-flow, ветки, merge | [Основы Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [Git в команде](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/114) |
+| «Почему задача на три дня заняла неделю» — техдолг | [Технический долг](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/115) · [легаси — о разделе](/encyclopedia/7-project/7-11-legasi-kod/intro) |
+| Оценка сложности модуля | [Алгоритмы и сложность](/encyclopedia/4-code-dev/4-01-algoritmy/intro) |
+
 <DocCardList />
 
 {/* sidebar-collections */}

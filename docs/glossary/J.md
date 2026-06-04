@@ -153,6 +153,6 @@ JVM (Java Virtual Machine) — виртуальная машина, обеспе
 
 ## JWT
 
-JWT (JSON Web Token) — открытый стандарт (RFC 7519) для создания компактных, самодостаточных токенов, используемых для аутентификации и обмена информацией между участниками. Состоит из трёх частей: заголовка, полезной нагрузки (claims) и подписи (HMAC или RSA). Широко применяется в OAuth 2.0 и stateless-аутентификации. Сравнение с session cookie и PASETO — в [аутентификации и авторизации](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111#cookies-sessions-jwt-paseto). Отличие от API-ключа (срок, проверка, M2M) — в [авторизации в интеграционных сценариях](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1121#tokens-i-api-keys).
+JWT (JSON Web Token) — открытый стандарт (RFC 7519) для создания компактных, самодостаточных токенов, используемых для аутентификации и обмена информацией между участниками. Состоит из трёх частей: заголовка, полезной нагрузки (claims) и подписи (HMAC или RSA). Широко применяется в OAuth 2.0 и stateless-аутентификации. Сравнение с session cookie и PASETO — в [аутентификации и авторизации](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111#cookies-sessions-jwt-paseto). Отличие от API-ключа (срок, проверка, M2M) — в [авторизации в интеграционных сценариях](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1121#tokens-i-api-keys).
 
 ---

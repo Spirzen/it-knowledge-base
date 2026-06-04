@@ -75,6 +75,7 @@ import DocCardList from '@theme/DocCardList';
 | Оценка трудозатрат, переговоры | [Команда и управление](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro) |
 | Тестирование, UAT, среды | [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro) |
 | Сопровождение и TCO ПО | [Экономика производства ПО](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro) |
+| Единая модель данных, миграция, регламентные выгрузки | [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) · [пакетная работа](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433) · [роль БД в организации](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6) |
 
 <DocCardList />
 

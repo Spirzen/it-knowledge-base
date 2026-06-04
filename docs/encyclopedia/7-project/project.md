@@ -22,6 +22,40 @@ import DocCardList from '@theme/DocCardList';
 
 Инфраструктурный контекст сдачи ПО (ВМ, контейнеры, облако) — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) и раздел [8. Инфраструктура и безопасность](/encyclopedia/8-infra-security/infra-security).
 
+---
+
+## Базовая теория: раздел 2
+
+В проектных материалах часто всплывают сети, API, безопасность и интеграции. Чтобы не гадать «как это устроено под капотом», держите под рукой [2. Система и сеть](/encyclopedia/2-system-network/system-network):
+
+| Вопрос в главе 7 | Куда закрепить теорию |
+| :--- | :--- |
+| API, REST, HTTP, контракты, очереди | [2.09 Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · практика в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117) |
+| IP, DNS, TLS, CDN, коды HTTP | [2.03 Сеть и интернет](/encyclopedia/2-system-network/2-03-set-i-internet/intro) |
+| Браузер, cookie, путь запроса | [2.04 Как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro) |
+| OAuth, JWT, TLS, ИБ в требованиях | [2.08 Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro) |
+| curl, терминал, ручная проверка API | [2.05 Терминал](/encyclopedia/2-system-network/2-05-terminal/1133) · [2.09 Postman/curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) |
+| Мониторинг, инциденты, поддержка | [2.06 Администрирование](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro) · [2.07 Техподдержка](/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/intro) · [7.16 ITSM](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/intro) |
+| ERP, платформы, корпоративное ПО | [2.02 Платформы](/encyclopedia/2-system-network/2-02-platformy/3001) · [7.15 ERP](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro) |
+
+---
+
+## Базовая теория: раздел 3
+
+В проектных материалах постоянно всплывают **данные**: ERD, SQL, миграции, пакетные загрузки, выбор СУБД. Чтобы не гадать «что такое транзакция и нормализация», держите под рукой [3. Данные и разметка](/encyclopedia/3-data-markup/data-markup):
+
+| Вопрос в главе 7 | Куда закрепить теорию |
+| :--- | :--- |
+| Данные vs информация, типы | [1.09 Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro) · [3.03 Мыслительная база](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/intro) |
+| ERD, ключи, связи 1:N / M:N | [Entity Relationship](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11) · [проектирование БД в 7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116) |
+| Нормализация, модель данных | [Нормализация в SQL](/encyclopedia/3-data-markup/3-07-sql/104#normalnye-formy) · [реляционная модель](/encyclopedia/3-data-markup/3-07-sql/103) |
+| СУБД, индексы, транзакции, WAL | [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) · [опорные темы масштабирования](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12) |
+| SQL на практике (все роли) | [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) · [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888) |
+| NoSQL, кэш, полиглот | [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro) · [Redis](/encyclopedia/3-data-markup/3-06-nosql/5) |
+| Миграции, ETL, batch/bulk | [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433) · [ETL и оркестрация](/encyclopedia/3-data-markup/3-11-analiz-dannyh/425) |
+| RPO/RTO, бэкапы, восстановление | [Восстановление после сбоя](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8) · [управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1) |
+| Конфиги и форматы данных | [Конфигурации и данные](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/intro) |
+
 <div class="callout callout--tip">
   <div class="callout-title">PostgreSQL — общий навык для всех ролей в проекте</div>
 

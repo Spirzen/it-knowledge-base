@@ -189,6 +189,12 @@ Reputation (репутация): количественная или качес�
 
 ---
 
+## Retry
+
+Retry (повторная попытка) — политика повторного вызова операции после **временного** сбоя (таймаут, 502/503/504, сетевой обрыв), обычно с лимитом попыток, экспоненциальной задержкой и jitter. Безопасен только для **идемпотентных** операций или при `Idempotency-Key`; иначе retry даёт дубликаты заказов и платежей. Сочетается с таймаутом и circuit breaker, чтобы не создать retry storm. См. [Инженерия устойчивости](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2136), [идемпотентность](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/133).
+
+---
+
 ## REST
 
 Representational State Transfer (REST): архитектурный стиль для проектирования распределённых гипермедиа-систем, в первую очередь веб-API. Ресурсы адресуют URI, операции выражаются HTTP-методами (GET, POST, PUT, PATCH, DELETE). Шесть ограничений: клиент-сервер, statelessness, кэшируемость, единообразие интерфейса (в т.ч. HATEOAS), многоуровневая система, опциональный code on demand. Практики контракта — именование путей, пагинация, фильтрация, версионирование, TLS, auth, rate limiting. Подробнее — [обзор дизайна REST API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-design-overview).

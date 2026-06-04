@@ -42,7 +42,7 @@ LAN (Local Area Network) — локальная вычислительная с�
 
 ## Language Integrated Query (LINQ)
 
-Language Integrated Query (LINQ) — проект Microsoft по добавлению синтаксиса языка запросов, напоминающего SQL, в языки программирования платформы .NET Framework. Используя некоторые новые особенности языка, LINQ позволяет использовать SQL-подобный синтаксис непосредственно в коде программы, написанной, например, на языке C#
+Language Integrated Query (LINQ) — встроенная в C# и другие языки .NET модель запросов к данным: коллекции в памяти (`IEnumerable`), реляционные БД через `IQueryable` (EF Core, LINQ to DB), XML (`System.Xml.Linq`), а также сторонние провайдеры. Два эквивалентных стиля — синтаксис запросов (`from` / `where` / `select`) и цепочки методов (`Where`, `Select`, `GroupBy`). Учебная статья — [LINQ в C#](/encyclopedia/5-languages/5-05-csharp/29), полный API — [Справочник по LINQ](/encyclopedia/5-languages/5-05-csharp/291).
 
 ---
 

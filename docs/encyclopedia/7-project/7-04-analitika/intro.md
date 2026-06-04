@@ -116,6 +116,41 @@ import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 | Тестирование | [7.05](/encyclopedia/7-project/7-05-testirovanie/intro) — в т.ч. [статическая проверка требований](/encyclopedia/7-project/7-05-testirovanie/1.md), [свойства качественных требований](/encyclopedia/7-project/7-04-analitika/111#свойства-качественных-требований) |
 | Карьера | [1.26](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/10) |
 
+### Базовая теория (глава 2)
+
+Когда в SA-маршруте не хватает «как устроено под капотом» — не останавливайтесь на формулировках требований:
+
+| Вопрос | Теория |
+| :--- | :--- |
+| REST, HTTP, OpenAPI, интеграции | [2.09](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [API в 7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117) |
+| Сеть, DNS, TLS, задержки | [2.03](/encyclopedia/2-system-network/2-03-set-i-internet/intro) |
+| Аутентификация, шифрование в NFR | [2.08](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111) |
+| Очереди, Kafka, согласованность | [2.09.121](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) |
+| Проверка контракта в консоли | [curl](/encyclopedia/2-system-network/2-05-terminal/1133) · [Postman/curl](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2) |
+
+### Базовая теория (глава 3)
+
+| Вопрос аналитика | Теория |
+| :--- | :--- |
+| ERD, кардинальность, DDL | [Entity Relationship](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11) · [нормализация](/encyclopedia/3-data-markup/3-07-sql/104#normalnye-formy) |
+| SQL для сверки и отчётов | [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro) · [язык данных в аналитике](./1121) |
+| Миграция, маппинг, целостность | [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433) · [исследование систем](./115#маппинг-данных-и-миграции) |
+| SQL vs NoSQL в требованиях | [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1#chetyre-osnovnyh-tipa-baz-dannyh) · [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro) |
+| Витрины, ETL, качество данных | [3.11 Анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro) · [продуктовая аналитика](./1123) |
+
+### Базовая теория (глава 4)
+
+Когда в ТЗ или sequence-диаграмме непонятно, **как это станет кодом** — не останавливайтесь на формулировках:
+
+| Вопрос аналитика | Теория |
+| :--- | :--- |
+| Классы, объекты, UML → реализация | [Проектирование сущности](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/1) · [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro) |
+| Изменение состояния, переменные, типы | [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) |
+| Асинхронные сценарии, очереди в use case | [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro) |
+| Слои приложения, где живёт бизнес-логика | [Проект и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro) · [Технический дизайн](./128) |
+| ORM, маппинг сущностей на таблицы | [ORM — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro) |
+| Ошибки, исключения в сценариях | [Ошибки и отказоустойчивость](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) |
+
 Закрепление: [Итоги](/encyclopedia/7-project/7-04-analitika/998), [Чек-лист](/encyclopedia/7-project/7-04-analitika/999).
 
 <DocCardList />

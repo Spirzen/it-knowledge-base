@@ -290,7 +290,7 @@ export const KUBERNETES_DOC_ITEMS = [
     section: 'config',
     lang: 'RU',
     title: 'Secrets',
-    summary: 'Пароли, токены, TLS-ключи; типы secret и монтирование в Pod.',
+    summary: 'Opaque, TLS, registry; data/stringData, env и volume, etcd encryption, ESO/Sealed Secrets.',
     url: 'https://kubernetes.io/ru/docs/concepts/configuration/secret/',
     encyclopedia: '/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211',
   },

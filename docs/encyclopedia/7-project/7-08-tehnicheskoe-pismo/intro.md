@@ -82,6 +82,10 @@ import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 **Docs-as-code** — Markdown в Git, ревью как у кода, версия документа рядом с версией продукта. Автоматизация сборки сайта — опциональна; ядро — хранение и ревью.
 
+**Сеть и API в документации** — OpenAPI и руководства программиста описывают то, что уже должно быть понятно из теории: [2.09 Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118), [аутентификация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111). Практика контракта — [Swagger/OpenAPI](3.md) и [API в 7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117).
+
+**Модели данных в документации** — ERD, словарь сущностей и описание миграций опираются на [Entity Relationship](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/11), [нормализацию](/encyclopedia/3-data-markup/3-07-sql/104#normalnye-formy) и [проектирование БД](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116); регламентные обмены — [пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433).
+
 ---
 
 ## Оформление документов (практика)

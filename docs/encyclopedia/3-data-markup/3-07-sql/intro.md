@@ -27,6 +27,8 @@ related:
     doc: lab/examples/1152
   - title: "Основы баз данных — о разделе"
     doc: encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro
+  - title: "Пакетная работа с данными"
+    doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/433
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -34,6 +36,8 @@ import DocCardList from '@theme/DocCardList';
 # О разделе
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, как текст превращается в исполняемые инструкции; в этом разделе — **язык запросов SQL** и работа с данными в таблицах.
+
+Массовая загрузка (`COPY`, multi-row `INSERT`, staging + `MERGE`), чанки и транзакции — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433#sql-bulk).
 
 <div class="callout callout--tip">
   <div class="callout-title">PostgreSQL — установите и потренируйтесь</div>

@@ -153,6 +153,18 @@ Blizzard Entertainment — американская игровая студия,
 
 ---
 
+## Batch processing
+
+Batch processing (пакетная обработка) — выполнение задач **группами** (батчами), а не по одной записи или в реальном времени. В интеграциях: ночной ETL, массовый `POST /resource/batch`, JDBC batch insert, батчинг продюсера Kafka (`batch.size`, `linger.ms`). Снижает накладные расходы сети и СУБД, но увеличивает задержку и требует watermark, checkpoint и идемпотентной загрузки. Хаб: [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433); также [пакетная загрузка в интеграциях](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/112#batch-etl-load), [batch в REST API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-api-design-principles), [batch vs stream](/encyclopedia/3-data-markup/3-11-analiz-dannyh/423).
+
+---
+
+## Bulk operation
+
+Bulk operation (массовая операция) — запись, обновление или удаление **многих записей одним вызовом** API или СУБД (`bulk insert`, `COPY`, `insertMany`, `_bulk` в Elasticsearch). Уровень оптимизации I/O, внутри которого часто используют **чанки**. См. [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433#sql-bulk).
+
+---
+
 ## BaaS
 
 Backend as a Service — облачная модель предоставления серверной инфраструктуры для мобильных и веб-приложений. Поставщики BaaS (например, Firebase, AWS Amplify) предлагают готовые решения для аутентификации, хранения данных, уведомлений и аналитики без необходимости развёртывания собственного backend.

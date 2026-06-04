@@ -67,6 +67,32 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь — **качество исходного кода** на уровне файла и модуля. Настройка пайплайнов, политики веток и процессы релиза — в других главах энциклопедии (методология, инфраструктура, команда). Зато много про формулировки в ревью, автоматизацию рутины и то, как не спорить о пробелах вручную.
 
+---
+
+## Закрепить базовую теорию (глава 2)
+
+Читаемый код не отменяет понимания среды, в которой он работает:
+
+| Вопрос при ревью или ошибках | Теория |
+| :--- | :--- |
+| HTTP-контракт, статусы, идемпотентность | [2.09 API и HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) · [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) |
+| Сообщения об ошибках и утечки в ответах | [2.08 Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro) · [исключения в культуре кода](./12) |
+| Асинхронность, очереди, retry | [Брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) · [устойчивость в 7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2136) |
+
+## Закрепить базовую теорию (глава 4)
+
+Культура кода — про **файл и модуль**; фундамент терминов и механизмов — в томе «Код и разработка»:
+
+| Вопрос при ревью или рефакторинге | Теория |
+| :--- | :--- |
+| Запахи, каталог приёмов Фаулера | [Методы рефакторинга](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612) |
+| Примитивы, value objects | [Примитивы и маленькие типы](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/616) · [ООП — введение](/encyclopedia/4-code-dev/4-08-oop/1) |
+| Иммутабельность, потоки | [Параллельные вычисления — о разделе](/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro) |
+| Декларативность, async/await | [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro) |
+| SOLID, DIP, абстракции | [SOLID](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113) |
+| try/catch, стек, Error vs Exception | [Ошибки и исключения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) |
+| YAGNI, мёртвый код, техдолг | [Архитектура выполнения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1) · [технический долг](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/115) |
+
 <DocCardList />
 
 {/* sidebar-collections */}

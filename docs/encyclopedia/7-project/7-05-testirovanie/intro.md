@@ -156,6 +156,17 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
   - Карьера и роли: [Карьера в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/1)
   - Стадия конструирования и V-модель (unit на этапе кода): [Конструирование ПО](/encyclopedia/7-project/7-12-konstruirovanie-po/intro)
   - Курс "экономика производства ПО" (COCOMO, ISO 25010, приёмка): [7-13](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)
+  - Теория данных (транзакции, целостность, batch): [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) · [конкурентный доступ](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/7) · [пакетная работа](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433)
+  - **Базовая теория (глава 4)** — что именно тестируете в коде:
+
+  | Вопрос QA | Теория |
+  | :--- | :--- |
+  | Что такое unit: функция, класс, модуль | [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) |
+  | White-box, ветвления, сложность | [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro) · [цикломатическая сложность](/encyclopedia/7-project/7-10-kultura-koda/2) |
+  | Моки и зависимости | [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro) |
+  | TDD, рефакторинг после Green | [Методы рефакторинга](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612) · [карта уровней и TDD](./131) |
+  | Отладка найденного дефекта | [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro) |
+  | DevTools, Network при веб-тестах | [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) |
 </div>
   </div>
 

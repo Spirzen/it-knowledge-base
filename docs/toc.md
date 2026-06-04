@@ -81,7 +81,7 @@ import DocCardList from '@theme/DocCardList';
   Дорожная карта изучения
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">1.03. Дорожная карта изучения</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/2">1.03. Тест на готовность к программированию</a></li>
-  <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101">1.03. Указатель</a></li>
+  <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101">1.03. Указатель — где и о чём почитать</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/211">1.03. Тест на компьютерную грамотность</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/212">1.03. Тест на готовность к работе с данными</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/213">1.03. Тест на готовность к веб-разработке</a></li>
@@ -266,6 +266,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/6">1.12. Настройка телефона для пожилых пользователей</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11">1.12. Настройка Windows</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13">1.12. Запуск и перезапуск приложений</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14">1.12. Быстрая печать</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/31">1.12. Управление памятью смартфона</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/98">1.12. Советы для новичка — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/99">1.12. Советы для новичка — чек-лист</a></li>
@@ -640,9 +641,9 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2">1.30. Ключевые термины и фразы на английском</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/3">1.30. Аббревиатуры и сокращения в IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/4">1.30. Англицизмы в русскоязычной IT-среде</a></li>
-  <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/6">1.30. Латиница, алфавит и сортировка имён</a></li>
-  <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/7">1.30. Знаки препинания и символы в IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/5">1.30. Практикум — чтение технической документации</a></li>
+  <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/6">1.30. Латиница и сортировка</a></li>
+  <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/7">1.30. Знаки и символы</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/41">1.30. Изучение английского языка с помощью ИИ</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/998">1.30. Английский язык в IT — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/999">1.30. Английский язык в IT — чек-лист</a></li>
@@ -849,6 +850,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/101">2.05. Основные команды в Linux</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/102">2.05. Основные команды Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/103">2.05. Сценарии для автоматизации</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/104">2.05. Поиск текста в файлах — grep, findstr и Select-String</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/111">2.05. Написание скриптов в Unix-системах</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/112">2.05. Автоматизация задач в Windows с помощью PowerShell</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/114">2.05. Справочник CLI-утилит и исполняемых файлов</a></li>
@@ -879,6 +881,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61">2.06. Организация домашней сети</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62">2.06. Идентичность Microsoft Entra и RBAC</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/63">2.06. Windows Server — начало работы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64">2.06. Управление службами в Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91">2.06. Работа с базами данных в администрировании</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92">2.06. Мониторинг, метрики и логирование систем</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93">2.06. Администрирование Linux-систем</a></li>
@@ -1028,9 +1031,9 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/131">2.09. Пагинация в API — шесть распространённых схем</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132">2.09. 12 советов по безопасности API</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/133">2.09. Идемпотентность и семантика доставки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/134">2.09. Практика подключения MongoDB, Redis, RabbitMQ и Kafka в распределённой системе</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/998">2.09. Основы интеграционного взаимодействия — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/999">2.09. Основы интеграционного взаимодействия — чек-лист</a></li>
-  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1121">2.09. Авторизация в интеграционных сценариях</a></li>
   </ul>
   </li>
 
@@ -1168,6 +1171,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1">3.04. Конфигурационные данные в текстовых форматах</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2">3.04. XML</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3">3.04. JSON</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/217">3.04. JSONB</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4">3.04. YAML</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5">3.04. Markdown</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6">3.04. XAML</a></li>
@@ -1398,6 +1402,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/430">3.11. Маршрут Excel → R → Python</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/431">3.11. Вероятность для аналитика данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/432">3.11. Линейная регрессия — Excel, R и Python</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/433">3.11. Пакетная работа с данными</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/998">3.11. Анализ данных — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/999">3.11. Анализ данных — чек-лист</a></li>
   </ul>
@@ -1560,8 +1565,8 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Асинхронность
-  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/2">4.05. Асинхронность простым языком — живые примеры</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">4.05. Процессы и потоки выполнения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/2">4.05. Асинхронность простым языком — живые примеры</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">4.05. Управление потоками в многозадачных системах</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/12">4.05. Асинхронное и синхронное выполнение</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/13">4.05. Межпроцессное взаимодействие и обмен данными</a></li>
@@ -1687,6 +1692,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/117">4.11. Microsoft Store и публикация Windows-приложений</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118">4.11. Первая программа Electron с React</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119">4.11. Первая форма WPF — XAML, стили и шаблоны</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/120">4.11. Как сделать установщик</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/998">4.11. Десктопные приложения — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/999">4.11. Десктопные приложения — чек-лист</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1152">4.11. Справочник по WinForms — элементы UI</a></li>
@@ -1874,12 +1880,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/23">5.01. События и обработка событий в браузере</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/24">5.01. Консоль, отладка и боль</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/25">5.01. Экосистема JavaScript - инструменты и фреймворки</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/26">5.01. Node.js - серверный JavaScript</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/27">5.01. React - библиотека для пользовательских интерфейсов</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/28">5.01. Vue.js</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/29">5.01. Angular</a></li>
-  <li><a href="/encyclopedia/5-languages/5-10-typescript/intro">5.10. TypeScript — о разделе</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/31">5.01. Ext JS</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/30">5.01. TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/32">5.01. Практика</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/33">5.01. Тестирование JavaScript — Vitest и Testing Library</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/34">5.01. Виджеты интерфейса на ванильном JavaScript</a></li>
@@ -1893,10 +1894,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/42">5.01. Чтение файлов в браузере</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/43">5.01. Web Components — Custom Elements и Shadow DOM</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/44">5.01. Кнопка &quot;Поделиться&quot; — DOM, события и Web Share API</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/45">5.01. Кнопка с загрузкой — React, Promise и поток обновлений</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/46">5.01. Нативные уведомления в браузере — Notification API</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/47">5.01. Canvas 2D — программируемая графика в браузере</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/48">5.01. Точка входа в Node.js — require.main и import.meta</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/101">5.01. Рекомендации по разработке на JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/102">5.01. Работа с HTML в JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/103">5.01. Простые приложения на JavaScript</a></li>
@@ -1905,40 +1904,135 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/122">5.01. Встроенные функции JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/211">5.01. Массивы в JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/241">5.01. Встроенные типы ошибок и их обработка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/242">5.01. Обработка исключений в JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/251">5.01. Справочник по JavaScript</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/261">5.01. Справочник по Node</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/262">5.01. Первая программа на Node.js</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/263">5.01. Express — middleware, маршруты и ошибки</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/264">5.01. Fullstack на JavaScript — API и фронтенд</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/265">5.01. npm — команды, зависимости и lock-файлы</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/266">5.01. Структура Node-проекта и правила разработки</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/267">5.01. CLI Node.js — запуск, отладка и деплой</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/268">5.01. Встроенные модули Node.js — fs, потоки и http</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/270">5.01. SPA и выбор frontend-фреймворка</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/271">5.01. Справочник по React</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/272">5.01. Первая программа на React</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/275">5.01. React — компоненты, JSX и поток данных</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/276">5.01. React — хуки, состояние и формы</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/277">5.01. React — Router, данные с API и оптимизация</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/273">5.01. Next.js</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/281">5.01. Справочник по Vue.js</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/282">5.01. Первая программа на Vue.js</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/283">5.01. Vue — реактивность и Composition API</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/284">5.01. Vue — Router, Pinia и Vite</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/285">5.01. Vue — SSR, тесты и production</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/291">5.01. Справочник по Angular</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/292">5.01. Первая программа на Angular</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/293">5.01. Angular — DI, RxJS и формы</a></li>
-  <li><a href="/encyclopedia/5-languages/5-10-typescript/2">5.10. Справочник по TypeScript</a></li>
-  <li><a href="/encyclopedia/5-languages/5-10-typescript/998">5.10. TypeScript — итоги</a></li>
-  <li><a href="/encyclopedia/5-languages/5-10-typescript/999">5.10. TypeScript — чек-лист</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/311">5.01. Справочник по Ext JS</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/312">5.01. Первая программа на Ext JS</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/313">5.01. Ext JS — Model, Store и proxy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/301">5.01. Справочник по TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/998">5.01. JavaScript — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/999">5.01. JavaScript — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/1001">5.01. Что требуется знать перед началом изучения языка программирования JavaScript</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/2731">5.01. Первая программа на Next.js</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Node.js
+
+<ul>
+  <li>
+  <ul>
+  Node.js
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/26">5.01. Node.js - серверный JavaScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/48">5.01. Точка входа в Node.js — require.main и import.meta</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/261">5.01. Справочник по Node</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/262">5.01. Первая программа на Node.js</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/263">5.01. Express — middleware, маршруты и ошибки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/264">5.01. Fullstack на JavaScript — API и фронтенд</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/265">5.01. npm — команды, зависимости и lock-файлы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/266">5.01. Структура Node-проекта и правила разработки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/267">5.01. CLI Node.js — запуск, отладка и деплой</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/268">5.01. Встроенные модули Node.js — fs, потоки и http</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Frontend Frameworks
+
+<ul>
+  <li>
+  <ul>
+  Frontend Frameworks
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/270">5.01. SPA и выбор frontend-фреймворка</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### React
+
+<ul>
+  <li>
+  <ul>
+  React
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/27">5.01. React - библиотека для пользовательских интерфейсов</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/45">5.01. Кнопка с загрузкой — React, Promise и поток обновлений</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/271">5.01. Справочник по React</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/272">5.01. Первая программа на React</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/275">5.01. React — компоненты, JSX и поток данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/276">5.01. React — хуки, состояние и формы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/277">5.01. React — Router, данные с API и оптимизация</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Vue.js
+
+<ul>
+  <li>
+  <ul>
+  Vue.js
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/28">5.01. Vue.js</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/281">5.01. Справочник по Vue.js</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/282">5.01. Первая программа на Vue.js</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/283">5.01. Vue — реактивность и Composition API</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/284">5.01. Vue — Router, Pinia и Vite</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/285">5.01. Vue — SSR, тесты и production</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Angular
+
+<ul>
+  <li>
+  <ul>
+  Angular
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/29">5.01. Angular</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/291">5.01. Справочник по Angular</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/292">5.01. Первая программа на Angular</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/293">5.01. Angular — DI, RxJS и формы</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Ext JS
+
+<ul>
+  <li>
+  <ul>
+  Ext JS
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/31">5.01. Ext JS</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/311">5.01. Справочник по Ext JS</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/312">5.01. Первая программа на Ext JS</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/313">5.01. Ext JS — Model, Store и proxy</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Meta Frameworks
+
+<ul>
+  <li>
+  <ul>
+  Meta Frameworks
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/3-meta-frameworks/273">5.01. Next.js</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/3-meta-frameworks/2731">5.01. Первая программа на Next.js</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### CLI экосистемы
+
+<ul>
+  <li>
+  <ul>
+  CLI экосистемы
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/4-cli-tools/1">5.01. Справочник CLI экосистемы JavaScript</a></li>
   </ul>
   </li>
 
@@ -1981,7 +2075,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/38">5.02. Однострочные приёмы Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/39">5.02. Зависимости Python — requirements.txt, pyproject.toml и pip</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/40">5.02. if __name__ == &quot;__main__&quot; — точка входа при запуске файла</a></li>
-  <li><a href="/encyclopedia/5-languages/5-02-python/41">5.02. Валидация данных через Pydantic</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/41">5.02. Pydantic — валидация входящих данных</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/101">5.02. Рекомендации по разработке на Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/102">5.02. Простые приложения на Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/103">5.02. Встроенный модуль builtins и типизация в Python</a></li>
@@ -2084,6 +2178,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-03-java/301">5.03. Вопросы на собеседовании — Core Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/302">5.03. JVM в проде — jcmd, дамп памяти и JFR</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/303">5.03. Ошибки REST — @Valid и @ControllerAdvice</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/304">5.03. Аннотации Spring Boot</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/308">5.03. Virtual Threads в Java (Java 21+)</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/311">5.03. JavaFX и GUI</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/998">5.03. Java — итоги</a></li>
@@ -2481,6 +2576,47 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-10-go/2412">5.10. Первая программа на Gin</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/2413">5.10. Первая программа на Echo</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/2414">5.10. Первая программа на Fiber</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### TypeScript
+
+<ul>
+  <li>
+  <ul>
+  TypeScript
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/1">5.10. Основы TypeScript и структура языка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/2">5.10. Справочник по TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/3">5.10. Экосистема и архитектура TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/4">5.10. Первая программа на TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/5">5.10. Простые приложения на TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/6">5.10. Рекомендации по разработке на TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/7">5.10. История TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/8">5.10. Синтаксис и пунктуация TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/9">5.10. Форматы и подключение TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/10">5.10. Типы данных и типизация в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/11">5.10. Переменные и константы в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/12">5.10. Операторы и условные ветвления в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/13">5.10. Циклы в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/14">5.10. Функции в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/15">5.10. Архитектура компиляции TypeScript и runtime</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/16">5.10. TypeScript Server</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/17">5.10. Асинхронное программирование в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/18">5.10. Объекты и классы в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/19">5.10. Коллекции и массивы в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/20">5.10. События и обработка событий в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/21">5.10. TypeScript и React</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/22">5.10. TypeScript и Node.js</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/23">5.10. Декораторы в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/24">5.10. Дженерики в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/25">5.10. Генераторы и итераторы в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/26">5.10. TypeORM</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/27">5.10. Обработка ошибок в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/28">5.10. Паттерны в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/998">5.10. TypeScript — итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/999">5.10. TypeScript — чек-лист</a></li>
   </ul>
   </li>
 
@@ -3244,6 +3380,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/117">6.05. Цифровые инструменты без ручного кодинга</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/119">6.05. Семь слоёв LLM-стека</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/120">6.05. Облачные API Cognitive Services</a></li>
+  <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/121">6.05. Оркестрация AI-агентов</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/999">6.05. Разработка ИИ — чек-лист</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/1131">6.05. Интеграция ИИ в веб-приложения</a></li>
   </ul>
@@ -4002,8 +4139,10 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121">8.05. Реализация интеграции</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122">8.05. Проектирование API</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/124">8.05. PACELC и компромиссы распределённых систем</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/134">8.05. Интеграции — Basic, Bearer и mTLS на практике</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/998">8.05. Микросервисы и интеграция — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/999">8.05. Микросервисы и интеграция — чек-лист</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1121">8.05. Авторизация в интеграционных сценариях</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151">8.05. REST</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1191">8.05. Java-приложение с Apache Kafka и PostgreSQL</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201">8.05. Справочник по SOAP</a></li>

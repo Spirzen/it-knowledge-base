@@ -183,6 +183,13 @@ module.exports = {
           }
           Object.assign(slugRedirects, cLanguageRedirects, designPatternRedirects);
 
+          slugRedirects['/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1121'] = [
+            '/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1121',
+          ];
+          slugRedirects['/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/134'] = [
+            '/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/134',
+          ];
+
           const fromGenerated = docLegacyRedirects[existingPath] ?? [];
           const fromManual = slugRedirects[existingPath] ?? [];
           const fromEncFolders = fromEncyclopedia ?? [];
@@ -300,6 +307,11 @@ module.exports = {
           sidebarId: 'docsSidebar',
           position: 'left',
           label: 'Энциклопедия',
+        },
+        {
+          to: '/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101',
+          label: 'Указатель',
+          position: 'left',
         },
         {type: 'custom-docSearch', position: 'right'},
       ],

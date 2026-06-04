@@ -58,6 +58,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 1a | [fn main() — бинарный crate](./40.md) | `main.rs` vs `lib.rs` |
 | 2 | [Основы](./11.md) → [Синтаксис](./12.md) | Компилятор, модули, стиль |
 | 3 | [Типы и владение](./13.md) | Главная тема Rust |
+| 3a | [Теория ошибок](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [обработка в Rust](./171.md) | `Result`, `panic!` |
 | 4 | [Управление](./14.md) → [Ошибки](./171.md) | `match`, `Result`, `?` |
 | 5 | [ООП-паттерны](./141.md) → [Трейты](./18.md) | Без классического наследования |
 | 6 | [Тестирование](./202.md) → [Cargo workspace](./204.md) | Практика в проекте |

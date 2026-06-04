@@ -25,6 +25,8 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8
   - title: "Практикум разработки игр — о разделе"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
+  - title: "Пакетная работа с данными"
+    doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/433
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -43,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 </div>
 </div>
 
-Раздел охватывает язык **Java**, **JVM**, сборки (Maven/Gradle), фреймворки и работу с данными. Материалы рассчитаны на разработчиков и архитекторов: от первой программы до Spring, тестирования и облачного развёртывания.
+Раздел охватывает язык **Java**, **JVM**, сборки (Maven/Gradle), фреймворки и работу с данными. Материалы рассчитаны на разработчиков и архитекторов: от первой программы до Spring, тестирования и облачного развёртывания. JDBC batch, Hibernate `batch_size`, keyset-выборка — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433), [Hibernate batch](/encyclopedia/5-languages/5-03-java/22).
 
 **Java** — не "только банки": это JVM-экосистема (серверы, Android-наследие, инструменты). В новых backend-проектах чаще **Spring Boot**, а не JSF — legacy-главы в разделе помечены как справочные.
 
@@ -61,7 +63,7 @@ import DocCardList from '@theme/DocCardList';
 3. [Структура и сборки](./12.md) — Maven/Gradle, запуск вне IDE; [отладка в IDEA](./132.md).
 4. [Синтаксис](./14.md), [типы](./15.md) (примитивы и [обёртки](./15.md#priminitiv-i-klass-obertka)), [операторы и циклы](./17.md), [конструкции](./16.md) — в том числе `Scanner` и [случайные числа](./16.md#случайные-числа).
 5. [ООП](./18.md) — классы, наследование, интерфейсы, `instanceof`.
-6. [Коллекции](./24.md), [полный API Collections Framework](./305.md), [Stream API](./295.md), [полный API Streams](./306.md), [строки](./296.md), [исключения](./21.md).
+6. Теория: [ошибки и исключения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [исключения в Java](./21.md), [иерархия](./211.md).
 7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [Virtual Threads (Java 21+)](./308.md), [JVM и потоки](./23.md).
 8. [Аннотации и рефлексия](./299.md), [современный синтаксис](./300.md) — record, sealed, pattern matching.
 9. [Вопросы на собеседование — Core Java](./301.md) — карта тем → главы раздела.

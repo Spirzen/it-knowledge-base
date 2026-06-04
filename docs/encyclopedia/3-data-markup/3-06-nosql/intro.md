@@ -25,6 +25,8 @@ import DocCardList from '@theme/DocCardList';
 
 Практика реляционных СУБД из кода (до NoSQL): [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 
+Массовые операции (`insertMany`, `_bulk`, Redis `--pipe`) — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433#nosql-batch).
+
 ---
 
 ## Маршрут обучения

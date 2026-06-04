@@ -19,6 +19,8 @@ related:
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro
   - title: "Методы защиты пользовательских и корпоративных данных"
     doc: encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117
+  - title: "Пакетная работа с данными"
+    doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/433
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -33,6 +35,8 @@ ORM и драйверы опираются на конкретную СУБД. �
 - [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)
 
 Теория SQL и схемы — [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro); проектирование таблиц — [Проектирование баз данных](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116).
+
+Массовая загрузка и пакетные вставки (bulk, chunk, checkpoint, идемпотентность) — не сильная сторона «поштучного» `SaveChanges`; теория и границы транзакций — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433). REST batch и ETL-окна — [интеграционные потоки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/112#batch-etl-load).
 
 <DocCardList />
 

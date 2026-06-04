@@ -106,7 +106,7 @@ import DocCardList from '@theme/DocCardList';
 2a. [fun main() — точка входа](./40.md) — JVM и import.
 3. [Основы](./11.md) → [типы](./12.md) → [операторы](./13.md) → [циклы](./14.md).
 4. [ООП](./15.md) → [синтаксис](./16.md) → [конструкции](./17.md).
-5. [Исключения](./171.md) → [коллекции и Sequence](./225.md).
+5. [Теория: ошибки и исключения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [иерархия в Kotlin](./171.md), практика JVM — [Java / 21](/encyclopedia/5-languages/5-03-java/21) → [коллекции и Sequence](./225.md).
 6. [Корутины](./222.md) → [Flow](./226.md) — до Ktor и тяжёлого Android.
 7. [Kotlin ↔ Java](./233.md) — если в проекте оба языка.
 8. [Справочник](./3.md), [итоги](./998.md), [чек-лист](./999.md).

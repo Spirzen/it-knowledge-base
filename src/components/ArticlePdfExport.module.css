@@ -7,6 +7,13 @@
   padding: 0;
 }
 
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -63,6 +70,10 @@
 @media (max-width: 996px) {
   .toolbar {
     align-items: stretch;
+  }
+
+  .actions {
+    flex-direction: column;
   }
 
   .button {

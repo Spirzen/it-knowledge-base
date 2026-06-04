@@ -199,7 +199,7 @@ Sid Meier’s Civilization: серия пошаговых стратегий в 
 
 ## SignalR
 
-SignalR — библиотека Microsoft для организации двунаправленной связи в реальном времени (WebSocket, SSE, Long Polling) между клиентом и сервером (ASP.NET).
+SignalR — библиотека Microsoft для двунаправленной связи в реальном времени в ASP.NET Core: хабы, группы, `Clients.User`, автоматический выбор транспорта (WebSocket → SSE → long polling), масштабирование через Redis или Azure SignalR Service. Подробнее — [SignalR в .NET](/encyclopedia/5-languages/5-04-platforma-dotnet/2).
 
 ---
 
