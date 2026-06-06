@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import Link from '@docusaurus/Link';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import HomepageHeroSearch from '@site/src/components/HomepageHeroSearch';
 import UniverseLogo from '@site/src/components/UniverseLogo';
@@ -15,7 +14,8 @@ const GettingStartedPaths = lazy(
 );
 const RandomArticle = lazy(() => import('@site/src/components/RandomArticle'));
 
-const APK_DOWNLOAD_PATH = '/downloads/it-universe.apk';
+const APK_DOWNLOAD_URL =
+  'https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk';
 const INDEX_GUIDE_PATH =
   '/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101';
 
@@ -30,8 +30,6 @@ function HomeSectionFallback({minHeight = '12rem'}) {
 }
 
 function HomepageHeader() {
-  const apkUrl = useBaseUrl(APK_DOWNLOAD_PATH);
-
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
@@ -65,8 +63,10 @@ function HomepageHeader() {
           <footer className={styles.heroFooter}>
             <a
               className={styles.heroFooterLink}
-              href={apkUrl}
-              download="it-universe.apk">
+              href={APK_DOWNLOAD_URL}
+              download="it-universe.apk"
+              target="_blank"
+              rel="noopener noreferrer">
               Скачать приложение для Android (APK)
             </a>
           </footer>

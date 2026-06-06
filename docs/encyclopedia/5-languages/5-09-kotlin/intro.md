@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/5-languages/5-07-php/intro
   - title: "Ruby — о разделе"
     doc: encyclopedia/5-languages/5-11-ruby/intro
+  - title: "Мобильные приложения на Kotlin"
+    doc: encyclopedia/5-languages/5-09-kotlin/234
   - title: "Справочник по Android"
     doc: encyclopedia/2-system-network/2-01-operatsionnaya-sistema/81
   - title: "Swift — о разделе"
@@ -84,7 +86,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Цель | Следующие шаги | Куда углубляться |
 |------|----------------|------------------|
-| **Android** | [Compose — первый экран](./229.md) → [Room + ViewModel](./231.md) → [мобильный раздел](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1135) | [корутины](./222.md), [Flow](./226.md) |
+| **Android** | [Compose — первый экран](./229.md) → [мобильные на Kotlin](./234.md) → [KotlinMobileApp](./22.md) / [Kotlinochi](./23.md) | [корутины](./222.md), [Flow](./226.md), [мобильный раздел](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1135) |
 | **Backend (Ktor)** | [Ktor — первая программа](./221.md) → [Ktor Client](./228.md) | [Flow](./226.md), [тесты](./223.md) |
 | **Backend (Spring)** | [Spring Boot на Kotlin](./232.md) | [Security (Java)](/encyclopedia/5-languages/5-03-java/272), [JPA](/encyclopedia/5-languages/5-03-java/293) |
 | **Desktop / KMP** | [Compose Multiplatform](./224.md) | [DSL](./230.md), [экосистема](./10.md) |
@@ -134,7 +136,7 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
 | 1 | [Первая программа](./2.md) | JDK, IDEA, Maven |
-| 2a | [Compose](./229.md) → [Room](./231.md) | Android UI + БД |
+| 2a | [Compose](./229.md) → [234](./234.md) → [22](./22.md) / [23](./23.md) | Android UI + учебные проекты |
 | 2b | [Ktor](./221.md) | REST API |
 | 2c | [Spring Boot](./232.md) | REST на Spring |
 | 2d | [Compose Multiplatform](./224.md) | Desktop UI |

@@ -25,6 +25,8 @@ related:
     doc: lab/examples/11111
   - title: "Bash — однострочники и скрипты"
     doc: lab/examples/1151
+  - title: "Практикум — API-тестер на Groovy и JMeter"
+    doc: encyclopedia/5-languages/5-12-groovy/27
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -63,7 +65,7 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 | 5 | [Ручное тестирование веба](./128.md) | Чек-лист UI, Network, сессии |
 | 6 | [Техники проектирования тестов](./127.md) | Эквивалентные классы, границы, таблицы решений |
 | 7 | [SQL для тестировщика](./129.md) | Проверка данных в БД |
-| 8 | [Тестирование и анализ API](./2.md) · [curl / fetch — примеры](/lab/Примеры/1133) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) · [Bash — health-check в shell](/lab/Примеры/1151) | Postman, curl, DevTools; галереи запросов и скриптов с разбором |
+| 8 | [Тестирование и анализ API](./2.md) · [curl / fetch — примеры](/lab/Примеры/1133) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) · [Bash — health-check в shell](/lab/Примеры/1151) · [Практикум — API-тестер на Groovy](/encyclopedia/5-languages/5-12-groovy/27) | Postman, curl, DevTools; desktop-клиент на Groovy + JMeter для разработчиков JVM |
 | 8a | [GitHub Actions — CI/CD рецепты](/lab/Примеры/1134) · [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro) | Запуск `pytest` / `npm test` в pipeline, badge в README |
 | 9 | [Подготовка среды и первый тест](./1011.md) | Первый автотест на pytest (SDET) |
 | 10 | [Unit, Integration, UI, E2E, TDD и BDD](./131.md) | Карта уровней тестов и практик разработки |
@@ -82,11 +84,11 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 | Основы QA, документы, тест-дизайн | [1](./1.md), [111](./111.md), [119](./119.md), [127](./127.md) | Покрыто |
 | Основы веб-тестирования (маршрут QA) | [132](./132.md) | Добавлено |
 | Ручное веб-тестирование, DevTools | [128](./128.md), [2](./2.md) | Покрыто |
-| API, HTTP, Postman, curl | [2](./2.md) · [интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Fetch / axios — типовые запросы](/lab/Примеры/1145) | Покрыто |
+| API, HTTP, Postman, curl | [2](./2.md) · [интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Fetch / axios — типовые запросы](/lab/Примеры/1145) · [Groovy API-тестер](/encyclopedia/5-languages/5-12-groovy/27) | Покрыто |
 | SQL для проверки данных | [129](./129.md) · [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) | Покрыто |
 | Автоматизация, пирамида, инструменты | [115](./115.md), [118](./118.md), [1181](./1181.md), [1182](./1182.md) (Playwright, POM, pytest, Allure, CI) · [CI/CD рецепты](/lab/Примеры/1134) | Покрыто |
 | Практикум **Python** | [1011](./1011.md) → [1014](./1014.md) | Покрыто |
-| Практикум **Java** | [1015](./1015.md) · JUnit/REST Assured в [118](./118.md) | Добавлено |
+| Практикум **Java** | [1015](./1015.md) · JUnit/REST Assured в [118](./118.md) · [Groovy API-тестер](/encyclopedia/5-languages/5-12-groovy/27) | Добавлено |
 | Практикум **JavaScript** | [1016](./1016.md) · Jest/Playwright в [118](./118.md) | Добавлено |
 | Мобильные приложения | [124](./124.md) | Покрыто |
 | Git, алгоритмы, soft skills, английский | [1274](./1274.md) — бонус-модули и ссылки | Добавлено |

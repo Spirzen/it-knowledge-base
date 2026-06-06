@@ -23,6 +23,10 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Разработка игр на Python"
     doc: encyclopedia/5-languages/5-02-python/312
+  - title: "Kivy — мобильные приложения и игры на Python"
+    doc: encyclopedia/5-languages/5-02-python/320
+  - title: "Практикум Kivy — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/kivy-praktikum/intro
   - title: "Pygame — мини-игры на Python"
     doc: lab/examples/1132
   - title: "Tkinter — окна и виджеты"
@@ -100,12 +104,14 @@ Python удобен для **первого языка**: читается по�
 | 3 | [DRF](./3012.md) или [FastAPI](./3432.md) | JSON API |
 | 4 | [Tkinter](./311.md) → [3111](./3111.md) → [3112](./3112.md) · [примеры окон и виджетов](/lab/Примеры/1124) | Десктоп; теория — [раздел 4.11](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) |
 | 4a | [Разработка игр на Python](./312.md) → [мини-игры в Lab](/lab/Примеры/1132) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Pygame и учебные мини-игры |
+| 4a-k | [Kivy](./320.md) → [Практикум Kivy](./kivy-praktikum/intro.md) (2048, Pong, Snake) | Мобильные игры на Python: тач, Clock, APK |
 | 4a-mc | [Разработка в Minecraft](/encyclopedia/9-spinoff/9-04-razrabotka-igr/21) → [команды и datapack](/lab/Примеры/1142) | Java Edition: чат, scoreboard, `.mcfunction` — без Pygame |
 | 4b | [Трёхмерная графика и Panda3D](./318.md) · [примеры фигур](/lab/Примеры/1111) | 3D-сцены, текстуры, куб из вершин |
 | 4b2 | [Turtle](./32.md) · [примеры фигур](/lab/Примеры/111) | 2D-черепашка на Python |
 | 4b3 | [Canvas 2D](/encyclopedia/5-languages/5-01-javascript/47) · [p5.js в Lab](/lab/Примеры/1114) · [SVG в Lab](/lab/Примеры/1119) | те же фигуры в браузере: Canvas/p5 или векторная разметка |
 | 4c | [Matplotlib — графики](./319.md) · [примеры](/lab/Примеры/1112) | Линии, гистограммы, scatter, подграфики |
-| 4d | [Excel — формулы](/lab/Примеры/1139) → [Анализ данных — pandas, NumPy](./33.md) · [NumPy — примеры](/lab/Примеры/1129) · [428](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428) · [примеры Pandas](/lab/Примеры/1113) | Сначала массивы, затем таблица, CSV, groupby |
+| 4d | [Excel — формулы](/lab/Примеры/1139) → [Анализ данных — pandas, NumPy](./33.md) · [NumPy — примеры](/lab/Примеры/1129) · [428](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428) · [примеры Pandas](/lab/Примеры/1113) · [практикум Pandas Data Viewer](./334.md) | Сначала массивы, затем таблица, CSV, groupby; сквозное GUI-приложение |
+| 4d-ml | [PyTorch для разработчика](./333.md) → [практикум — цифры MNIST на PyTorch](./335.md) | CNN, обучение, GUI-инференс; образец `F:\Projects\Python\TestPyTorch` |
 | 4e | [SymPy — уравнения и производные](/lab/Примеры/1118) · [LaTeX — формулы](/lab/Примеры/1137) | Школа и вуз: корни, производные, формулы в отчёте; график f(x) — [1112](/lab/Примеры/1112) |
 | 5 | [pytest](./37.md) | Тесты |
 

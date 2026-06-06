@@ -72,6 +72,14 @@ export const TYPING_LEVELS = [
 
 const CHARS_PER_WORD = 5;
 
+/** Дефис с клавиатуры и типографские тире считаем одним знаком. */
+const DASH_CHARS = new Set(['-', '–', '—', '−']);
+
+function typingCharsMatch(expected, actual) {
+  if (actual === expected) return true;
+  return DASH_CHARS.has(expected) && DASH_CHARS.has(actual);
+}
+
 export function getPresetsForCatalog(catalogId) {
   if (catalogId === 'hard') return TYPING_HARD_PRESETS;
   if (catalogId === 'english') return TYPING_ENGLISH_PRESETS;
@@ -107,7 +115,7 @@ export function analyzeTyping(target, typed) {
       marks.push({state: 'pending'});
       continue;
     }
-    if (actual === expected) {
+    if (typingCharsMatch(expected, actual)) {
       correct += 1;
       marks.push({state: 'ok'});
     } else {

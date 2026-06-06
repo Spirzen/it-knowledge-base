@@ -56,8 +56,11 @@ Groovy использует **Java-подобный синтаксис** с ко
 7. [Пунктуация](./17.md) → [Конструкции и фреймворки](./18.md)  
 8. [Gradle Groovy DSL](./23.md) — чтение `build.gradle`  
 9. [Spock](./21.md) · [Jenkins Pipeline](./22.md) — CI и тесты  
-10. [Справочник](./3.md) — углубление  
-11. [Итоги](./998.md) и [чек-лист](./999.md)
+10. [Job DSL Playground](./25.md) · [Jenkins Shared Library](./26.md) — jobs и общий код CI  
+11. [FastJ](./24.md) — игра на Groovy (опционально)  
+12. [Практикум — API-тестер](./27.md) — desktop-приложение на Groovy + JMeter  
+13. [Справочник](./3.md) — углубление  
+14. [Итоги](./998.md) и [чек-лист](./999.md)
 
 <div class="callout callout--tip">
   <div class="callout-title">Gradle на Kotlin DSL</div>
@@ -83,6 +86,7 @@ Groovy использует **Java-подобный синтаксис** с ко
 | 2 | [Gradle Groovy DSL](./23.md) | `build.gradle` |
 | 3 | [Основы — делегирование](./11.md) | Почему работает `implementation` |
 | 4 | [Spock](./21.md) · [Jenkins](./22.md) | Тесты и CI |
+| 5 | [Shared Library](./26.md) · [Job DSL](./25.md) | Стандартизация CI на Groovy |
 
 ---
 
@@ -102,7 +106,9 @@ Groovy использует **Java-подобный синтаксис** с ко
 1. Скрипт `hello.groovy` без IDE — [2.md](./2.md).
 2. В [11.md](./11.md) — мини-DSL с `delegate` как в Gradle.
 3. Один тест Spock к Java-классу — раздел 19 в [3.md](./3.md).
-4. [чек-лист](./999.md).
+4. [FastJ](./24.md) — игра на Groovy (опционально)  
+5. [Практикум — API-тестер](./27.md) — REST API через Swing + JMeter  
+6. [чек-лист](./999.md).
 
 ---
 

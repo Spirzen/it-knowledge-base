@@ -25,7 +25,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Вводный блок: отличие ML от маркетингового "ИИ", ИИ в быту, история, типы моделей, контекст для LLM. Начните с [главной статьи раздела](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1). Практический старт в коде: [NumPy — массивы и матрицы](/lab/Примеры/1129), затем [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2); вызов OpenAI API из Python — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149); готовые формулировки запросов с разбором — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Агенты с терминалом — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
+Вводный блок: отличие ML от маркетингового "ИИ", ИИ в быту, история, типы моделей, контекст для LLM. Начните с [главной статьи раздела](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1). Практический старт в коде: [NumPy — массивы и матрицы](/lab/Примеры/1129), затем [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2); сквозной проект на PyTorch — [практикум — распознавание цифр MNIST](/encyclopedia/5-languages/5-02-python/335); вызов OpenAI API из Python — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149); готовые формулировки запросов с разбором — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Агенты с терминалом — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
 
 <DocCardList />
 

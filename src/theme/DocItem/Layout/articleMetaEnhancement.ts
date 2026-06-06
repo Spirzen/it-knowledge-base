@@ -72,6 +72,10 @@ function isIgnorableSibling(el: HTMLElement): boolean {
 
 /** Элемент содержит только бейджи аудитории (часто отдельный `<p>` на строку). */
 function isBadgeOnlyContainer(el: HTMLElement): boolean {
+  if (el.matches('.complexity-badge, .article-tags, .article-meta')) {
+    return false;
+  }
+
   const badges = el.querySelectorAll('.complexity-badge');
   if (badges.length === 0) {
     return false;
@@ -215,6 +219,37 @@ function applyAudienceRoleClasses(root: HTMLElement): void {
   });
 }
 
+/** Точка вставки `.article-meta` — до переноса бейджей внутрь панели. */
+function resolveMetaMountPoint(
+  tagsEl: HTMLElement | null,
+  badges: HTMLElement[],
+): {parent: Node | null; ref: Node | null; emptyContainers: HTMLElement[]} {
+  const emptyContainers: HTMLElement[] = [];
+
+  if (tagsEl) {
+    return {parent: tagsEl.parentNode, ref: tagsEl, emptyContainers};
+  }
+
+  if (badges.length === 0) {
+    return {parent: null, ref: null, emptyContainers};
+  }
+
+  const first = badges[0]!;
+  const last = badges[badges.length - 1]!;
+  const container = first.parentElement;
+
+  if (container && isBadgeOnlyContainer(container)) {
+    emptyContainers.push(container);
+    return {parent: container.parentNode, ref: container, emptyContainers};
+  }
+
+  return {parent: last.parentNode, ref: last.nextSibling, emptyContainers};
+}
+
+function collectBadgesInsideTagsEl(tagsEl: HTMLElement): HTMLElement[] {
+  return [...tagsEl.querySelectorAll<HTMLElement>('.complexity-badge')];
+}
+
 function buildMetaPanel(
   tagsEl: HTMLElement | null,
   badges: HTMLElement[],
@@ -223,14 +258,27 @@ function buildMetaPanel(
     return;
   }
 
-  const insertBeforeEl = tagsEl ?? badges[0]!;
-  if (insertBeforeEl.closest('.article-meta')) {
+  const anchor = tagsEl ?? badges[0]!;
+  if (anchor.closest('.article-meta')) {
+    return;
+  }
+
+  const {parent: parentNode, ref: insertRef, emptyContainers} =
+    resolveMetaMountPoint(tagsEl, badges);
+
+  if (!parentNode || !parentNode.isConnected) {
     return;
   }
 
   const meta = document.createElement('div');
   meta.className = 'article-meta';
   meta.dataset.enhanced = 'true';
+
+  if (insertRef && insertRef.parentNode === parentNode && !meta.contains(insertRef)) {
+    parentNode.insertBefore(meta, insertRef);
+  } else {
+    parentNode.appendChild(meta);
+  }
 
   if (tagsEl) {
     const {row, chips} = createMetaRow('Статус', 'article-meta__chips article-tags');
@@ -247,11 +295,15 @@ function buildMetaPanel(
     meta.append(row);
   }
 
-  insertBeforeEl.parentNode?.insertBefore(meta, insertBeforeEl);
-
   if (tagsEl) {
     tagsEl.remove();
   }
+
+  emptyContainers.forEach((container) => {
+    if (container.isConnected && container.childNodes.length === 0) {
+      container.remove();
+    }
+  });
 }
 
 export function enhanceArticleMeta(): void {
@@ -268,7 +320,7 @@ export function enhanceArticleMeta(): void {
 
   const tagsEl = findSoloIntroArticleTags(root);
   const badges = tagsEl
-    ? collectBadgesAfter(tagsEl)
+    ? [...collectBadgesInsideTagsEl(tagsEl), ...collectBadgesAfter(tagsEl)]
     : findIntroBadgeCluster(root);
 
   buildMetaPanel(tagsEl, badges);

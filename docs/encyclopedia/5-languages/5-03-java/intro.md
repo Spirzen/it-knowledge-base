@@ -67,7 +67,7 @@ import DocCardList from '@theme/DocCardList';
 7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [Virtual Threads (Java 21+)](./308.md), [JVM и потоки](./23.md).
 8. [Аннотации и рефлексия](./299.md), [современный синтаксис](./300.md) — record, sealed, pattern matching.
 9. [Вопросы на собеседование — Core Java](./301.md) — карта тем → главы раздела.
-10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [аннотации Spring Boot](./304.md) → [Security Basic](./272.md) → [JWT](./274.md) → [безопасность в prod](./275.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
+10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [практикум "Simple CRM"](./254.md) → [аннотации Spring Boot](./304.md) → [Security Basic](./272.md) → [JWT](./274.md) → [безопасность в prod](./275.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 11. **JVM в проде:** [JVM и потоки](./23.md) → [флаги запуска в справочнике, §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [jcmd, heap dump, JFR](./302.md).
 
 <div class="callout callout--info">
@@ -84,11 +84,11 @@ import DocCardList from '@theme/DocCardList';
 
 | Цель | Маршрут |
 |------|---------|
-| **Корпоративный REST** | [271](./271.md) → [272](./272.md) → [274](./274.md) → [275](./275.md) → [303](./303.md) → [293](./293.md) → [273](./273.md) |
+| **Корпоративный REST** | [271](./271.md) → [практикум "Simple CRM"](./254.md) → [272](./272.md) → [274](./274.md) → [275](./275.md) → [303](./303.md) → [293](./293.md) → [273](./273.md) |
 | **Понять JVM в проде** | [23](./23.md) → [справочник §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [302](./302.md) → [101](./101.md) |
 | **Сборка и CI** | [12](./12.md) → [292](./292.md) (Gradle) |
-| **Legacy (поддержка)** | [JSF](./25.md), [JavaBeans](./26.md) — не для зелёного поля |
-| **Десктоп (JavaFX / Swing)** | [311.md](./311.md) → [3111.md](./3111.md) (JavaFX) или [Lab — Swing](/lab/Примеры/1143) (без Maven) → [3112.md](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [112.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
+| **Legacy (поддержка)** | [JSF — теория](./25.md) → [первая программа](./251.md) → [практикум «Список задач»](./252.md), [JavaBeans](./26.md) — не для зелёного поля |
+| **Десктоп (JavaFX / Swing)** | [311.md](./311.md) → [3111.md](./3111.md) (JavaFX) или [Lab — Swing](/lab/Примеры/1143) (без Maven) → [практикум «XML-валидатор»](./253.md) (Swing + Maven) → [3112.md](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [112.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
 | **Консольные задачи** | [Lab — консольные задачи](/lab/Примеры/1131) → [131](./131.md) (мини-приложения) |
 | **Лабораторная с GUI** | [Lab — Swing, построчный разбор](/lab/Примеры/1143) после [16](./16.md) и [17](./17.md) |
 | **Учебная игра** | [Java Survivors](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8) (в подготовке) — маршрут раздела [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |

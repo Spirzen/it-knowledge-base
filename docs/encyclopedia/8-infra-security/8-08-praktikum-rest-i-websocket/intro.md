@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro
   - title: "Проверка взаимодействия компонентов"
     doc: encyclopedia/7-project/7-05-testirovanie/1012
+  - title: "Практикум — API-тестер на Groovy и JMeter"
+    doc: encyclopedia/5-languages/5-12-groovy/27
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -65,6 +67,7 @@ import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationP
 - [Python 3.11+](https://www.python.org/downloads/) и `pip`
 - [.NET SDK 8](https://dotnet.microsoft.com/download)
 - [Postman](https://www.postman.com/downloads/) или Newman для CLI
+- На JVM (Groovy/Java) — опционально [Практикум — API-тестер на Groovy](/encyclopedia/5-languages/5-12-groovy/27) как альтернатива Postman с embedded JMeter
 - Базовое знакомство с [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) и [JSON](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1)
 - Базовая работа с [утилитой curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) для проверки ручек вне Postman; клиентский JavaScript — [Fetch / axios — типовые запросы](/lab/Примеры/1145)
 

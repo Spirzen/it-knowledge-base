@@ -47,8 +47,9 @@ import DocCardList from '@theme/DocCardList';
 
 | Трек | Проект | Статус | Стек |
 |------|--------|--------|------|
-| Python | [Battle City](./1.md) | готов (полная ревизия) | Python, Pygame |
-| Python | [Match3](./2.md) | готов (полная сборка в конце) | Python, Pygame |
+| Python | [Bubble Shooter](./10.md) | готов (12 этапов) | Python, Pygame |
+| Python | [Battle City](./1.md) | готов (16 этапов, [эталон на GitHub](https://github.com/Spirzen/BattleCity)) | Python, Pygame |
+| Python | [Match3](./2.md) | готов (18 этапов, [эталон на GitHub](https://github.com/Spirzen/Match3)) | Python, Pygame |
 | Python | [Ping Pong](./3.md) | готов (полная сборка в конце) | Python, Pygame |
 | Python | [Racing](./4.md) | готов (полная ревизия) | Python, Pygame |
 | Python | [Tetris](./5.md) | готов (полная ревизия) | Python, Pygame |
@@ -58,6 +59,7 @@ import DocCardList from '@theme/DocCardList';
 | TypeScript | [OnlineCardGame](./9.md) | поэтапно, полная ревизия в работе | TypeScript, браузер / Canvas |
 | TypeScript | TypeScript Survivors | скоро | TypeScript, браузер / Canvas |
 | TypeScript | диаблоид | скоро | TypeScript, браузер / Canvas |
+| Smalltalk | [SmallShooter](/encyclopedia/5-languages/5-08-smalltalk/44) | готов (8 этапов) | Pharo, Morphic |
 
 [Приключения Урала Батыра](https://spirzen.github.io/OnlineCardGame/) (репозиторий [OnlineCardGame](https://github.com/Spirzen/OnlineCardGame)) уже можно сыграть в браузере; пошаговый разбор кода — в главе [TypeScript — OnlineCardGame](./9.md).
 

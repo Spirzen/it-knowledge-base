@@ -3,6 +3,10 @@ title: Smalltalk — о разделе
 description: "Подборка материалов раздела Smalltalk в энциклопедии Вселенная IT."
 sidebar_label: Smalltalk — о разделе
 related:
+  - title: "SmallDesktop на Morphic — практикум"
+    doc: encyclopedia/5-languages/5-08-smalltalk/21
+  - title: "SmallPong на Morphic — практикум"
+    doc: encyclopedia/5-languages/5-08-smalltalk/31
   - title: "PHP — о разделе"
     doc: encyclopedia/5-languages/5-07-php/intro
   - title: "Kotlin — о разделе"
@@ -19,7 +23,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 # О разделе
 
-**Smalltalk** — один из родоначальников ООП и GUI: объекты и **сообщения**, динамическая типизация, среда **image**, IDE внутри системы. Язык создали в Xerox PARC в 1970-х; эталоном для индустрии стал **Smalltalk-80** (образ + виртуальная машина). От Simula пришли классы и наследование; к Java, Ruby, Objective-C и Python ушли посылка сообщений, живая среда и идеи рефакторинга, шаблонов и XP. Для обучения ориентируемся на **Pharo** (Playground, Class Browser); родственные реализации — **Squeak**, **VisualWorks**, **GNU Smalltalk**.
+**Smalltalk** — один из родоначальников ООП и GUI: объекты и **сообщения**, динамическая типизация, среда **image**, IDE внутри системы. Язык создали в Xerox PARC в 1970-х; эталоном для индустрии стал **Smalltalk-80** (образ + виртуальная машина). От Simula пришли классы и наследование; к Java, Ruby, Objective-C и Python ушли посылка сообщений, живая среда и идеи рефакторинга, шаблонов и XP. Для обучения ориентируемся на **[Pharo](./13.md)** (Playground, Class Browser); родственные реализации — **[Squeak](./14.md)**, **VisualWorks**, **GNU Smalltalk**. UI и игры в разделе — на **[Morphic](./15.md)**; для нативной графики — **[Raylib](./16.md)**, для анализа кода — **[Glamorous Toolkit](./17.md)**.
 
 Материал лучше проходить **в живой среде** — копирование в "обычный" редактор без image не заменит опыт.
 
@@ -37,7 +41,13 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 2 | [О языке](./1.md) | Image, VM |
 | 3 | [Философия](./22.md) → [Синтаксис](./3.md) | Сообщения |
 | 4 | [Типы](./33.md) → [ООП](./4.md) | Класс в браузере |
-| 5 | [Справочник](./5.md) → [Чек-лист](./999.md) | Шпаргалка |
+| 5 | [Pharo](./13.md) → [Morphic](./15.md) | Среда и графическая система |
+| 6 | [Крестики-нолики](./12.md) | Morphic, MVC на практике |
+| 7 | [SmallDesktop на Morphic](./21.md) | Десктопное GUI — панели, формы, тема |
+| 8 | [SmallPong на Morphic](./31.md) | Игровой цикл, клавиатура |
+| 9 | [SmallShooter — шутер](./44.md) | Волны врагов, Morphic UI |
+| 10 | [Raylib в Pharo](./16.md) · [Glamorous Toolkit](./17.md) | FFI-игры и moldable tools |
+| 11 | [Squeak](./14.md) · [Справочник](./5.md) → [Чек-лист](./999.md) | Родственная VM и шпаргалка |
 
 ---
 

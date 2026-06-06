@@ -187,7 +187,9 @@ src/data/wikiLinkIndex.json
 # Редиректы устаревших URL (генерируется npm run docs:redirects)
 src/data/docLegacyRedirects.json
 
-# Артефакты служебных скриптов
+# Локальный APK для dev-сборки (релиз — GitHub Releases)
+static/downloads/it-universe.apk
+
 /scripts/_*.txt
 /scripts/_*.json
 /scripts/fix-out.txt

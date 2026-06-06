@@ -5,7 +5,7 @@
 ### Варианты использования
 
 1. Готовый сайт проекта — [spirzen.ru](https://spirzen.ru/)
-2. Мобильное приложение для Android — APK на [главной](https://spirzen.ru/) (кнопка "Скачать APK") или напрямую: [spirzen.ru/downloads/it-universe.apk](https://spirzen.ru/downloads/it-universe.apk)
+2. Мобильное приложение для Android — APK на [главной](https://spirzen.ru/) (кнопка «Скачать APK») или напрямую: [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk)
 3. Локальная (оффлайн) версия — `git clone`, `npm install`, `npm start`.
 
 Для офлайн-сборки желательно:
@@ -73,7 +73,7 @@ it-knowledge-base/
 │   └── utils/exportArticlePdf.js
 ├── docs/                    # статьи (энциклопедия, lab, about, …)
 ├── static/
-│   └── downloads/it-universe.apk   # Android-приложение (отдаётся как /downloads/…)
+│   └── downloads/it-universe.apk   # локально для dev (в .gitignore; релиз — GitHub Releases)
 └── package.json
 ```
 
@@ -134,7 +134,7 @@ npm run docs:collection-titles  # заголовки статей для бло�
 
 ### Android-приложение (APK)
 
-Файл лежит в `static/downloads/it-universe.apk` и попадает в сборку как статический ресурс. После `npm run build` проверка: `build/downloads/it-universe.apk`. Ссылка на главной — в `src/pages/index.js`; подробности — в [`info/PROJECT-TECHNICAL.md`](info/PROJECT-TECHNICAL.md) (раздел про `static/`).
+Скачивание — [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk) (кнопка на главной в `src/pages/index.js`). Локально для dev-сборки можно положить файл в `static/downloads/it-universe.apk` — он в `.gitignore` и не попадает в репозиторий.
 
 ---
 

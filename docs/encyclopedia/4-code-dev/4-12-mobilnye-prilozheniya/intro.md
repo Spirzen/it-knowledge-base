@@ -3,12 +3,22 @@ title: Мобильные приложения — о разделе
 description: "Подборка материалов раздела Мобильные приложения в энциклопедии Вселенная IT."
 sidebar_label: Мобильные приложения — о разделе
 related:
+  - title: "Kivy — мобильные приложения и игры на Python"
+    doc: encyclopedia/5-languages/5-02-python/320
+  - title: "Практикум Kivy — о разделе"
+    doc: encyclopedia/5-languages/5-02-python/kivy-praktikum/intro
   - title: "Flutter — готовые виджеты"
     doc: lab/examples/1154
   - title: Flutter
     doc: encyclopedia/5-languages/5-22-dart/311
   - title: "Dart — о разделе"
     doc: encyclopedia/5-languages/5-22-dart/intro
+  - title: "Мобильные приложения на Kotlin"
+    doc: encyclopedia/5-languages/5-09-kotlin/234
+  - title: "Kotlin — KotlinMobileApp"
+    doc: encyclopedia/5-languages/5-09-kotlin/22
+  - title: "Kotlin — Kotlinochi"
+    doc: encyclopedia/5-languages/5-09-kotlin/23
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -29,7 +39,7 @@ import DocCardList from '@theme/DocCardList';
 |-----|----------|
 | 1 | [Мобильные приложения (обзор)](./1.md) — iOS vs Android, ограничения |
 | 2 | [Сборка и развёртывание](./112.md) — APK, AAB, подпись; [сравнение сложности стеков](./112.md#slozhnost-sborki-sravnenie-stekov) (MAUI, RN/Expo, Unity) |
-| 3 | Стек | Android: [Kotlin](./1135.md) + [Compose](/encyclopedia/5-languages/5-09-kotlin/229) · кроссплатформа: [Flutter](/encyclopedia/5-languages/5-22-dart/311) → [виджеты (Lab)](/lab/Примеры/1154) · [React Native](./1131.md) → [практикум RN](./11311.md) / [Expo](./1132.md) / [MAUI](./1133.md) |
+| 3 | Стек | Android: [Kotlin](./1135.md) + [Compose](/encyclopedia/5-languages/5-09-kotlin/229) → [KotlinMobileApp](/encyclopedia/5-languages/5-09-kotlin/22) / [Kotlinochi](/encyclopedia/5-languages/5-09-kotlin/23) · кроссплатформа: [Flutter](/encyclopedia/5-languages/5-22-dart/311) → [виджеты (Lab)](/lab/Примеры/1154) · [React Native](./1131.md) → [практикум RN](./11311.md) / [Expo](./1132.md) / [MAUI](./1133.md) · Python: [Kivy](/encyclopedia/5-languages/5-02-python/320) → [практикум игр](/encyclopedia/5-languages/5-02-python/kivy-praktikum/intro) |
 | 4 | [Публикация Android](./1141.md) — keystore, Play / RuStore |
 
 ---

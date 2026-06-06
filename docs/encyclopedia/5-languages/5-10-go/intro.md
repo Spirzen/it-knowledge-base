@@ -62,14 +62,16 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
-| 1 | [CLI на cobra и viper](./33.md) | Подкоманды, конфиг, embed |
-| 2 | [Веб на stdlib](./25.md) | `net/http` до фреймворков |
-| 3 | [Gin](./2412.md) | REST API |
-| 4 | [gRPC в Go](./32.md) | Protobuf между сервисами |
-| 5 | [Дженерики](./31.md) | Обобщённые алгоритмы |
-| 6 | [Профилирование и fuzz](./35.md) | pprof, trace, benchstat |
-| 7 | [WebSocket](./34.md) | Push и live-данные |
-| 8 | [TCP и UNIX-сокеты](./27.md) | Транспорт ниже HTTP |
+| 1 | [GoEmailVerifier — практикум](./212.md) | CLI: DNS, SMTP, `flag`, тесты |
+| 1a | [Практикум GoHTMLParser](./211.md) | CLI — HTTP, парсинг HTML, `internal/`, тесты |
+| 2 | [CLI на cobra и viper](./33.md) | Подкоманды, конфиг, embed |
+| 3 | [Веб на stdlib](./25.md) | `net/http` до фреймворков |
+| 4 | [Gin](./2412.md) | REST API |
+| 5 | [gRPC в Go](./32.md) | Protobuf между сервисами |
+| 6 | [Дженерики](./31.md) | Обобщённые алгоритмы |
+| 7 | [Профилирование и fuzz](./35.md) | pprof, trace, benchstat |
+| 8 | [WebSocket](./34.md) | Push и live-данные |
+| 9 | [TCP и UNIX-сокеты](./27.md) | Транспорт ниже HTTP |
 
 ---
 

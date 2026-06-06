@@ -1171,7 +1171,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1">3.04. Конфигурационные данные в текстовых форматах</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2">3.04. XML</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3">3.04. JSON</a></li>
-  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/217">3.04. JSONB</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4">3.04. YAML</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5">3.04. Markdown</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6">3.04. XAML</a></li>
@@ -1186,6 +1185,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/214">3.04. XSLT</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/215">3.04. XML DOM</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/216">3.04. Бинарные форматы обмена данными</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/217">3.04. JSONB</a></li>
   </ul>
   </li>
 
@@ -1495,6 +1495,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/44">4.02. Обработка значения null</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/55">4.02. Уровни абстракции языков программирования</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/56">4.02. Синтаксический сахар</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/101">4.02. Язык программирования</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/611">4.02. Приёмы написания кода</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612">4.02. Методы рефакторинга программного кода</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/613">4.02. Типы задач в программировании</a></li>
@@ -1794,6 +1795,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1113">4.14. Использование AI-ассистентов в разработке</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1114">4.14. Основы веб-разработки и типичные оплошности</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1115">4.14. Типичные ошибки новичков в бэкенд и десктоп-разработке</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/118">4.14. Проверка и валидация</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116">4.14. DevTools в браузере — справочник</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1131">4.14. Создание и публикация расширения для Visual Studio Code</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1132">4.14. Visual Studio — установка, IDE и версии</a></li>
@@ -2097,10 +2099,13 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/317">5.02. pyTelegramBot — боты в Telegram</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/318">5.02. Трёхмерная графика и Panda3D</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/319">5.02. Matplotlib — графики</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/320">5.02. Kivy — мобильные приложения и игры на Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/321">5.02. Справочник по модулю Turtle</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/331">5.02. Pandas — объединение таблиц, своды и временные ряды</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/332">5.02. Классическое машинное обучение на Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/333">5.02. PyTorch для разработчика</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/334">5.02. Практикум — Pandas Data Viewer</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/335">5.02. Практикум — распознавание цифр на PyTorch</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/341">5.02. Flask</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/342">5.02. Справочник по Flask</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/343">5.02. Создание собственного API на Python</a></li>
@@ -2117,6 +2122,20 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/3431">5.02. FastAPI</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3432">5.02. Первая программа на FastAPI</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3433">5.02. FastAPI и база данных</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Практикум Kivy
+
+<ul>
+  <li>
+  <ul>
+  Практикум Kivy
+  <li><a href="/encyclopedia/5-languages/5-02-python/kivy-praktikum/1">5.02. Kivy — 2048</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/kivy-praktikum/2">5.02. Kivy — Pong</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/kivy-praktikum/3">5.02. Kivy — Snake</a></li>
   </ul>
   </li>
 
@@ -2159,8 +2178,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-03-java/211">5.03. Иерархия классов исключений в Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/231">5.03. Массивы в Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/251">5.03. Первая программа на JavaServer Faces</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/252">5.03. Практикум JSF — список задач</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/253">5.03. Практикум Swing — XML-валидатор</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/261">5.03. Первая программа на JavaBean</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/271">5.03. Первая программа на Spring Framework</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/254">5.03. Практикум Spring Boot — Simple CRM</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/272">5.03. Spring Security — практический старт</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/273">5.03. Testcontainers — интеграционные тесты с реальной БД</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/274">5.03. JWT и OAuth2 Resource Server в Spring Boot</a></li>
@@ -2362,6 +2384,12 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-06-cpp/1008">5.06. Практические задания по C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/2731">5.06. Qt — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/2732">5.06. Qt Quick — первая программа на QML</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2741">5.06. SFML — 2D-графика и мультимедиа на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2742">5.06. SDL — мультимедиа и окна на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2743">5.06. Siv3D — 2D/3D и мультимедиа на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2744">5.06. Raylib — быстрые 2D/3D прототипы на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2745">5.06. OpenGL — 3D-графика на C++</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/2746">5.06. DirectX — графика и мультимедиа на Windows</a></li>
   </ul>
   </li>
 
@@ -2472,8 +2500,17 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/4">5.08. Объектно-ориентированная модель Smalltalk</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/5">5.08. Справочник по Smalltalk</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/11">5.08. Первая программа на Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/12">5.08. Крестики-нолики на Morphic — практикум</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/13">5.08. Pharo</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/14">5.08. Squeak</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/15">5.08. Morphic — графическая система</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/16">5.08. Raylib в Pharo</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/17">5.08. Glamorous Toolkit</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/21">5.08. SmallDesktop на Morphic — практикум</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/22">5.08. Философия и принципы Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/31">5.08. SmallPong на Morphic — практикум</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/33">5.08. Типы данных и переменные в Smalltalk</a></li>
+  <li><a href="/encyclopedia/5-languages/5-08-smalltalk/44">5.08. Smalltalk — SmallShooter</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/101">5.08. Рекомендации по разработке на Smalltalk</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/998">5.08. Smalltalk — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/999">5.08. Smalltalk — чек-лист</a></li>
@@ -2502,6 +2539,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/18">5.09. Работа с базами данных из Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/19">5.09. Важные классы и интерфейсы стандартной библиотеки</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/21">5.09. Простые приложения на Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/22">5.09. Kotlin — KotlinMobileApp</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/23">5.09. Kotlin — Kotlinochi</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/40">5.09. fun main() — точка входа Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/101">5.09. Рекомендации по разработке на Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/161">5.09. Ключевые слова языка Kotlin</a></li>
@@ -2520,6 +2559,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/231">5.09. Room, ViewModel и Compose — список заметок</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/232">5.09. Spring Boot на Kotlin — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/233">5.09. Kotlin и Java — совместимость на практике</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/234">5.09. Мобильные приложения на Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/998">5.09. Kotlin — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/999">5.09. Kotlin — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/1001">5.09. Что требуется знать перед началом изучения языка программирования Kotlin</a></li>
@@ -2568,6 +2608,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-10-go/122">5.10. Встроенные функции и пакеты Go</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/191">5.10. Обработка ошибок в Go</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/192">5.10. Тестирование в Go</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/211">5.10. Практикум GoHTMLParser</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/241">5.10. Пример микросервиса на Go</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/998">5.10. Go — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/999">5.10. Go — чек-лист</a></li>
@@ -2576,6 +2617,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-10-go/2412">5.10. Первая программа на Gin</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/2413">5.10. Первая программа на Echo</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/2414">5.10. Первая программа на Fiber</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-go/212">5.10. GoEmailVerifier — практикум</a></li>
   </ul>
   </li>
 
@@ -2678,6 +2720,10 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-12-groovy/21">5.12. Spock — первая спецификация</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/22">5.12. Jenkins Pipeline — первый Jenkinsfile</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/23">5.12. Gradle Groovy DSL — первая сборка</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/24">5.12. FastJ — первая игра на Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/25">5.12. Job DSL Playground — jobs Jenkins как код</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/26">5.12. Jenkins Shared Library — общий Groovy-код CI</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/27">5.12. Практикум — API-тестер на Groovy и JMeter</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/101">5.12. Рекомендации по разработке на Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/103">5.12. Простые приложения на Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/151">5.12. Иерархия исключений в Groovy</a></li>
@@ -4504,6 +4550,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/7">9.04. Python — карточная стратегия</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8">9.04. Java — Java Survivors</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/9">9.04. TypeScript — OnlineCardGame</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/10">9.04. Python — Bubble Shooter</a></li>
   </ul>
   </li>
 
