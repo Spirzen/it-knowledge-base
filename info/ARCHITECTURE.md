@@ -563,7 +563,7 @@ sequenceDiagram
 | `static/CNAME` | Домен `spirzen.ru` |
 | `static/.nojekyll` | Статика без Jekyll |
 | `static/robots.txt` | SEO |
-| `static/downloads/it-universe.apk` | Android-приложение |
+| GitHub Release `Mobile/it-universe.apk` | Android-приложение (не в `static/`) |
 | `build/` | Результат SSG (не в git) |
 
 ---

@@ -73,7 +73,7 @@ it-knowledge-base/
 │   └── utils/exportArticlePdf.js
 ├── docs/                    # статьи (энциклопедия, lab, about, …)
 ├── static/
-│   └── downloads/it-universe.apk   # локально для dev (в .gitignore; релиз — GitHub Releases)
+│   (APK не в static — см. admin/it-universe.apk и GitHub Releases)
 └── package.json
 ```
 
@@ -134,7 +134,7 @@ npm run docs:collection-titles  # заголовки статей для бло�
 
 ### Android-приложение (APK)
 
-Скачивание — [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk) (кнопка на главной в `src/pages/index.js`). Локально для dev-сборки можно положить файл в `static/downloads/it-universe.apk` — он в `.gitignore` и не попадает в репозиторий.
+Скачивание — [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk) (кнопка на главной в `src/pages/index.js`). Локальная копия для разработки — `admin/it-universe.apk` (не попадает в `static/` и не увеличивает `build/`).
 
 ---
 

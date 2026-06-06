@@ -220,13 +220,13 @@ it-knowledge-base/
 | `static/robots.txt` | SEO |
 | `static/.nojekyll` | Отключение Jekyll на Pages |
 | `static/yandex_*.html` | Верификация Яндекса |
-| `static/downloads/it-universe.apk` | Сборка Android-приложения "Вселенная IT" для прямой загрузки |
+| `admin/it-universe.apk` | Локальная копия Android-приложения (не в `static/`, не в билде) |
 
-Файлы из `static/` копируются в корень сайта при сборке без изменения пути: APK доступен по URL `/downloads/it-universe.apk` (на проде — `https://spirzen.ru/downloads/it-universe.apk`).
+APK **не** кладётся в `static/`: скачивание только через [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk).
 
-На главной (`src/pages/index.js`) под кнопками hero выводится ссылка **"Скачать APK"** (`useBaseUrl` + атрибут `download`). Стили блока — `src/pages/index.module.css` (классы `apkStrip`, `apkButton`).
+На главной (`src/pages/index.js`) в footer hero — ссылка **«Скачать приложение для Android (APK)»** на URL релиза (`href` + `download`). Стили — `src/pages/index.module.css` (`heroFooter`, `heroFooterLink`).
 
-При обновлении приложения замените файл в `static/downloads/` (имя лучше оставлять постоянным, чтобы не менять ссылку в коде). Учитывайте размер в Git: крупные APK (&gt;50 МБ) лучше выкладывать через [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) и ставить внешнюю ссылку вместо хранения в репозитории.
+При обновлении приложения загрузите новый APK в GitHub Release `Mobile`; константа `APK_DOWNLOAD_URL` в `index.js` указывает на стабильный URL релиза.
 
 Изображения статей хранятся **рядом со статьями** в `docs/**` (не в `static/`).
 
@@ -454,7 +454,7 @@ MDX import
 | PDF | `ArticlePdfExport.jsx` + `utils/exportArticlePdf.js` | В Layout, ленивый импорт pdf-библиотек |
 | См. также | `ArticleSeeAlso.jsx` + `articleSeeAlsoUtils.js` | После контента, перед footer |
 | Sidebar filter | `theme/DocSidebar/Desktop/Content/index.tsx` | Поле фильтрации пунктов меню |
-| Главная | `pages/index.js` + `index.module.css` | Маршрут `/`; кнопка скачивания APK → `/downloads/it-universe.apk` |
+| Главная | `pages/index.js` + `index.module.css` | Маршрут `/`; скачивание APK → GitHub Releases (`APK_DOWNLOAD_URL`) |
 | Фон | `AnimatedBackground.tsx` | Только главная (если подключён) |
 
 ---

@@ -4541,7 +4541,6 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Практикум разработки игр
-  <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/1">9.04. Python — Battle City</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/2">9.04. Python — Match3</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/3">9.04. Python — Ping Pong</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/4">9.04. Python — Racing</a></li>

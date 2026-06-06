@@ -206,3 +206,4 @@ tmp_test.txt
 _tmp_blocks_2.txt
 info/.$it-universe-architecture.drawio.bkp
 /mockups
+scripts/analysis/audit-demo-chunks.mjs
