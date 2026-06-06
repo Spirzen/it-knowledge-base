@@ -1,0 +1,86 @@
+"use strict";(self.webpackChunkit_knowledge_base=self.webpackChunkit_knowledge_base||[]).push([["67677"],{770796(e,t,i){i.d(t,{A:()=>I});var n=i(474848),a=i(296540),r=i(509526),l=i(634164),s=i(749459),d=i(419481),o=i(69217);let m=[{id:"shop",label:"\u041C\u0430\u0433\u0430\u0437\u0438\u043D",title:"\u041F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u044C \u0438 \u0437\u0430\u043A\u0430\u0437",cardinality:"1:N",cardinalityDesc:'\u041E\u0434\u0438\u043D \u043F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u044C \u043C\u043E\u0436\u0435\u0442 \u0440\u0430\u0437\u043C\u0435\u0441\u0442\u0438\u0442\u044C \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E \u0437\u0430\u043A\u0430\u0437\u043E\u0432; \u043A\u0430\u0436\u0434\u044B\u0439 \u0437\u0430\u043A\u0430\u0437 \u043F\u0440\u0438\u043D\u0430\u0434\u043B\u0435\u0436\u0438\u0442 \u043E\u0434\u043D\u043E\u043C\u0443 \u043F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u044E. \u0412\u043D\u0435\u0448\u043D\u0438\u0439 \u043A\u043B\u044E\u0447 CustomerId \u2014 \u043D\u0430 \u0441\u0442\u043E\u0440\u043E\u043D\u0435 "\u043C\u043D\u043E\u0433\u0438\u0445".',relationVerb:"\u0440\u0430\u0437\u043C\u0435\u0449\u0430\u0435\u0442",mermaid:`erDiagram
+    CUSTOMER ||--o{ ORDER : \u{440}\u{430}\u{437}\u{43C}\u{435}\u{449}\u{430}\u{435}\u{442}
+    CUSTOMER {
+        int Id PK
+        string Name
+        string Email
+    }
+    ORDER {
+        int Id PK
+        date OrderDate
+        string Status
+        int CustomerId FK
+    }`,sql:`CREATE TABLE Customer (
+    Id INT PRIMARY KEY,
+    Name VARCHAR(100) NOT NULL,
+    Email VARCHAR(150)
+);
+
+CREATE TABLE Order (
+    Id INT PRIMARY KEY,
+    OrderDate DATE NOT NULL,
+    Status VARCHAR(20) NOT NULL,
+    CustomerId INT NOT NULL,
+    FOREIGN KEY (CustomerId) REFERENCES Customer(Id)
+);`,entities:[{id:"customer",name:"CUSTOMER",title:"\u041F\u043E\u043A\u0443\u043F\u0430\u0442\u0435\u043B\u044C",fields:[{name:"Id",type:"int",pk:!0},{name:"Name",type:"string"},{name:"Email",type:"string"}]},{id:"order",name:"ORDER",title:"\u0417\u0430\u043A\u0430\u0437",fields:[{name:"Id",type:"int",pk:!0},{name:"OrderDate",type:"date"},{name:"Status",type:"string"},{name:"CustomerId",type:"int",fk:!0,ref:"customer",refField:"Id"}]}],relation:{from:"customer",to:"order",fromCard:"1",toCard:"N",verb:"\u0440\u0430\u0437\u043C\u0435\u0449\u0430\u0435\u0442",fkEntity:"order",fkField:"CustomerId"}},{id:"library",label:"\u0411\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0430",title:"\u0410\u0432\u0442\u043E\u0440 \u0438 \u043A\u043D\u0438\u0433\u0430",cardinality:"1:N",cardinalityDesc:"\u041E\u0434\u0438\u043D \u0430\u0432\u0442\u043E\u0440 \u043C\u043E\u0436\u0435\u0442 \u043D\u0430\u043F\u0438\u0441\u0430\u0442\u044C \u043C\u043D\u043E\u0436\u0435\u0441\u0442\u0432\u043E \u043A\u043D\u0438\u0433; \u0443 \u043A\u0430\u0436\u0434\u043E\u0439 \u043A\u043D\u0438\u0433\u0438 \u0432 \u0443\u043F\u0440\u043E\u0449\u0451\u043D\u043D\u043E\u0439 \u043C\u043E\u0434\u0435\u043B\u0438 \u043E\u0434\u0438\u043D \u0430\u0432\u0442\u043E\u0440. \u041F\u043E\u043B\u0435 AuthorId \u0432 Book \u2014 \u0432\u043D\u0435\u0448\u043D\u0438\u0439 \u043A\u043B\u044E\u0447.",relationVerb:"\u043F\u0438\u0448\u0435\u0442",mermaid:`erDiagram
+    AUTHOR ||--o{ BOOK : \u{43F}\u{438}\u{448}\u{435}\u{442}
+    AUTHOR {
+        int Id PK
+        string FirstName
+        string LastName
+        date BirthDate
+    }
+    BOOK {
+        int Id PK
+        string Title
+        int PublicationYear
+        int AuthorId FK
+    }`,sql:`CREATE TABLE Author (
+    Id INT PRIMARY KEY,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    BirthDate DATE
+);
+
+CREATE TABLE Book (
+    Id INT PRIMARY KEY,
+    Title VARCHAR(200) NOT NULL,
+    PublicationYear INT,
+    AuthorId INT NOT NULL,
+    FOREIGN KEY (AuthorId) REFERENCES Author(Id)
+);`,entities:[{id:"author",name:"AUTHOR",title:"\u0410\u0432\u0442\u043E\u0440",fields:[{name:"Id",type:"int",pk:!0},{name:"FirstName",type:"string"},{name:"LastName",type:"string"},{name:"BirthDate",type:"date"}]},{id:"book",name:"BOOK",title:"\u041A\u043D\u0438\u0433\u0430",fields:[{name:"Id",type:"int",pk:!0},{name:"Title",type:"string"},{name:"PublicationYear",type:"int"},{name:"AuthorId",type:"int",fk:!0,ref:"author",refField:"Id"}]}],relation:{from:"author",to:"book",fromCard:"1",toCard:"N",verb:"\u043F\u0438\u0448\u0435\u0442",fkEntity:"book",fkField:"AuthorId"}},{id:"enrollment",label:"\u0423\u0447\u0451\u0431\u0430",title:"\u0421\u0442\u0443\u0434\u0435\u043D\u0442 \u0438 \u043A\u0443\u0440\u0441 (M:N)",cardinality:"M:N",cardinalityDesc:"\u041C\u043D\u043E\u0433\u0438\u0435 \u0441\u0442\u0443\u0434\u0435\u043D\u0442\u044B \u0437\u0430\u043F\u0438\u0441\u044B\u0432\u0430\u044E\u0442\u0441\u044F \u043D\u0430 \u043C\u043D\u043E\u0433\u0438\u0435 \u043A\u0443\u0440\u0441\u044B. \u0421\u0432\u044F\u0437\u044C \u0440\u0435\u0430\u043B\u0438\u0437\u0443\u0435\u0442\u0441\u044F \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043E\u0447\u043D\u043E\u0439 \u0442\u0430\u0431\u043B\u0438\u0446\u0435\u0439 Enrollment \u0441 \u0441\u043E\u0441\u0442\u0430\u0432\u043D\u044B\u043C \u043F\u0435\u0440\u0432\u0438\u0447\u043D\u044B\u043C \u043A\u043B\u044E\u0447\u043E\u043C \u0438 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u043C\u0438 \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u0430\u043C\u0438 \u0441\u0432\u044F\u0437\u0438.",relationVerb:"\u0437\u0430\u043F\u0438\u0441\u0430\u043D \u043D\u0430",mermaid:`erDiagram
+    STUDENT }o--o{ COURSE : \u{437}\u{430}\u{43F}\u{438}\u{441}\u{430}\u{43D}
+    STUDENT {
+        int Id PK
+        string FullName
+    }
+    COURSE {
+        int Id PK
+        string Title
+    }
+    ENROLLMENT {
+        int StudentId PK,FK
+        int CourseId PK,FK
+        date EnrolledAt
+        string Grade
+    }
+    STUDENT ||--o{ ENROLLMENT : \u{438}\u{43C}\u{435}\u{435}\u{442}
+    COURSE ||--o{ ENROLLMENT : \u{432}\u{43A}\u{43B}\u{44E}\u{447}\u{430}\u{435}\u{442}`,sql:`CREATE TABLE Student (
+    Id INT PRIMARY KEY,
+    FullName VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Course (
+    Id INT PRIMARY KEY,
+    Title VARCHAR(200) NOT NULL
+);
+
+CREATE TABLE Enrollment (
+    StudentId INT,
+    CourseId INT,
+    EnrolledAt DATE,
+    Grade VARCHAR(5),
+    PRIMARY KEY (StudentId, CourseId),
+    FOREIGN KEY (StudentId) REFERENCES Student(Id),
+    FOREIGN KEY (CourseId) REFERENCES Course(Id)
+);`,entities:[{id:"student",name:"STUDENT",title:"\u0421\u0442\u0443\u0434\u0435\u043D\u0442",fields:[{name:"Id",type:"int",pk:!0},{name:"FullName",type:"string"}]},{id:"enrollment",name:"ENROLLMENT",title:"\u0417\u0430\u0447\u0438\u0441\u043B\u0435\u043D\u0438\u0435",junction:!0,fields:[{name:"StudentId",type:"int",pk:!0,fk:!0,ref:"student",refField:"Id"},{name:"CourseId",type:"int",pk:!0,fk:!0,ref:"course",refField:"Id"},{name:"EnrolledAt",type:"date"},{name:"Grade",type:"string"}]},{id:"course",name:"COURSE",title:"\u041A\u0443\u0440\u0441",fields:[{name:"Id",type:"int",pk:!0},{name:"Title",type:"string"}]}],relations:[{from:"student",to:"enrollment",fromCard:"1",toCard:"N",verb:"\u0438\u043C\u0435\u0435\u0442",fkEntity:"enrollment",fkField:"StudentId"},{from:"course",to:"enrollment",fromCard:"1",toCard:"N",verb:"\u0432\u043A\u043B\u044E\u0447\u0430\u0435\u0442",fkEntity:"enrollment",fkField:"CourseId"}]}],c="diagramInner_YOFi",u="cardMark_L4dw",N="relationLine_uJX3",h="codePre_B0zW",E="legendItem_bf_T";function f({entity:e,active:t,highlightField:i,onSelect:a,onFieldHover:r}){return(0,n.jsxs)("button",{type:"button",className:(0,l.A)("entityBox_Tbww",e.junction&&"entityBoxJunction_Z_Ef",t&&"entityBoxActive_bb93"),onClick:()=>a(e.id),children:[(0,n.jsxs)("div",{className:(0,l.A)("entityHead_eMeV",e.junction&&"entityHeadJunction_X_NE"),children:[e.name,(0,n.jsx)("span",{className:"entitySub__f9j",children:e.title})]}),e.fields.map(t=>(0,n.jsxs)("div",{className:(0,l.A)("fieldRow__8ma",i===t.name&&"fieldRowHighlight_px9S"),onMouseEnter:()=>r(t.name),onMouseLeave:()=>r(null),onClick:i=>{i.stopPropagation(),r(t.name),a(e.id)},children:[(0,n.jsx)("span",{className:"fieldName_rpg_",children:t.name}),(0,n.jsx)("span",{className:"fieldMeta_Aug8",children:t.pk&&t.fk?"PK, FK":t.pk?"PK":t.fk?"FK":t.type})]},t.name))]})}function y({fromCard:e,toCard:t,verb:i,compact:a}){return(0,n.jsx)("div",{className:(0,l.A)("relationCol_WEm2",a&&"relationColCompact_unSg"),"aria-hidden":!0,children:(0,n.jsxs)("div",{className:"cardStack_oQ1Z",children:[(0,n.jsx)("span",{className:u,children:e}),(0,n.jsx)("div",{className:N}),(0,n.jsx)("span",{className:"relationVerb_wkwE",children:i}),(0,n.jsx)("div",{className:N}),(0,n.jsx)("span",{className:u,children:t})]})})}function p({scenario:e,activeEntity:t,highlightField:i,onSelect:a,onFieldHover:r}){let[l,s]=e.entities;return(0,n.jsxs)("div",{className:c,children:[(0,n.jsx)(f,{entity:l,active:t===l.id,highlightField:t===l.id?i:null,onSelect:a,onFieldHover:r}),(0,n.jsx)(y,{fromCard:e.relation.fromCard,toCard:e.relation.toCard,verb:e.relation.verb}),(0,n.jsx)(f,{entity:s,active:t===s.id,highlightField:t===s.id?i:null,onSelect:a,onFieldHover:r})]})}function _({scenario:e,activeEntity:t,highlightField:i,onSelect:a,onFieldHover:r}){let[s,d,o]=e.entities;return(0,n.jsxs)("div",{className:(0,l.A)(c,"diagramInnerMn_rDOi"),children:[(0,n.jsx)(f,{entity:s,active:t===s.id,highlightField:t===s.id?i:null,onSelect:a,onFieldHover:r}),(0,n.jsx)(y,{fromCard:"1",toCard:"N",verb:"\u0438\u043C\u0435\u0435\u0442",compact:!0}),(0,n.jsx)(f,{entity:d,active:t===d.id,highlightField:t===d.id?i:null,onSelect:a,onFieldHover:r}),(0,n.jsx)(y,{fromCard:"1",toCard:"N",verb:"\u0432\u043A\u043B\u044E\u0447\u0430\u0435\u0442",compact:!0}),(0,n.jsx)(f,{entity:o,active:t===o.id,highlightField:t===o.id?i:null,onSelect:a,onFieldHover:r}),(0,n.jsx)("span",{className:"mnLabel_xCBE",children:"M:N \u0447\u0435\u0440\u0435\u0437 \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043E\u0447\u043D\u0443\u044E \u0441\u0443\u0449\u043D\u043E\u0441\u0442\u044C"})]})}function C(){let[e,t]=(0,a.useState)("shop"),[i,r]=(0,a.useState)(null),[d,c]=(0,a.useState)(null),{copy:u,isCopied:N}=(0,o.A)(),f=(0,a.useMemo)(()=>m.find(t=>t.id===e)??m[0],[e]),y=(0,a.useCallback)(e=>{t(e),r(null),c(null)},[]),C=(0,a.useMemo)(()=>{if(!d||!i)return null;let e=f.entities.find(e=>e.id===i),t=e?.fields.find(e=>e.name===d);if(!t?.fk||!t.ref)return null;let n=f.entities.find(e=>e.id===t.ref);return`${t.name} \u{2192} ${n?.name}.${t.refField}`},[i,d,f]),I=(0,a.useMemo)(()=>"M:N"===f.cardinality?"\u0412 Mermaid: }o--o{ \u2014 \u043C\u043D\u043E\u0433\u0438\u0435 \u043A\u043E \u043C\u043D\u043E\u0433\u0438\u043C; \u043F\u0440\u043E\u043C\u0435\u0436\u0443\u0442\u043E\u0447\u043D\u0430\u044F \u0442\u0430\u0431\u043B\u0438\u0446\u0430 \u2014 \u043E\u0442\u0434\u0435\u043B\u044C\u043D\u0430\u044F \u0441\u0443\u0449\u043D\u043E\u0441\u0442\u044C \u0441 \u0434\u0432\u0443\u043C\u044F FK.":'\u0412 Mermaid: ||--o{ \u2014 \u043E\u0434\u0438\u043D \u043A\u043E \u043C\u043D\u043E\u0433\u0438\u043C (\u043E\u0434\u043D\u0430 \u043B\u0438\u043D\u0438\u044F \u0443 "\u043E\u0434\u043D\u043E\u0433\u043E", "\u0432\u043E\u0440\u043E\u043D\u044C\u044F \u043B\u0430\u043F\u043A\u0430" \u0443 "\u043C\u043D\u043E\u0433\u0438\u0445").',[f.cardinality]);return(0,n.jsx)(s.Ay,{children:(0,n.jsxs)(s.OU,{title:'ERD \u2014 \u0434\u0438\u0430\u0433\u0440\u0430\u043C\u043C\u0430 "\u0441\u0443\u0449\u043D\u043E\u0441\u0442\u044C\u2013\u0441\u0432\u044F\u0437\u044C"',subtitle:"\u0421\u0443\u0449\u043D\u043E\u0441\u0442\u0438, \u0430\u0442\u0440\u0438\u0431\u0443\u0442\u044B \u0438 \u043A\u0430\u0440\u0434\u0438\u043D\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C: \u043D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043D\u0430 \u043F\u043E\u043B\u0435 FK \u0438\u043B\u0438 \u043F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0438\u0442\u0435 \u0441\u0446\u0435\u043D\u0430\u0440\u0438\u0439",children:[(0,n.jsxs)("div",{className:"scenarioRow_KUXK",role:"tablist",children:[m.map(t=>(0,n.jsx)("button",{type:"button",role:"tab","aria-selected":e===t.id,className:(0,l.A)("it-demo__btn","it-demo__btn--sm",e===t.id?"it-demo__btn--primary":"it-demo__btn--secondary"),onClick:()=>y(t.id),children:t.label},t.id)),(0,n.jsx)("span",{className:"it-demo__badge",style:{alignSelf:"center"},children:f.cardinality})]}),(0,n.jsxs)("p",{className:"it-demo__subtitle",style:{margin:"0 0 0.75rem"},children:[(0,n.jsx)("strong",{children:f.title})," \u2014 ",f.cardinalityDesc]}),(0,n.jsxs)("div",{className:"diagramWrap_pLHL",children:["M:N"===f.cardinality?(0,n.jsx)(_,{scenario:f,activeEntity:i,highlightField:d,onSelect:r,onFieldHover:c}):(0,n.jsx)(p,{scenario:f,activeEntity:i,highlightField:d,onSelect:r,onFieldHover:c}),(0,n.jsxs)("div",{className:"legend_p5yq",children:[(0,n.jsxs)("span",{className:E,children:[(0,n.jsx)("span",{className:"legendPk_JViY",children:"PK"})," \u043F\u0435\u0440\u0432\u0438\u0447\u043D\u044B\u0439 \u043A\u043B\u044E\u0447"]}),(0,n.jsxs)("span",{className:E,children:[(0,n.jsx)("span",{className:"legendFk_kC7w",children:"FK"})," \u0432\u043D\u0435\u0448\u043D\u0438\u0439 \u043A\u043B\u044E\u0447"]}),(0,n.jsx)("span",{className:E,children:"\u041F\u0440\u044F\u043C\u043E\u0443\u0433\u043E\u043B\u044C\u043D\u0438\u043A \u2014 \u0441\u0443\u0449\u043D\u043E\u0441\u0442\u044C (\u0442\u0430\u0431\u043B\u0438\u0446\u0430)"}),C&&(0,n.jsxs)("span",{className:E,style:{color:"var(--ifm-color-primary)",fontWeight:600},children:["\u0421\u0432\u044F\u0437\u044C: ",C]})]})]}),(0,n.jsxs)("div",{className:"infoGrid_qLLj",children:[(0,n.jsxs)("div",{children:[(0,n.jsxs)("div",{className:"it-demo__row",style:{marginBottom:"0.5rem"},children:[(0,n.jsx)("span",{style:{fontSize:"0.82rem",fontWeight:600},children:"Mermaid"}),(0,n.jsx)("button",{type:"button",className:"it-demo__btn it-demo__btn--sm it-demo__btn--secondary",onClick:()=>u(f.mermaid,"mermaid"),children:N("mermaid")?"\u0421\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043E":"\u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C"})]}),(0,n.jsx)("pre",{className:h,children:f.mermaid}),(0,n.jsx)("p",{className:"it-demo__subtitle",style:{margin:"0.5rem 0 0",fontSize:"0.78rem"},children:I})]}),(0,n.jsxs)("div",{children:[(0,n.jsx)("span",{style:{fontSize:"0.82rem",fontWeight:600},children:"SQL (DDL)"}),(0,n.jsx)("pre",{className:h,style:{marginTop:"0.5rem"},children:f.sql})]})]})]})})}function I(){return(0,n.jsx)(r.A,{fallback:(0,d.q)(),children:()=>(0,n.jsx)(C,{})})}},749459(e,t,i){i.d(t,{OU:()=>o,Ay:()=>d});var n=i(474848),a=i(296540),r=i(634164);function l(){let[e,t]=(0,a.useState)(!1);(0,a.useEffect)(()=>{if(!e)return;let i=document.body.style.overflow;document.body.style.overflow="hidden";let n=e=>{"Escape"===e.key&&t(!1)};return window.addEventListener("keydown",n),()=>{document.body.style.overflow=i,window.removeEventListener("keydown",n)}},[e]);let i=(0,a.useCallback)(()=>{t(e=>!e)},[]);return{isFullscreen:e,setIsFullscreen:t,toggleFullscreen:i,fullscreenClass:e?"it-demo--fullscreen":void 0}}function s({isFullscreen:e,onToggle:t,className:i}){return(0,n.jsx)("button",{type:"button",className:(0,r.A)("it-demo__fullscreen-btn",i),onClick:t,title:e?"\u0412\u044B\u0439\u0442\u0438 \u0438\u0437 \u043F\u043E\u043B\u043D\u043E\u044D\u043A\u0440\u0430\u043D\u043D\u043E\u0433\u043E \u0440\u0435\u0436\u0438\u043C\u0430 (Esc)":"\u041E\u0442\u043A\u0440\u044B\u0442\u044C \u0432\u043E \u0432\u0435\u0441\u044C \u044D\u043A\u0440\u0430\u043D","aria-pressed":e,children:e?"\u22A1 \u041E\u043A\u043D\u043E":"\u26F6"})}function d({children:e,className:t,as:i="div",fullscreenable:a=!0}){let{isFullscreen:o,toggleFullscreen:m,fullscreenClass:c}=l();return(0,n.jsxs)(i,{className:(0,r.A)("it-demo",c,t),children:[a&&(0,n.jsx)(s,{isFullscreen:o,onToggle:m,className:"it-demo__fullscreen-btn--shell"}),e]})}function o({children:e,className:t,title:i,subtitle:a,fullscreenable:d=!1}){let{isFullscreen:m,toggleFullscreen:c,fullscreenClass:u}=l(),N=i||a||d;return(0,n.jsxs)("div",{className:(0,r.A)("it-demo__card",u,t),children:[N&&(0,n.jsxs)("div",{className:"it-demo__header",children:[(0,n.jsxs)("div",{className:"it-demo__header-text",children:[i&&(0,n.jsx)("h4",{className:"it-demo__title",children:i}),a&&(0,n.jsx)("p",{className:"it-demo__subtitle",children:a})]}),d&&(0,n.jsx)(s,{isFullscreen:m,onToggle:c})]}),(0,n.jsx)("div",{className:"it-demo__body",children:e})]})}},419481(e,t,i){i.d(t,{j:()=>r,q:()=>a});var n=i(474848);function a(e="\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430 \u0438\u043D\u0442\u0435\u0440\u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0433\u043E \u0434\u0435\u043C\u043E\u2026"){return(0,n.jsx)("div",{className:"it-demo it-demo--loading",children:e})}function r(){return(0,n.jsx)("div",{className:"it-demo",children:(0,n.jsx)("div",{className:"it-demo__skeleton","aria-hidden":"true"})})}i(296540)},69217(e,t,i){i.d(t,{A:()=>a});var n=i(296540);function a(e=2e3){let[t,i]=(0,n.useState)(null);return{copy:(0,n.useCallback)(async(t,n="default")=>{if(!t)return!1;try{return await navigator.clipboard.writeText(t),i(n),window.setTimeout(()=>i(e=>e===n?null:e),e),!0}catch{return!1}},[e]),copiedKey:t,isCopied:(e="default")=>t===e}}}}]);

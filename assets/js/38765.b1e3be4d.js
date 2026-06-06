@@ -1,0 +1,39 @@
+"use strict";(self.webpackChunkit_knowledge_base=self.webpackChunkit_knowledge_base||[]).push([["38765"],{983118(e,a,o){o.d(a,{A:()=>t});let t={toolbar:"toolbar_B2fy",chips:"chips_klpX",chip:"chip_qKDs",chipActive:"chipActive_jrWO",mono:"mono_mj2h",textareaMono:"textareaMono_YIFs mono_mj2h",outputPanel:"outputPanel_LEga",outputReadonly:"outputReadonly_FZtk mono_mj2h",arrowCol:"arrowCol_CDuu",hexLine:"hexLine_DIrH mono_mj2h",kbd:"kbd_Ekeg",resultHeader:"resultHeader_NSrW",valueMono:"valueMono_MYNQ mono_mj2h",sectionTitle:"sectionTitle_txT1",methodBadge:"methodBadge_cArX",methodGet:"methodGet_rilo",methodPost:"methodPost_xmO0",methodPut:"methodPut_bdHE",methodDelete:"methodDelete_uezY",methodDefault:"methodDefault_rpqe",subnetBar:"subnetBar_o1lS",subnetNetwork:"subnetNetwork_vWa8",subnetHost:"subnetHost_UGU3",subnetBroadcast:"subnetBroadcast_TWN9",uriDiagram:"uriDiagram_RyQv",uriPart:"uriPart_Hqir",uriPartActive:"uriPartActive_fMfX",soapLine:"soapLine_KiT0",soapLineActive:"soapLineActive_is5g",soapTag:"soapTag_GlEe",soapAttr:"soapAttr_H6Dl",soapText:"soapText_bTJq"}},430460(e,a,o){o.r(a),o.d(a,{default:()=>x});var t=o(474848),s=o(296540),l=o(509526),n=o(634164),r=o(749459),i=o(419481),d=o(69217),p=o(983118);let u=[{id:"envelope",label:"Envelope",tag:"soap:Envelope"},{id:"header",label:"Header",tag:"soap:Header"},{id:"body",label:"Body",tag:"soap:Body"},{id:"fault",label:"Fault",tag:"soap:Fault",faultOnly:!0}],c={envelope:"\u041A\u043E\u0440\u043D\u0435\u0432\u043E\u0439 \u044D\u043B\u0435\u043C\u0435\u043D\u0442 XML-\u0434\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430 SOAP. \u041E\u043F\u0440\u0435\u0434\u0435\u043B\u044F\u0435\u0442 \u0433\u0440\u0430\u043D\u0438\u0446\u044B \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F \u0438 \u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0441\u0442\u0432\u043E \u0438\u043C\u0451\u043D \u043F\u0440\u043E\u0442\u043E\u043A\u043E\u043B\u0430.",header:"\u041C\u0435\u0442\u0430\u0434\u0430\u043D\u043D\u044B\u0435: \u0430\u0432\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u044F, \u043C\u0430\u0440\u0448\u0440\u0443\u0442\u0438\u0437\u0430\u0446\u0438\u044F, \u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u044B \u0442\u0440\u0430\u043D\u0437\u0430\u043A\u0446\u0438\u0439 \u2014 \u043E\u0431\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u044E\u0442\u0441\u044F \u0434\u043E \u0442\u0435\u043B\u0430.",body:"\u041F\u043E\u043B\u0435\u0437\u043D\u0430\u044F \u043D\u0430\u0433\u0440\u0443\u0437\u043A\u0430: \u0432\u044B\u0437\u043E\u0432 \u043C\u0435\u0442\u043E\u0434\u0430 \u0441\u0435\u0440\u0432\u0438\u0441\u0430 \u0438\u043B\u0438 \u043E\u0442\u0432\u0435\u0442 \u0441 \u0434\u0430\u043D\u043D\u044B\u043C\u0438 \u0431\u0438\u0437\u043D\u0435\u0441-\u043B\u043E\u0433\u0438\u043A\u0438.",fault:"\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430 \u043E\u0448\u0438\u0431\u043A\u0438: Code, Reason, Node, Role \u0438 Detail \u2014 \u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F \u0432\u043C\u0435\u0441\u0442\u043E \u043E\u0431\u044B\u0447\u043D\u043E\u0433\u043E \u0442\u0435\u043B\u0430 \u043F\u0440\u0438 \u0441\u0431\u043E\u0435."},m=`<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsse:UsernameToken>
+        <wsse:Username>admin</wsse:Username>
+        <wsse:Password Type="...">secret123</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soap:Header>
+  <soap:Body>
+    <GetUser xmlns="http://example.com/api">
+      <UserId>12345</UserId>
+    </GetUser>
+  </soap:Body>
+</soap:Envelope>`,h=`<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+    <wsse:Security xmlns:wsse="..."/>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <soap:Code>
+        <soap:Value>soap:Receiver</soap:Value>
+        <soap:Subcode>
+          <soap:Value>soap:InvalidMessageName</soap:Value>
+        </soap:Subcode>
+      </soap:Code>
+      <soap:Reason>
+        <soap:Text xml:lang="en">\u{41E}\u{448}\u{438}\u{431}\u{43A}\u{430} \u{43E}\u{431}\u{440}\u{430}\u{431}\u{43E}\u{442}\u{43A}\u{438} \u{441}\u{43E}\u{43E}\u{431}\u{449}\u{435}\u{43D}\u{438}\u{44F}</soap:Text>
+      </soap:Reason>
+      <soap:Node>https://example.com/service</soap:Node>
+      <soap:Role>soap:Receiver</soap:Role>
+      <soap:Detail>
+        <error xmlns="">\u{41D}\u{435}\u{432}\u{435}\u{440}\u{43D}\u{44B}\u{439} \u{444}\u{43E}\u{440}\u{43C}\u{430}\u{442} \u{432}\u{445}\u{43E}\u{434}\u{43D}\u{44B}\u{445} \u{434}\u{430}\u{43D}\u{43D}\u{44B}\u{445}</error>
+      </soap:Detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>`;function _({code:e,activeTab:a}){let o=u.find(e=>e.id===a)?.tag;return(0,t.jsx)("pre",{className:"it-demo__terminal",children:e.split("\n").map((e,a)=>{let s=function(e,a){if(!a)return!1;let o=e.trim();return o.includes(`<${a}`)||o.includes(`</${a}`)||"soap:Fault"===a&&o.includes("soap:Fault")}(e,o);return(0,t.jsx)("code",{className:(0,n.A)(p.A.soapLine,s&&p.A.soapLineActive),children:e},a)})})}function b(){let[e,a]=(0,s.useState)("envelope"),[o,l]=(0,s.useState)(!1),{copy:i,isCopied:b}=(0,d.A)(),x=o?h:m,v=(0,s.useMemo)(()=>u.filter(e=>!e.faultOnly||o),[o]);return(0,t.jsx)(r.Ay,{children:(0,t.jsxs)(r.OU,{title:"\u0421\u0442\u0440\u0443\u043A\u0442\u0443\u0440\u0430 SOAP-\u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F",subtitle:"\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0439\u0442\u0435 \u0447\u0430\u0441\u0442\u0438 Envelope \u0438 \u0440\u0435\u0436\u0438\u043C Fault \u2014 \u043F\u043E\u0434\u0441\u0432\u0435\u0442\u043A\u0430 \u043F\u043E\u043A\u0430\u0436\u0435\u0442 \u0430\u043A\u0442\u0438\u0432\u043D\u044B\u0439 \u0431\u043B\u043E\u043A \u0432 XML.",children:[(0,t.jsxs)("label",{className:(0,n.A)("it-demo__panel",p.A.toolbar),style:{cursor:"pointer"},children:[(0,t.jsx)("input",{type:"checkbox",checked:o,onChange:o=>{l(o.target.checked),o.target.checked||"fault"!==e||a("body")}}),(0,t.jsx)("span",{style:{fontWeight:600},children:"\u0420\u0435\u0436\u0438\u043C \u0434\u0435\u043C\u043E\u043D\u0441\u0442\u0440\u0430\u0446\u0438\u0438 \u043E\u0448\u0438\u0431\u043A\u0438 (Fault)"})]}),(0,t.jsx)("div",{className:"it-demo__tabs",role:"tablist",children:v.map(o=>(0,t.jsx)("button",{type:"button",role:"tab","aria-selected":e===o.id,className:(0,n.A)("it-demo__tab",e===o.id&&"it-demo__tab--active"),onClick:()=>a(o.id),children:o.label},o.id))}),(0,t.jsx)(_,{code:x,activeTab:e}),(0,t.jsx)("div",{className:p.A.toolbar,children:(0,t.jsx)("button",{type:"button",className:"it-demo__btn it-demo__btn--secondary",onClick:()=>i(x,"xml"),children:b("xml")?"\u0421\u043A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u043D\u043E":"\u041A\u043E\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C XML"})}),(0,t.jsxs)("div",{className:"it-demo__panel",children:[(0,t.jsxs)("strong",{children:["\u041E\u043F\u0438\u0441\u0430\u043D\u0438\u0435: ",v.find(a=>a.id===e)?.label]}),(0,t.jsx)("p",{style:{margin:"0.5rem 0 0",lineHeight:1.55},children:c[e]})]})]})})}function x(){return(0,t.jsx)(l.A,{fallback:(0,i.q)(),children:()=>(0,t.jsx)(b,{})})}},69217(e,a,o){o.d(a,{A:()=>s});var t=o(296540);function s(e=2e3){let[a,o]=(0,t.useState)(null);return{copy:(0,t.useCallback)(async(a,t="default")=>{if(!a)return!1;try{return await navigator.clipboard.writeText(a),o(t),window.setTimeout(()=>o(e=>e===t?null:e),e),!0}catch{return!1}},[e]),copiedKey:a,isCopied:(e="default")=>a===e}}}}]);

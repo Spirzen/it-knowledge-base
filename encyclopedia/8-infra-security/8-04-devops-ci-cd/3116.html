@@ -1,0 +1,769 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/8-infra-security/8-04-devops-ci-cd/3116" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Справочник по Grafana | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Справочник по Grafana | Вселенная IT"/><meta data-rh=true name=description content="Справочник по Grafana — дашборды, источники данных, алертинг и provisioning для observability в CI/CD."/><meta data-rh=true property=og:description content="Справочник по Grafana — дашборды, источники данных, алертинг и provisioning для observability в CI/CD."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/infra-security","name":"8. Инфраструктура и безопасность","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/devops-ci-cd","name":"DevOps, CI-CD","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116","name":"Справочник по Grafana","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Expand sidebar category '2. Система и сеть'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Expand sidebar category '7. Проект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Collapse sidebar category '8. Инфраструктура и безопасность'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/облачные-технологии><span title="Облачные технологии" class=categoryLinkLabel_V03G>Облачные технологии</span></a><button aria-label="Expand sidebar category 'Облачные технологии'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/low-code-no-code><span title="Low-code, No-code" class=categoryLinkLabel_V03G>Low-code, No-code</span></a><button aria-label="Expand sidebar category 'Low-code, No-code'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/забота-о-коде-и-данных><span title="Забота о коде и данных" class=categoryLinkLabel_V03G>Забота о коде и данных</span></a><button aria-label="Expand sidebar category 'Забота о коде и данных'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/devops-ci-cd><span title="DevOps, CI-CD" class=categoryLinkLabel_V03G>DevOps, CI-CD</span></a><button aria-label="Collapse sidebar category 'DevOps, CI-CD'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/1><span title="Основы DevOps" class=linkLabel_WmDU>Основы DevOps</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/11><span title="CI/CD. Принципы непрерывной интеграции и доставки" class=linkLabel_WmDU>CI/CD. Принципы непрерывной интеграции и доставки</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/111><span title="Стратегии развертывания" class=linkLabel_WmDU>Стратегии развертывания</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/12><span title="Использование Git и GitFlow в DevOps-процессах" class=linkLabel_WmDU>Использование Git и GitFlow в DevOps-процессах</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/13><span title="Особенности настройки и эксплуатации CI/CD-конвейеров" class=linkLabel_WmDU>Особенности настройки и эксплуатации CI/CD-конвейеров</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/14><span title="Жизненный цикл пайплайна CI/CD" class=linkLabel_WmDU>Жизненный цикл пайплайна CI/CD</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/15><span title="Azure Repos и Team Foundation Server (TFS)" class=linkLabel_WmDU>Azure Repos и Team Foundation Server (TFS)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/16><span title="Инструменты автоматизации и оркестрации" class=linkLabel_WmDU>Инструменты автоматизации и оркестрации</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/17><span title="Роль DevOps-инженера и отличия от системного администратора" class=linkLabel_WmDU>Роль DevOps-инженера и отличия от системного администратора</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/18><span title="Автоматизация сборки, тестирования и развёртывания" class=linkLabel_WmDU>Автоматизация сборки, тестирования и развёртывания</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/19><span title="Логирование, мониторинг и наблюдаемость систем" class=linkLabel_WmDU>Логирование, мониторинг и наблюдаемость систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2><span title=Terraform class=linkLabel_WmDU>Terraform</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/21><span title=Pulumi class=linkLabel_WmDU>Pulumi</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/211><span title="Аутентификация и авторизация в CI/CD-средах" class=linkLabel_WmDU>Аутентификация и авторизация в CI/CD-средах</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2111><span title="Инженерия надежности (SRE) для разработчиков" class=linkLabel_WmDU>Инженерия надежности (SRE) для разработчиков</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2112><span title="GitHub Actions" class=linkLabel_WmDU>GitHub Actions</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2113><span title="GitLab CI" class=linkLabel_WmDU>GitLab CI</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/212><span title=Webhooks class=linkLabel_WmDU>Webhooks</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/213><span title="Хранение и обработка данных в Data Warehouse" class=linkLabel_WmDU>Хранение и обработка данных в Data Warehouse</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/214><span title="Упаковка приложений в формате .deb" class=linkLabel_WmDU>Упаковка приложений в формате .deb</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/215><span title="Инфраструктура как код (Infrastructure as Code)" class=linkLabel_WmDU>Инфраструктура как код (Infrastructure as Code)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151><span title="AgentOps — операции с ИИ-агентами" class=linkLabel_WmDU>AgentOps — операции с ИИ-агентами</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2152><span title="Мультиагентные команды и DevOps-pipeline" class=linkLabel_WmDU>Мультиагентные команды и DevOps-pipeline</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2153><span title="Контекст агента — AGENTS, skills, rules" class=linkLabel_WmDU>Контекст агента — AGENTS, skills, rules</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2154><span title="Инструменты AgentOps" class=linkLabel_WmDU>Инструменты AgentOps</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/216><span title=Ansible class=linkLabel_WmDU>Ansible</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/217><span title="Наблюдаемость и автоматизация" class=linkLabel_WmDU>Наблюдаемость и автоматизация</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/218><span title="Service Mesh" class=linkLabel_WmDU>Service Mesh</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/219><span title="Корпоративный доступ, SSO и платформенные инструменты" class=linkLabel_WmDU>Корпоративный доступ, SSO и платформенные инструменты</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/22><span title="Terraform — практический путь" class=linkLabel_WmDU>Terraform — практический путь</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/23><span title="Terraform — модули и структура репозитория" class=linkLabel_WmDU>Terraform — модули и структура репозитория</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/24><span title="Тестирование Terraform" class=linkLabel_WmDU>Тестирование Terraform</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/25><span title="Terraform в команде" class=linkLabel_WmDU>Terraform в команде</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3><span title="Справочник по Terraform" class=linkLabel_WmDU>Справочник по Terraform</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3111><span title="Справочник по Ansible" class=linkLabel_WmDU>Справочник по Ansible</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3112><span title="Справочник по Nginx" class=linkLabel_WmDU>Справочник по Nginx</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3113><span title="Справочник по GitHub Actions" class=linkLabel_WmDU>Справочник по GitHub Actions</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114><span title="Справочник по Jenkins" class=linkLabel_WmDU>Справочник по Jenkins</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115><span title="Справочник по Prometheus" class=linkLabel_WmDU>Справочник по Prometheus</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3116><span title="Справочник по Grafana" class=linkLabel_WmDU>Справочник по Grafana</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3117><span title="Справочник по Elasticsearch" class=linkLabel_WmDU>Справочник по Elasticsearch</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3118><span title="Справочник по AWS" class=linkLabel_WmDU>Справочник по AWS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3119><span title="Справочник по Logstash" class=linkLabel_WmDU>Справочник по Logstash</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3120><span title="Справочник по Kibana" class=linkLabel_WmDU>Справочник по Kibana</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3121><span title="Справочник по Loki" class=linkLabel_WmDU>Справочник по Loki</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3122><span title="Справочник по Tempo" class=linkLabel_WmDU>Справочник по Tempo</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3123><span title="E2E-тесты и CI с Playwright и GitHub Actions" class=linkLabel_WmDU>E2E-тесты и CI с Playwright и GitHub Actions</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3124><span title="Справочник по Azure Repos Git" class=linkLabel_WmDU>Справочник по Azure Repos Git</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125><span title="Справочник по Apache HTTP Server" class=linkLabel_WmDU>Справочник по Apache HTTP Server</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/998><span title="DevOps, CI-CD — итоги" class=linkLabel_WmDU>DevOps, CI-CD — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/999><span title="DevOps, CI-CD — чек-лист" class=linkLabel_WmDU>DevOps, CI-CD — чек-лист</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro><span title="DevOps, CI-CD — о разделе" class=linkLabel_WmDU>DevOps, CI-CD — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/микросервисы-и-интеграция><span title="Микросервисы и интеграция" class=categoryLinkLabel_V03G>Микросервисы и интеграция</span></a><button aria-label="Expand sidebar category 'Микросервисы и интеграция'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/контейнеризация-и-оркестрация><span title="Контейнеризация и оркестрация" class=categoryLinkLabel_V03G>Контейнеризация и оркестрация</span></a><button aria-label="Expand sidebar category 'Контейнеризация и оркестрация'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/информационная-безопасность><span title="Информационная безопасность" class=categoryLinkLabel_V03G>Информационная безопасность</span></a><button aria-label="Expand sidebar category 'Информационная безопасность'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-rest-и-websocket><span title="Практикум REST и WebSocket" class=categoryLinkLabel_V03G>Практикум REST и WebSocket</span></a><button aria-label="Expand sidebar category 'Практикум REST и WebSocket'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/белое-хакерство-и-bug-bounty><span title="Белое хакерство и Bug Bounty" class=categoryLinkLabel_V03G>Белое хакерство и Bug Bounty</span></a><button aria-label="Expand sidebar category 'Белое хакерство и Bug Bounty'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/тестирование-на-проникновение><span title="Тестирование на проникновение" class=categoryLinkLabel_V03G>Тестирование на проникновение</span></a><button aria-label="Expand sidebar category 'Тестирование на проникновение'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-postgresql><span title="Практикум PostgreSQL" class=categoryLinkLabel_V03G>Практикум PostgreSQL</span></a><button aria-label="Expand sidebar category 'Практикум PostgreSQL'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/infra-Безопасность><span title="8. Инфраструктура и безопасность - о разделе" class=linkLabel_WmDU>8. Инфраструктура и безопасность - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/infra-security><span>8. Инфраструктура и безопасность</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/devops-ci-cd><span>DevOps, CI-CD</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Справочник по Grafana</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Справочник по Grafana</h1></header>
+<div class=article-tags><span class="tag tag-reference">СПРАВОЧНИК</span></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=назначение>Назначение<a href=#назначение class=hash-link aria-label="Прямая ссылка на Назначение" title="Прямая ссылка на Назначение" translate=no>​</a></h2>
+<p>CLI, конфигурация и типовые сценарии <strong>Grafana</strong> (DevOps, CI/CD, инфраструктура). Учебный курс: <a class="" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro>раздел</a>. Пошаговый стенд — <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro>Практикум Prometheus и Grafana</a>. Запросы для панелей и Explore — <a class="" href=/lab/Примеры/11114>галерея PromQL</a>.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=краткое-пояснение>Краткое пояснение<a href=#краткое-пояснение class=hash-link aria-label="Прямая ссылка на Краткое пояснение" title="Прямая ссылка на Краткое пояснение" translate=no>​</a></h2>
+<p><strong>Grafana</strong> — платформа визуализации и алертинга поверх метрик, логов и трассировок (Prometheus, Loki, Tempo, Elasticsearch и др.). В DevOps её используют для дашбордов после деплоя, SLO/SLI, on-call и проверки релизов; конфигурацию часто выносят в Git (provisioning) и прогоняют через CI.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=быстрый-старт>Быстрый старт<a href=#быстрый-старт class=hash-link aria-label="Прямая ссылка на Быстрый старт" title="Прямая ссылка на Быстрый старт" translate=no>​</a></h2>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">grafana-cli plugins </span><span class="token function" style="color:rgb(130, 170, 255)">ls</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-sf</span><span class="token plain"> http://localhost:3000/api/health</span><br/></div></code></pre></div></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=справочные-таблицы>Справочные таблицы<a href=#справочные-таблицы class=hash-link aria-label="Прямая ссылка на Справочные таблицы" title="Прямая ссылка на Справочные таблицы" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=содержание-справочника>Содержание справочника<a href=#содержание-справочника class=hash-link aria-label="Прямая ссылка на Содержание справочника" title="Прямая ссылка на Содержание справочника" translate=no>​</a></h3>
+<ul>
+<li class=""><a href=#%D0%B8%D1%81%D1%82%D0%BE%D1%87%D0%BD%D0%B8%D0%BA%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-data-sources class="">Источники данных (Data Sources)</a></li>
+<li class=""><a href=#%D0%B4%D0%B0%D1%88%D0%B1%D0%BE%D1%80%D0%B4%D1%8B class="">Дашборды</a></li>
+<li class=""><a href=#%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8 class="">Панели</a></li>
+<li class=""><a href=#%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5-variables class="">Переменные (Variables)</a></li>
+<li class=""><a href=#%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B-queries class="">Запросы (Queries)</a></li>
+<li class=""><a href=#%D0%B0%D0%BD%D0%BD%D0%BE%D1%82%D0%B0%D1%86%D0%B8%D0%B8 class="">Аннотации</a></li>
+<li class=""><a href=#%D0%BE%D0%BF%D0%BE%D0%B2%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D1%8F-alerting class="">Оповещения (Alerting)</a></li>
+<li class=""><a href=#%D0%BA%D0%BE%D0%BD%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%B0%D1%86%D0%B8%D1%8F-grafana-grafanaini class="">Конфигурация Grafana (grafana.ini)</a></li>
+<li class=""><a href=#provisioning class="">Provisioning</a></li>
+<li class=""><a href=#grafana-http-api class="">Grafana HTTP API</a></li>
+<li class=""><a href=#cli-command-line-interface class="">CLI (Command Line Interface)</a></li>
+<li class=""><a href=#%D0%B1%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C class="">Безопасность</a></li>
+<li class=""><a href=#%D0%BA%D1%8D%D1%88%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D1%81%D1%82%D1%8C class="">Кэширование и производительность</a></li>
+<li class=""><a href=#%D0%BB%D0%BE%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8-%D0%BC%D0%BE%D0%BD%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%BD%D0%B3 class="">Логирование и мониторинг</a></li>
+<li class=""><a href=#%D1%82%D0%B5%D0%BC%D1%8B-%D0%BE%D1%84%D0%BE%D1%80%D0%BC%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-themes class="">Темы оформления (Themes)</a></li>
+<li class=""><a href=#%D0%BF%D0%BB%D0%B0%D0%B3%D0%B8%D0%BD%D1%8B class="">Плагины</a></li>
+<li class=""><a href=#%D1%81%D0%BE%D0%B2%D0%BC%D0%B5%D1%81%D1%82%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%D0%B8-%D0%BE%D0%B1%D0%BC%D0%B5%D0%BD class="">Совместная работа и обмен</a></li>
+<li class=""><a href=#%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B8-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%BD%D0%BE%D0%B5-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5 class="">Шаблонизация и повторное использование</a></li>
+<li class=""><a href=#%D0%BF%D1%80%D0%BE%D0%B4%D0%B2%D0%B8%D0%BD%D1%83%D1%82%D1%8B%D0%B5-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B8-%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D0%BE%D0%B2 class="">Продвинутые техники запросов</a></li>
+<li class=""><a href=#%D1%8D%D0%BA%D1%81%D0%BF%D0%BE%D1%80%D1%82-%D0%B8-%D0%B2%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5 class="">Экспорт и внедрение</a></li>
+<li class=""><a href=#%D0%BB%D1%83%D1%87%D1%88%D0%B8%D0%B5-%D0%BF%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B8 class="">Лучшие практики</a></li>
+<li class=""><a href=#%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D0%B8 class="">Интеграции</a></li>
+<li class=""><a href=#%D0%BE%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0-%D0%B8-%D0%B4%D0%B8%D0%B0%D0%B3%D0%BD%D0%BE%D1%81%D1%82%D0%B8%D0%BA%D0%B0 class="">Отладка и диагностика</a></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=основные-сущности>Основные сущности<a href=#основные-сущности class=hash-link aria-label="Прямая ссылка на Основные сущности" title="Прямая ссылка на Основные сущности" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Организация (Organization)</strong> — изолированное пространство пользователей, дашбордов и настроек.</li>
+<li class=""><strong>Пользователь (User)</strong> — аккаунт с ролью внутри организации.</li>
+<li class=""><strong>Роль (Role)</strong> — уровень доступа: Viewer, Editor, Admin.</li>
+<li class=""><strong>Команда (Team)</strong> — группа пользователей для управления правами доступа.</li>
+<li class=""><strong>Источник данных (Data Source)</strong> — внешняя система, откуда Grafana получает данные (Prometheus, Loki, MySQL и другие).</li>
+<li class=""><strong>Дашборд (Dashboard)</strong> — страница с набором визуальных панелей.</li>
+<li class=""><strong>Панель (Panel)</strong> — отдельный элемент визуализации: график, таблица, текст и так далее.</li>
+<li class=""><strong>Переменная (Variable)</strong> — динамический параметр для фильтрации или переиспользования значений в дашборде.</li>
+<li class=""><strong>Аннотация (Annotation)</strong> — временная метка с описанием события.</li>
+<li class=""><strong>Оповещение (Alert)</strong> — правило, срабатывающее при выполнении условия.</li>
+<li class=""><strong>Правило оповещения (Alert Rule)</strong> — логическое выражение с пороговыми значениями и действиями.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=источники-данных-data-sources>Источники данных (Data Sources)<a href=#источники-данных-data-sources class=hash-link aria-label="Прямая ссылка на Источники данных (Data Sources)" title="Прямая ссылка на Источники данных (Data Sources)" translate=no>​</a></h3>
+<p>Grafana поддерживает более 50 типов источников данных. Наиболее популярные:</p>
+<ul>
+<li class="">Prometheus</li>
+<li class="">Loki</li>
+<li class="">Elasticsearch</li>
+<li class="">Graphite</li>
+<li class="">InfluxDB</li>
+<li class="">MySQL / PostgreSQL / Microsoft SQL Server / Oracle</li>
+<li class="">OpenTSDB</li>
+<li class="">Azure Monitor</li>
+<li class="">AWS CloudWatch</li>
+<li class="">Jaeger / Tempo (трассировки)</li>
+<li class="">CSV / JSON (через плагины)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=общие-параметры-источника-данных>Общие параметры источника данных<a href=#общие-параметры-источника-данных class=hash-link aria-label="Прямая ссылка на Общие параметры источника данных" title="Прямая ссылка на Общие параметры источника данных" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Name</strong> — имя источника в интерфейсе Grafana.</li>
+<li class=""><strong>Type</strong> — тип источника (выбирается из списка).</li>
+<li class=""><strong>URL</strong> — адрес сервера источника данных.</li>
+<li class=""><strong>Access</strong> — режим подключения: <code>Server</code> (через backend Grafana) или <code>Browser</code> (прямое подключение из браузера).</li>
+<li class=""><strong>Auth</strong> — метод аутентификации: Basic Auth, Token, OAuth, TLS Client Cert и другие.</li>
+<li class=""><strong>Database</strong> — имя базы данных (если применимо).</li>
+<li class=""><strong>HTTP Method</strong> — GET или POST для некоторых источников.</li>
+<li class=""><strong>Custom HTTP Headers</strong> — дополнительные заголовки запроса.</li>
+<li class=""><strong>Timeout</strong> — максимальное время ожидания ответа.</li>
+<li class=""><strong>Cache TTL</strong> — время кэширования метаданных.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=дашборды>Дашборды<a href=#дашборды class=hash-link aria-label="Прямая ссылка на Дашборды" title="Прямая ссылка на Дашборды" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=свойства-дашборда>Свойства дашборда<a href=#свойства-дашборда class=hash-link aria-label="Прямая ссылка на Свойства дашборда" title="Прямая ссылка на Свойства дашборда" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Title</strong> — заголовок дашборда.</li>
+<li class=""><strong>Description</strong> — описание.</li>
+<li class=""><strong>Tags</strong> — теги для поиска и группировки.</li>
+<li class=""><strong>Folder</strong> — папка, в которой хранится дашборд.</li>
+<li class=""><strong>Time range</strong> — диапазон времени по умолчанию (<code>Last 6 hours</code>, <code>Last 30 days</code>, относительный или абсолютный).</li>
+<li class=""><strong>Refresh interval</strong> — автоматическое обновление (например, <code>5s</code>, <code>1m</code>, <code>Off</code>).</li>
+<li class=""><strong>Editable</strong> — разрешение на редактирование.</li>
+<li class=""><strong>UID</strong> — уникальный идентификатор дашборда (используется в URL и API).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=настройки-дашборда-dashboard-settings--general>Настройки дашборда (Dashboard settings → General)<a href=#настройки-дашборда-dashboard-settings--general class=hash-link aria-label="Прямая ссылка на Настройки дашборда (Dashboard settings → General)" title="Прямая ссылка на Настройки дашборда (Dashboard settings → General)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Timezone</strong> — часовой пояс: <code>Browser</code>, <code>UTC</code> или конкретный регион.</li>
+<li class=""><strong>Week start</strong> — день начала недели.</li>
+<li class=""><strong>Auto-fit panels</strong> — автоматическая подгонка панелей по высоте.</li>
+<li class=""><strong>Graph tooltip</strong> — поведение подсказок: <code>Default</code>, <code>Shared crosshair</code>, <code>Shared tooltip</code>.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=панели>Панели<a href=#панели class=hash-link aria-label="Прямая ссылка на Панели" title="Прямая ссылка на Панели" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=типы-панелей>Типы панелей<a href=#типы-панелей class=hash-link aria-label="Прямая ссылка на Типы панелей" title="Прямая ссылка на Типы панелей" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Time series</strong> — график временных рядов.</li>
+<li class=""><strong>Bar chart</strong> — столбчатая диаграмма.</li>
+<li class=""><strong>Stat</strong> — одно значение (текущее, среднее, максимум и т.п.).</li>
+<li class=""><strong>Table</strong> — табличное представление.</li>
+<li class=""><strong>Heatmap</strong> — тепловая карта.</li>
+<li class=""><strong>Logs</strong> — просмотр логов.</li>
+<li class=""><strong>Traces</strong> — визуализация трассировок.</li>
+<li class=""><strong>Text</strong> — произвольный текст (Markdown или HTML).</li>
+<li class=""><strong>Gauge</strong> — круговой индикатор.</li>
+<li class=""><strong>Pie chart</strong> — круговая диаграмма.</li>
+<li class=""><strong>Node graph</strong> — граф зависимостей.</li>
+<li class=""><strong>Histogram</strong> — гистограмма распределения.</li>
+<li class=""><strong>State timeline</strong> — временная шкала состояний.</li>
+<li class=""><strong>Status history</strong> — история статусов.</li>
+<li class=""><strong>Geomap</strong> — карта с географическими данными.</li>
+<li class=""><strong>Custom plugins</strong> — сторонние визуализации.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=общие-свойства-всех-панелей>Общие свойства всех панелей<a href=#общие-свойства-всех-панелей class=hash-link aria-label="Прямая ссылка на Общие свойства всех панелей" title="Прямая ссылка на Общие свойства всех панелей" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Title</strong> — заголовок панели.</li>
+<li class=""><strong>Description</strong> — пояснение (появляется при наведении).</li>
+<li class=""><strong>Transparent background</strong> — прозрачный фон.</li>
+<li class=""><strong>Span</strong> — ширина панели (от 1 до 24 единиц сетки).</li>
+<li class=""><strong>Height</strong> — высота в пикселях.</li>
+<li class=""><strong>Display mode</strong> — режим отображения (например, "Fill" или "Fit").</li>
+<li class=""><strong>Links</strong> — гиперссылки, привязанные к панели.</li>
+<li class=""><strong>Repeat by variable</strong> — дублирование панели для каждого значения переменной.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=переменные-variables>Переменные (Variables)<a href=#переменные-variables class=hash-link aria-label="Прямая ссылка на Переменные (Variables)" title="Прямая ссылка на Переменные (Variables)" translate=no>​</a></h3>
+<p>Переменные позволяют делать дашборды интерактивными и параметризованными.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=типы-переменных>Типы переменных<a href=#типы-переменных class=hash-link aria-label="Прямая ссылка на Типы переменных" title="Прямая ссылка на Типы переменных" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Constant</strong> — фиксированное значение.</li>
+<li class=""><strong>Query</strong> — значение, полученное из источника данных.</li>
+<li class=""><strong>Custom</strong> — список значений, заданный вручную.</li>
+<li class=""><strong>Text box</strong> — поле ввода текста.</li>
+<li class=""><strong>Данные source</strong> — выбор источника данных из списка.</li>
+<li class=""><strong>Interval</strong> — выбор интервала времени (<code>1m</code>, <code>5m</code>, <code>1h</code> и т.д.).</li>
+<li class=""><strong>Ad hoc filters</strong> — фильтры, применяемые ко всем запросам (только для Prometheus, Elasticsearch и некоторых других).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=свойства-переменной>Свойства переменной<a href=#свойства-переменной class=hash-link aria-label="Прямая ссылка на Свойства переменной" title="Прямая ссылка на Свойства переменной" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Name</strong> — имя переменной (используется как <code>$name</code> или <code>[[name]]</code>).</li>
+<li class=""><strong>Label</strong> — отображаемая надпись над выпадающим списком.</li>
+<li class=""><strong>Hide</strong> — видимость: <code>None</code>, <code>Label</code>, <code>Variable</code>.</li>
+<li class=""><strong>Type</strong> — тип переменной.</li>
+<li class=""><strong>Данные source</strong> — источник данных (для Query-переменных).</li>
+<li class=""><strong>Query</strong> — запрос для получения значений.</li>
+<li class=""><strong>Regex</strong> — регулярное выражение для фильтрации результатов.</li>
+<li class=""><strong>Sort</strong> — порядок сортировки: <code>Disabled</code>, <code>Alphabetical</code>, <code>Numerical</code>.</li>
+<li class=""><strong>Multi-value</strong> — возможность выбрать несколько значений.</li>
+<li class=""><strong>Include All option</strong> — добавление опции "All".</li>
+<li class=""><strong>All value</strong> — значение, подставляемое при выборе "All".</li>
+<li class=""><strong>Current value</strong> — текущее выбранное значение по умолчанию.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=запросы-queries>Запросы (Queries)<a href=#запросы-queries class=hash-link aria-label="Прямая ссылка на Запросы (Queries)" title="Прямая ссылка на Запросы (Queries)" translate=no>​</a></h3>
+<p>Каждая панель содержит один или несколько запросов к источнику данных.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=общие-элементы-запроса>Общие элементы запроса<a href=#общие-элементы-запроса class=hash-link aria-label="Прямая ссылка на Общие элементы запроса" title="Прямая ссылка на Общие элементы запроса" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Query editor</strong> — интерфейс для написания запроса (зависит от типа источника).</li>
+<li class=""><strong>Format as</strong> — формат возвращаемых данных: <code>Time series</code>, <code>Table</code>, <code>Logs</code>, <code>Trace</code>, <code>Heatmap</code>.</li>
+<li class=""><strong>Min interval</strong> — минимальный интервал агрегации.</li>
+<li class=""><strong>Max Данные points</strong> — ограничение количества точек на графике.</li>
+<li class=""><strong>Legend</strong> — шаблон имени серии (поддерживает переменные и поля).</li>
+<li class=""><strong>Alias by</strong> — переименование меток (в Prometheus).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=примеры-функций-и-операторов-на-примере-prometheus>Примеры функций и операторов (на примере Prometheus)<a href=#примеры-функций-и-операторов-на-примере-prometheus class=hash-link aria-label="Прямая ссылка на Примеры функций и операторов (на примере Prometheus)" title="Прямая ссылка на Примеры функций и операторов (на примере Prometheus)" translate=no>​</a></h4>
+<ul>
+<li class=""><code>rate(metric[5m])</code> — скорость изменения за 5 минут.</li>
+<li class=""><code>irate(metric[5m])</code> — мгновенная скорость.</li>
+<li class=""><code>sum by (job) (metric)</code> — суммирование по метке <code>job</code>.</li>
+<li class=""><code>avg_over_time(metric[1h])</code> — среднее значение за час.</li>
+<li class=""><code>topk(5, metric)</code> — топ-5 значений.</li>
+<li class=""><code>histogram_quantile(0.95, rate(http_request_duration_seconds_bucket[5m]))</code> — 95-й перцентиль.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=аннотации>Аннотации<a href=#аннотации class=hash-link aria-label="Прямая ссылка на Аннотации" title="Прямая ссылка на Аннотации" translate=no>​</a></h3>
+<p>Аннотации отображаются как вертикальные линии на временных шкалах.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=типы-аннотаций>Типы аннотаций<a href=#типы-аннотаций class=hash-link aria-label="Прямая ссылка на Типы аннотаций" title="Прямая ссылка на Типы аннотаций" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Dashboard annotations</strong> — ручные заметки.</li>
+<li class=""><strong>Данные source annotations</strong> — автоматические события из источника (например, деплои из CI/CD).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=свойства-аннотации>Свойства аннотации<a href=#свойства-аннотации class=hash-link aria-label="Прямая ссылка на Свойства аннотации" title="Прямая ссылка на Свойства аннотации" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Name</strong> — имя аннотации.</li>
+<li class=""><strong>Данные source</strong> — источник данных.</li>
+<li class=""><strong>Icon color</strong> — цвет иконки.</li>
+<li class=""><strong>Enable</strong> — активность аннотации.</li>
+<li class=""><strong>Query</strong> — запрос для получения событий.</li>
+<li class=""><strong>Tag keys / Text column</strong> — поля для отображения.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=оповещения-alerting>Оповещения (Alerting)<a href=#оповещения-alerting class=hash-link aria-label="Прямая ссылка на Оповещения (Alerting)" title="Прямая ссылка на Оповещения (Alerting)" translate=no>​</a></h3>
+<p>Grafana поддерживает два режима оповещений:</p>
+<ul>
+<li class=""><strong>Legacy alerts</strong> — устаревшая система (до Grafana 8).</li>
+<li class=""><strong>Unified Alerting</strong> — современная система (начиная с Grafana 8+).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=компоненты-unified-alerting>Компоненты Unified Alerting<a href=#компоненты-unified-alerting class=hash-link aria-label="Прямая ссылка на Компоненты Unified Alerting" title="Прямая ссылка на Компоненты Unified Alerting" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Alert rule</strong> — правило с условиями и выражениями.</li>
+<li class=""><strong>Contact point</strong> — способ доставки: Email, Slack, PagerDuty, Webhook и другие.</li>
+<li class=""><strong>Notification policy</strong> — маршрутизация оповещений по условиям.</li>
+<li class=""><strong>Silence</strong> — временное отключение оповещений.</li>
+<li class=""><strong>Template</strong> — шаблон сообщения (на основе Go template).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=параметры-alert-rule>Параметры Alert Rule<a href=#параметры-alert-rule class=hash-link aria-label="Прямая ссылка на Параметры Alert Rule" title="Прямая ссылка на Параметры Alert Rule" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Rule name</strong> — имя правила.</li>
+<li class=""><strong>Evaluation interval</strong> — частота проверки условия.</li>
+<li class=""><strong>For</strong> — длительность, в течение которой условие должно быть истинным.</li>
+<li class=""><strong>Condition</strong> — выражение на языке запросов (например, <code>A > 90</code>).</li>
+<li class=""><strong>Labels</strong> — дополнительные метки для фильтрации.</li>
+<li class=""><strong>Annotations</strong> — пояснения и ссылки.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=contact-point-types>Contact Point Types<a href=#contact-point-types class=hash-link aria-label="Прямая ссылка на Contact Point Types" title="Прямая ссылка на Contact Point Types" translate=no>​</a></h4>
+<ul>
+<li class="">Email</li>
+<li class="">Slack</li>
+<li class="">Microsoft Teams</li>
+<li class="">Discord</li>
+<li class="">Telegram</li>
+<li class="">PagerDuty</li>
+<li class="">Opsgenie</li>
+<li class="">VictorOps</li>
+<li class="">Webhook</li>
+<li class="">Kafka</li>
+<li class="">LINE</li>
+<li class="">Pushover</li>
+<li class="">Threema</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=конфигурация-grafana-grafanaini>Конфигурация Grafana (grafana.ini)<a href=#конфигурация-grafana-grafanaini class=hash-link aria-label="Прямая ссылка на Конфигурация Grafana (grafana.ini)" title="Прямая ссылка на Конфигурация Grafana (grafana.ini)" translate=no>​</a></h3>
+<p>Основной файл конфигурации — <code>grafana.ini</code>, расположенный по умолчанию в <code>/etc/grafana/</code> (Linux) или <code>%PROGRAMFILES%\GrafanaLabs\grafana\conf\</code> (Windows). Он определяет поведение сервера, подключение к базам данных, параметры безопасности, внешний вид и многое другое.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=основные-секции-конфигурации>Основные секции конфигурации<a href=#основные-секции-конфигурации class=hash-link aria-label="Прямая ссылка на Основные секции конфигурации" title="Прямая ссылка на Основные секции конфигурации" translate=no>​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=server><code>[server]</code><a href=#server class=hash-link aria-label="Прямая ссылка на server" title="Прямая ссылка на server" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>http_addr</strong> — IP-адрес, на котором слушает Grafana.</li>
+<li class=""><strong>http_port</strong> — порт HTTP-сервера (по умолчанию 3000).</li>
+<li class=""><strong>domain</strong> — доменное имя для генерации абсолютных URL.</li>
+<li class=""><strong>root_url</strong> — базовый URL для всех ссылок (например, <code>%(protocol)s://%(domain)s:/grafana/</code> при размещении за reverse proxy).</li>
+<li class=""><strong>serve_from_sub_path</strong> — разрешить обслуживание из подпути.</li>
+<li class=""><strong>enforce_domain</strong> — требовать соответствие заголовка Host указанному домену.</li>
+<li class=""><strong>cert_file / cert_key</strong> — пути к TLS-сертификатам для HTTPS.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=database><code>[database]</code><a href=#database class=hash-link aria-label="Прямая ссылка на database" title="Прямая ссылка на database" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>type</strong> — тип БД: <code>sqlite3</code>, <code>mysql</code>, <code>postgres</code>.</li>
+<li class=""><strong>host</strong> — хост и порт СУБД.</li>
+<li class=""><strong>name</strong> — имя базы данных.</li>
+<li class=""><strong>user / password</strong> — учётные данные.</li>
+<li class=""><strong>ssl_mode</strong> — режим SSL для PostgreSQL (<code>disable</code>, <code>require</code>, <code>verify-full</code>).</li>
+<li class=""><strong>max_idle_conn / max_open_conn</strong> — лимиты соединений.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=auth><code>[auth]</code><a href=#auth class=hash-link aria-label="Прямая ссылка на auth" title="Прямая ссылка на auth" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>login_cookie_name</strong> — имя cookie аутентификации.</li>
+<li class=""><strong>login_maximum_inactive_lifetime_duration</strong> — максимальное время неактивности до разлогина.</li>
+<li class=""><strong>login_maximum_lifetime_duration</strong> — максимальная длительность сессии.</li>
+<li class=""><strong>disable_login_form</strong> — отключить форму входа (если используется OAuth/SAML).</li>
+<li class=""><strong>signout_redirect_url</strong> — URL после выхода.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=authbasic><code>[auth.basic]</code><a href=#authbasic class=hash-link aria-label="Прямая ссылка на authbasic" title="Прямая ссылка на authbasic" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enabled</strong> — разрешить базовую аутентификацию.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=authanonymous><code>[auth.anonymous]</code><a href=#authanonymous class=hash-link aria-label="Прямая ссылка на authanonymous" title="Прямая ссылка на authanonymous" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enabled</strong> — разрешить анонимный доступ.</li>
+<li class=""><strong>org_name</strong> — организация по умолчанию для анонимов.</li>
+<li class=""><strong>org_role</strong> — роль (<code>Viewer</code>, <code>Editor</code>).</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=authgoogle-authgithub-authgitlab-и-другие-oauth-провайдеры><code>[auth.google]</code>, <code>[auth.github]</code>, <code>[auth.gitlab]</code> и другие OAuth-провайдеры<a href=#authgoogle-authgithub-authgitlab-и-другие-oauth-провайдеры class=hash-link aria-label="Прямая ссылка на authgoogle-authgithub-authgitlab-и-другие-oauth-провайдеры" title="Прямая ссылка на authgoogle-authgithub-authgitlab-и-другие-oauth-провайдеры" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enabled</strong></li>
+<li class=""><strong>client_id / client_secret</strong></li>
+<li class=""><strong>scopes</strong></li>
+<li class=""><strong>auth_url / token_url</strong></li>
+<li class=""><strong>allowed_domains / allowed_organizations</strong></li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=users><code>[users]</code><a href=#users class=hash-link aria-label="Прямая ссылка на users" title="Прямая ссылка на users" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>allow_sign_up</strong> — разрешить самостоятельную регистрацию.</li>
+<li class=""><strong>auto_assign_org</strong> — автоматически назначать новому пользователю организацию.</li>
+<li class=""><strong>auto_assign_org_role</strong> — роль по умолчанию (<code>Viewer</code>, <code>Editor</code>, <code>Admin</code>).</li>
+<li class=""><strong>viewers_can_edit</strong> — разрешить Viewer’ам редактировать панели.</li>
+<li class=""><strong>editors_can_admin</strong> — разрешить Editor’ам администрировать дашборды.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=smtp><code>[smtp]</code><a href=#smtp class=hash-link aria-label="Прямая ссылка на smtp" title="Прямая ссылка на smtp" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enabled</strong></li>
+<li class=""><strong>host</strong></li>
+<li class=""><strong>user / password</strong></li>
+<li class=""><strong>from_address</strong></li>
+<li class=""><strong>from_name</strong></li>
+<li class=""><strong>skip_verify</strong> — игнорировать ошибки SSL сертификата SMTP.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=emails><code>[emails]</code><a href=#emails class=hash-link aria-label="Прямая ссылка на emails" title="Прямая ссылка на emails" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>welcome_email_on_sign_up</strong></li>
+<li class=""><strong>templates_pattern</strong> — шаблоны писем.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=log><code>[log]</code><a href=#log class=hash-link aria-label="Прямая ссылка на log" title="Прямая ссылка на log" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>mode</strong> — <code>console</code>, <code>file</code>, <code>syslog</code>.</li>
+<li class=""><strong>level</strong> — <code>debug</code>, <code>info</code>, <code>warn</code>, <code>error</code>, <code>critical</code>.</li>
+<li class=""><strong>file_format</strong> — формат логов.</li>
+<li class=""><strong>max_lines / max_size_shift / daily_rotate</strong> — ротация файлов.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=metrics><code>[metrics]</code><a href=#metrics class=hash-link aria-label="Прямая ссылка на metrics" title="Прямая ссылка на metrics" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enabled</strong> — включить внутренние метрики Grafana (экспортируются в Prometheus-совместимом формате).</li>
+<li class=""><strong>interval_seconds</strong> — интервал сбора.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=analytics><code>[analytics]</code><a href=#analytics class=hash-link aria-label="Прямая ссылка на analytics" title="Прямая ссылка на analytics" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>reporting_enabled</strong> — отправлять анонимную статистику в Grafana Labs.</li>
+<li class=""><strong>check_for_updates</strong> — проверять наличие обновлений.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=dashboards><code>[dashboards]</code><a href=#dashboards class=hash-link aria-label="Прямая ссылка на dashboards" title="Прямая ссылка на dashboards" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>versions_to_keep</strong> — количество версий дашборда для хранения.</li>
+<li class=""><strong>default_home_dashboard_path</strong> — путь к JSON-файлу главного дашборда.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=panels><code>[panels]</code><a href=#panels class=hash-link aria-label="Прямая ссылка на panels" title="Прямая ссылка на panels" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enable_alpha</strong> — включить экспериментальные панели.</li>
+<li class=""><strong>disable_sanitize_html</strong> — разрешить HTML в текстовых панелях (опасно!).</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=plugins><code>[plugins]</code><a href=#plugins class=hash-link aria-label="Прямая ссылка на plugins" title="Прямая ссылка на plugins" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enable_alpha</strong></li>
+<li class=""><strong>plugin_admin_enabled</strong> — разрешить установку плагинов через UI.</li>
+<li class=""><strong>plugin_catalog_url</strong> — URL каталога плагинов.</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=unified_alerting><code>[unified_alerting]</code><a href=#unified_alerting class=hash-link aria-label="Прямая ссылка на unified_alerting" title="Прямая ссылка на unified_alerting" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>enabled</strong> — включить Unified Alerting (вместо legacy alerts).</li>
+<li class=""><strong>ha_peers</strong> — список адресов других инстансов для высокой доступности.</li>
+<li class=""><strong>ha_listen_address</strong> — адрес для внутреннего HA-трафика.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=provisioning>Provisioning<a href=#provisioning class=hash-link aria-label="Прямая ссылка на Provisioning" title="Прямая ссылка на Provisioning" translate=no>​</a></h3>
+<p>Grafana поддерживает декларативную настройку через YAML-файлы. Это позволяет управлять источниками данных, дашбордами, контактными точками и правилами оповещений без ручного ввода в UI.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=папки-provisioning>Папки provisioning<a href=#папки-provisioning class=hash-link aria-label="Прямая ссылка на Папки provisioning" title="Прямая ссылка на Папки provisioning" translate=no>​</a></h4>
+<p>По умолчанию: <code>/etc/grafana/provisioning/</code></p>
+<p>Подпапки:</p>
+<ul>
+<li class=""><code>datasources/</code> — <code>.yaml</code> файлы с описанием источников данных.</li>
+<li class=""><code>dashboards/</code> — указание путей к JSON-файлам дашбордов.</li>
+<li class=""><code>notifiers/</code> — контактные точки (устаревший формат).</li>
+<li class=""><code>alerting/</code> — правила оповещений и политики (Unified Alerting).</li>
+<li class=""><code>plugins/</code> — настройки плагинов.</li>
+<li class=""><code>access-control/</code> — права доступа (RBAC).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=пример-datasourcesyaml>Пример <code>datasources.yaml</code><a href=#пример-datasourcesyaml class=hash-link aria-label="Прямая ссылка на пример-datasourcesyaml" title="Прямая ссылка на пример-datasourcesyaml" translate=no>​</a></h4>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token key atrule">apiVersion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token key atrule">datasources</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> Prometheus</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">type</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> prometheus</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">url</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> http</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain">//prometheus</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token number" style="color:rgb(247, 140, 108)">9090</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">access</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> proxy</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">isDefault</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">editable</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">false</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=пример-dashboardsyaml>Пример <code>dashboards.yaml</code><a href=#пример-dashboardsyaml class=hash-link aria-label="Прямая ссылка на пример-dashboardsyaml" title="Прямая ссылка на пример-dashboardsyaml" translate=no>​</a></h4>
+<div class="language-yaml codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-yaml codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token key atrule">apiVersion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token key atrule">providers</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">-</span><span class="token plain"> </span><span class="token key atrule">name</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">'default'</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">orgId</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">folder</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">''</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">type</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> file</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">disableDeletion</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">false</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">editable</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token boolean important" style="color:rgb(255, 88, 116)">true</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token key atrule">options</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token key atrule">path</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> /var/lib/grafana/dashboards</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=grafana-http-api>Grafana HTTP API<a href=#grafana-http-api class=hash-link aria-label="Прямая ссылка на Grafana HTTP API" title="Прямая ссылка на Grafana HTTP API" translate=no>​</a></h3>
+<p>Grafana предоставляет полноценный REST API для автоматизации.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=общие-особенности>Общие особенности<a href=#общие-особенности class=hash-link aria-label="Прямая ссылка на Общие особенности" title="Прямая ссылка на Общие особенности" translate=no>​</a></h4>
+<ul>
+<li class="">Базовый путь: <code>/api</code></li>
+<li class="">Аутентификация: токен (API Key или Service Account Token) в заголовке <code>Authorization: Bearer &lt;token></code></li>
+<li class="">Формат ответа: JSON</li>
+<li class="">Коды ошибок: 400 (неверный запрос), 401 (неавторизован), 403 (запрещено), 404 (не найдено), 500 (внутренняя ошибка)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=основные-эндпоинты>Основные эндпоинты<a href=#основные-эндпоинты class=hash-link aria-label="Прямая ссылка на Основные эндпоинты" title="Прямая ссылка на Основные эндпоинты" translate=no>​</a></h4>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=управление-пользователями>Управление пользователями<a href=#управление-пользователями class=hash-link aria-label="Прямая ссылка на Управление пользователями" title="Прямая ссылка на Управление пользователями" translate=no>​</a></h5>
+<ul>
+<li class=""><code>GET /api/users</code> — список пользователей</li>
+<li class=""><code>POST /api/users</code> — создать пользователя</li>
+<li class=""><code>GET /api/users/:id</code> — получить данные пользователя</li>
+<li class=""><code>PUT /api/users/:id</code> — обновить</li>
+<li class="">удалить</li>
+</ul>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token keyword" style=font-style:italic>DELETE</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">api</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">users</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">:id</span><br/></div></code></pre></div></div>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=управление-организациями>Управление организациями<a href=#управление-организациями class=hash-link aria-label="Прямая ссылка на Управление организациями" title="Прямая ссылка на Управление организациями" translate=no>​</a></h5>
+<ul>
+<li class=""><code>GET /api/orgs</code></li>
+<li class=""><code>POST /api/orgs</code></li>
+<li class=""><code>GET /api/org</code></li>
+<li class=""><code>PUT /api/org</code></li>
+<li class=""></li>
+</ul>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token keyword" style=font-style:italic>DELETE</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">api</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">orgs</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">:orgId</span><br/></div></code></pre></div></div>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=источники-данных>Источники данных<a href=#источники-данных class=hash-link aria-label="Прямая ссылка на Источники данных" title="Прямая ссылка на Источники данных" translate=no>​</a></h5>
+<ul>
+<li class=""><code>GET /api/datasources</code></li>
+<li class=""><code>POST /api/datasources</code></li>
+<li class=""><code>GET /api/datasources/name/:name</code></li>
+<li class=""><code>PUT /api/datasources/:id</code></li>
+<li class=""></li>
+</ul>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token keyword" style=font-style:italic>DELETE</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">api</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">datasources</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">:id</span><br/></div></code></pre></div></div>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=дашборды-1>Дашборды<a href=#дашборды-1 class=hash-link aria-label="Прямая ссылка на Дашборды" title="Прямая ссылка на Дашборды" translate=no>​</a></h5>
+<ul>
+<li class=""><code>POST /api/dashboards/db</code> — создать/обновить</li>
+<li class=""><code>GET /api/dashboards/uid/:uid</code></li>
+<li class=""></li>
+</ul>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token keyword" style=font-style:italic>DELETE</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">api</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">dashboards</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">uid</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">:uid</span><br/></div></code></pre></div></div>
+<ul>
+<li class=""><code>GET /api/search?query=...</code> — поиск</li>
+</ul>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=переменные>Переменные<a href=#переменные class=hash-link aria-label="Прямая ссылка на Переменные" title="Прямая ссылка на Переменные" translate=no>​</a></h5>
+<p>Переменные хранятся внутри JSON дашборда, отдельного API нет.</p>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=оповещения-unified-alerting>Оповещения (Unified Alerting)<a href=#оповещения-unified-alerting class=hash-link aria-label="Прямая ссылка на Оповещения (Unified Alerting)" title="Прямая ссылка на Оповещения (Unified Alerting)" translate=no>​</a></h5>
+<ul>
+<li class=""><code>GET /api/v1/provisioning/alert-rules</code></li>
+<li class=""><code>POST /api/v1/provisioning/alert-rules</code></li>
+<li class=""><code>GET /api/v1/provisioning/contact-points</code></li>
+<li class=""><code>POST /api/v1/provisioning/policies</code></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=cli-command-line-interface>CLI (Command Line Interface)<a href=#cli-command-line-interface class=hash-link aria-label="Прямая ссылка на CLI (Command Line Interface)" title="Прямая ссылка на CLI (Command Line Interface)" translate=no>​</a></h3>
+<p>Команда <strong>grafana-cli</strong> позволяет управлять плагинами и выполнять служебные операции.</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">grafana-cli plugins list-remote                              </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># список доступных плагинов</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">grafana-cli plugins </span><span class="token function" style="color:rgb(130, 170, 255)">install</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">plugin-id</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain">                      </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># установить</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">grafana-cli plugins update </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">plugin-id</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain">                       </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># обновить</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">grafana-cli plugins </span><span class="token function" style="color:rgb(130, 170, 255)">ls</span><span class="token plain">                                       </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># установленные</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">grafana-cli admin reset-admin-password </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">new-password</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain">          </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># сброс пароля администратора</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=безопасность>Безопасность<a href=#безопасность class=hash-link aria-label="Прямая ссылка на Безопасность" title="Прямая ссылка на Безопасность" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=рекомендуемые-практики>Рекомендуемые практики<a href=#рекомендуемые-практики class=hash-link aria-label="Прямая ссылка на Рекомендуемые практики" title="Прямая ссылка на Рекомендуемые практики" translate=no>​</a></h4>
+<ul>
+<li class="">Отключить анонимный доступ, если не требуется.</li>
+<li class="">Использовать HTTPS (через reverse proxy или встроенный TLS).</li>
+<li class="">Ограничить права пользователей (минимально необходимые роли).</li>
+<li class="">Регулярно обновлять Grafana и плагины.</li>
+<li class="">Не использовать <code>disable_sanitize_html = true</code> без крайней необходимости.</li>
+<li class="">Хранить секреты (пароли, токены) в секрете (Vault, Kubernetes Secrets), а не в <code>grafana.ini</code>.</li>
+<li class="">Включить двухфакторную аутентификацию (2FA) для администраторов.</li>
+<li class="">Настроить rate limiting на уровне reverse proxy (Nginx, Traefik).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=rbac-role-based-access-control>RBAC (Role-Based Access Control)<a href=#rbac-role-based-access-control class=hash-link aria-label="Прямая ссылка на RBAC (Role-Based Access Control)" title="Прямая ссылка на RBAC (Role-Based Access Control)" translate=no>​</a></h4>
+<p>Доступно в Grafana Enterprise и частично в OSS (начиная с v10).</p>
+<ul>
+<li class="">Роли: fixed (<code>Viewer</code>, <code>Editor</code>, <code>Admin</code>) и custom.</li>
+<li class="">Разрешения: <code>dashboards:read</code>, <code>datasources:write</code>, <code>alerts:create</code> и другие.</li>
+<li class="">Привязка ролей к пользователям, командам или организациям.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=кэширование-и-производительность>Кэширование и производительность<a href=#кэширование-и-производительность class=hash-link aria-label="Прямая ссылка на Кэширование и производительность" title="Прямая ссылка на Кэширование и производительность" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Dashboard caching</strong> — Grafana кэширует результаты запросов в памяти (настраивается через <code>cache</code> в datasource).</li>
+<li class=""><strong>Browser caching</strong> — статические ресурсы (JS, CSS) кэшируются браузером.</li>
+<li class=""><strong>Query caching</strong> — некоторые источники данных (например, MySQL) поддерживают кэширование на стороне Grafana.</li>
+<li class=""><strong>CDN</strong> — можно размещать статику через CDN при self-hosted развёртывании.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=логирование-и-мониторинг>Логирование и мониторинг<a href=#логирование-и-мониторинг class=hash-link aria-label="Прямая ссылка на Логирование и мониторинг" title="Прямая ссылка на Логирование и мониторинг" translate=no>​</a></h3>
+<ul>
+<li class="">Внутренние метрики доступны по <code>/metrics</code> (Prometheus-формат).</li>
+<li class="">Логи содержат информацию о запросах, ошибках, авторизации.</li>
+<li class="">Можно интегрировать с Loki для централизованного сбора логов.</li>
+<li class="">Алерты могут быть настроены на внутренние метрики Grafana (например, высокая задержка запросов).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=темы-оформления-themes>Темы оформления (Themes)<a href=#темы-оформления-themes class=hash-link aria-label="Прямая ссылка на Темы оформления (Themes)" title="Прямая ссылка на Темы оформления (Themes)" translate=no>​</a></h3>
+<p>Grafana поддерживает несколько встроенных тем и позволяет настраивать внешний вид через конфигурацию или плагины.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=встроенные-темы>Встроенные темы<a href=#встроенные-темы class=hash-link aria-label="Прямая ссылка на Встроенные темы" title="Прямая ссылка на Встроенные темы" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Default</strong> — светлая тема.</li>
+<li class=""><strong>Dark</strong> — тёмная тема.</li>
+<li class=""><strong>Light</strong> — альтернативная светлая тема с более нейтральными оттенками.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=настройка-темы>Настройка темы<a href=#настройка-темы class=hash-link aria-label="Прямая ссылка на Настройка темы" title="Прямая ссылка на Настройка темы" translate=no>​</a></h4>
+<ul>
+<li class="">Через UI: <strong>Preferences → Theme</strong></li>
+<li class="">Через <code>grafana.ini</code>:</li>
+</ul>
+<div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  [ui]</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  default_theme = dark</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Через URL-параметр: <code>?theme=dark</code></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=кастомизация-цветов>Кастомизация цветов<a href=#кастомизация-цветов class=hash-link aria-label="Прямая ссылка на Кастомизация цветов" title="Прямая ссылка на Кастомизация цветов" translate=no>​</a></h4>
+<ul>
+<li class="">Цветовые палитры для графиков задаются в настройках панели (Time series → Standard options → Color scheme).</li>
+<li class="">Поддерживаются:<!-- -->
+<ul>
+<li class=""><strong>Continuous</strong> — градиент от одного цвета к другому.</li>
+<li class=""><strong>Discrete</strong> — фиксированные цвета для категорий.</li>
+<li class=""><strong>Thresholds</strong> — цвета по пороговым значениям.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=плагины>Плагины<a href=#плагины class=hash-link aria-label="Прямая ссылка на Плагины" title="Прямая ссылка на Плагины" translate=no>​</a></h3>
+<p>Grafana расширяется за счёт плагинов двух типов:</p>
+<ul>
+<li class=""><strong>Данные source plugins</strong> — подключение новых источников данных.</li>
+<li class=""><strong>Panel plugins</strong> — новые типы визуализаций.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-плагинов>Установка плагинов<a href=#установка-плагинов class=hash-link aria-label="Прямая ссылка на Установка плагинов" title="Прямая ссылка на Установка плагинов" translate=no>​</a></h4>
+<ul>
+<li class="">Через CLI — см. блок <code>grafana-cli</code> выше</li>
+<li class="">Через UI (если включено): <strong>Configuration → Plugins</strong></li>
+<li class="">Через provisioning: YAML-файл в <code>/etc/graf-ana/provisioning/plugins/</code></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=популярные-сторонние-плагины>Популярные сторонние плагины<a href=#популярные-сторонние-плагины class=hash-link aria-label="Прямая ссылка на Популярные сторонние плагины" title="Прямая ссылка на Популярные сторонние плагины" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Worldmap Panel</strong> — отображение метрик на карте мира.</li>
+<li class=""><strong>Diagram Panel</strong> — визуализация диаграмм (например, flowchart).</li>
+<li class=""><strong>Clock Panel</strong> — цифровые часы.</li>
+<li class=""><strong>Status Dot Panel</strong> — индикаторы состояния.</li>
+<li class=""><strong>Multistat Panel</strong> — расширенный статистический виджет.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=разработка-собственных-плагинов>Разработка собственных плагинов<a href=#разработка-собственных-плагинов class=hash-link aria-label="Прямая ссылка на Разработка собственных плагинов" title="Прямая ссылка на Разработка собственных плагинов" translate=no>​</a></h4>
+<ul>
+<li class="">Используется TypeScript + React.</li>
+<li class="">Требуется Node.js и Grafana Toolkit.</li>
+<li class="">Структура:<!-- -->
+<ul>
+<li class=""><code>src/</code> — исходный код</li>
+<li class=""><code>plugin.json</code> — метаданные</li>
+<li class=""><code>module.ts</code> — точка входа</li>
+</ul>
+</li>
+<li class="">Плагин может быть загружен локально или опубликован в Grafana Catalog.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=совместная-работа-и-обмен>Совместная работа и обмен<a href=#совместная-работа-и-обмен class=hash-link aria-label="Прямая ссылка на Совместная работа и обмен" title="Прямая ссылка на Совместная работа и обмен" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=импорт--экспорт-дашбордов>Импорт / экспорт дашбордов<a href=#импорт--экспорт-дашбордов class=hash-link aria-label="Прямая ссылка на Импорт / экспорт дашбордов" title="Прямая ссылка на Импорт / экспорт дашбордов" translate=no>​</a></h4>
+<ul>
+<li class="">Экспорт: <strong>Dashboard → Share → Export</strong>
+<ul>
+<li class="">Формат: JSON</li>
+<li class="">Включает все панели, переменные, аннотации</li>
+</ul>
+</li>
+<li class="">Импорт: <strong>Create → Import</strong>
+<ul>
+<li class="">Поддерживает JSON-файлы и URL из Grafana.com Dashboards</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=grafanacom-dashboards>Grafana.com Dashboards<a href=#grafanacom-dashboards class=hash-link aria-label="Прямая ссылка на Grafana.com Dashboards" title="Прямая ссылка на Grafana.com Dashboards" translate=no>​</a></h4>
+<ul>
+<li class="">Публичный репозиторий готовых дашбордов.</li>
+<li class="">Поиск по источникам данных, меткам, популярности.</li>
+<li class="">Пример: официальные дашборды для Prometheus exporters.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=версионирование>Версионирование<a href=#версионирование class=hash-link aria-label="Прямая ссылка на Версионирование" title="Прямая ссылка на Версионирование" translate=no>​</a></h4>
+<ul>
+<li class="">Каждое изменение сохраняется как новая версия.</li>
+<li class="">Можно просматривать историю и откатываться.</li>
+<li class="">Максимальное количество хранимых версий задаётся в <code>grafana.ini</code>:</li>
+</ul>
+<div class="language-ini codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-ini codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  [dashboards]</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  versions_to_keep = 20</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=комментарии-и-обсуждения>Комментарии и обсуждения<a href=#комментарии-и-обсуждения class=hash-link aria-label="Прямая ссылка на Комментарии и обсуждения" title="Прямая ссылка на Комментарии и обсуждения" translate=no>​</a></h4>
+<ul>
+<li class="">Встроенной системы комментариев нет.</li>
+<li class="">Интеграция с внешними системами (Slack, Teams) через оповещения.</li>
+<li class="">Рекомендуется использовать GitOps: хранить JSON-дашборды в Git и управлять через CI/CD.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаблонизация-и-повторное-использование>Шаблонизация и повторное использование<a href=#шаблонизация-и-повторное-использование class=hash-link aria-label="Прямая ссылка на Шаблонизация и повторное использование" title="Прямая ссылка на Шаблонизация и повторное использование" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаблоны-дашбордов>Шаблоны дашбордов<a href=#шаблоны-дашбордов class=hash-link aria-label="Прямая ссылка на Шаблоны дашбордов" title="Прямая ссылка на Шаблоны дашбордов" translate=no>​</a></h4>
+<ul>
+<li class="">Создание шаблона: сохранить дашборд как базовый.</li>
+<li class="">Использование: клонировать и адаптировать под конкретную задачу.</li>
+<li class="">Переменные позволяют делать один дашборд универсальным для множества сервисов.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=repeat-panels>Repeat panels<a href=#repeat-panels class=hash-link aria-label="Прямая ссылка на Repeat panels" title="Прямая ссылка на Repeat panels" translate=no>​</a></h4>
+<ul>
+<li class="">Панель может автоматически дублироваться по значениям переменной.</li>
+<li class="">Пример: одна панель для CPU usage, но повторяется для каждого сервера (<code>$server</code>).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=folder-permissions>Folder permissions<a href=#folder-permissions class=hash-link aria-label="Прямая ссылка на Folder permissions" title="Прямая ссылка на Folder permissions" translate=no>​</a></h4>
+<ul>
+<li class="">Права доступа можно назначать на уровне папки.</li>
+<li class="">Поддержка RBAC: разрешения на чтение/редактирование для пользователей и команд.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=продвинутые-техники-запросов>Продвинутые техники запросов<a href=#продвинутые-техники-запросов class=hash-link aria-label="Прямая ссылка на Продвинутые техники запросов" title="Прямая ссылка на Продвинутые техники запросов" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=transformations-преобразования>Transformations (преобразования)<a href=#transformations-преобразования class=hash-link aria-label="Прямая ссылка на Transformations (преобразования)" title="Прямая ссылка на Transformations (преобразования)" translate=no>​</a></h4>
+<p>После получения данных можно применить преобразования:</p>
+<ul>
+<li class=""><strong>Reduce</strong> — агрегация (среднее, максимум, последнее значение).</li>
+<li class=""><strong>Organize fields</strong> — переименование, скрытие, изменение порядка колонок.</li>
+<li class=""><strong>Join by field</strong> — объединение нескольких запросов по общему полю.</li>
+<li class=""><strong>Filter Данные by values</strong> — фильтрация строк.</li>
+<li class=""><strong>Calculate field</strong> — создание нового поля на основе формулы.</li>
+<li class=""><strong>Labels to fields</strong> — преобразование меток Prometheus в колонки.</li>
+<li class=""><strong>Series to rows</strong> — развёртывание временных рядов в строки.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=mixed-данные-sources>Mixed Данные sources<a href=#mixed-данные-sources class=hash-link aria-label="Прямая ссылка на Mixed Данные sources" title="Прямая ссылка на Mixed Данные sources" translate=no>​</a></h4>
+<ul>
+<li class="">Одна панель может использовать несколько источников данных.</li>
+<li class="">Полезно для сравнения метрик из Prometheus и логов из Loki.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=query-chaining>Query chaining<a href=#query-chaining class=hash-link aria-label="Прямая ссылка на Query chaining" title="Прямая ссылка на Query chaining" translate=no>​</a></h4>
+<ul>
+<li class="">Результат одного запроса может использоваться как вход для другого.</li>
+<li class="">Пример: получить список хостов из MySQL, затем запросить их метрики в Prometheus.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=экспорт-и-внедрение>Экспорт и внедрение<a href=#экспорт-и-внедрение class=hash-link aria-label="Прямая ссылка на Экспорт и внедрение" title="Прямая ссылка на Экспорт и внедрение" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=embedding>Embedding<a href=#embedding class=hash-link aria-label="Прямая ссылка на Embedding" title="Прямая ссылка на Embedding" translate=no>​</a></h4>
+<ul>
+<li class="">Дашборды можно встраивать в другие веб-приложения через iframe.</li>
+<li class="">Требуется включить CORS и настроить аутентификацию (например, через API-токен в URL).</li>
+<li class="">Параметры в URL:<!-- -->
+<ul>
+<li class=""><code>orgId=1</code></li>
+<li class=""><code>refresh=30s</code></li>
+<li class=""><code>from=now-6h&to=now</code></li>
+<li class=""><code>var-server=web01</code></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=снимки-snapshots>Снимки (Snapshots)<a href=#снимки-snapshots class=hash-link aria-label="Прямая ссылка на Снимки (Snapshots)" title="Прямая ссылка на Снимки (Snapshots)" translate=no>​</a></h4>
+<ul>
+<li class="">Публичная ссылка на текущее состояние дашборда (без привязки к данным в реальном времени).</li>
+<li class="">Полезно для демонстрации или отчётов.</li>
+<li class="">Срок жизни: до 7 дней (по умолчанию), можно продлить.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=генерация-отчётов-enterprise>Генерация отчётов (Enterprise)<a href=#генерация-отчётов-enterprise class=hash-link aria-label="Прямая ссылка на Генерация отчётов (Enterprise)" title="Прямая ссылка на Генерация отчётов (Enterprise)" translate=no>​</a></h4>
+<ul>
+<li class="">В Grafana Enterprise доступна функция <strong>Report generation</strong>.</li>
+<li class="">Автоматическая отправка PDF/CSV по расписанию.</li>
+<li class="">Поддержка параметризованных отчётов (через переменные).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=лучшие-практики>Лучшие практики<a href=#лучшие-практики class=hash-link aria-label="Прямая ссылка на Лучшие практики" title="Прямая ссылка на Лучшие практики" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=проектирование-дашбордов>Проектирование дашбордов<a href=#проектирование-дашбордов class=hash-link aria-label="Прямая ссылка на Проектирование дашбордов" title="Прямая ссылка на Проектирование дашбордов" translate=no>​</a></h4>
+<ul>
+<li class="">Один дашборд — одна цель (например, мониторинг одного микросервиса).</li>
+<li class="">Использовать согласованную цветовую схему.</li>
+<li class="">Минимизировать количество панелей на экране.</li>
+<li class="">Добавлять описания и ссылки на документацию.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=производительность>Производительность<a href=#производительность class=hash-link aria-label="Прямая ссылка на Производительность" title="Прямая ссылка на Производительность" translate=no>​</a></h4>
+<ul>
+<li class="">Избегать запросов с высокой кардинальностью (много уникальных меток в Prometheus).</li>
+<li class="">Использовать <code>min interval</code> для снижения нагрузки.</li>
+<li class="">Кэшировать результаты в источнике данных (например, recording rules в Prometheus).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=безопасность-1>Безопасность<a href=#безопасность-1 class=hash-link aria-label="Прямая ссылка на Безопасность" title="Прямая ссылка на Безопасность" translate=no>​</a></h4>
+<ul>
+<li class="">Не хранить чувствительные данные в переменных или аннотациях.</li>
+<li class="">Использовать Service Accounts вместо пользовательских токенов для автоматизации.</li>
+<li class="">Ограничивать права на уровне datasource (например, только <code>read-only</code>).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=интеграции>Интеграции<a href=#интеграции class=hash-link aria-label="Прямая ссылка на Интеграции" title="Прямая ссылка на Интеграции" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=системы-мониторинга>Системы мониторинга<a href=#системы-мониторинга class=hash-link aria-label="Прямая ссылка на Системы мониторинга" title="Прямая ссылка на Системы мониторинга" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Prometheus</strong> — основной источник для метрик.</li>
+<li class=""><strong>Loki</strong> — для логов.</li>
+<li class=""><strong>Tempo</strong> — для трассировок.</li>
+<li class=""><strong>Mimir / Cortex</strong> — масштабируемые решения на базе Prometheus.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=cicd>CI/CD<a href=#cicd class=hash-link aria-label="Прямая ссылка на CI/CD" title="Прямая ссылка на CI/CD" translate=no>​</a></h4>
+<ul>
+<li class="">Grafana может получать аннотации о деплоях из GitLab CI, GitHub Actions, Jenkins.</li>
+<li class="">Пример: отправка POST-запроса в <code>/api/annotations</code> после успешного релиза.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=alerting>Alerting<a href=#alerting class=hash-link aria-label="Прямая ссылка на Alerting" title="Прямая ссылка на Alerting" translate=no>​</a></h4>
+<ul>
+<li class="">Интеграция с PagerDuty, Opsgenie, Slack, Telegram.</li>
+<li class="">Возможность отправки вебхуков в собственные сервисы.</li>
+<li class="">Поддержка группировки и маршрутизации оповещений.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=отладка-и-диагностика>Отладка и диагностика<a href=#отладка-и-диагностика class=hash-link aria-label="Прямая ссылка на Отладка и диагностика" title="Прямая ссылка на Отладка и диагностика" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=проверка-запросов>Проверка запросов<a href=#проверка-запросов class=hash-link aria-label="Прямая ссылка на Проверка запросов" title="Прямая ссылка на Проверка запросов" translate=no>​</a></h4>
+<ul>
+<li class="">В редакторе запроса есть кнопка <strong>Explain</strong> (для некоторых источников).</li>
+<li class="">Можно просмотреть сырые данные в формате JSON/Table.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=логи-grafana>Логи Grafana<a href=#логи-grafana class=hash-link aria-label="Прямая ссылка на Логи Grafana" title="Прямая ссылка на Логи Grafana" translate=no>​</a></h4>
+<ul>
+<li class="">Уровень <code>debug</code> помогает отследить ошибки provisioning’а.</li>
+<li class="">Логи запросов включаются через <code>[log]</code> секцию.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=health-check>Health check<a href=#health-check class=hash-link aria-label="Прямая ссылка на Health check" title="Прямая ссылка на Health check" translate=no>​</a></h4>
+<ul>
+<li class="">Эндпоинт <code>/api/health</code> возвращает статус сервера.</li>
+<li class="">Поля: <code>status</code>, <code>database</code>, <code>version</code>.</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибки>Ошибки<a href=#ошибки class=hash-link aria-label="Прямая ссылка на Ошибки" title="Прямая ссылка на Ошибки" translate=no>​</a></h2>
+<table><thead><tr><th>Ситуация<th>Что проверить<tbody><tr><td>Команда не найдена<td>PATH, установка пакета, alias<tr><td>Permission denied<td>пользователь, группа, sudo, ACL<tr><td>Неверная версия<td>см. "Совместимость", <code>--version</code></table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=совместимость>Совместимость<a href=#совместимость class=hash-link aria-label="Прямая ссылка на Совместимость" title="Прямая ссылка на Совместимость" translate=no>​</a></h2>
+<table><thead><tr><th>Область<th>Примечание<tbody><tr><td>Версии<td>актуальные LTS/стабильные релизы <strong>Grafana</strong><tr><td>Платформы<td>официальная матрица поддержки вендора<tr><td>Стандарты<td>RFC, ISO, спецификация API — см. таблицы выше</table>
+<hr/>
+<!-- -->
+<div class="callout callout--tip"><div class=callout-title>Основа по протоколу</div><div class=callout-body><p>Базовый разбор HTTP и HTTPS находится в отдельной статье — <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118>HTTP как основа веб-интеграций</a>.</div></div>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=в-подборках>В подборках<a href=#в-подборках class=hash-link aria-label="Прямая ссылка на В подборках" title="Прямая ссылка на В подборках" translate=no>​</a></h2>
+<p>Статья входит в <a class="" href=/about/collections>тематические подборки</a> и блок «С чего начать?» на <a class="" href=/>главной</a>. Соседние шаги того же маршрута:</p>
+<p><strong>Справочники</strong> — <a class="" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115>Справочник по Prometheus</a>, <a class="" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3117>Справочник по Elasticsearch</a>, <a class="" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114>Справочник по Jenkins</a>, <a class="" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3118>Справочник по AWS</a>, <a class="" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3113>Справочник по GitHub Actions</a>, <a class="" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3119>Справочник по Logstash</a>.</p>
+<!-- -->
+<hr/></div><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><!--$?--><template id=B:1></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/reference>reference</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/advanced>advanced</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/notrequired>notrequired</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/engineer>engineer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architector>architector</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/devops>devops</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/cicd>cicd</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-06-02T18:04:47.000Z itemprop=dateModified>2 июн. 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Справочник по Prometheus</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3117><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Справочник по Elasticsearch</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#назначение class="table-of-contents__link toc-highlight">Назначение</a><li><a href=#краткое-пояснение class="table-of-contents__link toc-highlight">Краткое пояснение</a><li><a href=#быстрый-старт class="table-of-contents__link toc-highlight">Быстрый старт</a><li><a href=#справочные-таблицы class="table-of-contents__link toc-highlight">Справочные таблицы</a><ul><li><a href=#содержание-справочника class="table-of-contents__link toc-highlight">Содержание справочника</a><li><a href=#источники-данных-data-sources class="table-of-contents__link toc-highlight">Источники данных (Data Sources)</a><li><a href=#дашборды class="table-of-contents__link toc-highlight">Дашборды</a><li><a href=#панели class="table-of-contents__link toc-highlight">Панели</a><li><a href=#переменные-variables class="table-of-contents__link toc-highlight">Переменные (Variables)</a><li><a href=#запросы-queries class="table-of-contents__link toc-highlight">Запросы (Queries)</a><li><a href=#аннотации class="table-of-contents__link toc-highlight">Аннотации</a><li><a href=#оповещения-alerting class="table-of-contents__link toc-highlight">Оповещения (Alerting)</a><li><a href=#конфигурация-grafana-grafanaini class="table-of-contents__link toc-highlight">Конфигурация Grafana (grafana.ini)</a><li><a href=#provisioning class="table-of-contents__link toc-highlight">Provisioning</a><li><a href=#grafana-http-api class="table-of-contents__link toc-highlight">Grafana HTTP API</a><li><a href=#cli-command-line-interface class="table-of-contents__link toc-highlight">CLI (Command Line Interface)</a><li><a href=#безопасность class="table-of-contents__link toc-highlight">Безопасность</a><li><a href=#кэширование-и-производительность class="table-of-contents__link toc-highlight">Кэширование и производительность</a><li><a href=#логирование-и-мониторинг class="table-of-contents__link toc-highlight">Логирование и мониторинг</a><li><a href=#темы-оформления-themes class="table-of-contents__link toc-highlight">Темы оформления (Themes)</a><li><a href=#плагины class="table-of-contents__link toc-highlight">Плагины</a><li><a href=#совместная-работа-и-обмен class="table-of-contents__link toc-highlight">Совместная работа и обмен</a><li><a href=#шаблонизация-и-повторное-использование class="table-of-contents__link toc-highlight">Шаблонизация и повторное использование</a><li><a href=#продвинутые-техники-запросов class="table-of-contents__link toc-highlight">Продвинутые техники запросов</a><li><a href=#экспорт-и-внедрение class="table-of-contents__link toc-highlight">Экспорт и внедрение</a><li><a href=#лучшие-практики class="table-of-contents__link toc-highlight">Лучшие практики</a><li><a href=#интеграции class="table-of-contents__link toc-highlight">Интеграции</a><li><a href=#отладка-и-диагностика class="table-of-contents__link toc-highlight">Отладка и диагностика</a></ul><li><a href=#ошибки class="table-of-contents__link toc-highlight">Ошибки</a><li><a href=#совместимость class="table-of-contents__link toc-highlight">Совместимость</a><li><a href=#в-подборках class="table-of-contents__link toc-highlight">В подборках</a></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=related_viUV aria-labelledby=article-related-heading><h2 id=article-related-heading class=heading_qNm0>Связанные темы</h2><ul class=list_R4_6><li><a class=link_rsYm href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3115>Справочник по Prometheus</a><li><a class=link_rsYm href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro>Практикум Prometheus и Grafana — о разделе</a><li><a class=link_rsYm href=/lab/Примеры/11114>Prometheus + Grafana — запросы</a><li><a class=link_rsYm href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3117>Справочник по Elasticsearch</a><li><a class=link_rsYm href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3114>Справочник по Jenkins</a><li><a class=link_rsYm href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/3118>Справочник по AWS</a></ul></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script><div hidden id=S:1><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Основы DevOps"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Основы DevOps</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Часто можно запутаться в понятиях вроде прод, тест и тому подобное — основы DevOps простым языком.">Часто можно запутаться в понятиях вроде прод, тест и тому подобное — основы DevOps простым языком.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/11><h2 class="theme-doc-card-heading cardTitle_mcqP" title="CI/CD. Принципы непрерывной интеграции и доставки"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">CI/CD. Принципы непрерывной интеграции и доставки</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Непрерывная интеграция — это практика разработки программного обеспечения, при которой изменения, вносимые разработчиками в общий репозиторий исходного кода, автоматически и регулярно объединяются.">Непрерывная интеграция — это практика разработки программного обеспечения, при которой изменения, вносимые разработчиками в общий репозиторий исходного кода, автоматически и регулярно объединяются.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/111><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Стратегии развертывания"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Стратегии развертывания</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Развёртывание — доставка новой версии на сервер; стратегия — правила, как переключить пользователей со старой версии на новую без простоя и с откатом.">Развёртывание — доставка новой версии на сервер; стратегия — правила, как переключить пользователей со старой версии на новую без простоя и с откатом.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/12><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Использование Git и GitFlow в DevOps-процессах"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Использование Git и GitFlow в DevOps-процессах</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Git — точка входа в CI/CD: коммит, ветка и pull request запускают сборку, тесты и выкат; ниже — Git Flow, хуки и GitOps.">Git — точка входа в CI/CD: коммит, ветка и pull request запускают сборку, тесты и выкат; ниже — Git Flow, хуки и GitOps.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/13><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Особенности настройки и эксплуатации CI/CD-конвейеров"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Особенности настройки и эксплуатации CI/CD-конвейеров</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Approvals и deployment gates в GitHub Actions и Azure Pipelines: разделение зон ответственности между разработкой и эксплуатацией.">Approvals и deployment gates в GitHub Actions и Azure Pipelines: разделение зон ответственности между разработкой и эксплуатацией.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/14><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Жизненный цикл пайплайна CI/CD"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Жизненный цикл пайплайна CI/CD</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Пайплайн — цепочка от планирования и коммита до мониторинга на проде: CI (сборка, тесты), CD (релиз, деплой) и типичные инструменты этапов.">Пайплайн — цепочка от планирования и коммита до мониторинга на проде: CI (сборка, тесты), CD (релиз, деплой) и типичные инструменты этапов.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/15><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Azure Repos и Team Foundation Server (TFS)"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Azure Repos и Team Foundation Server (TFS)</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Azure Repos — Git и TFVC в Azure DevOps: репозитории, pull request, политики веток и связь с CI/CD.">Azure Repos — Git и TFVC в Azure DevOps: репозитории, pull request, политики веток и связь с CI/CD.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/16><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Инструменты автоматизации и оркестрации"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Инструменты автоматизации и оркестрации</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Автоматизация и наблюдаемость - стек ELK для сбора, индексации и анализа логов (Elasticsearch, Logstash, Kibana).">Автоматизация и наблюдаемость - стек ELK для сбора, индексации и анализа логов (Elasticsearch, Logstash, Kibana).</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/17><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Роль DevOps-инженера и отличия от системного администратора"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Роль DevOps-инженера и отличия от системного администратора</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Смешение терминов системный администратор и DevOps-инженер — чем роли отличаются на практике.">Смешение терминов системный администратор и DevOps-инженер — чем роли отличаются на практике.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/18><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Автоматизация сборки, тестирования и развёртывания"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Автоматизация сборки, тестирования и развёртывания</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Автоматизация представляет собой систематическое применение программных и аппаратных средств для выполнения задач без или с минимальным участием человека.">Автоматизация представляет собой систематическое применение программных и аппаратных средств для выполнения задач без или с минимальным участием человека.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/19><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Логирование, мониторинг и наблюдаемость систем"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Логирование, мониторинг и наблюдаемость систем</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Логирование и мониторинг в CI/CD необходимы для автоматизации процессов и обеспечения качества, позволяя отслеживать ход пайплайна и быстро выявлять проблемы.">Логирование и мониторинг в CI/CD необходимы для автоматизации процессов и обеспечения качества, позволяя отслеживать ход пайплайна и быстро выявлять проблемы.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/2><h2 class="theme-doc-card-heading cardTitle_mcqP" title=Terraform><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=DevOps>DV</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Terraform</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Terraform — это программа, которая позволяет описать всю вашу инфраструктуру в текстовых файлах, а потом одной командой создать её в облаке или локально.">Terraform — это программа, которая позволяет описать всю вашу инфраструктуру в текстовых файлах, а потом одной командой создать её в облаке или локально.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro>Ещё <!-- -->38<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RC("B:1","S:1")</script></div></body>

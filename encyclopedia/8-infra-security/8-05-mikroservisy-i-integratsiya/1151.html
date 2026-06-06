@@ -1,0 +1,749 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>REST | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="REST | Вселенная IT"/><meta data-rh=true name=description content="REST — это просто набор правил, как писать HTTP-запросы так, чтобы тебя понимали другие программисты. Это не технология, не протокол, не библиотека. Это как правила этикета для API."/><meta data-rh=true property=og:description content="REST — это просто набор правил, как писать HTTP-запросы так, чтобы тебя понимали другие программисты. Это не технология, не протокол, не библиотека. Это как правила этикета для API."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/infra-security","name":"8. Инфраструктура и безопасность","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/микросервисы-и-интеграция","name":"Микросервисы и интеграция","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151","name":"REST","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Expand sidebar category '2. Система и сеть'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Expand sidebar category '7. Проект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Collapse sidebar category '8. Инфраструктура и безопасность'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/облачные-технологии><span title="Облачные технологии" class=categoryLinkLabel_V03G>Облачные технологии</span></a><button aria-label="Expand sidebar category 'Облачные технологии'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/low-code-no-code><span title="Low-code, No-code" class=categoryLinkLabel_V03G>Low-code, No-code</span></a><button aria-label="Expand sidebar category 'Low-code, No-code'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/забота-о-коде-и-данных><span title="Забота о коде и данных" class=categoryLinkLabel_V03G>Забота о коде и данных</span></a><button aria-label="Expand sidebar category 'Забота о коде и данных'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/devops-ci-cd><span title="DevOps, CI-CD" class=categoryLinkLabel_V03G>DevOps, CI-CD</span></a><button aria-label="Expand sidebar category 'DevOps, CI-CD'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/микросервисы-и-интеграция><span title="Микросервисы и интеграция" class=categoryLinkLabel_V03G>Микросервисы и интеграция</span></a><button aria-label="Collapse sidebar category 'Микросервисы и интеграция'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1><span title="Масштабирование микросервисных систем" class=linkLabel_WmDU>Масштабирование микросервисных систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/101><span title="Первые шаги к микросервисам" class=linkLabel_WmDU>Первые шаги к микросервисам</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/102><span title="Go для микросервисов" class=linkLabel_WmDU>Go для микросервисов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/111><span title="Балансировка нагрузки" class=linkLabel_WmDU>Балансировка нагрузки</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/112><span title="Архитектура микросервисов (MSA) и распределённые системы" class=linkLabel_WmDU>Архитектура микросервисов (MSA) и распределённые системы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1121><span title="Авторизация в интеграционных сценариях" class=linkLabel_WmDU>Авторизация в интеграционных сценариях</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113><span title="Коммуникация и интеграция" class=linkLabel_WmDU>Коммуникация и интеграция</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114><span title="Асинхронная коммуникация" class=linkLabel_WmDU>Асинхронная коммуникация</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115><span title="Синхронная коммуникация" class=linkLabel_WmDU>Синхронная коммуникация</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151><span title=REST class=linkLabel_WmDU>REST</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116><span title="Реактивная коммуникация" class=linkLabel_WmDU>Реактивная коммуникация</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117><span title="Брокеры сообщений" class=linkLabel_WmDU>Брокеры сообщений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118><span title=RabbitMQ class=linkLabel_WmDU>RabbitMQ</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119><span title=Kafka class=linkLabel_WmDU>Kafka</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1191><span title="Java-приложение с Apache Kafka и PostgreSQL" class=linkLabel_WmDU>Java-приложение с Apache Kafka и PostgreSQL</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120><span title="Push, Pull, Webhooks" class=linkLabel_WmDU>Push, Pull, Webhooks</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1201><span title="Справочник по SOAP" class=linkLabel_WmDU>Справочник по SOAP</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1202><span title="Справочник по gRPC" class=linkLabel_WmDU>Справочник по gRPC</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203><span title="Справочник по GraphQL" class=linkLabel_WmDU>Справочник по GraphQL</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1204><span title="Справочник по RabbitMQ" class=linkLabel_WmDU>Справочник по RabbitMQ</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1205><span title="Справочник по Apache Kafka" class=linkLabel_WmDU>Справочник по Apache Kafka</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121><span title="Реализация интеграции" class=linkLabel_WmDU>Реализация интеграции</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122><span title="Проектирование API" class=linkLabel_WmDU>Проектирование API</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/124><span title="PACELC и компромиссы распределённых систем" class=linkLabel_WmDU>PACELC и компромиссы распределённых систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/134><span title="Интеграции — Basic, Bearer и mTLS на практике" class=linkLabel_WmDU>Интеграции — Basic, Bearer и mTLS на практике</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/2><span title="Транспортные механизмы" class=linkLabel_WmDU>Транспортные механизмы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/998><span title="Микросервисы и интеграция — итоги" class=linkLabel_WmDU>Микросервисы и интеграция — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/999><span title="Микросервисы и интеграция — чек-лист" class=linkLabel_WmDU>Микросервисы и интеграция — чек-лист</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro><span title="Микросервисы и интеграция — о разделе" class=linkLabel_WmDU>Микросервисы и интеграция — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/контейнеризация-и-оркестрация><span title="Контейнеризация и оркестрация" class=categoryLinkLabel_V03G>Контейнеризация и оркестрация</span></a><button aria-label="Expand sidebar category 'Контейнеризация и оркестрация'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/информационная-безопасность><span title="Информационная безопасность" class=categoryLinkLabel_V03G>Информационная безопасность</span></a><button aria-label="Expand sidebar category 'Информационная безопасность'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-rest-и-websocket><span title="Практикум REST и WebSocket" class=categoryLinkLabel_V03G>Практикум REST и WebSocket</span></a><button aria-label="Expand sidebar category 'Практикум REST и WebSocket'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/белое-хакерство-и-bug-bounty><span title="Белое хакерство и Bug Bounty" class=categoryLinkLabel_V03G>Белое хакерство и Bug Bounty</span></a><button aria-label="Expand sidebar category 'Белое хакерство и Bug Bounty'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/тестирование-на-проникновение><span title="Тестирование на проникновение" class=categoryLinkLabel_V03G>Тестирование на проникновение</span></a><button aria-label="Expand sidebar category 'Тестирование на проникновение'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-postgresql><span title="Практикум PostgreSQL" class=categoryLinkLabel_V03G>Практикум PostgreSQL</span></a><button aria-label="Expand sidebar category 'Практикум PostgreSQL'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/infra-Безопасность><span title="8. Инфраструктура и безопасность - о разделе" class=linkLabel_WmDU>8. Инфраструктура и безопасность - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/infra-security><span>8. Инфраструктура и безопасность</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/микросервисы-и-интеграция><span>Микросервисы и интеграция</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>REST</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>REST</h1></header>
+<div class=article-tags><span class="tag tag-required">ОБЯЗАТЕЛЬНО</span><span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span></div>
+<span class=complexity-badge>Разработчику</span>
+<span class=complexity-badge>Архитектору</span>
+<span class=complexity-badge>Инженеру</span>
+<blockquote>
+<p><strong>Основы:</strong> <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117>API</a> и <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118>HTTP</a>. <strong>Проектирование:</strong> <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117>API и интеграции</a> (сквозной пример), <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/212>модель Ричардсона</a>, <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117#%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82-%D0%BF%D0%BE-%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0%D0%BC-api>маршрут по главам API</a>.</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=rest-1>REST<a href=#rest-1 class=hash-link aria-label="Прямая ссылка на REST" title="Прямая ссылка на REST" translate=no>​</a></h2>
+<p>На практике в IT постоянно встречается архитектурный стиль <strong>REST</strong>. На собеседовании и в код-ревью важно не назвать REST "протоколом" или "библиотекой" — это <strong>набор соглашений</strong> поверх <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118>HTTP</a> и <a class="" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115>синхронной коммуникации</a>. В <a class="" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/112>микросервисах</a> REST чаще всего — внешний контракт для браузера и мобильных клиентов; внутри кластера дополняют <a class="" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115>gRPC и GraphQL</a> или <a class="" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114>очередями</a>. Сравнение трёх стилей на одном примере — <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/130>REST, GraphQL и gRPC — стили API</a>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-такое-rest>Что такое REST<a href=#что-такое-rest class=hash-link aria-label="Прямая ссылка на Что такое REST" title="Прямая ссылка на Что такое REST" translate=no>​</a></h3>
+<p>REST — это просто набор правил, как писать HTTP-запросы так, чтобы тебя понимали другие программисты. Это не технология, не протокол, не библиотека. Это как правила этикета для API.</p>
+<p>Любой REST-запрос — это обычный HTTP-запрос. Разница только в том, как программист его составил.</p>
+<div class="callout callout--tip"><div class=callout-title>Практический фокус</div><div class=callout-body><p>В рабочем проекте REST обсуждают не как "теорию Филдинга", а как качество контракта: стабильные URL, корректные статусы, идемпотентность, понятные ошибки, кэширование и версионирование.</div></div>
+<p><strong>REST</strong> (Representational State Transfer) — это архитектурный стиль проектирования сетевых приложений, предложенный Роем Филдингом в его докторской диссертации 2000 года. REST не является протоколом, стандартом или спецификацией. Это совокупность принципов и ограничений, которые задают правила взаимодействия между клиентом и сервером через гипермедиа.</p>
+<p>REST опирается на существующие протоколы и технологии, в первую очередь на HTTP. Он использует их семантику максимально эффективно, превращая HTTP из простого транспортного механизма в полноценную платформу для построения масштабируемых, надёжных и легко понимаемых распределённых систем.</p>
+<p>Основная идея REST — представление всего, с чем взаимодействует клиент, в виде <strong>ресурсов</strong>, доступных по уникальным URL. Каждый ресурс имеет своё состояние, которое можно получить, изменить, создать или удалить с помощью стандартных операций.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=принципы-rest>Принципы REST<a href=#принципы-rest class=hash-link aria-label="Прямая ссылка на Принципы REST" title="Прямая ссылка на Принципы REST" translate=no>​</a></h3>
+<p>REST базируется на шести ключевых ограничениях, которые вместе формируют его архитектурный стиль:</p>
+<ol>
+<li class="">
+<p><strong>Единообразие интерфейса (Uniform Interface)</strong><br/>
+<!-- -->Все компоненты системы взаимодействуют через единый и предсказуемый интерфейс. Это достигается за счёт:</p>
+<ul>
+<li class="">Идентификации ресурсов в запросах</li>
+<li class="">Манипуляции ресурсами через представления</li>
+<li class="">Самоописываемых сообщений</li>
+<li class="">Гипермедиа как движущей силы состояния приложения (HATEOAS)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Отсутствие состояния (Statelessness)</strong><br/>
+<!-- -->Каждый запрос от клиента к серверу должен содержать всю необходимую информацию для его обработки. Сервер не хранит контекст предыдущих запросов. Это упрощает масштабирование, повышает надёжность и упрощает кэширование.</p>
+</li>
+<li class="">
+<p><strong>Кэшируемость (Cacheability)</strong><br/>
+<!-- -->Ответы сервера должны явно указывать, могут ли они быть закэшированы. Это позволяет клиентам и промежуточным узлам (например, CDN) эффективно использовать кэш, снижая нагрузку на сервер и ускоряя взаимодействие.</p>
+</li>
+<li class="">
+<p><strong>Клиент-серверная архитектура</strong><br/>
+<!-- -->Разделение ответственности между клиентом (представление данных, пользовательский интерфейс) и сервером (хранение данных, бизнес-логика). Это обеспечивает независимость их разработки и эволюции.</p>
+</li>
+<li class="">
+<p><strong>Слоистая система (Layered System)</strong><br/>
+<!-- -->Клиент не знает, взаимодействует ли он напрямую с сервером или через промежуточные слои (прокси, балансировщики, шлюзы). Это упрощает безопасность, масштабируемость и управление.</p>
+</li>
+<li class="">
+<p><strong>Код по требованию (Code on Demand, опционально)</strong><br/>
+<!-- -->Сервер может передавать исполняемый код (например, JavaScript), который клиент выполняет. Это единственный необязательный принцип REST.</p>
+</li>
+</ol>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=схема-работы-rest>Схема работы REST<a href=#схема-работы-rest class=hash-link aria-label="Прямая ссылка на Схема работы REST" title="Прямая ссылка на Схема работы REST" translate=no>​</a></h3>
+<p>Взаимодействие в REST-системе происходит по следующему циклу:</p>
+<ol>
+<li class="">Клиент отправляет HTTP-запрос к ресурсу по уникальному URL.</li>
+<li class="">Запрос содержит метод (GET, POST и т.д.), заголовки и, при необходимости, тело.</li>
+<li class="">Сервер обрабатывает запрос, применяя соответствующую логику.</li>
+<li class="">Сервер возвращает HTTP-ответ с кодом статуса, заголовками и, при необходимости, телом.</li>
+<li class="">Клиент интерпретирует ответ и, при необходимости, следует гиперссылкам из тела ответа (HATEOAS).</li>
+</ol>
+<p>Этот цикл полностью stateless: каждый запрос независим, и сервер не хранит сессию клиента.</p>
+<div class="it-demo it-demo--loading">Загрузка интерактивного демо…</div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=инструменты-для-работы-с-rest>Инструменты для работы с REST<a href=#инструменты-для-работы-с-rest class=hash-link aria-label="Прямая ссылка на Инструменты для работы с REST" title="Прямая ссылка на Инструменты для работы с REST" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=postman>Postman<a href=#postman class=hash-link aria-label="Прямая ссылка на Postman" title="Прямая ссылка на Postman" translate=no>​</a></h4>
+<p>Postman — графический инструмент для тестирования и документирования REST API. Он позволяет:</p>
+<ul>
+<li class="">Отправлять запросы с различными методами, заголовками и телом</li>
+<li class="">Сохранять коллекции запросов</li>
+<li class="">Автоматизировать тесты</li>
+<li class="">Генерировать документацию</li>
+<li class="">Имитировать серверные ответы (Mock Server)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=swagger-openapi>Swagger (OpenAPI)<a href=#swagger-openapi class=hash-link aria-label="Прямая ссылка на Swagger (OpenAPI)" title="Прямая ссылка на Swagger (OpenAPI)" translate=no>​</a></h4>
+<p>Swagger — спецификация для описания REST API в формате OpenAPI. Она позволяет:</p>
+<ul>
+<li class="">Описывать структуру API в YAML или JSON</li>
+<li class="">Генерировать интерактивную документацию</li>
+<li class="">Создавать клиентские SDK автоматически</li>
+<li class="">Валидировать запросы и ответы</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=curl>curl<a href=#curl class=hash-link aria-label="Прямая ссылка на curl" title="Прямая ссылка на curl" translate=no>​</a></h4>
+<p>curl — командная утилита для отправки HTTP-запросов из терминала. Примеры:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Получить список пользователей</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-X</span><span class="token plain"> GET https://api.example.com/users</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Создать нового пользователя</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-X</span><span class="token plain"> POST https://api.example.com/users </span><span class="token punctuation" style="color:rgb(199, 146, 234)">\</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-H</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Content-Type: application/json"</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">\</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-d</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">'{"name": "Ivan", "email": "ivan@example.com"}'</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Обновить пользователя</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-X</span><span class="token plain"> PUT https://api.example.com/users/123 </span><span class="token punctuation" style="color:rgb(199, 146, 234)">\</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-H</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Content-Type: application/json"</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">\</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-d</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">'{"name": "Ivan Petrov"}'</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class=""><code>curl</code> отправляет HTTP-запрос из терминала: удобно проверить REST-эндпоинт без Postman или Swagger UI. Полная шпаргалка по флагам, auth и health-check — <a class="" href=/encyclopedia/2-system-network/2-05-terminal/1133>утилита curl</a>, <a class="" href=/lab/Примеры/1133>curl / fetch — примеры</a>.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=rest-ресурс>REST-ресурс<a href=#rest-ресурс class=hash-link aria-label="Прямая ссылка на REST-ресурс" title="Прямая ссылка на REST-ресурс" translate=no>​</a></h3>
+<p><strong>REST-ресурс</strong> — это любая информация, которая может быть названа и доступна через URI. Ресурс представляет собой абстракцию реального объекта: пользователя, заказа, статьи, файла и т.д.</p>
+<p>Каждый ресурс обладает тремя ключевыми свойствами:</p>
+<ul>
+<li class=""><strong>Идентифицируемость</strong> — ресурс имеет уникальный URI, по которому его можно найти. Например: <code>/users/123</code>, <code>/orders/456/items/789</code>.</li>
+<li class=""><strong>Модифицируемость</strong> — состояние ресурса можно изменить с помощью стандартных операций (POST, PUT, PATCH, DELETE).</li>
+<li class=""><strong>Чётко определённое состояние</strong> — в любой момент времени ресурс находится в конкретном состоянии, которое можно получить через GET-запрос.</li>
+</ul>
+<p>Ресурс не обязательно соответствует одной записи в базе данных. Это может быть агрегат, представление или даже вычисляемое значение.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=statelessness>Statelessness<a href=#statelessness class=hash-link aria-label="Прямая ссылка на Statelessness" title="Прямая ссылка на Statelessness" translate=no>​</a></h3>
+<p><strong>Statelessness</strong> означает, что сервер не сохраняет состояние взаимодействия с клиентом между запросами. Каждый запрос должен содержать всю необходимую информацию:</p>
+<ul>
+<li class="">Аутентификационные данные (токен, API-ключ)</li>
+<li class="">Параметры фильтрации, пагинации</li>
+<li class="">Данные для создания или обновления ресурса</li>
+</ul>
+<p>Преимущества statelessness:</p>
+<ul>
+<li class=""><strong>Масштабируемость</strong> — любой сервер в кластере может обработать любой запрос</li>
+<li class=""><strong>Надёжность</strong> — сбой одного сервера не влияет на другие</li>
+<li class=""><strong>Простота</strong> — нет необходимости управлять сессиями</li>
+<li class=""><strong>Кэшируемость</strong> — ответы можно кэшировать без учёта контекста</li>
+</ul>
+<p>Если приложению требуется состояние (например, корзина покупок), оно должно храниться на клиенте (в cookies, localStorage) или в базе данных с привязкой к пользователю.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=доступные-операции-с-веб-сервисами>Доступные операции с веб-сервисами<a href=#доступные-операции-с-веб-сервисами class=hash-link aria-label="Прямая ссылка на Доступные операции с веб-сервисами" title="Прямая ссылка на Доступные операции с веб-сервисами" translate=no>​</a></h3>
+<p>REST использует стандартные HTTP-методы для выполнения CRUD-операций (Create, Read, Update, Delete):</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=получение-данных-read>Получение данных (Read)<a href=#получение-данных-read class=hash-link aria-label="Прямая ссылка на Получение данных (Read)" title="Прямая ссылка на Получение данных (Read)" translate=no>​</a></h4>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users/123</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+</li>
+<li class="">
+<p>Получает представление ресурса или коллекции</p>
+</li>
+<li class="">
+<p>Не изменяет состояние сервера</p>
+</li>
+<li class="">
+<p>Безопасный и идемпотентный</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=создание-новых-ресурсов-create>Создание новых ресурсов (Create)<a href=#создание-новых-ресурсов-create class=hash-link aria-label="Прямая ссылка на Создание новых ресурсов (Create)" title="Прямая ссылка на Создание новых ресурсов (Create)" translate=no>​</a></h4>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">POST /users</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+</li>
+<li class="">
+<p>Создаёт новый ресурс в коллекции</p>
+</li>
+<li class="">
+<p>Возвращает <code>201 Created</code> с заголовком <code>Location</code>, указывающим на URI нового ресурса</p>
+</li>
+<li class="">
+<p>Не идемпотентный: повторный вызов создаёт ещё один ресурс</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=обновление-ресурсов-update>Обновление ресурсов (Update)<a href=#обновление-ресурсов-update class=hash-link aria-label="Прямая ссылка на Обновление ресурсов (Update)" title="Прямая ссылка на Обновление ресурсов (Update)" translate=no>​</a></h4>
+<p>Полное обновление:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">PUT /users/123</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+</li>
+<li class="">
+<p>Заменяет всё состояние ресурса</p>
+</li>
+<li class="">
+<p>Идемпотентный: повторный вызов даёт тот же результат</p>
+</li>
+</ul>
+<p>Частичное обновление:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">PATCH /users/123</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+</li>
+<li class="">
+<p>Изменяет только указанные поля</p>
+</li>
+<li class="">
+<p>Может быть неидемпотентным, если операция относительна (например, увеличение счётчика)</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=удаление-ресурсов-delete>Удаление ресурсов (Delete)<a href=#удаление-ресурсов-delete class=hash-link aria-label="Прямая ссылка на Удаление ресурсов (Delete)" title="Прямая ссылка на Удаление ресурсов (Delete)" translate=no>​</a></h4>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">DELETE /users/123</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+</li>
+<li class="">
+<p>Удаляет ресурс</p>
+</li>
+<li class="">
+<p>Идемпотентный: повторное удаление не вызывает ошибку</p>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=http-методы>HTTP-методы<a href=#http-методы class=hash-link aria-label="Прямая ссылка на HTTP-методы" title="Прямая ссылка на HTTP-методы" translate=no>​</a></h3>
+<table><thead><tr><th>Метод<th>Идемпотентность<th>Безопасность<th>Назначение<tbody><tr><td><code>GET</code><td>Да<td>Да<td>Получение представления ресурса<tr><td><code>POST</code><td>Нет<td>Нет<td>Создание ресурса или выполнение действия<tr><td><code>PUT</code><td>Да<td>Нет<td>Полное обновление ресурса<tr><td><code>PATCH</code><td>Зависит<td>Нет<td>Частичное обновление ресурса<tr><td><code>DELETE</code><td>Да<td>Нет<td>Удаление ресурса<tr><td><code>HEAD</code><td>Да<td>Да<td>Получение метаданных без тела<tr><td><code>OPTIONS</code><td>Да<td>Да<td>Получение поддерживаемых методов</table>
+<p><strong>Идемпотентность</strong> — свойство операции, при котором повторный вызов не изменяет результат после первого успешного выполнения.</p>
+<p><strong>Безопасность</strong> — свойство метода, при котором он не изменяет состояние сервера.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-определить-сервис-метод-и-http-метод-по-url>Как определить сервис, метод и HTTP-метод по URL<a href=#как-определить-сервис-метод-и-http-метод-по-url class=hash-link aria-label="Прямая ссылка на Как определить сервис, метод и HTTP-метод по URL" title="Прямая ссылка на Как определить сервис, метод и HTTP-метод по URL" translate=no>​</a></h3>
+<p>В правильно спроектированном REST API URL указывает только на <strong>ресурс</strong>, а не на действие. Метод действия определяется HTTP-глаголом.</p>
+<p>Примеры:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users/123</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">POST /orders</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">PUT /users/123</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+</li>
+<li class="">
+<p>❌ <code>/getUser?id=123</code> — глагол в URL, метод неочевиден</p>
+</li>
+<li class="">
+<p>✅ <code>GET /users/123</code> — ресурс <code>/users/123</code>, метод <code>GET</code></p>
+</li>
+<li class="">
+<p>❌ <code>/createOrder</code> — глагол в URL</p>
+</li>
+<li class="">
+<p>✅ <code>POST /orders</code> — ресурс <code>/orders</code>, метод <code>POST</code></p>
+</li>
+<li class="">
+<p>❌ <code>/updateUser?id=123</code> — глагол в URL</p>
+</li>
+<li class="">
+<p>✅ <code>PUT /users/123</code> — ресурс <code>/users/123</code>, метод <code>PUT</code></p>
+</li>
+</ul>
+<p>Правильный REST API читается как предложение: "Выполни [метод] над [ресурсом]".</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=семантика-http>Семантика HTTP<a href=#семантика-http class=hash-link aria-label="Прямая ссылка на Семантика HTTP" title="Прямая ссылка на Семантика HTTP" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=статус-коды>Статус-коды<a href=#статус-коды class=hash-link aria-label="Прямая ссылка на Статус-коды" title="Прямая ссылка на Статус-коды" translate=no>​</a></h4>
+<p>Статус-коды — неотъемлемая часть контракта API:</p>
+<ul>
+<li class="">
+<p><code>2xx</code> — успех</p>
+<ul>
+<li class=""><code>200 OK</code> — успешный запрос</li>
+<li class=""><code>201 Created</code> — ресурс создан</li>
+<li class=""><code>204 No Content</code> — успешный запрос без тела ответа</li>
+</ul>
+</li>
+<li class="">
+<p><code>4xx</code> — ошибка клиента</p>
+<ul>
+<li class=""><code>400 Bad Request</code> — невалидные данные</li>
+<li class=""><code>401 Unauthorized</code> — отсутствует аутентификация</li>
+<li class=""><code>403 Forbidden</code> — нет прав доступа</li>
+<li class=""><code>404 Not Found</code> — ресурс не найден</li>
+<li class=""><code>409 Conflict</code> — конфликт при создании/обновлении</li>
+<li class=""><code>422 Unprocessable Entity</code> — семантическая ошибка данных</li>
+</ul>
+</li>
+<li class="">
+<p><code>5xx</code> — ошибка сервера</p>
+<ul>
+<li class=""><code>500 Internal Server Error</code> — необработанное исключение</li>
+<li class=""><code>503 Service Unavailable</code> — сервис временно недоступен</li>
+</ul>
+</li>
+</ul>
+<p>Никогда не возвращайте <code>200</code> при ошибке — это нарушает контракт.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=runbook--если-api-вроде-работает-но-клиент-падает>Runbook — если API "вроде работает", но клиент падает<a href=#runbook--если-api-вроде-работает-но-клиент-падает class=hash-link aria-label='Прямая ссылка на Runbook — если API "вроде работает", но клиент падает' title='Прямая ссылка на Runbook — если API "вроде работает", но клиент падает' translate=no>​</a></h3>
+<ol>
+<li class="">Проверьте фактический HTTP-статус и тело ошибки (<code>4xx/5xx</code>) в Postman/curl.</li>
+<li class="">Сверьте <code>Content-Type</code>, схему JSON и обязательные поля контракта.</li>
+<li class="">Убедитесь, что для create используется <code>201 Created</code> и <code>Location</code>, а не "всегда <code>200</code>".</li>
+<li class="">Для повторяемых операций проверьте идемпотентность (<code>PUT</code>/<code>DELETE</code> и idempotency key для чувствительных <code>POST</code>).</li>
+<li class="">Сравните ответ с OpenAPI-описанием и обновите документацию, если контракт эволюционировал.</li>
+</ol>
+<p>Такой быстрый чек экономит часы отладки "на клиенте", когда проблема на самом деле в нарушенной семантике API.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=заголовки-кэширования>Заголовки кэширования<a href=#заголовки-кэширования class=hash-link aria-label="Прямая ссылка на Заголовки кэширования" title="Прямая ссылка на Заголовки кэширования" translate=no>​</a></h4>
+<ul>
+<li class=""><code>Cache-Control</code> — директивы кэширования (<code>max-age</code>, <code>no-cache</code>, <code>public</code>, <code>private</code>)</li>
+<li class=""><code>ETag</code> — идентификатор версии ресурса для условных запросов</li>
+<li class=""><code>Last-Modified</code> — дата последнего изменения</li>
+</ul>
+<p>Пример условного запроса:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users/123</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">If-None-Match: "abc123"</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Если ресурс не изменился, сервер вернёт <code>304 Not Modified</code>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=идемпотентность>Идемпотентность<a href=#идемпотентность class=hash-link aria-label="Прямая ссылка на Идемпотентность" title="Прямая ссылка на Идемпотентность" translate=no>​</a></h4>
+<p>Как уже упоминалось, идемпотентность критична для надёжности:</p>
+<ul>
+<li class=""><code>GET</code>, <code>PUT</code>, <code>DELETE</code> — идемпотентны</li>
+<li class=""><code>POST</code> — не идемпотентен</li>
+<li class=""><code>PATCH</code> — может быть идемпотентным, если операции абсолютны</li>
+</ul>
+<p>Идемпотентные операции можно безопасно повторять при сетевых ошибках.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=url--правила-формирования-и-составляющие>URL — правила формирования и составляющие<a href=#url--правила-формирования-и-составляющие class=hash-link aria-label="Прямая ссылка на URL — правила формирования и составляющие" title="Прямая ссылка на URL — правила формирования и составляющие" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=общие-правила>Общие правила<a href=#общие-правила class=hash-link aria-label="Прямая ссылка на Общие правила" title="Прямая ссылка на Общие правила" translate=no>​</a></h4>
+<ul>
+<li class="">Используйте <strong>существительные</strong>, а не глаголы</li>
+<li class="">Используйте <strong>множественное число</strong> для коллекций: <code>/users</code>, <code>/orders</code></li>
+<li class="">Стройте <strong>иерархию ресурсов</strong>: <code>/users/123/orders/456</code></li>
+<li class="">Используйте <strong>строчные буквы</strong></li>
+<li class="">Разделяйте слова <strong>дефисами</strong> (<code>kebab-case</code>) или <strong>без разделителей</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=составляющие-url>Составляющие URL<a href=#составляющие-url class=hash-link aria-label="Прямая ссылка на Составляющие URL" title="Прямая ссылка на Составляющие URL" translate=no>​</a></h4>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">https://api.example.com/v1/users/123/orders?status=completed&page=1</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">│      │               │    │     │        │                  │</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">│      │               │    │     │        │                  └── Query parameters</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">│      │               │    │     │        └── Resource ID</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">│      │               │    │     └── Sub-resource</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">│      │               │    └── Collection</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">│      │               └── Version</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">│      └── Host</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">└── Protocol</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Query-параметры фильтруют коллекцию на сервере; каждый ключ должен быть явно разрешён, чтобы избежать произвольных SQL/NoSQL-фильтров.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаблоны-url>Шаблоны URL<a href=#шаблоны-url class=hash-link aria-label="Прямая ссылка на Шаблоны URL" title="Прямая ссылка на Шаблоны URL" translate=no>​</a></h4>
+<table><thead><tr><th>Операция<th>URL<th>Метод<tbody><tr><td>Список<td><code>/users</code><td><code>GET</code><tr><td>Создание<td><code>/users</code><td><code>POST</code><tr><td>Получение<td><code>/users/123</code><td><code>GET</code><tr><td>Обновление<td><code>/users/123</code><td><code>PUT/PATCH</code><tr><td>Удаление<td><code>/users/123</code><td><code>DELETE</code><tr><td>Подресурс<td><code>/users/123/orders</code><td><code>GET/POST</code></table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=пагинация>Пагинация<a href=#пагинация class=hash-link aria-label="Прямая ссылка на Пагинация" title="Прямая ссылка на Пагинация" translate=no>​</a></h3>
+<p>Пагинация обязательна для коллекций, которые могут содержать много элементов.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=offset-based-классическая>Offset-based (классическая)<a href=#offset-based-классическая class=hash-link aria-label="Прямая ссылка на Offset-based (классическая)" title="Прямая ссылка на Offset-based (классическая)" translate=no>​</a></h4>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /orders?page=2&size=20</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Ответ:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"Данные"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">...</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"pagination"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"page"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">2</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"size"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">20</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"total"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">150</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"pages"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">8</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">JSON показывает формат тела запроса или сообщения в очереди: имена полей должны совпадать с контрактом API или схемой consumer.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=cursor-based-для-больших-данных>Cursor-based (для больших данных)<a href=#cursor-based-для-больших-данных class=hash-link aria-label="Прямая ссылка на Cursor-based (для больших данных)" title="Прямая ссылка на Cursor-based (для больших данных)" translate=no>​</a></h4>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /orders?cursor=abc123&limit=20</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Ответ:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"Данные"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain">...</span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"next_cursor"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"def456"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">JSON показывает формат тела запроса или сообщения в очереди: имена полей должны совпадать с контрактом API или схемой consumer.</li>
+</ul>
+<p>Cursor-based устойчива к изменениям в данных во время перелистывания.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=рекомендации>Рекомендации<a href=#рекомендации class=hash-link aria-label="Прямая ссылка на Рекомендации" title="Прямая ссылка на Рекомендации" translate=no>​</a></h4>
+<ul>
+<li class="">Устанавливайте <code>max_size</code> (например, 100)</li>
+<li class="">Возвращайте <code>400</code> при невалидных параметрах</li>
+<li class="">Документируйте тип пагинации</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=hateoas>HATEOAS<a href=#hateoas class=hash-link aria-label="Прямая ссылка на HATEOAS" title="Прямая ссылка на HATEOAS" translate=no>​</a></h3>
+<p><strong>HATEOAS</strong> (Hypermedia as the Engine of Application State) — принцип, согласно которому клиент переходит от одного состояния к другому, следуя гиперссылкам в ответах сервера.</p>
+<p>Пример:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">123</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"name"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Ivan"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"_links"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"self"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"orders"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123/orders"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"update"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"delete"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">JSON показывает формат тела запроса или сообщения в очереди: имена полей должны совпадать с контрактом API или схемой consumer.</li>
+</ul>
+<p>Преимущества HATEOAS:</p>
+<ul>
+<li class="">Клиент не зависит от жёстко закодированных URL</li>
+<li class="">API становится самодокументируемым</li>
+<li class="">Упрощается эволюция API</li>
+</ul>
+<p>Недостатки:</p>
+<ul>
+<li class="">Увеличивает объём ответов</li>
+<li class="">Сложнее реализовать на клиенте</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=resource-oriented-проектирование>Resource-Oriented Проектирование<a href=#resource-oriented-проектирование class=hash-link aria-label="Прямая ссылка на Resource-Oriented Проектирование" title="Прямая ссылка на Resource-Oriented Проектирование" translate=no>​</a></h3>
+<p><strong>Resource-Oriented Проектирование (ROD)</strong> — подход к проектированию API, при котором всё строится вокруг ресурсов:</p>
+<ol>
+<li class="">Определите основные сущности домена</li>
+<li class="">Спроектируйте иерархию ресурсов</li>
+<li class="">Назначьте URI каждой сущности</li>
+<li class="">Определите допустимые операции для каждого ресурса</li>
+<li class="">Спроектируйте представления ресурсов</li>
+</ol>
+<p>Пример иерархии для интернет-магазина:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">/users</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">/users/{userId}</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">/users/{userId}/orders</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">/users/{userId}/orders/{orderId}</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">/users/{userId}/orders/{orderId}/items</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">/products</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">/products/{productId}</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Фрагмент иллюстрирует контракт, конфигурацию или протокол обмена — сверяйте каждую строку с текстом раздела выше.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=версионирование>Версионирование<a href=#версионирование class=hash-link aria-label="Прямая ссылка на Версионирование" title="Прямая ссылка на Версионирование" translate=no>​</a></h3>
+<p>Версионирование необходимо с самого начала разработки API.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=способы-версионирования>Способы версионирования<a href=#способы-версионирования class=hash-link aria-label="Прямая ссылка на Способы версионирования" title="Прямая ссылка на Способы версионирования" translate=no>​</a></h4>
+<ol>
+<li class=""><strong>В URL (рекомендуется)</strong></li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   GET /api/v1/users</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<ol start=2>
+<li class=""><strong>В заголовке</strong></li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   GET /api/users</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   Accept: application/vnd.myapi.v1+json</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<ol start=3>
+<li class=""><strong>В параметре запроса (не рекомендуется)</strong></li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   GET /api/users?version=1</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=рекомендации-1>Рекомендации<a href=#рекомендации-1 class=hash-link aria-label="Прямая ссылка на Рекомендации" title="Прямая ссылка на Рекомендации" translate=no>​</a></h4>
+<ul>
+<li class="">Используйте major-версии: <code>v1</code>, <code>v2</code></li>
+<li class="">Поддерживайте старые версии минимум 6–12 месяцев</li>
+<li class="">Документируйте Планы развития deprecation</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=фильтрация-сортировка-поиск>Фильтрация, сортировка, поиск<a href=#фильтрация-сортировка-поиск class=hash-link aria-label="Прямая ссылка на Фильтрация, сортировка, поиск" title="Прямая ссылка на Фильтрация, сортировка, поиск" translate=no>​</a></h3>
+<p>Используйте query-параметры для управления представлением коллекций:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users?role=admin&status=active&sort=name&order=desc&q=ivan</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+</li>
+<li class="">
+<p><code>sort</code> — поле для сортировки</p>
+</li>
+<li class="">
+<p><code>order</code> — направление (<code>asc</code> / <code>desc</code>)</p>
+</li>
+<li class="">
+<p><code>q</code> — глобальный поиск</p>
+</li>
+<li class="">
+<p>остальные — фильтры по полям</p>
+</li>
+</ul>
+<p>Для сложных фильтров можно использовать специальные синтаксисы:</p>
+<ul>
+<li class="">OData: <code>$filter=age gt 18 and status eq 'active'</code></li>
+<li class="">RSQL: <code>age>18;status==active</code></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=вложенные-ресурсы>Вложенные ресурсы<a href=#вложенные-ресурсы class=hash-link aria-label="Прямая ссылка на Вложенные ресурсы" title="Прямая ссылка на Вложенные ресурсы" translate=no>​</a></h3>
+<p>Для отношений "один ко многим" используйте вложенность:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users/123/orders</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">POST /users/123/orders</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Не дублируйте функциональность:</p>
+<ul>
+<li class=""><code>/orders</code> — все заказы</li>
+<li class=""><code>/users/123/orders</code> — заказы конкретного пользователя</li>
+</ul>
+<p>Избегайте чрезмерной вложенности (более 3 уровней). Для глубоких связей используйте фильтрацию:</p>
+<ul>
+<li class="">❌ <code>/companies/1/departments/2/employees/3/Задачи/4</code></li>
+<li class="">✅ <code>/Задачи?employee_id=3</code></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=частичное-представление>Частичное представление<a href=#частичное-представление class=hash-link aria-label="Прямая ссылка на Частичное представление" title="Прямая ссылка на Частичное представление" translate=no>​</a></h3>
+<p>Позволяет клиенту запрашивать только нужные поля, снижая объём передаваемых данных:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users?fields=id,name,email</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Ответ:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token property">"id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">123</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token property">"name"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Ivan"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token property">"email"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"ivan@example.com"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">JSON показывает формат тела запроса или сообщения в очереди: имена полей должны совпадать с контрактом API или схемой consumer.</li>
+</ul>
+<p>Это особенно полезно для мобильных клиентов и медленных соединений.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=частичное-представление-field-selection>Частичное представление (Field Selection)<a href=#частичное-представление-field-selection class=hash-link aria-label="Прямая ссылка на Частичное представление (Field Selection)" title="Прямая ссылка на Частичное представление (Field Selection)" translate=no>​</a></h3>
+<p><strong>Частичное представление</strong> — это возможность клиента указать, какие именно поля ресурса он хочет получить в ответе. Это снижает объём передаваемых данных, ускоряет обработку и уменьшает нагрузку на сеть.</p>
+<p>Пример запроса:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users?fields=id,name,email</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Ответ:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token punctuation" style="color:rgb(199, 146, 234)">[</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">123</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"name"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Ivan"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"email"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"ivan@example.com"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">]</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">JSON показывает формат тела запроса или сообщения в очереди: имена полей должны совпадать с контрактом API или схемой consumer.</li>
+</ul>
+<p>Преимущества:</p>
+<ul>
+<li class="">Экономия трафика для мобильных клиентов</li>
+<li class="">Снижение нагрузки на сервер при сериализации</li>
+<li class="">Упрощение логики клиента — получает только нужное</li>
+</ul>
+<p>Реализация может быть как простой (разбор строки <code>fields</code>), так и сложной (вложенная выборка: <code>fields=name,orders(id,status)</code>).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=версионирование-api>Версионирование API<a href=#версионирование-api class=hash-link aria-label="Прямая ссылка на Версионирование API" title="Прямая ссылка на Версионирование API" translate=no>​</a></h3>
+<p><strong>Версионирование</strong> — механизм управления изменениями в API, позволяющий поддерживать обратную совместимость и избегать поломки клиентов при обновлениях.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=подходы-к-версионированию>Подходы к версионированию<a href=#подходы-к-версионированию class=hash-link aria-label="Прямая ссылка на Подходы к версионированию" title="Прямая ссылка на Подходы к версионированию" translate=no>​</a></h4>
+<ol>
+<li class=""><strong>В URL (наиболее распространённый)</strong></li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   GET /api/v1/users</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+<p>Преимущества: простота, видимость, поддержка прокси и CDN.<br/>
+<!-- -->Недостатки: нарушает принцип "ресурс один — URI один".</p>
+</li>
+</ul>
+<ol start=2>
+<li class=""><strong>В заголовке <code>Accept</code></strong></li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   GET /api/users</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   Accept: application/vnd.myapi.v1+json</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+<p>Преимущества: чистый URI, соответствует REST.<br/>
+<!-- -->Недостатки: сложность отладки, неудобство в браузере.</p>
+</li>
+</ul>
+<ol start=3>
+<li class=""><strong>В параметре запроса (не рекомендуется)</strong></li>
+</ol>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   GET /api/users?version=1</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">
+<p>Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</p>
+</li>
+<li class="">
+<p>После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</p>
+<p>Недостатки: нарушает кэшируемость, усложняет маршрутизацию.</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=рекомендации-2>Рекомендации<a href=#рекомендации-2 class=hash-link aria-label="Прямая ссылка на Рекомендации" title="Прямая ссылка на Рекомендации" translate=no>​</a></h4>
+<ul>
+<li class="">Используйте <strong>major-версии</strong>: <code>v1</code>, <code>v2</code></li>
+<li class="">Не версионируйте мелкие изменения (добавление необязательных полей)</li>
+<li class="">Поддерживайте старые версии минимум 6–12 месяцев</li>
+<li class="">Документируйте Планы развития deprecation</li>
+<li class="">Возвращайте заголовок <code>Deprecation: true</code> для устаревших версий</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=фильтрация-сортировка-поиск-1>Фильтрация, сортировка, поиск<a href=#фильтрация-сортировка-поиск-1 class=hash-link aria-label="Прямая ссылка на Фильтрация, сортировка, поиск" title="Прямая ссылка на Фильтрация, сортировка, поиск" translate=no>​</a></h3>
+<p>Эти механизмы позволяют клиенту управлять представлением коллекций без создания отдельных эндпоинтов.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=фильтрация>Фильтрация<a href=#фильтрация class=hash-link aria-label="Прямая ссылка на Фильтрация" title="Прямая ссылка на Фильтрация" translate=no>​</a></h4>
+<p>Передаётся через query-параметры:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users?role=admin&status=active</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Для сложных фильтров можно использовать специализированные синтаксисы:</p>
+<ul>
+<li class=""><strong>OData</strong>: <code>$filter=age gt 18 and status eq 'active'</code></li>
+<li class=""><strong>RSQL</strong>: <code>age>18;status==active</code></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=сортировка>Сортировка<a href=#сортировка class=hash-link aria-label="Прямая ссылка на Сортировка" title="Прямая ссылка на Сортировка" translate=no>​</a></h4>
+<p>Указывается через параметры <code>sort</code> и <code>order</code>:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users?sort=name&order=desc</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Можно поддерживать множественную сортировку:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users?sort=role,name&order=asc,desc</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=поиск>Поиск<a href=#поиск class=hash-link aria-label="Прямая ссылка на Поиск" title="Прямая ссылка на Поиск" translate=no>​</a></h4>
+<p>Глобальный поиск по нескольким полям:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users?q=ivan</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<p>Для продвинутого поиска интегрируется Elasticsearch или аналоги.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=вложенные-ресурсы-1>Вложенные ресурсы<a href=#вложенные-ресурсы-1 class=hash-link aria-label="Прямая ссылка на Вложенные ресурсы" title="Прямая ссылка на Вложенные ресурсы" translate=no>​</a></h3>
+<p><strong>Вложенные ресурсы</strong> отражают иерархические отношения между сущностями.</p>
+<p>Пример:</p>
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">GET /users/123/orders        # Заказы пользователя 123</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">POST /users/123/orders      # Создать заказ для пользователя 123</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">GET /orders/456/items       # Позиции в заказе 456</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Прочитайте фрагмент построчно: каждая директива или вызов меняет поведение сервиса, брокера или балансировщика в цепочке микросервисов.</li>
+<li class="">После правки перезапустите соответствующий процесс или контейнер и проверьте логи, очередь RabbitMQ или ответ HTTP.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=рекомендации-3>Рекомендации<a href=#рекомендации-3 class=hash-link aria-label="Прямая ссылка на Рекомендации" title="Прямая ссылка на Рекомендации" translate=no>​</a></h4>
+<ul>
+<li class="">Используйте вложенность только для отношений "один ко многим"</li>
+<li class="">Ограничьте глубину вложенности (максимум 3 уровня)</li>
+<li class="">Для глубоких связей используйте фильтрацию:<!-- -->
+<ul>
+<li class="">❌ <code>/companies/1/departments/2/employees/3/Задачи/4</code></li>
+<li class="">✅ <code>/Задачи?employee_id=3</code></li>
+</ul>
+</li>
+<li class="">Дублируйте функциональность на корневом уровне:<!-- -->
+<ul>
+<li class=""><code>/orders</code> — все заказы</li>
+<li class=""><code>/users/123/orders</code> — заказы конкретного пользователя</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=hateoas-1>HATEOAS<a href=#hateoas-1 class=hash-link aria-label="Прямая ссылка на HATEOAS" title="Прямая ссылка на HATEOAS" translate=no>​</a></h3>
+<p><strong>HATEOAS</strong> (Hypermedia as the Engine of Application State) — принцип, согласно которому клиент переходит от одного состояния к другому, следуя гиперссылкам, возвращаемым сервером.</p>
+<p>Пример ответа:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">123</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"name"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Ivan"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"_links"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"self"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"orders"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123/orders"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"update"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token property">"href"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token property">"method"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"PUT"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"delete"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token property">"href"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/users/123"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token property">"method"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"DELETE"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">JSON показывает формат тела запроса или сообщения в очереди: имена полей должны совпадать с контрактом API или схемой consumer.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=преимущества>Преимущества<a href=#преимущества class=hash-link aria-label="Прямая ссылка на Преимущества" title="Прямая ссылка на Преимущества" translate=no>​</a></h4>
+<ul>
+<li class="">Клиент не зависит от жёстко закодированных URL</li>
+<li class="">API становится самодокументируемым</li>
+<li class="">Упрощается эволюция API — можно менять структуру URI без поломки клиентов</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=недостатки>Недостатки<a href=#недостатки class=hash-link aria-label="Прямая ссылка на Недостатки" title="Прямая ссылка на Недостатки" translate=no>​</a></h4>
+<ul>
+<li class="">Увеличивает объём ответов</li>
+<li class="">Сложнее реализовать на клиенте</li>
+<li class="">Требует дополнительной логики генерации ссылок</li>
+</ul>
+<p>HATEOAS считается продвинутой чертой REST, но не обязательной для большинства современных API.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=resource-oriented-проектирование-rod>Resource-Oriented Проектирование (ROD)<a href=#resource-oriented-проектирование-rod class=hash-link aria-label="Прямая ссылка на Resource-Oriented Проектирование (ROD)" title="Прямая ссылка на Resource-Oriented Проектирование (ROD)" translate=no>​</a></h3>
+<p><strong>Resource-Oriented Проектирование</strong> — методология проектирования API, ориентированная на ресурсы как основные строительные блоки.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=этапы-проектирования>Этапы проектирования<a href=#этапы-проектирования class=hash-link aria-label="Прямая ссылка на Этапы проектирования" title="Прямая ссылка на Этапы проектирования" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p><strong>Определите доменные сущности</strong><br/>
+<!-- -->Пользователь, заказ, товар, категория.</p>
+</li>
+<li class="">
+<p><strong>Спроектируйте иерархию ресурсов</strong></p>
+</li>
+</ol>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   /users</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   /users/{userId}</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   /users/{userId}/orders</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   /orders/{orderId}</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   /orders/{orderId}/items</span><br/></div></code></pre></div></div>
+<p>Разбор:</p>
+<ul>
+<li class="">Фрагмент иллюстрирует контракт, конфигурацию или протокол обмена — сверяйте каждую строку с текстом раздела выше.</li>
+</ul>
+<ol start=3>
+<li class="">
+<p><strong>Назначьте URI каждой сущности</strong><br/>
+<!-- -->Используйте существительные во множественном числе.</p>
+</li>
+<li class="">
+<p><strong>Определите допустимые операции</strong><br/>
+<!-- -->Для каждого ресурса — набор разрешённых HTTP-методов.</p>
+</li>
+<li class="">
+<p><strong>Спроектируйте представления</strong><br/>
+<!-- -->Какие поля включать, как форматировать даты, как обрабатывать вложенные объекты.</p>
+</li>
+</ol>
+<p>ROD обеспечивает единообразие, предсказуемость и соответствие принципам REST.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=смежные-материалы>Смежные материалы<a href=#смежные-материалы class=hash-link aria-label="Прямая ссылка на Смежные материалы" title="Прямая ссылка на Смежные материалы" translate=no>​</a></h2>
+<ul>
+<li class=""><a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117>API — интерфейсы прикладного программирования</a> — базовые определения (раздел "Система и сеть")</li>
+<li class=""><a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117>Проектирование API и интеграций</a> — контракт, ошибки, версии, пример WMS</li>
+<li class=""><a class="" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122>Проектирование API (8.05)</a> — маппинг, мобильные клиенты, rate limit</li>
+<li class=""><a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/213>Методы и ключ идемпотентности</a></li>
+<li class=""><a class="" href=/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3>Документирование OpenAPI</a></li>
+<li class=""><a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117#%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82-%D0%BF%D0%BE-%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D0%B0%D0%BC-api>Маршрут по всем главам API</a></li>
+</ul>
+<hr/>
+<!-- -->
+<div class="callout callout--tip"><div class=callout-title>Основа по протоколу</div><div class=callout-body><p>Базовый разбор HTTP и HTTPS находится в отдельной статье — <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118>HTTP как основа веб-интеграций</a>.</div></div></div><!--$--><!--/$--><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/all>all</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/analytic>analytic</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/engineer>engineer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architector>architector</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/tester>tester</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/required>required</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/beginner>beginner</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-05-31T22:04:03.000Z itemprop=dateModified>31 мая 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Синхронная коммуникация</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Реактивная коммуникация</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#rest-1 class="table-of-contents__link toc-highlight">REST</a><ul><li><a href=#что-такое-rest class="table-of-contents__link toc-highlight">Что такое REST</a><li><a href=#принципы-rest class="table-of-contents__link toc-highlight">Принципы REST</a><li><a href=#схема-работы-rest class="table-of-contents__link toc-highlight">Схема работы REST</a><li><a href=#инструменты-для-работы-с-rest class="table-of-contents__link toc-highlight">Инструменты для работы с REST</a><li><a href=#rest-ресурс class="table-of-contents__link toc-highlight">REST-ресурс</a><li><a href=#statelessness class="table-of-contents__link toc-highlight">Statelessness</a><li><a href=#доступные-операции-с-веб-сервисами class="table-of-contents__link toc-highlight">Доступные операции с веб-сервисами</a><li><a href=#http-методы class="table-of-contents__link toc-highlight">HTTP-методы</a><li><a href=#как-определить-сервис-метод-и-http-метод-по-url class="table-of-contents__link toc-highlight">Как определить сервис, метод и HTTP-метод по URL</a><li><a href=#семантика-http class="table-of-contents__link toc-highlight">Семантика HTTP</a><li><a href=#runbook--если-api-вроде-работает-но-клиент-падает class="table-of-contents__link toc-highlight">Runbook — если API "вроде работает", но клиент падает</a><li><a href=#url--правила-формирования-и-составляющие class="table-of-contents__link toc-highlight">URL — правила формирования и составляющие</a><li><a href=#пагинация class="table-of-contents__link toc-highlight">Пагинация</a><li><a href=#hateoas class="table-of-contents__link toc-highlight">HATEOAS</a><li><a href=#resource-oriented-проектирование class="table-of-contents__link toc-highlight">Resource-Oriented Проектирование</a><li><a href=#версионирование class="table-of-contents__link toc-highlight">Версионирование</a><li><a href=#фильтрация-сортировка-поиск class="table-of-contents__link toc-highlight">Фильтрация, сортировка, поиск</a><li><a href=#вложенные-ресурсы class="table-of-contents__link toc-highlight">Вложенные ресурсы</a><li><a href=#частичное-представление class="table-of-contents__link toc-highlight">Частичное представление</a><li><a href=#частичное-представление-field-selection class="table-of-contents__link toc-highlight">Частичное представление (Field Selection)</a><li><a href=#версионирование-api class="table-of-contents__link toc-highlight">Версионирование API</a><li><a href=#фильтрация-сортировка-поиск-1 class="table-of-contents__link toc-highlight">Фильтрация, сортировка, поиск</a><li><a href=#вложенные-ресурсы-1 class="table-of-contents__link toc-highlight">Вложенные ресурсы</a><li><a href=#hateoas-1 class="table-of-contents__link toc-highlight">HATEOAS</a><li><a href=#resource-oriented-проектирование-rod class="table-of-contents__link toc-highlight">Resource-Oriented Проектирование (ROD)</a></ul><li><a href=#смежные-материалы class="table-of-contents__link toc-highlight">Смежные материалы</a></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Масштабирование микросервисных систем"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Масштабирование микросервисных систем</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Масштабирование — это сам процесс увеличения мощности системы, чтобы она выдерживала эту нагрузку.">Масштабирование — это сам процесс увеличения мощности системы, чтобы она выдерживала эту нагрузку.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/101><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Первые шаги к микросервисам"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Первые шаги к микросервисам</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Для реализации используется фреймворк FastAPI, который обеспечивает высокую производительность и автоматическую генерацию документации API.">Для реализации используется фреймворк FastAPI, который обеспечивает высокую производительность и автоматическую генерацию документации API.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/102><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Go для микросервисов"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Go для микросервисов</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Язык программирования Go (Golang) представляет собой мощный инструмент для создания высоконагруженных распределенных систем.">Язык программирования Go (Golang) представляет собой мощный инструмент для создания высоконагруженных распределенных систем.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/111><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Балансировка нагрузки"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Балансировка нагрузки</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Балансировка нагрузки - распределение трафика между узлами для масштабирования, отказоустойчивости и сглаживания пиков.">Балансировка нагрузки - распределение трафика между узлами для масштабирования, отказоустойчивости и сглаживания пиков.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/112><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Архитектура микросервисов (MSA) и распределённые системы"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Архитектура микросервисов (MSA) и распределённые системы</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Распределённая система — это совокупность независимых компонентов (серверов, узлов, микросервисов), которые взаимодействуют друг с другом через сеть для выполнения общей задачи.">Распределённая система — это совокупность независимых компонентов (серверов, узлов, микросервисов), которые взаимодействуют друг с другом через сеть для выполнения общей задачи.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1121><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Авторизация в интеграционных сценариях"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Авторизация в интеграционных сценариях</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Интеграционная авторизация: Basic и Bearer в Authorization, mTLS на транспорте, JWT и API-ключи, OAuth Client Credentials.">Интеграционная авторизация: Basic и Bearer в Authorization, mTLS на транспорте, JWT и API-ключи, OAuth Client Credentials.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/113><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Коммуникация и интеграция"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Коммуникация и интеграция</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Интеграция микросервисов — это процесс объединения независимых сервисов в единую систему, чтобы они могли эффективно взаимодействовать и решать общие задачи.">Интеграция микросервисов — это процесс объединения независимых сервисов в единую систему, чтобы они могли эффективно взаимодействовать и решать общие задачи.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Асинхронная коммуникация"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Асинхронная коммуникация</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Мы уже изучали асинхронность, поэтому можем уже понять, что асинхронная коммуникация — это способ взаимодействия, при котором отправитель не ждёт немедленного ответа от получателя.">Мы уже изучали асинхронность, поэтому можем уже понять, что асинхронная коммуникация — это способ взаимодействия, при котором отправитель не ждёт немедленного ответа от получателя.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Синхронная коммуникация"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Синхронная коммуникация</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Синхронная коммуникация — это способ взаимодействия, при котором отправитель отправляет запрос и ждёт ответа от получателя.">Синхронная коммуникация — это способ взаимодействия, при котором отправитель отправляет запрос и ждёт ответа от получателя.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Реактивная коммуникация"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Реактивная коммуникация</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Реактивные транспорты в вебе и интеграциях — WebSocket, SSE, потоки событий и типовые паттерны на стороне клиента и сервера.">Реактивные транспорты в вебе и интеграциях — WebSocket, SSE, потоки событий и типовые паттерны на стороне клиента и сервера.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Брокеры сообщений"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Брокеры сообщений</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Брокер сообщений — это программное обеспечение или система, которая управляет обменом данными между приложениями, сервисами или системами.">Брокер сообщений — это программное обеспечение или система, которая управляет обменом данными между приложениями, сервисами или системами.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118><h2 class="theme-doc-card-heading cardTitle_mcqP" title=RabbitMQ><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Микросервисы>MC</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">RabbitMQ</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="RabbitMQ - очереди сообщений, модель производитель–потребитель и типовые сценарии интеграции микросервисов.">RabbitMQ - очереди сообщений, модель производитель–потребитель и типовые сценарии интеграции микросервисов.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro>Ещё <!-- -->15<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script></div></body>

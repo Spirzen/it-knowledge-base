@@ -1,0 +1,533 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Групповые политики в Windows | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Групповые политики в Windows | Вселенная IT"/><meta data-rh=true name=description content="Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций."/><meta data-rh=true property=og:description content="Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/system-network","name":"2. Система и сеть","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/системное-администрирование","name":"Системное администрирование","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411","name":"Групповые политики в Windows","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Collapse sidebar category '2. Система и сеть'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/операционная-система><span title="Операционная система" class=categoryLinkLabel_V03G>Операционная система</span></a><button aria-label="Expand sidebar category 'Операционная система'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/платформы><span title=Платформы class=categoryLinkLabel_V03G>Платформы</span></a><button aria-label="Expand sidebar category 'Платформы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/сеть-и-интернет><span title="Сеть и интернет" class=categoryLinkLabel_V03G>Сеть и интернет</span></a><button aria-label="Expand sidebar category 'Сеть и интернет'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/веб-сайты-и-веб-приложения><span title="Веб-сайты и веб-приложения" class=categoryLinkLabel_V03G>Веб-сайты и веб-приложения</span></a><button aria-label="Expand sidebar category 'Веб-сайты и веб-приложения'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/терминал><span title=Терминал class=categoryLinkLabel_V03G>Терминал</span></a><button aria-label="Expand sidebar category 'Терминал'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/системное-администрирование><span title="Системное администрирование" class=categoryLinkLabel_V03G>Системное администрирование</span></a><button aria-label="Collapse sidebar category 'Системное администрирование'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-zabbix><span title="Практикум Zabbix" class=categoryLinkLabel_V03G>Практикум Zabbix</span></a><button aria-label="Expand sidebar category 'Практикум Zabbix'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-prometheus-и-grafana><span title="Практикум Prometheus и Grafana" class=categoryLinkLabel_V03G>Практикум Prometheus и Grafana</span></a><button aria-label="Expand sidebar category 'Практикум Prometheus и Grafana'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><span title=Администрирование class=linkLabel_WmDU>Администрирование</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><span title="Диагностика производительности Linux" class=linkLabel_WmDU>Диагностика производительности Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2><span title="Установка и первоначальная настройка ОС" class=linkLabel_WmDU>Установка и первоначальная настройка ОС</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><span title=ИТ-инфраструктура class=linkLabel_WmDU>ИТ-инфраструктура</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><span title="Сетевые аномалии и системные процессы" class=linkLabel_WmDU>Сетевые аномалии и системные процессы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><span title="Настройка и обслуживание серверов" class=linkLabel_WmDU>Настройка и обслуживание серверов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411><span title="Групповые политики в Windows" class=linkLabel_WmDU>Групповые политики в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><span title="Конфигурация рабочих станций" class=linkLabel_WmDU>Конфигурация рабочих станций</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><span title="Сетевые подключения и диагностика" class=linkLabel_WmDU>Сетевые подключения и диагностика</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><span title="Организация домашней сети" class=linkLabel_WmDU>Организация домашней сети</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62><span title="Идентичность Microsoft Entra и RBAC" class=linkLabel_WmDU>Идентичность Microsoft Entra и RBAC</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/63><span title="Windows Server — начало работы" class=linkLabel_WmDU>Windows Server — начало работы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64><span title="Управление службами в Windows" class=linkLabel_WmDU>Управление службами в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7><span title="NAT и проброс портов" class=linkLabel_WmDU>NAT и проброс портов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8><span title="Планирование и автоматизация задач" class=linkLabel_WmDU>Планирование и автоматизация задач</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9><span title="Диагностика и обработка системных ошибок" class=linkLabel_WmDU>Диагностика и обработка системных ошибок</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91><span title="Работа с базами данных в администрировании" class=linkLabel_WmDU>Работа с базами данных в администрировании</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92><span title="Мониторинг, метрики и логирование систем" class=linkLabel_WmDU>Мониторинг, метрики и логирование систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93><span title="Администрирование Linux-систем" class=linkLabel_WmDU>Администрирование Linux-систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/94><span title="Полнотекстовый поиск для приложений" class=linkLabel_WmDU>Полнотекстовый поиск для приложений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/95><span title="Windows на рабочей станции — жизненный цикл" class=linkLabel_WmDU>Windows на рабочей станции — жизненный цикл</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96><span title="GNU/Linux — рабочие столы и споры окружений" class=linkLabel_WmDU>GNU/Linux — рабочие столы и споры окружений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/97><span title='Windows — Store, защита, диспетчер и "сборки"' class=linkLabel_WmDU>Windows — Store, защита, диспетчер и "сборки"</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/98><span title="Системное администрирование — итоги" class=linkLabel_WmDU>Системное администрирование — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/99><span title="Системное администрирование — чек-лист" class=linkLabel_WmDU>Системное администрирование — чек-лист</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/восстановление-данных><span title="Восстановление данных" class=categoryLinkLabel_V03G>Восстановление данных</span></a><button aria-label="Expand sidebar category 'Восстановление данных'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro><span title="Системное администрирование — о разделе" class=linkLabel_WmDU>Системное администрирование — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/техническая-поддержка><span title="Техническая поддержка" class=categoryLinkLabel_V03G>Техническая поддержка</span></a><button aria-label="Expand sidebar category 'Техническая поддержка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-информационной-безопасности><span title="Основы информационной безопасности" class=categoryLinkLabel_V03G>Основы информационной безопасности</span></a><button aria-label="Expand sidebar category 'Основы информационной безопасности'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-интеграционного-взаимодействия><span title="Основы интеграционного взаимодействия" class=categoryLinkLabel_V03G>Основы интеграционного взаимодействия</span></a><button aria-label="Expand sidebar category 'Основы интеграционного взаимодействия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/аппаратное-обеспечение><span title="Аппаратное обеспечение" class=categoryLinkLabel_V03G>Аппаратное обеспечение</span></a><button aria-label="Expand sidebar category 'Аппаратное обеспечение'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/system-network><span title="2. Система и сеть - о разделе" class=linkLabel_WmDU>2. Система и сеть - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Expand sidebar category '7. Проект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Expand sidebar category '8. Инфраструктура и безопасность'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/system-network><span>2. Система и сеть</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/системное-администрирование><span>Системное администрирование</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Групповые политики в Windows</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Групповые политики в Windows</h1></header>
+<div class=article-tags><span class="tag tag-required">ОБЯЗАТЕЛЬНО</span><span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span></div>
+<span class=complexity-badge>Разработчику</span>
+<span class=complexity-badge>Архитектору</span>
+<span class=complexity-badge>Инженеру</span>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=групповые-политики-в-windows-1>Групповые политики в Windows<a href=#групповые-политики-в-windows-1 class=hash-link aria-label="Прямая ссылка на Групповые политики в Windows" title="Прямая ссылка на Групповые политики в Windows" translate=no>​</a></h2>
+<p>Групповые политики — это механизм централизованного управления настройками операционной системы Windows, приложений и пользовательских сред. Они позволяют администраторам применять единые правила безопасности, конфигурации и поведения ко всем компьютерам и пользователям в домене или локально на отдельной машине.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-такое-групповые-политики>Что такое групповые политики<a href=#что-такое-групповые-политики class=hash-link aria-label="Прямая ссылка на Что такое групповые политики" title="Прямая ссылка на Что такое групповые политики" translate=no>​</a></h3>
+<p><strong>Групповая политика</strong> — это набор правил, определяющих поведение операционной системы Windows, её компонентов и установленных приложений. Эти правила применяются автоматически и могут контролировать всё: от внешнего вида рабочего стола до сложных параметров безопасности, сетевых протоколов и разрешений на запуск программ.</p>
+<p>Групповые политики реализованы через <strong>Group Policy Object (GPO)</strong> — объект, содержащий настройки, которые можно применить к:</p>
+<ul>
+<li class="">отдельным пользователям,</li>
+<li class="">группам пользователей,</li>
+<li class="">компьютерам,</li>
+<li class="">организационным единицам (OU) в Active Directory.</li>
+</ul>
+<p>В доменной среде групповые политики распространяются с контроллера домена на клиентские машины. В автономной (рабочей станции без домена) используется <strong>локальная групповая политика</strong>, доступная через <code>gpedit.msc</code> или "Изменение групповой политики" в Windows 11.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=мини-пример--запрет-запуска-cmd-для-пользователей>Мини-пример — запрет запуска cmd для пользователей<a href=#мини-пример--запрет-запуска-cmd-для-пользователей class=hash-link aria-label="Прямая ссылка на Мини-пример — запрет запуска cmd для пользователей" title="Прямая ссылка на Мини-пример — запрет запуска cmd для пользователей" translate=no>​</a></h3>
+<p>Учебный сценарий на <strong>локальной</strong> политике (Pro/Enterprise), без домена:</p>
+<ol>
+<li class=""><code>Win + R</code> → <code>gpedit.msc</code>.</li>
+<li class=""><strong>Конфигурация пользователя</strong> → <strong>Административные шаблоны</strong> → <strong>Система</strong> → <strong>Запретить использование указанных приложений</strong>.</li>
+<li class="">Включить политику, в списке запрещённых — <code>cmd.exe</code> (по одному приложению на строку).</li>
+<li class="">В cmd от имени администратора: <code>gpupdate /force</code>, перелогиниться под обычным пользователем.</li>
+<li class="">Проверка: <code>Win + R</code> → <code>cmd</code> — должно появиться сообщение о блокировке администратором.</li>
+</ol>
+<p>Просмотр применённых политик:</p>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">gpresult /r</span><br/></div></code></pre></div></div>
+<p>В домене тот же принцип, но GPO создаётся в <strong>Group Policy Management</strong> (<code>gpmc.msc</code>), привязывается к OU и наследуется клиентами после <code>gpupdate</code> (по расписанию или вручную).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=какие-возможности-дают-групповые-политики>Какие возможности дают групповые политики<a href=#какие-возможности-дают-групповые-политики class=hash-link aria-label="Прямая ссылка на Какие возможности дают групповые политики" title="Прямая ссылка на Какие возможности дают групповые политики" translate=no>​</a></h3>
+<p>Групповые политики предоставляют широкий спектр возможностей администрирования:</p>
+<ul>
+<li class=""><strong>Централизованное управление</strong>: все изменения применяются из одного места.</li>
+<li class=""><strong>Автоматизация</strong>: настройки обновляются без участия пользователя.</li>
+<li class=""><strong>Безопасность</strong>: блокировка нежелательных функций, принудительное использование сложных паролей, ограничение доступа к ресурсам.</li>
+<li class=""><strong>Стандартизация</strong>: единый вид и поведение всех рабочих станций.</li>
+<li class=""><strong>Аудит и контроль</strong>: возможность включать журналирование действий, отслеживать входы, запуск программ и т.п.</li>
+<li class=""><strong>Совместимость и производительность</strong>: отключение фоновых служб, настройка сети, ограничение потребления ресурсов.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=local-group-policy-editor>Local Group Policy Editor<a href=#local-group-policy-editor class=hash-link aria-label="Прямая ссылка на Local Group Policy Editor" title="Прямая ссылка на Local Group Policy Editor" translate=no>​</a></h3>
+<p>В Windows 11 инструмент называется <strong>"Изменение групповой политики"</strong> и вызывается командой <code>gpedit.msc</code>. Он доступен только в редакциях Pro, Enterprise и Образование. В домашней версии Windows этот редактор отсутствует.</p>
+<p>Интерфейс разделён на две основные ветви:</p>
+<ul>
+<li class=""><strong>Конфигурация компьютера</strong> — настройки, применяемые к самой машине, независимо от того, кто в неё вошёл.</li>
+<li class=""><strong>Конфигурация пользователя</strong> — настройки, привязанные к учётной записи, и активные только при её использовании.</li>
+</ul>
+<p>Каждая ветвь содержит подразделы:</p>
+<ul>
+<li class=""><strong>Программы</strong> — управление установкой и запуском ПО.</li>
+<li class=""><strong>Конфигурация Windows</strong> — настройки системных компонентов.</li>
+<li class=""><strong>Административные шаблоны</strong> — сотни параметров для тонкой настройки ОС и приложений.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=конфигурация-компьютера-и-конфигурация-пользователя>Конфигурация компьютера и конфигурация пользователя<a href=#конфигурация-компьютера-и-конфигурация-пользователя class=hash-link aria-label="Прямая ссылка на Конфигурация компьютера и конфигурация пользователя" title="Прямая ссылка на Конфигурация компьютера и конфигурация пользователя" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=конфигурация-компьютера>Конфигурация компьютера<a href=#конфигурация-компьютера class=hash-link aria-label="Прямая ссылка на Конфигурация компьютера" title="Прямая ссылка на Конфигурация компьютера" translate=no>​</a></h4>
+<p>Эта часть политики применяется при загрузке системы. Она влияет на:</p>
+<ul>
+<li class="">безопасность системы,</li>
+<li class="">сетевые параметры,</li>
+<li class="">службы и драйверы,</li>
+<li class="">политики аудита,</li>
+<li class="">поведение Windows Defender и других компонентов.</li>
+</ul>
+<p>Настройки здесь работают даже если пользователь не вошёл в систему.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=конфигурация-пользователя>Конфигурация пользователя<a href=#конфигурация-пользователя class=hash-link aria-label="Прямая ссылка на Конфигурация пользователя" title="Прямая ссылка на Конфигурация пользователя" translate=no>​</a></h4>
+<p>Эта часть применяется при входе пользователя. Она регулирует:</p>
+<ul>
+<li class="">поведение проводника,</li>
+<li class="">доступ к панели управления,</li>
+<li class="">параметры браузеров,</li>
+<li class="">вид меню "Пуск",</li>
+<li class="">запрет на запуск определённых программ.</li>
+</ul>
+<p>Если один и тот же параметр задан в обеих ветвях, то приоритет имеет <strong>конфигурация компьютера</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=административные-шаблоны>Административные шаблоны<a href=#административные-шаблоны class=hash-link aria-label="Прямая ссылка на Административные шаблоны" title="Прямая ссылка на Административные шаблоны" translate=no>​</a></h3>
+<p><strong>Административные шаблоны</strong> — это файлы <code>.admx</code> и <code>.adml</code>, описывающие интерфейс и значения политик. Они позволяют управлять тысячами параметров через графический интерфейс, не редактируя реестр вручную.</p>
+<p>Шаблоны делятся на:</p>
+<ul>
+<li class=""><strong>Классические</strong> — старые настройки, работающие через реестр.</li>
+<li class=""><strong>Центральные</strong> — современные, хранятся на контроллере домена и доступны всем клиентам.</li>
+</ul>
+<p>Примеры популярных политик:</p>
+<ul>
+<li class="">Отключение Центра обновления Windows.</li>
+<li class="">Блокировка доступа к командной строке.</li>
+<li class="">Принудительное использование длинных путей (<code>LongPathsEnabled</code>).</li>
+<li class="">Запрет на использование USB-накопителей.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=политика-разрешения-имён-nrpt>Политика разрешения имён (NRPT)<a href=#политика-разрешения-имён-nrpt class=hash-link aria-label="Прямая ссылка на Политика разрешения имён (NRPT)" title="Прямая ссылка на Политика разрешения имён (NRPT)" translate=no>​</a></h3>
+<p><strong>Name Resolution Policy Table (NRPT)</strong> — это таблица, определяющая, как система разрешает DNS-имена. Она особенно важна в гибридных и корпоративных сетях, где используются внутренние DNS-зоны и IPsec-туннели.</p>
+<p>Через NRPT можно:</p>
+<ul>
+<li class="">указать, какие DNS-серверы использовать для конкретных доменов,</li>
+<li class="">настроить шифрование DNS-трафика (DoH/DoT),</li>
+<li class="">перенаправить запросы в защищённые каналы.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=политики-учётных-записей>Политики учётных записей<a href=#политики-учётных-записей class=hash-link aria-label="Прямая ссылка на Политики учётных записей" title="Прямая ссылка на Политики учётных записей" translate=no>​</a></h3>
+<p>Эти политики управляют требованиями к паролям и блокировке учётных записей:</p>
+<ul>
+<li class=""><strong>Максимальный срок действия пароля</strong> — сколько дней пароль остаётся действительным.</li>
+<li class=""><strong>Минимальная длина пароля</strong> — например, 8 символов.</li>
+<li class=""><strong>Сложность пароля</strong> — требование использования заглавных букв, цифр, специальных символов.</li>
+<li class=""><strong>История паролей</strong> — количество предыдущих паролей, которые нельзя повторно использовать.</li>
+<li class=""><strong>Блокировка после неудачных попыток</strong> — например, после 5 неверных вводов.</li>
+<li class=""><strong>Длительность блокировки</strong> — временная или до вмешательства администратора.</li>
+</ul>
+<p>Эти настройки находятся в разделе <strong>Конфигурация компьютера → Политики Windows → Параметры безопасности → Локальные политики → Политика учётных записей</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=локальные-политики>Локальные политики<a href=#локальные-политики class=hash-link aria-label="Прямая ссылка на Локальные политики" title="Прямая ссылка на Локальные политики" translate=no>​</a></h3>
+<p>Локальные политики включают три ключевых подраздела:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=аудит>Аудит<a href=#аудит class=hash-link aria-label="Прямая ссылка на Аудит" title="Прямая ссылка на Аудит" translate=no>​</a></h4>
+<p>Определяет, какие события записывать в журнал безопасности:</p>
+<ul>
+<li class="">успешный/неудачный вход,</li>
+<li class="">доступ к файлам,</li>
+<li class="">изменение политик,</li>
+<li class="">выключение системы.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=права-пользователей>Права пользователей<a href=#права-пользователей class=hash-link aria-label="Прямая ссылка на Права пользователей" title="Прямая ссылка на Права пользователей" translate=no>​</a></h4>
+<p>Назначает права на уровне системы:</p>
+<ul>
+<li class="">"Вход в систему через сеть",</li>
+<li class="">"Отключение компьютера",</li>
+<li class="">"Резервное копирование файлов",</li>
+<li class="">"Загрузка и выгрузка драйверов".</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=параметры-безопасности>Параметры безопасности<a href=#параметры-безопасности class=hash-link aria-label="Прямая ссылка на Параметры безопасности" title="Прямая ссылка на Параметры безопасности" translate=no>​</a></h4>
+<p>Устанавливает общие правила безопасности:</p>
+<ul>
+<li class="">поведение при нажатии Ctrl+Alt+Del,</li>
+<li class="">минимальный уровень шифрования,</li>
+<li class="">защита от атак типа "воспроизведение".</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=монитор-брандмауэра-windows>Монитор брандмауэра Windows<a href=#монитор-брандмауэра-windows class=hash-link aria-label="Прямая ссылка на Монитор брандмауэра Windows" title="Прямая ссылка на Монитор брандмауэра Windows" translate=no>​</a></h3>
+<p>Через групповые политики можно:</p>
+<ul>
+<li class="">полностью включить или отключить брандмауэр,</li>
+<li class="">настроить правила по профилям (домен, частная, публичная сеть),</li>
+<li class="">заблокировать все входящие соединения по умолчанию,</li>
+<li class="">разрешить только определённые порты или программы.</li>
+</ul>
+<p>Это особенно важно для защиты рабочих станций в корпоративной сети.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=политики-диспетчера-списка-сетей>Политики диспетчера списка сетей<a href=#политики-диспетчера-списка-сетей class=hash-link aria-label="Прямая ссылка на Политики диспетчера списка сетей" title="Прямая ссылка на Политики диспетчера списка сетей" translate=no>​</a></h3>
+<p>Эти политики управляют тем, какие сети считаются доверенными, как сохраняются профили Wi-Fi, и можно ли пользователю добавлять новые сети. Например:</p>
+<ul>
+<li class="">запрет на подключение к незащищённым Wi-Fi,</li>
+<li class="">автоматическое удаление профилей после выхода пользователя,</li>
+<li class="">ограничение на использование Bluetooth-сетей.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=политики-открытого-ключа>Политики открытого ключа<a href=#политики-открытого-ключа class=hash-link aria-label="Прямая ссылка на Политики открытого ключа" title="Прямая ссылка на Политики открытого ключа" translate=no>​</a></h3>
+<p>Используются для настройки:</p>
+<ul>
+<li class="">сертификатов шифрования файловой системы (EFS),</li>
+<li class="">IPsec-политик,</li>
+<li class="">доверенных корневых центров сертификации,</li>
+<li class="">автоматического обновления сертификатов.</li>
+</ul>
+<p>Это критически важно для безопасного обмена данными и шифрования на уровне ОС.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=политики-ограниченного-использования>Политики ограниченного использования<a href=#политики-ограниченного-использования class=hash-link aria-label="Прямая ссылка на Политики ограниченного использования" title="Прямая ссылка на Политики ограниченного использования" translate=no>​</a></h3>
+<p>Позволяют создать <strong>ограниченную среду выполнения</strong>, где пользователь может запускать только одобренные программы. Это достигается через:</p>
+<ul>
+<li class="">AppLocker,</li>
+<li class="">Software Restriction Policies (устаревший, но ещё поддерживаемый механизм).</li>
+</ul>
+<p>Примеры:</p>
+<ul>
+<li class="">разрешить только Microsoft Office и браузер Edge,</li>
+<li class="">запретить запуск <code>.exe</code> из папки Downloads,</li>
+<li class="">блокировать PowerShell для обычных пользователей.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=политики-управления-приложениями>Политики управления приложениями<a href=#политики-управления-приложениями class=hash-link aria-label="Прямая ссылка на Политики управления приложениями" title="Прямая ссылка на Политики управления приложениями" translate=no>​</a></h3>
+<p>Включают:</p>
+<ul>
+<li class="">установку и удаление программ через сценарии запуска/завершения,</li>
+<li class="">настройку параметров приложений через реестр или файлы,</li>
+<li class="">принудительное обновление ПО,</li>
+<li class="">управление лицензиями и активацией.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=политики-ip-безопасности-ipsec>Политики IP-безопасности (IPsec)<a href=#политики-ip-безопасности-ipsec class=hash-link aria-label="Прямая ссылка на Политики IP-безопасности (IPsec)" title="Прямая ссылка на Политики IP-безопасности (IPsec)" translate=no>​</a></h3>
+<p>Позволяют настраивать правила шифрования и аутентификации сетевого трафика между компьютерами. Например:</p>
+<ul>
+<li class="">все соединения к серверу баз данных должны быть зашифрованы,</li>
+<li class="">только авторизованные хосты могут подключаться к контроллеру домена.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=компоненты-windows>Компоненты Windows<a href=#компоненты-windows class=hash-link aria-label="Прямая ссылка на Компоненты Windows" title="Прямая ссылка на Компоненты Windows" translate=no>​</a></h3>
+<p>Групповые политики позволяют управлять поведением почти каждого встроенного компонента Windows:</p>
+<ul>
+<li class=""><strong>Internet Explorer</strong> — блокировка ActiveX, настройка зон безопасности.</li>
+<li class=""><strong>Microsoft Edge</strong> — принудительное использование корпоративного профиля, отключение синхронизации.</li>
+<li class=""><strong>OneDrive</strong> — запрет на синхронизацию, ограничение объёма.</li>
+<li class=""><strong>OOBE (Out-of-Box Experience)</strong> — пропуск начальной настройки при развёртывании.</li>
+<li class=""><strong>Paint, Камера, Магазин</strong> — полное отключение недееспособных или нежелательных приложений.</li>
+<li class=""><strong>SmartScreen</strong> — включение/отключение фильтрации загрузок.</li>
+<li class=""><strong>Windows Defender</strong> — настройка исключений, расписания сканирования, отправки отчётов в облако.</li>
+<li class=""><strong>PowerShell</strong> — ограничение режима выполнения (<code>ExecutionPolicy</code>), запрет на удалённое управление.</li>
+<li class=""><strong>Безопасная загрузка (Secure Boot)</strong> — принудительное включение UEFI Secure Boot.</li>
+<li class=""><strong>Биометрия</strong> — запрет на использование Windows Hello.</li>
+<li class=""><strong>Журнал событий</strong> — настройка размера, архивации, фильтрации.</li>
+<li class=""><strong>Планировщик задач</strong> — запрет на создание задач пользователями.</li>
+<li class=""><strong>Параметры входа</strong> — отключение PIN, смарт-карт, Windows Hello.</li>
+<li class=""><strong>Отчёты об ошибках</strong> — отправка или блокировка передачи данных в Microsoft.</li>
+<li class=""><strong>Службы IIS</strong> — настройка веб-сервера на клиентских машинах (редко, но возможно).</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=сеть>Сеть<a href=#сеть class=hash-link aria-label="Прямая ссылка на Сеть" title="Прямая ссылка на Сеть" translate=no>​</a></h2>
+<p>Групповые политики позволяют детально настраивать сетевые компоненты Windows:</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=branchcache>BranchCache<a href=#branchcache class=hash-link aria-label="Прямая ссылка на BranchCache" title="Прямая ссылка на BranchCache" translate=no>​</a></h3>
+<p>BranchCache кэширует содержимое с центральных серверов на локальных компьютерах, ускоряя доступ к данным в филиалах. Политики позволяют:</p>
+<ul>
+<li class="">включать/отключать BranchCache,</li>
+<li class="">выбирать режим (режим хоста или режим распределённого кэша),</li>
+<li class="">настраивать порты и безопасность.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=dns-клиент>DNS-клиент<a href=#dns-клиент class=hash-link aria-label="Прямая ссылка на DNS-клиент" title="Прямая ссылка на DNS-клиент" translate=no>​</a></h3>
+<p>Управление поведением DNS-резолвера:</p>
+<ul>
+<li class="">настройка суффиксов поиска,</li>
+<li class="">управление кэшем DNS,</li>
+<li class="">блокировка определённых доменов,</li>
+<li class="">настройка NRPT (см. выше).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=snmp>SNMP<a href=#snmp class=hash-link aria-label="Прямая ссылка на SNMP" title="Прямая ссылка на SNMP" translate=no>​</a></h3>
+<p>Simple Network Management Protocol используется для мониторинга сетевых устройств. Политики позволяют:</p>
+<ul>
+<li class="">задавать community-строки,</li>
+<li class="">ограничивать IP-адреса, с которых разрешён запрос,</li>
+<li class="">включать/отключать службу.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=автономные-файлы>Автономные файлы<a href=#автономные-файлы class=hash-link aria-label="Прямая ссылка на Автономные файлы" title="Прямая ссылка на Автономные файлы" translate=no>​</a></h3>
+<p>Позволяет пользователям работать с сетевыми файлами без подключения. Через политики можно:</p>
+<ul>
+<li class="">запретить автономный режим,</li>
+<li class="">настроить синхронизацию,</li>
+<li class="">указать объём кэша.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=параметры-tcpip>Параметры TCP/IP<a href=#параметры-tcpip class=hash-link aria-label="Прямая ссылка на Параметры TCP/IP" title="Прямая ссылка на Параметры TCP/IP" translate=no>​</a></h3>
+<p>Настройка стека протоколов:</p>
+<ul>
+<li class="">размер окна TCP,</li>
+<li class="">поведение при перегрузке,</li>
+<li class="">параметры IPv6,</li>
+<li class="">настройка QoS для приоритизации трафика.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ssl>SSL<a href=#ssl class=hash-link aria-label="Прямая ссылка на SSL" title="Прямая ссылка на SSL" translate=no>​</a></h3>
+<p>Политики SSL/TLS регулируют:</p>
+<ul>
+<li class="">минимальную версию протокола,</li>
+<li class="">разрешённые шифры,</li>
+<li class="">поведение при ошибках сертификатов.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=qos-quality-of-service>QoS (Quality of Service)<a href=#qos-quality-of-service class=hash-link aria-label="Прямая ссылка на QoS (Quality of Service)" title="Прямая ссылка на QoS (Quality of Service)" translate=no>​</a></h3>
+<p>Позволяет назначать приоритеты сетевому трафику по:</p>
+<ul>
+<li class="">IP-адресам,</li>
+<li class="">портам,</li>
+<li class="">исполняемым файлам.
+Это особенно полезно для VoIP, видеоконференций и других чувствительных к задержкам приложений.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=lanman-служба-рабочей-станции>Lanman (Служба рабочей станции)<a href=#lanman-служба-рабочей-станции class=hash-link aria-label="Прямая ссылка на Lanman (Служба рабочей станции)" title="Прямая ссылка на Lanman (Служба рабочей станции)" translate=no>​</a></h3>
+<p>Управление клиентской частью SMB:</p>
+<ul>
+<li class="">отключение подписи SMB,</li>
+<li class="">ограничение версий протокола,</li>
+<li class="">настройка буферов.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=wlan-и-wwan>WLAN и WWAN<a href=#wlan-и-wwan class=hash-link aria-label="Прямая ссылка на WLAN и WWAN" title="Прямая ссылка на WLAN и WWAN" translate=no>​</a></h3>
+<p>Настройка беспроводных сетей:</p>
+<ul>
+<li class="">автоматическое подключение только к доверенным SSID,</li>
+<li class="">запрет на создание ad-hoc сетей,</li>
+<li class="">настройка профилей для корпоративных Wi-Fi (802.1X, EAP).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=bits-background-intelligent-transfer-service>BITS (Background Intelligent Transfer Service)<a href=#bits-background-intelligent-transfer-service class=hash-link aria-label="Прямая ссылка на BITS (Background Intelligent Transfer Service)" title="Прямая ссылка на BITS (Background Intelligent Transfer Service)" translate=no>​</a></h3>
+<p>BITS используется Центром обновления, OneDrive и другими службами для фоновой передачи данных. Политики позволяют:</p>
+<ul>
+<li class="">ограничить скорость загрузки/выгрузки,</li>
+<li class="">задать расписание активности,</li>
+<li class="">полностью отключить службу.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=система>Система<a href=#система class=hash-link aria-label="Прямая ссылка на Система" title="Прямая ссылка на Система" translate=no>​</a></h3>
+<p>Групповые политики дают глубокий контроль над системными компонентами:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=app-v-application-virtualization>App-V (Application Virtualization)<a href=#app-v-application-virtualization class=hash-link aria-label="Прямая ссылка на App-V (Application Virtualization)" title="Прямая ссылка на App-V (Application Virtualization)" translate=no>​</a></h4>
+<p>Позволяет запускать приложения в изолированной среде без установки. Политики управляют:</p>
+<ul>
+<li class="">кэшем виртуальных приложений,</li>
+<li class="">сроком жизни пакетов,</li>
+<li class="">сетевым доступом виртуализированных программ.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=dpapi-data-protection-api>DPAPI (Data Protection API)<a href=#dpapi-data-protection-api class=hash-link aria-label="Прямая ссылка на DPAPI (Data Protection API)" title="Прямая ссылка на DPAPI (Data Protection API)" translate=no>​</a></h4>
+<p>Защита данных на уровне пользователя. Политики влияют на:</p>
+<ul>
+<li class="">ротацию ключей,</li>
+<li class="">резервное копирование ключей восстановления,</li>
+<li class="">использование аппаратного ускорения шифрования.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=iscsi>iSCSI<a href=#iscsi class=hash-link aria-label="Прямая ссылка на iSCSI" title="Прямая ссылка на iSCSI" translate=no>​</a></h4>
+<p>Настройка инициатора iSCSI для подключения к сетевым хранилищам:</p>
+<ul>
+<li class="">автоматическое подключение к целевым устройствам,</li>
+<li class="">настройка аутентификации CHAP,</li>
+<li class="">управление сессиями.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=kerberos>Kerberos<a href=#kerberos class=hash-link aria-label="Прямая ссылка на Kerberos" title="Прямая ссылка на Kerberos" translate=no>​</a></h4>
+<p>Протокол аутентификации в доменах Active Directory. Политики регулируют:</p>
+<ul>
+<li class="">максимальный срок жизни билета,</li>
+<li class="">поддержку делегирования,</li>
+<li class="">совместимость с другими системами.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=laps-local-administrator-password-solution>LAPS (Local Administrator Password Solution)<a href=#laps-local-administrator-password-solution class=hash-link aria-label="Прямая ссылка на LAPS (Local Administrator Password Solution)" title="Прямая ссылка на LAPS (Local Administrator Password Solution)" translate=no>​</a></h4>
+<p>Автоматическая смена паролей локальных администраторов и сохранение их в Active Directory. Политики задают:</p>
+<ul>
+<li class="">сложность пароля,</li>
+<li class="">период смены,</li>
+<li class="">группы, имеющие право читать пароль.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ntlm>NTLM<a href=#ntlm class=hash-link aria-label="Прямая ссылка на NTLM" title="Прямая ссылка на NTLM" translate=no>​</a></h4>
+<p>Устаревший, но иногда необходимый протокол аутентификации. Политики позволяют:</p>
+<ul>
+<li class="">запретить его использование,</li>
+<li class="">ограничить применение только для определённых серверов,</li>
+<li class="">включить аудит попыток использования.</li>
+</ul>
+<p>Практически это означает переход к модели "Kerberos по умолчанию, NTLM только как временная совместимость". Такой подход снижает риск relay-атак и одновременно даёт команде время заменить старые приложения без резкого отключения бизнеса.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=восстановление-и-вход>Восстановление и вход<a href=#восстановление-и-вход class=hash-link aria-label="Прямая ссылка на Восстановление и вход" title="Прямая ссылка на Восстановление и вход" translate=no>​</a></h4>
+<ul>
+<li class="">Настройка поведения при сбое (экран синего экрана, автоматический перезапуск),</li>
+<li class="">отключение последнего известного хорошего конфигурации,</li>
+<li class="">блокировка безопасного режима,</li>
+<li class="">настройка экрана приветствия и входа.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=диспетчер-учётных-записей>Диспетчер учётных записей<a href=#диспетчер-учётных-записей class=hash-link aria-label="Прямая ссылка на Диспетчер учётных записей" title="Прямая ссылка на Диспетчер учётных записей" translate=no>​</a></h4>
+<p>Управление локальными пользователями и группами через политики:</p>
+<ul>
+<li class="">автоматическое создание учётных записей,</li>
+<li class="">назначение прав,</li>
+<li class="">блокировка встроенных аккаунтов.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=диспетчер-сервера>Диспетчер сервера<a href=#диспетчер-сервера class=hash-link aria-label="Прямая ссылка на Диспетчер сервера" title="Прямая ссылка на Диспетчер сервера" translate=no>​</a></h4>
+<p>Отключение интерфейса диспетчера сервера на клиентских машинах, чтобы предотвратить случайные изменения.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=защита-dma>Защита DMA<a href=#защита-dma class=hash-link aria-label="Прямая ссылка на Защита DMA" title="Прямая ссылка на Защита DMA" translate=no>​</a></h4>
+<p>Защита от атак через Thunderbolt и другие интерфейсы с прямым доступом к памяти. Политики могут:</p>
+<ul>
+<li class="">отключить DMA в BIOS/UEFI (если поддерживается),</li>
+<li class="">включить защиту на уровне ОС.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=завершение-работы>Завершение работы<a href=#завершение-работы class=hash-link aria-label="Прямая ссылка на Завершение работы" title="Прямая ссылка на Завершение работы" translate=no>​</a></h4>
+<ul>
+<li class="">Запрет на выключение компьютера обычным пользователям,</li>
+<li class="">принудительное завершение всех процессов при выходе,</li>
+<li class="">отключение гибернации.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=контроль-памяти>Контроль памяти<a href=#контроль-памяти class=hash-link aria-label="Прямая ссылка на Контроль памяти" title="Прямая ссылка на Контроль памяти" translate=no>​</a></h4>
+<ul>
+<li class="">Настройка файла подкачки,</li>
+<li class="">ограничение использования памяти на пользователя,</li>
+<li class="">включение DEP (Data Execution Prevention).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=локальная-система-безопасности-lsa>Локальная система безопасности (LSA)<a href=#локальная-система-безопасности-lsa class=hash-link aria-label="Прямая ссылка на Локальная система безопасности (LSA)" title="Прямая ссылка на Локальная система безопасности (LSA)" translate=no>​</a></h4>
+<ul>
+<li class="">Защита процесса lsass.exe от дампа памяти,</li>
+<li class="">настройка уровня проверки подписи,</li>
+<li class="">включение защиты учётных данных (Credential Guard).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=профили>Профили<a href=#профили class=hash-link aria-label="Прямая ссылка на Профили" title="Прямая ссылка на Профили" translate=no>​</a></h4>
+<ul>
+<li class="">Ограничение размера профиля пользователя,</li>
+<li class="">удаление профиля после выхода,</li>
+<li class="">перенаправление папок (документы, рабочий стол) на сетевой ресурс.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=сетевой-вход-в-систему>Сетевой вход в систему<a href=#сетевой-вход-в-систему class=hash-link aria-label="Прямая ссылка на Сетевой вход в систему" title="Прямая ссылка на Сетевой вход в систему" translate=no>​</a></h4>
+<ul>
+<li class="">Блокировка входа по сети для определённых пользователей,</li>
+<li class="">ограничение количества одновременных сессий,</li>
+<li class="">настройка времени неактивности до разрыва соединения.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=служба-входа>Служба входа<a href=#служба-входа class=hash-link aria-label="Прямая ссылка на Служба входа" title="Прямая ссылка на Служба входа" translate=no>​</a></h4>
+<ul>
+<li class="">Отключение быстрого входа (Fast Sign-in),</li>
+<li class="">принудительная двухфакторная аутентификация,</li>
+<li class="">настройка параметров Windows Hello.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=сложность-pin-кода>Сложность PIN-кода<a href=#сложность-pin-кода class=hash-link aria-label="Прямая ссылка на Сложность PIN-кода" title="Прямая ссылка на Сложность PIN-кода" translate=no>​</a></h4>
+<ul>
+<li class="">Минимальная длина PIN,</li>
+<li class="">требование использования цифр и букв,</li>
+<li class="">блокировка повторяющихся символов.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=удалённый-помощник>Удалённый помощник<a href=#удалённый-помощник class=hash-link aria-label="Прямая ссылка на Удалённый помощник" title="Прямая ссылка на Удалённый помощник" translate=no>​</a></h4>
+<ul>
+<li class="">Полное отключение функции,</li>
+<li class="">ограничение только на внутренние IP,</li>
+<li class="">обязательное подтверждение каждой сессии.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-драйвера-и-устройства>Установка драйвера и устройства<a href=#установка-драйвера-и-устройства class=hash-link aria-label="Прямая ссылка на Установка драйвера и устройства" title="Прямая ссылка на Установка драйвера и устройства" translate=no>​</a></h4>
+<ul>
+<li class="">Разрешение устанавливать драйверы только из доверенных источников,</li>
+<li class="">блокировка установки USB-устройств определённых классов (например, HID-клавиатуры),</li>
+<li class="">автоматическая установка только подписанных драйверов.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=файловая-система>Файловая система<a href=#файловая-система class=hash-link aria-label="Прямая ссылка на Файловая система" title="Прямая ссылка на Файловая система" translate=no>​</a></h4>
+<ul>
+<li class="">Принудительное шифрование через BitLocker,</li>
+<li class="">настройка NTFS-разрешений по умолчанию,</li>
+<li class="">включение сжатия или дедупликации,</li>
+<li class=""><strong>включение поддержки длинных путей</strong> (<code>LongPathsEnabled</code>), что особенно важно для разработчиков, использующих Git или Node.js в проектах с глубокой вложенностью.</li>
+</ul>
+<p>Этот блок политик лучше внедрять пакетами: сначала ограничения для входа и локальных аккаунтов, затем контроль устройств и памяти, после этого - файловую подсистему и профили. Поэтапность важна, потому что все перечисленные параметры влияют на ежедневную работу пользователей и сервисных аккаунтов.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=меню-пуск-и-панель-задач-панель-управления>Меню "Пуск" и панель задач, панель управления<a href=#меню-пуск-и-панель-задач-панель-управления class=hash-link aria-label='Прямая ссылка на Меню "Пуск" и панель задач, панель управления' title='Прямая ссылка на Меню "Пуск" и панель задач, панель управления' translate=no>​</a></h2>
+<p>Групповые политики позволяют полностью контролировать внешний вид и поведение пользовательского интерфейса Windows:</p>
+<ul>
+<li class="">
+<p><strong>Меню "Пуск"</strong>:</p>
+<ul>
+<li class="">фиксированный набор приложений,</li>
+<li class="">запрет на закрепление новых элементов,</li>
+<li class="">отключение рекомендаций и рекламы,</li>
+<li class="">принудительное использование классического или нового вида.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Панель задач</strong>:</p>
+<ul>
+<li class="">блокировка изменения положения,</li>
+<li class="">отключение чата с Microsoft Teams,</li>
+<li class="">скрытие виджетов и поиска,</li>
+<li class="">ограничение доступа к области уведомлений.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Панель управления</strong>:</p>
+<ul>
+<li class="">полное скрытие,</li>
+<li class="">отключение отдельных апплетов (например, "Учётные записи", "Сеть и Интернет"),</li>
+<li class="">запрет на изменение параметров даты, времени, региональных настроек.</li>
+</ul>
+</li>
+</ul>
+<p>Эти настройки особенно полезны в учебных заведениях, колл-центрах и на рабочих станциях с ограниченным функционалом.</p>
+<p>С инженерной точки зрения это не "косметика", а способ уменьшить операционные инциденты: чем меньше точек, где пользователь может случайно изменить сетевые, региональные или системные параметры, тем ниже поток обращений в поддержку и риск нестабильной конфигурации рабочих мест.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=самые-интересные-и-распространённые-политики>Самые интересные и распространённые политики<a href=#самые-интересные-и-распространённые-политики class=hash-link aria-label="Прямая ссылка на Самые интересные и распространённые политики" title="Прямая ссылка на Самые интересные и распространённые политики" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=политики-паролей>Политики паролей<a href=#политики-паролей class=hash-link aria-label="Прямая ссылка на Политики паролей" title="Прямая ссылка на Политики паролей" translate=no>​</a></h4>
+<p>Одна из самых часто используемых групп политик — требования к паролям:</p>
+<ul>
+<li class="">минимальная длина — 8 символов,</li>
+<li class="">наличие заглавных и строчных букв, цифр и специальных символов,</li>
+<li class="">запрет на повторное использование последних 24 паролей,</li>
+<li class="">срок действия — 90 дней.</li>
+</ul>
+<p>Эти настройки находятся в разделе:<br/>
+<strong>Конфигурация компьютера → Политики Windows → Параметры безопасности → Локальные политики → Политика учётных записей</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=включение-длинных-путей>Включение длинных путей<a href=#включение-длинных-путей class=hash-link aria-label="Прямая ссылка на Включение длинных путей" title="Прямая ссылка на Включение длинных путей" translate=no>​</a></h4>
+<p>По умолчанию Windows ограничивает длину пути 260 символами. Это вызывает ошибки в современных инструментах разработки (например, при клонировании репозиториев с глубокой структурой). Чтобы включить поддержку длинных путей:</p>
+<ol>
+<li class="">Откройте <code>gpedit.msc</code>.</li>
+<li class="">Перейдите в:<br/>
+<strong>Конфигурация компьютера → Административные шаблоны → Система → Файловая система</strong>.</li>
+<li class="">Найдите политику <strong>"Включить поддержку длинных путей Win32"</strong>.</li>
+<li class="">Установите значение <strong>"Включено"</strong>.</li>
+</ol>
+<p>После этого приложения, поддерживающие этот режим (например, Git, Node.js, Python), смогут работать с длинными путями без ошибок.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=практика-внедрения-gpo-без-боли>Практика внедрения GPO без боли<a href=#практика-внедрения-gpo-без-боли class=hash-link aria-label="Прямая ссылка на Практика внедрения GPO без боли" title="Прямая ссылка на Практика внедрения GPO без боли" translate=no>​</a></h2>
+<p>Надёжный подход - "тестовая OU -> пилот -> массовое применение":</p>
+<ul>
+<li class="">Создать тестовую OU и перенести туда 2-3 рабочие станции.</li>
+<li class="">Применить GPO, проверить <code>gpresult /r</code> и <code>rsop.msc</code>.</li>
+<li class="">Зафиксировать эффект и только затем связывать политику с рабочей OU.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=антипаттерны>Антипаттерны<a href=#антипаттерны class=hash-link aria-label="Прямая ссылка на Антипаттерны" title="Прямая ссылка на Антипаттерны" translate=no>​</a></h3>
+<ul>
+<li class="">Одна гигантская GPO на всё сразу.</li>
+<li class="">Применение политики сразу на весь домен без пилота.</li>
+<li class="">Отсутствие описания, зачем создана конкретная GPO.</li>
+</ul>
+<p>Полезные ссылки: <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4>Настройка и обслуживание серверов</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5>Конфигурация рабочих станций</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9>Диагностика и обработка системных ошибок</a>.</div><!--$--><!--/$--><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/engineer>engineer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architector>architector</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/required>required</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/beginner>beginner</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-05-27T18:36:42.000Z itemprop=dateModified>27 мая 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Настройка и обслуживание серверов</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Конфигурация рабочих станций</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#групповые-политики-в-windows-1 class="table-of-contents__link toc-highlight">Групповые политики в Windows</a><ul><li><a href=#что-такое-групповые-политики class="table-of-contents__link toc-highlight">Что такое групповые политики</a><li><a href=#мини-пример--запрет-запуска-cmd-для-пользователей class="table-of-contents__link toc-highlight">Мини-пример — запрет запуска cmd для пользователей</a><li><a href=#какие-возможности-дают-групповые-политики class="table-of-contents__link toc-highlight">Какие возможности дают групповые политики</a><li><a href=#local-group-policy-editor class="table-of-contents__link toc-highlight">Local Group Policy Editor</a><li><a href=#конфигурация-компьютера-и-конфигурация-пользователя class="table-of-contents__link toc-highlight">Конфигурация компьютера и конфигурация пользователя</a><li><a href=#административные-шаблоны class="table-of-contents__link toc-highlight">Административные шаблоны</a><li><a href=#политика-разрешения-имён-nrpt class="table-of-contents__link toc-highlight">Политика разрешения имён (NRPT)</a><li><a href=#политики-учётных-записей class="table-of-contents__link toc-highlight">Политики учётных записей</a><li><a href=#локальные-политики class="table-of-contents__link toc-highlight">Локальные политики</a><li><a href=#монитор-брандмауэра-windows class="table-of-contents__link toc-highlight">Монитор брандмауэра Windows</a><li><a href=#политики-диспетчера-списка-сетей class="table-of-contents__link toc-highlight">Политики диспетчера списка сетей</a><li><a href=#политики-открытого-ключа class="table-of-contents__link toc-highlight">Политики открытого ключа</a><li><a href=#политики-ограниченного-использования class="table-of-contents__link toc-highlight">Политики ограниченного использования</a><li><a href=#политики-управления-приложениями class="table-of-contents__link toc-highlight">Политики управления приложениями</a><li><a href=#политики-ip-безопасности-ipsec class="table-of-contents__link toc-highlight">Политики IP-безопасности (IPsec)</a><li><a href=#компоненты-windows class="table-of-contents__link toc-highlight">Компоненты Windows</a></ul><li><a href=#сеть class="table-of-contents__link toc-highlight">Сеть</a><ul><li><a href=#branchcache class="table-of-contents__link toc-highlight">BranchCache</a><li><a href=#dns-клиент class="table-of-contents__link toc-highlight">DNS-клиент</a><li><a href=#snmp class="table-of-contents__link toc-highlight">SNMP</a><li><a href=#автономные-файлы class="table-of-contents__link toc-highlight">Автономные файлы</a><li><a href=#параметры-tcpip class="table-of-contents__link toc-highlight">Параметры TCP/IP</a><li><a href=#ssl class="table-of-contents__link toc-highlight">SSL</a><li><a href=#qos-quality-of-service class="table-of-contents__link toc-highlight">QoS (Quality of Service)</a><li><a href=#lanman-служба-рабочей-станции class="table-of-contents__link toc-highlight">Lanman (Служба рабочей станции)</a><li><a href=#wlan-и-wwan class="table-of-contents__link toc-highlight">WLAN и WWAN</a><li><a href=#bits-background-intelligent-transfer-service class="table-of-contents__link toc-highlight">BITS (Background Intelligent Transfer Service)</a><li><a href=#система class="table-of-contents__link toc-highlight">Система</a></ul><li><a href=#меню-пуск-и-панель-задач-панель-управления class="table-of-contents__link toc-highlight">Меню "Пуск" и панель задач, панель управления</a><ul><li><a href=#самые-интересные-и-распространённые-политики class="table-of-contents__link toc-highlight">Самые интересные и распространённые политики</a></ul><li><a href=#практика-внедрения-gpo-без-боли class="table-of-contents__link toc-highlight">Практика внедрения GPO без боли</a><ul><li><a href=#антипаттерны class="table-of-contents__link toc-highlight">Антипаттерны</a></ul></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-zabbix><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Zabbix"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Zabbix</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="7 элементов">7 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-prometheus-и-grafana><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Prometheus и Grafana"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Prometheus и Grafana</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="11 элементов">11 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title=Администрирование><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Администрирование</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.">Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Диагностика производительности Linux"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Диагностика производительности Linux</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.">Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Установка и первоначальная настройка ОС"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Установка и первоначальная настройка ОС</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер.">Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><h2 class="theme-doc-card-heading cardTitle_mcqP" title=ИТ-инфраструктура><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">ИТ-инфраструктура</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.">Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые аномалии и системные процессы"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые аномалии и системные процессы</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.">Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Настройка и обслуживание серверов"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Настройка и обслуживание серверов</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.">Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Конфигурация рабочих станций"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Конфигурация рабочих станций</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.">Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые подключения и диагностика"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые подключения и диагностика</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.">Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Организация домашней сети"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Организация домашней сети</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.">Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Идентичность Microsoft Entra и RBAC"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeBrand_aO30 badgeSm_CPs0" style=background:#5E5E5E aria-hidden=true><svg class=svg_CnCY role=img aria-label=Microsoft width=22 height=22 viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.628h11.377V24H0zm12.623 0H24V24H12.623z" fill=#ffffff /></svg></span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Идентичность Microsoft Entra и RBAC</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Microsoft Entra ID (ранее Azure Active Directory) — облачный каталог идентичностей для Microsoft 365, Azure и тысяч SaaS по протоколу SSO.">Microsoft Entra ID (ранее Azure Active Directory) — облачный каталог идентичностей для Microsoft 365, Azure и тысяч SaaS по протоколу SSO.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro>Ещё <!-- -->15<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script></div></body>

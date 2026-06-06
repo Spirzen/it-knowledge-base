@@ -1,0 +1,1067 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Мониторинг, метрики и логирование систем | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Мониторинг, метрики и логирование систем | Вселенная IT"/><meta data-rh=true name=description content="Мониторинг, метрики и логирование - как измерять здоровье системы, отслеживать отклонения и предотвращать деградацию сервисов."/><meta data-rh=true property=og:description content="Мониторинг, метрики и логирование - как измерять здоровье системы, отслеживать отклонения и предотвращать деградацию сервисов."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/system-network","name":"2. Система и сеть","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/системное-администрирование","name":"Системное администрирование","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92","name":"Мониторинг, метрики и логирование систем","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Collapse sidebar category '2. Система и сеть'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/операционная-система><span title="Операционная система" class=categoryLinkLabel_V03G>Операционная система</span></a><button aria-label="Expand sidebar category 'Операционная система'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/платформы><span title=Платформы class=categoryLinkLabel_V03G>Платформы</span></a><button aria-label="Expand sidebar category 'Платформы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/сеть-и-интернет><span title="Сеть и интернет" class=categoryLinkLabel_V03G>Сеть и интернет</span></a><button aria-label="Expand sidebar category 'Сеть и интернет'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/веб-сайты-и-веб-приложения><span title="Веб-сайты и веб-приложения" class=categoryLinkLabel_V03G>Веб-сайты и веб-приложения</span></a><button aria-label="Expand sidebar category 'Веб-сайты и веб-приложения'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/терминал><span title=Терминал class=categoryLinkLabel_V03G>Терминал</span></a><button aria-label="Expand sidebar category 'Терминал'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/системное-администрирование><span title="Системное администрирование" class=categoryLinkLabel_V03G>Системное администрирование</span></a><button aria-label="Collapse sidebar category 'Системное администрирование'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-zabbix><span title="Практикум Zabbix" class=categoryLinkLabel_V03G>Практикум Zabbix</span></a><button aria-label="Expand sidebar category 'Практикум Zabbix'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-prometheus-и-grafana><span title="Практикум Prometheus и Grafana" class=categoryLinkLabel_V03G>Практикум Prometheus и Grafana</span></a><button aria-label="Expand sidebar category 'Практикум Prometheus и Grafana'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><span title=Администрирование class=linkLabel_WmDU>Администрирование</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><span title="Диагностика производительности Linux" class=linkLabel_WmDU>Диагностика производительности Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2><span title="Установка и первоначальная настройка ОС" class=linkLabel_WmDU>Установка и первоначальная настройка ОС</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><span title=ИТ-инфраструктура class=linkLabel_WmDU>ИТ-инфраструктура</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><span title="Сетевые аномалии и системные процессы" class=linkLabel_WmDU>Сетевые аномалии и системные процессы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><span title="Настройка и обслуживание серверов" class=linkLabel_WmDU>Настройка и обслуживание серверов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411><span title="Групповые политики в Windows" class=linkLabel_WmDU>Групповые политики в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><span title="Конфигурация рабочих станций" class=linkLabel_WmDU>Конфигурация рабочих станций</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><span title="Сетевые подключения и диагностика" class=linkLabel_WmDU>Сетевые подключения и диагностика</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><span title="Организация домашней сети" class=linkLabel_WmDU>Организация домашней сети</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62><span title="Идентичность Microsoft Entra и RBAC" class=linkLabel_WmDU>Идентичность Microsoft Entra и RBAC</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/63><span title="Windows Server — начало работы" class=linkLabel_WmDU>Windows Server — начало работы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64><span title="Управление службами в Windows" class=linkLabel_WmDU>Управление службами в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7><span title="NAT и проброс портов" class=linkLabel_WmDU>NAT и проброс портов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8><span title="Планирование и автоматизация задач" class=linkLabel_WmDU>Планирование и автоматизация задач</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9><span title="Диагностика и обработка системных ошибок" class=linkLabel_WmDU>Диагностика и обработка системных ошибок</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91><span title="Работа с базами данных в администрировании" class=linkLabel_WmDU>Работа с базами данных в администрировании</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92><span title="Мониторинг, метрики и логирование систем" class=linkLabel_WmDU>Мониторинг, метрики и логирование систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93><span title="Администрирование Linux-систем" class=linkLabel_WmDU>Администрирование Linux-систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/94><span title="Полнотекстовый поиск для приложений" class=linkLabel_WmDU>Полнотекстовый поиск для приложений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/95><span title="Windows на рабочей станции — жизненный цикл" class=linkLabel_WmDU>Windows на рабочей станции — жизненный цикл</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96><span title="GNU/Linux — рабочие столы и споры окружений" class=linkLabel_WmDU>GNU/Linux — рабочие столы и споры окружений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/97><span title='Windows — Store, защита, диспетчер и "сборки"' class=linkLabel_WmDU>Windows — Store, защита, диспетчер и "сборки"</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/98><span title="Системное администрирование — итоги" class=linkLabel_WmDU>Системное администрирование — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/99><span title="Системное администрирование — чек-лист" class=linkLabel_WmDU>Системное администрирование — чек-лист</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/восстановление-данных><span title="Восстановление данных" class=categoryLinkLabel_V03G>Восстановление данных</span></a><button aria-label="Expand sidebar category 'Восстановление данных'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro><span title="Системное администрирование — о разделе" class=linkLabel_WmDU>Системное администрирование — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/техническая-поддержка><span title="Техническая поддержка" class=categoryLinkLabel_V03G>Техническая поддержка</span></a><button aria-label="Expand sidebar category 'Техническая поддержка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-информационной-безопасности><span title="Основы информационной безопасности" class=categoryLinkLabel_V03G>Основы информационной безопасности</span></a><button aria-label="Expand sidebar category 'Основы информационной безопасности'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-интеграционного-взаимодействия><span title="Основы интеграционного взаимодействия" class=categoryLinkLabel_V03G>Основы интеграционного взаимодействия</span></a><button aria-label="Expand sidebar category 'Основы интеграционного взаимодействия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/аппаратное-обеспечение><span title="Аппаратное обеспечение" class=categoryLinkLabel_V03G>Аппаратное обеспечение</span></a><button aria-label="Expand sidebar category 'Аппаратное обеспечение'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/system-network><span title="2. Система и сеть - о разделе" class=linkLabel_WmDU>2. Система и сеть - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Expand sidebar category '7. Проект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Expand sidebar category '8. Инфраструктура и безопасность'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/system-network><span>2. Система и сеть</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/системное-администрирование><span>Системное администрирование</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Мониторинг, метрики и логирование систем</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Мониторинг, метрики и логирование систем</h1></header>
+<div class=article-tags><span class="tag tag-required">ОБЯЗАТЕЛЬНО</span><span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span></div>
+<span class=complexity-badge>Разработчику</span>
+<span class=complexity-badge>Архитектору</span>
+<span class=complexity-badge>Инженеру</span>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=метрика-мониторинг-и-логирование>Метрика, мониторинг и логирование<a href=#метрика-мониторинг-и-логирование class=hash-link aria-label="Прямая ссылка на Метрика, мониторинг и логирование" title="Прямая ссылка на Метрика, мониторинг и логирование" translate=no>​</a></h2>
+<div class="it-demo it-demo--loading">Загрузка интерактивного демо…</div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=стабильность>Стабильность<a href=#стабильность class=hash-link aria-label="Прямая ссылка на Стабильность" title="Прямая ссылка на Стабильность" translate=no>​</a></h3>
+<p>Системный администратор обеспечивает стабильность — это его главная функциональная ответственность. Стабильность не сводится к отсутствию видимых сбоев; это комплексное свойство, отражающее способность системы сохранять заданный уровень производительности, надёжности и безопасности <strong>в условиях внешних и внутренних возмущений</strong> — пиковых нагрузок, аппаратных отказов, программных ошибок, сетевых задержек, изменений в конфигурации, действий пользователей и автоматизированных процессов.</p>
+<p>Стабильность — это устойчивый режим динамического равновесия. Система может кратковременно выходить из нормы (например, при коротком всплеске запросов к базе данных), но при этом должна <strong>не терять функциональность</strong>, <strong>не нарушать ожиданий пользователей</strong> и <strong>быстро возвращаться к штатному поведению</strong> без вмешательства человека. Такой режим достигается правильной конфигурацией оборудования или ПО, и наличием обратной связи — информации о текущем состоянии, которая позволяет администратору или автоматическим системам принимать решения. Именно этой информацией и занимаются метрики, мониторинг и логирование.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-такое-стабильность-системы>Что такое стабильность системы<a href=#что-такое-стабильность-системы class=hash-link aria-label="Прямая ссылка на Что такое стабильность системы" title="Прямая ссылка на Что такое стабильность системы" translate=no>​</a></h3>
+<p>В инженерной практике стабильность оценивается по четырём взаимосвязанным критериям:</p>
+<ol>
+<li class="">
+<p><strong>Доступность (Availability)</strong> — способность системы быть готовой к обработке запросов в ожидаемом времени. Это измеримое соотношение между временем безотказной работы и общим календарным временем. Например, договорённость об уровне обслуживания (SLA) может устанавливать требование 99,9 % доступности в месяц. Для критически важных сервисов — 99,99 % и выше. Доступность нарушается при полном отказе и при недоступности отдельных компонентов: база данных "висит", API отвечает кодом 5xx, DNS-запросы теряются.</p>
+</li>
+<li class="">
+<p><strong>Надёжность (Reliability)</strong> — отсутствие критических сбоев, приводящих к потере данных, нарушению бизнес-процессов или недопустимой задержке реакции. Надёжность выражается в статистической предсказуемости: чем ниже интенсивность отказов и чем короче среднее время их устранения (MTTR), тем выше надёжность. Важно различать отказ и деградацию: сервис может продолжать отвечать, но с задержкой в 30 секунд — формально он "доступен", но <strong>ненадёжен</strong> для пользователя.</p>
+</li>
+<li class="">
+<p><strong>Масштабируемость под нагрузкой (Load tolerance)</strong> — способность сохранять стабильные показатели производительности при увеличении объёма запросов, данных или пользователей. Нагрузка может быть штатной (распродажа, отчётный период) или аномальной (DDoS, ошибочный цикл в коде). Система не обязана выдерживать любую нагрузку без изменений, но должна сигнализировать о приближении к границе возможного и не "ломаться" внезапно. Плавное нарастание времени отклика, отказ в приёме новых соединений, активное отбрасывание запросов — это признаки <strong>управляемой</strong> деградации и лучший вариант, чем неожиданный крах.</p>
+</li>
+<li class="">
+<p><strong>Восстанавливаемость (Recoverability)</strong> — скорость и предсказуемость возвращения к штатному состоянию после инцидента. Высокая восстанавливаемость подразумевает наличие механизмов резервного копирования, репликации, автоматического переключения, отката конфигурации, а также — и это ключевое — <strong>полную прослеживаемость событий</strong>, позволяющую точно определить причину сбоя и убедиться, что она устранена. Система, которая падает раз в неделю, но восстанавливается за 30 секунд с полным сохранением данных, может быть предпочтительнее той, что "не падает", но при первом же серьёзном сбое требует ручного вмешательства в течение нескольких часов.</p>
+</li>
+</ol>
+<p>Для бэкенд-разработчика полезно явно разделять <strong>метрики</strong>, <strong>системные логи</strong> и <strong>аудит действий пользователя</strong> — см. <a class="" href=/encyclopedia/1-basics/1-23-frontend-i-bekend/9>наблюдаемость бэкенда</a>. Если в мониторинге нужен поиск по большим текстовым логам и индексация событий — см. углубление <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/94>полнотекстовый поиск для приложений</a> (смежная тема для прикладных стеков, не замена системным логам).</p>
+<p>Эти четыре аспекта не существуют изолированно. Например, плохая восстанавливаемость приводит к росту MTTR, что напрямую снижает доступность. Деградация под нагрузкой может маскировать надвигающийся отказ — если администратор не видит ранних симптомов, он не успеет принять превентивные меры. Поэтому для поддержания стабильности необходима <strong>непрерывная диагностика состояния системы</strong>, основанная на трёх взаимодополняющих процессах: измерении (метрики), наблюдении (мониторинг) и фиксации (логирование).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=признаки-нестабильности>Признаки нестабильности<a href=#признаки-нестабильности class=hash-link aria-label="Прямая ссылка на Признаки нестабильности" title="Прямая ссылка на Признаки нестабильности" translate=no>​</a></h3>
+<p>Системный администратор не ждёт, пока сервис упадёт — он отслеживает <strong>предвестники</strong> нестабильности. Эти признаки делятся на три группы: технические, поведенческие и временные.</p>
+<p><strong>Технические признаки</strong> — отклонения в значениях базовых метрик:</p>
+<ul>
+<li class="">Рост загрузки CPU не сопровождается ростом бизнес-метрик (например, количество запросов не изменилось, а CPU вырос с 30 % до 80 % — возможна утечка памяти, бесконечный цикл, блокировка);</li>
+<li class="">Снижение свободной памяти при одновременном росте swap-активности — признак нехватки RAM, что ведёт к замедлению всех операций;</li>
+<li class="">Рост времени отклика диска (latency), особенно при малой пропускной способности (throughput) — свидетельствует о фрагментации, аппаратной деградации или конфликтах ввода-вывода;</li>
+<li class="">Рост количества потерянных пакетов, повторных передач (retransmits) в TCP — указывает на проблемы в сети: перегрузку канала, неисправное оборудование, некорректные настройки QoS;</li>
+<li class="">Увеличение количества ошибок в логах приложений: connection refused, timeout, out of memory, deadlock.</li>
+</ul>
+<p><strong>Поведенческие признаки</strong> — изменения в реакции системы на однотипные действия:</p>
+<ul>
+<li class="">Запросы, которые всегда выполнялись за 100 мс, начали занимать 2–3 секунды;</li>
+<li class="">Пользовательские сценарии проходят нестабильно: один и тот же запрос то успешен, то завершается ошибкой;</li>
+<li class="">Административные операции (рестарт сервиса, деплой) стали занимать значительно больше времени;</li>
+<li class="">Сервис начинает "зависать" при выполнении определённых операций (например, генерация отчётов).</li>
+</ul>
+<p><strong>Временные признаки</strong> — нарушение ожидаемых временных рамок:</p>
+<ul>
+<li class="">Задания по расписанию (cron, scheduled Задачи) выполняются дольше нормы или не завершаются вовсе;</li>
+<li class="">Время доставки уведомлений, обработки сообщений в очередях растёт;</li>
+<li class="">Время ответа на эхо-запросы (ping, healthcheck) увеличивается неравномерно — возможна микрозадержка (microburst), не видимая при усреднении.</li>
+</ul>
+<p>Ни один из перечисленных признаков сам по себе не является доказательством нестабильности. Например, кратковременный всплеск CPU — норма при запуске приложения. Диагностическая ценность возникает при <strong>комбинации признаков</strong>, <strong>их повторяемости</strong>, <strong>отклонении от исторической базовой линии</strong> (baseline) и <strong>корреляции с внешними событиями</strong> (деплой, изменение конфигурации, рост трафика). Именно поэтому системный администратор строит <strong>модель нормального поведения системы</strong>, относительно которой оценивается любое отклонение.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=измерение-стабильности>Измерение стабильности<a href=#измерение-стабильности class=hash-link aria-label="Прямая ссылка на Измерение стабильности" title="Прямая ссылка на Измерение стабильности" translate=no>​</a></h3>
+<p>Стабильность измеряется косвенно — через метрики, отражающие состояние ресурсов, работу сервисов и поведение пользователей. Сами по себе метрики нейтральны: "загрузка CPU 95 %" — это не "плохо", пока не известно, какая у системы роль, каков её профиль нагрузки и как долго длится такой уровень. Поэтому ключевой принцип измерения — <strong>контекстуализация</strong>.</p>
+<p>Метрики делятся на три категории в зависимости от уровня абстракции:</p>
+<ol>
+<li class="">
+<p><strong>Системные (инфраструктурные) метрики</strong> — отражают состояние физической или виртуальной машины:</p>
+<ul>
+<li class="">Процессор: время в пользовательском и системном режиме, ожидание ввода-вывода (iowait), прерывания, частота;</li>
+<li class="">Память: общая, свободная, кэшированная, подкачка (swap in/out), анонимные страницы;</li>
+<li class="">Дисковая подсистема: количество операций чтения/записи в секунду (IOPS), объём данных (throughput), среднее время операции (latency), очередь запросов;</li>
+<li class="">Сеть: пропускная способность, количество соединений, ошибки, переполнения буферов, статистика по интерфейсам и протоколам.</li>
+</ul>
+<p>Эти метрики универсальны и не зависят от специфики приложения. Они показывают, <strong>хватает ли ресурсов</strong> для работы. Однако их недостаточно для понимания, <em>почему</em> ресурсы исчерпаны.</p>
+</li>
+<li class="">
+<p><strong>Сервисные (прикладные) метрики</strong> — отражают работу конкретных компонентов ПО:</p>
+<ul>
+<li class="">Веб-сервер: количество запросов в секунду, распределение по HTTP-статусам, время обработки запроса, размер очереди соединений;</li>
+<li class="">База данных: время выполнения запросов, количество активных сессий, hit ratio кэша буферов, блокировки, репликация lag;</li>
+<li class="">Очередь сообщений: длина очереди, скорость публикации и потребления, количество dead-letter сообщений;</li>
+<li class="">Контейнеры и оркестраторы: количество рестартов подов, использование лимитов CPU/memory, сетевые ошибки между сервисами.</li>
+</ul>
+<p>Эти метрики позволяют локализовать проблему внутри стека. Например, высокая загрузка CPU на сервере БД при низкой нагрузке от приложения может указывать на неоптимальный запрос или фоновую задачу.</p>
+</li>
+<li class="">
+<p><strong>Бизнес-метрики</strong> — отражают ценность системы для пользователя и организацию:</p>
+<ul>
+<li class="">Количество успешных транзакций, заказов, регистраций;</li>
+<li class="">Доля ошибок (например, 5xx-ошибок относительно общего числа запросов);</li>
+<li class="">Время завершения ключевого сценария (например, "открытие корзины до оплаты");</li>
+<li class="">Число одновременно активных пользователей, сессий.</li>
+</ul>
+<p>Бизнес-метрики — главный индикатор стабильности с точки зрения конечного потребителя. Система может быть технически "здоровой", но если пользователи не могут совершить покупку — она нестабильна в функциональном смысле.</p>
+</li>
+</ol>
+<p>Измерение стабильности требует <strong>непрерывного сбора</strong>, <strong>долгосрочного хранения</strong> и <strong>взаимной корреляции</strong> метрик всех трёх уровней. Только так можно отличить локальную деградацию (например, один "плохой" запрос) от системного сбоя (цепная реакция в микросервисной архитектуре).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=метрики>Метрики<a href=#метрики class=hash-link aria-label="Прямая ссылка на Метрики" title="Прямая ссылка на Метрики" translate=no>​</a></h3>
+<p>Метрика — это именованное числовое значение, снабжённое метаданными (таймстемп, теги, источник). Она фиксирует состояние и позволяет строить динамику: как значение менялось во времени. Это принципиально отличает метрику от разового замера.</p>
+<p>Типы метрик по характеру изменения:</p>
+<ul>
+<li class=""><strong>Gauge (датчик)</strong> — мгновенное значение, которое может произвольно расти и падать: объём свободной памяти, температура CPU, количество активных соединений.</li>
+<li class=""><strong>Counter (счётчик)</strong> — монотонно возрастающее число: общее количество запросов, ошибок, байт, переданных по сети. Для анализа используются скорости изменения (rate, increase).</li>
+<li class=""><strong>Histogram и Summary</strong> — сложные типы, фиксирующие распределение: например, процентиль времени ответа (p95, p99). Позволяют видеть среднее значение, и "хвосты" — медленные выбросы, которые портят пользовательский опыт.</li>
+</ul>
+<p>Метрики, как правило, снабжаются <strong>тегами (labels)</strong> — пары "ключ=значение", задающие контекст:<br/>
+<code>http_requests_total&amp;#123;method="POST", endpoint="/api/order", status="200", instance="web-01"&amp;#125;</code><br/>
+<!-- -->Теги позволяют гибко агрегировать и фильтровать данные: суммировать запросы по всем инстансам, выделять ошибки только для метода POST, сравнивать производительность разных эндпоинтов.</p>
+<p>Важно понимать, что метрика — это <strong>агрегированная</strong> информация. Она показывает <em>что</em> происходит, но не <em>почему</em>. Для ответа на вопрос "почему" нужны логи и трассировки.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=мониторинг>Мониторинг<a href=#мониторинг class=hash-link aria-label="Прямая ссылка на Мониторинг" title="Прямая ссылка на Мониторинг" translate=no>​</a></h2>
+<p>Мониторинг — это <strong>целенаправленный, непрерывный процесс сбора, хранения, анализа и интерпретации данных о состоянии и поведении информационной системы с целью обеспечения её стабильности, диагностики отклонений и поддержки принятия решений</strong>.</p>
+<p>Это активная инженерная практика, встроенная в жизненный цикл инфраструктуры. Мониторинг начинается на этапе проектирования: уже при выборе архитектуры определяется, какие компоненты будут генерировать метрики, как они будут собираться, где храниться и какие сценарии реагирования предусмотрены.</p>
+<p>Важный принцип: <strong>мониторинг должен отвечать на конкретные вопросы</strong>, а не просто накапливать данные. Примеры таких вопросов:</p>
+<ul>
+<li class="">Работает ли API <code>/health</code> на всех инстансах?</li>
+<li class="">Не приближается ли объём данных в базе к квоте диска?</li>
+<li class="">Не выросло ли время ответа сервиса авторизации выше порога, при котором пользователи начинают жаловаться?</li>
+<li class="">Есть ли признаки аномального поведения — например, резкий спад числа успешных логинов при неизменном трафике?</li>
+</ul>
+<p>Если мониторинг не позволяет ответить на подобные вопросы — он сконфигурирован некорректно, независимо от количества графиков и панелей.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-система-выполняет-измерения>Как система выполняет измерения<a href=#как-система-выполняет-измерения class=hash-link aria-label="Прямая ссылка на Как система выполняет измерения" title="Прямая ссылка на Как система выполняет измерения" translate=no>​</a></h3>
+<p>Существует три основные архитектурные модели сбора метрик. Выбор модели определяется требованиями к производительности, безопасности, масштабируемости и особенностям инфраструктуры.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=pull-модель-опрос-снаружи>Pull-модель (опрос "снаружи")<a href=#pull-модель-опрос-снаружи class=hash-link aria-label='Прямая ссылка на Pull-модель (опрос "снаружи")' title='Прямая ссылка на Pull-модель (опрос "снаружи")' translate=no>​</a></h4>
+<p>В этой модели центральная система мониторинга <strong>инициирует запросы</strong> к наблюдаемым объектам через заранее определённый интерфейс — обычно HTTP-эндпоинт <code>/metrics</code>, возвращающий данные в текстовом формате (например, в формате Prometheus exposition format).</p>
+<p>Преимущества:</p>
+<ul>
+<li class="">Высокая предсказуемость: администратор контролирует частоту опроса и объём трафика;</li>
+<li class="">Простота диагностики: если метрики не поступают — проблема на стороне целевого сервиса (не отвечает, блокирует firewall);</li>
+<li class="">Единая точка управления: все правила, таймауты, аутентификация — на стороне сервера мониторинга.</li>
+</ul>
+<p>Ограничения:</p>
+<ul>
+<li class="">Требует сетевой доступности целевого сервиса из зоны мониторинга;</li>
+<li class="">Не подходит для ephemeral-объектов (например, короткоживущих заданий в Kubernetes), которые могут исчезнуть до следующего опроса;</li>
+<li class="">Нагрузка на целевой сервис пропорциональна количеству мониторинговых систем (если их несколько).</li>
+</ul>
+<p>Pull-модель — основная в экосистеме Prometheus и широко применяется в облачных и контейнерных средах.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=push-модель-передача-изнутри>Push-модель (передача "изнутри")<a href=#push-модель-передача-изнутри class=hash-link aria-label='Прямая ссылка на Push-модель (передача "изнутри")' title='Прямая ссылка на Push-модель (передача "изнутри")' translate=no>​</a></h4>
+<p>Целевой компонент <strong>сам отправляет</strong> метрики в центральную систему через API, очередь сообщений (Kafka, RabbitMQ) или специализированный протокол. Часто используется агент, работающий на хосте или в контейнере.</p>
+<p>Преимущества:</p>
+<ul>
+<li class="">Подходит для динамических сред: даже кратковременные процессы могут отправить метрики перед завершением;</li>
+<li class="">Гибкость маршрутизации: один агент может отправлять разные данные в разные системы (метрики — в Prometheus, логи — в Loki);</li>
+<li class="">Возможна буферизация при недоступности сервера мониторинга.</li>
+</ul>
+<p>Ограничения:</p>
+<ul>
+<li class="">Сложнее обеспечить единообразие: каждый сервис может пытаться отправлять метрики по-своему;</li>
+<li class="">Риск потери данных при сбое агента до отправки;</li>
+<li class="">Требует дополнительных механизмов аутентификации и контроля нагрузки на сервер приёма.</li>
+</ul>
+<p>Push-подход доминирует в ELK-стеке (через Filebeat/Logstash), в телеметрии по OpenTelemetry и в Zabbix (при использовании активных проверок).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=гибридная-модель>Гибридная модель<a href=#гибридная-модель class=hash-link aria-label="Прямая ссылка на Гибридная модель" title="Прямая ссылка на Гибридная модель" translate=no>​</a></h4>
+<p>Современные системы часто комбинируют оба подхода. Например:</p>
+<ul>
+<li class="">Prometheus опрашивает долгоживущие сервисы (веб-серверы, базы данных) по pull;</li>
+<li class="">Агенты (node_exporter, cadvisor) собирают системные метрики и предоставляют их через HTTP — тоже pull, но с локальным сбором;</li>
+<li class="">Краткосрочные задачи (batch-процессы) отправляют итоговые метрики по push через Pushgateway (специальный адаптер для Prometheus).</li>
+</ul>
+<p>Такой подход позволяет сохранить предсказуемость pull-модели и гибкость push-модели там, где это необходимо.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=агенты>Агенты<a href=#агенты class=hash-link aria-label="Прямая ссылка на Агенты" title="Прямая ссылка на Агенты" translate=no>​</a></h3>
+<p>Агент — это программа, устанавливаемая на наблюдаемый хост (физический сервер, виртуальная машина, контейнер), которая выполняет одну или несколько функций:</p>
+<ul>
+<li class="">Сбор системных метрик (CPU, память, диск, сеть), недоступных через стандартные API приложений;</li>
+<li class="">Выполнение активных проверок (например, проверка доступности порта, выполнение SQL-запроса к БД);</li>
+<li class="">Предварительная обработка данных: фильтрация, агрегация, преобразование форматов;</li>
+<li class="">Передача данных в центральную систему (по push) или предоставление эндпоинта для опроса (по pull).</li>
+</ul>
+<p>Агент дополняет встроенную телеметрику приложения. Например, веб-сервер может экспортировать собственные метрики (количество запросов, ошибок), а агент — предоставлять данные о загрузке CPU, на котором этот сервер работает. Это позволяет коррелировать прикладные и системные события.</p>
+<p>Агент должен быть <strong>лёгковесным</strong> и <strong>изолированным</strong>. Его сбой или высокое потребление ресурсов не должны влиять на работу основного сервиса. Современные агенты (например, <code>node_exporter</code>, <code>telegraf</code>, <code>Datadog Agent</code>) используют минимальный объём памяти, работают в пользовательском пространстве и не требуют привилегий root для большинства операций.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=snmp>SNMP<a href=#snmp class=hash-link aria-label="Прямая ссылка на SNMP" title="Прямая ссылка на SNMP" translate=no>​</a></h3>
+<p>Simple Network Management Protocol (SNMP) — это протокол прикладного уровня, разработанный в 1988 году и до сих пор широко применяемый для мониторинга сетевого оборудования (коммутаторы, маршрутизаторы, точки доступа), серверов, ИБП, систем охлаждения, даже сканеров и принтеров.</p>
+<p>SNMP работает по клиент-серверной модели:</p>
+<ul>
+<li class=""><strong>Agent</strong> — программный компонент на управляемом устройстве, реализующий SNMP и предоставляющий доступ к Management Information Base (MIB) — иерархической базе данных с описанием управляемых объектов (OID — Object Identifier);</li>
+<li class=""><strong>Manager</strong> — система мониторинга (<a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro>Zabbix — практикум</a>, LibreNMS, Cacti), отправляющая запросы (GET, GETNEXT, GETBULK) и получающая ответы.</li>
+</ul>
+<p>SNMP поддерживает три основных версии:</p>
+<ul>
+<li class=""><strong>v1</strong> — устаревшая, без шифрования, аутентификация по community string (открытым текстом);</li>
+<li class=""><strong>v2c</strong> — улучшенная производительность (bulk-операции), но та же слабая безопасность;</li>
+<li class=""><strong>v3</strong> — поддержка шифрования (AES, DES), аутентификации (MD5, SHA), управления доступом на уровне пользователей.</li>
+</ul>
+<p>Почему SNMP остаётся актуальным, несмотря на возраст:</p>
+<ul>
+<li class="">Универсальность: почти любое промышленное устройство имеет SNMP-агент "из коробки";</li>
+<li class="">Минимальные требования к ресурсам: реализация возможна даже на микроконтроллерах;</li>
+<li class="">Богатая модель данных: MIB описывает текущие значения, пороги, истории, события (traps).</li>
+</ul>
+<p>Ограничения:</p>
+<ul>
+<li class="">Сложность работы с MIB: необходимы соответствующие файлы для декодирования OID;</li>
+<li class="">Отсутствие встроенной поддержки push-модели (хотя traps частично её компенсируют);</li>
+<li class="">Низкая выразительность: SNMP передаёт скалярные значения, но не временные ряды, не распределения, не структурированные события.</li>
+</ul>
+<p>В современных инфраструктурах SNMP часто используется как "мост" для включения legacy-оборудования в единую систему мониторинга, а не как основной метод для приложений.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=алертинг>Алертинг<a href=#алертинг class=hash-link aria-label="Прямая ссылка на Алертинг" title="Прямая ссылка на Алертинг" translate=no>​</a></h3>
+<p>Мониторинг без алертинга — это запись истории. Алертинг — это механизм <strong>оперативного информирования</strong> о событиях, требующих внимания. Но важно: алерт не должен быть простой реакцией на превышение порога. Это распространённая ошибка, ведущая к "алерт-усталости" (alert fatigue), когда администраторы игнорируют уведомления из-за их избыточности.</p>
+<p>Корректный алертинг строится на трёх принципах:</p>
+<ol>
+<li class="">
+<p><strong>Ситуативность</strong> — срабатывание только при условии, что отклонение:</p>
+<ul>
+<li class="">Устойчиво (не кратковременный всплеск);</li>
+<li class="">Значимо (превышает шумовой фон);</li>
+<li class="">Коррелирует с другими индикаторами (например, рост ошибок + рост latency).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Градация критичности</strong> — не все события равнозначны:</p>
+<ul>
+<li class=""><strong>Warning</strong> — потенциальная проблема, требующая наблюдения (например, диск заполнен на 85 %);</li>
+<li class=""><strong>Critical</strong> — текущий инцидент, нарушающий SLA (диск заполнен на 98 %, сервис недоступен);</li>
+<li class=""><strong>Info</strong> — информационное событие без немедленного воздействия (рестарт сервиса по расписанию).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Информативность</strong> — уведомление должно содержать:</p>
+<ul>
+<li class="">Что произошло (наименование метрики, значение, порог);</li>
+<li class="">Где произошло (хост, сервис, окружение);</li>
+<li class="">Когда (точное время события);</li>
+<li class="">Почему это важно (ссылка на документацию, возможные последствия);</li>
+<li class="">Что можно сделать (рекомендации, ссылка на runbook).</li>
+</ul>
+</li>
+</ol>
+<p>Современные системы (Prometheus Alertmanager, Zabbix escalation) поддерживают группировку схожих алертов, подавление дубликатов, маршрутизацию по каналам (email, Slack, Telegram, PagerDuty) и интеграцию с системами управления инцидентами.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=логирование>Логирование<a href=#логирование class=hash-link aria-label="Прямая ссылка на Логирование" title="Прямая ссылка на Логирование" translate=no>​</a></h2>
+<p>Логирование — это <strong>целенаправленный процесс записи событий, происходящих в системе, с указанием времени, источника, контекста и уровня значимости</strong>. В отличие от метрик, которые показывают <em>состояние</em> системы в виде агрегированных числовых значений, логи фиксируют <em>последовательность действий</em> и <em>конкретные инциденты</em> — "что, когда, откуда и при каких условиях произошло".</p>
+<p>Лог — это не просто "ошибка в консоли". Это структурированная или полуструктурированная запись, предназначенная для:</p>
+<ul>
+<li class=""><strong>Диагностики сбоев</strong>: поиск корневой причины (root cause analysis) по цепочке событий;</li>
+<li class=""><strong>Аудита действий</strong>: фиксация операций пользователей, администраторов и автоматизированных систем;</li>
+<li class=""><strong>Соблюдения требований регуляторов</strong> (PCI DSS, GDPR, ФЗ-152, ГОСТ Р ИСО/МЭК 27001);</li>
+<li class=""><strong>Анализа поведения</strong>: выявление аномалий, мошеннических действий, неоптимальных сценариев;</li>
+<li class=""><strong>Восстановления после инцидентов</strong>: точное знание, что было изменено и когда.</li>
+</ul>
+<p>Главная инженерная задача логирования — обеспечить <strong>полноту без избыточности</strong>, <strong>надёжность без перегрузки</strong> и <strong>доступность без уязвимости</strong>. Слишком мало логов — невозможно проанализировать инцидент; слишком много — замедляется система, растут затраты на хранение, затрудняется поиск. Баланс достигается осознанным выбором: <em>что</em>, <em>на каком уровне детализации</em> и <em>на каком этапе жизненного цикла</em> логировать.</p>
+<div class="it-demo it-demo--loading">Загрузка интерактивного демо…</div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=уровни-логирования>Уровни логирования<a href=#уровни-логирования class=hash-link aria-label="Прямая ссылка на Уровни логирования" title="Прямая ссылка на Уровни логирования" translate=no>​</a></h3>
+<p>Современные системы логирования используют иерархическую модель уровней (log levels), определяющих важность записи. Порядок строго восходящий — события более высокого уровня включают в себя все более низкие:</p>
+<ol>
+<li class="">
+<p><strong>TRACE</strong> — максимально детальная отладочная информация: вход/выход из методов, значения переменных, состояние объектов. Используется исключительно при разработке или глубокой диагностике. В эксплуатации, как правило, отключён.</p>
+</li>
+<li class="">
+<p><strong>DEBUG</strong> — информация, полезная для понимания внутреннего поведения приложения: инициализация компонентов, выбор конфигурации, промежуточные результаты вычислений. Включается временно при расследовании проблем.</p>
+</li>
+<li class="">
+<p><strong>INFO</strong> — ключевые этапы нормальной работы: запуск/остановка сервиса, успешная обработка крупных операций (загрузка данных, генерация отчёта), смена состояния системы. Это основной уровень для мониторинга жизненного цикла.</p>
+</li>
+<li class="">
+<p><strong>WARN</strong> — события, не нарушающие работу, но требующие внимания: использование устаревшего API, превышение рекомендованного порога, восстановление после временной ошибки (retry succeeded), неоптимальный путь выполнения.</p>
+</li>
+<li class="">
+<p><strong>ERROR</strong> — сбой операции, при котором запрос или задача не завершена успешно, но система продолжает работать: исключение в обработчике, недоступность внешнего сервиса с fallback, некорректные входные данные.</p>
+</li>
+<li class="">
+<p><strong>FATAL (CRITICAL)</strong> — катастрофическое событие, приводящее к остановке компонента или невозможности продолжения работы: нехватка памяти, отсутствие критического конфигурационного файла, фатальное исключение на уровне процесса.</p>
+</li>
+</ol>
+<p>Правильная настройка уровней — критически важна. Например, запись паролей или персональных данных на уровне INFO или DEBUG — грубое нарушение безопасности. Включение TRACE в продакшене — прямой путь к дисковому переполнению.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=структурированное-логирование>Структурированное логирование<a href=#структурированное-логирование class=hash-link aria-label="Прямая ссылка на Структурированное логирование" title="Прямая ссылка на Структурированное логирование" translate=no>​</a></h3>
+<p>Традиционный подход — запись в формате свободного текста:<br/>
+<code>2025-11-18 14:30:05 [ERROR] Database connection failed: timeout after 5000ms</code></p>
+<p>Этот формат плохо масштабируется: поиск по полю <code>duration</code>, агрегация по <code>error_type</code>, корреляция по <code>request_id</code> требуют регулярных выражений и ручной обработки.</p>
+<p><strong>Структурированное логирование</strong> — это запись событий в виде машиночитаемых объектов (обычно JSON), где каждое поле имеет чёткое назначение:</p>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"timestamp"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"2025-11-18T14:30:05.123Z"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"level"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"error"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"service"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"order-api"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"instance"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"order-api-7d5c8b9f4-2xklm"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"trace_id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"a1b2c3d4-e5f6-7890-g1h2-i3j4k5l6m7n8"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"span_id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"o9p0q1r2"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"event"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"db_connection_timeout"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"duration_ms"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">5000</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"db_host"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"postgres.prod"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"db_port"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">5432</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token property">"user_id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"usr_8831"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Преимущества:</p>
+<ul>
+<li class="">Прямая индексация полей без парсинга;</li>
+<li class="">Возможность построения аналитических запросов ("все ошибки подключения к БД за последние 24 ч с duration_ms > 3000");</li>
+<li class="">Естественная интеграция с системами поиска и визуализации (Elasticsearch, Loki);</li>
+<li class="">Поддержка распределённой трассировки через <code>trace_id</code> и <code>span_id</code>.</li>
+</ul>
+<p>Переход к структурированному формату — архитектурное решение, требующее согласования между разработчиками, администраторами и аналитиками на уровне соглашения о схеме (schema convention).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=системные-журналы-в-linux>Системные журналы в Linux<a href=#системные-журналы-в-linux class=hash-link aria-label="Прямая ссылка на Системные журналы в Linux" title="Прямая ссылка на Системные журналы в Linux" translate=no>​</a></h3>
+<p>В Linux существует два основных механизма системного логирования, часто работающих совместно:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=systemd-journald>systemd-journald<a href=#systemd-journald class=hash-link aria-label="Прямая ссылка на systemd-journald" title="Прямая ссылка на systemd-journald" translate=no>​</a></h4>
+<p>Ядро современной системы логирования в дистрибутивах с systemd. <code>journald</code> — это фоновый демон, который:</p>
+<ul>
+<li class="">Собирает логи ядра (через <code>/dev/kmsg</code>), демонов systemd (через <code>sd_journal_send()</code>), stdin/stderr сервисов;</li>
+<li class="">Хранит записи в бинарном, индексированном формате в <code>/var/log/journal/</code>;</li>
+<li class="">Поддерживает богатые метаданные: UID/GID, cgroup, SELinux context, boot ID, hostname;</li>
+<li class="">Обеспечивает быстрый поиск по полям (<code>journalctl _COMM=sshd PRIORITY=3</code>);</li>
+<li class="">Может перенаправлять логи в syslog-совместимые системы.</li>
+</ul>
+<p>Особенность: журнал по умолчанию может храниться <strong>только в памяти</strong> (volatile) или на диске (persistent). Это позволяет гибко управлять требованиями к надёжности и производительности.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=rsyslog--syslog-ng>rsyslog / syslog-ng<a href=#rsyslog--syslog-ng class=hash-link aria-label="Прямая ссылка на rsyslog / syslog-ng" title="Прямая ссылка на rsyslog / syslog-ng" translate=no>​</a></h4>
+<p>Классические syslog-демоны, реализующие стандарт RFC 5424. Они:</p>
+<ul>
+<li class="">Принимают сообщения по UDP/TCP/Unix-сокетам;</li>
+<li class="">Гибко маршрутизируют их по правилам (фильтрация по facility, severity, содержимому);</li>
+<li class="">Записывают в файлы, базы данных, отправляют по сети (в том числе в формате JSON);</li>
+<li class="">Обеспечивают долгосрочное хранение и архивацию (rotation, compression).</li>
+</ul>
+<p>Современная практика: <code>journald</code> служит первичным сборщиком (особенно для служб systemd), а <code>rsyslog</code> — как транспортный и архивный слой. <code>journald</code> передаёт сырые записи в <code>rsyslog</code>, который уже решает, куда их направить: в локальные файлы <code>/var/log/</code>, в централизованную систему (например, Elasticsearch) или в облачный бакет.</p>
+<p>Ключевые лог-файлы в традиционной схеме:</p>
+<ul>
+<li class=""><code>/var/log/messages</code> или <code>/var/log/syslog</code> — общие системные сообщения;</li>
+<li class=""><code>/var/log/auth.log</code> — события аутентификации (SSH, sudo, PAM);</li>
+<li class=""><code>/var/log/kern.log</code> — сообщения ядра;</li>
+<li class=""><code>/var/log/dpkg.log</code>, <code>/var/log/yum.log</code> — действия пакетного менеджера.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=системные-журналы-в-windows>Системные журналы в Windows<a href=#системные-журналы-в-windows class=hash-link aria-label="Прямая ссылка на Системные журналы в Windows" title="Прямая ссылка на Системные журналы в Windows" translate=no>​</a></h3>
+<p>Журнал событий Windows (Windows Event Log) — это централизованная, типизированная и защищённая подсистема, в отличие от децентрализованных текстовых файлов Linux. События записываются в иерархию журналов (logs), разделённых по назначению:</p>
+<ul>
+<li class=""><strong>Application</strong> — события от приложений, использующих Windows API (<code>ReportEvent</code>);</li>
+<li class=""><strong>Система</strong> — события от драйверов, служб и ядра ОС;</li>
+<li class=""><strong>Безопасность</strong> — события аудита: вход в систему, доступ к объектам, изменения политик;</li>
+<li class=""><strong>Setup</strong>, <strong>ForwardedEvents</strong>, <strong>HardwareEvents</strong> и др. — специализированные журналы.</li>
+</ul>
+<p>Каждая запись содержит:</p>
+<ul>
+<li class="">Уникальный идентификатор события (EventID);</li>
+<li class="">Уровень (Information, Warning, Error, Critical, Verbose);</li>
+<li class="">Источник (имя службы или приложения);</li>
+<li class="">Время создания;</li>
+<li class="">Детализированные данные (XML-блок с параметрами — <code>EventData</code>, <code>UserData</code>);</li>
+<li class="">Контекст безопасности (SID пользователя, домен).</li>
+</ul>
+<p>Для работы используются:</p>
+<ul>
+<li class=""><code>eventvwr.msc</code> — графический просмотрщик;</li>
+<li class=""><code>wevtutil</code> — командная утилита управления (экспорт, очистка, настройка подписок);</li>
+<li class="">PowerShell (<code>Get-WinEvent</code>, <code>Get-EventLog</code>) — для автоматизации и фильтрации;</li>
+<li class="">WEF (Windows Event Forwarding) и WEC (Windows Event Collector) — для централизованного сбора в доменной среде.</li>
+</ul>
+<p>Важно: журнал Безопасность требует явного включения политики аудита (Local Security Policy → Audit Policy). Без этого критически важные события (например, неудачные попытки входа) не фиксируются.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=логи-приложений>Логи приложений<a href=#логи-приложений class=hash-link aria-label="Прямая ссылка на Логи приложений" title="Прямая ссылка на Логи приложений" translate=no>​</a></h3>
+<p>Прикладные логи генерируются самими программами и могут храниться по-разному:</p>
+<ol>
+<li class="">
+<p><strong>Локальные файлы</strong> (<code>app.log</code>, <code>error.log</code>) — простой, но ненадёжный способ. Проблемы:</p>
+<ul>
+<li class="">Отсутствие ротации → заполнение диска;</li>
+<li class="">Сложность сбора с множества серверов;</li>
+<li class="">Нет защиты от подделки.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>stdout/stderr контейнера</strong> — стандарт в Docker/Kubernetes. Логи захватываются движком контейнеризации и могут быть:</p>
+<ul>
+<li class="">Перехвачены агентом (например, Fluent Bit) и отправлены в централизованную систему;</li>
+<li class="">Записаны в файлы на хосте через volume;</li>
+<li class="">Отправлены напрямую в stdout контейнера, где их считывает sidecar-агент.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Сетевая передача</strong> — приложение само отправляет логи по TCP/UDP/gRPC в агgregator (например, в Loki, Elasticsearch или syslog-сервер). Преимущество — отказоустойчивость (буферизация, retry), недостаток — зависимость от сети и усложнение конфигурации приложения.</p>
+</li>
+</ol>
+<p>Современный паттерн — <strong>логирование в stdout + sidecar-агент</strong>. Приложение ничего не знает о конечной системе хранения: оно пишет структурированный JSON в stdout. Агент, работающий в том же Pod (Kubernetes) или на хосте, собирает поток, обогащает метаданными (namespace, pod name, labels), сжимает и отправляет в центр.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=логи-аудита>Логи аудита<a href=#логи-аудита class=hash-link aria-label="Прямая ссылка на Логи аудита" title="Прямая ссылка на Логи аудита" translate=no>​</a></h3>
+<p>Аудиторские логи — особый класс, регулируемый законодательно и политиками безопасности. Их цель — <strong>восстановить цепочку действий с привязкой к субъекту</strong>.</p>
+<p>Ключевые требования:</p>
+<ul>
+<li class=""><strong>Непротиворечивость</strong>: запрет на удаление или изменение записей (write-once, append-only);</li>
+<li class=""><strong>Привязка к идентификатору</strong>: <code>CN=Timur.Tagirov,OU=IT,O=Corp</code>;</li>
+<li class=""><strong>Покрытие критических операций</strong>: вход в систему, повышение привилегий (sudo, runas), изменение политик, доступ к конфиденциальным данным, изменение конфигурации безопасности;</li>
+<li class=""><strong>Синхронизация времени</strong>: использование NTP с единым источником для всех узлов.</li>
+</ul>
+<p>В Linux аудит обеспечивается подсистемой <strong>auditd</strong> (Linux Audit Framework), которая работает на уровне ядра и фиксирует системные вызовы (<code>execve</code>, <code>open</code>, <code>setuid</code>) по заданным правилам (<code>auditctl -a always,exit -F arch=b64 -S execve</code>).</p>
+<p>В Windows — через <strong>Advanced Audit Policy</strong>, где можно настроить детализацию по категориям:</p>
+<ul>
+<li class="">Account Logon, Logon/Logoff</li>
+<li class="">Object Access (файлы, реестр, сетевые ресурсы)</li>
+<li class="">Privilege Use (назначение прав)</li>
+<li class="">Policy Change</li>
+</ul>
+<p>Аудиторские логи почти никогда не анализируются в реальном времени. Их основное применение — постфактумное расследование инцидентов, проверки на соответствие и судебные экспертизы.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=жизненный-цикл-логов>Жизненный цикл логов<a href=#жизненный-цикл-логов class=hash-link aria-label="Прямая ссылка на Жизненный цикл логов" title="Прямая ссылка на Жизненный цикл логов" translate=no>​</a></h3>
+<p>Управление логами — это процесс с чёткими этапами:</p>
+<table><thead><tr><th>Этап<th>Описание<th>Типичные инструменты<tbody><tr><td><strong>Генерация</strong><td>Запись события приложением или системой<td><code>logger</code>, <code>syslog()</code>, <code>console.log</code>, библиотеки (log4j, NLog, Winston)<tr><td><strong>Сбор и буферизация</strong><td>Агрегация потоков, защита от потерь при недоступности получателя<td><code>rsyslog</code>, <code>fluentd</code>, <code>vector</code>, <code>filebeat</code><tr><td><strong>Транспортировка</strong><td>Передача в централизованную систему<td>HTTP/HTTPS, gRPC, Kafka, AMQP<tr><td><strong>Индексация и хранение</strong><td>Поиск по содержимому, метаданным, временным диапазонам<td>Elasticsearch, OpenSearch, Loki (на базе объектного хранилища)<tr><td><strong>Визуализация и анализ</strong><td>Построение дашбордов, поисковых запросов, алертов по логам<td>Kibana, Grafana (с Loki), Splunk<tr><td><strong>Архивация и утилизация</strong><td>Перемещение "тёплых" данных в долгосрочное хранилище, удаление по политике<td>S3/GCS buckets, Glacier, автоматические политики retention</table>
+<p>Ключевой параметр — <strong>политика хранения (retention policy)</strong>. Она определяет:</p>
+<ul>
+<li class="">Сколько дней логи хранятся в "горячем" хранилище (быстрый поиск);</li>
+<li class="">Когда и куда они перемещаются в "холодное" (медленный, дешёвый доступ);</li>
+<li class="">Через сколько удаляются полностью.</li>
+</ul>
+<p>Политика должна балансировать между операционными, юридическими и финансовыми требованиями. Например:</p>
+<ul>
+<li class="">Системные логи — 30 дней "горячо", 180 дней "холодно";</li>
+<li class="">Логи аудита — 365 дней (требование PCI DSS);</li>
+<li class="">Логи приложений — 7–14 дней, если не требуется иное.</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=prometheus>Prometheus<a href=#prometheus class=hash-link aria-label="Прямая ссылка на Prometheus" title="Прямая ссылка на Prometheus" translate=no>​</a></h2>
+<p>Prometheus — это open-source система мониторинга и алертинга, изначально разработанная в SoundCloud и ставшая де-факто стандартом для cloud-native сред. Её архитектура выстроена вокруг трёх ключевых концепций: <strong>pull-модель</strong>, <strong>модель данных временных рядов</strong>, <strong>многоуровневая агрегация</strong>.</p>
+<div class="callout callout--tip"><div class=callout-title>Практикум</div><div class=callout-body><p>Пошаговая установка, PromQL, Grafana, Alertmanager, Loki, Tempo, Alloy, OpenTelemetry и k6 — <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro>Практикум Prometheus и Grafana</a>. Готовые запросы с разбором — <a class="" href=/lab/Примеры/11114>Prometheus + Grafana — запросы</a>.</div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=архитектурные-компоненты>Архитектурные компоненты<a href=#архитектурные-компоненты class=hash-link aria-label="Прямая ссылка на Архитектурные компоненты" title="Прямая ссылка на Архитектурные компоненты" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><strong>Prometheus Server</strong> — ядро системы:</p>
+<ul>
+<li class=""><strong>Retrieval</strong> — подсистема опроса (scraping) эндпоинтов <code>/metrics</code> по заданному расписанию (от 5 секунд и выше);</li>
+<li class=""><strong>TSDB (Time Series Database)</strong> — локальная база данных, оптимизированная под запись и выборку временных рядов с сжатием на диске;</li>
+<li class=""><strong>HTTP API и Web UI</strong> — интерфейс для запросов и визуализации (базовой);</li>
+<li class=""><strong>Rule Engine</strong> — выполнение правил записи (recording rules) и алертинга (alerting rules).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Экспортеры (exporters)</strong> — адаптеры для систем, не предоставляющих метрики в формате Prometheus:</p>
+<ul>
+<li class=""><code>node_exporter</code> — сбор системных метрик Linux/Windows;</li>
+<li class=""><code>mysqld_exporter</code>, <code>postgres_exporter</code> — метрики баз данных;</li>
+<li class=""><code>blackbox_exporter</code> — проверка доступности по HTTP, TCP, ICMP, DNS;</li>
+<li class=""><code>snmp_exporter</code> — интеграция с SNMP-устройствами.<br/>
+<!-- -->Экспортёр запускается рядом с целевым сервисом и транслирует его внутреннюю статистику в HTTP-эндпоинт с текстовым форматом.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Pushgateway</strong> — компонент для приёмки метрик от краткосрочных заданий (batch-процессов, CI/CD-стадий), которые не могут быть опрошены по pull. Работает как буфер: задание отправляет метрики по push, Prometheus опрашивает Pushgateway как обычный эндпоинт.</p>
+</li>
+<li class="">
+<p><strong>Alertmanager</strong> — отдельный сервис, управляющий жизненным циклом алертов:</p>
+<ul>
+<li class="">Группировка (grouping) — объединение похожих алертов (например, по <code>job</code> или <code>cluster</code>);</li>
+<li class="">Подавление (inhibition) — отключение вторичных алертов при наличии первичного (например, "сервис недоступен" подавляет "высокая latency" для того же сервиса);</li>
+<li class="">Маршрутизация — направление уведомлений в разные каналы (email, Slack, PagerDuty) в зависимости от меток.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=модель-данных-и-язык-запросов>Модель данных и язык запросов<a href=#модель-данных-и-язык-запросов class=hash-link aria-label="Прямая ссылка на Модель данных и язык запросов" title="Прямая ссылка на Модель данных и язык запросов" translate=no>​</a></h3>
+<p>Prometheus хранит данные как <strong>множество временных рядов</strong>, каждый из которых идентифицируется:</p>
+<ul>
+<li class="">Именем метрики (например, <code>http_requests_total</code>);</li>
+<li class="">Набором пар "ключ=значение" — метками (labels): <code>&amp;#123;job="api", instance="10.0.1.5:8080", method="POST", status="500"&amp;#125;</code>.</li>
+</ul>
+<p>Язык запросов <strong>PromQL</strong> позволяет:</p>
+<ul>
+<li class="">Выбирать ряды по имени и меткам (<code>http_requests_total&amp;#123;status=~"5.."&amp;#125;</code>);</li>
+<li class="">Вычислять скорости (<code>rate(http_requests_total[5m])</code>);</li>
+<li class="">Агрегировать по меткам (<code>sum by (job) (rate(http_requests_total[5m]))</code>);</li>
+<li class="">Сравнивать текущее значение с историческим (<code>http_requests_total > avg_over_time(http_requests_total[1h]) * 1.5</code>).</li>
+</ul>
+<p>Примеры с построчным разбором — <a class="" href=/lab/Примеры/11114>Prometheus + Grafana — запросы</a>:</p>
+<ul>
+<li class=""><code>up</code>;</li>
+<li class=""><code>rate</code>;</li>
+<li class="">CPU;</li>
+<li class="">HTTP;</li>
+<li class="">P99;</li>
+<li class="">алерты.</li>
+</ul>
+<p>Важно: Prometheus <strong>не предназначен для долгосрочного хранения</strong> (по умолчанию — 15 дней). Для архивации используются внешние решения: Thanos, Cortex, Mimir или запись в InfluxDB/OpenTSDB через remote_write.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=особенности-развёртывания>Особенности развёртывания<a href=#особенности-развёртывания class=hash-link aria-label="Прямая ссылка на Особенности развёртывания" title="Прямая ссылка на Особенности развёртывания" translate=no>​</a></h3>
+<ul>
+<li class="">Однонодовая установка подходит для тестовых сред и небольших инфраструктур (&lt; 100 целей);</li>
+<li class="">Для горизонтального масштабирования применяются:<!-- -->
+<ul>
+<li class=""><strong>Sharding</strong> — разделение целей между несколькими серверами Prometheus по меткам;</li>
+<li class=""><strong>Federation</strong> — агрегация данных из нескольких Prometheus-серверов на центральном уровне;</li>
+<li class=""><strong>Thanos/Cortex</strong> — глобальный запросный слой с долгосрочным хранением в объектном хранилище (S3, GCS).</li>
+</ul>
+</li>
+<li class="">Конфигурация задаётся в YAML, поддерживает service discovery (Kubernetes, Consul, DNS) для динамического обнаружения целей.</li>
+</ul>
+<p>Prometheus — не универсальная система. Он не подходит для:</p>
+<ul>
+<li class="">Логирования (нет полнотекстового поиска);</li>
+<li class="">Трассировки (хотя интегрируется с Jaeger/Tempo через <code>trace_id</code> в логах);</li>
+<li class="">Мониторинга чёрного ящика без экспортеров (требуется либо встраивание клиента, либо blackbox_exporter с ограниченной детализацией).</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=zabbix>Zabbix<a href=#zabbix class=hash-link aria-label="Прямая ссылка на Zabbix" title="Прямая ссылка на Zabbix" translate=no>​</a></h2>
+<p>Zabbix — enterprise-ориентированная open-source платформа, сочетающая мониторинг метрик, логов, сетевых устройств и бизнес-процессов в едином веб-интерфейсе. Её ключевое преимущество — <strong>единая модель управления</strong> для разнородных активов: физические серверы, виртуальные машины, сетевые устройства, облачные сервисы, пользовательские сценарии.</p>
+<div class="callout callout--tip"><div class=callout-title>Практикум</div><div class=callout-body><p>Пошаговая установка, первый хост, шаблоны и оповещения — <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro>Практикум Zabbix</a>.</div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=архитектура>Архитектура<a href=#архитектура class=hash-link aria-label="Прямая ссылка на Архитектура" title="Прямая ссылка на Архитектура" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><strong>Zabbix Server</strong> — центральный процесс:</p>
+<ul>
+<li class="">Управляет расписанием сбора данных;</li>
+<li class="">Хранит конфигурацию, историю, триггеры, действия;</li>
+<li class="">Работает с СУБД (PostgreSQL, MySQL, Oracle) как основным хранилищем.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Zabbix Proxy</strong> — промежуточный агент для распределённых сред:</p>
+<ul>
+<li class="">Собирает данные от хостов в удалённом офисе или облаке;</li>
+<li class="">Буферизует их при недоступности сервера;</li>
+<li class="">Снижает нагрузку на центральный сервер и сетевой трафик.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Zabbix Agent</strong> — лёгкий компонент, устанавливаемый на наблюдаемый хост:</p>
+<ul>
+<li class="">Поддерживает <strong>пассивные проверки</strong> (сервер запрашивает данные по TCP);</li>
+<li class="">Поддерживает <strong>активные проверки</strong> (агент сам отправляет данные по расписанию);</li>
+<li class="">Может выполнять локальные скрипты, собирать данные из JMX, SNMP, IPMI.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Zabbix Frontend</strong> — веб-интерфейс на PHP, предоставляющий:</p>
+<ul>
+<li class="">Настройку хостов, шаблонов, триггеров;</li>
+<li class="">Визуализацию (графики, сводные экраны, карты);</li>
+<li class="">Управление инцидентами и отчётность.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=модель-конфигурации>Модель конфигурации<a href=#модель-конфигурации class=hash-link aria-label="Прямая ссылка на Модель конфигурации" title="Прямая ссылка на Модель конфигурации" translate=no>​</a></h3>
+<p>Zabbix строится вокруг <strong>шаблонов (templates)</strong> — многократно используемых наборов:</p>
+<ul>
+<li class="">Элементов данных (items) — что и как собирать (CPU, свободное место, выполнение скрипта);</li>
+<li class="">Триггеров (triggers) — логические выражения на основе данных (например, <code>&amp;#123;host:System.cpu.load[all,avg1].last()&amp;#125;>5</code>);</li>
+<li class="">Графиков, карт, правил обнаружения.</li>
+</ul>
+<p>Шаблоны наследуются, могут включать другие шаблоны (например, "Linux Server" включает "Сеть Interface" и "Filesystem"), что обеспечивает консистентность.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=особенности>Особенности<a href=#особенности class=hash-link aria-label="Прямая ссылка на Особенности" title="Прямая ссылка на Особенности" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Auto-discovery</strong> — автоматическое обнаружение сетевых устройств, файловых систем, JMX-бивов, Docker-контейнеров;</li>
+<li class=""><strong>Low-level discovery (LLD)</strong> — динамическое создание элементов на основе шаблонов (например, появился новый диск — Zabbix сам добавит метрики для него);</li>
+<li class=""><strong>Web monitoring</strong> — проверка пользовательских сценариев ("зайти на сайт → кликнуть → проверить текст");</li>
+<li class=""><strong>Действия (actions)</strong> — реакция на события: отправка уведомлений, выполнение скриптов, интеграция с ITSM-системами (Jira, ServiceNow).</li>
+</ul>
+<p>Zabbix хорошо подходит для:</p>
+<ul>
+<li class="">Гибридных инфраструктур (on-prem + облако);</li>
+<li class="">Сред с большим количеством legacy-оборудования (благодаря SNMP, IPMI, SSH-проверкам);</li>
+<li class="">Организаций, где требуется единая точка управления и аудит всех действий.</li>
+</ul>
+<p>Ограничения:</p>
+<ul>
+<li class="">Монолитная архитектура сервера может стать узким местом при > 100 тыс. элементов данных;</li>
+<li class="">Менее гибок в аналитике по сравнению с PromQL;</li>
+<li class="">Веб-интерфейс требует значительных ресурсов при большом числе пользователей.</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=grafana>Grafana<a href=#grafana class=hash-link aria-label="Прямая ссылка на Grafana" title="Прямая ссылка на Grafana" translate=no>​</a></h2>
+<p>Grafana — <strong>платформа визуализации и анализа</strong>, способная подключаться к десяткам источников. Её основная функция — превращать сырые данные в понятные, интерактивные и действенные представления.</p>
+<div class="callout callout--tip"><div class=callout-title>Практикум</div><div class=callout-body><p>Дашборды, Explore, Unified Alerting и связка с Loki/Tempo — <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro>Практикум Prometheus и Grafana</a>, шаги 4–9. Запросы для панелей — <a class="" href=/lab/Примеры/11114>галерея PromQL</a>.</div></div>
+<p><img decoding=async loading=lazy alt="Дашборд Grafana (Windows Exporter) — CPU, сеть, диск и нагрузка хоста" src=/assets/images/image-6b54fcd10eeadd199d9310bc0fa7c1a8.png width=600 height=285 class=img_ev3q /></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ключевые-возможности>Ключевые возможности<a href=#ключевые-возможности class=hash-link aria-label="Прямая ссылка на Ключевые возможности" title="Прямая ссылка на Ключевые возможности" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><strong>Единый интерфейс для разнородных данных</strong>:</p>
+<ul>
+<li class="">Метрики: Prometheus, Zabbix, InfluxDB, Graphite, MySQL, PostgreSQL;</li>
+<li class="">Логи: Loki, Elasticsearch, Splunk, CloudWatch Logs;</li>
+<li class="">Трассировки: Tempo, Jaeger, Zipkin;</li>
+<li class="">Алерты: из любого поддерживаемого источника или через Grafana Alerting.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Дашборды с переменными</strong> — параметризация панелей:</p>
+<ul>
+<li class="">Выбор окружения (<code>prod</code>, <code>stage</code>), кластера, сервиса через выпадающий список;</li>
+<li class="">Автоподстановка в запросы (<code>rate(http_requests_total&amp;#123;job="$job"&amp;#125;[5m])</code>);</li>
+<li class="">Временные переменные (<code>$__interval</code> для адаптивного сглаживания).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Аннотации</strong> — наложение событий на графики:</p>
+<ul>
+<li class="">Деплои (из CI/CD: GitLab, Jenkins);</li>
+<li class="">Ручные заметки ("переконфигурация сети");</li>
+<li class="">Алерты (визуальная привязка к пику ошибок).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Grafana Alerting (Unified Alerting)</strong> — централизованное управление алертами:</p>
+<ul>
+<li class="">Определение правил в виде запросов к источникам данных;</li>
+<li class="">Гибкие условия (пороги, изменения во времени, статистические отклонения);</li>
+<li class="">Маршрутизация через контактные точки (notification policies);</li>
+<li class="">Поддержка silence (тишина) и группировка.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=архитектурные-аспекты>Архитектурные аспекты<a href=#архитектурные-аспекты class=hash-link aria-label="Прямая ссылка на Архитектурные аспекты" title="Прямая ссылка на Архитектурные аспекты" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Backend</strong> — Go-сервис, управляющий аутентификацией, RBAC, сохранением дашбордов;</li>
+<li class=""><strong>Frontend</strong> — React-приложение, работающее в браузере;</li>
+<li class=""><strong>Plugins</strong> — расширения для поддержки новых источников данных и панелей;</li>
+<li class=""><strong>Grafana Cloud / Enterprise</strong> — управляемые и расширенные версии с поддержкой SLA, SSO, аудита.</li>
+</ul>
+<p>Grafana не заменяет Prometheus или Zabbix — она дополняет их, предоставляя:</p>
+<ul>
+<li class="">Единое окно для сопоставления метрик, логов и трассировок ("correlation");</li>
+<li class="">Возможность создания executive-дашбордов для менеджмента;</li>
+<li class="">Инструменты для ad-hoc анализа ("а что было в этот момент в логах?").</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=elk-stack>ELK Stack<a href=#elk-stack class=hash-link aria-label="Прямая ссылка на ELK Stack" title="Прямая ссылка на ELK Stack" translate=no>​</a></h2>
+<p>Термин <strong>ELK Stack</strong> (Elasticsearch, Logstash, Kibana) исторически обозначал стек для централизованного логирования. Сегодня он трансформировался в <strong>Elastic Stack</strong>, включающий:</p>
+<ul>
+<li class=""><strong>Elasticsearch</strong> — распределённая поисковая и аналитическая база данных на базе Apache Lucene;</li>
+<li class=""><strong>Kibana</strong> — веб-интерфейс для визуализации, анализа и управления;</li>
+<li class=""><strong>Beats</strong> — лёгкие агенты сбора (Filebeat — логи, Metricbeat — метрики, Auditbeat — аудит, Heartbeat — uptime);</li>
+<li class=""><strong>Ingest Pipelines</strong> — преобразование данных внутри Elasticsearch (парсинг, обогащение, фильтрация);</li>
+<li class=""><strong>Machine Learning</strong> — обнаружение аномалий без задания порогов.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=почему-logstash-уступает-место-beats-и-ingest-pipelines>Почему Logstash уступает место Beats и Ingest Pipelines<a href=#почему-logstash-уступает-место-beats-и-ingest-pipelines class=hash-link aria-label="Прямая ссылка на Почему Logstash уступает место Beats и Ingest Pipelines" title="Прямая ссылка на Почему Logstash уступает место Beats и Ingest Pipelines" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><strong>Logstash</strong> — мощный ETL-процессор на JVM, поддерживающий сотни входов, фильтров и выходов. Но он:</p>
+<ul>
+<li class="">Требует значительных ресурсов (CPU, память);</li>
+<li class="">Сложен в конфигурировании (DSL на основе Ruby-подобного синтаксиса);</li>
+<li class="">Чаще используется как централизованный процессор для тяжёлых преобразований.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Beats</strong> — написаны на Go, потребляют минимум ресурсов, поддерживают TLS, сжатие, буферизацию. Они:</p>
+<ul>
+<li class="">Собирают данные на хосте;</li>
+<li class="">Отправляют напрямую в Elasticsearch или через Kafka/Redis;</li>
+<li class="">Позволяют делегировать парсинг в Ingest Pipelines (на стороне ES), упрощая развёртывание.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=модель-данных-и-поиск>Модель данных и поиск<a href=#модель-данных-и-поиск class=hash-link aria-label="Прямая ссылка на Модель данных и поиск" title="Прямая ссылка на Модель данных и поиск" translate=no>​</a></h3>
+<p>Elasticsearch хранит данные в <strong>индексах</strong>, разделённых на шарды. Каждая запись (документ) — JSON-объект с динамической схемой (mapping).</p>
+<p>Kibana предоставляет:</p>
+<ul>
+<li class=""><strong>Discover</strong> — интерактивный поиск по полям, фильтрация, сохранение запросов;</li>
+<li class=""><strong>Dashboard</strong> — композиция визуализаций (графики, таблицы, геокарты);</li>
+<li class=""><strong>Logs App</strong> — специализированный интерфейс для работы с логами (поиск по уровню, сервису, trace_id);</li>
+<li class=""><strong>Alerting</strong> — триггеры по условиям (threshold, anomaly, machine learning).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=современные-альтернативы-и-гибриды>Современные альтернативы и гибриды<a href=#современные-альтернативы-и-гибриды class=hash-link aria-label="Прямая ссылка на Современные альтернативы и гибриды" title="Прямая ссылка на Современные альтернативы и гибриды" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><strong>PLG-стек (Prometheus + Loki + Grafana)</strong> — более лёгкий и экономичный подход:</p>
+<ul>
+<li class="">Loki — "Prometheus для логов": индексирует только метки, хранит тело логов в объектном хранилище;</li>
+<li class="">LogQL — язык запросов, схожий с PromQL;</li>
+<li class="">Подходит для облачных сред с ограниченным бюджетом на хранение.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>EFK (Elasticsearch + Fluentd/Fluent Bit + Kibana)</strong> — популярный вариант в Kubernetes:</p>
+<ul>
+<li class="">Fluent Bit — ультралёгкий агент сбора (в 10–20 раз легче Filebeat);</li>
+<li class="">Fluentd — централизованный процессор (аналог Logstash, но на Ruby/C).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>OpenSearch</strong> — форк Elasticsearch (вследствие изменения лицензии Elastic NV), с Kibana-совместимым OpenSearch Dashboards. Используется в AWS, Red Hat, и других, где важна лицензионная независимость.</p>
+</li>
+</ul>
+<p>Выбор стека определяется:</p>
+<ul>
+<li class="">Требованиями к скорости поиска (Elasticsearch быстрее Loki для full-text);</li>
+<li class="">Бюджетом на хранение (Loki дешевле в 5–10 раз при том же объёме логов);</li>
+<li class="">Необходимостью аналитики в реальном времени (Elastic ML vs Loki с Grafana ML-плагинами);</li>
+<li class="">Политикой open-source в организации.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=три-столпа-наблюдаемости>Три столпа наблюдаемости<a href=#три-столпа-наблюдаемости class=hash-link aria-label="Прямая ссылка на Три столпа наблюдаемости" title="Прямая ссылка на Три столпа наблюдаемости" translate=no>​</a></h3>
+<p>Термин <em>observability</em> (наблюдаемость) ввёл в обиход инженерный подход, при котором стабильность системы обеспечивается реакцией на сбои и способностью <strong>понять внутреннее состояние по внешним проявлениям</strong> — даже в отсутствие заранее заданных метрик или логов. Для этого используется три взаимодополняющих источника данных:</p>
+<ol>
+<li class="">
+<p><strong>Метрики</strong> — отвечают на вопрос <em>"Что происходит в системе в целом?"</em><br/>
+<!-- -->Они предоставляют сжатое, агрегированное представление о состоянии: нагрузка, доступность, производительность. Метрики эффективны для обнаружения аномалий, построения базовых линий и алертинга по порогам. Однако они не объясняют <em>почему</em>: почему выросла latency? Какой конкретно запрос её вызвал?</p>
+</li>
+<li class="">
+<p><strong>Логи</strong> — отвечают на вопрос <em>"Что произошло и в какой последовательности?"</em><br/>
+<!-- -->Логи фиксируют дискретные события с контекстом: ошибка валидации, неудачная авторизация, запуск задачи. Они позволяют восстановить цепочку действий, но только если событие было залогировано. При высокой нагрузке логирование всех запросов становится накладным, а поиск иголки в стоге сена — медленным.</p>
+</li>
+<li class="">
+<p><strong>Трассировки (tracing)</strong> — отвечают на вопрос <em>"Как конкретный запрос прошёл через систему?"</em><br/>
+<!-- -->Распределённая трассировка фиксирует путь одного запроса через микросервисы, базы данных, очереди, внешние API. Каждая операция — <em>span</em> — содержит время начала, длительность, метаданные, ошибки. Объединяя <em>spans</em> по общему <code>trace_id</code>, можно увидеть "бутылочные горлышки", каскадные сбои, неоптимальные вызовы. Трассировка не заменяет логи — она структурирует их в контексте запроса.</p>
+</li>
+</ol>
+<p><strong>Интеграция — обязательна.</strong> Например:</p>
+<ul>
+<li class="">Алерт по метрике <code>http_request_duration_seconds&amp;#123;quantile="0.99"&amp;#125; > 2s</code> → переход в Grafana → фильтрация логов по <code>trace_id</code>, найденному через Tempo/Jaeger → просмотр конкретной трассировки → локализация медленного SQL-запроса в логе БД → оптимизация индекса.<br/>
+<!-- -->Без сквозного <code>trace_id</code>, передаваемого через заголовки (например, <code>traceparent</code> по стандарту W3C), такая корреляция невозможна.</li>
+</ul>
+<p>Современные стандарты (OpenTelemetry) обеспечивают единый способ генерации всех трёх типов данных из одного источника, устраняя фрагментацию инструментов.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=стратегия-построения-системы-наблюдаемости>Стратегия построения системы наблюдаемости<a href=#стратегия-построения-системы-наблюдаемости class=hash-link aria-label="Прямая ссылка на Стратегия построения системы наблюдаемости" title="Прямая ссылка на Стратегия построения системы наблюдаемости" translate=no>​</a></h3>
+<p>Внедрение мониторинга часто начинается с тактики: "сервер упал — поставим Zabbix". Такой подход ведёт к "островкам наблюдаемости" — разрозненным дашбордам, несогласованным метрикам, дублирующим алертам. Системный подход предполагает поэтапное развитие:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=этап-1-базовая-стабильность-реактивный-мониторинг>Этап 1. Базовая стабильность (реактивный мониторинг)<a href=#этап-1-базовая-стабильность-реактивный-мониторинг class=hash-link aria-label="Прямая ссылка на Этап 1. Базовая стабильность (реактивный мониторинг)" title="Прямая ссылка на Этап 1. Базовая стабильность (реактивный мониторинг)" translate=no>​</a></h4>
+<ul>
+<li class="">Цель: обнаружение полных отказов и критических ресурсных перегрузок.</li>
+<li class="">Показатели: доступность сервисов (HTTP 200 на <code>/health</code>), загрузка CPU > 95 %, свободное место на диске &lt; 5 %, память swap > 0.</li>
+<li class="">Инструменты: <code>node_exporter</code> + Prometheus + Alertmanager или <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro>Zabbix — практикум</a> с простыми триггерами.</li>
+<li class="">Результат: администратор узнаёт о проблеме <strong>после</strong> её возникновения, но до жалоб пользователей.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=этап-2-диагностическая-глубина-корреляционный-мониторинг>Этап 2. Диагностическая глубина (корреляционный мониторинг)<a href=#этап-2-диагностическая-глубина-корреляционный-мониторинг class=hash-link aria-label="Прямая ссылка на Этап 2. Диагностическая глубина (корреляционный мониторинг)" title="Прямая ссылка на Этап 2. Диагностическая глубина (корреляционный мониторинг)" translate=no>​</a></h4>
+<ul>
+<li class="">Цель: сокращение MTTR (Mean Time To Repair) за счёт быстрой локализации причины.</li>
+<li class="">Показатели: распределение ошибок по типам (4xx/5xx), latency по эндпоинтам, correlation между метриками и логами (например, рост <code>go_goroutines</code> + логи <code>deadlock detected</code>).</li>
+<li class="">Инструменты: структурированное логирование, <code>trace_id</code> в логах, дашборды в Grafana с перекрёстными ссылками.</li>
+<li class="">Результат: время диагностики сокращается с часов до минут.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=этап-3-проактивное-управление-прогностический-мониторинг>Этап 3. Проактивное управление (прогностический мониторинг)<a href=#этап-3-проактивное-управление-прогностический-мониторинг class=hash-link aria-label="Прямая ссылка на Этап 3. Проактивное управление (прогностический мониторинг)" title="Прямая ссылка на Этап 3. Проактивное управление (прогностический мониторинг)" translate=no>​</a></h4>
+<ul>
+<li class="">Цель: предотвращение инцидентов до нарушения SLA.</li>
+<li class="">Показатели: SLO (Service Level Objectives) и SLI (Service Level Indicators), error budgets, статистические аномалии (например, рост p99 latency на 20 % за 1 час при неизменной нагрузке).</li>
+<li class="">Инструменты: машинное обучение (Anomaly Detection в Elastic, Prophet в Grafana), SLO-расчёты в Prometheus (через recording rules), автоматизированные runbook’и при приближении к budget burn rate.</li>
+<li class="">Результат: администратор получает сигнал <strong>до</strong> того, как пользователь заметит проблему.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=этап-4-наблюдаемость-как-часть-жизненного-цикла>Этап 4. Наблюдаемость как часть жизненного цикла<a href=#этап-4-наблюдаемость-как-часть-жизненного-цикла class=hash-link aria-label="Прямая ссылка на Этап 4. Наблюдаемость как часть жизненного цикла" title="Прямая ссылка на Этап 4. Наблюдаемость как часть жизненного цикла" translate=no>​</a></h4>
+<ul>
+<li class="">Цель: встраивание телеметрии в каждый этап разработки и эксплуатации.</li>
+<li class="">Показатели: покрытие кода логами (log coverage), наличие метрик для всех критических путей, автоматические проверки при деплое ("если latency вырос на 50 % — откат").</li>
+<li class="">Инструменты: OpenTelemetry SDK в коде, synthetic monitoring (Healthchecks, Checkly), chaos engineering (Gremlin, Chaos Mesh) с мониторингом реакции.</li>
+<li class="">Результат: стабильность становится свойством системы, а не результатом героических усилий администратора.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=анти-паттерны-и-типичные-ошибки>Анти-паттерны и типичные ошибки<a href=#анти-паттерны-и-типичные-ошибки class=hash-link aria-label="Прямая ссылка на Анти-паттерны и типичные ошибки" title="Прямая ссылка на Анти-паттерны и типичные ошибки" translate=no>​</a></h3>
+<p>Даже при использовании передовых инструментов можно создать систему, которая вводит в заблуждение. Вот наиболее распространённые ошибки:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=алертинг-по-метрикам-без-контекста>Алертинг по метрикам без контекста<a href=#алертинг-по-метрикам-без-контекста class=hash-link aria-label="Прямая ссылка на Алертинг по метрикам без контекста" title="Прямая ссылка на Алертинг по метрикам без контекста" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Ошибка</strong>: <code>CPU > 80% → CRITICAL</code>.</li>
+<li class=""><strong>Проблема</strong>: на многоядерной машине кратковременный всплеск до 100 % на одном ядре — норма; фоновая задача может легально использовать 99 % CPU.</li>
+<li class=""><strong>Решение</strong>: алерт по <em>устойчивому</em> превышению, с учётом profile’я сервиса: <code>avg_over_time(node_cpu_seconds_total&amp;#123;mode="idle"&amp;#125;[10m]) &lt; 0.1</code> <strong>и</strong> <code>rate(http_requests_total[5m]) &lt; 0.1 * avg(rate(http_requests_total[1h]))</code> (низкая нагрузка при высокой загрузке — признак зацикливания).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=логирование-всего-на-всякий-случай>Логирование всего "на всякий случай"<a href=#логирование-всего-на-всякий-случай class=hash-link aria-label='Прямая ссылка на Логирование всего "на всякий случай"' title='Прямая ссылка на Логирование всего "на всякий случай"' translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Ошибка</strong>: запись всех запросов на уровне DEBUG в продакшен.</li>
+<li class=""><strong>Проблема</strong>: переполнение диска, снижение производительности, утечка персональных данных.</li>
+<li class=""><strong>Решение</strong>: динамическое логирование (feature flags), sampling (запись 1 % ошибок), строгая политика уровней и masking конфиденциальных полей.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=отсутствие-сквозной-идентификации>Отсутствие сквозной идентификации<a href=#отсутствие-сквозной-идентификации class=hash-link aria-label="Прямая ссылка на Отсутствие сквозной идентификации" title="Прямая ссылка на Отсутствие сквозной идентификации" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Ошибка</strong>: <code>trace_id</code> генерируется в каждом микросервисе заново.</li>
+<li class=""><strong>Проблема</strong>: невозможность проследить запрос от фронтенда до БД.</li>
+<li class=""><strong>Решение</strong>: единый стандарт передачи <code>traceparent</code> (W3C Trace Context) через HTTP-заголовки, gRPC metadata, сообщения очередей.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=мониторинг-только-своего-компонента>Мониторинг только "своего" компонента<a href=#мониторинг-только-своего-компонента class=hash-link aria-label='Прямая ссылка на Мониторинг только "своего" компонента' title='Прямая ссылка на Мониторинг только "своего" компонента' translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Ошибка</strong>: команда БД следит за <code>pg_stat_activity</code>, команда API — за <code>http_requests_total</code>, но никто не смотрит на <code>roundtrip_time = latency_api + latency_db</code>.</li>
+<li class=""><strong>Проблема</strong>: инциденты "проваливаются" между командами.</li>
+<li class=""><strong>Решение</strong>: end-to-end метрики и SLO, принадлежащие владельцу бизнес-процесса, а не технологии.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=игнорирование-стоимости-наблюдаемости>Игнорирование стоимости наблюдаемости<a href=#игнорирование-стоимости-наблюдаемости class=hash-link aria-label="Прямая ссылка на Игнорирование стоимости наблюдаемости" title="Прямая ссылка на Игнорирование стоимости наблюдаемости" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Ошибка</strong>: хранение всех логов в Elasticsearch "горячими" 180 дней.</li>
+<li class=""><strong>Проблема</strong>: затраты на инфраструктуру превышают стоимость самого приложения.</li>
+<li class=""><strong>Решение</strong>: tiered storage (hot/warm/cold/archive), агрегация логов в метрики (например, <code>count_over_time(&amp;#123;job="app"&amp;#125; |= "ERROR")[1h]</code> → <code>app_errors_total</code>), использование Loki для raw-логов.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=роль-системного-администратора-в-эпоху-наблюдаемости>Роль системного администратора в эпоху наблюдаемости<a href=#роль-системного-администратора-в-эпоху-наблюдаемости class=hash-link aria-label="Прямая ссылка на Роль системного администратора в эпоху наблюдаемости" title="Прямая ссылка на Роль системного администратора в эпоху наблюдаемости" translate=no>​</a></h3>
+<p>Традиционный администратор "чинил серверы". Современный — <strong>проектирует устойчивость</strong>. Его компетенции расширились:</p>
+<ul>
+<li class=""><strong>Архитектор телеметрии</strong>: определяет, какие метрики, логи и трассировки необходимы для удовлетворения SLO, проектирует схемы меток, политики хранения, топологию сбора.</li>
+<li class=""><strong>Инженер интеграции</strong>: настраивает обмен данными между системами (например, передача event’ов из Zabbix в Grafana, экспорт метрик в OpenTelemetry Collector).</li>
+<li class=""><strong>Аналитик инцидентов</strong>: владеет методами RCA (5 Whys, Fishbone), умеет строить causal graphs из метрик и логов.</li>
+<li class=""><strong>Наставник разработчиков</strong>: внедряет культуру наблюдаемости в команды: "если функция не имеет метрик — она не готова к продакшену".</li>
+<li class=""><strong>Хранитель данных</strong>: обеспечивает соответствие требованиям регуляторов по аудиту, шифрованию, retention.</li>
+</ul>
+<p>Ключевой сдвиг — от <em>реакции</em> к <em>предсказанию</em>, от <em>локального ремонта</em> к <em>системному дизайну</em>, от <em>владения сервером</em> к <em>ответственности за пользовательский опыт</em>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=перспективы>Перспективы<a href=#перспективы class=hash-link aria-label="Прямая ссылка на Перспективы" title="Прямая ссылка на Перспективы" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>OpenTelemetry как стандарт де-факто</strong><br/>
+<!-- -->Проект CNCF, объединяющий OpenTracing и OpenCensus, обеспечивает единый SDK, API и протокол (OTLP) для генерации метрик, логов и трассировок. Внедрение OTel устраняет vendor lock-in и упрощает замену бэкендов (например, переход с Jaeger на Tempo без изменения кода).</p>
+</li>
+<li class="">
+<p><strong>eBPF — наблюдаемость на уровне ядра без изменения приложений</strong><br/>
+<!-- -->Технология позволяет безопасно внедрять код в ядро Linux для сбора:</p>
+<ul>
+<li class="">Сетевой статистики по соединениям (без tcpdump);</li>
+<li class="">Времени выполнения системных вызовов;</li>
+<li class="">Блокировок и contention’а в приложениях.<br/>
+<!-- -->Инструменты: Pixie, Parca, Datadog eBPF Monitoring.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>SLO-ориентированный мониторинг</strong><br/>
+<!-- -->Вместо "CPU &lt; 80 %" — "99.9 % запросов должны завершаться за &lt; 500 мс в течение 30 дней". Error budget становится ключевым индикатором: если он исчерпан — новые фичи не выпускаются до стабилизации.</p>
+</li>
+<li class="">
+<p><strong>Объединение Безопасность и observability (SecObser)</strong><br/>
+<!-- -->Логи аудита, сетевые потоки, аномалии в поведении — всё это анализируется едиными pipeline’ами для обнаружения атак (например, рост <code>sudo</code> для неадминистративных учётных записей + необычный outbound-трафик).</p>
+</li>
+<li class="">
+<p><strong>Автономные системы диагностики</strong><br/>
+<!-- -->AI/ML-модели, обученные на исторических инцидентах, предлагают гипотезы о причинах сбоев и рекомендуют действия — "вероятно, утечка памяти в order-service, проверьте heap dump".</p>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=практикум--типовые-сценарии-диагностики-и-реагирования>Практикум — типовые сценарии диагностики и реагирования<a href=#практикум--типовые-сценарии-диагностики-и-реагирования class=hash-link aria-label="Прямая ссылка на Практикум — типовые сценарии диагностики и реагирования" title="Прямая ссылка на Практикум — типовые сценарии диагностики и реагирования" translate=no>​</a></h2>
+<p>Теория наблюдаемости реализуется в практике через <strong>структурированный подход к расследованию инцидентов</strong>. Опытный администратор движется по заранее отработанной методике, минимизируя время простоя и избегая ложных гипотез. Ниже — разбор пяти классических ситуаций, демонстрирующих, как метрики, логи и трассировки применяются в связке.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-1-сервис-стал-отвечать-медленно-но-не-падает>Сценарий 1. Сервис стал отвечать медленно, но не падает<a href=#сценарий-1-сервис-стал-отвечать-медленно-но-не-падает class=hash-link aria-label="Прямая ссылка на Сценарий 1. Сервис стал отвечать медленно, но не падает" title="Прямая ссылка на Сценарий 1. Сервис стал отвечать медленно, но не падает" translate=no>​</a></h3>
+<p><strong>Симптомы</strong>: пользователи жалуются на "тормоза", 5xx-ошибок нет, доступность по <code>/health</code> — 100 %.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-1-уточнение-что-замедлилось>Шаг 1. Уточнение —<em>что</em> замедлилось?<a href=#шаг-1-уточнение-что-замедлилось class=hash-link aria-label="Прямая ссылка на шаг-1-уточнение-что-замедлилось" title="Прямая ссылка на шаг-1-уточнение-что-замедлилось" translate=no>​</a></h4>
+<ul>
+<li class="">Проверяется дашборд по <strong>бизнес-метрикам</strong>:<!-- -->
+<ul>
+<li class="">Время завершения ключевых сценариев (например, "оформление заказа");</li>
+<li class="">Распределение времени ответа по эндпоинтам (<code>http_request_duration_seconds_bucket</code>).</li>
+</ul>
+</li>
+<li class=""><strong>Вывод</strong>: замедление только в <code>/api/checkout</code>, остальные эндпоинты в норме.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-2-локализация-где-возникает-задержка>Шаг 2. Локализация —<em>где</em> возникает задержка?<a href=#шаг-2-локализация-где-возникает-задержка class=hash-link aria-label="Прямая ссылка на шаг-2-локализация-где-возникает-задержка" title="Прямая ссылка на шаг-2-локализация-где-возникает-задержка" translate=no>​</a></h4>
+<ul>
+<li class="">Сравнивается:<!-- -->
+<ul>
+<li class="">Время ответа на уровне ingress-контроллера (например, Nginx <code>upstream_response_time</code>);</li>
+<li class="">Время обработки в самом приложении (<code>http_request_duration_seconds</code> внутри сервиса).</li>
+</ul>
+</li>
+<li class="">Если <code>upstream_response_time ≈ приложение</code> — проблема в коде или БД;</li>
+<li class="">Если <code>upstream_response_time &amp;gt;&amp;gt; приложение</code> — проблема в сети, DNS, TLS-handshake, балансировщике.</li>
+<li class=""><strong>Вывод</strong>: <code>upstream_response_time = 1.8s</code>, <code>приложение = 1.75s</code> → проблема внутри сервиса.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-3-глубинная-диагностика-почему>Шаг 3. Глубинная диагностика —<em>почему</em>?<a href=#шаг-3-глубинная-диагностика-почему class=hash-link aria-label="Прямая ссылка на шаг-3-глубинная-диагностика-почему" title="Прямая ссылка на шаг-3-глубинная-диагностика-почему" translate=no>​</a></h4>
+<ul>
+<li class="">Включается <strong>фильтрация логов</strong> по <code>endpoint="/api/checkout"</code> и уровню <code>ERROR/WARN</code>;</li>
+<li class="">В логах — повторяющееся сообщение: <code>DB query timeout after 1500ms</code>;</li>
+<li class="">Корреляция с метриками БД:<!-- -->
+<ul>
+<li class=""><code>pg_stat_statements_mean_time</code> для запроса <code>SELECT * FROM orders WHERE user_id = ? AND status = 'pending'</code> вырос с 50 мс до 1200 мс;</li>
+<li class=""><code>pg_locks</code> показывает рост <code>waiting</code>-блокировок.</li>
+</ul>
+</li>
+<li class="">Проверка индексов: отсутствует составной индекс по <code>(user_id, status)</code>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=реакция>Реакция<a href=#реакция class=hash-link aria-label="Прямая ссылка на Реакция" title="Прямая ссылка на Реакция" translate=no>​</a></h4>
+<ol>
+<li class="">Экстренно: увеличение таймаута соединения к БД (временная мера);</li>
+<li class="">Краткосрочно: добавление индекса (online DDL);</li>
+<li class="">Долгосрочно: внедрение slow-query log с автоматическим алертом при <code>duration > p95 * 2</code>;</li>
+<li class="">Профилактика: включение в CI/CD проверки плана запросов для всех новых миграций.</li>
+</ol>
+<blockquote>
+<p><strong>Ключевой принцип</strong>: <em>искать узкое место в цепочке обработки.</em></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-2-диск-заполняется-без-видимой-причины>Сценарий 2. Диск заполняется без видимой причины<a href=#сценарий-2-диск-заполняется-без-видимой-причины class=hash-link aria-label="Прямая ссылка на Сценарий 2. Диск заполняется без видимой причины" title="Прямая ссылка на Сценарий 2. Диск заполняется без видимой причины" translate=no>​</a></h3>
+<p><strong>Симптомы</strong>: алерт <code>node_filesystem_avail_bytes &lt; 10%</code>, рост за последние 2 часа с 40 % до 3 %.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-1-идентификация-источника-роста>Шаг 1. Идентификация источника роста<a href=#шаг-1-идентификация-источника-роста class=hash-link aria-label="Прямая ссылка на Шаг 1. Идентификация источника роста" title="Прямая ссылка на Шаг 1. Идентификация источника роста" translate=no>​</a></h4>
+<ul>
+<li class="">Проверяется <code>node_filesystem_size_bytes - node_filesystem_free_bytes</code> по точкам монтирования — рост только в <code>/var/log</code>;</li>
+<li class="">Запускается <code>du -sh /var/log/* | sort -hr</code> через агент (например, через Zabbix <code>System.run[...]</code> или Prometheus <code>process-exporter</code> с кастомным скриптом);</li>
+<li class=""><strong>Вывод</strong>: <code>/var/log/journal</code> растёт со скоростью 2 ГБ/час.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-2-анализ-содержимого>Шаг 2. Анализ содержимого<a href=#шаг-2-анализ-содержимого class=hash-link aria-label="Прямая ссылка на Шаг 2. Анализ содержимого" title="Прямая ссылка на Шаг 2. Анализ содержимого" translate=no>​</a></h4>
+<ul>
+<li class="">Просмотр последних записей: <code>journalctl --since "1 hour ago" | tail -n 100</code>;</li>
+<li class="">Обнаруживаются тысячи повторяющихся сообщений:<br/>
+<code>systemd[1]: Started Session c12345 of user nobody.</code><br/>
+<code>systemd[1]: Stopped Session c12345 of user nobody.</code></li>
+<li class="">Поиск по <code>session</code> в логах: цикл запуска/остановки сессий каждые 2 секунды.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-3-корреляция-с-сервисами>Шаг 3. Корреляция с сервисами<a href=#шаг-3-корреляция-с-сервисами class=hash-link aria-label="Прямая ссылка на Шаг 3. Корреляция с сервисами" title="Прямая ссылка на Шаг 3. Корреляция с сервисами" translate=no>​</a></h4>
+<ul>
+<li class="">Проверка <code>systemctl list-units --state=active | grep -E "(cron|timer)"</code>;</li>
+<li class="">Обнаружен таймер <code>cleanup-sessions.timer</code>, запускающий скрипт каждые 5 секунд;</li>
+<li class="">В скрипте — ошибка: вместо <code>systemctl stop session-$ID</code> он вызывает <code>loginctl terminate-session $ID</code>, что триггерит systemd на создание новой сессии.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=реакция-1>Реакция<a href=#реакция-1 class=hash-link aria-label="Прямая ссылка на Реакция" title="Прямая ссылка на Реакция" translate=no>​</a></h4>
+<ol>
+<li class="">Остановка таймера: <code>systemctl stop cleanup-sessions.timer</code>;</li>
+<li class="">Очистка журнала: <code>journalctl --vacuum-size=500M</code>;</li>
+<li class="">Исправление скрипта и тестирование в stage-среде;</li>
+<li class="">Внедрение метрики <code>rate(journal_messages_total&amp;#123;priority="info"&amp;#125;[5m])</code> с алертом при росте > 10× от baseline.</li>
+</ol>
+<blockquote>
+<p><strong>Ключевой принцип</strong>: <em>скорость роста логов — сама по себе метрика стабильности; аномальный всплеск — сигнал о зацикливании или ошибке в автоматизации.</em></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-3-периодические-падения-сервиса-в-ночное-время>Сценарий 3. Периодические падения сервиса в ночное время<a href=#сценарий-3-периодические-падения-сервиса-в-ночное-время class=hash-link aria-label="Прямая ссылка на Сценарий 3. Периодические падения сервиса в ночное время" title="Прямая ссылка на Сценарий 3. Периодические падения сервиса в ночное время" translate=no>​</a></h3>
+<p><strong>Симптомы</strong>: сервис недоступен ежедневно с 02:15 до 02:20, метрика <code>up&amp;#123;job="api"&amp;#125; == 0</code>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-1-исключение-внешних-факторов>Шаг 1. Исключение внешних факторов<a href=#шаг-1-исключение-внешних-факторов class=hash-link aria-label="Прямая ссылка на Шаг 1. Исключение внешних факторов" title="Прямая ссылка на Шаг 1. Исключение внешних факторов" translate=no>​</a></h4>
+<ul>
+<li class="">Проверка других сервисов в том же кластере — работают;</li>
+<li class="">Проверка инфраструктуры: CPU, память, сеть — в норме;</li>
+<li class=""><strong>Вывод</strong>: проблема специфична для одного сервиса.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-2-анализ-временных-меток>Шаг 2. Анализ временных меток<a href=#шаг-2-анализ-временных-меток class=hash-link aria-label="Прямая ссылка на Шаг 2. Анализ временных меток" title="Прямая ссылка на Шаг 2. Анализ временных меток" translate=no>​</a></h4>
+<ul>
+<li class="">Точное время падения: 02:15:03 ± 2 сек;</li>
+<li class="">Сравнение с расписанием:<!-- -->
+<ul>
+<li class="">Cron: <code>grep -r "15" /etc/cron* /var/spool/cron</code>;</li>
+<li class="">Kubernetes CronJob: <code>kubectl get cronjobs --all-namespaces</code>;</li>
+</ul>
+</li>
+<li class="">Обнаружен <code>daily-backup</code> CronJob, запускающийся в <code>15 2 * * *</code>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-3-диагностика-задания>Шаг 3. Диагностика задания<a href=#шаг-3-диагностика-задания class=hash-link aria-label="Прямая ссылка на Шаг 3. Диагностика задания" title="Прямая ссылка на Шаг 3. Диагностика задания" translate=no>​</a></h4>
+<ul>
+<li class="">Логи CronJob: <code>kubectl logs -l job-name=daily-backup-12345</code>;</li>
+<li class="">В логах — ошибка: <code>pg_dump: error: too many connections</code>;</li>
+<li class="">Метрики БД: в 02:15 резкий всплеск <code>pg_stat_activity_numbackends</code> до <code>max_connections</code>;</li>
+<li class="">Причина: бэкап-скрипт не использует пул соединений и запускает 50 параллельных <code>pg_dump</code>, каждый из которых открывает своё соединение.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=реакция-2>Реакция<a href=#реакция-2 class=hash-link aria-label="Прямая ссылка на Реакция" title="Прямая ссылка на Реакция" translate=no>​</a></h4>
+<ol>
+<li class="">Ограничение параллелизма в CronJob (<code>parallelism: 1</code>);</li>
+<li class="">Настройка <code>pg_dump</code> с <code>--jobs=4</code> и общим пулом;</li>
+<li class="">Внедрение pre-check: перед запуском — проверка <code>SELECT count(*) FROM pg_stat_activity WHERE state = 'active'</code>;</li>
+<li class="">Добавление метрики <code>cronjob_status&amp;#123;job="daily-backup"&amp;#125;</code> с алертом при <code>exit_code != 0</code>.</li>
+</ol>
+<blockquote>
+<p><strong>Ключевой принцип</strong>: <em>точное время инцидента — главная зацепка для поиска автоматизированных процессов; совпадение с расписанием почти всегда указывает на batch-задание.</em></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-4-рост-5xx-ошибок-без-изменения-кода>Сценарий 4. Рост 5xx-ошибок без изменения кода<a href=#сценарий-4-рост-5xx-ошибок-без-изменения-кода class=hash-link aria-label="Прямая ссылка на Сценарий 4. Рост 5xx-ошибок без изменения кода" title="Прямая ссылка на Сценарий 4. Рост 5xx-ошибок без изменения кода" translate=no>​</a></h3>
+<p><strong>Симптомы</strong>: за 10 минут доля 5xx выросла с 0.1 % до 15 %, деплойей не было.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-1-сегментация-ошибок>Шаг 1. Сегментация ошибок<a href=#шаг-1-сегментация-ошибок class=hash-link aria-label="Прямая ссылка на Шаг 1. Сегментация ошибок" title="Прямая ссылка на Шаг 1. Сегментация ошибок" translate=no>​</a></h4>
+<ul>
+<li class="">Разбивка по статус-кодам: <code>sum by (status) (rate(http_requests_total&amp;#123;status=~"5.."&amp;#125;[5m]))</code>;</li>
+<li class="">95 % — <code>502 Bad Gateway</code>, остальное — <code>504 Gateway Timeout</code>;</li>
+<li class=""><strong>Вывод</strong>: проблема на уровне шлюза (Nginx, API Gateway).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-2-анализ-upstreamов>Шаг 2. Анализ upstream’ов<a href=#шаг-2-анализ-upstreamов class=hash-link aria-label="Прямая ссылка на Шаг 2. Анализ upstream’ов" title="Прямая ссылка на Шаг 2. Анализ upstream’ов" translate=no>​</a></h4>
+<ul>
+<li class="">Метрики Nginx:<!-- -->
+<ul>
+<li class=""><code>nginx_upstream_response_time</code> — рост до 30s;</li>
+<li class=""><code>nginx_upstream_status&amp;#123;upstream="api", status="5xx"&amp;#125;</code> — коррелирует с общим ростом;</li>
+<li class=""><code>nginx_upstream_fails</code> — резкий всплеск.</li>
+</ul>
+</li>
+<li class="">Проверка доступности upstream’ов: <code>curl -s -o /dev/null -w "%&amp;#123;http_code&amp;#125;" http://api:8080/health</code>; см. <a class="" href=/encyclopedia/2-system-network/2-05-terminal/1133>утилита curl</a>, <a class="" href=/lab/Примеры/1133>curl / fetch — примеры</a> для health-check в runbook;</li>
+<li class=""><strong>Результат</strong>: 50 % запросов возвращают <code>500</code>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-3-глубина-в-приложение>Шаг 3. Глубина в приложение<a href=#шаг-3-глубина-в-приложение class=hash-link aria-label="Прямая ссылка на Шаг 3. Глубина в приложение" title="Прямая ссылка на Шаг 3. Глубина в приложение" translate=no>​</a></h4>
+<ul>
+<li class="">Логи <code>api</code>-сервиса: массовые ошибки <code>Connection refused</code> при подключении к <code>redis</code>;</li>
+<li class="">Метрики Redis:<!-- -->
+<ul>
+<li class=""><code>redis_connected_clients</code> — 0;</li>
+<li class=""><code>redis_uptime_in_seconds</code> — обнулился 12 минут назад.</li>
+</ul>
+</li>
+<li class="">Вывод: Redis перезапустился (возможно, OOM-killer).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-4-причина-перезапуска>Шаг 4. Причина перезапуска<a href=#шаг-4-причина-перезапуска class=hash-link aria-label="Прямая ссылка на Шаг 4. Причина перезапуска" title="Прямая ссылка на Шаг 4. Причина перезапуска" translate=no>​</a></h4>
+<ul>
+<li class="">Системные логи хоста: <code>grep -i "killed process" /var/log/messages</code>;</li>
+<li class="">Запись: <code>Out of memory: Kill process 12345 (redis-server)</code>.</li>
+<li class="">Анализ использования памяти:<!-- -->
+<ul>
+<li class=""><code>redis_memory_used_bytes</code> рос экспоненциально последние 24 часа;</li>
+<li class="">Причина: новый функционал начал кэшировать <em>все</em> сессии без TTL.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=реакция-3>Реакция<a href=#реакция-3 class=hash-link aria-label="Прямая ссылка на Реакция" title="Прямая ссылка на Реакция" translate=no>​</a></h4>
+<ol>
+<li class="">Экстренно: увеличение лимита памяти для Redis, установка <code>maxmemory-policy=allkeys-lru</code>;</li>
+<li class="">Краткосрочно: добавление TTL к кэшируемым объектам;</li>
+<li class="">Долгосрочно: введение метрики <code>rate(redis_memory_used_bytes[1h])</code> с алертом при положительном тренде;</li>
+<li class="">Профилактика: memory profiling в staging перед релизом.</li>
+</ol>
+<blockquote>
+<p><strong>Ключевой принцип</strong>: <em>5xx-ошибки на шлюзе — почти всегда означают проблему у upstream’а; диагностика должна идти "вглубь стека", а не "вширь сервисов".</em></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-5-неудачные-попытки-входа-в-админку>Сценарий 5. Неудачные попытки входа в админку<a href=#сценарий-5-неудачные-попытки-входа-в-админку class=hash-link aria-label="Прямая ссылка на Сценарий 5. Неудачные попытки входа в админку" title="Прямая ссылка на Сценарий 5. Неудачные попытки входа в админку" translate=no>​</a></h3>
+<p><strong>Симптомы</strong>: алерт <code>rate(failed_logins_total[5m]) > 10</code>, исходящие из одного IP.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-1-верификация-инцидента>Шаг 1. Верификация инцидента<a href=#шаг-1-верификация-инцидента class=hash-link aria-label="Прямая ссылка на Шаг 1. Верификация инцидента" title="Прямая ссылка на Шаг 1. Верификация инцидента" translate=no>​</a></h4>
+<ul>
+<li class="">Проверка логов аутентификации:<!-- -->
+<ul>
+<li class="">Linux: <code>journalctl _COMM=sshd | grep "Failed password"</code>;</li>
+<li class="">Приложение: <code>&amp;#123;service="admin-panel"&amp;#125; |~ "invalid credentials"</code>.</li>
+</ul>
+</li>
+<li class="">Подтверждение: 120 попыток за 3 минуты с <code>185.143.22.77</code>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-2-оценка-риска>Шаг 2. Оценка риска<a href=#шаг-2-оценка-риска class=hash-link aria-label="Прямая ссылка на Шаг 2. Оценка риска" title="Прямая ссылка на Шаг 2. Оценка риска" translate=no>​</a></h4>
+<ul>
+<li class="">Проверка:<!-- -->
+<ul>
+<li class="">Использовался ли валидный логин? (<code>... for user "admin"</code>);</li>
+<li class="">Есть ли успешные входы с этого IP ранее? (<code>grep "Accepted" /var/log/auth.log | grep 185.143.22.77</code>);</li>
+<li class="">Блокировка уже активна? (<code>fail2ban-client status sshd</code>).</li>
+</ul>
+</li>
+<li class=""><strong>Вывод</strong>: атака брутфорсом по известному логину <code>admin</code>, fail2ban не настроен.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-3-реакция-по-протоколу>Шаг 3. Реакция по протоколу<a href=#шаг-3-реакция-по-протоколу class=hash-link aria-label="Прямая ссылка на Шаг 3. Реакция по протоколу" title="Прямая ссылка на Шаг 3. Реакция по протоколу" translate=no>​</a></h4>
+<ol>
+<li class=""><strong>Немедленно</strong>:<!-- -->
+<ul>
+<li class="">Блокировка IP на уровне фаервола: <code>iptables -A INPUT -s 185.143.22.77 -j DROP</code>;</li>
+<li class="">Сброс активных сессий: <code>pkill -u admin</code> (если вход был успешен).</li>
+</ul>
+</li>
+<li class=""><strong>Краткосрочно</strong>:<!-- -->
+<ul>
+<li class="">Включение fail2ban с политикой <code>maxretry = 3</code>, <code>bantime = 1d</code>;</li>
+<li class="">Отключение входа под <code>root</code> и <code>admin</code> по паролю (только SSH-ключи).</li>
+</ul>
+</li>
+<li class=""><strong>Долгосрочно</strong>:<!-- -->
+<ul>
+<li class="">Внедрение 2FA для админ-панелей;</li>
+<li class="">Мониторинг <code>rate(failed_logins_total&amp;#123;login=~"^(admin|root|test)$"&amp;#125;)</code> как индикатора целевых атак.</li>
+</ul>
+</li>
+</ol>
+<blockquote>
+<p><strong>Ключевой принцип</strong>: <em>события безопасности требуют технической и процедурной реакции; автоматизация (fail2ban) дополняется, но не заменяет ручной верификации.</em></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=общая-методология-расследования-итоговая-схема>Общая методология расследования (итоговая схема)<a href=#общая-методология-расследования-итоговая-схема class=hash-link aria-label="Прямая ссылка на Общая методология расследования (итоговая схема)" title="Прямая ссылка на Общая методология расследования (итоговая схема)" translate=no>​</a></h3>
+<p>Любой инцидент можно диагностировать по единому алгоритму:</p>
+<table><thead><tr><th>Шаг<th>Цель<th>Инструменты<th>Проверяемый вопрос<tbody><tr><td><strong>1. Подтверждение</strong><td>Убедиться, что событие реально<td>Метрики доступности, логи, synthetic checks<td>"Это ошибка измерения или реальный инцидент?"<tr><td><strong>2. Сегментация</strong><td>Выделить зону поражения<td>Фильтрация по меткам (service, instance, endpoint)<td>"Что именно нарушено? Где границы?"<tr><td><strong>3. Корреляция</strong><td>Связать с другими событиями<td>Совмещение временных рядов, <code>trace_id</code>, события аудита<td>"Что происходило в системе в этот момент?"<tr><td><strong>4. Локализация</strong><td>Найти узкое место<td>Сравнение метрик на границах компонентов (ingress → app → DB)<td>"Где возникает отклонение?"<tr><td><strong>5. Верификация гипотезы</strong><td>Подтвердить причину<td>Логи (ошибки), профилирование, репликация в тестовой среде<td>"Почему это происходит?"<tr><td><strong>6. Реакция</strong><td>Устранить и предотвратить<td>Runbook, автоматизированные действия, изменение кода/конфигурации<td>"Как остановить сейчас и не допустить в будущем?"</table>
+<p>Эта схема не зависит от инструментов — она применима и в среде с Zabbix+rsyslog, и в cloud-native стеке с Prometheus+Loki+Tempo.</p>
+<hr/>
+<!-- -->
+<div class="callout callout--tip"><div class=callout-title>Основа по протоколу</div><div class=callout-body><p>Базовый разбор HTTP и HTTPS находится в отдельной статье — <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118>HTTP как основа веб-интеграций</a>.</div></div></div><!--$--><!--/$--><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/engineer>engineer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architector>architector</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/required>required</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/beginner>beginner</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-06-03T23:45:28.000Z itemprop=dateModified>3 июн. 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Работа с базами данных в администрировании</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Администрирование Linux-систем</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#метрика-мониторинг-и-логирование class="table-of-contents__link toc-highlight">Метрика, мониторинг и логирование</a><ul><li><a href=#стабильность class="table-of-contents__link toc-highlight">Стабильность</a><li><a href=#что-такое-стабильность-системы class="table-of-contents__link toc-highlight">Что такое стабильность системы</a><li><a href=#признаки-нестабильности class="table-of-contents__link toc-highlight">Признаки нестабильности</a><li><a href=#измерение-стабильности class="table-of-contents__link toc-highlight">Измерение стабильности</a><li><a href=#метрики class="table-of-contents__link toc-highlight">Метрики</a></ul><li><a href=#мониторинг class="table-of-contents__link toc-highlight">Мониторинг</a><ul><li><a href=#как-система-выполняет-измерения class="table-of-contents__link toc-highlight">Как система выполняет измерения</a><li><a href=#агенты class="table-of-contents__link toc-highlight">Агенты</a><li><a href=#snmp class="table-of-contents__link toc-highlight">SNMP</a><li><a href=#алертинг class="table-of-contents__link toc-highlight">Алертинг</a></ul><li><a href=#логирование class="table-of-contents__link toc-highlight">Логирование</a><ul><li><a href=#уровни-логирования class="table-of-contents__link toc-highlight">Уровни логирования</a><li><a href=#структурированное-логирование class="table-of-contents__link toc-highlight">Структурированное логирование</a><li><a href=#системные-журналы-в-linux class="table-of-contents__link toc-highlight">Системные журналы в Linux</a><li><a href=#системные-журналы-в-windows class="table-of-contents__link toc-highlight">Системные журналы в Windows</a><li><a href=#логи-приложений class="table-of-contents__link toc-highlight">Логи приложений</a><li><a href=#логи-аудита class="table-of-contents__link toc-highlight">Логи аудита</a><li><a href=#жизненный-цикл-логов class="table-of-contents__link toc-highlight">Жизненный цикл логов</a></ul><li><a href=#prometheus class="table-of-contents__link toc-highlight">Prometheus</a><ul><li><a href=#архитектурные-компоненты class="table-of-contents__link toc-highlight">Архитектурные компоненты</a><li><a href=#модель-данных-и-язык-запросов class="table-of-contents__link toc-highlight">Модель данных и язык запросов</a><li><a href=#особенности-развёртывания class="table-of-contents__link toc-highlight">Особенности развёртывания</a></ul><li><a href=#zabbix class="table-of-contents__link toc-highlight">Zabbix</a><ul><li><a href=#архитектура class="table-of-contents__link toc-highlight">Архитектура</a><li><a href=#модель-конфигурации class="table-of-contents__link toc-highlight">Модель конфигурации</a><li><a href=#особенности class="table-of-contents__link toc-highlight">Особенности</a></ul><li><a href=#grafana class="table-of-contents__link toc-highlight">Grafana</a><ul><li><a href=#ключевые-возможности class="table-of-contents__link toc-highlight">Ключевые возможности</a><li><a href=#архитектурные-аспекты class="table-of-contents__link toc-highlight">Архитектурные аспекты</a></ul><li><a href=#elk-stack class="table-of-contents__link toc-highlight">ELK Stack</a><ul><li><a href=#почему-logstash-уступает-место-beats-и-ingest-pipelines class="table-of-contents__link toc-highlight">Почему Logstash уступает место Beats и Ingest Pipelines</a><li><a href=#модель-данных-и-поиск class="table-of-contents__link toc-highlight">Модель данных и поиск</a><li><a href=#современные-альтернативы-и-гибриды class="table-of-contents__link toc-highlight">Современные альтернативы и гибриды</a><li><a href=#три-столпа-наблюдаемости class="table-of-contents__link toc-highlight">Три столпа наблюдаемости</a><li><a href=#стратегия-построения-системы-наблюдаемости class="table-of-contents__link toc-highlight">Стратегия построения системы наблюдаемости</a><li><a href=#анти-паттерны-и-типичные-ошибки class="table-of-contents__link toc-highlight">Анти-паттерны и типичные ошибки</a><li><a href=#роль-системного-администратора-в-эпоху-наблюдаемости class="table-of-contents__link toc-highlight">Роль системного администратора в эпоху наблюдаемости</a><li><a href=#перспективы class="table-of-contents__link toc-highlight">Перспективы</a></ul><li><a href=#практикум--типовые-сценарии-диагностики-и-реагирования class="table-of-contents__link toc-highlight">Практикум — типовые сценарии диагностики и реагирования</a><ul><li><a href=#сценарий-1-сервис-стал-отвечать-медленно-но-не-падает class="table-of-contents__link toc-highlight">Сценарий 1. Сервис стал отвечать медленно, но не падает</a><li><a href=#сценарий-2-диск-заполняется-без-видимой-причины class="table-of-contents__link toc-highlight">Сценарий 2. Диск заполняется без видимой причины</a><li><a href=#сценарий-3-периодические-падения-сервиса-в-ночное-время class="table-of-contents__link toc-highlight">Сценарий 3. Периодические падения сервиса в ночное время</a><li><a href=#сценарий-4-рост-5xx-ошибок-без-изменения-кода class="table-of-contents__link toc-highlight">Сценарий 4. Рост 5xx-ошибок без изменения кода</a><li><a href=#сценарий-5-неудачные-попытки-входа-в-админку class="table-of-contents__link toc-highlight">Сценарий 5. Неудачные попытки входа в админку</a><li><a href=#общая-методология-расследования-итоговая-схема class="table-of-contents__link toc-highlight">Общая методология расследования (итоговая схема)</a></ul></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-zabbix><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Zabbix"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Zabbix</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="7 элементов">7 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-prometheus-и-grafana><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Prometheus и Grafana"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Prometheus и Grafana</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="11 элементов">11 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title=Администрирование><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Администрирование</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.">Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Диагностика производительности Linux"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Диагностика производительности Linux</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.">Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Установка и первоначальная настройка ОС"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Установка и первоначальная настройка ОС</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер.">Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><h2 class="theme-doc-card-heading cardTitle_mcqP" title=ИТ-инфраструктура><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">ИТ-инфраструктура</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.">Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые аномалии и системные процессы"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые аномалии и системные процессы</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.">Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Настройка и обслуживание серверов"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Настройка и обслуживание серверов</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.">Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Групповые политики в Windows"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeBrand_aO30 badgeSm_CPs0" style=background:#5E5E5E aria-hidden=true><svg class=svg_CnCY role=img aria-label=Microsoft width=22 height=22 viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.628h11.377V24H0zm12.623 0H24V24H12.623z" fill=#ffffff /></svg></span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Групповые политики в Windows</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций.">Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Конфигурация рабочих станций"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Конфигурация рабочих станций</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.">Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые подключения и диагностика"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые подключения и диагностика</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.">Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Организация домашней сети"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Организация домашней сети</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.">Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro>Ещё <!-- -->15<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script></div></body>

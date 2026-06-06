@@ -1,0 +1,786 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Диагностика и обработка системных ошибок | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Диагностика и обработка системных ошибок | Вселенная IT"/><meta data-rh=true name=description content="Диагностика и обработка системных ошибок - как выявлять корневые причины сбоев и восстанавливать работоспособность сервисов."/><meta data-rh=true property=og:description content="Диагностика и обработка системных ошибок - как выявлять корневые причины сбоев и восстанавливать работоспособность сервисов."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/system-network","name":"2. Система и сеть","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/системное-администрирование","name":"Системное администрирование","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9","name":"Диагностика и обработка системных ошибок","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Collapse sidebar category '2. Система и сеть'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/операционная-система><span title="Операционная система" class=categoryLinkLabel_V03G>Операционная система</span></a><button aria-label="Expand sidebar category 'Операционная система'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/платформы><span title=Платформы class=categoryLinkLabel_V03G>Платформы</span></a><button aria-label="Expand sidebar category 'Платформы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/сеть-и-интернет><span title="Сеть и интернет" class=categoryLinkLabel_V03G>Сеть и интернет</span></a><button aria-label="Expand sidebar category 'Сеть и интернет'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/веб-сайты-и-веб-приложения><span title="Веб-сайты и веб-приложения" class=categoryLinkLabel_V03G>Веб-сайты и веб-приложения</span></a><button aria-label="Expand sidebar category 'Веб-сайты и веб-приложения'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/терминал><span title=Терминал class=categoryLinkLabel_V03G>Терминал</span></a><button aria-label="Expand sidebar category 'Терминал'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/системное-администрирование><span title="Системное администрирование" class=categoryLinkLabel_V03G>Системное администрирование</span></a><button aria-label="Collapse sidebar category 'Системное администрирование'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-zabbix><span title="Практикум Zabbix" class=categoryLinkLabel_V03G>Практикум Zabbix</span></a><button aria-label="Expand sidebar category 'Практикум Zabbix'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-prometheus-и-grafana><span title="Практикум Prometheus и Grafana" class=categoryLinkLabel_V03G>Практикум Prometheus и Grafana</span></a><button aria-label="Expand sidebar category 'Практикум Prometheus и Grafana'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><span title=Администрирование class=linkLabel_WmDU>Администрирование</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><span title="Диагностика производительности Linux" class=linkLabel_WmDU>Диагностика производительности Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2><span title="Установка и первоначальная настройка ОС" class=linkLabel_WmDU>Установка и первоначальная настройка ОС</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><span title=ИТ-инфраструктура class=linkLabel_WmDU>ИТ-инфраструктура</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><span title="Сетевые аномалии и системные процессы" class=linkLabel_WmDU>Сетевые аномалии и системные процессы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><span title="Настройка и обслуживание серверов" class=linkLabel_WmDU>Настройка и обслуживание серверов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411><span title="Групповые политики в Windows" class=linkLabel_WmDU>Групповые политики в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><span title="Конфигурация рабочих станций" class=linkLabel_WmDU>Конфигурация рабочих станций</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><span title="Сетевые подключения и диагностика" class=linkLabel_WmDU>Сетевые подключения и диагностика</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><span title="Организация домашней сети" class=linkLabel_WmDU>Организация домашней сети</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62><span title="Идентичность Microsoft Entra и RBAC" class=linkLabel_WmDU>Идентичность Microsoft Entra и RBAC</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/63><span title="Windows Server — начало работы" class=linkLabel_WmDU>Windows Server — начало работы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64><span title="Управление службами в Windows" class=linkLabel_WmDU>Управление службами в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7><span title="NAT и проброс портов" class=linkLabel_WmDU>NAT и проброс портов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8><span title="Планирование и автоматизация задач" class=linkLabel_WmDU>Планирование и автоматизация задач</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9><span title="Диагностика и обработка системных ошибок" class=linkLabel_WmDU>Диагностика и обработка системных ошибок</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91><span title="Работа с базами данных в администрировании" class=linkLabel_WmDU>Работа с базами данных в администрировании</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92><span title="Мониторинг, метрики и логирование систем" class=linkLabel_WmDU>Мониторинг, метрики и логирование систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93><span title="Администрирование Linux-систем" class=linkLabel_WmDU>Администрирование Linux-систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/94><span title="Полнотекстовый поиск для приложений" class=linkLabel_WmDU>Полнотекстовый поиск для приложений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/95><span title="Windows на рабочей станции — жизненный цикл" class=linkLabel_WmDU>Windows на рабочей станции — жизненный цикл</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96><span title="GNU/Linux — рабочие столы и споры окружений" class=linkLabel_WmDU>GNU/Linux — рабочие столы и споры окружений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/97><span title='Windows — Store, защита, диспетчер и "сборки"' class=linkLabel_WmDU>Windows — Store, защита, диспетчер и "сборки"</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/98><span title="Системное администрирование — итоги" class=linkLabel_WmDU>Системное администрирование — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/99><span title="Системное администрирование — чек-лист" class=linkLabel_WmDU>Системное администрирование — чек-лист</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/восстановление-данных><span title="Восстановление данных" class=categoryLinkLabel_V03G>Восстановление данных</span></a><button aria-label="Expand sidebar category 'Восстановление данных'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro><span title="Системное администрирование — о разделе" class=linkLabel_WmDU>Системное администрирование — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/техническая-поддержка><span title="Техническая поддержка" class=categoryLinkLabel_V03G>Техническая поддержка</span></a><button aria-label="Expand sidebar category 'Техническая поддержка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-информационной-безопасности><span title="Основы информационной безопасности" class=categoryLinkLabel_V03G>Основы информационной безопасности</span></a><button aria-label="Expand sidebar category 'Основы информационной безопасности'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-интеграционного-взаимодействия><span title="Основы интеграционного взаимодействия" class=categoryLinkLabel_V03G>Основы интеграционного взаимодействия</span></a><button aria-label="Expand sidebar category 'Основы интеграционного взаимодействия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/аппаратное-обеспечение><span title="Аппаратное обеспечение" class=categoryLinkLabel_V03G>Аппаратное обеспечение</span></a><button aria-label="Expand sidebar category 'Аппаратное обеспечение'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/system-network><span title="2. Система и сеть - о разделе" class=linkLabel_WmDU>2. Система и сеть - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Expand sidebar category '7. Проект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Expand sidebar category '8. Инфраструктура и безопасность'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/system-network><span>2. Система и сеть</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/системное-администрирование><span>Системное администрирование</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Диагностика и обработка системных ошибок</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Диагностика и обработка системных ошибок</h1></header>
+<div class=article-tags><span class="tag tag-required">ОБЯЗАТЕЛЬНО</span><span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span></div>
+<span class=complexity-badge>Разработчику</span>
+<span class=complexity-badge>Архитектору</span>
+<span class=complexity-badge>Инженеру</span>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=обработка-ошибок>Обработка ошибок<a href=#обработка-ошибок class=hash-link aria-label="Прямая ссылка на Обработка ошибок" title="Прямая ссылка на Обработка ошибок" translate=no>​</a></h2>
+<p>При разборе инцидента удобно идти <strong>сверху вниз</strong> — от симптома к причине, не перескакивая уровни:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">Симптом (пользователь / мониторинг)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  → Служба или приложение (логи, код выхода, HTTP 5xx)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    → ОС (journalctl, Event Viewer, драйвер, диск)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      → Сеть (DNS, маршрут, firewall, порт)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        → Железо (SMART, питание, температура)</span><br/></div></code></pre></div></div>
+<p>На каждом шаге фиксируйте <strong>что наблюдаете</strong> (метрика, строка лога, время) — это сокращает время поиска и помогает отличить следствие от корневой причины.</p>
+<p>На Linux классические текстовые логи лежат в <code>/var/log</code> (например, <code>syslog</code>, <code>auth.log</code>), журнал служб — <code>journalctl</code>; напоминалка по каталогам — <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93#fhs-napominalka>FHS в администрировании Linux</a>.</p>
+<hr/>
+<p>Ошибка — это отклонение от ожидаемого состояния системы, вызванное нарушением одного или нескольких условий корректного функционирования на любом уровне вычислительного стека: аппаратном, физическом, сетевом, программном, логическом или человеческом. В системном администрировании ошибка не рассматривается как "поломка" в бытовом смысле — это сигнал, несущий информацию о несоответствии текущего поведения системы её проектному или временному целевому состоянию.</p>
+<p>Ошибки неизбежны. Любая вычислительная система работает в условиях конечных ресурсов, неопределённого внешнего воздействия и несовершенства реализации. Задача состоит в том, чтобы обеспечить <strong>предсказуемость</strong>, <strong>локализуемость</strong> и <strong>управляемость</strong> ошибок: их появление не должно приводить к непредсказуемым последствиям, их источник должен быть идентифицируем, а реакция на них — нормирована и автоматизирована по возможности.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-такое-ошибка>Что такое ошибка<a href=#что-такое-ошибка class=hash-link aria-label="Прямая ссылка на Что такое ошибка" title="Прямая ссылка на Что такое ошибка" translate=no>​</a></h3>
+<p>В контексте системного администрирования ошибка — это <strong>состояние</strong>, при котором компонент системы не может завершить операцию в рамках заданных ограничений: по времени, по ресурсам, по входным данным, по логическим правилам или по внешним зависимостям. Это состояние фиксируется и выражается на одном из уровней абстракции:</p>
+<ul>
+<li class=""><strong>на аппаратном уровне</strong> — как физическая неисправность или нештатный сигнал (например, parity error, machine check exception);</li>
+<li class=""><strong>на уровне ядра ОС</strong> — как исключение процессора, сбой системного вызова или внутренняя ошибка драйвера;</li>
+<li class=""><strong>на уровне пользовательского пространства</strong> — как возврат ненулевого кода из системного вызова, выброс исключения, аварийное завершение процесса;</li>
+<li class=""><strong>на уровне сетевого взаимодействия</strong> — как таймаут, несоответствие протокола, отказ в обслуживании;</li>
+<li class=""><strong>на уровне прикладного ПО</strong> — как логическая ошибка, необработанное исключение, сбой валидации или нарушение бизнес-правила.</li>
+</ul>
+<p>Важно понимать: <em>ошибка существует до её обнаружения</em>. Её можно не зафиксировать, проигнорировать, подавить, но она всё равно была. Система с "нулевыми ошибками в логе" не означает безошибочную работу — это часто признак недостаточного логгирования или подавления сигналов. Профессиональная эксплуатация требует <strong>трансляции</strong> ошибок в понятную форму с сохранением контекста.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=виды-ошибок>Виды ошибок<a href=#виды-ошибок class=hash-link aria-label="Прямая ссылка на Виды ошибок" title="Прямая ссылка на Виды ошибок" translate=no>​</a></h3>
+<p>Ошибки классифицируются по уровню возникновения, степени предсказуемости и способу восстановления.</p>
+<p>Такая классификация нужна не для теории, а для выбора правильного инструмента реакции. Аппаратную проблему бессмысленно лечить перезапуском приложения, а сетевой таймаут бессмысленно дебажить через дамп памяти процесса. Когда тип ошибки определён верно, сокращается MTTR и уменьшается число ложных действий.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-аппаратные-ошибки>1. Аппаратные ошибки<a href=#1-аппаратные-ошибки class=hash-link aria-label="Прямая ссылка на 1. Аппаратные ошибки" title="Прямая ссылка на 1. Аппаратные ошибки" translate=no>​</a></h4>
+<p>Возникают в результате физических нарушений: перегрев, отказ компонента (ОЗУ, диска, питания), нестабильность тактовой частоты, повреждение шин. Они могут проявляться как:</p>
+<ul>
+<li class=""><strong>Корректируемые ошибки (CE — Correctable Errors)</strong> — например, однобитовые ошибки ECC-памяти, исправляемые контроллером ОЗУ без участия ОС. Фиксируются в счётчиках аппаратного мониторинга (IPMI, SMART, EDAC), но не приводят к сбою системы.</li>
+<li class=""><strong>Некорректируемые ошибки (UE — Uncorrectable Errors)</strong> — повреждение нескольких бит, сбой контроллера, потеря сигнала. Приводят к прерыванию выполнения, machine check exception, kernel panic или hard reset.</li>
+<li class=""><strong>Граничные ошибки (marginal errors)</strong> — нестабильные, повторяющиеся сбои при предельных нагрузках (разгон, высокая температура). Трудно диагностируются, часто проявляются как "случайные" вылеты.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-системные-ошибки-ядра>2. Системные ошибки ядра<a href=#2-системные-ошибки-ядра class=hash-link aria-label="Прямая ссылка на 2. Системные ошибки ядра" title="Прямая ссылка на 2. Системные ошибки ядра" translate=no>​</a></h4>
+<p>Происходят внутри ядра операционной системы при выполнении привилегированных операций. Включают:</p>
+<ul>
+<li class="">Сбой драйвера устройства (например, обращение к недоступному регистру);</li>
+<li class="">Нарушение целостности структур ядра (list corruption, use-after-free в пространстве ядра);</li>
+<li class="">Невозможность выделить память в критической секции (например, при обработке прерывания);</li>
+<li class="">Ошибки виртуальной памяти (page fault в режиме ядра без страницы подкачки, double fault, triple fault).</li>
+</ul>
+<p>Результат — <strong>kernel oops</strong> (в Linux), <strong>bug check</strong> (в Windows, синий экран), <strong>kernel panic</strong> (в Unix-подобных системах). Такие ошибки останавливают систему или переводят её в ограниченный режим диагностики.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-ошибки-пользовательского-пространства>3. Ошибки пользовательского пространства<a href=#3-ошибки-пользовательского-пространства class=hash-link aria-label="Прямая ссылка на 3. Ошибки пользовательского пространства" title="Прямая ссылка на 3. Ошибки пользовательского пространства" translate=no>​</a></h4>
+<p>Наиболее часто встречаются в повседневной практике. Включают:</p>
+<ul>
+<li class="">Возврат ошибочного кода из системного вызова (<code>errno</code> в POSIX, <code>GetLastError()</code> в Windows);</li>
+<li class="">Исключения (в языках с поддержкой исключений — C#, Java, Python);</li>
+<li class="">Аварийное завершение процесса (segfault/SIGSEGV, abort/SIGABRT, bus error/SIGBUS);</li>
+<li class="">Нормальное, но нежелательное завершение (например, с кодом 1 из-за неверного аргумента).</li>
+</ul>
+<p>Эти ошибки изолированы от ядра: сбой одного процесса не должен повлиять на другие (если не задействованы общие ресурсы без защиты).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-сетевые-ошибки>4. Сетевые ошибки<a href=#4-сетевые-ошибки class=hash-link aria-label="Прямая ссылка на 4. Сетевые ошибки" title="Прямая ссылка на 4. Сетевые ошибки" translate=no>​</a></h4>
+<p>Возникают при обмене данными между узлами. Классифицируются по OSI-уровням (сводка уровней и протоколов — <a class="" href=/encyclopedia/2-system-network/2-03-set-i-internet/4#%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85>модель OSI</a>):</p>
+<ul>
+<li class="">Уровень 1 (физический): обрыв, шум, перегрузка линии;</li>
+<li class="">Уровень 2 (канальный): CRC error, frame loss, MAC-конфликты;</li>
+<li class="">Уровень 3 (сетевой): недоступность маршрута, TTL expiry, fragmentation failure;</li>
+<li class="">Уровень 4 (транспортный): таймауты TCP, RST-пакеты, переполнение буфера приёма;</li>
+<li class="">Уровень 5–7 (сессионный и выше): протокольные нарушения (например, несоответствие HTTP-заголовков), отказ сервера, невалидный сертификат.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-логические-семантические-ошибки>5. Логические (семантические) ошибки<a href=#5-логические-семантические-ошибки class=hash-link aria-label="Прямая ссылка на 5. Логические (семантические) ошибки" title="Прямая ссылка на 5. Логические (семантические) ошибки" translate=no>​</a></h4>
+<p>Наиболее коварны: система работает, никаких сигналов сбоя нет, но результат неверен. Примеры:</p>
+<ul>
+<li class="">Переполнение целого числа без проверки;</li>
+<li class="">Гонка данных (data race) в многопоточном коде;</li>
+<li class="">Неправильная сериализация/десериализация;</li>
+<li class="">Некорректная обработка временных зон;</li>
+<li class="">Случайное использование тестовых данных в production.</li>
+</ul>
+<p>Обнаруживаются только валидацией результата — логами, мониторингом метрик, тестированием гипотез.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=исключения>Исключения<a href=#исключения class=hash-link aria-label="Прямая ссылка на Исключения" title="Прямая ссылка на Исключения" translate=no>​</a></h3>
+<p>Исключение — <strong>управляемый механизм передачи управления</strong> при возникновении ошибочного состояния в программной среде, поддерживающей такую модель (например, C++, Java, C#, Python, JavaScript). Исключение не равно ошибке — это способ <em>реагировать</em> на ошибку в рамках одного процесса.</p>
+<p>Суть механизма: при обнаружении условия, которое не может быть обработано локально, создаётся объект исключения, содержащий контекст (тип, сообщение, стек вызовов), и выполнение немедленно передаётся ближайшему обработчику (<code>catch</code>, <code>except</code>, <code>try/except</code>), ищущему подходящий по типу. Если обработчик не найден, исключение "всплывает" до верхнего уровня и приводит к аварийному завершению.</p>
+<p>Важные особенности:</p>
+<ul>
+<li class="">Исключения — <em>дорогая</em> операция: раскрутка стека, выделение памяти под объект, поиск обработчика. Их не следует использовать для управления потоком выполнения (например, вместо <code>if</code>).</li>
+<li class="">В языках с автоматической сборкой мусора (Java, C#, Python) исключения могут содержать ссылки на объекты из стека, что влияет на время жизни этих объектов.</li>
+<li class="">В системном коде (драйвера, ядро) исключения не используются — только коды возврата и проверки условий.</li>
+<li class="">Не все исключения — ошибки. В Python, например, <code>StopIteration</code> — штатное исключение для завершения итерации.</li>
+</ul>
+<p>Исключения — инструмент <em>программиста</em>, а не системного администратора напрямую. Однако администратор сталкивается с их последствиями: аварийными завершениями, логами с трейсбэками, необходимостью настройки логгирования и мониторинга исключений на уровне приложения.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=вылеты>Вылеты<a href=#вылеты class=hash-link aria-label="Прямая ссылка на Вылеты" title="Прямая ссылка на Вылеты" translate=no>​</a></h3>
+<p>"Вылет" — разговорное обозначение <strong>аварийного завершения процесса</strong>, вызванного некорректной ситуацией, которую программа не смогла (или не пыталась) обработать. Технически — получение процессом сигнала, не имеющего установленного обработчика, либо явный вызов <code>_exit()</code>, <code>abort()</code>, <code>Environment.FailFast()</code> и т.п.</p>
+<p>Типичные причины:</p>
+<ul>
+<li class="">Обращение к недопустимому адресу памяти (<code>SIGSEGV</code>);</li>
+<li class="">Ошибка шины (<code>SIGBUS</code>);</li>
+<li class="">Арифметическое переполнение или деление на ноль (в некоторых архитектурах/языках);</li>
+<li class="">Нарушение ограничений ОС (например, превышение лимита памяти);</li>
+<li class="">Явный вызов аварийного завершения после обнаружения критической внутренней ошибки (assertion failure).</li>
+</ul>
+<p>Вылет не означает сбой системы в целом (в отличие от kernel panic), но может нарушать бизнес-процесс. Его диагностика зависит от:</p>
+<ul>
+<li class="">Наличия <strong>core dump</strong> (Linux/macOS) или <strong>minidump</strong> (Windows) — дампа памяти и состояния процесса в момент падения;</li>
+<li class="">Настройки логгирования до момента сбоя;</li>
+<li class="">Возможности воспроизведения.</li>
+</ul>
+<p>В современных системах вылеты часто перехватываются менеджерами процессов (systemd, supervisor, Docker), которые могут перезапускать службу, но без анализа причины это лишь откладывает проблему.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=зависания>Зависания<a href=#зависания class=hash-link aria-label="Прямая ссылка на Зависания" title="Прямая ссылка на Зависания" translate=no>​</a></h3>
+<p>Зависание — состояние, при котором процесс продолжает существовать (занимает ресурсы, отображается в <code>ps</code>, <code>top</code>, Диспетчере задач), но не реагирует на внешние воздействия: не отвечает на запросы, не завершается по сигналу <code>SIGTERM</code>, не освобождает ресурсы.</p>
+<p>Причины зависаний:</p>
+<ul>
+<li class=""><strong>Бесконечный цикл без уступки управления</strong> (например, <code>while (true) { }</code> без <code>sleep</code>);</li>
+<li class=""><strong>Взаимная блокировка (deadlock)</strong> — два или более потока/процесса удерживают ресурсы, ожидая освобождения друг друга;</li>
+<li class=""><strong>Голодание (starvation)</strong> — процесс не получает CPU или I/O из-за приоритетов или конкуренции;</li>
+<li class=""><strong>Ожидание внешнего события, которое никогда не произойдёт</strong> (например, <code>read()</code> из разорванного сокета без таймаута, ожидание lock’а от упавшего процесса);</li>
+<li class=""><strong>Блокирующие системные вызовы без таймаутов</strong> (например, <code>accept()</code>, <code>connect()</code>, <code>flock()</code>);</li>
+<li class=""><strong>Ошибки в реализации конечных автоматов</strong> — переход в "мёртвое" состояние без выхода.</li>
+</ul>
+<p>Зависание опаснее вылета: оно не производит явного сигнала, но постепенно исчерпывает ресурсы (дескрипторы, память, потоки), приводя к каскадному отказу.</p>
+<p>Диагностика: анализ стека всех потоков (<code>gdb attach</code>, <code>jstack</code>, <code>procdump</code>, <code>pstack</code>), мониторинг блокировок, профилирование I/O и CPU.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=тормоза-лаги-троттлинг-и-фризинг>Тормоза, лаги, троттлинг и фризинг<a href=#тормоза-лаги-троттлинг-и-фризинг class=hash-link aria-label="Прямая ссылка на Тормоза, лаги, троттлинг и фризинг" title="Прямая ссылка на Тормоза, лаги, троттлинг и фризинг" translate=no>​</a></h3>
+<p>Эти термины часто используют как синонимы, однако в диагностике важно различать их по причинам, проявлениям и последствиям. Все они описывают <strong>снижение отклика системы</strong>, но механизмы и уровни контроля — разные.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=тормоза>Тормоза<a href=#тормоза class=hash-link aria-label="Прямая ссылка на Тормоза" title="Прямая ссылка на Тормоза" translate=no>​</a></h4>
+<p>Тормоза — устойчивое, но не катастрофическое падение производительности. Система продолжает функционировать, однако время отклика на операции превышает ожидаемое в разы или на порядки. Это не аварийное состояние, но сигнал о перегрузке или деградации.</p>
+<p>Причины:</p>
+<ul>
+<li class="">
+<p><strong>Насыщение ресурсов</strong>:<br/>
+<!-- -->— 100 % загрузка CPU (ограничение по вычислительной мощности);<br/>
+<!-- -->— нехватка свободной памяти → активная подкачка (swap thrashing);<br/>
+<!-- -->— исчерпание файловых дескрипторов или сокетов;<br/>
+<!-- -->— перегрузка дисковой подсистемы (высокий <code>await</code>, <code>util%</code> в <code>iostat</code>).</p>
+</li>
+<li class="">
+<p><strong>Неоптимальные алгоритмы или конфигурации</strong>:<br/>
+<!-- -->— отсутствие индексов в СУБД при частых запросах;<br/>
+<!-- -->— однопоточная обработка в многопользовательской среде;<br/>
+<!-- -->— избыточное логгирование на медленный носитель;<br/>
+<!-- -->— неправильная настройка очередей (очередь растёт быстрее, чем обрабатывается).</p>
+</li>
+<li class="">
+<p><strong>Внешние зависимости</strong>:<br/>
+<!-- -->— медленные сторонние API без таймаутов;<br/>
+<!-- -->— синхронные вызовы внутри асинхронного контекста;<br/>
+<!-- -->— блокировка на сетевом уровне (например, DNS-резолв без кэширования).</p>
+</li>
+</ul>
+<p>Тормоза выявляются через <strong>мониторинг метрик</strong>: увеличение latency, рост очередей, снижение throughput при фиксированной нагрузке. Ключевой признак — <em>линейное или экспоненциальное ухудшение отклика при росте нагрузки</em>, в отличие от внезапного обвала при ошибках.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=лаги>Лаги<a href=#лаги class=hash-link aria-label="Прямая ссылка на Лаги" title="Прямая ссылка на Лаги" translate=no>​</a></h4>
+<p>Лаг (от англ. <em>lag</em> — задержка) — кратковременная задержка в отклике, не приводящая к полной потере связи или зависанию. Часто проявляется в интерактивных системах: пользователь нажимает кнопку — реакция следует через 2–3 секунды; видеопоток "подвисает" на кадр; звук "скачет".</p>
+<p>От тормозов лаг отличается <strong>кратковременностью и эпизодичностью</strong>. Он указывает на <strong>неравномерность обработки</strong> — кратковременные пики нагрузки, блокировки или прерывания.</p>
+<p>Типичные источники:</p>
+<ul>
+<li class=""><strong>Паузы сборщика мусора</strong> (в JVM, .NET, Node.js) — особенно при full GC на куче в несколько гигабайт;</li>
+<li class=""><strong>Сброс буферов на диск</strong> (<code>fsync</code>, <code>journal commit</code> в ext4/XFS, checkpoint в PostgreSQL);</li>
+<li class=""><strong>Переключение контекста при высокой конкуренции потоков</strong>;</li>
+<li class=""><strong>Пакетная обработка</strong> — например, отправка уведомлений раз в минуту, забирающая 5 секунд CPU;</li>
+<li class=""><strong>Джит-компиляция</strong> в интерпретируемых средах (V8, PyPy, .NET Native).</li>
+</ul>
+<p>Лаги особенно критичны в real-time системах (голос, видеоконференции, игры, HFT), где даже 100 мс задержки нарушают пользовательский опыт.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=троттлинг>Троттлинг<a href=#троттлинг class=hash-link aria-label="Прямая ссылка на Троттлинг" title="Прямая ссылка на Троттлинг" translate=no>​</a></h4>
+<p>Троттлинг (throttling — дросселирование) — <strong>сознательное ограничение пропускной способности</strong> на уровне приложения, ОС или сети. Это <em>защитный механизм</em>, предотвращающий перегрузку. Однако если он срабатывает слишком часто, это указывает на неправильную балансировку ресурсов.</p>
+<p>Примеры:</p>
+<ul>
+<li class="">ОС ограничивает IOPS процесса через <code>cgroups</code>/<code>systemd</code> (slice <code>CPUQuota</code>, <code>IOWeight</code>);</li>
+<li class="">Браузер замедляет <code>setTimeout</code>/<code>setInterval</code> во вкладке, находящейся в фоне;</li>
+<li class="">API возвращает <code>429 Too Many Requests</code> — сработал rate limit; клиент должен снизить частоту (алгоритмы — <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/141#10-rate-limiting>§10 «12 концепций»</a>);</li>
+<li class="">СУБД отклоняет новые соединения при достижении <code>max_connections</code>;</li>
+<li class="">Сетевой шейпер (<code>tc</code>, <code>pf</code>) ограничивает bandwidth по правилам QoS.</li>
+</ul>
+<p>Троттлинг полезен: он превращает катастрофический сбой (например, OOM-kill) в предсказуемое замедление. Однако если система постоянно работает в режиме троттлинга, это означает, что <strong>ресурсы выделены недостаточно</strong>, либо <strong>нагрузка распределена нерационально</strong> (например, все запросы идут на один инстанс вместо балансировки).</p>
+<p>Диагностика: поиск сообщений вида <em>throttled</em>, <em>rate limited</em>, <em>backpressure</em>, <em>queue full</em>, <em>dropped</em> в логах; анализ метрик <code>cgroup</code> (<code>cpu.stat</code>, <code>memory.pressure</code>); мониторинг <code>netstat -s</code> на dropped packets.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=фризинг>Фризинг<a href=#фризинг class=hash-link aria-label="Прямая ссылка на Фризинг" title="Прямая ссылка на Фризинг" translate=no>​</a></h4>
+<p>Фризинг (freezing — "заморозка") — состояние, при котором <strong>отдельные компоненты интерфейса или функции перестают отвечать</strong>, но основной процесс продолжает работать. От зависания отличается <strong>частичностью</strong>: например, перестаёт обновляться UI, но фоновые задачи выполняются; или сетевой стек отвечает, но диск не пишет.</p>
+<p>Часто встречается в:</p>
+<ul>
+<li class="">Графических приложениях с блокирующим UI-потоком (например, долгая операция в основном потоке Electron-приложения);</li>
+<li class="">Виртуальных машинах при нехватке ресурсов хоста ("stun" в KVM);</li>
+<li class="">Системах с изолированными доменами (например, завис браузерный рендер-процесс, но основной процесс жив).</li>
+</ul>
+<p>Фризинг — признак <strong>плохой архитектуры разделения ответственности</strong>: критические пути не изолированы, блокирующие операции выполняются в интерактивных контекстах.</p>
+<p>Диагностика: профилирование потоков по времени CPU и I/O, анализ <code>strace</code>/<code>dtrace</code> на предмет долгих системных вызовов в UI-потоке.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=коды-ошибок-и-непонятный-набор-символов>Коды ошибок и непонятный набор символов<a href=#коды-ошибок-и-непонятный-набор-символов class=hash-link aria-label="Прямая ссылка на Коды ошибок и непонятный набор символов" title="Прямая ссылка на Коды ошибок и непонятный набор символов" translate=no>​</a></h3>
+<p>Когда система сообщает об ошибке, она почти всегда использует <strong>стандартизированный идентификатор</strong>, а не просто текстовое пояснение. Это необходимо для автоматической обработки: скрипты, мониторинги, CI/CD-конвейеры должны однозначно реагировать на тип сбоя.</p>
+<p>Однако для человека "код ошибки" часто выглядит как бессмысленный набор цифр и букв: <code>0x80070005</code>, <code>ECONNRESET</code>, <code>502 Bad Gateway</code>, <code>HRESULT 0x80040154</code>. Чтобы интерпретировать его, нужно понимать <strong>пространство имён</strong>, в котором он определён.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-такое-код-ошибки>Что такое код ошибки<a href=#что-такое-код-ошибки class=hash-link aria-label="Прямая ссылка на Что такое код ошибки" title="Прямая ссылка на Что такое код ошибки" translate=no>​</a></h4>
+<p>Код ошибки — целочисленное (реже — строковое) значение, возвращаемое функцией, системным вызовом или протоколом для указания причины неудачи. Его основные свойства:</p>
+<ul>
+<li class=""><strong>Уникальность в рамках контекста</strong> (например, <code>errno</code> в POSIX имеет одно значение для <code>EACCES</code>, но Windows может использовать другой код для той же семантики);</li>
+<li class=""><strong>Сохранение в регистрах/памяти</strong> после операции (в POSIX — в глобальной переменной <code>errno</code>; в Windows — через <code>GetLastError()</code> или возвращаемое значение HRESULT);</li>
+<li class=""><strong>Сопоставимость с документацией</strong> — каждому коду соответствует описание в спецификации или man-странице.</li>
+</ul>
+<p>Код ошибки — <strong>симптом</strong>. Например, <code>EIO</code> (Input/Output error) означает, что операция ввода-вывода не удалась, но <em>почему</em> — нужно выяснять отдельно: сбой диска, отключение кабеля, повреждение файловой системы.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=почему-непонятный-набор-символов>Почему "непонятный набор символов"<a href=#почему-непонятный-набор-символов class=hash-link aria-label='Прямая ссылка на Почему "непонятный набор символов"' title='Прямая ссылка на Почему "непонятный набор символов"' translate=no>​</a></h4>
+<p>То, что кажется "мусором", на деле — компактное кодирование:</p>
+<ul>
+<li class="">Префикс <code>0x</code> означает шестнадцатеричную запись. Это стандарт для низкоуровневых кодов, так как удобно отображает битовые поля.</li>
+<li class="">В Windows <code>HRESULT</code> — 32-битное значение, где старший бит указывает на ошибку (<code>1</code> = failure), следующие 4 бита — facility (подсистема: COM, Win32, RPC), младшие 16 — код.</li>
+<li class="">В Linux <code>errno</code> — просто номер, но часто сопровождается макросом (например, <code>13</code> = <code>EACCES</code>), что делает код читаемым в исходниках.</li>
+<li class="">В HTTP коды трёхзначные: первая цифра — класс (4xx — клиентская ошибка, 5xx — серверная), остальные — конкретика.</li>
+</ul>
+<p>Если видите <code>0xC0000005</code> — это конкретный код STATUS_ACCESS_VIOLATION в NTSTATUS, эквивалентный <code>SIGSEGV</code>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=утилита-certutil--decodehex-и-чтение-ошибок>Утилита <code>certutil -decodehex</code> и чтение ошибок<a href=#утилита-certutil--decodehex-и-чтение-ошибок class=hash-link aria-label="Прямая ссылка на утилита-certutil--decodehex-и-чтение-ошибок" title="Прямая ссылка на утилита-certutil--decodehex-и-чтение-ошибок" translate=no>​</a></h4>
+<p>В Windows часто приходится сталкиваться с дампами ошибок в шестнадцатеричном виде — например, в Event Viewer или логах драйверов. Утилита <code>certutil</code> позволяет интерпретировать такие последовательности:</p>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">certutil -decodehex input.txt output.bin</span><br/></div></code></pre></div></div>
+<p>Но прямое декодирование редко даёт читаемый текст. Гораздо полезнее:</p>
+<ul>
+<li class="">Для <code>HRESULT</code>: использовать <code>format</code> в PowerShell:</li>
+</ul>
+<div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token namespace" style="color:rgb(178, 204, 214)">[System.Runtime.InteropServices.Marshal]</span><span class="token plain">::GetExceptionForHR</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">0x80070005</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><br/></div></code></pre></div></div>
+<p>Вернёт: <code>Access is denied.</code></p>
+<ul>
+<li class="">
+<p>Для <code>NTSTATUS</code>: онлайн-таблицы (например, <code>ntstatus.h</code> из WDK) или <code>err</code> от Microsoft (устаревшая, но рабочая утилита).</p>
+</li>
+<li class="">
+<p>Для <code>errno</code> в Linux: <code>errno 11</code> → <code>Resource temporarily unavailable (EAGAIN)</code> (если установлен пакет <code>moreutils</code>), либо <code>perror</code> в C-коде.</p>
+</li>
+</ul>
+<p>Главный принцип: <strong>никогда не интерпретируйте код "на глаз"</strong>. Всегда сверяйтесь с официальной спецификацией для конкретной платформы и версии.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=коды-ошибок-в-разных-языках-программирования>Коды ошибок в разных языках программирования<a href=#коды-ошибок-в-разных-языках-программирования class=hash-link aria-label="Прямая ссылка на Коды ошибок в разных языках программирования" title="Прямая ссылка на Коды ошибок в разных языках программирования" translate=no>​</a></h3>
+<p>Языки не вводят собственные коды ошибок, но предоставляют <strong>обёртки и абстракции</strong> над системными.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=c--posix>C / POSIX<a href=#c--posix class=hash-link aria-label="Прямая ссылка на C / POSIX" title="Прямая ссылка на C / POSIX" translate=no>​</a></h4>
+<ul>
+<li class="">Использует глобальную переменную <code>errno</code> (thread-local в современных реализациях).</li>
+<li class="">После неудачного системного вызова (<code>open</code>, <code>read</code>, <code>connect</code>) проверяют <code>errno</code>:</li>
+</ul>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-c codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token keyword" style=font-style:italic>int</span><span class="token plain"> fd </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">open</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">"/root/secret"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> O_RDONLY</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token keyword" style=font-style:italic>if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">fd </span><span class="token operator" style="color:rgb(137, 221, 255)">==</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">-</span><span class="token number" style="color:rgb(247, 140, 108)">1</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token keyword" style=font-style:italic>if</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">errno </span><span class="token operator" style="color:rgb(137, 221, 255)">==</span><span class="token plain"> EACCES</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">/* отказано в доступе */</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Коды определены в <code>&lt;errno.h></code>, с макросами: <code>EACCES</code>, <code>ENOENT</code>, <code>ECONNREFUSED</code>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=windows-api-cc>Windows API (C/C++)<a href=#windows-api-cc class=hash-link aria-label="Прямая ссылка на Windows API (C/C++)" title="Прямая ссылка на Windows API (C/C++)" translate=no>​</a></h4>
+<ul>
+<li class="">Функции возвращают <code>BOOL</code>, <code>HANDLE</code>, <code>HRESULT</code>.</li>
+<li class="">При неудаче вызывают <code>GetLastError()</code> для получения кода Win32 (<code>ERROR_ACCESS_DENIED = 5</code>).</li>
+<li class="">Для COM — <code>HRESULT</code>: <code>S_OK</code> (0), <code>E_FAIL</code> (0x80004005), <code>E_ACCESSDENIED</code> (0x80070005).</li>
+<li class="">Преобразование: <code>HRESULT_FROM_WIN32(GetLastError())</code>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=java>Java<a href=#java class=hash-link aria-label="Прямая ссылка на Java" title="Прямая ссылка на Java" translate=no>​</a></h4>
+<ul>
+<li class="">Не использует коды напрямую — бросает исключения:<br/>
+<code>FileNotFoundException</code> (обёртка над <code>ENOENT</code>),<br/>
+<code>SecurityException</code> (над <code>EACCES</code>),<br/>
+<code>ConnectException</code> (над <code>ECONNREFUSED</code>).</li>
+<li class="">Коды ОС доступны через <code>IOException.getCause()</code> или JNI, но редко нужны администратору.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=python>Python<a href=#python class=hash-link aria-label="Прямая ссылка на Python" title="Прямая ссылка на Python" translate=no>​</a></h4>
+<ul>
+<li class="">Исключения: <code>FileNotFoundError</code>, <code>PermissionError</code>, <code>ConnectionRefusedError</code>.</li>
+<li class="">Доступ к <code>errno</code>:</li>
+</ul>
+<div class="language-python codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-python codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token keyword" style=font-style:italic>try</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token builtin" style="color:rgb(130, 170, 255)">open</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">'/root/x'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token keyword" style=font-style:italic>except</span><span class="token plain"> PermissionError </span><span class="token keyword" style=font-style:italic>as</span><span class="token plain"> e</span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token keyword" style=font-style:italic>print</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">e</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">errno</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># 13</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token keyword" style=font-style:italic>print</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">e</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">strerror</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># 'Permission denied'</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=c--net>C# / .NET<a href=#c--net class=hash-link aria-label="Прямая ссылка на C# / .NET" title="Прямая ссылка на C# / .NET" translate=no>​</a></h4>
+<ul>
+<li class=""><code>Win32Exception</code> содержит <code>NativeErrorCode</code> (Win32);</li>
+<li class=""><code>IOException</code> — <code>HResult</code> (HRESULT);</li>
+<li class=""><code>SocketException</code> — <code>SocketErrorCode</code> (перечисление, соответствует <code>errno</code> в POSIX-совместимых системах).</li>
+</ul>
+<p>Важно: язык лишь <em>транслирует</em> системную ошибку. Администратор должен уметь проследить цепочку:<br/>
+<code>HTTP 500</code> → <code>IOException</code> в логе .NET → <code>HRESULT 0x80070057</code> → <code>ERROR_INVALID_PARAMETER</code> → ошибка валидации пути к файлу.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-читать-ошибки-по-стеку>Как читать ошибки по стеку<a href=#как-читать-ошибки-по-стеку class=hash-link aria-label="Прямая ссылка на Как читать ошибки по стеку" title="Прямая ссылка на Как читать ошибки по стеку" translate=no>​</a></h3>
+<p>Стек-трейс (stack trace) — это запись последовательности вызовов функций, приведших к возникновению ошибки. Он отражает <strong>цепочку причинно-следственных связей</strong> от точки входа (например, HTTP-запроса) до места сбоя. Умение читать стек — ключевой навык системного администратора при диагностике прикладных сбоев.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=структура-типичного-стек-трейса>Структура типичного стек-трейса<a href=#структура-типичного-стек-трейса class=hash-link aria-label="Прямая ссылка на Структура типичного стек-трейса" title="Прямая ссылка на Структура типичного стек-трейса" translate=no>​</a></h4>
+<p>В большинстве сред (Java, .NET, Python, Node.js) стек выводится в виде списка строк, каждая из которых содержит:</p>
+<ol>
+<li class=""><strong>Имя метода/функции</strong> — с указанием класса (если есть) и сигнатуры;</li>
+<li class=""><strong>Имя файла исходного кода</strong> — если отладочная информация доступна;</li>
+<li class=""><strong>Номер строки</strong> — строка в файле, откуда был сделан вызов (не обязательно строка с ошибкой!);</li>
+<li class="">(Опционально) <strong>Адрес в памяти</strong>, хэш фрейма, параметры.</li>
+</ol>
+<p>Пример (Java):</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">java.lang.NullPointerException: Cannot invoke "String.length()" because "s" is null</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    at com.example.UserValidator.validateName(UserValidator.java:42)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    at com.example.UserService.createUser(UserService.java:87)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    at com.example.ApiController.register(ApiController.java:23)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    ...</span><br/></div></code></pre></div></div>
+<p>Важно: <strong>самая верхняя строка — ближайшая к месту сбоя</strong>, самая нижняя — точка входа. Читать нужно <em>сверху вниз</em>, но <em>анализировать — снизу вверх</em>: сначала понять контекст (какой запрос, откуда), затем — цепочку вызовов, и лишь в конце — конкретную операцию.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=почему-номера-строк-в-тексте-ошибок-не-соответствуют-коду>Почему номера строк в тексте ошибок не соответствуют коду<a href=#почему-номера-строк-в-тексте-ошибок-не-соответствуют-коду class=hash-link aria-label="Прямая ссылка на Почему номера строк в тексте ошибок не соответствуют коду" title="Прямая ссылка на Почему номера строк в тексте ошибок не соответствуют коду" translate=no>​</a></h4>
+<p>Это частая причина раздражения: в логе указана строка 42, а в актуальном коде на строке 42 — комментарий. Причины:</p>
+<ol>
+<li class="">
+<p><strong>Разница между версиями кода и запущенного приложения</strong><br/>
+<!-- -->— Приложение собрано из ветки <code>feature/x</code>, а администратор смотрит <code>main</code>;<br/>
+<!-- -->— Задержка деплоя: ошибка возникла вчера, а сегодня код изменился.</p>
+</li>
+<li class="">
+<p><strong>Отсутствие отладочной информации в сборке</strong><br/>
+<!-- -->— В production-сборках часто отключают <code>debug symbols</code> (<code>.pdb</code> в Windows, <code>-g</code> в GCC, <code>sourceMap</code> в JavaScript), чтобы уменьшить размер и повысить безопасность. Тогда номера строк могут быть искажены или вовсе отсутствовать.</p>
+</li>
+<li class="">
+<p><strong>Препроцессинг и транспиляция</strong><br/>
+<!-- -->— TypeScript → JavaScript, SASS → CSS, C# с <code>#if DEBUG</code> — исходные строки не совпадают с исполняемыми;<br/>
+<!-- -->— Минификация JavaScript: весь код в одну строку, номера теряют смысл.</p>
+</li>
+<li class="">
+<p><strong>Инлайнинг и оптимизации компилятора</strong><br/>
+<!-- -->— JIT-компиляторы (.NET, JVM, V8) могут встраивать функции, переупорядочивать инструкции, удалять "мертвый" код. Тогда стек указывает на <em>ближайшую точку останова</em>, а не на точную инструкцию.</p>
+</li>
+<li class="">
+<p><strong>Асинхронные вызовы</strong><br/>
+<!-- -->— В JavaScript, Python (<code>async/await</code>), C# (<code>async/await</code>) стек может "обрываться" на границе <code>await</code>. Современные среды поддерживают <em>long stack traces</em>, но не все их включают.</p>
+</li>
+</ol>
+<p><strong>Как с этим работать:</strong></p>
+<ul>
+<li class="">Всегда сверяйте <strong>версию приложения</strong> в логе (например, <code>Build: v2.3.1-rc4+7a8b9c0</code>) с исходным кодом;</li>
+<li class="">Используйте <code>.pdb</code>, <code>.map</code>-файлы или <code>sourceLink</code> для сопоставления;</li>
+<li class="">Включайте <code>detailed stack traces</code> в staging-среде;</li>
+<li class="">При сборке production-образов сохраняйте артефакты (например, в Nexus/Artifactory) вместе с исходниками на момент сборки.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=заголовок-ошибки-и-тело-ошибки>Заголовок ошибки и тело ошибки<a href=#заголовок-ошибки-и-тело-ошибки class=hash-link aria-label="Прямая ссылка на Заголовок ошибки и тело ошибки" title="Прямая ссылка на Заголовок ошибки и тело ошибки" translate=no>​</a></h3>
+<p>Сообщение об ошибке состоит из двух логических частей:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=заголовок-summary-headline>Заголовок (summary, headline)<a href=#заголовок-summary-headline class=hash-link aria-label="Прямая ссылка на Заголовок (summary, headline)" title="Прямая ссылка на Заголовок (summary, headline)" translate=no>​</a></h4>
+<p>Краткое, стандартизированное описание типа ошибки. Предназначен для автоматической классификации.</p>
+<p>Примеры:</p>
+<ul>
+<li class=""><code>java.lang.OutOfMemoryError: Java heap space</code></li>
+<li class=""><code>System.IO.IOException: The process cannot access the file because it is being used by another process.</code></li>
+<li class=""><code>ERROR 1045 (28000): Access denied for user 'root'@'localhost'</code></li>
+</ul>
+<p>Заголовок содержит:</p>
+<ul>
+<li class="">Тип исключения/ошибки (часто с пространством имён);</li>
+<li class="">Краткую причину (категорию: <code>heap space</code>, <code>file in use</code>, <code>access denied</code>);</li>
+<li class="">(Опционально) код — например, <code>1045</code> в MySQL.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=тело-detail-stack-trace-context>Тело (detail, stack trace, context)<a href=#тело-detail-stack-trace-context class=hash-link aria-label="Прямая ссылка на Тело (detail, stack trace, context)" title="Прямая ссылка на Тело (detail, stack trace, context)" translate=no>​</a></h4>
+<p>Дополнительная информация: стек-трейс, параметры, состояние окружения, локальные переменные (если включено), временные метки.</p>
+<p>Важно: <strong>тело не должно попадать в клиентский ответ</strong> (например, в HTTP-500), так как может содержать секреты (пути, имена файлов, переменные окружения). Оно логируется на сервере, но не возвращается пользователю.</p>
+<p>Профессиональная практика:</p>
+<ul>
+<li class="">Заголовок — для пользователя (если он технически грамотен) и мониторинга;</li>
+<li class="">Тело — только для администратора и разработчика, в защищённом хранилище логов;</li>
+<li class="">Все сообщения — на английском (даже в русскоязычной системе), чтобы избежать проблем с кодировками и обеспечить совместимость с инструментами анализа.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибки-сети>Ошибки сети<a href=#ошибки-сети class=hash-link aria-label="Прямая ссылка на Ошибки сети" title="Прямая ссылка на Ошибки сети" translate=no>​</a></h3>
+<p>Сетевые ошибки — особый класс, так как возникают на границе систем. Администратор не управляет удалённой стороной, но должен уметь отличить <em>локальную</em> проблему от <em>удалённой</em>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=типичные-признаки>Типичные признаки<a href=#типичные-признаки class=hash-link aria-label="Прямая ссылка на Типичные признаки" title="Прямая ссылка на Типичные признаки" translate=no>​</a></h4>
+<table><thead><tr><th>Симптом<th>Вероятная причина<tbody><tr><td><code>Connection timed out</code><td>Пакеты не доходят до получателя (файрвол, маршрутизация, выключен сервер)<tr><td><code>Connection refused</code><td>Сервер получил SYN, но нет слушающего сокета (порт закрыт, сервис не запущен)<tr><td><code>No route to host</code><td>Локальная система не знает, как добраться до адреса (отсутствует маршрут, интерфейс down)<tr><td><code>Сеть is unreachable</code><td>Нет активного сетевого интерфейса для нужной подсети<tr><td><code>Broken pipe</code> (<code>EPIPE</code>)<td>Удалённая сторона закрыла соединение, а локальная попыталась писать<tr><td><code>Connection reset by peer</code> (<code>ECONNRESET</code>)<td>Удалённая сторона аварийно разорвала соединение (RST-пакет)</table>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=диагностика>Диагностика<a href=#диагностика class=hash-link aria-label="Прямая ссылка на Диагностика" title="Прямая ссылка на Диагностика" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p><strong>Проверка доступности</strong>:<br/>
+<!-- -->— <code>ping</code> — базовая IP-доступность (но ICMP может быть заблокирован);<br/>
+<!-- -->— <code>telnet host port</code> / <code>nc -vz host port</code> — проверка открытости TCP-порта;<br/>
+<!-- -->— <code>curl -v http://host</code> — детальный HTTP-диалог. Разбор флагов и типовых one-liner — <a class="" href=/encyclopedia/2-system-network/2-05-terminal/1133>утилита curl</a>, <a class="" href=/lab/Примеры/1133>curl / fetch — примеры</a>.</p>
+</li>
+<li class="">
+<p><strong>Анализ трассировки</strong>:<br/>
+<!-- -->— <code>traceroute</code> / <code>mtr</code> — где обрывается маршрут;<br/>
+<!-- -->— <code>tcpdump</code> / <code>Wireshark</code> — какие пакеты уходят и приходят.</p>
+</li>
+<li class="">
+<p><strong>Проверка локальной конфигурации</strong>:<br/>
+<!-- -->— <code>ip route get &lt;addr></code> — какой маршрут используется;<br/>
+<!-- -->— <code>ss -tuln</code> — какие порты слушает локальная система;<br/>
+<!-- -->— <code>iptables -L -n -v</code> / <code>nft list ruleset</code> — правила фильтрации.</p>
+</li>
+</ol>
+<p>Сетевая ошибка — почти всегда <strong>симптом</strong>. Например, <code>ECONNRESET</code> может быть следствием OOM-kill на удалённом сервере.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=коды-ошибок-http>Коды ошибок HTTP<a href=#коды-ошибок-http class=hash-link aria-label="Прямая ссылка на Коды ошибок HTTP" title="Прямая ссылка на Коды ошибок HTTP" translate=no>​</a></h3>
+<p>HTTP-коды — стандарт (RFC 7231, RFC 9110), понятный любому компоненту веб-стека: браузеру, обратному прокси, WAF, мониторингу. Они делятся на классы:</p>
+<ul>
+<li class=""><strong>1xx (Informational)</strong> — промежуточные (редко видны администратору);</li>
+<li class=""><strong>2xx (Success)</strong> — операция выполнена;</li>
+<li class=""><strong>3xx (Redirection)</strong> — требуется дополнительное действие;</li>
+<li class=""><strong>4xx (Client Error)</strong> — ошибка на стороне клиента;</li>
+<li class=""><strong>5xx (Server Error)</strong> — ошибка на стороне сервера.</li>
+</ul>
+<p>Эта классификация важна не только как теория HTTP, а как основа приоритизации инцидентов. Массовые <code>5xx</code> обычно требуют немедленной реакции дежурной команды, тогда как рост <code>4xx</code> чаще сначала проверяют на изменения в клиенте, API-контракте или правилах WAF.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=наиболее-важные-для-администратора>Наиболее важные для администратора<a href=#наиболее-важные-для-администратора class=hash-link aria-label="Прямая ссылка на Наиболее важные для администратора" title="Прямая ссылка на Наиболее важные для администратора" translate=no>​</a></h4>
+<table><thead><tr><th>Код<th>Значение<th>Типичная причина<tbody><tr><td><code>400 Bad Request</code><td>Некорректный синтаксис запроса<td>Невалидный JSON, отсутствующий заголовок, слишком длинный URL<tr><td><code>401 Unauthorized</code><td>Требуется аутентификация<td>Отсутствует <code>Authorization</code>, просрочен токен<tr><td><code>403 Forbidden</code><td>Доступ запрещён<td>Права недостаточны, IP заблокирован, политика WAF<tr><td><code>404 Not Found</code><td>Ресурс не существует<td>Опечатка в пути, сервис не зарегистрирован в роутере<tr><td><code>405 Method Not Allowed</code><td>Метод не поддерживается для ресурса<td><code>POST</code> на endpoint, принимающий только <code>GET</code><tr><td><code>408 Request Timeout</code><td>Клиент не отправил запрос вовремя<td>Медленное соединение, клиентский таймаут<tr><td><code>429 Too Many Requests</code><td>Превышен лимит запросов<td>Rate limiting сработал<tr><td><code>500 Internal Server Error</code><td>Неизвестная ошибка сервера<td>Необработанное исключение, сбой БД, отсутствие файла<tr><td><code>502 Bad Gateway</code><td>Прокси получил недопустимый ответ от upstream<td>Backend упал, вернул не HTTP, таймаут<tr><td><code>503 Service Unavailable</code><td>Сервис временно недоступен<td>Перегрузка, maintenance mode, отсутствие здоровых инстансов<tr><td><code>504 Gateway Timeout</code><td>Прокси не дождался ответа от upstream<td>Backend "завис", не отвечает вовремя</table>
+<p><strong>Важно:</strong></p>
+<ul>
+<li class=""><code>500</code> — сигнал к немедленному анализу логов backend’а;</li>
+<li class=""><code>502/504</code> — проблема между прокси (nginx, HAProxy) и backend’ом;</li>
+<li class=""><code>4xx</code> — чаще всего не требуют вмешательства администратора (это клиентская ошибка), но массовые <code>4xx</code> могут указывать на изменение API или атаку.</li>
+</ul>
+<p>Полный перечень кодов по классам (1xx–5xx, WebDAV, <code>499</code> Nginx, коды CDN) — <a class="" href=/encyclopedia/2-system-network/2-03-set-i-internet/611#status-codes-cheatsheet>шпаргалка в справочнике HTTP</a>; подробные таблицы с RFC и практикой — там же, раздел <a class="" href=/encyclopedia/2-system-network/2-03-set-i-internet/611#status-codes-detail>«Статус-коды — подробно»</a>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=основные-общепринятые-ошибки>Основные общепринятые ошибки<a href=#основные-общепринятые-ошибки class=hash-link aria-label="Прямая ссылка на Основные общепринятые ошибки" title="Прямая ссылка на Основные общепринятые ошибки" translate=no>​</a></h3>
+<p>Некоторые ошибки встречаются повсеместно — вне зависимости от ОС, языка или стека. Их стоит знать наизусть.</p>
+<table><thead><tr><th>Код / Имя<th>Описание<th>Где встречается<tbody><tr><td><code>EACCES</code> / <code>EPERM</code><td>Отказ в доступе<td>Файловые операции, сокеты, <code>bind()</code> на привилегированный порт<tr><td><code>ENOENT</code><td>Файл или каталог не существует<td><code>open()</code>, <code>exec()</code>, <code>chdir()</code><tr><td><code>EEXIST</code><td>Файл уже существует<td><code>mkdir()</code>, <code>link()</code>, <code>bind()</code> на занятый порт<tr><td><code>ECONNREFUSED</code><td>Соединение отклонено<td><code>connect()</code> к закрытому порту<tr><td><code>ETIMEDOUT</code><td>Таймаут операции<td>Сетевые вызовы, <code>accept()</code>, <code>read()</code> без данных<tr><td><code>EADDRINUSE</code><td>Адрес уже используется<td><code>bind()</code> на занятый порт/IP<tr><td><code>ENOMEM</code><td>Недостаточно памяти<td><code>malloc()</code>, <code>fork()</code>, выделение буферов<tr><td><code>EPIPE</code><td>Разорван канал<td>Запись в закрытый сокет/pipe<tr><td><code>ENOSPC</code><td>Нет свободного места<td>Запись на диск, создание файла</table>
+<p>Эти коды стандартизированы в POSIX и реализованы одинаково в Linux, macOS, BSD. В Windows есть эквиваленты через <code>Win32 error codes</code>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=коды-ошибок-windows>Коды ошибок Windows<a href=#коды-ошибок-windows class=hash-link aria-label="Прямая ссылка на Коды ошибок Windows" title="Прямая ссылка на Коды ошибок Windows" translate=no>​</a></h3>
+<p>Windows использует несколько пространств имён:</p>
+<ol>
+<li class="">
+<p><strong>Win32 Error Codes</strong> (32-битные, из <code>winerror.h</code>)<br/>
+<!-- -->— <code>5</code>: <code>ERROR_ACCESS_DENIED</code><br/>
+<!-- -->— <code>2</code>: <code>ERROR_FILE_NOT_FOUND</code><br/>
+<!-- -->— <code>10060</code>: <code>WSAETIMEDOUT</code> (сетевой таймаут)<br/>
+<!-- -->Получить: <code>GetLastError()</code>, <code>net helpmsg &lt;code></code> в командной строке.</p>
+</li>
+<li class="">
+<p><strong>NTSTATUS</strong> (из ядра, 32-битные)<br/>
+<!-- -->— <code>0xC0000022</code>: <code>STATUS_ACCESS_DENIED</code><br/>
+<!-- -->— <code>0xC0000034</code>: <code>STATUS_OBJECT_NAME_NOT_FOUND</code><br/>
+<!-- -->Используются драйверами, Event Log, <code>!analyze</code> в WinDbg.</p>
+</li>
+<li class="">
+<p><strong>HRESULT</strong> (COM, 32-битные)<br/>
+<!-- -->— <code>0x80070005</code>: <code>E_ACCESSDENIED</code> (Win32 5, обёрнутый)<br/>
+<!-- -->— <code>0x80040154</code>: <code>REGDB_E_CLASSNOTREG</code> (класс не зарегистрирован в реестре)<br/>
+<!-- -->Структура: <code>SEVERITY (1b) | FACILITY (12b) | CODE (16b)</code>.</p>
+</li>
+</ol>
+<p>Для диагностики Windows:</p>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">whoami /priv</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">wevtutil qe System /q:"*[System[Level=2]]"</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">dxdiag</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">sfc /scannow</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=другие-важные-коды-ошибок>Другие важные коды ошибок<a href=#другие-важные-коды-ошибок class=hash-link aria-label="Прямая ссылка на Другие важные коды ошибок" title="Прямая ссылка на Другие важные коды ошибок" translate=no>​</a></h3>
+<p>Помимо универсальных (POSIX, HTTP, Win32), в эксплуатации постоянно встречаются коды, специфичные для популярных подсистем. Администратор должен уметь их распознавать.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=postgresql>PostgreSQL<a href=#postgresql class=hash-link aria-label="Прямая ссылка на PostgreSQL" title="Прямая ссылка на PostgreSQL" translate=no>​</a></h4>
+<p>Ошибки возвращаются в формате <strong>SQLSTATE</strong> — пятизначный код по стандарту SQL (ANSI/ISO). Первые два символа — класс, остальные — уточнение.</p>
+<table><thead><tr><th>Код<th>Класс<th>Пример сообщения<tbody><tr><td><code>08006</code><td>Connection Exception<td><code>connection to server was lost</code><tr><td><code>23505</code><td>Integrity Constraint Violation<td><code>duplicate key value violates unique constraint</code><tr><td><code>53300</code><td>Too Many Connections<td><code>sorry, too many clients already</code><tr><td><code>57014</code><td>Query Canceled<td><code>canceling statement due to user request</code><tr><td><code>XX000</code><td>Internal Error<td><code>could not write to file "base/pgsql_tmp/pgsql_tmp12345": No space left on device</code></table>
+<p>Диагностика:<br/>
+<!-- -->— <code>pg_stat_activity</code> — текущие запросы и их состояние (<code>waiting</code>, <code>active</code>);<br/>
+<!-- -->— <code>log_min_messages = error</code>, <code>log_error_verbosity = verbose</code> — детальные логи;<br/>
+<!-- -->— <code>pg_controldata</code> — состояние кластера при старте.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=mysql--mariadb>MySQL / MariaDB<a href=#mysql--mariadb class=hash-link aria-label="Прямая ссылка на MySQL / MariaDB" title="Прямая ссылка на MySQL / MariaDB" translate=no>​</a></h4>
+<p>Аналогично — числовой код + SQLSTATE.</p>
+<table><thead><tr><th>Код<th>SQLSTATE<th>Описание<tbody><tr><td><code>1045</code><td><code>28000</code><td><code>Access denied for user</code><tr><td><code>1049</code><td><code>42000</code><td><code>Unknown database</code><tr><td><code>1213</code><td><code>40001</code><td><code>Deadlock found when trying to get lock</code><tr><td><code>2002</code><td><code>HY000</code><td><code>Can't connect to local MySQL server</code><tr><td><code>2013</code><td><code>HY000</code><td><code>Lost connection to MySQL server during query</code></table>
+<p>Особенность: коды до 1000 — клиентские, 1000+ — серверные. <code>SHOW ENGINE INNODB STATUS</code> — ключевой инструмент при deadlock’ах.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=docker>Docker<a href=#docker class=hash-link aria-label="Прямая ссылка на Docker" title="Прямая ссылка на Docker" translate=no>​</a></h4>
+<p>Ошибки Docker CLI и демона имеют текстовый формат, но часто содержат стандартные системные коды внутри.</p>
+<table><thead><tr><th>Сообщение<th>Причина<tbody><tr><td><code>Cannot connect to the Docker daemon</code><td><code>dockerd</code> не запущен, сокет <code>/var/run/docker.sock</code> недоступен<tr><td><code>no space left on device</code><td>Заполнена <code>overlay2</code>-директория или <code>devicemapper</code>-пул<tr><td><code>bind: address already in use</code><td>Порт, проброшенный через <code>-p</code>, занят другим процессом<tr><td><code>OCI runtime create failed</code><td>Ошибка в <code>runc</code> — часто из-за неподдерживаемых capability или seccomp-профиля<tr><td><code>exec user process caused: no such file or directory</code><td>Бинарный файл в <code>ENTRYPOINT</code> отсутствует или имеет неверный <code>#!</code>-заголовок (например, <code>#!/bin/sh</code> в alpine без <code>sh</code>)</table>
+<p>Диагностика:<br/>
+<!-- -->— <code>docker system df</code> — использование диска;<br/>
+<!-- -->— <code>journalctl -u docker</code> — логи демона;<br/>
+<!-- -->— <code>docker inspect &lt;container></code> — детали окружения.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=systemd>systemd<a href=#systemd class=hash-link aria-label="Прямая ссылка на systemd" title="Прямая ссылка на systemd" translate=no>​</a></h4>
+<p>Службы, управляемые <code>systemd</code>, при сбое возвращают код выхода + дополнительную информацию.</p>
+<table><thead><tr><th>Состояние<th>Описание<tbody><tr><td><code>failed</code><td>Процесс завершился с ненулевым кодом<tr><td><code> activating (auto-restart)</code><td>systemd пытается перезапустить (согласно <code>Restart=</code>)<tr><td><code>start-limit-hit</code><td>Достигнут лимит перезапусков (<code>StartLimitIntervalSec</code>, <code>StartLimitBurst</code>)</table>
+<p>Ключевые команды:<br/>
+<!-- -->— <code>systemctl status &lt;service></code> — текущее состояние, последние логи;<br/>
+<!-- -->— <code>journalctl -u &lt;service> -f</code> — поток логов;<br/>
+<!-- -->— <code>systemctl show &lt;service></code> — параметры юнита (таймауты, зависимости, лимиты).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-исправлять-проблемы-с-железом>Как исправлять проблемы с железом<a href=#как-исправлять-проблемы-с-железом class=hash-link aria-label="Прямая ссылка на Как исправлять проблемы с железом" title="Прямая ссылка на Как исправлять проблемы с железом" translate=no>​</a></h3>
+<p>Аппаратные ошибки требуют иного подхода, чем программные: <strong>нельзя "перезапустить компонент" — только заменить или изолировать</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=диагностика-1>Диагностика<a href=#диагностика-1 class=hash-link aria-label="Прямая ссылка на Диагностика" title="Прямая ссылка на Диагностика" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p><strong>Сбор аппаратных логов</strong>:<br/>
+<!-- -->— <code>dmesg -T | grep -i "error\|fail\|ecc\|mce"</code> — ошибки ядра, включая machine check;<br/>
+<!-- -->— <code>edac-util --status</code> — статистика ECC-ошибок в памяти;<br/>
+<!-- -->— <code>smartctl -a /dev/sda</code> — SMART-статус диска (Reallocated_Sector_Ct, Pending_Sectors, UDMA_CRC_Error_Count);<br/>
+<!-- -->— <code>ipmitool sel list</code> — системный журнал сервера через IPMI (ошибки питания, температуры, вентиляторов);<br/>
+<!-- -->— <code>lspci -vvv</code> — статус PCI-устройств, ошибки AER (Advanced Error Reporting).</p>
+</li>
+<li class="">
+<p><strong>Наблюдение за счётчиками</strong>:<br/>
+<!-- -->— <code>cat /sys/devices/system/edac/mc/mc*/ce_count</code> — корректируемые ошибки памяти;<br/>
+<!-- -->— <code>grep -i "temperature" /var/log/syslog</code> — перегрев;<br/>
+<!-- -->— <code>iostat -x 1</code> — ошибки ввода-вывода (<code>errs</code>, <code>fail</code> в выводе <code>sar -d</code>).</p>
+</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=типичные-сценарии-и-действия>Типичные сценарии и действия<a href=#типичные-сценарии-и-действия class=hash-link aria-label="Прямая ссылка на Типичные сценарии и действия" title="Прямая ссылка на Типичные сценарии и действия" translate=no>​</a></h4>
+<table><thead><tr><th>Симптом<th>Вероятная причина<th>Действие<tbody><tr><td>Случайные вылеты, kernel panic<td>Нестабильная память (UE)<td>Запустить <code>memtest86+</code> на 4+ часа; заменить модуль<tr><td>Падение производительности диска, <code>I/O error</code><td>Физический износ SSD/HDD<td>Проверить SMART; заменить носитель; восстановить данные из резервной копии<tr><td>Перегрев CPU, троттлинг<td>Забиты радиаторы, вышел из строя вентилятор<td>Очистка системы охлаждения; мониторинг <code>sensors</code><tr><td>Потеря сетевого соединения, CRC errors<td>Проблемы с кабелем, портом, драйвером<td>Замена кабеля; проверка <code>ethtool -S eth0</code>; обновление драйвера<tr><td>Неожиданное выключение питания<td>Сбой ИБП, блока питания<td>Проверка ИБП (<code>apcaccess status</code>); замена PSU</table>
+<p><strong>Важно:</strong></p>
+<ul>
+<li class="">При подозрении на аппаратную ошибку — <strong>немедленно резервное копирование</strong> критичных данных;</li>
+<li class="">Не пытайтесь "дожать" нестабильное оборудование — это рискует целостностью данных;</li>
+<li class="">В кластерных системах — переведите узел в режим обслуживания (<code>node drain</code>) перед диагностикой.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=утечка-памяти>Утечка памяти<a href=#утечка-памяти class=hash-link aria-label="Прямая ссылка на Утечка памяти" title="Прямая ссылка на Утечка памяти" translate=no>​</a></h3>
+<p>Утечка памяти — постепенное накопление неиспользуемых, но недоступных для сборки мусора или освобождения блоков памяти. Это <strong>деградация</strong>, которая проявляется через часы, дни, недели.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=признаки>Признаки<a href=#признаки class=hash-link aria-label="Прямая ссылка на Признаки" title="Прямая ссылка на Признаки" translate=no>​</a></h4>
+<ul>
+<li class="">Постепенный рост RSS (Resident Set Size) процесса при неизменной нагрузке;</li>
+<li class="">Увеличение использования swap;</li>
+<li class="">Рост времени GC (в JVM/.NET) или частоты <code>malloc</code>/<code>free</code>;</li>
+<li class="">Внезапные OOM-kill’и после длительной работы.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=диагностика-по-ос>Диагностика по ОС<a href=#диагностика-по-ос class=hash-link aria-label="Прямая ссылка на Диагностика по ОС" title="Прямая ссылка на Диагностика по ОС" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p><strong>Мониторинг</strong>:<br/>
+<!-- -->— <code>ps aux --sort=-%mem | head</code> — топ процессов по памяти;<br/>
+<!-- -->— <code>pmap -x &lt;pid></code> — детальное распределение памяти процесса;<br/>
+<!-- -->— <code>cat /proc/&lt;pid>/status</code> — <code>VmRSS</code>, <code>VmSize</code>, <code>Threads</code>.</p>
+</li>
+<li class="">
+<p><strong>Сравнение во времени</strong>:<br/>
+<!-- -->Запуск скрипта каждые 5 минут:</p>
+</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token keyword" style=font-style:italic>while</span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">true</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token keyword" style=font-style:italic>do</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">     </span><span class="token function" style="color:rgb(130, 170, 255)">date</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">>></span><span class="token plain"> mem.log</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">     </span><span class="token function" style="color:rgb(130, 170, 255)">ps</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-p</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">pid</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-o</span><span class="token plain"> pid,vsz,rss,comm </span><span class="token operator" style="color:rgb(137, 221, 255)">>></span><span class="token plain"> mem.log</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">     </span><span class="token function" style="color:rgb(130, 170, 255)">sleep</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">300</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token keyword" style=font-style:italic>done</span><br/></div></code></pre></div></div>
+<ol start=3>
+<li class=""><strong>Выявление OOM</strong>:<br/>
+<!-- -->— <code>dmesg -T | grep -i "killed process"</code>;<br/>
+<!-- -->— <code>journalctl -k --since "1 hour ago" | grep -i "oom\|kill"</code>.</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=диагностика-по-приложению>Диагностика по приложению<a href=#диагностика-по-приложению class=hash-link aria-label="Прямая ссылка на Диагностика по приложению" title="Прямая ссылка на Диагностика по приложению" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Java</strong>: <code>jstat -gc &lt;pid> 5s</code>, <code>jmap -histo:live &lt;pid></code>, <code>jcmd &lt;pid> GC.run</code>; heap dump через <code>jmap -dump:live,file=heap.hprof &lt;pid></code> → анализ в Eclipse MAT.</li>
+<li class=""><strong>.NET</strong>: <code>dotnet-dump collect</code>, анализ в Visual Studio или PerfView.</li>
+<li class=""><strong>C/C++</strong>: <code>valgrind --leak-check=full</code>, <code>AddressSanitizer</code> (<code>-fsanitize=address</code>).</li>
+<li class=""><strong>Node.js</strong>: <code>heapdump</code> модуль, <code>--inspect</code> + Chrome DevTools.</li>
+</ul>
+<p>Утечка — не всегда ошибка кода. Может быть вызвана:</p>
+<ul>
+<li class="">Кэшированием без ограничения размера;</li>
+<li class="">Подпиской на события без отписки;</li>
+<li class="">Хранением сессий в памяти без TTL;</li>
+<li class="">Неправильной работой пулов соединений.</li>
+</ul>
+<p><strong>Профилактика</strong>:<br/>
+<!-- -->— Настройка лимитов памяти (<code>-Xmx</code>, <code>ulimit -v</code>, <code>MemoryLimit</code> в systemd);<br/>
+<!-- -->— Мониторинг RSS и GC-метрик;<br/>
+<!-- -->— Регулярные "холодные" рестарты служб (rolling restart).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-быстро-и-безопасно-прекращать-работу-приложений-сервера-субд>Как быстро и безопасно прекращать работу приложений, сервера, СУБД<a href=#как-быстро-и-безопасно-прекращать-работу-приложений-сервера-субд class=hash-link aria-label="Прямая ссылка на Как быстро и безопасно прекращать работу приложений, сервера, СУБД" title="Прямая ссылка на Как быстро и безопасно прекращать работу приложений, сервера, СУБД" translate=no>​</a></h3>
+<p>Аварийное завершение — последнее средство. Цель — <strong>минимизировать повреждение данных</strong> и обеспечить восстанавливаемость.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=последовательность-сигналов-posix>Последовательность сигналов (POSIX)<a href=#последовательность-сигналов-posix class=hash-link aria-label="Прямая ссылка на Последовательность сигналов (POSIX)" title="Прямая ссылка на Последовательность сигналов (POSIX)" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p><strong><code>SIGTERM</code> (15)</strong> — вежливый запрос на завершение.<br/>
+<!-- -->Приложение должно:<br/>
+<!-- -->— остановить приём новых запросов;<br/>
+<!-- -->— завершить текущие транзакции;<br/>
+<!-- -->— освободить ресурсы (сокеты, файлы, локи);<br/>
+<!-- -->— выгрузить кэши;<br/>
+<!-- -->— завершиться.<br/>
+<!-- -->Таймаут: обычно 30–120 секунд (<code>TimeoutStopSec</code> в systemd).</p>
+</li>
+<li class="">
+<p><strong><code>SIGKILL</code> (9)</strong> — немедленное уничтожение процесса.<br/>
+<!-- -->Никаких обработчиков, никакого освобождения. Используется <strong>только</strong> если <code>SIGTERM</code> не сработал. Рискует:<br/>
+<!-- -->— повреждением данных (незаписанные буферы);<br/>
+<!-- -->— оставлением "мёртвых" локов;<br/>
+<!-- -->— необходимостью восстановления при старте (например, WAL replay в PostgreSQL).</p>
+</li>
+</ol>
+<p><strong>Правило:</strong> всегда пробовать <code>SIGTERM</code> → ждать таймаут → только потом <code>SIGKILL</code>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=для-субд>Для СУБД<a href=#для-субд class=hash-link aria-label="Прямая ссылка на Для СУБД" title="Прямая ссылка на Для СУБД" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>PostgreSQL</strong>: <code>pg_ctl stop -m fast</code> (отменяет новые подключения, завершает активные, делает checkpoint); <code>-m immediate</code> — аналог <code>SIGKILL</code>, требует восстановления.</li>
+<li class=""><strong>MySQL</strong>: <code>mysqladmin shutdown</code> — штатное завершение; <code>kill -9</code> — только в крайнем случае.</li>
+<li class=""><strong>Redis</strong>: <code>SHUTDOWN SAVE</code> / <code>SHUTDOWN NOSAVE</code> — управляемое завершение с/без сохранения.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=для-сервера-хоста>Для сервера (хоста)<a href=#для-сервера-хоста class=hash-link aria-label="Прямая ссылка на Для сервера (хоста)" title="Прямая ссылка на Для сервера (хоста)" translate=no>​</a></h4>
+<ol>
+<li class=""><strong>Остановка служб</strong>:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   systemctl stop nginx postgresql </span><span class="token function" style="color:rgb(130, 170, 255)">docker</span><br/></div></code></pre></div></div>
+<ol start=2>
+<li class=""><strong>Синхронизация дисков</strong>:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">sync</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"> </span><span class="token builtin class-name" style="color:rgb(255, 203, 107)">echo</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">3</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain"> /proc/sys/vm/drop_caches  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># (опционально, для чистоты)</span><br/></div></code></pre></div></div>
+<ol start=3>
+<li class=""><strong>Выключение</strong>:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">shutdown</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-h</span><span class="token plain"> now</span><br/></div></code></pre></div></div>
+<p>Или перезагрузка: <code>shutdown -r now</code>.</p>
+<p><strong>В виртуальной среде:</strong><br/>
+<!-- -->— Используйте <code>acpi shutdown</code> через гипервизор (VMware Tools, QEMU guest agent), а не <code>power off</code>;<br/>
+<!-- -->— Это генерирует <code>SIGTERM</code> для всех служб, как при физическом выключении.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=польза-перезагрузки>Польза перезагрузки<a href=#польза-перезагрузки class=hash-link aria-label="Прямая ссылка на Польза перезагрузки" title="Прямая ссылка на Польза перезагрузки" translate=no>​</a></h3>
+<p>Перезагрузка — не "лечение от всех болезней", но <strong>валидный инструмент восстановления состояния</strong>, если:</p>
+<ul>
+<li class="">Накопились неисправимые состояния ядра (например, утечки в драйверах);</li>
+<li class="">Изменена конфигурация, требующая перезагрузки (новый <code>sysctl</code>, ядро, модули);</li>
+<li class="">Система находится в неопределённом состоянии (например, после аппаратного сбоя).</li>
+</ul>
+<p>Однако:</p>
+<ul>
+<li class="">Перезагрузка <strong>не заменяет диагностику</strong>. Если сервис падает каждые 6 часов — перезагрузка скрывает проблему, но не решает её.</li>
+<li class="">В production-средах перезагрузка должна быть:<br/>
+<!-- -->— запланированной;<br/>
+<!-- -->— проведённой в режиме обслуживания (drain);<br/>
+<!-- -->— сопровождаемой мониторингом после старта.</li>
+</ul>
+<p><strong>Когда перезагрузка оправдана:</strong><br/>
+<!-- -->— После обновления ядра;<br/>
+<!-- -->— При стабильном росте <code>slab</code>/<code>dentry</code> cache без освобождения;<br/>
+<!-- -->— При неустранимом <code>hung_task</code> (процесс в состоянии <code>D</code> — uninterruptible sleep).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибки-связанные-с-аппаратными-неполадками>Ошибки, связанные с аппаратными неполадками<a href=#ошибки-связанные-с-аппаратными-неполадками class=hash-link aria-label="Прямая ссылка на Ошибки, связанные с аппаратными неполадками" title="Прямая ссылка на Ошибки, связанные с аппаратными неполадками" translate=no>​</a></h3>
+<p>Это ошибки, которые <strong>не могут быть исправлены программно</strong>, но проявляются на программном уровне.</p>
+<table><thead><tr><th>Программный симптом<th>Аппаратная причина<tbody><tr><td><code>Input/output error</code> при чтении файла<td>Повреждённый сектор на диске<tr><td><code>Bus error (core dumped)</code><td>Ошибка шины, нестабильная ОЗУ<tr><td><code>Machine check exception</code><td>Перегрев CPU, повреждение кэша<tr><td>Случайные битфлипы в данных<td>Космическое излучение, неисправная ECC-память<tr><td>Потеря пакетов без объяснения<td>Проблемы с сетевой картой, кабелем, коммутатором<tr><td><code>Thermal throttling</code> в <code>dmesg</code><td>Неисправная система охлаждения</table>
+<p><strong>Золотое правило:</strong> если одна и та же ошибка повторяется на разных ОС, с разными драйверами, на "чистой" установке — вероятно, причина аппаратная.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=самые-страшные-ошибки-для-сервера>Самые страшные ошибки для сервера<a href=#самые-страшные-ошибки-для-сервера class=hash-link aria-label="Прямая ссылка на Самые страшные ошибки для сервера" title="Прямая ссылка на Самые страшные ошибки для сервера" translate=no>​</a></h3>
+<p>Эти ошибки угрожают <strong>целостности данных</strong> и <strong>доступности сервиса</strong>. Их нельзя игнорировать.</p>
+<ol>
+<li class="">
+<p><strong><code>Out of memory: Kill process</code> (OOM-killer)</strong><br/>
+<!-- -->— Ядро принудительно завершает процессы, чтобы выжить.<br/>
+<!-- -->— Риск: убит критичный процесс (например, СУБД), данные не сохранены.<br/>
+<!-- -->— Профилактика: лимиты (<code>cgroups</code>), мониторинг <code>memory.pressure</code>, настройка <code>vm.overcommit_memory</code>.</p>
+</li>
+<li class="">
+<p><strong><code>Filesystem is read-only</code></strong><br/>
+<!-- -->— Ядро перевело ФС в режим "только чтение" из-за ошибок (например, <code>EXT4-fs error</code>).<br/>
+<!-- -->— Сервисы перестают писать логи, обновлять данные.<br/>
+<!-- -->— Причина: аппаратная ошибка диска, повреждение метаданных.<br/>
+<!-- -->— Действие: немедленный бэкап, проверка <code>fsck</code> после выключения.</p>
+</li>
+<li class="">
+<p><strong><code>RAID array degraded</code> / <code>failed</code></strong><br/>
+<!-- -->— Потеря избыточности. Один отказ — потеря данных.<br/>
+<!-- -->— Мониторинг: <code>megacli</code>, <code>smartctl -d megaraid</code>, <code>cat /proc/mdstat</code>.<br/>
+<!-- -->— Обязательно: замена диска <em>до</em> второго отказа.</p>
+</li>
+<li class="">
+<p><strong><code>Clock skew detected</code> / <code>NTP sync lost</code></strong><br/>
+<!-- -->— В распределённых системах (Kafka, Cassandra, Kerberos) рассинхронизация времени на <code>></code>1 сек убивает работу.<br/>
+<!-- -->— Причина: нестабильный NTP-сервер, виртуальная машина без <code>chrony</code>/<code>systemd-timesyncd</code>.</p>
+</li>
+<li class="">
+<p><strong><code>Transaction log full</code> (в СУБД)</strong><br/>
+<!-- -->— Например, <code>The transaction log for database 'X' is full</code>.<br/>
+<!-- -->— Запись останавливается, сервис "зависает".<br/>
+<!-- -->— Профилактика: мониторинг размера лога, настройка <code>autogrowth</code>, резервное копирование логов.</p>
+</li>
+<li class="">
+<p><strong><code>Split-brain</code> в кластере</strong><br/>
+<!-- -->— Два узла считают себя мастером. Записи конфликтуют, данные расходятся.<br/>
+<!-- -->— Требует немедленного вмешательства: останов одного узла, ручное восстановление.</p>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=приложение-1-сводная-таблица-кодов-ошибок>Приложение 1. Сводная таблица кодов ошибок<a href=#приложение-1-сводная-таблица-кодов-ошибок class=hash-link aria-label="Прямая ссылка на Приложение 1. Сводная таблица кодов ошибок" title="Прямая ссылка на Приложение 1. Сводная таблица кодов ошибок" translate=no>​</a></h2>
+<p>Таблица охватывает наиболее часто встречающиеся коды в повседневной эксплуатации. Приведены эквиваленты между системами, где они существуют.</p>
+<table><thead><tr><th>Код / Имя<th>POSIX (<code>errno</code>)<th>Win32<th>HTTP<th>SQLSTATE (PostgreSQL)<th>Описание<th>Типичный контекст<tbody><tr><td><strong>Доступ</strong><td><code>EACCES</code> (13)<td><code>5</code> (<code>ERROR_ACCESS_DENIED</code>)<td><code>403 Forbidden</code><td><code>42501</code><td>Отказ в доступе: недостаточно прав<td>Открытие файла, <code>bind()</code> на порт <code>&lt;</code>1024, запрос к API без прав<tr><td><strong>Не найден</strong><td><code>ENOENT</code> (2)<td><code>2</code> (<code>ERROR_FILE_NOT_FOUND</code>)<td><code>404 Not Found</code><td><code>42P01</code><td>Ресурс отсутствует<td><code>open()</code>, <code>exec()</code>, обращение к несуществующему endpoint’у<tr><td><strong>Уже существует</strong><td><code>EEXIST</code> (17)<td><code>183</code> (<code>ERROR_ALREADY_EXISTS</code>)<td>—<td><code>42P07</code><td>Попытка создания уже существующего объекта<td><code>mkdir()</code>, <code>bind()</code> на занятый порт, <code>CREATE TABLE IF NOT EXISTS</code> без <code>IF NOT</code><tr><td><strong>Адрес используется</strong><td><code>EADDRINUSE</code> (98)<td><code>10048</code> (<code>WSAEADDRINUSE</code>)<td>—<td>—<td>Порт или сокет уже занят<td>Запуск двух экземпляров сервиса на одном порту<tr><td><strong>Таймаут</strong><td><code>ETIMEDOUT</code> (110)<td><code>10060</code> (<code>WSAETIMEDOUT</code>)<td><code>408 Request Timeout</code>, <code>504 Gateway Timeout</code><td><code>57014</code><td>Операция не завершилась вовремя<td>Сетевой запрос, <code>accept()</code>, <code>read()</code> без данных<tr><td><strong>Соединение отклонено</strong><td><code>ECONNREFUSED</code> (111)<td><code>10061</code> (<code>WSAECONNREFUSED</code>)<td><code>502 Bad Gateway</code> (часто)<td>—<td>Удалённая сторона отвергла соединение<td><code>connect()</code> к неработающему сервису<tr><td><strong>Разорван канал</strong><td><code>EPIPE</code> (32)<td><code>109</code> (<code>ERROR_BROKEN_PIPE</code>)<td>—<td>—<td>Запись в закрытое соединение<td>Клиент закрыл сокет, сервер пытается писать<tr><td><strong>Нет памяти</strong><td><code>ENOMEM</code> (12)<td><code>14</code> (<code>ERROR_OUTOFMEMORY</code>)<td><code>503 Service Unavailable</code> (косвенно)<td><code>53200</code><td>Не хватает оперативной памяти<td><code>fork()</code>, <code>malloc()</code>, выделение буфера<tr><td><strong>Нет места</strong><td><code>ENOSPC</code> (28)<td><code>112</code> (<code>ERROR_DISK_FULL</code>)<td><code>507 Insufficient Storage</code><td><code>53100</code><td>Закончилось место на диске/в quota<td>Запись файла, <code>CREATE INDEX</code>, логирование<tr><td><strong>Deadlock</strong><td>—<td><code>145</code> (<code>ERROR_LOCK_VIOLATION</code>)<td>—<td><code>40001</code><td>Взаимная блокировка<td>Транзакции в СУБД, многопоточные приложения<tr><td><strong>Недопустимый параметр</strong><td><code>EINVAL</code> (22)<td><code>87</code> (<code>ERROR_INVALID_PARAMETER</code>)<td><code>400 Bad Request</code><td><code>22023</code><td>Некорректный аргумент функции<td><code>ioctl()</code>, <code>setsockopt()</code>, вызов API с битым JSON</table>
+<blockquote>
+<p><strong>Примечание</strong>:<br/>
+<!-- -->— <code>— </code> означает, что код не стандартизирован в этой системе (но может возникать как следствие);<br/>
+<!-- -->— SQLSTATE одинаков для всех СУБД, совместимых со стандартом (PostgreSQL, MySQL, Oracle);<br/>
+<!-- -->— HTTP-коды 4xx — проблема клиента, 5xx — сервера, но <em>интерпретация администратором</em> зависит от роли (если вы администрируете backend, то <code>502</code> — ваша зона ответственности).</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=приложение-2-чек-лист-диагностики-типовых-сценариев>Приложение 2. Чек-лист диагностики типовых сценариев<a href=#приложение-2-чек-лист-диагностики-типовых-сценариев class=hash-link aria-label="Прямая ссылка на Приложение 2. Чек-лист диагностики типовых сценариев" title="Прямая ссылка на Приложение 2. Чек-лист диагностики типовых сценариев" translate=no>​</a></h2>
+<p>Чек-лист построен по принципу <strong>"от общего к частному"</strong>, без предположений о стеке. Каждый шаг — проверка или действие; переход — по результату.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-1-сервис-не-отвечает-http-5xx-таймаут-connection-refused>Сценарий 1. Сервис не отвечает (HTTP 5xx, таймаут, connection refused)<a href=#сценарий-1-сервис-не-отвечает-http-5xx-таймаут-connection-refused class=hash-link aria-label="Прямая ссылка на Сценарий 1. Сервис не отвечает (HTTP 5xx, таймаут, connection refused)" title="Прямая ссылка на Сценарий 1. Сервис не отвечает (HTTP 5xx, таймаут, connection refused)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Проверить доступность хоста</strong>:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">ping</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">host</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><br/></div></code></pre></div></div>
+<p>→ Если недоступен: проблема сети/хоста → перейти к <em>Сценарию 3</em>.<br/>
+<!-- -->→ Если доступен: продолжить.</p>
+<ol start=2>
+<li class=""><strong>Проверить порт</strong>:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">nc</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-vz</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">host</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">port</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain">   </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># или telnet &lt;host> &lt;port></span><br/></div></code></pre></div></div>
+<p>→ <code>Connection refused</code>: сервис не слушает порт → проверить статус службы (<code>systemctl status &lt;service></code>).<br/>
+<!-- -->→ <code>Connection timed out</code>: брандмауэр/маршрутизация → <code>iptables -L</code>, <code>ss -tuln</code>, <code>tcpdump</code>.</p>
+<ol start=3>
+<li class="">
+<p><strong>Если служба "активна", но не отвечает</strong>:<br/>
+<!-- -->— Посмотреть логи: <code>journalctl -u &lt;service> -f</code>;<br/>
+<!-- -->— Проверить потребление ресурсов: <code>top</code>, <code>htop</code>, <code>iotop</code>;<br/>
+<!-- -->— Проверить блокировки: <code>lsof -p &lt;pid></code>, <code>strace -p &lt;pid></code>.</p>
+</li>
+<li class="">
+<p><strong>Если процесс "завис" (D-state)</strong>:<br/>
+<!-- -->— <code>ps aux | grep ' D '</code> — процессы в uninterruptible sleep;<br/>
+<!-- -->— Причина почти всегда — I/O (диск, NFS). Проверить <code>dmesg</code>, SMART.</p>
+</li>
+</ol>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-2-сервис-медленно-работает-высокий-latency-лаги>Сценарий 2. Сервис медленно работает (высокий latency, лаги)<a href=#сценарий-2-сервис-медленно-работает-высокий-latency-лаги class=hash-link aria-label="Прямая ссылка на Сценарий 2. Сервис медленно работает (высокий latency, лаги)" title="Прямая ссылка на Сценарий 2. Сервис медленно работает (высокий latency, лаги)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Измерить baseline</strong>:<br/>
+<!-- -->— <code>curl -w "Time: %&amp;#123;time_total&amp;#125;s\n" -o /dev/null -s http://...</code><br/>
+<!-- -->— Сравнить с историей (Grafana, Prometheus): QPS, concurrency (<code>inflight</code>), p95/p99 RT — см. <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2#chetyre-bazovye-metriki>шпаргалку по метрикам</a>.</p>
+</li>
+<li class="">
+<p><strong>Разделить компоненты</strong>:<br/>
+<!-- -->— Frontend → Backend → БД → Диск.<br/>
+<!-- -->— Использовать трассировку (OpenTelemetry, Jaeger) или логи с correlation ID.</p>
+</li>
+<li class="">
+<p><strong>Проверить ресурсы хоста</strong> (подробный runbook — <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100>диагностика производительности Linux</a>):<br/>
+<!-- -->— CPU: <code>mpstat 1</code>; высокий <code>iowait</code> → дисковая подсистема;<br/>
+<!-- -->— Память: <code>free -h</code>, <code>vmstat 1</code>; рост <code>si</code>/<code>so</code> → свопинг;<br/>
+<!-- -->— Диск: <code>iostat -x 1</code>; высокий <code>await</code>, <code>%util</code> <code>></code> 90%;<br/>
+<!-- -->— Сеть: <code>iftop</code>, <code>nethogs</code>.</p>
+</li>
+<li class="">
+<p><strong>Проверить приложение</strong>:<br/>
+<!-- -->— GC-паузы (Java: <code>jstat -gc</code>, .NET: PerfMon <code>GC % Time</code>);<br/>
+<!-- -->— Блокирующие вызовы (<code>strace</code>, <code>perf record</code>);<br/>
+<!-- -->— Очереди (RabbitMQ <code>queue.length</code>, Redis <code>llen</code>).</p>
+</li>
+</ol>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=сценарий-3-хост-недоступен-не-пингуется-нет-ssh>Сценарий 3. Хост недоступен (не пингуется, нет SSH)<a href=#сценарий-3-хост-недоступен-не-пингуется-нет-ssh class=hash-link aria-label="Прямая ссылка на Сценарий 3. Хост недоступен (не пингуется, нет SSH)" title="Прямая ссылка на Сценарий 3. Хост недоступен (не пингуется, нет SSH)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Проверить физический/виртуальный статус</strong>:<br/>
+<!-- -->— В дата-центре: индикаторы питания, консоль (IPMI/iLO);<br/>
+<!-- -->— В облаке: статус инстанса в консоли провайдера.</p>
+</li>
+<li class="">
+<p><strong>Если хост "жив", но нет сети</strong>:<br/>
+<!-- -->— Проверить интерфейсы: <code>ip link show</code>;<br/>
+<!-- -->— Маршруты: <code>ip route</code>;<br/>
+<!-- -->— ARP-таблица: <code>arp -an</code>.</p>
+</li>
+<li class="">
+<p><strong>Если ядро "упало" (kernel panic)</strong>:<br/>
+<!-- -->— Настроить <code>kdump</code> заранее — единственный способ получить дамп;<br/>
+<!-- -->— После перезагрузки: <code>cat /var/crash/*/vmcore-dmesg.txt</code>.</p>
+</li>
+<li class="">
+<p><strong>Если OOM-kill</strong>:<br/>
+<!-- -->— <code>dmesg -T | grep -i "killed process"</code>;<br/>
+<!-- -->— Настроить <code>vm.panic_on_oom = 1</code> + <code>kdump</code>, чтобы избежать частичной деградации.</p>
+</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=приложение-3-схема-принятия-решений-при-сбое-flowchart>Приложение 3. Схема принятия решений при сбое (flowchart)<a href=#приложение-3-схема-принятия-решений-при-сбое-flowchart class=hash-link aria-label="Прямая ссылка на Приложение 3. Схема принятия решений при сбое (flowchart)" title="Прямая ссылка на Приложение 3. Схема принятия решений при сбое (flowchart)" translate=no>​</a></h2>
+<p>Ниже — Mermaid-диаграмма, описывающая алгоритм действий системного администратора при обнаружении ошибки. Упор сделан на <strong>логику диагностики</strong>, а не на конкретные команды.</p>
+<!-- -->
+<blockquote>
+<p><strong>Пояснение к схеме</strong>:<br/>
+<!-- -->— Все решения (<code>{...}</code>) требуют сбора данных, а не предположений;<br/>
+<!-- -->— Цикл <code>P → R → P</code> отражает итеративную природу диагностики;<br/>
+<!-- -->— Шаг <code>U</code> обязателен: каждая ошибка — возможность улучшить observability;<br/>
+<!-- -->— Шаг <code>W</code> превращает реактивное администрирование в проактивное.</p>
+</blockquote>
+<hr/>
+<!-- -->
+<div class="callout callout--tip"><div class=callout-title>Основа по протоколу</div><div class=callout-body><p>Базовый разбор HTTP и HTTPS находится в отдельной статье — <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118>HTTP как основа веб-интеграций</a>.</div></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=практика-postmortem-после-инцидента>Практика postmortem после инцидента<a href=#практика-postmortem-после-инцидента class=hash-link aria-label="Прямая ссылка на Практика postmortem после инцидента" title="Прямая ссылка на Практика postmortem после инцидента" translate=no>​</a></h2>
+<p>После восстановления сервиса полезно закрепить результат:</p>
+<ul>
+<li class="">Зафиксировать timeline: событие -> обнаружение -> реакция -> восстановление.</li>
+<li class="">Выделить первопричину и отдельные сопутствующие факторы.</li>
+<li class="">Сформулировать технические действия профилактики с дедлайнами.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-улучшать-после-каждого-сбоя>Что улучшать после каждого сбоя<a href=#что-улучшать-после-каждого-сбоя class=hash-link aria-label="Прямая ссылка на Что улучшать после каждого сбоя" title="Прямая ссылка на Что улучшать после каждого сбоя" translate=no>​</a></h3>
+<ul>
+<li class="">Качество алертов и пороги срабатывания.</li>
+<li class="">Полноту логов и correlation ID.</li>
+<li class="">Runbook шагов первой реакции для дежурной смены.</li>
+</ul>
+<p>См. также: <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8>Планирование и автоматизация задач</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91>Работа с базами данных в администрировании</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31>Сетевые аномалии и системные процессы</a>.</div><!--$--><!--/$--><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/engineer>engineer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architector>architector</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/required>required</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/beginner>beginner</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-05-31T22:04:03.000Z itemprop=dateModified>31 мая 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Планирование и автоматизация задач</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Работа с базами данных в администрировании</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#обработка-ошибок class="table-of-contents__link toc-highlight">Обработка ошибок</a><ul><li><a href=#что-такое-ошибка class="table-of-contents__link toc-highlight">Что такое ошибка</a><li><a href=#виды-ошибок class="table-of-contents__link toc-highlight">Виды ошибок</a><li><a href=#исключения class="table-of-contents__link toc-highlight">Исключения</a><li><a href=#вылеты class="table-of-contents__link toc-highlight">Вылеты</a><li><a href=#зависания class="table-of-contents__link toc-highlight">Зависания</a><li><a href=#тормоза-лаги-троттлинг-и-фризинг class="table-of-contents__link toc-highlight">Тормоза, лаги, троттлинг и фризинг</a><li><a href=#коды-ошибок-и-непонятный-набор-символов class="table-of-contents__link toc-highlight">Коды ошибок и непонятный набор символов</a><li><a href=#коды-ошибок-в-разных-языках-программирования class="table-of-contents__link toc-highlight">Коды ошибок в разных языках программирования</a><li><a href=#как-читать-ошибки-по-стеку class="table-of-contents__link toc-highlight">Как читать ошибки по стеку</a><li><a href=#заголовок-ошибки-и-тело-ошибки class="table-of-contents__link toc-highlight">Заголовок ошибки и тело ошибки</a><li><a href=#ошибки-сети class="table-of-contents__link toc-highlight">Ошибки сети</a><li><a href=#коды-ошибок-http class="table-of-contents__link toc-highlight">Коды ошибок HTTP</a><li><a href=#основные-общепринятые-ошибки class="table-of-contents__link toc-highlight">Основные общепринятые ошибки</a><li><a href=#коды-ошибок-windows class="table-of-contents__link toc-highlight">Коды ошибок Windows</a><li><a href=#другие-важные-коды-ошибок class="table-of-contents__link toc-highlight">Другие важные коды ошибок</a><li><a href=#как-исправлять-проблемы-с-железом class="table-of-contents__link toc-highlight">Как исправлять проблемы с железом</a><li><a href=#утечка-памяти class="table-of-contents__link toc-highlight">Утечка памяти</a><li><a href=#как-быстро-и-безопасно-прекращать-работу-приложений-сервера-субд class="table-of-contents__link toc-highlight">Как быстро и безопасно прекращать работу приложений, сервера, СУБД</a><li><a href=#польза-перезагрузки class="table-of-contents__link toc-highlight">Польза перезагрузки</a><li><a href=#ошибки-связанные-с-аппаратными-неполадками class="table-of-contents__link toc-highlight">Ошибки, связанные с аппаратными неполадками</a><li><a href=#самые-страшные-ошибки-для-сервера class="table-of-contents__link toc-highlight">Самые страшные ошибки для сервера</a></ul><li><a href=#приложение-1-сводная-таблица-кодов-ошибок class="table-of-contents__link toc-highlight">Приложение 1. Сводная таблица кодов ошибок</a><li><a href=#приложение-2-чек-лист-диагностики-типовых-сценариев class="table-of-contents__link toc-highlight">Приложение 2. Чек-лист диагностики типовых сценариев</a><ul><li><a href=#сценарий-1-сервис-не-отвечает-http-5xx-таймаут-connection-refused class="table-of-contents__link toc-highlight">Сценарий 1. Сервис не отвечает (HTTP 5xx, таймаут, connection refused)</a><li><a href=#сценарий-2-сервис-медленно-работает-высокий-latency-лаги class="table-of-contents__link toc-highlight">Сценарий 2. Сервис медленно работает (высокий latency, лаги)</a><li><a href=#сценарий-3-хост-недоступен-не-пингуется-нет-ssh class="table-of-contents__link toc-highlight">Сценарий 3. Хост недоступен (не пингуется, нет SSH)</a></ul><li><a href=#приложение-3-схема-принятия-решений-при-сбое-flowchart class="table-of-contents__link toc-highlight">Приложение 3. Схема принятия решений при сбое (flowchart)</a><li><a href=#практика-postmortem-после-инцидента class="table-of-contents__link toc-highlight">Практика postmortem после инцидента</a><ul><li><a href=#что-улучшать-после-каждого-сбоя class="table-of-contents__link toc-highlight">Что улучшать после каждого сбоя</a></ul></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-zabbix><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Zabbix"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Zabbix</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="7 элементов">7 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-prometheus-и-grafana><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Prometheus и Grafana"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Prometheus и Grafana</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="11 элементов">11 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title=Администрирование><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Администрирование</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.">Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Диагностика производительности Linux"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Диагностика производительности Linux</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.">Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Установка и первоначальная настройка ОС"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Установка и первоначальная настройка ОС</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер.">Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><h2 class="theme-doc-card-heading cardTitle_mcqP" title=ИТ-инфраструктура><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">ИТ-инфраструктура</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.">Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые аномалии и системные процессы"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые аномалии и системные процессы</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.">Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Настройка и обслуживание серверов"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Настройка и обслуживание серверов</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.">Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Групповые политики в Windows"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeBrand_aO30 badgeSm_CPs0" style=background:#5E5E5E aria-hidden=true><svg class=svg_CnCY role=img aria-label=Microsoft width=22 height=22 viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.628h11.377V24H0zm12.623 0H24V24H12.623z" fill=#ffffff /></svg></span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Групповые политики в Windows</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций.">Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Конфигурация рабочих станций"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Конфигурация рабочих станций</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.">Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые подключения и диагностика"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые подключения и диагностика</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.">Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Организация домашней сети"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Организация домашней сети</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.">Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro>Ещё <!-- -->15<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script></div></body>

@@ -1,0 +1,697 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Установка и первоначальная настройка ОС | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Установка и первоначальная настройка ОС | Вселенная IT"/><meta data-rh=true name=description content="Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер."/><meta data-rh=true property=og:description content="Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/system-network","name":"2. Система и сеть","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/системное-администрирование","name":"Системное администрирование","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2","name":"Установка и первоначальная настройка ОС","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Collapse sidebar category '2. Система и сеть'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/операционная-система><span title="Операционная система" class=categoryLinkLabel_V03G>Операционная система</span></a><button aria-label="Expand sidebar category 'Операционная система'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/платформы><span title=Платформы class=categoryLinkLabel_V03G>Платформы</span></a><button aria-label="Expand sidebar category 'Платформы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/сеть-и-интернет><span title="Сеть и интернет" class=categoryLinkLabel_V03G>Сеть и интернет</span></a><button aria-label="Expand sidebar category 'Сеть и интернет'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/веб-сайты-и-веб-приложения><span title="Веб-сайты и веб-приложения" class=categoryLinkLabel_V03G>Веб-сайты и веб-приложения</span></a><button aria-label="Expand sidebar category 'Веб-сайты и веб-приложения'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/терминал><span title=Терминал class=categoryLinkLabel_V03G>Терминал</span></a><button aria-label="Expand sidebar category 'Терминал'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/системное-администрирование><span title="Системное администрирование" class=categoryLinkLabel_V03G>Системное администрирование</span></a><button aria-label="Collapse sidebar category 'Системное администрирование'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-zabbix><span title="Практикум Zabbix" class=categoryLinkLabel_V03G>Практикум Zabbix</span></a><button aria-label="Expand sidebar category 'Практикум Zabbix'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-prometheus-и-grafana><span title="Практикум Prometheus и Grafana" class=categoryLinkLabel_V03G>Практикум Prometheus и Grafana</span></a><button aria-label="Expand sidebar category 'Практикум Prometheus и Grafana'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><span title=Администрирование class=linkLabel_WmDU>Администрирование</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><span title="Диагностика производительности Linux" class=linkLabel_WmDU>Диагностика производительности Linux</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2><span title="Установка и первоначальная настройка ОС" class=linkLabel_WmDU>Установка и первоначальная настройка ОС</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><span title=ИТ-инфраструктура class=linkLabel_WmDU>ИТ-инфраструктура</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><span title="Сетевые аномалии и системные процессы" class=linkLabel_WmDU>Сетевые аномалии и системные процессы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><span title="Настройка и обслуживание серверов" class=linkLabel_WmDU>Настройка и обслуживание серверов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411><span title="Групповые политики в Windows" class=linkLabel_WmDU>Групповые политики в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><span title="Конфигурация рабочих станций" class=linkLabel_WmDU>Конфигурация рабочих станций</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><span title="Сетевые подключения и диагностика" class=linkLabel_WmDU>Сетевые подключения и диагностика</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><span title="Организация домашней сети" class=linkLabel_WmDU>Организация домашней сети</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62><span title="Идентичность Microsoft Entra и RBAC" class=linkLabel_WmDU>Идентичность Microsoft Entra и RBAC</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/63><span title="Windows Server — начало работы" class=linkLabel_WmDU>Windows Server — начало работы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64><span title="Управление службами в Windows" class=linkLabel_WmDU>Управление службами в Windows</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7><span title="NAT и проброс портов" class=linkLabel_WmDU>NAT и проброс портов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8><span title="Планирование и автоматизация задач" class=linkLabel_WmDU>Планирование и автоматизация задач</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9><span title="Диагностика и обработка системных ошибок" class=linkLabel_WmDU>Диагностика и обработка системных ошибок</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91><span title="Работа с базами данных в администрировании" class=linkLabel_WmDU>Работа с базами данных в администрировании</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92><span title="Мониторинг, метрики и логирование систем" class=linkLabel_WmDU>Мониторинг, метрики и логирование систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93><span title="Администрирование Linux-систем" class=linkLabel_WmDU>Администрирование Linux-систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/94><span title="Полнотекстовый поиск для приложений" class=linkLabel_WmDU>Полнотекстовый поиск для приложений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/95><span title="Windows на рабочей станции — жизненный цикл" class=linkLabel_WmDU>Windows на рабочей станции — жизненный цикл</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96><span title="GNU/Linux — рабочие столы и споры окружений" class=linkLabel_WmDU>GNU/Linux — рабочие столы и споры окружений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/97><span title='Windows — Store, защита, диспетчер и "сборки"' class=linkLabel_WmDU>Windows — Store, защита, диспетчер и "сборки"</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/98><span title="Системное администрирование — итоги" class=linkLabel_WmDU>Системное администрирование — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/99><span title="Системное администрирование — чек-лист" class=linkLabel_WmDU>Системное администрирование — чек-лист</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/восстановление-данных><span title="Восстановление данных" class=categoryLinkLabel_V03G>Восстановление данных</span></a><button aria-label="Expand sidebar category 'Восстановление данных'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro><span title="Системное администрирование — о разделе" class=linkLabel_WmDU>Системное администрирование — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/техническая-поддержка><span title="Техническая поддержка" class=categoryLinkLabel_V03G>Техническая поддержка</span></a><button aria-label="Expand sidebar category 'Техническая поддержка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-информационной-безопасности><span title="Основы информационной безопасности" class=categoryLinkLabel_V03G>Основы информационной безопасности</span></a><button aria-label="Expand sidebar category 'Основы информационной безопасности'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/основы-интеграционного-взаимодействия><span title="Основы интеграционного взаимодействия" class=categoryLinkLabel_V03G>Основы интеграционного взаимодействия</span></a><button aria-label="Expand sidebar category 'Основы интеграционного взаимодействия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/аппаратное-обеспечение><span title="Аппаратное обеспечение" class=categoryLinkLabel_V03G>Аппаратное обеспечение</span></a><button aria-label="Expand sidebar category 'Аппаратное обеспечение'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/2-system-network/system-network><span title="2. Система и сеть - о разделе" class=linkLabel_WmDU>2. Система и сеть - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Expand sidebar category '7. Проект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Expand sidebar category '8. Инфраструктура и безопасность'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/system-network><span>2. Система и сеть</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/системное-администрирование><span>Системное администрирование</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Установка и первоначальная настройка ОС</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Установка и первоначальная настройка ОС</h1></header>
+<div class=article-tags><span class="tag tag-required">ОБЯЗАТЕЛЬНО</span><span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span></div>
+<span class=complexity-badge>Разработчику</span>
+<span class=complexity-badge>Архитектору</span>
+<span class=complexity-badge>Инженеру</span>
+<div class="it-demo it-demo--loading">Загрузка установки ОС…</div>
+<p>Установка <strong>прикладных программ</strong> (браузер, офис, агенты) обычно выглядит так; <strong>установка самой ОС</strong> — по схеме выше и в разделе ниже:</p>
+<div class="it-demo it-demo--loading">Загрузка мастера установки…</div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-операционной-системы>Установка операционной системы<a href=#установка-операционной-системы class=hash-link aria-label="Прямая ссылка на Установка операционной системы" title="Прямая ссылка на Установка операционной системы" translate=no>​</a></h2>
+<p>Установка ОС - это когда мы ставим её на чистый или отформатированный компьютер.</p>
+<p>Простой чек-лист:</p>
+<ul>
+<li class="">Скачать образ (файл <code>.iso</code>) с официального сайта;</li>
+<li class="">Сделать загрузочную флешку (программа Rufus или BalenaEtcher);</li>
+<li class="">Вставить флешку в комп;</li>
+<li class="">Перезагрузиться и нажать <code>F12</code>/<code>Del</code>/<code>F2</code> (чтобы выбрать загрузку с флешки);</li>
+<li class="">Выбрать язык (но раскладку клавиатуры оставить английской!);</li>
+<li class="">Выбрать диск (куда ставить);</li>
+<li class="">Нажать "Далее" и подождать 10-30 минут;</li>
+<li class="">Задать имя пользователя и пароль;</li>
+<li class="">После загрузки → установить обновления и драйверы.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-происходит-при-установке>Что происходит при установке<a href=#что-происходит-при-установке class=hash-link aria-label="Прямая ссылка на Что происходит при установке" title="Прямая ссылка на Что происходит при установке" translate=no>​</a></h3>
+<p>В практике выделяют два основных режима установки: <strong>чистая (первичная) установка</strong> и <strong>переустановка (повторная установка)</strong>. Хотя оба процесса используют один и тот же установочный образ и схожий интерфейс, их цели, последствия и внутренние процедуры различаются.</p>
+<p><strong>Чистая установка</strong> предполагает полное отсутствие операционной системы на целевом устройстве хранения данных. Это типично для новых компьютеров, сборок "с нуля", или ситуаций, когда диск был предварительно полностью отформатирован или заменён. Установщик работает в автономном режиме: он инициализирует таблицу разделов, создаёт необходимые системные разделы (например, EFI System Partition в UEFI-режиме), копирует ядро, системные библиотеки, загрузчик и базовые компоненты пользовательского интерфейса. В этом случае пользовательские данные, конфигурации, программы и настройки отсутствуют — система создаётся "с чистого листа".</p>
+<p><strong>Переустановка</strong>, в свою очередь, производится на устройство, где уже имеется действующая (или повреждённая) операционная система. Здесь возможны два подварианта:</p>
+<ul>
+<li class="">
+<p><strong>Установка поверх существующей ОС</strong> (in-place upgrade или repair install): установщик сохраняет пользовательские файлы, настройки и часть установленных программ, но заменяет системные файлы, загрузчик и ядро. Этот режим применяется, когда система работает нестабильно из-за повреждения критических компонентов (например, <code>ntoskrnl.exe</code> в Windows или <code>/sbin/init</code> в Linux), но пользователь хочет сохранить окружение. Однако такой подход не гарантирует устранение всех проблем, поскольку остатки старых конфигураций, повреждённые реестры или конфликтующие драйверы могут сохраниться.</p>
+</li>
+<li class="">
+<p><strong>Полная переустановка с форматированием</strong>: фактически это чистая установка, но на уже использовавшемся носителе. Установщик стирает существующую структуру разделов (или позволяет пользователю вручную удалить их) и создаёт новую. Это наиболее радикальный, но и наиболее надёжный способ восстановления работоспособности системы при глубоких повреждениях — вирусных заражениях, физических ошибках файловой системы, накопленных конфликтах драйверов или неудачных обновлениях. Именно в этом случае обязательно предварительное резервное копирование данных.</p>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=когда-требуется-переустановка>Когда требуется переустановка<a href=#когда-требуется-переустановка class=hash-link aria-label="Прямая ссылка на Когда требуется переустановка" title="Прямая ссылка на Когда требуется переустановка" translate=no>​</a></h3>
+<p>Потребность в переустановке возникает как реакция на сбои, для которых стандартные методы восстановления оказались неэффективны. Наиболее типичные причины:</p>
+<ul>
+<li class="">
+<p><strong>Повреждение системных файлов</strong>, ведущее к невозможности загрузки (BSOD в Windows, kernel panic в Linux) или постоянным сбоям служб. Средства вроде <code>sfc /scannow</code> (Windows) или <code>fsck</code> (Linux) не могут восстановить целостность, если повреждён загрузочный сектор, ядро или критические библиотеки.</p>
+</li>
+<li class="">
+<p><strong>Тяжёлое вредоносное заражение</strong>, при котором антивирусные решения не способны полностью ликвидировать угрозу из-за её глубокой интеграции в системные процессы (rootkits, bootkits). Переустановка гарантирует полное уничтожение вредоносного кода, находящегося вне пользовательского пространства.</p>
+</li>
+<li class="">
+<p><strong>Накопленные нестабильности</strong>: замедление работы, частые зависания, конфликты ПО после многократных обновлений и установок/удалений программ. Это следствие фрагментации реестра (в Windows), остатков конфигураций, дублирующихся драйверов или некорректных прав доступа. Такие проблемы часто диагностируются как "система стала тормозить со временем" и эффективно устраняются только полной переустановкой.</p>
+</li>
+<li class="">
+<p><strong>Смена архитектуры или режима загрузки</strong>: переход с BIOS на UEFI, с MBR на GPT, с 32-битной на 64-битную версию ОС. Такие изменения невозможно выполнить "на лету" — требуется переразметка диска и повторная установка.</p>
+</li>
+</ul>
+<p>Стоит подчеркнуть: регулярные обновления ОС (security patches, feature updates) <strong>не являются</strong> переустановкой. Они модифицируют существующую систему, сохраняя её идентичность — идентификатор установки, SID (в Windows), корневые сертификаты и большинство конфигураций остаются неизменными.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=образ-дистрибутив-и-установщик>Образ, дистрибутив и установщик<a href=#образ-дистрибутив-и-установщик class=hash-link aria-label="Прямая ссылка на Образ, дистрибутив и установщик" title="Прямая ссылка на Образ, дистрибутив и установщик" translate=no>​</a></h3>
+<p>Эти термины часто используются как синонимы, но технически обозначают разные уровни абстракции.</p>
+<ul>
+<li class="">
+<p><strong>Дистрибутив</strong> — это конечный продукт, поставляемый разработчиком ОС. Для Windows это, например, "Windows 11 Pro x64", для Linux — "Ubuntu 24.04 LTS Desktop". Дистрибутив включает в себя ядро, базовую систему, набор предустановленных приложений, установщик и метаданные (лицензионные ключи, цифровые подписи). Он существует в виде файла, набора файлов или физического носителя.</p>
+</li>
+<li class="">
+<p><strong>Образ</strong> — это <em>цифровое представление</em> дистрибутива в виде единого файла, обычно в формате ISO 9660 (с расширением <code>.iso</code>) или его расширений (например, <code>.img</code>, <code>.wim</code> для Windows). Образ создаётся путём побайтового копирования содержимого загрузочного носителя (CD/DVD, USB-накопителя). Он содержит:</p>
+<ul>
+<li class="">Файловую систему установочного носителя;</li>
+<li class="">Загрузочный сектор, совместимый с BIOS или UEFI;</li>
+<li class="">Программу-установщик (например, <code>setup.exe</code> для Windows, <code>ubiquity</code> для Ubuntu);</li>
+<li class="">Сжатые архивы с файлами будущей ОС (часто в форматах <code>squashfs</code>, <code>wim</code>, <code>esd</code>);</li>
+<li class="">Драйверы первого уровня (для контроллеров хранения, сетевых карт, USB).</li>
+</ul>
+<p>Важно: не всякий файл <code>.iso</code> является <em>загрузочным образом</em>. Он может быть просто архивом данных (например, резервной копией). Загрузочность определяется наличием в нём корректного <em>загрузочного сектора</em> и соответствующих заголовков (например, El Torito для CD-ROM эмуляции).</p>
+</li>
+<li class="">
+<p><strong>Установщик</strong> — это исполняемая программа, содержащаяся внутри образа и запускаемая при загрузке с носителя. Это полноценное приложение с графическим или текстовым интерфейсом, задача которого — развернуть содержимое дистрибутива на целевом диске. Установщик управляет:</p>
+<ul>
+<li class="">Выбором языка и региональных настроек;</li>
+<li class="">Разметкой диска и созданием разделов;</li>
+<li class="">Копированием файлов и распаковкой архивов;</li>
+<li class="">Настройкой загрузчика;</li>
+<li class="">Конфигурированием учётных записей и сетевых параметров;</li>
+<li class="">Регистрацией лицензии.</li>
+</ul>
+</li>
+</ul>
+<p>Таким образом, цепочка такова: <em>дистрибутив</em> → упакован в <em>образ</em> → образ записывается на <em>загрузочный носитель</em> → при старте с носителя запускается <em>установщик</em> → установщик разворачивает <em>ОС</em>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=загрузчик-и-процесс-загрузки>Загрузчик и процесс загрузки<a href=#загрузчик-и-процесс-загрузки class=hash-link aria-label="Прямая ссылка на Загрузчик и процесс загрузки" title="Прямая ссылка на Загрузчик и процесс загрузки" translate=no>​</a></h3>
+<p>Для понимания установки критически важно осознавать, что сама ОС <strong>не участвует в собственной установке</strong>. Установка происходит в <em>докомпьютерном</em> состоянии — до того, как ядро получает управление. Этап, предшествующий запуску ядра, называется <strong>загрузкой</strong> (boot), и он состоит из нескольких стадий.</p>
+<ol>
+<li class="">
+<p><strong>POST (Power-On Self-Test)</strong> — выполняется микропрограммой материнской платы (BIOS или UEFI) при включении питания. Проверяется целостность оперативной памяти, наличие процессора, базовых периферийных устройств.</p>
+</li>
+<li class="">
+<p><strong>Выбор загрузочного устройства</strong> — микропрограмма просматривает список устройств в порядке приоритета (boot order): жёсткий диск, SSD, USB, сетевая карта и т.д. Для каждого устройства проверяется наличие <em>загрузочной сигнатуры</em>.</p>
+</li>
+<li class="">
+<p><strong>Загрузка первого сектора (MBR или Protective MBR)</strong> — если устройство использует MBR-разметку, считывается первый сектор (512 байт), содержащий master boot record. В нём находится:</p>
+<ul>
+<li class="">Таблица разделов (до 4 первичных записей);</li>
+<li class="">Код загрузчика первого уровня (446 байт);</li>
+<li class="">Магическое число <code>0x55AA</code> в конце сектора, подтверждающее загрузочность.</li>
+</ul>
+<p>Этот код (например, <code>bootmgr</code> для Windows, <code>GRUB Stage 1</code> для Linux) ограничен по размеру и обычно лишь загружает <em>второй этап</em> загрузчика с другого участка диска.</p>
+</li>
+<li class="">
+<p><strong>Загрузка второго уровня загрузчика</strong> — более сложная программа, способная понимать файловые системы (например, <code>ntldr</code>, <code>winload.exe</code>, <code>GRUB2</code>). Она читает конфигурационные файлы, отображает меню выбора ОС (при мультизагрузке), загружает ядро в память и передаёт ему управление с параметрами.</p>
+</li>
+</ol>
+<p>В случае <strong>UEFI</strong> процесс отличается:</p>
+<ul>
+<li class="">Отсутствует MBR как кодовая структура; вместо него — Protective MBR (только для совместимости).</li>
+<li class="">Загрузка происходит с исполняемого файла в стандартизированной файловой системе FAT32 — <strong>EFI System Partition (ESP)</strong>.</li>
+<li class="">Микропрограмма UEFI сама умеет читать FAT32 и искать файлы по пути <code>\EFI\BOOT\BOOTx64.EFI</code> (для 64-битных ОС). Этот файл — и есть загрузчик второго уровня.</li>
+<li class="">UEFI поддерживает цифровые подписи (Secure Boot), что исключает запуск неподписанных или скомпрометированных загрузчиков.</li>
+</ul>
+<p>Именно поэтому при установке ОС необходимо чётко разделять режимы BIOS/MBR и UEFI/GPT: смешивание (например, установка UEFI-образа в MBR-разметку) почти всегда приводит к невозможности загрузки.</p>
+<table><thead><tr><th>Режим прошивки<th>Таблица разделов<th>Типичный носитель загрузки<th>Замечание<tbody><tr><td><strong>Legacy BIOS</strong><td><strong>MBR</strong><td>Загрузочный код в первом секторе диска<td>Диски ≤ 2 ТБ (без обходов); до 4 первичных разделов<tr><td><strong>UEFI</strong><td><strong>GPT</strong><td>Файл <code>.efi</code> на разделе <strong>ESP</strong> (FAT32)<td>Стандарт для новых ПК и Server; нужен Secure Boot по политике<tr><td>UEFI + CSM<td>MBR или GPT<td>Зависит от настройки<td>Устаревающий компромисс; в продакшене лучше чистый UEFI</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=загрузочная-флешка>Загрузочная флешка<a href=#загрузочная-флешка class=hash-link aria-label="Прямая ссылка на Загрузочная флешка" title="Прямая ссылка на Загрузочная флешка" translate=no>​</a></h3>
+<p>Загрузочная флешка — это USB-накопитель, подготовленный так, чтобы микропрограмма BIOS/UEFI распознала его как устройство, с которого можно начать процесс загрузки. Это достигается двумя способами:</p>
+<ul>
+<li class="">
+<p><strong>Эмуляция CD-ROM (ISO mode)</strong> — флешка представляется контроллеру как оптический диск, содержащий ISO-образ. Для этого используется специальный загрузочный сектор, совместимый со спецификацией El Torito. Большинство современных установщиков Windows и Linux используют именно этот режим, так как он обеспечивает максимальную совместимость.</p>
+</li>
+<li class="">
+<p><strong>Прямая загрузка с USB (HDD mode)</strong> — флешка размечается как жёсткий диск (MBR или GPT), создаётся загрузочный раздел, и на него устанавливается загрузчик. Этот способ используется, например, при создании мультизагрузочных носителей (Ventoy).</p>
+</li>
+</ul>
+<p>Для создания загрузочной флешки применяются специализированные утилиты:</p>
+<ul>
+<li class="">
+<p><strong>Rufus</strong> (Windows) — наиболее гибкий инструмент. Позволяет явно задать:</p>
+<ul>
+<li class="">Целевой режим (BIOS/UEFI);</li>
+<li class="">Тип разметки (MBR для BIOS/UEFI-CSM, GPT для UEFI);</li>
+<li class="">Файловую систему (FAT32, NTFS — FAT32 обязателен для UEFI, так как ESP должна быть FAT32);</li>
+<li class="">Обход ограничения FAT32 на размер файла 4 ГБ (через разделение <code>install.wim</code> на <code>install.swm</code>);</li>
+<li class="">Добавление дополнительных драйверов или утилит.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>BalenaEtcher</strong> — кроссплатформенная утилита с упрощённым интерфейсом. Предназначена для "слепого" побайтового копирования образа на носитель (flash mode). Не даёт контроля над разметкой или загрузочным режимом — просто копирует содержимое ISO как есть. Подходит для большинства Linux-дистрибутивов, но может вызывать проблемы с Windows-образами из-за отсутствия обработки <code>install.wim</code>.</p>
+</li>
+<li class="">
+<p><strong>Media Creation Tool</strong> (Microsoft) — официальный инструмент для Windows. Он обновляет текущую ОС, либо записывает установочные файлы на USB-накопитель <em>в распакованном виде</em> (как на DVD), минуя создание единого ISO. Это гарантирует совместимость, но не даёт гибкости.</p>
+</li>
+<li class="">
+<p><strong>UltraISO</strong> — коммерческая утилита с поддержкой редактирования ISO-файлов (добавление/удаление файлов внутри образа), создания загрузочных носителей и преобразования форматов (например, <code>.wim</code> → <code>.iso</code>). Широко использовалась в 2000-х, сейчас уступает Rufus по актуальности.</p>
+</li>
+</ul>
+<p>Ключевой момент: <strong>форматирование флешки при создании загрузочного носителя — необратимо</strong>. Все данные на ней будут уничтожены.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=выбор-таблицы-разделов>Выбор таблицы разделов<a href=#выбор-таблицы-разделов class=hash-link aria-label="Прямая ссылка на Выбор таблицы разделов" title="Прямая ссылка на Выбор таблицы разделов" translate=no>​</a></h3>
+<p>Таблица разделов — структура на диске, описывающая, как физическое пространство разделено на логические тома. От её типа зависит максимальный объём диска, количество разделов и совместимость с микропрограммой.</p>
+<table><thead><tr><th>Характеристика<th>MBR (Master Boot Record)<th>GPT (GUID Partition Table)<tbody><tr><td><strong>Размещение</strong><td>Первый сектор диска (LBA 0)<td>Заголовок в LBA 1, таблица в LBA 2–33 и дубликат в конце диска<tr><td><strong>Макс. объём диска</strong><td>2 ТБ (из-за 32-битных адресов секторов)<td>8 ЗБ (теоретически), на практике — ограничения ОС (9,4 ЗБ для Windows)<tr><td><strong>Макс. разделов</strong><td>4 первичных (или 3 первичных + 1 расширенный с логическими)<td>128 (по умолчанию, можно увеличить)<tr><td><strong>Резервирование</strong><td>Нет<td>Дублирующая таблица в конце диска<tr><td><strong>Целостность</strong><td>Нет контрольных сумм<td>CRC32 для заголовка и таблицы<tr><td><strong>Режим микропрограммы</strong><td>Только BIOS (или UEFI в режиме CSM)<td>Только UEFI (некоторые ОС позволяют загрузку с GPT в BIOS, но это нестандартно)</table>
+<p><strong>Рекомендации по выбору</strong>:</p>
+<ul>
+<li class="">Если компьютер произведён до ~2012 года, имеет BIOS (не UEFI), и диск ≤ 2 ТБ — <strong>MBR</strong>.</li>
+<li class="">Если компьютер поддерживает UEFI (и Secure Boot), диск > 2 ТБ, или планируется использовать современные функции (например, BitLocker с аппаратным шифрованием) — <strong>GPT</strong>.</li>
+<li class="">Для Windows 11, начиная с 2022 года, <strong>GPT обязателен</strong>, даже на дисках &lt; 2 ТБ.</li>
+<li class="">На Mac (Intel) с 2006 года используется только GPT; на Apple Silicon — APFS без MBR/GPT в классическом понимании.</li>
+</ul>
+<p>При установке Linux на GPT в BIOS-режиме может потребоваться создание <strong>BIOS Boot Partition</strong> (1–2 МБ, без файловой системы) — это область, куда GRUB помещает свой код второго этапа, так как в GPT отсутствует место для него в MBR.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=boot-menu-и-настройка-порядка-загрузки>BOOT Menu и настройка порядка загрузки<a href=#boot-menu-и-настройка-порядка-загрузки class=hash-link aria-label="Прямая ссылка на BOOT Menu и настройка порядка загрузки" title="Прямая ссылка на BOOT Menu и настройка порядка загрузки" translate=no>​</a></h3>
+<div class="it-demo it-demo--loading">Загрузка интерактивного демо…</div>
+<p><strong>BOOT Menu</strong> — это временное меню, вызываемое при старте компьютера нажатием специальной клавиши (часто <code>F12</code>, <code>Esc</code>, <code>F10</code> — зависит от производителя). В отличие от входа в BIOS/UEFI Setup (<code>Del</code>, <code>F2</code>), BOOT Menu не требует входа в настройки — оно просто отображает список <em>всех</em> доступных загрузочных устройств и позволяет выбрать одно из них <em>на этот запуск</em>. Это удобно для разового запуска с флешки без изменения постоянного порядка загрузки.</p>
+<p><strong>BIOS/UEFI Setup</strong> — постоянная конфигурация, где задаётся <em>Boot Priority Order</em>. Здесь можно:</p>
+<ul>
+<li class="">Переместить USB-устройства выше, чем внутренние диски;</li>
+<li class="">Отключить ненужные интерфейсы (PXE, LAN Boot);</li>
+<li class="">Включить/выключить режим совместимости CSM (Compatibility Support Module), позволяющий UEFI загружать MBR-носители;</li>
+<li class="">Настроить Secure Boot (ключи, режимы);</li>
+<li class="">Указать конкретный файл загрузчика вручную (для UEFI).</li>
+</ul>
+<p>Важно: после установки ОС порядок загрузки следует вернуть в исходное состояние (жёсткий диск первым), чтобы избежать постоянного запроса выбора устройства.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=обновление-системы-и-установка-драйверов>Обновление системы и установка драйверов<a href=#обновление-системы-и-установка-драйверов class=hash-link aria-label="Прямая ссылка на Обновление системы и установка драйверов" title="Прямая ссылка на Обновление системы и установка драйверов" translate=no>​</a></h3>
+<p>Установка ОС — только начало. Последующие действия критически важны для безопасности и стабильности:</p>
+<ul>
+<li class="">
+<p><strong>Обновление системы</strong> — процесс применения патчей, исправлений и новых функций от разработчика. В Windows это через <em>Центр обновления Windows</em> (<code>Windows Update</code>), в Linux — через пакетные менеджеры (<code>apt upgrade</code>, <code>dnf update</code>, <code>pacman -Syu</code>). Рекомендуется выполнить <strong>полное обновление сразу после первой загрузки</strong>, до установки стороннего ПО. Это:</p>
+<ul>
+<li class="">Устраняет известные уязвимости в ядре и службах;</li>
+<li class="">Исправляет ошибки, выявленные после релиза дистрибутива;</li>
+<li class="">Обеспечивает совместимость с новыми драйверами и приложениями.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Установка драйверов</strong> — ПО, обеспечивающее взаимодействие ОС с аппаратными компонентами. Источники:</p>
+<ul>
+<li class=""><strong>Встроенные драйверы</strong> — поставляются с ОС. Достаточны для базовой функциональности (видео, сеть, USB), но часто устаревают.</li>
+<li class=""><strong>Драйверы от производителя оборудования</strong> — скачиваются с официальных сайтов (Intel, AMD, NVIDIA, Dell, Lenovo и др.). Предпочтительны для:<!-- -->
+<ul>
+<li class="">Видеокарт (производительность, поддержка новых API);</li>
+<li class="">Чипсетов (стабильность, управление питанием);</li>
+<li class="">Сетевых адаптеров (скорость, функции виртуализации);</li>
+<li class="">Звуковых контроллеров (низкая задержка, Dolby).</li>
+</ul>
+</li>
+<li class=""><strong>Драйверы через Windows Update</strong> — автоматически предлагаются, но могут быть не самыми свежими.</li>
+<li class=""><strong>Драйверы через менеджеры устройств ОС</strong> — в Linux — <code>ubuntu-drivers</code>, <code>mhwd</code> (Manjaro); в Windows — "Обновить драйвер" в Диспетчере устройств.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Важно</strong>: никогда не устанавливайте драйверы из непроверенных источников (третьестепенные сайты, торренты, "драйвер-паки"). Это основной вектор доставки вредоносного ПО.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-установить-операционную-систему>Как установить операционную систему<a href=#как-установить-операционную-систему class=hash-link aria-label="Прямая ссылка на Как установить операционную систему" title="Прямая ссылка на Как установить операционную систему" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=подготовка-перед-установкой>Подготовка перед установкой<a href=#подготовка-перед-установкой class=hash-link aria-label="Прямая ссылка на Подготовка перед установкой" title="Прямая ссылка на Подготовка перед установкой" translate=no>​</a></h3>
+<p>Подготовительный этап — самый важный, поскольку ошибки здесь неизбежно влекут за собой потерю данных, невозможность загрузки или нестабильную работу системы впоследствии. Временные затраты на тщательную подготовку многократно окупаются снижением рисков и уменьшением времени на устранение последствий.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-скачивание-образа-операционной-системы>1. Скачивание образа операционной системы<a href=#1-скачивание-образа-операционной-системы class=hash-link aria-label="Прямая ссылка на 1. Скачивание образа операционной системы" title="Прямая ссылка на 1. Скачивание образа операционной системы" translate=no>​</a></h4>
+<p><strong>Цель</strong>: получить аутентичный, неповреждённый и лицензионно корректный дистрибутив.</p>
+<p><strong>Процедура</strong>:</p>
+<ul>
+<li class="">
+<p><strong>Windows</strong><br/>
+<!-- -->Используется официальный инструмент <strong>Media Creation Tool</strong>, распространяемый Microsoft. Он выполняет две функции:<br/>
+<!-- -->• Создаёт ISO-образ текущей стабильной версии Windows (10 или 11, в зависимости от настроек);<br/>
+<!-- -->• Записывает установочные файлы напрямую на USB-накопитель.<br/>
+<!-- -->Media Creation Tool автоматически проверяет подлинность образа через цифровую подпись Microsoft и гарантирует совместимость с микропрограммой целевого ПК.<br/>
+<em>Важно</em>: при установке потребуется лицензионный ключ. Для Windows 10/11 он может быть:<br/>
+<!-- -->• Встроенным в BIOS/UEFI (OEM-лицензии на ноутбуках и готовых ПК);<br/>
+<!-- -->• Связанным с учётной записью Microsoft (если ранее активировалась цифровая лицензия);<br/>
+<!-- -->• Указан вручную на этапе установки (для коробочных или объёмных лицензий).<br/>
+<!-- -->Без ключа установка возможна, но система останется незарегистрированной (ограничения на кастомизацию, водяные знаки).</p>
+</li>
+<li class="">
+<p><strong>Linux</strong><br/>
+<!-- -->Образы скачиваются с официальных сайтов дистрибутивов:<br/>
+<!-- -->• Ubuntu — <a href=https://ubuntu.com/download/desktop target=_blank rel="noopener noreferrer" class="">ubuntu.com</a><br/>
+<!-- -->• Fedora — <a href=https://getfedora.org/ target=_blank rel="noopener noreferrer" class="">getfedora.org</a><br/>
+<!-- -->• Linux Mint — <a href=https://linuxmint.com/download.php target=_blank rel="noopener noreferrer" class="">linuxmint.com</a><br/>
+<!-- -->и т.д.<br/>
+<!-- -->Предпочтительно выбирать <strong>LTS-версии</strong> (Long-Term Support) для настольных систем — они получают обновления безопасности в течение 5 лет, в отличие от обычных релизов (18–24 месяца).<br/>
+<!-- -->После загрузки образа рекомендуется проверить его целостность:<br/>
+<!-- -->• Сверить <strong>SHA256-хэш</strong> (публикуется на сайте загрузки);<br/>
+<!-- -->• Убедиться в наличии <strong>цифровой подписи</strong> (через GPG, где поддерживается, например, у Ubuntu и Fedora).<br/>
+<!-- -->Это предотвращает использование подменённых или повреждённых файлов.</p>
+</li>
+</ul>
+<p><strong>Техническое пояснение</strong>:<br/>
+<!-- -->Образы для Linux обычно содержат сжатую файловую систему (например, <code>casper/filesystem.squashfs</code> в Ubuntu), позволяющую запустить "живую" систему (Live Session) без установки. Windows-образы используют формат <code>install.wim</code> или <code>install.esd</code>, где каждый выпуск (Home, Pro) хранится как отдельный образ внутри одного файла.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-создание-загрузочной-флешки>2. Создание загрузочной флешки<a href=#2-создание-загрузочной-флешки class=hash-link aria-label="Прямая ссылка на 2. Создание загрузочной флешки" title="Прямая ссылка на 2. Создание загрузочной флешки" translate=no>​</a></h4>
+<p><strong>Цель</strong>: подготовить внешнее устройство, с которого микропрограмма BIOS/UEFI сможет инициировать процесс загрузки установщика.</p>
+<p><strong>Процедура</strong>:</p>
+<ul>
+<li class="">
+<p>Подключите USB-накопитель объёмом:<br/>
+<!-- -->• <strong>не менее 8 ГБ</strong> для Windows 10/11 (из-за размера <code>install.wim</code>, который может превышать 4 ГБ);<br/>
+<!-- -->• <strong>не менее 4 ГБ</strong> для большинства Linux-дистрибутивов (обычно 2–4 ГБ).</p>
+</li>
+<li class="">
+<p>Запустите инструмент записи:<br/>
+<!-- -->• <strong>Rufus</strong> (рекомендуется для Windows и универсального использования):<br/>
+<!-- -->— Выберите устройство в поле <em>Device</em>;<br/>
+<!-- -->— Нажмите <em>SELECT</em> и укажите скачанный образ;<br/>
+<!-- -->— В разделе <em>Boot selection</em> Rufus автоматически определит тип образа и режим загрузки.<br/>
+<!-- -->— Важно проверить параметры:<br/>
+<!-- -->• <em>Partition scheme</em>: <strong>GPT</strong> для UEFI, <strong>MBR</strong> для BIOS/CSM;<br/>
+<!-- -->• <em>Target System</em>: <strong>UEFI (non CSM)</strong> или <strong>BIOS (or UEFI-CSM)</strong>;<br/>
+<!-- -->• <em>File System</em>: <strong>FAT32</strong> (обязательно для UEFI, так как ESP должна быть FAT32);<br/>
+<!-- -->• <em>Cluster size</em>: 32 KB (оптимально для установочных носителей).<br/>
+<!-- -->— Если выбран образ Windows и флешка отформатирована в FAT32, Rufus автоматически предложит <em>Split large files</em> — это разделит <code>install.wim</code> на части (<code>install.swm</code>, <code>install2.swm</code>), обходя ограничение FAT32 в 4 ГБ на файл.<br/>
+<!-- -->— Нажмите <em>START</em> и подтвердите стирание данных.</p>
+<p>• <strong>BalenaEtcher</strong> (рекомендуется для Linux, когда не требуется тонкая настройка):<br/>
+<!-- -->— Выберите образ;<br/>
+<!-- -->— Выберите диск (только USB, Etcher блокирует внутренние диски);<br/>
+<!-- -->— Нажмите <em>Flash!</em> — начнётся побайтовая запись без изменения разметки.<br/>
+<em>Ограничение</em>: Etcher не умеет обрабатывать <code>install.wim</code>, поэтому для Windows-образов может возникнуть ошибка при последующей загрузке.</p>
+</li>
+</ul>
+<p><strong>Техническое пояснение</strong>:<br/>
+<!-- -->При использовании Rufus в режиме <em>ISO Image mode</em> флешка форматируется как гибридный носитель: её первый сектор содержит MBR и код загрузчика, совместимый с BIOS, а в первом разделе размещается FAT32-том с файлами ISO (включая <code>efi/boot/bootx64.efi</code> для UEFI). Таким образом, одна и та же флешка загружается и на старых BIOS-ПК, и на современных UEFI-системах.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-резервное-копирование-данных>3. Резервное копирование данных<a href=#3-резервное-копирование-данных class=hash-link aria-label="Прямая ссылка на 3. Резервное копирование данных" title="Прямая ссылка на 3. Резервное копирование данных" translate=no>​</a></h4>
+<p><strong>Цель</strong>: предотвратить безвозвратную потерю пользовательских файлов в случае полной переустановки.</p>
+<p><strong>Процедура</strong>:</p>
+<ul>
+<li class="">Скопируйте все важные данные (документы, проекты, медиа, закладки браузеров, конфигурации ПО) на:<br/>
+<!-- -->• Внешний жёсткий диск;<br/>
+<!-- -->• Сетевое хранилище (NAS);<br/>
+<!-- -->• Облачный сервис (Google Drive, Yandex.Disk, OneDrive и др.).</li>
+<li class="">Особое внимание уделите:<br/>
+<!-- -->• Папке пользователя (<code>C:\Users\&lt;Имя></code> в Windows, <code>/home/&lt;пользователь></code> в Linux);<br/>
+<!-- -->• Лицензионным ключам ПО (сохраните их отдельно);<br/>
+<!-- -->• Настройкам почтовых клиентов, базам паролей (например, KeePass);<br/>
+<!-- -->• Файлам баз данных (если они хранятся локально).</li>
+</ul>
+<p><strong>Техническое пояснение</strong>:<br/>
+<!-- -->Даже при выборе опции "Сохранить файлы" в установщике Windows (функция <em>Keep personal files and apps</em>) не гарантируется сохранность всех данных: системные папки (<code>AppData</code>, <code>ProgramData</code>, реестр) очищаются, а повреждённые файлы могут не скопироваться. Единственный надёжный способ — внешнее резервное копирование <em>до</em> начала установки.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-освобождение-места-на-диске>4. Освобождение места на диске<a href=#4-освобождение-места-на-диске class=hash-link aria-label="Прямая ссылка на 4. Освобождение места на диске" title="Прямая ссылка на 4. Освобождение места на диске" translate=no>​</a></h4>
+<p><strong>Цель</strong>: обеспечить достаточный объём нераспределённого пространства для создания системных и пользовательских разделов.</p>
+<p><strong>Рекомендуемый объём</strong>:<br/>
+<!-- -->• <strong>Windows 10/11</strong>: минимум 64 ГБ для установки, но на практике требуется <strong>не менее 100 ГБ</strong> для комфортной работы с обновлениями, кэшем и приложениями (особенно при использовании WSL, Docker, Visual Studio);<br/>
+<!-- -->• <strong>Linux (настольные дистрибутивы)</strong>: 25–30 ГБ — минимально, <strong>50+ ГБ</strong> — рекомендуется.</p>
+<p><strong>Процедура</strong> (если установка производится поверх существующей ОС):</p>
+<ul>
+<li class="">В проводнике (Windows) или файловом менеджере (Linux) удалите временные файлы, кэш, неиспользуемые программы;</li>
+<li class="">Используйте встроенные утилиты очистки:<br/>
+<!-- -->• Windows — <em>Очистка диска</em> → <em>Очистка системных файлов</em>;<br/>
+<!-- -->• Linux — <code>bleachbit</code>, <code>apt clean</code>, <code>journalctl --vacuum-size=100M</code>;</li>
+<li class="">При необходимости — сожмите том (в Windows: <code>compact /c /s:C:\</code>), но это лишь временная мера.</li>
+</ul>
+<p><em>Примечание</em>: установщик сам выполнит форматирование целевого раздела, поэтому предварительная очистка нужна только для освобождения <em>физического</em> места на диске (например, если свободно только 30 ГБ, а нужно 100 ГБ — потребуется удалить или переместить данные).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-перезагрузка-пк-и-вход-в-микропрограмму>5. Перезагрузка ПК и вход в микропрограмму<a href=#5-перезагрузка-пк-и-вход-в-микропрограмму class=hash-link aria-label="Прямая ссылка на 5. Перезагрузка ПК и вход в микропрограмму" title="Прямая ссылка на 5. Перезагрузка ПК и вход в микропрограмму" translate=no>​</a></h4>
+<p><strong>Цель</strong>: получить контроль над процессом загрузки до передачи управления операционной системе.</p>
+<p><strong>Процедура</strong>:</p>
+<ul>
+<li class="">Перед перезагрузкой <strong>вставьте загрузочную флешку</strong> в USB-порт (предпочтительно USB 2.0 — некоторые UEFI-микропрограммы плохо работают с USB 3.0 на этапе загрузки);</li>
+<li class="">Перезагрузите компьютер;</li>
+<li class="">В первые 2–5 секунд после включения нажмите <strong>клавишу входа в BIOS/UEFI Setup</strong>. Распространённые варианты:<br/>
+<!-- -->• <code>Del</code> или <code>F2</code> — большинство материнских плат (ASUS, MSI, Gigabyte);<br/>
+<!-- -->• <code>F1</code> или <code>F2</code> — Dell, Lenovo ThinkPad;<br/>
+<!-- -->• <code>F10</code> — HP;<br/>
+<!-- -->• <code>Esc</code> → затем <code>F10</code> — некоторые ноутбуки.<br/>
+<!-- -->Если опоздать — загрузится текущая ОС. В этом случае — повторите перезагрузку, нажимая клавишу сразу после включения.</li>
+</ul>
+<p><strong>Техническое пояснение</strong>:<br/>
+<!-- -->Современные ПК с Windows 8/10/11 и быстрой загрузкой (Fast Startup) могут не давать времени на нажатие клавиши. В таком случае:<br/>
+<!-- -->• В Windows: <em>Параметры</em> → <em>Обновление и безопасность</em> → <em>Восстановление</em> → <em>Особые варианты загрузки</em> → <em>Перезагрузить сейчас</em> → <em>Использовать устройство</em> → <em>UEFI Firmware Settings</em>;<br/>
+<!-- -->• В Linux: <code>systemctl reboot --firmware-setup</code>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка>Установка<a href=#установка class=hash-link aria-label="Прямая ссылка на Установка" title="Прямая ссылка на Установка" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-настройка-загрузочного-порядка-в-biosuefi>6. Настройка загрузочного порядка в BIOS/UEFI<a href=#6-настройка-загрузочного-порядка-в-biosuefi class=hash-link aria-label="Прямая ссылка на 6. Настройка загрузочного порядка в BIOS/UEFI" title="Прямая ссылка на 6. Настройка загрузочного порядка в BIOS/UEFI" translate=no>​</a></h4>
+<p><strong>Цель</strong>: указать микропрограмме загружать установщик с флешки, а не с внутреннего диска.</p>
+<p><strong>Процедура</strong>:</p>
+<ul>
+<li class="">В интерфейсе BIOS/UEFI найдите раздел <strong>Boot</strong>, <strong>Startup</strong>, <strong>Boot Priority</strong> или аналогичный;</li>
+<li class="">Убедитесь, что:<br/>
+<!-- -->• <strong>Secure Boot</strong> отключён (если устанавливаете Linux без подписи Microsoft, например, стандартный Ubuntu);<br/>
+<!-- -->• <strong>CSM (Compatibility Support Module)</strong> включён <em>только</em> если цель — установка в режиме BIOS (MBR), и отключён — если требуется чистый UEFI (GPT);</li>
+<li class="">В списке <em>Boot Option #1</em>, <em>#2</em> и т.д. переместите вашу флешку (обычно отображается как <code>USB: SanDisk Cruzer</code> или <code>UEFI: Kingston DT</code>) на <strong>первое место</strong>;</li>
+<li class="">Нажмите <code>F10</code> (или выберите <em>Save & Exit</em>) и подтвердите сохранение настроек.</li>
+</ul>
+<p><strong>Альтернатива</strong>: использование <strong>BOOT Menu</strong> (временное решение):</p>
+<ul>
+<li class="">Перезагрузите ПК;</li>
+<li class="">Нажмите клавишу вызова BOOT Menu (<code>F12</code>, <code>Esc</code>, <code>F8</code> — зависит от модели);</li>
+<li class="">В появившемся списке выберите флешку.<br/>
+<em>Преимущество</em>: не изменяет постоянные настройки BIOS, что безопасно при однократной установке.</li>
+</ul>
+<p><strong>Техническое пояснение</strong>:<br/>
+<!-- -->Если флешка не отображается в списке:<br/>
+<!-- -->• Попробуйте другой USB-порт (часто только порты на задней панели работают на этапе загрузки);<br/>
+<!-- -->• Проверьте, в каком режиме создавалась флешка (UEFI-образ не загрузится в BIOS без CSM, и наоборот);<br/>
+<!-- -->• Обновите микропрограмму BIOS/UEFI — старые версии могут не поддерживать большие флешки или USB 3.0.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-запуск-установщика>7. Запуск установщика<a href=#7-запуск-установщика class=hash-link aria-label="Прямая ссылка на 7. Запуск установщика" title="Прямая ссылка на 7. Запуск установщика" translate=no>​</a></h4>
+<p>После сохранения настроек ПК перезагрузится и запустит программу установки. На этом этапе система переходит в <strong>автономный режим</strong>: используется собственная микроядерная ОС установщика (Windows PE для Windows, <code>initrd</code>/<code>initramfs</code> для Linux), которая загружается в RAM и работает независимо от целевого диска.</p>
+<p><strong>Первичные настройки</strong> (общие для большинства установщиков):</p>
+<ul>
+<li class="">Выбор языка интерфейса, формата времени и раскладки клавиатуры.<br/>
+<em>Критически важно для Linux</em>: выберите <strong>английскую раскладку (US)</strong>, даже если планируете использовать русский язык в системе. На этапе ввода имени пользователя и пароля в консоли (например, при сбое графической оболочки) раскладка по умолчанию — US. Если выбрать русскую сейчас, ввести латинские символы (требуемые для логина) будет невозможно без переключения сочетанием клавиш, что неочевидно для новичка.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-разметка-диска-и-создание-разделов>8. Разметка диска и создание разделов<a href=#8-разметка-диска-и-создание-разделов class=hash-link aria-label="Прямая ссылка на 8. Разметка диска и создание разделов" title="Прямая ссылка на 8. Разметка диска и создание разделов" translate=no>​</a></h4>
+<p><strong>Цель</strong>: определить, как физическое пространство диска будет разделено на логические тома для ОС, данных и служебных нужд.</p>
+<p><strong>Процедура</strong>:</p>
+<ul>
+<li class="">Установщик предложит выбрать диск. <strong>Обратите внимание на объём и модель</strong> — ошибочный выбор приведёт к форматированию не того носителя.</li>
+<li class="">Если диск новый или требуется полная очистка:<br/>
+<!-- -->• В Windows: нажмите <em>Настройка параметров диска (дополнительно)</em> → удалите все существующие разделы (кнопка <em>Удалить</em>), пока не останется только <em>Нераспределённое пространство</em> → выберите его и нажмите <em>Далее</em>. Установщик автоматически создаст:<br/>
+<!-- -->— Системный раздел (100–500 МБ, FAT32, для UEFI — это ESP);<br/>
+<!-- -->— Зарезервированный MSR-раздел (16 МБ на GPT);<br/>
+<!-- -->— Основной NTFS-раздел под Windows.<br/>
+<!-- -->• В Linux (ручная разметка, <em>Something else</em>):<br/>
+<!-- -->— Создайте <strong>EFI System Partition</strong> (ESP), если используется UEFI: тип <em>EFI System Partition</em>, размер 512 МБ, точка монтирования <code>/boot/efi</code>, файловая система <strong>fat32</strong>;<br/>
+<!-- -->— Создайте <strong>корневой раздел</strong> (<code>/</code>): тип <em>Primary</em>, размер 30–50 ГБ, файловая система <strong>ext4</strong> (или btrfs, xfs — по предпочтению);<br/>
+<!-- -->— При желании — отдельный <strong>домашний раздел</strong> (<code>/home</code>): остальное место, ext4 — позволяет сохранить пользовательские данные при переустановке;<br/>
+<!-- -->— <strong>Swap-раздел</strong> (опционально): размер = объёму ОЗУ (если &lt; 8 ГБ), или 2–4 ГБ (если ОЗУ ≥ 8 ГБ); в современных системах часто используется swap-файл вместо раздела.</li>
+</ul>
+<p><strong>Техническое пояснение</strong>:</p>
+<ul>
+<li class="">В Windows <strong>нельзя объединить ESP и MSR вручную</strong> — установщик делает это автоматически. Попытка создать один раздел вручную приведёт к ошибке <em>"Windows не удаётся установить на этот диск"</em>.</li>
+<li class="">В Linux при использовании MBR и BIOS <strong>ESP не нужен</strong>; вместо него может потребоваться <strong>BIOS Boot Partition</strong> (1–2 МБ, без ФС, тип <code>ef02</code> в <code>gdisk</code>).</li>
+<li class=""><strong>Не форматируйте ESP вручную</strong> — это уничтожит загрузчик, установленный на предыдущем шаге (если производится переустановка с сохранением ESP).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-копирование-файлов-и-настройка-системы>9. Копирование файлов и настройка системы<a href=#9-копирование-файлов-и-настройка-системы class=hash-link aria-label="Прямая ссылка на 9. Копирование файлов и настройка системы" title="Прямая ссылка на 9. Копирование файлов и настройка системы" translate=no>​</a></h4>
+<p>На этом этапе установщик:</p>
+<ul>
+<li class="">Распаковывает системные файлы на целевой раздел (длится 10–40 минут в зависимости от диска и объёма данных);</li>
+<li class="">Конфигурирует загрузчик:<br/>
+<!-- -->• В Windows — записывает <code>bootmgr</code> и <code>BCD</code> (Boot Configuration Данные) в ESP или MBR;<br/>
+<!-- -->• В Linux — устанавливает GRUB2 в ESP (файл <code>\EFI\ubuntu\grubx64.efi</code>) и обновляет конфигурацию (<code>/boot/grub/grub.cfg</code>);</li>
+<li class="">Запрашивает:<br/>
+<!-- -->• Имя компьютера;<br/>
+<!-- -->• Учётную запись пользователя (имя, пароль);<br/>
+<!-- -->• Настройки конфиденциальности (в Windows — телеметрия, Cortana, местоположение);<br/>
+<!-- -->• Параметры сети (если обнаружено подключение).</li>
+</ul>
+<p><strong>Рекомендации по настройке</strong>:</p>
+<ul>
+<li class="">При создании пользователя в Windows:<br/>
+<!-- -->• Используйте <strong>локальную учётную запись</strong>, если не нужна синхронизация с облаком Microsoft;<br/>
+<!-- -->• Отключите: <em>Диагностика и обратная связь</em>, <em>Рекламный ID</em>, <em>Пользовательские предложения</em> — это снижает фоновую активность и объём отправляемых данных.</li>
+<li class="">В Linux:<br/>
+<!-- -->• Установите галочку <em>Install third-party software for graphics and Wi-Fi hardware</em> — это добавит проприетарные драйверы NVIDIA/AMD и прошивки для Wi-Fi чипов;<br/>
+<!-- -->• При выборе типа установки (например, в Ubuntu) — <em>Normal installation</em> предпочтительнее <em>Minimal</em> для настольных ПК.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-первая-загрузка-и-завершение-настройки>10. Первая загрузка и завершение настройки<a href=#10-первая-загрузка-и-завершение-настройки class=hash-link aria-label="Прямая ссылка на 10. Первая загрузка и завершение настройки" title="Прямая ссылка на 10. Первая загрузка и завершение настройки" translate=no>​</a></h4>
+<p>После перезагрузки (установщик автоматически извлечёт флешку из очереди загрузки) система запустится с внутреннего диска.</p>
+<p><strong>Что происходит</strong>:</p>
+<ul>
+<li class="">Загрузчик (Windows Boot Manager или GRUB) передаёт управление ядру;</li>
+<li class="">Ядро инициализирует оборудование, монтирует корневую ФС, запускает <code>systemd</code> (Linux) или <code>Session Manager</code> (Windows);</li>
+<li class="">Запускается окружение (GNOME/KDE или Windows Shell).</li>
+</ul>
+<p><strong>Первые действия</strong>:</p>
+<ul>
+<li class="">Дождитесь завершения фоновых процессов (установка обновлений, индексация, создание профиля);</li>
+<li class="">Подключитесь к интернету — это необходимо для дальнейших обновлений.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-обновление-системы>11. Обновление системы<a href=#11-обновление-системы class=hash-link aria-label="Прямая ссылка на 11. Обновление системы" title="Прямая ссылка на 11. Обновление системы" translate=no>​</a></h4>
+<p><strong>Цель</strong>: устранить уязвимости и нестабильности, присутствующие в "свежем" образе (образы создаются за недели/месяцы до установки).</p>
+<p><strong>Процедура</strong>:</p>
+<ul>
+<li class="">
+<p><strong>Windows</strong>:<br/>
+<!-- -->• <em>Пуск</em> → <em>Параметры</em> → <em>Центр обновления Windows</em> → <em>Проверить наличие обновлений</em>;<br/>
+<!-- -->• Установите все доступные обновления, включая <strong>необязательные</strong> (часто содержат исправления для конкретных драйверов);<br/>
+<!-- -->• Перезагрузите ПК при запросе.</p>
+</li>
+<li class="">
+<p><strong>Linux</strong>:</p>
+</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">apt</span><span class="token plain"> update </span><span class="token operator" style="color:rgb(137, 221, 255)">&&</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">apt</span><span class="token plain"> upgrade </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-y</span><span class="token plain">    </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Debian/Ubuntu</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> dnf upgrade </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">--refresh</span><span class="token plain">                </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Fedora</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> pacman </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-Syu</span><span class="token plain">                          </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Arch</span><br/></div></code></pre></div></div>
+<p>При запросе подтверждения нажмите <code>Y</code>.</p>
+<p><strong>Важно</strong>: после крупного обновления ядра в Linux может потребоваться пересборка модулей (например, для NVIDIA: <code>sudo apt install --reinstall nvidia-dkms-535</code>).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-установка-драйверов>12. Установка драйверов<a href=#12-установка-драйверов class=hash-link aria-label="Прямая ссылка на 12. Установка драйверов" title="Прямая ссылка на 12. Установка драйверов" translate=no>​</a></h4>
+<p><strong>Цель</strong>: обеспечить полную функциональность оборудования (видеоускорение, управление питанием, специфичные функции клавиатуры/тачпада).</p>
+<p><strong>Источники и порядок</strong>:</p>
+<ol>
+<li class=""><strong>Чипсет и управление питанием</strong> — с сайта производителя материнской платы или ноутбука (Intel Chipset Driver, AMD Chipset Driver);</li>
+<li class=""><strong>Видеокарта</strong> —
+• NVIDIA: <a href=https://www.nvidia.com/Download/index.aspx target=_blank rel="noopener noreferrer" class="">nvidia.com/drivers</a>;<br/>
+<!-- -->• AMD: <a href=https://www.amd.com/ru/support target=_blank rel="noopener noreferrer" class="">amd.com/support</a>;<br/>
+<!-- -->• Intel Arc: <a href=https://www.intel.com/ target=_blank rel="noopener noreferrer" class="">intel.com/content/www/us/en/download/726603/intel-arc-graphics-windows.html</a>;</li>
+<li class=""><strong>Сетевые адаптеры, Wi-Fi, Bluetooth</strong> — драйверы от MEDIATEK, Realtek, Intel Wi-Fi;</li>
+<li class=""><strong>Периферия</strong> (сканеры, принтеры) — с сайтов производителей.</li>
+</ol>
+<p><strong>Проверка установки</strong>:</p>
+<ul>
+<li class="">Windows: <em>Диспетчер устройств</em> — отсутствие жёлтых восклицательных знаков;</li>
+<li class="">Linux: <code>lspci -k | grep -A 3 "VGA\|Сеть\|Audio"</code> — должны отображаться используемые драйверы (например, <code>i915</code>, <code>nouveau</code>, <code>amdgpu</code>).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=особые-случаи>Особые случаи<a href=#особые-случаи class=hash-link aria-label="Прямая ссылка на Особые случаи" title="Прямая ссылка на Особые случаи" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=двойная-загрузка-windows--linux>Двойная загрузка (Windows + Linux)<a href=#двойная-загрузка-windows--linux class=hash-link aria-label="Прямая ссылка на Двойная загрузка (Windows + Linux)" title="Прямая ссылка на Двойная загрузка (Windows + Linux)" translate=no>​</a></h4>
+<p><strong>Требования</strong>:</p>
+<ul>
+<li class="">Диск в формате <strong>GPT</strong>;</li>
+<li class="">Отключён <strong>Fast Startup</strong> в Windows (<em>Панель управления</em> → <em>Электропитание</em> → <em>Действия кнопок питания</em> → <em>Изменение недоступных параметров</em> → снять галочку);</li>
+<li class="">Отключён <strong>Hibernate</strong> (<code>powercfg /h off</code> в командной строке от администратора).</li>
+</ul>
+<p><strong>Процедура</strong>:</p>
+<ol>
+<li class="">Установите <strong>Windows первой</strong> — её загрузчик не распознаёт Linux;</li>
+<li class="">Установите Linux <strong>второй</strong> — GRUB автоматически обнаружит Windows и добавит её в меню;</li>
+<li class="">Если GRUB не появился — загрузитесь с Linux Live USB и восстановите загрузчик:</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">mount</span><span class="token plain"> /dev/sdXY /mnt                 </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># XY — корневой раздел Linux</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">mount</span><span class="token plain"> /dev/sdXZ /mnt/boot/efi        </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># XZ — ESP</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">chroot</span><span class="token plain"> /mnt</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   grub-install /dev/sdX</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token function" style="color:rgb(130, 170, 255)">update-grub</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-на-виртуальную-машину>Установка на виртуальную машину<a href=#установка-на-виртуальную-машину class=hash-link aria-label="Прямая ссылка на Установка на виртуальную машину" title="Прямая ссылка на Установка на виртуальную машину" translate=no>​</a></h4>
+<p>Особенности:</p>
+<ul>
+<li class="">Не требуется загрузочная флешка — образ монтируется как виртуальный CD/DVD;</li>
+<li class="">BIOS/UEFI настраивается в настройках ВМ (например, в VirtualBox: <em>Система</em> → <em>Материнская плата</em> → <em>Тип прошивки</em>);</li>
+<li class="">Рекомендуется выделить не менее 2 ГБ ОЗУ и 2 ядра CPU для комфортной работы.</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=первоначальная-настройка-после-установки>Первоначальная настройка после установки<a href=#первоначальная-настройка-после-установки class=hash-link aria-label="Прямая ссылка на Первоначальная настройка после установки" title="Прямая ссылка на Первоначальная настройка после установки" translate=no>​</a></h2>
+<p>После завершения установки операционная система запускается в минимально функциональном состоянии. На этом этапе требуется выполнить ряд обязательных действий, чтобы обеспечить безопасность, стабильность и удобство дальнейшей работы. Эти действия формируют основу для всех последующих задач — от разработки до повседневного использования.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=активация-операционной-системы>Активация операционной системы<a href=#активация-операционной-системы class=hash-link aria-label="Прямая ссылка на Активация операционной системы" title="Прямая ссылка на Активация операционной системы" translate=no>​</a></h3>
+<p>Активация подтверждает легитимность лицензии и разблокирует полный функционал ОС.</p>
+<ul>
+<li class="">
+<p><strong>Windows</strong>:<br/>
+<!-- -->Если система была установлена на устройство с предустановленной лицензией (OEM), активация происходит автоматически при первом подключении к интернету — ключ хранится в UEFI-прошивке.<br/>
+<!-- -->Для коробочных или объёмных лицензий необходимо ввести ключ вручную:<br/>
+<code>Параметры → Система → Активация → Изменить ключ продукта</code>.<br/>
+<!-- -->После активации становятся доступны персонализация интерфейса, обновления и все встроенные функции.</p>
+</li>
+<li class="">
+<p><strong>Linux</strong>:<br/>
+<!-- -->Большинство дистрибутивов не требуют активации. Исключение — коммерческие версии (например, RHEL, SUSE Linux Enterprise), где требуется регистрация в учётной записи Red Hat или SUSE и привязка подписки через <code>subscription-manager</code> или YaST.</p>
+</li>
+</ul>
+<p>Активированная система получает официальную поддержку от разработчика и гарантирует совместимость с обновлениями безопасности.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=подключение-к-сети>Подключение к сети<a href=#подключение-к-сети class=hash-link aria-label="Прямая ссылка на Подключение к сети" title="Прямая ссылка на Подключение к сети" translate=no>​</a></h3>
+<p>Подключение к интернету — обязательный шаг перед установкой обновлений и драйверов.</p>
+<ul>
+<li class="">
+<p>В <strong>Windows</strong> система автоматически обнаруживает Wi-Fi или Ethernet и предлагает подключиться. При первом подключении к новой сети пользователь выбирает тип:<br/>
+<!-- -->• <strong>Частная сеть</strong> — разрешает обнаружение устройства другими компьютерами в локальной сети (для домашнего использования);<br/>
+<!-- -->• <strong>Публичная сеть</strong> — блокирует входящие соединения (для кафе, аэропортов).</p>
+</li>
+<li class="">
+<p>В <strong>Linux</strong> (настольные дистрибутивы с GUI):<br/>
+<!-- -->Иконка сети в панели задач позволяет выбрать Wi-Fi или настроить проводное соединение.<br/>
+<!-- -->В консольных системах используется <code>nmcli</code> (NetworkManager) или редактирование файлов в <code>/etc/netplan/</code> (Ubuntu) или <code>/etc/sysconfig/Сеть-scripts/</code> (RHEL).</p>
+</li>
+</ul>
+<p>Успешное подключение подтверждается доступом к внешним ресурсам (например, <code>ping 8.8.8.8</code>).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-обновлений-системы>Установка обновлений системы<a href=#установка-обновлений-системы class=hash-link aria-label="Прямая ссылка на Установка обновлений системы" title="Прямая ссылка на Установка обновлений системы" translate=no>​</a></h3>
+<p>Обновления устраняют уязвимости, исправляют ошибки и добавляют новые функции.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=windows>Windows<a href=#windows class=hash-link aria-label="Прямая ссылка на Windows" title="Прямая ссылка на Windows" translate=no>​</a></h4>
+<ol>
+<li class="">Откройте <code>Параметры → Обновление и безопасность → Центр обновления Windows</code>.</li>
+<li class="">Нажмите <strong>Проверить наличие обновлений</strong>.</li>
+<li class="">Установите все доступные обновления, включая:<!-- -->
+<ul>
+<li class=""><strong>Качественные обновления</strong> (исправления);</li>
+<li class=""><strong>Накопительные обновления</strong> (сборки);</li>
+<li class=""><strong>Драйверы через Windows Update</strong> (если нет более свежих с сайта производителя).</li>
+</ul>
+</li>
+<li class="">Перезагрузите компьютер при запросе.</li>
+</ol>
+<p>Рекомендуется повторить проверку несколько раз — некоторые обновления становятся доступны только после установки предыдущих.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=linux>Linux<a href=#linux class=hash-link aria-label="Прямая ссылка на Linux" title="Прямая ссылка на Linux" translate=no>​</a></h4>
+<p>Выполните в терминале:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Ubuntu/Debian</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">apt</span><span class="token plain"> update </span><span class="token operator" style="color:rgb(137, 221, 255)">&&</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">apt</span><span class="token plain"> full-upgrade </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-y</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Fedora/RHEL</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> dnf upgrade </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">--refresh</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Arch/Manjaro</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> pacman </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-Syu</span><br/></div></code></pre></div></div>
+<p>Команда <code>full-upgrade</code> (или <code>dist-upgrade</code>) обрабатывает изменения зависимостей и может удалять устаревшие пакеты — это безопасно и рекомендуется.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-драйверов-оборудования>Установка драйверов оборудования<a href=#установка-драйверов-оборудования class=hash-link aria-label="Прямая ссылка на Установка драйверов оборудования" title="Прямая ссылка на Установка драйверов оборудования" translate=no>​</a></h3>
+<p>Встроенные драйверы обеспечивают базовую работу, но для полной функциональности требуются актуальные версии от производителей.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=видеокарта>Видеокарта<a href=#видеокарта class=hash-link aria-label="Прямая ссылка на Видеокарта" title="Прямая ссылка на Видеокарта" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>NVIDIA</strong>:<br/>
+<!-- -->Скачайте драйвер с <a href=https://www.nvidia.com/Download/index.aspx target=_blank rel="noopener noreferrer" class="">официального сайта</a>. Выберите серию, модель и ОС. Установите <code>.exe</code>-файл с галочкой <strong>"Выполнить чистую установку"</strong>, чтобы избежать конфликтов с предыдущими версиями.</p>
+</li>
+<li class="">
+<p><strong>AMD</strong>:<br/>
+<!-- -->Драйверы Radeon Software доступны на <a href=https://www.amd.com/ru/support target=_blank rel="noopener noreferrer" class="">странице поддержки AMD</a>. Установщик включает как графический драйвер, так и утилиты управления питанием и разгоном.</p>
+</li>
+<li class="">
+<p><strong>Intel Arc</strong>:<br/>
+<!-- -->Для дискретных видеокарт Intel Arc используйте <a href=https://www.intel.com/content/www/us/en/download/726603/intel-arc-graphics-windows.html target=_blank rel="noopener noreferrer" class="">официальный установщик</a>.</p>
+</li>
+</ul>
+<p>В Linux драйверы часто устанавливаются автоматически через менеджер драйверов (<code>ubuntu-drivers autoinstall</code>) или включены в ядро (<code>i915</code>, <code>amdgpu</code>). Для NVIDIA рекомендуется использовать проприетарный драйвер из репозитория:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> ubuntu-drivers autoinstall</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain"></span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">reboot</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=чипсет-и-периферия>Чипсет и периферия<a href=#чипсет-и-периферия class=hash-link aria-label="Прямая ссылка на Чипсет и периферия" title="Прямая ссылка на Чипсет и периферия" translate=no>​</a></h4>
+<p>Скачайте драйверы с сайта производителя материнской платы или ноутбука:</p>
+<ul>
+<li class=""><strong>ASUS</strong>, <strong>MSI</strong>, <strong>Gigabyte</strong> — раздел "Поддержка" → введите модель → загрузите Chipset Driver, LAN Driver, Audio Driver;</li>
+<li class=""><strong>Dell</strong>, <strong>Lenovo</strong>, <strong>HP</strong> — используйте встроенную утилиту (например, Dell Command | Update, Lenovo Vantage).</li>
+</ul>
+<p>Это обеспечивает:</p>
+<ul>
+<li class="">Корректное управление питанием;</li>
+<li class="">Стабильную работу USB 3.2/Thunderbolt;</li>
+<li class="">Поддержку специфичных функций клавиатуры (подсветка, мультимедийные клавиши).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=настройка-конфиденциальности-и-телеметрии>Настройка конфиденциальности и телеметрии<a href=#настройка-конфиденциальности-и-телеметрии class=hash-link aria-label="Прямая ссылка на Настройка конфиденциальности и телеметрии" title="Прямая ссылка на Настройка конфиденциальности и телеметрии" translate=no>​</a></h3>
+<p>Операционные системы по умолчанию собирают диагностические данные. Ниже — настройки минимизации сбора (Windows и Linux).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=windows-1>Windows<a href=#windows-1 class=hash-link aria-label="Прямая ссылка на Windows" title="Прямая ссылка на Windows" translate=no>​</a></h4>
+<p>Перейдите в <code>Параметры → Конфиденциальность и безопасность</code> и отключите:</p>
+<ul>
+<li class=""><strong>Диагностика и обратная связь</strong> → уровень "Обязательный";</li>
+<li class=""><strong>Рекламный ID</strong> → выключить;</li>
+<li class=""><strong>Хронология действий</strong> → очистить и отключить;</li>
+<li class=""><strong>Местоположение</strong>, <strong>камера</strong>, <strong>микрофон</strong> — отключить глобально, если не используются;</li>
+<li class=""><strong>Автоматическое подключение к предложениям Wi-Fi</strong> → выключить.</li>
+</ul>
+<p>Эти действия снижают фоновую активность и объём передаваемых данных.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=linux-1>Linux<a href=#linux-1 class=hash-link aria-label="Прямая ссылка на Linux" title="Прямая ссылка на Linux" translate=no>​</a></h4>
+<p>Большинство дистрибутивов не отправляют телеметрию по умолчанию. Исключение — Ubuntu, где можно отключить отправку данных:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">apt</span><span class="token plain"> remove ubuntu-report popularity-contest apport</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=создание-учётной-записи-пользователя>Создание учётной записи пользователя<a href=#создание-учётной-записи-пользователя class=hash-link aria-label="Прямая ссылка на Создание учётной записи пользователя" title="Прямая ссылка на Создание учётной записи пользователя" translate=no>​</a></h3>
+<p>Хотя учётная запись создаётся на этапе установки, рекомендуется:</p>
+<ul>
+<li class="">Убедиться, что имя пользователя состоит только из латинских букв и цифр (без пробелов и кириллицы) — это предотвращает ошибки в путях при работе с консольными утилитами и средами разработки;</li>
+<li class="">Использовать надёжный пароль (минимум 12 символов, с цифрами и знаками);</li>
+<li class="">В Windows — создать <strong>локальную учётную запись</strong>, если не требуется синхронизация с облаком Microsoft.</li>
+</ul>
+<p>Подробный разбор OOBE Windows 11, локальной учётной записи и Windows Hello — <a class="" href=/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/415#uchetnye-zapisi>415.md</a> в разделе «Операционная система».</p>
+<p>Для командной работы или серверов настраивается отдельная учётная запись с ограниченными правами, а административные задачи выполняются через <code>sudo</code> (Linux) или UAC (Windows).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-базовых-приложений>Установка базовых приложений<a href=#установка-базовых-приложений class=hash-link aria-label="Прямая ссылка на Установка базовых приложений" title="Прямая ссылка на Установка базовых приложений" translate=no>​</a></h3>
+<p>После настройки системы устанавливаются программы для повседневной работы.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=браузер>Браузер<a href=#браузер class=hash-link aria-label="Прямая ссылка на Браузер" title="Прямая ссылка на Браузер" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Google Chrome</strong>:<br/>
+<!-- -->Скачайте установщик с <a href=https://www.google.com/chrome/ target=_blank rel="noopener noreferrer" class="">официального сайта</a>. Chrome обеспечивает максимальную совместимость с веб-приложениями и DevTools.</li>
+<li class="">Альтернатива — <strong>Mozilla Firefox</strong> (особенно в Linux, где он часто предустановлен).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=архиватор>Архиватор<a href=#архиватор class=hash-link aria-label="Прямая ссылка на Архиватор" title="Прямая ссылка на Архиватор" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>7-Zip</strong> (Windows) — бесплатный, поддерживает все форматы (ZIP, RAR, 7z, TAR и др.);</li>
+<li class="">В Linux архивация встроена в файловые менеджеры, но для терминала полезны <code>unzip</code>, <code>tar</code>, <code>p7zip</code>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=медиаплеер>Медиаплеер<a href=#медиаплеер class=hash-link aria-label="Прямая ссылка на Медиаплеер" title="Прямая ссылка на Медиаплеер" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>VLC Media Player</strong> — универсальный плеер, поддерживающий все аудио- и видеоформаты без необходимости установки кодеков.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=офисный-пакет>Офисный пакет<a href=#офисный-пакет class=hash-link aria-label="Прямая ссылка на Офисный пакет" title="Прямая ссылка на Офисный пакет" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>LibreOffice</strong> — бесплатная альтернатива Microsoft Office, совместимая с форматами <code>.docx</code>, <code>.xlsx</code>, <code>.pptx</code>;</li>
+<li class="">В Windows можно использовать <strong>Microsoft Office</strong> (при наличии лицензии) или <strong>OnlyOffice</strong>.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=настройка-автозагрузки-и-электропитания>Настройка автозагрузки и электропитания<a href=#настройка-автозагрузки-и-электропитания class=hash-link aria-label="Прямая ссылка на Настройка автозагрузки и электропитания" title="Прямая ссылка на Настройка автозагрузки и электропитания" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=отключение-ненужных-программ-в-автозагрузке>Отключение ненужных программ в автозагрузке<a href=#отключение-ненужных-программ-в-автозагрузке class=hash-link aria-label="Прямая ссылка на Отключение ненужных программ в автозагрузке" title="Прямая ссылка на Отключение ненужных программ в автозагрузке" translate=no>​</a></h4>
+<p>Фоновые приложения замедляют запуск системы.</p>
+<ul>
+<li class="">
+<p><strong>Windows</strong>:<br/>
+<!-- -->Откройте <code>Диспетчер задач → Автозагрузка</code> и отключите всё, кроме:</p>
+<ul>
+<li class="">Антивируса;</li>
+<li class="">Драйверов периферии (Logitech Options, Synaptics);</li>
+<li class="">Облачных клиентов (если необходимы при старте).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Linux</strong>:<br/>
+<!-- -->В GNOME: <code>Настройки → Приложения → Автозапуск</code>;<br/>
+<!-- -->В KDE: <code>Системные настройки → Запуск и завершение → Автозапуск</code>.</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=настройка-параметров-электропитания>Настройка параметров электропитания<a href=#настройка-параметров-электропитания class=hash-link aria-label="Прямая ссылка на Настройка параметров электропитания" title="Прямая ссылка на Настройка параметров электропитания" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Windows</strong>:<br/>
+<code>Панель управления → Электропитание → Создать план электропитания</code> → выберите <strong>Высокая производительность</strong> для настольных ПК или рабочих станций.<br/>
+<!-- -->Отключите <strong>Быстрый запуск</strong> (<code>Панель управления → Электропитание → Действия кнопок питания → Изменение недоступных параметров</code>), если планируется двойная загрузка с Linux.</p>
+</li>
+<li class="">
+<p><strong>Linux</strong>:<br/>
+<!-- -->В большинстве дистрибутивов энергосбережение настраивается через <code>TLP</code> или <code>powertop</code>. Для рабочих станций рекомендуется:</p>
+</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> systemctl disable tlp</span><br/></div></code></pre></div></div>
+<p>Это предотвращает неожиданное снижение частоты CPU и улучшает стабильность при длительных вычислениях.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=проверка-целостности-системы>Проверка целостности системы<a href=#проверка-целостности-системы class=hash-link aria-label="Прямая ссылка на Проверка целостности системы" title="Прямая ссылка на Проверка целостности системы" translate=no>​</a></h3>
+<p>Финальная проверка после настройки:</p>
+<ul>
+<li class=""><strong>Windows</strong>:</li>
+</ul>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  sfc /scannow</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  DISM /Online /Cleanup-Image /RestoreHealth</span><br/></div></code></pre></div></div>
+<p>Эти команды восстанавливают повреждённые системные файлы.</p>
+<ul>
+<li class=""><strong>Linux</strong>:<br/>
+<!-- -->Проверьте целостность установленных пакетов:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Debian/Ubuntu</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> debsums </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-c</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># Fedora</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">rpm</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-Va</span><br/></div></code></pre></div></div>
+<p>Если ошибок нет — система готова к эксплуатации.</p>
+<hr/>
+<p>Теперь операционная система полностью настроена: она обновлена, защищена, оснащена необходимыми драйверами и приложениями, а также оптимизирована под профессиональное использование.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=частые-ошибки-новичка-при-установке-ос>Частые ошибки новичка при установке ОС<a href=#частые-ошибки-новичка-при-установке-ос class=hash-link aria-label="Прямая ссылка на Частые ошибки новичка при установке ОС" title="Прямая ссылка на Частые ошибки новичка при установке ОС" translate=no>​</a></h2>
+<ul>
+<li class="">Скачивание образа из неофициального источника без проверки контрольной суммы.</li>
+<li class="">Выбор неверного диска при разметке и потеря данных.</li>
+<li class="">Смешивание режимов UEFI/GPT и Legacy/MBR на одном хосте.</li>
+<li class="">Пропуск обновлений и драйверов сразу после первого запуска.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=быстрая-проверка-после-установки>Быстрая проверка после установки<a href=#быстрая-проверка-после-установки class=hash-link aria-label="Прямая ссылка на Быстрая проверка после установки" title="Прямая ссылка на Быстрая проверка после установки" translate=no>​</a></h3>
+<ul>
+<li class="">Проверить время и часовой пояс: это критично для домена и сертификатов.</li>
+<li class="">Проверить DNS-резолвинг и базовую сетевую связность.</li>
+<li class="">Убедиться, что в системе нет неизвестных устройств в диспетчере оборудования.</li>
+<li class="">Снять первичный бэкап состояния перед установкой рабочего ПО.</li>
+</ul>
+<p>Связанные статьи: <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/95>Windows — жизненный цикл</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5>Конфигурация рабочих станций</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6>Сетевые подключения и диагностика</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9>Диагностика и обработка системных ошибок</a>, <a class="" href=/encyclopedia/9-spinoff/9-10-internet-kultura/131>IT-формулы рунета</a>, <a class="" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/intro>восстановление данных</a>.</div><!--$--><!--/$--><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/engineer>engineer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architector>architector</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/required>required</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/beginner>beginner</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-06-02T21:53:31.000Z itemprop=dateModified>2 июн. 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Диагностика производительности Linux</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>ИТ-инфраструктура</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#установка-операционной-системы class="table-of-contents__link toc-highlight">Установка операционной системы</a><ul><li><a href=#что-происходит-при-установке class="table-of-contents__link toc-highlight">Что происходит при установке</a><li><a href=#когда-требуется-переустановка class="table-of-contents__link toc-highlight">Когда требуется переустановка</a><li><a href=#образ-дистрибутив-и-установщик class="table-of-contents__link toc-highlight">Образ, дистрибутив и установщик</a><li><a href=#загрузчик-и-процесс-загрузки class="table-of-contents__link toc-highlight">Загрузчик и процесс загрузки</a><li><a href=#загрузочная-флешка class="table-of-contents__link toc-highlight">Загрузочная флешка</a><li><a href=#выбор-таблицы-разделов class="table-of-contents__link toc-highlight">Выбор таблицы разделов</a><li><a href=#boot-menu-и-настройка-порядка-загрузки class="table-of-contents__link toc-highlight">BOOT Menu и настройка порядка загрузки</a><li><a href=#обновление-системы-и-установка-драйверов class="table-of-contents__link toc-highlight">Обновление системы и установка драйверов</a></ul><li><a href=#как-установить-операционную-систему class="table-of-contents__link toc-highlight">Как установить операционную систему</a><ul><li><a href=#подготовка-перед-установкой class="table-of-contents__link toc-highlight">Подготовка перед установкой</a><li><a href=#установка class="table-of-contents__link toc-highlight">Установка</a><li><a href=#особые-случаи class="table-of-contents__link toc-highlight">Особые случаи</a></ul><li><a href=#первоначальная-настройка-после-установки class="table-of-contents__link toc-highlight">Первоначальная настройка после установки</a><ul><li><a href=#активация-операционной-системы class="table-of-contents__link toc-highlight">Активация операционной системы</a><li><a href=#подключение-к-сети class="table-of-contents__link toc-highlight">Подключение к сети</a><li><a href=#установка-обновлений-системы class="table-of-contents__link toc-highlight">Установка обновлений системы</a><li><a href=#установка-драйверов-оборудования class="table-of-contents__link toc-highlight">Установка драйверов оборудования</a><li><a href=#настройка-конфиденциальности-и-телеметрии class="table-of-contents__link toc-highlight">Настройка конфиденциальности и телеметрии</a><li><a href=#создание-учётной-записи-пользователя class="table-of-contents__link toc-highlight">Создание учётной записи пользователя</a><li><a href=#установка-базовых-приложений class="table-of-contents__link toc-highlight">Установка базовых приложений</a><li><a href=#настройка-автозагрузки-и-электропитания class="table-of-contents__link toc-highlight">Настройка автозагрузки и электропитания</a><li><a href=#проверка-целостности-системы class="table-of-contents__link toc-highlight">Проверка целостности системы</a></ul><li><a href=#частые-ошибки-новичка-при-установке-ос class="table-of-contents__link toc-highlight">Частые ошибки новичка при установке ОС</a><ul><li><a href=#быстрая-проверка-после-установки class="table-of-contents__link toc-highlight">Быстрая проверка после установки</a></ul></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-zabbix><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Zabbix"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Zabbix</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="7 элементов">7 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/практикум-prometheus-и-grafana><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Практикум Prometheus и Grafana"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Практикум Prometheus и Grafana</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="11 элементов">11 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title=Администрирование><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Администрирование</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.">Администрирование как системная практика - управление доступами, обновлениями, резервным копированием и стабильностью IT-инфраструктуры.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Диагностика производительности Linux"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Диагностика производительности Linux</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.">Команды и /proc для разбора тормозов на сервере — CPU, память, диск, сеть, OOM и отдельный процесс; порядок действий по SSH.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3><h2 class="theme-doc-card-heading cardTitle_mcqP" title=ИТ-инфраструктура><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">ИТ-инфраструктура</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.">Если аппаратное обеспечение — это тело инфраструктуры, то программное обеспечение — её нервная система. Без ПО железо остаётся набором нефункциональных компонентов.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые аномалии и системные процессы"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые аномалии и системные процессы</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.">Система сохраняет видимость работоспособности, продолжает отвечать на базовые запросы и проходит поверхностные проверки, однако внутри накапливает критическую массу проблем, ведущих к внезапному коллапсу или глубокой деградации сервиса.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Настройка и обслуживание серверов"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Настройка и обслуживание серверов</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.">Настройка и обслуживание серверов - развёртывание узла в инфраструктуре, базовая конфигурация и контроль стабильной эксплуатации.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Групповые политики в Windows"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeBrand_aO30 badgeSm_CPs0" style=background:#5E5E5E aria-hidden=true><svg class=svg_CnCY role=img aria-label=Microsoft width=22 height=22 viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.628h11.377V24H0zm12.623 0H24V24H12.623z" fill=#ffffff /></svg></span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Групповые политики в Windows</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций.">Групповые политики Windows - централизованное применение настроек в домене и управление конфигурацией рабочих станций.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Конфигурация рабочих станций"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Конфигурация рабочих станций</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.">Конфигурация рабочих станций - настройка сетевых параметров, подключение к инфраструктуре и стандартизация клиентской среды.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Сетевые подключения и диагностика"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Сетевые подключения и диагностика</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.">Сетевые подключения и диагностика — карта узлов, кроссплатформенный справочник команд (ping, ss, ipconfig, dig) и runbook при сбоях.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Организация домашней сети"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title="Системное администрирование">SA</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Организация домашней сети</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.">Домашняя сеть: устройства, маршрутизатор, Wi‑Fi, общий доступ к файлам и принтерам, UNC-пути в проводнике Windows.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Идентичность Microsoft Entra и RBAC"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeBrand_aO30 badgeSm_CPs0" style=background:#5E5E5E aria-hidden=true><svg class=svg_CnCY role=img aria-label=Microsoft width=22 height=22 viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg><path d="M0 0h11.377v11.372H0zm12.623 0H24v11.372H12.623zM0 12.628h11.377V24H0zm12.623 0H24V24H12.623z" fill=#ffffff /></svg></span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Идентичность Microsoft Entra и RBAC</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Microsoft Entra ID (ранее Azure Active Directory) — облачный каталог идентичностей для Microsoft 365, Azure и тысяч SaaS по протоколу SSO.">Microsoft Entra ID (ранее Azure Active Directory) — облачный каталог идентичностей для Microsoft 365, Azure и тысяч SaaS по протоколу SSO.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro>Ещё <!-- -->15<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script></div></body>

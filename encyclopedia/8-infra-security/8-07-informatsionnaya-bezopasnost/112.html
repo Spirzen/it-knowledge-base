@@ -1,0 +1,846 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Сертификация и сертификаты | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Сертификация и сертификаты | Вселенная IT"/><meta data-rh=true name=description content="Сертификация и цифровые сертификаты - роли сторон, доверие и инфраструктура открытых ключей (PKI)."/><meta data-rh=true property=og:description content="Сертификация и цифровые сертификаты - роли сторон, доверие и инфраструктура открытых ключей (PKI)."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/infra-security","name":"8. Инфраструктура и безопасность","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/информационная-безопасность","name":"Информационная безопасность","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112","name":"Сертификация и сертификаты","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Expand sidebar category '2. Система и сеть'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Expand sidebar category '7. Проект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Collapse sidebar category '8. Инфраструктура и безопасность'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/облачные-технологии><span title="Облачные технологии" class=categoryLinkLabel_V03G>Облачные технологии</span></a><button aria-label="Expand sidebar category 'Облачные технологии'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/low-code-no-code><span title="Low-code, No-code" class=categoryLinkLabel_V03G>Low-code, No-code</span></a><button aria-label="Expand sidebar category 'Low-code, No-code'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/забота-о-коде-и-данных><span title="Забота о коде и данных" class=categoryLinkLabel_V03G>Забота о коде и данных</span></a><button aria-label="Expand sidebar category 'Забота о коде и данных'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/devops-ci-cd><span title="DevOps, CI-CD" class=categoryLinkLabel_V03G>DevOps, CI-CD</span></a><button aria-label="Expand sidebar category 'DevOps, CI-CD'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/микросервисы-и-интеграция><span title="Микросервисы и интеграция" class=categoryLinkLabel_V03G>Микросервисы и интеграция</span></a><button aria-label="Expand sidebar category 'Микросервисы и интеграция'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/контейнеризация-и-оркестрация><span title="Контейнеризация и оркестрация" class=categoryLinkLabel_V03G>Контейнеризация и оркестрация</span></a><button aria-label="Expand sidebar category 'Контейнеризация и оркестрация'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/информационная-безопасность><span title="Информационная безопасность" class=categoryLinkLabel_V03G>Информационная безопасность</span></a><button aria-label="Collapse sidebar category 'Информационная безопасность'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1><span title="Информационная безопасность" class=linkLabel_WmDU>Информационная безопасность</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/111><span title="Методы защиты информации" class=linkLabel_WmDU>Методы защиты информации</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1111><span title="Государственные требования к информационной безопасности" class=linkLabel_WmDU>Государственные требования к информационной безопасности</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112><span title="Средства защиты информации" class=linkLabel_WmDU>Средства защиты информации</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/112><span title="Сертификация и сертификаты" class=linkLabel_WmDU>Сертификация и сертификаты</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/113><span title="Безопасность приложений" class=linkLabel_WmDU>Безопасность приложений</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1131><span title="Анализ и тестирование безопасности" class=linkLabel_WmDU>Анализ и тестирование безопасности</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1132><span title="Безопасность на ранних этапах разработки" class=linkLabel_WmDU>Безопасность на ранних этапах разработки</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/114><span title="Контроль и отслеживание" class=linkLabel_WmDU>Контроль и отслеживание</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/115><span title=Шифрование class=linkLabel_WmDU>Шифрование</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1151><span title="SSH и HTTPS" class=linkLabel_WmDU>SSH и HTTPS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1152><span title="Архитектура взаимодействия мессенджеров" class=linkLabel_WmDU>Архитектура взаимодействия мессенджеров</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1153><span title="Управление конфигурациями и окружениями" class=linkLabel_WmDU>Управление конфигурациями и окружениями</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/116><span title="Авторизация и аутентификация" class=linkLabel_WmDU>Авторизация и аутентификация</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/117><span title="Устаревшие подходы" class=linkLabel_WmDU>Устаревшие подходы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/118><span title="Уровни доверия и SSL TLS" class=linkLabel_WmDU>Уровни доверия и SSL TLS</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/119><span title="Вирусы и вредоносные программы" class=linkLabel_WmDU>Вирусы и вредоносные программы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/120><span title=Антивирусы class=linkLabel_WmDU>Антивирусы</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/121><span title="Zero Trust и облачная безопасность" class=linkLabel_WmDU>Zero Trust и облачная безопасность</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/122><span title="Легальный сбор информации" class=linkLabel_WmDU>Легальный сбор информации</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/123><span title=Инъекции class=linkLabel_WmDU>Инъекции</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/124><span title=Аудит class=linkLabel_WmDU>Аудит</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125><span title="Безопасность в Docker" class=linkLabel_WmDU>Безопасность в Docker</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/126><span title="Пессимистическая и оптимистическая блокировки в базах данных" class=linkLabel_WmDU>Пессимистическая и оптимистическая блокировки в базах данных</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/127><span title=Взаимоблокировка class=linkLabel_WmDU>Взаимоблокировка</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/128><span title="Уязвимости и атаки на API" class=linkLabel_WmDU>Уязвимости и атаки на API</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/129><span title="Жизненный цикл атаки" class=linkLabel_WmDU>Жизненный цикл атаки</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1291><span title="Социальная инженерия" class=linkLabel_WmDU>Социальная инженерия</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/130><span title="Honeypots и приманки" class=linkLabel_WmDU>Honeypots и приманки</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/131><span title="Безопасность IoT" class=linkLabel_WmDU>Безопасность IoT</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/132><span title="Патчи и управление уязвимостями" class=linkLabel_WmDU>Патчи и управление уязвимостями</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/133><span title="Кейс — захват аккаунтов через AI-поддержку и дипфейк" class=linkLabel_WmDU>Кейс — захват аккаунтов через AI-поддержку и дипфейк</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/2><span title="Обеспечение безопасности" class=linkLabel_WmDU>Обеспечение безопасности</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/998><span title="Информационная безопасность — итоги" class=linkLabel_WmDU>Информационная безопасность — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/999><span title="Информационная безопасность — чек-лист" class=linkLabel_WmDU>Информационная безопасность — чек-лист</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro><span title="Информационная безопасность — о разделе" class=linkLabel_WmDU>Информационная безопасность — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-rest-и-websocket><span title="Практикум REST и WebSocket" class=categoryLinkLabel_V03G>Практикум REST и WebSocket</span></a><button aria-label="Expand sidebar category 'Практикум REST и WebSocket'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/белое-хакерство-и-bug-bounty><span title="Белое хакерство и Bug Bounty" class=categoryLinkLabel_V03G>Белое хакерство и Bug Bounty</span></a><button aria-label="Expand sidebar category 'Белое хакерство и Bug Bounty'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/тестирование-на-проникновение><span title="Тестирование на проникновение" class=categoryLinkLabel_V03G>Тестирование на проникновение</span></a><button aria-label="Expand sidebar category 'Тестирование на проникновение'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/практикум-postgresql><span title="Практикум PostgreSQL" class=categoryLinkLabel_V03G>Практикум PostgreSQL</span></a><button aria-label="Expand sidebar category 'Практикум PostgreSQL'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/8-infra-security/infra-Безопасность><span title="8. Инфраструктура и безопасность - о разделе" class=linkLabel_WmDU>8. Инфраструктура и безопасность - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/infra-security><span>8. Инфраструктура и безопасность</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/информационная-безопасность><span>Информационная безопасность</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Сертификация и сертификаты</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Сертификация и сертификаты</h1></header>
+<div class=article-tags><span class="tag tag-required">ОБЯЗАТЕЛЬНО</span><span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span></div>
+<span class=complexity-badge>Разработчику</span>
+<span class=complexity-badge>Инженеру</span>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=сертификация>Сертификация<a href=#сертификация class=hash-link aria-label="Прямая ссылка на Сертификация" title="Прямая ссылка на Сертификация" translate=no>​</a></h2>
+<p>В современной информационной инфраструктуре доверие не может основываться на вербальных заверениях или интуиции — оно должно быть формализовано, проверяемо и автоматизируемо. Сертификация — это механизм, позволяющий одной стороне убедиться в подлинности другой без предварительного установления прямого доверительного канала. Это критически важно в условиях, когда взаимодействие происходит между субъектами, которые никогда ранее не контактировали и не имеют возможности обменяться секретами напрямую.</p>
+<p>Сертификация — это не просто техническая процедура; это социально-техническая система, в которой участвуют три базовых актора:</p>
+<ol>
+<li class=""><strong>Субъект сертификации</strong> — сторона, чья идентичность (или атрибуты) должны быть подтверждены. Например, веб-сервер, программное обеспечение, пользователь, устройство.</li>
+<li class=""><strong>Удостоверяющий центр (Certificate Authority, CA)</strong> — доверенная третья сторона, уполномоченная подтверждать идентичность субъекта и выдавать цифровые документы (сертификаты), заверенные своей криптографической подписью.</li>
+<li class=""><strong>Верификатор (полагающаяся сторона, relying party)</strong> — сторона, которая принимает решение о доверии на основе проверки сертификата. Например, браузер, почтовый клиент, API-шлюз, клиентское приложение.</li>
+</ol>
+<p>Процесс сертификации начинается с генерации пары криптографических ключей — открытого и закрытого — на стороне субъекта. Закрытый ключ никогда не покидает владение субъекта и используется исключительно для создания цифровых подписей или расшифровки данных. Открытый ключ, напротив, предназначен для распространения и встраивается в запрос на выпуск сертификата (Certificate Signing Request, CSR). В этом запросе также указываются идентификационные данные: доменное имя, наименование организации, страна и другие атрибуты.</p>
+<p>CSR направляется удостоверяющему центру. CA проверяет достоверность предоставленной информации в соответствии со своей политикой сертификации (Certification Practice Statement, CPS). Уровень проверки может варьироваться: от простого подтверждения контроля над доменом (Domain Validation, DV) до строгой верификации юридического лица и его физического адреса (Extended Validation, EV). После успешной проверки CA генерирует цифровой сертификат — структурированный документ, содержащий открытый ключ субъекта и его идентификационные данные, заверенный цифровой подписью самого центра.</p>
+<p>Важно понимать: <strong>сам по себе сертификат не защищает данные</strong> — он не шифрует, не маскирует и не предотвращает атаки напрямую. Его функция — <em>удостоверить связь между идентичностью и криптографическим ключом</em>. Без этой связи невозможны аутентификация, целостность и доверенная передача ключей — а значит, невозможна и безопасная передача данных.</p>
+<p>Когда клиент (например, веб-браузер) устанавливает соединение с сервером по протоколу HTTPS, сервер представляет свой сертификат. Клиент проверяет его, опираясь на заранее установленные доверенные корневые сертификаты (root certificates), встроенные в операционную систему или браузер. Эта проверка включает:</p>
+<ul>
+<li class="">контроль срока действия сертификата;</li>
+<li class="">сопоставление доменного имени в сертификате с запрашиваемым URL;</li>
+<li class="">проверку целостности цифровой подписи (через цепочку доверия до корневого CA);</li>
+<li class="">проверку статуса отзыва сертификата (через OCSP или CRL).</li>
+</ul>
+<p>Если хотя бы один из этих этапов завершается неудачей, соединение считается ненадёжным, и браузер выдаёт предупреждение. Это — проявление модели <em>нулевого доверия</em> (zero trust): доверие не предполагается, оно доказывается каждый раз на основе криптографических свидетельств.</p>
+<div class="it-demo it-demo--loading">Загрузка демо шифрования…</div>
+<p>Сертификация — это, по сути, инструмент распределённого доверия. В отличие от централизованных систем контроля доступа (например, единой базы пользователей в домене Active Directory), сертификация работает в открытой, децентрализованной среде, где участники не обязаны находиться в едином административном домене. Именно поэтому она лежит в основе не только HTTPS, но и таких технологий, как S/MIME для электронной почты, кодовая подпись (code signing), аутентификация устройств в IoT, защищённые API (mTLS), и даже государственные системы электронной идентификации (например, ЕСИА в России или eIDAS в Европе).</p>
+<p>Однако сертификация — не панацея. Она эффективна только при соблюдении нескольких условий:</p>
+<ul>
+<li class=""><strong>Конфиденциальность закрытого ключа.</strong> Если злоумышленник получает закрытый ключ, он может выдавать себя за владельца сертификата — даже если сам сертификат остаётся валидным. Именно поэтому ключи хранятся в защищённых средах: аппаратных модулях безопасности (HSM), доверенных платформенных модулях (TPM), изолированных контейнерах.</li>
+<li class=""><strong>Целостность инфраструктуры удостоверяющего центра.</strong> Компрометация CA — событие катастрофического масштаба, поскольку позволяет выдавать поддельные сертификаты на любые домены. История знает такие инциденты (DigiNotar, 2011; WoSign, 2016), после которых браузеры вынуждены были отозвать доверие к целым цепочкам сертификации.</li>
+<li class=""><strong>Актуальность проверок отзыва.</strong> Сертификат может быть отозван досрочно (например, при утечке закрытого ключа), но если клиент не проверяет статус отзыва, он может принять скомпрометированный сертификат как действительный. Современные браузеры всё чаще применяют OCSP stapling, чтобы снизить задержки и усилить конфиденциальность при такой проверке.</li>
+</ul>
+<p>Сертификация — это динамический процесс, встроенный в жизненный цикл цифрового взаимодействия. Она обеспечивает <em>аутентификацию</em>, которая — вместе с <em>шифрованием</em> и <em>контролем целостности</em> — образует три кита информационной безопасности: конфиденциальность, целостность и доступность (CIA triad).</p>
+<p>В следующей части мы перейдём к подробному рассмотрению самого <strong>цифрового сертификата</strong> — его структуры, форматов, жизненного цикла и практического применения.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-такое-сертификат>Что такое сертификат<a href=#что-такое-сертификат class=hash-link aria-label="Прямая ссылка на Что такое сертификат" title="Прямая ссылка на Что такое сертификат" translate=no>​</a></h2>
+<p>Цифровой сертификат — это стандартизированный криптографический документ, призванный нести в себе достаточную информацию для однозначного установления связи между <em>субъектом</em> (entity) и его <em>открытым ключом</em>, а также для проверки подлинности этого утверждения. Де-факто стандартом для таких документов в большинстве современных систем является <strong>X.509</strong>, разработанный в рамках рекомендаций Международного союза электросвязи (ITU-T). Версии X.509 v1, v2, v3 используются последовательно, причём <strong>v3 — текущая и наиболее распространённая</strong>, благодаря поддержке расширений (extensions), без которых невозможна гибкая настройка политик использования.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=основные-поля-x509-сертификата-v3>Основные поля X.509-сертификата (v3)<a href=#основные-поля-x509-сертификата-v3 class=hash-link aria-label="Прямая ссылка на Основные поля X.509-сертификата (v3)" title="Прямая ссылка на Основные поля X.509-сертификата (v3)" translate=no>​</a></h3>
+<p>Сертификат содержит два блока: <strong>поля идентификации и метаданные</strong>, а также <strong>цифровую подпись удостоверяющего центра</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-информация-о-субъекте-subject>1. Информация о субъекте (Subject)<a href=#1-информация-о-субъекте-subject class=hash-link aria-label="Прямая ссылка на 1. Информация о субъекте (Subject)" title="Прямая ссылка на 1. Информация о субъекте (Subject)" translate=no>​</a></h4>
+<p>Это набор атрибутов, однозначно идентифицирующих владельца сертификата. В контексте веб-сервера это, как правило, доменное имя, но может включать и дополнительные данные:</p>
+<ul>
+<li class=""><strong>Common Name (CN)</strong> — исторически использовалось для указания домена (например, <code>example.com</code>). Однако в современных стандартах (RFC 6125) CN <em>не рекомендуется</em> использовать для валидации имён, поскольку основной механизм — это расширение <strong>Subject Alternative Name (SAN)</strong>.</li>
+<li class=""><strong>Organization (O)</strong> — наименование организации (например, <code>ООО "Рога и Копыта"</code>).</li>
+<li class=""><strong>Organizational Unit (OU)</strong> — подразделение внутри организации (например, <code>ИТ-отдел</code>).</li>
+<li class=""><strong>Locality (L)</strong>, <strong>State (ST)</strong>, <strong>Country (C)</strong> — географические атрибуты.</li>
+<li class=""><strong>Email Address</strong>, <strong>Serial Number</strong> и другие — в зависимости от типа сертификата.</li>
+</ul>
+<p>Для EV-сертификатов (Extended Validation) эта секция особенно насыщенна и проходит строгую проверку: указываются юридическое название, регистрационный номер, юрисдикция, физический адрес.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-информация-об-издателе-issuer>2. Информация об издателе (Issuer)<a href=#2-информация-об-издателе-issuer class=hash-link aria-label="Прямая ссылка на 2. Информация об издателе (Issuer)" title="Прямая ссылка на 2. Информация об издателе (Issuer)" translate=no>​</a></h4>
+<p>Аналогичная структура, но описывает удостоверяющий центр, подписавший сертификат. Например:<br/>
+<code>C=US, O=Let's Encrypt, CN=R3</code> — говорит о том, что сертификат выдан промежуточным центром Let’s Encrypt с именем R3.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-период-действия>3. Период действия<a href=#3-период-действия class=hash-link aria-label="Прямая ссылка на 3. Период действия" title="Прямая ссылка на 3. Период действия" translate=no>​</a></h4>
+<p>Содержит два временных маркера:</p>
+<ul>
+<li class=""><strong>Not Before</strong> — дата и время, начиная с которых сертификат считается действительным.</li>
+<li class=""><strong>Not After</strong> — дата и время окончания действия.</li>
+</ul>
+<p>Эти значения задаются в формате UTC (всегда — без временных зон) и строго проверяются клиентом. Даже небольшое рассогласование часов (например, на 5 минут вперёд на клиенте при ещё не наступившем <code>Not Before</code>) приведёт к отказу в установке соединения.</p>
+<p>Краткосрочность срока действия — сознательная мера безопасности. Let’s Encrypt, например, устанавливает срок в 90 дней, что снижает риски при компрометации ключа и побуждает к автоматизации управления сертификатами.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-открытый-ключ-субъекта>4. Открытый ключ субъекта<a href=#4-открытый-ключ-субъекта class=hash-link aria-label="Прямая ссылка на 4. Открытый ключ субъекта" title="Прямая ссылка на 4. Открытый ключ субъекта" translate=no>​</a></h4>
+<p>Самая критически важная часть. Здесь хранится:</p>
+<ul>
+<li class="">алгоритм (например, <code>RSA</code>, <code>ECDSA</code>, <code>Ed25519</code>);</li>
+<li class="">параметры (длина ключа — 2048, 3072, 4096 бит для RSA; тип кривой — <code>secp256r1</code>, <code>secp384r1</code> для ECDSA);</li>
+<li class="">само значение открытого ключа в двоичной форме.</li>
+</ul>
+<p>Открытый ключ используется клиентом для:</p>
+<ul>
+<li class="">проверки цифровых подписей, сделанных владельцем сертификата;</li>
+<li class="">шифрования данных, которые только владелец (с закрытым ключом) сможет расшифровать (в TLS — для передачи предварительного секрета);</li>
+<li class="">установления общего сеансового ключа в рамках протокола обмена ключами (например, ECDHE).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-уникальные-идентификаторы-необязательно>5. Уникальные идентификаторы (необязательно)<a href=#5-уникальные-идентификаторы-необязательно class=hash-link aria-label="Прямая ссылка на 5. Уникальные идентификаторы (необязательно)" title="Прямая ссылка на 5. Уникальные идентификаторы (необязательно)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Subject Key Identifier (SKI)</strong> — хэш открытого ключа субъекта, используется для быстрого поиска соответствующего закрытого ключа при наличии нескольких.</li>
+<li class=""><strong>Authority Key Identifier (AKI)</strong> — хэш открытого ключа <em>издателя</em>, позволяет быстро определить, какой промежуточный сертификат должен использоваться для проверки подписи.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-расширения-extensions--ключевая-особенность-x509-v3>6. Расширения (Extensions) — ключевая особенность X.509 v3<a href=#6-расширения-extensions--ключевая-особенность-x509-v3 class=hash-link aria-label="Прямая ссылка на 6. Расширения (Extensions) — ключевая особенность X.509 v3" title="Прямая ссылка на 6. Расширения (Extensions) — ключевая особенность X.509 v3" translate=no>​</a></h4>
+<p>Расширения определяют <em>назначение</em> и <em>политики использования</em> сертификата. Без них невозможно гибко управлять инфраструктурой. Наиболее важные:</p>
+<ul>
+<li class="">
+<p><strong>Basic Constraints</strong> — указывает, является ли сертификат <em>CA-сертификатом</em> (может ли он подписывать другие сертификаты). Для конечных (серверных, клиентских) сертификатов значение <code>CA:FALSE</code>.</p>
+</li>
+<li class="">
+<p><strong>Key Usage</strong> — определяет, для каких криптографических операций разрешено использовать ключ. Например:</p>
+<ul>
+<li class=""><code>digitalSignature</code> — подпись данных;</li>
+<li class=""><code>keyEncipherment</code> — шифрование ключей (для RSA);</li>
+<li class=""><code>keyAgreement</code> — участие в протоколах согласования ключей (например, ECDH);</li>
+<li class=""><code>dataEncipherment</code>, <code>keyCertSign</code>, <code>cRLSign</code> — для специализированных случаев.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Extended Key Usage (EKU)</strong> — уточняет <em>конкретные сценарии применения</em>. Например:</p>
+<ul>
+<li class=""><code>serverAuth</code> (OID 1.3.6.1.5.5.7.3.1) — аутентификация сервера (HTTPS);</li>
+<li class=""><code>clientAuth</code> (1.3.6.1.5.5.7.3.2) — аутентификация клиента (mTLS);</li>
+<li class=""><code>codeSigning</code> — подпись программного кода;</li>
+<li class=""><code>emailProtection</code> — S/MIME;</li>
+<li class=""><code>timeStamping</code> — сервисы временных меток.</li>
+</ul>
+</li>
+</ul>
+<p>Браузер может отклонить сертификат, если он не содержит нужный EKU, даже если все остальные проверки пройдены.</p>
+<ul>
+<li class=""><strong>Subject Alternative Name (SAN)</strong> — наиболее важное расширение для веб-сертификатов. Содержит список имён, для которых сертификат действителен:<!-- -->
+<ul>
+<li class="">DNS-имена (<code>DNS:example.com</code>, <code>DNS:www.example.com</code>, <code>DNS:*.api.example.com</code>);</li>
+<li class="">IP-адреса (<code>IP:192.0.2.1</code>);</li>
+<li class="">URI, email и др.</li>
+</ul>
+</li>
+</ul>
+<p>Современные браузеры игнорируют поле <code>Common Name</code>, если присутствует SAN — и наоборот, если SAN отсутствует, поведение может быть непредсказуемым (вплоть до отказа в соединении). Поэтому SAN обязателен даже для однодоменных сертификатов.</p>
+<ul>
+<li class="">
+<p><strong>Certificate Policies</strong> — ссылки на политики сертификации CA (OID и URL), позволяют автоматизированным системам проверять соответствие требованиям (например, для EV-сертификатов — наличие политики <code>2.23.140.1.1</code>).</p>
+</li>
+<li class="">
+<p><strong>CRL Distribution Points</strong> и <strong>Authority Information Access (AIA)</strong> — указывают, где находятся списки отозванных сертификатов (CRL) и OCSP-серверы CA. Например:</p>
+</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  AIA: OCSP - URI:http://r3.o.lencr.org</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  AIA: CA Issuers - URI:http://r3.i.lencr.org/</span><br/></div></code></pre></div></div>
+<p>Эти поля позволяют клиенту динамически завершить цепочку доверия, загрузив промежуточные сертификаты при необходимости.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-подпись-ca>7. Подпись CA<a href=#7-подпись-ca class=hash-link aria-label="Прямая ссылка на 7. Подпись CA" title="Прямая ссылка на 7. Подпись CA" translate=no>​</a></h4>
+<p>Завершающая часть — криптографическая подпись всего содержимого сертификата (за исключением самой подписи), вычисленная с использованием <em>закрытого ключа издателя</em>. Алгоритм подписи (например, <code>sha256WithRSAEncryption</code>, <code>ecdsa-with-SHA384</code>) должен быть совместим с возможностями клиента.</p>
+<p>Клиент проверяет подпись, используя <em>открытый ключ издателя</em> (из промежуточного или корневого сертификата). Только при успешной проверке сертификат считается подлинным.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=форматы-представления--pem-der-pkcs7-pkcs12>Форматы представления — PEM, DER, PKCS#7, PKCS#12<a href=#форматы-представления--pem-der-pkcs7-pkcs12 class=hash-link aria-label="Прямая ссылка на Форматы представления — PEM, DER, PKCS#7, PKCS#12" title="Прямая ссылка на Форматы представления — PEM, DER, PKCS#7, PKCS#12" translate=no>​</a></h3>
+<p>Сертификат — это структура данных, описанная в нотации <strong>ASN.1 (Abstract Syntax Notation One)</strong>. Однако ASN.1 сама по себе — лишь метаязык описания структур. Для хранения и передачи используются конкретные кодировки:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-der-distinguished-encoding-rules>1. DER (Distinguished Encoding Rules)<a href=#1-der-distinguished-encoding-rules class=hash-link aria-label="Прямая ссылка на 1. DER (Distinguished Encoding Rules)" title="Прямая ссылка на 1. DER (Distinguished Encoding Rules)" translate=no>​</a></h4>
+<p>— бинарная, каноническая кодировка ASN.1. Компактна, однозначна, неизменяема. Используется в операционных системах (например, Windows хранит сертификаты в реестре в DER), в Java KeyStore (JKS), в некоторых API. Файлы обычно имеют расширение <code>.cer</code>, <code>.crt</code>, <code>.der</code>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-pem-privacy-enhanced-mail>2. PEM (Privacy-Enhanced Mail)<a href=#2-pem-privacy-enhanced-mail class=hash-link aria-label="Прямая ссылка на 2. PEM (Privacy-Enhanced Mail)" title="Прямая ссылка на 2. PEM (Privacy-Enhanced Mail)" translate=no>​</a></h4>
+<p>— текстовый формат, представляющий собой DER, закодированный в Base64 и обрамлённый строками:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">-----BEGIN CERTIFICATE-----</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">MIIF... (много строк Base64)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">-----END CERTIFICATE-----</span><br/></div></code></pre></div></div>
+<p>Может содержать один или несколько сертификатов (например, серверный + промежуточные), а также закрытые ключи (в блоках <code>BEGIN PRIVATE KEY</code> или <code>BEGIN RSA PRIVATE KEY</code>). Широко используется веб-серверами (Nginx, Apache), утилитами OpenSSL, системами оркестрации (Kubernetes Secrets). Легко копируется, вставляется, редактируется в текстовом редакторе — но требует корректного форматирования (переносы строк, отсутствие лишних пробелов).</p>
+<p>Типичная ошибка:</p>
+<ul>
+<li class="">В <code>fullchain.pem</code> попадает только серверный сертификат без промежуточного.</li>
+<li class="">На части клиентов соединение падает с ошибкой недоверенной цепочки.</li>
+<li class="">Проверка <code>openssl s_client -showcerts</code> быстро показывает неполный chain.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-pkcs7--cms-cryptographic-message-syntax>3. PKCS#7 / CMS (Cryptographic Message Syntax)<a href=#3-pkcs7--cms-cryptographic-message-syntax class=hash-link aria-label="Прямая ссылка на 3. PKCS#7 / CMS (Cryptographic Message Syntax)" title="Прямая ссылка на 3. PKCS#7 / CMS (Cryptographic Message Syntax)" translate=no>​</a></h4>
+<p>— контейнер для передачи цепочки сертификатов (без закрытых ключей). Часто используется в Windows при экспорте сертификатов. Файлы: <code>.p7b</code>, <code>.p7c</code>. Содержит только сертификаты и CRL, подходит для распространения публичных данных.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-pkcs12-ранее-pfx>4. PKCS#12 (ранее PFX)<a href=#4-pkcs12-ранее-pfx class=hash-link aria-label="Прямая ссылка на 4. PKCS#12 (ранее PFX)" title="Прямая ссылка на 4. PKCS#12 (ранее PFX)" translate=no>​</a></h4>
+<p>— зашифрованный контейнер, содержащий <em>и сертификат, и соответствующий закрытый ключ</em>, а также, при необходимости, всю цепочку доверия. Файлы: <code>.p12</code>, <code>.pfx</code>. Используется для переноса учётных данных между системами — например, при развёртывании сервера или импорте клиентского сертификата в браузер. Защита контейнера осуществляется паролем (хотя и возможен пустой пароль, что небезопасно).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=жизненный-цикл-сертификата>Жизненный цикл сертификата<a href=#жизненный-цикл-сертификата class=hash-link aria-label="Прямая ссылка на Жизненный цикл сертификата" title="Прямая ссылка на Жизненный цикл сертификата" translate=no>​</a></h3>
+<p>Сертификат проходит несколько фаз:</p>
+<ol>
+<li class="">
+<p><strong>Генерация ключевой пары</strong><br/>
+<!-- -->Выполняется на стороне владельца (не на CA!). Закрытый ключ <em>никогда</em> не передаётся третьим лицам. Рекомендуется использовать аппаратную защиту (HSM/TPM) для критически важных систем.</p>
+</li>
+<li class="">
+<p><strong>Формирование CSR (Certificate Signing Request)</strong><br/>
+<!-- -->Содержит открытый ключ и идентификационные данные, подписывается <em>закрытым ключом</em> — это доказывает, что заявитель действительно владеет ключом.</p>
+</li>
+<li class="">
+<p><strong>Верификация CA</strong><br/>
+<!-- -->В зависимости от типа:</p>
+<ul>
+<li class=""><strong>DV (Domain Validation)</strong> — подтверждение контроля над доменом (через DNS-запись, HTTP-файл, email на <code>admin@</code>, <code>webmaster@</code> и др.).</li>
+<li class=""><strong>OV (Organization Validation)</strong> — проверка существования организации по официальным реестрам.</li>
+<li class=""><strong>EV (Extended Validation)</strong> — углублённая проверка по стандарту CA/Browser Forum, включая звонки, документы, подтверждение полномочий.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Выпуск и подпись</strong><br/>
+<!-- -->CA формирует сертификат, включая расширения, и подписывает его закрытым ключом промежуточного CA.</p>
+</li>
+<li class="">
+<p><strong>Развертывание</strong><br/>
+<!-- -->Сертификат (и промежуточные) устанавливаются на сервер. Важно: клиент должен получить <em>полную цепочку</em>, иначе проверка провалится. Серверный сертификат — первый в файле, затем — промежуточные (в порядке от листового к корневому). Корневой сертификат <em>не включается</em> — он должен быть уже у клиента.</p>
+</li>
+<li class="">
+<p><strong>Мониторинг и обновление</strong><br/>
+<!-- -->Сертификаты требуют отслеживания срока действия. Ручное обновление ошибочно и рискованно — используются автоматизированные системы: Certbot (для Let’s Encrypt), HashiCorp Vault, <code>step-ca</code>, внутренние CA на базе Windows AD CS или <code>smallstep</code>.</p>
+</li>
+<li class="">
+<p><strong>Отзыв</strong><br/>
+<!-- -->Если закрытый ключ скомпрометирован, владелец запрашивает отзыв у CA. CA публикует информацию об этом в:</p>
+<ul>
+<li class=""><strong>CRL (Certificate Revocation List)</strong> — подписанный список отозванных сертификатов (серийные номера + даты);</li>
+<li class=""><strong>OCSP (Online Certificate Status Protocol)</strong> — протокол для онлайн-запроса статуса по серийному номеру.</li>
+</ul>
+</li>
+</ol>
+<p>Современные системы стремятся к отказу от CRL в пользу OCSP stapling: сервер сам запрашивает статус у OCSP-резондера CA и "прикрепляет" (<code>staple</code>) ответ к TLS-рукопожатию — это снижает задержки и повышает приватность (браузеру не нужно обращаться к CA).</p>
+<ol start=8>
+<li class=""><strong>Истечение срока действия</strong><br/>
+<!-- -->После <code>Not After</code> сертификат становится недействительным. Современные протоколы (TLS 1.3) могут поддерживать <em>предварительное обновление</em> (early renewal) без разрыва соединения.</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=виды-сертификатов>Виды сертификатов<a href=#виды-сертификатов class=hash-link aria-label="Прямая ссылка на Виды сертификатов" title="Прямая ссылка на Виды сертификатов" translate=no>​</a></h2>
+<p>Цифровые сертификаты не являются однородным множеством. Их разнообразие обусловлено необходимостью адаптации к различным сценариям использования, требованиям безопасности, нормативным ограничениям и технологическим контекстам. Классификация может проводиться по нескольким независимым осям:</p>
+<ol>
+<li class=""><strong>По уровню верификации</strong> (Validation Level) — <em>насколько строго проверяется личность владельца</em>;</li>
+<li class=""><strong>По назначению</strong> (Usage Purpose) — <em>для каких операций предназначен сертификат</em>;</li>
+<li class=""><strong>По способу выпуска</strong> — <em>кто выступает в роли CA и как организована инфраструктура</em>;</li>
+<li class=""><strong>По криптографическому алгоритму</strong> — <em>какие математические примитивы используются для ключей и подписей</em>;</li>
+<li class=""><strong>По юрисдикции и нормативной базе</strong> — <em>какие стандарты и требования соблюдаются</em>.</li>
+</ol>
+<p>Ниже рассмотрим каждую группу подробно.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=по-уровню-верификации--dv-ov-ev>По уровню верификации — DV, OV, EV<a href=#по-уровню-верификации--dv-ov-ev class=hash-link aria-label="Прямая ссылка на По уровню верификации — DV, OV, EV" title="Прямая ссылка на По уровню верификации — DV, OV, EV" translate=no>​</a></h3>
+<p>Эта классификация актуальна в первую очередь для <strong>серверных сертификатов</strong>, используемых в HTTPS.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=domain-validation-dv>Domain Validation (DV)<a href=#domain-validation-dv class=hash-link aria-label="Прямая ссылка на Domain Validation (DV)" title="Прямая ссылка на Domain Validation (DV)" translate=no>​</a></h4>
+<p>Наименее строгий, но самый распространённый тип. Проверяется <strong>только контроль над доменом</strong>. Методы валидации:</p>
+<ul>
+<li class="">размещение временного файла в корне сайта (HTTP-01);</li>
+<li class="">добавление TXT-записи в DNS (DNS-01);</li>
+<li class="">отправка письма на заранее определённые адреса (<code>admin@</code>, <code>webmaster@</code>, <code>hostmaster@</code> и др.).</li>
+</ul>
+<p><strong>Преимущества</strong>: мгновенный выпуск (часто — менее минуты), бесплатность (Let’s Encrypt), полная автоматизация.<br/>
+<strong>Недостатки</strong>: не подтверждает существование организации. Злоумышленник, получивший контроль над DNS или веб-сервером, может получить DV-сертификат на домен <code>paypa1.com</code> и визуально имитировать PayPal.<br/>
+<strong>Визуальное отображение в браузере</strong>: значок замка (🔒), но без указания имени организации.</p>
+<p>DV-сертификаты составляют подавляющее большинство в интернете — более 90 % всех HTTPS-соединений. Их достаточность подтверждается тем, что основная задача — защита канала от прослушивания и MITM, а не верификация юридического лица.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=organization-validation-ov>Organization Validation (OV)<a href=#organization-validation-ov class=hash-link aria-label="Прямая ссылка на Organization Validation (OV)" title="Прямая ссылка на Organization Validation (OV)" translate=no>​</a></h4>
+<p>Требует подтверждения <strong>юридического существования организации</strong> и её права на владение доменом. CA проверяет:</p>
+<ul>
+<li class="">выписки из ЕГРЮЛ / ЕГРИП (в России) или аналогов (например, Dun & Bradstreet в США);</li>
+<li class="">контактные данные (телефон, адрес);</li>
+<li class="">подпись уполномоченного лица.</li>
+</ul>
+<p>Выпуск занимает от нескольких часов до нескольких дней.<br/>
+<strong>Визуальное отображение</strong>: по-прежнему только замок, но при клике на него можно увидеть данные организации (в Chrome: "Соединение защищено" → "Сертификат" → вкладка "Сведения").<br/>
+<strong>Применение</strong>: корпоративные сайты, внутренние порталы, где важно подтвердить принадлежность ресурса конкретной компании.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=extended-validation-ev>Extended Validation (EV)<a href=#extended-validation-ev class=hash-link aria-label="Прямая ссылка на Extended Validation (EV)" title="Прямая ссылка на Extended Validation (EV)" translate=no>​</a></h4>
+<p>Максимальный уровень проверки, регулируемый стандартом <strong>CA/Browser Forum Baseline Requirements</strong>. Помимо OV-требований, предполагает:</p>
+<ul>
+<li class="">верификацию полномочий лица, подающего заявку;</li>
+<li class="">подтверждение физического адреса;</li>
+<li class="">проверку отсутствия в чёрных списках;</li>
+<li class="">обязательную публикацию политик сертификации.</li>
+</ul>
+<p>Ранее EV-сертификаты отображались в адресной строке зелёной полосой с названием организации (например, <code>АО "Сбербанк"</code>). Однако с 2019–2020 годов <strong>все ведущие браузеры отказались от визуального выделения EV</strong>, поскольку исследования показали, что пользователи не понимают разницы между DV и EV, а злоумышленники всё равно использовали DV для фишинга. Тем не менее, EV остаётся востребованным в финансовой, государственной и критической инфраструктуре — ради аудиторских и регуляторных требований.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=по-назначению--серверные-клиентские-кодовая-подпись-smime-iot>По назначению — серверные, клиентские, кодовая подпись, S/MIME, IoT<a href=#по-назначению--серверные-клиентские-кодовая-подпись-smime-iot class=hash-link aria-label="Прямая ссылка на По назначению — серверные, клиентские, кодовая подпись, S/MIME, IoT" title="Прямая ссылка на По назначению — серверные, клиентские, кодовая подпись, S/MIME, IoT" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=серверные-сертификаты>Серверные сертификаты<a href=#серверные-сертификаты class=hash-link aria-label="Прямая ссылка на Серверные сертификаты" title="Прямая ссылка на Серверные сертификаты" translate=no>​</a></h4>
+<p>— наиболее известный тип. Используются для аутентификации сервера перед клиентом. Обязательно содержат <code>serverAuth</code> в Extended Key Usage. Могут быть:</p>
+<ul>
+<li class=""><strong>однодоменными</strong> (<code>example.com</code>);</li>
+<li class=""><strong>многодоменными (SAN)</strong> (<code>example.com</code>, <code>api.example.com</code>, <code>shop.example.ru</code>);</li>
+<li class=""><strong>wildcard</strong> (<code>*.example.com</code>) — покрывают все поддомены <em>одного уровня</em>. Не покрывают <code>*.sub.example.com</code> или <code>example.com</code> (без звёздочки).</li>
+</ul>
+<p>Важно: wildcard-сертификаты запрещены для EV, а также несовместимы с некоторыми механизмами безопасности (например, HTTP Public Key Pinning — HPKP, ныне устаревший).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=клиентские-сертификаты>Клиентские сертификаты<a href=#клиентские-сертификаты class=hash-link aria-label="Прямая ссылка на Клиентские сертификаты" title="Прямая ссылка на Клиентские сертификаты" translate=no>​</a></h4>
+<p>— обратная ситуация: клиент предъявляет сертификат серверу для аутентификации. Используются в:</p>
+<ul>
+<li class="">корпоративных веб-приложениях (вход по сертификату вместо логина/пароля);</li>
+<li class="">API-шлюзах для аутентификации микросервисов;</li>
+<li class="">mTLS (Mutual TLS) — двустороннее доверие.</li>
+</ul>
+<p>Содержат <code>clientAuth</code> в EKU. Должны быть установлены в хранилище пользователя (браузер, ОС) или передаваться приложением программно. Управление жизненным циклом таких сертификатов — сложная задача (выпуск, отзыв, обновление на тысячах устройств), поэтому часто применяются PKI на базе Active Directory или специализированные системы (например, Teleport для SSH/mTLS).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=сертификаты-кодовой-подписи-code-signing>Сертификаты кодовой подписи (Code Signing)<a href=#сертификаты-кодовой-подписи-code-signing class=hash-link aria-label="Прямая ссылка на Сертификаты кодовой подписи (Code Signing)" title="Прямая ссылка на Сертификаты кодовой подписи (Code Signing)" translate=no>​</a></h4>
+<p>— позволяют подтвердить подлинность и целостность программного обеспечения. Подпись внедряется в исполняемые файлы (<code>.exe</code>, <code>.dll</code>, <code>.msi</code>, <code>.app</code>, <code>.apk</code>), драйверы, скрипты.</p>
+<p>Важнейшие особенности:</p>
+<ul>
+<li class=""><strong>Timestamping</strong> — обязательна. Подпись остаётся валидной даже после истечения срока действия сертификата, <em>если</em> на момент подписи ставилась временная метка от доверенного TSA (Time-Stamping Authority). Без неё установка ПО после окончания срока сертификата вызовет предупреждение.</li>
+<li class=""><strong>EV Code Signing</strong> — единственный тип, позволяющий немедленно пройти репутационные проверки Microsoft SmartScreen и Apple Notarization. Для обычных (OV/DV) требуется накопление репутации — первые установки будут блокироваться.</li>
+</ul>
+<p>Хранение закрытого ключа — критично. Рекомендуется использовать <strong>USB-токены с HSM</strong> (например, YubiKey, eToken), где ключ никогда не покидает аппаратное устройство.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=сертификаты-smime>Сертификаты S/MIME<a href=#сертификаты-smime class=hash-link aria-label="Прямая ссылка на Сертификаты S/MIME" title="Прямая ссылка на Сертификаты S/MIME" translate=no>​</a></h4>
+<p>— для подписи и шифрования электронной почты. Содержат <code>emailProtection</code> в EKU и, как правило, email-адрес в Subject или SAN.</p>
+<p>Позволяют:</p>
+<ul>
+<li class="">заверить, что письмо отправлено именно тем, за кого себя выдаёт отправитель (подпись);</li>
+<li class="">зашифровать письмо открытым ключом получателя, чтобы только он мог его прочитать (шифрование).</li>
+</ul>
+<p>Требуют обмена сертификатами между сторонами заранее или использования каталогов (LDAP, Global Address List). Массового распространения не получили из-за сложности UX, но остаются востребованными в юриспруденции, финансах и госсекторе.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=сертификаты-для-iot-и-встраиваемых-систем>Сертификаты для IoT и встраиваемых систем<a href=#сертификаты-для-iot-и-встраиваемых-систем class=hash-link aria-label="Прямая ссылка на Сертификаты для IoT и встраиваемых систем" title="Прямая ссылка на Сертификаты для IoT и встраиваемых систем" translate=no>​</a></h4>
+<p>— часто self-signed или выданы внутренним CA. Применяются для:</p>
+<ul>
+<li class="">аутентификации устройства в облаке (mTLS к MQTT-брокеру);</li>
+<li class="">подписи прошивок (аналог code signing, но для микроконтроллеров);</li>
+<li class="">шифрования трафика между датчиками и шлюзами.</li>
+</ul>
+<p>Особенности: малый размер (ECDSA вместо RSA), долгий срок действия (до 10 лет), хранение ключей в Secure Element или TPM.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=по-способу-выпуска--публичные-ca-частные-ca-самоподписанные>По способу выпуска — публичные CA, частные CA, самоподписанные<a href=#по-способу-выпуска--публичные-ca-частные-ca-самоподписанные class=hash-link aria-label="Прямая ссылка на По способу выпуска — публичные CA, частные CA, самоподписанные" title="Прямая ссылка на По способу выпуска — публичные CA, частные CA, самоподписанные" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=публичные-удостоверяющие-центры>Публичные удостоверяющие центры<a href=#публичные-удостоверяющие-центры class=hash-link aria-label="Прямая ссылка на Публичные удостоверяющие центры" title="Прямая ссылка на Публичные удостоверяющие центры" translate=no>​</a></h4>
+<p>— организации, чьи корневые сертификаты предустановлены в ОС и браузерах (Mozilla, Microsoft, Apple, Google). Примеры:</p>
+<ul>
+<li class="">Let’s Encrypt (бесплатный, ACME);</li>
+<li class="">Sectigo (бывший Comodo), DigiCert, GlobalSign — коммерческие;</li>
+<li class="">Amazon ACM, Google Trust Services — облачные CA.</li>
+</ul>
+<p><strong>Преимущество</strong>: немедленное доверие со стороны клиентов без дополнительных действий.<br/>
+<strong>Недостаток</strong>: зависимость от внешней организации, невозможность кастомизации политик.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=частные-внутренние-ca>Частные (внутренние) CA<a href=#частные-внутренние-ca class=hash-link aria-label="Прямая ссылка на Частные (внутренние) CA" title="Прямая ссылка на Частные (внутренние) CA" translate=no>​</a></h4>
+<p>— развёрнуты внутри организации. Используются для:</p>
+<ul>
+<li class="">внутренних HTTPS-сервисов (админки, мониторинг);</li>
+<li class="">аутентификации пользователей и машин в домене;</li>
+<li class="">подписи документов и кода.</li>
+</ul>
+<p>Инструменты:</p>
+<ul>
+<li class="">Windows Server + Active Directory Certificate Services (AD CS);</li>
+<li class="">OpenSSL (вручную, для небольших систем);</li>
+<li class=""><code>step-ca</code>, <code>smallstep</code>, EJBCA, CFSSL — open-source CA.</li>
+</ul>
+<p><strong>Важно</strong>: корневой сертификат внутреннего CA необходимо развернуть на всех доверяющих клиентах (через групповые политики, MDM, скрипты). В противном случае — ошибка доверия.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=самоподписанные-сертификаты>Самоподписанные сертификаты<a href=#самоподписанные-сертификаты class=hash-link aria-label="Прямая ссылка на Самоподписанные сертификаты" title="Прямая ссылка на Самоподписанные сертификаты" translate=no>​</a></h4>
+<p>— крайний случай частной CA: сертификат подписан собственным закрытым ключом (<code>Issuer = Subject</code>, <code>CA:TRUE</code>, но без делегирования).</p>
+<p>Применяются только для:</p>
+<ul>
+<li class="">разработки и тестирования (локальный запуск <code>https://localhost</code>);</li>
+<li class="">изолированных систем, где невозможно или нежелательно разворачивать CA.</li>
+</ul>
+<p><strong>Нельзя использовать в продакшене</strong>, даже во внутренней сети — это нарушает принципы PKI и создаёт ложное ощущение безопасности. Клиенты будут выдавать предупреждения, а обход этих предупреждений пользователем ("Да, всё равно перейти") приводит к нормализации игнорирования MITM-рисков.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=по-криптографическому-алгоритму--rsa-ecdsa-гост>По криптографическому алгоритму — RSA, ECDSA, ГОСТ<a href=#по-криптографическому-алгоритму--rsa-ecdsa-гост class=hash-link aria-label="Прямая ссылка на По криптографическому алгоритму — RSA, ECDSA, ГОСТ" title="Прямая ссылка на По криптографическому алгоритму — RSA, ECDSA, ГОСТ" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=rsa>RSA<a href=#rsa class=hash-link aria-label="Прямая ссылка на RSA" title="Прямая ссылка на RSA" translate=no>​</a></h4>
+<p>— классический алгоритм, основанный на сложности факторизации больших чисел.<br/>
+<!-- -->Требуемая длина ключа для долгосрочной безопасности — минимум 3072 бит (2048 бит считается уязвимым к атакам в ближайшем будущем).<br/>
+<strong>Преимущества</strong>: универсальная поддержка, стабильность.<br/>
+<strong>Недостатки</strong>: большие размеры ключей и подписей, высокие вычислительные затраты на подпись.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ecdsa-elliptic-curve-digital-signature-algorithm>ECDSA (Elliptic Curve Digital Signature Algorithm)<a href=#ecdsa-elliptic-curve-digital-signature-algorithm class=hash-link aria-label="Прямая ссылка на ECDSA (Elliptic Curve Digital Signature Algorithm)" title="Прямая ссылка на ECDSA (Elliptic Curve Digital Signature Algorithm)" translate=no>​</a></h4>
+<p>— основан на эллиптических кривых.<br/>
+<!-- -->Ключи 256 бит (кривая <code>secp256r1</code>, эквивалент RSA-3072) обеспечивают сопоставимый уровень стойкости.<br/>
+<strong>Преимущества</strong>: меньший размер, выше производительность, особенно на мобильных устройствах. TLS 1.3 рекомендует ECDSA.<br/>
+<strong>Недостатки</strong>: меньшая поддержка в старых системах (Windows XP, Android &lt; 5.0); потенциальные риски при использовании слабых генераторов случайных чисел (атака на повторное <code>k</code> в подписи).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=eddsa--ed25519>EdDSA / Ed25519<a href=#eddsa--ed25519 class=hash-link aria-label="Прямая ссылка на EdDSA / Ed25519" title="Прямая ссылка на EdDSA / Ed25519" translate=no>​</a></h4>
+<p>— более современная альтернатива ECDSA на основе кривой Curve25519.<br/>
+<!-- -->Обеспечивает высокую скорость и устойчивость к side-channel-атакам. Поддерживается в TLS 1.3, OpenSSH, GnuPG.<br/>
+<!-- -->Пока не везде принят в веб-PKI (браузеры поддерживают, но не все CA выпускают такие сертификаты).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=гост-р-3410-2012--гост-р-3411-2012>ГОСТ Р 34.10-2012 / ГОСТ Р 34.11-2012<a href=#гост-р-3410-2012--гост-р-3411-2012 class=hash-link aria-label="Прямая ссылка на ГОСТ Р 34.10-2012 / ГОСТ Р 34.11-2012" title="Прямая ссылка на ГОСТ Р 34.10-2012 / ГОСТ Р 34.11-2012" translate=no>​</a></h4>
+<p>— российские стандарты цифровой подписи и хэширования. Используются в национальной инфраструктуре:</p>
+<ul>
+<li class="">сертификаты ФСБ, Минцифры, УЦ КриптоПро;</li>
+<li class="">системы ЕСИА, ГИС ЖКХ, ЕГАИС;</li>
+<li class="">средства криптозащиты информации (СКЗИ) — КриптоПро CSP, ViPNet, Signal-VPN.</li>
+</ul>
+<p>Особенности:</p>
+<ul>
+<li class="">используют отечественные эллиптические кривые (<code>id-GostR3410-2001-CryptoPro-A-ParamSet</code>);</li>
+<li class="">требуют установки специальных криптопровайдеров в ОС;</li>
+<li class=""><strong>не доверяются по умолчанию</strong> в зарубежных ОС и браузерах — корневые сертификаты отсутствуют в хранилищах Mozilla/Apple/Microsoft.</li>
+</ul>
+<p>Это приводит к необходимости ручной установки корневых сертификатов российских УЦ при работе с государственными ресурсами за пределами доверенной среды (например, из домашнего компьютера). В 2023–2024 годах Минцифры инициировала процесс включения национальных корневых сертификатов в доверенные хранилища (в том числе в дистрибутивы Linux), но на текущий момент поддержка остаётся ограниченной.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=национальные-сертификаты>Национальные сертификаты<a href=#национальные-сертификаты class=hash-link aria-label="Прямая ссылка на Национальные сертификаты" title="Прямая ссылка на Национальные сертификаты" translate=no>​</a></h3>
+<p>В РФ действует <strong>единая система сертификации ключей (ЕССК)</strong>, в рамках которой функционируют:</p>
+<ul>
+<li class=""><strong>Главный удостоверяющий центр (ГУЦ)</strong> — Минцифры России;</li>
+<li class=""><strong>Промежуточные УЦ</strong> — ведомственные (Минобороны, ФСБ, ФНС, ПФР и др.);</li>
+<li class=""><strong>Операторы технических средств (ОТС)</strong> — организации, аккредитованные ФСБ для эксплуатации СКЗИ.</li>
+</ul>
+<p>Сертификаты выдаются в соответствии с:</p>
+<ul>
+<li class=""><strong>ФЗ-63 "Об электронной подписи"</strong> (2021 г.) — вводит три типа подписи: простая, усиленная неквалифицированная (УНЭП), усиленная квалифицированная (УКЭП);</li>
+<li class=""><strong>Приказ ФСБ № 546</strong> — регламентирует использование ГОСТ в системах защиты информации;</li>
+<li class=""><strong>ГОСТ Р 34.10-2012</strong>, <strong>ГОСТ Р 34.11-2012</strong>, <strong>ГОСТ Р 34.12-2015</strong> ("Кузнечик", "Магма") — криптографические алгоритмы.</li>
+</ul>
+<p><strong>УКЭП</strong> — единственный тип, имеющий юридическую силу, равную собственноручной подписи. Для его получения требуется:</p>
+<ul>
+<li class="">личное присутствие в аккредитованном УЦ;</li>
+<li class="">проверка паспорта и СНИЛС;</li>
+<li class="">генерация ключей на сертифицированном СКЗИ (например, Рутокен, eToken ГОСТ);</li>
+<li class="">подписание заявления на бумажном носителе.</li>
+</ul>
+<p>Такой сертификат может использоваться для:</p>
+<ul>
+<li class="">подачи документов в госорганы (Госуслуги, налоговая);</li>
+<li class="">участия в электронных торгах (ЕИС);</li>
+<li class="">подписания трудовых договоров, бухгалтерской отчётности.</li>
+</ul>
+<p><strong>Важно</strong>: сертификат УКЭП — это не файл <code>.p12</code>, который можно скопировать. Это <em>связка</em>: закрытый ключ (в защищённом устройстве), сертификат (на том же устройстве или отдельно), и регистрационные данные в реестре УЦ. Потеря ключа = потеря возможности подписи.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=хранение-и-чтение-сертификатов>Хранение и чтение сертификатов<a href=#хранение-и-чтение-сертификатов class=hash-link aria-label="Прямая ссылка на Хранение и чтение сертификатов" title="Прямая ссылка на Хранение и чтение сертификатов" translate=no>​</a></h2>
+<p>Цифровой сертификат — это конкретный объект, с которым взаимодействуют операционные системы, приложения и пользователи. Эффективное управление сертификатами требует понимания того, <em>где они хранятся</em>, <em>как извлекаются</em>, <em>как проверяются</em> и <em>почему иногда возникают ошибки</em>, несмотря на техническую корректность самого документа.</p>
+<p>Хранилища сертификатов реализуются по-разному в зависимости от платформы, но все они решают три общие задачи:</p>
+<ol>
+<li class=""><strong>Безопасное хранение</strong> — особенно закрытых ключей, доступ к которым должен быть строго контролируемым;</li>
+<li class=""><strong>Индексация и поиск</strong> — по отпечатку, имени субъекта, издателю, EKU и другим атрибутам;</li>
+<li class=""><strong>Интеграция с криптографическими API</strong> — чтобы приложения могли использовать сертификаты без прямой работы с файлами.</li>
+</ol>
+<p>Ниже рассмотрим реализации в основных средах, а затем — инструменты анализа и типичные сценарии сбоев.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=хранилища-сертификатов-в-операционных-системах>Хранилища сертификатов в операционных системах<a href=#хранилища-сертификатов-в-операционных-системах class=hash-link aria-label="Прямая ссылка на Хранилища сертификатов в операционных системах" title="Прямая ссылка на Хранилища сертификатов в операционных системах" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=windows--certificate-store-cert-store>Windows — Certificate Store (Cert Store)<a href=#windows--certificate-store-cert-store class=hash-link aria-label="Прямая ссылка на Windows — Certificate Store (Cert Store)" title="Прямая ссылка на Windows — Certificate Store (Cert Store)" translate=no>​</a></h4>
+<p>Windows использует иерархическую систему <strong>логических хранилищ</strong>, реализованных поверх реестра и файловой системы. Доступ к ним осуществляется через графический интерфейс (<code>certmgr.msc</code>, <code>certlm.msc</code>) или PowerShell (<code>Get-ChildItem Cert:\...</code>).</p>
+<div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token function" style="color:rgb(130, 170, 255)">Get-ChildItem</span><span class="token plain"> Cert:\</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><br/></div></code></pre></div></div>
+<p>Основные хранилища:</p>
+<ul>
+<li class="">
+<p><strong>Current User</strong> — привязаны к профилю пользователя:</p>
+<ul>
+<li class=""><code>My</code> (Личные) — сертификаты с закрытыми ключами (клиентские, кодовая подпись, УКЭП);</li>
+<li class=""><code>Root</code> — доверенные корневые сертификаты;</li>
+<li class=""><code>CA</code> — промежуточные сертификаты;</li>
+<li class=""><code>TrustedPeople</code>, <code>Disallowed</code> — дополнительные политики.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Local Machine</strong> — системные, доступны всем пользователям:</p>
+<ul>
+<li class=""><code>My</code> — серверные сертификаты (IIS, служебные приложения);</li>
+<li class=""><code>Root</code>, <code>CA</code> — системные корневые и промежуточные;</li>
+<li class=""><code>Request</code> — сохранённые CSR;</li>
+<li class=""><code>WebHosting</code> — специализированное хранилище для IIS (поддержка SNI, быстрый доступ).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Особенности</strong>:</p>
+<ul>
+<li class="">Закрытые ключи хранятся в <code>%APPDATA%\Microsoft\Crypto\RSA\</code> (пользователь) или <code>%ALLUSERSPROFILE%\Microsoft\Crypto\RSA\MachineKeys\</code> (система), зашифрованы DPAPI.</li>
+<li class="">Доступ к закрытому ключу управляется ACL (права NTFS + CryptoAPI ACL).</li>
+<li class="">Через <code>certutil -store My</code> можно вывести список сертификатов в консоли.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=macos-и-ios--keychain>macOS и iOS — Keychain<a href=#macos-и-ios--keychain class=hash-link aria-label="Прямая ссылка на macOS и iOS — Keychain" title="Прямая ссылка на macOS и iOS — Keychain" translate=no>​</a></h4>
+<p>Единая защищённая база данных, управляемая службой <strong>Keychain Services</strong>. Существует несколько ключевых цепочек:</p>
+<ul>
+<li class=""><strong>login.keychain</strong> — привязана к пользователю (по умолчанию);</li>
+<li class=""><strong>System.keychain</strong> — системные сертификаты;</li>
+<li class=""><strong>Система Roots</strong> — только для чтения, содержит Apple-доверенные корневые;</li>
+<li class=""><strong>iCloud Keychain</strong> — синхронизация между устройствами (только пароли и некоторые сертификаты).</li>
+</ul>
+<p>Сертификаты и ключи хранятся вместе. Для доступа к закрытому ключу требуется разблокировка ключевой цепочки (обычно при входе в систему) и, при необходимости, дополнительный запрос разрешения (например, Safari спрашивает: "Разрешить сайту X использовать сертификат Y?").</p>
+<p>Инструменты:</p>
+<ul>
+<li class=""><strong>Keychain Access.app</strong> — графический просмотр и экспорт;</li>
+<li class=""><code>security find-certificate -c "example" -p</code> — поиск и вывод в PEM через терминал;</li>
+<li class=""><code>codesign --verify --verbose MyApp.app</code> — проверка подписи приложения.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=linux-и-unix-подобные-системы>Linux и Unix-подобные системы<a href=#linux-и-unix-подобные-системы class=hash-link aria-label="Прямая ссылка на Linux и Unix-подобные системы" title="Прямая ссылка на Linux и Unix-подобные системы" translate=no>​</a></h4>
+<p>В отличие от Windows и macOS, <strong>единая система хранилища отсутствует</strong>. Вместо этого используется <em>децентрализованный подход</em>:</p>
+<ul>
+<li class="">
+<p><strong>Системные корневые сертификаты</strong>:</p>
+<ul>
+<li class="">Debian/Ubuntu: <code>/etc/ssl/certs/</code> (символические ссылки на отдельные <code>.crt</code>-файлы) + <code>/usr/share/ca-certificates/</code>;</li>
+<li class="">RHEL/CentOS/Fedora: <code>/etc/pki/tls/certs/ca-bundle.crt</code> (единый bundle);</li>
+<li class="">Обновление через <code>update-ca-certificates</code> (Debian) или <code>update-ca-trust</code> (RHEL).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Приложения используют собственные механизмы</strong>:</p>
+<ul>
+<li class="">OpenSSL и производные (curl, wget, Node.js, Python <code>ssl</code>) — читают из системного bundle или указанного <code>--cacert</code>;</li>
+<li class="">Java — использует <code>cacerts</code> в <code>$JAVA_HOME/jre/lib/security/</code>; обновляется через <code>keytool -importcert</code>;</li>
+<li class="">Firefox — имеет <em>собственное хранилище</em>, независимое от ОС (файл <code>cert9.db</code> в профиле);</li>
+<li class="">Chrome/Chromium на Linux — использует системное хранилище (NSS или OpenSSL, в зависимости от сборки).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Важно</strong>: при развёртывании приложений в контейнерах (Docker) необходимо явно копировать CA-бандл в образ, иначе соединения к внешним HTTPS-ресурсам будут падать с ошибкой <code>CERTIFICATE_VERIFY_FAILED</code>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=чтение-и-анализ-сертификатов>Чтение и анализ сертификатов<a href=#чтение-и-анализ-сертификатов class=hash-link aria-label="Прямая ссылка на Чтение и анализ сертификатов" title="Прямая ссылка на Чтение и анализ сертификатов" translate=no>​</a></h3>
+<p>Для диагностики и проверки сертификатов используются как графические, так и консольные утилиты.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=openssl--универсальный-инструмент>OpenSSL — универсальный инструмент<a href=#openssl--универсальный-инструмент class=hash-link aria-label="Прямая ссылка на OpenSSL — универсальный инструмент" title="Прямая ссылка на OpenSSL — универсальный инструмент" translate=no>​</a></h4>
+<ul>
+<li class="">Просмотр содержимого PEM-сертификата:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  openssl x509 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-in</span><span class="token plain"> cert.pem </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-text</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-noout</span><br/></div></code></pre></div></div>
+<p>Выводит все поля, расширения, отпечатки (<code>SHA1 Fingerprint</code>, <code>SHA256 Fingerprint</code>).</p>
+<ul>
+<li class="">Проверка цепочки:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  openssl verify </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-CAfile</span><span class="token plain"> ca-bundle.pem server.crt</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Извлечение открытого ключа:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  openssl x509 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-in</span><span class="token plain"> cert.pem </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-pubkey</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-noout</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain"> pubkey.pem</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Проверка срока действия:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  openssl x509 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-in</span><span class="token plain"> cert.pem </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-dates</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-noout</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># notBefore=Nov 20 00:00:00 2024 GMT</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># notAfter=Feb 18 23:59:59 2025 GMT</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Подключение к серверу и получение сертификата:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  openssl s_client </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-connect</span><span class="token plain"> example.com:443 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-servername</span><span class="token plain"> example.com </span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">/dev/null </span><span class="token operator file-descriptor important" style="color:rgb(137, 221, 255)">2</span><span class="token operator" style="color:rgb(137, 221, 255)">></span><span class="token plain">/dev/null </span><span class="token operator" style="color:rgb(137, 221, 255)">|</span><span class="token plain"> openssl x509 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-text</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-noout</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=keytool-java>keytool (Java)<a href=#keytool-java class=hash-link aria-label="Прямая ссылка на keytool (Java)" title="Прямая ссылка на keytool (Java)" translate=no>​</a></h4>
+<ul>
+<li class="">Просмотр сертификата в JKS:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  keytool </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-list</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-v</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-keystore</span><span class="token plain"> keystore.jks </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-alias</span><span class="token plain"> mycert</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Импорт сертификата в доверенное хранилище Java:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  keytool </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-importcert</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-file</span><span class="token plain"> ca.crt </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-alias</span><span class="token plain"> myca </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-keystore</span><span class="token plain"> </span><span class="token variable" style="color:rgb(191, 199, 213)">$JAVA_HOME</span><span class="token plain">/jre/lib/security/cacerts</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic"># пароль по умолчанию: changeit</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=certutil-windows>certutil (Windows)<a href=#certutil-windows class=hash-link aria-label="Прямая ссылка на certutil (Windows)" title="Прямая ссылка на certutil (Windows)" translate=no>​</a></h4>
+<ul>
+<li class="">Просмотр сертификатов в хранилище:</li>
+</ul>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  certutil -store My</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Проверка цепочки:</li>
+</ul>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  certutil -verify -urlfetch cert.cer</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Экспорт с закрытым ключом (только из <code>My</code>):</li>
+</ul>
+<div class="language-cmd codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-cmd codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  certutil -user -p "pass" -exportPFX My "CN=example" cert.pfx</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=online-инструменты>Online-инструменты<a href=#online-инструменты class=hash-link aria-label="Прямая ссылка на Online-инструменты" title="Прямая ссылка на Online-инструменты" translate=no>​</a></h4>
+<ul>
+<li class=""><a href=https://www.ssllabs.com/ssltest/ target=_blank rel="noopener noreferrer" class="">SSL Labs Server Test</a> — глубокий аудит TLS-конфигурации сервера;</li>
+<li class=""><a href=https://crt.sh target=_blank rel="noopener noreferrer" class="">crt.sh</a> — поиск сертификатов по домену в базе Certificate Transparency;</li>
+<li class=""><a href=https://transparencyreport.google.com/https/certificates target=_blank rel="noopener noreferrer" class="">Google Transparency Report</a> — просмотр CT-логов.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=диагностика-типичных-ошибок>Диагностика типичных ошибок<a href=#диагностика-типичных-ошибок class=hash-link aria-label="Прямая ссылка на Диагностика типичных ошибок" title="Прямая ссылка на Диагностика типичных ошибок" translate=no>​</a></h3>
+<p>Ошибки, связанные с сертификатами, часто маскируются под общие проблемы сети или приложения. Ниже — классификация по признакам и методы выявления.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибка-your-connection-is-not-private--neterr_cert_authority_invalid>Ошибка: "Your connection is not private" / "NET::ERR_CERT_AUTHORITY_INVALID"<a href=#ошибка-your-connection-is-not-private--neterr_cert_authority_invalid class=hash-link aria-label='Прямая ссылка на Ошибка: "Your connection is not private" / "NET::ERR_CERT_AUTHORITY_INVALID"' title='Прямая ссылка на Ошибка: "Your connection is not private" / "NET::ERR_CERT_AUTHORITY_INVALID"' translate=no>​</a></h4>
+<p><strong>Причины</strong>:</p>
+<ul>
+<li class="">Используется самоподписанный или внутренний сертификат, корневой CA которого не установлен на клиенте;</li>
+<li class="">Сервер не присылает промежуточные сертификаты (цепочка неполная);</li>
+<li class="">Корневой сертификат CA был удалён из хранилища (например, политика безопасности).</li>
+</ul>
+<p><strong>Диагностика</strong>:</p>
+<ul>
+<li class="">В Chrome: кликнуть на замок → "Сертификат" → вкладка "Цепочка сертификации". Если последнее звено — не "Доверенный корневой центр сертификации", значит, корневой сертификат отсутствует или не доверен.</li>
+<li class="">В OpenSSL — проверить цепочку на сервере (должны прийти серверный + промежуточные сертификаты, без корневого):</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">openssl s_client </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-connect</span><span class="token plain"> host:443 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-showcerts</span><br/></div></code></pre></div></div>
+<p><strong>Решение</strong>:</p>
+<ul>
+<li class="">Установить корневой сертификат CA в доверенное хранилище;</li>
+<li class="">На сервере настроить отправку полной цепочки (в Nginx: <code>ssl_certificate</code> должен указывать на файл, содержащий сначала серверный, затем промежуточные сертификаты).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибка--err_cert_common_name_invalid>Ошибка — "ERR_CERT_COMMON_NAME_INVALID"<a href=#ошибка--err_cert_common_name_invalid class=hash-link aria-label='Прямая ссылка на Ошибка — "ERR_CERT_COMMON_NAME_INVALID"' title='Прямая ссылка на Ошибка — "ERR_CERT_COMMON_NAME_INVALID"' translate=no>​</a></h4>
+<p><strong>Причина</strong>: домен в адресной строке не совпадает ни с <code>Common Name</code>, ни с <code>Subject Alternative Name</code>.</p>
+<p><strong>Диагностика</strong> — SAN в сертификате (запрашиваемый хост, например <code>api.example.com</code>, должен быть в списке <code>DNS:</code>):</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">openssl x509 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-in</span><span class="token plain"> cert.pem </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-text</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">|</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">grep</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-A1</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Subject Alternative Name"</span><br/></div></code></pre></div></div>
+<p><strong>Решение</strong>:</p>
+<ul>
+<li class="">Перевыпустить сертификат с корректным SAN;</li>
+<li class="">Использовать wildcard, если применимо (<code>*.example.com</code>);</li>
+<li class="">Избегать использования <code>CN</code> как единственного идентификатора.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибка--err_cert_date_invalid>Ошибка — "ERR_CERT_DATE_INVALID"<a href=#ошибка--err_cert_date_invalid class=hash-link aria-label='Прямая ссылка на Ошибка — "ERR_CERT_DATE_INVALID"' title='Прямая ссылка на Ошибка — "ERR_CERT_DATE_INVALID"' translate=no>​</a></h4>
+<p><strong>Причины</strong>:</p>
+<ul>
+<li class="">Сертификат просрочен (<code>Not After</code> в прошлом);</li>
+<li class="">Сертификат ещё не вступил в силу (<code>Not Before</code> в будущем);</li>
+<li class="">Рассогласование времени на клиенте (например, неправильный часовой пояс, отключённая синхронизация NTP).</li>
+</ul>
+<p><strong>Диагностика</strong>:</p>
+<ul>
+<li class="">Проверить системное время: <code>date</code>.</li>
+<li class="">Сверить срок действия сертификата с текущим UTC:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">openssl x509 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-in</span><span class="token plain"> cert.pem </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-dates</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-noout</span><br/></div></code></pre></div></div>
+<p><strong>Решение</strong>:</p>
+<ul>
+<li class="">Обновить сертификат;</li>
+<li class="">Настроить NTP-синхронизацию (<code>systemd-timesyncd</code>, <code>chrony</code>, <code>ntpd</code>).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибка--revoked-certificate--ocsp-failure>Ошибка — "revoked certificate" / OCSP failure<a href=#ошибка--revoked-certificate--ocsp-failure class=hash-link aria-label='Прямая ссылка на Ошибка — "revoked certificate" / OCSP failure' title='Прямая ссылка на Ошибка — "revoked certificate" / OCSP failure' translate=no>​</a></h4>
+<p><strong>Причины</strong>:</p>
+<ul>
+<li class="">Сертификат отозван CA (утечка ключа, компрометация);</li>
+<li class="">Клиент не может связаться с OCSP-резондером (блокировка фаерволом, отсутствие интернета);</li>
+<li class="">OCSP-stapling не настроен, а OCSP-сервер недоступен.</li>
+</ul>
+<p><strong>Диагностика</strong>:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">openssl x509 </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-in</span><span class="token plain"> cert.pem </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-text</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">|</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">grep</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-A2</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"OCSP"</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">openssl ocsp </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-issuer</span><span class="token plain"> intermediate.crt </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-cert</span><span class="token plain"> server.crt </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-url</span><span class="token plain"> http://ocsp.example.com</span><br/></div></code></pre></div></div>
+<p><strong>Решение</strong>:</p>
+<ul>
+<li class="">Для сервера: включить OCSP stapling (в Nginx: <code>ssl_stapling on; ssl_stapling_verify on;</code>);</li>
+<li class="">Для клиента: при невозможности онлайн-проверки — только для отладки отключать проверку TLS (в продакшене недопустимо):</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token function" style="color:rgb(130, 170, 255)">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">--insecure</span><span class="token plain"> https://example.com/</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ошибка-при-использовании-российских-сертификатов--unknown-issuer>Ошибка при использовании российских сертификатов — "unknown issuer"<a href=#ошибка-при-использовании-российских-сертификатов--unknown-issuer class=hash-link aria-label='Прямая ссылка на Ошибка при использовании российских сертификатов — "unknown issuer"' title='Прямая ссылка на Ошибка при использовании российских сертификатов — "unknown issuer"' translate=no>​</a></h4>
+<p><strong>Причина</strong>: корневой сертификат УЦ Минцифры / ФСБ отсутствует в доверенном хранилище.</p>
+<p><strong>Решение</strong>:</p>
+<ol>
+<li class="">Скачать корневой сертификат с официального сайта (например, <a href=https://%D0%BC%D0%B8%D0%BD%D1%86%D0%B8%D1%84%D1%80%D1%8B.%D1%80%D1%84 target=_blank rel="noopener noreferrer" class="">минцифры.рф</a> → раздел "Электронная подпись" → "Доверенные корневые сертификаты").</li>
+<li class="">Установить:<!-- -->
+<ul>
+<li class=""><strong>Windows</strong>: двойной клик → "Установить сертификат" → "Текущий пользователь" → "Доверенные корневые центры сертификации".</li>
+<li class=""><strong>Linux (Debian)</strong>:</li>
+</ul>
+</li>
+</ol>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">     </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">cp</span><span class="token plain"> root-ca.cer /usr/local/share/ca-certificates/</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">     </span><span class="token function" style="color:rgb(130, 170, 255)">sudo</span><span class="token plain"> update-ca-certificates</span><br/></div></code></pre></div></div>
+<ul>
+<li class=""><strong>Java</strong>:</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">     keytool </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-importcert</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-file</span><span class="token plain"> root-ca.cer </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-alias</span><span class="token plain"> minsvyaz_root </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-keystore</span><span class="token plain"> </span><span class="token variable" style="color:rgb(191, 199, 213)">$JAVA_HOME</span><span class="token plain">/lib/security/cacerts</span><br/></div></code></pre></div></div>
+<p>После этого ресурсы вроде <code>gosuslugi.ru</code> или <code>service.nalog.ru</code> перестанут выдавать ошибки.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=сертификаты-и-защита-от-mitm>Сертификаты и защита от MITM<a href=#сертификаты-и-защита-от-mitm class=hash-link aria-label="Прямая ссылка на Сертификаты и защита от MITM" title="Прямая ссылка на Сертификаты и защита от MITM" translate=no>​</a></h2>
+<p>Сертификаты — центральный, но не единственный элемент защиты от атак типа <em>man-in-the-middle</em> (MITM). Их эффективность определяется не изолированно, а в рамках комплексной архитектуры доверия, где криптография, инфраструктура, политики и поведение пользователя взаимодействуют друг с другом. Чтобы понять, <em>как именно сертификаты предотвращают MITM</em>, необходимо разобрать, <strong>что позволяет злоумышленнику осуществить MITM в принципе</strong>, и <strong>какие звенья цепи доверия должны выдержать проверку</strong>, чтобы атака была заблокирована.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-работает-mitm-в-отсутствие-сертификатов-http>Как работает MITM в отсутствие сертификатов (HTTP)<a href=#как-работает-mitm-в-отсутствие-сертификатов-http class=hash-link aria-label="Прямая ссылка на Как работает MITM в отсутствие сертификатов (HTTP)" title="Прямая ссылка на Как работает MITM в отсутствие сертификатов (HTTP)" translate=no>​</a></h3>
+<p>В незашифрованном HTTP-соединении клиент отправляет запрос в открытом виде. Злоумышленник, находящийся на пути трафика (например, в той же Wi-Fi-сети, на маршрутизаторе, в провайдере), может:</p>
+<ol>
+<li class="">Перехватить HTTP-запрос (<code>GET /login HTTP/1.1</code>);</li>
+<li class="">Перехватить HTTP-ответ с формой входа;</li>
+<li class="">Подменить содержимое формы, внедрив скрипт, отправляющий логин и пароль к себе;</li>
+<li class="">Проксировать остальной трафик, сохраняя иллюзию нормальной работы.</li>
+</ol>
+<p>Это возможно, потому что:</p>
+<ul>
+<li class="">Нет <strong>аутентификации сервера</strong> — клиент не проверяет, с кем он на самом деле говорит;</li>
+<li class="">Нет <strong>шифрования</strong> — данные читаются в открытом виде;</li>
+<li class="">Нет <strong>контроля целостности</strong> — ответы можно модифицировать без обнаружения.</li>
+</ul>
+<p>HTTPS устраняет все три уязвимости — но только при условии корректной реализации.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=как-tls-с-сертификатами-предотвращает-mitm>Как TLS с сертификатами предотвращает MITM<a href=#как-tls-с-сертификатами-предотвращает-mitm class=hash-link aria-label="Прямая ссылка на Как TLS с сертификатами предотвращает MITM" title="Прямая ссылка на Как TLS с сертификатами предотвращает MITM" translate=no>​</a></h3>
+<p>Когда клиент устанавливает соединение по HTTPS, происходит <strong>TLS-рукопожатие</strong> (handshake). В его рамках решаются три задачи:</p>
+<ol>
+<li class="">
+<p><strong>Аутентификация сервера</strong><br/>
+<!-- -->Сервер представляет сертификат. Клиент:</p>
+<ul>
+<li class="">проверяет, что издатель — доверенный CA (через цепочку до корневого сертификата);</li>
+<li class="">сверяет доменное имя с SAN;</li>
+<li class="">убеждается, что сертификат не просрочен и не отозван.</li>
+</ul>
+<p>Только после успешной проверки клиент считает, что <em>общается именно с тем сервером, который заявлен в URL</em>.</p>
+</li>
+<li class="">
+<p><strong>Шифрование канала</strong><br/>
+<!-- -->С использованием открытого ключа из сертификата (или, чаще, через ephemeral-ключи в ECDHE) клиент и сервер вырабатывают общий <strong>сеансовый ключ</strong> — симметричный, используемый для шифрования всего последующего трафика (AES-GCM, ChaCha20-Poly1305 и др.).<br/>
+<!-- -->Даже если злоумышленник перехватит зашифрованные пакеты, без сеансового ключа их расшифровка невозможна.</p>
+</li>
+<li class="">
+<p><strong>Контроль целостности</strong><br/>
+<!-- -->Каждый TLS-запись (record) защищается механизмом аутентифицированного шифрования (AEAD), который гарантирует, что данные не были изменены в пути. Попытка подмены байта приведёт к мгновенному разрыву соединения.</p>
+</li>
+</ol>
+<p>Таким образом, <strong>MITM становится невозможен</strong>, если:</p>
+<ul>
+<li class="">клиент проверяет сертификат;</li>
+<li class="">закрытый ключ сервера не скомпрометирован;</li>
+<li class="">CA не выдал поддельный сертификат;</li>
+<li class="">клиент не проигнорировал предупреждения.</li>
+</ul>
+<p>Однако — и это критически важно — <em>сама по себе технология TLS не заставляет клиента проверять сертификат</em>. Это — обязанность реализации. Если приложение отключает проверку, MITM снова становится тривиальным. Типичные антипаттерны (только для локальной отладки):</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token function" style="color:rgb(130, 170, 255)">curl</span><span class="token plain"> </span><span class="token parameter variable" style="color:rgb(191, 199, 213)">-k</span><span class="token plain"> https://example.com/</span><br/></div></code></pre></div></div>
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token comment" style="color:rgb(105, 112, 152);font-style:italic">// .NET — всегда возвращает true, проверка отключена</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">handler</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">ServerCertificateCustomValidationCallback </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">msg</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> cert</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> chain</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> errors</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=></span><span class="token plain"> </span><span class="token boolean" style="color:rgb(255, 88, 116)">true</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=где-остаются-уязвимости>Где остаются уязвимости<a href=#где-остаются-уязвимости class=hash-link aria-label="Прямая ссылка на Где остаются уязвимости" title="Прямая ссылка на Где остаются уязвимости" translate=no>​</a></h3>
+<p>Несмотря на надёжность TLS, атаки MITM возможны в следующих ситуациях:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=установка-доверенного-корневого-сертификата-злоумышленника>Установка доверенного корневого сертификата злоумышленника<a href=#установка-доверенного-корневого-сертификата-злоумышленника class=hash-link aria-label="Прямая ссылка на Установка доверенного корневого сертификата злоумышленника" title="Прямая ссылка на Установка доверенного корневого сертификата злоумышленника" translate=no>​</a></h4>
+<p>Если пользователь (сознательно или под давлением) устанавливает корневой сертификат, созданный злоумышленником, тот может выпускать валидные сертификаты на <code>google.com</code>, <code>sberbank.ru</code> и любые другие домены. Так работают:</p>
+<ul>
+<li class="">антивирусы с функцией HTTPS-сканирования (Kaspersky, ESET);</li>
+<li class="">корпоративные прокси (Zscaler, Blue Coat);</li>
+<li class="">вредоносные программы (Superfish — случай Lenovo, 2015).</li>
+</ul>
+<p><strong>Защита</strong>:</p>
+<ul>
+<li class="">ОС и браузеры начинают ограничивать такие практики:<!-- -->
+<ul>
+<li class="">Windows 10+ требует явного разрешения на установку CA в системное хранилище;</li>
+<li class="">Chrome и Firefox помечают сертификаты от прозрачных прокси (если известны их CA) как ненадёжные;</li>
+<li class="">Certificate Transparency (см. ниже) позволяет обнаружить несанкционированный выпуск.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=компрометация-удостоверяющего-центра>Компрометация удостоверяющего центра<a href=#компрометация-удостоверяющего-центра class=hash-link aria-label="Прямая ссылка на Компрометация удостоверяющего центра" title="Прямая ссылка на Компрометация удостоверяющего центра" translate=no>​</a></h4>
+<p>Если CA утечёт закрытый ключ промежуточного сертификата, злоумышленник может массово выпускать доверенные сертификаты. Так было с DigiNotar (2011), когда были выданы сертификаты на <code>gmail.com</code>, <code>facebook.com</code>, использовавшиеся для атак на иранских dissidents.</p>
+<p><strong>Последствия</strong>:</p>
+<ul>
+<li class="">Браузеры экстренно отзывают доверие к CA через обновления (Google, Mozilla публикуют "revocation lists");</li>
+<li class="">Вводятся более строгие требования к аудиту CA (WebTrust, ETSI EN 319 411).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=отсутствие-проверки-отзыва-revocation-checking>Отсутствие проверки отзыва (revocation checking)<a href=#отсутствие-проверки-отзыва-revocation-checking class=hash-link aria-label="Прямая ссылка на Отсутствие проверки отзыва (revocation checking)" title="Прямая ссылка на Отсутствие проверки отзыва (revocation checking)" translate=no>​</a></h4>
+<p>Если сертификат отозван (например, после утечки ключа), но клиент не проверяет статус, он примет его как валидный. По умолчанию:</p>
+<ul>
+<li class="">Windows проверяет CRL/OCSP для EV-сертификатов, но не всегда для DV;</li>
+<li class="">macOS и iOS используют OCSP stapling + кэширование;</li>
+<li class="">Android и многие IoT-устройства — почти никогда не проверяют.</li>
+</ul>
+<p><strong>Решение</strong>: OCSP stapling на стороне сервера + политики "мягкого" (soft-fail) или "жёсткого" (hard-fail) отказа.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ssltls-stripping-downgrade-атаки>SSL/TLS stripping (downgrade-атаки)<a href=#ssltls-stripping-downgrade-атаки class=hash-link aria-label="Прямая ссылка на SSL/TLS stripping (downgrade-атаки)" title="Прямая ссылка на SSL/TLS stripping (downgrade-атаки)" translate=no>​</a></h4>
+<p>Злоумышленник блокирует переадресацию <code>http://</code> → <code>https://</code> и заставляет пользователя оставаться на HTTP. Классический пример — инструмент <strong>SSLStrip</strong> (Moxie Marlinspike, 2009).</p>
+<p><strong>Защита</strong>:</p>
+<ul>
+<li class=""><strong>HTTP Strict Transport Security (HSTS)</strong> — HTTP-заголовок:</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload</span><br/></div></code></pre></div></div>
+<p>После первого визита браузер <em>автоматически</em> преобразует все <code>http://</code>-запросы к этому домену в <code>https://</code>, даже если пользователь ввёл <code>http</code> вручную.</p>
+<ul>
+<li class=""><strong>HSTS Preload List</strong> — список доменов, вшитый в исходный код браузеров. Чтобы попасть туда, нужно выполнить строгие требования (все поддомены на HTTPS, <code>max-age</code> ≥ 1 год и др.). Включено для <code>google.com</code>, <code>yandex.ru</code>, <code>vk.com</code> и десятков тысяч других.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=подмена-dns-dns-spoofing--cache-poisoning>Подмена DNS (DNS spoofing / cache poisoning)<a href=#подмена-dns-dns-spoofing--cache-poisoning class=hash-link aria-label="Прямая ссылка на Подмена DNS (DNS spoofing / cache poisoning)" title="Прямая ссылка на Подмена DNS (DNS spoofing / cache poisoning)" translate=no>​</a></h4>
+<p>Если злоумышленник заставит клиента разрешить <code>bank.ru</code> в IP-адрес своего сервера, а на своём сервере установит <em>валидный DV-сертификат</em> на <code>bank.ru</code> (полученный, например, через компрометацию DNS), то TLS-проверка пройдёт успешно.</p>
+<p><strong>Защита</strong>:</p>
+<ul>
+<li class=""><strong>DNSSEC</strong> — подписывает DNS-ответы, клиент проверяет подпись;</li>
+<li class=""><strong>DoH / DoT</strong> — шифрует DNS-трафик, предотвращая подмену на уровне сети;</li>
+<li class=""><strong>Certificate Transparency (CT)</strong> — механизм, призванный обнаружить такие атаки <em>после факта</em>.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=certificate-transparency>Certificate Transparency<a href=#certificate-transparency class=hash-link aria-label="Прямая ссылка на Certificate Transparency" title="Прямая ссылка на Certificate Transparency" translate=no>​</a></h3>
+<p>CT — это открытая система логирования всех выданных публичных TLS-сертификатов. Идея проста: <em>если каждый сертификат публикуется в публичных, неизменяемых журналах, то любая несанкционированная выдача будет замечена</em>.</p>
+<p>Как это работает:</p>
+<ol>
+<li class="">CA, перед выдачей сертификата, отправляет его в один или несколько <strong>CT-логов</strong> (Google, Cloudflare, DigiCert и др.).</li>
+<li class="">Лог возвращает <strong>Signed Certificate Timestamp (SCT)</strong> — доказательство приёма.</li>
+<li class="">SCT встраивается в сертификат (в расширение <code>ct_precert_scts</code>) или передаётся через TLS-расширение (<code>signed_certificate_timestamp</code>).</li>
+<li class="">Браузер проверяет наличие SCT от <em>минимум двух независимых логов</em> (требование Google с 2018 г.).</li>
+</ol>
+<p>Что даёт CT:</p>
+<ul>
+<li class="">Владелец домена может подписаться на уведомления (через <a href=https://crt.sh target=_blank rel="noopener noreferrer" class="">crt.sh</a> или <a href=https://developers.facebook.com/tools/ct/ target=_blank rel="noopener noreferrer" class="">Facebook’s Certificate Transparency Monitoring</a>) и мгновенно увидеть, если CA выдал сертификат на его домен без ведома.</li>
+<li class="">Исследователи сканируют логи на признаки массовой выдачи (например, для фишинга).</li>
+<li class="">CA не могут "тихо" отозвать или скрыть факт выпуска.</li>
+</ul>
+<p>CT не предотвращает MITM в момент атаки, но делает её <em>обнаруживаемой и недолговечной</em> — что является важным элементом кибергигиены.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=другие-механизмы-усиления>Другие механизмы усиления<a href=#другие-механизмы-усиления class=hash-link aria-label="Прямая ссылка на Другие механизмы усиления" title="Прямая ссылка на Другие механизмы усиления" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=http-public-key-pinning-hpkp>HTTP Public Key Pinning (HPKP)<a href=#http-public-key-pinning-hpkp class=hash-link aria-label="Прямая ссылка на HTTP Public Key Pinning (HPKP)" title="Прямая ссылка на HTTP Public Key Pinning (HPKP)" translate=no>​</a></h4>
+<p>HPKP позволял сайту "закрепить" (pin) определённые публичные ключи, запрещая браузеру принимать сертификаты с другими ключами, даже если они подписаны доверенным CA.<br/>
+<!-- -->Пример заголовка:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">Public-Key-Pins: pin-sha256="base64=="; pin-sha256="backup=="; max-age=2592000; includeSubDomains</span><br/></div></code></pre></div></div>
+<p><strong>Почему отменён</strong>:</p>
+<ul>
+<li class="">Высокий риск человеческой ошибки: при потере закрытого ключа и отсутствии резервного пина сайт становился недоступен для всех пользователей на <code>max-age</code> дней;</li>
+<li class="">CT оказался более гибким и безопасным решением.</li>
+</ul>
+<p>Современная альтернатива — <strong>Expect-CT</strong> (тоже deprecated), а в перспективе — <strong>Certificate-Bound Tokens</strong> (RFC 8705) и <strong>Token Binding</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=mutual-tls-mtls--mitm-proof-для-сервер-сервер-и-клиент-сервер>Mutual TLS (mTLS) — MITM-proof для сервер-сервер и клиент-сервер<a href=#mutual-tls-mtls--mitm-proof-для-сервер-сервер-и-клиент-сервер class=hash-link aria-label="Прямая ссылка на Mutual TLS (mTLS) — MITM-proof для сервер-сервер и клиент-сервер" title="Прямая ссылка на Mutual TLS (mTLS) — MITM-proof для сервер-сервер и клиент-сервер" translate=no>​</a></h4>
+<p>В стандартном TLS только сервер аутентифицируется. В <strong>mTLS</strong> клиент также предъявляет сертификат, и сервер проверяет его. Это полностью исключает MITM, потому что:</p>
+<ul>
+<li class="">Злоумышленник должен владеть <em>и</em> серверным, <em>и</em> клиентским закрытым ключом;</li>
+<li class="">Клиентские сертификаты, как правило, хранятся в HSM или TPM, их кража маловероятна.</li>
+</ul>
+<p><strong>Применение</strong>:</p>
+<ul>
+<li class="">микросервисы в Kubernetes (Istio, Linkerd);</li>
+<li class="">API-шлюзы (Apigee, Kong);</li>
+<li class="">банковские терминалы, POS-устройства;</li>
+<li class="">государственные ГИС (например, интеграция с ЕГАИС по защищённому каналу).</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=end-to-end-encryption-e2ee>End-to-End Encryption (E2EE)<a href=#end-to-end-encryption-e2ee class=hash-link aria-label="Прямая ссылка на End-to-End Encryption (E2EE)" title="Прямая ссылка на End-to-End Encryption (E2EE)" translate=no>​</a></h4>
+<p>TLS защищает <em>канал</em>, но не <em>данные</em>. Если сервер скомпрометирован, данные в открытом виде у него в памяти.<br/>
+<!-- -->E2EE (например, в Signal, WhatsApp, ProtonMail) означает, что:</p>
+<ul>
+<li class="">данные шифруются на устройстве отправителя <em>до</em> отправки по TLS;</li>
+<li class="">расшифровываются <em>только</em> на устройстве получателя;</li>
+<li class="">сервер никогда не видит открытый текст.</li>
+</ul>
+<p>В этом случае даже успешный MITM на уровне сети не даёт злоумышленнику содержимого — только метаданные (кто с кем общался, когда, сколько).</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=практический-маршрут-внедрения-безопасности-приложения>Практический маршрут внедрения безопасности приложения<a href=#практический-маршрут-внедрения-безопасности-приложения class=hash-link aria-label="Прямая ссылка на Практический маршрут внедрения безопасности приложения" title="Прямая ссылка на Практический маршрут внедрения безопасности приложения" translate=no>​</a></h2>
+<p>Чтобы материал не оставался теорией, удобно строить работу по этапам релиза:</p>
+<ol>
+<li class="">До разработки: согласовать модель угроз, роли и критичные активы.</li>
+<li class="">Во время разработки: включить код-ревью по безопасности, SAST и правила валидации входных данных.</li>
+<li class="">Перед релизом: провести DAST, проверить заголовки безопасности и сценарии доступа.</li>
+<li class="">После релиза: настроить мониторинг аномалий, алерты и процесс реагирования.</li>
+</ol>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=мини-чек-лист-для-backend-и-frontend>Мини-чек-лист для backend и frontend<a href=#мини-чек-лист-для-backend-и-frontend class=hash-link aria-label="Прямая ссылка на Мини-чек-лист для backend и frontend" title="Прямая ссылка на Мини-чек-лист для backend и frontend" translate=no>​</a></h3>
+<ul>
+<li class="">Проверка авторизации стоит на каждом защищённом endpoint, а не только на входе.</li>
+<li class="">Сессии и токены имеют ограниченный TTL и механизм отзыва.</li>
+<li class="">Входные данные валидируются по схеме и экранируются в контексте вывода.</li>
+<li class="">Критичные заголовки (<code>CSP</code>, <code>HSTS</code>, <code>X-Frame-Options</code>) настроены и протестированы.</li>
+<li class="">Логи не содержат пароли, токены, персональные данные в открытом виде.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=частые-ошибки-команд>Частые ошибки команд<a href=#частые-ошибки-команд class=hash-link aria-label="Прямая ссылка на Частые ошибки команд" title="Прямая ссылка на Частые ошибки команд" translate=no>​</a></h3>
+<ul>
+<li class="">Делать упор только на аутентификацию и пропускать авторизацию объектов (IDOR).</li>
+<li class="">Хранить токены в <code>localStorage</code> в чувствительных сценариях.</li>
+<li class="">Откладывать настройку CSP и CORS "на потом".</li>
+<li class="">Сканировать зависимости нерегулярно и без порогов блокировки релиза.</li>
+<li class="">Не проводить постинцидентный разбор после проблем в продакшене.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=кейсы-из-практики>Кейсы из практики<a href=#кейсы-из-практики class=hash-link aria-label="Прямая ссылка на Кейсы из практики" title="Прямая ссылка на Кейсы из практики" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Ситуация: сертификат выпущен корректно, но на сервере забыли промежуточный сертификат.<br/>
+<!-- -->Риск: часть клиентов получает ошибку доверия и не может подключиться.<br/>
+<!-- -->Решение: проверять полную цепочку после каждого деплоя TLS-настроек.</p>
+</li>
+<li class="">
+<p>Ситуация: сертификаты обновляют вручную в последний день действия.<br/>
+<!-- -->Риск: просрочка из-за человеческого фактора и простой сервиса.<br/>
+<!-- -->Решение: автоматизировать обновление и настроить ранние уведомления о сроках.</p>
+</li>
+<li class="">
+<p>Ситуация: в коде есть временное отключение проверки TLS для отладки.<br/>
+<!-- -->Риск: MITM в продакшене при случайном переносе настройки.<br/>
+<!-- -->Решение: запретить такие флаги политикой CI и статическим анализом.</p>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=см-также>См. также<a href=#см-также class=hash-link aria-label="Прямая ссылка на См. также" title="Прямая ссылка на См. также" translate=no>​</a></h3>
+<ul>
+<li class=""><a class="" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/111>Методы защиты информации</a></li>
+<li class=""><a class="" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112>Средства защиты информации</a></li>
+<li class=""><a class="" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/113>Безопасность приложений</a></li>
+<li class=""><a class="" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1131>Анализ и тестирование безопасности</a></li>
+<li class=""><a class="" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1132>Безопасность на ранних этапах разработки</a></li>
+</ul>
+<hr/>
+<!-- -->
+<div class="callout callout--tip"><div class=callout-title>Основа по протоколу</div><div class=callout-body><p>Базовый разбор HTTP и HTTPS находится в отдельной статье — <a class="" href=/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118>HTTP как основа веб-интеграций</a>.</div></div></div><!--$--><!--/$--><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/engineer>engineer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architect>architect</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/required>required</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/beginner>beginner</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-05-28T10:43:27.000Z itemprop=dateModified>28 мая 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Средства защиты информации</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/113><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Безопасность приложений</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#сертификация class="table-of-contents__link toc-highlight">Сертификация</a><li><a href=#что-такое-сертификат class="table-of-contents__link toc-highlight">Что такое сертификат</a><ul><li><a href=#основные-поля-x509-сертификата-v3 class="table-of-contents__link toc-highlight">Основные поля X.509-сертификата (v3)</a><li><a href=#форматы-представления--pem-der-pkcs7-pkcs12 class="table-of-contents__link toc-highlight">Форматы представления — PEM, DER, PKCS#7, PKCS#12</a><li><a href=#жизненный-цикл-сертификата class="table-of-contents__link toc-highlight">Жизненный цикл сертификата</a></ul><li><a href=#виды-сертификатов class="table-of-contents__link toc-highlight">Виды сертификатов</a><ul><li><a href=#по-уровню-верификации--dv-ov-ev class="table-of-contents__link toc-highlight">По уровню верификации — DV, OV, EV</a><li><a href=#по-назначению--серверные-клиентские-кодовая-подпись-smime-iot class="table-of-contents__link toc-highlight">По назначению — серверные, клиентские, кодовая подпись, S/MIME, IoT</a><li><a href=#по-способу-выпуска--публичные-ca-частные-ca-самоподписанные class="table-of-contents__link toc-highlight">По способу выпуска — публичные CA, частные CA, самоподписанные</a><li><a href=#по-криптографическому-алгоритму--rsa-ecdsa-гост class="table-of-contents__link toc-highlight">По криптографическому алгоритму — RSA, ECDSA, ГОСТ</a><li><a href=#национальные-сертификаты class="table-of-contents__link toc-highlight">Национальные сертификаты</a></ul><li><a href=#хранение-и-чтение-сертификатов class="table-of-contents__link toc-highlight">Хранение и чтение сертификатов</a><ul><li><a href=#хранилища-сертификатов-в-операционных-системах class="table-of-contents__link toc-highlight">Хранилища сертификатов в операционных системах</a><li><a href=#чтение-и-анализ-сертификатов class="table-of-contents__link toc-highlight">Чтение и анализ сертификатов</a><li><a href=#диагностика-типичных-ошибок class="table-of-contents__link toc-highlight">Диагностика типичных ошибок</a></ul><li><a href=#сертификаты-и-защита-от-mitm class="table-of-contents__link toc-highlight">Сертификаты и защита от MITM</a><ul><li><a href=#как-работает-mitm-в-отсутствие-сертификатов-http class="table-of-contents__link toc-highlight">Как работает MITM в отсутствие сертификатов (HTTP)</a><li><a href=#как-tls-с-сертификатами-предотвращает-mitm class="table-of-contents__link toc-highlight">Как TLS с сертификатами предотвращает MITM</a><li><a href=#где-остаются-уязвимости class="table-of-contents__link toc-highlight">Где остаются уязвимости</a><li><a href=#certificate-transparency class="table-of-contents__link toc-highlight">Certificate Transparency</a><li><a href=#другие-механизмы-усиления class="table-of-contents__link toc-highlight">Другие механизмы усиления</a></ul><li><a href=#практический-маршрут-внедрения-безопасности-приложения class="table-of-contents__link toc-highlight">Практический маршрут внедрения безопасности приложения</a><ul><li><a href=#мини-чек-лист-для-backend-и-frontend class="table-of-contents__link toc-highlight">Мини-чек-лист для backend и frontend</a><li><a href=#частые-ошибки-команд class="table-of-contents__link toc-highlight">Частые ошибки команд</a><li><a href=#кейсы-из-практики class="table-of-contents__link toc-highlight">Кейсы из практики</a><li><a href=#см-также class="table-of-contents__link toc-highlight">См. также</a></ul></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Информационная безопасность"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Информационная безопасность</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="OWASP (Open Web Application Security Project) — это некоммерческая организация, которая выпускает список TOP 10 самых опасных уязвимостей веб-приложений.">OWASP (Open Web Application Security Project) — это некоммерческая организация, которая выпускает список TOP 10 самых опасных уязвимостей веб-приложений.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/111><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Методы защиты информации"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Методы защиты информации</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Методы защиты информации - непрерывный процесс на жизненном цикле системы, безопасная разработка и типовые угрозы.">Методы защиты информации - непрерывный процесс на жизненном цикле системы, безопасная разработка и типовые угрозы.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1111><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Государственные требования к информационной безопасности"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Государственные требования к информационной безопасности</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Инцидент информационной безопасности — это событие или последовательность событий, нарушающих или угрожающих нарушить конфиденциальность, целостность или доступность информации.">Инцидент информационной безопасности — это событие или последовательность событий, нарушающих или угрожающих нарушить конфиденциальность, целостность или доступность информации.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1112><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Средства защиты информации"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Средства защиты информации</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Средства защиты информации - эволюция терминов и требований ФСТЭК России, включая актуализацию после приказа № 117 (2025).">Средства защиты информации - эволюция терминов и требований ФСТЭК России, включая актуализацию после приказа № 117 (2025).</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/113><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Безопасность приложений"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Безопасность приложений</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Content Security Policy — это мощный механизм защиты от XSS, clickjacking и других атак, основанный на белых списках источников ресурсов.">Content Security Policy — это мощный механизм защиты от XSS, clickjacking и других атак, основанный на белых списках источников ресурсов.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1131><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Анализ и тестирование безопасности"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Анализ и тестирование безопасности</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Анализ безопасности — это систематический процесс выявления, оценки и приоритизации уязвимостей в программном обеспечении.">Анализ безопасности — это систематический процесс выявления, оценки и приоритизации уязвимостей в программном обеспечении.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1132><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Безопасность на ранних этапах разработки"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Безопасность на ранних этапах разработки</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Безопасность на ранних этапах разработки (Secure Software Development Life Cycle, Secure SDLC) представляет собой методологию внедрения практик защиты информации непосредственно в процесс создания.">Безопасность на ранних этапах разработки (Secure Software Development Life Cycle, Secure SDLC) представляет собой методологию внедрения практик защиты информации непосредственно в процесс создания.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/114><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Контроль и отслеживание"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Контроль и отслеживание</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Контроль и отслеживание в ИБ - журналирование действий, аудит и анализ операций для расследований и соответствия требованиям.">Контроль и отслеживание в ИБ - журналирование действий, аудит и анализ операций для расследований и соответствия требованиям.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/115><h2 class="theme-doc-card-heading cardTitle_mcqP" title=Шифрование><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Шифрование>🔐</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Шифрование</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Шифрование в информационной безопасности - цели, обратимость преобразования и роль ключей при защите данных.">Шифрование в информационной безопасности - цели, обратимость преобразования и роль ключей при защите данных.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1151><h2 class="theme-doc-card-heading cardTitle_mcqP" title="SSH и HTTPS"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Шифрование>🔐</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">SSH и HTTPS</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="HTTPS функционирует на порту 443. Этот порт используется большинством веб-серверов по умолчанию. Блокировка соединения на этом порту нарушает работу интернета.">HTTPS функционирует на порту 443. Этот порт используется большинством веб-серверов по умолчанию. Блокировка соединения на этом порту нарушает работу интернета.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1152><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Архитектура взаимодействия мессенджеров"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Архитектура взаимодействия мессенджеров</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Современный мессенджер представляет собой распределённую систему с несколькими ключевыми узлами. Основными компонентами являются клиентское приложение и серверная инфраструктура.">Современный мессенджер представляет собой распределённую систему с несколькими ключевыми узлами. Основными компонентами являются клиентское приложение и серверная инфраструктура.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1153><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Управление конфигурациями и окружениями"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0 badgeEmoji_gl0S" aria-hidden=true title=Безопасность>🛡️</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Управление конфигурациями и окружениями</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Конфигурация представляет собой совокупность параметров, определяющих поведение приложения в конкретной среде выполнения.">Конфигурация представляет собой совокупность параметров, определяющих поведение приложения в конкретной среде выполнения.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro>Ещё <!-- -->22<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script></div></body>

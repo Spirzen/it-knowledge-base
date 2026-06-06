@@ -1,0 +1,879 @@
+<!doctype html><html lang=ru dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Практика архитектурного проектирования | Вселенная IT</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:url content=https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3 /><meta data-rh=true property=og:locale content=ru /><meta data-rh=true name=docusaurus_locale content=ru /><meta data-rh=true name=docsearch:language content=ru /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Практика архитектурного проектирования | Вселенная IT"/><meta data-rh=true name=description content="Практика архитектурного проектирования: монолит и N-tier, границы модулей, Conway, контракты API, эволюция и структура репозитория."/><meta data-rh=true property=og:description content="Практика архитектурного проектирования: монолит и N-tier, границы модулей, Conway, контракты API, эволюция и структура репозитория."/><link data-rh=true rel=icon href=/img/favicon.ico /><link data-rh=true rel=canonical href=https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3 /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3 hreflang=ru /><link data-rh=true rel=alternate href=https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/intro","name":"Энциклопедия","position":1},{"@type":"ListItem","item":"https://spirzen.ru/section/project","name":"7. Проект","position":2},{"@type":"ListItem","item":"https://spirzen.ru/category/проектирование-и-архитектура","name":"Проектирование и архитектура","position":3},{"@type":"ListItem","item":"https://spirzen.ru/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3","name":"Практика архитектурного проектирования","position":4}]}</script><script>!function(){try{var e=localStorage.getItem("it-universe-design")||"design-universe-original";document.documentElement.setAttribute("data-design",e)}catch(e){document.documentElement.setAttribute("data-design","design-universe-original")}}()</script><link rel=stylesheet href=/assets/css/styles.93921e7a.css /><script src=/assets/js/runtime~main.9a8cf30a.js defer></script><script src=/assets/js/main.e00e3341.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-e64")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/docusaurus.png /><div role=region aria-label="Перейти к основному содержимому"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Перейти к основному содержимому</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Открыть меню навигации" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/docusaurus.png alt="IT Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Вселенная IT</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/about/project>Энциклопедия</a><a class="navbar__item navbar__link" href=/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101>Указатель</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class=bar_Go2U><div class=field_FvBa><span class=fieldPlaceholder_xjza>Поиск…</span></div></div><div class="themeControls_mZ6Z it-navbar-theme-controls"><label class=root_zn2u title="Палитра оформления Вселенной IT"><span class=label_O72H>Тема</span><select class=select_W3AT aria-label="Выбор темы оформления"><option value=design-universe-original selected>Оригинал (Вселенная IT)<optgroup label="★ Популярные"><option value=design-matrix-code>Матрица<option value=design-paper-vintage>Бумажный архив<option value=design-sakura-spring>Сакура<option value=design-neon-tokyo>Неон Токио<option value=design-brutalist-swiss>Брутализм Swiss<option value=design-phosphor-green>Фосфорный CRT<option value=design-ink-monochrome>Монохромные чернила<optgroup label="Все темы"><option value=design-cosmic-void>Космическая пустота<option value=design-solar-flare>Солнечная вспышка<option value=design-arctic-frost>Арктический мороз<option value=design-forest-terminal>Лесной терминал<option value=design-crimson-night>Багровая ночь<option value=design-glass-aurora>Стекло и северное сияние<option value=design-ocean-abyss>Океанская бездна<option value=design-sunset-warm>Тёплый закат<option value=design-lavender-haze>Лавандовая дымка<option value=design-carbon-github>Carbon (dev)<option value=design-gilded-scroll>Золотой свиток<option value=design-cyber-grid>Кибер-сетка<option value=design-nordic-fjord>Nordic Fjord<option value=design-mint-cool>Мятная свежесть<option value=design-volcano-ember>Вулканическое пламя<option value=design-holo-prism>Голографическая призма<option value=design-blueprint-tech>Технический чертёж</select></label><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_bSxm><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_cWv0><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_Y1UP"><div class=it-sidebar-panel-head><svg width=18 height=18 viewBox="0 0 24 24" fill=none aria-hidden=true><path d="M4 6h16M4 12h10M4 18h14" stroke=currentColor stroke-width=1.75 stroke-linecap=round /><circle cx=19 cy=17 r=3 fill=currentColor fill-opacity=0.35 stroke=currentColor stroke-width=1.25 /></svg><div class=it-sidebar-panel-head-text><span class=it-sidebar-panel-title>Оглавление</span><span class=it-sidebar-panel-sub>Энциклопедия</span></div></div><div class="sidebarSearchWrapper_vhWs it-sidebar-tools"><input type=search class=sidebarSearchInput_US0l placeholder="Фильтр по категориям..." value="" /><div class="sidebarQuickFilters_tMBq it-sidebar-quick-filters"><button type=button class=sidebarQuickFilter_A5hh>Языки</button><button type=button class=sidebarQuickFilter_A5hh>Проект</button><button type=button class=sidebarQuickFilter_A5hh>Аналитику</button><button type=button class=sidebarQuickFilter_A5hh>Тестировщику</button><button type=button class=sidebarQuickFilter_A5hh>Инженеру</button><button type=button class=sidebarQuickFilter_A5hh>Архитектору</button><button type=button class=sidebarQuickFilter_A5hh>Сеть</button></div></div><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/about/project><span title="О проекте" class=categoryLinkLabel_V03G>О проекте</span></a><button aria-label="Expand sidebar category 'О проекте'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" href=/encyclopedia/intro><span title=Энциклопедия class=categoryLinkLabel_V03G>Энциклопедия</span></a><button aria-label="Collapse sidebar category 'Энциклопедия'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/basics><span title="1. Основы" class=categoryLinkLabel_V03G>1. Основы</span></a><button aria-label="Expand sidebar category '1. Основы'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/system-network><span title="2. Система и сеть" class=categoryLinkLabel_V03G>2. Система и сеть</span></a><button aria-label="Expand sidebar category '2. Система и сеть'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/data-markup><span title="3. Данные и разметка" class=categoryLinkLabel_V03G>3. Данные и разметка</span></a><button aria-label="Expand sidebar category '3. Данные и разметка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/code-dev><span title="4. Код и разработка" class=categoryLinkLabel_V03G>4. Код и разработка</span></a><button aria-label="Expand sidebar category '4. Код и разработка'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/languages><span title="5. Языки" class=categoryLinkLabel_V03G>5. Языки</span></a><button aria-label="Expand sidebar category '5. Языки'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/ai><span title="6. Искусственный интеллект" class=categoryLinkLabel_V03G>6. Искусственный интеллект</span></a><button aria-label="Expand sidebar category '6. Искусственный интеллект'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/section/project><span title="7. Проект" class=categoryLinkLabel_V03G>7. Проект</span></a><button aria-label="Collapse sidebar category '7. Проект'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/общее-о-бизнесе><span title="Общее о бизнесе" class=categoryLinkLabel_V03G>Общее о бизнесе</span></a><button aria-label="Expand sidebar category 'Общее о бизнесе'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/команда-и-управление><span title="Команда и управление" class=categoryLinkLabel_V03G>Команда и управление</span></a><button aria-label="Expand sidebar category 'Команда и управление'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/методология-и-жизненный-цикл-по><span title="Методология и жизненный цикл ПО" class=categoryLinkLabel_V03G>Методология и жизненный цикл ПО</span></a><button aria-label="Expand sidebar category 'Методология и жизненный цикл ПО'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/аналитика><span title=Аналитика class=categoryLinkLabel_V03G>Аналитика</span></a><button aria-label="Expand sidebar category 'Аналитика'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/тестирование-программного-обеспечения><span title="Тестирование программного обеспечения" class=categoryLinkLabel_V03G>Тестирование программного обеспечения</span></a><button aria-label="Expand sidebar category 'Тестирование программного обеспечения'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist menu__link--active" tabindex=0 href=/category/проектирование-и-архитектура><span title="Проектирование и архитектура" class=categoryLinkLabel_V03G>Проектирование и архитектура</span></a><button aria-label="Collapse sidebar category 'Проектирование и архитектура'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/проектирование><span title=Проектирование class=categoryLinkLabel_V03G>Проектирование</span></a><button aria-label="Expand sidebar category 'Проектирование'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-4 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/паттерны-проектирования><span title="Паттерны проектирования" class=categoryLinkLabel_V03G>Паттерны проектирования</span></a><button aria-label="Expand sidebar category 'Паттерны проектирования'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1><span title="Основы проектирования и архитектуры программного обеспечения" class=linkLabel_WmDU>Основы проектирования и архитектуры программного обеспечения</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/101><span title="Архитектурные стили и их применение" class=linkLabel_WmDU>Архитектурные стили и их применение</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/102><span title="Стили внутренней организации кода" class=linkLabel_WmDU>Стили внутренней организации кода</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/103><span title="Принципы компонентно-ориентированной архитектуры" class=linkLabel_WmDU>Принципы компонентно-ориентированной архитектуры</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/104><span title="Стратегии декомпозиции монолитных систем" class=linkLabel_WmDU>Стратегии декомпозиции монолитных систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/105><span title="Влияние инфраструктуры на архитектурные решения" class=linkLabel_WmDU>Влияние инфраструктуры на архитектурные решения</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/112><span title="Классификация типов классов в объектно-ориентированном проектировании" class=linkLabel_WmDU>Классификация типов классов в объектно-ориентированном проектировании</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/113><span title="Построение систем на основе классов и объектов" class=linkLabel_WmDU>Построение систем на основе классов и объектов</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114><span title="Доменная модель" class=linkLabel_WmDU>Доменная модель</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141><span title="Типы классов в DDD" class=linkLabel_WmDU>Типы классов в DDD</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/115><span title="Паттерны проектирования" class=linkLabel_WmDU>Паттерны проектирования</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/116><span title="Системный подход и системное мышление" class=linkLabel_WmDU>Системный подход и системное мышление</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161><span title="Имитационное моделирование" class=linkLabel_WmDU>Имитационное моделирование</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117><span title="Роль и практика архитектора программного обеспечения" class=linkLabel_WmDU>Роль и практика архитектора программного обеспечения</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/141><span title="12 концепций архитектуры распределённых систем" class=linkLabel_WmDU>12 концепций архитектуры распределённых систем</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/142><span title="Алгоритмы выбора лидера в распределённых системах" class=linkLabel_WmDU>Алгоритмы выбора лидера в распределённых системах</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/143><span title="System Design — карта тем и подготовка" class=linkLabel_WmDU>System Design — карта тем и подготовка</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/144><span title="Email-рассылка как распределённая система" class=linkLabel_WmDU>Email-рассылка как распределённая система</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2><span title="Масштабируемость и параллелизм в системном проектировании" class=linkLabel_WmDU>Масштабируемость и параллелизм в системном проектировании</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3><span title="Практика архитектурного проектирования" class=linkLabel_WmDU>Практика архитектурного проектирования</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998><span title="Проектирование и архитектура — итоги" class=linkLabel_WmDU>Проектирование и архитектура — итоги</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/999><span title="Проектирование и архитектура — чек-лист" class=linkLabel_WmDU>Проектирование и архитектура — чек-лист</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro><span title="Проектирование и архитектура — о разделе" class=linkLabel_WmDU>Проектирование и архитектура — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/интеллектуальные-права><span title="Интеллектуальные права" class=categoryLinkLabel_V03G>Интеллектуальные права</span></a><button aria-label="Expand sidebar category 'Интеллектуальные права'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/техническое-письмо><span title="Техническое письмо" class=categoryLinkLabel_V03G>Техническое письмо</span></a><button aria-label="Expand sidebar category 'Техническое письмо'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/базы-знаний-и-задачники><span title="Базы знаний и задачники" class=categoryLinkLabel_V03G>Базы знаний и задачники</span></a><button aria-label="Expand sidebar category 'Базы знаний и задачники'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/культура-кода><span title="Культура кода" class=categoryLinkLabel_V03G>Культура кода</span></a><button aria-label="Expand sidebar category 'Культура кода'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/легаси-код><span title=Легаси-код class=categoryLinkLabel_V03G>Легаси-код</span></a><button aria-label="Expand sidebar category 'Легаси-код'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/конструирование-по><span title="Конструирование ПО" class=categoryLinkLabel_V03G>Конструирование ПО</span></a><button aria-label="Expand sidebar category 'Конструирование ПО'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/экономика-производства-по><span title="Экономика производства ПО" class=categoryLinkLabel_V03G>Экономика производства ПО</span></a><button aria-label="Expand sidebar category 'Экономика производства ПО'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/scrum><span title=Scrum class=categoryLinkLabel_V03G>Scrum</span></a><button aria-label="Expand sidebar category 'Scrum'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/внедрение-erp><span title="Внедрение ERP" class=categoryLinkLabel_V03G>Внедрение ERP</span></a><button aria-label="Expand sidebar category 'Внедрение ERP'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/category/itsm-и-ит-услуги><span title="ITSM и ИТ-услуги" class=categoryLinkLabel_V03G>ITSM и ИТ-услуги</span></a><button aria-label="Expand sidebar category 'ITSM и ИТ-услуги'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/Проект/project><span title="7. Проект - о разделе" class=linkLabel_WmDU>7. Проект - о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/infra-security><span title="8. Инфраструктура и безопасность" class=categoryLinkLabel_V03G>8. Инфраструктура и безопасность</span></a><button aria-label="Expand sidebar category '8. Инфраструктура и безопасность'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" tabindex=0 href=/section/spinoff><span title="9. Спин-офф" class=categoryLinkLabel_V03G>9. Спин-офф</span></a><button aria-label="Expand sidebar category '9. Спин-офф'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/encyclopedia/intro><span title="Энциклопедия — о разделе" class=linkLabel_WmDU>Энциклопедия — о разделе</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/tools/intro><span title=Инструменты class=categoryLinkLabel_V03G>Инструменты</span></a><button aria-label="Expand sidebar category 'Инструменты'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/glossary/intro><span title=Глоссарий class=categoryLinkLabel_V03G>Глоссарий</span></a><button aria-label="Expand sidebar category 'Глоссарий'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/lab/intro><span title=Лаборатория class=categoryLinkLabel_V03G>Лаборатория</span></a><button aria-label="Expand sidebar category 'Лаборатория'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/context/intro><span title=Контекст class=categoryLinkLabel_V03G>Контекст</span></a><button aria-label="Expand sidebar category 'Контекст'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_m60s menu__link menu__link--sublist" href=/philosophy/intro><span title=Философия class=categoryLinkLabel_V03G>Философия</span></a><button aria-label="Expand sidebar category 'Философия'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/toc><span title=Содержание class=linkLabel_WmDU>Содержание</span></a></ul></nav><button type=button title="Свернуть сайдбар" aria-label="Свернуть сайдбар" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width=20 height=20 aria-hidden=true class=collapseSidebarButtonIcon_kv0_><g fill=#7a7a7a><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"/><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"/></g></svg></button></div></div></aside><main class="docMainContainer docMainContainer_hjYf"><div class="container padding-top--md padding-bottom--lg docItemWrapper docItemWrapper_UBqo"><div class="row docItemRow docItemRow_qf89"><div class="col docItemCol docItemCol_z5aJ"><div class=docItemContainer_c0TR><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Главная страница" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/encyclopedia/intro><span>Энциклопедия</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/section/project><span>7. Проект</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/category/проектирование-и-архитектура><span>Проектирование и архитектура</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Практика архитектурного проектирования</span></ul></nav><!--$--><!--/$--><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Практика архитектурного проектирования</h1></header>
+<div class=article-tags><span class="tag tag-required">ОБЯЗАТЕЛЬНО</span><span class="tag tag-beginner">ДЛЯ НОВИЧКОВ</span></div>
+<span class=complexity-badge>Разработчику</span>
+<span class=complexity-badge>Архитектору</span>
+<span class=complexity-badge>Аналитику</span>
+<div class="callout callout--info"><div class=callout-title>Теория данных (раздел 3)</div><div class=callout-body><p>Модель и масштаб — <a class="" href=/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro>Основы БД</a>, <a class="" href=/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12>опорные темы</a>, <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116>проектирование БД</a>, <a class="" href=/encyclopedia/3-data-markup/3-11-analiz-dannyh/433>пакетная работа</a>. Карта — <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro>о разделе</a>.</div></div>
+<div class="callout callout--tip"><div class=callout-title>Как читать эту статью</div><div class=callout-body><p>Длинный <strong>практический справочник</strong> — по частям. Сначала монолит и границы<p>затем API и репозиторий. Теория: <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1>Основы</a>, роль: <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117>архитектор</a>, карта: <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro>оглавление</a>.</div></div>
+<div class="it-demo it-demo--loading">Загрузка редактора схем…</div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=практика-архитектурного-проектирования-1>Практика архитектурного проектирования<a href=#практика-архитектурного-проектирования-1 class=hash-link aria-label="Прямая ссылка на Практика архитектурного проектирования" title="Прямая ссылка на Практика архитектурного проектирования" translate=no>​</a></h2>
+<p>Архитектурная практика — про <strong>границы</strong>: между слоями, модулями, командами и внешними системами.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=практический-маршрут-применения-статьи-на-проекте>Практический маршрут применения статьи на проекте<a href=#практический-маршрут-применения-статьи-на-проекте class=hash-link aria-label="Прямая ссылка на Практический маршрут применения статьи на проекте" title="Прямая ссылка на Практический маршрут применения статьи на проекте" translate=no>​</a></h2>
+<p>Эта глава особенно полезна, когда её применяют как рабочую карту внедрения. Ниже компактный маршрут, который помогает перевести теорию в действия команды.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-1--зафиксировать-исходное-состояние>Шаг 1 — зафиксировать исходное состояние<a href=#шаг-1--зафиксировать-исходное-состояние class=hash-link aria-label="Прямая ссылка на Шаг 1 — зафиксировать исходное состояние" title="Прямая ссылка на Шаг 1 — зафиксировать исходное состояние" translate=no>​</a></h3>
+<ul>
+<li class="">текущая структура репозитория и модулей;</li>
+<li class="">явные и скрытые зависимости между подсистемами;</li>
+<li class="">проблемные сценарии: инциденты, долгие релизы, конфликтные зоны.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-2--выделить-2-3-целевых-архитектурных-улучшения>Шаг 2 — выделить 2-3 целевых архитектурных улучшения<a href=#шаг-2--выделить-2-3-целевых-архитектурных-улучшения class=hash-link aria-label="Прямая ссылка на Шаг 2 — выделить 2-3 целевых архитектурных улучшения" title="Прямая ссылка на Шаг 2 — выделить 2-3 целевых архитектурных улучшения" translate=no>​</a></h3>
+<p>Примеры:</p>
+<ul>
+<li class="">провести границу между доменом заказов и интеграциями;</li>
+<li class="">внедрить ADR как обязательный артефакт на спорные решения;</li>
+<li class="">перевести часть синхронных вызовов в асинхронные события.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаг-3--внедрять-поэтапно-с-измеримыми-критериями>Шаг 3 — внедрять поэтапно с измеримыми критериями<a href=#шаг-3--внедрять-поэтапно-с-измеримыми-критериями class=hash-link aria-label="Прямая ссылка на Шаг 3 — внедрять поэтапно с измеримыми критериями" title="Прямая ссылка на Шаг 3 — внедрять поэтапно с измеримыми критериями" translate=no>​</a></h3>
+<ul>
+<li class="">цель этапа;</li>
+<li class="">срок;</li>
+<li class="">ответственный;</li>
+<li class="">метрика успеха;</li>
+<li class="">план отката.</li>
+</ul>
+<p>Такой подход снижает риск "большого переписывания" и делает архитектурные изменения управляемыми.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=шаблон-мини-adr-для-команды>Шаблон мини-ADR для команды<a href=#шаблон-мини-adr-для-команды class=hash-link aria-label="Прямая ссылка на Шаблон мини-ADR для команды" title="Прямая ссылка на Шаблон мини-ADR для команды" translate=no>​</a></h2>
+<ul>
+<li class="">Контекст: какая проблема и где проявляется.</li>
+<li class="">Варианты: минимум два реалистичных пути.</li>
+<li class="">Решение: что выбрали и почему.</li>
+<li class="">Последствия: плюсы, риски, ограничения.</li>
+<li class="">Проверка: какими метриками подтвердим результат.</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=чек-лист-внедрения-архитектурного-изменения>Чек-лист внедрения архитектурного изменения<a href=#чек-лист-внедрения-архитектурного-изменения class=hash-link aria-label="Прямая ссылка на Чек-лист внедрения архитектурного изменения" title="Прямая ссылка на Чек-лист внедрения архитектурного изменения" translate=no>​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Граница изменения описана в терминах домена и модулей.</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Известны затронутые контракты API и данных.</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Определены сценарии отказа и fallback.</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Назначены метрики и срок контрольной проверки.</li>
+<li class=task-list-item><input type=checkbox disabled/> <!-- -->Подготовлен план обратимого отката.</li>
+</ul>
+<p>Этот чек-лист помогает превращать архитектурные идеи в управляемые изменения с измеримым результатом.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-такое-архитектурная-практика>Что такое архитектурная практика<a href=#что-такое-архитектурная-практика class=hash-link aria-label="Прямая ссылка на Что такое архитектурная практика" title="Прямая ссылка на Что такое архитектурная практика" translate=no>​</a></h3>
+<p>Архитектурная практика — это совокупность методов, принципов, решений и компромиссов, применяемых при формировании структуры программной системы с учётом её функциональных требований, нефункциональных ограничений, жизненного цикла и контекста эксплуатации. В отличие от проектирования на уровне компонентов или модулей, архитектурная практика оперирует <strong>высокоуровневыми абстракциями</strong>, определяющими организацию системы в целом: её слои, границы ответственности, способы взаимодействия, стратегии масштабирования, восстановления и эволюции.</p>
+<p>Архитектурная практика не сводится к выбору конкретного шаблона или фреймворка. Она включает в себя:</p>
+<ul>
+<li class="">осознанное проведение границ ответственности между частями системы;</li>
+<li class="">управление зависимостями и связностью (coupling);</li>
+<li class="">контроль за когезией (cohesion) на уровне доменов и сервисов;</li>
+<li class="">баланс между гибкостью и стабильностью;</li>
+<li class="">предвидение точек роста и потенциальных узких мест;</li>
+<li class="">выбор стратегии эволюции: развитие существующей архитектуры или её пересмотр.</li>
+</ul>
+<p>Архитектор программного обеспечения — это не просто разработчик с расширенными полномочиями. Это специалист, который принимает решения, последствия которых проявятся через месяцы или годы. Его задача — обеспечить <strong>архитектурную целостность</strong>, то есть сохранение логической непротиворечивости системы в условиях неопределённости, изменения требований и расширения команды.</p>
+<p>Далее мы рассмотрим ключевые аспекты архитектурной практики, начиная с классических подходов и постепенно переходя к современным стратегиям декомпозиции и управления сложностью.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-компоненты-монолита-двухзвенная-и-трёхзвенная-архитектура>1. Компоненты монолита. Двухзвенная и трёхзвенная архитектура<a href=#1-компоненты-монолита-двухзвенная-и-трёхзвенная-архитектура class=hash-link aria-label="Прямая ссылка на 1. Компоненты монолита. Двухзвенная и трёхзвенная архитектура" title="Прямая ссылка на 1. Компоненты монолита. Двухзвенная и трёхзвенная архитектура" translate=no>​</a></h3>
+<p>Монолитная архитектура — исторически первая и наиболее интуитивно понятная форма организации приложений. В такой системе всё программное обеспечение разрабатывается, компилируется, развёртывается и масштабируется как единый артефакт. Однако важно понимать: термин <em>"монолит"</em> относится к <strong>развёртыванию и жизненному циклу</strong>, а не к внутренней структуре кода. Существуют хорошо структурированные монолиты — и разваливающиеся на части модульные системы, где отсутствует архитектурная дисциплина.</p>
+<p>Классический монолит состоит из следующих логических компонентов:</p>
+<ul>
+<li class=""><strong>Пользовательский интерфейс (UI)</strong> — слой представления, реализующий взаимодействие с конечным пользователем. Может быть веб-интерфейсом (HTML/CSS/JS), десктопным приложением, мобильным клиентом.</li>
+<li class=""><strong>Бизнес-логика (application layer)</strong> — ядро системы, где реализуются правила предметной области, оркестрация операций, транзакционные гарантии.</li>
+<li class=""><strong>Доступ к данным (Данные access layer)</strong> — компоненты, отвечающие за взаимодействие с постоянным хранилищем: ORM, репозитории, DAO, клиенты баз данных.</li>
+</ul>
+<div class="it-demo it-demo--loading">Загрузка ArchiStyler…</div>
+<div class="it-demo it-demo--loading">Загрузка просмотрщика схемы…</div>
+<p>Несмотря на единую точку развёртывания, даже в монолите возможна внутренняя модульность — например, через пространства имён, отдельные библиотеки, чёткие правила инверсии зависимостей (Dependency Inversion Principle). Однако границы между модулями в монолите остаются <em>логическими</em>, а не <em>физическими</em>, и их нарушение приводит к накоплению технического долга.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=двухзвенная-архитектура>Двухзвенная архитектура<a href=#двухзвенная-архитектура class=hash-link aria-label="Прямая ссылка на Двухзвенная архитектура" title="Прямая ссылка на Двухзвенная архитектура" translate=no>​</a></h4>
+<p>Двухзвенная (2-tier) архитектура — упрощённая модель, где клиентское приложение напрямую взаимодействует с СУБД. Например: десктопное приложение, подключающееся к PostgreSQL по сети. В такой схеме бизнес-логика либо отсутствует, либо частично размещается на клиенте, либо — в триггерах и хранимых процедурах. Это подход типичен для небольших информационных систем конца 1990‑х — начала 2000‑х.</p>
+<p>Преимущества:</p>
+<ul>
+<li class="">Минимальная инфраструктура;</li>
+<li class="">Простота развёртывания (один клиент, один сервер БД);</li>
+<li class="">Низкая сетевая латентность между клиентом и БД.</li>
+</ul>
+<p>Недостатки:</p>
+<ul>
+<li class="">Отсутствие централизованной бизнес-логики, что затрудняет поддержку согласованности при множестве клиентов;</li>
+<li class="">Высокая связность клиентского кода с моделью данных;</li>
+<li class="">Сложности с безопасностью: клиент оперирует учётной записью с прямыми правами на БД;</li>
+<li class="">Плохая масштабируемость: при росте числа клиентов нагрузка ложится на СУБД без возможности горизонтального масштабирования логики.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=трёхзвенная-архитектура>Трёхзвенная архитектура<a href=#трёхзвенная-архитектура class=hash-link aria-label="Прямая ссылка на Трёхзвенная архитектура" title="Прямая ссылка на Трёхзвенная архитектура" translate=no>​</a></h4>
+<p>Трёхзвенная (3-tier) архитектура — естественное развитие двухзвенной. Здесь явно выделяется <em>сервер приложений</em> как отдельный слой между клиентом и базой данных. Клиент общается только с сервером приложений, тот, в свою очередь, взаимодействует с БД через строго контролируемые интерфейсы.</p>
+<p>Структурно:</p>
+<ol>
+<li class=""><strong>Presentation tier</strong> — клиент (тонкий или толстый, об этом ниже);</li>
+<li class=""><strong>Application tier</strong> — сервер приложений: веб-сервер, API-шлюз, бизнес-сервисы;</li>
+<li class=""><strong>Данные tier</strong> — СУБД, кэши, файловые хранилища.</li>
+</ol>
+<p>Трёхзвенная архитектура стала доминирующей в эпоху веб-приложений и остаётся актуальной для большинства enterprise-систем. Она позволяет:</p>
+<ul>
+<li class="">Централизовать бизнес-правила;</li>
+<li class="">Внедрять аутентификацию, авторизацию, аудит, логирование на уровне сервера;</li>
+<li class="">Гибко масштабировать логику независимо от хранилища;</li>
+<li class="">Поддерживать несколько клиентов (веб, мобильный, интеграции) через единый контракт.</li>
+</ul>
+<p>Однако даже трёхзвенная система может быть монолитной — если все три слоя поставляются в одном исполняемом артефакте и масштабируются синхронно.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-плюсы-и-минусы-монолитной-архитектуры>2. Плюсы и минусы монолитной архитектуры<a href=#2-плюсы-и-минусы-монолитной-архитектуры class=hash-link aria-label="Прямая ссылка на 2. Плюсы и минусы монолитной архитектуры" title="Прямая ссылка на 2. Плюсы и минусы монолитной архитектуры" translate=no>​</a></h3>
+<p>Монолит остаётся обоснованным выбором при определённых условиях.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=преимущества-монолита>Преимущества монолита<a href=#преимущества-монолита class=hash-link aria-label="Прямая ссылка на Преимущества монолита" title="Прямая ссылка на Преимущества монолита" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Простота разработки и отладки на ранних этапах.</strong> Единая кодовая база, единая IDE-сессия, возможность пошаговой отладки от UI до БД — всё это ускоряет итерации в стартовой фазе проекта.</li>
+<li class=""><strong>Единая транзакционная граница.</strong> Любая операция, затрагивающая несколько модулей, может быть обёрнута в одну ACID-транзакцию. Это упрощает обеспечение консистентности без сложных механизмов компенсации.</li>
+<li class=""><strong>Минимальная сетевая сложность.</strong> Отсутствие межсервисного взаимодействия означает отсутствие задержек, десериализации, обработки таймаутов, idempotency, circuit breakers.</li>
+<li class=""><strong>Упрощённый CI/CD.</strong> Один pipeline, один артефакт, одна операция деплоя — меньше точек отказа в процессе поставки.</li>
+<li class=""><strong>Низкие накладные расходы на инфраструктуру.</strong> Один процесс, один контейнер, один экземпляр БД — проще администрировать, дешевле в эксплуатации.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=недостатки-монолита>Недостатки монолита<a href=#недостатки-монолита class=hash-link aria-label="Прямая ссылка на Недостатки монолита" title="Прямая ссылка на Недостатки монолита" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Связность (coupling) растёт нелинейно.</strong> По мере роста команды и функционала границы между модулями стираются: появляются циклические зависимости, прямые вызовы между "слоями", дублирование логики. Архитектура деградирует в "большой комок грязи" (Big Ball of Mud).</li>
+<li class=""><strong>Масштабирование "всё или ничего".</strong> Нельзя масштабировать только нагруженный компонент — придётся реплицировать весь монолит, даже если 90 % его функционала простаивает.</li>
+<li class=""><strong>Ограниченная технологическая гибкость.</strong> Смена языка, фреймворка или СУБД затрагивает всю систему. Эксперименты с новыми технологиями в отдельных модулях невозможны.</li>
+<li class=""><strong>Долгая сборка и деплой.</strong> При размере кодовой базы в сотни тысяч строк время компиляции, тестирования и развёртывания может измеряться десятками минут, что замедляет цикл обратной связи. Сама по себе эта боль редко оправдывает микросервисы — см. <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/104#pyat-voprosov-pered-dekompoziciey>пять вопросов перед декомпозицией</a>.</li>
+<li class=""><strong>Риск единой точки отказа.</strong> Падение одного компонента (например, из-за memory leak в модуле отчётов) выводит из строя всю систему.</li>
+<li class=""><strong>Сложность вовлечения новых разработчиков.</strong> Требуется понимание всей системы, даже если человек работает над узкой функцией.</li>
+</ul>
+<p>Таким образом, монолит наиболее эффективен в условиях:</p>
+<ul>
+<li class="">небольшой команды (до 5–7 человек);</li>
+<li class="">узкого и чётко определённого домена;</li>
+<li class="">отсутствия требований к частому масштабированию или изоляции компонентов.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-понятие-software-architect-и-архитектурной-ответственности>3. Понятие software architect и архитектурной ответственности<a href=#3-понятие-software-architect-и-архитектурной-ответственности class=hash-link aria-label="Прямая ссылка на 3. Понятие software architect и архитектурной ответственности" title="Прямая ссылка на 3. Понятие software architect и архитектурной ответственности" translate=no>​</a></h3>
+<p>Архитектор программного обеспечения — это лицо, принимающее решения, касающиеся структуры системы, и несущее ответственность за их последствия. Его роль заключается в <strong>управлении сложностью через абстракцию и ограничение вариативности</strong>.</p>
+<p>Ключевые обязанности архитектора:</p>
+<ul>
+<li class="">Формулировка архитектурного видения — краткое, понятное описание того, <em>как система должна быть устроена</em>, чтобы соответствовать стратегическим целям.</li>
+<li class="">Определение ключевых нефункциональных требований (NFR): latency, throughput, availability, Безопасность, evolvability — и их количественная спецификация (SLI/SLO).</li>
+<li class="">Выбор архитектурного стиля и паттернов, соответствующих контексту.</li>
+<li class="">Введение и поддержка архитектурных ограничений (constraints): запреты на прямые вызовы между модулями, требования к интерфейсам, правила именования, подходы к обработке ошибок.</li>
+<li class="">Архитектурные ревью — систематическая проверка соответствия решений видению.</li>
+<li class="">Обучение команды: объяснение <em>почему</em> принято то или иное решение, а не только <em>что</em> делать.</li>
+</ul>
+<p>Архитектор не обязан писать код ежедневно, но должен быть способен сделать это — иначе его решения рискуют стать оторванными от реальности. Идеально, когда архитектор участвует в написании критически важных компонентов (например, ядра доменной логики или шлюза агрегации), чтобы сохранять "тактильную" связь с системой.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-архитектурные-паттерны-не-путать-с-gof>4. Архитектурные паттерны (не путать с GoF)<a href=#4-архитектурные-паттерны-не-путать-с-gof class=hash-link aria-label="Прямая ссылка на 4. Архитектурные паттерны (не путать с GoF)" title="Прямая ссылка на 4. Архитектурные паттерны (не путать с GoF)" translate=no>​</a></h3>
+<p>Архитектурные паттерны — это проверенные стратегии организации всей системы или её крупных частей. Они находятся на более высоком уровне абстракции по сравнению с паттернами проектирования (например, <em>наблюдатель</em>, <em>фабрика</em>), и решают задачи масштаба: масштабируемость, отказоустойчивость, поддерживаемость, изолированность изменений.</p>
+<p>Некоторые ключевые архитектурные паттерны:</p>
+<ul>
+<li class=""><strong>Слоистая архитектура (Layered Architecture)</strong> — классическая трёх- или четырёхслойная структура (presentation, business, persistence, database). Подходит для приложений с чётким разделением ответственности и умеренным темпом изменений.</li>
+<li class=""><strong>Шина событий (Event Bus / Event-Driven Architecture)</strong> — компоненты взаимодействуют через асинхронные события, публикуемые в шину (Kafka, RabbitMQ, NATS). Поддерживает слабую связность, но требует дисциплины в моделировании событий и обработке ошибок.</li>
+<li class=""><strong>Ориентированная на команды и запросы (CQRS)</strong> — разделение операций записи и чтения на разные модели и, зачастую, разные физические компоненты.</li>
+<li class=""><strong>Микросервисная архитектура</strong> — декомпозиция по границам домена с физическим разделением развёртывания и данных.</li>
+<li class=""><strong>Serverless / FaaS</strong> — делегирование управления инфраструктурой облачному провайдеру, фокус на функциях как единицах развёртывания.</li>
+<li class=""><strong>Service Mesh</strong> — вынос логики коммуникации (retry, circuit breaking, mTLS) во внешний слой (sidecar-proxy), освобождая бизнес-код от инфраструктурной сложности.</li>
+</ul>
+<p>Выбор архитектурного паттерна — это <em>стратегическое</em> решение. Например, переход на микросервисы без изменений в процессы команды (CI/CD, мониторинг, эксплуатация) часто ведёт к <em>распределённому монолиту</em> — системе, которая объединяет недостатки обоих миров.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-tldr-как-инструмент-архитектурного-мышления>5. TL;DR как инструмент архитектурного мышления<a href=#5-tldr-как-инструмент-архитектурного-мышления class=hash-link aria-label="Прямая ссылка на 5. TL;DR как инструмент архитектурного мышления" title="Прямая ссылка на 5. TL;DR как инструмент архитектурного мышления" translate=no>​</a></h3>
+<p>TL;DR ("Too Long; Didn’t Read") в профессиональной среде — <strong>дисциплина архитектурного синтеза</strong>. Архитектор обязан уметь выразить суть решения в 2–4 предложения, доступных как техническому руководителю, так и нетехническому заказчику. Это требует:</p>
+<ul>
+<li class="">чёткого разделения <em>проблемы</em> и <em>решения</em>;</li>
+<li class="">отказа от жаргона без пояснения;</li>
+<li class="">фокуса на последствиях, а не на механизмах.</li>
+</ul>
+<p>Пример корректного TL;DR для перехода на CQRS:</p>
+<blockquote>
+<p><em>"Разделение операций записи и чтения позволяет оптимизировать каждую сторону под свои нагрузки: запись — через транзакции и валидацию в домене, чтение — через денормализованные проекции. Это повышает масштабируемость интерфейсов и устойчивость к пиковым нагрузкам, но вводит eventual consistency и требует механизмов синхронизации"</em>.</p>
+</blockquote>
+<p>Некорректный вариант:</p>
+<blockquote>
+<p><em>"Будем использовать CQRS с Event Sourcing и Kafka, это модно и правильно"</em> — отсутствует проблема, последствия и контекст.</p>
+</blockquote>
+<p>TL;DR — это <strong>стартовая точка для дискуссии</strong>. Он должен вызывать конкретные вопросы: <em>Какой уровень задержки допустим при чтении? Как обрабатывать конфликты при одновременной записи? Как обеспечить аудит?</em> Если TL;DR не порождает уточняющих вопросов — он либо слишком общий, либо скрывает сложность.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-шардирование--управление-масштабом-данных>6. Шардирование — управление масштабом данных<a href=#6-шардирование--управление-масштабом-данных class=hash-link aria-label="Прямая ссылка на 6. Шардирование — управление масштабом данных" title="Прямая ссылка на 6. Шардирование — управление масштабом данных" translate=no>​</a></h3>
+<p>Шардирование — стратегия горизонтального разделения единого логического набора данных на несколько физических сегментов (шардов), каждый из которых содержит подмножество записей. Цель — преодолеть ограничения одной инстанции СУБД по объёму данных, числу операций в секунду или пропускной способности дисковой подсистемы.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ключевые-принципы>Ключевые принципы<a href=#ключевые-принципы class=hash-link aria-label="Прямая ссылка на Ключевые принципы" title="Прямая ссылка на Ключевые принципы" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Шардирующий ключ</strong> — атрибут (или комбинация), по которому происходит распределение записей. Примеры: <code>user_id</code>, <code>tenant_id</code>, <code>region_code</code>. Ключ должен обеспечивать <strong>равномерное распределение нагрузки</strong> и <strong>локальность данных</strong> — запросы по одному пользователю/клиенту должны попадать в один шард.</li>
+<li class=""><strong>Прозрачность для приложения</strong> — идеально, если логика шардирования инкапсулирована в слое доступа к данным (например, через библиотеку вроде Hibernate Shards или Vitess). Однако на практике часто приходится вносить изменения в бизнес-логику: например, запрещать JOIN’ы между сущностями из разных шардов.</li>
+<li class=""><strong>Ребалансировка</strong> — процесс перераспределения данных при изменении числа шардов. Вручную это дорого и рискованно; автоматизированные решения (Vitess, Citus, YugabyteDB) включают координационные узлы и фоновые задачи репликации.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=типы-шардирования>Типы шардирования<a href=#типы-шардирования class=hash-link aria-label="Прямая ссылка на Типы шардирования" title="Прямая ссылка на Типы шардирования" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Диапазонное</strong> — шарды выделяются по диапазонам значений ключа (<code>0–999</code>, <code>1000–1999</code>). Просто в реализации, но подвержено дисбалансу при неравномерном распределении ключей (например, если большинство пользователей — из одного региона).</li>
+<li class=""><strong>Хеширование</strong> — ключ хешируется (например, CRC32), и по остатку деления определяется шард. Обеспечивает равномерное распределение, но усложняет диапазонные запросы (<code>WHERE created_at BETWEEN …</code>).</li>
+<li class=""><strong>Географическое</strong> — шарды привязаны к регионам для минимизации latency и соблюдения требований локализации данных (например, GDPR). Требует явного управления репликацией между регионами.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ограничения-и-риски>Ограничения и риски<a href=#ограничения-и-риски class=hash-link aria-label="Прямая ссылка на Ограничения и риски" title="Прямая ссылка на Ограничения и риски" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Глобальные операции становятся сложными.</strong> Агрегация (<code>COUNT</code>, <code>SUM</code>), сортировка, JOIN’ы — требуют координации между шардами, что снижает производительность и повышает latency.</li>
+<li class=""><strong>Усложнение администрирования.</strong> Резервное копирование, восстановление, миграции схемы — должны выполняться для каждого шарда отдельно или с координацией.</li>
+<li class=""><strong>Жёсткая привязка к ключу.</strong> Изменение шардирующего ключа — операция уровня переписывания системы.</li>
+</ul>
+<p>Шардирование оправдано, когда:</p>
+<ul>
+<li class="">объём данных превышает 1–2 ТБ на инстанс;</li>
+<li class="">write/read throughput близок к пределу одного узла;</li>
+<li class="">требования к latency не позволяют использовать вертикальное масштабирование.</li>
+</ul>
+<p>В остальных случаях предпочтительны более простые стратегии: партиционирование внутри СУБД, read replicas, кэширование.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-mv-паттерны--разделение-ответственности-на-уровне-представления>7. MV* паттерны — разделение ответственности на уровне представления<a href=#7-mv-паттерны--разделение-ответственности-на-уровне-представления class=hash-link aria-label="Прямая ссылка на 7. MV* паттерны — разделение ответственности на уровне представления" title="Прямая ссылка на 7. MV* паттерны — разделение ответственности на уровне представления" translate=no>​</a></h3>
+<p>MVC, MVP, MVVM — это <strong>архитектурные паттерны для клиентских приложений</strong>, направленные на отделение логики от отображения. Несмотря на широкую известность, их часто смешивают или применяют механически, не понимая различий в потоках данных.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=mvc-model-view-controller>MVC (Model-View-Controller)<a href=#mvc-model-view-controller class=hash-link aria-label="Прямая ссылка на MVC (Model-View-Controller)" title="Прямая ссылка на MVC (Model-View-Controller)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Model</strong> — состояние и бизнес-логика, не зависящие от UI.</li>
+<li class=""><strong>View</strong> — пассивный элемент отображения, который <em>оповещается</em> об изменениях модели (часто через observer).</li>
+<li class=""><strong>Controller</strong> — обрабатывает входные события (клик, ввод), изменяет модель, инициирует обновление View.</li>
+</ul>
+<p>Особенность: View имеет прямой доступ к Model для чтения (но не для записи). Контроллер — <em>thin</em>, так как основная логика в модели. Типично для серверных веб-фреймворков (Ruby on Rails, Spring MVC), где View — это шаблон, отрендеренный на сервере.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=mvp-model-view-presenter>MVP (Model-View-Presenter)<a href=#mvp-model-view-presenter class=hash-link aria-label="Прямая ссылка на MVP (Model-View-Presenter)" title="Прямая ссылка на MVP (Model-View-Presenter)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Presenter</strong> берёт на себя всю логику взаимодействия: получает события от View, читает/пишет в Model, <em>явно</em> обновляет View через интерфейс (например, <code>IView.UpdateUserName()</code>).</li>
+<li class=""><strong>View</strong> полностью пассивна — не имеет доступа к Model, не знает о бизнес-правилах. Это позволяет легко писать unit-тесты для Presenter’а.</li>
+</ul>
+<p>Распространён в desktop- и mobile-разработке (Android до Jetpack Compose, WinForms), где важна тестируемость UI-логики.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=mvvm-model-view-viewmodel>MVVM (Model-View-ViewModel)<a href=#mvvm-model-view-viewmodel class=hash-link aria-label="Прямая ссылка на MVVM (Model-View-ViewModel)" title="Прямая ссылка на MVVM (Model-View-ViewModel)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>ViewModel</strong> — <em>представление состояния</em> для View. Он предоставляет <em>observable-свойства</em> (например, <code>userName: string</code>, <code>isLoading: boolean</code>).</li>
+<li class=""><strong>View</strong> подписывается на изменения ViewModel (через Данные binding), автоматически обновляя интерфейс.</li>
+</ul>
+<p>Ключевое отличие: поток данных — <em>реактивный</em>, однонаправленный. MVVM наиболее эффективен в средах с мощными binding-фреймворками (WPF, SwiftUI, Angular, Vue, React с MobX/Zustand).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=выбор-паттерна>Выбор паттерна<a href=#выбор-паттерна class=hash-link aria-label="Прямая ссылка на Выбор паттерна" title="Прямая ссылка на Выбор паттерна" translate=no>​</a></h4>
+<p>Решение зависит от:</p>
+<ul>
+<li class="">платформы (сервер vs клиент, наличие binding);</li>
+<li class="">требований к тестируемости;</li>
+<li class="">командных компетенций.</li>
+</ul>
+<p>Например, в SPA на React чистый MVC не реализуем — компонентная модель ближе к MVVM (state → render), но с императивными элементами (useEffect как Presenter). Важно соблюдение принципа: <em>изменение UI не должно требовать изменения бизнес-логики, и наоборот</em>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-cqrs--разделение-команд-и-запросов>8. CQRS — разделение команд и запросов<a href=#8-cqrs--разделение-команд-и-запросов class=hash-link aria-label="Прямая ссылка на 8. CQRS — разделение команд и запросов" title="Прямая ссылка на 8. CQRS — разделение команд и запросов" translate=no>​</a></h3>
+<p>Command Query Responsibility Segregation — принцип, утверждающий: <strong>операции, изменяющие состояние (команды), следует строго отделять от операций, только читающих состояние (запросы)</strong>. В классической реализации это означает:</p>
+<ul>
+<li class="">две разные модели данных:<!-- -->
+<ul>
+<li class=""><em>Write model</em> — нормализованная, транзакционная, ориентированная на целостность;</li>
+<li class=""><em>Read model</em> — денормализованная, оптимизированная под конкретные UI-сценарии, часто хранящаяся в NoSQL или колоночной БД.</li>
+</ul>
+</li>
+<li class="">два разных API:<!-- -->
+<ul>
+<li class=""><code>POST /orders</code> — команда, создающая заказ;</li>
+<li class=""><code>GET /order-summary/{id}</code> — запрос, возвращающий агрегированные данные для карточки заказа.</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=почему-это-работает>Почему это работает<a href=#почему-это-работает class=hash-link aria-label="Прямая ссылка на Почему это работает" title="Прямая ссылка на Почему это работает" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Оптимизация под нагрузку.</strong> Write-сторона масштабируется по числу транзакций (ACID), read-сторона — по количеству запросов (возможно, с кэшированием и CDN).</li>
+<li class=""><strong>Эволюционная гибкость.</strong> Можно менять read-модель без пересборки write-логики — например, добавить новый отчёт, просто создав новую проекцию.</li>
+<li class=""><strong>Изоляция сложности.</strong> Валидация, агрегация, инварианты — остаются в write-модели, не засоряя read-сторону.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=проблемы-и-компромиссы>Проблемы и компромиссы<a href=#проблемы-и-компромиссы class=hash-link aria-label="Прямая ссылка на Проблемы и компромиссы" title="Прямая ссылка на Проблемы и компромиссы" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Eventual consistency.</strong> Read-модель обновляется асинхронно — между записью и отображением может быть задержка (мс–с). Требуется продумать UX: показывать "сохранено", но "данные обновятся через несколько секунд".</li>
+<li class=""><strong>Сложность синхронизации.</strong> Проекции могут "отставать"; нужны механизмы повторной обработки событий, идемпотентности, отката.</li>
+<li class=""><strong>Удвоение кода.</strong> Две модели, две схемы, два набора тестов.</li>
+</ul>
+<p>CQRS не требует Event Sourcing (хотя часто используется с ним). Можно применять CQRS поверх реляционной БД: write — в PostgreSQL, read — в проекции на Redis или Elasticsearch, обновляемые триггерами или фоновыми job’ами.</p>
+<p>CQRS оправдан, когда:</p>
+<ul>
+<li class="">read/write нагрузки сильно различаются по объёму или структуре;</li>
+<li class="">требуется высокая масштабируемость интерфейсов;</li>
+<li class="">доменная модель сложна, и попытки "одной модели на всё" приводят к компромиссам.</li>
+</ul>
+<p>Для простых CRUD-приложений CQRS — избыточность, создающая технический долг.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-декомпозиция-монолита--модульность-и-микросервисы>9. Декомпозиция монолита — модульность и микросервисы<a href=#9-декомпозиция-монолита--модульность-и-микросервисы class=hash-link aria-label="Прямая ссылка на 9. Декомпозиция монолита — модульность и микросервисы" title="Прямая ссылка на 9. Декомпозиция монолита — модульность и микросервисы" translate=no>​</a></h3>
+<p>Декомпозиция — средство снижения сложности. Она возможна в двух плоскостях: <strong>логической</strong> (модули в едином артефакте) и <strong>физической</strong> (независимые процессы, развёртывания, данные).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=декомпозиция-на-модули>Декомпозиция на модули<a href=#декомпозиция-на-модули class=hash-link aria-label="Прямая ссылка на Декомпозиция на модули" title="Прямая ссылка на Декомпозиция на модули" translate=no>​</a></h4>
+<p>Модуль — автономная единица кода с чётким контрактом, минимальными внешними зависимостями и высокой внутренней когезией. В .NET — отдельная сборка (<code>Project.dll</code>), в Java — JAR-модуль, в Python — пакет с явными <code>__init__.py</code> и <code>py.typed</code>.</p>
+<p>Принципы модульной декомпозиции:</p>
+<ul>
+<li class=""><strong>Инверсия зависимостей.</strong> Высокоуровневые модули не зависят от низкоуровневых — оба зависят от абстракций (интерфейсов, DTO).</li>
+<li class=""><strong>Замкнутость по модификации (OCP).</strong> Изменение одного модуля не требует изменения других — только при расширении контракта.</li>
+<li class=""><strong>Явное управление видимостью.</strong> Публичные API модуля — минимальны; внутренние классы скрыты (<code>internal</code> в C#, package-private в Java).</li>
+<li class=""><strong>Автономная сборка и тестирование.</strong> Модуль можно собрать и прогнать unit-тесты без остальной системы.</li>
+</ul>
+<p>Инструменты поддержки:</p>
+<ul>
+<li class="">в .NET — <code>InternalsVisibleTo</code>, <code>PrivateAssets</code>, анализ зависимостей через <code>dotnet-dependency-analyzer</code>;</li>
+<li class="">в Java — JPMS (Java Platform Module System), <code>module-info.java</code>;</li>
+<li class="">в Python — <code>mypy</code> с strict mode, <code>pydeps</code> для визуализации связей.</li>
+</ul>
+<p>Модульный монолит — переходная, но устойчивая архитектура. Он сохраняет преимущества монолита (единая транзакция, простой деплой), но устраняет основную его слабость — неуправляемую связность.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=декомпозиция-на-микросервисы>Декомпозиция на микросервисы<a href=#декомпозиция-на-микросервисы class=hash-link aria-label="Прямая ссылка на Декомпозиция на микросервисы" title="Прямая ссылка на Декомпозиция на микросервисы" translate=no>​</a></h4>
+<p>Микросервис — <strong>независимо развёртываемая, слабосвязанная единица, ответственная за конкретную бизнес-возможность в рамках ограниченного контекста (bounded context)</strong>.</p>
+<p>Критерии "настоящего" микросервиса:</p>
+<ul>
+<li class="">Собственная <strong>граница данных</strong> (отдельная БД или схема, запрет прямого доступа извне);</li>
+<li class="">Собственный <strong>жизненный цикл</strong> (CI/CD, версионирование, откат);</li>
+<li class="">Собственный <strong>мониторинг и логирование</strong> (tracing ID, метрики по сервису);</li>
+<li class=""><strong>Контрактный интерфейс</strong> (API, события) — единственный способ взаимодействия.</li>
+</ul>
+<p>Декомпозиция на микросервисы должна начинаться с <strong>анализа домена</strong> (см. DDD ниже). Частая ошибка — разрезание по техническим признакам ("сервис пользователей", "сервис отчётов"), что приводит к тесной связности и "распределённой транзакции" через REST.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-управление-данными-в-микросервисной-архитектуре>10. Управление данными в микросервисной архитектуре<a href=#10-управление-данными-в-микросервисной-архитектуре class=hash-link aria-label="Прямая ссылка на 10. Управление данными в микросервисной архитектуре" title="Прямая ссылка на 10. Управление данными в микросервисной архитектуре" translate=no>​</a></h3>
+<p>В микросервисной архитектуре <strong>каждый сервис владеет своими данными и имеет исключительное право на их изменение</strong>. Это принцип <em>Данные ownership</em>, лежащий в основе слабой связности. Прямой доступ к БД другого сервиса — архитектурное нарушение, ведущее к скрытым зависимостям и невозможности независимой эволюции.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=проблема-распределённых-транзакций>Проблема распределённых транзакций<a href=#проблема-распределённых-транзакций class=hash-link aria-label="Прямая ссылка на Проблема распределённых транзакций" title="Прямая ссылка на Проблема распределённых транзакций" translate=no>​</a></h4>
+<p>Классическая ACID-транзакция, охватывающая несколько сервисов, невозможна без введения централизованного координатора (2PC/XA), что противоречит целям микросервисов: отказоустойчивости и автономности. Вместо этого применяются <strong>компенсирующие стратегии</strong>:</p>
+<ul>
+<li class="">
+<p><strong>Saga</strong> — последовательность локальных транзакций, каждая из которых сопровождается <em>компенсирующей операцией</em> на случай отката.<br/>
+<!-- -->Пример:</p>
+<ol>
+<li class=""><code>ReserveInventory</code> → в случае ошибки <code>CancelReservation</code>;</li>
+<li class=""><code>ChargePayment</code> → в случае ошибки <code>Refund</code>;</li>
+<li class=""><code>ShipOrder</code> → в случае ошибки <code>CancelShipment</code>.<br/>
+<!-- -->Saga может быть <em>хореографией</em> (каждый сервис реагирует на события) или <em>оркестрацией</em> (центральный orchestrator управляет потоком).</li>
+</ol>
+</li>
+<li class="">
+<p><strong>Outbox-паттерн</strong> — обеспечение атомарности "изменение данных + публикация события". При обновлении записи в БД в ту же транзакцию добавляется запись во внутреннюю таблицу <code>outbox</code>. Фоновый процесс забирает события из <code>outbox</code> и отправляет в шину (Kafka, RabbitMQ). Это исключает потерю событий при сбое после коммита БД, но до отправки.</p>
+</li>
+<li class="">
+<p><strong>Event Sourcing</strong> — хранение последовательности событий, его породивших. Состояние восстанавливается проигрыванием лога. Позволяет легко строить проекции, аудит, откаты — но требует дисциплины в моделировании событий и управления эволюцией схемы.</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=выбор-хранилища>Выбор хранилища<a href=#выбор-хранилища class=hash-link aria-label="Прямая ссылка на Выбор хранилища" title="Прямая ссылка на Выбор хранилища" translate=no>​</a></h4>
+<p>Микросервисы могут использовать разные типы БД — в зависимости от характера данных:</p>
+<ul>
+<li class=""><strong>Реляционные (PostgreSQL, MySQL)</strong> — для транзакционных операций с сильной целостностью;</li>
+<li class=""><strong>Документные (MongoDB, Couchbase)</strong> — для гибких, иерархических сущностей с редкими JOIN’ами;</li>
+<li class=""><strong>Ключ-значение (Redis, DynamoDB)</strong> — для кэширования, сессий, временных данных;</li>
+<li class=""><strong>Графовые (Neo4j)</strong> — для отношений, где важны связи (социальные графы, маршрутизация);</li>
+<li class=""><strong>Временные ряды (InfluxDB, TimescaleDB)</strong> — для метрик, логов, IoT-данных.</li>
+</ul>
+<p>Использование нескольких типов БД (<em>polyglot persistence</em>) оправдано только при явной необходимости. Добавление нового типа — это долгосрочное обязательство по обучению команды, мониторингу и резервному копированию.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=гарантии-консистентности>Гарантии консистентности<a href=#гарантии-консистентности class=hash-link aria-label="Прямая ссылка на Гарантии консистентности" title="Прямая ссылка на Гарантии консистентности" translate=no>​</a></h4>
+<p>В распределённых системах приходится выбирать между:</p>
+<ul>
+<li class=""><strong>Сильной консистентностью</strong> (linearizability) — дорого, плохо масштабируется;</li>
+<li class=""><strong>Eventual consistency</strong> — данные сойдутся со временем, дешевле и устойчивее.</li>
+</ul>
+<p>Архитектор должен явно определить, для каких операций допустима eventual consistency, а где нужна транзакционная изоляция. Например:</p>
+<ul>
+<li class="">Баланс счёта — strong consistency (через Saga с блокировками);</li>
+<li class="">Отображение рекомендаций — eventual consistency (данные обновляются раз в минуту).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-толстый-и-тонкий-клиент--распределение-логики>11. Толстый и тонкий клиент — распределение логики<a href=#11-толстый-и-тонкий-клиент--распределение-логики class=hash-link aria-label="Прямая ссылка на 11. Толстый и тонкий клиент — распределение логики" title="Прямая ссылка на 11. Толстый и тонкий клиент — распределение логики" translate=no>​</a></h3>
+<p>Термины "толстый" и "тонкий" клиент относятся к тому, <strong>где выполняется оркестрация бизнес-логики</strong> — на стороне клиента или сервера.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=тонкий-клиент-thin-client>Тонкий клиент (thin client)<a href=#тонкий-клиент-thin-client class=hash-link aria-label="Прямая ссылка на Тонкий клиент (thin client)" title="Прямая ссылка на Тонкий клиент (thin client)" translate=no>​</a></h4>
+<ul>
+<li class="">Выполняет только отображение и сбор ввода.</li>
+<li class="">Вся логика — на сервере: валидация, агрегация, преобразование данных.</li>
+<li class="">Коммуникация — через высокоуровневые API (например, <code>GET /dashboard-Data</code>, возвращающий готовый DTO для UI).</li>
+<li class="">Преимущества:<br/>
+<!-- -->— единая точка контроля логики;<br/>
+<!-- -->— простота поддержки нескольких клиентов (веб, мобильный, интеграции);<br/>
+<!-- -->— безопасность: клиент не видит внутренние структуры данных.</li>
+<li class="">Недостатки:<br/>
+<!-- -->— высокая нагрузка на сервер при сложных UI;<br/>
+<!-- -->— latency при множестве микровызовов ("chatty API");<br/>
+<!-- -->— сложность кэширования на клиенте.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=толстый-клиент-thick-client>Толстый клиент (thick client)<a href=#толстый-клиент-thick-client class=hash-link aria-label="Прямая ссылка на Толстый клиент (thick client)" title="Прямая ссылка на Толстый клиент (thick client)" translate=no>​</a></h4>
+<ul>
+<li class="">Содержит значительную часть логики: маршрутизацию, кэширование, предварительную валидацию, локальное состояние.</li>
+<li class="">Сервер предоставляет <em>низкоуровневые</em> интерфейсы (например, <code>GET /users?id=123</code>, <code>GET /orders?userId=123</code>).</li>
+<li class="">Клиент сам оркестрирует вызовы, агрегирует данные, управляет состоянием (например, через Redux или Zustand).</li>
+<li class="">Преимущества:<br/>
+<!-- -->— отзывчивый интерфейс (меньше round-trip’ов);<br/>
+<!-- -->— автономность (offline-режим);<br/>
+<!-- -->— гибкость UI без изменения сервера.</li>
+<li class="">Недостатки:<br/>
+<!-- -->— дублирование логики между клиентами;<br/>
+<!-- -->— сложность тестирования и поддержки;<br/>
+<!-- -->— риск утечки бизнес-логики в клиентский код.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=современный-гибрид--bff-backend-for-frontend>Современный гибрид — BFF (Backend for Frontend)<a href=#современный-гибрид--bff-backend-for-frontend class=hash-link aria-label="Прямая ссылка на Современный гибрид — BFF (Backend for Frontend)" title="Прямая ссылка на Современный гибрид — BFF (Backend for Frontend)" translate=no>​</a></h4>
+<p>Наиболее сбалансированный подход — выделение <strong>специализированных серверных шлюзов под каждый тип клиента</strong>:</p>
+<ul>
+<li class=""><code>web-bff</code> — агрегирует данные для веб-интерфейса, кэширует, адаптирует под роутинг SPA;</li>
+<li class=""><code>mobile-bff</code> — сжимает данные, оптимизирует под медленные сети, управляет версионированием API;</li>
+<li class=""><code>integration-bff</code> — предоставляет контракты для внешних партнёров.</li>
+</ul>
+<p>BFF — это <strong>архитектурная граница</strong>, защищающая внутренние сервисы от прямого воздействия клиентов. Он принадлежит команде фронтенда и развивается в её же цикле.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-коммуникация-микросервисов>12. Коммуникация микросервисов<a href=#12-коммуникация-микросервисов class=hash-link aria-label="Прямая ссылка на 12. Коммуникация микросервисов" title="Прямая ссылка на 12. Коммуникация микросервисов" translate=no>​</a></h3>
+<p>Выбор протокола и стиля взаимодействия — один из самых критичных архитектурных решений. Ошибки здесь приводят к неустойчивым, медленным, неотлаживаемым системам.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=синхронная-коммуникация>Синхронная коммуникация<a href=#синхронная-коммуникация class=hash-link aria-label="Прямая ссылка на Синхронная коммуникация" title="Прямая ссылка на Синхронная коммуникация" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>REST/HTTP</strong> — де-факто стандарт. Прост в отладке, поддерживается повсеместно.<br/>
+<!-- -->Риски:<br/>
+<!-- -->— каскадные отказы при таймаутах;<br/>
+<!-- -->— сложность обеспечения idempotency (повторный вызов не должен создавать дубль);<br/>
+<!-- -->— неявные зависимости через цепочки вызовов (<code>A → B → C → D</code>).</p>
+</li>
+<li class="">
+<p><strong>gRPC</strong> — бинарный, контрактный, с поддержкой streaming и строгой типизацией через proto-файлы.<br/>
+<!-- -->Преимущества:<br/>
+<!-- -->— высокая производительность;<br/>
+<!-- -->— генерация клиентов и серверов;<br/>
+<!-- -->— встроенный deadline propagation.<br/>
+<!-- -->Недостатки:<br/>
+<!-- -->— сложность отладки без инструментов (нужен BloomRPC или подобное);<br/>
+<!-- -->— слабая поддержка в браузере (требуется gRPC-Web + proxy).</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=асинхронная-коммуникация>Асинхронная коммуникация<a href=#асинхронная-коммуникация class=hash-link aria-label="Прямая ссылка на Асинхронная коммуникация" title="Прямая ссылка на Асинхронная коммуникация" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Событийная (event-driven)</strong> — сервис публикует событие (<code>OrderCreated</code>), другие — подписываются.<br/>
+<!-- -->Ключевые требования:<br/>
+<!-- -->— идемпотентность обработчиков (событие может прийти дважды);<br/>
+<!-- -->— управление порядком (Kafka гарантирует порядок <em>в партиции</em>, но не глобально);<br/>
+<!-- -->— отслеживание состояния обработки (checkpointing, dead-letter queues).</p>
+</li>
+<li class="">
+<p><strong>Командная (command-driven)</strong> — явная отправка команды (<code>ApproveOrder</code>) конкретному получателю. Часто реализуется поверх очередей (RabbitMQ с routing keys).</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=гибридные-схемы>Гибридные схемы<a href=#гибридные-схемы class=hash-link aria-label="Прямая ссылка на Гибридные схемы" title="Прямая ссылка на Гибридные схемы" translate=no>​</a></h4>
+<p>На практике используется комбинация:</p>
+<ul>
+<li class=""><strong>Запросы</strong> — синхронно (REST/gRPC), с жёсткими SLA по latency;</li>
+<li class=""><strong>Изменения состояния</strong> — асинхронно (события), с eventual consistency.</li>
+</ul>
+<p><em>Не каждая операция требует ответа</em>. Например, отправка уведомления — это фоновое событие.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-построение-пользовательского-интерфейса-в-распределённых-системах>13. Построение пользовательского интерфейса в распределённых системах<a href=#13-построение-пользовательского-интерфейса-в-распределённых-системах class=hash-link aria-label="Прямая ссылка на 13. Построение пользовательского интерфейса в распределённых системах" title="Прямая ссылка на 13. Построение пользовательского интерфейса в распределённых системах" translate=no>​</a></h3>
+<p>UI — это <strong>архитектурный элемент</strong>, подверженный тем же требованиям к масштабируемости и эволюции.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=проблемы-интеграции-ui-компонентов>Проблемы интеграции UI-компонентов<a href=#проблемы-интеграции-ui-компонентов class=hash-link aria-label="Прямая ссылка на Проблемы интеграции UI-компонентов" title="Прямая ссылка на Проблемы интеграции UI-компонентов" translate=no>​</a></h4>
+<p>При декомпозиции по доменам возникает вопрос: <em>как собрать единую страницу из данных нескольких сервисов?</em></p>
+<ul>
+<li class="">
+<p><strong>Микрофронтенды (Micro Frontends)</strong> — подход, при котором независимые команды поставляют фрагменты UI (например, через Web Components, Module Federation в Webpack 5 или single-spa).<br/>
+<!-- -->Преимущества:<br/>
+<!-- -->— независимое развёртывание частей интерфейса;<br/>
+<!-- -->— выбор технологий на уровне фичи (React для аналитики, Vue для админки).<br/>
+<!-- -->Риски:<br/>
+<!-- -->— дублирование зависимостей (множество копий React);<br/>
+<!-- -->— сложность обеспечения единого UX/UI-kit’а;<br/>
+<!-- -->— проблемы с общей аутентификацией и состоянием.</p>
+</li>
+<li class="">
+<p><strong>BFF для агрегации</strong> — более контролируемый подход. BFF вызывает несколько сервисов, собирает DTO, применяет преобразования (например, маппинг <code>UserDTO + OrderDTO → DashboardViewModel</code>) и отдаёт клиенту структуру, идеально подходящую под текущий рендер.</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=единый-ux-без-единой-кодовой-базы>Единый UX без единой кодовой базы<a href=#единый-ux-без-единой-кодовой-базы class=hash-link aria-label="Прямая ссылка на Единый UX без единой кодовой базы" title="Прямая ссылка на Единый UX без единой кодовой базы" translate=no>​</a></h4>
+<p>Чтобы избежать "лоскутного одеяла", вводятся:</p>
+<ul>
+<li class=""><strong>Проектирование Система</strong> — библиотека компонентов, токенов, гайдлайнов;</li>
+<li class=""><strong>Контракты интерфейсов</strong> — API, <em>UI-контракты</em>: форматы метаданных, правила локализации, семантика уведомлений;</li>
+<li class=""><strong>Сквозная идентификация</strong> — единый tracing ID, передаваемый от UI до БД.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-повышение-отказоустойчивости>14. Повышение отказоустойчивости<a href=#14-повышение-отказоустойчивости class=hash-link aria-label="Прямая ссылка на 14. Повышение отказоустойчивости" title="Прямая ссылка на 14. Повышение отказоустойчивости" translate=no>​</a></h3>
+<p>Отказоустойчивость — <strong>системный подход к управлению сбоями</strong>. Архитектор должен предполагать, что <em>всё будет ломаться</em> — и проектировать соответственно.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=основные-принципы>Основные принципы<a href=#основные-принципы class=hash-link aria-label="Прямая ссылка на Основные принципы" title="Прямая ссылка на Основные принципы" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Изоляция (bulkheading)</strong> — ограничение распространения сбоев. Пример: пулы соединений к БД выделяются по сервисам; падение одного сервиса не исчерпывает все соединения.</li>
+<li class=""><strong>Таймауты</strong> — все внешние вызовы должны иметь явный deadline. Бесконечное ожидание — худший режим отказа.</li>
+<li class=""><strong>Circuit Breaker</strong> — при превышении порога ошибок вызовы временно блокируются, возвращается fallback-ответ. Библиотеки: Polly (.NET), Resilience4j (Java), Istio (на уровне service mesh).</li>
+<li class=""><strong>Грациозная деградация (graceful degradation)</strong> — при частичном отказе система продолжает работать в ограниченном режиме.<br/>
+<!-- -->Пример:<br/>
+<!-- -->— недоступен сервис рекомендаций → показываем популярные товары из кэша;<br/>
+<!-- -->— недоступна аналитика → логируем в локальный буфер, отправляем позже.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=fallback-стратегии>Fallback-стратегии<a href=#fallback-стратегии class=hash-link aria-label="Прямая ссылка на Fallback-стратегии" title="Прямая ссылка на Fallback-стратегии" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Кэш как fallback</strong> — при ошибке чтения из БД — вернуть устаревшие данные из Redis.</li>
+<li class=""><strong>Статический ответ</strong> — "Сейчас высокая нагрузка, повторите через 5 минут".</li>
+<li class=""><strong>Очередь с отложенной обработкой</strong> — запись в локальный store + фоновая синхронизация.</li>
+</ul>
+<p>fallback не должен быть "заглушкой". Он должен быть <em>тестируемым</em> и <em>мониторинг-дружелюбным</em> (метрика <code>fallback_triggered{service="orders"}</code>).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=15-проведение-архитектурных-границ>15. Проведение архитектурных границ<a href=#15-проведение-архитектурных-границ class=hash-link aria-label="Прямая ссылка на 15. Проведение архитектурных границ" title="Прямая ссылка на 15. Проведение архитектурных границ" translate=no>​</a></h3>
+<p>Архитектурная граница — это <strong>контролируемая точка взаимодействия между компонентами</strong>, в которой явно определены:</p>
+<ul>
+<li class="">контракт (входные/выходные данные, семантика ошибок);</li>
+<li class="">допустимые зависимости (что может вызывать что);</li>
+<li class="">стратегия изменения (как вносить breaking changes без катастрофы).</li>
+</ul>
+<p>Границы <em>проводят</em> по следующим критериям:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=по-скорости-изменения>По скорости изменения<a href=#по-скорости-изменения class=hash-link aria-label="Прямая ссылка на По скорости изменения" title="Прямая ссылка на По скорости изменения" translate=no>​</a></h4>
+<p>Компоненты, меняющиеся с разной частотой, должны быть разделены. Пример:</p>
+<ul>
+<li class="">ядро доменной логики — редко (раз в квартал);</li>
+<li class="">интеграции с внешними системами — часто (еженедельно);</li>
+<li class="">UI-слои — постоянно (ежедневно).</li>
+</ul>
+<p>Если всё собрано в один модуль — любая правка интеграции требует полного регрессионного тестирования ядра.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=по-уровню-критичности>По уровню критичности<a href=#по-уровню-критичности class=hash-link aria-label="Прямая ссылка на По уровню критичности" title="Прямая ссылка на По уровню критичности" translate=no>​</a></h4>
+<p>Компоненты с разными требованиями к надёжности, безопасности и аудиту лучше изолировать:</p>
+<ul>
+<li class="">обработка платежей — строгий аудит, двухфакторная валидация, отдельная БД;</li>
+<li class="">публичный каталог товаров — кэшируемый, read-only, без персональных данных.</li>
+</ul>
+<p>Смешение приводит либо к избыточным ограничениям для некритичных частей, либо к риску в критичных.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=по-принадлежности-к-команде>По принадлежности к команде<a href=#по-принадлежности-к-команде class=hash-link aria-label="Прямая ссылка на По принадлежности к команде" title="Прямая ссылка на По принадлежности к команде" translate=no>​</a></h4>
+<p>Граница должна совпадать с <em>организационной</em> (Conway’s Law). Если две команды работают над одним модулем — возникнет координационный оверхед, merge-конфликты, компромиссы в архитектуре. Разделение по границам ответственности снижает transaction cost взаимодействия.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=инструменты-фиксации-границ>Инструменты фиксации границ<a href=#инструменты-фиксации-границ class=hash-link aria-label="Прямая ссылка на Инструменты фиксации границ" title="Прямая ссылка на Инструменты фиксации границ" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Контрактные тесты (consumer-driven contracts)</strong> — Pact, Spring Cloud Contract. Каждый потребитель фиксирует, какие поля и поведения он ожидает; провайдер проверяет совместимость до деплоя.</li>
+<li class=""><strong>Статический анализ зависимостей</strong> — ArchUnit (Java), NDepend (.NET), Deptrac (PHP). Запрещает вызовы между пакетами/слоями на уровне CI.</li>
+<li class=""><strong>Чёткие правила именования</strong> — например, <code>*.Core</code>, <code>*.Integration</code>, <code>*.UI</code> — сразу видно, к какому слою относится компонент.</li>
+</ul>
+<p>Граница — <strong>проходной пункт с досмотром</strong>. Чем строже контроль на границе, тем свободнее внутренняя реализация.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=16-повышение-уровня-абстракции-интерфейсов>16. Повышение уровня абстракции интерфейсов<a href=#16-повышение-уровня-абстракции-интерфейсов class=hash-link aria-label="Прямая ссылка на 16. Повышение уровня абстракции интерфейсов" title="Прямая ссылка на 16. Повышение уровня абстракции интерфейсов" translate=no>​</a></h3>
+<p>Интерфейс — это <strong>публичный контракт между системами</strong>. Его качество определяет долгосрочную жизнеспособность архитектуры.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=принципы-проектирования-контрактов>Принципы проектирования контрактов<a href=#принципы-проектирования-контрактов class=hash-link aria-label="Прямая ссылка на Принципы проектирования контрактов" title="Прямая ссылка на Принципы проектирования контрактов" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Семантическая насыщенность</strong> — имя операции должно отражать <em>намерение</em>, а не механизм.<br/>
+<!-- -->Плохо: <code>POST /api/v1/update</code> — что обновляется? как?<br/>
+<!-- -->Хорошо: <code>PATCH /orders/{id}/cancel</code> — ясное намерение, идемпотентно.</p>
+</li>
+<li class="">
+<p><strong>Стабильность через версионирование</strong> — в заголовках (<code>Accept: application/vnd.myapp.order+json;version=2</code>). Позволяет гибко управлять совместимостью.</p>
+</li>
+<li class="">
+<p><strong>Гипермедиа как двигатель состояния (HATEOAS)</strong> — ответ содержит данные и <em>возможные следующие действия</em>:</p>
+</li>
+</ul>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"id"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"ORD-123"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"status"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"confirmed"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"_links"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token property">"cancel"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> </span><span class="token property">"href"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/orders/ORD-123/cancel"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token property">"method"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"POST"</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      </span><span class="token property">"ship"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> </span><span class="token property">"href"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"/orders/ORD-123/ship"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token property">"method"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"POST"</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Это делает клиент устойчивым к изменениям в workflow: если <code>ship</code> недоступен, ссылка просто отсутствует.</p>
+<ul>
+<li class=""><strong>Явная обработка ошибок</strong> — <code>409 Conflict</code> с телом:</li>
+</ul>
+<div class="language-json codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-json codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"code"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"INSUFFICIENT_STOCK"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"message"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token string" style="color:rgb(195, 232, 141)">"Товара недостаточно на складе"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    </span><span class="token property">"details"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"> </span><span class="token property">"available"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">5</span><span class="token punctuation" style="color:rgb(199, 146, 234)">,</span><span class="token plain"> </span><span class="token property">"requested"</span><span class="token operator" style="color:rgb(137, 221, 255)">:</span><span class="token plain"> </span><span class="token number" style="color:rgb(247, 140, 108)">10</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Это позволяет клиенту принимать осмысленные решения (предложить альтернативу, запросить подтверждение).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=отказ-от-crud-мышления>Отказ от "CRUD-мышления"<a href=#отказ-от-crud-мышления class=hash-link aria-label='Прямая ссылка на Отказ от "CRUD-мышления"' title='Прямая ссылка на Отказ от "CRUD-мышления"' translate=no>​</a></h4>
+<p>Многие API проектируются как тонкая обёртка над таблицами: <code>GET /users</code>, <code>POST /users</code>, <code>PUT /users/123</code>. Это приводит к:</p>
+<ul>
+<li class="">утечке внутренней структуры (например, <code>password_hash</code> в ответе);</li>
+<li class="">невозможности выразить бизнес-операции (<code>transferFunds</code>, <code>mergeAccounts</code>);</li>
+<li class="">жёсткой связности клиентов с моделью данных.</li>
+</ul>
+<p>Вместо этого — <strong>операционно-ориентированные интерфейсы</strong>, отражающие действия предметной области.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=17-выделение-доменов--ddd-domain-driven-design-как-архитектурный-инструмент>17. Выделение доменов — DDD (Domain-Driven Design) как архитектурный инструмент<a href=#17-выделение-доменов--ddd-domain-driven-design-как-архитектурный-инструмент class=hash-link aria-label="Прямая ссылка на 17. Выделение доменов — DDD (Domain-Driven Design) как архитектурный инструмент" title="Прямая ссылка на 17. Выделение доменов — DDD (Domain-Driven Design) как архитектурный инструмент" translate=no>​</a></h3>
+<p>DDD — <strong>набор техник для работы со сложностью в предметной области</strong>. Его ценность для архитектора — в структурировании мышления.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ограниченный-контекст-bounded-context>Ограниченный контекст (Bounded Context)<a href=#ограниченный-контекст-bounded-context class=hash-link aria-label="Прямая ссылка на Ограниченный контекст (Bounded Context)" title="Прямая ссылка на Ограниченный контекст (Bounded Context)" translate=no>​</a></h4>
+<p>Это <em>граница смысла</em>: внутри контекста термины имеют однозначное определение, между контекстами — могут различаться.<br/>
+<!-- -->Пример:</p>
+<ul>
+<li class="">В контексте <code>Billing</code>: <code>Customer</code> — плательщик с реквизитами;</li>
+<li class="">В контексте <code>Support</code>: <code>Customer</code> — человек с историей обращений.</li>
+</ul>
+<p>Смешение контекстов ведёт к "размытой" модели, где <code>Customer</code> — гигантский класс на 200 полей.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=карта-контекстов-context-mapping>Карта контекстов (Context Mapping)<a href=#карта-контекстов-context-mapping class=hash-link aria-label="Прямая ссылка на Карта контекстов (Context Mapping)" title="Прямая ссылка на Карта контекстов (Context Mapping)" translate=no>​</a></h4>
+<p>Описывает, <em>как контексты взаимодействуют</em>:</p>
+<ul>
+<li class=""><strong>Partnership</strong> — совместная эволюция (редко);</li>
+<li class=""><strong>Shared Kernel</strong> — общая подсистема с жёсткой синхронизацией (риск);</li>
+<li class=""><strong>Customer-Supplier</strong> — один контекст зависит от другого, но поставщик учитывает потребности;</li>
+<li class=""><strong>Conformist</strong> — потребитель принимает модель поставщика как есть (например, внешний API);</li>
+<li class=""><strong>Anticorruption Layer (ACL)</strong> — адаптер, защищающий внутреннюю модель от "токсичной" внешней.<br/>
+<!-- -->Пример: интеграция с устаревшей системой — ACL преобразует её XML-выход в доменные события.</li>
+</ul>
+<p>ACL — один из самых мощных инструментов архитектора. Он позволяет:</p>
+<ul>
+<li class="">сохранить чистоту внутренней модели;</li>
+<li class="">изолировать изменения в legacy-системе;</li>
+<li class="">постепенно заменять внешние зависимости.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=стратегическое-проектирование>Стратегическое проектирование<a href=#стратегическое-проектирование class=hash-link aria-label="Прямая ссылка на Стратегическое проектирование" title="Прямая ссылка на Стратегическое проектирование" translate=no>​</a></h4>
+<p>DDD предлагает начинать с:</p>
+<ol>
+<li class=""><strong>Глоссария (Ubiquitous Language)</strong> — совместное определение терминов с экспертами предметной области;</li>
+<li class=""><strong>Выявления агрегатов</strong> — корневых сущностей с транзакционными границами (например, <code>Order</code> + <code>OrderLines</code>);</li>
+<li class=""><strong>Разделения на Core Domain / Supporting Subdomains / Generic Subdomains</strong> — чтобы сосредоточить инновации там, где они дают конкурентное преимущество.</li>
+</ol>
+<p>DDD особенно полезен при:</p>
+<ul>
+<li class="">высокой сложности бизнес-логики;</li>
+<li class="">наличии нескольких команд;</li>
+<li class="">долгосрочной поддержке системы (5+ лет).</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=18-оптимизация-кодовой-базы--не-ради-скорости-а-ради-сопровождаемости>18. Оптимизация кодовой базы — не ради скорости, а ради сопровождаемости<a href=#18-оптимизация-кодовой-базы--не-ради-скорости-а-ради-сопровождаемости class=hash-link aria-label="Прямая ссылка на 18. Оптимизация кодовой базы — не ради скорости, а ради сопровождаемости" title="Прямая ссылка на 18. Оптимизация кодовой базы — не ради скорости, а ради сопровождаемости" translate=no>​</a></h3>
+<p>Архитектор часто сталкивается с требованием "ускорить систему". Но <em>реальная</em> оптимизация — это <strong>снижение когнитивной нагрузки при чтении и изменении кода</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=принципы-читаемой-архитектуры>Принципы читаемой архитектуры<a href=#принципы-читаемой-архитектуры class=hash-link aria-label="Прямая ссылка на Принципы читаемой архитектуры" title="Прямая ссылка на Принципы читаемой архитектуры" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Явность превыше краткости</strong><br/>
+<!-- -->Плохо: <code>var r = svc.P(u, f)</code><br/>
+<!-- -->Хорошо: <code>var report = reportingService.GenerateProfitReport(user, filter)</code></p>
+</li>
+<li class="">
+<p><strong>Отсутствие "магии"</strong><br/>
+<!-- -->Автоматическая инъекция зависимостей — хорошо; автоматическая генерация SQL по именам методов — плохо (непредсказуемо, трудно отлаживать).</p>
+</li>
+<li class="">
+<p><strong>Единый стиль во всей базе</strong><br/>
+<!-- -->Единые правила:<br/>
+<!-- -->— именование методов (<code>Create</code>, <code>Update</code>, <code>Delete</code>, <code>GetByX</code>);<br/>
+<!-- -->— обработка ошибок (исключения vs <code>Result&lt;T></code>);<br/>
+<!-- -->— логирование (структурное, с ключевыми полями).</p>
+</li>
+<li class="">
+<p><strong>Документирование намерения, а не реализации</strong><br/>
+<!-- -->Комментарий <code>// Using Dijkstra for shortest path</code> бесполезен — это видно из кода.<br/>
+<!-- -->Комментарий <code>// Must use Dijkstra (not A*) because edge weights can be negative</code> — ценен.</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=инструменты-поддержки>Инструменты поддержки<a href=#инструменты-поддержки class=hash-link aria-label="Прямая ссылка на Инструменты поддержки" title="Прямая ссылка на Инструменты поддержки" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Архитектурные линтеры</strong> — проверяют соответствие слоёв, отсутствие циклических зависимостей.</li>
+<li class=""><strong>Автоматическая документация API</strong> — OpenAPI/Swagger, но с <em>описаниями</em>, а не только схемами.</li>
+<li class=""><strong>Кодовые соглашения в CI</strong> — запрет на <code>TODO</code> без issue, обязательные код-ревью для изменений в Core.</li>
+</ul>
+<p>Оптимизированная кодовая база — та, в которую <em>страшно вносить баги</em>, потому что структура подсказывает правильное решение.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=19-проектирование-для-архитектурной-целостности-и-масштабируемости>19. Проектирование для архитектурной целостности и масштабируемости<a href=#19-проектирование-для-архитектурной-целостности-и-масштабируемости class=hash-link aria-label="Прямая ссылка на 19. Проектирование для архитектурной целостности и масштабируемости" title="Прямая ссылка на 19. Проектирование для архитектурной целостности и масштабируемости" translate=no>​</a></h3>
+<p>Завершающий синтез: как спроектировать систему, которая не "развалится" через три года?</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=архитектурная-целостность--это-дисциплина>Архитектурная целостность — это дисциплина<a href=#архитектурная-целостность--это-дисциплина class=hash-link aria-label="Прямая ссылка на Архитектурная целостность — это дисциплина" title="Прямая ссылка на Архитектурная целостность — это дисциплина" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Архитектурный совет (Architecture Review Board)</strong> — регулярные сессии (раз в 2–4 недели), где рассматриваются:<!-- -->
+<ul>
+<li class="">новые границы;</li>
+<li class="">нарушения контрактов;</li>
+<li class="">технический долг с оценкой ROI ремонта.</li>
+</ul>
+</li>
+<li class=""><strong>Архитектурные решения как документы (ADR)</strong> — фиксация <em>почему</em> было принято решение, какие альтернативы отклонены и почему. Хранятся в репозитории, версионируются.</li>
+<li class=""><strong>"Архитектурный долг" в бэклоге</strong> — явные задачи: "Выделить ACL для ERP-интеграции", "Перейти с REST на gRPC для внутренних вызовов".</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=масштабируемость--это-про-измеримость>Масштабируемость — это про <em>измеримость</em><a href=#масштабируемость--это-про-измеримость class=hash-link aria-label="Прямая ссылка на масштабируемость--это-про-измеримость" title="Прямая ссылка на масштабируемость--это-про-измеримость" translate=no>​</a></h4>
+<p>Масштабируемость не проверяется "на глаз". Она выражается в:</p>
+<ul>
+<li class=""><strong>SLI (Service Level Indicators)</strong> — latency, error rate, throughput;</li>
+<li class=""><strong>SLO (Service Level Objectives)</strong> — целевые значения (например, p99 latency &lt; 200 мс при 1000 RPS);</li>
+<li class=""><strong>SLA (Service Level Agreements)</strong> — обязательства перед клиентами.</li>
+</ul>
+<p>Архитектор определяет <em>граничные условия</em>:</p>
+<blockquote>
+<p><em>Система должна поддерживать 10× рост числа пользователей без изменения архитектуры — только за счёт горизонтального масштабирования. При 100× росте допустима декомпозиция на новые микросервисы, но без переписывания ядра.</em></p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=стратегия-эволюции>Стратегия эволюции<a href=#стратегия-эволюции class=hash-link aria-label="Прямая ссылка на Стратегия эволюции" title="Прямая ссылка на Стратегия эволюции" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Стратегия "Strangler Fig"</strong> — постепенное замещение монолита: новые фичи — в новых сервисах, старые — постепенно переносятся. Обратный прокси (например, на основе Envoy) маршрутизирует запросы.</li>
+<li class=""><strong>Флаги возможностей (feature flags)</strong> — позволяют включать/выключать логику без деплоя, проводить A/B-тесты архитектурных решений.</li>
+<li class=""><strong>Архитектурные "пробы"</strong> — выделение временного сервиса на 2–3 месяца для проверки гипотезы (например, "Event Sourcing сократит время отладки на 30 %"). По итогу — решение: масштабировать или свернуть.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=20-архитектура-игровых-приложений--unity-и-unreal-engine-как-среды-проектирования>20. Архитектура игровых приложений — Unity и Unreal Engine как среды проектирования<a href=#20-архитектура-игровых-приложений--unity-и-unreal-engine-как-среды-проектирования class=hash-link aria-label="Прямая ссылка на 20. Архитектура игровых приложений — Unity и Unreal Engine как среды проектирования" title="Прямая ссылка на 20. Архитектура игровых приложений — Unity и Unreal Engine как среды проектирования" translate=no>​</a></h3>
+<p>Разработка игр — это проектирование <em>реактивных, stateful-систем с жёсткими временными ограничениями</em> (обычно 16.6 мс на кадр при 60 FPS). Архитектурные решения здесь определяются <strong>стабильностью фреймрейта, предсказуемостью поведения и возможностью итеративного дизайна</strong>.</p>
+<p>Unity и Unreal — это <em>целостные среды</em>, включающие редактор, сценографию, систему ассетов, сериализацию и runtime. Архитектура должна учитывать эту двойственность: <strong>дизайн-тайм vs runtime</strong>, <strong>редактор vs билд</strong>, <strong>Данные-driven vs code-driven</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=201-общие-архитектурные-вызовы-в-играх>20.1. Общие архитектурные вызовы в играх<a href=#201-общие-архитектурные-вызовы-в-играх class=hash-link aria-label="Прямая ссылка на 20.1. Общие архитектурные вызовы в играх" title="Прямая ссылка на 20.1. Общие архитектурные вызовы в играх" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Жёсткие временные рамки.</strong> Любая операция (физика, рендер, AI) должна укладываться в бюджет кадра. Блокирующие вызовы, неожиданные GC-паузы, непредсказуемые аллокации — недопустимы.</li>
+<li class=""><strong>Состояние как центр.</strong> Игровой мир — это гигантский граф объектов с изменяющимися свойствами. Сохранение/загрузка, откат, сетевая репликация — всё строится на управлении этим состоянием.</li>
+<li class=""><strong>Итеративность дизайна.</strong> Геймдизайнеры меняют правила в процессе тестирования. Архитектура должна позволять вносить изменения без перекомпиляции (через скрипты, конфиги, инспектор).</li>
+<li class=""><strong>Смешанная ответственность.</strong> Один объект (например, <code>Player</code>) часто объединяет физику, анимацию, UI, звук, сохранение — что в enterprise-системах было бы нарушением SRP. Компромисс здесь осознан: ради производительности и удобства работы в редакторе.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=202-unity--архитектурные-стратегии>20.2. Unity — архитектурные стратегии<a href=#202-unity--архитектурные-стратегии class=hash-link aria-label="Прямая ссылка на 20.2. Unity — архитектурные стратегии" title="Прямая ссылка на 20.2. Unity — архитектурные стратегии" translate=no>​</a></h4>
+<p>Unity поощряет компонентную модель (ECS — Entity Component System — опциональна, но рекомендуется для сложных проектов). Однако архитектор должен осознанно выбирать уровень абстракции.</p>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=уровни-проектирования-в-unity>Уровни проектирования в Unity<a href=#уровни-проектирования-в-unity class=hash-link aria-label="Прямая ссылка на Уровни проектирования в Unity" title="Прямая ссылка на Уровни проектирования в Unity" translate=no>​</a></h5>
+<ol>
+<li class="">
+<p><strong>MonoBehaviour-уровень (наивный подход)</strong><br/>
+<!-- -->Прямое наследование <code>MonoBehaviour</code>, логика в <code>Update()</code>, <code>OnCollisionEnter()</code> и т.п.<br/>
+<em>Риски</em>:<br/>
+<!-- -->— тесная связь с движком (нельзя unit-тестировать без <code>PlayMode</code>);<br/>
+<!-- -->— трудности с рефакторингом (логика размазана по <code>Start</code>, <code>Update</code>, <code>FixedUpdate</code>);<br/>
+<!-- -->— проблемы с жизненным циклом (активация/деактивация объектов вызывает неожиданные побочные эффекты).</p>
+</li>
+<li class="">
+<p><strong>Сервисный уровень (Application Layer)</strong><br/>
+<!-- -->Вынос бизнес-логики в обычные C#-классы (<code>GameStateManager</code>, <code>InventorySystem</code>), которые инкапсулируют правила и не знают о <code>GameObject</code>. <code>MonoBehaviour</code> становится <em>адаптером</em> между движком и доменом:</p>
+</li>
+</ol>
+<div class="language-csharp codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-csharp codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token keyword" style=font-style:italic>public</span><span class="token plain"> </span><span class="token keyword" style=font-style:italic>class</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">PlayerController</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">:</span><span class="token plain"> </span><span class="token type-list class-name" style="color:rgb(255, 203, 107)">MonoBehaviour</span><span class="token plain"> </span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">       </span><span class="token keyword" style=font-style:italic>private</span><span class="token plain"> </span><span class="token class-name" style="color:rgb(255, 203, 107)">PlayerLogic</span><span class="token plain"> _logic</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">       </span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">       </span><span class="token return-type class-name keyword" style="color:rgb(255, 203, 107);font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">Awake</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=></span><span class="token plain"> _logic </span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token plain"> </span><span class="token keyword" style=font-style:italic>new</span><span class="token plain"> </span><span class="token constructor-invocation class-name" style="color:rgb(255, 203, 107)">PlayerLogic</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">       </span><span class="token return-type class-name keyword" style="color:rgb(255, 203, 107);font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">Update</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=></span><span class="token plain"> _logic</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">Update</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">Input</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">GetAxis</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">"Horizontal"</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">       </span><span class="token return-type class-name keyword" style="color:rgb(255, 203, 107);font-style:italic">void</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">OnCollisionEnter</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token class-name" style="color:rgb(255, 203, 107)">Collision</span><span class="token plain"> c</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token operator" style="color:rgb(137, 221, 255)">=></span><span class="token plain"> _logic</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token function" style="color:rgb(130, 170, 255)">OnHit</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token plain">c</span><span class="token punctuation" style="color:rgb(199, 146, 234)">.</span><span class="token plain">relativeVelocity</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">   </span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><br/></div></code></pre></div></div>
+<p>Преимущества:<br/>
+<!-- -->— тестируемость;<br/>
+<!-- -->— возможность переиспользовать логику в серверной части (например, для authoritative server в мультиплеере);<br/>
+<!-- -->— чёткое разделение "что" и "как".</p>
+<ol start=3>
+<li class=""><strong>ECS / DOTS (Данные-Oriented Tech Stack)</strong><br/>
+<!-- -->Для high-performance сценариев (тысячи сущностей, симуляции):<!-- -->
+<ul>
+<li class=""><strong>Entities</strong> — идентификаторы без поведения;</li>
+<li class=""><strong>Components</strong> — чистые данные (<code>struct</code>);</li>
+<li class=""><strong>Systems</strong> — обрабатывают группы компонентов (<code>JobComponentSystem</code>).<br/>
+<!-- -->Архитектурные последствия:<br/>
+<!-- -->— отказ от OOP в пользу Данные-oriented Проектирование;<br/>
+<!-- -->— сложность отладки (отсутствие привычных ссылок, объектов);<br/>
+<!-- -->— необходимость явного управления жизненным циклом (<code>EntityManager</code>).</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=ключевые-архитектурные-практики-в-unity>Ключевые архитектурные практики в Unity<a href=#ключевые-архитектурные-практики-в-unity class=hash-link aria-label="Прямая ссылка на Ключевые архитектурные практики в Unity" title="Прямая ссылка на Ключевые архитектурные практики в Unity" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>Событийная система поверх UnityEvent или C# events</strong> — избегать прямых вызовов <code>GetComponent&lt;Other>().DoSomething()</code> между объектами. Вместо этого — <code>event Action&lt;Vector3> OnPositionChanged</code>.</li>
+<li class=""><strong>Инъекция зависимостей (Zenject, VContainer)</strong> — позволяет собирать иерархии объектов без <code>FindObjectOfType</code>, поддерживать тестируемость.</li>
+<li class=""><strong>Данные-Oriented конфигурации</strong> — ScriptableObject как immutable-конфиги (<code>WeaponStats</code>, <code>LevelConfig</code>). Они сериализуются в редакторе, проверяются статически, легко версионируются.</li>
+<li class=""><strong>Feature Flags для баланса</strong> — выносить в настроечные ассеты, управляемые через Addressables.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=203-unreal-engine--архитектурные-особенности>20.3. Unreal Engine — архитектурные особенности<a href=#203-unreal-engine--архитектурные-особенности class=hash-link aria-label="Прямая ссылка на 20.3. Unreal Engine — архитектурные особенности" title="Прямая ссылка на 20.3. Unreal Engine — архитектурные особенности" translate=no>​</a></h4>
+<p>Unreal сочетает C++ и Blueprints, что создаёт уникальный контекст: <strong>архитектура — это договорённость между программистами и дизайнерами</strong>.</p>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=основные-уровни>Основные уровни<a href=#основные-уровни class=hash-link aria-label="Прямая ссылка на Основные уровни" title="Прямая ссылка на Основные уровни" translate=no>​</a></h5>
+<ol>
+<li class="">
+<p><strong>C++ Core Layer</strong><br/>
+<!-- -->Критически важная логика: сетевая репликация, сохранение, математика, low-level взаимодействие. Пишется на C++ с использованием UClass, UPROPERTY, RPC-макросов.<br/>
+<!-- -->Принципы:<br/>
+<!-- -->— <code>UCLASS()</code> — только для того, что должно сериализоваться или реплицироваться;<br/>
+<!-- -->— бизнес-логику выносить в обычные классы (<code>FGameRules</code>), не наследующие <code>UObject</code>;<br/>
+<!-- -->— избегать "Blueprint-нативных" методов (<code>UFUNCTION(BlueprintCallable)</code>) без необходимости — они создают жёсткую связь.</p>
+</li>
+<li class="">
+<p><strong>Blueprint Layer</strong><br/>
+<!-- -->Визуальное программирование для геймплея, UI, анимации. Архитектор должен определить:<br/>
+<!-- -->— <em>что может делаться в Blueprints</em>, а что — только в C++;<br/>
+<!-- -->— как обеспечить совместимость при изменении интерфейсов (например, через <code>Version</code> у <code>UBlueprint</code> и миграции).</p>
+</li>
+<li class="">
+<p><strong>Data Assets (Данные-Driven Проектирование)</strong><br/>
+<code>UDataAsset</code> — аналог ScriptableObject в Unity. Примеры: <code>UCharacterClassData</code>, <code>ULevelRewardTable</code>.<br/>
+<!-- -->Преимущества:<br/>
+<!-- -->— геймдизайнеры меняют баланс без компиляции;<br/>
+<!-- -->— единая точка истины для параметров;<br/>
+<!-- -->— поддержка локализации через FText.</p>
+</li>
+</ol>
+<hr/>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=архитектурные-паттерны-в-unreal>Архитектурные паттерны в Unreal<a href=#архитектурные-паттерны-в-unreal class=hash-link aria-label="Прямая ссылка на Архитектурные паттерны в Unreal" title="Прямая ссылка на Архитектурные паттерны в Unreal" translate=no>​</a></h5>
+<ul>
+<li class="">
+<p><strong>Gameplay Ability System (GAS)</strong> — официальный фреймворк для сложных взаимодействий (умения, эффекты, стейты). Он вводит:<br/>
+<!-- -->— <code>Ability</code> — конкретное действие (<code>FireGun</code>, <code>Dash</code>);<br/>
+<!-- -->— <code>AttributeSet</code> — параметры (<code>Health</code>, <code>Stamina</code>);<br/>
+<!-- -->— <code>GameplayEffect</code> — модификаторы (<code>+10 Damage for 5 sec</code>).<br/>
+<!-- -->GAS — это <em>архитектурный каркас</em>, а не просто плагин. Его внедрение требует дисциплины, но даёт:<br/>
+<!-- -->— предсказуемую репликацию;<br/>
+<!-- -->— отладку через Gameplay Debugger;<br/>
+<!-- -->— композицию эффектов без "спагетти-кода".</p>
+</li>
+<li class="">
+<p><strong>Subsystems</strong> — глобальные сервисы (<code>UGameStateSubsystem</code>, <code>UAnalyticsSubsystem</code>). Позволяют избежать синглтонов и <code>GetWorld()->GetSubsystem&lt;T>()</code>.</p>
+</li>
+<li class="">
+<p><strong>Plugin-Based Architecture</strong> — вынесение функционала в плагины (<code>OnlineSubsystem</code>, <code>ProceduralMeshPlugin</code>). Это:<br/>
+<!-- -->— изоляция зависимостей;<br/>
+<!-- -->— возможность отключения функций под билд (Mobile vs PC);<br/>
+<!-- -->— чистый core проекта.</p>
+</li>
+</ul>
+<hr/>
+<blockquote>
+<p><strong>Важное замечание по кроссплатформенности</strong>:<br/>
+<!-- -->В играх архитектурные границы часто совпадают с <em>платформенными модулями</em>. Например:</p>
+<ul>
+<li class=""><code>Core</code> — логика, не зависящая от платформы;</li>
+<li class=""><code>Platform.Android</code> / <code>Platform.iOS</code> — нативные вызовы;</li>
+<li class=""><code>Input.Legacy</code> / <code>Input.Enhanced</code> — разные системы ввода.<br/>
+<!-- -->Такая структура позволяет легко добавлять поддержку новых ОС без пересборки всей игры.</li>
+</ul>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-организация-кодовой-базы--группировка-по-файлам-папкам-зонам-ответственности>21. Организация кодовой базы — группировка по файлам, папкам, зонам ответственности<a href=#21-организация-кодовой-базы--группировка-по-файлам-папкам-зонам-ответственности class=hash-link aria-label="Прямая ссылка на 21. Организация кодовой базы — группировка по файлам, папкам, зонам ответственности" title="Прямая ссылка на 21. Организация кодовой базы — группировка по файлам, папкам, зонам ответственности" translate=no>​</a></h3>
+<p>Структура файловой системы — это <strong>видимое проявление архитектуры</strong>. Плохая организация — первый признак деградации: "а где у нас обработка заказов?", "почему этот файл в <code>Utils</code>, но он связан только с отчётами?".</p>
+<p>Принцип: <strong>файловая структура должна отражать архитектурные границы</strong>, а не технические категории.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=211-анти-паттерны-организации-кода>21.1. Анти-паттерны организации кода<a href=#211-анти-паттерны-организации-кода class=hash-link aria-label="Прямая ссылка на 21.1. Анти-паттерны организации кода" title="Прямая ссылка на 21.1. Анти-паттерны организации кода" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>По типам файлов</strong></li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  /Models</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Views</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Controllers</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Services</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /DTOs</span><br/></div></code></pre></div></div>
+<p>Проблема: чтобы внести фичу "оплата", нужно прыгать между папками. Нет локальности изменений.</p>
+<ul>
+<li class=""><strong>По технологиям</strong></li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">  /Database</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /API</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /UI</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Tests</span><br/></div></code></pre></div></div>
+<p>Смешивает слои и функционал. Код "экспорта в PDF" может быть в <code>/Services</code>, <code>/Utils</code>, <code>/Jobs</code> — неясно, где искать.</p>
+<ul>
+<li class=""><strong>По историческим причинам</strong><br/>
+<code>/Legacy</code>, <code>/OldIntegration</code>, <code>/V2</code> — технический долг, закреплённый в файловой системе.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=212-feature-based-domain-driven-структура>21.2. Feature-Based (Domain-Driven) структура<a href=#212-feature-based-domain-driven-структура class=hash-link aria-label="Прямая ссылка на 21.2. Feature-Based (Domain-Driven) структура" title="Прямая ссылка на 21.2. Feature-Based (Domain-Driven) структура" translate=no>​</a></h4>
+<p>Код группируется по <em>бизнес-возможностям</em> или <em>ограниченным контекстам</em>:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">/src</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Core                # Ядро: доменные модели, правила (без зависимостей от фреймворков)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Entities</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /ValueObjects</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /DomainEvents</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Specifications</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Application         # Сценарии использования: команды, запросы, обработчики</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Orders</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      CreateOrderCommand.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      CreateOrderHandler.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      OrderDto.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Payments</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      ProcessPaymentCommand.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      ...</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Infrastructure      # Реализация: БД, интеграции, внешние сервисы</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Persistence</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /EF              # Entity Framework</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Dapper</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /ExternalServices</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /ERPClient</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /NotificationService</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Presentation        # UI-слои (может быть несколько)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /WebApi</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Controllers</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Swagger</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /BlazorApp</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /MobileApp (отдельный проект)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Shared              # Межконтекстные примитивы (осторожно!)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Kernel</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      Result.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      EntityId.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Common</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      DateTimeProvider.cs</span><br/></div></code></pre></div></div>
+<p>Преимущества:</p>
+<ul>
+<li class=""><strong>Локальность изменений</strong>: фича "отмена заказа" — только в <code>/Orders</code>;</li>
+<li class=""><strong>Ясность границ</strong>: <code>Core</code> не может ссылаться на <code>Infrastructure</code>;</li>
+<li class=""><strong>Поддержка модульности</strong>: <code>/Orders</code> можно вынести в отдельный проект/репозиторий.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=213-правила-именования-и-видимости>21.3. Правила именования и видимости<a href=#213-правила-именования-и-видимости class=hash-link aria-label="Прямая ссылка на 21.3. Правила именования и видимости" title="Прямая ссылка на 21.3. Правила именования и видимости" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Интерфейсы и реализации</strong> — в одном файле или рядом:<br/>
+<code>IOrderRepository.cs</code>, <code>OrderRepository_EF.cs</code>, <code>OrderRepository_Mock.cs</code>.</li>
+<li class=""><strong>Внутренние классы</strong> — <code>internal</code>, а не <code>public</code>; используют <code>InternalsVisibleTo</code> только для тестов.</li>
+<li class=""><strong>Файлы — по одному классу (кроме вложенных, DTO, enums)</strong> — упрощает поиск и merge.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=214-инструменты-поддержки-структуры>21.4. Инструменты поддержки структуры<a href=#214-инструменты-поддержки-структуры class=hash-link aria-label="Прямая ссылка на 21.4. Инструменты поддержки структуры" title="Прямая ссылка на 21.4. Инструменты поддержки структуры" translate=no>​</a></h4>
+<ul>
+<li class=""><strong><code>.editorconfig</code></strong> — единые правила отступов, кодировки, окончаний строк.</li>
+<li class=""><strong><code>Directory.Build.props</code> (MSBuild)</strong> — централизованные настройки проектов (.NET).</li>
+<li class=""><strong><code>deps.json</code> / <code>project-graph</code></strong> — визуализация зависимостей между модулями (NDepend, <code>dotnet list dependencies</code>).</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">dotnet list dependencies</span><br/></div></code></pre></div></div>
+<ul>
+<li class=""><strong>Pre-commit hooks</strong> — запрет коммитов с <code>TODO</code>, непроверенных миграций, нарушений структуры.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=215-для-игровых-проектов--адаптированная-структура>21.5. Для игровых проектов — адаптированная структура<a href=#215-для-игровых-проектов--адаптированная-структура class=hash-link aria-label="Прямая ссылка на 21.5. Для игровых проектов — адаптированная структура" title="Прямая ссылка на 21.5. Для игровых проектов — адаптированная структура" translate=no>​</a></h4>
+<p>В Unity/Unreal файловая организация тесно связана с ассетами, поэтому используется гибрид:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">/Assets</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Scripts</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Core</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Domain</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        PlayerState.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        GameState.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Systems</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        MovementSystem.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        CombatSystem.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Application</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Features</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        /Inventory</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">          InventoryController.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">          ItemData.cs (ScriptableObject)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">    /Infrastructure</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Save</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        SaveService.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">      /Networking</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">        PhotonAdapter.cs</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Plugins          # Внешние SDK (не в /Scripts!)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Resources        # Только то, что требует Resources.Load (минимизировать)</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Addressables     # Для динамической загрузки</span><br/></div></code></pre></div></div>
+<p>В Unreal — через Content Folders и Plugins:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#bfc7d5;--prism-background-color:#292d3e><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#bfc7d5;background-color:#292d3e><code class=codeBlockLines_e6Vv><div class=token-line style=color:#bfc7d5><span class="token plain">/Source</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /MyGame.Core      # C++ core</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /MyGame.Gameplay  # GAS, Abilities</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /MyGame.UI        # UMG, ViewModels</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  </span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">/Plugins</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /Analytics</span><br/></div><div class=token-line style=color:#bfc7d5><span class="token plain">  /LootboxSystem</span><br/></div></code></pre></div></div>
+<p>Ключевой принцип: <strong>ассеты и код — единая система</strong>. Если <code>WeaponData.asset</code> используется только в <code>CombatSystem</code>, он должен находиться рядом (<code>/Combat/WeaponData.asset</code>), а не в <code>/Data/Weapons</code>.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=что-запомнить>Что запомнить<a href=#что-запомнить class=hash-link aria-label="Прямая ссылка на Что запомнить" title="Прямая ссылка на Что запомнить" translate=no>​</a></h2>
+<p>Границы важнее модного стека. Монолит с дисциплиной модулей часто устойчивее "зоопарка" микросервисов без observability.</p>
+<p><strong>Дальше:</strong> <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117>117.md</a> · <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1116>NFR</a> · <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/117>API</a> · <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118>микросервисы</a> · <a class="" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998>итоги</a></p>
+<hr/></div><!--$--><!--/$--><!--$--><!--/$--><!--$?--><template id=B:0></template><div class=it-demo><div class=it-demo__skeleton aria-hidden=true></div></div><!--/$--><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-tags-row"><div class=col><b>Теги:</b><ul class="tags_jXut padding--none margin-left--sm"><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/analytic>analytic</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/developer>developer</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/architector>architector</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/required>required</a><li class=tag_QGVx><a rel=tag class="tag_zVej tagRegular_sFm0" href=/tags/beginner>beginner</a></ul></div></div><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"></div><div class="col lastUpdated_JAkA"><span class=theme-last-updated>Последнее обновление<!-- --> <b><time datetime=2026-06-04T18:15:38.000Z itemprop=dateModified>4 июн. 2026 г.</time></b></span></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2><div class=pagination-nav__sublabel>Предыдущая страница</div><div class=pagination-nav__label>Масштабируемость и параллелизм в системном проектировании</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998><div class=pagination-nav__sublabel>Следующая страница</div><div class=pagination-nav__label>Проектирование и архитектура — итоги</div></a></nav></div></div><div class="col docSidebarCol docSidebarCol_CrW6"><div class=docSidebarInner_zs2o><div class=tocPanelHeader_icbR><span class=tocPanelTitle_EECo>Содержание</span><button type=button class=tocCollapseBtn_nUtL aria-label="Скрыть содержание" title=Скрыть><svg class=tocControlIcon_gIkc viewBox="0 0 16 16" aria-hidden=true><path d="M6 4.5 9.5 8 6 11.5" fill=none stroke=currentColor stroke-width=1.5 stroke-linecap=round stroke-linejoin=round /></svg></button></div><div class=chapterProgress_wnXh><div class=chapterProgressHeader_VOPL><span class=chapterProgressLabel_Y16l>Освоение главы</span><span class=chapterProgressPercent_XqHg>0<!-- -->%</span></div><div class=chapterProgressBar_M8rs><div class=chapterProgressBarInner_L6BU style=width:0%></div></div></div><div class=docTocScroll_rUD3><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#практика-архитектурного-проектирования-1 class="table-of-contents__link toc-highlight">Практика архитектурного проектирования</a><li><a href=#практический-маршрут-применения-статьи-на-проекте class="table-of-contents__link toc-highlight">Практический маршрут применения статьи на проекте</a><ul><li><a href=#шаг-1--зафиксировать-исходное-состояние class="table-of-contents__link toc-highlight">Шаг 1 — зафиксировать исходное состояние</a><li><a href=#шаг-2--выделить-2-3-целевых-архитектурных-улучшения class="table-of-contents__link toc-highlight">Шаг 2 — выделить 2-3 целевых архитектурных улучшения</a><li><a href=#шаг-3--внедрять-поэтапно-с-измеримыми-критериями class="table-of-contents__link toc-highlight">Шаг 3 — внедрять поэтапно с измеримыми критериями</a></ul><li><a href=#шаблон-мини-adr-для-команды class="table-of-contents__link toc-highlight">Шаблон мини-ADR для команды</a><li><a href=#чек-лист-внедрения-архитектурного-изменения class="table-of-contents__link toc-highlight">Чек-лист внедрения архитектурного изменения</a><ul><li><a href=#что-такое-архитектурная-практика class="table-of-contents__link toc-highlight">Что такое архитектурная практика</a><li><a href=#1-компоненты-монолита-двухзвенная-и-трёхзвенная-архитектура class="table-of-contents__link toc-highlight">1. Компоненты монолита. Двухзвенная и трёхзвенная архитектура</a><li><a href=#2-плюсы-и-минусы-монолитной-архитектуры class="table-of-contents__link toc-highlight">2. Плюсы и минусы монолитной архитектуры</a><li><a href=#3-понятие-software-architect-и-архитектурной-ответственности class="table-of-contents__link toc-highlight">3. Понятие software architect и архитектурной ответственности</a><li><a href=#4-архитектурные-паттерны-не-путать-с-gof class="table-of-contents__link toc-highlight">4. Архитектурные паттерны (не путать с GoF)</a><li><a href=#5-tldr-как-инструмент-архитектурного-мышления class="table-of-contents__link toc-highlight">5. TL;DR как инструмент архитектурного мышления</a><li><a href=#6-шардирование--управление-масштабом-данных class="table-of-contents__link toc-highlight">6. Шардирование — управление масштабом данных</a><li><a href=#7-mv-паттерны--разделение-ответственности-на-уровне-представления class="table-of-contents__link toc-highlight">7. MV* паттерны — разделение ответственности на уровне представления</a><li><a href=#8-cqrs--разделение-команд-и-запросов class="table-of-contents__link toc-highlight">8. CQRS — разделение команд и запросов</a><li><a href=#9-декомпозиция-монолита--модульность-и-микросервисы class="table-of-contents__link toc-highlight">9. Декомпозиция монолита — модульность и микросервисы</a><li><a href=#10-управление-данными-в-микросервисной-архитектуре class="table-of-contents__link toc-highlight">10. Управление данными в микросервисной архитектуре</a><li><a href=#11-толстый-и-тонкий-клиент--распределение-логики class="table-of-contents__link toc-highlight">11. Толстый и тонкий клиент — распределение логики</a><li><a href=#12-коммуникация-микросервисов class="table-of-contents__link toc-highlight">12. Коммуникация микросервисов</a><li><a href=#13-построение-пользовательского-интерфейса-в-распределённых-системах class="table-of-contents__link toc-highlight">13. Построение пользовательского интерфейса в распределённых системах</a><li><a href=#14-повышение-отказоустойчивости class="table-of-contents__link toc-highlight">14. Повышение отказоустойчивости</a><li><a href=#15-проведение-архитектурных-границ class="table-of-contents__link toc-highlight">15. Проведение архитектурных границ</a><li><a href=#16-повышение-уровня-абстракции-интерфейсов class="table-of-contents__link toc-highlight">16. Повышение уровня абстракции интерфейсов</a><li><a href=#17-выделение-доменов--ddd-domain-driven-design-как-архитектурный-инструмент class="table-of-contents__link toc-highlight">17. Выделение доменов — DDD (Domain-Driven Design) как архитектурный инструмент</a><li><a href=#18-оптимизация-кодовой-базы--не-ради-скорости-а-ради-сопровождаемости class="table-of-contents__link toc-highlight">18. Оптимизация кодовой базы — не ради скорости, а ради сопровождаемости</a><li><a href=#19-проектирование-для-архитектурной-целостности-и-масштабируемости class="table-of-contents__link toc-highlight">19. Проектирование для архитектурной целостности и масштабируемости</a><li><a href=#20-архитектура-игровых-приложений--unity-и-unreal-engine-как-среды-проектирования class="table-of-contents__link toc-highlight">20. Архитектура игровых приложений — Unity и Unreal Engine как среды проектирования</a><li><a href=#21-организация-кодовой-базы--группировка-по-файлам-папкам-зонам-ответственности class="table-of-contents__link toc-highlight">21. Организация кодовой базы — группировка по файлам, папкам, зонам ответственности</a></ul><li><a href=#что-запомнить class="table-of-contents__link toc-highlight">Что запомнить</a></ul></div></div></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Энциклопедия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/basics>Основы</a><li class=footer__item><a class=footer__link-item href=/section/system-network>Система и сеть</a><li class=footer__item><a class=footer__link-item href=/section/data-markup>Данные и разметка</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Инструменты и практика</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/section/code-dev>Код и разработка</a><li class=footer__item><a class=footer__link-item href=/section/infra-security>Инфраструктура и безопасность</a><li class=footer__item><a class=footer__link-item href=/lab/intro>Лаборатория</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Контекст и рефлексия</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/context/intro>Контекст</a><li class=footer__item><a class=footer__link-item href=/philosophy/intro>Философия</a><li class=footer__item><a class=footer__link-item href=/glossary/intro>Глоссарий</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>О проекте</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/about/project>О проекте</a><li class=footer__item><a class=footer__link-item href=/about/collections>Тематические подборки</a><li class=footer__item><a class=footer__link-item href=/about/manifest>Манифест и правила</a><li class=footer__item><a class=footer__link-item href=/about/author#support>Поддержать проект</a><li class=footer__item><a class=footer__link-item href=/about/author>Об авторе</a><li class=footer__item><a href=https://github.com/spirzen/it-knowledge-base target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Тагиров Тимур Владиславович. Все права защищены.</div></div></div></footer><script>requestAnimationFrame(function(){$RT=performance.now()})</script><div hidden id=S:0><section class=seeAlso_ZSca aria-labelledby=article-see-also-heading><h2 id=article-see-also-heading class=heading_YKVr>См. также</h2><p class=hint_BI3b>Другие статьи этого же раздела в боковом меню (как на странице "О разделе").<section class="row cardList_dNQM"><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/проектирование><h2 class="theme-doc-card-heading cardTitle_mcqP" title=Проектирование><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Проектирование</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="52 элемента">52 элемента</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/category/паттерны-проектирования><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Паттерны проектирования"><span class="theme-doc-card-icon cardTitleIcon_GcdP">🗃</span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Паттерны проектирования</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="35 элементов">35 элементов</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Основы проектирования и архитектуры программного обеспечения"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Основы проектирования и архитектуры программного обеспечения</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Обычно проектирование применяется к каким-то планам, схемам, моделям или расчётам, которые описывают будущий объект, включая характеристики, функции, инженерные решения.">Обычно проектирование применяется к каким-то планам, схемам, моделям или расчётам, которые описывают будущий объект, включая характеристики, функции, инженерные решения.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/101><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Архитектурные стили и их применение"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Архитектурные стили и их применение</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Архитектурные решения, касающиеся распределения компонентов и организации их взаимодействия, определяют фундаментальные свойства системы: её масштабируемость, отказоустойчивость, сложность.">Архитектурные решения, касающиеся распределения компонентов и организации их взаимодействия, определяют фундаментальные свойства системы: её масштабируемость, отказоустойчивость, сложность.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/102><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Стили внутренней организации кода"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Стили внутренней организации кода</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Это достигается через инверсию зависимостей — принцип, согласно которому высокоуровневые модули не должны зависеть от низкоуровневых; оба должны зависеть от абстракций.">Это достигается через инверсию зависимостей — принцип, согласно которому высокоуровневые модули не должны зависеть от низкоуровневых; оба должны зависеть от абстракций.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/103><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Принципы компонентно-ориентированной архитектуры"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Принципы компонентно-ориентированной архитектуры</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Компонентно-ориентированная архитектура - согласованность версий общих модулей и управление зависимостями между сервисами.">Компонентно-ориентированная архитектура - согласованность версий общих модулей и управление зависимостями между сервисами.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/104><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Стратегии декомпозиции монолитных систем"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Стратегии декомпозиции монолитных систем</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title='Как резать монолит без "большого взрыва": пять вопросов перед стартом, анализ, Strangler, DDD-контексты, данные, саги и метрики успеха.'>Как резать монолит без "большого взрыва": пять вопросов перед стартом, анализ, Strangler, DDD-контексты, данные, саги и метрики успеха.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/105><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Влияние инфраструктуры на архитектурные решения"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Влияние инфраструктуры на архитектурные решения</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Инфраструктура — это множество решений, инкапсулированных в сервисы, каждое из которых накладывает ограничения и открывает возможности.">Инфраструктура — это множество решений, инкапсулированных в сервисы, каждое из которых накладывает ограничения и открывает возможности.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/112><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Классификация типов классов в объектно-ориентированном проектировании"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Классификация типов классов в объектно-ориентированном проектировании</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Классификация типов классов в ООП - семантика имён, роли объектов и разделение ответственности в проекте.">Классификация типов классов в ООП - семантика имён, роли объектов и разделение ответственности в проекте.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/113><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Построение систем на основе классов и объектов"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Построение систем на основе классов и объектов</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Построение систем на классах и объектах - модель предметной области, границы ответственности и связи между сущностями.">Построение систем на классах и объектах - модель предметной области, границы ответственности и связи между сущностями.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/114><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Доменная модель"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Доменная модель</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Доменная модель - как отразить предметную область в ПО, выделить сущности и зафиксировать правила бизнес-логики.">Доменная модель - как отразить предметную область в ПО, выделить сущности и зафиксировать правила бизнес-логики.</p></a></article><article class="docCardListItem_W1sv col col--6"><a class="card padding--lg theme-doc-card-container cardContainer_KhuF" href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141><h2 class="theme-doc-card-heading cardTitle_mcqP" title="Типы классов в DDD"><span class="theme-doc-card-icon cardTitleIcon_GcdP"><span class="badge_Pq54 badgeMuted_XdFk badgeSm_CPs0" aria-hidden=true title=Проектирование>DS</span></span><span class="text--truncate theme-doc-card-title cardTitleText_nuEl">Типы классов в DDD</span></h2><p class="text--truncate theme-doc-card-description cardDescription_L2fP" title="Тактические строительные блоки Domain-Driven Design: Entity, Value Object, Aggregate Root, доменные сервисы, репозитории, фабрики и события — какие классы в каком слое и чем они отличаются от DTO и контроллеров.">Тактические строительные блоки Domain-Driven Design: Entity, Value Object, Aggregate Root, доменные сервисы, репозитории, фабрики и события — какие классы в каком слое и чем они отличаются от DTO и контроллеров.</p></a></article></section><p class=moreLink_hObG><a href=/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro>Ещё <!-- -->11<!-- --> <!-- -->статей<!-- --> <!-- -->в разделе</a></section></div><script>$RB=[],$RV=function(e){$RT=performance.now();for(var n=0;n<e.length;n+=2){var r=e[n],t=e[n+1];null!==t.parentNode&&t.parentNode.removeChild(t);var i=r.parentNode;if(i){var o=r.previousSibling,a=0;do{if(r&&8===r.nodeType){var l=r.data;if("/$"===l||"/&"===l)if(0===a)break;else a--;else"$"!==l&&"$?"!==l&&"$~"!==l&&"$!"!==l&&"&"!==l||a++}l=r.nextSibling,i.removeChild(r),r=l}while(r);for(;t.firstChild;)i.insertBefore(t.firstChild,r);o.data="$",o._reactRetry&&requestAnimationFrame(o._reactRetry)}}e.length=0},($RC=function(e,n){(n=document.getElementById(n))&&((e=document.getElementById(e))?(e.previousSibling.data="$~",$RB.push(e,n),2===$RB.length&&("number"!=typeof $RT?requestAnimationFrame($RV.bind(null,$RB)):(e=performance.now(),setTimeout($RV.bind(null,$RB),2300>e&&2e3<e?2300-e:$RT+300-e)))):n.parentNode.removeChild(n))})("B:0","S:0")</script></div></body>
