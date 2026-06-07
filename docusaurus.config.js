@@ -79,6 +79,13 @@ const isWindowsDev = process.platform === 'win32' && process.env.NODE_ENV !== 'p
 const useFasterBundler =
   process.env.IT_DOCUSAURUS_FASTER === '1' || !isWindowsDev;
 
+/** Локально: http://localhost:4321; прод: https://code.spirzen.ru */
+const codeExamplesUrl =
+  process.env.IT_CODE_EXAMPLES_URL ??
+  (process.env.NODE_ENV === 'production'
+    ? 'https://code.spirzen.ru'
+    : 'http://localhost:4321');
+
 module.exports = {
   title: 'Вселенная IT',
   tagline: 'Единый и ультимативный гайд по IT',
@@ -92,6 +99,10 @@ module.exports = {
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
+
+  customFields: {
+    codeExamplesUrl,
+  },
 
   clientModules: [
     require.resolve('./src/clientModules/itDesignThemeInit.js'),

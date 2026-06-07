@@ -3,28 +3,54 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      # ubuntu-latest ≈ 7 GB RAM; локальный build просит до 16 GB heap — добавляем swap.
+      - name: Add swap for large Docusaurus build
+        run: |
+          sudo fallocate -l 10G /swapfile
+          sudo chmod 600 /swapfile
+          sudo mkswap /swapfile
+          sudo swapon /swapfile
+          free -h
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: npm
+
       - run: npm ci
       - run: rm -rf .docusaurus .cache build
       - run: npm run build
-      - uses: peaceiris/actions-gh-pages@v4
+        env:
+          NODE_OPTIONS: --max-old-space-size=14336
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          publish_branch: gh-pages
-          force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
+          path: build
+
+      - id: deployment
+        uses: actions/deploy-pages@v4
