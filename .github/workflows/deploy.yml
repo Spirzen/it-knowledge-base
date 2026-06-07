@@ -26,13 +26,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      # ubuntu-latest ≈ 7 GB RAM; локальный build просит до 16 GB heap — добавляем swap.
+      # ubuntu-latest ≈ 7 GB RAM; на runner уже может быть /swapfile — свой файл в /mnt.
       - name: Add swap for large Docusaurus build
         run: |
-          sudo fallocate -l 10G /swapfile
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
+          SWAP=/mnt/docusaurus-swapfile
+          sudo swapoff "$SWAP" 2>/dev/null || true
+          sudo rm -f "$SWAP"
+          if ! sudo fallocate -l 10G "$SWAP" 2>/dev/null; then
+            sudo dd if=/dev/zero of="$SWAP" bs=1M count=10240 status=none
+          fi
+          sudo chmod 600 "$SWAP"
+          sudo mkswap "$SWAP"
+          sudo swapon "$SWAP"
           free -h
 
       - uses: actions/setup-node@v4
