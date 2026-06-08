@@ -27,6 +27,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Листинги на языках программирования (от ~8 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются через `ExternalCodeEmbed`. Русский псевдокод, короткие фрагменты (1–7 строк), диаграммы **mermaid** и интерактивные демо остаются в статьях — последние подгружаются из [play.spirzen.ru](https://play.spirzen.ru/). Образец интеграции — [Каталог примеров кода](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/617).
+
 ORM и драйверы опираются на конкретную СУБД. Перед ORM полезно понять подключение и CRUD на «голом» API:
 
 - [SQLite](/encyclopedia/3-data-markup/3-07-sql/887)

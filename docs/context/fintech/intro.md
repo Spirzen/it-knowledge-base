@@ -5,14 +5,16 @@ slug: /context/fintech/intro
 sidebar_label: Финтех — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Финтех — о разделе
 
 Финтех требует идемпотентности транзакций, низких задержек и согласованности с PSD2, ПОД/ФТ и защитой персональных данных. Статьи покрывают стандарты сообщений, KYC/AML и типовые архитектурные зоны. Универсальные основы — [финансовые потоки в IT](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/4) и [безопасность API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132).
 
-<ContextDomainPlay domain="fintech" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'fintech' }} />
 
 ## С чего начать
 

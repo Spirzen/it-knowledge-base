@@ -15,14 +15,16 @@ related:
     doc: encyclopedia/2-system-network/2-05-terminal/104
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 
 # О разделе
 
 Здесь — **программы**, которыми пользуется продвинутый пользователь. Зачем они нужны и как встроить в рабочий процесс — в разделе [Советы для продвинутого](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/intro) (скрипты, Home Lab, приватность, игры).
 
-<EndUserSoftwareHub tier="all" defaultApp="archive" />
+<ExternalPlayEmbed example="basics/end-user-software-hub" title="Софт пользователя — хаб" minHeight={520} playProps={{ tier: 'all', defaultApp: 'archive' }} />
 
 Во всех главах (кроме чисто справочных вроде формата `.drawio`, где техника в теле статьи) в конце есть **Под капотом** и **Опыт, мнение и истории** — устройство инструмента и практика power user.
 

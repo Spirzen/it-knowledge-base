@@ -13,8 +13,10 @@ related:
     doc: encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import DesktopWindowPlay from '@site/src/components/DesktopWindowPlay';
 
 # Программы — о разделе
 
@@ -28,7 +30,7 @@ import DesktopWindowPlay from '@site/src/components/DesktopWindowPlay';
 </div>
   </div>
 
-<DesktopWindowPlay />
+<ExternalPlayEmbed example="code-dev/desktop-window-play" title="Окно десктоп-приложения" minHeight={480} />
 
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/98).
 

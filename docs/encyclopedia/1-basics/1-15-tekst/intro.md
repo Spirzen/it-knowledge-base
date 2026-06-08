@@ -29,9 +29,10 @@ related:
     doc: encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import WordSimulator from '@site/src/components/WordSimulator.jsx';
-import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 # О разделе
 
@@ -54,9 +55,9 @@ import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 Для госпроекта или ТЗ в Word/Excel — [Word и Excel в проектной документации](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007). Углублённый справочник функций Excel — [41](./41). **Готовые формулы с разбором** — [Lab / 1139](/lab/Примеры/1139).
 
-<WordSimulator />
+<ExternalPlayEmbed example="tools-misc/word-simulator" title="Word Simulator" />
 
-<ExcelSimulator />
+<ExternalPlayEmbed example="lab/excel-simulator" title="Excel Simulator" minHeight={480} />
 
 <DocCardList />
 

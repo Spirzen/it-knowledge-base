@@ -5,14 +5,16 @@ slug: /context/science/intro
 sidebar_label: Наука — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Наука — о разделе
 
 Научный контур требует прослеживаемости данных, версионируемого кода и публикаций. Материалы ориентированы на инженеров исследовательской инфраструктуры и разработчиков аналитических пайплайнов. См. [анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro) и [Git для воспроизводимости](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro).
 
-<ContextDomainPlay domain="science" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'science' }} />
 
 ## С чего начать
 

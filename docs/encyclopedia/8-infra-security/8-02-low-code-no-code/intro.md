@@ -23,6 +23,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 **Low-code** и **no-code** — способы собирать приложения, отчёты и интеграции через визуальные конструкторы, а не только через IDE. Раздел объясняет термины, типичные платформы, ограничения (версии, безопасность, vendor lock-in) и то, **как это стыкуется с работой разработчика и аналитика**.
 
 > **Смежно:** [Платформы в IT](/encyclopedia/2-system-network/2-02-platformy/intro) · [Системная аналитика](/encyclopedia/7-project/7-04-analitika/intro) · [ORM и данные](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro)

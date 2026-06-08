@@ -17,6 +17,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 **Scala** — мультипарадигмальный язык (функциональный, объектно-ориентированный, императивный), созданный в EPFL под руководством [Мартина Одерски](https://ru.wikipedia.org/wiki/Одерски,_Мартин) для **компонентного** ПО: краткий, **типобезопасный** синтаксис и единые концепции абстракции для модулей любого масштаба. Целевые платформы — **JVM**, **JavaScript** ([Scala.js](https://www.scala-js.org/)) и нативный код ([Scala Native](https://www.scala-native.org/)); расширения исходников — `.scala` и `.sc`.
 
 Материалы раздела ориентированы на **Scala 3** на JVM. Если вы приходите из Java, начните с [истории и контекста](/encyclopedia/5-languages/5-18-scala/1), затем [основ языка](/encyclopedia/5-languages/5-18-scala/2) и [первой программы](/encyclopedia/5-languages/5-18-scala/7); дальше — [типы и pattern matching](/encyclopedia/5-languages/5-18-scala/4), [управляющие конструкции](/encyclopedia/5-languages/5-18-scala/5) и [функции](/encyclopedia/5-languages/5-18-scala/6). [Архитектура JVM-приложений](/encyclopedia/5-languages/5-18-scala/3) — когда синтаксис уже понятен и нужна связь с Akka, Spark и продакшен-практиками.

@@ -21,12 +21,14 @@ related:
     doc: encyclopedia/5-languages/5-01-javascript/11
 ---
 
-import TechHistoryHub from '@site/src/components/TechHistoryHub.jsx';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-<TechHistoryHub />
+<ExternalPlayEmbed example="basics/tech-history-hub" title="История технологий — хаб" minHeight={480} />
 
 <DocCardList />
 

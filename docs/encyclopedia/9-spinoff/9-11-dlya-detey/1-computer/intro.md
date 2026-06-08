@@ -13,8 +13,10 @@ related:
     doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import LaptopExplorerPlay from '@site/src/components/LaptopExplorerPlay';
 
 # Компьютер — о разделе
 
@@ -30,7 +32,7 @@ import LaptopExplorerPlay from '@site/src/components/LaptopExplorerPlay';
 </div>
   </div>
 
-<LaptopExplorerPlay />
+<ExternalPlayEmbed example="basics/laptop-explorer-play" title="Laptop Explorer" />
 
 В статьях раздела есть интерактивные схемы: они работают в браузере и не меняют настройки вашего компьютера.
 

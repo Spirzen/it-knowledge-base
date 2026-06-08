@@ -5,14 +5,16 @@ slug: /context/logistics/intro
 sidebar_label: Логистика — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Логистика — о разделе
 
 Логистика — интеграция заказов, складов, транспорта и трекинга в реальном времени. Раздел полезен при проектировании OMS, EDI и мобильных контуров для курьеров и перевозчиков. Геоданные и интеграции — [структуры данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/12) и [интеграционный раздел](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
 
-<ContextDomainPlay domain="logistics" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'logistics' }} />
 
 ## С чего начать
 

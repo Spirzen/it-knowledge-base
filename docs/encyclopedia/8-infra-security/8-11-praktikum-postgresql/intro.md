@@ -29,6 +29,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — PL/pgSQL, Docker Compose, StatefulSet, Ansible и Terraform не раздувают HTML энциклопедии. Короткие фрагменты (`EXPLAIN`, однострочные `ALTER`, команды `psql`) по-прежнему прямо в markdown. Диаграммы **mermaid** — на месте.
+
 Раздел **8.11** — продвинутый практикум по **PostgreSQL** для бэкенд-разработчиков, DBA и DevOps-инженеров. Здесь собран маршрут от **внутреннего устройства** (MVCC, WAL, VACUUM) до **промышленной эксплуатации** в Docker, облаке и Kubernetes с репликацией, бэкапами и автоматизацией через Ansible и Terraform.
 
 Базовый SQL, CRUD из приложения и установка «на голое железо» уже есть в [разделе 3.07](/encyclopedia/3-data-markup/3-07-sql/intro) и [3.08](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro). Этот практикум **углубляет** темы, которые решают задачи production — bloat, wraparound, планы запросов, пулинг соединений, Patroni и Wal-G.

@@ -21,15 +21,16 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/122
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
-import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 # О разделе
 
 Раздел про язык **Swift** и разработку под экосистему Apple (и смежные сценарии: сервер, скрипты, Linux). Сильные стороны — опционалы, протоколы, `async`/`await` и безопасность типов.
 
-**SwiftUI** разбирается в [первой программе](./20.md) и [фреймворках](./15.md). Статья [жизненный цикл](./21.md) — про сцены, `@main` и состояния приложения.
+**Xcode** — в [отдельной статье](./26.md) (установка, проекты, CLI, ИИ). **SwiftUI** — в [первой программе](./20.md) и [фреймворках](./15.md). [Жизненный цикл](./21.md) — сцены, `@main` и состояния приложения.
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
@@ -44,7 +45,7 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 | 2 | [Основы](./11.md) → [Синтаксис](./12.md) → [Типы](./13.md) → [Управление](./14.md) | База языка |
 | 3 | [Параметры](./23.md) → [Pattern matching](./24.md) → [Property wrappers](./25.md) | Идиомы Swift |
 | 4 | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) → [ООП](./102.md) → [Данные](./16.md) → [Async](./17.md) | struct/class, Codable |
-| 5 | [Первая программа](./20.md) | Playground, Xcode, SwiftUI в обзоре |
+| 5 | [Xcode](./26.md) → [Первая программа](./20.md) | IDE, затем Playground и SwiftUI в обзоре |
 | 6 | [Экосистема](./10.md) → [Фреймворки](./15.md) → [Жизненный цикл](./21.md) | Apple-стек |
 | 7 | [Справочник](./3.md) → [Чек-лист](./999.md) | После курса |
 
@@ -71,8 +72,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
-| 1 | [Первая программа](./20.md) | Запуск и синтаксис |
-| 2 | [SwiftUI](./21.md) | Углубление |
+| 1 | [Xcode](./26.md) | Установка IDE и первый проект |
+| 2 | [Первая программа](./20.md) | Запуск и синтаксис |
+| 3 | [Жизненный цикл / SwiftUI](./21.md) | Углубление |
 
 ---
 
@@ -94,9 +96,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 ---
 
-<FirstProgramPlay language="swift" />
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'swift' }} />
 
-<SyntaxComparePlay />
+<ExternalPlayEmbed example="data-markup/syntax-compare-play" title="Сравнение синтаксиса языков" minHeight={420} />
 
 <DocCardList />
 

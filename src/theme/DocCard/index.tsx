@@ -9,7 +9,7 @@ import {
 } from '@docusaurus/theme-common/internal';
 import isInternalUrl from '@docusaurus/isInternalUrl';
 import Layout from '@theme/DocCard/Layout';
-import TechIcon from '@site/src/components/TechIcon';
+import LazyTechIcon from '@site/src/components/shared/LazyTechIcon';
 import {getTechIdForPath} from '@site/src/data/techArticlePages';
 
 import type {Props} from '@theme/DocCard';
@@ -49,7 +49,7 @@ function getIconTitleProps(
 
   if (techId) {
     return {
-      icon: <TechIcon techId={techId} variant="badge" size="sm" />,
+      icon: <LazyTechIcon techId={techId} variant="badge" size="sm" />,
       title,
     };
   }

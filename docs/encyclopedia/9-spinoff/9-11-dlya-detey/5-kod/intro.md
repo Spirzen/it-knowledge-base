@@ -13,9 +13,10 @@ related:
     doc: encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import BlockBuilder from '@site/src/components/BlockBuilder';
-import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 
 # Код — о разделе
 
@@ -58,7 +59,7 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 </div>
   </div>
 
-<BeginnerWebStackHub defaultTab="overview" />
+<ExternalPlayEmbed example="data-markup/beginner-web-stack-hub" title="Веб-стек для новичка" minHeight={520} playProps={{ defaultTab: 'overview' }} />
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>
@@ -68,7 +69,7 @@ import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
 </div>
   </div>
 
-<BlockBuilder />
+<ExternalPlayEmbed example="code-basics/block-builder" title="Конструктор блоков" minHeight={420} />
 
 Сообщения об ошибках в коде указывают строку и тип проблемы; исправление ошибок — обычная часть работы программиста на любом уровне опыта.
 

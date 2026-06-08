@@ -37,6 +37,8 @@ import DocCardList from '@theme/DocCardList';
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, как текст превращается в исполняемые инструкции; в этом разделе — **язык запросов SQL** и работа с данными в таблицах.
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (`SELECT`, `WHERE`, однострочные команды psql) по-прежнему прямо в markdown.
+
 Массовая загрузка (`COPY`, multi-row `INSERT`, staging + `MERGE`), чанки и транзакции — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433#sql-bulk).
 
 <div class="callout callout--tip">

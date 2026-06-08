@@ -9,7 +9,7 @@ import DocVersionBanner from '@theme/DocVersionBanner';
 import DocVersionBadge from '@theme/DocVersionBadge';
 import DocBreadcrumbs from '@theme/DocBreadcrumbs';
 import Heading from '@theme/Heading';
-import TechIcon from '@site/src/components/TechIcon';
+import LazyTechIcon from '@site/src/components/shared/LazyTechIcon';
 import {getTechIdForPath} from '@site/src/data/techArticlePages';
 import heroStyles from '@site/src/css/tech-article-hero.module.css';
 import type {Props} from '@theme/DocCategoryGeneratedIndexPage';
@@ -45,7 +45,7 @@ function DocCategoryGeneratedIndexPageContent({
           <div className={heroStyles.wrap}>
             {techId ? (
               <div className={heroStyles.iconHost}>
-                <TechIcon
+                <LazyTechIcon
                   techId={techId}
                   variant="badge"
                   size="lg"

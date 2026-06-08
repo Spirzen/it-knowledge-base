@@ -5,14 +5,16 @@ slug: /context/construction/intro
 sidebar_label: Строительство — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Строительство — о разделе
 
 Строительный цикл связывает проектирование, разрешительную документацию, площадку и эксплуатацию. Для IT важны IFC, 4D/5D BIM, интеграция с реестрами и цифровые двойники зданий. Геоданные — [в энциклопедии](/encyclopedia/3-data-markup/3-02-struktury-dannyh/12), госрегуляторика — [Государство и бизнес](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/1).
 
-<ContextDomainPlay domain="construction" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'construction' }} />
 
 ## С чего начать
 

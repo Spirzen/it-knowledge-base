@@ -29,6 +29,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <div class="callout callout--info">
@@ -95,7 +97,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Если уже знаете Java</div>
 
   <div class="callout-body">
-  Сначала [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) не нужен — сразу [основы Kotlin](./11.md) и [совместимость с Java](./10.md) (вызов Java-классов, `@JvmStatic`, nullable). Первая программа в IDEA описана в [2.md](./2.md).
+  Сначала [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) не нужен — сразу [основы Kotlin](./11.md) и [совместимость с Java](./10.md) (вызов Java-классов, `@JvmStatic`, nullable). IDE — [IntelliJ IDEA](/encyclopedia/5-languages/5-03-java/103); первая программа в IDEA описана в [2.md](./2.md).
 </div>
   </div>
 
@@ -104,7 +106,7 @@ import DocCardList from '@theme/DocCardList';
 ## Базовый маршрут (язык, ~2–3 недели)
 
 1. [Что знать перед Kotlin](./1001.md) — JVM, IDE, Gradle.
-2. [Первая программа](./2.md) — IntelliJ IDEA, Maven, `fun main()`.
+2. [IntelliJ IDEA](/encyclopedia/5-languages/5-03-java/103) → [Первая программа](./2.md) — Maven, `fun main()`.
 2a. [fun main() — точка входа](./40.md) — JVM и import.
 3. [Основы](./11.md) → [типы](./12.md) → [операторы](./13.md) → [циклы](./14.md).
 4. [ООП](./15.md) → [синтаксис](./16.md) → [конструкции](./17.md).
@@ -135,7 +137,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
-| 1 | [Первая программа](./2.md) | JDK, IDEA, Maven |
+| 1 | [IntelliJ IDEA](/encyclopedia/5-languages/5-03-java/103) → [Первая программа](./2.md) | JDK, IDE, Maven |
 | 2a | [Compose](./229.md) → [234](./234.md) → [22](./22.md) / [23](./23.md) | Android UI + учебные проекты |
 | 2b | [Ktor](./221.md) | REST API |
 | 2c | [Spring Boot](./232.md) | REST на Spring |

@@ -5,14 +5,16 @@ slug: /context/iot/intro
 sidebar_label: IoT — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # IoT — о разделе
 
 Кросс-отраслевые системы интернета вещей связывают физические устройства с облаком, аналитикой и ERP. Раздел даёт контекст для проектирования телеметрии, безопасности устройств и границ ответственности между embedded, backend и предметными командами. См. [безопасность IoT](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/131) и [интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
 
-<ContextDomainPlay domain="iot" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'iot' }} />
 
 ## С чего начать
 

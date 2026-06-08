@@ -4,6 +4,7 @@ import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 import DemoShell, {DemoCard} from './shared/DemoShell';
 import {demoLoadingFallback, demoSkeletonFallback} from './shared/demoFallback';
+import ExternalPlayEmbed from './ExternalPlayEmbed';
 import styles from './LabTrainersHub.module.css';
 
 const CATEGORIES = [
@@ -15,31 +16,31 @@ const CATEGORIES = [
         id: 'sql-trainer',
         label: 'SQL-тренажёр',
         article: '/encyclopedia/3-data-markup/3-07-sql/111',
-        load: () => import('./SqlTrainer'),
+        embed: {example: 'lab/sql-trainer', title: 'SQL-тренажёр', minHeight: 480},
       },
       {
         id: 'sql-insert',
         label: 'INSERT',
         article: '/encyclopedia/3-data-markup/3-07-sql/5',
-        load: () => import('./SqlInsertTrainer'),
+        embed: {example: 'data-markup/sql-insert-trainer', title: 'SQL INSERT — тренажёр', minHeight: 480},
       },
       {
         id: 'sql-update',
         label: 'UPDATE',
         article: '/encyclopedia/3-data-markup/3-07-sql/5',
-        load: () => import('./SqlUpdateTrainer'),
+        embed: {example: 'data-markup/sql-update-trainer', title: 'SQL UPDATE — тренажёр', minHeight: 480},
       },
       {
         id: 'sql-delete',
         label: 'DELETE',
         article: '/encyclopedia/3-data-markup/3-07-sql/5',
-        load: () => import('./SqlDeleteTrainer'),
+        embed: {example: 'data-markup/sql-delete-trainer', title: 'SQL DELETE — тренажёр', minHeight: 480},
       },
       {
         id: 'sql-join',
         label: 'JOIN',
         article: '/encyclopedia/3-data-markup/3-07-sql/55',
-        load: () => import('./SqlJoinTrainer'),
+        embed: {example: 'about/sql-join-trainer', title: 'SQL JOIN-тренажёр', minHeight: 420},
       },
     ],
   },
@@ -51,27 +52,35 @@ const CATEGORIES = [
         id: 'bash',
         label: 'Bash',
         article: '/encyclopedia/5-languages/5-25-bash/intro',
-        load: () => import('./BashShellPlay'),
-        props: {lesson: 'basics'},
+        embed: {
+          example: 'about/bash-shell-play',
+          title: 'Bash-тренажёр',
+          minHeight: 400,
+          playProps: {lesson: 'basics'},
+        },
       },
       {
         id: 'powershell',
         label: 'PowerShell',
         article: '/encyclopedia/5-languages/5-26-powershell/intro',
-        load: () => import('./PowerShellShellPlay'),
-        props: {lesson: 'intro'},
+        embed: {
+          example: 'languages/power-shell-shell-play',
+          title: 'PowerShell Shell',
+          minHeight: 480,
+          playProps: {lesson: 'intro'},
+        },
       },
       {
         id: 'mongo',
         label: 'MongoDB',
         article: '/encyclopedia/3-data-markup/3-06-nosql/411',
-        load: () => import('./MongoShellPlay'),
+        embed: {example: 'data-markup/mongo-shell-play', title: 'MongoDB Shell', minHeight: 480},
       },
       {
         id: 'memcached',
         label: 'Memcached',
         article: '/encyclopedia/3-data-markup/3-06-nosql/8111',
-        load: () => import('./MemcachedShellPlay'),
+        embed: {example: 'data-markup/memcached-shell-play', title: 'Memcached Shell', minHeight: 480},
       },
     ],
   },
@@ -83,31 +92,35 @@ const CATEGORIES = [
         id: 'git',
         label: 'Git: ветки',
         article: '/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113',
-        load: () => import('./GitBranchMergePlay'),
+        embed: {example: 'code-dev/git-branch-merge-play', title: 'Git — ветки и merge', minHeight: 480},
       },
       {
         id: 'docker-compose',
         label: 'Docker Compose',
         article: '/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1111',
-        load: () => import('./DockerComposePlay'),
+        embed: {example: 'about/docker-compose-play', title: 'Docker Compose', minHeight: 420},
       },
       {
         id: 'docker-hardening',
         label: 'Docker: безопасность',
         article: '/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/125',
-        load: () => import('./DockerHardeningPlay'),
+        embed: {example: 'infra-security/docker-hardening-play', title: 'Hardening Docker', minHeight: 480},
       },
       {
         id: 'gitlab-ci',
         label: 'GitLab CI',
         article: '/encyclopedia/8-infra-security/8-04-devops-ci-cd/2113',
-        load: () => import('./GitLabCiPipelinePlay'),
+        embed: {example: 'infra-security/git-lab-ci-pipeline-play', title: 'GitLab CI pipeline', minHeight: 520},
       },
       {
         id: 'file-ops',
         label: 'Файлы и папки',
         article: '/tools/automation/2',
-        load: () => import('./FileOpsLabPlay'),
+        embed: {
+          example: 'tools-automation/file-ops-lab-play',
+          title: 'Файлы и папки',
+          minHeight: 400,
+        },
       },
     ],
   },
@@ -119,25 +132,25 @@ const CATEGORIES = [
         id: 'html',
         label: 'HTML / JS',
         article: '/encyclopedia/3-data-markup/3-09-html/1',
-        load: () => import('./HTMLPlayground'),
+        embed: {example: 'about/html-playground', title: 'HTML Playground', minHeight: 420},
       },
       {
         id: 'regex',
         label: 'Регулярные выражения',
         article: '/encyclopedia/4-code-dev/4-01-algoritmy/111',
-        load: () => import('./RegexPlaygroundDemo'),
+        embed: {example: 'lab/regex-playground-demo', title: 'Regex Playground', minHeight: 420},
       },
       {
         id: 'search',
         label: 'Поисковые запросы',
         article: '/encyclopedia/1-basics/1-21-poisk-informatsii/3',
-        load: () => import('./SearchQueryLab'),
+        embed: {example: 'basics/search-query-lab', title: 'Поисковые запросы', minHeight: 420},
       },
       {
         id: 'soap',
         label: 'SOAP',
         article: '/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/126',
-        load: () => import('./SOAPTrainer'),
+        embed: {example: 'system-network/soap-trainer', title: 'Тренажёр SOAP', minHeight: 480},
       },
     ],
   },
@@ -149,19 +162,23 @@ const CATEGORIES = [
         id: 'programming-tasks',
         label: 'Задачи разработчика',
         article: '/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/613',
-        load: () => import('./ProgrammingTasksPlay'),
+        embed: {example: 'code-dev/programming-tasks-play', title: 'Задачи по программированию', minHeight: 480},
       },
       {
         id: 'english',
         label: 'IT-английский',
         article: '/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2',
-        load: () => import('./EnglishVocabularyTrainer'),
+        embed: {
+          example: 'about/english-vocabulary-trainer',
+          title: 'IT-английский',
+          minHeight: 480,
+        },
       },
       {
         id: 'netiquette',
         label: 'Нетикет',
         article: '/encyclopedia/9-spinoff/9-10-internet-kultura/113',
-        load: () => import('./NetiquettePlay'),
+        embed: {example: 'spinoff/netiquette-play', title: 'Нетикет', minHeight: 480},
       },
     ],
   },
@@ -237,7 +254,7 @@ function LabTrainersHubInner({defaultCategory = 'sql', defaultTrainer}) {
     return current.trainers.find((t) => t.id === trainerId) ?? current.trainers[0];
   }, [categoryId, trainerId]);
 
-  const ActiveTrainer = trainer ? getLazyTrainer(trainer.load) : null;
+  const ActiveTrainer = trainer?.embed ? null : trainer ? getLazyTrainer(trainer.load) : null;
 
   const onCategoryChange = (id) => {
     setCategoryId(id);
@@ -289,10 +306,20 @@ function LabTrainersHubInner({defaultCategory = 'sql', defaultTrainer}) {
         </div>
 
         <div className={styles.panel}>
-          {ActiveTrainer && trainer && (
-            <Suspense fallback={demoSkeletonFallback()}>
-              <ActiveTrainer {...(trainer.props ?? {})} />
-            </Suspense>
+          {trainer?.embed ? (
+            <ExternalPlayEmbed
+              example={trainer.embed.example}
+              title={trainer.embed.title}
+              minHeight={trainer.embed.minHeight}
+              playProps={trainer.embed.playProps}
+            />
+          ) : (
+            ActiveTrainer &&
+            trainer && (
+              <Suspense fallback={demoSkeletonFallback()}>
+                <ActiveTrainer {...(trainer.props ?? {})} />
+              </Suspense>
+            )
           )}
         </div>
 

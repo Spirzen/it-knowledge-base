@@ -4,9 +4,10 @@ description: Подборка материалов раздела "Паралл�
 sidebar_label: Параллельные вычисления — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ParallelSpeedupLab from '@site/src/components/ParallelSpeedupLab';
-import RooflinePlay from '@site/src/components/RooflinePlay';
 
 # О разделе
 
@@ -19,6 +20,8 @@ import RooflinePlay from '@site/src/components/RooflinePlay';
 - как заранее определить узкое место — память, сеть, синхронизация или чистые FLOPS.
 
 Это **другой уровень**, чем [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/1) (неблокирующий I/O) и чем "масштабирование веб-сервисов". Здесь предмет — именно **вычислительное ядро задачи** — математика, граф зависимостей, декомпозиция и измеримая эффективность.
+
+**Длинные справочные листинги C/C++/MPI/OpenMP (от ~8 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются через `ExternalCodeEmbed`; алгоритмический **псевдокод на русском**, короткие фрагменты CUDA и однострочные команды профилирования остаются в статье. Интерактивные лаборатории — в [play.spirzen.ru](https://play.spirzen.ru/) (`ExternalPlayEmbed` ниже).
 
 <div class="callout callout--tip">
   <div class="callout-title">Как читать этот раздел правильно</div>
@@ -117,7 +120,7 @@ import RooflinePlay from '@site/src/components/RooflinePlay';
 - Поднимайте `N` при фиксированной параллельной доле (например, 80% и 95%) и сравнивайте, как быстро наступает "потолок".
 - Затем увеличьте `weak scaling`, чтобы увидеть, почему на больших задачах Густафсон даёт более реалистичную картину.
 
-<ParallelSpeedupLab />
+<ExternalPlayEmbed example="code-dev/parallel-speedup-lab" title="Ускорение параллельных вычислений" minHeight={520} />
 
 После демо —
 
@@ -137,7 +140,7 @@ import RooflinePlay from '@site/src/components/RooflinePlay';
 - Переключитесь на `matmul` и сравните, как при высокой intensity ограничение смещается к compute-bound.
 - Для своего кейса включите `Custom intensity` и подберите приближение под реальный kernel.
 
-<RooflinePlay />
+<ExternalPlayEmbed example="code-dev/roofline-play" title="Roofline-модель" minHeight={480} />
 
 После демо —
 

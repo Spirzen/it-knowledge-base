@@ -33,6 +33,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <div class="callout callout--info">
@@ -58,10 +60,12 @@ import DocCardList from '@theme/DocCardList';
 ## С чего начать (основной маршрут)
 
 1. [Основы языка Java](./1.md) — JDK/JVM, байт-код, [путь от исходника до запуска](./1.md#put-isxodnika-do-zapuska), состав дистрибутива.
+1a. [IntelliJ IDEA](./103.md) — установка, интерфейс, возможности IDE (рекомендуется перед первой программой).
 2. [Первая программа](./13.md) — Maven; в статье два пути: **IntelliJ IDEA** (рекомендуется) и **NetBeans**.
 2a. [public static void main — точка входа](./40.md) — когда JVM вызывает `main`.
+2b. [Ввод и вывод в Java](./102.md) — консоль: `println`, переменные, арифметика, `Scanner` (лестница из трёх программ).
 3. [Структура и сборки](./12.md) — Maven/Gradle, запуск вне IDE; [отладка в IDEA](./132.md).
-4. [Синтаксис](./14.md), [типы](./15.md) (примитивы и [обёртки](./15.md#priminitiv-i-klass-obertka)), [операторы и циклы](./17.md), [конструкции](./16.md) — в том числе `Scanner` и [случайные числа](./16.md#случайные-числа).
+4. [Синтаксис](./14.md), [типы](./15.md) (примитивы и [обёртки](./15.md#priminitiv-i-klass-obertka)), [операторы и циклы](./17.md), [конструкции](./16.md) — пакеты, методы; [случайные числа](./16.md#случайные-числа).
 5. [ООП](./18.md) — классы, наследование, интерфейсы, `instanceof`.
 6. Теория: [ошибки и исключения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [исключения в Java](./21.md), [иерархия](./211.md).
 7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [Virtual Threads (Java 21+)](./308.md), [JVM и потоки](./23.md).
@@ -89,7 +93,7 @@ import DocCardList from '@theme/DocCardList';
 | **Сборка и CI** | [12](./12.md) → [292](./292.md) (Gradle) |
 | **Legacy (поддержка)** | [JSF — теория](./25.md) → [первая программа](./251.md) → [практикум «Список задач»](./252.md), [JavaBeans](./26.md) — не для зелёного поля |
 | **Десктоп (JavaFX / Swing)** | [311.md](./311.md) → [3111.md](./3111.md) (JavaFX) или [Lab — Swing](/lab/Примеры/1143) (без Maven) → [практикум «XML-валидатор»](./253.md) (Swing + Maven) → [3112.md](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [112.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
-| **Консольные задачи** | [Lab — консольные задачи](/lab/Примеры/1131) → [131](./131.md) (мини-приложения) |
+| **Консольные задачи** | [102](./102.md) (ввод-вывод) → [Lab — консольные задачи](/lab/Примеры/1131) → [131](./131.md) (мини-приложения) |
 | **Лабораторная с GUI** | [Lab — Swing, построчный разбор](/lab/Примеры/1143) после [16](./16.md) и [17](./17.md) |
 | **Учебная игра** | [Java Survivors](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8) (в подготовке) — маршрут раздела [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |
 
@@ -121,6 +125,7 @@ import DocCardList from '@theme/DocCardList';
 | [dev.java — Stream Gatherers](https://dev.java/learn/api/streams/gatherers/) | Кастомные stateful-пайплайны в Stream API |
 | [dev.java — Virtual Threads](https://dev.java/learn/new-features/virtual-threads/) | Современная конкурентность Java 21+ |
 | [Metanit: Java](https://metanit.com/java/) | Пошаговый курс на русском |
+| [Ravesli — уроки Java](https://ravesli.com/java-tutorial/) | Пошаговый курс на русском: введение, JDK, синтаксис, ООП |
 | [Java — конспект (GitBook)](https://andrey-ivantsov.gitbook.io/java) | Краткий Core Java |
 | [proglang.su/java](http://proglang.su/java) | Углубление по коллекциям и API |
 | [Microsoft для Java](https://learn.microsoft.com/ru-ru/java/) | OpenJDK, VS Code — [294](./294.md) |
@@ -132,7 +137,7 @@ import DocCardList from '@theme/DocCardList';
   | Тема в [GitBook](https://andrey-ivantsov.gitbook.io/java) | Глава здесь |
   |-----------------------------------------------------------|-------------|
   | Типы, литералы, переменные, операторы | [15](./15.md), [16](./16.md), [17](./17.md) |
-  | Ввод с клавиатуры | [16](./16.md) (`Scanner`) |
+  | Ввод с клавиатуры, консольный I/O | [102](./102.md), [16](./16.md) (`Scanner`) |
   | Особенности строк | [296](./296.md), [15](./15.md) |
   | Коллекции, Stream API | [24](./24.md), [295](./295.md) |
   | Файлы, I/O | [297](./297.md) |
@@ -159,7 +164,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
-| 1 | [Первая программа](./13.md) | JDK, Maven, IDEA или NetBeans |
+| 1 | [IntelliJ IDEA](./103.md) · [Первая программа](./13.md) | IDE, затем JDK, Maven, Hello World |
 | 2 | [Отладка](./132.md) | Точки останова, Variables, Call Stack |
 | 3 | [Spring Boot](./271.md) | REST после Core |
 | 4 | [Spring Security](./272.md) · [prod](./275.md) | Защита API и чеклист выкладки |

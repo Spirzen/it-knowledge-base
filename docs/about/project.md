@@ -26,7 +26,7 @@ import DocCardList from '@theme/DocCardList';
 
 "Вселенная IT" — это масштабный проект по систематизации, унификации и долгосрочному хранению знаний в области информационных технологий. 
 
-Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду, здесь так много статей - более трёх тысяч.
+Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду здесь **более трёх тысяч** материалов в `docs/` (из них **~2900 статей** в энциклопедии), плюс **~2300 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/) и **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/).
 
 Здесь:
 - нет слежки;
@@ -40,12 +40,13 @@ import DocCardList from '@theme/DocCardList';
 
 Материалы ориентированы на профессионалов, преподавателей, студентов и тех, кто начинает свой путь в IT. Каждый раздел проектируется с учётом научной строгости, практической применимости и доступности изложения.
 
-Вселенная IT охватывает всю сферу в рамках одной энциклопедии, систематизирует по чёткой структуре и даёт интерактивность через кастомные компоненты в виде эмуляторов, тренажеров, визуализаторов, диаграмм, схем, таблиц и много чего ещё. И разумеется - бесплатность, отсутствие рекламы, открытый код. Подробнее о витрине демо — в разделе [Интерактив](/about/interactive).
+Вселенная IT охватывает всю сферу IT в **единой модели знаний**: текст и навигация — на [spirzen.ru](https://spirzen.ru/), длинные листинги — на [code.spirzen.ru](https://code.spirzen.ru/), тяжёлый интерактив (эмуляторы, тренажёры, визуализаторы) — на [play.spirzen.ru](https://play.spirzen.ru/); в статьях всё связано через встраивание (iframe). Бесплатность, отсутствие рекламы, открытый код. Подробнее о витрине демо — в разделе [Интерактив](/about/interactive).
 
 У Вселенной IT есть осознанные минусы:
-- поиск, его я намеренно вырезал, в целях экономии места, а также потому что кое-какие движки недоступны в РФ;
-- уникальность и актуальность контента - я работаю сам и как хочу, поэтому если что-то обновится, то всё в моих руках;
-- комьюнити и модель развития - многие базы знаний погибают из-за отсутствия авторов, а я одиночка.
+- уникальность и актуальность контента — я работаю сам и как хочу, поэтому если что-то обновится, то всё в моих руках;
+- комьюнити и модель развития — многие базы знаний погибают из-за отсутствия авторов, а я одиночка.
+
+Поиск по статьям **восстановлен**: собственный клиентский DocSearch (Ctrl+K) без Algolia и внешних SaaS — индекс `doc-search-index.json` собирается при `npm run build`.
 
 Любите игры? Хотите улучшить компьютерную грамотность? Желаете выучить язык программирования? Ищете гайд для решения какой-то задачи? Не можете разобраться в какой-то теме?
 
@@ -89,14 +90,15 @@ import DocCardList from '@theme/DocCardList';
 Я стараюсь всегда приводить примеры кода. Можете копировать через кнопку справа в таких блоках. -->
 ```
 
-Пользуйтесь **навигацией** - она разделяет всю "Вселенную" на разделы:
+Пользуйтесь **навигацией** — в меню **семь разделов** (плюс пункт «Общее содержание»):
 - О проекте
-- Энциклопедия
+- Энциклопедия (девять блоков — см. ниже)
 - Инструменты
 - Глоссарий
 - Лаборатория
 - Контекст
 - Философия
+- Общее содержание (`toc`)
 
 Здесь есть всякое разное - списки игр, глоссарий терминов, подборка литературы и официальной документации, много интересных статей и теоретических основ.
 
@@ -146,7 +148,19 @@ import DocCardList from '@theme/DocCardList';
 
 ## Как устроен проект технически
 
-«Вселенная IT» — это не только тысячи статей, но и **спроектированная программная система**: репозиторий с понятной структурой папок, сборка на Node.js, статическая публикация, автоматический деплой. На продакшене **нет серверного backend и базы данных** — читатель получает готовый HTML и JavaScript; вся подготовка контента и индексов происходит при `npm run build` и в CI.
+«Вселенная IT» — это не только тысячи статей, но и **распределённая программная платформа**: три публичных домена на GitHub Pages, связанных через iframe и postMessage, плюс локальная панель разработчика и мобильное приложение. На продакшене **нет общего backend и базы данных** — читатель получает статический HTML и JavaScript; вся подготовка контента и индексов происходит при сборке и в CI.
+
+### Экосистема (три домена + инструменты)
+
+| Сервис | URL | Репозиторий | Содержание |
+|--------|-----|-------------|------------|
+| Энциклопедия | [spirzen.ru](https://spirzen.ru/) | `it-knowledge-base` | ~2900 статей в энциклопедии, DocSearch (Ctrl+K) |
+| Примеры кода | [code.spirzen.ru](https://code.spirzen.ru/) | `it-code-examples` | ~2312 листингов (Astro + Shiki) |
+| Интерактив | [play.spirzen.ru](https://play.spirzen.ru/) | `it-play` | ~500 демо (Astro + React) |
+| Панель (локально) | `127.0.0.1:8787` | `it-management` | Start/Build/Deploy всех трёх |
+| Android | APK на главной | `itu-mobile-app` | WebView → spirzen.ru |
+
+Длинные листинги и тяжёлые симуляторы **не раздувают** билд энциклопедии: статьи встраивают их через `ExternalCodeEmbed` и `ExternalPlayEmbed` (iframe, синхрон темы, авто-высота). Подробно — в служебном [`info/ECOSYSTEM.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ECOSYSTEM.md) на GitHub.
 
 <div class="callout callout--info">
   <div class="callout-title">Живой пример</div>
@@ -157,79 +171,48 @@ import DocCardList from '@theme/DocCardList';
   </div>
 
 
-![Архитектура «Вселенная IT» — контекст, репозиторий, сборка, runtime в браузере и деплой](/img/it-universe-architecture.png)
+![Архитектура «Вселенная IT» — экосистема: spirzen.ru, code.spirzen.ru, play.spirzen.ru, интеграция и runtime](/img/it-universe-architecture.png)
 
-### Что показано на схеме
+### Что показано на схеме (Draw.io)
 
 | Зона | Содержание |
 | :--- | :--- |
-| Контекст (C4, уровень 1) | Автор, читатель, GitHub, локальная разработка, GitHub Actions, GitHub Pages, домен spirzen.ru |
-| Карта репозитория | `docs/`, `src/`, `static/`, `scripts/`, `docusaurus.config.js`, `sidebars.js`, каталог `info/` (служебно) |
-| Пайплайн сборки | `npm ci`, скрипты индексов и редиректов, `docusaurus build`, каталог `build/` |
-| Модель контента | Пути статей, sidebar, slug, legacy-редиректы |
-| Конфигурация Docusaurus | Плагины, тема, webpack, Mermaid |
-| Runtime в браузере | React, тема, клиентский поиск, интерактивные демо |
-| Рендер статьи | Цепочка MDX → remark → страница |
-| Слой демо | Компоненты в `src/components/`, чанк `demo-widgets`, [цепочка lazyDemo → DemoShell](/encyclopedia/5-languages/5-01-javascript/27#lazy-demo-mdx) |
-| Поиск и wiki-ссылки | `doc-search-index.json`, remark-плагин для `[[wiki]]` |
-| Деплой | Workflow `.github/workflows/deploy.yml`, ветка `gh-pages`, CNAME |
+| **0. Экосистема** | Три репозитория GitHub → три домена Pages; it-management (локально); APK |
+| **0b. Интеграция** | ExternalCodeEmbed / ExternalPlayEmbed, postMessage, CSP |
+| **1. it-knowledge-base** | `docs/` (~3400), `src/`, embed-компоненты, DocSearch |
+| **2. Сборка spirzen.ru** | wiki-links, search-index, Docusaurus 3.10 → `build/` |
+| **3–4. code / play** | Astro-каталоги, embed-маршруты, `dist/` |
+| **5. Деплой** | GitHub Actions → deploy-pages на каждый домен |
+| **6. Runtime** | Статья → iframe code/play + inline lazyDemo; 9 блоков энциклопедии |
 
 <span id="it-universe-c4-mermaid"></span>
 
-### C4-контекст (Mermaid)
+### Экосистема (Mermaid)
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#e3f2fd','primaryTextColor':'#0d47a1','primaryBorderColor':'#1565c0','lineColor':'#546e7a','secondaryColor':'#f5f5f5','tertiaryColor':'#eceff1'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#e3f2fd','primaryTextColor':'#0d47a1','primaryBorderColor':'#1565c0','lineColor':'#546e7a'}}}%%
 
-flowchart TD
-  classDef human fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
-  classDef repo fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#e65100
-  classDef ci fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#0d47a1
-  classDef prod fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#4a148c
-  classDef external fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#b71c1c,stroke-dasharray:5 5
+flowchart TB
+  classDef kb fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+  classDef code fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+  classDef play fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+  classDef human fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
 
-  subgraph people ["Люди"]
-    direction TB
-    Author["Автор / редактор - Markdown в git"]:::human
-    Reader["Читатель - браузер"]:::human
-  end
+  Reader["Читатель"]:::human
+  Author["Автор / git"]:::human
 
-  subgraph dev ["Разработка"]
-    direction TB
-    Repo["([GitHub - spirzen/it-knowledge-base])"]:::repo
-    Local["Локально - npm start / build"]:::repo
-  end
+  KB["spirzen.ru<br/>~2900 статей"]:::kb
+  CODE["code.spirzen.ru<br/>~2312 примеров"]:::code
+  PLAY["play.spirzen.ru<br/>~500 демо"]:::play
 
-  subgraph ci ["CI/CD"]
-    direction TB
-    GHA["GitHub Actions - deploy.yml"]:::ci
-    GHPages["Ветка gh-pages - статический HTML"]:::ci
-  end
-
-  subgraph prod ["Продакшен"]
-    direction TB
-    CDN["GitHub Pages + CNAME - spirzen.ru"]:::prod
-    Site["https://spirzen.ru"]:::prod
-  end
-
-  subgraph external ["Внешние сервисы"]
-    direction TB
-    GH["GitHub API / Releases"]:::external
-    Yandex["Верификация - yandex_*.html"]:::external
-  end
-
-  Author -->|"push main"| Repo
-  Local -->|"PR / push"| Repo
-  Repo ==>|"trigger"| GHA
-  GHA -->|"npm ci + build"| GHPages
-  GHPages ==>|"deploy"| CDN
-  CDN -->|"publish"| Site
-  Reader -->|"HTTPS GET"| Site
-  Site -.->|"ссылки"| GH
-  Site -.->|"robots, метрики"| Yandex
-
-  linkStyle 4,5 stroke:#7b1fa2,stroke-width:3px
-  linkStyle 2 stroke:#1565c0,stroke-width:3px
+  Author --> KB
+  Author --> CODE
+  Author --> PLAY
+  Reader --> KB
+  KB -->|"iframe /e/embed/"| CODE
+  KB -->|"iframe /p/embed/"| PLAY
+  KB <-->|"postMessage"| CODE
+  KB <-->|"postMessage"| PLAY
 ```
 
 <span id="it-universe-build-mermaid"></span>
@@ -265,7 +248,7 @@ flowchart TB
     Faster["@docusaurus/faster - v4 future, откл. на Win dev"]:::core
     Preset["preset-classic - docs routeBasePath /"]:::core
     MDX["MDX + remark wikiLink"]:::core
-    Webpack["Webpack / Rspack - demo-chunk-splitting"]:::core
+    Webpack["Webpack / Rspack - lazy chunks демо"]:::core
   end
 
   Out(["build/ или dev server"]):::io
@@ -294,9 +277,11 @@ flowchart TB
 
 ---
 
+<span id="struktura-bazy-znaniy"></span>
+
 ## Структура базы знаний
 
-Проект разработан на Docusaurus, и организован в **6 основных разделов**, и каждый из них имеет свои подразделы. Самый существенный для вас, наверное, это "Энциклопедия", поделённая на **9 подразделов**. Они условные и рассчитаны скорее на порядок и структурность ознакомления.
+Сайт [spirzen.ru](https://spirzen.ru/) собран на Docusaurus. В боковом меню — **семь разделов** (плюс «Общее содержание»); ядро — **Энциклопедия** с **девятью блоками** (условный порядок погружения). Остальные разделы дополняют её: инструменты, глоссарий, лаборатория, контекст, философия.
 
 ---
 
@@ -390,7 +375,7 @@ DevOps-практики, контейнеризация (Docker), оркестр
 ### Открытость
 - Все материалы **бесплатны** и доступны каждому, даже самым вредным товарищам))
 - Проект имеет **открытую лицензию** и позволяет спокойно получать знания.
-- Исходный код сайта и контента хранится в публичном репозитории на GitHub.
+- Исходный код хранится в **нескольких** публичных репозиториях на GitHub (`it-knowledge-base`, `it-code-examples`, `it-play` и др.).
 - Вы можете скачать себе и развернуть, но тогда книга потеряет главное свойство - актуальность. Лучше пользуйтесь этим сайтом - spirzen.ru
 
 ---
@@ -428,11 +413,13 @@ DevOps-практики, контейнеризация (Docker), оркестр
 
 ## Статистика проекта
 
-- **Шесть больших разделов**
-- **2000+ статей** и материалов
-- **15+ языков программирования**
-- **100% бесплатно**
-- **Постоянно обновляется**
+- **7 разделов** в меню (+ «Общее содержание»)
+- **~2900 статей** в энциклопедии, **~3400 материалов** в `docs/` всего
+- **~2312 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/)
+- **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/)
+- **15+ языков программирования** в каталоге примеров
+- **Поиск** по статьям (Ctrl+K), без Algolia
+- **100% бесплатно**, постоянно обновляется
 - Выглядит так, будто я продаю что-то, не так ли? А вот и нет, всё открыто.
 
 ---
@@ -442,17 +429,17 @@ DevOps-практики, контейнеризация (Docker), оркестр
 ### Краткосрочные планы
 - Экспертиза и улучшение существующей информации
 - Поиск, изучение и добавление нового материала
-- Масштабирование разделов
-- Добавление новых статей в существующие разделы
-- Улучшение поиска и навигации
-- Добавление интерактивных элементов
+- Масштабирование разделов и каталогов code/play
+- Добавление новых статей и примеров
+- Улучшение DocSearch и навигации
+- Новые интерактивные демо на play.spirzen.ru
 
 ---
 
 ### Долгосрочные планы
-- Расширение на другие языки
+- Расширение на другие языки интерфейса
 - Создание видео-материалов
-- Разработка мобильного приложения
+- Развитие Android-приложения (APK уже на [главной](https://spirzen.ru/))
 - Интеграция с образовательными платформами
 
 ---

@@ -31,11 +31,14 @@ related:
     doc: encyclopedia/5-languages/5-02-python/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
-import WebPageLayersPlay from '@site/src/components/WebPageLayersPlay';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (один тег, атрибут, пара строк разметки) по-прежнему прямо в markdown.
 
 HTML — **каркас** страницы: заголовки, абзацы, ссылки, формы. Стили добавляет CSS, поведение кнопок — JavaScript. Проверка разметки в браузере — [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) (вкладка Elements). Связь с формулировками рунета — [9.10 / 133](/encyclopedia/9-spinoff/9-10-internet-kultura/133). Разметка описывает **гипертекст** — электронный текст со ссылками между документами; теория терминов (веб-страница, статика и динамика, гиперссылки) — в [основах HTML](./1.md). Сервер дополняет каркас данными — [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro). В статьях энциклопедии дополнительно используют **callout** (выноски на `<div>`) и **`<details>`** — см. [основы HTML](./1.md#callout-i-details).
 
@@ -59,9 +62,9 @@ HTML — **каркас** страницы: заголовки, абзацы, с
 
 > **Ускорение навигации:** `<script type="speculationrules">` (Speculation Rules API) позволяет заранее готовить следующую страницу — переход по ссылке ощущается заметно быстрее.
 
-<BeginnerWebStackHub defaultTab="html" />
+<ExternalPlayEmbed example="data-markup/beginner-web-stack-hub" title="Веб-стек для новичка" minHeight={520} playProps={{ defaultTab: 'html' }} />
 
-<WebPageLayersPlay />
+<ExternalPlayEmbed example="system-network/web-page-layers-play" title="Слои веб-страницы" />
 
 > **Практика целых страниц.** Готовые файлы от `DOCTYPE` до `footer` с разбором тегов (статья, таблица, форма, портфолио): [HTML-страницы целиком](/lab/Примеры/1153). После каркаса — макеты HTML+CSS (центрирование, сетка, адаптив): [HTML + CSS — готовые макеты](/lab/Примеры/110). **Векторные рисунки** в `<svg>` — квадрат, домик, цветок, снежинка с разбором строк: [SVG — рисунки кодом](/lab/Примеры/1119). Тот же каркас на **Tailwind** (классы в `class="..."`, CDN без сборки): [Tailwind — готовые блоки](/lab/Примеры/1117). **Анимации** — fade, спиннер, hover: [CSS-анимации — готовые эффекты](/lab/Примеры/1116). **Отдельные UI-блоки** (кнопки, switch, tooltip, skeleton по мотивам [Uiverse / Galaxy](/lab/Примеры/1155)) — после [типовых элементов в CSS](/encyclopedia/3-data-markup/3-10-css/113). Когда макет понятен, перенесите его в компоненты — [React — компоненты-рецепты](/lab/Примеры/1146) (лендинг, форма, modal).
 

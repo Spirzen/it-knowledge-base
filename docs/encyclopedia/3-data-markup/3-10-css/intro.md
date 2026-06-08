@@ -29,10 +29,10 @@ related:
     doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
-import BoxModelPlay from '@site/src/components/BoxModelPlay';
-import WebPageLayersPlay from '@site/src/components/WebPageLayersPlay';
 
 # О разделе
 
@@ -54,11 +54,11 @@ CSS описывает **внешний вид** разметки HTML: цвет
 
 > **Функции в CSS** (`calc()`, `var()`, `:where()`, `:has()`): [обзор и практика](./119.md), [справочник](./71.md#функции-css); базовая модель именованного вычисления — [функции в коде](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4).
 
-<BeginnerWebStackHub defaultTab="css" />
+<ExternalPlayEmbed example="data-markup/beginner-web-stack-hub" title="Веб-стек для новичка" minHeight={520} playProps={{ defaultTab: 'css' }} />
 
-<WebPageLayersPlay />
+<ExternalPlayEmbed example="system-network/web-page-layers-play" title="Слои веб-страницы" />
 
-<BoxModelPlay />
+<ExternalPlayEmbed example="data-markup/box-model-play" title="CSS Box Model" minHeight={480} />
 
 > **Практика.** Сначала HTML-каркас с разбором тегов — [HTML-страницы целиком](/lab/Примеры/1153). Затем оформление целых страниц (сетка, лендинг, форма входа) с разбором CSS — [HTML + CSS — готовые макеты](/lab/Примеры/110). **Типовые контролы** (кнопки, формы, nav, modal) — [§ Типовые элементы интерфейса](./113.md); углубление и «вау»-паттерны по мотивам [Uiverse / Galaxy](/lab/Примеры/1155). **Tailwind** — те же задачи через utility-классы: [Tailwind — готовые блоки](/lab/Примеры/1117) — после [Flexbox и CSS Grid](./2.md). **Анимации, градиенты, баннеры** — теория и каталог `@keyframes` в [§ Анимации, переходы и трансформации](./6.md), готовый код — [CSS-анимации — готовые эффекты](/lab/Примеры/1116), промо-карусель — [Типовые элементы, hero-баннер](./113.md#промо-карусель-hero-баннер). В JSX — [React — компоненты-рецепты](/lab/Примеры/1146).
 

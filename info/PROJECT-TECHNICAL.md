@@ -1,9 +1,10 @@
 # Вселенная IT — техническая документация проекта
 
 > Служебный справочник репозитория (не публикуется на сайте).  
-> Дата сборки описания: **2026-05-18**.  
+> Дата сборки описания: **2026-06-08**.  
 > Полный перечень путей (3605 строк): [`PROJECT-FILE-TREE.txt`](./PROJECT-FILE-TREE.txt).  
-> Реестр демо и привязка к статьям: [`demo-registry.md`](./demo-registry.md) (`npm run docs:demo-registry`).
+> Реестр демо и привязка к статьям: [`demo-registry.md`](./demo-registry.md) (`npm run docs:demo-registry`).  
+> Экосистема (code/play/management, интеграция): [`ECOSYSTEM.md`](./ECOSYSTEM.md).
 
 ---
 
@@ -23,9 +24,23 @@
 
 Ограничения продакшена:
 
-- Встроенный поиск Algolia **не подключён** (закомментирован в конфиге).
+- Algolia **не используется**; поиск — собственный **DocSearch** (`doc-search-index.json`, Ctrl+K в navbar).
 - Read-only: нет авторизации и пользовательских данных.
 - `onBrokenLinks: 'warn'` — битые ссылки не роняют сборку, но попадают в лог.
+
+### Распределённая архитектура (экосистема)
+
+Помимо этого репозитория, платформа включает:
+
+| Сервис | Домен | Репозиторий | Контент |
+|--------|-------|-------------|---------|
+| Энциклопедия | spirzen.ru | `it-knowledge-base` | ~2360+ статей |
+| Примеры кода | code.spirzen.ru | `it-code-examples` | ~2312 примеров |
+| Интерактив | play.spirzen.ru | `it-play` | ~500 демо |
+| Панель разработчика | localhost:8787 | `it-management` | локально |
+| Android | APK | `itu-mobile-app` | WebView |
+
+Статьи встраивают code и play через **iframe + postMessage** (`ExternalCodeEmbed`, `ExternalPlayEmbed`). Полный протокол — [`ECOSYSTEM.md`](./ECOSYSTEM.md).
 
 ---
 
@@ -111,7 +126,9 @@ sequenceDiagram
 | Живой код (lab) | `@docusaurus/theme-live-codeblock` |
 | Подсветка | Prism (`prism-react-renderer`) |
 | PDF статей | `html2canvas` + `jspdf` (ленивая загрузка в `ArticlePdfExport`) |
-| Деплой | GitHub Actions → ветка `gh-pages` |
+| Деплой | GitHub Actions → `actions/deploy-pages@v4` → spirzen.ru |
+| Embed code/play | iframe + postMessage (см. `ECOSYSTEM.md`) |
+| Поиск | DocSearch → `static/doc-search-index.json` |
 
 ---
 
@@ -288,7 +305,7 @@ theme: { customCss: './src/css/custom.css' },
 - **Prism** — дополнительные языки: bash, cobol, cpp, csharp, docker, fortran, go, java, kotlin, lisp, lua, php, rust, sql и др.
 - **navbar** — `docSidebar` → `docsSidebar` ("Энциклопедия"), ссылки "О проекте", "Манифест", "Поддержать".
 - **footer** — четыре колонки ссылок на разделы и GitHub.
-- **algolia** — закомментирован.
+- **DocSearch** — кастомный клиентский поиск (`src/components/DocSearch/`, Ctrl+K); Algolia закомментирован.
 
 ---
 
@@ -571,7 +588,6 @@ MDX import
 | Компонент | Файл |
 |-----------|------|
 | MobileAppEmulator | `MobileAppEmulator.jsx` |
-| NeuralNetworkDemo | `NeuralNetworkDemo.jsx` |
 | TextEncoderConverter | `TextEncoderConverter.js` |
 | EnglishWordRandomizer | `EnglishWordRandomizer.js` |
 | RandomChecklistItem | `RandomChecklistItem.js` |
@@ -662,7 +678,7 @@ MDX import
 
 ### 9.3. GitHub Actions (`.github/workflows/deploy.yml`)
 
-Триггер: `push` на `main`. Шаги: `checkout` (full history) → Node 20 → `npm ci` → удаление `.docusaurus`, `.cache`, `build` → `npm run build` → `peaceiris/actions-gh-pages` в `gh-pages` (`force_orphan: true`).
+Триггер: `push` на `main`. Шаги: `checkout` (full history) → Node 20 → `npm ci` → удаление `.docusaurus`, `.cache`, `build` → `npm run build` → `actions/deploy-pages@v4` (артефакт `build/`). Альтернатива: деплой через `it-management` → force-push `gh-pages`.
 
 ---
 
@@ -704,11 +720,28 @@ fs.writeFileSync('info/PROJECT-FILE-TREE.txt',tree(r).join('\n'));
 
 ---
 
-### C. Связанные пользовательские документы
+### C. Интеграция с code.spirzen.ru и play.spirzen.ru
+
+Полное описание — [`ECOSYSTEM.md`](./ECOSYSTEM.md). Кратко:
+
+| Компонент | Путь |
+|-----------|------|
+| Code embed | `src/components/ExternalCodeEmbed.jsx` |
+| Play embed | `src/components/ExternalPlayEmbed.jsx` |
+| URL / origins | `src/constants/codeExamples.js`, `playExamples.js`, `embedServiceUrl.js` |
+| Lazy + viewport | `src/remark/lazyMdxDemoImports.js`, `shared/lazyExternalEmbed.js`, `useEmbedViewport.js` |
+| Click gate | `src/components/shared/EmbedClickGate.jsx` |
+
+Env: `IT_CODE_EXAMPLES_URL`, `IT_PLAY_URL` (см. `.env.example`).
+
+---
+
+### D. Связанные пользовательские документы
 
 | Документ | Путь |
 |----------|------|
 | Краткий README | `/README.md` |
+| Экосистема | `info/ECOSYSTEM.md` |
 | О проекте (контент) | `docs/about/project.md` |
 | Манифест | `docs/about/manifest.md` |
 | Система тегов | `docs/about/tags.md` |

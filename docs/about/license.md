@@ -5,7 +5,8 @@ sidebar_label: Лицензия
 slug: /about/license
 ---
 
-import LicenseUsagePlay from '@site/src/components/LicenseUsagePlay.jsx';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 
 # Лицензия
 
@@ -15,7 +16,7 @@ import LicenseUsagePlay from '@site/src/components/LicenseUsagePlay.jsx';
 
 Ребята, я не какая-то коммерческая структура, не корпорация и не богач. В то же время у меня нет жадности, и поэтому нет цели "заработать" - я создал этот проект исключительно чтобы поделиться с миром интересной информацией.
 
-<LicenseUsagePlay />
+<ExternalPlayEmbed example="about/license-usage-play" title="License Usage" />
 
 ---
 

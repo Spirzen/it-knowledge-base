@@ -29,6 +29,8 @@ import DocCardList from '@theme/DocCardList';
 
 # Проектирование — о разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed`. Короткие фрагменты и диаграммы **mermaid** остаются в markdown; интерактив — в [play.spirzen.ru](https://play.spirzen.ru/).
+
 Продолжение [Проектирование и архитектура](../intro.md): **как спроектировать систему** — NFR, API, данные, распределёнка, надёжность. Паттерны GoF — в [соседней папке](../design-patterns/intro.md).
 
 **Чистая архитектура:** [теория (2132)](2132.md) → [практика ASP.NET Core (2143)](2143.md) → [MediatR](/encyclopedia/5-languages/5-05-csharp/4518).

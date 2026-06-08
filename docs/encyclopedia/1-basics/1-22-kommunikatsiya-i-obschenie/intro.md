@@ -25,12 +25,14 @@ related:
     doc: encyclopedia/7-project/7-14-scrum/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 
 # О разделе
 
-<EndUserSoftwareHub defaultApp="messenger" />
+<ExternalPlayEmbed example="basics/end-user-software-hub" title="Софт пользователя — хаб" minHeight={520} playProps={{ defaultApp: 'messenger' }} />
 
 Раздел связывает **мягкие навыки** (ясность, тон, этикет) с **технической базой** (протоколы почты и чатов, формы, инструменты встреч). Общая ось: выбрать канал → снизить "шум" в сообщении → зафиксировать договорённости.
 
@@ -42,6 +44,7 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 |-------|------|---------------------------|
 | [1](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/1) | Цифровая коммуникация: тон, каналы, конфликты в переписке | все, особенно новички |
 | [2](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/2) | Мессенджеры: протоколы, архитектура, боты, командные нормы | разработчики, тимлиды |
+| [9](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/9) | SMS и сотовые сообщения: GSM, 160 символов, MMS/RCS, OTP и алерты | все, особенно новички |
 | [3](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3) | Электронная почта: путь письма (MUA→MTA→MX), SMTP / IMAP / POP3, SPF/DKIM | инженеры, админы |
 | [4](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/4) | Встречи и звонки: модерация, протоколы, деэскалация | все в распределённых командах |
 | [5](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5) | Иерархия, субординация, переписка "вверх/вниз" | исполнители, PM, лиды |

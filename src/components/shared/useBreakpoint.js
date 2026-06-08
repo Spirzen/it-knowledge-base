@@ -5,9 +5,7 @@ const QUERIES = {
   tablet: '(max-width: 1024px)',
 };
 
-/**
- * Адаптивность для демо-компонентов (SSR-safe после mount).
- */
+/** Адаптивность для демо-компонентов (SSR-safe после mount). */
 export default function useBreakpoint() {
   const [state, setState] = useState({
     isMobile: false,

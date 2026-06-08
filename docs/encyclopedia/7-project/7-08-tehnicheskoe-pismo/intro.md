@@ -19,9 +19,10 @@ related:
     doc: encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import WordSimulator from '@site/src/components/WordSimulator.jsx';
-import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 # О разделе
 
@@ -92,9 +93,9 @@ import ExcelSimulator from '@site/src/components/ExcelSimulator.jsx';
 
 Ниже — тренажёры по базовому оформлению в Word и Excel. Они не заменяют раздел про техпис, но помогают, если вам нужно сверстать формальный комплект или таблицу требований. Пошаговые рецепты — в [Word и Excel в проектной документации](1007.md); базовый курс — [Word](/encyclopedia/1-basics/1-15-tekst/211) и [Excel](/encyclopedia/1-basics/1-15-tekst/212). Отчёт с формулами и PDF для вуза — [LaTeX — формулы для отчётов](/lab/Примеры/1137); расчёт корней и производных в Python — [SymPy — уравнения и производные](/lab/Примеры/1118).
 
-<WordSimulator />
+<ExternalPlayEmbed example="tools-misc/word-simulator" title="Word Simulator" />
 
-<ExcelSimulator />
+<ExternalPlayEmbed example="lab/excel-simulator" title="Excel Simulator" minHeight={480} />
 
 <DocCardList />
 

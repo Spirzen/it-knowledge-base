@@ -29,10 +29,14 @@ related:
     doc: encyclopedia/5-languages/5-12-groovy/27
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 Раздел для тех, кто проверяет, что программа **работает так, как задумано** — и умеет это **доказать**. Здесь и теория (виды тестов, жизненный цикл, тест-дизайн), и практика (Postman, pytest, Selenium, нагрузка).
 
@@ -50,7 +54,7 @@ import TestingSectionHub from '@site/src/components/TestingSectionHub.jsx';
 </div>
   </div>
 
-<TestingSectionHub />
+<ExternalPlayEmbed example="project/testing-section-hub" title="Тестирование — хаб раздела" minHeight={560} />
 
 ---
 

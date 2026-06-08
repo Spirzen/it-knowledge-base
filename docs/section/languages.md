@@ -178,6 +178,7 @@ mindmap
 - [5.03. Первая программа на JavaFX](/encyclopedia/5-languages/5-03-java/3111)
 - [5.03. Справочник JavaFX — элементы UI](/encyclopedia/5-languages/5-03-java/3112)
 - [5.03. Структуры проекта](/encyclopedia/5-languages/5-03-java/12)
+- [5.03. IntelliJ IDEA — IDE для разработки на Java](/encyclopedia/5-languages/5-03-java/103)
 - [5.03. Справочник по конфигурациям в Java](/encyclopedia/5-languages/5-03-java/121)
 - [5.03. Первая программа на Java](/encyclopedia/5-languages/5-03-java/13)
 - [5.03. Знаки препинания](/encyclopedia/5-languages/5-03-java/14)

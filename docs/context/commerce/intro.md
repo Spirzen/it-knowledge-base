@@ -5,14 +5,16 @@ slug: /context/commerce/intro
 sidebar_label: Торговля — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Торговля — о разделе
 
 Торговля объединяет офлайн и цифровые каналы, CRM/CDP, OMS и логистику last mile. Раздел дополняет [маркетинг в энциклопедии](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/intro) предметным контекстом ритейла.
 
-<ContextDomainPlay domain="commerce" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'commerce' }} />
 
 ## С чего начать
 

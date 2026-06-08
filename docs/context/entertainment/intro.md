@@ -5,14 +5,16 @@ slug: /context/entertainment/intro
 sidebar_label: Развлечения — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Развлечения — о разделе
 
 Медиа и развлечения — доставка контента, права, реклама и подписки. Отдельно от [видеоигр](/context/video-games/intro): здесь кино, музыка, стриминг и creator economy без игрового netcode и live ops. Техническая база — [аудио и видео](/encyclopedia/1-basics/1-17-audio-i-video/intro) и [CDN в архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/141).
 
-<ContextDomainPlay domain="entertainment" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'entertainment' }} />
 
 ## С чего начать
 

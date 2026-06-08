@@ -23,8 +23,10 @@ related:
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 
 # О разделе
 
@@ -32,7 +34,7 @@ import OsPlatformsHub from '@site/src/components/OsPlatformsHub';
 
 Как одна ОС на сервере соседствует с **ВМ и контейнерами** — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya).
 
-<OsPlatformsHub />
+<ExternalPlayEmbed example="system-network/os-platforms-hub" title="Операционные системы — хаб" minHeight={520} />
 
 ---
 

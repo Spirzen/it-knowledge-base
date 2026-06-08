@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел связывает **теорию ОС** (процессы, потоки, планировщик, IPC) с **практикой разработки** (async/await, пулы потоков, очереди сообщений). Ниже — карта тем; подробные статьи — в списке карточек.
 
+**Листинги на языках программирования (от ~8 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются через `ExternalCodeEmbed`. Русский псевдокод, короткие CLI-команды (1–4 строки), диаграммы **mermaid** и интерактивные демо остаются в статьях — последние подгружаются из [play.spirzen.ru](https://play.spirzen.ru/). Образец интеграции — [Каталог примеров кода](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/617).
+
 <div class="callout callout--tip">
   <div class="callout-title">С чего начать, если «ничего не понятно»</div>
 

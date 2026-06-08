@@ -31,15 +31,18 @@ related:
     doc: context/video-games/intro
 ---
 
-import GameDevHub from '@site/src/components/GameDevHub.jsx';
-import {GameGenreToysHub} from '@site/src/components/GameGenreToysPlay';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-<GameDevHub />
+<ExternalPlayEmbed example="spinoff/game-dev-hub" title="Разработка игр — навигатор" minHeight={560} />
 
 Здесь собран путь от "как вообще делают игры" до работы в **Unity**, **Unreal Engine** и **Roblox**. В **мае 2026** Epic анонсировала **Unreal Engine 6** (демонстрация на обновлённой *Rocket League*); практические главы по Unreal пока ориентированы на **UE 5** — см. [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112) и [Unreal Engine](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4). Материалы рассчитаны на новичка: много пояснений, примеров кода и ссылок между главами — можно читать выборочно, но логичнее двигаться сверху вниз по блокам ниже.
+
+**Тяжёлые листинги** (Luau, C#, Python-практикумы) — на [code.spirzen.ru](https://code.spirzen.ru/); **интерактив** (навигатор ниже, пайплайны, платформы) — на [play.spirzen.ru](https://play.spirzen.ru/).
 
 ---
 
@@ -146,7 +149,7 @@ import DocCardList from '@theme/DocCardList';
 
 Перед Unity или Unreal полезно **пощупать жанр**: аркада, платформер, головоломка, пошаговая стратегия, RPG, roguelike. Ниже — оригинальные учебные игрушки с вкладками (подробнее в [классификации жанров](/encyclopedia/1-basics/1-18-kompyuternye-igry/2)).
 
-<GameGenreToysHub theme="javascript" />
+<ExternalPlayEmbed example="basics/game-genre-toys-hub" title="Жанры игр — обзор" minHeight={480} playProps={{ theme: 'javascript' }} />
 
 ---
 

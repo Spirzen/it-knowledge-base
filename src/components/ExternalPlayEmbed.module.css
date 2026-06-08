@@ -1,0 +1,133 @@
+.wrap {
+  margin: 1.25rem 0;
+  padding: 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  overflow: hidden;
+  overflow-anchor: auto;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px;
+  background: transparent;
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--ifm-color-emphasis-900) 12%, transparent);
+}
+
+.frameHost {
+  position: relative;
+  width: 100%;
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  border: 0;
+  background: transparent;
+  vertical-align: top;
+  color-scheme: normal;
+}
+
+.loadingMask {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  padding: 1rem 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  background: color-mix(in srgb, var(--ifm-background-color) 96%, transparent);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  pointer-events: auto;
+}
+
+.skeletonInline {
+  display: grid;
+  place-items: center;
+  padding: 1rem 1.25rem;
+  font-size: 0.88rem;
+  line-height: 1.45;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  background: var(--ifm-background-color);
+}
+
+.caption {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+  text-align: right;
+}
+
+.caption a {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.caption a:hover {
+  text-decoration: underline;
+}
+
+.skeleton {
+  display: grid;
+  place-items: center;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  min-height: 120px;
+  border: 1px dashed var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+  background: var(--ifm-background-color);
+}
+
+.error {
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--ifm-color-danger);
+  color: var(--ifm-color-danger);
+  background: color-mix(in srgb, var(--ifm-color-danger) 8%, transparent);
+}
+
+[data-theme='dark'] .wrap {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='light'] .wrap,
+html:not([data-theme='dark']) .wrap {
+  border-color: color-mix(in srgb, var(--ifm-color-primary) 18%, var(--ifm-color-emphasis-300));
+}
+
+.wrapFullscreen {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--ifm-background-color);
+}
+
+.wrapFullscreen .frameHost {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapFullscreen .frame {
+  flex: 1;
+  min-height: 0;
+  height: 100% !important;
+}

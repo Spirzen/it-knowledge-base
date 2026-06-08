@@ -33,12 +33,14 @@ related:
     doc: lab/examples/1124
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
-import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
-import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 Python удобен для **первого языка**: читается почти как текст, много материалов для школ и курсов. Это **мультипарадигменный** язык общего назначения с динамической строгой типизацией, автоматическим управлением памятью и эталонной реализацией **CPython**; экосистема пакетов строится вокруг **PyPI** и **pip**.
 
@@ -143,11 +145,11 @@ Python удобен для **первого языка**: читается по�
 
 ---
 
-<BeginnerWebStackHub defaultTab="python" />
+<ExternalPlayEmbed example="data-markup/beginner-web-stack-hub" title="Веб-стек для новичка" minHeight={520} playProps={{ defaultTab: 'python' }} />
 
-<FirstProgramPlay language="python" />
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'python' }} />
 
-<SyntaxComparePlay />
+<ExternalPlayEmbed example="data-markup/syntax-compare-play" title="Сравнение синтаксиса языков" minHeight={420} />
 
 <DocCardList />
 

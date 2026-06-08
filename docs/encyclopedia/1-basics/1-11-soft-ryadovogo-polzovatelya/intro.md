@@ -19,8 +19,10 @@ related:
     doc: encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 
 # О разделе
 
@@ -29,7 +31,7 @@ import EndUserSoftwareHub from '@site/src/components/EndUserSoftwareHub.jsx';
 - **Под капотом** — как устроена программа: процессы, форматы, сеть.
 - **Опыт, мнение и истории** — типичные ошибки, привычки и короткие кейсы.
 
-<EndUserSoftwareHub />
+<ExternalPlayEmbed example="basics/end-user-software-hub" title="Софт пользователя — хаб" minHeight={520} />
 
 <DocCardList />
 

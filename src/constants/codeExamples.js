@@ -1,3 +1,5 @@
+import {resolveEmbedServiceBaseUrl} from './embedServiceUrl';
+
 /**
  * Базовый URL каталога IT Code Examples (без завершающего слэша).
  * Канонический прод: https://code.spirzen.ru — пути /e/embed/<slug>/, без /it-code-examples/.
@@ -20,10 +22,10 @@ export const CODE_EXAMPLES_TRUSTED_ORIGINS = [
  */
 export function getCodeExamplesBaseUrl(siteConfig) {
   const configured = siteConfig?.customFields?.codeExamplesUrl;
-  if (configured) {
-    return configured.replace(/\/$/, '');
-  }
-  return CODE_EXAMPLES_PRODUCTION_URL;
+  return resolveEmbedServiceBaseUrl(configured, {
+    localUrl: 'http://localhost:4321',
+    productionUrl: CODE_EXAMPLES_PRODUCTION_URL,
+  });
 }
 
 /**

@@ -19,12 +19,14 @@ related:
     doc: lab/examples/1136
 ---
 
-import GameIndustryHub from '@site/src/components/GameIndustryHub.jsx';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-<GameIndustryHub />
+<ExternalPlayEmbed example="spinoff/game-industry-hub" title="Игровая индустрия — навигатор" minHeight={560} />
 
 Чтобы связать **рынок и жанры** с личным опытом, параллельно полезен практический каталог [Игры, которые должен попробовать каждый](/tools/games/4): сотни названий, жанровые фильтры и случайная рекомендация — удобно сверять термины из раздела с реальными хитами.
 По инфраструктуре PC-дистрибуции отдельно полезна статья [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435).

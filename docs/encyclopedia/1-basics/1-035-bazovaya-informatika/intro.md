@@ -31,8 +31,10 @@ related:
     doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 
 # О разделе
 
@@ -53,7 +55,7 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
   <div class="callout-title">Как пользоваться</div>
 
   <div class="callout-body">
-  Идите по главам **1 → 8** подряд или выборочно по таблице ниже. Глава **9** — справочник по средам (Godot, Flutter, BeautifulSoup и др.), её можно открывать по мере необходимости.
+  Идите по главам **1 → 8** подряд или выборочно по таблице ниже. После [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) удобно углубиться в [11](/encyclopedia/1-basics/1-035-bazovaya-informatika/11) — память и вычисления. Глава **9** — справочник по средам (Godot, Flutter, BeautifulSoup и др.), её можно открывать по мере необходимости.
 
   Итоги и чек-лист — в конце ([98](/encyclopedia/1-basics/1-035-bazovaya-informatika/98), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99)).
 </div>
@@ -74,6 +76,7 @@ import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
 | 7 | Право и защита информации | [7](/encyclopedia/1-basics/1-035-bazovaya-informatika/7) | [Интеллектуальные права](/encyclopedia/7-project/7-07-intellektualnye-prava/intro) |
 | 8 | Организация рабочего места | [8](/encyclopedia/1-basics/1-035-bazovaya-informatika/8) | [Эргономика клавиатуры](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713) |
 | 9 | Инструменты и среды (справочник) | [9](/encyclopedia/1-basics/1-035-bazovaya-informatika/9) | BeautifulSoup, Godot, Flutter, App Inventor и др. |
+| 11 | Память и вычисления | [11](/encyclopedia/1-basics/1-035-bazovaya-informatika/11) | [Память и накопители](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/12), [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/intro) |
 
 ---
 
@@ -99,7 +102,7 @@ flowchart LR
 
 Если удобнее идти по "живому" дереву тем вместо таблицы, используйте карту —
 
-<InteractiveRoadmap />
+<ExternalPlayEmbed example="about/interactive-roadmap" title="Interactive Roadmap" minHeight={520} />
 
 После просмотра выберите свой ближайший маршрут из 3 шагов — текущая глава -> следующая обязательная -> глава для углубления. Это поможет не потеряться в материале и сразу закрепить порядок прохождения.
 

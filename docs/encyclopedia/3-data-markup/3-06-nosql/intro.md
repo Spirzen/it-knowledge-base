@@ -23,6 +23,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про **NoSQL** (Not Only SQL): альтернативы и дополнения к реляционным СУБД для масштаба, гибкой схемы и распределённых систем.
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (`redis-cli`, `mongosh`, CQL, Cypher) по-прежнему прямо в markdown.
+
 Практика реляционных СУБД из кода (до NoSQL): [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 
 Массовые операции (`insertMany`, `_bulk`, Redis `--pipe`) — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433#nosql-batch).

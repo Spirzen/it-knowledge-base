@@ -17,6 +17,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (один `print`, пара строк Dockerfile, `npm ci`) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 Команды из README (`npm run`, `dotnet run`, `docker compose up`) и кнопка Run в IDE — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Готовые `compose.yaml` для локального стека — [Docker Compose — готовые стеки](/lab/Примеры/11111).
 
 | Шаг | Материал | Зачем |

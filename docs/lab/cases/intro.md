@@ -21,3 +21,5 @@ import DocCardList from '@theme/DocCardList';
 ---
 
 Для проверки HTTP-сценариев в кейсах используйте [утилиту curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) вместе с Postman и DevTools.
+
+Длинные листинги (Spring Boot, Telegram-бот, JSON-парсер, GitHub Pages и workflow) вынесены в [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются через `ExternalCodeEmbed` — текст кейса остаётся здесь, код — в каталоге примеров.

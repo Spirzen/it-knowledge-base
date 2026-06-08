@@ -3,7 +3,8 @@
 > Служебный документ репозитория (`info/`, **не** попадает в `npm run build`).  
 > Язык подписей: русский; имена технологий, путей и API — как в коде.  
 > Детальные таблицы и перечни файлов: [`PROJECT-TECHNICAL.md`](./PROJECT-TECHNICAL.md).  
-> Дата описания: **2026-05-29**.
+> Экосистема (все репозитории, интеграция, postMessage): [`ECOSYSTEM.md`](./ECOSYSTEM.md).  
+> Дата описания: **2026-06-08**.
 
 ---
 
@@ -21,8 +22,10 @@
 | 8 | [Слой демо](#8-слой-интерактивных-демо) | React-виджеты, chunks, движки |
 | 9 | [Поиск и wiki-ссылки](#9-поиск-и-wiki-ссылки) | Индексы и remark-плагин |
 | 10 | [Деплой](#10-деплой-и-хостинг) | CI → GitHub Pages → spirzen.ru |
+| 11 | [Экосистема и satellite-сервисы](#11-экосистема-и-satellite-сервисы) | code.spirzen.ru, play.spirzen.ru, it-management |
+| 12 | [Интеграция iframe + postMessage](#12-интеграция-iframe--postmessage) | ExternalCodeEmbed, ExternalPlayEmbed, протокол |
 
-**Draw.io (одна большая схема):** [`it-universe-architecture.drawio`](./it-universe-architecture.drawio) — открыть в [diagrams.net](https://app.diagrams.net/) или VS Code (расширение Draw.io). Пересборка: `node scripts/generate-architecture-drawio.mjs`.
+**Draw.io (сводная схема экосистемы):** [`it-universe-architecture.drawio`](./it-universe-architecture.drawio) — три домена, интеграция iframe/postMessage, сборка и runtime. Пересборка: `node scripts/generate-architecture-drawio.mjs`; PNG → `static/img/it-universe-architecture.png` (экспорт из Draw.io или CLI `draw.io --export`).
 
 **Mermaid:** проверка в [Mermaid Live](https://mermaid.live) или preview Markdown. Фрагменты можно вставлять в статьи (`markdown.mermaid: true` в `docusaurus.config.js`).
 
@@ -88,7 +91,7 @@ flowchart TD
 
 **Ограничения продакшена:**
 
-- Поиск **Algolia** в конфиге закомментирован → свой клиентский поиск по `doc-search-index.json`.
+- Поиск **Algolia** не подключён → собственный **DocSearch** по `doc-search-index.json` (Ctrl+K).
 - `onBrokenLinks: 'warn'` — битые ссылки не останавливают сборку.
 - Контент: CC BY-NC-SA 4.0; код сайта: MIT.
 
@@ -545,7 +548,7 @@ sequenceDiagram
   participant Action as Actions deploy.yml
   participant Node as Node 20 npm ci
   participant Build as npm run build
-  participant Pages as gh-pages branch
+  participant Artifact as Pages artifact
   participant DNS as spirzen.ru CNAME
   participant User as Читатель
 
@@ -553,8 +556,8 @@ sequenceDiagram
   GH->>Action: on push branches main
   Action->>Node: checkout fetch-depth 0
   Node->>Build: очистка .docusaurus build
-  Build->>Pages: peaceiris/actions-gh-pages
-  Pages->>DNS: GitHub Pages
+  Build->>Artifact: actions/deploy-pages@v4
+  Artifact->>DNS: GitHub Pages
   User->>DNS: HTTPS
 ```
 
@@ -568,7 +571,80 @@ sequenceDiagram
 
 ---
 
-## 11. Потоки данных (сводка)
+## 11. Экосистема и satellite-сервисы
+
+Энциклопедия — **хаб** распределённой платформы. Длинные листинги и тяжёлые демо вынесены в отдельные репозитории с собственными доменами GitHub Pages.
+
+```mermaid
+flowchart LR
+  subgraph prod [Продакшен GitHub Pages]
+    KB[spirzen.ru<br/>it-knowledge-base]
+    CODE[code.spirzen.ru<br/>~2312 примеров]
+    PLAY[play.spirzen.ru<br/>~500 демо]
+  end
+
+  subgraph local [Локально]
+    MGMT[it-management :8787]
+  end
+
+  Reader --> KB
+  KB -->|iframe| CODE
+  KB -->|iframe| PLAY
+  MGMT -.->|start/build/deploy| KB
+  MGMT -.-> CODE
+  MGMT -.-> PLAY
+```
+
+| Сервис | Репозиторий | Стек | Роль |
+|--------|-------------|------|------|
+| spirzen.ru | `it-knowledge-base` | Docusaurus 3.10 + React 19 | Текст, навигация, SEO, DocSearch |
+| code.spirzen.ru | `it-code-examples` | Astro 5 + Shiki | Листинги, практикумы, diff |
+| play.spirzen.ru | `it-play` | Astro 5 + React 19 | Симуляторы, визуализации |
+| — | `it-management` | Node http | Локальная панель (не в проде) |
+| APK | `itu-mobile-app` | .NET MAUI 10 | WebView → spirzen.ru |
+
+**Правило контента:** текст здесь; код > ~30 строк → `it-code-examples`; тяжёлый React → `it-play`.
+
+Полное описание: [`ECOSYSTEM.md`](./ECOSYSTEM.md).
+
+---
+
+## 12. Интеграция iframe + postMessage
+
+### Компоненты энциклопедии
+
+| Файл | Назначение |
+|------|------------|
+| `src/components/ExternalCodeEmbed.jsx` | iframe → `/e/embed/<slug>/` |
+| `src/components/ExternalPlayEmbed.jsx` | iframe → `/p/embed/<slug>/` |
+| `src/constants/codeExamples.js` | URL, `CODE_EXAMPLES_TRUSTED_ORIGINS` |
+| `src/constants/playExamples.js` | URL, `PLAY_TRUSTED_ORIGINS` |
+| `src/constants/embedServiceUrl.js` | localhost:3000 → :4321/:4322 |
+| `src/components/shared/EmbedClickGate.jsx` | click-to-load |
+| `src/components/shared/useEmbedViewport.js` | viewport queue, высота |
+| `src/remark/lazyMdxDemoImports.js` | lazy chunk для External* в MDX |
+
+`customFields` в `docusaurus.config.js`: `codeExamplesUrl`, `playExamplesUrl`.
+
+### Протокол postMessage
+
+| `type` | Сервис | Направление | Payload |
+|--------|--------|-------------|---------|
+| `it-code-embed-height` | code | iframe → parent | `{ height }` |
+| `it-code-theme` | code | parent → iframe | `{ theme }` |
+| `it-code-fullscreen` | code | iframe → parent | `{ active }` |
+| `it-play-embed-height` | play | iframe → parent | `{ height }` |
+| `it-play-theme` | play | parent → iframe | `{ theme }` |
+| `it-play-embed-data` | play | parent → iframe | `{ payload }` |
+| `it-play-fullscreen` | play | iframe → parent | `{ active }` |
+
+CSP дочерних сервисов: `frame-ancestors` spirzen.ru + localhost:3000.
+
+Дочерние скрипты: `it-code-examples/public/scripts/{embed-resize,theme,code-toolbar}.js`, `it-play/public/scripts/{embed-resize,theme}.js`.
+
+---
+
+## 13. Потоки данных (сводка)
 
 ```mermaid
 flowchart LR
@@ -606,7 +682,7 @@ flowchart LR
 
 ---
 
-## 12. Ключевые файлы (шпаргалка)
+## 14. Ключевые файлы (шпаргалка)
 
 | Файл | Роль в архитектуре |
 |------|---------------------|
@@ -625,6 +701,7 @@ flowchart LR
 
 ## Связанные документы
 
+- [`ECOSYSTEM.md`](./ECOSYSTEM.md) — все репозитории, интеграция, стек, postMessage
 - [`PROJECT-TECHNICAL.md`](./PROJECT-TECHNICAL.md) — полный технический справочник, таблицы, frontmatter
 - [`PROJECT-FILE-TREE.txt`](./PROJECT-FILE-TREE.txt) — дерево путей
 - [`demo-registry.md`](./demo-registry.md) — демо ↔ статьи

@@ -13,11 +13,14 @@ related:
     doc: encyclopedia/5-languages/5-23-r/intro
 ---
 
-import PowerShellShellPlay from '@site/src/components/PowerShellShellPlay';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
@@ -57,7 +60,7 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-<PowerShellShellPlay lesson="intro" />
+<ExternalPlayEmbed example="languages/power-shell-shell-play" title="PowerShell Shell" minHeight={480} playProps={{ lesson: 'intro' }} />
 
 Раздел посвящён **PowerShell** — оболочке и языку сценариев для автоматизации Windows, Linux и macOS. Материалы идут от истории и установки к синтаксису, объектному конвейеру, ошибкам и практическим скриптам.
 
@@ -121,7 +124,7 @@ import DocCardList from '@theme/DocCardList';
 - **Модуль** расширяет оболочку (`Import-Module`, PowerShell Gallery).
 - **Политика выполнения** ограничивает запуск файлов `.ps1`, а не "блокирует все команды".
 
-Интерактивные вставки в статьях (`PowerShellShellPlay`, демо операторов и ошибок) дополняют текст, но не заменяют пробу команд в своей среде.
+Интерактивные вставки в статьях (тренажёр PowerShell Shell, демо операторов и ошибок) дополняют текст, но не заменяют пробу команд в своей среде.
 
 ---
 

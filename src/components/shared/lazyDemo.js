@@ -4,8 +4,8 @@ import {demoSkeletonFallback} from './demoFallback';
 /**
  * Ленивая загрузка тяжёлого демо (отдельный chunk).
  * Использование в MDX:
- *   import loadScalingDemo from '@site/src/components/shared/lazyDemo';
- *   const ScalingDemo = loadScalingDemo(() => import('@site/src/components/ScalingDemo'));
+ *   import loadDemo from '@site/src/components/shared/lazyDemo';
+ *   const ArticlePdfExport = loadDemo(() => import('@site/src/components/ArticlePdfExport'));
  */
 export default function lazyDemo(importFn) {
   const LazyComponent = lazy(importFn);

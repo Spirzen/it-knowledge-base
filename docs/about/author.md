@@ -3,8 +3,8 @@ title: Об авторе
 description: Вселенная IT — это мой личный проект, который я создал с целью систематизировать и структурировать знания в области IT. Это полноценная энциклопедия, которая поможет как новичкам, так и опытным…
 ---
 
-import AuthorProfilePlay from '@site/src/components/AuthorProfilePlay.jsx';
-import SpirzenOnlineToolsPanel from '@site/src/components/SpirzenOnlineToolsPanel.jsx';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 
 # Об авторе
 
@@ -25,9 +25,9 @@ import SpirzenOnlineToolsPanel from '@site/src/components/SpirzenOnlineToolsPane
 Скептически отношусь к маркетинговым лозунгам. Верю в системный подход, фундаментальные знания и честный труд.
 Не одобряю поверхностность, но и не поддерживаю узконаправленность.
 
-<AuthorProfilePlay />
+<ExternalPlayEmbed example="about/author-profile-play" title="Author Profile" />
 
-<SpirzenOnlineToolsPanel />
+<ExternalPlayEmbed example="about/spirzen-online-tools-panel" title="Spirzen Online Tools Panel" />
 
 Если вам интересно - нет, я на текущий момент не зарабатываю на этом проекте, я не богат, не получаю огромных зарплат или выплат. Я простой работяга, с доходом ниже среднего, который предпочитает духовное развитие и верность сиюминутным финансовым выгодам. Я стремлюсь к передаче знаний и просвещению.
 

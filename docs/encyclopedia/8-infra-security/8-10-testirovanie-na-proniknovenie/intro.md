@@ -19,6 +19,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел — **маршрут** тестирования на проникновение на базе **Kali Linux**: от установки среды и договорной рамки (PTES, scope, ROE) через разведку и эксплуатацию до pivoting, повышения привилегий и **отчёта коммерческого уровня**. Девять статей покрывают процесс целиком, а не только набор утилит.
 
+**Команды Kali и nmap** (1–15 строк) остаются **прямо в статьях** — это учебные однострочники и короткие сценарии, их удобнее копировать из markdown. Длинные листинги в этом разделе не встречаются; развёрнутые шаблоны отчётов — в [8.09](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/2), практикумы с YAML/SQL/Terraform — в [8.11 PostgreSQL](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro) и [code.spirzen.ru](https://code.spirzen.ru/).
+
 ### Методологический каркас
 
 | Этап PTES | Статьи 8.10 |

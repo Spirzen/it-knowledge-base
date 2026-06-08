@@ -5,8 +5,10 @@
 ### Варианты использования
 
 1. Готовый сайт проекта — [spirzen.ru](https://spirzen.ru/)
-2. Мобильное приложение для Android — APK на [главной](https://spirzen.ru/) (кнопка «Скачать APK») или напрямую: [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk)
-3. Локальная (оффлайн) версия — `git clone`, `npm install`, `npm start`.
+2. Примеры кода — [code.spirzen.ru](https://code.spirzen.ru/) (~2312 листингов)
+3. Интерактивные демо — [play.spirzen.ru](https://play.spirzen.ru/) (~500 симуляторов)
+4. Мобильное приложение для Android — APK на [главной](https://spirzen.ru/) или [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk)
+5. Локальная (оффлайн) версия — `git clone`, `npm install`, `npm start`; удобнее через [it-management](../it-management/) (панель на `:8787`)
 
 Для офлайн-сборки желательно:
 
@@ -25,31 +27,63 @@
 
 ---
 
+## Экосистема (распределённая архитектура)
+
+Платформа — **не один репозиторий**, а три публичных домена + локальная панель и мобильный клиент. Связь между сервисами — **iframe + postMessage** (без общего backend).
+
+| Сервис | Репозиторий | Домен | Роль |
+|--------|-------------|-------|------|
+| Энциклопедия | `it-knowledge-base` (этот) | [spirzen.ru](https://spirzen.ru/) | ~2900 статей, 7 разделов меню, DocSearch |
+| Примеры кода | [it-code-examples](https://github.com/spirzen/it-code-examples) | [code.spirzen.ru](https://code.spirzen.ru/) | ~2312 листингов (Astro + Shiki) |
+| Интерактив | [it-play](https://github.com/spirzen/it-play) | [play.spirzen.ru](https://play.spirzen.ru/) | ~500 демо (Astro + React) |
+| Панель разработчика | [it-management](../it-management/) | `127.0.0.1:8787` | Start/Build/Deploy всех трёх |
+| Android | [itu-mobile-app](../itu-mobile-app/) | APK | WebView → spirzen.ru |
+
+**Правило для новых материалов:** текст здесь; длинный код → `it-code-examples`; тяжёлый интерактив → `it-play`. В статьях — `ExternalCodeEmbed` и `ExternalPlayEmbed` (iframe, lazy load, click-to-load).
+
+Полная документация по интеграции: [`info/ECOSYSTEM.md`](info/ECOSYSTEM.md).
+
+---
+
 ## Технологическая основа
 
 | Область | Стек |
 |--------|------|
 | **Сборка** | Docusaurus 3.10, React 19, SSG |
-| **Контент** | Markdown / MDX в `docs/` |
+| **Контент** | Markdown / MDX в `docs/` (~3400 материалов, ~2900 в энциклопедии) |
 | **Ускорение сборки** | `@docusaurus/faster`, `future.v4` |
 | **Диаграммы** | `@docusaurus/theme-mermaid` |
 | **Живой код** | `@docusaurus/theme-live-codeblock` (lab) |
 | **Подсветка** | Prism (`prism-react-renderer`) |
+| **Поиск** | DocSearch (Ctrl+K) → `doc-search-index.json` |
 | **PDF статей** | `html2canvas` + `jspdf` (ленивая загрузка) |
+| **Embed code/play** | iframe + postMessage (тема, высота, fullscreen) |
 | **Деплой** | GitHub Actions → GitHub Pages (`spirzen.ru`) |
+
+### Интеграция в статьях
+
+| Компонент | Назначение |
+|-----------|------------|
+| `ExternalCodeEmbed.jsx` | iframe → code.spirzen.ru `/e/embed/` |
+| `ExternalPlayEmbed.jsx` | iframe → play.spirzen.ru `/p/embed/` |
+| `src/constants/codeExamples.js` | URL и trusted origins для code |
+| `src/constants/playExamples.js` | URL и trusted origins для play |
+| `src/constants/embedServiceUrl.js` | localhost:3000 → :4321/:4322 |
+| `EmbedClickGate` + `useEmbedViewport` | click-to-load, очередь iframe |
 
 ### Кастомизация UI и навигация
 
 | Компонент / модуль | Назначение |
 |--------------------|------------|
 | `src/theme/DocItem/Layout` | Прогресс главы, кликабельные теги, PDF, блок "См. также" |
-| `src/components/ArticleSeeAlso.jsx` | Карточки соседних статей раздела (`DocCardList` + sidebar) |
+| `src/components/DocSearch/*` | Клиентский полнотекстовый поиск |
+| `src/components/ArticleSeeAlso.jsx` | Карточки соседних статей раздела |
 | `src/components/ArticlePdfExport.jsx` | Экспорт статьи в PDF |
-| `src/components/shared/DemoShell.jsx` | Оболочка интерактивных демо |
+| `src/components/shared/DemoShell.jsx` | Оболочка лёгких inline-демо |
 | `src/components/shared/lazyDemo.js` | Ленивая загрузка тяжёлых виджетов |
-| `src/css/custom.css`, `demo-widgets.css` | Тема, теги, демо, дата обновления |
+| `src/css/custom.css`, `demo-widgets.css` | Тема, теги, демо |
 
-Служебный реестр демо и статей: `info/demo-registry.md` (генерируется `npm run docs:demo-registry`, на сайт не попадает).
+Служебный реестр демо: `info/demo-registry.md` (`npm run docs:demo-registry`).
 
 ---
 
@@ -60,21 +94,22 @@ it-knowledge-base/
 ├── docusaurus.config.js
 ├── sidebars.js
 ├── info/
-│   └── demo-registry.md             # служебный реестр демо (не в docs/)
+│   ├── ECOSYSTEM.md             # экосистема, интеграция, postMessage
+│   ├── ARCHITECTURE.md          # архитектура Docusaurus
+│   ├── PROJECT-TECHNICAL.md     # технический справочник
+│   └── demo-registry.md
 ├── scripts/
-│   ├── generate-demo-registry.mjs   # обновляет info/demo-registry.md
-│   └── normalize-demo-components.mjs
+│   ├── build-doc-search-index.mjs
+│   ├── build-wiki-link-index.mjs
+│   └── generate-demo-registry.mjs
 ├── src/
-│   ├── components/          # интерактивные демо и UI
-│   ├── components/shared/   # DemoShell, lazyDemo, styleTokens
-│   ├── theme/DocItem/       # swizzle layout статьи
-│   ├── css/
-│   ├── pages/index.js       # главная
-│   └── utils/exportArticlePdf.js
-├── docs/                    # статьи (энциклопедия, lab, about, …)
-├── static/
-│   (APK не в static — см. admin/it-universe.apk и GitHub Releases)
-└── package.json
+│   ├── components/          # External*Embed, DocSearch, демо
+│   ├── constants/           # codeExamples, playExamples, embedServiceUrl
+│   ├── theme/DocItem/
+│   └── pages/index.js
+├── docs/                    # статьи (~2360+)
+└── static/
+    └── doc-search-index.json  # генерируется при сборке
 ```
 
 ---
@@ -91,110 +126,90 @@ it-knowledge-base/
 8. **Инфраструктура и безопасность** — DevOps, облака, контейнеры, ИБ  
 9. **Спин-офф** — смежные темы  
 
-В конце статей (кроме `intro`) автоматически выводится блок **"См. также"** — до 12 карточек соседних материалов из того же раздела sidebar, как на страницах "о разделе".
-
 ---
 
 ## Установка и разработка
 
-### Требования
+### Локально (один репозиторий)
 
-- **Node.js** ≥ 20 (`engines` в `package.json`)  
-- **npm** ≥ 9  
-- **Git** — для даты последнего обновления статей при сборке  
-
-### Команды
-
-**Windows:** можно дважды щёлкнуть `start.bat` в корне репозитория — скрипт проверит Node.js, при необходимости выполнит `npm install` и запустит dev-сервер. Окно останется открытым после остановки (Ctrl+C), чтобы можно было прочитать логи.
+**Windows:** `start.bat` — проверит Node.js, `npm install`, dev на `:3000`.
 
 ```bash
 npm install
-npm start              # dev-сервер
-npm run build          # production (нужно ~8 ГБ heap, см. package.json)
+npm start              # dev → localhost:3000
+npm run build          # production (~8 ГБ heap)
 npm run serve          # просмотр build/
-npm run clear          # сброс кэша Docusaurus
-
-npm run docs:demo-registry   # обновить info/demo-registry.md
-npm run docs:collection-titles  # заголовки статей для блока "С чего начать?" на главной
 ```
 
-Сборка создаёт каталог `build/` — полностью статический сайт без backend.
+Для embed code/play локально запустите также `it-code-examples` (`:4321`) и `it-play` (`:4322`), либо используйте [it-management](../it-management/).
 
-Учтите объём: **тысячи статей**, полная сборка может занимать заметное время и память.
+### Команды контента
+
+```bash
+npm run docs:search-index    # doc-search-index.json
+npm run docs:wiki-links      # wikiLinkIndex.json
+npm run docs:redirects       # legacy URL
+npm run docs:demo-registry   # info/demo-registry.md
+npm run docs:collection-titles
+```
 
 ---
 
 ## Деплой
 
-- **GitHub Pages** — workflow `.github/workflows/deploy.yml` на ветке `main`  
-- Checkout с `fetch-depth: 0`, чтобы в footer статей попадала дата последнего коммита  
-- Альтернативы: Vercel, Netlify и любой статический хостинг (`npm run build`, каталог `build/`)
-
-Продакшен: [spirzen.ru](https://spirzen.ru/) (`baseUrl: '/'` в `docusaurus.config.js`).
-
-### Android-приложение (APK)
-
-Скачивание — [GitHub Releases](https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk) (кнопка на главной в `src/pages/index.js`). Локальная копия для разработки — `admin/it-universe.apk` (не попадает в `static/` и не увеличивает `build/`).
+- **GitHub Actions** — `.github/workflows/deploy.yml`, push `main` → `actions/deploy-pages@v4`
+- Checkout `fetch-depth: 0` — даты коммитов в footer статей
+- Альтернатива: панель [it-management](../it-management/) → Deploy
 
 ---
 
 ## Работа с контентом
 
-### Front matter (примеры)
+### Embed в статье
 
-```yaml
----
-title: Операционная система
-sidebar_label: ОС
-tags: [beginner, required, developer]
-see_also: false          # отключить блок "См. также"
-pdf_export: false        # скрыть кнопку PDF
-hide_table_of_contents: true
----
+```jsx
+import ExternalCodeEmbed from '@site/src/components/ExternalCodeEmbed';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+<ExternalCodeEmbed example="python/hello-world" title="Python — Hello World" />
+<ExternalPlayEmbed example="code-basics/block-builder" title="Конструктор блоков" />
 ```
 
-- **tags** — фильтры и кликабельные бейджи (`/tags/...`)  
-- **see_also** — по умолчанию блок включён; на `intro` не показывается  
-- Дата обновления — из истории Git (`showLastUpdateTime: true`), отображается в footer статьи  
-
-### Подключение демо в статье
+### Лёгкий inline-виджет (остаётся в бандле)
 
 ```md
 import TestingBasicsDemo from '@site/src/components/TestingBasicsDemo.jsx';
-
 <TestingBasicsDemo />
 ```
 
-После добавления или переименования демо выполните `npm run docs:demo-registry`.
+---
 
-### Навигация
+## Ограничения
 
-- `sidebars.js` — боковое меню  
-- `docusaurus.config.js` — navbar, footer, Prism, плагины  
+- **Язык** — только русский (`locales: ['ru']`)
+- **Read-only** — без авторизации и пользовательских данных
+- **Поиск** — клиентский DocSearch (Algolia не используется)
+- **Проверка ссылок** — `onBrokenLinks: 'warn'`
 
 ---
 
-## Ограничения и особенности
+## Документация для разработчиков
 
-- **Поиск** — встроенный Algolia отключён; локальный поиск не подключён  
-- **Язык** — только русский (`locales: ['ru']`)  
-- **Read-only** — без авторизации и пользовательских данных  
-- **Проверка ссылок** — `onBrokenLinks: 'warn'`  
+| Файл | Содержание |
+|------|------------|
+| [`info/ECOSYSTEM.md`](info/ECOSYSTEM.md) | Вся экосистема, postMessage, стек |
+| [`info/ARCHITECTURE.md`](info/ARCHITECTURE.md) | Архитектура Docusaurus |
+| [`info/PROJECT-TECHNICAL.md`](info/PROJECT-TECHNICAL.md) | Технический справочник |
 
 ---
 
 ## Лицензия
 
 Контент: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
-Код (конфиг, компоненты, стили): **MIT**.
+Код: **MIT**.
 
 ---
 
 ## Контакт
 
-**Тагиров Тимур Владиславович** — автор и методист.  
-Раздел [Об авторе](https://spirzen.ru/about/author) на сайте.
-
----
-
-*"Вселенная IT" — не обучалка и не блог, а попытка выстроить целостную модель IT-дисциплины.*
+**Тагиров Тимур Владиславович** — [Об авторе](https://spirzen.ru/about/author).

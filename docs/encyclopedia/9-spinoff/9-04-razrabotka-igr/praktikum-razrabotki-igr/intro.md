@@ -43,6 +43,8 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь — **сквозные учебные проекты**: одна игра от пустого окна до играбельного прототипа. Каждый этап даёт **готовые файлы целиком** — скопируй блок в проект и запусти `python main.py` без догадок и пропусков вроде `# ...`.
 
+**Листинги от ~15 строк** (Python, Java, TypeScript и конфиги) живут в [code.spirzen.ru](https://code.spirzen.ru/) и встроены в статьи через `ExternalCodeEmbed` — копирование и подсветка синтаксиса работают так же, как на отдельном сайте. Короткие фрагменты и схемы остаются inline.
+
 Теория движков, пайплайна и гейм-дизайна — в [разделе «Разработка игр»](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro); база **Pygame** и игрового цикла на Python — в [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312). Перед длинным треком удобно прогнать [короткие мини-игры с разбором](/lab/Примеры/1132) (змейка, Pong, Breakout в одном файле). Для **Minecraft Java** без движка — [команды и datapack с разбором](/lab/Примеры/1142) и [теория Minecraft](/encyclopedia/9-spinoff/9-04-razrabotka-igr/21). Для **Unity + C#** — [курс в редакторе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) и [готовые скрипты](/lab/Примеры/1136). Браузерные игры и Canvas — в [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22), типизация — в [TypeScript](/encyclopedia/5-languages/5-01-javascript/30).
 
 | Трек | Проект | Статус | Стек |

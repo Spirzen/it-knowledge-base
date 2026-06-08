@@ -5,14 +5,16 @@ slug: /context/healthcare/intro
 sidebar_label: Здравоохранение — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Здравоохранение — о разделе
 
 Медицинские системы сочетают клинические протоколы, ОМС/ДМС и жёсткие требования к конфиденциальности. Раздел описывает уровни помощи, стандарты обмена данными и риски цифровизации для архитекторов и разработчиков. См. также [информационную безопасность](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro) и [работу с данными](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/1).
 
-<ContextDomainPlay domain="healthcare" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'healthcare' }} />
 
 ## С чего начать
 

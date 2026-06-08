@@ -19,12 +19,14 @@ related:
     doc: encyclopedia/5-languages/5-09-kotlin/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
-import CodeRunPlacePlay from '@site/src/components/CodeRunPlacePlay';
-import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 PHP выполняется **на сервере**: браузер получает уже готовый HTML. Язык изначально задумывали как **препроцессор гипертекста** — программу, которая обрабатывает файл страницы и подставляет динамические фрагменты в [HTML-разметку](/encyclopedia/3-data-markup/3-09-html/1) (гипертекст со ссылками и формами). Часто код вставляют между `<?php` … `?>`; в новых проектах чаще отдельные entrypoint-файлы и шаблоны (Blade, Twig).
 
@@ -86,11 +88,11 @@ PHP выполняется **на сервере**: браузер получа�
 
 ---
 
-<BeginnerWebStackHub defaultTab="php" />
+<ExternalPlayEmbed example="data-markup/beginner-web-stack-hub" title="Веб-стек для новичка" minHeight={520} playProps={{ defaultTab: 'php' }} />
 
-<CodeRunPlacePlay />
+<ExternalPlayEmbed example="data-markup/code-run-place-play" title="Где выполняется код" minHeight={420} />
 
-<FirstProgramPlay language="php" />
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'php' }} />
 
 <DocCardList />
 

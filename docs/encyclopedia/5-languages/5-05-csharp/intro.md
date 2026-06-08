@@ -35,6 +35,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 Раздел посвящён языку **C#** и экосистеме **.NET**. Материалы рассчитаны на разработчиков и архитекторов: от первого проекта до углублённых тем (LINQ, async, ООП, веб, производительность). Массовая загрузка и bulk (отличие от «LINQ в цикле + SaveChanges») — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433); LINQ к БД — [29](./29.md).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
@@ -56,7 +58,8 @@ import DocCardList from '@theme/DocCardList';
 ## С чего начать
 
 1. [C# — язык платформы .NET](/encyclopedia/5-languages/5-05-csharp/1) — проекты, сборки, `using`, консоль.
-1a. [Main и top-level statements — точка входа](/encyclopedia/5-languages/5-05-csharp/49) — `Program.cs`, exe vs library.
+1a. [Visual Studio — IDE для разработки на C#](/encyclopedia/5-languages/5-05-csharp/103) — установка, интерфейс, возможности IDE (рекомендуется перед первой программой).
+1b. [Main и top-level statements — точка входа](/encyclopedia/5-languages/5-05-csharp/49) — `Program.cs`, exe vs library.
 2. [Синтаксис и пунктуация](/encyclopedia/5-languages/5-05-csharp/11), [переменные](/encyclopedia/5-languages/5-05-csharp/17), [типы и приведения](/encyclopedia/5-languages/5-05-csharp/20).
 3. [Пространства имён](/encyclopedia/5-languages/5-05-csharp/12), [nullable](/encyclopedia/5-languages/5-05-csharp/22). Исключения: [теория](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [15](/encyclopedia/5-languages/5-05-csharp/15), [151](/encyclopedia/5-languages/5-05-csharp/151).
 4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции и кортежи](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29) ([справочник операторов](/encyclopedia/5-languages/5-05-csharp/291)).
@@ -157,7 +160,7 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
-| 1 | [Первая программа](./16.md) | Запуск и синтаксис |
+| 1 | [Visual Studio](./103.md) · [Первая программа](./16.md) | IDE, затем запуск и синтаксис |
 | 2 | [ASP.NET Core](./4511.md) | Углубление |
 | 3 | [MAUI](./4513.md) | Углубление |
 

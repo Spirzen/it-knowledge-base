@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useColorMode} from '@docusaurus/theme-common';
@@ -9,6 +9,13 @@ import {
   getCodeExamplesBaseUrl,
   isTrustedCodeExamplesOrigin,
 } from '@site/src/constants/codeExamples';
+import EmbedClickGate from '@site/src/components/shared/EmbedClickGate';
+import {EMBED_CODE_LOADING_MESSAGE} from '@site/src/components/shared/embedMessages';
+import {acquirePageScrollLock} from '@site/src/components/shared/embedScrollLock';
+import {
+  useStableEmbedHeight,
+  useStableIframeSrc,
+} from '@site/src/components/shared/useEmbedViewport';
 import styles from './ExternalCodeEmbed.module.css';
 
 /**
@@ -16,39 +23,50 @@ import styles from './ExternalCodeEmbed.module.css';
  *
  * @param {{ example?: string, src?: string, title: string, minHeight?: number }} props
  */
-function ExternalCodeEmbedInner({example, src, title, minHeight = 200}) {
+function ExternalCodeEmbedInner({autoLoad = false, example, src, title, minHeight = 200}) {
   const {siteConfig} = useDocusaurusContext();
   const {colorMode} = useColorMode();
   const iframeRef = useRef(null);
-  const [height, setHeight] = useState(minHeight);
+  const [userActivated, setUserActivated] = useState(autoLoad);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const hostRef = useRef(null);
+  const {height, scheduleHeight} = useStableEmbedHeight(hostRef, minHeight, isFullscreen);
 
   const baseUrl = getCodeExamplesBaseUrl(siteConfig);
 
-  const embedSrc = useMemo(() => {
-    if (src) {
-      try {
-        const url = new URL(src, window.location.origin);
-        url.searchParams.set('theme', colorMode);
-        return url.toString();
-      } catch {
-        return src;
+  const buildSrc = useCallback(
+    (theme) => {
+      if (src) {
+        try {
+          const url = new URL(src, window.location.origin);
+          url.searchParams.set('theme', theme);
+          return url.toString();
+        } catch {
+          return src;
+        }
       }
-    }
-    if (example) {
-      const url = buildCodeExampleEmbedUrl(baseUrl, example);
-      return `${url}${url.includes('?') ? '&' : '?'}theme=${colorMode}`;
-    }
-    return '';
-  }, [baseUrl, colorMode, example, src]);
+      if (example) {
+        const url = buildCodeExampleEmbedUrl(baseUrl, example);
+        return `${url}${url.includes('?') ? '&' : '?'}theme=${theme}`;
+      }
+      return '';
+    },
+    [baseUrl, example, src],
+  );
+
+  const srcKey = useMemo(() => JSON.stringify({example, src}), [example, src]);
+  const {iframeSrc, releaseLoadSlot} = useStableIframeSrc(buildSrc, userActivated, colorMode, srcKey);
 
   const fullPageUrl = useMemo(() => {
     if (example) return buildCodeExamplePageUrl(baseUrl, example);
-    return embedSrc
+    if (!iframeSrc) return '';
+    return iframeSrc
       .replace(/\/e\/embed\//, '/e/')
       .replace(/\?embed=1$/, '')
       .replace(/\?embed=1&/, '?')
       .replace(/&embed=1/, '');
-  }, [baseUrl, embedSrc, example]);
+  }, [baseUrl, example, iframeSrc]);
 
   const codeExamplesOrigin = useMemo(() => {
     try {
@@ -58,35 +76,82 @@ function ExternalCodeEmbedInner({example, src, title, minHeight = 200}) {
     }
   }, [baseUrl]);
 
-  const sendThemeToFrame = () => {
+  const sendThemeToFrame = useCallback(() => {
     const frame = iframeRef.current;
     if (!frame?.contentWindow) return;
     frame.contentWindow.postMessage(
       {type: 'it-code-theme', theme: colorMode},
       codeExamplesOrigin,
     );
-  };
+  }, [codeExamplesOrigin, colorMode]);
 
   useEffect(() => {
-    if (!embedSrc) return undefined;
+    if (!iframeSrc) {
+      setIsLoaded(false);
+    }
+  }, [iframeSrc]);
+
+  useEffect(() => {
+    if (!iframeSrc || isLoaded) {
+      return undefined;
+    }
+    const timer = window.setTimeout(() => setIsLoaded(true), 4000);
+    return () => window.clearTimeout(timer);
+  }, [iframeSrc, isLoaded]);
+
+  useEffect(() => {
+    if (!iframeSrc) return undefined;
 
     const onMessage = (event) => {
       if (!isTrustedCodeExamplesOrigin(event.origin, siteConfig)) return;
+      const frame = iframeRef.current;
+      if (!frame?.contentWindow || event.source !== frame.contentWindow) return;
+
       const data = event.data;
-      if (!data || data.type !== 'it-code-embed-height') return;
-      if (typeof data.height !== 'number' || data.height < 48) return;
-      setHeight(Math.max(minHeight, Math.ceil(data.height + 2)));
+      if (!data || typeof data !== 'object') return;
+
+      if (data.type === 'it-code-embed-height') {
+        if (!isFullscreen) {
+          scheduleHeight(data.height);
+        }
+        return;
+      }
+
+      if (data.type === 'it-code-fullscreen') {
+        setIsFullscreen(Boolean(data.active));
+      }
     };
 
     window.addEventListener('message', onMessage);
     return () => window.removeEventListener('message', onMessage);
-  }, [embedSrc, minHeight, siteConfig]);
+  }, [iframeSrc, isFullscreen, scheduleHeight, siteConfig]);
+
+  useEffect(() => {
+    if (!isFullscreen) return undefined;
+    const releaseScroll = acquirePageScrollLock();
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') {
+        const frame = iframeRef.current;
+        if (frame?.contentWindow) {
+          frame.contentWindow.postMessage({type: 'it-code-fullscreen-close'}, codeExamplesOrigin);
+        }
+        setIsFullscreen(false);
+      }
+    };
+    window.addEventListener('keydown', onKeyDown);
+    return () => {
+      releaseScroll();
+      window.removeEventListener('keydown', onKeyDown);
+    };
+  }, [codeExamplesOrigin, isFullscreen]);
 
   useEffect(() => {
     sendThemeToFrame();
-  }, [colorMode, embedSrc, codeExamplesOrigin]);
+  }, [colorMode, iframeSrc, sendThemeToFrame]);
 
-  if (!embedSrc) {
+  const showLoadingMask = Boolean(iframeSrc) && !isLoaded;
+
+  if (!buildSrc(colorMode)) {
     return (
       <div className={styles.error} role="alert">
         Укажите <code>example</code> (например <code>python/hello-world</code>) или полный{' '}
@@ -95,23 +160,63 @@ function ExternalCodeEmbedInner({example, src, title, minHeight = 200}) {
     );
   }
 
-  return (
-    <div className={styles.wrap} data-external-code-embed>
-      <iframe
-        ref={iframeRef}
-        className={styles.frame}
-        src={embedSrc}
+  if (!userActivated) {
+    return (
+      <EmbedClickGate
+        kind="code"
         title={title}
-        loading="lazy"
-        style={{height: `${height}px`}}
-        referrerPolicy="no-referrer-when-downgrade"
-        onLoad={sendThemeToFrame}
+        minHeight={minHeight}
+        fullPageUrl={fullPageUrl}
+        onActivate={() => setUserActivated(true)}
       />
-      <div className={styles.caption}>
-        <a href={fullPageUrl} target="_blank" rel="noopener noreferrer">
-          Полный пример на code.spirzen.ru ↗
-        </a>
+    );
+  }
+
+  return (
+    <div
+      ref={hostRef}
+      className={isFullscreen ? `${styles.wrap} ${styles.wrapFullscreen}` : styles.wrap}
+      data-external-code-embed
+      data-fullscreen={isFullscreen ? 'true' : undefined}
+      style={!isFullscreen ? {minHeight: `${minHeight}px`} : undefined}>
+      <div className={styles.frameHost}>
+        {showLoadingMask && !isFullscreen && (
+          <div className={styles.loadingMask} role="status" aria-live="polite">
+            {EMBED_CODE_LOADING_MESSAGE}
+          </div>
+        )}
+        {iframeSrc ? (
+          <iframe
+            ref={iframeRef}
+            className={styles.frame}
+            src={iframeSrc}
+            title={title}
+            loading="eager"
+            style={{height: isFullscreen ? '100%' : `${height}px`}}
+            referrerPolicy="no-referrer-when-downgrade"
+            allow="fullscreen"
+            onLoad={() => {
+              setIsLoaded(true);
+              releaseLoadSlot();
+              sendThemeToFrame();
+            }}
+            onError={() => {
+              releaseLoadSlot();
+            }}
+          />
+        ) : (
+          <div className={styles.skeletonInline} style={{minHeight: `${minHeight}px`}} role="status">
+            {EMBED_CODE_LOADING_MESSAGE}
+          </div>
+        )}
       </div>
+      {!isFullscreen && fullPageUrl && (
+        <div className={styles.caption}>
+          <a href={fullPageUrl} target="_blank" rel="noopener noreferrer">
+            Полный пример на code.spirzen.ru ↗
+          </a>
+        </div>
+      )}
     </div>
   );
 }
@@ -122,8 +227,8 @@ export default function ExternalCodeEmbed(props) {
   return (
     <BrowserOnly
       fallback={
-        <div className={styles.skeleton} style={{minHeight}} aria-hidden="true">
-          Загрузка примера кода…
+        <div className={styles.skeleton} style={{minHeight}} role="status" aria-live="polite">
+          {EMBED_CODE_LOADING_MESSAGE}
         </div>
       }>
       {() => <ExternalCodeEmbedInner {...props} />}

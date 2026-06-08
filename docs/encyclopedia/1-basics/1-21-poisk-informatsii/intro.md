@@ -11,8 +11,10 @@ related:
     doc: encyclopedia/2-system-network/2-05-terminal/104
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import SearchEnginesHub from '@site/src/components/SearchEnginesHub.jsx';
 
 # О разделе
 
@@ -29,7 +31,7 @@ import SearchEnginesHub from '@site/src/components/SearchEnginesHub.jsx';
 
 На ["Вселенной IT"](https://spirzen.ru) материалы энциклопедии ищутся **своим клиентским поиском** в шапке (`Ctrl+K`) — без Algolia и без полнотекстового индекса тела статей. Схема сборки и runtime — в [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3#poisk-po-vselennoy-it).
 
-<SearchEnginesHub />
+<ExternalPlayEmbed example="basics/search-engines-hub" title="Поисковые системы — хаб" minHeight={480} />
 
 <DocCardList />
 

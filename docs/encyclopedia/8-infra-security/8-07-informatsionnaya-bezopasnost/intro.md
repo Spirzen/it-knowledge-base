@@ -21,6 +21,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — forensics-скрипты, Terraform/HCL, примеры уязвимостей и защитный код не раздувают HTML энциклопедии. Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 Раздел для разработчиков и инженеров: от базовых понятий (CIA, риски, OWASP) до практики — защита приложений, криптография, PKI, мониторинг и реагирование на инциденты.
 
 <div class="callout callout--tip">

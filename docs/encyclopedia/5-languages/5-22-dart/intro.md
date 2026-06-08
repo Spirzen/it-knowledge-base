@@ -15,11 +15,14 @@ related:
     doc: encyclopedia/5-languages/5-24-julia/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
-import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 **Dart** — язык от Google: статическая типизация, null safety, `async`/`await` и **изоляты (isolates)** вместо разделяемой памяти между потоками. **Flutter** — UI-фреймворк на Dart; язык при этом самостоятелен (консоль, HTTP, скрипты).
 
@@ -87,9 +90,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 ---
 
-<FirstProgramPlay language="dart" />
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'dart' }} />
 
-<SyntaxComparePlay />
+<ExternalPlayEmbed example="data-markup/syntax-compare-play" title="Сравнение синтаксиса языков" minHeight={420} />
 
 <DocCardList />
 

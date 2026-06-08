@@ -13,8 +13,10 @@ related:
     doc: encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import BlockBuilder from '@site/src/components/BlockBuilder';
 
 # Развитие — о разделе
 
@@ -32,7 +34,7 @@ import BlockBuilder from '@site/src/components/BlockBuilder';
 </div>
   </div>
 
-<BlockBuilder />
+<ExternalPlayEmbed example="code-basics/block-builder" title="Конструктор блоков" minHeight={420} />
 
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/98).
 

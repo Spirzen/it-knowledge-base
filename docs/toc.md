@@ -2151,6 +2151,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-03-java/3">5.03. Справочник по Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/11">5.03. История языка Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/12">5.03. Структура и сборки Java-проектов</a></li>
+  <li><a href="/encyclopedia/5-languages/5-03-java/103">5.03. IntelliJ IDEA — IDE для разработки на Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/13">5.03. Первая программа на Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/14">5.03. Синтаксис и пунктуация в Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/15">5.03. Типы данных и переменные в Java</a></li>

@@ -5,14 +5,16 @@ slug: /context/video-games/intro
 sidebar_label: Видеоигры — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Видеоигры — о разделе
 
 Раздел сочетает предметный обзор индустрии и технические темы для разработчиков. Статьи 4–6, 5, 10 — опорный **IT-трек** (сеть, синхронизация, античит, продакшен); 1–3, 7–9, 11–13 — контекст культуры, истории и бизнеса. Медиа без netcode — в [Развлечениях](/context/entertainment/intro); разработка — [в энциклопедии](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro) и [компьютерных играх](/encyclopedia/1-basics/1-18-kompyuternye-igry/intro).
 
-<ContextDomainPlay domain="video-games" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'video-games' }} />
 
 ## С чего начать
 

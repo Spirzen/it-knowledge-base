@@ -13,9 +13,10 @@ related:
     doc: encyclopedia/5-languages/5-13-rust/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
-import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 # О разделе
 
@@ -85,9 +86,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 ---
 
-<FirstProgramPlay language="ruby" />
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'ruby' }} />
 
-<SyntaxComparePlay />
+<ExternalPlayEmbed example="data-markup/syntax-compare-play" title="Сравнение синтаксиса языков" minHeight={420} />
 
 <DocCardList />
 

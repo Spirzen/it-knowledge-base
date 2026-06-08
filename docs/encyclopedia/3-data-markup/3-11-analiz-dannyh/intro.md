@@ -33,6 +33,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна формула DAX, пара строк pandas, SQL до staging) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 Раздел выстроен от общей картины к инструментам и прикладным сценариям. Рекомендуемый порядок для первого прохода:
 
 0. **Старт из Excel** — [212 — основы](/encyclopedia/1-basics/1-15-tekst/212) → [1139 — формулы с разбором](/lab/Примеры/1139) → [429 — EDA в Excel](/encyclopedia/3-data-markup/3-11-analiz-dannyh/429) → [42 — статистика](/encyclopedia/3-data-markup/3-11-analiz-dannyh/42) → [430 — маршрут Excel → R → Python](/encyclopedia/3-data-markup/3-11-analiz-dannyh/430) → ветка [424 — Python](/encyclopedia/3-data-markup/3-11-analiz-dannyh/424) или [5-23-r/103 — R](/encyclopedia/5-languages/5-23-r/103).

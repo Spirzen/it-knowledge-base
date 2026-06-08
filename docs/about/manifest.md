@@ -3,7 +3,8 @@ title: Манифест
 description: Вселенная IT — это долгосрочный, открытый и образовательный проект, направленный на систематизацию, унификацию и проверяемое хранение знаний в области информационных технологий. Его цель — создание…
 ---
 
-import ManifestPrinciplesPlay from '@site/src/components/ManifestPrinciplesPlay.jsx';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 
 # Манифест
 
@@ -27,7 +28,7 @@ import ManifestPrinciplesPlay from '@site/src/components/ManifestPrinciplesPlay.
   </div>
 
 
-<ManifestPrinciplesPlay />
+<ExternalPlayEmbed example="about/manifest-principles-play" title="Manifest Principles" />
 
 ---
 

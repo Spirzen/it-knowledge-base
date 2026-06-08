@@ -11,6 +11,9 @@ const root = path.join(__dirname, '..');
 const componentsDir = path.join(root, 'src', 'components');
 const docsDir = path.join(root, 'docs');
 const outFile = path.join(root, 'info', 'demo-registry.md');
+const manifestPath = path.join(root, '..', 'it-play', 'scripts', 'plays-manifest.json');
+
+const EMBED_RE = /ExternalPlayEmbed[^>]*\sexample=["']([^"']+)["']/g;
 
 const SKIP_DIRS = new Set(['shared']);
 const SKIP_FILES = new Set([
@@ -94,6 +97,73 @@ function scanDocImports() {
   return usage;
 }
 
+function loadPlayManifest() {
+  if (!fs.existsSync(manifestPath)) {
+    return {manifest: {}, exampleToKey: new Map()};
+  }
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  const exampleToKey = new Map();
+  for (const [key, meta] of Object.entries(manifest)) {
+    if (meta?.example) exampleToKey.set(meta.example, key);
+  }
+  return {manifest, exampleToKey};
+}
+
+function scanPlayEmbeds() {
+  /** @type {Map<string, Set<string>>} */
+  const usage = new Map();
+  const {exampleToKey} = loadPlayManifest();
+
+  for (const file of walkDocs(docsDir)) {
+    const text = fs.readFileSync(file, 'utf8');
+    const docId = docIdFromFile(file);
+    let match;
+    EMBED_RE.lastIndex = 0;
+    while ((match = EMBED_RE.exec(text)) !== null) {
+      const slug = match[1].replace(/^\/+|\/+$/g, '');
+      const key = exampleToKey.get(slug) ?? slug;
+      if (!usage.has(key)) usage.set(key, new Set());
+      usage.get(key).add(docId);
+    }
+  }
+
+  return usage;
+}
+
+function buildPlayEmbedSection(playUsage, manifest) {
+  if (!playUsage.size) return '';
+
+  const aiRows = [];
+  const otherRows = [];
+
+  for (const [key, docIds] of [...playUsage.entries()].sort((a, b) =>
+    a[0].localeCompare(b[0], 'ru'),
+  )) {
+    const meta = manifest[key];
+    const slug = meta?.example ?? key;
+    const location = slug.startsWith('ai/') ? aiRows : otherRows;
+    location.push(
+      `| **${key}** | \`it-play/${slug}\` | ${docIds.size} | ${formatArticleLinks(docIds)} |`,
+    );
+  }
+
+  let section = `
+## IT Play (ExternalPlayEmbed)
+
+Демо, вынесенные в [it-play](https://play.spirzen.ru/) — подключение через \`ExternalPlayEmbed\`, не через \`src/components/\`.
+
+| Компонент | Путь play | Статей | Статьи (примеры) |
+| --- | --- | ---: | --- |
+${[...aiRows, ...otherRows].join('\n')}
+`;
+
+  if (aiRows.length) {
+    section += `\nКатегория **ai/** — ${aiRows.length} демо.\n`;
+  }
+
+  return section;
+}
+
 function formatArticleLinks(docIds, max = 5) {
   const sorted = [...docIds].sort((a, b) => a.localeCompare(b, 'ru'));
   const shown = sorted.slice(0, max);
@@ -105,7 +175,7 @@ function formatArticleLinks(docIds, max = 5) {
   return links.join(', ');
 }
 
-function buildMarkdown(componentFiles, usage) {
+function buildMarkdown(componentFiles, usage, playUsage, manifest, exampleToKey) {
   const generatedAt = new Date().toISOString().slice(0, 10);
   const rows = [];
   let usedCount = 0;
@@ -133,7 +203,8 @@ function buildMarkdown(componentFiles, usage) {
     const fileExists = componentFiles.some(
       (f) => f.replace(/\.(jsx|js|tsx|ts)$/, '') === key,
     );
-    if (!fileExists) {
+    const inPlay = exampleToKey.has(key) || manifest[key];
+    if (!fileExists && !inPlay) {
       orphanDocs.push({key, docIds});
     }
   }
@@ -167,13 +238,16 @@ ${orphanDocs
 | --- | --- | ---: | --- |
 ${rows.join('\n')}
 ${orphanSection}
+${buildPlayEmbedSection(playUsage, manifest)}
 `;
 }
 
 function main() {
   const componentFiles = listComponentFiles();
   const usage = scanDocImports();
-  const markdown = buildMarkdown(componentFiles, usage);
+  const playUsage = scanPlayEmbeds();
+  const {manifest, exampleToKey} = loadPlayManifest();
+  const markdown = buildMarkdown(componentFiles, usage, playUsage, manifest, exampleToKey);
   fs.mkdirSync(path.dirname(outFile), {recursive: true});
   fs.writeFileSync(outFile, markdown, 'utf8');
   console.log(`Wrote ${outFile}`);

@@ -17,11 +17,14 @@ related:
     doc: encyclopedia/5-languages/5-10-go/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
-import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 **Smalltalk** — один из родоначальников ООП и GUI: объекты и **сообщения**, динамическая типизация, среда **image**, IDE внутри системы. Язык создали в Xerox PARC в 1970-х; эталоном для индустрии стал **Smalltalk-80** (образ + виртуальная машина). От Simula пришли классы и наследование; к Java, Ruby, Objective-C и Python ушли посылка сообщений, живая среда и идеи рефакторинга, шаблонов и XP. Для обучения ориентируемся на **[Pharo](./13.md)** (Playground, Class Browser); родственные реализации — **[Squeak](./14.md)**, **VisualWorks**, **GNU Smalltalk**. UI и игры в разделе — на **[Morphic](./15.md)**; для нативной графики — **[Raylib](./16.md)**, для анализа кода — **[Glamorous Toolkit](./17.md)**.
 
@@ -93,9 +96,9 @@ import SyntaxComparePlay from '@site/src/components/SyntaxComparePlay';
 
 ---
 
-<FirstProgramPlay language="smalltalk" />
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'smalltalk' }} />
 
-<SyntaxComparePlay />
+<ExternalPlayEmbed example="data-markup/syntax-compare-play" title="Сравнение синтаксиса языков" minHeight={420} />
 
 <DocCardList />
 

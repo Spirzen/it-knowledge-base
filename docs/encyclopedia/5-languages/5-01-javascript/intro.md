@@ -29,12 +29,14 @@ related:
     doc: lab/examples/1119
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import BeginnerWebStackHub from '@site/src/components/BeginnerWebStackHub';
-import WebPageLayersPlay from '@site/src/components/WebPageLayersPlay';
-import FirstProgramPlay from '@site/src/components/FirstProgramPlay';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 JavaScript оживляет страницу в **браузере**. Это не Java — разные языки.
 
@@ -203,11 +205,11 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 ---
 
-<BeginnerWebStackHub defaultTab="javascript" />
+<ExternalPlayEmbed example="data-markup/beginner-web-stack-hub" title="Веб-стек для новичка" minHeight={520} playProps={{ defaultTab: 'javascript' }} />
 
-<FirstProgramPlay language="javascript" />
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'javascript' }} />
 
-<WebPageLayersPlay />
+<ExternalPlayEmbed example="system-network/web-page-layers-play" title="Слои веб-страницы" />
 
 <DocCardList />
 

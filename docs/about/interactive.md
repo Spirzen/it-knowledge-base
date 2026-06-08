@@ -6,39 +6,13 @@ description: >-
 slug: /about/interactive
 ---
 
-import KeyboardPlay from '@site/src/components/KeyboardPlay';
-import TouchTypingFingerPlay from '@site/src/components/TouchTypingFingerPlay';
-import TypingSpeedTrainerPlay from '@site/src/components/TypingSpeedTrainerPlay';
-import IoDevicesPlay from '@site/src/components/IoDevicesPlay';
-import DataTypesPlay from '@site/src/components/DataTypesPlay';
-import ComputerArchitecturePlay from '@site/src/components/ComputerArchitecturePlay';
-import CompilerSimulator from '@site/src/components/CompilerSimulator.jsx';
-import InteractiveRoadmap from '@site/src/components/InteractiveRoadmap';
-import BlockBuilder from '@site/src/components/BlockBuilder';
-import WebAppArchitecturePlay from '@site/src/components/WebAppArchitecturePlay.jsx';
-import NetworkStackExplorerPlay from '@site/src/components/NetworkStackExplorerPlay';
-import HttpRequestAnalyzer from '@site/src/components/HttpRequestAnalyzer';
-import HTMLPlayground from '@site/src/components/HTMLPlayground.js';
-import SqlJoinTrainer from '@site/src/components/SqlJoinTrainer';
-import AlgoCodeVisualizer from '@site/src/components/AlgoCodeVisualizer.jsx';
-import GitEmulator from '@site/src/components/GitEmulator.jsx';
-import BashShellPlay from '@site/src/components/BashShellPlay';
-import NeuralNetworkDemo from '@site/src/components/NeuralNetworkDemo.jsx';
-import AiAgentPlay from '@site/src/components/AiAgentPlay.jsx';
-import TestingBasicsDemo from '@site/src/components/TestingBasicsDemo.jsx';
-import BpmnReferencePlay from '@site/src/components/BpmnReferencePlay.jsx';
-import InfraDiagramStudio from '@site/src/components/InfraDiagramStudio.jsx';
-import DockerComposePlay from '@site/src/components/DockerComposePlay';
-import CicdValidationLayersPlay from '@site/src/components/CicdValidationLayersPlay.jsx';
-import EnglishVocabularyTrainer from '@site/src/components/EnglishVocabularyTrainer';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 import LabTrainersHub from '@site/src/components/LabTrainersHub';
-import ArchiStylerPlay from '@site/src/components/ArchiStylerPlay.jsx';
-import DatabaseSchemaViewerPlay from '@site/src/components/DatabaseSchemaViewerPlay.jsx';
-import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 # Интерактив
 
-Текст в энциклопедии дополняется **интерактивом**: более четырёхсот кастомных React-компонентов встроены прямо в статьи. Это не сторонние виджеты и не скриншоты — эмуляторы Office и терминала, пошаговые визуализаторы алгоритмов, схемы сети и инфраструктуры, тренажёры SQL и Git, игровые мини-демо и многое другое. Можно нажимать, переключать режимы и сразу видеть, как устроена тема.
+Текст в энциклопедии дополняется **интерактивом**: кастомные React-демо встроены в статьи через [play.spirzen.ru](https://play.spirzen.ru/) (iframe, lazy load). Это не сторонние виджеты и не скриншоты — эмуляторы Office и терминала, пошаговые визуализаторы алгоритмов, схемы сети и инфраструктуры, тренажёры SQL и Git, игровые мини-демо и многое другое.
 
 Ниже — **витрина лучших демо** в порядке возрастания сложности: сначала раздел "Основы", затем система и сеть, данные, код, языки, ИИ, проект и инфраструктура. Полный каталог привязан к статьям энциклопедии; здесь — ориентиры, с которых удобно начать.
 
@@ -54,7 +28,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статьи: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14), [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
 
-<TypingSpeedTrainerPlay />
+<ExternalPlayEmbed example="about/typing-speed-trainer-play" title="Typing Speed Trainer" />
 
 ---
 
@@ -64,7 +38,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Советы для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
 
-<KeyboardPlay />
+<ExternalPlayEmbed example="about/keyboard-play" title="Keyboard" />
 
 ---
 
@@ -74,7 +48,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14)
 
-<TouchTypingFingerPlay />
+<ExternalPlayEmbed example="about/touch-typing-finger-play" title="Touch Typing Finger" />
 
 ---
 
@@ -84,7 +58,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Базовые операции с данными](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/1)
 
-<IoDevicesPlay />
+<ExternalPlayEmbed example="about/io-devices-play" title="Io Devices" />
 
 ---
 
@@ -94,7 +68,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/3)
 
-<DataTypesPlay />
+<ExternalPlayEmbed example="about/data-types-play" title="Data Types" />
 
 ---
 
@@ -104,7 +78,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Архитектура персонального компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7)
 
-<ComputerArchitecturePlay />
+<ExternalPlayEmbed example="about/computer-architecture-play" title="Computer Architecture" />
 
 ---
 
@@ -114,7 +88,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Программа](/encyclopedia/1-basics/1-19-programma/1)
 
-<CompilerSimulator />
+<ExternalPlayEmbed example="about/compiler-simulator" title="Compiler Simulator" />
 
 ---
 
@@ -124,7 +98,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Дорожная карта изучения](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1)
 
-<InteractiveRoadmap />
+<ExternalPlayEmbed example="about/interactive-roadmap" title="Interactive Roadmap" minHeight={520} />
 
 ---
 
@@ -134,7 +108,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/7)
 
-<BlockBuilder />
+<ExternalPlayEmbed example="code-basics/block-builder" title="Конструктор блоков" minHeight={420} />
 
 ---
 
@@ -144,7 +118,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Фронтенд и бэкенд](/encyclopedia/1-basics/1-23-frontend-i-bekend/1)
 
-<WebAppArchitecturePlay />
+<ExternalPlayEmbed example="about/web-app-architecture-play" title="Web App Architecture" />
 
 ---
 
@@ -154,7 +128,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 Статья: [Ключевые термины и фразы](/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2)
 
-<EnglishVocabularyTrainer />
+<ExternalPlayEmbed example="about/english-vocabulary-trainer" title="English Vocabulary Trainer" />
 
 ---
 
@@ -176,7 +150,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [Сеть и интернет](/encyclopedia/2-system-network/2-03-set-i-internet/211)
 
-<NetworkStackExplorerPlay />
+<ExternalPlayEmbed example="about/network-stack-explorer-play" title="Network Stack Explorer" />
 
 ---
 
@@ -186,7 +160,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [HTTP как основа веб-интеграций](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118)
 
-<HttpRequestAnalyzer />
+<ExternalPlayEmbed example="about/http-request-analyzer" title="Http Request Analyzer" />
 
 ---
 
@@ -198,7 +172,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [HTML](/encyclopedia/3-data-markup/3-09-html/3)
 
-<HTMLPlayground />
+<ExternalPlayEmbed example="about/html-playground" title="HTML Playground" />
 
 ---
 
@@ -208,7 +182,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [SQL](/encyclopedia/3-data-markup/3-07-sql/55)
 
-<SqlJoinTrainer />
+<ExternalPlayEmbed example="about/sql-join-trainer" title="Sql Join Trainer" />
 
 ---
 
@@ -226,7 +200,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [Основы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1)
 
-<DatabaseSchemaViewerPlay />
+<ExternalPlayEmbed example="about/database-schema-viewer-play" title="Database Schema Viewer" />
 
 ---
 
@@ -238,7 +212,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [Что такое код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1)
 
-<AlgoCodeVisualizer />
+<ExternalPlayEmbed example="about/algo-code-visualizer" title="Algo Code Visualizer" minHeight={420} />
 
 ---
 
@@ -248,7 +222,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Статья: [Основы Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112)
 
-<GitEmulator />
+<ExternalPlayEmbed example="about/git-emulator" title="Git Emulator" minHeight={420} />
 
 ---
 
@@ -260,7 +234,7 @@ SQL, терминалы, Git, Docker и практика — переключе�
 
 Полная онлайн-версия (минималистичный холст, экспорт PNG в один клик): [Schema Maker Online](https://spirzen.github.io/SchemaMakerOnline/).
 
-<SchemaMakerPlay defaultDocName="Витрина" title="Schema Maker" />
+<ExternalPlayEmbed example="about/schema-maker-play" title="Schema Maker" />
 
 ---
 
@@ -272,7 +246,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Отдельное приложение для архитектурных схем и паттернов: [ArchiStyler Online](https://spirzen.github.io/ArchiStylerOnline/).
 
-<ArchiStylerPlay defaultPattern="mvp" />
+<ExternalPlayEmbed example="about/archi-styler-play" title="Archi Styler" />
 
 ---
 
@@ -284,7 +258,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [Bash](/encyclopedia/5-languages/5-25-bash/11)
 
-<BashShellPlay />
+<ExternalPlayEmbed example="about/bash-shell-play" title="Bash Shell" />
 
 ---
 
@@ -296,7 +270,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [Нейросети](/encyclopedia/6-ai/6-03-neyroseti/1)
 
-<NeuralNetworkDemo />
+<ExternalPlayEmbed example="ai/neural-network-demo" title="Neural Network Demo" />
 
 ---
 
@@ -306,7 +280,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [Модели и инструменты](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/111)
 
-<AiAgentPlay />
+<ExternalPlayEmbed example="ai/ai-agent-play" title="Ai Agent" />
 
 ---
 
@@ -318,7 +292,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [Тестирование](/encyclopedia/7-project/7-05-testirovanie/1)
 
-<TestingBasicsDemo />
+<ExternalPlayEmbed example="about/testing-basics-demo" title="Testing Basics Demo" />
 
 ---
 
@@ -328,7 +302,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [Аналитика](/encyclopedia/7-project/7-04-analitika/129)
 
-<BpmnReferencePlay />
+<ExternalPlayEmbed example="about/bpmn-reference-play" title="Bpmn Reference" />
 
 ---
 
@@ -340,7 +314,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [Микросервисы и интеграция](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1)
 
-<InfraDiagramStudio />
+<ExternalPlayEmbed example="about/infra-diagram-studio" title="Infra Diagram Studio" minHeight={480} />
 
 ---
 
@@ -350,7 +324,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [Контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1111)
 
-<DockerComposePlay />
+<ExternalPlayEmbed example="about/docker-compose-play" title="Docker Compose" />
 
 ---
 
@@ -360,7 +334,7 @@ UML-диаграмма, шаблоны паттернов (MVP, Strategy, Factor
 
 Статья: [DevOps и CI/CD](/encyclopedia/8-infra-security/8-04-devops-ci-cd/13)
 
-<CicdValidationLayersPlay />
+<ExternalPlayEmbed example="about/cicd-validation-layers-play" title="Cicd Validation Layers" />
 
 ---
 

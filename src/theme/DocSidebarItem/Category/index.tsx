@@ -32,7 +32,7 @@ import {translate} from '@docusaurus/Translate';
 import useIsBrowser from '@docusaurus/useIsBrowser';
 import DocSidebarItems from '@theme/DocSidebarItems';
 import DocSidebarItemLink from '@theme/DocSidebarItem/Link';
-import TechIcon from '@site/src/components/TechIcon';
+import LazyTechIcon from '@site/src/components/shared/LazyTechIcon';
 import {getTechIdForSidebarCategory} from '@site/src/data/techArticlePages';
 import type {Props} from '@theme/DocSidebarItem/Category';
 
@@ -137,7 +137,7 @@ function CategoryLinkLabel({label, href}: {label: string; href?: string}) {
     <span title={label} className={styles.categoryLinkLabel}>
       {techId ? (
         <>
-          <TechIcon
+          <LazyTechIcon
             techId={techId}
             variant="mono"
             size={16}

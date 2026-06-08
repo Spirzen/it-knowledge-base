@@ -13,8 +13,10 @@ related:
     doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import GamepadPlay from '@site/src/components/GamepadPlay';
 
 # Видеоигры — о разделе
 
@@ -32,7 +34,7 @@ import GamepadPlay from '@site/src/components/GamepadPlay';
 </div>
   </div>
 
-<GamepadPlay />
+<ExternalPlayEmbed example="basics/gamepad-play" title="Gamepad" />
 
 Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/98).
 

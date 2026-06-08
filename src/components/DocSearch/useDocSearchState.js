@@ -1,6 +1,7 @@
 import {useCallback, useDeferredValue, useEffect, useMemo, useRef, useState} from 'react';
 import {useHistory} from '@docusaurus/router';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {scheduleIdleWork} from '@site/src/components/shared/deferredIdle';
 import {loadDocSearchIndex, searchDocs} from './docSearchEngine';
 
 function isModKey(event) {
@@ -94,45 +95,54 @@ export function useDocSearchState() {
   }, [ensureIndex]);
 
   useEffect(() => {
-    const onKeyDown = (event) => {
-      if (isModKey(event) && event.key.toLowerCase() === 'k') {
-        const tag = event.target?.tagName;
-        if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') {
+    let removeKeydown = () => {};
+
+    const cancelIdle = scheduleIdleWork(() => {
+      const onKeyDown = (event) => {
+        if (isModKey(event) && event.key.toLowerCase() === 'k') {
+          const tag = event.target?.tagName;
+          if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') {
+            return;
+          }
+          event.preventDefault();
+          focusNavbarSearch();
           return;
         }
-        event.preventDefault();
-        focusNavbarSearch();
-        return;
-      }
 
-      if (!activeSurface || results.length === 0) {
-        return;
-      }
+        if (!activeSurface || results.length === 0) {
+          return;
+        }
 
-      const tag = event.target?.tagName;
-      if (tag !== 'INPUT' && tag !== 'TEXTAREA') {
-        return;
-      }
+        const tag = event.target?.tagName;
+        if (tag !== 'INPUT' && tag !== 'TEXTAREA') {
+          return;
+        }
 
-      if (event.key === 'ArrowDown') {
-        event.preventDefault();
-        setActiveIndex((i) => (i + 1) % results.length);
-      } else if (event.key === 'ArrowUp') {
-        event.preventDefault();
-        setActiveIndex((i) => (i - 1 + results.length) % results.length);
-      } else if (event.key === 'Enter') {
-        event.preventDefault();
-        goToActive();
-      } else if (event.key === 'Escape') {
-        event.preventDefault();
-        closePanel();
-        navbarInputRef.current?.blur();
-        heroInputRef.current?.blur();
-      }
+        if (event.key === 'ArrowDown') {
+          event.preventDefault();
+          setActiveIndex((i) => (i + 1) % results.length);
+        } else if (event.key === 'ArrowUp') {
+          event.preventDefault();
+          setActiveIndex((i) => (i - 1 + results.length) % results.length);
+        } else if (event.key === 'Enter') {
+          event.preventDefault();
+          goToActive();
+        } else if (event.key === 'Escape') {
+          event.preventDefault();
+          closePanel();
+          navbarInputRef.current?.blur();
+          heroInputRef.current?.blur();
+        }
+      };
+
+      document.addEventListener('keydown', onKeyDown);
+      removeKeydown = () => document.removeEventListener('keydown', onKeyDown);
+    });
+
+    return () => {
+      cancelIdle();
+      removeKeydown();
     };
-
-    document.addEventListener('keydown', onKeyDown);
-    return () => document.removeEventListener('keydown', onKeyDown);
   }, [activeSurface, results.length, goToActive, closePanel, focusNavbarSearch]);
 
   return {

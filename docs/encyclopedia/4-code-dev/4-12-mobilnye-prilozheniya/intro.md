@@ -29,6 +29,8 @@ import DocCardList from '@theme/DocCardList';
 
 **Мобильные приложения** — отдельная дисциплина: ограниченная батарея, сенсорный UI, магазины приложений, фоновые режимы iOS/Android. Здесь — обзор платформ, стеки (Kotlin, Swift, React Native, MAUI, Flutter) и публикация.
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (команды CLI, пара строк `gradle`, `app.json`) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/). Образец интеграции — [Каталог примеров кода](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/617).
+
 Если вы уже делали [веб на React](/encyclopedia/5-languages/5-01-javascript/272) ([галерея компонентов](/lab/Примеры/1146)) или [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), многие идеи (компоненты, состояние) переносятся — меняются жизненный цикл экрана и правила Store. Кроссплатформа на Dart — [Flutter](/encyclopedia/5-languages/5-22-dart/311) и [готовые виджеты с разбором (Lab)](/lab/Примеры/1154).
 
 ---

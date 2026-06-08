@@ -17,14 +17,17 @@ related:
     doc: encyclopedia/5-languages/5-12-groovy/27
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 import DocCardList from '@theme/DocCardList';
-import OrderDeskIntegrationPlay from '@site/src/components/OrderDeskIntegrationPlay';
 
 # О разделе
 
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — FastAPI, ASP.NET Core, OpenAPI и DTO не раздувают HTML энциклопедии. Короткие фрагменты (JSON-схемы, curl, команды запуска) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+
 Здесь — **практикум**, который закрепляет навыки проектирования и реализации **безопасных масштабируемых REST API** и **WebSocket-сервисов**. Вы пройдёте путь от контракта до работающего кода на двух стеках и проверите интеграцию в Postman.
 
-<OrderDeskIntegrationPlay />
+<ExternalPlayEmbed example="infra-security/order-desk-integration-play" title="Order Desk — REST и WebSocket" minHeight={560} />
 
 Песочница выше повторяет статусы **201**, **409**, **502** и события **WebSocket** без установки Python и .NET. Локальный код из шагов 4–5 даёт тот же контракт на реальных портах `8100` и `5200`.
 

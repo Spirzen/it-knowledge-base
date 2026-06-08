@@ -1,476 +1,140 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
-  <diagram id="it-universe-architecture" name="Архитектура">
-    <mxGraphModel dx="4157" dy="3367" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="2600" math="0" shadow="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="it-knowledge-base/generate-architecture-drawio" version="24.7.17" type="device">
+  <diagram id="it-universe-architecture" name="Архитектура экосистемы">
+    <mxGraphModel dx="5000" dy="3200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="5000" pageHeight="3000" math="0" shadow="0">
       <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="title" value="Вселенная IT (it-knowledge-base) — архитектура системы" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;fontColor=#1a1a2e;" parent="1" vertex="1">
-          <mxGeometry x="430" y="18" width="1200" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="2" value="SSG · Docusaurus 3.10 · React 19 · без backend · spirzen.ru · 2026-05-29 · info/ARCHITECTURE.md" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#666666;" parent="1" vertex="1">
-          <mxGeometry x="760" y="68" width="900" height="24" as="geometry" />
-        </mxCell>
-        <mxCell id="laneCtx" value="0. Контекст (C4)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=14;collapsible=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="110" width="1950" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="3" value="Автор / редактор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="laneCtx" vertex="1">
-          <mxGeometry x="80" y="40" width="50" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="4" value="Читатель" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" parent="laneCtx" vertex="1">
-          <mxGeometry x="1820" y="40" width="50" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="5" value="GitHub&lt;br&gt;spirzen/it-knowledge-base" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" parent="laneCtx" vertex="1">
-          <mxGeometry x="550" y="30" width="200" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="7" value="GitHub Actions&lt;br&gt;deploy.yml" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" parent="laneCtx" vertex="1">
-          <mxGeometry x="900" y="45" width="150" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="8" value="Ветка gh-pages&lt;br&gt;статический HTML" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="laneCtx" vertex="1">
-          <mxGeometry x="1140" y="40" width="150" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="9" value="https://spirzen.ru&lt;br&gt;GitHub Pages + CNAME" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" parent="laneCtx" vertex="1">
-          <mxGeometry x="1420" y="40" width="180" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="10" value="Read-only · нет auth/БД · Algolia отключён · onBrokenLinks: warn" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="laneCtx" vertex="1">
-          <mxGeometry x="1230" y="140" width="320" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="6" value="Локально&lt;br&gt;npm start / build" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="laneCtx" vertex="1">
-          <mxGeometry x="250" y="45" width="140" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="12" value="PR" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="laneCtx" source="6" target="5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="11" value="push main" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="laneCtx" source="3" target="6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="3qLbwfARwLfmSwBugCEa-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="laneCtx" source="8" target="9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="laneRepo" value="1. Репозиторий — источники" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;collapsible=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="340" width="780" height="1180" as="geometry" />
-        </mxCell>
-        <mxCell id="17" value="docusaurus.config.js&lt;br&gt;sidebars.js · package.json&lt;br&gt;routeBasePath: / · i18n: ru" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;spacingLeft=8;" parent="laneRepo" vertex="1">
-          <mxGeometry x="60" y="45" width="280" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="docsGroup" value="docs/ (~2360 статей MD/MDX)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRepo" vertex="1">
-          <mxGeometry x="40" y="155" width="450" height="520" as="geometry" />
-        </mxCell>
-        <mxCell id="18" value="encyclopedia/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;9 блоков · ~1923 статьи&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="40" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="19" value="1-basics … 9-spinoff&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;лендинги /section/*&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="92" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="20" value="lab/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;вопросы, тренажёры, кейсы&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="144" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="21" value="tools/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;справочник инструментов&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="196" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="22" value="glossary/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;алфавит + [[wiki]]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="248" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="23" value="context/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;отрасли: fintech, IoT…&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="300" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="24" value="philosophy/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;рефлексия, этика&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="352" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="25" value="about/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;проект, автор, манифест&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="404" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="26" value="section/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;лендинги разделов&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="20" y="456" width="170" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="27" value="toc.md&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;Общее содержание&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="docsGroup" vertex="1">
-          <mxGeometry x="220" y="144" width="210" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="28" value="Навигация&lt;br&gt;sidebars.js → docsSidebar&lt;br&gt;_category_.json (~195)&lt;br&gt;sidebarCollections.js (Подборки)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;spacingLeft=8;" parent="docsGroup" vertex="1">
-          <mxGeometry x="220" y="35" width="210" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="srcGroup" value="src/" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRepo" vertex="1">
-          <mxGeometry x="40" y="700" width="380" height="450" as="geometry" />
-        </mxCell>
-        <mxCell id="29" value="theme/ (swizzle)&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;DocItem/Layout, DocSearch, Sidebar, Root…&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="srcGroup" vertex="1">
-          <mxGeometry x="20" y="40" width="290" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="30" value="components/ (~350+)&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;*Play, *Demo, *Hub, shared/*Engine&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" parent="srcGroup" vertex="1">
-          <mxGeometry x="20" y="98" width="290" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="31" value="remark/wikiLink.js&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;opt-in [[термин]]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="srcGroup" vertex="1">
-          <mxGeometry x="20" y="156" width="290" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="32" value="css/custom.css&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;теги, callout, demo-widgets.css&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="srcGroup" vertex="1">
-          <mxGeometry x="20" y="214" width="290" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="33" value="pages/index.js&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;главная /, APK download&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="srcGroup" vertex="1">
-          <mxGeometry x="20" y="272" width="290" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="34" value="clientModules/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;itDesignThemeInit.js&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="srcGroup" vertex="1">
-          <mxGeometry x="20" y="330" width="290" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="35" value="data/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;wikiLinkIndex, sidebarCollections…&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="srcGroup" vertex="1">
-          <mxGeometry x="20" y="388" width="290" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="36" value="static/&lt;br&gt;CNAME · robots · img · downloads/APK&lt;br&gt;doc-search-index.json (ген.)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="laneRepo" vertex="1">
-          <mxGeometry x="460" y="700" width="280" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="37" value="scripts/*.mjs&lt;br&gt;wiki-links · search-index · redirects&lt;br&gt;collection-titles · demo-registry…" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" parent="laneRepo" vertex="1">
-          <mxGeometry x="460" y="810" width="280" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="38" value="info/ · .cursor/rules/&lt;br&gt;&lt;b&gt;не в npm run build&lt;/b&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="laneRepo" vertex="1">
-          <mxGeometry x="460" y="920" width="280" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="39" value=".github/workflows/deploy.yml" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" parent="laneRepo" vertex="1">
-          <mxGeometry x="460" y="1010" width="280" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="laneBuild" value="2. Сборка (npm start / npm run build)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;collapsible=0;" parent="1" vertex="1">
-          <mxGeometry x="840" y="340" width="680" height="1180" as="geometry" />
-        </mxCell>
-        <mxCell id="npmStart" value="npm start / build" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" parent="laneBuild" vertex="1">
-          <mxGeometry x="40" y="60" width="130" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="preGroup" value="Препроцессоры (каждый start/build)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneBuild" vertex="1">
-          <mxGeometry x="30" y="140" width="330" height="280" as="geometry" />
-        </mxCell>
-        <mxCell id="wWiki" value="docs:wiki-links&lt;br&gt;build-wiki-link-index.mjs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" parent="preGroup" vertex="1">
-          <mxGeometry x="20" y="30" width="250" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="wSearch" value="docs:search-index&lt;br&gt;build-doc-search-index.mjs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" parent="preGroup" vertex="1">
-          <mxGeometry x="20" y="110" width="250" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="wRedir" value="docs:redirects&lt;br&gt;build-doc-redirects.mjs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" parent="preGroup" vertex="1">
-          <mxGeometry x="20" y="190" width="250" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="outWiki" value="wikiLinkIndex.json" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="laneBuild" vertex="1">
-          <mxGeometry x="440" y="180" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="outSearch" value="doc-search-index.json" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="laneBuild" vertex="1">
-          <mxGeometry x="440" y="260" width="150" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="outRedir" value="docLegacyRedirects.json" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="laneBuild" vertex="1">
-          <mxGeometry x="440" y="340" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="40" value="docs:collection-titles&lt;br&gt;(только build)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" parent="laneBuild" vertex="1">
-          <mxGeometry x="75" y="450" width="200" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="dcGroup" value="Docusaurus 3.10 + @docusaurus/faster" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneBuild" vertex="1">
-          <mxGeometry x="30" y="530" width="720" height="620" as="geometry" />
-        </mxCell>
-        <mxCell id="41" value="preset-classic&lt;br&gt;plugin-content-docs · blog: false" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" parent="dcGroup" vertex="1">
-          <mxGeometry x="20" y="45" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="42" value="MDX + remark wikiLink&lt;br&gt;numberPrefixParser: false" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="dcGroup" vertex="1">
-          <mxGeometry x="240" y="45" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="43" value="themes:&lt;br&gt;mermaid · live-codeblock" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="dcGroup" vertex="1">
-          <mxGeometry x="440" y="45" width="180" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="3qLbwfARwLfmSwBugCEa-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.518;entryY=0.014;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="dcGroup" source="44" target="45">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="44" value="plugins:&lt;br&gt;• client-redirects (+ legacy JSON, folder renames)&lt;br&gt;• it-konva-canvas-fallback&lt;br&gt;• it-design-theme-inject (data-design)&lt;br&gt;• demo-chunk-splitting → demo-widgets" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="dcGroup" vertex="1">
-          <mxGeometry x="20" y="130" width="600" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="45" value="Webpack/Rspack client&lt;br&gt;splitChunks: src/components → demo-widgets" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="dcGroup" vertex="1">
-          <mxGeometry x="20" y="250" width="300" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="buildOut" value="build/&lt;br&gt;SSG HTML + JS chunks + assets" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" parent="dcGroup" vertex="1">
-          <mxGeometry x="420" y="300" width="180" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="46" value="Поток статьи при сборке:&lt;br&gt;docs/*.md → MDX parse → wikiLink → DocItem Layout metadata →&lt;br&gt;опционально import демо → HTML страницы" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="dcGroup" vertex="1">
-          <mxGeometry x="20" y="470" width="580" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="47" value="Офлайн (не в start/build): docs:fix-* · enrich-* · toc · demo-registry" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="laneBuild" vertex="1">
-          <mxGeometry x="230" y="30" width="380" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="laneDeploy" value="3. Деплой и хостинг" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;collapsible=0;" parent="1" vertex="1">
-          <mxGeometry x="1550" y="350" width="270" height="550" as="geometry" />
-        </mxCell>
-        <mxCell id="61" value="push → main&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;триггер deploy.yml&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="laneDeploy" vertex="1">
-          <mxGeometry x="50" y="10" width="200" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="62" value="Node 20 · npm ci&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;fetch-depth: 0 (git dates)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="laneDeploy" vertex="1">
-          <mxGeometry x="50" y="107" width="200" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="64" value="rm .docusaurus build&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;чистая сборка&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="laneDeploy" vertex="1">
-          <mxGeometry x="50" y="200" width="200" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="66" value="npm run build&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;→ ./build&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="laneDeploy" vertex="1">
-          <mxGeometry x="50" y="300" width="200" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="68" value="peaceiris/gh-pages&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;ветка gh-pages&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="laneDeploy" vertex="1">
-          <mxGeometry x="50" y="410" width="200" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="laneRuntime" value="4. Runtime в браузере (после загрузки SSG)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;collapsible=0;" parent="1" vertex="1">
-          <mxGeometry x="40" y="1560" width="1960" height="870" as="geometry" />
-        </mxCell>
-        <mxCell id="browser" value="Браузер читателя" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="1540" y="60" width="200" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="shellGroup" value="Оболочка сайта" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="40" y="130" width="320" height="320" as="geometry" />
-        </mxCell>
-        <mxCell id="70" value="theme/Root — DocSidebarFallbackProvider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="shellGroup" vertex="1">
-          <mxGeometry x="20" y="40" width="280" height="44" as="geometry" />
-        </mxCell>
-        <mxCell id="71" value="Navbar + DocSearch (Ctrl+K)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="shellGroup" vertex="1">
-          <mxGeometry x="20" y="90" width="280" height="44" as="geometry" />
-        </mxCell>
-        <mxCell id="72" value="DocSidebar — фильтр, ресайз" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="shellGroup" vertex="1">
-          <mxGeometry x="20" y="140" width="280" height="44" as="geometry" />
-        </mxCell>
-        <mxCell id="73" value="Footer — 4 колонки" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="shellGroup" vertex="1">
-          <mxGeometry x="20" y="190" width="280" height="44" as="geometry" />
-        </mxCell>
-        <mxCell id="74" value="data-design — localStorage + inject script" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="shellGroup" vertex="1">
-          <mxGeometry x="20" y="240" width="280" height="44" as="geometry" />
-        </mxCell>
-        <mxCell id="pagesGroup" value="Страницы" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="380" y="130" width="260" height="310" as="geometry" />
-        </mxCell>
-        <mxCell id="docPage" value="Статья docs/*&lt;br&gt;DocItem/Layout swizzle" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;spacingLeft=8;" parent="pagesGroup" vertex="1">
-          <mxGeometry x="20" y="30" width="230" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="75" value="Главная /&lt;br&gt;src/pages/index.js — hero, разделы, APK" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="pagesGroup" vertex="1">
-          <mxGeometry x="10" y="190" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="chromeGroup" value="Обвязка статьи (DocItem/Layout)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="660" y="130" width="340" height="380" as="geometry" />
-        </mxCell>
-        <mxCell id="76" value="DocBreadcrumbs · DocVersionBanner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="chromeGroup" vertex="1">
-          <mxGeometry x="20" y="40" width="310" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="77" value="ArticlePdfExport (html2canvas + jspdf lazy)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="chromeGroup" vertex="1">
-          <mxGeometry x="20" y="84" width="310" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="78" value="TOC mobile/desktop · ChapterProgress" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="chromeGroup" vertex="1">
-          <mxGeometry x="20" y="128" width="310" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="79" value="DocItemContent — MDX body" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="chromeGroup" vertex="1">
-          <mxGeometry x="20" y="172" width="310" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="80" value="ArticleRelated (frontmatter related:)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="chromeGroup" vertex="1">
-          <mxGeometry x="20" y="216" width="310" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="81" value="ArticleSeeAlso (sidebar соседи)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="chromeGroup" vertex="1">
-          <mxGeometry x="20" y="260" width="310" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="82" value="DocItemPaginator · кликабельные HTML-теги → /tags/*" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="chromeGroup" vertex="1">
-          <mxGeometry x="20" y="304" width="310" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="demoGroup" value="Демо-компоненты (~350+ файлов)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="1040" y="130" width="560" height="420" as="geometry" />
-        </mxCell>
-        <mxCell id="83" value="MDX: import from @site/src/components/…&lt;br&gt;*Play.jsx · *Demo.jsx · *Hub.jsx&lt;br&gt;shared/*Engine.js — логика&lt;br&gt;DemoShell · lazyDemo · withBrowserOnly" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" parent="demoGroup" vertex="1">
-          <mxGeometry x="20" y="45" width="320" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="84" value="webpack chunk &lt;b&gt;demo-widgets&lt;/b&gt;&lt;br&gt;minSize 20kb · priority 25&lt;br&gt;грузится только если есть import" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" parent="demoGroup" vertex="1">
-          <mxGeometry x="20" y="150" width="320" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="85" value="SpirzenOnlineToolsPanel · RandomArticle · хабы разделов…" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" parent="demoGroup" vertex="1">
-          <mxGeometry x="20" y="235" width="320" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="86" value="npm run docs:demo-registry → info/demo-registry.md" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="demoGroup" vertex="1">
-          <mxGeometry x="20" y="300" width="320" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="searchGroup" value="Поиск и wiki (клиент)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="1450" y="180" width="480" height="280" as="geometry" />
-        </mxCell>
-        <mxCell id="87" value="GET /doc-search-index.json&lt;br&gt;DocSearchEngine → DocSearchModal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="searchGroup" vertex="1">
-          <mxGeometry x="20" y="45" width="440" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="88" value="[[термин]] уже разрешены при сборке&lt;br&gt;remark wikiLink + wikiLinkIndex.json" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="searchGroup" vertex="1">
-          <mxGeometry x="20" y="120" width="440" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="89" value="Algolia — не используется" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="searchGroup" vertex="1">
-          <mxGeometry x="20" y="195" width="440" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="encBlocks" value="9 блоков encyclopedia (контент на диске)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="40" y="500" width="1560" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="91" value="1-basics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="20" y="50" width="110" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="92" value="2-system-network" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="150" y="50" width="130" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="93" value="3-data-markup" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="300" y="50" width="130" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="94" value="4-code-dev" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="450" y="50" width="130" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="95" value="5-languages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="600" y="50" width="140" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="96" value="6-ai" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="760" y="50" width="140" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="97" value="7-project" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="920" y="50" width="150" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="98" value="8-infra-security" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="1100" y="50" width="150" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="99" value="9-spinoff" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="encBlocks" vertex="1">
-          <mxGeometry x="1270" y="50" width="140" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="100" value="Легенда:&lt;br&gt;🟡 конфиг · 🟢 скрипт/CI · 🔵 Docusaurus/артефакт · 🟣 демо · 🔴 runtime статьи · пунктир — опционально" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="1480" y="730" width="400" height="90" as="geometry" />
-        </mxCell>
-        <mxCell id="101" value="Потоки данных: Markdown (git) → scripts → Docusaurus SSG → build/ + JSON → gh-pages → spirzen.ru → React hydration + fetch index + localStorage темы" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" parent="laneRuntime" vertex="1">
-          <mxGeometry x="40" y="750" width="1370" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="3qLbwfARwLfmSwBugCEa-112" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="laneRuntime" source="78" target="docPage">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="5" target="7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="14" value="npm ci + build" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="7" target="8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="16" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="4" target="9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="npmStart" target="wWiki" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1110" y="425" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="wWiki" target="wSearch" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="50" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="wSearch" target="wRedir" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="wWiki" target="outWiki" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="wSearch" target="outSearch" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="wRedir" target="outRedir" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="54" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="wRedir" target="40" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="55" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="40" target="41" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="wRedir" target="41" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1170" y="697" />
-              <mxPoint x="1170" y="860" />
-              <mxPoint x="1070" y="860" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="57" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="41" target="42" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="58" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="42" target="43" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="60" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="45" target="buildOut" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="63" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="61" target="62" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="65" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="62" target="64" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="67" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="64" target="66" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="69" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="66" target="68" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="102" value="конфиг" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="17" target="npmStart" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="103" value="контент" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="18" target="npmStart" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="290" y="490" />
-              <mxPoint x="1480" y="490" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="104" value="React" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="30" target="45" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="480" y="1164" />
-              <mxPoint x="480" y="1140" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="105" value="артефакт" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="buildOut" target="8" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1255" y="1190" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="106" value="публикация" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="buildOut" target="9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="107" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;exitX=0.778;exitY=0.998;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="9" target="browser" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2020" y="215" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="1600" y="280" />
-              <mxPoint x="1910" y="280" />
-              <mxPoint x="1910" y="1645" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="108" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="browser" target="docPage" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="109" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="docPage" target="76" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="110" value="MDX import" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="docPage" target="83" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="630" y="1670" />
-              <mxPoint x="1340" y="1670" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="111" value="fetch" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;entryX=0.837;entryY=0.054;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="outSearch" target="87" edge="1">
-          <mxGeometry x="0.1703" y="20" relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1540" y="630" />
-              <mxPoint x="1540" y="1260" />
-              <mxPoint x="1878" y="1260" />
-            </Array>
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="112" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" parent="1" source="outWiki" target="42" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1490" y="550" />
-              <mxPoint x="1490" y="890" />
-              <mxPoint x="1210" y="890" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="staticGroup" value="Статика с CDN" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" parent="1" vertex="1">
-          <mxGeometry x="1550" y="920" width="270" height="200" as="geometry" />
-        </mxCell>
-        <mxCell id="90" value="/img · /downloads/it-universe.apk&lt;br&gt;favicon · robots · yandex verify" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" parent="staticGroup" vertex="1">
-          <mxGeometry x="20" y="45" width="220" height="70" as="geometry" />
-        </mxCell>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="Вселенная IT — архитектура экосистемы" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=26;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1"><mxGeometry x="120" y="16" width="1400" height="44" as="geometry"/></mxCell>
+        <mxCell id="2" value="3 домена GitHub Pages · iframe + postMessage · без общего backend · 2026-06-08 · info/ECOSYSTEM.md" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1"><mxGeometry x="120" y="58" width="1100" height="22" as="geometry"/></mxCell>
+        <mxCell id="laneEco" value="0. Экосистема (продакшен)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="40" y="90" width="4920" height="260" as="geometry"/></mxCell>
+        <mxCell id="3" value="Автор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="laneEco"><mxGeometry x="30" y="80" width="50" height="80" as="geometry"/></mxCell>
+        <mxCell id="4" value="Читатель" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="laneEco"><mxGeometry x="4680" y="80" width="50" height="80" as="geometry"/></mxCell>
+        <mxCell id="repoKb" value="GitHub&lt;br&gt;it-knowledge-base" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" vertex="1" parent="laneEco"><mxGeometry x="200" y="50" width="150" height="80" as="geometry"/></mxCell>
+        <mxCell id="repoCode" value="GitHub&lt;br&gt;it-code-examples" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" vertex="1" parent="laneEco"><mxGeometry x="200" y="150" width="150" height="80" as="geometry"/></mxCell>
+        <mxCell id="repoPlay" value="GitHub&lt;br&gt;it-play" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontStyle=1;" vertex="1" parent="laneEco"><mxGeometry x="380" y="150" width="130" height="80" as="geometry"/></mxCell>
+        <mxCell id="siteKb" value="spirzen.ru&lt;br&gt;~2900 статей&lt;br&gt;Docusaurus 3.10" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" vertex="1" parent="laneEco"><mxGeometry x="1200" y="55" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="siteCode" value="code.spirzen.ru&lt;br&gt;~2312 примеров&lt;br&gt;Astro 5 + Shiki" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneEco"><mxGeometry x="1480" y="55" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="sitePlay" value="play.spirzen.ru&lt;br&gt;~500 демо&lt;br&gt;Astro + React 19" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneEco"><mxGeometry x="1760" y="55" width="200" height="90" as="geometry"/></mxCell>
+        <mxCell id="5" value="it-management&lt;br&gt;127.0.0.1:8787&lt;br&gt;(локально)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneEco"><mxGeometry x="600" y="165" width="160" height="70" as="geometry"/></mxCell>
+        <mxCell id="6" value="itu-mobile-app&lt;br&gt;APK · WebView → spirzen.ru" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneEco"><mxGeometry x="2100" y="165" width="200" height="70" as="geometry"/></mxCell>
+        <mxCell id="7" value="Read-only · нет auth/БД · DocSearch (Ctrl+K) · Algolia не используется" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneEco"><mxGeometry x="2400" y="165" width="340" height="70" as="geometry"/></mxCell>
+        <mxCell id="laneInt" value="0b. Интеграция iframe · postMessage" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="40" y="370" width="4920" height="200" as="geometry"/></mxCell>
+        <mxCell id="19" value="&lt;b&gt;Родитель (spirzen.ru)&lt;/b&gt;&lt;br&gt;ExternalCodeEmbed.jsx · ExternalPlayEmbed.jsx&lt;br&gt;EmbedClickGate · useEmbedViewport · lazyExternalEmbed&lt;br&gt;codeExamples.js · playExamples.js · embedServiceUrl.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneInt"><mxGeometry x="40" y="50" width="420" height="120" as="geometry"/></mxCell>
+        <mxCell id="20" value="&lt;b&gt;Code → parent&lt;/b&gt;&lt;br&gt;it-code-embed-height · it-code-fullscreen&lt;br&gt;&lt;b&gt;parent → code&lt;/b&gt;&lt;br&gt;it-code-theme · it-code-fullscreen-close" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneInt"><mxGeometry x="500" y="50" width="300" height="120" as="geometry"/></mxCell>
+        <mxCell id="21" value="&lt;b&gt;Play → parent&lt;/b&gt;&lt;br&gt;it-play-embed-height · it-play-fullscreen&lt;br&gt;&lt;b&gt;parent → play&lt;/b&gt;&lt;br&gt;it-play-theme · it-play-embed-data · it-play-fullscreen-close" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneInt"><mxGeometry x="830" y="50" width="320" height="120" as="geometry"/></mxCell>
+        <mxCell id="22" value="CSP frame-ancestors: spirzen.ru, localhost:3000&lt;br&gt;Проверка event.origin · trusted origins whitelist&lt;br&gt;Локально KB :3000 → code :4321, play :4322" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneInt"><mxGeometry x="1180" y="50" width="380" height="120" as="geometry"/></mxCell>
+        <mxCell id="laneRepo" value="1. it-knowledge-base — источники" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="40" y="590" width="1280" height="1100" as="geometry"/></mxCell>
+        <mxCell id="23" value="docusaurus.config.js&lt;br&gt;customFields: codeExamplesUrl, playExamplesUrl&lt;br&gt;sidebars.js · routeBasePath: /" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneRepo"><mxGeometry x="30" y="50" width="300" height="80" as="geometry"/></mxCell>
+        <mxCell id="docsGroup" value="docs/ (~3400 материалов)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="laneRepo"><mxGeometry x="30" y="150" width="580" height="480" as="geometry"/></mxCell>
+        <mxCell id="24" value="encyclopedia/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;9 блоков · ~2900 статей&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="40" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="25" value="about/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;проект, автор, интерактив&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="88" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="26" value="lab/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;~175 — тренажёры, экзамены&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="136" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="27" value="tools/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;справочник инструментов&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="184" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="28" value="glossary/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;алфавит + [[wiki]]&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="232" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="29" value="context/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;отраслевой контекст&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="280" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="30" value="philosophy/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;рефлексия, этика&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="328" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="31" value="section/&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;лендинги /section/*&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="376" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="32" value="toc.md&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;Общее содержание&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="docsGroup"><mxGeometry x="20" y="424" width="250" height="44" as="geometry"/></mxCell>
+        <mxCell id="33" value="7 разделов меню + toc&lt;br&gt;sidebars.js · _category_.json&lt;br&gt;sidebarCollections.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneRepo"><mxGeometry x="340" y="150" width="260" height="90" as="geometry"/></mxCell>
+        <mxCell id="srcGroup" value="src/" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="laneRepo"><mxGeometry x="30" y="660" width="580" height="400" as="geometry"/></mxCell>
+        <mxCell id="34" value="ExternalCodeEmbed · ExternalPlayEmbed&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;iframe host + postMessage&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="srcGroup"><mxGeometry x="20" y="40" width="520" height="52" as="geometry"/></mxCell>
+        <mxCell id="35" value="theme/ DocSearch&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;Ctrl+K · doc-search-index.json&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="srcGroup"><mxGeometry x="20" y="98" width="520" height="52" as="geometry"/></mxCell>
+        <mxCell id="36" value="remark/lazyMdxDemoImports&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;lazy external embed chunks&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="srcGroup"><mxGeometry x="20" y="156" width="520" height="52" as="geometry"/></mxCell>
+        <mxCell id="37" value="components/ inline демо&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;DemoShell · lazyDemo · *Demo.jsx&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="srcGroup"><mxGeometry x="20" y="214" width="520" height="52" as="geometry"/></mxCell>
+        <mxCell id="38" value="constants/codeExamples.js&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;URL · trusted origins&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="srcGroup"><mxGeometry x="20" y="272" width="520" height="52" as="geometry"/></mxCell>
+        <mxCell id="39" value="pages/index.js&lt;br&gt;&lt;font style=&quot;font-size:10px;color:#666&quot;&gt;главная · APK link&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="srcGroup"><mxGeometry x="20" y="330" width="520" height="52" as="geometry"/></mxCell>
+        <mxCell id="40" value="static/&lt;br&gt;CNAME spirzen.ru · doc-search-index.json" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="laneRepo"><mxGeometry x="640" y="660" width="280" height="70" as="geometry"/></mxCell>
+        <mxCell id="41" value="scripts/*.mjs&lt;br&gt;wiki-links · search-index · redirects" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneRepo"><mxGeometry x="640" y="750" width="280" height="70" as="geometry"/></mxCell>
+        <mxCell id="42" value="info/ ECOSYSTEM.md · ARCHITECTURE.md&lt;br&gt;&lt;b&gt;не в npm run build&lt;/b&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneRepo"><mxGeometry x="640" y="840" width="280" height="70" as="geometry"/></mxCell>
+        <mxCell id="laneBuild" value="2. Сборка spirzen.ru" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="1360" y="590" width="1320" height="1100" as="geometry"/></mxCell>
+        <mxCell id="npmStart" value="npm start / build" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" vertex="1" parent="laneBuild"><mxGeometry x="40" y="50" width="160" height="50" as="geometry"/></mxCell>
+        <mxCell id="wWiki" value="docs:wiki-links" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneBuild"><mxGeometry x="40" y="130" width="200" height="45" as="geometry"/></mxCell>
+        <mxCell id="wSearch" value="docs:search-index" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneBuild"><mxGeometry x="40" y="185" width="200" height="45" as="geometry"/></mxCell>
+        <mxCell id="wRedir" value="docs:redirects" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneBuild"><mxGeometry x="40" y="240" width="200" height="45" as="geometry"/></mxCell>
+        <mxCell id="outSearch" value="doc-search-index.json" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="laneBuild"><mxGeometry x="280" y="185" width="160" height="55" as="geometry"/></mxCell>
+        <mxCell id="dcGroup" value="Docusaurus 3.10 + React 19" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="laneBuild"><mxGeometry x="30" y="320" width="1240" height="480" as="geometry"/></mxCell>
+        <mxCell id="43" value="preset-classic · MDX · mermaid · live-codeblock" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" vertex="1" parent="dcGroup"><mxGeometry x="20" y="40" width="280" height="55" as="geometry"/></mxCell>
+        <mxCell id="44" value="plugins: client-redirects · konva-fallback · design-inject&lt;br&gt;remark: wikiLink · lazyMdxDemoImports&lt;br&gt;webpack: lazy async chunks (не demo-widgets)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="dcGroup"><mxGeometry x="20" y="110" width="580" height="80" as="geometry"/></mxCell>
+        <mxCell id="buildOut" value="build/&lt;br&gt;SSG HTML + JS" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="dcGroup"><mxGeometry x="640" y="100" width="160" height="70" as="geometry"/></mxCell>
+        <mxCell id="45" value="Статья: MDX → External*Embed в iframe на code/play&lt;br&gt;Лёгкие виджеты: lazyDemo inline chunk" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="dcGroup"><mxGeometry x="20" y="210" width="1180" height="50" as="geometry"/></mxCell>
+        <mxCell id="laneCode" value="3. it-code-examples" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#e3f2fd;strokeColor=#1565c0;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="2720" y="590" width="560" height="520" as="geometry"/></mxCell>
+        <mxCell id="53" value="examples/&lt;lang&gt;/&lt;slug&gt;/meta.json&lt;br&gt;~2312 примеров · Astro 5 · Shiki" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneCode"><mxGeometry x="30" y="50" width="500" height="70" as="geometry"/></mxCell>
+        <mxCell id="54" value="/e/&lt;lang&gt;/&lt;slug&gt;/ — полная страница&lt;br&gt;/e/embed/… — iframe для KB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="laneCode"><mxGeometry x="30" y="140" width="500" height="60" as="geometry"/></mxCell>
+        <mxCell id="55" value="public/scripts/&lt;br&gt;embed-resize.js · theme.js · catalog-search.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneCode"><mxGeometry x="30" y="220" width="500" height="60" as="geometry"/></mxCell>
+        <mxCell id="codeBuildOut" value="dist/ → code.spirzen.ru" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="laneCode"><mxGeometry x="30" y="300" width="500" height="55" as="geometry"/></mxCell>
+        <mxCell id="56" value="IT_CODE_EXAMPLES_SITE · BASE=/" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneCode"><mxGeometry x="30" y="370" width="500" height="40" as="geometry"/></mxCell>
+        <mxCell id="lanePlay" value="4. it-play" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="3320" y="590" width="560" height="520" as="geometry"/></mxCell>
+        <mxCell id="57" value="plays/&lt;cat&gt;/&lt;slug&gt;/meta.json&lt;br&gt;~500 демо · React islands" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="lanePlay"><mxGeometry x="30" y="50" width="500" height="70" as="geometry"/></mxCell>
+        <mxCell id="58" value="/p/&lt;cat&gt;/&lt;slug&gt;/ — полная&lt;br&gt;/p/embed/… — iframe для KB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="lanePlay"><mxGeometry x="30" y="140" width="500" height="60" as="geometry"/></mxCell>
+        <mxCell id="59" value="demoRegistry.tsx · useEmbedPlayProps.ts&lt;br&gt;embed-resize.js · theme.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="lanePlay"><mxGeometry x="30" y="220" width="500" height="60" as="geometry"/></mxCell>
+        <mxCell id="playBuildOut" value="dist/ → play.spirzen.ru" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="lanePlay"><mxGeometry x="30" y="300" width="500" height="55" as="geometry"/></mxCell>
+        <mxCell id="60" value="IT_PLAY_SITE · BASE=/" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="lanePlay"><mxGeometry x="30" y="370" width="500" height="40" as="geometry"/></mxCell>
+        <mxCell id="laneDeploy" value="5. Деплой (GitHub Actions → deploy-pages)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="2720" y="1140" width="1160" height="200" as="geometry"/></mxCell>
+        <mxCell id="depKb" value="spirzen.ru&lt;br&gt;push main → build/ → Pages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" vertex="1" parent="laneDeploy"><mxGeometry x="40" y="55" width="320" height="60" as="geometry"/></mxCell>
+        <mxCell id="depCode" value="code.spirzen.ru&lt;br&gt;astro build → dist/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneDeploy"><mxGeometry x="400" y="55" width="320" height="60" as="geometry"/></mxCell>
+        <mxCell id="depPlay" value="play.spirzen.ru&lt;br&gt;astro build → dist/" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneDeploy"><mxGeometry x="760" y="55" width="320" height="60" as="geometry"/></mxCell>
+        <mxCell id="laneRuntime" value="6. Runtime в браузере" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;startSize=36;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;collapsible=0;" vertex="1" parent="1"><mxGeometry x="40" y="1720" width="4920" height="1180" as="geometry"/></mxCell>
+        <mxCell id="browser" value="Браузер читателя" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontStyle=1;align=center;" vertex="1" parent="laneRuntime"><mxGeometry x="2280" y="50" width="200" height="50" as="geometry"/></mxCell>
+        <mxCell id="shellGroup" value="spirzen.ru — оболочка" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="laneRuntime"><mxGeometry x="40" y="120" width="400" height="280" as="geometry"/></mxCell>
+        <mxCell id="64" value="Navbar + DocSearch (Ctrl+K)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="shellGroup"><mxGeometry x="20" y="40" width="360" height="44" as="geometry"/></mxCell>
+        <mxCell id="65" value="DocSidebar · 7 разделов меню" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="shellGroup"><mxGeometry x="20" y="90" width="360" height="44" as="geometry"/></mxCell>
+        <mxCell id="66" value="Footer · data-design тема" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="shellGroup"><mxGeometry x="20" y="140" width="360" height="44" as="geometry"/></mxCell>
+        <mxCell id="docPage" value="Статья MDX&lt;br&gt;DocItem/Layout" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneRuntime"><mxGeometry x="480" y="140" width="200" height="60" as="geometry"/></mxCell>
+        <mxCell id="embedGroup" value="Встраивание в статью" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="laneRuntime"><mxGeometry x="720" y="120" width="520" height="280" as="geometry"/></mxCell>
+        <mxCell id="67" value="EmbedClickGate → click-to-load&lt;br&gt;useEmbedViewport — очередь iframe&lt;br&gt;postMessage: высота + тема + fullscreen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="embedGroup"><mxGeometry x="20" y="45" width="480" height="70" as="geometry"/></mxCell>
+        <mxCell id="68" value="ExternalCodeEmbed → code.spirzen.ru/e/embed/…" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="embedGroup"><mxGeometry x="20" y="125" width="480" height="50" as="geometry"/></mxCell>
+        <mxCell id="69" value="ExternalPlayEmbed → play.spirzen.ru/p/embed/…" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="embedGroup"><mxGeometry x="20" y="185" width="480" height="50" as="geometry"/></mxCell>
+        <mxCell id="iframeCode" value="iframe code.spirzen.ru&lt;br&gt;Shiki · copy · fullscreen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e3f2fd;strokeColor=#1565c0;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneRuntime"><mxGeometry x="1280" y="140" width="220" height="70" as="geometry"/></mxCell>
+        <mxCell id="iframePlay" value="iframe play.spirzen.ru&lt;br&gt;React demo · Konva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff3e0;strokeColor=#ef6c00;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneRuntime"><mxGeometry x="1540" y="140" width="220" height="70" as="geometry"/></mxCell>
+        <mxCell id="70" value="Inline lazyDemo&lt;br&gt;лёгкие виджеты в бандле KB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;align=left;spacingLeft=8;" vertex="1" parent="laneRuntime"><mxGeometry x="480" y="230" width="200" height="60" as="geometry"/></mxCell>
+        <mxCell id="encBlocks" value="9 блоков encyclopedia" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#999999;dashed=1;dashPattern=8 8;fontSize=12;fontStyle=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;container=1;collapsible=0;recursiveResize=0;" vertex="1" parent="laneRuntime"><mxGeometry x="40" y="440" width="2000" height="120" as="geometry"/></mxCell>
+        <mxCell id="71" value="1-basics ~318" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="20" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="72" value="2-system ~254" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="240" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="73" value="3-data ~224" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="460" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="74" value="4-code ~228" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="680" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="75" value="5-lang ~992" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="900" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="76" value="6-ai ~95" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="1120" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="77" value="7-project ~320" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="1340" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="78" value="8-infra ~211" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="1560" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="79" value="9-spinoff ~255" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#333333;fontSize=11;align=left;spacingLeft=8;spacingTop=4;" vertex="1" parent="encBlocks"><mxGeometry x="1780" y="45" width="210" height="40" as="geometry"/></mxCell>
+        <mxCell id="80" value="Поток: git → scripts → SSG (3 репо) → GitHub Pages → читатель → React hydration + DocSearch + iframe code/play (postMessage)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneRuntime"><mxGeometry x="40" y="600" width="4800" height="50" as="geometry"/></mxCell>
+        <mxCell id="81" value="Легенда: 🔵 KB/spirzen · голубой code · оранжевый play · 🟣 embed/демо · 🟢 скрипты · пунктир — локально/опционально" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;size=14;fillColor=#ffffcc;strokeColor=#d6b656;fontSize=10;align=left;spacingLeft=6;" vertex="1" parent="laneRuntime"><mxGeometry x="40" y="680" width="600" height="70" as="geometry"/></mxCell>
+        <mxCell id="8" value="git push" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="3" target="repoKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="9" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="3" target="repoCode"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="10" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="3" target="repoPlay"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="11" value="Actions deploy-pages" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="repoKb" target="siteKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="12" value="Actions" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="repoCode" target="siteCode"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="13" value="Actions" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="repoPlay" target="sitePlay"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="14" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="4" target="siteKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="15" value="iframe /e/embed/" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="siteKb" target="siteCode"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="16" value="iframe /p/embed/" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="siteKb" target="sitePlay"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="17" value="WebView" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="6" target="siteKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="18" value="start/build" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="5" target="repoKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="npmStart" target="wWiki"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="wWiki" target="wSearch"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="wSearch" target="wRedir"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="49" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="wSearch" target="outSearch"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="50" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="wRedir" target="43"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="51" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="43" target="44"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="52" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="44" target="buildOut"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="61" value="артефакт" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="buildOut" target="depKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="62" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="codeBuildOut" target="depCode"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="63" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="playBuildOut" target="depPlay"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="82" value="конфиг" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="23" target="npmStart"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="83" value="контент" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="24" target="npmStart"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="84" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="34" target="67"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="85" value="publish" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="buildOut" target="siteKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="86" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="depKb" target="siteKb"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="87" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="siteKb" target="browser"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="88" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="browser" target="docPage"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="89" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="docPage" target="67"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="90" value="iframe" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="67" target="iframeCode"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="91" value="iframe" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="67" target="iframePlay"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="92" value="inline" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="docPage" target="70"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="93" value="fetch" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="outSearch" target="shellGroup"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="94" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="iframeCode" target="siteCode"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="95" style="dashed=1;edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endArrow=block;endFill=1;fontSize=11;" edge="1" parent="1" source="iframePlay" target="sitePlay"><mxGeometry relative="1" as="geometry"/></mxCell>
       </root>
     </mxGraphModel>
   </diagram>

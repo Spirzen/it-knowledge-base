@@ -21,12 +21,14 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import GameStudiesHub from '@site/src/components/GameStudiesHub.jsx';
 
 # Игроведение — о разделе
 
-<GameStudiesHub />
+<ExternalPlayEmbed example="spinoff/game-studies-hub" title="Игроведение — навигатор" minHeight={560} />
 
 Жанры (FPS, RPG, MMORPG, MOBA и др.) — [127](./127). Платформы и консоли — [129](./129). DRM и Denuvo — [128](./128).
 

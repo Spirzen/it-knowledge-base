@@ -5,14 +5,16 @@ slug: /context/government/intro
 sidebar_label: Государство — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Государство — о разделе
 
 Государственные информационные системы создаются по НПА, проходят закупки и аттестацию. Материалы помогают понять роли заказчика, оператора и подрядчика, модели архитектуры и юридически значимые реестры до проектирования интеграций. Базовая теория — в [Государство и бизнес](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/intro) и [методологиях ГИС](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/2).
 
-<ContextDomainPlay domain="government" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'government' }} />
 
 ## С чего начать
 

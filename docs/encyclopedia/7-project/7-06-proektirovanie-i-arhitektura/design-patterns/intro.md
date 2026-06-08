@@ -25,9 +25,10 @@ related:
     doc: encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ArchiStylerPlay from '@site/src/components/ArchiStylerPlay.jsx';
-import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 
 <div class="callout callout--tip">
   <div class="callout-title">Онлайн-версии</div>
@@ -38,9 +39,11 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 </div>
   </div>
 
-<SchemaMakerPlay defaultDocName="GoF" title="Планировщик схем" subtitle="Свободный холст + шаблоны классов ArchiStyler" />
+<ExternalPlayEmbed example="about/schema-maker-play" title="Планировщик схем" minHeight={560} playProps={{ defaultDocName: 'GoF', title: 'Планировщик схем', subtitle: 'Свободный холст + шаблоны классов ArchiStyler' }} />
 
 # Паттерны проектирования — о разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — C#, Java и другие реализации GoF не раздувают HTML энциклопедии. Короткие фрагменты и схемы **mermaid** остаются inline; интерактив ArchiStyler — в [play.spirzen.ru](https://play.spirzen.ru/).
 
 Паттерн — **имя проверенного решения** повторяющейся проблемы. Сначала [принципы перед паттернами](./142.md) и [обзор](./1.md); затем GoF и архитектурные стили ниже. Для **Chain of Responsibility** и обработки сбоев в коде — [ошибки и исключения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111).
 
@@ -67,7 +70,7 @@ import SchemaMakerPlay from '@site/src/components/SchemaMakerPlay.jsx';
 | Цепочка фильтров, middleware | [HTTP-экосистема](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem) |
 | MVC, BFF, слой API | [Как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro) |
 
-<ArchiStylerPlay defaultPattern="factory" title="Планировщик паттернов" subtitle="Диаграмма классов по шаблону" />
+<ExternalPlayEmbed example="about/archi-styler-play" title="Планировщик паттернов" minHeight={480} playProps={{ defaultPattern: 'factory', title: 'Планировщик паттернов', subtitle: 'Диаграмма классов по шаблону' }} />
 
 ---
 

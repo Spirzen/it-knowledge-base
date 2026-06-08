@@ -15,8 +15,10 @@ related:
     doc: encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ComputerArchitecturePlay from '@site/src/components/ComputerArchitecturePlay';
 
 # Для детей
 
@@ -36,7 +38,7 @@ import ComputerArchitecturePlay from '@site/src/components/ComputerArchitectureP
 </div>
   </div>
 
-<ComputerArchitecturePlay />
+<ExternalPlayEmbed example="about/computer-architecture-play" title="Computer Architecture" />
 
 ---
 

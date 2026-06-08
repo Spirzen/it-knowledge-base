@@ -79,12 +79,19 @@ const isWindowsDev = process.platform === 'win32' && process.env.NODE_ENV !== 'p
 const useFasterBundler =
   process.env.IT_DOCUSAURUS_FASTER === '1' || !isWindowsDev;
 
-/** Локально: http://localhost:4321; прод: https://code.spirzen.ru */
+/**
+ * Embed code/play.
+ * Dev: localhost (с click-to-load iframe грузятся только по клику — без ws://4322 на старте).
+ * Prod: канонические домены. Переопределение: IT_CODE_EXAMPLES_URL / IT_PLAY_URL.
+ */
+const isProdBuild = process.env.NODE_ENV === 'production';
+
 const codeExamplesUrl =
   process.env.IT_CODE_EXAMPLES_URL ??
-  (process.env.NODE_ENV === 'production'
-    ? 'https://code.spirzen.ru'
-    : 'http://localhost:4321');
+  (isProdBuild ? 'https://code.spirzen.ru' : 'http://localhost:4321');
+
+const playExamplesUrl =
+  process.env.IT_PLAY_URL ?? (isProdBuild ? 'https://play.spirzen.ru' : 'http://localhost:4322');
 
 module.exports = {
   title: 'Вселенная IT',
@@ -102,6 +109,7 @@ module.exports = {
 
   customFields: {
     codeExamplesUrl,
+    playExamplesUrl,
   },
 
   clientModules: [
@@ -233,6 +241,10 @@ module.exports = {
               tagName: 'script',
               innerHTML: `(function(){try{var k='it-universe-design';var id=localStorage.getItem(k)||'design-universe-original';document.documentElement.setAttribute('data-design',id);}catch(e){document.documentElement.setAttribute('data-design','design-universe-original');}})();`,
             },
+            {tagName: 'link', attributes: {rel: 'dns-prefetch', href: 'https://play.spirzen.ru'}},
+            {tagName: 'link', attributes: {rel: 'dns-prefetch', href: 'https://code.spirzen.ru'}},
+            {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://play.spirzen.ru', crossorigin: 'anonymous'}},
+            {tagName: 'link', attributes: {rel: 'preconnect', href: 'https://code.spirzen.ru', crossorigin: 'anonymous'}},
           ],
         };
       },
@@ -245,10 +257,40 @@ module.exports = {
         }
         return {
           optimization: {
+            runtimeChunk: 'single',
             splitChunks: {
+              maxInitialRequests: 8,
               maxAsyncRequests: 12,
               cacheGroups: {
-                /** Только async-импорты демо; minSize снижает сотни мелких itDemoAsync-чанков */
+                itReact: {
+                  test: /[\\/]node_modules[\\/](react|react-dom|scheduler|use-sync-external-store)[\\/]/,
+                  name: 'vendor-react',
+                  chunks: 'all',
+                  priority: 40,
+                  reuseExistingChunk: true,
+                },
+                itDocusaurus: {
+                  test: /[\\/]node_modules[\\/]@docusaurus[\\/]/,
+                  name: 'vendor-docusaurus',
+                  chunks: 'all',
+                  priority: 35,
+                  maxSize: 450000,
+                  reuseExistingChunk: true,
+                },
+                itPrism: {
+                  test: /[\\/]node_modules[\\/](prismjs|prism-react-renderer|refractor)[\\/]/,
+                  name: 'vendor-prism',
+                  chunks: 'all',
+                  priority: 32,
+                  reuseExistingChunk: true,
+                },
+                itEmbed: {
+                  test: /[\\/]src[\\/]components[\\/](ExternalPlayEmbed|ExternalCodeEmbed)/,
+                  chunks: 'async',
+                  minSize: 0,
+                  priority: 22,
+                  reuseExistingChunk: true,
+                },
                 itDemoAsync: {
                   test: /[\\/]src[\\/]components[\\/]/,
                   chunks: 'async',
@@ -257,7 +299,6 @@ module.exports = {
                   priority: 15,
                   reuseExistingChunk: true,
                 },
-                /** Mermaid — только при рендере диаграммы, не в main */
                 itMermaid: {
                   test: /[\\/]node_modules[\\/](mermaid|@mermaid-js|dagre-d3|khroma)/,
                   chunks: 'async',

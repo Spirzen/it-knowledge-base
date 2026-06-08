@@ -5,14 +5,16 @@ slug: /context/energy/intro
 sidebar_label: Энергетика — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Энергетика — о разделе
 
 Энергетика опирается на непрерывность поставки, диспетчеризацию и учёт. Статьи описывают путь энергии от генерации до потребителя и роль цифровых счётчиков и автономных систем. См. [автоматику](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/9) и [безопасность IoT](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/131).
 
-<ContextDomainPlay domain="energy" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'energy' }} />
 
 ## С чего начать
 

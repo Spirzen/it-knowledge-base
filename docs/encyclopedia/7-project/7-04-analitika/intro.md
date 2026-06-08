@@ -23,16 +23,20 @@ related:
     doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/2
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import AnalyticsSectionHub from '@site/src/components/AnalyticsSectionHub.jsx';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 Раздел **"Аналитика"** — практический курс для тех, кто переводит хаос пожеланий заказчика в понятные требования, модели и документы. Здесь не "про отчёты в Excel" (хотя метрики тоже разбираем), а про **инженерию смысла** на стыке бизнеса и разработки.
 
 Если вы только входите в IT, начните с [Основ анализа требований](/encyclopedia/7-project/7-04-analitika/111) и [Профессиональной аналитики](/encyclopedia/7-project/7-04-analitika/112). Если уже работаете аналитиком — используйте раздел как справочник: BPMN, ГОСТ, API, Agile, продуктовые метрики.
 
-<AnalyticsSectionHub />
+<ExternalPlayEmbed example="project/analytics-section-hub" title="Аналитика — хаб раздела" minHeight={560} />
 
 ---
 

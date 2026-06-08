@@ -17,11 +17,15 @@ related:
     doc: encyclopedia/5-languages/5-27-1s/intro
 ---
 
-import BashShellPlay from '@site/src/components/BashShellPlay';
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
@@ -92,7 +96,7 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-<BashShellPlay lesson="intro" />
+<ExternalPlayEmbed example="about/bash-shell-play" title="Bash Shell" playProps={{ lesson: 'intro' }} />
 
 <DocCardList />
 

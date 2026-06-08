@@ -5,14 +5,16 @@ slug: /context/manufacturing/intro
 sidebar_label: Производство — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainPlay from '@site/src/components/context/ContextDomainPlay';
 
 # Производство — о разделе
 
 Промышленный контур объединяет планирование, цех, контроль качества и отгрузку. Материалы помогают встроить MES, SCADA и OPC UA в единую цепочку с логистикой и учётом. Проектная сторона ERP — [в энциклопедии](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro), автоматика — [в основах компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/9).
 
-<ContextDomainPlay domain="manufacturing" />
+<ExternalPlayEmbed example="context/context-domain-play" title="Отраслевое демо" minHeight={420} playProps={{ domain: 'manufacturing' }} />
 
 ## С чего начать
 

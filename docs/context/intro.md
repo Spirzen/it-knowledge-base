@@ -5,12 +5,14 @@ slug: /context/intro
 sidebar_label: Контекст — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import ContextDomainsHub from '@site/src/components/context/ContextDomainsHub';
 
 ## Контекст
 
-<ContextDomainsHub />
+<ExternalPlayEmbed example="context/context-domains-hub" title="Карта отраслей" minHeight={480} />
 
 <DocCardList />
 

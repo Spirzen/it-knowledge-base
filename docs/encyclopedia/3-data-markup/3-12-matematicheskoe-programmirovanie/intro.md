@@ -7,10 +7,14 @@ description: "Раздел "Математическое программиро�
 sidebar_label: Математическое программирование — о разделе
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
-import LinearProgrammingPlayground from '@site/src/components/LinearProgrammingPlayground';
 
 # О разделе
+
+**Длинные листинги (от ~12 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (псевдокод, пара строк `linprog`, формулы) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 <div class="article-tags">
   <span class="tag tag-inprogress">В РАЗРАБОТКЕ</span>
@@ -80,7 +84,7 @@ import LinearProgrammingPlayground from '@site/src/components/LinearProgrammingP
 - затем измените прибыль `c1/c2` и посмотрите, какой продукт начинает "тянуть" оптимум сильнее;
 - после этого уменьшите лимиты `b1/b2`, чтобы увидеть, как появляются узкие места.
 
-<LinearProgrammingPlayground />
+<ExternalPlayEmbed example="data-markup/linear-programming-playground" title="Линейное программирование" minHeight={560} />
 
 После упражнения важно вынести две мысли —
 1. Оптимум определяется целью и набором активных ограничений.
