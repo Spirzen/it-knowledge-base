@@ -160,6 +160,14 @@ import DocCardList from '@theme/DocCardList';
 | Панель (локально) | `127.0.0.1:8787` | `it-management` | Start/Build/Deploy всех трёх |
 | Android | APK на главной | `itu-mobile-app` | WebView → spirzen.ru |
 
+### Трёхуровневая архитектура
+
+Три независимых домена на GitHub Pages связаны **интеграцией**: код и интерактив «стягиваются» в статьи энциклопедии через iframe и postMessage — без общего backend.
+
+![Трёхуровневая архитектура «Вселенная IT» — spirzen.ru (хаб), code.spirzen.ru (код), play.spirzen.ru (интерактив) и слой интеграции](/img/it-universe-three-tier.png)
+
+Исходник схемы — `info/it-universe-three-tier.drawio`.
+
 Длинные листинги и тяжёлые симуляторы **не раздувают** билд энциклопедии: статьи встраивают их через `ExternalCodeEmbed` и `ExternalPlayEmbed` (iframe, синхрон темы, авто-высота). Подробно — в служебном [`info/ECOSYSTEM.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ECOSYSTEM.md) на GitHub.
 
 <div class="callout callout--info">
@@ -271,7 +279,7 @@ flowchart TB
   DC --> Faster --> Preset --> MDX --> Webpack --> Out
 ```
 
-Исходник диаграммы в репозитории — `info/it-universe-architecture.drawio` (редактор [diagrams.net](https://app.diagrams.net/) или расширение Draw.io в VS Code). PNG для сайта лежит в `static/img/`. Пересборка drawio-файла: `node scripts/generate-architecture-drawio.mjs`.
+Исходники диаграмм в репозитории — `info/it-universe-three-tier.drawio` (обзорная трёхуровневая схема) и `info/it-universe-architecture.drawio` (полная экосистема); редактор [diagrams.net](https://app.diagrams.net/) или расширение Draw.io в VS Code. PNG для сайта лежат в `static/img/`. Пересборка полной схемы: `node scripts/generate-architecture-drawio.mjs`.
 
 Развёрнутое текстовое описание и дополнительные фрагменты Mermaid — в [`info/ARCHITECTURE.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ARCHITECTURE.md) на GitHub (каталог `info/` в публичную сборку сайта не входит). Якоря на этой странице: [C4-контекст](#it-universe-c4-mermaid), [пайплайн сборки](#it-universe-build-mermaid). Тот же материал разобран по темам энциклопедии — в статьях про [веб и SSG](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/114), [C4](/encyclopedia/7-project/7-04-analitika/126), [CI/CD](/encyclopedia/8-infra-security/8-04-devops-ci-cd/11) и [GitHub Actions](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2112).
 
