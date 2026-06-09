@@ -4261,6 +4261,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/131">8.07. Безопасность IoT</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/132">8.07. Патчи и управление уязвимостями</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/133">8.07. Кейс — захват аккаунтов через AI-поддержку и дипфейк</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/134">8.07. Стилеры (info-stealer)</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/135">8.07. Как выявлять замаскированные вирусы?</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/998">8.07. Информационная безопасность — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/999">8.07. Информационная безопасность — чек-лист</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1111">8.07. Государственные требования к информационной безопасности</a></li>
