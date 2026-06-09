@@ -119,12 +119,33 @@ function ExternalCodeEmbedInner({autoLoad = false, example, src, title, minHeigh
 
       if (data.type === 'it-code-fullscreen') {
         setIsFullscreen(Boolean(data.active));
+        return;
+      }
+
+      if (data.type === 'it-code-copy') {
+        const text = typeof data.text === 'string' ? data.text : '';
+        const copyId = data.id;
+        const reply = (ok) => {
+          if (!copyId || !frame?.contentWindow) return;
+          frame.contentWindow.postMessage(
+            {type: 'it-code-copy-result', id: copyId, ok: Boolean(ok)},
+            codeExamplesOrigin,
+          );
+        };
+        if (!text) {
+          reply(false);
+          return;
+        }
+        navigator.clipboard
+          .writeText(text)
+          .then(() => reply(true))
+          .catch(() => reply(false));
       }
     };
 
     window.addEventListener('message', onMessage);
     return () => window.removeEventListener('message', onMessage);
-  }, [iframeSrc, isFullscreen, scheduleHeight, siteConfig]);
+  }, [codeExamplesOrigin, iframeSrc, isFullscreen, scheduleHeight, siteConfig]);
 
   useEffect(() => {
     if (!isFullscreen) return undefined;
@@ -194,7 +215,7 @@ function ExternalCodeEmbedInner({autoLoad = false, example, src, title, minHeigh
             loading="eager"
             style={{height: isFullscreen ? '100%' : `${height}px`}}
             referrerPolicy="no-referrer-when-downgrade"
-            allow="fullscreen"
+            allow="fullscreen; clipboard-write"
             onLoad={() => {
               setIsLoaded(true);
               releaseLoadSlot();
