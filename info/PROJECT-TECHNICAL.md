@@ -1,7 +1,7 @@
 # Вселенная IT — техническая документация проекта
 
 > Служебный справочник репозитория (не публикуется на сайте).  
-> Дата сборки описания: **2026-06-08**.  
+> Дата сборки описания: **2026-06-09**.  
 > Полный перечень путей (3605 строк): [`PROJECT-FILE-TREE.txt`](./PROJECT-FILE-TREE.txt).  
 > Реестр демо и привязка к статьям: [`demo-registry.md`](./demo-registry.md) (`npm run docs:demo-registry`).  
 > Экосистема (code/play/management, интеграция): [`ECOSYSTEM.md`](./ECOSYSTEM.md).
@@ -20,7 +20,7 @@
 | Лицензия кода | MIT |
 | Автор / методист | Тагиров Тимур Владиславович |
 
-Цель архитектуры контента — единая проверяемая модель IT-знаний: от цифровой грамотности до DevOps, языков программирования и смежных дисциплин. Материалы пишутся с 2018 года; сайт на Docusaurus запущен в 2025 году. В репозитории **~2361** статья в `docs/` (Markdown/MDX) плюс **~667** изображений в дереве `docs/`.
+Цель архитектуры контента — единая проверяемая модель IT-знаний: от цифровой грамотности до DevOps, языков программирования и смежных дисциплин. Материалы пишутся с 2018 года; сайт на Docusaurus запущен в 2025 году. В репозитории **~2361** статья в `docs/` (Markdown/MDX); иллюстрации (~670 файлов) вынесены в [`it-encyclopedia-media`](https://github.com/Spirzen/it-encyclopedia-media) → [assets.spirzen.ru](https://assets.spirzen.ru/).
 
 Ограничения продакшена:
 
@@ -37,10 +37,11 @@
 | Энциклопедия | spirzen.ru | `it-knowledge-base` | ~2360+ статей |
 | Примеры кода | code.spirzen.ru | `it-code-examples` | ~2312 примеров |
 | Интерактив | play.spirzen.ru | `it-play` | ~500 демо |
+| Медиа | assets.spirzen.ru | `it-encyclopedia-media` | ~670 иллюстраций |
 | Панель разработчика | localhost:8787 | `it-management` | локально |
 | Android | APK | `itu-mobile-app` | WebView |
 
-Статьи встраивают code и play через **iframe + postMessage** (`ExternalCodeEmbed`, `ExternalPlayEmbed`). Полный протокол — [`ECOSYSTEM.md`](./ECOSYSTEM.md).
+Статьи встраивают code и play через **iframe + postMessage** (`ExternalCodeEmbed`, `ExternalPlayEmbed`); иллюстрации подключаются **URL с assets.spirzen.ru** в markdown. Полный протокол — [`ECOSYSTEM.md`](./ECOSYSTEM.md).
 
 ---
 
@@ -245,7 +246,7 @@ APK **не** кладётся в `static/`: скачивание только ч
 
 При обновлении приложения загрузите новый APK в GitHub Release `Mobile`; константа `APK_DOWNLOAD_URL` в `index.js` указывает на стабильный URL релиза.
 
-Изображения статей хранятся **рядом со статьями** в `docs/**` (не в `static/`).
+Иллюстрации статей хранятся в **`it-encyclopedia-media`** (`public/encyclopedia/…`), в markdown — `https://assets.spirzen.ru/encyclopedia/…`. В `static/img/` — только логотипы и favicon сайта.
 
 ---
 

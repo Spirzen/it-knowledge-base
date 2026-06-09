@@ -4,7 +4,7 @@
 > Язык подписей: русский; имена технологий, путей и API — как в коде.  
 > Детальные таблицы и перечни файлов: [`PROJECT-TECHNICAL.md`](./PROJECT-TECHNICAL.md).  
 > Экосистема (все репозитории, интеграция, postMessage): [`ECOSYSTEM.md`](./ECOSYSTEM.md).  
-> Дата описания: **2026-06-08**.
+> Дата описания: **2026-06-09**.
 
 ---
 
@@ -22,10 +22,10 @@
 | 8 | [Слой демо](#8-слой-интерактивных-демо) | React-виджеты, chunks, движки |
 | 9 | [Поиск и wiki-ссылки](#9-поиск-и-wiki-ссылки) | Индексы и remark-плагин |
 | 10 | [Деплой](#10-деплой-и-хостинг) | CI → GitHub Pages → spirzen.ru |
-| 11 | [Экосистема и satellite-сервисы](#11-экосистема-и-satellite-сервисы) | code.spirzen.ru, play.spirzen.ru, it-management |
+| 11 | [Экосистема и satellite-сервисы](#11-экосистема-и-satellite-сервисы) | code, play, assets, it-management |
 | 12 | [Интеграция iframe + postMessage](#12-интеграция-iframe--postmessage) | ExternalCodeEmbed, ExternalPlayEmbed, протокол |
 
-**Draw.io (сводная схема экосистемы):** [`it-universe-architecture.drawio`](./it-universe-architecture.drawio) — три домена, интеграция iframe/postMessage, сборка и runtime. Пересборка: `node scripts/generate-architecture-drawio.mjs`; PNG → `static/img/it-universe-architecture.png` (экспорт из Draw.io или CLI `draw.io --export`).
+**Draw.io (сводная схема экосистемы):** [`it-universe-architecture.drawio`](./it-universe-architecture.drawio) — четыре домена (spirzen, code, play, assets), интеграция iframe/postMessage, сборка и runtime. Пересборка: `node scripts/generate-architecture-drawio.mjs`; PNG → `it-encyclopedia-media/public/encyclopedia/_shared/img/` (экспорт из Draw.io или CLI `draw.io --export`), в статьях — `https://assets.spirzen.ru/encyclopedia/_shared/img/…`.
 
 **Mermaid:** проверка в [Mermaid Live](https://mermaid.live) или preview Markdown. Фрагменты можно вставлять в статьи (`markdown.mermaid: true` в `docusaurus.config.js`).
 
@@ -274,7 +274,7 @@ flowchart TB
 
 **Именование статей:** `intro.md`, числовые `1.md`, `41.md`, хабы `99.md` / `999.md` с виджетами. `numberPrefixParser: false` — префиксы в имени файла **не** скрываются в URL.
 
-**Изображения:** рядом со статьёй в `docs/**`, не в `static/` (кроме глобальных ресурсов сайта).
+**Изображения:** на [assets.spirzen.ru](https://assets.spirzen.ru/) (`it-encyclopedia-media`), в markdown — абсолютные URL; путь в media-репозитории повторяет путь статьи в `docs/encyclopedia/`, общие диаграммы — `_shared/img/`. В `static/img/` остаются только логотипы сайта (`logoITU.png`, `docusaurus.png`). Миграция: `it-encyclopedia-media/scripts/migrate-from-kb.mjs`.
 
 ---
 
@@ -397,7 +397,7 @@ flowchart TD
   subgraph clientData ["📦 Данные с сервера статики"]
     direction TB
     SearchJSON["doc-search-index.json"]:::clientData
-    StaticFiles["static/img, downloads, …"]:::clientData
+    StaticFiles["static/ (логотипы, CNAME) + assets.spirzen.ru"]:::clientData
   end
 
   %% === СВЯЗИ ===
@@ -573,7 +573,7 @@ sequenceDiagram
 
 ## 11. Экосистема и satellite-сервисы
 
-Энциклопедия — **хаб** распределённой платформы. Длинные листинги и тяжёлые демо вынесены в отдельные репозитории с собственными доменами GitHub Pages.
+Энциклопедия — **хаб** распределённой платформы. Длинные листинги, тяжёлые демо и иллюстрации вынесены в отдельные репозитории с собственными доменами GitHub Pages.
 
 ```mermaid
 flowchart LR
@@ -581,6 +581,7 @@ flowchart LR
     KB[spirzen.ru<br/>it-knowledge-base]
     CODE[code.spirzen.ru<br/>~2312 примеров]
     PLAY[play.spirzen.ru<br/>~500 демо]
+    MEDIA[assets.spirzen.ru<br/>~670 иллюстраций]
   end
 
   subgraph local [Локально]
@@ -590,6 +591,7 @@ flowchart LR
   Reader --> KB
   KB -->|iframe| CODE
   KB -->|iframe| PLAY
+  KB -->|img URL| MEDIA
   MGMT -.->|start/build/deploy| KB
   MGMT -.-> CODE
   MGMT -.-> PLAY
@@ -600,10 +602,11 @@ flowchart LR
 | spirzen.ru | `it-knowledge-base` | Docusaurus 3.10 + React 19 | Текст, навигация, SEO, DocSearch |
 | code.spirzen.ru | `it-code-examples` | Astro 5 + Shiki | Листинги, практикумы, diff |
 | play.spirzen.ru | `it-play` | Astro 5 + React 19 | Симуляторы, визуализации |
+| assets.spirzen.ru | `it-encyclopedia-media` | Статика (без сборки) | Иллюстрации, скриншоты, экспорт диаграмм |
 | — | `it-management` | Node http | Локальная панель (не в проде) |
 | APK | `itu-mobile-app` | .NET MAUI 10 | WebView → spirzen.ru |
 
-**Правило контента:** текст здесь; код > ~30 строк → `it-code-examples`; тяжёлый React → `it-play`.
+**Правило контента:** текст здесь; код > ~30 строк → `it-code-examples`; тяжёлый React → `it-play`; растровые иллюстрации → `it-encyclopedia-media` (URL в markdown).
 
 Полное описание: [`ECOSYSTEM.md`](./ECOSYSTEM.md).
 

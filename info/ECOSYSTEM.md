@@ -2,7 +2,7 @@
 
 > Служебный документ (`info/`, не входит в `npm run build`).  
 > Описывает **все репозитории**, интеграцию между сервисами, протоколы обмена и локальную разработку.  
-> Дата описания: **2026-06-08**.
+> Дата описания: **2026-06-09**.
 
 **Связанные документы:**
 
@@ -13,12 +13,13 @@
 | [`../it-code-examples/AGENTS.md`](../../it-code-examples/AGENTS.md) | Каталог кода |
 | [`../it-play/AGENTS.md`](../../it-play/AGENTS.md) | Интерактивные демо |
 | [`../../it-management/README.md`](../../it-management/README.md) | Локальная панель управления |
+| [`../it-encyclopedia-media/README.md`](../it-encyclopedia-media/README.md) | Иллюстрации, assets.spirzen.ru |
 
 ---
 
 ## 1. Обзор экосистемы
 
-«Вселенная IT» — не один репозиторий, а **распределённая статическая платформа**: три публичных домена на GitHub Pages, локальная панель разработчика и мобильный клиент. На продакшене **нет общего backend** — связь между сервисами идёт через **HTTPS + iframe + postMessage**.
+«Вселенная IT» — не один репозиторий, а **распределённая статическая платформа**: четыре публичных домена на GitHub Pages, локальная панель разработчика и мобильный клиент. На продакшене **нет общего backend** — связь между сервисами идёт через **HTTPS**: code и play — **iframe + postMessage**, иллюстрации — **прямые URL** с assets.spirzen.ru.
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#e3f2fd','primaryTextColor':'#0d47a1','primaryBorderColor':'#1565c0','lineColor':'#546e7a'}}}%%
@@ -27,12 +28,14 @@ flowchart TB
   classDef kb fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
   classDef code fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
   classDef play fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+  classDef media fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
   classDef local fill:#eceff1,stroke:#546e7a,stroke-width:2px,stroke-dasharray:5 5
-  classDef mobile fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+  classDef mobile fill:#f1f8e9,stroke:#558b2f,stroke-width:2px
 
   Reader["Читатель — браузер"] --> KB["spirzen.ru<br/>it-knowledge-base<br/>~2900 статей"]:::kb
   KB -->|"iframe /e/embed/"| CODE["code.spirzen.ru<br/>it-code-examples<br/>~2312 примеров"]:::code
   KB -->|"iframe /p/embed/"| PLAY["play.spirzen.ru<br/>it-play<br/>~500 демо"]:::play
+  KB -->|"img src URL"| MEDIA["assets.spirzen.ru<br/>it-encyclopedia-media<br/>~670 иллюстраций"]:::media
   KB <-->|"postMessage"| CODE
   KB <-->|"postMessage"| PLAY
 
@@ -51,17 +54,19 @@ flowchart TB
 | Энциклопедия | `it-knowledge-base` | [spirzen.ru](https://spirzen.ru/) | ~2900 статей (9 блоков), ~3400 материалов в `docs/` |
 | Примеры кода | `it-code-examples` | [code.spirzen.ru](https://code.spirzen.ru/) | ~2312 примеров |
 | Интерактив | `it-play` | [play.spirzen.ru](https://play.spirzen.ru/) | ~500 демо |
-| Панель управления | `it-management` | только локально | 3 проекта |
+| Медиа | `it-encyclopedia-media` | [assets.spirzen.ru](https://assets.spirzen.ru/) | ~670 иллюстраций, `media-manifest.json` |
+| Панель управления | `it-management` | только локально | веб-проекты экосистемы |
 | Мобильное приложение | `itu-mobile-app` | APK / магазины | WebView → spirzen.ru |
 
 ### Правило размещения контента
 
 | Тип материала | Куда | Как в статье |
 |---------------|------|--------------|
-| Текст, схемы, навигация, SEO | `it-knowledge-base` | Markdown / MDX |
+| Текст, навигация, SEO | `it-knowledge-base` | Markdown / MDX |
 | Короткий фрагмент (3–15 строк) | `it-knowledge-base` | fenced code block |
 | Длинный листинг, мультифайл, практикум | `it-code-examples` | `ExternalCodeEmbed` |
 | Тяжёлый React-симулятор, визуализация | `it-play` | `ExternalPlayEmbed` |
+| Иллюстрации, скриншоты, экспорт диаграмм | `it-encyclopedia-media` | `![alt](https://assets.spirzen.ru/encyclopedia/…)` |
 | Лёгкий inline-виджет | `it-knowledge-base` | `import` + `<Component />` с `lazyDemo` |
 
 ---
@@ -125,6 +130,19 @@ flowchart TB
 | Офлайн-поиск | `Resources/Raw/search-manifest.json` |
 | App ID | `ru.spirzen.ituniverse` |
 
+### 2.6. assets.spirzen.ru — it-encyclopedia-media
+
+| Слой | Технология |
+|------|------------|
+| Хостинг | GitHub Pages, **без сборки контента** |
+| Дерево файлов | `public/encyclopedia/<путь-статьи>/…` |
+| Общие диаграммы | `public/encyclopedia/_shared/img/` |
+| Каталог для витрины | `public/media-manifest.json` (генерируется при деплое) |
+| Деплой | GitHub Actions → `node scripts/generate-manifest.mjs` → Pages |
+| Node.js | ≥ 20 (только скрипты) |
+
+Путь в media-репозитории повторяет путь статьи в `docs/encyclopedia/` (без префикса `docs/encyclopedia`). В markdown энциклопедии — абсолютный URL `https://assets.spirzen.ru/encyclopedia/…`. Миграция из KB: `node scripts/migrate-from-kb.mjs` в `it-encyclopedia-media`.
+
 ---
 
 ## 3. Домены, порты и URL
@@ -136,6 +154,7 @@ flowchart TB
 | Энциклопедия | `https://spirzen.ru` | `/` | `static/CNAME` |
 | Код | `https://code.spirzen.ru` | `/` | `public/CNAME` |
 | Play | `https://play.spirzen.ru` | `/` | `public/CNAME` |
+| Медиа | `https://assets.spirzen.ru` | `/` | `public/CNAME` |
 
 ### Локальная разработка
 
@@ -356,6 +375,7 @@ Algolia **не используется** (закомментирован в Doc
 | it-knowledge-base | `.github/workflows/deploy.yml` | `build/` | spirzen.ru |
 | it-code-examples | `.github/workflows/deploy.yml` | `dist/` | code.spirzen.ru |
 | it-play | `.github/workflows/deploy.yml` | `dist/` | play.spirzen.ru |
+| it-encyclopedia-media | `.github/workflows/deploy.yml` | `public/` | assets.spirzen.ru |
 
 **Энциклопедия:** `actions/deploy-pages@v4`, checkout `fetch-depth: 0` (даты коммитов в footer), swap 10 GB на runner для тяжёлой сборки.
 
@@ -392,15 +412,16 @@ npm start
 
 ## 8. Миграции контента (история апгрейда)
 
-Массовый перенос с монолитного Docusaurus на три домена:
+Массовый перенос с монолитного Docusaurus на отдельные домены:
 
 | Направление | Скрипты | Масштаб |
 |-------------|---------|---------|
 | Листинги → code | `it-code-examples/scripts/migrate-*.mjs` + manifest JSON | ~2312 примеров |
 | Демо → play | `it-play/scripts/migrate-*.mjs` + KB `migrate-*-to-play.mjs` | ~500 демо |
-| Статьи KB | `ExternalCodeEmbed` / `ExternalPlayEmbed` в MDX | тысячи встраиваний |
+| Иллюстрации → assets | `it-encyclopedia-media/scripts/migrate-from-kb.mjs` | ~670 файлов, ~680 ссылок в markdown |
+| Статьи KB | `ExternalCodeEmbed` / `ExternalPlayEmbed` + URL assets в markdown | тысячи встраиваний |
 
-После миграции тяжёлые компоненты удаляются из `it-knowledge-base/src/components/` (`remove-migrated-play-components.mjs`).
+После миграции тяжёлые компоненты удаляются из `it-knowledge-base/src/components/` (`remove-migrated-play-components.mjs`); растровые файлы — из `docs/encyclopedia/**` и `static/img/` (кроме логотипов сайта).
 
 ---
 
@@ -433,8 +454,14 @@ it-play/
   public/scripts/{embed-resize,theme}.js
   src/lib/useEmbedPlayProps.ts
 
+it-encyclopedia-media/
+  public/encyclopedia/          # иллюстрации по пути статьи
+  public/encyclopedia/_shared/img/  # общие диаграммы (архитектура и т.п.)
+  scripts/migrate-from-kb.mjs
+  scripts/generate-manifest.mjs
+
 it-management/
-  lib/config.mjs                # три проекта, порты, env
+  lib/config.mjs                # проекты экосистемы, порты, env
   server.mjs                    # HTTP API
 ```
 

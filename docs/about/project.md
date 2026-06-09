@@ -26,7 +26,7 @@ import DocCardList from '@theme/DocCardList';
 
 "Вселенная IT" — это масштабный проект по систематизации, унификации и долгосрочному хранению знаний в области информационных технологий. 
 
-Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду здесь **более трёх тысяч** материалов в `docs/` (из них **~2900 статей** в энциклопедии), плюс **~2300 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/) и **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/).
+Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду здесь **более трёх тысяч** материалов в `docs/` (из них **~2900 статей** в энциклопедии), плюс **~2300 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/), **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/) и **~670 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/).
 
 Здесь:
 - нет слежки;
@@ -40,7 +40,7 @@ import DocCardList from '@theme/DocCardList';
 
 Материалы ориентированы на профессионалов, преподавателей, студентов и тех, кто начинает свой путь в IT. Каждый раздел проектируется с учётом научной строгости, практической применимости и доступности изложения.
 
-Вселенная IT охватывает всю сферу IT в **единой модели знаний**: текст и навигация — на [spirzen.ru](https://spirzen.ru/), длинные листинги — на [code.spirzen.ru](https://code.spirzen.ru/), тяжёлый интерактив (эмуляторы, тренажёры, визуализаторы) — на [play.spirzen.ru](https://play.spirzen.ru/); в статьях всё связано через встраивание (iframe). Бесплатность, отсутствие рекламы, открытый код. Подробнее о витрине демо — в разделе [Интерактив](/about/interactive).
+Вселенная IT охватывает всю сферу IT в **единой модели знаний**: текст и навигация — на [spirzen.ru](https://spirzen.ru/), длинные листинги — на [code.spirzen.ru](https://code.spirzen.ru/), тяжёлый интерактив (эмуляторы, тренажёры, визуализаторы) — на [play.spirzen.ru](https://play.spirzen.ru/), иллюстрации и скриншоты — на [assets.spirzen.ru](https://assets.spirzen.ru/). Код и интерактив в статьях связаны через iframe; картинки — по URL в markdown. Бесплатность, отсутствие рекламы, открытый код. Подробнее о витрине демо — в разделе [Интерактив](/about/interactive).
 
 У Вселенной IT есть осознанные минусы:
 - уникальность и актуальность контента — я работаю сам и как хочу, поэтому если что-то обновится, то всё в моих руках;
@@ -148,25 +148,26 @@ import DocCardList from '@theme/DocCardList';
 
 ## Как устроен проект технически
 
-«Вселенная IT» — это не только тысячи статей, но и **распределённая программная платформа**: три публичных домена на GitHub Pages, связанных через iframe и postMessage, плюс локальная панель разработчика и мобильное приложение. На продакшене **нет общего backend и базы данных** — читатель получает статический HTML и JavaScript; вся подготовка контента и индексов происходит при сборке и в CI.
+«Вселенная IT» — это не только тысячи статей, но и **распределённая программная платформа**: четыре публичных домена на GitHub Pages (текст, код, интерактив, медиа), связанных с энциклопедией через iframe/postMessage и прямые URL иллюстраций, плюс локальная панель разработчика и мобильное приложение. На продакшене **нет общего backend и базы данных** — читатель получает статический HTML и JavaScript; вся подготовка контента и индексов происходит при сборке и в CI.
 
-### Экосистема (три домена + инструменты)
+### Экосистема (четыре домена + инструменты)
 
 | Сервис | URL | Репозиторий | Содержание |
 |--------|-----|-------------|------------|
 | Энциклопедия | [spirzen.ru](https://spirzen.ru/) | `it-knowledge-base` | ~2900 статей в энциклопедии, DocSearch (Ctrl+K) |
 | Примеры кода | [code.spirzen.ru](https://code.spirzen.ru/) | `it-code-examples` | ~2312 листингов (Astro + Shiki) |
 | Интерактив | [play.spirzen.ru](https://play.spirzen.ru/) | `it-play` | ~500 демо (Astro + React) |
-| Панель (локально) | `127.0.0.1:8787` | `it-management` | Start/Build/Deploy всех трёх |
+| Медиа | [assets.spirzen.ru](https://assets.spirzen.ru/) | `it-encyclopedia-media` | ~670 иллюстраций (статика, без сборки) |
+| Панель (локально) | `127.0.0.1:8787` | `it-management` | Start/Build/Deploy веб-проектов |
 | Android | APK на главной | `itu-mobile-app` | WebView → spirzen.ru |
 
-### Трёхуровневая архитектура
+### Распределённая архитектура
 
-Три независимых домена на GitHub Pages связаны **интеграцией**: код и интерактив «стягиваются» в статьи энциклопедии через iframe и postMessage — без общего backend.
+Четыре независимых домена на GitHub Pages разгружают репозиторий энциклопедии: код и интерактив «стягиваются» в статьи через iframe и postMessage, иллюстрации — по абсолютным URL с **assets** (без участия билда Docusaurus).
 
-![Трёхуровневая архитектура «Вселенная IT» — spirzen.ru (хаб), code.spirzen.ru (код), play.spirzen.ru (интерактив) и слой интеграции](/img/it-universe-three-tier.png)
+![Трёхуровневая архитектура «Вселенная IT» — spirzen.ru (хаб), code.spirzen.ru (код), play.spirzen.ru (интерактив) и слой интеграции](https://assets.spirzen.ru/encyclopedia/_shared/img/it-universe-three-tier.png)
 
-Исходник схемы — `info/it-universe-three-tier.drawio`.
+Исходник схемы — `info/it-universe-three-tier.drawio`. Иллюстрации статей и общие диаграммы — в [`it-encyclopedia-media`](https://github.com/Spirzen/it-encyclopedia-media); путь в репозитории повторяет путь статьи, общие PNG — в `_shared/img/`.
 
 Длинные листинги и тяжёлые симуляторы **не раздувают** билд энциклопедии: статьи встраивают их через `ExternalCodeEmbed` и `ExternalPlayEmbed` (iframe, синхрон темы, авто-высота). Подробно — в служебном [`info/ECOSYSTEM.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ECOSYSTEM.md) на GitHub.
 
@@ -179,19 +180,20 @@ import DocCardList from '@theme/DocCardList';
   </div>
 
 
-![Архитектура «Вселенная IT» — экосистема: spirzen.ru, code.spirzen.ru, play.spirzen.ru, интеграция и runtime](/img/it-universe-architecture.png)
+![Архитектура «Вселенная IT» — экосистема: spirzen.ru, code.spirzen.ru, play.spirzen.ru, assets.spirzen.ru, интеграция и runtime](https://assets.spirzen.ru/encyclopedia/_shared/img/it-universe-architecture.png)
 
 ### Что показано на схеме (Draw.io)
 
 | Зона | Содержание |
 | :--- | :--- |
-| **0. Экосистема** | Три репозитория GitHub → три домена Pages; it-management (локально); APK |
-| **0b. Интеграция** | ExternalCodeEmbed / ExternalPlayEmbed, postMessage, CSP |
+| **0. Экосистема** | Четыре репозитория GitHub → четыре домена Pages; it-management (локально); APK |
+| **0b. Интеграция** | ExternalCodeEmbed / ExternalPlayEmbed, postMessage, CSP; иллюстрации — URL с assets |
 | **1. it-knowledge-base** | `docs/` (~3400), `src/`, embed-компоненты, DocSearch |
 | **2. Сборка spirzen.ru** | wiki-links, search-index, Docusaurus 3.10 → `build/` |
 | **3–4. code / play** | Astro-каталоги, embed-маршруты, `dist/` |
+| **4b. assets** | `it-encyclopedia-media` → `public/encyclopedia/` → assets.spirzen.ru |
 | **5. Деплой** | GitHub Actions → deploy-pages на каждый домен |
-| **6. Runtime** | Статья → iframe code/play + inline lazyDemo; 9 блоков энциклопедии |
+| **6. Runtime** | Статья → iframe code/play + `img` с assets + inline lazyDemo; 9 блоков энциклопедии |
 
 <span id="it-universe-c4-mermaid"></span>
 
@@ -204,7 +206,8 @@ flowchart TB
   classDef kb fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
   classDef code fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
   classDef play fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-  classDef human fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+  classDef media fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+  classDef human fill:#eceff1,stroke:#546e7a,stroke-width:2px
 
   Reader["Читатель"]:::human
   Author["Автор / git"]:::human
@@ -212,13 +215,16 @@ flowchart TB
   KB["spirzen.ru<br/>~2900 статей"]:::kb
   CODE["code.spirzen.ru<br/>~2312 примеров"]:::code
   PLAY["play.spirzen.ru<br/>~500 демо"]:::play
+  ASSETS["assets.spirzen.ru<br/>~670 иллюстраций"]:::media
 
   Author --> KB
   Author --> CODE
   Author --> PLAY
+  Author --> ASSETS
   Reader --> KB
   KB -->|"iframe /e/embed/"| CODE
   KB -->|"iframe /p/embed/"| PLAY
+  KB -->|"img src URL"| ASSETS
   KB <-->|"postMessage"| CODE
   KB <-->|"postMessage"| PLAY
 ```
@@ -279,7 +285,7 @@ flowchart TB
   DC --> Faster --> Preset --> MDX --> Webpack --> Out
 ```
 
-Исходники диаграмм в репозитории — `info/it-universe-three-tier.drawio` (обзорная трёхуровневая схема) и `info/it-universe-architecture.drawio` (полная экосистема); редактор [diagrams.net](https://app.diagrams.net/) или расширение Draw.io в VS Code. PNG для сайта лежат в `static/img/`. Пересборка полной схемы: `node scripts/generate-architecture-drawio.mjs`.
+Исходники диаграмм в репозитории — `info/it-universe-three-tier.drawio` (обзорная схема хаб + code + play) и `info/it-universe-architecture.drawio` (полная экосистема); редактор [diagrams.net](https://app.diagrams.net/) или расширение Draw.io в VS Code. PNG для статей и этой страницы — на [assets.spirzen.ru](https://assets.spirzen.ru/) (`it-encyclopedia-media/public/encyclopedia/_shared/img/`). Пересборка полной схемы: `node scripts/generate-architecture-drawio.mjs`, затем экспорт PNG в media-репозиторий.
 
 Развёрнутое текстовое описание и дополнительные фрагменты Mermaid — в [`info/ARCHITECTURE.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ARCHITECTURE.md) на GitHub (каталог `info/` в публичную сборку сайта не входит). Якоря на этой странице: [C4-контекст](#it-universe-c4-mermaid), [пайплайн сборки](#it-universe-build-mermaid). Тот же материал разобран по темам энциклопедии — в статьях про [веб и SSG](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/114), [основы C4 и нотаций](/encyclopedia/7-project/7-04-analitika/1231), [инструменты C4](/encyclopedia/7-project/7-04-analitika/126), [CI/CD](/encyclopedia/8-infra-security/8-04-devops-ci-cd/11) и [GitHub Actions](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2112).
 
@@ -383,7 +389,7 @@ DevOps-практики, контейнеризация (Docker), оркестр
 ### Открытость
 - Все материалы **бесплатны** и доступны каждому, даже самым вредным товарищам))
 - Проект имеет **открытую лицензию** и позволяет спокойно получать знания.
-- Исходный код хранится в **нескольких** публичных репозиториях на GitHub (`it-knowledge-base`, `it-code-examples`, `it-play` и др.).
+- Исходный код хранится в **нескольких** публичных репозиториях на GitHub (`it-knowledge-base`, `it-code-examples`, `it-play`, `it-encyclopedia-media` и др.).
 - Вы можете скачать себе и развернуть, но тогда книга потеряет главное свойство - актуальность. Лучше пользуйтесь этим сайтом - spirzen.ru
 
 ---
@@ -425,6 +431,7 @@ DevOps-практики, контейнеризация (Docker), оркестр
 - **~2900 статей** в энциклопедии, **~3400 материалов** в `docs/` всего
 - **~2312 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/)
 - **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/)
+- **~670 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/)
 - **15+ языков программирования** в каталоге примеров
 - **Поиск** по статьям (Ctrl+K), без Algolia
 - **100% бесплатно**, постоянно обновляется

@@ -18,4 +18,5 @@
 |-------------|--------------|
 | `it-code-examples` | `../it-code-examples/AGENTS.md`, `README.md` |
 | `it-play` | `../it-play/AGENTS.md`, `README.md` |
+| `it-encyclopedia-media` | `../it-encyclopedia-media/README.md` |
 | `it-management` | `../it-management/README.md` |
