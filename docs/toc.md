@@ -3609,6 +3609,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-04-analitika/121">7.04. Дополнительные виды проектной документации</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/122">7.04. Документация в процессах</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/123">7.04. Артефакты аналитической деятельности</a></li>
+  <li><a href="/encyclopedia/7-project/7-04-analitika/1231">7.04. Основы диаграмм и моделирования</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/124">7.04. Моделирование бизнес-процессов</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/125">7.04. Прототипирование интерфейсов и сценариев</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/126">7.04. Инструменты аналитика</a></li>

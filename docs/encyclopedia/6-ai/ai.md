@@ -39,8 +39,9 @@ import DocCardList from '@theme/DocCardList';
 11. [MLOps — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2) и [AgentOps — слои 4–7](/encyclopedia/6-ai/6-08-agentops/1) — эксплуатация всего стека.
 12. [AgentOps в DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151) — CI/CD, multi-agent, инструменты.
 13. [Разработка ИИ-решений](/encyclopedia/6-ai/6-05-razrabotka-ii/1) — API, RAG, галлюцинации, развёртывание; [облачные Cognitive Services](/encyclopedia/6-ai/6-05-razrabotka-ii/120).
-14. [Применение в бизнесе](/encyclopedia/6-ai/6-06-primenenie-ii/1) — критерии зрелости продукта и риски.
-15. [Монетизация цифровых продуктов с ИИ](/encyclopedia/6-ai/6-06-primenenie-ii/5) — модели дохода для автора и фрилансера.
+14. [Практикум — проекты по ИИ](/encyclopedia/6-ai/6-05-razrabotka-ii/122) — карта обучения и внешние runnable-проекты (RAG, агенты, OCR) после теоретических глав.
+15. [Применение в бизнесе](/encyclopedia/6-ai/6-06-primenenie-ii/1) — критерии зрелости продукта и риски.
+16. [Монетизация цифровых продуктов с ИИ](/encyclopedia/6-ai/6-06-primenenie-ii/5) — модели дохода для автора и фрилансера.
 
 Статья [Контекст](/encyclopedia/6-ai/6-01-vvedenie-v-ii/113) — углубление в промпты, эмбеддинги и контекстное окно; её удобно читать после базового введения в LLM. Закрепить **messages**, system prompt и вызов из кода — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149).
 

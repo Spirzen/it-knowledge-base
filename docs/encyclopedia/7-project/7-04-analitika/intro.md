@@ -3,6 +3,8 @@ title: Аналитика — о разделе
 description: Как устроен раздел "Аналитика" — роли, маршруты обучения, связь с соседними темами и карта материалов в энциклопедии Вселенная IT
 sidebar_label: Аналитика — о разделе
 related:
+  - title: "Основы диаграмм и моделирования"
+    doc: encyclopedia/7-project/7-04-analitika/1231
   - title: "Основы анализа требований"
     doc: encyclopedia/7-project/7-04-analitika/111
   - title: "Программные платформы"
@@ -76,7 +78,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Бизнес-аналитик
 
-[113](/encyclopedia/7-project/7-04-analitika/113) → [124](/encyclopedia/7-project/7-04-analitika/124) → [129](/encyclopedia/7-project/7-04-analitika/129) → [130](/encyclopedia/7-project/7-04-analitika/130) → [116](/encyclopedia/7-project/7-04-analitika/116) → [117](/encyclopedia/7-project/7-04-analitika/117) → [127](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [121](/encyclopedia/7-project/7-04-analitika/121).
+[113](/encyclopedia/7-project/7-04-analitika/113) → [1231](/encyclopedia/7-project/7-04-analitika/1231) → [124](/encyclopedia/7-project/7-04-analitika/124) → [129](/encyclopedia/7-project/7-04-analitika/129) → [130](/encyclopedia/7-project/7-04-analitika/130) → [116](/encyclopedia/7-project/7-04-analitika/116) → [117](/encyclopedia/7-project/7-04-analitika/117) → [127](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [121](/encyclopedia/7-project/7-04-analitika/121).
 
 <div class="callout callout--tip">
   <div class="callout-title">Компактный маршрут по BABOK</div>
@@ -88,11 +90,12 @@ import DocCardList from '@theme/DocCardList';
   2. [112](/encyclopedia/7-project/7-04-analitika/112) — области знаний, тип проекта, «цель → метод»  
   3. [116](/encyclopedia/7-project/7-04-analitika/116) — план BA, RM, приоритизация  
   4. [111](/encyclopedia/7-project/7-04-analitika/111) — пять шагов анализа, стоимость дефекта  
-  5. [124](/encyclopedia/7-project/7-04-analitika/124) — gap analysis, journey, DFD  
-  6. Wireframe и UX до ТЗ — [Веб-дизайн — блок 2](/encyclopedia/1-basics/1-25-interfeys/7#блок-2--референсы-и-прототипирование)  
-  7. [126](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
-  8. [127](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
-  9. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление
+  5. [1231](/encyclopedia/7-project/7-04-analitika/1231) — основы диаграмм, выбор нотации  
+  6. [124](/encyclopedia/7-project/7-04-analitika/124) — gap analysis, journey, DFD  
+  7. Wireframe и UX до ТЗ — [Веб-дизайн — блок 2](/encyclopedia/1-basics/1-25-interfeys/7#блок-2--референсы-и-прототипирование)  
+  8. [126](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
+  9. [127](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
+  10. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление
   </div>
 </div>
 
@@ -100,7 +103,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Системный аналитик
 
-[114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro); для быстрой проверки контрактов в консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133).
+[114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [1231](/encyclopedia/7-project/7-04-analitika/1231) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro); для быстрой проверки контрактов в консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133).
 
 ---
 

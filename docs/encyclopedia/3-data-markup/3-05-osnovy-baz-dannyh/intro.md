@@ -44,7 +44,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Нормализация (1НФ–4НФ, НФБК)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md#normalnye-formy) — после [11](./11.md) и [103](/encyclopedia/3-data-markup/3-07-sql/103.md). Краткий [чек-лист моделирования](/encyclopedia/3-data-markup/3-07-sql/104.md#chek-list-modelirovaniya-dannyh) — в той же главе.
 
-**Файлы и СУБД, нотации ER:** [СУБД — файловое хранение и ограничения](./2.md#fajlovoe-hranenie-i-subd), [Entity Relationship — нотации](./11.md#notacii-er-modeli).
+**Файлы и СУБД, нотации ER:** [ERD среди нотаций моделирования](/encyclopedia/7-project/7-04-analitika/1231), [СУБД — файловое хранение и ограничения](./2.md#fajlovoe-hranenie-i-subd), [Entity Relationship — нотации](./11.md#notacii-er-modeli).
 
 **SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)). Практика запросов на схеме магазина с разбором — [SQL — реальные кейсы](/lab/Примеры/1152).
 

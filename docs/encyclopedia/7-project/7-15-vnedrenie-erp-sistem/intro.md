@@ -71,7 +71,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Тема | Где углубляться |
 |------|-----------------|
-| Требования, BPMN, as-is/to-be | [Аналитика](/encyclopedia/7-project/7-04-analitika/intro) |
+| Требования, BPMN, as-is/to-be | [Основы диаграмм](/encyclopedia/7-project/7-04-analitika/1231), [Аналитика](/encyclopedia/7-project/7-04-analitika/intro) |
 | Оценка трудозатрат, переговоры | [Команда и управление](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro) |
 | Тестирование, UAT, среды | [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro) |
 | Сопровождение и TCO ПО | [Экономика производства ПО](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro) |
