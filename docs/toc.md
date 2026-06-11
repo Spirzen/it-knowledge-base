@@ -658,6 +658,8 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Базовая информатика
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/101">1.035. Основы компьютерной грамотности</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/102">1.035. Терминология новичка</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/1">1.035. Базовая информатика — ключевые понятия и маршрут</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/2">1.035. Кодирование, сжатие и архивация</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/3">1.035. Компьютер, периферия и сетевое оборудование</a></li>

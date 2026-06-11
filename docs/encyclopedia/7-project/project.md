@@ -20,6 +20,8 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+Совсем с нуля, без опыта за ПК — сначала [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), затем [дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) и материалы этого тома.
+
 Инфраструктурный контекст сдачи ПО (ВМ, контейнеры, облако) — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) и раздел [8. Инфраструктура и безопасность](/encyclopedia/8-infra-security/infra-security).
 
 ---

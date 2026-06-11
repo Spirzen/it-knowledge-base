@@ -15,6 +15,8 @@ related:
     doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro
   - title: Контекст — о разделе
     doc: context/intro
+  - title: "Безопасность при работе с ИИ"
+    doc: encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/1
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -59,6 +61,7 @@ import DocCardList from '@theme/DocCardList';
 - **[Безопасность IoT](131.md)** — встраиваемые устройства, Mirai, SDL для прошивки.
 - **[Патчи и управление уязвимостями](132.md)** — SLA, приоритизация CVE, типичные сбои patch management.
 - **[Кейс — захват аккаунтов через AI-поддержку и дипфейк](133.md)** — Instagram (Meta), 2026: восстановление доступа, дипфейк-селфи, почему 2FA не спасает от бота поддержки.
+- **[Безопасность при работе с ИИ](/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/intro)** — обзор, OWASP LLM Top 10, RAG/MCP, агенты, supply chain, дипфейки, SOC; для разработчиков и ИБ.
 - **[Обеспечение безопасности](2.md)** — анализ хостов Windows/Linux, логи, forensics, автоматизация (объёмная глава; удобна как справочник).
 - **[Вирусы и вредоносные программы](119.md)**, **[Стилеры](134.md)**, **[Как выявлять замаскированные вирусы?](135.md)**, **[Антивирусы](120.md)** — malware, маскировка под системные процессы, кража паролей и cookie, EDR; в статье про антивирусы — внедрение и сопровождение **Kaspersky Endpoint Security** (политики, задачи, защита файлов и сети).
 - **[Мониторинг и SIEM](114.md)**, **[Средства защиты](1112.md)** — детективный контур; метрики и алерты — [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro), [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro).

@@ -55,7 +55,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Как пользоваться</div>
 
   <div class="callout-body">
-  Идите по главам **1 → 8** подряд или выборочно по таблице ниже. После [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) удобно углубиться в [11](/encyclopedia/1-basics/1-035-bazovaya-informatika/11) — память и вычисления. Глава **9** — справочник по средам (Godot, Flutter, BeautifulSoup и др.), её можно открывать по мере необходимости.
+  Совсем с нуля — начните с [101](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) (компьютерная грамотность); незнакомые слова — в [102](/encyclopedia/1-basics/1-035-bazovaya-informatika/102) (терминология новичка). Затем идите по главам **1 → 8** подряд или выборочно по таблице ниже. После [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) удобно углубиться в [11](/encyclopedia/1-basics/1-035-bazovaya-informatika/11) — память и вычисления. Глава **9** — справочник по средам (Godot, Flutter, BeautifulSoup и др.), её можно открывать по мере необходимости.
 
   Итоги и чек-лист — в конце ([98](/encyclopedia/1-basics/1-035-bazovaya-informatika/98), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99)).
 </div>
@@ -67,6 +67,8 @@ import DocCardList from '@theme/DocCardList';
 
 | № | Тема | Глава курса | Подробнее в энциклопедии |
 |---|---------------|-------------|---------------------------|
+| 101 | Компьютерная грамотность с нуля | [101](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Советы для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro) |
+| 102 | Терминология новичка | [102](/encyclopedia/1-basics/1-035-bazovaya-informatika/102) | [Глоссарий](/glossary/intro), [Сленг](/encyclopedia/1-basics/1-06-sleng/intro) |
 | 1 | Ключевые понятия и маршрут | [1](/encyclopedia/1-basics/1-035-bazovaya-informatika/1) | [Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) |
 | 2 | Кодирование, сжатие, архивы, обзор БД | [2](/encyclopedia/1-basics/1-035-bazovaya-informatika/2) | [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2), [типы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1#chetyre-osnovnyh-tipa-baz-dannyh) |
 | 3 | Железо, периферия, сети (компьютер, ЭВМ, устройства) | [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/1) |
@@ -84,7 +86,8 @@ import DocCardList from '@theme/DocCardList';
 
 ```mermaid
 flowchart LR
-    A["1 Понятия и маршрут"] --> B["2 Данные"]
+    Z["101 Грамотность"] --> A["1 Понятия и маршрут"]
+    A --> B["2 Данные"]
     B --> C["3 Железо"]
     C --> D["5 ОС"]
     D --> E["6 Интернет"]
@@ -116,7 +119,9 @@ flowchart LR
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Старт в IT** — [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro), [Фронтенд и бэкенд — о разделе](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro).
+**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
+
+**Старт в IT** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro), [Фронтенд и бэкенд — о разделе](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro).
 
 {/* /sidebar-collections */}
 

@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-От [нейрона и слоёв](/encyclopedia/6-ai/6-03-neyroseti/1) — к [NumPy — массивы и матрицы](/lab/Примеры/1129) (если ещё не работали с `ndarray`), затем [первому обучению на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2), далее [Трансформеры и NLP](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [PyTorch для разработчика](/encyclopedia/5-languages/5-02-python/333), сквозной [практикум MNIST на PyTorch](/encyclopedia/5-languages/5-02-python/335) или [Keras и TensorFlow](/encyclopedia/6-ai/6-03-neyroseti/114) и обзору концепций в [112](/encyclopedia/6-ai/6-03-neyroseti/112). Для диалога с ChatGPT без курса по ML — [Prompt engineering — библиотека промптов](/lab/Примеры/1150) и [краткое введение в нейросети](/encyclopedia/6-ai/6-03-neyroseti/111).
+От [нейрона и слоёв](/encyclopedia/6-ai/6-03-neyroseti/1) — к [NumPy — массивы и матрицы](/lab/Примеры/1129) (если ещё не работали с `ndarray`), затем [первому обучению на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2), [матрице выбора архитектуры](/encyclopedia/6-ai/6-03-neyroseti/113), далее [Keras и TensorFlow](/encyclopedia/6-ai/6-03-neyroseti/114) (TensorBoard, Colab) или [PyTorch](/encyclopedia/5-languages/5-02-python/333) и [практикум MNIST](/encyclopedia/5-languages/5-02-python/335). Без локального GPU — [практикум DL в Colab](/encyclopedia/6-ai/6-05-razrabotka-ii/122#vetka-dl--glubokoe-obuchenie-v-colab). Дальше — [Трансформеры и NLP](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro) и обзор в [112](/encyclopedia/6-ai/6-03-neyroseti/112). Для диалога с ChatGPT без курса по ML — [Prompt engineering — библиотека промптов](/lab/Примеры/1150) и [краткое введение в нейросети](/encyclopedia/6-ai/6-03-neyroseti/111).
 
 <div class="callout callout--tip">
   <div class="callout-title">Сначала табличный ML</div>
@@ -53,7 +53,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Нейросети и ИИ** — [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Введение в ИИ — о разделе](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro).
 

@@ -32,6 +32,8 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел объясняет, **как операционная система управляет железом** для множества программ: процессор, память, диски, сеть, права доступа. Материалы подходят и новичкам, и тем, кто готовит базу по курсу "Операционные системы".
 
+Иллюстрации интерфейса Windows (рабочий стол, «Пуск», окна, проводник) — в [Windows / GUI](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/4) и [101 — компьютерная грамотность](/encyclopedia/1-basics/1-035-bazovaya-informatika/101#иллюстрации-для-других-статей).
+
 Как одна ОС на сервере соседствует с **ВМ и контейнерами** — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya).
 
 <ExternalPlayEmbed example="system-network/os-platforms-hub" title="Операционные системы — хаб" minHeight={520} />
@@ -115,7 +117,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Компьютерная грамотность** — [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro).
+**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro).
 
 **Системное программирование** — [Архитектура персонального компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7), [Платформы — о разделе](/encyclopedia/2-system-network/2-02-platformy/intro), [Принцип работы компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 

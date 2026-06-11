@@ -9,6 +9,8 @@ related:
     doc: encyclopedia/1-basics/1-19-programma/intro
   - title: "Базовая информатика — о разделе"
     doc: encyclopedia/1-basics/1-035-bazovaya-informatika/intro
+  - title: "Основы компьютерной грамотности"
+    doc: encyclopedia/1-basics/1-035-bazovaya-informatika/101
   - title: "Алгоритмы — о разделе"
     doc: encyclopedia/4-code-dev/4-01-algoritmy/intro
   - title: "Big-O — шпаргалка с примерами"
@@ -28,6 +30,8 @@ import DocCardList from '@theme/DocCardList';
 ---
 
 ## О разделе
+
+Совсем с нуля, без опыта за ПК — сначала [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), затем [программа](/encyclopedia/1-basics/1-19-programma/intro) и этот том.
 
 Раздел **«Код и разработка»** — мост между [программой как инструкциями для ПК](/encyclopedia/1-basics/1-19-programma/intro) и профессиональной инженерией: языками, фреймворками, архитектурой. Здесь разбирают, **как записывают** логику (синтаксис, операторы, стиль), **как она доходит до процессора** (компиляция, байт-код, JIT, память, потоки) и **как удерживают проект живым** (модули, зависимости, отладка, Git).
 
@@ -123,6 +127,8 @@ flowchart LR
   <div class="callout-title">Связь с другими томами</div>
 
   <div class="callout-body">
+  С нуля за ПК — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101).
+
   Школьный маршрут — [алгоритмы и языки в базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4).
 
   Правовой статус программ — [интеллектуальные права](/encyclopedia/7-project/7-07-intellektualnye-prava/intro).

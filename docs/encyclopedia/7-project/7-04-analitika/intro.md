@@ -3,6 +3,8 @@ title: Аналитика — о разделе
 description: Как устроен раздел "Аналитика" — роли, маршруты обучения, связь с соседними темами и карта материалов в энциклопедии Вселенная IT
 sidebar_label: Аналитика — о разделе
 related:
+  - title: "Основы компьютерной грамотности"
+    doc: encyclopedia/1-basics/1-035-bazovaya-informatika/101
   - title: "Основы диаграмм и моделирования"
     doc: encyclopedia/7-project/7-04-analitika/1231
   - title: "Основы анализа требований"
@@ -36,7 +38,7 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел **"Аналитика"** — практический курс для тех, кто переводит хаос пожеланий заказчика в понятные требования, модели и документы. Здесь не "про отчёты в Excel" (хотя метрики тоже разбираем), а про **инженерию смысла** на стыке бизнеса и разработки.
 
-Если вы только входите в IT, начните с [Основ анализа требований](/encyclopedia/7-project/7-04-analitika/111) и [Профессиональной аналитики](/encyclopedia/7-project/7-04-analitika/112). Если уже работаете аналитиком — используйте раздел как справочник: BPMN, ГОСТ, API, Agile, продуктовые метрики.
+Если вы только входите в IT, сначала убедитесь, что уверенно пользуетесь ПК — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101). Затем — [Основы анализа требований](/encyclopedia/7-project/7-04-analitika/111) и [Профессиональная аналитика](/encyclopedia/7-project/7-04-analitika/112). Если уже работаете аналитиком — используйте раздел как справочник: BPMN, ГОСТ, API, Agile, продуктовые метрики.
 
 <ExternalPlayEmbed example="project/analytics-section-hub" title="Аналитика — хаб раздела" minHeight={560} />
 
@@ -59,6 +61,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Старт (обязательный минимум)
 
+0. [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) — если ещё не уверенно пользуетесь ПК, файлами и почтой.
 1. [История аналитики в IT](/encyclopedia/7-project/7-04-analitika/1)
 2. [Основы анализа требований](/encyclopedia/7-project/7-04-analitika/111)
 3. [Профессиональная аналитика](/encyclopedia/7-project/7-04-analitika/112)

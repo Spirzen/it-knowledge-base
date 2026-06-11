@@ -37,6 +37,10 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про **командную строку и терминал**: зачем нужен текстовый интерфейс, как запускать оболочки в Windows и Linux, базовые команды и автоматизация. Для Windows центральный инструмент администрирования — **PowerShell**; углублённый язык и синтаксис — в разделе [5.26 PowerShell](/encyclopedia/5-languages/5-26-powershell/intro).
 
+![terminal.png — окно терминала Windows](https://assets.spirzen.ru/encyclopedia/1-basics/1-035-bazovaya-informatika/terminal.png)
+
+Первое знакомство с терминалом для новичка — в [Основах компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101).
+
 ---
 
 ## С чего начать в энциклопедии

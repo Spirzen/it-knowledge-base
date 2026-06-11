@@ -3,6 +3,8 @@ title: Программа — о разделе
 description: "Подборка материалов раздела Программа в энциклопедии Вселенная IT."
 sidebar_label: Программа — о разделе
 related:
+  - title: "Основы компьютерной грамотности"
+    doc: encyclopedia/1-basics/1-035-bazovaya-informatika/101
   - title: "Компиляторы и интерпретаторы"
     doc: encyclopedia/1-basics/1-19-programma/2
   - title: "Код и разработка"
@@ -33,6 +35,8 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+Впервые за ПК — сначала [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101): там же разбираются установка и запуск программ в бытовом смысле.
+
 Раздел объясняет, что такое **программа** как инструкции для компьютера, как исходный код превращается в работающий **процесс**, и как программы связаны с операционной системой, настройками и жизненным циклом (установка, обновление).
 
 Программа реализует [алгоритм](/glossary/А#алгоритм) — упорядоченные шаги решения задачи. Сами алгоритмы, синтаксис языков и архитектурные приёмы разбираются в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) и в томе [Код и разработка](/encyclopedia/4-code-dev/code-dev); здесь фокус на **исполнении**, **типах ПО** и **взаимодействии с системой**.
@@ -56,6 +60,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Рекомендуемый порядок
 
+0. [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) — если ещё не уверенно пользуетесь ПК, файлами и установкой софта.
 1. [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) — exe, IDE, терминал, dev-сервер, службы, Docker (практика для новичка).
 2. [Что такое программа?](/encyclopedia/1-basics/1-19-programma/1) — базовые термины, компиляция и интерпретация, процесс.
 3. [ПО и операционная система](/encyclopedia/1-basics/1-19-programma/111) — системное, прикладное, инструментальное ПО.
@@ -80,7 +85,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Первый коммит** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 
-**Компьютерная грамотность** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro).
+**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro).
 
 **База программиста** — [Текст — о разделе](/encyclopedia/1-basics/1-15-tekst/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
 

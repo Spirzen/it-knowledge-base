@@ -23,6 +23,8 @@ related:
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro
   - title: "Трансформеры и NLP — о разделе"
     doc: encyclopedia/6-ai/6-09-transformery-i-nlp/intro
+  - title: "Безопасность при работе с ИИ"
+    doc: encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/1
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -36,7 +38,7 @@ import DocCardList from '@theme/DocCardList';
 | [MLOps и LLM-стек — слои 1–3](./2) | Источники, данные, модель | CRISP-ML, drift, retrieval theory, registry |
 | [AgentOps и LLM-стек — слои 4–7](./1) | Оркестрация, инференс, интеграция, продукт | BDI, eval theory, HITL, trust boundaries |
 
-Практики DevOps (CI/CD, IaC, Git, деплой) — [8.04 DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro). Углублённый AgentOps (multi-agent PR, AGENTS.md, tools) — [8.04 AgentOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151).
+Практики DevOps (CI/CD, IaC, Git, деплой) — [8.04 DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro). Углублённый AgentOps (multi-agent PR, AGENTS.md, tools) — [8.04 AgentOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151). Риски агентов с доступом к терминалу и промпт-инъекции — [Безопасность при работе с ИИ](/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/1).
 
 ---
 

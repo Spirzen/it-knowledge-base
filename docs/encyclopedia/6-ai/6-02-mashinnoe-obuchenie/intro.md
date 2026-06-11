@@ -21,6 +21,8 @@ related:
     doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/3
   - title: "Scikit-learn — регрессия и классификация"
     doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/10
+  - title: "Модели обучения"
+    doc: encyclopedia/6-ai/6-02-mashinnoe-obuchenie/11
   - title: "Keras и TensorFlow — нейросети"
     doc: encyclopedia/6-ai/6-03-neyroseti/114
   - title: "PyTorch для разработчика"

@@ -35,6 +35,8 @@ import DocCardList from '@theme/DocCardList';
 
 Перед командами из интернета или от ИИ-помощника — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101). Код из чата без разбора — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) и [библиотека промптов](/lab/Примеры/1150) (объяснение темы, traceback, домашка без списывания).
 
+Скриншоты Windows (проводник, диспетчер задач, поиск) — в [Основах компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) и [таблице переиспользования](/encyclopedia/1-basics/1-035-bazovaya-informatika/101#иллюстрации-для-других-статей).
+
 Если вы уже настраиваете Windows глубже, откройте практикум [Управление службами в Windows](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64) и применяйте изменения через `Manual` с проверкой зависимостей.
 
 <div class="callout callout--tip">
@@ -75,9 +77,9 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
 
-**Старт в IT** — [Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Фронтенд и бэкенд — о разделе](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro).
+**Старт в IT** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Фронтенд и бэкенд — о разделе](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro).
 
-**Компьютерная грамотность** — [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
+**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
 
 {/* /sidebar-collections */}
 

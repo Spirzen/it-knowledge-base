@@ -25,6 +25,8 @@ related:
     doc: encyclopedia/6-ai/6-09-transformery-i-nlp/intro
   - title: Здравоохранение (контекст)
     doc: context/healthcare/intro
+  - title: "Безопасность при работе с ИИ"
+    doc: encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/1
 ---
 
 import DocCardList from '@theme/DocCardList';

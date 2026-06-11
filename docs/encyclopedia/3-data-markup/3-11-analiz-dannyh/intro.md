@@ -3,6 +3,8 @@ title: Анализ данных — о разделе
 description: "Подборка материалов раздела Анализ данных в энциклопедии Вселенная IT."
 sidebar_label: Анализ данных — о разделе
 related:
+  - title: "Основы компьютерной грамотности"
+    doc: encyclopedia/1-basics/1-035-bazovaya-informatika/101
   - title: "NoSQL — о разделе"
     doc: encyclopedia/3-data-markup/3-06-nosql/intro
   - title: "SQL — о разделе"
@@ -35,11 +37,13 @@ import DocCardList from '@theme/DocCardList';
 
 **Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна формула DAX, пара строк pandas, SQL до staging) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-Раздел выстроен от общей картины к инструментам и прикладным сценариям. Рекомендуемый порядок для первого прохода:
+Раздел выстроен от общей картины к инструментам и прикладным сценариям. Если вы ещё не уверенно работаете с ПК, файлами и браузером — сначала [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101).
+
+Рекомендуемый порядок для первого прохода:
 
 0. **Старт из Excel** — [212 — основы](/encyclopedia/1-basics/1-15-tekst/212) → [1139 — формулы с разбором](/lab/Примеры/1139) → [429 — EDA в Excel](/encyclopedia/3-data-markup/3-11-analiz-dannyh/429) → [42 — статистика](/encyclopedia/3-data-markup/3-11-analiz-dannyh/42) → [430 — маршрут Excel → R → Python](/encyclopedia/3-data-markup/3-11-analiz-dannyh/430) → ветка [424 — Python](/encyclopedia/3-data-markup/3-11-analiz-dannyh/424) или [5-23-r/103 — R](/encyclopedia/5-languages/5-23-r/103).
 1. [Анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/1) — OLTP/OLAP, семантика, DAX, жизненный цикл аналитики.
-2. [Data Science](/encyclopedia/3-data-markup/3-11-analiz-dannyh/12) — роли и стек инструментов; до Pandas — [Python — файлы и CSV (stdlib)](/lab/Примеры/1126); [NumPy — массивы и матрицы](/lab/Примеры/1129); [типовые операции Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428); [примеры pandas с разбором](/lab/Примеры/1113); [практикум — Pandas Data Viewer](/encyclopedia/5-languages/5-02-python/334) (Tkinter + pandas: загрузка CSV/Excel, поиск, статистика); [практикум — распознавание цифр на PyTorch](/encyclopedia/5-languages/5-02-python/335) (MNIST, CNN, GUI-инференс); [SQL — реальные кейсы](/lab/Примеры/1152) (groupby, join, суммы — тот же смысл, что в SQL); [напоминалка Pandas / Polars / SQL / PySpark / Excel](/encyclopedia/3-data-markup/3-11-analiz-dannyh/426); [очистка в Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427).
+2. [Data Science](/encyclopedia/3-data-markup/3-11-analiz-dannyh/12) — роли, стек и [подготовка данных для ML](/encyclopedia/3-data-markup/3-11-analiz-dannyh/12#podgotovka-dannyh-dlya-ml) (нормализация, split, аугментация); до Pandas — [Python — файлы и CSV (stdlib)](/lab/Примеры/1126); [NumPy — массивы и матрицы](/lab/Примеры/1129); [типовые операции Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428); [примеры pandas с разбором](/lab/Примеры/1113); [практикум — Pandas Data Viewer](/encyclopedia/5-languages/5-02-python/334) (Tkinter + pandas: загрузка CSV/Excel, поиск, статистика); [практикум — распознавание цифр на PyTorch](/encyclopedia/5-languages/5-02-python/335) (MNIST, CNN, GUI-инференс); [SQL — реальные кейсы](/lab/Примеры/1152) (groupby, join, суммы — тот же смысл, что в SQL); [напоминалка Pandas / Polars / SQL / PySpark / Excel](/encyclopedia/3-data-markup/3-11-analiz-dannyh/426); [очистка в Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427).
 3. [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433) — теория batch, bulk, chunk, транзакции, идемпотентность, разбиение тяжёлых операций (хаб перед ETL и потоком).
 4. [Big Data](/encyclopedia/3-data-markup/3-11-analiz-dannyh/11) (в т. ч. [Data Warehouse, Data Lake и Data Mesh](/encyclopedia/3-data-markup/3-11-analiz-dannyh/11#data-warehouse-lake-mesh)), [ETL/ELT](/encyclopedia/3-data-markup/3-11-analiz-dannyh/425), [потоковая аналитика](/encyclopedia/3-data-markup/3-11-analiz-dannyh/423) — масштаб, конвейеры, события в реальном времени.
 5. [Дата-майнинг](/encyclopedia/3-data-markup/3-11-analiz-dannyh/2), [причинно-следственный анализ](/encyclopedia/3-data-markup/3-11-analiz-dannyh/422), [ошибки интерпретации](/encyclopedia/3-data-markup/3-11-analiz-dannyh/3) — закономерности, корреляция и критическое мышление.

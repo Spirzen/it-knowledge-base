@@ -56,6 +56,12 @@ function HomepageHeader() {
                 Витрина
               </Link>
             </div>
+            <Link
+              className={styles.heroIndexLink}
+              to="/encyclopedia/1-basics/1-035-bazovaya-informatika/101"
+              prefetch={false}>
+              Компьютерная грамотность с нуля
+            </Link>
             <Link className={styles.heroIndexLink} to={INDEX_GUIDE_PATH} prefetch={false}>
               Указатель — где и о чём почитать
             </Link>

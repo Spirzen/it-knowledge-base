@@ -5,6 +5,8 @@ sidebar_label: "Вайб-кодинг и нейроконтент — о раз�
 related:
   - title: "Вайб-кодинг"
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1
+  - title: "Мультимодальный ИИ"
+    doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/5
   - title: "Практический AI-стек — Lovable, Supabase, Cursor, n8n и ChatGPT"
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/3
   - title: "Claude Code — установка, контекст и практический проект"
@@ -25,6 +27,8 @@ related:
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro
   - title: "AgentOps и MLOps — о разделе"
     doc: encyclopedia/6-ai/6-08-agentops/intro
+  - title: "Безопасность при работе с ИИ"
+    doc: encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/1
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -36,6 +40,7 @@ import DocCardList from '@theme/DocCardList';
 | Статья | О чём |
 |--------|--------|
 | [1](./1) | Вайб-кодинг — термин, спектр практик, инструменты, риски для навыков и продакшена |
+| [5](./5) | Мультимодальный ИИ — режимы, распознавание медиа, генерация изображений, видео и аудио, топ нейросетей |
 | [3](./3) | Практический AI-стек — настройка среды, GPT-приложения, mini-CRM, интеграции, промпт-инжиниринг |
 | [4](./4) | Claude Code — установка, CLI и веб, контекст, subagents, MCP, plan mode, Ralph-loop, практикум |
 | [2](./2) | Нейрослоп — низкокачественный ИИ-контент в коде, тексте и медиа; как распознать и не производить |
