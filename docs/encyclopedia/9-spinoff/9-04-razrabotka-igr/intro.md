@@ -57,8 +57,8 @@ import DocCardList from '@theme/DocCardList';
 | **Команды и datapack Minecraft** | Чат, scoreboard, `mcfunction`, load/tick | [Minecraft — команды и datapack](/lab/Примеры/1142) |
 | **Быстрые скрипты Unity** | Один скрипт — одна механика, разбор строк | [Unity C# — скрипты](/lab/Примеры/1136) |
 | **Быстрые скрипты Roblox** | Script, LocalScript, RemoteEvent — разбор строк | [Roblox / Luau — скрипты](/lab/Примеры/1141) |
-| **Справочник** | API, горячие клавиши, lifecycle | [301](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301), [401](/encyclopedia/9-spinoff/9-04-razrabotka-igr/401), [201](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201) |
-| **Платформы и качество** | Где публиковать, как не тормозить | [PC](/encyclopedia/9-spinoff/9-04-razrabotka-igr/118)–[122](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), [Тестирование](/encyclopedia/9-spinoff/9-04-razrabotka-igr/124) |
+| **Справочник** | API, горячие клавиши, lifecycle | [Справочник по Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301), [Справочник по Unreal Engine](/encyclopedia/9-spinoff/9-04-razrabotka-igr/401), [Справочник по Roblox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201) |
+| **Платформы и качество** | Где публиковать, как не тормозить | [PC](/encyclopedia/9-spinoff/9-04-razrabotka-igr/118)–[Мобильные игры](/encyclopedia/9-spinoff/9-04-razrabotka-igr/122), [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), [Тестирование](/encyclopedia/9-spinoff/9-04-razrabotka-igr/124) |
 | **Внешний каталог** | Open-source клоны для разбора исходников | [Каталог клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125) ([osgameclones.com](https://osgameclones.com/)) |
 | **Референсы для игрока** | Эталоны жанров и механик "на ощупь" | [Игры, которые должен попробовать каждый](/tools/games/4) |
 
@@ -70,7 +70,7 @@ import DocCardList from '@theme/DocCardList';
 
 1. [Процесс разработки видеоигр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1) — этапы, GDD, роли.
 2. [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112) и [Виды движков](/encyclopedia/9-spinoff/9-04-razrabotka-igr/113) — выбор стека.
-3. [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) — три уровня; цепочка [1172](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1172) → [1174](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1174) → [1173](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1173) → [1171](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1171) → [1175](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1175) → [1176](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1176).
+3. [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) — три уровня; цепочка [Механики и пространство состояний](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1172) → [Геймплей и core loop](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1174) → [Системы, петли обратной связи и баланс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1173) → [Опыт игрока и мотивационные модели](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1171) → [Макроструктура, нарратив и метагейм](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1175) → [Прототип и playtest дизайна](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1176).
 4. Один практический трек: **Unity** *или* **Unreal** *или* **Roblox** (см. карточки ниже).
 5. По желанию: [Языки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/114), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), платформы; для разбора чужого кода — [каталог open-source клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125).
 6. [Итоги](/encyclopedia/9-spinoff/9-04-razrabotka-igr/998) и [чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
@@ -79,13 +79,13 @@ import DocCardList from '@theme/DocCardList';
 
 ### Углублённый маршрут по гейм-дизайну
 
-Углублённая теория геймплея — цепочка после [117](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117):
+Углублённая теория геймплея — цепочка после [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117):
 
-1. [1172 — механики](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1172)
-2. [1174 — core loop](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1174)
-3. [1173 — системы и баланс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1173)
-4. [1171 — опыт игрока](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1171)
-5. [1175 — нарратив](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1175) → [1176 — прототип](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1176)
+1. [Механики и пространство состояний — механики](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1172)
+2. [Геймплей и core loop — core loop](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1174)
+3. [Системы, петли обратной связи и баланс — системы и баланс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1173)
+4. [Опыт игрока и мотивационные модели — опыт игрока](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1171)
+5. [Макроструктура, нарратив и метагейм — нарратив](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1175) → [Прототип и playtest дизайна — прототип](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1176)
 
 ---
 
@@ -98,13 +98,13 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Unity — практика | C# — теория | Зачем |
 |-----|------------------|-------------|--------|
 | 1 | [One-Page / GDD](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) | — | Замысел до кода |
-| 2 | [3.md](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — установка, окна, документация | [C# — первая программа](/encyclopedia/5-languages/5-05-csharp/1), [синтаксис](/encyclopedia/5-languages/5-05-csharp/11) | Среда и базовый синтаксис |
-| 3 | [3.md](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — white-box, свет, частицы | [переменные](/encyclopedia/5-languages/5-05-csharp/17), [типы](/encyclopedia/5-languages/5-05-csharp/20) | Уровень и типы данных |
-| 4 | [3.md](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — lifecycle, `Update` / `FixedUpdate` | [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25) — блок Unity | `MonoBehaviour`, компоненты |
-| 5 | [3.md](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — движение, прыжок, UI | [коллекции](/encyclopedia/5-languages/5-05-csharp/28) | `List`, `Dictionary`, свойства |
-| 6 | [3.md](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — стрельба, GameManager | [делегаты и события](/encyclopedia/5-languages/5-05-csharp/102) | События UI и геймплея |
-| 7 | [3.md](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — NavMesh, враги | [generics](/encyclopedia/5-languages/5-05-csharp/26) (по желанию) | ИИ и обобщения |
-| 8 | [301](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301), [999](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999) | [справочник C#](/encyclopedia/5-languages/5-05-csharp/471) | Закрепление |
+| 2 | [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — установка, окна, документация | [C# — первая программа](/encyclopedia/5-languages/5-05-csharp/1), [синтаксис](/encyclopedia/5-languages/5-05-csharp/11) | Среда и базовый синтаксис |
+| 3 | [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — white-box, свет, частицы | [переменные](/encyclopedia/5-languages/5-05-csharp/17), [типы](/encyclopedia/5-languages/5-05-csharp/20) | Уровень и типы данных |
+| 4 | [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — lifecycle, `Update` / `FixedUpdate` | [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25) — блок Unity | `MonoBehaviour`, компоненты |
+| 5 | [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — движение, прыжок, UI | [коллекции](/encyclopedia/5-languages/5-05-csharp/28) | `List`, `Dictionary`, свойства |
+| 6 | [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — стрельба, GameManager | [делегаты и события](/encyclopedia/5-languages/5-05-csharp/102) | События UI и геймплея |
+| 7 | [Разработка на Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) — NavMesh, враги | [generics](/encyclopedia/5-languages/5-05-csharp/26) (по желанию) | ИИ и обобщения |
+| 8 | [Справочник по Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/301), [Разработка игр — чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999) | [справочник C#](/encyclopedia/5-languages/5-05-csharp/471) | Закрепление |
 
 <div class="callout callout--tip">
   <div class="callout-title">Как учиться эффективно</div>
@@ -126,12 +126,12 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Roblox — практика | Luau — теория | Зачем |
 |-----|-------------------|---------------|--------|
-| 1 | [203 — Studio и Place](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203) | — | Среда, публикация, первый Script |
-| 2 | [2 — клиент и сервер](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2) (обзор) | [Первая программа](/encyclopedia/5-languages/5-15-lua-i-luau/13), [синтаксис](/encyclopedia/5-languages/5-15-lua-i-luau/14) | Контейнеры и базовый Lua |
-| 3 | [204 — практикум «обби»](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) | [таблицы](/encyclopedia/5-languages/5-15-lua-i-luau/15), [функции](/encyclopedia/5-languages/5-15-lua-i-luau/17) | DataStore, RemoteEvent, этапы |
-| 4 | [205 — королевская битва](/encyclopedia/9-spinoff/9-04-razrabotka-igr/205) (по желанию) | [корутины](/encyclopedia/5-languages/5-15-lua-i-luau/21) | Раунды, PvP, валидация на сервере |
-| 5 | [206 — механика и продвижение](/encyclopedia/9-spinoff/9-04-razrabotka-igr/206), [202 — экономика](/encyclopedia/9-spinoff/9-04-razrabotka-igr/202) | [23 — Luau](/encyclopedia/5-languages/5-15-lua-i-luau/23) | Монетизация, жанры, типы |
-| 6 | [201 — справочник](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201), [999 — чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999) | [999 Luau](/encyclopedia/5-languages/5-15-lua-i-luau/999) | Закрепление |
+| 1 | [Roblox Studio — первая игра и настройки Place — Studio и Place](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203) | — | Среда, публикация, первый Script |
+| 2 | [Разработка на Roblox — клиент и сервер](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2) (обзор) | [Первая программа](/encyclopedia/5-languages/5-15-lua-i-luau/13), [синтаксис](/encyclopedia/5-languages/5-15-lua-i-luau/14) | Контейнеры и базовый Lua |
+| 3 | [Практикум — обби на Roblox — практикум «обби»](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) | [таблицы](/encyclopedia/5-languages/5-15-lua-i-luau/15), [функции](/encyclopedia/5-languages/5-15-lua-i-luau/17) | DataStore, RemoteEvent, этапы |
+| 4 | [Практикум — королевская битва на Roblox — королевская битва](/encyclopedia/9-spinoff/9-04-razrabotka-igr/205) (по желанию) | [корутины](/encyclopedia/5-languages/5-15-lua-i-luau/21) | Раунды, PvP, валидация на сервере |
+| 5 | [Roblox — механика, монетизация и продвижение — механика и продвижение](/encyclopedia/9-spinoff/9-04-razrabotka-igr/206), [Внутриигровая экономика Roblox — экономика](/encyclopedia/9-spinoff/9-04-razrabotka-igr/202) | [Luau - типизированный диалект Lua от Roblox — Luau](/encyclopedia/5-languages/5-15-lua-i-luau/23) | Монетизация, жанры, типы |
+| 6 | [Справочник по Roblox — справочник](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201), [Разработка игр — чек-лист — чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999) | [999 Luau](/encyclopedia/5-languages/5-15-lua-i-luau/999) | Закрепление |
 
 <div class="callout callout--tip">
   <div class="callout-title">Как учиться эффективно</div>
@@ -139,7 +139,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-body">
   Держите открытыми Studio
 
-  [галерею скриптов в Lab](/lab/Примеры/1141) и статью [204](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204): повторяйте модули и чекпоинты, меняя число этапов и цены в магазине. Справочник [2](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2) читайте выборочно при вопросах по lifecycle и репликации.
+  [галерею скриптов в Lab](/lab/Примеры/1141) и статью [Практикум — обби на Roblox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204): повторяйте модули и чекпоинты, меняя число этапов и цены в магазине. Справочник [Разработка на Roblox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2) читайте выборочно при вопросах по lifecycle и репликации.
 </div>
 </div>
 

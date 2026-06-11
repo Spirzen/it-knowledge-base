@@ -44,7 +44,7 @@ import DocCardList from '@theme/DocCardList';
 | **Ч. 1. Проектирование заказных продуктов** | Требования, архитектура, оценки, риски, экономика проектирования | Этот раздел + [Аналитика](/encyclopedia/7-project/7-04-analitika/intro), [Архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Команда](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro) |
 | **Ч. 2. Производство заказных продуктов** | Конструирование, тесты, планирование, сопровождение, конфигурация, испытания | [Конструирование](/encyclopedia/7-project/7-12-konstruirovanie-po/intro), [Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro), [Техписьмо](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/intro) |
 
-Проект **внедрения ERP** и TCO после приёмки — [Внедрение ERP](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro) (ст. [10](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/10), [7](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/7)).
+Проект **внедрения ERP** и TCO после приёмки — [Внедрение ERP](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro) (ст. [Промышленная эксплуатация и сопровождение ERP](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/10), [Срок и бюджет внедрения ERP](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/7)).
 
 ---
 

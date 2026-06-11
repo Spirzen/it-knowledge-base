@@ -29,13 +29,13 @@ import DocCardList from '@theme/DocCardList';
 
 | Этап | Статьи | Зачем |
 | :--- | :--- | :--- |
-| 1. Основы | [1](./1.md), [2](./2.md) | Сети, IP, порты, [шесть типов серверов](./1.md#tipy-serverov), история связи |
-| 2. Имена и протоколы | [3](./3.md), [4](./4.md), [6](./6.md) | URI/URL, OSI, [модель TCP/IP](./4.md#model-tcp-ip), [обзор девяти ключевых протоколов](./4.md#key-network-protocols), TCP/UDP, HTTP, DNS |
-| 3. Практика веба | [5](./5.md), [11](./11.md), [7](./7.md) | Загрузка сайта, HTTPS, cookie и кэш |
-| 4. Инфраструктура | [21](./21.md), [211](./211.md), [212](./212.md) | Устройства, магистрали, CDN |
-| 5. Углубление | [8](./8.md), [41](./41.md), [421](./421.md), [611](./611.md), [618](./618.md), [619](./619.md), [база по HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) | TCP и перегрузка, HTTP/2–3, [карта HTTP-экосистемы](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem), [девять ключевых протоколов](./618.md#key-protocols-overview), [18 основных портов](./618.md#18-osnovnyh-portov), [справочник IP и CIDR](./619.md) |
+| 1. Основы | [Сеть и интернет - основы и принципы работы](./1.md), [История развития сетевых технологий](./2.md) | Сети, IP, порты, [шесть типов серверов](./1.md#tipy-serverov), история связи |
+| 2. Имена и протоколы | [URL URI URN](./3.md), [Сетевые протоколы, порты и установка соединения](./4.md), [DNS - система доменных имён и её работа](./6.md) | URI/URL, OSI, [модель TCP/IP](./4.md#model-tcp-ip), [обзор девяти ключевых протоколов](./4.md#key-network-protocols), TCP/UDP, HTTP, DNS |
+| 3. Практика веба | [Что происходит при загрузке сайта](./5.md), [HTTP и HTTPS](./11.md), [Cookie](./7.md) | Загрузка сайта, HTTPS, cookie и кэш |
+| 4. Инфраструктура | [Сетевые устройства - маршрутизаторы, коммутаторы, модемы](./21.md), [Архитектура глобальной сети](./211.md), [Глобальная доставка контента - CDN и кэширование](./212.md) | Устройства, магистрали, CDN |
+| 5. Углубление | [Дополнительные сетевые технологии](./8.md), [Основы IP-адресации](./41.md), [TCP — соединение, окно и перегрузка](./421.md), [Справочник по HTTP-протоколу](./611.md), [Справочник по сетевым протоколам и портам](./618.md), [Справочник по IP-адресам и CIDR](./619.md), [база по HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) | TCP и перегрузка, HTTP/2–3, [карта HTTP-экосистемы](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118#http-ecosystem), [девять ключевых протоколов](./618.md#key-protocols-overview), [18 основных портов](./618.md#18-osnovnyh-portov), [справочник IP и CIDR](./619.md) |
 
-Опционально: [71](./71.md) (Wi‑Fi, Bluetooth, LTE), [91](./91.md) (регулирование), [613](./613.md)–[617](./617.md) (VPN, прокси, мониторинг).
+Опционально: [Беспроводные сети - Wi-Fi, Bluetooth, LTE](./71.md) (Wi‑Fi, Bluetooth, LTE), [Государственное регулирование интернета](./91.md) (регулирование), [Виртуальные частные сети (VPN)](./613.md)–[Браузерные бенчмарки и производительность](./617.md) (VPN, прокси, мониторинг).
 
 ---
 
@@ -45,14 +45,14 @@ import DocCardList from '@theme/DocCardList';
 
 | Глава учебника | Тема | Статьи раздела 2.03 |
 | :--- | :--- | :--- |
-| 1 | Интернет, задержки, уровни, периферия и ядро | [1](./1.md), [2](./2.md) |
-| 2 | HTTP, DNS, почта, сокеты | [3](./3.md), [5](./5.md), [6](./6.md), [11](./11.md), [7](./7.md), [4](./4.md) |
-| 3 | TCP, UDP, надёжность, перегрузка | [4](./4.md), [42](./42.md), [421](./421.md), [612](./612.md) |
-| 4 | IP, маршрутизация, BGP | [41](./41.md), [619](./619.md), [211](./211.md) |
-| 5 | Ethernet, ARP, «день HTTP-запроса» | [21](./21.md), [5](./5.md#put-paketa-dhcp-http), [2-06/61](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61) |
-| 6 | Wi‑Fi, сотовые сети | [71](./71.md) |
-| 7 | CDN, стриминг, VoIP | [212](./212.md), [8](./8.md) |
-| 8 | TLS, VPN, фаервол | [2-08](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [613](./613.md), [2-04/128](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/128) |
+| 1 | Интернет, задержки, уровни, периферия и ядро | [Сеть и интернет - основы и принципы работы](./1.md), [История развития сетевых технологий](./2.md) |
+| 2 | HTTP, DNS, почта, сокеты | [URL URI URN](./3.md), [Что происходит при загрузке сайта](./5.md), [DNS - система доменных имён и её работа](./6.md), [HTTP и HTTPS](./11.md), [Cookie](./7.md), [Сетевые протоколы, порты и установка соединения](./4.md) |
+| 3 | TCP, UDP, надёжность, перегрузка | [Сетевые протоколы, порты и установка соединения](./4.md), [Надёжная доставка — от идеи к TCP](./42.md), [TCP — соединение, окно и перегрузка](./421.md), [Измерение и оптимизация скорости интернета](./612.md) |
+| 4 | IP, маршрутизация, BGP | [Основы IP-адресации](./41.md), [Справочник по IP-адресам и CIDR](./619.md), [Архитектура глобальной сети](./211.md) |
+| 5 | Ethernet, ARP, «день HTTP-запроса» | [Сетевые устройства - маршрутизаторы, коммутаторы, модемы](./21.md), [Что происходит при загрузке сайта](./5.md#put-paketa-dhcp-http), [2-06/61](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61) |
+| 6 | Wi‑Fi, сотовые сети | [Беспроводные сети - Wi-Fi, Bluetooth, LTE](./71.md) |
+| 7 | CDN, стриминг, VoIP | [Глобальная доставка контента - CDN и кэширование](./212.md), [Дополнительные сетевые технологии](./8.md) |
+| 8 | TLS, VPN, фаервол | [2-08](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [Виртуальные частные сети (VPN)](./613.md), [2-04/128](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/128) |
 
 Полный план обогащения по книге — в репозитории, файл `build/kurose-ross-mapping.md`.
 
@@ -72,7 +72,7 @@ import DocCardList from '@theme/DocCardList';
 - Веб-разработка — раздел [2.04. Сайты и веб-сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro)
 - Форумы, мемы и рунетская лексика (культура, не протоколы) — [9.10 / 120](/encyclopedia/9-spinoff/9-10-internet-kultura/120), мост [2.04 / 125](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/125)
 - Самопроверка — [чек-лист](./99.md) и [итоги](./98.md)
-- Подготовка к system design — [задержка и пропускная способность](./1.md#пропускная-способность-и-задержка), маршрут в [143.md](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/143#poriadok-izucheniia)
+- Подготовка к system design — [задержка и пропускная способность](./1.md#пропускная-способность-и-задержка), маршрут в [System Design — карта тем и подготовка](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/143#poriadok-izucheniia)
 
 <DocCardList />
 

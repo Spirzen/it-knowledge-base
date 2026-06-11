@@ -45,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [SQL, DDL и DML](./3) | Схемы, таблицы, sequences, роли |
 | 4 | [Дампы, роли и FAQ](./4) | pg_dump, безопасность, типичные ошибки |
 
-База по PostgreSQL — [раздел 3.07 SQL](/encyclopedia/3-data-markup/3-07-sql/intro) ([888](/encyclopedia/3-data-markup/3-07-sql/888), [101](/encyclopedia/3-data-markup/3-07-sql/101)) и [локальная среда](/encyclopedia/5-languages/5-07-php/113#postgresql). Продвинутая эксплуатация (MVCC, Docker, репликация, Wal-G) — [практикум PostgreSQL 8.11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
+База по PostgreSQL — [раздел 3.07 SQL](/encyclopedia/3-data-markup/3-07-sql/intro) ([PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888), [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101)) и [локальная среда](/encyclopedia/5-languages/5-07-php/113#postgresql). Продвинутая эксплуатация (MVCC, Docker, репликация, Wal-G) — [практикум PostgreSQL 8.11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
 
 ---
 
@@ -55,11 +55,11 @@ phpPgAdmin закрывает **визуальный слой** над тем ж
 
 | Тема в phpPgAdmin | Глава SQL | Практикум 8.11 |
 |-------------------|-----------|----------------|
-| DDL/DML, схемы, роли | [101](/encyclopedia/3-data-markup/3-07-sql/101), [888](/encyclopedia/3-data-markup/3-07-sql/888), [111 shop_data](/encyclopedia/3-data-markup/3-07-sql/111) | — |
-| JOIN, CTE, окна | [55](/encyclopedia/3-data-markup/3-07-sql/55), [551](/encyclopedia/3-data-markup/3-07-sql/551), [886](/encyclopedia/3-data-markup/3-07-sql/886) | [JSONB и партиции](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/4) |
-| Транзакции, блокировки | [77](/encyclopedia/3-data-markup/3-07-sql/77), [110](/encyclopedia/3-data-markup/3-07-sql/110) | [Архитектура MVCC](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/1) |
-| EXPLAIN, индексы | [881](/encyclopedia/3-data-markup/3-07-sql/881), [884](/encyclopedia/3-data-markup/3-07-sql/884) | [Оптимизация](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/2) |
-| pg_dump / restore | [106](/encyclopedia/3-data-markup/3-07-sql/106) | [Бэкапы Wal-G](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/10) |
+| DDL/DML, схемы, роли | [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101), [PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888), [111 shop_data](/encyclopedia/3-data-markup/3-07-sql/111) | — |
+| JOIN, CTE, окна | [Алиасы, JOIN и объединение таблиц](/encyclopedia/3-data-markup/3-07-sql/55), [Общие табличные выражения (CTE)](/encyclopedia/3-data-markup/3-07-sql/551), [Иерархические данные в реляционных БД](/encyclopedia/3-data-markup/3-07-sql/886) | [JSONB и партиции](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/4) |
+| Транзакции, блокировки | [Транзакции, изоляция и блокировки](/encyclopedia/3-data-markup/3-07-sql/77), [Блокировки и конкурентный доступ в PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/110) | [Архитектура MVCC](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/1) |
+| EXPLAIN, индексы | [Оптимизация SQL-запросов](/encyclopedia/3-data-markup/3-07-sql/881), [Сложные индексы](/encyclopedia/3-data-markup/3-07-sql/884) | [Оптимизация](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/2) |
+| pg_dump / restore | [Резервное копирование и восстановление PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/106) | [Бэкапы Wal-G](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/10) |
 | `postgresql.conf`, `pg_hba` | [3.08/2](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2) | [Конфигурация](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/3) |
 
 <DocCardList />

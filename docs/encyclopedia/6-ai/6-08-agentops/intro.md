@@ -48,7 +48,7 @@ import DocCardList from '@theme/DocCardList';
 2. [Агенты ИИ](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/116), [RAG, MCP и агенты](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/121) и [Оркестрация AI-агентов](/encyclopedia/6-ai/6-05-razrabotka-ii/121).
 3. **[MLOps — слои 1–3](./2)** — данные и модель.
 4. **[AgentOps — слои 4–7](./1)** — runtime и продукт.
-5. [AgentOps — обзор в DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151) → [2152](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2152) · [2153](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2153) · [2154](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2154).
+5. [AgentOps — обзор в DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151) → [Мультиагентные команды и DevOps-pipeline](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2152) · [Контекст агента — AGENTS, skills, rules](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2153) · [Инструменты AgentOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2154).
 6. [Итоги](./98) и [чек-лист](./99).
 
 <DocCardList />

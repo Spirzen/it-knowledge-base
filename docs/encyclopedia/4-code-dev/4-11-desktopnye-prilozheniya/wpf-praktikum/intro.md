@@ -21,7 +21,7 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь — **сквозной практикум** для разработчика на C#, который хочет собрать **полноценное клиент-серверное десктоп-приложение** на Windows. Вы пройдёте путь от первого окна WPF до REST API, клиента на **Prism**, автотестов и итогового проекта **TaskDesk**.
 
-Базовый одиночный WPF без сети уже разобран в [119.md](../119.md). Короткие примеры «окно + кнопка + TextBox» с построчным разбором — [C# WinForms и WPF — простые окна](/lab/Примеры/1138). Этот маршрут **продолжает** линию WPF и добавляет сервер, DI, навигацию по регионам и проверку качества.
+Базовый одиночный WPF без сети уже разобран в [Первая форма WPF — XAML, стили и шаблоны](../119.md). Короткие примеры «окно + кнопка + TextBox» с построчным разбором — [C# WinForms и WPF — простые окна](/lab/Примеры/1138). Этот маршрут **продолжает** линию WPF и добавляет сервер, DI, навигацию по регионам и проверку качества.
 
 ---
 
@@ -59,7 +59,7 @@ flowchart LR
 
 | Шаг | Статья | Содержание |
 |-----|--------|------------|
-| 1 | [WPF и XAML — введение](./1) | Платформа, дерево элементов, привязки, связь с [119](../119) |
+| 1 | [WPF и XAML — введение](./1) | Платформа, дерево элементов, привязки, связь с [Первая форма WPF — XAML, стили и шаблоны](../119) |
 | 2 | [Основы MVVM](./2) | Model, View, ViewModel, `ICommand`, `INotifyPropertyChanged`, CommunityToolkit |
 | 3 | [Сервер на ASP.NET Core Web API](./3) | REST, контроллеры, DTO, Swagger, CORS для десктоп-клиента |
 | 4 | [Клиент WPF на Prism](./4) | Регионы, навигация, DI, `HttpClient`, обработка ошибок сети |
@@ -79,7 +79,7 @@ flowchart LR
   <div class="callout-title">С чего начать, если WPF впервые</div>
 
   <div class="callout-body">
-  Сначала пройдите [119.md](../119.md) (локальные заметки без сервера), затем вернитесь сюда. Параллельно держите открытым [справочник XAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6) и [116.md](../116.md) — карту стеков Windows.
+  Сначала пройдите [Первая форма WPF — XAML, стили и шаблоны](../119.md) (локальные заметки без сервера), затем вернитесь сюда. Параллельно держите открытым [справочник XAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6) и [Разработка приложений для Windows (Microsoft Learn)](../116.md) — карту стеков Windows.
   </div>
 </div>
 
@@ -101,10 +101,10 @@ flowchart LR
 
 | Тема | Материалы энциклопедии |
 |------|------------------------|
-| WPF, DirectX, выбор стека | [116.md](../116.md), [платформа .NET UI](/encyclopedia/5-languages/5-04-platforma-dotnet/13) |
-| MVVM, потоки UI | [112.md](../112.md) |
-| REST, JSON | [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [4511](/encyclopedia/5-languages/5-05-csharp/4511) |
+| WPF, DirectX, выбор стека | [Разработка приложений для Windows (Microsoft Learn)](../116.md), [платформа .NET UI](/encyclopedia/5-languages/5-04-platforma-dotnet/13) |
+| MVVM, потоки UI | [Особенности разработки десктопных приложений](../112.md) |
+| REST, JSON | [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [Первая программа на ASP.NET Core](/encyclopedia/5-languages/5-05-csharp/4511) |
 | Архитектурные паттерны | [design-patterns MVVM](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/113) |
-| Элементы WPF | [1192.md](../1192.md) |
+| Элементы WPF | [Справочник по WPF — элементы UI](../1192.md) |
 
 ---

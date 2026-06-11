@@ -27,24 +27,24 @@ import DocCardList from '@theme/DocCardList';
 2. [Администрирование БД в облаке](./3.md) — managed-сервисы, shared responsibility, бэкапы.
 3. [Справочник PostgreSQL](./2.md) — параметры, `pg_dump`, PITR, [новинки PostgreSQL 16](./2.md#novinki-postgresql-16), [FDW и dblink](./2.md#foreign-data-wrapper-fdw), [конфигурация для 1С](./2.md#postgresql-i-1s), `pg_stat_io`.
 4. [PostgreSQL](./211.md) — установка, `initdb`, роли, бэкапы.
-5. [Microsoft SQL Server](./212.md) — экземпляр, T-SQL, SSMS (теория T-SQL также в [882](/encyclopedia/3-data-markup/3-07-sql/882.md)).
+5. [Microsoft SQL Server](./212.md) — экземпляр, T-SQL, SSMS (теория T-SQL также в [Процедурные расширения - PL/pgSQL, T-SQL](/encyclopedia/3-data-markup/3-07-sql/882.md)).
 6. [Oracle Database](./213.md) — экземпляр, PDB, RMAN в общих чертах.
 
-Теория сбоев и журналов: [Восстановление после сбоя](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8.md). Роль БД в компании: [6.md](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6.md).
+Теория сбоев и журналов: [Восстановление после сбоя](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/8.md). Роль БД в компании: [Роль базы данных в организации](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/6.md).
 
 Если вы только учите SQL как язык, этот раздел можно отложить до первого деплоя или стажировки в эксплуатации.
 
 Продвинутая эксплуатация — MVCC, Kubernetes, HA, Wal-G — в [практикуме PostgreSQL (раздел 8.11)](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro). Визуальная работа с SQL на PHP-стеке — [phpPgAdmin](/encyclopedia/5-languages/5-07-php/phppgadmin/intro).
 
-**Подключение и CRUD из приложения (API по языкам):** [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888) (установка и psql — [101](/encyclopedia/3-data-markup/3-07-sql/101.md)), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889) (администрирование — [справочник MySQL](./211.md)), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) (эксплуатация — [212](./212.md)).
+**Подключение и CRUD из приложения (API по языкам):** [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888) (установка и psql — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101.md)), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889) (администрирование — [справочник MySQL](./211.md)), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) (эксплуатация — [Справочник по Microsoft SQL Server](./212.md)).
 
-Документация PostgreSQL на русском — [postgrespro.ru/docs/postgresql/16](https://postgrespro.ru/docs/postgresql/16). Маршрут новичка — [101 → 888 → 891 → 2.md](/encyclopedia/3-data-markup/3-07-sql/intro).
+Документация PostgreSQL на русском — [postgrespro.ru/docs/postgresql/16](https://postgrespro.ru/docs/postgresql/16). Маршрут новичка — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) → [PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888) → [Практикум demo — авиакомпания PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/891) → [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro).
 
 ---
 
 ## Что здесь не повторяем
 
-- Написание `SELECT` / `JOIN` / транзакций — глава [SQL](/encyclopedia/3-data-markup/3-07-sql/intro); сводные практические главы по СУБД — [887](/encyclopedia/3-data-markup/3-07-sql/887)–[890](/encyclopedia/3-data-markup/3-07-sql/890).
+- Написание `SELECT` / `JOIN` / транзакций — глава [SQL](/encyclopedia/3-data-markup/3-07-sql/intro); сводные практические главы по СУБД — [SQLite — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/887)–[Microsoft SQL Server — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/890).
 - NoSQL и распределённая согласованность — [NoSQL](/encyclopedia/3-data-markup/3-06-nosql/intro).
 
 <DocCardList />

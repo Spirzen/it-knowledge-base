@@ -107,7 +107,7 @@ Git — распределённая система контроля верси�
 
 GitHub — веб-платформа для хостинга Git-репозиториев, разработанная в 2008 году и приобретённая Microsoft в 2018. Предоставляет инструменты для совместной разработки: pull requests, code review, issue tracking, CI/CD, пакеты и документацию. Поддерживает как открытые, так и приватные проекты.
 
-Маршрут — [8.04 DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro), [132](/encyclopedia/9-spinoff/9-10-internet-kultura/132), [lab: GitHub Pages](/lab/Кейсы/3). [Неолурк: GitHub](https://neolurk.org/wiki/GitHub).
+Маршрут — [8.04 DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro), [Нейросети в публичном дискурсе](/encyclopedia/9-spinoff/9-10-internet-kultura/132), [lab: GitHub Pages](/lab/Кейсы/3). [Неолурк: GitHub](https://neolurk.org/wiki/GitHub).
 
 ---
 
@@ -149,7 +149,7 @@ GNU (GNU’s Not Unix — рекурсивный акроним, читаетс�
 
 ## GNOME
 
-**GNOME** — среда рабочего стола (desktop environment) для GNU/Linux и BSD: оболочка, файловый менеджер, настройки, набор приложений на GTK. Часто стоит по умолчанию в Fedora и Ubuntu. Споры GNOME vs KDE в рунете — [96](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96), [Неолурк](https://neolurk.org/wiki/GNOME).
+**GNOME** — среда рабочего стола (desktop environment) для GNU/Linux и BSD: оболочка, файловый менеджер, настройки, набор приложений на GTK. Часто стоит по умолчанию в Fedora и Ubuntu. Споры GNOME vs KDE в рунете — [GNU/Linux — рабочие столы и споры окружений](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96), [Неолурк](https://neolurk.org/wiki/GNOME).
 
 ---
 

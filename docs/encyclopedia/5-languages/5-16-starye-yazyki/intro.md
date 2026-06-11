@@ -13,11 +13,11 @@ import DocCardList from '@theme/DocCardList';
 | Язык | Вход | Оглавление |
 |------|------|------------|
 | [Си](./c-language/intro.md) | [Первая программа](./c-language/7.md) | Самый полный курс |
-| [Fortran](./Fortran/intro.md) | [7](./Fortran/7.md) | Расчёты, HPC |
-| [COBOL](./Cobol/intro.md) | [7](./Cobol/7.md) | Division, batch |
-| [Pascal](./Pascal/intro.md) | [7](./Pascal/7.md) | FPC / Lazarus |
-| [Visual Basic](./visual-basic/intro.md) | [7](./visual-basic/7.md) | VB.NET, VBA |
-| [Assembler](./assembler/intro.md) | [7](./assembler/7.md) | Низкий уровень |
+| [Fortran](./Fortran/intro.md) | [Первая программа на Fortran](./Fortran/7.md) | Расчёты, HPC |
+| [COBOL](./Cobol/intro.md) | [Первая программа на COBOL](./Cobol/7.md) | Division, batch |
+| [Pascal](./Pascal/intro.md) | [Первая программа на Pascal](./Pascal/7.md) | FPC / Lazarus |
+| [Visual Basic](./visual-basic/intro.md) | [Первая программа на visual-basic](./visual-basic/7.md) | VB.NET, VBA |
+| [Assembler](./assembler/intro.md) | [Первая программа на ассемблере](./assembler/7.md) | Низкий уровень |
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 

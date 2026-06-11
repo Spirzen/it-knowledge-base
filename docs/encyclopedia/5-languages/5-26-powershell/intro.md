@@ -103,15 +103,15 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Материал |
 |-----|----------|
-| 1 | [124 — модель и ROI](/encyclopedia/5-languages/5-26-powershell/124) |
-| 2 | [125 — блоки и модули](/encyclopedia/5-languages/5-26-powershell/125) |
-| 3 | [126 — триггеры](/encyclopedia/5-languages/5-26-powershell/126) |
+| 1 | [Практическая автоматизация — модель и окупаемость — модель и ROI](/encyclopedia/5-languages/5-26-powershell/124) |
+| 2 | [Стандартные блоки и модули PowerShell — блоки и модули](/encyclopedia/5-languages/5-26-powershell/125) |
+| 3 | [Триггеры — расписание и наблюдатели — триггеры](/encyclopedia/5-languages/5-26-powershell/126) |
 | 4 | [2.05/112 — скрипты в Windows](/encyclopedia/2-system-network/2-05-terminal/112) (планировщик, remoting) |
 | 4a | [2.05/1133 — curl в терминале](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133) (`curl.exe`, API smoke-test, health-check) |
-| 5 | [127 — секреты](/encyclopedia/5-languages/5-26-powershell/127) |
-| 6 | [128 — конфигурация](/encyclopedia/5-languages/5-26-powershell/128) |
-| 7 | [111 — рекомендации по скриптам](/encyclopedia/5-languages/5-26-powershell/111) |
-| 8 | [11 — экосистема, Azure Automation](/encyclopedia/5-languages/5-26-powershell/11) |
+| 5 | [Секреты и безопасная автоматизация — секреты](/encyclopedia/5-languages/5-26-powershell/127) |
+| 6 | [Конфигурация и адаптивные скрипты — конфигурация](/encyclopedia/5-languages/5-26-powershell/128) |
+| 7 | [Рекомендации по написанию PowerShell-скриптов — рекомендации по скриптам](/encyclopedia/5-languages/5-26-powershell/111) |
+| 8 | [Экосистема автоматизации на PowerShell — экосистема, Azure Automation](/encyclopedia/5-languages/5-26-powershell/11) |
 
 ---
 

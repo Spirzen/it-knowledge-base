@@ -42,9 +42,9 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Luau (этот раздел) | Roblox (геймдев) |
 |-----|--------------------|------------------|
-| 1 | [13 — первая программа](./13) | [203 — Studio](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203) |
-| 2 | [14](./14) → [17](./17) | [204 — обби](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) |
-| 3 | [23 — Luau и Roblox](./23) | [206 — продвижение](/encyclopedia/9-spinoff/9-04-razrabotka-igr/206) |
+| 1 | [Первая программа на Lua — первая программа](./13) | [Roblox Studio — первая игра и настройки Place — Studio](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203) |
+| 2 | [Синтаксис и пунктуация в Lua](./14) → [Функции, замыкания и анонимные функции](./17) | [Практикум — обби на Roblox — обби](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) |
+| 3 | [Luau - типизированный диалект Lua от Roblox — Luau и Roblox](./23) | [Roblox — механика, монетизация и продвижение — продвижение](/encyclopedia/9-spinoff/9-04-razrabotka-igr/206) |
 
 ---
 
@@ -52,11 +52,11 @@ import DocCardList from '@theme/DocCardList';
 
 1. [Основы языка](/encyclopedia/5-languages/5-15-lua-i-luau/1) — философия и модель выполнения  
 2. [История](/encyclopedia/5-languages/5-15-lua-i-luau/12), [экосистема](/encyclopedia/5-languages/5-15-lua-i-luau/11), [первая программа](/encyclopedia/5-languages/5-15-lua-i-luau/13)  
-3. Синтаксис и типы: [14](/encyclopedia/5-languages/5-15-lua-i-luau/14) → [15](/encyclopedia/5-languages/5-15-lua-i-luau/15) → [16](/encyclopedia/5-languages/5-15-lua-i-luau/16) → [17](/encyclopedia/5-languages/5-15-lua-i-luau/17)  
+3. Синтаксис и типы: [Синтаксис и пунктуация в Lua](/encyclopedia/5-languages/5-15-lua-i-luau/14) → [Типы данных и объявление переменных в Lua](/encyclopedia/5-languages/5-15-lua-i-luau/15) → [Управляющие конструкции и циклы в Lua](/encyclopedia/5-languages/5-15-lua-i-luau/16) → [Функции, замыкания и анонимные функции](/encyclopedia/5-languages/5-15-lua-i-luau/17)  
 4. [Метатаблицы](/encyclopedia/5-languages/5-15-lua-i-luau/18), [модули](/encyclopedia/5-languages/5-15-lua-i-luau/19), [GC](/encyclopedia/5-languages/5-15-lua-i-luau/20), [корутины](/encyclopedia/5-languages/5-15-lua-i-luau/21)  
 5. [Luau и Roblox](/encyclopedia/5-languages/5-15-lua-i-luau/23) — после базового Lua  
 
-**Справочник:** [3.md](/encyclopedia/5-languages/5-15-lua-i-luau/3) · **Самопроверка:** [999.md](/encyclopedia/5-languages/5-15-lua-i-luau/999)
+**Справочник:** [Справочник по Lua](/encyclopedia/5-languages/5-15-lua-i-luau/3) · **Самопроверка:** [Lua и Luau — чек-лист](/encyclopedia/5-languages/5-15-lua-i-luau/999)
 
 ---
 

@@ -19,7 +19,7 @@ Apache Kafka — распределённая потоковая платфор�
 
 ## KDE
 
-**KDE** (сейчас чаще **KDE Plasma**) — среда рабочего стола на Qt: панели, виджеты, глубокая настройка. Историческая **KDE 2** фигурирует в формуле «пропатчить KDE2 под FreeBSD» — [131](/encyclopedia/9-spinoff/9-10-internet-kultura/131), [96](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96).
+**KDE** (сейчас чаще **KDE Plasma**) — среда рабочего стола на Qt: панели, виджеты, глубокая настройка. Историческая **KDE 2** фигурирует в формуле «пропатчить KDE2 под FreeBSD» — [Рунетские IT-формулы](/encyclopedia/9-spinoff/9-10-internet-kultura/131), [GNU/Linux — рабочие столы и споры окружений](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96).
 
 ---
 

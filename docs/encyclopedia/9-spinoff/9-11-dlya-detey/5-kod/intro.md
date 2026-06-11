@@ -73,7 +73,7 @@ import DocCardList from '@theme/DocCardList';
 
 Сообщения об ошибках в коде указывают строку и тип проблемы; исправление ошибок — обычная часть работы программиста на любом уровне опыта.
 
-Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/98).
+Итоги блока и FAQ — [Программирование — итоги](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/98).
 
 <DocCardList />
 

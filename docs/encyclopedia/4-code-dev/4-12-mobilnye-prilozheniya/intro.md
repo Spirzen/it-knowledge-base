@@ -50,18 +50,18 @@ import DocCardList from '@theme/DocCardList';
 
 | Симптом | Причина |
 |---------|---------|
-| Приложение не ставится | Debug-подпись вместо release — [1141](./1141.md) |
+| Приложение не ставится | Debug-подпись вместо release — [Публикация Android-приложения](./1141.md) |
 | "App keeps stopping" | Краш в `onCreate` / главном потоке — смотрите Logcat |
 | iOS только на Mac | Сборка под iPhone требует Xcode |
 | Expo не видит телефон | Разные сети — `expo start --tunnel` |
-| Gradle падает на Windows (RN/Expo) | Длинный путь, JDK 24 — [112](./112.md#slozhnost-sborki-sravnenie-stekov), JDK **21**, `gradlew clean` |
+| Gradle падает на Windows (RN/Expo) | Длинный путь, JDK 24 — [Сборка и развёртывание мобильных приложений](./112.md#slozhnost-sborki-sravnenie-stekov), JDK **21**, `gradlew clean` |
 
 ---
 
 ### Что попробовать
 
 1. Один hello-экран в выбранном стеке (Compose, RN или MAUI).
-2. Установка на свой телефон через USB — [1121](./1121.md).
+2. Установка на свой телефон через USB — [Отладка по USB на Android](./1121.md).
 3. Internal testing в Play Console до публичного релиза.
 
 ---

@@ -81,7 +81,7 @@ Uniform Resource Identifier: строковый идентификатор ре�
 
 Unity: кроссплатформенный игровой движок и среда разработки с открытым исходным кодом редактора (на C#), разработанная компанией Unity Technologies. Поддерживает создание 2D/3D-игр, симуляторов, AR/VR-приложений и интерактивного контента. Использует язык C# для написания логики и обладает крупным Asset Store. Широко применяется в инди-разработке и промышленных симуляциях.
 
-Маршрут — [9.04](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [133](/encyclopedia/9-spinoff/9-10-internet-kultura/133). [Неолурк: Unity3D](https://neolurk.org/wiki/Unity3D).
+Маршрут — [9.04](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Open Source, GitHub, DevOps и веб-стек](/encyclopedia/9-spinoff/9-10-internet-kultura/133). [Неолурк: Unity3D](https://neolurk.org/wiki/Unity3D).
 
 ---
 

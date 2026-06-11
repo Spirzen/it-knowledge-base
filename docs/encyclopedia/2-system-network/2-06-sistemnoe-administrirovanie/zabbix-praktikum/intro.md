@@ -23,7 +23,7 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь — **практикум по Zabbix** для системного администратора и инженера, который впервые поднимает **корпоративный мониторинг** «под ключ». Вы пройдёте путь от установки сервера до рабочих графиков, триггеров и оповещений в Telegram или почту.
 
-Общая теория метрик, Prometheus и Grafana уже разобрана в [92.md](../92.md). Этот маршрут **не повторяет** сравнение стеков — он учит **руками настроить Zabbix** по официальному quickstart Zabbix 7.0.
+Общая теория метрик, Prometheus и Grafana уже разобрана в [Мониторинг, метрики и логирование систем](../92.md). Этот маршрут **не повторяет** сравнение стеков — он учит **руками настроить Zabbix** по официальному quickstart Zabbix 7.0.
 
 Службы, контейнеры и «не закрывать терминал» — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
 
@@ -115,9 +115,9 @@ flowchart LR
 
 | Тема | Материалы энциклопедии |
 |------|-------------------------|
-| Метрики, алерты, observability | [92.md](../92.md), [DevOps 19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19), [Практикум Prometheus и Grafana](../prometheus-grafana-praktikum/intro.md), [PromQL — галерея](/lab/Примеры/11114) |
-| Linux, systemd, логи | [93.md](../93.md), [9.md](../9.md) |
-| SNMP, сеть | [6.md](../6.md) |
+| Метрики, алерты, observability | [Мониторинг, метрики и логирование систем](../92.md), [DevOps 19](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19), [Практикум Prometheus и Grafana](../prometheus-grafana-praktikum/intro.md), [PromQL — галерея](/lab/Примеры/11114) |
+| Linux, systemd, логи | [Администрирование Linux-систем](../93.md), [Диагностика и обработка системных ошибок](../9.md) |
+| SNMP, сеть | [Сетевые подключения и диагностика](../6.md) |
 | Инциденты из мониторинга | [ITSM 7.16](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/1) · [Техподдержка 118](/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/118) |
 | Справочник термина | [Zabbix в глоссарии](/glossary/Z#zabbix) |
 

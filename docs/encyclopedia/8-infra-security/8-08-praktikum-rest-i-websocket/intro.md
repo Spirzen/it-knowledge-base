@@ -80,7 +80,7 @@ import DocCardList from '@theme/DocCardList';
 
 1. Пройдите **интерактивный сценарий** на этой странице (кнопка «Сквозной сценарий»).
 2. Прочитайте [шаги 1–3](./1.md) и зафиксируйте контракт на бумаге или в OpenAPI.
-3. Поднимите оба сервиса локально ([4](./4.md), [5](./5.md)) и сверьте ответы с песочницей.
+3. Поднимите оба сервиса локально ([Практикум — сервис каталога на Python](./4.md), [Практикум — сервис заказов на C#](./5.md)) и сверьте ответы с песочницей.
 4. Закройте цикл в [Postman](./8.md) и негативными кейсами из шага 8.
 
 Закрепление: [итоги](./998.md), [чек-лист](./999.md).
@@ -94,7 +94,7 @@ import DocCardList from '@theme/DocCardList';
 | REST, коды HTTP | [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) |
 | Проектирование и DTO | [Проектирование API](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122) |
 | WebSocket | [Реактивные транспорты](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) |
-| Polling, SSE, webhook | [129](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/129), [Push, Pull, Webhooks](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120) |
-| Интеграционные тесты | [1012](/encyclopedia/7-project/7-05-testirovanie/1012) |
+| Polling, SSE, webhook | [Polling, Long Polling, SSE и Webhook](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/129), [Push, Pull, Webhooks](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120) |
+| Интеграционные тесты | [Проверка взаимодействия компонентов](/encyclopedia/7-project/7-05-testirovanie/1012) |
 
 <DocCardList />

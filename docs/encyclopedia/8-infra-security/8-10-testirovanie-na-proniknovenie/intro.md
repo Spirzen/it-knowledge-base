@@ -25,13 +25,13 @@ import DocCardList from '@theme/DocCardList';
 
 | Этап PTES | Статьи 8.10 |
 |-----------|-------------|
-| Pre-engagement | [intro](./intro.md), [6 — процессы](./6.md), [8.09 scope](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/2) |
-| Intelligence gathering | [2 — recon](./2.md), [5 — скан](./5.md) |
-| Threat modeling | [6](./6.md), [2](./2.md) |
-| Vulnerability analysis | [7](./7.md), [4](./4.md) |
-| Exploitation | [7](./7.md), [8](./8.md) |
-| Post-exploitation | [9 — pivot, privesc, отчёт](./9.md) |
-| Reporting | [9](./9.md), [8.09/2](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/2) |
+| Pre-engagement | [intro](./intro.md), [Процессы пентестинга — процессы](./6.md), [8.09 scope](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/2) |
+| Intelligence gathering | [Инструменты Kali и сбор информации — recon](./2.md), [Сканирование, перехват и брутфорс — скан](./5.md) |
+| Threat modeling | [Процессы пентестинга](./6.md), [Инструменты Kali и сбор информации](./2.md) |
+| Vulnerability analysis | [Оценка уязвимостей и эксплуатация](./7.md), [Уязвимости веб-приложений и серверов](./4.md) |
+| Exploitation | [Оценка уязвимостей и эксплуатация](./7.md), [Active Directory и типовые сервисы](./8.md) |
+| Post-exploitation | [Pivoting, post-exploitation и отчёты — pivot, privesc, отчёт](./9.md) |
+| Reporting | [Pivoting, post-exploitation и отчёты](./9.md), [8.09/2](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/2) |
 
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>

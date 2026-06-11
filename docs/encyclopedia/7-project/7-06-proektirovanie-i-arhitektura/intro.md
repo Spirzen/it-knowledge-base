@@ -158,7 +158,7 @@ import DocCardList from '@theme/DocCardList';
 | **Saga / Outbox** | Согласованность между сервисами без одной БД — [Saga](design/2124.md), [теория очередей](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) |
 | **Circuit Breaker** | Предохранитель на вызов зависимости |
 
-CAP/PACELC — [распределённые системы](design/21.md), выбор лидера (Raft, Paxos, ZAB) — [142.md](142.md), карта system design — [143.md](143.md), итоги — [998.md](998.md).
+CAP/PACELC — [распределённые системы](design/21.md), выбор лидера (Raft, Paxos, ZAB) — [Алгоритмы выбора лидера в распределённых системах](142.md), карта system design — [System Design — карта тем и подготовка](143.md), итоги — [Проектирование и архитектура — итоги](998.md).
 
 ---
 

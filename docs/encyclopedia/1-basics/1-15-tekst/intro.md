@@ -53,7 +53,7 @@ import DocCardList from '@theme/DocCardList';
 
 Чтобы найти фрагмент в Word, логе или папке с документами — [поиск текста в файлах](/encyclopedia/2-system-network/2-05-terminal/104) (Ctrl+F, поиск по папке, терминал).
 
-Для госпроекта или ТЗ в Word/Excel — [Word и Excel в проектной документации](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007). Углублённый справочник функций Excel — [41](./41). **Готовые формулы с разбором** — [Lab / 1139](/lab/Примеры/1139).
+Для госпроекта или ТЗ в Word/Excel — [Word и Excel в проектной документации](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007). Углублённый справочник функций Excel — [Справочник по Microsoft Excel](./41). **Готовые формулы с разбором** — [Lab / 1139](/lab/Примеры/1139).
 
 <ExternalPlayEmbed example="tools-misc/word-simulator" title="Word Simulator" />
 

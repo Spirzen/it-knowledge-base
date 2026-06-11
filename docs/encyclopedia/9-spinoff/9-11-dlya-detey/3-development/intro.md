@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 <ExternalPlayEmbed example="code-basics/block-builder" title="Конструктор блоков" minHeight={420} />
 
-Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/98).
+Итоги блока и FAQ — [Развитие — итоги](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/98).
 
 <DocCardList />
 

@@ -53,11 +53,11 @@ import DocCardList from '@theme/DocCardList';
 
 | Тема | Статья |
 |------|--------|
-| VBScript, WScript, `MsgBox`, циклы | [12 — VBScript](./12.md) |
-| VBA Excel | [8 — VBA в Excel](./8.md) |
-| VBA Word, Access | [13 — VBA Word и Access](./13.md) |
+| VBScript, WScript, `MsgBox`, циклы | [VBScript — сценарии Windows и учебный маршрут — VBScript](./12.md) |
+| VBA Excel | [VBA в Microsoft Excel — VBA в Excel](./8.md) |
+| VBA Word, Access | [VBA в Word и Access — VBA Word и Access](./13.md) |
 | Алгоритмы и классификация языков | [базовая информатика, гл. 4](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) |
-| VB.NET / Visual Studio | [7 — первая программа](./7.md) |
+| VB.NET / Visual Studio | [Первая программа на visual-basic — первая программа](./7.md) |
 
 ---
 
@@ -85,10 +85,10 @@ import DocCardList from '@theme/DocCardList';
 
 | Цель | Маршрут |
 |------|---------|
-| Быстро написать рабочее приложение | [7](./7.md) → [5](./5.md) → [6](./6.md) → [10](./10.md) |
-| Понять архитектуру и различия поколений | [1](./1.md) → [2](./2.md) → [3](./3.md) → [9](./9.md) |
-| Автоматизировать Excel | [8](./8.md) → [6](./6.md) → [711](./711.md) |
-| VBScript и Office (классический курс) | [12](./12.md) → [8](./8.md) → [13](./13.md) → [7](./7.md) |
+| Быстро написать рабочее приложение | [Первая программа на visual-basic](./7.md) → [Управляющие конструкции и операторы visual-basic](./5.md) → [Процедуры и события в visual-basic](./6.md) → [Консоль, CLI, коллекции и файлы](./10.md) |
+| Понять архитектуру и различия поколений | [История языка visual-basic](./1.md) → [Основы языка visual-basic](./2.md) → [Архитектура приложений на visual-basic](./3.md) → [Значимые и ссылочные типы, преобразования](./9.md) |
+| Автоматизировать Excel | [VBA в Microsoft Excel](./8.md) → [Процедуры и события в visual-basic](./6.md) → [Справочник по visual-basic](./711.md) |
+| VBScript и Office (классический курс) | [VBScript — сценарии Windows и учебный маршрут](./12.md) → [VBA в Microsoft Excel](./8.md) → [VBA в Word и Access](./13.md) → [Первая программа на visual-basic](./7.md) |
 
 Полезный принцип: каждый блок закреплять мини-практикой, а не только чтением.
 

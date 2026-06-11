@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 <ExternalPlayEmbed example="basics/gamepad-play" title="Gamepad" />
 
-Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/98).
+Итоги блока и FAQ — [Видеоигры и компьютерные игры — итоги](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/98).
 
 <DocCardList />
 

@@ -21,4 +21,4 @@ description: "Раздел Vue — первая программа, реакти
 
 ## Порядок
 
-[282](./282.md) → [283](./283.md) → [284](./284.md). Обзор архитектуры — [28](./28.md). Fullstack — [264](../../1-runtime-node/264.md).
+[Первая программа на Vue.js](./282.md) → [Vue — реактивность и Composition API](./283.md) → [Vue — Router, Pinia и Vite](./284.md). Обзор архитектуры — [Vue.js](./28.md). Fullstack — [Fullstack на JavaScript — API и фронтенд](../../1-runtime-node/264.md).

@@ -30,7 +30,7 @@ import DocCardList from '@theme/DocCardList';
 
 <ExternalPlayEmbed example="spinoff/game-studies-hub" title="Игроведение — навигатор" minHeight={560} />
 
-Жанры (FPS, RPG, MMORPG, MOBA и др.) — [127](./127). Платформы и консоли — [129](./129). DRM и Denuvo — [128](./128).
+Жанры (FPS, RPG, MMORPG, MOBA и др.) — [Жанры видеоигр — маршрут](./127). Платформы и консоли — [Игровые консоли — маршрут](./129). DRM и Denuvo — [DRM и Denuvo в играх](./128).
 
 <DocCardList />
 

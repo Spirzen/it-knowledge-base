@@ -45,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 4. **Инфраструктура как код** — [IaC — принципы](./215.md) → [Terraform](./2.md) → [справочник Terraform](./3.md); практика — [путь EC2→ALB](./22.md), [модули и live/](./23.md).
 5. **AgentOps** — [MLOps, слои 1–3](/encyclopedia/6-ai/6-08-agentops/2) → [AgentOps, слои 4–7](/encyclopedia/6-ai/6-08-agentops/1) → [обзор в DevOps](./2151.md) → [мультиагентные команды](./2152.md) → [AGENTS, skills, rules](./2153.md) → [инструменты](./2154.md).
 6. **[Логирование и мониторинг](./19.md)** · **[Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro)** · **[Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro)** · **[Надёжность под нагрузкой](/encyclopedia/7-project/7-05-testirovanie/1014)** — наблюдаемость после релиза.
-7. **Итоги** [998](./998.md) и **чек-лист** [999](./999.md).
+7. **Итоги** [DevOps, CI-CD — итоги](./998.md) и **чек-лист** [DevOps, CI-CD — чек-лист](./999.md).
 
 Если вы только пишете код в IDE и никогда не видели staging — начните с [основ](./1.md):
 

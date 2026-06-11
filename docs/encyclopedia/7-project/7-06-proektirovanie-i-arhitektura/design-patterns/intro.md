@@ -57,13 +57,13 @@ import DocCardList from '@theme/DocCardList';
 | Вопрос при изучении паттерна | Теория (глава 4) |
 | :--- | :--- |
 | Класс, объект, наследование, полиморфизм | [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro) |
-| SOLID перед GoF | [SOLID](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113) · [142 — принципы](./142) |
+| SOLID перед GoF | [SOLID](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113) · [Принципы ОО-проектирования перед паттернами — принципы](./142) |
 | Инъекция зависимостей, DI-контейнер | [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro) |
 | Observer, async callback | [Асинхронность — о разделе](/encyclopedia/4-code-dev/4-05-asinhronnost/intro) |
 
 | Вопрос при изучении паттерна | Теория (глава 2) |
 | :--- | :--- |
-| Adapter, Facade, внешний API | [2.09 Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [115 — паттерны интеграции](./115) |
+| Adapter, Facade, внешний API | [2.09 Интеграция](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) · [Паттерны интеграции внешних систем — паттерны интеграции](./115) |
 | HTTP, REST, контракт, статусы | [API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) · [HTTP](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) |
 | Очереди, pub/sub, Saga, DLQ | [Брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) |
 | Proxy (кэш, удалённый вызов), CDN | [Redis в интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129) · [CDN](/encyclopedia/2-system-network/2-03-set-i-internet/212) |
@@ -105,7 +105,7 @@ import DocCardList from '@theme/DocCardList';
 |---------|---------|
 | GoF | Factory, Observer, Decorator — [шпаргалка](141.md) |
 | Архитектурные | Layered, Hexagonal, MVC |
-| Распределённые | Saga, Outbox, Circuit Breaker — теория: [очереди](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), практика: [design/2124](../design/2124.md), [2136](../design/2136.md) |
+| Распределённые | Saga, Outbox, Circuit Breaker — теория: [очереди](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), практика: [design/2124](../design/2124.md), [Инженерия устойчивости](../design/2136.md) |
 
 ---
 
@@ -125,22 +125,22 @@ import DocCardList from '@theme/DocCardList';
 
 | Тема | Статьи |
 |------|--------|
-| Стратегия | [141](./141.md) → [117](./117.md) / [139](./139.md) |
-| Наблюдатель | [141](./141.md) → [121](./121.md) / [127](./127.md) |
-| Декоратор | [133](./133.md) |
-| Фабрика (три уровня) | [111](./111.md) → [119](./119.md), [136](./136.md), [135](./135.md) |
-| Одиночка | [138](./138.md), [лаб C#](/lab/Кейсы/5) |
-| Команда | [120](./120.md) / [126](./126.md) |
-| Адаптер, Фасад | [112](./112.md), [137](./137.md), [129](./129.md) |
-| Шаблонный метод | [113](./113.md) |
-| Итератор, Компоновщик | [123](./123.md), [132](./132.md) |
-| Состояние | [113](./113.md) (сравнение со Стратегией) |
-| Заместитель | [128](./128.md) |
-| Составные, MVC | [143](./143.md) |
-| Когда применять | [142](./142.md), [1](./1.md) |
-| Bridge, Builder, … | [140](./140.md), статьи `122–135` |
+| Стратегия | [Частые паттерны GoF в реальных проектах](./141.md) → [Паттерн "Стратегия" в C# — когда нужен, а когда достаточно делегата](./117.md) / [Паттерн "Стратегия" (Strategy) в Java — выбор алгоритма в runtime](./139.md) |
+| Наблюдатель | [Частые паттерны GoF в реальных проектах](./141.md) → [Паттерн "Наблюдатель" в C# — события, IObservable и утечки](./121.md) / [Паттерн "Наблюдатель" в Java — подписчики и ApplicationEvent](./127.md) |
+| Декоратор | [Паттерн "Декоратор" (Decorator) в Java — расширение поведения без наследования](./133.md) |
+| Фабрика (три уровня) | [Порождающие паттерны](./111.md) → [Паттерн "Фабрика" в C# — когда хватает DI-контейнера](./119.md), [Паттерн "Фабричный метод" (Factory Method) в Java — создание через подклассы](./136.md), [Паттерн "Абстрактная фабрика" (Abstract Factory) в Java — семейства совместимых клиентов](./135.md) |
+| Одиночка | [Паттерн "Одиночка" (Singleton) в Java — один экземпляр и контролируемый доступ](./138.md), [лаб C#](/lab/Кейсы/5) |
+| Команда | [Паттерн "Команда" в C# — объекты действий, а не методы](./120.md) / [Паттерн "Команда" в Java — undo в редакторе и очередь действий](./126.md) |
+| Адаптер, Фасад | [Структурные паттерны](./112.md), [Паттерн "Адаптер" (Adapter) в Java — совместимость с легаси и внешними SDK](./137.md), [Паттерн "Фасад" в Java — один метод над подсистемой](./129.md) |
+| Шаблонный метод | [Поведенческие паттерны](./113.md) |
+| Итератор, Компоновщик | [Паттерн "Итератор" в Java — Iterable, пагинация и for-each](./123.md), [Паттерн "Компоновщик" (Composite) в Java — дерево отдела и единый интерфейс](./132.md) |
+| Состояние | [Поведенческие паттерны](./113.md) (сравнение со Стратегией) |
+| Заместитель | [Паттерн "Заместитель" (Proxy) в Java — доступ, кэш и lazy loading](./128.md) |
+| Составные, MVC | [Составные паттерны и MVC](./143.md) |
+| Когда применять | [Принципы ОО-проектирования перед паттернами](./142.md), [Обзор паттернов проектирования](./1.md) |
+| Bridge, Builder, … | [GoF паттерны в Java - большой практический гид](./140.md), статьи `122–135` |
 
-Каркас системы: [design/intro.md](../design/intro.md) · [NFR](../design/1116.md). Базовая теория сети и интеграций — [2. Система и сеть](/encyclopedia/2-system-network/system-network).
+Каркас системы: [Проектирование — о разделе](../design/intro.md) · [NFR](../design/1116.md). Базовая теория сети и интеграций — [2. Система и сеть](/encyclopedia/2-system-network/system-network).
 
 ---
 

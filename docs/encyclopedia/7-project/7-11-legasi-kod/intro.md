@@ -39,7 +39,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Что здесь и чего нет
 
-Здесь — **работа с существующим кодом и знаниями о нём**. Детали CI/CD, облачной миграции БД, контейнеризации и кибербезопасности затронуты только там, где они связаны с легаси; углублённо эти темы живут в главах про тестирование, инфраструктуру и архитектуру. Переходные паттерны (Strangler Fig, Parallel Run, CDC и др.) — в [обзоре по архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2144); Strangler Fig подробно — в [2125](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2125).
+Здесь — **работа с существующим кодом и знаниями о нём**. Детали CI/CD, облачной миграции БД, контейнеризации и кибербезопасности затронуты только там, где они связаны с легаси; углублённо эти темы живут в главах про тестирование, инфраструктуру и архитектуру. Переходные паттерны (Strangler Fig, Parallel Run, CDC и др.) — в [обзоре по архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2144); Strangler Fig подробно — в [Strangler Fig](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2125).
 
 **Базовая теория (глава 2)** — если при реверсе непонятны интеграции и контуры: [типы взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111), [интеграционные потоки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/112), [очереди и брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), [сеть и интернет](/encyclopedia/2-system-network/2-03-set-i-internet/intro). Ручная проверка старого API — [curl](/encyclopedia/2-system-network/2-05-terminal/1133).
 

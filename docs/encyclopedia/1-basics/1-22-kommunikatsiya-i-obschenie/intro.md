@@ -42,17 +42,17 @@ import DocCardList from '@theme/DocCardList';
 
 | Глава | Тема | Для кого в первую очередь |
 |-------|------|---------------------------|
-| [1](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/1) | Цифровая коммуникация: тон, каналы, конфликты в переписке | все, особенно новички |
-| [2](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/2) | Мессенджеры: протоколы, архитектура, боты, командные нормы | разработчики, тимлиды |
-| [9](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/9) | SMS и сотовые сообщения: GSM, 160 символов, MMS/RCS, OTP и алерты | все, особенно новички |
-| [3](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3) | Электронная почта: путь письма (MUA→MTA→MX), SMTP / IMAP / POP3, SPF/DKIM | инженеры, админы |
-| [4](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/4) | Встречи и звонки: модерация, протоколы, деэскалация | все в распределённых командах |
-| [5](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5) | Иерархия, субординация, переписка "вверх/вниз" | исполнители, PM, лиды |
-| [6](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6) | Формы и анкеты: HTML, валидация, 152-ФЗ | разработчики, аналитики |
-| [7](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/7) | CAPSLOCK, T9, форумный и dev-сленг в чате | все, особенно новички |
-| [8](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/8) | Как задать вопрос на форуме и в сообществе | новички, после [1.21](/encyclopedia/1-basics/1-21-poisk-informatsii/intro) |
+| [Цифровая коммуникация](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/1) | Цифровая коммуникация: тон, каналы, конфликты в переписке | все, особенно новички |
+| [Мессенджеры и чаты](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/2) | Мессенджеры: протоколы, архитектура, боты, командные нормы | разработчики, тимлиды |
+| [SMS и сотовые сообщения](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/9) | SMS и сотовые сообщения: GSM, 160 символов, MMS/RCS, OTP и алерты | все, особенно новички |
+| [Электронная почта](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3) | Электронная почта: путь письма (MUA→MTA→MX), SMTP / IMAP / POP3, SPF/DKIM | инженеры, админы |
+| [Видеовстречи и голосовые звонки](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/4) | Встречи и звонки: модерация, протоколы, деэскалация | все в распределённых командах |
+| [Организационная иерархия и деловая переписка](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/5) | Иерархия, субординация, переписка "вверх/вниз" | исполнители, PM, лиды |
+| [Цифровые формы и анкеты](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6) | Формы и анкеты: HTML, валидация, 152-ФЗ | разработчики, аналитики |
+| [Тон в сети — CAPSLOCK, T9 и форумные сигналы](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/7) | CAPSLOCK, T9, форумный и dev-сленг в чате | все, особенно новички |
+| [Как задать вопрос на форуме и в сообществе](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/8) | Как задать вопрос на форуме и в сообществе | новички, после [1.21](/encyclopedia/1-basics/1-21-poisk-informatsii/intro) |
 
-[98](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/98) — краткие итоги; [99](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/99) — чек-лист самопроверки. Контекст рунета — [Форумная культура](/encyclopedia/9-spinoff/9-10-internet-kultura/120).
+[Коммуникация и общение — итоги](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/98) — краткие итоги; [Коммуникация и общение — чек-лист](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/99) — чек-лист самопроверки. Контекст рунета — [Форумная культура](/encyclopedia/9-spinoff/9-10-internet-kultura/120).
 
 ---
 

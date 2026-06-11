@@ -73,7 +73,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-body">
   Даже если вы не пишете продакшен-код, **установите PostgreSQL** и потренируйтесь в SQL — проверка гипотез, сверка отчётов, понимание ERD и интеграций.
 
-  Старт — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) → [PostgreSQL — практическая работа](/encyclopedia/3-data-markup/3-07-sql/888); язык данных в аналитике — [1121](/encyclopedia/7-project/7-04-analitika/1121).
+  Старт — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) → [PostgreSQL — практическая работа](/encyclopedia/3-data-markup/3-07-sql/888); язык данных в аналитике — [Как переводить бизнес-задачи на язык данных](/encyclopedia/7-project/7-04-analitika/1121).
 </div>
   </div>
 
@@ -81,7 +81,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Бизнес-аналитик
 
-[113](/encyclopedia/7-project/7-04-analitika/113) → [1231](/encyclopedia/7-project/7-04-analitika/1231) → [124](/encyclopedia/7-project/7-04-analitika/124) → [129](/encyclopedia/7-project/7-04-analitika/129) → [130](/encyclopedia/7-project/7-04-analitika/130) → [116](/encyclopedia/7-project/7-04-analitika/116) → [117](/encyclopedia/7-project/7-04-analitika/117) → [127](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [121](/encyclopedia/7-project/7-04-analitika/121).
+[Роль бизнес-аналитика в проекте](/encyclopedia/7-project/7-04-analitika/113) → [Основы диаграмм и моделирования](/encyclopedia/7-project/7-04-analitika/1231) → [Моделирование бизнес-процессов](/encyclopedia/7-project/7-04-analitika/124) → [Справочник по нотации BPMN 2.0](/encyclopedia/7-project/7-04-analitika/129) → [BPMN-движки Camunda и Flowable](/encyclopedia/7-project/7-04-analitika/130) → [Формализация и управление требованиями](/encyclopedia/7-project/7-04-analitika/116) → [Документация аналитика](/encyclopedia/7-project/7-04-analitika/117) → [Взаимодействие аналитика с командой](/encyclopedia/7-project/7-04-analitika/127). Для госсектора добавьте [Дополнительные виды проектной документации](/encyclopedia/7-project/7-04-analitika/121).
 
 <div class="callout callout--tip">
   <div class="callout-title">Компактный маршрут по BABOK</div>
@@ -89,16 +89,16 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-body">
   Последовательный проход по роли BA и управлению требованиями — без дублирования BPMN-справочника:
 
-  1. [113](/encyclopedia/7-project/7-04-analitika/113) — роль BA, концепты, фазы проекта  
-  2. [112](/encyclopedia/7-project/7-04-analitika/112) — области знаний, тип проекта, «цель → метод»  
-  3. [116](/encyclopedia/7-project/7-04-analitika/116) — план BA, RM, приоритизация  
-  4. [111](/encyclopedia/7-project/7-04-analitika/111) — пять шагов анализа, стоимость дефекта  
-  5. [1231](/encyclopedia/7-project/7-04-analitika/1231) — основы диаграмм, выбор нотации  
-  6. [124](/encyclopedia/7-project/7-04-analitika/124) — gap analysis, journey, DFD  
+  1. [Роль бизнес-аналитика в проекте](/encyclopedia/7-project/7-04-analitika/113) — роль BA, концепты, фазы проекта  
+  2. [Профессиональная аналитика](/encyclopedia/7-project/7-04-analitika/112) — области знаний, тип проекта, «цель → метод»  
+  3. [Формализация и управление требованиями](/encyclopedia/7-project/7-04-analitika/116) — план BA, RM, приоритизация  
+  4. [Основы анализа требований](/encyclopedia/7-project/7-04-analitika/111) — пять шагов анализа, стоимость дефекта  
+  5. [Основы диаграмм и моделирования](/encyclopedia/7-project/7-04-analitika/1231) — основы диаграмм, выбор нотации  
+  6. [Моделирование бизнес-процессов](/encyclopedia/7-project/7-04-analitika/124) — gap analysis, journey, DFD  
   7. Wireframe и UX до ТЗ — [Веб-дизайн — блок 2](/encyclopedia/1-basics/1-25-interfeys/7#блок-2--референсы-и-прототипирование)  
-  8. [126](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
-  9. [127](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
-  10. [998](/encyclopedia/7-project/7-04-analitika/998) / [999](/encyclopedia/7-project/7-04-analitika/999) — закрепление
+  8. [Инструменты аналитика](/encyclopedia/7-project/7-04-analitika/126) — инструменты BABOK  
+  9. [Взаимодействие аналитика с командой](/encyclopedia/7-project/7-04-analitika/127) — стейкхолдеры и конфликты  
+  10. [Аналитика — итоги](/encyclopedia/7-project/7-04-analitika/998) / [Аналитика — чек-лист](/encyclopedia/7-project/7-04-analitika/999) — закрепление
   </div>
 </div>
 
@@ -106,13 +106,13 @@ import DocCardList from '@theme/DocCardList';
 
 ### Системный аналитик
 
-[114](/encyclopedia/7-project/7-04-analitika/114) → [115](/encyclopedia/7-project/7-04-analitika/115) → [123](/encyclopedia/7-project/7-04-analitika/123) → [1231](/encyclopedia/7-project/7-04-analitika/1231) → [128](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro); для быстрой проверки контрактов в консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133).
+[Роль системного аналитика в разработке](/encyclopedia/7-project/7-04-analitika/114) → [Исследование и декомпозиция систем](/encyclopedia/7-project/7-04-analitika/115) → [Артефакты аналитической деятельности](/encyclopedia/7-project/7-04-analitika/123) → [Основы диаграмм и моделирования](/encyclopedia/7-project/7-04-analitika/1231) → [Технический дизайн на основе требований](/encyclopedia/7-project/7-04-analitika/128). API углубляется в [7.06](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro); для быстрой проверки контрактов в консоли — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133).
 
 ---
 
 ### Продукт и данные
 
-[1123](/encyclopedia/7-project/7-04-analitika/1123) → [1121](/encyclopedia/7-project/7-04-analitika/1121) → [1122](/encyclopedia/7-project/7-04-analitika/1122) → [3.11 Анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/1).
+[Основы продуктовой аналитики](/encyclopedia/7-project/7-04-analitika/1123) → [Как переводить бизнес-задачи на язык данных](/encyclopedia/7-project/7-04-analitika/1121) → [SQL для аналитики](/encyclopedia/7-project/7-04-analitika/1122) → [3.11 Анализ данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/1).
 
 ---
 

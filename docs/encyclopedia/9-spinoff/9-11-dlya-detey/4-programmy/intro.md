@@ -32,7 +32,7 @@ import DocCardList from '@theme/DocCardList';
 
 <ExternalPlayEmbed example="code-dev/desktop-window-play" title="Окно десктоп-приложения" minHeight={480} />
 
-Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/98).
+Итоги блока и FAQ — [Программы — итоги](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/98).
 
 <DocCardList />
 

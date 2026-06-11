@@ -42,7 +42,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Проектирование схем (углубление):** после пунктов 1 и 7 — [Проектирование баз данных](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116) (концептуальная / логическая / физическая модель, нормализация, чек-лист перед `CREATE TABLE`).
 
-**Нормализация (1НФ–4НФ, НФБК)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md#normalnye-formy) — после [11](./11.md) и [103](/encyclopedia/3-data-markup/3-07-sql/103.md). Краткий [чек-лист моделирования](/encyclopedia/3-data-markup/3-07-sql/104.md#chek-list-modelirovaniya-dannyh) — в той же главе.
+**Нормализация (1НФ–4НФ, НФБК)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md#normalnye-formy) — после [Entity Relationship](./11.md) и [Реляционная модель данных](/encyclopedia/3-data-markup/3-07-sql/103.md). Краткий [чек-лист моделирования](/encyclopedia/3-data-markup/3-07-sql/104.md#chek-list-modelirovaniya-dannyh) — в той же главе.
 
 **Файлы и СУБД, нотации ER:** [ERD среди нотаций моделирования](/encyclopedia/7-project/7-04-analitika/1231), [СУБД — файловое хранение и ограничения](./2.md#fajlovoe-hranenie-i-subd), [Entity Relationship — нотации](./11.md#notacii-er-modeli).
 

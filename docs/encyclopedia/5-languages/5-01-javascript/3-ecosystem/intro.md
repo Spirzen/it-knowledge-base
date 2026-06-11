@@ -22,7 +22,7 @@ description: "Карта экосистемы JavaScript — Node.js runtime, fr
 
 ## Node.js
 
-Старт: [первая программа](./1-runtime-node/262.md), затем [устройство runtime](./1-runtime-node/26.md), [npm](./1-runtime-node/265.md), [структура проекта](./1-runtime-node/266.md), [fs и http](./1-runtime-node/268.md), [Express](./1-runtime-node/263.md), [fullstack](./1-runtime-node/264.md), [CLI и деплой](./1-runtime-node/267.md). Точка входа `require.main` — [48](./1-runtime-node/48.md). Полный справочник API — [261](./1-runtime-node/261.md).
+Старт: [первая программа](./1-runtime-node/262.md), затем [устройство runtime](./1-runtime-node/26.md), [npm](./1-runtime-node/265.md), [структура проекта](./1-runtime-node/266.md), [fs и http](./1-runtime-node/268.md), [Express](./1-runtime-node/263.md), [fullstack](./1-runtime-node/264.md), [CLI и деплой](./1-runtime-node/267.md). Точка входа `require.main` — [Точка входа в Node.js — require.main и import.meta](./1-runtime-node/48.md). Полный справочник API — [Справочник по Node](./1-runtime-node/261.md).
 
 ## Frontend
 

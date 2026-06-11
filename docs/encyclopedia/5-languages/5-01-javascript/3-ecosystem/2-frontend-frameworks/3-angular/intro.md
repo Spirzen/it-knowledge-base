@@ -18,4 +18,4 @@ description: "Раздел Angular — CLI, TypeScript, DI, RxJS, формы и 
 
 ## Порядок
 
-[292](./292.md) → [29](./29.md) → [293](./293.md). Сравнение — [270.md](../270.md).
+[Первая программа на Angular](./292.md) → [Angular](./29.md) → [Angular — DI, RxJS и формы](./293.md). Сравнение — [SPA и выбор frontend-фреймворка](../270.md).

@@ -16,4 +16,4 @@ description: "Раздел Ext JS — Sencha Cmd, виджеты, Store/Model и
 | 3 | [Store, Model и proxy](./313.md) |
 | — | [Справочник](./311.md) |
 
-Для новых продуктов сравните с [React](../1-react/intro.md), [Vue](../2-vue/intro.md), [Angular](../3-angular/intro.md) — [270.md](../270.md).
+Для новых продуктов сравните с [React](../1-react/intro.md), [Vue](../2-vue/intro.md), [Angular](../3-angular/intro.md) — [SPA и выбор frontend-фреймворка](../270.md).

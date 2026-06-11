@@ -155,7 +155,7 @@ Microsoft — американская технологическая корпо
 
 ## Microsoft Store
 
-**Microsoft Store** — магазин приложений и игр в Windows (UWP, Xbox, часть обновлений). Удаление Store ломает игровые сервисы и обновления — см. [1.12 / 11](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11), [96](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96). [Неолурк: Microsoft Store](https://neolurk.org/wiki/Microsoft_Store).
+**Microsoft Store** — магазин приложений и игр в Windows (UWP, Xbox, часть обновлений). Удаление Store ломает игровые сервисы и обновления — см. [1.12 / 11](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11), [GNU/Linux — рабочие столы и споры окружений](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96). [Неолурк: Microsoft Store](https://neolurk.org/wiki/Microsoft_Store).
 
 ---
 

@@ -50,14 +50,14 @@ import DocCardList from '@theme/DocCardList';
 |--------|---------|
 | **DDD** | Domain-Driven Design — bounded context, агрегаты |
 | **Contract-first** | OpenAPI/AsyncAPI до кода |
-| **PACELC** | При живой сети: latency vs consistency ([21.md](21.md)) |
-| **Outbox** | Событие и запись в БД — одна транзакция ([2124.md](2124.md)) |
-| **Circuit Breaker** | Предохранитель на вызов зависимости ([2136.md](2136.md)) |
-| **Ошибка / исключение** | Фатальный сбой среды vs ожидаемое отклонение в коде — [111](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111#oshibka-i-isklyuchenie) |
+| **PACELC** | При живой сети: latency vs consistency ([Проектирование распределенных систем](21.md)) |
+| **Outbox** | Событие и запись в БД — одна транзакция ([Saga](2124.md)) |
+| **Circuit Breaker** | Предохранитель на вызов зависимости ([Инженерия устойчивости](2136.md)) |
+| **Ошибка / исключение** | Фатальный сбой среды vs ожидаемое отклонение в коде — [Ошибки, исключения и отказоустойчивость](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111#oshibka-i-isklyuchenie) |
 
 ### Стадии проектной документации (ГОСТ 2.103)
 
-В российской практике **конструкторская** документация на ПО часто ведётся по **ГОСТ 2.103** (стадии разработки), в дополнение к **ГОСТ 34** для автоматизированных систем ([121](/encyclopedia/7-project/7-04-analitika/121)):
+В российской практике **конструкторская** документация на ПО часто ведётся по **ГОСТ 2.103** (стадии разработки), в дополнение к **ГОСТ 34** для автоматизированных систем ([Дополнительные виды проектной документации](/encyclopedia/7-project/7-04-analitika/121)):
 
 | Стадия | Содержание (упрощённо) |
 |--------|-------------------------|
@@ -99,11 +99,11 @@ import DocCardList from '@theme/DocCardList';
 
 3. [Ошибки и исключения (теория)](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) · [БД](116.md) · [API и интеграции](117.md) (три сквозных примера и маршрут) · [пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433) (batch/bulk/chunk при ETL и массовых загрузках) · [теория очередей и брокеров](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) · [OAuth и webhooks](1171.md) · [mTLS, JWS, AsyncAPI, outbox](1172.md) · [Ричардсон](212.md) · [идемпотентность](213.md)
 
-   Теория до [116](116.md): [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) · [опорные темы](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12) · [нормализация](/encyclopedia/3-data-markup/3-07-sql/104#normalnye-formy).
+   Теория до [Проектирование баз данных](116.md): [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) · [опорные темы](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12) · [нормализация](/encyclopedia/3-data-markup/3-07-sql/104#normalnye-formy).
 
    Практика выбранной СУБД из кода: [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 4. [OpenAPI](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3) · [REST в инфраструктуре](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) · [ввод по API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) · [8 принципов RESTful API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-api-design-principles)
-5. [System Design — карта тем](../143.md) · [12 концепций распределённой архитектуры](../141.md) · [масштабирование](2112.md) / [2113](2113.md) · [надёжность](2134.md) · [инженерия устойчивости](2136.md) · [SLA — договор](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/2) · [SLA — «девятки»](2135.md) · [распределённые системы](21.md)
+5. [System Design — карта тем](../143.md) · [12 концепций распределённой архитектуры](../141.md) · [масштабирование](2112.md) / [Горизонтальное масштабирование](2113.md) · [надёжность](2134.md) · [инженерия устойчивости](2136.md) · [SLA — договор](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/2) · [SLA — «девятки»](2135.md) · [распределённые системы](21.md)
 
 ---
 
@@ -130,7 +130,7 @@ import DocCardList from '@theme/DocCardList';
 | REST, OAuth, webhooks | [API и интеграции](117.md) | 6 — интеграция |
 | Векторный индекс, схема метаданных | [БД](116.md), [векторные БД](/encyclopedia/3-data-markup/3-06-nosql/812) | 2 — данные |
 | Gateway, rate limit, очереди | [12 концепций](../141.md), [брокеры](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121) | 5–6 |
-| Ошибки в коде vs устойчивость сервиса | [111](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111), [2136](2136.md) | 5–6 |
+| Ошибки в коде vs устойчивость сервиса | [Ошибки, исключения и отказоустойчивость](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111), [Инженерия устойчивости](2136.md) | 5–6 |
 | Угрозы и PII | [threat modeling](2142.md), [защита данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117) | 2, 5 |
 
 Реализация и промпты — [Разработка ИИ](/encyclopedia/6-ai/6-05-razrabotka-ii/intro).

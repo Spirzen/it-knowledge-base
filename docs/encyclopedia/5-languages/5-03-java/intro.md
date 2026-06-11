@@ -78,7 +78,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Когда Spring, а когда ещё Core</div>
 
   <div class="callout-body">
-  Пока не уверены в `List`, `Stream`, исключениях и `main` — не уходите в [271](./271.md). Spring опирается на те же классы, пакеты и Maven, что и консольная программа.
+  Пока не уверены в `List`, `Stream`, исключениях и `main` — не уходите в [Первая программа на Spring Framework](./271.md). Spring опирается на те же классы, пакеты и Maven, что и консольная программа.
 </div>
   </div>
 
@@ -88,13 +88,13 @@ import DocCardList from '@theme/DocCardList';
 
 | Цель | Маршрут |
 |------|---------|
-| **Корпоративный REST** | [271](./271.md) → [практикум "Simple CRM"](./254.md) → [272](./272.md) → [274](./274.md) → [275](./275.md) → [303](./303.md) → [293](./293.md) → [273](./273.md) |
-| **Понять JVM в проде** | [23](./23.md) → [справочник §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [302](./302.md) → [101](./101.md) |
-| **Сборка и CI** | [12](./12.md) → [292](./292.md) (Gradle) |
+| **Корпоративный REST** | [Первая программа на Spring Framework](./271.md) → [практикум "Simple CRM"](./254.md) → [Spring Security — практический старт](./272.md) → [JWT и OAuth2 Resource Server в Spring Boot](./274.md) → [Spring Boot — безопасность в продакшене](./275.md) → [Ошибки REST — @Valid и @ControllerAdvice](./303.md) → [Hibernate и JPA — практический старт](./293.md) → [Testcontainers — интеграционные тесты с реальной БД](./273.md) |
+| **Понять JVM в проде** | [JVM, память и потоки](./23.md) → [справочник §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [JVM в проде — jcmd, дамп памяти и JFR](./302.md) → [Рекомендации по разработке на Java](./101.md) |
+| **Сборка и CI** | [Структура и сборки Java-проектов](./12.md) → [Gradle — практический старт](./292.md) (Gradle) |
 | **Legacy (поддержка)** | [JSF — теория](./25.md) → [первая программа](./251.md) → [практикум «Список задач»](./252.md), [JavaBeans](./26.md) — не для зелёного поля |
-| **Десктоп (JavaFX / Swing)** | [311.md](./311.md) → [3111.md](./3111.md) (JavaFX) или [Lab — Swing](/lab/Примеры/1143) (без Maven) → [практикум «XML-валидатор»](./253.md) (Swing + Maven) → [3112.md](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [112.md](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
-| **Консольные задачи** | [102](./102.md) (ввод-вывод) → [Lab — консольные задачи](/lab/Примеры/1131) → [131](./131.md) (мини-приложения) |
-| **Лабораторная с GUI** | [Lab — Swing, построчный разбор](/lab/Примеры/1143) после [16](./16.md) и [17](./17.md) |
+| **Десктоп (JavaFX / Swing)** | [JavaFX и GUI](./311.md) → [Первая программа на JavaFX](./3111.md) (JavaFX) или [Lab — Swing](/lab/Примеры/1143) (без Maven) → [практикум «XML-валидатор»](./253.md) (Swing + Maven) → [Справочник по JavaFX и Swing — элементы UI](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Особенности разработки десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
+| **Консольные задачи** | [Ввод и вывод в Java](./102.md) (ввод-вывод) → [Lab — консольные задачи](/lab/Примеры/1131) → [Простые приложения на Java](./131.md) (мини-приложения) |
+| **Лабораторная с GUI** | [Lab — Swing, построчный разбор](/lab/Примеры/1143) после [Основные конструкции языка Java](./16.md) и [Операторы и циклы в Java](./17.md) |
 | **Учебная игра** | [Java Survivors](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8) (в подготовке) — маршрут раздела [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |
 
 Параллельно с Java на JVM: [Kotlin](/encyclopedia/5-languages/5-09-kotlin/intro) (Android/Ktor), [Groovy](/encyclopedia/5-languages/5-12-groovy/intro) (Gradle DSL, Spock).
@@ -128,7 +128,7 @@ import DocCardList from '@theme/DocCardList';
 | [Ravesli — уроки Java](https://ravesli.com/java-tutorial/) | Пошаговый курс на русском: введение, JDK, синтаксис, ООП |
 | [Java — конспект (GitBook)](https://andrey-ivantsov.gitbook.io/java) | Краткий Core Java |
 | [proglang.su/java](http://proglang.su/java) | Углубление по коллекциям и API |
-| [Microsoft для Java](https://learn.microsoft.com/ru-ru/java/) | OpenJDK, VS Code — [294](./294.md) |
+| [Microsoft для Java](https://learn.microsoft.com/ru-ru/java/) | OpenJDK, VS Code — [Документация и инструменты Java (Microsoft)](./294.md) |
 
 <div class="callout callout--tip">
   <div class="callout-title">Соответствие конспекту GitBook главам энциклопедии</div>
@@ -136,17 +136,17 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-body">
   | Тема в [GitBook](https://andrey-ivantsov.gitbook.io/java) | Глава здесь |
   |-----------------------------------------------------------|-------------|
-  | Типы, литералы, переменные, операторы | [15](./15.md), [16](./16.md), [17](./17.md) |
-  | Ввод с клавиатуры, консольный I/O | [102](./102.md), [16](./16.md) (`Scanner`) |
-  | Особенности строк | [296](./296.md), [15](./15.md) |
-  | Коллекции, Stream API | [24](./24.md), [295](./295.md) |
-  | Файлы, I/O | [297](./297.md) |
-  | Асинхронность | [298](./298.md) |
-  | Аннотации, рефлексия | [299](./299.md) |
-  | record, sealed, pattern matching | [300](./300.md) |
-  | Дата и время | [28](./28.md) (`java.time`) |
-  | Исключения | [21](./21.md), [211](./211.md) |
-  | Интерфейсы, `instanceof` | [18](./18.md), [141](./141.md) |
+  | Типы, литералы, переменные, операторы | [Типы данных и переменные в Java](./15.md), [Основные конструкции языка Java](./16.md), [Операторы и циклы в Java](./17.md) |
+  | Ввод с клавиатуры, консольный I/O | [Ввод и вывод в Java](./102.md), [Основные конструкции языка Java](./16.md) (`Scanner`) |
+  | Особенности строк | [Строки в Java](./296.md), [Типы данных и переменные в Java](./15.md) |
+  | Коллекции, Stream API | [Коллекции в Java](./24.md), [Stream API в Java](./295.md) |
+  | Файлы, I/O | [Ввод-вывод и файлы в Java](./297.md) |
+  | Асинхронность | [Асинхронность в Java](./298.md) |
+  | Аннотации, рефлексия | [Аннотации и рефлексия в Java](./299.md) |
+  | record, sealed, pattern matching | [Современные конструкции Java](./300.md) |
+  | Дата и время | [Ключевые классы и интерфейсы стандартной библиотеки](./28.md) (`java.time`) |
+  | Исключения | [Обработка исключений в Java](./21.md), [Иерархия классов исключений в Java](./211.md) |
+  | Интерфейсы, `instanceof` | [Объектно-ориентированное программирование в Java](./18.md), [Ключевые слова в Java](./141.md) |
 </div>
   </div>
 
@@ -179,15 +179,15 @@ import DocCardList from '@theme/DocCardList';
 | Прыжки между языками | Закройте одну "первую программу", потом Kotlin/Groovy |
 | Код без запуска | `mvn compile exec:java` или Run в IDE |
 | Spring до коллекций | Сначала шаги 4–6 основного маршрута |
-| Путать JDK и JRE | Для разработки нужен **JDK** — [1](./1.md) |
+| Путать JDK и JRE | Для разработки нужен **JDK** — [Основы языка Java](./1.md) |
 
 ---
 
 ### Что попробовать
 
-1. [13.md](./13.md) — оба варианта IDE или тот, что у вас в команде.
-2. [132.md](./132.md) — найти off-by-one в цикле через F8.
-3. [271.md](./271.md) — `curl localhost:8080/...` к своему API.
+1. [Первая программа на Java](./13.md) — оба варианта IDE или тот, что у вас в команде.
+2. [Отладка Java-кода в IDE](./132.md) — найти off-by-one в цикле через F8.
+3. [Первая программа на Spring Framework](./271.md) — `curl localhost:8080/...` к своему API.
 
 ```bash
 curl localhost:8080/...

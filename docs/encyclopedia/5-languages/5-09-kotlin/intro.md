@@ -97,7 +97,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Если уже знаете Java</div>
 
   <div class="callout-body">
-  Сначала [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) не нужен — сразу [основы Kotlin](./11.md) и [совместимость с Java](./10.md) (вызов Java-классов, `@JvmStatic`, nullable). IDE — [IntelliJ IDEA](/encyclopedia/5-languages/5-03-java/103); первая программа в IDEA описана в [2.md](./2.md).
+  Сначала [Groovy и Java](/encyclopedia/5-languages/5-12-groovy/20) не нужен — сразу [основы Kotlin](./11.md) и [совместимость с Java](./10.md) (вызов Java-классов, `@JvmStatic`, nullable). IDE — [IntelliJ IDEA](/encyclopedia/5-languages/5-03-java/103); первая программа в IDEA описана в [Первая программа на Kotlin](./2.md).
 </div>
   </div>
 
@@ -138,7 +138,7 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Материал | Зачем |
 |-----|----------|-------|
 | 1 | [IntelliJ IDEA](/encyclopedia/5-languages/5-03-java/103) → [Первая программа](./2.md) | JDK, IDE, Maven |
-| 2a | [Compose](./229.md) → [234](./234.md) → [22](./22.md) / [23](./23.md) | Android UI + учебные проекты |
+| 2a | [Compose](./229.md) → [Мобильные приложения на Kotlin](./234.md) → [Kotlin — KotlinMobileApp](./22.md) / [Kotlin — Kotlinochi](./23.md) | Android UI + учебные проекты |
 | 2b | [Ktor](./221.md) | REST API |
 | 2c | [Spring Boot](./232.md) | REST на Spring |
 | 2d | [Compose Multiplatform](./224.md) | Desktop UI |
@@ -150,15 +150,15 @@ import DocCardList from '@theme/DocCardList';
 | Ошибка | Что делать |
 |--------|------------|
 | Сразу Android + Ktor + KMP | Выберите одну ветку из таблицы выше |
-| `runBlocking` в UI-потоке Android | `lifecycleScope` / `viewModelScope` — см. [222](./222.md) |
+| `runBlocking` в UI-потоке Android | `lifecycleScope` / `viewModelScope` — см. [Корутины в Kotlin](./222.md) |
 | Gradle не синхронизирован | File → Reload Gradle Project |
-| Путать Kotlin с Java | Разный синтаксис; байт-код совместим — см. [10](./10.md) |
+| Путать Kotlin с Java | Разный синтаксис; байт-код совместим — см. [Экосистема Kotlin-приложений](./10.md) |
 
 ---
 
 ### Что попробовать
 
-1. Пройти [2.md](./2.md) и изменить цикл в `main` — пересобрать и запустить.
+1. Пройти [Первая программа на Kotlin](./2.md) и изменить цикл в `main` — пересобрать и запустить.
 2. В IDEA: **Show Kotlin Bytecode** для `main` — увидеть связь с JVM.
 3. Одна ветка из таблицы "Три маршрута" — до рабочего мини-приложения.
 4. В конце — [чек-лист](./999.md).

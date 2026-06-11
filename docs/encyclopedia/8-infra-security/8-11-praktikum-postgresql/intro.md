@@ -71,11 +71,11 @@ import DocCardList from '@theme/DocCardList';
 | Тема | Где уже есть |
 |------|--------------|
 | Синтаксис SELECT, JOIN, транзакции | [3.07 SQL](/encyclopedia/3-data-markup/3-07-sql/intro), [SQL — реальные кейсы](/lab/Примеры/1152), [практикум shop_data](/encyclopedia/3-data-markup/3-07-sql/111) |
-| Оконные функции и CTE | [885](/encyclopedia/3-data-markup/3-07-sql/885.md), [886](/encyclopedia/3-data-markup/3-07-sql/886.md) |
-| Практикум JSONB с примерами | [66](/encyclopedia/3-data-markup/3-07-sql/66.md) |
+| Оконные функции и CTE | [Шпаргалка с типичными задачами по SQL](/encyclopedia/3-data-markup/3-07-sql/885.md), [Иерархические данные в реляционных БД](/encyclopedia/3-data-markup/3-07-sql/886.md) |
+| Практикум JSONB с примерами | [Практикум PostgreSQL по JSONB](/encyclopedia/3-data-markup/3-07-sql/66.md) |
 | Установка, pg_dump, справочник параметров | [3.08/2](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2.md) |
-| Блокировки и конкурентный доступ | [110](/encyclopedia/3-data-markup/3-07-sql/110.md) |
-| Резервное копирование (базовый уровень) | [106](/encyclopedia/3-data-markup/3-07-sql/106.md) |
+| Блокировки и конкурентный доступ | [Блокировки и конкурентный доступ в PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/110.md) |
+| Резервное копирование (базовый уровень) | [Резервное копирование и восстановление PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/106.md) |
 | Веб-интерфейс phpPgAdmin | [5.07/phpPgAdmin](/encyclopedia/5-languages/5-07-php/phppgadmin/intro) |
 
 ---
@@ -86,15 +86,15 @@ import DocCardList from '@theme/DocCardList';
 
 | Задача в 8.11 | Сначала в SQL (3.07) | В phpPgAdmin | В практикуме 8.11 |
 |---------------|----------------------|--------------|-------------------|
-| Синтаксис SELECT, JOIN, транзакции | [101](/encyclopedia/3-data-markup/3-07-sql/101) → [888](/encyclopedia/3-data-markup/3-07-sql/888) → [891 demo](/encyclopedia/3-data-markup/3-07-sql/891) | [SQL, DDL и DML](/encyclopedia/5-languages/5-07-php/phppgadmin/3) — вкладка SQL | — |
-| JSONB, оконные функции | [66](/encyclopedia/3-data-markup/3-07-sql/66), [886](/encyclopedia/3-data-markup/3-07-sql/886), [885](/encyclopedia/3-data-markup/3-07-sql/885) | Выполнить запрос на вкладке SQL | [шаг 4](./4.md) |
-| Блокировки, MVCC (теория) | [110](/encyclopedia/3-data-markup/3-07-sql/110), [77](/encyclopedia/3-data-markup/3-07-sql/77) | — | [шаг 1](./1.md) |
-| EXPLAIN, индексы | [881](/encyclopedia/3-data-markup/3-07-sql/881), [884](/encyclopedia/3-data-markup/3-07-sql/884) | `EXPLAIN ANALYZE` во вкладке SQL | [шаг 2](./2.md) |
-| `postgresql.conf`, `pg_hba` | [101](/encyclopedia/3-data-markup/3-07-sql/101), [3.08/2](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2) | [Установка и подключение](/encyclopedia/5-languages/5-07-php/phppgadmin/2) | [шаг 3](./3.md) |
-| pg_dump, импорт SQL | [106](/encyclopedia/3-data-markup/3-07-sql/106) | [Дампы и FAQ](/encyclopedia/5-languages/5-07-php/phppgadmin/4) | [шаг 10](./10.md) |
-| PL/pgSQL, триггеры | [885](/encyclopedia/3-data-markup/3-07-sql/885) (рецепты) | SQL-вкладка для `CREATE FUNCTION` | [шаг 5](./5.md) |
+| Синтаксис SELECT, JOIN, транзакции | [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) → [PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888) → [891 demo](/encyclopedia/3-data-markup/3-07-sql/891) | [SQL, DDL и DML](/encyclopedia/5-languages/5-07-php/phppgadmin/3) — вкладка SQL | — |
+| JSONB, оконные функции | [Практикум PostgreSQL по JSONB](/encyclopedia/3-data-markup/3-07-sql/66), [Иерархические данные в реляционных БД](/encyclopedia/3-data-markup/3-07-sql/886), [Шпаргалка с типичными задачами по SQL](/encyclopedia/3-data-markup/3-07-sql/885) | Выполнить запрос на вкладке SQL | [шаг 4](./4.md) |
+| Блокировки, MVCC (теория) | [Блокировки и конкурентный доступ в PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/110), [Транзакции, изоляция и блокировки](/encyclopedia/3-data-markup/3-07-sql/77) | — | [шаг 1](./1.md) |
+| EXPLAIN, индексы | [Оптимизация SQL-запросов](/encyclopedia/3-data-markup/3-07-sql/881), [Сложные индексы](/encyclopedia/3-data-markup/3-07-sql/884) | `EXPLAIN ANALYZE` во вкладке SQL | [шаг 2](./2.md) |
+| `postgresql.conf`, `pg_hba` | [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101), [3.08/2](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2) | [Установка и подключение](/encyclopedia/5-languages/5-07-php/phppgadmin/2) | [шаг 3](./3.md) |
+| pg_dump, импорт SQL | [Резервное копирование и восстановление PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/106) | [Дампы и FAQ](/encyclopedia/5-languages/5-07-php/phppgadmin/4) | [шаг 10](./10.md) |
+| PL/pgSQL, триггеры | [Шпаргалка с типичными задачами по SQL](/encyclopedia/3-data-markup/3-07-sql/885) (рецепты) | SQL-вкладка для `CREATE FUNCTION` | [шаг 5](./5.md) |
 
-Рекомендуемая цепочка для PHP-разработчика: [SQL intro](/encyclopedia/3-data-markup/3-07-sql/intro) → [888](/encyclopedia/3-data-markup/3-07-sql/888) → [phpPgAdmin/2–3](/encyclopedia/5-languages/5-07-php/phppgadmin/2) → этот практикум с [шага 1](./1.md).
+Рекомендуемая цепочка для PHP-разработчика: [SQL intro](/encyclopedia/3-data-markup/3-07-sql/intro) → [PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888) → [phpPgAdmin/2–3](/encyclopedia/5-languages/5-07-php/phppgadmin/2) → этот практикум с [шага 1](./1.md).
 
 ---
 
@@ -102,7 +102,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Кто вы | Маршрут | Время (оценка) |
 |--------|---------|----------------|
-| **PHP + локальный стек** | [phpPgAdmin/2–3](/encyclopedia/5-languages/5-07-php/phppgadmin/2) → [888](/encyclopedia/3-data-markup/3-07-sql/888) → 1 → 2 | 3–4 недели |
+| **PHP + локальный стек** | [phpPgAdmin/2–3](/encyclopedia/5-languages/5-07-php/phppgadmin/2) → [PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888) → 1 → 2 | 3–4 недели |
 | **Бэкенд-разработчик** | 1 → 2 → 4 → 5 | 2–3 недели |
 | **DBA / сисадмин** | 1 → 3 → 6 → 10 → 11 | 3–4 недели |
 | **DevOps** | 7 → 8 → 9 → 12 | 2–4 недели |

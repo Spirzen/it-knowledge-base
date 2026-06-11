@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 В статьях раздела есть интерактивные схемы: они работают в браузере и не меняют настройки вашего компьютера.
 
-Итоги блока и FAQ — [98](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/98).
+Итоги блока и FAQ — [Компьютер — итоги](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/98).
 
 <DocCardList />
 

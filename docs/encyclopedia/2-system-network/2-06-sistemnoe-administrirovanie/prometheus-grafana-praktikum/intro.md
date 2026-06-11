@@ -25,7 +25,7 @@ import DocCardList from '@theme/DocCardList';
 
 Здесь — **практикум по Prometheus, Grafana и экосистеме наблюдаемости** для инженера и разработчика, который поднимает **cloud-native мониторинг** на учебном стенде. Маршрут ведёт от первого scrape до корреляции метрик, логов и трассировок и к нагрузочному тесту с k6.
 
-Общая теория pull/push, PromQL и PLG-стека уже есть в [92.md](../92.md). Этот раздел **не дублирует** сравнение Zabbix и Prometheus — он учит **руками собрать стек** по официальным гайдам Prometheus и Grafana.
+Общая теория pull/push, PromQL и PLG-стека уже есть в [Мониторинг, метрики и логирование систем](../92.md). Этот раздел **не дублирует** сравнение Zabbix и Prometheus — он учит **руками собрать стек** по официальным гайдам Prometheus и Grafana.
 
 Перед `docker compose up` на стенде — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) (терминал, порты, остановка).
 
@@ -155,7 +155,7 @@ flowchart TB
 
 | Тема | Материалы энциклопедии |
 |------|-------------------------|
-| Метрики, observability, PLG | [92.md](../92.md) |
+| Метрики, observability, PLG | [Мониторинг, метрики и логирование систем](../92.md) |
 | Корпоративный мониторинг (Zabbix) | [Практикум Zabbix](../zabbix-praktikum/intro.md) |
 | DevOps и пайплайны | [8-04 DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/19) |
 | Kubernetes (service discovery) | [8-06 Контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro) |

@@ -37,7 +37,7 @@ Painkiller — шутер от первого лица от польской с�
 
 ## Pandas
 
-Pandas — библиотека с открытым исходным кодом для анализа и обработки данных на языке Python. Предоставляет высокоуровневые структуры данных `DataFrame` и `Series`, а также методы для фильтрации, агрегации, объединения и временных рядов. Типовые операции при EDA (`read_csv`, `groupby`, `describe`, `.str`) — [428](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428). **Примеры с построчным разбором** — [Lab / 1113](/lab/Примеры/1113). Очистка и подготовка таблицы — [427](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427). Сравнение с Polars, SQL и PySpark — [426](/encyclopedia/3-data-markup/3-11-analiz-dannyh/426).
+Pandas — библиотека с открытым исходным кодом для анализа и обработки данных на языке Python. Предоставляет высокоуровневые структуры данных `DataFrame` и `Series`, а также методы для фильтрации, агрегации, объединения и временных рядов. Типовые операции при EDA (`read_csv`, `groupby`, `describe`, `.str`) — [Pandas — типовые операции при анализе данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428). **Примеры с построчным разбором** — [Lab / 1113](/lab/Примеры/1113). Очистка и подготовка таблицы — [Очистка и подготовка данных в Pandas](/encyclopedia/3-data-markup/3-11-analiz-dannyh/427). Сравнение с Polars, SQL и PySpark — [Табличные данные — Pandas, Polars, SQL и PySpark](/encyclopedia/3-data-markup/3-11-analiz-dannyh/426).
 
 ---
 

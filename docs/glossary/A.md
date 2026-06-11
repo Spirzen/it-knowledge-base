@@ -185,7 +185,7 @@ AOT — Ahead-Of-Time compilation, то есть компиляция "зара�
 
 ## Apache HTTP Server
 
-Apache HTTP Server (httpd) — модульный веб-сервер проекта Apache Software Foundation. Принимает HTTP/HTTPS-запросы, отдаёт статику и передаёт динамику через CGI, FastCGI (PHP-FPM) или модули. Конфигурация — `httpd.conf`, `apache2.conf`, виртуальные хосты; ключевые модули: `mod_rewrite`, `mod_ssl`, `mod_proxy`. Часто используется на shared-хостинге и в LAMP-стеке. Справочник: [3125](/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125). Не путать с **Apache Kafka** (брокер сообщений).
+Apache HTTP Server (httpd) — модульный веб-сервер проекта Apache Software Foundation. Принимает HTTP/HTTPS-запросы, отдаёт статику и передаёт динамику через CGI, FastCGI (PHP-FPM) или модули. Конфигурация — `httpd.conf`, `apache2.conf`, виртуальные хосты; ключевые модули: `mod_rewrite`, `mod_ssl`, `mod_proxy`. Часто используется на shared-хостинге и в LAMP-стеке. Справочник: [Справочник по Apache HTTP Server](/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125). Не путать с **Apache Kafka** (брокер сообщений).
 
 ---
 

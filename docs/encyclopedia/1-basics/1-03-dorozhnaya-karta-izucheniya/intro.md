@@ -39,7 +39,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-body">
   На любом маршруте изучения стоит **установить PostgreSQL** и потренироваться в SQL — это нужно всем ролям в IT, не только разработчикам.
 
-  Установка — [СУБД](/tools/data/1); первые шаги — [101](/encyclopedia/3-data-markup/3-07-sql/101) → [888](/encyclopedia/3-data-markup/3-07-sql/888) → [демобаза](/encyclopedia/3-data-markup/3-07-sql/891).
+  Установка — [СУБД](/tools/data/1); первые шаги — [Первые шаги с SQL](/encyclopedia/3-data-markup/3-07-sql/101) → [PostgreSQL — практическая работа и API](/encyclopedia/3-data-markup/3-07-sql/888) → [демобаза](/encyclopedia/3-data-markup/3-07-sql/891).
 </div>
   </div>
 
