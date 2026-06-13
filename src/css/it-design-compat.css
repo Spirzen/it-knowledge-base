@@ -62,6 +62,24 @@ html[data-design='design-brutalist-swiss'] .button--primary {
   --d-on-primary: #ffffff;
 }
 
+/* Тёмный режим: чёрный primary → контрастное меню сайдбара */
+html[data-theme='dark'][data-design='design-brutalist-swiss'],
+html[data-theme='dark'][data-design='design-ink-monochrome'] {
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-active: color-mix(in srgb, var(--d-primary) 34%, var(--d-surface));
+  --ifm-menu-color-background-hover: color-mix(in srgb, var(--d-primary) 18%, var(--d-surface));
+}
+
+html[data-theme='dark'][data-design='design-brutalist-swiss'] .menu__link--active {
+  color: #ffffff !important;
+  animation: none !important;
+}
+
+html[data-theme='dark'][data-design='design-ink-monochrome'] .menu__link--active {
+  color: #ffffff !important;
+  animation: none !important;
+}
+
 /* Тёмные темы: яркие токены на тёмном фоне блока кода */
 html[data-design='design-cosmic-void'],
 html[data-design='design-forest-terminal'],

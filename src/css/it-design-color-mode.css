@@ -43,6 +43,24 @@ html[data-theme='dark'][data-design='design-blueprint-tech'] {
   --d-code-syntax-builtin: var(--d-accent2);
 }
 
+/* Светлые палитры с тёмным primary: в dark mode accent вместо #000 */
+html[data-theme='dark'][data-design='design-brutalist-swiss'] {
+  --d-primary: #ff0000;
+  --d-primary-dark: #e60000;
+  --d-footer-link: #ff6666;
+  --d-code-syntax-keyword: #ff6666;
+  --d-code-syntax-string: #ff9999;
+}
+
+html[data-theme='dark'][data-design='design-ink-monochrome'] {
+  --d-primary: #d4d4dc;
+  --d-primary-dark: #b0b0bc;
+  --d-accent2: #9a9aa8;
+  --d-footer-link: #d4d4dc;
+  --d-code-syntax-keyword: #d4d4dc;
+  --d-code-syntax-string: color-mix(in srgb, #d4d4dc 70%, var(--d-code-fg));
+}
+
 /* —— Тёмные палитры + светлый режим —— */
 html[data-theme='light'][data-design='design-matrix-code'],
 html[data-theme='light'][data-design='design-neon-tokyo'],
