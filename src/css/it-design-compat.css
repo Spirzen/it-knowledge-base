@@ -63,7 +63,6 @@ html[data-design='design-brutalist-swiss'] .button--primary {
 }
 
 /* Тёмный режим: чёрный primary → контрастное меню сайдбара */
-/* Тёмный режим: чёрный primary → контрастное меню сайдбара */
 html[data-theme='dark'][data-design='design-brutalist-swiss'] {
   --ifm-menu-color-active: #ffffff;
   --ifm-menu-color-background-active: color-mix(in srgb, #ff0000 34%, #2a2a2a);
@@ -86,47 +85,42 @@ html[data-theme='dark'][data-design='design-ink-monochrome'] .menu__link--active
   animation: none !important;
 }
 
-/* Dark Coder — меню в духе VS Code */
-html[data-design='design-dark-coder'] .menu__link--active {
+/* Dark Coder — меню и chrome в духе VS Code (нативный тёмный режим) */
+html[data-theme='dark'][data-design='design-dark-coder'] .menu__link--active {
   background: #094771 !important;
   color: #ffffff !important;
   box-shadow: none !important;
   animation: none !important;
 }
 
-html[data-design='design-dark-coder'] .menu__link:hover {
+html[data-theme='dark'][data-design='design-dark-coder'] .menu__link:hover {
   background: #2a2d2e;
 }
 
-html[data-design='design-dark-coder'] .navbar {
+html[data-theme='dark'][data-design='design-dark-coder'] .navbar {
   border-bottom-color: var(--d-border);
   box-shadow: none;
 }
 
-html[data-design='design-dark-coder'] .button--primary {
+html[data-theme='dark'][data-design='design-dark-coder'] .button--primary {
   background: var(--d-accent2);
   border-color: var(--d-accent2);
 }
 
-html[data-theme='light'][data-design='design-dark-coder'] .button--primary {
-  background: var(--d-primary);
-  border-color: var(--d-primary);
-}
-
-/* Тёмные темы: яркие токены на тёмном фоне блока кода */
-html[data-design='design-cosmic-void'],
-html[data-design='design-forest-terminal'],
-html[data-design='design-crimson-night'],
-html[data-design='design-neon-tokyo'],
-html[data-design='design-glass-aurora'],
-html[data-design='design-phosphor-green'],
-html[data-design='design-ocean-abyss'],
-html[data-design='design-carbon-github'],
-html[data-design='design-cyber-grid'],
-html[data-design='design-volcano-ember'],
-html[data-design='design-holo-prism'],
-html[data-design='design-matrix-code'],
-html[data-design='design-dark-coder'] {
+/* Тёмные темы (нативный тёмный режим): яркие токены в блоках кода */
+html[data-theme='dark'][data-design='design-cosmic-void'],
+html[data-theme='dark'][data-design='design-forest-terminal'],
+html[data-theme='dark'][data-design='design-crimson-night'],
+html[data-theme='dark'][data-design='design-neon-tokyo'],
+html[data-theme='dark'][data-design='design-glass-aurora'],
+html[data-theme='dark'][data-design='design-phosphor-green'],
+html[data-theme='dark'][data-design='design-ocean-abyss'],
+html[data-theme='dark'][data-design='design-carbon-github'],
+html[data-theme='dark'][data-design='design-cyber-grid'],
+html[data-theme='dark'][data-design='design-volcano-ember'],
+html[data-theme='dark'][data-design='design-holo-prism'],
+html[data-theme='dark'][data-design='design-matrix-code'],
+html[data-theme='dark'][data-design='design-dark-coder'] {
   --d-code-syntax-keyword: var(--d-primary);
   --d-code-syntax-function: var(--d-accent2);
   --d-code-syntax-string: color-mix(in srgb, var(--d-primary) 80%, var(--d-code-fg));
