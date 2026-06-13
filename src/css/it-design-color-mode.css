@@ -1,0 +1,112 @@
+/**
+ * Светлая/тёмная тема Docusaurus (data-theme) × палитра оформления (data-design).
+ * Раньше переключатель почти не влиял на кастомные темы — токены --d-* были фиксированы.
+ */
+
+/* —— Светлые палитры + тёмный режим —— */
+html[data-theme='dark'][data-design='design-paper-vintage'],
+html[data-theme='dark'][data-design='design-sakura-spring'],
+html[data-theme='dark'][data-design='design-brutalist-swiss'],
+html[data-theme='dark'][data-design='design-ink-monochrome'],
+html[data-theme='dark'][data-design='design-solar-flare'],
+html[data-theme='dark'][data-design='design-arctic-frost'],
+html[data-theme='dark'][data-design='design-sunset-warm'],
+html[data-theme='dark'][data-design='design-lavender-haze'],
+html[data-theme='dark'][data-design='design-gilded-scroll'],
+html[data-theme='dark'][data-design='design-nordic-fjord'],
+html[data-theme='dark'][data-design='design-mint-cool'],
+html[data-theme='dark'][data-design='design-blueprint-tech'] {
+  color-scheme: dark;
+  --d-bg: color-mix(in srgb, var(--d-primary) 5%, #121214);
+  --d-surface: color-mix(in srgb, var(--d-primary) 9%, #1c1c20);
+  --d-text: #e8e8ec;
+  --d-text-muted: color-mix(in srgb, var(--d-primary) 22%, #9a9aa8);
+  --d-nav: color-mix(in srgb, var(--d-primary) 7%, #18181c);
+  --d-footer: #0a0a0c;
+  --d-footer-text: #e8e8ec;
+  --d-footer-link: var(--d-primary);
+  --d-border: color-mix(in srgb, var(--d-primary) 16%, rgba(255, 255, 255, 0.12));
+  --d-code-bg: color-mix(in srgb, var(--d-primary) 5%, #1a1a1f);
+  --d-code-fg: #e0e0e8;
+  --d-hero-bg: radial-gradient(
+    ellipse at 50% 0%,
+    color-mix(in srgb, var(--d-primary) 18%, #1a1a22) 0%,
+    var(--d-bg) 58%
+  );
+  --d-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --d-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+
+  --d-code-syntax-keyword: var(--d-primary);
+  --d-code-syntax-function: var(--d-accent2);
+  --d-code-syntax-string: color-mix(in srgb, var(--d-primary) 75%, var(--d-code-fg));
+  --d-code-syntax-comment: var(--d-text-muted);
+  --d-code-syntax-builtin: var(--d-accent2);
+}
+
+/* —— Тёмные палитры + светлый режим —— */
+html[data-theme='light'][data-design='design-matrix-code'],
+html[data-theme='light'][data-design='design-neon-tokyo'],
+html[data-theme='light'][data-design='design-phosphor-green'],
+html[data-theme='light'][data-design='design-cosmic-void'],
+html[data-theme='light'][data-design='design-forest-terminal'],
+html[data-theme='light'][data-design='design-crimson-night'],
+html[data-theme='light'][data-design='design-glass-aurora'],
+html[data-theme='light'][data-design='design-ocean-abyss'],
+html[data-theme='light'][data-design='design-carbon-github'],
+html[data-theme='light'][data-design='design-cyber-grid'],
+html[data-theme='light'][data-design='design-volcano-ember'],
+html[data-theme='light'][data-design='design-holo-prism'],
+html[data-theme='light'][data-design='design-dark-coder'] {
+  color-scheme: light;
+  --d-bg: color-mix(in srgb, var(--d-primary) 4%, #f8f8fa);
+  --d-surface: color-mix(in srgb, var(--d-primary) 6%, #ffffff);
+  --d-text: #1a1a2e;
+  --d-text-muted: color-mix(in srgb, var(--d-primary) 28%, #5a5a6e);
+  --d-nav: color-mix(in srgb, var(--d-primary) 5%, #ffffff);
+  --d-footer: color-mix(in srgb, var(--d-primary) 35%, #2c2c3a);
+  --d-footer-text: #ffffff;
+  --d-footer-link: color-mix(in srgb, var(--d-primary) 70%, #ffffff);
+  --d-border: color-mix(in srgb, var(--d-primary) 14%, rgba(0, 0, 0, 0.1));
+  --d-code-bg: color-mix(in srgb, var(--d-primary) 5%, #f0f0f4);
+  --d-code-fg: #1a1a2e;
+  --d-hero-bg: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--d-primary) 10%, #ffffff) 0%,
+    var(--d-bg) 62%
+  );
+  --d-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+  --d-code-syntax-keyword: color-mix(in srgb, var(--d-primary) 40%, var(--d-code-fg));
+  --d-code-syntax-function: color-mix(in srgb, var(--d-accent2) 35%, var(--d-code-fg));
+  --d-code-syntax-string: color-mix(in srgb, var(--d-primary) 30%, var(--d-code-fg));
+  --d-code-syntax-comment: color-mix(in srgb, var(--d-text-muted) 50%, var(--d-code-fg));
+  --d-code-syntax-builtin: color-mix(in srgb, var(--d-accent2) 45%, var(--d-code-fg));
+}
+
+/* Dark Coder: активный пункт меню как в VS Code */
+html[data-design='design-dark-coder'] .menu__link--active {
+  background: #094771 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+html[data-design='design-dark-coder'] .menu__link:hover {
+  background: #2a2d2e;
+}
+
+html[data-design='design-dark-coder'] .navbar {
+  border-bottom-color: var(--d-border);
+  box-shadow: none;
+}
+
+html[data-design='design-dark-coder'] .button--primary {
+  background: var(--d-accent2);
+  border-color: var(--d-accent2);
+}
+
+html[data-theme='light'][data-design='design-dark-coder'] .button--primary {
+  background: var(--d-primary);
+  border-color: var(--d-primary);
+}

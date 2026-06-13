@@ -54,6 +54,10 @@ html[data-design='design-neon-tokyo'] {
   --d-on-primary: #0a0a12;
 }
 
+html[data-design='design-dark-coder'] .button--primary {
+  --d-on-primary: #ffffff;
+}
+
 html[data-design='design-brutalist-swiss'] .button--primary {
   --d-on-primary: #ffffff;
 }
@@ -70,7 +74,8 @@ html[data-design='design-carbon-github'],
 html[data-design='design-cyber-grid'],
 html[data-design='design-volcano-ember'],
 html[data-design='design-holo-prism'],
-html[data-design='design-matrix-code'] {
+html[data-design='design-matrix-code'],
+html[data-design='design-dark-coder'] {
   --d-code-syntax-keyword: var(--d-primary);
   --d-code-syntax-function: var(--d-accent2);
   --d-code-syntax-string: color-mix(in srgb, var(--d-primary) 80%, var(--d-code-fg));

@@ -41,6 +41,12 @@
     "featured": true
   },
   {
+    "id": "design-dark-coder",
+    "name": "Dark Coder",
+    "mode": "dark",
+    "featured": true
+  },
+  {
     "id": "design-ink-monochrome",
     "name": "Монохромные чернила",
     "mode": "light",
