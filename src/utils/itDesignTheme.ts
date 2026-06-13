@@ -25,10 +25,7 @@ export function getItDesignById(id: string): ItDesign | undefined {
   return IT_DESIGNS.find((d) => d.id === id);
 }
 
-export function applyItDesign(
-  designId: string,
-  setColorMode?: (mode: ItDesignMode) => void,
-): ItDesign {
+export function applyItDesign(designId: string): ItDesign {
   const design =
     getItDesignById(designId) ??
     getItDesignById(IT_DESIGN_DEFAULT_ID)!;
@@ -38,9 +35,6 @@ export function applyItDesign(
   }
   if (typeof localStorage !== 'undefined') {
     localStorage.setItem(IT_DESIGN_STORAGE_KEY, design.id);
-  }
-  if (setColorMode) {
-    setColorMode(design.mode);
   }
   return design;
 }

@@ -1,5 +1,4 @@
 import React, {useCallback, useEffect, useState} from 'react';
-import {useColorMode} from '@docusaurus/theme-common';
 import {
   applyItDesign,
   IT_DESIGNS,
@@ -11,26 +10,23 @@ import {
 import styles from './styles.module.css';
 
 export default function DesignThemePicker(): React.ReactElement {
-  const {setColorMode} = useColorMode();
   const [designId, setDesignId] = useState(readStoredItDesignId);
 
   useEffect(() => {
     const onStorage = (event: StorageEvent) => {
       if (event.key === 'it-universe-design' && event.newValue) {
-        setDesignId(event.newValue);
+        const next = applyItDesign(event.newValue);
+        setDesignId(next.id);
       }
     };
     window.addEventListener('storage', onStorage);
     return () => window.removeEventListener('storage', onStorage);
   }, []);
 
-  const onChange = useCallback(
-    (event: React.ChangeEvent<HTMLSelectElement>) => {
-      const next = applyItDesign(event.target.value, setColorMode);
-      setDesignId(next.id);
-    },
-    [setColorMode],
-  );
+  const onChange = useCallback((event: React.ChangeEvent<HTMLSelectElement>) => {
+    const next = applyItDesign(event.target.value);
+    setDesignId(next.id);
+  }, []);
 
   return (
     <label className={styles.root} title="Палитра оформления Вселенной IT">

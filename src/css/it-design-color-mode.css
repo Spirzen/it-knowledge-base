@@ -128,3 +128,12 @@ html[data-theme='light'][data-design='design-dark-coder'] .button--primary {
   background: var(--d-primary);
   border-color: var(--d-primary);
 }
+
+/* color-scheme только от переключателя ☀/☾ (data-theme), не от palette.mode */
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+}
