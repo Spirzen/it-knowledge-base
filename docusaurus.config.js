@@ -113,6 +113,7 @@ module.exports = {
   },
 
   clientModules: [
+    require.resolve('./src/clientModules/itThemeStorageGuard.js'),
     require.resolve('./src/clientModules/itDesignThemeInit.js'),
     require.resolve('./src/clientModules/limitRoutePrefetch.js'),
   ],

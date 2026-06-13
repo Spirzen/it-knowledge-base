@@ -63,11 +63,17 @@ html[data-design='design-brutalist-swiss'] .button--primary {
 }
 
 /* Тёмный режим: чёрный primary → контрастное меню сайдбара */
-html[data-theme='dark'][data-design='design-brutalist-swiss'],
+/* Тёмный режим: чёрный primary → контрастное меню сайдбара */
+html[data-theme='dark'][data-design='design-brutalist-swiss'] {
+  --ifm-menu-color-active: #ffffff;
+  --ifm-menu-color-background-active: color-mix(in srgb, #ff0000 34%, #2a2a2a);
+  --ifm-menu-color-background-hover: color-mix(in srgb, #ff0000 18%, #2a2a2a);
+}
+
 html[data-theme='dark'][data-design='design-ink-monochrome'] {
   --ifm-menu-color-active: #ffffff;
-  --ifm-menu-color-background-active: color-mix(in srgb, var(--d-primary) 34%, var(--d-surface));
-  --ifm-menu-color-background-hover: color-mix(in srgb, var(--d-primary) 18%, var(--d-surface));
+  --ifm-menu-color-background-active: color-mix(in srgb, #d4d4dc 34%, #2a2a2a);
+  --ifm-menu-color-background-hover: color-mix(in srgb, #d4d4dc 18%, #2a2a2a);
 }
 
 html[data-theme='dark'][data-design='design-brutalist-swiss'] .menu__link--active {
@@ -78,6 +84,33 @@ html[data-theme='dark'][data-design='design-brutalist-swiss'] .menu__link--activ
 html[data-theme='dark'][data-design='design-ink-monochrome'] .menu__link--active {
   color: #ffffff !important;
   animation: none !important;
+}
+
+/* Dark Coder — меню в духе VS Code */
+html[data-design='design-dark-coder'] .menu__link--active {
+  background: #094771 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+html[data-design='design-dark-coder'] .menu__link:hover {
+  background: #2a2d2e;
+}
+
+html[data-design='design-dark-coder'] .navbar {
+  border-bottom-color: var(--d-border);
+  box-shadow: none;
+}
+
+html[data-design='design-dark-coder'] .button--primary {
+  background: var(--d-accent2);
+  border-color: var(--d-accent2);
+}
+
+html[data-theme='light'][data-design='design-dark-coder'] .button--primary {
+  background: var(--d-primary);
+  border-color: var(--d-primary);
 }
 
 /* Тёмные темы: яркие токены на тёмном фоне блока кода */

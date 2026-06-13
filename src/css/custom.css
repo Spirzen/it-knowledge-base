@@ -1,6 +1,6 @@
 @import './it-demo-shell.css';
 @import './it-design-themes.css';
-@import './it-design-color-mode.css';
+@import './it-design-scheme.css';
 @import './it-design-bridge.css';
 @import './it-design-compat.css';
 @import './it-design-effects.css';
@@ -190,7 +190,8 @@
   --it-audience-other-border: var(--ifm-color-emphasis-300);
 }
 
-[data-theme='dark'] {
+/* Тёмные IFM-токены — только для «Оригинал». Кастомные палитры идут через it-design-bridge. */
+html[data-design='design-universe-original'][data-theme='dark'] {
 	
   --ifm-font-size-base: 85%;
   
@@ -649,7 +650,7 @@ img {
 }
 
 .menu__link--active {
-  animation: activeLinkPulse 2s ease-in-out infinite alternate !important;
+  animation: none !important;
 }
 
 @keyframes activeLinkPulse {
@@ -1067,8 +1068,8 @@ details[open] summary::before {
   border-bottom: none !important;
 }
 
-/* Стили для активного пункта — без нижней границы */
-.menu__link--active {
+/* Стили для активного пункта — только оригинальная палитра (кастомные — в sidebar-explorer / compat) */
+html[data-design='design-universe-original'] .menu__link--active {
   border-bottom: none !important;
   background-color: rgba(123, 104, 238, 0.1) !important;
   border-radius: 6px !important;

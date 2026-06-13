@@ -12,7 +12,7 @@ function isSidebarPlacement(className?: string): boolean {
 
 export default function NavbarColorModeToggle({className}: Props): ReactNode {
   const navbarStyle = useThemeConfig().navbar.style;
-  const {disableSwitch} = useThemeConfig().colorMode;
+  const {disableSwitch, respectPrefersColorScheme} = useThemeConfig().colorMode;
   const {colorModeChoice, setColorMode} = useColorMode();
   const windowSize = useWindowSize();
   const inSidebar = isSidebarPlacement(className);
@@ -34,6 +34,7 @@ export default function NavbarColorModeToggle({className}: Props): ReactNode {
       {!disableSwitch && (
         <ColorModeToggle
           className={className}
+          respectPrefersColorScheme={respectPrefersColorScheme}
           buttonClassName={
             navbarStyle === 'dark' ? styles.darkNavbarColorModeToggle : undefined
           }

@@ -1,0 +1,12 @@
+/**
+ * color-scheme только от переключателя ☀/☾.
+ * Палитры в it-design-themes.css задают свой color-scheme — это ломало стабильность.
+ */
+
+html[data-theme='dark'] {
+  color-scheme: dark;
+}
+
+html[data-theme='light'] {
+  color-scheme: light;
+}
