@@ -19,13 +19,13 @@ import DocCardList from '@theme/DocCardList';
 
 **Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — шаблоны отчётов Bug Bounty и развёрнутые PoC не раздувают HTML энциклопедии. Короткие фрагменты (HTTP-запросы, curl, таблицы CVSS) по-прежнему прямо в markdown. Диаграммы **mermaid** — на месте.
 
-Здесь собран **маршрут** по белому хакерству: кто такие этичные исследователи, как они **находят** и **документируют** уязвимости, куда отправляют отчёты, как устроены **Bug Bounty** у крупнейших IT-компаний и чем отличается работа **в штате** от независимого исследователя.
+Здесь собран **маршрут** по белому хакерству — кто такие этичные исследователи, как они **находят** и **документируют** уязвимости, куда отправляют отчёты, как устроены **Bug Bounty** у крупнейших IT-компаний и чем отличается работа **в штате** от независимого исследователя.
 
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
 
   <div class="callout-body">
-  Раздел полезен разработчикам, тестировщикам, будущим специалистам по ИБ и всем, кто слышал про «белых хакеров» и хочет понять процесс без мифов. Базовые атаки и OWASP — в [8.07](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro) (в т. ч. [жизненный цикл атаки](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/129)) и [тестировании ИБ](/encyclopedia/7-project/7-05-testirovanie/123); практика на Kali — в [8.10](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro); здесь фокус на **взаимодействии с вендором** и **экономике** поиска дыр.
+  Раздел полезен разработчикам, тестировщикам, будущим специалистам по ИБ и всем, кто слышал про "белых хакеров" и хочет понять процесс без мифов. Базовые атаки и OWASP — в [8.07](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro) (в т. ч. [жизненный цикл атаки](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/129)) и [тестировании ИБ](/encyclopedia/7-project/7-05-testirovanie/123); практика на Kali — в [8.10](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro); здесь фокус на **взаимодействии с вендором** и **экономике** поиска дыр.
   </div>
 </div>
 
@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Шаг | Статья | Содержание |
 |-----|--------|------------|
-| 1 | [Белое хакерство — основы](./1.md) | «Шляпы», закон, этика, пентест и штатный AppSec |
+| 1 | [Белое хакерство — основы](./1.md) | "Шляпы", закон, этика, пентест и штатный AppSec |
 | 2 | [Как ищут и оформляют уязвимости](./2.md) | Scope, PoC, CVSS, шаблон отчёта, артефакты |
 | 3 | [Bug Bounty и координированное раскрытие](./3.md) | CVD, платформы, triage, выплаты, safe harbor |
 | 4 | [Программы техгигантов](./4.md) | Microsoft, Google, Apple, Meta, Amazon, GitHub, Яндекс и др. |

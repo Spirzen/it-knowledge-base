@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел посвящён **обработке естественного языка (NLP)** и архитектуре **Transformer**, которая с 2017 года стала основой современных языковых моделей, систем перевода, классификаторов текста и мультимодальных систем.
 
-Краткое упоминание трансформера есть во [введении в ИИ](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1) и в статье [Большие языковые модели](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1). Здесь — **углублённый маршрут**: от задач NLP и устройства attention до реализации блоков с нуля, fine-tuning, обзора семейств моделей и практики с Hugging Face, в том числе для **русского языка**.
+Краткое упоминание трансформера есть во [введении в ИИ](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1) и в статье [Большие языковые модели](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1). Здесь — **углублённый маршрут** — от задач NLP и устройства attention до реализации блоков с нуля, fine-tuning, обзора семейств моделей и практики с Hugging Face, в том числе для **русского языка**.
 
 <div class="callout callout--tip">
   <div class="callout-title">Рекомендуемый порядок</div>
@@ -63,7 +63,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Нейросети и ИИ** — [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Графовые базы данных](/encyclopedia/3-data-markup/3-06-nosql/7), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro).
 

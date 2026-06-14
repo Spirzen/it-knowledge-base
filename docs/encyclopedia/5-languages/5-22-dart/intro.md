@@ -22,13 +22,13 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-**Dart** — язык от Google: статическая типизация, null safety, `async`/`await` и **изоляты (isolates)** вместо разделяемой памяти между потоками. **Flutter** — UI-фреймворк на Dart; язык при этом самостоятелен (консоль, HTTP, скрипты).
+**Dart** — язык от Google — статическая типизация, null safety, `async`/`await` и **изоляты (isolates)** вместо разделяемой памяти между потоками. **Flutter** — UI-фреймворк на Dart; язык при этом самостоятелен (консоль, HTTP, скрипты).
 
-В разделе: история и runtime, синтаксис, типы, управление, async, паттерны Dart 3, ООП, консоль и HTTP, Flutter, чек-лист. Сначала **Dart как язык**, затем [Flutter](./311.md).
+В разделе — история и runtime, синтаксис, типы, управление, async, паттерны Dart 3, ООП, консоль и HTTP, Flutter, чек-лист. Сначала **Dart как язык**, затем [Flutter](./311.md).
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 Перед [классами и ООП](./10): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro).
 
@@ -51,7 +51,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Практика после теории</div>
 
   <div class="callout-body">
-  Прочитали <a href="./311.md">Flutter</a> — закрепите на <a href="/lab/Примеры/1154">галерее виджетов</a>: счётчик, формы, ListView и Navigator с разбором каждой строки.
+  Прочитали <a href="./311.md">Flutter</a> — закрепите на <a href="/lab/Примеры/1154">галерее виджетов</a> — счётчик, формы, ListView и Navigator с разбором каждой строки.
 </div>
 </div>
 
@@ -113,7 +113,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [Julia — о разделе](/encyclopedia/5-languages/5-24-julia/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Bash — о разделе](/encyclopedia/5-languages/5-25-bash/intro).
 

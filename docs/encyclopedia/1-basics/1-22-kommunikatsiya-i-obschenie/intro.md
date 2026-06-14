@@ -83,7 +83,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Софт-скиллы** — [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Удаленная работа — о разделе](/encyclopedia/1-basics/1-27-udalennaya-rabota/intro), [Как понять, что пора менять работу — о разделе](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/intro), [Экономические и организационные сообщества](/encyclopedia/9-spinoff/9-10-internet-kultura/114), [Взаимодействие аналитика с командой](/encyclopedia/7-project/7-04-analitika/127).
 

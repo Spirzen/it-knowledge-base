@@ -27,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про **C++** как язык системного и прикладного программирования: от первой программы до сборки, памяти, потоков и экосистемы библиотек.
+Раздел про **C++** как язык системного и прикладного программирования — от первой программы до сборки, памяти, потоков и экосистемы библиотек.
 
 <div class="callout callout--info">
   <div class="callout-title">Стандарт в примерах</div>
@@ -39,7 +39,7 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <div class="callout callout--info">
   <div class="callout-title">Потоки и память в C++</div>
@@ -137,7 +137,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Системное программирование** — [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro).
 

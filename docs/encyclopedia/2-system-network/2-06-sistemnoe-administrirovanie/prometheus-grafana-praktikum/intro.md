@@ -41,7 +41,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Для кого раздел</div>
 
   <div class="callout-body">
-  Нужны понимание [HTTP и портов](../6.md) и **Docker Compose** ([контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [готовые стеки](/lab/Примеры/11111)). Подойдут Linux VM, WSL2 или **Windows 10/11 + Docker Desktop** — минимальный стенд из [шага 2](./2.md) проверен на последнем: нестандартные порты, **windows_exporter**, русский UI Grafana 12, provisioning дашборда Windows.
+  Нужны понимание [HTTP и портов](../6.md) и **Docker Compose** ([контейнеризация](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [готовые стеки](/lab/Примеры/11111)). Подойдут Linux VM, WSL2 или **Windows 10/11 + Docker Desktop** — минимальный стенд из [шага 2](./2.md) проверен на последнем — нестандартные порты, **windows_exporter**, русский UI Grafana 12, provisioning дашборда Windows.
   </div>
 </div>
 
@@ -114,7 +114,7 @@ flowchart TB
 | 6 | [Алертинг](./6.md) | Alertmanager, правила Prometheus, Grafana Alerting |
 | 7 | [Loki, Tempo и Mimir](./7.md) | Логи, трейсы, долгосрочные метрики, LogQL, корреляция в Grafana |
 | 8 | [Alloy, Beyla, Faro и Pyroscope](./8.md) | Единый агент, eBPF, RUM, профилирование |
-| 9 | [OpenTelemetry, k6 и итоговый стенд](./9.md) | OTel Collector, нагрузочный тест, compose «всё в одном» |
+| 9 | [OpenTelemetry, k6 и итоговый стенд](./9.md) | OTel Collector, нагрузочный тест, compose "всё в одном" |
 
 ---
 

@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 JavaScript оживляет страницу в **браузере**. Это не Java — разные языки.
 
@@ -70,7 +70,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | **jQuery** | библиотека DOM и AJAX (2006+) | [Экосистема](./25.md) |
 | **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md) ([карта тем](./27.md#карта-тем-react), [первая программа](./272.md), [справочник](./3-ecosystem/2-frontend-frameworks/271.md), [галерея компонентов](/lab/Примеры/1146)), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <div class="callout callout--info">
   <div class="callout-title">Event loop, Worker и async</div>
@@ -101,7 +101,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 3b | [Примеры фигур p5.js](/lab/Примеры/1114) | квадрат, цветок, фракталы — готовые скетчи с разбором строк |
 | 4 | [BOM](./41.md) | `window`, `location`, `history`, `navigator`, geolocation |
 | 5 | [Практика](./32.md) · [curl / fetch — примеры](/lab/Примеры/1133) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) | рабочие сниппеты и галереи: GET/POST, токен, таймаут, React `useEffect` — с построчным разбором |
-| 6 | [Web Share API](./44.md) | системное окно «Поделиться» через `navigator.share` |
+| 6 | [Web Share API](./44.md) | системное окно "Поделиться" через `navigator.share` |
 | 7 | [Notification API](./46.md) | разрешения и нативные уведомления браузера |
 | 8 | [Первая программа на React](./272.md) | подключение API в компонентном UI |
 | 8a | [React — компоненты-рецепты](/lab/Примеры/1146) | счётчик, todo, формы, modal, Router — готовый код с разбором строк |
@@ -159,7 +159,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
   <div class="callout-title">Маршрут: от Node до fullstack</div>
 
   <div class="callout-body">
-  Последовательность «сервер → браузер → сборка»: <a href="./3-ecosystem/1-runtime-node/262.md">262</a> (Node до Express) → <a href="./18.md">типы и Date</a> → <a href="./21.md">async и fetch</a> → <a href="/lab/Примеры/1145">Fetch / axios — типовые запросы</a> → <a href="./102.md">DOM</a> → <a href="./47.md">Canvas</a> → <a href="/lab/Примеры/1114">p5.js — фигуры</a> → <a href="./25.md#сборка-для-браузера--webpack-и-vite">Webpack / Vite</a> → <a href="./3-ecosystem/1-runtime-node/263.md">Express</a> → <a href="./3-ecosystem/1-runtime-node/264.md">Fullstack</a>.
+  Последовательность "сервер → браузер → сборка": <a href="./3-ecosystem/1-runtime-node/262.md">262</a> (Node до Express) → <a href="./18.md">типы и Date</a> → <a href="./21.md">async и fetch</a> → <a href="/lab/Примеры/1145">Fetch / axios — типовые запросы</a> → <a href="./102.md">DOM</a> → <a href="./47.md">Canvas</a> → <a href="/lab/Примеры/1114">p5.js — фигуры</a> → <a href="./25.md#сборка-для-браузера--webpack-и-vite">Webpack / Vite</a> → <a href="./3-ecosystem/1-runtime-node/263.md">Express</a> → <a href="./3-ecosystem/1-runtime-node/264.md">Fullstack</a>.
 </div>
 </div>
 
@@ -219,7 +219,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294).
 

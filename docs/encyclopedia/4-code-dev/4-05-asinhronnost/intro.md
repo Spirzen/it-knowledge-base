@@ -24,10 +24,10 @@ import DocCardList from '@theme/DocCardList';
 **Листинги на языках программирования (от ~8 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются через `ExternalCodeEmbed`. Русский псевдокод, короткие CLI-команды (1–4 строки), диаграммы **mermaid** и интерактивные демо остаются в статьях — последние подгружаются из [play.spirzen.ru](https://play.spirzen.ru/). Образец интеграции — [Каталог примеров кода](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/617).
 
 <div class="callout callout--tip">
-  <div class="callout-title">С чего начать, если «ничего не понятно»</div>
+  <div class="callout-title">С чего начать, если "ничего не понятно"</div>
 
   <div class="callout-body">
-  Сначала прочитайте <a href="./2"><strong>Асинхронность простым языком — живые примеры</strong></a> — там разбор реальных сценариев (сайт, десктоп, сервер, Chrome), таблица «async vs потоки vs процессы» и практикум «что выбрать». Теория в остальных статьях опирается на эту карту.
+  Сначала прочитайте <a href="./2"><strong>Асинхронность простым языком — живые примеры</strong></a> — там разбор реальных сценариев (сайт, десктоп, сервер, Chrome), таблица "async vs потоки vs процессы" и практикум "что выбрать". Теория в остальных статьях опирается на эту карту.
   </div>
 </div>
 
@@ -51,7 +51,7 @@ import DocCardList from '@theme/DocCardList';
 | async, корутины, колбэки | [Асинхронное выполнение](./12) |
 | Стек вызовов, куча, GC | [Архитектура выполнения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1) |
 | Ускорение на многих ядрах (MPI, OpenMP) | [Параллельные вычисления](/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/intro) |
-| Регистры, цикл «выборка — декодирование — исполнение» | [Регистры](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/311), [Что такое программа](/encyclopedia/1-basics/1-19-programma/1) |
+| Регистры, цикл "выборка — декодирование — исполнение" | [Регистры](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/311), [Что такое программа](/encyclopedia/1-basics/1-19-programma/1) |
 
 <DocCardList />
 
@@ -61,7 +61,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Проект, структура и фреймворки — о разделе](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro), [Парадигмы и уровни абстракции — о разделе](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Объектно-ориентированное программирование — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro).
 

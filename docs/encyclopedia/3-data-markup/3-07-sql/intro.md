@@ -35,9 +35,9 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, как текст превращается в исполняемые инструкции; в этом разделе — **язык запросов SQL** и работа с данными в таблицах.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, как текст превращается в исполняемые инструкции; в этом разделе — **язык запросов SQL** и работа с данными в таблицах.
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (`SELECT`, `WHERE`, однострочные команды psql) по-прежнему прямо в markdown.
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (`SELECT`, `WHERE`, однострочные команды psql) по-прежнему прямо в markdown.
 
 Массовая загрузка (`COPY`, multi-row `INSERT`, staging + `MERGE`), чанки и транзакции — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433#sql-bulk).
 
@@ -95,7 +95,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro).
 

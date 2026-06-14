@@ -50,7 +50,7 @@ IT-проект — это не только код и серверы. Это л
 | 5 | [Роли и функции менеджмента](./12) | Планирование, метрики, инструменты, постановка задач |
 | 5b | [Microsoft Project](./16) | WBS, Гант, ресурсы, baseline и контроль графика |
 | 5a | [Компетенции в управлении проектами](./15) | Полная карта soft/hard, стандарты, ИСУП, PMO |
-| 5c | [BOK, PMBOK и прочие «бабоки»](./17) | PMBOK, BABOK, SWEBOK, IPMA, ITIL — что за что отвечает |
+| 5c | [BOK, PMBOK и прочие "бабоки"](./17) | PMBOK, BABOK, SWEBOK, IPMA, ITIL — что за что отвечает |
 | 6 | [Управление разработчиками](./13) | Модели команд, координация, мотивация, кризисы |
 | 7 | [Культура уважения к инженерному труду](./2) | Психологическая безопасность и техдолг "сверху" |
 | 8 | [Цифровая трансформация](./3) | От автоматизации к смене бизнес-модели |
@@ -81,7 +81,7 @@ IT-проект — это не только код и серверы. Это л
 | :--- | :--- |
 | Code review: на что смотреть | [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro) · [код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) |
 | Git-flow, ветки, merge | [Основы Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [Git в команде](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/114) |
-| «Почему задача на три дня заняла неделю» — техдолг | [Технический долг](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/115) · [легаси — о разделе](/encyclopedia/7-project/7-11-legasi-kod/intro) |
+| "Почему задача на три дня заняла неделю" — техдолг | [Технический долг](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/115) · [легаси — о разделе](/encyclopedia/7-project/7-11-legasi-kod/intro) |
 | Оценка сложности модуля | [Алгоритмы и сложность](/encyclopedia/4-code-dev/4-01-algoritmy/intro) |
 
 <DocCardList />
@@ -92,7 +92,7 @@ IT-проект — это не только код и серверы. Это л
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Управление проектами и Agile** — [Общее о бизнесе — о разделе](/encyclopedia/7-project/7-01-obschee-o-biznese/intro), [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro).
 

@@ -47,7 +47,7 @@ import DocCardList from '@theme/DocCardList';
 | Частая путаница | Как различать | Где разобрать |
 |-----------------|---------------|---------------|
 | Интернет и веб | Интернет — инфраструктура; WWW — сервис страниц в браузере | [Интернет и сетевые сервисы](/encyclopedia/1-basics/1-035-bazovaya-informatika/6) |
-| ОЗУ и накопитель | ОЗУ — работа «здесь и сейчас»; диск — хранение после выключения | [Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) |
+| ОЗУ и накопитель | ОЗУ — работа "здесь и сейчас"; диск — хранение после выключения | [Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) |
 | Алгоритм и программа | Алгоритм — план; программа — запись плана для машины | [Алгоритмы, языки и программирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) |
 | Файл и процесс | Файл на диске; процесс — исполнение программы в памяти | [Программа](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok) |
 
@@ -117,7 +117,7 @@ flowchart LR
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
 

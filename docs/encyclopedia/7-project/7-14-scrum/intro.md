@@ -23,7 +23,7 @@ related:
 
 import DocCardList from '@theme/DocCardList';
 
-# О разделе «Scrum»
+# О разделе "Scrum"
 
 **Scrum** — самый распространённый фреймворк Agile в разработке ПО: короткие итерации (спринты), прозрачный бэклог, регулярная демонстрация инкремента и ретроспектива. В энциклопедии обзор методологий и SDLC — в разделе **[Методология и жизненный цикл ПО](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro)**; здесь Scrum разобран **подробно**, с опорой на [Scrum Guide](https://scrumguides.org/) и распространённую индустриальную практику.
 
@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 
   **Аналитикам и разработчикам** — бэклог, оценки, Definition of Done.
 
-  **Руководителям и Scrum Master** — размер команды, потери, внедрение и отличие «настоящего» Scrum от отчётности в Jira.
+  **Руководителям и Scrum Master** — размер команды, потери, внедрение и отличие "настоящего" Scrum от отчётности в Jira.
 </div>
   </div>
 
@@ -49,11 +49,11 @@ import DocCardList from '@theme/DocCardList';
 | 2 | [Роли, артефакты и события](./2) | Product Owner, Scrum Master, Developers; бэклог, спринт, церемонии |
 | 3 | [Команда и Scrum Master](./3) | Размер 3–9, кросс-функциональность, фасилитация |
 | 4 | [Спринт, ритм и прозрачность](./4) | Фиксированная длина, velocity, доска, burndown |
-| 5 | [Потери, фокус и «готово»](./5) | Lean, WIP, multitasking, Definition of Done |
+| 5 | [Потери, фокус и "готово"](./5) | Lean, WIP, multitasking, Definition of Done |
 | 6 | [Бэклог, приоритеты и оценка](./6) | Приоритизация, story points, Planning Poker |
 | 7 | [Внедрение и типичные ошибки](./7) | 11 шагов запуска, контекст РФ |
 | 8 | [Итоги](./998) | Краткое сравнение с Kanban и waterfall |
-| 9 | [Чек-лист самопроверки](./999) | Есть ли у вас процесс или «Scrum-театр» |
+| 9 | [Чек-лист самопроверки](./999) | Есть ли у вас процесс или "Scrum-театр" |
 
 Перед шагом **1** полезно один раз просмотреть **[Agile — гибкая методология](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/3)** и **[жизненный цикл ПО](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1)** — чтобы отделить **ценности Agile**, **модель фаз SDLC** и **фреймворк Scrum**.
 
@@ -77,7 +77,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Управление проектами и Agile** — [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Базы знаний и задачники — о разделе](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro), [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Общее о бизнесе — о разделе](/encyclopedia/7-project/7-01-obschee-o-biznese/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro).
 

@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 | Термин | В двух словах |
 | :--- | :--- |
 | **MFT** | Таблица файлов NTFS; по ней строит индекс Everything |
-| **Hosted / bare-metal** | ВМ как программа в Windows; гипервизор на «голом» сервере — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) |
+| **Hosted / bare-metal** | ВМ как программа в Windows; гипервизор на "голом" сервере — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) |
 | **Контейнер** | Изолированный процесс с образом (Docker), общее ядро хоста — не полная ВМ |
 | **LSP** | Сервер подсказок в редакторе (IntelliSense в VS Code) |
 | **NAT / Bridge** | Режимы сети виртуальной машины |

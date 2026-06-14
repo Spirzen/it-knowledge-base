@@ -25,7 +25,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел для всех, кто работает с учётными записями, сетями и данными: от личной гигиены (пароли, Wi‑Fi) до корпоративных механизмов (RBAC, фаервол, SSH).
+Раздел для всех, кто работает с учётными записями, сетями и данными — от личной гигиены (пароли, Wi‑Fi) до корпоративных механизмов (RBAC, фаервол, SSH).
 
 <div class="callout callout--tip">
   <div class="callout-title">Рекомендуемый порядок</div>
@@ -58,7 +58,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro).
 

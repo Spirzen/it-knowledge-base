@@ -10,7 +10,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе "Конструирование ПО"
 
-**Конструирование** (software construction) — это стадия жизненного цикла, на которой проектные решения превращаются в **работающий код**: модули, библиотеки, тесты, сборки. Не "просто писать", а **детализировать, реализовывать, интегрировать и проверять** так, чтобы систему можно было сопровождать.
+**Конструирование** (software construction) — это стадия жизненного цикла, на которой проектные решения превращаются в **работающий код** — модули, библиотеки, тесты, сборки. Не "просто писать", а **детализировать, реализовывать, интегрировать и проверять** так, чтобы систему можно было сопровождать.
 
 В учебниках и стандартах (SWEBOK, ISO/IEC 12207) конструирование стоит **между проектированием и тестированием**, но на практике эти границы размыты: в Agile вы проектируете и тестируете вместе с кодом. Этот раздел даёт **цельную картину для базового уровня** и связывает её с остальной энциклопедией.
 
@@ -74,7 +74,7 @@ import DocCardList from '@theme/DocCardList';
 - **[Проектирование и архитектура](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro)** — *что* строить; конструирование — *как* это закодировать и собрать.
 - **[Тестирование](/encyclopedia/7-project/7-05-testirovanie/intro)** — верификация на стадии конструирования (unit, integration) и дальше по SDLC.
 - **[Экономика производства ПО](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)** — COCOMO II, качество ISO 25010, SCM, сопровождение, приёмка.
-- **[2. Система и сеть](/encyclopedia/2-system-network/system-network)** — сети, HTTP, интеграции и ИБ, когда при реализации всплывают вопросы «как ходит запрос» и «как сервисы связаны»: [2.03](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [2.09](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
+- **[2. Система и сеть](/encyclopedia/2-system-network/system-network)** — сети, HTTP, интеграции и ИБ, когда при реализации всплывают вопросы "как ходит запрос" и "как сервисы связаны": [2.03](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [2.09](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
 - **[3. Данные и разметка](/encyclopedia/3-data-markup/data-markup)** — транзакции, индексы, миграции схем: [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [SQL](/encyclopedia/3-data-markup/3-07-sql/intro).
 - **[4. Код и разработка](/encyclopedia/4-code-dev/code-dev)** — синтаксис, выполнение, отладка, Git; см. таблицу ниже.
 

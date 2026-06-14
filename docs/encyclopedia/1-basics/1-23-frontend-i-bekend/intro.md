@@ -41,7 +41,7 @@ import DocCardList from '@theme/DocCardList';
 3. [Метрики производительности](./3.md) — QPS, latency, перцентили, SLO; в паре с [наблюдаемостью](./9.md) (логи, алерты, аудит).
 4. [Матрица компетенций бэкенда](./4.md) и [чек-лист самопроверки](./99.md).
 5. По задаче: [Linux](./5.md), [сеть для диагностики](./6.md), [почта](./7.md), [типы веб-приложений](./8.md).
-6. Данные и СУБД из кода: [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) (язык запросов — [SQL](/encyclopedia/3-data-markup/3-07-sql/intro)).
+6. Данные и СУБД из кода — [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890) (язык запросов — [SQL](/encyclopedia/3-data-markup/3-07-sql/intro)).
 
 Итог раздела: [Итоги](./98.md).
 
@@ -53,7 +53,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Старт в IT** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro).
 

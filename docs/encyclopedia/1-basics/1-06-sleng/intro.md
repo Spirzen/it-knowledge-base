@@ -28,7 +28,7 @@ import DocCardList from '@theme/DocCardList';
 
 ИИ в разработке: [вайб-кодинг](/glossary/В#вайб-кодинг), [нейрослоп](/glossary/Н#нейрослоп) — раздел [6.07](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro).
 
-Форумный контекст и маршрут по рунету — [9.10 / 120](/encyclopedia/9-spinoff/9-10-internet-kultura/120). Роли «нерд», «олдфаг», «юзверь» — [9.10 / 126](/encyclopedia/9-spinoff/9-10-internet-kultura/126). Термины — [глоссарий](/glossary/intro) ([костыль](/glossary/К#костыль), [форк](/glossary/Ф#форк-git)).
+Форумный контекст и маршрут по рунету — [9.10 / 120](/encyclopedia/9-spinoff/9-10-internet-kultura/120). Роли "нерд", "олдфаг", "юзверь" — [9.10 / 126](/encyclopedia/9-spinoff/9-10-internet-kultura/126). Термины — [глоссарий](/glossary/intro) ([костыль](/glossary/К#костыль), [форк](/glossary/Ф#форк-git)).
 
 <DocCardList />
 
@@ -38,7 +38,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Интернет-культура** — [Экономические и организационные сообщества](/encyclopedia/9-spinoff/9-10-internet-kultura/114), [IT-сленг и профессиональная лексика](/encyclopedia/1-basics/1-06-sleng/1), [Open Source, GitHub, DevOps и веб-стек](/encyclopedia/9-spinoff/9-10-internet-kultura/133), [Рунетские IT-формулы](/encyclopedia/9-spinoff/9-10-internet-kultura/131), [Роли и идентичность в сети](/encyclopedia/9-spinoff/9-10-internet-kultura/126), [Форумы и имиджборды](/encyclopedia/9-spinoff/9-10-internet-kultura/11).
 

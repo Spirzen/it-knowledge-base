@@ -33,9 +33,9 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <div class="callout callout--info">
   <div class="callout-title">Среда выполнения Java</div>
@@ -43,13 +43,13 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-body">
   Общая теория — [байт-код и виртуальные машины](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314), [сравнение GC (Java, Python, Go)](/encyclopedia/4-code-dev/4-15-sborka-musora/4), [программа и runtime](/encyclopedia/1-basics/1-19-programma/1).
 
-  Потоки — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1); в Java: [JVM и потоки](/encyclopedia/5-languages/5-03-java/23), [асинхронность](/encyclopedia/5-languages/5-03-java/298), [virtual threads (Java 21+)](/encyclopedia/5-languages/5-03-java/308).
+  Потоки — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1); в Java — [JVM и потоки](/encyclopedia/5-languages/5-03-java/23), [асинхронность](/encyclopedia/5-languages/5-03-java/298), [virtual threads (Java 21+)](/encyclopedia/5-languages/5-03-java/308).
 </div>
 </div>
 
 Раздел охватывает язык **Java**, **JVM**, сборки (Maven/Gradle), фреймворки и работу с данными. Материалы рассчитаны на разработчиков и архитекторов: от первой программы до Spring, тестирования и облачного развёртывания. JDBC batch, Hibernate `batch_size`, keyset-выборка — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433), [Hibernate batch](/encyclopedia/5-languages/5-03-java/22).
 
-**Java** — не "только банки": это JVM-экосистема (серверы, Android-наследие, инструменты). В новых backend-проектах чаще **Spring Boot**, а не JSF — legacy-главы в разделе помечены как справочные.
+**Java** — не "только банки" — это JVM-экосистема (серверы, Android-наследие, инструменты). В новых backend-проектах чаще **Spring Boot**, а не JSF — legacy-главы в разделе помечены как справочные.
 
 Общие принципы (код, ООП, алгоритмы) — в [Код и разработка](/encyclopedia/4-code-dev/code-dev) и [ООП](/encyclopedia/4-code-dev/4-08-oop/1); здесь — **особенности Java и платформы**.
 
@@ -63,7 +63,7 @@ import DocCardList from '@theme/DocCardList';
 1a. [IntelliJ IDEA](./103.md) — установка, интерфейс, возможности IDE (рекомендуется перед первой программой).
 2. [Первая программа](./13.md) — Maven; в статье два пути: **IntelliJ IDEA** (рекомендуется) и **NetBeans**.
 2a. [public static void main — точка входа](./40.md) — когда JVM вызывает `main`.
-2b. [Ввод и вывод в Java](./102.md) — консоль: `println`, переменные, арифметика, `Scanner` (лестница из трёх программ).
+2b. [Ввод и вывод в Java](./102.md) — консоль — `println`, переменные, арифметика, `Scanner` (лестница из трёх программ).
 3. [Структура и сборки](./12.md) — Maven/Gradle, запуск вне IDE; [отладка в IDEA](./132.md).
 4. [Синтаксис](./14.md), [типы](./15.md) (примитивы и [обёртки](./15.md#priminitiv-i-klass-obertka)), [операторы и циклы](./17.md), [конструкции](./16.md) — пакеты, методы; [случайные числа](./16.md#случайные-числа).
 5. [ООП](./18.md) — классы, наследование, интерфейсы, `instanceof`.
@@ -71,7 +71,7 @@ import DocCardList from '@theme/DocCardList';
 7. [Ввод-вывод и файлы](./297.md), [асинхронность](./298.md), [Virtual Threads (Java 21+)](./308.md), [JVM и потоки](./23.md).
 8. [Аннотации и рефлексия](./299.md), [современный синтаксис](./300.md) — record, sealed, pattern matching.
 9. [Вопросы на собеседование — Core Java](./301.md) — карта тем → главы раздела.
-10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [практикум "Simple CRM"](./254.md) → [аннотации Spring Boot](./304.md) → [Security Basic](./272.md) → [JWT](./274.md) → [безопасность в prod](./275.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода: [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
+10. **Веб и данные:** [Spring Framework](./27.md) (обзор) → [Spring Boot](./271.md) → [практикум "Simple CRM"](./254.md) → [аннотации Spring Boot](./304.md) → [Security Basic](./272.md) → [JWT](./274.md) → [безопасность в prod](./275.md) → [ошибки REST](./303.md) → [JPA](./293.md) → [Testcontainers](./273.md) → [работа с БД](./22.md). СУБД из кода — [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 11. **JVM в проде:** [JVM и потоки](./23.md) → [флаги запуска в справочнике, §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [jcmd, heap dump, JFR](./302.md).
 
 <div class="callout callout--info">
@@ -91,13 +91,13 @@ import DocCardList from '@theme/DocCardList';
 | **Корпоративный REST** | [Первая программа на Spring Framework](./271.md) → [практикум "Simple CRM"](./254.md) → [Spring Security — практический старт](./272.md) → [JWT и OAuth2 Resource Server в Spring Boot](./274.md) → [Spring Boot — безопасность в продакшене](./275.md) → [Ошибки REST — @Valid и @ControllerAdvice](./303.md) → [Hibernate и JPA — практический старт](./293.md) → [Testcontainers — интеграционные тесты с реальной БД](./273.md) |
 | **Понять JVM в проде** | [JVM, память и потоки](./23.md) → [справочник §24](./3.md#24-jvm--параметры-запуска-и-настройка) → [JVM в проде — jcmd, дамп памяти и JFR](./302.md) → [Рекомендации по разработке на Java](./101.md) |
 | **Сборка и CI** | [Структура и сборки Java-проектов](./12.md) → [Gradle — практический старт](./292.md) (Gradle) |
-| **Legacy (поддержка)** | [JSF — теория](./25.md) → [первая программа](./251.md) → [практикум «Список задач»](./252.md), [JavaBeans](./26.md) — не для зелёного поля |
-| **Десктоп (JavaFX / Swing)** | [JavaFX и GUI](./311.md) → [Первая программа на JavaFX](./3111.md) (JavaFX) или [Lab — Swing](/lab/Примеры/1143) (без Maven) → [практикум «XML-валидатор»](./253.md) (Swing + Maven) → [Справочник по JavaFX и Swing — элементы UI](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Особенности разработки десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
+| **Legacy (поддержка)** | [JSF — теория](./25.md) → [первая программа](./251.md) → [практикум "Список задач"](./252.md), [JavaBeans](./26.md) — не для зелёного поля |
+| **Десктоп (JavaFX / Swing)** | [JavaFX и GUI](./311.md) → [Первая программа на JavaFX](./3111.md) (JavaFX) или [Lab — Swing](/lab/Примеры/1143) (без Maven) → [практикум "XML-валидатор"](./253.md) (Swing + Maven) → [Справочник по JavaFX и Swing — элементы UI](./3112.md); теория — [Архитектура десктопа](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Особенности разработки десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md) |
 | **Консольные задачи** | [Ввод и вывод в Java](./102.md) (ввод-вывод) → [Lab — консольные задачи](/lab/Примеры/1131) → [Простые приложения на Java](./131.md) (мини-приложения) |
 | **Лабораторная с GUI** | [Lab — Swing, построчный разбор](/lab/Примеры/1143) после [Основные конструкции языка Java](./16.md) и [Операторы и циклы в Java](./17.md) |
 | **Учебная игра** | [Java Survivors](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8) (в подготовке) — маршрут раздела [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |
 
-Параллельно с Java на JVM: [Kotlin](/encyclopedia/5-languages/5-09-kotlin/intro) (Android/Ktor), [Groovy](/encyclopedia/5-languages/5-12-groovy/intro) (Gradle DSL, Spock).
+Параллельно с Java на JVM — [Kotlin](/encyclopedia/5-languages/5-09-kotlin/intro) (Android/Ktor), [Groovy](/encyclopedia/5-languages/5-12-groovy/intro) (Gradle DSL, Spock).
 
 ---
 
@@ -204,7 +204,7 @@ curl localhost:8080/...
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Документация и инструменты Java (Microsoft)](/encyclopedia/5-languages/5-03-java/294), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [Автоматическое управление памятью](/encyclopedia/4-code-dev/4-15-sborka-musora/1), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 

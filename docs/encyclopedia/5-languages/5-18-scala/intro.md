@@ -17,7 +17,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 **Scala** — мультипарадигмальный язык (функциональный, объектно-ориентированный, императивный), созданный в EPFL под руководством [Мартина Одерски](https://ru.wikipedia.org/wiki/Одерски,_Мартин) для **компонентного** ПО: краткий, **типобезопасный** синтаксис и единые концепции абстракции для модулей любого масштаба. Целевые платформы — **JVM**, **JavaScript** ([Scala.js](https://www.scala-js.org/)) и нативный код ([Scala Native](https://www.scala-native.org/)); расширения исходников — `.scala` и `.sc`.
 
@@ -25,7 +25,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Полезные внешние источники:** [документация Scala](https://docs.scala-lang.org/), [обзор на Википедии](https://ru.wikipedia.org/wiki/Scala_(%D1%8F%D0%B7%D1%8B%D0%BA_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)), курс [Functional Programming Principles in Scala](https://www.coursera.org/learn/scala-functional-programming) (Мартин Одерски).
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ---
 
@@ -69,7 +69,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Nim — о разделе](/encyclopedia/5-languages/5-21-nim/intro).
 

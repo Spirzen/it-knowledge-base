@@ -23,11 +23,11 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел описывает **платформу .NET**: CLR, сборки, развёртывание, экосистему приложений и языки (C#, F#, VB).
+Раздел описывает **платформу .NET** — CLR, сборки, развёртывание, экосистему приложений и языки (C#, F#, VB).
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (команда CLI, пара строк C#/F#) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (команда CLI, пара строк C#/F#) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 В [обзоре платформы](./1.md) цепочка CIL → CLR → JIT по возможности показана **псевдокодом** до деталей CLI.
 
@@ -59,7 +59,7 @@ import DocCardList from '@theme/DocCardList';
 - [Вопросы на собеседование .NET и C#](../5-05-csharp/474) — шпаргалка с отсылками к материалам платформы и языка.
 - [Справочник .NET API](./183) — полный каталог BCL (.NET 10, .NET Framework 4.8 / 4.8.1) с навигацией по Microsoft Learn.
 - [Справочник по F#](./181) · [Справочник F# (Learn)](./184) · [ADO.NET](./171) · [EF Core (C#)](../5-05-csharp/441) · [ASP.NET](./172)
-- Практика СУБД из .NET: [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)
+- Практика СУБД из .NET — [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)
 
 ---
 
@@ -113,7 +113,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Java — о разделе](/encyclopedia/5-languages/5-03-java/intro), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro).
 

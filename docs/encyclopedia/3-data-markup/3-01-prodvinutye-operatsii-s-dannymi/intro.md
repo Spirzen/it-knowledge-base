@@ -17,7 +17,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел продолжает тему ["Данные и информация"](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro): здесь **что с данными делают** на уровне операций, памяти, представления и передачи между программами.
+Раздел продолжает тему ["Данные и информация"](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro) — здесь **что с данными делают** на уровне операций, памяти, представления и передачи между программами.
 
 Сложные операции в статьях сначала показываются **простым русским псевдокодом** (`АЛГОРИТМ`, "записать в память", "упаковать в JSON"), затем — на C/Java/Python. Базовые структуры хранения — в [Структуры данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
 
@@ -47,7 +47,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Аналитика данных** — [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [Анализ данных — о разделе](/encyclopedia/3-data-markup/3-11-analiz-dannyh/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [R — о разделе](/encyclopedia/5-languages/5-23-r/intro).
 

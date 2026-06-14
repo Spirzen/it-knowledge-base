@@ -17,7 +17,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Практика **администрирования и эксплуатации** реляционных СУБД: установка, ресурсы, резервное копирование, безопасность, мониторинг. Теория запросов и транзакций — в разделе [SQL](/encyclopedia/3-data-markup/3-07-sql/intro); основы моделей — в [Основах баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro). Мониторинг СУБД — [Практикум PostgreSQL, шаг 11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/11), [Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro), [Prometheus](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro).
+Практика **администрирования и эксплуатации** реляционных СУБД — установка, ресурсы, резервное копирование, безопасность, мониторинг. Теория запросов и транзакций — в разделе [SQL](/encyclopedia/3-data-markup/3-07-sql/intro); основы моделей — в [Основах баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro). Мониторинг СУБД — [Практикум PostgreSQL, шаг 11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/11), [Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro), [Prometheus](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro).
 
 ---
 
@@ -55,7 +55,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Базы данных** — [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [PostgreSQL — о разделе](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
 

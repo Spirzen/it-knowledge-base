@@ -67,7 +67,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Офисная грамотность** — [Документация](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1001), [Электронная почта](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3), [Офисные пакеты](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [Цифровые формы и анкеты](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/6), [Устройство и надёжность паролей](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/114), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1).
 

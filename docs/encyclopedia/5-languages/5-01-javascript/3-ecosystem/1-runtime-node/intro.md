@@ -5,7 +5,7 @@ description: "Подборка материалов по Node.js — runtime, np
 
 # Node.js
 
-Node.js — это JavaScript на сервере и в CLI: файлы, сеть, процессы, API для браузера. Раздел разбит на короткие статьи — от первого `node app.js` до Express, fullstack и выкладки в production.
+Node.js — это JavaScript на сервере и в CLI — файлы, сеть, процессы, API для браузера. Раздел разбит на короткие статьи — от первого `node app.js` до Express, fullstack и выкладки в production.
 
 ## Материалы
 

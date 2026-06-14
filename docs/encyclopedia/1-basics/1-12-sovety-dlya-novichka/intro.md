@@ -59,7 +59,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">PostgreSQL на своём компьютере</div>
 
   <div class="callout-body">
-  Когда дойдёте до данных и SQL — **обязательно поставьте PostgreSQL** и потренируйтесь: psql, простые запросы, проверка таблиц.
+  Когда дойдёте до данных и SQL — **обязательно поставьте PostgreSQL** и потренируйтесь — psql, простые запросы, проверка таблиц.
 
   Это нужно любой IT-роли, не только разработчикам.
 
@@ -75,7 +75,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Старт в IT** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Карьера в IT и мифы — о разделе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Фронтенд и бэкенд — о разделе](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro), [Дорожная карта изучения — о разделе](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro), [Обзор структуры Вселенной IT — о разделе](/encyclopedia/1-basics/1-02-vvedenie/intro).
 

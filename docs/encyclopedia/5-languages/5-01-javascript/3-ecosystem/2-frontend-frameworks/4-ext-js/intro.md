@@ -5,7 +5,7 @@ description: "Раздел Ext JS — Sencha Cmd, виджеты, Store/Model и
 
 # Ext JS
 
-**Ext JS** — стек для крупных админок и legacy-систем: готовые гриды и формы, слой данных Store/Model, сборка через Sencha Cmd.
+**Ext JS** — стек для крупных админок и legacy-систем — готовые гриды и формы, слой данных Store/Model, сборка через Sencha Cmd.
 
 ## Материалы
 

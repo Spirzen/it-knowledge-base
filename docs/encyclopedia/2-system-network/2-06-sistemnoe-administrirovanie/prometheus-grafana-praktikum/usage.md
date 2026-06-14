@@ -25,7 +25,7 @@ related:
 <span class="complexity-badge">Инженеру</span>
 <span class="complexity-badge">Разработчику</span>
 
-> Стек уже поднят по [шагу 2](./2.md)? Эта статья — **первый день с UI**: куда кликать, как добавить сервис, как дойти до дашборда.
+> Стек уже поднят по [шагу 2](./2.md)? Эта статья — **первый день с UI** — куда кликать, как добавить сервис, как дойти до дашборда.
 
 ---
 
@@ -82,7 +82,7 @@ up
 
 **Connections → Data sources**
 
-Должен быть **Prometheus (Default)**. **Save & test** → «Successfully queried the Prometheus API».
+Должен быть **Prometheus (Default)**. **Save & test** → "Successfully queried the Prometheus API".
 
 **Explore** (иконка компаса слева)
 
@@ -96,7 +96,7 @@ up
 
 ## Русский интерфейс Grafana
 
-Если при [установке](./2.md) заданы `grafana/grafana:12.0.0` и `GF_USERS_DEFAULT_LANGUAGE: ru-RU`, меню Grafana («Дашборды», «Обзор», «Подключения») отображается на русском.
+Если при [установке](./2.md) заданы `grafana/grafana:12.0.0` и `GF_USERS_DEFAULT_LANGUAGE — ru-RU`, меню Grafana ("Дашборды", "Обзор", "Подключения") отображается на русском.
 
 | Что переводится | Что остаётся на английском |
 |-----------------|----------------------------|

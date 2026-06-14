@@ -33,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 Раздел про **микросервисную архитектуру** и **интеграцию в продакшене** — как сервисы общаются, масштабируются и выдерживают нагрузку. Базовые термины, HTTP, API и очереди разобраны в [Основах интеграционного взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro); здесь — MSA, балансировка, практические кейсы и справочники. Теория **batch, bulk, chunk**, Kafka batching и REST batch — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433). Наблюдаемость на стенде — [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro), [PromQL — галерея](/lab/Примеры/11114), корпоративный мониторинг — [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro). Сводная **экосистема технологий** (БД, брокеры, языки, контейнеры, облако, CI/CD, мониторинг, безопасность) — [таблица в паттернах MSA](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#ekosistema-msa). **Карта продакшн-стека** (gateway, registry, сервисы, авторизация, БД, кэш, брокер, метрики, логи) — в [Паттернах микросервисной архитектуры](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118#prodakshn-stek). Карта **system design** (шесть столпов, собеседование) — [System Design — карта тем](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/143). Краткая шпаргалка по 12 инфраструктурным концепциям — [12 концепций распределённой архитектуры](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/141). Типовые **порты и службы** (DNS, HTTPS, БД, OAuth, SSH) — [Сетевые сервисы по ролям](/encyclopedia/2-system-network/2-03-set-i-internet/618#setevye-servisy-po-rolyam).
 
@@ -44,13 +44,13 @@ import DocCardList from '@theme/DocCardList';
 3. [Синхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115), [асинхронная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114), [реактивная](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116) коммуникация и [Polling, SSE, Webhook](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/129).
 4. [REST, GraphQL и gRPC — стили API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/130) (основы), [восемь принципов RESTful API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-api-design-principles) → [REST](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151), [проектирование API](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/122), [авторизация в интеграциях](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1121) и [Basic, Bearer, mTLS на практике](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/134), [синхронная коммуникация и сценарий User/Order](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115#user-order-scenario), [RabbitMQ](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118), [Kafka](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119), [реализация интеграции](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/121).
 5. Компромиссы распределённых систем — [PACELC](./124.md) (связь с [CAP в основах NoSQL](/encyclopedia/3-data-markup/3-06-nosql/2)).
-6. **Практикум** — [REST и WebSocket на Python и C#](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/intro): проектирование контракта, реализация двух сервисов, Postman.
+6. **Практикум** — [REST и WebSocket на Python и C#](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/intro) — проектирование контракта, реализация двух сервисов, Postman.
 
 ---
 
 ## Связанные разделы
 
-Базовые темы для новичков — в [Основы интеграционного взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) (блок «Система и сеть»). Рекомендуем пройти их до или параллельно с этим разделом.
+Базовые темы для новичков — в [Основы интеграционного взаимодействия](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro) (блок "Система и сеть"). Рекомендуем пройти их до или параллельно с этим разделом.
 
 | Углубление (этот раздел) | Основы (раздел 2) |
 | --- | --- |
@@ -71,7 +71,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Методы защиты пользовательских и корпоративных данных](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/117), [Контейнеризация и оркестрация — о разделе](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro), [Low-code и No-code платформы](/encyclopedia/8-infra-security/8-02-low-code-no-code/1), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro).
 

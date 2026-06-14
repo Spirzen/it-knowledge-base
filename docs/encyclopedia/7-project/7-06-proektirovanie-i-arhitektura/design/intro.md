@@ -31,7 +31,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed`. Короткие фрагменты и диаграммы **mermaid** остаются в markdown; интерактив — в [play.spirzen.ru](https://play.spirzen.ru/).
 
-Продолжение [Проектирование и архитектура](../intro.md): **как спроектировать систему** — NFR, API, данные, распределёнка, надёжность. Паттерны GoF — в [соседней папке](../design-patterns/intro.md).
+Продолжение [Проектирование и архитектура](../intro.md) — **как спроектировать систему** — NFR, API, данные, распределёнка, надёжность. Паттерны GoF — в [соседней папке](../design-patterns/intro.md).
 
 **Чистая архитектура:** [теория (2132)](2132.md) → [практика ASP.NET Core (2143)](2143.md) → [MediatR](/encyclopedia/5-languages/5-05-csharp/4518).
 
@@ -67,7 +67,7 @@ import DocCardList from '@theme/DocCardList';
 | Технический проект | Детальная архитектура, интерфейсы, данные |
 | Рабочий проект | Документация для реализации и сопровождения |
 
-На западных проектах роли те же по смыслу, но названия другие: **Software Architecture Document**, **Software Design Document**, OpenAPI-спецификации. См. [виды документации](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1002).
+На западных проектах роли те же по смыслу, но названия другие — **Software Architecture Document**, **Software Design Document**, OpenAPI-спецификации. См. [виды документации](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1002).
 
 ---
 
@@ -101,9 +101,9 @@ import DocCardList from '@theme/DocCardList';
 
    Теория до [Проектирование баз данных](116.md): [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) · [опорные темы](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/12) · [нормализация](/encyclopedia/3-data-markup/3-07-sql/104#normalnye-formy).
 
-   Практика выбранной СУБД из кода: [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
+   Практика выбранной СУБД из кода — [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [Microsoft SQL Server](/encyclopedia/3-data-markup/3-07-sql/890).
 4. [OpenAPI](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3) · [REST в инфраструктуре](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151) · [ввод по API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117) · [8 принципов RESTful API](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117#rest-api-design-principles)
-5. [System Design — карта тем](../143.md) · [12 концепций распределённой архитектуры](../141.md) · [масштабирование](2112.md) / [Горизонтальное масштабирование](2113.md) · [надёжность](2134.md) · [инженерия устойчивости](2136.md) · [SLA — договор](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/2) · [SLA — «девятки»](2135.md) · [распределённые системы](21.md)
+5. [System Design — карта тем](../143.md) · [12 концепций распределённой архитектуры](../141.md) · [масштабирование](2112.md) / [Горизонтальное масштабирование](2113.md) · [надёжность](2134.md) · [инженерия устойчивости](2136.md) · [SLA — договор](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/2) · [SLA — "девятки"](2135.md) · [распределённые системы](21.md)
 
 ---
 
@@ -122,7 +122,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Системы с LLM и RAG
 
-Корпоративный чат, copilot и поиск по базе знаний — те же инженерные задачи, что и у распределённого сервиса: контракт API, NFR, данные, отказоустойчивость. Удобный **вертикальный** каркас — [Семь слоёв LLM-стека](/encyclopedia/6-ai/6-05-razrabotka-ii/119) (источники → предобработка → модель → оркестрация → инференс → интеграция → приложение). Горизонтальные приёмы из этого подраздела к нему стыкуются так:
+Корпоративный чат, copilot и поиск по базе знаний — те же инженерные задачи, что и у распределённого сервиса — контракт API, NFR, данные, отказоустойчивость. Удобный **вертикальный** каркас — [Семь слоёв LLM-стека](/encyclopedia/6-ai/6-05-razrabotka-ii/119) (источники → предобработка → модель → оркестрация → инференс → интеграция → приложение). Горизонтальные приёмы из этого подраздела к нему стыкуются так:
 
 | Задача проектирования | Глава здесь | Слой LLM-стека |
 |----------------------|-------------|----------------|
@@ -147,7 +147,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Техлид** — [Паттерны проектирования — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), [Архитектура выполнения — о разделе](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/intro), [Роль и практика архитектора программного обеспечения](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/117), [Микросервисы и интеграция — о разделе](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/intro), [Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro).
 

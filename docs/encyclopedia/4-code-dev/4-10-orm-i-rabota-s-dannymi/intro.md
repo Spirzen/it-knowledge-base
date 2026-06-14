@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Листинги на языках программирования (от ~8 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются через `ExternalCodeEmbed`. Русский псевдокод, короткие фрагменты (1–7 строк), диаграммы **mermaid** и интерактивные демо остаются в статьях — последние подгружаются из [play.spirzen.ru](https://play.spirzen.ru/). Образец интеграции — [Каталог примеров кода](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/617).
 
-ORM и драйверы опираются на конкретную СУБД. Перед ORM полезно понять подключение и CRUD на «голом» API:
+ORM и драйверы опираются на конкретную СУБД. Перед ORM полезно понять подключение и CRUD на "голом" API:
 
 - [SQLite](/encyclopedia/3-data-markup/3-07-sql/887)
 - [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888)
@@ -38,7 +38,7 @@ ORM и драйверы опираются на конкретную СУБД. �
 
 Теория SQL и схемы — [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro); проектирование таблиц — [Проектирование баз данных](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116).
 
-Массовая загрузка и пакетные вставки (bulk, chunk, checkpoint, идемпотентность) — не сильная сторона «поштучного» `SaveChanges`; теория и границы транзакций — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433). REST batch и ETL-окна — [интеграционные потоки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/112#batch-etl-load).
+Массовая загрузка и пакетные вставки (bulk, chunk, checkpoint, идемпотентность) — не сильная сторона "поштучного" `SaveChanges`; теория и границы транзакций — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433). REST batch и ETL-окна — [интеграционные потоки](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/112#batch-etl-load).
 
 <DocCardList />
 
@@ -48,7 +48,7 @@ ORM и драйверы опираются на конкретную СУБД. �
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **База программиста** — [Зависимости — о разделе](/encyclopedia/4-code-dev/4-09-zavisimosti/intro), [Десктопные приложения — о разделе](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro), [Объектно-ориентированное программирование — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Парадигмы и уровни абстракции — о разделе](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 

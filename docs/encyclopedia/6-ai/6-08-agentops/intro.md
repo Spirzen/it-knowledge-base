@@ -31,7 +31,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел закрывает **операционную** сторону [семи слоёв LLM-стека](/encyclopedia/6-ai/6-05-razrabotka-ii/119) — архитектуру дополняет **теория эксплуатации**: reproducibility, drift, eval, observability, governance.
+Раздел закрывает **операционную** сторону [семи слоёв LLM-стека](/encyclopedia/6-ai/6-05-razrabotka-ii/119) — архитектуру дополняет **теория эксплуатации** — reproducibility, drift, eval, observability, governance.
 
 | Статья | Слои | Дисциплина |
 |--------|------|------------|
@@ -69,7 +69,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **ИИ для разработчика** — [Вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1), [MLOps и LLM-стек — слои 1–3](/encyclopedia/6-ai/6-08-agentops/2), [Вайб-кодинг и нейроконтент — о разделе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 

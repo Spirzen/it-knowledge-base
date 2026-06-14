@@ -25,7 +25,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Вводный блок: отличие ML от маркетингового "ИИ", ИИ в быту, история, типы моделей, контекст для LLM. Начните с [главной статьи раздела](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1). Практический старт в коде: [NumPy — массивы и матрицы](/lab/Примеры/1129), затем [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2); сквозной проект на PyTorch — [практикум — распознавание цифр MNIST](/encyclopedia/5-languages/5-02-python/335); вызов OpenAI API из Python — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149); готовые формулировки запросов с разбором — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Агенты с терминалом — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
+Вводный блок — отличие ML от маркетингового "ИИ", ИИ в быту, история, типы моделей, контекст для LLM. Начните с [главной статьи раздела](/encyclopedia/6-ai/6-01-vvedenie-v-ii/1). Практический старт в коде: [NumPy — массивы и матрицы](/lab/Примеры/1129), затем [перцептрон на NumPy](/encyclopedia/6-ai/6-03-neyroseti/2); сквозной проект на PyTorch — [практикум — распознавание цифр MNIST](/encyclopedia/5-languages/5-02-python/335); вызов OpenAI API из Python — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149); готовые формулировки запросов с разбором — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Агенты с терминалом — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101).
 
 <DocCardList />
 
@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Нейросети и ИИ** — [Машинное обучение — о разделе](/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/intro), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro).
 

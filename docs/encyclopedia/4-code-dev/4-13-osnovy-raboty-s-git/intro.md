@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел ведёт от идеи системы контроля версий до ежедневной работы в команде: ветки, pull request и merge request, `.gitignore` и восстановление после типичных ошибок. **Тот же материал глубже** (протоколы, packfile, GitFlow, расширенные команды) — в [разделе 8.03 «Забота о коде и данных»](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro); карта ссылок — в подзаголовке **«Углубление — раздел 8.03»** ниже на этой странице.
+Раздел ведёт от идеи системы контроля версий до ежедневной работы в команде — ветки, pull request и merge request, `.gitignore` и восстановление после типичных ошибок. **Тот же материал глубже** (протоколы, packfile, GitFlow, расширенные команды) — в [разделе 8.03 "Забота о коде и данных"](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro); карта ссылок — в подзаголовке **"Углубление — раздел 8.03"** ниже на этой странице.
 
 ---
 
@@ -47,7 +47,7 @@ import DocCardList from '@theme/DocCardList';
 
 По желанию: [итоги](./2), [чек-лист самопроверки](./3).
 
-**Параллельно с курсом** (удобно для курсовых и поиска в Google): [лабораторная «Git — шпаргалка сценариев»](/lab/Примеры/1123) — готовые блоки `add` / `commit` / `push`, заливка на GitHub, merge, откат; у каждой команды построчный разбор. После первого push — [CI для тестов и деплоя](/lab/Примеры/1134) или [кейс GitHub Pages](/lab/Кейсы/3).
+**Параллельно с курсом** (удобно для курсовых и поиска в Google) — [лабораторная "Git — шпаргалка сценариев"](/lab/Примеры/1123) — готовые блоки `add` / `commit` / `push`, заливка на GitHub, merge, откат; у каждой команды построчный разбор. После первого push — [CI для тестов и деплоя](/lab/Примеры/1134) или [кейс GitHub Pages](/lab/Кейсы/3).
 
 | Задача в учёбе или на работе | Энциклопедия | Лаборатория (примеры с разбором) |
 |------------------------------|--------------|-----------------------------------|
@@ -60,7 +60,7 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## Углубление — раздел «Забота о коде и данных» (8.03)
+## Углубление — раздел "Забота о коде и данных" (8.03)
 
 Статьи ниже в **4.13** заточены под ежедневную работу разработчика. Если нужны протоколы `clone`/`push`, внутреннее устройство объектов, жёстко регламентированное ветвление релизов или расширенный список команд — смотрите блок **8.03** ([о разделе](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro)):
 
@@ -69,7 +69,7 @@ import DocCardList from '@theme/DocCardList';
 | Рабочая копия, индекс, объекты, `git status` | [Архитектура Git](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/111) |
 | Хэши, packfile, внутренности | [Внутреннее устройство Git](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/112) |
 | Протоколы, remotes, упаковка | [Особенности репозиториев](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/113) |
-| Команды «на каждый день» | [12 команд — карманный набор](./115#12-komand) · [расширенный справочник](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/114) |
+| Команды "на каждый день" | [12 команд — карманный набор](./115#12-komand) · [расширенный справочник](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/114) |
 | Модель `main` / `develop` / `release` / `hotfix` | [Модель ветвления GitFlow](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1111) |
 
 Ветки, конфликты и запросы на слияние с примерами — в [Ветвление и слияние](./113).
@@ -92,7 +92,7 @@ import DocCardList from '@theme/DocCardList';
 
 Тренажёр веток: [Learn Git Branching](https://learngitbranching.js.org/?locale=ru_RU).
 
-Практика выкладки статического сайта после `git push` — лабораторный кейс [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3) (HTTPS/SSH, `.gitignore`, деплой через Actions). Готовые блоки команд по ситуациям — [Git — шпаргалка сценариев](/lab/Примеры/1123) в разделе «Примеры».
+Практика выкладки статического сайта после `git push` — лабораторный кейс ["Размещение своего сайта с GitHub Pages"](/lab/Кейсы/3) (HTTPS/SSH, `.gitignore`, деплой через Actions). Готовые блоки команд по ситуациям — [Git — шпаргалка сценариев](/lab/Примеры/1123) в разделе "Примеры".
 
 <DocCardList />
 
@@ -102,7 +102,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Первый коммит** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 

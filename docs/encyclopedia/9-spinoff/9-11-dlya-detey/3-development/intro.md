@@ -20,7 +20,7 @@ import DocCardList from '@theme/DocCardList';
 
 # Развитие — о разделе
 
-Блок про **вычислительное мышление** и сопутствующие навыки: разбиение задачи на шаги, отладка, терминология IT, режим работы за экраном.
+Блок про **вычислительное мышление** и сопутствующие навыки — разбиение задачи на шаги, отладка, терминология IT, режим работы за экраном.
 
 **Рекомендуемый порядок:** [Алгоритм](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/1) → задачи и отладка → [цифровая гигиена](/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/16). Темы про здоровье и время за экраном удобно обсудить с родителем или педагогом.
 
@@ -46,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Для детей** — [Для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/forkids), [Компьютер — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro), [Видеоигры — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/intro), [Программы — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/intro), [Код — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Введение в программирование](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1).
 

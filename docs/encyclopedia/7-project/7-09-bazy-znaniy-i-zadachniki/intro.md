@@ -42,7 +42,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Управление проектами и Agile** — [Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro), [Культура кода — о разделе](/encyclopedia/7-project/7-10-kultura-koda/intro), [Методология и жизненный цикл ПО — о разделе](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro), [Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro), [Команда и управление — о разделе](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro), [Коммуникация и общение — о разделе](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro).
 

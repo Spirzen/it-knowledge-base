@@ -33,9 +33,9 @@ import DocCardList from '@theme/DocCardList';
 
 Совсем с нуля, без опыта за ПК — сначала [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), затем [программа](/encyclopedia/1-basics/1-19-programma/intro) и этот том.
 
-Раздел **«Код и разработка»** — мост между [программой как инструкциями для ПК](/encyclopedia/1-basics/1-19-programma/intro) и профессиональной инженерией: языками, фреймворками, архитектурой. Здесь разбирают, **как записывают** логику (синтаксис, операторы, стиль), **как она доходит до процессора** (компиляция, байт-код, JIT, память, потоки) и **как удерживают проект живым** (модули, зависимости, отладка, Git).
+Раздел **"Код и разработка"** — мост между [программой как инструкциями для ПК](/encyclopedia/1-basics/1-19-programma/intro) и профессиональной инженерией — языками, фреймворками, архитектурой. Здесь разбирают, **как записывают** логику (синтаксис, операторы, стиль), **как она доходит до процессора** (компиляция, байт-код, JIT, память, потоки) и **как удерживают проект живым** (модули, зависимости, отладка, Git).
 
-ИИ в этом контуре — ускоритель черновика и объяснений; антипаттерны «код по наитию» и однотипный мусорный вывод — в [вайб-кодинге](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) и [нейрослопе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2). Рабочий цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117); готовые промпты с разбором — [Prompt engineering — библиотека](/lab/Примеры/1150).
+ИИ в этом контуре — ускоритель черновика и объяснений; антипаттерны "код по наитию" и однотипный мусорный вывод — в [вайб-кодинге](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) и [нейрослопе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2). Рабочий цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117); готовые промпты с разбором — [Prompt engineering — библиотека](/lab/Примеры/1150).
 
 Если в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) вы уже прошли алгоритмы и блок-схемы, этот том переводит те же идеи на язык разработчика — с большей глубиной и практикой.
 
@@ -72,10 +72,10 @@ flowchart LR
 ```
 
 1. **Алгоритм** — что делать (часто словами, блок-схемой, псевдокодом).
-2. **Исходный текст** — синтаксическая единица языка: определения, операторы, комментарии ([синтаксис](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/3) проверяется компилятором или IDE).
+2. **Исходный текст** — синтаксическая единица языка — определения, операторы, комментарии ([синтаксис](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/3) проверяется компилятором или IDE).
 3. **Трансляция** — компиляция заранее, интерпретация по ходу или гибрид (байт-код + JIT, транспиляция). Подробно — [трансляторы, компиляторы и интерпретаторы](/encyclopedia/1-basics/1-19-programma/2).
 4. **Исполняемый образ** на диске загружает [программный загрузчик](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro) под управлением ОС.
-5. **Процесс** — запущенный экземпляр программы в ОЗУ; процессор выполняет инструкции до завершения или ошибки. Внутри процесса работают **потоки** — наименьшие единицы выполнения при [многозадачности](/encyclopedia/4-code-dev/4-05-asinhronnost/1). Цепочка «файл на диске → процесс → потоки» — [программа, процесс и поток](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok).
+5. **Процесс** — запущенный экземпляр программы в ОЗУ; процессор выполняет инструкции до завершения или ошибки. Внутри процесса работают **потоки** — наименьшие единицы выполнения при [многозадачности](/encyclopedia/4-code-dev/4-05-asinhronnost/1). Цепочка "файл на диске → процесс → потоки" — [программа, процесс и поток](/encyclopedia/1-basics/1-19-programma/1#programma-protsess-potok).
 
 ### Уровни представления кода
 
@@ -121,7 +121,7 @@ flowchart LR
 | 6a | [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111) | Точки останова, символы, GDB |
 | 6b | [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) | Elements, Console, Network, Sources |
 
-Дальше — специализации: [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) ([Flutter — виджеты в Lab](/lab/Примеры/1154), [Dart — Flutter](/encyclopedia/5-languages/5-22-dart/311)) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) ([WinForms/WPF в Lab](/lab/Примеры/1138), [Tkinter в Lab](/lab/Примеры/1124), [Java Swing в Lab](/lab/Примеры/1143)). Для веб-UI на React — [галерея компонентов](/lab/Примеры/1146) после [272](/encyclopedia/5-languages/5-01-javascript/272).
+Дальше — специализации — [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) ([Flutter — виджеты в Lab](/lab/Примеры/1154), [Dart — Flutter](/encyclopedia/5-languages/5-22-dart/311)) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) ([WinForms/WPF в Lab](/lab/Примеры/1138), [Tkinter в Lab](/lab/Примеры/1124), [Java Swing в Lab](/lab/Примеры/1143)). Для веб-UI на React — [галерея компонентов](/lab/Примеры/1146) после [272](/encyclopedia/5-languages/5-01-javascript/272).
 
 <div class="callout callout--info">
   <div class="callout-title">Связь с другими томами</div>

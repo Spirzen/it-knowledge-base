@@ -37,11 +37,11 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна команда в терминале, пара строк конфига) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — HTML энциклопедии остаётся компактным, код сохраняет подсветку, вкладки и серии "шаг 1…N". Короткие фрагменты (одна команда в терминале, пара строк конфига) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-Раздел про практику разработки: от процесса и отладки до оформления репозитория. Входные данные из форм, API и баз — [Проверка и валидация](./118). Встроенные **средства разработчика в браузере** (Elements, Console, Network, Sources) — [DevTools в браузере — справочник](./1116). Сборка, Run в IDE, dev-сервер и перезапуск — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Для README и структуры проекта см. [README для разработчика](./117). Быстрые проверки HTTP API в терминале — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133). Чтобы вынести пет-проект в интернет бесплатно — [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3); идеи проектов — [Пет-проекты](./114).
+Раздел про практику разработки: от процесса и отладки до оформления репозитория. **Справочник типовых задач** (Jira, Git, БД, API, UI, Docker, BPMN и др.) — [Типовые задачи разработчика — справочник-шпаргалка](./101). Входные данные из форм, API и баз — [Проверка и валидация](./118). Встроенные **средства разработчика в браузере** (Elements, Console, Network, Sources) — [DevTools в браузере — справочник](./1116). Сборка, Run в IDE, dev-сервер и перезапуск — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Для README и структуры проекта см. [README для разработчика](./117). Быстрые проверки HTTP API в терминале — [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133). Чтобы вынести пет-проект в интернет бесплатно — ["Размещение своего сайта с GitHub Pages"](/lab/Кейсы/3); идеи проектов — [Пет-проекты](./114).
 
-Код из ИИ без review — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл «промпт → проверка → merge» — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) и [библиотека промптов](/lab/Примеры/1150) (Python, traceback, рефакторинг, review).
+Код из ИИ без review — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1); осознанный цикл "промпт → проверка → merge" — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117) и [библиотека промптов](/lab/Примеры/1150) (Python, traceback, рефакторинг, review).
 
 <DocCardList />
 
@@ -51,7 +51,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Первый коммит** — [Как работает компьютер — о разделе](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro).
 

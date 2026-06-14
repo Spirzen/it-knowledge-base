@@ -17,9 +17,9 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-Раздел про **Lisp** и его современное воплощение в учебном курсе — прежде всего **Common Lisp**: S-выражения, REPL, макросы, CLOS и практическая первая программа.
+Раздел про **Lisp** и его современное воплощение в учебном курсе — прежде всего **Common Lisp** — S-выражения, REPL, макросы, CLOS и практическая первая программа.
 
 <div class="callout callout--info">
   <div class="callout-title">Диалект в курсе</div>
@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 </div>
   </div>
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ---
 
@@ -97,8 +97,8 @@ import DocCardList from '@theme/DocCardList';
 
 Чтобы не воспринимать статьи как отдельные фрагменты, держите в голове три сквозные идеи:
 
-- **Код как данные**: из этого вырастают `quote`, `eval`, макросы и DSL ([архитектура](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/3)).
-- **Функции как значения**: из этого вырастают `mapcar`, `lambda`, замыкания и композиция ([функции](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/6), [FP-стиль](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/8)).
+- **Код как данные** — из этого вырастают `quote`, `eval`, макросы и DSL ([архитектура](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/3)).
+- **Функции как значения** — из этого вырастают `mapcar`, `lambda`, замыкания и композиция ([функции](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/6), [FP-стиль](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/8)).
 - **Интерактивная разработка**: из этого вырастают REPL-подход, быстрые итерации и отладка ([первая программа](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/7), [справочник](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/811)).
 
 ---
@@ -111,7 +111,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro).
 

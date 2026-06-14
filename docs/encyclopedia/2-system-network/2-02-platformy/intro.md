@@ -23,7 +23,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Платформа** в IT — среда, на которой другие строят продукт: операционная система, облако (IaaS/PaaS), маркетплейс, соцсеть, корпоративный портал. Раздел помогает не путать "платформу" с "фреймворком" и понимать, **кто владеет данными, правилами модерации и экономикой** экосистемы.
+**Платформа** в IT — среда, на которой другие строят продукт — операционная система, облако (IaaS/PaaS), маркетплейс, соцсеть, корпоративный портал. Раздел помогает не путать "платформу" с "фреймворком" и понимать, **кто владеет данными, правилами модерации и экономикой** экосистемы.
 
 > **Смежно:** [ОС](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro) · [Облака](/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/intro) · [Low-code](/encyclopedia/8-infra-security/8-02-low-code-no-code/intro) · [Аналитика](/encyclopedia/7-project/7-04-analitika/intro)
 
@@ -60,7 +60,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Системное программирование** — [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Архитектура персонального компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Принцип работы компьютера](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 

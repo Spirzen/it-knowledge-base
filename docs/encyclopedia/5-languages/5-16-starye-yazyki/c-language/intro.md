@@ -23,7 +23,7 @@ import DocCardList from '@theme/DocCardList';
 
 # Си — о разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 ### Зачем этот раздел
 
@@ -53,9 +53,9 @@ import DocCardList from '@theme/DocCardList';
 8. [Память процесса](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/214) — сегменты, стек, куча, data и BSS.
 9. [Справочник](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/8) — таблицы и быстрый поиск по API.
 
-Углубление: [структуры и объединения](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/411), [идиомы и ошибки](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/412), [хеш-таблица](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/413), [встраиваемая БД](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/414) и [SQLite — практика и API](/encyclopedia/3-data-markup/3-07-sql/887), [многопоточность](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/415), [файловый ввод-вывод](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/416), [компиляторы и IDE](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/311), [примеры](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/711), [системное программирование](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/712). Исторический контекст — [История языка С](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/1).
+Углубление — [структуры и объединения](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/411), [идиомы и ошибки](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/412), [хеш-таблица](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/413), [встраиваемая БД](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/414) и [SQLite — практика и API](/encyclopedia/3-data-markup/3-07-sql/887), [многопоточность](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/415), [файловый ввод-вывод](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/416), [компиляторы и IDE](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/311), [примеры](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/711), [системное программирование](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/712). Исторический контекст — [История языка С](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/1).
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 ---
 
@@ -73,7 +73,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Системное программирование** — [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 

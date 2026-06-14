@@ -29,9 +29,9 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <div class="callout callout--info">
   <div class="callout-title">Корутины и JVM-потоки</div>
@@ -78,7 +78,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Целевые платформы:** JVM, Dalvik/Android, JavaScript, iOS, watchOS, tvOS, macOS, Linux, Windows, WebAssembly (экспериментально).
 
-На дизайн повлияли **Java**, **Scala**, **C#**, **Groovy**, **Python**, **Ruby**, **JavaScript** и идеи из семейства **ML** (через Scala): постфиксные типы (`имя: Тип`), ключевые слова `fun` и `val`, опциональные точки с запятой, вывод типов, интерполяция строк в духе Perl/shell.
+На дизайн повлияли **Java**, **Scala**, **C#**, **Groovy**, **Python**, **Ruby**, **JavaScript** и идеи из семейства **ML** (через Scala) — постфиксные типы (`имя — Тип`), ключевые слова `fun` и `val`, опциональные точки с запятой, вывод типов, интерполяция строк в духе Perl/shell.
 
 ---
 
@@ -129,7 +129,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Зачем этот раздел
 
-Собрать **цельный путь по Kotlin**: от запуска в IDEA до реального стека (Android, Ktor или CMP), без смешивания с Java/Python на этапе "Hello World".
+Собрать **цельный путь по Kotlin** — от запуска в IDEA до реального стека (Android, Ktor или CMP), без смешивания с Java/Python на этапе "Hello World".
 
 ---
 
@@ -173,7 +173,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Бэкенд и серверная разработка** — [Smalltalk — о разделе](/encyclopedia/5-languages/5-08-smalltalk/intro), [Go — о разделе](/encyclopedia/5-languages/5-10-go/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [Ruby — о разделе](/encyclopedia/5-languages/5-11-ruby/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Groovy — о разделе](/encyclopedia/5-languages/5-12-groovy/intro).
 

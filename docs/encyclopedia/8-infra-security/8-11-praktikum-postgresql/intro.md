@@ -33,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел **8.11** — продвинутый практикум по **PostgreSQL** для бэкенд-разработчиков, DBA и DevOps-инженеров. Здесь собран маршрут от **внутреннего устройства** (MVCC, WAL, VACUUM) до **промышленной эксплуатации** в Docker, облаке и Kubernetes с репликацией, бэкапами и автоматизацией через Ansible и Terraform.
 
-Базовый SQL, CRUD из приложения и установка «на голое железо» уже есть в [разделе 3.07](/encyclopedia/3-data-markup/3-07-sql/intro) и [3.08](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro). Этот практикум **углубляет** темы, которые решают задачи production — bloat, wraparound, планы запросов, пулинг соединений, Patroni и Wal-G.
+Базовый SQL, CRUD из приложения и установка "на голое железо" уже есть в [разделе 3.07](/encyclopedia/3-data-markup/3-07-sql/intro) и [3.08](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro). Этот практикум **углубляет** темы, которые решают задачи production — bloat, wraparound, планы запросов, пулинг соединений, Patroni и Wal-G.
 
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>
@@ -128,7 +128,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Базы данных** — [ORM и работа с данными — о разделе](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [Управление реляционными СУБД — о разделе](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro), [NoSQL — о разделе](/encyclopedia/3-data-markup/3-06-nosql/intro), [SQL — о разделе](/encyclopedia/3-data-markup/3-07-sql/intro), [Основы баз данных — о разделе](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro), [Структуры данных — о разделе](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
 

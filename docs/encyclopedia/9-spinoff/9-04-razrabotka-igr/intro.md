@@ -40,7 +40,7 @@ import DocCardList from '@theme/DocCardList';
 
 <ExternalPlayEmbed example="spinoff/game-dev-hub" title="Разработка игр — навигатор" minHeight={560} />
 
-Здесь собран путь от "как вообще делают игры" до работы в **Unity**, **Unreal Engine** и **Roblox**. В **мае 2026** Epic анонсировала **Unreal Engine 6** (демонстрация на обновлённой *Rocket League*); практические главы по Unreal пока ориентированы на **UE 5** — см. [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112) и [Unreal Engine](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4). Материалы рассчитаны на новичка: много пояснений, примеров кода и ссылок между главами — можно читать выборочно, но логичнее двигаться сверху вниз по блокам ниже.
+Здесь собран путь от "как вообще делают игры" до работы в **Unity**, **Unreal Engine** и **Roblox**. В **мае 2026** Epic анонсировала **Unreal Engine 6** (демонстрация на обновлённой *Rocket League*); практические главы по Unreal пока ориентированы на **UE 5** — см. [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112) и [Unreal Engine](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4). Материалы рассчитаны на новичка — много пояснений, примеров кода и ссылок между главами — можно читать выборочно, но логичнее двигаться сверху вниз по блокам ниже.
 
 **Тяжёлые листинги** (Luau, C#, Python-практикумы) — на [code.spirzen.ru](https://code.spirzen.ru/); **интерактив** (навигатор ниже, пайплайны, платформы) — на [play.spirzen.ru](https://play.spirzen.ru/).
 
@@ -72,7 +72,7 @@ import DocCardList from '@theme/DocCardList';
 2. [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112) и [Виды движков](/encyclopedia/9-spinoff/9-04-razrabotka-igr/113) — выбор стека.
 3. [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) — три уровня; цепочка [Механики и пространство состояний](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1172) → [Геймплей и core loop](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1174) → [Системы, петли обратной связи и баланс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1173) → [Опыт игрока и мотивационные модели](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1171) → [Макроструктура, нарратив и метагейм](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1175) → [Прототип и playtest дизайна](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1176).
 4. Один практический трек: **Unity** *или* **Unreal** *или* **Roblox** (см. карточки ниже).
-5. По желанию: [Языки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/114), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), платформы; для разбора чужого кода — [каталог open-source клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125).
+5. По желанию — [Языки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/114), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), платформы; для разбора чужого кода — [каталог open-source клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125).
 6. [Итоги](/encyclopedia/9-spinoff/9-04-razrabotka-igr/998) и [чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
 
 Для карьеры и ролей в студии — отдельно [Дорожная карта геймдева](/encyclopedia/9-spinoff/9-04-razrabotka-igr/11) и [Команда разработки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/111).
@@ -110,7 +110,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Как учиться эффективно</div>
 
   <div class="callout-body">
-  Держите открытыми Unity и IDE: повторяйте примеры из [главы 3](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) и [галереи скриптов в Lab](/lab/Примеры/1136), не копируя слепо — меняйте параметры (скорость, радиус агента, win-условие).
+  Держите открытыми Unity и IDE — повторяйте примеры из [главы 3](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) и [галереи скриптов в Lab](/lab/Примеры/1136), не копируя слепо — меняйте параметры (скорость, радиус агента, win-условие).
 
   После каждого блока — 3–5 вопросов из [чек-листа Unity/C#](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
 </div>
@@ -128,7 +128,7 @@ import DocCardList from '@theme/DocCardList';
 |-----|-------------------|---------------|--------|
 | 1 | [Roblox Studio — первая игра и настройки Place — Studio и Place](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203) | — | Среда, публикация, первый Script |
 | 2 | [Разработка на Roblox — клиент и сервер](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2) (обзор) | [Первая программа](/encyclopedia/5-languages/5-15-lua-i-luau/13), [синтаксис](/encyclopedia/5-languages/5-15-lua-i-luau/14) | Контейнеры и базовый Lua |
-| 3 | [Практикум — обби на Roblox — практикум «обби»](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) | [таблицы](/encyclopedia/5-languages/5-15-lua-i-luau/15), [функции](/encyclopedia/5-languages/5-15-lua-i-luau/17) | DataStore, RemoteEvent, этапы |
+| 3 | [Практикум — обби на Roblox — практикум "обби"](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) | [таблицы](/encyclopedia/5-languages/5-15-lua-i-luau/15), [функции](/encyclopedia/5-languages/5-15-lua-i-luau/17) | DataStore, RemoteEvent, этапы |
 | 4 | [Практикум — королевская битва на Roblox — королевская битва](/encyclopedia/9-spinoff/9-04-razrabotka-igr/205) (по желанию) | [корутины](/encyclopedia/5-languages/5-15-lua-i-luau/21) | Раунды, PvP, валидация на сервере |
 | 5 | [Roblox — механика, монетизация и продвижение — механика и продвижение](/encyclopedia/9-spinoff/9-04-razrabotka-igr/206), [Внутриигровая экономика Roblox — экономика](/encyclopedia/9-spinoff/9-04-razrabotka-igr/202) | [Luau - типизированный диалект Lua от Roblox — Luau](/encyclopedia/5-languages/5-15-lua-i-luau/23) | Монетизация, жанры, типы |
 | 6 | [Справочник по Roblox — справочник](/encyclopedia/9-spinoff/9-04-razrabotka-igr/201), [Разработка игр — чек-лист — чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999) | [999 Luau](/encyclopedia/5-languages/5-15-lua-i-luau/999) | Закрепление |
@@ -147,7 +147,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Шесть жанров — мини-игры
 
-Перед Unity или Unreal полезно **пощупать жанр**: аркада, платформер, головоломка, пошаговая стратегия, RPG, roguelike. Ниже — оригинальные учебные игрушки с вкладками (подробнее в [классификации жанров](/encyclopedia/1-basics/1-18-kompyuternye-igry/2)).
+Перед Unity или Unreal полезно **пощупать жанр** — аркада, платформер, головоломка, пошаговая стратегия, RPG, roguelike. Ниже — оригинальные учебные игрушки с вкладками (подробнее в [классификации жанров](/encyclopedia/1-basics/1-18-kompyuternye-igry/2)).
 
 <ExternalPlayEmbed example="basics/game-genre-toys-hub" title="Жанры игр — обзор" minHeight={480} playProps={{ theme: 'javascript' }} />
 
@@ -177,9 +177,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## Minecraft Java — команды и datapack
 
-Если ученик уже играет в **Java Edition** и хочет «программировать внутри мира» без установки Forge:
+Если ученик уже играет в **Java Edition** и хочет "программировать внутри мира" без установки Forge:
 
-1. [Разработка в Minecraft](/encyclopedia/9-spinoff/9-04-razrabotka-igr/21) — уровни: команды, моды, Python, ComputerCraft.
+1. [Разработка в Minecraft](/encyclopedia/9-spinoff/9-04-razrabotka-igr/21) — уровни — команды, моды, Python, ComputerCraft.
 2. [Minecraft — команды и datapack](/lab/Примеры/1142) — `/tp`, `scoreboard`, `execute`, командные блоки, `pack.mcmeta`, чекпоинт паркура; **разбор каждой строки**, как в [галерее Turtle](/lab/Примеры/111).
 
 Дальше по желанию — [Roblox / Luau](/lab/Примеры/1141) или [Unity C#](/lab/Примеры/1136).
@@ -196,7 +196,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Соло / инди-разработчик** — [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [Разработка — о разделе](/tools/development/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [IDE](/tools/development/1), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Основы DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/1).
 

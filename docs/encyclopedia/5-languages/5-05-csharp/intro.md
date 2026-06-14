@@ -35,11 +35,11 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
-Раздел посвящён языку **C#** и экосистеме **.NET**. Материалы рассчитаны на разработчиков и архитекторов: от первого проекта до углублённых тем (LINQ, async, ООП, веб, производительность). Массовая загрузка и bulk (отличие от «LINQ в цикле + SaveChanges») — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433); LINQ к БД — [LINQ - язык интегрированных запросов](./29.md).
+Раздел посвящён языку **C#** и экосистеме **.NET**. Материалы рассчитаны на разработчиков и архитекторов — от первого проекта до углублённых тем (LINQ, async, ООП, веб, производительность). Массовая загрузка и bulk (отличие от "LINQ в цикле + SaveChanges") — [Пакетная работа с данными](/encyclopedia/3-data-markup/3-11-analiz-dannyh/433); LINQ к БД — [LINQ - язык интегрированных запросов](./29.md).
 
-> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база: **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
+> **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
 <div class="callout callout--info">
   <div class="callout-title">Потоки, Task и async в .NET</div>
@@ -63,7 +63,7 @@ import DocCardList from '@theme/DocCardList';
 2. [Синтаксис и пунктуация](/encyclopedia/5-languages/5-05-csharp/11), [переменные](/encyclopedia/5-languages/5-05-csharp/17), [типы и приведения](/encyclopedia/5-languages/5-05-csharp/20).
 3. [Пространства имён](/encyclopedia/5-languages/5-05-csharp/12), [nullable](/encyclopedia/5-languages/5-05-csharp/22). Исключения: [теория](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [Обработка исключений в C#](/encyclopedia/5-languages/5-05-csharp/15), [Иерархия классов исключений в C#](/encyclopedia/5-languages/5-05-csharp/151).
 4. [ООП в C#](/encyclopedia/5-languages/5-05-csharp/25), [коллекции и кортежи](/encyclopedia/5-languages/5-05-csharp/28), [LINQ](/encyclopedia/5-languages/5-05-csharp/29) ([справочник операторов](/encyclopedia/5-languages/5-05-csharp/291)).
-5. Данные: [EF Core — первая программа](./441) или [ADO.NET / Dapper](./442), обзор — [БД и ORM](./44). СУБД: [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889).
+5. Данные: [EF Core — первая программа](./441) или [ADO.NET / Dapper](./442), обзор — [БД и ORM](./44). СУБД — [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889).
 
 Общие принципы (код, ООП, выполнение) — в [Код и разработка](/encyclopedia/4-code-dev/code-dev). Перед [ООП в C#](./25): [парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) и [ООП — о разделе](/encyclopedia/4-code-dev/4-08-oop/intro). Здесь — **особенности C# и .NET**.
 
@@ -83,7 +83,7 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 | Делегаты, `event` | [Рекомендации по разработке на C#](/encyclopedia/5-languages/5-05-csharp/102) | UI ↔ GameManager |
 | Generics | [Обобщения (generics)](/encyclopedia/5-languages/5-05-csharp/26) | Обобщённые коллекции и API |
 
-Полный маршрут «Unity + C#» шаг за шагом — в [intro раздела «Разработка игр»](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro#unity-csharp-track). Самопроверка — [чек-лист 9.04/999](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
+Полный маршрут "Unity + C#" шаг за шагом — в [intro раздела "Разработка игр"](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro#unity-csharp-track). Самопроверка — [чек-лист 9.04/999](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
 
 <div class="callout callout--info">
   <div class="callout-title">Unity и .NET</div>
@@ -119,7 +119,7 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 
 ## Десктоп на .NET
 
-Общая теория окон, элементов и UI-потока — [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Особенности разработки](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md), [раздел «Десктопные приложения»](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro).
+Общая теория окон, элементов и UI-потока — [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Особенности разработки](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112.md), [раздел "Десктопные приложения"](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro).
 
 | Стек | Теория / практика | Элементы UI | Примеры в Lab |
 |------|-------------------|-------------|---------------|
@@ -203,7 +203,7 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Веб-разработка** — [ASP.NET - веб-платформа Microsoft](/encyclopedia/5-languages/5-04-platforma-dotnet/172), [Веб-разработка и API на C#](/encyclopedia/5-languages/5-05-csharp/45), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [ASP.NET - фреймворк для веб-приложений](/encyclopedia/5-languages/5-05-csharp/451), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Документация и практика ASP.NET (Microsoft Learn)](/encyclopedia/5-languages/5-05-csharp/455).
 

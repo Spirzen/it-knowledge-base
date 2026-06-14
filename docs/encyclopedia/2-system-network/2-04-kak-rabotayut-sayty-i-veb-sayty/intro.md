@@ -55,7 +55,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## Связь с соседними разделами
 
-- Пошаговая публикация статики на **GitHub Pages** (домен, DNS, Actions) — лабораторный кейс [«Размещение своего сайта с GitHub Pages»](/lab/Кейсы/3)
+- Пошаговая публикация статики на **GitHub Pages** (домен, DNS, Actions) — лабораторный кейс ["Размещение своего сайта с GitHub Pages"](/lab/Кейсы/3)
 - Сети, DNS, TCP — [2.03. Сеть и интернет](/encyclopedia/2-system-network/2-03-set-i-internet/intro)
 - HTML и разметка — [3.09. HTML](/encyclopedia/3-data-markup/3-09-html/intro)
 - Целые HTML-файлы с разбором тегов (лаборатория) — [HTML-страницы целиком](/lab/Примеры/1153)
@@ -86,7 +86,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Сетевая грамотность** — [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [Организация домашней сети](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [NAT и проброс портов](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7), [Сайты и веб-сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro).
 

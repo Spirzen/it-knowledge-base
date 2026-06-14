@@ -36,13 +36,13 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями «шаг 1…N». Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
+**Длинные листинги (от ~15 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (одна строка, пара выражений) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 Раздел для тех, кто проверяет, что программа **работает так, как задумано** — и умеет это **доказать**. Здесь и теория (виды тестов, жизненный цикл, тест-дизайн), и практика (Postman, pytest, Selenium, нагрузка).
 
-Если вы только входите в профессию — не пытайтесь прочитать всё подряд. Ниже маршрут: сначала "что и зачем", потом "как проверять руками и в документах", затем инструменты и автоматизация.
+Если вы только входите в профессию — не пытайтесь прочитать всё подряд. Ниже маршрут — сначала "что и зачем", потом "как проверять руками и в документах", затем инструменты и автоматизация.
 
-Код и тест-кейсы от LLM без review — типичный [нейрослоп](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2); вставка «как сгенерировало» — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1). QA остаётся обязательным фильтром перед продом.
+Код и тест-кейсы от LLM без review — типичный [нейрослоп](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2); вставка "как сгенерировало" — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1). QA остаётся обязательным фильтром перед продом.
 
 <div class="callout callout--tip">
   <div class="callout-title">PostgreSQL на стенде тестировщика</div>
@@ -114,7 +114,7 @@ import DocCardList from '@theme/DocCardList';
 2. [Автоматизация](./115.md) → [Playwright](./1182.md) или [Selenium](./1181.md) → [Unit](./120.md) → [White-box: потоки управления и данных](./130.md) → [Покрытие кода](./126.md) → [Integration](./121.md)
 3. [Карта уровней и подходов](./131.md) — чтобы не путать уровни тестов (Unit/Integration/UI/E2E) и практики (TDD/BDD)
 4. Практика по языку: **Python** [Подготовка среды и создание первого теста](./1011.md) → [Проверка надежности под нагрузкой](./1014.md) · **Java** [Практикум Java — JUnit и REST Assured](./1015.md) · **JavaScript** [Практикум JavaScript — Playwright и Jest](./1016.md)
-5. Бонус-модули: [Git, HTTP, алгоритмы, soft skills, английский](./1274.md)
+5. Бонус-модули — [Git, HTTP, алгоритмы, soft skills, английский](./1274.md)
 
 **Нагрузка и безопасность**
 
@@ -157,7 +157,7 @@ import DocCardList from '@theme/DocCardList';
 
   <div class="callout-body">
   - SQL для проверки данных в БД: [SQL для тестировщика](./129.md) и [раздел SQL](/encyclopedia/3-data-markup/3-07-sql/intro); практика по СУБД — [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890)
-  - HTTP и Postman глубже: [Основы интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Fetch / axios — типовые запросы](/lab/Примеры/1145)
+  - HTTP и Postman глубже — [Основы интеграции](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [утилита curl](/encyclopedia/2-system-network/2-05-terminal/1133), [curl / fetch — примеры](/lab/Примеры/1133), [Fetch / axios — типовые запросы](/lab/Примеры/1145)
   - CI/CD и запуск тестов в пайплайне: [DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro), [GitHub Actions — рецепты](/lab/Примеры/1134); установка зависимостей в job — [Манифесты зависимостей](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/103)
   - Карьера и роли: [Карьера в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/1)
   - Стадия конструирования и V-модель (unit на этапе кода): [Конструирование ПО](/encyclopedia/7-project/7-12-konstruirovanie-po/intro)
@@ -197,7 +197,7 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-## Навигация по разделу «Тестирование»
+## Навигация по разделу "Тестирование"
 
 - **Маршрут:** [О разделе](./intro.md) · [Резюме раздела](./998.md) · [Карта уровней и практик (Unit / Integration / UI / E2E, TDD, BDD)](./131.md)
 - **Теория и процесс:** [Основы](./1.md) · [Классификация](./111.md) · [Жизненный цикл](./112.md) · [Порядок этапов](./116.md) · [Артефакты качества](./113.md)
@@ -217,7 +217,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Тестирование ПО** — [Основы бизнеса для IT-специалиста](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112), [Программные платформы](/encyclopedia/2-system-network/2-02-platformy/3), [Корпоративное ПО](/encyclopedia/2-system-network/2-02-platformy/3001), [Платформенные решения в бизнесе](/encyclopedia/2-system-network/2-02-platformy/3002), [Аутентификация и авторизация](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro).
 

@@ -45,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В подборках
 
-Статья входит в [тематические подборки](/about/collections) и блок «С чего начать?» на [главной](/). Соседние шаги того же маршрута:
+Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
 **Нейросети и ИИ** — [Разработка ИИ — о разделе](/encyclopedia/6-ai/6-05-razrabotka-ii/intro), [Трансформеры и NLP — о разделе](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro), [Модели и инструменты — о разделе](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/intro), [Векторные базы данных](/encyclopedia/3-data-markup/3-06-nosql/812), [Нейросети — о разделе](/encyclopedia/6-ai/6-03-neyroseti/intro), [Графовые базы данных](/encyclopedia/3-data-markup/3-06-nosql/7).
 
