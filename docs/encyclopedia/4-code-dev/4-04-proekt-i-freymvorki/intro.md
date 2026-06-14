@@ -27,6 +27,7 @@ import DocCardList from '@theme/DocCardList';
 | 2 | [Библиотека](./101.md) | Сторонние пакеты и менеджеры |
 | 3 | [Манифесты зависимостей](./103.md) | `requirements.txt`, `package.json`, Dockerfile — одна команда установки; в CI — [рецепты GitHub Actions](/lab/Примеры/1134); готовые Dockerfile — [галерея Lab](/lab/Примеры/11113) |
 | 4 | [Сборка и публикация](./102.md) | От исходника до артефакта |
+| 5 | [Основы работы с контейнерами](./104.md) | Docker, первый `docker run`, Compose — вводная до [8.06](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro) |
 
 <DocCardList />
 

@@ -1,0 +1,7 @@
+{
+  "label": "Инциденты и эксплуатация",
+  "link": {
+    "type": "generated-index",
+    "title": "Инциденты, on-call и postmortem"
+  }
+}

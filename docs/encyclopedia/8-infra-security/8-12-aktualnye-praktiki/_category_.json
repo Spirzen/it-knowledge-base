@@ -1,0 +1,8 @@
+{
+  "label": "Актуальные практики",
+  "link": {
+    "type": "generated-index",
+    "title": "Актуальные практики инфраструктуры и безопасности",
+    "description": "Supply chain, DevSecOps, GitOps, Passkeys, OAuth, API Gateway, Platform Engineering, облака РФ, Secure SDLC и учебный фишинг."
+  }
+}

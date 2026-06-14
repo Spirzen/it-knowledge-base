@@ -22,10 +22,11 @@ import DocCardList from '@theme/DocCardList';
 
 **Рекомендуемый порядок чтения:**
 
-1. [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3) — практика запросов и оценка источников;
-2. [Поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/1) — индекс, ранжирование, BM25, векторный поиск;
-3. [Языки поисковых запросов](/encyclopedia/1-basics/1-21-poisk-informatsii/2) — SQL, SPARQL, Lucene/Elasticsearch DSL;
-4. [Популярные поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/4) — обзор Google, Яндекс, специализированных сервисов.
+1. [ИИ для новичка](/encyclopedia/1-basics/1-21-poisk-informatsii/5) — ChatGPT и аналоги: проверка ответов, что не отправлять в чат; далее — [раздел 6. ИИ](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro);
+2. [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3) — практика запросов и оценка источников;
+3. [Поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/1) — индекс, ранжирование, BM25, векторный поиск;
+4. [Языки поисковых запросов](/encyclopedia/1-basics/1-21-poisk-informatsii/2) — SQL, SPARQL, Lucene/Elasticsearch DSL;
+5. [Популярные поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/4) — обзор Google, Яндекс, специализированных сервисов.
 
 **На своём компьютере** (логи, исходники, конфиги) текст ищут отдельно от веб-поиска — [поиск текста в файлах](/encyclopedia/2-system-network/2-05-terminal/104) (Ctrl+F, VS Code, `grep`, Windows и macOS).
 

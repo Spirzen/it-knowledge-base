@@ -28,6 +28,7 @@ import DocCardList from '@theme/DocCardList';
 1. [Маркетинг IT-продуктов](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/1) — фундамент и рынок  
 2. [Комплекс маркетинга](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/4) — 4P и жизненный цикл  
 3. [Персонализированный маркетинг](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/2) и [Потребительская грамотность](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/3) — риски и защита  
+4. [Подписочная экономика](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/5) — trial, SaaS, отмена подписок  
 
 Для предметной области **торговли и e-commerce** — раздел [Контекст → Торговля](/context/commerce/intro).
 

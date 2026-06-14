@@ -9,6 +9,8 @@ related:
     doc: encyclopedia/5-languages/5-05-csharp/intro
   - title: "Roblox Studio — первая игра"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/203
+  - title: "Godot — первая 2D-игра"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/207
   - title: "Luau — о разделе"
     doc: encyclopedia/5-languages/5-15-lua-i-luau/intro
   - title: "Разработка игр на Python"
@@ -71,8 +73,8 @@ import DocCardList from '@theme/DocCardList';
 1. [Процесс разработки видеоигр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1) — этапы, GDD, роли.
 2. [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112) и [Виды движков](/encyclopedia/9-spinoff/9-04-razrabotka-igr/113) — выбор стека.
 3. [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) — три уровня; цепочка [Механики и пространство состояний](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1172) → [Геймплей и core loop](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1174) → [Системы, петли обратной связи и баланс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1173) → [Опыт игрока и мотивационные модели](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1171) → [Макроструктура, нарратив и метагейм](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1175) → [Прототип и playtest дизайна](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1176).
-4. Один практический трек: **Unity** *или* **Unreal** *или* **Roblox** (см. карточки ниже).
-5. По желанию — [Языки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/114), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), платформы; для разбора чужого кода — [каталог open-source клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125).
+4. Один практический трек: **Unity** *или* **Unreal** *или* **Roblox** *или* **Godot** (см. карточки ниже).
+5. По желанию — [Языки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/114), [Звук FMOD/Wwise](/encyclopedia/9-spinoff/9-04-razrabotka-igr/126), [Доступность](/encyclopedia/9-spinoff/9-04-razrabotka-igr/127), [ИИ в играх](/encyclopedia/9-spinoff/9-04-razrabotka-igr/128), [Оптимизация](/encyclopedia/9-spinoff/9-04-razrabotka-igr/123), платформы; для разбора чужого кода — [каталог open-source клонов](/encyclopedia/9-spinoff/9-04-razrabotka-igr/125).
 6. [Итоги](/encyclopedia/9-spinoff/9-04-razrabotka-igr/998) и [чек-лист](/encyclopedia/9-spinoff/9-04-razrabotka-igr/999).
 
 Для карьеры и ролей в студии — отдельно [Дорожная карта геймдева](/encyclopedia/9-spinoff/9-04-razrabotka-igr/11) и [Команда разработки](/encyclopedia/9-spinoff/9-04-razrabotka-igr/111).
@@ -183,6 +185,21 @@ import DocCardList from '@theme/DocCardList';
 2. [Minecraft — команды и datapack](/lab/Примеры/1142) — `/tp`, `scoreboard`, `execute`, командные блоки, `pack.mcmeta`, чекпоинт паркура; **разбор каждой строки**, как в [галерее Turtle](/lab/Примеры/111).
 
 Дальше по желанию — [Roblox / Luau](/lab/Примеры/1141) или [Unity C#](/lab/Примеры/1136).
+
+---
+
+## Godot + GDScript — учебный маршрут
+
+Бесплатный движок без роялти — удобен для **2D-инди** и школ:
+
+| Шаг | Материал | Зачем |
+|-----|----------|--------|
+| 1 | [Godot — первая 2D-игра](./207) | Установка, сцена, движение, монеты |
+| 2 | [Виды движков](./113) — раздел Godot | Сравнение с Unity/Unreal |
+| 3 | [Гейм-дизайн](./117) → [прототип](./1176) | Идея до полировки |
+| 4 | [Blender](/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/131) (по желанию) | Свои ассеты |
+
+Для детей короче: [Godot и Construct 3](/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/27).
 
 ---
 

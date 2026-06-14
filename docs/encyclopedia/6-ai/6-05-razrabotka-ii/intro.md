@@ -31,13 +31,17 @@ related:
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/121
   - title: "Практикум — проекты по ИИ"
     doc: encyclopedia/6-ai/6-05-razrabotka-ii/122
+  - title: "Function calling и structured output"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/123
+  - title: "GraphRAG и agentic RAG"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/124
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Первый вызов Chat Completions из Python с разбором строк — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149). Шаблоны system/user для чата и RAG — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Промышленные паттерны клиента — [интеграция ИИ-моделей в Python](/encyclopedia/6-ai/6-05-razrabotka-ii/112). Мультиагентные потоки (Sequential, Parallel, Router, Debate) и фреймворки — [Оркестрация AI-агентов](/encyclopedia/6-ai/6-05-razrabotka-ii/121). После теории — runnable-проекты с картой обучения в [Практикуме — проекты по ИИ](/encyclopedia/6-ai/6-05-razrabotka-ii/122).
+Первый вызов Chat Completions из Python с разбором строк — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149). Шаблоны system/user для чата и RAG — [Prompt engineering — библиотека промптов](/lab/Примеры/1150). Промышленные паттерны клиента — [интеграция ИИ-моделей в Python](/encyclopedia/6-ai/6-05-razrabotka-ii/112). **Tools и JSON** — [function calling и structured output](/encyclopedia/6-ai/6-05-razrabotka-ii/123). **Продвинутый RAG** — [GraphRAG и agentic RAG](/encyclopedia/6-ai/6-05-razrabotka-ii/124). Мультиагентные потоки (Sequential, Parallel, Router, Debate) и фреймворки — [Оркестрация AI-агентов](/encyclopedia/6-ai/6-05-razrabotka-ii/121). После теории — runnable-проекты с картой обучения в [Практикуме — проекты по ИИ](/encyclopedia/6-ai/6-05-razrabotka-ii/122).
 
 <DocCardList />
 

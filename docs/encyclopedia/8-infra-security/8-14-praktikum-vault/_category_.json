@@ -1,0 +1,8 @@
+{
+  "label": "Практикум Vault",
+  "link": {
+    "type": "generated-index",
+    "title": "Практикум HashiCorp Vault",
+    "description": "Dev-секреты, политики доступа, интеграция с CI и приложением — без паролей в Git и .env в проде."
+  }
+}

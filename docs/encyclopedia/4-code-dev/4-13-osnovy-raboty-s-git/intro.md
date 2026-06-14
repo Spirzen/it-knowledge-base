@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro
   - title: "Автоматическое управление памятью"
     doc: encyclopedia/4-code-dev/4-15-sborka-musora/1
+  - title: "Код-ревью и pull request"
+    doc: encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/117
   - title: "Git — шпаргалка сценариев"
     doc: lab/examples/1123
   - title: "Код — о разделе"
@@ -39,6 +41,7 @@ import DocCardList from '@theme/DocCardList';
 2. [Установка и настройка Git](./111) — установка, `git config`, клиенты  
 3. [Как работать с Git](./112) — четыре уровня (проект → GitHub), `add`, `commit`, `push` / `fetch` / `pull`  
 4. [Ветвление и слияние](./113) — ветки, PR, конфликты, форк  
+4a. [Код-ревью и pull request](./117) — diff, первый PR на GitHub, merge  
 5. [Рекомендации в команде](./114) — процесс, сообщения коммитов, базовое восстановление  
 5a. [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — `reset --hard`, `clean`, `push --force`, reflog  
 6. [Типовые ситуации с Git](./1141) — **справочник по симптомам** (ошибки, `stash`, `rebase`, `bisect`)  

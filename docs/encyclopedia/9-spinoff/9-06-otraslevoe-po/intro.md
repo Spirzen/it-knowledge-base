@@ -5,10 +5,10 @@ sidebar_label: Отраслевое ПО — о разделе
 related:
   - title: "Отраслевое программное обеспечение"
     doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/1
+  - title: "Figma для разработчика"
+    doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/113
   - title: "Adobe"
     doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/11
-  - title: "Отраслевое ПО — итоги"
-    doc: encyclopedia/9-spinoff/9-06-otraslevoe-po/2
   - title: "1С — о разделе"
     doc: encyclopedia/5-languages/5-27-1s/intro
 ---
@@ -16,6 +16,8 @@ related:
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+Vertical software — CAD, медицина, дизайн. Для разработчиков интерфейсов отдельный вход: [Figma для разработчика](./113.md) (макеты, Dev Mode, экспорт).
 
 <DocCardList />
 

@@ -25,7 +25,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### Зачем этот раздел
 
-Подборка по **Elixir** в энциклопедии: синтаксис, первая программа и смежные темы. Пройдите один маршрут до конца, не смешивая несколько языков на старте.
+Подборка по **Elixir** в энциклопедии: синтаксис, первая программа и смежные темы. Выберите один язык для старта, пройдите маршрут до первой рабочей программы — затем переходите к следующему языку или стеку.
 
 ---
 
@@ -40,6 +40,7 @@ import DocCardList from '@theme/DocCardList';
 | 5 | [Управляющие конструкции и операторы](./5.md) | Перейти к рабочему синтаксису ветвлений и `with` |
 | 6 | [Функции и процессы в Elixir](./6.md) | Связать функциональный стиль и конкуренцию |
 | 7 | [Простые приложения на Elixir](./103.md) | Закрепить материал на прикладных задачах |
+| 8 | [Phoenix — первая программа](./104.md) | HTTP, JSON API и LiveView на BEAM |
 
 ---
 
@@ -94,7 +95,8 @@ import DocCardList from '@theme/DocCardList';
 - [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — база по коду, компиляции и выполнению;
 - [Архитектура выполнения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1) — процессы, ошибки и жизненный цикл;
 - [Операционная система](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1) — почему процессы и планировщик важны на практике;
-- [Как работают сайты и веб-сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1) — контекст для Phoenix и веб-приложений.
+- [Как работают сайты и веб-сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1) — контекст для Phoenix и веб-приложений;
+- [Phoenix — первая программа](./104.md) — веб-фреймворк; JVM-аналог — [Play Framework](/encyclopedia/5-languages/5-18-scala/211).
 
 ---
 

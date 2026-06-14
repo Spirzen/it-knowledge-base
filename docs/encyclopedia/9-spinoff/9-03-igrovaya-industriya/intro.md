@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 <ExternalPlayEmbed example="spinoff/game-industry-hub" title="Игровая индустрия — навигатор" minHeight={560} />
 
 Чтобы связать **рынок и жанры** с личным опытом, параллельно полезен практический каталог [Игры, которые должен попробовать каждый](/tools/games/4): сотни названий, жанровые фильтры и случайная рекомендация — удобно сверять термины из раздела с реальными хитами.
-По инфраструктуре PC-дистрибуции отдельно полезна статья [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435).
+По инфраструктуре PC-дистрибуции отдельно полезны [Steam](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11435) и [Linux-гейминг с Proton](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11438). Актуальные модели: [Live-service](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/126), [UGC-платформы](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/127), [киберспорт](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/125).
 
 <DocCardList />
 

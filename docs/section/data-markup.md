@@ -66,6 +66,8 @@ mindmap
 
 ## Мыслительная база
 
+> **Не обязательно для старта** — углубление в когнитивистику, математику и ТАФЯ. См. [о разделе](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/intro).
+
 - [3.03. Когнитивистика](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/1)
 - [3.03. Ментальные модели](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/2)
 - [3-03-myslitelnaya-baza](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/3)
@@ -75,6 +77,8 @@ mindmap
 ---
 
 ## Математическое программирование
+
+> **Не обязательно для старта** — оптимизация и исследование операций. См. [о разделе](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/intro).
 
 - [3.12. Введение и постановка](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1)
 - [3.12. Симплекс-метод](/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/4)
@@ -95,7 +99,12 @@ mindmap
 - [3.04. JSON](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3)
 - [3.04. JSONB](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/217)
 - [3.04. YAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/4)
+- [3.04. TOML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/218)
+- [3.04. CSV](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/219)
 - [3.04. Markdown](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/5)
+- [3.04. JSON Schema, OpenAPI и Schema.org](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/220)
+- [3.04. GraphQL](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/221)
+- [3.04. Parquet и ORC](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/222)
 - [3.04. XAML](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6)
 - [3.04. Итоги](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/98)
 - [3.04. Чек-лист самопроверки](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/99)
@@ -188,6 +197,7 @@ mindmap
 ## HTML
 
 - [3-09-html](/encyclopedia/3-data-markup/3-09-html/1)
+- [3.09. Web Components](/encyclopedia/3-data-markup/3-09-html/25)
 - [3.09. Основные теги](/encyclopedia/3-data-markup/3-09-html/2)
 - [3.09. Справочник по HTML](/encyclopedia/3-data-markup/3-09-html/21)
 - [3.09. Игры на HTML5](/encyclopedia/3-data-markup/3-09-html/22)
@@ -200,6 +210,7 @@ mindmap
 ## CSS
 
 - [3-10-css](/encyclopedia/3-data-markup/3-10-css/1)
+- [3.10. Tailwind CSS](/encyclopedia/3-data-markup/3-10-css/120)
 - [3.10. Блочная модель и каскадность](/encyclopedia/3-data-markup/3-10-css/111)
 - [3.10. Работа с CSS](/encyclopedia/3-data-markup/3-10-css/112)
 - [3.10. Flex и Grid](/encyclopedia/3-data-markup/3-10-css/2)

@@ -15,8 +15,10 @@ related:
     doc: encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro
   - title: Контекст — о разделе
     doc: context/intro
-  - title: "Безопасность при работе с ИИ"
-    doc: encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/1
+  - title: "Актуальные практики — о разделе"
+    doc: encyclopedia/8-infra-security/8-12-aktualnye-praktiki/intro
+  - title: "Основы инфраструктуры"
+    doc: encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -50,7 +52,8 @@ import DocCardList from '@theme/DocCardList';
 7. **[Инъекции](123.md)** — SQLi (тавтология, UNION, blind boolean/time), CMDi, XSS: одна модель, разные контексты.
 8. **[Шифрование](115.md)** и **[Сертификация и сертификаты](112.md)** — алгоритмы, TLS, PKI.
 9. **[Белое хакерство и Bug Bounty](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro)** — этичный поиск уязвимостей, отчёты, программы вознаграждений у техгигантов.
-10. **[Тестирование на проникновение](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro)** — Kali Linux, recon, Wi-Fi, веб, сканирование и брутфорс в лаборатории.
+10. **[Актуальные практики](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/intro)** — supply chain, DevSecOps, Passkeys, OAuth, API Gateway, Secure SDLC, учебный фишинг.
+11. **[Тестирование на проникновение](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro)** — Kali Linux, recon, Wi-Fi, веб, сканирование и брутфорс в лаборатории.
 
 ---
 

@@ -32,6 +32,14 @@ description: "Карта экосистемы JavaScript — Node.js runtime, fr
 
 [Next.js](./3-meta-frameworks/273.md) и [первая программа на Next.js](./3-meta-frameworks/2731.md).
 
+## Backend-фреймворки Node
+
+[NestJS — первая программа](./1-runtime-node/269.md) · [Prisma ORM](./1-runtime-node/2691.md) · [Drizzle ORM](./1-runtime-node/2692.md)
+
+## Современный frontend
+
+[Svelte — первая программа](./2-frontend-frameworks/286.md) · [Astro — первая программа](./2-frontend-frameworks/287.md) · [Vite — сборка и dev-server](./2-frontend-frameworks/288.md)
+
 ## CLI экосистемы
 
 [Обзор раздела](./4-cli-tools/intro.md) · [Справочник: 10 команд на каждую утилиту](./4-cli-tools/1.md) — `node`, `npm`, `yarn`, `pnpm`, `vite`, `next`, `ng`, `eslint`, `jest` и др.

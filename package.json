@@ -29,7 +29,7 @@
     "docs:lab-crosslinks": "node scripts/enrich-lab-crosslinks.mjs",
     "docs:revert-basics-wiki": "node scripts/revert-basics-wiki-markup.mjs",
     "docs:fix-cyrillic-latin": "node scripts/fix-cyrillic-latin-corruption.mjs",
-    "docs:fix-html-comments": "node scripts/fix-html-comments-in-mdx.mjs",
+    "docs:scan-mdx-unsafe": "node scripts/scan-mdx-unsafe.mjs",
     "docs:trailing-hr": "node scripts/ensure-article-trailing-hr.mjs",
     "docs:normalize-tags": "node scripts/normalize-article-tags.mjs",
     "docs:descriptions": "node scripts/ensure-article-descriptions.mjs",

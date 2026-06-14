@@ -20,6 +20,8 @@ id: infra-security
 ```mermaid
 mindmap
   root((Инфраструктура и безопасность))
+    Старт
+      8.00 Основы инфраструктуры
     Облачные и визуальные решения
       8.01 Облачные технологии
       8.02 Low-code, No-code
@@ -32,10 +34,28 @@ mindmap
     Безопасность
       8.07 Информационная безопасность
       8.09 Белое хакерство и Bug Bounty
-      8.11 Практикум PostgreSQL
+      8.10 Тестирование на проникновение
+    Практикумы
+      8.08 REST и WebSocket
+      8.11 PostgreSQL
+      8.13 GitOps
+      8.14 Vault
+      8.15 DR
+      8.16 FinOps
+    Актуальное
+      8.12 Supply chain DevSecOps OAuth
 ```
 
-Вообще, лучше воспользуйтесь содержанием или перейдите к Базе знаний. Но для удобства, я размещу здесь ссылки на основные главы раздела:
+Вообще, лучше воспользуйтесь содержанием или перейдите к Базе знаний. Начните с **[Основы инфраструктуры](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1)** — там маршруты для разработчика, DevOps и ИБ. Ниже — ссылки на основные главы:
+
+---
+
+## Основы инфраструктуры (старт)
+
+- [8.00 — о разделе](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/intro)
+- [8.00. Основы инфраструктуры](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1)
+- [8.00. Итоги](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/998)
+- [8.00. Чек-лист](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/999)
 
 ---
 
@@ -207,13 +227,13 @@ mindmap
 
 Черные и серые хакеры - преступники, их деятельность наказуема, и существуют они исключительно благодаря грамотности в своей анонимности. Они внимательно относятся к своему поведению в сети, из-за чего их вычислить и не получается. Есть мнение, что они на самом деле представляют собой проекты, компаниям известно, кто это, а они лишь играют свою роль. Забавно?
 
-Кто знает, может быть, ваше призвание в этой области? Разумеется, речь о легальной части - специалисты-сотрудники и белые хакеры. Пока не попробуете, не узнаете! Поэтому здесь мы рассмотрим всё, что связано с инфраструктурой и безопасностью. 
+Кто знает, может быть, ваше призвание в этой области? Разумеется, речь о легальной части - специалисты-сотрудники и белые хакеры. Пока не попробуете, не узнаете! Поэтому здесь мы рассмотрим всё, что связано с инфраструктурой и безопасностью.
 
-Начнём с необычного решения (ведь обычные мы изучили) - облачные технологии, вроде AWS, Azure, GCP, и прочего. Затем рассмотрим Low-code/No-code платформы, которые представляют собой значительную часть рынка IT, ведь они являются "коробочными", готовыми решениями, которые нужно лишь правильно настраивать и поддерживать. Также нам нужно научиться защищать код и защищать данные. Это продвинутая работа с Git, изучение аналогов вроде SVN, а также резервное копирование и прочие способы "сохранить то, что важно".
+**Начните с** [Основы инфраструктуры](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1) — там маршруты по ролям и карта всего раздела. Затем рассмотрим Low-code/No-code платформы, которые представляют собой значительную часть рынка IT, ведь они являются "коробочными", готовыми решениями, которые нужно лишь правильно настраивать и поддерживать. Также нам нужно научиться защищать код и защищать данные. Это продвинутая работа с Git, изучение аналогов вроде SVN, а также резервное копирование и прочие способы "сохранить то, что важно".
 
 Другая важная часть - DevOps и CI/CD. Нужно знать, что такое CI, что такое CD, ка кработать с Git в разрезе DevOps-инженерии, чем собственно такой инженер отличается от системного администратора, какие инструменты он использует. Потом пойдём уже по инструментам и подходам. Сначала - микросервисы и интеграция, что такое масштабирование и балансировка нагрузки, как выстраиваются распределенные системы, как настраивается интеграция и коммуникация между ними, что такое брокеры сообщений и тому подобное. Нужно погрузиться в Docker, контейнеризацию и оркестрацию, кластеризацию, шардирование и прочее-прочее. 
 
-А добъём всё это изучением информационной безопасности, включая как кибербезопасность, вирусы, сливы и инъекции, так и защиту API, безопасность фронта/бэка, отслеживание действий и прочие важные аспекты. Отдельный маршрут — [белое хакерство и Bug Bounty](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro): этичный поиск уязвимостей, отчёты, выплаты и процессы у крупнейших вендоров. Практика на Kali Linux — в [тестировании на проникновение](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro): recon, Wi-Fi, веб, сканирование и брутфорс в лаборатории. Продвинутая эксплуатация PostgreSQL в Docker, Kubernetes и HA-кластерах — в [практикуме PostgreSQL](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro).
+А добъём всё это изучением информационной безопасности и [актуальными практиками](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/intro) (supply chain, DevSecOps, GitOps, OAuth). Отдельный маршрут — [белое хакерство и Bug Bounty](/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/intro). Практика на Kali — [8.10](/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/intro); интеграция API — [8.08](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/intro); PostgreSQL — [8.11](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro); GitOps, Vault, DR, FinOps — [8.13–8.16](/encyclopedia/8-infra-security/8-13-praktikum-gitops/intro).
 
 ---
 
@@ -248,6 +268,22 @@ mindmap
 
 ---
 
+## Практикум REST и WebSocket
+
+- [8.08 — о разделе](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/intro)
+- [8.08. Сценарий и архитектура OrderDesk](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/1)
+- [8.08. Проектирование контракта API](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/2)
+- [8.08. Модели данных и маппинг DTO](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/3)
+- [8.08. Сервис каталога на Python](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/4)
+- [8.08. Сервис заказов на C#](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/5)
+- [8.08. Безопасность и устойчивость](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/6)
+- [8.08. WebSocket и события](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/7)
+- [8.08. Проверка в Postman](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/8)
+- [8.08. Итоги](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/998)
+- [8.08. Чек-лист](/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/999)
+
+---
+
 ## Практикум PostgreSQL
 
 - [8.11 — о разделе](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/intro)
@@ -265,5 +301,65 @@ mindmap
 - [8.11. Автоматизация — Ansible и Terraform](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/12)
 - [8.11. Итоги](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/998)
 - [8.11. Чек-лист](/encyclopedia/8-infra-security/8-11-praktikum-postgresql/999)
+
+---
+
+## Актуальные практики (8.12)
+
+- [8.12 — о разделе](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/intro)
+- [8.12. Supply chain и SBOM](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/1)
+- [8.12. Passkeys и WebAuthn](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/2)
+- [8.12. DevSecOps](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/3)
+- [8.12. GitOps](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/4)
+- [8.12. Облачные сервисы в РФ](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/5)
+- [8.12. Platform Engineering](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/6)
+- [8.12. Безопасность ИИ в инфраструктуре](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/7)
+- [8.12. OIDC и OAuth для разработчика](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/8)
+- [8.12. API Gateway](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/9)
+- [8.12. Secure SDLC — маршрут для команды](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/10)
+- [8.12. Фишинг — учебная симуляция](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/11)
+- [8.12. Итоги](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/998)
+- [8.12. Чек-лист](/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/999)
+
+---
+
+## Практикум GitOps
+
+- [8.13 — о разделе](/encyclopedia/8-infra-security/8-13-praktikum-gitops/intro)
+- [8.13. Подготовка кластера и Argo CD](/encyclopedia/8-infra-security/8-13-praktikum-gitops/1)
+- [8.13. Репозиторий и Application](/encyclopedia/8-infra-security/8-13-praktikum-gitops/2)
+- [8.13. Обновление через Git](/encyclopedia/8-infra-security/8-13-praktikum-gitops/3)
+- [8.13. Drift и откат](/encyclopedia/8-infra-security/8-13-praktikum-gitops/4)
+- [8.13. Итоги](/encyclopedia/8-infra-security/8-13-praktikum-gitops/998)
+- [8.13. Чек-лист](/encyclopedia/8-infra-security/8-13-praktikum-gitops/999)
+
+---
+
+## Практикум Vault
+
+- [8.14 — о разделе](/encyclopedia/8-infra-security/8-14-praktikum-vault/intro)
+- [8.14. Запуск Vault и KV](/encyclopedia/8-infra-security/8-14-praktikum-vault/1)
+- [8.14. Policies и AppRole](/encyclopedia/8-infra-security/8-14-praktikum-vault/2)
+- [8.14. Приложение и CI](/encyclopedia/8-infra-security/8-14-praktikum-vault/3)
+- [8.14. Итоги](/encyclopedia/8-infra-security/8-14-praktikum-vault/998)
+- [8.14. Чек-лист](/encyclopedia/8-infra-security/8-14-praktikum-vault/999)
+
+---
+
+## Практикум аварийного восстановления (DR)
+
+- [8.15 — о разделе](/encyclopedia/8-infra-security/8-15-praktikum-dr/intro)
+- [8.15. RTO, RPO и 3-2-1](/encyclopedia/8-infra-security/8-15-praktikum-dr/1)
+- [8.15. Стенд и бэкап](/encyclopedia/8-infra-security/8-15-praktikum-dr/2)
+- [8.15. Катастрофа и restore](/encyclopedia/8-infra-security/8-15-praktikum-dr/3)
+- [8.15. Итоги](/encyclopedia/8-infra-security/8-15-praktikum-dr/998)
+- [8.15. Чек-лист](/encyclopedia/8-infra-security/8-15-praktikum-dr/999)
+
+---
+
+## FinOps для pet-проекта
+
+- [8.16 — о разделе](/encyclopedia/8-infra-security/8-16-finops-pet-project/intro)
+- [8.16. FinOps для pet-проекта](/encyclopedia/8-infra-security/8-16-finops-pet-project/1)
 
 ---

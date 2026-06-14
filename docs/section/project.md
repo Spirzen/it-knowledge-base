@@ -46,7 +46,9 @@ id: project
 
 ## Общее о бизнесе
 
-- [7.01. Общее о бизнесе](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/1)
+- [7.01. Общее о бизнесе](/encyclopedia/7-project/7-01-obschee-o-biznese/1)
+- [7.01. Модели IT-бизнеса](/encyclopedia/7-project/7-01-obschee-o-biznese/2)
+- [7.01. Договор и приёмка](/encyclopedia/7-project/7-01-obschee-o-biznese/3)
 - [7.01. Бизнес логика](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/111)
 - [7.01. Управление бизнесом](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/112)
 - [7.01. Итоги](/encyclopedia/Проект/7.01.%20Общее%20о%20бизнесе/998)
@@ -70,8 +72,11 @@ id: project
 
 ## Методология и жизненный цикл ПО
 
-- [7.03. Методология и жизненный цикл ПО](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/1)
-- [7.03. Методология государственных систем](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/2)
+- [7.03. Методология и жизненный цикл ПО](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1)
+- [7.03. Agile — гибкая методология](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/3)
+- [7.03. Как выбрать процесс](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/4)
+- [7.03. XP, TDD и BDD](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/5)
+- [7.03. Методология государственных систем](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/2)
 - [7.03. Итоги](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/998)
 - [7.03. Чек-лист самопроверки](/encyclopedia/Проект/7.03.%20Методология%20и%20жизненный%20цикл%20ПО/999)
 
@@ -106,7 +111,8 @@ id: project
 
 ## Тестирование
 
-- [7.05. Основы тестирования](/encyclopedia/Проект/7.05.%20Тестирование/1)
+- [7.05. Добро пожаловать в тестирование](/encyclopedia/7-project/7-05-testirovanie/100)
+- [7.05. Основы тестирования](/encyclopedia/7-project/7-05-testirovanie/1)
 - [7.05. Классификация тестирования](/encyclopedia/Проект/7.05.%20Тестирование/111)
 - [7.05. Процесс тестирования](/encyclopedia/Проект/7.05.%20Тестирование/112)
 - [7.05. Проектные артефакты QA](/encyclopedia/Проект/7.05.%20Тестирование/113)
@@ -253,9 +259,12 @@ id: project
 
 ## Базы знаний и задачники
 
-- [7.09. Базы знаний](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/1)
-- [7.09. Wiki проекта](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/11)
-- [7.09. Задачи](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/2)
+- [7.09. Базы знаний](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/1)
+- [7.09. Задачи](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/2)
+- [7.09. Jira и YouTrack](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/21)
+- [7.09. Wiki и Confluence](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/22)
+- [7.09. ADR и docs-as-code](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/23)
+- [7.09. Онбординг-пакет](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/24)
 - [7.09. Итоги](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/998)
 - [7.09. Чек-лист самопроверки](/encyclopedia/Проект/7.09.%20Базы%20знаний%20и%20задачники/999)
 
@@ -263,16 +272,120 @@ id: project
 
 ## Культура кода
 
-- [7.10. Культура кода](/encyclopedia/Проект/7.10.%20Культура%20кода/1)
-- [7.10. Цикломатическая сложность](/encyclopedia/Проект/7.10.%20Культура%20кода/2)
-- [7.10. Итоги](/encyclopedia/Проект/7.10.%20Культура%20кода/3)
-- [7.10. Чек-лист самопроверки](/encyclopedia/Проект/7.10.%20Культура%20кода/4)
+- [7.10. Культура кода](/encyclopedia/7-project/7-10-kultura-koda/1)
+- [7.10. Цикломатическая сложность](/encyclopedia/7-project/7-10-kultura-koda/2)
+- [7.10. MAPPER, YAGNI, тесты и др.](/encyclopedia/7-project/7-10-kultura-koda/intro)
+- [7.10. Итоги](/encyclopedia/7-project/7-10-kultura-koda/3)
+- [7.10. Чек-лист самопроверки](/encyclopedia/7-project/7-10-kultura-koda/4)
 
 ---
 
 ## Легаси-код
 
-- [7.11. Легаси-код](/encyclopedia/Проект/7.11.%20Легаси-код/1)
-- [7.11. Итоги](/encyclopedia/Проект/7.11.%20Легаси-код/2)
-- [7.11. Чек-лист самопроверки](/encyclopedia/Проект/7.11.%20Легаси-код/3)
+- [7.11. Легаси-код](/encyclopedia/7-project/7-11-legasi-kod/1)
+- [7.11. Итоги](/encyclopedia/7-project/7-11-legasi-kod/5)
+- [7.11. Чек-лист самопроверки](/encyclopedia/7-project/7-11-legasi-kod/6)
+
+---
+
+## Конструирование ПО
+
+- [7.12. Конструирование ПО — о разделе](/encyclopedia/7-project/7-12-konstruirovanie-po/intro)
+
+---
+
+## Экономика производства ПО
+
+- [7.13. Экономика производства ПО — о разделе](/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/intro)
+
+---
+
+## Scrum
+
+- [7.14. Scrum — о разделе](/encyclopedia/7-project/7-14-scrum/intro)
+
+---
+
+## Внедрение ERP
+
+- [7.15. Внедрение ERP — о разделе](/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/intro)
+
+---
+
+## ITSM и ИТ-услуги
+
+- [7.16. ITSM — о разделе](/encyclopedia/7-project/7-16-itsm-i-it-uslugi/intro)
+
+---
+
+## Начало работы на проекте
+
+- [7.17. Начало работы на проекте — о разделе](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/intro)
+- [7.17. От идеи к старту](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/1)
+- [7.17. Команда и найм](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/2)
+- [7.17. Инфраструктура и доступы](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/3)
+- [7.17. Репозиторий, трекер, wiki](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/4)
+- [7.17. Архитектура на старте](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/5)
+- [7.17. План и первые задачи](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/6)
+- [7.17. Онбординг участника](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/7)
+
+---
+
+## Kanban
+
+- [7.18. Kanban — о разделе](/encyclopedia/7-project/7-18-kanban/intro)
+
+---
+
+## Продуктовые роли
+
+- [7.19. PO и PM — о разделе](/encyclopedia/7-project/7-19-produktovye-roli/intro)
+
+---
+
+## ADR и архитектурная память
+
+- [7.20. ADR — о разделе](/encyclopedia/7-project/7-20-adr-i-arhitekturnaya-pamyat/intro)
+
+---
+
+## Инциденты и эксплуатация
+
+- [7.21. Инциденты — о разделе](/encyclopedia/7-project/7-21-incidenty-i-ekspluatatsiya/intro)
+
+---
+
+## Управление изменениями
+
+- [7.22. Change management — о разделе](/encyclopedia/7-project/7-22-upravlenie-izmeneniyami/intro)
+
+---
+
+## Удалённая команда
+
+- [7.23. Удалённая команда — о разделе](/encyclopedia/7-project/7-23-udalennaya-komanda/intro)
+
+---
+
+## ИИ в проектном процессе
+
+- [7.24. ИИ в проекте — о разделе](/encyclopedia/7-project/7-24-ii-v-proektnom-protsesse/intro)
+
+---
+
+## Доставка и готовность
+
+- [7.25. DoR, DoD, release notes — о разделе](/encyclopedia/7-project/7-25-dostavka-i-gotovnost/intro)
+
+---
+
+## Маршрут для новичка (кратко)
+
+1. [7.17 — Начало работы на проекте](/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/intro)
+2. [7.02/1 — Основы проекта](/encyclopedia/7-project/7-02-komanda-i-upravlenie/1)
+3. [7.03 — Методология](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro) · [Scrum](/encyclopedia/7-project/7-14-scrum/intro) или [Kanban](/encyclopedia/7-project/7-18-kanban/intro)
+4. [7.09 — Трекер и wiki](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro)
+5. [7.10 — Культура кода](/encyclopedia/7-project/7-10-kultura-koda/intro)
+6. [4.13 — Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro)
+
 ---

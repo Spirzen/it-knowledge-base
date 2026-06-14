@@ -1,0 +1,8 @@
+{
+  "label": "Практикум GitOps",
+  "link": {
+    "type": "generated-index",
+    "title": "Практикум GitOps",
+    "description": "Репозиторий манифестов, Argo CD и синхронизация состояния кластера с Git — учебный стенд на kind или minikube."
+  }
+}

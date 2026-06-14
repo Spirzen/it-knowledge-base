@@ -112,16 +112,17 @@ flowchart LR
 |------|-----------|-------|
 | 1 | [4.01 Алгоритмы](/encyclopedia/4-code-dev/4-01-algoritmy/intro) | План до синтаксиса |
 | 1a | [Big-O — шпаргалка](/lab/Примеры/1128) | O(n) по коду на Python, ловушки `list` / `set` |
-| 2 | [4.02 Код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) | Синтаксис, функции, циклы |
+| 2 | [4.02 Код](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro) | Синтаксис, [коллекции](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/618), функции, циклы |
 | 3 | [4.03 Выполнение](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro) | Память, CPU, VM, JIT |
 | 4 | [4.07 Парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) | Стили мышления |
 | 5 | [4.04 Проект и фреймворки](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro) | Структура приложения |
 | 5a | [IDE и редакторы](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10) | Подсветка, IntelliSense, отладчик в одной среде |
 | 6 | [4.13 Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [12 команд](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115#12-komand) | История изменений кода |
 | 6a | [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111) | Точки останова, символы, GDB |
-| 6b | [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) | Elements, Console, Network, Sources |
+| 6b | [Тестирование для разработчика](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1117) | Unit-тесты, Red–Green–Refactor, связь с [7.05](/encyclopedia/7-project/7-05-testirovanie/intro) |
+| 6c | [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) | Elements, Console, Network, Sources |
 
-Дальше — специализации — [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) ([Flutter — виджеты в Lab](/lab/Примеры/1154), [Dart — Flutter](/encyclopedia/5-languages/5-22-dart/311)) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) ([WinForms/WPF в Lab](/lab/Примеры/1138), [Tkinter в Lab](/lab/Примеры/1124), [Java Swing в Lab](/lab/Примеры/1143)). Для веб-UI на React — [галерея компонентов](/lab/Примеры/1146) после [272](/encyclopedia/5-languages/5-01-javascript/272).
+Дальше — специализации — [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [веб-разработка](/encyclopedia/4-code-dev/4-17-veb-razrabotka/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) ([Flutter — виджеты в Lab](/lab/Примеры/1154), [Dart — Flutter](/encyclopedia/5-languages/5-22-dart/311)) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) ([WinForms/WPF в Lab](/lab/Примеры/1138), [Tkinter в Lab](/lab/Примеры/1124), [Java Swing в Lab](/lab/Примеры/1143)). Для веб-UI на React — [галерея компонентов](/lab/Примеры/1146) после [272](/encyclopedia/5-languages/5-01-javascript/272).
 
 <div class="callout callout--info">
   <div class="callout-title">Связь с другими томами</div>
@@ -160,6 +161,7 @@ mindmap
     Приложения
       4.11 Десктопные приложения
       4.12 Мобильные приложения
+      4.17 Веб-разработка
     Инструменты
       4.13 Основы работы с Git
 ```

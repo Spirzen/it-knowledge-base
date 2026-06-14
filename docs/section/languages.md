@@ -15,6 +15,8 @@ id: languages
 
 ## О разделе
 
+- [Какой язык программирования выбрать](/encyclopedia/5-languages/kak-vybrat-yazyk-programmirovaniya) — карта языков раздела, таблицы по направлениям и совет новичку (Python, JavaScript, C#, Java для старта).
+
 Мы изучили, как пишут программы, теперь пора посмотреть, на чём пишут. Что используется для фронтенда, что для бэкенда - какие инструменты и технологии нужны в разных областях.
 
 Технически, языки по большей части универсальны. Они обычно появляются с определённой целью (JavaScript для оживления страниц, C/C++ для системного программирования, а Java чтобы обезопасить и упростить разработку), но в дальнейшем развиваются, получая новый функционал, новые фичи и возможности.
@@ -110,6 +112,12 @@ mindmap
 - [5.01. Angular](/encyclopedia/5-languages/5-01-javascript/29)
 - [5.01. Справочник по Angular](/encyclopedia/5-languages/5-01-javascript/291)
 - [5.01. TypeScript — подробнее в отдельном разделе](/encyclopedia/5-languages/5-10-typescript/intro)
+- [5.01. NestJS — первая программа](/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/269)
+- [5.01. Prisma ORM](/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/2691)
+- [5.01. Drizzle ORM](/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/2692)
+- [5.01. Svelte](/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/286)
+- [5.01. Astro](/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/287)
+- [5.01. Vite](/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/288)
 - [5.01. Ext JS](/encyclopedia/5-languages/5-01-javascript/31)
 - [5.01. Справочник по Ext JS](/encyclopedia/5-languages/5-01-javascript/311)
 - [5.01. Практика](/encyclopedia/5-languages/5-01-javascript/32)
@@ -162,6 +170,8 @@ mindmap
 - [5.02. Справочник по Flask](/encyclopedia/5-languages/5-02-python/342)
 - [5.02. Разработка своего API](/encyclopedia/5-languages/5-02-python/343)
 - [5.02. Автоматизация и DevOps](/encyclopedia/5-languages/5-02-python/35)
+- [5.02. Poetry и uv](/encyclopedia/5-languages/5-02-python/391)
+- [5.02. Python для ML](/encyclopedia/5-languages/5-02-python/392)
 - [5.02. Справочник по Python](/encyclopedia/5-languages/5-02-python/36)
 - [5.02. Итоги](/encyclopedia/5-languages/5-02-python/998)
 - [5.02. Чек-лист самопроверки](/encyclopedia/5-languages/5-02-python/999)
@@ -199,6 +209,9 @@ mindmap
 - [5-03-javaServer Faces](/encyclopedia/5-languages/5-03-java/25)
 - [5-03-javaBean](/encyclopedia/5-languages/5-03-java/26)
 - [5.03. Spring](/encyclopedia/5-languages/5-03-java/27)
+- [5.03. Quarkus — первая программа](/encyclopedia/5-languages/5-03-java/309)
+- [5.03. Micronaut — первая программа](/encyclopedia/5-languages/5-03-java/310)
+- [5.03. Records в Java](/encyclopedia/5-languages/5-03-java/312)
 - [5.03. Ключевые классы и интерфейсы Java](/encyclopedia/5-languages/5-03-java/28)
 - [5.03. Справочник по Java](/encyclopedia/5-languages/5-03-java/3)
 - [5.03. Итоги](/encyclopedia/5-languages/5-03-java/998)
@@ -360,6 +373,8 @@ mindmap
 - [5.07. Исключения в прикладном коде](/encyclopedia/5-languages/5-07-php/159)
 - [5.07. PDO — безопасные запросы](/encyclopedia/5-languages/5-07-php/160)
 - [5.07. Форма → запись в БД](/encyclopedia/5-languages/5-07-php/161)
+- [5.07. Symfony — первая программа](/encyclopedia/5-languages/5-07-php/163)
+- [5.07. WordPress — разработка](/encyclopedia/5-languages/5-07-php/164)
 
 ---
 
@@ -445,6 +460,8 @@ mindmap
 - [5.10. Важные классы и интерфейсы](/encyclopedia/5-languages/5-10-go/23)
 - [5.10. Первая программа на Go](/encyclopedia/5-languages/5-10-go/3)
 - [5.10. GoEmailVerifier — практикум](/encyclopedia/5-languages/5-10-go/212)
+- [5.10. Первая программа на Gin](/encyclopedia/5-languages/5-10-go/2412)
+- [5.10. Первая программа на Echo](/encyclopedia/5-languages/5-10-go/2413)
 - [5.10. Практикум GoHTMLParser](/encyclopedia/5-languages/5-10-go/211)
 - [5.10. Справочник по Go](/encyclopedia/5-languages/5-10-go/998)
 - [5.10. Итоги](/encyclopedia/5-languages/5-10-go/999)
@@ -506,7 +523,9 @@ mindmap
 - [5.11. Важные классы и интерфейсы](/encyclopedia/5-languages/5-11-ruby/22)
 - [5.11. Популярные проекты на Ruby](/encyclopedia/5-languages/5-11-ruby/23)
 - [5.11. Первая программа на Ruby](/encyclopedia/5-languages/5-11-ruby/3)
-- [5-11-ruby on Rails](/encyclopedia/5-languages/5-11-ruby/4)
+- [5.11. Ruby on Rails](/encyclopedia/5-languages/5-11-ruby/4)
+- [5.11. Hotwire и Stimulus](/encyclopedia/5-languages/5-11-ruby/25)
+- [5.11. RSpec — практикум](/encyclopedia/5-languages/5-11-ruby/26)
 - [5.11. Справочник по Ruby](/encyclopedia/5-languages/5-11-ruby/5)
 - [5.11. Итоги](/encyclopedia/5-languages/5-11-ruby/6)
 - [5.11. Чек-лист самопроверки](/encyclopedia/5-languages/5-11-ruby/7)
@@ -592,6 +611,8 @@ mindmap
 - [5.14. Первая программа на Swift](/encyclopedia/5-languages/5-14-swift/5)
 - [5.14. Жизненный цикл Swift-приложения](/encyclopedia/5-languages/5-14-swift/6)
 - [5.14. Справочник по Swift](/encyclopedia/5-languages/5-14-swift/7)
+- [5.14. SwiftUI — практикум](/encyclopedia/5-languages/5-14-swift/271)
+- [5.14. TestFlight и App Store](/encyclopedia/5-languages/5-14-swift/272)
 - [5.14. Итоги](/encyclopedia/5-languages/5-14-swift/8)
 - [5.14. Чек-лист самопроверки](/encyclopedia/5-languages/5-14-swift/9)
 
@@ -743,6 +764,8 @@ mindmap
 - [5.17. Управляющие конструкции и операторы](/encyclopedia/5-languages/5-17-haskell/5)
 - [5.17. Функции](/encyclopedia/5-languages/5-17-haskell/6)
 - [5.17. Первая программа](/encyclopedia/5-languages/5-17-haskell/7)
+- [5.17. Монады в Haskell](/encyclopedia/5-languages/5-17-haskell/8)
+- [5.17. Cabal и Stack](/encyclopedia/5-languages/5-17-haskell/9)
 
 ---
 
@@ -755,6 +778,9 @@ mindmap
 - [5.18. Управляющие конструкции и операторы](/encyclopedia/5-languages/5-18-scala/5)
 - [5.18. Функции](/encyclopedia/5-languages/5-18-scala/6)
 - [5.18. Первая программа](/encyclopedia/5-languages/5-18-scala/7)
+- [5.18. Play Framework](/encyclopedia/5-languages/5-18-scala/211)
+- [5.18. Akka](/encyclopedia/5-languages/5-18-scala/212)
+- [5.18. Apache Spark](/encyclopedia/5-languages/5-18-scala/213)
 
 ---
 
@@ -767,6 +793,7 @@ mindmap
 - [5.19. Управляющие конструкции и операторы](/encyclopedia/5-languages/5-19-elixir/5)
 - [5.19. Функции](/encyclopedia/5-languages/5-19-elixir/6)
 - [5.19. Первая программа](/encyclopedia/5-languages/5-19-elixir/7)
+- [5.19. Phoenix — первая программа](/encyclopedia/5-languages/5-19-elixir/104)
 
 ---
 
@@ -800,6 +827,7 @@ mindmap
 - [5.22. Основы языка](/encyclopedia/5-languages/5-22-dart/2)
 - [5.22. Архитектура](/encyclopedia/5-languages/5-22-dart/3)
 - [5.22. Flutter](/encyclopedia/5-languages/5-22-dart/311)
+- [5.22. Provider и Riverpod](/encyclopedia/5-languages/5-22-dart/312)
 - [5.22. Типы данных](/encyclopedia/5-languages/5-22-dart/4)
 - [5.22. Управляющие конструкции и операторы](/encyclopedia/5-languages/5-22-dart/5)
 - [5.22. Функции](/encyclopedia/5-languages/5-22-dart/6)
@@ -820,6 +848,7 @@ mindmap
 - [5.23. Управляющие конструкции и операторы](/encyclopedia/5-languages/5-23-r/5)
 - [5.23. Функции](/encyclopedia/5-languages/5-23-r/6)
 - [5.23. Первая программа](/encyclopedia/5-languages/5-23-r/7)
+- [5.23. tidyverse и ggplot2](/encyclopedia/5-languages/5-23-r/104)
 
 ---
 
@@ -832,14 +861,13 @@ mindmap
 - [5.24. Управляющие конструкции и операторы](/encyclopedia/5-languages/5-24-julia/5)
 - [5.24. Функции](/encyclopedia/5-languages/5-24-julia/6)
 - [5.24. Первая программа](/encyclopedia/5-languages/5-24-julia/7)
+- [5.24. Pkg и Plots](/encyclopedia/5-languages/5-24-julia/104)
 
 Будут также и другие языки. Пока ещё проектирую.
 
-Во-первых, запомните, что нужны все языки. Прошло уже то время, когда можно было бы знать только один язык и всё. Нет, вы изучите один язык, а другие узкие специалисты изучат, в отличие от вас, не только "ванильный" (базовый) язык, но и множество фреймворков, библиотек и ответвлений. Тогда шансов не будет. Поэтому если уж и изучать, то всё, и потом уже можно будет понять, что именно нравится больше.
+Во-первых, **выберите один язык для старта**, пройдите его до первой рабочей программы и базового фреймворка — **затем переходите дальше**: второй язык, смежный стек или углубление в выбранное направление. Прошло то время, когда достаточно было знать только синтаксис одного языка; на работе нужны ещё фреймворки, инструменты и понимание runtime. Но учить всё сразу на первой неделе — значит смешать несовместимые модели (GC и borrow checker, async в разных экосистемах) и выгореть.
 
-Представьте, что вы изначально решили что вам нужен только Python (ведь он легче и популярнее, как пишут везде?), выбрали, но…как оказалось, таких же специалистов миллионы, и конкурировать сложно. Зато под руку попалась вакансия .NET разработчика, а вы даже не погружались в эту тему.
-
-Если же вы изучите все, то без работы не останетесь, и будете независимы от "трендов". Учите всё.
+Представьте, что вы изначально решили, что нужен только Python (ведь он легче и популярнее, как пишут везде?), выбрали, но… как оказалось, таких же специалистов миллионы, и конкурировать сложно. Зато под руку попалась вакансия .NET-разработчика, а вы даже не погружались в эту тему. Поэтому после первого языка полезно **расширять кругозор** — не обязательно становиться экспертом во всём, но понимать, где какой инструмент применяют. Карта выбора — [Какой язык программирования выбрать](/encyclopedia/5-languages/kak-vybrat-yazyk-programmirovaniya).
 
 Во-вторых, нужно понимать, что значит "знать язык". Если человек говорит "я умею программировать на Java", это не значит, что он знает его синтаксис и правила, нет. Это означает, что он умеет работать со Spring Boot, знаком хотя бы с несколькими фреймворками и библиотеками.
 
