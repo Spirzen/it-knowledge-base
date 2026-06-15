@@ -1177,6 +1177,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/322">3.03. Реляционная алгебра и таблицы</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/323">3.03. Графы — маршруты, остовы и раскраски</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/325">3.03. Дискретная математика — чек-лист самопроверки</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/326">3.03. Семантика — смысл знаков и данных</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/327">3.03. Представление знаний</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/328">3.03. Онтология в информатике</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/329">3.03. Концептуальные схемы и информационные модели</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/330">3.03. Семантический веб и графы знаний</a></li>
   </ul>
   </li>
 
@@ -1648,7 +1653,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/3">4.08. Инкапсуляция - защита внутреннего состояния объекта</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/4">4.08. Наследование - повторное использование и иерархия типов</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/5">4.08. Полиморфизм - единый интерфейс для разных реализаций</a></li>
-  <li><a href="/encyclopedia/4-code-dev/4-08-oop/6">4.08. Инструменты объектно-ориентированной разработки</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/6">4.08. Перечисления</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/61">4.08. Коллекции</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/7">4.08. Сложность ПО, декомпозиция и объектно-ориентированный подход</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/98">4.08. Объектно-ориентированное программирование — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/99">4.08. Объектно-ориентированное программирование — чек-лист</a></li>

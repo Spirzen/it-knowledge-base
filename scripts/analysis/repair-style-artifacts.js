@@ -31,11 +31,19 @@ for (const file of walk(root)) {
     fixes += 1;
     return '— это';
   });
+  text = text.replace(/-\$1это/g, () => {
+    fixes += 1;
+    return '- это';
+  });
   text = text.replace(/:\$1это/g, () => {
     fixes += 1;
     return ': это';
   });
-  text = text.replace(/\s\$1это/g, () => {
+  text = text.replace(/\.\$1это/g, () => {
+    fixes += 1;
+    return '. Это';
+  });
+  text = text.replace(/\$1это/g, () => {
     fixes += 1;
     return ' это';
   });
@@ -47,6 +55,22 @@ for (const file of walk(root)) {
   text = text.replace(/\s\$1\s*—\s*\$3\./g, () => {
     fixes += 1;
     return '.';
+  });
+  text = text.replace(/чек-\$1\s*—\s*\$3/g, () => {
+    fixes += 1;
+    return 'чек-лист — минимум';
+  });
+  text = text.replace(/—\s*—\s*—\s*\$3/g, () => {
+    fixes += 1;
+    return ' — ';
+  });
+  text = text.replace(/—\s*—\s*\$3/g, () => {
+    fixes += 1;
+    return ' — ';
+  });
+  text = text.replace(/^\s*—\s*—\s*\$3/gm, () => {
+    fixes += 1;
+    return '';
   });
 
   if (text !== before) {

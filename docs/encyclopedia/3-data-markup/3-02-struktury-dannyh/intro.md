@@ -46,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [История](./11.md) · [Геометрия](./12.md) | по желанию |
 | 4 | [Итоги](./3.md) · [чек-лист](./4.md) | закрепление |
 
-Дальше — коллекции в [языках](/encyclopedia/5-languages/intro) (таблица ниже). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro). Для **задач ЕГЭ и олимпиад на Python** (`list`, `dict`, `set` в коде решений) — [Lab / 1122](/lab/Примеры/1122#3-словари-множества-и-частоты). На **Pascal** — массив, поиск, префиксы: [Lab / 1140](/lab/Примеры/1140#1-массивы).
+Дальше — коллекции в [языках](/encyclopedia/5-languages/intro) (таблица ниже). Для маршрута ООП — [Коллекции](/encyclopedia/4-code-dev/4-08-oop/61). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro). Для **задач ЕГЭ и олимпиад на Python** (`list`, `dict`, `set` в коде решений) — [Lab / 1122](/lab/Примеры/1122#3-словари-множества-и-частоты). На **Pascal** — массив, поиск, префиксы: [Lab / 1140](/lab/Примеры/1140#1-массивы).
 
 ---
 

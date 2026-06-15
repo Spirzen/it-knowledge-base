@@ -73,8 +73,9 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Материал | Содержание | Время |
 |-----|----------|------------|-------|
 | 1 | [Что такое веб-разработка](./1.md) | HTTP, REST, JSON, CORS, `.env` | 2–4 ч чтения |
-| 2 | [Итоги](./2.md) | резюме | 15 мин |
-| 3 | [Чек-лист](./3.md) | самопроверка | 20 мин |
+| 2 | [Как делают веб-приложения](./4.md) | стек, данные, деплой, масштабирование | 1–2 ч |
+| 3 | [Итоги](./2.md) | резюме | 15 мин |
+| 4 | [Чек-лист](./3.md) | самопроверка | 20 мин |
 
 После главы 1 — **практика** (минимум один пункт):
 
@@ -104,9 +105,9 @@ import DocCardList from '@theme/DocCardList';
 
 **День 4–5** — [глава 1](./1.md), curl к API, DevTools Network.
 
-**День 6** — простой CRUD API (Python/Node) + JSON — [ORM](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro) или [SQL](/encyclopedia/3-data-markup/3-07-sql/887).
+**День 6** — [Как делают веб-приложения](./4.md): выбрать стек (SPA или монолит), наметить хранение данных.
 
-**День 7** — [чек-лист](./3.md), [итоги](./2.md), первый [PR](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/117).
+**День 7** — простой CRUD API (Python/Node) + JSON — [ORM](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro) или [SQL](/encyclopedia/3-data-markup/3-07-sql/887); [чек-лист](./3.md), [итоги](./2.md), первый [PR](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/117).
 
 ---
 

@@ -34,10 +34,11 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [Абстракция](./2.md) | скрытие деталей |
 | 4 | [Инкапсуляция](./3.md) | модификаторы доступа |
 | 5 | [Наследование](./4.md) | иерархии типов |
-| 6 | [Полиморфизм](./5.md) | единый интерфейс |
-| 7 | [Инструменты ООП](./6.md) | enum, коллекции |
-| 8 | [Итоги](./98.md) · [чек-лист](./99.md) | закрепление |
-| 9 | [Частые паттерны GoF](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/141) | Factory, Observer, Strategy и др. после столпов ООП |
+| 6 | [Полиморфизм](./5.md) | единый интерфейс; обобщения — [теория](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/114) |
+| 7 | [Перечисления](./6.md) | enum, закрытые типы |
+| 8 | [Коллекции](./61.md) | списки, словари, перебор |
+| 9 | [Итоги](./98.md) · [чек-лист](./99.md) | закрепление |
+| 10 | [Частые паттерны GoF](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/141) | Factory, Observer, Strategy и др. после столпов ООП |
 
 Парадигмы и SOLID: [Парадигмы и уровни абстракции](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro). Паттерны: [design-patterns](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/intro), шпаргалка — [Частые паттерны GoF в реальных проектах](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/141).
 
