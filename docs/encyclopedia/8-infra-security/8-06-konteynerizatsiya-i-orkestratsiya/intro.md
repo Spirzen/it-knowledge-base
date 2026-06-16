@@ -52,7 +52,7 @@ import DocCardList from '@theme/DocCardList';
 | Архитектура, Swarm, Helm, Kustomize | [Docker Swarm и Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117) |
 | Docker Desktop на Windows — Engine, Dashboard, Kubernetes | [Docker Desktop](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1121) |
 | Практика (Docker Desktop, kubectl) | [Первые шаги](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1172) |
-| Прод-стек, Helm, HPA, Ingress | [Реализация Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1171) |
+| Администрирование кластера, Ingress, хранение данных, деплой, манифесты, Helm-чарты | [Реализация Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1171) |
 | Мониторинг Prometheus, Grafana, Loki | [Практикум Prometheus и Grafana](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/intro), [PromQL — галерея](/lab/Примеры/11114) |
 | Мониторинг Zabbix (серверы, SNMP, SLA) | [Практикум Zabbix](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/intro) |
 | Справочник YAML и команд | [Справочник по Kubernetes](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/211) |

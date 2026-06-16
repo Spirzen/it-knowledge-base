@@ -1,6 +1,6 @@
 ---
 title: "TypeScript — о разделе"
-description: "TypeScript как отдельный язык: основы, экосистема, типизация, архитектура компиляции, практика с React и Node.js."
+description: "TypeScript как язык с проверкой типов — основы, экосистема, типизация, компиляция, практика с React и Node.js."
 sidebar_label: "TypeScript — о разделе"
 related:
   - title: "JavaScript — о разделе"
@@ -23,9 +23,13 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-**TypeScript** — JavaScript с **статической проверкой типов**. Исходники — файлы `.ts`; компилятор [`tsc`](./15.md) проверяет контракты и выдаёт обычный JavaScript. В runtime работает только JS (браузер, Node.js, Deno, Bun); аннотации типов в сборку не попадают.
+**TypeScript** — это [JavaScript](/encyclopedia/5-languages/5-01-javascript/intro) с **проверкой типов до запуска**. Вы пишете файлы `.ts`, компилятор [`tsc`](./15.md) сверяет код с контрактами и выдаёт обычный JavaScript. В браузере и Node.js выполняется только JS; подсказки вроде `name: string` в итоговый файл не попадают.
 
-Это отдельный учебный раздел: от [типов](./10.md) и [первой программы](./4.md) до [TypeScript и React](./21.md), [Node.js](./22.md) и [паттернов](./28.md). Краткий обзор внутри курса JavaScript — [статья 30](/encyclopedia/5-languages/5-01-javascript/30); таблицы и синтаксис — [справочник 301](/encyclopedia/5-languages/5-01-javascript/301).
+Раздел ведёт от [типов](./10.md) и [первой программы](./4.md) до [TypeScript и React](./21.md), [Node.js](./22.md) и [паттернов](./28.md).
+
+- Краткий обзор в курсе JavaScript — [статья 30](/encyclopedia/5-languages/5-01-javascript/30)
+- Таблицы синтаксиса и `tsconfig` — [справочник 301](/encyclopedia/5-languages/5-01-javascript/301)
+- Карта всех статей — [Основы TypeScript и структура языка](./1.md)
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — компиляция, интерпретация, исходный код. Для сравнения динамической типизации — [типы в JavaScript](/encyclopedia/5-languages/5-01-javascript/18). Если статическая типизация знакома по C# — полезно свериться с [типами в C#](/encyclopedia/5-languages/5-05-csharp/20).
 
@@ -52,11 +56,19 @@ import DocCardList from '@theme/DocCardList';
 | Тема | Статья |
 |------|--------|
 | Что такое TypeScript, надмножество JS | [intro](./intro.md), [история](./7.md), [типы §введение](./10.md) |
-| Проблемы JavaScript и зачем TS | [история](./7.md), [типы §зачем](./10.md) |
+| Проблемы JavaScript и роль TypeScript | [история](./7.md), [типы и типизация](./10.md) |
 | Статическая типизация, типобезопасность | [Типы и типизация](./10.md), [рекомендации](./6.md) |
-| Утиная vs структурная типизация | [Типы и типизация](./10.md), [классы](./18.md) |
+| Утиная и структурная типизация | [Типы и типизация](./10.md), [классы](./18.md) |
 | Проектирование типов, LSP (Лисков) | [типы §проектирование](./10.md), [Паттерны](./28.md) |
 | Типы и значения, примитивы, enum, tuple | [Типы и типизация](./10.md), [коллекции](./19.md) |
+| Вывод типов, слишком широкий тип, narrowing | [Типы §inference](./10.md#вывод-типов-type-inference), [§narrowing](./10.md#сужение-типов-narrowing), [переменные](./11.md) |
+| `any` / `unknown`, утверждения, `@ts-expect-error` | [Типы §any и unknown](./10.md#any-и-unknown-когда-что-использовать), [ветвления §утверждения](./12.md#утверждения-типов-type-assertions), [рекомендации](./6.md) |
+| `as const`, `satisfies`, template literal types | [Типы §as const](./10.md#as-const-и-satisfies), [дженерики §template](./24.md#шаблонные-строковые-типы-template-literal-types) |
+| Discriminated union, boolean и union | [Типы §discriminated](./10.md#discriminated-union-дискриминируемое-объединение), [ветвления](./12.md) |
+| `interface` и `type`, `import type` | [синтаксис](./8.md) |
+| Функции: RORO, возвращаемый тип | [функции](./14.md) |
+| Неизменяемость, `readonly` | [переменные](./11.md), [типы §опциональность](./10.md#обязательные-и-опциональные-поля) |
+| Организация файлов в проекте | [рекомендации](./6.md), [экосистема](./3.md) |
 | Обязательны ли аннотации `let x: T` | [переменные](./11.md) |
 | Проверка только на этапе TS | [Компиляция](./15.md) |
 | Type-driven development | [рекомендации](./6.md), [функции](./14.md) |

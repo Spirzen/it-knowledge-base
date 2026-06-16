@@ -7,6 +7,8 @@ sidebar_label: "Начало работы на проекте — о разде�
 related:
   - title: "Команда и управление — о разделе"
     doc: encyclopedia/7-project/7-02-komanda-i-upravlenie/intro
+  - title: "Основы развития информационных систем"
+    doc: encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/2
   - title: "Базы знаний и задачники — о разделе"
     doc: encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/intro
   - title: "Проектирование и архитектура — о разделе"
@@ -86,7 +88,7 @@ flowchart TB
 | **Разработчик** | 4, 7, [Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) | Charter (достаточно краткого brief) |
 | **Аналитик** | 1 (границы), 5 (разграничение), 6 (stories) | Инфраструктура (знать контакты) |
 | **QA** | 4, 6 (DoR/DoD), 7 | WBS (если не госконтракт) |
-| **DevOps** | 3, 4 (CI) | Story mapping |
+| **DevOps** | 3, 4 (CI), [эволюция ИС](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/2) | Story mapping |
 
 <div class="callout callout--info">
   <div class="callout-title">Новичок в существующей команде</div>

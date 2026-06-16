@@ -139,6 +139,7 @@ id: project
 
 ## Проектирование и архитектура
 
+- [7.06. Проектирование и архитектура — о разделе](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/intro)
 - [7.06. Общее о проектировании и архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1)
 - [7.06. Виды архитектур](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/101)
 - [7.06. Стили внутренней организации](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/102)
@@ -154,6 +155,7 @@ id: project
 - [7.06. Имитационное моделирование](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161)
 - [7.06. Основы системного проектирования и масштабируемости параллелизма](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2)
 - [7.06. Архитектурная практика](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3)
+- [8.00. Основы развития информационных систем](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/2)
 - [7.06. Итоги](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/998)
 - [7.06. Чек-лист самопроверки](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/999)
 

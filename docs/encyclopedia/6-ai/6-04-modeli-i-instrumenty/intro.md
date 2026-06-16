@@ -35,17 +35,57 @@ related:
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/125
   - title: "Сколько стоит ИИ"
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/126
+  - title: "Контекст агента — AGENTS, skills, rules"
+    doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/2153
+  - title: "Cursor"
+    doc: tools/development/3
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Перед запуском shell/Git от IDE-агента — [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) (стоп-лист и проверка tool calls). Углублённый маршрут по NLP и Transformer — [Трансформеры и NLP](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro). Обзор **RAG + MCP + агент** как трёх слоёв одного приложения — [RAG, MCP и агенты — три слоя архитектуры](./121). [Типы интеллектуальных агентов](./120) — классическая схема от рефлекса до обучения; [Агенты ИИ](./116) — архитектура LLM-агентов и политики инструментов; [Emergence World](./122) — что происходит, когда такие агенты месяцами живут в одной среде; эксплуатация — [AgentOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151). [MCP-серверы](./114) — стандартизированный слой инструментов для IDE и агентов; сравнение с REST и API Gateway — [MCP и классический API](./114#mcp-i-api).
+Ключевые темы раздела:
 
-**Практика в коде** — [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149) (Python, curl, streaming, JSON mode с построчным разбором) и [Prompt engineering — библиотека промптов](/lab/Примеры/1150) (шаблоны system/user для учёбы и лабораторных).
+- [RAG, MCP и агенты — три слоя архитектуры](./121) — как retrieval, инструменты и оркестрация складываются в одно приложение;
+- [Типы интеллектуальных агентов](./120) — классическая схема от рефлекса до обучения;
+- [Агенты ИИ](./116) — архитектура LLM-агентов, tools и политики безопасности;
+- [MCP-серверы](./114) — стандартизированный слой инструментов для IDE и агентов ([MCP и классический API](./114#mcp-i-api));
+- [Emergence World](./122) — долгоживущие агенты в одной среде;
+- [AgentOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2151) — эксплуатация агентов в проде.
 
-Для выбора сервиса без погружения в ML — [как выбрать модель](./125), [стоимость](./126), [российский стек](./124), [reasoning-модели](./123).
+Перед запуском shell или Git от IDE-агента прочитайте [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101). Углублённый маршрут по NLP — [Трансформеры и NLP](/encyclopedia/6-ai/6-09-transformery-i-nlp/intro).
+
+## Agent Skills
+
+**Agent Skills** — набор markdown-файлов `SKILL.md` с пошаговыми инструкциями для [ИИ-агента](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/116). Каждый файл описывает один типовый этап работы (спецификация, план, код, тест, ревью, деплой). Skills дополняют [rules и AGENTS.md](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2153) — там границы и контракт репозитория, здесь конкретная процедура.
+
+| Слой | Вопрос, на который отвечает |
+| --- | --- |
+| **Rules** | Что запрещено и как оформлять код |
+| **AGENTS.md** | Как устроен репозиторий и как его собирать |
+| **Skills** | Как пройти конкретный этап — spec, plan, build, test, review, ship |
+
+Каждый skill обычно содержит:
+
+- **триггер** — когда применять навык;
+- **процесс** — нумерованные шаги;
+- **red flags** — когда остановиться и позвать человека;
+- **verification** — какие тесты, логи или метрики приложить к отчёту.
+
+Открытый пример lifecycle-навыков — репозиторий [addyosmani/agent-skills](https://github.com/addyosmani/agent-skills). Практика в [Cursor](/tools/development/3) — папка `.cursor/skills/`; теория контекста — [Контекст агента — AGENTS, skills, rules](/encyclopedia/8-infra-security/8-04-devops-ci-cd/2153). Подход стыкуется с [AgentOps](/encyclopedia/6-ai/6-08-agentops/intro) и [вайб-кодингом](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1).
+
+**Практика в коде**
+
+- [OpenAI / API — готовые промпты и вызовы](/lab/Примеры/1149) — Python, curl, streaming, JSON mode;
+- [Prompt engineering — библиотека промптов](/lab/Примеры/1150) — шаблоны system/user для учёбы и лабораторных.
+
+**Выбор модели без погружения в ML**
+
+- [как выбрать модель](./125);
+- [стоимость](./126);
+- [российский стек](./124);
+- [reasoning-модели](./123).
 
 <DocCardList />
 

@@ -54,6 +54,7 @@ mindmap
 
 - [8.00 — о разделе](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/intro)
 - [8.00. Основы инфраструктуры](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1)
+- [8.00. Основы развития информационных систем](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/2)
 - [8.00. Итоги](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/998)
 - [8.00. Чек-лист](/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/999)
 
