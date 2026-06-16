@@ -31,7 +31,7 @@ Valgrind: инструментарий с открытым исходным ко
 
 ## Valve
 
-Valve Corporation: американская компания — разработчик и издатель видеоигр, а также создатель цифровой дистрибутивной платформы Steam. Наиболее известна франшизами Half-Life, Counter-Strike, Portal, Team Fortress и Dota 2. Также разработала игровые движки GoldSrc и Source, а в последние годы — портативную консоль Steam Deck и совместимый слой Proton для запуска Windows-игр на Linux.
+Valve Corporation: американская компания — разработчик и издатель видеоигр, а также создатель цифровой дистрибутивной платформы Steam. Наиболее известна франшизами Half-Life, Counter-Strike, Portal, Team Fortress и Dota 2. Также разработала игровые движки GoldSrc и Source, портативную консоль [Steam Deck](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11432), настольную [Steam Machine](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11441) и совместимый слой Proton для запуска Windows-игр на Linux.
 
 ---
 

@@ -29,6 +29,15 @@
   "encyclopedia/1-basics/1-06-sleng/intro": {
     "title": "Сленг — о разделе"
   },
+  "encyclopedia/1-basics/1-07-nemnogo-o-proshlom/13": {
+    "title": "История персональных компьютеров и видеокарт"
+  },
+  "encyclopedia/1-basics/1-07-nemnogo-o-proshlom/14": {
+    "title": "История первого iPhone"
+  },
+  "encyclopedia/1-basics/1-07-nemnogo-o-proshlom/15": {
+    "title": "История мобильных устройств"
+  },
   "encyclopedia/1-basics/1-07-nemnogo-o-proshlom/4": {
     "title": "История интернета"
   },
@@ -43,6 +52,18 @@
   },
   "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7": {
     "title": "Архитектура персонального компьютера"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/716": {
+    "title": "Дисплеи и технологии отображения"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/717": {
+    "title": "Как выбрать монитор"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/718": {
+    "title": "USB — стандарты, разъёмы и Type-C"
+  },
+  "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/719": {
+    "title": "Камеры смартфонов и вычислительная фотография"
   },
   "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/81": {
     "title": "Справочник по характеристикам устройств"
@@ -82,6 +103,12 @@
   },
   "encyclopedia/1-basics/1-15-tekst/intro": {
     "title": "Текст — о разделе"
+  },
+  "encyclopedia/1-basics/1-18-kompyuternye-igry/7": {
+    "title": "DirectX, OpenGL и Vulkan — простыми словами"
+  },
+  "encyclopedia/1-basics/1-18-kompyuternye-igry/8": {
+    "title": "DLSS и FSR — апскейлинг в играх"
   },
   "encyclopedia/1-basics/1-18-kompyuternye-igry/intro": {
     "title": "Компьютерные игры — о разделе"
@@ -1183,6 +1210,15 @@
   },
   "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11434": {
     "title": "Как устроена Playstation 5"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11439": {
+    "title": "История DirectX — от DOS до нейросетей"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11440": {
+    "title": "Как устроена Nintendo Switch 2"
+  },
+  "encyclopedia/9-spinoff/9-03-igrovaya-industriya/11441": {
+    "title": "Как устроен Steam Machine"
   },
   "encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro": {
     "title": "Игроведение — о разделе"

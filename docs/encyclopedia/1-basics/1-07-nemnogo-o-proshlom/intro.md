@@ -7,6 +7,12 @@ related:
     doc: encyclopedia/1-basics/1-07-nemnogo-o-proshlom/1
   - title: "Поколения вычислительной техники"
     doc: encyclopedia/1-basics/1-07-nemnogo-o-proshlom/12
+  - title: "История персональных компьютеров и видеокарт"
+    doc: encyclopedia/1-basics/1-07-nemnogo-o-proshlom/13
+  - title: "История первого iPhone"
+    doc: encyclopedia/1-basics/1-07-nemnogo-o-proshlom/14
+  - title: "История мобильных устройств"
+    doc: encyclopedia/1-basics/1-07-nemnogo-o-proshlom/15
   - title: "Как работает компьютер"
     doc: encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro
   - title: "Программа"
@@ -40,7 +46,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**История** — [История развития сетевых технологий](/encyclopedia/2-system-network/2-03-set-i-internet/2), [История развития структур данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/11), [История развития NoSQL-систем](/encyclopedia/3-data-markup/3-06-nosql/1), [История языка JavaScript](/encyclopedia/5-languages/5-01-javascript/11), [История языка Python](/encyclopedia/5-languages/5-02-python/14), [История языка Java](/encyclopedia/5-languages/5-03-java/11).
+**История** — [История персональных компьютеров и видеокарт](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/13), [История первого iPhone](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/14), [История мобильных устройств](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/15), [История развития сетевых технологий](/encyclopedia/2-system-network/2-03-set-i-internet/2), [История развития структур данных](/encyclopedia/3-data-markup/3-02-struktury-dannyh/11), [История развития NoSQL-систем](/encyclopedia/3-data-markup/3-06-nosql/1), [История языка JavaScript](/encyclopedia/5-languages/5-01-javascript/11), [История языка Python](/encyclopedia/5-languages/5-02-python/14), [История языка Java](/encyclopedia/5-languages/5-03-java/11).
 
 {/* /sidebar-collections */}
 

@@ -147,6 +147,12 @@ FLOPS (Floating-Point Operations Per Second — операций с плаваю
 
 ---
 
+## FSR
+
+FSR (FidelityFX Super Resolution) — открытая технология апскейлинга AMD из набора FidelityFX. **FSR 1.0** — пространственный апскейл на шейдерах, работает на любом GPU. **FSR 2+** — временная реконструкция (аналог DLSS 2). **FSR 3** добавляет программную **генерацию кадров** без привязки к Optical Flow. **FSR 4** (2025+) — нейросетевой апскейл с аппаратным ускорением на новых GPU AMD. Подробнее — [DLSS и FSR — апскейлинг в играх](/encyclopedia/1-basics/1-18-kompyuternye-igry/8).
+
+---
+
 ## FOREIGN KEY
 
 FOREIGN KEY : внешний ключ.
