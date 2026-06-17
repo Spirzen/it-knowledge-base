@@ -27,6 +27,25 @@ import DocCardList from '@theme/DocCardList';
 
 Раздел про **работу вне офиса** — доступы и связь, отличие "удалёнки" от дистанционной работы по ТК РФ, процессы и метрики команды. Связан с [Коммуникацией](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro) и [Карьерой в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro).
 
+<div class="callout callout--info">
+  <div class="callout-title">Новая реальность форматов работы</div>
+
+  <div class="callout-body">
+  Полная удалёнка больше не "дефолт" для большинства компаний.
+  <ul>
+    <li>во многих командах закрепился гибрид;</li>
+    <li>в ряде компаний усилился контроль процессов и активности;</li>
+    <li>ценность сотрудника всё сильнее измеряется по результату, предсказуемости и коммуникации.</li>
+  </ul>
+  В этом разделе термины и практики разобраны на примерах:
+  <ul>
+    <li><a href="/encyclopedia/1-basics/1-27-udalennaya-rabota/1#как-устроено-подключение-схема-выше">VPN, VDI, Zero Trust</a></li>
+    <li><a href="/encyclopedia/1-basics/1-27-udalennaya-rabota/1#как-организована-удалёнка-в-it">коммуникация и отчётность</a></li>
+    <li><a href="/encyclopedia/1-basics/1-27-udalennaya-rabota/1#правовые-и-экономические-аспекты-удалённой-работы">правовой и налоговый контекст</a></li>
+  </ul>
+</div>
+  </div>
+
 ---
 
 ## Как читать
