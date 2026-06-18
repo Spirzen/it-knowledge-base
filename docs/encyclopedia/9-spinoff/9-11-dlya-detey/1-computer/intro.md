@@ -22,7 +22,9 @@ import DocCardList from '@theme/DocCardList';
 
 Материалы про **аппаратуру и повседневную работу с ПК** — устройства ввода-вывода, файловая система, компоненВы системного блока, основы сети и правила безопасности.
 
-**Рекомендуемый порядок:** если Вы впервые садитесь за компьютер — [Знакомимся с компьютером](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/1); если уже умеете сохранять файлы — [Простые действия](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/12) или [Физические компоненты](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/14).
+**Рекомендуемый порядок:** если Вы впервые садитесь за компьютер — [Знакомимся с компьютером](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/1); если уже умеете сохранять файлы — [Простые действия](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/12) или [Физические компоненты](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/11).
+
+**Углубление «как устроено железо»** (после базовых статей): [Цифровой сигнал и двоичный код](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/17) → [Транзисторы и микросхемы](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/18) → [Память изнутри](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/19) → [Процессор](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/20).
 
 <div class="callout callout--tip">
   <div class="callout-title">Интерактив</div>

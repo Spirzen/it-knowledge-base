@@ -110,6 +110,7 @@ mindmap
 - [1.035. Ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1)
 - [1.035. Кодирование, сжатие и архивация](/encyclopedia/1-basics/1-035-bazovaya-informatika/2)
 - [1.035. Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3)
+- [1.035. Организация, архитектура и уровни компьютера](/encyclopedia/1-basics/1-035-bazovaya-informatika/10)
 - [1.035. Алгоритмы, языки и программирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/4)
 - [1.035. ОС, файловые системы и служебные программы](/encyclopedia/1-basics/1-035-bazovaya-informatika/5)
 - [1.035. Интернет и сетевые сервисы](/encyclopedia/1-basics/1-035-bazovaya-informatika/6)

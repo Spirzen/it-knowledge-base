@@ -23,6 +23,8 @@ related:
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/11
   - title: "Версии C# и .NET — справочная таблица"
     doc: encyclopedia/5-languages/5-05-csharp/48
+  - title: "Сравнение C# и Java"
+    doc: encyclopedia/5-languages/5-05-csharp/50
   - title: "Пакетная работа с данными"
     doc: encyclopedia/3-data-markup/3-11-analiz-dannyh/433
   - title: "Разработка игр — о разделе"
@@ -92,6 +94,12 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
   В редакторе Unity используется профиль .NET, совместимый с игровым рантаймом (IL2CPP / Mono). Веб- и desktop-статьи этого раздела (ASP.NET, WPF) для первого игрового прототипа можно отложить.
 </div>
 </div>
+
+---
+
+## Сравнение с Java
+
+Приходите с Java или выбираете между двумя стеками — [Сравнение C# и Java](./50.md): среда выполнения CLR и JVM, синтаксис, async и virtual threads, ASP.NET Core и Spring, игры, Big Data, производительность и рынок (2026). Краткий FAQ — в [итогах раздела](./998.md).
 
 ---
 

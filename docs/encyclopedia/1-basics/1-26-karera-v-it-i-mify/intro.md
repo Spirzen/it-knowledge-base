@@ -27,13 +27,15 @@ related:
     doc: encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro
   - title: "Как понять, что пора менять работу — о разделе"
     doc: encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/intro
+  - title: "Культ труда в IT"
+    doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/16
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про **карьерные пути**, **найм**, **рынок труда** и **распространённые мифы**. Материалы связаны между собой — сначала обзор и мифы, затем роли и грейды, собеседования, [тестовые задания](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/13), HR и портфолио; отдельно — [софт-скиллы](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/14) и [цифровое благополучие при учёбе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/15).
+Раздел про **карьерные пути**, **найм**, **рынок труда** и **распространённые мифы**. Материалы связаны между собой — сначала обзор и мифы, затем роли и грейды, собеседования, [тестовые задания](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/13), HR и портфолио; отдельно — [софт-скиллы](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/14), [культ труда и контекст выгорания](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/16) и [цифровое благополучие при учёбе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/15).
 
 <div class="callout callout--warning">
   <div class="callout-title">Как читать карьерный раздел в 2026 году</div>
@@ -72,6 +74,8 @@ import DocCardList from '@theme/DocCardList';
 | **Live coding** | Написание или доработка кода на интервью в реальном времени | [Тестовое задание](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/13#live-coding) |
 | **Тимлид** | Оперативный руководитель команды разработки: люди, сроки, стыковка с продуктом | [Управленческая ветка](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/912) |
 | **Портрет кандидата** | Внутренний чек-лист навыков и мотивации до публикации вакансии | [Найм для руководителя](/encyclopedia/7-project/7-02-komanda-i-upravlenie/144) |
+| **Выгорание** (burnout) | Длительное истощение от хронического стресса на работе или учёбе | [Культ труда](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/16), [Восстановление](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/5) |
+| **Crunch** | Период принудительных или неформальных переработок перед дедлайном | [Культ труда](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/16), [Геймдев](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/118) |
 
 ### Термины для новичка
 

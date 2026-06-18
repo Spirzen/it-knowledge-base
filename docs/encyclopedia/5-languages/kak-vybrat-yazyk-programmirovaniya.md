@@ -977,6 +977,8 @@ flowchart LR
 | IDE | IntelliJ IDEA | Visual Studio, Rider |
 | Open source | Полностью | Core open, экосистема mixed |
 
+Развёрнутое сравнение с примерами кода и таблицами по сферам применения — [Сравнение C# и Java](/encyclopedia/5-languages/5-05-csharp/50).
+
 **Go и Rust**
 
 | Критерий | Go | Rust |
@@ -986,6 +988,19 @@ flowchart LR
 | Сборка | Быстрая | Дольше, cargo |
 | Типичная роль | Microservices, CLI, DevOps | Systems, WASM, infra tools |
 | Фреймворк web | Gin, Echo, std | Axum, Actix |
+
+**Java и Kotlin**
+
+| Критерий | Java | Kotlin |
+|----------|------|--------|
+| Runtime | JVM | JVM (тот же байт-код) |
+| Синтаксис | Многословный, классический | Лаконичный, null-safety в типах |
+| Android | Legacy, поддерживается | Приоритетный язык Google |
+| Enterprise backend | Spring — де-факто стандарт | Spring Boot, Ktor |
+| Async | Virtual threads (21+), CompletableFuture | Корутины, Flow |
+| Миграция | — | Постепенная в одном репозитории |
+
+Развёрнутое сравнение с примерами кода и таблицами по сферам применения — [Сравнение Java и Kotlin](/encyclopedia/5-languages/5-09-kotlin/235).
 
 **Kotlin и Swift**
 

@@ -105,7 +105,20 @@ Unreal: серия шутеров от первого лица, разработ
 
 ## Unreal Engine
 
-Unreal Engine: проприетарный кроссплатформенный игровой движок, разработанный Epic Games. Известен высококачественной графикой (нанит, Lumen), визуальным скриптингом Blueprints, поддержкой VR/AR и масштабируемостью — от мобильных игр до AAA-проектов (Fortnite, Gears of War, Final Fantasy VII Remake). С версии 4 доступен разработчикам по модели royalty (роялти при коммерческом успехе).
+Unreal Engine — проприетарный кроссплатформенный [игровой движок](/glossary/G#game-engine) от Epic Games. Сильные стороны — фотореалистичная графика (Nanite, Lumen), визуальные **Blueprints**, открытые исходники для лицензиатов, проекты от *Fortnite* до *Final Fantasy VII Remake*. Лицензия — royalty после порога выручки. В **июне 2026** анонсирован преемник — [Unreal Engine 6](/glossary/U#unreal-engine-6).
+
+---
+
+## Unreal Engine 6
+
+Unreal Engine 6 (UE6) — следующее поколение движка Epic Games.
+
+- единый редактор **UE5** и **UEFN**;
+- язык **Verse** для игровой логики;
+- **Scene Graph** и **ECS** для объектов сцены;
+- **MCP** — подключение LLM к редактору.
+
+Ранний доступ планируется на конец **2027** года. Разбор для новичка — [Unreal Engine 6](/encyclopedia/9-spinoff/9-04-razrabotka-igr/129).
 
 ---
 

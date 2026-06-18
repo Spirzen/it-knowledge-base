@@ -50,6 +50,7 @@ import DocCardList from '@theme/DocCardList';
 | Трек | Проект | Статус | Стек |
 |------|--------|--------|------|
 | Python | [Bubble Shooter](./10.md) | готов (12 этапов) | Python, Pygame |
+| Python | [Space Invaders](./11.md) | готов, 8 этапов и ревизия модулей | Python, Pygame |
 | Python | [Battle City](https://github.com/Spirzen/BattleCity) | готов (16 этапов, эталон на GitHub) | Python, Pygame |
 | Python | [Match3](./2.md) | готов (18 этапов, [эталон на GitHub](https://github.com/Spirzen/Match3)) | Python, Pygame |
 | Python | [Ping Pong](./3.md) | готов (полная сборка в конце) | Python, Pygame |

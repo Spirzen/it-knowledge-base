@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/5-languages/5-07-php/intro
   - title: "Ruby — о разделе"
     doc: encyclopedia/5-languages/5-11-ruby/intro
+  - title: "Сравнение Java и Kotlin"
+    doc: encyclopedia/5-languages/5-09-kotlin/235
   - title: "Мобильные приложения на Kotlin"
     doc: encyclopedia/5-languages/5-09-kotlin/234
   - title: "Справочник по Android"
@@ -82,6 +84,12 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+## Сравнение с Java
+
+Приходите с Java, выбираете между языками на JVM или планируете миграцию — [Сравнение Java и Kotlin](./235.md). В статье — null-safety, корутины и виртуальные потоки, таблицы возможностей, плюсы и минусы, Android и enterprise, критерии выбора (2026). Вызовы в одном проекте — [совместимость Kotlin и Java](./233.md).
+
+---
+
 ## Три маршрута — выберите один
 
 Не проходите все ветки сразу. После [первой программы](./2.md) идите по **одной** колонке:
@@ -112,7 +120,7 @@ import DocCardList from '@theme/DocCardList';
 4. [ООП](./15.md) → [синтаксис](./16.md) → [конструкции](./17.md).
 5. [Теория: ошибки и исключения](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111) → [иерархия в Kotlin](./171.md), практика JVM — [Java / 21](/encyclopedia/5-languages/5-03-java/21) → [коллекции и Sequence](./225.md).
 6. [Корутины](./222.md) → [Flow](./226.md) — до Ktor и тяжёлого Android.
-7. [Kotlin ↔ Java](./233.md) — если в проекте оба языка.
+7. [Сравнение Java и Kotlin](./235.md) — критерии выбора; при двух языках в репозитории — [interop](./233.md).
 8. [Справочник](./3.md), [итоги](./998.md), [чек-лист](./999.md).
 
 ---
@@ -120,6 +128,7 @@ import DocCardList from '@theme/DocCardList';
 ## Справочник и углубление
 
 - [Экосистема Kotlin-приложений](./10.md) — Android, Ktor, KMM, SQLDelight, Koin (обзор).
+- [Сравнение Java и Kotlin](./235.md) — критерии выбора на JVM.
 - [Рекомендации по разработке](./101.md) — стиль, тестируемость, DI.
 - [Тестирование](./223.md) — JUnit 5, MockK, Kotest.
 - [Консольный ввод-вывод](./227.md) — `readln()`, кодировки.

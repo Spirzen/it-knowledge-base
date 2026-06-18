@@ -9,6 +9,8 @@ related:
     doc: encyclopedia/5-languages/5-02-python/intro
   - title: "C# — о разделе"
     doc: encyclopedia/5-languages/5-05-csharp/intro
+  - title: "Сравнение JavaScript и TypeScript"
+    doc: encyclopedia/5-languages/5-10-typescript/29
   - title: "Что такое код"
     doc: encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1
   - title: "React — компоненты-рецепты"
@@ -56,7 +58,8 @@ import DocCardList from '@theme/DocCardList';
 | Тема | Статья |
 |------|--------|
 | Что такое TypeScript, надмножество JS | [intro](./intro.md), [история](./7.md), [типы §введение](./10.md) |
-| Проблемы JavaScript и роль TypeScript | [история](./7.md), [типы и типизация](./10.md) |
+| Сравнение JavaScript и TypeScript | [Сравнение JS и TS](./29.md) |
+| Проблемы JavaScript и роль TypeScript | [история](./7.md), [сравнение JS и TS](./29.md), [типы и типизация](./10.md) |
 | Статическая типизация, типобезопасность | [Типы и типизация](./10.md), [рекомендации](./6.md) |
 | Утиная и структурная типизация | [Типы и типизация](./10.md), [классы](./18.md) |
 | Проектирование типов, LSP (Лисков) | [типы §проектирование](./10.md), [Паттерны](./28.md) |
@@ -91,6 +94,7 @@ import DocCardList from '@theme/DocCardList';
 | Шаг | Материал | Назначение |
 |-----|----------|-------|
 | 1 | [Основы и карта раздела](./1.md) | Полный маршрут по темам |
+| 1a | [Сравнение JS и TS](./29.md) | Когда что выбирать, плюсы и минусы |
 | 2 | [Первая программа](./4.md) | `npm`, `tsc`, первый `dist/` |
 | 3 | [Типы и типизация](./10.md) | Ядро языка — контракты данных |
 | 4 | [Рекомендации](./6.md) | `strict`, `unknown`, CI |

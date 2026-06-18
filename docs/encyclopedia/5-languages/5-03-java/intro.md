@@ -101,6 +101,18 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+## Сравнение с Kotlin
+
+На одной JVM — [Сравнение Java и Kotlin](/encyclopedia/5-languages/5-09-kotlin/235). В статье — синтаксис, null-safety, корутины и виртуальные потоки, экосистема, плюсы и минусы, выбор стека (2026). Смешанный проект — [совместимость Kotlin и Java](/encyclopedia/5-languages/5-09-kotlin/233).
+
+---
+
+## Сравнение с C#
+
+Приходите с C# / .NET или выбираете между стеками — [Сравнение C# и Java](/encyclopedia/5-languages/5-05-csharp/50): JVM и CLR, синтаксис, virtual threads и async/await, Spring и ASP.NET Core, Big Data, производительность и рынок (2026).
+
+---
+
 ## Справочник и углубление
 
 - [Справочник по Java](./3.md) — синтаксис, коллекции, `java.time`, JDBC, JVM + API-дополнения по language basics, collections, streams/gatherers и virtual threads.

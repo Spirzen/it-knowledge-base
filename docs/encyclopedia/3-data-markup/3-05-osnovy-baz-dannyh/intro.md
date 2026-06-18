@@ -35,7 +35,7 @@ import DocCardList from '@theme/DocCardList';
 4. [Как СУБД выполняет запрос](./3.md) — путь SQL, [когда нужна оптимизация](./3.md#kogda-optimizaciya-imeet-znachenie), [пять шагов формулировки запроса](./3.md#kak-sostavit-zapros-po-shagam); буферы, [пять структур индексов](./3.md#pyat-osnovnyh-struktur-indeksov), [типы по роли](./3.md#tipy-indeksov-po-role), партиции, план. Конспект для масштабирования — [опорные темы](./12.md). Эксплуатация — [управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro).
 5. [Теоретические основы реляционных данных](./4.md) — Кодд, страницы, WAL, алгебра.
 6. [Двенадцать правил Кодда](./5.md) — критерии "настоящей" реляционной СУБД.
-7. [Entity Relationship](./11.md) — сущности, первичный и внешний ключ, кардинальность 1:1 / 1:N / M:N, DDL-примеры; теория ключей и JOIN — [Реляционная модель](/encyclopedia/3-data-markup/3-07-sql/103.md#otnoshenie-na-praktike).
+7. [Entity Relationship](./11.md) — сущности, ключи, кардинальность 1:1 / 1:N / M:N, [расширенная EER](./11.md#rasshirennaya-er-model) (супертипы, подтипы), DDL-примеры; теория ключей и JOIN — [Реляционная модель](/encyclopedia/3-data-markup/3-07-sql/103.md#otnoshenie-na-praktike).
 8. [Конкурентный доступ](./7.md) — блокировки, MVCC, оптимистичный контроль.
 9. [Восстановление после сбоя](./8.md) — WAL, redo/undo; отличие от бэкапа DBA.
 10. [Итоги](./98.md) и [чек-лист](./99.md).
@@ -44,7 +44,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Нормализация (1НФ–4НФ, НФБК)** подробно в разделе SQL: [Нормализация](/encyclopedia/3-data-markup/3-07-sql/104.md#normalnye-formy) — после [Entity Relationship](./11.md) и [Реляционная модель данных](/encyclopedia/3-data-markup/3-07-sql/103.md). Краткий [чек-лист моделирования](/encyclopedia/3-data-markup/3-07-sql/104.md#chek-list-modelirovaniya-dannyh) — в той же главе.
 
-**Файлы и СУБД, нотации ER:** [ERD среди нотаций моделирования](/encyclopedia/7-project/7-04-analitika/1231), [СУБД — файловое хранение и ограничения](./2.md#fajlovoe-hranenie-i-subd), [Entity Relationship — нотации](./11.md#notacii-er-modeli).
+**Файлы и СУБД, нотации ER:** [ERD среди нотаций моделирования](/encyclopedia/7-project/7-04-analitika/1231), [расширенная EER (супертипы и подтипы)](./11.md#rasshirennaya-er-model), [СУБД — файловое хранение и ограничения](./2.md#fajlovoe-hranenie-i-subd), [Entity Relationship — нотации](./11.md#notacii-er-modeli).
 
 **SQL, транзакции, администрирование:** раздел [SQL](/encyclopedia/3-data-markup/3-07-sql/intro) и [Управление РСУБД](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/intro) (в т.ч. [администрирование в облаке](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3.md)). Практика запросов на схеме магазина с разбором — [SQL — реальные кейсы](/lab/Примеры/1152).
 

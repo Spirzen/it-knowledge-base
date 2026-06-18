@@ -103,7 +103,7 @@ import DocCardList from '@theme/DocCardList';
   **Школьный маршрут**
 
   - главы **1 → 8** по порядку или по [расширенной карте](#расширенная-карта-курса)
-  - после главы 3 — [Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11)
+  - после главы 3 — [Организация и уровни](/encyclopedia/1-basics/1-035-bazovaya-informatika/10), затем [Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11)
   - глава 9 — справочник сред (Godot, Flutter, Python…) по мере проектов
   - после главы 6 — [Passkeys](/encyclopedia/1-basics/1-035-bazovaya-informatika/113)
 
@@ -126,6 +126,7 @@ import DocCardList from '@theme/DocCardList';
 | 1 | Ключевые понятия и маршрут | [Базовая информатика — ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1) | [Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) |
 | 2 | Кодирование, сжатие, архивы, обзор БД | [Кодирование, сжатие и архивация](/encyclopedia/1-basics/1-035-bazovaya-informatika/2) | [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2), [типы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1#chetyre-osnovnyh-tipa-baz-dannyh) |
 | 3 | Железо, периферия, сети (компьютер, ЭВМ, устройства) | [Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/1) |
+| 10 | Организация, архитектура, уровни (фон Нейман, иерархия уровней) | [Организация, архитектура и уровни компьютера](/encyclopedia/1-basics/1-035-bazovaya-informatika/10) | [Многоуровневая организация](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13), [Архитектура фон Неймана](/encyclopedia/2-system-network/2-10-zhelezo/11) |
 | 4 | Алгоритмы, языки, программирование | [Алгоритмы, языки и программирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) | [Программа](/encyclopedia/1-basics/1-19-programma/intro), [Код и разработка](/encyclopedia/4-code-dev/code-dev), [Ассемблер](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Visual Basic](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
 | 5 | ОС, файловые системы, утилиты | [ОС, файловые системы и служебные программы](/encyclopedia/1-basics/1-035-bazovaya-informatika/5) | [ОС](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) |
 | 6 | Интернет и сервисы | [Интернет и сетевые сервисы](/encyclopedia/1-basics/1-035-bazovaya-informatika/6) | [Сеть](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [Поиск](/encyclopedia/1-basics/1-21-poisk-informatsii/intro), [Коммуникация](/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/intro) |
@@ -192,6 +193,23 @@ import DocCardList from '@theme/DocCardList';
 | **Предварительно** | Главы 1–2 |
 | **Углубление** | [Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11), [Железо](/encyclopedia/2-system-network/2-10-zhelezo/intro) |
 | **Самопроверка** | Чек-лист: 3, 4 |
+
+---
+
+### Глава 10 — Организация, архитектура и уровни
+
+| Параметр | Содержание |
+|----------|------------|
+| **Результаты** | Разделить аппаратуру и ПО; объяснить фон Неймана; назвать уровни от логики до приложений; отличить организацию от архитектуры (ISA) |
+| **Время** | 1–1,5 ч |
+| **Предварительно** | Главы 2–3 |
+| **Углубление** | [Многоуровневая организация](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13), [Архитектура фон Неймана](/encyclopedia/2-system-network/2-10-zhelezo/11) |
+| **Самопроверка** | Задачи в конце [главы 10](/encyclopedia/1-basics/1-035-bazovaya-informatika/10) |
+
+<div class="callout callout--info">
+  <div class="callout-title">Зачем эта глава</div>
+  <div class="callout-body">Связывает аппаратуру, программы и уровни абстракции в одну картину — удобно перед главой об ОС и блоком про память.</div>
+</div>
 
 ---
 

@@ -74,9 +74,9 @@ Python удобен для **первого языка**: читается по�
   <div class="callout-body">
   Теория ОС — [процессы и потоки](/encyclopedia/4-code-dev/4-05-asinhronnost/1), [синхронизация](/encyclopedia/4-code-dev/4-05-asinhronnost/11).
 
-  В Python: `threading` и `multiprocessing` — [многопоточность](/encyclopedia/5-languages/5-02-python/26); `asyncio` — [асинхронность](/encyclopedia/5-languages/5-02-python/27);
+  В Python: сравнение моделей — [асинхронность и многопоточность](/encyclopedia/5-languages/5-02-python/29); углублённо `asyncio` — [основы asyncio](/encyclopedia/5-languages/5-02-python/291).
 
-  GIL — [ограничения параллелизма](/encyclopedia/5-languages/5-02-python/28).
+  GIL и runtime — [архитектура выполнения](/encyclopedia/5-languages/5-02-python/27).
 
   Сетевой I/O — [сетевое программирование](/encyclopedia/5-languages/5-02-python/315) и [справочник библиотек](/encyclopedia/5-languages/5-02-python/315#spravochnik-setevyh-bibliotek).
 </div>
@@ -113,7 +113,7 @@ Python удобен для **первого языка**: читается по�
 | 4b3 | [Canvas 2D](/encyclopedia/5-languages/5-01-javascript/47) · [p5.js в Lab](/lab/Примеры/1114) · [SVG в Lab](/lab/Примеры/1119) | те же фигуры в браузере: Canvas/p5 или векторная разметка |
 | 4c | [Matplotlib — графики](./319.md) · [примеры](/lab/Примеры/1112) | Линии, гистограммы, scatter, подграфики |
 | 4d | [Excel — формулы](/lab/Примеры/1139) → [Анализ данных — pandas, NumPy](./33.md) · [NumPy — примеры](/lab/Примеры/1129) · [Pandas — типовые операции при анализе данных](/encyclopedia/3-data-markup/3-11-analiz-dannyh/428) · [примеры Pandas](/lab/Примеры/1113) · [практикум Pandas Data Viewer](./334.md) | Сначала массивы, затем таблица, CSV, groupby; сквозное GUI-приложение |
-| 4d-ml | [PyTorch для разработчика](./333.md) → [практикум — цифры MNIST на PyTorch](./335.md) | CNN, обучение, GUI-инференс; образец `F:\Projects\Python\TestPyTorch` |
+| 4d-ml | [PyTorch для разработчика](./333.md) → [практикум — цифры MNIST на PyTorch](./335.md) · [практикум — тональность отзывов](./336.md) | CNN и текст; обучение, сохранение весов |
 | 4e | [SymPy — уравнения и производные](/lab/Примеры/1118) · [LaTeX — формулы](/lab/Примеры/1137) | Школа и вуз: корни, производные, формулы в отчёте; график f(x) — [Matplotlib — графики](/lab/Примеры/1112) |
 | 5 | [pytest](./37.md) | Тесты |
 

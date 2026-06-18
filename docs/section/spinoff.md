@@ -81,7 +81,7 @@ mindmap
 - [О разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro)
 - [Дорожная карта геймдева](/encyclopedia/9-spinoff/9-04-razrabotka-igr/11)
 - [Godot — первая игра](/encyclopedia/9-spinoff/9-04-razrabotka-igr/207)
-- [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) · [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4) · [Roblox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2)
+- [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) · [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4) · [UE6](/encyclopedia/9-spinoff/9-04-razrabotka-igr/129) · [Verse](/encyclopedia/9-spinoff/9-04-razrabotka-igr/130) · [Roblox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2)
 - [Звук — FMOD и Wwise](/encyclopedia/9-spinoff/9-04-razrabotka-igr/126)
 - [Игровая доступность](/encyclopedia/9-spinoff/9-04-razrabotka-igr/127)
 - [ИИ в играх](/encyclopedia/9-spinoff/9-04-razrabotka-igr/128)

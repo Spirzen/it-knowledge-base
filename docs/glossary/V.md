@@ -149,6 +149,18 @@ Voltage Regulator Module (модуль регулятора напряжения
 
 ---
 
+## Verse (Epic Games)
+
+Verse — язык программирования Epic Games для UEFN и Unreal Engine 6.
+
+- функциональный стиль;
+- транзакции и персистентное состояние для онлайн-миров;
+- единые API для скриптов, материалов и ассетов движка.
+
+В UE6 Verse станет основным языком сценариев; **C++** остаётся для ядра движка. См. [Verse](/encyclopedia/9-spinoff/9-04-razrabotka-igr/130), [Unreal Engine 6](/encyclopedia/9-spinoff/9-04-razrabotka-igr/129), [UEFN](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/127).
+
+---
+
 ## VSync
 
 Vertical Synchronization (вертикальная синхронизация): технология синхронизации частоты кадров (FPS) графического вывода с частотой обновления монитора (Hz) для устранения разрывов изображения (screen tearing). Может вводить задержку ввода (input lag) и снижать отзывчивость, особенно при падении FPS ниже частоты монитора. Альтернативы: G-Sync (NVIDIA), FreeSync (AMD).

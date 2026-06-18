@@ -23,6 +23,8 @@ related:
     doc: lab/examples/1141
   - title: "Unity C# — скрипты для новичков"
     doc: lab/examples/1136
+  - title: "Unreal Engine 6"
+    doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/129
   - title: "Практикум разработки игр — о разделе"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Игроведение — о разделе"
@@ -42,7 +44,9 @@ import DocCardList from '@theme/DocCardList';
 
 <ExternalPlayEmbed example="spinoff/game-dev-hub" title="Разработка игр — навигатор" minHeight={560} />
 
-Здесь собран путь от "как вообще делают игры" до работы в **Unity**, **Unreal Engine** и **Roblox**. В **мае 2026** Epic анонсировала **Unreal Engine 6** (демонстрация на обновлённой *Rocket League*); практические главы по Unreal пока ориентированы на **UE 5** — см. [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112) и [Unreal Engine](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4). Материалы рассчитаны на новичка — много пояснений, примеров кода и ссылок между главами — можно читать выборочно, но логичнее двигаться сверху вниз по блокам ниже.
+Здесь собран путь от "как вообще делают игры" до работы в **Unity**, **Unreal Engine** и **Roblox**. В **июне 2026** на Unreal Fest Epic представила **Unreal Engine 6** — единый редактор с UEFN, язык Verse, ИИ через MCP; ранний доступ запланирован на конец **2027**. Обзор с расшифровкой терминов — [Unreal Engine 6](/encyclopedia/9-spinoff/9-04-razrabotka-igr/129); практика в редакторе — [UE 5](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4) и [Игровой движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112).
+
+Материалы рассчитаны на новичка — много пояснений, примеров кода и ссылок между главами. Можно читать выборочно, но логичнее двигаться сверху вниз по блокам ниже.
 
 **Тяжёлые листинги** (Luau, C#, Python-практикумы) — на [code.spirzen.ru](https://code.spirzen.ru/); **интерактив** (навигатор ниже, пайплайны, платформы) — на [play.spirzen.ru](https://play.spirzen.ru/).
 
@@ -53,7 +57,7 @@ import DocCardList from '@theme/DocCardList';
 | Тип страницы | Зачем | Примеры |
 |--------------|--------|---------|
 | **Обзор** | Контекст, термины, сравнения | [Процесс](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1), [Движок](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112), [Гейм-дизайн](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117) |
-| **Практика в редакторе** | Пошагово в движке | [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3), [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4), [Roblox — Studio](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203), [обби](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) |
+| **Практика в редакторе** | Пошагово в движке | [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3), [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4), [UE6](/encyclopedia/9-spinoff/9-04-razrabotka-igr/129), [Verse](/encyclopedia/9-spinoff/9-04-razrabotka-igr/130), [Roblox — Studio](/encyclopedia/9-spinoff/9-04-razrabotka-igr/203), [обби](/encyclopedia/9-spinoff/9-04-razrabotka-igr/204) |
 | **Практикум на коде** | Мини-игры на Python и Java | [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) |
 | **Быстрые примеры Pygame** | Один файл — одна игра, разбор строк | [Pygame — мини-игры](/lab/Примеры/1132) |
 | **Команды и datapack Minecraft** | Чат, scoreboard, `mcfunction`, load/tick | [Minecraft — команды и datapack](/lab/Примеры/1142) |
@@ -170,8 +174,8 @@ import DocCardList from '@theme/DocCardList';
 Если нужен **код на Python без Unity**, а не редактор движка:
 
 1. [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312) — игровой цикл, события, `Rect`, спрайты.
-2. [Pygame — мини-игры на Python](/lab/Примеры/1132) — змейка, Pong, Breakout, Flappy: скопировать скрипт и разобрать по комментариям (удобно перед курсовой или олимпиадой). Альтернатива в мире Minecraft — [команды и datapack](/lab/Примеры/1142).
-3. [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) — Tetris, Match-3, диаблоид по этапам с полной ревизией файлов.
+2. [Pygame — мини-игры на Python](/lab/Примеры/1132) — змейка, Pong, Breakout, Flappy, [крестики-нолики с ИИ](/lab/Примеры/1132#tic-tac-toe). Один файл — скопировать и разобрать по шагам. Для Minecraft без Python — [команды и datapack](/lab/Примеры/1142).
+3. [Практикум разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) — Tetris, Match-3, [Space Invaders](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/11), диаблоид. Пошаговые этапы и полные файлы для сверки.
 
 Для рисования фигур без игровой логики — [Turtle в Lab](/lab/Примеры/111) (Python), [p5.js в Lab](/lab/Примеры/1114) (Canvas в браузере) или [SVG в Lab](/lab/Примеры/1119) (вектор в HTML); для 3D — [Panda3D](/encyclopedia/5-languages/5-02-python/318) и [примеры сцен](/lab/Примеры/1111).
 

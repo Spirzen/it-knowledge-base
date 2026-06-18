@@ -14,3 +14,11 @@ export function encyclopediaMediaUrl(encyclopediaRelativePath) {
 export function bpmnIconMediaUrl(bpmnIconId) {
   return encyclopediaMediaUrl(`_shared/img/bpmn/${bpmnIconId}.svg`);
 }
+
+/** Общие учебные схемы (источник — 1-basics/1-07-nemnogo-o-proshlom) */
+export const VON_NEUMANN_ARCHITECTURE_SVG = encyclopediaMediaUrl(
+  '1-basics/1-07-nemnogo-o-proshlom/Схема_архитектуры_фон_Неймана.svg',
+);
+export const HARVARD_ARCHITECTURE_SVG = encyclopediaMediaUrl(
+  '1-basics/1-07-nemnogo-o-proshlom/Гарвардская_архитектура_компьютера.svg',
+);

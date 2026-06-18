@@ -28,10 +28,18 @@ import DocCardList from '@theme/DocCardList';
 2. [Блоки](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/2) — визуальные среды и связь с текстовым кодом  
 3. [Scratch](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/3) — справочник по редактору MIT  
 4. [Edublocks](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/4)  
-5. [Python](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/6) и [JavaScript](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/7)  
+5. [Python](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/6), [структуры данных](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/41) и [JavaScript](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/7)  
+   Практикум Python по книге Бриггса: [turtle](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/42) → [классы](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/43) → ["Прыг-скок"](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/40) → ["Человечек спешит к выходу"](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/44)  
 6. [MIT App Inventor](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/9)  
 7. [PascalABC.NET](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/10)  
 8. [Кумир](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/11) — алгоритмический язык, ОГЭ, исполнители Чертёжник и Робот
+
+**Python — практикум по книге Бриггса:**
+
+- [Черепашка turtle](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/42) — фигуры, циклы, функции  
+- [Классы и объекты](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/43) — `self`, `__init__`, подготовка к играм  
+- [Игра "Прыг-скок" на tkinter](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/40) — мяч, ракетка, столкновения  
+- [Игра "Человечек спешит к выходу"](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/44) — спрайты, GIMP, платформер
 
 **Шесть игр в Scratch (пошагово):**
 

@@ -71,7 +71,7 @@ import DocCardList from '@theme/DocCardList';
 | Тема | Где уже есть |
 |------|--------------|
 | Синтаксис SELECT, JOIN, транзакции | [3.07 SQL](/encyclopedia/3-data-markup/3-07-sql/intro), [SQL — реальные кейсы](/lab/Примеры/1152), [практикум shop_data](/encyclopedia/3-data-markup/3-07-sql/111) |
-| Оконные функции и CTE | [Шпаргалка с типичными задачами по SQL](/encyclopedia/3-data-markup/3-07-sql/885.md), [Иерархические данные в реляционных БД](/encyclopedia/3-data-markup/3-07-sql/886.md) |
+| Оконные функции и CTE | [CTE и MATERIALIZED в PostgreSQL 12+](/encyclopedia/3-data-markup/3-07-sql/551#postgresql-cte-materialized), [общие табличные выражения](/encyclopedia/3-data-markup/3-07-sql/551), [шпаргалка типичных задач](/encyclopedia/3-data-markup/3-07-sql/885.md), [иерархии](/encyclopedia/3-data-markup/3-07-sql/886.md) |
 | Практикум JSONB с примерами | [Практикум PostgreSQL по JSONB](/encyclopedia/3-data-markup/3-07-sql/66.md) |
 | Установка, pg_dump, справочник параметров | [3.08/2](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2.md) |
 | Блокировки и конкурентный доступ | [Блокировки и конкурентный доступ в PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/110.md) |
