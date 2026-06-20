@@ -31,9 +31,18 @@ related:
     doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/16
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+<ExternalPlayEmbed example="basics/it-career-plan-play" title="Конструктор карьерного плана" />
+
+<ExternalPlayEmbed example="basics/hiring-funnel-play" title="Воронка найма" />
+
+<ExternalPlayEmbed example="basics/grade-ladder-play" title="Лестница грейдов" />
 
 Раздел про **карьерные пути**, **найм**, **рынок труда** и **распространённые мифы**. Материалы связаны между собой — сначала обзор и мифы, затем роли и грейды, собеседования, [тестовые задания](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/13), HR и портфолио; отдельно — [софт-скиллы](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/14), [культ труда и контекст выгорания](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/16) и [цифровое благополучие при учёбе](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/15).
 

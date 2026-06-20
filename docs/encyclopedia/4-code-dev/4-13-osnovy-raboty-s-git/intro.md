@@ -29,6 +29,9 @@ related:
 
 import DocCardList from '@theme/DocCardList';
 
+
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 # О разделе
 
 Раздел ведёт от идеи системы контроля версий до ежедневной работы в команде — ветки, pull request и merge request, `.gitignore` и восстановление после типичных ошибок. **Тот же материал глубже** (протоколы, packfile, GitFlow, расширенные команды) — в [разделе 8.03 "Забота о коде и данных"](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/intro); карта ссылок — в подзаголовке **"Углубление — раздел 8.03"** ниже на этой странице.
@@ -96,6 +99,11 @@ import DocCardList from '@theme/DocCardList';
 Тренажёр веток: [Learn Git Branching](https://learngitbranching.js.org/?locale=ru_RU).
 
 Практика выкладки статического сайта после `git push` — лабораторный кейс ["Размещение своего сайта с GitHub Pages"](/lab/Кейсы/3) (HTTPS/SSH, `.gitignore`, деплой через Actions). Готовые блоки команд по ситуациям — [Git — шпаргалка сценариев](/lab/Примеры/1123) в разделе "Примеры".
+
+
+<ExternalPlayEmbed example="about/git-emulator" title="Git Emulator" minHeight={420} />
+
+<ExternalPlayEmbed example="infra-security/git-svn-compare-play" title="Git vs SVN" minHeight={480} />
 
 <DocCardList />
 

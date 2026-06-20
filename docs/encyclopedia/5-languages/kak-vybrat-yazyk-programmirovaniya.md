@@ -1,3 +1,5 @@
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 ---
 tags: [engineer, developer, architector, required, beginner]
 title: "Какой язык программирования выбрать"
@@ -28,6 +30,9 @@ related:
 ---
 
 ## Какой язык программирования выбрать
+
+<ExternalPlayEmbed example="languages/language-decision-tree-play" title="Выбор языка" minHeight={520} />
+
 
 В интернете каждый год публикуют одни и те же рейтинги: "Python победил", "JavaScript нужен всем", "C# умер". На практике **подходящий язык — тот, который решает вашу задачу** в конкретной экосистеме, команде и инфраструктуре. Эта статья — главный хаб [раздела 5](/encyclopedia/5-languages/intro): карта языков, деревья решений по направлениям, маршруты обучения и ответы на типичные вопросы новичка.
 

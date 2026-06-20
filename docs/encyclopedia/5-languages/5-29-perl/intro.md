@@ -1,3 +1,5 @@
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 ---
 title: "Perl — о разделе"
 description: "Черновик раздела Perl — текстовая обработка, CPAN и практические материалы."
@@ -14,6 +16,12 @@ related:
 import DocCardList from '@theme/DocCardList';
 
 # Perl — о разделе
+
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{"language":"perl"}} />
+
+
+<ExternalPlayEmbed example="data-markup/language-intro-play" title="Обзор Perl" minHeight={520} playProps={{"topic":"perl"}} />
+
 
 > **Черновик раздела.** Материалы будут дополняться; ниже — структура, контекст экосистемы и черновые статьи с практическим содержанием для чтения legacy-кода и написания скриптов.
 

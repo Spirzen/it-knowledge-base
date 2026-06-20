@@ -1,3 +1,5 @@
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 ---
 title: "Clojure — о разделе"
 description: "Черновик раздела Clojure — Lisp на JVM, функциональная модель и практические материалы."
@@ -38,6 +40,12 @@ import DocCardList from '@theme/DocCardList';
 ---
 
 ## Что такое Clojure простыми словами
+
+<ExternalPlayEmbed example="data-markup/language-intro-play" title="Обзор Clojure" minHeight={520} playProps={{"topic":"clojure"}} />
+
+
+<ExternalPlayEmbed example="languages/macro-expander-play" title="Macro expander" minHeight={420} />
+
 
 Clojure работает на **JVM** — той же виртуальной машине, что и [Java](/encyclopedia/5-languages/5-03-java/intro). Вы пишете код в скобочной нотации Lisp, получаете доступ к миллионам Java-библиотек и деплоите JAR или uberjar.
 

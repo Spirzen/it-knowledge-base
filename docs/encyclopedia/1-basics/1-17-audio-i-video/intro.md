@@ -11,9 +11,14 @@ related:
     doc: context/entertainment/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+<ExternalPlayEmbed example="tools-multimedia/multimedia-editors-play" title="Multimedia Editors" />
 
 Раздел про путь медиаданных: от микрофона и камеры до файла, потока в сети и картинки на экране. Рекомендуемый порядок:
 

@@ -23,6 +23,9 @@ related:
 
 import DocCardList from '@theme/DocCardList';
 
+
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 # О разделе
 
 **Веб-разработка** — создание программ, которые работают через **браузер** и **сеть**: страницы, API, базы данных, авторизация. Этот подраздел в томе "Код и разработка" даёт **языконезависимую карту** — три слоя страницы (HTML, CSS, JS), клиент и сервер, этапы проекта от идеи до деплоя, выбор стека; углубление по HTTP и API — в [главе 1](./1.md).
@@ -132,5 +135,8 @@ import DocCardList from '@theme/DocCardList';
 - Деплой — [8.04 DevOps](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro)
 
 <DocCardList />
+
+<ExternalPlayEmbed example="about/web-app-architecture-play" title="Архитектура веб-приложения" minHeight={520} />
+
 
 ---

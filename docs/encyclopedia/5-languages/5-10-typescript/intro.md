@@ -21,6 +21,8 @@ related:
     doc: lab/examples/1133
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
@@ -90,6 +92,15 @@ import DocCardList from '@theme/DocCardList';
 ---
 
 ## С чего начать
+
+<ExternalPlayEmbed example="data-markup/syntax-compare-play" title="Сравнение синтаксиса" minHeight={420} />
+
+
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{"language":"typescript"}} />
+
+
+<ExternalPlayEmbed example="data-markup/language-intro-play" title="Обзор языка" minHeight={520} playProps={{"topic":"typescript"}} />
+
 
 | Шаг | Материал | Назначение |
 |-----|----------|-------|

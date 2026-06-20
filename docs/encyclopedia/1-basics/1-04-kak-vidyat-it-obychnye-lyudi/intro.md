@@ -13,9 +13,14 @@ related:
     doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+<ExternalPlayEmbed example="basics/it-roles-map-play" title="Карта IT-ролей" />
 
 Раздел помогает **снять стереотипы** — IT — десятки ролей, связь с медициной, банками, торговлей и государством, а также понятные основы того, **кто за что платит** и **как устроен рынок труда**.
 

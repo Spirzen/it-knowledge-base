@@ -14,6 +14,12 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
+<ExternalPlayEmbed example="data-markup/integer-lp-cutting-play" title="Целочисленное LP" minHeight={480} />
+
+
+<ExternalPlayEmbed example="data-markup/transport-problem-play" title="Транспортная задача" minHeight={480} />
+
+
 **Длинные листинги (от ~12 строк)** вынесены в каталог [code.spirzen.ru](https://code.spirzen.ru/) и подгружаются в статьях через `ExternalCodeEmbed` — так HTML энциклопедии не раздувается, а код остаётся с подсветкой, вкладками и сериями "шаг 1…N". Короткие фрагменты (псевдокод, пара строк `linprog`, формулы) по-прежнему прямо в markdown. Диаграммы **mermaid** и интерактив — на месте или в [play.spirzen.ru](https://play.spirzen.ru/).
 
 <div class="article-tags">

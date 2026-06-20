@@ -1,3 +1,5 @@
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 ---
 title: "Objective-C — о разделе"
 description: "Черновик раздела Objective-C — Cocoa, Apple legacy и связь со Swift."
@@ -14,6 +16,12 @@ related:
 import DocCardList from '@theme/DocCardList';
 
 # Objective-C — о разделе
+
+<ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{"language":"objectivec"}} />
+
+
+<ExternalPlayEmbed example="data-markup/language-intro-play" title="Обзор Objective-C" minHeight={520} playProps={{"topic":"objectivec"}} />
+
 
 > **Черновик раздела.** Материалы будут дополняться; ниже — структура, ключевые идеи messaging/runtime и черновые статьи для чтения legacy-кода Apple.
 

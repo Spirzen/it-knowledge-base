@@ -23,6 +23,8 @@ related:
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro
   - title: "Разработка игр на Python"
     doc: encyclopedia/5-languages/5-02-python/312
+  - title: "Справочник по pygame.sprite"
+    doc: encyclopedia/5-languages/5-02-python/3121
   - title: "Kivy — мобильные приложения и игры на Python"
     doc: encyclopedia/5-languages/5-02-python/320
   - title: "Практикум Kivy — о разделе"
@@ -105,7 +107,7 @@ Python удобен для **первого языка**: читается по�
 | 2c | [Pydantic — входящие данные](./41.md) | Что такое валидация и схема перед API |
 | 3 | [DRF](./3012.md) или [FastAPI](./3432.md) | JSON API |
 | 4 | [Tkinter](./311.md) → [Первая программа на Tkinter](./3111.md) → [Справочник по Tkinter — элементы UI](./3112.md) · [примеры окон и виджетов](/lab/Примеры/1124) | Десктоп; теория — [раздел 4.11](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) |
-| 4a | [Разработка игр на Python](./312.md) → [мини-игры в Lab](/lab/Примеры/1132) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Pygame и учебные мини-игры |
+| 4a | [Разработка игр на Python](./312.md) → [мини-игры в Lab](/lab/Примеры/1132) → [Справочник по pygame.sprite](./3121.md) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Pygame и учебные мини-игры |
 | 4a-k | [Kivy](./320.md) → [Практикум Kivy](./kivy-praktikum/intro.md) (2048, Pong, Snake) | Мобильные игры на Python: тач, Clock, APK |
 | 4a-mc | [Разработка в Minecraft](/encyclopedia/9-spinoff/9-04-razrabotka-igr/21) → [команды и datapack](/lab/Примеры/1142) | Java Edition: чат, scoreboard, `.mcfunction` — без Pygame |
 | 4b | [Трёхмерная графика и Panda3D](./318.md) · [примеры фигур](/lab/Примеры/1111) | 3D-сцены, текстуры, куб из вершин |

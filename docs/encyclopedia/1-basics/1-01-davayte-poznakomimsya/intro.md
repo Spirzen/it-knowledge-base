@@ -13,9 +13,14 @@ related:
     doc: encyclopedia/1-basics/1-035-bazovaya-informatika/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+<ExternalPlayEmbed example="about/interactive-roadmap" title="Interactive Roadmap" minHeight={520} />
 
 <DocCardList />
 

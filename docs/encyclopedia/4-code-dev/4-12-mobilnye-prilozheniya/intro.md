@@ -23,6 +23,9 @@ related:
 
 import DocCardList from '@theme/DocCardList';
 
+
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
 # О разделе
 
 ### Зачем этот раздел
@@ -67,6 +70,11 @@ import DocCardList from '@theme/DocCardList';
 ---
 
 ### Все статьи раздела
+
+
+<ExternalPlayEmbed example="code-dev/mobile-stack-picker-play" title="Выбор мобильного стека" minHeight={480} />
+
+<ExternalPlayEmbed example="tools-documentation/cross-platform-mobile-play" title="Cross-platform mobile" minHeight={520} />
 
 <DocCardList />
 

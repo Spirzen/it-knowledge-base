@@ -29,9 +29,14 @@ related:
     doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/7
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+<ExternalPlayEmbed example="about/web-app-architecture-play" title="Web App Architecture" />
 
 Рекомендуемый маршрут:
 

@@ -60,6 +60,8 @@ CSS описывает **внешний вид** разметки HTML — цв�
 
 <ExternalPlayEmbed example="data-markup/box-model-play" title="CSS Box Model" minHeight={480} />
 
+<ExternalPlayEmbed example="basics/html-colors-play" title="HTML-цвета: тренажёр" minHeight={560} />
+
 > **Практика.** Сначала HTML-каркас — [HTML-страницы целиком](/lab/Примеры/1153). Затем оформление — [HTML + CSS — готовые макеты](/lab/Примеры/110). **Tailwind CSS** (utility-классы, CDN для учёбы) — [статья Tailwind](./120.md) и [готовые блоки](/lab/Примеры/1117). **Типовые контролы** — [§ Типовые элементы](./113.md). **Анимации** — [§ Анимации](./6.md), [Lab / 1116](/lab/Примеры/1116). В JSX — [React — рецепты](/lab/Примеры/1146).
 
 <DocCardList />

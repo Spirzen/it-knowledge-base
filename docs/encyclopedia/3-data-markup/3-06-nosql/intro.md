@@ -17,9 +17,18 @@ related:
     doc: encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro
 ---
 
+import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
+
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
+
+<ExternalPlayEmbed example="data-markup/nosql-chooser-play" title="Выбор NoSQL" minHeight={480} />
+
+
+<ExternalPlayEmbed example="data-markup/cap-theorem-play" title="CAP-теорема" minHeight={480} />
+
 
 Раздел про **NoSQL** (Not Only SQL): альтернативы и дополнения к реляционным СУБД для масштаба, гибкой схемы и распределённых систем.
 
