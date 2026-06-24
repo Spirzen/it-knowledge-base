@@ -167,6 +167,11 @@ html[data-design]:not([data-design='design-universe-original']) .it-demo {
   position: fixed;
 }
 
+html.it-demo-fullscreen-lock {
+  overflow: hidden;
+  scrollbar-gutter: stable;
+}
+
 .it-demo__title {
   margin: 0;
   font-size: clamp(1rem, 2.5vw, 1.15rem);

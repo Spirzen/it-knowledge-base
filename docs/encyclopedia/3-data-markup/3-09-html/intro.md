@@ -34,6 +34,8 @@ related:
 import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
 
 
+import SpirzenOnlineToolLink from '@site/src/components/SpirzenOnlineToolLink';
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
@@ -67,6 +69,8 @@ HTML — **каркас** страницы — заголовки, абзацы,
 <ExternalPlayEmbed example="system-network/web-page-layers-play" title="Слои веб-страницы" />
 
 <ExternalPlayEmbed example="basics/html-colors-play" title="HTML-цвета: тренажёр" minHeight={560} />
+
+<SpirzenOnlineToolLink toolId="webEditor" />
 
 > **Практика целых страниц.** Готовые файлы от `DOCTYPE` до `footer` с разбором тегов (статья, таблица, форма, портфолио): [HTML-страницы целиком](/lab/Примеры/1153). После каркаса — макеты HTML+CSS (центрирование, сетка, адаптив): [HTML + CSS — готовые макеты](/lab/Примеры/110). **Векторные рисунки** в `<svg>` — [SVG — рисунки кодом](/lab/Примеры/1119). **Web Components** (Custom Elements, Shadow DOM, slots) — [глава Web Components](./25.md). Тот же каркас на **Tailwind** — [Tailwind — готовые блоки](/lab/Примеры/1117) и [статья Tailwind CSS](/encyclopedia/3-data-markup/3-10-css/120). **Анимации** — [CSS-анимации](/lab/Примеры/1116). **UI-блоки** — [типовые элементы в CSS](/encyclopedia/3-data-markup/3-10-css/113). Компоненты в React — [React — рецепты](/lab/Примеры/1146).
 

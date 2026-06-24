@@ -32,6 +32,8 @@ related:
 import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
 
 
+import SpirzenOnlineToolLink from '@site/src/components/SpirzenOnlineToolLink';
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
@@ -67,7 +69,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | **Node.js** | серверная среда на V8 | [Node.js](./26.md) |
 | **Electron** | десктоп на Chromium + Node.js | [Применение](./14.md) |
 | **webOS** | платформа устройств (TV) на веб-технологиях | [Применение](./14.md) |
-| **jQuery** | библиотека DOM и AJAX (2006+) | [Экосистема](./25.md) |
+| **jQuery** | библиотека DOM и AJAX (2006+) | [jQuery — обзор](./3-ecosystem/2-frontend-frameworks/5-jquery/289.md), [справочник](./3-ecosystem/2-frontend-frameworks/5-jquery/2891.md) |
 | **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md) ([карта тем](./27.md#карта-тем-react), [первая программа](./272.md), [справочник](./3-ecosystem/2-frontend-frameworks/271.md), [галерея компонентов](/lab/Примеры/1146)), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
@@ -210,6 +212,8 @@ JavaScript оживляет страницу в **браузере**. Это н�
 <ExternalPlayEmbed example="lab/first-program-play" title="Первая программа" minHeight={420} playProps={{ language: 'javascript' }} />
 
 <ExternalPlayEmbed example="system-network/web-page-layers-play" title="Слои веб-страницы" />
+
+<SpirzenOnlineToolLink toolId="webEditor" />
 
 <DocCardList />
 

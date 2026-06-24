@@ -25,7 +25,7 @@
 | 11 | [Экосистема и satellite-сервисы](#11-экосистема-и-satellite-сервисы) | code, play, assets, it-management |
 | 12 | [Интеграция iframe + postMessage](#12-интеграция-iframe--postmessage) | ExternalCodeEmbed, ExternalPlayEmbed, протокол |
 
-**Draw.io (сводная схема экосистемы):** [`it-universe-architecture.drawio`](./it-universe-architecture.drawio) — четыре домена (spirzen, code, play, assets), интеграция iframe/postMessage, сборка и runtime. Пересборка: `node scripts/generate-architecture-drawio.mjs`; PNG → `it-encyclopedia-media/public/encyclopedia/_shared/img/` (экспорт из Draw.io или CLI `draw.io --export`), в статьях — `https://assets.spirzen.ru/encyclopedia/_shared/img/…`.
+**Draw.io (сводная схема экосистемы):** [`it-universe-architecture.drawio`](./it-universe-architecture.drawio) — пять доменов (spirzen, code, play, assets, html), интеграция iframe/postMessage, сборка и runtime. Пересборка: `node scripts/generate-architecture-drawio.mjs`; PNG → `it-encyclopedia-media/public/encyclopedia/_shared/img/` (экспорт из Draw.io или CLI `draw.io --export`), в статьях — `https://assets.spirzen.ru/encyclopedia/_shared/img/…`.
 
 **Mermaid:** проверка в [Mermaid Live](https://mermaid.live) или preview Markdown. Фрагменты можно вставлять в статьи (`markdown.mermaid: true` в `docusaurus.config.js`).
 
@@ -582,6 +582,7 @@ flowchart LR
     CODE[code.spirzen.ru<br/>~2312 примеров]
     PLAY[play.spirzen.ru<br/>~500 демо]
     MEDIA[assets.spirzen.ru<br/>~670 иллюстраций]
+    HTML[html.spirzen.ru<br/>WebEditor]
   end
 
   subgraph local [Локально]
@@ -589,9 +590,11 @@ flowchart LR
   end
 
   Reader --> KB
+  Reader --> HTML
   KB -->|iframe| CODE
   KB -->|iframe| PLAY
   KB -->|img URL| MEDIA
+  KB -->|ссылки| HTML
   MGMT -.->|start/build/deploy| KB
   MGMT -.-> CODE
   MGMT -.-> PLAY
@@ -602,6 +605,7 @@ flowchart LR
 | spirzen.ru | `it-knowledge-base` | Docusaurus 3.10 + React 19 | Текст, навигация, SEO, DocSearch |
 | code.spirzen.ru | `it-code-examples` | Astro 5 + Shiki | Листинги, практикумы, diff |
 | play.spirzen.ru | `it-play` | Astro 5 + React 19 | Симуляторы, визуализации |
+| html.spirzen.ru | [`WebEditor`](https://github.com/Spirzen/WebEditor) | Статика (GitHub Pages) | Редактор HTML/CSS/JS, живой предпросмотр |
 | assets.spirzen.ru | `it-encyclopedia-media` | Статика (без сборки) | Иллюстрации, скриншоты, экспорт диаграмм |
 | — | `it-management` | Node http | Локальная панель (не в проде) |
 | APK | `itu-mobile-app` | .NET MAUI 10 | WebView → spirzen.ru |

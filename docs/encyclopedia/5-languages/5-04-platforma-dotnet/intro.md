@@ -54,6 +54,15 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
+## Маршруты и углубление
+
+- [Маршрут .NET-разработчика от Junior к Senior](../5-05-csharp/475) — план обучения по уровням.
+- [Выбор архитектуры под сценарий](../5-05-csharp/476) — decision guide для типовых проектов.
+- [Native AOT в .NET](./191) — ahead-of-time компиляция и ограничения.
+- [Semantic Kernel и AI в .NET](./192) — LLM, RAG, интеграция в ASP.NET Core.
+
+---
+
 ## Справочники
 
 - [Вопросы на собеседование .NET и C#](../5-05-csharp/474) — шпаргалка с отсылками к материалам платформы и языка.
@@ -68,6 +77,7 @@ import DocCardList from '@theme/DocCardList';
 - [.NET API browser](https://learn.microsoft.com/ru-ru/dotnet/api/?view=net-10.0)
 - [.NET Framework 4.8 API](https://learn.microsoft.com/ru-ru/dotnet/api/?view=netframework-4.8&preserve-view=true)
 - [Справочник C#](../5-05-csharp/472)
+- [NET-Mastery-Hub](https://github.com/valinerosgordov/NET-Mastery-Hub) — внешняя база по .NET (runtime, performance, interview prep); см. также [маршрут в энциклопедии](../5-05-csharp/475).
 
 ---
 

@@ -35,6 +35,8 @@ related:
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/125
   - title: "Сколько стоит ИИ"
     doc: encyclopedia/6-ai/6-04-modeli-i-instrumenty/126
+  - title: "Оптимизация локального инференса LLM"
+    doc: encyclopedia/6-ai/6-05-razrabotka-ii/127
   - title: "Контекст агента — AGENTS, skills, rules"
     doc: encyclopedia/8-infra-security/8-04-devops-ci-cd/2153
   - title: "Cursor"

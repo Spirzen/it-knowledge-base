@@ -38,6 +38,7 @@ flowchart TB
     code["code.spirzen.ru примеры кода"]
     play["play.spirzen.ru интерактив"]
     assets["assets.spirzen.ru иллюстрации"]
+    html["html.spirzen.ru WebEditor"]
   end
 
   repo --> build
@@ -45,6 +46,7 @@ flowchart TB
   docs -->|"iframe ExternalCodeEmbed"| code
   docs -->|"iframe ExternalPlayEmbed"| play
   docs -->|"![alt](url)"| assets
+  docs -->|"ссылки, SpirzenOnlineToolLink"| html
 ```
 
 Сборка и выкат связаны с [DevOps и CI/CD](/encyclopedia/8-infra-security/8-04-devops-ci-cd/intro). Исходники хранятся в Git — см. [Основы работы с Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro).
@@ -58,6 +60,7 @@ flowchart TB
 | **spirzen.ru** | Энциклопедия, лаборатория, глоссарий, поиск, навигация | Docusaurus 3 + [React](/encyclopedia/5-languages/5-01-javascript/27) 19, статический экспорт |
 | **code.spirzen.ru** | Запускаемые [листинги](#листинг), встраивание через `/e/embed/<slug>/` | Отдельный Astro/Vite-проект |
 | **play.spirzen.ru** | Тренажёры, эмуляторы, [визуализаторы](#визуализатор) через `/p/embed/<slug>/` | Отдельный Astro/Vite-проект |
+| **html.spirzen.ru** | Онлайн-редактор HTML/CSS/JS ([WebEditor](https://github.com/Spirzen/WebEditor)), живой предпросмотр | Отдельный статический проект на GitHub Pages |
 | **assets.spirzen.ru** | Скриншоты, диаграммы, тяжёлые PNG/WebP | [CDN](/encyclopedia/2-system-network/2-03-set-i-internet/212) / object storage |
 
 Разделение сделано осознанно.
@@ -76,7 +79,7 @@ flowchart TB
 |---------|------|---------------|------------------------|
 | **Static Site Generation (SSG)** | HTML/JS собираются заранее, сервер отдаёт файлы | `docusaurus build` → spirzen.ru | [Как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [CDN](/encyclopedia/2-system-network/2-03-set-i-internet/212) |
 | **SPA с гидратацией** | После загрузки HTML React "оживляет" страницу | Docusaurus + [React](/encyclopedia/5-languages/5-01-javascript/27) | [SPA и frontend-стек](/encyclopedia/5-languages/5-01-javascript/270) |
-| **Разделение по bounded context** | У каждого домена своя зона ответственности | spirzen / code / play / assets | [Паттерны микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118) |
+| **Разделение по bounded context** | У каждого домена своя зона ответственности | spirzen / code / play / assets / html | [Паттерны микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118) |
 | **Embed / Facade** | Статья видит простой компонент, внутри — сложный iframe | `ExternalPlayEmbed`, `ExternalCodeEmbed` | [Модульность](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/2) |
 | **Lazy loading** | Код грузится, когда нужен | `lazyMdxDemoImports`, `lazyDemoInView` | [Proxy и lazy loading](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/128) |
 | **Code splitting** | Один [бандл](#бандл) режется на [чанки](#чанк) | Webpack/Rspack `splitChunks` | [SPA и bundler](/encyclopedia/5-languages/5-01-javascript/270) |

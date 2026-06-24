@@ -192,7 +192,10 @@ static/downloads/it-universe.apk
 
 /scripts/_*.txt
 /scripts/_*.json
-/scripts/fix-out.txt
+/scripts/*.txt
+/scripts/audit-descriptions-report.json
+/scripts/analysis/
+/scripts/seo-faq-append/
 /scripts/fsharp-language-reference-index.json
 /scripts/generated/
 info/llm-phrases-scan.csv
@@ -206,5 +209,4 @@ tmp_test.txt
 _tmp_blocks_2.txt
 info/.$it-universe-architecture.drawio.bkp
 /mockups
-scripts/analysis/audit-demo-chunks.mjs
 info/.$it-universe-three-tier.drawio.bkp

@@ -26,7 +26,7 @@ description: "Карта экосистемы JavaScript — Node.js runtime, fr
 
 ## Frontend
 
-Общий вход: [SPA и выбор фреймворка](./2-frontend-frameworks/270.md). Дальше — [React](./2-frontend-frameworks/1-react/intro.md) (в т.ч. [кнопка с загрузкой](./2-frontend-frameworks/1-react/45.md)), [Vue](./2-frontend-frameworks/2-vue/intro.md), [Angular](./2-frontend-frameworks/3-angular/intro.md), [Ext JS](./2-frontend-frameworks/4-ext-js/intro.md).
+Общий вход: [SPA и выбор фреймворка](./2-frontend-frameworks/270.md). **jQuery** (legacy DOM/AJAX): [обзор](./2-frontend-frameworks/5-jquery/289.md) · [справочник](./2-frontend-frameworks/5-jquery/2891.md). Дальше — [React](./2-frontend-frameworks/1-react/intro.md) (в т.ч. [кнопка с загрузкой](./2-frontend-frameworks/1-react/45.md)), [Vue](./2-frontend-frameworks/2-vue/intro.md), [Angular](./2-frontend-frameworks/3-angular/intro.md), [Ext JS](./2-frontend-frameworks/4-ext-js/intro.md).
 
 ## Meta-frameworks
 
@@ -35,6 +35,8 @@ description: "Карта экосистемы JavaScript — Node.js runtime, fr
 ## Backend-фреймворки Node
 
 [NestJS — первая программа](./1-runtime-node/269.md) · [Prisma ORM](./1-runtime-node/2691.md) · [Drizzle ORM](./1-runtime-node/2692.md)
+
+Полный справочник open-source веб-фреймворков по языкам (Express, Fastify, Hono, Next.js и др.) — [4.17 / 8](/encyclopedia/4-code-dev/4-17-veb-razrabotka/8).
 
 ## Современный frontend
 
@@ -46,4 +48,4 @@ description: "Карта экосистемы JavaScript — Node.js runtime, fr
 
 ## Справочники UI
 
-[React 271](./2-frontend-frameworks/1-react/271.md) · [Vue 281](./2-frontend-frameworks/2-vue/281.md) · [Angular 291](./2-frontend-frameworks/3-angular/291.md) · [Ext 311](./2-frontend-frameworks/4-ext-js/311.md) · [JavaScript](../251.md)
+[jQuery 2891](./2-frontend-frameworks/5-jquery/2891.md) · [React 271](./2-frontend-frameworks/1-react/271.md) · [Vue 281](./2-frontend-frameworks/2-vue/281.md) · [Angular 291](./2-frontend-frameworks/3-angular/291.md) · [Ext 311](./2-frontend-frameworks/4-ext-js/311.md) · [JavaScript](../251.md)

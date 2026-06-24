@@ -26,6 +26,8 @@ import DocCardList from '@theme/DocCardList';
 
 import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
 
+import SpirzenOnlineToolLink from '@site/src/components/SpirzenOnlineToolLink';
+
 # О разделе
 
 **Веб-разработка** — создание программ, которые работают через **браузер** и **сеть**: страницы, API, базы данных, авторизация. Этот подраздел в томе "Код и разработка" даёт **языконезависимую карту** — три слоя страницы (HTML, CSS, JS), клиент и сервер, этапы проекта от идеи до деплоя, выбор стека; углубление по HTTP и API — в [главе 1](./1.md).
@@ -85,12 +87,13 @@ import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
 | 3 | [От идеи до сайта](./6.md) | этапы проекта, хостинг, статика, CMS или своё приложение | 1–2 ч |
 | 4 | [Что такое веб-разработка](./1.md) | HTTP, REST, JSON, CORS, `.env` | 2–4 ч |
 | 5 | [Как делают веб-приложения](./4.md) | MERN, LAMP, стек, деплой, масштабирование | 1–2 ч |
+| 5a | [Open-source веб-фреймворки](./8.md) | справочник по языкам — Django, Express, Spring, Gin и др. | 30–60 мин |
 | 6 | [Итоги](./2.md) | резюме | 15 мин |
 | 7 | [Чек-лист](./3.md) | самопроверка | 20 мин |
 
 После глав 5 и 1 — **практика** (минимум два пункта):
 
-- сверстать одну страницу из [HTML](/encyclopedia/3-data-markup/3-09-html/intro) + [CSS](/encyclopedia/3-data-markup/3-10-css/intro);
+- сверстать одну страницу из [HTML](/encyclopedia/3-data-markup/3-09-html/intro) + [CSS](/encyclopedia/3-data-markup/3-10-css/intro) — во [WebEditor](https://html.spirzen.ru/) или встроенной [HTML-песочнице](/encyclopedia/3-data-markup/3-09-html/1);
 - открыть [DevTools](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116), вкладка Network;
 - выполнить [curl / 1133](/lab/Примеры/1133) к публичному API;
 - опубликовать статику — [GitHub Pages](/lab/Кейсы/3) или [React — 1146](/lab/Примеры/1146).
@@ -106,16 +109,17 @@ import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
 | Git и PR | [4.13](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [117](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/117) |
 | Тесты, баги, DevTools | [1117](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1117), [1119](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1119), [1116](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) |
 | ORM и SQL | [4.10](/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/intro), [3.07 SQL](/encyclopedia/3-data-markup/3-07-sql/intro) |
+| Справочник веб-фреймворков | [8 — open-source по языкам](./8.md) |
 
 ---
 
 ## Маршрут "первая неделя"
 
-**День 1** — [три слоя](./5.md), [HTML](/encyclopedia/3-data-markup/3-09-html/intro): статическая страница.
+**День 1** — [три слоя](./5.md), [HTML](/encyclopedia/3-data-markup/3-09-html/intro): статическая страница в [WebEditor](https://html.spirzen.ru/).
 
-**День 2** — [CSS](/encyclopedia/3-data-markup/3-10-css/intro), [веб-дизайн](./7.md): оформление и мобильная ширина.
+**День 2** — [CSS](/encyclopedia/3-data-markup/3-10-css/intro), [веб-дизайн](./7.md): оформление и мобильная ширина (те же вкладки в WebEditor).
 
-**День 3** — [JavaScript](/encyclopedia/5-languages/5-01-javascript/intro), кнопка меняет DOM.
+**День 3** — [JavaScript](/encyclopedia/5-languages/5-01-javascript/intro), кнопка меняет DOM в WebEditor или встроенной песочнице.
 
 **День 4** — [От идеи до сайта](./6.md): wireframe, выбор пути (статика / CMS / API).
 
@@ -137,6 +141,8 @@ import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
 <DocCardList />
 
 <ExternalPlayEmbed example="about/web-app-architecture-play" title="Архитектура веб-приложения" minHeight={520} />
+
+<SpirzenOnlineToolLink toolId="webEditor" />
 
 
 ---

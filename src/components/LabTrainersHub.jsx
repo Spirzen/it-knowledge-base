@@ -130,9 +130,15 @@ const CATEGORIES = [
     trainers: [
       {
         id: 'html',
-        label: 'HTML / JS',
+        label: 'HTML Playground',
         article: '/encyclopedia/3-data-markup/3-09-html/1',
         embed: {example: 'about/html-playground', title: 'HTML Playground', minHeight: 420},
+      },
+      {
+        id: 'web-editor',
+        label: 'WebEditor',
+        article: '/encyclopedia/3-data-markup/3-09-html/intro',
+        embed: {src: 'https://html.spirzen.ru/', title: 'WebEditor — HTML/CSS/JS', minHeight: 560},
       },
       {
         id: 'regex',
@@ -309,6 +315,7 @@ function LabTrainersHubInner({defaultCategory = 'sql', defaultTrainer}) {
           {trainer?.embed ? (
             <ExternalPlayEmbed
               example={trainer.embed.example}
+              src={trainer.embed.src}
               title={trainer.embed.title}
               minHeight={trainer.embed.minHeight}
               playProps={trainer.embed.playProps}

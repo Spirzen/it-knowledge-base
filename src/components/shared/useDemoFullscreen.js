@@ -1,15 +1,28 @@
 import {useCallback, useEffect, useState} from 'react';
 
+function syncFullscreenDom(active) {
+  if (typeof document === 'undefined') return;
+  const root = document.documentElement;
+  if (active) {
+    root.setAttribute('data-it-demo-fullscreen', '');
+    root.classList.add('it-demo-fullscreen-lock');
+  } else {
+    root.removeAttribute('data-it-demo-fullscreen');
+    root.classList.remove('it-demo-fullscreen-lock');
+  }
+}
+
 /** Полноэкранный режим для интерактивных демо (Escape — выход). */
 export default function useDemoFullscreen() {
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   useEffect(() => {
+    syncFullscreenDom(isFullscreen);
+
     if (!isFullscreen) {
       return undefined;
     }
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
+
     const onKey = (e) => {
       if (e.key === 'Escape') {
         setIsFullscreen(false);
@@ -17,10 +30,15 @@ export default function useDemoFullscreen() {
     };
     window.addEventListener('keydown', onKey);
     return () => {
-      document.body.style.overflow = prevOverflow;
       window.removeEventListener('keydown', onKey);
     };
   }, [isFullscreen]);
+
+  useEffect(() => {
+    return () => {
+      syncFullscreenDom(false);
+    };
+  }, []);
 
   const toggleFullscreen = useCallback(() => {
     setIsFullscreen((v) => !v);

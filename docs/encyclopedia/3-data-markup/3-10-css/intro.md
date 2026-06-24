@@ -32,6 +32,8 @@ related:
 import ExternalPlayEmbed from '@site/src/components/ExternalPlayEmbed';
 
 
+import SpirzenOnlineToolLink from '@site/src/components/SpirzenOnlineToolLink';
+
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
@@ -48,6 +50,25 @@ CSS описывает **внешний вид** разметки HTML — цв�
   </div>
 </div>
 
+<div class="callout callout--tip">
+  <div class="callout-title">Шпаргалка для повторения</div>
+
+  <div class="callout-body">
+  Одностраничный конспект на русском (селекторы, Flex, Grid, анимации, container queries, <code>@layer</code>) — <a href="https://gist.github.com/dmitry-osin/c64f7d8eb9ed60cc932c4c56ac7eae22">GitHub Gist, dmitry-osin</a>.
+
+  Компактные таблицы свойств и селекторов (структура как у <a href="https://overapi.com/css">OverAPI CSS</a>) — <a href="./71.md#компактные-шпаргалки">справочник, § Компактные шпаргалки</a>.
+
+  Развёрнутые материалы в этом разделе:
+
+  <ul>
+    <li><a href="./118.md">практические рекомендации и частые паттерны</a></li>
+    <li><a href="./71.md">справочник по свойствам</a></li>
+    <li><a href="./111.md">подключение и методологии (BEM, CSS Modules)</a></li>
+    <li>тренажёры и лаборатории на этой странице ниже</li>
+  </ul>
+  </div>
+</div>
+
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, как браузер обрабатывает текстовые инструкции; в этом разделе — **таблицы стилей CSS**.
 
 > **Перед селекторами:** [Операторы](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/33) — оператор, операнд и приоритет; в CSS ту же роль выполняют селекторы, комбинаторы и псевдоклассы.
@@ -61,6 +82,8 @@ CSS описывает **внешний вид** разметки HTML — цв�
 <ExternalPlayEmbed example="data-markup/box-model-play" title="CSS Box Model" minHeight={480} />
 
 <ExternalPlayEmbed example="basics/html-colors-play" title="HTML-цвета: тренажёр" minHeight={560} />
+
+<SpirzenOnlineToolLink toolId="webEditor" />
 
 > **Практика.** Сначала HTML-каркас — [HTML-страницы целиком](/lab/Примеры/1153). Затем оформление — [HTML + CSS — готовые макеты](/lab/Примеры/110). **Tailwind CSS** (utility-классы, CDN для учёбы) — [статья Tailwind](./120.md) и [готовые блоки](/lab/Примеры/1117). **Типовые контролы** — [§ Типовые элементы](./113.md). **Анимации** — [§ Анимации](./6.md), [Lab / 1116](/lab/Примеры/1116). В JSX — [React — рецепты](/lab/Примеры/1146).
 

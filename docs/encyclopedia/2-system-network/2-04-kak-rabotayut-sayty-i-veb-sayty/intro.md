@@ -66,6 +66,7 @@ import DocCardList from '@theme/DocCardList';
 - Конфиги Nginx для VPS и лабораторных — [Nginx — конфиги под задачу](/lab/Примеры/11112)
 - Dockerfile для фронта и API в контейнере — [Dockerfile — 10 типовых образов](/lab/Примеры/11113)
 - JavaScript — [5.01. JavaScript](/encyclopedia/5-languages/5-01-javascript/intro)
+- Практика HTML/CSS/JS в браузере — [WebEditor](https://html.spirzen.ru/) (домен экосистемы, [исходники](https://github.com/Spirzen/WebEditor))
 
 <DocCardList />
 

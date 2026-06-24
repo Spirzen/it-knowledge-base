@@ -64,7 +64,7 @@ import DocCardList from '@theme/DocCardList';
 | Синтаксис | [Типы](/encyclopedia/5-languages/5-06-cpp/11), [Операторы](/encyclopedia/5-languages/5-06-cpp/12), [Циклы и управление](/encyclopedia/5-languages/5-06-cpp/13) | базовый язык |
 | Память и ООП | [ООП в разделе "Код"](/encyclopedia/4-code-dev/4-08-oop/intro) (база) → [ООП в C++](/encyclopedia/5-languages/5-06-cpp/14), [Память](/encyclopedia/5-languages/5-06-cpp/19), [Системное программирование](/encyclopedia/5-languages/5-06-cpp/21) | классы, владение, низкий уровень |
 | Практика | [Функции и лямбды](/encyclopedia/5-languages/5-06-cpp/17), [Компиляторы и toolchain](/encyclopedia/5-languages/5-06-cpp/32), [Сборка](/encyclopedia/5-languages/5-06-cpp/1004), [CMake](/encyclopedia/5-languages/5-06-cpp/1006), [Задания](/encyclopedia/5-languages/5-06-cpp/1008) | писать, собирать, закреплять |
-| Олимпиады | [Шаблоны C++ в Lab](/lab/Примеры/1125), [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro) | ввод-вывод, STL, графы, ДП |
+| Олимпиады | [Шаблоны C++ в Lab](/lab/Примеры/1125), [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro), [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus) | контестные шаблоны и STL; репозиторий — разбор кода алгоритмов |
 | UI и графика | [Qt](/encyclopedia/5-languages/5-06-cpp/27), [Qt Widgets](/encyclopedia/5-languages/5-06-cpp/2731), [Qt Quick](/encyclopedia/5-languages/5-06-cpp/2732), [SFML](/encyclopedia/5-languages/5-06-cpp/2741), [SDL](/encyclopedia/5-languages/5-06-cpp/2742), [Siv3D](/encyclopedia/5-languages/5-06-cpp/2743), [Raylib](/encyclopedia/5-languages/5-06-cpp/2744), [OpenGL](/encyclopedia/5-languages/5-06-cpp/2745), [DirectX](/encyclopedia/5-languages/5-06-cpp/2746), [Vulkan](/encyclopedia/5-languages/5-06-cpp/29), [Игры](/encyclopedia/5-languages/5-06-cpp/22) | desktop, 2D/3D, GPU |
 | Продвинутое | [Потоки](/encyclopedia/5-languages/5-06-cpp/20), [Сеть](/encyclopedia/5-languages/5-06-cpp/25), [Экосистема](/encyclopedia/5-languages/5-06-cpp/10) | конкурентность, I/O, фреймворки |
 | Справка | [Справочник](/encyclopedia/5-languages/5-06-cpp/3), [Ключевые слова](/encyclopedia/5-languages/5-06-cpp/151) | быстрый поиск по API и официальной документации |
@@ -108,6 +108,18 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [Функции](./17.md) · [Память](./19.md) · [Идиомы](./30.md) | владение, RAII, стиль |
 | 4 | [CMake](./1006.md) · [Задания](./1008.md) | сборка и закрепление |
 | 5 | [Qt Widgets](./2731.md) · [Qt Quick](./2732.md) | GUI — после базы |
+
+---
+
+### Дополнительные материалы по алгоритмам
+
+- [Lab / 1125 — олимпиадные шаблоны](/lab/Примеры/1125) — готовый код под контест (ввод-вывод, `vector`, графы, динамическое программирование, DSU, топосорт, Fenwick, KMP)
+- [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro) — определения, псевдокод и оценка сложности до чтения чужого C++
+- [Big-O — шпаргалка](/lab/Примеры/1128) — как по коду понять `O(n)`, `O(n log n)` и ловушки в Python (те же идеи применимы к C++)
+- [TheAlgorithms/C-Plus-Plus](https://github.com/TheAlgorithms/C-Plus-Plus) — сотни учебных `.cpp` на C++17 (сортировки, графы, структуры данных), лицензия MIT
+- [Документация TheAlgorithms](https://TheAlgorithms.github.io/C-Plus-Plus) — Doxygen с разбором файлов и ссылками на функции STL
+
+**STL** (Standard Template Library, стандартная библиотека шаблонов C++) закрывает большинство задач на олимпиаде и в приложении — см. [Справочник](./3.md) и [Работа с данными](./24.md). Репозиторий TheAlgorithms помогает увидеть, как устроены merge sort, двоичное дерево поиска (BST), trie и другие структуры в коде, и сопоставить это с [разделом "Структуры данных"](/encyclopedia/3-data-markup/3-02-struktury-dannyh/intro).
 
 ---
 

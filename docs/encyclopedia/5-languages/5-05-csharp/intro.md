@@ -23,6 +23,10 @@ related:
     doc: encyclopedia/5-languages/5-04-platforma-dotnet/11
   - title: "Версии C# и .NET — справочная таблица"
     doc: encyclopedia/5-languages/5-05-csharp/48
+  - title: "Маршрут .NET-разработчика от Junior к Senior"
+    doc: encyclopedia/5-languages/5-05-csharp/475
+  - title: "Выбор архитектуры под сценарий"
+    doc: encyclopedia/5-languages/5-05-csharp/476
   - title: "Сравнение C# и Java"
     doc: encyclopedia/5-languages/5-05-csharp/50
   - title: "Пакетная работа с данными"
@@ -54,6 +58,14 @@ import DocCardList from '@theme/DocCardList';
 </div>
 
 В [вводной статье по C#](./1.md) и материалах про .NET цепочка "исходник → IL → CLR" по возможности показана **псевдокодом** до синтаксиса C#.
+
+---
+
+## Маршруты обучения
+
+- [Маршрут .NET-разработчика от Junior к Senior](./475) — пошаговый план по уровням и срокам.
+- [Выбор архитектуры и стека под сценарий](./476) — admin, API, e-commerce, real-time, SaaS.
+- [Вопросы на собеседование .NET и C#](./474) — шпаргалка Junior–Senior.
 
 ---
 
@@ -141,8 +153,8 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 
 ## Веб на .NET
 
-- [ASP.NET — фреймворк](./451), [Web API](./4511), [Minimal API и OpenAPI](./4517), [MediatR и pipeline](./4518), [тесты — юнит и интеграция](./4516), [Razor Pages](./4514), [Identity — JWT и cookie](./4515), [Blazor](./4512), [справочник](./452), [документация Microsoft Learn](./455)
-- Данные: [EF Core](./441), [ADO.NET / Dapper](./442), [обзор БД](./44); практика СУБД — [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)
+- [ASP.NET — фреймворк](./451), [Web API](./4511), [Minimal API и OpenAPI](./4517), [FluentValidation, Polly и rate limiting](./4519), [MediatR и pipeline](./4518), [тесты — юнит и интеграция](./4516), [Razor Pages](./4514), [Identity — JWT и cookie](./4515), [Blazor](./4512), [справочник](./452), [документация Microsoft Learn](./455)
+- Данные: [EF Core](./441), [EF Core — продвинутое](./443), [ADO.NET / Dapper](./442), [обзор БД](./44); практика СУБД — [SQL Server](/encyclopedia/3-data-markup/3-07-sql/890), [PostgreSQL](/encyclopedia/3-data-markup/3-07-sql/888), [SQLite](/encyclopedia/3-data-markup/3-07-sql/887), [MySQL](/encyclopedia/3-data-markup/3-07-sql/889)
 - Архитектура solution: [Clean Architecture на ASP.NET Core](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2143)
 
 ---
@@ -153,6 +165,7 @@ Unity-скрипты — это обычный C# плюс API движка (`Un
 - [Справочник языка C#](https://learn.microsoft.com/ru-ru/dotnet/csharp/language-reference/)
 - [.NET API](https://learn.microsoft.com/ru-ru/dotnet/api/?view=net-10.0)
 - [ASP.NET Core 10](https://learn.microsoft.com/ru-ru/aspnet/core/?view=aspnetcore-10.0)
+- [NET-Mastery-Hub](https://github.com/valinerosgordov/NET-Mastery-Hub) — дополнительная база знаний .NET на русском (Obsidian-vault, deep-dive по async, runtime, архитектуре); маршрут в энциклопедии — [475](./475).
 
 Актуальные примеры в разделе ориентированы на **.NET 8+** и современный C# (nullable reference types, records, top-level statements). Упоминания Xamarin, Web Forms, LINQ to SQL — в контексте сопровождения legacy.
 

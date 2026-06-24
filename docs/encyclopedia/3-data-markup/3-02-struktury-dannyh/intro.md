@@ -46,7 +46,13 @@ import DocCardList from '@theme/DocCardList';
 | 3 | [История](./11.md) · [Геометрия](./12.md) | по желанию |
 | 4 | [Итоги](./3.md) · [чек-лист](./4.md) | закрепление |
 
-Дальше — коллекции в [языках](/encyclopedia/5-languages/intro) (таблица ниже). Для маршрута ООП — [Коллекции](/encyclopedia/4-code-dev/4-08-oop/61). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro). Для **задач ЕГЭ и олимпиад на Python** (`list`, `dict`, `set` в коде решений) — [Lab / 1122](/lab/Примеры/1122#3-словари-множества-и-частоты). На **Pascal** — массив, поиск, префиксы: [Lab / 1140](/lab/Примеры/1140#1-массивы).
+Дальше — коллекции в [языках](/encyclopedia/5-languages/intro) (таблица ниже). Для маршрута ООП — [Коллекции](/encyclopedia/4-code-dev/4-08-oop/61). Затем [продвинутые операции с данными](/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/intro).
+
+Практика после теории по языкам:
+
+- **Python** (ЕГЭ, олимпиада) — [Lab / 1122](/lab/Примеры/1122#3-словари-множества-и-частоты), коллекции `list`, `dict`, `set`
+- **C++** (контест, STL) — [Lab / 1125](/lab/Примеры/1125), [Работа с данными](/encyclopedia/5-languages/5-06-cpp/24); разбор ручных реализаций — [TheAlgorithms/C-Plus-Plus/data_structures](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/data_structures)
+- **Pascal** (школа) — [Lab / 1140](/lab/Примеры/1140#1-массивы), массивы, поиск, префиксы
 
 ---
 
@@ -60,7 +66,7 @@ import DocCardList from '@theme/DocCardList';
 | JavaScript | [Массивы](/encyclopedia/5-languages/5-01-javascript/211) | `Array`, `Map`, `Set` |
 | Kotlin | [Коллекции](/encyclopedia/5-languages/5-09-kotlin/225) | `List`, `Map`, `Sequence` |
 | Go | [Типы, slice и map](/encyclopedia/5-languages/5-10-go/16) | `slice`, `map` |
-| C++ | [Работа с данными](/encyclopedia/5-languages/5-06-cpp/24) | STL: `vector`, `map`, `unordered_map` |
+| C++ | [Работа с данными](/encyclopedia/5-languages/5-06-cpp/24), [Lab / 1125](/lab/Примеры/1125) | `vector`, `map`, `unordered_map`; олимпиадные шаблоны; учебный код — [TheAlgorithms/data_structures](https://github.com/TheAlgorithms/C-Plus-Plus/tree/master/data_structures) |
 | Rust | [Типы и коллекции](/encyclopedia/5-languages/5-13-rust/13) | `Vec`, `HashMap` |
 | Swift | [Данные и коллекции](/encyclopedia/5-languages/5-14-swift/16) | `Array`, `Dictionary`, `Set` |
 | PHP | [Типы данных](/encyclopedia/5-languages/5-07-php/15) | `array` как список и словарь |

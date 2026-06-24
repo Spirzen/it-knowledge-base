@@ -30,7 +30,9 @@ function ExternalPlayEmbedInner({autoLoad = false, example, src, title, minHeigh
   const [userActivated, setUserActivated] = useState(autoLoad);
   const [isLoaded, setIsLoaded] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [heightSettling, setHeightSettling] = useState(false);
   const hostRef = useRef(null);
+  const wasFullscreenRef = useRef(false);
   const {height, scheduleHeight} = useStableEmbedHeight(hostRef, minHeight, isFullscreen);
 
   const baseUrl = getPlayBaseUrl(siteConfig);
@@ -112,6 +114,24 @@ function ExternalPlayEmbedInner({autoLoad = false, example, src, title, minHeigh
   }, [iframeSrc, isLoaded]);
 
   useEffect(() => {
+    if (wasFullscreenRef.current && !isFullscreen) {
+      setHeightSettling(true);
+    }
+    wasFullscreenRef.current = isFullscreen;
+    if (isFullscreen) {
+      setHeightSettling(false);
+    }
+  }, [isFullscreen]);
+
+  useEffect(() => {
+    if (!heightSettling) {
+      return undefined;
+    }
+    const timer = window.setTimeout(() => setHeightSettling(false), 950);
+    return () => window.clearTimeout(timer);
+  }, [height, heightSettling]);
+
+  useEffect(() => {
     if (!iframeSrc) return undefined;
 
     const onMessage = (event) => {
@@ -123,9 +143,7 @@ function ExternalPlayEmbedInner({autoLoad = false, example, src, title, minHeigh
       if (!data || typeof data !== 'object') return;
 
       if (data.type === 'it-play-embed-height') {
-        if (!isFullscreen) {
-          scheduleHeight(data.height);
-        }
+        scheduleHeight(data.height);
         return;
       }
 
@@ -208,7 +226,7 @@ function ExternalPlayEmbedInner({autoLoad = false, example, src, title, minHeigh
             src={iframeSrc}
             title={title}
             loading="eager"
-            style={{height: isFullscreen ? '100%' : `${height}px`}}
+            style={{height: isFullscreen || heightSettling ? '100%' : `${height}px`}}
             referrerPolicy="no-referrer-when-downgrade"
             allow="fullscreen"
             onLoad={() => {

@@ -87,23 +87,39 @@ export function useStableEmbedHeight(hostRef, minHeight, isFullscreen) {
   const [height, setHeightState] = useState(minHeight);
   const lastHeightRef = useRef(minHeight);
   const rafRef = useRef(null);
+  const settleTimerRef = useRef(null);
+  const pendingHeightRef = useRef(null);
+  const wasFullscreenRef = useRef(false);
+  const settleUntilRef = useRef(0);
 
   useEffect(() => {
     lastHeightRef.current = minHeight;
     setHeightState(minHeight);
   }, [minHeight]);
 
-  const applyHeight = useCallback(
-    (nextHeight) => {
-      const normalized = Math.max(minHeight, Math.ceil(nextHeight));
+  useEffect(() => {
+    if (wasFullscreenRef.current && !isFullscreen) {
+      settleUntilRef.current = Date.now() + 900;
+      pendingHeightRef.current = null;
+      if (settleTimerRef.current != null) {
+        clearTimeout(settleTimerRef.current);
+        settleTimerRef.current = null;
+      }
+    }
+    wasFullscreenRef.current = isFullscreen;
+  }, [isFullscreen]);
+
+  const applyHeightImmediate = useCallback(
+    (normalized) => {
       if (Math.abs(normalized - lastHeightRef.current) < 2) {
         return;
       }
 
       const host = hostRef.current;
       const delta = normalized - lastHeightRef.current;
+      const inSettle = Date.now() < settleUntilRef.current;
 
-      if (host && delta > 0 && !isFullscreen) {
+      if (host && delta > 0 && !isFullscreen && !inSettle) {
         const top = host.getBoundingClientRect().top;
         if (top < -4) {
           window.scrollBy(0, delta);
@@ -113,7 +129,31 @@ export function useStableEmbedHeight(hostRef, minHeight, isFullscreen) {
       lastHeightRef.current = normalized;
       setHeightState(normalized);
     },
-    [hostRef, isFullscreen, minHeight],
+    [hostRef, isFullscreen],
+  );
+
+  const applyHeight = useCallback(
+    (nextHeight) => {
+      const normalized = Math.max(minHeight, Math.ceil(nextHeight));
+
+      if (Date.now() < settleUntilRef.current) {
+        pendingHeightRef.current = normalized;
+        if (settleTimerRef.current == null) {
+          settleTimerRef.current = window.setTimeout(() => {
+            settleTimerRef.current = null;
+            const pending = pendingHeightRef.current;
+            pendingHeightRef.current = null;
+            if (pending != null) {
+              applyHeightImmediate(pending + 2);
+            }
+          }, 180);
+        }
+        return;
+      }
+
+      applyHeightImmediate(normalized + 2);
+    },
+    [applyHeightImmediate, minHeight],
   );
 
   const scheduleHeight = useCallback(
@@ -128,7 +168,7 @@ export function useStableEmbedHeight(hostRef, minHeight, isFullscreen) {
 
       rafRef.current = requestAnimationFrame(() => {
         rafRef.current = null;
-        applyHeight(nextHeight + 2);
+        applyHeight(nextHeight);
       });
     },
     [applyHeight],
@@ -138,6 +178,9 @@ export function useStableEmbedHeight(hostRef, minHeight, isFullscreen) {
     () => () => {
       if (rafRef.current != null) {
         cancelAnimationFrame(rafRef.current);
+      }
+      if (settleTimerRef.current != null) {
+        clearTimeout(settleTimerRef.current);
       }
     },
     [],

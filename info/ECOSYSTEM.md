@@ -19,7 +19,7 @@
 
 ## 1. Обзор экосистемы
 
-«Вселенная IT» — не один репозиторий, а **распределённая статическая платформа**: четыре публичных домена на GitHub Pages, локальная панель разработчика и мобильный клиент. На продакшене **нет общего backend** — связь между сервисами идёт через **HTTPS**: code и play — **iframe + postMessage**, иллюстрации — **прямые URL** с assets.spirzen.ru.
+«Вселенная IT» — не один репозиторий, а **распределённая статическая платформа**: пять публичных доменов на GitHub Pages (spirzen.ru, code, play, assets, html), локальная панель разработчика и мобильный клиент. На продакшене **нет общего backend** — связь между сервисами идёт через **HTTPS**: code и play — **iframe + postMessage**, иллюстрации — **прямые URL** с assets.spirzen.ru, WebEditor — **ссылки** из статей на html.spirzen.ru.
 
 **Локализация:** архитектура экосистемы готова к добавлению языков (`i18n-ready`), но на текущем этапе используется стратегия `not i18n now`: дополнительные языки не внедряются и не планируются, так как это нерационально при текущем масштабе контента.
 
@@ -38,10 +38,12 @@ flowchart TB
   KB -->|"iframe /e/embed/"| CODE["code.spirzen.ru<br/>it-code-examples<br/>~2312 примеров"]:::code
   KB -->|"iframe /p/embed/"| PLAY["play.spirzen.ru<br/>it-play<br/>~500 демо"]:::play
   KB -->|"img src URL"| MEDIA["assets.spirzen.ru<br/>it-encyclopedia-media<br/>~670 иллюстраций"]:::media
+  KB -->|"ссылки"| HTML["html.spirzen.ru<br/>WebEditor"]:::play
   KB <-->|"postMessage"| CODE
   KB <-->|"postMessage"| PLAY
 
-  Author["Автор / разработчик"] --> MGMT["it-management<br/>127.0.0.1:8787"]:::local
+  Author["Автор / разработчик"] --> HTML
+  Author --> MGMT["it-management<br/>127.0.0.1:8787"]:::local
   MGMT --> KB
   MGMT --> CODE
   MGMT --> PLAY
@@ -57,6 +59,7 @@ flowchart TB
 | Примеры кода | `it-code-examples` | [code.spirzen.ru](https://code.spirzen.ru/) | ~2312 примеров |
 | Интерактив | `it-play` | [play.spirzen.ru](https://play.spirzen.ru/) | ~500 демо |
 | Медиа | `it-encyclopedia-media` | [assets.spirzen.ru](https://assets.spirzen.ru/) | ~670 иллюстраций, `media-manifest.json` |
+| Веб-редактор | [`WebEditor`](https://github.com/Spirzen/WebEditor) | [html.spirzen.ru](https://html.spirzen.ru/) | HTML/CSS/JS, живой предпросмотр |
 | Панель управления | `it-management` | только локально | веб-проекты экосистемы |
 | Мобильное приложение | `itu-mobile-app` | APK / магазины | WebView → spirzen.ru |
 
@@ -68,6 +71,7 @@ flowchart TB
 | Короткий фрагмент (3–15 строк) | `it-knowledge-base` | fenced code block |
 | Длинный листинг, мультифайл, практикум | `it-code-examples` | `ExternalCodeEmbed` |
 | Тяжёлый React-симулятор, визуализация | `it-play` | `ExternalPlayEmbed` |
+| Практика HTML/CSS/JS в браузере | [`WebEditor`](https://github.com/Spirzen/WebEditor) | ссылка / `SpirzenOnlineToolLink` → html.spirzen.ru |
 | Иллюстрации, скриншоты, экспорт диаграмм | `it-encyclopedia-media` | `![alt](https://assets.spirzen.ru/encyclopedia/…)` |
 | Лёгкий inline-виджет | `it-knowledge-base` | `import` + `<Component />` с `lazyDemo` |
 
@@ -113,6 +117,15 @@ flowchart TB
 | Контент | `plays/<category>/<slug>/meta.json` + `src/components/demos/` |
 | Деплой | GitHub Actions → GitHub Pages |
 | Node.js | ≥ 20 |
+
+### 2.3a. html.spirzen.ru — WebEditor
+
+| Слой | Технология |
+|------|------------|
+| Репозиторий | [`Spirzen/WebEditor`](https://github.com/Spirzen/WebEditor) |
+| Хостинг | GitHub Pages (`html.spirzen.ru`) |
+| Назначение | Редактор HTML, CSS и JavaScript с живым предпросмотром |
+| Связь с энциклопедией | Ссылки из статей (`SpirzenOnlineToolLink`), хаб тренажёров (`ExternalPlayEmbed` с `src`) |
 
 ### 2.4. it-management (локально)
 

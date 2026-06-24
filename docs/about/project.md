@@ -26,7 +26,7 @@ import DocCardList from '@theme/DocCardList';
 
 "Вселенная IT" — это масштабный проект по систематизации, унификации и долгосрочному хранению знаний в области информационных технологий. 
 
-Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду здесь **более трёх тысяч** материалов в `docs/` (из них **~2900 статей** в энциклопедии), плюс **~2300 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/), **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/) и **~670 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/).
+Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду здесь **более трёх тысяч** материалов в `docs/` (из них **~2900 статей** в энциклопедии), плюс **~2300 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/), **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/), **~670 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/) и **онлайн-редактор** [html.spirzen.ru](https://html.spirzen.ru/) (WebEditor).
 
 Здесь:
 - нет слежки;
@@ -40,7 +40,7 @@ import DocCardList from '@theme/DocCardList';
 
 Материалы ориентированы на профессионалов, преподавателей, студентов и тех, кто начинает свой путь в IT. Каждый раздел проектируется с учётом научной строгости, практической применимости и доступности изложения.
 
-Вселенная IT охватывает всю сферу IT в **единой модели знаний**: текст и навигация — на [spirzen.ru](https://spirzen.ru/), длинные листинги — на [code.spirzen.ru](https://code.spirzen.ru/), тяжёлый интерактив (эмуляторы, тренажёры, визуализаторы) — на [play.spirzen.ru](https://play.spirzen.ru/), иллюстрации и скриншоты — на [assets.spirzen.ru](https://assets.spirzen.ru/). Код и интерактив в статьях связаны через iframe; картинки — по URL в markdown. Бесплатность, отсутствие рекламы, открытый код. Подробнее о витрине демо — в разделе [Интерактив](/about/interactive).
+Вселенная IT охватывает всю сферу IT в **единой модели знаний**: текст и навигация — на [spirzen.ru](https://spirzen.ru/), длинные листинги — на [code.spirzen.ru](https://code.spirzen.ru/), тяжёлый интерактив (эмуляторы, тренажёры, визуализаторы) — на [play.spirzen.ru](https://play.spirzen.ru/), иллюстрации и скриншоты — на [assets.spirzen.ru](https://assets.spirzen.ru/), практика веб-стека в браузере — на [html.spirzen.ru](https://html.spirzen.ru/) (WebEditor). Код и интерактив в статьях связаны через iframe; картинки — по URL в markdown. Бесплатность, отсутствие рекламы, открытый код. Подробнее о витрине демо — в разделе [Интерактив](/about/interactive).
 
 У Вселенной IT есть осознанные минусы:
 - уникальность и актуальность контента — я работаю сам и как хочу, поэтому если что-то обновится, то всё в моих руках;
@@ -148,9 +148,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## Как устроен проект технически
 
-«Вселенная IT» — это не только тысячи статей, но и **распределённая программная платформа**: четыре публичных домена на GitHub Pages (текст, код, интерактив, медиа), связанных с энциклопедией через iframe/postMessage и прямые URL иллюстраций, плюс локальная панель разработчика и мобильное приложение. На продакшене **нет общего backend и базы данных** — читатель получает статический HTML и JavaScript; вся подготовка контента и индексов происходит при сборке и в CI.
+«Вселенная IT» — это не только тысячи статей, но и **распределённая программная платформа**: пять публичных доменов на GitHub Pages (текст, код, интерактив, медиа, веб-редактор), связанных с энциклопедией через iframe/postMessage, прямые URL иллюстраций и ссылки на standalone-приложения, плюс локальная панель разработчика и мобильное приложение. На продакшене **нет общего backend и базы данных** — читатель получает статический HTML и JavaScript; вся подготовка контента и индексов происходит при сборке и в CI.
 
-### Экосистема (четыре домена + инструменты)
+### Экосистема (пять доменов + инструменты)
 
 | Сервис | URL | Репозиторий | Содержание |
 |--------|-----|-------------|------------|
@@ -158,12 +158,13 @@ import DocCardList from '@theme/DocCardList';
 | Примеры кода | [code.spirzen.ru](https://code.spirzen.ru/) | `it-code-examples` | ~2312 листингов (Astro + Shiki) |
 | Интерактив | [play.spirzen.ru](https://play.spirzen.ru/) | `it-play` | ~500 демо (Astro + React) |
 | Медиа | [assets.spirzen.ru](https://assets.spirzen.ru/) | `it-encyclopedia-media` | ~670 иллюстраций (статика, без сборки) |
+| Веб-редактор | [html.spirzen.ru](https://html.spirzen.ru/) | [`WebEditor`](https://github.com/Spirzen/WebEditor) | HTML/CSS/JS с живым предпросмотром |
 | Панель (локально) | `127.0.0.1:8787` | `it-management` | Start/Build/Deploy веб-проектов |
 | Android | APK на главной | `itu-mobile-app` | WebView → spirzen.ru |
 
 ### Распределённая архитектура
 
-Четыре независимых домена на GitHub Pages разгружают репозиторий энциклопедии: код и интерактив «стягиваются» в статьи через iframe и postMessage, иллюстрации — по абсолютным URL с **assets** (без участия билда Docusaurus).
+Пять независимых доменов на GitHub Pages разгружают репозиторий энциклопедии: код и интерактив «стягиваются» в статьи через iframe и postMessage, иллюстрации — по абсолютным URL с **assets** (без участия билда Docusaurus), практика веб-стека — на **html** как отдельное приложение со ссылками из статей.
 
 ![Трёхуровневая архитектура «Вселенная IT» — spirzen.ru (хаб), code.spirzen.ru (код), play.spirzen.ru (интерактив) и слой интеграции](https://assets.spirzen.ru/encyclopedia/_shared/img/it-universe-three-tier.png)
 
@@ -180,13 +181,13 @@ import DocCardList from '@theme/DocCardList';
   </div>
 
 
-![Архитектура «Вселенная IT» — экосистема: spirzen.ru, code.spirzen.ru, play.spirzen.ru, assets.spirzen.ru, интеграция и runtime](https://assets.spirzen.ru/encyclopedia/_shared/img/it-universe-architecture.png)
+![Архитектура «Вселенная IT» — экосистема: spirzen.ru, code.spirzen.ru, play.spirzen.ru, assets.spirzen.ru, html.spirzen.ru, интеграция и runtime](https://assets.spirzen.ru/encyclopedia/_shared/img/it-universe-architecture.png)
 
 ### Что показано на схеме (Draw.io)
 
 | Зона | Содержание |
 | :--- | :--- |
-| **0. Экосистема** | Четыре репозитория GitHub → четыре домена Pages; it-management (локально); APK |
+| **0. Экосистема** | Пять репозиториев GitHub → пять доменов Pages (spirzen, code, play, assets, html); it-management (локально); APK |
 | **0b. Интеграция** | ExternalCodeEmbed / ExternalPlayEmbed, postMessage, CSP; иллюстрации — URL с assets |
 | **1. it-knowledge-base** | `docs/` (~3400), `src/`, embed-компоненты, DocSearch |
 | **2. Сборка spirzen.ru** | wiki-links, search-index, Docusaurus 3.10 → `build/` |
@@ -216,15 +217,19 @@ flowchart TB
   CODE["code.spirzen.ru<br/>~2312 примеров"]:::code
   PLAY["play.spirzen.ru<br/>~500 демо"]:::play
   ASSETS["assets.spirzen.ru<br/>~670 иллюстраций"]:::media
+  HTML["html.spirzen.ru<br/>WebEditor"]:::play
 
   Author --> KB
   Author --> CODE
   Author --> PLAY
   Author --> ASSETS
+  Author --> HTML
   Reader --> KB
+  Reader --> HTML
   KB -->|"iframe /e/embed/"| CODE
   KB -->|"iframe /p/embed/"| PLAY
   KB -->|"img src URL"| ASSETS
+  KB -->|"ссылки из статей"| HTML
   KB <-->|"postMessage"| CODE
   KB <-->|"postMessage"| PLAY
 ```
@@ -432,6 +437,7 @@ DevOps-практики, контейнеризация (Docker), оркестр
 - **~2312 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/)
 - **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/)
 - **~670 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/)
+- **WebEditor** на [html.spirzen.ru](https://html.spirzen.ru/) — практика HTML/CSS/JS в браузере
 - **15+ языков программирования** в каталоге примеров
 - **Поиск** по статьям (Ctrl+K), без Algolia
 - **100% бесплатно**, постоянно обновляется
