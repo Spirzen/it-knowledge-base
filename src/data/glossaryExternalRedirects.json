@@ -1,0 +1,562 @@
+[
+  {
+    "from": "/docs/glossary",
+    "to": "https://terms.spirzen.ru/glossary/intro"
+  },
+  {
+    "from": "/docs/glossary/0",
+    "to": "https://terms.spirzen.ru/glossary/0"
+  },
+  {
+    "from": "/docs/glossary/1",
+    "to": "https://terms.spirzen.ru/glossary/1"
+  },
+  {
+    "from": "/docs/glossary/2",
+    "to": "https://terms.spirzen.ru/glossary/2"
+  },
+  {
+    "from": "/docs/glossary/3",
+    "to": "https://terms.spirzen.ru/glossary/3"
+  },
+  {
+    "from": "/docs/glossary/4",
+    "to": "https://terms.spirzen.ru/glossary/4"
+  },
+  {
+    "from": "/docs/glossary/5",
+    "to": "https://terms.spirzen.ru/glossary/5"
+  },
+  {
+    "from": "/docs/glossary/6",
+    "to": "https://terms.spirzen.ru/glossary/6"
+  },
+  {
+    "from": "/docs/glossary/7",
+    "to": "https://terms.spirzen.ru/glossary/7"
+  },
+  {
+    "from": "/docs/glossary/8",
+    "to": "https://terms.spirzen.ru/glossary/8"
+  },
+  {
+    "from": "/docs/glossary/9",
+    "to": "https://terms.spirzen.ru/glossary/9"
+  },
+  {
+    "from": "/docs/glossary/А",
+    "to": "https://terms.spirzen.ru/glossary/А"
+  },
+  {
+    "from": "/docs/glossary/Б",
+    "to": "https://terms.spirzen.ru/glossary/Б"
+  },
+  {
+    "from": "/docs/glossary/В",
+    "to": "https://terms.spirzen.ru/glossary/В"
+  },
+  {
+    "from": "/docs/glossary/Г",
+    "to": "https://terms.spirzen.ru/glossary/Г"
+  },
+  {
+    "from": "/docs/glossary/Д",
+    "to": "https://terms.spirzen.ru/glossary/Д"
+  },
+  {
+    "from": "/docs/glossary/Е",
+    "to": "https://terms.spirzen.ru/glossary/Е"
+  },
+  {
+    "from": "/docs/glossary/Ж",
+    "to": "https://terms.spirzen.ru/glossary/Ж"
+  },
+  {
+    "from": "/docs/glossary/З",
+    "to": "https://terms.spirzen.ru/glossary/З"
+  },
+  {
+    "from": "/docs/glossary/И",
+    "to": "https://terms.spirzen.ru/glossary/И"
+  },
+  {
+    "from": "/docs/glossary/Й",
+    "to": "https://terms.spirzen.ru/glossary/Й"
+  },
+  {
+    "from": "/docs/glossary/К",
+    "to": "https://terms.spirzen.ru/glossary/К"
+  },
+  {
+    "from": "/docs/glossary/Л",
+    "to": "https://terms.spirzen.ru/glossary/Л"
+  },
+  {
+    "from": "/docs/glossary/М",
+    "to": "https://terms.spirzen.ru/glossary/М"
+  },
+  {
+    "from": "/docs/glossary/Н",
+    "to": "https://terms.spirzen.ru/glossary/Н"
+  },
+  {
+    "from": "/docs/glossary/О",
+    "to": "https://terms.spirzen.ru/glossary/О"
+  },
+  {
+    "from": "/docs/glossary/П",
+    "to": "https://terms.spirzen.ru/glossary/П"
+  },
+  {
+    "from": "/docs/glossary/Р",
+    "to": "https://terms.spirzen.ru/glossary/Р"
+  },
+  {
+    "from": "/docs/glossary/С",
+    "to": "https://terms.spirzen.ru/glossary/С"
+  },
+  {
+    "from": "/docs/glossary/Т",
+    "to": "https://terms.spirzen.ru/glossary/Т"
+  },
+  {
+    "from": "/docs/glossary/У",
+    "to": "https://terms.spirzen.ru/glossary/У"
+  },
+  {
+    "from": "/docs/glossary/Ф",
+    "to": "https://terms.spirzen.ru/glossary/Ф"
+  },
+  {
+    "from": "/docs/glossary/Х",
+    "to": "https://terms.spirzen.ru/glossary/Х"
+  },
+  {
+    "from": "/docs/glossary/Ц",
+    "to": "https://terms.spirzen.ru/glossary/Ц"
+  },
+  {
+    "from": "/docs/glossary/Ч",
+    "to": "https://terms.spirzen.ru/glossary/Ч"
+  },
+  {
+    "from": "/docs/glossary/Ш",
+    "to": "https://terms.spirzen.ru/glossary/Ш"
+  },
+  {
+    "from": "/docs/glossary/Щ",
+    "to": "https://terms.spirzen.ru/glossary/Щ"
+  },
+  {
+    "from": "/docs/glossary/Ъ",
+    "to": "https://terms.spirzen.ru/glossary/Ъ"
+  },
+  {
+    "from": "/docs/glossary/Ы",
+    "to": "https://terms.spirzen.ru/glossary/Ы"
+  },
+  {
+    "from": "/docs/glossary/Ь",
+    "to": "https://terms.spirzen.ru/glossary/Ь"
+  },
+  {
+    "from": "/docs/glossary/Э",
+    "to": "https://terms.spirzen.ru/glossary/Э"
+  },
+  {
+    "from": "/docs/glossary/Ю",
+    "to": "https://terms.spirzen.ru/glossary/Ю"
+  },
+  {
+    "from": "/docs/glossary/Я",
+    "to": "https://terms.spirzen.ru/glossary/Я"
+  },
+  {
+    "from": "/docs/glossary/A",
+    "to": "https://terms.spirzen.ru/glossary/A"
+  },
+  {
+    "from": "/docs/glossary/B",
+    "to": "https://terms.spirzen.ru/glossary/B"
+  },
+  {
+    "from": "/docs/glossary/C",
+    "to": "https://terms.spirzen.ru/glossary/C"
+  },
+  {
+    "from": "/docs/glossary/D",
+    "to": "https://terms.spirzen.ru/glossary/D"
+  },
+  {
+    "from": "/docs/glossary/E",
+    "to": "https://terms.spirzen.ru/glossary/E"
+  },
+  {
+    "from": "/docs/glossary/F",
+    "to": "https://terms.spirzen.ru/glossary/F"
+  },
+  {
+    "from": "/docs/glossary/G",
+    "to": "https://terms.spirzen.ru/glossary/G"
+  },
+  {
+    "from": "/docs/glossary/H",
+    "to": "https://terms.spirzen.ru/glossary/H"
+  },
+  {
+    "from": "/docs/glossary/I",
+    "to": "https://terms.spirzen.ru/glossary/I"
+  },
+  {
+    "from": "/docs/glossary/intro",
+    "to": "https://terms.spirzen.ru/glossary/intro"
+  },
+  {
+    "from": "/docs/glossary/J",
+    "to": "https://terms.spirzen.ru/glossary/J"
+  },
+  {
+    "from": "/docs/glossary/K",
+    "to": "https://terms.spirzen.ru/glossary/K"
+  },
+  {
+    "from": "/docs/glossary/L",
+    "to": "https://terms.spirzen.ru/glossary/L"
+  },
+  {
+    "from": "/docs/glossary/M",
+    "to": "https://terms.spirzen.ru/glossary/M"
+  },
+  {
+    "from": "/docs/glossary/N",
+    "to": "https://terms.spirzen.ru/glossary/N"
+  },
+  {
+    "from": "/docs/glossary/O",
+    "to": "https://terms.spirzen.ru/glossary/O"
+  },
+  {
+    "from": "/docs/glossary/P",
+    "to": "https://terms.spirzen.ru/glossary/P"
+  },
+  {
+    "from": "/docs/glossary/Q",
+    "to": "https://terms.spirzen.ru/glossary/Q"
+  },
+  {
+    "from": "/docs/glossary/R",
+    "to": "https://terms.spirzen.ru/glossary/R"
+  },
+  {
+    "from": "/docs/glossary/S",
+    "to": "https://terms.spirzen.ru/glossary/S"
+  },
+  {
+    "from": "/docs/glossary/T",
+    "to": "https://terms.spirzen.ru/glossary/T"
+  },
+  {
+    "from": "/docs/glossary/U",
+    "to": "https://terms.spirzen.ru/glossary/U"
+  },
+  {
+    "from": "/docs/glossary/V",
+    "to": "https://terms.spirzen.ru/glossary/V"
+  },
+  {
+    "from": "/docs/glossary/W",
+    "to": "https://terms.spirzen.ru/glossary/W"
+  },
+  {
+    "from": "/docs/glossary/X",
+    "to": "https://terms.spirzen.ru/glossary/X"
+  },
+  {
+    "from": "/docs/glossary/Y",
+    "to": "https://terms.spirzen.ru/glossary/Y"
+  },
+  {
+    "from": "/docs/glossary/Z",
+    "to": "https://terms.spirzen.ru/glossary/Z"
+  },
+  {
+    "from": "/glossary",
+    "to": "https://terms.spirzen.ru/glossary/intro"
+  },
+  {
+    "from": "/glossary/0",
+    "to": "https://terms.spirzen.ru/glossary/0"
+  },
+  {
+    "from": "/glossary/1",
+    "to": "https://terms.spirzen.ru/glossary/1"
+  },
+  {
+    "from": "/glossary/2",
+    "to": "https://terms.spirzen.ru/glossary/2"
+  },
+  {
+    "from": "/glossary/3",
+    "to": "https://terms.spirzen.ru/glossary/3"
+  },
+  {
+    "from": "/glossary/4",
+    "to": "https://terms.spirzen.ru/glossary/4"
+  },
+  {
+    "from": "/glossary/5",
+    "to": "https://terms.spirzen.ru/glossary/5"
+  },
+  {
+    "from": "/glossary/6",
+    "to": "https://terms.spirzen.ru/glossary/6"
+  },
+  {
+    "from": "/glossary/7",
+    "to": "https://terms.spirzen.ru/glossary/7"
+  },
+  {
+    "from": "/glossary/8",
+    "to": "https://terms.spirzen.ru/glossary/8"
+  },
+  {
+    "from": "/glossary/9",
+    "to": "https://terms.spirzen.ru/glossary/9"
+  },
+  {
+    "from": "/glossary/А",
+    "to": "https://terms.spirzen.ru/glossary/А"
+  },
+  {
+    "from": "/glossary/Б",
+    "to": "https://terms.spirzen.ru/glossary/Б"
+  },
+  {
+    "from": "/glossary/В",
+    "to": "https://terms.spirzen.ru/glossary/В"
+  },
+  {
+    "from": "/glossary/Г",
+    "to": "https://terms.spirzen.ru/glossary/Г"
+  },
+  {
+    "from": "/glossary/Д",
+    "to": "https://terms.spirzen.ru/glossary/Д"
+  },
+  {
+    "from": "/glossary/Е",
+    "to": "https://terms.spirzen.ru/glossary/Е"
+  },
+  {
+    "from": "/glossary/Ж",
+    "to": "https://terms.spirzen.ru/glossary/Ж"
+  },
+  {
+    "from": "/glossary/З",
+    "to": "https://terms.spirzen.ru/glossary/З"
+  },
+  {
+    "from": "/glossary/И",
+    "to": "https://terms.spirzen.ru/glossary/И"
+  },
+  {
+    "from": "/glossary/Й",
+    "to": "https://terms.spirzen.ru/glossary/Й"
+  },
+  {
+    "from": "/glossary/К",
+    "to": "https://terms.spirzen.ru/glossary/К"
+  },
+  {
+    "from": "/glossary/Л",
+    "to": "https://terms.spirzen.ru/glossary/Л"
+  },
+  {
+    "from": "/glossary/М",
+    "to": "https://terms.spirzen.ru/glossary/М"
+  },
+  {
+    "from": "/glossary/Н",
+    "to": "https://terms.spirzen.ru/glossary/Н"
+  },
+  {
+    "from": "/glossary/О",
+    "to": "https://terms.spirzen.ru/glossary/О"
+  },
+  {
+    "from": "/glossary/П",
+    "to": "https://terms.spirzen.ru/glossary/П"
+  },
+  {
+    "from": "/glossary/Р",
+    "to": "https://terms.spirzen.ru/glossary/Р"
+  },
+  {
+    "from": "/glossary/С",
+    "to": "https://terms.spirzen.ru/glossary/С"
+  },
+  {
+    "from": "/glossary/Т",
+    "to": "https://terms.spirzen.ru/glossary/Т"
+  },
+  {
+    "from": "/glossary/У",
+    "to": "https://terms.spirzen.ru/glossary/У"
+  },
+  {
+    "from": "/glossary/Ф",
+    "to": "https://terms.spirzen.ru/glossary/Ф"
+  },
+  {
+    "from": "/glossary/Х",
+    "to": "https://terms.spirzen.ru/glossary/Х"
+  },
+  {
+    "from": "/glossary/Ц",
+    "to": "https://terms.spirzen.ru/glossary/Ц"
+  },
+  {
+    "from": "/glossary/Ч",
+    "to": "https://terms.spirzen.ru/glossary/Ч"
+  },
+  {
+    "from": "/glossary/Ш",
+    "to": "https://terms.spirzen.ru/glossary/Ш"
+  },
+  {
+    "from": "/glossary/Щ",
+    "to": "https://terms.spirzen.ru/glossary/Щ"
+  },
+  {
+    "from": "/glossary/Ъ",
+    "to": "https://terms.spirzen.ru/glossary/Ъ"
+  },
+  {
+    "from": "/glossary/Ы",
+    "to": "https://terms.spirzen.ru/glossary/Ы"
+  },
+  {
+    "from": "/glossary/Ь",
+    "to": "https://terms.spirzen.ru/glossary/Ь"
+  },
+  {
+    "from": "/glossary/Э",
+    "to": "https://terms.spirzen.ru/glossary/Э"
+  },
+  {
+    "from": "/glossary/Ю",
+    "to": "https://terms.spirzen.ru/glossary/Ю"
+  },
+  {
+    "from": "/glossary/Я",
+    "to": "https://terms.spirzen.ru/glossary/Я"
+  },
+  {
+    "from": "/glossary/A",
+    "to": "https://terms.spirzen.ru/glossary/A"
+  },
+  {
+    "from": "/glossary/B",
+    "to": "https://terms.spirzen.ru/glossary/B"
+  },
+  {
+    "from": "/glossary/C",
+    "to": "https://terms.spirzen.ru/glossary/C"
+  },
+  {
+    "from": "/glossary/D",
+    "to": "https://terms.spirzen.ru/glossary/D"
+  },
+  {
+    "from": "/glossary/E",
+    "to": "https://terms.spirzen.ru/glossary/E"
+  },
+  {
+    "from": "/glossary/F",
+    "to": "https://terms.spirzen.ru/glossary/F"
+  },
+  {
+    "from": "/glossary/G",
+    "to": "https://terms.spirzen.ru/glossary/G"
+  },
+  {
+    "from": "/glossary/H",
+    "to": "https://terms.spirzen.ru/glossary/H"
+  },
+  {
+    "from": "/glossary/I",
+    "to": "https://terms.spirzen.ru/glossary/I"
+  },
+  {
+    "from": "/glossary/intro",
+    "to": "https://terms.spirzen.ru/glossary/intro"
+  },
+  {
+    "from": "/glossary/J",
+    "to": "https://terms.spirzen.ru/glossary/J"
+  },
+  {
+    "from": "/glossary/K",
+    "to": "https://terms.spirzen.ru/glossary/K"
+  },
+  {
+    "from": "/glossary/L",
+    "to": "https://terms.spirzen.ru/glossary/L"
+  },
+  {
+    "from": "/glossary/M",
+    "to": "https://terms.spirzen.ru/glossary/M"
+  },
+  {
+    "from": "/glossary/N",
+    "to": "https://terms.spirzen.ru/glossary/N"
+  },
+  {
+    "from": "/glossary/O",
+    "to": "https://terms.spirzen.ru/glossary/O"
+  },
+  {
+    "from": "/glossary/P",
+    "to": "https://terms.spirzen.ru/glossary/P"
+  },
+  {
+    "from": "/glossary/Q",
+    "to": "https://terms.spirzen.ru/glossary/Q"
+  },
+  {
+    "from": "/glossary/R",
+    "to": "https://terms.spirzen.ru/glossary/R"
+  },
+  {
+    "from": "/glossary/S",
+    "to": "https://terms.spirzen.ru/glossary/S"
+  },
+  {
+    "from": "/glossary/T",
+    "to": "https://terms.spirzen.ru/glossary/T"
+  },
+  {
+    "from": "/glossary/U",
+    "to": "https://terms.spirzen.ru/glossary/U"
+  },
+  {
+    "from": "/glossary/V",
+    "to": "https://terms.spirzen.ru/glossary/V"
+  },
+  {
+    "from": "/glossary/W",
+    "to": "https://terms.spirzen.ru/glossary/W"
+  },
+  {
+    "from": "/glossary/X",
+    "to": "https://terms.spirzen.ru/glossary/X"
+  },
+  {
+    "from": "/glossary/Y",
+    "to": "https://terms.spirzen.ru/glossary/Y"
+  },
+  {
+    "from": "/glossary/Z",
+    "to": "https://terms.spirzen.ru/glossary/Z"
+  }
+]

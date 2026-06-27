@@ -124,6 +124,17 @@ function collectDocs(categoryLabels) {
         continue;
       }
 
+      const rel = path.relative(docsDir, fullPath).replace(/\\/g, '/');
+      if (rel.startsWith('glossary/')) {
+        continue;
+      }
+      if (rel.startsWith('lab/')) {
+        continue;
+      }
+      if (rel.startsWith('tools/')) {
+        continue;
+      }
+
       const sidebarLabel = stripQuotes(data.sidebar_label);
       const title = stripQuotes(data.title);
       const h1 = content.match(/^#\s+(.+?)\s*$/m)?.[1]?.trim();
@@ -147,7 +158,6 @@ function collectDocs(categoryLabels) {
         .filter(Boolean);
       const headingsText = truncate(headings.join(' '), 260);
 
-      const rel = path.relative(docsDir, fullPath).replace(/\\/g, '/');
       const section = sectionForFile(fullPath, categoryLabels);
       const tagStr = tagsToString(data.tags);
 

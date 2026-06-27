@@ -8,6 +8,30 @@ try {
   // npm run docs:redirects — перед start/build
 }
 
+/** @type {{ from: string, to: string }[]} */
+let glossaryExternalRedirects = [];
+try {
+  glossaryExternalRedirects = require('./src/data/glossaryExternalRedirects.json');
+} catch {
+  // npm run docs:glossary-redirects — перед start/build
+}
+
+/** @type {{ from: string, to: string }[]} */
+let labExternalRedirects = [];
+try {
+  labExternalRedirects = require('./src/data/labExternalRedirects.json');
+} catch {
+  // npm run docs:lab-redirects — перед start/build
+}
+
+/** @type {{ from: string, to: string }[]} */
+let toolsExternalRedirects = [];
+try {
+  toolsExternalRedirects = require('./src/data/toolsExternalRedirects.json');
+} catch {
+  // npm run docs:tools-redirects — перед start/build
+}
+
 /** Old slug segment -> new folder name (encyclopedia subsection). */
 const ENCYCLOPEDIA_FOLDER_RENAMES = [
   ['encyclopedia/3-data-markup/3.01. Продвинутые операции с данными', 'encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi'],
@@ -93,6 +117,15 @@ const codeExamplesUrl =
 const playExamplesUrl =
   process.env.IT_PLAY_URL ?? (isProdBuild ? 'https://play.spirzen.ru' : 'http://localhost:4322');
 
+const termsUrl =
+  process.env.IT_TERMS_URL ?? (isProdBuild ? 'https://terms.spirzen.ru' : 'http://localhost:4330');
+
+const labUrl =
+  process.env.IT_LAB_URL ?? (isProdBuild ? 'https://lab.spirzen.ru' : 'http://localhost:4331');
+
+const toolsUrl =
+  process.env.IT_TOOLS_URL ?? (isProdBuild ? 'https://tools.spirzen.ru' : 'http://localhost:4334');
+
 module.exports = {
   title: 'Вселенная IT',
   tagline: 'Единый и ультимативный гайд по IT',
@@ -110,6 +143,9 @@ module.exports = {
   customFields: {
     codeExamplesUrl,
     playExamplesUrl,
+    termsUrl,
+    labUrl,
+    toolsUrl,
   },
 
   clientModules: [
@@ -140,6 +176,7 @@ module.exports = {
           showLastUpdateTime: true,
           routeBasePath: '/',
           numberPrefixParser: false,
+          exclude: ['**/glossary/**', '**/lab/**', '**/tools/**'],
           remarkPlugins: [
             require('./src/remark/wikiLink.js'),
             require('./src/remark/lazyMdxDemoImports.js'),
@@ -161,6 +198,7 @@ module.exports = {
     [
       '@docusaurus/plugin-client-redirects',
       {
+        redirects: [...glossaryExternalRedirects, ...labExternalRedirects, ...toolsExternalRedirects],
         createRedirects(existingPath) {
           const fromEncyclopedia = createEncyclopediaFolderRedirects(existingPath);
           const slugRedirects = {
@@ -390,7 +428,7 @@ module.exports = {
           items: [
             { label: 'Код и разработка', to: '/section/code-dev' },
             { label: 'Инфраструктура и безопасность', to: '/section/infra-security' },
-            { label: 'Лаборатория', to: '/lab/intro' },
+            { label: 'Лаборатория', href: `${labUrl}/lab/intro` },
           ],
         },
         {
@@ -398,7 +436,7 @@ module.exports = {
           items: [
             { label: 'Контекст', to: '/context/intro' },
             { label: 'Философия', to: '/philosophy/intro' },
-            { label: 'Глоссарий', to: '/glossary/intro' },
+            { label: 'Глоссарий', href: `${termsUrl}/glossary/intro` },
           ],
         },
         {

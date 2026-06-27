@@ -1823,10 +1823,26 @@ body.pdf-export-busy::before {
   color: #2e7d6e;
 }
 
+.theme-doc-markdown a.wiki-link--lab {
+  color: #6b4fbb;
+}
+
 .theme-doc-markdown a.wiki-link--encyclopedia {
   color: var(--ifm-color-primary);
 }
 
 [data-theme='dark'] .theme-doc-markdown a.wiki-link--glossary {
   color: #6ecfba;
+}
+
+[data-theme='dark'] .theme-doc-markdown a.wiki-link--lab {
+  color: #b39cff;
+}
+
+.theme-doc-markdown a.wiki-link--tools {
+  color: #0d6e6e;
+}
+
+[data-theme='dark'] .theme-doc-markdown a.wiki-link--tools {
+  color: #5ecfcf;
 }

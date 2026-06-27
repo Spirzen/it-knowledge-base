@@ -411,6 +411,15 @@ function collectDocRedirects(categoryByDir, slugger) {
 
       const rel = path.relative(docsDir, fullPath).replace(/\\/g, '/');
       const relNoExt = rel.replace(/\.mdx?$/i, '');
+      if (relNoExt === 'glossary' || relNoExt.startsWith('glossary/')) {
+        continue;
+      }
+      if (relNoExt === 'lab' || relNoExt.startsWith('lab/')) {
+        continue;
+      }
+      if (relNoExt === 'tools' || relNoExt.startsWith('tools/')) {
+        continue;
+      }
       const folderCanonical = normalizeHref(resolveDocHref(rel, data));
       const canonical = resolveDocusaurusCanonicalHref(
         relNoExt,
@@ -449,7 +458,13 @@ function collectCategoryIndexRedirects(categoryByDir, slugger) {
       continue;
     }
     const relDir = path.relative(docsDir, dir).replace(/\\/g, '/');
-    if (!relDir || relDir === '.') {
+    if (!relDir || relDir === '.' || relDir === 'glossary' || relDir.startsWith('glossary/')) {
+      continue;
+    }
+    if (relDir === 'lab' || relDir.startsWith('lab/')) {
+      continue;
+    }
+    if (relDir === 'tools' || relDir.startsWith('tools/')) {
       continue;
     }
     const canonical = categoryGeneratedIndexHref(relDir, categoryByDir, slugger);

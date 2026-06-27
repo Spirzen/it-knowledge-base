@@ -1,0 +1,522 @@
+[
+  {
+    "from": "/docs/tools",
+    "to": "https://tools.spirzen.ru/tools/intro"
+  },
+  {
+    "from": "/docs/tools/automation/1",
+    "to": "https://tools.spirzen.ru/tools/automation/1"
+  },
+  {
+    "from": "/docs/tools/automation/2",
+    "to": "https://tools.spirzen.ru/tools/automation/2"
+  },
+  {
+    "from": "/docs/tools/automation/3",
+    "to": "https://tools.spirzen.ru/tools/automation/3"
+  },
+  {
+    "from": "/docs/tools/automation/intro",
+    "to": "https://tools.spirzen.ru/tools/automation/intro"
+  },
+  {
+    "from": "/docs/tools/data/1",
+    "to": "https://tools.spirzen.ru/tools/data/1"
+  },
+  {
+    "from": "/docs/tools/data/2",
+    "to": "https://tools.spirzen.ru/tools/data/2"
+  },
+  {
+    "from": "/docs/tools/data/3",
+    "to": "https://tools.spirzen.ru/tools/data/3"
+  },
+  {
+    "from": "/docs/tools/data/4",
+    "to": "https://tools.spirzen.ru/tools/data/4"
+  },
+  {
+    "from": "/docs/tools/data/5",
+    "to": "https://tools.spirzen.ru/tools/data/5"
+  },
+  {
+    "from": "/docs/tools/data/6",
+    "to": "https://tools.spirzen.ru/tools/data/6"
+  },
+  {
+    "from": "/docs/tools/data/intro",
+    "to": "https://tools.spirzen.ru/tools/data/intro"
+  },
+  {
+    "from": "/docs/tools/development/1",
+    "to": "https://tools.spirzen.ru/tools/development/1"
+  },
+  {
+    "from": "/docs/tools/development/2",
+    "to": "https://tools.spirzen.ru/tools/development/2"
+  },
+  {
+    "from": "/docs/tools/development/3",
+    "to": "https://tools.spirzen.ru/tools/development/3"
+  },
+  {
+    "from": "/docs/tools/development/4",
+    "to": "https://tools.spirzen.ru/tools/development/4"
+  },
+  {
+    "from": "/docs/tools/development/intro",
+    "to": "https://tools.spirzen.ru/tools/development/intro"
+  },
+  {
+    "from": "/docs/tools/documentation/1",
+    "to": "https://tools.spirzen.ru/tools/documentation/1"
+  },
+  {
+    "from": "/docs/tools/documentation/2",
+    "to": "https://tools.spirzen.ru/tools/documentation/2"
+  },
+  {
+    "from": "/docs/tools/documentation/3",
+    "to": "https://tools.spirzen.ru/tools/documentation/3"
+  },
+  {
+    "from": "/docs/tools/documentation/4",
+    "to": "https://tools.spirzen.ru/tools/documentation/4"
+  },
+  {
+    "from": "/docs/tools/documentation/5",
+    "to": "https://tools.spirzen.ru/tools/documentation/5"
+  },
+  {
+    "from": "/docs/tools/documentation/6",
+    "to": "https://tools.spirzen.ru/tools/documentation/6"
+  },
+  {
+    "from": "/docs/tools/documentation/7",
+    "to": "https://tools.spirzen.ru/tools/documentation/7"
+  },
+  {
+    "from": "/docs/tools/documentation/intro",
+    "to": "https://tools.spirzen.ru/tools/documentation/intro"
+  },
+  {
+    "from": "/docs/tools/games/1",
+    "to": "https://tools.spirzen.ru/tools/games/1"
+  },
+  {
+    "from": "/docs/tools/games/1111",
+    "to": "https://tools.spirzen.ru/tools/games/1111"
+  },
+  {
+    "from": "/docs/tools/games/2",
+    "to": "https://tools.spirzen.ru/tools/games/2"
+  },
+  {
+    "from": "/docs/tools/games/3",
+    "to": "https://tools.spirzen.ru/tools/games/3"
+  },
+  {
+    "from": "/docs/tools/games/4",
+    "to": "https://tools.spirzen.ru/tools/games/4"
+  },
+  {
+    "from": "/docs/tools/games/intro",
+    "to": "https://tools.spirzen.ru/tools/games/intro"
+  },
+  {
+    "from": "/docs/tools/intro",
+    "to": "https://tools.spirzen.ru/tools/intro"
+  },
+  {
+    "from": "/docs/tools/misc/1",
+    "to": "https://tools.spirzen.ru/tools/misc/1"
+  },
+  {
+    "from": "/docs/tools/misc/2",
+    "to": "https://tools.spirzen.ru/tools/misc/2"
+  },
+  {
+    "from": "/docs/tools/misc/3",
+    "to": "https://tools.spirzen.ru/tools/misc/3"
+  },
+  {
+    "from": "/docs/tools/misc/4",
+    "to": "https://tools.spirzen.ru/tools/misc/4"
+  },
+  {
+    "from": "/docs/tools/misc/5",
+    "to": "https://tools.spirzen.ru/tools/misc/5"
+  },
+  {
+    "from": "/docs/tools/misc/6",
+    "to": "https://tools.spirzen.ru/tools/misc/6"
+  },
+  {
+    "from": "/docs/tools/misc/intro",
+    "to": "https://tools.spirzen.ru/tools/misc/intro"
+  },
+  {
+    "from": "/docs/tools/multimedia/1",
+    "to": "https://tools.spirzen.ru/tools/multimedia/1"
+  },
+  {
+    "from": "/docs/tools/multimedia/2",
+    "to": "https://tools.spirzen.ru/tools/multimedia/2"
+  },
+  {
+    "from": "/docs/tools/multimedia/3",
+    "to": "https://tools.spirzen.ru/tools/multimedia/3"
+  },
+  {
+    "from": "/docs/tools/multimedia/4",
+    "to": "https://tools.spirzen.ru/tools/multimedia/4"
+  },
+  {
+    "from": "/docs/tools/multimedia/5",
+    "to": "https://tools.spirzen.ru/tools/multimedia/5"
+  },
+  {
+    "from": "/docs/tools/multimedia/intro",
+    "to": "https://tools.spirzen.ru/tools/multimedia/intro"
+  },
+  {
+    "from": "/docs/tools/network/1",
+    "to": "https://tools.spirzen.ru/tools/network/1"
+  },
+  {
+    "from": "/docs/tools/network/2",
+    "to": "https://tools.spirzen.ru/tools/network/2"
+  },
+  {
+    "from": "/docs/tools/network/3",
+    "to": "https://tools.spirzen.ru/tools/network/3"
+  },
+  {
+    "from": "/docs/tools/network/4",
+    "to": "https://tools.spirzen.ru/tools/network/4"
+  },
+  {
+    "from": "/docs/tools/network/intro",
+    "to": "https://tools.spirzen.ru/tools/network/intro"
+  },
+  {
+    "from": "/docs/tools/security/1",
+    "to": "https://tools.spirzen.ru/tools/security/1"
+  },
+  {
+    "from": "/docs/tools/security/2",
+    "to": "https://tools.spirzen.ru/tools/security/2"
+  },
+  {
+    "from": "/docs/tools/security/3",
+    "to": "https://tools.spirzen.ru/tools/security/3"
+  },
+  {
+    "from": "/docs/tools/security/4",
+    "to": "https://tools.spirzen.ru/tools/security/4"
+  },
+  {
+    "from": "/docs/tools/security/intro",
+    "to": "https://tools.spirzen.ru/tools/security/intro"
+  },
+  {
+    "from": "/docs/tools/system/1",
+    "to": "https://tools.spirzen.ru/tools/system/1"
+  },
+  {
+    "from": "/docs/tools/system/2",
+    "to": "https://tools.spirzen.ru/tools/system/2"
+  },
+  {
+    "from": "/docs/tools/system/3",
+    "to": "https://tools.spirzen.ru/tools/system/3"
+  },
+  {
+    "from": "/docs/tools/system/4",
+    "to": "https://tools.spirzen.ru/tools/system/4"
+  },
+  {
+    "from": "/docs/tools/system/5",
+    "to": "https://tools.spirzen.ru/tools/system/5"
+  },
+  {
+    "from": "/docs/tools/system/intro",
+    "to": "https://tools.spirzen.ru/tools/system/intro"
+  },
+  {
+    "from": "/docs/tools/testing/1",
+    "to": "https://tools.spirzen.ru/tools/testing/1"
+  },
+  {
+    "from": "/docs/tools/testing/2",
+    "to": "https://tools.spirzen.ru/tools/testing/2"
+  },
+  {
+    "from": "/docs/tools/testing/3",
+    "to": "https://tools.spirzen.ru/tools/testing/3"
+  },
+  {
+    "from": "/docs/tools/testing/intro",
+    "to": "https://tools.spirzen.ru/tools/testing/intro"
+  },
+  {
+    "from": "/tools",
+    "to": "https://tools.spirzen.ru/tools/intro"
+  },
+  {
+    "from": "/tools/automation/1",
+    "to": "https://tools.spirzen.ru/tools/automation/1"
+  },
+  {
+    "from": "/tools/automation/2",
+    "to": "https://tools.spirzen.ru/tools/automation/2"
+  },
+  {
+    "from": "/tools/automation/3",
+    "to": "https://tools.spirzen.ru/tools/automation/3"
+  },
+  {
+    "from": "/tools/automation/intro",
+    "to": "https://tools.spirzen.ru/tools/automation/intro"
+  },
+  {
+    "from": "/tools/data/1",
+    "to": "https://tools.spirzen.ru/tools/data/1"
+  },
+  {
+    "from": "/tools/data/2",
+    "to": "https://tools.spirzen.ru/tools/data/2"
+  },
+  {
+    "from": "/tools/data/3",
+    "to": "https://tools.spirzen.ru/tools/data/3"
+  },
+  {
+    "from": "/tools/data/4",
+    "to": "https://tools.spirzen.ru/tools/data/4"
+  },
+  {
+    "from": "/tools/data/5",
+    "to": "https://tools.spirzen.ru/tools/data/5"
+  },
+  {
+    "from": "/tools/data/6",
+    "to": "https://tools.spirzen.ru/tools/data/6"
+  },
+  {
+    "from": "/tools/data/intro",
+    "to": "https://tools.spirzen.ru/tools/data/intro"
+  },
+  {
+    "from": "/tools/development/1",
+    "to": "https://tools.spirzen.ru/tools/development/1"
+  },
+  {
+    "from": "/tools/development/2",
+    "to": "https://tools.spirzen.ru/tools/development/2"
+  },
+  {
+    "from": "/tools/development/3",
+    "to": "https://tools.spirzen.ru/tools/development/3"
+  },
+  {
+    "from": "/tools/development/4",
+    "to": "https://tools.spirzen.ru/tools/development/4"
+  },
+  {
+    "from": "/tools/development/intro",
+    "to": "https://tools.spirzen.ru/tools/development/intro"
+  },
+  {
+    "from": "/tools/documentation/1",
+    "to": "https://tools.spirzen.ru/tools/documentation/1"
+  },
+  {
+    "from": "/tools/documentation/2",
+    "to": "https://tools.spirzen.ru/tools/documentation/2"
+  },
+  {
+    "from": "/tools/documentation/3",
+    "to": "https://tools.spirzen.ru/tools/documentation/3"
+  },
+  {
+    "from": "/tools/documentation/4",
+    "to": "https://tools.spirzen.ru/tools/documentation/4"
+  },
+  {
+    "from": "/tools/documentation/5",
+    "to": "https://tools.spirzen.ru/tools/documentation/5"
+  },
+  {
+    "from": "/tools/documentation/6",
+    "to": "https://tools.spirzen.ru/tools/documentation/6"
+  },
+  {
+    "from": "/tools/documentation/7",
+    "to": "https://tools.spirzen.ru/tools/documentation/7"
+  },
+  {
+    "from": "/tools/documentation/intro",
+    "to": "https://tools.spirzen.ru/tools/documentation/intro"
+  },
+  {
+    "from": "/tools/games/1",
+    "to": "https://tools.spirzen.ru/tools/games/1"
+  },
+  {
+    "from": "/tools/games/1111",
+    "to": "https://tools.spirzen.ru/tools/games/1111"
+  },
+  {
+    "from": "/tools/games/2",
+    "to": "https://tools.spirzen.ru/tools/games/2"
+  },
+  {
+    "from": "/tools/games/3",
+    "to": "https://tools.spirzen.ru/tools/games/3"
+  },
+  {
+    "from": "/tools/games/4",
+    "to": "https://tools.spirzen.ru/tools/games/4"
+  },
+  {
+    "from": "/tools/games/intro",
+    "to": "https://tools.spirzen.ru/tools/games/intro"
+  },
+  {
+    "from": "/tools/intro",
+    "to": "https://tools.spirzen.ru/tools/intro"
+  },
+  {
+    "from": "/tools/misc/1",
+    "to": "https://tools.spirzen.ru/tools/misc/1"
+  },
+  {
+    "from": "/tools/misc/2",
+    "to": "https://tools.spirzen.ru/tools/misc/2"
+  },
+  {
+    "from": "/tools/misc/3",
+    "to": "https://tools.spirzen.ru/tools/misc/3"
+  },
+  {
+    "from": "/tools/misc/4",
+    "to": "https://tools.spirzen.ru/tools/misc/4"
+  },
+  {
+    "from": "/tools/misc/5",
+    "to": "https://tools.spirzen.ru/tools/misc/5"
+  },
+  {
+    "from": "/tools/misc/6",
+    "to": "https://tools.spirzen.ru/tools/misc/6"
+  },
+  {
+    "from": "/tools/misc/intro",
+    "to": "https://tools.spirzen.ru/tools/misc/intro"
+  },
+  {
+    "from": "/tools/multimedia/1",
+    "to": "https://tools.spirzen.ru/tools/multimedia/1"
+  },
+  {
+    "from": "/tools/multimedia/2",
+    "to": "https://tools.spirzen.ru/tools/multimedia/2"
+  },
+  {
+    "from": "/tools/multimedia/3",
+    "to": "https://tools.spirzen.ru/tools/multimedia/3"
+  },
+  {
+    "from": "/tools/multimedia/4",
+    "to": "https://tools.spirzen.ru/tools/multimedia/4"
+  },
+  {
+    "from": "/tools/multimedia/5",
+    "to": "https://tools.spirzen.ru/tools/multimedia/5"
+  },
+  {
+    "from": "/tools/multimedia/intro",
+    "to": "https://tools.spirzen.ru/tools/multimedia/intro"
+  },
+  {
+    "from": "/tools/network/1",
+    "to": "https://tools.spirzen.ru/tools/network/1"
+  },
+  {
+    "from": "/tools/network/2",
+    "to": "https://tools.spirzen.ru/tools/network/2"
+  },
+  {
+    "from": "/tools/network/3",
+    "to": "https://tools.spirzen.ru/tools/network/3"
+  },
+  {
+    "from": "/tools/network/4",
+    "to": "https://tools.spirzen.ru/tools/network/4"
+  },
+  {
+    "from": "/tools/network/intro",
+    "to": "https://tools.spirzen.ru/tools/network/intro"
+  },
+  {
+    "from": "/tools/security/1",
+    "to": "https://tools.spirzen.ru/tools/security/1"
+  },
+  {
+    "from": "/tools/security/2",
+    "to": "https://tools.spirzen.ru/tools/security/2"
+  },
+  {
+    "from": "/tools/security/3",
+    "to": "https://tools.spirzen.ru/tools/security/3"
+  },
+  {
+    "from": "/tools/security/4",
+    "to": "https://tools.spirzen.ru/tools/security/4"
+  },
+  {
+    "from": "/tools/security/intro",
+    "to": "https://tools.spirzen.ru/tools/security/intro"
+  },
+  {
+    "from": "/tools/system/1",
+    "to": "https://tools.spirzen.ru/tools/system/1"
+  },
+  {
+    "from": "/tools/system/2",
+    "to": "https://tools.spirzen.ru/tools/system/2"
+  },
+  {
+    "from": "/tools/system/3",
+    "to": "https://tools.spirzen.ru/tools/system/3"
+  },
+  {
+    "from": "/tools/system/4",
+    "to": "https://tools.spirzen.ru/tools/system/4"
+  },
+  {
+    "from": "/tools/system/5",
+    "to": "https://tools.spirzen.ru/tools/system/5"
+  },
+  {
+    "from": "/tools/system/intro",
+    "to": "https://tools.spirzen.ru/tools/system/intro"
+  },
+  {
+    "from": "/tools/testing/1",
+    "to": "https://tools.spirzen.ru/tools/testing/1"
+  },
+  {
+    "from": "/tools/testing/2",
+    "to": "https://tools.spirzen.ru/tools/testing/2"
+  },
+  {
+    "from": "/tools/testing/3",
+    "to": "https://tools.spirzen.ru/tools/testing/3"
+  },
+  {
+    "from": "/tools/testing/intro",
+    "to": "https://tools.spirzen.ru/tools/testing/intro"
+  }
+]

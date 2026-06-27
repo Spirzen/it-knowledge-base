@@ -7,6 +7,9 @@ const path = require('node:path');
 const {visit} = require('unist-util-visit');
 
 const WIKI_LINK_RE = /\[\[([^\]|#]+)(?:#([^\]|]+))?(?:\|([^\]]+))?\]\]/g;
+const TERMS_ORIGIN = (process.env.IT_TERMS_URL || 'https://terms.spirzen.ru').replace(/\/+$/, '');
+const LAB_ORIGIN = (process.env.IT_LAB_URL || 'https://lab.spirzen.ru').replace(/\/+$/, '');
+const TOOLS_ORIGIN = (process.env.IT_TOOLS_URL || 'https://tools.spirzen.ru').replace(/\/+$/, '');
 const SKIP_PARENT_TYPES = new Set([
   'code',
   'inlineCode',
@@ -47,10 +50,34 @@ function resolveTarget(target, hash, index) {
 
   if (trimmed.startsWith('/')) {
     const href = hash ? `${trimmed}#${hash.trim()}` : trimmed;
+    if (href.startsWith('/glossary')) {
+      return {href: `${TERMS_ORIGIN}${href}`, kind: 'glossary'};
+    }
+    if (href.startsWith('/lab')) {
+      return {href: `${LAB_ORIGIN}${href}`, kind: 'lab'};
+    }
+    if (href.startsWith('/tools')) {
+      return {href: `${TOOLS_ORIGIN}${href}`, kind: 'tools'};
+    }
     return {href, kind: 'explicit'};
   }
 
-  if (/^(encyclopedia|glossary|lab|tools|context|philosophy|about)\//i.test(trimmed)) {
+  if (/^glossary\//i.test(trimmed)) {
+    const href = `/${trimmed}${hash ? `#${hash.trim()}` : ''}`;
+    return {href: `${TERMS_ORIGIN}${href}`, kind: 'glossary'};
+  }
+
+  if (/^lab\//i.test(trimmed)) {
+    const href = `/${trimmed}${hash ? `#${hash.trim()}` : ''}`;
+    return {href: `${LAB_ORIGIN}${href}`, kind: 'lab'};
+  }
+
+  if (/^tools\//i.test(trimmed)) {
+    const href = `/${trimmed}${hash ? `#${hash.trim()}` : ''}`;
+    return {href: `${TOOLS_ORIGIN}${href}`, kind: 'tools'};
+  }
+
+  if (/^(encyclopedia|context|philosophy|about)\//i.test(trimmed)) {
     const href = `/${trimmed}${hash ? `#${hash.trim()}` : ''}`;
     return {href, kind: 'explicit'};
   }
@@ -87,7 +114,13 @@ function splitTextToNodes(value, index) {
           hProperties: {
             className: [
               'wiki-link',
-              resolved.kind === 'glossary' ? 'wiki-link--glossary' : 'wiki-link--encyclopedia',
+              resolved.kind === 'glossary'
+                ? 'wiki-link--glossary'
+                : resolved.kind === 'lab'
+                  ? 'wiki-link--lab'
+                  : resolved.kind === 'tools'
+                    ? 'wiki-link--tools'
+                    : 'wiki-link--encyclopedia',
             ],
           },
         },

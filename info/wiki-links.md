@@ -15,7 +15,7 @@
 | `[[SQL]]` | Ссылка на раздел энциклопедии из словаря или по уникальному заголовку статьи |
 | `[[Данные\|модель данных]]` | Та же ссылка, но подпись "модель данных" |
 | `[[/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/2]]` | Прямой путь |
-| `[[/glossary/Д#данные\|данные]]` | Прямой путь с якорем |
+| `[[/glossary/Д#данные\|данные]]` | Прямой путь на [terms.spirzen.ru](https://terms.spirzen.ru) |
 
 Если термин не найден в индексе, в тексте остаётся исходная запись `[[...]]` без ссылки.
 
@@ -40,7 +40,7 @@
 title: Моя статья
 related:
   - title: Данные
-    href: /glossary/Д#данные
+    href: https://terms.spirzen.ru/glossary/Д#данные
   - title: Основы баз данных
     doc: encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro
 ---
@@ -76,7 +76,7 @@ npm run docs:wiki-links
 
 Он собирает:
 
-- все термины глоссария (`##` в `docs/glossary/`);
+- все термины глоссария (`##` в `docs/glossary/`) → ссылки на **terms.spirzen.ru**;
 - уникальные заголовки статей энциклопедии;
 - ручной словарь `src/data/encyclopediaTermLinks.json` (приоритетнее автоматики).
 

@@ -119,7 +119,7 @@ function HomepageInteractive() {
             </Link>
             <Link
               className="button button--secondary button--lg"
-              to="/lab/Планы%20развития/7">
+              to="https://lab.spirzen.ru/lab/Планы%20развития/7">
               Навигатор
             </Link>
             <Link
@@ -145,18 +145,18 @@ function HomepageFeatures() {
     {
       title: 'Инструменты',
       description: 'Обзоры, гайды и практические рекомендации по использованию технологий и ПО.',
-      link: '/tools/intro',
+      link: 'https://tools.spirzen.ru/tools/intro',
       isWide: true,
     },
     {
       title: 'Глоссарий',
       description: 'Алфавитный справочник терминов, понятий и аббревиатур в области IT.',
-      link: '/glossary/intro',
+      link: 'https://terms.spirzen.ru/glossary/intro',
     },
     {
       title: 'Лаборатория',
       description: 'Практические задания, упражнения и примеры кода для закрепления навыков.',
-      link: '/lab/intro',
+      link: 'https://lab.spirzen.ru/lab/intro',
     },
     {
       title: 'Контекст',

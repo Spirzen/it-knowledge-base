@@ -1,0 +1,2866 @@
+[
+  {
+    "from": "/docs/lab",
+    "to": "https://lab.spirzen.ru/lab/intro"
+  },
+  {
+    "from": "/docs/lab/Вопросы/1",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/1"
+  },
+  {
+    "from": "/docs/lab/Вопросы/11",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/11"
+  },
+  {
+    "from": "/docs/lab/Вопросы/111",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/111"
+  },
+  {
+    "from": "/docs/lab/Вопросы/112",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/112"
+  },
+  {
+    "from": "/docs/lab/Вопросы/113",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/113"
+  },
+  {
+    "from": "/docs/lab/Вопросы/114",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/114"
+  },
+  {
+    "from": "/docs/lab/Вопросы/115",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/115"
+  },
+  {
+    "from": "/docs/lab/Вопросы/116",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/116"
+  },
+  {
+    "from": "/docs/lab/Вопросы/117",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/117"
+  },
+  {
+    "from": "/docs/lab/Вопросы/118",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/118"
+  },
+  {
+    "from": "/docs/lab/Вопросы/119",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/119"
+  },
+  {
+    "from": "/docs/lab/Вопросы/120",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/120"
+  },
+  {
+    "from": "/docs/lab/Вопросы/121",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/121"
+  },
+  {
+    "from": "/docs/lab/Вопросы/122",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/122"
+  },
+  {
+    "from": "/docs/lab/Вопросы/123",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/123"
+  },
+  {
+    "from": "/docs/lab/Вопросы/124",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/124"
+  },
+  {
+    "from": "/docs/lab/Вопросы/125",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/125"
+  },
+  {
+    "from": "/docs/lab/Вопросы/126",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/126"
+  },
+  {
+    "from": "/docs/lab/Вопросы/127",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/127"
+  },
+  {
+    "from": "/docs/lab/Вопросы/128",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/128"
+  },
+  {
+    "from": "/docs/lab/Вопросы/129",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/129"
+  },
+  {
+    "from": "/docs/lab/Вопросы/130",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/130"
+  },
+  {
+    "from": "/docs/lab/Вопросы/131",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/131"
+  },
+  {
+    "from": "/docs/lab/Вопросы/132",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/132"
+  },
+  {
+    "from": "/docs/lab/Вопросы/133",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/133"
+  },
+  {
+    "from": "/docs/lab/Вопросы/134",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/134"
+  },
+  {
+    "from": "/docs/lab/Вопросы/135",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/135"
+  },
+  {
+    "from": "/docs/lab/Вопросы/136",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/136"
+  },
+  {
+    "from": "/docs/lab/Вопросы/138",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/138"
+  },
+  {
+    "from": "/docs/lab/Вопросы/139",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/139"
+  },
+  {
+    "from": "/docs/lab/Вопросы/140",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/140"
+  },
+  {
+    "from": "/docs/lab/Вопросы/141",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/141"
+  },
+  {
+    "from": "/docs/lab/Вопросы/142",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/142"
+  },
+  {
+    "from": "/docs/lab/Вопросы/143",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/143"
+  },
+  {
+    "from": "/docs/lab/Вопросы/144",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/144"
+  },
+  {
+    "from": "/docs/lab/Вопросы/145",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/145"
+  },
+  {
+    "from": "/docs/lab/Вопросы/146",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/146"
+  },
+  {
+    "from": "/docs/lab/Вопросы/147",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/147"
+  },
+  {
+    "from": "/docs/lab/Вопросы/148",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/148"
+  },
+  {
+    "from": "/docs/lab/Вопросы/149",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/149"
+  },
+  {
+    "from": "/docs/lab/Вопросы/150",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/150"
+  },
+  {
+    "from": "/docs/lab/Вопросы/151",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/151"
+  },
+  {
+    "from": "/docs/lab/Вопросы/152",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/152"
+  },
+  {
+    "from": "/docs/lab/Вопросы/153",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/153"
+  },
+  {
+    "from": "/docs/lab/Вопросы/154",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/154"
+  },
+  {
+    "from": "/docs/lab/Вопросы/155",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/155"
+  },
+  {
+    "from": "/docs/lab/Вопросы/156",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/156"
+  },
+  {
+    "from": "/docs/lab/Вопросы/157",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/157"
+  },
+  {
+    "from": "/docs/lab/Вопросы/158",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/158"
+  },
+  {
+    "from": "/docs/lab/Вопросы/159",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/159"
+  },
+  {
+    "from": "/docs/lab/Вопросы/160",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/160"
+  },
+  {
+    "from": "/docs/lab/Вопросы/intro",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/intro"
+  },
+  {
+    "from": "/docs/lab/Задачи/1",
+    "to": "https://lab.spirzen.ru/lab/Задачи/1"
+  },
+  {
+    "from": "/docs/lab/Задачи/11",
+    "to": "https://lab.spirzen.ru/lab/Задачи/11"
+  },
+  {
+    "from": "/docs/lab/Задачи/12",
+    "to": "https://lab.spirzen.ru/lab/Задачи/12"
+  },
+  {
+    "from": "/docs/lab/Задачи/2",
+    "to": "https://lab.spirzen.ru/lab/Задачи/2"
+  },
+  {
+    "from": "/docs/lab/Задачи/3",
+    "to": "https://lab.spirzen.ru/lab/Задачи/3"
+  },
+  {
+    "from": "/docs/lab/Задачи/intro",
+    "to": "https://lab.spirzen.ru/lab/Задачи/intro"
+  },
+  {
+    "from": "/docs/lab/Кейсы/1",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1"
+  },
+  {
+    "from": "/docs/lab/Кейсы/11",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/11"
+  },
+  {
+    "from": "/docs/lab/Кейсы/1111",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1111"
+  },
+  {
+    "from": "/docs/lab/Кейсы/1112",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1112"
+  },
+  {
+    "from": "/docs/lab/Кейсы/2",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/2"
+  },
+  {
+    "from": "/docs/lab/Кейсы/3",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/3"
+  },
+  {
+    "from": "/docs/lab/Кейсы/4",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/4"
+  },
+  {
+    "from": "/docs/lab/Кейсы/5",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/5"
+  },
+  {
+    "from": "/docs/lab/Кейсы/6",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/6"
+  },
+  {
+    "from": "/docs/lab/Кейсы/7",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/7"
+  },
+  {
+    "from": "/docs/lab/Кейсы/8",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/8"
+  },
+  {
+    "from": "/docs/lab/Кейсы/intro",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/intro"
+  },
+  {
+    "from": "/docs/lab/Планы развития/1",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/1"
+  },
+  {
+    "from": "/docs/lab/Планы развития/11",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/11"
+  },
+  {
+    "from": "/docs/lab/Планы развития/2",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/2"
+  },
+  {
+    "from": "/docs/lab/Планы развития/22",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/22"
+  },
+  {
+    "from": "/docs/lab/Планы развития/3",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/3"
+  },
+  {
+    "from": "/docs/lab/Планы развития/33",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/33"
+  },
+  {
+    "from": "/docs/lab/Планы развития/4",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/4"
+  },
+  {
+    "from": "/docs/lab/Планы развития/44",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/44"
+  },
+  {
+    "from": "/docs/lab/Планы развития/5",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/5"
+  },
+  {
+    "from": "/docs/lab/Планы развития/6",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/6"
+  },
+  {
+    "from": "/docs/lab/Планы развития/7",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/7"
+  },
+  {
+    "from": "/docs/lab/Планы развития/intro",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/intro"
+  },
+  {
+    "from": "/docs/lab/Примеры/1",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1"
+  },
+  {
+    "from": "/docs/lab/Примеры/11",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11"
+  },
+  {
+    "from": "/docs/lab/Примеры/110",
+    "to": "https://lab.spirzen.ru/lab/Примеры/110"
+  },
+  {
+    "from": "/docs/lab/Примеры/111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/111"
+  },
+  {
+    "from": "/docs/lab/Примеры/1111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1111"
+  },
+  {
+    "from": "/docs/lab/Примеры/11111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11111"
+  },
+  {
+    "from": "/docs/lab/Примеры/11112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11112"
+  },
+  {
+    "from": "/docs/lab/Примеры/11113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11113"
+  },
+  {
+    "from": "/docs/lab/Примеры/11114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11114"
+  },
+  {
+    "from": "/docs/lab/Примеры/11115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11115"
+  },
+  {
+    "from": "/docs/lab/Примеры/1112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1112"
+  },
+  {
+    "from": "/docs/lab/Примеры/1113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1113"
+  },
+  {
+    "from": "/docs/lab/Примеры/1114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1114"
+  },
+  {
+    "from": "/docs/lab/Примеры/1115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1115"
+  },
+  {
+    "from": "/docs/lab/Примеры/1116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1116"
+  },
+  {
+    "from": "/docs/lab/Примеры/1117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1117"
+  },
+  {
+    "from": "/docs/lab/Примеры/1118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1118"
+  },
+  {
+    "from": "/docs/lab/Примеры/1119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1119"
+  },
+  {
+    "from": "/docs/lab/Примеры/112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/112"
+  },
+  {
+    "from": "/docs/lab/Примеры/1121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1121"
+  },
+  {
+    "from": "/docs/lab/Примеры/1122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1122"
+  },
+  {
+    "from": "/docs/lab/Примеры/1123",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1123"
+  },
+  {
+    "from": "/docs/lab/Примеры/1124",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1124"
+  },
+  {
+    "from": "/docs/lab/Примеры/1125",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1125"
+  },
+  {
+    "from": "/docs/lab/Примеры/1126",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1126"
+  },
+  {
+    "from": "/docs/lab/Примеры/1127",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1127"
+  },
+  {
+    "from": "/docs/lab/Примеры/1128",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1128"
+  },
+  {
+    "from": "/docs/lab/Примеры/1129",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1129"
+  },
+  {
+    "from": "/docs/lab/Примеры/113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/113"
+  },
+  {
+    "from": "/docs/lab/Примеры/1131",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1131"
+  },
+  {
+    "from": "/docs/lab/Примеры/1132",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1132"
+  },
+  {
+    "from": "/docs/lab/Примеры/1133",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1133"
+  },
+  {
+    "from": "/docs/lab/Примеры/1134",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1134"
+  },
+  {
+    "from": "/docs/lab/Примеры/1135",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1135"
+  },
+  {
+    "from": "/docs/lab/Примеры/1136",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1136"
+  },
+  {
+    "from": "/docs/lab/Примеры/1137",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1137"
+  },
+  {
+    "from": "/docs/lab/Примеры/1138",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1138"
+  },
+  {
+    "from": "/docs/lab/Примеры/1139",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1139"
+  },
+  {
+    "from": "/docs/lab/Примеры/114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/114"
+  },
+  {
+    "from": "/docs/lab/Примеры/1140",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1140"
+  },
+  {
+    "from": "/docs/lab/Примеры/1141",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1141"
+  },
+  {
+    "from": "/docs/lab/Примеры/1142",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1142"
+  },
+  {
+    "from": "/docs/lab/Примеры/1143",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1143"
+  },
+  {
+    "from": "/docs/lab/Примеры/1144",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1144"
+  },
+  {
+    "from": "/docs/lab/Примеры/1145",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1145"
+  },
+  {
+    "from": "/docs/lab/Примеры/1146",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1146"
+  },
+  {
+    "from": "/docs/lab/Примеры/1147",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1147"
+  },
+  {
+    "from": "/docs/lab/Примеры/1148",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1148"
+  },
+  {
+    "from": "/docs/lab/Примеры/1149",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1149"
+  },
+  {
+    "from": "/docs/lab/Примеры/115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/115"
+  },
+  {
+    "from": "/docs/lab/Примеры/1150",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1150"
+  },
+  {
+    "from": "/docs/lab/Примеры/1151",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1151"
+  },
+  {
+    "from": "/docs/lab/Примеры/1152",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1152"
+  },
+  {
+    "from": "/docs/lab/Примеры/1153",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1153"
+  },
+  {
+    "from": "/docs/lab/Примеры/1154",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1154"
+  },
+  {
+    "from": "/docs/lab/Примеры/1155",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1155"
+  },
+  {
+    "from": "/docs/lab/Примеры/1156",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1156"
+  },
+  {
+    "from": "/docs/lab/Примеры/1157",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1157"
+  },
+  {
+    "from": "/docs/lab/Примеры/1158",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1158"
+  },
+  {
+    "from": "/docs/lab/Примеры/1159",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1159"
+  },
+  {
+    "from": "/docs/lab/Примеры/116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/116"
+  },
+  {
+    "from": "/docs/lab/Примеры/1160",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1160"
+  },
+  {
+    "from": "/docs/lab/Примеры/117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/117"
+  },
+  {
+    "from": "/docs/lab/Примеры/118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/118"
+  },
+  {
+    "from": "/docs/lab/Примеры/119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/119"
+  },
+  {
+    "from": "/docs/lab/Примеры/12",
+    "to": "https://lab.spirzen.ru/lab/Примеры/12"
+  },
+  {
+    "from": "/docs/lab/Примеры/120",
+    "to": "https://lab.spirzen.ru/lab/Примеры/120"
+  },
+  {
+    "from": "/docs/lab/Примеры/121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/121"
+  },
+  {
+    "from": "/docs/lab/Примеры/122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/122"
+  },
+  {
+    "from": "/docs/lab/Примеры/13",
+    "to": "https://lab.spirzen.ru/lab/Примеры/13"
+  },
+  {
+    "from": "/docs/lab/Примеры/14",
+    "to": "https://lab.spirzen.ru/lab/Примеры/14"
+  },
+  {
+    "from": "/docs/lab/Примеры/15",
+    "to": "https://lab.spirzen.ru/lab/Примеры/15"
+  },
+  {
+    "from": "/docs/lab/Примеры/16",
+    "to": "https://lab.spirzen.ru/lab/Примеры/16"
+  },
+  {
+    "from": "/docs/lab/Примеры/17",
+    "to": "https://lab.spirzen.ru/lab/Примеры/17"
+  },
+  {
+    "from": "/docs/lab/Примеры/2",
+    "to": "https://lab.spirzen.ru/lab/Примеры/2"
+  },
+  {
+    "from": "/docs/lab/Примеры/211",
+    "to": "https://lab.spirzen.ru/lab/Примеры/211"
+  },
+  {
+    "from": "/docs/lab/Примеры/212",
+    "to": "https://lab.spirzen.ru/lab/Примеры/212"
+  },
+  {
+    "from": "/docs/lab/Примеры/3",
+    "to": "https://lab.spirzen.ru/lab/Примеры/3"
+  },
+  {
+    "from": "/docs/lab/Примеры/4",
+    "to": "https://lab.spirzen.ru/lab/Примеры/4"
+  },
+  {
+    "from": "/docs/lab/Примеры/615",
+    "to": "https://lab.spirzen.ru/lab/Примеры/615"
+  },
+  {
+    "from": "/docs/lab/Примеры/intro",
+    "to": "https://lab.spirzen.ru/lab/Примеры/intro"
+  },
+  {
+    "from": "/docs/lab/Тренажеры/1",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/1"
+  },
+  {
+    "from": "/docs/lab/Тренажеры/2",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/2"
+  },
+  {
+    "from": "/docs/lab/Тренажеры/3",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/3"
+  },
+  {
+    "from": "/docs/lab/Тренажеры/4",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/4"
+  },
+  {
+    "from": "/docs/lab/Экзамены/1",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/1"
+  },
+  {
+    "from": "/docs/lab/Экзамены/2",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/2"
+  },
+  {
+    "from": "/docs/lab/Экзамены/3",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/3"
+  },
+  {
+    "from": "/docs/lab/Экзамены/intro",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/intro"
+  },
+  {
+    "from": "/docs/lab/Эксперименты/1",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/1"
+  },
+  {
+    "from": "/docs/lab/Эксперименты/2",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/2"
+  },
+  {
+    "from": "/docs/lab/Эксперименты/3",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/3"
+  },
+  {
+    "from": "/docs/lab/Эксперименты/4",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/4"
+  },
+  {
+    "from": "/docs/lab/Эксперименты/5",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/5"
+  },
+  {
+    "from": "/docs/lab/Эксперименты/6",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/6"
+  },
+  {
+    "from": "/docs/lab/cases/1",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1"
+  },
+  {
+    "from": "/docs/lab/cases/11",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/11"
+  },
+  {
+    "from": "/docs/lab/cases/1111",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1111"
+  },
+  {
+    "from": "/docs/lab/cases/1112",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1112"
+  },
+  {
+    "from": "/docs/lab/cases/2",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/2"
+  },
+  {
+    "from": "/docs/lab/cases/3",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/3"
+  },
+  {
+    "from": "/docs/lab/cases/4",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/4"
+  },
+  {
+    "from": "/docs/lab/cases/5",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/5"
+  },
+  {
+    "from": "/docs/lab/cases/6",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/6"
+  },
+  {
+    "from": "/docs/lab/cases/7",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/7"
+  },
+  {
+    "from": "/docs/lab/cases/8",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/8"
+  },
+  {
+    "from": "/docs/lab/cases/intro",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/intro"
+  },
+  {
+    "from": "/docs/lab/examples/1",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1"
+  },
+  {
+    "from": "/docs/lab/examples/11",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11"
+  },
+  {
+    "from": "/docs/lab/examples/110",
+    "to": "https://lab.spirzen.ru/lab/Примеры/110"
+  },
+  {
+    "from": "/docs/lab/examples/111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/111"
+  },
+  {
+    "from": "/docs/lab/examples/1111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1111"
+  },
+  {
+    "from": "/docs/lab/examples/11111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11111"
+  },
+  {
+    "from": "/docs/lab/examples/11112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11112"
+  },
+  {
+    "from": "/docs/lab/examples/11113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11113"
+  },
+  {
+    "from": "/docs/lab/examples/11114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11114"
+  },
+  {
+    "from": "/docs/lab/examples/11115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11115"
+  },
+  {
+    "from": "/docs/lab/examples/1112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1112"
+  },
+  {
+    "from": "/docs/lab/examples/1113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1113"
+  },
+  {
+    "from": "/docs/lab/examples/1114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1114"
+  },
+  {
+    "from": "/docs/lab/examples/1115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1115"
+  },
+  {
+    "from": "/docs/lab/examples/1116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1116"
+  },
+  {
+    "from": "/docs/lab/examples/1117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1117"
+  },
+  {
+    "from": "/docs/lab/examples/1118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1118"
+  },
+  {
+    "from": "/docs/lab/examples/1119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1119"
+  },
+  {
+    "from": "/docs/lab/examples/112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/112"
+  },
+  {
+    "from": "/docs/lab/examples/1121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1121"
+  },
+  {
+    "from": "/docs/lab/examples/1122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1122"
+  },
+  {
+    "from": "/docs/lab/examples/1123",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1123"
+  },
+  {
+    "from": "/docs/lab/examples/1124",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1124"
+  },
+  {
+    "from": "/docs/lab/examples/1125",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1125"
+  },
+  {
+    "from": "/docs/lab/examples/1126",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1126"
+  },
+  {
+    "from": "/docs/lab/examples/1127",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1127"
+  },
+  {
+    "from": "/docs/lab/examples/1128",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1128"
+  },
+  {
+    "from": "/docs/lab/examples/1129",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1129"
+  },
+  {
+    "from": "/docs/lab/examples/113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/113"
+  },
+  {
+    "from": "/docs/lab/examples/1131",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1131"
+  },
+  {
+    "from": "/docs/lab/examples/1132",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1132"
+  },
+  {
+    "from": "/docs/lab/examples/1133",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1133"
+  },
+  {
+    "from": "/docs/lab/examples/1134",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1134"
+  },
+  {
+    "from": "/docs/lab/examples/1135",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1135"
+  },
+  {
+    "from": "/docs/lab/examples/1136",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1136"
+  },
+  {
+    "from": "/docs/lab/examples/1137",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1137"
+  },
+  {
+    "from": "/docs/lab/examples/1138",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1138"
+  },
+  {
+    "from": "/docs/lab/examples/1139",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1139"
+  },
+  {
+    "from": "/docs/lab/examples/114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/114"
+  },
+  {
+    "from": "/docs/lab/examples/1140",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1140"
+  },
+  {
+    "from": "/docs/lab/examples/1141",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1141"
+  },
+  {
+    "from": "/docs/lab/examples/1142",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1142"
+  },
+  {
+    "from": "/docs/lab/examples/1143",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1143"
+  },
+  {
+    "from": "/docs/lab/examples/1144",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1144"
+  },
+  {
+    "from": "/docs/lab/examples/1145",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1145"
+  },
+  {
+    "from": "/docs/lab/examples/1146",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1146"
+  },
+  {
+    "from": "/docs/lab/examples/1147",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1147"
+  },
+  {
+    "from": "/docs/lab/examples/1148",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1148"
+  },
+  {
+    "from": "/docs/lab/examples/1149",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1149"
+  },
+  {
+    "from": "/docs/lab/examples/115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/115"
+  },
+  {
+    "from": "/docs/lab/examples/1150",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1150"
+  },
+  {
+    "from": "/docs/lab/examples/1151",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1151"
+  },
+  {
+    "from": "/docs/lab/examples/1152",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1152"
+  },
+  {
+    "from": "/docs/lab/examples/1153",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1153"
+  },
+  {
+    "from": "/docs/lab/examples/1154",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1154"
+  },
+  {
+    "from": "/docs/lab/examples/1155",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1155"
+  },
+  {
+    "from": "/docs/lab/examples/1156",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1156"
+  },
+  {
+    "from": "/docs/lab/examples/1157",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1157"
+  },
+  {
+    "from": "/docs/lab/examples/1158",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1158"
+  },
+  {
+    "from": "/docs/lab/examples/1159",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1159"
+  },
+  {
+    "from": "/docs/lab/examples/116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/116"
+  },
+  {
+    "from": "/docs/lab/examples/1160",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1160"
+  },
+  {
+    "from": "/docs/lab/examples/117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/117"
+  },
+  {
+    "from": "/docs/lab/examples/118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/118"
+  },
+  {
+    "from": "/docs/lab/examples/119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/119"
+  },
+  {
+    "from": "/docs/lab/examples/12",
+    "to": "https://lab.spirzen.ru/lab/Примеры/12"
+  },
+  {
+    "from": "/docs/lab/examples/120",
+    "to": "https://lab.spirzen.ru/lab/Примеры/120"
+  },
+  {
+    "from": "/docs/lab/examples/121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/121"
+  },
+  {
+    "from": "/docs/lab/examples/122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/122"
+  },
+  {
+    "from": "/docs/lab/examples/13",
+    "to": "https://lab.spirzen.ru/lab/Примеры/13"
+  },
+  {
+    "from": "/docs/lab/examples/14",
+    "to": "https://lab.spirzen.ru/lab/Примеры/14"
+  },
+  {
+    "from": "/docs/lab/examples/15",
+    "to": "https://lab.spirzen.ru/lab/Примеры/15"
+  },
+  {
+    "from": "/docs/lab/examples/16",
+    "to": "https://lab.spirzen.ru/lab/Примеры/16"
+  },
+  {
+    "from": "/docs/lab/examples/17",
+    "to": "https://lab.spirzen.ru/lab/Примеры/17"
+  },
+  {
+    "from": "/docs/lab/examples/2",
+    "to": "https://lab.spirzen.ru/lab/Примеры/2"
+  },
+  {
+    "from": "/docs/lab/examples/211",
+    "to": "https://lab.spirzen.ru/lab/Примеры/211"
+  },
+  {
+    "from": "/docs/lab/examples/212",
+    "to": "https://lab.spirzen.ru/lab/Примеры/212"
+  },
+  {
+    "from": "/docs/lab/examples/3",
+    "to": "https://lab.spirzen.ru/lab/Примеры/3"
+  },
+  {
+    "from": "/docs/lab/examples/4",
+    "to": "https://lab.spirzen.ru/lab/Примеры/4"
+  },
+  {
+    "from": "/docs/lab/examples/615",
+    "to": "https://lab.spirzen.ru/lab/Примеры/615"
+  },
+  {
+    "from": "/docs/lab/examples/intro",
+    "to": "https://lab.spirzen.ru/lab/Примеры/intro"
+  },
+  {
+    "from": "/docs/lab/exams/1",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/1"
+  },
+  {
+    "from": "/docs/lab/exams/2",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/2"
+  },
+  {
+    "from": "/docs/lab/exams/3",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/3"
+  },
+  {
+    "from": "/docs/lab/exams/intro",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/intro"
+  },
+  {
+    "from": "/docs/lab/experiments/1",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/1"
+  },
+  {
+    "from": "/docs/lab/experiments/2",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/2"
+  },
+  {
+    "from": "/docs/lab/experiments/3",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/3"
+  },
+  {
+    "from": "/docs/lab/experiments/4",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/4"
+  },
+  {
+    "from": "/docs/lab/experiments/5",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/5"
+  },
+  {
+    "from": "/docs/lab/experiments/6",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/6"
+  },
+  {
+    "from": "/docs/lab/experiments/intro",
+    "to": "https://lab.spirzen.ru/lab/experiments/intro"
+  },
+  {
+    "from": "/docs/lab/intro",
+    "to": "https://lab.spirzen.ru/lab/intro"
+  },
+  {
+    "from": "/docs/lab/questions/1",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/1"
+  },
+  {
+    "from": "/docs/lab/questions/11",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/11"
+  },
+  {
+    "from": "/docs/lab/questions/111",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/111"
+  },
+  {
+    "from": "/docs/lab/questions/112",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/112"
+  },
+  {
+    "from": "/docs/lab/questions/113",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/113"
+  },
+  {
+    "from": "/docs/lab/questions/114",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/114"
+  },
+  {
+    "from": "/docs/lab/questions/115",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/115"
+  },
+  {
+    "from": "/docs/lab/questions/116",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/116"
+  },
+  {
+    "from": "/docs/lab/questions/117",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/117"
+  },
+  {
+    "from": "/docs/lab/questions/118",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/118"
+  },
+  {
+    "from": "/docs/lab/questions/119",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/119"
+  },
+  {
+    "from": "/docs/lab/questions/120",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/120"
+  },
+  {
+    "from": "/docs/lab/questions/121",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/121"
+  },
+  {
+    "from": "/docs/lab/questions/122",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/122"
+  },
+  {
+    "from": "/docs/lab/questions/123",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/123"
+  },
+  {
+    "from": "/docs/lab/questions/124",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/124"
+  },
+  {
+    "from": "/docs/lab/questions/125",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/125"
+  },
+  {
+    "from": "/docs/lab/questions/126",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/126"
+  },
+  {
+    "from": "/docs/lab/questions/127",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/127"
+  },
+  {
+    "from": "/docs/lab/questions/128",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/128"
+  },
+  {
+    "from": "/docs/lab/questions/129",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/129"
+  },
+  {
+    "from": "/docs/lab/questions/130",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/130"
+  },
+  {
+    "from": "/docs/lab/questions/131",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/131"
+  },
+  {
+    "from": "/docs/lab/questions/132",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/132"
+  },
+  {
+    "from": "/docs/lab/questions/133",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/133"
+  },
+  {
+    "from": "/docs/lab/questions/134",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/134"
+  },
+  {
+    "from": "/docs/lab/questions/135",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/135"
+  },
+  {
+    "from": "/docs/lab/questions/136",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/136"
+  },
+  {
+    "from": "/docs/lab/questions/138",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/138"
+  },
+  {
+    "from": "/docs/lab/questions/139",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/139"
+  },
+  {
+    "from": "/docs/lab/questions/140",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/140"
+  },
+  {
+    "from": "/docs/lab/questions/141",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/141"
+  },
+  {
+    "from": "/docs/lab/questions/142",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/142"
+  },
+  {
+    "from": "/docs/lab/questions/143",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/143"
+  },
+  {
+    "from": "/docs/lab/questions/144",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/144"
+  },
+  {
+    "from": "/docs/lab/questions/145",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/145"
+  },
+  {
+    "from": "/docs/lab/questions/146",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/146"
+  },
+  {
+    "from": "/docs/lab/questions/147",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/147"
+  },
+  {
+    "from": "/docs/lab/questions/148",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/148"
+  },
+  {
+    "from": "/docs/lab/questions/149",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/149"
+  },
+  {
+    "from": "/docs/lab/questions/150",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/150"
+  },
+  {
+    "from": "/docs/lab/questions/151",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/151"
+  },
+  {
+    "from": "/docs/lab/questions/152",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/152"
+  },
+  {
+    "from": "/docs/lab/questions/153",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/153"
+  },
+  {
+    "from": "/docs/lab/questions/154",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/154"
+  },
+  {
+    "from": "/docs/lab/questions/155",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/155"
+  },
+  {
+    "from": "/docs/lab/questions/156",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/156"
+  },
+  {
+    "from": "/docs/lab/questions/157",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/157"
+  },
+  {
+    "from": "/docs/lab/questions/158",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/158"
+  },
+  {
+    "from": "/docs/lab/questions/159",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/159"
+  },
+  {
+    "from": "/docs/lab/questions/160",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/160"
+  },
+  {
+    "from": "/docs/lab/questions/intro",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/intro"
+  },
+  {
+    "from": "/docs/lab/roadmap/1",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/1"
+  },
+  {
+    "from": "/docs/lab/roadmap/11",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/11"
+  },
+  {
+    "from": "/docs/lab/roadmap/2",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/2"
+  },
+  {
+    "from": "/docs/lab/roadmap/22",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/22"
+  },
+  {
+    "from": "/docs/lab/roadmap/3",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/3"
+  },
+  {
+    "from": "/docs/lab/roadmap/33",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/33"
+  },
+  {
+    "from": "/docs/lab/roadmap/4",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/4"
+  },
+  {
+    "from": "/docs/lab/roadmap/44",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/44"
+  },
+  {
+    "from": "/docs/lab/roadmap/5",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/5"
+  },
+  {
+    "from": "/docs/lab/roadmap/6",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/6"
+  },
+  {
+    "from": "/docs/lab/roadmap/7",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/7"
+  },
+  {
+    "from": "/docs/lab/roadmap/intro",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/intro"
+  },
+  {
+    "from": "/docs/lab/tasks/1",
+    "to": "https://lab.spirzen.ru/lab/Задачи/1"
+  },
+  {
+    "from": "/docs/lab/tasks/11",
+    "to": "https://lab.spirzen.ru/lab/Задачи/11"
+  },
+  {
+    "from": "/docs/lab/tasks/12",
+    "to": "https://lab.spirzen.ru/lab/Задачи/12"
+  },
+  {
+    "from": "/docs/lab/tasks/2",
+    "to": "https://lab.spirzen.ru/lab/Задачи/2"
+  },
+  {
+    "from": "/docs/lab/tasks/3",
+    "to": "https://lab.spirzen.ru/lab/Задачи/3"
+  },
+  {
+    "from": "/docs/lab/tasks/intro",
+    "to": "https://lab.spirzen.ru/lab/Задачи/intro"
+  },
+  {
+    "from": "/docs/lab/trainers/1",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/1"
+  },
+  {
+    "from": "/docs/lab/trainers/2",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/2"
+  },
+  {
+    "from": "/docs/lab/trainers/3",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/3"
+  },
+  {
+    "from": "/docs/lab/trainers/4",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/4"
+  },
+  {
+    "from": "/docs/lab/trainers/intro",
+    "to": "https://lab.spirzen.ru/lab/trainers/intro"
+  },
+  {
+    "from": "/lab",
+    "to": "https://lab.spirzen.ru/lab/intro"
+  },
+  {
+    "from": "/lab/Вопросы/1",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/1"
+  },
+  {
+    "from": "/lab/Вопросы/11",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/11"
+  },
+  {
+    "from": "/lab/Вопросы/111",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/111"
+  },
+  {
+    "from": "/lab/Вопросы/112",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/112"
+  },
+  {
+    "from": "/lab/Вопросы/113",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/113"
+  },
+  {
+    "from": "/lab/Вопросы/114",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/114"
+  },
+  {
+    "from": "/lab/Вопросы/115",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/115"
+  },
+  {
+    "from": "/lab/Вопросы/116",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/116"
+  },
+  {
+    "from": "/lab/Вопросы/117",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/117"
+  },
+  {
+    "from": "/lab/Вопросы/118",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/118"
+  },
+  {
+    "from": "/lab/Вопросы/119",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/119"
+  },
+  {
+    "from": "/lab/Вопросы/120",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/120"
+  },
+  {
+    "from": "/lab/Вопросы/121",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/121"
+  },
+  {
+    "from": "/lab/Вопросы/122",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/122"
+  },
+  {
+    "from": "/lab/Вопросы/123",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/123"
+  },
+  {
+    "from": "/lab/Вопросы/124",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/124"
+  },
+  {
+    "from": "/lab/Вопросы/125",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/125"
+  },
+  {
+    "from": "/lab/Вопросы/126",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/126"
+  },
+  {
+    "from": "/lab/Вопросы/127",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/127"
+  },
+  {
+    "from": "/lab/Вопросы/128",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/128"
+  },
+  {
+    "from": "/lab/Вопросы/129",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/129"
+  },
+  {
+    "from": "/lab/Вопросы/130",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/130"
+  },
+  {
+    "from": "/lab/Вопросы/131",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/131"
+  },
+  {
+    "from": "/lab/Вопросы/132",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/132"
+  },
+  {
+    "from": "/lab/Вопросы/133",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/133"
+  },
+  {
+    "from": "/lab/Вопросы/134",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/134"
+  },
+  {
+    "from": "/lab/Вопросы/135",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/135"
+  },
+  {
+    "from": "/lab/Вопросы/136",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/136"
+  },
+  {
+    "from": "/lab/Вопросы/138",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/138"
+  },
+  {
+    "from": "/lab/Вопросы/139",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/139"
+  },
+  {
+    "from": "/lab/Вопросы/140",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/140"
+  },
+  {
+    "from": "/lab/Вопросы/141",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/141"
+  },
+  {
+    "from": "/lab/Вопросы/142",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/142"
+  },
+  {
+    "from": "/lab/Вопросы/143",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/143"
+  },
+  {
+    "from": "/lab/Вопросы/144",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/144"
+  },
+  {
+    "from": "/lab/Вопросы/145",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/145"
+  },
+  {
+    "from": "/lab/Вопросы/146",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/146"
+  },
+  {
+    "from": "/lab/Вопросы/147",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/147"
+  },
+  {
+    "from": "/lab/Вопросы/148",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/148"
+  },
+  {
+    "from": "/lab/Вопросы/149",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/149"
+  },
+  {
+    "from": "/lab/Вопросы/150",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/150"
+  },
+  {
+    "from": "/lab/Вопросы/151",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/151"
+  },
+  {
+    "from": "/lab/Вопросы/152",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/152"
+  },
+  {
+    "from": "/lab/Вопросы/153",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/153"
+  },
+  {
+    "from": "/lab/Вопросы/154",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/154"
+  },
+  {
+    "from": "/lab/Вопросы/155",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/155"
+  },
+  {
+    "from": "/lab/Вопросы/156",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/156"
+  },
+  {
+    "from": "/lab/Вопросы/157",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/157"
+  },
+  {
+    "from": "/lab/Вопросы/158",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/158"
+  },
+  {
+    "from": "/lab/Вопросы/159",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/159"
+  },
+  {
+    "from": "/lab/Вопросы/160",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/160"
+  },
+  {
+    "from": "/lab/Вопросы/intro",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/intro"
+  },
+  {
+    "from": "/lab/Задачи/1",
+    "to": "https://lab.spirzen.ru/lab/Задачи/1"
+  },
+  {
+    "from": "/lab/Задачи/11",
+    "to": "https://lab.spirzen.ru/lab/Задачи/11"
+  },
+  {
+    "from": "/lab/Задачи/12",
+    "to": "https://lab.spirzen.ru/lab/Задачи/12"
+  },
+  {
+    "from": "/lab/Задачи/2",
+    "to": "https://lab.spirzen.ru/lab/Задачи/2"
+  },
+  {
+    "from": "/lab/Задачи/3",
+    "to": "https://lab.spirzen.ru/lab/Задачи/3"
+  },
+  {
+    "from": "/lab/Задачи/intro",
+    "to": "https://lab.spirzen.ru/lab/Задачи/intro"
+  },
+  {
+    "from": "/lab/Кейсы/1",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1"
+  },
+  {
+    "from": "/lab/Кейсы/11",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/11"
+  },
+  {
+    "from": "/lab/Кейсы/1111",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1111"
+  },
+  {
+    "from": "/lab/Кейсы/1112",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1112"
+  },
+  {
+    "from": "/lab/Кейсы/2",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/2"
+  },
+  {
+    "from": "/lab/Кейсы/3",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/3"
+  },
+  {
+    "from": "/lab/Кейсы/4",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/4"
+  },
+  {
+    "from": "/lab/Кейсы/5",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/5"
+  },
+  {
+    "from": "/lab/Кейсы/6",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/6"
+  },
+  {
+    "from": "/lab/Кейсы/7",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/7"
+  },
+  {
+    "from": "/lab/Кейсы/8",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/8"
+  },
+  {
+    "from": "/lab/Кейсы/intro",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/intro"
+  },
+  {
+    "from": "/lab/Планы развития/1",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/1"
+  },
+  {
+    "from": "/lab/Планы развития/11",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/11"
+  },
+  {
+    "from": "/lab/Планы развития/2",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/2"
+  },
+  {
+    "from": "/lab/Планы развития/22",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/22"
+  },
+  {
+    "from": "/lab/Планы развития/3",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/3"
+  },
+  {
+    "from": "/lab/Планы развития/33",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/33"
+  },
+  {
+    "from": "/lab/Планы развития/4",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/4"
+  },
+  {
+    "from": "/lab/Планы развития/44",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/44"
+  },
+  {
+    "from": "/lab/Планы развития/5",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/5"
+  },
+  {
+    "from": "/lab/Планы развития/6",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/6"
+  },
+  {
+    "from": "/lab/Планы развития/7",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/7"
+  },
+  {
+    "from": "/lab/Планы развития/intro",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/intro"
+  },
+  {
+    "from": "/lab/Примеры/1",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1"
+  },
+  {
+    "from": "/lab/Примеры/11",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11"
+  },
+  {
+    "from": "/lab/Примеры/110",
+    "to": "https://lab.spirzen.ru/lab/Примеры/110"
+  },
+  {
+    "from": "/lab/Примеры/111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/111"
+  },
+  {
+    "from": "/lab/Примеры/1111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1111"
+  },
+  {
+    "from": "/lab/Примеры/11111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11111"
+  },
+  {
+    "from": "/lab/Примеры/11112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11112"
+  },
+  {
+    "from": "/lab/Примеры/11113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11113"
+  },
+  {
+    "from": "/lab/Примеры/11114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11114"
+  },
+  {
+    "from": "/lab/Примеры/11115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11115"
+  },
+  {
+    "from": "/lab/Примеры/1112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1112"
+  },
+  {
+    "from": "/lab/Примеры/1113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1113"
+  },
+  {
+    "from": "/lab/Примеры/1114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1114"
+  },
+  {
+    "from": "/lab/Примеры/1115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1115"
+  },
+  {
+    "from": "/lab/Примеры/1116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1116"
+  },
+  {
+    "from": "/lab/Примеры/1117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1117"
+  },
+  {
+    "from": "/lab/Примеры/1118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1118"
+  },
+  {
+    "from": "/lab/Примеры/1119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1119"
+  },
+  {
+    "from": "/lab/Примеры/112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/112"
+  },
+  {
+    "from": "/lab/Примеры/1121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1121"
+  },
+  {
+    "from": "/lab/Примеры/1122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1122"
+  },
+  {
+    "from": "/lab/Примеры/1123",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1123"
+  },
+  {
+    "from": "/lab/Примеры/1124",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1124"
+  },
+  {
+    "from": "/lab/Примеры/1125",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1125"
+  },
+  {
+    "from": "/lab/Примеры/1126",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1126"
+  },
+  {
+    "from": "/lab/Примеры/1127",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1127"
+  },
+  {
+    "from": "/lab/Примеры/1128",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1128"
+  },
+  {
+    "from": "/lab/Примеры/1129",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1129"
+  },
+  {
+    "from": "/lab/Примеры/113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/113"
+  },
+  {
+    "from": "/lab/Примеры/1131",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1131"
+  },
+  {
+    "from": "/lab/Примеры/1132",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1132"
+  },
+  {
+    "from": "/lab/Примеры/1133",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1133"
+  },
+  {
+    "from": "/lab/Примеры/1134",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1134"
+  },
+  {
+    "from": "/lab/Примеры/1135",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1135"
+  },
+  {
+    "from": "/lab/Примеры/1136",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1136"
+  },
+  {
+    "from": "/lab/Примеры/1137",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1137"
+  },
+  {
+    "from": "/lab/Примеры/1138",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1138"
+  },
+  {
+    "from": "/lab/Примеры/1139",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1139"
+  },
+  {
+    "from": "/lab/Примеры/114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/114"
+  },
+  {
+    "from": "/lab/Примеры/1140",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1140"
+  },
+  {
+    "from": "/lab/Примеры/1141",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1141"
+  },
+  {
+    "from": "/lab/Примеры/1142",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1142"
+  },
+  {
+    "from": "/lab/Примеры/1143",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1143"
+  },
+  {
+    "from": "/lab/Примеры/1144",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1144"
+  },
+  {
+    "from": "/lab/Примеры/1145",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1145"
+  },
+  {
+    "from": "/lab/Примеры/1146",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1146"
+  },
+  {
+    "from": "/lab/Примеры/1147",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1147"
+  },
+  {
+    "from": "/lab/Примеры/1148",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1148"
+  },
+  {
+    "from": "/lab/Примеры/1149",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1149"
+  },
+  {
+    "from": "/lab/Примеры/115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/115"
+  },
+  {
+    "from": "/lab/Примеры/1150",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1150"
+  },
+  {
+    "from": "/lab/Примеры/1151",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1151"
+  },
+  {
+    "from": "/lab/Примеры/1152",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1152"
+  },
+  {
+    "from": "/lab/Примеры/1153",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1153"
+  },
+  {
+    "from": "/lab/Примеры/1154",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1154"
+  },
+  {
+    "from": "/lab/Примеры/1155",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1155"
+  },
+  {
+    "from": "/lab/Примеры/1156",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1156"
+  },
+  {
+    "from": "/lab/Примеры/1157",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1157"
+  },
+  {
+    "from": "/lab/Примеры/1158",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1158"
+  },
+  {
+    "from": "/lab/Примеры/1159",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1159"
+  },
+  {
+    "from": "/lab/Примеры/116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/116"
+  },
+  {
+    "from": "/lab/Примеры/1160",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1160"
+  },
+  {
+    "from": "/lab/Примеры/117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/117"
+  },
+  {
+    "from": "/lab/Примеры/118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/118"
+  },
+  {
+    "from": "/lab/Примеры/119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/119"
+  },
+  {
+    "from": "/lab/Примеры/12",
+    "to": "https://lab.spirzen.ru/lab/Примеры/12"
+  },
+  {
+    "from": "/lab/Примеры/120",
+    "to": "https://lab.spirzen.ru/lab/Примеры/120"
+  },
+  {
+    "from": "/lab/Примеры/121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/121"
+  },
+  {
+    "from": "/lab/Примеры/122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/122"
+  },
+  {
+    "from": "/lab/Примеры/13",
+    "to": "https://lab.spirzen.ru/lab/Примеры/13"
+  },
+  {
+    "from": "/lab/Примеры/14",
+    "to": "https://lab.spirzen.ru/lab/Примеры/14"
+  },
+  {
+    "from": "/lab/Примеры/15",
+    "to": "https://lab.spirzen.ru/lab/Примеры/15"
+  },
+  {
+    "from": "/lab/Примеры/16",
+    "to": "https://lab.spirzen.ru/lab/Примеры/16"
+  },
+  {
+    "from": "/lab/Примеры/17",
+    "to": "https://lab.spirzen.ru/lab/Примеры/17"
+  },
+  {
+    "from": "/lab/Примеры/2",
+    "to": "https://lab.spirzen.ru/lab/Примеры/2"
+  },
+  {
+    "from": "/lab/Примеры/211",
+    "to": "https://lab.spirzen.ru/lab/Примеры/211"
+  },
+  {
+    "from": "/lab/Примеры/212",
+    "to": "https://lab.spirzen.ru/lab/Примеры/212"
+  },
+  {
+    "from": "/lab/Примеры/3",
+    "to": "https://lab.spirzen.ru/lab/Примеры/3"
+  },
+  {
+    "from": "/lab/Примеры/4",
+    "to": "https://lab.spirzen.ru/lab/Примеры/4"
+  },
+  {
+    "from": "/lab/Примеры/615",
+    "to": "https://lab.spirzen.ru/lab/Примеры/615"
+  },
+  {
+    "from": "/lab/Примеры/intro",
+    "to": "https://lab.spirzen.ru/lab/Примеры/intro"
+  },
+  {
+    "from": "/lab/Тренажеры/1",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/1"
+  },
+  {
+    "from": "/lab/Тренажеры/2",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/2"
+  },
+  {
+    "from": "/lab/Тренажеры/3",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/3"
+  },
+  {
+    "from": "/lab/Тренажеры/4",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/4"
+  },
+  {
+    "from": "/lab/Экзамены/1",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/1"
+  },
+  {
+    "from": "/lab/Экзамены/2",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/2"
+  },
+  {
+    "from": "/lab/Экзамены/3",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/3"
+  },
+  {
+    "from": "/lab/Экзамены/intro",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/intro"
+  },
+  {
+    "from": "/lab/Эксперименты/1",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/1"
+  },
+  {
+    "from": "/lab/Эксперименты/2",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/2"
+  },
+  {
+    "from": "/lab/Эксперименты/3",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/3"
+  },
+  {
+    "from": "/lab/Эксперименты/4",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/4"
+  },
+  {
+    "from": "/lab/Эксперименты/5",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/5"
+  },
+  {
+    "from": "/lab/Эксперименты/6",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/6"
+  },
+  {
+    "from": "/lab/cases/1",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1"
+  },
+  {
+    "from": "/lab/cases/11",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/11"
+  },
+  {
+    "from": "/lab/cases/1111",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1111"
+  },
+  {
+    "from": "/lab/cases/1112",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/1112"
+  },
+  {
+    "from": "/lab/cases/2",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/2"
+  },
+  {
+    "from": "/lab/cases/3",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/3"
+  },
+  {
+    "from": "/lab/cases/4",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/4"
+  },
+  {
+    "from": "/lab/cases/5",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/5"
+  },
+  {
+    "from": "/lab/cases/6",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/6"
+  },
+  {
+    "from": "/lab/cases/7",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/7"
+  },
+  {
+    "from": "/lab/cases/8",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/8"
+  },
+  {
+    "from": "/lab/cases/intro",
+    "to": "https://lab.spirzen.ru/lab/Кейсы/intro"
+  },
+  {
+    "from": "/lab/examples/1",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1"
+  },
+  {
+    "from": "/lab/examples/11",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11"
+  },
+  {
+    "from": "/lab/examples/110",
+    "to": "https://lab.spirzen.ru/lab/Примеры/110"
+  },
+  {
+    "from": "/lab/examples/111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/111"
+  },
+  {
+    "from": "/lab/examples/1111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1111"
+  },
+  {
+    "from": "/lab/examples/11111",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11111"
+  },
+  {
+    "from": "/lab/examples/11112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11112"
+  },
+  {
+    "from": "/lab/examples/11113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11113"
+  },
+  {
+    "from": "/lab/examples/11114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11114"
+  },
+  {
+    "from": "/lab/examples/11115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/11115"
+  },
+  {
+    "from": "/lab/examples/1112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1112"
+  },
+  {
+    "from": "/lab/examples/1113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1113"
+  },
+  {
+    "from": "/lab/examples/1114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1114"
+  },
+  {
+    "from": "/lab/examples/1115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1115"
+  },
+  {
+    "from": "/lab/examples/1116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1116"
+  },
+  {
+    "from": "/lab/examples/1117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1117"
+  },
+  {
+    "from": "/lab/examples/1118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1118"
+  },
+  {
+    "from": "/lab/examples/1119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1119"
+  },
+  {
+    "from": "/lab/examples/112",
+    "to": "https://lab.spirzen.ru/lab/Примеры/112"
+  },
+  {
+    "from": "/lab/examples/1121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1121"
+  },
+  {
+    "from": "/lab/examples/1122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1122"
+  },
+  {
+    "from": "/lab/examples/1123",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1123"
+  },
+  {
+    "from": "/lab/examples/1124",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1124"
+  },
+  {
+    "from": "/lab/examples/1125",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1125"
+  },
+  {
+    "from": "/lab/examples/1126",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1126"
+  },
+  {
+    "from": "/lab/examples/1127",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1127"
+  },
+  {
+    "from": "/lab/examples/1128",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1128"
+  },
+  {
+    "from": "/lab/examples/1129",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1129"
+  },
+  {
+    "from": "/lab/examples/113",
+    "to": "https://lab.spirzen.ru/lab/Примеры/113"
+  },
+  {
+    "from": "/lab/examples/1131",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1131"
+  },
+  {
+    "from": "/lab/examples/1132",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1132"
+  },
+  {
+    "from": "/lab/examples/1133",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1133"
+  },
+  {
+    "from": "/lab/examples/1134",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1134"
+  },
+  {
+    "from": "/lab/examples/1135",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1135"
+  },
+  {
+    "from": "/lab/examples/1136",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1136"
+  },
+  {
+    "from": "/lab/examples/1137",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1137"
+  },
+  {
+    "from": "/lab/examples/1138",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1138"
+  },
+  {
+    "from": "/lab/examples/1139",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1139"
+  },
+  {
+    "from": "/lab/examples/114",
+    "to": "https://lab.spirzen.ru/lab/Примеры/114"
+  },
+  {
+    "from": "/lab/examples/1140",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1140"
+  },
+  {
+    "from": "/lab/examples/1141",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1141"
+  },
+  {
+    "from": "/lab/examples/1142",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1142"
+  },
+  {
+    "from": "/lab/examples/1143",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1143"
+  },
+  {
+    "from": "/lab/examples/1144",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1144"
+  },
+  {
+    "from": "/lab/examples/1145",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1145"
+  },
+  {
+    "from": "/lab/examples/1146",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1146"
+  },
+  {
+    "from": "/lab/examples/1147",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1147"
+  },
+  {
+    "from": "/lab/examples/1148",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1148"
+  },
+  {
+    "from": "/lab/examples/1149",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1149"
+  },
+  {
+    "from": "/lab/examples/115",
+    "to": "https://lab.spirzen.ru/lab/Примеры/115"
+  },
+  {
+    "from": "/lab/examples/1150",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1150"
+  },
+  {
+    "from": "/lab/examples/1151",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1151"
+  },
+  {
+    "from": "/lab/examples/1152",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1152"
+  },
+  {
+    "from": "/lab/examples/1153",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1153"
+  },
+  {
+    "from": "/lab/examples/1154",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1154"
+  },
+  {
+    "from": "/lab/examples/1155",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1155"
+  },
+  {
+    "from": "/lab/examples/1156",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1156"
+  },
+  {
+    "from": "/lab/examples/1157",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1157"
+  },
+  {
+    "from": "/lab/examples/1158",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1158"
+  },
+  {
+    "from": "/lab/examples/1159",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1159"
+  },
+  {
+    "from": "/lab/examples/116",
+    "to": "https://lab.spirzen.ru/lab/Примеры/116"
+  },
+  {
+    "from": "/lab/examples/1160",
+    "to": "https://lab.spirzen.ru/lab/Примеры/1160"
+  },
+  {
+    "from": "/lab/examples/117",
+    "to": "https://lab.spirzen.ru/lab/Примеры/117"
+  },
+  {
+    "from": "/lab/examples/118",
+    "to": "https://lab.spirzen.ru/lab/Примеры/118"
+  },
+  {
+    "from": "/lab/examples/119",
+    "to": "https://lab.spirzen.ru/lab/Примеры/119"
+  },
+  {
+    "from": "/lab/examples/12",
+    "to": "https://lab.spirzen.ru/lab/Примеры/12"
+  },
+  {
+    "from": "/lab/examples/120",
+    "to": "https://lab.spirzen.ru/lab/Примеры/120"
+  },
+  {
+    "from": "/lab/examples/121",
+    "to": "https://lab.spirzen.ru/lab/Примеры/121"
+  },
+  {
+    "from": "/lab/examples/122",
+    "to": "https://lab.spirzen.ru/lab/Примеры/122"
+  },
+  {
+    "from": "/lab/examples/13",
+    "to": "https://lab.spirzen.ru/lab/Примеры/13"
+  },
+  {
+    "from": "/lab/examples/14",
+    "to": "https://lab.spirzen.ru/lab/Примеры/14"
+  },
+  {
+    "from": "/lab/examples/15",
+    "to": "https://lab.spirzen.ru/lab/Примеры/15"
+  },
+  {
+    "from": "/lab/examples/16",
+    "to": "https://lab.spirzen.ru/lab/Примеры/16"
+  },
+  {
+    "from": "/lab/examples/17",
+    "to": "https://lab.spirzen.ru/lab/Примеры/17"
+  },
+  {
+    "from": "/lab/examples/2",
+    "to": "https://lab.spirzen.ru/lab/Примеры/2"
+  },
+  {
+    "from": "/lab/examples/211",
+    "to": "https://lab.spirzen.ru/lab/Примеры/211"
+  },
+  {
+    "from": "/lab/examples/212",
+    "to": "https://lab.spirzen.ru/lab/Примеры/212"
+  },
+  {
+    "from": "/lab/examples/3",
+    "to": "https://lab.spirzen.ru/lab/Примеры/3"
+  },
+  {
+    "from": "/lab/examples/4",
+    "to": "https://lab.spirzen.ru/lab/Примеры/4"
+  },
+  {
+    "from": "/lab/examples/615",
+    "to": "https://lab.spirzen.ru/lab/Примеры/615"
+  },
+  {
+    "from": "/lab/examples/intro",
+    "to": "https://lab.spirzen.ru/lab/Примеры/intro"
+  },
+  {
+    "from": "/lab/exams/1",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/1"
+  },
+  {
+    "from": "/lab/exams/2",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/2"
+  },
+  {
+    "from": "/lab/exams/3",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/3"
+  },
+  {
+    "from": "/lab/exams/intro",
+    "to": "https://lab.spirzen.ru/lab/Экзамены/intro"
+  },
+  {
+    "from": "/lab/experiments/1",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/1"
+  },
+  {
+    "from": "/lab/experiments/2",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/2"
+  },
+  {
+    "from": "/lab/experiments/3",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/3"
+  },
+  {
+    "from": "/lab/experiments/4",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/4"
+  },
+  {
+    "from": "/lab/experiments/5",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/5"
+  },
+  {
+    "from": "/lab/experiments/6",
+    "to": "https://lab.spirzen.ru/lab/Эксперименты/6"
+  },
+  {
+    "from": "/lab/experiments/intro",
+    "to": "https://lab.spirzen.ru/lab/experiments/intro"
+  },
+  {
+    "from": "/lab/intro",
+    "to": "https://lab.spirzen.ru/lab/intro"
+  },
+  {
+    "from": "/lab/questions/1",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/1"
+  },
+  {
+    "from": "/lab/questions/11",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/11"
+  },
+  {
+    "from": "/lab/questions/111",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/111"
+  },
+  {
+    "from": "/lab/questions/112",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/112"
+  },
+  {
+    "from": "/lab/questions/113",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/113"
+  },
+  {
+    "from": "/lab/questions/114",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/114"
+  },
+  {
+    "from": "/lab/questions/115",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/115"
+  },
+  {
+    "from": "/lab/questions/116",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/116"
+  },
+  {
+    "from": "/lab/questions/117",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/117"
+  },
+  {
+    "from": "/lab/questions/118",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/118"
+  },
+  {
+    "from": "/lab/questions/119",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/119"
+  },
+  {
+    "from": "/lab/questions/120",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/120"
+  },
+  {
+    "from": "/lab/questions/121",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/121"
+  },
+  {
+    "from": "/lab/questions/122",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/122"
+  },
+  {
+    "from": "/lab/questions/123",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/123"
+  },
+  {
+    "from": "/lab/questions/124",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/124"
+  },
+  {
+    "from": "/lab/questions/125",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/125"
+  },
+  {
+    "from": "/lab/questions/126",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/126"
+  },
+  {
+    "from": "/lab/questions/127",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/127"
+  },
+  {
+    "from": "/lab/questions/128",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/128"
+  },
+  {
+    "from": "/lab/questions/129",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/129"
+  },
+  {
+    "from": "/lab/questions/130",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/130"
+  },
+  {
+    "from": "/lab/questions/131",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/131"
+  },
+  {
+    "from": "/lab/questions/132",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/132"
+  },
+  {
+    "from": "/lab/questions/133",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/133"
+  },
+  {
+    "from": "/lab/questions/134",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/134"
+  },
+  {
+    "from": "/lab/questions/135",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/135"
+  },
+  {
+    "from": "/lab/questions/136",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/136"
+  },
+  {
+    "from": "/lab/questions/138",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/138"
+  },
+  {
+    "from": "/lab/questions/139",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/139"
+  },
+  {
+    "from": "/lab/questions/140",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/140"
+  },
+  {
+    "from": "/lab/questions/141",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/141"
+  },
+  {
+    "from": "/lab/questions/142",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/142"
+  },
+  {
+    "from": "/lab/questions/143",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/143"
+  },
+  {
+    "from": "/lab/questions/144",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/144"
+  },
+  {
+    "from": "/lab/questions/145",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/145"
+  },
+  {
+    "from": "/lab/questions/146",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/146"
+  },
+  {
+    "from": "/lab/questions/147",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/147"
+  },
+  {
+    "from": "/lab/questions/148",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/148"
+  },
+  {
+    "from": "/lab/questions/149",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/149"
+  },
+  {
+    "from": "/lab/questions/150",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/150"
+  },
+  {
+    "from": "/lab/questions/151",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/151"
+  },
+  {
+    "from": "/lab/questions/152",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/152"
+  },
+  {
+    "from": "/lab/questions/153",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/153"
+  },
+  {
+    "from": "/lab/questions/154",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/154"
+  },
+  {
+    "from": "/lab/questions/155",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/155"
+  },
+  {
+    "from": "/lab/questions/156",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/156"
+  },
+  {
+    "from": "/lab/questions/157",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/157"
+  },
+  {
+    "from": "/lab/questions/158",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/158"
+  },
+  {
+    "from": "/lab/questions/159",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/159"
+  },
+  {
+    "from": "/lab/questions/160",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/160"
+  },
+  {
+    "from": "/lab/questions/intro",
+    "to": "https://lab.spirzen.ru/lab/Вопросы/intro"
+  },
+  {
+    "from": "/lab/roadmap/1",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/1"
+  },
+  {
+    "from": "/lab/roadmap/11",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/11"
+  },
+  {
+    "from": "/lab/roadmap/2",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/2"
+  },
+  {
+    "from": "/lab/roadmap/22",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/22"
+  },
+  {
+    "from": "/lab/roadmap/3",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/3"
+  },
+  {
+    "from": "/lab/roadmap/33",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/33"
+  },
+  {
+    "from": "/lab/roadmap/4",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/4"
+  },
+  {
+    "from": "/lab/roadmap/44",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/44"
+  },
+  {
+    "from": "/lab/roadmap/5",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/5"
+  },
+  {
+    "from": "/lab/roadmap/6",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/6"
+  },
+  {
+    "from": "/lab/roadmap/7",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/7"
+  },
+  {
+    "from": "/lab/roadmap/intro",
+    "to": "https://lab.spirzen.ru/lab/Планы развития/intro"
+  },
+  {
+    "from": "/lab/tasks/1",
+    "to": "https://lab.spirzen.ru/lab/Задачи/1"
+  },
+  {
+    "from": "/lab/tasks/11",
+    "to": "https://lab.spirzen.ru/lab/Задачи/11"
+  },
+  {
+    "from": "/lab/tasks/12",
+    "to": "https://lab.spirzen.ru/lab/Задачи/12"
+  },
+  {
+    "from": "/lab/tasks/2",
+    "to": "https://lab.spirzen.ru/lab/Задачи/2"
+  },
+  {
+    "from": "/lab/tasks/3",
+    "to": "https://lab.spirzen.ru/lab/Задачи/3"
+  },
+  {
+    "from": "/lab/tasks/intro",
+    "to": "https://lab.spirzen.ru/lab/Задачи/intro"
+  },
+  {
+    "from": "/lab/trainers/1",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/1"
+  },
+  {
+    "from": "/lab/trainers/2",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/2"
+  },
+  {
+    "from": "/lab/trainers/3",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/3"
+  },
+  {
+    "from": "/lab/trainers/4",
+    "to": "https://lab.spirzen.ru/lab/Тренажеры/4"
+  },
+  {
+    "from": "/lab/trainers/intro",
+    "to": "https://lab.spirzen.ru/lab/trainers/intro"
+  }
+]

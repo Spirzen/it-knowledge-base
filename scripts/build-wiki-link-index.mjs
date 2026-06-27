@@ -9,10 +9,15 @@ import {fileURLToPath} from 'node:url';
 import matter from 'gray-matter';
 import {createSlugger} from '@docusaurus/utils';
 import {resolveDocHref} from './lib/docUrl.mjs';
+import {termsGlossaryHref} from './lib/termsUrl.mjs';
+import {labHref} from './lib/labUrl.mjs';
+import {toolsHref} from './lib/toolsUrl.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const glossaryDir = path.join(root, 'docs', 'glossary');
+const labDir = path.join(root, 'docs', 'lab');
+const toolsDir = path.join(root, 'docs', 'tools');
 const encyclopediaDir = path.join(root, 'docs', 'encyclopedia');
 const curatedPath = path.join(root, 'src', 'data', 'encyclopediaTermLinks.json');
 const outFile = path.join(root, 'src', 'data', 'wikiLinkIndex.json');
@@ -64,11 +69,91 @@ function parseGlossary() {
       entries[key] = {
         kind: 'glossary',
         label: title,
-        href: `${page}#${headingToAnchor(title)}`,
+        href: termsGlossaryHref(`${page}#${headingToAnchor(title)}`),
       };
     }
   }
 
+  return entries;
+}
+
+function walkLabMarkdownFiles(dir, baseDir = dir, files = []) {
+  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+    if (entry.name === '_category_.json') {
+      continue;
+    }
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      walkLabMarkdownFiles(full, baseDir, files);
+      continue;
+    }
+    if (/\.mdx?$/i.test(entry.name)) {
+      files.push(path.relative(baseDir, full).replace(/\\/g, '/'));
+    }
+  }
+  return files;
+}
+
+function parseLab() {
+  const entries = {};
+  for (const rel of walkLabMarkdownFiles(labDir)) {
+    const raw = fs.readFileSync(path.join(labDir, rel), 'utf8');
+    const {data} = matter(raw);
+    const title = (data.title || data.sidebar_label || '').trim();
+    if (!title) {
+      continue;
+    }
+    const key = normalizeKey(title);
+    if (entries[key]) {
+      continue;
+    }
+    const page = resolveDocHref(`lab/${rel}`, data);
+    entries[key] = {
+      kind: 'lab',
+      label: title,
+      href: labHref(page),
+    };
+  }
+  return entries;
+}
+
+function walkToolsMarkdownFiles(dir, baseDir = dir, files = []) {
+  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+    if (entry.name === '_category_.json') {
+      continue;
+    }
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      walkToolsMarkdownFiles(full, baseDir, files);
+      continue;
+    }
+    if (/\.mdx?$/i.test(entry.name)) {
+      files.push(path.relative(baseDir, full).replace(/\\/g, '/'));
+    }
+  }
+  return files;
+}
+
+function parseTools() {
+  const entries = {};
+  for (const rel of walkToolsMarkdownFiles(toolsDir)) {
+    const raw = fs.readFileSync(path.join(toolsDir, rel), 'utf8');
+    const {data} = matter(raw);
+    const title = (data.title || data.sidebar_label || '').trim();
+    if (!title) {
+      continue;
+    }
+    const key = normalizeKey(title);
+    if (entries[key]) {
+      continue;
+    }
+    const page = resolveDocHref(`tools/${rel}`, data);
+    entries[key] = {
+      kind: 'tools',
+      label: title,
+      href: toolsHref(page),
+    };
+  }
   return entries;
 }
 
@@ -142,12 +227,16 @@ function loadCurated() {
 
 function main() {
   const glossary = parseGlossary();
+  const lab = parseLab();
+  const tools = parseTools();
   const encyclopediaAuto = parseEncyclopediaTitles();
   const curated = loadCurated();
 
   const terms = {
     ...encyclopediaAuto,
     ...glossary,
+    ...lab,
+    ...tools,
     ...curated,
   };
 
@@ -155,6 +244,8 @@ function main() {
     generatedAt: new Date().toISOString(),
     stats: {
       glossary: Object.keys(glossary).length,
+      lab: Object.keys(lab).length,
+      tools: Object.keys(tools).length,
       encyclopediaAuto: Object.keys(encyclopediaAuto).length,
       curated: Object.keys(curated).length,
       total: Object.keys(terms).length,
@@ -164,7 +255,7 @@ function main() {
 
   fs.writeFileSync(outFile, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
   console.log(
-    `wikiLinkIndex: glossary=${payload.stats.glossary}, enc.auto=${payload.stats.encyclopediaAuto}, curated=${payload.stats.curated}, total=${payload.stats.total}`,
+    `wikiLinkIndex: glossary=${payload.stats.glossary}, lab=${payload.stats.lab}, tools=${payload.stats.tools}, enc.auto=${payload.stats.encyclopediaAuto}, curated=${payload.stats.curated}, total=${payload.stats.total}`,
   );
 }
 

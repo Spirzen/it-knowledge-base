@@ -62,12 +62,31 @@ flowchart TB
 | Веб-редактор | [`WebEditor`](https://github.com/Spirzen/WebEditor) | [html.spirzen.ru](https://html.spirzen.ru/) | HTML/CSS/JS, живой предпросмотр |
 | Панель управления | `it-management` | только локально | веб-проекты экосистемы |
 | Мобильное приложение | `itu-mobile-app` | APK / магазины | WebView → spirzen.ru |
+| Глоссарий (портал) | `it-terms` | [terms.spirzen.ru](https://terms.spirzen.ru/) | ~69 буквенных страниц, Astro |
+| Глоссарий (портал) | `it-terms` | [terms.spirzen.ru](https://terms.spirzen.ru/) | ~69 буквенных страниц, Astro |
+| Лаборатория (портал) | `it-lab` | [lab.spirzen.ru](https://lab.spirzen.ru/) | ~180 статей, Astro, embed code/play |
+| Инструменты (портал) | `it-tools` | [tools.spirzen.ru](https://tools.spirzen.ru/) | ~64 статьи, Astro, play embeds |
+
+### Контентные порталы (Astro, 1 repo = 1 домен)
+
+Разделы **Глоссарий**, **Лаборатория** и **Инструменты** вынесены с spirzen.ru на отдельные GitHub Pages-домены. В KB: `exclude` в docs, client-redirects на портал, sidebar — внешняя ссылка. Источник правды после миграции — `content/` в репозитории портала (`it-terms`, `it-lab`, `it-tools`).
+
+| Раздел | KB path (архив) | Портал | Redirect |
+|--------|-----------------|--------|----------|
+| Глоссарий | `docs/glossary/` | terms.spirzen.ru | `glossaryExternalRedirects.json` |
+| Лаборатория | `docs/lab/` | lab.spirzen.ru | `labExternalRedirects.json` |
+| Инструменты | `docs/tools/` | tools.spirzen.ru | `toolsExternalRedirects.json` |
+
+Следующие: games/kids — фазы 4.
 
 ### Правило размещения контента
 
 | Тип материала | Куда | Как в статье |
 |---------------|------|--------------|
 | Текст, навигация, SEO | `it-knowledge-base` | Markdown / MDX |
+| Глоссарий (термины) | `it-terms` → terms.spirzen.ru | Markdown в `content/glossary/` |
+| Практика (лаборатория) | `it-lab` → lab.spirzen.ru | Markdown в `content/lab/` |
+| Обзоры инструментов | `it-tools` → tools.spirzen.ru | Markdown в `content/tools/` |
 | Короткий фрагмент (3–15 строк) | `it-knowledge-base` | fenced code block |
 | Длинный листинг, мультифайл, практикум | `it-code-examples` | `ExternalCodeEmbed` |
 | Тяжёлый React-симулятор, визуализация | `it-play` | `ExternalPlayEmbed` |
