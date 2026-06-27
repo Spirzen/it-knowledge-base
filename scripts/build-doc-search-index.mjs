@@ -134,6 +134,15 @@ function collectDocs(categoryLabels) {
       if (rel.startsWith('tools/')) {
         continue;
       }
+      if (rel.startsWith('encyclopedia/9-spinoff/9-03-igrovaya-industriya/')) {
+        continue;
+      }
+      if (rel.startsWith('encyclopedia/9-spinoff/9-04-razrabotka-igr/')) {
+        continue;
+      }
+      if (rel.startsWith('encyclopedia/9-spinoff/9-11-dlya-detey/')) {
+        continue;
+      }
 
       const sidebarLabel = stripQuotes(data.sidebar_label);
       const title = stripQuotes(data.title);

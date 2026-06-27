@@ -12,18 +12,36 @@ import {resolveDocHref} from './lib/docUrl.mjs';
 import {termsGlossaryHref} from './lib/termsUrl.mjs';
 import {labHref} from './lib/labUrl.mjs';
 import {toolsHref} from './lib/toolsUrl.mjs';
+import {gamesHrefFromSpinoff} from './lib/gamesUrl.mjs';
+import {kidsHrefFromSpinoff} from './lib/kidsUrl.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const glossaryDir = path.join(root, 'docs', 'glossary');
 const labDir = path.join(root, 'docs', 'lab');
 const toolsDir = path.join(root, 'docs', 'tools');
+const spinoffDir = path.join(root, 'docs', 'encyclopedia', '9-spinoff');
+const gamesDirs = [
+  path.join(spinoffDir, '9-03-igrovaya-industriya'),
+  path.join(spinoffDir, '9-04-razrabotka-igr'),
+];
+const kidsDir = path.join(spinoffDir, '9-11-dlya-detey');
 const encyclopediaDir = path.join(root, 'docs', 'encyclopedia');
 const curatedPath = path.join(root, 'src', 'data', 'encyclopediaTermLinks.json');
 const outFile = path.join(root, 'src', 'data', 'wikiLinkIndex.json');
 
 const SKIP_GLOSSARY = new Set(['intro.md', '_category_.json']);
 const SKIP_ENC_DOC = /\/(intro|_category_)\.md$/;
+const MIGRATED_SPINOFF_PREFIXES = [
+  'encyclopedia/9-spinoff/9-03-igrovaya-industriya/',
+  'encyclopedia/9-spinoff/9-04-razrabotka-igr/',
+  'encyclopedia/9-spinoff/9-11-dlya-detey/',
+];
+
+function isMigratedSpinoffRel(rel) {
+  const normalized = rel.replace(/\\/g, '/');
+  return MIGRATED_SPINOFF_PREFIXES.some((prefix) => normalized.startsWith(prefix));
+}
 
 function normalizeKey(value) {
   return value.trim().toLocaleLowerCase('ru');
@@ -157,6 +175,74 @@ function parseTools() {
   return entries;
 }
 
+function walkSpinoffMarkdownFiles(dir, rootFolder, baseDir = dir, files = []) {
+  if (!fs.existsSync(dir)) {
+    return [];
+  }
+  for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
+    if (entry.name === '_category_.json') {
+      continue;
+    }
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      walkSpinoffMarkdownFiles(full, rootFolder, baseDir, files);
+      continue;
+    }
+    if (/\.mdx?$/i.test(entry.name)) {
+      const rel = path.relative(baseDir, full).replace(/\\/g, '/');
+      files.push({rel, docId: `encyclopedia/9-spinoff/${rootFolder}/${rel.replace(/\.mdx?$/i, '')}`});
+    }
+  }
+  return files;
+}
+
+function parseGames() {
+  const entries = {};
+  for (const dir of gamesDirs) {
+    const rootFolder = path.basename(dir);
+    for (const {rel, docId} of walkSpinoffMarkdownFiles(dir, rootFolder)) {
+      const raw = fs.readFileSync(path.join(dir, rel), 'utf8');
+      const {data} = matter(raw);
+      const title = (data.title || data.sidebar_label || '').trim();
+      if (!title) {
+        continue;
+      }
+      const key = normalizeKey(title);
+      if (entries[key]) {
+        continue;
+      }
+      entries[key] = {
+        kind: 'games',
+        label: title,
+        href: gamesHrefFromSpinoff(docId),
+      };
+    }
+  }
+  return entries;
+}
+
+function parseKids() {
+  const entries = {};
+  for (const {rel, docId} of walkSpinoffMarkdownFiles(kidsDir, '9-11-dlya-detey')) {
+    const raw = fs.readFileSync(path.join(kidsDir, rel), 'utf8');
+    const {data} = matter(raw);
+    const title = (data.title || data.sidebar_label || '').trim();
+    if (!title) {
+      continue;
+    }
+    const key = normalizeKey(title);
+    if (entries[key]) {
+      continue;
+    }
+    entries[key] = {
+      kind: 'kids',
+      label: title,
+      href: kidsHrefFromSpinoff(docId),
+    };
+  }
+  return entries;
+}
+
 function parseEncyclopediaTitles() {
   const titleCounts = new Map();
 
@@ -183,6 +269,9 @@ function parseEncyclopediaTitles() {
         .relative(path.join(root, 'docs'), fullPath)
         .replace(/\\/g, '/')
         .replace(/\.mdx?$/, '');
+      if (isMigratedSpinoffRel(rel)) {
+        continue;
+      }
       const list = titleCounts.get(key) ?? [];
       list.push({title, href: resolveDocHref(rel, data)});
       titleCounts.set(key, list);
@@ -229,6 +318,8 @@ function main() {
   const glossary = parseGlossary();
   const lab = parseLab();
   const tools = parseTools();
+  const games = parseGames();
+  const kids = parseKids();
   const encyclopediaAuto = parseEncyclopediaTitles();
   const curated = loadCurated();
 
@@ -237,6 +328,8 @@ function main() {
     ...glossary,
     ...lab,
     ...tools,
+    ...games,
+    ...kids,
     ...curated,
   };
 
@@ -246,6 +339,8 @@ function main() {
       glossary: Object.keys(glossary).length,
       lab: Object.keys(lab).length,
       tools: Object.keys(tools).length,
+      games: Object.keys(games).length,
+      kids: Object.keys(kids).length,
       encyclopediaAuto: Object.keys(encyclopediaAuto).length,
       curated: Object.keys(curated).length,
       total: Object.keys(terms).length,
@@ -255,7 +350,7 @@ function main() {
 
   fs.writeFileSync(outFile, `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
   console.log(
-    `wikiLinkIndex: glossary=${payload.stats.glossary}, lab=${payload.stats.lab}, tools=${payload.stats.tools}, enc.auto=${payload.stats.encyclopediaAuto}, curated=${payload.stats.curated}, total=${payload.stats.total}`,
+    `wikiLinkIndex: glossary=${payload.stats.glossary}, lab=${payload.stats.lab}, tools=${payload.stats.tools}, games=${payload.stats.games}, kids=${payload.stats.kids}, enc.auto=${payload.stats.encyclopediaAuto}, curated=${payload.stats.curated}, total=${payload.stats.total}`,
   );
 }
 

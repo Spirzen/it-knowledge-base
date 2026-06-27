@@ -32,6 +32,22 @@ try {
   // npm run docs:tools-redirects — перед start/build
 }
 
+/** @type {{ from: string, to: string }[]} */
+let gamesExternalRedirects = [];
+try {
+  gamesExternalRedirects = require('./src/data/gamesExternalRedirects.json');
+} catch {
+  // npm run docs:games-redirects — перед start/build
+}
+
+/** @type {{ from: string, to: string }[]} */
+let kidsExternalRedirects = [];
+try {
+  kidsExternalRedirects = require('./src/data/kidsExternalRedirects.json');
+} catch {
+  // npm run docs:kids-redirects — перед start/build
+}
+
 /** Old slug segment -> new folder name (encyclopedia subsection). */
 const ENCYCLOPEDIA_FOLDER_RENAMES = [
   ['encyclopedia/3-data-markup/3.01. Продвинутые операции с данными', 'encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi'],
@@ -126,6 +142,12 @@ const labUrl =
 const toolsUrl =
   process.env.IT_TOOLS_URL ?? (isProdBuild ? 'https://tools.spirzen.ru' : 'http://localhost:4334');
 
+const gamesUrl =
+  process.env.IT_GAMES_URL ?? (isProdBuild ? 'https://games.spirzen.ru' : 'http://localhost:4332');
+
+const kidsUrl =
+  process.env.IT_KIDS_URL ?? (isProdBuild ? 'https://kids.spirzen.ru' : 'http://localhost:4333');
+
 module.exports = {
   title: 'Вселенная IT',
   tagline: 'Единый и ультимативный гайд по IT',
@@ -146,6 +168,8 @@ module.exports = {
     termsUrl,
     labUrl,
     toolsUrl,
+    gamesUrl,
+    kidsUrl,
   },
 
   clientModules: [
@@ -176,7 +200,14 @@ module.exports = {
           showLastUpdateTime: true,
           routeBasePath: '/',
           numberPrefixParser: false,
-          exclude: ['**/glossary/**', '**/lab/**', '**/tools/**'],
+          exclude: [
+            '**/glossary/**',
+            '**/lab/**',
+            '**/tools/**',
+            '**/encyclopedia/9-spinoff/9-03-igrovaya-industriya/**',
+            '**/encyclopedia/9-spinoff/9-04-razrabotka-igr/**',
+            '**/encyclopedia/9-spinoff/9-11-dlya-detey/**',
+          ],
           remarkPlugins: [
             require('./src/remark/wikiLink.js'),
             require('./src/remark/lazyMdxDemoImports.js'),
@@ -198,7 +229,13 @@ module.exports = {
     [
       '@docusaurus/plugin-client-redirects',
       {
-        redirects: [...glossaryExternalRedirects, ...labExternalRedirects, ...toolsExternalRedirects],
+        redirects: [
+          ...glossaryExternalRedirects,
+          ...labExternalRedirects,
+          ...toolsExternalRedirects,
+          ...gamesExternalRedirects,
+          ...kidsExternalRedirects,
+        ],
         createRedirects(existingPath) {
           const fromEncyclopedia = createEncyclopediaFolderRedirects(existingPath);
           const slugRedirects = {
@@ -430,6 +467,8 @@ module.exports = {
             { label: 'Код и разработка', to: '/section/code-dev' },
             { label: 'Инфраструктура и безопасность', to: '/section/infra-security' },
             { label: 'Лаборатория', href: `${labUrl}/lab/intro` },
+            { label: 'Игры', href: `${gamesUrl}/games/intro` },
+            { label: 'Для детей', href: `${kidsUrl}/kids/intro` },
           ],
         },
         {
