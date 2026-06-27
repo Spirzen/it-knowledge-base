@@ -168,6 +168,8 @@ import DocCardList from '@theme/DocCardList';
 
 ![Трёхуровневая архитектура «Вселенная IT» — spirzen.ru (хаб), code.spirzen.ru (код), play.spirzen.ru (интерактив) и слой интеграции](https://assets.spirzen.ru/encyclopedia/_shared/img/it-universe-three-tier.png)
 
+> Если картинка кажется слишком мелкой - нажмите ПКМ и выберите "Открыть в новой вкладке".
+
 Исходник схемы — `info/it-universe-three-tier.drawio`. Иллюстрации статей и общие диаграммы — в [`it-encyclopedia-media`](https://github.com/Spirzen/it-encyclopedia-media); путь в репозитории повторяет путь статьи, общие PNG — в `_shared/img/`.
 
 Длинные листинги и тяжёлые симуляторы **не раздувают** билд энциклопедии: статьи встраивают их через `ExternalCodeEmbed` и `ExternalPlayEmbed` (iframe, синхрон темы, авто-высота). Подробно — в служебном [`info/ECOSYSTEM.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ECOSYSTEM.md) на GitHub.
@@ -182,6 +184,8 @@ import DocCardList from '@theme/DocCardList';
 
 
 ![Архитектура «Вселенная IT» — экосистема: spirzen.ru, code.spirzen.ru, play.spirzen.ru, assets.spirzen.ru, html.spirzen.ru, интеграция и runtime](https://assets.spirzen.ru/encyclopedia/_shared/img/it-universe-architecture.png)
+
+> Если картинка кажется слишком мелкой - нажмите ПКМ и выберите "Открыть в новой вкладке".
 
 ### Что показано на схеме (Draw.io)
 
