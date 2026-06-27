@@ -176,6 +176,9 @@ launch.bat
 !scripts/build-wiki-link-index.mjs
 !scripts/build-doc-search-index.mjs
 !scripts/build-doc-redirects.mjs
+!scripts/build-glossary-external-redirects.mjs
+!scripts/build-lab-external-redirects.mjs
+!scripts/build-tools-external-redirects.mjs
 !scripts/generate-collection-doc-titles.mjs
 !scripts/fix-mdx-import-after-frontmatter.mjs
 !scripts/enrich-basics-crosslinks.mjs
