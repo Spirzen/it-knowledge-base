@@ -259,6 +259,7 @@ module.exports = {
         },
       },
     ],
+    () => require('./src/plugins/ituRedirectLoader')(),
     () => ({
       name: 'it-konva-canvas-fallback',
       configureWebpack() {

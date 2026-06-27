@@ -17,6 +17,8 @@ html[data-theme='dark'][data-design='design-lavender-haze'],
 html[data-theme='dark'][data-design='design-gilded-scroll'],
 html[data-theme='dark'][data-design='design-nordic-fjord'],
 html[data-theme='dark'][data-design='design-mint-cool'],
+html[data-theme='dark'][data-design='design-notebook-ruled'],
+html[data-theme='dark'][data-design='design-graph-checker'],
 html[data-theme='dark'][data-design='design-blueprint-tech'] {
   --d-bg: color-mix(in srgb, var(--d-primary) 5%, #121214);
   --d-surface: color-mix(in srgb, var(--d-primary) 9%, #1c1c20);
@@ -42,6 +44,25 @@ html[data-theme='dark'][data-design='design-blueprint-tech'] {
   --d-code-syntax-string: color-mix(in srgb, var(--d-primary) 75%, var(--d-code-fg));
   --d-code-syntax-comment: var(--d-text-muted);
   --d-code-syntax-builtin: var(--d-accent2);
+}
+
+html[data-theme='dark'][data-design='design-notebook-ruled'] {
+  --d-hero-bg: var(--d-page-bg);
+  --d-page-bg:
+    linear-gradient(90deg, transparent 50px, #8b4048 50px, #8b4048 52px, transparent 52px),
+    linear-gradient(#2a2a2e 0.1em, transparent 0.1em),
+    color-mix(in srgb, var(--d-primary) 5%, #121214);
+  --d-page-bg-size: 100% 30px;
+}
+
+html[data-theme='dark'][data-design='design-graph-checker'] {
+  --d-hero-bg: var(--d-page-bg);
+  --d-page-bg:
+    linear-gradient(45deg, #3a3a3e 25%, transparent 25%, transparent 75%, #3a3a3e 75%, #3a3a3e),
+    linear-gradient(45deg, #3a3a3e 25%, #1c1c20 25%, #1c1c20 75%, #3a3a3e 75%, #3a3a3e),
+    color-mix(in srgb, var(--d-primary) 5%, #121214);
+  --d-page-bg-size: 30px 30px;
+  --d-page-bg-position: 0 0, 15px 15px;
 }
 
 /* primary почти чёрный — отдельный accent для меню и ссылок */

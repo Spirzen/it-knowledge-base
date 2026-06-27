@@ -8,26 +8,21 @@ import {
 import {buildPlayPageUrl, getPlayBaseUrl} from '@site/src/constants/playExamples';
 import {EMBED_CODE_LOADING_MESSAGE, EMBED_PLAY_LOADING_MESSAGE} from './embedMessages';
 import EmbedClickGate from './EmbedClickGate';
+import ItuLoader from './ItuLoader';
 
-function embedFallback(message) {
+function embedFallback(message, title) {
   return (
-    <div
-      className="it-embed-lazy-host"
+    <ItuLoader
+      label={message}
+      title={title}
+      compact
       style={{
         margin: '1.25rem 0',
-        padding: '1rem 1.25rem',
         minHeight: 120,
         borderRadius: 12,
         border: '1px dashed var(--ifm-color-emphasis-300)',
-        fontSize: '0.88rem',
-        lineHeight: 1.45,
-        textAlign: 'center',
-        color: 'var(--ifm-color-emphasis-600)',
       }}
-      role="status"
-      aria-live="polite">
-      {message}
-    </div>
+    />
   );
 }
 
@@ -72,7 +67,7 @@ export default function lazyExternalEmbed(importFn, options = {}) {
     }
 
     return (
-      <Suspense fallback={embedFallback(loadingMessage)}>
+      <Suspense fallback={embedFallback(loadingMessage, kind === 'code' ? 'Код IT' : 'Play IT')}>
         <LazyEmbed {...props} autoLoad />
       </Suspense>
     );
@@ -84,7 +79,7 @@ export default function lazyExternalEmbed(importFn, options = {}) {
     const minHeight = props.minHeight ?? (kind === 'code' ? 200 : 320);
 
     return (
-      <BrowserOnly fallback={embedFallback(loadingMessage)}>
+      <BrowserOnly fallback={embedFallback(loadingMessage, kind === 'code' ? 'Код IT' : 'Play IT')}>
         {() => <LazyExternalEmbed {...props} minHeight={minHeight} />}
       </BrowserOnly>
     );

@@ -145,6 +145,8 @@ html[data-design='design-nordic-fjord'],
 html[data-design='design-sakura-spring'],
 html[data-design='design-mint-cool'],
 html[data-design='design-blueprint-tech'],
+html[data-design='design-notebook-ruled'],
+html[data-design='design-graph-checker'],
 html[data-design='design-ink-monochrome'] {
   --d-code-bg: color-mix(in srgb, var(--d-text) 6%, var(--d-surface));
 }

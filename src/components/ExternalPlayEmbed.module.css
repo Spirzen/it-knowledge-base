@@ -30,16 +30,7 @@
   position: absolute;
   inset: 0;
   z-index: 2;
-  display: grid;
-  place-items: center;
-  padding: 1rem 1.25rem;
-  font-size: 0.88rem;
-  line-height: 1.45;
-  text-align: center;
-  color: var(--ifm-color-emphasis-600);
-  background: color-mix(in srgb, var(--ifm-background-color) 96%, transparent);
-  border-bottom: 1px solid var(--ifm-color-emphasis-200);
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .skeletonInline {

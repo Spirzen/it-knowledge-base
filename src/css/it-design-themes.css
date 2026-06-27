@@ -1,4 +1,4 @@
-/* AUTO-GENERATED — 25 IT Universe design themes. Do not edit by hand; run: node scripts/generate-themes.js */
+/* AUTO-GENERATED — 28 IT Universe design themes. Do not edit by hand; run: node scripts/generate-themes.js */
 /* design-dark-coder добавлен вручную (mockups/dark-coder) */
 
 /* design-universe-original — Оригинал (Вселенная IT) */
@@ -673,6 +673,71 @@ html[data-design="design-ink-monochrome"] {
   --d-shadow: 0 4px 16px rgba(0,0,0,0.08);
   --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
   --ink-only: 1;
+}
+
+
+/* design-notebook-ruled — Тетрадный лист (Uiverse/artvelog) */
+html[data-design="design-notebook-ruled"] {
+  color-scheme: light;
+  --d-primary: #D95757;
+  --d-primary-dark: #B84545;
+  --d-accent2: #FFB4B8;
+  --d-bg: #F1F1F1;
+  --d-surface: #FFFFFF;
+  --d-text: #2C2C2C;
+  --d-text-muted: #6B6B6B;
+  --d-nav: rgba(255, 255, 255, 0.94);
+  --d-footer: #3D3D3D;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255, 255, 255, 0.9);
+  --d-hero-bg: var(--d-page-bg);
+  --d-radius: 4px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0, 0, 0, 0.1);
+  --d-code-bg: rgba(255, 255, 255, 0.92);
+  --d-code-fg: #2C2C2C;
+  --d-wide-gradient: linear-gradient(135deg, #D95757 0%, #B84545 100%);
+  --d-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --d-page-bg:
+    linear-gradient(90deg, transparent 50px, #ffb4b8 50px, #ffb4b8 52px, transparent 52px),
+    linear-gradient(#e1e1e1 0.1em, transparent 0.1em),
+    #F1F1F1;
+  --d-page-bg-size: 100% 30px;
+  --notebook: 1;
+}
+
+
+/* design-graph-checker — Шахматная клетка (Uiverse/uiverse-astronaut) */
+html[data-design="design-graph-checker"] {
+  color-scheme: light;
+  --d-primary: #4A4A4A;
+  --d-primary-dark: #2E2E2E;
+  --d-accent2: #888888;
+  --d-bg: #FFFFFF;
+  --d-surface: rgba(255, 255, 255, 0.94);
+  --d-text: #1A1A1A;
+  --d-text-muted: #666666;
+  --d-nav: rgba(255, 255, 255, 0.96);
+  --d-footer: #333333;
+  --d-footer-text: #FFFFFF;
+  --d-footer-link: rgba(255, 255, 255, 0.9);
+  --d-hero-bg: var(--d-page-bg);
+  --d-radius: 0px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: rgba(0, 0, 0, 0.12);
+  --d-code-bg: rgba(255, 255, 255, 0.95);
+  --d-code-fg: #1A1A1A;
+  --d-wide-gradient: linear-gradient(135deg, #4A4A4A 0%, #2E2E2E 100%);
+  --d-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --d-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --d-page-bg:
+    linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc),
+    linear-gradient(45deg, #ccc 25%, #fff 25%, #fff 75%, #ccc 75%, #ccc),
+    #FFFFFF;
+  --d-page-bg-size: 30px 30px;
+  --d-page-bg-position: 0 0, 15px 15px;
+  --checker: 1;
 }
 
 

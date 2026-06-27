@@ -29,16 +29,7 @@
   position: absolute;
   inset: 0;
   z-index: 2;
-  display: grid;
-  place-items: center;
-  padding: 1rem 1.25rem;
-  font-size: 0.88rem;
-  line-height: 1.45;
-  text-align: center;
-  color: #8b949e;
-  background: #0d1117;
-  border-bottom: 1px solid #30363d;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 .skeletonInline {

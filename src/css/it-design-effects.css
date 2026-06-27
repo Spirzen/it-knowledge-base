@@ -69,6 +69,36 @@ html[data-design='design-blueprint-tech'] .hero {
   background-size: var(--grid-size, 24px) var(--grid-size, 24px);
 }
 
+/* Uiverse pattern backgrounds (artvelog notebook, uiverse-astronaut checker) */
+html[data-design='design-notebook-ruled'] body,
+html[data-design='design-notebook-ruled'] .main-wrapper,
+html[data-design='design-graph-checker'] body,
+html[data-design='design-graph-checker'] .main-wrapper {
+  background: var(--d-page-bg);
+  background-size: var(--d-page-bg-size, auto);
+  background-position: var(--d-page-bg-position, 0 0);
+}
+
+html[data-design='design-notebook-ruled'] .hero.heroBanner,
+html[data-design='design-notebook-ruled'] header.hero,
+html[data-design='design-graph-checker'] .hero.heroBanner,
+html[data-design='design-graph-checker'] header.hero {
+  background-size: var(--d-page-bg-size, auto);
+  background-position: var(--d-page-bg-position, 0 0);
+}
+
+html[data-design='design-notebook-ruled'] .hero-card,
+html[data-design='design-notebook-ruled'] .feature-card {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+html[data-design='design-graph-checker'] .hero-card,
+html[data-design='design-graph-checker'] .feature-card {
+  border: 1px solid var(--d-border);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
 html[data-design='design-holo-prism'] .hero__title {
   background: linear-gradient(90deg, var(--d-primary), var(--d-accent2), var(--d-primary));
   background-size: 200% auto;

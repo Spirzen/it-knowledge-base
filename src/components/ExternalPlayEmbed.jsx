@@ -11,6 +11,7 @@ import {
 } from '@site/src/constants/playExamples';
 import EmbedClickGate from '@site/src/components/shared/EmbedClickGate';
 import {EMBED_PLAY_LOADING_MESSAGE} from '@site/src/components/shared/embedMessages';
+import ItuLoader from '@site/src/components/shared/ItuLoader';
 import {acquirePageScrollLock} from '@site/src/components/shared/embedScrollLock';
 import {
   useStableEmbedHeight,
@@ -197,9 +198,12 @@ function ExternalPlayEmbedInner({autoLoad = false, example, src, title, minHeigh
       style={!isFullscreen ? {minHeight: `${minHeight}px`} : undefined}>
       <div className={styles.frameHost}>
         {showLoadingMask && !isFullscreen && (
-          <div className={styles.loadingMask} role="status" aria-live="polite">
-            {EMBED_PLAY_LOADING_MESSAGE}
-          </div>
+          <ItuLoader
+            variant="overlay"
+            title="Play IT"
+            label={EMBED_PLAY_LOADING_MESSAGE}
+            className={styles.loadingMask}
+          />
         )}
         {iframeSrc ? (
           <iframe
@@ -222,9 +226,11 @@ function ExternalPlayEmbedInner({autoLoad = false, example, src, title, minHeigh
             }}
           />
         ) : (
-          <div className={styles.skeletonInline} style={{minHeight: `${minHeight}px`}} role="status">
-            {EMBED_PLAY_LOADING_MESSAGE}
-          </div>
+          <ItuLoader
+            title="Play IT"
+            label={EMBED_PLAY_LOADING_MESSAGE}
+            style={{minHeight: `${minHeight}px`}}
+          />
         )}
       </div>
       {!isFullscreen && fullPageUrl && (
@@ -244,9 +250,7 @@ export default function ExternalPlayEmbed(props) {
   return (
     <BrowserOnly
       fallback={
-        <div className={styles.skeleton} style={{minHeight}} role="status" aria-live="polite">
-          {EMBED_PLAY_LOADING_MESSAGE}
-        </div>
+        <ItuLoader title="Play IT" label={EMBED_PLAY_LOADING_MESSAGE} style={{minHeight}} />
       }>
       {() => <ExternalPlayEmbedInner {...props} />}
     </BrowserOnly>
