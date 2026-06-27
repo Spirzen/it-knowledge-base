@@ -142,11 +142,5 @@
     "name": "Тетрадный лист",
     "mode": "light",
     "featured": true
-  },
-  {
-    "id": "design-graph-checker",
-    "name": "Шахматная клетка",
-    "mode": "light",
-    "featured": true
   }
 ]
