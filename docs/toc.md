@@ -397,6 +397,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/3">1.17. Видеоввод и вывод - камеры, дисплеи, кодеки</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/4">1.17. Воспроизведение мультимедиа</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/5">1.17. Редактирование аудио и видео</a></li>
+  <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/55">1.17. Как устроена музыка</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/6">1.17. Форматы аудио и видео</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/61">1.17. Судебная экспертиза видео- и звукозаписей</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/98">1.17. Аудио и видео — итоги</a></li>
@@ -2178,8 +2179,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/313">5.02. PyQt, PySide и Flet — GUI beyond Tkinter</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/314">5.02. Работа с базами данных в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/315">5.02. Сетевое программирование на Python</a></li>
-  <li><a href="/encyclopedia/5-languages/5-02-python/316">5.02. BeautifulSoup — парсинг HTML</a></li>
-  <li><a href="/encyclopedia/5-languages/5-02-python/317">5.02. pyTelegramBot — боты в Telegram</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/316">5.02. Парсинг на Python</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/317">5.02. BeautifulSoup — парсинг HTML</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/318">5.02. Трёхмерная графика и Panda3D</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/319">5.02. Matplotlib — графики</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/320">5.02. Kivy — мобильные приложения и игры на Python</a></li>
@@ -2208,6 +2209,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/3431">5.02. FastAPI</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3432">5.02. Первая программа на FastAPI</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3433">5.02. FastAPI и база данных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/3434">5.02. pyTelegramBot — боты в Telegram</a></li>
   </ul>
   </li>
 
@@ -5129,6 +5131,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/133">9.10. Open Source, GitHub, DevOps и веб-стек</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/134">9.10. ЖЖ и Одноклассники — рунет до ленты алгоритмов</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/135">9.10. Discord и Telegram для IT-сообществ</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/136">9.10. IT-законы и эмпирические принципы</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/998">9.10. Интернет-культура — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/999">9.10. Интернет-культура — чек-лист</a></li>
   </ul>

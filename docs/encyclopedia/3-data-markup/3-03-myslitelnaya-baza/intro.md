@@ -39,6 +39,8 @@ import DocCardList from '@theme/DocCardList';
 
   <div class="callout-body">
   <p>Обзор таблиц и маршрутов: <a href="./3">Математическая основа IT</a>.</p>
+  <p><strong>Карта дисциплин (старт):</strong> <a href="./341">341 — виды математических наук</a>.</p>
+  <p><strong>С нуля в ML:</strong> <a href="./341">341</a> → … → <a href="/encyclopedia/5-languages/5-02-python/337">NumPy</a> → <a href="/lab/Примеры/1148">Pandas</a> → <a href="/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/10">sklearn</a> → <a href="/lab/Примеры/1159">Insurance</a> → <a href="/lab/Примеры/1160">Diabetes</a> → <a href="/lab/Примеры/1157">Titanic</a> → <a href="/encyclopedia/6-ai/6-03-neyroseti/2">перцептрон</a> → <a href="/encyclopedia/6-ai/6-03-neyroseti/114">Keras</a> → <a href="/lab/Примеры/1158">spam</a>.</p>
   <p><strong>Минимум для разработчика:</strong> <a href="./31">31</a> → <a href="./32">32</a> → <a href="./33">33</a>.</p>
     <p><strong>Формальная дискретка (курс множества → таблицы → графы → логика):</strong> <a href="./31">31</a> → <a href="./314">314</a> (по желанию) → <a href="./321">321</a> → <a href="./322">322</a> → <a href="./32">32</a> → <a href="./323">323</a> → <a href="./324">324</a> → <a href="./33">33</a> → <a href="./325">325</a> (самопроверка).</p>
   <p><strong>Данные и ML:</strong> добавьте <a href="./34">34</a>, <a href="./35">35</a>, <a href="./39">39</a>.</p>

@@ -19,6 +19,8 @@ related:
     doc: encyclopedia/9-spinoff/9-10-internet-kultura/126
   - title: "Рунетские IT-формулы"
     doc: encyclopedia/9-spinoff/9-10-internet-kultura/131
+  - title: "IT-законы и эмпирические принципы"
+    doc: encyclopedia/9-spinoff/9-10-internet-kultura/136
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -27,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-Быстрые маршруты: [Discord и Telegram для IT](./135), [Рунетские IT-формулы](./131), [Open Source и GitHub](./133), [Роли и идентичность в сети](./126).
+Быстрые маршруты: [Discord и Telegram для IT](./135), [Рунетские IT-формулы](./131), [IT-законы и эмпирические принципы](./136), [Open Source и GitHub](./133), [Роли и идентичность в сети](./126).
 
 {/* sidebar-collections */}
 

@@ -340,6 +340,7 @@ mindmap
 - [1.17. Видео ввод и вывод](/encyclopedia/1-basics/1-17-audio-i-video/3)
 - [1.17. Воспроизведение](/encyclopedia/1-basics/1-17-audio-i-video/4)
 - [1.17. Редактирование](/encyclopedia/1-basics/1-17-audio-i-video/5)
+- [1.17. Как устроена музыка](/encyclopedia/1-basics/1-17-audio-i-video/55)
 - [1.17. Разбор форматов](/encyclopedia/1-basics/1-17-audio-i-video/6)
 - [1.17. Итоги](/encyclopedia/1-basics/1-17-audio-i-video/98)
 - [1.17. Чек-лист](/encyclopedia/1-basics/1-17-audio-i-video/99)
