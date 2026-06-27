@@ -179,6 +179,8 @@ launch.bat
 !scripts/build-glossary-external-redirects.mjs
 !scripts/build-lab-external-redirects.mjs
 !scripts/build-tools-external-redirects.mjs
+!scripts/build-games-external-redirects.mjs
+!scripts/build-kids-external-redirects.mjs
 !scripts/generate-collection-doc-titles.mjs
 !scripts/fix-mdx-import-after-frontmatter.mjs
 !scripts/enrich-basics-crosslinks.mjs

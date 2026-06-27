@@ -11,7 +11,7 @@ slug: /about/kak-ustroena-vselennaya-it/arkhitektura
 
 Сайт "Вселенная IT" — **связка сервисов** с единой [навигацией](#сервис) и перекрёстными ссылками. Текст и структура знаний живут в [репозитории](#репозиторий) `it-knowledge-base`; тяжёлый [интерактив](#интерактив) и длинный код вынесены на отдельные [домены](#домен), чтобы энциклопедию можно было собирать и отдавать быстро.
 
-Общая идея близка к [многоуровневой архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133) и [паттернам микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118), но в упрощённом виде — без оркестратора контейнеров на каждый абзац статьи. Подробнее о выборе архитектуры — в [Основах архитектуры](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112) и [Архитектурных паттернах](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/114).
+Общая идея близка к [многоуровневой архитектуре](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133) и [паттернам микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118), но в **прагматичном** виде — без оркестратора контейнеров на каждый абзац статьи. На практике «Вселенная IT» — это **не три–четыре логических уровня**, а **каскад зон**: экосистема продакшена → слой интеграции iframe/postMessage → исходники каждого репозитория → пайплайны сборки (npm-скрипты + SSG) → деплой → runtime в браузере, плюс satellite-сервисы assets и html. Полная карта — на [О проекте → архитектура](/about/project#arhitektura-proekta) и в `info/it-universe-architecture.drawio`.
 
 ---
 
@@ -53,21 +53,75 @@ flowchart TB
 
 ---
 
+## Зоны экосистемы (swimlanes)
+
+На полной Draw.io-схеме (`info/it-universe-architecture.drawio`) восемь горизонтальных зон. Каждая отвечает на свой вопрос — **не** сводится к «фронт / бэк / БД».
+
+| Зона | Вопрос | Ключевые элементы |
+|------|--------|-------------------|
+| **0. Экосистема** | Кто с кем на продакшене? | spirzen.ru, **search**, terms, lab, kids, games, code, play, html, writer, schema, sql, tools, color, random, assets, status; it-management; APK |
+| **0b. Интеграция** | Как статья встраивает внешний код? | External*Embed, postMessage, CSP, trusted origins |
+| **1. Источники KB** | Из чего собирается spirzen.ru? | `docs/` (~3400), `src/`, `scripts/`, `static/`, конфиги |
+| **2. Сборка KB** | Что до `docusaurus build`? | wiki-links, search-index, redirects, collection-titles, webpack |
+| **3. it-code-examples** | Откуда iframe с кодом? | Astro, Shiki, `/e/embed/<slug>/` |
+| **4. it-play** | Откуда iframe с демо? | Astro + React, `/p/embed/<slug>/` |
+| **5. Деплой** | Как попадает на Pages? | GitHub Actions → `deploy-pages` (каждый репозиторий) |
+| **6. Runtime** | Что грузит браузер? | SPA-оболочка, MDX-статья, click-to-load iframe, inline lazyDemo, DocSearch |
+
+Satellite **assets** и **html** на swimlane 0 и в таблице [О проекте](/about/project#arhitektura-proekta): иллюстрации по прямому URL, WebEditor — отдельное приложение со ссылками из статей.
+
+Упрощённая схема `it-universe-three-tier.drawio` показывает только **0 + 0b** в виде «хаб ↔ code ↔ play» — удобно для первого знакомства, но без сборки, деплоя и runtime.
+
+---
+
 ## Роли сервисов
 
-| Сервис | Назначение | Технология (типично) |
-|--------|------------|----------------------|
-| **spirzen.ru** | Энциклопедия, лаборатория, глоссарий, поиск, навигация | Docusaurus 3 + [React](/encyclopedia/5-languages/5-01-javascript/27) 19, статический экспорт |
-| **code.spirzen.ru** | Запускаемые [листинги](#листинг), встраивание через `/e/embed/<slug>/` | Отдельный Astro/Vite-проект |
-| **play.spirzen.ru** | Тренажёры, эмуляторы, [визуализаторы](#визуализатор) через `/p/embed/<slug>/` | Отдельный Astro/Vite-проект |
-| **html.spirzen.ru** | Онлайн-редактор HTML/CSS/JS ([WebEditor](https://github.com/Spirzen/WebEditor)), живой предпросмотр | Отдельный статический проект на GitHub Pages |
-| **assets.spirzen.ru** | Скриншоты, диаграммы, тяжёлые PNG/WebP | [CDN](/encyclopedia/2-system-network/2-03-set-i-internet/212) / object storage |
+Полная таблица — на [О проекте → архитектура](/about/project#arhitektura-proekta) и [status.spirzen.ru](https://status.spirzen.ru).
+
+### Ядро
+
+| Сервис | Назначение | Технология |
+|--------|------------|------------|
+| **spirzen.ru** | Энциклопедия; DocSearch **только по статьям** (Ctrl+K) | Docusaurus 3 + React 19 |
+| **search.spirzen.ru** | Поиск **по всей экосистеме** (KB, code, play, terms, lab, tools) | Astro 5, `it-search` |
+| **status.spirzen.ru** | Хаб и мониторинг доменов | Astro 5, `it-portals` |
+| **assets.spirzen.ru** | CDN иллюстраций | Статика |
+
+### Контентные порталы
+
+Глоссарий, лаборатория, инструменты, игры и kids **живут на отдельных доменах**; пункты меню spirzen.ru ведут туда через редиректы (`*ExternalRedirects.json`).
+
+| Сервис | Назначение | Репозиторий |
+|--------|------------|-------------|
+| **terms.spirzen.ru** | ~4250 терминов | `it-terms` |
+| **lab.spirzen.ru** | Практика, экзамены, тренажёры | `it-lab` |
+| **tools.spirzen.ru** | Справочник утилит | `it-tools` |
+| **kids.spirzen.ru** | IT для детей | `it-kids` |
+| **games.spirzen.ru** | IT-игры | `it-games` |
+
+### Embed (iframe + postMessage)
+
+| Сервис | Назначение | Технология |
+|--------|------------|------------|
+| **code.spirzen.ru** | [Листинги](#листинг), `/e/embed/<slug>/` | Astro + Shiki |
+| **play.spirzen.ru** | [Визуализаторы](#визуализатор), `/p/embed/<slug>/` | Astro + React |
+
+### Standalone-приложения (ссылки, без iframe)
+
+| Сервис | Назначение |
+|--------|------------|
+| **html.spirzen.ru** | WebEditor — HTML/CSS/JS |
+| **writer.spirzen.ru** | Редактор статей (frontmatter, embed, экспорт `.md`) |
+| **schema.spirzen.ru** | Диаграммы и блок-схемы |
+| **sql.spirzen.ru** | SQL-песочница |
+| **color.spirzen.ru** | Студия цвета, WCAG |
+| **random.spirzen.ru** | Генераторы случайных данных |
 
 Разделение сделано осознанно.
 
-1. **Размер [бандла](#бандл).** [Интерактив](#интерактив) из сотен демо держится отдельно от основного JS-[чанка](#чанк) энциклопедии.
-2. **Независимые релизы.** Тренажёр SQL можно обновить без полной пересборки энциклопедии — тот же принцип слабой связанности, что в [REST-интеграциях](/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1151).
-3. **Изоляция.** [iframe](#iframe) + [postMessage](#postmessage) с проверкой [origin](#origin) задаёт контролируемую границу между контентом и исполняемым кодом. См. также [HTTP как основу веб-интеграций](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118) и [HTTPS](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1151).
+1. **Размер [бандла](#бандл).** [Интерактив](#интерактив) и порталы (terms, lab, tools, …) держатся **вне** main bundle spirzen.ru.
+2. **Независимые релизы.** Обновить глоссарий на terms или тренажёр на lab можно без полной пересборки энциклопедии.
+3. **Изоляция.** [iframe](#iframe) + [postMessage](#postmessage) для code/play; для порталов — HTTP-редиректы и общая навигация (`ecosystem-urls.json`).
 
 ---
 
@@ -79,12 +133,13 @@ flowchart TB
 |---------|------|---------------|------------------------|
 | **Static Site Generation (SSG)** | HTML/JS собираются заранее, сервер отдаёт файлы | `docusaurus build` → spirzen.ru | [Как работают сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [CDN](/encyclopedia/2-system-network/2-03-set-i-internet/212) |
 | **SPA с гидратацией** | После загрузки HTML React "оживляет" страницу | Docusaurus + [React](/encyclopedia/5-languages/5-01-javascript/27) | [SPA и frontend-стек](/encyclopedia/5-languages/5-01-javascript/270) |
-| **Разделение по bounded context** | У каждого домена своя зона ответственности | spirzen / code / play / assets / html | [Паттерны микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118) |
+| **Разделение по bounded context** | У каждого домена своя зона ответственности | spirzen / search / terms / lab / code / play / tools / … | [Паттерны микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118) |
 | **Embed / Facade** | Статья видит простой компонент, внутри — сложный iframe | `ExternalPlayEmbed`, `ExternalCodeEmbed` | [Модульность](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/2) |
 | **Lazy loading** | Код грузится, когда нужен | `lazyMdxDemoImports`, `lazyDemoInView` | [Proxy и lazy loading](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/128) |
 | **Code splitting** | Один [бандл](#бандл) режется на [чанки](#чанк) | Webpack/Rspack `splitChunks` | [SPA и bundler](/encyclopedia/5-languages/5-01-javascript/270) |
 | **Compile-time transform** | Markdown меняется до рендера | [remark](#remark)-плагины | [Markdown в вебе](/encyclopedia/1-basics/1-15-tekst/5) |
-| **Client-side index** | Поиск по заранее собранному JSON | `doc-search-index.json` + DocSearch | [Основы БД и индексы](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) (аналогия) |
+| **Client-side index** | Поиск по заранее собранному JSON | `doc-search-index.json` (spirzen) + `universe-search-index.json` (search.spirzen.ru) | [Основы БД и индексы](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) (аналогия) |
+| **External redirect** | Контент уехал на другой домен | `glossaryExternalRedirects.json`, `labExternalRedirects.json`, … | [HTTP-справочник](/encyclopedia/2-system-network/2-03-set-i-internet/611) |
 | **Redirect / compatibility layer** | Старые URL ведут на новые | `plugin-client-redirects` | [HTTP-справочник](/encyclopedia/2-system-network/2-03-set-i-internet/611) |
 | **Gate / deferred init** | Тяжёлое стартует по действию пользователя | [Click-to-load](#click-to-load), `EmbedClickGate` | [Polling и push](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/129) (отложенная загрузка данных) |
 | **Cross-cutting enhancement** | Общая логика без дублирования в статьях | `DocItem/Layout`, `articleMetaEnhancement` | [Составные паттерны](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/143) |
@@ -116,7 +171,15 @@ flowchart TB
 
 Картинки в [Markdown](#markdown) — `![описание](https://assets.spirzen.ru/...)`. Браузер качает файл напрямую; [CDN](/encyclopedia/2-system-network/2-03-set-i-internet/212) кэширует у края сети. Энциклопедия не проксирует байты иллюстраций.
 
-### 4. Репозиторий ↔ сборка (npm-скрипты)
+### 4. spirzen.ru ↔ контентные порталы (HTTP redirect)
+
+Разделы **Глоссарий**, **Лаборатория**, **Инструменты**, **Игры**, **Kids** живут на terms / lab / tools / games / kids. Старые URL на spirzen.ru (`/glossary/…`, `/lab/…`, …) перенаправляются JSON-картами `src/data/*ExternalRedirects.json` + `plugin-client-redirects`. Меню navbar сохраняет привычные пункты; контент отдаёт отдельный Astro-портал.
+
+### 5. search.spirzen.ru ↔ экосистема (сборка индекса)
+
+При `npm run build` в `it-search` скрипт `search:index` читает метаданные из it-knowledge-base (`doc-search-index.json`), it-code-examples, it-play, it-terms, it-lab, it-tools и собирает `universe-search-index.json`. Поиск на [search.spirzen.ru](https://search.spirzen.ru) — клиентский, без backend. Это **отдельно** от DocSearch (Ctrl+K) на spirzen.ru, который индексирует только статьи энциклопедии.
+
+### 6. Репозиторий ↔ сборка (npm-скрипты)
 
 Перед `docusaurus build` скрипты в `scripts/` генерируют артефакты.
 
@@ -129,11 +192,11 @@ flowchart TB
 
 Подробнее — в главе [Данные и скрипты](/about/kak-ustroena-vselennaya-it/dannye-i-skripty).
 
-### 5. remark ↔ MDX (этап компиляции)
+### 7. remark ↔ MDX (этап компиляции)
 
 [remark](#remark)-плагины — мост между авторским [Markdown](#markdown) и бандлом React. `wikiLink.js` подставляет ссылки; `lazyMdxDemoImports.js` переписывает `import` компонентов на lazy-обёртки. Это **интеграция на этапе сборки**, в рантайме браузера remark уже не работает.
 
-### 6. localStorage ↔ тема оформления
+### 8. localStorage ↔ тема оформления
 
 [Палитра дизайна](#палитра-дизайна) (`data-design`) и light/dark (`data-theme`) сохраняются в браузере. Client modules синхронизируют атрибуты при SPA-переходах — см. [Темы и стили](/about/kak-ustroena-vselennaya-it/temy-i-stili).
 
@@ -160,11 +223,11 @@ flowchart TB
 
 ## Слои приложения spirzen.ru
 
-Каждый пункт — отдельный [слой приложения](#слой-приложения) в смысле [многоуровневой схемы](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133).
+Внутри одного домена spirzen.ru — **ещё один «горный хребет»** логических слоёв. Каждый пункт — отдельный [слой приложения](#слой-приложения) в смысле [многоуровневой схемы](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2133).
 
 ### 1. Контент (`docs/`)
 
-- Файлы `.md` и `.mdx` — статьи, разделы, подборки.
+- Файлы `.md` и `.mdx` — статьи, разделы, подборки (~3400 материалов: encyclopedia, about, lab, tools, glossary, context, philosophy, section, toc).
 - [Frontmatter](#frontmatter) с полями `title`, `description`, `slug`, `tags`, `related` и др.
 - MDX позволяет `import` React-компонентов прямо в статью.
 - `routeBasePath: '/'` ставит документацию в корень сайта (`/encyclopedia/...`).
@@ -173,21 +236,34 @@ flowchart TB
 
 ### 2. Презентация (`src/theme/`)
 
-[Swizzle-компоненты](#swizzle-компонент) Docusaurus — [обёртка](#обёртка) статьи, [navbar](#navbar), [sidebar](#sidebar), [карточки](#карточка). Здесь вшиты PDF-[экспорт](#экспорт), прогресс главы и блок "Смотрите также" без импорта в каждой статье.
+[Swizzle-компоненты](#swizzle-компонент) Docusaurus — [обёртка](#обёртка) статьи, [navbar](#navbar), [sidebar](#sidebar), [карточки](#карточка). Здесь вшиты PDF-[экспорт](#экспорт), прогресс главы и блок «Смотрите также» без импорта в каждой статье.
 
 ### 3. Интерактив (`src/components/`)
 
-- **[Embed](#embed)** — `ExternalPlayEmbed`, `ExternalCodeEmbed` ([iframe](#iframe)).
+- **[Embed](#embed)** — `ExternalPlayEmbed`, `ExternalCodeEmbed` ([iframe](#iframe) на отдельные домены).
+- **Inline-демо** — `*Demo.jsx`, `DemoShell`, `lazyDemoInView` (~350+ файлов; тяжёлое — в async chunks).
 - **[Хабы](#хаб)** — `CollectionHub`, `LabTrainersHub`, `GettingStartedPaths`.
 - **Поиск** — собственный DocSearch вместо [Algolia](#algolia).
 
-### 4. Данные (`src/data/`)
+### 4. Компиляция контента (`src/remark/`, `scripts/`)
+
+Слой **до** React: remark-плагины (`wikiLink`, `lazyMdxDemoImports`) и npm-скрипты (`docs:wiki-links`, `docs:search-index`, `docs:redirects`, `docs:collection-titles`) генерируют JSON-индексы и редиректы. Это не runtime — но без него сборка и навигация не работают.
+
+### 5. Данные (`src/data/`)
 
 JSON и JS-модули с подборками, иконками технологий, палитрами дизайна и словарями терминов. Часть генерируется скриптами, часть редактируется вручную.
 
-### 5. Стили (`src/css/`)
+### 6. Клиентский bootstrap (`src/clientModules/`)
+
+`itDesignThemeInit`, `limitRoutePrefetch` и др. — выполняются в браузере до [гидратации](#гидратация) React (темы `data-design`, отложенный prefetch тяжёлых маршрутов).
+
+### 7. Стили (`src/css/`)
 
 [Infima](#infima) (тема Docusaurus) плюс кастомная система `--d-*` токенов и 25+ палитр `data-design`. См. [HTML и CSS](/encyclopedia/3-data-markup/3-10-css/intro).
+
+### 8. Конфигурация и сборка (корень репозитория)
+
+`docusaurus.config.js` (plugins, webpack `splitChunks`, customFields для URL embed), `sidebars.js`, `package.json` — связывают все слои выше в артефакт `build/`.
 
 ---
 
@@ -245,7 +321,7 @@ it-knowledge-base/
 
 ### Сервис
 
-Отдельно развёрнутое приложение или статический сайт с своим [доменом](#домен) и зоной ответственности. spirzen.ru, code.spirzen.ru, play.spirzen.ru и assets.spirzen.ru — четыре [сервиса](#сервис) витрины знаний. Теория — [паттерны микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118).
+Отдельно развёрнутое приложение или статический сайт с своим [доменом](#домен) и зоной ответственности. В экосистеме их **более пятнадцати** — от spirzen.ru до search, terms, lab, tools, writer, schema, sql, color, random, games, kids, code, play, assets, html. Полный список — [status.spirzen.ru](https://status.spirzen.ru). Теория — [паттерны микросервисов](/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/118).
 
 <span id="навигация"></span>
 
