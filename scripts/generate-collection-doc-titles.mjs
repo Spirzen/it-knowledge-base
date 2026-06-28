@@ -11,6 +11,7 @@ import {SIDEBAR_COLLECTIONS} from '../src/data/sidebarCollections.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const docsDir = path.join(root, 'docs');
+const gamesContentDir = path.join(root, '..', 'it-games', 'content');
 const outFile = path.join(root, 'src', 'data', 'collectionDocTitles.json');
 
 function stripQuotes(value) {
@@ -50,13 +51,31 @@ function titleFromMarkdown(filePath) {
 }
 
 function resolveDocFile(docId) {
-  for (const ext of ['.md', '.mdx']) {
-    const candidate = path.join(docsDir, `${docId}${ext}`);
-    if (fs.existsSync(candidate)) {
-      return candidate;
+  const searchRoots = [docsDir];
+  if (docId.startsWith('games/')) {
+    searchRoots.push(gamesContentDir);
+  }
+
+  for (const baseDir of searchRoots) {
+    for (const ext of ['.md', '.mdx']) {
+      const candidate = path.join(baseDir, `${docId}${ext}`);
+      if (fs.existsSync(candidate)) {
+        return candidate;
+      }
     }
   }
   return null;
+}
+
+function loadExistingTitles() {
+  if (!fs.existsSync(outFile)) {
+    return {};
+  }
+  try {
+    return JSON.parse(fs.readFileSync(outFile, 'utf8'));
+  } catch {
+    return {};
+  }
 }
 
 function collectDocIds() {
@@ -71,6 +90,7 @@ function collectDocIds() {
 
 function main() {
   const docIds = collectDocIds();
+  const existingTitles = loadExistingTitles();
   /** @type {Record<string, { title: string }>} */
   const titles = {};
   const missing = [];
@@ -78,6 +98,11 @@ function main() {
   for (const docId of docIds) {
     const filePath = resolveDocFile(docId);
     if (!filePath) {
+      const preserved = existingTitles[docId]?.title;
+      if (preserved) {
+        titles[docId] = {title: preserved};
+        continue;
+      }
       missing.push(docId);
       continue;
     }

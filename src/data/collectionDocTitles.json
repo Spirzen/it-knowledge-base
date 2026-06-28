@@ -1301,6 +1301,9 @@
   "encyclopedia/9-spinoff/9-11-dlya-detey/forkids": {
     "title": "Для детей — о разделе"
   },
+  "games/9-031-gametools/4": {
+    "title": "Игры, которые должен попробовать каждый"
+  },
   "tools/automation/intro": {
     "title": "Автоматизация — о разделе"
   },
@@ -1321,9 +1324,6 @@
   },
   "tools/documentation/intro": {
     "title": "Документация — о разделе"
-  },
-  "games/9-031-gametools/4": {
-    "title": "Игры, которые должен попробовать каждый"
   },
   "tools/intro": {
     "title": "Инструменты — о разделе"
