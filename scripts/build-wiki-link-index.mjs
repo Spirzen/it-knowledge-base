@@ -12,7 +12,7 @@ import {resolveDocHref} from './lib/docUrl.mjs';
 import {termsGlossaryHref} from './lib/termsUrl.mjs';
 import {labHref} from './lib/labUrl.mjs';
 import {toolsHref} from './lib/toolsUrl.mjs';
-import {gamesHrefFromSpinoff} from './lib/gamesUrl.mjs';
+import {gamesHrefFromSpinoff, gamesHrefFromGametools} from './lib/gamesUrl.mjs';
 import {kidsHrefFromSpinoff} from './lib/kidsUrl.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -25,6 +25,7 @@ const gamesDirs = [
   path.join(spinoffDir, '9-03-igrovaya-industriya'),
   path.join(spinoffDir, '9-04-razrabotka-igr'),
 ];
+const gametoolsDir = path.join(root, '..', 'it-games', 'content', 'games', '9-031-gametools');
 const kidsDir = path.join(spinoffDir, '9-11-dlya-detey');
 const encyclopediaDir = path.join(root, 'docs', 'encyclopedia');
 const curatedPath = path.join(root, 'src', 'data', 'encyclopediaTermLinks.json');
@@ -221,6 +222,32 @@ function parseGames() {
   return entries;
 }
 
+function parseGametools() {
+  const entries = {};
+  if (!fs.existsSync(gametoolsDir)) {
+    return entries;
+  }
+  for (const rel of walkToolsMarkdownFiles(gametoolsDir)) {
+    const raw = fs.readFileSync(path.join(gametoolsDir, rel), 'utf8');
+    const {data} = matter(raw);
+    const title = (data.title || data.sidebar_label || '').trim();
+    if (!title) {
+      continue;
+    }
+    const key = normalizeKey(title);
+    if (entries[key]) {
+      continue;
+    }
+    const pageId = `9-031-gametools/${rel.replace(/\.mdx?$/i, '')}`;
+    entries[key] = {
+      kind: 'games',
+      label: title,
+      href: gamesHrefFromGametools(pageId.replace(/^9-031-gametools\//, '')),
+    };
+  }
+  return entries;
+}
+
 function parseKids() {
   const entries = {};
   for (const {rel, docId} of walkSpinoffMarkdownFiles(kidsDir, '9-11-dlya-detey')) {
@@ -318,7 +345,7 @@ function main() {
   const glossary = parseGlossary();
   const lab = parseLab();
   const tools = parseTools();
-  const games = parseGames();
+  const games = {...parseGames(), ...parseGametools()};
   const kids = parseKids();
   const encyclopediaAuto = parseEncyclopediaTitles();
   const curated = loadCurated();

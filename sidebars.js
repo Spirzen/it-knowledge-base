@@ -2,6 +2,11 @@
 const sidebars = {
   docsSidebar: [
     {
+      type: 'doc',
+      id: 'toc',
+      label: 'Общее содержание',
+    },
+    {
       type: 'category',
       label: 'О проекте',
       link: { type: 'doc', id: 'about/project' },
@@ -39,6 +44,11 @@ const sidebars = {
     },
     {
       type: 'link',
+      label: 'Видеоигры',
+      href: 'https://games.spirzen.ru/games/intro',
+    },
+    {
+      type: 'link',
       label: 'Инструменты',
       href: 'https://tools.spirzen.ru/tools/intro',
     },
@@ -51,6 +61,11 @@ const sidebars = {
       type: 'link',
       label: 'Лаборатория',
       href: 'https://lab.spirzen.ru/lab/intro',
+    },
+    {
+      type: 'link',
+      label: 'Для детей',
+      href: 'https://kids.spirzen.ru/kids/intro',
     },
     {
       type: 'category',
@@ -73,11 +88,6 @@ const sidebars = {
           dirName: 'philosophy',
         },
       ],
-    },
-    {
-      type: 'doc',
-      id: 'toc',
-      label: 'Общее содержание',
     },
   ],
 };

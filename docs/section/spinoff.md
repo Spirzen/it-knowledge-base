@@ -15,7 +15,7 @@ id: spinoff
 
 ## О разделе
 
-Факультативная «книга» цикла: темы, которые не входят в обязательное ядро, но сильно расширяют кругозор — от выгорания в IT до геймдева, стриминга и интернет-культуры. Раздел **не заменяет** [ИИ (раздел 6)](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro) — нейросети как дисциплина живут там; здесь только прикладные и культурные ответвления.
+Факультативная «книга» цикла: темы, которые не входят в обязательное ядро, но сильно расширяют кругозор — от выгорания в IT до геймдева, стриминга и интернет-культуры. **9.03**, **9.04** и **9.11** читаются на [games.spirzen.ru](https://games.spirzen.ru/games/intro) и [kids.spirzen.ru](https://kids.spirzen.ru/kids/intro); остальные подразделы — на spirzen.ru. Раздел **не заменяет** [ИИ (раздел 6)](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro) — нейросети как дисциплина живут там.
 
 ```mermaid
 mindmap
@@ -63,8 +63,10 @@ mindmap
 
 ## 9.03 Игровая индустрия
 
-- [О разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro)
-- [Игровая индустрия](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/1)
+> Канонический раздел — **[games.spirzen.ru](https://games.spirzen.ru/games/9-03-igrovaya-industriya/intro)**. Ссылки ниже на spirzen редиректят.
+
+- [О разделе](https://games.spirzen.ru/games/9-03-igrovaya-industriya/intro)
+- [Игровая индустрия](https://games.spirzen.ru/games/9-03-igrovaya-industriya/1)
 - [Киберспорт](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/125)
 - [Live-service](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/126)
 - [UGC-платформы](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/127)
@@ -78,7 +80,9 @@ mindmap
 
 ## 9.04 Разработка игр
 
-- [О разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro)
+> Канонический раздел — **[games.spirzen.ru](https://games.spirzen.ru/games/9-04-razrabotka-igr/intro)**.
+
+- [О разделе](https://games.spirzen.ru/games/9-04-razrabotka-igr/intro)
 - [Дорожная карта геймдева](/encyclopedia/9-spinoff/9-04-razrabotka-igr/11)
 - [Godot — первая игра](/encyclopedia/9-spinoff/9-04-razrabotka-igr/207)
 - [Unity](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) · [Unreal](/encyclopedia/9-spinoff/9-04-razrabotka-igr/4) · [UE6](/encyclopedia/9-spinoff/9-04-razrabotka-igr/129) · [Verse](/encyclopedia/9-spinoff/9-04-razrabotka-igr/130) · [Roblox](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2)
@@ -140,9 +144,11 @@ mindmap
 
 ## 9.11 Для детей
 
-- [Для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/forkids)
-- [Компьютер](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/intro)
-- [Код](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro)
+> Канонический раздел — **[kids.spirzen.ru](https://kids.spirzen.ru/kids/intro)**.
+
+- [Для детей — о разделе](https://kids.spirzen.ru/kids/intro)
+- [Компьютер](https://kids.spirzen.ru/kids/1-computer/intro)
+- [Код](https://kids.spirzen.ru/kids/5-kod/intro)
 
 ---
 

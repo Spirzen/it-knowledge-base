@@ -100,28 +100,32 @@
     "to": "https://tools.spirzen.ru/tools/documentation/intro"
   },
   {
+    "from": "/docs/tools/games",
+    "to": "https://games.spirzen.ru/games/9-031-gametools/intro"
+  },
+  {
     "from": "/docs/tools/games/1",
-    "to": "https://tools.spirzen.ru/tools/games/1"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/1"
   },
   {
     "from": "/docs/tools/games/1111",
-    "to": "https://tools.spirzen.ru/tools/games/1111"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/1111"
   },
   {
     "from": "/docs/tools/games/2",
-    "to": "https://tools.spirzen.ru/tools/games/2"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/2"
   },
   {
     "from": "/docs/tools/games/3",
-    "to": "https://tools.spirzen.ru/tools/games/3"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/3"
   },
   {
     "from": "/docs/tools/games/4",
-    "to": "https://tools.spirzen.ru/tools/games/4"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/4"
   },
   {
     "from": "/docs/tools/games/intro",
-    "to": "https://tools.spirzen.ru/tools/games/intro"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/intro"
   },
   {
     "from": "/docs/tools/intro",
@@ -360,28 +364,32 @@
     "to": "https://tools.spirzen.ru/tools/documentation/intro"
   },
   {
+    "from": "/tools/games",
+    "to": "https://games.spirzen.ru/games/9-031-gametools/intro"
+  },
+  {
     "from": "/tools/games/1",
-    "to": "https://tools.spirzen.ru/tools/games/1"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/1"
   },
   {
     "from": "/tools/games/1111",
-    "to": "https://tools.spirzen.ru/tools/games/1111"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/1111"
   },
   {
     "from": "/tools/games/2",
-    "to": "https://tools.spirzen.ru/tools/games/2"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/2"
   },
   {
     "from": "/tools/games/3",
-    "to": "https://tools.spirzen.ru/tools/games/3"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/3"
   },
   {
     "from": "/tools/games/4",
-    "to": "https://tools.spirzen.ru/tools/games/4"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/4"
   },
   {
     "from": "/tools/games/intro",
-    "to": "https://tools.spirzen.ru/tools/games/intro"
+    "to": "https://games.spirzen.ru/games/9-031-gametools/intro"
   },
   {
     "from": "/tools/intro",

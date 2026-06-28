@@ -48,6 +48,8 @@ try {
   // npm run docs:kids-redirects — перед start/build
 }
 
+const {loadEcosystemConfig, buildDocusaurusFooter} = require('./scripts/ecosystem-footer.cjs');
+
 /** Old slug segment -> new folder name (encyclopedia subsection). */
 const ENCYCLOPEDIA_FOLDER_RENAMES = [
   ['encyclopedia/3-data-markup/3.01. Продвинутые операции с данными', 'encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi'],
@@ -147,6 +149,10 @@ const gamesUrl =
 
 const kidsUrl =
   process.env.IT_KIDS_URL ?? (isProdBuild ? 'https://kids.spirzen.ru' : 'http://localhost:4333');
+
+const ecosystemFooter = buildDocusaurusFooter(
+  loadEcosystemConfig({isProdBuild}),
+);
 
 module.exports = {
   title: 'Вселенная IT',
@@ -450,49 +456,7 @@ module.exports = {
         {type: 'custom-docSearch', position: 'right'},
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {
-          title: 'Энциклопедия',
-          items: [
-            { label: 'Основы', to: '/section/basics' },
-            { label: 'Система и сеть', to: '/section/system-network' },
-            { label: 'Данные и разметка', to: '/section/data-markup' },
-          ],
-        },
-        {
-          title: 'Инструменты и практика',
-          items: [
-            { label: 'Код и разработка', to: '/section/code-dev' },
-            { label: 'Инфраструктура и безопасность', to: '/section/infra-security' },
-            { label: 'Лаборатория', href: `${labUrl}/lab/intro` },
-            { label: 'Игры', href: `${gamesUrl}/games/intro` },
-            { label: 'Для детей', href: `${kidsUrl}/kids/intro` },
-          ],
-        },
-        {
-          title: 'Контекст и рефлексия',
-          items: [
-            { label: 'Контекст', to: '/context/intro' },
-            { label: 'Философия', to: '/philosophy/intro' },
-            { label: 'Глоссарий', href: `${termsUrl}/glossary/intro` },
-          ],
-        },
-        {
-          title: 'О проекте',
-          items: [
-            {label: 'О проекте', to: '/about/project'},
-            {label: 'Тематические подборки', to: '/about/collections'},
-            {label: 'Манифест и правила', to: '/about/manifest'},
-            {label: 'Поддержать проект', to: '/about/author#support'},
-            {label: 'Об авторе', to: '/about/author'},
-            {label: 'GitHub', href: 'https://github.com/spirzen/it-knowledge-base'},
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Тагиров Тимур Владиславович. Все права защищены.`,
-    },
+    footer: ecosystemFooter,
   },
 
   markdown: {

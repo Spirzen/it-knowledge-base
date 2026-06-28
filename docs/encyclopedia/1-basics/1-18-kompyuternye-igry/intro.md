@@ -10,7 +10,7 @@ related:
   - title: "Игроведение — о разделе"
     doc: encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro
   - title: "Игры, которые должен попробовать каждый"
-    doc: tools/games/4
+    doc: games/9-031-gametools/4
   - title: "Разработка игр — о разделе"
     doc: encyclopedia/9-spinoff/9-04-razrabotka-igr/intro
   - title: "Разработка игр на Python"
@@ -33,7 +33,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел объясняет, **из чего состоит игра** и как она работает как программа. Как игра общается с видеокартой — [DirectX, OpenGL и Vulkan — простыми словами](./7). Апскейлинг **DLSS** и **FSR** — [отдельная статья](./8). Полная история PC-графики — [История DirectX](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11439). Справочник по жанрам (FPS, RPG, MMORPG, MOBA…) — [Жанры видеоигр — маршрут](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/127). Консоли и экосистемы — [Игровые консоли — маршрут](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/129). Когда теория уже понятна и хочется **пощупать жанры руками**, откройте каталог [Игры, которые должен попробовать каждый](/tools/games/4) — жанровые фильтры, поиск и случайная рекомендация.
+Раздел объясняет, **из чего состоит игра** и как она работает как программа. Как игра общается с видеокартой — [DirectX, OpenGL и Vulkan — простыми словами](./7). Апскейлинг **DLSS** и **FSR** — [отдельная статья](./8). Полная история PC-графики — [История DirectX](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11439). Справочник по жанрам (FPS, RPG, MMORPG, MOBA…) — [Жанры видеоигр — маршрут](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/127). Консоли и экосистемы — [Игровые консоли — маршрут](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/129). Когда теория уже понятна и хочется **пощупать жанры руками**, откройте каталог [Игры, которые должен попробовать каждый](/games/9-031-gametools/4) — жанровые фильтры, поиск и случайная рекомендация.
 
 <DocCardList />
 
@@ -45,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**База для геймера** — [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игры, которые должен попробовать каждый](/tools/games/4), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro).
+**База для геймера** — [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игры, которые должен попробовать каждый](/games/9-031-gametools/4), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro).
 
 **Разработка видеоигр** — [Игроведение — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro), [Игровая индустрия — о разделе](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Практикум — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro), [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [Веб-игры на HTML5 и Canvas](/encyclopedia/3-data-markup/3-09-html/22).
 

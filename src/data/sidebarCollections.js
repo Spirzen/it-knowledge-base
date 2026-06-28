@@ -280,7 +280,7 @@ export const SIDEBAR_COLLECTIONS = [
       'encyclopedia/1-basics/1-18-kompyuternye-igry/7',
       'encyclopedia/1-basics/1-18-kompyuternye-igry/8',
       'encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro',
-      'tools/games/4',
+      'games/9-031-gametools/4',
       'encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro',
     ],
   },

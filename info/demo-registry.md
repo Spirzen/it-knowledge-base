@@ -21,7 +21,7 @@
 | **GettingStartedPaths** | `src/components/GettingStartedPaths.jsx` | 2 | [collections](/about/collections), [09-komponenty](/about/kak-ustroena-vselennaya-it/09-komponenty) |
 | **LabTrainersHub** | `src/components/LabTrainersHub.jsx` | 3 | [interactive](/about/interactive), [09-komponenty](/about/kak-ustroena-vselennaya-it/09-komponenty), [1](/lab/trainers/1) |
 | **RandomChecklistItem** | `src/components/RandomChecklistItem.jsx` | 122 | [09-komponenty](/about/kak-ustroena-vselennaya-it/09-komponenty), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99), [99](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/99), [99](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/99), [99](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/99), …ещё 117 |
-| **RandomGameGenerator** | `src/components/RandomGameGenerator.jsx` | 1 | [4](/tools/games/4) |
+| **RandomGameGenerator** | `src/components/RandomGameGenerator.jsx` | 1 | [4](/games/9-031-gametools/4) |
 | **RandomQuestionFromArticle** | `src/components/RandomQuestionFromArticle.jsx` | 52 | [09-komponenty](/about/kak-ustroena-vselennaya-it/09-komponenty), [1](/lab/questions/1), [11](/lab/questions/11), [111](/lab/questions/111), [112](/lab/questions/112), …ещё 47 |
 | **SpirzenOnlineToolLink** | `src/components/SpirzenOnlineToolLink.jsx` | 0 | — |
 | **TechArticleHero** | `src/components/TechArticleHero.jsx` | 0 | — |
@@ -269,8 +269,8 @@
 | **GameDevRoadmapPlay** | `it-play/spinoff/game-dev-roadmap-play` | 1 | [11](/encyclopedia/9-spinoff/9-04-razrabotka-igr/11) |
 | **GameDevStudioDemo** | `it-play/spinoff/game-dev-studio-demo` | 3 | [113](/encyclopedia/9-spinoff/9-04-razrabotka-igr/113), [2](/encyclopedia/9-spinoff/9-04-razrabotka-igr/2), [3](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) |
 | **GameDevTeamPlay** | `it-play/spinoff/game-dev-team-play` | 1 | [111](/encyclopedia/9-spinoff/9-04-razrabotka-igr/111) |
-| **GameEnginePickerPlay** | `it-play/tools-games/game-engine-picker-play` | 1 | [1](/tools/games/1) |
-| **GameEnginePlay** | `it-play/tools-games/game-engine-play` | 2 | [112](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112), [1](/tools/games/1) |
+| **GameEnginePickerPlay** | `it-play/tools-games/game-engine-picker-play` | 1 | [1](/games/9-031-gametools/1) |
+| **GameEnginePlay** | `it-play/tools-games/game-engine-play` | 2 | [112](/encyclopedia/9-spinoff/9-04-razrabotka-igr/112), [1](/games/9-031-gametools/1) |
 | **GameFranchisePlay** | `it-play/spinoff/game-franchise-play` | 27 | [101](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/101), [11](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/11), [112](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/112), [113](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/113), [114](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/114), …ещё 22 |
 | **GameGenreToyPlay** | `it-play/basics/game-genre-toy-play` | 3 | [5](/encyclopedia/1-basics/1-18-kompyuternye-igry/5), [117](/encyclopedia/9-spinoff/9-04-razrabotka-igr/117), [1172](/encyclopedia/9-spinoff/9-04-razrabotka-igr/1172) |
 | **GameGenreToysHub** | `it-play/basics/game-genre-toys-hub` | 3 | [2](/encyclopedia/1-basics/1-18-kompyuternye-igry/2), [1](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/1), [intro](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro) |
@@ -285,8 +285,8 @@
 | **GamePcPlatformPlay** | `it-play/spinoff/game-pc-platform-play` | 1 | [118](/encyclopedia/9-spinoff/9-04-razrabotka-igr/118) |
 | **GamePlayStationPlatformPlay** | `it-play/spinoff/game-play-station-platform-play` | 1 | [119](/encyclopedia/9-spinoff/9-04-razrabotka-igr/119) |
 | **GameQaPlay** | `it-play/spinoff/game-qa-play` | 1 | [124](/encyclopedia/9-spinoff/9-04-razrabotka-igr/124) |
-| **GamerToolsExplorerPlay** | `it-play/tools-games/gamer-tools-explorer-play` | 1 | [2](/tools/games/2) |
-| **GameStoreExplorerPlay** | `it-play/tools-games/game-store-explorer-play` | 1 | [3](/tools/games/3) |
+| **GamerToolsExplorerPlay** | `it-play/tools-games/gamer-tools-explorer-play` | 1 | [2](/games/9-031-gametools/2) |
+| **GameStoreExplorerPlay** | `it-play/tools-games/game-store-explorer-play` | 1 | [3](/games/9-031-gametools/3) |
 | **GameStudiesHub** | `it-play/spinoff/game-studies-hub` | 1 | [intro](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro) |
 | **GameTexturesPlay** | `it-play/spinoff/game-textures-play` | 1 | [116](/encyclopedia/9-spinoff/9-04-razrabotka-igr/116) |
 | **GameXboxPlatformPlay** | `it-play/spinoff/game-xbox-platform-play` | 1 | [121](/encyclopedia/9-spinoff/9-04-razrabotka-igr/121) |
@@ -703,7 +703,7 @@
 | **WirelessNetworkPlay** | `it-play/system-network/wireless-network-play` | 1 | [71](/encyclopedia/2-system-network/2-03-set-i-internet/71) |
 | **WordSimulator** | `it-play/tools-misc/word-simulator` | 8 | [51](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51), [2](/encyclopedia/1-basics/1-15-tekst/2), [211](/encyclopedia/1-basics/1-15-tekst/211), [intro](/encyclopedia/1-basics/1-15-tekst/intro), [1005](/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1005), …ещё 3 |
 | **XamlLayoutPlay** | `it-play/data-markup/xaml-layout-play` | 2 | [6](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/6), [119](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119) |
-| **XboxStorageCompatPlay** | `it-play/tools-games/xbox-storage-compat-play` | 1 | [1111](/tools/games/1111) |
+| **XboxStorageCompatPlay** | `it-play/tools-games/xbox-storage-compat-play` | 1 | [1111](/games/9-031-gametools/1111) |
 | **XPathPlayDemo** | `it-play/data-markup/x-path-play-demo` | 2 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2), [213](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/213) |
 | **XsdValidationDemo** | `it-play/data-markup/xsd-validation-demo` | 1 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2) |
 | **XsltTransformDemo** | `it-play/data-markup/xslt-transform-demo` | 2 | [2](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2), [214](/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/214) |

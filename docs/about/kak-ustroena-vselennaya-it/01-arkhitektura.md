@@ -20,7 +20,7 @@ slug: /about/kak-ustroena-vselennaya-it/arkhitektura
 ```mermaid
 flowchart TB
   subgraph repo["it-knowledge-base (GitHub)"]
-    docs["docs/ ~3000 MDX/MD"]
+    docs["docs/ ~3700 MD/MDX"]
     src["src/ React, тема, данные"]
     scripts["scripts/ генераторы"]
     static["static/ картинки, поисковый индекс"]
@@ -61,7 +61,7 @@ flowchart TB
 |------|--------|-------------------|
 | **0. Экосистема** | Кто с кем на продакшене? | spirzen.ru, **search**, terms, lab, kids, games, code, play, html, writer, schema, sql, tools, color, random, assets, status; it-management; APK |
 | **0b. Интеграция** | Как статья встраивает внешний код? | External*Embed, postMessage, CSP, trusted origins |
-| **1. Источники KB** | Из чего собирается spirzen.ru? | `docs/` (~3400), `src/`, `scripts/`, `static/`, конфиги |
+| **1. Источники KB** | Из чего собирается spirzen.ru? | `docs/` (**~3700** в git; на spirzen — энциклопедия, about, context, philosophy, section, toc; **glossary/lab/tools** и spinoff **9-03/9-04/9-11** — редиректы на порталы), `src/`, `scripts/`, `static/` |
 | **2. Сборка KB** | Что до `docusaurus build`? | wiki-links, search-index, redirects, collection-titles, webpack |
 | **3. it-code-examples** | Откуда iframe с кодом? | Astro, Shiki, `/e/embed/<slug>/` |
 | **4. it-play** | Откуда iframe с демо? | Astro + React, `/p/embed/<slug>/` |
@@ -94,17 +94,17 @@ Satellite **assets** и **html** на swimlane 0 и в таблице [О про
 | Сервис | Назначение | Репозиторий |
 |--------|------------|-------------|
 | **terms.spirzen.ru** | ~4250 терминов | `it-terms` |
-| **lab.spirzen.ru** | Практика, экзамены, тренажёры | `it-lab` |
-| **tools.spirzen.ru** | Справочник утилит | `it-tools` |
-| **kids.spirzen.ru** | IT для детей | `it-kids` |
-| **games.spirzen.ru** | IT-игры | `it-games` |
+| **lab.spirzen.ru** | Практика, экзамены, тренажёры (~180) | `it-lab` |
+| **tools.spirzen.ru** | Справочник утилит (~60) | `it-tools` |
+| **kids.spirzen.ru** | IT для детей (~80) | `it-kids` |
+| **games.spirzen.ru** | Игровая индустрия и разработка (~130) | `it-games` |
 
 ### Embed (iframe + postMessage)
 
 | Сервис | Назначение | Технология |
 |--------|------------|------------|
-| **code.spirzen.ru** | [Листинги](#листинг), `/e/embed/<slug>/` | Astro + Shiki |
-| **play.spirzen.ru** | [Визуализаторы](#визуализатор), `/p/embed/<slug>/` | Astro + React |
+| **code.spirzen.ru** | [Листинги](#листинг) (~2500), `/e/embed/<slug>/` | Astro + Shiki |
+| **play.spirzen.ru** | [Визуализаторы](#визуализатор) (~500 демо), `/p/embed/<slug>/` | Astro + React |
 
 ### Standalone-приложения (ссылки, без iframe)
 
@@ -227,7 +227,7 @@ Satellite **assets** и **html** на swimlane 0 и в таблице [О про
 
 ### 1. Контент (`docs/`)
 
-- Файлы `.md` и `.mdx` — статьи, разделы, подборки (~3400 материалов: encyclopedia, about, lab, tools, glossary, context, philosophy, section, toc).
+- Файлы `.md` и `.mdx` — статьи, разделы, подборки (**~3700** в репозитории: encyclopedia, about, context, philosophy, section, toc; копии glossary/lab/tools и часть spinoff остаются для редиректов, канонический контент — на порталах).
 - [Frontmatter](#frontmatter) с полями `title`, `description`, `slug`, `tags`, `related` и др.
 - MDX позволяет `import` React-компонентов прямо в статью.
 - `routeBasePath: '/'` ставит документацию в корень сайта (`/encyclopedia/...`).

@@ -15,7 +15,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Для новичков</div>
 
   <div class="callout-body">
-  В проекте есть интерактивный [Навигатор новичка и профилей](/lab/Планы%20развития/7): он помогает пройти путь от базовых тем к осознанному выбору направления.
+  В проекте есть интерактивный [Навигатор новичка и профилей](https://lab.spirzen.ru/lab/Планы%20развития/7): он помогает пройти путь от базовых тем к осознанному выбору направления.
 </div>
   </div>
 
@@ -26,7 +26,7 @@ import DocCardList from '@theme/DocCardList';
 
 "Вселенная IT" — это масштабный проект по систематизации, унификации и долгосрочному хранению знаний в области информационных технологий. 
 
-Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду здесь **более трёх тысяч** материалов в `docs/` (из них **~2900 статей** в энциклопедии), плюс **~2300 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/), **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/), **~670 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/) и **онлайн-редактор** [html.spirzen.ru](https://html.spirzen.ru/) (WebEditor).
+Материалы для сайта я пишу ещё с 2018 года. Сам сайт запущен в 2025 году. Именно благодаря многолетнему труду здесь **более 3700** материалов в `docs/` (из них **~3000 статей** энциклопедии на spirzen.ru; глоссарий, лаборатория, инструменты, игры и kids — на отдельных порталах), плюс **~2500 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/), **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/), **~700 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/) и **онлайн-редактор** [html.spirzen.ru](https://html.spirzen.ru/) (WebEditor).
 
 Здесь:
 - нет слежки;
@@ -90,15 +90,15 @@ import DocCardList from '@theme/DocCardList';
 Я стараюсь всегда приводить примеры кода. Можете копировать через кнопку справа в таких блоках. -->
 ```
 
-Пользуйтесь **навигацией** — в меню **семь разделов** (плюс пункт «Общее содержание»):
-- О проекте
-- Энциклопедия (девять блоков — см. ниже)
-- Инструменты
-- Глоссарий
-- Лаборатория
-- Контекст
-- Философия
-- Общее содержание (`toc`)
+Пользуйтесь **навигацией** — в боковом меню spirzen.ru:
+- **Общее содержание** (`toc`) — полное дерево и порталы
+- **О проекте**
+- **Энциклопедия** (девять блоков на spirzen.ru — см. ниже)
+- **Видеоигры**, **Инструменты**, **Глоссарий**, **Лаборатория** — внешние порталы (`games`, `tools`, `terms`, `lab`)
+- **Для детей** — [kids.spirzen.ru](https://kids.spirzen.ru/kids/intro)
+- **Контекст** и **Философия** — на spirzen.ru
+
+Сквозной поиск по экосистеме — [search.spirzen.ru](https://search.spirzen.ru); по статьям энциклопедии — **Ctrl+K** на spirzen.ru.
 
 Здесь есть всякое разное - списки игр, глоссарий терминов, подборка литературы и официальной документации, много интересных статей и теоретических основ.
 
@@ -158,9 +158,9 @@ import DocCardList from '@theme/DocCardList';
 
 | Сервис | URL | Репозиторий | Содержание |
 |--------|-----|-------------|------------|
-| Энциклопедия | [spirzen.ru](https://spirzen.ru/) | `it-knowledge-base` | ~2900 статей, навигация, **DocSearch по энциклопедии** (Ctrl+K) |
-| Поиск по экосистеме | [search.spirzen.ru](https://search.spirzen.ru) | `it-search` | Единый индекс: spirzen + code + play + terms + lab + tools (Astro, без Algolia) |
-| Медиа (CDN) | [assets.spirzen.ru](https://assets.spirzen.ru/) | `it-encyclopedia-media` | ~670 иллюстраций, PNG/WebP по URL в markdown |
+| Энциклопедия | [spirzen.ru](https://spirzen.ru/) | `it-knowledge-base` | **~3000 статей** на spirzen; DocSearch (Ctrl+K) — ~3400 записей в индексе |
+| Поиск по экосистеме | [search.spirzen.ru](https://search.spirzen.ru) | `it-search` | Единый индекс: spirzen + code + play + terms + lab + tools + games + kids |
+| Медиа (CDN) | [assets.spirzen.ru](https://assets.spirzen.ru/) | `it-encyclopedia-media` | **~700 иллюстраций**, PNG/WebP по URL в markdown |
 | Хаб экосистемы | [status.spirzen.ru](https://status.spirzen.ru) | `it-portals` | Карточки всех сервисов, snapshot доступности |
 
 **Обучение** (контент вынесен с spirzen.ru на отдельные домены; старые URL редиректят)
@@ -168,16 +168,16 @@ import DocCardList from '@theme/DocCardList';
 | Сервис | URL | Репозиторий | Содержание |
 |--------|-----|-------------|------------|
 | Глоссарий | [terms.spirzen.ru](https://terms.spirzen.ru) | `it-terms` | ~4250 IT-терминов, алфавит `/glossary/{буква}` |
-| Лаборатория | [lab.spirzen.ru](https://lab.spirzen.ru) | `it-lab` | Практика, тренажёры, экзамены, примеры (~175 материалов) |
-| Для детей | [kids.spirzen.ru](https://kids.spirzen.ru) | `it-kids` | Упрощённые материалы для детей |
-| Игры | [games.spirzen.ru](https://games.spirzen.ru) | `it-games` | IT-игры и головоломки (контент из spinoff) |
+| Лаборатория | [lab.spirzen.ru](https://lab.spirzen.ru) | `it-lab` | Практика, тренажёры, экзамены, примеры (**~180** материалов) |
+| Для детей | [kids.spirzen.ru](https://kids.spirzen.ru) | `it-kids` | Упрощённые материалы (**~80** статей) |
+| Игры | [games.spirzen.ru](https://games.spirzen.ru) | `it-games` | Игровая индустрия, разработка игр, gametools (**~130** материалов) |
 
 **Создание и практика**
 
 | Сервис | URL | Репозиторий | Содержание |
 |--------|-----|-------------|------------|
-| Примеры кода | [code.spirzen.ru](https://code.spirzen.ru/) | `it-code-examples` | ~2312 листингов; embed в статьях `/e/embed/<slug>/` |
-| Интерактив | [play.spirzen.ru](https://play.spirzen.ru/) | `it-play` | ~500 демо; embed `/p/embed/<slug>/` |
+| Примеры кода | [code.spirzen.ru](https://code.spirzen.ru/) | `it-code-examples` | **~2500** листингов; embed в статьях `/e/embed/<slug>/` |
+| Интерактив | [play.spirzen.ru](https://play.spirzen.ru/) | `it-play` | **~500** демо; embed `/p/embed/<slug>/` |
 | WebEditor | [html.spirzen.ru](https://html.spirzen.ru/) | `WebEditor` | HTML/CSS/JS с живым предпросмотром |
 | Writer | [writer.spirzen.ru](https://writer.spirzen.ru) | `it-writer` | Редактор статей: frontmatter, callout, embed, линтер, экспорт `.md` |
 | Schema | [schema.spirzen.ru](https://schema.spirzen.ru) | *(отдельный repo)* | Диаграммы и блок-схемы (Schema Maker) |
@@ -187,7 +187,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Сервис | URL | Репозиторий | Содержание |
 |--------|-----|-------------|------------|
-| Tools | [tools.spirzen.ru](https://tools.spirzen.ru) | `it-tools` | Справочник утилит для разработчиков (контент с spirzen) |
+| Tools | [tools.spirzen.ru](https://tools.spirzen.ru) | `it-tools` | Справочник утилит (**~60** статей) |
 | Color | [color.spirzen.ru](https://color.spirzen.ru) | `it-color` | Студия цвета: HEX/RGB/HSL, контраст WCAG, палитры W3C |
 | Random | [random.spirzen.ru](https://random.spirzen.ru) | *(отдельный repo)* | Генераторы случайных данных (UUID, пароли, тестовые строки) |
 
@@ -228,7 +228,7 @@ import DocCardList from '@theme/DocCardList';
 | :--- | :--- |
 | **0. Экосистема (продакшен)** | Автор и читатель; **15+ поддоменов** (spirzen, search, terms, lab, kids, games, code, play, html, writer, schema, sql, tools, color, random, assets); it-management; APK |
 | **0b. Интеграция** | ExternalCodeEmbed / ExternalPlayEmbed, EmbedClickGate, useEmbedViewport, postMessage (высота, тема, fullscreen), CSP `frame-ancestors`, whitelist origin |
-| **1. it-knowledge-base — источники** | `docs/` (~3400: encyclopedia, about, context, philosophy, section, toc; **lab/tools/glossary/kids/games** — редиректы на порталы), `src/`, embed, DocSearch, `*ExternalRedirects.json` |
+| **1. it-knowledge-base — источники** | `docs/` (**~3700** в git; на spirzen — энциклопедия без портального контента), `src/`, embed, DocSearch, `*ExternalRedirects.json` |
 | **2. Сборка spirzen.ru** | `docs:wiki-links` → `docs:search-index` → `docs:redirects` → `docs:collection-titles` → Docusaurus 3.10 (preset, plugins, remark, webpack chunks) → `build/` |
 | **3. it-code-examples** | Astro 5 + Shiki, каталог листингов, маршруты `/e/embed/<slug>/` → `dist/` |
 | **4. it-play** | Astro + React 19, ~500 демо, маршруты `/p/embed/<slug>/` → `dist/` |
@@ -490,12 +490,12 @@ DevOps-практики, контейнеризация (Docker), оркестр
 
 ## Статистика проекта
 
-- **7 разделов** в меню (+ «Общее содержание»)
+- **10 корневых пунктов** в боковом меню (+ внешние порталы)
 - **15+ доменов** экосистемы `*.spirzen.ru` (+ [status.spirzen.ru](https://status.spirzen.ru))
-- **~2900 статей** в энциклопедии, **~3400 материалов** в `docs/` spirzen (часть редиректит на порталы)
-- **~2312 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/)
+- **~3000 статей** энциклопедии на spirzen, **~3700 материалов** в `docs/` репозитория (часть — редиректы на порталы)
+- **~2500 примеров кода** на [code.spirzen.ru](https://code.spirzen.ru/)
 - **~500 интерактивных демо** на [play.spirzen.ru](https://play.spirzen.ru/)
-- **~670 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/)
+- **~700 иллюстраций** на [assets.spirzen.ru](https://assets.spirzen.ru/)
 - **WebEditor** на [html.spirzen.ru](https://html.spirzen.ru/) — практика HTML/CSS/JS в браузере
 - **15+ языков программирования** в каталоге примеров
 - **Поиск** по статьям (Ctrl+K), без Algolia

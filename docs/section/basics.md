@@ -24,7 +24,7 @@ id: basics
 | Кто вы | С чего начать | Затем |
 |--------|---------------|--------|
 | **Никогда не пользовались ПК** | [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) | [Цифровая безопасность](/encyclopedia/1-basics/1-035-bazovaya-informatika/112), [1.12 Советы новичку](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro) |
-| **Школа / ЕГЭ / информатика** | [1.035. Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) | Главы 1–8 курса, [лаборатория](/lab/tasks/intro) |
+| **Школа / ЕГЭ / информатика** | [1.035. Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) | Главы 1–8 курса, [лаборатория](https://lab.spirzen.ru/lab/tasks/intro) |
 | **Хочу в IT** | [1.03. Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) | [1.26 Карьера](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [1.02 Обзор Вселенной IT](/encyclopedia/1-basics/1-02-vvedenie/1) |
 | **Уже уверенный пользователь** | [1.14 Советы продвинутому](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/intro) | [2. Система и сеть](/section/system-network), [4. Код](/section/code-dev) |
 

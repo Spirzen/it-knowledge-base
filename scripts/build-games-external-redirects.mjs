@@ -1,5 +1,6 @@
 /**
  * Redirect spirzen.ru/encyclopedia/9-spinoff/{9-03,9-04}/* → games.spirzen.ru
+ * + legacy spirzen.ru/tools/games/* → games/9-031-gametools/*
  * Запуск: npm run docs:games-redirects
  */
 import fs from 'node:fs';
@@ -7,17 +8,22 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import matter from 'gray-matter';
 import {resolveDocHref} from './lib/docUrl.mjs';
-import {gamesHrefFromSpinoff} from './lib/gamesUrl.mjs';
+import {gamesHref, gamesHrefFromGametools, gamesHrefFromSpinoff} from './lib/gamesUrl.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const spinoffDir = path.join(root, 'docs', 'encyclopedia', '9-spinoff');
+const gametoolsDir = path.join(root, '..', 'it-games', 'content', 'games', '9-031-gametools');
 const outFile = path.join(root, 'src', 'data', 'gamesExternalRedirects.json');
 
 const GAME_ROOTS = ['9-03-igrovaya-industriya', '9-04-razrabotka-igr'];
+const LEGACY_TOOLS_GAMES_IDS = ['intro', '1', '2', '3', '4', '1111'];
 const SKIP = new Set(['_category_.json']);
 
 function walkMarkdownFiles(dir, baseDir = dir, files = []) {
+  if (!fs.existsSync(dir)) {
+    return files;
+  }
   for (const entry of fs.readdirSync(dir, {withFileTypes: true})) {
     if (SKIP.has(entry.name)) {
       continue;
@@ -69,6 +75,24 @@ function main() {
         add(legacy, external);
       }
     }
+  }
+
+  add('/tools/games', gamesHrefFromGametools('intro'));
+  add('/tools/games/intro', gamesHrefFromGametools('intro'));
+  for (const id of LEGACY_TOOLS_GAMES_IDS) {
+    if (id === 'intro') {
+      continue;
+    }
+    add(`/tools/games/${id}`, gamesHrefFromGametools(id));
+  }
+
+  for (const rel of walkMarkdownFiles(gametoolsDir)) {
+    const raw = fs.readFileSync(path.join(gametoolsDir, rel), 'utf8');
+    const {data} = matter(raw);
+    const pageId = `9-031-gametools/${rel.replace(/\.mdx?$/i, '')}`;
+    const slug = data.slug ? String(data.slug).replace(/\/+$/, '') : `/games/${pageId}`;
+    const external = slug.startsWith('http') ? slug : gamesHref(slug.startsWith('/') ? slug : `/games/${pageId}`);
+    add(slug, external);
   }
 
   redirects.sort((a, b) => a.from.localeCompare(b.from, 'ru'));

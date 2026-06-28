@@ -8,6 +8,7 @@ import {fileURLToPath} from 'node:url';
 import matter from 'gray-matter';
 import {resolveDocHref} from './lib/docUrl.mjs';
 import {toolsHref} from './lib/toolsUrl.mjs';
+import {gamesHrefFromGametools} from './lib/gamesUrl.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
@@ -71,6 +72,13 @@ function main() {
     if (legacy !== canonical) {
       add(legacy, external);
     }
+  }
+
+  const legacyToolsGames = ['', 'intro', '1', '2', '3', '4', '1111'];
+  for (const id of legacyToolsGames) {
+    const from = id ? `/tools/games/${id}` : '/tools/games';
+    const to = gamesHrefFromGametools(id || 'intro');
+    add(from, to);
   }
 
   redirects.sort((a, b) => a.from.localeCompare(b.from, 'ru'));

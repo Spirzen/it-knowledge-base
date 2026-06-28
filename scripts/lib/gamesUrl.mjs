@@ -12,3 +12,9 @@ export function gamesHrefFromSpinoff(relPath) {
   const clean = relPath.replace(/^encyclopedia\/9-spinoff\//, '').replace(/\.mdx?$/i, '');
   return gamesHref(`/games/${clean}`);
 }
+
+/** @param {string} pageId — `9-031-gametools/4` или `intro` */
+export function gamesHrefFromGametools(pageId) {
+  const clean = pageId.replace(/^games\/9-031-gametools\/?/, '').replace(/\.mdx?$/i, '') || 'intro';
+  return gamesHref(`/games/9-031-gametools/${clean}`);
+}
