@@ -39,6 +39,8 @@ import DocCardList from '@theme/DocCardList';
 
 Если в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) вы уже прошли алгоритмы и блок-схемы, этот том переводит те же идеи на язык разработчика — с большей глубиной и практикой.
 
+> **Школьный обзор (этап 28).** Направления программирования, цикл написания программы, понятия языка (алфавит, синтаксис, транслятор), структуры данных, графы, ошибки — [раздел 22 «Базовой информатики»](/encyclopedia/1-basics/1-035-bazovaya-informatika/1#программирование).
+
 Сборка, Run в IDE, dev-сервер в терминале, Docker — единая шпаргалка для новичка: [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
 
 Где исполняется собранный код (bare metal, ВМ, контейнер, облачный worker) — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya); среда JVM/CLR — в [4.03 Выполнение кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
@@ -122,7 +124,7 @@ flowchart LR
 | 6b | [Тестирование для разработчика](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1117) | Unit-тесты, Red–Green–Refactor, связь с [7.05](/encyclopedia/7-project/7-05-testirovanie/intro) |
 | 6c | [DevTools в браузере](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116) | Elements, Console, Network, Sources |
 
-Дальше — специализации — [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [веб-разработка](/encyclopedia/4-code-dev/4-17-veb-razrabotka/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) ([Flutter — виджеты в Lab](/lab/Примеры/1154), [Dart — Flutter](/encyclopedia/5-languages/5-22-dart/311)) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) ([WinForms/WPF в Lab](/lab/Примеры/1138), [Tkinter в Lab](/lab/Примеры/1124), [Java Swing в Lab](/lab/Примеры/1143)). Для веб-UI на React — [галерея компонентов](/lab/Примеры/1146) после [272](/encyclopedia/5-languages/5-01-javascript/272).
+Дальше — специализации — [ООП](/encyclopedia/4-code-dev/4-08-oop/intro), [асинхронность](/encyclopedia/4-code-dev/4-05-asinhronnost/intro), [разработка графики](/encyclopedia/4-code-dev/4-18-graphic-dev/intro) (модель, render, GPU-конвейер — до Canvas и Unity), [веб-разработка](/encyclopedia/4-code-dev/4-17-veb-razrabotka/intro), [мобильные](/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/intro) ([Flutter — виджеты в Lab](/lab/Примеры/1154), [Dart — Flutter](/encyclopedia/5-languages/5-22-dart/311)) и [десктоп](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/intro) ([WinForms/WPF в Lab](/lab/Примеры/1138), [Tkinter в Lab](/lab/Примеры/1124), [Java Swing в Lab](/lab/Примеры/1143)). Для веб-UI на React — [галерея компонентов](/lab/Примеры/1146) после [272](/encyclopedia/5-languages/5-01-javascript/272).
 
 <div class="callout callout--info">
   <div class="callout-title">Связь с другими томами</div>
@@ -162,6 +164,7 @@ mindmap
       4.11 Десктопные приложения
       4.12 Мобильные приложения
       4.17 Веб-разработка
+      4.18 Разработка графики
     Инструменты
       4.13 Основы работы с Git
 ```

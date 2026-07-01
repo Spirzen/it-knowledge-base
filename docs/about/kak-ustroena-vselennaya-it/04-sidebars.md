@@ -9,6 +9,8 @@ slug: /about/kak-ustroena-vselennaya-it/sidebars
 
 # sidebars.js
 
+> Раздел "Как устроена Вселенная IT" не нужен для обучения. Существует он только для тех, кому интересно.
+
 <span id="sidebars-intro"></span>
 
 ## Что такое sidebars.js

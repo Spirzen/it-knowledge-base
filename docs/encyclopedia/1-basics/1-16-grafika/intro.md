@@ -11,6 +11,8 @@ related:
     doc: encyclopedia/1-basics/1-17-audio-i-video/intro
   - title: "SVG — рисунки кодом"
     doc: lab/examples/1119
+  - title: Разработка графики — о разделе
+    doc: encyclopedia/4-code-dev/4-18-graphic-dev/intro
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -21,6 +23,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Рекомендуемый порядок**
 
+0. [Базовая информатика — мультимедиа и графика](/encyclopedia/1-basics/1-035-bazovaya-informatika/1#технологии-создания-и-обработки-мультимедийной-и-графической-информации) — школьная теория: мультимедиа, форматы, редактор, OCR-скан.
 1. [Графические данные](./1.md) — 2D/3D, стек GPU, кадр и FPS (конвейер — по желанию, углубление).
 2. [Вектор и растр](./2.md) — выбор представления, веб (`srcset`, SVG), демо масштабирования. Практика SVG в браузере — [SVG — рисунки кодом](/lab/Примеры/1119).
 3. [Растровые](./3.md) и [Векторные](./4.md) форматы — справочник расширений и [как JPEG и PNG сжимают пиксели](./3.md#от-пикселей-к-файлу).
@@ -32,6 +35,8 @@ import DocCardList from '@theme/DocCardList';
 9. [3ds Max](./8.md) — профессиональное 3D (краткий обзор; Blender — в разделе [9.08](/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/131)).
 
 В конце — [итоги](./98.md) и [чек-лист](./99.md) для самопроверки.
+
+**Готовы писать и читать графический код?** Переходите в [4.18 Разработка графики](/encyclopedia/4-code-dev/4-18-graphic-dev/intro) — модель, update, render, игровой цикл и стек от Canvas до GPU.
 
 Сводный путеводитель по инструментам (включая Blender, Flutter): [Инструменты и среды](/encyclopedia/1-basics/1-035-bazovaya-informatika/9).
 

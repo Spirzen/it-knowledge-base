@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - inprogress
 
@@ -59,7 +59,7 @@ import DocCardList from '@theme/DocCardList';
 - **ОЗУ (RAM)** — память "здесь и сейчас". Пока программа работает, её данные лежат в ОЗУ. После выключения ПК ОЗУ очищается.
 - **Накопитель (HDD, SSD)** — хранит файлы годами, даже когда ПК выключен.
 
-См. [Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) и [Память](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/12).
+См. [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) и [Память](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/12).
 
 ### Алгоритм и программа
 
@@ -87,7 +87,7 @@ import DocCardList from '@theme/DocCardList';
 - **Сжатие** — уменьшение размера одного файла (ZIP внутри, JPEG для фото).
 - **Архив** — один файл-контейнер для **многих** файлов и папок (`.zip`, `.7z`).
 
-См. [Кодирование, сжатие и архивация](/encyclopedia/1-basics/1-035-bazovaya-informatika/2).
+См. [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2).
 
 <div class="callout callout--tip">
   <div class="callout-title">Как пользоваться</div>
@@ -103,7 +103,7 @@ import DocCardList from '@theme/DocCardList';
   **Школьный маршрут**
 
   - главы **1 → 8** по порядку или по [расширенной карте](#расширенная-карта-курса)
-  - после главы 3 — [Организация и уровни](/encyclopedia/1-basics/1-035-bazovaya-informatika/10), затем [Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11)
+  - после [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) — [Организация и уровни](/encyclopedia/1-basics/1-035-bazovaya-informatika/10), затем [Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11)
   - глава 9 — справочник сред (Godot, Flutter, Python…) по мере проектов
   - после главы 6 — [Passkeys](/encyclopedia/1-basics/1-035-bazovaya-informatika/113)
 
@@ -123,9 +123,8 @@ import DocCardList from '@theme/DocCardList';
 |---|---------------|-------------|---------------------------|
 | 101 | Компьютерная грамотность с нуля | [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Советы для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro) |
 | 102 | Терминология новичка | [Терминология новичка](/encyclopedia/1-basics/1-035-bazovaya-informatika/102) | [Глоссарий](/glossary/intro), [Сленг](/encyclopedia/1-basics/1-06-sleng/intro) |
-| 1 | Ключевые понятия и маршрут | [Базовая информатика — ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1) | [Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) |
-| 2 | Кодирование, сжатие, архивы, обзор БД | [Кодирование, сжатие и архивация](/encyclopedia/1-basics/1-035-bazovaya-informatika/2) | [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2), [типы баз данных](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1#chetyre-osnovnyh-tipa-baz-dannyh) |
-| 3 | Железо, периферия, сети (компьютер, ЭВМ, устройства) | [Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/1) |
+| 1 | Ключевые понятия и маршрут | [Базовая информатика — ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1) | [Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1), [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2) |
+| 3 | Железо, периферия, сети | [Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3) | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [Аппаратное обеспечение](/encyclopedia/2-system-network/2-10-zhelezo/1) |
 | 10 | Организация, архитектура, уровни (фон Нейман, иерархия уровней) | [Организация, архитектура и уровни компьютера](/encyclopedia/1-basics/1-035-bazovaya-informatika/10) | [Многоуровневая организация](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13), [Архитектура фон Неймана](/encyclopedia/2-system-network/2-10-zhelezo/11) |
 | 4 | Алгоритмы, языки, программирование | [Алгоритмы, языки и программирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) | [Программа](/encyclopedia/1-basics/1-19-programma/intro), [Код и разработка](/encyclopedia/4-code-dev/code-dev), [Ассемблер](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Visual Basic](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
 | 5 | ОС, файловые системы, утилиты | [ОС, файловые системы и служебные программы](/encyclopedia/1-basics/1-035-bazovaya-informatika/5) | [ОС](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) |
@@ -172,25 +171,25 @@ import DocCardList from '@theme/DocCardList';
 
 ---
 
-### Глава 2 — Кодирование, сжатие и архивация
+### Углубление после главы 1 — данные, кодирование, архивы
 
 | Параметр | Содержание |
 |----------|------------|
 | **Результаты** | Объяснить байт, кодировку UTF-8; отличить сжатие с потерями и без; упаковать/распаковать архив; назвать типы БД в общих чертах |
 | **Время** | 1,5–2,5 ч + 30 мин практика (архиватор, смена кодировки в редакторе) |
 | **Предварительно** | Глава 1; базовые файлы из 101/5 |
-| **Углубление** | [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2), [типы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1) |
+| **Углубление** | [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Текстовые данные](/encyclopedia/1-basics/1-15-tekst/1), [Архивы](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2), [типы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1#chetyre-osnovnyh-tipa-baz-dannyh) |
 | **Самопроверка** | Чек-лист: 1, 2, 16, 24; сценарий "кракозябры" в [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99) |
 
 ---
 
-### Глава 3 — Компьютер, периферия и сетевое оборудование
+### Железо — раздел «Как работает компьютер»
 
 | Параметр | Содержание |
 |----------|------------|
 | **Результаты** | Роли CPU, ОЗУ, накопителя; устройства ввода-вывода; отличие компьютера от смартфона как узла; базовые сетевые устройства (роутер, коммутатор — обзорно) |
 | **Время** | 1,5–2 ч + осмотр реального ПК или схемы в классе |
-| **Предварительно** | Главы 1–2 |
+| **Предварительно** | Глава 1; при необходимости — [Данные и информация](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro) |
 | **Углубление** | [Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11), [Железо](/encyclopedia/2-system-network/2-10-zhelezo/intro) |
 | **Самопроверка** | Чек-лист: 3, 4 |
 
@@ -305,7 +304,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Маршрут | Главы | Часы (чтение + лёгкая практика) |
 |---------|-------|----------------------------------|
-| Минимум для зачёта | 1, 2, 3, 5, 6, 7, 8 | 12–18 ч |
+| Минимум для самопроверки | 1, 2, 3, 5, 6, 7, 8 | 12–18 ч |
 | Школьный стандарт + код | + 4, 101/102 по необходимости | 20–30 ч |
 | С безопасностью и углублением | + 112, 113, 11 | 28–40 ч |
 | Полный с проектом | + 9, лабораторные [Lab](/lab/Примеры/1122) | 40+ ч |
@@ -341,7 +340,7 @@ flowchart TD
     end
 ```
 
-Главу **4** (алгоритмы и программирование) можно пройти раньше, если вы уже на уроках пишете код — она не зависит от интернета. После теории удобно разобрать **сложность алгоритмов на примерах** — [Big-O — шпаргалка](/lab/Примеры/1128), затем задачи на **Python** — [Алгоритмы на Python — ЕГЭ и олимпиадка](/lab/Примеры/1122), на **Java** — [консольные задачи](/lab/Примеры/1131); для лабораторной с окном — [Swing — окна и кнопки](/lab/Примеры/1143), на **Pascal** (школа, PascalABC, Lazarus) — [типовые программы](/lab/Примеры/1140), в **Кумир** (ОГЭ, Чертёжник, Робот) — [Lab / 1115](/lab/Примеры/1115) и [глава Кумир](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/11). Главы **7** и **8** удобны в любой момент после [Базовая информатика — ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1).
+Главу **4** (алгоритмы и программирование) можно пройти раньше, если вы уже на уроках пишете код — она не зависит от интернета. После теории удобно разобрать **сложность алгоритмов на примерах** — [Big-O — шпаргалка](/lab/Примеры/1128), затем задачи на **Python** — [Алгоритмы на Python](/lab/Примеры/1122), на **Java** — [консольные задачи](/lab/Примеры/1131); для лабораторной с окном — [Swing — окна и кнопки](/lab/Примеры/1143), на **Pascal** (PascalABC, Lazarus) — [типовые программы](/lab/Примеры/1140), в **Кумир** (Чертёжник, Робот) — [Lab / 1115](/lab/Примеры/1115) и [глава Кумир](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/11). Главы **7** и **8** удобны в любой момент после [Базовая информатика — ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1).
 
 ---
 
@@ -349,7 +348,7 @@ flowchart TD
 
 | Цель | Порядок | Итог |
 |------|---------|------|
-| **Школьный зачёт** | 1→2→3→5→6→4→7→8→[99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99) | Определения + практика в ОС и браузере |
+| **Самопроверка** | 1→2→3→5→6→4→7→8→[99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99) | Определения + практика в ОС и браузере |
 | **Цифровая грамотность** | 101→102→1→2→3→5→6→112→8 | Без углублённого кода |
 | **Вход в разработку** | 101→1→2→3→4→5→6→9→[Lab Python](/lab/Примеры/1122) | Код + Git + среды из главы 9 |
 
@@ -365,7 +364,7 @@ flowchart TD
 
 | Шаг | Ваш выбор (пример) |
 |-----|-------------------|
-| Сейчас | Глава 3 — железо |
+| Сейчас | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) — железо |
 | Дальше обязательно | Глава 5 — ОС |
 | Углубление | [Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11) |
 
@@ -386,7 +385,7 @@ flowchart TD
 
 <div class="faq-item">
   <p class="faq-q"><span class="faq-label">Вопрос.</span> Нужно ли читать всё подряд?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> Нет. <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/1">Глава 1</a> даёт карту; <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/9">глава 9</a> — справочник по запросу. Обязательный скелет для зачёта — 1, 2, 3, 5, 6, 4, 7, 8.</p>
+  <p class="faq-a"><span class="faq-label">Ответ.</span> Нет. <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/1">Глава 1</a> даёт карту; <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/9">глава 9</a> — справочник по запросу. Рекомендуемый скелет курса — 1, 2, 3, 5, 6, 4, 7, 8.</p>
 </div>
 
 <div class="faq-item">
@@ -396,7 +395,7 @@ flowchart TD
 
 <div class="faq-item">
   <p class="faq-q"><span class="faq-label">Вопрос.</span> Чем этот раздел отличается от "Как работает компьютер"?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> <strong>Базовая информатика</strong> — учебный маршрут под школьную программу (данные, право, зачёт). <a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro">Как работает компьютер</a> — глубже про устройство ПК. Они дополняют друг друга; ссылки ведут туда, где тема раскрыта подробнее.</p>
+  <p class="faq-a"><span class="faq-label">Ответ.</span> <strong>Базовая информатика</strong> — учебный маршрут по фундаменту (данные, железо, право, безопасность). <a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro">Как работает компьютер</a> — глубже про устройство ПК. Они дополняют друг друга; ссылки ведут туда, где тема раскрыта подробнее.</p>
 </div>
 
 <div class="faq-item">
@@ -416,13 +415,11 @@ flowchart TD
 
 <div class="faq-item">
   <p class="faq-q"><span class="faq-label">Вопрос.</span> 112 и 113 обязательны?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> Для современной грамотности — да, после главы 6. Для формального школьного зачёта по старой программе иногда достаточно фрагментов в главах 5–7; мы всё равно рекомендуем 112.</p>
+  <p class="faq-a"><span class="faq-label">Ответ.</span> Для современной грамотности — да, после главы 6. Для быстрого обзора иногда достаточно фрагментов в главах 5–7; мы всё равно рекомендуем 112.</p>
 </div>
 
 <div class="faq-item">
-  <p class="faq-q"><span class="faq-label">Вопрос.</span> Как готовиться к ОГЭ/ЕГЭ по информатике?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> Этот раздел — <strong>база</strong>. Дальше — <a href="/lab/Примеры/1122">задачи ЕГЭ Python</a>, <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/11">Кумир/ОГЭ</a>, темы по кодированию и логике из глав 2 и 4. Итоги — <a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/98">98</a>.</p>
-</div>
+  </div>
 
 <div class="faq-item">
   <p class="faq-q"><span class="faq-label">Вопрос.</span> Раздел "в разработке" — можно ли доверять тексту?</p>
@@ -448,7 +445,7 @@ flowchart TD
 | Задача | Ресурс |
 |--------|--------|
 | План на четверть | [Сводка по времени](#сводка-по-времени) + [расширенная карта](#расширенная-карта-курса) |
-| Контрольная | [Чек-лист 99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99) — экзаменационные блоки |
+| Контрольная | [Чек-лист 99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99) — вопросы для самопроверки |
 | Домашнее задание | Одна глава + 3 вопроса из 99 |
 | Дифференциация | Сильные — Lab и глава 11; слабые — 101, 102, интерактив roadmap |
 
@@ -549,8 +546,6 @@ gantt
 |------------------|----------------------|--------|
 | Совсем с нуля | 101 → 102 → 1 → 2 → 3 → 5 | Без прыжков в ОС |
 | Уже пишет Python в 8 классе | 1 → 4 → 2 → 3 → 5 → 6 | Код мотивирует |
-| Готовится к ОГЭ | 2, 4, 6 + [Lab Кумир](/lab/Примеры/1115) | Типовые задания |
-| Готовится к ЕГЭ (база) | 1, 2, 4, 11 + [1122](/lab/Примеры/1122) | Кодирование + алгоритмы |
 | Только цифровая грамотность | 101, 1, 5, 6, 112, 8 | Без углублённого кода |
 | Взрослый самоучка | 102, 1, 3, 5, 6, [дорожная карта IT](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro) | Без 101 при опыте |
 
@@ -591,8 +586,6 @@ gantt
 | Источник | Главы | Тип вопросов |
 |----------|-------|--------------|
 | Школьная контрольная | 1–8 по программе | Определения, ситуации |
-| ОГЭ | 2, 4, 6 | Кодирование, логика, Кумир |
-| ЕГЭ (информатика) | 2, 4, 11 | Биты, алгоритмы, Python |
 | Чек-лист 99 | все | 25 сквозных вопросов |
 
 | Блок 99 | Тема | Глава |
@@ -659,7 +652,7 @@ flowchart TD
 
 | Раздел | Отличие от "Базовой информатики" |
 |--------|----------------------------------|
-| [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) | Глубже железо, меньше "зачёт" |
+| [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) | Глубже железо и архитектура |
 | [Дорожная карта IT](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/intro) | Профессия на годы, не школа |
 | [Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro) | Техническая безопасность |
 | [Интеллектуальные права](/encyclopedia/7-project/7-07-intellektualnye-prava/intro) | Юридическое углубление для IT |
@@ -672,7 +665,7 @@ flowchart TD
 
 <div class="faq-item">
   <p class="faq-q"><span class="faq-label">Вопрос.</span> Можно ли проходить главы в обратном порядке (8 → 1)?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> Теоретически да, но [глава 1](./1) даёт словарь для остальных. [8](./8) без [3](./3) и [5](./5) — только эргономика без контекста ПК.</p>
+  <p class="faq-a"><span class="faq-label">Ответ.</span> Теоретически да, но [глава 1](./1) даёт словарь для остальных. [8](./8) без [Как работает компьютер](../1-08-kak-rabotaet-kompyuter/intro) и [5](./5) — только эргономика без контекста ПК.</p>
 </div>
 
 <div class="faq-item">
@@ -681,13 +674,13 @@ flowchart TD
 </div>
 
 <div class="faq-item">
-  <p class="faq-q"><span class="faq-label">Вопрос.</span> Нужна ли [глава 11](./11) для зачёта?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> Не всегда в школьной программе. Нужна для ЕГЭ (системы счисления, память) и углубления после [3](./3).</p>
+  <p class="faq-q"><span class="faq-label">Вопрос.</span> Нужна ли [глава 11](./11) для базового курса?</p>
+  <p class="faq-a"><span class="faq-label">Ответ.</span> Опциональна для быстрого прохода. Нужна для углубления (системы счисления, память) и углубления после [Как работает компьютер](../1-08-kak-rabotaet-kompyuter/intro).</p>
 </div>
 
 <div class="faq-item">
   <p class="faq-q"><span class="faq-label">Вопрос.</span> Как связаны Lab и главы?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> [4](./4) — теория; [1122](/lab/Примеры/1122) — практика Python; [1115](/lab/Примеры/1115) — Кумир/ОГЭ.</p>
+  <p class="faq-a"><span class="faq-label">Ответ.</span> [4](./4) — теория; [1122](/lab/Примеры/1122) — практика Python; [1115](/lab/Примеры/1115) — Кумир.</p>
 </div>
 
 </div>
@@ -771,13 +764,13 @@ flowchart TD
 
 | Вопрос | Базовая информатика | Где глубже |
 |--------|---------------------|------------|
-| Как устроен CPU? | Глава 3 — обзор | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) |
+| Как устроен CPU? | [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) — обзор | [Компоненты ПК](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/2) |
 | Что такое Git? | Глава 4 — зачем | [Основы Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) |
 | SQL и БД | Глава 2 — обзор типов | [Основы БД](/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/intro) |
 | Пароли и атаки | 112, 113 | [Основы ИБ](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro) |
 | Карьера в IT | Ссылка в related | [Карьера и мифы](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro) |
 
-Не дублируйте чтение: сначала глава курса, потом ссылка "углубление" — только если тема нужна для проекта или экзамена.
+Не дублируйте чтение: сначала глава курса, потом ссылка "углубление" — только если тема нужна для проекта или углубления.
 
 ---
 
@@ -792,7 +785,7 @@ flowchart TD
 
 <div class="faq-item">
   <p class="faq-q"><span class="faq-label">Вопрос.</span> Какой язык программирования выбрать из главы 4?</p>
-  <p class="faq-a"><span class="faq-label">Ответ.</span> Тот, что в вашей школе: Python, Pascal, Кумир. Для самостоятельного углубления — <a href="/lab/Примеры/1122">Python</a>; для ОГЭ — <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/11">Кумир</a>.</p>
+  <p class="faq-a"><span class="faq-label">Ответ.</span> Тот, что удобен вам: Python, Pascal, Кумир. Для самостоятельного углубления — <a href="/lab/Примеры/1122">Python</a>; для исполнителей — <a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/11">Кумир</a>.</p>
 </div>
 
 <div class="faq-item">
@@ -859,8 +852,6 @@ flowchart TD
 | Цель | Главы | Что сдать / показать |
 |------|-------|----------------------|
 | Зачёт в школе | 1–8, 99 | Ответы на чек-лист |
-| ОГЭ информатика | 2, 4, 6 + Lab Кумир | Решённые задачи |
-| ЕГЭ база | 2, 4 + Lab Python | Консольные программы |
 | Цифровая грамотность | 101, 102, 5, 6, 112 | Практика в ОС |
 | Первый репозиторий | 4, 5, 9 | GitHub с README |
 

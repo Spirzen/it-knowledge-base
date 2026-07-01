@@ -9,6 +9,8 @@ slug: /about/kak-ustroena-vselennaya-it/docusaurus-config
 
 # docusaurus.config.js
 
+> Раздел "Как устроена Вселенная IT" не нужен для обучения. Существует он только для тех, кому интересно.
+
 <span id="docusaurus-intro"></span>
 
 ## Что такое Docusaurus

@@ -10,6 +10,8 @@ slug: /about/kak-ustroena-vselennaya-it/typescript
 
 # TypeScript
 
+> Раздел "Как устроена Вселенная IT" не нужен для обучения. Существует он только для тех, кому интересно.
+
 <span id="typescript-intro"></span>
 
 ## Что такое TypeScript и JavaScript

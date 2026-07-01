@@ -9,6 +9,8 @@ slug: /about/kak-ustroena-vselennaya-it/package-i-stek
 
 # package.json и стек
 
+> Раздел "Как устроена Вселенная IT" не нужен для обучения. Существует он только для тех, кому интересно.
+
 <span id="packagejson-intro"></span>
 
 ## Что такое package.json

@@ -1,4 +1,4 @@
----
+﻿---
 title: Содержание
 description: Энциклопедия - это основной раздел Вселенной IT. Он регулярно обновляется, расширяется и изменяется, поэтому рекомендую использовать боковое меню (сайд-бар) для ориентира по разделу.
 sidebar_label: Содержание
@@ -683,8 +683,7 @@ import DocCardList from '@theme/DocCardList';
   <ul>
   Базовая информатика
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/1">1.035. Базовая информатика — ключевые понятия и маршрут</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/2">1.035. Кодирование, сжатие и архивация</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/3">1.035. Компьютер, периферия и сетевое оборудование</a></li>
+  <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro">1.035. Как работает компьютер</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/4">1.035. Алгоритмы, языки и программирование</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/5">1.035. ОС, файловые системы и служебные программы</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/6">1.035. Интернет и сетевые сервисы</a></li>

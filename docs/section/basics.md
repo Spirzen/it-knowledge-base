@@ -1,4 +1,4 @@
----
+﻿---
 title: 1. Основы - о разделе
 description: >-
   Вводный раздел энциклопедии — компьютер, данные и программы, цифровая грамотность,
@@ -108,8 +108,7 @@ mindmap
 - [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101)
 - [1.035. Терминология новичка](/encyclopedia/1-basics/1-035-bazovaya-informatika/102)
 - [1.035. Ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1)
-- [1.035. Кодирование, сжатие и архивация](/encyclopedia/1-basics/1-035-bazovaya-informatika/2)
-- [1.035. Компьютер, периферия и сетевое оборудование](/encyclopedia/1-basics/1-035-bazovaya-informatika/3)
+- [1.035. Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro)
 - [1.035. Организация, архитектура и уровни компьютера](/encyclopedia/1-basics/1-035-bazovaya-informatika/10)
 - [1.035. Алгоритмы, языки и программирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/4)
 - [1.035. ОС, файловые системы и служебные программы](/encyclopedia/1-basics/1-035-bazovaya-informatika/5)

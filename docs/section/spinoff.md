@@ -54,6 +54,7 @@ mindmap
 
 - [О разделе](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/intro)
 - [Признаки смены работы](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/1)
+- [Когда дело не в вас: платформы с высоким порогом](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/6)
 - [Границы и разговор с руководителем](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/4)
 - [Выгорание — восстановление](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/5)
 - [Итоги](/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/2)

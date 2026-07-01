@@ -79,5 +79,3 @@ ZFS (Zettabyte File System) — объединённая файловая сис
 ## ZNS (Zoned Namespace)
 
 ZNS (Zoned Namespace) — стандарт NVMe 2.0 для SSD на основе технологии Zoned Storage (зонированное хранилище), в первую очередь SMR-HDD и Z-NAND/Z-SSD.
-
----

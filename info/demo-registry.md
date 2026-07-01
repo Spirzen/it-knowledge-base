@@ -1,4 +1,4 @@
-# Реестр интерактивных демо
+﻿# Реестр интерактивных демо
 
 > Служебный файл (не публикуется на сайте).  
 > Сгенерировано **2026-06-19** — `npm run docs:demo-registry`. Не редактировать вручную.
@@ -105,7 +105,7 @@
 | **BannerCarouselPlay** | `it-play/data-markup/banner-carousel-play` | 2 | [113](/encyclopedia/3-data-markup/3-10-css/113), [34](/encyclopedia/5-languages/5-01-javascript/34) |
 | **BashEcosystemPlay** | `it-play/languages/bash-ecosystem-play` | 1 | [11](/encyclopedia/5-languages/5-25-bash/11) |
 | **BashShellPlay** | `it-play/about/bash-shell-play` | 17 | [interactive](/about/interactive), [11](/encyclopedia/2-system-network/2-05-terminal/11), [111](/encyclopedia/2-system-network/2-05-terminal/111), [1](/encyclopedia/5-languages/5-25-bash/1), [112](/encyclopedia/5-languages/5-25-bash/112), …ещё 12 |
-| **basics/html-colors-play** | `it-play/basics/html-colors-play` | 14 | [2](/encyclopedia/1-basics/1-035-bazovaya-informatika/2), [2](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/2), [6](/encyclopedia/1-basics/1-16-grafika/6), [2](/encyclopedia/1-basics/1-25-interfeys/2), [intro](/encyclopedia/3-data-markup/3-09-html/intro), …ещё 9 |
+| **basics/html-colors-play** | `it-play/basics/html-colors-play` | 14 | [2](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/2), [6](/encyclopedia/1-basics/1-16-grafika/6), [2](/encyclopedia/1-basics/1-25-interfeys/2), [intro](/encyclopedia/3-data-markup/3-09-html/intro), …ещё 9 |
 | **BeginnerWebStackHub** | `it-play/data-markup/beginner-web-stack-hub` | 8 | [intro](/encyclopedia/3-data-markup/3-09-html/intro), [intro](/encyclopedia/3-data-markup/3-10-css/intro), [4](/encyclopedia/4-code-dev/4-17-veb-razrabotka/4), [intro](/encyclopedia/5-languages/5-01-javascript/intro), [intro](/encyclopedia/5-languages/5-02-python/intro), …ещё 3 |
 | **BigDataFiveVsPlay** | `it-play/data-markup/big-data-five-vs-play` | 1 | [11](/encyclopedia/3-data-markup/3-11-analiz-dannyh/11) |
 | **BigOGrowthPlay** | `it-play/code-dev/big-o-growth-play` | 2 | [311](/encyclopedia/4-code-dev/4-01-algoritmy/311), [313](/encyclopedia/4-code-dev/4-01-algoritmy/313) |
@@ -156,7 +156,7 @@
 | **CommunityCoordinationPlay** | `it-play/spinoff/community-coordination-play` | 1 | [114](/encyclopedia/9-spinoff/9-10-internet-kultura/114) |
 | **CompilerSimulator** | `it-play/about/compiler-simulator` | 7 | [interactive](/about/interactive), [4](/encyclopedia/1-basics/1-035-bazovaya-informatika/4), [1](/encyclopedia/1-basics/1-19-programma/1), [1](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1), [116](/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/116), …ещё 2 |
 | **ComplexityDemo** | `it-play/data-markup/complexity-demo` | 4 | [33](/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/33), [2](/encyclopedia/4-code-dev/4-01-algoritmy/2), [3](/encyclopedia/4-code-dev/4-01-algoritmy/3), [311](/encyclopedia/4-code-dev/4-01-algoritmy/311) |
-| **ComputerArchitecturePlay** | `it-play/about/computer-architecture-play` | 6 | [interactive](/about/interactive), [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3), [7](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7), [1](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/1), [11](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/11), …ещё 1 |
+| **ComputerArchitecturePlay** | `it-play/about/computer-architecture-play` | 6 | [interactive](/about/interactive), [3](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [7](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7), [1](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/1), [11](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/11), …ещё 1 |
 | **ComputerBootSequence** | `it-play/basics/computer-boot-sequence` | 1 | [1](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1) |
 | **ConditionalFlowPlay** | `it-play/code-dev/conditional-flow-play` | 1 | [114](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/114) |
 | **ConfluenceWikiDemo** | `it-play/project/confluence-wiki-demo` | 3 | [119](/encyclopedia/7-project/7-04-analitika/119), [1](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/1), [11](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/11) |
@@ -198,7 +198,7 @@
 | **DataStructureQueue** | `it-play/system-network/data-structure-queue` | 5 | [121](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121), [1](/encyclopedia/3-data-markup/3-02-struktury-dannyh/1), [61](/encyclopedia/4-code-dev/4-08-oop/61), [24](/encyclopedia/5-languages/5-03-java/24), [28](/encyclopedia/5-languages/5-05-csharp/28) |
 | **DataStructureStack** | `it-play/data-markup/data-structure-stack` | 2 | [1](/encyclopedia/3-data-markup/3-02-struktury-dannyh/1), [28](/encyclopedia/5-languages/5-05-csharp/28) |
 | **DataStructureTable** | `it-play/data-markup/data-structure-table` | 1 | [1](/encyclopedia/3-data-markup/3-02-struktury-dannyh/1) |
-| **DataTypesPlay** | `it-play/about/data-types-play` | 42 | [interactive](/about/interactive), [09-komponenty](/about/kak-ustroena-vselennaya-it/09-komponenty), [2](/encyclopedia/1-basics/1-035-bazovaya-informatika/2), [3](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/3), [18](/encyclopedia/5-languages/5-01-javascript/18), …ещё 37 |
+| **DataTypesPlay** | `it-play/about/data-types-play` | 42 | [interactive](/about/interactive), [09-komponenty](/about/kak-ustroena-vselennaya-it/09-komponenty), [intro](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [3](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/3), [18](/encyclopedia/5-languages/5-01-javascript/18), …ещё 37 |
 | **DataVizToolkitPlay** | `it-play/tools-data/data-viz-toolkit-play` | 1 | [6](/tools/data/6) |
 | **DbIndexVisualizerPlay** | `it-play/data-markup/db-index-visualizer-play` | 1 | [44](/encyclopedia/3-data-markup/3-07-sql/44) |
 | **DbmsArchitecturePlay** | `it-play/tools-data/dbms-architecture-play` | 3 | [2](/encyclopedia/3-data-markup/3-07-sql/2), [1](/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1), [1](/tools/data/1) |
@@ -371,7 +371,7 @@
 | **InteractiveRoadmap** | `it-play/about/interactive-roadmap` | 6 | [interactive](/about/interactive), [intro](/encyclopedia/1-basics/1-01-davayte-poznakomimsya/intro), [1](/encyclopedia/1-basics/1-02-vvedenie/1), [1](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1), [1](/encyclopedia/1-basics/1-035-bazovaya-informatika/1), …ещё 1 |
 | **InterestNavigatorGameV2Play** | `it-play/lab/interest-navigator-game-v2-play` | 1 | [7](/lab/roadmap/7) |
 | **InternetCultureTimelinePlay** | `it-play/spinoff/internet-culture-timeline-play` | 1 | [111](/encyclopedia/9-spinoff/9-10-internet-kultura/111) |
-| **IoDevicesPlay** | `it-play/about/io-devices-play` | 4 | [interactive](/about/interactive), [3](/encyclopedia/1-basics/1-035-bazovaya-informatika/3), [1](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/1), [11](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/11) |
+| **IoDevicesPlay** | `it-play/about/io-devices-play` | 4 | [interactive](/about/interactive), [3](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro), [1](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/1), [11](/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/11) |
 | **IpAddressAnalyzer** | `it-play/basics/ip-address-analyzer` | 2 | [6](/encyclopedia/1-basics/1-035-bazovaya-informatika/6), [41](/encyclopedia/2-system-network/2-03-set-i-internet/41) |
 | **ItBusinessModelPlay** | `it-play/basics/it-business-model-play` | 1 | [2](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/2) |
 | **ItCareerPlanPlay** | `it-play/basics/it-career-plan-play` | 3 | [1](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/1), [911](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/911), [intro](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro) |
@@ -650,7 +650,7 @@
 | **TestingSectionHub** | `it-play/project/testing-section-hub` | 1 | [intro](/encyclopedia/7-project/7-05-testirovanie/intro) |
 | **TestingStagesPlay** | `it-play/tools-testing/testing-stages-play` | 2 | [116](/encyclopedia/7-project/7-05-testirovanie/116), [1](/tools/testing/1) |
 | **TestingToolsCatalogPlay** | `it-play/tools-testing/testing-tools-catalog-play` | 1 | [1](/tools/testing/1) |
-| **TextEncoderConverter** | `it-play/basics/text-encoder-converter` | 2 | [2](/encyclopedia/1-basics/1-035-bazovaya-informatika/2), [1](/encyclopedia/1-basics/1-15-tekst/1) |
+| **TextEncoderConverter** | `it-play/basics/text-encoder-converter` | 2 | [1](/encyclopedia/1-basics/1-15-tekst/1), [1](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/1) |
 | **ThreadLifecycleDemo** | `it-play/code-dev/thread-lifecycle-demo` | 1 | [2](/encyclopedia/4-code-dev/4-05-asinhronnost/2) |
 | **ThreatHuntChecklistPlay** | `it-play/infra-security/threat-hunt-checklist-play` | 1 | [2](/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/2) |
 | **ThreeDGraphicsPlay** | `it-play/spinoff/three-d-graphics-play` | 1 | [13](/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/13) |

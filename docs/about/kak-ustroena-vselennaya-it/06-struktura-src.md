@@ -9,6 +9,8 @@ slug: /about/kak-ustroena-vselennaya-it/struktura-src
 
 # Структура src/
 
+> Раздел "Как устроена Вселенная IT" не нужен для обучения. Существует он только для тех, кому интересно.
+
 <span id="src-intro"></span>
 
 ## Что такое исходный код и source
