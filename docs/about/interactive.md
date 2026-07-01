@@ -26,7 +26,7 @@ import LabTrainersHub from '@site/src/components/LabTrainersHub';
 
 Замер зн/мин и слов/мин с подсветкой ошибок: шесть базовых текстов, **тридцать сложных** на русском и **тридцать на английском** (QWERTY). Удобно начать здесь, затем перейти к карте клавиатуры и зонам пальцев.
 
-Статьи: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14), [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
+Статьи: [Как научиться быстро печатать](/encyclopedia/1-basics/1-035-bazovaya-informatika/209), [Клавиши для новичка](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131), [Клавиатура](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/713), [Горячие клавиши Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/203)
 
 <ExternalPlayEmbed example="about/typing-speed-trainer-play" title="Typing Speed Trainer" />
 
@@ -36,7 +36,7 @@ import LabTrainersHub from '@site/src/components/LabTrainersHub';
 
 Тренажёр раскладки, зон и сочетаний — полезен новичкам до углубления в ОС.
 
-Статья: [Советы для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
+Статья: [Советы для новичка](/encyclopedia/1-basics/1-035-bazovaya-informatika/203)
 
 <ExternalPlayEmbed example="about/keyboard-play" title="Keyboard" />
 
@@ -46,7 +46,7 @@ import LabTrainersHub from '@site/src/components/LabTrainersHub';
 
 Цветовая схема домашнего ряда и мини-дрилл «нажми нужную клавишу».
 
-Статья: [Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14)
+Статья: [Как научиться быстро печатать](/encyclopedia/1-basics/1-035-bazovaya-informatika/209)
 
 <ExternalPlayEmbed example="about/touch-typing-finger-play" title="Touch Typing Finger" />
 

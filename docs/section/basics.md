@@ -23,10 +23,10 @@ id: basics
 
 | Кто вы | С чего начать | Затем |
 |--------|---------------|--------|
-| **Никогда не пользовались ПК** | [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) | [Цифровая безопасность](/encyclopedia/1-basics/1-035-bazovaya-informatika/112), [1.12 Советы новичку](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro) |
-| **Школа / ЕГЭ / информатика** | [1.035. Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) | Главы 1–8 курса, [лаборатория](https://lab.spirzen.ru/lab/tasks/intro) |
+| **Никогда не пользовались ПК** | [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) | [1.11 Файлы и пути](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/intro), [1.12 Цифровые угрозы](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/intro), [Цифровая безопасность (112)](/encyclopedia/1-basics/1-035-bazovaya-informatika/112) |
+| **Цифровая грамотность** | [1.035. Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) | Блоки 201–511, [лаборатория](https://lab.spirzen.ru/lab/tasks/intro) |
 | **Хочу в IT** | [1.03. Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) | [1.26 Карьера](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [1.02 Обзор Вселенной IT](/encyclopedia/1-basics/1-02-vvedenie/1) |
-| **Уже уверенный пользователь** | [1.14 Советы продвинутому](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/intro) | [2. Система и сеть](/section/system-network), [4. Код](/section/code-dev) |
+| **Уже уверенный пользователь** | [1.035. Советы продвинутому](/encyclopedia/1-basics/1-035-bazovaya-informatika/401) | [Софт продвинутого](/encyclopedia/1-basics/1-035-bazovaya-informatika/501), [2. Система и сеть](/section/system-network) |
 
 Полное автоматическое содержание — [docs/toc.md](/toc) и боковое меню энциклопедии (`Ctrl+K`).
 
@@ -35,7 +35,7 @@ mindmap
   root((Основы))
     Старт с нуля
       1.035 Базовая информатика
-      1.12 Советы новичку
+      1.035 Советы новичку (201+)
       1.035 Цифровая безопасность
     Введение
       1.01 Знакомство
@@ -49,11 +49,14 @@ mindmap
       1.08 Железо
       1.09 Данные
       1.10 Операции с данными
+      1.11 Файлы и пути
+      1.12 Угрозы и защита
+      1.13 Устройства
+      1.14 Обмен данными
       1.19 Программа
       1.20 Файлы и архивы
     ПО и поиск
-      1.11 Софт пользователя
-      1.13 Софт продвинутого
+      1.035 Базовая информатика
       1.21 Поиск и ИИ
       1.22 Коммуникация
     Медиа
@@ -72,7 +75,7 @@ mindmap
       1.29 Государство и бизнес
       1.30 Английский
     Практика
-      1.14 Power user
+      1.035 Power user 401+
 ```
 
 ---
@@ -105,22 +108,81 @@ mindmap
 ## Базовая информатика (1.035)
 
 - [1.035. Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro)
+- [1.035. Ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1)
 - [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101)
 - [1.035. Терминология новичка](/encyclopedia/1-basics/1-035-bazovaya-informatika/102)
-- [1.035. Ключевые понятия и маршрут](/encyclopedia/1-basics/1-035-bazovaya-informatika/1)
-- [1.035. Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro)
-- [1.035. Организация, архитектура и уровни компьютера](/encyclopedia/1-basics/1-035-bazovaya-informatika/10)
-- [1.035. Алгоритмы, языки и программирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/4)
-- [1.035. ОС, файловые системы и служебные программы](/encyclopedia/1-basics/1-035-bazovaya-informatika/5)
-- [1.035. Интернет и сетевые сервисы](/encyclopedia/1-basics/1-035-bazovaya-informatika/6)
-- [1.035. Право и защита информации в РФ](/encyclopedia/1-basics/1-035-bazovaya-informatika/7)
-- [1.035. Организация рабочего места](/encyclopedia/1-basics/1-035-bazovaya-informatika/8)
-- [1.035. Инструменты и среды разработки](/encyclopedia/1-basics/1-035-bazovaya-informatika/9)
-- [1.035. Память и вычисления](/encyclopedia/1-basics/1-035-bazovaya-informatika/11)
-- [1.035. Цифровая безопасность для пользователя](/encyclopedia/1-basics/1-035-bazovaya-informatika/112)
-- [1.035. Passkeys и современный вход в аккаунты](/encyclopedia/1-basics/1-035-bazovaya-informatika/113)
+- [1.035. Цифровая безопасность](/encyclopedia/1-basics/1-035-bazovaya-informatika/112)
+- [1.035. Passkeys](/encyclopedia/1-basics/1-035-bazovaya-informatika/113)
+
+### Советы новичку (201+)
+
+- [1.035. Советы для начинающего пользователя ПК](/encyclopedia/1-basics/1-035-bazovaya-informatika/201)
+- [1.035. Эргономика рабочего места](/encyclopedia/1-basics/1-035-bazovaya-informatika/202)
+- [1.035. Горячие клавиши в Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/203)
+- [1.035. Визуальное программирование блоками](/encyclopedia/1-basics/1-035-bazovaya-informatika/204)
+- [1.035. Создание скриншотов на разных платформах](/encyclopedia/1-basics/1-035-bazovaya-informatika/205)
+- [1.035. Настройка телефона для пожилых пользователей](/encyclopedia/1-basics/1-035-bazovaya-informatika/206)
+- [1.035. Настройка Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/207)
+- [1.035. Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208)
+- [1.035. Как научиться быстро печатать](/encyclopedia/1-basics/1-035-bazovaya-informatika/209)
+- [1.035. Облако, синхронизация и бэкап для дома](/encyclopedia/1-basics/1-035-bazovaya-informatika/210)
+- [1.035. Первые шаги в macOS](/encyclopedia/1-basics/1-035-bazovaya-informatika/211)
+- [1.035. Первые шаги в Linux](/encyclopedia/1-basics/1-035-bazovaya-informatika/212)
+- [1.035. Знакомство с Android](/encyclopedia/1-basics/1-035-bazovaya-informatika/213)
+- [1.035. Покупка техники и как не переплатить](/encyclopedia/1-basics/1-035-bazovaya-informatika/214)
+- [1.035. Умный дом и IoT для пользователя](/encyclopedia/1-basics/1-035-bazovaya-informatika/215)
+- [1.035. Перенос данных на новый ПК и новый телефон](/encyclopedia/1-basics/1-035-bazovaya-informatika/216)
+- [1.035. Управление памятью смартфона](/encyclopedia/1-basics/1-035-bazovaya-informatika/217)
+- [1.035. Родительский контроль](/encyclopedia/1-basics/1-035-bazovaya-informatika/218)
+- [1.035. Адресная книга](/encyclopedia/1-basics/1-035-bazovaya-informatika/219)
+- [1.035. Ускорение интернета](/encyclopedia/1-basics/1-035-bazovaya-informatika/220)
+- [1.035. Работа с проводником Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/221)
+- [1.035. Техника безопасности при работе за компьютером](/encyclopedia/1-basics/1-035-bazovaya-informatika/222)
+
+### Софт рядового (301+)
+
+- [1.035. Системные приложения](/encyclopedia/1-basics/1-035-bazovaya-informatika/301)
+- [1.035. Медиаплееры и обработка мультимедиа](/encyclopedia/1-basics/1-035-bazovaya-informatika/302)
+- [1.035. Веб-браузеры](/encyclopedia/1-basics/1-035-bazovaya-informatika/303)
+- [1.035. Видеосвязь](/encyclopedia/1-basics/1-035-bazovaya-informatika/304)
+- [1.035. Мессенджеры](/encyclopedia/1-basics/1-035-bazovaya-informatika/305)
+- [1.035. Графика и видео](/encyclopedia/1-basics/1-035-bazovaya-informatika/306)
+- [1.035. Безопасность для обычного пользователя](/encyclopedia/1-basics/1-035-bazovaya-informatika/307)
+- [1.035. Системные приложения Linux](/encyclopedia/1-basics/1-035-bazovaya-informatika/308)
+- [1.035. Офисные пакеты](/encyclopedia/1-basics/1-035-bazovaya-informatika/309)
+- [1.035. Microsoft 365 для пользователя и IT](/encyclopedia/1-basics/1-035-bazovaya-informatika/310)
+
+### Советы продвинутому (401+)
+
+- [1.035. Путь продвинутого пользователя](/encyclopedia/1-basics/1-035-bazovaya-informatika/401)
+- [1.035. Скрипты, макросы и локальная автоматизация](/encyclopedia/1-basics/1-035-bazovaya-informatika/402)
+- [1.035. Виртуальные машины, Home Lab и переход на Linux](/encyclopedia/1-basics/1-035-bazovaya-informatika/403)
+- [1.035. Приватность, self-hosting и домашняя сеть](/encyclopedia/1-basics/1-035-bazovaya-informatika/404)
+- [1.035. Рабочий процесс без мыши](/encyclopedia/1-basics/1-035-bazovaya-informatika/405)
+- [1.035. Процессы, мониторинг и чистка Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/406)
+- [1.035. Игры — FPS, латентность и память](/encyclopedia/1-basics/1-035-bazovaya-informatika/407)
+- [1.035. Железо, охлаждение и диагностика](/encyclopedia/1-basics/1-035-bazovaya-informatika/408)
+- [1.035. Как читать сообщение об ошибке](/encyclopedia/1-basics/1-035-bazovaya-informatika/409)
+
+### Софт продвинутого (501+)
+
+- [1.035. Софт продвинутого пользователя — обзор](/encyclopedia/1-basics/1-035-bazovaya-informatika/501)
+- [1.035. Файловые менеджеры и системные утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/502)
+- [1.035. Редакторы кода — VS Code, Vim, Notepad++](/encyclopedia/1-basics/1-035-bazovaya-informatika/503)
+- [1.035. Графика, дизайн и 3D-моделирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/504)
+- [1.035. Сетевые и системные диагностические утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/505)
+- [1.035. Автоматизация — AutoHotkey, PowerShell и планировщик](/encyclopedia/1-basics/1-035-bazovaya-informatika/506)
+- [1.035. Безопасность и системное администрирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/507)
+- [1.035. Виртуализация и управление операционными системами](/encyclopedia/1-basics/1-035-bazovaya-informatika/508)
+- [1.035. PowerToys и дополнительные утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/509)
+- [1.035. diagrams.net (Draw.io) — устройство и формат .drawio](/encyclopedia/1-basics/1-035-bazovaya-informatika/510)
+- [1.035. Visual Studio Code — установка и работа по документации Microsoft](/encyclopedia/1-basics/1-035-bazovaya-informatika/511)
+
 - [1.035. Итоги](/encyclopedia/1-basics/1-035-bazovaya-informatika/98)
 - [1.035. Чек-лист](/encyclopedia/1-basics/1-035-bazovaya-informatika/99)
+
+---
+
 
 ---
 
@@ -218,85 +280,59 @@ mindmap
 
 ---
 
-## Советы для новичка
+## Файлы, каталоги и пути
 
-- [1.12. Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro)
-- [1.12. Советы для начинающего пользователя ПК](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/1)
-- [1.12. Эргономика рабочего места](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/2)
-- [1.12. Горячие клавиши в Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3)
-- [1.12. Визуальное программирование блоками](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/4)
-- [1.12. Создание скриншотов](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/5)
-- [1.12. Настройка телефона для пожилых](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/6)
-- [1.12. Настройка Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11)
-- [1.12. Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13)
-- [1.12. Как научиться быстро печатать](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14)
-- [1.12. Облако, синхронизация и бэкап для дома](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/15)
-- [1.12. Первые шаги в macOS](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/16)
-- [1.12. Первые шаги в Linux](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/17)
-- [1.12. Знакомство с Android](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/18)
-- [1.12. Покупка техники и как не переплатить](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/19)
-- [1.12. Умный дом и IoT для пользователя](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/20)
-- [1.12. Перенос данных на новый ПК и телефон](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/21)
-- [1.12. Управление памятью смартфона](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/31)
-- [1.12. Родительский контроль](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/111)
-- [1.12. Адресная книга](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/311)
-- [1.12. Ускорение интернета](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/312)
-- [1.12. Работа с проводником Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/1111)
-- [1.12. Техника безопасности при работе за ПК](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/1112)
-- [1.12. Итоги](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/98)
-- [1.12. Чек-лист](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/99)
-
-Цифровая безопасность в сети — [1.035 / глава 112](/encyclopedia/1-basics/1-035-bazovaya-informatika/112) (не путать с физической [1112](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/1112)).
+- [1.11. Файлы, каталоги и пути — о разделе](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/intro)
+- [1.11. Файл и каталог](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/1)
+- [1.11. Пути и адресация](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/2)
+- [1.11. Имена, расширения и тип содержимого](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/3)
+- [1.11. Разделы носителя и файловая система](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/4)
+- [1.11. Организация данных и жизненный цикл файла](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/5)
+- [1.11. Итоги](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/98)
+- [1.11. Чек-лист](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/99)
 
 ---
 
-## Софт рядового пользователя
+## Цифровые угрозы и модель защиты
 
-- [1.11. Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro)
-- [1.11. Системные приложения](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/1)
-- [1.11. Медиа](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/2)
-- [1.11. Браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3)
-- [1.11. Видеосвязь](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/4)
-- [1.11. Мессенджеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/5)
-- [1.11. Офисные пакеты](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51)
-- [1.11. Графика и видео](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/6)
-- [1.11. Безопасность](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/7)
-- [1.11. Итоги](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/98)
-- [1.11. Чек-лист](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/99)
+- [1.12. Цифровые угрозы и модель защиты — о разделе](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/intro)
+- [1.12. Активы и поверхность риска](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/1)
+- [1.12. Классификация угроз](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/2)
+- [1.12. Модель CIA](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/3)
+- [1.12. Идентификация и доступ](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/4)
+- [1.12. Malware и методы обмана](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/5)
+- [1.12. Резервное копирование](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/6)
+- [1.12. Итоги](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/98)
+- [1.12. Чек-лист](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/99)
 
 ---
 
-## Софт продвинутого пользователя
+## Устройства и подключения
 
-- [1.13. Софт продвинутого — о разделе](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/intro)
-- [1.13. Обзор](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1)
-- [1.13. Файловые менеджеры и утилиты](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/2)
-- [1.13. Разработка и программирование](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/3)
-- [1.13. Графика, дизайн и 3D](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4)
-- [1.13. Сетевые и системные утилиты](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/5)
-- [1.13. Автоматизация и бизнес-процессы](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/6)
-- [1.13. Безопасность и администрирование](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/7)
-- [1.13. Виртуализация и работа с ОС](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8)
-- [1.13. Дополнительные инструменты](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/9)
-- [1.13. Итоги](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/98)
-- [1.13. Чек-лист](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/99)
+- [1.13. Устройства и подключения — о разделе](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/intro)
+- [1.13. Классификация периферии](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/1)
+- [1.13. Клавиатура, мышь, дисплеи](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/2)
+- [1.13. Звук и видеокамеры](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/3)
+- [1.13. USB и проводные интерфейсы](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/4)
+- [1.13. Беспроводные интерфейсы](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/5)
+- [1.13. Офисная периферия](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/6)
+- [1.13. Носители, мобильные, драйверы](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/7)
+- [1.13. Итоги](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/98)
+- [1.13. Чек-лист](/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/99)
 
 ---
 
-## Советы для продвинутого
+## Обмен данными и совместный доступ
 
-- [1.14. Советы для продвинутого — о разделе](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/intro)
-- [1.14. Путь продвинутого пользователя](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1)
-- [1.14. Безопасность](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/2)
-- [1.14. Мониторинг и логи](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3)
-- [1.14. Резервное копирование](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4)
-- [1.14. Железо и производительность](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5)
-- [1.14. Уход за железом](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6)
-- [1.14. Троттлинг и зависания](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7)
-- [1.14. Оптимизация Windows для игр](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/8)
-- [1.14. Как читать сообщение об ошибке](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/9)
-- [1.14. Итоги](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/98)
-- [1.14. Чек-лист](/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/99)
+- [1.14. Обмен данными — о разделе](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/intro)
+- [1.14. Локальное хранение и копии](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/1)
+- [1.14. Облако и синхронизация](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/2)
+- [1.14. Способы передачи данных](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/3)
+- [1.14. Вложения, ссылки, общий доступ](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/4)
+- [1.14. Передача между своими устройствами](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/5)
+- [1.14. Совместная работа и ошибки](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/6)
+- [1.14. Итоги](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/98)
+- [1.14. Чек-лист](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/99)
 
 ---
 

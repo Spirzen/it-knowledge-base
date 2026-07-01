@@ -155,7 +155,7 @@ mindmap
 
 ## Junior и обучение
 
-ИИ — **инструмент**, как автодополнение или поиск, а не замена мышления. Наставник проверяет, что junior **объясняет решение** без подсказки модели. См. [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) и [советы для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro).
+ИИ — **инструмент**, как автодополнение или поиск, а не замена мышления. Наставник проверяет, что junior **объясняет решение** без подсказки модели. См. [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) и [советы для новичка](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro).
 
 ---
 

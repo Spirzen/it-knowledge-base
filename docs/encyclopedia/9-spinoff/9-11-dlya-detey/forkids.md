@@ -49,7 +49,7 @@ import DocCardList from '@theme/DocCardList';
 | **Компьютер** | Периферия, файлы, железо, цифровой сигнал, транзисторы, память, процессор, сеть, безопасность | См. [Как работает компьютер](/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro) |
 | **Видеоигры** | Жанры, платформы, устройство игр | См. [Игровая индустрия](/encyclopedia/9-spinoff/9-03-igrovaya-industriya/intro) |
 | **Развитие** | Алгоритмы, задачи, лексика, цифровая гигиена | См. [Базовая информатика](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) |
-| **Программы** | Текст, таблицы, браузер, графика | См. [Софт рядового пользователя](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro) |
+| **Программы** | Текст, таблицы, браузер, графика | См. [Софт рядового пользователя](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) |
 | **Код** | Scratch, [стартовые проекты MIT](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/31), Python ([turtle](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/42), [классы](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/43), ["Прыг-скок"](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/40), ["Человечек"](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/44), [структуры данных](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/41)), JavaScript | См. [Программа](/encyclopedia/1-basics/1-19-programma/intro), [Основные языки](/encyclopedia/1-basics/1-24-osnovnye-yazyki/intro) |
 
 Длинные главы удобно читать **по подзаголовкам** — один подраздел за занятие.

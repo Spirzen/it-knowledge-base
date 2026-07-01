@@ -21,7 +21,7 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
-**С чего начать:** [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) → [Цифровая безопасность](/encyclopedia/1-basics/1-035-bazovaya-informatika/112) → [1.12. Советы новичку](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro). Маршруты — также на [странице раздела](/section/basics).
+**С чего начать:** [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) → [Цифровая безопасность](/encyclopedia/1-basics/1-035-bazovaya-informatika/112) → [1.035. Советы новичку (201+)](/encyclopedia/1-basics/1-035-bazovaya-informatika/201). Маршруты — также на [странице раздела](/section/basics).
 
 **Как устроен проект «Вселенная IT»:** не один сайт, а **15+ поддоменов** — spirzen.ru (энциклопедия), search, terms, lab, tools, kids, games, code, play, writer, schema, sql, color, random, assets, html. Обзор — [1.02 Введение](/encyclopedia/1-basics/1-02-vvedenie/1#живой-пример--проект-вселенная-it); карта сервисов — [status.spirzen.ru](https://status.spirzen.ru); полная схема — [О проекте](/about/project#arhitektura-proekta).
 
@@ -33,7 +33,7 @@ mindmap
     Старт с нуля
       1.035 Базовая информатика
       1.035 Цифровая безопасность
-      1.12 Советы новичку
+      1.035 Советы новичку 201+
     Введение
       1.01 Давайте познакомимся
       1.02 Введение
@@ -46,12 +46,14 @@ mindmap
       1.08 Как работает компьютер
       1.09 Данные и информация
       1.10 Операции с данными
+      1.11 Файлы каталоги пути
+      1.12 Цифровые угрозы
+      1.13 Устройства и подключения
+      1.14 Обмен и совместный доступ
       1.19 Программа
       1.20 Исполняемые файлы и архивы
     ПО и инструменты
-      1.11 Софт пользователя
-      1.13 Софт продвинутого
-      1.14 Советы продвинутому
+      1.035 Базовая информатика
       1.21 Поиск и ИИ
       1.22 Коммуникация
     Медиа

@@ -6,9 +6,9 @@ related:
   - title: "Системное администрирование — о разделе"
     doc: encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro
   - title: "Софт рядового пользователя — о разделе"
-    doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/intro
   - title: "Советы для новичка — о разделе"
-    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/intro
   - title: "Операционная система — о разделе"
     doc: encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro
   - title: "Интернет-культура — о разделе"
@@ -60,11 +60,11 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro).
+**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro).
 
 **Цифровая грамотность** — [Интернет-культура — о разделе](/encyclopedia/9-spinoff/9-10-internet-kultura/intro), [Архитектура десктопных приложений](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1), [Государственное регулирование интернета](/encyclopedia/2-system-network/2-03-set-i-internet/91), [Основы бизнеса для IT-специалиста](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112), [Государство и цифровая экономика](/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/1), [Потребительская грамотность в цифровой среде](/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/3).
 
-**Сетевая грамотность** — [NAT и проброс портов](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Организация домашней сети](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro).
+**Сетевая грамотность** — [NAT и проброс портов](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Организация домашней сети](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Веб-браузеры](/encyclopedia/1-basics/1-035-bazovaya-informatika/303), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro).
 
 **База программиста** — [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Основы интеграционного взаимодействия — о разделе](/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Алгоритмы — о разделе](/encyclopedia/4-code-dev/4-01-algoritmy/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro).
 

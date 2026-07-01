@@ -47,7 +47,7 @@ import DocCardList from '@theme/DocCardList';
 
 Общая база для всех платформ:
 
-1. [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) — когда держать окно терминала открытым, `npm run dev`, утилиты из `cd`.
+1. [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208) — когда держать окно терминала открытым, `npm run dev`, утилиты из `cd`.
 2. [Что такое терминал](/encyclopedia/2-system-network/2-05-terminal/1) — терминал vs оболочка, CMD, PowerShell, Bash, потоки ввода-вывода.
 3. [Опасные скрипты](/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101) — стоп-лист перед `rm`, pipe в bash и командами от ИИ-агента.
 4. [Знаки препинания в командной строке](/encyclopedia/2-system-network/2-05-terminal/11) — `|`, `>`, `&&`, кавычки, переменные; [напоминалка по скобкам Bash](/encyclopedia/2-system-network/2-05-terminal/11#napominalka-bash) — `()`, `{}`, `$()`, `[[ ]]`.

@@ -25,7 +25,7 @@ import DocCardList from '@theme/DocCardList';
 
 Общая теория метрик, Prometheus и Grafana уже разобрана в [Мониторинг, метрики и логирование систем](../92.md). Этот маршрут **не повторяет** сравнение стеков — он учит **руками настроить Zabbix** по официальному quickstart Zabbix 7.0.
 
-Службы, контейнеры и "не закрывать терминал" — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
+Службы, контейнеры и "не закрывать терминал" — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208).
 
 <div class="callout callout--info">
   <div class="callout-title">Для кого раздел</div>

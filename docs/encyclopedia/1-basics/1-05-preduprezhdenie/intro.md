@@ -10,11 +10,11 @@ related:
   - title: "Английский язык в IT — о разделе"
     doc: encyclopedia/1-basics/1-30-angliyskiy-yazyk/intro
   - title: "Настройка Windows"
-    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/11
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/207
   - title: "Восприятие IT в обществе"
     doc: encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1
   - title: "Родительский контроль"
-    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/111
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/218
 ---
 
 import DocCardList from '@theme/DocCardList';
@@ -57,7 +57,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Цифровая грамотность** — [Английский язык в IT — о разделе](/encyclopedia/1-basics/1-30-angliyskiy-yazyk/intro), [Настройка Windows](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Родительский контроль](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/111), [Поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/1), [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3).
+**Цифровая грамотность** — [Английский язык в IT — о разделе](/encyclopedia/1-basics/1-30-angliyskiy-yazyk/intro), [Настройка Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/207), [Восприятие IT в обществе](/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1), [Родительский контроль](/encyclopedia/1-basics/1-035-bazovaya-informatika/218), [Поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/1), [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3).
 
 {/* /sidebar-collections */}
 

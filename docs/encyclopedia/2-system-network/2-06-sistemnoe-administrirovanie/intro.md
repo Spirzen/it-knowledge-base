@@ -4,11 +4,11 @@ description: "Подборка материалов раздела Систем�
 sidebar_label: Системное администрирование — о разделе
 related:
   - title: "Софт рядового пользователя — о разделе"
-    doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/intro
   - title: "Основы информационной безопасности — о разделе"
     doc: encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro
   - title: "Советы для новичка — о разделе"
-    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/intro
   - title: "Операционная система — о разделе"
     doc: encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro
   - title: "Терминал — о разделе"
@@ -31,7 +31,7 @@ import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел про **эксплуатацию инфраструктуры** — кто и чем управляет в IT-среде, как ставят и настраивают ОС и серверы, как устроена сеть, резервное копирование, мониторинг и реакция на сбои. Запуск служб, контейнеров и учебных стеков в терминале — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13). Материалы рассчитаны на разработчика и инженера, которым нужно понимать "что делает админ" и уметь базовую диагностику самостоятельно.
+Раздел про **эксплуатацию инфраструктуры** — кто и чем управляет в IT-среде, как ставят и настраивают ОС и серверы, как устроена сеть, резервное копирование, мониторинг и реакция на сбои. Запуск служб, контейнеров и учебных стеков в терминале — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208). Материалы рассчитаны на разработчика и инженера, которым нужно понимать "что делает админ" и уметь базовую диагностику самостоятельно.
 
 ---
 
@@ -41,7 +41,7 @@ import DocCardList from '@theme/DocCardList';
 |------|--------|------------|
 | 1 | [Администрирование](./1.md) | Роли, права, RBAC, кто такой sysadmin |
 | 2 | [Установка и настройка ОС](./2.md) | ISO, UEFI/GPT, загрузка, переустановка |
-| 3 | [ИТ-инфраструктура](./3.md) | Железо, софт, сеть; [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya), [типы storage](/encyclopedia/2-system-network/2-10-zhelezo/121.md) |
+| 3 | [ИТ-инфраструктура](./3.md) | Железо, софт, сеть; [четыре модели развёртывания](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya), [типы storage](/encyclopedia/2-system-network/2-10-zhelezo/121.md) |
 | 4 | [Windows Server — начало](./63.md) | Роли, отличия от клиентской Windows |
 | 5 | [Управление службами в Windows](./64.md) | Критичные службы, ручной запуск, удаление и добавление своих служб |
 | 6 | [Настройка серверов](./4.md) | Первый DC, AD, DNS, PowerShell |
@@ -96,7 +96,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro).
+**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Основы информационной безопасности — о разделе](/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro).
 
 **Системное программирование** — [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro), [Платформы — о разделе](/encyclopedia/2-system-network/2-02-platformy/intro), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21).
 

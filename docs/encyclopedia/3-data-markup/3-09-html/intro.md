@@ -4,7 +4,7 @@ description: "HTML — каркас страницы: заголовки, абз
 sidebar_label: HTML — о разделе
 related:
   - title: "Веб-браузеры"
-    doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/303
   - title: "JavaScript — о разделе"
     doc: encyclopedia/5-languages/5-01-javascript/intro
   - title: "Веб-сайты и веб-приложения — о разделе"
@@ -84,7 +84,7 @@ HTML — **каркас** страницы — заголовки, абзацы,
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Веб-разработка** — [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro).
+**Веб-разработка** — [Веб-браузеры](/encyclopedia/1-basics/1-035-bazovaya-informatika/303), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [CSS — о разделе](/encyclopedia/3-data-markup/3-10-css/intro), [Сеть и интернет — о разделе](/encyclopedia/2-system-network/2-03-set-i-internet/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro).
 
 **Соло / инди-разработчик** — [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Разработка игр — о разделе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Разработка — о разделе](/tools/development/intro), [Личный профиль и портфолио разработчика](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/7), [IDE](/tools/development/1).
 

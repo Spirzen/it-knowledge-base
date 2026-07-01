@@ -17,7 +17,7 @@ import DocCardList from '@theme/DocCardList';
 
 Удалённая работа в IT — это не "тот же офис, только дома". Команда живёт в **разных городах и часовых поясах**, часть решений принимается **без созвона**, а источником правды становятся **тикет и wiki**, а не разговор у кофемашины. Раздел помогает новичку понять базовые правила: **async-first**, overlap часов, письменные решения и онбординг без физического офиса.
 
-Если вы только входите в профессию, начните с [советов для новичка](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro) и [команды и управления](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro). Если уже работаете в гибриде — сверьте практики с [методологией](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro) и [трекером задач](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/21).
+Если вы только входите в профессию, начните с [советов для новичка](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) и [команды и управления](/encyclopedia/7-project/7-02-komanda-i-upravlenie/intro). Если уже работаете в гибриде — сверьте практики с [методологией](/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/intro) и [трекером задач](/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/21).
 
 ---
 

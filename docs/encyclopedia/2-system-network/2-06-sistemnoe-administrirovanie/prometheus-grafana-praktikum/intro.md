@@ -27,7 +27,7 @@ import DocCardList from '@theme/DocCardList';
 
 Общая теория pull/push, PromQL и PLG-стека уже есть в [Мониторинг, метрики и логирование систем](../92.md). Этот раздел **не дублирует** сравнение Zabbix и Prometheus — он учит **руками собрать стек** по официальным гайдам Prometheus и Grafana.
 
-Перед `docker compose up` на стенде — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13) (терминал, порты, остановка).
+Перед `docker compose up` на стенде — [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208) (терминал, порты, остановка).
 
 <div class="callout callout--tip">
   <div class="callout-title">Стек уже поднят?</div>

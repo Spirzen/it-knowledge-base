@@ -6,7 +6,7 @@ related:
   - title: "Сайты и веб-сайты"
     doc: encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1
   - title: "Веб-браузеры"
-    doc: encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/303
   - title: "Сеть и интернет - основы и принципы работы"
     doc: encyclopedia/2-system-network/2-03-set-i-internet/1
   - title: "Веб-сайты и веб-приложения — о разделе"
@@ -29,7 +29,7 @@ import DocCardList from '@theme/DocCardList';
 
 | Этап | Статьи | Зачем |
 | :--- | :--- | :--- |
-| 0. Школа | [Базовая информатика — телекоммуникации и веб](/encyclopedia/1-basics/1-035-bazovaya-informatika/1#телекоммуникационные-технологии-и-компьютерные-сети), [Интернет и сетевые сервисы](/encyclopedia/1-basics/1-035-bazovaya-informatika/6) | LAN/WAN, DNS, HTTP, FTP, объекты сети |
+| 0. Школа | [Базовая информатика — телекоммуникации и веб](/encyclopedia/1-basics/1-035-bazovaya-informatika/1#телекоммуникационные-технологии-и-компьютерные-сети), [Интернет и сетевые сервисы](/encyclopedia/2-system-network/2-03-set-i-internet/intro) | LAN/WAN, DNS, HTTP, FTP, объекты сети |
 | 1. Основы | [Сеть и интернет - основы и принципы работы](./1.md), [История развития сетевых технологий](./2.md) | Сети, IP, порты, [шесть типов серверов](./1.md#tipy-serverov), история связи |
 | 2. Имена и протоколы | [URL URI URN](./3.md), [Сетевые протоколы, порты и установка соединения](./4.md), [DNS - система доменных имён и её работа](./6.md) | URI/URL, OSI, [модель TCP/IP](./4.md#model-tcp-ip), [обзор девяти ключевых протоколов](./4.md#key-network-protocols), TCP/UDP, HTTP, DNS |
 | 3. Практика веба | [Что происходит при загрузке сайта](./5.md), [HTTP и HTTPS](./11.md), [Cookie](./7.md) | Загрузка сайта, HTTPS, cookie и кэш |
@@ -100,9 +100,9 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Сетевая грамотность** — [Сайты и веб-сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [Сеть и интернет - основы и принципы работы](/encyclopedia/2-system-network/2-03-set-i-internet/1), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Организация домашней сети](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61), [NAT и проброс портов](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7).
+**Сетевая грамотность** — [Сайты и веб-сайты](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1), [Веб-браузеры](/encyclopedia/1-basics/1-035-bazovaya-informatika/303), [Сеть и интернет - основы и принципы работы](/encyclopedia/2-system-network/2-03-set-i-internet/1), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Организация домашней сети](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61), [NAT и проброс портов](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7).
 
-**Веб-разработка** — [История интернета](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/4), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Интерфейс — о разделе](/encyclopedia/1-basics/1-25-interfeys/intro), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro).
+**Веб-разработка** — [История интернета](/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/4), [Веб-сайты и веб-приложения — о разделе](/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/intro), [Интерфейс — о разделе](/encyclopedia/1-basics/1-25-interfeys/intro), [Веб-браузеры](/encyclopedia/1-basics/1-035-bazovaya-informatika/303), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro).
 
 {/* /sidebar-collections */}
 

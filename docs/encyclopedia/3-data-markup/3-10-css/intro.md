@@ -97,7 +97,7 @@ CSS описывает **внешний вид** разметки HTML — цв�
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Веб-разработка** — [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [ASP.NET - веб-платформа Microsoft](/encyclopedia/5-languages/5-04-platforma-dotnet/172), [Веб-браузеры](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro).
+**Веб-разработка** — [JavaScript — о разделе](/encyclopedia/5-languages/5-01-javascript/intro), [PHP — о разделе](/encyclopedia/5-languages/5-07-php/intro), [HTML — о разделе](/encyclopedia/3-data-markup/3-09-html/intro), [ASP.NET - веб-платформа Microsoft](/encyclopedia/5-languages/5-04-platforma-dotnet/172), [Веб-браузеры](/encyclopedia/1-basics/1-035-bazovaya-informatika/303), [C# — о разделе](/encyclopedia/5-languages/5-05-csharp/intro).
 
 {/* /sidebar-collections */}
 

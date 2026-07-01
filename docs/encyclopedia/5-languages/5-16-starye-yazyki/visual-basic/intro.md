@@ -49,14 +49,14 @@ import DocCardList from '@theme/DocCardList';
 
 ### Маршрут VBScript и Office
 
-Сценарии Windows и макросы Office собраны в этом разделе (в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) — только алгоритмы и обзор языков):
+Сценарии Windows и макросы Office собраны в этом разделе (в [базовой информатике](/encyclopedia/4-code-dev/4-01-algoritmy/intro) — только алгоритмы и обзор языков):
 
 | Тема | Статья |
 |------|--------|
 | VBScript, WScript, `MsgBox`, циклы | [VBScript — сценарии Windows и учебный маршрут — VBScript](./12.md) |
 | VBA Excel | [VBA в Microsoft Excel — VBA в Excel](./8.md) |
 | VBA Word, Access | [VBA в Word и Access — VBA Word и Access](./13.md) |
-| Алгоритмы и классификация языков | [базовая информатика, гл. 4](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) |
+| Алгоритмы и классификация языков | [базовая информатика, гл. 4](/encyclopedia/4-code-dev/4-01-algoritmy/intro) |
 | VB.NET / Visual Studio | [Первая программа на visual-basic — первая программа](./7.md) |
 
 ---

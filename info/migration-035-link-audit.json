@@ -1,0 +1,689 @@
+{
+  "generatedAt": "2026-07-01T17:27:12.693Z",
+  "fileMoves": [
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/1",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/201",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\1.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\201.md",
+      "block": "novice-tips",
+      "oldSlug": "1",
+      "newSlug": "201",
+      "title": "Советы для начинающего пользователя ПК"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/2",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/202",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\2.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\202.md",
+      "block": "novice-tips",
+      "oldSlug": "2",
+      "newSlug": "202",
+      "title": "Эргономика рабочего места"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/3",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/203",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\3.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\203.md",
+      "block": "novice-tips",
+      "oldSlug": "3",
+      "newSlug": "203",
+      "title": "Горячие клавиши в Windows"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/4",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/204",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\4.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\204.md",
+      "block": "novice-tips",
+      "oldSlug": "4",
+      "newSlug": "204",
+      "title": "Визуальное программирование блоками"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/5",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/205",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\5.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\205.md",
+      "block": "novice-tips",
+      "oldSlug": "5",
+      "newSlug": "205",
+      "title": "Создание скриншотов на разных платформах"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/6",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/206",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\6.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\206.md",
+      "block": "novice-tips",
+      "oldSlug": "6",
+      "newSlug": "206",
+      "title": "Настройка телефона для пожилых пользователей"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/11",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/207",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\11.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\207.md",
+      "block": "novice-tips",
+      "oldSlug": "11",
+      "newSlug": "207",
+      "title": "Настройка Windows"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/13",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/208",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\13.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\208.md",
+      "block": "novice-tips",
+      "oldSlug": "13",
+      "newSlug": "208",
+      "title": "Запуск и перезапуск приложений"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/14",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/209",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\14.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\209.md",
+      "block": "novice-tips",
+      "oldSlug": "14",
+      "newSlug": "209",
+      "title": "Как научиться быстро печатать"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/15",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/210",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\15.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\210.md",
+      "block": "novice-tips",
+      "oldSlug": "15",
+      "newSlug": "210",
+      "title": "Облако, синхронизация и бэкап для дома"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/16",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/211",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\16.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\211.md",
+      "block": "novice-tips",
+      "oldSlug": "16",
+      "newSlug": "211",
+      "title": "Первые шаги в macOS"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/17",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/212",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\17.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\212.md",
+      "block": "novice-tips",
+      "oldSlug": "17",
+      "newSlug": "212",
+      "title": "Первые шаги в Linux"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/18",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/213",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\18.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\213.md",
+      "block": "novice-tips",
+      "oldSlug": "18",
+      "newSlug": "213",
+      "title": "Знакомство с Android"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/19",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/214",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\19.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\214.md",
+      "block": "novice-tips",
+      "oldSlug": "19",
+      "newSlug": "214",
+      "title": "Покупка техники и как не переплатить"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/20",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/215",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\20.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\215.md",
+      "block": "novice-tips",
+      "oldSlug": "20",
+      "newSlug": "215",
+      "title": "Умный дом и IoT для пользователя"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/21",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/216",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\21.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\216.md",
+      "block": "novice-tips",
+      "oldSlug": "21",
+      "newSlug": "216",
+      "title": "Перенос данных на новый ПК и новый телефон"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/31",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/217",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\31.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\217.md",
+      "block": "novice-tips",
+      "oldSlug": "31",
+      "newSlug": "217",
+      "title": "Управление памятью смартфона"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/111",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/218",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\111.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\218.md",
+      "block": "novice-tips",
+      "oldSlug": "111",
+      "newSlug": "218",
+      "title": "Родительский контроль"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/311",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/219",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\311.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\219.md",
+      "block": "novice-tips",
+      "oldSlug": "311",
+      "newSlug": "219",
+      "title": "Адресная книга"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/312",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/220",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\312.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\220.md",
+      "block": "novice-tips",
+      "oldSlug": "312",
+      "newSlug": "220",
+      "title": "Ускорение интернета"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/1111",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/221",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\1111.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\221.md",
+      "block": "novice-tips",
+      "oldSlug": "1111",
+      "newSlug": "221",
+      "title": "Работа с проводником Windows"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/1112",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/222",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-12-sovety-dlya-novichka\\1112.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\222.md",
+      "block": "novice-tips",
+      "oldSlug": "1112",
+      "newSlug": "222",
+      "title": "Техника безопасности при работе за компьютером"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+      "note": "intro merged",
+      "block": "novice-tips"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/98",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+      "note": "merged 98",
+      "block": "novice-tips"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-12-sovety-dlya-novichka/99",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+      "note": "merged 99",
+      "block": "novice-tips"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/1",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/301",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\1.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\301.md",
+      "block": "enduser-software",
+      "oldSlug": "1",
+      "newSlug": "301",
+      "title": "Системные приложения"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/2",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/302",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\2.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\302.md",
+      "block": "enduser-software",
+      "oldSlug": "2",
+      "newSlug": "302",
+      "title": "Медиаплееры и обработка мультимедиа"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/303",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\3.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\303.md",
+      "block": "enduser-software",
+      "oldSlug": "3",
+      "newSlug": "303",
+      "title": "Веб-браузеры"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/4",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/304",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\4.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\304.md",
+      "block": "enduser-software",
+      "oldSlug": "4",
+      "newSlug": "304",
+      "title": "Видеосвязь"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/5",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/305",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\5.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\305.md",
+      "block": "enduser-software",
+      "oldSlug": "5",
+      "newSlug": "305",
+      "title": "Мессенджеры"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/6",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/306",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\6.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\306.md",
+      "block": "enduser-software",
+      "oldSlug": "6",
+      "newSlug": "306",
+      "title": "Графика и видео"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/7",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/307",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\7.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\307.md",
+      "block": "enduser-software",
+      "oldSlug": "7",
+      "newSlug": "307",
+      "title": "Безопасность для обычного пользователя"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/8",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/308",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\8.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\308.md",
+      "block": "enduser-software",
+      "oldSlug": "8",
+      "newSlug": "308",
+      "title": "Системные приложения Linux"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/309",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\51.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\309.md",
+      "block": "enduser-software",
+      "oldSlug": "51",
+      "newSlug": "309",
+      "title": "Офисные пакеты"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/52",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/310",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-11-soft-ryadovogo-polzovatelya\\52.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\310.md",
+      "block": "enduser-software",
+      "oldSlug": "52",
+      "newSlug": "310",
+      "title": "Microsoft 365 для пользователя и IT"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+      "note": "intro merged",
+      "block": "enduser-software"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/98",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+      "note": "merged 98",
+      "block": "enduser-software"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/99",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+      "note": "merged 99",
+      "block": "enduser-software"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/401",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\1.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\401.md",
+      "block": "advanced-tips",
+      "oldSlug": "1",
+      "newSlug": "401",
+      "title": "Путь продвинутого пользователя"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/2",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/402",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\2.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\402.md",
+      "block": "advanced-tips",
+      "oldSlug": "2",
+      "newSlug": "402",
+      "title": "Скрипты, макросы и локальная автоматизация"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/403",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\3.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\403.md",
+      "block": "advanced-tips",
+      "oldSlug": "3",
+      "newSlug": "403",
+      "title": "Виртуальные машины, Home Lab и переход на Linux"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/404",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\4.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\404.md",
+      "block": "advanced-tips",
+      "oldSlug": "4",
+      "newSlug": "404",
+      "title": "Приватность, self-hosting и домашняя сеть"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/405",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\5.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\405.md",
+      "block": "advanced-tips",
+      "oldSlug": "5",
+      "newSlug": "405",
+      "title": "Рабочий процесс без мыши"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/406",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\6.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\406.md",
+      "block": "advanced-tips",
+      "oldSlug": "6",
+      "newSlug": "406",
+      "title": "Процессы, мониторинг и чистка Windows"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/407",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\7.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\407.md",
+      "block": "advanced-tips",
+      "oldSlug": "7",
+      "newSlug": "407",
+      "title": "Игры — FPS, латентность и память"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/8",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/408",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\8.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\408.md",
+      "block": "advanced-tips",
+      "oldSlug": "8",
+      "newSlug": "408",
+      "title": "Железо, охлаждение и диагностика"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/9",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/409",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-14-sovety-dlya-prodvinutogo\\9.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\409.md",
+      "block": "advanced-tips",
+      "oldSlug": "9",
+      "newSlug": "409",
+      "title": "Как читать сообщение об ошибке"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/intro",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+      "note": "intro merged",
+      "block": "advanced-tips"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/98",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+      "note": "merged 98",
+      "block": "advanced-tips"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/99",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+      "note": "merged 99",
+      "block": "advanced-tips"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/501",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\1.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\501.md",
+      "block": "advanced-software",
+      "oldSlug": "1",
+      "newSlug": "501",
+      "title": "Софт продвинутого пользователя — обзор"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/2",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/502",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\2.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\502.md",
+      "block": "advanced-software",
+      "oldSlug": "2",
+      "newSlug": "502",
+      "title": "Файловые менеджеры и системные утилиты"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/3",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/503",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\3.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\503.md",
+      "block": "advanced-software",
+      "oldSlug": "3",
+      "newSlug": "503",
+      "title": "Редакторы кода — VS Code, Vim, Notepad++"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/504",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\4.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\504.md",
+      "block": "advanced-software",
+      "oldSlug": "4",
+      "newSlug": "504",
+      "title": "Графика, дизайн и 3D-моделирование"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/5",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/505",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\5.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\505.md",
+      "block": "advanced-software",
+      "oldSlug": "5",
+      "newSlug": "505",
+      "title": "Сетевые и системные диагностические утилиты"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/6",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/506",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\6.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\506.md",
+      "block": "advanced-software",
+      "oldSlug": "6",
+      "newSlug": "506",
+      "title": "Автоматизация — AutoHotkey, PowerShell и планировщик"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/7",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/507",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\7.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\507.md",
+      "block": "advanced-software",
+      "oldSlug": "7",
+      "newSlug": "507",
+      "title": "Безопасность и системное администрирование"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/508",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\8.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\508.md",
+      "block": "advanced-software",
+      "oldSlug": "8",
+      "newSlug": "508",
+      "title": "Виртуализация и управление операционными системами"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/9",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/509",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\9.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\509.md",
+      "block": "advanced-software",
+      "oldSlug": "9",
+      "newSlug": "509",
+      "title": "PowerToys и дополнительные утилиты"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/10",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/510",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\10.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\510.md",
+      "block": "advanced-software",
+      "oldSlug": "10",
+      "newSlug": "510",
+      "title": "diagrams.net (Draw.io) — устройство и формат .drawio"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/11",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/511",
+      "oldFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-13-soft-prodvinutogo-polzovatelya\\11.md",
+      "newFile": "F:\\ITUniverse\\it-knowledge-base\\docs\\encyclopedia\\1-basics\\1-035-bazovaya-informatika\\511.md",
+      "block": "advanced-software",
+      "oldSlug": "11",
+      "newSlug": "511",
+      "title": "Visual Studio Code — установка и работа по документации Microsoft"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/intro",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+      "note": "intro merged",
+      "block": "advanced-software"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/98",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+      "note": "merged 98",
+      "block": "advanced-software"
+    },
+    {
+      "oldPath": "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/99",
+      "newPath": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+      "note": "merged 99",
+      "block": "advanced-software"
+    }
+  ],
+  "deleted035Replacements": {
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/2": "encyclopedia/1-basics/1-035-bazovaya-informatika/1",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/3": "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/4": "encyclopedia/4-code-dev/4-01-algoritmy/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/5": "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/6": "encyclopedia/2-system-network/2-03-set-i-internet/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/7": "encyclopedia/7-project/7-07-intellektualnye-prava/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/8": "encyclopedia/1-basics/1-035-bazovaya-informatika/202",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/9": "tools/development/1",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/10": "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/11": "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/12"
+  },
+  "replacePairs": {
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/intro": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/10": "encyclopedia/1-basics/1-035-bazovaya-informatika/510",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/11": "encyclopedia/1-basics/1-035-bazovaya-informatika/511",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/98": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/99": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1": "encyclopedia/1-basics/1-035-bazovaya-informatika/501",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/2": "encyclopedia/1-basics/1-035-bazovaya-informatika/502",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/3": "encyclopedia/1-basics/1-035-bazovaya-informatika/503",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4": "encyclopedia/1-basics/1-035-bazovaya-informatika/504",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/5": "encyclopedia/1-basics/1-035-bazovaya-informatika/505",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/6": "encyclopedia/1-basics/1-035-bazovaya-informatika/506",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/7": "encyclopedia/1-basics/1-035-bazovaya-informatika/507",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8": "encyclopedia/1-basics/1-035-bazovaya-informatika/508",
+    "encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/9": "encyclopedia/1-basics/1-035-bazovaya-informatika/509",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51": "encyclopedia/1-basics/1-035-bazovaya-informatika/309",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/52": "encyclopedia/1-basics/1-035-bazovaya-informatika/310",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/98": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/99": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/intro": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/1": "encyclopedia/1-basics/1-035-bazovaya-informatika/301",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/2": "encyclopedia/1-basics/1-035-bazovaya-informatika/302",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3": "encyclopedia/1-basics/1-035-bazovaya-informatika/303",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/4": "encyclopedia/1-basics/1-035-bazovaya-informatika/304",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/5": "encyclopedia/1-basics/1-035-bazovaya-informatika/305",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/6": "encyclopedia/1-basics/1-035-bazovaya-informatika/306",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/7": "encyclopedia/1-basics/1-035-bazovaya-informatika/307",
+    "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/8": "encyclopedia/1-basics/1-035-bazovaya-informatika/308",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/98": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/99": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro": "encyclopedia/1-basics/1-035-bazovaya-informatika/intro",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1": "encyclopedia/1-basics/1-035-bazovaya-informatika/401",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/2": "encyclopedia/1-basics/1-035-bazovaya-informatika/402",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3": "encyclopedia/1-basics/1-035-bazovaya-informatika/403",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4": "encyclopedia/1-basics/1-035-bazovaya-informatika/404",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5": "encyclopedia/1-basics/1-035-bazovaya-informatika/405",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6": "encyclopedia/1-basics/1-035-bazovaya-informatika/406",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7": "encyclopedia/1-basics/1-035-bazovaya-informatika/407",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/8": "encyclopedia/1-basics/1-035-bazovaya-informatika/408",
+    "encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/9": "encyclopedia/1-basics/1-035-bazovaya-informatika/409",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/1111": "encyclopedia/1-basics/1-035-bazovaya-informatika/221",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/1112": "encyclopedia/1-basics/1-035-bazovaya-informatika/222",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/10": "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/13",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/11": "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/12",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/111": "encyclopedia/1-basics/1-035-bazovaya-informatika/218",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/311": "encyclopedia/1-basics/1-035-bazovaya-informatika/219",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/312": "encyclopedia/1-basics/1-035-bazovaya-informatika/220",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/2": "encyclopedia/1-basics/1-035-bazovaya-informatika/1",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/3": "encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/4": "encyclopedia/4-code-dev/4-01-algoritmy/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/5": "encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/6": "encyclopedia/2-system-network/2-03-set-i-internet/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/7": "encyclopedia/7-project/7-07-intellektualnye-prava/intro",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/8": "encyclopedia/1-basics/1-035-bazovaya-informatika/202",
+    "encyclopedia/1-basics/1-035-bazovaya-informatika/9": "tools/development/1",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/11": "encyclopedia/1-basics/1-035-bazovaya-informatika/207",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/13": "encyclopedia/1-basics/1-035-bazovaya-informatika/208",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/14": "encyclopedia/1-basics/1-035-bazovaya-informatika/209",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/15": "encyclopedia/1-basics/1-035-bazovaya-informatika/210",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/16": "encyclopedia/1-basics/1-035-bazovaya-informatika/211",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/17": "encyclopedia/1-basics/1-035-bazovaya-informatika/212",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/18": "encyclopedia/1-basics/1-035-bazovaya-informatika/213",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/19": "encyclopedia/1-basics/1-035-bazovaya-informatika/214",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/20": "encyclopedia/1-basics/1-035-bazovaya-informatika/215",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/21": "encyclopedia/1-basics/1-035-bazovaya-informatika/216",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/31": "encyclopedia/1-basics/1-035-bazovaya-informatika/217",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/98": "encyclopedia/1-basics/1-035-bazovaya-informatika/98",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/99": "encyclopedia/1-basics/1-035-bazovaya-informatika/99",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/1": "encyclopedia/1-basics/1-035-bazovaya-informatika/201",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/2": "encyclopedia/1-basics/1-035-bazovaya-informatika/202",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/3": "encyclopedia/1-basics/1-035-bazovaya-informatika/203",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/4": "encyclopedia/1-basics/1-035-bazovaya-informatika/204",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/5": "encyclopedia/1-basics/1-035-bazovaya-informatika/205",
+    "encyclopedia/1-basics/1-12-sovety-dlya-novichka/6": "encyclopedia/1-basics/1-035-bazovaya-informatika/206"
+  },
+  "linkHitsBefore": 2310,
+  "stats": {
+    "contentMoves": 52
+  }
+}

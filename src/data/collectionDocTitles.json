@@ -1,4 +1,19 @@
 {
+  "/encyclopedia/1-basics/1-035-bazovaya-informatika/207": {
+    "title": "Настройка Windows"
+  },
+  "/encyclopedia/1-basics/1-035-bazovaya-informatika/218": {
+    "title": "Родительский контроль"
+  },
+  "/encyclopedia/1-basics/1-035-bazovaya-informatika/303": {
+    "title": "Веб-браузеры"
+  },
+  "/encyclopedia/1-basics/1-035-bazovaya-informatika/309": {
+    "title": "Офисные пакеты"
+  },
+  "/encyclopedia/1-basics/1-035-bazovaya-informatika/intro": {
+    "title": "Базовая информатика — о разделе"
+  },
   "encyclopedia/1-basics/1-01-davayte-poznakomimsya/intro": {
     "title": "Знакомство с Вселенной IT — о разделе"
   },
@@ -79,24 +94,6 @@
   },
   "encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro": {
     "title": "Базовые операции с данными — о разделе"
-  },
-  "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3": {
-    "title": "Веб-браузеры"
-  },
-  "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51": {
-    "title": "Офисные пакеты"
-  },
-  "encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro": {
-    "title": "Софт рядового пользователя — о разделе"
-  },
-  "encyclopedia/1-basics/1-12-sovety-dlya-novichka/11": {
-    "title": "Настройка Windows"
-  },
-  "encyclopedia/1-basics/1-12-sovety-dlya-novichka/111": {
-    "title": "Родительский контроль"
-  },
-  "encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro": {
-    "title": "Советы для новичка — о разделе"
   },
   "encyclopedia/1-basics/1-15-tekst/41": {
     "title": "Справочник по Microsoft Excel"

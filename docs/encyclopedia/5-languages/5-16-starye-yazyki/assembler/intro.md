@@ -55,7 +55,7 @@ import DocCardList from '@theme/DocCardList';
   <div class="callout-title">Школьный курс и эта раздел</div>
 
   <div class="callout-body">
-  В главе [Алгоритмы, языки и программирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) ассемблер упоминается в таблице уровней языков.
+  В главе [Алгоритмы, языки и программирование](/encyclopedia/4-code-dev/4-01-algoritmy/intro) ассемблер упоминается в таблице уровней языков.
 
   Углублённый маршрут — здесь: от [истории](1.md) и [основ](2.md) через [ISA и Intel/AT&T](17.md) до [первой программы](7.md) и [справочника](711.md).
 </div>

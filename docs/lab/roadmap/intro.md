@@ -9,7 +9,7 @@ related:
   - title: Карьера в IT и мифы — о разделе
     doc: encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro
   - title: Советы для новичка — о разделе
-    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/intro
 ---
 
 import DocCardList from '@theme/DocCardList';

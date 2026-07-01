@@ -34,7 +34,7 @@ import DocCardList from '@theme/DocCardList';
   </div>
 
 
-Что используется для фронтенда, что для бэкенда — какие инструменты и технологии нужны в разных областях. Бэкенд-сервисы чаще упаковывают в **контейнеры** или ВМ — см. [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya) (это про инфраструктуру, а не про JVM).
+Что используется для фронтенда, что для бэкенда — какие инструменты и технологии нужны в разных областях. Бэкенд-сервисы чаще упаковывают в **контейнеры** или ВМ — см. [четыре модели развёртывания](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya) (это про инфраструктуру, а не про JVM).
 
 Для учебных игр на коде без движка Unity/Unreal — [Разработка игр на Python](/encyclopedia/5-languages/5-02-python/312), [короткие мини-игры Pygame с разбором](/lab/Примеры/1132), [Minecraft — команды и datapack](/lab/Примеры/1142) (Java Edition, без IDE) и сквозные проекты в [Практикуме разработки игр](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) (Python/Pygame, [Java Survivors](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/8), [Приключения Урала Батыра](https://spirzen.github.io/OnlineCardGame/) на [TypeScript](/encyclopedia/5-languages/5-10-typescript/intro)). Для **Unity + C#** — [курс в редакторе](/encyclopedia/9-spinoff/9-04-razrabotka-igr/3) и [готовые MonoBehaviour в Lab](/lab/Примеры/1136).
 

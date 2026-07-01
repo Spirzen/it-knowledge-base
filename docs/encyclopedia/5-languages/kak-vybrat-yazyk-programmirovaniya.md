@@ -1965,7 +1965,7 @@ flowchart TD
 | Менеджеры версий | [620](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/620) |
 | Пакетные менеджеры | [621](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/621) |
 | Карьера | [1.26 Карьера в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro) |
-| Советы новичку | [1.12](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro) |
+| Советы новичку | [1.035 — советы новичку](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) |
 
 ---
 
@@ -2420,7 +2420,7 @@ VS Code / JetBrains для серьёзной работы. Блокнот — �
 - Нужен контекст фронтенда/бэкенда — [1.23](/encyclopedia/1-basics/1-23-frontend-i-bekend/intro)
 - Общие идеи разработки — [Код и разработка](/encyclopedia/4-code-dev/code-dev)
 - Карьера и мифы — [карьера в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro)
-- Советы новичку — [1.12](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro)
+- Советы новичку — [1.035 — советы новичку](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro)
 - Оглавление раздела — [5. Языки intro](/encyclopedia/5-languages/intro)
 
 **Чек-лист перед углублением:**

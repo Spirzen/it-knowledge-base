@@ -22,7 +22,7 @@ related:
   - title: "Исполняемые файлы и архивы — о разделе"
     doc: encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro
   - title: "Советы для новичка — о разделе"
-    doc: encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro
+    doc: /encyclopedia/1-basics/1-035-bazovaya-informatika/intro
   - title: "Базовые операции с данными — о разделе"
     doc: encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro
   - title: "Текст — о разделе"
@@ -49,7 +49,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Первый коммит** — [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Код — о разделе](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/intro), [Основы работы с Git — о разделе](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro), [Python — о разделе](/encyclopedia/5-languages/5-02-python/intro), [Разработка и отладка — о разделе](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/intro).
 
-**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro).
+**Компьютерная грамотность** — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Операционная система — о разделе](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Софт рядового пользователя — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Системное администрирование — о разделе](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/intro).
 
 **База программиста** — [Данные и информация — о разделе](/encyclopedia/1-basics/1-09-dannye-i-informatsiya/intro), [Базовые операции с данными — о разделе](/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/intro), [Текст — о разделе](/encyclopedia/1-basics/1-15-tekst/intro), [Программа — о разделе](/encyclopedia/1-basics/1-19-programma/intro), [Исполняемые файлы и архивы — о разделе](/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/intro), [Терминал — о разделе](/encyclopedia/2-system-network/2-05-terminal/intro).
 

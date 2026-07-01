@@ -38,7 +38,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Готовы писать и читать графический код?** Переходите в [4.18 Разработка графики](/encyclopedia/4-code-dev/4-18-graphic-dev/intro) — модель, update, render, игровой цикл и стек от Canvas до GPU.
 
-Сводный путеводитель по инструментам (включая Blender, Flutter): [Инструменты и среды](/encyclopedia/1-basics/1-035-bazovaya-informatika/9).
+Сводный путеводитель по инструментам (включая Blender, Flutter): [Инструменты и среды](//tools/development/1).
 
 <DocCardList />
 

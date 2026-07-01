@@ -36,7 +36,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## В энциклопедии
 
-Раздел **Контекст** дополняет [Энциклопедию](/encyclopedia/1-basics/basics) отраслевой призмой — те же технологии (API, БД, безопасность, интеграции), но с регуляторикой и бизнес-процессами домена. Рекомендуемые главы: [Образование и самообучение в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/61), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/intro), [Программирование для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro).
+Раздел **Контекст** дополняет [Энциклопедию](/encyclopedia/1-basics/basics) отраслевой призмой — те же технологии (API, БД, безопасность, интеграции), но с регуляторикой и бизнес-процессами домена. Рекомендуемые главы: [Образование и самообучение в IT](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/61), [Советы для новичка — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro), [Программирование для детей — о разделе](/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/intro), [Применение ИИ — о разделе](/encyclopedia/6-ai/6-06-primenenie-ii/intro).
 
 {/* /context-encyclopedia */}
 

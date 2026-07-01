@@ -37,13 +37,13 @@ import DocCardList from '@theme/DocCardList';
 
 ИИ в этом контуре — ускоритель черновика и объяснений; антипаттерны "код по наитию" и однотипный мусорный вывод — в [вайб-кодинге](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1) и [нейрослопе](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2). Рабочий цикл с LLM — [Генерация кода](/encyclopedia/6-ai/6-04-modeli-i-instrumenty/117); готовые промпты с разбором — [Prompt engineering — библиотека](/lab/Примеры/1150).
 
-Если в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4) вы уже прошли алгоритмы и блок-схемы, этот том переводит те же идеи на язык разработчика — с большей глубиной и практикой.
+Если в [базовой информатике](/encyclopedia/4-code-dev/4-01-algoritmy/intro) вы уже прошли алгоритмы и блок-схемы, этот том переводит те же идеи на язык разработчика — с большей глубиной и практикой.
 
 > **Школьный обзор (этап 28).** Направления программирования, цикл написания программы, понятия языка (алфавит, синтаксис, транслятор), структуры данных, графы, ошибки — [раздел 22 «Базовой информатики»](/encyclopedia/1-basics/1-035-bazovaya-informatika/1#программирование).
 
-Сборка, Run в IDE, dev-сервер в терминале, Docker — единая шпаргалка для новичка: [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13).
+Сборка, Run в IDE, dev-сервер в терминале, Docker — единая шпаргалка для новичка: [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208).
 
-Где исполняется собранный код (bare metal, ВМ, контейнер, облачный worker) — [четыре модели развёртывания](/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8#chetiryre-modeli-razvertyvaniya); среда JVM/CLR — в [4.03 Выполнение кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
+Где исполняется собранный код (bare metal, ВМ, контейнер, облачный worker) — [четыре модели развёртывания](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya); среда JVM/CLR — в [4.03 Выполнение кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 
 <DocCardList />
 
@@ -132,7 +132,7 @@ flowchart LR
   <div class="callout-body">
   С нуля за ПК — [Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101).
 
-  Школьный маршрут — [алгоритмы и языки в базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/4).
+  Школьный маршрут — [алгоритмы и языки в базовой информатике](/encyclopedia/4-code-dev/4-01-algoritmy/intro).
 
   Правовой статус программ — [интеллектуальные права](/encyclopedia/7-project/7-07-intellektualnye-prava/intro).
 

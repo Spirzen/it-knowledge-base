@@ -187,7 +187,7 @@ Wolfenstein: серия шутеров от первого лица, берущ�
 
 ## Word (Microsoft Word)
 
-**Microsoft Word** — текстовый процессор из пакета Microsoft Office; в рунете в шутках символизирует «офисный» DOCX и бюрократический обмен файлами. См. [офисные пакеты](/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51#в-рунет-дискурсе), [Неолурк](https://neolurk.org/wiki/Word).
+**Microsoft Word** — текстовый процессор из пакета Microsoft Office; в рунете в шутках символизирует «офисный» DOCX и бюрократический обмен файлами. См. [офисные пакеты](/encyclopedia/1-basics/1-035-bazovaya-informatika/309#в-рунет-дискурсе), [Неолурк](https://neolurk.org/wiki/Word).
 
 ---
 

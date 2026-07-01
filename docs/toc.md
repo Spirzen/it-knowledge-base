@@ -1,4 +1,4 @@
-﻿---
+---
 title: Содержание
 description: Энциклопедия - это основной раздел Вселенной IT. Он регулярно обновляется, расширяется и изменяется, поэтому рекомендую использовать боковое меню (сайд-бар) для ориентира по разделу.
 sidebar_label: Содержание
@@ -18,18 +18,17 @@ import DocCardList from '@theme/DocCardList';
 
 ## Общая структура проекта
 
-Энциклопедия «Вселенная IT» — **~3000 статей** на [spirzen.ru](https://spirzen.ru/) (девять блоков + часть spinoff). Рядом — **порталы экосистемы** с собственными доменами: [terms](https://terms.spirzen.ru) (~4250 терминов), [lab](https://lab.spirzen.ru) (~180 материалов), [tools](https://tools.spirzen.ru) (~60 статей), [games](https://games.spirzen.ru) (~130), [kids](https://kids.spirzen.ru) (~80), плюс [code](https://code.spirzen.ru) (~2500 примеров), [play](https://play.spirzen.ru) (~500 демо), [search](https://search.spirzen.ru) и утилиты. Старые пути `/glossary/…`, `/lab/…`, `/tools/…` и spinoff **9-03**, **9-04**, **9-11** на spirzen **редиректят** на порталы.
+Энциклопедия "IT Universe" представляет собой систематизированное, многоуровневое пособие, охватывающее полный цикл знаний — от цифровой грамотности до профессиональных практик в инженерии, разработке и управлении. Структура построена по принципу "от общего к частному", с возможностью вертикального (углубление в тему) и горизонтального (перекрёстное изучение смежных дисциплин) движения по содержанию.
 
-Структура построена по принципу «от общего к частному»:
-	- **Энциклопедия** (spirzen.ru) — ядро, теоретическая база;
-	- **Контекст** (spirzen.ru) — отраслевые приложения;
-	- **Лаборатория** ([lab.spirzen.ru](https://lab.spirzen.ru/lab/intro)) — практика и тренажёры;
-	- **Философия** (spirzen.ru) — рефлексия над отраслью;
-	- **Инструменты** ([tools.spirzen.ru](https://tools.spirzen.ru/tools/intro)) — справочник утилит;
-	- **Глоссарий** ([terms.spirzen.ru](https://terms.spirzen.ru/glossary/intro)) — ~4250 терминов;
-	- **О проекте** — лицензия, манифест, техническая документация.
+Разделы сгруппированы по когнитивной и функциональной логике:
+	- Энциклопедия — ядро, теоретическая база и фундаментальные концепции;
+	- Контекст — отраслевые приложения, адаптация универсальных знаний под специфику домена;
+	- Лаборатория — формирование практических навыков через активное обучение;
+	- Философия — рефлексия над онтологией, этикой и методологией отрасли;
+	- Инструменты — справочная и прикладная база для повседневной работы;
+	- О проекте — информация о происхождении, лицензировании и принципах открытости.
 
-Начните с энциклопедии или [Общего содержания](#энциклопедия) ниже. Сквозной поиск — [search.spirzen.ru](https://search.spirzen.ru).
+Начните с энциклопедии.
 
 ## Энциклопедия
 
@@ -236,105 +235,77 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
-### Софт рядового пользователя
+### Файлы, каталоги и пути
 
 <ul>
   <li>
   <ul>
-  Софт рядового пользователя
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/1">1.11. Системные приложения</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/2">1.11. Медиаплееры и обработка мультимедиа</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/3">1.11. Веб-браузеры</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/4">1.11. Видеосвязь</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/5">1.11. Мессенджеры</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/6">1.11. Графика и видео</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/7">1.11. Безопасность для обычного пользователя</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/8">1.11. Системные приложения Linux</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/51">1.11. Офисные пакеты</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/52">1.11. Microsoft 365 для пользователя и IT</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/98">1.11. Софт рядового пользователя — итоги</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-soft-ryadovogo-polzovatelya/99">1.11. Софт рядового пользователя — чек-лист</a></li>
+  Файлы, каталоги и пути
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/1">1.11. Файл и каталог</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/2">1.11. Пути и адресация</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/3">1.11. Имена, расширения и тип содержимого</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/4">1.11. Разделы носителя и файловая система</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/5">1.11. Организация данных и жизненный цикл файла</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/98">1.11. Файлы, каталоги и пути — итоги</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/99">1.11. Файлы, каталоги и пути — чек-лист</a></li>
   </ul>
   </li>
 
 </ul>
 
-### Советы для новичка
+### Цифровые угрозы и модель защиты
 
 <ul>
   <li>
   <ul>
-  Советы для новичка
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/1">1.12. Советы для начинающего пользователя ПК</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/2">1.12. Эргономика рабочего места</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/3">1.12. Горячие клавиши в Windows</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/4">1.12. Визуальное программирование блоками</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/5">1.12. Создание скриншотов на разных платформах</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/6">1.12. Настройка телефона для пожилых пользователей</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/11">1.12. Настройка Windows</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/13">1.12. Запуск и перезапуск приложений</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/14">1.12. Быстрая печать</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/15">1.12. Облако, синхронизация и бэкап для дома</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/16">1.12. Первые шаги в macOS</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/17">1.12. Первые шаги в Linux</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/18">1.12. Знакомство с Android</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/19">1.12. Покупка техники и как не переплатить</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/20">1.12. Умный дом и IoT для пользователя</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/21">1.12. Перенос данных на новый ПК и новый телефон</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/31">1.12. Управление памятью смартфона</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/98">1.12. Советы для новичка — итоги</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/99">1.12. Советы для новичка — чек-лист</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/111">1.12. Родительский контроль</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/311">1.12. Адресная книга</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/312">1.12. Ускорение интернета</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/1111">1.12. Работа с проводником Windows</a></li>
-  <li><a href="/encyclopedia/1-basics/1-12-sovety-dlya-novichka/1112">1.12. Техника безопасности при работе за компьютером</a></li>
+  Цифровые угрозы и модель защиты
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/1">1.12. Активы информационной безопасности и поверхность риска</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/2">1.12. Классификация угроз и сценарии реализации</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/3">1.12. Модель конфиденциальности, целостности и доступности</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/4">1.12. Идентификация, аутентификация и управление доступом</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/5">1.12. Вредоносное программное обеспечение и методы обмана</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/6">1.12. Резервное копирование и обеспечение сохранности данных</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/98">1.12. Цифровые угрозы и модель защиты — итоги</a></li>
+  <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/99">1.12. Цифровые угрозы и модель защиты — чек-лист</a></li>
   </ul>
   </li>
 
 </ul>
 
-### Софт продвинутого пользователя
+### Устройства и подключения
 
 <ul>
   <li>
   <ul>
-  Софт продвинутого пользователя
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/1">1.13. Софт продвинутого пользователя — обзор</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/2">1.13. Файловые менеджеры и системные утилиты</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/3">1.13. Редакторы кода — VS Code, Vim, Notepad++</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/4">1.13. Графика, дизайн и 3D-моделирование</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/5">1.13. Сетевые и системные диагностические утилиты</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/6">1.13. Автоматизация — AutoHotkey, PowerShell и планировщик</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/7">1.13. Безопасность и системное администрирование</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8">1.13. Виртуализация и управление операционными системами</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/9">1.13. PowerToys и дополнительные утилиты</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/10">1.13. Draw.io и формат .drawio</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/11">1.13. Visual Studio Code</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/98">1.13. Софт продвинутого пользователя — итоги</a></li>
-  <li><a href="/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/99">1.13. Софт продвинутого пользователя — чек-лист</a></li>
+  Устройства и подключения
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/1">1.13. Устройства ввода, вывода и классификация периферии</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/2">1.13. Клавиатура, указательные устройства и дисплеи</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/3">1.13. Звуковое оборудование и видеокамеры</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/4">1.13. Порты, USB и проводные интерфейсы</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/5">1.13. Беспроводные интерфейсы</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/6">1.13. Офисная и бытовая периферия</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/7">1.13. Внешние носители, мобильные устройства, драйверы и обслуживание</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/98">1.13. Устройства и подключения — итоги</a></li>
+  <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/99">1.13. Устройства и подключения — чек-лист</a></li>
   </ul>
   </li>
 
 </ul>
 
-### Советы для продвинутого
+### Обмен данными и совместный доступ
 
 <ul>
   <li>
   <ul>
-  Советы для продвинутого
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/1">1.14. Путь продвинутого пользователя</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/2">1.14. Скрипты, макросы и локальная автоматизация</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3">1.14. Виртуальные машины, Home Lab и переход на Linux</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4">1.14. Приватность, self-hosting и домашняя сеть</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/5">1.14. Рабочий процесс без мыши</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/6">1.14. Процессы, мониторинг и чистка Windows</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/7">1.14. Игры — FPS, латентность и память</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/8">1.14. Железо, охлаждение и диагностика</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/9">1.14. Как читать сообщение об ошибке</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/98">1.14. Советы для продвинутого — итоги</a></li>
-  <li><a href="/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/99">1.14. Советы для продвинутого — чек-лист</a></li>
+  Обмен данными и совместный доступ
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/1">1.14. Локальное хранение и архитектура копий</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/2">1.14. Облачное хранение и синхронизация</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/3">1.14. Способы передачи цифровых данных</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/4">1.14. Вложения, ссылки и общий доступ к файлам</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/5">1.14. Передача между устройствами одного владельца</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/6">1.14. Совместная работа, ограничения и типовые ошибки</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/98">1.14. Обмен данными и совместный доступ — итоги</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/99">1.14. Обмен данными и совместный доступ — чек-лист</a></li>
   </ul>
   </li>
 
@@ -398,8 +369,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/3">1.17. Видеоввод и вывод - камеры, дисплеи, кодеки</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/4">1.17. Воспроизведение мультимедиа</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/5">1.17. Редактирование аудио и видео</a></li>
-  <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/55">1.17. Как устроена музыка</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/6">1.17. Форматы аудио и видео</a></li>
+  <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/55">1.17. Как устроена музыка</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/61">1.17. Судебная экспертиза видео- и звукозаписей</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/98">1.17. Аудио и видео — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/99">1.17. Аудио и видео — чек-лист</a></li>
@@ -682,22 +653,65 @@ import DocCardList from '@theme/DocCardList';
   <li>
   <ul>
   Базовая информатика
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/1">1.035. Базовая информатика — ключевые понятия и маршрут</a></li>
-  <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/intro">1.035. Как работает компьютер</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/4">1.035. Алгоритмы, языки и программирование</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/5">1.035. ОС, файловые системы и служебные программы</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/6">1.035. Интернет и сетевые сервисы</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/7">1.035. Право и защита информации в РФ</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/8">1.035. Организация рабочего места</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/9">1.035. Инструменты и среды разработки</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/10">1.035. Организация, архитектура и уровни компьютера</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/11">1.035. Память и вычисления</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/98">1.035. Базовая информатика — итоги</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/99">1.035. Базовая информатика — чек-лист</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/1">1.035. Базовая информатика</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/98">1.035. 1.035. Итоги</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/99">1.035. 1.035. Чек-лист</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/101">1.035. Основы компьютерной грамотности</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/102">1.035. Терминология новичка</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/112">1.035. Цифровая безопасность для пользователя</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/113">1.035. Passkeys и современный вход в аккаунты</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/201">1.035. Советы для начинающего пользователя ПК</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/202">1.035. Эргономика рабочего места</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/203">1.035. Горячие клавиши в Windows</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/204">1.035. Визуальное программирование блоками</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/205">1.035. Создание скриншотов на разных платформах</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/206">1.035. Настройка телефона для пожилых пользователей</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/207">1.035. Настройка Windows</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/208">1.035. Запуск и перезапуск приложений</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/209">1.035. Быстрая печать</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/210">1.035. Облако, синхронизация и бэкап для дома</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/211">1.035. Первые шаги в macOS</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/212">1.035. Первые шаги в Linux</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/213">1.035. Знакомство с Android</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/214">1.035. Покупка техники и как не переплатить</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/215">1.035. Умный дом и IoT для пользователя</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/216">1.035. Перенос данных на новый ПК и новый телефон</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/217">1.035. Управление памятью смартфона</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/218">1.035. Родительский контроль</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/219">1.035. Адресная книга</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/220">1.035. Ускорение интернета</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/221">1.035. Работа с проводником Windows</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/222">1.035. Техника безопасности при работе за компьютером</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/301">1.035. Системные приложения</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/302">1.035. Медиаплееры и обработка мультимедиа</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/303">1.035. Веб-браузеры</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/304">1.035. Видеосвязь</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/305">1.035. Мессенджеры</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/306">1.035. Графика и видео</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/307">1.035. Безопасность для обычного пользователя</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/308">1.035. Системные приложения Linux</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/309">1.035. Офисные пакеты</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/310">1.035. Microsoft 365 для пользователя и IT</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/401">1.035. Путь продвинутого пользователя</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/402">1.035. Скрипты, макросы и локальная автоматизация</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/403">1.035. Виртуальные машины, Home Lab и переход на Linux</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/404">1.035. Приватность, self-hosting и домашняя сеть</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/405">1.035. Рабочий процесс без мыши</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/406">1.035. Процессы, мониторинг и чистка Windows</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/407">1.035. Игры — FPS, латентность и память</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/408">1.035. Железо, охлаждение и диагностика</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/409">1.035. Как читать сообщение об ошибке</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/501">1.035. Софт продвинутого пользователя — обзор</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/502">1.035. Файловые менеджеры и системные утилиты</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/503">1.035. Редакторы кода — VS Code, Vim, Notepad++</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/504">1.035. Графика, дизайн и 3D-моделирование</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/505">1.035. Сетевые и системные диагностические утилиты</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/506">1.035. Автоматизация — AutoHotkey, PowerShell и планировщик</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/507">1.035. Безопасность и системное администрирование</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/508">1.035. Виртуализация и управление операционными системами</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/509">1.035. PowerToys и дополнительные утилиты</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/510">1.035. Draw.io и формат .drawio</a></li>
+  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/511">1.035. Visual Studio Code</a></li>
   </ul>
   </li>
 
@@ -730,7 +744,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/3">2.01. Ядро операционной системы</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/4">2.01. Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5">2.01. Linux</a></li>
-  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/52">2.01. Линус Торвальдс — ядро Linux и Git</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/6">2.01. macOS</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/7">2.01. iOS</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/8">2.01. Android</a></li>
@@ -738,6 +751,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/10">2.01. Требования к ОС и подходы к реализации</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/41">2.01. Справочник по Windows 11</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/51">2.01. Справочник по Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/52">2.01. Линус Торвальдс — ядро Linux и Git</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/71">2.01. Справочник по iOS</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/81">2.01. Справочник по Android</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/98">2.01. Операционная система — итоги</a></li>
@@ -1195,6 +1209,10 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/328">3.03. Онтология в информатике</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/329">3.03. Концептуальные схемы и информационные модели</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/330">3.03. Семантический веб и графы знаний</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/331">3.03. Словарь терминов</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/341">3.03. Виды математических наук</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/342">3.03. Векторы</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/343">3.03. Матрицы и операции</a></li>
   </ul>
   </li>
 
@@ -1619,6 +1637,7 @@ import DocCardList from '@theme/DocCardList';
   Асинхронность
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">4.05. Процессы и потоки выполнения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/2">4.05. Асинхронность простым языком — живые примеры</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/3">4.05. Практикум — последовательное и параллельное выполнение</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">4.05. Управление потоками в многозадачных системах</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/12">4.05. Асинхронное и синхронное выполнение</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/13">4.05. Межпроцессное взаимодействие и обмен данными</a></li>
@@ -1915,6 +1934,34 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/5">4.17. HTML, CSS и JavaScript — три слоя веб-страницы</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/6">4.17. От идеи до работающего сайта</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/7">4.17. Основы веб-дизайна для разработчика</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/8">4.17. Open-source веб-фреймворки</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### Разработка графики
+
+<ul>
+  <li>
+  <ul>
+  Разработка графики
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/1">4.18. От чисел к картинке</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/2">4.18. Модель, update, render</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/3">4.18. Цикл и FSM</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/4">4.18. Структуры сцены</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/5">4.18. Математика 2D/3D</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/6">4.18. High-Level API</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/7">4.18. Веб — Canvas и WebGL</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/8">4.18. Python — Pygame и SDL</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/9">4.18. C# — Unity и UI</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/10">4.18. Skia и ANGLE</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/11">4.18. Графические API</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/12">4.18. VRAM и GPU</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/13">4.18. Буферизация и V-Sync</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/14">4.18. Битмап и монитор</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/998">4.18. Разработка графики — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/999">4.18. Разработка графики — чек-лист</a></li>
   </ul>
   </li>
 
@@ -2028,6 +2075,19 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/286">5.01. Первая программа на Svelte</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/287">5.01. Первая программа на Astro</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/288">5.01. Vite — сборка и dev-server</a></li>
+  </ul>
+  </li>
+
+</ul>
+
+### jQuery
+
+<ul>
+  <li>
+  <ul>
+  jQuery
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/5-jquery/289">5.01. jQuery — обзор библиотеки</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/5-jquery/2891">5.01. Справочник по jQuery</a></li>
   </ul>
   </li>
 
@@ -2191,6 +2251,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/334">5.02. Практикум — Pandas Data Viewer</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/335">5.02. Практикум — распознавание цифр на PyTorch</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/336">5.02. Практикум — тональность отзывов на PyTorch</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/337">5.02. NumPy — массивы, векторы и матрицы</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/341">5.02. Flask</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/342">5.02. Справочник по Flask</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/343">5.02. Создание собственного API на Python</a></li>
@@ -2204,6 +2265,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/3013">5.02. Практикум — доска объявлений на Django</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3111">5.02. Первая программа на Tkinter</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3112">5.02. Справочник по Tkinter — элементы UI</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/3121">5.02. Справочник по pygame.sprite</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3131">5.02. Первая программа на PyQt6</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3411">5.02. Первая программа на Flask</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3431">5.02. FastAPI</a></li>
@@ -2335,6 +2397,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/188">5.04. ООП в F# для взаимодействия с .NET</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/189">5.04. Асинхронность в F#: async, task и агенты</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/190">5.04. Структура F#-проекта</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/191">5.04. Native AOT</a></li>
+  <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/192">5.04. Semantic Kernel и AI</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/998">5.04. Платформа .NET — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/999">5.04. Платформа .NET — чек-лист</a></li>
   </ul>
@@ -2357,7 +2421,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/16">5.05. Первая программа на C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/17">5.05. Переменные и их области видимости</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/18">5.05. Типы данных в C#</a></li>
-  <li><a href="/encyclopedia/5-languages/5-05-csharp/181">5.05. Передача параметров в C# — числа, объекты, ref, out, in</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/19">5.05. Стек и куча</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/20">5.05. Преобразование типов и система типизации</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/21">5.05. Работа с типами</a></li>
@@ -2389,7 +2452,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/47">5.05. Пример реализации бэкенда на C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/48">5.05. Версии C# и .NET</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/49">5.05. Main и top-level statements — точка входа в .NET</a></li>
-  <li><a href="/encyclopedia/5-languages/5-05-csharp/50">5.05. Сравнение C# и Java</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/50">5.05. C# и Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/101">5.05. Справочник по конфигурациям в C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/102">5.05. Рекомендации по разработке на C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/103">5.05. Visual Studio — IDE для разработки на C#</a></li>
@@ -2397,11 +2460,13 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/112">5.05. Встроенные функции и методы C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/151">5.05. Иерархия классов исключений в C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/161">5.05. Простые приложения на C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/181">5.05. Передача параметров в C# — числа, объекты, ref, out, in</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/291">5.05. Справочник по LINQ</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/391">5.05. Класс Thread в C# — создание, Start, фоновые потоки и практика</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/392">5.05. Task и async/await в C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/441">5.05. EF Core — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/442">5.05. ADO.NET / Dapper — первая программа</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/443">5.05. EF Core — продвинутое</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/451">5.05. ASP.NET - фреймворк для веб-приложений</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/452">5.05. Справочник по ASP.NET</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/453">5.05. Приложение с S3, PostgreSQL и ASP.NET Core Web API</a></li>
@@ -2411,6 +2476,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/472">5.05. Справочник языка C# (Microsoft Learn)</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/473">5.05. Справочник .NET API (BCL)</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/474">5.05. Собеседование .NET/C#</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/475">5.05. Маршрут Junior → Senior</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/476">5.05. Архитектура под сценарий</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/493">5.05. Guid в C# — шпаргалка</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/998">5.05. C# — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/999">5.05. C# — чек-лист</a></li>
@@ -2423,6 +2490,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/4516">5.05. Тесты ASP.NET Core</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/4517">5.05. Minimal API и OpenAPI</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/4518">5.05. MediatR и pipeline</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/4519">5.05. Валидация и устойчивость API</a></li>
   </ul>
   </li>
 
@@ -2658,7 +2726,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/232">5.09. Spring Boot на Kotlin — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/233">5.09. Kotlin и Java — совместимость на практике</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/234">5.09. Мобильные приложения на Kotlin</a></li>
-  <li><a href="/encyclopedia/5-languages/5-09-kotlin/235">5.09. Сравнение Java и Kotlin</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/235">5.09. Java и Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/998">5.09. Kotlin — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/999">5.09. Kotlin — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/1001">5.09. Что требуется знать перед началом изучения языка программирования Kotlin</a></li>
@@ -2736,7 +2804,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-10-typescript/5">5.10. Простые приложения на TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/6">5.10. Рекомендации по разработке на TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/7">5.10. История TypeScript</a></li>
-  <li><a href="/encyclopedia/5-languages/5-10-typescript/29">5.10. Сравнение JavaScript и TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/8">5.10. Синтаксис и пунктуация TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/9">5.10. Форматы и подключение TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/10">5.10. Типы данных и типизация в TypeScript</a></li>
@@ -2758,6 +2825,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-10-typescript/26">5.10. TypeORM</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/27">5.10. Обработка ошибок в TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/28">5.10. Паттерны в TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-10-typescript/29">5.10. Сравнение JavaScript и TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/998">5.10. TypeScript — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/999">5.10. TypeScript — чек-лист</a></li>
   </ul>
@@ -2786,6 +2854,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-11-ruby/21">5.11. Ruby on Rails</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/25">5.11. Hotwire и Stimulus</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/26">5.11. RSpec — практикум</a></li>
+  <li><a href="/encyclopedia/5-languages/5-11-ruby/31">5.11. Компактный справочник API Ruby</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/40">5.11. if __FILE__ == $0 — запуск скрипта и require</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/101">5.11. Рекомендации по разработке на Ruby</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/102">5.11. Объектно-ориентированное программирование в Ruby</a></li>
@@ -2819,7 +2888,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-12-groovy/17">5.12. Синтаксис и пунктуация в Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/18">5.12. Синтаксические конструкции Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/19">5.12. Работа с базами данных из Groovy</a></li>
-  <li><a href="/encyclopedia/5-languages/5-12-groovy/20">5.12. Сравнение Java и Groovy</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/20">5.12. Java и Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/21">5.12. Spock — первая спецификация</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/22">5.12. Jenkins Pipeline — первый Jenkinsfile</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/23">5.12. Gradle Groovy DSL — первая сборка</a></li>
@@ -3590,6 +3659,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/122">6.05. Практикум — проекты по ИИ</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/123">6.05. Function calling и structured output</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/124">6.05. GraphRAG и agentic RAG</a></li>
+  <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/127">6.05. Оптимизация локального инференса LLM</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/999">6.05. Разработка ИИ — чек-лист</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/1131">6.05. Интеграция ИИ в веб-приложения</a></li>
   </ul>
@@ -4813,8 +4883,6 @@ import DocCardList from '@theme/DocCardList';
 
 ## Спин-офф
 
-> **Порталы:** подразделы **9.03 Игровая индустрия** и **9.04 Разработка игр** — на [games.spirzen.ru](https://games.spirzen.ru/games/intro); **9.11 Для детей** — на [kids.spirzen.ru](https://kids.spirzen.ru/kids/intro). Ссылки ниже ведут на spirzen.ru и **автоматически перенаправляются**. Остальные spinoff (9.01, 9.02, 9.05–9.10) остаются на spirzen.ru.
-
 ### Спин-офф
 
 <ul>
@@ -4852,6 +4920,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/3">9.02. Как понять, что пора менять работу — чек-лист</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/4">9.02. Границы, on-call и разговор с руководителем</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/5">9.02. Выгорание в IT — восстановление</a></li>
+  <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/6">9.02. Когда дело не в вас: платформы с высоким порогом входа</a></li>
   </ul>
   </li>
 
@@ -5294,9 +5363,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## Лаборатория
 
-Практический раздел для тех, кому интереснее попробовать, поэкспериментировать и учиться на практике. **Канонический сайт** — [lab.spirzen.ru](https://lab.spirzen.ru/lab/intro) (~180 материалов). Ссылка `/lab/intro` на spirzen редиректит на портал.
+Практический раздел для тех, кому интереснее попробовать, поэкспериментировать и учиться на практике.
 
-<p><a href="https://lab.spirzen.ru/lab/intro">Лаборатория — о разделе</a></p>
+<p><a href="/lab/intro">Лаборатория — о разделе</a></p>
 
 ## Философия
 
@@ -5306,15 +5375,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## Инструменты
 
-Справочник инструментов для повседневной работы в IT. **Канонический сайт** — [tools.spirzen.ru](https://tools.spirzen.ru/tools/intro) (~60 статей).
+Справочник инструментов для повседневной работы в IT.
 
-<p><a href="https://tools.spirzen.ru/tools/intro">Инструменты — о разделе</a></p>
-
-## Глоссарий
-
-~4250 IT-терминов с поиском и алфавитом — [terms.spirzen.ru](https://terms.spirzen.ru/glossary/intro). Путь `/glossary/intro` на spirzen редиректит на портал.
-
-<p><a href="https://terms.spirzen.ru/glossary/intro">Глоссарий — о разделе</a></p>
+<p><a href="/tools/intro">Инструменты — о разделе</a></p>
 
 ## О проекте
 

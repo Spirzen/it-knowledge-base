@@ -521,12 +521,37 @@ function mergeMaps(...maps) {
   return merged;
 }
 
+/** Редиректы с удалённых 1.11–1.14 (советы/софт) → 1.035 после миграции. */
+function mergeBasics035MigrationRedirects(redirectMap) {
+  const auditPath = path.join(root, 'info', 'migration-035-link-audit.json');
+  if (!fs.existsSync(auditPath)) {
+    return;
+  }
+  let audit;
+  try {
+    audit = JSON.parse(fs.readFileSync(auditPath, 'utf8'));
+  } catch {
+    return;
+  }
+  const pairs = {
+    ...(audit.replacePairs ?? {}),
+    ...(audit.deleted035Replacements ?? {}),
+  };
+  for (const [oldRel, newRel] of Object.entries(pairs)) {
+    if (typeof oldRel !== 'string' || typeof newRel !== 'string') {
+      continue;
+    }
+    addLegacy(redirectMap, normalizeHref(`/${newRel}`), normalizeHref(`/${oldRel}`));
+  }
+}
+
 function main() {
   const categoryByDir = buildCategoryMap();
   const slugger = createSlugger();
 
   const docMap = collectDocRedirects(categoryByDir, slugger);
   const catMap = collectCategoryIndexRedirects(categoryByDir, slugger);
+  mergeBasics035MigrationRedirects(docMap);
   const merged = mergeMaps(docMap, catMap);
   const canonicalSet = new Set(merged.keys());
 
