@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1
   - title: "AgentOps и LLM-стек — слои 4–7"
     doc: encyclopedia/6-ai/6-08-agentops/1
+  - title: "Безопасная интеграция LLM в мобильные и клиентские приложения"
+    doc: encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/10
   - title: "Информационная безопасность — о разделе"
     doc: encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/intro
 ---
@@ -38,7 +40,8 @@ import DocCardList from '@theme/DocCardList';
 7. **[Slopsquatting и supply chain](./7)** — пакеты, модели, PyPI.
 8. **[Дипфейки и биометрия](./8)** — KYC, vishing, recovery.
 9. **[ИИ в SOC](./9)** — triage, логи, границы автономии.
-10. **[Итоги](./98)** и **[чек-лист](./99)**.
+10. **[Безопасная интеграция LLM в мобильные и клиентские приложения](./10)** — BFF, утечки ключей, LLMjacking.
+11. **[Итоги](./98)** и **[чек-лист](./99)**.
 
 Краткие правила для сотрудника — [Ответственное использование ИИ](/encyclopedia/6-ai/6-06-primenenie-ii/3). Риски "кода по наитию" — [вайб-кодинг](/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1). Эксплуатация агентов в prod — [AgentOps](/encyclopedia/6-ai/6-08-agentops/1).
 
