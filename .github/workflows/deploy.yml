@@ -26,19 +26,30 @@ jobs:
         with:
           fetch-depth: 0
 
-      # ubuntu-latest ≈ 7 GB RAM; на runner уже может быть /swapfile — свой файл в /mnt.
+      # Стандартный runner ≈14 GB диска; Docusaurus + node_modules + swap легко упираются в лимит.
+      - name: Free disk space on runner
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /opt/hostedtoolcache/CodeQL
+          sudo docker image prune --all --force 2>/dev/null || true
+          df -h
+
+      # ubuntu-latest ≈ 7 GB RAM; небольшой swap на /mnt после очистки диска.
       - name: Add swap for large Docusaurus build
         run: |
           SWAP=/mnt/docusaurus-swapfile
           sudo swapoff "$SWAP" 2>/dev/null || true
           sudo rm -f "$SWAP"
-          if ! sudo fallocate -l 10G "$SWAP" 2>/dev/null; then
-            sudo dd if=/dev/zero of="$SWAP" bs=1M count=10240 status=none
+          if ! sudo fallocate -l 6G "$SWAP" 2>/dev/null; then
+            sudo dd if=/dev/zero of="$SWAP" bs=1M count=6144 status=none
           fi
           sudo chmod 600 "$SWAP"
           sudo mkswap "$SWAP"
           sudo swapon "$SWAP"
           free -h
+          df -h
 
       - uses: actions/setup-node@v4
         with:
