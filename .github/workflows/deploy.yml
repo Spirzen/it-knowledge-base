@@ -12,15 +12,12 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     timeout-minutes: 90
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -53,7 +50,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
           cache: npm
 
       - run: npm ci
@@ -62,11 +59,27 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=14336
 
-      - uses: actions/configure-pages@v5
+      - name: Report build artifact size
+        run: du -sh build && find build -type f -printf '%s %p\n' | sort -rn | head -20
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: build
 
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
+        with:
+          # ~800 MB static site: syncing_files может занять >10 мин по умолчанию
+          timeout: 1800000
+          error_count: 30
+          reporting_interval: 10000
