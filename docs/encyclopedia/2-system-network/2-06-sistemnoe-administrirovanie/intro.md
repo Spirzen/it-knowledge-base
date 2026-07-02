@@ -41,7 +41,9 @@ import DocCardList from '@theme/DocCardList';
 |------|--------|------------|
 | 1 | [Администрирование](./1.md) | Роли, права, RBAC, кто такой sysadmin |
 | 2 | [Установка и настройка ОС](./2.md) | ISO, UEFI/GPT, загрузка, переустановка |
-| 3 | [ИТ-инфраструктура](./3.md) | Железо, софт, сеть; [четыре модели развёртывания](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya), [типы storage](/encyclopedia/2-system-network/2-10-zhelezo/121.md) |
+| 3 | [ИТ-инфраструктура](./3.md) | Железо, софт, сеть; [четыре модели развёртывания](/encyclopedia/2-system-network/2-02-platformy/21#chetiryre-modeli-razvertyvaniya), [типы storage](/encyclopedia/2-system-network/2-10-zhelezo/121.md) |
+| 3b | [Home Lab](./10.md) | ВМ, Docker, переход на Linux, домашний сервер |
+| 3c | [PowerToys](./11.md) | Лаунчер, зоны окон, hosts, File Locksmith на рабочей станции |
 | 4 | [Windows Server — начало](./63.md) | Роли, отличия от клиентской Windows |
 | 5 | [Управление службами в Windows](./64.md) | Критичные службы, ручной запуск, удаление и добавление своих служб |
 | 6 | [Настройка серверов](./4.md) | Первый DC, AD, DNS, PowerShell |

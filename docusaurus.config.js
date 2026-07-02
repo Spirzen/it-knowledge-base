@@ -1,4 +1,4 @@
-// docusaurus.config.js
+﻿// docusaurus.config.js
 
 /** @type {Record<string, string[]>} */
 let docLegacyRedirects = {};
@@ -289,6 +289,46 @@ module.exports = {
           ];
           slugRedirects['/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/134'] = [
             '/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/134',
+          ];
+
+          slugRedirects['/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/10'] = [
+            '/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10',
+          ];
+          slugRedirects['/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/402',
+          ];
+          slugRedirects['/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/503'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/503',
+          ];
+          slugRedirects['/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/511'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/511',
+          ];
+
+          slugRedirects['/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/403',
+            '/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/3',
+          ];
+          slugRedirects['/encyclopedia/2-system-network/2-02-platformy/21'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/508',
+            '/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/8',
+          ];
+
+          slugRedirects['/encyclopedia/1-basics/1-035-bazovaya-informatika/201'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/401',
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/501',
+          ];
+          slugRedirects['/encyclopedia/2-system-network/2-03-set-i-internet/220'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/220',
+            '/encyclopedia/1-basics/1-12-sovety-dlya-novichka/312',
+          ];
+          slugRedirects['/encyclopedia/2-system-network/2-03-set-i-internet/404'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/404',
+            '/encyclopedia/1-basics/1-14-sovety-dlya-prodvinutogo/4',
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/507',
+          ];
+          slugRedirects['/encyclopedia/2-system-network/2-03-set-i-internet/505'] = [
+            '/encyclopedia/1-basics/1-035-bazovaya-informatika/505',
+            '/encyclopedia/1-basics/1-13-soft-prodvinutogo-polzovatelya/5',
           ];
 
           const fromGenerated = docLegacyRedirects[existingPath] ?? [];

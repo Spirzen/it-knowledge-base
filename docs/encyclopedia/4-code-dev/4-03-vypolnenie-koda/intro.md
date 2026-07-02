@@ -40,7 +40,7 @@ import DocCardList from '@theme/DocCardList';
 | 5 | [Переменные](./115.md) (типы, scope, namespace), [неопределённое поведение](./111.md) | Данные и границы языка |
 | 6 | [Process VM и среда выполнения](./116.md), [байт-код — JIT и IR](./314.md) | JVM, CLR, V8, PVM; отличие от VirtualBox |
 | — | [Память процесса](./313.md) | Виртуальные адреса, сегменты, подкачка страниц |
-| — | [Четыре модели развёртывания](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya) | Bare metal, ВМ, контейнеры (отдельно от JVM/CLR) |
+| — | [Четыре модели развёртывания](/encyclopedia/2-system-network/2-02-platformy/21#chetiryre-modeli-razvertyvaniya) | Bare metal, ВМ, контейнеры (отдельно от JVM/CLR) |
 
 <div class="callout callout--tip">
   <div class="callout-title">До изучения языков</div>

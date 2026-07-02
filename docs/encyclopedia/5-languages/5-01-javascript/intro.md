@@ -64,13 +64,13 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | **AJAX** | обмен данными с сервером без полной перезагрузки страницы | [Асинхронность](./21.md), [История](./11.md) |
 | **Comet** | push-модели поверх HTTP (long polling, поток) | [Асинхронность](./21.md), [SSE](./37.md) |
 | **Веб-приложение** | интерактивная программа в браузере (часто SPA) | [Применение в вебе](./14.md) |
-| **V8** | движок JavaScript (Chrome, Node.js) | [Применение](./14.md), [Node.js](./26.md) |
+| **V8** | движок JavaScript (Chrome, Node.js) | [Применение](./14.md), [Node.js](./3-ecosystem/1-runtime-node/26.md) |
 | **Chromium** | открытый браузерный проект (рендер + V8) | [Применение](./14.md) |
-| **Node.js** | серверная среда на V8 | [Node.js](./26.md) |
+| **Node.js** | серверная среда на V8 | [Node.js](./3-ecosystem/1-runtime-node/26.md) |
 | **Electron** | десктоп на Chromium + Node.js | [Применение](./14.md) |
 | **webOS** | платформа устройств (TV) на веб-технологиях | [Применение](./14.md) |
 | **jQuery** | библиотека DOM и AJAX (2006+) | [jQuery — обзор](./3-ecosystem/2-frontend-frameworks/5-jquery/289.md), [справочник](./3-ecosystem/2-frontend-frameworks/5-jquery/2891.md) |
-| **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./27.md) ([карта тем](./27.md#карта-тем-react), [первая программа](./272.md), [справочник](./3-ecosystem/2-frontend-frameworks/271.md), [галерея компонентов](/lab/Примеры/1146)), [Vue](./28.md), [Angular](./29.md), [Экосистема](./25.md), [Ext JS](./31.md) |
+| **React, Vue, Angular, Ember, Ext JS** | UI-фреймворки и библиотеки | [React](./3-ecosystem/2-frontend-frameworks/1-react/27.md) ([карта тем](./3-ecosystem/2-frontend-frameworks/1-react/27.md#карта-тем-react), [первая программа](./3-ecosystem/2-frontend-frameworks/1-react/272.md), [справочник](./3-ecosystem/2-frontend-frameworks/271.md), [галерея компонентов](/lab/Примеры/1146)), [Vue](./3-ecosystem/2-frontend-frameworks/2-vue/28.md), [Angular](./3-ecosystem/2-frontend-frameworks/3-angular/29.md), [Экосистема](./25.md), [Ext JS](./3-ecosystem/2-frontend-frameworks/4-ext-js/31.md) |
 
 > **Сначала:** [Что такое код и как он работает](/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1) — общая база — **код**, **блок кода**, **компиляция** и **интерпретация**, **исходный**, **байт-** и **машинный код**; в этом разделе — синтаксис и особенности языка.
 
@@ -105,7 +105,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 5 | [Практика](./32.md) · [curl / fetch — примеры](/lab/Примеры/1133) · [Fetch / axios — типовые запросы](/lab/Примеры/1145) | рабочие сниппеты и галереи: GET/POST, токен, таймаут, React `useEffect` — с построчным разбором |
 | 6 | [Web Share API](./44.md) | системное окно "Поделиться" через `navigator.share` |
 | 7 | [Notification API](./46.md) | разрешения и нативные уведомления браузера |
-| 8 | [Первая программа на React](./272.md) | подключение API в компонентном UI |
+| 8 | [Первая программа на React](./3-ecosystem/2-frontend-frameworks/1-react/272.md) | подключение API в компонентном UI |
 | 8a | [React — компоненты-рецепты](/lab/Примеры/1146) | счётчик, todo, формы, modal, Router — готовый код с разбором строк |
 
 Этот маршрут даёт полноценный переход от нативных API браузера к прикладным интеграциям в реальных интерфейсах.
@@ -151,7 +151,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
 | 2a | [Точка входа в Node.js](./3-ecosystem/1-runtime-node/48.md) | `require.main`, ESM и прямой `node file.js` |
 | 3 | [React](./3-ecosystem/2-frontend-frameworks/1-react/272.md) · [галерея](/lab/Примеры/1146) · [Vue](./3-ecosystem/2-frontend-frameworks/2-vue/282.md) · [Next](./3-ecosystem/3-meta-frameworks/2731.md) | UI |
 | 3b | [Fullstack](./3-ecosystem/1-runtime-node/264.md) | API + фронт, CORS |
-| 4 | [Angular](./292.md) | Крупные SPA (по желанию) |
+| 4 | [Angular](./3-ecosystem/2-frontend-frameworks/3-angular/292.md) | Крупные SPA (по желанию) |
 | 5 | [Electron + React](/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118) | Десктоп |
 | 5a | [TypeScript (подробнее в отдельном разделе)](/encyclopedia/5-languages/5-10-typescript/intro) → [Практикум](/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/intro) | Игры на TS (Canvas, онлайн-карты) |
 
@@ -177,7 +177,7 @@ JavaScript оживляет страницу в **браузере**. Это н�
   <div class="callout-title">Инструменты для старта</div>
 
   <div class="callout-body">
-  **VS Code**, встроенный терминал, **Live Server** и **Emmet** для HTML/CSS — [DevTools в браузере — справочник](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116), общие принципы отладки — [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111), IDE — [редакторы](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10).
+  **VS Code**, встроенный терминал, **Live Server** и **Emmet** для HTML/CSS — [DevTools в браузере — справочник](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116), общие принципы отладки — [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111), IDE — [редакторы](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/10).
 
   Разметка — [HTML](/encyclopedia/3-data-markup/3-09-html/intro), стили — [CSS](/encyclopedia/3-data-markup/3-10-css/intro).
 

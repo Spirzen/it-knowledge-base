@@ -13,6 +13,8 @@ related:
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/4
   - title: "ZCode и GLM-5.2 — IDE-агент, длинный контекст и вайб-кодинг"
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/6
+  - title: "Экономия токенов"
+    doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/7
   - title: "Нейрослоп"
     doc: encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2
   - title: "Генерация кода — ChatGPT, Gemini и DeepSeek"
@@ -46,6 +48,7 @@ import DocCardList from '@theme/DocCardList';
 | [Практический AI-стек — Lovable, Supabase, Cursor, n8n и ChatGPT](./3) | Практический AI-стек — настройка среды, GPT-приложения, mini-CRM, интеграции, промпт-инжиниринг |
 | [Claude Code — установка, контекст и практический проект](./4) | Claude Code — установка, CLI и веб, контекст, subagents, MCP, plan mode, Ralph-loop, практикум |
 | [ZCode и GLM-5.2 — IDE-агент, длинный контекст и вайб-кодинг](./6) | ZCode 3.0, GLM-5.2 (1M, MIT), сравнение с Cursor и Claude Code, GLM Coding Plan |
+| [Экономия токенов](./7) | Токенизация, BPE, русский vs английский, стоимость и контекст, приёмы экономии, Caveman skill |
 | [Нейрослоп](./2) | Нейрослоп — низкокачественный ИИ-контент в коде, тексте и медиа; как распознать и не производить |
 
 [Итоги](./98) и [чек-лист](./99) — после прохождения статей.

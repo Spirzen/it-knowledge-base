@@ -45,7 +45,7 @@ import DocCardList from '@theme/DocCardList';
 
 Материалы для разработчиков, **архитекторов** и аналитиков. Много статей с интерактивными схемами ([C4, UML](/encyclopedia/7-project/7-04-analitika/1231), эскизы монолита и микросервисов).
 
-Уровень **развёртывания** (bare metal, ВМ, контейнеры, облако) — [четыре модели](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya); оркестрация — [8.06](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro).
+Уровень **развёртывания** (bare metal, ВМ, контейнеры, облако) — [четыре модели](/encyclopedia/2-system-network/2-02-platformy/21#chetiryre-modeli-razvertyvaniya); оркестрация — [8.06](/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/intro).
 
 *Как закодировать и собрать* решения — в **[Конструирование ПО](/encyclopedia/7-project/7-12-konstruirovanie-po/intro)** (связность/сцепление, модели ЖЦ, планирование).
 

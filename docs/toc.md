@@ -1,4 +1,4 @@
----
+﻿---
 title: Содержание
 description: Энциклопедия - это основной раздел Вселенной IT. Он регулярно обновляется, расширяется и изменяется, поэтому рекомендую использовать боковое меню (сайд-бар) для ориентира по разделу.
 sidebar_label: Содержание
@@ -248,6 +248,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/5">1.11. Организация данных и жизненный цикл файла</a></li>
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/98">1.11. Файлы, каталоги и пути — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/99">1.11. Файлы, каталоги и пути — чек-лист</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221">1.11. Работа с проводником Windows</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502">1.11. Файловые менеджеры и системные утилиты</a></li>
   </ul>
   </li>
 
@@ -304,6 +306,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/4">1.14. Вложения, ссылки и общий доступ к файлам</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/5">1.14. Передача между устройствами одного владельца</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/6">1.14. Совместная работа, ограничения и типовые ошибки</a></li>
+  <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/7">1.14. Облако, синхронизация и бэкап для дома</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/98">1.14. Обмен данными и совместный доступ — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/99">1.14. Обмен данными и совместный доступ — чек-лист</a></li>
   </ul>
@@ -449,6 +452,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/3">1.21. Эффективный поиск в интернете</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/4">1.21. Популярные поисковые системы</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/5">1.21. ИИ для новичка</a></li>
+  <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/6">1.21. ИИ-инструменты в поисковиках</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/98">1.21. Поиск информации — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/99">1.21. Поиск информации — чек-лист</a></li>
   </ul>
@@ -669,7 +673,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/207">1.035. Настройка Windows</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/208">1.035. Запуск и перезапуск приложений</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/209">1.035. Быстрая печать</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/210">1.035. Облако, синхронизация и бэкап для дома</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/211">1.035. Первые шаги в macOS</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/212">1.035. Первые шаги в Linux</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/213">1.035. Знакомство с Android</a></li>
@@ -679,8 +682,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/217">1.035. Управление памятью смартфона</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/218">1.035. Родительский контроль</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/219">1.035. Адресная книга</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/220">1.035. Ускорение интернета</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/221">1.035. Работа с проводником Windows</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221">1.035. Работа с проводником Windows</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/222">1.035. Техника безопасности при работе за компьютером</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/301">1.035. Системные приложения</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/302">1.035. Медиаплееры и обработка мультимедиа</a></li>
@@ -692,26 +694,16 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/308">1.035. Системные приложения Linux</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/309">1.035. Офисные пакеты</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/310">1.035. Microsoft 365 для пользователя и IT</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/401">1.035. Путь продвинутого пользователя</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/402">1.035. Скрипты, макросы и локальная автоматизация</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/403">1.035. Виртуальные машины, Home Lab и переход на Linux</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/404">1.035. Приватность, self-hosting и домашняя сеть</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/405">1.035. Рабочий процесс без мыши</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/406">1.035. Процессы, мониторинг и чистка Windows</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/407">1.035. Игры — FPS, латентность и память</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/408">1.035. Железо, охлаждение и диагностика</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/409">1.035. Как читать сообщение об ошибке</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/501">1.035. Софт продвинутого пользователя — обзор</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/502">1.035. Файловые менеджеры и системные утилиты</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/503">1.035. Редакторы кода — VS Code, Vim, Notepad++</a></li>
+  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502">1.035. Файловые менеджеры и системные утилиты</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/504">1.035. Графика, дизайн и 3D-моделирование</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/505">1.035. Сетевые и системные диагностические утилиты</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/506">1.035. Автоматизация — AutoHotkey, PowerShell и планировщик</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/507">1.035. Безопасность и системное администрирование</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/508">1.035. Виртуализация и управление операционными системами</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/509">1.035. PowerToys и дополнительные утилиты</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/510">1.035. Draw.io и формат .drawio</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/511">1.035. Visual Studio Code</a></li>
   </ul>
   </li>
 
@@ -788,6 +780,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/1">2.02. Платформы в IT</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/2">2.02. Виртуализация</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/3">2.02. Программные платформы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/21">2.02. Инструменты виртуализации</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/98">2.02. Платформы — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/99">2.02. Платформы — чек-лист</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/111">2.02. Серверные платформы</a></li>
@@ -820,13 +813,17 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/42">2.03. Надёжная доставка — от идеи к TCP</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/61">2.03. Интернет-провайдер</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/71">2.03. Беспроводные сети - Wi-Fi, Bluetooth, LTE</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/81">2.03. Как работать с сетью</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/91">2.03. Государственное регулирование интернета</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/98">2.03. Сеть и интернет — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/99">2.03. Сеть и интернет — чек-лист</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/211">2.03. Архитектура глобальной сети</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/212">2.03. Глобальная доставка контента - CDN и кэширование</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/220">2.03. Ускорение интернета</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/404">2.03. Приватность, self-hosting и домашняя сеть</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/411">2.03. CORS - механизм междоменных запросов</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/421">2.03. TCP — соединение, окно и перегрузка</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/505">2.03. Сетевые и системные диагностические утилиты</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/511">2.03. Домен и хостинг</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/611">2.03. Справочник по HTTP-протоколу</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/612">2.03. Измерение и оптимизация скорости интернета</a></li>
@@ -922,6 +919,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7">2.06. NAT и проброс портов</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8">2.06. Планирование и автоматизация задач</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9">2.06. Диагностика и обработка системных ошибок</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10">2.06. Виртуальные машины, Home Lab и переход на Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11">2.06. Microsoft PowerToys и утилиты рабочей станции Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31">2.06. Сетевые аномалии и системные процессы</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61">2.06. Организация домашней сети</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62">2.06. Идентичность Microsoft Entra и RBAC</a></li>
@@ -1511,6 +1510,21 @@ import DocCardList from '@theme/DocCardList';
 
 </ul>
 
+### Инструменты разработки
+
+<ul>
+  <li>
+  <ul>
+  Инструменты разработки
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/10">4.011. Интегрированные среды разработки (IDE)</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402">4.011. Скрипты, макросы и локальная автоматизация</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/503">4.011. Редакторы кода — VS Code, Vim, Notepad++</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/511">4.011. Visual Studio Code</a></li>
+  </ul>
+  </li>
+
+</ul>
+
 ### Алгоритмы
 
 <ul>
@@ -1614,7 +1628,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/1">4.04. Проект программного обеспечения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/2">4.04. Модульность и компонентный подход в разработке</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3">4.04. Оптимизация размера и производительности приложений</a></li>
-  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10">4.04. Интегрированные среды разработки (IDE)</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/11">4.04. Фреймворк</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/101">4.04. Библиотека</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/102">4.04. Сборка, компиляция и публикация приложений</a></li>
@@ -3704,6 +3717,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/4">6.07. Claude Code — установка, контекст и практический проект</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/5">6.07. Мультимодальный ИИ</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/6">6.07. ZCode и GLM-5.2 — IDE-агент, длинный контекст и вайб-кодинг</a></li>
+  <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/7">6.07. Экономия токенов</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/98">6.07. Вайб-кодинг и нейроконтент — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/99">6.07. Вайб-кодинг и нейроконтент — чек-лист</a></li>
   </ul>

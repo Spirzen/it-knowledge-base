@@ -1,4 +1,4 @@
----
+﻿---
 tags:
   - inprogress
 title: Базовая информатика — о разделе
@@ -31,10 +31,10 @@ import DocCardList from '@theme/DocCardList';
 | Блок | Номера | Для кого |
 |------|--------|----------|
 | Вход и грамотность | 1, 101, 102, 112, 113 | С нуля и для самопроверки терминов |
-| Советы новичку | 201–222 | Windows, macOS, Linux, Android, быт |
+| Советы новичку | 201–222 (кроме сети — см. [2.03 / 81](/encyclopedia/2-system-network/2-03-set-i-internet/81)) | Windows, macOS, Linux, Android, быт |
 | Софт рядового | 301–310 | Браузер, офис, мессенджеры, медиа |
-| Советы продвинутому | 401–409 | Автоматизация, homelab, приватность |
-| Софт продвинутого | 501–511 | IDE, утилиты, виртуализация |
+| Советы продвинутому | 405–409 | Автоматизация → [4.011](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/intro); Home Lab → [2.06](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10); сеть и self-hosting → [2.03 / 81](/encyclopedia/2-system-network/2-03-set-i-internet/81) |
+| Софт продвинутого | 502, 504, 506, 510 | Утилиты (503, 511 → [4.011](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/intro)); PowerToys → [2.06 / 11](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11); сетевые утилиты → [2.03 / 505](/encyclopedia/2-system-network/2-03-set-i-internet/505); виртуализация → [2.02](/encyclopedia/2-system-network/2-02-platformy/2) |
 | Итоги | [98](/encyclopedia/1-basics/1-035-bazovaya-informatika/98), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99) | Сводка по всем блокам |
 
 ## Маршруты
@@ -43,7 +43,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Уже пользуетесь Windows** — [207](/encyclopedia/1-basics/1-035-bazovaya-informatika/207) (настройка) → [208](/encyclopedia/1-basics/1-035-bazovaya-informatika/208) (запуск приложений) → [301](/encyclopedia/1-basics/1-035-bazovaya-informatika/301) (софт).
 
-**Хотите глубже** — блок 401+ и 501+, затем [раздел «Система и сеть»](/section/system-network).
+**Хотите глубже** — блок 402+ и 502+, [Home Lab](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10), [виртуализация](/encyclopedia/2-system-network/2-02-platformy/2), затем [раздел «Система и сеть»](/section/system-network).
 
 <ExternalPlayEmbed example="basics/end-user-software-hub" title="Софт пользователя — хаб" minHeight={520} />
 
@@ -67,7 +67,7 @@ import DocCardList from '@theme/DocCardList';
 - [Настройка Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/207)
 - [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208)
 - [Как научиться быстро печатать](/encyclopedia/1-basics/1-035-bazovaya-informatika/209)
-- [Облако, синхронизация и бэкап для дома](/encyclopedia/1-basics/1-035-bazovaya-informatika/210)
+- [Облако, синхронизация и бэкап для дома](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/7)
 - [Первые шаги в macOS](/encyclopedia/1-basics/1-035-bazovaya-informatika/211)
 - [Первые шаги в Linux](/encyclopedia/1-basics/1-035-bazovaya-informatika/212)
 - [Знакомство с Android](/encyclopedia/1-basics/1-035-bazovaya-informatika/213)
@@ -77,8 +77,8 @@ import DocCardList from '@theme/DocCardList';
 - [Управление памятью смартфона](/encyclopedia/1-basics/1-035-bazovaya-informatika/217)
 - [Родительский контроль](/encyclopedia/1-basics/1-035-bazovaya-informatika/218)
 - [Адресная книга](/encyclopedia/1-basics/1-035-bazovaya-informatika/219)
-- [Ускорение интернета](/encyclopedia/1-basics/1-035-bazovaya-informatika/220)
-- [Работа с проводником Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/221)
+- [Ускорение интернета](/encyclopedia/2-system-network/2-03-set-i-internet/220) *(практика — [2.03 / 81](/encyclopedia/2-system-network/2-03-set-i-internet/81))*
+- [Работа с проводником Windows](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221)
 - [Техника безопасности при работе за компьютером](/encyclopedia/1-basics/1-035-bazovaya-informatika/222)
 
 ## Софт рядового пользователя
@@ -96,10 +96,9 @@ import DocCardList from '@theme/DocCardList';
 
 ## Советы продвинутому
 
-- [Путь продвинутого пользователя](/encyclopedia/1-basics/1-035-bazovaya-informatika/401)
-- [Скрипты, макросы и локальная автоматизация](/encyclopedia/1-basics/1-035-bazovaya-informatika/402)
-- [Виртуальные машины, Home Lab и переход на Linux](/encyclopedia/1-basics/1-035-bazovaya-informatika/403)
-- [Приватность, self-hosting и домашняя сеть](/encyclopedia/1-basics/1-035-bazovaya-informatika/404)
+- [Скрипты, макросы и локальная автоматизация](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402)
+- [Виртуальные машины, Home Lab и переход на Linux](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10) *(раздел 2.06)*
+- [Приватность, self-hosting и домашняя сеть](/encyclopedia/2-system-network/2-03-set-i-internet/404) *(практика — [2.03 / 81](/encyclopedia/2-system-network/2-03-set-i-internet/81))*
 - [Рабочий процесс без мыши](/encyclopedia/1-basics/1-035-bazovaya-informatika/405)
 - [Процессы, мониторинг и чистка Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/406)
 - [Игры — FPS, латентность и память](/encyclopedia/1-basics/1-035-bazovaya-informatika/407)
@@ -108,16 +107,14 @@ import DocCardList from '@theme/DocCardList';
 
 ## Софт продвинутого
 
-- [Софт продвинутого пользователя — обзор](/encyclopedia/1-basics/1-035-bazovaya-informatika/501)
-- [Файловые менеджеры и системные утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/502)
-- [Редакторы кода — VS Code, Vim, Notepad++](/encyclopedia/1-basics/1-035-bazovaya-informatika/503)
+- [Файловые менеджеры и системные утилиты](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502)
+- [Редакторы кода — VS Code, Vim, Notepad++](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/503)
 - [Графика, дизайн и 3D-моделирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/504)
-- [Сетевые и системные диагностические утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/505)
+- [Сетевые и системные диагностические утилиты](/encyclopedia/2-system-network/2-03-set-i-internet/505) *(раздел 2.03)*
 - [Автоматизация — AutoHotkey, PowerShell и планировщик](/encyclopedia/1-basics/1-035-bazovaya-informatika/506)
-- [Безопасность и системное администрирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/507)
-- [Виртуализация и управление операционными системами](/encyclopedia/1-basics/1-035-bazovaya-informatika/508)
-- [PowerToys и дополнительные утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/509)
+- [Виртуализация](/encyclopedia/2-system-network/2-02-platformy/2) · [Инструменты виртуализации](/encyclopedia/2-system-network/2-02-platformy/21) *(раздел 2.02)*
+- [Microsoft PowerToys и утилиты рабочей станции](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11) *(раздел 2.06)*
 - [diagrams.net (Draw.io) — устройство и формат .drawio](/encyclopedia/1-basics/1-035-bazovaya-informatika/510)
-- [Visual Studio Code — установка и работа по документации Microsoft](/encyclopedia/1-basics/1-035-bazovaya-informatika/511)
+- [Visual Studio Code — установка и работа по документации Microsoft](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/511)
 
 <DocCardList />

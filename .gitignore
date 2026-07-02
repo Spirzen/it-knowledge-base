@@ -166,11 +166,19 @@ launch.bat
 # Служебные утилиты в tools/ (сканы, приоритеты правок и т.п.)
 /tools/
 
+# Служебная документация и артефакты (не входят в сборку Docusaurus)
+/info/
+
 # Служебные скрипты в scripts/ (миграция, починка, LLM-скан и т.п.)
 /scripts/*.py
 /scripts/_*
-/scripts/segment-map-ru-en.json
-/scripts/path-migration-map.json
+/scripts/*.json
+/scripts/*.txt
+/scripts/analysis/
+/scripts/seo-faq-append/
+/scripts/generated/
+/scripts/*.cjs
+!scripts/ecosystem-footer.cjs
 /scripts/*.mjs
 !scripts/generate-demo-registry.mjs
 !scripts/build-wiki-link-index.mjs
@@ -195,16 +203,6 @@ src/data/docLegacyRedirects.json
 # Локальный APK для dev-сборки (релиз — GitHub Releases)
 static/downloads/it-universe.apk
 
-/scripts/_*.txt
-/scripts/_*.json
-/scripts/*.txt
-/scripts/audit-descriptions-report.json
-/scripts/analysis/
-/scripts/seo-faq-append/
-/scripts/fsharp-language-reference-index.json
-/scripts/generated/
-info/llm-phrases-scan.csv
-
 # Локальная панель управления Docusaurus (admin/)
 /admin/
 /.cursor
@@ -212,6 +210,4 @@ zhelezo-scan.txt
 /AGENTS.local.md
 tmp_test.txt
 _tmp_blocks_2.txt
-info/.$it-universe-architecture.drawio.bkp
 /mockups
-info/.$it-universe-three-tier.drawio.bkp

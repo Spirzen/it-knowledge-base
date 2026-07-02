@@ -43,7 +43,7 @@ import DocCardList from '@theme/DocCardList';
 
 Сборка, Run в IDE, dev-сервер в терминале, Docker — единая шпаргалка для новичка: [Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208).
 
-Где исполняется собранный код (bare metal, ВМ, контейнер, облачный worker) — [четыре модели развёртывания](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya); среда JVM/CLR — в [4.03 Выполнение кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
+Где исполняется собранный код (bare metal, ВМ, контейнер, облачный worker) — [четыре модели развёртывания](/encyclopedia/2-system-network/2-02-platformy/21#chetiryre-modeli-razvertyvaniya); среда JVM/CLR — в [4.03 Выполнение кода](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 
 <DocCardList />
 
@@ -118,7 +118,7 @@ flowchart LR
 | 3 | [4.03 Выполнение](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro) | Память, CPU, VM, JIT |
 | 4 | [4.07 Парадигмы](/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/intro) | Стили мышления |
 | 5 | [4.04 Проект и фреймворки](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/intro) | Структура приложения |
-| 5a | [IDE и редакторы](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/10) | Подсветка, IntelliSense, отладчик в одной среде |
+| 5a | [4.011 Инструменты разработки](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/intro) | IDE, редакторы, VS Code, скрипты |
 | 6 | [4.13 Git](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/intro) · [12 команд](/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115#12-komand) | История изменений кода |
 | 6a | [Отладка](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111) | Точки останова, символы, GDB |
 | 6b | [Тестирование для разработчика](/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1117) | Unit-тесты, Red–Green–Refactor, связь с [7.05](/encyclopedia/7-project/7-05-testirovanie/intro) |
@@ -166,6 +166,7 @@ mindmap
       4.17 Веб-разработка
       4.18 Разработка графики
     Инструменты
+      4.011 Инструменты разработки
       4.13 Основы работы с Git
 ```
 

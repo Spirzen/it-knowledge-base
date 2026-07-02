@@ -18,14 +18,14 @@ related:
   - title: "Операционная система — о разделе"
     doc: encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro
   - title: "Работа с проводником Windows"
-    doc: encyclopedia/1-basics/1-035-bazovaya-informatika/221
+    doc: encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221
 ---
 
 import DocCardList from '@theme/DocCardList';
 
 # О разделе
 
-Раздел описывает, **как операционная система представляет данные на носителе** — файл, каталог, путь, тип по имени и содержимому, жизненный цикл объекта. Это энциклопедия; пошаговая работа в проводнике — в [базовой информатике](/encyclopedia/1-basics/1-035-bazovaya-informatika/221) и [основах компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101).
+Раздел описывает, **как операционная система представляет данные на носителе** — файл, каталог, путь, тип по имени и содержимому, жизненный цикл объекта. Теория в главах 1-5, практические сценарии — в [Работе с проводником Windows](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221) и [Файловых менеджерах и системных утилитах](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502).
 
 ## Рекомендуемый порядок
 

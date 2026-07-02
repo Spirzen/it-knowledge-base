@@ -34,7 +34,7 @@ import DocCardList from '@theme/DocCardList';
 
 Иллюстрации интерфейса Windows (рабочий стол, "Пуск", окна, проводник) — в [Windows / GUI](/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/4) и [Основы компьютерной грамотности — компьютерная грамотность](/encyclopedia/1-basics/1-035-bazovaya-informatika/101#иллюстрации-для-других-статей).
 
-Как одна ОС на сервере соседствует с **ВМ и контейнерами** — [четыре модели развёртывания](/encyclopedia/1-basics/1-035-bazovaya-informatika/508#chetiryre-modeli-razvertyvaniya).
+Как одна ОС на сервере соседствует с **ВМ и контейнерами** — [четыре модели развёртывания](/encyclopedia/2-system-network/2-02-platformy/21#chetiryre-modeli-razvertyvaniya).
 
 <ExternalPlayEmbed example="system-network/os-platforms-hub" title="Операционные системы — хаб" minHeight={520} />
 

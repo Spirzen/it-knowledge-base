@@ -366,7 +366,8 @@ const DOC_TECH_OVERRIDES = {
   '/encyclopedia/1-basics/1-035-bazovaya-informatika/310': 'microsoft',
   '/encyclopedia/1-basics/1-035-bazovaya-informatika/203': 'microsoft',
   '/encyclopedia/1-basics/1-035-bazovaya-informatika/207': 'microsoft',
-  '/encyclopedia/1-basics/1-035-bazovaya-informatika/221': 'microsoft',
+  '/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221': 'microsoft',
+  '/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11': 'microsoft',
   '/encyclopedia/1-basics/1-035-bazovaya-informatika/406': 'microsoft',
   'encyclopedia/1-basics/1-15-tekst/211': 'microsoft',
   'encyclopedia/1-basics/1-15-tekst/212': 'microsoft',
@@ -397,7 +398,7 @@ const DOC_TECH_OVERRIDES = {
   'encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/9111': 'battery',
   '/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/intro': 'filesystem',
   'encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/14': 'filesystem',
-  '/encyclopedia/1-basics/1-035-bazovaya-informatika/502': 'filesystem',
+  '/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502': 'filesystem',
   'encyclopedia/9-spinoff/9-09-media-kontent/1': 'video',
   'encyclopedia/9-spinoff/9-09-media-kontent/11': 'audio',
 };

@@ -26,7 +26,7 @@ id: basics
 | **Никогда не пользовались ПК** | [1.035. Основы компьютерной грамотности](/encyclopedia/1-basics/1-035-bazovaya-informatika/101) | [1.11 Файлы и пути](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/intro), [1.12 Цифровые угрозы](/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/intro), [Цифровая безопасность (112)](/encyclopedia/1-basics/1-035-bazovaya-informatika/112) |
 | **Цифровая грамотность** | [1.035. Базовая информатика — о разделе](/encyclopedia/1-basics/1-035-bazovaya-informatika/intro) | Блоки 201–511, [лаборатория](https://lab.spirzen.ru/lab/tasks/intro) |
 | **Хочу в IT** | [1.03. Дорожная карта](/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1) | [1.26 Карьера](/encyclopedia/1-basics/1-26-karera-v-it-i-mify/intro), [1.02 Обзор Вселенной IT](/encyclopedia/1-basics/1-02-vvedenie/1) |
-| **Уже уверенный пользователь** | [1.035. Советы продвинутому](/encyclopedia/1-basics/1-035-bazovaya-informatika/401) | [Софт продвинутого](/encyclopedia/1-basics/1-035-bazovaya-informatika/501), [2. Система и сеть](/section/system-network) |
+| **Уже уверенный пользователь** | [1.035. Советы для начинающего](/encyclopedia/1-basics/1-035-bazovaya-informatika/201) | [Скрипты и автоматизация](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402), [2. Система и сеть](/section/system-network) |
 
 Полное автоматическое содержание — [docs/toc.md](/toc) и боковое меню энциклопедии (`Ctrl+K`).
 
@@ -125,7 +125,7 @@ mindmap
 - [1.035. Настройка Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/207)
 - [1.035. Запуск и перезапуск приложений](/encyclopedia/1-basics/1-035-bazovaya-informatika/208)
 - [1.035. Как научиться быстро печатать](/encyclopedia/1-basics/1-035-bazovaya-informatika/209)
-- [1.035. Облако, синхронизация и бэкап для дома](/encyclopedia/1-basics/1-035-bazovaya-informatika/210)
+- [1.14. Облако, синхронизация и бэкап для дома](/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/7)
 - [1.035. Первые шаги в macOS](/encyclopedia/1-basics/1-035-bazovaya-informatika/211)
 - [1.035. Первые шаги в Linux](/encyclopedia/1-basics/1-035-bazovaya-informatika/212)
 - [1.035. Знакомство с Android](/encyclopedia/1-basics/1-035-bazovaya-informatika/213)
@@ -135,8 +135,9 @@ mindmap
 - [1.035. Управление памятью смартфона](/encyclopedia/1-basics/1-035-bazovaya-informatika/217)
 - [1.035. Родительский контроль](/encyclopedia/1-basics/1-035-bazovaya-informatika/218)
 - [1.035. Адресная книга](/encyclopedia/1-basics/1-035-bazovaya-informatika/219)
-- [1.035. Ускорение интернета](/encyclopedia/1-basics/1-035-bazovaya-informatika/220)
-- [1.035. Работа с проводником Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/221)
+- [2.03. Как работать с сетью](/encyclopedia/2-system-network/2-03-set-i-internet/81)
+- [2.03. Ускорение интернета](/encyclopedia/2-system-network/2-03-set-i-internet/220)
+- [1.11. Работа с проводником Windows](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221)
 - [1.035. Техника безопасности при работе за компьютером](/encyclopedia/1-basics/1-035-bazovaya-informatika/222)
 
 ### Софт рядового (301+)
@@ -154,10 +155,9 @@ mindmap
 
 ### Советы продвинутому (401+)
 
-- [1.035. Путь продвинутого пользователя](/encyclopedia/1-basics/1-035-bazovaya-informatika/401)
-- [1.035. Скрипты, макросы и локальная автоматизация](/encyclopedia/1-basics/1-035-bazovaya-informatika/402)
-- [1.035. Виртуальные машины, Home Lab и переход на Linux](/encyclopedia/1-basics/1-035-bazovaya-informatika/403)
-- [1.035. Приватность, self-hosting и домашняя сеть](/encyclopedia/1-basics/1-035-bazovaya-informatika/404)
+- [1.035. Скрипты, макросы и локальная автоматизация](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402)
+- [1.035. Виртуальные машины, Home Lab и переход на Linux](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10)
+- [2.03. Приватность, self-hosting и домашняя сеть](/encyclopedia/2-system-network/2-03-set-i-internet/404)
 - [1.035. Рабочий процесс без мыши](/encyclopedia/1-basics/1-035-bazovaya-informatika/405)
 - [1.035. Процессы, мониторинг и чистка Windows](/encyclopedia/1-basics/1-035-bazovaya-informatika/406)
 - [1.035. Игры — FPS, латентность и память](/encyclopedia/1-basics/1-035-bazovaya-informatika/407)
@@ -166,17 +166,15 @@ mindmap
 
 ### Софт продвинутого (501+)
 
-- [1.035. Софт продвинутого пользователя — обзор](/encyclopedia/1-basics/1-035-bazovaya-informatika/501)
-- [1.035. Файловые менеджеры и системные утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/502)
-- [1.035. Редакторы кода — VS Code, Vim, Notepad++](/encyclopedia/1-basics/1-035-bazovaya-informatika/503)
+- [1.11. Файловые менеджеры и системные утилиты](/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502)
+- [1.035. Редакторы кода — VS Code, Vim, Notepad++](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/503)
 - [1.035. Графика, дизайн и 3D-моделирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/504)
-- [1.035. Сетевые и системные диагностические утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/505)
+- [2.03. Сетевые и системные диагностические утилиты](/encyclopedia/2-system-network/2-03-set-i-internet/505)
 - [1.035. Автоматизация — AutoHotkey, PowerShell и планировщик](/encyclopedia/1-basics/1-035-bazovaya-informatika/506)
-- [1.035. Безопасность и системное администрирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/507)
-- [1.035. Виртуализация и управление операционными системами](/encyclopedia/1-basics/1-035-bazovaya-informatika/508)
-- [1.035. PowerToys и дополнительные утилиты](/encyclopedia/1-basics/1-035-bazovaya-informatika/509)
+- [2.02. Виртуализация](/encyclopedia/2-system-network/2-02-platformy/2) · [Инструменты виртуализации](/encyclopedia/2-system-network/2-02-platformy/21)
+- [2.06. Microsoft PowerToys и утилиты рабочей станции](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11)
 - [1.035. diagrams.net (Draw.io) — устройство и формат .drawio](/encyclopedia/1-basics/1-035-bazovaya-informatika/510)
-- [1.035. Visual Studio Code — установка и работа по документации Microsoft](/encyclopedia/1-basics/1-035-bazovaya-informatika/511)
+- [1.035. Visual Studio Code — установка и работа по документации Microsoft](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/511)
 
 - [1.035. Итоги](/encyclopedia/1-basics/1-035-bazovaya-informatika/98)
 - [1.035. Чек-лист](/encyclopedia/1-basics/1-035-bazovaya-informatika/99)
@@ -432,6 +430,7 @@ mindmap
 - [1.21. Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3)
 - [1.21. Популярные поисковики](/encyclopedia/1-basics/1-21-poisk-informatsii/4)
 - [1.21. ИИ для новичка](/encyclopedia/1-basics/1-21-poisk-informatsii/5)
+- [1.21. ИИ-инструменты в поисковиках](/encyclopedia/1-basics/1-21-poisk-informatsii/6)
 - [1.21. Итоги](/encyclopedia/1-basics/1-21-poisk-informatsii/98)
 - [1.21. Чек-лист](/encyclopedia/1-basics/1-21-poisk-informatsii/99)
 
