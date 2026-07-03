@@ -1,0 +1,282 @@
+/**
+ * Семантические иконки интерфейса (Hugeicons → it-encyclopedia-media).
+ * SVG: public/encyclopedia/_shared/img/ui-icons/ — npm run docs:ui-icons
+ *
+ * @typedef {{
+ *   id: string;
+ *   category: string;
+ *   label: string;
+ *   hint?: string;
+ *   file: string;
+ *   alternates?: string[];
+ * }} UiIconEntry
+ */
+
+/** @type {Record<string, string>} */
+export const UI_ICON_CATEGORY_LABELS = {
+  zoom: 'Масштаб и поиск',
+  dev: 'Код и разработка',
+  platform: 'Платформы и сервисы',
+  work: 'Работа и карьера',
+  network: 'Сеть и связь',
+  messaging: 'Сообщения и мессенджеры',
+  money: 'Финансы',
+  media: 'Медиа и устройства',
+  audio: 'Звук',
+  users: 'Пользователи и статусы',
+  files: 'Файлы и передача данных',
+  input: 'Ввод и редактирование',
+  devices: 'Экраны и гаджеты',
+  logistics: 'Доставка и транспорт',
+  market: 'Курсы и тренды',
+  touch: 'Касания и указатель',
+  tools: 'Инструменты и настройки',
+  ai: 'ИИ и токены',
+  games: 'Игры',
+  feedback: 'Реакции и статусы сообщений',
+  tasks: 'Задачи и цели',
+  notes: 'Заметки и метки',
+  system: 'Система и погода',
+  edu: 'Обучение',
+  structure: 'Структура и магазин',
+  playback: 'Воспроизведение',
+  security: 'Безопасность',
+  share: 'Обмен',
+  server: 'Сервер и проверка',
+  clipboard: 'Вырезание',
+  geo: 'Спутник и карты',
+  sync: 'Поворот и обновление',
+  maintain: 'Ремонт и циклы',
+  record: 'Запись и опросы',
+  perf: 'Производительность',
+  print: 'Печать и масштаб ±',
+  viewport: 'Картинка в картинке',
+  draw: 'Рисование и заливка',
+  notify: 'Уведомления',
+  consoles: 'Игровые консоли',
+  nav: 'Навигация',
+  mail: 'Почта',
+  auth: 'Вход и выход',
+  location: 'Геолокация',
+  layers: 'Слои',
+  info: 'Справка и информация',
+  visuals: 'Изображения и идеи',
+  storage: 'Накопители',
+  global: 'Интернет и подарки',
+  folders: 'Папки и файлы',
+  cinema: 'Кино',
+  flags: 'Флаги и фильтры',
+  bio: 'Биометрия',
+  commerce: 'Обмен и скидки',
+  cursor: 'Курсор и комментарии',
+  cloud: 'Облако и время',
+  validate: 'Галочки и проверки',
+  calendar: 'Звонки, камера, календарь',
+  misc: 'Прочее',
+};
+
+/** @type {readonly UiIconEntry[]} */
+export const UI_ICON_ENTRIES = [
+  {id: 'zoom-in', category: 'zoom', label: 'Увеличение (зум)', file: 'ZoomInAreaIcon', alternates: ['SearchAddIcon']},
+  {id: 'zoom-out', category: 'zoom', label: 'Уменьшение (зум)', file: 'ZoomOutAreaIcon', alternates: ['SearchMinusIcon']},
+  {id: 'search', category: 'zoom', label: 'Поиск', file: 'Search01Icon'},
+  {id: 'git-branch', category: 'dev', label: 'Git-ветвление', file: 'WorkflowCircle04Icon'},
+  {id: 'source-code', category: 'dev', label: 'Исходный код', file: 'SourceCodeIcon'},
+  {id: 'brackets', category: 'dev', label: 'Фигурные скобки', file: 'ThirdBracketIcon'},
+  {id: 'wikipedia', category: 'platform', label: 'Википедия', file: 'WikipediaIcon'},
+  {id: 'windows', category: 'platform', label: 'Windows', file: 'WindowsNewIcon'},
+  {id: 'java', category: 'platform', label: 'Java', file: 'JavaIcon'},
+  {id: 'spotify', category: 'platform', label: 'Spotify', file: 'SpotifyIcon'},
+  {id: 'nintendo-switch', category: 'consoles', label: 'Nintendo Switch', file: 'NintendoSwitchIcon'},
+  {id: 'microsoft-admin', category: 'platform', label: 'Администрирование Windows', file: 'MicrosoftAdminIcon'},
+  {id: 'work', category: 'work', label: 'Карьера и работа', file: 'WorkIcon'},
+  {id: 'wifi', category: 'network', label: 'Wi‑Fi', file: 'Wifi01Icon'},
+  {id: 'signal', category: 'network', label: 'Уровень сигнала', file: 'SignalFull01Icon'},
+  {id: 'sim', category: 'network', label: 'SIM-карта', file: 'Simcard02Icon'},
+  {id: 'rss', category: 'geo', label: 'RSS', file: 'RssIcon'},
+  {id: 'satellite', category: 'geo', label: 'Спутник', file: 'SatelliteIcon'},
+  {id: 'whatsapp', category: 'messaging', label: 'WhatsApp', file: 'WhatsappIcon'},
+  {id: 'telegram', category: 'messaging', label: 'Telegram', file: 'TelegramIcon'},
+  {id: 'wechat', category: 'messaging', label: 'WeChat', file: 'WechatIcon'},
+  {id: 'message', category: 'messaging', label: 'Сообщение', file: 'Message01Icon', alternates: ['Message02Icon']},
+  {id: 'chat', category: 'messaging', label: 'Чат и переписка', file: 'MessageMultiple01Icon', alternates: ['MessageMultiple02Icon']},
+  {id: 'comment', category: 'cursor', label: 'Комментарий', file: 'Comment01Icon', alternates: ['Comment03Icon']},
+  {id: 'tick-sent', category: 'feedback', label: 'Сообщение доставлено', file: 'Tick01Icon'},
+  {id: 'tick-read', category: 'feedback', label: 'Сообщение прочитано', file: 'TickDouble01Icon'},
+  {id: 'wallet', category: 'money', label: 'Кошелёк', file: 'Wallet01Icon'},
+  {id: 'bitcoin', category: 'money', label: 'Биткоин', file: 'BitcoinCircleIcon'},
+  {id: 'donate', category: 'money', label: 'Донаты и пожертвования', file: 'SaveMoneyDollarIcon'},
+  {id: 'discount', category: 'commerce', label: 'Скидка', file: 'DiscountIcon', alternates: ['Discount01Icon']},
+  {id: 'vr', category: 'media', label: 'VR-очки', file: 'VrGlassesIcon'},
+  {id: 'video', category: 'media', label: 'Видео и веб-камера', file: 'Video01Icon'},
+  {id: 'camera', category: 'calendar', label: 'Камера и фото', file: 'Camera01Icon'},
+  {id: 'album', category: 'misc', label: 'Фотоальбом', file: 'Album02Icon'},
+  {id: 'film', category: 'cinema', label: 'Фильм и кино', file: 'FlimSlateIcon'},
+  {id: 'music', category: 'media', label: 'Музыка', file: 'MusicNote03Icon'},
+  {id: 'gamepad', category: 'games', label: 'Геймпад и консоль', file: 'GameController03Icon'},
+  {id: 'tic-tac-toe', category: 'games', label: 'Крестики-нолики', file: 'TicTacToeIcon'},
+  {id: 'target-aim', category: 'tasks', label: 'Прицел в играх', file: 'Target03Icon'},
+  {id: 'volume-high', category: 'audio', label: 'Громкость: увеличение', file: 'VolumeHighIcon'},
+  {id: 'volume-low', category: 'audio', label: 'Громкость: уменьшение', file: 'VolumeLowIcon'},
+  {id: 'volume-mute', category: 'audio', label: 'Без звука (mute)', file: 'VolumeMute02Icon', alternates: ['VolumeOffIcon']},
+  {id: 'mic', category: 'audio', label: 'Микрофон и запись', file: 'Mic02Icon'},
+  {id: 'mic-off', category: 'audio', label: 'Микрофон выключен', file: 'MicOff01Icon'},
+  {id: 'user-status', category: 'users', label: 'Статус пользователя (онлайн/оффлайн)', file: 'UserStatusIcon'},
+  {id: 'user', category: 'users', label: 'Пользователь', file: 'User02Icon'},
+  {id: 'user-group', category: 'users', label: 'Группа пользователей', file: 'UserGroupIcon'},
+  {id: 'user-multi', category: 'users', label: 'Несколько пользователей', file: 'UserMultiple03Icon'},
+  {id: 'user-edit', category: 'users', label: 'Редактирование пользователей', file: 'UserEdit01Icon'},
+  {id: 'passport', category: 'users', label: 'Паспорт и профиль', file: 'PassportIcon'},
+  {id: 'view', category: 'users', label: 'Просмотр и чтение', file: 'ViewIcon'},
+  {id: 'usb', category: 'storage', label: 'USB и флеш-накопитель', file: 'UsbMemory01Icon'},
+  {id: 'hard-drive', category: 'storage', label: 'Жёсткий диск', file: 'HardDriveIcon'},
+  {id: 'upload', category: 'files', label: 'Загрузка на сервер', file: 'Upload06Icon'},
+  {id: 'download', category: 'files', label: 'Скачивание с сервера', file: 'Download01Icon', alternates: ['Download02Icon']},
+  {id: 'unarchive', category: 'files', label: 'Распаковка архива', file: 'Unarchive03Icon'},
+  {id: 'data-transfer', category: 'files', label: 'Обмен данными', file: 'ArrowDataTransferHorizontalIcon'},
+  {id: 'undo', category: 'sync', label: 'Отмена действия', file: 'UndoIcon', alternates: ['Undo03Icon']},
+  {id: 'unavailable', category: 'system', label: 'Недоступность', file: 'UnavailableIcon'},
+  {id: 'type-cursor', category: 'input', label: 'Ввод и переименование', file: 'TypeCursorIcon', alternates: ['InputLongTextIcon']},
+  {id: 'tv', category: 'devices', label: 'Телевизор', file: 'Tv01Icon'},
+  {id: 'tablet', category: 'devices', label: 'Планшет', file: 'Tablet01Icon'},
+  {id: 'smartphone', category: 'devices', label: 'Смартфон', file: 'SmartPhone01Icon'},
+  {id: 'mouse', category: 'touch', label: 'Мышь', file: 'Mouse01Icon', alternates: ['Mouse02Icon', 'Mouse08Icon']},
+  {id: 'touchpad', category: 'touch', label: 'Тачпад', file: 'Touchpad01Icon'},
+  {id: 'touch', category: 'touch', label: 'Касание и нажатие', file: 'Touch01Icon', alternates: ['TouchInteraction01Icon', 'Tap08Icon']},
+  {id: 'cursor', category: 'cursor', label: 'Курсор', file: 'Cursor01Icon', alternates: ['Cursor02Icon']},
+  {id: 'delivery-truck', category: 'logistics', label: 'Доставка', file: 'TruckDeliveryIcon', alternates: ['DeliveryTruck01Icon']},
+  {id: 'translate', category: 'input', label: 'Перевод', file: 'TranslateIcon'},
+  {id: 'trade-up', category: 'market', label: 'Рост', file: 'TradeUpIcon'},
+  {id: 'trade-down', category: 'market', label: 'Падение', file: 'TradeDownIcon'},
+  {id: 'tools', category: 'tools', label: 'Инструменты', file: 'ToolsIcon'},
+  {id: 'settings', category: 'tools', label: 'Настройки', file: 'Settings01Icon'},
+  {id: 'token', category: 'ai', label: 'Токены', file: 'TokenSquareIcon', alternates: ['SparklesIcon']},
+  {id: 'thumbs-up', category: 'feedback', label: 'Лайк', file: 'ThumbsUpIcon'},
+  {id: 'thumbs-down', category: 'feedback', label: 'Дизлайк', file: 'ThumbsDownIcon'},
+  {id: 'task', category: 'tasks', label: 'Задачи', file: 'TaskDaily01Icon'},
+  {id: 'target', category: 'tasks', label: 'Цель и мишень', file: 'Target02Icon'},
+  {id: 'tag', category: 'notes', label: 'Тег и метка', file: 'Tag01Icon'},
+  {id: 'sticky-note', category: 'notes', label: 'Заметка', file: 'StickyNote03Icon'},
+  {id: 'system-update', category: 'system', label: 'Системное обновление', file: 'SystemUpdate01Icon'},
+  {id: 'weather', category: 'system', label: 'Погода', file: 'SunCloud02Icon'},
+  {id: 'student', category: 'edu', label: 'Студент', file: 'StudentIcon'},
+  {id: 'structure', category: 'structure', label: 'Структура', file: 'Structure01Icon'},
+  {id: 'store', category: 'structure', label: 'Магазин', file: 'Store01Icon'},
+  {id: 'shopping-cart', category: 'structure', label: 'Корзина покупок', file: 'ShoppingCart01Icon'},
+  {id: 'shopping-bag', category: 'structure', label: 'Шоппинг', file: 'ShoppingBag01Icon'},
+  {id: 'stop', category: 'playback', label: 'Стоп', file: 'StopIcon'},
+  {id: 'play', category: 'playback', label: 'Воспроизведение', file: 'PlayIcon', alternates: ['PlayCircle02Icon']},
+  {id: 'pause', category: 'playback', label: 'Пауза', file: 'PauseIcon', alternates: ['PauseCircleIcon']},
+  {id: 'record', category: 'record', label: 'Запись', file: 'RecordIcon'},
+  {id: 'replay', category: 'playback', label: 'Повтор', file: 'ReplayIcon', alternates: ['RepeatIcon']},
+  {id: 'shuffle', category: 'playback', label: 'Перемешивание', file: 'ShuffleIcon'},
+  {id: 'star', category: 'feedback', label: 'Избранное', file: 'StarIcon', alternates: ['FavouriteIcon']},
+  {id: 'award', category: 'feedback', label: 'Достижение и награда', file: 'StarAward01Icon', alternates: ['Award01Icon']},
+  {id: 'unlock', category: 'security', label: 'Разблокировка', file: 'SquareUnlock01Icon'},
+  {id: 'lock', category: 'security', label: 'Блокировка', file: 'SquareLock01Icon'},
+  {id: 'shield', category: 'security', label: 'Безопасность', file: 'SecurityIcon', alternates: ['ShieldKeyIcon', 'ShieldUserIcon']},
+  {id: 'validation', category: 'server', label: 'Успешная проверка', file: 'SecurityValidationIcon'},
+  {id: 'expand-screen', category: 'viewport', label: 'Увеличение экрана', file: 'SquareArrowExpand01Icon'},
+  {id: 'shrink-screen', category: 'viewport', label: 'Уменьшение экрана', file: 'SquareArrowShrink02Icon'},
+  {id: 'pip-on', category: 'viewport', label: 'Картинка в картинке (вкл.)', file: 'PictureInPictureOnIcon'},
+  {id: 'pip-off', category: 'viewport', label: 'Картинка в картинке (выкл.)', file: 'PictureInPictureExitIcon'},
+  {id: 'sort', category: 'tools', label: 'Сортировка', file: 'Sorting01Icon'},
+  {id: 'shutdown', category: 'system', label: 'Выключение', file: 'ShutDownIcon'},
+  {id: 'share', category: 'share', label: 'Поделиться', file: 'Share01Icon', alternates: ['Share04Icon']},
+  {id: 'server', category: 'server', label: 'Сервер', file: 'ServerStack03Icon'},
+  {id: 'scissors', category: 'clipboard', label: 'Вырезать', file: 'ScissorIcon', alternates: ['ScissorRectangleIcon']},
+  {id: 'rotate', category: 'sync', label: 'Поворот и ориентация', file: 'Rotate01Icon', alternates: ['RotateCropIcon']},
+  {id: 'refresh', category: 'sync', label: 'Обновление', file: 'RefreshIcon', alternates: ['Refresh01Icon']},
+  {id: 'repair', category: 'maintain', label: 'Починка и ремонт', file: 'RepairIcon'},
+  {id: 'recycle', category: 'maintain', label: 'Переработка и цикл', file: 'Recycle02Icon', alternates: ['Recycle03Icon']},
+  {id: 'quiz', category: 'record', label: 'Опрос и обратная связь', file: 'Quiz05Icon'},
+  {id: 'pulse', category: 'perf', label: 'Производительность', file: 'Pulse01Icon'},
+  {id: 'printer', category: 'print', label: 'Печать', file: 'PrinterIcon'},
+  {id: 'plus-minus', category: 'print', label: 'Масштаб ±', file: 'PlusMinus02Icon', alternates: ['PlusMinusSquare02Icon']},
+  {id: 'pin', category: 'notes', label: 'Закрепление', file: 'PinIcon'},
+  {id: 'physics', category: 'misc', label: 'Физика', file: 'PhysicsIcon'},
+  {id: 'pen', category: 'draw', label: 'Редактирование', file: 'Pen01Icon', alternates: ['PencilEdit02Icon', 'Edit02Icon']},
+  {id: 'pencil-draw', category: 'draw', label: 'Рисование', file: 'PencilIcon', alternates: ['PenTool01Icon']},
+  {id: 'paint', category: 'draw', label: 'Заливка', file: 'PaintBoardIcon', alternates: ['PaintBucketIcon']},
+  {id: 'package', category: 'files', label: 'Пакет', file: 'PackageIcon', alternates: ['PackagingIcon']},
+  {id: 'notification', category: 'notify', label: 'Уведомления', file: 'Notification01Icon'},
+  {id: 'notification-off', category: 'notify', label: 'Уведомления выключены', file: 'NotificationOff01Icon', alternates: ['NotificationBlock01Icon']},
+  {id: 'new-release', category: 'system', label: 'Новые релизы', file: 'NewReleasesIcon'},
+  {id: 'navigation', category: 'nav', label: 'Навигация', file: 'Navigation03Icon'},
+  {id: 'maps', category: 'geo', label: 'Карты', file: 'MapsIcon', alternates: ['MapsSquare01Icon']},
+  {id: 'location', category: 'location', label: 'Геолокация', file: 'Location01Icon', alternates: ['Location04Icon']},
+  {id: 'back', category: 'nav', label: 'Назад', file: 'LinkBackwardIcon', alternates: ['ArrowTurnBackwardIcon']},
+  {id: 'forward', category: 'nav', label: 'Вперёд', file: 'ArrowRight02Icon', alternates: ['ArrowRightBigIcon']},
+  {id: 'menu', category: 'nav', label: 'Меню и «ещё»', file: 'Menu01Icon', alternates: ['Menu09Icon', 'MoreHorizontalCircle01Icon']},
+  {id: 'mail', category: 'mail', label: 'Почта', file: 'Mail01Icon', alternates: ['MailAtSign01Icon']},
+  {id: 'mailbox', category: 'mail', label: 'Почтовый ящик', file: 'Mailbox01Icon'},
+  {id: 'at', category: 'mail', label: 'Символ @', file: 'AtIcon'},
+  {id: 'logout', category: 'auth', label: 'Выход', file: 'Logout01Icon', alternates: ['LogoutSquare01Icon', 'LogoutSquare02Icon']},
+  {id: 'login', category: 'auth', label: 'Вход', file: 'Login01Icon', alternates: ['LoginSquare01Icon']},
+  {id: 'layer', category: 'layers', label: 'Слои', file: 'LayerIcon', alternates: ['LayerAddIcon']},
+  {id: 'info', category: 'info', label: 'Информация', file: 'InformationCircleIcon'},
+  {id: 'help', category: 'info', label: 'Справка', file: 'HelpCircleIcon'},
+  {id: 'infinity', category: 'info', label: 'Бесконечность', file: 'Infinity01Icon'},
+  {id: 'idea', category: 'visuals', label: 'Идея', file: 'Idea01Icon'},
+  {id: 'image', category: 'visuals', label: 'Изображение', file: 'Image01Icon', alternates: ['Image03Icon']},
+  {id: 'global', category: 'global', label: 'Интернет и глобальность', file: 'GlobalIcon', alternates: ['Globe02Icon']},
+  {id: 'gift', category: 'global', label: 'Подарок', file: 'GiftIcon'},
+  {id: 'folder', category: 'folders', label: 'Папка', file: 'Folder01Icon', alternates: ['Folder02Icon']},
+  {id: 'file', category: 'folders', label: 'Файл', file: 'File02Icon', alternates: ['FileEmpty01Icon']},
+  {id: 'flag', category: 'flags', label: 'Флаг', file: 'Flag01Icon', alternates: ['Flag02Icon']},
+  {id: 'filter', category: 'flags', label: 'Фильтр', file: 'FilterIcon'},
+  {id: 'fingerprint', category: 'bio', label: 'Отпечаток пальца', file: 'FingerPrintIcon', alternates: ['FingerAccessIcon']},
+  {id: 'exchange', category: 'commerce', label: 'Обмен', file: 'Exchange01Icon'},
+  {id: 'cloud', category: 'cloud', label: 'Облако', file: 'CloudIcon'},
+  {id: 'clock', category: 'cloud', label: 'Время', file: 'Clock01Icon'},
+  {id: 'calendar', category: 'calendar', label: 'Календарь', file: 'Calendar02Icon', alternates: ['Calendar03Icon']},
+  {id: 'call', category: 'calendar', label: 'Звонок', file: 'Call02Icon'},
+  {id: 'check', category: 'validate', label: 'Галочка и чекбокс', file: 'CheckmarkCircle01Icon', alternates: ['CheckmarkSquare01Icon']},
+  {id: 'calculator', category: 'misc', label: 'Калькулятор', file: 'CalculatorIcon', alternates: ['CalculateIcon']},
+  {id: 'bug', category: 'dev', label: 'Баг', file: 'Bug02Icon'},
+  {id: 'bookmark', category: 'notes', label: 'Закладка', file: 'Bookmark02Icon'},
+  {id: 'book', category: 'edu', label: 'Книга', file: 'Book02Icon'},
+  {id: 'battery-charging', category: 'devices', label: 'Зарядка батареи', file: 'BatteryCharging01Icon'},
+  {id: 'battery-empty', category: 'devices', label: 'Пустая батарея', file: 'BatteryEmptyIcon'},
+  {id: 'robot', category: 'ai', label: 'Робот и бот', file: 'RoboticIcon'},
+  {id: 'airplane-mode', category: 'misc', label: 'Режим полёта', file: 'Airplane02Icon'},
+];
+
+/** @type {Readonly<Record<string, UiIconEntry>>} */
+export const UI_ICON_BY_ID = Object.fromEntries(
+  UI_ICON_ENTRIES.map((entry) => [entry.id, entry]),
+);
+
+/** @type {readonly { id: string; label: string; icons: readonly UiIconEntry[] }[]} */
+export const UI_ICON_CATEGORIES = (() => {
+  const order = Object.keys(UI_ICON_CATEGORY_LABELS);
+  const buckets = new Map(order.map((id) => [id, /** @type {UiIconEntry[]} */ ([])]));
+  for (const entry of UI_ICON_ENTRIES) {
+    const list = buckets.get(entry.category);
+    if (list) list.push(entry);
+  }
+  return order
+    .filter((id) => (buckets.get(id)?.length ?? 0) > 0)
+    .map((id) => ({
+      id,
+      label: UI_ICON_CATEGORY_LABELS[id],
+      icons: buckets.get(id) ?? [],
+    }));
+})();
+
+/**
+ * @param {string} id семантический id или имя файла Hugeicons (с Icon или без)
+ * @returns {UiIconEntry | undefined}
+ */
+export function resolveUiIconEntry(id) {
+  if (UI_ICON_BY_ID[id]) return UI_ICON_BY_ID[id];
+  const normalized = id.endsWith('Icon') ? id : `${id}Icon`;
+  return UI_ICON_ENTRIES.find(
+    (e) =>
+      e.file === normalized ||
+      e.file === id ||
+      e.alternates?.includes(normalized) ||
+      e.alternates?.includes(id),
+  );
+}
+

@@ -41,7 +41,8 @@
     "docs:refine-descriptions": "node scripts/refine-article-descriptions.mjs",
     "docs:dotnet-catalog": "node scripts/generate-dotnet-reference-catalog.mjs",
     "docs:tech-icon-paths": "node scripts/generate-tech-icon-paths.mjs",
-    "docs:bpmn-icons": "node scripts/generate-bpmn-icon-svgs.mjs"
+    "docs:bpmn-icons": "node scripts/generate-bpmn-icon-svgs.mjs",
+    "docs:ui-icons": "node scripts/sync-ui-icons.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "^3.10.0",

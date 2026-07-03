@@ -15,6 +15,11 @@ export function bpmnIconMediaUrl(bpmnIconId) {
   return encyclopediaMediaUrl(`_shared/img/bpmn/${bpmnIconId}.svg`);
 }
 
+/** @param {string} fileName имя файла Hugeicons без .svg, напр. Location01Icon */
+export function uiIconMediaUrl(fileName) {
+  return encyclopediaMediaUrl(`_shared/img/ui-icons/${fileName}.svg`);
+}
+
 /** Общие учебные схемы (источник — 1-basics/1-07-nemnogo-o-proshlom) */
 export const VON_NEUMANN_ARCHITECTURE_SVG = encyclopediaMediaUrl(
   '1-basics/1-07-nemnogo-o-proshlom/Схема_архитектуры_фон_Неймана.svg',

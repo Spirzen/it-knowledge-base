@@ -1,0 +1,12 @@
+.icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: -0.2em;
+  margin: 0 0.12em;
+}
