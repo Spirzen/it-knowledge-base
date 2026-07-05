@@ -757,7 +757,6 @@ html[data-design="design-steam-store"] {
   --d-wide-gradient: linear-gradient(180deg, #75b022 0%, #588a1b 100%);
   --d-shadow: 0 4px 20px rgba(0,0,0,0.45);
   --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.35);
-  --steam-sale-strip: 1;
 }
 
 

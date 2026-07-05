@@ -967,6 +967,132 @@ img {
   color: #2C3E50 !important;
 }
 
+/* Встроенные HTML-примеры в статьях (живой результат рядом с кодом) */
+.html-inline-demo {
+  margin: 0.75rem 0 1.25rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-surface-color);
+}
+
+.html-inline-demo > :first-child {
+  margin-top: 0;
+}
+
+.html-inline-demo > :last-child {
+  margin-bottom: 0;
+}
+
+/* Учебные «заголовки» без лишних h1–h6 в оглавлении статьи */
+.html-inline-demo__h1,
+.html-inline-demo__h2,
+.html-inline-demo__h3,
+.html-inline-demo__h4,
+.html-inline-demo__h5,
+.html-inline-demo__h6 {
+  display: block;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0.5em 0;
+}
+
+.html-inline-demo__h1 { font-size: 2em; }
+.html-inline-demo__h2 { font-size: 1.5em; }
+.html-inline-demo__h3 { font-size: 1.17em; }
+.html-inline-demo__h4 { font-size: 1em; }
+.html-inline-demo__h5 { font-size: 0.83em; }
+.html-inline-demo__h6 { font-size: 0.67em; }
+
+/* Учебная схема box model */
+.html-inline-demo .box-model-demo {
+  max-width: 300px;
+}
+
+.html-inline-demo .box-model-demo__margin {
+  background: color-mix(in srgb, #f59e0b 30%, var(--ifm-background-surface-color));
+  padding: 14px;
+}
+
+.html-inline-demo .box-model-demo__border {
+  border: 3px solid #f59e0b;
+  background: color-mix(in srgb, #fbbf24 25%, var(--ifm-background-surface-color));
+  padding: 10px;
+}
+
+.html-inline-demo .box-model-demo__padding {
+  background: color-mix(in srgb, #22c55e 25%, var(--ifm-background-surface-color));
+  padding: 14px;
+}
+
+.html-inline-demo .box-model-demo__content {
+  background: var(--ifm-background-color);
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.html-inline-demo .box-model-demo__legend {
+  font-size: 0.85rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.5rem 0 0;
+}
+
+/* Сравнение em и rem */
+.html-inline-demo .em-rem-demo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.html-inline-demo .em-rem-demo__col {
+  flex: 1;
+  min-width: 180px;
+  padding: 12px;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+.html-inline-demo .em-rem-demo__col > p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.html-inline-demo .em-rem-demo__parent {
+  font-size: 16px;
+}
+
+.html-inline-demo .em-rem-demo__h1-em {
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 0 0.25em;
+}
+
+.html-inline-demo .em-rem-demo__h3-em {
+  font-size: 1em;
+  margin: 0;
+}
+
+.html-inline-demo .em-rem-demo__h1-rem {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 1.1;
+  margin: 0 0 0.25em;
+}
+
+.html-inline-demo .em-rem-demo__h3-rem {
+  font-size: 24px;
+  margin: 0;
+}
+
+.html-inline-demo .em-rem-demo__note {
+  font-size: 0.8rem;
+  color: var(--ifm-color-content-secondary);
+  margin: 0.35rem 0 0;
+}
+
 /* Блоки кода внутри callout — не перекрашивать (Prism-токены и plain-текст) */
 .callout .theme-code-block,
 .callout .theme-code-block *,

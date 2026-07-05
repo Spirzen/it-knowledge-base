@@ -133,30 +133,6 @@ html[data-design='design-paper-vintage'] .feature-card--wide p {
 /* Steam store theme */
 html[data-design='design-steam-store'] .navbar {
   border-bottom: 1px solid #3d4450;
-  box-shadow: inset 0 28px 0 0 linear-gradient(90deg, #4c6b22 0%, #5a7d28 100%);
-}
-
-html[data-design='design-steam-store'] .navbar::before {
-  content: 'Летняя распродажа Steam — скидки до 90%';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 28px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #dce8c0;
-  background: linear-gradient(90deg, #4c6b22 0%, #5a7d28 100%);
-  pointer-events: none;
-}
-
-html[data-design='design-steam-store'] .navbar__inner {
-  padding-top: 28px;
 }
 
 html[data-design='design-steam-store'] .button--primary {
@@ -172,6 +148,63 @@ html[data-design='design-steam-store'] .button--primary:hover {
 html[data-design='design-steam-store'] .theme-doc-content .callout {
   background: #16202d;
   border-color: #3d4450;
+}
+
+html[data-theme='light'][data-design='design-steam-store'] .theme-doc-content .callout {
+  background: #ffffff;
+  border-color: #8ba0b2;
+}
+
+html[data-theme='light'][data-design='design-steam-store'] .navbar,
+html[data-theme='light'][data-design='design-steam-store'] .navbar-sidebar {
+  --ifm-navbar-link-color: #c7d5e0;
+  --ifm-navbar-link-hover-color: #66c0f4;
+  --ifm-navbar-search-input-color: #c7d5e0;
+  --ifm-navbar-search-input-placeholder-color: rgba(199, 213, 224, 0.65);
+  color: #c7d5e0;
+}
+
+html[data-theme='light'][data-design='design-steam-store'] .navbar__title,
+html[data-theme='light'][data-design='design-steam-store'] .navbar__link,
+html[data-theme='light'][data-design='design-steam-store'] .navbar__toggle,
+html[data-theme='light'][data-design='design-steam-store'] .DocSearch-Button {
+  color: #c7d5e0;
+}
+
+html[data-theme='light'][data-design='design-xbox'] .navbar,
+html[data-theme='light'][data-design='design-xbox'] .navbar-sidebar,
+html[data-theme='light'][data-design='design-playstation'] .navbar,
+html[data-theme='light'][data-design='design-playstation'] .navbar-sidebar,
+html[data-theme='light'][data-design='design-nintendo'] .navbar,
+html[data-theme='light'][data-design='design-nintendo'] .navbar-sidebar {
+  --ifm-navbar-link-color: #ffffff;
+  --ifm-navbar-link-hover-color: rgba(255, 255, 255, 0.92);
+  --ifm-navbar-search-input-color: #ffffff;
+  --ifm-navbar-search-input-placeholder-color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+
+html[data-theme='light'][data-design='design-xbox'] .navbar__title,
+html[data-theme='light'][data-design='design-xbox'] .navbar__link,
+html[data-theme='light'][data-design='design-xbox'] .navbar__toggle,
+html[data-theme='light'][data-design='design-playstation'] .navbar__title,
+html[data-theme='light'][data-design='design-playstation'] .navbar__link,
+html[data-theme='light'][data-design='design-playstation'] .navbar__toggle,
+html[data-theme='light'][data-design='design-nintendo'] .navbar__title,
+html[data-theme='light'][data-design='design-nintendo'] .navbar__link,
+html[data-theme='light'][data-design='design-nintendo'] .navbar__toggle {
+  color: #ffffff;
+}
+
+html[data-theme='light'][data-design='design-xbox'] .button--primary {
+  color: #0e1410 !important;
+}
+
+html[data-theme='light'][data-design='design-xbox'] .theme-doc-content .callout,
+html[data-theme='light'][data-design='design-playstation'] .theme-doc-content .callout,
+html[data-theme='light'][data-design='design-nintendo'] .theme-doc-content .callout {
+  background: var(--d-surface);
+  border-color: var(--d-border);
 }
 
 html[data-design='design-xbox'] .button--primary {

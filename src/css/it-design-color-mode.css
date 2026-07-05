@@ -113,3 +113,113 @@ html[data-theme='light'][data-design='design-dark-coder'] .button--primary {
   background: var(--d-primary);
   border-color: var(--d-primary);
 }
+
+/* —— Платформенные темы (Steam, Xbox, PlayStation, Nintendo) + светлый режим ☀ —— */
+
+html[data-theme='light'][data-design='design-steam-store'] {
+  --d-primary: #1a9fff;
+  --d-primary-dark: #0066cc;
+  --d-accent2: #588a1b;
+  --d-bg: #c6d4df;
+  --d-surface: #ffffff;
+  --d-text: #1b2838;
+  --d-text-muted: #556772;
+  --d-nav: #1b2838;
+  --d-footer: #171a21;
+  --d-footer-text: #c7d5e0;
+  --d-footer-link: #66c0f4;
+  --d-border: #8ba0b2;
+  --d-code-bg: #e3e9ef;
+  --d-code-fg: #1b2838;
+  --d-hero-bg: linear-gradient(180deg, #ffffff 0%, #c6d4df 62%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(102,192,244,0.18), transparent 60%);
+  --d-shadow: 0 4px 16px rgba(27, 40, 56, 0.12);
+  --d-shadow-sm: 0 2px 8px rgba(27, 40, 56, 0.08);
+  --d-wide-gradient: linear-gradient(180deg, #75b022 0%, #588a1b 100%);
+
+  --d-code-syntax-keyword: #0066cc;
+  --d-code-syntax-function: #588a1b;
+  --d-code-syntax-string: color-mix(in srgb, #1a9fff 55%, #1b2838);
+  --d-code-syntax-comment: #556772;
+  --d-code-syntax-builtin: #588a1b;
+}
+
+html[data-theme='light'][data-design='design-xbox'] {
+  --d-primary: #107c10;
+  --d-primary-dark: #0b5a0b;
+  --d-accent2: #9bf00b;
+  --d-bg: #f0f4ee;
+  --d-surface: #ffffff;
+  --d-text: #0e1410;
+  --d-text-muted: #4a5c48;
+  --d-nav: linear-gradient(90deg, #0e1410 0%, #107c10 100%);
+  --d-footer: #0e1410;
+  --d-footer-text: #e8ece8;
+  --d-footer-link: #9bf00b;
+  --d-border: #b8c9b4;
+  --d-code-bg: #e8f2e6;
+  --d-code-fg: #0e1410;
+  --d-hero-bg: linear-gradient(180deg, #ffffff 0%, #f0f4ee 62%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(155,240,11,0.14), transparent 60%);
+  --d-shadow: 0 4px 16px rgba(16, 124, 16, 0.1);
+  --d-shadow-sm: 0 2px 8px rgba(16, 124, 16, 0.07);
+  --d-wide-gradient: linear-gradient(90deg, #107c10 0%, #9bf00b 100%);
+
+  --d-code-syntax-keyword: #107c10;
+  --d-code-syntax-function: #0b5a0b;
+  --d-code-syntax-string: color-mix(in srgb, #107c10 45%, #0e1410);
+  --d-code-syntax-comment: #4a5c48;
+  --d-code-syntax-builtin: #9bf00b;
+}
+
+html[data-theme='light'][data-design='design-playstation'] {
+  --d-primary: #0070cc;
+  --d-primary-dark: #00439c;
+  --d-accent2: #4da3ff;
+  --d-bg: #eef2f8;
+  --d-surface: #ffffff;
+  --d-text: #0a0a12;
+  --d-text-muted: #4a5568;
+  --d-nav: linear-gradient(90deg, #003791 0%, #0070cc 100%);
+  --d-footer: #003791;
+  --d-footer-text: #e8eaed;
+  --d-footer-link: #4da3ff;
+  --d-border: #a8bdd4;
+  --d-code-bg: #e8f0fa;
+  --d-code-fg: #0a0a12;
+  --d-hero-bg: linear-gradient(180deg, #ffffff 0%, #eef2f8 62%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,112,209,0.12), transparent 60%);
+  --d-shadow: 0 4px 16px rgba(0, 67, 156, 0.1);
+  --d-shadow-sm: 0 2px 8px rgba(0, 67, 156, 0.07);
+  --d-wide-gradient: linear-gradient(90deg, #003791 0%, #0070cc 100%);
+
+  --d-code-syntax-keyword: #00439c;
+  --d-code-syntax-function: #0070cc;
+  --d-code-syntax-string: color-mix(in srgb, #0070cc 50%, #0a0a12);
+  --d-code-syntax-comment: #4a5568;
+  --d-code-syntax-builtin: #4da3ff;
+}
+
+html[data-theme='light'][data-design='design-nintendo'] {
+  --d-primary: #e60012;
+  --d-primary-dark: #c4000f;
+  --d-accent2: #ff4040;
+  --d-bg: #fafafa;
+  --d-surface: #ffffff;
+  --d-text: #1a1a1a;
+  --d-text-muted: #666666;
+  --d-nav: linear-gradient(90deg, #e60012 0%, #c4000f 100%);
+  --d-footer: #1a1a1a;
+  --d-footer-text: #f0f0f0;
+  --d-footer-link: #ff4040;
+  --d-border: #dddddd;
+  --d-code-bg: #f5f5f5;
+  --d-code-fg: #1a1a1a;
+  --d-hero-bg: linear-gradient(180deg, #ffffff 0%, #fafafa 62%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(230,0,18,0.08), transparent 60%);
+  --d-shadow: 0 4px 16px rgba(230, 0, 18, 0.08);
+  --d-shadow-sm: 0 2px 8px rgba(230, 0, 18, 0.06);
+  --d-wide-gradient: linear-gradient(90deg, #c4000f 0%, #e60012 100%);
+
+  --d-code-syntax-keyword: #c4000f;
+  --d-code-syntax-function: #e60012;
+  --d-code-syntax-string: color-mix(in srgb, #e60012 45%, #1a1a1a);
+  --d-code-syntax-comment: #666666;
+  --d-code-syntax-builtin: #ff4040;
+}
