@@ -155,8 +155,7 @@ html[data-theme='light'][data-design='design-steam-store'] .theme-doc-content .c
   border-color: #8ba0b2;
 }
 
-html[data-theme='light'][data-design='design-steam-store'] .navbar,
-html[data-theme='light'][data-design='design-steam-store'] .navbar-sidebar {
+html[data-theme='light'][data-design='design-steam-store'] .navbar__inner {
   --ifm-navbar-link-color: #c7d5e0;
   --ifm-navbar-link-hover-color: #66c0f4;
   --ifm-navbar-search-input-color: #c7d5e0;
@@ -164,19 +163,16 @@ html[data-theme='light'][data-design='design-steam-store'] .navbar-sidebar {
   color: #c7d5e0;
 }
 
-html[data-theme='light'][data-design='design-steam-store'] .navbar__title,
-html[data-theme='light'][data-design='design-steam-store'] .navbar__link,
-html[data-theme='light'][data-design='design-steam-store'] .navbar__toggle,
-html[data-theme='light'][data-design='design-steam-store'] .DocSearch-Button {
+html[data-theme='light'][data-design='design-steam-store'] .navbar__inner .navbar__title,
+html[data-theme='light'][data-design='design-steam-store'] .navbar__inner .navbar__link,
+html[data-theme='light'][data-design='design-steam-store'] .navbar__inner .navbar__toggle,
+html[data-theme='light'][data-design='design-steam-store'] .navbar__inner .DocSearch-Button {
   color: #c7d5e0;
 }
 
-html[data-theme='light'][data-design='design-xbox'] .navbar,
-html[data-theme='light'][data-design='design-xbox'] .navbar-sidebar,
-html[data-theme='light'][data-design='design-playstation'] .navbar,
-html[data-theme='light'][data-design='design-playstation'] .navbar-sidebar,
-html[data-theme='light'][data-design='design-nintendo'] .navbar,
-html[data-theme='light'][data-design='design-nintendo'] .navbar-sidebar {
+html[data-theme='light'][data-design='design-xbox'] .navbar__inner,
+html[data-theme='light'][data-design='design-playstation'] .navbar__inner,
+html[data-theme='light'][data-design='design-nintendo'] .navbar__inner {
   --ifm-navbar-link-color: #ffffff;
   --ifm-navbar-link-hover-color: rgba(255, 255, 255, 0.92);
   --ifm-navbar-search-input-color: #ffffff;
@@ -184,15 +180,15 @@ html[data-theme='light'][data-design='design-nintendo'] .navbar-sidebar {
   color: #ffffff;
 }
 
-html[data-theme='light'][data-design='design-xbox'] .navbar__title,
-html[data-theme='light'][data-design='design-xbox'] .navbar__link,
-html[data-theme='light'][data-design='design-xbox'] .navbar__toggle,
-html[data-theme='light'][data-design='design-playstation'] .navbar__title,
-html[data-theme='light'][data-design='design-playstation'] .navbar__link,
-html[data-theme='light'][data-design='design-playstation'] .navbar__toggle,
-html[data-theme='light'][data-design='design-nintendo'] .navbar__title,
-html[data-theme='light'][data-design='design-nintendo'] .navbar__link,
-html[data-theme='light'][data-design='design-nintendo'] .navbar__toggle {
+html[data-theme='light'][data-design='design-xbox'] .navbar__inner .navbar__title,
+html[data-theme='light'][data-design='design-xbox'] .navbar__inner .navbar__link,
+html[data-theme='light'][data-design='design-xbox'] .navbar__inner .navbar__toggle,
+html[data-theme='light'][data-design='design-playstation'] .navbar__inner .navbar__title,
+html[data-theme='light'][data-design='design-playstation'] .navbar__inner .navbar__link,
+html[data-theme='light'][data-design='design-playstation'] .navbar__inner .navbar__toggle,
+html[data-theme='light'][data-design='design-nintendo'] .navbar__inner .navbar__title,
+html[data-theme='light'][data-design='design-nintendo'] .navbar__inner .navbar__link,
+html[data-theme='light'][data-design='design-nintendo'] .navbar__inner .navbar__toggle {
   color: #ffffff;
 }
 
@@ -230,4 +226,62 @@ html[data-design='design-playstation'] .theme-doc-content .callout,
 html[data-design='design-nintendo'] .theme-doc-content .callout {
   background: var(--d-surface);
   border-color: var(--d-border);
+}
+
+/*
+ * Платформенные темы · мобильный drawer (бургер).
+ * Infima: .navbar-sidebar { background-color: var(--ifm-navbar-background-color) } —
+ * градиент в --d-nav для background-color невалиден → прозрачная панель.
+ * site-chrome: color-mix(..., var(--ifm-navbar-background-color), transparent) на .navbar
+ * тоже ломается с градиентом.
+ */
+html[data-design='design-steam-store'] .navbar-sidebar,
+html[data-design='design-xbox'] .navbar-sidebar,
+html[data-design='design-playstation'] .navbar-sidebar,
+html[data-design='design-nintendo'] .navbar-sidebar {
+  background: var(--ifm-sidebar-background-color);
+  color: var(--d-text);
+  --ifm-navbar-link-color: var(--d-text);
+  --ifm-navbar-link-hover-color: var(--d-primary);
+}
+
+html[data-design='design-steam-store'] .navbar-sidebar .navbar__title,
+html[data-design='design-xbox'] .navbar-sidebar .navbar__title,
+html[data-design='design-playstation'] .navbar-sidebar .navbar__title,
+html[data-design='design-nintendo'] .navbar-sidebar .navbar__title {
+  background: none;
+  -webkit-text-fill-color: var(--d-text);
+  color: var(--d-text);
+}
+
+html[data-design='design-steam-store'] .navbar-sidebar .menu__link,
+html[data-design='design-xbox'] .navbar-sidebar .menu__link,
+html[data-design='design-playstation'] .navbar-sidebar .menu__link,
+html[data-design='design-nintendo'] .navbar-sidebar .menu__link {
+  color: var(--d-text);
+}
+
+html[data-theme='light'][data-design='design-steam-store'] .navbar,
+html[data-theme='light'][data-design='design-xbox'] .navbar,
+html[data-theme='light'][data-design='design-playstation'] .navbar,
+html[data-theme='light'][data-design='design-nintendo'] .navbar {
+  background: var(--d-nav) !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+@media screen and (max-width: 996px) {
+  html[data-design='design-steam-store'] .navbar-sidebar .it-mobile-sidebar-header,
+  html[data-design='design-xbox'] .navbar-sidebar .it-mobile-sidebar-header,
+  html[data-design='design-playstation'] .navbar-sidebar .it-mobile-sidebar-header,
+  html[data-design='design-nintendo'] .navbar-sidebar .it-mobile-sidebar-header {
+    border-bottom-color: var(--d-border);
+  }
+
+  html[data-design='design-steam-store'] .navbar-sidebar .navbar-sidebar__close,
+  html[data-design='design-xbox'] .navbar-sidebar .navbar-sidebar__close,
+  html[data-design='design-playstation'] .navbar-sidebar .navbar-sidebar__close,
+  html[data-design='design-nintendo'] .navbar-sidebar .navbar-sidebar__close {
+    color: var(--d-text);
+  }
 }
