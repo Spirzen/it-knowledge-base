@@ -26,6 +26,7 @@ import DocCardList from '@theme/DocCardList';
 0b. [Базовая информатика — телекоммуникации и веб](/encyclopedia/1-basics/1-035-bazovaya-informatika/1#телекоммуникационные-технологии-и-компьютерные-сети) — сети, браузер, **поисковый запрос** в интернете (отличие от SQL — см. шаг 4);
 1. [ИИ для новичка](/encyclopedia/1-basics/1-21-poisk-informatsii/5) — ChatGPT и аналоги: проверка ответов, что не отправлять в чат; далее — [раздел 6. ИИ](/encyclopedia/6-ai/6-01-vvedenie-v-ii/intro);
 2. [Эффективный поиск в интернете](/encyclopedia/1-basics/1-21-poisk-informatsii/3) — практика запросов и оценка источников;
+2b. [Факт-чекинг и первоисточники](/encyclopedia/1-basics/1-21-poisk-informatsii/7) — достоверность, иерархия источников, ограничения нейросетей и саммаризации;
 3. [Поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/1) — индекс, ранжирование, BM25, векторный поиск;
 4. [Языки поисковых запросов](/encyclopedia/1-basics/1-21-poisk-informatsii/2) — SQL, SPARQL, Lucene/Elasticsearch DSL;
 5. [Популярные поисковые системы](/encyclopedia/1-basics/1-21-poisk-informatsii/4) — обзор Google, Яндекс, специализированных сервисов;
