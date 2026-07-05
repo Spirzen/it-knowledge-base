@@ -1093,6 +1093,26 @@ img {
   margin: 0.35rem 0 0;
 }
 
+/* Карточка с отступами в rem и заголовком в em */
+.html-inline-demo .css3-card-demo {
+  font-size: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  max-width: 320px;
+}
+
+.html-inline-demo .css3-card-demo__title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+}
+
+.html-inline-demo .css3-card-demo p {
+  margin: 0;
+}
+
 /* Блоки кода внутри callout — не перекрашивать (Prism-токены и plain-текст) */
 .callout .theme-code-block,
 .callout .theme-code-block *,
