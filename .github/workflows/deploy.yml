@@ -72,14 +72,41 @@ jobs:
     needs: build
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment-2.outputs.page_url || steps.deployment-3.outputs.page_url }}
     steps:
       - uses: actions/configure-pages@v5
 
+      # Pages backend иногда отвечает "Deployment failed, try again later."
+      # на syncing_files без ошибки в артефакте (actions/deploy-pages#406).
       - id: deployment
         uses: actions/deploy-pages@v5
+        continue-on-error: true
         with:
-          # ~800 MB static site: syncing_files может занять >10 мин по умолчанию
-          timeout: 1800000
+          timeout: 600000
+          error_count: 30
+          reporting_interval: 10000
+
+      - name: Back off before retry
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - id: deployment-2
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        continue-on-error: true
+        with:
+          timeout: 600000
+          error_count: 30
+          reporting_interval: 10000
+
+      - name: Back off before final retry
+        if: steps.deployment.outcome == 'failure' && steps.deployment-2.outcome == 'failure'
+        run: sleep 60
+
+      - id: deployment-3
+        if: steps.deployment.outcome == 'failure' && steps.deployment-2.outcome == 'failure'
+        uses: actions/deploy-pages@v5
+        with:
+          timeout: 600000
           error_count: 30
           reporting_interval: 10000
