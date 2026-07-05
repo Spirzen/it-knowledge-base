@@ -732,3 +732,108 @@ html[data-design="design-dark-coder"] {
   --d-shadow: 0 4px 20px rgba(0,0,0,0.45);
   --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.35);
 }
+
+
+/* design-steam-store — Steam */
+html[data-design="design-steam-store"] {
+  color-scheme: dark;
+  --d-primary: #66c0f4;
+  --d-primary-dark: #4aa8de;
+  --d-accent2: #a4d007;
+  --d-bg: #171a21;
+  --d-surface: #16202d;
+  --d-text: #c7d5e0;
+  --d-text-muted: #8f98a0;
+  --d-nav: #1b2838;
+  --d-footer: #171a21;
+  --d-footer-text: #c7d5e0;
+  --d-footer-link: #66c0f4;
+  --d-hero-bg: linear-gradient(180deg, #2a475e 0%, #171a21 55%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(102,192,244,0.15), transparent 60%);
+  --d-radius: 4px;
+  --d-font: 'Segoe UI', 'Motiva Sans', system-ui, sans-serif;
+  --d-border: #3d4450;
+  --d-code-bg: #1b2838;
+  --d-code-fg: #c7d5e0;
+  --d-wide-gradient: linear-gradient(180deg, #75b022 0%, #588a1b 100%);
+  --d-shadow: 0 4px 20px rgba(0,0,0,0.45);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.35);
+  --steam-sale-strip: 1;
+}
+
+
+/* design-xbox — Xbox */
+html[data-design="design-xbox"] {
+  color-scheme: dark;
+  --d-primary: #9bf00b;
+  --d-primary-dark: #107c10;
+  --d-accent2: #c4ff4d;
+  --d-bg: #0e1410;
+  --d-surface: #1a2418;
+  --d-text: #e8ece8;
+  --d-text-muted: #9aa89a;
+  --d-nav: #0a0f0a;
+  --d-footer: #0e1410;
+  --d-footer-text: #e8ece8;
+  --d-footer-link: #9bf00b;
+  --d-hero-bg: linear-gradient(160deg, #1a2418 0%, #0e1410 55%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(155,240,11,0.12), transparent 60%);
+  --d-radius: 4px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: #2d3d2a;
+  --d-code-bg: #141914;
+  --d-code-fg: #e8ece8;
+  --d-wide-gradient: linear-gradient(90deg, #107c10 0%, #9bf00b 100%);
+  --d-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+
+/* design-playstation — PlayStation */
+html[data-design="design-playstation"] {
+  color-scheme: dark;
+  --d-primary: #0070d1;
+  --d-primary-dark: #00439c;
+  --d-accent2: #4da3ff;
+  --d-bg: #0a0a12;
+  --d-surface: #121826;
+  --d-text: #e8eaed;
+  --d-text-muted: #8b95a5;
+  --d-nav: #0d1520;
+  --d-footer: #0a0a12;
+  --d-footer-text: #e8eaed;
+  --d-footer-link: #4da3ff;
+  --d-hero-bg: linear-gradient(160deg, #0d1a2e 0%, #0a0a12 55%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(0,112,209,0.14), transparent 60%);
+  --d-radius: 4px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: #1e3a5f;
+  --d-code-bg: #0d1520;
+  --d-code-fg: #e8eaed;
+  --d-wide-gradient: linear-gradient(90deg, #003791 0%, #0070d1 100%);
+  --d-shadow: 0 4px 24px rgba(0,0,0,0.55);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.35);
+}
+
+
+/* design-nintendo — Nintendo */
+html[data-design="design-nintendo"] {
+  color-scheme: dark;
+  --d-primary: #e60012;
+  --d-primary-dark: #c4000f;
+  --d-accent2: #ff4040;
+  --d-bg: #1a1a1a;
+  --d-surface: #2d2d2d;
+  --d-text: #f0f0f0;
+  --d-text-muted: #a0a0a0;
+  --d-nav: #242424;
+  --d-footer: #1a1a1a;
+  --d-footer-text: #f0f0f0;
+  --d-footer-link: #ff4040;
+  --d-hero-bg: linear-gradient(160deg, #2d2d2d 0%, #1a1a1a 55%), radial-gradient(ellipse 80% 50% at 50% 0%, rgba(230,0,18,0.1), transparent 60%);
+  --d-radius: 4px;
+  --d-font: 'Segoe UI', system-ui, sans-serif;
+  --d-border: #444444;
+  --d-code-bg: #242424;
+  --d-code-fg: #f0f0f0;
+  --d-wide-gradient: linear-gradient(90deg, #c4000f 0%, #e60012 100%);
+  --d-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  --d-shadow-sm: 0 2px 8px rgba(0,0,0,0.35);
+}

@@ -142,5 +142,29 @@
     "name": "Тетрадный лист",
     "mode": "light",
     "featured": true
+  },
+  {
+    "id": "design-steam-store",
+    "name": "Steam",
+    "mode": "dark",
+    "featured": true
+  },
+  {
+    "id": "design-xbox",
+    "name": "Xbox",
+    "mode": "dark",
+    "featured": true
+  },
+  {
+    "id": "design-playstation",
+    "name": "PlayStation",
+    "mode": "dark",
+    "featured": true
+  },
+  {
+    "id": "design-nintendo",
+    "name": "Nintendo",
+    "mode": "dark",
+    "featured": true
   }
 ]

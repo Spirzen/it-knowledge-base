@@ -277,6 +277,7 @@ export const SIDEBAR_COLLECTIONS = [
     group: 'other',
     items: [
       'encyclopedia/1-basics/1-18-kompyuternye-igry/intro',
+      'encyclopedia/1-basics/1-18-kompyuternye-igry/101',
       'encyclopedia/1-basics/1-18-kompyuternye-igry/7',
       'encyclopedia/1-basics/1-18-kompyuternye-igry/8',
       'encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/intro',

@@ -129,3 +129,72 @@ html[data-design='design-paper-vintage'] .feature-card--wide h3,
 html[data-design='design-paper-vintage'] .feature-card--wide p {
   color: #ffffff;
 }
+
+/* Steam store theme */
+html[data-design='design-steam-store'] .navbar {
+  border-bottom: 1px solid #3d4450;
+  box-shadow: inset 0 28px 0 0 linear-gradient(90deg, #4c6b22 0%, #5a7d28 100%);
+}
+
+html[data-design='design-steam-store'] .navbar::before {
+  content: 'Летняя распродажа Steam — скидки до 90%';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #dce8c0;
+  background: linear-gradient(90deg, #4c6b22 0%, #5a7d28 100%);
+  pointer-events: none;
+}
+
+html[data-design='design-steam-store'] .navbar__inner {
+  padding-top: 28px;
+}
+
+html[data-design='design-steam-store'] .button--primary {
+  background: linear-gradient(180deg, #75b022 0%, #588a1b 100%);
+  border-color: transparent;
+  color: #fff !important;
+}
+
+html[data-design='design-steam-store'] .button--primary:hover {
+  filter: brightness(1.1);
+}
+
+html[data-design='design-steam-store'] .theme-doc-content .callout {
+  background: #16202d;
+  border-color: #3d4450;
+}
+
+html[data-design='design-xbox'] .button--primary {
+  background: linear-gradient(90deg, #107c10 0%, #9bf00b 100%);
+  border-color: transparent;
+  color: #0e1410 !important;
+}
+
+html[data-design='design-playstation'] .button--primary {
+  background: linear-gradient(90deg, #003791 0%, #0070d1 100%);
+  border-color: transparent;
+  color: #fff !important;
+}
+
+html[data-design='design-nintendo'] .button--primary {
+  background: linear-gradient(90deg, #c4000f 0%, #e60012 100%);
+  border-color: transparent;
+  color: #fff !important;
+}
+
+html[data-design='design-xbox'] .theme-doc-content .callout,
+html[data-design='design-playstation'] .theme-doc-content .callout,
+html[data-design='design-nintendo'] .theme-doc-content .callout {
+  background: var(--d-surface);
+  border-color: var(--d-border);
+}
