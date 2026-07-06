@@ -11,7 +11,7 @@ related:
     doc: encyclopedia/5-languages/5-06-cpp/intro
   - title: "Системное программирование на C++"
     doc: encyclopedia/5-languages/5-06-cpp/21
-  - title: "Visual Basic — о разделе"
+  - title: "visual-basic — о разделе"
     doc: encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro
   - title: "Pascal — о разделе"
     doc: encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro
@@ -152,7 +152,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Системное программирование** — [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 
-**Бэкенд и серверная разработка** — [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro).
+**Бэкенд и серверная разработка** — [visual-basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro).
 
 {/* /sidebar-collections */}
 

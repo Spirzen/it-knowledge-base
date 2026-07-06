@@ -712,46 +712,83 @@
   }
 }
 
-/* ── Страницы категорий (/category/*) — карточки оглавления ── */
-.theme-doc-markdown .theme-doc-card-container {
-  border-radius: 10px;
+/* ── DocCardList G10: сбалансированная компактная сетка ── */
+section.row:has(.theme-doc-card-container) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  gap: 0.8rem;
+  margin-inline: 0;
+}
+
+section.row:has(.theme-doc-card-container) > article,
+section.row:has(.theme-doc-card-container) > [class*='col'] {
+  flex: none;
+  width: auto;
+  max-width: none;
+  padding-inline: 0;
+  margin-bottom: 0;
+}
+
+.theme-doc-card-container {
+  border-radius: 6px;
   border: 1px solid var(--it-doc-section-border);
   background: var(--it-doc-section-bg);
   box-shadow:
     0 1px 0 color-mix(in srgb, var(--ifm-color-primary) 6%, transparent),
-    0 4px 16px color-mix(in srgb, var(--ifm-color-primary) 5%, transparent);
+    0 2px 8px color-mix(in srgb, var(--ifm-color-primary) 4%, transparent);
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
     transform 0.2s ease;
 }
 
-.theme-doc-markdown .theme-doc-card-container:hover {
+.theme-doc-card-container:hover {
   border-color: color-mix(in srgb, var(--ifm-color-primary) 35%, var(--it-doc-section-border));
   box-shadow:
     0 2px 0 color-mix(in srgb, var(--ifm-color-primary) 10%, transparent),
-    0 8px 24px color-mix(in srgb, var(--ifm-color-primary) 10%, transparent);
+    0 6px 18px color-mix(in srgb, var(--ifm-color-primary) 8%, transparent);
   transform: translateY(-1px);
 }
 
-.theme-doc-markdown .theme-doc-card-heading {
-  font-size: 1.05rem;
+.theme-doc-card-heading {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.95rem;
   font-weight: 600;
+  line-height: 1.33;
   color: var(--it-doc-heading-fg);
+  margin-bottom: 0.38rem;
 }
 
-.theme-doc-markdown .theme-doc-card-description {
+.theme-doc-card-heading .theme-doc-card-icon {
+  font-size: 1.15rem;
+  margin-right: 0;
+  line-height: 1;
+}
+
+.theme-doc-card-description {
   color: var(--it-doc-lead-fg);
-  font-size: 0.88rem;
-  line-height: 1.55;
+  font-size: 0.8rem;
+  line-height: 1.43;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 576px) {
+  section.row:has(.theme-doc-card-container) {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .theme-doc-markdown .theme-doc-card-container {
+  .theme-doc-card-container {
     transition: none;
   }
 
-  .theme-doc-markdown .theme-doc-card-container:hover {
+  .theme-doc-card-container:hover {
     transform: none;
   }
 }

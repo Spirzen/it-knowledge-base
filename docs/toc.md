@@ -1,4 +1,4 @@
-﻿---
+---
 title: Содержание
 description: Энциклопедия - это основной раздел Вселенной IT. Он регулярно обновляется, расширяется и изменяется, поэтому рекомендую использовать боковое меню (сайд-бар) для ориентира по разделу.
 sidebar_label: Содержание
@@ -38,47 +38,26 @@ import DocCardList from '@theme/DocCardList';
 
 ### Основы
 
-<ul>
-  <li>
-  <ul>
-  Основы
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/basics">1. Основы - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Знакомство с Вселенной IT
 
-<ul>
-  <li>
-  <ul>
-  Знакомство с Вселенной IT
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-01-davayte-poznakomimsya/1">1.01. Давайте познакомимся</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Обзор структуры Вселенной IT
 
-<ul>
-  <li>
-  <ul>
-  Обзор структуры Вселенной IT
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-02-vvedenie/1">1.02. Обзор структуры Вселенной IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-02-vvedenie/2">1.02. Архитектура знаний</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Дорожная карта изучения
 
-<ul>
-  <li>
-  <ul>
-  Дорожная карта изучения
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/1">1.03. Дорожная карта изучения</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/2">1.03. Тест на готовность к программированию</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101">1.03. Указатель — где и о чём почитать</a></li>
@@ -86,17 +65,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/212">1.03. Тест на готовность к работе с данными</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/213">1.03. Тест на готовность к веб-разработке</a></li>
   <li><a href="/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/214">1.03. Документация в Microsoft Learn</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Восприятие IT в обществе
 
-<ul>
-  <li>
-  <ul>
-  Восприятие IT в обществе
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/1">1.04. Восприятие IT в обществе</a></li>
   <li><a href="/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/2">1.04. Связь IT с другими сферами</a></li>
   <li><a href="/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/3">1.04. Классификация технологий в IT</a></li>
@@ -107,45 +80,27 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/98">1.04. Восприятие IT в обществе — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/99">1.04. Восприятие IT в обществе — чек-лист</a></li>
   <li><a href="/encyclopedia/1-basics/1-04-kak-vidyat-it-obychnye-lyudi/711">1.04. Техногиганты</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Предупреждения при изучении
 
-<ul>
-  <li>
-  <ul>
-  Предупреждения при изучении
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-05-preduprezhdenie/1">1.05. Предупреждения при изучении</a></li>
   <li><a href="/encyclopedia/1-basics/1-05-preduprezhdenie/2">1.05. Иллюзия стабильности в IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-05-preduprezhdenie/3">1.05. Рекомендации по обучению и развитию</a></li>
   <li><a href="/encyclopedia/1-basics/1-05-preduprezhdenie/4">1.05. Риски и мифы IT-индустрии</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Сленг
 
-<ul>
-  <li>
-  <ul>
-  Сленг
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-06-sleng/1">1.06. IT-сленг и профессиональная лексика</a></li>
   <li><a href="/encyclopedia/1-basics/1-06-sleng/2">1.06. Сетевой сленг и форумная лексика</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### История информационных технологий
 
-<ul>
-  <li>
-  <ul>
-  История информационных технологий
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/1">1.07. История информационных технологий</a></li>
   <li><a href="/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/2">1.07. Ранние вычислительные устройства</a></li>
   <li><a href="/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/3">1.07. Эволюция программного обеспечения</a></li>
@@ -159,17 +114,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/15">1.07. История мобильных устройств</a></li>
   <li><a href="/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/98">1.07. История информационных технологий — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-07-nemnogo-o-proshlom/99">1.07. История информационных технологий — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Как работает компьютер
 
-<ul>
-  <li>
-  <ul>
-  Как работает компьютер
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/1">1.08. Принцип работы компьютера</a></li>
   <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/2">1.08. Компоненты компьютерного железа</a></li>
   <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/3">1.08. Устройства хранения данных</a></li>
@@ -195,17 +144,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/719">1.08. Камеры смартфонов и вычислительная фотография</a></li>
   <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/7131">1.08. Клавиши для новичка</a></li>
   <li><a href="/encyclopedia/1-basics/1-08-kak-rabotaet-kompyuter/9111">1.08. Аккумуляторы и источники питания</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Данные и информация
 
-<ul>
-  <li>
-  <ul>
-  Данные и информация
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-09-dannye-i-informatsiya/1">1.09. Данные и информация</a></li>
   <li><a href="/encyclopedia/1-basics/1-09-dannye-i-informatsiya/2">1.09. Виды информации</a></li>
   <li><a href="/encyclopedia/1-basics/1-09-dannye-i-informatsiya/3">1.09. Типы данных в вычислительных системах</a></li>
@@ -213,34 +156,22 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-09-dannye-i-informatsiya/5">1.09. Метаданные</a></li>
   <li><a href="/encyclopedia/1-basics/1-09-dannye-i-informatsiya/98">1.09. Данные и информация — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-09-dannye-i-informatsiya/99">1.09. Данные и информация — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Базовые операции с данными
 
-<ul>
-  <li>
-  <ul>
-  Базовые операции с данными
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/1">1.10. Ввод и вывод</a></li>
   <li><a href="/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/2">1.10. Чтение и запись</a></li>
   <li><a href="/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/3">1.10. Кэширование</a></li>
   <li><a href="/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/4">1.10. Манипуляции с данными</a></li>
   <li><a href="/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/98">1.10. Базовые операции с данными — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-10-bazovye-operatsii-s-dannymi/99">1.10. Базовые операции с данными — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Файлы, каталоги и пути
 
-<ul>
-  <li>
-  <ul>
-  Файлы, каталоги и пути
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/1">1.11. Файл и каталог</a></li>
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/2">1.11. Пути и адресация</a></li>
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/3">1.11. Имена, расширения и тип содержимого</a></li>
@@ -250,17 +181,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/99">1.11. Файлы, каталоги и пути — чек-лист</a></li>
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221">1.11. Работа с проводником Windows</a></li>
   <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502">1.11. Файловые менеджеры и системные утилиты</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Цифровые угрозы и модель защиты
 
-<ul>
-  <li>
-  <ul>
-  Цифровые угрозы и модель защиты
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/1">1.12. Активы информационной безопасности и поверхность риска</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/2">1.12. Классификация угроз и сценарии реализации</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/3">1.12. Модель конфиденциальности, целостности и доступности</a></li>
@@ -269,17 +194,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/6">1.12. Резервное копирование и обеспечение сохранности данных</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/98">1.12. Цифровые угрозы и модель защиты — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-12-tsifrovye-ugrozy-i-model-zashchity/99">1.12. Цифровые угрозы и модель защиты — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Устройства и подключения
 
-<ul>
-  <li>
-  <ul>
-  Устройства и подключения
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/1">1.13. Устройства ввода, вывода и классификация периферии</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/2">1.13. Клавиатура, указательные устройства и дисплеи</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/3">1.13. Звуковое оборудование и видеокамеры</a></li>
@@ -289,17 +208,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/7">1.13. Внешние носители, мобильные устройства, драйверы и обслуживание</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/98">1.13. Устройства и подключения — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-13-ustroystva-i-podklyucheniya/99">1.13. Устройства и подключения — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Обмен данными и совместный доступ
 
-<ul>
-  <li>
-  <ul>
-  Обмен данными и совместный доступ
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/1">1.14. Локальное хранение и архитектура копий</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/2">1.14. Облачное хранение и синхронизация</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/3">1.14. Способы передачи цифровых данных</a></li>
@@ -309,17 +222,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/7">1.14. Облако, синхронизация и бэкап для дома</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/98">1.14. Обмен данными и совместный доступ — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-14-obmen-dannymi-i-sovmestnyy-dostup/99">1.14. Обмен данными и совместный доступ — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Текст
 
-<ul>
-  <li>
-  <ul>
-  Текст
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-15-tekst/1">1.15. Текстовые данные</a></li>
   <li><a href="/encyclopedia/1-basics/1-15-tekst/2">1.15. Офисные форматы документов - DOCX, ODT, PDF</a></li>
   <li><a href="/encyclopedia/1-basics/1-15-tekst/3">1.15. Структурированные текстовые данные</a></li>
@@ -333,17 +240,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-15-tekst/99">1.15. Текст — чек-лист</a></li>
   <li><a href="/encyclopedia/1-basics/1-15-tekst/211">1.15. Работа с Microsoft Word</a></li>
   <li><a href="/encyclopedia/1-basics/1-15-tekst/212">1.15. Работа с Microsoft Excel</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Графика
 
-<ul>
-  <li>
-  <ul>
-  Графика
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-16-grafika/1">1.16. Графические данные</a></li>
   <li><a href="/encyclopedia/1-basics/1-16-grafika/2">1.16. Вектор и растр</a></li>
   <li><a href="/encyclopedia/1-basics/1-16-grafika/3">1.16. Растровые форматы</a></li>
@@ -356,17 +257,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-16-grafika/71">1.16. Adobe Photoshop</a></li>
   <li><a href="/encyclopedia/1-basics/1-16-grafika/98">1.16. Графика — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-16-grafika/99">1.16. Графика — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Аудио и видео
 
-<ul>
-  <li>
-  <ul>
-  Аудио и видео
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/1">1.17. Аудио и видео</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/2">1.17. Аудиоввод и вывод - устройства и интерфейсы</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/3">1.17. Видеоввод и вывод - камеры, дисплеи, кодеки</a></li>
@@ -377,17 +272,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/61">1.17. Судебная экспертиза видео- и звукозаписей</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/98">1.17. Аудио и видео — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-17-audio-i-video/99">1.17. Аудио и видео — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Компьютерные игры
 
-<ul>
-  <li>
-  <ul>
-  Компьютерные игры
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-18-kompyuternye-igry/1">1.18. Компьютерные игры</a></li>
   <li><a href="/encyclopedia/1-basics/1-18-kompyuternye-igry/2">1.18. Классификация видеоигр - жанры и платформы</a></li>
   <li><a href="/encyclopedia/1-basics/1-18-kompyuternye-igry/3">1.18. Архитектура игрового приложения</a></li>
@@ -398,20 +287,15 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-18-kompyuternye-igry/8">1.18. DLSS и FSR — апскейлинг в играх</a></li>
   <li><a href="/encyclopedia/1-basics/1-18-kompyuternye-igry/98">1.18. Компьютерные игры — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-18-kompyuternye-igry/99">1.18. Компьютерные игры — чек-лист</a></li>
-  </ul>
-  </li>
-
+  <li><a href="/encyclopedia/1-basics/1-18-kompyuternye-igry/101">1.18. Тест на геймера</a></li>
 </ul>
 
 ### Программа
 
-<ul>
-  <li>
-  <ul>
-  Программа
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-19-programma/1">1.19. Что такое программа?</a></li>
   <li><a href="/encyclopedia/1-basics/1-19-programma/2">1.19. Компиляторы и интерпретаторы</a></li>
-  <li><a href="/encyclopedia/1-basics/1-19-programma/3">1.19. Мобильные приложения</a></li>
+  <li><a href="/encyclopedia/1-basics/1-19-programma/3">1.19. Что такое мобильное приложение</a></li>
   <li><a href="/encyclopedia/1-basics/1-19-programma/98">1.19. Программа — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-19-programma/99">1.19. Программа — чек-лист</a></li>
   <li><a href="/encyclopedia/1-basics/1-19-programma/111">1.19. Программное обеспечение и операционная система</a></li>
@@ -419,53 +303,36 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-19-programma/113">1.19. Поведение программ</a></li>
   <li><a href="/encyclopedia/1-basics/1-19-programma/114">1.19. Установка, обновление и удаление программ</a></li>
   <li><a href="/encyclopedia/1-basics/1-19-programma/115">1.19. Взаимодействие программ с операционной системой</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Исполняемые файлы и архивы
 
-<ul>
-  <li>
-  <ul>
-  Исполняемые файлы и архивы
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/1">1.20. Исполняемые файлы</a></li>
   <li><a href="/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/2">1.20. Архивы и установочные пакеты</a></li>
   <li><a href="/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/3">1.20. Конфигурационные файлы</a></li>
   <li><a href="/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/4">1.20. Специализированные форматы данных и их применение</a></li>
   <li><a href="/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/98">1.20. Исполняемые файлы и архивы — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-20-ispolnyaemye-fayly-i-arhivy/99">1.20. Исполняемые файлы и архивы — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Поиск информации
 
-<ul>
-  <li>
-  <ul>
-  Поиск информации
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/1">1.21. Поисковые системы</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/2">1.21. Языки поисковых запросов</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/3">1.21. Эффективный поиск в интернете</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/4">1.21. Популярные поисковые системы</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/5">1.21. ИИ для новичка</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/6">1.21. ИИ-инструменты в поисковиках</a></li>
+  <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/7">1.21. Факт-чекинг и первоисточники</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/98">1.21. Поиск информации — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-21-poisk-informatsii/99">1.21. Поиск информации — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Коммуникация и общение
 
-<ul>
-  <li>
-  <ul>
-  Коммуникация и общение
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/1">1.22. Цифровая коммуникация</a></li>
   <li><a href="/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/2">1.22. Мессенджеры и чаты</a></li>
   <li><a href="/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/3">1.22. Электронная почта</a></li>
@@ -477,17 +344,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/9">1.22. SMS и сотовые сообщения</a></li>
   <li><a href="/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/98">1.22. Коммуникация и общение — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-22-kommunikatsiya-i-obschenie/99">1.22. Коммуникация и общение — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Фронтенд и бэкенд
 
-<ul>
-  <li>
-  <ul>
-  Фронтенд и бэкенд
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-23-frontend-i-bekend/1">1.23. Фронтенд</a></li>
   <li><a href="/encyclopedia/1-basics/1-23-frontend-i-bekend/2">1.23. Бэкенд</a></li>
   <li><a href="/encyclopedia/1-basics/1-23-frontend-i-bekend/3">1.23. Метрики производительности веб-приложений</a></li>
@@ -499,17 +360,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-23-frontend-i-bekend/9">1.23. Наблюдаемость бэкенда — метрики, логи и аудит</a></li>
   <li><a href="/encyclopedia/1-basics/1-23-frontend-i-bekend/98">1.23. Фронтенд и бэкенд — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-23-frontend-i-bekend/99">1.23. Фронтенд и бэкенд — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Классификация языков в IT
 
-<ul>
-  <li>
-  <ul>
-  Классификация языков в IT
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-24-osnovnye-yazyki/1">1.24. Основные языки</a></li>
   <li><a href="/encyclopedia/1-basics/1-24-osnovnye-yazyki/2">1.24. Естественные и искусственные языки в цифровой среде</a></li>
   <li><a href="/encyclopedia/1-basics/1-24-osnovnye-yazyki/3">1.24. Языки запросов - SQL и его аналоги</a></li>
@@ -519,37 +374,26 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-24-osnovnye-yazyki/7">1.24. Визуальные языки программирования и моделирования</a></li>
   <li><a href="/encyclopedia/1-basics/1-24-osnovnye-yazyki/98">1.24. Классификация языков в IT — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-24-osnovnye-yazyki/99">1.24. Классификация языков в IT — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Интерфейс
 
-<ul>
-  <li>
-  <ul>
-  Интерфейс
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/1">1.25. Пользовательский интерфейс - UX и UI</a></li>
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/2">1.25. Визуальные элементы</a></li>
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/3">1.25. Функциональные элементы</a></li>
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/4">1.25. Навигационные элементы</a></li>
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/5">1.25. Элементы обратной связи</a></li>
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/6">1.25. Особенности и принципы UX и UI</a></li>
-  <li><a href="/encyclopedia/1-basics/1-25-interfeys/7">1.25. Веб-дизайн — маршрут от UX до портфолио</a></li>
+  <li><a href="/encyclopedia/1-basics/1-25-interfeys/7">1.25. Веб-дизайн — маршрут развития</a></li>
+  <li><a href="/encyclopedia/1-basics/1-25-interfeys/8">1.25. Справочник иконок</a></li>
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/98">1.25. Интерфейс — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-25-interfeys/99">1.25. Интерфейс — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Карьера в IT и мифы
 
-<ul>
-  <li>
-  <ul>
-  Карьера в IT и мифы
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-26-karera-v-it-i-mify/1">1.26. Карьера в IT и мифы</a></li>
   <li><a href="/encyclopedia/1-basics/1-26-karera-v-it-i-mify/2">1.26. Специализации</a></li>
   <li><a href="/encyclopedia/1-basics/1-26-karera-v-it-i-mify/3">1.26. Этапы профессионального роста в IT</a></li>
@@ -574,31 +418,19 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-26-karera-v-it-i-mify/131">1.26. Шпаргалка — тестовое задание при найме</a></li>
   <li><a href="/encyclopedia/1-basics/1-26-karera-v-it-i-mify/911">1.26. Построение индивидуального карьерного плана</a></li>
   <li><a href="/encyclopedia/1-basics/1-26-karera-v-it-i-mify/912">1.26. Управленческая ветка в IT</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Удаленная работа
 
-<ul>
-  <li>
-  <ul>
-  Удаленная работа
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-27-udalennaya-rabota/1">1.27. Удаленная работа</a></li>
   <li><a href="/encyclopedia/1-basics/1-27-udalennaya-rabota/2">1.27. Удаленная работа — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-27-udalennaya-rabota/3">1.27. Удаленная работа — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Маркетинг и распространение
 
-<ul>
-  <li>
-  <ul>
-  Маркетинг и распространение
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/1">1.28. Маркетинг и распространение IT-продуктов</a></li>
   <li><a href="/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/2">1.28. Персонализированный маркетинг</a></li>
   <li><a href="/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/3">1.28. Потребительская грамотность в цифровой среде</a></li>
@@ -606,17 +438,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/5">1.28. Подписочная экономика</a></li>
   <li><a href="/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/998">1.28. Маркетинг и распространение — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-28-marketing-i-rasprostranenie/999">1.28. Маркетинг и распространение — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Государство и бизнес
 
-<ul>
-  <li>
-  <ul>
-  Государство и бизнес
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/1">1.29. Государство и цифровая экономика</a></li>
   <li><a href="/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/2">1.29. Бизнес-модели в сфере информационных технологий</a></li>
   <li><a href="/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/3">1.29. Государство и бизнес — итоги</a></li>
@@ -625,17 +451,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/112">1.29. Основы бизнеса для IT-специалиста</a></li>
   <li><a href="/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/113">1.29. Автоматизация бизнес-процессов</a></li>
   <li><a href="/encyclopedia/1-basics/1-29-gosudarstvo-i-biznes/114">1.29. Судебная компьютерно-техническая экспертиза</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Английский язык в IT
 
-<ul>
-  <li>
-  <ul>
-  Английский язык в IT
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/1">1.30. Английский язык в IT</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/2">1.30. Ключевые термины и фразы на английском</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/3">1.30. Аббревиатуры и сокращения в IT</a></li>
@@ -646,17 +466,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/41">1.30. Изучение английского языка с помощью ИИ</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/998">1.30. Английский язык в IT — итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-30-angliyskiy-yazyk/999">1.30. Английский язык в IT — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Базовая информатика
 
-<ul>
-  <li>
-  <ul>
-  Базовая информатика
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/1">1.035. Базовая информатика</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/98">1.035. 1.035. Итоги</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/99">1.035. 1.035. Чек-лист</a></li>
@@ -682,7 +496,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/217">1.035. Управление памятью смартфона</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/218">1.035. Родительский контроль</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/219">1.035. Адресная книга</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/221">1.035. Работа с проводником Windows</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/222">1.035. Техника безопасности при работе за компьютером</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/301">1.035. Системные приложения</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/302">1.035. Медиаплееры и обработка мультимедиа</a></li>
@@ -699,14 +512,10 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/407">1.035. Игры — FPS, латентность и память</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/408">1.035. Железо, охлаждение и диагностика</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/409">1.035. Как читать сообщение об ошибке</a></li>
-  <li><a href="/encyclopedia/1-basics/1-11-fayly-katalogi-i-puti/502">1.035. Файловые менеджеры и системные утилиты</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/504">1.035. Графика, дизайн и 3D-моделирование</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/506">1.035. Автоматизация — AutoHotkey, PowerShell и планировщик</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/509">1.035. PowerToys и дополнительные утилиты</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/510">1.035. Draw.io и формат .drawio</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -715,22 +524,13 @@ import DocCardList from '@theme/DocCardList';
 
 ### Система и сеть
 
-<ul>
-  <li>
-  <ul>
-  Система и сеть
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/system-network">2. Система и сеть - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Операционная система
 
-<ul>
-  <li>
-  <ul>
-  Операционная система
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1">2.01. Операционные системы</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/2">2.01. Классификация операционных систем</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/3">2.01. Ядро операционной системы</a></li>
@@ -766,17 +566,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5119">2.01. Тупики (deadlock) и защита от них</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5120">2.01. Подсистема ввода-вывода в ОС</a></li>
   <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5121">2.01. Алгоритмы замещения страниц</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Платформы
 
-<ul>
-  <li>
-  <ul>
-  Платформы
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/1">2.02. Платформы в IT</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/2">2.02. Виртуализация</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/3">2.02. Программные платформы</a></li>
@@ -788,17 +582,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/312">2.02. Системные требования и как их читать</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/3001">2.02. Корпоративное ПО</a></li>
   <li><a href="/encyclopedia/2-system-network/2-02-platformy/3002">2.02. Платформенные решения в бизнесе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Сеть и интернет
 
-<ul>
-  <li>
-  <ul>
-  Сеть и интернет
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/1">2.03. Сеть и интернет - основы и принципы работы</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/2">2.03. История развития сетевых технологий</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/3">2.03. URL URI URN</a></li>
@@ -836,17 +624,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/619">2.03. Справочник по IP-адресам и CIDR</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/620">2.03. Настройки сетевых адаптеров в Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/2111">2.03. Настройка домашнего роутера</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Веб-сайты и веб-приложения
 
-<ul>
-  <li>
-  <ul>
-  Веб-сайты и веб-приложения
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1">2.04. Сайты и веб-сайты</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/2">2.04. Дизайн веб-интерфейсов</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/3">2.04. Рекламные технологии в вебе</a></li>
@@ -870,21 +652,16 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/128">2.04. HTTPS и TLS — шифрование веба</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/129">2.04. Polling, Long Polling, SSE и Webhook</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/130">2.04. Метрики производительности веб-страницы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/212">2.04. CDN, origin и кэш</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/998">2.04. Веб-сайты и веб-приложения — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/999">2.04. Веб-сайты и веб-приложения — чек-лист</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1111">2.04. Управление закладками и вкладками в браузере</a></li>
   <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1112">2.04. Обработка внутренних ошибок браузера</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Терминал
 
-<ul>
-  <li>
-  <ul>
-  Терминал
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/1">2.05. Терминал - интерфейс командной строки</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/2">2.05. Терминал — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/3">2.05. Терминал — чек-лист</a></li>
@@ -899,17 +676,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/1131">2.05. Работа с PuTTY</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/1132">2.05. Утилита make</a></li>
   <li><a href="/encyclopedia/2-system-network/2-05-terminal/1133">2.05. Утилита curl</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Системное администрирование
 
-<ul>
-  <li>
-  <ul>
-  Системное администрирование
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1">2.06. Администрирование</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2">2.06. Установка и первоначальная настройка ОС</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3">2.06. ИТ-инфраструктура</a></li>
@@ -938,34 +709,22 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100">2.06. Диагностика производительности Linux</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/101">2.06. Системы аутентификации</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411">2.06. Групповые политики в Windows</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум Zabbix
 
-<ul>
-  <li>
-  <ul>
-  Практикум Zabbix
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/1">2.06. Практикум Zabbix — что это и как работает</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/2">2.06. Практикум Zabbix — установка сервера и агентов</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/3">2.06. Практикум Zabbix — первый хост, элемент и триггер</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/4">2.06. Практикум Zabbix — шаблоны и оповещения</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/5">2.06. Практикум Zabbix — мониторинг Linux и Windows</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/6">2.06. Практикум Zabbix — веб-проверки и автодобнаружение</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум Prometheus и Grafana
 
-<ul>
-  <li>
-  <ul>
-  Практикум Prometheus и Grafana
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/1">2.06. Практикум Prometheus — архитектура и модель данных</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/2">2.06. Практикум Prometheus — установка и первые метрики</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/3">2.06. Практикум Prometheus — типы метрик и PromQL</a></li>
@@ -976,34 +735,22 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/8">2.06. Практикум — Alloy, Beyla, Faro и Pyroscope</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/9">2.06. Практикум — OpenTelemetry, k6 и итоговый стенд</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/usage">2.06. Как пользоваться</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Восстановление данных
 
-<ul>
-  <li>
-  <ul>
-  Восстановление данных
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/1">2.06. Как хранятся файлы</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/11">2.06. Что может угрожать данным</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/111">2.06. Резервные копии</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/112">2.06. Восстановление из бэкапов</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/113">2.06. Восстановление без бэкапов</a></li>
   <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/114">2.06. Правила работы с жестким диском</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Техническая поддержка
 
-<ul>
-  <li>
-  <ul>
-  Техническая поддержка
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/1">2.07. Понятие и задачи техподдержки</a></li>
   <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/111">2.07. Эволюция служб технической поддержки</a></li>
   <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/112">2.07. Приём и обработка пользовательских обращений</a></li>
@@ -1016,17 +763,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/119">2.07. ITAM в работе поддержки</a></li>
   <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/998">2.07. Техническая поддержка — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/999">2.07. Техническая поддержка — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Основы информационной безопасности
 
-<ul>
-  <li>
-  <ul>
-  Основы информационной безопасности
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/1">2.08. Основы информационной безопасности</a></li>
   <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/2">2.08. Основы информационной безопасности — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/3">2.08. Основы информационной безопасности — чек-лист</a></li>
@@ -1040,17 +781,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/118">2.08. JWT — семь строк, которые обходят авторизацию</a></li>
   <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/119">2.08. Смена пароля — пропущенный шаг re-auth</a></li>
   <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/120">2.08. Админка по ?isAdmin=true</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Основы интеграционного взаимодействия
 
-<ul>
-  <li>
-  <ul>
-  Основы интеграционного взаимодействия
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1">2.09. Интеграция</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2">2.09. Работа с Postman и curl для тестирования API</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111">2.09. Типы взаимодействия между системами</a></li>
@@ -1063,7 +798,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118">2.09. HTTP как основа веб-интеграций</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/119">2.09. Асинхронная коммуникация между сервисами</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/120">2.09. Реактивные системы и потоки данных</a></li>
-  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121">2.09. Брокеры сообщений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121">2.09. Брокеры сообщений и зачем нужны очереди</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122">2.09. RabbitMQ - работа с очередями сообщений</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123">2.09. Apache Kafka - потоковая обработка данных</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/124">2.09. Дополнительные аспекты интеграции</a></li>
@@ -1079,17 +814,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/134">2.09. Практика подключения MongoDB, Redis, RabbitMQ и Kafka в распределённой системе</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/998">2.09. Основы интеграционного взаимодействия — итоги</a></li>
   <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/999">2.09. Основы интеграционного взаимодействия — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Аппаратное обеспечение
 
-<ul>
-  <li>
-  <ul>
-  Аппаратное обеспечение
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1">2.10. Аппаратное обеспечение</a></li>
   <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/2">2.10. Отображение пикселей</a></li>
   <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/3">2.10. Дата-центры</a></li>
@@ -1113,9 +842,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1011">2.10. Последовательность сборки компьютера</a></li>
   <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1012">2.10. Диагностика неисправностей при первом запуске</a></li>
   <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1013">2.10. Tinkercad Circuits и Arduino</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -1124,56 +850,35 @@ import DocCardList from '@theme/DocCardList';
 
 ### Данные и разметка
 
-<ul>
-  <li>
-  <ul>
-  Данные и разметка
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/data-markup">3. Данные и разметка - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Продвинутые операции с данными
 
-<ul>
-  <li>
-  <ul>
-  Продвинутые операции с данными
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/1">3.01. Продвинутые операции с данными</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/111">3.01. Маршалинг и анмаршалинг - сериализация объектов</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/112">3.01. Адресация данных в памяти</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/113">3.01. Представление информации - биты, байты, машинные слова</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/998">3.01. Продвинутые операции с данными — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-01-prodvinutye-operatsii-s-dannymi/999">3.01. Продвинутые операции с данными — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Структуры данных
 
-<ul>
-  <li>
-  <ul>
-  Структуры данных
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/1">3.02. Структуры данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/2">3.02. Основные структуры данных и их реализация</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/3">3.02. Структуры данных — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/4">3.02. Структуры данных — чек-лист</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/11">3.02. История развития структур данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-02-struktury-dannyh/12">3.02. Геометрические структуры данных</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Мыслительная база
 
-<ul>
-  <li>
-  <ul>
-  Мыслительная база
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/1">3.03. Когнитивистика - наука о мышлении</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/2">3.03. Ментальные модели</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/3">3.03. Математическая основа IT</a></li>
@@ -1212,17 +917,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/341">3.03. Виды математических наук</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/342">3.03. Векторы</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-03-myslitelnaya-baza/343">3.03. Матрицы и операции</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Конфигурации и данные
 
-<ul>
-  <li>
-  <ul>
-  Конфигурации и данные
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/1">3.04. Конфигурационные данные в текстовых форматах</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/2">3.04. XML</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/3">3.04. JSON</a></li>
@@ -1246,17 +945,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/220">3.04. JSON Schema, OpenAPI и Schema.org</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/221">3.04. GraphQL</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-04-konfiguratsii-i-dannye/222">3.04. Parquet и ORC</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Основы баз данных
 
-<ul>
-  <li>
-  <ul>
-  Основы баз данных
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/1">3.05. Знакомство с базами данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/2">3.05. Системы управления базами данных (СУБД)</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/3">3.05. Внутреннее устройство баз данных</a></li>
@@ -1270,17 +963,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/98">3.05. Основы баз данных — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/99">3.05. Основы баз данных — чек-лист</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-05-osnovy-baz-dannyh/111">3.05. Управление данными - Data Governance</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### NoSQL
 
-<ul>
-  <li>
-  <ul>
-  NoSQL
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-06-nosql/1">3.06. История развития NoSQL-систем</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-06-nosql/2">3.06. Основы NoSQL</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-06-nosql/3">3.06. Синтаксис и знаки препинания в NoSQL-запросах</a></li>
@@ -1303,17 +990,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-06-nosql/811">3.06. NewSQL - гибридные системы нового поколения</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-06-nosql/812">3.06. Векторные базы данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-06-nosql/8111">3.06. Первые шаги с Memcached</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### SQL
 
-<ul>
-  <li>
-  <ul>
-  SQL
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-07-sql/1">3.07. SQL - язык структурированных запросов</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-07-sql/2">3.07. Принципы работы SQL-движка</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-07-sql/3">3.07. Синтаксис и пунктуация в SQL</a></li>
@@ -1358,17 +1039,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-07-sql/998">3.07. SQL — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-07-sql/999">3.07. SQL — чек-лист</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-07-sql/8821">3.07. Подсказки оптимизатору (query hints)</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Управление реляционными СУБД
 
-<ul>
-  <li>
-  <ul>
-  Управление реляционными СУБД
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/1">3.08. Управление реляционными СУБД</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/2">3.08. Справочник по PostgreSQL</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/3">3.08. Администрирование БД в облаке</a></li>
@@ -1377,17 +1052,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/213">3.08. Справочник по Oracle DB</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/998">3.08. Управление реляционными СУБД — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-08-upravlenie-rsubd/999">3.08. Управление реляционными СУБД — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### HTML
 
-<ul>
-  <li>
-  <ul>
-  HTML
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-09-html/1">3.09. HTML</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-09-html/2">3.09. Основные HTML-теги и их назначение</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-09-html/3">3.09. Практическое задание на HTML</a></li>
@@ -1398,17 +1067,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-09-html/25">3.09. Web Components</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-09-html/998">3.09. HTML — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-09-html/999">3.09. HTML — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### CSS
 
-<ul>
-  <li>
-  <ul>
-  CSS
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-10-css/1">3.10. CSS</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/2">3.10. Flexbox и CSS Grid</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/3">3.10. Основные стили в CSS</a></li>
@@ -1416,7 +1079,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-10-css/5">3.10. Псевдоклассы и псевдоэлементы</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/6">3.10. Анимации, переходы и трансформации</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/7">3.10. Адаптивный и отзывчивый дизайн</a></li>
-  <li><a href="/encyclopedia/3-data-markup/3-10-css/8">3.10. Практика</a></li>
+  <li><a href="/encyclopedia/3-data-markup/3-10-css/8">3.10. CSS — практика</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/71">3.10. Справочник по CSS</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/111">3.10. Подключение и организация CSS-кода</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/112">3.10. Блочная модель и механизм каскадирования</a></li>
@@ -1432,17 +1095,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-10-css/998">3.10. CSS — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/999">3.10. CSS — чек-лист</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-10-css/1111">3.10. Переменные в CSS</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Анализ данных
 
-<ul>
-  <li>
-  <ul>
-  Анализ данных
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/1">3.11. Анализ данных</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/2">3.11. Дата майнинг</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/3">3.11. Ошибки интерпретации и манипуляции статистикой</a></li>
@@ -1467,17 +1124,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/433">3.11. Пакетная работа с данными</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/998">3.11. Анализ данных — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-11-analiz-dannyh/999">3.11. Анализ данных — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Математическое программирование
 
-<ul>
-  <li>
-  <ul>
-  Математическое программирование
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/1">3.12. Введение и постановка</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/2">3.12. Теория и графический метод</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/3">3.12. Метод Жордана–Гаусса</a></li>
@@ -1489,9 +1140,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/9">3.12. Решатели в коде</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/998">3.12. Математическое программирование — итоги</a></li>
   <li><a href="/encyclopedia/3-data-markup/3-12-matematicheskoe-programmirovanie/999">3.12. Математическое программирование — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -1500,37 +1148,22 @@ import DocCardList from '@theme/DocCardList';
 
 ### Код и разработка
 
-<ul>
-  <li>
-  <ul>
-  Код и разработка
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/code-dev">4. Код и разработка - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Инструменты разработки
 
-<ul>
-  <li>
-  <ul>
-  Инструменты разработки
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/10">4.011. Интегрированные среды разработки (IDE)</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402">4.011. Скрипты, макросы и локальная автоматизация</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/503">4.011. Редакторы кода — VS Code, Vim, Notepad++</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/511">4.011. Visual Studio Code</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Алгоритмы
 
-<ul>
-  <li>
-  <ul>
-  Алгоритмы
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1">4.01. Алгоритмы</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/2">4.01. Алгоритмы сортировки и поиска</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/3">4.01. Анализ эффективности алгоритмов</a></li>
@@ -1551,17 +1184,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1113">4.01. Регулярные выражения — проверки вокруг совпадения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1114">4.01. Регулярные выражения — флаги и жадность</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1115">4.01. Регулярные выражения — рецепты и командная строка</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Код
 
-<ul>
-  <li>
-  <ul>
-  Код
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1">4.02. Что такое код и как он работает</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/2">4.02. Теория представления кода</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/3">4.02. Ключевые слова в языках программирования</a></li>
@@ -1586,17 +1213,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/621">4.02. Пакетные менеджеры — npm, pip, cargo, go mod и другие</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/998">4.02. Код — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/999">4.02. Код — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Выполнение кода
 
-<ul>
-  <li>
-  <ul>
-  Выполнение кода
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/1">4.03. Выполнение программного кода</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2">4.03. Процесс выполнения исходного кода</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/3">4.03. Архитектура современных процессоров</a></li>
@@ -1614,17 +1235,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/313">4.03. Расположение данных в памяти и директивы компилятора</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">4.03. Исполнение байт-кода виртуальными машинами</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/315">4.03. Дизассемблирование и восстановление исходного кода</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Проект, структура и фреймворки
 
-<ul>
-  <li>
-  <ul>
-  Проект, структура и фреймворки
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/1">4.04. Проект программного обеспечения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/2">4.04. Модульность и компонентный подход в разработке</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3">4.04. Оптимизация размера и производительности приложений</a></li>
@@ -1637,17 +1252,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112">4.04. Основы архитектуры</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/998">4.04. Проект, структура и фреймворки — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/999">4.04. Проект, структура и фреймворки — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Асинхронность
 
-<ul>
-  <li>
-  <ul>
-  Асинхронность
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">4.05. Процессы и потоки выполнения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/2">4.05. Асинхронность простым языком — живые примеры</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/3">4.05. Практикум — последовательное и параллельное выполнение</a></li>
@@ -1656,17 +1265,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/13">4.05. Межпроцессное взаимодействие и обмен данными</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/998">4.05. Асинхронность — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/999">4.05. Асинхронность — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Архитектура выполнения
 
-<ul>
-  <li>
-  <ul>
-  Архитектура выполнения
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1">4.06. Архитектура выполнения программ</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/2">4.06. Битовые операции и низкоуровневое представление данных</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/3">4.06. Архитектура выполнения — итоги</a></li>
@@ -1677,17 +1280,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/114">4.06. Ресурсопотребление и метрики</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/115">4.06. Неиспользуемый код и технический долг</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/116">4.06. Сборка и культура производительности</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Парадигмы и уровни абстракции
 
-<ul>
-  <li>
-  <ul>
-  Парадигмы и уровни абстракции
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/1">4.07. Программные парадигмы</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/111">4.07. Уровни абстракции в разработке ПО</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/112">4.07. Метапрограммирование - генерация и модификация кода</a></li>
@@ -1695,17 +1292,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/114">4.07. Обобщения и обобщённое программирование</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/998">4.07. Парадигмы и уровни абстракции — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/999">4.07. Парадигмы и уровни абстракции — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Объектно-ориентированное программирование
 
-<ul>
-  <li>
-  <ul>
-  Объектно-ориентированное программирование
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/1">4.08. Объектно-ориентированное программирование</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/2">4.08. Абстракция - скрытие деталей реализации</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/3">4.08. Инкапсуляция - защита внутреннего состояния объекта</a></li>
@@ -1716,33 +1307,21 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/61">4.08. Коллекции</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/98">4.08. Объектно-ориентированное программирование — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-08-oop/99">4.08. Объектно-ориентированное программирование — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Зависимости
 
-<ul>
-  <li>
-  <ul>
-  Зависимости
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/1">4.09. Управление зависимостями в программных проектах</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/11">4.09. Принцип инверсии зависимостей (DIP)</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/12">4.09. Внедрение зависимостей (Dependency Injection)</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/998">4.09. Зависимости — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/999">4.09. Зависимости — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### ORM и работа с данными
 
-<ul>
-  <li>
-  <ul>
-  ORM и работа с данными
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/1">4.10. Работа приложений с базами данных</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/111">4.10. Взаимодействие программного кода с СУБД</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/112">4.10. ORM - объектно-реляционное отображение</a></li>
@@ -1756,17 +1335,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/998">4.10. ORM и работа с данными — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/999">4.10. ORM и работа с данными — чек-лист</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/1111">4.10. Работа с хранилищем</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Десктопные приложения
 
-<ul>
-  <li>
-  <ul>
-  Десктопные приложения
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1">4.11. Архитектура десктопных приложений</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/2">4.11. Работа с графовыми структурами в коде</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/111">4.11. Разработка приложений для настольных операционных систем</a></li>
@@ -1783,34 +1356,22 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/999">4.11. Десктопные приложения — чек-лист</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1152">4.11. Справочник по WinForms — элементы UI</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1192">4.11. Справочник по WPF — элементы UI</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум WPF и клиент-сервер
 
-<ul>
-  <li>
-  <ul>
-  Практикум WPF и клиент-сервер
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/1">4.11. Практикум WPF — введение в WPF и XAML</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/2">4.11. Практикум WPF — основы MVVM</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/3">4.11. Практикум WPF — сервер ASP.NET Core Web API</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/4">4.11. Практикум WPF — клиент на Prism</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/5">4.11. Практикум WPF — тестирование API и unit-тесты</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/6">4.11. Практикум WPF — итоговый проект TaskDesk</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Мобильные приложения
 
-<ul>
-  <li>
-  <ul>
-  Мобильные приложения
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1">4.12. Мобильные приложения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/2">4.12. Мобильные приложения — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/3">4.12. Мобильные приложения — чек-лист</a></li>
@@ -1831,17 +1392,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1141">4.12. Публикация Android-приложения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/11311">4.12. Первая программа на React Native</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/11321">4.12. Первая программа на Expo</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Основы работы с Git
 
-<ul>
-  <li>
-  <ul>
-  Основы работы с Git
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1">4.13. Система контроля версий Git</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/2">4.13. Основы работы с Git — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/3">4.13. Основы работы с Git — чек-лист</a></li>
@@ -1853,17 +1408,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/116">4.13. Файл .gitignore</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/117">4.13. Код-ревью и pull request</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1141">4.13. Типовые ситуации с Git</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Разработка и отладка
 
-<ul>
-  <li>
-  <ul>
-  Разработка и отладка
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1">4.14. Процесс разработки программного обеспечения</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/2">4.14. Разработка и отладка — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/3">4.14. Разработка и отладка — чек-лист</a></li>
@@ -1889,32 +1438,20 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1119">4.14. Как искать баг</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1131">4.14. Создание и публикация расширения для Visual Studio Code</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1132">4.14. Visual Studio — установка, IDE и версии</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Сборка мусора
 
-<ul>
-  <li>
-  <ul>
-  Сборка мусора
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/1">4.15. Автоматическое управление памятью</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/2">4.15. Сборка мусора — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/3">4.15. Сборка мусора — чек-лист</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/4">4.15. Java, Python и Go — три модели GC</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Параллельные вычисления
 
-<ul>
-  <li>
-  <ul>
-  Параллельные вычисления
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/1">4.16. Параллельные вычислительные процессы — введение</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/2">4.16. Классификация параллельных архитектур</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/3">4.16. Память, мультипроцессоры, кластеры и GRID</a></li>
@@ -1929,17 +1466,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/12">4.16. Параллельное решение СЛАУ — метод Гаусса</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/998">4.16. Параллельные вычисления — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/999">4.16. Параллельные вычисления — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Веб-разработка
 
-<ul>
-  <li>
-  <ul>
-  Веб-разработка
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/1">4.17. Что такое веб-разработка</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/2">4.17. Веб-разработка — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/3">4.17. Веб-разработка — чек-лист</a></li>
@@ -1948,17 +1479,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/6">4.17. От идеи до работающего сайта</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/7">4.17. Основы веб-дизайна для разработчика</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/8">4.17. Open-source веб-фреймворки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Разработка графики
 
-<ul>
-  <li>
-  <ul>
-  Разработка графики
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/1">4.18. От чисел к картинке</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/2">4.18. Модель, update, render</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/3">4.18. Цикл и FSM</a></li>
@@ -1975,9 +1500,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/14">4.18. Битмап и монитор</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/998">4.18. Разработка графики — итоги</a></li>
   <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/999">4.18. Разработка графики — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -1986,23 +1508,14 @@ import DocCardList from '@theme/DocCardList';
 
 ### Языки
 
-<ul>
-  <li>
-  <ul>
-  Языки
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/kak-vybrat-yazyk-programmirovaniya">Какой язык программирования выбрать</a></li>
   <li><a href="/encyclopedia/5-languages/languages">5. Языки - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### JavaScript
 
-<ul>
-  <li>
-  <ul>
-  JavaScript
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/1">5.01. Основы JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/11">5.01. История языка JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/12">5.01. Синтаксис и пунктуация в JavaScript</a></li>
@@ -2020,7 +1533,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/24">5.01. Консоль, отладка и боль</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/25">5.01. Экосистема JavaScript - инструменты и фреймворки</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/30">5.01. TypeScript</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/32">5.01. Практика</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/32">5.01. JavaScript — практика</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/33">5.01. Тестирование JavaScript — Vitest и Testing Library</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/34">5.01. Виджеты интерфейса на ванильном JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/35">5.01. Регулярные выражения в JavaScript</a></li>
@@ -2045,21 +1558,15 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/241">5.01. Встроенные типы ошибок и их обработка</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/242">5.01. Обработка исключений в JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/251">5.01. Справочник по JavaScript</a></li>
-  <li><a href="/encyclopedia/5-languages/5-01-javascript/301">5.01. Справочник по TypeScript</a></li>
+  <li><a href="/encyclopedia/5-languages/5-01-javascript/301">5.01. Шпаргалка по TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/998">5.01. JavaScript — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/999">5.01. JavaScript — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/1001">5.01. Что требуется знать перед началом изучения языка программирования JavaScript</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Node.js
 
-<ul>
-  <li>
-  <ul>
-  Node.js
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/26">5.01. Node.js - серверный JavaScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/48">5.01. Точка входа в Node.js — require.main и import.meta</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/261">5.01. Справочник по Node</a></li>
@@ -2073,45 +1580,27 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/269">5.01. Первая программа на NestJS</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/2691">5.01. Prisma ORM — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/1-runtime-node/2692">5.01. Drizzle ORM — первая программа</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Frontend Frameworks
 
-<ul>
-  <li>
-  <ul>
-  Frontend Frameworks
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/270">5.01. SPA и выбор frontend-фреймворка</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/286">5.01. Первая программа на Svelte</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/287">5.01. Первая программа на Astro</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/288">5.01. Vite — сборка и dev-server</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### jQuery
 
-<ul>
-  <li>
-  <ul>
-  jQuery
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/5-jquery/289">5.01. jQuery — обзор библиотеки</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/5-jquery/2891">5.01. Справочник по jQuery</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### React
 
-<ul>
-  <li>
-  <ul>
-  React
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/27">5.01. React - библиотека для пользовательских интерфейсов</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/45">5.01. Кнопка с загрузкой — React, Promise и поток обновлений</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/271">5.01. Справочник по React</a></li>
@@ -2119,89 +1608,53 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/275">5.01. React — компоненты, JSX и поток данных</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/276">5.01. React — хуки, состояние и формы</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/1-react/277">5.01. React — Router, данные с API и оптимизация</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Vue.js
 
-<ul>
-  <li>
-  <ul>
-  Vue.js
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/28">5.01. Vue.js</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/281">5.01. Справочник по Vue.js</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/282">5.01. Первая программа на Vue.js</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/283">5.01. Vue — реактивность и Composition API</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/284">5.01. Vue — Router, Pinia и Vite</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/2-vue/285">5.01. Vue — SSR, тесты и production</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Angular
 
-<ul>
-  <li>
-  <ul>
-  Angular
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/29">5.01. Angular</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/291">5.01. Справочник по Angular</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/292">5.01. Первая программа на Angular</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/3-angular/293">5.01. Angular — DI, RxJS и формы</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Ext JS
 
-<ul>
-  <li>
-  <ul>
-  Ext JS
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/31">5.01. Ext JS</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/311">5.01. Справочник по Ext JS</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/312">5.01. Первая программа на Ext JS</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/2-frontend-frameworks/4-ext-js/313">5.01. Ext JS — Model, Store и proxy</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Meta Frameworks
 
-<ul>
-  <li>
-  <ul>
-  Meta Frameworks
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/3-meta-frameworks/273">5.01. Next.js</a></li>
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/3-meta-frameworks/2731">5.01. Первая программа на Next.js</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### CLI экосистемы
 
-<ul>
-  <li>
-  <ul>
-  CLI экосистемы
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-01-javascript/3-ecosystem/4-cli-tools/1">5.01. Справочник CLI экосистемы JavaScript</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Python
 
-<ul>
-  <li>
-  <ul>
-  Python
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-02-python/1">5.02. Python - язык общего назначения</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/11">5.02. Архитектура интерпретатора Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/12">5.02. Фреймворки и библиотеки Python</a></li>
@@ -2213,7 +1666,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/18">5.02. Алгоритмы и структуры данных в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/19">5.02. Типы данных в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/20">5.02. Переменные и присваивание</a></li>
-  <li><a href="/encyclopedia/5-languages/5-02-python/21">5.02. Работа с типами</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/21">5.02. Работа с типами данных в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/22">5.02. Коллекции - списки, кортежи, словари, множества</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/23">5.02. Управляющие конструкции - if, for, while</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/24">5.02. Функции - определение, аргументы, возврат значений</a></li>
@@ -2222,7 +1675,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/27">5.02. Архитектура выполнения и сборка мусора</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/28">5.02. Обработка исключений в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/29">5.02. Асинхронность и многопоточность в Python</a></li>
-  <li><a href="/encyclopedia/5-languages/5-02-python/30">5.02. Django</a></li>
+  <li><a href="/encyclopedia/5-languages/5-02-python/30">5.02. Django в Python</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/31">5.02. Работа с файлами, сетью и внешними API</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/32">5.02. Turtle</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/33">5.02. Анализ данных - pandas, NumPy, SciPy</a></li>
@@ -2285,31 +1738,19 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-02-python/3432">5.02. Первая программа на FastAPI</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3433">5.02. FastAPI и база данных</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/3434">5.02. pyTelegramBot — боты в Telegram</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум Kivy
 
-<ul>
-  <li>
-  <ul>
-  Практикум Kivy
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-02-python/kivy-praktikum/1">5.02. Kivy — 2048</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/kivy-praktikum/2">5.02. Kivy — Pong</a></li>
   <li><a href="/encyclopedia/5-languages/5-02-python/kivy-praktikum/3">5.02. Kivy — Snake</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Java
 
-<ul>
-  <li>
-  <ul>
-  Java
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-03-java/1">5.03. Основы языка Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/3">5.03. Справочник по Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/11">5.03. История языка Java</a></li>
@@ -2376,17 +1817,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-03-java/1001">5.03. Что требуется знать перед началом изучения языка программирования Java</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/3111">5.03. Первая программа на JavaFX</a></li>
   <li><a href="/encyclopedia/5-languages/5-03-java/3112">5.03. Справочник по JavaFX и Swing — элементы UI</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Платформа .NET
 
-<ul>
-  <li>
-  <ul>
-  Платформа .NET
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/1">5.04. Платформа .NET</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/2">5.04. SignalR - реализация реального времени в .NET</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/11">5.04. История платформы .NET</a></li>
@@ -2414,17 +1849,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/192">5.04. Semantic Kernel и AI</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/998">5.04. Платформа .NET — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-04-platforma-dotnet/999">5.04. Платформа .NET — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### C#
 
-<ul>
-  <li>
-  <ul>
-  C#
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-05-csharp/1">5.05. C# - язык программирования платформы .NET</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/11">5.05. Синтаксис и пунктуация в C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/12">5.05. Пространства имён в C#</a></li>
@@ -2436,7 +1865,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/18">5.05. Типы данных в C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/19">5.05. Стек и куча</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/20">5.05. Преобразование типов и система типизации</a></li>
-  <li><a href="/encyclopedia/5-languages/5-05-csharp/21">5.05. Работа с типами</a></li>
+  <li><a href="/encyclopedia/5-languages/5-05-csharp/21">5.05. Работа с типами данных в C#</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/22">5.05. Обработка значения null и nullable-типы</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/23">5.05. Массивы, списки и диапазоны</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/24">5.05. Анонимные типы и кортежи</a></li>
@@ -2504,17 +1933,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-05-csharp/4517">5.05. Minimal API и OpenAPI</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/4518">5.05. MediatR и pipeline</a></li>
   <li><a href="/encyclopedia/5-languages/5-05-csharp/4519">5.05. Валидация и устойчивость API</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### C++
 
-<ul>
-  <li>
-  <ul>
-  C++
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-06-cpp/1">5.06. C++ - язык системного программирования</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/3">5.06. Справочник по C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/10">5.06. Экосистема приложений на C++</a></li>
@@ -2530,7 +1953,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-06-cpp/20">5.06. Многопоточность и асинхронное выполнение в C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/21">5.06. Системное программирование на C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/22">5.06. Разработка игр с использованием C++</a></li>
-  <li><a href="/encyclopedia/5-languages/5-06-cpp/23">5.06. Работа с типами</a></li>
+  <li><a href="/encyclopedia/5-languages/5-06-cpp/23">5.06. Работа с типами данных в C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/24">5.06. Работа с данными</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/25">5.06. Сетевое взаимодействие в C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/26">5.06. Особенности и расширения языка C++</a></li>
@@ -2567,17 +1990,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-06-cpp/2744">5.06. Raylib — быстрые 2D/3D прототипы на C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/2745">5.06. OpenGL — 3D-графика на C++</a></li>
   <li><a href="/encyclopedia/5-languages/5-06-cpp/2746">5.06. DirectX — графика и мультимедиа на Windows</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### PHP
 
-<ul>
-  <li>
-  <ul>
-  PHP
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-07-php/1">5.07. PHP - язык веб-разработки</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/10">5.07. Экосистема PHP-приложений</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/11">5.07. История языка PHP</a></li>
@@ -2631,48 +2048,30 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-07-php/1441">5.07. Первая программа на Symfony</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/1442">5.07. Справочник по Symfony</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/1461">5.07. Первая тема WordPress</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### phpMyAdmin
 
-<ul>
-  <li>
-  <ul>
-  phpMyAdmin
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-07-php/phpmyadmin/1">5.07. phpMyAdmin — что это и где встретить</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/phpmyadmin/2">5.07. phpMyAdmin — требования, установка и подключение</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/phpmyadmin/3">5.07. phpMyAdmin — SQL, DDL и DML</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/phpmyadmin/4">5.07. phpMyAdmin — импорт, экспорт, настройка и FAQ</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/phpmyadmin/5">5.07. История phpMyAdmin, phpPgAdmin и веб-админок БД на PHP</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### phpPgAdmin
 
-<ul>
-  <li>
-  <ul>
-  phpPgAdmin
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-07-php/phppgadmin/1">5.07. phpPgAdmin — что это и где встретить</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/phppgadmin/2">5.07. phpPgAdmin — требования, установка и подключение</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/phppgadmin/3">5.07. phpPgAdmin — SQL, DDL и DML</a></li>
   <li><a href="/encyclopedia/5-languages/5-07-php/phppgadmin/4">5.07. phpPgAdmin — дампы, безопасность и FAQ</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Smalltalk
 
-<ul>
-  <li>
-  <ul>
-  Smalltalk
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/1">5.08. Smalltalk - язык объектно-ориентированного программирования</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/2">5.08. История языка Smalltalk</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/3">5.08. Синтаксис и особенности языка</a></li>
@@ -2693,25 +2092,19 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/101">5.08. Рекомендации по разработке на Smalltalk</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/998">5.08. Smalltalk — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-08-smalltalk/999">5.08. Smalltalk — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Kotlin
 
-<ul>
-  <li>
-  <ul>
-  Kotlin
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/1">5.09. История языка Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/2">5.09. Первая программа на Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/3">5.09. Справочник по Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/10">5.09. Экосистема Kotlin-приложений</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/11">5.09. Основы языка Kotlin</a></li>
-  <li><a href="/encyclopedia/5-languages/5-09-kotlin/12">5.09. Типы данных и объявление переменных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/12">5.09. Типы данных и объявление переменных в Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/13">5.09. Операторы и выражения в Kotlin</a></li>
-  <li><a href="/encyclopedia/5-languages/5-09-kotlin/14">5.09. Циклы и управляющие конструкции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-09-kotlin/14">5.09. Циклы и управляющие конструкции в Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/15">5.09. Объектно-ориентированное программирование в Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/16">5.09. Синтаксис и пунктуация в Kotlin</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/17">5.09. Синтаксические конструкции Kotlin</a></li>
@@ -2743,17 +2136,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/998">5.09. Kotlin — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/999">5.09. Kotlin — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-09-kotlin/1001">5.09. Что требуется знать перед началом изучения языка программирования Kotlin</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Go
 
-<ul>
-  <li>
-  <ul>
-  Go
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-10-go/1">5.10. Основы языка Go</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/3">5.10. Справочник по языку Go</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/11">5.10. История языка Go</a></li>
@@ -2799,17 +2186,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-10-go/2412">5.10. Первая программа на Gin</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/2413">5.10. Первая программа на Echo</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-go/2414">5.10. Первая программа на Fiber</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### TypeScript
 
-<ul>
-  <li>
-  <ul>
-  TypeScript
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-10-typescript/1">5.10. Основы TypeScript и структура языка</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/2">5.10. Справочник по TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/3">5.10. Экосистема и архитектура TypeScript</a></li>
@@ -2841,17 +2222,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-10-typescript/29">5.10. Сравнение JavaScript и TypeScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/998">5.10. TypeScript — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-10-typescript/999">5.10. TypeScript — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Ruby
 
-<ul>
-  <li>
-  <ul>
-  Ruby
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-11-ruby/1">5.11. Основы языка Ruby</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/3">5.11. Справочник по языку Ruby</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/11">5.11. История языка Ruby</a></li>
@@ -2878,24 +2253,18 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-11-ruby/998">5.11. Ruby — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/999">5.11. Ruby — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-11-ruby/1001">5.11. Что требуется знать перед началом изучения языка программирования Ruby</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Groovy
 
-<ul>
-  <li>
-  <ul>
-  Groovy
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-12-groovy/1">5.12. История языка Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/2">5.12. Первая программа на Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/3">5.12. Справочник по языку Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/11">5.12. Основы языка Groovy</a></li>
-  <li><a href="/encyclopedia/5-languages/5-12-groovy/12">5.12. Типы данных и объявление переменных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/12">5.12. Типы данных и объявление переменных в Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/13">5.12. Операторы и выражения в Groovy</a></li>
-  <li><a href="/encyclopedia/5-languages/5-12-groovy/14">5.12. Циклы и управляющие конструкции</a></li>
+  <li><a href="/encyclopedia/5-languages/5-12-groovy/14">5.12. Циклы и управляющие конструкции в Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/15">5.12. Объектно-ориентированное программирование в Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/16">5.12. Особенности и расширения языка Groovy</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/17">5.12. Синтаксис и пунктуация в Groovy</a></li>
@@ -2917,17 +2286,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-12-groovy/998">5.12. Groovy — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/999">5.12. Groovy — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-12-groovy/1001">5.12. Что требуется знать перед началом изучения языка программирования Groovy</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Rust
 
-<ul>
-  <li>
-  <ul>
-  Rust
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-13-rust/1">5.13. История языка Rust</a></li>
   <li><a href="/encyclopedia/5-languages/5-13-rust/3">5.13. Справочник по языку Rust</a></li>
   <li><a href="/encyclopedia/5-languages/5-13-rust/11">5.13. Основы языка Rust</a></li>
@@ -2959,23 +2322,17 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-13-rust/998">5.13. Rust — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-13-rust/999">5.13. Rust — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-13-rust/1001">5.13. Что требуется знать перед началом изучения языка программирования Rust</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Swift
 
-<ul>
-  <li>
-  <ul>
-  Swift
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-14-swift/1">5.14. История языка Swift</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/3">5.14. Справочник по языку Swift</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/10">5.14. Экосистема приложений на Swift</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/11">5.14. Основы языка Swift</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/12">5.14. Синтаксис и пунктуация в Swift</a></li>
-  <li><a href="/encyclopedia/5-languages/5-14-swift/13">5.14. Типы данных и объявление переменных</a></li>
+  <li><a href="/encyclopedia/5-languages/5-14-swift/13">5.14. Типы данных и объявление переменных в Swift</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/14">5.14. Управляющие конструкции и циклы в Swift</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/15">5.14. Фреймворки Apple и сторонние решения</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/16">5.14. Работа с данными и коллекциями</a></li>
@@ -3000,17 +2357,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-14-swift/998">5.14. Swift — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/999">5.14. Swift — чек-лист</a></li>
   <li><a href="/encyclopedia/5-languages/5-14-swift/1001">5.14. Что требуется знать перед началом изучения языка программирования Swift</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Lua и Luau
 
-<ul>
-  <li>
-  <ul>
-  Lua и Luau
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/1">5.15. Основы языка Lua</a></li>
   <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/3">5.15. Справочник по Lua</a></li>
   <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/11">5.15. Экосистема приложений на Lua</a></li>
@@ -3035,31 +2386,19 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/173">5.15. Обработка ошибок в Lua</a></li>
   <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/998">5.15. Lua и Luau — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-15-lua-i-luau/999">5.15. Lua и Luau — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Старые языки
 
-<ul>
-  <li>
-  <ul>
-  Старые языки
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/1">5.16. Исторические языки программирования</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/998">5.16. Старые языки — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/999">5.16. Старые языки — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Ассемблер
 
-<ul>
-  <li>
-  <ul>
-  Ассемблер
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/1">5.16. История ассемблерных языков</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/2">5.16. Основы ассемблера</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/3">5.16. Архитектура ассемблерных программ</a></li>
@@ -3079,17 +2418,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/17">5.16. Система команд (ISA) и синтаксис Intel/AT&amp;T</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/61">5.16. Процедуры и прерывания</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/assembler/711">5.16. Справочник по ассемблеру</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Си
 
-<ul>
-  <li>
-  <ul>
-  Си
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/c-language/1">5.16. История языка С</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/c-language/2">5.16. Основы языка С</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/c-language/3">5.16. Архитектура программ на С</a></li>
@@ -3111,17 +2444,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/c-language/416">5.16. Файловый ввод-вывод</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/c-language/711">5.16. Примеры игр и системных утилит на С</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/c-language/712">5.16. Системное программирование на С</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Cobol
 
-<ul>
-  <li>
-  <ul>
-  Cobol
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/1">5.16. История языка COBOL</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/2">5.16. Основы языка COBOL</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/3">5.16. Архитектура программ на COBOL</a></li>
@@ -3132,17 +2459,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/711">5.16. Справочник по COBOL</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/998">5.16. Cobol — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/999">5.16. Cobol — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Fortran
 
-<ul>
-  <li>
-  <ul>
-  Fortran
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/1">5.16. История языка Fortran</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/2">5.16. Основы языка Fortran</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/3">5.16. Архитектура Fortran-программ</a></li>
@@ -3154,17 +2475,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/811">5.16. Справочник по языку Fortran</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/998">5.16. Fortran — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/999">5.16. Fortran — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Lisp
 
-<ul>
-  <li>
-  <ul>
-  Lisp
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/1">5.16. История языка Lisp</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/2">5.16. Основы языка Lisp</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/3">5.16. Архитектура Lisp-систем</a></li>
@@ -3174,17 +2489,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/7">5.16. Первая программа на Lisp</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/8">5.16. Функциональное программирование в Lisp</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/811">5.16. Справочник по Lisp</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Pascal
 
-<ul>
-  <li>
-  <ul>
-  Pascal
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/1">5.16. История языка Pascal</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/2">5.16. Основы языка Pascal</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/3">5.16. Архитектура Pascal-программ</a></li>
@@ -3195,17 +2504,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/711">5.16. Справочник по Pascal</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/998">5.16. Pascal — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/999">5.16. Pascal — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Visual Basic
 
-<ul>
-  <li>
-  <ul>
-  Visual Basic
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/1">5.16. История языка visual-basic</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/2">5.16. Основы языка visual-basic</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/3">5.16. Архитектура приложений на visual-basic</a></li>
@@ -3220,19 +2523,13 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/12">5.16. VBScript</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/13">5.16. VBA Word и Access</a></li>
   <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/711">5.16. Справочник по visual-basic</a></li>
-  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/998">5.16. Visual Basic — итоги</a></li>
-  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/999">5.16. Visual Basic — чек-лист</a></li>
-  </ul>
-  </li>
-
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/998">5.16. visual-basic — итоги</a></li>
+  <li><a href="/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/999">5.16. visual-basic — чек-лист</a></li>
 </ul>
 
 ### Haskell
 
-<ul>
-  <li>
-  <ul>
-  Haskell
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-17-haskell/1">5.17. История языка Haskell</a></li>
   <li><a href="/encyclopedia/5-languages/5-17-haskell/2">5.17. Основы функционального программирования на Haskell</a></li>
   <li><a href="/encyclopedia/5-languages/5-17-haskell/3">5.17. Архитектура выполнения Haskell-программ</a></li>
@@ -3244,17 +2541,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-17-haskell/9">5.17. Cabal и Stack</a></li>
   <li><a href="/encyclopedia/5-languages/5-17-haskell/103">5.17. Простые приложения на Haskell</a></li>
   <li><a href="/encyclopedia/5-languages/5-17-haskell/998">5.17. Haskell — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Scala
 
-<ul>
-  <li>
-  <ul>
-  Scala
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-18-scala/1">5.18. История языка Scala</a></li>
   <li><a href="/encyclopedia/5-languages/5-18-scala/2">5.18. Основы языка Scala</a></li>
   <li><a href="/encyclopedia/5-languages/5-18-scala/3">5.18. Архитектура JVM-приложений на Scala</a></li>
@@ -3267,17 +2558,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-18-scala/212">5.18. Akka — основы</a></li>
   <li><a href="/encyclopedia/5-languages/5-18-scala/213">5.18. Apache Spark на Scala — обзор</a></li>
   <li><a href="/encyclopedia/5-languages/5-18-scala/998">5.18. Scala — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Elixir
 
-<ul>
-  <li>
-  <ul>
-  Elixir
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-19-elixir/1">5.19. История языка Elixir</a></li>
   <li><a href="/encyclopedia/5-languages/5-19-elixir/2">5.19. Основы языка Elixir</a></li>
   <li><a href="/encyclopedia/5-languages/5-19-elixir/3">5.19. Архитектура на базе Erlang VM (BEAM)</a></li>
@@ -3288,17 +2573,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-19-elixir/103">5.19. Простые приложения на Elixir</a></li>
   <li><a href="/encyclopedia/5-languages/5-19-elixir/104">5.19. Phoenix — первая программа</a></li>
   <li><a href="/encyclopedia/5-languages/5-19-elixir/998">5.19. Elixir — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Zig
 
-<ul>
-  <li>
-  <ul>
-  Zig
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-20-zig/1">5.20. История языка Zig</a></li>
   <li><a href="/encyclopedia/5-languages/5-20-zig/2">5.20. Основы языка Zig</a></li>
   <li><a href="/encyclopedia/5-languages/5-20-zig/3">5.20. Архитектура системного программирования на Zig</a></li>
@@ -3308,37 +2587,25 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-20-zig/7">5.20. Первая программа на Zig</a></li>
   <li><a href="/encyclopedia/5-languages/5-20-zig/103">5.20. Простые приложения на Zig</a></li>
   <li><a href="/encyclopedia/5-languages/5-20-zig/998">5.20. Zig — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Nim
 
-<ul>
-  <li>
-  <ul>
-  Nim
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-21-nim/1">5.21. История языка Nim</a></li>
   <li><a href="/encyclopedia/5-languages/5-21-nim/2">5.21. Основы языка Nim</a></li>
   <li><a href="/encyclopedia/5-languages/5-21-nim/3">5.21. Архитектура компиляции и метапрограммирования</a></li>
   <li><a href="/encyclopedia/5-languages/5-21-nim/4">5.21. Типы данных и шаблоны</a></li>
   <li><a href="/encyclopedia/5-languages/5-21-nim/5">5.21. Управляющие конструкции и операторы Nim</a></li>
-  <li><a href="/encyclopedia/5-languages/5-21-nim/6">5.21. Функции и макросы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-21-nim/6">5.21. Функции и макросы в Nim</a></li>
   <li><a href="/encyclopedia/5-languages/5-21-nim/7">5.21. Первая программа на Nim</a></li>
   <li><a href="/encyclopedia/5-languages/5-21-nim/103">5.21. Простые приложения на Nim</a></li>
   <li><a href="/encyclopedia/5-languages/5-21-nim/998">5.21. Nim — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Dart
 
-<ul>
-  <li>
-  <ul>
-  Dart
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-22-dart/1">5.22. История языка Dart</a></li>
   <li><a href="/encyclopedia/5-languages/5-22-dart/2">5.22. Основы языка Dart</a></li>
   <li><a href="/encyclopedia/5-languages/5-22-dart/3">5.22. Архитектура платформы Dart</a></li>
@@ -3355,17 +2622,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-22-dart/312">5.22. Provider и Riverpod во Flutter</a></li>
   <li><a href="/encyclopedia/5-languages/5-22-dart/998">5.22. Dart — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-22-dart/999">5.22. Dart — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### R
 
-<ul>
-  <li>
-  <ul>
-  R
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-23-r/1">5.23. История языка R</a></li>
   <li><a href="/encyclopedia/5-languages/5-23-r/2">5.23. Основы языка R</a></li>
   <li><a href="/encyclopedia/5-languages/5-23-r/3">5.23. Архитектура аналитических приложений на R</a></li>
@@ -3376,38 +2637,26 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-23-r/103">5.23. Простые приложения на R</a></li>
   <li><a href="/encyclopedia/5-languages/5-23-r/104">5.23. tidyverse и ggplot2</a></li>
   <li><a href="/encyclopedia/5-languages/5-23-r/998">5.23. R — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Julia
 
-<ul>
-  <li>
-  <ul>
-  Julia
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-24-julia/1">5.24. История языка Julia</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/2">5.24. Основы языка Julia</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/3">5.24. Архитектура высокопроизводительных вычислений</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/4">5.24. Типы данных и множественная диспетчеризация</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/5">5.24. Управляющие конструкции и операторы Julia</a></li>
-  <li><a href="/encyclopedia/5-languages/5-24-julia/6">5.24. Функции и макросы</a></li>
+  <li><a href="/encyclopedia/5-languages/5-24-julia/6">5.24. Функции и макросы в Julia</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/7">5.24. Первая программа на Julia</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/103">5.24. Простые приложения на Julia</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/104">5.24. Pkg и Plots в Julia</a></li>
   <li><a href="/encyclopedia/5-languages/5-24-julia/998">5.24. Julia — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Bash
 
-<ul>
-  <li>
-  <ul>
-  Bash
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-25-bash/1">5.25. История оболочки Bash</a></li>
   <li><a href="/encyclopedia/5-languages/5-25-bash/11">5.25. Экосистема скриптов и автоматизации на Bash</a></li>
   <li><a href="/encyclopedia/5-languages/5-25-bash/12">5.25. Обработка ошибок и коды возврата</a></li>
@@ -3424,17 +2673,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-25-bash/122">5.25. Первая программа на Bash</a></li>
   <li><a href="/encyclopedia/5-languages/5-25-bash/123">5.25. Справочник по командам и синтаксису Bash</a></li>
   <li><a href="/encyclopedia/5-languages/5-25-bash/998">5.25. Bash — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### PowerShell
 
-<ul>
-  <li>
-  <ul>
-  PowerShell
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-26-powershell/1">5.26. История PowerShell</a></li>
   <li><a href="/encyclopedia/5-languages/5-26-powershell/11">5.26. Экосистема автоматизации на PowerShell</a></li>
   <li><a href="/encyclopedia/5-languages/5-26-powershell/12">5.26. Обработка ошибок и стратегии отладки</a></li>
@@ -3457,17 +2700,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-26-powershell/127">5.26. Секреты и безопасная автоматизация</a></li>
   <li><a href="/encyclopedia/5-languages/5-26-powershell/128">5.26. Конфигурация и адаптивные скрипты</a></li>
   <li><a href="/encyclopedia/5-languages/5-26-powershell/998">5.26. PowerShell — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### 1С
 
-<ul>
-  <li>
-  <ul>
-  1С
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-27-1s/1">5.27. Платформа 1С</a></li>
   <li><a href="/encyclopedia/5-languages/5-27-1s/11">5.27. История 1С</a></li>
   <li><a href="/encyclopedia/5-languages/5-27-1s/111">5.27. Экосистема 1С</a></li>
@@ -3502,48 +2739,27 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/5-languages/5-27-1s/998">5.27. 1С — итоги</a></li>
   <li><a href="/encyclopedia/5-languages/5-27-1s/1121">5.27. Конфигурирование — мини-склад</a></li>
   <li><a href="/encyclopedia/5-languages/5-27-1s/1310">5.27. XML и XDTO в интеграции 1С</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Clojure
 
-<ul>
-  <li>
-  <ul>
-  Clojure
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-28-clojure/1">5.28. История языка Clojure — черновик</a></li>
   <li><a href="/encyclopedia/5-languages/5-28-clojure/7">5.28. Первая программа на Clojure — черновик</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Perl
 
-<ul>
-  <li>
-  <ul>
-  Perl
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-29-perl/1">5.29. История языка Perl — черновик</a></li>
   <li><a href="/encyclopedia/5-languages/5-29-perl/7">5.29. Первая программа на Perl — черновик</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Objective-C
 
-<ul>
-  <li>
-  <ul>
-  Objective-C
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/5-30-objective-c/1">5.30. История Objective-C — черновик</a></li>
   <li><a href="/encyclopedia/5-languages/5-30-objective-c/7">5.30. Первая программа на Objective-C — черновик</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -3552,22 +2768,13 @@ import DocCardList from '@theme/DocCardList';
 
 ### Искусственный интеллект
 
-<ul>
-  <li>
-  <ul>
-  Искусственный интеллект
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/ai">6. Искусственный интеллект - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Введение в ИИ
 
-<ul>
-  <li>
-  <ul>
-  Введение в ИИ
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-01-vvedenie-v-ii/1">6.01. Что такое искусственный интеллект на самом деле</a></li>
   <li><a href="/encyclopedia/6-ai/6-01-vvedenie-v-ii/11">6.01. История развития искусственного интеллекта</a></li>
   <li><a href="/encyclopedia/6-ai/6-01-vvedenie-v-ii/12">6.01. Генеративный искусственный интеллект</a></li>
@@ -3576,17 +2783,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-01-vvedenie-v-ii/113">6.01. Контекст</a></li>
   <li><a href="/encyclopedia/6-ai/6-01-vvedenie-v-ii/114">6.01. Мифы и реальность ИИ</a></li>
   <li><a href="/encyclopedia/6-ai/6-01-vvedenie-v-ii/999">6.01. Введение в ИИ — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Машинное обучение
 
-<ul>
-  <li>
-  <ul>
-  Машинное обучение
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/1">6.02. Машинное обучение</a></li>
   <li><a href="/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/2">6.02. Алгоритмы ИИ</a></li>
   <li><a href="/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/3">6.02. Обучение на базе готовой модели</a></li>
@@ -3601,17 +2802,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/21">6.02. Как начать с машинного обучения на Python без глубоких знаний математики</a></li>
   <li><a href="/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/98">6.02. Машинное обучение — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-02-mashinnoe-obuchenie/999">6.02. Машинное обучение — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Нейросети
 
-<ul>
-  <li>
-  <ul>
-  Нейросети
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-03-neyroseti/1">6.03. Нейрон</a></li>
   <li><a href="/encyclopedia/6-ai/6-03-neyroseti/2">6.03. Первое обучение — перцептрон на NumPy</a></li>
   <li><a href="/encyclopedia/6-ai/6-03-neyroseti/98">6.03. Нейросети — итоги</a></li>
@@ -3620,17 +2815,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-03-neyroseti/113">6.03. Архитектуры нейронных сетей</a></li>
   <li><a href="/encyclopedia/6-ai/6-03-neyroseti/114">6.03. Keras и TensorFlow — нейросети</a></li>
   <li><a href="/encyclopedia/6-ai/6-03-neyroseti/999">6.03. Нейросети — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Модели и инструменты
 
-<ul>
-  <li>
-  <ul>
-  Модели и инструменты
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-04-modeli-i-instrumenty/1">6.04. Большие языковые модели и ChatGPT</a></li>
   <li><a href="/encyclopedia/6-ai/6-04-modeli-i-instrumenty/98">6.04. Модели и инструменты — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-04-modeli-i-instrumenty/111">6.04. ИИ-агенты</a></li>
@@ -3649,17 +2838,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-04-modeli-i-instrumenty/125">6.04. Как выбрать модель и где её запускать</a></li>
   <li><a href="/encyclopedia/6-ai/6-04-modeli-i-instrumenty/126">6.04. Сколько стоит ИИ</a></li>
   <li><a href="/encyclopedia/6-ai/6-04-modeli-i-instrumenty/999">6.04. Модели и инструменты — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Разработка ИИ
 
-<ul>
-  <li>
-  <ul>
-  Разработка ИИ
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/1">6.05. Основы разработки ИИ-решений</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/98">6.05. Разработка ИИ — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/111">6.05. Развёртывание и обслуживание ИИ-моделей</a></li>
@@ -3675,17 +2858,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/127">6.05. Оптимизация локального инференса LLM</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/999">6.05. Разработка ИИ — чек-лист</a></li>
   <li><a href="/encyclopedia/6-ai/6-05-razrabotka-ii/1131">6.05. Интеграция ИИ в веб-приложения</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Применение ИИ
 
-<ul>
-  <li>
-  <ul>
-  Применение ИИ
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-06-primenenie-ii/1">6.06. Применение ИИ в бизнес-процессах</a></li>
   <li><a href="/encyclopedia/6-ai/6-06-primenenie-ii/2">6.06. Роль ИИ в трансформации профессий</a></li>
   <li><a href="/encyclopedia/6-ai/6-06-primenenie-ii/3">6.06. Ответственное использование ИИ и Copilot</a></li>
@@ -3700,17 +2877,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-06-primenenie-ii/116">6.06. ИИ в учёбе</a></li>
   <li><a href="/encyclopedia/6-ai/6-06-primenenie-ii/120">6.06. Распознавание лиц, объектов и текста</a></li>
   <li><a href="/encyclopedia/6-ai/6-06-primenenie-ii/999">6.06. Применение ИИ — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Вайб-кодинг и нейроконтент
 
-<ul>
-  <li>
-  <ul>
-  Вайб-кодинг и нейроконтент
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/1">6.07. Вайб-кодинг</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/2">6.07. Нейрослоп</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/3">6.07. Практический AI-стек — Lovable, Supabase, Cursor, n8n и ChatGPT</a></li>
@@ -3720,32 +2891,20 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/7">6.07. Экономия токенов</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/98">6.07. Вайб-кодинг и нейроконтент — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-07-vayb-koding-i-neurokontent/99">6.07. Вайб-кодинг и нейроконтент — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### AgentOps и MLOps
 
-<ul>
-  <li>
-  <ul>
-  AgentOps и MLOps
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-08-agentops/1">6.08. AgentOps и LLM-стек — слои 4–7</a></li>
   <li><a href="/encyclopedia/6-ai/6-08-agentops/2">6.08. MLOps и LLM-стек — слои 1–3</a></li>
   <li><a href="/encyclopedia/6-ai/6-08-agentops/98">6.08. AgentOps и MLOps — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-08-agentops/99">6.08. AgentOps и MLOps — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Трансформеры и NLP
 
-<ul>
-  <li>
-  <ul>
-  Трансформеры и NLP
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-09-transformery-i-nlp/1">6.09. NLP и работа с текстом</a></li>
   <li><a href="/encyclopedia/6-ai/6-09-transformery-i-nlp/2">6.09. Что такое трансформер — архитектура и особенности</a></li>
   <li><a href="/encyclopedia/6-ai/6-09-transformery-i-nlp/3">6.09. Устройство трансформеров — теория и практика с нуля</a></li>
@@ -3756,17 +2915,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-09-transformery-i-nlp/8">6.09. Трансформеры в разных модальностях — текст, зрение, звук</a></li>
   <li><a href="/encyclopedia/6-ai/6-09-transformery-i-nlp/98">6.09. Трансформеры и NLP — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-09-transformery-i-nlp/999">6.09. Трансформеры и NLP — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Безопасность при работе с ИИ
 
-<ul>
-  <li>
-  <ul>
-  Безопасность при работе с ИИ
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/1">6.10. Безопасность при работе с ИИ</a></li>
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/2">6.10. OWASP LLM Top 10 для разработчика</a></li>
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/3">6.10. Безопасность RAG и MCP</a></li>
@@ -3776,11 +2929,9 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/7">6.10. Slopsquatting и supply chain для ИИ</a></li>
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/8">6.10. Дипфейки, голос и биометрия</a></li>
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/9">6.10. ИИ в SOC и на стороне защитника</a></li>
+  <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/10">6.10. Безопасная интеграция LLM в мобильные и клиентские приложения</a></li>
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/98">6.10. Безопасность при работе с ИИ — итоги</a></li>
   <li><a href="/encyclopedia/6-ai/6-10-bezopasnost-pri-rabote-s-ii/99">6.10. Безопасность при работе с ИИ — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -3789,22 +2940,13 @@ import DocCardList from '@theme/DocCardList';
 
 ### Проект
 
-<ul>
-  <li>
-  <ul>
-  Проект
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/project">7. Проект - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Общее о бизнесе
 
-<ul>
-  <li>
-  <ul>
-  Общее о бизнесе
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-01-obschee-o-biznese/1">7.01. Основы бизнеса в IT-проектах</a></li>
   <li><a href="/encyclopedia/7-project/7-01-obschee-o-biznese/2">7.01. Модели IT-бизнеса</a></li>
   <li><a href="/encyclopedia/7-project/7-01-obschee-o-biznese/3">7.01. Договор и приёмка глазами разработчика</a></li>
@@ -3812,17 +2954,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-01-obschee-o-biznese/112">7.01. Управление бизнесом</a></li>
   <li><a href="/encyclopedia/7-project/7-01-obschee-o-biznese/998">7.01. Общее о бизнесе — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-01-obschee-o-biznese/999">7.01. Общее о бизнесе — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Команда и управление
 
-<ul>
-  <li>
-  <ul>
-  Команда и управление
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-02-komanda-i-upravlenie/1">7.02. Основы управления IT-проектами</a></li>
   <li><a href="/encyclopedia/7-project/7-02-komanda-i-upravlenie/2">7.02. Культура уважения к инженерному труду</a></li>
   <li><a href="/encyclopedia/7-project/7-02-komanda-i-upravlenie/3">7.02. Цифровая трансформация организаций</a></li>
@@ -3842,17 +2978,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-02-komanda-i-upravlenie/144">7.02. Найм в команду разработки — портрет и вакансия</a></li>
   <li><a href="/encyclopedia/7-project/7-02-komanda-i-upravlenie/998">7.02. Команда и управление — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-02-komanda-i-upravlenie/999">7.02. Команда и управление — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Методология и жизненный цикл ПО
 
-<ul>
-  <li>
-  <ul>
-  Методология и жизненный цикл ПО
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/1">7.03. Жизненный цикл программного обеспечения</a></li>
   <li><a href="/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/2">7.03. Методологии разработки государственных ИТ-систем</a></li>
   <li><a href="/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/3">7.03. Agile — гибкая методология разработки</a></li>
@@ -3860,17 +2990,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/5">7.03. Extreme Programming, TDD и BDD</a></li>
   <li><a href="/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/998">7.03. Методология и жизненный цикл ПО — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-03-metodologiya-i-zhiznennyy-tsikl-po/999">7.03. Методология и жизненный цикл ПО — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Аналитика
 
-<ul>
-  <li>
-  <ul>
-  Аналитика
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-04-analitika/1">7.04. История развития аналитики в IT</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/111">7.04. Основы анализа требований</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/112">7.04. Профессиональная аналитика</a></li>
@@ -3898,17 +3022,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-04-analitika/1122">7.04. SQL для аналитики</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/1123">7.04. Основы продуктовой аналитики</a></li>
   <li><a href="/encyclopedia/7-project/7-04-analitika/1231">7.04. Основы диаграмм и моделирования</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Тестирование программного обеспечения
 
-<ul>
-  <li>
-  <ul>
-  Тестирование программного обеспечения
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1">7.05. Основы тестирования программного обеспечения</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/2">7.05. Тестирование и анализ API</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/100">7.05. Добро пожаловать в тестирование</a></li>
@@ -3948,17 +3066,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1272">7.05. Инструменты с низким кодом для тестирования</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1273">7.05. Тестирование нейроморфных систем</a></li>
   <li><a href="/encyclopedia/7-project/7-05-testirovanie/1274">7.05. Дополнительные модули для тестировщика</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Проектирование и архитектура
 
-<ul>
-  <li>
-  <ul>
-  Проектирование и архитектура
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1">7.06. Основы проектирования и архитектуры программного обеспечения</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/2">7.06. Масштабируемость и параллелизм в системном проектировании</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/3">7.06. Практика архитектурного проектирования</a></li>
@@ -3982,17 +3094,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/999">7.06. Проектирование и архитектура — чек-лист</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1141">7.06. Типы классов в DDD</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/1161">7.06. Имитационное моделирование</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Проектирование
 
-<ul>
-  <li>
-  <ul>
-  Проектирование
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/1">7.06. Проектирование программных систем</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/21">7.06. Проектирование распределенных систем</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/116">7.06. Проектирование баз данных</a></li>
@@ -4044,17 +3150,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2142">7.06. Threat modeling для архитекторов</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2143">7.06. Clean Architecture на ASP.NET Core</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design/2144">7.06. Паттерны перехода от монолита к микросервисам</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Паттерны проектирования
 
-<ul>
-  <li>
-  <ul>
-  Паттерны проектирования
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/1">7.06. Обзор паттернов проектирования</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/111">7.06. Порождающие паттерны</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/112">7.06. Структурные паттерны</a></li>
@@ -4089,17 +3189,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/141">7.06. Частые паттерны GoF</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/142">7.06. Принципы перед паттернами</a></li>
   <li><a href="/encyclopedia/7-project/7-06-proektirovanie-i-arhitektura/design-patterns/143">7.06. Составные паттерны и MVC</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Интеллектуальные права
 
-<ul>
-  <li>
-  <ul>
-  Интеллектуальные права
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-07-intellektualnye-prava/1">7.07. Права интеллектуальной собственности в IT</a></li>
   <li><a href="/encyclopedia/7-project/7-07-intellektualnye-prava/111">7.07. Коммерческая тайна и защита исходного кода</a></li>
   <li><a href="/encyclopedia/7-project/7-07-intellektualnye-prava/112">7.07. Регистрация авторских прав и патентов</a></li>
@@ -4110,17 +3204,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-07-intellektualnye-prava/998">7.07. Интеллектуальные права — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-07-intellektualnye-prava/999">7.07. Интеллектуальные права — чек-лист</a></li>
   <li><a href="/encyclopedia/7-project/7-07-intellektualnye-prava/1141">7.07. Механизмы лицензионных ключей и активации</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Техническое письмо
 
-<ul>
-  <li>
-  <ul>
-  Техническое письмо
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1">7.08. Техническое письмо</a></li>
   <li><a href="/encyclopedia/7-project/7-08-tehnicheskoe-pismo/3">7.08. Документирование API с использованием Swagger/OpenAPI</a></li>
   <li><a href="/encyclopedia/7-project/7-08-tehnicheskoe-pismo/11">7.08. Стилевые паттерны технической документации</a></li>
@@ -4144,17 +3232,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1005">7.08. Архитектура документации</a></li>
   <li><a href="/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1006">7.08. Экосистема технического письма</a></li>
   <li><a href="/encyclopedia/7-project/7-08-tehnicheskoe-pismo/1007">7.08. Word и Excel в проектной документации</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Базы знаний и задачники
 
-<ul>
-  <li>
-  <ul>
-  Базы знаний и задачники
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/1">7.09. Базы знаний в IT-проектах</a></li>
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/2">7.09. Системы управления задачами и баг-трекинг</a></li>
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/11">7.09. Организация внутренней Wiki</a></li>
@@ -4162,20 +3244,14 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/22">7.09. Wiki, Confluence и структура базы знаний</a></li>
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/23">7.09. ADR и docs-as-code</a></li>
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/24">7.09. Онбординг-пакет в базе знаний</a></li>
-  <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/111">7.09. Введение</a></li>
+  <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/111">7.09. Docusaurus</a></li>
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/998">7.09. Базы знаний и задачники — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-09-bazy-znaniy-i-zadachniki/999">7.09. Базы знаний и задачники — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Культура кода
 
-<ul>
-  <li>
-  <ul>
-  Культура кода
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-10-kultura-koda/1">7.10. Культура написания и поддержки кода</a></li>
   <li><a href="/encyclopedia/7-project/7-10-kultura-koda/2">7.10. Цикломатическая сложность и читаемость кода</a></li>
   <li><a href="/encyclopedia/7-project/7-10-kultura-koda/3">7.10. Культура кода — итоги</a></li>
@@ -4190,34 +3266,22 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-10-kultura-koda/12">7.10. Исключения и обработка ошибок в читаемом коде</a></li>
   <li><a href="/encyclopedia/7-project/7-10-kultura-koda/13">7.10. Справочник тем чистого кода</a></li>
   <li><a href="/encyclopedia/7-project/7-10-kultura-koda/14">7.10. Декларативный код — что и как</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Легаси-код
 
-<ul>
-  <li>
-  <ul>
-  Легаси-код
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-11-legasi-kod/1">7.11. Что такое легаси и как его узнать</a></li>
   <li><a href="/encyclopedia/7-project/7-11-legasi-kod/2">7.11. Понимание легаси-системы</a></li>
   <li><a href="/encyclopedia/7-project/7-11-legasi-kod/3">7.11. Безопасные изменения в легаси</a></li>
   <li><a href="/encyclopedia/7-project/7-11-legasi-kod/4">7.11. Стратегии модернизации легаси</a></li>
   <li><a href="/encyclopedia/7-project/7-11-legasi-kod/5">7.11. Легаси-код — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-11-legasi-kod/6">7.11. Легаси-код — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Конструирование ПО
 
-<ul>
-  <li>
-  <ul>
-  Конструирование ПО
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-12-konstruirovanie-po/1">7.12. Конструирование ПО — понятие, жизненный цикл, стандарты</a></li>
   <li><a href="/encyclopedia/7-project/7-12-konstruirovanie-po/2">7.12. Связность и сцепление модулей</a></li>
   <li><a href="/encyclopedia/7-project/7-12-konstruirovanie-po/3">7.12. Модели жизненного цикла для конструирования</a></li>
@@ -4226,17 +3290,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-12-konstruirovanie-po/6">7.12. Тестирование на стадии конструирования</a></li>
   <li><a href="/encyclopedia/7-project/7-12-konstruirovanie-po/998">7.12. Конструирование ПО — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-12-konstruirovanie-po/999">7.12. Конструирование ПО — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Экономика производства ПО
 
-<ul>
-  <li>
-  <ul>
-  Экономика производства ПО
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/1">7.13. Модель COCOMO II — прогноз трудоёмкости и стоимости</a></li>
   <li><a href="/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/2">7.13. Модель качества ISO/IEC 25010</a></li>
   <li><a href="/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/3">7.13. Управление конфигурацией программных комплексов</a></li>
@@ -4245,17 +3303,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/6">7.13. Сертификация и приёмка заказных программных продуктов</a></li>
   <li><a href="/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/7">7.13. Квалификация команды для заказной разработки</a></li>
   <li><a href="/encyclopedia/7-project/7-13-ekonomika-proizvodstva-po/998">7.13. Экономика производства ПО — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Scrum
 
-<ul>
-  <li>
-  <ul>
-  Scrum
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-14-scrum/1">7.14. Зачем Scrum и откуда он взялся</a></li>
   <li><a href="/encyclopedia/7-project/7-14-scrum/2">7.14. Scrum — роли, артефакты и события</a></li>
   <li><a href="/encyclopedia/7-project/7-14-scrum/3">7.14. Scrum — команда и Scrum Master</a></li>
@@ -4265,17 +3317,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-14-scrum/7">7.14. Scrum — внедрение и типичные ошибки</a></li>
   <li><a href="/encyclopedia/7-project/7-14-scrum/998">7.14. Scrum — итоги раздела</a></li>
   <li><a href="/encyclopedia/7-project/7-14-scrum/999">7.14. Scrum — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Внедрение ERP
 
-<ul>
-  <li>
-  <ul>
-  Внедрение ERP
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/1">7.15. ERP-система — что это и зачем бизнесу</a></li>
   <li><a href="/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/2">7.15. Выбор ERP — требования, тендер и fit-gap</a></li>
   <li><a href="/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/3">7.15. Методологии внедрения ERP</a></li>
@@ -4288,33 +3334,21 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/10">7.15. Промышленная эксплуатация и сопровождение ERP</a></li>
   <li><a href="/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/998">7.15. Внедрение ERP — итоги и шпаргалка</a></li>
   <li><a href="/encyclopedia/7-project/7-15-vnedrenie-erp-sistem/999">7.15. Внедрение ERP — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### ITSM и ИТ-услуги
 
-<ul>
-  <li>
-  <ul>
-  ITSM и ИТ-услуги
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-16-itsm-i-it-uslugi/1">7.16. ITSM — управление ИТ-услугами</a></li>
   <li><a href="/encyclopedia/7-project/7-16-itsm-i-it-uslugi/2">7.16. SLA — соглашение об уровне предоставления услуги</a></li>
   <li><a href="/encyclopedia/7-project/7-16-itsm-i-it-uslugi/3">7.16. ITIL — практики управления ИТ-услугами</a></li>
   <li><a href="/encyclopedia/7-project/7-16-itsm-i-it-uslugi/4">7.16. ITAM — управление ИТ-активами</a></li>
   <li><a href="/encyclopedia/7-project/7-16-itsm-i-it-uslugi/5">7.16. Словарь ITIL 4 и ИТ-услуг</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Начало работы на проекте
 
-<ul>
-  <li>
-  <ul>
-  Начало работы на проекте
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/1">7.17. От идеи к старту проекта</a></li>
   <li><a href="/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/2">7.17. Команда, роли и найм на старте проекта</a></li>
   <li><a href="/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/3">7.17. Инфраструктура, доступы и администрирование на старте</a></li>
@@ -4324,17 +3358,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/7">7.17. Онбординг участника проекта</a></li>
   <li><a href="/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/998">7.17. Начало работы на проекте — итоги раздела</a></li>
   <li><a href="/encyclopedia/7-project/7-17-nachalo-raboty-na-proekte/999">7.17. Начало работы на проекте — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Kanban
 
-<ul>
-  <li>
-  <ul>
-  Kanban
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-18-kanban/1">7.18. История Kanban и отличие от Scrum</a></li>
   <li><a href="/encyclopedia/7-project/7-18-kanban/2">7.18. Доска Kanban, колонки и WIP-лимиты</a></li>
   <li><a href="/encyclopedia/7-project/7-18-kanban/3">7.18. Классы обслуживания и приоритеты в Kanban</a></li>
@@ -4344,109 +3372,64 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/7-project/7-18-kanban/7">7.18. Kanban в поддержке и инцидентах</a></li>
   <li><a href="/encyclopedia/7-project/7-18-kanban/998">7.18. Kanban — итоги раздела</a></li>
   <li><a href="/encyclopedia/7-project/7-18-kanban/999">7.18. Kanban — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Продуктовые роли
 
-<ul>
-  <li>
-  <ul>
-  Продуктовые роли
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-19-produktovye-roli/1">7.19. Product Owner и Product Manager</a></li>
   <li><a href="/encyclopedia/7-project/7-19-produktovye-roli/998">7.19. Продуктовые роли — итоги раздела</a></li>
   <li><a href="/encyclopedia/7-project/7-19-produktovye-roli/999">7.19. Продуктовые роли — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### ADR и архитектурная память
 
-<ul>
-  <li>
-  <ul>
-  ADR и архитектурная память
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-20-adr-i-arhitekturnaya-pamyat/1">7.20. ADR — запись архитектурных решений</a></li>
   <li><a href="/encyclopedia/7-project/7-20-adr-i-arhitekturnaya-pamyat/998">7.20. ADR — итоги раздела</a></li>
   <li><a href="/encyclopedia/7-project/7-20-adr-i-arhitekturnaya-pamyat/999">7.20. ADR — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Инциденты и эксплуатация
 
-<ul>
-  <li>
-  <ul>
-  Инциденты и эксплуатация
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-21-incidenty-i-ekspluatatsiya/1">7.21. Инциденты, on-call и postmortem</a></li>
   <li><a href="/encyclopedia/7-project/7-21-incidenty-i-ekspluatatsiya/998">7.21. Инциденты — итоги раздела</a></li>
   <li><a href="/encyclopedia/7-project/7-21-incidenty-i-ekspluatatsiya/999">7.21. Инциденты — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Управление изменениями
 
-<ul>
-  <li>
-  <ul>
-  Управление изменениями
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-22-upravlenie-izmeneniyami/1">7.22. Change request и управление изменениями scope</a></li>
   <li><a href="/encyclopedia/7-project/7-22-upravlenie-izmeneniyami/998">7.22. Управление изменениями — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-22-upravlenie-izmeneniyami/999">7.22. Управление изменениями — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Удалённая команда
 
-<ul>
-  <li>
-  <ul>
-  Удалённая команда
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-23-udalennaya-komanda/1">7.23. Удалённая и распределённая команда</a></li>
   <li><a href="/encyclopedia/7-project/7-23-udalennaya-komanda/998">7.23. Удалённая команда — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-23-udalennaya-komanda/999">7.23. Удалённая команда — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### ИИ в проектном процессе
 
-<ul>
-  <li>
-  <ul>
-  ИИ в проектном процессе
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-24-ii-v-proektnom-protsesse/1">7.24. ИИ и LLM в командной разработке</a></li>
   <li><a href="/encyclopedia/7-project/7-24-ii-v-proektnom-protsesse/998">7.24. ИИ в проекте — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-24-ii-v-proektnom-protsesse/999">7.24. ИИ в проекте — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Доставка и готовность
 
-<ul>
-  <li>
-  <ul>
-  Доставка и готовность
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/7-project/7-25-dostavka-i-gotovnost/1">7.25. Definition of Ready</a></li>
   <li><a href="/encyclopedia/7-project/7-25-dostavka-i-gotovnost/2">7.25. Definition of Done и release notes</a></li>
   <li><a href="/encyclopedia/7-project/7-25-dostavka-i-gotovnost/3">7.25. Feature flags — постепенный выкат и kill switch</a></li>
   <li><a href="/encyclopedia/7-project/7-25-dostavka-i-gotovnost/998">7.25. Доставка и готовность — итоги</a></li>
   <li><a href="/encyclopedia/7-project/7-25-dostavka-i-gotovnost/999">7.25. Доставка и готовность — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -4455,70 +3438,43 @@ import DocCardList from '@theme/DocCardList';
 
 ### Инфраструктура и безопасность
 
-<ul>
-  <li>
-  <ul>
-  Инфраструктура и безопасность
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/infra-security">8. Инфраструктура и безопасность - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Основы инфраструктуры
 
-<ul>
-  <li>
-  <ul>
-  Основы инфраструктуры
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/1">8.00. Основы инфраструктуры</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/2">8.00. Основы развития информационных систем</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/3">8.00. Как развёртывают приложения</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/998">8.00. Основы инфраструктуры — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-00-osnovy-infrastruktury/999">8.00. Основы инфраструктуры — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Облачные технологии
 
-<ul>
-  <li>
-  <ul>
-  Облачные технологии
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/1">8.01. Модели и сервисы облачных технологий</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/2">8.01. Облачные технологии — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/3">8.01. Облачные технологии — чек-лист</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/11">8.01. Безопасность в облаке</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-01-oblachnye-tehnologii/12">8.01. Облачные концепции и модель ответственности</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Low-code, No-code
 
-<ul>
-  <li>
-  <ul>
-  Low-code, No-code
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/1">8.02. Low-code и No-code платформы</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/2">8.02. Low-code, No-code — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/3">8.02. Low-code, No-code — чек-лист</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/11">8.02. Пример No-Code приложения</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-02-low-code-no-code/111">8.02. Внедрение Low-Code и No-code в бизнес</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Забота о коде и данных
 
-<ul>
-  <li>
-  <ul>
-  Забота о коде и данных
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1">8.03. Безопасность кода</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/11">8.03. Защита кода от изменений</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/101">8.03. Опасные скрипты</a></li>
@@ -4535,17 +3491,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1181">8.03. Gitverse - отечественная альтернатива Git</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1182">8.03. SourceCraft - отечественная альтернатива Git</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-03-zabota-o-kode-i-dannyh/1183">8.03. Множественные сервисы Git на одном компьютере</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### DevOps, CI-CD
 
-<ul>
-  <li>
-  <ul>
-  DevOps, CI-CD
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/1">8.04. Основы DevOps</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/2">8.04. Terraform</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3">8.04. Справочник по Terraform</a></li>
@@ -4597,17 +3547,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3123">8.04. E2E-тесты и CI с Playwright и GitHub Actions</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3124">8.04. Справочник по Azure Repos Git</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-04-devops-ci-cd/3125">8.04. Справочник по Apache HTTP Server</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Микросервисы и интеграция
 
-<ul>
-  <li>
-  <ul>
-  Микросервисы и интеграция
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1">8.05. Масштабирование микросервисных систем</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/2">8.05. Транспортные механизмы</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/101">8.05. Первые шаги к микросервисам</a></li>
@@ -4618,7 +3562,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/114">8.05. Асинхронная коммуникация</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/115">8.05. Синхронная коммуникация</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/116">8.05. Реактивная коммуникация</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117">8.05. Брокеры сообщений</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/117">8.05. Брокеры сообщений и как они устроены</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/118">8.05. RabbitMQ</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/119">8.05. Kafka</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/120">8.05. Push, Pull, Webhooks</a></li>
@@ -4636,17 +3580,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1203">8.05. Справочник по GraphQL</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1204">8.05. Справочник по RabbitMQ</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-05-mikroservisy-i-integratsiya/1205">8.05. Справочник по Apache Kafka</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Контейнеризация и оркестрация
 
-<ul>
-  <li>
-  <ul>
-  Контейнеризация и оркестрация
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1">8.06. Контейнеризация</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/2">8.06. Справочник по Docker</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/111">8.06. Docker</a></li>
@@ -4654,7 +3592,7 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/113">8.06. DockerHub и реестры образов</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/114">8.06. Работа с Docker</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/115">8.06. Сеть в контейнерах</a></li>
-  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/116">8.06. Dockerfile</a></li>
+  <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/116">8.06. Dockerfile и инструкции для сборки Docker-образа</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/117">8.06. Docker Swarm и Kubernetes</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/118">8.06. DevOps — шпаргалка</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/119">8.06. Графический интерфейс для управления Kubernetes</a></li>
@@ -4668,17 +3606,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1121">8.06. Docker Desktop</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1171">8.06. Реализация Kubernetes</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-06-konteynerizatsiya-i-orkestratsiya/1172">8.06. Первые шаги с Docker и Kubernetes</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Информационная безопасность
 
-<ul>
-  <li>
-  <ul>
-  Информационная безопасность
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1">8.07. Информационная безопасность</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/2">8.07. Обеспечение безопасности</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/111">8.07. Методы защиты информации</a></li>
@@ -4716,17 +3648,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1152">8.07. Архитектура взаимодействия мессенджеров</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1153">8.07. Управление конфигурациями и окружениями</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-07-informatsionnaya-bezopasnost/1291">8.07. Социальная инженерия</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум REST и WebSocket
 
-<ul>
-  <li>
-  <ul>
-  Практикум REST и WebSocket
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/1">8.08. Практикум — сценарий и архитектура OrderDesk</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/2">8.08. Практикум — проектирование контракта API</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/3">8.08. Практикум — модели данных и маппинг DTO</a></li>
@@ -4737,17 +3663,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/8">8.08. Практикум — проверка в Postman</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/998">8.08. Практикум REST и WebSocket — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-08-praktikum-rest-i-websocket/999">8.08. Практикум REST и WebSocket — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Белое хакерство и Bug Bounty
 
-<ul>
-  <li>
-  <ul>
-  Белое хакерство и Bug Bounty
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/1">8.09. Белое хакерство — основы</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/2">8.09. Как ищут и оформляют уязвимости</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/3">8.09. Bug Bounty и координированное раскрытие</a></li>
@@ -4756,17 +3676,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/6">8.09. Когда доверие между вендором и исследователем ломается</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/998">8.09. Белое хакерство — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-09-belyy-haking-i-bug-bounty/999">8.09. Белое хакерство — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Тестирование на проникновение
 
-<ul>
-  <li>
-  <ul>
-  Тестирование на проникновение
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/1">8.10. Kali Linux — установка и настройка</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/2">8.10. Инструменты Kali и сбор информации</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/3">8.10. Тестирование беспроводных сетей</a></li>
@@ -4778,17 +3692,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/9">8.10. Pivoting, post-exploitation и отчёты</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/998">8.10. Тестирование на проникновение — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-10-testirovanie-na-proniknovenie/999">8.10. Тестирование на проникновение — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум PostgreSQL
 
-<ul>
-  <li>
-  <ul>
-  Практикум PostgreSQL
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/1">8.11. Архитектура PostgreSQL и внутреннее устройство</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/2">8.11. Продвинутая оптимизация PostgreSQL и индексы</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/3">8.11. Конфигурация PostgreSQL — postgresql.conf</a></li>
@@ -4803,17 +3711,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/12">8.11. Автоматизация PostgreSQL — Ansible и Terraform</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/998">8.11. Практикум PostgreSQL — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-11-praktikum-postgresql/999">8.11. Практикум PostgreSQL — чек-лист самопроверки</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Актуальные практики
 
-<ul>
-  <li>
-  <ul>
-  Актуальные практики
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/1">8.12. Supply chain и SBOM</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/2">8.12. Passkeys и WebAuthn</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/3">8.12. DevSecOps</a></li>
@@ -4827,70 +3729,43 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/11">8.12. Фишинг — учебная симуляция для команды</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/998">8.12. Актуальные практики — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-12-aktualnye-praktiki/999">8.12. Актуальные практики — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум GitOps
 
-<ul>
-  <li>
-  <ul>
-  Практикум GitOps
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-13-praktikum-gitops/1">8.13. Практикум GitOps — подготовка кластера</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-13-praktikum-gitops/2">8.13. Практикум GitOps — репозиторий и Application</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-13-praktikum-gitops/3">8.13. Практикум GitOps — обновление через Git</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-13-praktikum-gitops/4">8.13. Практикум GitOps — drift и откат</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-13-praktikum-gitops/998">8.13. Практикум GitOps — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-13-praktikum-gitops/999">8.13. Практикум GitOps — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум Vault
 
-<ul>
-  <li>
-  <ul>
-  Практикум Vault
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-14-praktikum-vault/1">8.14. Практикум Vault — запуск и KV</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-14-praktikum-vault/2">8.14. Практикум Vault — policies и AppRole</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-14-praktikum-vault/3">8.14. Практикум Vault — приложение и CI</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-14-praktikum-vault/998">8.14. Практикум Vault — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-14-praktikum-vault/999">8.14. Практикум Vault — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум DR
 
-<ul>
-  <li>
-  <ul>
-  Практикум DR
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-15-praktikum-dr/1">8.15. Практикум DR — RTO, RPO и 3-2-1</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-15-praktikum-dr/2">8.15. Практикум DR — стенд и бэкап</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-15-praktikum-dr/3">8.15. Практикум DR — катастрофа и restore</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-15-praktikum-dr/998">8.15. Практикум DR — итоги</a></li>
   <li><a href="/encyclopedia/8-infra-security/8-15-praktikum-dr/999">8.15. Практикум DR — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### FinOps для pet-проекта
 
-<ul>
-  <li>
-  <ul>
-  FinOps для pet-проекта
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/8-infra-security/8-16-finops-pet-project/1">8.16. FinOps для pet-проекта</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -4899,53 +3774,32 @@ import DocCardList from '@theme/DocCardList';
 
 ### Спин-офф
 
-<ul>
-  <li>
-  <ul>
-  Спин-офф
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/spinoff">9. Спин-офф - о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Великие люди
 
-<ul>
-  <li>
-  <ul>
-  Великие люди
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-01-velikie-lyudi/1">9.01. Великие люди</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-01-velikie-lyudi/2">9.01. Великие люди — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-01-velikie-lyudi/3">9.01. Великие люди — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Как понять, что пора менять работу
 
-<ul>
-  <li>
-  <ul>
-  Как понять, что пора менять работу
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/1">9.02. Признаки необходимости смены работы в IT</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/2">9.02. Как понять, что пора менять работу — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/3">9.02. Как понять, что пора менять работу — чек-лист</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/4">9.02. Границы, on-call и разговор с руководителем</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/5">9.02. Выгорание в IT — восстановление</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-02-kak-ponyat-chto-pora-menyat-rabotu/6">9.02. Когда дело не в вас: платформы с высоким порогом входа</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Игровая индустрия
 
-<ul>
-  <li>
-  <ul>
-  Игровая индустрия
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/1">9.03. Игровая индустрия</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11">9.03. Кризис игровой индустрии</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/111">9.03. Студии и независимые разработчики</a></li>
@@ -4984,17 +3838,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11440">9.03. Как устроена Nintendo Switch 2</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/11441">9.03. Как устроен Steam Machine</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/114301">9.03. Xbox Game Pass</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Игроведение
 
-<ul>
-  <li>
-  <ul>
-  Игроведение
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/1">9.03. Diablo</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/11">9.03. Starcraft</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/12">9.03. Warcraft</a></li>
@@ -5023,17 +3871,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/127">9.03. Жанры видеоигр — маршрут</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/128">9.03. DRM и Denuvo в играх</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-03-igrovaya-industriya/game-studies/129">9.03. Игровые консоли — маршрут</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Разработка игр
 
-<ul>
-  <li>
-  <ul>
-  Разработка игр
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/1">9.04. Процесс разработки видеоигр</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/2">9.04. Разработка на Roblox</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/3">9.04. Разработка на Unity</a></li>
@@ -5079,17 +3921,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/1174">9.04. Геймплей и core loop</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/1175">9.04. Макроструктура, нарратив и метагейм</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/1176">9.04. Прототип и playtest дизайна</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Практикум разработки игр
 
-<ul>
-  <li>
-  <ul>
-  Практикум разработки игр
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/2">9.04. Python — Match3</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/3">9.04. Python — Ping Pong</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/4">9.04. Python — Racing</a></li>
@@ -5100,17 +3936,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/9">9.04. TypeScript — OnlineCardGame</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/10">9.04. Python — Bubble Shooter</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-04-razrabotka-igr/praktikum-razrabotki-igr/11">9.04. Python — Space Invaders</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Блокчейн, криптовалюты и NFT
 
-<ul>
-  <li>
-  <ul>
-  Блокчейн, криптовалюты и NFT
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1">9.05. Блокчейн, крипта и NFT</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/2">9.05. Блокчейн, криптовалюты и NFT — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/3">9.05. Блокчейн, криптовалюты и NFT — чек-лист</a></li>
@@ -5120,17 +3950,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1012">9.05. Практикум 2 — криптография</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1013">9.05. Практикум 3 — ledger</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-05-blokcheyn-kripta-i-nft/1014">9.05. Практикум 4 — compliance</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Отраслевое ПО
 
-<ul>
-  <li>
-  <ul>
-  Отраслевое ПО
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-06-otraslevoe-po/1">9.06. Отраслевое программное обеспечение</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-06-otraslevoe-po/2">9.06. Отраслевое ПО — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-06-otraslevoe-po/3">9.06. Отраслевое ПО — чек-лист</a></li>
@@ -5138,17 +3962,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-06-otraslevoe-po/111">9.06. Справочник по Adobe Photoshop</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-06-otraslevoe-po/112">9.06. Autodesk</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-06-otraslevoe-po/113">9.06. Figma для разработчика</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Компьютерная графика
 
-<ul>
-  <li>
-  <ul>
-  Компьютерная графика
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/1">9.08. Основы компьютерной графики</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/2">9.08. Компьютерная графика — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/3">9.08. Компьютерная графика — чек-лист</a></li>
@@ -5161,17 +3979,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/17">9.08. Видимость и буфер глубины</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/18">9.08. OpenGL и шейдеры</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-08-kompyuternaya-grafika/131">9.08. Blender</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Медиа-контент
 
-<ul>
-  <li>
-  <ul>
-  Медиа-контент
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-09-media-kontent/1">9.09. Видео</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-09-media-kontent/2">9.09. Медиа-контент — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-09-media-kontent/3">9.09. Медиа-контент — чек-лист</a></li>
@@ -5179,17 +3991,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-09-media-kontent/12">9.09. Онлайн-контент и стриминг</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-09-media-kontent/13">9.09. Онлайн-кинотеатры</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-09-media-kontent/14">9.09. OBS — стрим и запись</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Интернет-культура
 
-<ul>
-  <li>
-  <ul>
-  Интернет-культура
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/1">9.10. Основы интернет-культуры</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/11">9.10. Форумы и имиджборды</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/111">9.10. Технологическая инфраструктура цифрового взаимодействия</a></li>
@@ -5219,29 +4025,17 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/136">9.10. IT-законы и эмпирические принципы</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/998">9.10. Интернет-культура — итоги</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-10-internet-kultura/999">9.10. Интернет-культура — чек-лист</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Для детей
 
-<ul>
-  <li>
-  <ul>
-  Для детей
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/forkids">9.11. Для детей — о разделе</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Компьютер
 
-<ul>
-  <li>
-  <ul>
-  Компьютер
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/1">9.11. Знакомимся с компьютером</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/11">9.11. Физические компоненты</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/12">9.11. Простые действия</a></li>
@@ -5254,17 +4048,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/19">9.11. Память изнутри</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/20">9.11. Процессор — как он работает</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/1-computer/98">9.11. Компьютер — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Видеоигры и компьютерные игры
 
-<ul>
-  <li>
-  <ul>
-  Видеоигры и компьютерные игры
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/1">9.11. Видеоигры</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/11">9.11. Игровые жанры и интеллект</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/12">9.11. Онлайн</a></li>
@@ -5284,17 +4072,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/26">9.11. Как разрабатывают игры</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/27">9.11. Godot и Construct 3</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/2-video-games/98">9.11. Видеоигры и компьютерные игры — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Развитие
 
-<ul>
-  <li>
-  <ul>
-  Развитие
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/1">9.11. Алгоритм</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/11">9.11. Задачи</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/12">9.11. Анализ и отладка</a></li>
@@ -5305,17 +4087,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/17">9.11. CoSpaces Edu</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/18">9.11. Tinkercad</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/3-development/98">9.11. Развитие — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Программы
 
-<ul>
-  <li>
-  <ul>
-  Программы
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/1">9.11. Программы</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/2">9.11. Текст</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/3">9.11. Презентаци</a></li>
@@ -5323,17 +4099,11 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/5">9.11. Таблицы</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/6">9.11. Браузер</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/4-programmy/98">9.11. Программы — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ### Программирование
 
-<ul>
-  <li>
-  <ul>
-  Программирование
+<ul class="it-toc-articles">
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/1">9.11. Введение в программирование</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/2">9.11. Блоки</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/3">9.11. Scratch</a></li>
@@ -5360,9 +4130,6 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/43">9.11. Python — классы</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/44">9.11. Практика — платформер</a></li>
   <li><a href="/encyclopedia/9-spinoff/9-11-dlya-detey/5-kod/98">9.11. Программирование — итоги</a></li>
-  </ul>
-  </li>
-
 </ul>
 
 ---
@@ -5395,7 +4162,7 @@ import DocCardList from '@theme/DocCardList';
 
 ## О проекте
 
-<ul>
+<ul class="it-toc-articles">
   <li><a href="/about/project">О проекте</a></li>
   <li><a href="/about/author">Об авторе</a></li>
   <li><a href="/about/license">Лицензия</a></li>

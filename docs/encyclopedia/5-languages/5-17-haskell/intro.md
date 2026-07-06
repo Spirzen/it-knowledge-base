@@ -127,7 +127,7 @@ Haskell относится к семейству **ML**; непосредств�
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Бэкенд и серверная разработка** — [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro).
+**Бэкенд и серверная разработка** — [Си — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/c-language/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro), [visual-basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Zig — о разделе](/encyclopedia/5-languages/5-20-zig/intro).
 
 {/* /sidebar-collections */}
 

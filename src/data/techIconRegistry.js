@@ -54,7 +54,7 @@ export const TECH_ICON_REGISTRY = {
   smalltalk: {fallback: 'ST', label: 'Smalltalk'},
   cobol: {fallback: 'COB', label: 'COBOL'},
   pascal: {fallback: 'Pascal', label: 'Pascal'},
-  vb: {fallback: 'VB', label: 'Visual Basic'},
+  vb: {fallback: 'VB', label: 'visual-basic'},
   assembler: {fallback: 'ASM', label: 'Ассемблер'},
   '1c': {fallback: '1С', label: '1С'},
   'legacy-hub': {fallback: 'HL', label: 'Исторические языки'},

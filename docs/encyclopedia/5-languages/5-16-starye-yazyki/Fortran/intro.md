@@ -121,7 +121,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Бэкенд и серверная разработка** — [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro).
+**Бэкенд и серверная разработка** — [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Lisp — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Swift — о разделе](/encyclopedia/5-languages/5-14-swift/intro), [visual-basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro).
 
 {/* /sidebar-collections */}
 

@@ -93,7 +93,7 @@ mindmap
         Fortran
         Cobol
         Lisp
-        Visual Basic
+        visual-basic
     Корпоративные и нишевые
       5.27 1С
     Черновики

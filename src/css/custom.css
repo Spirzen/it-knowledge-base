@@ -786,6 +786,41 @@ img {
   margin: 1rem 0 1.25rem;
 }
 
+.it-toc-articles {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 0.65rem;
+  border-left: 2px solid color-mix(in srgb, var(--ifm-color-primary) 55%, transparent);
+}
+
+.it-toc-articles li {
+  margin: 0;
+}
+
+.it-toc-articles a {
+  display: block;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0 6px 6px 0;
+  text-decoration: none;
+  line-height: 1.45;
+  color: var(--ifm-font-color-base);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.it-toc-articles a:hover {
+  background: var(--ifm-menu-color-background-hover);
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.theme-doc-markdown h3 + .it-toc-articles {
+  margin-top: 0.5rem;
+}
+
+.theme-doc-markdown h2 + .it-toc-articles {
+  margin-top: 0.65rem;
+}
+
 .tag,
 .complexity-badge {
   display: inline-flex;
@@ -1668,7 +1703,18 @@ pre[class*='language-']::after,
   display: block !important;
 }
 
+/* DocCardList G10 — перекрытие общих .card (см. article-docs-prime.css) */
+a.card.theme-doc-card-container {
+  min-height: 0;
+  padding: 0.82rem 0.92rem !important;
+  gap: 0.38rem;
+  border-radius: 6px;
+  overflow: visible;
+}
 
+a.card.theme-doc-card-container:hover {
+  transform: translateY(-1px);
+}
 
 .row > .col {
   display: flex;

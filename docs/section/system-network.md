@@ -44,228 +44,340 @@ mindmap
 
 ## Операционная система
 
-- [2.01. Операционная система](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/1)
-- [2.01. Виды операционных систем](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/2)
-- [2.01. Основы UNIX](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/211)
-- [2.01. Ядро ОС](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/3)
-- [2.01. Windows](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/4)
-- [2.01. Справочник по Windows 11](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/41)
-- [2.01. Устройство файловой системы Windows](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/411)
-- [2.01. Иероглифы в Windows](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/412)
-- [2.01. Windows или Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/413)
-- [2.01. Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5)
-- [2.01. Справочник по Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/51)
-- [2.01. Дескриптор процесса в Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5111)
-- [2.01. Управление памятью в Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5112)
-- [2.01. Процесс загрузки Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5113)
-- [2.01. Жизненный цикл процесса в Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5114)
-- [2.01. Управление процессами в Linux](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5115)
-- [2.01. Распределение памяти](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5116)
-- [2.01. Планирование процессора](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5117)
-- [2.01. Гонки и критические секции](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5118)
-- [2.01. Тупики (deadlock)](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5119)
-- [2.01. Подсистема ввода-вывода](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5120)
-- [2.01. Алгоритмы замещения страниц](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/5121)
-- [2.01. История операционных систем](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/9)
-- [2.01. Требования к ОС](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/10)
-- [2.01. macOS](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/6)
-- [2.01. iOS](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/7)
-- [2.01. Справочник по iOS](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/71)
-- [2.01. Android](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/8)
-- [2.01. Справочник по Android](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/81)
-- [2.01. Итоги](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/98)
-- [2.01. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.01.%20Операционная%20система/99)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/1">2.01. Операционные системы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/2">2.01. Классификация операционных систем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/3">2.01. Ядро операционной системы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/4">2.01. Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5">2.01. Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/6">2.01. macOS</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/7">2.01. iOS</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/8">2.01. Android</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/9">2.01. История операционных систем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/10">2.01. Требования к ОС и подходы к реализации</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/41">2.01. Справочник по Windows 11</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/51">2.01. Справочник по Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/52">2.01. Линус Торвальдс — ядро Linux и Git</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/71">2.01. Справочник по iOS</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/81">2.01. Справочник по Android</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/98">2.01. Операционная система — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/99">2.01. Операционная система — чек-лист</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/211">2.01. Основы UNIX-систем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/411">2.01. Устройство файловой системы Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/412">2.01. Поддержка локализации и символов в Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/413">2.01. Сравнение Windows и Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/414">2.01. Эмуляция, виртуализация и Wine</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/415">2.01. Windows 11 — настройка и работа</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/4111">2.01. Работа памяти в Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5111">2.01. Дескрипторы процессов в Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5112">2.01. Управление памятью в Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5113">2.01. Загрузка операционной системы Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5114">2.01. Жизненный цикл процесса в Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5115">2.01. Управление процессами в Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5116">2.01. Механизмы распределения памяти в ОС</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5117">2.01. Планирование процессора — классические алгоритмы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5118">2.01. Гонки, критические секции и разделяемая память</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5119">2.01. Тупики (deadlock) и защита от них</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5120">2.01. Подсистема ввода-вывода в ОС</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-01-operatsionnaya-sistema/5121">2.01. Алгоритмы замещения страниц</a></li>
+</ul>
 
 ---
 
 ## Платформы
 
-- [2.02. Платформы](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/1)
-- [2.02. Сервер](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/111)
-- [2.02. Виртуализация](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/2)
-- [2.02. Платформы программных продуктов](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/3)
-- [2.02. Социальные сети](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/311)
-- [2.02. Системные требования и как их читать](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/312)
-- [2.02. Итоги](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/98)
-- [2.02. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.02.%20Платформы/99)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/1">2.02. Платформы в IT</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/2">2.02. Виртуализация</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/3">2.02. Программные платформы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/21">2.02. Инструменты виртуализации</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/98">2.02. Платформы — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/99">2.02. Платформы — чек-лист</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/111">2.02. Серверные платформы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/311">2.02. Социальные сети</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/312">2.02. Системные требования и как их читать</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/3001">2.02. Корпоративное ПО</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-02-platformy/3002">2.02. Платформенные решения в бизнесе</a></li>
+</ul>
 
 ---
 
 ## Сеть и интернет
 
-- [2.03. Что такое сеть и интернет](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/1)
-- [2.03. История сетевых технологий](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/2)
-- [2.03. Сетевые устройства](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/21)
-- [2.03. Как соединены устройства в глобальной сети](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/211)
-- [2.03. Глобальная доставка контента](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/212)
-- [2.03. URL URI URN](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/3)
-- [2.03. Протоколы, порты и процесс соединения](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/4)
-- [2.03. Основы IP-адресации](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/41)
-- [2.03. CORS](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/411)
-- [2.03. Что происходит при загрузке сайта](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/5)
-- [2.03. Домен и хостинг](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/511)
-- [2.03. DNS](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/6)
-- [2.03. Интернет-провайдер](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/61)
-- [2.03. Справочник по HTTP](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/611)
-- [2.03. Скорость интернета](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/612)
-- [2.03. Виртуальная частная сеть](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/613)
-- [2.03. Прокси-серверы](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/614)
-- [2.03. Сетевой трафик](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/615)
-- [2.03. Защита сети](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/616)
-- [2.03. Cookie](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/7)
-- [2.03. Настройки сетевых адаптеров в Windows](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/620)
-- [2.03. Беспроводные сети](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/71)
-- [2.03. Прочие технологии сети](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/8)
-- [2.03. Государственный контроль за Интернетом](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/91)
-- [2.03. Итоги](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/98)
-- [2.03. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.03.%20Сеть%20и%20интернет/99)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/1">2.03. Сеть и интернет - основы и принципы работы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/2">2.03. История развития сетевых технологий</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/3">2.03. URL URI URN</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/4">2.03. Сетевые протоколы, порты и установка соединения</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/5">2.03. Что происходит при загрузке сайта</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/6">2.03. DNS - система доменных имён и её работа</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/7">2.03. Cookie</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/8">2.03. Дополнительные сетевые технологии</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/11">2.03. HTTP и HTTPS</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/21">2.03. Сетевые устройства - маршрутизаторы, коммутаторы, модемы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/41">2.03. Основы IP-адресации</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/42">2.03. Надёжная доставка — от идеи к TCP</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/61">2.03. Интернет-провайдер</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/71">2.03. Беспроводные сети - Wi-Fi, Bluetooth, LTE</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/81">2.03. Как работать с сетью</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/91">2.03. Государственное регулирование интернета</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/98">2.03. Сеть и интернет — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/99">2.03. Сеть и интернет — чек-лист</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/211">2.03. Архитектура глобальной сети</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/212">2.03. Глобальная доставка контента - CDN и кэширование</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/220">2.03. Ускорение интернета</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/404">2.03. Приватность, self-hosting и домашняя сеть</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/411">2.03. CORS - механизм междоменных запросов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/421">2.03. TCP — соединение, окно и перегрузка</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/505">2.03. Сетевые и системные диагностические утилиты</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/511">2.03. Домен и хостинг</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/611">2.03. Справочник по HTTP-протоколу</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/612">2.03. Измерение и оптимизация скорости интернета</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/613">2.03. Виртуальные частные сети (VPN)</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/614">2.03. Прокси-серверы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/615">2.03. Анализ и мониторинг сетевого трафика</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/616">2.03. Методы защиты компьютерной сети</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/617">2.03. Браузерные бенчмарки и производительность</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/618">2.03. Справочник по сетевым протоколам и портам</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/619">2.03. Справочник по IP-адресам и CIDR</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/620">2.03. Настройки сетевых адаптеров в Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-03-set-i-internet/2111">2.03. Настройка домашнего роутера</a></li>
+</ul>
 
 ---
 
-## Как работают сайты и веб-сайты
+## Веб-сайты и веб-приложения
 
-- [2.04. Сайты и веб-сайты](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/1)
-- [2.04. Адресная строка](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/11)
-- [2.04. Веб-приложение](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/111)
-- [2.04. Закладки и вкладки](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/1111)
-- [2.04. Внутренние ошибки браузера](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/1112)
-- [2.04. Веб-серверы](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/112)
-- [2.04. Конструкторы веб-сайтов](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/113)
-- [2.04. Архитектурные и производственные особенности веб-приложений](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/114)
-- [2.04. Фоновые процессы и работа без интернета](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/115)
-- [2.04. Хранение данных веб-приложений](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/116)
-- [2.04. Push-рассылка и уведомления](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/117)
-- [2.04. SEO-оптимизация](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/118)
-- [2.04. Рекомендации и предпочтения](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/119)
-- [2.04. Дизайн сайтов](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/2)
-- [2.04. Реклама](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/3)
-- [2.04. Итоги](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/998)
-- [2.04. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.04.%20Как%20работают%20сайты%20и%20веб-сайты/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1">2.04. Сайты и веб-сайты</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/2">2.04. Дизайн веб-интерфейсов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/3">2.04. Рекламные технологии в вебе</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/11">2.04. Адресная строка браузера</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/111">2.04. Архитектура веб-приложений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/112">2.04. Веб-серверы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/113">2.04. Конструкторы сайтов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/114">2.04. Архитектурные особенности современных веб-приложений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/115">2.04. Фоновая работа и офлайн-режим веб-приложений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/116">2.04. Хранение данных в браузере и на сервере</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/117">2.04. Push-уведомления и рассылки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/118">2.04. SEO-оптимизация</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/119">2.04. Персонализация и пользовательские предпочтения</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/120">2.04. Web API в браузере</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/121">2.04. Web API на практике - примеры кода</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/122">2.04. Справочник по Tilda</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/123">2.04. BB-код — разметка постов на форумах</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/124">2.04. История браузера и приватность на клиенте</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/125">2.04. Интернет, сайт и HTTP — связь с культурой сети</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/127">2.04. Движки браузеров и линейки продуктов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/128">2.04. HTTPS и TLS — шифрование веба</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/129">2.04. Polling, Long Polling, SSE и Webhook</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/130">2.04. Метрики производительности веб-страницы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/212">2.04. CDN, origin и кэш</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/998">2.04. Веб-сайты и веб-приложения — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/999">2.04. Веб-сайты и веб-приложения — чек-лист</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1111">2.04. Управление закладками и вкладками в браузере</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-04-kak-rabotayut-sayty-i-veb-sayty/1112">2.04. Обработка внутренних ошибок браузера</a></li>
+</ul>
 
 ---
 
 ## Терминал
 
-- [2.05. Терминал](/encyclopedia/Система%20и%20сеть/2.05.%20Терминал/1)
-- [2.05. Скрипты в Unix](/encyclopedia/Система%20и%20сеть/2.05.%20Терминал/111)
-- [2.05. Скрипты в среде Windows на PowerShell](/encyclopedia/Система%20и%20сеть/2.05.%20Терминал/112)
-- [2.05. Итоги](/encyclopedia/Система%20и%20сеть/2.05.%20Терминал/2)
-- [2.05. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.05.%20Терминал/3)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/1">2.05. Терминал - интерфейс командной строки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/2">2.05. Терминал — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/3">2.05. Терминал — чек-лист</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/11">2.05. Знаки препинания в командной строке</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/101">2.05. Основные команды в Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/102">2.05. Основные команды Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/103">2.05. Сценарии для автоматизации</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/104">2.05. Поиск текста в файлах — grep, findstr и Select-String</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/111">2.05. Написание скриптов в Unix-системах</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/112">2.05. Автоматизация задач в Windows с помощью PowerShell</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/114">2.05. Справочник CLI-утилит и исполняемых файлов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/1131">2.05. Работа с PuTTY</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/1132">2.05. Утилита make</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-05-terminal/1133">2.05. Утилита curl</a></li>
+</ul>
 
 ---
 
 ## Системное администрирование
 
-- [2.06. Системное администрирование](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/1)
-- [2.06. Установка операционной системы](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/2)
-- [2.06. Инфраструктура](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/3)
-- [2.06. Настройка сервера](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/4)
-- [2.06. Настройка компьютеров](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/5)
-- [2.06. Microsoft PowerToys и утилиты рабочей станции](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11)
-- [2.06. Сеть и соединения](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/6)
-- [2.06. Домашняя сеть](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/61)
-- [2.06. NAT и проброс портов](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/7)
-- [2.06. Планирование задач](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/8)
-- [2.06. Обработка ошибок](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/9)
-- [2.06. Данные и СУБД](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/91)
-- [2.06. Метрика, мониторинг и логирование](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/92)
-- [2.06. Работа с Linux](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/93)
-- [2.06. Итоги](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/98)
-- [2.06. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.06.%20Системное%20администрирование/99)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/1">2.06. Администрирование</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/2">2.06. Установка и первоначальная настройка ОС</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/3">2.06. ИТ-инфраструктура</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/4">2.06. Настройка и обслуживание серверов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/5">2.06. Конфигурация рабочих станций</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/6">2.06. Сетевые подключения и диагностика</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/7">2.06. NAT и проброс портов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/8">2.06. Планирование и автоматизация задач</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/9">2.06. Диагностика и обработка системных ошибок</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10">2.06. Виртуальные машины, Home Lab и переход на Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11">2.06. Microsoft PowerToys и утилиты рабочей станции Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/31">2.06. Сетевые аномалии и системные процессы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/61">2.06. Организация домашней сети</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/62">2.06. Идентичность Microsoft Entra и RBAC</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/63">2.06. Windows Server — начало работы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/64">2.06. Управление службами в Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/91">2.06. Работа с базами данных в администрировании</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/92">2.06. Мониторинг, метрики и логирование систем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/93">2.06. Администрирование Linux-систем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/94">2.06. Полнотекстовый поиск для приложений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/95">2.06. Windows на рабочей станции — жизненный цикл</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/96">2.06. GNU/Linux — рабочие столы и споры окружений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/97">2.06. Windows — Store, защита, диспетчер и &quot;сборки&quot;</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/98">2.06. Системное администрирование — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/99">2.06. Системное администрирование — чек-лист</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/100">2.06. Диагностика производительности Linux</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/101">2.06. Системы аутентификации</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/411">2.06. Групповые политики в Windows</a></li>
+</ul>
+
+---
+
+## Практикум Zabbix
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/1">2.06. Практикум Zabbix — что это и как работает</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/2">2.06. Практикум Zabbix — установка сервера и агентов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/3">2.06. Практикум Zabbix — первый хост, элемент и триггер</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/4">2.06. Практикум Zabbix — шаблоны и оповещения</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/5">2.06. Практикум Zabbix — мониторинг Linux и Windows</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/zabbix-praktikum/6">2.06. Практикум Zabbix — веб-проверки и автодобнаружение</a></li>
+</ul>
+
+---
+
+## Практикум Prometheus и Grafana
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/1">2.06. Практикум Prometheus — архитектура и модель данных</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/2">2.06. Практикум Prometheus — установка и первые метрики</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/3">2.06. Практикум Prometheus — типы метрик и PromQL</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/4">2.06. Практикум Grafana — источники данных и дашборды</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/5">2.06. Практикум Prometheus — экспортёры и инструментирование</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/6">2.06. Практикум Prometheus — Alertmanager и Grafana Alerting</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/7">2.06. Практикум — Loki, Tempo и Mimir</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/8">2.06. Практикум — Alloy, Beyla, Faro и Pyroscope</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/9">2.06. Практикум — OpenTelemetry, k6 и итоговый стенд</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/prometheus-grafana-praktikum/usage">2.06. Как пользоваться</a></li>
+</ul>
+
+---
+
+## Восстановление данных
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/1">2.06. Как хранятся файлы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/11">2.06. Что может угрожать данным</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/111">2.06. Резервные копии</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/112">2.06. Восстановление из бэкапов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/113">2.06. Восстановление без бэкапов</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/data-restoring/114">2.06. Правила работы с жестким диском</a></li>
+</ul>
 
 ---
 
 ## Техническая поддержка
 
-- [2.07. Понятие и задачи техподдержки](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/1)
-- [2.07. История техподдержки](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/111)
-- [2.07. Обработка обращений](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/112)
-- [2.07. Разбор проблем](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/113)
-- [2.07. Базы решений и типовые запросы](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/114)
-- [2.07. Управление обращениями](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/115)
-- [2.07. Линии (уровни) техподдержки](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/116)
-- [2.07. Оценка обслуживания](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/117)
-- [2.07. ITSM](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/118)
-- [2.07. Итоги](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/998)
-- [2.07. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.07.%20Техническая%20поддержка/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/1">2.07. Понятие и задачи техподдержки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/111">2.07. Эволюция служб технической поддержки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/112">2.07. Приём и обработка пользовательских обращений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/113">2.07. Диагностика и решение технических проблем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/114">2.07. Базы знаний и типовые сценарии поддержки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/115">2.07. Управление жизненным циклом обращений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/116">2.07. Уровни технической поддержки (L1, L2, L3)</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/117">2.07. Оценка качества обслуживания пользователей</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/118">2.07. ITSM в работе поддержки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/119">2.07. ITAM в работе поддержки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/998">2.07. Техническая поддержка — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-07-tehnicheskaya-podderzhka/999">2.07. Техническая поддержка — чек-лист</a></li>
+</ul>
 
 ---
 
 ## Основы информационной безопасности
 
-- [2.08. Основы информационной безопасности](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/1)
-- [2.08. Аутентификация и авторизация](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/111)
-- [2.08. Лечение компьютера от вирусов](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/112)
-- [2.08. Почему нельзя подключаться к открытым WiFi](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/113)
-- [2.08. Как устроены пароли](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/114)
-- [2.08. Файерволлы](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/115)
-- [2.08. Шифрование и SSH](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/116)
-- [2.08. Итоги](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/2)
-- [2.08. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.08.%20Основы%20информационной%20безопасности/3)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/1">2.08. Основы информационной безопасности</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/2">2.08. Основы информационной безопасности — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/3">2.08. Основы информационной безопасности — чек-лист</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/111">2.08. Аутентификация и авторизация</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/112">2.08. Антивирусная защита и лечение заражённых систем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/113">2.08. Риски открытых Wi-Fi сетей</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/114">2.08. Устройство и надёжность паролей</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/115">2.08. Фаерволы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/116">2.08. Шифрование данных и протокол SSH</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/117">2.08. DDoS и отказ в обслуживании</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/118">2.08. JWT — семь строк, которые обходят авторизацию</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/119">2.08. Смена пароля — пропущенный шаг re-auth</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-08-osnovy-informatsionnoy-bezopasnosti/120">2.08. Админка по ?isAdmin=true</a></li>
+</ul>
 
 ---
 
 ## Основы интеграционного взаимодействия
 
-- [2.09. Интеграция](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/1)
-- [2.09. Виды взаимодействия](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/111)
-- [2.09. Интеграционный поток](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/112)
-- [2.09. Интеграционная авторизация](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/1121)
-- [2.09. Сессия](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/113)
-- [2.09. История интеграций](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/114)
-- [2.09. Веб-сервисы](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/115)
-- [2.09. Запрос-ответ](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/116)
-- [2.09. API](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/117)
-- [2.09. HTTP](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/118)
-- [2.09. Асинхронная коммуникация](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/119)
-- [2.09. Реактивная коммуникация](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/120)
-- [2.09. Брокеры сообщений](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/121)
-- [2.09. RabbitMQ](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/122)
-- [2.09. Kafka](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/123)
-- [2.09. Другие особенности](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/124)
-- [2.09. Реализация интеграции](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/125)
-- [2.09. SOAP](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/126)
-- [2.09. Прочие фреймворки](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/127)
-- [2.09. Руководство по работе с Postman и curl](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/2)
-- [2.09. Итоги](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/998)
-- [2.09. Чек-лист самопроверки](/encyclopedia/Система%20и%20сеть/2.09.%20Основы%20интеграционного%20взаимодействия/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/1">2.09. Интеграция</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/2">2.09. Работа с Postman и curl для тестирования API</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/111">2.09. Типы взаимодействия между системами</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/112">2.09. Интеграционные потоки данных</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/113">2.09. Управление сессиями в распределённых системах</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/114">2.09. История развития интеграционных технологий</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/115">2.09. Веб-сервисы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/116">2.09. Модель запрос-ответ в сетевом взаимодействии</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/117">2.09. API - интерфейсы прикладного программирования</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/118">2.09. HTTP как основа веб-интеграций</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/119">2.09. Асинхронная коммуникация между сервисами</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/120">2.09. Реактивные системы и потоки данных</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/121">2.09. Брокеры сообщений и зачем нужны очереди</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/122">2.09. RabbitMQ - работа с очередями сообщений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/123">2.09. Apache Kafka - потоковая обработка данных</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/124">2.09. Дополнительные аспекты интеграции</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/125">2.09. Реализация интеграционных решений</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/126">2.09. Протокол SOAP</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/127">2.09. Современные интеграционные фреймворки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/128">2.09. OData — протокол открытых данных</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/129">2.09. Redis в интеграции и кэшировании</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/130">2.09. REST, GraphQL и gRPC — стили API</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/131">2.09. Пагинация в API — шесть распространённых схем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/132">2.09. 12 советов по безопасности API</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/133">2.09. Идемпотентность и семантика доставки</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/134">2.09. Практика подключения MongoDB, Redis, RabbitMQ и Kafka в распределённой системе</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/998">2.09. Основы интеграционного взаимодействия — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-09-osnovy-integratsionnogo-vzaimodeystviya/999">2.09. Основы интеграционного взаимодействия — чек-лист</a></li>
+</ul>
 
 ---
 
-## Железо
+## Аппаратное обеспечение
 
-- [2.10. Аппаратное обеспечение](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/1)
-- [2.10. Архитектура фон Неймана](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/11)
-- [2.10. Контроллеры](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/111)
-- [2.10. Встраиваемые системы](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/112)
-- [2.10. Программируемое устройство](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/113)
-- [2.10. Программатор](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/114)
-- [2.10. Микросхемы и чипы](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/115)
-- [2.10. Компоненты микросхем](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/116)
-- [2.10. Как программируют устройства](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/117)
-- [2.10. Протоколы автоматизации зданий](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/118)
-- [2.10. Работа с беспроводными технологиями](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/119)
-- [2.10. Modbus](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/120)
-- [2.10. Как система даёт сигнал на дисплей для отображения пикселя](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/2)
-- [2.10. Дата-центр](/encyclopedia/Система%20и%20сеть/2.10.%20Железо/3)
-
-Вообще, что такое система? Попробуйте себе ответить на этот вопрос, что вам пришло в голову? Windows? Android? Какая-то платформа или архитектура? Под это понятие можно подобрать почти всё, ведь система это множество элементов, находящихся в связях друг с другом. А всё вокруг нас состоит из этих элементов.
-
-Есть даже целое направление методологии, рассматривающей любой объект как систему - это системный подход. Технически да, возьмите что угодно - это будет целостный комплекс взаимосвязанных элементов, и вопрос лишь в том, какой объект брать.
-
-В IT система сильно зависит от контекста, но суть всегда одна - это некая совокупность элементов, действующих вместе как одно целое и выполняющих этим определённую функцию.
-
-Системой может быть некая платформа, включающая в себе множество модулей, программ, приложений, взаимодействующих между собой, и всё целиком служит какой-то единой цели. Фактически, любая система на самом деле нужна, чтобы кто-то зарабатывал деньги, ведь это основа экономики. Разработчик не возьмётся за разработку, если ему не нужны деньги, заказчик не будет платить, если ему не нужны ещё большие деньги. И операционная система тоже кому-то приносит прибыль, и это техногиганты.
-
-Вроде бы логично. Но есть такое явление, как Linux.
-
-Обычно большинство систем предоставляются в пользование бесплатно лишь в образовательных целях. Но ведь они позволяют заработать денежные средства, путем использования операционной системы как некой платформы для разработки или эксплуатации уже разработанных программ! И именно поэтому создатели зачастую считают как-то вроде "не-не, если ты зарабатываешь, то будь добр делиться с нами", и коммерческое использование ограничивается. Однако Linux (как и множество других открытых решений) изменили мир, создав категорию свободного и открытого программного обеспечения с общедоступными (открытыми) исходными кодами. Сейчас нам уже не кажется это чем-то новым или необычным, но это меняет всё.
-И прежде, чем мы продолжим погружение, давайте разберём такой вид информационных систем, как операционные системы - каких они бывают видов, какие особенности имеет каждая. Кроме этого, понадобится изучить терминал (консоль), чтобы понимать, как она запускается, и чем может пригодится пользователю.
-
-Потом нам понадобится изучить платформы, которые тоже представляют собой некую систему. И после этого приступим к самой важной части - сети.
-Мир уже привык к тому, что мы все соединены и обладаем круглосуточным и бесперебойным доступом к сети. И когда отключают интернет (технические сбои или неуплата), или блокируется доступ к какому-то сервису, то начинается паника, которая удивляет, наводя мысли о том, что мы абсолютно и полностью зависимы от интернет-соединения. Теперь же нам понадобится разобраться в сетях, изучив протоколы, порты, особенности процессов соединений. Нужно понять, как работает это всё в совокупности, и нам нельзя здесь пробегаться поверхностно. Например, знаете ли вы что такое DNS, SSH, Cookie и WebSocket? Если нет, то изучение критично - иначе потом будем спотыкаться.
-
-После изучения основ сетевых соединений важно рассмотреть особенности работы сайтов и веб-приложений. Думаю, всем интересно узнать, как же оно всё устроено - структура и состав сайта, этапы создания сайта. Важно понимать, что ещё мы не погружаемся в HTML/CSS/JavaScript, а изучаем устройство. Причем, придётся изучить и основы интеграционного взаимодействия, чтобы понимать, как приложения общаются друг с другом - а это уже API, веб-сервисы, и многое другое.
-
-Но самое вкусное оставим "технарям". Здесь база системного администрирования (установки, настройки, инфраструктура, сервера и компьютеры и прочие тонкости магии админа), техническая поддержка и основы информационной безопасности. Будьте внимательны, и старайтесь понять всё, так как это лишь начало нашего сложного технического пути.
----
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1">2.10. Аппаратное обеспечение</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/2">2.10. Отображение пикселей</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/3">2.10. Дата-центры</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/11">2.10. Архитектура фон Неймана</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/98">2.10. Аппаратное обеспечение — итоги</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/101">2.10. Безопасная работа с компонентами</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/111">2.10. Контроллеры</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/112">2.10. Встраиваемые системы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/113">2.10. Программируемое устройство</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/114">2.10. Программаторы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/115">2.10. Микросхемы и интегральные схемы</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/116">2.10. Внутреннее устройство микросхем</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/117">2.10. Программирование аппаратных устройств</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/118">2.10. Протоколы автоматизации зданий</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/119">2.10. Беспроводные технологии - Bluetooth, Zigbee, NFC</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/120">2.10. Протокол Modbus</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/121">2.10. Современные системы хранения данных</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/122">2.10. RISC и CISC</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/123">2.10. Порядок байтов — endianness</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/124">2.10. Шины компьютера — обзор</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1011">2.10. Последовательность сборки компьютера</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1012">2.10. Диагностика неисправностей при первом запуске</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-10-zhelezo/1013">2.10. Tinkercad Circuits и Arduino</a></li>
+</ul>

@@ -509,7 +509,7 @@ flowchart TD
   B -->|Научный Fortran-код| E[Fortran]
   B -->|Банковский mainframe| F[COBOL]
   B -->|История FP и AI| G[Lisp]
-  B -->|Excel макросы Windows| H[Visual Basic]
+  B -->|Excel макросы Windows| H[visual-basic]
   B -->|Старый веб CGI| I[Perl]
   B -->|Старый Apple код| J[Objective-C]
   C --> K[5.16 Старые языки intro]
@@ -525,7 +525,7 @@ flowchart TD
 | **Fortran** | Научные расчёты legacy | [Fortran](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro) |
 | **COBOL** | Сопровождение банковских систем | [COBOL](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro) |
 | **Lisp** | Макросы, история AI | [Lisp](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro) |
-| **Visual Basic** | Legacy Windows, VBA в Excel | [Visual Basic](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
+| **visual-basic** | Legacy Windows, VBA в Excel | [visual-basic](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
 | **Perl** | Legacy скрипты, bioinformatics | [5.29 Perl](/encyclopedia/5-languages/5-29-perl/intro) |
 | **Objective-C** | Legacy iOS/macOS | [5.30 Objective-C](/encyclopedia/5-languages/5-30-objective-c/intro) |
 
@@ -2145,7 +2145,7 @@ flowchart TD
 | Fortran | [Fortran intro](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro) |
 | COBOL | [Cobol intro](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro) |
 | Lisp | [Lisp intro](/encyclopedia/5-languages/5-16-starye-yazyki/Lisp/intro) |
-| Visual Basic | [visual-basic intro](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
+| visual-basic | [visual-basic intro](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro) |
 
 ### Ключевые статьи по фреймворкам
 

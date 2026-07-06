@@ -45,225 +45,390 @@ mindmap
 
 ---
 
-## Алгоритмы
+## Инструменты разработки
 
-- [4.01. Алгоритмы](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/1)
-- [4.01. Основные алгоритмы сортировки и поиска](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/2)
-- [4.01. Алгоритмическая сложность и анализ эффективности программ](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/3)
-- [4.01. Нотация Большое O](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/311)
-- [4.01. Классы времени выполнения и скорость работы программ](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/312)
-- [4.01. Линейное, квадратичное и логарифмическое время выполнения](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/313)
-- [4.01. Итоги](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/998)
-- [4.01. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.01.%20Алгоритмы/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/10">4.011. Интегрированные среды разработки (IDE)</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402">4.011. Скрипты, макросы и локальная автоматизация</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/503">4.011. Редакторы кода — VS Code, Vim, Notepad++</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/511">4.011. Visual Studio Code</a></li>
+</ul>
 
 ---
 
-## Что такое код и как он работает
+## Алгоритмы
 
-- [4.02. Что такое код и как он работает](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/1)
-- [4.02. Теория кодирования](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/2)
-- [4.02. Ключевые слова](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/3)
-- [4.02. Операторы](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/33)
-- [4.02. Функции](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/4)
-- [4.02. Null](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/44)
-- [4.02. Циклы](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/5)
-- [4.02. Уровень языка и виды кода](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/55)
-- [4.02. Синтаксический сахар](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/56)
-- [4.02. Стили кода](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/6)
-- [4.02. Приёмы написания кода](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/611)
-- [4.02. Рефакторинг и его приёмы](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/612)
-- [4.02. Виды задач в кодировании](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/613)
-- [4.02. Итоги](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/998)
-- [4.02. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.02.%20Что%20такое%20код%20и%20как%20он%20работает/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1">4.01. Алгоритмы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/2">4.01. Алгоритмы сортировки и поиска</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/3">4.01. Анализ эффективности алгоритмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/4">4.01. Графы — модели и задачи</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/11">4.01. Тренировка алгоритмического мышления</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/41">4.01. Кратчайший путь — алгоритм Дейкстры</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/42">4.01. PageRank — ранжирование на графе</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/43">4.01. Евклид и классические алгоритмы на числах</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/111">4.01. Регулярные выражения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/112">4.01. Алгоритм обработки</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/311">4.01. Нотация Большое O</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/312">4.01. Классы временной сложности алгоритмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/313">4.01. Линейная, квадратичная и логарифмическая сложность</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/998">4.01. Алгоритмы — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/999">4.01. Алгоритмы — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1111">4.01. Регулярные выражения — синтаксис с нуля</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1112">4.01. Регулярные выражения — группы и замена</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1113">4.01. Регулярные выражения — проверки вокруг совпадения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1114">4.01. Регулярные выражения — флаги и жадность</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-01-algoritmy/1115">4.01. Регулярные выражения — рецепты и командная строка</a></li>
+</ul>
+
+---
+
+## Код
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/1">4.02. Что такое код и как он работает</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/2">4.02. Теория представления кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/3">4.02. Ключевые слова в языках программирования</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/4">4.02. Функции</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/5">4.02. Циклы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/6">4.02. Стили оформления кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/33">4.02. Операторы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/44">4.02. Обработка значения null</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/55">4.02. Уровни абстракции языков программирования</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/56">4.02. Синтаксический сахар</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/101">4.02. Язык программирования</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/611">4.02. Приёмы написания кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/612">4.02. Методы рефакторинга программного кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/613">4.02. Типы задач в программировании</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/614">4.02. Однострочные приёмы в коде</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/615">4.02. Регулярные выражения (RegEx)</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/616">4.02. Примитивы, value objects и маленькие типы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/617">4.02. Каталог примеров кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/618">4.02. Коллекции и типы в коде</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/619">4.02. WebAssembly (WASM) — что это и когда использовать</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/620">4.02. Менеджеры версий языков — nvm, pyenv, rustup и другие</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/621">4.02. Пакетные менеджеры — npm, pip, cargo, go mod и другие</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/998">4.02. Код — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-02-chto-takoe-kod-i-kak-on-rabotaet/999">4.02. Код — чек-лист</a></li>
+</ul>
 
 ---
 
 ## Выполнение кода
 
-- [4.03. Выполнение кода](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/1)
-- [4.03. Неопределенное поведение](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/111)
-- [4.03. Как работают функции](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/112)
-- [4.03. Как работают циклы](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/113)
-- [4.03. Как работают условные операторы](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/114)
-- [4.03. Как работают переменные](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/115)
-- [4.03. Как выполняется код](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/2)
-- [4.03. 0x и шестнадцатеричные числа](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/211)
-- [4.03. Сложное железо](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/3)
-- [4.03. Регистры](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/311)
-- [4.03. Машинное слово](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/312)
-- [4.03. Расположение данных в памяти и директивы компилятора](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/313)
-- [4.03. Как исполняется байт-код](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/314)
-- [4.03. Дизассемблирование и декомпиляция](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/315)
-- [4.03. Итоги](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/98)
-- [4.03. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.03.%20Выполнение%20кода/99)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/1">4.03. Выполнение программного кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/2">4.03. Процесс выполнения исходного кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/3">4.03. Архитектура современных процессоров</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/98">4.03. Выполнение кода — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/99">4.03. Выполнение кода — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/111">4.03. Неопределённое поведение в программах</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/112">4.03. Внутреннее устройство функций</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/113">4.03. Реализация циклов на уровне системы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/114">4.03. Как работают условные операторы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/115">4.03. Жизненный цикл переменных</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/116">4.03. Виртуальные машины для выполнения кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/211">4.03. Шестнадцатеричная система счисления в программировании</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/311">4.03. Регистры процессора и их роль</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/312">4.03. Машинное слово</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/313">4.03. Расположение данных в памяти и директивы компилятора</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/314">4.03. Исполнение байт-кода виртуальными машинами</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-03-vypolnenie-koda/315">4.03. Дизассемблирование и восстановление исходного кода</a></li>
+</ul>
 
 ---
 
-## Проект и фреймворки
+## Проект, структура и фреймворки
 
-- [4.04. Проект](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/1)
-- [4.04. IDE](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/10)
-- [4.04. Библиотека](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/101)
-- [4.04. Сборка, публикация, компиляторы и интерпретаторы](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/102)
-- [4.04. Фреймворк](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/11)
-- [4.04. Микрофреймворк](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/111)
-- [4.04. Модульность и компонентность](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/112)
-- [4.04. Работа с размером приложений](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/113)
-- [4.04. Итоги](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/998)
-- [4.04. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.04.%20Проект%20и%20фреймворки/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/1">4.04. Проект программного обеспечения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/2">4.04. Модульность и компонентный подход в разработке</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3">4.04. Оптимизация размера и производительности приложений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/11">4.04. Фреймворк</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/101">4.04. Библиотека</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/102">4.04. Сборка, компиляция и публикация приложений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/103">4.04. Манифесты зависимостей — requirements.txt, package.json, Dockerfile</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/104">4.04. Основы работы с контейнерами</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/111">4.04. Микрофреймворк</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/112">4.04. Основы архитектуры</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/998">4.04. Проект, структура и фреймворки — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/999">4.04. Проект, структура и фреймворки — чек-лист</a></li>
+</ul>
 
 ---
 
 ## Асинхронность
 
-- [4.05. Процессы и потоки](/encyclopedia/Код%20и%20разработка/4.05.%20Асинхронность/1)
-- [4.05. Управление потоками](/encyclopedia/Код%20и%20разработка/4.05.%20Асинхронность/11)
-- [4.05. Асинхронность и синхронность](/encyclopedia/Код%20и%20разработка/4.05.%20Асинхронность/12)
-- [4.05. Обмен данными](/encyclopedia/Код%20и%20разработка/4.05.%20Асинхронность/13)
-- [4.05. Итоги](/encyclopedia/Код%20и%20разработка/4.05.%20Асинхронность/998)
-- [4.05. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.05.%20Асинхронность/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/1">4.05. Процессы и потоки выполнения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/2">4.05. Асинхронность простым языком — живые примеры</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/3">4.05. Практикум — последовательное и параллельное выполнение</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/11">4.05. Управление потоками в многозадачных системах</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/12">4.05. Асинхронное и синхронное выполнение</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/13">4.05. Межпроцессное взаимодействие и обмен данными</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/998">4.05. Асинхронность — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-05-asinhronnost/999">4.05. Асинхронность — чек-лист</a></li>
+</ul>
 
 ---
 
 ## Архитектура выполнения
 
-- [4.06. Архитектура выполнения](/encyclopedia/Код%20и%20разработка/4.06.%20Архитектура%20выполнения/1)
-- [4.06. Битовые операции и представление данных в памяти](/encyclopedia/Код%20и%20разработка/4.06.%20Архитектура%20выполнения/111)
-- [4.06. Итоги](/encyclopedia/Код%20и%20разработка/4.06.%20Архитектура%20выполнения/112)
-- [4.06. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.06.%20Архитектура%20выполнения/113)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/1">4.06. Архитектура выполнения программ</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/2">4.06. Битовые операции и низкоуровневое представление данных</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/3">4.06. Архитектура выполнения — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/4">4.06. Архитектура выполнения — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/111">4.06. Ошибки, исключения и отказоустойчивость</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/112">4.06. Отладка и видимость состояния</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/113">4.06. Вызовы и иерархия</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/114">4.06. Ресурсопотребление и метрики</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/115">4.06. Неиспользуемый код и технический долг</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-06-arhitektura-vypolneniya/116">4.06. Сборка и культура производительности</a></li>
+</ul>
 
 ---
 
 ## Парадигмы и уровни абстракции
 
-- [4.07. Парадигмы](/encyclopedia/Код%20и%20разработка/4.07.%20Парадигмы%20и%20уровни%20абстракции/1)
-- [4.07. Уровни абстракции](/encyclopedia/Код%20и%20разработка/4.07.%20Парадигмы%20и%20уровни%20абстракции/111)
-- [4.07. Метапрограммирование](/encyclopedia/Код%20и%20разработка/4.07.%20Парадигмы%20и%20уровни%20абстракции/112)
-- [4.07. Основы SOLID](/encyclopedia/Код%20и%20разработка/4.07.%20Парадигмы%20и%20уровни%20абстракции/113)
-- [4.07. Итоги](/encyclopedia/Код%20и%20разработка/4.07.%20Парадигмы%20и%20уровни%20абстракции/998)
-- [4.07. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.07.%20Парадигмы%20и%20уровни%20абстракции/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/1">4.07. Программные парадигмы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/111">4.07. Уровни абстракции в разработке ПО</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/112">4.07. Метапрограммирование - генерация и модификация кода</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/113">4.07. Принципы SOLID в объектно-ориентированном проектировании</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/114">4.07. Обобщения и обобщённое программирование</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/998">4.07. Парадигмы и уровни абстракции — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-07-paradigmy-i-urovni-abstraktsii/999">4.07. Парадигмы и уровни абстракции — чек-лист</a></li>
+</ul>
 
 ---
 
-## ООП
+## Объектно-ориентированное программирование
 
-- [4.08. ООП](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/1)
-- [4.08. Абстракция](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/2)
-- [4.08. Инкапсуляция](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/3)
-- [4.08. Наследование](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/4)
-- [4.08. Полиморфизм](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/5)
-- [4.08. Некоторые инструменты](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/6)
-- [4.08. Итоги](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/98)
-- [4.08. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.08.%20ООП/99)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/1">4.08. Объектно-ориентированное программирование</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/2">4.08. Абстракция - скрытие деталей реализации</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/3">4.08. Инкапсуляция - защита внутреннего состояния объекта</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/4">4.08. Наследование - повторное использование и иерархия типов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/5">4.08. Полиморфизм - единый интерфейс для разных реализаций</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/6">4.08. Перечисления</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/7">4.08. Сложность ПО, декомпозиция и объектно-ориентированный подход</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/61">4.08. Коллекции</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/98">4.08. Объектно-ориентированное программирование — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-08-oop/99">4.08. Объектно-ориентированное программирование — чек-лист</a></li>
+</ul>
 
 ---
 
 ## Зависимости
 
-- [4.09. Зависимости](/encyclopedia/Код%20и%20разработка/4.09.%20Зависимости/1)
-- [4.09. Dependency Inversion](/encyclopedia/Код%20и%20разработка/4.09.%20Зависимости/11)
-- [4.09. Dependency Injection](/encyclopedia/Код%20и%20разработка/4.09.%20Зависимости/12)
-- [4.09. Итоги](/encyclopedia/Код%20и%20разработка/4.09.%20Зависимости/998)
-- [4.09. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.09.%20Зависимости/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/1">4.09. Управление зависимостями в программных проектах</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/11">4.09. Принцип инверсии зависимостей (DIP)</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/12">4.09. Внедрение зависимостей (Dependency Injection)</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/998">4.09. Зависимости — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-09-zavisimosti/999">4.09. Зависимости — чек-лист</a></li>
+</ul>
 
 ---
 
 ## ORM и работа с данными
 
-- [4.10. Базы данных](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/1)
-- [4.10. Взаимодействие программ с БД](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/111)
-- [4.10. ORM](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/112)
-- [4.10. Основные принципы ORM](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/113)
-- [4.10. Подходы к ORM](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/114)
-- [4.10. Миграции](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/115)
-- [4.10. Нормализация и денормализация](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/116)
-- [4.10. Проблемы ORM](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/117)
-- [4.10. Итоги](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/998)
-- [4.10. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.10.%20ORM%20и%20работа%20с%20данными/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/1">4.10. Работа приложений с базами данных</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/111">4.10. Взаимодействие программного кода с СУБД</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/112">4.10. ORM - объектно-реляционное отображение</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/113">4.10. Принципы проектирования ORM-систем</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/114">4.10. Подходы к реализации ORM</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/115">4.10. Миграции баз данных</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/116">4.10. Нормализация и денормализация данных</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/117">4.10. Ограничения и проблемы ORM</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/118">4.10. ORM на практике</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/119">4.10. PostgreSQL: отложенные ограничения и .NET</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/998">4.10. ORM и работа с данными — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/999">4.10. ORM и работа с данными — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-10-orm-i-rabota-s-dannymi/1111">4.10. Работа с хранилищем</a></li>
+</ul>
 
 ---
 
 ## Десктопные приложения
 
-- [4.11. Как устроены десктопные приложения](/encyclopedia/Код%20и%20разработка/4.11.%20Десктопные%20приложения/1)
-- [4.11. Десктопные приложения](/encyclopedia/Код%20и%20разработка/4.11.%20Десктопные%20приложения/111)
-- [4.11. Особенности разработки десктопных приложений](/encyclopedia/Код%20и%20разработка/4.11.%20Десктопные%20приложения/112)
-- [4.11. Работа с графами в коде](/encyclopedia/Код%20и%20разработка/4.11.%20Десктопные%20приложения/113)
-- [4.11. Итоги](/encyclopedia/Код%20и%20разработка/4.11.%20Десктопные%20приложения/998)
-- [4.11. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.11.%20Десктопные%20приложения/999)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1">4.11. Архитектура десктопных приложений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/2">4.11. Работа с графовыми структурами в коде</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/111">4.11. Разработка приложений для настольных операционных систем</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/112">4.11. Особенности разработки десктопных приложений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/113">4.11. WebView</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/114">4.11. Electron</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/115">4.11. Windows Forms (WinForms)</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/116">4.11. Разработка приложений для Windows (Microsoft Learn)</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/117">4.11. Microsoft Store и публикация Windows-приложений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/118">4.11. Первая программа Electron с React</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/119">4.11. Первая форма WPF — XAML, стили и шаблоны</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/120">4.11. Как сделать установщик</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/998">4.11. Десктопные приложения — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/999">4.11. Десктопные приложения — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1152">4.11. Справочник по WinForms — элементы UI</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/1192">4.11. Справочник по WPF — элементы UI</a></li>
+</ul>
+
+---
+
+## Практикум WPF и клиент-сервер
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/1">4.11. Практикум WPF — введение в WPF и XAML</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/2">4.11. Практикум WPF — основы MVVM</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/3">4.11. Практикум WPF — сервер ASP.NET Core Web API</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/4">4.11. Практикум WPF — клиент на Prism</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/5">4.11. Практикум WPF — тестирование API и unit-тесты</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-11-desktopnye-prilozheniya/wpf-praktikum/6">4.11. Практикум WPF — итоговый проект TaskDesk</a></li>
+</ul>
 
 ---
 
 ## Мобильные приложения
 
-- [4.12. Мобильные приложения](/encyclopedia/Код%20и%20разработка/4.12.%20Мобильные%20приложения/1)
-- [4.12. Элементы UI на Android](/encyclopedia/Код%20и%20разработка/4.12.%20Мобильные%20приложения/111)
-- [4.12. Сборка приложений на мобильные устройства](/encyclopedia/Код%20и%20разработка/4.12.%20Мобильные%20приложения/112)
-- [4.12. Супераппы](/encyclopedia/Код%20и%20разработка/4.12.%20Мобильные%20приложения/113)
-- [4.12. Итоги](/encyclopedia/Код%20и%20разработка/4.12.%20Мобильные%20приложения/2)
-- [4.12. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.12.%20Мобильные%20приложения/3)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1">4.12. Мобильные приложения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/2">4.12. Мобильные приложения — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/3">4.12. Мобильные приложения — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/111">4.12. Компоненты пользовательского интерфейса на Android</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/112">4.12. Сборка и развёртывание мобильных приложений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/113">4.12. Супераппы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1121">4.12. Отладка по USB на Android</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1131">4.12. React Native</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1132">4.12. Expo</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1133">4.12. MAUI</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1134">4.12. Dart</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1135">4.12. Kotlin в мобильных приложениях</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1136">4.12. Java в мобильных приложениях</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1137">4.12. Swift в мобильных приложениях</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1138">4.12. PWA в мобильных приложениях</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1139">4.12. Capacitor в мобильных приложениях</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1140">4.12. Unity и Unreal Engine в мобильных приложениях</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/1141">4.12. Публикация Android-приложения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/11311">4.12. Первая программа на React Native</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-12-mobilnye-prilozheniya/11321">4.12. Первая программа на Expo</a></li>
+</ul>
 
 ---
 
 ## Основы работы с Git
 
-- [4.13. Основы работы с Git](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/1)
-- [4.13. Установка Git](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/111)
-- [4.13. Как работать с Git?](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/112)
-- [4.13. Ветки и слияния](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/113)
-- [4.13. Основные рекомендации](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/114)
-- [4.13. Итоги](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/2)
-- [4.13. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/3)
-- [4.13. Справочник-шпаргалка по Git](/encyclopedia/Код%20и%20разработка/4.13.%20Основы%20работы%20с%20Git/4)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1">4.13. Система контроля версий Git</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/2">4.13. Основы работы с Git — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/3">4.13. Основы работы с Git — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/111">4.13. Установка и настройка Git</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/112">4.13. Как работать с Git</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/113">4.13. Ветвление и слияние в Git</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/114">4.13. Рекомендации по использованию Git в команде</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/115">4.13. Справочник-шпаргалка по Git</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/116">4.13. Файл .gitignore</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/117">4.13. Код-ревью и pull request</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-13-osnovy-raboty-s-git/1141">4.13. Типовые ситуации с Git</a></li>
+</ul>
 
 ---
 
 ## Разработка и отладка
 
-- [4.14. Разработка](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/1)
-- [4.14. Традиции и обычаи разработки](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/11)
-- [4.14. Отладка](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/111)
-- [4.14. Анализ и оптимизация производительности](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/112)
-- [4.14. Как создать свою библиотеку](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/113)
-- [4.14. Пет-проект](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/114)
-- [4.14. Список для развития](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/115)
-- [4.14. Структура кодовой базы](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/116)
-- [4.14. Расширения для браузера](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/119)
-- [4.14. Итоги](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/2)
-- [4.14. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.14.%20Разработка%20и%20отладка/3)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1">4.14. Процесс разработки программного обеспечения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/2">4.14. Разработка и отладка — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/3">4.14. Разработка и отладка — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/11">4.14. Профессиональные практики и культура разработки</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/101">4.14. Типовые задачи разработчика — справочник-шпаргалка</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/111">4.14. Отладка</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/112">4.14. Анализ и оптимизация производительности приложений</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/113">4.14. Создание и публикация собственной библиотеки</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/114">4.14. Пет-проекты</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/115">4.14. План развития разработчика</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/116">4.14. Организация структуры кодовой базы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/117">4.14. README для разработчика</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/118">4.14. Проверка и валидация</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/119">4.14. Разработка расширений для веб-браузеров</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1111">4.14. Настройка логирования</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1112">4.14. Безопасность окружения и .env файлы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1113">4.14. Использование AI-ассистентов в разработке</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1114">4.14. Основы веб-разработки и типичные оплошности</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1115">4.14. Типичные ошибки новичков в бэкенд и десктоп-разработке</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1116">4.14. DevTools в браузере — справочник</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1117">4.14. Тестирование для разработчика</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1118">4.14. Как читать чужой код</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1119">4.14. Как искать баг</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1131">4.14. Создание и публикация расширения для Visual Studio Code</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-14-razrabotka-i-otladka/1132">4.14. Visual Studio — установка, IDE и версии</a></li>
+</ul>
 
 ---
 
 ## Сборка мусора
 
-- [4.15. Сборка мусора](/encyclopedia/Код%20и%20разработка/4.15.%20Сборка%20мусора/1)
-- [4.15. Итоги](/encyclopedia/Код%20и%20разработка/4.15.%20Сборка%20мусора/2)
-- [4.15. Чек-лист самопроверки](/encyclopedia/Код%20и%20разработка/4.15.%20Сборка%20мусора/3)
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/1">4.15. Автоматическое управление памятью</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/2">4.15. Сборка мусора — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/3">4.15. Сборка мусора — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-15-sborka-musora/4">4.15. Java, Python и Go — три модели GC</a></li>
+</ul>
 
-Программирование охватывает не только команды и код (собственно, поэтому я не особо люблю термин "программист" и больше склоняюсь к термину "разработчик"). Сама по себе разработка — это искусство создания новых решений из простых абстрактных идей. Мы уже прошли важный этап подготовки и у нас есть фундамент, который позволит уверенно двигаться дальше.
-
-Программирование требует практики. Мы будем заниматься практикой умеренно. Как я заметил, практического материала в сети и литературе очень много, так как каждый автор считает, что нужно просто практиковаться.
-
-Знаете почему говорят практика, практика, практика? Потому что проблемы и сложности возникают не из-за кодирования, а из-за различных инструментов, отладки, поиска проблем, поиска решений, изучения возможных методов в библиотеках, анализ производительности и исправления ошибок - вот в чём вся сложность, которая познается на практике — это и есть 90% времени работы программиста. Написать легко, да и запустить легко, а вот сделать четко, быстро и без ошибок - уже искусство. А потом тестировщики находят ошибку и всё по новой. Самое страшное, когда у тебя рабочее решение, но заказчик или руководитель захотел что-то подправить, и именно это "поправить" потом сжирает многие часы страданий.
-Но как можно научиться читать код, к примеру, на Java, не разобравшись в базовых основах ООП? Это главное упущение, с которым я столкнулся. Мы попробуем значительную часть провести за "разжёвыванием" фундамента, чтобы потом было легко, и будем отталкиваться в первую очередь от алгоритмического языка.
-
-На практике всё будет сложно, и даже очень. Первая задача определённого типа заставит застрять с вопросом "Как это реализовать?" и здесь кому-то повезёт и рядом окажется хороший наставник, который покажет и объяснит, а кому-то придётся разбираться самому. Сложнейшим этапом будет поиск способа решения вопроса - искать в интернете, советоваться с коллегами, изучать документацию. ИИ, кстати, здесь не поможет - ведь он попытается решить проблему, а не научить вас работать с такими задачами. Поэтому сначала надо справиться с такой задачей, и когда вам дадут новую задачу похожего типа - уже будет проще, ведь вы уже реализовывали такое и знаете как делать! Причем не важно, запомнили ли вы в голове или записали себе где-то алгоритм решения, но факт - вы уже знаете, что делать и у вас не возникает того самого "застревания".
-
-Таков цикл обучения:
-
-Испугался - Нашел решение - Научился - Научил других.
-
-Шаг "испуга" крайне стрессовый, который будет нагонять мысли вроде "это не моё", "я не смогу", "у меня не получится". Главное преодолеть, а потом будет проще. Причём, следующей проблемой, с которой столкнётся разработчик — это внимательность. Забыл тут дописать, пропустил ошибку там, не исправил здесь - всё это и правится опытом, который помогает набирать хороший наставник. Поэтому настоятельно рекомендую - не только изучайте книгу, но и найдите себе наставника, если есть такая возможность. Попросите выделить время и объяснить вещи, которые "ну никак не лезут в голову".
-
-Разбирайте код. Разбивайте то, что видите, на логические блоки, можете расписывать для себя аналог на алгоритмическом языке (Шаг 1 - объявляем переменную, Шаг 2 - присваиваем значение, Шаг 3 - вызываем метод и так далее). Но давайте пока не будем торопить события и начнём с самых фундаментальных знаний.
-
-Печатайте чаще. Если раньше вы редко печатали, то потренируйтесь в наборе текста на английском языке. Идеальный вариант - если вы будете перепечатывать код, который находите в примерах в ходе обучения. Не копировать, а именно ручками, букву за буквой, символ за символом, и вчитываться, вникать в то, что печатаете. Это замечательная практика.
-
-Повторяйте материал. Человеку свойственно забывать изученное, поэтому не стесняйтесь зубрить - учите, повторяйте, перечитывайте снова и снова. И старайтесь не бежать гуглить решение, а уделить 10-15 минут на то, чтобы сначала попытаться вспомнить.
-
-Тренируйте вспомогательные навыки: алгоритмизация, системное, критическое, творческое мышление, прогнозирование, индукция (делать выводы), дедукция (применение правил), внимательность, концентрация, терпение, рефлексия.
-
-К сожалению, как бы не говорили в различных книгах и курсах - одного обучения и практики вам будет мало, нужно конкретно учиться решать задачи и перед решением получить теоретическую базу. Цель данного тома - научиться разрабатывать, получить теоретическую базу - а в конце книги будут и задачи для разработки своих проектов.
-
-Однако я постараюсь сфокусироваться там, где возникали вопросы у меня. Читатели, которые уже владеют знаниями в области программирования, тоже найдут для себя интересные детали, ведь, как правило, всё упирается в опыт и определённую технологию, а также то, что указывается в учебниках. Мы же постараемся охватить всё без лишней воды, кратко и детально всё в таком объеме, чтобы и разобраться в теории, и иметь под рукой практическое руководство.
 ---
+
+## Параллельные вычисления
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/1">4.16. Параллельные вычислительные процессы — введение</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/2">4.16. Классификация параллельных архитектур</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/3">4.16. Память, мультипроцессоры, кластеры и GRID</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/4">4.16. Модели параллельных вычислений и топологии</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/5">4.16. Граф алгоритма и матрица следования</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/6">4.16. Временной анализ параллельных алгоритмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/7">4.16. Законы производительности параллельных систем</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/8">4.16. Инженерия параллельных алгоритмов</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/9">4.16. Параллельное умножение матриц</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/10">4.16. Сети Петри и формальные расписания</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/11">4.16. Практика — OpenMP, MPI и профилирование</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/12">4.16. Параллельное решение СЛАУ — метод Гаусса</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/998">4.16. Параллельные вычисления — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-16-parallelnye-vychisleniya/999">4.16. Параллельные вычисления — чек-лист</a></li>
+</ul>
+
+---
+
+## Веб-разработка
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/1">4.17. Что такое веб-разработка</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/2">4.17. Веб-разработка — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/3">4.17. Веб-разработка — чек-лист</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/4">4.17. Как делают веб-приложения</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/5">4.17. HTML, CSS и JavaScript — три слоя веб-страницы</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/6">4.17. От идеи до работающего сайта</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/7">4.17. Основы веб-дизайна для разработчика</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-17-veb-razrabotka/8">4.17. Open-source веб-фреймворки</a></li>
+</ul>
+
+---
+
+## Разработка графики
+
+<ul class="it-toc-articles">
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/1">4.18. От чисел к картинке</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/2">4.18. Модель, update, render</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/3">4.18. Цикл и FSM</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/4">4.18. Структуры сцены</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/5">4.18. Математика 2D/3D</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/6">4.18. High-Level API</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/7">4.18. Веб — Canvas и WebGL</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/8">4.18. Python — Pygame и SDL</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/9">4.18. C# — Unity и UI</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/10">4.18. Skia и ANGLE</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/11">4.18. Графические API</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/12">4.18. VRAM и GPU</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/13">4.18. Буферизация и V-Sync</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/14">4.18. Битмап и монитор</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/998">4.18. Разработка графики — итоги</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-18-graphic-dev/999">4.18. Разработка графики — чек-лист</a></li>
+</ul>

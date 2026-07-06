@@ -9,7 +9,7 @@ related:
     doc: encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro
   - title: "Cobol — о разделе"
     doc: encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro
-  - title: "Visual Basic — о разделе"
+  - title: "visual-basic — о разделе"
     doc: encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro
 ---
 
@@ -113,7 +113,7 @@ import DocCardList from '@theme/DocCardList';
 
 Статья входит в [тематические подборки](/about/collections) и блок "С чего начать?" на [главной](/). Соседние шаги того же маршрута:
 
-**Бэкенд и серверная разработка** — [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro).
+**Бэкенд и серверная разработка** — [Fortran — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Fortran/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Cobol — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Cobol/intro), [visual-basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Lua и Luau — о разделе](/encyclopedia/5-languages/5-15-lua-i-luau/intro), [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro).
 
 {/* /sidebar-collections */}
 

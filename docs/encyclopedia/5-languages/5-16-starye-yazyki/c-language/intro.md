@@ -13,7 +13,7 @@ related:
     doc: encyclopedia/5-languages/5-06-cpp/21
   - title: "Haskell — о разделе"
     doc: encyclopedia/5-languages/5-17-haskell/intro
-  - title: "Visual Basic — о разделе"
+  - title: "visual-basic — о разделе"
     doc: encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro
   - title: "Scala — о разделе"
     doc: encyclopedia/5-languages/5-18-scala/intro
@@ -77,7 +77,7 @@ import DocCardList from '@theme/DocCardList';
 
 **Системное программирование** — [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Rust — о разделе](/encyclopedia/5-languages/5-13-rust/intro), [C++ — о разделе](/encyclopedia/5-languages/5-06-cpp/intro), [Системное программирование на C++](/encyclopedia/5-languages/5-06-cpp/21), [Оптимизация размера и производительности приложений](/encyclopedia/4-code-dev/4-04-proekt-i-freymvorki/3), [Выполнение кода — о разделе](/encyclopedia/4-code-dev/4-03-vypolnenie-koda/intro).
 
-**Бэкенд и серверная разработка** — [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [Visual Basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro).
+**Бэкенд и серверная разработка** — [Ассемблер — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/assembler/intro), [Haskell — о разделе](/encyclopedia/5-languages/5-17-haskell/intro), [visual-basic — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/visual-basic/intro), [Scala — о разделе](/encyclopedia/5-languages/5-18-scala/intro), [Pascal — о разделе](/encyclopedia/5-languages/5-16-starye-yazyki/Pascal/intro), [Elixir — о разделе](/encyclopedia/5-languages/5-19-elixir/intro).
 
 {/* /sidebar-collections */}
 

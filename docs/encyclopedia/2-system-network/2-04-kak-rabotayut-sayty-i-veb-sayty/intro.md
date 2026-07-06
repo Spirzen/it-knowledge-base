@@ -57,7 +57,7 @@ import DocCardList from '@theme/DocCardList';
 
 - Пошаговая публикация статики на **GitHub Pages** (домен, DNS, Actions) — лабораторный кейс ["Размещение своего сайта с GitHub Pages"](/lab/Кейсы/3)
 - Сети, DNS, TCP — [2.03. Сеть и интернет](/encyclopedia/2-system-network/2-03-set-i-internet/intro)
-- HTML и разметка — [3.09. HTML](/encyclopedia/3-data-markup/3-09-html/intro)
+- HTML и разметка — [3-09-html](/encyclopedia/3-data-markup/3-09-html/intro)
 - Целые HTML-файлы с разбором тегов (лаборатория) — [HTML-страницы целиком](/lab/Примеры/1153)
 - Готовые макеты HTML+CSS (лаборатория) — [HTML + CSS — готовые макеты](/lab/Примеры/110)
 - SVG — рисунки кодом (лаборатория) — [SVG — рисунки кодом](/lab/Примеры/1119)
@@ -65,7 +65,7 @@ import DocCardList from '@theme/DocCardList';
 - CSS-анимации (лаборатория) — [CSS-анимации — готовые эффекты](/lab/Примеры/1116)
 - Конфиги Nginx для VPS и лабораторных — [Nginx — конфиги под задачу](/lab/Примеры/11112)
 - Dockerfile для фронта и API в контейнере — [Dockerfile — 10 типовых образов](/lab/Примеры/11113)
-- JavaScript — [5.01. JavaScript](/encyclopedia/5-languages/5-01-javascript/intro)
+- JavaScript — [5-01-javascript](/encyclopedia/5-languages/5-01-javascript/intro)
 - Практика HTML/CSS/JS в браузере — [WebEditor](https://html.spirzen.ru/) (домен экосистемы, [исходники](https://github.com/Spirzen/WebEditor))
 
 <DocCardList />

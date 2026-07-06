@@ -24,7 +24,7 @@
     "docs:collection-crosslinks": "node scripts/enrich-collection-crosslinks.mjs",
     "docs:context-crosslinks": "node scripts/enrich-context-encyclopedia-crosslinks.mjs",
     "docs:wiki-links": "node scripts/build-wiki-link-index.mjs",
-    "docs:toc": "node scripts/generate-toc.mjs",
+    "docs:toc": "node scripts/generate-toc.mjs && node scripts/generate-section-toc.mjs",
     "docs:fix-mdx-imports": "node scripts/fix-mdx-import-after-frontmatter.mjs",
     "docs:fix-frontmatter-blank": "node scripts/fix-blank-after-frontmatter.mjs",
     "docs:fix-heading-separators": "node scripts/fix-heading-separators.mjs",
