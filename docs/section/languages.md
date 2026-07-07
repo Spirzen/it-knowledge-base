@@ -15,6 +15,8 @@ id: languages
 
 ## О разделе
 
+Новичок часто задаётся вопросом - какой язык программирования выбрать. Конечно, JavaScript и Python. Затем - Java и C#. После этого у вас сформируется отличный набор знаний, умение работать с фронтэндом и бэкендом, и вы сможете перейти более сложные языки. Однако, есть специальная статья:
+
 <ul class="it-toc-articles">
   <li><a href="/encyclopedia/5-languages/kak-vybrat-yazyk-programmirovaniya">Какой язык программирования выбрать</a></li>
   <li><a href="/encyclopedia/5-languages/languages">5. Языки - о разделе</a></li>

@@ -7,8 +7,6 @@ import DocCardList from '@theme/DocCardList';
 
 # О проекте
 
-<DocCardList />
-
 ---
 
 <div class="callout callout--tip">
