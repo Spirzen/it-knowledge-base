@@ -513,8 +513,8 @@ import DocCardList from '@theme/DocCardList';
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/408">1.035. Железо, охлаждение и диагностика</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/409">1.035. Как читать сообщение об ошибке</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/504">1.035. Графика, дизайн и 3D-моделирование</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/506">1.035. Автоматизация — AutoHotkey, PowerShell и планировщик</a></li>
-  <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/509">1.035. PowerToys и дополнительные утилиты</a></li>
+  <li><a href="/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402">4.011. Скрипты, макросы и локальная автоматизация</a></li>
+  <li><a href="/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11">2.06. Microsoft PowerToys и утилиты рабочей станции</a></li>
   <li><a href="/encyclopedia/1-basics/1-035-bazovaya-informatika/510">1.035. Draw.io и формат .drawio</a></li>
 </ul>
 

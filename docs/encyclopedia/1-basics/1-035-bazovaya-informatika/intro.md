@@ -34,7 +34,7 @@ import DocCardList from '@theme/DocCardList';
 | Советы новичку | 201–222 (кроме сети — см. [2.03 / 81](/encyclopedia/2-system-network/2-03-set-i-internet/81)) | Windows, macOS, Linux, Android, быт |
 | Софт рядового | 301–310 | Браузер, офис, мессенджеры, медиа |
 | Советы продвинутому | 405–409 | Автоматизация → [4.011](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/intro); Home Lab → [2.06](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/10); сеть и self-hosting → [2.03 / 81](/encyclopedia/2-system-network/2-03-set-i-internet/81) |
-| Софт продвинутого | 502, 504, 506, 510 | Утилиты (503, 511 → [4.011](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/intro)); PowerToys → [2.06 / 11](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11); сетевые утилиты → [2.03 / 505](/encyclopedia/2-system-network/2-03-set-i-internet/505); виртуализация → [2.02](/encyclopedia/2-system-network/2-02-platformy/2) |
+| Софт продвинутого | 502, 504, 510 | Утилиты (503, 511 → [4.011](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/intro)); PowerToys → [2.06 / 11](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11); автоматизация → [4.011 / 402](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402); сетевые утилиты → [2.03 / 505](/encyclopedia/2-system-network/2-03-set-i-internet/505); виртуализация → [2.02](/encyclopedia/2-system-network/2-02-platformy/2) |
 | Итоги | [98](/encyclopedia/1-basics/1-035-bazovaya-informatika/98), [99](/encyclopedia/1-basics/1-035-bazovaya-informatika/99) | Сводка по всем блокам |
 
 ## Маршруты
@@ -111,7 +111,7 @@ import DocCardList from '@theme/DocCardList';
 - [Редакторы кода — VS Code, Vim, Notepad++](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/503)
 - [Графика, дизайн и 3D-моделирование](/encyclopedia/1-basics/1-035-bazovaya-informatika/504)
 - [Сетевые и системные диагностические утилиты](/encyclopedia/2-system-network/2-03-set-i-internet/505) *(раздел 2.03)*
-- [Автоматизация — AutoHotkey, PowerShell и планировщик](/encyclopedia/1-basics/1-035-bazovaya-informatika/506)
+- [Скрипты, макросы и локальная автоматизация](/encyclopedia/4-code-dev/4-011-instrumenty-razrabotki/402)
 - [Виртуализация](/encyclopedia/2-system-network/2-02-platformy/2) · [Инструменты виртуализации](/encyclopedia/2-system-network/2-02-platformy/21) *(раздел 2.02)*
 - [Microsoft PowerToys и утилиты рабочей станции](/encyclopedia/2-system-network/2-06-sistemnoe-administrirovanie/11) *(раздел 2.06)*
 - [diagrams.net (Draw.io) — устройство и формат .drawio](/encyclopedia/1-basics/1-035-bazovaya-informatika/510)
