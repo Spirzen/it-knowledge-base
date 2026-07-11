@@ -61,19 +61,44 @@ function getIconTitleProps(
   };
 }
 
+type CategoryLink = {
+  type: string;
+  id?: string;
+  description?: string;
+};
+
+function getCategoryLink(
+  item: PropSidebarItemCategory,
+): CategoryLink | undefined {
+  return (item as PropSidebarItemCategory & {link?: CategoryLink}).link;
+}
+
 function CardCategory({item}: {item: PropSidebarItemCategory}): ReactNode {
   const href = findFirstSidebarItemLink(item);
   const categoryItemsPlural = useDocCardDescriptionCategoryItemsPlural();
+  const categoryLink = getCategoryLink(item);
+  const linkedDocId =
+    categoryLink?.type === 'doc' ? categoryLink.id : undefined;
+  const linkedDoc = useDocById(linkedDocId);
 
   if (!href) {
     return null;
   }
+
+  const description =
+    item.description ??
+    linkedDoc?.description ??
+    (categoryLink?.type === 'generated-index'
+      ? categoryLink.description
+      : undefined) ??
+    categoryItemsPlural(item.items.length);
+
   return (
     <Layout
       item={item}
       className={item.className}
       href={href}
-      description={item.description ?? categoryItemsPlural(item.items.length)}
+      description={description}
       {...getIconTitleProps(item, href)}
     />
   );

@@ -46,26 +46,36 @@ const sidebars = {
       type: 'link',
       label: 'Видеоигры',
       href: 'https://games.spirzen.ru/games/intro',
+      description:
+        'Игровая индустрия, game studies и разработка игр — материалы, интерактивы и практикумы энциклопедии Вселенная IT.',
     },
     {
       type: 'link',
       label: 'Инструменты',
       href: 'https://tools.spirzen.ru/tools/intro',
+      description:
+        'Подборка материалов раздела Инструменты в энциклопедии Вселенная IT.',
     },
     {
       type: 'link',
       label: 'Глоссарий',
       href: 'https://terms.spirzen.ru/glossary/intro',
+      description:
+        'Справочник IT-терминов, понятий и аббревиатур — поиск и алфавитные разделы от 0 до Z.',
     },
     {
       type: 'link',
       label: 'Лаборатория',
       href: 'https://lab.spirzen.ru/lab/intro',
+      description:
+        'Подборка материалов раздела Лаборатория в энциклопедии Вселенная IT.',
     },
     {
       type: 'link',
       label: 'Для детей',
       href: 'https://kids.spirzen.ru/kids/intro',
+      description:
+        'Учебный маршрут для школьников 8–16 лет — компьютер, игры, алгоритмы, программы и первый код, с интерактивами в статьях.',
     },
     {
       type: 'category',

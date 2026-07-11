@@ -77,7 +77,7 @@ import DocCardList from '@theme/DocCardList';
 | Обязательны ли аннотации `let x: T` | [переменные](./11.md) |
 | Проверка только на этапе TS | [Компиляция](./15.md) |
 | Type-driven development | [рекомендации](./6.md), [функции](./14.md) |
-| Компилятор, флаги, Go 7.x, TypeScript Server | [Компиляция](./15.md), [TypeScript Server](./16.md) |
+| Компилятор, TypeScript 7 (Go), `--checkers`, TypeScript Server | [Компиляция](./15.md), [TypeScript Server](./16.md) |
 | React / Node.js | [TypeScript и React](./21.md), [TypeScript и Node.js](./22.md) |
 | Дженерики, Omit, keyof, literal union, связанный выбор | [дженерики](./24.md), [Типы и типизация](./10.md) |
 | Exclude / Extract, сужение по группам (`Compat`) | [типы §utility](./10.md#utility-types), [24 §Compat](./24.md#связанные-generic-выбор-по-группе-compat) |
