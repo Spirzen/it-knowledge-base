@@ -1,6 +1,6 @@
 ---
 title: "Актуальные практики — о разделе"
-description: "Supply chain, DevSecOps, GitOps, Passkeys, OAuth, API Gateway, Platform Engineering, облака РФ, Secure SDLC и учебный фишинг."
+description: "Введение в современные IT-практики - защита цепочек поставок, DevSecOps, GitOps, Passkeys аутентификация, API шлюзы, Platform Engineering и безопасная разработка."
 sidebar_label: "Актуальные практики — о разделе"
 related:
   - title: "Основы инфраструктуры"
