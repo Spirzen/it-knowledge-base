@@ -8,6 +8,15 @@
 | [02-cosmic-immersive.html](./02-cosmic-immersive.html) | Тёмный «космос»: звёздное поле, карта как центр, минимум текста |
 | [03-editorial-docs.html](./03-editorial-docs.html) | Редакционный / docs-стиль: боковое оглавление, чёткая типографика, спокойные секции |
 | **[04-wishlist-combined.html](./04-wishlist-combined.html)** | **Сводка пожеланий:** hero с поиском, шапка с поиском (остаётся везде), орбита, футер с «О проекте» |
+| **[05-sample-support-patterns.html](./05-sample-support-patterns.html)** | **Паттерны sample.support:** quick-strip, eyebrow + section-head, numbered steps; бренд ITU, без ticket-preview |
+
+### Макет 05 — что внутри
+
+- **Quick-strip** под героем: Энциклопедия / Указатель / Витрина / Карта.
+- **Ритм секций:** `eyebrow-pill` + `home-section__head` + ссылка-стрелка.
+- **Numbered steps** «С чего начать» (01–04) вместо эмодзи-карточек.
+- **Герой** как сейчас по смыслу: бренд, поиск, CTA; без повёрнутого preview-карточки.
+- Light/dark через `data-theme`. Продакшен не трогаем.
 
 ### Макет 04 — что внутри
 
