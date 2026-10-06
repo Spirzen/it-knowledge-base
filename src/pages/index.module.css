@@ -568,3 +568,17 @@ html[data-theme='dark'] {
 .sectionCard:nth-child(7) { background-color: var(--section-7-bg); border-left-color: var(--section-7-border); }
 .sectionCard:nth-child(8) { background-color: var(--section-8-bg); border-left-color: var(--section-8-border); }
 .sectionCard:nth-child(9) { background-color: var(--section-9-bg); border-left-color: var(--section-9-border); }
+.universeSection {
+  padding: 0 0 4rem;
+  background: var(--ifm-background-color);
+}
+
+.universeBanner {
+  border-color: var(--ifm-color-primary);
+}
+
+@media screen and (max-width: 996px) {
+  .universeSection {
+    padding-bottom: 2rem;
+  }
+}

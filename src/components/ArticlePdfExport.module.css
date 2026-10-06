@@ -29,6 +29,7 @@
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
   box-shadow: var(--ifm-global-shadow-lw);
   transition:
     background-color 0.2s ease,
@@ -38,6 +39,7 @@
 }
 
 .button:hover:not(:disabled) {
+  text-decoration: none;
   color: var(--ifm-button-color);
   background: var(--ifm-color-primary);
   border-color: var(--ifm-color-primary);

@@ -494,6 +494,12 @@ module.exports = {
           position: 'left',
         },
         {type: 'custom-docSearch', position: 'right'},
+        {
+          href: 'https://it-un.ru',
+          label: 'К Вселенной ИТ',
+          position: 'right',
+          className: 'navbar-universe-link',
+        },
       ],
     },
     footer: ecosystemFooter,

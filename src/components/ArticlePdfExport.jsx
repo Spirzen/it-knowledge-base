@@ -45,6 +45,24 @@ function ShareIcon() {
   );
 }
 
+function UniverseIcon() {
+  return (
+    <svg
+      className={styles.icon}
+      viewBox="0 0 24 24"
+      width="18"
+      height="18"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <path
+        fill="currentColor"
+        d="M14 3v2h3.59l-9.3 9.29 1.42 1.42L19 6.41V10h2V3h-7zM5 5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5h-2v5H5V7h5V5H5z"
+      />
+    </svg>
+  );
+}
+
 async function copyArticleUrl(url) {
   await navigator.clipboard.writeText(url);
 }
@@ -160,6 +178,16 @@ function ArticlePdfExportInner() {
                   : 'Поделиться'}
           </span>
         </button>
+        <a
+          className={styles.button}
+          href="https://it-un.ru"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Открыть Вселенную ИТ (it-un.ru)"
+        >
+          <UniverseIcon />
+          <span>Перейти к Вселенной ИТ</span>
+        </a>
         {pdfExportEnabled && (
           <button
             type="button"

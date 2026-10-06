@@ -28,8 +28,8 @@
   }
 
   .navbar__items--right > .navbar__item:has(.it-doc-search-bar) {
-    flex: 1 1 12rem;
-    max-width: 26rem;
+    flex: 1 1 10rem;
+    max-width: 16rem;
     min-width: 10rem;
   }
 
@@ -37,6 +37,13 @@
     width: 100%;
     max-width: none;
   }
+}
+
+.navbar__items--right > .navbar__item.navbar-universe-link {
+  flex-shrink: 0;
+  white-space: nowrap;
+  font-weight: 600;
+  color: var(--ifm-color-primary);
 }
 
 .it-doc-search-trigger {

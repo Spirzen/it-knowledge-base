@@ -36,6 +36,7 @@ const DocItemContent = require('@theme/DocItem/Content').default;
 const DocBreadcrumbs = require('@theme/DocBreadcrumbs').default;
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const ContentVisibility = require('@theme/ContentVisibility').default;
+const ArticleUniverseBanner = lazyDemo(() => import('@site/src/components/ArticleUniverseBanner'));
 const ArticlePdfExport = lazyDemo(() => import('@site/src/components/ArticlePdfExport'));
 const ArticleSeeAlso = lazyDemo(() => import('@site/src/components/ArticleSeeAlso'));
 const ArticleRelated = lazyDemo(() => import('@site/src/components/ArticleRelated'));
@@ -151,6 +152,7 @@ export default function DocItemLayout({children}: DocItemLayoutProps): ReactNode
             <TechArticleHero />
             <ArticleRelated />
             <ArticleSeeAlso />
+            <ArticleUniverseBanner />
             <DocItemFooter />
           </article>
           <DocItemPaginator />

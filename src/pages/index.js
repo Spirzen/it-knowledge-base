@@ -16,6 +16,7 @@ const RandomArticle = lazy(() => import('@site/src/components/RandomArticle'));
 
 const APK_DOWNLOAD_URL =
   'https://github.com/Spirzen/it-knowledge-base/releases/download/Mobile/it-universe.apk';
+const UNIVERSE_URL = 'https://it-un.ru';
 const INDEX_GUIDE_PATH =
   '/encyclopedia/1-basics/1-03-dorozhnaya-karta-izucheniya/101';
 
@@ -55,6 +56,13 @@ function HomepageHeader() {
                 prefetch={false}>
                 Витрина
               </Link>
+              <a
+                className="button button--outline button--primary button--lg"
+                href={UNIVERSE_URL}
+                target="_blank"
+                rel="noopener noreferrer">
+                Перейти к Вселенной ИТ
+              </a>
             </div>
             <Link
               className={styles.heroIndexLink}
@@ -211,6 +219,31 @@ function HomepageFeatures() {
   );
 }
 
+function HomepageUniverseBanner() {
+  return (
+    <section className={styles.universeSection} aria-labelledby="home-universe-title">
+      <div className="container">
+        <div className={clsx('home-panel', styles.homePanel, styles.universeBanner)}>
+          <Heading as="h2" className={styles.sectionTitle} id="home-universe-title">
+            Вселенная ИТ
+          </Heading>
+          <p className={styles.sectionLead}>
+            Этот проект является другой, более крупной и масштабной платформой. Текущая
+            энциклопедия является её бесплатным предком. Попробуйте.
+          </p>
+          <a
+            className="button button--primary button--lg"
+            href={UNIVERSE_URL}
+            target="_blank"
+            rel="noopener noreferrer">
+            Перейти к Вселенной ИТ
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home() {
   return (
     <Layout
@@ -229,6 +262,7 @@ export default function Home() {
         <HomepageInteractive />
         <HomepageDiscover />
         <HomepageFeatures />
+        <HomepageUniverseBanner />
       </main>
     </Layout>
   );
