@@ -34,6 +34,13 @@ function walkMarkdownFiles(dir, baseDir = dir, files = []) {
 }
 
 function main() {
+  if (!fs.existsSync(kidsDir)) {
+    console.log(
+      `kids-external-redirects: ${path.relative(root, kidsDir)} не найдена — оставляем ${path.relative(root, outFile)} без изменений`,
+    );
+    return;
+  }
+
   /** @type {{ from: string, to: string }[]} */
   const redirects = [];
   const seen = new Set();
