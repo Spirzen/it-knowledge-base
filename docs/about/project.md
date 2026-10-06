@@ -224,7 +224,7 @@ import DocCardList from '@theme/DocCardList';
 
 Исходник полной схемы — `info/it-universe-architecture.drawio` (пересборка: `node scripts/generate-architecture-drawio.mjs`). Иллюстрации статей — в [`it-encyclopedia-media`](https://github.com/Spirzen/it-encyclopedia-media); общие PNG — `_shared/img/`.
 
-Длинные листинги и тяжёлые симуляторы **не раздувают** билд энциклопедии: статьи встраивают их через `ExternalCodeEmbed` и `ExternalPlayEmbed` (iframe, синхрон темы, авто-высота). Подробно — в [`info/ECOSYSTEM.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ECOSYSTEM.md) и разделе [Как устроена Вселенная IT → Архитектура](/about/kak-ustroena-vselennaya-it/arkhitektura).
+Длинные листинги и тяжёлые симуляторы **не раздувают** билд энциклопедии: статьи встраивают их через `ExternalCodeEmbed` и `ExternalPlayEmbed` (iframe, синхрон темы, авто-высота). Подробно — в [`info/ECOSYSTEM.md`](https://github.com/Spirzen/it-knowledge-base/blob/main/info/ECOSYSTEM.md).
 
 ### Что показано на полной схеме (Draw.io)
 
